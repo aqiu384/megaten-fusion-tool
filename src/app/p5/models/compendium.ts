@@ -171,11 +171,11 @@ export class Compendium implements ICompendium {
     return this.allResults[race];
   }
 
-  getSpecialFusionIngredients(name: string) {
+  getSpecialFusionIngredients(name: string): string[] {
     return this.specialRecipes[name] || [];
   }
 
-  getSpecialFusionResults() {
+  getSpecialFusionResults(): string[] {
     return Object.keys(this.specialRecipes).filter(name => !this.isElementDemon(name));
   }
 
@@ -189,6 +189,10 @@ export class Compendium implements ICompendium {
 
   reverseLookupDemon(race: string, lvl: number): string {
     return this.invertedDemons[race][lvl];
+  }
+
+  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
+    return [];
   }
 
   isElementDemon(name: string) {

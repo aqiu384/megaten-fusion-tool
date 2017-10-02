@@ -24,7 +24,7 @@ export class ElementAffinityToStringPipe implements PipeTransform {
 }
 
 @Pipe({ name: 'lvlToNumber' })
-export class LvlToNumber implements PipeTransform {
+export class LvlToNumberPipe implements PipeTransform {
   transform(value: number): number {
     return Math.floor(value);
   }

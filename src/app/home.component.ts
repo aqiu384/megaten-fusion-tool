@@ -46,6 +46,6 @@ export class HomeComponent implements OnInit {
   constructor(private title: Title) { }
 
   ngOnInit() {
-    this.title.setTitle(`Megaten Fusion Tools`);
+    this.title.setTitle(`Megami Tensei Fusion Tools`);
   }
 }

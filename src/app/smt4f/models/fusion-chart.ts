@@ -90,4 +90,8 @@ export class FusionChart implements IFusionChart {
 
     return results;
   }
+
+  isConvertedRace(race: string): boolean {
+    return false;
+  }
 }

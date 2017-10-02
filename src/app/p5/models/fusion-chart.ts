@@ -5,6 +5,7 @@ import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
 import * as ELEMENT_MODIFIERS_JSON from '../data/element-modifiers.json';
 
 export class FusionChart implements IFusionChart {
+  lvlModifier = 0;
   forwardFusionChart: { [race1: string]: { [race2: string]: string } };
   elementModifiers: { [race: string]: { [element: string]: number } };
   reverseFusionChart: { [raceR: string]: { ingRace1: string, ingRace2: string }[] };
@@ -99,5 +100,9 @@ export class FusionChart implements IFusionChart {
     }
 
     return results;
+  }
+
+  isConvertedRace(race: string): boolean {
+    return false;
   }
 }

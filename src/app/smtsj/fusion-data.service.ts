@@ -26,6 +26,8 @@ export class FusionDataService implements IFusionDataService {
     window.addEventListener('storage', this.onStorageUpdated.bind(this));
   }
 
+  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+
   nextIncludedSubapps(subapps: { [name: string]: boolean }) {
     localStorage.setItem(FUSION_SETTINGS_KEY, JSON.stringify({ version: FUSION_SETTINGS_VERSION, subapps }));
     this._fusionChart.includedSubapps = subapps;

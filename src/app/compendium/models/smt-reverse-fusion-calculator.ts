@@ -1,7 +1,5 @@
 import { FusionTypes } from '../../compendium/constants';
-import { FusionRow, FusionRecipe } from '../../compendium/models';
-import { Compendium } from './compendium';
-import { FusionChart } from './fusion-chart';
+import { FusionRow, FusionRecipe, Compendium, FusionChart } from '../../compendium/models';
 
 function calculateNormalRecipes(name: string, compendium: Compendium, fusionChart: FusionChart): FusionRecipe[] {
   const recipes: FusionRecipe[] = [];
@@ -35,14 +33,21 @@ function calculateNormalElementRecipes(name: string, compendium: Compendium, fus
   const recipes: FusionRecipe[] = [];
   const { race: targetRace } = compendium.getDemon(name);
 
-  for (const { ingRace1, ingRace2 } of fusionChart.getReverseFusionCombos(name)) {
-    const ingLvls1 = compendium.getIngredientDemonLvls(ingRace1);
-    for (let i = 0; i < ingLvls1.length; i++) {
-      for (let j = i + 1; j < ingLvls1.length; j++) {
-        recipes.push({
-          name1: compendium.reverseLookupDemon(ingRace1, ingLvls1[i]),
-          name2: compendium.reverseLookupDemon(ingRace1, ingLvls1[j]),
-        });
+  if (targetRace === 'Mitama') {
+    for (const combo of compendium.getSpecialFusionIngredients(name)) {
+      const [name1, name2] = combo.split(' x ');
+      recipes.push({ name1, name2 });
+    }
+  } else {
+    for (const { ingRace1, ingRace2 } of fusionChart.getReverseFusionCombos(name)) {
+      const ingLvls1 = compendium.getIngredientDemonLvls(ingRace1);
+      for (let i = 0; i < ingLvls1.length; i++) {
+        for (let j = i + 1; j < ingLvls1.length; j++) {
+          recipes.push({
+            name1: compendium.reverseLookupDemon(ingRace1, ingLvls1[i]),
+            name2: compendium.reverseLookupDemon(ingRace1, ingLvls1[j]),
+          });
+        }
       }
     }
   }
@@ -104,20 +109,18 @@ function calculateRecipes(name: string, compendium: Compendium, fusionChart: Fus
   const { fusion } = compendium.getDemon(name);
 
   switch (fusion) {
-    case FusionTypes.Accident:
-    case FusionTypes.Password:
-    case FusionTypes.Special:
-      return {
-        type: fusion,
-        data: compendium.getSpecialFusionIngredients(name)
-      };
-    default:
+    case FusionTypes.Normal:
       return {
         type: fusion,
         data: [].concat(
           calculateNormalRecipes(name, compendium, fusionChart),
           calculateElementRecipes(name, compendium, fusionChart)
         )
+      };
+    default:
+      return {
+        type: fusion,
+        data: compendium.getSpecialFusionIngredients(name)
       };
   }
 }
@@ -156,10 +159,6 @@ export function calculateReverseFusions(
           name2: ''
         });
       }
-      break;
-    case FusionTypes.Accident:
-      break;
-    case FusionTypes.NotOwned:
       break;
     default:
       break;

@@ -10,8 +10,3 @@ export interface Skill extends BaseSkill {
   talk: string;
   fuse: string;
 }
-
-export interface ExcludedDemon {
-  names: string[];
-  excluded: boolean;
-}

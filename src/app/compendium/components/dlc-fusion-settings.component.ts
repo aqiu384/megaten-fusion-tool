@@ -1,27 +1,25 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Inject, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
-import { APP_TITLE } from '../models/constants';
-import { Compendium } from '../models/compendium';
-
-import { FusionDataService } from '../fusion-data.service';
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../constants';
+import { Compendium, CompendiumConfig, FusionDataService } from '../models';
 
 @Component({
-  selector: 'app-fusion-settings',
+  selector: 'app-dlc-fusion-settings',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table>
       <thead>
-        <tr><th>Included DLC Demons</th></tr>
+        <tr><th>Included DLC Personas</th></tr>
       </thead>
       <tbody>
         <tr *ngFor="let demon of dlcDemons">
           <td>
-            <label>{{ demon.name }}
+            <label>{{ demon.name.split(',').join(' and ') }}
               <input type="checkbox"
                 [checked]="demon.included"
-                (change)="toggleIncludedSubapp(demon.name)">
+                (change)="toggleIncludedDemon(demon.name)">
             </label>
           </td>
         </tr>
@@ -29,7 +27,7 @@ import { FusionDataService } from '../fusion-data.service';
     </table>
   `
 })
-export class FusionSettingsComponent implements OnInit, OnDestroy {
+export class DlcFusionSettingsComponent implements OnInit, OnDestroy {
   private _dlcDemons: { [name: string]: boolean };
 
   compendium: Compendium;
@@ -38,12 +36,13 @@ export class FusionSettingsComponent implements OnInit, OnDestroy {
 
   constructor(
     private title: Title,
-    private fusionDataService: FusionDataService,
-    private changeDetectorRef: ChangeDetectorRef
+    private changeDetectorRef: ChangeDetectorRef,
+    @Inject(COMPENDIUM_CONFIG) private compendiumConfig: CompendiumConfig,
+    @Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService
   ) { }
 
   ngOnInit() {
-    this.title.setTitle(`Fusion Settings - ${APP_TITLE}`);
+    this.title.setTitle(`Fusion Settings - ${this.compendiumConfig.appTitle}`);
     this.subscriptions.push(this.fusionDataService.compendium.subscribe(comp => {
       this.changeDetectorRef.markForCheck();
       this.compendium = comp;
@@ -58,7 +57,7 @@ export class FusionSettingsComponent implements OnInit, OnDestroy {
     }
   }
 
-  toggleIncludedSubapp(name: string) {
+  toggleIncludedDemon(name: string) {
     this._dlcDemons[name] = !this._dlcDemons[name];
     this.fusionDataService.nextDlcDemons(this._dlcDemons);
   }

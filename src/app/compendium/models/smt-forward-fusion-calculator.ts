@@ -1,6 +1,4 @@
-import { FusionRow, FusionRecipe } from '../../compendium/models';
-import { Compendium } from './compendium';
-import { FusionChart } from './fusion-chart';
+import { FusionRow, FusionRecipe, Compendium, FusionChart } from '../models';
 
 function calculateNormalRecipes(name: string, compendium: Compendium, fusionChart: FusionChart): FusionRecipe[] {
   const recipes: FusionRecipe[] = [];
@@ -124,10 +122,12 @@ function calculateSpecialElementRecipes(name: string, compendium: Compendium, fu
 
 function calculateDoubleElementRecipes(name: string, compendium: Compendium, fusionChart: FusionChart): FusionRecipe[] {
   const recipes: FusionRecipe[] = [];
+
   for (const { result, recipe } of compendium.reverseLookupSpecial(name)) {
     const ingName2 = recipe.split(' x ').filter(ing => ing !== name)[0];
     recipes.push({ name1: ingName2, name2: result });
   }
+
   return recipes;
 }
 

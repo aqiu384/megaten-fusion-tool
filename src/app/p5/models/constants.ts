@@ -65,4 +65,4 @@ export const ResistanceOrder = getEnumOrder(ResistanceLevels);
 
 export const FUSION_SETTINGS_KEY = 'p5-fusion-tool-settings';
 export const FUSION_SETTINGS_VERSION = 1709211400;
-export const APP_TITLE = 'Persona 5 Fusion Tool';
+export const APP_TITLE = 'Persona 5';

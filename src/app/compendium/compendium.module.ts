@@ -19,12 +19,13 @@ import {
   SkillCostToStringPipe,
   SkillLevelToStringPipe,
   ElementAffinityToStringPipe,
-  LvlToNumber
+  LvlToNumberPipe
 } from './pipes';
 
 import { ForwardFusionTableComponent } from './components/forward-fusion-table.component';
 import { CompendiumComponent } from './components/compendium.component';
 import { FusionRecipesComponent } from './components/fusion-recipes.component';
+import { DlcFusionSettingsComponent } from './components/dlc-fusion-settings.component';
 import { CurrentDemonService } from './current-demon.service';
 
 @NgModule({
@@ -43,20 +44,22 @@ import { CurrentDemonService } from './current-demon.service';
     ReverseFusionTableComponent,
     SpecialReverseFusionTableComponent,
     ExceptionReverseFusionTableComponent,
+    DlcFusionSettingsComponent,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     ElementAffinityToStringPipe,
-    LvlToNumber
+    LvlToNumberPipe
   ],
   exports: [
     CompendiumComponent,
     FusionRecipesComponent,
     ForwardFusionTableComponent,
     ReverseFusionTableComponent,
+    DlcFusionSettingsComponent,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     ElementAffinityToStringPipe,
-    LvlToNumber
+    LvlToNumberPipe
   ]
 })
 export class SharedCompendiumModule {

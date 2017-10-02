@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
-import { FusionSettingsComponent } from './components/fusion-settings.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
+import { FusionSettingsComponent } from './components/fusion-settings.component';
 
 import { ReverseFusionTableComponent } from '../compendium/components/reverse-fusion-table.component';
 import { ForwardFusionTableComponent } from '../compendium/components/forward-fusion-table.component';

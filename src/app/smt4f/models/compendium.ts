@@ -176,12 +176,16 @@ export class Compendium implements ICompendium {
     return this.specialRecipes[name] ? this.specialRecipes[name] : [];
   }
 
-  getSpecialFusionResults() {
+  getSpecialFusionResults(): string[] {
     return Object.keys(this.specialRecipes).filter(name => !this.isElementDemon(name));
   }
 
   reverseLookupDemon(race: string, lvl: number): string {
     return this.invertedDemons[race][lvl];
+  }
+
+  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
+    return [];
   }
 
   isElementDemon(name: string) {

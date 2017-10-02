@@ -77,7 +77,6 @@ function calculateElementRecipes(name: string, compendium: Compendium, fusionCha
   const elementOffsets = Object.keys(elementModifiers).map(x => parseInt(x, 10));
 
   const baseResultLvls = [0, 0].concat(compendium.getResultDemonLvls(targetRace), [100, 100]);
-
   const elementRecipes: { ingName: string, elementOffset: number }[] = [];
 
   for (const ingLvl of compendium.getIngredientDemonLvls(targetRace)) {
@@ -172,8 +171,6 @@ export function calculateReverseFusions(
         });
       }
       break;
-    case FusionTypes.Recruit:
-    case FusionTypes.NotOwned:
     default:
       break;
   }

@@ -23,10 +23,6 @@ import {
 } from './components/skill-list.component';
 
 import {
-  FusionSettingsComponent
-} from './components/fusion-settings.component';
-
-import {
   DemonEntryComponent,
   DemonEntryContainerComponent
 } from './components/demon-entry.component';
@@ -39,11 +35,12 @@ import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { CompendiumConfig } from '../compendium/models';
-import { RaceOrder } from './models/constants';
-import { calculateReverseFusions } from './models/reverse-fusion-calculator';
-import { calculateForwardFusions } from './models/forward-fusion-calculator';
+import { RaceOrder, APP_TITLE } from './models/constants';
+import { calculateReverseFusions } from '../compendium/models/smt-reverse-fusion-calculator';
+import { calculateForwardFusions } from '../compendium/models/smt-forward-fusion-calculator';
 
 const compendiumConfig: CompendiumConfig = {
+  appTitle: APP_TITLE,
   raceOrder: RaceOrder,
   reverseFuse: calculateReverseFusions,
   forwardFuse: calculateForwardFusions
@@ -68,8 +65,7 @@ const compendiumConfig: CompendiumConfig = {
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
-    DemonSkillsComponent,
-    FusionSettingsComponent
+    DemonSkillsComponent
   ],
   providers: [
     Title,

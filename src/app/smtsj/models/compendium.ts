@@ -23,6 +23,8 @@ export class Compendium implements ICompendium {
   private allDemons: Demon[];
   private allSkills: Skill[];
 
+  dlcDemons: { [name: string]: boolean } = {};
+
   constructor() {
     this.initImportedData();
     this.updateDerivedData();
@@ -171,11 +173,14 @@ export class Compendium implements ICompendium {
     return this.allResults[race];
   }
 
-  getSpecialFusionIngredients(name: string) {
-    return this.specialRecipes[name] ? this.specialRecipes[name] : '';
+  getSpecialFusionIngredients(name: string): string[] {
+    const { race } = this.demons[name];
+    return !this.specialRecipes[name] ? [] : race === 'Mitama' ?
+      this.specialRecipes[name].split(', ') :
+      this.specialRecipes[name].split(' x ');
   }
 
-  getSpecialFusionResults() {
+  getSpecialFusionResults(): string[] {
     return Object.keys(this.specialRecipes).filter(name => !this.isElementDemon(name));
   }
 
