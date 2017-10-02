@@ -1,0 +1,59 @@
+.p5 div.element-icon {
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+  
+.p5 div.element-icon.phys { background-image: url('/assets/images/p5/phys.png'); }
+.p5 div.element-icon.gun { background-image: url('/assets/images/p5/gun.png'); }
+.p5 div.element-icon.fire { background-image: url('/assets/images/p5/fire.png'); }
+.p5 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p5 div.element-icon.elec { background-image: url('/assets/images/p5/elec.png'); }
+.p5 div.element-icon.wind { background-image: url('/assets/images/p5/wind.png'); }
+.p5 div.element-icon.psy { background-image: url('/assets/images/p5/psy.png'); }
+.p5 div.element-icon.nuke { background-image: url('/assets/images/p5/nuke.png'); }
+.p5 div.element-icon.bless { background-image: url('/assets/images/p5/bless.png'); }
+.p5 div.element-icon.curse { background-image: url('/assets/images/p5/curse.png'); }
+.p5 div.element-icon.ailment { background-image: url('/assets/images/p5/ailment.png'); }
+.p5 div.element-icon.healing { background-image: url('/assets/images/p5/healing.png'); }
+.p5 div.element-icon.almighty { background-image: url('/assets/images/p5/almighty.png'); }
+.p5 div.element-icon.support { background-image: url('/assets/images/p5/support.png'); }
+.p5 div.element-icon.passive { background-image: url('/assets/images/p5/passive.png'); }
+
+.p5 td.resists.wk { color: red; }
+.p5 td.resists.no { color: transparent; }
+.p5 td.resists.rs { color: lightseagreen; }
+.p5 td.resists.nu { color: lightgray; }
+.p5 td.resists.rp { color: cyan; }
+.p5 td.resists.ab { color: lime; }
+
+.p5 tr.special td {
+  background-color: darkgreen;
+}
+
+.p5 tr.exception td, .p5 tr.unique td {
+  background-color: maroon;
+}
+
+.p5 thead th, .p5 tfoot th {
+  color: white;
+  background-color: #f41000;
+}
+
+.p5 th.sortable:hover {
+  background-color: #F46E00;
+}
+
+.p5 th.nav {
+  background-color: #5F0503;
+}
+
+.p5 th.nav.active, .p5 th.nav:hover {
+  background-color: #f41000;
+}
+
+.p5 th.nav.active a, .p5 th.nav:hover a {
+  color: white;
+}
