@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Megami Tensei Fusion Tools</title><base href="/megaten-fusion-tool/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><script type="text/javascript">const l = window.location
+    const csrParam = 'csr'
+    if (l.search.includes(csrParam)) {
+      const searchSegs = (l.search + '&').split(csrParam + '=')
+      const pathEnd = searchSegs[1].indexOf('&')
+      const pathParams = decodeURIComponent(searchSegs[1].substring(0, pathEnd))
+      const searchParams = (searchSegs[0] + searchSegs[1].substring(pathEnd + 1)).slice(0, -1)
+
+      const replacePath = (
+        (l.pathname.slice(-1) === '/' ? l.pathname.slice(0, -1) : l.pathname) +
+        pathParams + searchParams + l.hash
+      )
+      window.history.replaceState(null, null, replacePath)
+    }</script><link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.cc303bdffc40a71d31d6.bundle.js"></script><script type="text/javascript" src="polyfills.6b455b011f887ec6b7c8.bundle.js"></script><script type="text/javascript" src="vendor.6d30c5583897d84ba17d.bundle.js"></script><script type="text/javascript" src="main.a488032eec1ba831ee6e.bundle.js"></script></body></html>
