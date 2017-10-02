@@ -8,5 +8,7 @@ export interface Demon extends BaseDemon {
 
 export interface Skill extends BaseSkill {
   rank: number;
+  damage?: string;
+  target?: string;
   learnedBy: { demon: string, level: number }[];
 }

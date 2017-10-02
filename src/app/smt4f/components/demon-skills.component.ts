@@ -43,5 +43,5 @@ import { Compendium } from '../models/compendium';
 })
 export class DemonSkillsComponent {
   @Input() compendium: Compendium;
-  @Input() skills: string[];
+  @Input() skills: { [skill: string]: number };
 }
