@@ -3,7 +3,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
-import { BaseStats, ResistanceElements, AffinityElements } from '../../smt4/models/constants';
+import { BaseStats, ResistanceElements, AffinityElements } from '../models/constants';
 import { Ailments, APP_TITLE } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
@@ -61,25 +61,6 @@ import { FusionDataService } from '../fusion-data.service';
             <td *ngFor="let ailment of demon.ailments"
             class="resists {{ ailment }}">
               {{ ailment }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="12">Skill Affinities</th>
-          </tr>
-          <tr>
-            <th *ngFor="let element of affinityHeaders">
-              <div class="element-icon {{ element }}"></div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let affinity of demon.affinities" class="affinity{{ affinity }}">
-              {{ affinity | affinityToString }}
             </td>
           </tr>
         </tbody>

@@ -9,22 +9,27 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <table>
         <thead>
           <tr>
-            <th class="nav" routerLinkActive="active" [style.width.%]="25">
+            <th class="nav" routerLinkActive="active" [style.width.%]="20">
               <div><a routerLink="home">
                 Home
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="25">
+            <th class="nav" routerLinkActive="active" [style.width.%]="20">
               <div><a routerLink="smtsj">
                 Shin Megami Tensei:<br>Strange Journey
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="25">
+            <th class="nav" routerLinkActive="active" [style.width.%]="20">
+              <div><a routerLink="smt4">
+                Shin Megami Tensei IV
+              </a></div>
+            </th>
+            <th class="nav" routerLinkActive="active" [style.width.%]="20">
               <div><a routerLink="smt4f">
                 Shin Megami Tensei IV:<br>Apocalypse
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="25">
+            <th class="nav" routerLinkActive="active" [style.width.%]="20">
               <div><a routerLink="p5">
                 Persona 5
               </a></div>
@@ -40,8 +45,9 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <div [style.display]="loading ? 'none' : null">
         <router-outlet></router-outlet>
       </div>
-      <div [ngStyle]="{ display: 'table', height: '2em', 'text-align': 'center', 'width': '100%' }">
-        <a [ngStyle]="{ display: 'table-cell', 'vertical-align': 'middle' }" href="https://www.youtube.com/watch?v=8eYf3OHqq9s">
+      <div [ngStyle]="{ 'text-align': 'center' }">
+        <br>
+        <a href="https://www.youtube.com/watch?v=8eYf3OHqq9s">
           https://www.youtube.com/watch?v=8eYf3OHqq9s
         </a>
       </div>

@@ -1,5 +1,4 @@
-import { Races, ResistanceElements, AffinityElements, BaseStats, ElementOrder } from '../../smt4/models/constants';
-import { Ailments } from '../models/constants';
+import { Races, ResistanceElements, ShortElements, InverseShortElements, BaseStats, ElementOrder, Ailments } from '../models/constants';
 import { FusionTypes } from '../../compendium/constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium } from '../../compendium/models';
@@ -7,17 +6,14 @@ import { Compendium as ICompendium } from '../../compendium/models';
 import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import * as DLC_DEMONS from '../data/dlc-demons.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] };
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-
-  private _dlcDemons: { [name: string]: boolean } = {
-    'Cleopatra': false,
-    'Mephisto': false
-  };
+  private _dlcDemons: { [name: string]: boolean };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -34,13 +30,13 @@ export class Compendium implements ICompendium {
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
+    const dlcDemons: { [name: string]: boolean } = {};
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({ name, fusion: FusionTypes.Normal }, json, {
-        stats: BaseStats.map(val => json.stats[val]),
-        resists: ResistanceElements.map(val => json.resists[val] || 'no'),
+        stats: BaseStats.map((val, i) => json.stats[i]),
+        resists: ResistanceElements.map(val => json.resists[ShortElements[val]] || 'no'),
         ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 'no'),
-        affinities: AffinityElements.map(val => json.affinities[val] ? json.affinities[val] : 0),
       });
     }
 
@@ -51,14 +47,18 @@ export class Compendium implements ICompendium {
         learnedBy: [],
       }, json);
 
-      if (!skills[name].rank) {
+      skills[name].element = InverseShortElements[skills[name].element];
+
+      if (skills[name].rank < 0) {
         skills[name].rank = 99;
       }
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      specialRecipes[name] = json;
-      demons[name].fusion = (json.length > 0) ? FusionTypes.Special : FusionTypes.Accident;
+      if (json.length !== 1) {
+        specialRecipes[name] = json;
+        demons[name].fusion = (json.length > 0) ? FusionTypes.Special : FusionTypes.Accident;
+      }
     }
 
     for (const race of Races) {
@@ -78,10 +78,15 @@ export class Compendium implements ICompendium {
       }
     }
 
+    for (const dlcDemon of Object.values(DLC_DEMONS)) {
+      dlcDemons[dlcDemon] = false;
+    }
+
     this.demons = demons;
     this.skills = skills;
     this.specialRecipes = specialRecipes;
     this.invertedDemons = inversions;
+    this._dlcDemons = dlcDemons;
   }
 
   updateDerivedData() {

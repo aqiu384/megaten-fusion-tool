@@ -14,11 +14,10 @@ import { Subscription } from 'rxjs/Subscription';
 import {
   BaseStats,
   ResistanceElements,
-  AffinityElements,
   RaceOrder,
   ElementOrder,
   ResistanceOrder
-} from '../../smt4/models/constants';
+} from '../models/constants';
 import { APP_TITLE } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
@@ -36,7 +35,6 @@ import { FusionDataService } from '../fusion-data.service';
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <td *ngFor="let resist of data.resists" class="resists {{ resist }}">{{ resist }}</td>
-    <td *ngFor="let affinity of data.affinities" class="affinity{{ affinity }}">{{ affinity | affinityToString }}</td>
   `
 })
 export class DemonTableRowComponent {
@@ -51,7 +49,6 @@ export class DemonTableRowComponent {
       <th colspan="3">Demon</th>
       <th colspan="7">Base Stats</th>
       <th colspan="8">Resistances</th>
-      <th colspan="12">Affinities</th>
     </tr>
     <tr>
       <th class="sortable {{ sortDirClass(1) }}" (click)="nextSortFunIndex(1)">Race</th>
@@ -67,11 +64,6 @@ export class DemonTableRowComponent {
         (click)="nextSortFunIndex(pair.index)">
         <div class="element-icon {{ pair.element }}"></div>
       </th>
-      <th *ngFor="let pair of affiColIndices"
-        class="sortable"
-        (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.element }}"></div>
-      </th>
     </tr>
   `,
   styles: [`
@@ -83,11 +75,9 @@ export class DemonTableRowComponent {
 export class DemonTableHeaderComponent extends SortedTableHeaderComponent {
   static readonly STAT_COL_INDICES = BaseStats.map((stat, i) => ({ stat, index: i + 4 }));
   static readonly ELEM_COL_INDICES = ResistanceElements.map((element, i) => ({ element, index: i + 11 }));
-  static readonly AFFI_COL_INDICES = AffinityElements.map((element, i) => ({ element, index: i + 19 }));
 
   statColIndices = DemonTableHeaderComponent.STAT_COL_INDICES;
   elemColIndices = DemonTableHeaderComponent.ELEM_COL_INDICES;
-  affiColIndices = DemonTableHeaderComponent.AFFI_COL_INDICES;
 }
 
 @Component({
@@ -128,9 +118,7 @@ export class DemonListComponent extends SortedTableComponent<Demon> implements A
     BaseStats.map((stat, index) =>
       (d1, d2) => d2.stats[index] - d1.stats[index]),
     ResistanceElements.map((element, index) =>
-      (d1, d2) => ResistanceOrder[d2.resists[index]] - ResistanceOrder[d1.resists[index]]),
-    AffinityElements.map((element, index) =>
-      (d1, d2) => d2.affinities[index] - d1.affinities[index])
+      (d1, d2) => ResistanceOrder[d2.resists[index]] - ResistanceOrder[d1.resists[index]])
   );
 
   ngAfterViewChecked() {

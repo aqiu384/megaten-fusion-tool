@@ -35,7 +35,7 @@ import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { CompendiumConfig } from '../compendium/models';
-import { RaceOrder } from '../smt4/models/constants';
+import { RaceOrder } from './models/constants';
 import { APP_TITLE } from './models/constants';
 import { calculateReverseFusions } from '../compendium/models/smt-reverse-fusion-calculator';
 import { calculateForwardFusions } from '../compendium/models/smt-forward-fusion-calculator';

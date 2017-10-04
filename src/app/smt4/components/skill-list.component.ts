@@ -30,7 +30,7 @@ import { FusionDataService } from '../fusion-data.service';
     <td *ngIf="data.damage">
       {{ data.damage }}
       {{ data.element }}
-      damage{{ data.hits ? ' x' + data.hits : '' }}{{ data.remark ? ', ' + data.remark : '' }}
+      damage{{ data.hits ? ' x' + data.hits : '' }}{{ data.effect ? ', ' + data.effect : '' }}
     </td>
     <td *ngIf="!data.damage">{{ data.effect }}</td>
     <td>{{ data.target ? data.target : 'Self' }}</td>

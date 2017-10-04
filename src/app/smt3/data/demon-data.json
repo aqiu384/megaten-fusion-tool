@@ -64,6 +64,7 @@
     "lvl": 11,
     "race": "Element",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "mag": "rs"
     },
@@ -90,7 +91,9 @@
     "lvl": 64,
     "race": "Entity",
     "resists": {
-      "ice": "nu"
+      "exp": "nu",
+      "ice": "nu",
+      "phy": "nu"
     },
     "skills": {
       "Berserk": 0,
@@ -121,14 +124,16 @@
     "lvl": 56,
     "race": "Deity",
     "resists": {
+      "dea": "nu",
+      "exp": "nu",
       "fir": "nu"
     },
     "skills": {
       "Debilitate": 58,
-      "Fire Repel": 59,
       "Godly Light": 57,
       "Prayer": 60,
       "Prominence": 0,
+      "Repel Fire": 59,
       "Tetrakarn": 0
     },
     "stats": {
@@ -146,6 +151,7 @@
     "lvl": 11,
     "race": "Divine",
     "resists": {
+      "dea": "wk",
       "exp": "rp",
       "for": "wk"
     },
@@ -200,6 +206,7 @@
     "lvl": 15,
     "race": "Element",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "fir": "wk",
       "ice": "rp"
@@ -227,6 +234,8 @@
     "lvl": 25,
     "race": "Mitama",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -253,9 +262,14 @@
     "lvl": 30,
     "race": "Vile",
     "resists": {
+      "ail": "wk",
+      "dea": "nu",
+      "ele": "wk",
       "exp": "nu",
       "fir": "wk",
-      "ice": "rp"
+      "for": "wk",
+      "ice": "rp",
+      "phy": "nu"
     },
     "skills": {
       "Brutal Slash": 0,
@@ -285,6 +299,7 @@
     "lvl": 18,
     "race": "Divine",
     "resists": {
+      "dea": "wk",
       "exp": "rp",
       "ice": "wk"
     },
@@ -312,8 +327,10 @@
     "lvl": 47,
     "race": "Deity",
     "resists": {
+      "dea": "rp",
       "exp": "rp",
-      "min": "wk"
+      "min": "wk",
+      "ner": "wk"
     },
     "skills": {
       "Binding Cry": 49,
@@ -338,7 +355,9 @@
     "lvl": 67,
     "race": "Femme",
     "resists": {
-      "exp": "nu"
+      "dea": "nu",
+      "exp": "nu",
+      "min": "nu"
     },
     "skills": {
       "Bufudyne": 0,
@@ -391,6 +410,7 @@
     "lvl": 43,
     "race": "Holy",
     "resists": {
+      "exp": "nu",
       "fir": "wk",
       "ice": "nu"
     },
@@ -473,7 +493,12 @@
     "race": "Tyrant",
     "resists": {
       "ail": "nu",
-      "exp": "rp"
+      "dea": "rp",
+      "ele": "rs",
+      "exp": "rp",
+      "for": "rs",
+      "ice": "rs",
+      "phy": "rs"
     },
     "skills": {
       "Elec Boost": 86,
@@ -497,7 +522,12 @@
     "race": "Tyrant",
     "resists": {
       "ail": "nu",
-      "exp": "rp"
+      "dea": "rp",
+      "ele": "rs",
+      "exp": "rp",
+      "for": "rs",
+      "ice": "rs",
+      "phy": "rs"
     },
     "skills": {
       "Death Flies": 98,
@@ -522,6 +552,7 @@
     "lvl": 61,
     "race": "Fury",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "fir": "wk",
       "phy": "rs"
@@ -636,6 +667,7 @@
     "lvl": 66,
     "race": "Night",
     "resists": {
+      "dea": "rp",
       "exp": "nu",
       "fir": "rp",
       "ice": "dr",
@@ -667,6 +699,7 @@
     "resists": {
       "dea": "nu",
       "ele": "wk",
+      "exp": "wk",
       "phy": "rs"
     },
     "skills": {
@@ -693,6 +726,8 @@
     "lvl": 61,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu",
       "ice": "dr"
     },
@@ -721,6 +756,7 @@
     "race": "Foul",
     "resists": {
       "dea": "nu",
+      "exp": "wk",
       "ice": "wk",
       "phy": "rs"
     },
@@ -748,6 +784,7 @@
     "race": "Avatar",
     "resists": {
       "ail": "wk",
+      "exp": "nu",
       "ice": "nu"
     },
     "skills": {
@@ -802,6 +839,7 @@
     "lvl": 20,
     "race": "Haunt",
     "resists": {
+      "cur": "wk",
       "dea": "nu",
       "exp": "wk",
       "fir": "dr"
@@ -831,7 +869,8 @@
     "resists": {
       "exp": "nu",
       "fir": "dr",
-      "min": "wk"
+      "min": "wk",
+      "ner": "wk"
     },
     "skills": {
       "Fire Boost": 0,
@@ -858,6 +897,7 @@
     "race": "Haunt",
     "resists": {
       "dea": "nu",
+      "exp": "wk",
       "fir": "dr",
       "for": "wk",
       "phy": "rs"
@@ -885,6 +925,7 @@
     "lvl": 58,
     "race": "Femme",
     "resists": {
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -893,7 +934,7 @@
       "Mahama": 0,
       "Mediarahan": 59,
       "Nag": 0,
-      "Samrecarm": 62,
+      "Samarecarm": 62,
       "Seduce": 61
     },
     "stats": {
@@ -944,6 +985,8 @@
     "lvl": 37,
     "race": "Fiend",
     "resists": {
+      "cur": "dr",
+      "dea": "rp",
       "exp": "rp",
       "min": "dr",
       "ner": "nu"
@@ -995,14 +1038,17 @@
   "Dante": {
     "cost": 60500,
     "lvl": 80,
-    "race": "Fiend",
+    "race": "Summoner",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu",
+      "mag": "rs",
       "phy": "rs"
     },
     "skills": {
-      "Bullet-Time": 81,
-      "E&I;": 0,
+      "Bullet Time": 81,
+      "E & I": 0,
       "Holy Star": 0,
       "Intimidate": 0,
       "Never Yield": 0,
@@ -1030,7 +1076,8 @@
     "race": "Femme",
     "resists": {
       "ele": "wk",
-      "min": "nu"
+      "min": "nu",
+      "ner": "nu"
     },
     "skills": {
       "Bufu": 9,
@@ -1083,6 +1130,8 @@
     "lvl": 44,
     "race": "Fury",
     "resists": {
+      "dea": "nu",
+      "exp": "nu",
       "fir": "nu",
       "ice": "wk"
     },
@@ -1135,6 +1184,7 @@
     "lvl": 50,
     "race": "Divine",
     "resists": {
+      "cur": "wk",
       "dea": "wk",
       "exp": "rp"
     },
@@ -1223,6 +1273,7 @@
     "lvl": 7,
     "race": "Element",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "for": "wk"
     },
@@ -1277,6 +1328,7 @@
     "lvl": 20,
     "race": "Element",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "fir": "dr",
       "ice": "wk"
@@ -1387,6 +1439,8 @@
     "lvl": 63,
     "race": "Kishin",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu",
       "phy": "rs"
     },
@@ -1414,6 +1468,7 @@
     "lvl": 66,
     "race": "Brute",
     "resists": {
+      "dea": "nu",
       "for": "nu"
     },
     "skills": {
@@ -1439,8 +1494,10 @@
     "lvl": 87,
     "race": "Seraph",
     "resists": {
+      "ele": "nu",
       "exp": "rp",
-      "fir": "nu"
+      "fir": "nu",
+      "for": "nu"
     },
     "skills": {
       "Blight": 88,
@@ -1448,7 +1505,7 @@
       "Maziodyne": 0,
       "Persuade": 89,
       "Radiance": 91,
-      "Samrecarm": 0,
+      "Samarecarm": 0,
       "Ziodyne": 0
     },
     "stats": {
@@ -1467,6 +1524,8 @@
     "race": "Wargod",
     "resists": {
       "ele": "wk",
+      "exp": "nu",
+      "for": "nu",
       "ice": "nu"
     },
     "skills": {
@@ -1500,7 +1559,8 @@
     "resists": {
       "cur": "nu",
       "dea": "wk",
-      "exp": "rp"
+      "exp": "rp",
+      "ner": "nu"
     },
     "skills": {
       "Diarahan": 0,
@@ -1556,8 +1616,10 @@
     "lvl": 55,
     "race": "Jirae",
     "resists": {
+      "dea": "nu",
       "fir": "wk",
-      "ice": "nu"
+      "ice": "nu",
+      "phy": "nu"
     },
     "skills": {
       "Berserk": 0,
@@ -1617,7 +1679,8 @@
     "resists": {
       "dea": "rp",
       "exp": "wk",
-      "min": "nu"
+      "min": "nu",
+      "ner": "nu"
     },
     "skills": {
       "Avenge": 68,
@@ -1676,6 +1739,9 @@
     "lvl": 42,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
+      "exp": "nu",
       "fir": "nu",
       "for": "dr"
     },
@@ -1708,7 +1774,7 @@
       "Me Patra": 12,
       "Paraladi": 11,
       "Pester": 13,
-      "Posumdi": 0,
+      "Posumudi": 0,
       "Rakunda": 0,
       "Seduce": 0,
       "Trafuri": 15,
@@ -1764,11 +1830,11 @@
     },
     "skills": {
       "Anti-Phys": 76,
-      "Elec Repel": 79,
       "Ice Boost": 0,
       "Iron Claw": 77,
       "Life Refill": 78,
       "Mabufudyne": 0,
+      "Repel Elec": 79,
       "Wing Buffet": 0
     },
     "stats": {
@@ -1867,6 +1933,7 @@
     "lvl": 13,
     "race": "Beast",
     "resists": {
+      "dea": "nu",
       "fir": "nu",
       "for": "wk"
     },
@@ -2030,6 +2097,7 @@
     "race": "Lady",
     "resists": {
       "dea": "rp",
+      "exp": "nu",
       "fir": "nu",
       "ice": "wk"
     },
@@ -2116,13 +2184,15 @@
     "race": "Lady",
     "resists": {
       "exp": "nu",
-      "fir": "wk"
+      "fir": "wk",
+      "min": "nu",
+      "ner": "nu"
     },
     "skills": {
       "Diarama": 0,
-      "Maiden Plea": 25,
+      "Maiden's Plea": 25,
       "Me Patra": 27,
-      "Posumdi": 26,
+      "Posumudi": 26,
       "Recarm": 28,
       "Sexy Gaze": 0
     },
@@ -2312,6 +2382,8 @@
     "lvl": 32,
     "race": "Mitama",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -2345,7 +2417,7 @@
       "Makakaja": 0,
       "Makarakarn": 0,
       "Rakukaja": 0,
-      "Rakuna": 67,
+      "Rakunda": 67,
       "Sukukaja": 64,
       "Tetrakarn": 66,
       "Trafuri": 68
@@ -2374,7 +2446,7 @@
       "Mana Surge": 57,
       "Mediarahan": 0,
       "Recarmdra": 59,
-      "Samrecarm": 58,
+      "Samarecarm": 58,
       "Seduce": 0,
       "Stone Gaze": 56
     },
@@ -2394,7 +2466,8 @@
     "race": "Haunt",
     "resists": {
       "dea": "rp",
-      "ele": "wk"
+      "ele": "wk",
+      "exp": "wk"
     },
     "skills": {
       "Anti-Phys": 50,
@@ -2446,6 +2519,7 @@
     "lvl": 80,
     "race": "Night",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "mag": "rs"
     },
@@ -2479,8 +2553,10 @@
     "lvl": 53,
     "race": "Night",
     "resists": {
+      "cur": "nu",
       "dea": "nu",
-      "exp": "wk"
+      "exp": "wk",
+      "ner": "nu"
     },
     "skills": {
       "Debilitate": 58,
@@ -2507,6 +2583,8 @@
     "lvl": 52,
     "race": "Tyrant",
     "resists": {
+      "ail": "rs",
+      "mag": "rs",
       "phy": "rs"
     },
     "skills": {
@@ -2514,8 +2592,8 @@
       "Mabufudyne": 0,
       "Makajamon": 0,
       "Mana Gain": 57,
+      "Mischief": 53,
       "Mudoon": 56,
-      "Prank": 53,
       "Trafuri": 55
     },
     "stats": {
@@ -2622,6 +2700,9 @@
     "lvl": 30,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
+      "exp": "nu",
       "for": "nu"
     },
     "skills": {
@@ -2647,7 +2728,9 @@
     "lvl": 95,
     "race": "Seraph",
     "resists": {
+      "ail": "nu",
       "all": "rs",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -2730,7 +2813,8 @@
     "resists": {
       "ele": "rp",
       "exp": "nu",
-      "fir": "wk"
+      "fir": "wk",
+      "ner": "wk"
     },
     "skills": {
       "Dark Might": 0,
@@ -2757,6 +2841,7 @@
     "lvl": 78,
     "race": "Deity",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "ice": "wk",
       "phy": "rp"
@@ -2766,7 +2851,7 @@
       "Debilitate": 0,
       "Fog Breath": 81,
       "Holy Wrath": 80,
-      "Mahamon": 82,
+      "Mahamaon": 82,
       "Mamudoon": 0,
       "Mana Surge": 83,
       "Megidola": 0
@@ -2786,6 +2871,7 @@
     "lvl": 34,
     "race": "Snake",
     "resists": {
+      "dea": "nu",
       "ele": "dr",
       "fir": "wk",
       "ice": "nu"
@@ -2840,6 +2926,8 @@
     "lvl": 91,
     "race": "Tyrant",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "ele": "wk",
       "exp": "nu"
     },
@@ -2867,6 +2955,7 @@
     "lvl": 43,
     "race": "Wilder",
     "resists": {
+      "dea": "nu",
       "ele": "wk",
       "fir": "nu"
     },
@@ -2973,6 +3062,8 @@
     "lvl": 29,
     "race": "Mitama",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -3025,6 +3116,7 @@
     "lvl": 31,
     "race": "Wilder",
     "resists": {
+      "dea": "nu",
       "fir": "wk",
       "ice": "nu"
     },
@@ -3158,8 +3250,11 @@
     "lvl": 81,
     "race": "Brute",
     "resists": {
+      "cur": "nu",
       "dea": "nu",
-      "exp": "wk"
+      "exp": "wk",
+      "min": "nu",
+      "phy": "nu"
     },
     "skills": {
       "Beckon Call": 0,
@@ -3215,6 +3310,7 @@
     "race": "Yoma",
     "resists": {
       "cur": "wk",
+      "ner": "wk",
       "phy": "rs"
     },
     "skills": {
@@ -3296,6 +3392,9 @@
     "lvl": 63,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
+      "exp": "nu",
       "ice": "nu"
     },
     "skills": {
@@ -3381,6 +3480,7 @@
     "race": "Foul",
     "resists": {
       "dea": "nu",
+      "exp": "wk",
       "for": "wk",
       "phy": "rs"
     },
@@ -3408,8 +3508,10 @@
     "lvl": 28,
     "race": "Haunt",
     "resists": {
+      "cur": "nu",
       "dea": "nu",
-      "fir": "wk"
+      "fir": "wk",
+      "min": "nu"
     },
     "skills": {
       "Dekunda": 32,
@@ -3439,7 +3541,7 @@
     },
     "skills": {
       "Dia": 0,
-      "Posumdi": 5,
+      "Posumudi": 5,
       "Rakunda": 4,
       "Seduce": 3,
       "Wing Buffet": 6,
@@ -3461,7 +3563,8 @@
     "race": "Divine",
     "resists": {
       "dea": "wk",
-      "exp": "rp"
+      "exp": "rp",
+      "ner": "wk"
     },
     "skills": {
       "Brainwash": 0,
@@ -3514,7 +3617,8 @@
     "race": "Divine",
     "resists": {
       "dea": "wk",
-      "exp": "rp"
+      "exp": "rp",
+      "min": "wk"
     },
     "skills": {
       "Bright Might": 0,
@@ -3541,6 +3645,7 @@
     "race": "Yoma",
     "resists": {
       "ele": "wk",
+      "exp": "nu",
       "for": "nu"
     },
     "skills": {
@@ -3608,7 +3713,7 @@
       "Mediarama": 0,
       "Paraladi": 0,
       "Pester": 0,
-      "Posumdi": 0,
+      "Posumudi": 0,
       "Rakunda": 0,
       "Seduce": 0,
       "Tarukaja": 0,
@@ -3655,6 +3760,41 @@
       "mp": 201,
       "st": 16,
       "vi": 27
+    }
+  },
+  "Raidou Kuzunoha the XIV": {
+    "cost": 60500,
+    "lvl": 80,
+    "race": "Summoner",
+    "resists": {
+      "ail": "nu",
+      "dea": "nu",
+      "exp": "nu",
+      "mag": "rs",
+      "phy": "rs"
+    },
+    "skills": {
+      "Arbitration": 0,
+      "Boogie-Woogie": 0,
+      "Endure": 0,
+      "Guardian Raptor": 0,
+      "Hitokoto Gust": 0,
+      "Jiraiya Tarantella": 84,
+      "Mishaguji Thunder": 0,
+      "Mokoi Boomerang": 81,
+      "Provoke": 0,
+      "Raidou the Aeon": 83,
+      "Tekisatsu": 82,
+      "Yoshitsune Show-up": 0
+    },
+    "stats": {
+      "ag": 25,
+      "hp": 612,
+      "lu": 16,
+      "ma": 22,
+      "mp": 306,
+      "st": 25,
+      "vi": 22
     }
   },
   "Raiju": {
@@ -3723,7 +3863,8 @@
     "race": "Haunt",
     "resists": {
       "dea": "rp",
-      "ele": "wk"
+      "ele": "wk",
+      "exp": "wk"
     },
     "skills": {
       "Berserk": 68,
@@ -3777,13 +3918,14 @@
     "race": "Seraph",
     "resists": {
       "exp": "rp",
-      "fir": "nu"
+      "fir": "nu",
+      "for": "nu"
     },
     "skills": {
       "Holy Wrath": 88,
       "Life Refill": 0,
       "Mahamaon": 86,
-      "Malakalarn": 0,
+      "Makarakarn": 0,
       "Prayer": 85,
       "Stasis Blade": 87,
       "Tetrakarn": 0
@@ -3803,7 +3945,11 @@
     "lvl": 55,
     "race": "Fiend",
     "resists": {
-      "ele": "nu"
+      "ail": "nu",
+      "dea": "nu",
+      "ele": "nu",
+      "exp": "nu",
+      "for": "nu"
     },
     "skills": {
       "Avenge": 58,
@@ -3827,6 +3973,8 @@
     "lvl": 45,
     "race": "Foul",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -3854,6 +4002,8 @@
     "lvl": 35,
     "race": "Mitama",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -3880,6 +4030,7 @@
     "lvl": 73,
     "race": "Vile",
     "resists": {
+      "dea": "rp",
       "ele": "wk",
       "exp": "rp"
     },
@@ -3889,7 +4040,7 @@
       "Mamudoon": 0,
       "Prominence": 0,
       "Repel Phys": 77,
-      "Samrecarm": 74,
+      "Samarecarm": 74,
       "Tetrakarn": 75
     },
     "stats": {
@@ -3907,6 +4058,7 @@
     "lvl": 30,
     "race": "Megami",
     "resists": {
+      "ail": "nu",
       "exp": "nu",
       "fir": "wk"
     },
@@ -3933,6 +4085,7 @@
     "lvl": 35,
     "race": "Jirae",
     "resists": {
+      "dea": "nu",
       "exp": "nu",
       "ner": "wk"
     },
@@ -3988,15 +4141,17 @@
     "lvl": 64,
     "race": "Megami",
     "resists": {
+      "cur": "nu",
       "ele": "wk",
+      "exp": "nu",
       "for": "nu"
     },
     "skills": {
       "Dark Pledge": 66,
-      "Force Repel": 65,
       "Mana Aid": 68,
       "Mazandyne": 0,
       "Might": 0,
+      "Repel Force": 65,
       "Thunderclap": 67,
       "Wind Cutter": 69
     },
@@ -4048,7 +4203,8 @@
     "race": "Fairy",
     "resists": {
       "cur": "wk",
-      "for": "rp"
+      "for": "rp",
+      "ner": "wk"
     },
     "skills": {
       "Estoma": 0,
@@ -4076,6 +4232,7 @@
     "race": "Foul",
     "resists": {
       "dea": "nu",
+      "exp": "wk",
       "for": "wk",
       "phy": "rs"
     },
@@ -4132,6 +4289,7 @@
     "lvl": 54,
     "race": "Brute",
     "resists": {
+      "dea": "rp",
       "exp": "rp",
       "fir": "wk",
       "phy": "nu"
@@ -4188,7 +4346,8 @@
     "resists": {
       "cur": "nu",
       "fir": "wk",
-      "min": "rs"
+      "min": "rs",
+      "ner": "nu"
     },
     "skills": {
       "Anti-Death": 33,
@@ -4215,6 +4374,7 @@
     "race": "Fury",
     "resists": {
       "all": "rs",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -4241,19 +4401,21 @@
     "lvl": 74,
     "race": "Lady",
     "resists": {
+      "cur": "nu",
       "ele": "wk",
+      "exp": "nu",
       "for": "nu"
     },
     "skills": {
       "Dark Pledge": 0,
       "Earthquake": 78,
-      "Elec Repel": 77,
-      "Force Repel": 0,
       "Makajamon": 75,
       "Makakaja": 76,
       "Mana Aid": 0,
       "Mazandyne": 0,
       "Might": 0,
+      "Repel Elec": 77,
+      "Repel Force": 0,
       "Thunderclap": 0,
       "Wind Cutter": 0
     },
@@ -4273,6 +4435,7 @@
     "race": "Foul",
     "resists": {
       "dea": "nu",
+      "exp": "wk",
       "fir": "wk",
       "phy": "rs"
     },
@@ -4380,6 +4543,7 @@
     "lvl": 62,
     "race": "Brute",
     "resists": {
+      "dea": "nu",
       "fir": "wk",
       "ice": "nu"
     },
@@ -4409,7 +4573,9 @@
     "resists": {
       "dea": "nu",
       "fir": "dr",
-      "ice": "wk"
+      "ice": "wk",
+      "min": "nu",
+      "ner": "nu"
     },
     "skills": {
       "Attack All": 76,
@@ -4490,6 +4656,8 @@
     "lvl": 69,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "ele": "dr",
       "exp": "nu",
       "phy": "rp"
@@ -4520,14 +4688,15 @@
     "resists": {
       "cur": "wk",
       "ele": "dr",
-      "exp": "nu"
+      "exp": "nu",
+      "ner": "wk"
     },
     "skills": {
       "Avenge": 0,
-      "Fire Repel": 80,
       "Hades Blast": 0,
       "Maziodyne": 78,
       "Mediarahan": 77,
+      "Repel Fire": 80,
       "Stasis Blade": 79,
       "Ziodyne": 0
     },
@@ -4546,6 +4715,7 @@
     "lvl": 64,
     "race": "Divine",
     "resists": {
+      "dea": "wk",
       "exp": "rp",
       "fir": "dr",
       "ice": "wk"
@@ -4601,6 +4771,7 @@
     "lvl": 57,
     "race": "Fairy",
     "resists": {
+      "dea": "rp",
       "exp": "rp",
       "mag": "rs"
     },
@@ -4655,6 +4826,8 @@
     "lvl": 77,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
       "exp": "nu"
     },
     "skills": {
@@ -4682,8 +4855,10 @@
     "lvl": 21,
     "race": "Holy",
     "resists": {
+      "cur": "nu",
       "ele": "wk",
-      "exp": "nu"
+      "exp": "nu",
+      "min": "nu"
     },
     "skills": {
       "Diarama": 26,
@@ -4742,6 +4917,7 @@
     "race": "Megami",
     "resists": {
       "ele": "wk",
+      "exp": "nu",
       "for": "nu"
     },
     "skills": {
@@ -4799,6 +4975,7 @@
     "lvl": 41,
     "race": "Divine",
     "resists": {
+      "dea": "wk",
       "exp": "rp",
       "for": "wk"
     },
@@ -4854,6 +5031,9 @@
     "lvl": 52,
     "race": "Fiend",
     "resists": {
+      "ail": "nu",
+      "dea": "nu",
+      "exp": "nu",
       "fir": "nu"
     },
     "skills": {
@@ -4880,6 +5060,7 @@
     "resists": {
       "dea": "rp",
       "exp": "wk",
+      "mag": "wk",
       "phy": "rs"
     },
     "skills": {
@@ -4905,7 +5086,9 @@
     "lvl": 54,
     "race": "Fury",
     "resists": {
-      "exp": "nu"
+      "dea": "nu",
+      "exp": "nu",
+      "phy": "nu"
     },
     "skills": {
       "Attack All": 58,
@@ -4941,6 +5124,7 @@
     "race": "Haunt",
     "resists": {
       "dea": "nu",
+      "exp": "wk",
       "ice": "wk"
     },
     "skills": {
@@ -4994,6 +5178,7 @@
     "lvl": 46,
     "race": "Avatar",
     "resists": {
+      "exp": "rp",
       "for": "rp"
     },
     "skills": {
@@ -5027,7 +5212,7 @@
       "Elec Boost": 67,
       "Mediarahan": 68,
       "Rakukaja": 0,
-      "Samrecarm": 69,
+      "Samarecarm": 69,
       "Wind Cutter": 70,
       "Ziodyne": 0
     },
@@ -5053,7 +5238,7 @@
     "skills": {
       "Mazan": 10,
       "Mute Gaze": 0,
-      "Posumdi": 0,
+      "Posumudi": 0,
       "Toxic Sting": 7,
       "Void Nerve": 11,
       "War Cry": 8,
@@ -5075,8 +5260,10 @@
     "lvl": 27,
     "race": "Kishin",
     "resists": {
+      "cur": "nu",
       "exp": "nu",
-      "for": "wk"
+      "for": "wk",
+      "ner": "nu"
     },
     "skills": {
       "Agilao": 0,

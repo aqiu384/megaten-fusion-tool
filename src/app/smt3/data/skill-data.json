@@ -1,0 +1,1869 @@
+{
+  "Agi": {
+    "cost": 300,
+    "damage": "Weak",
+    "element": "fir",
+    "rank": 1,
+    "target": "Single"
+  },
+  "Agidyne": {
+    "cost": 1000,
+    "damage": "Heavy",
+    "element": "fir",
+    "rank": 7,
+    "target": "Single"
+  },
+  "Agilao": {
+    "cost": 600,
+    "damage": "Medium",
+    "element": "fir",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Allure": {
+    "cost": 1300,
+    "effect": "Chance of inflicting charm",
+    "element": "min",
+    "rank": 8,
+    "target": "All"
+  },
+  "Analyze": {
+    "cost": 200,
+    "effect": "Shows enemy data (if defeated once before)",
+    "element": "spe",
+    "rank": 3
+  },
+  "Andalucia": {
+    "cost": 6,
+    "damage": "Medium",
+    "effect": "x1-4",
+    "element": "phy",
+    "target": "All"
+  },
+  "Anti-Curse": {
+    "effect": "Resists curse damage",
+    "element": "pas",
+    "rank": 3
+  },
+  "Anti-Death": {
+    "effect": "Resists death damage",
+    "element": "pas",
+    "rank": 5
+  },
+  "Anti-Elec": {
+    "effect": "Resists elec damage",
+    "element": "pas",
+    "rank": 4
+  },
+  "Anti-Expel": {
+    "effect": "Resists expel damage",
+    "element": "pas",
+    "rank": 5
+  },
+  "Anti-Fire": {
+    "effect": "Resists fire damage",
+    "element": "pas",
+    "rank": 4
+  },
+  "Anti-Force": {
+    "effect": "Resists force damage",
+    "element": "pas",
+    "rank": 4
+  },
+  "Anti-Ice": {
+    "effect": "Resists ice damage",
+    "element": "pas",
+    "rank": 4
+  },
+  "Anti-Mind": {
+    "effect": "Resists mind damage",
+    "element": "pas",
+    "rank": 3
+  },
+  "Anti-Nerve": {
+    "effect": "Resists nerve damage",
+    "element": "pas",
+    "rank": 3
+  },
+  "Anti-Phys": {
+    "effect": "Resists phys damage",
+    "element": "pas",
+    "rank": 5
+  },
+  "Arbitration": {
+    "effect": "Soothes an enraged demon",
+    "element": "pas",
+    "rank": 4
+  },
+  "Arid Needle": {
+    "cost": 12,
+    "damage": "Weak",
+    "effect": "60% Stone",
+    "element": "phy",
+    "rank": 7,
+    "target": "Single"
+  },
+  "Attack All": {
+    "effect": "Normal physical attacks will hit all enemies",
+    "element": "pas",
+    "rank": 10
+  },
+  "Avenge": {
+    "effect": "50% chance to counter enemy's physical attack, heavy damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Beast Roar": {
+    "cost": 3700,
+    "damage": "Heavy",
+    "effect": "Restores HP",
+    "element": "alm",
+    "target": "All"
+  },
+  "Beckon Call": {
+    "cost": 2000,
+    "effect": "Demon summons random ally from party stock",
+    "element": "spe",
+    "rank": 6
+  },
+  "Begging": {
+    "effect": "Requests Macca or Item. Effective when talker is 10 levels lower than target",
+    "element": "tal",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Berserk": {
+    "cost": 13,
+    "damage": "Weak",
+    "effect": "Medium hit",
+    "element": "phy",
+    "rank": 6,
+    "requires": "Thrust",
+    "target": "Random"
+  },
+  "Beseech": {
+    "effect": "Recruit enemy. Effective when talker is 10 levels lower than target (65%). Adverse when talker is 10 levels higher than target (25%)",
+    "element": "tal",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Binding Cry": {
+    "cost": 1400,
+    "effect": "Chance of inflicting bind",
+    "element": "ner",
+    "rank": 6,
+    "requires": "Mouth",
+    "target": "All"
+  },
+  "Blackmail": {
+    "effect": "Requests Macca or Item. Effective when talker is 10 levels higher than target. Adverse when talker is 10 levels lower than target",
+    "element": "tal",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Blight": {
+    "cost": 22,
+    "damage": "Weak",
+    "effect": "20% Poison",
+    "element": "phy",
+    "rank": 10,
+    "requires": "Weapon",
+    "target": "All"
+  },
+  "Bolt Storm": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "ele",
+    "rank": 9,
+    "target": "Multi"
+  },
+  "Boogie-Woogie": {
+    "cost": 300,
+    "damage": "Weak",
+    "effect": "x1-4",
+    "element": "phy",
+    "target": "Single"
+  },
+  "Brainwash": {
+    "effect": "Recruit enemy. Effective when talker is 10 levels higher than target",
+    "element": "tal",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Bright Might": {
+    "effect": "Normal attacks will crit during Full Kagutsuchi phase",
+    "element": "pas",
+    "rank": 4
+  },
+  "Brutal Slash": {
+    "cost": 13,
+    "damage": "Heavy",
+    "effect": "Medium crit/medium hit",
+    "element": "phy",
+    "rank": 6,
+    "requires": "Weapon",
+    "target": "Single"
+  },
+  "Bufu": {
+    "cost": 300,
+    "damage": "Weak",
+    "element": "ice",
+    "rank": 1,
+    "target": "Single"
+  },
+  "Bufudyne": {
+    "cost": 1000,
+    "damage": "Heavy",
+    "element": "ice",
+    "rank": 7,
+    "target": "Single"
+  },
+  "Bufula": {
+    "cost": 600,
+    "damage": "Medium",
+    "element": "ice",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Bullet Time": {
+    "cost": 1000,
+    "damage": "Medium",
+    "effect": "Always hit, 30% Panic",
+    "element": "phy",
+    "target": "All"
+  },
+  "Chaos Blade": {
+    "cost": 32,
+    "damage": "Weak",
+    "effect": "30% Panic",
+    "element": "phy",
+    "rank": 10,
+    "requires": "Weapon",
+    "target": "Random"
+  },
+  "Charisma": {
+    "effect": "Equipper's other conversational skills have 50% chance of instant success for normal or adverse results",
+    "element": "pas",
+    "rank": 5
+  },
+  "Charm Bite": {
+    "cost": 18,
+    "damage": "Medium",
+    "effect": "Medium crit/medium hit, 40% Charm",
+    "element": "phy",
+    "rank": 5,
+    "requires": "Bite",
+    "target": "Single"
+  },
+  "Counter": {
+    "effect": "50% chance to counter enemy's physical attack, light damage",
+    "element": "pas",
+    "rank": 5
+  },
+  "Dark Might": {
+    "effect": "Normal attacks will crit during New Kagutsuchi phase",
+    "element": "pas",
+    "rank": 4
+  },
+  "Dark Pledge": {
+    "effect": "Recruit Enemy. Effective during new Kagutsuchi phase",
+    "element": "tal",
+    "rank": 5,
+    "target": "Single"
+  },
+  "Dark Sword": {
+    "cost": 22,
+    "damage": "Heavy",
+    "effect": "Hight crit/low hit, 40% Mute",
+    "element": "phy",
+    "rank": 8,
+    "requires": "Weapon",
+    "target": "Single"
+  },
+  "Deadly Fury": {
+    "cost": 32,
+    "damage": "Heavy",
+    "effect": "High crit",
+    "element": "phy",
+    "target": "All"
+  },
+  "Death Flies": {
+    "cost": 5000,
+    "damage": "Severe",
+    "effect": "Causes instant death to any enemy not immune to Death",
+    "element": "alm",
+    "target": "All"
+  },
+  "Death Lust": {
+    "cost": 1500,
+    "damage": "Heavy",
+    "effect": "May cause charm",
+    "element": "min",
+    "target": "All"
+  },
+  "Death Pact": {
+    "effect": "Recruit enemy. Effective on any target. Petrifies targets occasionally should they refuse",
+    "element": "tal",
+    "target": "Single"
+  },
+  "Deathbound": {
+    "cost": 25,
+    "damage": "Medium",
+    "element": "phy",
+    "rank": 11,
+    "requires": "Weapon",
+    "target": "Random"
+  },
+  "Deathtouch": {
+    "cost": 500,
+    "damage": "Weak",
+    "effect": "Absorbs HP",
+    "element": "alm",
+    "rank": 1,
+    "target": "Single"
+  },
+  "Debilitate": {
+    "cost": 4800,
+    "effect": "Lowers enemies' offense, defense, and agility.",
+    "element": "sup",
+    "rank": 8,
+    "target": "All"
+  },
+  "Dekaja": {
+    "cost": 1000,
+    "effect": "Removes all buffs",
+    "element": "sup",
+    "rank": 5,
+    "target": "All"
+  },
+  "Dekunda": {
+    "cost": 1000,
+    "effect": "Removes all debuffs",
+    "element": "sup",
+    "rank": 1,
+    "target": "All"
+  },
+  "Detain": {
+    "effect": "Prevents target from leaving midway",
+    "element": "pas",
+    "rank": 5
+  },
+  "Dia": {
+    "cost": 300,
+    "effect": "Restores small amount of HP",
+    "element": "rec",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Diarahan": {
+    "cost": 1500,
+    "effect": "Restores all HP",
+    "element": "rec",
+    "rank": 9,
+    "target": "Single"
+  },
+  "Diarama": {
+    "cost": 700,
+    "effect": "Restores large amount of HP",
+    "element": "rec",
+    "rank": 6,
+    "target": "Single"
+  },
+  "Dismal Tune": {
+    "cost": 3000,
+    "damage": "Medium",
+    "effect": "May cause mute",
+    "element": "cur",
+    "rank": 7,
+    "target": "All"
+  },
+  "Divine Shot": {
+    "cost": 13,
+    "damage": "Heavy",
+    "effect": "Medium crit",
+    "element": "phy",
+    "target": "Single"
+  },
+  "Dormina": {
+    "cost": 900,
+    "effect": "Chance of inflicting sleep",
+    "element": "min",
+    "rank": 4,
+    "target": "All"
+  },
+  "Drain Attack": {
+    "effect": "Drains HP when using physical attacks, but lowers critical rate",
+    "element": "pas",
+    "rank": 7
+  },
+  "E & I": {
+    "cost": 300,
+    "damage": "Weak",
+    "effect": "x1-4",
+    "element": "phy",
+    "target": "Single"
+  },
+  "Earthquake": {
+    "cost": 45,
+    "damage": "Severe",
+    "effect": "No crit",
+    "element": "phy",
+    "target": "All"
+  },
+  "Elec Boost": {
+    "effect": "Elec damage +50%",
+    "element": "pas",
+    "rank": 6
+  },
+  "Drain Elec": {
+    "effect": "Absorbs elec damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Repel Elec": {
+    "effect": "Repels elec damage",
+    "element": "pas",
+    "rank": 10
+  },
+  "Endure": {
+    "effect": "Revive from death once per battle with 1 HP",
+    "element": "pas",
+    "rank": 5
+  },
+  "Estoma": {
+    "cost": 1000,
+    "effect": "Reduces Encounter rate until New Kagutsuchi",
+    "element": "spe",
+    "rank": 7
+  },
+  "Eternal Rest": {
+    "cost": 1600,
+    "effect": "Instant death to all enemies inflicted with sleep",
+    "element": "min",
+    "rank": 7,
+    "target": "All"
+  },
+  "Evil Gaze": {
+    "cost": 800,
+    "effect": "Chance of reducing an enemy's HP to 1",
+    "element": "dea",
+    "rank": 8,
+    "requires": "Eye",
+    "target": "Single"
+  },
+  "Evil Melody": {
+    "cost": 100,
+    "effect": "Instantly kills the enemy or ally with the lowest HP. Ineffective on boss enemies",
+    "element": "alm",
+    "target": "Universal"
+  },
+  "Fast Retreat": {
+    "effect": "Increases the chance of successful retreat from battle by 50%",
+    "element": "pas"
+  },
+  "Feral Bite": {
+    "cost": 12,
+    "damage": "Medium",
+    "effect": "Medium crit/medium hit",
+    "element": "phy",
+    "rank": 1,
+    "requires": "Bite",
+    "target": "Single"
+  },
+  "Feral Claw": {
+    "cost": 6,
+    "damage": "Weak",
+    "element": "phy",
+    "rank": 1,
+    "requires": "Claw",
+    "target": "Single"
+  },
+  "Fire Boost": {
+    "effect": "Fire damage +50%",
+    "element": "pas",
+    "rank": 6
+  },
+  "Fire Breath": {
+    "cost": 900,
+    "damage": "Weak",
+    "element": "fir",
+    "rank": 5,
+    "requires": "Mouth",
+    "target": "Multi"
+  },
+  "Drain Fire": {
+    "effect": "Absorbs fire damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Repel Fire": {
+    "effect": "Repels fire damage",
+    "element": "pas",
+    "rank": 10
+  },
+  "Fire of Sinai": {
+    "cost": 5000,
+    "damage": "Severe",
+    "element": "alm",
+    "target": "Multi"
+  },
+  "Flatter": {
+    "effect": "Urges an indecisive demon. Effective when user is 10 levels lower than target",
+    "element": "pas",
+    "rank": 3
+  },
+  "Focus": {
+    "cost": 500,
+    "effect": "Next phys/almighty phys attack x2.5 damage",
+    "element": "sup",
+    "rank": 5
+  },
+  "Fog Breath": {
+    "cost": 3000,
+    "effect": "Sukunda x2",
+    "element": "sup",
+    "rank": 5,
+    "requires": "Mouth",
+    "target": "All"
+  },
+  "Force Boost": {
+    "effect": "Force damage +50%",
+    "element": "pas",
+    "rank": 6
+  },
+  "Drain Force": {
+    "effect": "Absorbs force damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Repel Force": {
+    "effect": "Repels force damage",
+    "element": "pas",
+    "rank": 10
+  },
+  "Freikugel": {
+    "cost": 17,
+    "damage": "Severe",
+    "effect": "Medium crit",
+    "element": "alm",
+    "target": "Single"
+  },
+  "Gaea Rage": {
+    "cost": 35,
+    "damage": "Severe",
+    "effect": "Medium crit",
+    "element": "phy",
+    "target": "All"
+  },
+  "Glacial Blast": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "ice",
+    "rank": 8,
+    "target": "Multi"
+  },
+  "God's Bow": {
+    "cost": 2000,
+    "effect": "Guaranteed kill of any enemy not immune to Expel",
+    "element": "exp",
+    "target": "Single"
+  },
+  "Godly Light": {
+    "cost": 1000,
+    "effect": "Reduces all enemies current HP by 80%",
+    "element": "exp",
+    "target": "All"
+  },
+  "Gonnection": {
+    "effect": "Urges an indecisive demon. Effective when user is the same race as the target",
+    "element": "pas",
+    "rank": 5
+  },
+  "Guardian Raptor": {
+    "cost": 1000,
+    "effect": "Removes all debuffs",
+    "element": "sup",
+    "target": "All"
+  },
+  "Guillotine": {
+    "cost": 17,
+    "damage": "Heavy",
+    "effect": "Medium crit/medium hit",
+    "element": "phy",
+    "rank": 7,
+    "requires": "Weapon",
+    "target": "Single"
+  },
+  "Hades Blast": {
+    "cost": 32,
+    "damage": "Heavy",
+    "effect": "High crit",
+    "element": "phy",
+    "rank": 11,
+    "requires": "Thrust",
+    "target": "All"
+  },
+  "Haggle": {
+    "effect": "Requests demon to lower bribe cost",
+    "element": "pas",
+    "rank": 2
+  },
+  "Hama": {
+    "cost": 600,
+    "effect": "Low chance of instant kill",
+    "element": "exp",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Hamaon": {
+    "cost": 1000,
+    "effect": "High chance of instant kill",
+    "element": "exp",
+    "rank": 6,
+    "target": "Single"
+  },
+  "Hassohappa": {
+    "cost": 35,
+    "damage": "Heavy",
+    "effect": "High crit",
+    "element": "phy",
+    "rank": 11,
+    "requires": "Weapon",
+    "target": "All"
+  },
+  "Heat Wave": {
+    "cost": 16,
+    "damage": "Weak",
+    "effect": "Medium crit",
+    "element": "phy",
+    "rank": 8,
+    "requires": "Weapon",
+    "target": "All"
+  },
+  "Hell Burner": {
+    "cost": 800,
+    "damage": "Heavy",
+    "element": "fir",
+    "target": "All"
+  },
+  "Hell Exhaust": {
+    "cost": 1500,
+    "damage": "Medium",
+    "effect": "Dekaja",
+    "element": "for",
+    "target": "All"
+  },
+  "Hell Fang": {
+    "cost": 15,
+    "damage": "Heavy",
+    "effect": "Hight crit/low hit",
+    "element": "phy",
+    "rank": 8,
+    "requires": "Bite",
+    "target": "Single"
+  },
+  "Hell Gaze": {
+    "cost": 1000,
+    "effect": "Low chance of instant kill",
+    "element": "dea",
+    "rank": 9,
+    "requires": "Eye",
+    "target": "Single"
+  },
+  "Hell Spin": {
+    "cost": 25,
+    "damage": "Medium",
+    "element": "phy",
+    "target": "All"
+  },
+  "Hell Thrust": {
+    "cost": 12,
+    "damage": "Medium",
+    "effect": "Medium crit/medium hit",
+    "element": "phy",
+    "rank": 3,
+    "requires": "Thrust",
+    "target": "Single"
+  },
+  "Hellfire": {
+    "cost": 2000,
+    "damage": "Medium",
+    "element": "fir",
+    "rank": 7,
+    "target": "Multi"
+  },
+  "Hitokoto Gust": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "for",
+    "target": "All"
+  },
+  "Holy Melody": {
+    "cost": 100,
+    "effect": "Restores enemy or ally with the lowest HP to full health",
+    "element": "rec",
+    "target": "Universal"
+  },
+  "Holy Star": {
+    "cost": 1000,
+    "effect": "Removes all debuffs",
+    "element": "sup",
+    "target": "All"
+  },
+  "Holy Wrath": {
+    "cost": 3600,
+    "effect": "Chance of reducing all enemies current HP by half",
+    "element": "exp",
+    "rank": 11,
+    "target": "All"
+  },
+  "Ice Boost": {
+    "effect": "Ice damage +50%",
+    "element": "pas",
+    "rank": 6
+  },
+  "Ice Breath": {
+    "cost": 900,
+    "damage": "Weak",
+    "element": "ice",
+    "rank": 5,
+    "requires": "Mouth",
+    "target": "Multi"
+  },
+  "Drain Ice": {
+    "effect": "Absorbs ice damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Repel Ice": {
+    "effect": "Repels ice damage",
+    "element": "pas",
+    "rank": 10
+  },
+  "Intimidate": {
+    "effect": "Urges an indecisive demon. Effective when user is 10 levels higher than target or youth or adult to child",
+    "element": "pas",
+    "rank": 6
+  },
+  "Intoxicate": {
+    "cost": 1500,
+    "effect": "High chance of inflicting panic",
+    "element": "min",
+    "target": "All"
+  },
+  "Iron Claw": {
+    "cost": 15,
+    "damage": "Heavy",
+    "effect": "Hight crit/low hit",
+    "element": "phy",
+    "rank": 7,
+    "requires": "Claw",
+    "target": "Single"
+  },
+  "Javelin Rain": {
+    "cost": 40,
+    "damage": "Heavy",
+    "effect": "Medium crit, 20% Mute",
+    "element": "phy",
+    "target": "All"
+  },
+  "Jiraiya Tarantella": {
+    "cost": 4000,
+    "damage": "Heavy",
+    "element": "alm",
+    "target": "All"
+  },
+  "Kamikaze": {
+    "damage": "Severe",
+    "effect": "Kills user instantly",
+    "element": "alm",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Kidnap": {
+    "effect": "Recruit enemy. Effective when adult or youth talker to child target. Averse when child talker to adult or youth target.",
+    "element": "tal",
+    "rank": 6,
+    "target": "Single"
+  },
+  "Last Resort": {
+    "damage": "Heavy",
+    "effect": "No crit/always hit, kills user instantly",
+    "element": "alm",
+    "rank": 4,
+    "target": "Universal"
+  },
+  "Life Aid": {
+    "effect": "Restore moderate amount of HP after battle",
+    "element": "pas",
+    "rank": 4
+  },
+  "Life Bonus": {
+    "effect": "Maximum HP +10%",
+    "element": "pas",
+    "rank": 2
+  },
+  "Life Drain": {
+    "cost": 1000,
+    "damage": "Weak",
+    "effect": "Absorbs HP and MP",
+    "element": "alm",
+    "rank": 7,
+    "target": "Single"
+  },
+  "Life Gain": {
+    "effect": "Maximum HP +20%",
+    "element": "pas",
+    "rank": 4
+  },
+  "Life Refill": {
+    "effect": "Regain HP while walking. Inactive while in stock",
+    "element": "pas",
+    "rank": 5
+  },
+  "Life Surge": {
+    "effect": "Maximum HP +30%",
+    "element": "pas",
+    "rank": 7
+  },
+  "Liftoma": {
+    "cost": 1200,
+    "effect": "Levitates party to avoid damage surfaces until New Kagutsuchi",
+    "element": "spe",
+    "rank": 6
+  },
+  "Lightoma": {
+    "cost": 1000,
+    "effect": "Illuminates dark areas until New Kagutsuchi. Cannot be used in areas with natural light",
+    "element": "spe",
+    "rank": 5
+  },
+  "Loan": {
+    "effect": "Requests Macca. After using on the same clan of demons thrice, demon of that clan will take away one third of player's Macca forcefully in the next encounter",
+    "element": "tal",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Lucky Find": {
+    "effect": "Demon picks up items randomly around the world map while walking",
+    "element": "pas",
+    "rank": 5
+  },
+  "Lullaby": {
+    "cost": 600,
+    "effect": "Chance of inflicting sleep",
+    "element": "min",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Lunge": {
+    "cost": 10,
+    "damage": "Weak",
+    "effect": "Medium crit/medium hit",
+    "element": "phy",
+    "rank": 1,
+    "requires": "Thrust",
+    "target": "Single"
+  },
+  "Mabufu": {
+    "cost": 800,
+    "damage": "Weak",
+    "element": "ice",
+    "rank": 4,
+    "target": "All"
+  },
+  "Mabufudyne": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "ice",
+    "rank": 10,
+    "target": "All"
+  },
+  "Mabufula": {
+    "cost": 1500,
+    "damage": "Medium",
+    "element": "ice",
+    "rank": 7,
+    "target": "All"
+  },
+  "Magma Axis": {
+    "cost": 30,
+    "damage": "Heavy",
+    "effect": "Phys/Fire damage relative to Magic",
+    "element": "fir",
+    "target": "Single"
+  },
+  "Mahama": {
+    "cost": 1500,
+    "effect": "Low chance of instant kill",
+    "element": "exp",
+    "rank": 6,
+    "target": "All"
+  },
+  "Mahamaon": {
+    "cost": 2500,
+    "effect": "High chance of instant kill",
+    "element": "exp",
+    "rank": 9,
+    "target": "All"
+  },
+  "Maiden's Plea": {
+    "effect": "Soothes an enraged demon. Effective when user is young female",
+    "element": "pas",
+    "rank": 6
+  },
+  "Makajam": {
+    "cost": 400,
+    "effect": "Chance of inflicting mute",
+    "element": "cur",
+    "rank": 5,
+    "target": "Single"
+  },
+  "Makajamon": {
+    "cost": 1100,
+    "effect": "Chance of inflicting mute",
+    "element": "cur",
+    "rank": 8,
+    "target": "All"
+  },
+  "Makakaja": {
+    "cost": 1200,
+    "effect": "Buff magic attack once",
+    "element": "sup",
+    "rank": 5,
+    "target": "All"
+  },
+  "Makarakarn": {
+    "cost": 4500,
+    "effect": "Reflects next non-almighty magic attack",
+    "element": "sup",
+    "rank": 8,
+    "target": "All"
+  },
+  "Makatora": {
+    "cost": 1000,
+    "effect": "Shares 10 MP with one ally",
+    "element": "spe",
+    "rank": 5
+  },
+  "Mamudo": {
+    "cost": 1500,
+    "effect": "Low chance of instant kill",
+    "element": "dea",
+    "rank": 6,
+    "target": "All"
+  },
+  "Mamudoon": {
+    "cost": 2500,
+    "effect": "High chance of instant kill",
+    "element": "dea",
+    "rank": 9,
+    "target": "All"
+  },
+  "Mana Aid": {
+    "effect": "Restore moderate amount of MP after battle",
+    "element": "pas",
+    "rank": 6
+  },
+  "Mana Bonus": {
+    "effect": "Maximum MP +10%",
+    "element": "pas",
+    "rank": 3
+  },
+  "Mana Drain": {
+    "cost": 200,
+    "damage": "Weak",
+    "effect": "Absorbs MP",
+    "element": "alm",
+    "rank": 5,
+    "target": "Single"
+  },
+  "Mana Gain": {
+    "effect": "Maximum MP +20%",
+    "element": "pas",
+    "rank": 5
+  },
+  "Mana Refill": {
+    "effect": "Regain MP while walking. Inactive while in stock",
+    "element": "pas",
+    "rank": 7
+  },
+  "Mana Surge": {
+    "effect": "Maximum MP +30%",
+    "element": "pas",
+    "rank": 8
+  },
+  "Maragi": {
+    "cost": 800,
+    "damage": "Weak",
+    "element": "fir",
+    "rank": 4,
+    "target": "All"
+  },
+  "Maragidyne": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "fir",
+    "rank": 10,
+    "target": "All"
+  },
+  "Maragion": {
+    "cost": 1500,
+    "damage": "Medium",
+    "element": "fir",
+    "rank": 7,
+    "target": "All"
+  },
+  "Marin Karin": {
+    "cost": 500,
+    "effect": "Chance of inflicting charm",
+    "element": "min",
+    "rank": 4,
+    "target": "All"
+  },
+  "Mazan": {
+    "cost": 800,
+    "damage": "Weak",
+    "element": "for",
+    "rank": 4,
+    "target": "All"
+  },
+  "Mazandyne": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "for",
+    "rank": 10,
+    "target": "All"
+  },
+  "Mazanma": {
+    "cost": 1500,
+    "damage": "Medium",
+    "element": "for",
+    "rank": 7,
+    "target": "All"
+  },
+  "Mazio": {
+    "cost": 800,
+    "damage": "Weak",
+    "element": "ele",
+    "rank": 4,
+    "target": "All"
+  },
+  "Maziodyne": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "ele",
+    "rank": 10,
+    "target": "All"
+  },
+  "Mazionga": {
+    "cost": 1500,
+    "damage": "Medium",
+    "element": "ele",
+    "rank": 7,
+    "target": "All"
+  },
+  "Me Patra": {
+    "cost": 1200,
+    "effect": "Cures Bind/Sleep/Panic",
+    "element": "rec",
+    "rank": 5,
+    "target": "All"
+  },
+  "Media": {
+    "cost": 1200,
+    "effect": "Restores small amount of HP",
+    "element": "rec",
+    "rank": 5,
+    "target": "All"
+  },
+  "Mediarahan": {
+    "cost": 3500,
+    "effect": "Restores all HP",
+    "element": "rec",
+    "rank": 11,
+    "target": "All"
+  },
+  "Mediarama": {
+    "cost": 2000,
+    "effect": "Restores large amount of HP",
+    "element": "rec",
+    "rank": 8,
+    "target": "All"
+  },
+  "Meditation": {
+    "cost": 1000,
+    "damage": "Medium",
+    "effect": "Absorbs HP and MP",
+    "element": "alm",
+    "target": "Single"
+  },
+  "Megido": {
+    "cost": 3000,
+    "damage": "Medium",
+    "element": "alm",
+    "rank": 8,
+    "target": "All"
+  },
+  "Megidola": {
+    "cost": 3700,
+    "damage": "Heavy",
+    "element": "alm",
+    "rank": 10,
+    "target": "All"
+  },
+  "Megidolaon": {
+    "cost": 5000,
+    "damage": "Severe",
+    "element": "alm",
+    "rank": 14,
+    "target": "All"
+  },
+  "Might": {
+    "effect": "Increases critical rate of normal attacks",
+    "element": "pas",
+    "rank": 7
+  },
+  "Mighty Gust": {
+    "cost": 14,
+    "damage": "Heavy",
+    "effect": "Medium crit/medium hit",
+    "element": "phy",
+    "rank": 5,
+    "requires": "Weapon",
+    "target": "Single"
+  },
+  "Mind's Eye": {
+    "effect": "Reduces the chance of being ambushed from the back by one third",
+    "element": "pas"
+  },
+  "Mischief": {
+    "effect": "Recruit Enemy. Effective when male talker to female target",
+    "element": "tal",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Mishaguji Thunder": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "ele",
+    "target": "All"
+  },
+  "Mokoi Boomerang": {
+    "cost": 1000,
+    "damage": "Medium",
+    "effect": "Always hit, 30% Panic",
+    "element": "phy",
+    "target": "All"
+  },
+  "Mudo": {
+    "cost": 600,
+    "effect": "Low chance of instant kill",
+    "element": "dea",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Mudoon": {
+    "cost": 1000,
+    "effect": "High chance of instant kill",
+    "element": "dea",
+    "rank": 6,
+    "target": "Single"
+  },
+  "Mute Gaze": {
+    "cost": 500,
+    "effect": "Chance of inflicting mute",
+    "element": "cur",
+    "rank": 3,
+    "requires": "Eye",
+    "target": "Single"
+  },
+  "Mutudi": {
+    "cost": 500,
+    "effect": "Cures Mute",
+    "element": "rec",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Nag": {
+    "effect": "Urges an indecisive demon. Effective when young female to male or child to youth",
+    "element": "pas",
+    "rank": 6
+  },
+  "Needle Rush": {
+    "cost": 10,
+    "damage": "Medium",
+    "element": "phy",
+    "rank": 1,
+    "target": "Single"
+  },
+  "Never Yield": {
+    "effect": "Revive from death once per battle with 1 HP",
+    "element": "pas"
+  },
+  "Oni-Kagura": {
+    "cost": 30,
+    "damage": "Medium",
+    "effect": "Medium crit",
+    "element": "phy",
+    "target": "All"
+  },
+  "Panic Voice": {
+    "cost": 800,
+    "effect": "Chance of inflicting panic",
+    "element": "min",
+    "rank": 7,
+    "requires": "Mouth",
+    "target": "All"
+  },
+  "Paraladi": {
+    "cost": 500,
+    "effect": "Cures Stun",
+    "element": "rec",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Patra": {
+    "cost": 500,
+    "effect": "Cures Bind/Sleep/Panic",
+    "element": "rec",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Persuade": {
+    "effect": "Urges an indecisive demon. Ineffective when child target",
+    "element": "pas",
+    "rank": 4
+  },
+  "Pester": {
+    "effect": "Requests Macca or Item. Effective when young female talker to male target or child talker to youth or adult target. Adverse when child target",
+    "element": "tal",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Pestilence": {
+    "cost": 1600,
+    "damage": "Medium",
+    "effect": "Instant death to enemies already inflicted with poison",
+    "element": "alm",
+    "target": "All"
+  },
+  "Petradi": {
+    "cost": 500,
+    "effect": "Cures Stone",
+    "element": "rec",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Drain Phys": {
+    "effect": "Absorbs phys damage",
+    "element": "pas",
+    "rank": 11
+  },
+  "Repel Phys": {
+    "effect": "Repels phys damage",
+    "element": "pas",
+    "rank": 12
+  },
+  "Pierce": {
+    "effect": "Phys attacks bypass all resistances except Repel",
+    "element": "pas",
+    "rank": 8
+  },
+  "Posumudi": {
+    "cost": 500,
+    "effect": "Cures Poison",
+    "element": "rec",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Prayer": {
+    "cost": 5000,
+    "effect": "          Restores all HP and cures all ailments",
+    "element": "rec",
+    "rank": 11,
+    "target": "All"
+  },
+  "Preach": {
+    "cost": 1500,
+    "damage": "Medium",
+    "effect": "May cause sleep, charm or panic",
+    "element": "min",
+    "target": "All"
+  },
+  "Prominence": {
+    "cost": 3000,
+    "damage": "Heavy",
+    "element": "fir",
+    "rank": 10,
+    "target": "Multi"
+  },
+  "Provoke": {
+    "effect": "Rakunda x2 and Tarukaja x2 on all enemies, restores MP",
+    "element": "sup",
+    "target": "All"
+  },
+  "Pulinpa": {
+    "cost": 500,
+    "effect": "Chance of inflicting panic",
+    "element": "min",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Radiance": {
+    "cost": 3000,
+    "damage": "Heavy",
+    "element": "exp",
+    "rank": 11,
+    "target": "All"
+  },
+  "Ragnarok": {
+    "cost": 3000,
+    "damage": "Severe",
+    "element": "fir",
+    "target": "Single"
+  },
+  "Raidou the Aeon": {
+    "effect": "Attack damage +50% and phys attacks bypass all resistances except Repel",
+    "element": "pas"
+  },
+  "Rakukaja": {
+    "cost": 1200,
+    "effect": "Buff defense once",
+    "element": "sup",
+    "rank": 7,
+    "target": "All"
+  },
+  "Rakunda": {
+    "cost": 1200,
+    "effect": "Debuff defense once",
+    "element": "sup",
+    "rank": 2,
+    "target": "All"
+  },
+  "Rebellion": {
+    "cost": 9,
+    "damage": "Medium",
+    "effect": "High crit/always hit",
+    "element": "phy",
+    "target": "Single"
+  },
+  "Recarm": {
+    "cost": 2000,
+    "effect": "Revive with half HP",
+    "element": "rec",
+    "rank": 8,
+    "target": "Single"
+  },
+  "Recarmdra": {
+    "cost": 100,
+    "effect": "User sacrifices self to fully heal HP/MP to entire party",
+    "element": "rec",
+    "rank": 9,
+    "target": "All"
+  },
+  "Red Capote": {
+    "cost": 3600,
+    "effect": "Sukukaja x4",
+    "element": "sup"
+  },
+  "Retaliate": {
+    "effect": "50% chance to counter enemy's physical attack, medium damage",
+    "element": "pas",
+    "rank": 7
+  },
+  "Riberama": {
+    "cost": 800,
+    "effect": "Increases Encounter rate until New Kagutsuchi",
+    "element": "spe",
+    "rank": 4
+  },
+  "Roundtrip": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "ele",
+    "target": "All"
+  },
+  "Sacrifice": {
+    "damage": "Heavy",
+    "effect": "Kills user instantly",
+    "element": "alm",
+    "rank": 6,
+    "target": "Random"
+  },
+  "Samarecarm": {
+    "cost": 3500,
+    "effect": "Revive with all HP",
+    "element": "rec",
+    "rank": 11,
+    "target": "Single"
+  },
+  "Scout": {
+    "effect": "Recruit enemy. Effective when adult talker to female target. Adverse when child talker to female target",
+    "element": "tal",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Seduce": {
+    "effect": "Recruit enemy. Effective when young female talker to male target. Adverse when male talker to male target",
+    "element": "tal",
+    "rank": 2,
+    "target": "Single"
+  },
+  "Sexy Gaze": {
+    "cost": 500,
+    "effect": "Chance of inflicting charm",
+    "element": "min",
+    "rank": 3,
+    "requires": "Eye",
+    "target": "Single"
+  },
+  "Shibaboo": {
+    "cost": 500,
+    "effect": "Chance of inflicting bind",
+    "element": "ner",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Shock": {
+    "cost": 900,
+    "damage": "Weak",
+    "element": "ele",
+    "rank": 5,
+    "target": "Multi"
+  },
+  "Showtime": {
+    "cost": 4000,
+    "damage": "Heavy",
+    "element": "alm",
+    "target": "All"
+  },
+  "Son's Oath": {
+    "effect": "Attack damage +50% ",
+    "element": "pas"
+  },
+  "Sonic Wave": {
+    "cost": 900,
+    "effect": "Chance of inflicting stun",
+    "element": "min",
+    "rank": 6,
+    "target": "All"
+  },
+  "Soul Divide": {
+    "cost": 3000,
+    "effect": "Chance of reducing all enemies current HP by half. May cause mute",
+    "element": "cur",
+    "target": "All"
+  },
+  "Soul Recruit": {
+    "effect": "Recruit Enemy. Effective when male target",
+    "element": "tal",
+    "rank": 4,
+    "requires": "Valkyrie",
+    "target": "Single"
+  },
+  "Spiral Viper": {
+    "cost": 18,
+    "damage": "Severe",
+    "effect": "Medium crit",
+    "element": "phy",
+    "target": "Single"
+  },
+  "Starlight": {
+    "cost": 2200,
+    "damage": "Medium",
+    "element": "exp",
+    "target": "All"
+  },
+  "Stasis Blade": {
+    "cost": 22,
+    "damage": "Heavy",
+    "effect": "Hight crit/low hit, 65% Bind",
+    "element": "phy",
+    "rank": 9,
+    "requires": "Weapon",
+    "target": "Single"
+  },
+  "Stinger": {
+    "cost": 12,
+    "damage": "Heavy",
+    "effect": "40% instant death",
+    "element": "alm",
+    "target": "Single"
+  },
+  "Stone Bite": {
+    "cost": 22,
+    "damage": "Medium",
+    "effect": "Medium crit/medium hit, 40% Stone",
+    "element": "phy",
+    "rank": 7,
+    "requires": "Bite",
+    "target": "Single"
+  },
+  "Stone Gaze": {
+    "cost": 600,
+    "effect": "Chance of inflicting stone",
+    "element": "dea",
+    "rank": 7,
+    "requires": "Eye",
+    "target": "Single"
+  },
+  "Stone Hunt": {
+    "effect": "Requests gem",
+    "element": "tal",
+    "rank": 6,
+    "target": "Single"
+  },
+  "Stun Bite": {
+    "cost": 18,
+    "damage": "Medium",
+    "effect": "Medium crit/medium hit, 40% Stun",
+    "element": "phy",
+    "rank": 6,
+    "requires": "Bite",
+    "target": "Single"
+  },
+  "Stun Claw": {
+    "cost": 17,
+    "damage": "Medium",
+    "effect": "Medium crit, 40% Stun",
+    "element": "phy",
+    "rank": 5,
+    "requires": "Claw",
+    "target": "Single"
+  },
+  "Stun Gaze": {
+    "cost": 500,
+    "effect": "Chance of inflicting stun",
+    "element": "ner",
+    "rank": 4,
+    "requires": "Eye",
+    "target": "Single"
+  },
+  "Stun Needle": {
+    "cost": 6,
+    "damage": "Weak",
+    "effect": "40% Stun",
+    "element": "phy",
+    "rank": 5,
+    "target": "Single"
+  },
+  "Sukukaja": {
+    "cost": 1200,
+    "effect": "Buff hit/evade once",
+    "element": "sup",
+    "rank": 3,
+    "target": "All"
+  },
+  "Sukunda": {
+    "cost": 1200,
+    "effect": "Debuff hit/evade once",
+    "element": "sup",
+    "rank": 1,
+    "target": "All"
+  },
+  "Tarukaja": {
+    "cost": 1200,
+    "effect": "Buff phys attack once",
+    "element": "sup",
+    "rank": 5,
+    "target": "All"
+  },
+  "Tarunda": {
+    "cost": 2000,
+    "effect": "Debuff phys/magic attack once",
+    "element": "sup",
+    "rank": 2,
+    "target": "All"
+  },
+  "Taunt": {
+    "cost": 2000,
+    "effect": "Rakunda x2 and Tarukaja x2 on all enemies",
+    "element": "sup",
+    "rank": 3,
+    "target": "All"
+  },
+  "Tekisatsu": {
+    "cost": 12,
+    "damage": "Heavy",
+    "effect": "40% instant death",
+    "element": "alm",
+    "target": "Single"
+  },
+  "Tempest": {
+    "cost": 25,
+    "damage": "Medium",
+    "effect": "Medium crit",
+    "element": "phy",
+    "rank": 8,
+    "requires": "Thrust",
+    "target": "All"
+  },
+  "Tentarafoo": {
+    "cost": 1500,
+    "damage": "Medium",
+    "effect": "May cause panic",
+    "element": "min",
+    "rank": 8,
+    "target": "All"
+  },
+  "Terrorblade": {
+    "cost": 1000,
+    "damage": "Weak",
+    "effect": "x1-3, 30% Panic",
+    "element": "phy",
+    "target": "Random"
+  },
+  "Tetraja": {
+    "cost": 1500,
+    "effect": "Nulls next Expel or Death attack",
+    "element": "sup",
+    "rank": 4,
+    "target": "All"
+  },
+  "Tetrakarn": {
+    "cost": 4500,
+    "effect": "Reflects next non-almighty phys attack",
+    "element": "sup",
+    "rank": 8,
+    "target": "All"
+  },
+  "Thunderclap": {
+    "cost": 1200,
+    "effect": "Chance of reducing an enemy's current HP by half",
+    "element": "exp",
+    "rank": 6,
+    "target": "Single"
+  },
+  "Tornado": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "for",
+    "rank": 7,
+    "target": "Multi"
+  },
+  "Toxic Cloud": {
+    "cost": 800,
+    "damage": "Weak",
+    "effect": "May cause poison",
+    "element": "cur",
+    "rank": 4,
+    "requires": "Mouth",
+    "target": "All"
+  },
+  "Toxic Sting": {
+    "cost": 7,
+    "damage": "Weak",
+    "effect": "40% Poison",
+    "element": "phy",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Trade": {
+    "effect": "Requests barter",
+    "element": "tal",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Trafuri": {
+    "cost": 2500,
+    "effect": "100% Guaranteed escape for normal battles",
+    "element": "spe",
+    "rank": 5
+  },
+  "Venom Bite": {
+    "cost": 18,
+    "damage": "Medium",
+    "effect": "Medium crit/medium hit, 40% Poison",
+    "element": "phy",
+    "rank": 3,
+    "requires": "Bite",
+    "target": "Single"
+  },
+  "Venom Claw": {
+    "cost": 18,
+    "damage": "Medium",
+    "effect": "Medium crit, 40% Poison",
+    "element": "phy",
+    "rank": 3,
+    "requires": "Claw",
+    "target": "Single"
+  },
+  "Victory Cry": {
+    "effect": "Restore full HP/MP after battle",
+    "element": "pas",
+    "rank": 13
+  },
+  "Violet Flash": {
+    "cost": 1000,
+    "damage": "Medium",
+    "element": "exp",
+    "rank": 8,
+    "target": "Single"
+  },
+  "Void Curse": {
+    "effect": "Nullifies curse damage",
+    "element": "pas",
+    "rank": 6
+  },
+  "Void Death": {
+    "effect": "Nullifies death damage",
+    "element": "pas",
+    "rank": 8
+  },
+  "Void Elec": {
+    "effect": "Nullifies elec damage",
+    "element": "pas",
+    "rank": 7
+  },
+  "Void Expel": {
+    "effect": "Nullifies expel damage",
+    "element": "pas",
+    "rank": 8
+  },
+  "Void Fire": {
+    "effect": "Nullifies fire damage",
+    "element": "pas",
+    "rank": 7
+  },
+  "Void Force": {
+    "effect": "Nullifies force damage",
+    "element": "pas",
+    "rank": 7
+  },
+  "Void Ice": {
+    "effect": "Nullifies ice damage",
+    "element": "pas",
+    "rank": 7
+  },
+  "Void Mind": {
+    "effect": "Nullifies mind damage",
+    "element": "pas",
+    "rank": 6
+  },
+  "Void Nerve": {
+    "effect": "Nullifies nerve damage",
+    "element": "pas",
+    "rank": 6
+  },
+  "Void Phys": {
+    "effect": "Nullifies phys damage",
+    "element": "pas",
+    "rank": 10
+  },
+  "War Cry": {
+    "cost": 4000,
+    "effect": "Tarunda x2",
+    "element": "sup",
+    "rank": 6,
+    "requires": "Mouth",
+    "target": "All"
+  },
+  "Watchful": {
+    "effect": "Demon earns EXP without participating in battle",
+    "element": "pas",
+    "rank": 8
+  },
+  "Wet Wind": {
+    "cost": 2500,
+    "damage": "Medium",
+    "effect": "Stun",
+    "element": "for",
+    "target": "All"
+  },
+  "Whirlwind": {
+    "cost": 2500,
+    "damage": "Heavy",
+    "element": "for",
+    "target": "All"
+  },
+  "Wild Dance": {
+    "cost": 1800,
+    "effect": "High chance of inflicting panic",
+    "element": "min",
+    "target": "All"
+  },
+  "Wind Cutter": {
+    "cost": 1300,
+    "damage": "Severe",
+    "element": "for",
+    "rank": 9,
+    "target": "Single"
+  },
+  "Wine Party": {
+    "effect": "Solves all kinds of conversation troubles",
+    "element": "pas",
+    "rank": 6,
+    "requires": "Dionysus"
+  },
+  "Wing Buffet": {
+    "cost": 900,
+    "damage": "Weak",
+    "element": "for",
+    "rank": 5,
+    "requires": "Wing",
+    "target": "Multi"
+  },
+  "Wooing": {
+    "effect": "Recruit enemy. Effective when young male talker to female target or older female talker is 10 levels higher than female target. Adverse when male talker to male target",
+    "element": "tal",
+    "rank": 3,
+    "target": "Single"
+  },
+  "Xeros Beat": {
+    "cost": 40,
+    "damage": "Medium",
+    "effect": "Medium crit, 30% Bind",
+    "element": "phy",
+    "target": "All"
+  },
+  "Yoshitsune Show-up": {
+    "cost": 9,
+    "damage": "Medium",
+    "effect": "High crit/always hit",
+    "element": "phy",
+    "target": "Single"
+  },
+  "Zan": {
+    "cost": 300,
+    "damage": "Weak",
+    "element": "for",
+    "rank": 1,
+    "target": "Single"
+  },
+  "Zandyne": {
+    "cost": 1000,
+    "damage": "Heavy",
+    "element": "for",
+    "rank": 7,
+    "target": "Single"
+  },
+  "Zanma": {
+    "cost": 600,
+    "damage": "Medium",
+    "element": "for",
+    "rank": 4,
+    "target": "Single"
+  },
+  "Zio": {
+    "cost": 300,
+    "damage": "Weak",
+    "element": "ele",
+    "rank": 1,
+    "target": "Single"
+  },
+  "Ziodyne": {
+    "cost": 1000,
+    "damage": "Heavy",
+    "element": "ele",
+    "rank": 7,
+    "target": "Single"
+  },
+  "Zionga": {
+    "cost": 600,
+    "damage": "Medium",
+    "element": "ele",
+    "rank": 4,
+    "target": "Single"
+  }
+}

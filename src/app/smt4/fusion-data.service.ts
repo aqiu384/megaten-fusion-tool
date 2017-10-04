@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './models/constants';
 import { Compendium } from './models/compendium';
-import { FusionChart } from '../smt4/models/fusion-chart';
+import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 
 @Injectable()

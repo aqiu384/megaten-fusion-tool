@@ -21,6 +21,12 @@ import { Title } from '@angular/platform-browser';
           </a></td>
         </tr>
         <tr>
+          <td><a routerLink="../smt4">Shin Megami Tensei IV</a></td>
+          <td><a href="https://erikku.github.io/smt4tool/">
+            https://erikku.github.io/smt4tool/
+          </a></td>
+        </tr>
+        <tr>
           <td><a routerLink="../smt4f">Shin Megami Tensei IV: Apocalypse</a></td>
           <td><a href="http://gamers-high.com/megami4-final">
             http://gamers-high.com/megami4-final/
