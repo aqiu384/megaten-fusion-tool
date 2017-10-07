@@ -1,7 +1,6 @@
-import { Races, ResistanceElements, BaseStats } from './constants';
+import { Races, ResistanceElements, BaseStats, ElementOrder } from './constants';
 import { Demon, Skill } from '../models';
-import { FusionTypes } from '../../compendium/constants';
-import { Compendium as ICompendium } from '../../compendium/models';
+import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
@@ -18,8 +17,8 @@ export class Compendium implements ICompendium {
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private allDemons: Demon[];
-  private allSkills: Skill[];
+  private _allDemons: Demon[];
+  private _allSkills: Skill[];
 
   constructor() {
     this.initImportedData();
@@ -39,7 +38,7 @@ export class Compendium implements ICompendium {
         name,
         stats: BaseStats.map(val => json.stats[val]),
         resists: ResistanceElements.map(val => json.resists[val] || 'no'),
-        fusion: FusionTypes.Normal
+        fusion: 'normal'
       });
     }
 
@@ -54,6 +53,9 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
+      const demon = demons[name];
+
+      demon.fusion = 'special';
       specialRecipes[name] = json;
 
       if (json.length === 2) {
@@ -61,7 +63,10 @@ export class Compendium implements ICompendium {
         normalExceptions[json[1]] = json[0];
       }
 
-      demons[name].fusion = (json.length > 0) ? FusionTypes.Special : FusionTypes.Recruit;
+      if (json.length === 0) {
+        demon.prereq = 'Recruitment only';
+        demon.fusion = 'recruit';
+      }
     }
 
     for (const race of Races) {
@@ -121,19 +126,21 @@ export class Compendium implements ICompendium {
     }
 
     for (const [names, included] of Object.entries(this._dlcDemons)) {
-      if (!included) {
-        for (const name of names.split(',')) {
+      for (const name of names.split(',')) {
+        if (!included) {
           const { race, lvl } = this.demons[name];
           delete demonEntries[name];
 
           ingredients[race] = ingredients[race].filter(l => l !== lvl);
           results[race] = results[race].filter(l => l !== lvl);
         }
+
+        this.demons[name].fusion = included ? 'normal' : 'excluded';
       }
     }
 
-    this.allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
-    this.allSkills = skills;
+    this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
+    this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
   }
@@ -147,36 +154,54 @@ export class Compendium implements ICompendium {
     this.updateDerivedData();
   }
 
-  getDemon(name: string): Demon {
-    return this.demons[name];
+  get allDemons(): Demon[] {
+    return this._allDemons;
   }
 
-  getAllDemons(): Demon[] {
-    return this.allDemons;
+  get allSkills(): Skill[] {
+    return this._allSkills;
+  }
+
+  get specialDemons(): Demon[] {
+    return Object.keys(this.specialRecipes)
+      .filter(name => !this.isElementDemon(name))
+      .map(name => this.demons[name]);
+  }
+
+  getDemon(name: string): Demon {
+    return this.demons[name];
   }
 
   getSkill(name: string): Skill {
     return this.skills[name];
   }
 
-  getAllSkills(): Skill[] {
-    return this.allSkills;
+  getSkills(skills: { [skill: string]: number }): Skill[] {
+    const retSkills = [];
+
+    for (const [name, lvl] of Object.entries(skills)) {
+      retSkills.push(this.skills[name]);
+      this.skills[name].level = lvl;
+    }
+
+    retSkills.sort((d1, d2) => (d1.level - d2.level) * 100 + ElementOrder[d1.element] - ElementOrder[d2.element]);
+    return retSkills;
   }
 
   getIngredientDemonLvls(race: string): number[] {
-    return this.allIngredients[race];
+    return this.allIngredients[race] || [];
   }
 
   getResultDemonLvls(race: string): number[] {
-    return this.allResults[race];
+    return this.allResults[race] || [];
   }
 
-  getSpecialFusionIngredients(name: string): string[] {
+  getSpecialNameEntries(name: string): string[] {
     return this.specialRecipes[name] || [];
   }
 
-  getSpecialFusionResults(): string[] {
-    return Object.keys(this.specialRecipes).filter(name => !this.isElementDemon(name));
+  getSpecialNamePairs(name: string): NamePair[] {
+    return [];
   }
 
   getElementDemons(name: string) {

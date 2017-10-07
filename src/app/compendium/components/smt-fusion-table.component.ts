@@ -2,42 +2,43 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestro
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../constants';
-import { FusionRow, Compendium, FusionChart, CompendiumConfig, FusionDataService } from '../models';
+import { FUSION_DATA_SERVICE } from '../constants';
+import { Compendium, FusionChart, FusionDataService, FusionCalculator, NamePair, FusionPair } from '../models';
+import { toFusionPair } from '../models/conversions';
+
 import { CurrentDemonService } from '../current-demon.service';
 
 @Component({
-  selector: 'app-forward-fusion-table',
+  selector: 'app-smt-fusion-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-fusion-table
-      [headers]="headers"
-      [rowData]="fusionRows | async">
-    </app-fusion-table>
+    <app-fusion-pair-table
+      [title]="currentDemon + ' x Ingredient 2 = Result'"
+      [leftHeader]="'Ingredient 2'"
+      [rightHeader]="'Result'"
+      [rowData]="fusionPairs">
+    </app-fusion-pair-table>
   `
 })
-export class ForwardFusionTableComponent implements OnInit, OnDestroy {
-  static readonly HEADERS = {
-    left: 'Ingredient 2',
-    right: 'Result'
-  };
-
-  fusionRows: Observable<FusionRow[]>;
+export class SmtFusionTableComponent implements OnInit, OnDestroy {
+  calculator: FusionCalculator;
   compendium: Compendium;
   fusionChart: FusionChart;
   currentDemon: string;
+  fusionPairs: FusionPair[] = [];
 
   subscriptions: Subscription[] = [];
-  headers = ForwardFusionTableComponent.HEADERS;
+  toFusionPair = (names: NamePair) => toFusionPair(names, this.compendium);
 
   constructor(
     private currentDemonService: CurrentDemonService,
     private changeDetectorRef: ChangeDetectorRef,
-    @Inject(COMPENDIUM_CONFIG) private compendiumConfig: CompendiumConfig,
     @Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService
   ) { }
 
   ngOnInit() {
+    this.calculator = this.fusionDataService.fusionCalculator;
+
     this.subscriptions.push(
       this.fusionDataService.compendium.subscribe(compendium => {
         this.compendium = compendium;
@@ -66,9 +67,10 @@ export class ForwardFusionTableComponent implements OnInit, OnDestroy {
   getForwardFusions() {
     if (this.compendium && this.fusionChart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
-      this.fusionRows = Observable.create(observer => {
-        observer.next(this.compendiumConfig.forwardFuse(this.currentDemon, this.compendium, this.fusionChart));
-      });
+
+      this.fusionPairs = this.calculator
+        .getFusions(this.currentDemon, this.compendium, this.fusionChart)
+        .map(this.toFusionPair);
     }
   }
 }

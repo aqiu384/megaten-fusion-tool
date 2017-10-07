@@ -58,7 +58,9 @@ import { FusionDataService } from '../fusion-data.service';
         </tbody>
       </table>
       <app-demon-skills [compendium]="compendium" [skillLevels]="demon.skills"></app-demon-skills>
-      <app-fusion-recipes></app-fusion-recipes>
+      <app-smt-fusions [showFusionAlert]="demon.fusion === 'excluded'">
+        DLC marked as excluded, fusions involving {{ name }} may be inaccurate!
+      </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>

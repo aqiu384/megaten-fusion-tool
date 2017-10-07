@@ -3,17 +3,21 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 
+import { FusionEntryTableComponent } from './components/fusion-entry-table.component';
 import {
-  FusionTableComponent,
-  FusionTableHeaderComponent,
-  FusionTableRowComponent
-} from './components/fusion-table.component';
+  FusionPairTableComponent,
+  FusionPairTableHeaderComponent,
+  FusionPairTableRowComponent
+} from './components/fusion-pair-table.component';
 
-import {
-  ReverseFusionTableComponent,
-  SpecialReverseFusionTableComponent,
-  ExceptionReverseFusionTableComponent
-} from './components/reverse-fusion-table.component';
+import { SmtFissionTableComponent } from './components/smt-fission-table.component';
+import { SmtFusionTableComponent } from './components/smt-fusion-table.component';
+
+import { CompendiumComponent } from './components/compendium.component';
+import { DlcFusionSettingsComponent } from './components/dlc-fusion-settings.component';
+import { SmtFusionsComponent } from './components/smt-fusions.component';
+
+import { CurrentDemonService } from './current-demon.service';
 
 import {
   SkillCostToStringPipe,
@@ -22,12 +26,6 @@ import {
   LvlToNumberPipe
 } from './pipes';
 
-import { ForwardFusionTableComponent } from './components/forward-fusion-table.component';
-import { CompendiumComponent } from './components/compendium.component';
-import { FusionRecipesComponent } from './components/fusion-recipes.component';
-import { DlcFusionSettingsComponent } from './components/dlc-fusion-settings.component';
-import { CurrentDemonService } from './current-demon.service';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -35,27 +33,28 @@ import { CurrentDemonService } from './current-demon.service';
     SharedModule
   ],
   declarations: [
+    FusionEntryTableComponent,
+    FusionPairTableComponent,
+    FusionPairTableHeaderComponent,
+    FusionPairTableRowComponent,
+    SmtFissionTableComponent,
+    SmtFusionTableComponent,
     CompendiumComponent,
-    FusionRecipesComponent,
-    FusionTableComponent,
-    FusionTableHeaderComponent,
-    FusionTableRowComponent,
-    ForwardFusionTableComponent,
-    ReverseFusionTableComponent,
-    SpecialReverseFusionTableComponent,
-    ExceptionReverseFusionTableComponent,
     DlcFusionSettingsComponent,
+    SmtFusionsComponent,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     ElementAffinityToStringPipe,
     LvlToNumberPipe
   ],
   exports: [
+    FusionEntryTableComponent,
+    FusionPairTableComponent,
+    SmtFissionTableComponent,
+    SmtFusionTableComponent,
     CompendiumComponent,
-    FusionRecipesComponent,
-    ForwardFusionTableComponent,
-    ReverseFusionTableComponent,
     DlcFusionSettingsComponent,
+    SmtFusionsComponent,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     ElementAffinityToStringPipe,

@@ -51,6 +51,17 @@ export const SkillElements = ResistanceElements.concat(
   'passive'
 );
 
+export const ElementDemons = [
+  'Crystal Skull',
+  'Koh-i-Noor',
+  'Queen\'s Necklace',
+  'Regent',
+  'Stone of Scone',
+  'Orlov',
+  'Emperor\'s Amulet',
+  'Hope Diamond'
+];
+
 export const BaseStats = [
   'st', 'ma', 'en', 'ag', 'lu'
 ];

@@ -3,8 +3,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
-import { BaseStats, ResistanceElements, AffinityElements } from '../models/constants';
-import { Ailments, APP_TITLE } from '../models/constants';
+import { BaseStats, ResistanceElements, Ailments, APP_TITLE } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -66,7 +65,7 @@ import { FusionDataService } from '../fusion-data.service';
         </tbody>
       </table>
       <app-demon-skills [compendium]="compendium" [skills]="demon.skills"></app-demon-skills>
-      <app-fusion-recipes></app-fusion-recipes>
+      <app-smt-fusions></app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>
@@ -88,7 +87,6 @@ export class DemonEntryComponent {
   statHeaders = BaseStats;
   resistanceHeaders = ResistanceElements;
   ailmentHeaders = Ailments;
-  affinityHeaders = AffinityElements;
 }
 
 @Component({

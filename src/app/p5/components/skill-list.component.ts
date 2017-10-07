@@ -157,7 +157,7 @@ export class SkillListContainerComponent implements OnInit, OnDestroy {
   onCompendiumUpdated(compendium: Compendium) {
     this.changeDetectorRef.markForCheck();
     this.skills = Observable.create(observer => {
-      const skills = compendium.getAllSkills();
+      const skills = compendium.allSkills;
       skills.sort(SkillListComponent.SORT_FUNS[0]);
       observer.next(skills.slice(0, 50));
       setTimeout(() => observer.next(skills));

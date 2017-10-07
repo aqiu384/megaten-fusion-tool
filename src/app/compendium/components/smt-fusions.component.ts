@@ -1,13 +1,9 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  Input
-} from '@angular/core';
-
+import { Component, ChangeDetectionStrategy, Input, OnChanges, ViewChild } from '@angular/core';
 import { PositionEdgesService } from '../../shared/position-edges.service';
+import { PositionStickyDirective } from '../../shared/position-sticky.directive';
 
 @Component({
-  selector: 'app-fusion-recipes',
+  selector: 'app-smt-fusions',
   providers: [ PositionEdgesService ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -35,6 +31,11 @@ import { PositionEdgesService } from '../../shared/position-edges.service';
     </div>
   `
 })
-export class FusionRecipesComponent {
+export class SmtFusionsComponent implements OnChanges {
+  @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
   @Input() showFusionAlert = false;
+
+  ngOnChanges() {
+    setTimeout(() => this.stickyTable.nextEdges());
+  }
 }

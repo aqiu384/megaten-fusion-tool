@@ -101,9 +101,9 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-skills [compendium]="compendium" [skills]="demon.source">
         D-Source Skills
       </app-demon-skills>
-      <app-fusion-recipes [showFusionAlert]="laplaceOn">
+      <app-smt-fusions [showFusionAlert]="laplaceOn">
         Laplace Subapp Enabled (Result Lvl +4)
-      </app-fusion-recipes>
+      </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>

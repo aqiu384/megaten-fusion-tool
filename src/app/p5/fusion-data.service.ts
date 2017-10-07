@@ -5,9 +5,13 @@ import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './models/constants
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
+import { P5_NORMAL_FISSION_CALCULATOR, P5_NORMAL_FUSION_CALCULATOR } from './constants';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
+  fissionCalculator = P5_NORMAL_FISSION_CALCULATOR;
+  fusionCalculator = P5_NORMAL_FUSION_CALCULATOR;
+
   private _compendium = new Compendium();
   private _compendium$ = new BehaviorSubject(this._compendium);
   compendium = this._compendium$.asObservable();

@@ -11,8 +11,7 @@ import { Title } from '@angular/platform-browser';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { ElementOrder } from '../../smt4/models/constants';
-import { APP_TITLE } from '../models/constants';
+import { ElementOrder, APP_TITLE } from '../models/constants';
 import { Skill } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -152,7 +151,7 @@ export class SkillListContainerComponent implements OnInit, OnDestroy {
   onCompendiumUpdated(compendium: Compendium) {
     this.changeDetectorRef.markForCheck();
     this.skills = Observable.create(observer => {
-      const skills = compendium.getAllSkills();
+      const skills = compendium.allSkills;
       skills.sort(SkillListComponent.SORT_FUNS[0]);
       observer.next(skills.slice(0, 50));
       setTimeout(() => observer.next(skills));

@@ -1,7 +1,6 @@
 import { Races, ResistanceElements, ShortElements, InverseShortElements, BaseStats, ElementOrder, Ailments } from '../models/constants';
-import { FusionTypes } from '../../compendium/constants';
 import { Demon, Skill } from '../models';
-import { Compendium as ICompendium } from '../../compendium/models';
+import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
@@ -17,8 +16,8 @@ export class Compendium implements ICompendium {
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private allDemons: Demon[];
-  private allSkills: Skill[];
+  private _allDemons: Demon[];
+  private _allSkills: Skill[];
 
   constructor() {
     this.initImportedData();
@@ -33,7 +32,7 @@ export class Compendium implements ICompendium {
     const dlcDemons: { [name: string]: boolean } = {};
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
-      demons[name] = Object.assign({ name, fusion: FusionTypes.Normal }, json, {
+      demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
         stats: BaseStats.map((val, i) => json.stats[i]),
         resists: ResistanceElements.map(val => json.resists[ShortElements[val]] || 'no'),
         ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 'no'),
@@ -55,9 +54,13 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      if (json.length !== 1) {
+      if (json.length > 1) {
         specialRecipes[name] = json;
-        demons[name].fusion = (json.length > 0) ? FusionTypes.Special : FusionTypes.Accident;
+        demons[name].fusion = 'special';
+      } else if (json.length === 0) {
+        specialRecipes[name] = json;
+        demons[name].fusion = 'accident';
+        demons[name].prereq = 'Fusion accident only';
       }
     }
 
@@ -127,8 +130,8 @@ export class Compendium implements ICompendium {
       }
     }
 
-    this.allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
-    this.allSkills = skills;
+    this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
+    this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
   }
@@ -142,12 +145,16 @@ export class Compendium implements ICompendium {
     this.updateDerivedData();
   }
 
-  getAllDemons(): Demon[] {
-    return this.allDemons;
+  get allDemons(): Demon[] {
+    return this._allDemons;
   }
 
-  getAllSkills(): Skill[] {
-    return this.allSkills;
+  get allSkills(): Skill[] {
+    return this._allSkills;
+  }
+
+  get specialDemons(): Demon[] {
+    return Object.keys(this.specialRecipes).map(name => this.demons[name]);
   }
 
   getDemon(name: string): Demon {
@@ -171,19 +178,19 @@ export class Compendium implements ICompendium {
   }
 
   getIngredientDemonLvls(race: string): number[] {
-    return this.allIngredients[race];
+    return this.allIngredients[race] || [];
   }
 
   getResultDemonLvls(race: string): number[] {
-    return this.allResults[race];
+    return this.allResults[race] || [];
   }
 
-  getSpecialFusionIngredients(name: string): string[] {
-    return this.specialRecipes[name] ? this.specialRecipes[name] : [];
+  getSpecialNameEntries(name: string): string[] {
+    return this.specialRecipes[name] || [];
   }
 
-  getSpecialFusionResults(): string[] {
-    return Object.keys(this.specialRecipes).filter(name => !this.isElementDemon(name));
+  getSpecialNamePairs(name: string): NamePair[] {
+    return [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

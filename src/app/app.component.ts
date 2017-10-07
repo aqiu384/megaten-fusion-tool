@@ -9,27 +9,34 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <table>
         <thead>
           <tr>
-            <th class="nav" routerLinkActive="active" [style.width.%]="20">
+            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
               <div><a routerLink="home">
                 Home
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="20">
+            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
+              <div><a routerLink="smt3">
+                Shin Megami Tensei III:<br>Nocturne
+              </a></div>
+            </th>
+            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
               <div><a routerLink="smtsj">
                 Shin Megami Tensei:<br>Strange Journey
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="20">
+          </tr>
+          <tr>
+            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
               <div><a routerLink="smt4">
                 Shin Megami Tensei IV
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="20">
+            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
               <div><a routerLink="smt4f">
                 Shin Megami Tensei IV:<br>Apocalypse
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="20">
+            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
               <div><a routerLink="p5">
                 Persona 5
               </a></div>

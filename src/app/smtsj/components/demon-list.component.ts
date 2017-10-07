@@ -160,7 +160,7 @@ export class DemonListContainerComponent implements OnInit, OnDestroy {
   onCompendiumUpdated(compendium: Compendium) {
     this.changeDetectorRef.markForCheck();
     this.demons = Observable.create(observer => {
-      const demons = compendium.getAllDemons();
+      const demons = compendium.allDemons;
       demons.sort(DemonListComponent.SORT_FUNS[0]);
       observer.next(demons.slice(0, 50));
       setTimeout(() => observer.next(demons));

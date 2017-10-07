@@ -1,0 +1,60 @@
+.smt3 div.element-icon {
+  height: 12px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.smt3 div.element-icon.phy { background-image: url('/assets/images/smtsj/phy.png'); }
+.smt3 div.element-icon.fir { background-image: url('/assets/images/smtsj/fir.png'); }
+.smt3 div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.smt3 div.element-icon.ele { background-image: url('/assets/images/smtsj/ele.png'); }
+.smt3 div.element-icon.for { background-image: url('/assets/images/smt4f/force.png'); }
+.smt3 div.element-icon.cur { background-image: url('/assets/images/smt4f/poison.png'); }
+.smt3 div.element-icon.ner { background-image: url('/assets/images/smt4f/bind.png'); }
+.smt3 div.element-icon.min { background-image: url('/assets/images/smt4f/panic.png'); }
+.smt3 div.element-icon.exp { background-image: url('/assets/images/smtsj/exp.png'); }
+.smt3 div.element-icon.dea { background-image: url('/assets/images/smtsj/cur.png'); }
+.smt3 div.element-icon.alm { background-image: url('/assets/images/smtsj/alm.png'); }
+.smt3 div.element-icon.rec { background-image: url('/assets/images/smtsj/rec.png'); }
+.smt3 div.element-icon.sup { background-image: url('/assets/images/smtsj/sup.png'); }
+.smt3 div.element-icon.spe { background-image: url('/assets/images/smtsj/spe.png'); }
+.smt3 div.element-icon.pas { background-image: url('/assets/images/smtsj/pas.png'); }
+.smt3 div.element-icon.tal { background-image: url('/assets/images/smtsj/spe.png'); }
+
+.smt3 td.resists.wk { color: red; }
+.smt3 td.resists.no { color: transparent; }
+.smt3 td.resists.rs { color: lightseagreen; }
+.smt3 td.resists.nu { color: lightgray; }
+.smt3 td.resists.rp { color: cyan; }
+.smt3 td.resists.dr { color: lime; }
+
+.smt3 tr.special td, .smt3 tr.deathstone td {
+  background-color: darkgreen;
+}
+
+.smt3 tr.evolve td, .smt3 tr.unique td {
+  background-color: maroon;
+}
+
+.smt3 thead th, .smt3 tfoot th {
+  color: white;
+  background-color: #3b3a62;
+}
+
+.smt3 th.sortable:hover {
+  background-color: #7170A1;
+}
+
+.smt3 th.nav {
+  background-color: #1b1744;
+}
+
+.smt3 th.nav.active, .smt3 th.nav:hover {
+  background-color: #3b3a62;
+}
+
+.smt3 th.nav a {
+  color: white;
+}

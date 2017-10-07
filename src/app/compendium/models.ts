@@ -3,8 +3,6 @@ import { Observable } from 'rxjs/Observable';
 export interface CompendiumConfig {
   appTitle: string;
   raceOrder: { [race: string]: number };
-  reverseFuse(demon: string, compendium: any, fusionChart: any): { type: string, data: FusionRow[] };
-  forwardFuse(demon: string, compendium: any, fusionChart: any): FusionRow[];
 }
 
 export interface FusionTableHeaders {
@@ -19,6 +17,7 @@ export interface Demon {
   stats: number[];
   resists: string[];
   fusion: string;
+  prereq?: string;
 }
 
 export interface Skill {
@@ -29,48 +28,76 @@ export interface Skill {
   level: number;
 }
 
-export interface FusionRecipe {
+export interface Compendium {
+  dlcDemons: { [name: string]: boolean };
+  allDemons: Demon[];
+  allSkills: Skill[];
+  specialDemons: Demon[];
+
+  getDemon(name: string): Demon;
+  getSkill(name: string): Skill;
+  getIngredientDemonLvls(race: string): number[];
+  getResultDemonLvls(race: string): number[];
+  getSpecialNameEntries(name: string): string[];
+  getSpecialNamePairs(name: string): NamePair[];
+
+  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[];
+  reverseLookupDemon(race: string, lvl: number): string;
+  isElementDemon(name: string): boolean;
+}
+
+export interface FusionDataService {
+  fissionCalculator: FusionCalculator;
+  fusionCalculator: FusionCalculator;
+  compendium: Observable<Compendium>;
+  fusionChart: Observable<FusionChart>;
+  nextDlcDemons(dlcDemons: { [name: string]: boolean });
+}
+
+export type FusionCalculation = (
+  demon: string,
+  compendium: Compendium,
+  fusionChart: FusionChart
+) => NamePair[];
+
+export interface FusionCalculator {
+  getFusions(demon: string, compendium: Compendium, fusionChart: FusionChart): NamePair[];
+}
+
+export interface NamePair {
   name1: string;
   name2: string;
 }
 
-export interface FusionRow {
+export interface FusionEntry {
   race1: string;
   lvl1: number;
   name1: string;
+}
+
+export interface FusionPair extends FusionEntry {
   race2: string;
   lvl2: number;
   name2: string;
   notes?: string;
 }
 
-export interface Compendium {
-  dlcDemons: { [name: string]: boolean };
-  getDemon(name: string): Demon;
-  getAllDemons(): Demon[];
-  getSkill(name: string): Skill;
-  getAllSkills(): Skill[];
-  getIngredientDemonLvls(race: string): number[];
-  getResultDemonLvls(race: string): number[];
-  getSpecialFusionIngredients(name: string): string[];
-  getSpecialFusionResults(): string[];
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[];
-  reverseLookupDemon(race: string, lvl: number): string;
-  isElementDemon(name: string): boolean;
-}
+export interface FissionChart  { [raceR: string]: RaceCombos; }
+export interface FuusionChart  { [raceA: string]: { [raceB: string]: string; }; }
+export interface ElementChart  { [race: string]: ElemCombos; }
+
+export interface RaceCombos    { [race: string]: string[]; }
+export interface ElemCombos    { [race: string]: number; }
+export interface ElemModifiers { [modifier: number]: string[]; }
 
 export interface FusionChart {
   lvlModifier: number;
-  getReverseFusionCombos(race: string): { ingRace1: string; ingRace2: string; }[];
-  getForwardFusionCombos(race: string): { ingRace2: string, resultRace: string }[];
-  getFusionResultRace(ingRace1: string, ingRace2: string): string;
-  getElementModifiers(race: string): { [offset: number]: string[] };
-  getElementResults(element: string): { [race: string]: number };
-  isConvertedRace(race: string): boolean;
-}
+  elementDemons: string[];
 
-export interface FusionDataService {
-  compendium: Observable<Compendium>;
-  fusionChart: Observable<FusionChart>;
-  nextDlcDemons(dlcDemons: { [name: string]: boolean });
+  getRaceFissions(race: string): RaceCombos;
+  getRaceFusions(race: string): RaceCombos;
+  getRaceFusion(raceA: string, raceB: string): string;
+  getElemModifiers(race: string): ElemModifiers;
+  getElemFusions(elem: string): ElemCombos;
+  isConvertedRace(race: string): boolean;
 }

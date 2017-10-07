@@ -15,6 +15,12 @@ import { Title } from '@angular/platform-browser';
       </thead>
       <tbody>
         <tr>
+          <td><a routerLink="../smt3">Shin Megami Tensei III: Nocturne</a></td>
+          <td><a href="http://www.phpsimplicity.com/heretic/">
+            http://www.phpsimplicity.com/heretic/
+          </a></td>
+        </tr>
+        <tr>
           <td><a routerLink="../smtsj">Shin Megami Tensei: Strange Journey</a></td>
           <td><a href="https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384">
             https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384

@@ -85,7 +85,7 @@ import { FusionDataService } from '../fusion-data.service';
         </tbody>
       </table>
       <app-demon-skills [compendium]="compendium" [skills]="demon.skills"></app-demon-skills>
-      <app-fusion-recipes></app-fusion-recipes>
+      <app-smt-fusions></app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>

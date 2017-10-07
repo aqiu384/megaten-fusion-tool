@@ -6,8 +6,8 @@ import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 
-import { ReverseFusionTableComponent } from '../compendium/components/reverse-fusion-table.component';
-import { ForwardFusionTableComponent } from '../compendium/components/forward-fusion-table.component';
+import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
+import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 import { DlcFusionSettingsComponent } from '../compendium/components/dlc-fusion-settings.component';
 
 const compendiumRoutes: Routes = [
@@ -22,11 +22,11 @@ const compendiumRoutes: Routes = [
         children: [
           {
             path: 'reverse-fusions',
-            component: ReverseFusionTableComponent
+            component: SmtFissionTableComponent
           },
           {
             path: 'forward-fusions',
-            component: ForwardFusionTableComponent
+            component: SmtFusionTableComponent
           },
           {
             path: '**',
