@@ -1,0 +1,897 @@
+{
+  "+Mute": {
+    "effect": "Physical attacks may inflict the Mute ailment",
+    "element": "passive",
+    "prereq": "Ma9 Ag7"
+  },
+  "+Paralyze": {
+    "effect": "Physical attacks may inflict the Paralyze ailment",
+    "element": "passive",
+    "prereq": "St10 Ag8"
+  },
+  "+Poison": {
+    "effect": "Physical attacks may inflict the Poison ailment",
+    "element": "passive",
+    "prereq": "St7 Ag5"
+  },
+  "+Stone": {
+    "effect": "Physical attacks may inflict the Petrify ailment",
+    "element": "passive",
+    "prereq": "Vi12 Ag10"
+  },
+  "Agi": {
+    "cost": 400,
+    "effect": "Inflicts light Fire damage on one enemy",
+    "element": "fire"
+  },
+  "Agidyne": {
+    "cost": 1300,
+    "effect": "Inflicts heavy Fire damage on one enemy",
+    "element": "fire",
+    "prereq": "Ma17"
+  },
+  "Alter Pain": {
+    "effect": "Team members recover MP relative to the damage taken",
+    "element": "auto",
+    "prereq": "St11 Ma12"
+  },
+  "Amrita": {
+    "cost": 900,
+    "effect": "Cures all ailments on all team members",
+    "element": "recovery",
+    "prereq": "Ma6"
+  },
+  "Anger Hit": {
+    "cost": 5,
+    "effect": "Guaranteed critical hit to one enemy, but 50% accuracy",
+    "element": "phys",
+    "prereq": "St5"
+  },
+  "Anti-All": {
+    "effect": "Resists damage from all attacks and ailments except Almighty attacks",
+    "element": "passive",
+    "prereq": "Ma15 Vi15"
+  },
+  "Anti-Curse": {
+    "effect": "Resists damage from Curse attacks, reduces chance of suffering from ailments",
+    "element": "passive",
+    "prereq": "Ma9"
+  },
+  "Anti-Elec": {
+    "effect": "Resists damage from Electric attacks",
+    "element": "passive",
+    "prereq": "Ma6 Ag6"
+  },
+  "Anti-Fire": {
+    "effect": "Resists damage from Fire attacks",
+    "element": "passive",
+    "prereq": "St6 Ma6"
+  },
+  "Anti-Force": {
+    "effect": "Resists damage from Force attacks",
+    "element": "passive",
+    "prereq": "Vi6 Ag6"
+  },
+  "Anti-Ice": {
+    "effect": "Resists damage from Ice attacks",
+    "element": "passive",
+    "prereq": "Ma6 Vi6"
+  },
+  "Anti-Most": {
+    "effect": "Resists damage from all attacks and ailments except for Physical and Almighty attacks",
+    "element": "passive",
+    "prereq": "Ma14 Vi14"
+  },
+  "Anti-Phys": {
+    "effect": "Resists damage from Physical attacks",
+    "element": "passive",
+    "prereq": "St8 Vi8"
+  },
+  "Ares Aid": {
+    "effect": "Critical rate +50%",
+    "element": "passive",
+    "prereq": "St13"
+  },
+  "Attack All": {
+    "effect": "Regular attack hits all enemies",
+    "element": "passive",
+    "prereq": "St15 Ag15"
+  },
+  "Avenge": {
+    "effect": "High chance of retaliating when struck with a physical attack",
+    "element": "passive",
+    "prereq": "St14 Ag16"
+  },
+  "Ban Curse": {
+    "cost": 600,
+    "effect": "Cancels the first mystic attack during battle",
+    "element": "auto",
+    "prereq": "Ma11"
+  },
+  "Ban Elec": {
+    "cost": 800,
+    "effect": "Cancels the first electric attack during battle",
+    "element": "auto",
+    "prereq": "Ma9 Ag9"
+  },
+  "Ban Fire": {
+    "cost": 800,
+    "effect": "Cancels the first fire attack during battle",
+    "element": "auto",
+    "prereq": "St8 Ma8"
+  },
+  "Ban Force": {
+    "cost": 800,
+    "effect": "Cancels the first force attack during battle",
+    "element": "auto",
+    "prereq": "Vi8 Ag8"
+  },
+  "Ban Ice": {
+    "cost": 800,
+    "effect": "Cancels the first ice attack during battle",
+    "element": "auto",
+    "prereq": "Ma9 Vi9"
+  },
+  "Ban Phys": {
+    "cost": 1500,
+    "effect": "Cancels the first physical attack during battle",
+    "element": "auto",
+    "prereq": "St14 Vi14"
+  },
+  "Barrier": {
+    "cost": 1600,
+    "effect": "Casts Makarakarn at the start of the battle",
+    "element": "auto",
+    "prereq": "Ma15 Ag14"
+  },
+  "Battle Aura": {
+    "cost": 1000,
+    "effect": "Nullifies damage lower than 50 (including Almighty damage)",
+    "element": "auto",
+    "prereq": "Ma9 Vi9"
+  },
+  "Berserk": {
+    "cost": 12,
+    "effect": "Inflicts moderate HP-dependant Physical damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "phys",
+    "prereq": "St10 Ag9"
+  },
+  "Blitzkrieg": {
+    "cost": 400,
+    "effect": "Offense +25% during battle",
+    "element": "auto",
+    "prereq": "St8 Ma9"
+  },
+  "Brutal Hit": {
+    "cost": 10,
+    "effect": "Inflicts moderate HP-dependant Physical damage on one enemy",
+    "element": "phys",
+    "prereq": "St18"
+  },
+  "Bufu": {
+    "cost": 400,
+    "effect": "Inflicts light Ice damage on one enemy",
+    "element": "ice"
+  },
+  "Bufudyne": {
+    "cost": 1300,
+    "effect": "Inflicts heavy Ice damage on one enemy",
+    "element": "ice",
+    "prereq": "Ma17"
+  },
+  "Counter": {
+    "effect": "Low chance of retaliating when struck with a physical attack",
+    "element": "passive",
+    "prereq": "St8 Ag7"
+  },
+  "Crisis Might": {
+    "effect": "Physical damage +50% when low on HP",
+    "element": "passive",
+    "newoc": true,
+    "prereq": "Vi15"
+  },
+  "Critical Heal": {
+    "effect": "Restores some HP after successfully delivering a critical hit",
+    "element": "passive",
+    "newoc": true,
+    "prereq": "Ma13"
+  },
+  "Cursed Dance": {
+    "cost": 2300,
+    "effect": "Inflicts Curse damage to random targets equal to 1/4 of the target's current HP. Hits 2-5 times, max 3 times on one enemy",
+    "element": "curse",
+    "newoc": true,
+    "prereq": "Ma10 Ag8"
+  },
+  "Death Call": {
+    "cost": 2600,
+    "effect": "Instantly kills all enemies suffering from Mute or Paralyze ailment",
+    "element": "curse",
+    "prereq": "Ag18"
+  },
+  "Deathbound": {
+    "cost": 20,
+    "effect": "Inflicts heavy HP-dependant Physical damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "phys",
+    "prereq": "St16"
+  },
+  "Debilitate": {
+    "cost": 1200,
+    "effect": "Enemy accuracy, evasion, and defense -25%",
+    "element": "auto",
+    "newoc": true,
+    "prereq": "Ag14"
+  },
+  "Desperation": {
+    "cost": 100,
+    "effect": "Kills self to inflict Almighty damage to all enemies. The lower the user's HP, the more damage the attack will inflict",
+    "element": "almighty"
+  },
+  "Dia": {
+    "cost": 800,
+    "effect": "Restores some HP to one team member",
+    "element": "recovery"
+  },
+  "Diajama": {
+    "cost": 1000,
+    "effect": "Moderate chance of inflicting Curse ailment to one enemy",
+    "element": "curse",
+    "prereq": "Ma9 Ag12"
+  },
+  "Diarahan": {
+    "cost": 2000,
+    "effect": "Restores all HP to one team member",
+    "element": "recovery",
+    "prereq": "Ma14"
+  },
+  "Drain": {
+    "cost": 200,
+    "effect": "Steals HP and MP from one enemy",
+    "element": "almighty",
+    "prereq": "Ma10"
+  },
+  "Drain Hit": {
+    "effect": "Physical hits restore HP equal to 25% of damage done",
+    "element": "passive",
+    "prereq": "St14 Ag13"
+  },
+  "Dream Feast": {
+    "cost": 300,
+    "effect": "Steals a large amount of MP from one enemy",
+    "element": "almighty",
+    "newoc": true,
+    "prereq": "Ma13"
+  },
+  "Dual Shadow": {
+    "effect": "25% chance of the character repeating the attack they just performed",
+    "element": "passive",
+    "prereq": "Ag15"
+  },
+  "Dual Shadow+": {
+    "cost": 2200,
+    "effect": "Team members gain Dual Shadow",
+    "element": "auto",
+    "newoc": true,
+    "prereq": "Ag20"
+  },
+  "Elec Amp": {
+    "effect": "Elec damage +50%",
+    "element": "passive",
+    "prereq": "Ma12 Ag12"
+  },
+  "Elec Boost": {
+    "effect": "Elec damage +20%",
+    "element": "passive",
+    "prereq": "Ma7 Ag7"
+  },
+  "Elec Dance": {
+    "cost": 2300,
+    "effect": "Inflicts moderate Electric damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "elec",
+    "prereq": "Ma8 Ag6"
+  },
+  "Elec Drain": {
+    "effect": "Absorbs Electric attacks",
+    "element": "passive",
+    "prereq": "Ma15 Ag15"
+  },
+  "Elec Repel": {
+    "effect": "Reflects Electric attacks",
+    "element": "passive",
+    "prereq": "Ma14 Ag14"
+  },
+  "Endure": {
+    "effect": "Withstand one mortal blow once per battle with 1 HP remaining",
+    "element": "passive",
+    "prereq": "Vi6"
+  },
+  "Extra Charge": {
+    "effect": "All attacks do double damage during Extra Turns",
+    "element": "passive",
+    "newoc": true,
+    "prereq": "Ag17"
+  },
+  "Extra One": {
+    "effect": "The character always has an Extra Turn in battle",
+    "element": "passive",
+    "prereq": "Ag13"
+  },
+  "Extra Savings": {
+    "effect": "All attacks have no cost during Extra Turns",
+    "element": "passive",
+    "newoc": true,
+    "prereq": "Ag19"
+  },
+  "Final Strike": {
+    "cost": 99,
+    "effect": "Inflicts Physical damage to one enemy equal to the user's current HP",
+    "element": "phys",
+    "newoc": true,
+    "prereq": "Vi16"
+  },
+  "Fire Amp": {
+    "effect": "Fire damage +50%",
+    "element": "passive",
+    "prereq": "St12 Ma12"
+  },
+  "Fire Boost": {
+    "effect": "Fire damage +20%",
+    "element": "passive",
+    "prereq": "St7 Ma7"
+  },
+  "Fire Dance": {
+    "cost": 2300,
+    "effect": "Inflicts moderate Fire damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "fire",
+    "prereq": "Ma8 Ag6"
+  },
+  "Fire Drain": {
+    "effect": "Absorbs Fire attacks",
+    "element": "passive",
+    "prereq": "St15 Ma15"
+  },
+  "Fire Repel": {
+    "effect": "Reflects Fire attacks",
+    "element": "passive",
+    "prereq": "St14 Ma14"
+  },
+  "Force Amp": {
+    "effect": "Force damage +50%",
+    "element": "passive",
+    "prereq": "Vi12 Ag12"
+  },
+  "Force Boost": {
+    "effect": "Force damage +20%",
+    "element": "passive",
+    "prereq": "Vi7 Ag7"
+  },
+  "Force Dance": {
+    "cost": 2300,
+    "effect": "Inflicts moderate Force damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "force",
+    "prereq": "Ma8 Ag6"
+  },
+  "Force Drain": {
+    "effect": "Absorbs Force attacks",
+    "element": "passive",
+    "prereq": "Vi15 Ag15"
+  },
+  "Force Repel": {
+    "effect": "Reflects Force attacks",
+    "element": "passive",
+    "prereq": "Vi14 Ag14"
+  },
+  "Fortify": {
+    "cost": 500,
+    "effect": "Defense +25% during battle",
+    "element": "auto",
+    "prereq": "Ma7 Vi8"
+  },
+  "Full Might": {
+    "cost": 1000,
+    "effect": "Casts Might Call at the start of the battle",
+    "element": "auto",
+    "prereq": "St19"
+  },
+  "Gigajama": {
+    "cost": 2000,
+    "effect": "High chance of inflicting Seal ailment to one enemy",
+    "element": "almighty",
+    "prereq": "Ma9 Ag13"
+  },
+  "Grace": {
+    "cost": 2500,
+    "effect": "Casts Prayer at the start of the battle if any team members are injured",
+    "element": "auto",
+    "prereq": "Ma19"
+  },
+  "Grimoire": {
+    "effect": "Greatly increases chance of inflicting status ailments",
+    "element": "passive",
+    "newoc": true,
+    "prereq": "Ag11"
+  },
+  "Hassohappa": {
+    "cost": 15,
+    "effect": "Inflicts moderate HP-dependant Physical damage on all enemies",
+    "element": "phys",
+    "prereq": "Vi16 Ag13"
+  },
+  "Healing": {
+    "cost": 1200,
+    "effect": "Casts Media at the start of the battle if any team members are injured",
+    "element": "auto",
+    "prereq": "Ma9 Vi9"
+  },
+  "Health Save": {
+    "effect": "HP cost for Physical skills -75% for both sides",
+    "element": "auto",
+    "newoc": true,
+    "prereq": "Ag11"
+  },
+  "Hero Aid": {
+    "effect": "Critical rate +25%",
+    "element": "passive",
+    "prereq": "St4"
+  },
+  "Hero Soul": {
+    "effect": "If the leader is targeted by an attack, the equipping demon will take the damage in the leader's place provided its resistance to that attack is equal to or better than that of the leader",
+    "element": "passive"
+  },
+  "Holy Dance": {
+    "cost": 4500,
+    "effect": "Inflicts moderate Almighty damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "almighty",
+    "prereq": "St8 Ma9"
+  },
+  "Holy Strike": {
+    "cost": 25,
+    "effect": "Inflicts moderate Almighty damage to one enemy. Damage is dependent on Strength rather than Magic",
+    "element": "almighty",
+    "newoc": true,
+    "prereq": "St22"
+  },
+  "Hustle": {
+    "cost": 300,
+    "effect": "Accuracy and evasion +25% during battle",
+    "element": "auto",
+    "prereq": "Ag8"
+  },
+  "Ice Amp": {
+    "effect": "Ice damage +50%",
+    "element": "passive",
+    "prereq": "Ma12 Vi12"
+  },
+  "Ice Boost": {
+    "effect": "Ice damage +20%",
+    "element": "passive",
+    "prereq": "Ma7 Vi7"
+  },
+  "Ice Dance": {
+    "cost": 2300,
+    "effect": "Inflicts moderate Ice damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
+    "element": "ice",
+    "prereq": "Ma8 Ag6"
+  },
+  "Ice Drain": {
+    "effect": "Absorbs Ice attacks",
+    "element": "passive",
+    "prereq": "Ma15 Vi15"
+  },
+  "Ice Repel": {
+    "effect": "Reflects Ice attacks",
+    "element": "passive",
+    "prereq": "Ma14 Vi14"
+  },
+  "Judgement": {
+    "cost": 3500,
+    "effect": "Halves current HP of all enemies",
+    "element": "curse",
+    "prereq": "Ma16 Vi14"
+  },
+  "Knight Soul": {
+    "effect": "If the leader will take a mortal blow, the equipping demon will take that blow instead and endure the blow if it would die from it",
+    "element": "passive"
+  },
+  "Leader Soul": {
+    "effect": "If a team member would take a mortal blow, and the damage is less than the leader's current HP, the equipping leader will take the hit instead",
+    "element": "passive",
+    "prereq": "Vi6"
+  },
+  "Life Aid": {
+    "effect": "10% max HP is restored at the end of every battle",
+    "element": "passive",
+    "prereq": "Vi11 Ag11"
+  },
+  "Life Bonus": {
+    "effect": "Max HP +10%",
+    "element": "passive",
+    "prereq": "St4 Vi4"
+  },
+  "Life Lift": {
+    "effect": "30% max HP is restored at the end of every battle",
+    "element": "passive",
+    "prereq": "Vi13 Ag13"
+  },
+  "Life Surge": {
+    "effect": "Max HP +30%",
+    "element": "passive",
+    "prereq": "St7 Vi7"
+  },
+  "Mabufu": {
+    "cost": 2000,
+    "effect": "Inflicts light Ice damage on all enemies",
+    "element": "ice",
+    "prereq": "Ma9 Ag8"
+  },
+  "Mabufudyne": {
+    "cost": 4200,
+    "effect": "Inflicts heavy Ice damage on all enemies",
+    "element": "ice",
+    "prereq": "Ma15 Ag14"
+  },
+  "Magic Yang": {
+    "effect": "Both sides have their MP costs halved",
+    "element": "auto",
+    "prereq": "Ma13"
+  },
+  "Magic Yin": {
+    "cost": 1600,
+    "effect": "Damage from MP skills +50%, MP costs doubled in battle, physical attacks cannot be used",
+    "element": "auto",
+    "prereq": "Ma18"
+  },
+  "Makajamaon": {
+    "cost": 2500,
+    "effect": "High chance of inflicting Mute ailment to all enemies",
+    "element": "curse",
+    "prereq": "Ma14"
+  },
+  "Makarakarn": {
+    "cost": 2300,
+    "effect": "Reflects one non-Almighty magic attack for each team member",
+    "element": "support",
+    "prereq": "Ma12 Ag11"
+  },
+  "Mana Aid": {
+    "effect": "10% max MP is restored at the end of every battle",
+    "element": "passive",
+    "prereq": "Ma13 Ag13"
+  },
+  "Mana Bonus": {
+    "effect": "Max MP +10%",
+    "element": "passive",
+    "prereq": "Ma4 Ag4"
+  },
+  "Mana Surge": {
+    "effect": "Max MP +30%",
+    "element": "passive",
+    "prereq": "Ma7 Ag7"
+  },
+  "Maragi": {
+    "cost": 2000,
+    "effect": "Inflicts light Fire damage on all enemies",
+    "element": "fire",
+    "prereq": "Ma9 Ag8"
+  },
+  "Maragidyne": {
+    "cost": 4200,
+    "effect": "Inflicts heavy Fire damage on all enemies",
+    "element": "fire",
+    "prereq": "Ma15 Ag14"
+  },
+  "Marksman": {
+    "cost": 200,
+    "effect": "Enemy evasion is reduced in battle",
+    "element": "auto",
+    "prereq": "Ag7"
+  },
+  "Mazan": {
+    "cost": 2000,
+    "effect": "Inflicts light Force damage on all enemies",
+    "element": "force",
+    "prereq": "Ma9 Ag8"
+  },
+  "Mazandyne": {
+    "cost": 4200,
+    "effect": "Inflicts heavy Force damage on all enemies",
+    "element": "force",
+    "prereq": "Ma15 Ag14"
+  },
+  "Mazio": {
+    "cost": 2000,
+    "effect": "Inflicts light Electric damage on all enemies",
+    "element": "elec",
+    "prereq": "Ma9 Ag8"
+  },
+  "Maziodyne": {
+    "cost": 4200,
+    "effect": "Inflicts heavy Electric damage on all enemies",
+    "element": "elec",
+    "prereq": "Ma15 Ag14"
+  },
+  "Media": {
+    "cost": 2000,
+    "effect": "Restores some HP to all team members",
+    "element": "recovery",
+    "prereq": "Ma11"
+  },
+  "Mediarahan": {
+    "cost": 4500,
+    "effect": "Restores all HP to all team members",
+    "element": "recovery",
+    "prereq": "Ma17"
+  },
+  "Megido": {
+    "cost": 5000,
+    "effect": "Inflicts moderate Almighty damage on all enemies",
+    "element": "almighty",
+    "prereq": "St9 Ma16"
+  },
+  "Megidolaon": {
+    "cost": 7500,
+    "effect": "Inflicts heavy Almighty damage on all enemies",
+    "element": "almighty",
+    "prereq": "St9 Ma18"
+  },
+  "Might Call": {
+    "cost": 800,
+    "effect": "Guarantees a critical hit for the next Physical attack done by each team member",
+    "element": "support",
+    "prereq": "St13"
+  },
+  "Mighty Hit": {
+    "cost": 15,
+    "effect": "Guaranteed critical hit to one enemy",
+    "element": "phys",
+    "prereq": "Ag10"
+  },
+  "Mow Down": {
+    "cost": 13,
+    "effect": "Inflicts moderate Physical damage to all enemies",
+    "element": "phys",
+    "newoc": true,
+    "prereq": "St9"
+  },
+  "Multi-Strike": {
+    "cost": 15,
+    "effect": "Inflicts light Physical damage to all enemies 2-7 times. Number of hits depends on Agility",
+    "element": "phys",
+    "newoc": true,
+    "prereq": "Ag13"
+  },
+  "Mute Eyes": {
+    "cost": 1500,
+    "effect": "Moderate chance of inflicting Mute ailment to all enemies",
+    "element": "curse",
+    "prereq": "Ma5 Ag7"
+  },
+  "Null Curse": {
+    "effect": "Provides immunity to Curse attacks and ailments",
+    "element": "passive",
+    "prereq": "Ma13"
+  },
+  "Null Elec": {
+    "effect": "Provides immunity to Electric attacks",
+    "element": "passive",
+    "prereq": "Ma10 Ag10"
+  },
+  "Null Fire": {
+    "effect": "Provides immunity to Fire attacks",
+    "element": "passive",
+    "prereq": "St10 Ma10"
+  },
+  "Null Force": {
+    "effect": "Provides immunity to Force attacks",
+    "element": "passive",
+    "prereq": "Vi10 Ag10"
+  },
+  "Null Ice": {
+    "effect": "Provides immunity to Ice attacks",
+    "element": "passive",
+    "prereq": "Ma10 Vi10"
+  },
+  "Null Phys": {
+    "effect": "Provides immunity to Physical attacks",
+    "element": "passive",
+    "prereq": "St12 Vi12"
+  },
+  "Paladin Soul": {
+    "effect": "If the leader will take a mortal blow, the equipping demon will take that blow instead and endure the blow if it would die from it while receiving 50% less damage",
+    "element": "passive"
+  },
+  "Paral Eyes": {
+    "cost": 1500,
+    "effect": "Moderate chance of inflicting Paralyze ailment to all enemies",
+    "element": "curse",
+    "prereq": "Ma7 Ag9"
+  },
+  "Petra Eyes": {
+    "cost": 2200,
+    "effect": "Moderate chance of inflicting Petrify ailment to all enemies",
+    "element": "curse",
+    "prereq": "Ma9 Ag10"
+  },
+  "Phys Amp": {
+    "effect": "Physical damage +50%",
+    "element": "passive",
+    "prereq": "St12 Vi14"
+  },
+  "Phys Boost": {
+    "effect": "Physical damage +20%",
+    "element": "passive",
+    "prereq": "St6 Vi9"
+  },
+  "Phys Drain": {
+    "effect": "Absorbs Physical attacks",
+    "element": "passive",
+    "prereq": "St16 Vi16"
+  },
+  "Phys Repel": {
+    "effect": "Reflects Physical attacks",
+    "element": "passive",
+    "prereq": "St15 Vi15"
+  },
+  "Pierce": {
+    "effect": "Physical attacks cannot be resisted, nullified, or absorbed",
+    "element": "passive",
+    "prereq": "St14"
+  },
+  "Pierce+": {
+    "cost": 600,
+    "effect": "Team members gain Pierce",
+    "element": "auto",
+    "newoc": true,
+    "prereq": "St21"
+  },
+  "Piercing Hit": {
+    "cost": 10,
+    "effect": "Inflicts moderate Physical damage to one enemy. Cannot be resisted, nulled, or absorbed",
+    "element": "phys",
+    "newoc": true,
+    "prereq": "St18"
+  },
+  "Power Hit": {
+    "cost": 8,
+    "effect": "Inflicts heavy Physical damage on one enemy",
+    "element": "phys",
+    "prereq": "St9 Vi9"
+  },
+  "Prayer": {
+    "cost": 5500,
+    "effect": "Restores all HP and cures all ailments on all team members",
+    "element": "recovery",
+    "prereq": "Ma20"
+  },
+  "Race-D": {
+    "effect": "Damage taken from an opponent of the same race as the character -50%",
+    "element": "passive",
+    "prereq": "Vi7"
+  },
+  "Race-O": {
+    "effect": "Damage done to an opponent of the same race as the character +50%",
+    "element": "passive",
+    "prereq": "St7"
+  },
+  "Rage Soul": {
+    "cost": 600,
+    "effect": "Doubles physical damage, but only basic attacks can be used",
+    "element": "auto",
+    "prereq": "Vi16"
+  },
+  "Recarm": {
+    "cost": 2000,
+    "effect": "Revives one fallen ally with low HP",
+    "element": "recovery",
+    "prereq": "Ma12"
+  },
+  "Recarmloss": {
+    "cost": 3000,
+    "effect": "Revives fallen team members, fully restores team's HP, and cures all ailments, but reduces caster's HP to 1",
+    "element": "recovery",
+    "newoc": true,
+    "prereq": "Ma16"
+  },
+  "Retaliate": {
+    "effect": "Moderate chance of retaliating when struck with a physical attack",
+    "element": "passive",
+    "prereq": "St10 Ag10"
+  },
+  "Revive": {
+    "cost": 2500,
+    "effect": "Casts Recarm at the start of the battle if there are any fallen team members",
+    "element": "auto",
+    "prereq": "Ma17"
+  },
+  "Samarecarm": {
+    "cost": 3500,
+    "effect": "Revives one fallen ally with full HP",
+    "element": "recovery",
+    "prereq": "Ma19"
+  },
+  "Shield All": {
+    "cost": 2300,
+    "effect": "Blocks one non-Almighty attack for each team member",
+    "element": "support",
+    "prereq": "Ma14 Vi14"
+  },
+  "Shield All+": {
+    "cost": 1800,
+    "effect": "Casts Shield All at the start of the battle",
+    "element": "auto",
+    "newoc": true,
+    "prereq": "Ma20"
+  },
+  "Strengthen": {
+    "cost": 1000,
+    "effect": "Negates all elemental weaknesses within the team",
+    "element": "auto",
+    "newoc": true,
+    "prereq": "Vi10"
+  },
+  "Tailwind": {
+    "effect": "Team Agility increased in battle",
+    "element": "auto",
+    "prereq": "Ag4"
+  },
+  "Taunt": {
+    "cost": 1000,
+    "effect": "Enemies will target user, but user will receive less damage",
+    "element": "support",
+    "prereq": "Vi7"
+  },
+  "Tetrakarn": {
+    "cost": 2300,
+    "effect": "Reflects one Physical attack for each team member",
+    "element": "support",
+    "prereq": "Ma11 Vi12"
+  },
+  "Victory Cry": {
+    "effect": "Some HP and MP is restored at the end of every battle",
+    "element": "passive",
+    "prereq": "Ma15 Ag15"
+  },
+  "Vigilant": {
+    "effect": "Character gains a great additional portion of EXP earned by the main character while not assigned to a team",
+    "element": "passive",
+    "newoc": true
+  },
+  "Wall": {
+    "cost": 1500,
+    "effect": "Casts Tetrakarn at the start of the battle",
+    "element": "auto",
+    "prereq": "Ma14 Vi15"
+  },
+  "Watchful": {
+    "effect": "Character gains a small additional portion of EXP earned by the main character while not assigned to a team",
+    "element": "passive"
+  },
+  "Weak Kill": {
+    "cost": 10,
+    "effect": "Inflicts moderate Physical damage to one enemy with increased power if the target is suffering from an ailment",
+    "element": "phys",
+    "prereq": "St11 Ma8"
+  },
+  "Zan": {
+    "cost": 400,
+    "effect": "Inflicts light Force damage on one enemy",
+    "element": "force"
+  },
+  "Zandyne": {
+    "cost": 1300,
+    "effect": "Inflicts heavy Force damage on one enemy",
+    "element": "force",
+    "prereq": "Ma17"
+  },
+  "Zio": {
+    "cost": 400,
+    "effect": "Inflicts light Electric damage on one enemy",
+    "element": "elec"
+  },
+  "Ziodyne": {
+    "cost": 1300,
+    "effect": "Inflicts heavy Electric damage on one enemy",
+    "element": "elec",
+    "prereq": "Ma17"
+  }
+}
