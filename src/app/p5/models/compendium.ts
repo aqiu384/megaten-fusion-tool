@@ -40,11 +40,15 @@ export class Compendium implements ICompendium {
         resists: ResistanceElements.map(val => json.resists[val] || 'no'),
         fusion: 'normal'
       });
+
+      demons[name].inherit = json.inherits;
+      delete demons[name].inherits;
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
       skills[name] = Object.assign({ unique: '' }, json, {
         name,
+        rank: json.cost || 0,
         cost: json.cost || 0,
         learnedBy: [],
         talk: json.talk ? json.talk.split(', ') : [],

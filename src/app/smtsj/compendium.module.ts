@@ -7,16 +7,10 @@ import { SharedCompendiumModule } from '../compendium/compendium.module';
 import { CompendiumRoutingModule } from './compendium-routing.module';
 
 import {
-  DemonListComponent,
-  DemonTableHeaderComponent,
-  DemonTableRowComponent,
   DemonListContainerComponent
 } from './components/demon-list.component';
 
 import {
-  SkillListComponent,
-  SkillTableHeaderComponent,
-  SkillTableRowComponent,
   SkillListContainerComponent
 } from './components/skill-list.component';
 
@@ -59,15 +53,7 @@ const compendiumConfig: CompendiumConfig = {
     DemonEntryComponent,
     DemonEntryContainerComponent,
     DemonSkillsComponent,
-    // Demon List
-    DemonListComponent,
-    DemonTableHeaderComponent,
-    DemonTableRowComponent,
     DemonListContainerComponent,
-    // Skill List
-    SkillListComponent,
-    SkillTableHeaderComponent,
-    SkillTableRowComponent,
     SkillListContainerComponent,
   ],
   providers: [

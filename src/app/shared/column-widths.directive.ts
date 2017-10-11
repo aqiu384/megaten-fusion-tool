@@ -20,8 +20,10 @@ export class ColumnWidthsDirective {
     const colWidths = [];
     const rows = this.elementRef.nativeElement.children;
 
-    for (const column of rows[rows.length - 1].children) {
-      colWidths.push(column.getBoundingClientRect().width - 2 * this.borderWidth);
+    if (rows.length) {
+      for (const column of rows[rows.length - 1].children) {
+        colWidths.push(column.getBoundingClientRect().width - 2 * this.borderWidth);
+      }
     }
 
     return colWidths;
@@ -29,10 +31,13 @@ export class ColumnWidthsDirective {
 
   @Input() set colWidths(colWidths: number[]) {
     const rows = this.elementRef.nativeElement.children;
-    const cols = rows[rows.length - 1].children;
 
-    for (let i = 0; i < cols.length; i++) {
-      this.renderer.setStyle(cols[i], 'width', `${colWidths[i]}px`);
+    if (rows.length) {
+      const cols = rows[rows.length - 1].children;
+
+      for (let i = 0; i < cols.length; i++) {
+        this.renderer.setStyle(cols[i], 'width', `${colWidths[i]}px`);
+      }
     }
   }
 }

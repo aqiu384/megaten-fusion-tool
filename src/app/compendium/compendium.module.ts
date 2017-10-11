@@ -10,8 +10,13 @@ import {
   FusionPairTableRowComponent
 } from './components/fusion-pair-table.component';
 
+import { DemonListHeaderComponent } from './components/demon-list-header.component';
+import { SkillListHeaderComponent } from './components/skill-list-header.component';
+
 import { SmtFissionTableComponent } from './components/smt-fission-table.component';
 import { SmtFusionTableComponent } from './components/smt-fusion-table.component';
+import { SmtDemonListComponent, SmtDemonListRowComponent } from './components/smt-demon-list.component';
+import { SmtSkillListComponent, SmtSkillListRowComponent } from './components/smt-skill-list.component';
 
 import { CompendiumComponent } from './components/compendium.component';
 import { DlcFusionSettingsComponent } from './components/dlc-fusion-settings.component';
@@ -33,6 +38,12 @@ import {
     SharedModule
   ],
   declarations: [
+    DemonListHeaderComponent,
+    SkillListHeaderComponent,
+    SmtDemonListComponent,
+    SmtDemonListRowComponent,
+    SmtSkillListComponent,
+    SmtSkillListRowComponent,
     FusionEntryTableComponent,
     FusionPairTableComponent,
     FusionPairTableHeaderComponent,
@@ -48,6 +59,12 @@ import {
     LvlToNumberPipe
   ],
   exports: [
+    DemonListHeaderComponent,
+    SkillListHeaderComponent,
+    SmtDemonListComponent,
+    SmtDemonListRowComponent,
+    SmtSkillListComponent,
+    SmtSkillListRowComponent,
     FusionEntryTableComponent,
     FusionPairTableComponent,
     SmtFissionTableComponent,

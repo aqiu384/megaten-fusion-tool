@@ -14,18 +14,24 @@ export interface Demon {
   race: string;
   lvl: number;
   name: string;
+  inherit?: string;
+  inherits?: string[];
   stats: number[];
   resists: string[];
   fusion: string;
   prereq?: string;
+  affinities?: number[];
 }
 
 export interface Skill {
   element: string;
+  rank: number;
   name: string;
   cost: number;
   effect: string;
   level: number;
+  requires?: string;
+  inherit?: string;
 }
 
 export interface Compendium {

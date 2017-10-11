@@ -33,7 +33,7 @@ import { FusionDataService } from '../fusion-data.service';
         <tbody>
           <tr>
             <td *ngFor="let stat of demon.stats">{{ stat }}</td>
-            <td><div class="element-icon {{ demon.inherits }}">{{ demon.inherits }}</div></td>
+            <td><div class="element-icon {{ demon.inherit }}">{{ demon.inherit }}</div></td>
           </tr>
         </tbody>
       </table>

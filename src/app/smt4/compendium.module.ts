@@ -9,16 +9,10 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 import { CompendiumComponent } from './components/compendium.component';
 
 import {
-  DemonListComponent,
-  DemonTableHeaderComponent,
-  DemonTableRowComponent,
   DemonListContainerComponent
 } from './components/demon-list.component';
 
 import {
-  SkillListComponent,
-  SkillTableHeaderComponent,
-  SkillTableRowComponent,
   SkillListContainerComponent
 } from './components/skill-list.component';
 
@@ -52,13 +46,7 @@ const compendiumConfig: CompendiumConfig = {
   ],
   declarations: [
     CompendiumComponent,
-    DemonListComponent,
-    DemonTableHeaderComponent,
-    DemonTableRowComponent,
     DemonListContainerComponent,
-    SkillListComponent,
-    SkillTableHeaderComponent,
-    SkillTableRowComponent,
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,

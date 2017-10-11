@@ -96,7 +96,7 @@ export class Compendium implements ICompendium {
       inversions[demon.race][demon.lvl] = name;
 
       for (const skill of demon.skills) {
-        skills[skill].learnedBy.push(name);
+        skills[skill].learnedBy.push({ demon: name, level: 0 });
       }
 
       for (const skill of demon.source) {

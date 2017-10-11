@@ -20,11 +20,16 @@ export const SMT_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
   [ splitElement ]
 );
 
-// export const FusionTypes = {
-//   Normal: 'normal',
-//   Special: 'special',
-//   Recruit: 'recruit',
-//   Accident: 'accident',
-//   Password: 'password',
-//   NotOwned: 'notowned',
-// };
+function getEnumOrder(target: string[]): { [key: string]: number } {
+  const result = {};
+  for (let i = 0; i < target.length; i++) {
+    result[target[i]] = i;
+  }
+  return result;
+}
+
+export const ResistanceLevels = [
+  'wk', 'no', 'rs', 'st', 'nu', 'rp', 'dr', 'ab'
+];
+
+export const ResistOrder = getEnumOrder(ResistanceLevels);
