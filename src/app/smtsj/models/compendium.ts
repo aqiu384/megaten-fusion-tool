@@ -41,7 +41,9 @@ export class Compendium implements ICompendium {
       demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
         stats: BaseStats.map(val => json.stats[val]),
         resists: ResistanceElements.map(val => json.resists[val] || 'no'),
-        ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 100),
+        ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 'no'),
+        skills: json.skills.reduce((acc, skill) => { acc[skill] = 0; return acc }, {}),
+        source: json.source.reduce((acc, skill) => { acc[skill] = 0; return acc }, {}),
       });
     }
 
@@ -95,11 +97,11 @@ export class Compendium implements ICompendium {
     for (const [name, demon] of Object.entries(demons)) {
       inversions[demon.race][demon.lvl] = name;
 
-      for (const skill of demon.skills) {
+      for (const [skill, lvl] of Object.entries(demon.skills)) {
         skills[skill].learnedBy.push({ demon: name, level: 0 });
       }
 
-      for (const skill of demon.source) {
+      for (const [skill, lvl] of Object.entries(demon.skills)) {
         skills[skill].dsource.push(name);
       }
     }

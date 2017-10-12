@@ -11,6 +11,8 @@ const appRoutes: Routes = [
   { path: 'smt4', loadChildren: './smt4/compendium.module#CompendiumModule' },
   { path: 'smt4f', loadChildren: './smt4f/compendium.module#CompendiumModule' },
   { path: 'p5', loadChildren: './p5/compendium.module#CompendiumModule' },
+  { path: 'desu1', loadChildren: './desu1/compendium.module#CompendiumModule' },
+  { path: 'desu2', loadChildren: './desu2/compendium.module#CompendiumModule' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

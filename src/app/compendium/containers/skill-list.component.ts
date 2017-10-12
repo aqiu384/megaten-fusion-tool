@@ -1,7 +1,5 @@
 import {
-  Component,
   ChangeDetectorRef,
-  Inject,
   OnInit,
   OnDestroy
 } from '@angular/core';
@@ -9,7 +7,6 @@ import { Title } from '@angular/platform-browser';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { FUSION_DATA_SERVICE } from '../constants';
 import { Skill, Compendium, FusionDataService } from '../models';
 
 export abstract class SkillListContainerComponent implements OnInit, OnDestroy {
@@ -22,7 +19,7 @@ export abstract class SkillListContainerComponent implements OnInit, OnDestroy {
   constructor(
     private title: Title,
     private changeDetectorRef: ChangeDetectorRef,
-    @Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService
+    private fusionDataService: FusionDataService
   ) { }
 
   ngOnInit() {

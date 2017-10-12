@@ -6,26 +6,16 @@ import { SharedModule } from '../shared/shared.module';
 import { SharedCompendiumModule } from '../compendium/compendium.module';
 import { CompendiumRoutingModule } from './compendium-routing.module';
 
-import {
-  DemonListContainerComponent
-} from './components/demon-list.component';
-
-import {
-  SkillListContainerComponent
-} from './components/skill-list.component';
-
-import {
-  DemonEntryComponent,
-  DemonEntryContainerComponent
-} from './components/demon-entry.component';
-
 import { CompendiumComponent } from './components/compendium.component';
-
+import { DemonListContainerComponent } from './components/demon-list.component';
+import { SkillListContainerComponent } from './components/skill-list.component';
+import { DemonEntryContainerComponent, DemonEntryComponent } from './components/demon-entry.component';
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { CompendiumConfig } from '../compendium/models';
-import { RaceOrder, APP_TITLE } from './models/constants';
+import { RaceOrder } from '../desu/constants';
+import { APP_TITLE } from './constants';
 
 const compendiumConfig: CompendiumConfig = {
   appTitle: APP_TITLE,
@@ -41,10 +31,10 @@ const compendiumConfig: CompendiumConfig = {
   ],
   declarations: [
     CompendiumComponent,
-    DemonEntryComponent,
-    DemonEntryContainerComponent,
     DemonListContainerComponent,
     SkillListContainerComponent,
+    DemonEntryContainerComponent,
+    DemonEntryComponent
   ],
   providers: [
     Title,

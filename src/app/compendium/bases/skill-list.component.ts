@@ -23,8 +23,8 @@ export class SkillListComponent<TSkill extends Skill> extends SortedTableCompone
 
   nextSortFuns() {
     this.sortFuns = [
-        (a, b) => (this.elemOrder[a.element] - this.elemOrder[b.element]) * 200 + a.rank - b.rank,
-        (a, b) => (this.elemOrder[a.element] - this.elemOrder[b.element]) * 200 + a.rank - b.rank,
+        (a, b) => (this.elemOrder[a.element] - this.elemOrder[b.element]) * 10000 + a.rank - b.rank,
+        (a, b) => (this.elemOrder[a.element] - this.elemOrder[b.element]) * 10000 + a.rank - b.rank,
         (a, b) => a.name.localeCompare(b.name),
         (a, b) => b.cost - a.cost,
         (a, b) => a.rank - b.rank

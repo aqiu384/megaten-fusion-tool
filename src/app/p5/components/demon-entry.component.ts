@@ -4,7 +4,8 @@ import { Title } from '@angular/platform-browser';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Subscription } from 'rxjs/Subscription';
 
-import { BaseStats, ResistanceElements, APP_TITLE } from '../models/constants';
+import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
+import { BaseStats, ResistanceElements, ElementOrder, APP_TITLE } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -16,48 +17,21 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container *ngIf="demon">
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="6">
-              Lvl {{ demon.lvl }}
-              {{ demon.race }}
-              {{ name }}
-            </th>
-          </tr>
-          <tr>
-            <th *ngFor="let stat of statHeaders">{{ stat }}</th>
-            <th>Inherits</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let stat of demon.stats">{{ stat }}</td>
-            <td><div class="element-icon {{ demon.inherit }}">{{ demon.inherit }}</div></td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="10">Elemental Resistances</th>
-          </tr>
-          <tr>
-            <th *ngFor="let element of resistanceHeaders">
-              <div class="element-icon {{ element }}"></div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let resist of demon.resists"
-            class="resists {{ resist }}">
-              {{ resist }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <app-demon-skills [compendium]="compendium" [skillLevels]="demon.skills"></app-demon-skills>
+      <app-demon-stats
+        [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
+        [statHeaders]="statHeaders"
+        [stats]="demon.stats"
+        [inherit]="demon.inherit">
+      </app-demon-stats>
+      <app-demon-resists
+        [resistHeaders]="resistanceHeaders"
+        [resists]="demon.resists">
+      </app-demon-resists>
+      <app-demon-skills
+        [elemOrder]="elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="demon.skills">
+      </app-demon-skills>
       <app-smt-fusions [showFusionAlert]="demon.fusion === 'excluded'">
         DLC marked as excluded, fusions involving {{ name }} may be inaccurate!
       </app-smt-fusions>
@@ -80,6 +54,7 @@ export class DemonEntryComponent {
   @Input() compendium: Compendium;
 
   statHeaders = BaseStats;
+  elemOrder = ElementOrder;
   resistanceHeaders = ResistanceElements;
 }
 
@@ -90,48 +65,13 @@ export class DemonEntryComponent {
     <app-demon-entry [name]="name" [demon]="demon" [compendium]="compendium"></app-demon-entry>
   `
 })
-export class DemonEntryContainerComponent implements OnInit, OnDestroy {
-  name: string;
-  demon: Demon;
-  compendium: Compendium;
-
-  subscriptions: Subscription[] = [];
-
+export class DemonEntryContainerComponent extends DECC {
   constructor(
     private route: ActivatedRoute,
     private title: Title,
-    private fusionDataService: FusionDataService,
-    private currentDemonService: CurrentDemonService
-  ) { }
-
-  ngOnInit() {
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-        this.getDemonEntry();
-      }));
-
-    this.subscriptions.push(
-      this.currentDemonService.currentDemon.subscribe(name => {
-        this.name = name;
-        this.getDemonEntry();
-      }));
-
-    this.route.params.subscribe(params => {
-      this.currentDemonService.nextCurrentDemon(params['demonName']);
-    });
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
-
-  getDemonEntry() {
-    if (this.compendium && this.name) {
-      this.demon = this.compendium.getDemon(this.name);
-      this.title.setTitle(`${this.name} - ${APP_TITLE}`);
-    }
+    private currentDemonService: CurrentDemonService,
+    private fusionDataService: FusionDataService
+  ) {
+    super(route, title, currentDemonService, fusionDataService);
   }
 }

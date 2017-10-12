@@ -13,6 +13,10 @@ import {
 import { DemonListHeaderComponent } from './components/demon-list-header.component';
 import { SkillListHeaderComponent } from './components/skill-list-header.component';
 
+import { DemonStatsComponent } from './components/demon-stats.component';
+import { DemonResistsComponent } from './components/demon-resists.component';
+import { DemonSkillsComponent } from './components/demon-skills.component';
+
 import { SmtFissionTableComponent } from './components/smt-fission-table.component';
 import { SmtFusionTableComponent } from './components/smt-fusion-table.component';
 import { SmtDemonListComponent, SmtDemonListRowComponent } from './components/smt-demon-list.component';
@@ -38,6 +42,9 @@ import {
     SharedModule
   ],
   declarations: [
+    DemonStatsComponent,
+    DemonResistsComponent,
+    DemonSkillsComponent,
     DemonListHeaderComponent,
     SkillListHeaderComponent,
     SmtDemonListComponent,
@@ -59,6 +66,9 @@ import {
     LvlToNumberPipe
   ],
   exports: [
+    DemonStatsComponent,
+    DemonResistsComponent,
+    DemonSkillsComponent,
     DemonListHeaderComponent,
     SkillListHeaderComponent,
     SmtDemonListComponent,

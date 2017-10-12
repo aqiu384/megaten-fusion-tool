@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { MEGATEN_FUSION_TOOLS } from './constants';
 
 @Component({
   template: `
@@ -14,35 +15,9 @@ import { Title } from '@angular/platform-browser';
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><a routerLink="../smt3">Shin Megami Tensei III: Nocturne</a></td>
-          <td><a href="http://www.phpsimplicity.com/heretic/">
-            http://www.phpsimplicity.com/heretic/
-          </a></td>
-        </tr>
-        <tr>
-          <td><a routerLink="../smtsj">Shin Megami Tensei: Strange Journey</a></td>
-          <td><a href="https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384">
-            https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384
-          </a></td>
-        </tr>
-        <tr>
-          <td><a routerLink="../smt4">Shin Megami Tensei IV</a></td>
-          <td><a href="https://erikku.github.io/smt4tool/">
-            https://erikku.github.io/smt4tool/
-          </a></td>
-        </tr>
-        <tr>
-          <td><a routerLink="../smt4f">Shin Megami Tensei IV: Apocalypse</a></td>
-          <td><a href="http://gamers-high.com/megami4-final">
-            http://gamers-high.com/megami4-final/
-          </a></td>
-        </tr>
-        <tr>
-          <td><a routerLink="../p5">Persona 5</a></td>
-          <td><a href="http://spwiki.net/persona5/">
-            http://spwiki.net/persona5/
-          </a></td>
+        <tr *ngFor="let tool of fusionTools">
+          <td><a routerLink="../{{ tool.tool }}">{{ tool.game }}</a></td>
+          <td><a href="{{ tool.src }}">{{ tool.src }}</a></td>
         </tr>
         <tr>
           <td>Report Issue</td>
@@ -55,6 +30,8 @@ import { Title } from '@angular/platform-browser';
   `
 })
 export class HomeComponent implements OnInit {
+  fusionTools = MEGATEN_FUSION_TOOLS;
+
   constructor(private title: Title) { }
 
   ngOnInit() {

@@ -21,7 +21,8 @@ import { Skill } from '../models';
     <td *ngIf="hasTarget">{{ data.target ? data.target : 'Self' }}</td>
     <td *ngIf="hasRank" [style.color]="data.rank !== 99 ? null: 'transparent'">{{ data.rank }}</td>
     <td *ngIf="data.inherit"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
-    <td>
+    <td *ngIf="hasLvl">{{ data.level | skillLevelToString }}</td>
+    <td *ngIf="hasLearned">
       <ul class="comma-list">
         <li *ngFor="let entry of data.learnedBy">
           <a routerLink="../demons/{{ entry.demon }}">{{ entry.demon }}</a>
@@ -55,8 +56,10 @@ export class SmtSkillListRowComponent {
   @Input() hasRank = true;
   @Input() hasTalk = false;
   @Input() hasFuse = false;
+  @Input() hasLearned = true;
   @Input() hasDsource = false;
   @Input() hasPrereq = false;
+  @Input() hasLvl = false;
   @Input() data: Skill;
 }
 

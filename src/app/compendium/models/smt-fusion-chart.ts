@@ -49,10 +49,8 @@ export abstract class SmtFusionChart implements FusionChart {
 
     for (const [raceA, raceBs] of Object.entries(fusionJson)) {
       for (const [raceB, raceR] of Object.entries(raceBs)) {
-        if (raceA !== raceB) {
-          chart[raceA][raceB] = raceR;
-          chart[raceB][raceA] = raceR;
-        }
+        chart[raceA][raceB] = raceR;
+        chart[raceB][raceA] = raceR;
       }
     }
 
@@ -69,9 +67,9 @@ export abstract class SmtFusionChart implements FusionChart {
     for (const [raceB, raceR] of Object.entries(this.fusionChart[race])) {
       if (!combos[raceR]) {
         combos[raceR] = [];
+      } if (raceB !== race) {
+        combos[raceR].push(raceB);
       }
-
-      combos[raceR].push(raceB);
     }
 
     return combos;

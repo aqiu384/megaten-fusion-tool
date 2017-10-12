@@ -1,7 +1,5 @@
 import {
-  Component,
   ChangeDetectorRef,
-  Inject,
   OnInit,
   OnDestroy
 } from '@angular/core';
@@ -9,7 +7,6 @@ import { Title } from '@angular/platform-browser';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { FUSION_DATA_SERVICE } from '../constants';
 import { Demon, Compendium, FusionDataService } from '../models';
 
 export abstract class DemonListContainerComponent implements OnInit, OnDestroy {

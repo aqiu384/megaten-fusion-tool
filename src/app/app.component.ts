@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
+import { MEGATEN_FUSION_TOOLS } from './constants';
 
 @Component({
   selector: 'app-root',
@@ -8,38 +9,13 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       [ngClass]="currentGame">
       <table>
         <thead>
-          <tr>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
-              <div><a routerLink="home">
-                Home
-              </a></div>
-            </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
-              <div><a routerLink="smt3">
-                Shin Megami Tensei III:<br>Nocturne
-              </a></div>
-            </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
-              <div><a routerLink="smtsj">
-                Shin Megami Tensei:<br>Strange Journey
-              </a></div>
-            </th>
-          </tr>
-          <tr>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
-              <div><a routerLink="smt4">
-                Shin Megami Tensei IV
-              </a></div>
-            </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
-              <div><a routerLink="smt4f">
-                Shin Megami Tensei IV:<br>Apocalypse
-              </a></div>
-            </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
-              <div><a routerLink="p5">
-                Persona 5
-              </a></div>
+          <tr *ngFor="let row of navRows">
+            <th *ngFor="let button of row" class="nav"
+              routerLinkActive="active"
+              [style.width.%]="100 / navsPerRow">
+              <div *ngIf="button.tool" [style.whiteSpace]="'pre-line'">
+                <a routerLink="{{ button.tool }}">{{ button.game }}</a>
+              </div>
             </th>
           </tr>
         </thead>
@@ -65,12 +41,27 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
 })
 export class AppComponent implements OnInit {
   currentGame = 'none';
+  navsPerRow = 6;
+  navRows = [];
   loading = false;
 
   constructor(private router: Router) {}
 
   ngOnInit() {
     this.router.events.subscribe(v => this.interceptNavigation(v));
+    this.navRows = [];
+
+    const navButtons = [{ game: 'Home', tool: 'home', src: '' }].concat(MEGATEN_FUSION_TOOLS);
+    const fillerLen = this.navsPerRow - (MEGATEN_FUSION_TOOLS.length + 1) % this.navsPerRow;
+    const fillerNav = { game: '', tool: '', src: '' };
+
+    for (let i = 0; i < fillerLen; i++) {
+      navButtons.push(fillerNav);
+    }
+
+    for (let i = 0; i < MEGATEN_FUSION_TOOLS.length + 1; i += this.navsPerRow) {
+      this.navRows.push(navButtons.slice(i, i + this.navsPerRow));
+    }
   }
 
   interceptNavigation(event: Event) {

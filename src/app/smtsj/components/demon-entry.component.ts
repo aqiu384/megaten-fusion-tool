@@ -3,7 +3,8 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
-import { BaseStats, ResistanceElements, InheritElements, Ailments, APP_TITLE } from '../models/constants';
+import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
+import { BaseStats, ResistanceElements, InheritElements, Ailments, SkillElementOrder, APP_TITLE } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionChart } from '../models/fusion-chart';
@@ -16,69 +17,27 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container *ngIf="demon">
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="10">
-              Lvl {{ demon.lvl | lvlToNumber }}
-              {{ demon.align }}
-              {{ demon.race }}
-              {{ demon.name }}
-            </th>
-          </tr>
-          <tr>
-            <th colSpan="7">Stats</th>
-            <th colSpan="3">Fusion</th>
-          </tr>
-          <tr>
-            <th *ngFor="let stat of statHeaders">{{ stat }}</th>
-            <th>Attack</th>
-            <th>Password</th>
-            <th>Requirements</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let stat of demon.stats">{{ stat }}</td>
-            <td *ngIf="!demon.attack">Physical 1x to single foe</td>
-            <td *ngIf="demon.attack as attack">
-              {{ attack.element ? attack.element : 'Physical' }}
-              x{{ attack.hits ? attack.hits : '1' }}
-              to {{ attack.target ? attack.target : 'single foe' }}
-              {{ attack.ailment ? '- ' + attack.ailment : '' }}
-            </td>
-            <td><div *ngFor="let word of demon.password"><code>{{ word }}</code></div></td>
-            <td [style.width.%]="30"><div *ngFor="let req of compendium.getFusionRequirements(name)">{{ req }}</div></td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr><th colspan="17">Resistances</th></tr>
-          <tr>
-            <th [style.width.%]="50" colSpan="8">Elemental</th>
-            <th [style.width.%]="50" colSpan="9">Ailment</th>
-          </tr>
-          <tr>
-            <th *ngFor="let element of resistanceHeaders">
-              <div class="element-icon {{ element }}">{{ element }}</div>
-            </th>
-            <th *ngFor="let ailment of ailmentHeaders">{{ ailment }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let resist of demon.resists"
-            class="resists {{ resist }}">
-              {{ resist }}
-            </td>
-            <td *ngFor="let ailment of demon.ailments"
-              [style.color]="ailment !== 100 ? null : 'transparent'">
-              {{ ailment }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <app-demon-stats
+        [title]="'Lvl ' + demon.lvl + ' ' + demon.align + ' ' + demon.race + ' ' + demon.name"
+        [statHeaders]="statHeaders"
+        [fusionHeaders]="fusionHeaders"
+        [stats]="demon.stats">
+        <td *ngIf="!demon.attack">Physical 1x to single foe</td>
+        <td *ngIf="demon.attack as attack">
+          {{ attack.element ? attack.element : 'Physical' }}
+          x{{ attack.hits ? attack.hits : '1' }}
+          to {{ attack.target ? attack.target : 'single foe' }}
+          {{ attack.ailment ? '- ' + attack.ailment : '' }}
+        </td>
+        <td><div *ngFor="let word of demon.password"><code>{{ word }}</code></div></td>
+        <td [style.width.%]="30"><div *ngFor="let req of compendium.getFusionRequirements(name)">{{ req }}</div></td>
+      </app-demon-stats>
+      <app-demon-resists
+        [resistHeaders]="resistanceHeaders"
+        [resists]="demon.resists"
+        [ailmentHeaders]="ailmentHeaders"
+        [ailments]="demon.ailments">
+      </app-demon-resists>
       <table>
         <thead>
           <tr><th colspan="16">Inherits</th></tr>
@@ -95,11 +54,22 @@ import { FusionDataService } from '../fusion-data.service';
           </tr>
         </tbody>
       </table>
-      <app-demon-skills [compendium]="compendium" [skills]="demon.skills">
-        Innate Skills
+      <app-demon-skills
+        [hasTarget]="true"
+        [hasRank]="true"
+        [hasInherit]="true"
+        [elemOrder]="elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-demon-skills [compendium]="compendium" [skills]="demon.source">
-        D-Source Skills
+      <app-demon-skills
+        [title]="'D-Source'"
+        [hasTarget]="true"
+        [hasRank]="true"
+        [hasInherit]="true"
+        [elemOrder]="elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="demon.source">
       </app-demon-skills>
       <app-smt-fusions [showFusionAlert]="laplaceOn">
         Laplace Subapp Enabled (Result Lvl +4)
@@ -124,7 +94,9 @@ export class DemonEntryComponent {
   @Input() laplaceOn = false;
 
   statHeaders = BaseStats;
+  fusionHeaders = [ 'Normal Attack', 'Password', 'Fusion Condition' ];
   resistanceHeaders = ResistanceElements;
+  elemOrder = SkillElementOrder;
   inheritanceHeaders = InheritElements;
   ailmentHeaders = Ailments;
 }
@@ -141,54 +113,25 @@ export class DemonEntryComponent {
     </app-demon-entry>
   `
 })
-export class DemonEntryContainerComponent implements OnInit, OnDestroy {
-  name: string;
-  demon: Demon;
-  compendium: Compendium;
+export class DemonEntryContainerComponent extends DECC {
+  appName = APP_TITLE;
   laplaceOn = false;
-
-  subscriptions: Subscription[] = [];
 
   constructor(
     private route: ActivatedRoute,
     private title: Title,
-    private fusionDataService: FusionDataService,
-    private currentDemonService: CurrentDemonService
-  ) { }
+    private currentDemonService: CurrentDemonService,
+    private fusionDataService: FusionDataService
+  ) {
+    super(route, title, currentDemonService, fusionDataService);
+  }
 
-  ngOnInit() {
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-        this.getDemonEntry();
-      }));
+  subscribeAll() {
+    super.subscribeAll();
 
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(chart => {
         this.laplaceOn = chart.isSubappOn('Laplace');
       }));
-
-    this.subscriptions.push(
-      this.currentDemonService.currentDemon.subscribe(name => {
-        this.name = name;
-        this.getDemonEntry();
-      }));
-
-    this.route.params.subscribe(params => {
-      this.currentDemonService.nextCurrentDemon(params['demonName']);
-    });
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
-
-  getDemonEntry() {
-    if (this.compendium && this.name) {
-      this.demon = this.compendium.getDemon(this.name);
-      this.title.setTitle(`${this.name} - ${APP_TITLE}`);
-    }
   }
 }

@@ -19,33 +19,12 @@ export class FusionChart extends SmtFusionChart {
   }
 
   initCharts() {
-    this.fissionChart = {};
-    this.fusionChart = {};
+    this.fissionChart = SmtFusionChart.loadFissionChart(Races, ElementDemons, FUSION_CHART_JSON);
+    this.fusionChart = SmtFusionChart.loadFusionChart(Races, FUSION_CHART_JSON);
     this.elementChart = {};
 
     for (const race of Races) {
-      this.fissionChart[race] = {};
-      this.fusionChart[race] = {};
       this.elementChart[race] = {};
-    }
-
-    for (const elem of this.elementDemons) {
-      this.fissionChart[elem] = {};
-    }
-
-    for (const [raceA, raceBs] of Object.entries(FUSION_CHART_JSON)) {
-      for (const [raceB, raceR] of Object.entries(raceBs)) {
-        if (!this.fissionChart[raceR][raceA]) {
-          this.fissionChart[raceR][raceA] = [];
-        }
-
-        if (raceA !== raceB) {
-          this.fusionChart[raceA][raceB] = raceR;
-          this.fusionChart[raceB][raceA] = raceR;
-        }
-
-        this.fissionChart[raceR][raceA].push(raceB);
-      }
     }
 
     for (const [race, json] of Object.entries(ELEMENT_MODIFIERS_JSON)) {

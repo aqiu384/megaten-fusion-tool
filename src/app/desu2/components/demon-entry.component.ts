@@ -4,10 +4,10 @@ import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-
-import { BaseStats, ResistanceElements, ElementOrder, APP_TITLE } from '../models/constants';
-import { Demon } from '../models';
+import { BaseStats, ResistElements, ElementOrder } from '../../desu/constants';
+import { Demon } from '../../desu/models';
 import { Compendium } from '../models/compendium';
+import { APP_TITLE } from '../constants';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
@@ -27,15 +27,18 @@ import { FusionDataService } from '../fusion-data.service';
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-skills
-        [hasTarget]="true"
-        [hasRank]="true"
+        [title]="'Command Skills'"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
-        [skillLevels]="demon.skills">
+        [skillLevels]="demon.command">
       </app-demon-skills>
-      <app-smt-fusions [showFusionAlert]="isCursed">
-        Cursed fusion enabled (More reverse fusions for Vile, Wilder, Night, and Haunt demons)
-      </app-smt-fusions>
+      <app-demon-skills
+        [title]="'Passive Skills'"
+        [elemOrder]="elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="demon.passive">
+      </app-demon-skills>
+      <app-smt-fusions></app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>
@@ -53,23 +56,21 @@ export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
-  @Input() isCursed = false;
 
   statHeaders = BaseStats;
+  resistHeaders = ResistElements;
   elemOrder = ElementOrder;
-  resistHeaders = ResistanceElements;
 }
 
 @Component({
   selector: 'app-demon-entry-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-entry [name]="name" [demon]="demon" [compendium]="compendium" [isCursed]="isCursed"></app-demon-entry>
+    <app-demon-entry [name]="name" [demon]="demon" [compendium]="compendium"></app-demon-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {
   appName = APP_TITLE;
-  isCursed = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -78,14 +79,5 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
-  }
-
-  subscribeAll() {
-    super.subscribeAll();
-
-    this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(chart => {
-        this.isCursed = chart.isCursed;
-      }));
   }
 }

@@ -21,10 +21,6 @@ import {
   DemonEntryContainerComponent
 } from './components/demon-entry.component';
 
-import {
-  DemonSkillsComponent
-} from './components/demon-skills.component';
-
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
@@ -49,8 +45,7 @@ const compendiumConfig: CompendiumConfig = {
     DemonListContainerComponent,
     SkillListContainerComponent,
     DemonEntryComponent,
-    DemonEntryContainerComponent,
-    DemonSkillsComponent
+    DemonEntryContainerComponent
   ],
   providers: [
     Title,
