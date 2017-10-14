@@ -25,7 +25,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
       <th *ngIf="hasInherit" class="sortable" [ngClass]="sortDirClass(5)" (click)="nextSortFunIndex(5)">Inherit<span>--</span></th>
       <th>Learned By</th>
       <th *ngIf="hasTalk">Negotiate</th>
-      <th *ngIf="hasFuse">Electric<br>Chair</th>
+      <th *ngIf="hasFuse">Card</th>
       <th *ngIf="hasDsource">D-Source</th>
       <th *ngIf="hasPrereq">Requires</th>
     </tr>

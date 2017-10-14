@@ -1,6 +1,10 @@
 import { NamePair, Compendium, FusionChart } from '../models';
 
-function findBinIndex(n: number, bins: number[]): number {
+function findBin(n: number, bins: number[]): number {
+  if (!bins.length) {
+    return -1;
+  }
+
   let index = 0;
 
   for (const bin of bins) {
@@ -16,15 +20,17 @@ export function fuseWithDiffRace(name: string, compendium: Compendium, fusionCha
   const recipes: NamePair[] = [];
   const { race: raceA, lvl: lvlA } = compendium.getDemon(name);
 
-  for (const [raceR, raceBs] of Object.entries(fusionChart.getRaceFusions(raceA))) {
+  for (const [raceB, raceR] of Object.entries(fusionChart.getRaceFusions(raceA))) {
     const lvlsR = compendium.getResultDemonLvls(raceR);
     const binsB = lvlsR.map(lvl => 2 * (lvl - fusionChart.lvlModifier) - lvlA);
 
-    for (const raceB of raceBs) {
-      for (const lvlB of compendium.getIngredientDemonLvls(raceB)) {
+    for (const lvlB of compendium.getIngredientDemonLvls(raceB)) {
+      const binB = findBin(lvlB, binsB);
+
+      if (binB !== -1) {
         recipes.push({
           name1: compendium.reverseLookupDemon(raceB, lvlB),
-          name2: compendium.reverseLookupDemon(raceR, lvlsR[findBinIndex(lvlB, binsB)])
+          name2: compendium.reverseLookupDemon(raceR, lvlsR[binB])
         });
       }
     }
@@ -35,7 +41,7 @@ export function fuseWithDiffRace(name: string, compendium: Compendium, fusionCha
 
 export function fuseWithSameRace(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
   const { race: ingRace1, lvl: ingLvl1 } = compendium.getDemon(name);
-  const elementResult = fusionChart.getRaceFusion(ingRace1, ingRace1);
+  const elementResult = fusionChart.getRaceFusions(ingRace1)[ingRace1];
   const ingLvls2 = compendium.getIngredientDemonLvls(ingRace1).filter(lvl => lvl !== ingLvl1);
   const recipes: NamePair[] = [];
 

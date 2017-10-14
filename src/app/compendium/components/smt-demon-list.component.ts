@@ -16,7 +16,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td>{{ data.race }}</td>
     <td>{{ data.lvl | lvlToNumber }}</td>
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
-    <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}"></div></td>
+    <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <td *ngFor="let resist of data.resists" class="resists {{ resist }}">{{ resist }}</td>
     <ng-container *ngIf="hasAffinity">

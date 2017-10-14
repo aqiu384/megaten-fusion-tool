@@ -88,22 +88,27 @@ export interface FusionPair extends FusionEntry {
   notes?: string;
 }
 
-export interface FissionChart  { [raceR: string]: RaceCombos; }
-export interface FuusionChart  { [raceA: string]: { [raceB: string]: string; }; }
-export interface ElementChart  { [race: string]: ElemCombos; }
+export interface FissionTable { [race: string]: FissionRow; }
+export interface FusionTable  { [race: string]: FusionRow; }
+export interface ElementTable { [race: string]: ElementRow; }
 
-export interface RaceCombos    { [race: string]: string[]; }
-export interface ElemCombos    { [race: string]: number; }
+export interface FissionRow    { [race: string]: string[]; }
+export interface FusionRow     { [race: string]: string; }
+export interface ElementRow    { [race: string]: number; }
 export interface ElemModifiers { [modifier: number]: string[]; }
 
 export interface FusionChart {
   lvlModifier: number;
   elementDemons: string[];
 
-  getRaceFissions(race: string): RaceCombos;
-  getRaceFusions(race: string): RaceCombos;
-  getRaceFusion(raceA: string, raceB: string): string;
+  getRaceFissions(race: string): FissionRow;
+  getRaceFusions(race: string): FusionRow;
   getElemModifiers(race: string): ElemModifiers;
-  getElemFusions(elem: string): ElemCombos;
+  getElemFusions(elem: string): ElementRow;
   isConvertedRace(race: string): boolean;
+}
+
+export interface TriangleFusionChart extends FusionChart {
+  getTriangleFissions(race: string): FissionRow;
+  getTriangleFusions(race: string): FusionRow;
 }

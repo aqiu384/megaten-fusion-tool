@@ -20,6 +20,11 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, src: string }[]
         src: 'http://gamers-high.com/megami4-final/'
     },
     {
+        game: 'Persona 3: FES',
+        tool: 'p3',
+        src: 'http://spwiki.net/persona5/'
+    },
+    {
         game: 'Persona 5',
         tool: 'p5',
         src: 'http://spwiki.net/persona5/'

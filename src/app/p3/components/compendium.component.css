@@ -1,0 +1,61 @@
+.p3 div.element-icon {
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+  
+.p3 div.element-icon.slash { background-image: url('/assets/images/p5/nuke.png'); }
+.p3 div.element-icon.strike { background-image: url('/assets/images/p5/phys.png'); }
+.p3 div.element-icon.pierce { background-image: url('/assets/images/p5/gun.png'); }
+.p3 div.element-icon.fire { background-image: url('/assets/images/p5/fire.png'); }
+.p3 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p3 div.element-icon.elec { background-image: url('/assets/images/p5/elec.png'); }
+.p3 div.element-icon.wind { background-image: url('/assets/images/p5/wind.png'); }
+.p3 div.element-icon.light { background-image: url('/assets/images/p5/bless.png'); }
+.p3 div.element-icon.dark { background-image: url('/assets/images/p5/curse.png'); }
+.p3 div.element-icon.lidark { background-image: url('/assets/images/p5/psy.png'); }
+.p3 div.element-icon.ailment { background-image: url('/assets/images/p5/ailment.png'); }
+.p3 div.element-icon.recovery { background-image: url('/assets/images/p5/healing.png'); }
+.p3 div.element-icon.almighty { background-image: url('/assets/images/p5/almighty.png'); }
+.p3 div.element-icon.all { background-image: url('/assets/images/p5/almighty.png'); }
+.p3 div.element-icon.support { background-image: url('/assets/images/p5/support.png'); }
+.p3 div.element-icon.special { background-image: url('/assets/images/p5/almighty.png'); }
+.p3 div.element-icon.passive { background-image: url('/assets/images/p5/passive.png'); }
+
+.p3 td.resists.wk { color: red; }
+.p3 td.resists.no { color: transparent; }
+.p3 td.resists.rs { color: lightseagreen; }
+.p3 td.resists.nu { color: lightgray; }
+.p3 td.resists.rp { color: cyan; }
+.p3 td.resists.ab { color: lime; }
+
+.p3 tr.special td {
+  background-color: darkgreen;
+}
+
+.p3 tr.exception td, .p3 tr.unique td {
+  background-color: maroon;
+}
+
+.p3 thead th, .p3 tfoot th {
+  color: black;
+  background-color: #4372AA;
+}
+
+.p3 th.sortable:hover {
+  background-color: rgb(101, 173, 255);
+}
+
+.p3 th.nav {
+  background-color: rgb(38, 64, 92);
+}
+
+.p3 th.nav.active, .p3 th.nav:hover {
+  background-color: #4372AA;
+}
+
+.p3 th.nav.active a, .p3 th.nav:hover a {
+  color: black;
+}

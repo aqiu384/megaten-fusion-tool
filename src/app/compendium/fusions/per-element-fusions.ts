@@ -6,7 +6,7 @@ export function fuseTwoElements(name: string, compendium: Compendium, fusionChar
 
   for (const ingName2 of fusionChart.elementDemons.filter(elem => elem !== name)) {
     const { race: ingRace2, lvl: ingLvl2 } = compendium.getDemon(ingName2);
-    const resultRace = fusionChart.getRaceFusion(ingRace1, ingRace2);
+    const resultRace = fusionChart.getRaceFusions(ingRace1)[ingRace2];
 
     const resultLvls = compendium.getResultDemonLvls(resultRace);
     const findResultLevelFun = (index, resultLvl) => ingLvl1 + ingLvl2 >= resultLvl * 2 ? index + 1 : index;

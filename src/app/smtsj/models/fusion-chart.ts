@@ -1,5 +1,5 @@
 import { Races, PrimeElements } from './constants';
-import { FissionChart, FuusionChart, ElementChart, RaceCombos } from '../../compendium/models';
+import { FissionTable, FusionTable, ElementTable, FissionRow, FusionRow } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
@@ -28,9 +28,9 @@ export class FusionChart extends SmtFusionChart {
   elementDemons = PrimeElements;
   includedSubapps: { [name: string]: boolean } = Object.assign({}, FusionChart.INCLUDED_SUBAPPS);
 
-  protected fissionChart: FissionChart;
-  protected fusionChart: FuusionChart;
-  protected elementChart: ElementChart;
+  protected fissionChart: FissionTable;
+  protected fusionChart: FusionTable;
+  protected elementChart: ElementTable;
 
   constructor() {
     super();
@@ -61,14 +61,14 @@ export class FusionChart extends SmtFusionChart {
     }
   }
 
-  getRaceFusions(race: string): RaceCombos {
+  getRaceFusions(race: string): FusionRow {
     const combos = super.getRaceFusions(race);
 
-    for (const raceR of Object.keys(combos)) {
+    for (const [raceB, raceR] of Object.entries(combos)) {
       const raceQ = FusionChart.RACE_CONVERTERS[raceR];
 
       if (raceQ && this.isSubappOn(`${raceQ} Converter`)) {
-        combos[raceQ] = combos[raceR];
+        combos[raceB] = raceQ;
       }
     }
 

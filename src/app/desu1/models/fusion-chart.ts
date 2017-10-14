@@ -1,14 +1,14 @@
 import { ElementDemons, Races } from '../../desu/constants';
-import { FissionChart, FuusionChart, ElementChart, RaceCombos } from '../../compendium/models';
+import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
 import * as ELEMENT_MODIFIERS_JSON from '../data/element-modifiers.json';
 
 export class FusionChart extends SmtFusionChart {
-  protected fissionChart: FissionChart;
-  protected fusionChart: FuusionChart;
-  protected elementChart: ElementChart;
+  protected fissionChart: FissionTable;
+  protected fusionChart: FusionTable;
+  protected elementChart: ElementTable;
   elementDemons = ElementDemons;
   lvlModifier = 1;
 
@@ -18,7 +18,7 @@ export class FusionChart extends SmtFusionChart {
   }
 
   initCharts() {
-    const chart: FuusionChart = {};
+    const chart: FusionTable = {};
 
     for (const race of Races) {
       chart[race] = {};

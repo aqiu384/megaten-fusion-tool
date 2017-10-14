@@ -1,23 +1,24 @@
 import {
   FusionChart,
-  FissionChart,
-  FuusionChart,
-  ElementChart,
-  RaceCombos,
-  ElemCombos,
+  FissionTable,
+  FusionTable,
+  ElementTable,
+  FissionRow,
+  FusionRow,
+  ElementRow,
   ElemModifiers
 } from '../models';
 
 export abstract class SmtFusionChart implements FusionChart {
-  protected abstract fissionChart: FissionChart;
-  protected abstract fusionChart: FuusionChart;
-  protected abstract elementChart: ElementChart;
+  protected abstract fissionChart: FissionTable;
+  protected abstract fusionChart: FusionTable;
+  protected abstract elementChart: ElementTable;
 
   abstract lvlModifier: number;
   abstract elementDemons: string[];
 
-  static loadFissionChart(races: string[], elems: string[], fusionJson: any): FissionChart {
-    const chart: FissionChart = {};
+  static loadFissionChart(races: string[], elems: string[], fusionJson: any): FissionTable {
+    const chart: FissionTable = {};
 
     for (const race of races) {
       chart[race] = {};
@@ -40,8 +41,8 @@ export abstract class SmtFusionChart implements FusionChart {
     return chart;
   }
 
-  static loadFusionChart(races: string[], fusionJson: any): FuusionChart {
-    const chart: FuusionChart = {};
+  static loadFusionChart(races: string[], fusionJson: any): FusionTable {
+    const chart: FusionTable = {};
 
     for (const race of races) {
       chart[race] = {};
@@ -57,22 +58,12 @@ export abstract class SmtFusionChart implements FusionChart {
     return chart;
   }
 
-  getRaceFissions(race: string): RaceCombos {
-    return this.fissionChart[race];
+  getRaceFissions(race: string): FissionRow {
+    return this.fissionChart[race] || {};
   }
 
-  getRaceFusions(race: string): RaceCombos {
-    const combos: RaceCombos = {};
-
-    for (const [raceB, raceR] of Object.entries(this.fusionChart[race])) {
-      if (!combos[raceR]) {
-        combos[raceR] = [];
-      } if (raceB !== race) {
-        combos[raceR].push(raceB);
-      }
-    }
-
-    return combos;
+  getRaceFusions(race: string): FusionRow {
+    return this.fusionChart[race] || {};
   }
 
   getRaceFusion(raceA: string, raceB: string): string {
@@ -93,7 +84,7 @@ export abstract class SmtFusionChart implements FusionChart {
     return modifiers;
   }
 
-  getElemFusions(elem: string): ElemCombos {
+  getElemFusions(elem: string): ElementRow {
     const combos = {};
 
     for (const [race, row] of Object.entries(this.elementChart)) {

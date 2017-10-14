@@ -1,5 +1,5 @@
 import { Races, ElementDemons } from './constants';
-import { FissionChart, FuusionChart, ElementChart } from '../../compendium/models';
+import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
@@ -15,27 +15,27 @@ export class FusionChart extends SmtFusionChart {
   elementDemons = ElementDemons;
   chartSettings: { [name: string]: boolean } = Object.assign({}, FusionChart.CHART_SETTINGS);
 
-  private cursedFissionChart: FissionChart;
-  private cursedFusionChart: FuusionChart;
-  private cursedElementChart: ElementChart;
+  private cursedFissionChart: FissionTable;
+  private cursedFusionChart: FusionTable;
+  private cursedElementChart: ElementTable;
 
-  private normalFissionChart: FissionChart;
-  private normalFusionChart: FuusionChart;
-  private normalElementChart: ElementChart;
+  private normalFissionChart: FissionTable;
+  private normalFusionChart: FusionTable;
+  private normalElementChart: ElementTable;
 
   get isCursed(): boolean {
     return this.chartSettings['Enable Cursed Fusion'];
   }
 
-  protected get fissionChart(): FissionChart {
+  protected get fissionChart(): FissionTable {
     return this.isCursed ? this.cursedFissionChart : this.normalFissionChart;
   }
 
-  protected get fusionChart(): FuusionChart {
+  protected get fusionChart(): FusionTable {
     return this.isCursed ? this.cursedFusionChart : this.normalFusionChart;
   }
 
-  protected get elementChart(): ElementChart {
+  protected get elementChart(): ElementTable {
     return this.isCursed ? this.cursedElementChart : this.normalElementChart;
   }
 

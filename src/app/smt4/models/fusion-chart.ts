@@ -1,5 +1,5 @@
 import { Races, ElementDemons } from './constants';
-import { FissionChart, FuusionChart, ElementChart } from '../../compendium/models';
+import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
@@ -9,9 +9,9 @@ export class FusionChart extends SmtFusionChart {
   lvlModifier = 0;
   elementDemons = ElementDemons;
 
-  protected fissionChart: FissionChart;
-  protected fusionChart: FuusionChart;
-  protected elementChart: ElementChart;
+  protected fissionChart: FissionTable;
+  protected fusionChart: FusionTable;
+  protected elementChart: ElementTable;
 
   constructor() {
     super();
