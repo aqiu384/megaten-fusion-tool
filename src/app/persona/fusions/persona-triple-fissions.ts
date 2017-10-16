@@ -1,5 +1,5 @@
 import { FissionRow, FissionTable, Compendium, FusionChart, NameTrio } from '../../compendium/models';
-import { RaceOrder } from '../../p3/constants';
+import { RaceOrder } from '../../p4/constants';
 
 function findBin(n: number, bins: number[]): number {
   if (!bins.length) {

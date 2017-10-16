@@ -10,7 +10,7 @@ import { toDemonTrio } from '../../compendium/models/conversions';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { fuseT1WithDiffRace, fuseN1WithDiffRace, fuseWithSameRace } from '../fusions/persona-triple-fusions';
 
-import { RaceOrder } from '../../p3/constants';
+import { RaceOrder } from '../../p4/constants';
 
 @Component({
   selector: 'app-triple-fusion-table',

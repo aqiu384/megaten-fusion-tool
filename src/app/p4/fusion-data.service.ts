@@ -9,9 +9,8 @@ import { FusionChart } from '../persona/models/fusion-chart';
 import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
 import { Races, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
 
-import * as FES_DEMON_DATA_JSON from './data/fes-demon-data.json';
-import * as P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
+import * as DEMON_DATA_JSON from './data/demon-data.json';
+import * as FUSION_CHART_JSON from './data/golden-chart.json';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -22,21 +21,17 @@ export class FusionDataService implements IFusionTrioService {
   private _compendium$: BehaviorSubject<Compendium>;
   compendium: Observable<Compendium>;
 
-  private _fusionChart = new FusionChart(FUSION_CHART_JSON, Races);
+  private _fusionChart = new FusionChart(FUSION_CHART_JSON, Races.slice(0, Races.length - 1));
   private _fusionChart$ = new BehaviorSubject(this._fusionChart);
   fusionChart = this._fusionChart$.asObservable();
 
-  private _tripleChart = new FusionChart(FUSION_CHART_JSON, Races, true);
+  private _tripleChart = new FusionChart(FUSION_CHART_JSON, Races.slice(0, Races.length - 1), true);
   private _squareChart$ = new BehaviorSubject({ normalChart: this._fusionChart, tripleChart: this._tripleChart });
   squareChart = this._squareChart$.asObservable();
 
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
-    const demonDataJsons = [FES_DEMON_DATA_JSON];
-
-    if (game === 'p3p') {
-      demonDataJsons.push(P3P_DEMON_DATA_JSON);
-    }
+    const demonDataJsons = [DEMON_DATA_JSON];
 
     this._compendium = new Compendium(demonDataJsons);
     this._compendium$ = new BehaviorSubject(this._compendium);

@@ -69,7 +69,16 @@ export class AppComponent implements OnInit {
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
       this.loading = false;
-      this.currentGame = event.url.split('/')[1];
+      const currentGame = event.url.split('/')[1];
+
+      if (currentGame === 'p3fes' || currentGame === 'p3p') {
+        this.currentGame = 'p3';
+      } else if (currentGame === 'p4g') {
+        this.currentGame = 'p4';
+      } else {
+        this.currentGame = currentGame;
+      }
+
       window.scrollTo(0, 0);
     } else if (
       event instanceof NavigationCancel ||

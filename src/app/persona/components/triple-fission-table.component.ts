@@ -10,7 +10,7 @@ import { toDemonTrio } from '../../compendium/models/conversions';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { splitWithDiffRace, splitWithSameRace } from '../fusions/persona-triple-fissions';
 
-import { RaceOrder } from '../../p3/constants';
+import { RaceOrder } from '../../p4/constants';
 
 @Component({
   selector: 'app-triple-fission-table',

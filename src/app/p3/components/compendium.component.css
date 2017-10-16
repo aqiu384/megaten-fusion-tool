@@ -6,7 +6,7 @@
   color: transparent;
 }
   
-.p3 div.element-icon.slash { background-image: url('/assets/images/p5/nuke.png'); }
+.p3 div.element-icon.slash { background-image: url('/assets/images/p5/sword.png'); }
 .p3 div.element-icon.strike { background-image: url('/assets/images/p5/phys.png'); }
 .p3 div.element-icon.pierce { background-image: url('/assets/images/p5/gun.png'); }
 .p3 div.element-icon.fire { background-image: url('/assets/images/p5/fire.png'); }
@@ -15,13 +15,13 @@
 .p3 div.element-icon.wind { background-image: url('/assets/images/p5/wind.png'); }
 .p3 div.element-icon.light { background-image: url('/assets/images/p5/bless.png'); }
 .p3 div.element-icon.dark { background-image: url('/assets/images/p5/curse.png'); }
-.p3 div.element-icon.lidark { background-image: url('/assets/images/p5/psy.png'); }
+.p3 div.element-icon.lidark { background-image: url('/assets/images/p5/land.png'); }
 .p3 div.element-icon.ailment { background-image: url('/assets/images/p5/ailment.png'); }
 .p3 div.element-icon.recovery { background-image: url('/assets/images/p5/healing.png'); }
 .p3 div.element-icon.almighty { background-image: url('/assets/images/p5/almighty.png'); }
 .p3 div.element-icon.all { background-image: url('/assets/images/p5/almighty.png'); }
 .p3 div.element-icon.support { background-image: url('/assets/images/p5/support.png'); }
-.p3 div.element-icon.special { background-image: url('/assets/images/p5/almighty.png'); }
+.p3 div.element-icon.special { background-image: url('/assets/images/p5/support.png'); }
 .p3 div.element-icon.passive { background-image: url('/assets/images/p5/passive.png'); }
 
 .p3 td.resists.wk { color: red; }
@@ -55,6 +55,7 @@
 }
 
 .p3 th.nav.active, .p3 th.nav:hover {
+  color: black;
   background-color: #4372AA;
 }
 

@@ -36,8 +36,8 @@ export class Compendium implements ICompendium {
           race:    json.race,
           lvl:     json.lvl,
           inherit: json.inherits,
-          stats:   json.stats,
-          resists: json.resists.split('').map(char => ResistCodes[char]),
+          stats:   [json.hp, json.mp],
+          resists: json.resists ? json.split('').map(char => ResistCodes[char]) : [],
           skills:  json.skills,
           fusion:  'normal'
         };
@@ -67,6 +67,7 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(demons)) {
+      console.log(name, demon.race);
       inverses[demon.race][demon.lvl] = name;
 
       for (const [skill, level] of Object.entries(demon.skills)) {

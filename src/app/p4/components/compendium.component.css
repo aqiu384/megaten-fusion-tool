@@ -1,0 +1,60 @@
+.p4 div.element-icon {
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+  
+.p4 div.element-icon.phys { background-image: url('/assets/images/p5/phys.png'); }
+.p4 div.element-icon.fire { background-image: url('/assets/images/p5/fire.png'); }
+.p4 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p4 div.element-icon.elec { background-image: url('/assets/images/p5/elec.png'); }
+.p4 div.element-icon.wind { background-image: url('/assets/images/p5/wind.png'); }
+.p4 div.element-icon.light { background-image: url('/assets/images/p5/bless.png'); }
+.p4 div.element-icon.dark { background-image: url('/assets/images/p5/curse.png'); }
+.p4 div.element-icon.ailment { background-image: url('/assets/images/p5/ailment.png'); }
+.p4 div.element-icon.recovery { background-image: url('/assets/images/p5/healing.png'); }
+.p4 div.element-icon.almighty { background-image: url('/assets/images/p5/almighty.png'); }
+.p4 div.element-icon.support { background-image: url('/assets/images/p5/support.png'); }
+.p4 div.element-icon.special { background-image: url('/assets/images/p5/support.png'); }
+.p4 div.element-icon.passive { background-image: url('/assets/images/p5/passive.png'); }
+
+.p4 td.resists.wk { color: red; }
+.p4 td.resists.no { color: transparent; }
+.p4 td.resists.rs { color: lightseagreen; }
+.p4 td.resists.nu { color: lightgray; }
+.p4 td.resists.rp { color: cyan; }
+.p4 td.resists.ab { color: lime; }
+
+.p4 tr.special td {
+  background-color: darkgreen;
+}
+
+.p4 tr.exception td, .p4 tr.unique td {
+  background-color: maroon;
+}
+
+.p4 th, .p4 th {
+  color: black;
+  background-color: #FFE600;
+}
+
+.p4 th.sortable:hover {
+  background-color: rgb(255, 251, 214);
+}
+
+.p4 th.nav {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(39, 35, 0);
+}
+
+.p4 th.nav.active, .p4 th.nav:hover {
+  color: black;
+  background-color: #FFE600;
+}
+
+.p4 th.nav.active a, .p4 th.nav:hover a {
+  color: black;
+}

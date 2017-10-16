@@ -9,8 +9,7 @@ import { FusionChart } from '../persona/models/fusion-chart';
 import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
 import { Races, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
 
-import * as FES_DEMON_DATA_JSON from './data/fes-demon-data.json';
-import * as P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
+import * as DEMON_DATA_JSON from './data/demon-data.json';
 import * as FUSION_CHART_JSON from './data/fusion-chart.json';
 
 @Injectable()
@@ -32,11 +31,7 @@ export class FusionDataService implements IFusionTrioService {
 
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
-    const demonDataJsons = [FES_DEMON_DATA_JSON];
-
-    if (game === 'p3p') {
-      demonDataJsons.push(P3P_DEMON_DATA_JSON);
-    }
+    const demonDataJsons = [DEMON_DATA_JSON];
 
     this._compendium = new Compendium(demonDataJsons);
     this._compendium$ = new BehaviorSubject(this._compendium);

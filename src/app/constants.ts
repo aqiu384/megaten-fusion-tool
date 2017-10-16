@@ -21,7 +21,22 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, src: string }[]
     },
     {
         game: 'Persona 3: FES',
-        tool: 'p3',
+        tool: 'p3fes',
+        src: 'http://spwiki.net/persona5/'
+    },
+    {
+        game: 'Persona 3: Portable',
+        tool: 'p3p',
+        src: 'http://spwiki.net/persona5/'
+    },
+    {
+        game: 'Persona 4 Golden',
+        tool: 'p4g',
+        src: 'http://spwiki.net/persona5/'
+    },
+    {
+        game: 'Persona Q: Shadow of the Labyrinth',
+        tool: 'pq',
         src: 'http://spwiki.net/persona5/'
     },
     {

@@ -5,10 +5,10 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-p3-compendium',
+  selector: 'app-p4-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-compendium [ngClass]="'p3'" [mainList]="'persona'"></app-demon-compendium>
+    <app-demon-compendium [ngClass]="'p4'" [mainList]="'persona'"></app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None

@@ -67,6 +67,7 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(demons)) {
+      console.log(name, demon.race);
       inverses[demon.race][demon.lvl] = name;
 
       for (const [skill, level] of Object.entries(demon.skills)) {

@@ -33,7 +33,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
     </tr>
     <ng-container *ngIf="showing">
       <tr>
-        <th class="sortable"
+        <th class="nav active"
           [style.height.em]="1"
           [attr.rowspan]="trio.fusions.length + 1"
           (click)="toggleShowing.emit(showIndex)">
