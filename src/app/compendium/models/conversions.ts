@@ -1,4 +1,4 @@
-import { Compendium, FusionEntry, NamePair, FusionPair } from '../models';
+import { Compendium, FusionEntry, NamePair, FusionPair, NameTrio, DemonTrio } from '../models';
 
 export function toFusionEntry(name: string, compendium: Compendium): FusionEntry {
   const demon = compendium.getDemon(name);
@@ -21,5 +21,13 @@ export function toFusionPair(names: NamePair, compendium: Compendium): FusionPai
     race2: demon2.race,
     lvl2: demon2.lvl,
     name2: names.name2
+  };
+}
+
+export function toDemonTrio(names: NameTrio, compendium: Compendium): DemonTrio {
+  return {
+    d1: compendium.getDemon(names.name1),
+    d2: compendium.getDemon(names.name2),
+    d3: compendium.getDemon(names.name3)
   };
 }

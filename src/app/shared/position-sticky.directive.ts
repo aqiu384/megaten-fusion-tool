@@ -44,12 +44,12 @@ export class PositionStickyDirective implements OnInit, OnDestroy {
   }
 
   nextEdges() {
-    this.edgesService.nextEdges(this.edges);
+    setTimeout(() => this.edgesService.nextEdges(this.edges));
   }
 
   get edges(): PositionEdges {
     return Object.assign({}, this._edges, {
-      top: this._edges.top + this.elementRef.nativeElement.getBoundingClientRect().height,
+      top: this._edges.top + this.elementRef.nativeElement.clientHeight,
       zIndex: this._edges.zIndex - 1
     });
   }

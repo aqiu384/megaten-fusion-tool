@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input, OnChanges, ViewChild } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, ViewChild } from '@angular/core';
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { PositionStickyDirective } from '../../shared/position-sticky.directive';
 
@@ -11,19 +11,18 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
       <table #stickyTable appPositionSticky>
         <thead>
           <tr>
-            <th class="nav" routerLinkActive="active" [style.width.%]="50">
-              <div><a routerLink="reverse-fusions">
-                Reverse Fusions
-              </a></div>
-            </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="50">
-              <div><a routerLink="forward-fusions">
-                Forward Fusions
-              </a></div>
+            <th *ngFor="let option of fusionOptions"
+              class="nav"
+              routerLinkActive="active"
+              [style.width.%]="100 / fusionOptions.length"
+              [routerLinkActiveOptions]="{ exact: true }">
+              <div>
+                <a routerLink="{{ option.link }}">{{ option.title }}</a>
+              </div>
             </th>
           </tr>
           <tr *ngIf="showFusionAlert">
-            <th colspan="2"><ng-content></ng-content></th>
+            <th colspan="fusionOptions.length"><ng-content></ng-content></th>
           <tr>
         </thead>
       </table>
@@ -31,9 +30,29 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
     </div>
   `
 })
-export class SmtFusionsComponent implements OnChanges {
+export class SmtFusionsComponent implements OnInit, OnChanges {
+  static readonly NORMAL_FUSIONS = [
+    { title: 'Reverse Fusions', link: 'reverse-fusions' },
+    { title: 'Forward Fusions', link: 'forward-fusions' }
+  ];
+
+  static readonly TRIPLE_FUSIONS = [
+    { title: 'Normal Reverse Fusions', link: 'fissions' },
+    { title: 'Triple Reverse Fusions', link: 'fissions/triple' },
+    { title: 'Triple Forward Fusions', link: 'fusions/triple' },
+    { title: 'Normal Forward Fusions', link: 'fusions' }
+  ];
+
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
+  @Input() hasTripleFusion = false;
   @Input() showFusionAlert = false;
+  fusionOptions = SmtFusionsComponent.NORMAL_FUSIONS;
+
+  ngOnInit() {
+    this.fusionOptions = this.hasTripleFusion ?
+      SmtFusionsComponent.TRIPLE_FUSIONS :
+      SmtFusionsComponent.NORMAL_FUSIONS;
+  }
 
   ngOnChanges() {
     setTimeout(() => this.stickyTable.nextEdges());

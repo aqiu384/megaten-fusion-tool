@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { CompendiumConfig, FusionDataService } from './models';
+import { CompendiumConfig, FusionDataService, FusionTrioService } from './models';
 
 import { NormalFusionCalculator } from './models/normal-fusion-calculator';
 import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement } from './fusions/smt-nonelem-fusions';
@@ -9,6 +9,7 @@ import { splitElement } from './fusions/smt-element-fissions';
 
 export const COMPENDIUM_CONFIG = new InjectionToken<CompendiumConfig>('compendium.config');
 export const FUSION_DATA_SERVICE = new InjectionToken<FusionDataService>('fusion.data.service');
+export const FUSION_TRIO_SERVICE = new InjectionToken<FusionTrioService>('fusion.trio.service');
 
 export const SMT_NORMAL_FUSION_CALCULATOR = new NormalFusionCalculator(
   [ fuseWithDiffRace, fuseWithSameRace, fuseWithElement ],

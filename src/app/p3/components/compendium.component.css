@@ -39,7 +39,7 @@
   background-color: maroon;
 }
 
-.p3 thead th, .p3 tfoot th {
+.p3 th, .p3 th {
   color: black;
   background-color: #4372AA;
 }
@@ -49,6 +49,8 @@
 }
 
 .p3 th.nav {
+  color: white;
+  cursor: pointer;
   background-color: rgb(38, 64, 92);
 }
 

@@ -26,7 +26,7 @@ import { Skill } from '../models';
       <ul class="comma-list">
         <li *ngFor="let entry of data.learnedBy">
           <a routerLink="../{{ hasFuse ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
-          ({{ entry.level | skillLevelToString }})
+          {{ entry.level ? '(' + entry.level + ')' : '' }}
         </li>
       </ul>
     </td>

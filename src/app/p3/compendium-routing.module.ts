@@ -9,8 +9,8 @@ import { DemonEntryContainerComponent } from './components/demon-entry.component
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
-import { IngredientSelectionComponent } from '../persona/components/ingredient-selection.component';
-import { TriangleFusionTableComponent } from '../persona/components/triangle-fusion-table.component';
+import { TripleFissionTableComponent } from '../persona/components/triple-fission-table.component';
+import { TripleFusionTableComponent } from '../persona/components/triple-fusion-table.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },
@@ -23,24 +23,24 @@ const compendiumRoutes: Routes = [
         component: DemonEntryContainerComponent,
         children: [
           {
-            path: 'fissions/triangle/:triangleName',
-            component: TriangleFusionTableComponent,
+            path: 'fissions/triple',
+            component: TripleFissionTableComponent
           },
           {
-            path: 'fissions/triangle',
-            component: IngredientSelectionComponent
+            path: 'fusions/triple',
+            component: TripleFusionTableComponent
           },
           {
-            path: 'reverse-fusions',
+            path: 'fissions',
             component: SmtFissionTableComponent
           },
           {
-            path: 'forward-fusions',
+            path: 'fusions',
             component: SmtFusionTableComponent
           },
           {
             path: '**',
-            redirectTo: 'reverse-fusions',
+            redirectTo: 'fissions',
             pathMatch: 'full'
           }
         ]

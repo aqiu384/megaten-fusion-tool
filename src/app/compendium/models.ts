@@ -60,6 +60,10 @@ export interface FusionDataService {
   nextDlcDemons(dlcDemons: { [name: string]: boolean });
 }
 
+export interface FusionTrioService extends FusionDataService {
+  squareChart: Observable<SquareChart>;
+}
+
 export type FusionCalculation = (
   demon: string,
   compendium: Compendium,
@@ -73,6 +77,24 @@ export interface FusionCalculator {
 export interface NamePair {
   name1: string;
   name2: string;
+}
+
+export interface NameTrio extends NamePair {
+  name3: string;
+}
+
+export interface DemonPair {
+  d1: Demon;
+  d2: Demon;
+}
+
+export interface DemonTrio extends DemonPair {
+  d3: Demon;
+}
+
+export interface FusionTrio {
+  demon: Demon;
+  fusions: DemonTrio[];
 }
 
 export interface FusionEntry {
@@ -108,7 +130,7 @@ export interface FusionChart {
   isConvertedRace(race: string): boolean;
 }
 
-export interface TriangleFusionChart extends FusionChart {
-  getTriangleFissions(race: string): FissionRow;
-  getTriangleFusions(race: string): FusionRow;
+export interface SquareChart {
+  normalChart: FusionChart;
+  tripleChart: FusionChart;
 }

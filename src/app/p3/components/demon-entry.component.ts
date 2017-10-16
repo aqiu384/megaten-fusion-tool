@@ -32,8 +32,7 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <a routerLink="fissions/triangle">Triangle Fissions</a>
-      <app-smt-fusions [showFusionAlert]="demon.fusion === 'excluded'">
+      <app-smt-fusions [hasTripleFusion]="true" [showFusionAlert]="demon.fusion === 'excluded'">
         DLC marked as excluded, fusions involving {{ name }} may be inaccurate!
       </app-smt-fusions>
     </ng-container>

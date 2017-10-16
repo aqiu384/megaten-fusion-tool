@@ -18,7 +18,7 @@ import {
 
 import { FusionDataService } from './fusion-data.service';
 
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { CompendiumConfig } from '../compendium/models';
 import { RaceOrder } from './constants';
 import { APP_TITLE } from './constants';
@@ -47,6 +47,7 @@ const compendiumConfig: CompendiumConfig = {
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
+    [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
     [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
   ]
 })

@@ -20,7 +20,7 @@ import { CurrentDemonService } from '../current-demon.service';
       [title]="'Special Fusion Ingredients for ' + currentDemon"
       [rowData]="fusionEntries">
     </app-fusion-entry-table>
-    <app-fusion-pair-table *ngIf="fusionPairs.length"
+    <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionPrereq && !fusionEntries.length"
       [title]="'Ingredient 1 x Ingredient 2 = ' + currentDemon"
       [rowData]="fusionPairs">
     </app-fusion-pair-table>
