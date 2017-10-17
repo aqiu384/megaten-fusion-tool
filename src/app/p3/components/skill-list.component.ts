@@ -10,14 +10,15 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-skill-list
+      [appName]="appName"
       [elemOrder]="elemOrder"
+      [hasRank]="false"
       [hasFuse]="true"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `
 })
 export class SkillListContainerComponent extends SLCC {
-  appName = `List of Skills - ${APP_TITLE}`;
   elemOrder = ElementOrder;
   defaultSortFun = (a, b) => (ElementOrder[a.element] - ElementOrder[b.element]) * 10000 + a.rank - b.rank;
 
@@ -25,5 +26,8 @@ export class SkillListContainerComponent extends SLCC {
     title: Title,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
-  ) { super(title, changeDetectorRef, fusionDataService); }
+  ) {
+    super(title, changeDetectorRef, fusionDataService);
+    this.appName = fusionDataService.appName;
+  }
 }

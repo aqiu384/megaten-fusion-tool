@@ -19,7 +19,7 @@ import { FusionDataService } from '../fusion-data.service';
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName = `List of Demons - ${APP_TITLE}`;
+  appName = `List of Personas - ${APP_TITLE}`;
   raceOrder = RaceOrder;
   inheritOrder = ElementOrder;
   statHeaders = BaseStats;

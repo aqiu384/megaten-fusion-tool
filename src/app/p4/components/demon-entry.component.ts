@@ -73,5 +73,6 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+    this.appName = fusionDataService.appName;
   }
 }

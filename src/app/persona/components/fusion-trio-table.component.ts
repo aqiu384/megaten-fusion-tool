@@ -68,6 +68,9 @@ export class FusionTrioTableRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
+      <th colspan="10">{{ title }}</th>
+    </tr>
+    <tr>
       <th class="sortable" rowspan="2" [style.width.%]="10" (click)="toggleHideAll()">Hide All</th>
       <th colspan="3" [style.width.%]="30">{{ leftHeader }}</th>
       <th colspan="3" [style.width.%]="30">Ingredient 2</th>
@@ -92,7 +95,8 @@ export class FusionTrioTableRowComponent {
   `]
 })
 export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
-  @Input() leftHeader = 'Ingredient 1';
+  @Input() title;
+  @Input() leftHeader;
   @Output() hideAll = new EventEmitter<boolean>();
 
   toggleHideAll() {
@@ -109,6 +113,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
       <table appPositionSticky>
         <tfoot #stickyHeader appColumnWidths
           class="app-fusion-trio-table-header"
+          [title]="title"
           [leftHeader]="leftHeader"
           [sortFunIndex]="sortFunIndex"
           (hideAll)="toggleHideAll()"
@@ -118,6 +123,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
       <table>
         <tfoot #hiddenHeader appColumnWidths
           class="app-fusion-trio-table-header"
+          [title]="title"
           [leftHeader]="leftHeader"
           [style.visibility]="'collapse'">
         </tfoot>
@@ -136,6 +142,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
   `
 })
 export class FusionTrioTableComponent extends SortedTableComponent<FusionTrio> implements OnInit, AfterViewChecked {
+  @Input() title = 'Fusion Trio Table';
   @Input() leftHeader = 'Ingredient 1';
   @Input() raceOrder: { [race: string]: number };
   showing: boolean[] = [];

@@ -66,6 +66,8 @@ export class DemonEntryComponent {
   `
 })
 export class DemonEntryContainerComponent extends DECC {
+  appName = APP_TITLE;
+
   constructor(
     private route: ActivatedRoute,
     private title: Title,

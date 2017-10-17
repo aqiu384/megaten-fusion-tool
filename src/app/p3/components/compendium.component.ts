@@ -8,7 +8,7 @@ import {
   selector: 'app-p3-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-compendium [ngClass]="'p3'" [mainList]="'persona'"></app-demon-compendium>
+    <app-demon-compendium [ngClass]="'p3'" [hasSettings]="false" [mainList]="'persona'"></app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None

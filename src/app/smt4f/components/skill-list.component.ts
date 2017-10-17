@@ -12,6 +12,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <app-smt-skill-list
       [elemOrder]="elemOrder"
+      [hasTarget]="true"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `

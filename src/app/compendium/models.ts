@@ -30,8 +30,10 @@ export interface Skill {
   cost: number;
   effect: string;
   level: number;
+  damage?: string;
   requires?: string;
   inherit?: string;
+  unique?: boolean;
 }
 
 export interface Compendium {

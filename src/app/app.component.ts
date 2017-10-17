@@ -41,7 +41,7 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
 })
 export class AppComponent implements OnInit {
   currentGame = 'none';
-  navsPerRow = 6;
+  navsPerRow = 5;
   navRows = [];
   loading = false;
 
@@ -51,9 +51,9 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(v => this.interceptNavigation(v));
     this.navRows = [];
 
-    const navButtons = [{ game: 'Home', tool: 'home', src: '' }].concat(MEGATEN_FUSION_TOOLS);
+    const navButtons = [{ game: 'Home', tool: 'home', srcs: [] }].concat(MEGATEN_FUSION_TOOLS);
     const fillerLen = this.navsPerRow - (MEGATEN_FUSION_TOOLS.length + 1) % this.navsPerRow;
-    const fillerNav = { game: '', tool: '', src: '' };
+    const fillerNav = { game: '', tool: '', srcs: [] };
 
     for (let i = 0; i < fillerLen; i++) {
       navButtons.push(fillerNav);

@@ -4,11 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
+import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
-import { DlcFusionSettingsComponent } from '../compendium/components/dlc-fusion-settings.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'demons', pathMatch: 'full' },
@@ -21,16 +21,16 @@ const compendiumRoutes: Routes = [
         component: DemonEntryContainerComponent,
         children: [
           {
-            path: 'reverse-fusions',
+            path: 'fissions',
             component: SmtFissionTableComponent
           },
           {
-            path: 'forward-fusions',
+            path: 'fusions',
             component: SmtFusionTableComponent
           },
           {
             path: '**',
-            redirectTo: 'reverse-fusions',
+            redirectTo: 'fissions',
             pathMatch: 'full'
           }
         ]
@@ -49,7 +49,7 @@ const compendiumRoutes: Routes = [
       },
       {
         path: 'settings',
-        component: DlcFusionSettingsComponent
+        component: DemonDlcSettingsContainerComponent
       }
     ]
   },

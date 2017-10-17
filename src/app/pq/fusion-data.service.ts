@@ -29,14 +29,36 @@ export class FusionDataService implements IFusionTrioService {
   private _squareChart$ = new BehaviorSubject({ normalChart: this._fusionChart, tripleChart: this._tripleChart });
   squareChart = this._squareChart$.asObservable();
 
-  constructor(private router: Router) {
-    const game = router.url.split('/')[1];
+  constructor() {
     const demonDataJsons = [DEMON_DATA_JSON];
 
     this._compendium = new Compendium(demonDataJsons);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
+
+    const settings = JSON.parse(localStorage.getItem(FUSION_SETTINGS_KEY));
+
+    if (settings && settings.version && settings.version >= FUSION_SETTINGS_VERSION) {
+      this.nextDlcDemons(settings.dlcDemons);
+    }
+
+    window.addEventListener('storage', this.onStorageUpdated.bind(this));
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  nextDlcDemons(dlcDemons: { [name: string]: boolean }) {
+    localStorage.setItem(FUSION_SETTINGS_KEY, JSON.stringify({ version: FUSION_SETTINGS_VERSION, dlcDemons }));
+    this._compendium.dlcDemons = dlcDemons;
+    this._compendium$.next(this._compendium);
+  }
+
+  onStorageUpdated(e) {
+    switch (e.key) {
+      case FUSION_SETTINGS_KEY:
+        this._compendium.dlcDemons = JSON.parse(e.newValue).dlcDemons;
+        this._compendium$.next(this._compendium);
+        break;
+      default:
+        break;
+    }
+  }
 }

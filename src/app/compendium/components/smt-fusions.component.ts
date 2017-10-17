@@ -22,7 +22,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             </th>
           </tr>
           <tr *ngIf="showFusionAlert">
-            <th colspan="fusionOptions.length"><ng-content></ng-content></th>
+            <th [attr.colspan]="fusionOptions.length"><ng-content></ng-content></th>
           <tr>
         </thead>
       </table>
@@ -32,8 +32,8 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
 })
 export class SmtFusionsComponent implements OnInit, OnChanges {
   static readonly NORMAL_FUSIONS = [
-    { title: 'Reverse Fusions', link: 'reverse-fusions' },
-    { title: 'Forward Fusions', link: 'forward-fusions' }
+    { title: 'Reverse Fusions', link: 'fissions' },
+    { title: 'Forward Fusions', link: 'fusions' }
   ];
 
   static readonly TRIPLE_FUSIONS = [

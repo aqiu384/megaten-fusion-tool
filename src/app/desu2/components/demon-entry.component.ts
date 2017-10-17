@@ -38,6 +38,24 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.passive">
       </app-demon-skills>
+      <table *ngIf="demon.racial">
+        <thead>
+          <tr><th colspan="3">Racial Skill</th></tr>
+          <tr><th>Name</th><th>Effect</th><th>Lvl</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ demon.racial.skill }}</td>
+            <td>{{ demon.racial.effect }}</td>
+            <td>Innate</td>
+          </tr>
+          <tr *ngIf="demon.racial.enskill">
+            <td>{{ demon.racial.enskill }}</td>
+            <td>{{ demon.racial.eneffect }}</td>
+            <td>{{ demon.raceup | skillLevelToString }}</td>
+          </tr>
+        </tbody>
+      </table>
       <app-smt-fusions></app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">

@@ -55,4 +55,4 @@ export const P3_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
 
 export const FUSION_SETTINGS_KEY = 'p3-fusion-tool-settings';
 export const FUSION_SETTINGS_VERSION = 1709211400;
-export const APP_TITLE = 'Persona 3: FES';
+export const APP_TITLE = 'Persona 3';

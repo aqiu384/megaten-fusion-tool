@@ -13,6 +13,7 @@ import { FusionDataService } from '../fusion-data.service';
     <app-smt-skill-list
       [elemOrder]="elemOrder"
       [hasPrereq]="true"
+      [hasRank]="false"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `

@@ -20,16 +20,16 @@ const compendiumRoutes: Routes = [
         component: DemonEntryContainerComponent,
         children: [
           {
-            path: 'reverse-fusions',
+            path: 'fissions',
             component: SmtFissionTableComponent
           },
           {
-            path: 'forward-fusions',
+            path: 'fusions',
             component: SmtFusionTableComponent
           },
           {
             path: '**',
-            redirectTo: 'reverse-fusions',
+            redirectTo: 'fissions',
             pathMatch: 'full'
           }
         ]

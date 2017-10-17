@@ -6,6 +6,6 @@ import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
 export class Compendium extends DesuCompendium {
   constructor() {
-    super(DEMON_DATA_JSON, SKILL_DATA_JSON, SPECIAL_RECIPES_JSON);
+    super(DEMON_DATA_JSON, SKILL_DATA_JSON, SPECIAL_RECIPES_JSON, {});
   }
 }

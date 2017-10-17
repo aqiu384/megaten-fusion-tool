@@ -11,22 +11,22 @@ import { Skill, Compendium, FusionDataService } from '../models';
 
 export abstract class SkillListContainerComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
-  protected skills: Observable<Skill[]>;
-  protected appName = 'List of Skills - Test App';
-  protected initListLen = 50;
-  protected defaultSortFun = (a: Skill, b: Skill) => a.name.localeCompare(b.name);
+  skills: Observable<Skill[]>;
+  initListLen = 50;
+  appName = 'List of Skills - Test App';
+  defaultSortFun = (a: Skill, b: Skill) => a.name.localeCompare(b.name);
 
   constructor(
-    private title: Title,
-    private changeDetectorRef: ChangeDetectorRef,
-    private fusionDataService: FusionDataService
+    private title2: Title,
+    private changeDetectorRef2: ChangeDetectorRef,
+    private fusionDataService2: FusionDataService
   ) { }
 
   ngOnInit() {
-    this.title.setTitle(this.appName);
+    this.title2.setTitle(this.appName);
 
     this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(
+      this.fusionDataService2.compendium.subscribe(
         this.onCompendiumUpdated.bind(this)));
   }
 
@@ -37,7 +37,7 @@ export abstract class SkillListContainerComponent implements OnInit, OnDestroy {
   }
 
   onCompendiumUpdated(compendium: Compendium) {
-    this.changeDetectorRef.markForCheck();
+    this.changeDetectorRef2.markForCheck();
     this.skills = Observable.create(observer => {
       const skills = compendium.allSkills;
       skills.sort(this.defaultSortFun);

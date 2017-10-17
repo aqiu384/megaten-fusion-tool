@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Input, OnChanges } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
@@ -26,20 +26,16 @@ import { Skill } from '../models';
       <ul class="comma-list">
         <li *ngFor="let entry of data.learnedBy">
           <a routerLink="../{{ hasFuse ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
-          {{ entry.level ? '(' + entry.level + ')' : '' }}
+          {{ entry.level | skillLevelToShortString }}
         </li>
       </ul>
-    </td>
-    <td *ngIf="hasTalk">
-      <a routerLink="../{{ hasFuse ? 'personas' : 'demons' }}/{{ data.talk }}">{{ data.talk }}</a>
     </td>
     <td *ngIf="hasFuse">
       <ul class="comma-list">
-        <li *ngFor="let demon of data.fuse">
-          <a routerLink="../personas/{{ demon }}">{{ demon }}</a>
-        </li>
+        <li *ngFor="let demon of data.fuse">{{ demon }} </li>
       </ul>
     </td>
+    <td *ngIf="hasTalk">{{ data.talk }}</td>
     <td *ngIf="hasDsource">
       <ul class="comma-list">
         <li *ngFor="let demon of data.dsource">
@@ -110,11 +106,20 @@ export class SmtSkillListRowComponent {
     </table>
   `
 })
-export class SmtSkillListComponent extends SkillListComponent<Skill> {
-  @Input() hasTarget = true;
+export class SmtSkillListComponent extends SkillListComponent<Skill> implements OnChanges {
+  @Input() hasTarget = false;
   @Input() hasRank = true;
   @Input() hasTalk = false;
   @Input() hasFuse = false;
   @Input() hasDsource = false;
   @Input() hasPrereq = false;
+  @Input() appName = 'Megaten';
+
+  constructor(private title: Title) {
+    super();
+  }
+
+  ngOnChanges() {
+    this.title.setTitle(`Fusion Settings - ${this.appName}`);
+  }
 }

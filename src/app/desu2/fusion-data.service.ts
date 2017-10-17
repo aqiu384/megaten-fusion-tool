@@ -20,5 +20,30 @@ export class FusionDataService implements IFusionDataService {
   private _fusionChart$ = new BehaviorSubject(this._fusionChart);
   fusionChart = this._fusionChart$.asObservable();
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  constructor() {
+    const settings = JSON.parse(localStorage.getItem(FUSION_SETTINGS_KEY));
+
+    if (settings && settings.version && settings.version >= FUSION_SETTINGS_VERSION) {
+      this.nextDlcDemons(settings.dlcDemons);
+    }
+
+    window.addEventListener('storage', this.onStorageUpdated.bind(this));
+  }
+
+  nextDlcDemons(dlcDemons: { [name: string]: boolean }) {
+    localStorage.setItem(FUSION_SETTINGS_KEY, JSON.stringify({ version: FUSION_SETTINGS_VERSION, dlcDemons }));
+    this._compendium.dlcDemons = dlcDemons;
+    this._compendium$.next(this._compendium);
+  }
+
+  onStorageUpdated(e) {
+    switch (e.key) {
+      case FUSION_SETTINGS_KEY:
+        this._compendium.dlcDemons = JSON.parse(e.newValue).dlcDemons;
+        this._compendium$.next(this._compendium);
+        break;
+      default:
+        break;
+    }
+  }
 }

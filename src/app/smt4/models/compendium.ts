@@ -46,6 +46,7 @@ export class Compendium implements ICompendium {
         learnedBy: [],
       }, json);
 
+      skills[name].cost *= 100;
       skills[name].element = InverseShortElements[skills[name].element];
 
       if (skills[name].rank < 0) {

@@ -8,7 +8,7 @@ import {
   selector: 'app-desu1-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-compendium [ngClass]="'desu1'"></app-demon-compendium>
+    <app-demon-compendium [ngClass]="'desu1'" [hasSettings]="false"></app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None

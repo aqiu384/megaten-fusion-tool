@@ -50,6 +50,8 @@ export class Compendium implements ICompendium {
         learnedBy: [],
       }, json);
 
+      skills[name].cost *= 100;
+
       if (!skills[name].rank) {
         skills[name].rank = 99;
       }

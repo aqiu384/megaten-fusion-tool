@@ -2,8 +2,10 @@ import {
   Component,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
-  Input
+  Input,
+  OnChanges
 } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
@@ -72,4 +74,14 @@ export class SmtDemonListRowComponent {
     </table>
   `
 })
-export class SmtDemonListComponent extends DemonListComponent<Demon> { }
+export class SmtDemonListComponent extends DemonListComponent<Demon> implements OnChanges {
+  @Input() appName = 'Megaten';
+
+  constructor(private title: Title) {
+    super();
+  }
+
+  ngOnChanges() {
+    this.title.setTitle(`Fusion Settings - ${this.appName}`);
+  }
+}

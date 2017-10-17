@@ -1,11 +1,21 @@
 import { ElementOrder, Races, ResistCodes } from '../constants';
-import { Demon, Skill } from '../models';
+import { Demon, Skill, RacialSkill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
+import * as RACIAL_SKILLS_JSON from '../data/racial-skills.json';
+
 export abstract class DesuCompendium implements ICompendium {
+  static readonly MITAMA_FUSIONS: { [mitama: string]: NamePair[] } = {
+    'Ara Mitama': [ { name1: 'Erthys', name2: 'Aquans' }, { name1: 'Aeros', name2: 'Flaemis' } ],
+    'Kusi Mitama': [ { name1: 'Erthys', name2: 'Flaemis' }, { name1: 'Aeros', name2: 'Aquans' } ],
+    'Nigi Mitama': [ { name1: 'Erthys', name2: 'Aeros' } ],
+    'Saki Mitama': [ { name1: 'Aquans', name2: 'Flaemis' } ]
+  };
+
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] } = {};
+  private racialSkills: { [race: string]: RacialSkill } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
   private allIngredients: { [race: string]: number[] };
@@ -13,24 +23,25 @@ export abstract class DesuCompendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
-  dlcDemons: { [name: string]: boolean } = {};
+  private _dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(
-    private demonDataJson,
-    private skillDataJson,
-    private specialRecipesJson
-  ) {
-    this.initImportedData();
+  constructor(demonData: any, skillData: any, specialRecipes: any, dlcDemons: any) {
+    this.initImportedData(demonData, skillData, specialRecipes, dlcDemons);
     this.updateDerivedData();
   }
 
-  initImportedData() {
+  initImportedData(demonData: any, skillData: any, specialRecipes: any, dlcDemons: any) {
     const demons:   { [name: string]: Demon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
+    const racials: { [race: string]: RacialSkill } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
 
-    for (const [name, json] of Object.entries(this.demonDataJson)) {
+    for (const [race, json] of Object.entries(RACIAL_SKILLS_JSON)) {
+      racials[race] = json;
+    }
+
+    for (const [name, json] of Object.entries(demonData)) {
       demons[name] = {
         name,
         race:    json.race,
@@ -40,16 +51,27 @@ export abstract class DesuCompendium implements ICompendium {
         command: json.command || {},
         passive: json.passive || {},
         fusion:  'normal',
-        unique:  json.unique === true
+        unique:  json.unique === true,
+        raceup:  json.raceup ? json.raceup : 0
       };
+
+      const racialSkill = racials[json.race] || racials[name];
+
+      if (racialSkill) {
+        demons[name].racial = racialSkill;
+      }
+
+      if (json.raceup) {
+        demons[name].raceup = json.raceup;
+      }
     }
 
-    for (const [name, json] of Object.entries(this.skillDataJson)) {
+    for (const [name, json] of Object.entries(skillData)) {
       skills[name] = {
         name,
         element:   json.element,
         cost:      json.cost ? json.cost : 0,
-        rank:      json.cost ? json.cost : 0,
+        rank:      json.cost ? json.cost / 100 : 0,
         effect:    json.effect,
         requires:  json.prereq || '',
         learnedBy: [],
@@ -57,7 +79,7 @@ export abstract class DesuCompendium implements ICompendium {
       };
     }
 
-    for (const [name, json] of Object.entries(this.specialRecipesJson)) {
+    for (const [name, json] of Object.entries(specialRecipes)) {
       specials[name] = json;
       demons[name].fusion = 'special';
     }
@@ -76,6 +98,8 @@ export abstract class DesuCompendium implements ICompendium {
 
     this.demons = demons;
     this.skills = skills;
+    this.dlcDemons = Object.assign({}, dlcDemons);
+    this.racialSkills = racials;
     this.specialRecipes = specials;
     this.invertedDemons = inverses;
   }
@@ -104,10 +128,31 @@ export abstract class DesuCompendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
+    for (const [names, included] of Object.entries(this._dlcDemons)) {
+      if (!included) {
+        for (const name of names.split(',')) {
+          const { race, lvl } = this.demons[name];
+          delete demonEntries[name];
+
+          ingredients[race] = ingredients[race].filter(l => l !== lvl);
+          results[race] = results[race].filter(l => l !== lvl);
+        }
+      }
+    }
+
     this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
+  }
+
+  get dlcDemons(): { [name: string]: boolean } {
+    return this._dlcDemons;
+  }
+
+  set dlcDemons(dlcDemons: { [name: string]: boolean }) {
+    this._dlcDemons = dlcDemons;
+    this.updateDerivedData();
   }
 
   get allDemons(): Demon[] {
@@ -149,7 +194,7 @@ export abstract class DesuCompendium implements ICompendium {
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
-    return [];
+    return DesuCompendium.MITAMA_FUSIONS[name] || [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

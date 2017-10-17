@@ -17,6 +17,7 @@ import { RaceOrder } from '../../p4/constants';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-fusion-trio-table
+      [title]="'Result = ' + currentDemon +  ' x Ingredient 2 x Ingredient 3'"
       [raceOrder]="raceOrder"
       [leftHeader]="'Result'"
       [rowData]="fusionTrios">

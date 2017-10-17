@@ -16,14 +16,34 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
       </thead>
       <tbody>
         <tr *ngFor="let tool of fusionTools">
-          <td><a routerLink="../{{ tool.tool }}">{{ tool.game }}</a></td>
-          <td><a href="{{ tool.src }}">{{ tool.src }}</a></td>
+          <th class="nav">
+            <div>
+              <a routerLink="../{{ tool.tool }}">{{ tool.game }}</a>
+            </div>
+          </th>
+          <td>
+            <ul>
+              <li *ngFor="let src of tool.srcs">
+                <a href="{{ src }}">{{ src }}</a>
+              </li>
+            </ul>
+          </td>
         </tr>
         <tr>
-          <td>Report Issue</td>
-          <td><a href="https://github.com/aqiu384/megaten-fusion-tool/issues">
-            https://github.com/aqiu384/megaten-fusion-tool/issues
-          </a></td>
+          <th class="nav">
+            <div>
+              <a href="https://github.com/aqiu384/megaten-fusion-tool/issues">Report Issue</a>
+            </div>
+          </th>
+          <td>
+            <ul>
+              <li>
+                <a href="https://github.com/aqiu384/megaten-fusion-tool/issues">
+                  https://github.com/aqiu384/megaten-fusion-tool/issues
+                </a>
+              </li>
+            </ul>
+          </td>
         </tr>
       </tbody>
     </table>

@@ -8,6 +8,8 @@ export interface Demon {
   passive: { [skill: string]: number; };
   fusion: string;
   unique: boolean;
+  raceup: number;
+  racial?: RacialSkill;
 }
 
 export interface Skill {
@@ -20,4 +22,11 @@ export interface Skill {
   learnedBy: { demon: string, level: number }[];
   newoc?: boolean;
   level: number;
+}
+
+export interface RacialSkill {
+  skill: string;
+  effect: string;
+  enskill?: string;
+  eneffect?: string;
 }

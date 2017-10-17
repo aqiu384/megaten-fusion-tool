@@ -46,14 +46,18 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = Object.assign({ unique: '' }, json, {
+      skills[name] = Object.assign(json, {
         name,
-        rank: json.cost || 0,
+        rank: json.cost / 100 || 0,
         cost: json.cost || 0,
         learnedBy: [],
         talk: json.talk ? json.talk.split(', ') : [],
         fuse: json.fuse ? json.fuse.split(', ') : []
       });
+
+      if (json.unique) {
+        skills[name].rank = 99;
+      }
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {

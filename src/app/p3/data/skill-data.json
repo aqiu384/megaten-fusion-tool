@@ -193,7 +193,8 @@
     "effect": "Deals massive Almighty damage to one foe. Satan exclusive",
     "element": "almighty",
     "hit": 100,
-    "power": 950
+    "power": 950,
+    "unique": "Satan"
   },
   "Blade of Fury": {
     "card": "Chernobog",
@@ -345,7 +346,8 @@
   "Die for Me!": {
     "cost": 3500,
     "effect": "Darkness: instant kill, all foes (very high). (80% chance) Alice exclusive",
-    "element": "dark"
+    "element": "dark",
+    "unique": "Alice"
   },
   "Distress Boost": {
     "effect": "Increases odds of Distressing a foe by 50%",
@@ -615,10 +617,6 @@
     "power": 600,
     "vcost": 20
   },
-  "Goddess Knowledge": {
-    "effect": "Doubles damage dealt by Slash, Strike, and Pierce attacks. \"???\" exclusive",
-    "element": "passive"
-  },
   "Growth 1": {
     "card": "Gurr",
     "clvl": 18,
@@ -675,6 +673,7 @@
     "element": "slash",
     "hit": 95,
     "power": 500,
+    "unique": "Michael",
     "vcost": 18
   },
   "Heavy Master": {
@@ -820,7 +819,8 @@
   },
   "Magic Skill Up": {
     "effect": "Strengthens all magical attacks, including Almighty, by 50%. Messiah exclusive (Portable only)",
-    "element": "passive"
+    "element": "passive",
+    "unique": "Messiah"
   },
   "Mahama": {
     "card": "Power",
@@ -905,7 +905,8 @@
     "effect": "Deals severe Fire damage to all foes. Mara exclusive",
     "element": "fire",
     "hit": 95,
-    "power": 650
+    "power": 650,
+    "unique": "Mara"
   },
   "Marin Karin": {
     "cost": 500,
@@ -1645,11 +1646,13 @@
     "element": "slash",
     "hit": 99,
     "power": 550,
-    "vcost": 30
+    "vcost": 30,
+    "unique": "Multiple"
   },
   "Weapons Master": {
     "effect": "Doubles damage dealt with weapons. (Portable only)",
-    "element": "passive"
+    "element": "passive",
+    "unique": "Multiple"
   },
   "Weary Thrust": {
     "card": "Seiten Taisei",
@@ -1660,7 +1663,8 @@
     "element": "strike",
     "hit": 99,
     "power": 405,
-    "vcost": 18
+    "vcost": 18,
+    "unique": "Multiple"
   },
   "Wind Amp": {
     "card": "Ganesha",

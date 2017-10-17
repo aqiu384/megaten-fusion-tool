@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   selector: 'app-demon-resists',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table *ngIf="resistHeaders.length">
       <thead>
         <tr><th [attr.colspan]="resists.length + ailments.length">Resistances</th></tr>
         <tr>

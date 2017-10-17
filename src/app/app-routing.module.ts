@@ -12,6 +12,7 @@ const appRoutes: Routes = [
   { path: 'smt4f', loadChildren: './smt4f/compendium.module#CompendiumModule' },
   { path: 'p3fes', loadChildren: './p3/compendium.module#CompendiumModule' },
   { path: 'p3p', loadChildren: './p3/compendium.module#CompendiumModule' },
+  { path: 'p4', loadChildren: './p4/compendium.module#CompendiumModule' },
   { path: 'p4g', loadChildren: './p4/compendium.module#CompendiumModule' },
   { path: 'pq', loadChildren: './pq/compendium.module#CompendiumModule' },
   { path: 'p5', loadChildren: './p5/compendium.module#CompendiumModule' },

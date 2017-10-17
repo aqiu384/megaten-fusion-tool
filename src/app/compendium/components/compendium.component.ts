@@ -20,17 +20,17 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
           <tr>
             <th class="nav" routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
-              [style.width.%]="33.333">
+              [style.width.%]="hasSettings ? 33.333 : 50">
               <div><a routerLink="{{ mainList }}s">
                 {{ mainList.charAt(0).toUpperCase() + mainList.slice(1) }} List
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
+            <th class="nav" routerLinkActive="active" [style.width.%]="hasSettings ? 33.333 : 50">
               <div><a routerLink="skills">
                 Skill List
               </a></div>
             </th>
-            <th class="nav" routerLinkActive="active" [style.width.%]="33.333">
+            <th *ngIf="hasSettings" class="nav" routerLinkActive="active" [style.width.%]="33.333">
               <div><a routerLink="settings">
                 Fusion Settings
               </a></div>
@@ -45,6 +45,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
 export class CompendiumComponent implements OnInit {
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
   @Input() mainList = 'demon';
+  @Input() hasSettings = true;
 
   ngOnInit() {
     setTimeout(() => this.stickyTable.nextEdges());

@@ -10,6 +10,7 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [appName]="appName"
       [raceOrder]="raceOrder"
       [inheritOrder]="inheritOrder"
       [statHeaders]="statHeaders"
@@ -19,7 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName = `List of Demons - ${APP_TITLE}`;
+  appName = `List of Personas - ${APP_TITLE}`;
   raceOrder = RaceOrder;
   inheritOrder = ElementOrder;
   statHeaders = BaseStats;
@@ -30,5 +31,8 @@ export class DemonListContainerComponent extends DLCC {
     title: Title,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
-  ) { super(title, changeDetectorRef, fusionDataService); }
+  ) {
+    super(title, changeDetectorRef, fusionDataService);
+    this.appName = fusionDataService.appName;
+  }
 }

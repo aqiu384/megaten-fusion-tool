@@ -17,6 +17,7 @@ import * as FUSION_CHART_JSON from './data/fusion-chart.json';
 export class FusionDataService implements IFusionTrioService {
   fissionCalculator = P3_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = P3_NORMAL_FUSION_CALCULATOR;
+  appName = 'Persona 3 FES';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -36,6 +37,7 @@ export class FusionDataService implements IFusionTrioService {
 
     if (game === 'p3p') {
       demonDataJsons.push(P3P_DEMON_DATA_JSON);
+      this.appName = 'Persona 3 Portable';
     }
 
     this._compendium = new Compendium(demonDataJsons);

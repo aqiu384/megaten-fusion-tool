@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { RaceOrder, BaseStats, ResistanceElements, AffinityElements, APP_TITLE } from '../../smt4/models/constants';
+import { RaceOrder, BaseStats, ResistanceElements, AffinityElements } from '../../smt4/models/constants';
+import { APP_TITLE } from '../models/constants';
 
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';

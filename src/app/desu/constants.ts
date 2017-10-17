@@ -15,7 +15,7 @@ export const ResistElements = [
 ];
 
 export const SkillElements = ResistElements.concat(
-  'strike', 'almighty', 'recovery', 'support', 'passive', 'auto'
+  'strike', 'almighty', 'none', 'recovery', 'support', 'passive', 'auto'
 );
 
 export const BaseStats = [

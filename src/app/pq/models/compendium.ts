@@ -16,7 +16,12 @@ export class Compendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
-  dlcDemons: { [name: string]: boolean } = {};
+  private _dlcDemons: { [name: string]: boolean } = {
+    'Kaguya': true,
+    'Orpheus Telos': true,
+    'Thanatos': false,
+    'Magatsu-Izanagi': false
+  };
 
   constructor(demonDataJsons: any[]) {
     this.initImportedData(demonDataJsons);
@@ -49,12 +54,20 @@ export class Compendium implements ICompendium {
         name,
         element:   json.element,
         cost:      json.cost ? json.cost : 0,
-        rank:      json.cost ? json.cost : 0,
+        rank:      json.cost ? json.cost / 100 : 0,
         effect:    json.effect,
         learnedBy: [],
         fuse:      json.card ? json.card.split(', ') : [],
         level:     0
       };
+
+      if (json.unique) {
+        skills[name].rank = 99;
+      }
+
+      if (skills[name].cost < 200) {
+        skills[name].cost *= -1;
+      }
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
@@ -67,7 +80,6 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(demons)) {
-      console.log(name, demon.race);
       inverses[demon.race][demon.lvl] = name;
 
       for (const [skill, level] of Object.entries(demon.skills)) {
@@ -105,10 +117,31 @@ export class Compendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
+    for (const [names, included] of Object.entries(this._dlcDemons)) {
+      if (!included) {
+        for (const name of names.split(',')) {
+          const { race, lvl } = this.demons[name];
+          delete demonEntries[name];
+
+          ingredients[race] = ingredients[race].filter(l => l !== lvl);
+          results[race] = results[race].filter(l => l !== lvl);
+        }
+      }
+    }
+
     this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
+  }
+
+  get dlcDemons(): { [name: string]: boolean } {
+    return this._dlcDemons;
+  }
+
+  set dlcDemons(dlcDemons: { [name: string]: boolean }) {
+    this._dlcDemons = dlcDemons;
+    this.updateDerivedData();
   }
 
   get allDemons(): Demon[] {

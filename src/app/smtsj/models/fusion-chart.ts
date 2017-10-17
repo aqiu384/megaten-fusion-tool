@@ -20,9 +20,9 @@ export class FusionChart extends SmtFusionChart {
 
   private static INCLUDED_SUBAPPS = {
     'Laplace': false,
-    'UMA Converter': true,
-    'Fiend Converter': true,
-    'Enigma Converter': true
+    'UMA Converter': false,
+    'Fiend Converter': false,
+    'Enigma Converter': false
   };
 
   elementDemons = PrimeElements;
@@ -62,7 +62,7 @@ export class FusionChart extends SmtFusionChart {
   }
 
   getRaceFusions(race: string): FusionRow {
-    const combos = super.getRaceFusions(race);
+    const combos = Object.assign({}, super.getRaceFusions(race));
 
     for (const [raceB, raceR] of Object.entries(combos)) {
       const raceQ = FusionChart.RACE_CONVERTERS[raceR];

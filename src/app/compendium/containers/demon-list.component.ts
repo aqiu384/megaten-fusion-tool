@@ -11,10 +11,10 @@ import { Demon, Compendium, FusionDataService } from '../models';
 
 export abstract class DemonListContainerComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
-  protected demons: Observable<Demon[]>;
-  protected appName = 'List of Demons - Test App';
-  protected initListLen = 50;
-  protected defaultSortFun = (a: Demon, b: Demon) => a.name.localeCompare(b.name);
+  demons: Observable<Demon[]>;
+  appName = 'List of Demons - Megami Tensei Fusion Tools';
+  initListLen = 50;
+  defaultSortFun = (a: Demon, b: Demon) => a.name.localeCompare(b.name);
 
   constructor(
     private title2: Title,

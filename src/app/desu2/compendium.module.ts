@@ -9,7 +9,9 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
+import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 import { DemonEntryContainerComponent, DemonEntryComponent } from './components/demon-entry.component';
+
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
@@ -33,6 +35,7 @@ const compendiumConfig: CompendiumConfig = {
     CompendiumComponent,
     DemonListContainerComponent,
     SkillListContainerComponent,
+    DemonDlcSettingsContainerComponent,
     DemonEntryContainerComponent,
     DemonEntryComponent
   ],

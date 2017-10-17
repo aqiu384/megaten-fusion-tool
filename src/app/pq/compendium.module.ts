@@ -10,6 +10,7 @@ import { PersonaCompendiumModule } from '../persona/compendium.module';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
+import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 
 import {
   DemonEntryComponent,
@@ -41,7 +42,8 @@ const compendiumConfig: CompendiumConfig = {
     DemonListContainerComponent,
     SkillListContainerComponent,
     DemonEntryComponent,
-    DemonEntryContainerComponent
+    DemonEntryContainerComponent,
+    DemonDlcSettingsContainerComponent
   ],
   providers: [
     Title,
