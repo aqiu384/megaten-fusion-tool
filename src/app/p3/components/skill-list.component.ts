@@ -10,7 +10,6 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-skill-list
-      [appName]="appName"
       [elemOrder]="elemOrder"
       [hasRank]="false"
       [hasFuse]="true"
@@ -28,6 +27,6 @@ export class SkillListContainerComponent extends SLCC {
     fusionDataService: FusionDataService
   ) {
     super(title, changeDetectorRef, fusionDataService);
-    this.appName = fusionDataService.appName;
+    this.appName = `List of Skills - ${fusionDataService.appName}`;
   }
 }

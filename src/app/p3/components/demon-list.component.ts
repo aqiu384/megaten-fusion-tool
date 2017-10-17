@@ -10,7 +10,6 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
-      [appName]="appName"
       [raceOrder]="raceOrder"
       [inheritOrder]="inheritOrder"
       [statHeaders]="statHeaders"
@@ -32,6 +31,6 @@ export class DemonListContainerComponent extends DLCC {
     fusionDataService: FusionDataService
   ) {
     super(title, changeDetectorRef, fusionDataService);
-    this.appName = fusionDataService.appName;
+    this.appName = `List of Personas - ${fusionDataService.appName}`;
   }
 }

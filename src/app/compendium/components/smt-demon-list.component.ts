@@ -2,8 +2,7 @@ import {
   Component,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
-  Input,
-  OnChanges
+  Input
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
@@ -74,14 +73,4 @@ export class SmtDemonListRowComponent {
     </table>
   `
 })
-export class SmtDemonListComponent extends DemonListComponent<Demon> implements OnChanges {
-  @Input() appName = 'Megaten';
-
-  constructor(private title: Title) {
-    super();
-  }
-
-  ngOnChanges() {
-    this.title.setTitle(`Fusion Settings - ${this.appName}`);
-  }
-}
+export class SmtDemonListComponent extends DemonListComponent<Demon> { }

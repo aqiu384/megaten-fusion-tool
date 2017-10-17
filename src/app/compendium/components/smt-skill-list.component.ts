@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Input, OnChanges } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
@@ -106,20 +106,11 @@ export class SmtSkillListRowComponent {
     </table>
   `
 })
-export class SmtSkillListComponent extends SkillListComponent<Skill> implements OnChanges {
+export class SmtSkillListComponent extends SkillListComponent<Skill> {
   @Input() hasTarget = false;
   @Input() hasRank = true;
   @Input() hasTalk = false;
   @Input() hasFuse = false;
   @Input() hasDsource = false;
   @Input() hasPrereq = false;
-  @Input() appName = 'Megaten';
-
-  constructor(private title: Title) {
-    super();
-  }
-
-  ngOnChanges() {
-    this.title.setTitle(`Fusion Settings - ${this.appName}`);
-  }
 }
