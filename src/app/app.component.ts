@@ -40,6 +40,11 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
+  static readonly GAME_PREFIXES: { [game: string]: string } = {
+    p3fes: 'p3',  p3p: 'p3',     p4g: 'p4',
+    dso: 'desu1', ds2br: 'desu2'
+  };
+
   currentGame = 'none';
   navsPerRow = 5;
   navRows = [];
@@ -70,15 +75,7 @@ export class AppComponent implements OnInit {
     } else if (event instanceof NavigationEnd) {
       this.loading = false;
       const currentGame = event.url.split('/')[1];
-
-      if (currentGame === 'p3fes' || currentGame === 'p3p') {
-        this.currentGame = 'p3';
-      } else if (currentGame === 'p4g') {
-        this.currentGame = 'p4';
-      } else {
-        this.currentGame = currentGame;
-      }
-
+      this.currentGame = AppComponent.GAME_PREFIXES[currentGame] || currentGame;
       window.scrollTo(0, 0);
     } else if (
       event instanceof NavigationCancel ||

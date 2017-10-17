@@ -81,7 +81,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
   },
   {
     game: 'Devil Survivor Overclocked',
-    tool: 'desu1',
+    tool: 'dso',
     srcs: [
       'https://www.gamefaqs.com/3ds/997806-shin-megami-tensei-devil-survivor-overclocked/faqs/69601',
       'https://www.gamefaqs.com/ds/954869-shin-megami-tensei-devil-survivor/faqs/56943'
@@ -89,7 +89,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
   },
   {
     game: 'Devil Survivor 2 Record Breaker',
-    tool: 'desu2',
+    tool: 'ds2br',
     srcs: [
       'http://spwiki.net/ds2br/',
       'http://i40.tinypic.com/f2j6mo.png'
