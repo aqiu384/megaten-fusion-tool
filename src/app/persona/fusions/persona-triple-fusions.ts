@@ -62,6 +62,7 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, normChart: 
             if (
               name2 !== name1 &&
               name2 !== nameT1 &&
+              (raceN1 !== raceN2 || lvlN1 < lvlN2) &&
               (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && RaceOrder[raceT1] < RaceOrder[raceN2]))
             ) {
               const binN2 = findBin(lvlN2, binN2s);

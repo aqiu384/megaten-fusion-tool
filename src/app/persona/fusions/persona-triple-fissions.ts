@@ -53,7 +53,11 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, normChart: Fu
 
     for (const raceT2 of raceT2s) {
       for (const [raceN1, raceN2s] of Object.entries(normChart.getRaceFissions(raceT2))) {
-        fissionT1N1N2s[raceT1][raceN1] = raceN2s.slice();
+        if (!fissionT1N1N2s[raceT1][raceN1]) {
+          fissionT1N1N2s[raceT1][raceN1] = [];
+        }
+
+        fissionT1N1N2s[raceT1][raceN1] = fissionT1N1N2s[raceT1][raceN1].concat(raceN2s);
       }
     }
 
@@ -97,9 +101,10 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, normChart: Fu
                     name3 !== name2 &&
                     name3 !== name1 &&
                     name3 !== nameR &&
+                    (raceN1 !== raceN2 || lvlN1 < lvlN2) &&
                     (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && RaceOrder[raceT1] < RaceOrder[raceN2]))
                   ) {
-                    if (minLvlN2 < lvlN2 && lvlN2 < maxLvlN2) {
+                    if (minLvlN2 < lvlN2 && lvlN2 <= maxLvlN2) {
                       recipes.push({ name1, name2, name3 });
                     }
                   }
