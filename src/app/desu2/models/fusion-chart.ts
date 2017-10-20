@@ -33,7 +33,6 @@ export class FusionChart extends SmtFusionChart {
         const raceR = row[j - i];
 
         chart[raceA][raceB] = raceR;
-        chart[raceB][raceA] = raceR;
       }
     }
 

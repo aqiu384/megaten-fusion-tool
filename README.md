@@ -17,11 +17,11 @@ Fusion tool framework for Megami Tensei games.
 
 * [Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3)
     * Includes cursed fusion settings
-* [Shin Megami Tensei III: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
+* [Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
     * Includes Laplace and race converter subapp settings
 * Shin Megami Tensei: Strange Journey Redux (TBA)
 * [Shin Megami Tensei IV](https://aqiu384.github.io/megaten-fusion-tool/smt4)
-* [Shin Megami Tensei IV: Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
+* [Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
 * [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)
 * [Persona 3 Portable](https://aqiu384.github.io/megaten-fusion-tool/p3p)
 * [Persona 4](https://aqiu384.github.io/megaten-fusion-tool/p4)
