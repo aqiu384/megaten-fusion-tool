@@ -21,13 +21,6 @@
 .smt4f div.element-icon.passive { background-image: url('/assets/images/smtsj/pas.png'); }
 .smt4f div.element-icon.other { background-image: url('/assets/images/smtsj/spe.png'); }
 
-.smt4f td.resists.wk { color: red; }
-.smt4f td.resists.no { color: transparent; }
-.smt4f td.resists.rs { color: lightseagreen; }
-.smt4f td.resists.nu { color: lightgray; }
-.smt4f td.resists.rp { color: cyan; }
-.smt4f td.resists.ab { color: lime; }
-
 .smt4f td.affinity-9 { color: red; }
 .smt4f td.affinity-8 { color: red; }
 .smt4f td.affinity-7 { color: orangered; }
@@ -46,14 +39,6 @@
 .smt4f td.affinity6 { color: mediumseagreen; }
 .smt4f td.affinity7 { color: seagreen; }
 .smt4f td.affinity8 { color: forestgreen; }
-
-.smt4f tr.special td {
-  background-color: darkgreen;
-}
-
-.smt4f tr.exception td, .smt4f tr.unique td {
-  background-color: maroon;
-}
 
 .smt4f thead th, .smt4f tfoot th {
   color: black;

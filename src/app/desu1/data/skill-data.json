@@ -20,12 +20,12 @@
     "prereq": "Vi12 Ag10"
   },
   "Agi": {
-    "cost": 400,
+    "cost": 1004,
     "effect": "Inflicts light Fire damage on one enemy",
     "element": "fire"
   },
   "Agidyne": {
-    "cost": 1300,
+    "cost": 1013,
     "effect": "Inflicts heavy Fire damage on one enemy",
     "element": "fire",
     "prereq": "Ma17"
@@ -36,7 +36,7 @@
     "prereq": "St11 Ma12"
   },
   "Amrita": {
-    "cost": 900,
+    "cost": 1009,
     "effect": "Cures all ailments on all team members",
     "element": "recovery",
     "prereq": "Ma6"
@@ -103,49 +103,49 @@
     "prereq": "St14 Ag16"
   },
   "Ban Curse": {
-    "cost": 600,
+    "cost": 1006,
     "effect": "Cancels the first mystic attack during battle",
     "element": "auto",
     "prereq": "Ma11"
   },
   "Ban Elec": {
-    "cost": 800,
+    "cost": 1008,
     "effect": "Cancels the first electric attack during battle",
     "element": "auto",
     "prereq": "Ma9 Ag9"
   },
   "Ban Fire": {
-    "cost": 800,
+    "cost": 1008,
     "effect": "Cancels the first fire attack during battle",
     "element": "auto",
     "prereq": "St8 Ma8"
   },
   "Ban Force": {
-    "cost": 800,
+    "cost": 1008,
     "effect": "Cancels the first force attack during battle",
     "element": "auto",
     "prereq": "Vi8 Ag8"
   },
   "Ban Ice": {
-    "cost": 800,
+    "cost": 1008,
     "effect": "Cancels the first ice attack during battle",
     "element": "auto",
     "prereq": "Ma9 Vi9"
   },
   "Ban Phys": {
-    "cost": 1500,
+    "cost": 1015,
     "effect": "Cancels the first physical attack during battle",
     "element": "auto",
     "prereq": "St14 Vi14"
   },
   "Barrier": {
-    "cost": 1600,
+    "cost": 1016,
     "effect": "Casts Makarakarn at the start of the battle",
     "element": "auto",
     "prereq": "Ma15 Ag14"
   },
   "Battle Aura": {
-    "cost": 1000,
+    "cost": 1010,
     "effect": "Nullifies damage lower than 50 (including Almighty damage)",
     "element": "auto",
     "prereq": "Ma9 Vi9"
@@ -157,7 +157,7 @@
     "prereq": "St10 Ag9"
   },
   "Blitzkrieg": {
-    "cost": 400,
+    "cost": 1004,
     "effect": "Offense +25% during battle",
     "element": "auto",
     "prereq": "St8 Ma9"
@@ -169,12 +169,12 @@
     "prereq": "St18"
   },
   "Bufu": {
-    "cost": 400,
+    "cost": 1004,
     "effect": "Inflicts light Ice damage on one enemy",
     "element": "ice"
   },
   "Bufudyne": {
-    "cost": 1300,
+    "cost": 1013,
     "effect": "Inflicts heavy Ice damage on one enemy",
     "element": "ice",
     "prereq": "Ma17"
@@ -197,14 +197,14 @@
     "prereq": "Ma13"
   },
   "Cursed Dance": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Inflicts Curse damage to random targets equal to 1/4 of the target's current HP. Hits 2-5 times, max 3 times on one enemy",
     "element": "curse",
     "newoc": true,
     "prereq": "Ma10 Ag8"
   },
   "Death Call": {
-    "cost": 2600,
+    "cost": 1026,
     "effect": "Instantly kills all enemies suffering from Mute or Paralyze ailment",
     "element": "curse",
     "prereq": "Ag18"
@@ -216,36 +216,36 @@
     "prereq": "St16"
   },
   "Debilitate": {
-    "cost": 1200,
+    "cost": 1012,
     "effect": "Enemy accuracy, evasion, and defense -25%",
     "element": "auto",
     "newoc": true,
     "prereq": "Ag14"
   },
   "Desperation": {
-    "cost": 100,
+    "cost": 1001,
     "effect": "Kills self to inflict Almighty damage to all enemies. The lower the user's HP, the more damage the attack will inflict",
     "element": "almighty"
   },
   "Dia": {
-    "cost": 800,
+    "cost": 1008,
     "effect": "Restores some HP to one team member",
     "element": "recovery"
   },
   "Diajama": {
-    "cost": 1000,
+    "cost": 1010,
     "effect": "Moderate chance of inflicting Curse ailment to one enemy",
     "element": "curse",
     "prereq": "Ma9 Ag12"
   },
   "Diarahan": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Restores all HP to one team member",
     "element": "recovery",
     "prereq": "Ma14"
   },
   "Drain": {
-    "cost": 200,
+    "cost": 1002,
     "effect": "Steals HP and MP from one enemy",
     "element": "almighty",
     "prereq": "Ma10"
@@ -256,7 +256,7 @@
     "prereq": "St14 Ag13"
   },
   "Dream Feast": {
-    "cost": 300,
+    "cost": 1003,
     "effect": "Steals a large amount of MP from one enemy",
     "element": "almighty",
     "newoc": true,
@@ -268,7 +268,7 @@
     "prereq": "Ag15"
   },
   "Dual Shadow+": {
-    "cost": 2200,
+    "cost": 1022,
     "effect": "Team members gain Dual Shadow",
     "element": "auto",
     "newoc": true,
@@ -285,7 +285,7 @@
     "prereq": "Ma7 Ag7"
   },
   "Elec Dance": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Inflicts moderate Electric damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
     "element": "elec",
     "prereq": "Ma8 Ag6"
@@ -340,7 +340,7 @@
     "prereq": "St7 Ma7"
   },
   "Fire Dance": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Inflicts moderate Fire damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
     "element": "fire",
     "prereq": "Ma8 Ag6"
@@ -366,7 +366,7 @@
     "prereq": "Vi7 Ag7"
   },
   "Force Dance": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Inflicts moderate Force damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
     "element": "force",
     "prereq": "Ma8 Ag6"
@@ -382,25 +382,25 @@
     "prereq": "Vi14 Ag14"
   },
   "Fortify": {
-    "cost": 500,
+    "cost": 1005,
     "effect": "Defense +25% during battle",
     "element": "auto",
     "prereq": "Ma7 Vi8"
   },
   "Full Might": {
-    "cost": 1000,
+    "cost": 1010,
     "effect": "Casts Might Call at the start of the battle",
     "element": "auto",
     "prereq": "St19"
   },
   "Gigajama": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "High chance of inflicting Seal ailment to one enemy",
     "element": "almighty",
     "prereq": "Ma9 Ag13"
   },
   "Grace": {
-    "cost": 2500,
+    "cost": 1025,
     "effect": "Casts Prayer at the start of the battle if any team members are injured",
     "element": "auto",
     "prereq": "Ma19"
@@ -418,7 +418,7 @@
     "prereq": "Vi16 Ag13"
   },
   "Healing": {
-    "cost": 1200,
+    "cost": 1012,
     "effect": "Casts Media at the start of the battle if any team members are injured",
     "element": "auto",
     "prereq": "Ma9 Vi9"
@@ -439,7 +439,7 @@
     "element": "passive"
   },
   "Holy Dance": {
-    "cost": 4500,
+    "cost": 1045,
     "effect": "Inflicts moderate Almighty damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
     "element": "almighty",
     "prereq": "St8 Ma9"
@@ -452,7 +452,7 @@
     "prereq": "St22"
   },
   "Hustle": {
-    "cost": 300,
+    "cost": 1003,
     "effect": "Accuracy and evasion +25% during battle",
     "element": "auto",
     "prereq": "Ag8"
@@ -468,7 +468,7 @@
     "prereq": "Ma7 Vi7"
   },
   "Ice Dance": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Inflicts moderate Ice damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
     "element": "ice",
     "prereq": "Ma8 Ag6"
@@ -484,7 +484,7 @@
     "prereq": "Ma14 Vi14"
   },
   "Judgement": {
-    "cost": 3500,
+    "cost": 1035,
     "effect": "Halves current HP of all enemies",
     "element": "curse",
     "prereq": "Ma16 Vi14"
@@ -519,13 +519,13 @@
     "prereq": "St7 Vi7"
   },
   "Mabufu": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Inflicts light Ice damage on all enemies",
     "element": "ice",
     "prereq": "Ma9 Ag8"
   },
   "Mabufudyne": {
-    "cost": 4200,
+    "cost": 1042,
     "effect": "Inflicts heavy Ice damage on all enemies",
     "element": "ice",
     "prereq": "Ma15 Ag14"
@@ -536,19 +536,19 @@
     "prereq": "Ma13"
   },
   "Magic Yin": {
-    "cost": 1600,
+    "cost": 1016,
     "effect": "Damage from MP skills +50%, MP costs doubled in battle, physical attacks cannot be used",
     "element": "auto",
     "prereq": "Ma18"
   },
   "Makajamaon": {
-    "cost": 2500,
+    "cost": 1025,
     "effect": "High chance of inflicting Mute ailment to all enemies",
     "element": "curse",
     "prereq": "Ma14"
   },
   "Makarakarn": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Reflects one non-Almighty magic attack for each team member",
     "element": "support",
     "prereq": "Ma12 Ag11"
@@ -569,73 +569,73 @@
     "prereq": "Ma7 Ag7"
   },
   "Maragi": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Inflicts light Fire damage on all enemies",
     "element": "fire",
     "prereq": "Ma9 Ag8"
   },
   "Maragidyne": {
-    "cost": 4200,
+    "cost": 1042,
     "effect": "Inflicts heavy Fire damage on all enemies",
     "element": "fire",
     "prereq": "Ma15 Ag14"
   },
   "Marksman": {
-    "cost": 200,
+    "cost": 1002,
     "effect": "Enemy evasion is reduced in battle",
     "element": "auto",
     "prereq": "Ag7"
   },
   "Mazan": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Inflicts light Force damage on all enemies",
     "element": "force",
     "prereq": "Ma9 Ag8"
   },
   "Mazandyne": {
-    "cost": 4200,
+    "cost": 1042,
     "effect": "Inflicts heavy Force damage on all enemies",
     "element": "force",
     "prereq": "Ma15 Ag14"
   },
   "Mazio": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Inflicts light Electric damage on all enemies",
     "element": "elec",
     "prereq": "Ma9 Ag8"
   },
   "Maziodyne": {
-    "cost": 4200,
+    "cost": 1042,
     "effect": "Inflicts heavy Electric damage on all enemies",
     "element": "elec",
     "prereq": "Ma15 Ag14"
   },
   "Media": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Restores some HP to all team members",
     "element": "recovery",
     "prereq": "Ma11"
   },
   "Mediarahan": {
-    "cost": 4500,
+    "cost": 1045,
     "effect": "Restores all HP to all team members",
     "element": "recovery",
     "prereq": "Ma17"
   },
   "Megido": {
-    "cost": 5000,
+    "cost": 1050,
     "effect": "Inflicts moderate Almighty damage on all enemies",
     "element": "almighty",
     "prereq": "St9 Ma16"
   },
   "Megidolaon": {
-    "cost": 7500,
+    "cost": 1075,
     "effect": "Inflicts heavy Almighty damage on all enemies",
     "element": "almighty",
     "prereq": "St9 Ma18"
   },
   "Might Call": {
-    "cost": 800,
+    "cost": 1008,
     "effect": "Guarantees a critical hit for the next Physical attack done by each team member",
     "element": "support",
     "prereq": "St13"
@@ -661,7 +661,7 @@
     "prereq": "Ag13"
   },
   "Mute Eyes": {
-    "cost": 1500,
+    "cost": 1015,
     "effect": "Moderate chance of inflicting Mute ailment to all enemies",
     "element": "curse",
     "prereq": "Ma5 Ag7"
@@ -701,13 +701,13 @@
     "element": "passive"
   },
   "Paral Eyes": {
-    "cost": 1500,
+    "cost": 1015,
     "effect": "Moderate chance of inflicting Paralyze ailment to all enemies",
     "element": "curse",
     "prereq": "Ma7 Ag9"
   },
   "Petra Eyes": {
-    "cost": 2200,
+    "cost": 1022,
     "effect": "Moderate chance of inflicting Petrify ailment to all enemies",
     "element": "curse",
     "prereq": "Ma9 Ag10"
@@ -738,7 +738,7 @@
     "prereq": "St14"
   },
   "Pierce+": {
-    "cost": 600,
+    "cost": 1006,
     "effect": "Team members gain Pierce",
     "element": "auto",
     "newoc": true,
@@ -758,7 +758,7 @@
     "prereq": "St9 Vi9"
   },
   "Prayer": {
-    "cost": 5500,
+    "cost": 1055,
     "effect": "Restores all HP and cures all ailments on all team members",
     "element": "recovery",
     "prereq": "Ma20"
@@ -774,19 +774,19 @@
     "prereq": "St7"
   },
   "Rage Soul": {
-    "cost": 600,
+    "cost": 1006,
     "effect": "Doubles physical damage, but only basic attacks can be used",
     "element": "auto",
     "prereq": "Vi16"
   },
   "Recarm": {
-    "cost": 2000,
+    "cost": 1020,
     "effect": "Revives one fallen ally with low HP",
     "element": "recovery",
     "prereq": "Ma12"
   },
   "Recarmloss": {
-    "cost": 3000,
+    "cost": 1030,
     "effect": "Revives fallen team members, fully restores team's HP, and cures all ailments, but reduces caster's HP to 1",
     "element": "recovery",
     "newoc": true,
@@ -798,32 +798,32 @@
     "prereq": "St10 Ag10"
   },
   "Revive": {
-    "cost": 2500,
+    "cost": 1025,
     "effect": "Casts Recarm at the start of the battle if there are any fallen team members",
     "element": "auto",
     "prereq": "Ma17"
   },
   "Samarecarm": {
-    "cost": 3500,
+    "cost": 1035,
     "effect": "Revives one fallen ally with full HP",
     "element": "recovery",
     "prereq": "Ma19"
   },
   "Shield All": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Blocks one non-Almighty attack for each team member",
     "element": "support",
     "prereq": "Ma14 Vi14"
   },
   "Shield All+": {
-    "cost": 1800,
+    "cost": 1018,
     "effect": "Casts Shield All at the start of the battle",
     "element": "auto",
     "newoc": true,
     "prereq": "Ma20"
   },
   "Strengthen": {
-    "cost": 1000,
+    "cost": 1010,
     "effect": "Negates all elemental weaknesses within the team",
     "element": "auto",
     "newoc": true,
@@ -835,13 +835,13 @@
     "prereq": "Ag4"
   },
   "Taunt": {
-    "cost": 1000,
+    "cost": 1010,
     "effect": "Enemies will target user, but user will receive less damage",
     "element": "support",
     "prereq": "Vi7"
   },
   "Tetrakarn": {
-    "cost": 2300,
+    "cost": 1023,
     "effect": "Reflects one Physical attack for each team member",
     "element": "support",
     "prereq": "Ma11 Vi12"
@@ -857,7 +857,7 @@
     "newoc": true
   },
   "Wall": {
-    "cost": 1500,
+    "cost": 1015,
     "effect": "Casts Tetrakarn at the start of the battle",
     "element": "auto",
     "prereq": "Ma14 Vi15"
@@ -873,23 +873,23 @@
     "prereq": "St11 Ma8"
   },
   "Zan": {
-    "cost": 400,
+    "cost": 1004,
     "effect": "Inflicts light Force damage on one enemy",
     "element": "force"
   },
   "Zandyne": {
-    "cost": 1300,
+    "cost": 1013,
     "effect": "Inflicts heavy Force damage on one enemy",
     "element": "force",
     "prereq": "Ma17"
   },
   "Zio": {
-    "cost": 400,
+    "cost": 1004,
     "effect": "Inflicts light Electric damage on one enemy",
     "element": "elec"
   },
   "Ziodyne": {
-    "cost": 1300,
+    "cost": 1013,
     "effect": "Inflicts heavy Electric damage on one enemy",
     "element": "elec",
     "prereq": "Ma17"

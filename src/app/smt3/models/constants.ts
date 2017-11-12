@@ -49,11 +49,11 @@ export const ResistanceElements = [
   'ice',
   'ele',
   'for',
-  'cur',
-  'ner',
-  'min',
   'exp',
-  'dea'
+  'dea',
+  'min',
+  'ner',
+  'cur'
 ];
 
 export const SpecialResistances = {
@@ -72,12 +72,21 @@ export const SkillElements = ResistanceElements.concat(
 );
 
 export const BaseStats = [
-  'hp', 'mp', 'st', 'ma', 'vi', 'ag', 'lu'
+  'HP', 'MP', 'St', 'Ma', 'Vi', 'Ag', 'Lu'
 ];
 
 export const ResistanceLevels = [
   'wk', 'no', 'rs', 'nu', 'rp', 'dr'
 ];
+
+export const ResistCodes = {
+  wk: 1125,
+  no: 100,
+  rs: 50,
+  nu: 0,
+  rp: -100,
+  dr: -1100
+};
 
 export const ElementDemons = [
   'Erthys',

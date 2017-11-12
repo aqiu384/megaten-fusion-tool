@@ -51,7 +51,7 @@ export class DemonListComponent<TDemon extends Demon> extends SortedTableCompone
 
     if (this.resistHeaders) {
       this.sortFuns = this.sortFuns.concat(
-        this.resistHeaders.map((elem, index) => (a, b) => ResistOrder[b.resists[index]] - ResistOrder[a.resists[index]])
+        this.resistHeaders.map((elem, index) => (a, b) => a.resists[index] - b.resists[index])
       );
     }
 

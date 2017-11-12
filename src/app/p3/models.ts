@@ -4,7 +4,7 @@ export interface Demon {
   lvl: number;
   inherit: string;
   stats: number[];
-  resists: string[];
+  resists: number[];
   skills: { [skill: string]: number; };
   fusion: string;
 }

@@ -37,8 +37,8 @@ export const ResistanceElements = [
   'ice',
   'elec',
   'wind',
-  'nuke',
   'psy',
+  'nuke',
   'bless',
   'curse'
 ];
@@ -63,12 +63,21 @@ export const ElementDemons = [
 ];
 
 export const BaseStats = [
-  'st', 'ma', 'en', 'ag', 'lu'
+  'St', 'Ma', 'En', 'Ag', 'Lu'
 ];
 
 export const ResistanceLevels = [
   'wk', 'no', 'rs', 'nu', 'rp', 'ab'
 ];
+
+export const ResistCodes = {
+  w: 1125,
+  '-': 100,
+  s: 50,
+  n: 0,
+  r: -100,
+  d: -1100
+};
 
 export const RaceOrder = getEnumOrder(Races);
 export const ElementOrder = getEnumOrder(SkillElements);

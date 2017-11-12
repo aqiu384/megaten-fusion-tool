@@ -20,34 +20,19 @@
 .p4 div.element-icon.special { background-image: url('/assets/images/p5/support.png'); }
 .p4 div.element-icon.passive { background-image: url('/assets/images/p5/passive.png'); }
 
-.p4 td.resists.wk { color: red; }
-.p4 td.resists.no { color: transparent; }
-.p4 td.resists.rs { color: lightseagreen; }
-.p4 td.resists.nu { color: lightgray; }
-.p4 td.resists.rp { color: cyan; }
-.p4 td.resists.ab { color: lime; }
-
-.p4 tr.special td {
-  background-color: darkgreen;
-}
-
-.p4 tr.exception td, .p4 tr.unique td {
-  background-color: maroon;
-}
-
 .p4 th, .p4 th {
   color: black;
   background-color: #FFE600;
 }
 
 .p4 th.sortable:hover {
-  background-color: rgb(255, 251, 214);
+  background-color: #fffbd6;
 }
 
 .p4 th.nav {
   color: white;
   cursor: pointer;
-  background-color: rgb(39, 35, 0);
+  background-color: #272300;
 }
 
 .p4 th.nav.active, .p4 th.nav:hover {

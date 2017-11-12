@@ -1,4 +1,4 @@
-import { Races, ResistanceElements, BaseStats, ElementOrder } from './constants';
+import { Races, ResistanceElements, BaseStats, ElementOrder, ResistCodes } from './constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -36,8 +36,8 @@ export class Compendium implements ICompendium {
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({}, json, {
         name,
-        stats: BaseStats.map(val => json.stats[val]),
-        resists: ResistanceElements.map(val => json.resists[val] || 'no'),
+        stats:   json.stats,
+        resists: json.resists.split('').map(char => ResistCodes[char]),
         fusion: 'normal'
       });
 

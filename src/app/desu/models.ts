@@ -3,7 +3,7 @@ export interface Demon {
   race: string;
   lvl: number;
   stats: number[];
-  resists: string[];
+  resists: number[];
   command: { [skill: string]: number; };
   passive: { [skill: string]: number; };
   fusion: string;

@@ -2,7 +2,7 @@ import { Demon as BaseDemon, Skill as BaseSkill } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
   align: string;
-  inherits: string[];
+  inherits: boolean[];
   ailments?: string[];
   skills: { [skill: string]: number; };
   source: { [skill: string]: number; };

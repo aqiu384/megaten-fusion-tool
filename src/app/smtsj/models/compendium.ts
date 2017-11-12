@@ -1,4 +1,4 @@
-import { Races, ResistanceElements, SkillElements, BaseStats, Ailments, SkillElementOrder } from './constants';
+import { Races, ResistanceElements, SkillElements, BaseStats, Ailments, SkillElementOrder, ResistCodes } from './constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -39,9 +39,10 @@ export class Compendium implements ICompendium {
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
-        stats: BaseStats.map(val => json.stats[val]),
-        resists: ResistanceElements.map(val => json.resists[val] || 'no'),
-        ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 'no'),
+        stats: json.stats,
+        resists: json.resists.split('').map(char => ResistCodes[char]),
+        inherits: json.inherits.split('').map(char => char === 'o'),
+        ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 100),
         skills: json.skills.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
         source: json.source.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
       });
@@ -58,8 +59,6 @@ export class Compendium implements ICompendium {
         learnedBy: [],
         dsource: []
       }, json);
-
-      skills[name].cost *= 100;
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {

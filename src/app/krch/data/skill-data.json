@@ -1,0 +1,688 @@
+{
+  "Agi": {
+    "cost": 1003,
+    "effect": "Light fire damage to one target.",
+    "elem": "fire",
+    "target": "Single target, Straight line"
+  },
+  "Agidyne": {
+    "cost": 1007,
+    "effect": "Heavy fire damage to a near target.",
+    "elem": "fire",
+    "target": "Single target, Straight line"
+  },
+  "Allure": {
+    "effect": "Gathers Items",
+    "elem": "investigate"
+  },
+  "Astral Burst": {
+    "cost": 2200,
+    "effect": "Inflicts super almighty damage to all enemies.",
+    "elem": "almighty",
+    "target": "All enemies"
+  },
+  "Bane Shot": {
+    "cost": 2100,
+    "effect": "Super gun damage to target, will bind if weak to Death.",
+    "elem": "death",
+    "target": "Single target, Straight Line"
+  },
+  "Berserker": {
+    "cost": 1004,
+    "effect": "Light physical damage + rage to a nearby enemy.",
+    "elem": "phys",
+    "target": "Single target, Near"
+  },
+  "Blast Shot": {
+    "cost": 2100,
+    "effect": "Super gun damage to target, will impede if weak to Force.",
+    "elem": "force",
+    "target": "Single target, Straight line"
+  },
+  "Blaze": {
+    "cost": 1007,
+    "effect": "Moderate fire damage to all enemies hit.",
+    "elem": "fire",
+    "target": "3-way spread, Straight lines"
+  },
+  "Bolt Storm": {
+    "cost": 1005,
+    "effect": "Light electric damage to target, Sluggish for a short time",
+    "elem": "elec",
+    "target": "Single target, Tracking"
+  },
+  "Bufu": {
+    "cost": 1003,
+    "effect": "Light ice damage to one target.",
+    "elem": "ice",
+    "target": "Single target, Straight line"
+  },
+  "Bufudyne": {
+    "cost": 1007,
+    "effect": "Heavy ice damage to target, splash damage to enemies nearby.",
+    "elem": "ice",
+    "target": "Single target, Straight line"
+  },
+  "Cocytus": {
+    "cost": 1005,
+    "effect": "Light ice damage to target, Sluggish for a short time",
+    "elem": "ice",
+    "target": "Projectile, Tracking"
+  },
+  "Combo": {
+    "cost": 1003,
+    "effect": "Repeated attacks to nearby enemy for light physical damage.",
+    "elem": "phys",
+    "target": "Single target"
+  },
+  "Cool Down": {
+    "effect": "Calms people down, freezes water.",
+    "elem": "investigate"
+  },
+  "Cross Slash": {
+    "cost": 2120,
+    "effect": "Inflicts super physical damage to all enemies on four straight lines from where power is used.",
+    "elem": "phys",
+    "target": "Special"
+  },
+  "Curse": {
+    "effect": "Chance of returning damage to attacker.",
+    "elem": "passive"
+  },
+  "Demonstrate": {
+    "effect": "Random effects",
+    "elem": "investigate"
+  },
+  "Devotion": {
+    "effect": "Demon gains loyalty at almost twice the normal rate.",
+    "elem": "passive"
+  },
+  "Dia": {
+    "cost": 1003,
+    "effect": "Recovers a small amount of HP.",
+    "elem": "recovery",
+    "target": "One ally"
+  },
+  "Dia Aura": {
+    "cost": 1005,
+    "effect": "Slowly recover health.",
+    "elem": "recovery",
+    "target": "All allies"
+  },
+  "Diarahan": {
+    "cost": 1008,
+    "effect": "Recovers all HP.",
+    "elem": "recovery",
+    "target": "One ally"
+  },
+  "Diarama": {
+    "cost": 1005,
+    "effect": "Recovers a moderate amount of HP.",
+    "elem": "recovery",
+    "target": "One ally"
+  },
+  "Dormina": {
+    "cost": 1005,
+    "effect": "Light mind damage + sleep to all enemies in radius.",
+    "elem": "mind",
+    "target": "Medium radius"
+  },
+  "Elec Boost": {
+    "effect": "Grants a boost to electric type damage.",
+    "elem": "passive"
+  },
+  "Elec Drain": {
+    "cost": 2100,
+    "effect": "Raidou and demon will drain electric attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Elec Resist": {
+    "effect": "Reduces electric damage taken by half. Cancels Weak vs. Elec.",
+    "elem": "passive"
+  },
+  "Endure": {
+    "effect": "High chance to survive fatal attacks with 1 HP remaining, once per battle.",
+    "elem": "passive"
+  },
+  "Fast Escape": {
+    "effect": "Reduces escape time",
+    "elem": "passive"
+  },
+  "Fiery Spiral": {
+    "cost": 2120,
+    "effect": "Super physical damage to target, will burn if weak to Fire.",
+    "elem": "fire",
+    "target": "Radius around Raidou"
+  },
+  "Fire Boost": {
+    "effect": "Grants a boost to fire type damage.",
+    "elem": "passive"
+  },
+  "Fire Breath": {
+    "cost": 2180,
+    "effect": "Heavy fire damage to all in the straight line.",
+    "elem": "fire",
+    "target": "All targets, Straight line"
+  },
+  "Fire Drain": {
+    "cost": 2100,
+    "effect": "Raidou and demon will drain fire attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Fire Resist": {
+    "effect": "Reduces fire damage taken by half. Cancels Weak vs. Fire.",
+    "elem": "passive"
+  },
+  "Fireball": {
+    "cost": 2150,
+    "effect": "Super fire damage to all enemies in straight line.",
+    "elem": "fire",
+    "target": "All targets, Straight line"
+  },
+  "First Aid": {
+    "effect": "The demon and Raidou will recover all HP after the fight ends.",
+    "elem": "passive"
+  },
+  "Flame Shot": {
+    "cost": 2100,
+    "effect": "Super gun damage to target, will burn if weak to Fire.",
+    "elem": "fire",
+    "target": "Single target, Straight line"
+  },
+  "Flurry": {
+    "cost": 1007,
+    "effect": "Moderate force damage to all enemies hit.",
+    "elem": "force",
+    "target": "3-Way spread, Straight lines"
+  },
+  "Fly": {
+    "effect": "Allows a demon to access unreachable areas",
+    "elem": "investigate"
+  },
+  "Force Boost": {
+    "effect": "Grants a boost to force type damage.",
+    "elem": "passive"
+  },
+  "Force Drain": {
+    "cost": 2100,
+    "effect": "Raidou and demon will drain force attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Force Resist": {
+    "effect": "Reduces force damage taken by half. Cancels Weak vs. Force.",
+    "elem": "passive"
+  },
+  "Freeze Shot": {
+    "cost": 2100,
+    "effect": "Super gun damage to target, will freeze if weak to ice.",
+    "elem": "ice",
+    "target": "Single target, Straight line"
+  },
+  "Frenzy": {
+    "cost": 1004,
+    "effect": "Causes light physical damage to all enemies around demon.",
+    "elem": "phys",
+    "target": "Small radius"
+  },
+  "Frigid Spin": {
+    "cost": 2120,
+    "effect": "Super physical damage to target, will freeze if weak to ice.",
+    "elem": "ice",
+    "target": "Radius around Raidou"
+  },
+  "Frostbite": {
+    "cost": 1007,
+    "effect": "Moderate ice damage to all enemies hit.",
+    "elem": "ice",
+    "target": "3-way spread, Straight lines"
+  },
+  "Frozen Lance": {
+    "cost": 2150,
+    "effect": "Super ice damage to all enemies in straight line.",
+    "elem": "ice",
+    "target": "All targets, Straight line"
+  },
+  "Gale Slash": {
+    "cost": 2120,
+    "effect": "Super physical damage to target, will impede if weak to Force.",
+    "elem": "force",
+    "target": "Radius around Raidou"
+  },
+  "Glacial Blast": {
+    "cost": 2180,
+    "effect": "Heavy ice damage to all in the straight line.",
+    "elem": "ice",
+    "target": "All targets, Straight line"
+  },
+  "Heal Boost": {
+    "effect": "Demons recovery type spells are 50% more effective.",
+    "elem": "passive"
+  },
+  "Hellfire": {
+    "cost": 1005,
+    "effect": "Light fire damage to target, Sluggish for a short time",
+    "elem": "fire",
+    "target": "Projectile, Tracking"
+  },
+  "Hero's Might": {
+    "effect": "Moderate chance for the demon to double attack power for the current battle.",
+    "elem": "passive"
+  },
+  "Hex": {
+    "effect": "High chance to return half the damage taken to the attacker.",
+    "elem": "passive"
+  },
+  "Hurricane": {
+    "cost": 2150,
+    "effect": "Super force damage to all enemies in straight line.",
+    "elem": "force",
+    "target": "All targets, Straight line"
+  },
+  "Ice Boost": {
+    "effect": "Grants a boost to ice type damage.",
+    "elem": "passive"
+  },
+  "Ice Drain": {
+    "cost": 2100,
+    "effect": "Raidou and demon will drain ice attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Ice Resist": {
+    "effect": "Reduces ice damage taken by half. Cancels Weak vs. Ice.",
+    "elem": "passive"
+  },
+  "Ignite": {
+    "effect": "Makes people talk, sets some objects on fire.",
+    "elem": "investigate"
+  },
+  "Inspect": {
+    "effect": "Uncovers hidden objects.",
+    "elem": "investigate"
+  },
+  "Intimidate": {
+    "effect": "Lowers the encounter rate",
+    "elem": "investigate"
+  },
+  "Item Find": {
+    "effect": "Demon will find items after battle more often.",
+    "elem": "passive"
+  },
+  "Life Bonus": {
+    "effect": "Will increase the demons maximum HP by 10%",
+    "elem": "passive"
+  },
+  "Life Gain": {
+    "effect": "Will increase the demons maximum HP by 20%",
+    "elem": "passive"
+  },
+  "Life Surge": {
+    "effect": "Will increase the demons maximum HP by 30%",
+    "elem": "passive"
+  },
+  "Loose Change": {
+    "effect": "Grants Yen",
+    "elem": "investigate"
+  },
+  "Mabufu": {
+    "cost": 1004,
+    "effect": "Moderate ice damage to all in radius.",
+    "elem": "ice",
+    "target": "Small radius"
+  },
+  "Mabufudyne": {
+    "cost": 1008,
+    "effect": "Heavy ice damage to all in radius.",
+    "elem": "ice",
+    "target": "Medium radius"
+  },
+  "Mage's Craft": {
+    "effect": "Moderate chance for the demon to double magic power for the current battle.",
+    "elem": "passive"
+  },
+  "Makajam": {
+    "cost": 1004,
+    "effect": "Light mind damage + mute to target.",
+    "elem": "mind",
+    "target": "Projectile, Straight line"
+  },
+  "Makakaja": {
+    "cost": 1006,
+    "effect": "Lowers magical damage until the end of the battle.",
+    "elem": "support",
+    "target": "One ally"
+  },
+  "Makara Aura": {
+    "cost": 1008,
+    "effect": "Raises all allies magical defense until the end of the battle.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Mamudo": {
+    "cost": 1006,
+    "effect": "HP of all enemies near demon are halved.",
+    "elem": "death",
+    "target": "Small radius"
+  },
+  "Mana Bonus": {
+    "effect": "Will increase the demons maximum MP by 10%",
+    "elem": "passive"
+  },
+  "Mana Gain": {
+    "effect": "Will increase the demons maximum MP by 20%",
+    "elem": "passive"
+  },
+  "Mana Surge": {
+    "effect": "Will increase the demons maximum MP by 30%",
+    "elem": "passive"
+  },
+  "Maragi": {
+    "cost": 1004,
+    "effect": "Moderate fire damage to all in radius.",
+    "elem": "fire",
+    "target": "Small radius"
+  },
+  "Maragidyne": {
+    "cost": 1008,
+    "effect": "Heavy fire damage to all in radius.",
+    "elem": "fire",
+    "target": "Medium radius"
+  },
+  "Marin Karin": {
+    "cost": 1004,
+    "effect": "Light mind damage + charm to all enemies in radius.",
+    "elem": "mind",
+    "target": "Small radius"
+  },
+  "Mazan": {
+    "cost": 1004,
+    "effect": "Moderate force damage to all in radius.",
+    "elem": "force",
+    "target": "Small radius"
+  },
+  "Mazandyne": {
+    "cost": 1008,
+    "effect": "Heavy force damage to all in radius.",
+    "elem": "force",
+    "target": "Medium radius"
+  },
+  "Mazio": {
+    "cost": 1004,
+    "effect": "Moderate electric damage to all in radius.",
+    "elem": "elec",
+    "target": "Small radius"
+  },
+  "Maziodyne": {
+    "cost": 1008,
+    "effect": "Heavy electric damage to all in radius.",
+    "elem": "elec",
+    "target": "Medium radius"
+  },
+  "Media": {
+    "cost": 1006,
+    "effect": "Raidou and all allies recover a small amount of HP.",
+    "elem": "recovery",
+    "target": "All allies"
+  },
+  "Mighty Blow": {
+    "cost": 1004,
+    "effect": "Moderate physical damage + rage to nearby enemy.",
+    "elem": "phys",
+    "target": "Single target, Near"
+  },
+  "Mind Boost": {
+    "effect": "Improves the chance of status ailments effecting the enemies.",
+    "elem": "passive"
+  },
+  "Money Find": {
+    "effect": "Demon will find extra money after battles.",
+    "elem": "passive"
+  },
+  "Mudo": {
+    "cost": 1003,
+    "effect": "Targets HP is halved.",
+    "elem": "death",
+    "target": "Single target, Straight Line"
+  },
+  "Null Death": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null death attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Null Elec": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null electric attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Null Fire": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null fire attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Null Force": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null force attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Null Ice": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null ice attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Null Mind": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null mind attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Null Phys": {
+    "cost": 2070,
+    "effect": "Raidou and demon will null physical attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Patra": {
+    "cost": 1003,
+    "effect": "Target recovers from all mind-type status ailments.",
+    "elem": "recovery",
+    "target": "One ally"
+  },
+  "Petra": {
+    "cost": 1005,
+    "effect": "Light mind damage + stone to all enemies in line with demon.",
+    "elem": "mind",
+    "target": "All targets, Straight line"
+  },
+  "Phys Drain": {
+    "cost": 2100,
+    "effect": "Raidou and demon will drain physical attacks for the duration.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Phys Resist": {
+    "effect": "Reduces physical damage taken by half. Cancels Weak vs. Physical.",
+    "elem": "passive"
+  },
+  "Provoke": {
+    "effect": "Increases encounter rate",
+    "elem": "investigate"
+  },
+  "Pulinpa": {
+    "cost": 1003,
+    "effect": "Light mind damage + mute to target.",
+    "elem": "mind",
+    "target": "Single target, Straight Line"
+  },
+  "Quick Study": {
+    "effect": "Demon will gain almost double experience after battles.",
+    "elem": "passive"
+  },
+  "Raging Blast": {
+    "cost": 2120,
+    "effect": "Super physical damage to target",
+    "elem": "phys",
+    "target": "Radius around Raidou"
+  },
+  "Rakukaja": {
+    "cost": 1006,
+    "effect": "Lowers damage received until the end of the battle.",
+    "elem": "support",
+    "target": "One ally"
+  },
+  "Read Mind": {
+    "effect": "Reads peoples' minds.",
+    "elem": "investigate"
+  },
+  "Recarm": {
+    "cost": 1008,
+    "effect": "Revives target",
+    "elem": "recovery",
+    "target": "One ally"
+  },
+  "Regenerate": {
+    "effect": "The demon and Raidou recover HP every few seconds in combat.",
+    "elem": "passive"
+  },
+  "Retribution": {
+    "effect": "High chance to deal heavy Almighty damage to enemies in a radius when demon dies.",
+    "elem": "passive"
+  },
+  "Rush": {
+    "cost": 2120,
+    "effect": "Inflicts super physical damage to all enemies in a straight line from the demon, moves demon along the path.",
+    "elem": "phys",
+    "target": "Straight line"
+  },
+  "Samarecarm": {
+    "cost": 1012,
+    "effect": "Revives target with full HP",
+    "elem": "recovery",
+    "target": "One ally"
+  },
+  "Scavenger": {
+    "effect": "Has a chance to obtain items",
+    "elem": "investigate"
+  },
+  "Scout": {
+    "effect": "Search the area for enemies and items",
+    "elem": "investigate"
+  },
+  "Shock Shot": {
+    "cost": 2100,
+    "effect": "Super gun damage to target, will shock if weak to Electric.",
+    "elem": "elec",
+    "target": "Single target, Straight Line"
+  },
+  "Shock Wave": {
+    "cost": 2180,
+    "effect": "Heavy electric damage to all in the straight line.",
+    "elem": "elec",
+    "target": "All targets, Straight line"
+  },
+  "Sneak": {
+    "effect": "Allows a demon to access unreachable areas",
+    "elem": "investigate"
+  },
+  "Spark": {
+    "cost": 1007,
+    "effect": "Moderate electric damage to all enemies hit.",
+    "elem": "elec",
+    "target": "3-Way spread, Straight lines"
+  },
+  "Tarukaja": {
+    "cost": 1006,
+    "effect": "Raises allies physical attack until the end of the battle.",
+    "elem": "support",
+    "target": "One ally"
+  },
+  "Tempest": {
+    "cost": 1005,
+    "effect": "Light force damage to target, Sluggish for a short time",
+    "elem": "force",
+    "target": "Single target, Tracking"
+  },
+  "Tetra Aura": {
+    "cost": 1008,
+    "effect": "Raises all allies physical defense until the end of the battle.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Thunderbolt": {
+    "cost": 2150,
+    "effect": "Super electric damage to all enemies in straight line.",
+    "elem": "elec",
+    "target": "All targets, Straight line"
+  },
+  "Use Force": {
+    "effect": "Moves heavy objects",
+    "elem": "investigate"
+  },
+  "Venomstrike": {
+    "cost": 1004,
+    "effect": "Causes light physical damage + poison to a nearby enemy.",
+    "elem": "phys",
+    "target": "Single target, Near"
+  },
+  "Vile Storm": {
+    "cost": 2120,
+    "effect": "Super physical damage to target, will bind if weak to Death.",
+    "elem": "death",
+    "target": "Radius around Raidou"
+  },
+  "Voltaic Ring": {
+    "cost": 2120,
+    "effect": "Super physical damage to target, will shock if weak to Electric.",
+    "elem": "elec",
+    "target": "Radius around Raidou"
+  },
+  "War Cry": {
+    "cost": 1008,
+    "effect": "Raises all allies attack until the end of the battle.",
+    "elem": "support",
+    "target": "All allies"
+  },
+  "Wind Cutter": {
+    "cost": 2180,
+    "effect": "Heavy force damage to all in the straight line.",
+    "elem": "force",
+    "target": "All targets, Straight line"
+  },
+  "Winged Fury": {
+    "cost": 1004,
+    "effect": "Hits enemy with thrown weapon for light physical damage, chance to knock enemy down.",
+    "elem": "phys",
+    "target": "Single target, Straight line"
+  },
+  "Zan": {
+    "cost": 1003,
+    "effect": "Light force damage to one target.",
+    "elem": "force",
+    "target": "Single target, Straight Line"
+  },
+  "Zandyne": {
+    "cost": 1007,
+    "effect": "Heavy force damage to target, splash damage to enemies nearby.",
+    "elem": "force",
+    "target": "Single target, Straight Line"
+  },
+  "Zio": {
+    "cost": 1003,
+    "effect": "Light electric damage to one target.",
+    "elem": "elec",
+    "target": "Single target, Straight line"
+  },
+  "Ziodyne": {
+    "cost": 1007,
+    "effect": "Heavy electric damage to target, splash damage to enemies nearby.",
+    "elem": "elec",
+    "target": "Single target, Straight line"
+  }
+}

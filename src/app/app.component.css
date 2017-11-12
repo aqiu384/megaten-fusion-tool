@@ -100,3 +100,21 @@ th.nav.active, th.nav:hover {
 th.nav.active a, th.nav:hover a {
   color: black;
 }
+
+/* Resistances */
+td.resists.fr { color: orange; }
+td.resists.wk { color: red; }
+td.resists.no { color: transparent; }
+td.resists.rs { color: lightseagreen; }
+td.resists.nu { color: lightgray; }
+td.resists.rp { color: cyan; }
+td.resists.ab { color: lime; }
+
+/* Special Demon and Skill Rows */
+tbody tr.special td {
+  background-color: darkgreen;
+}
+
+tbody tr.exception td, tbody tr.unique td {
+  background-color: maroon;
+}

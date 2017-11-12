@@ -1,12 +1,12 @@
 export const Ailments = [
-  'sleep',
-  'panic',
+  'bind',
   'charm',
+  'daze',
   'mute',
+  'panic',
   'poison',
   'sick',
-  'bind',
-  'daze'
+  'sleep'
 ];
 
 export const FUSION_SETTINGS_KEY = 'smt4f-fusion-tool-settings';

@@ -26,7 +26,7 @@ export const SkillElements = ResistElements.concat(
   'support',  'navi',    'passive'
 );
 
-export const BaseStats = ['hp', 'mp'];
+export const BaseStats = ['HP', 'MP'];
 
 export const ResistCodes = {
   w: 'wk',

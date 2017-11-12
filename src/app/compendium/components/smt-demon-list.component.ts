@@ -19,7 +19,9 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
     <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
-    <td *ngFor="let resist of data.resists" class="resists {{ resist }}">{{ resist }}</td>
+    <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">
+      {{ resist | reslvlToString }}
+    </td>
     <ng-container *ngIf="hasAffinity">
       <td *ngFor="let affinity of data.affinities" class="affinity{{ affinity }}">
         {{ affinity | affinityToString }}

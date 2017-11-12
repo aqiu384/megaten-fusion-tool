@@ -51,6 +51,7 @@ export class DemonListHeaderComponent extends SortedTableHeaderComponent impleme
   @Input() affinityHeaders: string[] = [];
   statColIndices: { stat: string, index: number }[] = [];
   resistColIndices: { elem: string, index: number }[] = [];
+  reslvlColIndices: { elem: string, index: number }[] = [];
   affinityColIndices: { elem: string, index: number }[] = [];
 
   ngOnInit() {

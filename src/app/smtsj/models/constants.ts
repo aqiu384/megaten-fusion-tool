@@ -108,18 +108,28 @@ export const Ailments = [
   'mut',
   'par',
   'poi',
+  'rag',
   'sle',
   'sto',
   'str'
 ];
 
 export const BaseStats = [
-  'hp', 'mp', 'st', 'ma', 'vi', 'ag', 'lu'
+  'HP', 'MP', 'St', 'Ma', 'Vi', 'Ag', 'Lu'
 ];
 
 export const ResistanceLevels = [
   'wk', 'no', 'st', 'nu', 'rf', 'dr'
 ];
+
+export const ResistCodes = {
+  w: 1125,
+  '-': 100,
+  s: 50,
+  n: 0,
+  r: -100,
+  d: -1100
+};
 
 export const RaceOrder = getEnumOrder(Races);
 export const PrimeOrder = getEnumOrder(PrimeElements);

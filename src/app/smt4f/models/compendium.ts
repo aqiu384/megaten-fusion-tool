@@ -1,4 +1,4 @@
-import { Races, ResistanceElements, AffinityElements, BaseStats, ElementOrder } from '../../smt4/models/constants';
+import { Races, ResistanceElements, AffinityElements, BaseStats, ElementOrder, ResistCodes } from '../../smt4/models/constants';
 import { Ailments } from '../models/constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
@@ -36,10 +36,12 @@ export class Compendium implements ICompendium {
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
-        stats: BaseStats.map(val => json.stats[val]),
-        resists: ResistanceElements.map(val => json.resists[val] || 'no'),
-        ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 'no'),
+        stats: json.stats,
+        resists: json.resists.split('').map(char => ResistCodes[char]),
         affinities: AffinityElements.map(val => json.affinities[val] ? json.affinities[val] : 0),
+        ailments: json.ailments ?
+          json.ailments.split('').map(char => ResistCodes[char]) :
+          [ 100, 100, 100, 100, 100, 100, 100, 100 ]
       });
     }
 
@@ -49,8 +51,6 @@ export class Compendium implements ICompendium {
         cost: 0,
         learnedBy: [],
       }, json);
-
-      skills[name].cost *= 100;
 
       if (!skills[name].rank) {
         skills[name].rank = 99;

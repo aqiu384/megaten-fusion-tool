@@ -19,16 +19,16 @@ export const SkillElements = ResistElements.concat(
 );
 
 export const BaseStats = [
-  'hp', 'mp', 'st', 'ma', 'vi', 'ag'
+  'HP', 'MP', 'St', 'Ma', 'Vi', 'Ag'
 ];
 
 export const ResistCodes = {
-  w: 'wk',
-  '-': 'no',
-  s: 'rs',
-  n: 'nu',
-  r: 'rp',
-  d: 'dr'
+  w: 1125,
+  '-': 100,
+  s: 50,
+  n: 0,
+  r: -100,
+  d: -1100
 };
 
 export const RaceOrder = Races.reduce((acc, race, i) => { acc[race] = i; return acc; }, {});

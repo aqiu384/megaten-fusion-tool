@@ -15,9 +15,9 @@ export interface Demon {
   lvl: number;
   name: string;
   inherit?: string;
-  inherits?: string[];
+  inherits?: boolean[];
   stats: number[];
-  resists: string[];
+  resists: number[];
   fusion: string;
   prereq?: string;
   affinities?: number[];

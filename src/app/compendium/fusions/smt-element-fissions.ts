@@ -1,7 +1,7 @@
 import { NamePair, Compendium, FusionChart } from '../models';
 
 export function splitElement(element: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
-  const recipes: NamePair[] = [];
+  const recipes = compendium.getSpecialNamePairs(element).slice();
 
   for (const [raceA, raceAs] of Object.entries(fusionChart.getRaceFissions(element))) {
     const ingLvls1 = compendium.getIngredientDemonLvls(raceA);

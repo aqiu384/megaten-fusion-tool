@@ -1,4 +1,4 @@
-import { Races, ResistanceElements, SpecialResistances, BaseStats, ElementOrder } from '../models/constants';
+import { Races, ResistanceElements, SpecialResistances, BaseStats, ElementOrder, ResistCodes } from '../models/constants';
 import { Demon, Skill, SpecialRecipe } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -33,19 +33,19 @@ export class Compendium implements ICompendium {
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
         stats: BaseStats.map((val, i) => json.stats[i]),
-        resists: ResistanceElements.map(val => 'no')
+        resists: ResistanceElements.map(val => 100)
       });
 
       for (const [special, elements] of Object.entries(SpecialResistances)) {
         if (json.resists.hasOwnProperty(special)) {
           for (const element of elements) {
-            demons[name].resists[ElementOrder[element]] = json.resists[special];
+            demons[name].resists[ElementOrder[element]] = ResistCodes[json.resists[special]];
           }
         }
       }
 
       for (const [element, resistance] of Object.entries(json.resists)) {
-        demons[name].resists[ElementOrder[element]] = resistance;
+        demons[name].resists[ElementOrder[element]] = ResistCodes[resistance];
       }
     }
 

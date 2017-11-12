@@ -16,6 +16,8 @@ const appRoutes: Routes = [
   { path: 'p4g', loadChildren: './p4/compendium.module#CompendiumModule' },
   { path: 'pq', loadChildren: './pq/compendium.module#CompendiumModule' },
   { path: 'p5', loadChildren: './p5/compendium.module#CompendiumModule' },
+  { path: 'krch', loadChildren: './krch/compendium.module#CompendiumModule' },
+  { path: 'krao', loadChildren: './krao/compendium.module#CompendiumModule' },
   { path: 'dso', loadChildren: './desu1/compendium.module#CompendiumModule' },
   { path: 'ds2br', loadChildren: './desu2/compendium.module#CompendiumModule' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }

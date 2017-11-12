@@ -32,6 +32,22 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
     ]
   },
   {
+    game: 'Raidou Kuzunoha vs. The Soulless Army',
+    tool: 'krch',
+    srcs: [
+      'http://kaerukyo.net/html/dds_database/devil.php?title=22',
+      'http://megamitensei.wikia.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._The_Soulless_Army_Skills'
+    ]
+  },
+  {
+    game: 'Raidou Kuzunoha vs. King Abaddon',
+    tool: 'krao',
+    srcs: [
+      'https://www31.atwiki.jp/abaddon/pages/37.html',
+      'http://megamitensei.wikia.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._King_Abaddon_Skills'
+    ]
+  },
+  {
     game: 'Persona 3 FES',
     tool: 'p3fes',
     srcs: [

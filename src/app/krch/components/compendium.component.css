@@ -1,0 +1,42 @@
+.krch div.element-icon {
+  height: 12px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.krch div.element-icon.phys { background-image: url('/assets/images/smtsj/phy.png'); }
+.krch div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.krch div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.krch div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.krch div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.krch div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.krch div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.krch div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
+.krch div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.krch div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.krch div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.krch div.element-icon.passive { background-image: url('/assets/images/smtsj/pas.png'); }
+.krao div.element-icon.investigate { background-image: url('/assets/images/smtsj/spe.png'); }
+
+.krch th {
+  color: black;
+  background-color: #856363;
+}
+
+.krch th.sortable:hover {
+  background-color: #ca9c9c;
+}
+
+.krch th.nav {
+  background-color: #3b2d2d;
+}
+
+.krch th.nav.active, .krch th.nav:hover {
+  background-color: #856363;
+}
+
+.krch th.nav.active a, .krch th.nav:hover a {
+  color: black;
+}

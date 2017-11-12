@@ -91,12 +91,21 @@ for (const element of SkillElements) {
 InverseShortElements['spe'] = 'other';
 
 export const BaseStats = [
-  'hp', 'mp', 'st', 'dx', 'ma', 'ag', 'lu'
+  'HP', 'MP', 'St', 'Dx', 'Ma', 'Ag', 'Lu'
 ];
 
 export const ResistanceLevels = [
   'wk', 'no', 'rs', 'nu', 'rp', 'ab'
 ];
+
+export const ResistCodes = {
+  w: 1125,
+  '-': 100,
+  s: 50,
+  n: 0,
+  r: -100,
+  d: -1100
+};
 
 export const ElementDemons = [
   'Salamander',
@@ -110,11 +119,11 @@ export const ElementDemons = [
 ];
 
 export const Ailments = [
-  'sle',
-  'pan',
-  'poi',
-  'sic',
-  'bin'
+  'bind',
+  'panic',
+  'poison',
+  'sick',
+  'sleep'
 ];
 
 export const RaceOrder = getEnumOrder(Races);

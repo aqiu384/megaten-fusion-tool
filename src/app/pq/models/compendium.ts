@@ -64,10 +64,6 @@ export class Compendium implements ICompendium {
       if (json.unique) {
         skills[name].rank = 99;
       }
-
-      if (skills[name].cost < 200) {
-        skills[name].cost *= -1;
-      }
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {

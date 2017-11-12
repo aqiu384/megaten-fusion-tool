@@ -47,9 +47,9 @@ import { FusionDataService } from '../fusion-data.service';
         </thead>
         <tbody>
           <tr>
-            <td *ngFor="let element of inheritanceHeaders"
-              [style.color]="demon.inherits.indexOf(element) !== -1 ? null : 'transparent'">
-              {{ demon.inherits.indexOf(element) !== -1 ? 'yes' : 'no' }}
+            <td *ngFor="let element of inheritanceHeaders; let i = index"
+              [style.color]="demon.inherits[i] ? null : 'transparent'">
+              {{ demon.inherits[i] ? 'yes' : 'no' }}
             </td>
           </tr>
         </tbody>

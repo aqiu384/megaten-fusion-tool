@@ -6,10 +6,10 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   template: `
     <table *ngIf="resistHeaders.length">
       <thead>
-        <tr><th [attr.colspan]="resists.length + ailments.length">Resistances</th></tr>
+        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length">Resistances</th></tr>
         <tr>
-          <th [attr.colSpan]="resists.length" [style.width.%]="50">Element</th>
-          <th *ngIf="ailmentHeaders.length" [attr.colSpan]="ailments.length" [style.width.%]="50">Ailment</th>
+          <th [attr.colSpan]="resistHeaders.length" [style.width.%]="50">Element</th>
+          <th *ngIf="ailmentHeaders.length" [attr.colSpan]="ailmentHeaders.length" [style.width.%]="50">Ailment</th>
         </tr>
         <tr>
           <th *ngFor="let element of resistHeaders">
@@ -22,9 +22,12 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       </thead>
       <tbody>
         <tr>
-          <ng-container *ngFor="let lvls of [ resists, ailments ]">
-            <td *ngFor="let resist of lvls" class="resists {{ resist }}">{{ resist }}</td>
-          </ng-container>
+          <td *ngFor="let resist of resists" class="resists {{ resist | reslvlToString }}">
+            {{ resist | reslvlToString }}
+          </td>
+          <td *ngFor="let resist of ailments" class="resists {{ resist | reslvlToString }}">
+            {{ resist | reslvlToString }}
+          </td>
         </tr>
       </tbody>
     </table>
@@ -32,7 +35,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 })
 export class DemonResistsComponent {
   @Input() resistHeaders: string[] = [];
-  @Input() resists: string[] = [];
+  @Input() resists: number[] = [];
   @Input() ailmentHeaders: string[] = [];
-  @Input() ailments: string[] = [];
+  @Input() ailments: number[] = [];
 }
