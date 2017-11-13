@@ -19,6 +19,7 @@ export abstract class SmtFusionChart implements FusionChart {
 
   static loadFusionTableJson(races: string[], table: string[][]): FusionTable {
     const fusionTable: FusionTable = {};
+    const isInverted = table[0].length === 1;
 
     for (const race of races) {
       fusionTable[race] = {};
@@ -27,7 +28,7 @@ export abstract class SmtFusionChart implements FusionChart {
     for (let r = 0; r < table.length; r++) {
       const raceA = races[r];
       const row = table[r];
-      const cOffset = races.length - row.length;
+      const cOffset = isInverted ? 0 : races.length - row.length;
 
       for (let c = 0; c < row.length; c++) {
         const raceB = races[c + cOffset];
@@ -45,6 +46,7 @@ export abstract class SmtFusionChart implements FusionChart {
 
   static loadFissionTableJson(races: string[], elems: string[], table: string[][]): FissionTable {
     const fissionTable: FissionTable = {};
+    const isInverted = table[0].length === 1;
 
     for (const race of races) {
       fissionTable[race] = {};
@@ -57,7 +59,7 @@ export abstract class SmtFusionChart implements FusionChart {
     for (let r = 0; r < table.length; r++) {
       const raceA = races[r];
       const row = table[r];
-      const cOffset = races.length - row.length;
+      const cOffset = isInverted ? 0 : races.length - row.length;
 
       for (let c = 0; c < row.length; c++) {
         const raceB = races[c + cOffset];
@@ -89,53 +91,15 @@ export abstract class SmtFusionChart implements FusionChart {
 
       for (let c = 0; c < row.length; c++) {
         const elem = elems[c];
+        const modi = table[r][c];
 
-        elementTable[race][elem] = table[r][c];
+        if (modi) {
+          elementTable[race][elem] = modi;
+        }
       }
     }
 
     return elementTable;
-  }
-
-  static loadFissionChart(races: string[], elems: string[], fusionJson: any): FissionTable {
-    const chart: FissionTable = {};
-
-    for (const race of races) {
-      chart[race] = {};
-    }
-
-    for (const elem of elems) {
-      chart[elem] = {};
-    }
-
-    for (const [raceA, raceBs] of Object.entries(fusionJson)) {
-      for (const [raceB, raceR] of Object.entries(raceBs)) {
-        if (!chart[raceR][raceA]) {
-          chart[raceR][raceA] = [];
-        }
-
-        chart[raceR][raceA].push(raceB);
-      }
-    }
-
-    return chart;
-  }
-
-  static loadFusionChart(races: string[], fusionJson: any): FusionTable {
-    const chart: FusionTable = {};
-
-    for (const race of races) {
-      chart[race] = {};
-    }
-
-    for (const [raceA, raceBs] of Object.entries(fusionJson)) {
-      for (const [raceB, raceR] of Object.entries(raceBs)) {
-        chart[raceA][raceB] = raceR;
-        chart[raceB][raceA] = raceR;
-      }
-    }
-
-    return chart;
   }
 
   getRaceFissions(race: string): FissionRow {

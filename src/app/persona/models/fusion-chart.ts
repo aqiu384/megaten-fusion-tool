@@ -1,50 +1,37 @@
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
-
 export class FusionChart extends SmtFusionChart {
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
+
   elementDemons = [];
   lvlModifier = 1;
 
-  constructor(fusionTableJson: any, races: string [], isTripleChart?: boolean) {
+  constructor(fusionTableJson: any, races: string[], isTripleChart?: boolean) {
     super();
-    this.initCharts(fusionTableJson, races, isTripleChart);
+    this.initCharts(fusionTableJson, isTripleChart);
   }
 
-  initCharts(fusionTableJson: any, races: string[], isTripleChart?: boolean) {
-    const chart: FusionTable = {};
-
-    for (const race of races) {
-      chart[race] = {};
-    }
+  initCharts(fusionTableJson: any, isTripleChart?: boolean) {
+    const races: string[] = fusionTableJson['races'];
+    const fullTable: string[][] = fusionTableJson['table'];
+    const table: string[][] = [];
 
     for (let i = 0; i < races.length; i++) {
-      const raceA = races[i];
-      const row = fusionTableJson[i];
-
-      const milCol = isTripleChart ? 0 : i + 1;
+      const minCol = isTripleChart ? 0 : i;
       const maxCol = isTripleChart ? i + 1 : races.length;
 
-      for (let j = milCol; j < maxCol; j++) {
-        const raceB = races[j];
-        const raceR = row[j];
+      table.push(fullTable[i].slice(minCol, maxCol));
 
-        if (raceR !== 'NOTHING') {
-          chart[raceA][raceB] = raceR;
-        }
+      if (!isTripleChart) {
+        table[i][0] = '-';
       }
     }
 
-    this.fissionChart = SmtFusionChart.loadFissionChart(races, this.elementDemons, chart);
-    this.fusionChart = SmtFusionChart.loadFusionChart(races, chart);
+    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, this.elementDemons, table);
+    this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.elementChart = {};
-
-    for (const race of races) {
-      this.elementChart[race] = {};
-    }
   }
 }

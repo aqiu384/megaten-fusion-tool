@@ -4,7 +4,7 @@ import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
 import * as CURSED_CHART_JSON from '../data/cursed-chart.json';
-import * as ELEMENT_MODIFIERS_JSON from '../data/element-modifiers.json';
+import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   private static readonly CHART_SETTINGS = {
@@ -45,22 +45,26 @@ export class FusionChart extends SmtFusionChart {
   }
 
   initCharts() {
-    this.normalFissionChart = SmtFusionChart.loadFissionChart(Races, ElementDemons, FUSION_CHART_JSON);
-    this.normalFusionChart = SmtFusionChart.loadFusionChart(Races, FUSION_CHART_JSON);
-    this.normalElementChart = {};
-    this.cursedFissionChart = SmtFusionChart.loadFissionChart(Races, ElementDemons, CURSED_CHART_JSON);
-    this.cursedFusionChart = SmtFusionChart.loadFusionChart(Races, CURSED_CHART_JSON);
-    this.cursedElementChart = {};
+    const normRaces: string[] = FUSION_CHART_JSON['races'];
+    const normTable: string[][] = FUSION_CHART_JSON['table'];
+    const cursRaces: string[] = CURSED_CHART_JSON['races'];
+    const cursTable: string[][] = CURSED_CHART_JSON['table'];
 
-    for (const race of Races) {
-      this.normalElementChart[race] = {};
-      this.cursedElementChart[race] = {};
-    }
+    const elems: string[] = ELEMENT_CHART_JSON['elems'];
+    const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
+    const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
-    for (const [race, json] of Object.entries(ELEMENT_MODIFIERS_JSON)) {
-      for (let i = 0; i < ElementDemons.length; i++) {
-        this.normalElementChart[race][ElementDemons[i]] = json[i];
-        this.cursedElementChart[race][ElementDemons[i]] = -1 * json[i];
+    this.normalFusionChart = SmtFusionChart.loadFusionTableJson(normRaces, normTable);
+    this.normalFissionChart = SmtFusionChart.loadFissionTableJson(normRaces, elems, normTable);
+    this.normalElementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+
+    this.cursedFusionChart = SmtFusionChart.loadFusionTableJson(cursRaces, cursTable);
+    this.cursedFissionChart = SmtFusionChart.loadFissionTableJson(cursRaces, elems, cursTable);
+    this.cursedElementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+
+    for (const row of Object.values(this.cursedElementChart)) {
+      for (const elem of Object.keys(row)) {
+        row[elem] *= -1;
       }
     }
   }

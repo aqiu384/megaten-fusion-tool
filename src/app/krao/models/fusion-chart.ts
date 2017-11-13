@@ -20,13 +20,14 @@ export class FusionChart extends SmtFusionChart {
 
   initCharts() {
     const races: string[] = FUSION_CHART_JSON['races'];
+    const elems: string[] = ELEMENT_CHART_JSON['elems'];
     const table: string[][] = FUSION_CHART_JSON['table'];
     const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
     const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
-    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, this.elementDemons, table);
-    this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, this.elementDemons, elemTable);
+    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
+    this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
   }
 
   getRaceFusions(race: string): FusionRow {

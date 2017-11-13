@@ -3,7 +3,7 @@ import { FissionTable, FusionTable, ElementTable } from '../../compendium/models
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
-import * as ELEMENT_MODIFIERS_JSON from '../data/element-modifiers.json';
+import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   lvlModifier = 0;
@@ -19,44 +19,18 @@ export class FusionChart extends SmtFusionChart {
   }
 
   initCharts() {
-    this.fissionChart = {};
-    this.fusionChart = {};
-    this.elementChart = {};
+    const races: string[] = FUSION_CHART_JSON['races'];
+    const elems: string[] = ELEMENT_CHART_JSON['elems'];
+    const table: string[][] = FUSION_CHART_JSON['table'];
+    const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
+    const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
-    for (const race of Races) {
-      this.fissionChart[race] = {};
-      this.fusionChart[race] = {};
-      this.elementChart[race] = {};
+    for (let i = 0; i < table.length; i++) {
+      table[i][0] = '-';
     }
 
-    for (const elem of this.elementDemons) {
-      this.fissionChart[elem] = {};
-    }
-
-    for (let i = 0; i < Races.length; i++) {
-      const raceA = Races[i];
-      const raceRs = FUSION_CHART_JSON[i];
-
-      for (let j = i + 1; j < Races.length; j++) {
-        const raceB = Races[j];
-        const raceR = raceRs[j];
-
-        if (RaceOrder.hasOwnProperty(raceR)) {
-          if (!this.fissionChart[raceR][raceA]) {
-            this.fissionChart[raceR][raceA] = [];
-          }
-
-          this.fusionChart[raceA][raceB] = raceR;
-          this.fusionChart[raceB][raceA] = raceR;
-          this.fissionChart[raceR][raceA].push(raceB);
-        }
-      }
-    }
-
-    for (const [race, json] of Object.entries(ELEMENT_MODIFIERS_JSON)) {
-      for (const [elem, modifier] of Object.entries(json)) {
-        this.elementChart[race][elem] = modifier;
-      }
-    }
+    this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
+    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
+    this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
   }
 }

@@ -3,7 +3,7 @@ import { FissionTable, FusionTable, ElementTable, FissionRow, FusionRow } from '
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
-import * as ELEMENT_MODIFIERS_JSON from '../data/element-modifiers.json';
+import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   private static RACE_CONVERTERS = {
@@ -42,19 +42,15 @@ export class FusionChart extends SmtFusionChart {
   }
 
   initCharts() {
-    this.fissionChart = SmtFusionChart.loadFissionChart(Races, PrimeElements, FUSION_CHART_JSON);
-    this.fusionChart = SmtFusionChart.loadFusionChart(Races, FUSION_CHART_JSON);
-    this.elementChart = {};
+    const races: string[] = FUSION_CHART_JSON['races'];
+    const elems: string[] = ELEMENT_CHART_JSON['elems'];
+    const table: string[][] = FUSION_CHART_JSON['table'];
+    const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
+    const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
-    for (const race of Races) {
-      this.elementChart[race] = {};
-    }
-
-    for (const [race, json] of Object.entries(ELEMENT_MODIFIERS_JSON)) {
-      for (let i = 0; i < PrimeElements.length; i++) {
-        this.elementChart[race][PrimeElements[i]] = json[i];
-      }
-    }
+    this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
+    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
+    this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
 
     for (const [raceR, raceQ] of Object.entries(FusionChart.RACE_CONVERTERS)) {
       this.fissionChart[raceQ] = this.fissionChart[raceR];
