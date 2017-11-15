@@ -10,8 +10,8 @@ import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-setti
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
-import { TripleFissionTableComponent } from '../persona/components/triple-fission-table.component';
-import { TripleFusionTableComponent } from '../persona/components/triple-fusion-table.component';
+import { TripleFissionTableComponent } from '../compendium/components/tri-fission-table.component';
+import { TripleFusionTableComponent } from '../compendium/components/tri-fusion-table.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },

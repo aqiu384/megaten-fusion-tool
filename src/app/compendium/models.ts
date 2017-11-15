@@ -63,6 +63,8 @@ export interface FusionDataService {
 }
 
 export interface FusionTrioService extends FusionDataService {
+  triFissionCalculator?: TripleCalculator;
+  triFusionCalculator?: TripleCalculator;
   squareChart: Observable<SquareChart>;
 }
 
@@ -74,6 +76,16 @@ export type FusionCalculation = (
 
 export interface FusionCalculator {
   getFusions(demon: string, compendium: Compendium, fusionChart: FusionChart): NamePair[];
+}
+
+export type TripleCalculation = (
+  demon: string,
+  compendium: Compendium,
+  fusionChart: SquareChart
+) => NameTrio[];
+
+export interface TripleCalculator {
+  getFusions(demon: string, compendium: Compendium, fusionChart: SquareChart): NameTrio[];
 }
 
 export interface NamePair {
@@ -92,6 +104,11 @@ export interface DemonPair {
 
 export interface DemonTrio extends DemonPair {
   d3: Demon;
+}
+
+export interface SpecialRecipe {
+  ingreds?: string[];
+  pairs?: NamePair[];
 }
 
 export interface FusionTrio {
@@ -135,4 +152,5 @@ export interface FusionChart {
 export interface SquareChart {
   normalChart: FusionChart;
   tripleChart: FusionChart;
+  raceOrder?: { [race: string]: number };
 }

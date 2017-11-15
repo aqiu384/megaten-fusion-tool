@@ -48,14 +48,6 @@ export abstract class SmtFusionChart implements FusionChart {
     const fissionTable: FissionTable = {};
     const isInverted = table[0].length === 1;
 
-    for (const race of races) {
-      fissionTable[race] = {};
-    }
-
-    for (const elem of elems) {
-      fissionTable[elem] = {};
-    }
-
     for (let r = 0; r < table.length; r++) {
       const raceA = races[r];
       const row = table[r];
@@ -66,6 +58,10 @@ export abstract class SmtFusionChart implements FusionChart {
         const raceR = row[c];
 
         if (raceR !== '-') {
+          if (!fissionTable[raceR]) {
+            fissionTable[raceR] = {};
+          }
+
           if (!fissionTable[raceR][raceA]) {
             fissionTable[raceR][raceA] = [];
           }
@@ -81,8 +77,8 @@ export abstract class SmtFusionChart implements FusionChart {
   static loadElementTableJson(races: string[], elems: string[], table: number[][]): ElementTable {
     const elementTable: ElementTable = {};
 
-    for (const race of races) {
-      elementTable[race] = {};
+    for (const elem of elems) {
+      elementTable[elem] = {};
     }
 
     for (let r = 0; r < table.length; r++) {
@@ -94,12 +90,48 @@ export abstract class SmtFusionChart implements FusionChart {
         const modi = table[r][c];
 
         if (modi) {
-          elementTable[race][elem] = modi;
+          elementTable[elem][race] = modi;
         }
       }
     }
 
     return elementTable;
+  }
+
+  static mergeFusionTables(table1: FusionTable, table2: FusionTable): FusionTable {
+    const table: FusionTable = {};
+
+    for (const [raceA, raceBs] of Object.entries(table1)) {
+      table[raceA] = Object.assign({}, raceBs);
+    }
+
+    for (const [raceA, raceBs] of Object.entries(table2)) {
+      table[raceA] = Object.assign(table[raceA] || {}, raceBs);
+    }
+
+    return table;
+  }
+
+  static mergeFissionTables(table1: FissionTable, table2: FissionTable): FissionTable {
+    const table: FissionTable = {};
+
+    for (const [raceR, raceAs] of Object.entries(table1)) {
+      table[raceR] = {};
+
+      for (const [raceA, raceBs] of Object.entries(raceAs)) {
+        table[raceR][raceA] = raceBs.slice();
+      }
+    }
+
+    for (const [raceR, raceAs] of Object.entries(table2)) {
+      table[raceR] = table[raceR] || {};
+
+      for (const [raceA, raceBs] of Object.entries(raceAs)) {
+        table[raceR][raceA] = raceBs.concat(table[raceR][raceA] || []);
+      }
+    }
+
+    return table;
   }
 
   getRaceFissions(race: string): FissionRow {
@@ -117,8 +149,10 @@ export abstract class SmtFusionChart implements FusionChart {
   getElemModifiers(race: string): ElemModifiers {
     const modifiers: ElemModifiers = {};
 
-    if (this.elementChart.hasOwnProperty(race)) {
-      for (const [elem, mod] of Object.entries(this.elementChart[race])) {
+    for (const [elem, races] of Object.entries(this.elementChart)) {
+      const mod = races[race];
+
+      if (mod) {
         if (!modifiers[mod]) {
           modifiers[mod] = [];
         }
@@ -131,15 +165,7 @@ export abstract class SmtFusionChart implements FusionChart {
   }
 
   getElemFusions(elem: string): ElementRow {
-    const combos = {};
-
-    for (const [race, row] of Object.entries(this.elementChart)) {
-      if (row[elem]) {
-        combos[race] = row[elem];
-      }
-    }
-
-    return combos;
+    return this.elementChart[elem] || {};
   }
 
   isConvertedRace(race: string): boolean {

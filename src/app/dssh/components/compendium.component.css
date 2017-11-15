@@ -1,0 +1,46 @@
+.dssh div.element-icon {
+  height: 12px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.dssh div.element-icon.strike { background-image: url('/assets/images/smtsj/phy.png'); }
+.dssh div.element-icon.slash { background-image: url('/assets/images/smt4f/sword.png'); }
+.dssh div.element-icon.skill { background-image: url('/assets/images/smt4f/gun.png'); }
+.dssh div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.dssh div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.dssh div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.dssh div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.dssh div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.dssh div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.dssh div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.dssh div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
+.dssh div.element-icon.nerve { background-image: url('/assets/images/smt4f/bind.png'); }
+.dssh div.element-icon.curse { background-image: url('/assets/images/smt4f/poison.png'); }
+.dssh div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.dssh div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.dssh div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.dssh div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
+
+.dssh th {
+  background-color: #302878;
+  color: white;
+}
+
+.dssh th.sortable:hover {
+  background-color: #5044ce;
+}
+
+.dssh th.nav {
+  background-color: #131033;
+}
+
+.dssh th.nav.active, .dssh th.nav:hover {
+  background-color: #302878;
+}
+
+.dssh th.nav.active a, .dssh th.nav:hover a {
+  color: white;
+}

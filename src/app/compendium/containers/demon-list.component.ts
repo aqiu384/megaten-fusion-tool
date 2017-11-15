@@ -18,7 +18,7 @@ export abstract class DemonListContainerComponent implements OnInit, OnDestroy {
 
   constructor(
     private title2: Title,
-    private changeDetectorRef2: ChangeDetectorRef,
+    private changeDetectorRef: ChangeDetectorRef,
     private fusionDataService2: FusionDataService
   ) { }
 
@@ -37,7 +37,7 @@ export abstract class DemonListContainerComponent implements OnInit, OnDestroy {
   }
 
   onCompendiumUpdated(compendium: Compendium) {
-    this.changeDetectorRef2.markForCheck();
+    this.changeDetectorRef.markForCheck();
     this.demons = Observable.create(observer => {
       const demons = compendium.allDemons;
       demons.sort(this.defaultSortFun);

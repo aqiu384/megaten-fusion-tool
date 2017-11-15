@@ -5,7 +5,6 @@ import { Title } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 import { SharedCompendiumModule } from '../compendium/compendium.module';
 import { CompendiumRoutingModule } from './compendium-routing.module';
-import { PersonaCompendiumModule } from '../persona/compendium.module';
 
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
@@ -33,8 +32,7 @@ const compendiumConfig: CompendiumConfig = {
     CommonModule,
     SharedModule,
     SharedCompendiumModule,
-    CompendiumRoutingModule,
-    PersonaCompendiumModule
+    CompendiumRoutingModule
   ],
   declarations: [
     CompendiumComponent,

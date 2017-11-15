@@ -1,5 +1,4 @@
-import { FissionRow, FissionTable, Compendium, FusionChart, NameTrio } from '../../compendium/models';
-import { RaceOrder } from '../../p4/constants';
+import { FissionRow, FissionTable, Compendium, SquareChart, NameTrio } from '../models';
 
 function findBin(n: number, bins: number[]): number {
   if (!bins.length) {
@@ -17,9 +16,10 @@ function findBin(n: number, bins: number[]): number {
   return index === bins.length ? -1 : index;
 }
 
-export function splitWithDiffRace(nameR: string, comp: Compendium, normChart: FusionChart, trioChart: FusionChart): NameTrio[] {
-  const recipes: NameTrio[] = [];
+export function splitWithDiffRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
+  const recipes: NameTrio[] = [];
 
   const binRs = comp.getResultDemonLvls(raceR);
   const binR = binRs.indexOf(lvlR);
@@ -88,7 +88,7 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, normChart: Fu
             if (
               name2 !== name1 &&
               name2 !== nameR &&
-              (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && RaceOrder[raceT1] < RaceOrder[raceN1]))
+              (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && raceOrder[raceT1] < raceOrder[raceN1]))
             ) {
               const minLvlN2 = minLvlT2 - lvlN1;
               const maxLvlN2 = maxLvlT2 - lvlN1;
@@ -102,7 +102,7 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, normChart: Fu
                     name3 !== name1 &&
                     name3 !== nameR &&
                     (raceN1 !== raceN2 || lvlN1 < lvlN2) &&
-                    (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && RaceOrder[raceT1] < RaceOrder[raceN2]))
+                    (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
                   ) {
                     if (minLvlN2 < lvlN2 && lvlN2 <= maxLvlN2) {
                       recipes.push({ name1, name2, name3 });
@@ -120,9 +120,10 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, normChart: Fu
   return recipes;
 }
 
-export function splitWithSameRace(nameR: string, comp: Compendium, normChart: FusionChart, trioChart: FusionChart): NameTrio[] {
-  const recipes: NameTrio[] = [];
+export function splitWithSameRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const { normalChart: normChart, tripleChart: trioChart } = chart;
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
+  const recipes: NameTrio[] = [];
 
   const lvlT1s = comp.getIngredientDemonLvls(raceR).filter(lvl => lvl !== lvlR);
   const lvlRs = comp.getResultDemonLvls(raceR);

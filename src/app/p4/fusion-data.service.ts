@@ -5,9 +5,10 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './constants';
 import { Compendium } from './models/compendium';
-import { FusionChart } from '../persona/models/fusion-chart';
+import { PersonaFusionChart } from '../compendium/models/per-fusion-chart';
 import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
-import { Races, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
+import { Races, RaceOrder, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
+import { P3_TRIPLE_FISSION_CALCULATOR, P3_TRIPLE_FUSION_CALCULATOR } from '../compendium/constants';
 
 import * as DEMON_DATA_JSON from './data/demon-data.json';
 import * as FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -18,17 +19,19 @@ import * as GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
 export class FusionDataService implements IFusionTrioService {
   fissionCalculator = P3_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = P3_NORMAL_FUSION_CALCULATOR;
+  triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
+  triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
   appName = 'Persona 4';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
   compendium: Observable<Compendium>;
 
-  private _fusionChart: FusionChart;
-  private _fusionChart$: BehaviorSubject<FusionChart>;
-  fusionChart: Observable<FusionChart>;
+  private _fusionChart: PersonaFusionChart;
+  private _fusionChart$: BehaviorSubject<PersonaFusionChart>;
+  fusionChart: Observable<PersonaFusionChart>;
 
-  private _tripleChart: FusionChart;
+  private _tripleChart: PersonaFusionChart;
   private _squareChart$: BehaviorSubject<SquareChart>;
   squareChart: Observable<SquareChart>;
 
@@ -50,12 +53,17 @@ export class FusionDataService implements IFusionTrioService {
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 
-    this._fusionChart = new FusionChart(fusionChart, races);
+    this._fusionChart = new PersonaFusionChart(fusionChart, races);
     this._fusionChart$ = new BehaviorSubject(this._fusionChart);
     this.fusionChart = this._fusionChart$.asObservable();
 
-    this._tripleChart = new FusionChart(fusionChart, races, true);
-    this._squareChart$ = new BehaviorSubject({ normalChart: this._fusionChart, tripleChart: this._tripleChart });
+    this._tripleChart = new PersonaFusionChart(fusionChart, races, true);
+    this._squareChart$ = new BehaviorSubject({
+      normalChart: this._fusionChart,
+      tripleChart: this._tripleChart,
+      raceOrder: RaceOrder
+    });
+
     this.squareChart = this._squareChart$.asObservable();
   }
 

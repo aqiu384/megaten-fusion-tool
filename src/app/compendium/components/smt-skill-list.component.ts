@@ -100,7 +100,11 @@ export class SmtSkillListRowComponent {
           [hasFuse]="hasFuse"
           [hasDsource]="hasDsource"
           [hasPrereq]="hasPrereq"
-          [ngClass]="{ unique: data.rank === 99 }" [data]="data">
+          [data]="data"
+          [ngClass]="{
+            extra: data.rank > 70 && data.rank < 90,
+            unique: data.rank > 90
+          }">
         </tr>
       </tbody>
     </table>

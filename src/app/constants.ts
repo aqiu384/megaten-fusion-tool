@@ -32,6 +32,14 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
     ]
   },
   {
+    game: 'Devil Summoner: Soul Hackers',
+    tool: 'dssh',
+    srcs: [
+      'http://bmky.net/data/sh/system/unite/hero.html',
+      'http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/ds/sh/index.html'
+    ]
+  },
+  {
     game: 'Raidou Kuzunoha vs. The Soulless Army',
     tool: 'krch',
     srcs: [

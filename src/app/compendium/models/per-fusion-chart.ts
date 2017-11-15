@@ -1,7 +1,7 @@
-import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
-import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
+import { FissionTable, FusionTable, ElementTable } from '../models';
+import { SmtFusionChart } from '../models/smt-fusion-chart';
 
-export class FusionChart extends SmtFusionChart {
+export class PersonaFusionChart extends SmtFusionChart {
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;

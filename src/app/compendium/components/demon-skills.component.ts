@@ -37,7 +37,11 @@ import { Compendium } from '../models';
           [hasInherit]="hasInherit"
           [hasLearned]="false"
           [hasLvl]="true"
-          [ngClass]="{ unique: data.rank === 99 }" [data]="data">
+          [data]="data"
+          [ngClass]="{
+            extra: data.rank > 70 && data.rank < 90,
+            unique: data.rank > 90
+          }">
         </tr>
         <tr *ngIf="!skills.length">
           <td [attr.colspan]="skillHeaderLen">No {{ title }} Found</td>
@@ -81,7 +85,7 @@ export class DemonSkillsComponent implements OnInit, OnChanges {
     for (const skill of this.skills) {
       skill.level = this.skillLevels[skill.name];
     }
-    
+
     this.skills.sort((a, b) => (a.level - b.level) * 20 + this.elemOrder[a.element] - this.elemOrder[b.element]);
   }
 }

@@ -1,5 +1,4 @@
-import { FusionTable, Compendium, FusionChart, NameTrio } from '../../compendium/models';
-import { RaceOrder } from '../../p4/constants';
+import { FusionTable, Compendium, NameTrio, SquareChart } from '../models';
 
 function findBin(n: number, bins: number[]): number {
   if (!bins.length) {
@@ -17,9 +16,10 @@ function findBin(n: number, bins: number[]): number {
   return index === bins.length ? -1 : index;
 }
 
-export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, normChart: FusionChart, trioChart: FusionChart): NameTrio[] {
-  const recipes: NameTrio[] = [];
+export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceT1, lvl: lvlT1 } = comp.getDemon(nameT1);
+  const recipes: NameTrio[] = [];
 
   const fusionT2Rs = trioChart.getRaceFusions(raceT1);
   const fusionN1N2Rs: FusionTable = {};
@@ -50,7 +50,7 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, normChart: 
 
       if (
         name1 !== nameT1 &&
-        (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && RaceOrder[raceT1] < RaceOrder[raceN1]))
+        (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && raceOrder[raceT1] < raceOrder[raceN1]))
       ) {
         for (const [raceN2, raceR] of Object.entries(raceN2s)) {
           const lvlRs = comp.getResultDemonLvls(raceR);
@@ -63,7 +63,7 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, normChart: 
               name2 !== name1 &&
               name2 !== nameT1 &&
               (raceN1 !== raceN2 || lvlN1 < lvlN2) &&
-              (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && RaceOrder[raceT1] < RaceOrder[raceN2]))
+              (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
             ) {
               const binN2 = findBin(lvlN2, binN2s);
 
@@ -84,9 +84,10 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, normChart: 
   return recipes;
 }
 
-export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, normChart: FusionChart, trioChart: FusionChart): NameTrio[] {
-  const recipes: NameTrio[] = [];
+export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceN1, lvl: lvlN1 } = comp.getDemon(nameN1);
+  const recipes: NameTrio[] = [];
 
   const fusionN2T1Rs: FusionTable = {};
 
@@ -112,8 +113,8 @@ export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, normChart: 
             if (
               name2 !== name1 &&
               name2 !== nameN1 &&
-              (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && RaceOrder[raceT1] < RaceOrder[raceN1])) &&
-              (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && RaceOrder[raceT1] < RaceOrder[raceN2]))
+              (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && raceOrder[raceT1] < raceOrder[raceN1])) &&
+              (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
             ) {
               const binT1 = findBin(lvlT1, binT1s);
 
@@ -134,9 +135,10 @@ export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, normChart: 
   return recipes;
 }
 
-export function fuseWithSameRace(nameN1: string, comp: Compendium, normChart: FusionChart, trioChart: FusionChart): NameTrio[] {
-  const recipes: NameTrio[] = [];
+export function fuseWithSameRace(nameN1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const { normalChart: normChart, tripleChart: trioChart } = chart;
   const { race: raceN1, lvl: lvlN1 } = comp.getDemon(nameN1);
+  const recipes: NameTrio[] = [];
 
   const lvlT1s = comp.getIngredientDemonLvls(raceN1).filter(lvl => lvl !== lvlN1);
   const binT1s = comp.getResultDemonLvls(raceN1).filter(lvl => lvl !== lvlN1);

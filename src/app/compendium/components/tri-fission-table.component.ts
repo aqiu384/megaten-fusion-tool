@@ -3,14 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { FUSION_TRIO_SERVICE } from '../../compendium/constants';
-import { Compendium, FusionChart, FusionTrioService, FusionCalculator, NameTrio, DemonTrio, FusionTrio } from '../../compendium/models';
-import { toDemonTrio } from '../../compendium/models/conversions';
+import { FUSION_TRIO_SERVICE } from '../constants';
+import { Compendium, FusionTrioService, TripleCalculator, NameTrio, DemonTrio, FusionTrio, SquareChart } from '../models';
+import { toDemonTrio } from '../models/conversions';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
-import { splitWithDiffRace, splitWithSameRace } from '../fusions/persona-triple-fissions';
-
-import { RaceOrder } from '../../p4/constants';
 
 @Component({
   selector: 'app-triple-fission-table',
@@ -18,21 +15,19 @@ import { RaceOrder } from '../../p4/constants';
   template: `
     <app-fusion-trio-table
       [title]="'Ingredient 1 x Ingredient 2 x Ingredient 3 = ' + currentDemon"
-      [raceOrder]="raceOrder"
+      [raceOrder]="chart.raceOrder"
       [rowData]="fissionTrios">
     </app-fusion-trio-table>
   `
 })
 export class TripleFissionTableComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
-  calculator: FusionCalculator;
+  calculator: TripleCalculator;
   compendium: Compendium;
-  normalChart: FusionChart;
-  tripleChart: FusionChart;
+  chart: SquareChart;
   currentDemon: string;
   fissionTrios: FusionTrio[] = [];
 
-  raceOrder = RaceOrder;
   toDemonTrio = (names: NameTrio) => toDemonTrio(names, this.compendium);
   sortDemonTrio = (a: DemonTrio, b: DemonTrio) => a.d1.lvl - b.d1.lvl;
 
@@ -44,7 +39,7 @@ export class TripleFissionTableComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.calculator = this.fusionTrioService.fissionCalculator;
+    this.calculator = this.fusionTrioService.triFissionCalculator;
 
     this.subscriptions.push(
       this.fusionTrioService.compendium.subscribe(compendium => {
@@ -54,8 +49,7 @@ export class TripleFissionTableComponent implements OnInit, OnDestroy {
 
     this.subscriptions.push(
       this.fusionTrioService.squareChart.subscribe(chart => {
-        this.normalChart = chart.normalChart;
-        this.tripleChart = chart.tripleChart;
+        this.chart = chart;
         this.getFissions();
       }));
 
@@ -73,19 +67,14 @@ export class TripleFissionTableComponent implements OnInit, OnDestroy {
   }
 
   getFissions() {
-    if (this.compendium && this.normalChart && this.tripleChart && this.currentDemon) {
+    if (this.compendium && this.chart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
 
-      let names: NameTrio[] = [];
-
-      for (const splitter of [splitWithDiffRace, splitWithSameRace]) {
-        names = names.concat(splitter(
-          this.currentDemon,
-          this.compendium,
-          this.normalChart,
-          this.tripleChart
-        ));
-      }
+      const names = this.calculator.getFusions(
+        this.currentDemon,
+        this.compendium,
+        this.chart
+      );
 
       const demons = names.map(this.toDemonTrio);
       const fissions: { [name: string]: DemonTrio[] } = {};
