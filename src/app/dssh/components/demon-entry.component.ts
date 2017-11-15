@@ -21,19 +21,32 @@ import { FusionDataService } from '../fusion-data.service';
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [statHeaders]="statHeaders"
         [fusionHeaders]="fusionHeaders"
-        [stats]="demon.stats">
+        [stats]="demon.stats"
+        [inherit]="demon.inherit">
         <td>{{ demon.person }}</td>
       </app-demon-stats>
+      <table>
+        <thead><tr><th *ngFor="let atk of atkHeaders">{{ atk }}</th></tr></thead>
+        <tbody><tr><td *ngFor="let atk of demon.atks">{{ atk }}</td></tr></tbody>
+      </table>
       <app-demon-resists
         [resistHeaders]="resistHeaders"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-skills
+        [hasLvl]="false"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-smt-fusions></app-smt-fusions>
+      <app-demon-skills
+        [title]="'Inheritable Skills'"
+        [hasLvl]="false"
+        [compendium]="compendium"
+        [skillLevels]="compendium.getInheritSkills(demon.inherit)">
+      </app-demon-skills>
+      <app-smt-fusions [hasTripleFusion]="true">
+      </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>
@@ -53,6 +66,7 @@ export class DemonEntryComponent {
   @Input() compendium: Compendium;
 
   statHeaders = BaseStats;
+  atkHeaders = [ 'Cost Point', 'MAG Summon', 'P.ATK', 'P.HIT', 'M.ATK', 'M.HIT', 'B.DEF', 'AVD' ];
   fusionHeaders = [ 'Personality' ];
   elemOrder = ElementOrder;
   resistHeaders = ResistanceElements;

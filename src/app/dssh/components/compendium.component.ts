@@ -8,7 +8,7 @@ import {
   selector: 'app-krao-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-compendium [ngClass]="'dssh'" [hasSettings]="false"></app-demon-compendium>
+    <app-demon-compendium [ngClass]="'dssh'"></app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None

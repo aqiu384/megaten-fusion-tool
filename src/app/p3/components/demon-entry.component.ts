@@ -32,8 +32,7 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-smt-fusions [hasTripleFusion]="true" [showFusionAlert]="demon.fusion === 'excluded'">
-        DLC marked as excluded, fusions involving {{ name }} may be inaccurate!
+      <app-smt-fusions [hasTripleFusion]="true">
       </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">

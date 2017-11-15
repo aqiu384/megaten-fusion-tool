@@ -58,6 +58,7 @@ import { FusionDataService } from '../fusion-data.service';
         [hasTarget]="true"
         [hasRank]="true"
         [hasInherit]="true"
+        [hasLvl]="false"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
@@ -67,6 +68,7 @@ import { FusionDataService } from '../fusion-data.service';
         [hasTarget]="true"
         [hasRank]="true"
         [hasInherit]="true"
+        [hasLvl]="false"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.source">

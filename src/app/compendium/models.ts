@@ -63,8 +63,8 @@ export interface FusionDataService {
 }
 
 export interface FusionTrioService extends FusionDataService {
-  triFissionCalculator?: TripleCalculator;
-  triFusionCalculator?: TripleCalculator;
+  triFissionCalculator: TripleCalculator;
+  triFusionCalculator: TripleCalculator;
   squareChart: Observable<SquareChart>;
 }
 

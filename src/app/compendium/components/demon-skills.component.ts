@@ -26,7 +26,7 @@ import { Compendium } from '../models';
           <th *ngIf="hasTarget">Target</th>
           <th *ngIf="hasRank">Rank</th>
           <th *ngIf="hasInherit">Inherit</th>
-          <th>Level</th>
+          <th *ngIf="hasLvl">Level</th>
         </tr>
       </thead>
       <tbody>
@@ -36,7 +36,7 @@ import { Compendium } from '../models';
           [hasRank]="hasRank"
           [hasInherit]="hasInherit"
           [hasLearned]="false"
-          [hasLvl]="true"
+          [hasLvl]="hasLvl"
           [data]="data"
           [ngClass]="{
             extra: data.rank > 70 && data.rank < 90,
@@ -55,6 +55,7 @@ export class DemonSkillsComponent implements OnInit, OnChanges {
   @Input() hasInherit = false;
   @Input() hasTarget = false;
   @Input() hasRank = false;
+  @Input() hasLvl = true;
   @Input() compendium: Compendium;
   @Input() elemOrder: { [elem: string]: number };
   @Input() skillLevels: { [id: string]: number };
@@ -86,6 +87,11 @@ export class DemonSkillsComponent implements OnInit, OnChanges {
       skill.level = this.skillLevels[skill.name];
     }
 
-    this.skills.sort((a, b) => (a.level - b.level) * 20 + this.elemOrder[a.element] - this.elemOrder[b.element]);
+    if (this.elemOrder) {
+      this.skills.sort((a, b) =>
+        (a.level - b.level) * 20 +
+        this.elemOrder[a.element] - this.elemOrder[b.element]
+      );
+    }
   }
 }

@@ -54,6 +54,7 @@ export class FusionChart extends SmtFusionChart {
     this.fissionChart = SmtFusionChart.mergeFissionTables(normFissions, darkFissions);
 
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+    this.lvlModifier = isTripleChart ? 4 : 3;
 
     if (!isTripleChart) {
       this.elementChart['Sylph (N)'] = this.elementChart['Sylph'];

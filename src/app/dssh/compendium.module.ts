@@ -19,11 +19,13 @@ import {
   DemonEntryContainerComponent
 } from './components/demon-entry.component';
 
+import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
+
 import { CompendiumComponent } from './components/compendium.component';
 
 import { FusionDataService } from './fusion-data.service';
 
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { CompendiumConfig } from '../compendium/models';
 import { RaceOrder, APP_TITLE } from './constants';
 
@@ -43,6 +45,7 @@ const compendiumConfig: CompendiumConfig = {
     CompendiumComponent,
     DemonListContainerComponent,
     SkillListContainerComponent,
+    DemonDlcSettingsContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
   ],
@@ -50,6 +53,7 @@ const compendiumConfig: CompendiumConfig = {
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
+    [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
     [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
   ]
 })

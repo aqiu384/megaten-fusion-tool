@@ -77,7 +77,15 @@ export const SkillElements = ResistanceElements.concat(
   'almighty',
   'recovery',
   'support',
-  'special'
+  'special',
+  'temp',
+  'dark',
+  'witch',
+  'reca',
+  'recb',
+  'element',
+  'hero',
+  'none'
 );
 
 export const BaseStats = [

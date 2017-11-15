@@ -53,7 +53,7 @@ export class Compendium implements ICompendium {
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
       skills[name] = {
         name: name,
-        rank: json.cost ? json.cost : 0,
+        rank: json.cost ? json.cost / 100 : 0,
         cost: json.cost ? json.cost : 0,
         effect: json.effect,
         target: json.target,
