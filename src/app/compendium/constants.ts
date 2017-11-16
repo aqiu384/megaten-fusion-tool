@@ -4,7 +4,7 @@ import { CompendiumConfig, FusionDataService, FusionTrioService } from './models
 import { NormalFusionCalculator } from './models/normal-fusion-calculator';
 import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement } from './fusions/smt-nonelem-fusions';
 import { fuseWithNormResult, fuseWithSpecResult, fuseTwoElements } from './fusions/smt-element-fusions';
-import { splitWithDiffRace, splitWithSameRace } from './fusions/smt-nonelem-fissions';
+import { splitWithDiffRace, splitWithElement } from './fusions/smt-nonelem-fissions';
 import { splitElement } from './fusions/smt-element-fissions';
 
 import { TripleFusionCalculator } from './models/triple-fusion-calculator';
@@ -28,7 +28,7 @@ export const SMT_NORMAL_FUSION_CALCULATOR = new NormalFusionCalculator(
 );
 
 export const SMT_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
-  [ splitWithDiffRace, splitWithSameRace ],
+  [ splitWithDiffRace, splitWithElement ],
   [ splitElement ]
 );
 

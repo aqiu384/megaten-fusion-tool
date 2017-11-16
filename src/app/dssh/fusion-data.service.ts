@@ -9,15 +9,28 @@ import { FusionTrioService as IFusionTrioService } from '../compendium/models';
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
-import { splitWithDiffRace } from '../compendium/fusions/per-triple-fissions';
-import { fuseN1WithDiffRace, fuseT1WithDiffRace } from '../compendium/fusions/per-triple-fusions';
+import { splitWithDiffRace as splitDR, splitWithElementPair } from '../compendium/fusions/per-triple-fissions';
+import { splitWithDiffRace, splitWithSameRace } from '../compendium/fusions/tri-element-fissions';
+import { fuseInElementPair } from '../compendium/fusions/tri-element-fusions';
+import {
+  fuseT1WithDiffRace,
+  fuseN1WithDiffRace,
+  fuseWithSameRace,
+  fuseWithElementPair
+} from '../compendium/fusions/per-triple-fusions';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
-  triFissionCalculator = new TripleFusionCalculator([ splitWithDiffRace ], [ ]);
-  triFusionCalculator = new TripleFusionCalculator([ fuseN1WithDiffRace, fuseT1WithDiffRace ], [ ]);
+  triFissionCalculator = new TripleFusionCalculator(
+    [ splitDR, splitWithElementPair ],
+    [ splitWithDiffRace, splitWithSameRace ]
+  );
+  triFusionCalculator = new TripleFusionCalculator(
+    [ fuseN1WithDiffRace, fuseT1WithDiffRace, fuseWithSameRace, fuseWithElementPair ],
+    [ fuseInElementPair ]
+  );
 
   private _compendium = new Compendium();
   private _compendium$ = new BehaviorSubject(this._compendium);

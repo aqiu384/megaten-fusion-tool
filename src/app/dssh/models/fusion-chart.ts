@@ -32,10 +32,6 @@ export class FusionChart extends SmtFusionChart {
       const maxCol = isTripleChart ? i + 1 : races.length;
 
       table.push(fullTable[i].slice(minCol, maxCol));
-
-      if (isTripleChart) {
-        table[i][0] = '-';
-      }
     }
 
     const minElem = isTripleChart ? 4 : 0;
@@ -57,8 +53,9 @@ export class FusionChart extends SmtFusionChart {
     this.lvlModifier = isTripleChart ? 4 : 3;
 
     if (!isTripleChart) {
-      this.elementChart['Sylph (N)'] = this.elementChart['Sylph'];
       this.initNormalEntityFusions();
+    } else {
+      this.elementDemons = elems;
     }
   }
 

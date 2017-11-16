@@ -1,4 +1,5 @@
 import { FissionRow, FissionTable, Compendium, SquareChart, NameTrio } from '../models';
+import { splitWithElement } from './smt-nonelem-fissions';
 
 function findBin(n: number, bins: number[]): number {
   if (!bins.length) {
@@ -19,6 +20,7 @@ function findBin(n: number, bins: number[]): number {
 export function splitWithDiffRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
+  const lvlMod = 3 * trioChart.lvlModifier - 2;
   const recipes: NameTrio[] = [];
 
   const binRs = comp.getResultDemonLvls(raceR);
@@ -62,16 +64,18 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, chart: Square
     }
 
     for (const raceT2 of raceT2s) {
-      if (!fissionT1N1N2s[raceT1][raceT2]) {
-        fissionT1N1N2s[raceT1][raceT2] = [];
-      }
+      if (raceT1 !== raceT2) {
+        if (!fissionT1N1N2s[raceT1][raceT2]) {
+          fissionT1N1N2s[raceT1][raceT2] = [];
+        }
 
-      fissionT1N1N2s[raceT1][raceT2].push(raceT2);
+        fissionT1N1N2s[raceT1][raceT2].push(raceT2);
+      }
     }
   }
 
-  const minLvlR = binRs[binR - 1] ? 3 * binRs[binR - 1] - 13 : 0;
-  const maxLvlR = 3 * lvlR - 13;
+  const minLvlR = binRs[binR - 1] ? 3 * binRs[binR - 1] - lvlMod : 0;
+  const maxLvlR = 3 * lvlR - lvlMod;
 
   for (const [raceT1, raceT2s] of Object.entries(fissionT1N1N2s)) {
     for (const lvlT1 of comp.getIngredientDemonLvls(raceT1)) {
@@ -123,6 +127,7 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, chart: Square
 export function splitWithSameRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart } = chart;
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
+  const lvlMod = trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
 
   const lvlT1s = comp.getIngredientDemonLvls(raceR).filter(lvl => lvl !== lvlR);
@@ -143,7 +148,7 @@ export function splitWithSameRace(nameR: string, comp: Compendium, chart: Square
         const binRs = binN2s.filter(lvl => lvl !== lvlN2);
         const name3 = comp.reverseLookupDemon(raceR, lvlN2);
 
-        const lvlRp = (lvlT1 + lvlN1 + lvlN2 - 2) / 3 + 5;
+        const lvlRp = (lvlT1 + lvlN1 + lvlN2 - 2) / 3 + lvlMod;
         const binR = findBin(lvlRp, binRs);
 
         if (binR !== -1 && binRs[binR] === lvlR) {
@@ -154,4 +159,11 @@ export function splitWithSameRace(nameR: string, comp: Compendium, chart: Square
   }
 
   return recipes;
+}
+
+export function splitWithElementPair(name: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  return splitWithElement(name, comp, chart.tripleChart).map(pair => {
+    const [name2, name3] = pair.name2.split(' x ');
+    return { name1: pair.name1, name2, name3 };
+  });
 }

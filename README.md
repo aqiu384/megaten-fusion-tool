@@ -16,13 +16,11 @@ Fusion tool framework for Megami Tensei games.
 ## Supported Megami Tensei Games
 
 * [Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3)
-    * Includes cursed fusion settings
 * [Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
-    * Includes Laplace and race converter subapp settings
 * Shin Megami Tensei: Strange Journey Redux (WIP)
 * [Shin Megami Tensei IV](https://aqiu384.github.io/megaten-fusion-tool/smt4)
 * [Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
-* Devil Summoner: Soul Hackers (WIP)
+* [Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh)
 * [Devil Summoner: Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
 * [Devil Summoner: Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
 * [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)

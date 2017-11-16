@@ -30,6 +30,7 @@ export class PersonaFusionChart extends SmtFusionChart {
       }
     }
 
+    this.lvlModifier = isTripleChart ? 5 : 1;
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, this.elementDemons, table);
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.elementChart = {};

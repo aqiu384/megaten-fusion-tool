@@ -1,6 +1,6 @@
 import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
 import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement } from '../compendium/fusions/smt-nonelem-fusions';
-import { splitWithDiffRace, splitWithSameRace } from '../compendium/fusions/smt-nonelem-fissions';
+import { splitWithDiffRace, splitWithElement } from '../compendium/fusions/smt-nonelem-fissions';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};

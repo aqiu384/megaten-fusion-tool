@@ -44,10 +44,10 @@ export function splitWithDiffRace(name: string, compendium: Compendium, fusionCh
   return recipes;
 }
 
-export function splitWithSameRace(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
+export function splitWithElement(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
   const { race: targetRace, lvl: targetLvl } = compendium.getDemon(name);
-
   const recipes: NamePair[] = [];
+
   const elementModifiers = fusionChart.getElemModifiers(targetRace);
   const elementOffsets = Object.keys(elementModifiers).map(x => parseInt(x, 10));
 
