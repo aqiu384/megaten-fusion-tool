@@ -7,6 +7,8 @@ import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
+import * as FUSION_CHART_JSON from './data/fusion-chart.json';
+
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
@@ -16,7 +18,7 @@ export class FusionDataService implements IFusionDataService {
   private _compendium$ = new BehaviorSubject(this._compendium);
   compendium = this._compendium$.asObservable();
 
-  private _fusionChart = new FusionChart();
+  private _fusionChart = new FusionChart(FUSION_CHART_JSON);
   private _fusionChart$ = new BehaviorSubject(this._fusionChart);
   fusionChart = this._fusionChart$.asObservable();
 

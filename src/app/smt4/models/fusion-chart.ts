@@ -2,26 +2,25 @@ import { Races, ElementDemons } from './constants';
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
 import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
-  lvlModifier = 0;
+  lvlModifier = 1;
   elementDemons = ElementDemons;
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
 
-  constructor() {
+  constructor(fusionChartJson: any) {
     super();
-    this.initCharts();
+    this.initCharts(fusionChartJson);
   }
 
-  initCharts() {
-    const races: string[] = FUSION_CHART_JSON['races'];
+  initCharts(fusionChartJson: any) {
+    const races: string[] = fusionChartJson['races'];
     const elems: string[] = ELEMENT_CHART_JSON['elems'];
-    const table: string[][] = FUSION_CHART_JSON['table'];
+    const table: string[][] = fusionChartJson['table'];
     const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
     const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
