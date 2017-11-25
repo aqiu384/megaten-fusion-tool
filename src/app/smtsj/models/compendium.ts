@@ -7,6 +7,11 @@ import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import * as FUSION_REQUIREMENTS_JSON from '../data/fusion-requirements.json';
 
+import * as REDUX_DEMON_DATA_JSON from '../data/redux-demon-data.json';
+import * as REDUX_SKILL_DATA_JSON from '../data/redux-skill-data.json';
+import * as REDUX_SPECIAL_RECIPES_JSON from '../data/redux-special-recipes.json';
+import * as REDUX_FUSION_REQUIREMENTS_JSON from '../data/redux-fusion-requirements.json';
+
 export class Compendium implements ICompendium {
   private static CONVERTED_RACE = [ 'Fiend', 'UMA', 'Enigma' ];
 
@@ -29,12 +34,12 @@ export class Compendium implements ICompendium {
     return Math.floor((Math.floor(pcoeff * Math.pow(x, 3) / 1000) + 1300) * 0.75);
   }
 
-  constructor() {
-    this.initImportedData();
+  constructor(importRedux: boolean) {
+    this.initImportedData(importRedux);
     this.updateDerivedData();
   }
 
-  initImportedData() {
+  initImportedData(importRedux: boolean) {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string } = {};
@@ -42,59 +47,85 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
-    for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
-      demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
-        price: Compendium.estimateBasePrice(json.stats, json.pcoeff),
-        stats: json.stats,
-        resists: json.resists.split('').map(char => ResistCodes[char]),
-        inherits: json.inherits.split('').map(char => char === 'o'),
-        ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 100),
-        skills: json.skills.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
-        source: json.source.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
-      });
+    const demonDataJsons = [DEMON_DATA_JSON];
+    const skillDataJsons = [SKILL_DATA_JSON];
+    const specialRecipesJsons = [SPECIAL_RECIPES_JSON];
+    const fusionReqsJsons = [FUSION_REQUIREMENTS_JSON];
+
+    if (importRedux) {
+      demonDataJsons.push(REDUX_DEMON_DATA_JSON);
+      skillDataJsons.push(REDUX_SKILL_DATA_JSON);
+      specialRecipesJsons.push(REDUX_SPECIAL_RECIPES_JSON);
+      fusionReqsJsons.push(REDUX_FUSION_REQUIREMENTS_JSON);
     }
 
-    for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = Object.assign({
-        name,
-        power: 0,
-        accuracy: 0,
-        cost: 0,
-        inherit: json.element,
-        rank: 99,
-        learnedBy: [],
-        dsource: []
-      }, json);
+    for (const demonDataJson of demonDataJsons) {
+      for (const [name, json] of Object.entries(demonDataJson)) {
+        demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
+          price: Compendium.estimateBasePrice(json.stats, json.pcoeff),
+          stats: json.stats,
+          resists: json.resists.split('').map(char => ResistCodes[char]),
+          inherits: json.inherits.split('').map(char => char === 'o'),
+          ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 100),
+          skills: json.skills.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
+          source: json.source.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
+        });
+      }
     }
 
-    for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      specialRecipes[name] = json;
+    for (const skillDataJson of skillDataJsons) {
+      for (const [name, json] of Object.entries(skillDataJson)) {
+        skills[name] = Object.assign({
+          name,
+          power: 0,
+          accuracy: 0,
+          cost: 0,
+          inherit: json.element,
+          rank: 99,
+          learnedBy: [],
+          dsource: []
+        }, json);
+      }
+    }
 
-      if (json === 'Password') {
-        demons[name].prereq = 'Password only';
-        demons[name].fusion = 'accident';
-      } else if (json === 'Accident') {
-        demons[name].prereq = 'Fusion accident only';
-        demons[name].fusion = 'accident';
-      } else {
-        if (json.indexOf(',') < 0) {
-          demons[name].fusion = 'special';
-        }
+    for (const specialRecipesJson of specialRecipesJsons) {
+      for (const [name, json] of Object.entries(specialRecipesJson)) {
+        specialRecipes[name] = json;
 
-        for (const recipe of json.split(', ')) {
-          for (const ingredient of recipe.split(' x ')) {
-            if (!invSpecs[ingredient]) {
-              invSpecs[ingredient] = [];
+        if (json === 'Normal') {
+          delete specialRecipes[name];
+          delete demons[name].prereq;
+          demons[name].fusion = 'normal';
+        } else if (json === 'Password') {
+          demons[name].prereq = 'Password only';
+          demons[name].fusion = 'accident';
+        } else if (json === 'Accident') {
+          demons[name].prereq = 'Fusion accident only';
+          demons[name].fusion = 'accident';
+        } else {
+          delete demons[name].prereq;
+
+          if (json.indexOf(',') < 0) {
+            demons[name].fusion = 'special';
+          }
+
+          for (const recipe of json.split(', ')) {
+            for (const ingredient of recipe.split(' x ')) {
+              if (!invSpecs[ingredient]) {
+                invSpecs[ingredient] = [];
+              }
+
+              invSpecs[ingredient].push({ result: name, recipe });
             }
-
-            invSpecs[ingredient].push({ result: name, recipe });
           }
         }
       }
     }
 
-    for (const [name, json] of Object.entries(FUSION_REQUIREMENTS_JSON)) {
-      fusionRequirements[name] = json;
+    for (const fusionReqsJson of fusionReqsJsons) {
+      for (const [name, json] of Object.entries(fusionReqsJson)) {
+        fusionRequirements[name] = json;
+      }
     }
 
     for (const race of Races) {

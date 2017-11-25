@@ -16,6 +16,14 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
     ]
   },
   {
+    game: 'Shin Megami Tensei: Strange Journey Redux',
+    tool: 'smtdsj',
+    srcs: [
+      'https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384',
+      'https://docs.google.com/spreadsheets/d/1R0Uq9YAW0yVwwHk020y6dLYR-EIsLOlIId05JFZpJcM'
+    ]
+  },
+  {
     game: 'Shin Megami Tensei IV',
     tool: 'smt4',
     srcs: [

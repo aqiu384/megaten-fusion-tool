@@ -41,8 +41,9 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
 })
 export class AppComponent implements OnInit {
   static readonly GAME_PREFIXES: { [game: string]: string } = {
-    p3fes: 'p3',  p3aeg: 'p3',   p3p: 'p3',     p4g: 'p4',
-    dso: 'desu1', ds2br: 'desu2'
+    smtdsj: 'smtsj',
+    p3fes:     'p3', p3aeg:    'p3', p3p: 'p3', p4g: 'p4',
+    dso:    'desu1', ds2br: 'desu2'
   };
 
   currentGame = 'none';

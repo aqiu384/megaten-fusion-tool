@@ -8,6 +8,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'smt3', loadChildren: './smt3/compendium.module#CompendiumModule' },
   { path: 'smtsj', loadChildren: './smtsj/compendium.module#CompendiumModule' },
+  { path: 'smtdsj', loadChildren: './smtsj/compendium.module#CompendiumModule' },
   { path: 'smt4', loadChildren: './smt4/compendium.module#CompendiumModule' },
   { path: 'smt4f', loadChildren: './smt4f/compendium.module#CompendiumModule' },
   { path: 'dssh', loadChildren: './dssh/compendium.module#CompendiumModule' },
