@@ -11,6 +11,7 @@ import { SkillListHeaderComponent } from './components/skill-list-header.compone
 import { DemonStatsComponent } from './components/demon-stats.component';
 import { DemonResistsComponent } from './components/demon-resists.component';
 import { DemonSkillsComponent } from './components/demon-skills.component';
+import { DemonInheritsComponent } from './components/demon-inherits.component';
 import { DemonDlcSettingsComponent } from './components/demon-dlc-settings.component';
 
 import { SmtDemonListComponent, SmtDemonListRowComponent } from './components/smt-demon-list.component';
@@ -56,6 +57,7 @@ import {
     DemonStatsComponent,
     DemonResistsComponent,
     DemonSkillsComponent,
+    DemonInheritsComponent,
     DemonDlcSettingsComponent,
     DemonListHeaderComponent,
     SkillListHeaderComponent,
@@ -87,6 +89,7 @@ import {
     DemonStatsComponent,
     DemonResistsComponent,
     DemonSkillsComponent,
+    DemonInheritsComponent,
     DemonDlcSettingsComponent,
     DemonListHeaderComponent,
     SkillListHeaderComponent,

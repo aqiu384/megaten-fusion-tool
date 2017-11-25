@@ -10,9 +10,16 @@ import { FusionTrioService as IFusionTrioService, SquareChart } from '../compend
 import { Races, RaceOrder, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
 import { P3_TRIPLE_FISSION_CALCULATOR, P3_TRIPLE_FUSION_CALCULATOR } from '../compendium/constants';
 
+import * as VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import * as FES_DEMON_DATA_JSON from './data/fes-demon-data.json';
+import * as ANS_DEMON_DATA_JSON from './data/ans-demon-data.json';
 import * as P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
+
+import * as VAN_FUSION_CHART_JSON from './data/van-fusion-chart.json';
+import * as FES_FUSION_CHART_JSON from './data/fusion-chart.json';
+
+import * as VAN_SPECIAL_RECIPES from './data/special-recipes.json';
+import * as FES_SPECIAL_RECIPES from './data/fes-special-recipes.json';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -20,37 +27,57 @@ export class FusionDataService implements IFusionTrioService {
   fusionCalculator = P3_NORMAL_FUSION_CALCULATOR;
   triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
   triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
-  appName = 'Persona 3 FES';
+  appName = 'Persona 3';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
   compendium: Observable<Compendium>;
 
-  private _fusionChart = new PersonaFusionChart(FUSION_CHART_JSON, Races);
-  private _fusionChart$ = new BehaviorSubject(this._fusionChart);
-  fusionChart = this._fusionChart$.asObservable();
+  private _fusionChart: PersonaFusionChart;
+  private _fusionChart$: BehaviorSubject<PersonaFusionChart>;
+  fusionChart: Observable<PersonaFusionChart>;
 
-  private _tripleChart = new PersonaFusionChart(FUSION_CHART_JSON, Races, true);
-  private _squareChart$ = new BehaviorSubject({
-    normalChart: this._fusionChart,
-    tripleChart: this._tripleChart,
-    raceOrder: RaceOrder
-  });
-
-  squareChart = this._squareChart$.asObservable();
+  private _tripleChart: PersonaFusionChart;
+  private _squareChart$: BehaviorSubject<SquareChart>;
+  squareChart: Observable<SquareChart>;
 
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
-    const demonDataJsons = [FES_DEMON_DATA_JSON];
+    const demonDataJsons = [VAN_DEMON_DATA_JSON];
+    const specialRecipes = [VAN_SPECIAL_RECIPES];
+    let fusionChart = VAN_FUSION_CHART_JSON;
 
-    if (game === 'p3p') {
-      demonDataJsons.push(P3P_DEMON_DATA_JSON);
-      this.appName = 'Persona 3 Portable';
+    if (game !== 'p3') {
+      this.appName = 'Persona 3 FES';
+      demonDataJsons.push(FES_DEMON_DATA_JSON);
+      specialRecipes.push(FES_SPECIAL_RECIPES);
+      fusionChart = FES_FUSION_CHART_JSON;
+
+      if (game === 'p3aeg') {
+        this.appName = 'Persona 3 FES: The Answer';
+        demonDataJsons.push(ANS_DEMON_DATA_JSON);
+      } else if (game === 'p3p') {
+        this.appName = 'Persona 3 Portable';
+        demonDataJsons.push(P3P_DEMON_DATA_JSON);
+      }
     }
 
-    this._compendium = new Compendium(demonDataJsons);
+    this._compendium = new Compendium(demonDataJsons, specialRecipes);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
+
+    this._fusionChart = new PersonaFusionChart(fusionChart, []);
+    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
+    this.fusionChart = this._fusionChart$.asObservable();
+
+    this._tripleChart = new PersonaFusionChart(fusionChart, [], true);
+    this._squareChart$ = new BehaviorSubject({
+      normalChart: this._fusionChart,
+      tripleChart: this._tripleChart,
+      raceOrder: RaceOrder
+    });
+
+    this.squareChart = this._squareChart$.asObservable();
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }

@@ -39,22 +39,10 @@ import { FusionDataService } from '../fusion-data.service';
         [ailmentHeaders]="ailmentHeaders"
         [ailments]="demon.ailments">
       </app-demon-resists>
-      <table>
-        <thead>
-          <tr><th colspan="16">Inherits</th></tr>
-          <tr><th *ngFor="let element of inheritanceHeaders">
-            <div class="element-icon {{ element }}">{{ element }}</div>
-          </th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let element of inheritanceHeaders; let i = index"
-              [style.color]="demon.inherits[i] ? null : 'transparent'">
-              {{ demon.inherits[i] ? 'yes' : 'no' }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <app-demon-inherits
+        [inheritHeaders]="inheritanceHeaders"
+        [inherits]="demon.inherits">
+      </app-demon-inherits>
       <app-demon-skills
         [hasTarget]="true"
         [hasRank]="true"

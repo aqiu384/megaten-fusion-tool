@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Subscription } from 'rxjs/Subscription';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistElements, ElementOrder, APP_TITLE } from '../constants';
+import { BaseStats, ResistElements, InheritElements, ElementOrder, APP_TITLE } from '../constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -28,6 +28,10 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="resistanceHeaders"
         [resists]="demon.resists">
       </app-demon-resists>
+      <app-demon-inherits
+        [inheritHeaders]="inheritHeaders"
+        [inherits]="demon.inherits">
+      </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="elemOrder"
         [compendium]="compendium"
@@ -56,6 +60,7 @@ export class DemonEntryComponent {
 
   statHeaders = BaseStats;
   elemOrder = ElementOrder;
+  inheritHeaders = InheritElements;
   resistanceHeaders = ResistElements;
 }
 

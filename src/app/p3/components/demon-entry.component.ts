@@ -29,6 +29,7 @@ import { FusionDataService } from '../fusion-data.service';
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-skills
+        [hasRank]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">

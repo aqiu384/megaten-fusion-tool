@@ -3,7 +3,7 @@ export interface Demon {
   race: string;
   lvl: number;
   price: number;
-  inherit: string;
+  inherits: boolean[];
   stats: number[];
   resists: number[];
   skills: { [skill: string]: number; };

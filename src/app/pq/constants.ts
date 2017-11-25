@@ -26,6 +26,11 @@ export const SkillElements = ResistElements.concat(
   'support',  'navi',    'passive'
 );
 
+export const InheritElements = [
+  'bash', 'fire', 'ice', 'elec', 'wind',
+  'light', 'dark', 'almighty', 'recovery', 'passive'
+];
+
 export const BaseStats = ['HP', 'MP'];
 
 export const ResistCodes = {

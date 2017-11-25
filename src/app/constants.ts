@@ -56,10 +56,24 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
     ]
   },
   {
+    game: 'Persona 3',
+    tool: 'p3',
+    srcs: [
+      'https://www.gamefaqs.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404'
+    ]
+  },
+  {
     game: 'Persona 3 FES',
     tool: 'p3fes',
     srcs: [
       'http://megamitensei.wikia.com/wiki/List_of_Persona_3_FES_Personas',
+      'https://www.gamefaqs.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404'
+    ]
+  },
+  {
+    game: 'Persona 3 FES: The Answer',
+    tool: 'p3aeg',
+    srcs: [
       'https://www.gamefaqs.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404'
     ]
   },

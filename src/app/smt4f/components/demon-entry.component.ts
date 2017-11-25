@@ -29,25 +29,11 @@ import { FusionDataService } from '../fusion-data.service';
         [ailmentHeaders]="ailmentHeaders"
         [ailments]="demon.ailments">
       </app-demon-resists>
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="12">Skill Affinities</th>
-          </tr>
-          <tr>
-            <th *ngFor="let element of affinityHeaders">
-              <div class="element-icon {{ element }}"></div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td *ngFor="let affinity of demon.affinities" class="affinity{{ affinity }}">
-              {{ affinity | affinityToString }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <app-demon-inherits
+        [inheritHeaders]="affinityHeaders"
+        [inherits]="demon.affinities">
+        [hasLvls]="true"
+      </app-demon-inherits>
       <app-demon-skills
         [hasTarget]="true"
         [hasRank]="true"

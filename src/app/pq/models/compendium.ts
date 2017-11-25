@@ -38,14 +38,14 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          race:    json.race,
-          lvl:     json.lvl,
-          price:   json.price * 100,
-          inherit: json.inherits,
-          stats:   [json.hp, json.mp],
-          resists: json.resists ? json.split('').map(char => ResistCodes[char]) : [],
-          skills:  json.skills,
-          fusion:  'normal'
+          race:     json.race,
+          lvl:      json.lvl,
+          price:    json.price * 100,
+          inherits: json.inherits.split('').map(char => char === 'o'),
+          stats:    [json.hp, json.mp],
+          resists:  json.resists ? json.split('').map(char => ResistCodes[char]) : [],
+          skills:   json.skills,
+          fusion:   'normal'
         };
       }
     }

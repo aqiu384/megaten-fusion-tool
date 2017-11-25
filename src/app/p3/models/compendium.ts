@@ -3,7 +3,6 @@ import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -18,12 +17,12 @@ export class Compendium implements ICompendium {
 
   dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(demonDataJsons: any[]) {
-    this.initImportedData(demonDataJsons);
+  constructor(demonDataJsons: any[], specialRecipeJsons: any[]) {
+    this.initImportedData(demonDataJsons, specialRecipeJsons);
     this.updateDerivedData();
   }
 
-  initImportedData(demonDataJsons: any[]) {
+  initImportedData(demonDataJsons: any[], specialRecipeJsons: any[]) {
     const demons:   { [name: string]: Demon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
@@ -50,7 +49,7 @@ export class Compendium implements ICompendium {
         name,
         element:   json.element,
         cost:      json.cost ? json.cost : 0,
-        rank:      json.cost ? json.cost / 100 : 0,
+        rank:      json.rank,
         effect:    json.effect,
         learnedBy: [],
         fuse:      json.card ? json.card.split(', ') : [],
@@ -62,9 +61,11 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      specials[name] = json;
-      demons[name].fusion = 'special';
+    for (const recipeJson of specialRecipeJsons) {
+      for (const [name, json] of Object.entries(recipeJson)) {
+        specials[name] = json;
+        demons[name].fusion = 'special';
+      }
     }
 
     for (const race of Races) {
