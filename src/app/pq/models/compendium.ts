@@ -40,6 +40,7 @@ export class Compendium implements ICompendium {
           name,
           race:    json.race,
           lvl:     json.lvl,
+          price:   json.price * 100,
           inherit: json.inherits,
           stats:   [json.hp, json.mp],
           resists: json.resists ? json.split('').map(char => ResistCodes[char]) : [],

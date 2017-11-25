@@ -43,6 +43,7 @@ export class Compendium implements ICompendium {
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
+        price:   json.price * 2,
         stats:   json.stats,
         resists: json.resists.split('').map(char => ResistCodes[char]),
         ailments: json.ailments ?

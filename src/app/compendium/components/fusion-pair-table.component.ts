@@ -10,6 +10,7 @@ import { CompendiumConfig, FusionPair } from '../models';
   selector: 'tr.app-fusion-pair-table-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <td>{{ data.price }}</td>
     <td>{{ data.race1 }}</td>
     <td>{{ data.lvl1 | lvlToNumber }}</td>
     <td><a routerLink="{{ baseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
@@ -28,19 +29,20 @@ export class FusionPairTableRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th colspan="6">{{ title }}</th>
+      <th colspan="7">{{ title }}</th>
     </tr>
     <tr>
-      <th colspan="3" [style.width.%]="50">{{ leftHeader }}</th>
-      <th colspan="3" [style.width.%]="50">{{ rightHeader }}</th>
+      <th rowSpan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Price</th>
+      <th colspan="3" [style.width.%]="45">{{ leftHeader }}</th>
+      <th colspan="3" [style.width.%]="45">{{ rightHeader }}</th>
     </tr>
     <tr>
-      <th [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Race</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">Lvl</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(3) ]" (click)="nextSortFunIndex(3)">Name</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(4) ]" (click)="nextSortFunIndex(4)">Race</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(5) ]" (click)="nextSortFunIndex(5)">Lvl</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(6) ]" (click)="nextSortFunIndex(6)">Name</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">Race</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(3) ]" (click)="nextSortFunIndex(3)">Lvl</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(4) ]" (click)="nextSortFunIndex(4)">Name</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(5) ]" (click)="nextSortFunIndex(5)">Race</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(6) ]" (click)="nextSortFunIndex(6)">Lvl</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(7) ]" (click)="nextSortFunIndex(7)">Name</th>
     </tr>
   `
 })
@@ -101,7 +103,8 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
     super();
     const { raceOrder } = config;
     this.sortFuns = [
-      (f1, f2) => (raceOrder[f1.race1] - raceOrder[f2.race1]) * 100 + f2.lvl1 - f1.lvl1,
+      (f1, f2) => f1.price - f2.price,
+      (f1, f2) => f1.price - f2.price,
       (f1, f2) => (raceOrder[f1.race1] - raceOrder[f2.race1]) * 100 + f2.lvl1 - f1.lvl1,
       (f1, f2) => f1.lvl1 - f2.lvl1,
       (f1, f2) => f1.name1.localeCompare(f2.name1),

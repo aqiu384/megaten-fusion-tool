@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs/Subscription';
 
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, NamePair, FusionPair } from '../models';
-import { toFusionPair } from '../models/conversions';
+import { toFusionPairResult } from '../models/conversions';
 
 import { CurrentDemonService } from '../current-demon.service';
 
@@ -28,7 +28,7 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
   fusionPairs: FusionPair[] = [];
 
   subscriptions: Subscription[] = [];
-  toFusionPair = (names: NamePair) => toFusionPair(names, this.compendium);
+  toFusionPair = (names: NamePair) => toFusionPairResult(names, this.compendium);
 
   constructor(
     private currentDemonService: CurrentDemonService,

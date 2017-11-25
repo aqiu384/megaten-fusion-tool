@@ -24,6 +24,11 @@ export class Compendium implements ICompendium {
 
   dlcDemons: { [name: string]: boolean } = {};
 
+  static estimateBasePrice(stats: number[], pcoeff: number): number {
+    const x = stats.slice(2).reduce((acc, stat) => stat + acc, 0);
+    return Math.floor((Math.floor(pcoeff * Math.pow(x, 3) / 1000) + 1300) * 0.75);
+  }
+
   constructor() {
     this.initImportedData();
     this.updateDerivedData();
@@ -39,6 +44,7 @@ export class Compendium implements ICompendium {
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
+        price: Compendium.estimateBasePrice(json.stats, json.pcoeff),
         stats: json.stats,
         resists: json.resists.split('').map(char => ResistCodes[char]),
         inherits: json.inherits.split('').map(char => char === 'o'),

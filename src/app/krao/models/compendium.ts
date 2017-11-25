@@ -37,6 +37,7 @@ export class Compendium implements ICompendium {
           name: name,
           race: json.order,
           lvl: json.lvl,
+          price: 100 * (Math.floor(Math.pow(json.stats.slice(2).reduce((acc, stat) => stat + acc, 0), 2) / 20) + json.lvl),
           stats: json.stats,
           resists: json.resists,
           skills: json.skills,
@@ -44,6 +45,12 @@ export class Compendium implements ICompendium {
           conv: json.conv,
           fusion: 'normal',
         };
+      }
+
+      if (json.order === 'Element') {
+        demons[name].price += 2000;
+      } else if (json.order === 'Spirit') {
+        demons[name].price += 8000;
       }
     }
 

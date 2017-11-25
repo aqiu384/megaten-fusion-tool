@@ -19,6 +19,7 @@ import { FusionDataService } from '../fusion-data.service';
     <ng-container *ngIf="demon">
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
+        [price]="demon.price"
         [statHeaders]="statHeaders"
         [stats]="demon.stats">
       </app-demon-stats>

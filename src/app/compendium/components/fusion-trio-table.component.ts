@@ -26,6 +26,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
         (click)="toggleShowing.emit(showIndex)">
         Show
       </th>
+      <td>{{ trio.minPrice }}</td>
       <td>{{ trio.demon.race }}</td>
       <td>{{ trio.demon.lvl }}</td>
       <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
@@ -41,6 +42,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
         </th>
       </tr>
       <tr *ngFor="let recipe of trio.fusions">
+        <td>{{ recipe.price }}</td>
         <td>{{ trio.demon.race }}</td>
         <td>{{ trio.demon.lvl }}</td>
         <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
@@ -68,18 +70,19 @@ export class FusionTrioTableRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th colspan="10">{{ title }}</th>
+      <th colspan="11">{{ title }}</th>
     </tr>
     <tr>
-      <th class="sortable" rowspan="2" [style.width.%]="10" (click)="toggleHideAll()">Hide All</th>
-      <th colspan="3" [style.width.%]="30">{{ leftHeader }}</th>
-      <th colspan="3" [style.width.%]="30">Ingredient 2</th>
-      <th colspan="3" [style.width.%]="30">Ingredient 3</th>
+      <th class="sortable" rowspan="2" [style.width.%]="8" (click)="toggleHideAll()">Hide All</th>
+      <th rowSpan="2" [style.width.%]="8" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Price</th>
+      <th colspan="3" [style.width.%]="28">{{ leftHeader }}</th>
+      <th colspan="3" [style.width.%]="28">Ingredient 2</th>
+      <th colspan="3" [style.width.%]="28">Ingredient 3</th>
     </tr>
     <tr>
-      <th [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Race</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">Lvl<span>--</span></th>
-      <th [ngClass]="[ 'sortable', sortDirClass(3) ]" (click)="nextSortFunIndex(3)">Name</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">Race</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(3) ]" (click)="nextSortFunIndex(3)">Lvl<span>--</span></th>
+      <th [ngClass]="[ 'sortable', sortDirClass(4) ]" (click)="nextSortFunIndex(4)">Name</th>
       <th>Race</th>
       <th>Lvl</th>
       <th>Name</th>
@@ -176,7 +179,8 @@ export class FusionTrioTableComponent extends SortedTableComponent<FusionTrio> i
 
     if (this.raceOrder) {
       this.sortFuns.push(
-        (a, b) => (this.raceOrder[a.demon.race] - this.raceOrder[b.demon.race]) * 200 + a.demon.lvl - b.demon.lvl,
+        (a, b) => a.minPrice - b.minPrice,
+        (a, b) => a.minPrice - b.minPrice,
         (a, b) => (this.raceOrder[a.demon.race] - this.raceOrder[b.demon.race]) * 200 + a.demon.lvl - b.demon.lvl,
         (a, b) => a.demon.lvl - b.demon.lvl,
         (a, b) => a.demon.name.localeCompare(b.demon.name)

@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs/Subscription';
 
 import { FUSION_TRIO_SERVICE } from '../constants';
 import { Compendium, FusionTrioService, TripleCalculator, NameTrio, DemonTrio, FusionTrio, SquareChart } from '../models';
-import { toDemonTrio } from '../models/conversions';
+import { toDemonTrioResult } from '../models/conversions';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 
@@ -29,8 +29,8 @@ export class TripleFusionTableComponent implements OnInit, OnDestroy {
   currentDemon: string;
   fusionTrios: FusionTrio[] = [];
 
-  toDemonTrio = (names: NameTrio) => toDemonTrio(names, this.compendium);
-  sortDemonTrio = (a: DemonTrio, b: DemonTrio) => a.d1.lvl - b.d1.lvl;
+  toDemonTrio = (names: NameTrio) => toDemonTrioResult(names, this.compendium);
+  sortDemonTrio = (a: DemonTrio, b: DemonTrio) => a.price - b.price;
 
   constructor(
     private route: ActivatedRoute,
@@ -94,6 +94,7 @@ export class TripleFusionTableComponent implements OnInit, OnDestroy {
 
       this.fusionTrios = Object.entries(fusions).map(recipe => ({
         demon: this.compendium.getDemon(recipe[0]),
+        minPrice: recipe[1][0].price,
         fusions: recipe[1]
       }));
     }

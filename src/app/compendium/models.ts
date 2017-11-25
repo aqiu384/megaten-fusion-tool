@@ -14,6 +14,7 @@ export interface Demon {
   race: string;
   lvl: number;
   name: string;
+  price: number;
   inherit?: string;
   inherits?: boolean[];
   stats: number[];
@@ -103,6 +104,7 @@ export interface DemonPair {
 }
 
 export interface DemonTrio extends DemonPair {
+  price: number;
   d3: Demon;
 }
 
@@ -113,10 +115,12 @@ export interface SpecialRecipe {
 
 export interface FusionTrio {
   demon: Demon;
+  minPrice: number;
   fusions: DemonTrio[];
 }
 
 export interface FusionEntry {
+  price: number;
   race1: string;
   lvl1: number;
   name1: string;

@@ -25,6 +25,11 @@ export abstract class DesuCompendium implements ICompendium {
 
   private _dlcDemons: { [name: string]: boolean } = {};
 
+  static estimateBasePrice(stats: number[]): number {
+    const x = stats.slice(2).reduce((acc, stat) => stat + acc, 0);
+    return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
+  }
+
   constructor(demonData: any, skillData: any, specialRecipes: any, dlcDemons: any) {
     this.initImportedData(demonData, skillData, specialRecipes, dlcDemons);
     this.updateDerivedData();
@@ -47,6 +52,7 @@ export abstract class DesuCompendium implements ICompendium {
         race:    json.race,
         lvl:     json.lvl,
         stats:   json.stats,
+        price:   DesuCompendium.estimateBasePrice(json.stats),
         resists: json.resists.split('').map(char => ResistCodes[char]),
         command: json.command || {},
         passive: json.passive || {},

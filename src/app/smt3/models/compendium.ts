@@ -36,6 +36,10 @@ export class Compendium implements ICompendium {
         resists: ResistanceElements.map(val => 100)
       });
 
+      demons[name].price = 100 * Math.floor(
+        Math.pow(demons[name].stats.slice(2).reduce((acc, stat) => stat + acc, 0), 2) / 20
+      );
+
       for (const [special, elements] of Object.entries(SpecialResistances)) {
         if (json.resists.hasOwnProperty(special)) {
           for (const element of elements) {

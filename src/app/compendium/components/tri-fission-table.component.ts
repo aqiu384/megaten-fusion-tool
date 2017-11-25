@@ -29,7 +29,7 @@ export class TripleFissionTableComponent implements OnInit, OnDestroy {
   fissionTrios: FusionTrio[] = [];
 
   toDemonTrio = (names: NameTrio) => toDemonTrio(names, this.compendium);
-  sortDemonTrio = (a: DemonTrio, b: DemonTrio) => a.d1.lvl - b.d1.lvl;
+  sortDemonTrio = (a: DemonTrio, b: DemonTrio) => a.price - b.price;
 
   constructor(
     private route: ActivatedRoute,
@@ -95,6 +95,7 @@ export class TripleFissionTableComponent implements OnInit, OnDestroy {
 
       this.fissionTrios = Object.entries(fissions).map(recipe => ({
         demon: this.compendium.getDemon(recipe[0]),
+        minPrice: recipe[1][0].price,
         fusions: recipe[1]
       }));
     }

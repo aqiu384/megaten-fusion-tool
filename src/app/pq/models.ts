@@ -2,6 +2,7 @@ export interface Demon {
   name: string;
   race: string;
   lvl: number;
+  price: number;
   inherit: string;
   stats: number[];
   resists: number[];

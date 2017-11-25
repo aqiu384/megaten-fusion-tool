@@ -40,6 +40,7 @@ export class Compendium implements ICompendium {
           name: name,
           race: json.order,
           lvl: json.lvl,
+          price: 100 * (Math.floor(Math.pow(json.stats.slice(3).reduce((acc, stat) => stat + acc, 0), 2) / 20) + json.lvl),
           stats: json.stats,
           resists: json.resists,
           skills: json.skills,
