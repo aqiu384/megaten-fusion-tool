@@ -58,7 +58,7 @@ export function toDemonTrioResult(names: NameTrio, compendium: Compendium): Demo
   const d3 = compendium.getDemon(names.name3);
 
   return {
-    price: d2.price + d3.price,
+    price: d1.price + d2.price,
     d1, d2, d3
   };
 }

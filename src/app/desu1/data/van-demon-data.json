@@ -58,24 +58,25 @@
     ]
   },
   "Agares": {
+    "changes": "Level +2; +1 St, +1 Ma Learns Gigajama at Lv. 58, instead of Lv. 56 Learns Tetrakarn at Lv. 59, instead of Lv. 57 Starts with Phys Drain learned, instead of learning it at Lv. 57 Lv. 99 stats: +1 Ma, -1 Ag",
     "command": {
-      "Gigajama": 58,
+      "Gigajama": 56,
       "Mazandyne": 101,
-      "Tetrakarn": 59
+      "Tetrakarn": 57
     },
-    "lvl": 57,
+    "lvl": 55,
     "passive": {
       "Fire Amp": 105,
       "Force Amp": 103,
-      "Phys Drain": 0
+      "Phys Drain": 57
     },
     "race": "Fallen",
     "resists": "ss--sw",
     "stats": [
-      458,
-      177,
-      21,
-      17,
+      464,
+      179,
+      20,
+      16,
       17,
       18
     ]
@@ -102,40 +103,42 @@
     ]
   },
   "Amaterasu": {
+    "changes": "Level +10; +2 St, +4 Ma, +2 Vi, +2 Ag Starts with Prayer learned, instead of learning it at Lv. 64 No longer has Samarecarm Learns Recarmloss at Lv. 74 Lv. 99 stats: -2 St, +2 Vi",
     "command": {
-      "Prayer": 0,
-      "Recarmloss": 74
+      "Prayer": 64,
+      "Samarecarm": 0
     },
-    "lvl": 73,
+    "lvl": 63,
     "race": "Megami",
     "resists": "-n--n-",
     "stats": [
-      465,
-      306,
-      21,
-      29,
-      20,
-      19
+      405,
+      264,
+      19,
+      25,
+      18,
+      17
     ],
     "unique": true
   },
   "Ananta": {
+    "changes": "Level +7; +2 St, +1 Ma, +2 Vi, 1 Ag BST -1 Starts with Makarakarn learned Learns Attack All at Lv. 72, instead of Lv. 66 Lv. 99 stats: -1 Vi",
     "command": {
-      "Makarakarn": 0
+      "Makarakarn": 65
     },
-    "lvl": 71,
+    "lvl": 64,
     "passive": {
-      "Attack All": 72
+      "Attack All": 66
     },
     "race": "Snake",
     "resists": "-sss-w",
     "stats": [
-      665,
-      180,
-      30,
-      19,
-      24,
-      13
+      602,
+      164,
+      28,
+      18,
+      22,
+      12
     ],
     "unique": true
   },
@@ -209,36 +212,38 @@
     ]
   },
   "Arioch": {
+    "changes": "Level +1; +1 Vi Starts with Tetrakarn learned, instead of learning it at Lv. 56 Lv. 99 stats: -1 St, +1 Vi",
     "command": {
       "Deathbound": 0,
-      "Tetrakarn": 0
+      "Tetrakarn": 56
     },
-    "lvl": 56,
+    "lvl": 55,
     "race": "Vile",
     "resists": "nws-sw",
     "stats": [
-      555,
-      70,
+      540,
+      69,
       23,
       14,
-      18,
+      17,
       17
     ],
     "unique": true
   },
   "Astaroth": {
+    "changes": "Level -1; Stats unchanged BST +1 Lv. 99 stats: +1 Ma",
     "command": {
       "Deathbound": 54
     },
-    "lvl": 51,
+    "lvl": 52,
     "passive": {
       "Null Curse": 0
     },
     "race": "Tyrant",
     "resists": "-wsss-",
     "stats": [
-      372,
-      136,
+      378,
+      138,
       27,
       17,
       11,
@@ -247,6 +252,7 @@
     "unique": true
   },
   "Asura": {
+    "changes": "Level +9; +3 St, +2 Ma, +2 Vi, +2 Ag",
     "command": {
       "Megidolaon": 0
     },
@@ -254,12 +260,12 @@
     "race": "Deity",
     "resists": "-d-s--",
     "stats": [
-      824,
-      206,
-      28,
-      23,
-      23,
-      22
+      736,
+      184,
+      25,
+      21,
+      21,
+      20
     ],
     "unique": true
   },
@@ -304,43 +310,25 @@
       11
     ]
   },
-  "Baphomet": {
-    "command": {
-      "Holy Dance": 0
-    },
-    "lvl": 69,
-    "passive": {
-      "Avenge": 71
-    },
-    "race": "Vile",
-    "resists": "-ddsss",
-    "stats": [
-      522,
-      176,
-      26,
-      19,
-      18,
-      22
-    ],
-    "unique": true
-  },
   "Barong": {
+    "changes": "Level +3; +1 St, +1 Ma, +1 Vi No longer learns Elec Drain at Lv. 61 No longer learns Life Lift at Lv. 62 Starts with Mana Aid learned Lv. 99 stats: +1 St, -1 Ag",
     "command": {
       "Maziodyne": 103
     },
-    "lvl": 63,
+    "lvl": 60,
     "passive": {
       "Elec Amp": 105,
-      "Mana Aid": 0
+      "Elec Drain": 61,
+      "Life Lift": 62
     },
     "race": "Avatar",
     "resists": "-s-dw-",
     "stats": [
-      486,
-      170,
-      23,
+      462,
+      162,
       22,
-      18,
+      21,
+      17,
       17
     ]
   },
@@ -366,20 +354,21 @@
     ]
   },
   "Behemoth": {
-    "lvl": 70,
+    "changes": "Level +8; +3 St, +1 Ma, +3 Vi, +1 Ag No longer learns Attack All at Lv. 64 Starts with Extra Savings learned Lv. 99 stats: +7 Ma, +1 Ag",
+    "lvl": 62,
     "passive": {
-      "Dual Shadow": 103,
-      "Extra Savings": 0
+      "Attack All": 0,
+      "Dual Shadow": 103
     },
     "race": "Wilder",
     "resists": "-wss--",
     "stats": [
-      808,
-      64,
-      37,
-      10,
-      31,
-      8
+      720,
+      56,
+      34,
+      9,
+      28,
+      7
     ]
   },
   "Berserker": {
@@ -436,27 +425,6 @@
     ],
     "unique": true
   },
-  "Black Maria": {
-    "command": {
-      "Diarahan": 0,
-      "Mabufudyne": 103
-    },
-    "lvl": 66,
-    "passive": {
-      "Critical Heal": 101,
-      "Ice Drain": 67
-    },
-    "race": "Megami",
-    "resists": "---ws-",
-    "stats": [
-      415,
-      294,
-      20,
-      26,
-      17,
-      19
-    ]
-  },
   "Brigid": {
     "command": {
       "Diarahan": 0
@@ -474,26 +442,6 @@
       19,
       10,
       14
-    ]
-  },
-  "Cabracan": {
-    "command": {
-      "Multi-Strike": 0
-    },
-    "lvl": 68,
-    "passive": {
-      "Avenge": 69,
-      "Phys Amp": 101
-    },
-    "race": "Beast",
-    "resists": "-s--wr",
-    "stats": [
-      686,
-      156,
-      25,
-      10,
-      30,
-      19
     ]
   },
   "Cait Sith": {
@@ -515,26 +463,6 @@
       12,
       9,
       11
-    ]
-  },
-  "Catoblepas": {
-    "command": {
-      "Deathbound": 0
-    },
-    "lvl": 54,
-    "passive": {
-      "+Stone": 103,
-      "Attack All": 55
-    },
-    "race": "Wilder",
-    "resists": "-wsr-w",
-    "stats": [
-      426,
-      144,
-      22,
-      18,
-      17,
-      13
     ]
   },
   "Cerberus": {
@@ -581,9 +509,10 @@
     "unique": true
   },
   "Culebre": {
+    "changes": "No longer learns Mabufudyne at Lv. 48 Learns Cursed Dance at Lv. 48 Gained a Force resistance",
     "command": {
       "Bufudyne": 0,
-      "Cursed Dance": 48,
+      "Mabufudyne": 48,
       "Might Call": 102
     },
     "lvl": 47,
@@ -592,7 +521,7 @@
       "Life Surge": 105
     },
     "race": "Dragon",
-    "resists": "-wrss-",
+    "resists": "-wrs--",
     "stats": [
       360,
       130,
@@ -639,26 +568,6 @@
       4
     ]
   },
-  "Fafnir": {
-    "command": {
-      "Deathbound": 103,
-      "Final Strike": 101
-    },
-    "lvl": 64,
-    "passive": {
-      "Force Drain": 0
-    },
-    "race": "Dragon",
-    "resists": "swnwd-",
-    "stats": [
-      552,
-      162,
-      24,
-      17,
-      21,
-      18
-    ]
-  },
   "Flaemis": {
     "command": {
       "Maragi": 0
@@ -701,24 +610,26 @@
     ]
   },
   "Ganesha": {
+    "changes": "Level +8; +1 St, +3 Ma, +1 Vi, +3 Ag No longer learns Judgement at Lv. 62 Starts with Megido learned Starts with Force Drain learned, instead of learning it at Lv. 61 No longer has Ice Drain Lv. 99 stats: -1 St, +1 Ma, -1 Vi, +1 Ag",
     "command": {
-      "Mazandyne": 104,
-      "Megido": 0
+      "Judgement": 62,
+      "Mazandyne": 104
     },
-    "lvl": 68,
+    "lvl": 60,
     "passive": {
       "Drain Hit": 103,
-      "Force Drain": 0
+      "Force Drain": 61,
+      "Ice Drain": 0
     },
     "race": "Genma",
     "resists": "--dwss",
     "stats": [
-      564,
-      182,
-      28,
-      23,
-      26,
-      7
+      510,
+      160,
+      27,
+      20,
+      25,
+      4
     ]
   },
   "Garm": {
@@ -886,45 +797,6 @@
       4
     ]
   },
-  "Huoniao": {
-    "command": {
-      "Makarakarn": 101,
-      "Maragidyne": 0,
-      "Megido": 57
-    },
-    "lvl": 56,
-    "passive": {
-      "Anti-Elec": 105,
-      "Fire Amp": 103
-    },
-    "race": "Avian",
-    "resists": "-nw---",
-    "stats": [
-      420,
-      158,
-      14,
-      23,
-      14,
-      21
-    ]
-  },
-  "Ishtar": {
-    "command": {
-      "Diarahan": 30,
-      "Recarm": 0
-    },
-    "lvl": 29,
-    "race": "Megami",
-    "resists": "---s-n",
-    "stats": [
-      190,
-      151,
-      9,
-      17,
-      9,
-      10
-    ]
-  },
   "Jack Frost": {
     "command": {
       "Bufu": 0,
@@ -945,26 +817,6 @@
       10,
       8,
       5
-    ]
-  },
-  "Jahi": {
-    "command": {
-      "Maziodyne": 103,
-      "Recarmloss": 0
-    },
-    "lvl": 67,
-    "passive": {
-      "Elec Amp": 101
-    },
-    "race": "Femme",
-    "resists": "-swss-",
-    "stats": [
-      428,
-      288,
-      21,
-      26,
-      17,
-      19
     ]
   },
   "Jambavan": {
@@ -988,13 +840,14 @@
     ]
   },
   "Kabuso": {
+    "changes": "Has Fire resistance instead of Ice resistance",
     "command": {
       "Agi": 0,
       "Zan": 4
     },
     "lvl": 2,
     "race": "Beast",
-    "resists": "-s-w-s",
+    "resists": "--sw-s",
     "stats": [
       33,
       21,
@@ -1005,22 +858,23 @@
     ]
   },
   "Kazfiel": {
+    "changes": "Level +2; +1 St, +1 Ag Starts with Judgement learned, instead of learning it at Lv. 58 Starts with Ice Repel learned, instead of learning it at Lv. 57 Lv. 99 stats: +1 St, -1 Vi",
     "command": {
-      "Judgement": 0
+      "Judgement": 58
     },
-    "lvl": 58,
+    "lvl": 56,
     "passive": {
-      "Ice Repel": 0
+      "Ice Repel": 57
     },
     "race": "Divine",
     "resists": "s-r---",
     "stats": [
       483,
       152,
-      23,
+      22,
       18,
       20,
-      13
+      12
     ]
   },
   "Kijimunaa": {
@@ -1203,19 +1057,17 @@
     ]
   },
   "Laksmi": {
+    "changes": "Learns Mediarahan at Lv. 50, instead of Lv. 49 Learns Samarecarm at Lv. 52, instead of Lv. 50 Starts with Mana Surge learned Has a Force weakness instead of a Fire weakness Lv. 99 stats: +1 St",
     "command": {
-      "Mediarahan": 50,
-      "Samarecarm": 52
+      "Mediarahan": 49,
+      "Samarecarm": 50
     },
     "lvl": 48,
-    "passive": {
-      "Mana Surge": 0
-    },
     "race": "Megami",
-    "resists": "----wr",
+    "resists": "-w---r",
     "stats": [
       279,
-      304,
+      234,
       14,
       23,
       14,
@@ -1288,8 +1140,9 @@
     ]
   },
   "Loki": {
+    "changes": "No longer starts with Megidolaon learned Learns Megido at Lv. 65",
     "command": {
-      "Megido": 65
+      "Megidolaon": 0
     },
     "lvl": 64,
     "passive": {
@@ -1308,6 +1161,7 @@
     "unique": true
   },
   "Lorelei": {
+    "changes": "Starts with Vigilant learned, instead of Watchful",
     "command": {
       "Amrita": 102,
       "Diarahan": 0,
@@ -1316,7 +1170,7 @@
     "lvl": 33,
     "passive": {
       "Mana Surge": 103,
-      "Vigilant": 0
+      "Watchful": 0
     },
     "race": "Fairy",
     "resists": "---ssw",
@@ -1328,26 +1182,6 @@
       7,
       16
     ]
-  },
-  "Lucifuge": {
-    "command": {
-      "Agidyne": 35
-    },
-    "lvl": 34,
-    "passive": {
-      "Anti-Phys": 0
-    },
-    "race": "Tyrant",
-    "resists": "sw-sss",
-    "stats": [
-      233,
-      131,
-      12,
-      13,
-      11,
-      14
-    ],
-    "unique": true
   },
   "Lucifer": {
     "lvl": 99,
@@ -1363,27 +1197,8 @@
     ],
     "unique": true
   },
-  "Macabre": {
-    "command": {
-      "Final Strike": 66
-    },
-    "lvl": 65,
-    "passive": {
-      "Fire Drain": 0,
-      "Pierce": 103
-    },
-    "race": "Jaki",
-    "resists": "-d--ww",
-    "stats": [
-      510,
-      200,
-      27,
-      15,
-      20,
-      19
-    ]
-  },
   "Mahakala": {
+    "changes": "Gained an Ice weakness",
     "command": {
       "Might Call": 27
     },
@@ -1392,7 +1207,7 @@
       "Ares Aid": 0
     },
     "race": "Deity",
-    "resists": "-sws-s",
+    "resists": "-s-s-s",
     "stats": [
       210,
       83,
@@ -1423,19 +1238,20 @@
     ]
   },
   "Metatron": {
-    "lvl": 89,
+    "changes": "Level +14; +4 St, +5 Ma, +2 Vi, +3 Ag Has Phys null instead of reflect Has an Ice weakness instead of null Has Force null instead of a weakness Lv. 99 stats: -1 St, -1 Vi, +2 Ag",
+    "lvl": 75,
     "passive": {
       "Victory Cry": 0
     },
     "race": "Divine",
-    "resists": "nnwwnr",
+    "resists": "rnnwwr",
     "stats": [
-      904,
-      242,
-      29,
-      32,
-      24,
-      20
+      776,
+      204,
+      25,
+      27,
+      22,
+      17
     ],
     "unique": true
   },
@@ -1480,27 +1296,6 @@
     ],
     "unique": true
   },
-  "Mithras": {
-    "command": {
-      "Death Call": 63,
-      "Tetrakarn": 64
-    },
-    "lvl": 62,
-    "passive": {
-      "+Mute": 101,
-      "Pierce": 103
-    },
-    "race": "Fallen",
-    "resists": "-wwrrw",
-    "stats": [
-      489,
-      166,
-      22,
-      21,
-      17,
-      18
-    ]
-  },
   "Moh Shuvuu": {
     "command": {
       "Amrita": 104,
@@ -1541,24 +1336,25 @@
     ]
   },
   "Murmur": {
+    "changes": "Level +10; +3 St, +3 Ma, +2 Vi, +1 Ag BST -1 Has an Elec weakness instead of reflect Has Ice reflect instead of a weakness Starts with Death Call learned, instead of learning it at Lv. 64 No longer learns Tetrakarn at Lv. 65 Learns Holy Strike at Lv. 74 Lv. 99 stats: -1 St, +1 Vi, -1 Ag",
     "command": {
-      "Death Call": 0,
-      "Holy Strike": 74
+      "Death Call": 64,
+      "Tetrakarn": 65
     },
-    "lvl": 73,
+    "lvl": 63,
     "passive": {
-      "Life Lift": 105,
-      "Phys Repel": 103
+      "+Mute": 101,
+      "Pierce": 103
     },
     "race": "Fallen",
-    "resists": "-wrwrw",
+    "resists": "-wwrrw",
     "stats": [
-      570,
-      196,
-      25,
-      25,
-      19,
-      19
+      495,
+      170,
+      22,
+      22,
+      17,
+      18
     ]
   },
   "Nalagiri": {
@@ -1602,6 +1398,25 @@
       12
     ]
   },
+  "Nigi Mitama": {
+    "command": {
+      "Recarm": 105
+    },
+    "lvl": 44,
+    "passive": {
+      "Mana Surge": 103
+    },
+    "race": "Mitama",
+    "resists": "-----n",
+    "stats": [
+      285,
+      195,
+      13,
+      21,
+      13,
+      13
+    ]
+  },
   "Nisroc": {
     "command": {
       "Maragi": 0,
@@ -1625,43 +1440,46 @@
     ]
   },
   "Norn": {
+    "changes": "Level +1; +1 Vi Learns Prayer at Lv. 56, instead of Lv. 55 Learns Mana Aid at Lv. 57, instead of Lv. 56 Lv. 99 stats: -1 Ma, +1 Vi",
     "command": {
-      "Prayer": 56
+      "Prayer": 55
     },
-    "lvl": 55,
+    "lvl": 54,
     "passive": {
-      "Mana Aid": 57
+      "Mana Aid": 56
     },
     "race": "Megami",
     "resists": "-s--rs",
     "stats": [
-      345,
-      231,
+      335,
+      228,
       17,
       22,
-      14,
+      13,
       18
     ],
     "unique": true
   },
   "Nyarlathotep": {
-    "lvl": 78,
+    "changes": "Fixed its name Level +12; +4 St, +3 Ma, +3 Vi, +1 Ag BST -1 MP Growth increased to 3, up from 2 Lv. 99 stats: +2 Ma, -2 Ag",
+    "lvl": 66,
     "passive": {
       "Mana Aid": 0
     },
     "race": "Vile",
     "resists": "-sssss",
     "stats": [
-      485,
-      300,
-      30,
-      22,
+      410,
+      170,
+      26,
       19,
-      23
+      16,
+      22
     ],
     "unique": true
   },
   "Odin": {
+    "changes": "Has a Force weakness instead of a Fire Weakness",
     "command": {
       "Shield All": 40
     },
@@ -1670,7 +1488,7 @@
       "Null Elec": 0
     },
     "race": "Deity",
-    "resists": "--snws",
+    "resists": "-wsn-s",
     "stats": [
       296,
       142,
@@ -1718,47 +1536,6 @@
       6
     ]
   },
-  "Okuninushi": {
-    "command": {
-      "Holy Strike": 0
-    },
-    "lvl": 87,
-    "passive": {
-      "Anti-All": 89
-    },
-    "race": "Kishin",
-    "resists": "-r--sw",
-    "stats": [
-      912,
-      218,
-      31,
-      22,
-      27,
-      23
-    ],
-    "unique": true
-  },
-  "Ongyo-ki": {
-    "command": {
-      "Hassohappa": 0,
-      "Piercing Hit": 85
-    },
-    "lvl": 83,
-    "passive": {
-      "Null Elec": 0
-    },
-    "race": "Touki",
-    "resists": "-w-n--",
-    "stats": [
-      749,
-      104,
-      31,
-      21,
-      24,
-      23
-    ],
-    "unique": true
-  },
   "Orcus": {
     "command": {
       "Brutal Hit": 0
@@ -1798,24 +1575,26 @@
     ]
   },
   "Orochi": {
+    "changes": "Level +2; +1 Ma, +1 Ag Learns Hassohappa at Lv. 61, instead of Lv. 59 No longer learns Fire Drain at Lv. 58 No longer learns Avenge at Lv. 59 Learns Crisis Might at Lv. 60 Lv. 99 stats: -1 Vi, +1 Ag",
     "command": {
       "Deathbound": 105,
-      "Hassohappa": 61
+      "Hassohappa": 59
     },
-    "lvl": 59,
+    "lvl": 57,
     "passive": {
       "Ares Aid": 102,
-      "Crisis Might": 60
+      "Avenge": 59,
+      "Fire Drain": 58
     },
     "race": "Snake",
     "resists": "-dw--s",
     "stats": [
-      560,
-      73,
+      546,
+      70,
       26,
-      14,
+      13,
       21,
-      14
+      13
     ]
   },
   "Orthrus": {
@@ -1999,14 +1778,15 @@
     ]
   },
   "Rangda": {
+    "changes": "Learns Diajama at Lv. 51, instead of Lv. 50 Learns Phys Repel at Lv. 52, instead of Lv. 51",
     "command": {
-      "Diajama": 51,
+      "Diajama": 50,
       "Maragi": 101
     },
     "lvl": 49,
     "passive": {
       "Fire Amp": 104,
-      "Phys Repel": 52,
+      "Phys Repel": 51,
       "Retaliate": 103
     },
     "race": "Femme",
@@ -2021,43 +1801,25 @@
     ]
   },
   "Remiel": {
+    "changes": "Level +12; +4 St, +4 Ma, +2 Vi, +2 Ag Starts with Phys Drain learned, instead of learning it at Lv. 64 Lv. 99 stats: -1 St, +1 Ma",
     "command": {
       "Samarecarm": 0
     },
-    "lvl": 75,
+    "lvl": 63,
     "passive": {
-      "Phys Drain": 0
+      "Phys Drain": 64
     },
     "race": "Divine",
     "resists": "ns-s--",
     "stats": [
-      639,
-      282,
-      27,
-      26,
-      19,
-      19
+      544,
+      238,
+      23,
+      22,
+      17,
+      17
     ],
     "unique": true
-  },
-  "Rukh": {
-    "command": {
-      "Mabufudyne": 47
-    },
-    "lvl": 43,
-    "passive": {
-      "Dual Shadow": 0
-    },
-    "race": "Avian",
-    "resists": "-w-ss-",
-    "stats": [
-      366,
-      110,
-      19,
-      12,
-      18,
-      12
-    ]
   },
   "Saki Mitama": {
     "lvl": 35,
@@ -2097,14 +1859,14 @@
     ]
   },
   "Seiryuu": {
+    "changes": "No longer learns Maziodyne at Lv. 47 Learns Mazio at Lv. 48 Learns Elec Amp at Lv. 49, instead of starting with it Learns Elec Repel at Lv. 50, instead of Lv. 48",
     "command": {
-      "Mazio": 48,
-      "Maziodyne": 105
+      "Maziodyne": 47
     },
     "lvl": 46,
     "passive": {
-      "Elec Amp": 49,
-      "Elec Repel": 50
+      "Elec Amp": 0,
+      "Elec Repel": 48
     },
     "race": "Snake",
     "resists": "-sssws",
@@ -2155,15 +1917,16 @@
     ]
   },
   "Shiva": {
-    "command": {
-      "Hassohappa": 0
+    "changes": "Level -3; Stats unchanged BST +3 Starts with Hassohappa learned No longer has Avenge Lv. 99 stats: +1 St, +1 Ma, +1 Vi",
+    "lvl": 64,
+    "passive": {
+      "Avenge": 0
     },
-    "lvl": 61,
     "race": "Deity",
     "resists": "sssssn",
     "stats": [
-      504,
-      162,
+      522,
+      168,
       23,
       20,
       23,
@@ -2191,45 +1954,6 @@
       8
     ]
   },
-  "Spriggan": {
-    "lvl": 54,
-    "passive": {
-      "Dual Shadow": 55,
-      "Life Surge": 103
-    },
-    "race": "Fairy",
-    "resists": "s--nnw",
-    "stats": [
-      432,
-      156,
-      12,
-      24,
-      18,
-      16
-    ]
-  },
-  "Sraosha": {
-    "command": {
-      "Mazandyne": 103,
-      "Maziodyne": 0,
-      "Prayer": 66
-    },
-    "lvl": 65,
-    "passive": {
-      "Elec Amp": 101,
-      "Elec Drain": 0
-    },
-    "race": "Divine",
-    "resists": "--wd--",
-    "stats": [
-      520,
-      204,
-      15,
-      28,
-      15,
-      23
-    ]
-  },
   "Suparna": {
     "command": {
       "Force Dance": 0,
@@ -2251,32 +1975,15 @@
       10
     ]
   },
-  "Susano-o": {
-    "command": {
-      "Mazandyne": 0,
-      "Piercing Hit": 0
-    },
-    "lvl": 72,
-    "race": "Deity",
-    "resists": "r-wsd-",
-    "stats": [
-      552,
-      194,
-      29,
-      25,
-      20,
-      12
-    ],
-    "unique": true
-  },
   "Tao Tie": {
+    "changes": "No longer has a Force weakness",
     "command": {
       "Makajamaon": 0,
       "Megido": 48
     },
     "lvl": 47,
     "race": "Vile",
-    "resists": "--ss-w",
+    "resists": "--ssww",
     "stats": [
       352,
       195,
@@ -2326,25 +2033,6 @@
       6
     ]
   },
-  "Tokebi": {
-    "command": {
-      "Mow Down": 27
-    },
-    "lvl": 26,
-    "passive": {
-      "Anti-Fire": 0
-    },
-    "race": "Touki",
-    "resists": "-sss-w",
-    "stats": [
-      162,
-      92,
-      11,
-      11,
-      10,
-      10
-    ]
-  },
   "Toubyou": {
     "command": {
       "Anger Hit": 102,
@@ -2364,46 +2052,6 @@
       7,
       6,
       8
-    ]
-  },
-  "Troll": {
-    "command": {
-      "Mabufudyne": 101,
-      "Piercing Hit": 0
-    },
-    "lvl": 69,
-    "passive": {
-      "Ice Amp": 103
-    },
-    "race": "Fairy",
-    "resists": "-wdw--",
-    "stats": [
-      528,
-      202,
-      30,
-      23,
-      19,
-      13
-    ]
-  },
-  "Tschaggatta": {
-    "command": {
-      "Judgement": 62,
-      "Tetrakarn": 103
-    },
-    "lvl": 60,
-    "passive": {
-      "Fire Amp": 101
-    },
-    "race": "Genma",
-    "resists": "--dwrs",
-    "stats": [
-      504,
-      135,
-      12,
-      20,
-      20,
-      24
     ]
   },
   "Ubelluris": {
@@ -2470,10 +2118,11 @@
     ]
   },
   "Vivian": {
+    "changes": "No longer learns Maziodyne at Lv. 46 Learns Ziodyne at Lv. 46",
     "command": {
       "Diarahan": 103,
       "Drain": 0,
-      "Ziodyne": 46
+      "Maziodyne": 46
     },
     "lvl": 45,
     "passive": {
@@ -2534,6 +2183,7 @@
     ]
   },
   "Yaksa": {
+    "changes": "Gained an Elec resistance",
     "command": {
       "Deathbound": 53,
       "Diarahan": 0
@@ -2544,7 +2194,7 @@
       "Pierce": 105
     },
     "race": "Touki",
-    "resists": "-n-sws",
+    "resists": "-n--ws",
     "stats": [
       462,
       63,
@@ -2616,32 +2266,12 @@
       7
     ]
   },
-  "Yurlungur": {
-    "command": {
-      "Dream Feast": 0,
-      "Holy Dance": 86
-    },
-    "lvl": 85,
-    "passive": {
-      "Anti-Most": 0
-    },
-    "race": "Snake",
-    "resists": "-sd--s",
-    "stats": [
-      791,
-      224,
-      35,
-      22,
-      28,
-      16
-    ],
-    "unique": true
-  },
   "Zouchou": {
+    "changes": "Level -1; Stats unchanged BST -1 Lv. 99 stats: -1 Ma",
     "command": {
       "Agidyne": 51
     },
-    "lvl": 50,
+    "lvl": 49,
     "race": "Kishin",
     "resists": "----wn",
     "stats": [

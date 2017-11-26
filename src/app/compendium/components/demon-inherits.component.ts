@@ -12,7 +12,8 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
         </tr>
         <tr>
           <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">
-            <div class="element-icon {{ element }}">{{ element }}</div>
+            <ng-container *ngIf="!hasIcons">{{ element }}</ng-container>
+            <div *ngIf="hasIcons" class="element-icon {{ element }}">{{ element }}</div>
           </th>
         </tr>
       </thead>
@@ -34,5 +35,6 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 export class DemonInheritsComponent {
   @Input() inheritHeaders: string[] = [];
   @Input() inherits: number[] = [];
+  @Input() hasIcons = true;
   @Input() hasLvls = false;
 }

@@ -1,20 +1,16 @@
 {
   "Abaddon": {
-    "cost": 52000,
+    "inherits": "o-o-o-oo-",
     "lvl": 69,
     "race": "Tyrant",
-    "resists": {
-      "dea": "rp",
-      "exp": "nu",
-      "mag": "rs"
-    },
+    "resists": "-ssssnr---",
     "skills": {
       "Attack All": 0,
       "Hades Blast": 74,
+      "Ice Repel": 73,
       "Intimidate": 71,
       "Mabufudyne": 70,
       "Panic Voice": 0,
-      "Repel Ice": 73,
       "Retaliate": 72
     },
     "stats": [
@@ -24,28 +20,17 @@
       24,
       25,
       13,
-      14
+      15
     ]
   },
   "Aciel": {
-    "cost": 61600,
+    "inherits": "o-o-o-oo-",
     "lvl": 77,
     "race": "Tyrant",
-    "resists": {
-      "dea": "rp",
-      "exp": "nu",
-      "mag": "rs"
-    },
+    "resists": "-ssssnr---",
     "skills": {
-      "Attack All": 0,
-      "Hades Blast": 0,
       "Hell Fang": 80,
-      "Intimidate": 0,
       "Life Surge": 78,
-      "Mabufudyne": 0,
-      "Panic Voice": 0,
-      "Repel Ice": 0,
-      "Retaliate": 0,
       "Tetrakarn": 79,
       "Victory Cry": 81
     },
@@ -60,14 +45,10 @@
     ]
   },
   "Aeros": {
-    "cost": 5100,
+    "inherits": "o------o-",
     "lvl": 11,
     "race": "Element",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "mag": "rs"
-    },
+    "resists": "sssssnn---",
     "skills": {
       "Anti-Mind": 14,
       "Dia": 0,
@@ -87,30 +68,18 @@
     ]
   },
   "Albion": {
-    "cost": 46000,
+    "inherits": "o--o--oo-",
     "lvl": 64,
     "race": "Entity",
-    "resists": {
-      "exp": "nu",
-      "ice": "nu",
-      "phy": "nu"
-    },
+    "resists": "n-n--n----",
     "skills": {
-      "Berserk": 0,
-      "Diarama": 0,
       "Drain Attack": 65,
-      "Drain Phys": 66,
-      "Evil Gaze": 0,
       "Hades Blast": 68,
-      "Life Surge": 0,
-      "Rakunda": 0,
-      "Recarmdra": 67,
-      "Sukunda": 0,
-      "Tarunda": 0,
-      "Tornado": 0
+      "Phys Drain": 66,
+      "Recarmdra": 67
     },
     "stats": [
-      534,
+      694,
       252,
       25,
       20,
@@ -120,20 +89,16 @@
     ]
   },
   "Amaterasu": {
-    "cost": 41400,
+    "inherits": "-------o-",
     "lvl": 56,
     "race": "Deity",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "nu"
-    },
+    "resists": "-n---nn---",
     "skills": {
       "Debilitate": 58,
+      "Fire Repel": 59,
       "Godly Light": 57,
       "Prayer": 60,
       "Prominence": 0,
-      "Repel Fire": 59,
       "Tetrakarn": 0
     },
     "stats": [
@@ -147,14 +112,10 @@
     ]
   },
   "Angel": {
-    "cost": 4800,
+    "inherits": "-----o-oo",
     "lvl": 11,
     "race": "Divine",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "for": "wk"
-    },
+    "resists": "----wnw---",
     "skills": {
       "Detain": 12,
       "Dia": 0,
@@ -162,7 +123,7 @@
       "Life Aid": 16,
       "Patra": 13,
       "Petradi": 14,
-      "Stun Needle": 25
+      "Stun Needle": 15
     },
     "stats": [
       108,
@@ -175,20 +136,17 @@
     ]
   },
   "Apsaras": {
-    "cost": 3900,
+    "inherits": "------ooo",
     "lvl": 8,
     "race": "Yoma",
-    "resists": {
-      "ele": "dr",
-      "fir": "wk"
-    },
+    "resists": "-w-d------",
     "skills": {
       "Anti-Mind": 10,
       "Dormina": 12,
       "Lullaby": 0,
       "Makajam": 11,
       "Mazio": 9,
-      "Mute Gaze": 0,
+      "Mutudi": 0,
       "Seduce": 0
     },
     "stats": [
@@ -202,15 +160,10 @@
     ]
   },
   "Aquans": {
-    "cost": 6400,
+    "inherits": "o------o-",
     "lvl": 15,
     "race": "Element",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "wk",
-      "ice": "rp"
-    },
+    "resists": "-wr--nn---",
     "skills": {
       "Anti-Expel": 0,
       "Anti-Nerve": 17,
@@ -230,14 +183,10 @@
     ]
   },
   "Ara Mitama": {
-    "cost": 13500,
+    "inherits": "o---o-oo-",
     "lvl": 25,
     "race": "Mitama",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-ssssnnnnn",
     "skills": {
       "Analyze": 0,
       "Bright Might": 0,
@@ -258,30 +207,15 @@
     ]
   },
   "Arahabaki": {
-    "cost": 16800,
+    "inherits": "o---o-oo-",
     "lvl": 30,
     "race": "Vile",
-    "resists": {
-      "ail": "wk",
-      "dea": "nu",
-      "ele": "wk",
-      "exp": "nu",
-      "fir": "wk",
-      "for": "wk",
-      "ice": "rp",
-      "phy": "nu"
-    },
+    "resists": "nwrwwnnwww",
     "skills": {
-      "Brutal Slash": 0,
       "Drain Attack": 35,
-      "Focus": 0,
-      "Kamikaze": 0,
-      "Life Bonus": 0,
-      "Lunge": 0,
       "Mabufula": 31,
       "Mudo": 33,
       "Panic Voice": 34,
-      "Persuade": 0,
       "Stone Gaze": 32
     },
     "stats": [
@@ -295,14 +229,10 @@
     ]
   },
   "Archangel": {
-    "cost": 7200,
+    "inherits": "o--o-ooo-",
     "lvl": 18,
     "race": "Divine",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "ice": "wk"
-    },
+    "resists": "--w--rw---",
     "skills": {
       "Diarama": 23,
       "Estoma": 20,
@@ -323,15 +253,10 @@
     ]
   },
   "Atavaka": {
-    "cost": 33600,
+    "inherits": "o--oo-oo-",
     "lvl": 47,
     "race": "Deity",
-    "resists": {
-      "dea": "rp",
-      "exp": "rp",
-      "min": "wk",
-      "ner": "wk"
-    },
+    "resists": "-----rrww-",
     "skills": {
       "Binding Cry": 49,
       "Chaos Blade": 51,
@@ -341,24 +266,20 @@
       "Retaliate": 50
     },
     "stats": [
-      342,
+      402,
       183,
       24,
       14,
-      10,
       20,
+      10,
       14
     ]
   },
   "Atropos": {
-    "cost": 40500,
+    "inherits": "------ooo",
     "lvl": 67,
     "race": "Femme",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "min": "nu"
-    },
+    "resists": "-----nnn--",
     "skills": {
       "Bufudyne": 0,
       "Elec Boost": 68,
@@ -380,13 +301,10 @@
     ]
   },
   "Badb Catha": {
-    "cost": 9200,
+    "inherits": "oo--oooo-",
     "lvl": 23,
     "race": "Beast",
-    "resists": {
-      "ele": "wk",
-      "phy": "rs"
-    },
+    "resists": "s--w------",
     "skills": {
       "Anti-Force": 26,
       "Detain": 24,
@@ -398,22 +316,18 @@
     "stats": [
       186,
       87,
-      11,
-      6,
+      16,
       8,
-      12,
+      13,
+      11,
       6
     ]
   },
   "Baihu": {
-    "cost": 22400,
+    "inherits": "ooo-o-oo-",
     "lvl": 43,
     "race": "Holy",
-    "resists": {
-      "exp": "nu",
-      "fir": "wk",
-      "ice": "nu"
-    },
+    "resists": "-wn--n----",
     "skills": {
       "Beseech": 45,
       "Bufudyne": 47,
@@ -434,13 +348,10 @@
     ]
   },
   "Baphomet": {
-    "cost": 18600,
+    "inherits": "o---oooo-",
     "lvl": 33,
     "race": "Vile",
-    "resists": {
-      "dea": "rp",
-      "exp": "wk"
-    },
+    "resists": "-----wr---",
     "skills": {
       "Beckon Call": 0,
       "Dark Pledge": 0,
@@ -461,14 +372,10 @@
     ]
   },
   "Barong": {
-    "cost": 40500,
+    "inherits": "ooo-o-oo-",
     "lvl": 60,
     "race": "Avatar",
-    "resists": {
-      "dea": "wk",
-      "ele": "dr",
-      "exp": "rp"
-    },
+    "resists": "---d-rw---",
     "skills": {
       "Binding Cry": 0,
       "Bolt Storm": 0,
@@ -487,19 +394,32 @@
       14
     ]
   },
+  "Beelzebub (Fly)": {
+    "inherits": "oo--ooo--",
+    "lvl": 95,
+    "race": "Tyrant",
+    "resists": "s-sssrrnnn",
+    "skills": {
+      "Death Flies": 96,
+      "Maziodyne": 0,
+      "Megidolaon": 0,
+      "Victory Cry": 97
+    },
+    "stats": [
+      738,
+      372,
+      35,
+      28,
+      28,
+      29,
+      21
+    ]
+  },
   "Beelzebub": {
-    "cost": 76800,
+    "inherits": "o---o-o--",
     "lvl": 84,
     "race": "Tyrant",
-    "resists": {
-      "ail": "nu",
-      "dea": "rp",
-      "ele": "rs",
-      "exp": "rp",
-      "for": "rs",
-      "ice": "rs",
-      "phy": "rs"
-    },
+    "resists": "s-sssrrnnn",
     "skills": {
       "Elec Boost": 86,
       "Maziodyne": 0,
@@ -516,47 +436,11 @@
       19
     ]
   },
-  "Beelzebub (Fly)": {
-    "cost": 100800,
-    "lvl": 95,
-    "race": "Tyrant",
-    "resists": {
-      "ail": "nu",
-      "dea": "rp",
-      "ele": "rs",
-      "exp": "rp",
-      "for": "rs",
-      "ice": "rs",
-      "phy": "rs"
-    },
-    "skills": {
-      "Death Flies": 98,
-      "Elec Boost": 97,
-      "Maziodyne": 0,
-      "Megidolaon": 0,
-      "Victory Cry": 99,
-      "Watchful": 96
-    },
-    "stats": [
-      738,
-      372,
-      35,
-      29,
-      28,
-      29,
-      21
-    ]
-  },
   "Beiji-Weng": {
-    "cost": 46000,
+    "inherits": "---oo-oo-",
     "lvl": 61,
     "race": "Fury",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "wk",
-      "phy": "rs"
-    },
+    "resists": "sw---nn---",
     "skills": {
       "Hell Gaze": 62,
       "Holy Wrath": 65,
@@ -577,15 +461,10 @@
     ]
   },
   "Berith": {
-    "cost": 16200,
+    "inherits": "o--oo-oo-",
     "lvl": 37,
     "race": "Fallen",
-    "resists": {
-      "dea": "nu",
-      "fir": "dr",
-      "ice": "wk",
-      "phy": "rs"
-    },
+    "resists": "sdw---n---",
     "skills": {
       "Dekaja": 38,
       "Dismal Tune": 40,
@@ -603,18 +482,14 @@
       10,
       17,
       8,
-      6
+      8
     ]
   },
   "Bicorn": {
-    "cost": 6100,
+    "inherits": "o-o-o-o--",
     "lvl": 15,
     "race": "Wilder",
-    "resists": {
-      "ail": "rs",
-      "dea": "nu",
-      "ele": "wk"
-    },
+    "resists": "---w--nsss",
     "skills": {
       "Anti-Nerve": 18,
       "Bright Might": 17,
@@ -635,14 +510,10 @@
     ]
   },
   "Bishamon": {
-    "cost": 49000,
+    "inherits": "o--oo-oo-",
     "lvl": 72,
     "race": "Kishin",
-    "resists": {
-      "exp": "nu",
-      "fir": "rp",
-      "ice": "wk"
-    },
+    "resists": "-rw--n----",
     "skills": {
       "Attack All": 0,
       "Detain": 75,
@@ -653,26 +524,20 @@
       "Thunderclap": 0
     },
     "stats": [
-      582,
+      756,
       267,
       25,
-      17,
+      18,
       25,
       17,
       15
     ]
   },
   "Black Frost": {
-    "cost": 51000,
+    "inherits": "o---o-o--",
     "lvl": 66,
     "race": "Night",
-    "resists": {
-      "dea": "rp",
-      "exp": "nu",
-      "fir": "rp",
-      "ice": "dr",
-      "phy": "rs"
-    },
+    "resists": "srd--nr---",
     "skills": {
       "Berserk": 0,
       "Diarama": 67,
@@ -693,15 +558,10 @@
     ]
   },
   "Black Ooze": {
-    "cost": 11500,
+    "inherits": "o-o-o-o--",
     "lvl": 28,
     "race": "Foul",
-    "resists": {
-      "dea": "nu",
-      "ele": "wk",
-      "exp": "wk",
-      "phy": "rs"
-    },
+    "resists": "s--w-wn---",
     "skills": {
       "Anti-Expel": 33,
       "Charm Bite": 0,
@@ -722,15 +582,10 @@
     ]
   },
   "Black Rider": {
-    "cost": 46000,
+    "inherits": "----o-o--",
     "lvl": 61,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "ice": "dr"
-    },
+    "resists": "--d--nnnnn",
     "skills": {
       "Glacial Blast": 0,
       "Mamudoon": 63,
@@ -751,19 +606,14 @@
     ]
   },
   "Blob": {
-    "cost": 6400,
+    "inherits": "o-o-o-o--",
     "lvl": 16,
     "race": "Foul",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "ice": "wk",
-      "phy": "rs"
-    },
+    "resists": "s-w--wn---",
     "skills": {
+      "Last Resort": 0,
       "Mana Drain": 19,
       "Marin Karin": 18,
-      "Sacrifice": 0,
       "Tarunda": 0,
       "Toxic Sting": 17,
       "Zanma": 20
@@ -779,21 +629,17 @@
     ]
   },
   "Cai-Zhi": {
-    "cost": 12500,
+    "inherits": "o-o-o-oo-",
     "lvl": 26,
     "race": "Avatar",
-    "resists": {
-      "ail": "wk",
-      "exp": "nu",
-      "ice": "nu"
-    },
+    "resists": "--n--n-www",
     "skills": {
-      "Hamaon": 26,
+      "Hamaon": 27,
       "Hell Thrust": 0,
-      "Mabufula": 29,
+      "Mabufula": 30,
       "Mutudi": 0,
-      "Paraladi": 28,
-      "Scout": 27,
+      "Paraladi": 29,
+      "Scout": 28,
       "Toxic Cloud": 0
     },
     "stats": [
@@ -807,14 +653,10 @@
     ]
   },
   "Cerberus": {
-    "cost": 32800,
+    "inherits": "ooo-o-oo-",
     "lvl": 61,
     "race": "Beast",
-    "resists": {
-      "fir": "rp",
-      "ice": "wk",
-      "phy": "rs"
-    },
+    "resists": "srw-------",
     "skills": {
       "Attack All": 65,
       "Binding Cry": 0,
@@ -835,20 +677,15 @@
     ]
   },
   "Chatterskull": {
-    "cost": 8000,
+    "inherits": "o-o---o--",
     "lvl": 20,
     "race": "Haunt",
-    "resists": {
-      "cur": "wk",
-      "dea": "nu",
-      "exp": "wk",
-      "fir": "dr"
-    },
+    "resists": "-d---wn--w",
     "skills": {
       "Dekaja": 21,
       "Dormina": 22,
       "Hell Thrust": 24,
-      "Sacrifice": 23,
+      "Last Resort": 23,
       "Stun Gaze": 0,
       "Sukunda": 0
     },
@@ -863,15 +700,10 @@
     ]
   },
   "Chimera": {
-    "cost": 31200,
+    "inherits": "ooo-o-oo-",
     "lvl": 55,
     "race": "Holy",
-    "resists": {
-      "exp": "nu",
-      "fir": "dr",
-      "min": "wk",
-      "ner": "wk"
-    },
+    "resists": "-d---n-ww-",
     "skills": {
       "Fire Boost": 0,
       "Fire Breath": 0,
@@ -892,16 +724,10 @@
     ]
   },
   "Choronzon": {
-    "cost": 4800,
+    "inherits": "o---o-o--",
     "lvl": 11,
     "race": "Haunt",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "fir": "dr",
-      "for": "wk",
-      "phy": "rs"
-    },
+    "resists": "sd--wwn---",
     "skills": {
       "Agi": 0,
       "Berserk": 13,
@@ -921,21 +747,18 @@
     ]
   },
   "Clotho": {
-    "cost": 32800,
+    "inherits": "------ooo",
     "lvl": 58,
     "race": "Femme",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-----nn---",
     "skills": {
+      "Allure": 61,
       "Eternal Rest": 60,
       "Hell Gaze": 0,
       "Mahama": 0,
       "Mediarahan": 59,
       "Nag": 0,
-      "Samarecarm": 62,
-      "Seduce": 61
+      "Samarecarm": 62
     },
     "stats": [
       438,
@@ -948,26 +771,15 @@
     ]
   },
   "Cu Chulainn": {
-    "cost": 33600,
+    "inherits": "o--o--oo-",
     "lvl": 52,
     "race": "Genma",
-    "resists": {
-      "exp": "nu",
-      "for": "rp"
-    },
+    "resists": "----rn----",
     "skills": {
       "Attack All": 57,
       "Blight": 56,
       "Charisma": 55,
-      "Estoma": 0,
-      "Guillotine": 0,
-      "Retaliate": 0,
-      "Sukukaja": 0,
-      "Taunt": 0,
-      "Tempest": 0,
       "Thunderclap": 54,
-      "Void Mind": 0,
-      "Wooing": 0,
       "Zandyne": 53
     },
     "stats": [
@@ -981,16 +793,10 @@
     ]
   },
   "Daisoujou": {
-    "cost": 22400,
+    "inherits": "----o-o--",
     "lvl": 37,
     "race": "Fiend",
-    "resists": {
-      "cur": "dr",
-      "dea": "rp",
-      "exp": "rp",
-      "min": "dr",
-      "ner": "nu"
-    },
+    "resists": "-----nrdnd",
     "skills": {
       "Mahamaon": 0,
       "Mamudoon": 38,
@@ -1009,13 +815,10 @@
     ]
   },
   "Dakini": {
-    "cost": 25900,
+    "inherits": "o--oo-oo-",
     "lvl": 52,
     "race": "Femme",
-    "resists": {
-      "fir": "rs",
-      "ice": "wk"
-    },
+    "resists": "-sw-------",
     "skills": {
       "Agidyne": 55,
       "Blight": 56,
@@ -1036,28 +839,22 @@
     ]
   },
   "Dante": {
-    "cost": 60500,
+    "inherits": "-------o-",
     "lvl": 80,
     "race": "D-Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "mag": "rs",
-      "phy": "rs"
-    },
+    "resists": "sssssnnnnn",
     "skills": {
       "Bullet Time": 81,
       "E & I": 0,
       "Holy Star": 0,
       "Intimidate": 0,
       "Never Yield": 0,
+      "Provoke": 0,
       "Rebellion": 0,
       "Roundtrip": 0,
       "Showtime": 84,
       "Son's Oath": 83,
       "Stinger": 82,
-      "Taunt": 0,
       "Whirlwind": 0
     },
     "stats": [
@@ -1071,14 +868,10 @@
     ]
   },
   "Datsue-Ba": {
-    "cost": 3600,
+    "inherits": "o---o--o-",
     "lvl": 7,
     "race": "Femme",
-    "resists": {
-      "ele": "wk",
-      "min": "nu",
-      "ner": "nu"
-    },
+    "resists": "---w---nn-",
     "skills": {
       "Bufu": 9,
       "Dormina": 11,
@@ -1092,19 +885,16 @@
       45,
       4,
       8,
-      5,
       4,
+      5,
       6
     ]
   },
   "Decarabia": {
-    "cost": 30400,
+    "inherits": "o-----oo-",
     "lvl": 58,
     "race": "Fallen",
-    "resists": {
-      "dea": "nu",
-      "mag": "rs"
-    },
+    "resists": "-ssss-n---",
     "skills": {
       "Analyze": 0,
       "Eternal Rest": 61,
@@ -1126,15 +916,10 @@
     ]
   },
   "Dionysus": {
-    "cost": 31200,
+    "inherits": "o------o-",
     "lvl": 44,
     "race": "Fury",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "nu",
-      "ice": "wk"
-    },
+    "resists": "-nw--nn---",
     "skills": {
       "Dismal Tune": 46,
       "Maragidyne": 48,
@@ -1145,7 +930,7 @@
     },
     "stats": [
       354,
-      192,
+      354,
       16,
       20,
       15,
@@ -1154,12 +939,10 @@
     ]
   },
   "Dis": {
-    "cost": 11000,
+    "inherits": "------ooo",
     "lvl": 23,
     "race": "Yoma",
-    "resists": {
-      "fir": "dr"
-    },
+    "resists": "-n--------",
     "skills": {
       "Agilao": 0,
       "Diarama": 24,
@@ -1180,14 +963,10 @@
     ]
   },
   "Dominion": {
-    "cost": 24500,
+    "inherits": "-----ooo-",
     "lvl": 50,
     "race": "Divine",
-    "resists": {
-      "cur": "wk",
-      "dea": "wk",
-      "exp": "rp"
-    },
+    "resists": "-----rw--w",
     "skills": {
       "Diarahan": 0,
       "Mahamaon": 55,
@@ -1208,30 +987,22 @@
     ]
   },
   "Efreet": {
-    "cost": 28800,
+    "inherits": "o---o-oo-",
     "lvl": 52,
     "race": "Yoma",
-    "resists": {
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-dw-------",
     "skills": {
       "Agidyne": 0,
-      "Beckon Call": 55,
-      "Diarama": 0,
-      "Flatter": 0,
-      "Force Boost": 0,
-      "Kamikaze": 0,
+      "Beckon Call": 56,
       "Makakaja": 53,
-      "Maragidyne": 54,
-      "Mazanma": 0,
-      "Prominence": 56,
-      "Taunt": 0,
-      "Zandyne": 0
+      "Mana Refill": 54,
+      "Maragidyne": 55,
+      "Prominence": 57,
+      "Taunt": 0
     },
     "stats": [
       402,
-      225,
+      255,
       15,
       23,
       15,
@@ -1240,17 +1011,13 @@
     ]
   },
   "Eligor": {
-    "cost": 12000,
+    "inherits": "o--oo-oo-",
     "lvl": 29,
     "race": "Fallen",
-    "resists": {
-      "dea": "nu",
-      "ele": "wk",
-      "phy": "rs"
-    },
+    "resists": "s--w--n---",
     "skills": {
       "Berserk": 31,
-      "Bright Might": 0,
+      "Dark Might": 0,
       "Hell Thrust": 0,
       "Intimidate": 33,
       "Mudo": 30,
@@ -1269,20 +1036,16 @@
     ]
   },
   "Erthys": {
-    "cost": 3900,
+    "inherits": "o------o-",
     "lvl": 7,
     "race": "Element",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "for": "wk"
-    },
+    "resists": "----wnn---",
     "skills": {
-      "Anti-Curse": 8,
-      "Arbitration": 9,
-      "Mazio": 10,
+      "Anti-Curse": 9,
+      "Arbitration": 10,
+      "Mazio": 11,
       "Patra": 0,
-      "Rakukaja": 0,
+      "Rakukaja": 8,
       "Zio": 0
     },
     "stats": [
@@ -1296,14 +1059,10 @@
     ]
   },
   "Feng Huang": {
-    "cost": 18000,
+    "inherits": "ooo-oooo-",
     "lvl": 36,
     "race": "Holy",
-    "resists": {
-      "ele": "dr",
-      "exp": "nu",
-      "ice": "wk"
-    },
+    "resists": "--wd-n----",
     "skills": {
       "Arbitration": 38,
       "Fire Breath": 0,
@@ -1324,15 +1083,10 @@
     ]
   },
   "Flaemis": {
-    "cost": 8400,
+    "inherits": "o------o-",
     "lvl": 20,
     "race": "Element",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-dw--nn---",
     "skills": {
       "Agilao": 24,
       "Bright Might": 0,
@@ -1352,21 +1106,18 @@
     ]
   },
   "Flauros": {
-    "cost": 38700,
+    "inherits": "oo-oo-oo-",
     "lvl": 68,
     "race": "Fallen",
-    "resists": {
-      "dea": "rp",
-      "ner": "wk"
-    },
+    "resists": "------n-w-",
     "skills": {
       "Blackmail": 0,
-      "Deathbound": 17,
-      "Endure": 18,
-      "Hades Blast": 19,
-      "Hassohappa": 21,
+      "Deathbound": 69,
+      "Endure": 70,
+      "Hades Blast": 71,
+      "Hassohappa": 73,
       "Iron Claw": 0,
-      "Life Surge": 20,
+      "Life Surge": 72,
       "War Cry": 0
     },
     "stats": [
@@ -1380,13 +1131,10 @@
     ]
   },
   "Fomor": {
-    "cost": 7200,
+    "inherits": "o---o-oo-",
     "lvl": 18,
     "race": "Night",
-    "resists": {
-      "ele": "wk",
-      "ice": "nu"
-    },
+    "resists": "--nw------",
     "skills": {
       "Berserk": 23,
       "Bufu": 0,
@@ -1407,14 +1155,10 @@
     ]
   },
   "Forneus": {
-    "cost": 8000,
+    "inherits": "o-o-o-oo-",
     "lvl": 20,
     "race": "Fallen",
-    "resists": {
-      "dea": "nu",
-      "ele": "wk",
-      "ice": "dr"
-    },
+    "resists": "--nw--n---",
     "skills": {
       "Anti-Elec": 24,
       "Bufula": 21,
@@ -1435,15 +1179,10 @@
     ]
   },
   "Futomimi": {
-    "cost": 43200,
+    "inherits": "o---o-o--",
     "lvl": 63,
     "race": "Kishin",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "phy": "rs"
-    },
+    "resists": "s----nnnnn",
     "skills": {
       "Focus": 0,
       "Life Surge": 65,
@@ -1457,24 +1196,21 @@
       498,
       267,
       20,
-      26,
+      16,
       20,
       15,
       12
     ]
   },
   "Fuu-Ki": {
-    "cost": 39600,
+    "inherits": "o--oo--o-",
     "lvl": 66,
     "race": "Brute",
-    "resists": {
-      "dea": "nu",
-      "for": "nu"
-    },
+    "resists": "----n-n---",
     "skills": {
       "Binding Cry": 67,
       "Chaos Blade": 68,
-      "Dark Pledge": 69,
+      "Dark Might": 69,
       "Fog Breath": 70,
       "Mazandyne": 0,
       "Zandyne": 0
@@ -1490,15 +1226,10 @@
     ]
   },
   "Gabriel": {
-    "cost": 74400,
+    "inherits": "o--o-oooo",
     "lvl": 87,
     "race": "Seraph",
-    "resists": {
-      "ele": "nu",
-      "exp": "rp",
-      "fir": "nu",
-      "for": "nu"
-    },
+    "resists": "-n-nnr----",
     "skills": {
       "Blight": 88,
       "Elec Boost": 90,
@@ -1515,32 +1246,19 @@
       30,
       22,
       24,
-      22
+      12
     ]
   },
   "Ganesha": {
-    "cost": 38700,
+    "inherits": "o--oo-oo-",
     "lvl": 58,
     "race": "Wargod",
-    "resists": {
-      "ele": "wk",
-      "exp": "nu",
-      "for": "nu",
-      "ice": "nu"
-    },
+    "resists": "--nwnn----",
     "skills": {
-      "Binding Cry": 0,
-      "Chaos Blade": 0,
       "Debilitate": 61,
-      "Drain Force": 60,
       "Endure": 59,
-      "Force Boost": 0,
-      "Mazandyne": 0,
-      "Panic Voice": 0,
-      "Scout": 0,
-      "Stasis Blade": 0,
-      "Tempest": 62,
-      "Watchful": 0
+      "Force Drain": 60,
+      "Tempest": 62
     },
     "stats": [
       474,
@@ -1553,27 +1271,15 @@
     ]
   },
   "Garuda": {
-    "cost": 45100,
+    "inherits": "oo--oooo-",
     "lvl": 63,
     "race": "Avian",
-    "resists": {
-      "cur": "nu",
-      "dea": "wk",
-      "exp": "rp",
-      "ner": "nu"
-    },
+    "resists": "-----rw-nn",
     "skills": {
-      "Diarahan": 0,
       "Endure": 67,
-      "Fog Breath": 0,
       "Mahamaon": 64,
-      "Mazandyne": 0,
       "Persuade": 65,
-      "Stone Hunt": 0,
-      "Sukukaja": 0,
-      "Venom Claw": 0,
-      "Wind Cutter": 66,
-      "Zandyne": 0
+      "Wind Cutter": 66
     },
     "stats": [
       492,
@@ -1586,13 +1292,10 @@
     ]
   },
   "Girimehkala": {
-    "cost": 36900,
+    "inherits": "o--oo-oo-",
     "lvl": 58,
     "race": "Vile",
-    "resists": {
-      "dea": "nu",
-      "phy": "rp"
-    },
+    "resists": "r-----n---",
     "skills": {
       "Binding Cry": 0,
       "Chaos Blade": 0,
@@ -1612,20 +1315,15 @@
     ]
   },
   "Gogmagog": {
-    "cost": 30400,
+    "inherits": "o-----oo-",
     "lvl": 55,
     "race": "Jirae",
-    "resists": {
-      "dea": "nu",
-      "fir": "wk",
-      "ice": "nu",
-      "phy": "nu"
-    },
+    "resists": "nwn---n---",
     "skills": {
       "Berserk": 0,
-      "Diarama": 0,
       "Evil Gaze": 58,
       "Life Surge": 56,
+      "Mediarama": 0,
       "Rakunda": 59,
       "Sukunda": 60,
       "Tarunda": 57,
@@ -1642,29 +1340,19 @@
     ]
   },
   "Gui Xian": {
-    "cost": 12500,
-    "lvl": 24,
+    "inherits": "o-o-o-oo-",
+    "lvl": 30,
     "race": "Dragon",
-    "resists": {
-      "ele": "wk",
-      "exp": "rp",
-      "ice": "dr"
-    },
+    "resists": "--dw-r----",
     "skills": {
       "Bufula": 31,
-      "Counter": 0,
       "Estoma": 32,
-      "Flatter": 0,
       "Ice Boost": 33,
-      "Ice Breath": 34,
-      "Lunge": 0,
-      "Rakukaja": 0,
-      "Sacrifice": 0,
-      "Toxic Cloud": 0
+      "Ice Breath": 34
     },
     "stats": [
       240,
-      105,
+      106,
       9,
       11,
       16,
@@ -1673,15 +1361,10 @@
     ]
   },
   "Gurr": {
-    "cost": 45100,
+    "inherits": "oo--oooo-",
     "lvl": 63,
     "race": "Raptor",
-    "resists": {
-      "dea": "rp",
-      "exp": "wk",
-      "min": "nu",
-      "ner": "nu"
-    },
+    "resists": "-----wrnn-",
     "skills": {
       "Avenge": 68,
       "Bolt Storm": 67,
@@ -1703,29 +1386,18 @@
     ]
   },
   "Hanuman": {
-    "cost": 28800,
+    "inherits": "o--oo-oo-",
     "lvl": 46,
     "race": "Genma",
-    "resists": {
-      "exp": "nu",
-      "phy": "rs"
-    },
+    "resists": "s----n----",
     "skills": {
-      "Berserk": 0,
-      "Brutal Slash": 0,
-      "Endure": 0,
-      "Kidnap": 0,
-      "Last Resort": 0,
-      "Life Surge": 0,
-      "Might": 0,
-      "Rakukaja": 0,
-      "Stone Hunt": 0,
-      "Sukukaja": 0,
-      "Tarukaja": 0,
-      "Tetrakarn": 0
+      "Endure": 48,
+      "Kidnap": 49,
+      "Life Surge": 50,
+      "Rakukaja": 47
     },
     "stats": [
-      366,
+      326,
       174,
       17,
       12,
@@ -1735,16 +1407,10 @@
     ]
   },
   "Hell Biker": {
-    "cost": 25900,
+    "inherits": "o-----o--",
     "lvl": 42,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "nu",
-      "for": "dr"
-    },
+    "resists": "-n--dnnnnn",
     "skills": {
       "Attack All": 44,
       "Hell Burner": 0,
@@ -1762,21 +1428,15 @@
     ]
   },
   "High Pixie": {
-    "cost": 4500,
+    "inherits": "-----oooo",
     "lvl": 10,
     "race": "Fairy",
-    "resists": {
-      "ele": "rs"
-    },
+    "resists": "---s------",
     "skills": {
-      "Dia": 0,
       "Lucky Find": 14,
       "Me Patra": 12,
       "Paraladi": 11,
-      "Pester": 13,
-      "Posumudi": 0,
-      "Rakunda": 0,
-      "Seduce": 0,
+      "Seduce": 13,
       "Trafuri": 15,
       "Wing Buffet": 0,
       "Zio": 0
@@ -1792,21 +1452,17 @@
     ]
   },
   "Horus": {
-    "cost": 26600,
+    "inherits": "oo--oooo-",
     "lvl": 38,
     "race": "Deity",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "phy": "rs"
-    },
+    "resists": "s----rw---",
     "skills": {
       "Dekunda": 40,
       "Liftoma": 41,
       "Mahama": 0,
       "Mana Gain": 39,
       "Mediarama": 42,
-      "Violet Flash": 43,
+      "Thunderclap": 43,
       "Watchful": 0
     },
     "stats": [
@@ -1820,21 +1476,17 @@
     ]
   },
   "Hresvelgr": {
-    "cost": 45100,
+    "inherits": "ooo-ooo--",
     "lvl": 75,
     "race": "Wilder",
-    "resists": {
-      "dea": "nu",
-      "fir": "wk",
-      "ice": "rp"
-    },
+    "resists": "-wr---n---",
     "skills": {
       "Anti-Phys": 76,
+      "Elec Repel": 79,
       "Ice Boost": 0,
       "Iron Claw": 77,
       "Life Refill": 78,
       "Mabufudyne": 0,
-      "Repel Elec": 79,
       "Wing Buffet": 0
     },
     "stats": [
@@ -1848,13 +1500,10 @@
     ]
   },
   "Hua Po": {
-    "cost": 3100,
+    "inherits": "-----oooo",
     "lvl": 5,
     "race": "Jirae",
-    "resists": {
-      "fir": "rs",
-      "ice": "wk"
-    },
+    "resists": "-sw-------",
     "skills": {
       "Agi": 0,
       "Maragi": 10,
@@ -1875,13 +1524,10 @@
     ]
   },
   "Ikusa": {
-    "cost": 20400,
+    "inherits": "o--o---o-",
     "lvl": 44,
     "race": "Brute",
-    "resists": {
-      "for": "wk",
-      "ner": "nu"
-    },
+    "resists": "----w---n-",
     "skills": {
       "Analyze": 0,
       "Arid Needle": 0,
@@ -1902,19 +1548,16 @@
     ]
   },
   "Incubus": {
-    "cost": 10100,
+    "inherits": "oo--oooo-",
     "lvl": 25,
     "race": "Night",
-    "resists": {
-      "exp": "wk",
-      "min": "nu"
-    },
+    "resists": "----w--n-n",
     "skills": {
       "Evil Gaze": 28,
       "Flatter": 0,
       "Life Drain": 29,
       "Sexy Gaze": 0,
-      "Stun Bite": 26,
+      "Stun Claw": 26,
       "Wing Buffet": 0,
       "Wooing": 27
     },
@@ -1929,19 +1572,16 @@
     ]
   },
   "Inugami": {
-    "cost": 6800,
+    "inherits": "o-o-o-oo-",
     "lvl": 13,
     "race": "Beast",
-    "resists": {
-      "dea": "nu",
-      "fir": "nu",
-      "for": "wk"
-    },
+    "resists": "-n--w-n---",
     "skills": {
       "Feral Bite": 0,
       "Fire Breath": 0,
       "Fog Breath": 16,
       "Media": 14,
+      "Panic Voice": 17,
       "Rakunda": 15
     },
     "stats": [
@@ -1955,13 +1595,10 @@
     ]
   },
   "Isora": {
-    "cost": 5700,
+    "inherits": "o-o-o-oo-",
     "lvl": 14,
     "race": "Yoma",
-    "resists": {
-      "fir": "wk",
-      "ice": "rs"
-    },
+    "resists": "-ws-------",
     "skills": {
       "Analyze": 0,
       "Ice Breath": 17,
@@ -1981,13 +1618,10 @@
     ]
   },
   "Jack Frost": {
-    "cost": 3600,
+    "inherits": "o---o-oo-",
     "lvl": 7,
     "race": "Fairy",
-    "resists": {
-      "fir": "wk",
-      "ice": "dr"
-    },
+    "resists": "-wd-------",
     "skills": {
       "Bufu": 0,
       "Dark Might": 0,
@@ -2008,14 +1642,10 @@
     ]
   },
   "Jikoku": {
-    "cost": 31200,
+    "inherits": "o--oo-oo-",
     "lvl": 52,
     "race": "Kishin",
-    "resists": {
-      "exp": "nu",
-      "fir": "wk",
-      "ice": "rp"
-    },
+    "resists": "-wr--n----",
     "skills": {
       "Bolt Storm": 57,
       "Bufudyne": 54,
@@ -2036,13 +1666,10 @@
     ]
   },
   "Jinn": {
-    "cost": 23100,
+    "inherits": "o---o-oo-",
     "lvl": 44,
     "race": "Yoma",
-    "resists": {
-      "for": "dr",
-      "ner": "wk"
-    },
+    "resists": "----d---w-",
     "skills": {
       "Diarama": 45,
       "Flatter": 47,
@@ -2063,14 +1690,10 @@
     ]
   },
   "Kaiwan": {
-    "cost": 22400,
+    "inherits": "o-o-o-oo-",
     "lvl": 47,
     "race": "Night",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "mag": "rs"
-    },
+    "resists": "-sssswn---",
     "skills": {
       "Charm Bite": 0,
       "Evil Gaze": 51,
@@ -2086,21 +1709,16 @@
       198,
       14,
       19,
-      15,
+      19,
       11,
       8
     ]
   },
   "Kali": {
-    "cost": 49000,
+    "inherits": "o--oo-oo-",
     "lvl": 67,
     "race": "Lady",
-    "resists": {
-      "dea": "rp",
-      "exp": "nu",
-      "fir": "nu",
-      "ice": "wk"
-    },
+    "resists": "-nw--nr---",
     "skills": {
       "Avenge": 68,
       "Dark Sword": 71,
@@ -2111,7 +1729,7 @@
     },
     "stats": [
       540,
-      258,
+      309,
       25,
       19,
       23,
@@ -2120,26 +1738,18 @@
     ]
   },
   "Karasu": {
-    "cost": 13500,
+    "inherits": "o--o-o-o-",
     "lvl": 28,
     "race": "Yoma",
-    "resists": {
-      "cur": "wk",
-      "for": "rp"
-    },
+    "resists": "----r----w",
     "skills": {
       "Gonnection": 30,
-      "Kamikaze": 0,
       "Mahama": 31,
-      "Makatora": 0,
       "Mana Gain": 29,
       "Might": 32,
-      "Shibaboo": 0,
       "Tarukaja": 0,
       "Tornado": 33,
-      "Watchful": 0,
-      "Wing Buffet": 0,
-      "Zanma": 0
+      "Wing Buffet": 0
     },
     "stats": [
       234,
@@ -2152,21 +1762,18 @@
     ]
   },
   "Kelpie": {
-    "cost": 10500,
+    "inherits": "o-o-o-oo-",
     "lvl": 26,
     "race": "Fairy",
-    "resists": {
-      "for": "wk",
-      "ice": "rs"
-    },
+    "resists": "--s-w-----",
     "skills": {
+      "Anti-Nerve": 28,
       "Arbitration": 0,
       "Diarama": 30,
       "Marin Karin": 29,
       "Paraladi": 0,
       "Pulinpa": 0,
-      "Stun Bite": 27,
-      "Void Nerve": 28
+      "Stun Bite": 27
     },
     "stats": [
       210,
@@ -2179,15 +1786,10 @@
     ]
   },
   "Kikuri-Hime": {
-    "cost": 15600,
+    "inherits": "------ooo",
     "lvl": 24,
     "race": "Lady",
-    "resists": {
-      "exp": "nu",
-      "fir": "wk",
-      "min": "nu",
-      "ner": "nu"
-    },
+    "resists": "-w---n-nn-",
     "skills": {
       "Diarama": 0,
       "Maiden's Plea": 25,
@@ -2207,24 +1809,21 @@
     ]
   },
   "Kin-Ki": {
-    "cost": 33600,
+    "inherits": "o--oo-oo-",
     "lvl": 59,
     "race": "Brute",
-    "resists": {
-      "cur": "wk",
-      "phy": "rs"
-    },
+    "resists": "s--------w",
     "skills": {
       "Berserk": 0,
       "Focus": 0,
-      "Last Resort": 61,
       "Loan": 62,
       "Rakukaja": 0,
+      "Sacrifice": 61,
       "Taunt": 60,
       "Tempest": 63
     },
     "stats": [
-      498,
+      647,
       216,
       23,
       13,
@@ -2234,13 +1833,10 @@
     ]
   },
   "Kodama": {
-    "cost": 2600,
+    "inherits": "o------o-",
     "lvl": 3,
     "race": "Jirae",
-    "resists": {
-      "fir": "wk",
-      "for": "rs"
-    },
+    "resists": "-w--s-----",
     "skills": {
       "Anti-Force": 7,
       "Dia": 4,
@@ -2260,13 +1856,10 @@
     ]
   },
   "Koppa": {
-    "cost": 8000,
+    "inherits": "o----o-o-",
     "lvl": 19,
     "race": "Yoma",
-    "resists": {
-      "cur": "wk",
-      "for": "nu"
-    },
+    "resists": "----n----w",
     "skills": {
       "Kamikaze": 23,
       "Makatora": 22,
@@ -2279,22 +1872,18 @@
     "stats": [
       144,
       87,
+      10,
+      14,
+      10,
       7,
-      10,
-      5,
-      10,
-      8
+      6
     ]
   },
   "Koumoku": {
-    "cost": 18000,
+    "inherits": "o--oo-oo-",
     "lvl": 33,
     "race": "Kishin",
-    "resists": {
-      "ele": "wk",
-      "exp": "nu",
-      "for": "rp"
-    },
+    "resists": "---wrn----",
     "skills": {
       "Beseech": 35,
       "Life Gain": 34,
@@ -2314,31 +1903,16 @@
     ]
   },
   "Kurama": {
-    "cost": 23100,
+    "inherits": "----oooo-",
     "lvl": 38,
     "race": "Genma",
-    "resists": {
-      "exp": "nu",
-      "for": "dr"
-    },
+    "resists": "----dn----",
     "skills": {
       "Fog Breath": 41,
       "Force Boost": 40,
-      "Gonnection": 0,
-      "Kamikaze": 0,
-      "Mahama": 0,
-      "Makatora": 0,
-      "Mana Gain": 0,
-      "Might": 0,
-      "Shibaboo": 0,
       "Starlight": 43,
-      "Tarukaja": 0,
-      "Tornado": 0,
       "Violet Flash": 39,
-      "Watchful": 0,
-      "Wind Cutter": 42,
-      "Wing Buffet": 0,
-      "Zanma": 0
+      "Wind Cutter": 42
     },
     "stats": [
       306,
@@ -2351,13 +1925,10 @@
     ]
   },
   "Kushinada": {
-    "cost": 26600,
+    "inherits": "------ooo",
     "lvl": 41,
     "race": "Lady",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp"
-    },
+    "resists": "-----rw---",
     "skills": {
       "Beseech": 45,
       "Lucky Find": 44,
@@ -2378,14 +1949,10 @@
     ]
   },
   "Kusi Mitama": {
-    "cost": 17400,
+    "inherits": "o---o-oo-",
     "lvl": 32,
     "race": "Mitama",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-ssssnnnnn",
     "skills": {
       "Analyze": 0,
       "Anti-Elec": 35,
@@ -2406,12 +1973,10 @@
     ]
   },
   "Lachesis": {
-    "cost": 36900,
+    "inherits": "------ooo",
     "lvl": 63,
     "race": "Femme",
-    "resists": {
-      "ail": "nu"
-    },
+    "resists": "-------nnn",
     "skills": {
       "Dormina": 65,
       "Makakaja": 0,
@@ -2433,14 +1998,10 @@
     ]
   },
   "Laksmi": {
-    "cost": 33600,
+    "inherits": "------ooo",
     "lvl": 54,
     "race": "Megami",
-    "resists": {
-      "ail": "nu",
-      "exp": "rp",
-      "for": "wk"
-    },
+    "resists": "----wr-nnn",
     "skills": {
       "Mana Aid": 55,
       "Mana Surge": 57,
@@ -2461,14 +2022,10 @@
     ]
   },
   "Legion": {
-    "cost": 23800,
+    "inherits": "o---o-o--",
     "lvl": 49,
     "race": "Haunt",
-    "resists": {
-      "dea": "rp",
-      "ele": "wk",
-      "exp": "wk"
-    },
+    "resists": "---w-wr---",
     "skills": {
       "Anti-Phys": 50,
       "Deathtouch": 0,
@@ -2489,13 +2046,10 @@
     ]
   },
   "Lilim": {
-    "cost": 3900,
+    "inherits": "-----ooo-",
     "lvl": 8,
     "race": "Night",
-    "resists": {
-      "ele": "nu",
-      "ice": "wk"
-    },
+    "resists": "--wn------",
     "skills": {
       "Analyze": 9,
       "Dark Pledge": 10,
@@ -2515,28 +2069,18 @@
     ]
   },
   "Lilith": {
-    "cost": 50000,
+    "inherits": "--o-o-oo-",
     "lvl": 80,
     "race": "Night",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "mag": "rs"
-    },
+    "resists": "-ssssnn---",
     "skills": {
       "Allure": 0,
-      "Analyze": 0,
-      "Dark Pledge": 0,
       "Hell Fang": 82,
       "Hell Gaze": 0,
-      "Life Drain": 81,
-      "Mana Surge": 84,
-      "Mazio": 0,
+      "Mana Drain": 81,
+      "Mana Surge": 83,
       "Maziodyne": 0,
-      "Megidolaon": 85,
-      "Rakunda": 0,
-      "Sexy Gaze": 0,
-      "Tarunda": 0
+      "Megidola": 84
     },
     "stats": [
       606,
@@ -2549,21 +2093,16 @@
     ]
   },
   "Loa": {
-    "cost": 26600,
+    "inherits": "o-o-o-oo-",
     "lvl": 53,
     "race": "Night",
-    "resists": {
-      "cur": "nu",
-      "dea": "nu",
-      "exp": "wk",
-      "ner": "nu"
-    },
+    "resists": "-----wn-nn",
     "skills": {
       "Debilitate": 58,
       "Dekunda": 0,
+      "Last Resort": 56,
       "Mamudo": 0,
       "Mamudoon": 57,
-      "Sacrifice": 56,
       "Stone Gaze": 55,
       "Tetraja": 0,
       "Venom Bite": 54
@@ -2579,14 +2118,10 @@
     ]
   },
   "Loki": {
-    "cost": 35200,
+    "inherits": "o---o-oo-",
     "lvl": 52,
     "race": "Tyrant",
-    "resists": {
-      "ail": "rs",
-      "mag": "rs",
-      "phy": "rs"
-    },
+    "resists": "sssss--sss",
     "skills": {
       "Charisma": 54,
       "Mabufudyne": 0,
@@ -2607,24 +2142,13 @@
     ]
   },
   "Long": {
-    "cost": 21700,
+    "inherits": "o-o-o-oo-",
     "lvl": 44,
     "race": "Dragon",
-    "resists": {
-      "exp": "nu",
-      "fir": "wk",
-      "ice": "dr"
-    },
+    "resists": "-wd--n----",
     "skills": {
-      "Berserk": 0,
-      "Bufula": 0,
-      "Fog Breath": 0,
       "Ice Breath": 47,
       "Life Gain": 45,
-      "Mabufula": 0,
-      "Makakaja": 0,
-      "Makarakarn": 0,
-      "Me Patra": 0,
       "Stone Bite": 46,
       "Violet Flash": 48
     },
@@ -2635,18 +2159,14 @@
       13,
       22,
       9,
-      7
+      11
     ]
   },
   "Mada": {
-    "cost": 61600,
+    "inherits": "o---o-oo-",
     "lvl": 83,
     "race": "Vile",
-    "resists": {
-      "cur": "wk",
-      "dea": "nu",
-      "phy": "dr"
-    },
+    "resists": "d-----n--w",
     "skills": {
       "Blackmail": 0,
       "Debilitate": 0,
@@ -2667,21 +2187,13 @@
     ]
   },
   "Makami": {
-    "cost": 13500,
-    "lvl": 22,
+    "inherits": "o-o-o-oo-",
+    "lvl": 24,
     "race": "Avatar",
-    "resists": {
-      "exp": "rp",
-      "fir": "nu"
-    },
+    "resists": "-n---r----",
     "skills": {
       "Diarama": 27,
-      "Feral Bite": 0,
-      "Fire Breath": 0,
-      "Fog Breath": 0,
-      "Media": 0,
       "Petradi": 26,
-      "Rakunda": 0,
       "Recarm": 28,
       "Void Mind": 25
     },
@@ -2696,15 +2208,10 @@
     ]
   },
   "Matador": {
-    "cost": 18000,
+    "inherits": "o--o--o--",
     "lvl": 30,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "for": "nu"
-    },
+    "resists": "----nnnnnn",
     "skills": {
       "Andalucia": 0,
       "Dekunda": 31,
@@ -2724,22 +2231,17 @@
     ]
   },
   "Metatron": {
-    "cost": 91100,
+    "inherits": "o---ooo--",
     "lvl": 95,
     "race": "Seraph",
-    "resists": {
-      "ail": "nu",
-      "all": "rs",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "ss-ssnnnnn",
     "skills": {
       "Debilitate": 0,
       "Fire of Sinai": 97,
+      "Holy Wrath": 96,
       "Mahamaon": 0,
       "Makakaja": 0,
       "Megidolaon": 0,
-      "Radiance": 96,
       "Tarukaja": 0,
       "Victory Cry": 98
     },
@@ -2754,13 +2256,10 @@
     ]
   },
   "Michael": {
-    "cost": 78100,
+    "inherits": "o--o-ooo-",
     "lvl": 90,
     "race": "Seraph",
-    "resists": {
-      "exp": "rp",
-      "mag": "nu"
-    },
+    "resists": "-nnnnr----",
     "skills": {
       "Deathbound": 0,
       "Endure": 0,
@@ -2780,18 +2279,14 @@
     ]
   },
   "Mikazuchi": {
-    "cost": 25900,
+    "inherits": "o--oo-oo-",
     "lvl": 45,
     "race": "Kishin",
-    "resists": {
-      "ele": "rp",
-      "exp": "nu",
-      "for": "wk"
-    },
+    "resists": "---rwn----",
     "skills": {
       "Arbitration": 46,
       "Dark Sword": 47,
-      "Mana Refill": 48,
+      "Life Refill": 48,
       "Mazionga": 49,
       "Shock": 0,
       "Ziodyne": 0
@@ -2799,23 +2294,18 @@
     "stats": [
       372,
       177,
+      21,
+      16,
       19,
-      14,
-      17,
       11,
-      11
+      12
     ]
   },
   "Minakata": {
-    "cost": 9600,
+    "inherits": "o---o-oo-",
     "lvl": 17,
     "race": "Kishin",
-    "resists": {
-      "ele": "rp",
-      "exp": "nu",
-      "fir": "wk",
-      "ner": "wk"
-    },
+    "resists": "-w-r-n--w-",
     "skills": {
       "Dark Might": 0,
       "Dekaja": 21,
@@ -2837,15 +2327,10 @@
     ]
   },
   "Mithra": {
-    "cost": 63800,
+    "inherits": "o---oooo-",
     "lvl": 78,
     "race": "Deity",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "ice": "wk",
-      "phy": "rp"
-    },
+    "resists": "r-w--nn---",
     "skills": {
       "Death Pact": 79,
       "Debilitate": 0,
@@ -2857,7 +2342,7 @@
       "Megidola": 0
     },
     "stats": [
-      630,
+      819,
       309,
       27,
       25,
@@ -2867,15 +2352,10 @@
     ]
   },
   "Mizuchi": {
-    "cost": 16800,
+    "inherits": "o-----oo-",
     "lvl": 34,
     "race": "Snake",
-    "resists": {
-      "dea": "nu",
-      "ele": "dr",
-      "fir": "wk",
-      "ice": "nu"
-    },
+    "resists": "-wnd--n---",
     "skills": {
       "Berserk": 37,
       "Bufula": 0,
@@ -2896,13 +2376,10 @@
     ]
   },
   "Momunofu": {
-    "cost": 9600,
+    "inherits": "o--o--oo-",
     "lvl": 20,
     "race": "Brute",
-    "resists": {
-      "ail": "wk",
-      "phy": "rs"
-    },
+    "resists": "s------www",
     "skills": {
       "Brutal Slash": 22,
       "Focus": 0,
@@ -2922,18 +2399,13 @@
     ]
   },
   "Mot": {
-    "cost": 75600,
+    "inherits": "o------o-",
     "lvl": 91,
     "race": "Tyrant",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "ele": "wk",
-      "exp": "nu"
-    },
+    "resists": "---w-nnnnn",
     "skills": {
       "Beckon Call": 92,
-      "Drain Force": 94,
+      "Force Drain": 94,
       "Intimidate": 93,
       "Makakaja": 0,
       "Maragidyne": 0,
@@ -2951,14 +2423,10 @@
     ]
   },
   "Mothman": {
-    "cost": 19800,
+    "inherits": "oo--ooo--",
     "lvl": 43,
     "race": "Wilder",
-    "resists": {
-      "dea": "nu",
-      "ele": "wk",
-      "fir": "nu"
-    },
+    "resists": "-n-w--n---",
     "skills": {
       "Evil Gaze": 0,
       "Fire Breath": 46,
@@ -2978,16 +2446,13 @@
     ]
   },
   "Mou-Ryo": {
-    "cost": 3600,
+    "inherits": "o--------",
     "lvl": 7,
     "race": "Foul",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk"
-    },
+    "resists": "-----wn---",
     "skills": {
       "Deathtouch": 9,
-      "Mana Aid": 10,
+      "Mana Refill": 10,
       "Mazan": 11,
       "Pulinpa": 0,
       "Toxic Sting": 0,
@@ -3004,13 +2469,10 @@
     ]
   },
   "Naga": {
-    "cost": 13500,
+    "inherits": "o--oo-oo-",
     "lvl": 28,
     "race": "Snake",
-    "resists": {
-      "ele": "dr",
-      "fir": "wk"
-    },
+    "resists": "-w-d------",
     "skills": {
       "Drain Attack": 0,
       "Fog Breath": 30,
@@ -3031,13 +2493,10 @@
     ]
   },
   "Nekomata": {
-    "cost": 8400,
+    "inherits": "-o----oo-",
     "lvl": 18,
     "race": "Beast",
-    "resists": {
-      "ele": "wk",
-      "for": "dr"
-    },
+    "resists": "---wd-----",
     "skills": {
       "Feral Claw": 20,
       "Mana Bonus": 19,
@@ -3058,19 +2517,15 @@
     ]
   },
   "Nigi Mitama": {
-    "cost": 15600,
+    "inherits": "o---o-oo-",
     "lvl": 29,
     "race": "Mitama",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-ssssnnnnn",
     "skills": {
       "Analyze": 0,
       "Elec Boost": 32,
       "Fire Boost": 30,
-      "Force Boost": 34,
+      "Force Boost": 33,
       "Ice Boost": 31,
       "Persuade": 0,
       "Rakunda": 0
@@ -3086,13 +2541,10 @@
     ]
   },
   "Nozuchi": {
-    "cost": 7200,
+    "inherits": "o---o--o-",
     "lvl": 14,
     "race": "Snake",
-    "resists": {
-      "ele": "wk",
-      "for": "dr"
-    },
+    "resists": "---wd-----",
     "skills": {
       "Counter": 15,
       "Flatter": 16,
@@ -3112,14 +2564,10 @@
     ]
   },
   "Nue": {
-    "cost": 13000,
+    "inherits": "ooo-o-o--",
     "lvl": 31,
     "race": "Wilder",
-    "resists": {
-      "dea": "nu",
-      "fir": "wk",
-      "ice": "nu"
-    },
+    "resists": "-wn---n---",
     "skills": {
       "Ice Boost": 34,
       "Ice Breath": 32,
@@ -3139,17 +2587,15 @@
     ]
   },
   "Nyx": {
-    "cost": 40500,
+    "inherits": "------oo-",
     "lvl": 70,
     "race": "Night",
-    "resists": {
-      "mag": "rs"
-    },
+    "resists": "-ssss-----",
     "skills": {
       "Debilitate": 71,
       "Dormina": 0,
-      "Drain Fire": 74,
       "Eternal Rest": 0,
+      "Fire Drain": 74,
       "Glacial Blast": 73,
       "Makarakarn": 0,
       "Mana Drain": 72
@@ -3165,13 +2611,10 @@
     ]
   },
   "Oberon": {
-    "cost": 21700,
+    "inherits": "o--o-ooo-",
     "lvl": 46,
     "race": "Fairy",
-    "resists": {
-      "cur": "wk",
-      "phy": "rs"
-    },
+    "resists": "s--------w",
     "skills": {
       "Bufudyne": 50,
       "Diarahan": 48,
@@ -3193,13 +2636,10 @@
     ]
   },
   "Odin": {
-    "cost": 50000,
+    "inherits": "o--oo-oo-",
     "lvl": 65,
     "race": "Deity",
-    "resists": {
-      "for": "wk",
-      "ice": "nu"
-    },
+    "resists": "--n-wn----",
     "skills": {
       "Agidyne": 0,
       "Bufudyne": 0,
@@ -3207,7 +2647,7 @@
       "Mabufudyne": 69,
       "Makajamon": 67,
       "Maragidyne": 70,
-      "Seduce": 68
+      "Persuade": 68
     },
     "stats": [
       498,
@@ -3220,13 +2660,10 @@
     ]
   },
   "Okuninushi": {
-    "cost": 21700,
+    "inherits": "o--oo-oo-",
     "lvl": 39,
     "race": "Kishin",
-    "resists": {
-      "dea": "nu",
-      "exp": "rp"
-    },
+    "resists": "-----rn---",
     "skills": {
       "Agidyne": 41,
       "Beckon Call": 43,
@@ -3246,16 +2683,10 @@
     ]
   },
   "Ongyo-Ki": {
-    "cost": 54000,
+    "inherits": "o--oo-oo-",
     "lvl": 81,
     "race": "Brute",
-    "resists": {
-      "cur": "nu",
-      "dea": "nu",
-      "exp": "wk",
-      "min": "nu",
-      "phy": "nu"
-    },
+    "resists": "n----wnn-n",
     "skills": {
       "Beckon Call": 0,
       "Blackmail": 83,
@@ -3267,7 +2698,7 @@
       "Victory Cry": 86
     },
     "stats": [
-      624,
+      625,
       324,
       23,
       27,
@@ -3277,13 +2708,10 @@
     ]
   },
   "Oni": {
-    "cost": 10100,
+    "inherits": "o--oo-oo-",
     "lvl": 25,
     "race": "Brute",
-    "resists": {
-      "ner": "wk",
-      "phy": "rs"
-    },
+    "resists": "s-------w-",
     "skills": {
       "Begging": 28,
       "Berserk": 0,
@@ -3305,19 +2733,15 @@
     ]
   },
   "Onkot": {
-    "cost": 18600,
+    "inherits": "o--oo-oo-",
     "lvl": 37,
     "race": "Yoma",
-    "resists": {
-      "cur": "wk",
-      "ner": "wk",
-      "phy": "rs"
-    },
+    "resists": "s-------ww",
     "skills": {
       "Berserk": 0,
       "Brutal Slash": 39,
-      "Last Resort": 42,
       "Might": 0,
+      "Sacrifice": 42,
       "Stone Hunt": 40,
       "Sukukaja": 41,
       "Tarukaja": 0,
@@ -3334,13 +2758,10 @@
     ]
   },
   "Orthrus": {
-    "cost": 14500,
+    "inherits": "ooo-o-oo-",
     "lvl": 34,
     "race": "Beast",
-    "resists": {
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-dw-------",
     "skills": {
       "Fire Boost": 35,
       "Fire Breath": 0,
@@ -3360,13 +2781,10 @@
     ]
   },
   "Ose": {
-    "cost": 21100,
+    "inherits": "o--oo-oo-",
     "lvl": 45,
     "race": "Fallen",
-    "resists": {
-      "dea": "nu",
-      "ner": "wk"
-    },
+    "resists": "------n-w-",
     "skills": {
       "Blackmail": 48,
       "Blight": 0,
@@ -3388,15 +2806,10 @@
     ]
   },
   "Pale Rider": {
-    "cost": 48000,
+    "inherits": "o--oo-o--",
     "lvl": 63,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "ice": "nu"
-    },
+    "resists": "--n--nnnnn",
     "skills": {
       "Blight": 65,
       "Bright Might": 67,
@@ -3416,24 +2829,13 @@
     ]
   },
   "Parvati": {
-    "cost": 39600,
+    "inherits": "------ooo",
     "lvl": 57,
     "race": "Lady",
-    "resists": {
-      "exp": "rp",
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-dw--r----",
     "skills": {
-      "Agidyne": 0,
-      "Makatora": 0,
-      "Maragidyne": 0,
       "Mediarama": 58,
-      "Pester": 0,
       "Radiance": 61,
-      "Recarm": 0,
-      "Seduce": 0,
-      "Sexy Gaze": 0,
       "Tetrakarn": 59,
       "Thunderclap": 60
     },
@@ -3448,13 +2850,10 @@
     ]
   },
   "Pazuzu": {
-    "cost": 26600,
+    "inherits": "o---oooo-",
     "lvl": 45,
     "race": "Vile",
-    "resists": {
-      "dea": "nu",
-      "ice": "wk"
-    },
+    "resists": "--w---n---",
     "skills": {
       "Arid Needle": 47,
       "Hell Gaze": 0,
@@ -3475,21 +2874,16 @@
     ]
   },
   "Phantom": {
-    "cost": 19200,
+    "inherits": "o--------",
     "lvl": 42,
     "race": "Foul",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "for": "wk",
-      "phy": "rs"
-    },
+    "resists": "s---wwn---",
     "skills": {
       "Dekaja": 46,
       "Kamikaze": 44,
+      "Last Resort": 0,
       "Mana Drain": 0,
       "Mazionga": 43,
-      "Sacrifice": 0,
       "Tarunda": 45,
       "Ziodyne": 47
     },
@@ -3504,15 +2898,10 @@
     ]
   },
   "Pisaca": {
-    "cost": 11500,
+    "inherits": "ooo---o--",
     "lvl": 28,
     "race": "Haunt",
-    "resists": {
-      "cur": "nu",
-      "dea": "nu",
-      "fir": "wk",
-      "min": "nu"
-    },
+    "resists": "-w----nn-n",
     "skills": {
       "Dekunda": 32,
       "Life Drain": 30,
@@ -3533,12 +2922,10 @@
     ]
   },
   "Pixie": {
-    "cost": 2400,
+    "inherits": "-----oooo",
     "lvl": 2,
     "race": "Fairy",
-    "resists": {
-      "ele": "rs"
-    },
+    "resists": "---s------",
     "skills": {
       "Dia": 0,
       "Posumudi": 5,
@@ -3558,14 +2945,10 @@
     ]
   },
   "Power": {
-    "cost": 14000,
+    "inherits": "o--o-ooo-",
     "lvl": 33,
     "race": "Divine",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "ner": "wk"
-    },
+    "resists": "-----rw-w-",
     "skills": {
       "Brainwash": 0,
       "Dark Might": 0,
@@ -3586,13 +2969,10 @@
     ]
   },
   "Preta": {
-    "cost": 2800,
+    "inherits": "ooo-o-o--",
     "lvl": 4,
     "race": "Haunt",
-    "resists": {
-      "dea": "nu",
-      "mag": "wk"
-    },
+    "resists": "-wwwwwn---",
     "skills": {
       "Agi": 5,
       "Deathtouch": 6,
@@ -3612,14 +2992,10 @@
     ]
   },
   "Principality": {
-    "cost": 10100,
+    "inherits": "---o-ooo-",
     "lvl": 28,
     "race": "Divine",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "min": "wk"
-    },
+    "resists": "-----nw---",
     "skills": {
       "Bright Might": 0,
       "Diarama": 29,
@@ -3636,18 +3012,14 @@
       12,
       9,
       7,
-      6
+      9
     ]
   },
   "Purski": {
-    "cost": 25900,
+    "inherits": "o--oo-oo-",
     "lvl": 48,
     "race": "Yoma",
-    "resists": {
-      "ele": "wk",
-      "exp": "nu",
-      "for": "nu"
-    },
+    "resists": "---wnn----",
     "skills": {
       "Binding Cry": 0,
       "Chaos Blade": 52,
@@ -3669,13 +3041,10 @@
     ]
   },
   "Pyro Jack": {
-    "cost": 7600,
+    "inherits": "o---o-oo-",
     "lvl": 19,
     "race": "Fairy",
-    "resists": {
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-nw-------",
     "skills": {
       "Agi": 0,
       "Agilao": 22,
@@ -3696,58 +3065,41 @@
     ]
   },
   "Queen Mab": {
-    "cost": 28800,
+    "inherits": "------oo-",
     "lvl": 56,
     "race": "Night",
-    "resists": {
-      "mag": "rs"
-    },
+    "resists": "-ssss-----",
     "skills": {
-      "Dia": 0,
+      "Diarahan": 57,
       "Dormina": 59,
-      "Lucky Find": 0,
       "Makarakarn": 58,
       "Maziodyne": 61,
-      "Me Patra": 0,
-      "Mediarahan": 57,
       "Mediarama": 0,
-      "Paraladi": 0,
-      "Pester": 0,
-      "Posumudi": 0,
-      "Rakunda": 0,
-      "Seduce": 0,
       "Tarukaja": 0,
       "Tetraja": 60,
-      "Trafuri": 0,
-      "Wing Buffet": 0,
-      "Zio": 0,
       "Ziodyne": 0
     },
     "stats": [
-      408,
+      522,
       231,
       12,
-      21,
+      27,
       12,
       12,
       19
     ]
   },
   "Quetzalcoatl": {
-    "cost": 25200,
+    "inherits": "o-o-oooo-",
     "lvl": 55,
     "race": "Snake",
-    "resists": {
-      "ele": "wk",
-      "ice": "nu",
-      "phy": "rs"
-    },
+    "resists": "s-nw------",
     "skills": {
       "Berserk": 56,
-      "Drain Ice": 58,
       "Glacial Blast": 0,
       "Gonnection": 0,
       "Ice Boost": 57,
+      "Ice Drain": 58,
       "Recarmdra": 60,
       "Stone Bite": 0,
       "Toxic Cloud": 59
@@ -3759,20 +3111,14 @@
       12,
       27,
       9,
-      7
+      11
     ]
   },
   "Raidou Kuzunoha the XIV": {
-    "cost": 60500,
+    "inherits": "-------o-",
     "lvl": 80,
     "race": "Summoner",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "mag": "rs",
-      "phy": "rs"
-    },
+    "resists": "sssssnnnnn",
     "skills": {
       "Arbitration": 0,
       "Boogie-Woogie": 0,
@@ -3798,14 +3144,10 @@
     ]
   },
   "Raiju": {
-    "cost": 6100,
+    "inherits": "ooo-o-o--",
     "lvl": 25,
     "race": "Wilder",
-    "resists": {
-      "dea": "nu",
-      "ele": "dr",
-      "for": "wk"
-    },
+    "resists": "---dw-n---",
     "skills": {
       "Elec Boost": 29,
       "Feral Claw": 26,
@@ -3816,36 +3158,27 @@
     },
     "stats": [
       204,
-      90,
+      120,
       8,
-      5,
-      9,
+      15,
+      8,
       8,
       5
     ]
   },
   "Raja Naga": {
-    "cost": 19200,
+    "inherits": "o---o-oo-",
     "lvl": 37,
     "race": "Snake",
-    "resists": {
-      "ele": "dr",
-      "fir": "wk",
-      "phy": "rs"
-    },
+    "resists": "sw-d------",
     "skills": {
       "Counter": 38,
       "Drain Attack": 0,
-      "Fog Breath": 0,
-      "Hell Thrust": 0,
-      "Life Gain": 0,
       "Shock": 39,
       "Tarukaja": 0,
       "Tempest": 41,
-      "Trade": 0,
       "Void Fire": 42,
-      "Wooing": 40,
-      "Zionga": 0
+      "Wooing": 40
     },
     "stats": [
       348,
@@ -3858,21 +3191,17 @@
     ]
   },
   "Rakshasa": {
-    "cost": 34400,
+    "inherits": "oo----o--",
     "lvl": 63,
     "race": "Haunt",
-    "resists": {
-      "dea": "rp",
-      "ele": "wk",
-      "exp": "wk"
-    },
+    "resists": "---w-wr---",
     "skills": {
       "Berserk": 68,
-      "Last Resort": 0,
       "Life Drain": 64,
       "Megido": 67,
       "Rakunda": 65,
       "Retaliate": 66,
+      "Sacrifice": 0,
       "Stun Claw": 0
     },
     "stats": [
@@ -3886,20 +3215,17 @@
     ]
   },
   "Rangda": {
-    "cost": 42300,
+    "inherits": "oo----oo-",
     "lvl": 72,
     "race": "Femme",
-    "resists": {
-      "ele": "wk",
-      "phy": "rp"
-    },
+    "resists": "r--w------",
     "skills": {
       "Avenge": 76,
       "Debilitate": 0,
       "Dekaja": 0,
       "Hellfire": 75,
-      "Life Refill": 73,
       "Makajamon": 74,
+      "Mana Refill": 73,
       "Stun Claw": 0
     },
     "stats": [
@@ -3913,19 +3239,15 @@
     ]
   },
   "Raphael": {
-    "cost": 70800,
+    "inherits": "o--o-ooo-",
     "lvl": 84,
     "race": "Seraph",
-    "resists": {
-      "exp": "rp",
-      "fir": "nu",
-      "for": "nu"
-    },
+    "resists": "-n--nr----",
     "skills": {
       "Holy Wrath": 88,
-      "Life Refill": 0,
       "Mahamaon": 86,
       "Makarakarn": 0,
+      "Mana Refill": 0,
       "Prayer": 85,
       "Stasis Blade": 87,
       "Tetrakarn": 0
@@ -3941,16 +3263,10 @@
     ]
   },
   "Red Rider": {
-    "cost": 40500,
+    "inherits": "o--oo-o--",
     "lvl": 55,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "ele": "nu",
-      "exp": "nu",
-      "for": "nu"
-    },
+    "resists": "---nnnnnnn",
     "skills": {
       "Avenge": 58,
       "Bolt Storm": 56,
@@ -3969,14 +3285,10 @@
     ]
   },
   "Sakahagi": {
-    "cost": 28100,
+    "inherits": "o--oo-o--",
     "lvl": 45,
     "race": "Foul",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-----nnnnn",
     "skills": {
       "Mabufula": 0,
       "Maragion": 0,
@@ -3998,14 +3310,10 @@
     ]
   },
   "Saki Mitama": {
-    "cost": 19200,
+    "inherits": "o---o-oo-",
     "lvl": 35,
     "race": "Mitama",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-ssssnnnnn",
     "skills": {
       "Analyze": 0,
       "Dormina": 0,
@@ -4026,20 +3334,16 @@
     ]
   },
   "Samael": {
-    "cost": 53000,
+    "inherits": "o-o-oooo-",
     "lvl": 73,
     "race": "Vile",
-    "resists": {
-      "dea": "rp",
-      "ele": "wk",
-      "exp": "rp"
-    },
+    "resists": "---w-rr---",
     "skills": {
       "Avenge": 76,
       "Mahamaon": 0,
       "Mamudoon": 0,
+      "Phys Repel": 77,
       "Prominence": 0,
-      "Repel Phys": 77,
       "Samarecarm": 74,
       "Tetrakarn": 75
     },
@@ -4054,14 +3358,10 @@
     ]
   },
   "Sarasvati": {
-    "cost": 16800,
+    "inherits": "------ooo",
     "lvl": 30,
     "race": "Megami",
-    "resists": {
-      "ail": "nu",
-      "exp": "nu",
-      "fir": "wk"
-    },
+    "resists": "-w---n-nnn",
     "skills": {
       "Force Boost": 34,
       "Mana Refill": 0,
@@ -4081,14 +3381,10 @@
     ]
   },
   "Sarutahiko": {
-    "cost": 15100,
+    "inherits": "o--oo-oo-",
     "lvl": 35,
     "race": "Jirae",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "ner": "wk"
-    },
+    "resists": "-----nn-w-",
     "skills": {
       "Berserk": 0,
       "Counter": 38,
@@ -4109,21 +3405,17 @@
     ]
   },
   "Sati": {
-    "cost": 28800,
+    "inherits": "------ooo",
     "lvl": 48,
     "race": "Megami",
-    "resists": {
-      "exp": "rp",
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-dw--r----",
     "skills": {
       "Agidyne": 0,
+      "Allure": 52,
       "Makatora": 50,
       "Maragidyne": 49,
       "Pester": 51,
       "Recarm": 0,
-      "Seduce": 52,
       "Sexy Gaze": 0
     },
     "stats": [
@@ -4137,21 +3429,16 @@
     ]
   },
   "Scathach": {
-    "cost": 47000,
+    "inherits": "------oo-",
     "lvl": 64,
     "race": "Megami",
-    "resists": {
-      "cur": "nu",
-      "ele": "wk",
-      "exp": "nu",
-      "for": "nu"
-    },
+    "resists": "---wnn---n",
     "skills": {
       "Dark Pledge": 66,
+      "Force Repel": 65,
       "Mana Aid": 68,
       "Mazandyne": 0,
       "Might": 0,
-      "Repel Force": 65,
       "Thunderclap": 67,
       "Wind Cutter": 69
     },
@@ -4166,30 +3453,19 @@
     ]
   },
   "Senri": {
-    "cost": 14500,
+    "inherits": "oo----oo-",
     "lvl": 27,
     "race": "Holy",
-    "resists": {
-      "ele": "wk",
-      "exp": "nu",
-      "for": "dr"
-    },
+    "resists": "---wdn----",
     "skills": {
       "Drain Attack": 31,
-      "Feral Claw": 0,
       "Lucky Find": 29,
-      "Mana Bonus": 0,
-      "Marin Karin": 0,
       "Mazanma": 28,
-      "Mute Gaze": 0,
-      "Paraladi": 0,
-      "Pester": 0,
-      "Stone Hunt": 30,
-      "Stun Needle": 0
+      "Stone Hunt": 30
     },
     "stats": [
       216,
-      123,
+      135,
       10,
       14,
       9,
@@ -4198,14 +3474,10 @@
     ]
   },
   "Setanta": {
-    "cost": 22400,
+    "inherits": "o--o--oo-",
     "lvl": 43,
     "race": "Fairy",
-    "resists": {
-      "cur": "wk",
-      "for": "rp",
-      "ner": "wk"
-    },
+    "resists": "----r---ww",
     "skills": {
       "Estoma": 0,
       "Guillotine": 0,
@@ -4213,7 +3485,7 @@
       "Sukukaja": 0,
       "Taunt": 45,
       "Tempest": 48,
-      "Void Mind": 46,
+      "Void Curse": 46,
       "Wooing": 47
     },
     "stats": [
@@ -4227,15 +3499,10 @@
     ]
   },
   "Shadow": {
-    "cost": 25900,
+    "inherits": "o--------",
     "lvl": 52,
     "race": "Foul",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "for": "wk",
-      "phy": "rs"
-    },
+    "resists": "s---wwn---",
     "skills": {
       "Anti-Phys": 0,
       "Makakaja": 55,
@@ -4257,14 +3524,10 @@
     ]
   },
   "Shiisaa": {
-    "cost": 6800,
+    "inherits": "ooo-o-oo-",
     "lvl": 13,
     "race": "Holy",
-    "resists": {
-      "ele": "dr",
-      "exp": "nu",
-      "fir": "wk"
-    },
+    "resists": "-w-d-n----",
     "skills": {
       "Anti-Fire": 18,
       "Brainwash": 15,
@@ -4285,21 +3548,16 @@
     ]
   },
   "Shiki-Ouji": {
-    "cost": 27300,
+    "inherits": "----o-oo-",
     "lvl": 54,
     "race": "Brute",
-    "resists": {
-      "dea": "rp",
-      "exp": "rp",
-      "fir": "wk",
-      "phy": "nu"
-    },
+    "resists": "nw---rr---",
     "skills": {
       "Brainwash": 55,
       "Dekaja": 0,
-      "Mahamaon": 56,
+      "Mahamaon": 57,
       "Mamudoon": 0,
-      "Megido": 57,
+      "Megido": 58,
       "Mute Gaze": 56,
       "Stun Needle": 0
     },
@@ -4314,13 +3572,10 @@
     ]
   },
   "Shikigami": {
-    "cost": 2800,
+    "inherits": "o---o-oo-",
     "lvl": 4,
     "race": "Brute",
-    "resists": {
-      "ele": "rp",
-      "fir": "wk"
-    },
+    "resists": "-w-r------",
     "skills": {
       "Anti-Curse": 7,
       "Beseech": 0,
@@ -4331,7 +3586,7 @@
     },
     "stats": [
       48,
-      27,
+      28,
       5,
       5,
       4,
@@ -4340,15 +3595,10 @@
     ]
   },
   "Shikome": {
-    "cost": 13500,
+    "inherits": "o---o-oo-",
     "lvl": 32,
     "race": "Femme",
-    "resists": {
-      "cur": "nu",
-      "fir": "wk",
-      "min": "rs",
-      "ner": "nu"
-    },
+    "resists": "-w-----snn",
     "skills": {
       "Anti-Death": 33,
       "Drain Attack": 36,
@@ -4369,21 +3619,17 @@
     ]
   },
   "Shiva": {
-    "cost": 91100,
-    "lvl": 95,
+    "inherits": "o--oo-oo-",
+    "lvl": 94,
     "race": "Fury",
-    "resists": {
-      "all": "rs",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "sssssnnsss",
     "skills": {
       "Allure": 0,
-      "Avenge": 97,
-      "Bolt Storm": 96,
-      "Drain Phys": 99,
+      "Avenge": 96,
+      "Bolt Storm": 95,
       "Hassohappa": 0,
-      "Megidolaon": 98,
+      "Megidolaon": 97,
+      "Phys Drain": 98,
       "Victory Cry": 0
     },
     "stats": [
@@ -4397,27 +3643,15 @@
     ]
   },
   "Skadi": {
-    "cost": 56100,
+    "inherits": "------oo-",
     "lvl": 74,
     "race": "Lady",
-    "resists": {
-      "cur": "nu",
-      "ele": "wk",
-      "exp": "nu",
-      "for": "nu"
-    },
+    "resists": "---wnn---n",
     "skills": {
-      "Dark Pledge": 0,
       "Earthquake": 78,
+      "Elec Repel": 77,
       "Makajamon": 75,
-      "Makakaja": 76,
-      "Mana Aid": 0,
-      "Mazandyne": 0,
-      "Might": 0,
-      "Repel Elec": 77,
-      "Repel Force": 0,
-      "Thunderclap": 0,
-      "Wind Cutter": 0
+      "Makakaja": 76
     },
     "stats": [
       570,
@@ -4430,19 +3664,14 @@
     ]
   },
   "Slime": {
-    "cost": 3300,
+    "inherits": "o-o-o-o--",
     "lvl": 6,
     "race": "Foul",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "fir": "wk",
-      "phy": "rs"
-    },
+    "resists": "swwwwwn---",
     "skills": {
       "Deathtouch": 0,
       "Feral Bite": 0,
-      "Sacrifice": 8,
+      "Last Resort": 8,
       "Sonic Wave": 10,
       "Sukunda": 7,
       "War Cry": 9
@@ -4458,13 +3687,10 @@
     ]
   },
   "Sparna": {
-    "cost": 31200,
+    "inherits": "oo--oooo-",
     "lvl": 54,
     "race": "Beast",
-    "resists": {
-      "ail": "nu",
-      "for": "rp"
-    },
+    "resists": "----r--nnn",
     "skills": {
       "Diarahan": 58,
       "Fog Breath": 0,
@@ -4485,13 +3711,10 @@
     ]
   },
   "Succubus": {
-    "cost": 16200,
+    "inherits": "-----ooo-",
     "lvl": 37,
     "race": "Night",
-    "resists": {
-      "exp": "wk",
-      "min": "nu"
-    },
+    "resists": "-----w-n--",
     "skills": {
       "Analyze": 0,
       "Dormina": 0,
@@ -4512,13 +3735,10 @@
     ]
   },
   "Sudama": {
-    "cost": 5400,
+    "inherits": "o------o-",
     "lvl": 13,
     "race": "Jirae",
-    "resists": {
-      "fir": "wk",
-      "for": "rs"
-    },
+    "resists": "-w--s-----",
     "skills": {
       "Begging": 0,
       "Kamikaze": 15,
@@ -4539,14 +3759,10 @@
     ]
   },
   "Sui-Ki": {
-    "cost": 36100,
+    "inherits": "o--oo-oo-",
     "lvl": 62,
     "race": "Brute",
-    "resists": {
-      "dea": "nu",
-      "fir": "wk",
-      "ice": "nu"
-    },
+    "resists": "-wn---n---",
     "skills": {
       "Bufudyne": 64,
       "Dekaja": 0,
@@ -4567,19 +3783,13 @@
     ]
   },
   "Surt": {
-    "cost": 56100,
+    "inherits": "o--oo-oo-",
     "lvl": 74,
     "race": "Tyrant",
-    "resists": {
-      "dea": "nu",
-      "fir": "dr",
-      "ice": "wk",
-      "min": "nu",
-      "ner": "nu"
-    },
+    "resists": "-dw--snnns",
     "skills": {
       "Attack All": 76,
-      "Drain Elec": 75,
+      "Elec Drain": 75,
       "Heat Wave": 0,
       "Hellfire": 0,
       "Ragnarok": 78,
@@ -4597,13 +3807,10 @@
     ]
   },
   "Tao Tie": {
-    "cost": 43200,
+    "inherits": "o-o-o-oo-",
     "lvl": 65,
     "race": "Vile",
-    "resists": {
-      "cur": "wk",
-      "dea": "nu"
-    },
+    "resists": "------n--w",
     "skills": {
       "Hell Gaze": 67,
       "Life Drain": 66,
@@ -4624,13 +3831,10 @@
     ]
   },
   "Taraka": {
-    "cost": 8000,
+    "inherits": "o--oo-oo-",
     "lvl": 20,
     "race": "Femme",
-    "resists": {
-      "ice": "wk",
-      "ner": "nu"
-    },
+    "resists": "--w-----n-",
     "skills": {
       "Analyze": 0,
       "Beseech": 22,
@@ -4652,19 +3856,12 @@
     ]
   },
   "The Harlot": {
-    "cost": 54000,
+    "inherits": "o-o-o-o--",
     "lvl": 69,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "ele": "dr",
-      "exp": "nu",
-      "phy": "rp"
-    },
+    "resists": "r--d-nnnnn",
     "skills": {
-      "Beast Roar": 73,
-      "Bolt Storm": 72,
+      "Beast Roar": 72,
       "Death Lust": 0,
       "Dekunda": 70,
       "Focus": 71,
@@ -4673,7 +3870,7 @@
     },
     "stats": [
       528,
-      279,
+      267,
       23,
       24,
       19,
@@ -4682,21 +3879,16 @@
     ]
   },
   "Thor": {
-    "cost": 53000,
+    "inherits": "o--o--oo-",
     "lvl": 76,
     "race": "Kishin",
-    "resists": {
-      "cur": "wk",
-      "ele": "dr",
-      "exp": "nu",
-      "ner": "wk"
-    },
+    "resists": "---n-n--ww",
     "skills": {
       "Avenge": 0,
+      "Fire Repel": 80,
       "Hades Blast": 0,
       "Maziodyne": 78,
       "Mediarahan": 77,
-      "Repel Fire": 80,
       "Stasis Blade": 79,
       "Ziodyne": 0
     },
@@ -4711,15 +3903,10 @@
     ]
   },
   "Throne": {
-    "cost": 38700,
+    "inherits": "o-----oo-",
     "lvl": 64,
     "race": "Divine",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "fir": "dr",
-      "ice": "wk"
-    },
+    "resists": "-dw--rw---",
     "skills": {
       "Brainwash": 0,
       "Debilitate": 68,
@@ -4740,13 +3927,10 @@
     ]
   },
   "Titan": {
-    "cost": 23800,
+    "inherits": "o--oo-oo-",
     "lvl": 49,
     "race": "Jirae",
-    "resists": {
-      "ele": "wk",
-      "for": "nu"
-    },
+    "resists": "---wn-----",
     "skills": {
       "Beseech": 0,
       "Fire Breath": 53,
@@ -4767,14 +3951,10 @@
     ]
   },
   "Titania": {
-    "cost": 29600,
+    "inherits": "------ooo",
     "lvl": 57,
     "race": "Fairy",
-    "resists": {
-      "dea": "rp",
-      "exp": "rp",
-      "mag": "rs"
-    },
+    "resists": "-ssssrr---",
     "skills": {
       "Charisma": 60,
       "Glacial Blast": 0,
@@ -4795,13 +3975,10 @@
     ]
   },
   "Troll": {
-    "cost": 16800,
+    "inherits": "o---o-oo-",
     "lvl": 38,
     "race": "Fairy",
-    "resists": {
-      "ice": "dr",
-      "min": "wk"
-    },
+    "resists": "--d----w--",
     "skills": {
       "Begging": 0,
       "Berserk": 40,
@@ -4822,27 +3999,24 @@
     ]
   },
   "Trumpeter": {
-    "cost": 62700,
+    "inherits": "------o--",
     "lvl": 77,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu"
-    },
+    "resists": "-----nnnnn",
     "skills": {
       "Dekaja": 79,
-      "Evil Melody": 80,
+      "Evil Melody": 81,
       "Holy Melody": 0,
       "Mabufudyne": 0,
       "Makakaja": 78,
       "Maragidyne": 0,
       "Mazandyne": 0,
-      "Maziodyne": 0
+      "Maziodyne": 0,
+      "Megidolaon": 80
     },
     "stats": [
       588,
-      324,
+      234,
       21,
       31,
       21,
@@ -4851,19 +4025,14 @@
     ]
   },
   "Unicorn": {
-    "cost": 10100,
+    "inherits": "o-o-o-oo-",
     "lvl": 21,
     "race": "Holy",
-    "resists": {
-      "cur": "nu",
-      "ele": "wk",
-      "exp": "nu",
-      "min": "nu"
-    },
+    "resists": "---w-n-n-n",
     "skills": {
       "Diarama": 26,
+      "Life Refill": 22,
       "Mabufu": 0,
-      "Mana Refill": 22,
       "Me Patra": 25,
       "Media": 0,
       "Rakukaja": 0,
@@ -4881,24 +4050,14 @@
     ]
   },
   "Uriel": {
-    "cost": 58300,
+    "inherits": "o--o-ooo-",
     "lvl": 73,
     "race": "Seraph",
-    "resists": {
-      "exp": "rp",
-      "fir": "nu"
-    },
+    "resists": "-n---r----",
     "skills": {
-      "Brainwash": 0,
-      "Debilitate": 0,
       "Drain Attack": 75,
       "Heat Wave": 74,
-      "Holy Wrath": 0,
-      "Mahamaon": 0,
-      "Mediarahan": 0,
       "Megidola": 76,
-      "Mute Gaze": 0,
-      "Prominence": 0,
       "Radiance": 77
     },
     "stats": [
@@ -4912,22 +4071,18 @@
     ]
   },
   "Uzume": {
-    "cost": 10500,
+    "inherits": "-------o-",
     "lvl": 18,
     "race": "Megami",
-    "resists": {
-      "ele": "wk",
-      "exp": "nu",
-      "for": "nu"
-    },
+    "resists": "---wnn----",
     "skills": {
       "Hama": 19,
       "Life Bonus": 22,
       "Mana Refill": 23,
       "Mazan": 0,
       "Media": 0,
-      "Seduce": 20,
-      "Stone Gaze": 21
+      "Petradi": 21,
+      "Seduce": 20
     },
     "stats": [
       156,
@@ -4940,25 +4095,15 @@
     ]
   },
   "Valkyrie": {
-    "cost": 19800,
+    "inherits": "o--oo-ooo",
     "lvl": 33,
     "race": "Wargod",
-    "resists": {
-      "exp": "nu",
-      "fir": "dr"
-    },
+    "resists": "-d---n----",
     "skills": {
-      "Agilao": 0,
       "Counter": 36,
-      "Diarama": 0,
       "Guillotine": 34,
-      "Makajam": 0,
-      "Makatora": 0,
-      "Me Patra": 0,
       "Might": 37,
-      "Soul Recruit": 35,
-      "Stone Gaze": 0,
-      "Tetraja": 0
+      "Soul Recruit": 35
     },
     "stats": [
       282,
@@ -4971,14 +4116,10 @@
     ]
   },
   "Virtue": {
-    "cost": 18600,
+    "inherits": "-------o-",
     "lvl": 41,
     "race": "Divine",
-    "resists": {
-      "dea": "wk",
-      "exp": "rp",
-      "for": "wk"
-    },
+    "resists": "----wrw---",
     "skills": {
       "Arid Needle": 42,
       "Detain": 0,
@@ -4999,43 +4140,34 @@
     ]
   },
   "Vishnu": {
-    "cost": 88400,
+    "inherits": "o--oo-oo-",
     "lvl": 93,
     "race": "Deity",
-    "resists": {
-      "all": "rs",
-      "dea": "nu",
-      "exp": "rp"
-    },
+    "resists": "sssssrnsss",
     "skills": {
       "Hades Blast": 95,
       "Hell Gaze": 0,
       "Holy Wrath": 0,
+      "Phys Repel": 97,
       "Prayer": 0,
       "Prominence": 94,
-      "Radiance": 96,
-      "Repel Phys": 97
+      "Radiance": 96
     },
     "stats": [
-      738,
-      354,
+      708,
+      384,
       27,
+      35,
       25,
-      30,
-      25,
+      20,
       26
     ]
   },
   "White Rider": {
-    "cost": 37800,
+    "inherits": "----o-o--",
     "lvl": 52,
     "race": "Fiend",
-    "resists": {
-      "ail": "nu",
-      "dea": "nu",
-      "exp": "nu",
-      "fir": "nu"
-    },
+    "resists": "-n--dnnnnn",
     "skills": {
       "Dekaja": 54,
       "God's Bow": 0,
@@ -5053,22 +4185,17 @@
       13
     ]
   },
-  "Will O' Wisp": {
-    "cost": 2200,
+  "Will o' Wisp": {
+    "inherits": "o--------",
     "lvl": 1,
     "race": "Foul",
-    "resists": {
-      "dea": "rp",
-      "exp": "wk",
-      "mag": "wk",
-      "phy": "rs"
-    },
+    "resists": "swwwwwn---",
     "skills": {
       "Deathtouch": 4,
+      "Last Resort": 5,
       "Makakaja": 6,
       "Needle Rush": 0,
       "Riberama": 3,
-      "Sacrifice": 5,
       "Zan": 2
     },
     "stats": [
@@ -5082,31 +4209,15 @@
     ]
   },
   "Wu Kong": {
-    "cost": 39600,
+    "inherits": "o--oo-oo-",
     "lvl": 54,
     "race": "Fury",
-    "resists": {
-      "dea": "nu",
-      "exp": "nu",
-      "phy": "nu"
-    },
+    "resists": "n----nn---",
     "skills": {
-      "Attack All": 58,
-      "Avenge": 59,
-      "Berserk": 0,
-      "Brutal Slash": 0,
-      "Dark Pledge": 57,
-      "Endure": 0,
-      "Hassohappa": 56,
-      "Kidnap": 0,
-      "Last Resort": 0,
-      "Life Surge": 0,
-      "Might": 0,
-      "Rakukaja": 0,
-      "Stone Hunt": 0,
-      "Sukukaja": 0,
-      "Tarukaja": 0,
-      "Tetrakarn": 0
+      "Attack All": 57,
+      "Avenge": 58,
+      "Dark Pledge": 56,
+      "Hassohappa": 55
     },
     "stats": [
       432,
@@ -5119,14 +4230,10 @@
     ]
   },
   "Yaka": {
-    "cost": 6800,
+    "inherits": "oo----o--",
     "lvl": 17,
     "race": "Haunt",
-    "resists": {
-      "dea": "nu",
-      "exp": "wk",
-      "ice": "wk"
-    },
+    "resists": "--w--wn---",
     "skills": {
       "Deathtouch": 0,
       "Dia": 20,
@@ -5147,13 +4254,10 @@
     ]
   },
   "Yaksini": {
-    "cost": 19800,
+    "inherits": "o--oo-oo-",
     "lvl": 43,
     "race": "Femme",
-    "resists": {
-      "ele": "wk",
-      "for": "nu"
-    },
+    "resists": "---wn-----",
     "skills": {
       "Binding Cry": 44,
       "Guillotine": 0,
@@ -5174,13 +4278,10 @@
     ]
   },
   "Yatagarasu": {
-    "cost": 24500,
+    "inherits": "ooo-oooo-",
     "lvl": 46,
     "race": "Avatar",
-    "resists": {
-      "exp": "rp",
-      "for": "rp"
-    },
+    "resists": "----rr----",
     "skills": {
       "Force Boost": 49,
       "Mana Aid": 0,
@@ -5193,20 +4294,17 @@
       348,
       195,
       13,
-      19,
+      18,
       12,
       16,
       10
     ]
   },
   "Yurlungur": {
-    "cost": 36900,
+    "inherits": "o-----oo-",
     "lvl": 66,
     "race": "Snake",
-    "resists": {
-      "ail": "wk",
-      "mag": "nu"
-    },
+    "resists": "-nnnn--www",
     "skills": {
       "Bolt Storm": 0,
       "Elec Boost": 67,
@@ -5227,14 +4325,10 @@
     ]
   },
   "Zhen": {
-    "cost": 3300,
+    "inherits": "o---ooo--",
     "lvl": 6,
     "race": "Wilder",
-    "resists": {
-      "ail": "rs",
-      "dea": "nu",
-      "fir": "wk"
-    },
+    "resists": "-w----nsss",
     "skills": {
       "Mazan": 10,
       "Mute Gaze": 0,
@@ -5242,8 +4336,7 @@
       "Toxic Sting": 7,
       "Void Nerve": 11,
       "War Cry": 8,
-      "Wing Buffet": 9,
-      "Zan": 0
+      "Wing Buffet": 9
     },
     "stats": [
       72,
@@ -5256,15 +4349,10 @@
     ]
   },
   "Zouchou": {
-    "cost": 14500,
+    "inherits": "o--oo-oo-",
     "lvl": 27,
     "race": "Kishin",
-    "resists": {
-      "cur": "nu",
-      "exp": "nu",
-      "for": "wk",
-      "ner": "nu"
-    },
+    "resists": "----wn--nn",
     "skills": {
       "Agilao": 0,
       "Anti-Death": 30,

@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs/Subscription';
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { BaseStats, ResistElements, ElementOrder } from '../../desu/constants';
 import { Demon } from '../../desu/models';
-import { Compendium } from '../models/compendium';
+import { DesuCompendium as Compendium } from '../../desu/models/compendium';
 import { APP_TITLE } from '../constants';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';

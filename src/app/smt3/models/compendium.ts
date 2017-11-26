@@ -18,6 +18,10 @@ export class Compendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
+  static estimateBasePrice(stats: number[]): number {
+    return 100 * Math.floor(Math.pow(stats.slice(2).reduce((acc, stat) => stat + acc, 0), 2) / 20);
+  }
+
   constructor() {
     this.initImportedData();
     this.updateDerivedData();
@@ -31,26 +35,17 @@ export class Compendium implements ICompendium {
     const dlcDemons: { [name: string]: boolean } = {};
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
-      demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
-        stats: BaseStats.map((val, i) => json.stats[i]),
-        resists: ResistanceElements.map(val => 100)
-      });
-
-      demons[name].price = 100 * Math.floor(
-        Math.pow(demons[name].stats.slice(2).reduce((acc, stat) => stat + acc, 0), 2) / 20
-      );
-
-      for (const [special, elements] of Object.entries(SpecialResistances)) {
-        if (json.resists.hasOwnProperty(special)) {
-          for (const element of elements) {
-            demons[name].resists[ElementOrder[element]] = ResistCodes[json.resists[special]];
-          }
-        }
-      }
-
-      for (const [element, resistance] of Object.entries(json.resists)) {
-        demons[name].resists[ElementOrder[element]] = ResistCodes[resistance];
-      }
+      demons[name] = {
+        name: name,
+        race: json.race,
+        lvl: json.lvl,
+        price: Compendium.estimateBasePrice(json.stats),
+        stats: json.stats,
+        resists: json.resists.split('').map(char => ResistCodes[char]),
+        inherits: json.inherits.split('').map(char => char === 'o'),
+        skills: json.skills,
+        fusion: 'normal'
+      };
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {

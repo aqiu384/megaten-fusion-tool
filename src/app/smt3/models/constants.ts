@@ -80,13 +80,25 @@ export const ResistanceLevels = [
 ];
 
 export const ResistCodes = {
-  wk: 1125,
-  no: 100,
-  rs: 50,
-  nu: 0,
-  rp: -100,
-  dr: -1100
+  w: 1125,
+  '-': 100,
+  s: 50,
+  n: 0,
+  r: -100,
+  d: -1100
 };
+
+export const InheritElements = [
+  'Thrust',
+  'Claw',
+  'Bite',
+  'Weapon',
+  'Mouth',
+  'Wings',
+  'Eye',
+  'Talk',
+  'Maiden'
+];
 
 export const ElementDemons = [
   'Erthys',

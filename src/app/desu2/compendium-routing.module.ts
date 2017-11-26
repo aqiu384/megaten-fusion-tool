@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
-import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
@@ -42,10 +41,6 @@ const compendiumRoutes: Routes = [
       {
         path: 'skills',
         component: SkillListContainerComponent
-      },
-      {
-        path: 'settings',
-        component: DemonDlcSettingsContainerComponent
       }
     ]
   },
