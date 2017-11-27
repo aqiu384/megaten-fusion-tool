@@ -208,28 +208,6 @@
     "prereq": "St8 Ag7",
     "rank": 5
   },
-  "Crisis Might": {
-    "effect": "Physical damage +50% when low on HP",
-    "element": "passive",
-    "newoc": true,
-    "prereq": "Vi15",
-    "rank": 8
-  },
-  "Critical Heal": {
-    "effect": "Restores some HP after successfully delivering a critical hit",
-    "element": "passive",
-    "newoc": true,
-    "prereq": "Ma13",
-    "rank": 3
-  },
-  "Cursed Dance": {
-    "cost": 1023,
-    "effect": "Inflicts Curse damage to random targets equal to 1/4 of the target's current HP. Hits 2-5 times, max 3 times on one enemy",
-    "element": "curse",
-    "newoc": true,
-    "prereq": "Ma10 Ag8",
-    "rank": 7
-  },
   "Death Call": {
     "cost": 1026,
     "effect": "Instantly kills all enemies suffering from Mute or Paralyze ailment",
@@ -244,15 +222,8 @@
     "prereq": "St16",
     "rank": 16
   },
-  "Debilitate": {
-    "cost": 1012,
-    "effect": "Enemy accuracy, evasion, and defense -25%",
-    "element": "auto",
-    "newoc": true,
-    "prereq": "Ag14"
-  },
   "Desperation": {
-    "cost": 1001,
+    "cost": 100,
     "effect": "Kills self to inflict Almighty damage to all enemies. The lower the user's HP, the more damage the attack will inflict",
     "element": "almighty",
     "rank": 1
@@ -290,26 +261,11 @@
     "prereq": "St14 Ag13",
     "rank": 10
   },
-  "Dream Feast": {
-    "cost": 1003,
-    "effect": "Steals a large amount of MP from one enemy",
-    "element": "almighty",
-    "newoc": true,
-    "prereq": "Ma13",
-    "rank": 11
-  },
   "Dual Shadow": {
     "effect": "25% chance of the character repeating the attack they just performed",
     "element": "passive",
     "prereq": "Ag15",
     "rank": 13
-  },
-  "Dual Shadow+": {
-    "cost": 1022,
-    "effect": "Team members gain Dual Shadow",
-    "element": "auto",
-    "newoc": true,
-    "prereq": "Ag20"
   },
   "Elec Amp": {
     "effect": "Elec damage +50%",
@@ -348,33 +304,11 @@
     "prereq": "Vi6",
     "rank": 7
   },
-  "Extra Charge": {
-    "effect": "All attacks do double damage during Extra Turns",
-    "element": "passive",
-    "newoc": true,
-    "prereq": "Ag17",
-    "rank": 9
-  },
   "Extra One": {
     "effect": "The character always has an Extra Turn in battle",
     "element": "passive",
     "prereq": "Ag13",
     "rank": 11
-  },
-  "Extra Savings": {
-    "effect": "All attacks have no cost during Extra Turns",
-    "element": "passive",
-    "newoc": true,
-    "prereq": "Ag19",
-    "rank": 8
-  },
-  "Final Strike": {
-    "cost": 99,
-    "effect": "Inflicts Physical damage to one enemy equal to the user's current HP",
-    "element": "phys",
-    "newoc": true,
-    "prereq": "Vi16",
-    "rank": 10
   },
   "Fire Amp": {
     "effect": "Fire damage +50%",
@@ -463,13 +397,6 @@
     "element": "auto",
     "prereq": "Ma19"
   },
-  "Grimoire": {
-    "effect": "Greatly increases chance of inflicting status ailments",
-    "element": "passive",
-    "newoc": true,
-    "prereq": "Ag11",
-    "rank": 9
-  },
   "Hassohappa": {
     "cost": 15,
     "effect": "Inflicts moderate HP-dependant Physical damage on all enemies",
@@ -482,12 +409,6 @@
     "effect": "Casts Media at the start of the battle if any team members are injured",
     "element": "auto",
     "prereq": "Ma9 Vi9"
-  },
-  "Health Save": {
-    "effect": "HP cost for Physical skills -75% for both sides",
-    "element": "auto",
-    "newoc": true,
-    "prereq": "Ag11"
   },
   "Hero Aid": {
     "effect": "Critical rate +25%",
@@ -506,14 +427,6 @@
     "element": "almighty",
     "prereq": "St8 Ma9",
     "rank": 11
-  },
-  "Holy Strike": {
-    "cost": 25,
-    "effect": "Inflicts moderate Almighty damage to one enemy. Damage is dependent on Strength rather than Magic",
-    "element": "almighty",
-    "newoc": true,
-    "prereq": "St22",
-    "rank": 20
   },
   "Hustle": {
     "cost": 1003,
@@ -741,22 +654,6 @@
     "prereq": "Ag10",
     "rank": 9
   },
-  "Mow Down": {
-    "cost": 13,
-    "effect": "Inflicts moderate Physical damage to all enemies",
-    "element": "phys",
-    "newoc": true,
-    "prereq": "St9",
-    "rank": 7
-  },
-  "Multi-Strike": {
-    "cost": 15,
-    "effect": "Inflicts light Physical damage to all enemies 2-7 times. Number of hits depends on Agility",
-    "element": "phys",
-    "newoc": true,
-    "prereq": "Ag13",
-    "rank": 11
-  },
   "Mute Eyes": {
     "cost": 1015,
     "effect": "Moderate chance of inflicting Mute ailment to all enemies",
@@ -849,21 +746,6 @@
     "prereq": "St14",
     "rank": 13
   },
-  "Pierce+": {
-    "cost": 1006,
-    "effect": "Team members gain Pierce",
-    "element": "auto",
-    "newoc": true,
-    "prereq": "St21"
-  },
-  "Piercing Hit": {
-    "cost": 10,
-    "effect": "Inflicts moderate Physical damage to one enemy. Cannot be resisted, nulled, or absorbed",
-    "element": "phys",
-    "newoc": true,
-    "prereq": "St18",
-    "rank": 16
-  },
   "Power Hit": {
     "cost": 8,
     "effect": "Inflicts heavy Physical damage on one enemy",
@@ -903,14 +785,6 @@
     "prereq": "Ma12",
     "rank": 11
   },
-  "Recarmloss": {
-    "cost": 1030,
-    "effect": "Revives fallen team members, fully restores team's HP, and cures all ailments, but reduces caster's HP to 1",
-    "element": "recovery",
-    "newoc": true,
-    "prereq": "Ma16",
-    "rank": 14
-  },
   "Retaliate": {
     "effect": "Moderate chance of retaliating when struck with a physical attack",
     "element": "passive",
@@ -937,20 +811,6 @@
     "prereq": "Ma14 Vi14",
     "rank": 8
   },
-  "Shield All+": {
-    "cost": 1018,
-    "effect": "Casts Shield All at the start of the battle",
-    "element": "auto",
-    "newoc": true,
-    "prereq": "Ma20"
-  },
-  "Strengthen": {
-    "cost": 1010,
-    "effect": "Negates all elemental weaknesses within the team",
-    "element": "auto",
-    "newoc": true,
-    "prereq": "Vi10"
-  },
   "Tailwind": {
     "effect": "Team Agility increased in battle",
     "element": "auto",
@@ -975,12 +835,6 @@
     "element": "passive",
     "prereq": "Ma15 Ag15",
     "rank": 18
-  },
-  "Vigilant": {
-    "effect": "Character gains a great additional portion of EXP earned by the main character while not assigned to a team",
-    "element": "passive",
-    "newoc": true,
-    "rank": 1
   },
   "Wall": {
     "cost": 1015,

@@ -98,14 +98,13 @@
   "Akasha Arts": {
     "card": "Sandalphon",
     "clvl": 82,
-    "cost": 19,
+    "cost": 26,
     "crit": 10,
     "effect": "Deals heavy Strike damage 1x to 2x to all foes",
     "element": "strike",
     "hit": 85,
     "power": 350,
-    "rank": 7,
-    "vcost": 26
+    "rank": 7
   },
   "Alertness": {
     "effect": "Lowers odds of being taken by surprise",
@@ -137,26 +136,24 @@
   "Arrow Rain": {
     "card": "Garuda",
     "clvl": 71,
-    "cost": 19,
+    "cost": 26,
     "crit": 5,
     "effect": "Deals medium Pierce damage to all foes. (1-2 hits)",
     "element": "pierce",
     "hit": 90,
     "power": 130,
-    "rank": 6,
-    "vcost": 26
+    "rank": 6
   },
   "Assault Dive": {
     "card": "Legion",
     "clvl": 23,
-    "cost": 9,
+    "cost": 12,
     "crit": 5,
     "effect": "Deals light Strike damage to one foe",
     "element": "strike",
     "hit": 88,
     "power": 90,
-    "rank": 2,
-    "vcost": 12
+    "rank": 2
   },
   "Auto-Maraku": {
     "card": "Raphael",
@@ -201,14 +198,13 @@
     "rank": 6
   },
   "Bash": {
-    "cost": 7,
+    "cost": 10,
     "crit": 5,
     "effect": "Deals light Strike damage to one foe",
     "element": "strike",
     "hit": 90,
     "power": 30,
-    "rank": 1,
-    "vcost": 10
+    "rank": 1
   },
   "Bewilder": {
     "cost": 1005,
@@ -228,30 +224,18 @@
   "Blade of Fury": {
     "card": "Chernobog",
     "clvl": 64,
-    "cost": 16,
+    "cost": 22,
     "crit": 3,
     "effect": "Deals medium Slash damage to all foes. (1-3 hits)",
     "element": "slash",
     "hit": 82,
     "power": 100,
-    "rank": 5,
-    "vcost": 22
+    "rank": 5
   },
   "Bow Master": {
     "effect": "Doubles damage dealt by a bow",
     "element": "passive",
     "rank": 6
-  },
-  "Brave Blade": {
-    "card": "Atavaka",
-    "clvl": 88,
-    "cost": 20,
-    "crit": 5,
-    "effect": "Deals severe Slash damage to one foe",
-    "element": "slash",
-    "hit": 95,
-    "power": 550,
-    "rank": 8
   },
   "Bufu": {
     "card": "Apsaras",
@@ -297,14 +281,13 @@
     "rank": 2
   },
   "Cleave": {
-    "cost": 7,
+    "cost": 10,
     "crit": 5,
     "effect": "Deals light Slash damage to one foe",
     "element": "slash",
     "hit": 90,
     "power": 30,
-    "rank": 1,
-    "vcost": 10
+    "rank": 1
   },
   "Cool Breeze": {
     "card": "Ose",
@@ -330,26 +313,24 @@
   "Cruel Attack": {
     "card": "Kurama Tengu",
     "clvl": 49,
-    "cost": 10,
+    "cost": 14,
     "crit": 3,
     "effect": "Deals medium Pierce damage to one foe. (1.5x to Downed foes)",
     "element": "pierce",
     "hit": 99,
     "power": 225,
-    "rank": 4,
-    "vcost": 14
+    "rank": 4
   },
   "Deathbound": {
     "card": "Uriel",
     "clvl": 63,
-    "cost": 19,
+    "cost": 26,
     "crit": 25,
     "effect": "Deals heavy Slash damage to all foes",
     "element": "slash",
     "hit": 90,
     "power": 370,
-    "rank": 6,
-    "vcost": 26
+    "rank": 6
   },
   "Dekaja": {
     "card": "Take-minakata",
@@ -447,14 +428,13 @@
   "Double Fangs": {
     "card": "Naga",
     "clvl": 18,
-    "cost": 9,
+    "cost": 12,
     "crit": 1,
     "effect": "Deals light Pierce damage to one foe. (2 hits)",
     "element": "pierce",
     "hit": 85,
     "power": 20,
-    "rank": 2,
-    "vcost": 12
+    "rank": 2
   },
   "Eerie Sound": {
     "cost": 1010,
@@ -479,11 +459,10 @@
   "Elec Break": {
     "card": "Hokuto Seikun",
     "clvl": 53,
-    "cost": 1040,
+    "cost": 1050,
     "effect": "Reduces 1 foe's Electricity resistance to average",
     "element": "support",
-    "rank": 4,
-    "vcost": 1500
+    "rank": 4
   },
   "Endure": {
     "card": "Hell Biker",
@@ -577,14 +556,13 @@
   "Fatal End": {
     "card": "Taraka",
     "clvl": 44,
-    "cost": 13,
+    "cost": 18,
     "crit": 10,
     "effect": "Deals medium Slash damage to one foe",
     "element": "slash",
     "hit": 92,
     "power": 230,
-    "rank": 4,
-    "vcost": 18
+    "rank": 4
   },
   "Fear Boost": {
     "effect": "Increases odds of instilling Fear by 50%",
@@ -608,11 +586,10 @@
   "Fire Break": {
     "card": "Succubus",
     "clvl": 47,
-    "cost": 1040,
+    "cost": 1050,
     "effect": "Reduces 1 foe's Fire resistance to average",
     "element": "support",
-    "rank": 4,
-    "vcost": 1500
+    "rank": 4
   },
   "Fist Master": {
     "effect": "Doubles damage dealt by a fist weapon",
@@ -626,17 +603,6 @@
     "effect": "Doubles ailment susceptibility to one foe for three turns",
     "element": "almighty",
     "rank": 2
-  },
-  "Gale Slash": {
-    "card": "Shiisaa",
-    "clvl": 27,
-    "cost": 14,
-    "crit": 3,
-    "effect": "Deals medium Slash damage to all foes",
-    "element": "slash",
-    "hit": 95,
-    "power": 100,
-    "rank": 3
   },
   "Garu": {
     "card": "Angel",
@@ -671,14 +637,13 @@
   "Getsu-ei": {
     "card": "Ares, Tam Lin",
     "clvl": 23,
-    "cost": 10,
+    "cost": 14,
     "crit": 10,
     "effect": "Deals medium Slash damage to one foe. (\"Full Moon\" bonus)",
     "element": "slash",
     "hit": 90,
     "power": 120,
-    "rank": 3,
-    "vcost": 14
+    "rank": 3
   },
   "Ghastly Wail": {
     "cost": 1015,
@@ -689,26 +654,24 @@
   "Gigantic Fist": {
     "card": "Ubelluris",
     "clvl": 53,
-    "cost": 12,
+    "cost": 16,
     "crit": 15,
     "effect": "Deals heavy Strike damage to one foe",
     "element": "strike",
     "hit": 85,
     "power": 315,
-    "rank": 5,
-    "vcost": 16
+    "rank": 5
   },
   "God's Hand": {
     "card": "Metatron",
     "clvl": 9,
-    "cost": 14,
+    "cost": 20,
     "crit": 10,
     "effect": "Deals severe Strike damage to one foe",
     "element": "strike",
     "hit": 90,
     "power": 600,
-    "rank": 8,
-    "vcost": 20
+    "rank": 8
   },
   "Growth 1": {
     "card": "Gurr",
@@ -757,41 +720,28 @@
   "Heat Wave": {
     "card": "Dionysus",
     "clvl": 53,
-    "cost": 16,
+    "cost": 22,
     "crit": 10,
     "effect": "Deals medium Strike damage to all foes",
     "element": "strike",
     "hit": 90,
     "power": 280,
-    "rank": 5,
-    "vcost": 22
+    "rank": 5
   },
   "Heaven's Blade": {
-    "cost": 13,
+    "cost": 18,
     "crit": 30,
     "effect": "Deals severe Slash damage to one foe. Michael exclusive",
     "element": "slash",
     "hit": 95,
     "power": 500,
     "rank": 7,
-    "unique": "Michael",
-    "vcost": 18
+    "unique": "Michael"
   },
   "Heavy Master": {
     "effect": "Doubles damage dealt by a bludgeon",
     "element": "passive",
     "rank": 6
-  },
-  "Herculean Strike": {
-    "card": "Nata Taishi",
-    "clvl": 42,
-    "cost": 18,
-    "crit": 3,
-    "effect": "Deals medium Strike damage to all foes",
-    "element": "strike",
-    "hit": 85,
-    "power": 210,
-    "rank": 4
   },
   "High Counter": {
     "card": "Siegfried",
@@ -801,14 +751,13 @@
     "rank": 5
   },
   "Holy Arrow": {
-    "cost": 9,
+    "cost": 12,
     "crit": 3,
     "effect": "Deals light Pierce damage / Charms one foe. (25% chance)",
     "element": "pierce",
     "hit": 92,
     "power": 60,
-    "rank": 2,
-    "vcost": 12
+    "rank": 2
   },
   "Ice Amp": {
     "card": "Titania",
@@ -827,11 +776,10 @@
   "Ice Break": {
     "card": "Laksmi",
     "clvl": 62,
-    "cost": 1040,
+    "cost": 1050,
     "effect": "Reduces 1 foe's Ice resistance to average",
     "element": "support",
-    "rank": 4,
-    "vcost": 1500
+    "rank": 4
   },
   "Infuriate": {
     "cost": 1010,
@@ -861,14 +809,13 @@
   "Kill Rush": {
     "card": "Vetala",
     "clvl": 27,
-    "cost": 10,
+    "cost": 14,
     "crit": 3,
     "effect": "Deals light Strike damage to one foe. (1-2 hits)",
     "element": "strike",
     "hit": 85,
     "power": 110,
-    "rank": 3,
-    "vcost": 14
+    "rank": 3
   },
   "Life Drain": {
     "cost": 1005,
@@ -936,12 +883,6 @@
     "hit": 90,
     "power": 100,
     "rank": 4
-  },
-  "Magic Skill Up": {
-    "effect": "Strengthens all magical attacks, including Almighty, by 50%. Messiah exclusive (Portable only)",
-    "element": "passive",
-    "rank": 0,
-    "unique": "Messiah"
   },
   "Mahama": {
     "card": "Power",
@@ -1028,17 +969,6 @@
     "effect": "Decreases all foe's Defense",
     "element": "support",
     "rank": 4
-  },
-  "Maralagidyne": {
-    "card": "Mara",
-    "clvl": 86,
-    "cost": 1032,
-    "effect": "Deals severe Fire damage to all foes. Mara exclusive",
-    "element": "fire",
-    "hit": 95,
-    "power": 650,
-    "rank": 0,
-    "unique": "Mara"
   },
   "Marin Karin": {
     "cost": 1005,
@@ -1170,14 +1100,13 @@
   "Mighty Swing": {
     "card": "Orthrus",
     "clvl": 34,
-    "cost": 10,
+    "cost": 14,
     "crit": 5,
     "effect": "Deals medium Slash damage to one foe",
     "element": "slash",
     "hit": 95,
     "power": 220,
-    "rank": 4,
-    "vcost": 14
+    "rank": 4
   },
   "Mind Charge": {
     "card": "Atropos",
@@ -1221,14 +1150,13 @@
   "Myriad Arrows": {
     "card": "Cybele",
     "clvl": 76,
-    "cost": 19,
+    "cost": 26,
     "crit": 3,
     "effect": "Deals medium Pierce damage to all foes. (1-2 hits)",
     "element": "pierce",
     "hit": 87,
     "power": 140,
-    "rank": 7,
-    "vcost": 26
+    "rank": 7
   },
   "Niflheim": {
     "cost": 1032,
@@ -1344,26 +1272,11 @@
     "element": "recovery",
     "rank": 1
   },
-  "Physical Boost": {
-    "card": "Rescue reward",
-    "effect": "Doubles damage dealt by normal attack",
-    "element": "passive",
-    "rank": 6
-  },
   "Poisma": {
     "cost": 1005,
     "effect": "Poisons 1 foe. (25% chance)",
     "element": "ailment",
     "rank": 1
-  },
-  "Poison Arrow": {
-    "cost": 13,
-    "crit": 3,
-    "effect": "Deals heavy Pierce damage / Poisons one foe. (25% chance)",
-    "element": "pierce",
-    "hit": 95,
-    "power": 300,
-    "rank": 5
   },
   "Poison Boost": {
     "effect": "Increases odds of Poisoning a foe by 50%",
@@ -1392,40 +1305,27 @@
     "element": "support",
     "rank": 4
   },
-  "Power Slash": {
-    "card": "Valkyrie",
-    "clvl": 16,
-    "cost": 10,
-    "crit": 5,
-    "effect": "Deals light Slash damage to one foe",
-    "element": "slash",
-    "hit": 92,
-    "power": 88,
-    "rank": 2
-  },
   "Pralaya": {
     "card": "Shiva",
     "clvl": 89,
-    "cost": 18,
+    "cost": 25,
     "crit": 25,
     "effect": "Deals severe Pierce damage / instills Fear in all foes. (25% chance) Shiva exclusive",
     "element": "pierce",
     "hit": 95,
     "power": 600,
-    "rank": 8,
-    "vcost": 25
+    "rank": 8
   },
   "Primal Force": {
     "card": "Beelzebub",
     "clvl": 88,
-    "cost": 21,
+    "cost": 30,
     "crit": 5,
     "effect": "Deals severe Pierce damage to one foe",
     "element": "pierce",
     "hit": 95,
     "power": 600,
-    "rank": 8,
-    "vcost": 30
+    "rank": 8
   },
   "Provoke": {
     "card": "Nekomata",
@@ -1508,20 +1408,20 @@
   "Regenerate 1": {
     "card": "Neko Shogun",
     "clvl": 23,
-    "effect": "Restores 2% HP each turn in battle",
+    "effect": "Restores 5% HP each turn in battle",
     "element": "passive",
     "rank": 4
   },
   "Regenerate 2": {
     "card": "Aquamarine x5",
-    "effect": "Restores 4% HP each turn in battle",
+    "effect": "Restores 10% HP each turn in battle",
     "element": "passive",
     "rank": 5
   },
   "Regenerate 3": {
     "card": "Norn",
     "clvl": 70,
-    "effect": "Restores 6% HP each turn in battle",
+    "effect": "Restores 15% HP each turn in battle",
     "element": "passive",
     "rank": 6
   },
@@ -1671,26 +1571,16 @@
     "element": "passive",
     "rank": 3
   },
-  "Single Shot": {
-    "cost": 8,
-    "crit": 5,
-    "effect": "Deals light Pierce damage to one foe",
-    "element": "pierce",
-    "hit": 95,
-    "power": 28,
-    "rank": 1
-  },
   "Sonic Punch": {
     "card": "Chimera",
     "clvl": 13,
-    "cost": 9,
+    "cost": 12,
     "crit": 12,
     "effect": "Deals light Strike damage to one foe",
     "element": "strike",
     "hit": 95,
     "power": 70,
-    "rank": 2,
-    "vcost": 12
+    "rank": 2
   },
   "Spear Master": {
     "effect": "Doubles damage dealt by a spear",
@@ -1716,7 +1606,8 @@
   "Spring of Life": {
     "effect": "Restores 8% HP each turn in battle. Trismegistus exclusive",
     "element": "passive",
-    "rank": 5
+    "rank": 5,
+    "unique": "Trismegistus"
   },
   "Stagnant Air": {
     "cost": 1015,
@@ -1753,14 +1644,13 @@
   "Swift Strike": {
     "card": "Titan",
     "clvl": 28,
-    "cost": 15,
+    "cost": 21,
     "crit": 3,
     "effect": "Deals light Strike damage to all foes. (1-3 hits)",
     "element": "strike",
     "hit": 80,
     "power": 95,
-    "rank": 3,
-    "vcost": 21
+    "rank": 3
   },
   "Tarukaja": {
     "card": "Forneus",
@@ -1781,14 +1671,13 @@
   "Tempest Slash": {
     "card": "Masakado",
     "clvl": 78,
-    "cost": 13,
+    "cost": 18,
     "crit": 10,
     "effect": "Deals heavy Slash damage to one foe. (1-2 hits)",
     "element": "slash",
     "hit": 95,
     "power": 350,
-    "rank": 7,
-    "vcost": 18
+    "rank": 7
   },
   "Tentarafoo": {
     "cost": 1010,
@@ -1814,14 +1703,13 @@
   "Torrent Shot": {
     "card": "Raja Naga",
     "clvl": 42,
-    "cost": 10,
+    "cost": 14,
     "crit": 5,
     "effect": "Deals light Pierce damage to one foe. (2-3 hits)",
     "element": "pierce",
     "hit": 82,
     "power": 50,
-    "rank": 4,
-    "vcost": 14
+    "rank": 4
   },
   "Trafuri": {
     "cost": 1025,
@@ -1832,14 +1720,13 @@
   "Twin Shot": {
     "card": "Vasuki",
     "clvl": 42,
-    "cost": 10,
+    "cost": 14,
     "crit": 5,
     "effect": "Deals medium Pierce damage to one foe. (2 hits)",
     "element": "pierce",
     "hit": 85,
     "power": 100,
-    "rank": 3,
-    "vcost": 14
+    "rank": 3
   },
   "Unshaken Will": {
     "card": "Asura",
@@ -1847,17 +1734,6 @@
     "effect": "Protects user from mental ailments. Asura exclusive",
     "element": "passive",
     "rank": 9
-  },
-  "Vicious Strike": {
-    "card": "Arahabaki",
-    "clvl": 67,
-    "cost": 19,
-    "crit": 1,
-    "effect": "Deals heavy Strike damage to all foes",
-    "element": "strike",
-    "hit": 92,
-    "power": 340,
-    "rank": 6
   },
   "Victory Cry": {
     "card": "Orpheus Telos",
@@ -1869,14 +1745,13 @@
   "Vile Assault": {
     "card": "Kaiwan",
     "clvl": 55,
-    "cost": 12,
+    "cost": 16,
     "crit": 3,
     "effect": "Deals heavy Pierce damage to one foe. (1.5x to Downed foes)",
     "element": "pierce",
     "hit": 99,
     "power": 311,
-    "rank": 5,
-    "vcost": 16
+    "rank": 5
   },
   "Virus Breath": {
     "card": "Kingu",
@@ -1889,34 +1764,26 @@
   "Vorpal Blade": {
     "card": "Susano-o",
     "clvl": 85,
-    "cost": 21,
+    "cost": 30,
     "crit": 5,
     "effect": "Deals heavy Slash damage to all foes. (1.5x \"Great\" condition bonus)",
     "element": "slash",
     "hit": 99,
     "power": 550,
     "rank": 8,
-    "unique": "Multiple",
-    "vcost": 30
-  },
-  "Weapons Master": {
-    "effect": "Doubles damage dealt with weapons. (Portable only)",
-    "element": "passive",
-    "rank": 6,
     "unique": "Multiple"
   },
   "Weary Thrust": {
     "card": "Seiten Taisei",
     "clvl": 72,
-    "cost": 13,
+    "cost": 18,
     "crit": 5,
     "effect": "Deals heavy Strike damage to one foe. (1.5x \"Tired\" condition bonus)",
     "element": "strike",
     "hit": 99,
     "power": 405,
     "rank": 6,
-    "unique": "Multiple",
-    "vcost": 18
+    "unique": "Multiple"
   },
   "Wind Amp": {
     "card": "Ganesha",
@@ -1935,23 +1802,21 @@
   "Wind Break": {
     "card": "Orobas",
     "clvl": 38,
-    "cost": 1040,
+    "cost": 1050,
     "effect": "Reduces 1 foe's Wind resistance to average",
     "element": "support",
-    "rank": 4,
-    "vcost": 1500
+    "rank": 4
   },
   "Zan-ei": {
     "card": "Pale Rider",
     "clvl": 26,
-    "cost": 10,
+    "cost": 14,
     "crit": 10,
     "effect": "Deals medium Slash damage to one foe. (\"New Moon\" bonus)",
     "element": "slash",
     "hit": 90,
     "power": 120,
-    "rank": 3,
-    "vcost": 14
+    "rank": 3
   },
   "Zio": {
     "card": "Inugami",

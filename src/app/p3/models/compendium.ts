@@ -2,8 +2,6 @@ import { ElementOrder, Races, ResistCodes } from '../constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
@@ -17,12 +15,12 @@ export class Compendium implements ICompendium {
 
   dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(demonDataJsons: any[], specialRecipeJsons: any[]) {
-    this.initImportedData(demonDataJsons, specialRecipeJsons);
+  constructor(demonDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
+    this.initImportedData(demonDataJsons, skillDataJsons, specialRecipeJsons);
     this.updateDerivedData();
   }
 
-  initImportedData(demonDataJsons: any[], specialRecipeJsons: any[]) {
+  initImportedData(demonDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
     const demons:   { [name: string]: Demon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
@@ -44,20 +42,22 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = {
-        name,
-        element:   json.element,
-        cost:      json.cost ? json.cost : 0,
-        rank:      json.rank,
-        effect:    json.effect,
-        learnedBy: [],
-        fuse:      json.card ? json.card.split(', ') : [],
-        level:     0
-      };
+    for (const skillData of skillDataJsons) {
+      for (const [name, json] of Object.entries(skillData)) {
+        skills[name] = {
+          name,
+          element:   json.element,
+          cost:      json.cost ? json.cost : 0,
+          rank:      json.rank,
+          effect:    json.effect,
+          learnedBy: [],
+          fuse:      json.card ? json.card.split(', ') : [],
+          level:     0
+        };
 
-      if (json.unique) {
-        skills[name].rank = 99;
+        if (json.unique) {
+          skills[name].rank = 99;
+        }
       }
     }
 

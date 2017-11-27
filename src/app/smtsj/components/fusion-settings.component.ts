@@ -31,6 +31,7 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class FusionSettingsComponent implements OnInit, OnDestroy {
   private _subapps: { [name: string]: boolean };
+  appName = 'Fusion Settings';
 
   fusionChart: FusionChart;
   subapps: { name: string, included: boolean }[];
@@ -40,10 +41,12 @@ export class FusionSettingsComponent implements OnInit, OnDestroy {
     private title: Title,
     private fusionDataService: FusionDataService,
     private changeDetectorRef: ChangeDetectorRef
-  ) { }
+  ) {
+    this.appName = `Fusion Settings - ${fusionDataService.appName}`;
+  }
 
   ngOnInit() {
-    this.title.setTitle(`Fusion Settings - ${APP_TITLE}`);
+    this.title.setTitle(this.appName);
     this.subscriptions.push(this.fusionDataService.fusionChart.subscribe(chart => {
       this.changeDetectorRef.markForCheck();
       this.fusionChart = chart;

@@ -12,12 +12,13 @@ import { FusionDataService } from '../fusion-data.service';
     <app-smt-skill-list
       [elemOrder]="elemOrder"
       [hasRank]="false"
-      [hasFuse]="true"
+      [hasFuse]="hasFuse"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `
 })
 export class SkillListContainerComponent extends SLCC {
+  hasFuse = false;
   elemOrder = ElementOrder;
   defaultSortFun = (a, b) => (ElementOrder[a.element] - ElementOrder[b.element]) * 10000 + a.rank - b.rank;
 
@@ -28,5 +29,6 @@ export class SkillListContainerComponent extends SLCC {
   ) {
     super(title, changeDetectorRef, fusionDataService);
     this.appName = `List of Skills - ${fusionDataService.appName}`;
+    this.hasFuse = fusionDataService.skillsHaveFuse;
   }
 }

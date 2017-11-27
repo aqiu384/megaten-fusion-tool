@@ -31,5 +31,7 @@ Fusion tool framework for Megami Tensei games.
 * [Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g)
 * [Persona Q: Shadow of the Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq)
 * [Persona 5](https://aqiu384.github.io/megaten-fusion-tool/p5)
+* [Devil Survivor](https://aqiu384.github.io/megaten-fusion-tool/ds1)
 * [Devil Survivor Overclocked](https://aqiu384.github.io/megaten-fusion-tool/dso)
+* [Devil Survivor 2](https://aqiu384.github.io/megaten-fusion-tool/ds2)
 * [Devil Survivor 2 Record Breaker](https://aqiu384.github.io/megaten-fusion-tool/ds2br)

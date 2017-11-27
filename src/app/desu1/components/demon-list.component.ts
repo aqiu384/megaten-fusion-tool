@@ -1,7 +1,6 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RaceOrder, ResistElements, BaseStats } from '../../desu/constants';
-import { APP_TITLE } from '../constants';
 
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
@@ -19,7 +18,6 @@ import { FusionDataService } from '../fusion-data.service';
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName = `List of Demons - ${APP_TITLE}`;
   raceOrder = RaceOrder;
   statHeaders = BaseStats;
   resistHeaders = ResistElements;
@@ -29,5 +27,8 @@ export class DemonListContainerComponent extends DLCC {
     title: Title,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
-  ) { super(title, changeDetectorRef, fusionDataService); }
+  ) {
+    super(title, changeDetectorRef, fusionDataService);
+    this.appName = `List of Demons - ${fusionDataService.appName}`;
+  }
 }

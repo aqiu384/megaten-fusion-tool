@@ -1,0 +1,169 @@
+{
+  "Anti-social Steel Defense": {
+    "effect": "Critical rate +50%",
+    "element": "passive",
+    "rank": 0
+  },
+  "Attack from Blind Spot": {
+    "cost": 8,
+    "effect": "Inflicts damage to one enemy of any physical or magic element, whichever is more effective. Inflicts Shock",
+    "element": "none",
+    "rank": 0
+  },
+  "Black Courier": {
+    "effect": "User takes a hit for an ally if they have better resistance to that attack",
+    "element": "passive",
+    "rank": 0
+  },
+  "Coiste-Bohhar": {
+    "effect": "Greatly increases speed during a skirmish",
+    "element": "passive",
+    "rank": 0
+  },
+  "Demon Dance": {
+    "cost": 1021,
+    "effect": "Inflicts Curse damage to random targets equal to about 25% of the target's current HP. Hits 2-5 times, max 3 times on one enemy",
+    "element": "curse",
+    "prereq": "Ma9",
+    "rank": 7
+  },
+  "Do you wanna be crushed?": {
+    "cost": 1008,
+    "effect": "Increases the damage done by the user's next attack. Wears off once skirmish ends",
+    "element": "none",
+    "rank": 0
+  },
+  "Dream Eater": {
+    "cost": 1012,
+    "effect": "Steals a large amount of MP from one enemy",
+    "element": "almighty",
+    "prereq": "Ma13",
+    "rank": 11
+  },
+  "Dual Shadow EX": {
+    "cost": 1022,
+    "effect": "Team members gain Dual Shadow",
+    "element": "auto",
+    "prereq": "Ag15"
+  },
+  "Excharge": {
+    "effect": "Offense +50% during Extra Turn or Double Extra",
+    "element": "passive",
+    "prereq": "Ag11",
+    "rank": 9
+  },
+  "Extra Zero": {
+    "effect": "All skills are free during Extra Turn or Double Extra",
+    "element": "passive",
+    "prereq": "Ag10",
+    "rank": 8
+  },
+  "Final Hit": {
+    "cost": 99,
+    "effect": "Reduces user's HP to 1, then inflicts that much Almighty damage on one enemy",
+    "element": "almighty",
+    "prereq": "Vi12",
+    "rank": 10
+  },
+  "Hidden Strength": {
+    "effect": "When user is low on HP, physical offense +50%",
+    "element": "passive",
+    "prereq": "Vi10",
+    "rank": 8
+  },
+  "Holy Blessing": {
+    "effect": "Restores HP upon landing a critical hit",
+    "element": "passive",
+    "prereq": "Vi8",
+    "rank": 3
+  },
+  "I hate violence!": {
+    "cost": 15,
+    "effect": "Guaranteed critical hit on one enemy",
+    "element": "phys",
+    "rank": 0
+  },
+  "Ignore Defense": {
+    "effect": "Physical attacks cannot be resisted, nullified, or absorbed",
+    "element": "passive",
+    "rank": 0
+  },
+  "Ikebukuro's Finest": {
+    "effect": "Physical damage +50%",
+    "element": "passive",
+    "rank": 0
+  },
+  "Informant": {
+    "effect": "Reduces chance of character's Extra Turns being removed",
+    "element": "passive",
+    "rank": 0
+  },
+  "Invincible Bartender": {
+    "effect": "Withstand one mortal blow once per skirmish with 1 HP remaining",
+    "element": "passive",
+    "rank": 0
+  },
+  "Kinetic Vision": {
+    "effect": "When a team member dodges an attack, all team members have a 50% bonus to all stats for the rest of the skirmish",
+    "element": "auto",
+    "prereq": "Ag11"
+  },
+  "Parkour": {
+    "effect": "Increases evasion against Physical attacks",
+    "element": "passive",
+    "rank": 0
+  },
+  "Self-defense Knife": {
+    "cost": 25,
+    "effect": "Inflicts damage to one enemy",
+    "element": "almighty",
+    "rank": 0
+  },
+  "Shadow Scythe": {
+    "cost": 12,
+    "effect": "Inflicts damage to all enemies, ignoring all resistances except for Repel",
+    "element": "phys",
+    "rank": 0
+  },
+  "Shadow Shield": {
+    "cost": 1030,
+    "effect": "Blocks non-Almighty attacks for all allies, including Pierce-enhanced attacks",
+    "element": "none",
+    "rank": 0
+  },
+  "Shield All EX": {
+    "cost": 1018,
+    "effect": "Casts Shield All at the start of the skirmish",
+    "element": "auto",
+    "prereq": "Ma11"
+  },
+  "Spirit Gain": {
+    "effect": "Max HP and MP +20%",
+    "element": "passive",
+    "prereq": "Vi6",
+    "rank": 5
+  },
+  "Sweet Talk": {
+    "cost": 1023,
+    "effect": "Moderate chance of inflicting Charm ailment to all enemies",
+    "element": "curse",
+    "rank": 0
+  },
+  "That Substantial Shadow": {
+    "effect": "Reduces chances of suffering from any ailment",
+    "element": "passive",
+    "rank": 0
+  },
+  "Then just die": {
+    "cost": 10,
+    "effect": "Inflicts damage of a random element",
+    "element": "none",
+    "rank": 0
+  },
+  "This is not murder": {
+    "cost": 8,
+    "effect": "Inflicts heavy unavoidable Physical damage on one enemy, but cannot kill it unless it has 1 HP",
+    "element": "phys",
+    "rank": 0
+  }
+}

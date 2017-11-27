@@ -1,0 +1,128 @@
+{
+  "Crisis Might": {
+    "effect": "Physical damage +50% when low on HP",
+    "element": "passive",
+    "prereq": "Vi15",
+    "rank": 8
+  },
+  "Critical Heal": {
+    "effect": "Restores some HP after successfully delivering a critical hit",
+    "element": "passive",
+    "prereq": "Ma13",
+    "rank": 3
+  },
+  "Cursed Dance": {
+    "cost": 1023,
+    "effect": "Inflicts Curse damage to random targets equal to 1/4 of the target's current HP. Hits 2-5 times, max 3 times on one enemy",
+    "element": "curse",
+    "prereq": "Ma10 Ag8",
+    "rank": 7
+  },
+  "Debilitate": {
+    "cost": 1012,
+    "effect": "Enemy accuracy, evasion, and defense -25%",
+    "element": "auto",
+    "prereq": "Ag14"
+  },
+  "Dream Feast": {
+    "cost": 1003,
+    "effect": "Steals a large amount of MP from one enemy",
+    "element": "almighty",
+    "prereq": "Ma13",
+    "rank": 11
+  },
+  "Dual Shadow+": {
+    "cost": 1022,
+    "effect": "Team members gain Dual Shadow",
+    "element": "auto",
+    "prereq": "Ag20"
+  },
+  "Extra Charge": {
+    "effect": "All attacks do double damage during Extra Turns",
+    "element": "passive",
+    "prereq": "Ag17",
+    "rank": 9
+  },
+  "Extra Savings": {
+    "effect": "All attacks have no cost during Extra Turns",
+    "element": "passive",
+    "prereq": "Ag19",
+    "rank": 8
+  },
+  "Final Strike": {
+    "cost": 99,
+    "effect": "Inflicts Physical damage to one enemy equal to the user's current HP",
+    "element": "phys",
+    "prereq": "Vi16",
+    "rank": 10
+  },
+  "Grimoire": {
+    "effect": "Greatly increases chance of inflicting status ailments",
+    "element": "passive",
+    "prereq": "Ag11",
+    "rank": 9
+  },
+  "Health Save": {
+    "effect": "HP cost for Physical skills -75% for both sides",
+    "element": "auto",
+    "prereq": "Ag11"
+  },
+  "Holy Strike": {
+    "cost": 25,
+    "effect": "Inflicts moderate Almighty damage to one enemy. Damage is dependent on Strength rather than Magic",
+    "element": "almighty",
+    "prereq": "St22",
+    "rank": 20
+  },
+  "Mow Down": {
+    "cost": 13,
+    "effect": "Inflicts moderate Physical damage to all enemies",
+    "element": "phys",
+    "prereq": "St9",
+    "rank": 7
+  },
+  "Multi-Strike": {
+    "cost": 15,
+    "effect": "Inflicts light Physical damage to all enemies 2-7 times. Number of hits depends on Agility",
+    "element": "phys",
+    "prereq": "Ag13",
+    "rank": 11
+  },
+  "Pierce+": {
+    "cost": 1006,
+    "effect": "Team members gain Pierce",
+    "element": "auto",
+    "prereq": "St21"
+  },
+  "Piercing Hit": {
+    "cost": 10,
+    "effect": "Inflicts moderate Physical damage to one enemy. Cannot be resisted, nulled, or absorbed",
+    "element": "phys",
+    "prereq": "St18",
+    "rank": 16
+  },
+  "Recarmloss": {
+    "cost": 1030,
+    "effect": "Revives fallen team members, fully restores team's HP, and cures all ailments, but reduces caster's HP to 1",
+    "element": "recovery",
+    "prereq": "Ma16",
+    "rank": 14
+  },
+  "Shield All+": {
+    "cost": 1018,
+    "effect": "Casts Shield All at the start of the battle",
+    "element": "auto",
+    "prereq": "Ma20"
+  },
+  "Strengthen": {
+    "cost": 1010,
+    "effect": "Negates all elemental weaknesses within the team",
+    "element": "auto",
+    "prereq": "Vi10"
+  },
+  "Vigilant": {
+    "effect": "Character gains a great additional portion of EXP earned by the main character while not assigned to a team",
+    "element": "passive",
+    "rank": 1
+  }
+}

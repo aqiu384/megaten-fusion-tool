@@ -2,7 +2,6 @@ import { ElementOrder, Races, ResistCodes } from '../constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
 export class Compendium implements ICompendium {
@@ -18,12 +17,12 @@ export class Compendium implements ICompendium {
 
   dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(demonDataJsons: any[]) {
-    this.initImportedData(demonDataJsons);
+  constructor(demonDataJsons: any[], skillDataJsons: any[]) {
+    this.initImportedData(demonDataJsons, skillDataJsons);
     this.updateDerivedData();
   }
 
-  initImportedData(demonDataJsons: any[]) {
+  initImportedData(demonDataJsons: any[], skillDataJsons: any[]) {
     const demons:   { [name: string]: Demon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
@@ -45,20 +44,22 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = {
-        name,
-        element:   json.element,
-        cost:      json.cost ? json.cost : 0,
-        rank:      json.cost ? json.cost / 100 : 0,
-        effect:    json.effect,
-        learnedBy: [],
-        fuse:      json.card ? json.card.split(', ') : [],
-        level:     0
-      };
+    for (const skillData of skillDataJsons) {
+      for (const [name, json] of Object.entries(skillData)) {
+        skills[name] = {
+          name,
+          element:   json.element,
+          cost:      json.cost ? json.cost : 0,
+          rank:      json.cost ? json.cost / 100 : 0,
+          effect:    json.effect,
+          learnedBy: [],
+          fuse:      json.card ? json.card.split(', ') : [],
+          level:     0
+        };
 
-      if (json.unique) {
-        skills[name].rank = 99;
+        if (json.unique) {
+          skills[name].rank = 99;
+        }
       }
     }
 

@@ -115,12 +115,6 @@
     "prereq": "Vi5",
     "rank": 3
   },
-  "Anti-social Steel Defense": {
-    "effect": "Critical rate +50%",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
-  },
   "Ares Aid": {
     "effect": "Critical rate +50%",
     "element": "passive",
@@ -130,7 +124,7 @@
   "Assassinate": {
     "cost": 8,
     "effect": "Inflicts heavy Physical damage on enemy team leader and ignores defense modifiers from presence of team members",
-    "element": "strike",
+    "element": "phys",
     "prereq": "Ag9",
     "rank": 7
   },
@@ -139,13 +133,6 @@
     "element": "passive",
     "prereq": "Vi14",
     "rank": 12
-  },
-  "Attack from Blind Spot": {
-    "cost": 8,
-    "effect": "Inflicts damage to one enemy of any physical or magic element, whichever is more effective. Inflicts Shock",
-    "element": "none",
-    "newbr": true,
-    "rank": 0
   },
   "Avenge": {
     "effect": "High chance of retaliating when struck with a physical attack",
@@ -204,15 +191,9 @@
   "Berserk": {
     "cost": 13,
     "effect": "Inflicts HP-dependent Physical damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "strike",
+    "element": "phys",
     "prereq": "St10",
     "rank": 8
-  },
-  "Black Courier": {
-    "effect": "User takes a hit for an ally if they have better resistance to that attack",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
   },
   "Blitzkrieg": {
     "cost": 1004,
@@ -223,7 +204,7 @@
   "Brutal Hit": {
     "cost": 10,
     "effect": "Inflicts HP-dependent Physical damage on one enemy",
-    "element": "strike",
+    "element": "phys",
     "prereq": "Vi9",
     "rank": 7
   },
@@ -239,12 +220,6 @@
     "element": "ice",
     "prereq": "Ma14",
     "rank": 12
-  },
-  "Coiste-Bohhar": {
-    "effect": "Greatly increases speed during a skirmish",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
   },
   "Counter": {
     "effect": "Low chance of retaliating when struck with a physical attack",
@@ -268,7 +243,7 @@
   "Deathbound": {
     "cost": 20,
     "effect": "Inflicts HP/Level/Vitality-dependent Physical damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "strike",
+    "element": "phys",
     "prereq": "St18",
     "rank": 16
   },
@@ -278,15 +253,13 @@
     "element": "auto",
     "prereq": "Ag14"
   },
-  "Demon Dance": {
-    "cost": 1021,
-    "effect": "Inflicts Curse damage to random targets equal to about 25% of the target's current HP. Hits 2-5 times, max 3 times on one enemy",
-    "element": "curse",
-    "newbr": true,
-    "prereq": "Ma9",
-    "rank": 7
-  },
   "Desperation": {
+    "cost": 100,
+    "effect": "Kills self to inflict Almighty damage to all enemies. The lower the user's HP, the more damage the attack will inflict",
+    "element": "almighty",
+    "rank": 1
+  },
+  "Desperation (A)": {
     "effect": "Team gains speed bonus in battle, but loses all initial Extra Turns",
     "element": "auto",
     "prereq": "Ag11"
@@ -310,13 +283,6 @@
     "element": "recovery",
     "prereq": "Ma8",
     "rank": 6
-  },
-  "Do you wanna be crushed?": {
-    "cost": 1008,
-    "effect": "Increases the damage done by the user's next attack. Wears off once skirmish ends",
-    "element": "none",
-    "newbr": true,
-    "rank": 0
   },
   "Dodge": {
     "effect": "Increases evasion against Physical attacks",
@@ -343,26 +309,11 @@
     "prereq": "Vi12",
     "rank": 10
   },
-  "Dream Eater": {
-    "cost": 1012,
-    "effect": "Steals a large amount of MP from one enemy",
-    "element": "almighty",
-    "newbr": true,
-    "prereq": "Ma13",
-    "rank": 11
-  },
   "Dual Shadow": {
     "effect": "25% chance of the character repeating the attack they just performed",
     "element": "passive",
     "prereq": "Ag15",
     "rank": 13
-  },
-  "Dual Shadow EX": {
-    "cost": 1022,
-    "effect": "Team members gain Dual Shadow",
-    "element": "auto",
-    "newbr": true,
-    "prereq": "Ag15"
   },
   "Elec Amp": {
     "effect": "Elec damage +50%",
@@ -407,13 +358,6 @@
     "element": "auto",
     "prereq": "Vi20"
   },
-  "Excharge": {
-    "effect": "Offense +50% during Extra Turn or Double Extra",
-    "element": "passive",
-    "newbr": true,
-    "prereq": "Ag11",
-    "rank": 9
-  },
   "Extra Bonus": {
     "effect": "Increases chance of removing Extra Turns. Neutral-hitting attacks by the user may randomly gain or remove Extra Turns",
     "element": "passive",
@@ -433,27 +377,12 @@
     "prereq": "Ag13",
     "rank": 11
   },
-  "Extra Zero": {
-    "effect": "All skills are free during Extra Turn or Double Extra",
-    "element": "passive",
-    "newbr": true,
-    "prereq": "Ag10",
-    "rank": 8
-  },
   "Fatal Strike": {
     "cost": 8,
     "effect": "Inflicts heavy unavoidable Physical damage on one enemy, but cannot kill it unless it has 1 HP",
     "element": "phys",
     "prereq": "Ag6",
     "rank": 4
-  },
-  "Final Hit": {
-    "cost": 99,
-    "effect": "Reduces user's HP to 1, then inflicts that much Almighty damage on one enemy",
-    "element": "almighty",
-    "newbr": true,
-    "prereq": "Vi12",
-    "rank": 10
   },
   "Fire Amp": {
     "effect": "Fire damage +50%",
@@ -556,7 +485,7 @@
   "Hassohappa": {
     "cost": 15,
     "effect": "Inflicts HP-dependent Physical damage on all enemies",
-    "element": "strike",
+    "element": "phys",
     "prereq": "Vi11",
     "rank": 9
   },
@@ -580,22 +509,7 @@
   "Hero Soul": {
     "effect": "User takes a hit for the leader if they have better resistance to that attack",
     "element": "passive",
-    "newbr": true,
     "rank": 1
-  },
-  "Hidden Strength": {
-    "effect": "When user is low on HP, physical offense +50%",
-    "element": "passive",
-    "newbr": true,
-    "prereq": "Vi10",
-    "rank": 8
-  },
-  "Holy Blessing": {
-    "effect": "Restores HP upon landing a critical hit",
-    "element": "passive",
-    "newbr": true,
-    "prereq": "Vi8",
-    "rank": 3
   },
   "Holy Dance": {
     "cost": 1045,
@@ -616,13 +530,6 @@
     "effect": "Hit rate and evasion +25%",
     "element": "auto",
     "prereq": "Ag8"
-  },
-  "I hate violence!": {
-    "cost": 15,
-    "effect": "Guaranteed critical hit on one enemy",
-    "element": "phys",
-    "newbr": true,
-    "rank": 0
   },
   "Ice Amp": {
     "effect": "Ice damage +50%",
@@ -655,36 +562,12 @@
     "prereq": "Ma12",
     "rank": 10
   },
-  "Ignore Defense": {
-    "effect": "Physical attacks cannot be resisted, nullified, or absorbed",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
-  },
-  "Ikebukuro's Finest": {
-    "effect": "Physical damage +50%",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
-  },
   "Inferno": {
     "cost": 1020,
     "effect": "Inflicts heavy Fire damage on self, allies and enemies",
     "element": "fire",
     "prereq": "Ma20",
     "rank": 18
-  },
-  "Informant": {
-    "effect": "Reduces chance of character's Extra Turns being removed",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
-  },
-  "Invincible Bartender": {
-    "effect": "Withstand one mortal blow once per skirmish with 1 HP remaining",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
   },
   "Judgement": {
     "cost": 1035,
@@ -693,16 +576,9 @@
     "prereq": "Ma12",
     "rank": 10
   },
-  "Kinetic Vision": {
-    "effect": "When a team member dodges an attack, all team members have a 50% bonus to all stats for the rest of the skirmish",
-    "element": "auto",
-    "newbr": true,
-    "prereq": "Ag11"
-  },
   "Knight Soul": {
     "effect": "User takes a lethal hit for the leader",
     "element": "passive",
-    "newbr": true,
     "rank": 1
   },
   "Leader Soul": {
@@ -914,14 +790,14 @@
   "Multi-Hit": {
     "cost": 13,
     "effect": "Inflicts light Physical damage to one enemy 2-7 times. Number of hits depends on how much more Agility the user has than the target",
-    "element": "strike",
+    "element": "phys",
     "prereq": "Ag9",
     "rank": 7
   },
   "Multi-Strike": {
     "cost": 13,
     "effect": "Inflicts light Physical damage to all enemies 2-7 times. Number of hits depends on how much more Agility the user has than the target",
-    "element": "strike",
+    "element": "phys",
     "prereq": "Ag13",
     "rank": 11
   },
@@ -976,7 +852,6 @@
   "Paladin Soul": {
     "effect": "User takes a hit for the leader while also suffering half damage",
     "element": "passive",
-    "newbr": true,
     "rank": 1
   },
   "Paral Eyes": {
@@ -985,12 +860,6 @@
     "element": "curse",
     "prereq": "Ag7",
     "rank": 5
-  },
-  "Parkour": {
-    "effect": "Increases evasion against Physical attacks",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
   },
   "Petra Eyes": {
     "cost": 1022,
@@ -1138,33 +1007,12 @@
     "prereq": "Ma21",
     "rank": 19
   },
-  "Self-defense Knife": {
-    "cost": 25,
-    "effect": "Inflicts damage to one enemy",
-    "element": "almighty",
-    "newbr": true,
-    "rank": 0
-  },
   "Sexy Gaze": {
     "cost": 1022,
     "effect": "Moderate chance of inflicting Charm ailment to all enemies",
     "element": "curse",
     "prereq": "Ma9",
     "rank": 7
-  },
-  "Shadow Scythe": {
-    "cost": 12,
-    "effect": "Inflicts damage to all enemies, ignoring all resistances except for Repel",
-    "element": "phys",
-    "newbr": true,
-    "rank": 0
-  },
-  "Shadow Shield": {
-    "cost": 1030,
-    "effect": "Blocks non-Almighty attacks for all allies, including Pierce-enhanced attacks",
-    "element": "none",
-    "newbr": true,
-    "rank": 0
   },
   "Shield All": {
     "cost": 1025,
@@ -1173,13 +1021,6 @@
     "prereq": "Ma10",
     "rank": 8
   },
-  "Shield All EX": {
-    "cost": 1018,
-    "effect": "Casts Shield All at the start of the skirmish",
-    "element": "auto",
-    "newbr": true,
-    "prereq": "Ma11"
-  },
   "Snipe": {
     "cost": 3,
     "effect": "Inflicts light unavoidable Physical damage on one enemy",
@@ -1187,25 +1028,11 @@
     "prereq": "Ag5",
     "rank": 3
   },
-  "Spirit Gain": {
-    "effect": "Max HP and MP +20%",
-    "element": "passive",
-    "newbr": true,
-    "prereq": "Vi6",
-    "rank": 5
-  },
   "Strengthen": {
     "cost": 1010,
     "effect": "Neutralizes all elemental weaknesses within the team",
     "element": "auto",
     "prereq": "Vi10"
-  },
-  "Sweet Talk": {
-    "cost": 1023,
-    "effect": "Moderate chance of inflicting Charm ailment to all enemies",
-    "element": "curse",
-    "newbr": true,
-    "rank": 0
   },
   "Swift Step": {
     "effect": "Greatly increases speed during a skirmish",
@@ -1231,26 +1058,6 @@
     "element": "support",
     "prereq": "Ma13",
     "rank": 11
-  },
-  "That Substantial Shadow": {
-    "effect": "Reduces chances of suffering from any ailment",
-    "element": "passive",
-    "newbr": true,
-    "rank": 0
-  },
-  "Then just die": {
-    "cost": 10,
-    "effect": "Inflicts damage of a random element",
-    "element": "none",
-    "newbr": true,
-    "rank": 0
-  },
-  "This is not murder": {
-    "cost": 8,
-    "effect": "Inflicts heavy unavoidable Physical damage on one enemy, but cannot kill it unless it has 1 HP",
-    "element": "phys",
-    "newbr": true,
-    "rank": 0
   },
   "Ultimate Hit": {
     "effect": "Converts regular attack to Ultimate Hit, which is Almighty-attributed. If combined with Double Strike, the attack becomes Twin Ultimate. Compatible with Double Strike and Attack All",
@@ -1283,7 +1090,7 @@
   "Weak Kill": {
     "cost": 10,
     "effect": "Inflicts moderate Physical damage on one enemy with increased power if the target is suffering from an ailment",
-    "element": "strike",
+    "element": "phys",
     "prereq": "St9",
     "rank": 7
   },

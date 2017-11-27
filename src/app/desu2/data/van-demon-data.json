@@ -22,10 +22,14 @@
   },
   "Abraxas": {
     "command": {
-      "Force Dance": 0
+      "Force Dance": 0,
+      "Mazio": 105
     },
     "lvl": 19,
     "passive": {
+      "Anti-Elec": 105,
+      "Anti-Force": 107,
+      "Mana Bonus": 107,
       "Race-D": 20
     },
     "race": "Fallen",
@@ -58,7 +62,9 @@
   },
   "Afanc": {
     "command": {
-      "Mow Down": 0
+      "Mighty Hit": 107,
+      "Mow Down": 0,
+      "Power Hit": 105
     },
     "lvl": 33,
     "passive": {
@@ -100,9 +106,15 @@
   "Agathion": {
     "command": {
       "Agi": 8,
+      "Bufu": 107,
       "Zio": 0
     },
     "lvl": 6,
+    "passive": {
+      "Anti-Curse": 107,
+      "Mana Bonus": 107,
+      "Moneybags": 104
+    },
     "race": "Ghost",
     "raceup": 27,
     "resists": "--wss-",
@@ -117,11 +129,14 @@
   },
   "Airavata": {
     "command": {
+      "Diarahan": 104,
       "Zandyne": 0
     },
     "lvl": 60,
     "passive": {
       "Force Amp": 62,
+      "Life Bonus": 104,
+      "Life Surge": 107,
       "Null Force": 61
     },
     "race": "Avatar",
@@ -298,9 +313,15 @@
   },
   "Anzu": {
     "command": {
-      "Mazandyne": 55
+      "Makarakarn": 107,
+      "Mazandyne": 55,
+      "Might Call": 104,
+      "Tetrakarn": 107
     },
     "lvl": 54,
+    "passive": {
+      "Force Amp": 107
+    },
     "race": "Avian",
     "resists": "-sw---",
     "stats": [
@@ -404,7 +425,7 @@
   },
   "Asp": {
     "command": {
-      "Dream Eater": 38,
+      "Life Drain": 38,
       "Weak Kill": 0
     },
     "lvl": 36,
@@ -482,12 +503,15 @@
   },
   "Badb Catha": {
     "command": {
+      "Mazandyne": 107,
       "Might Call": 0,
       "Zandyne": 47
     },
     "lvl": 46,
     "passive": {
-      "Extra One": 0
+      "Anti-Most": 107,
+      "Extra One": 0,
+      "Preserve Extra": 104
     },
     "race": "Avian",
     "resists": "s---ww",
@@ -542,11 +566,14 @@
   },
   "Baihu": {
     "command": {
-      "Piercing Hit": 54
+      "Multi-Strike": 107,
+      "Piercing Hit": 54,
+      "Shield All": 104
     },
     "lvl": 53,
     "passive": {
       "Double Strike": 0,
+      "Force Drain": 107,
       "Phys Amp": 55
     },
     "race": "Avatar",
@@ -640,12 +667,16 @@
   },
   "Basilisk": {
     "command": {
-      "Petra Eyes": 29
+      "Fire Dance": 104,
+      "Petra Eyes": 29,
+      "Power Hit": 107
     },
     "lvl": 28,
     "passive": {
       "+Stone": 30,
-      "Anti-Force": 0
+      "Anti-Force": 0,
+      "Anti-Phys": 107,
+      "Grimoire": 107
     },
     "race": "Dragon",
     "raceup": 40,
@@ -677,9 +708,15 @@
     "unique": true
   },
   "Behemoth": {
+    "command": {
+      "Deathbound": 103,
+      "Mighty Hit": 104,
+      "Piercing Hit": 107
+    },
     "lvl": 65,
     "passive": {
-      "Attack All": 66
+      "Attack All": 66,
+      "Dual Shadow": 107
     },
     "race": "Wilder",
     "resists": "-wss--",
@@ -763,7 +800,7 @@
   },
   "Billiken": {
     "command": {
-      "Dream Eater": 0
+      "Life Drain": 0
     },
     "lvl": 50,
     "passive": {
@@ -784,10 +821,12 @@
   },
   "Bilwis": {
     "command": {
-      "Fatal Strike": 11
+      "Fatal Strike": 11,
+      "Multi-Hit": 105
     },
     "lvl": 10,
     "passive": {
+      "Double Strike": 107,
       "Hero Aid": 0,
       "Race-D": 12
     },
@@ -885,12 +924,15 @@
   },
   "Cait Sith": {
     "command": {
+      "Mabufu": 107,
       "Maragi": 36,
       "Mazan": 0
     },
     "lvl": 35,
     "passive": {
-      "Force Boost": 37
+      "Fire Boost": 107,
+      "Force Boost": 37,
+      "Life Surge": 105
     },
     "race": "Beast",
     "raceup": 36,
@@ -905,9 +947,16 @@
     ]
   },
   "Cerberus": {
+    "command": {
+      "Agidyne": 103,
+      "Deathbound": 104,
+      "Multi-Strike": 107
+    },
     "lvl": 58,
     "passive": {
-      "Hero Soul": 0
+      "Hero Soul": 0,
+      "Life Stream": 104,
+      "Pierce": 107
     },
     "race": "Beast",
     "resists": "srws--",
@@ -969,6 +1018,9 @@
     },
     "lvl": 58,
     "passive": {
+      "Anti-Most": 107,
+      "Ice Amp": 104,
+      "Ice Boost": 103,
       "Ice Repel": 60
     },
     "race": "Dragon",
@@ -1007,6 +1059,11 @@
       "Shield All": 0
     },
     "lvl": 56,
+    "passive": {
+      "Fire Amp": 107,
+      "Null Curse": 107,
+      "Swift Step": 104
+    },
     "race": "Fallen",
     "resists": "ss-w--",
     "stats": [
@@ -1060,7 +1117,9 @@
   },
   "Feng Huang": {
     "command": {
-      "Inferno": 0
+      "Agidyne": 107,
+      "Inferno": 0,
+      "Recarm": 104
     },
     "lvl": 62,
     "passive": {
@@ -1115,7 +1174,10 @@
   },
   "Flauros": {
     "command": {
-      "Maragi": 0
+      "Maragi": 0,
+      "Nigayomogi": 104,
+      "Power Charge": 107,
+      "Power Hit": 107
     },
     "lvl": 26,
     "passive": {
@@ -1136,12 +1198,15 @@
   },
   "Gagyson": {
     "command": {
+      "Anger Hit": 107,
       "Elec Dance": 14,
       "Zio": 0
     },
     "lvl": 11,
     "passive": {
-      "Counter": 12
+      "Anti-Elec": 105,
+      "Counter": 12,
+      "Dodge": 107
     },
     "race": "Fallen",
     "raceup": 36,
@@ -1157,11 +1222,13 @@
   },
   "Ganesha": {
     "command": {
+      "Deathbound": 107,
       "Judgement": 62
     },
     "lvl": 61,
     "passive": {
       "Force Drain": 63,
+      "Hero Soul": 107,
       "Ice Drain": 0
     },
     "race": "Genma",
@@ -1177,12 +1244,17 @@
   },
   "Garm": {
     "command": {
-      "Berserk": 0
+      "Berserk": 0,
+      "Fatal Strike": 107,
+      "Fire Dance": 104,
+      "Mow Down": 104
     },
     "lvl": 25,
     "passive": {
+      "+Forget": 107,
       "Counter": 27,
-      "Life Surge": 0
+      "Life Surge": 0,
+      "Retaliate": 107
     },
     "race": "Wilder",
     "raceup": 39,
@@ -1233,11 +1305,14 @@
   "Girimehkala": {
     "command": {
       "Bufudyne": 0,
-      "Hassohappa": 48
+      "Hassohappa": 48,
+      "Shield All": 107
     },
     "lvl": 47,
     "passive": {
-      "Ice Amp": 49
+      "Grimoire": 104,
+      "Ice Amp": 49,
+      "Null Phys": 107
     },
     "race": "Jaki",
     "resists": "r---w-",
@@ -1252,11 +1327,15 @@
   },
   "Gozuki": {
     "command": {
-      "Berserk": 20
+      "Berserk": 20,
+      "Power Hit": 107
     },
     "lvl": 18,
     "passive": {
-      "Race-O": 0
+      "Phys Up": 105,
+      "Race-D": 107,
+      "Race-O": 0,
+      "Retaliate": 107
     },
     "race": "Touki",
     "raceup": 29,
@@ -1328,10 +1407,14 @@
   },
   "Gui Xian": {
     "command": {
+      "Mighty Hit": 107,
       "Power Charge": 0
     },
     "lvl": 38,
     "passive": {
+      "Anti-Phys": 104,
+      "Life Surge": 107,
+      "Null Elec": 107,
       "Preserve Extra": 39
     },
     "race": "Snake",
@@ -1392,9 +1475,16 @@
   "Hamsa": {
     "command": {
       "Diarama": 25,
-      "Mazan": 0
+      "Mazan": 0,
+      "Media": 107
     },
     "lvl": 24,
+    "passive": {
+      "Dodge": 105,
+      "Force Boost": 107,
+      "Mana Surge": 105,
+      "Vigilant": 105
+    },
     "race": "Avian",
     "raceup": 30,
     "resists": "----nw",
@@ -1435,7 +1525,10 @@
     },
     "lvl": 9,
     "passive": {
-      "Extra Bonus": 0
+      "+Poison": 104,
+      "Extra Bonus": 0,
+      "Life Bonus": 107,
+      "Mana Bonus": 107
     },
     "race": "Wilder",
     "raceup": 35,
@@ -1591,10 +1684,13 @@
   "Ictinike": {
     "command": {
       "Elec Dance": 22,
+      "Fatal Strike": 107,
       "Mow Down": 23
     },
     "lvl": 21,
     "passive": {
+      "Counter": 105,
+      "Paladin Soul": 107,
       "Quick Move": 0
     },
     "race": "Genma",
@@ -1611,11 +1707,14 @@
   },
   "Ikusa": {
     "command": {
-      "Assassinate": 0
+      "Assassinate": 0,
+      "Ice Dance": 104,
+      "Power Charge": 107
     },
     "lvl": 33,
     "passive": {
       "+Stone": 0,
+      "Ares Aid": 107,
       "Retaliate": 34
     },
     "race": "Touki",
@@ -1673,11 +1772,13 @@
   "Itsumade": {
     "command": {
       "Extra Cancel": 9,
+      "Force Dance": 107,
       "Zan": 0
     },
     "lvl": 8,
     "passive": {
-      "+Poison": 10
+      "+Poison": 10,
+      "Hero Aid": 105
     },
     "race": "Avian",
     "raceup": 26,
@@ -1713,12 +1814,15 @@
   },
   "Jack Frost": {
     "command": {
+      "Diarama": 107,
       "Ice Dance": 0,
       "Mabufu": 22
     },
     "lvl": 21,
     "passive": {
-      "Anti-Ice": 23
+      "Anti-Ice": 23,
+      "Ice Boost": 107,
+      "Mana Surge": 105
     },
     "race": "Fairy",
     "raceup": 26,
@@ -1734,11 +1838,15 @@
   },
   "Jambavan": {
     "command": {
-      "Agi": 0
+      "Agi": 0,
+      "Extra Cancel": 105,
+      "Fire Dance": 107,
+      "Mow Down": 107
     },
     "lvl": 13,
     "passive": {
       "Knight Soul": 0,
+      "Race-D": 105,
       "Race-O": 14
     },
     "race": "Genma",
@@ -1819,6 +1927,11 @@
       "Zan": 4
     },
     "lvl": 2,
+    "passive": {
+      "+Poison": 107,
+      "Mana Bonus": 107,
+      "Watchful": 104
+    },
     "race": "Beast",
     "raceup": 25,
     "resists": "-s-w-s",
@@ -1973,11 +2086,14 @@
   "Kikimora": {
     "command": {
       "Dia": 0,
+      "Nigayomogi": 107,
       "Zan": 10
     },
     "lvl": 9,
     "passive": {
-      "Mana Bonus": 11
+      "Anti-Fire": 107,
+      "Mana Bonus": 11,
+      "Watchful": 104
     },
     "race": "Femme",
     "raceup": 33,
@@ -2033,11 +2149,14 @@
   "Knocker": {
     "command": {
       "Dia": 8,
+      "Extra Cancel": 107,
       "Zan": 0
     },
     "lvl": 7,
     "passive": {
-      "Extra Bonus": 0
+      "Anti-Force": 107,
+      "Extra Bonus": 0,
+      "Race-D": 105
     },
     "race": "Fairy",
     "raceup": 22,
@@ -2053,11 +2172,15 @@
   },
   "Kobold": {
     "command": {
+      "Anger Hit": 105,
+      "Fatal Strike": 107,
       "Snipe": 5
     },
     "lvl": 3,
     "passive": {
-      "Hero Aid": 4
+      "Hero Aid": 4,
+      "Life Bonus": 107,
+      "Phys Up": 105
     },
     "race": "Touki",
     "raceup": 25,
@@ -2135,11 +2258,15 @@
   "Kumbhanda": {
     "command": {
       "Assassinate": 0,
-      "Desperation": 26
+      "Desperation": 26,
+      "Life Drain": 107,
+      "Multi-Hit": 107
     },
     "lvl": 25,
     "passive": {
-      "Anti-Curse": 27
+      "Anti-Curse": 27,
+      "Anti-Phys": 107,
+      "Extra Bonus": 104
     },
     "race": "Ghost",
     "raceup": 31,
@@ -2207,11 +2334,16 @@
   },
   "Leanan Sidhe": {
     "command": {
+      "Bufudyne": 107,
+      "Diarama": 105,
+      "Mabufu": 107,
       "Media": 0
     },
     "lvl": 26,
     "passive": {
-      "Anti-Ailment": 27
+      "Anti-Ailment": 27,
+      "Ice Boost": 107,
+      "Life Surge": 107
     },
     "race": "Femme",
     "raceup": 38,
@@ -2228,11 +2360,14 @@
   "Legion": {
     "command": {
       "Bufudyne": 40,
-      "Petra Eyes": 0
+      "Petra Eyes": 0,
+      "Power Hit": 105
     },
     "lvl": 39,
     "passive": {
-      "Anti-Phys": 0
+      "Anti-Phys": 0,
+      "Endure": 107,
+      "Swift Step": 107
     },
     "race": "Jaki",
     "resists": "sw-w-s",
@@ -2246,10 +2381,14 @@
     ]
   },
   "Lham Dearg": {
+    "command": {
+      "Mighty Hit": 104
+    },
     "lvl": 43,
     "passive": {
       "Endure": 45,
-      "Life Stream": 44
+      "Life Stream": 44,
+      "Pierce": 107
     },
     "race": "Touki",
     "resists": "---w-w",
@@ -2264,11 +2403,16 @@
   },
   "Lilim": {
     "command": {
+      "Elec Dance": 104,
+      "Fatal Strike": 103,
+      "Mazio": 107,
       "Sexy Gaze": 0
     },
     "lvl": 18,
     "passive": {
-      "Anti-Elec": 20
+      "Anti-Elec": 20,
+      "Dodge": 107,
+      "Grimoire": 104
     },
     "race": "Femme",
     "raceup": 35,
@@ -2301,10 +2445,17 @@
   },
   "Loa": {
     "command": {
+      "Extra Cancel": 103,
+      "Life Drain": 107,
+      "Nigayomogi": 105,
+      "Petra Eyes": 106,
       "Power Charge": 35
     },
     "lvl": 34,
     "passive": {
+      "+Forget": 105,
+      "+Poison": 103,
+      "Drain Hit": 107,
       "Life Surge": 0
     },
     "race": "Ghost",
@@ -2359,10 +2510,13 @@
   "Lorelei": {
     "command": {
       "Diarahan": 38,
+      "Drain": 107,
       "Marin Karin": 0
     },
     "lvl": 37,
     "passive": {
+      "Drain Hit": 107,
+      "Grimoire": 104,
       "Vigilant": 0
     },
     "race": "Fairy",
@@ -2432,11 +2586,15 @@
   "Makara": {
     "command": {
       "Dia": 16,
+      "Diarama": 104,
+      "Fire Dance": 107,
       "Taunt": 0
     },
     "lvl": 14,
     "passive": {
-      "Anti-Curse": 15
+      "Anti-Curse": 15,
+      "Dodge": 104,
+      "Vigilant": 107
     },
     "race": "Snake",
     "raceup": 33,
@@ -2486,7 +2644,9 @@
   },
   "Mezuki": {
     "command": {
-      "Mazio": 26
+      "Mazio": 26,
+      "Multi-Hit": 105,
+      "Weak Kill": 107
     },
     "lvl": 25,
     "passive": {
@@ -2529,10 +2689,14 @@
   "Moh Shuvuu": {
     "command": {
       "Bufu": 0,
-      "Ice Dance": 18
+      "Diarama": 107,
+      "Ice Dance": 18,
+      "Mabufu": 104
     },
     "lvl": 16,
     "passive": {
+      "Anti-Ailment": 107,
+      "Vigilant": 104,
       "Watchful": 17
     },
     "race": "Avian",
@@ -2549,11 +2713,16 @@
   },
   "Mokoi": {
     "command": {
-      "Fatal Strike": 0
+      "Berserk": 105,
+      "Extra Cancel": 107,
+      "Fatal Strike": 0,
+      "Ice Dance": 107
     },
     "lvl": 15,
     "passive": {
+      "Counter": 107,
       "Moneybags": 17,
+      "Race-D": 105,
       "Watchful": 16
     },
     "race": "Jaki",
@@ -2612,7 +2781,9 @@
     },
     "lvl": 43,
     "passive": {
-      "Endure": 45
+      "Anti-Fire": 105,
+      "Endure": 45,
+      "Swift Step": 107
     },
     "race": "Wilder",
     "raceup": 44,
@@ -2629,9 +2800,16 @@
   "Murmur": {
     "command": {
       "Death Call": 0,
+      "Hassohappa": 107,
+      "Makarakarn": 107,
+      "Maziodyne": 104,
       "Tetrakarn": 65
     },
     "lvl": 64,
+    "passive": {
+      "Null Curse": 104,
+      "Swift Step": 107
+    },
     "race": "Fallen",
     "resists": "-wwrrw",
     "stats": [
@@ -2645,11 +2823,14 @@
   },
   "Myrmecolion": {
     "command": {
+      "Agidyne": 104,
       "Piercing Hit": 52
     },
     "lvl": 50,
     "passive": {
-      "Drain Hit": 0
+      "Drain Hit": 0,
+      "Life Stream": 107,
+      "Pierce": 107
     },
     "race": "Beast",
     "resists": "-s--w-",
@@ -2739,13 +2920,16 @@
   },
   "Nekomata": {
     "command": {
+      "Media": 107,
       "Multi-Hit": 21,
       "Paral Eyes": 0
     },
     "lvl": 19,
     "passive": {
       "+Paralyze": 0,
-      "Anti-Force": 20
+      "Anti-Elec": 107,
+      "Anti-Force": 20,
+      "Double Strike": 104
     },
     "race": "Beast",
     "raceup": 29,
@@ -2791,12 +2975,15 @@
   },
   "Nisroc": {
     "command": {
+      "Agidyne": 107,
       "Maragi": 0,
       "Weak Kill": 42
     },
     "lvl": 41,
     "passive": {
-      "Mana Stream": 43
+      "+Forget": 105,
+      "Mana Stream": 43,
+      "Null Fire": 107
     },
     "race": "Fallen",
     "raceup": 43,
@@ -2832,11 +3019,16 @@
   },
   "Nozuchi": {
     "command": {
+      "Assassinate": 107,
+      "Desperation": 104,
+      "Mow Down": 104,
       "Nigayomogi": 0
     },
     "lvl": 23,
     "passive": {
-      "Grimoire": 24
+      "Double Strike": 104,
+      "Grimoire": 24,
+      "Paladin Soul": 107
     },
     "race": "Snake",
     "raceup": 35,
@@ -2852,10 +3044,13 @@
   },
   "Nue": {
     "command": {
+      "Berserk": 107,
+      "Power Charge": 104,
       "Ziodyne": 0
     },
     "lvl": 42,
     "passive": {
+      "Elec Boost": 107,
       "Pierce": 44
     },
     "race": "Beast",
@@ -2888,9 +3083,14 @@
   },
   "Obariyon": {
     "command": {
+      "Dia": 107,
       "Extra Cancel": 0
     },
     "lvl": 3,
+    "passive": {
+      "Life Bonus": 104,
+      "Race-O": 107
+    },
     "race": "Jaki",
     "raceup": 25,
     "resists": "--ww--",
@@ -2946,11 +3146,14 @@
   },
   "Ogre": {
     "command": {
-      "Anger Hit": 9
+      "Anger Hit": 9,
+      "Berserk": 107
     },
     "lvl": 8,
     "passive": {
+      "Counter": 104,
       "Knight Soul": 0,
+      "Phys Up": 107,
       "Watchful": 10
     },
     "race": "Jaki",
@@ -2967,13 +3170,16 @@
   },
   "Ogun": {
     "command": {
+      "Brutal Hit": 104,
       "Fire Dance": 0,
       "Multi-Hit": 24
     },
     "lvl": 23,
     "passive": {
       "Anti-Fire": 25,
-      "Counter": 0
+      "Ares Aid": 107,
+      "Counter": 0,
+      "Retaliate": 107
     },
     "race": "Jaki",
     "raceup": 31,
@@ -3023,10 +3229,13 @@
   },
   "Orobas": {
     "command": {
-      "Mazio": 0
+      "Makarakarn": 107,
+      "Mazio": 0,
+      "Ziodyne": 105
     },
     "lvl": 49,
     "passive": {
+      "+Forget": 107,
       "Elec Amp": 50,
       "Null Curse": 0
     },
@@ -3043,12 +3252,15 @@
   },
   "Orochi": {
     "command": {
-      "Hassohappa": 0
+      "Hassohappa": 0,
+      "Multi-Strike": 107
     },
     "lvl": 66,
     "passive": {
       "Avenge": 67,
-      "Fire Drain": 0
+      "Crit Up": 107,
+      "Fire Drain": 0,
+      "Ice Drain": 107
     },
     "race": "Snake",
     "resists": "-dw--s",
@@ -3063,10 +3275,13 @@
   },
   "Orthrus": {
     "command": {
-      "Desperation": 0
+      "Berserk": 105,
+      "Desperation": 0,
+      "Power Charge": 107
     },
     "lvl": 27,
     "passive": {
+      "Crit Up": 107,
       "Preserve Extra": 28,
       "Retaliate": 0
     },
@@ -3198,9 +3413,16 @@
     "unique": true
   },
   "Pendragon": {
+    "command": {
+      "Fatal Strike": 107,
+      "Power Hit": 107,
+      "Taunt": 104
+    },
     "lvl": 30,
     "passive": {
       "Anti-Curse": 0,
+      "Counter": 104,
+      "Life Aid": 107,
       "Paladin Soul": 31
     },
     "race": "Snake",
@@ -3239,11 +3461,15 @@
   },
   "Pisaca": {
     "command": {
-      "Dream Eater": 0
+      "Desperation": 104,
+      "Life Drain": 0
     },
     "lvl": 41,
     "passive": {
-      "Null Curse": 42
+      "Anti-Ailment": 103,
+      "Drain Hit": 107,
+      "Null Curse": 42,
+      "Null Ice": 107
     },
     "race": "Ghost",
     "resists": "-w--d-",
@@ -3258,10 +3484,15 @@
   },
   "Pixie": {
     "command": {
+      "Bufu": 107,
       "Dia": 0,
       "Zio": 4
     },
     "lvl": 2,
+    "passive": {
+      "Mana Bonus": 105,
+      "Moneybags": 107
+    },
     "race": "Fairy",
     "raceup": 20,
     "resists": "-w-s--",
@@ -3276,9 +3507,13 @@
   },
   "Poltergeist": {
     "command": {
+      "Agi": 104,
       "Bufu": 0
     },
     "lvl": 1,
+    "passive": {
+      "Anti-Fire": 107
+    },
     "race": "Ghost",
     "raceup": 25,
     "resists": "---wws",
@@ -3332,12 +3567,16 @@
   },
   "Pyro Jack": {
     "command": {
+      "Agidyne": 107,
       "Fire Dance": 0,
-      "Maragi": 30
+      "Maragi": 30,
+      "Media": 107
     },
     "lvl": 29,
     "passive": {
-      "Fire Boost": 31
+      "Double Strike": 105,
+      "Fire Boost": 31,
+      "Mana Surge": 107
     },
     "race": "Fairy",
     "raceup": 31,
@@ -3352,7 +3591,18 @@
     ]
   },
   "Python": {
+    "command": {
+      "Agidyne": 103,
+      "Bufudyne": 103,
+      "Megido": 105
+    },
     "lvl": 51,
+    "passive": {
+      "Dual Shadow": 105,
+      "Fire Amp": 103,
+      "Ice Amp": 103,
+      "Mana Stream": 107
+    },
     "race": "Dragon",
     "resists": "--ssww",
     "stats": [
@@ -3387,11 +3637,15 @@
   },
   "Rakshasa": {
     "command": {
-      "Deathbound": 56
+      "Deathbound": 56,
+      "Piercing Hit": 107
     },
     "lvl": 55,
     "passive": {
-      "Null Phys": 0
+      "Ice Drain": 107,
+      "Null Phys": 0,
+      "Phys Amp": 107,
+      "Phys Boost": 104
     },
     "race": "Jaki",
     "resists": "n-w---",
@@ -3405,6 +3659,13 @@
     ]
   },
   "Rangda": {
+    "command": {
+      "Assassinate": 107,
+      "Diarahan": 107,
+      "Drain": 107,
+      "Power Hit": 103,
+      "Zandyne": 104
+    },
     "lvl": 58,
     "passive": {
       "Phys Repel": 59
@@ -3533,11 +3794,16 @@
   },
   "Seiryuu": {
     "command": {
+      "Deathbound": 104,
+      "Hassohappa": 107,
       "Maziodyne": 52
     },
     "lvl": 51,
     "passive": {
-      "Elec Repel": 53
+      "Double Strike": 104,
+      "Elec Amp": 107,
+      "Elec Repel": 53,
+      "Life Aid": 107
     },
     "race": "Snake",
     "resists": "-sssws",
@@ -3590,10 +3856,15 @@
   },
   "Silky": {
     "command": {
+      "Bufudyne": 107,
       "Diarahan": 0,
       "Media": 0
     },
     "lvl": 44,
+    "passive": {
+      "Mana Surge": 107,
+      "Null Ice": 104
+    },
     "race": "Fairy",
     "resists": "-wn--s",
     "stats": [
@@ -3624,12 +3895,15 @@
   },
   "Suparna": {
     "command": {
+      "Force Dance": 104,
       "Mazan": 32,
       "Mow Down": 0
     },
     "lvl": 31,
     "passive": {
-      "+Paralyze": 33
+      "+Paralyze": 33,
+      "Force Boost": 104,
+      "Quick Move": 107
     },
     "race": "Avian",
     "raceup": 32,
@@ -3726,12 +4000,16 @@
   },
   "Taown": {
     "command": {
+      "Death Call": 107,
       "Diarahan": 0,
       "Gigajama": 51
     },
     "lvl": 50,
     "passive": {
-      "Force Repel": 52
+      "Double Strike": 104,
+      "Force Repel": 52,
+      "Grimoire": 107,
+      "Phys Amp": 107
     },
     "race": "Wilder",
     "resists": "-w--sr",
@@ -3746,11 +4024,14 @@
   },
   "Tenong Cut": {
     "command": {
+      "Berserk": 107,
+      "Nigayomogi": 104,
       "Paral Eyes": 0
     },
     "lvl": 16,
     "passive": {
       "+Paralyze": 0,
+      "Anti-Phys": 107,
       "Dodge": 17
     },
     "race": "Ghost",
@@ -3868,11 +4149,14 @@
   "Toubyou": {
     "command": {
       "Elec Dance": 13,
+      "Nigayomogi": 105,
       "Zio": 0
     },
     "lvl": 12,
     "passive": {
-      "Life Bonus": 0
+      "Anti-Elec": 107,
+      "Life Bonus": 0,
+      "Mana Bonus": 107
     },
     "race": "Dragon",
     "raceup": 36,
@@ -3983,10 +4267,13 @@
   "Vidofnir": {
     "command": {
       "Drain": 41,
-      "Mazio": 0
+      "Mazio": 0,
+      "Multi-Strike": 107,
+      "Ziodyne": 107
     },
     "lvl": 39,
     "passive": {
+      "Extra Bonus": 104,
       "Swift Step": 40
     },
     "race": "Avian",
@@ -4003,10 +4290,12 @@
   "Vivian": {
     "command": {
       "Drain": 0,
+      "Recarm": 107,
       "Ziodyne": 0
     },
     "lvl": 52,
     "passive": {
+      "Anti-Phys": 104,
       "Elec Repel": 53
     },
     "race": "Fairy",
@@ -4038,12 +4327,15 @@
   },
   "Waira": {
     "command": {
-      "Force Dance": 19
+      "Berserk": 104,
+      "Force Dance": 19,
+      "Mow Down": 107
     },
     "lvl": 17,
     "passive": {
       "Life Bonus": 18,
-      "Phys Up": 0
+      "Phys Up": 0,
+      "Quick Move": 107
     },
     "race": "Wilder",
     "raceup": 37,
@@ -4060,11 +4352,14 @@
   "Wendigo": {
     "command": {
       "Brutal Hit": 32,
-      "Ice Dance": 0
+      "Ice Dance": 0,
+      "Mighty Hit": 107
     },
     "lvl": 31,
     "passive": {
-      "Anti-Ice": 0
+      "Anti-Ice": 0,
+      "Ice Boost": 104,
+      "Life Surge": 107
     },
     "race": "Jaki",
     "raceup": 33,
@@ -4128,7 +4423,9 @@
     },
     "lvl": 51,
     "passive": {
-      "Fire Repel": 53
+      "Ares Aid": 105,
+      "Fire Repel": 53,
+      "Phys Amp": 107
     },
     "race": "Touki",
     "resists": "-n-sws",
@@ -4168,6 +4465,10 @@
       "Petra Eyes": 0
     },
     "lvl": 44,
+    "passive": {
+      "Dual Shadow": 105,
+      "Mana Surge": 107
+    },
     "race": "Dragon",
     "raceup": 45,
     "resists": "----wn",
@@ -4201,12 +4502,15 @@
   },
   "Yuki Jyorou": {
     "command": {
+      "Drain": 107,
       "Mabufu": 0,
       "Marin Karin": 36
     },
     "lvl": 34,
     "passive": {
-      "Drain Hit": 35
+      "Drain Hit": 35,
+      "Ice Boost": 104,
+      "Mana Surge": 107
     },
     "race": "Femme",
     "raceup": 37,

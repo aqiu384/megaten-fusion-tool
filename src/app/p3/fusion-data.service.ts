@@ -15,11 +15,15 @@ import * as FES_DEMON_DATA_JSON from './data/fes-demon-data.json';
 import * as ANS_DEMON_DATA_JSON from './data/ans-demon-data.json';
 import * as P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
 
-import * as VAN_FUSION_CHART_JSON from './data/van-fusion-chart.json';
-import * as FES_FUSION_CHART_JSON from './data/fusion-chart.json';
+import * as VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
+import * as FES_SKILL_DATA_JSON from './data/fes-skill-data.json';
+import * as P3P_SKILL_DATA_JSON from './data/p3p-skill-data.json';
 
-import * as VAN_SPECIAL_RECIPES from './data/special-recipes.json';
+import * as VAN_SPECIAL_RECIPES from './data/van-special-recipes.json';
 import * as FES_SPECIAL_RECIPES from './data/fes-special-recipes.json';
+
+import * as VAN_FUSION_CHART_JSON from './data/van-fusion-chart.json';
+import * as FES_FUSION_CHART_JSON from './data/fes-fusion-chart.json';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -28,6 +32,7 @@ export class FusionDataService implements IFusionTrioService {
   triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
   triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
   appName = 'Persona 3';
+  skillsHaveFuse = false;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -44,12 +49,14 @@ export class FusionDataService implements IFusionTrioService {
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
     const demonDataJsons = [VAN_DEMON_DATA_JSON];
+    const skillDataJsons = [VAN_SKILL_DATA_JSON];
     const specialRecipes = [VAN_SPECIAL_RECIPES];
     let fusionChart = VAN_FUSION_CHART_JSON;
 
     if (game !== 'p3') {
       this.appName = 'Persona 3 FES';
       demonDataJsons.push(FES_DEMON_DATA_JSON);
+      skillDataJsons.push(FES_SKILL_DATA_JSON);
       specialRecipes.push(FES_SPECIAL_RECIPES);
       fusionChart = FES_FUSION_CHART_JSON;
 
@@ -58,11 +65,13 @@ export class FusionDataService implements IFusionTrioService {
         demonDataJsons.push(ANS_DEMON_DATA_JSON);
       } else if (game === 'p3p') {
         this.appName = 'Persona 3 Portable';
+        this.skillsHaveFuse = true;
         demonDataJsons.push(P3P_DEMON_DATA_JSON);
+        skillDataJsons.push(P3P_SKILL_DATA_JSON);
       }
     }
 
-    this._compendium = new Compendium(demonDataJsons, specialRecipes);
+    this._compendium = new Compendium(demonDataJsons, skillDataJsons, specialRecipes);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 

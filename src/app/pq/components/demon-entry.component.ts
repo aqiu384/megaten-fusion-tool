@@ -33,6 +33,7 @@ import { FusionDataService } from '../fusion-data.service';
         [inherits]="demon.inherits">
       </app-demon-inherits>
       <app-demon-skills
+        [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">

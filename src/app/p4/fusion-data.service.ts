@@ -11,8 +11,12 @@ import { Races, RaceOrder, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCUL
 import { P3_TRIPLE_FISSION_CALCULATOR, P3_TRIPLE_FUSION_CALCULATOR } from '../compendium/constants';
 
 import * as DEMON_DATA_JSON from './data/demon-data.json';
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
 import * as GOLDEN_DEMON_DATA_JSON from './data/golden-demon-data.json';
+
+import * as SKILL_DATA_JSON from './data/skill-data.json';
+import * as GOLDEN_SKILL_DATA_JSON from './data/golden-skill-data.json';
+
+import * as FUSION_CHART_JSON from './data/fusion-chart.json';
 import * as GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
 
 @Injectable()
@@ -22,6 +26,7 @@ export class FusionDataService implements IFusionTrioService {
   triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
   triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
   appName = 'Persona 4';
+  skillsHaveFuse = false;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -37,19 +42,21 @@ export class FusionDataService implements IFusionTrioService {
 
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
-
     const demonData = [DEMON_DATA_JSON];
+    const skillData = [SKILL_DATA_JSON];
     let fusionChart = FUSION_CHART_JSON;
     let races = Races.slice(0, Races.length - 3);
 
     if (game === 'p4g') {
       demonData.push(GOLDEN_DEMON_DATA_JSON);
+      skillData.push(GOLDEN_SKILL_DATA_JSON);
       fusionChart = GOLDEN_FUSION_CHART_JSON;
       races = Races.slice(0, Races.length - 1);
       this.appName = 'Persona 4 Golden';
+      this.skillsHaveFuse = true;
     }
 
-    this._compendium = new Compendium(demonData);
+    this._compendium = new Compendium(demonData, skillData);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 

@@ -16,6 +16,7 @@ export interface Skill {
   cost: number;
   rank: number;
   effect: string;
+  target: string;
   learnedBy: { demon: string, level: number }[];
   fuse: string;
   level: number;

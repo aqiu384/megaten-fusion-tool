@@ -18,7 +18,9 @@ export class SkillLevelToStringPipe implements PipeTransform {
     if (value === 0) { return 'Innate'; }
     if (value < 100) { return value.toString(); }
     if (value === 100) { return 'Max Loyalty'; }
-    return `${value - 100}-star Auction`;
+    if (value < 106) { return `${value - 100}-star Auction`; }
+    if (value === 106) { return 'Bargain Auction'; }
+    return 'Rare Auction';
   }
 }
 
@@ -28,7 +30,9 @@ export class SkillLevelToShortStringPipe implements PipeTransform {
     if (value === 0) { return ''; }
     if (value < 100) { return `(${value.toString()})`; }
     if (value === 100) { return '(ML)'; }
-    return `(A${value - 100})`;
+    if (value < 106) { return `(A${value - 100})`; }
+    if (value === 106) { return '(AB)'; }
+    return '(AR)';
   }
 }
 

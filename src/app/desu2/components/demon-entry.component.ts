@@ -7,7 +7,6 @@ import { DemonEntryContainerComponent as DECC } from '../../compendium/container
 import { BaseStats, ResistElements, ElementOrder } from '../../desu/constants';
 import { Demon } from '../../desu/models';
 import { DesuCompendium as Compendium } from '../../desu/models/compendium';
-import { APP_TITLE } from '../constants';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
@@ -29,12 +28,14 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <app-demon-skills
         [title]="'Command Skills'"
+        [hasRank]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.command">
       </app-demon-skills>
       <app-demon-skills
         [title]="'Passive Skills'"
+        [hasRank]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.passive">
@@ -89,8 +90,6 @@ export class DemonEntryComponent {
   `
 })
 export class DemonEntryContainerComponent extends DECC {
-  appName = APP_TITLE;
-
   constructor(
     private route: ActivatedRoute,
     private title: Title,
@@ -98,5 +97,6 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+    this.appName = fusionDataService.appName;
   }
 }

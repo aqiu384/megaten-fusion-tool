@@ -11,14 +11,16 @@ import { DesuCompendium as Compendium } from '../desu/models/compendium';
 
 import * as VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import * as VAN_SPECIAL_RECIPES_JSON from './data/van-special-recipes.json';
+import * as VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
 import * as REC_DEMON_DATA_JSON from './data/rec-demon-data.json';
 import * as REC_SPECIAL_RECIPES_JSON from './data/rec-special-recipes.json';
-import * as SKILL_DATA_JSON from './data/skill-data.json';
+import * as REC_SKILL_DATA_JSON from './data/rec-skill-data.json';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
+  appName = 'Devil Survivor 2';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -31,14 +33,17 @@ export class FusionDataService implements IFusionDataService {
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
     const demonDataJsons = [VAN_DEMON_DATA_JSON];
+    const skillDataJsons = [VAN_SKILL_DATA_JSON];
     const specRecipesJsons = [VAN_SPECIAL_RECIPES_JSON];
 
     if (game === 'ds2br') {
+      this.appName = 'Devil Survivor 2 Record Breaker';
       demonDataJsons.push(REC_DEMON_DATA_JSON);
+      skillDataJsons.push(REC_SKILL_DATA_JSON);
       specRecipesJsons.push(REC_SPECIAL_RECIPES_JSON);
     }
 
-    this._compendium = new Compendium(demonDataJsons, SKILL_DATA_JSON, specRecipesJsons, {});
+    this._compendium = new Compendium(demonDataJsons, skillDataJsons, specRecipesJsons, {});
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
   }

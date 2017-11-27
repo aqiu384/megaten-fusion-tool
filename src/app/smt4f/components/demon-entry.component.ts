@@ -30,9 +30,9 @@ import { FusionDataService } from '../fusion-data.service';
         [ailments]="demon.ailments">
       </app-demon-resists>
       <app-demon-inherits
+        [hasLvls]="true"
         [inheritHeaders]="affinityHeaders"
         [inherits]="demon.affinities">
-        [hasLvls]="true"
       </app-demon-inherits>
       <app-demon-skills
         [hasTarget]="true"

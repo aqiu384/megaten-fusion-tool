@@ -30,12 +30,12 @@ export class DesuCompendium implements ICompendium {
     return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
   }
 
-  constructor(demonDataJsons: any[], skillData: any, specialRecipesJsons: any[], dlcDemons: any) {
-    this.initImportedData(demonDataJsons, skillData, specialRecipesJsons, dlcDemons);
+  constructor(demonDataJsons: any[], skillDataJsons: any[], specialRecipesJsons: any[], dlcDemons: any) {
+    this.initImportedData(demonDataJsons, skillDataJsons, specialRecipesJsons, dlcDemons);
     this.updateDerivedData();
   }
 
-  initImportedData(demonDataJsons: any[], skillData: any, specialRecipesJsons: any[], dlcDemons: any) {
+  initImportedData(demonDataJsons: any[], skillDataJsons: any[], specialRecipesJsons: any[], dlcDemons: any) {
     const demons:   { [name: string]: Demon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
@@ -74,17 +74,23 @@ export class DesuCompendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(skillData)) {
-      skills[name] = {
-        name,
-        element:   json.element,
-        cost:      json.cost ? json.cost : 0,
-        rank:      json.cost ? json.cost / 100 : 0,
-        effect:    json.effect,
-        requires:  json.prereq || '',
-        learnedBy: [],
-        level:     0
-      };
+    for (const skillData of skillDataJsons) {
+      for (const [name, json] of Object.entries(skillData)) {
+        skills[name] = {
+          name,
+          element:   json.element,
+          cost:      json.cost ? json.cost : 0,
+          rank:      json.rank ? json.rank : 99,
+          effect:    json.effect,
+          requires:  json.prereq || '',
+          learnedBy: [],
+          level:     0
+        };
+
+        if (skills[name].element === 'auto') {
+          skills[name].rank = 0;
+        }
+      }
     }
 
     for (const specialRecipes of specialRecipesJsons) {

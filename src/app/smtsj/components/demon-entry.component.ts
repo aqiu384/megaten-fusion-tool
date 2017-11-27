@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistanceElements, InheritElements, Ailments, SkillElementOrder, APP_TITLE } from '../models/constants';
+import { BaseStats, ResistanceElements, InheritElements, Ailments, SkillElementOrder } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionChart } from '../models/fusion-chart';
@@ -44,7 +44,6 @@ import { FusionDataService } from '../fusion-data.service';
         [inherits]="demon.inherits">
       </app-demon-inherits>
       <app-demon-skills
-        [hasTarget]="true"
         [hasRank]="true"
         [hasInherit]="true"
         [hasLvl]="false"
@@ -53,8 +52,7 @@ import { FusionDataService } from '../fusion-data.service';
         [skillLevels]="demon.skills">
       </app-demon-skills>
       <app-demon-skills
-        [title]="'D-Source'"
-        [hasTarget]="true"
+        [title]="'D-Source Skills'"
         [hasRank]="true"
         [hasInherit]="true"
         [hasLvl]="false"
@@ -105,7 +103,6 @@ export class DemonEntryComponent {
   `
 })
 export class DemonEntryContainerComponent extends DECC {
-  appName = APP_TITLE;
   laplaceOn = false;
 
   constructor(
@@ -115,6 +112,7 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+    this.appName = fusionDataService.appName;
   }
 
   subscribeAll() {

@@ -137,6 +137,7 @@ export const SkillElementOrder = getEnumOrder(SkillElements);
 export const InheritElementOrder = getEnumOrder(InheritElements.concat('non'));
 export const ResistanceOrder = getEnumOrder(ResistanceLevels);
 
-export const FUSION_SETTINGS_KEY = 'smtsj-fusion-tool-settings';
+export const VAN_FUSION_SETTINGS_KEY = 'smtsj-fusion-tool-settings';
+export const DSJ_FUSION_SETTINGS_KEY = 'smtdsj-fusion-tool-settings';
 export const FUSION_SETTINGS_VERSION = 1709211400;
 export const APP_TITLE = 'Shin Megami Tensei: Strange Journey';

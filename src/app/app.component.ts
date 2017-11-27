@@ -57,8 +57,9 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(v => this.interceptNavigation(v));
     this.navRows = [];
 
-    const navButtons = [{ game: 'Home', tool: 'home', srcs: [] }].concat(MEGATEN_FUSION_TOOLS);
-    const fillerLen = this.navsPerRow - (MEGATEN_FUSION_TOOLS.length + 1) % this.navsPerRow;
+    const navButtons = [].concat(MEGATEN_FUSION_TOOLS);
+    const fillerGap = navButtons.length % this.navsPerRow;
+    const fillerLen = fillerGap ? this.navsPerRow - fillerGap : 0;
     const fillerNav = { game: '', tool: '', srcs: [] };
 
     for (let i = 0; i < fillerLen; i++) {

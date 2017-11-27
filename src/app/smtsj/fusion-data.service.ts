@@ -3,16 +3,22 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
-import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './models/constants';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import {
+  VAN_FUSION_SETTINGS_KEY,
+  DSJ_FUSION_SETTINGS_KEY,
+  FUSION_SETTINGS_VERSION
+} from './models/constants';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
+  settingsKey = VAN_FUSION_SETTINGS_KEY;
+  appName = 'Shin Megami Tensei: Strange Journey';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -29,7 +35,12 @@ export class FusionDataService implements IFusionDataService {
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 
-    const settings = JSON.parse(localStorage.getItem(FUSION_SETTINGS_KEY));
+    if (game === 'smtdsj') {
+      this.settingsKey = DSJ_FUSION_SETTINGS_KEY;
+      this.appName = 'Shin Megami Tensei: Strange Journey Redux';
+    }
+
+    const settings = JSON.parse(localStorage.getItem(this.settingsKey));
 
     if (settings && settings.version && settings.version >= FUSION_SETTINGS_VERSION) {
       this.nextIncludedSubapps(settings.subapps);
@@ -41,14 +52,14 @@ export class FusionDataService implements IFusionDataService {
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
 
   nextIncludedSubapps(subapps: { [name: string]: boolean }) {
-    localStorage.setItem(FUSION_SETTINGS_KEY, JSON.stringify({ version: FUSION_SETTINGS_VERSION, subapps }));
+    localStorage.setItem(this.settingsKey, JSON.stringify({ version: FUSION_SETTINGS_VERSION, subapps }));
     this._fusionChart.includedSubapps = subapps;
     this._fusionChart$.next(this._fusionChart);
   }
 
   onStorageUpdated(e) {
     switch (e.key) {
-      case FUSION_SETTINGS_KEY:
+      case this.settingsKey:
         this._fusionChart.includedSubapps = JSON.parse(e.newValue).subapps;
         this._fusionChart$.next(this._fusionChart);
         break;
