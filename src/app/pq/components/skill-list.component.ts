@@ -14,6 +14,7 @@ import { FusionDataService } from '../fusion-data.service';
       [hasRank]="false"
       [hasTarget]="true"
       [hasFuse]="true"
+      [isPersona]="true"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `

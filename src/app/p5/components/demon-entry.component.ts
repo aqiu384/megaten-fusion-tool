@@ -28,6 +28,10 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="resistanceHeaders"
         [resists]="demon.resists">
       </app-demon-resists>
+      <app-demon-inherits
+        [inheritHeaders]="compendium.inheritHeaders"
+        [inherits]="compendium.getInheritElems(demon.inherit)">
+      </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="elemOrder"
         [compendium]="compendium"

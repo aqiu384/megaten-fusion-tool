@@ -3,6 +3,7 @@ import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import * as INHERITANCE_TYPES from '../data/inheritance-types.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -14,6 +15,7 @@ export class Compendium implements ICompendium {
   private allResults: { [race: string]: number[] };
   private _allDemons: Demon[];
   private _allSkills: Skill[];
+  private _inheritTypes: { [inherti: string]: number[] };
 
   dlcDemons: { [name: string]: boolean } = {};
 
@@ -27,6 +29,7 @@ export class Compendium implements ICompendium {
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
+    this._inheritTypes = {};
 
     for (const demonDataJson of demonDataJsons) {
       for (const [name, json] of Object.entries(demonDataJson)) {
@@ -80,6 +83,10 @@ export class Compendium implements ICompendium {
       }
     }
 
+    for (let i = 0; i < INHERITANCE_TYPES['inherits'].length; i++) {
+      this._inheritTypes[INHERITANCE_TYPES['inherits'][i]] = INHERITANCE_TYPES['ratios'][i];
+    }
+
     this.demons = demons;
     this.skills = skills;
     this.specialRecipes = specials;
@@ -128,6 +135,10 @@ export class Compendium implements ICompendium {
     return Object.keys(this.specialRecipes).map(name => this.demons[name]);
   }
 
+  get inheritHeaders(): string[] {
+    return INHERITANCE_TYPES['elems'];
+  }
+
   getDemon(name: string): Demon {
     return this.demons[name];
   }
@@ -156,6 +167,10 @@ export class Compendium implements ICompendium {
 
   getSpecialNamePairs(name: string): NamePair[] {
     return [];
+  }
+
+  getInheritElems(inheritType: string): number[] {
+    return this._inheritTypes[inheritType];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

@@ -25,7 +25,7 @@ import { Skill } from '../models';
     <td *ngIf="hasLearned">
       <ul class="comma-list">
         <li *ngFor="let entry of data.learnedBy">
-          <a routerLink="../{{ hasFuse ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
+          <a routerLink="../{{ isPersona ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
           {{ entry.level | skillLevelToShortString }}
         </li>
       </ul>
@@ -56,6 +56,7 @@ export class SmtSkillListRowComponent {
   @Input() hasDsource = false;
   @Input() hasPrereq = false;
   @Input() hasLvl = false;
+  @Input() isPersona = false;
   @Input() data: Skill;
 }
 
@@ -100,6 +101,7 @@ export class SmtSkillListRowComponent {
           [hasFuse]="hasFuse"
           [hasDsource]="hasDsource"
           [hasPrereq]="hasPrereq"
+          [isPersona]="isPersona"
           [data]="data"
           [ngClass]="{
             extra: data.rank > 70 && data.rank < 90,
@@ -117,4 +119,5 @@ export class SmtSkillListComponent extends SkillListComponent<Skill> {
   @Input() hasFuse = false;
   @Input() hasDsource = false;
   @Input() hasPrereq = false;
+  @Input() isPersona = false;
 }

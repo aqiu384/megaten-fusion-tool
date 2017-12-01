@@ -6,6 +6,7 @@ import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import * as DLC_DEMONS from '../data/dlc-demons.json';
+import * as INHERITANCE_TYPES from '../data/inheritance-types.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -19,6 +20,7 @@ export class Compendium implements ICompendium {
   private allResults: { [race: string]: number[] };
   private _allDemons: Demon[];
   private _allSkills: Skill[];
+  private _inheritTypes: { [inherti: string]: boolean[] };
 
   constructor() {
     this.initImportedData();
@@ -32,6 +34,7 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const dlcDemons: { [name: string]: boolean } = {};
     const normalExceptions: { [name: string]: string } = {};
+    this._inheritTypes = {};
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = Object.assign({}, json, {
@@ -97,6 +100,11 @@ export class Compendium implements ICompendium {
 
     for (const dlcDemon of Object.values(DLC_DEMONS)) {
       dlcDemons[dlcDemon] = false;
+    }
+
+    for (let i = 0; i < INHERITANCE_TYPES['inherits'].length; i++) {
+      this._inheritTypes[INHERITANCE_TYPES['inherits'][i]] = INHERITANCE_TYPES['ratios'][i]
+        .split('').map(char => char === 'O');
     }
 
     this.demons = demons;
@@ -177,6 +185,10 @@ export class Compendium implements ICompendium {
       .map(name => this.demons[name]);
   }
 
+  get inheritHeaders(): string[] {
+    return INHERITANCE_TYPES['elems'];
+  }
+
   getDemon(name: string): Demon {
     return this.demons[name];
   }
@@ -219,6 +231,10 @@ export class Compendium implements ICompendium {
 
   getNormalException(name: string): string {
     return this.normalExceptions[name];
+  }
+
+  getInheritElems(inheritType: string): boolean[] {
+    return this._inheritTypes[inheritType];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

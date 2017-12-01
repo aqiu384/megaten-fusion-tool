@@ -102,16 +102,15 @@ export const InheritElements = [
 ];
 
 export const Ailments = [
-  'bom',
-  'cha',
-  'fea',
-  'mut',
-  'par',
-  'poi',
-  'rag',
-  'sle',
-  'sto',
-  'str'
+  'Poison',
+  'Panic',
+  'Stone',
+  'Strain',
+  'Sleep',
+  'Charm',
+  'Mute',
+  'Fear',
+  'Bomb'
 ];
 
 export const BaseStats = [

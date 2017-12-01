@@ -62,3 +62,14 @@ export class ReslvlToStringPipe implements PipeTransform {
     return 'fr';
   }
 }
+
+@Pipe({ name: 'roundInheritPercent' })
+export class RoundInheritPercentPipe implements PipeTransform {
+  transform(value: number): number {
+    if (value === 0) { return 0; }
+    if (value < 100) { return 50; }
+    if (value === 100) { return 100; }
+    if (value < 800) { return 500; }
+    return 1000;
+  }
+}

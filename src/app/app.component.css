@@ -110,6 +110,13 @@ td.resists.nu { color: lightgray; }
 td.resists.rp { color: cyan; }
 td.resists.ab { color: lime; }
 
+/* Affinity Percents */
+td.affinity0 { color: transparent; }
+td.affinity50 { color: orange; }
+td.affinity100 { color: lightgray; }
+td.affinity500 { color: cyan; }
+td.affinity1000 { color: lime; }
+
 /* Special Demon and Skill Rows */
 tbody tr.special td {
   background-color: darkgreen;

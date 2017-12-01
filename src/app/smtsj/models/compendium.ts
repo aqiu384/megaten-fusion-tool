@@ -66,7 +66,7 @@ export class Compendium implements ICompendium {
           stats: json.stats,
           resists: json.resists.split('').map(char => ResistCodes[char]),
           inherits: json.inherits.split('').map(char => char === 'o'),
-          ailments: Ailments.map(val => json.ailments && json.ailments.hasOwnProperty(val) ? json.ailments[val] : 100),
+          ailments: (json.ailments ? json.ailments : '---------').split('').map(char => ResistCodes[char]),
           skills: json.skills.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
           source: json.source.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
         });

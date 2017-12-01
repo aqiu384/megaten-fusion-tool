@@ -44,7 +44,8 @@ import {
   SkillLevelToShortStringPipe,
   ElementAffinityToStringPipe,
   LvlToNumberPipe,
-  ReslvlToStringPipe
+  ReslvlToStringPipe,
+  RoundInheritPercentPipe
 } from './pipes';
 
 @NgModule({
@@ -83,7 +84,8 @@ import {
     SkillLevelToShortStringPipe,
     ElementAffinityToStringPipe,
     LvlToNumberPipe,
-    ReslvlToStringPipe
+    ReslvlToStringPipe,
+    RoundInheritPercentPipe
   ],
   exports: [
     DemonStatsComponent,
@@ -111,7 +113,8 @@ import {
     SkillLevelToShortStringPipe,
     ElementAffinityToStringPipe,
     LvlToNumberPipe,
-    ReslvlToStringPipe
+    ReslvlToStringPipe,
+    RoundInheritPercentPipe
   ]
 })
 export class SharedCompendiumModule {

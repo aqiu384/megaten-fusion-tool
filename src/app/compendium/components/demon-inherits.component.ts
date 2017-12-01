@@ -18,9 +18,14 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
         </tr>
       </thead>
       <tbody>
-        <tr *ngIf="!hasLvls">
+        <tr *ngIf="!hasLvls && !hasChance">
           <td *ngFor="let inherit of inherits" [style.color]="inherit ? null : 'transparent'">
             {{ inherit ? 'yes' : 'no' }}
+          </td>
+        </tr>
+        <tr *ngIf="hasChance">
+          <td *ngFor="let affinity of inherits" class="affinity{{ affinity * 100 | roundInheritPercent }}">
+            {{ affinity * 100 }}%
           </td>
         </tr>
         <tr *ngIf="hasLvls">
@@ -35,6 +40,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 export class DemonInheritsComponent {
   @Input() inheritHeaders: string[] = [];
   @Input() inherits: number[] = [];
+  @Input() hasChance = false;
   @Input() hasIcons = true;
   @Input() hasLvls = false;
 }
