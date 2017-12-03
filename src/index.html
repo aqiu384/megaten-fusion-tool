@@ -10,7 +10,7 @@
   <script type="text/javascript">
     const l = window.location
     const csrParam = 'csr'
-    if (l.search.includes(csrParam)) {
+    if (l.search.indexOf(csrParam) !== -1) {
       const searchSegs = (l.search + '&').split(csrParam + '=')
       const pathEnd = searchSegs[1].indexOf('&')
       const pathParams = decodeURIComponent(searchSegs[1].substring(0, pathEnd))
