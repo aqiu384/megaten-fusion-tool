@@ -119,11 +119,11 @@ export const ElementDemons = [
 ];
 
 export const Ailments = [
-  'bind',
-  'panic',
-  'poison',
-  'sick',
-  'sleep'
+  'Bind',
+  'Panic',
+  'Poison',
+  'Sick',
+  'Sleep'
 ];
 
 export const RaceOrder = getEnumOrder(Races);

@@ -77,14 +77,21 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           [style.visibility]="'collapse'">
         </tfoot>
         <tbody>
-          <tr *ngIf="rowData.length === 0">
-            <td colspan="6">No fusions found!</td>
+          <tr *ngIf="!rowData.length">
+            <td colspan="7">No fusions found!</td>
           </tr>
-          <tr *ngFor="let data of rowData"
+          <tr *ngFor="let data of rowData.slice(0, currRow)"
             class="app-fusion-pair-table-row"
             [ngClass]="{ special: data.notes }"
             [data]="data"
             [baseUrl]="baseUrl">
+          </tr>
+          <tr *ngIf="currRow < rowData.length">
+            <th class="nav" colspan="7"
+              [style.height.em]="2"
+              (click)="currRow = currRow + incrRow">
+              Show next {{ incrRow }} out of {{ rowData.length - currRow }}
+            </th>
           </tr>
         </tbody>
       </table>
@@ -92,12 +99,16 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
   `
 })
 export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
-  @Input() title = 'Ingredient 1 x Ingredient 2 = Result';
+  private _title = 'Ingredient 1 x Ingredient 2 = Result';
+
   @Input() leftHeader = 'Ingredient 1';
   @Input() rightHeader = 'Ingredient 2';
   @Input() baseUrl = '../..';
+  @Input() initRow = 500;
+  @Input() incrRow = 500;
 
   sortFuns: ((f1: FusionPair, f2: FusionPair) => number)[] = [];
+  currRow = this.initRow;
 
   constructor(@Inject(COMPENDIUM_CONFIG) private config: CompendiumConfig) {
     super();
@@ -113,6 +124,16 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
       (f1, f2) => f1.name2.localeCompare(f2.name2)
     ];
   }
+
+  @Input() set title(title: string) {
+    this._title = title;
+    this.currRow = this.initRow;
+  }
+
+  get title(): string {
+    return this._title;
+  }
+
 
   getSortFun(sortFunIndex: number): (a: FusionPair, b: FusionPair) => number {
     return this.sortFuns[sortFunIndex];
