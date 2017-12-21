@@ -7,6 +7,7 @@ import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 export class FusionChart extends SmtFusionChart {
   lvlModifier = 1;
   elementDemons = ElementDemons;
+  races: string[];
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
@@ -27,5 +28,6 @@ export class FusionChart extends SmtFusionChart {
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+    this.races = races;
   }
 }

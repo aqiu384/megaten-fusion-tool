@@ -12,9 +12,21 @@ import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-tab
 
 import { TripleFissionTableComponent } from '../compendium/components/tri-fission-table.component';
 import { TripleFusionTableComponent } from '../compendium/components/tri-fusion-table.component';
+import { TripleFusionChartComponent } from '../compendium/components/tri-fusion-chart.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },
+  {
+    path: '',
+    component: CompendiumComponent,
+    data: { fusionTool: 'chart' },
+    children: [
+      {
+        path: 'chart',
+        component: TripleFusionChartComponent,
+      }
+    ]
+  },
   {
     path: '',
     component: CompendiumComponent,
@@ -57,7 +69,7 @@ const compendiumRoutes: Routes = [
       {
         path: 'settings',
         component: DemonDlcSettingsContainerComponent
-      },
+      }
     ]
   },
   {

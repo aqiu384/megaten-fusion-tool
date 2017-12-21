@@ -27,6 +27,7 @@ export class FusionChart extends SmtFusionChart {
 
   elementDemons = PrimeElements;
   includedSubapps: { [name: string]: boolean } = Object.assign({}, FusionChart.INCLUDED_SUBAPPS);
+  races: string[];
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
@@ -51,6 +52,7 @@ export class FusionChart extends SmtFusionChart {
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+    this.races = races;
 
     for (const [raceR, raceQ] of Object.entries(FusionChart.RACE_CONVERTERS)) {
       this.fissionChart[raceQ] = this.fissionChart[raceR];

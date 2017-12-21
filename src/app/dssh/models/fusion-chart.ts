@@ -7,8 +7,16 @@ import * as DARK_CHART_JSON from '../data/dark-chart.json';
 import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
+  static readonly DARK_RACES = SmtFusionChart.DARK_RACES.concat([ 'Undead', 'Foul' ]);
+  static readonly UNFUSABLE_RACES = [
+    'Enigma', 'Entity', 'Reaper', 'Zealot', 'UMA',
+    'Element', 'Mitama', 'Rumor', 'Hero', 'General',
+    'Zoma', 'Ranger'
+  ];
+
   elementDemons = ElementDemons;
   lvlModifier = 3;
+  races: string[];
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
@@ -49,6 +57,7 @@ export class FusionChart extends SmtFusionChart {
     const darkFissions = SmtFusionChart.loadFissionTableJson(darkRaces, this.elementDemons, darkTable);
     this.fissionChart = SmtFusionChart.mergeFissionTables(normFissions, darkFissions);
 
+    this.races = Races.filter(race => FusionChart.UNFUSABLE_RACES.indexOf(race) === -1);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
     this.lvlModifier = isTripleChart ? 4 : 3;
 
@@ -69,6 +78,16 @@ export class FusionChart extends SmtFusionChart {
 
     for (const raceR of [ 'Entity', 'Zealot' ]) {
       this.fissionChart[raceR] = entityFissions;
+    }
+  }
+
+  getLightDark(race: string): number {
+    if (SmtFusionChart.LIGHT_RACES.indexOf(race) !== -1) {
+      return 1;
+    } else if (FusionChart.DARK_RACES.indexOf(race) !== -1) {
+      return -1;
+    } else {
+      return 0;
     }
   }
 }

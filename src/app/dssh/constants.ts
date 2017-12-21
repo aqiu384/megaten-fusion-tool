@@ -93,7 +93,7 @@ export const BaseStats = [
 ];
 
 export const ElementDemons = [
-  'Gnome', 'Sylph', 'Sylph (N)', 'Undine', 'Salamander'
+  'Gnome', 'Sylph', 'Undine', 'Salamander'
 ];
 
 export const RaceOrder = getEnumOrder(Races);

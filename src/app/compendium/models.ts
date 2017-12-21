@@ -145,9 +145,12 @@ export interface ElemModifiers { [modifier: number]: string[]; }
 export interface FusionChart {
   lvlModifier: number;
   elementDemons: string[];
+  races: string[];
 
+  getLightDark(race: string): number;
   getRaceFissions(race: string): FissionRow;
   getRaceFusions(race: string): FusionRow;
+  getRaceFusion(raceA: string, raceB: string): string;
   getElemModifiers(race: string): ElemModifiers;
   getElemFusions(elem: string): ElementRow;
   isConvertedRace(race: string): boolean;

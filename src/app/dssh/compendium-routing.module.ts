@@ -5,6 +5,7 @@ import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
+import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
@@ -15,6 +16,17 @@ import { TripleFusionTableComponent } from '../compendium/components/tri-fusion-
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'demons', pathMatch: 'full' },
+  {
+    path: '',
+    component: CompendiumComponent,
+    data: { fusionTool: 'chart' },
+    children: [
+      {
+        path: 'chart',
+        component: FusionChartContainerComponent,
+      }
+    ]
+  },
   {
     path: '',
     component: CompendiumComponent,

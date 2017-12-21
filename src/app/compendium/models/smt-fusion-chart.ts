@@ -10,10 +10,26 @@ import {
 } from '../models';
 
 export abstract class SmtFusionChart implements FusionChart {
+  static readonly LIGHT_RACES = [
+    'Herald', 'Megami', 'Avian', 'Tree',
+    'Deity', 'Avatar', 'Holy', 'Genma',
+    'Fury', 'Lady', 'Dragon', 'Kishin',
+    'Enigma', 'Geist', 'Entity',
+    'Amatsu', 'Kunitsu', 'Godly', 'Chaos'
+  ];
+
+  static readonly DARK_RACES = [
+    'Vile', 'Raptor', 'Wood',
+    'Reaper', 'Wilder', 'Jaki', 'Vermin',
+    'Tyrant', 'Drake', 'Spirit',
+    'Haunt', 'Ghost', 'Zealot'
+  ];
+
   protected abstract fissionChart: FissionTable;
   protected abstract fusionChart: FusionTable;
   protected abstract elementChart: ElementTable;
 
+  abstract races: string[];
   abstract lvlModifier: number;
   abstract elementDemons: string[];
 
@@ -134,6 +150,16 @@ export abstract class SmtFusionChart implements FusionChart {
     return table;
   }
 
+  getLightDark(race: string): number {
+    if (SmtFusionChart.LIGHT_RACES.indexOf(race) !== -1) {
+      return 1;
+    } else if (SmtFusionChart.DARK_RACES.indexOf(race) !== -1) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+
   getRaceFissions(race: string): FissionRow {
     return this.fissionChart[race] || {};
   }
@@ -143,7 +169,7 @@ export abstract class SmtFusionChart implements FusionChart {
   }
 
   getRaceFusion(raceA: string, raceB: string): string {
-    return this.fusionChart[raceA][raceB];
+    return this.getRaceFusions(raceA)[raceB] || '';
   }
 
   getElemModifiers(race: string): ElemModifiers {

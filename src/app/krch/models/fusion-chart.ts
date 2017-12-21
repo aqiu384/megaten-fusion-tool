@@ -5,6 +5,7 @@ import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
 
 export class FusionChart extends SmtFusionChart {
+  races: string[];
   elementDemons = [];
   lvlModifier = 3;
 
@@ -21,6 +22,7 @@ export class FusionChart extends SmtFusionChart {
     const races: string[] = FUSION_CHART_JSON['races'];
     const table: string[][] = FUSION_CHART_JSON['table'];
 
+    this.races = races;
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, [], table);
     this.elementChart = {};
@@ -28,6 +30,10 @@ export class FusionChart extends SmtFusionChart {
     for (const race of Races) {
       this.elementChart[race] = {};
     }
+  }
+
+  getLightDark(race: string): number {
+    return 0;
   }
 
   getRaceFusions(race: string): FusionRow {

@@ -19,6 +19,7 @@ import {
   DemonEntryContainerComponent
 } from './components/demon-entry.component';
 
+import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 
 import { CompendiumComponent } from './components/compendium.component';
@@ -47,7 +48,8 @@ const compendiumConfig: CompendiumConfig = {
     DemonEntryContainerComponent,
     DemonListContainerComponent,
     SkillListContainerComponent,
-    DemonDlcSettingsContainerComponent
+    DemonDlcSettingsContainerComponent,
+    FusionChartContainerComponent
   ],
   providers: [
     Title,

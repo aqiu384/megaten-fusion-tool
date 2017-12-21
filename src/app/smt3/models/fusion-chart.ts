@@ -12,6 +12,7 @@ export class FusionChart extends SmtFusionChart {
   };
 
   lvlModifier = 1;
+  races: string[];
   elementDemons = ElementDemons;
   chartSettings: { [name: string]: boolean } = Object.assign({}, FusionChart.CHART_SETTINGS);
 
@@ -54,6 +55,8 @@ export class FusionChart extends SmtFusionChart {
     const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
     const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
+    this.races = normRaces;
+
     this.normalFusionChart = SmtFusionChart.loadFusionTableJson(normRaces, normTable);
     this.normalFissionChart = SmtFusionChart.loadFissionTableJson(normRaces, elems, normTable);
     this.normalElementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
@@ -67,5 +70,9 @@ export class FusionChart extends SmtFusionChart {
         row[elem] *= -1;
       }
     }
+  }
+
+  getLightDark(race: string): number {
+    return 0;
   }
 }

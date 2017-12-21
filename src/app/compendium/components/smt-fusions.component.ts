@@ -21,6 +21,11 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
               </div>
             </th>
           </tr>
+          <tr *ngIf="excludedDlc">
+            <th [attr.colspan]="fusionOptions.length">
+              DLC marked as excluded in fusion settings, results may be inaccurate!
+            </th>
+          <tr>
           <tr *ngIf="showFusionAlert">
             <th [attr.colspan]="fusionOptions.length"><ng-content></ng-content></th>
           <tr>
@@ -46,6 +51,7 @@ export class SmtFusionsComponent implements OnInit, OnChanges {
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
   @Input() hasTripleFusion = false;
   @Input() showFusionAlert = false;
+  @Input() excludedDlc = false;
   fusionOptions = SmtFusionsComponent.NORMAL_FUSIONS;
 
   ngOnInit() {

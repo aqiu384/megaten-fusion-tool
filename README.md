@@ -6,6 +6,7 @@ Fusion tool framework for Megami Tensei games.
 
 * 100% Compendium Table
 * Skill Table
+* Fusion Table
 * Individual Demon/Persona Entry
 * Normal Reverse Fusion Calculator
 * Normal Forward Fusion Calculator

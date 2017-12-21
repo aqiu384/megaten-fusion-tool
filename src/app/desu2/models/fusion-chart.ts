@@ -9,8 +9,10 @@ export class FusionChart extends SmtFusionChart {
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
+
   elementDemons = ElementDemons;
   lvlModifier = 1;
+  races: string[];
 
   constructor() {
     super();
@@ -24,8 +26,13 @@ export class FusionChart extends SmtFusionChart {
     const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
     const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
+    this.races = races;
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+  }
+
+  getLightDark(race: string): number {
+    return 0;
   }
 }

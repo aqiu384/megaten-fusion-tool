@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 
 import { FusionEntryTableComponent } from './components/fusion-entry-table.component';
+import { FusionChartComponent } from './components/fusion-chart.component';
 
 import { DemonListHeaderComponent } from './components/demon-list-header.component';
 import { SkillListHeaderComponent } from './components/skill-list-header.component';
@@ -17,7 +18,7 @@ import { DemonDlcSettingsComponent } from './components/demon-dlc-settings.compo
 import { SmtDemonListComponent, SmtDemonListRowComponent } from './components/smt-demon-list.component';
 import { SmtSkillListComponent, SmtSkillListRowComponent } from './components/smt-skill-list.component';
 
-import { CompendiumComponent } from './components/compendium.component';
+import { CompendiumComponent, CompendiumHeaderComponent } from './components/compendium.component';
 import { SmtFusionsComponent } from './components/smt-fusions.component';
 
 import { CurrentDemonService } from './current-demon.service';
@@ -32,6 +33,7 @@ import {
 
 import { TripleFissionTableComponent } from './components/tri-fission-table.component';
 import { TripleFusionTableComponent } from './components/tri-fusion-table.component';
+import { TripleFusionChartComponent } from './components/tri-fusion-chart.component';
 import {
   FusionTrioTableComponent,
   FusionTrioTableHeaderComponent,
@@ -67,7 +69,9 @@ import {
     SmtSkillListComponent,
     SmtSkillListRowComponent,
     FusionEntryTableComponent,
+    FusionChartComponent,
     CompendiumComponent,
+    CompendiumHeaderComponent,
     SmtFusionsComponent,
     FusionPairTableHeaderComponent,
     FusionPairTableRowComponent,
@@ -79,6 +83,7 @@ import {
     FusionTrioTableComponent,
     TripleFissionTableComponent,
     TripleFusionTableComponent,
+    TripleFusionChartComponent,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     SkillLevelToShortStringPipe,
@@ -100,7 +105,9 @@ import {
     SmtSkillListComponent,
     SmtSkillListRowComponent,
     FusionEntryTableComponent,
+    FusionChartComponent,
     CompendiumComponent,
+    CompendiumHeaderComponent,
     SmtFusionsComponent,
     FusionPairTableComponent,
     SmtFissionTableComponent,
@@ -108,6 +115,7 @@ import {
     FusionTrioTableComponent,
     TripleFissionTableComponent,
     TripleFusionTableComponent,
+    TripleFusionChartComponent,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     SkillLevelToShortStringPipe,

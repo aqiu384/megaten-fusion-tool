@@ -46,7 +46,9 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="compendium.getInheritSkills(demon.inherit)">
       </app-demon-skills>
-      <app-smt-fusions [hasTripleFusion]="true">
+      <app-smt-fusions
+        [hasTripleFusion]="true"
+        [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">

@@ -4,7 +4,7 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
 
 @Component({
   template: `
-    <table>
+    <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1000px' }">
       <thead>
         <tr>
           <th colspan="2">Data Sources</th>
