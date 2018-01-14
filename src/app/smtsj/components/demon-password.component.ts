@@ -13,7 +13,9 @@ import { PasswordGeneratorComponent } from './password-generator.component';
     </form>
   `,
   styles: [`
-    textarea { width: 98.5%; }
+    textarea { width: 98%; border-width: 3px; }
+    textarea.ng-valid { border-color: lime; }
+    textarea.ng-invalid { border-color: red; }
   `]
 })
 export class DemonPasswordComponent {
@@ -22,8 +24,8 @@ export class DemonPasswordComponent {
   form: FormGroup;
   engRegex = new RegExp(['^([', PasswordEncodings.engChars, ']){32}$'].join(''));
   passwordRegex = new RegExp([
-    '^(\\s*)([', PasswordEncodings.jap, PasswordEncodings.engChars, ']){16}',
-    '(\\s*)([', PasswordEncodings.jap, PasswordEncodings.engChars, ']){16}(\\s*)$'
+    '^(\\s*)([', PasswordEncodings.jap, ']{16}|[', PasswordEncodings.jen, ']{16}|[', PasswordEncodings.engChars, ']{16})',
+    '(\\s*)([', PasswordEncodings.jap, ']{16}|[', PasswordEncodings.jen, ']{16}|[', PasswordEncodings.engChars, ']{16})(\\s*)$'
   ].join(''));
 
   engBase64: { [char: string]: number; };
@@ -48,6 +50,8 @@ export class DemonPasswordComponent {
         if (this.engRegex.test(password)) {
           this.passwordBytes.emit(password.split('').map(c => this.engBase64[c]));
         } else {
+          console.log(password.split(''));
+          console.log(password.split('').map(c => this.japBase64[c]));
           this.passwordBytes.emit(password.split('').map(c => this.japBase64[c]));
         }
       }
