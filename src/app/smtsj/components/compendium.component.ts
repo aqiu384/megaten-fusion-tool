@@ -8,7 +8,10 @@ import {
   selector: 'app-smtsj-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-compendium [ngClass]="'smtsj'"></app-demon-compendium>
+    <app-demon-compendium
+      [ngClass]="'smtsj'"
+      [otherLinks]="[{ title: 'Password Generator', link: 'passwords' }]">
+    </app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None

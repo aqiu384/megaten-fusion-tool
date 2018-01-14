@@ -105,11 +105,13 @@ export class Compendium implements ICompendium {
       const recipe: SpecialRecipe = {};
       const { cond: prereq, spec: ingreds, pair: pairs } = recipeJson;
 
-      this.specialRecipes[name] = recipe;
+      if (prereq || !ingreds || pairs) {
+        this.specialRecipes[name] = recipe;
+      }
 
       if (prereq) {
         this.demons[name].prereq = prereq;
-      } if (ingreds) {
+      } if (prereq && ingreds) {
         this.demons[name].fusion = 'special';
         recipe.ingreds = ingreds;
       } if (pairs) {

@@ -9,32 +9,38 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
   selector: 'app-demon-compendium-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1000px' }">
+    <table *ngIf="3 + otherLinks.length + (hasSettings ? 1 : 0); let hlength"
+      [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1000px' }">
       <thead>
         <tr>
-          <th class="nav" [attr.colspan]="hasSettings ? 4 : 3">
+          <th class="nav" [attr.colspan]="hlength">
             <div><a routerLink="{{ mainList }}s">{{ appName }} Fusion Tool</a></div>
           </th>
         </tr>
         <tr>
           <th class="nav" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
-            [style.width.%]="hasSettings ? 25 : 33.333">
+            [style.width.%]="1 / hlength">
             <div><a routerLink="{{ mainList }}s">
               {{ mainList.charAt(0).toUpperCase() + mainList.slice(1) }} List
             </a></div>
           </th>
-          <th class="nav" routerLinkActive="active" [style.width.%]="hasSettings ? 25 : 33.333">
+          <th class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
             <div><a routerLink="skills">
               Skill List
             </a></div>
           </th>
-          <th class="nav" routerLinkActive="active" [style.width.%]="hasSettings ? 25 : 33.333">
+          <th class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
             <div><a routerLink="chart">
               Fusion Chart
             </a></div>
           </th>
-          <th *ngIf="hasSettings" class="nav" routerLinkActive="active" [style.width.%]="25">
+          <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
+            <div><a routerLink="{{ l.link }}">
+              {{ l.title }}
+            </a></div>
+          </th>
+          <th *ngIf="hasSettings" class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
             <div><a routerLink="settings">
               Fusion Settings
             </a></div>
@@ -48,6 +54,7 @@ export class CompendiumHeaderComponent {
   @Input() appName = 'Shin Megami Tensei';
   @Input() mainList = 'demon';
   @Input() hasSettings = true;
+  @Input() otherLinks: { title: string; link: string }[] = [];
 }
 
 
@@ -61,14 +68,16 @@ export class CompendiumHeaderComponent {
         <app-demon-compendium-header appPositionSticky
           [appName]="appName"
           [mainList]="mainList"
-          [hasSettings]="hasSettings">
+          [hasSettings]="hasSettings"
+          [otherLinks]="otherLinks">
         </app-demon-compendium-header>
       </div>
       <div *ngIf="isChart">
         <app-demon-compendium-header appPositionSticky
           [appName]="appName"
           [mainList]="mainList"
-          [hasSettings]="hasSettings">
+          [hasSettings]="hasSettings"
+          [otherLinks]="otherLinks">
         </app-demon-compendium-header>
       </div>
       <router-outlet></router-outlet>
@@ -83,6 +92,7 @@ export class CompendiumComponent implements OnInit, OnDestroy {
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
   @Input() mainList = 'demon';
   @Input() hasSettings = true;
+  @Input() otherLinks: { title: string; link: string }[] = [];
 
   constructor(private route: ActivatedRoute) { }
 

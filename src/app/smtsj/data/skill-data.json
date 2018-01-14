@@ -1,5 +1,6 @@
 {
   "Acid Breath": {
+    "code": 135,
     "cost": 1030,
     "effect": "-2 defense to all foes",
     "element": "sup",
@@ -7,6 +8,7 @@
   },
   "Agi": {
     "accuracy": 120,
+    "code": 1,
     "cost": 1003,
     "effect": "Light fire damage to one foe",
     "element": "fir",
@@ -15,6 +17,7 @@
   },
   "Agidyne": {
     "accuracy": 120,
+    "code": 3,
     "cost": 1010,
     "effect": "Heavy fire damage to one foe",
     "element": "fir",
@@ -23,6 +26,7 @@
   },
   "Agilao": {
     "accuracy": 120,
+    "code": 2,
     "cost": 1006,
     "effect": "Moderate fire damage to one foe",
     "element": "fir",
@@ -31,6 +35,7 @@
   },
   "Airshot": {
     "accuracy": 120,
+    "code": 231,
     "cost": 1015,
     "effect": "Light gun damage to all foes",
     "element": "gun",
@@ -39,6 +44,7 @@
   },
   "Ambush": {
     "accuracy": 130,
+    "code": 173,
     "cost": 1007,
     "effect": "Moderate physical damage to one foe; damage increases on surprise attack",
     "element": "phy",
@@ -46,6 +52,7 @@
     "rank": 6
   },
   "Amrita": {
+    "code": 117,
     "cost": 1020,
     "effect": "Heal one ally's ailment",
     "element": "rec",
@@ -53,6 +60,7 @@
   },
   "Armshot": {
     "accuracy": 120,
+    "code": 243,
     "cost": 1016,
     "effect": "Moderate gun damage to one foe; -1 attack",
     "element": "gun",
@@ -61,6 +69,7 @@
   },
   "Arrow Rain": {
     "accuracy": 130,
+    "code": 185,
     "cost": 1014,
     "effect": "Light gun damage to all foes",
     "element": "gun",
@@ -69,6 +78,7 @@
   },
   "Axel Claw": {
     "accuracy": 130,
+    "code": 167,
     "cost": 1014,
     "effect": "Light physical damage to all foes",
     "element": "phy",
@@ -77,6 +87,7 @@
   },
   "Babylon Goblet": {
     "accuracy": 120,
+    "code": 42,
     "cost": 1065,
     "effect": "Huge almighty damage to all foes; 25% charm",
     "element": "alm",
@@ -86,6 +97,7 @@
   },
   "Berserker God": {
     "accuracy": 130,
+    "code": 159,
     "cost": 1011,
     "effect": "Heavy physical damage to one foe",
     "element": "phy",
@@ -94,6 +106,7 @@
   },
   "Big Bang": {
     "accuracy": 120,
+    "code": 40,
     "cost": 1070,
     "effect": "Huge almighty damage to all foes",
     "element": "alm",
@@ -101,6 +114,7 @@
     "rank": 13
   },
   "Binding Cry": {
+    "code": 68,
     "cost": 1013,
     "effect": "45% paralyze on all foes",
     "element": "ail",
@@ -108,6 +122,7 @@
   },
   "Blight": {
     "accuracy": 130,
+    "code": 176,
     "cost": 1012,
     "effect": "Moderate physical damage to all foes; 60% poison",
     "element": "phy",
@@ -115,18 +130,21 @@
     "rank": 7
   },
   "Blood Ritual": {
+    "code": 144,
     "cost": 1025,
     "effect": "+4 attack, defense, agility/ accuracy on self; lowers hp to 1",
     "element": "sup",
     "rank": 10
   },
   "Bobasma": {
+    "code": 73,
     "cost": 1004,
     "effect": "80% fear on one foe",
     "element": "ail",
     "rank": 1
   },
   "Bomdi": {
+    "code": 116,
     "cost": 1005,
     "effect": "Heal one ally's bomb",
     "element": "rec",
@@ -134,6 +152,7 @@
   },
   "Breath": {
     "accuracy": 120,
+    "code": 342,
     "cost": 1020,
     "effect": "Light ice damage to random foes x 1-5 hits",
     "element": "ice",
@@ -142,6 +161,7 @@
   },
   "Bufu": {
     "accuracy": 120,
+    "code": 10,
     "cost": 1003,
     "effect": "Light ice damage to one foe",
     "element": "ice",
@@ -150,6 +170,7 @@
   },
   "Bufudyne": {
     "accuracy": 120,
+    "code": 12,
     "cost": 1010,
     "effect": "Heavy ice damage to one foe",
     "element": "ice",
@@ -158,6 +179,7 @@
   },
   "Bufula": {
     "accuracy": 120,
+    "code": 11,
     "cost": 1006,
     "effect": "Moderate ice damage to one foe",
     "element": "ice",
@@ -165,12 +187,14 @@
     "rank": 4
   },
   "Chakra Walk": {
+    "code": 397,
     "effect": "While summoned, heal 5 mp every 10 steps",
     "element": "pas",
     "inherit": "spe",
     "rank": 8
   },
   "Charge": {
+    "code": 142,
     "cost": 1005,
     "effect": "Physical attack more than doubles on next turn",
     "element": "sup",
@@ -178,6 +202,7 @@
   },
   "Charm Strike": {
     "accuracy": 130,
+    "code": 190,
     "cost": 1009,
     "effect": "Moderate gun damage to one foe; 60% charm",
     "element": "gun",
@@ -185,6 +210,7 @@
     "rank": 4
   },
   "Charmdi": {
+    "code": 112,
     "cost": 1005,
     "effect": "Heal one ally's charm",
     "element": "rec",
@@ -192,6 +218,7 @@
   },
   "Charming Bolt": {
     "accuracy": 120,
+    "code": 27,
     "cost": 1065,
     "effect": "Light electric damage to all foes; 25% charm",
     "element": "ele",
@@ -200,6 +227,7 @@
   },
   "Cold World": {
     "accuracy": 120,
+    "code": 18,
     "cost": 1065,
     "effect": "Moderate ice damage to all foes; 15% death",
     "element": "ice",
@@ -207,12 +235,14 @@
     "rank": 13
   },
   "Concentrate": {
+    "code": 143,
     "cost": 1007,
     "effect": "Magic attack more than doubles on next turn",
     "element": "sup",
     "rank": 7
   },
   "Counter": {
+    "code": 391,
     "effect": "30% counter when hit with a physical attack",
     "element": "pas",
     "inherit": "spe",
@@ -220,6 +250,7 @@
   },
   "Crescent Slice": {
     "accuracy": 130,
+    "code": 157,
     "cost": 1004,
     "effect": "Moderate physical damage to one foe",
     "element": "phy",
@@ -228,6 +259,7 @@
   },
   "Cripple": {
     "accuracy": 120,
+    "code": 242,
     "cost": 1016,
     "effect": "Moderate gun damage to one foe; -1 defense",
     "element": "gun",
@@ -236,6 +268,7 @@
   },
   "Deathbound": {
     "accuracy": 130,
+    "code": 161,
     "cost": 1020,
     "effect": "Moderate physical damage to all foes",
     "element": "phy",
@@ -243,18 +276,21 @@
     "rank": 5
   },
   "Debilitate": {
+    "code": 129,
     "cost": 1050,
     "effect": "-1 attack, defense, agility/ accuracy to all foes",
     "element": "sup",
     "rank": 8
   },
   "Dekaja": {
+    "code": 125,
     "cost": 1010,
     "effect": "Cancel all foes' stat increases",
     "element": "sup",
     "rank": 6
   },
   "Dekunda": {
+    "code": 130,
     "cost": 1010,
     "effect": "Cancel all allies' stat reductions",
     "element": "sup",
@@ -262,6 +298,7 @@
   },
   "Desperate Hit": {
     "accuracy": 120,
+    "code": 341,
     "cost": 1040,
     "effect": "Light almighty damage to random foes x 1-5 hits",
     "element": "alm",
@@ -270,6 +307,7 @@
     "rank": 14
   },
   "Dia": {
+    "code": 101,
     "cost": 1003,
     "effect": "Small heal on one ally",
     "element": "rec",
@@ -277,12 +315,14 @@
     "rank": 1
   },
   "Diarahan": {
+    "code": 103,
     "cost": 1015,
     "effect": "Full heal on one ally",
     "element": "rec",
     "rank": 9
   },
   "Diarama": {
+    "code": 102,
     "cost": 1007,
     "effect": "Large heal on one ally",
     "element": "rec",
@@ -290,48 +330,56 @@
     "rank": 5
   },
   "Die For Me!": {
+    "code": 57,
     "cost": 1045,
     "effect": "80% curse-based death to all foes",
     "element": "cur",
     "rank": 11
   },
   "Dormina": {
+    "code": 63,
     "cost": 1004,
     "effect": "80% sleep on one foe",
     "element": "ail",
     "rank": 1
   },
   "Drain Elec": {
+    "code": 370,
     "effect": "Absorb damage of electric skills",
     "element": "pas",
     "inherit": "ele",
     "rank": 12
   },
   "Drain Fire": {
+    "code": 362,
     "effect": "Absorb damage of fire skills",
     "element": "pas",
     "inherit": "fir",
     "rank": 12
   },
   "Drain Gun": {
+    "code": 358,
     "effect": "Absorb damage of gun skills",
     "element": "pas",
     "inherit": "gun",
     "rank": 13
   },
   "Drain Ice": {
+    "code": 366,
     "effect": "Absorb damage of ice skills",
     "element": "pas",
     "inherit": "ice",
     "rank": 12
   },
   "Drain Phys": {
+    "code": 354,
     "effect": "Absorb damage of physical skills",
     "element": "pas",
     "inherit": "phy",
     "rank": 13
   },
   "Drain Wind": {
+    "code": 374,
     "effect": "Absorb damage of wind skills",
     "element": "pas",
     "inherit": "win",
@@ -339,6 +387,7 @@
   },
   "Dream Fist": {
     "accuracy": 130,
+    "code": 170,
     "cost": 1007,
     "effect": "Moderate physical damage to one foe; 60% sleep",
     "element": "phy",
@@ -347,6 +396,7 @@
   },
   "Dream Needle": {
     "accuracy": 130,
+    "code": 187,
     "cost": 1007,
     "effect": "Moderate gun damage to one foe; 60% sleep",
     "element": "gun",
@@ -354,24 +404,28 @@
     "rank": 2
   },
   "Elec Amp": {
+    "code": 386,
     "effect": "Electric skills are 1.5x more effective",
     "element": "pas",
     "inherit": "ele",
     "rank": 10
   },
   "Elec Boost": {
+    "code": 385,
     "effect": "Electric skills are 1.25x more effective",
     "element": "pas",
     "inherit": "ele",
     "rank": 5
   },
   "Endure": {
+    "code": 389,
     "effect": "When killed, revive with 1 hp once",
     "element": "pas",
     "inherit": "spe",
     "rank": 9
   },
   "Enduring Soul": {
+    "code": 390,
     "effect": "When killed, revive fully once",
     "element": "pas",
     "inherit": "spe",
@@ -379,6 +433,7 @@
   },
   "Energy Drain": {
     "accuracy": 120,
+    "code": 50,
     "cost": 1004,
     "effect": "Absorb a small amount of hp and mp from one foe",
     "element": "alm",
@@ -387,6 +442,7 @@
     "rank": 11
   },
   "Eternal Rest": {
+    "code": 52,
     "cost": 1015,
     "effect": "Death to all sleeping foes and allies",
     "element": "alm",
@@ -395,6 +451,7 @@
   },
   "Explosive Fist": {
     "accuracy": 130,
+    "code": 152,
     "cost": 1008,
     "effect": "Heavy physical damage to one foe",
     "element": "phy",
@@ -403,6 +460,7 @@
   },
   "Fang Breaker": {
     "accuracy": 130,
+    "code": 169,
     "cost": 1010,
     "effect": "Moderate physical damage to one foe; -1 attack",
     "element": "phy",
@@ -411,6 +469,7 @@
   },
   "Feral Claw": {
     "accuracy": 130,
+    "code": 163,
     "cost": 1003,
     "effect": "Moderate physical damage to one foe",
     "element": "phy",
@@ -418,12 +477,14 @@
     "rank": 1
   },
   "Fire Amp": {
+    "code": 382,
     "effect": "Fire skills are 1.5x more effective",
     "element": "pas",
     "inherit": "fir",
     "rank": 10
   },
   "Fire Boost": {
+    "code": 381,
     "effect": "Fire skills are 1.25x more effective",
     "element": "pas",
     "inherit": "fir",
@@ -431,6 +492,7 @@
   },
   "Fire Breath": {
     "accuracy": 120,
+    "code": 7,
     "cost": 1019,
     "effect": "Light fire damage to random foes x 1-4 hits",
     "element": "fir",
@@ -439,6 +501,7 @@
   },
   "Fleeting Rain": {
     "accuracy": 130,
+    "code": 192,
     "cost": 1030,
     "effect": "Moderate gun damage to random foes x 2-4 hits",
     "element": "gun",
@@ -447,6 +510,7 @@
   },
   "Floral Gust": {
     "accuracy": 120,
+    "code": 36,
     "cost": 1065,
     "effect": "Moderate wind damage to all foes; 35% mute",
     "element": "win",
@@ -454,12 +518,14 @@
     "rank": 13
   },
   "Fog Breath": {
+    "code": 134,
     "cost": 1030,
     "effect": "-2 agility/accuracy to all foes",
     "element": "sup",
     "rank": 7
   },
   "Frolic": {
+    "code": 70,
     "cost": 1013,
     "effect": "70% charm on all foes",
     "element": "ail",
@@ -467,6 +533,7 @@
   },
   "Garu": {
     "accuracy": 120,
+    "code": 28,
     "cost": 1003,
     "effect": "Light wind damage to one foe",
     "element": "win",
@@ -475,6 +542,7 @@
   },
   "Garudyne": {
     "accuracy": 120,
+    "code": 30,
     "cost": 1010,
     "effect": "Heavy wind damage to one foe",
     "element": "win",
@@ -483,6 +551,7 @@
   },
   "Garula": {
     "accuracy": 120,
+    "code": 29,
     "cost": 1006,
     "effect": "Moderate wind damage to one foe",
     "element": "win",
@@ -491,6 +560,7 @@
   },
   "Getsu-ei": {
     "accuracy": 130,
+    "code": 174,
     "cost": 1009,
     "effect": "Heavy physical damage to one foe; 1.5x damage on full moon",
     "element": "phy",
@@ -499,6 +569,7 @@
   },
   "Giant Slice": {
     "accuracy": 130,
+    "code": 166,
     "cost": 1008,
     "effect": "Light physical damage to all foes",
     "element": "phy",
@@ -507,6 +578,7 @@
   },
   "Glacial Blast": {
     "accuracy": 120,
+    "code": 17,
     "cost": 1020,
     "effect": "Light ice damage to random foes x 1-4 hits",
     "element": "ice",
@@ -515,6 +587,7 @@
   },
   "Grand Tack": {
     "accuracy": 130,
+    "code": 182,
     "cost": 1010,
     "effect": "Huge gun damage to one foe",
     "element": "gun",
@@ -522,12 +595,14 @@
     "rank": 7
   },
   "Gun Amp": {
+    "code": 403,
     "effect": "Gun skills are 1.5x more effective",
     "element": "pas",
     "inherit": "gun",
     "rank": 11
   },
   "Gun Boost": {
+    "code": 411,
     "effect": "Gun skills are 1.25x more effective",
     "element": "pas",
     "inherit": "gun",
@@ -535,6 +610,7 @@
   },
   "Hades Blast": {
     "accuracy": 130,
+    "code": 162,
     "cost": 1032,
     "effect": "Moderate physical damage to all foes",
     "element": "phy",
@@ -542,12 +618,14 @@
     "rank": 9
   },
   "Hama": {
+    "code": 58,
     "cost": 1006,
     "effect": "30% expel-based death to one foe",
     "element": "exp",
     "rank": 2
   },
   "Hamaon": {
+    "code": 59,
     "cost": 1010,
     "effect": "55% expel-based death to one foe",
     "element": "exp",
@@ -555,6 +633,7 @@
   },
   "Headshot": {
     "accuracy": 120,
+    "code": 240,
     "cost": 1020,
     "effect": "Moderate gun damage to one foe; 50% death",
     "element": "gun",
@@ -563,6 +642,7 @@
   },
   "Heat Wave": {
     "accuracy": 130,
+    "code": 160,
     "cost": 1010,
     "effect": "Light physical damage to all foes",
     "element": "phy",
@@ -571,6 +651,7 @@
   },
   "Heaven's Bow": {
     "accuracy": 130,
+    "code": 186,
     "cost": 1024,
     "effect": "Moderate gun damage to all foes",
     "element": "gun",
@@ -579,6 +660,7 @@
   },
   "Hell Thrust": {
     "accuracy": 130,
+    "code": 181,
     "cost": 1006,
     "effect": "Moderate gun damage to one foe",
     "element": "gun",
@@ -587,6 +669,7 @@
   },
   "Holy Wrath": {
     "accuracy": 120,
+    "code": 43,
     "cost": 1045,
     "effect": "Heavy almighty damage to all foes and allies; 2x damage to chaos targets",
     "element": "alm",
@@ -594,6 +677,7 @@
     "rank": 8
   },
   "Horn of Fate": {
+    "code": 51,
     "cost": 1025,
     "effect": "Expel or curse-based death to all foes (90%) or all allies (10%)",
     "element": "alm",
@@ -601,18 +685,21 @@
     "rank": 7
   },
   "Hostile Terror": {
+    "code": 82,
     "cost": 1040,
     "effect": "70% random ailment on all foes (except death, bomb, strain)",
     "element": "ail",
     "rank": 12
   },
   "Ice Amp": {
+    "code": 384,
     "effect": "Ice skills are 1.5x more effective",
     "element": "pas",
     "inherit": "ice",
     "rank": 10
   },
   "Ice Boost": {
+    "code": 383,
     "effect": "Ice skills are 1.25x more effective",
     "element": "pas",
     "inherit": "ice",
@@ -620,6 +707,7 @@
   },
   "Ice Breath": {
     "accuracy": 120,
+    "code": 16,
     "cost": 1019,
     "effect": "Light ice damage to random foes x 1-4 hits",
     "element": "ice",
@@ -627,6 +715,7 @@
     "rank": 4
   },
   "Invitation": {
+    "code": 147,
     "cost": 1040,
     "effect": "Revive one ally with full hp and summon from stock",
     "element": "rec",
@@ -634,6 +723,7 @@
   },
   "Iron Judgment": {
     "accuracy": 120,
+    "code": 340,
     "cost": 1006,
     "effect": "Moderate physical damage to one foe",
     "element": "phy",
@@ -642,6 +732,7 @@
   },
   "Jihad": {
     "accuracy": 120,
+    "code": 41,
     "cost": 1080,
     "effect": "Huge almighty damage to all foes; -1 attack, defense, agility/accuracy",
     "element": "alm",
@@ -650,6 +741,7 @@
   },
   "Judgement": {
     "accuracy": 120,
+    "code": 44,
     "cost": 1045,
     "effect": "Heavy almighty damage to all foes and allies; 2x damage to neutral targets",
     "element": "alm",
@@ -657,6 +749,7 @@
     "rank": 8
   },
   "Judgment Light": {
+    "code": 62,
     "cost": 1045,
     "effect": "80% expel-based death to all foes",
     "element": "exp",
@@ -664,6 +757,7 @@
   },
   "Kamikaze": {
     "accuracy": 120,
+    "code": 46,
     "cost": 1003,
     "effect": "Heavy almighty damage to one foe; sacrifices self",
     "element": "alm",
@@ -672,6 +766,7 @@
   },
   "Killing Wind": {
     "accuracy": 120,
+    "code": 35,
     "cost": 1020,
     "effect": "Huge wind damage to one foe",
     "element": "win",
@@ -679,6 +774,7 @@
     "rank": 11
   },
   "Laplace Curse": {
+    "code": 401,
     "effect": "-1 attack, defense, agility /accuracy to all foes analyzed 100%",
     "element": "pas",
     "inherit": "sup",
@@ -686,6 +782,7 @@
   },
   "Last Resort": {
     "accuracy": 120,
+    "code": 47,
     "cost": 1004,
     "effect": "Heavy almighty damage to all foes; sacrifices self",
     "element": "alm",
@@ -694,6 +791,7 @@
   },
   "Legshot": {
     "accuracy": 120,
+    "code": 241,
     "cost": 1016,
     "effect": "Moderate gun damage to one foe; -1 agility/accuracy",
     "element": "gun",
@@ -701,12 +799,14 @@
     "power": 115
   },
   "Life Aid": {
+    "code": 393,
     "effect": "Heal 10% hp after battle",
     "element": "pas",
     "inherit": "spe",
     "rank": 8
   },
   "Life Bonus": {
+    "code": 414,
     "effect": "Increase hp by 10%",
     "element": "pas",
     "inherit": "lif",
@@ -714,6 +814,7 @@
   },
   "Life Drain": {
     "accuracy": 120,
+    "code": 48,
     "cost": 1002,
     "effect": "Absorb a small amount of hp from one foe",
     "element": "alm",
@@ -722,18 +823,21 @@
     "rank": 5
   },
   "Life Gain": {
+    "code": 415,
     "effect": "Increase hp by 20%",
     "element": "pas",
     "inherit": "lif",
     "rank": 7
   },
   "Life Surge": {
+    "code": 416,
     "effect": "Increase hp by 30%",
     "element": "pas",
     "inherit": "lif",
     "rank": 11
   },
   "Lost Word": {
+    "code": 145,
     "cost": 1020,
     "effect": "Heal hp fully, heal mp fully, debilitate or luster candy to all foes or allies",
     "element": "alm",
@@ -741,6 +845,7 @@
     "rank": 10
   },
   "Lullaby": {
+    "code": 64,
     "cost": 1009,
     "effect": "70% sleep on all foes",
     "element": "ail",
@@ -748,6 +853,7 @@
   },
   "Lunge": {
     "accuracy": 130,
+    "code": 151,
     "cost": 1005,
     "effect": "Moderate physical damage to one foe",
     "element": "phy",
@@ -755,6 +861,7 @@
     "rank": 1
   },
   "Luster Candy": {
+    "code": 124,
     "cost": 1050,
     "effect": "+1 attack, defense, agility/ accuracy to all allies",
     "element": "sup",
@@ -762,6 +869,7 @@
   },
   "Mabufu": {
     "accuracy": 120,
+    "code": 13,
     "cost": 1009,
     "effect": "Light ice damage to all foes",
     "element": "ice",
@@ -770,6 +878,7 @@
   },
   "Mabufudyne": {
     "accuracy": 120,
+    "code": 15,
     "cost": 1030,
     "effect": "Heavy ice damage to all foes",
     "element": "ice",
@@ -778,6 +887,7 @@
   },
   "Mabufula": {
     "accuracy": 120,
+    "code": 14,
     "cost": 1018,
     "effect": "Moderate ice damage to all foes",
     "element": "ice",
@@ -786,6 +896,7 @@
   },
   "Madness Crush": {
     "accuracy": 130,
+    "code": 156,
     "cost": 1030,
     "effect": "Moderate physical damage to random foes x 1-4 hits",
     "element": "phy",
@@ -794,6 +905,7 @@
   },
   "Madness Nails": {
     "accuracy": 130,
+    "code": 168,
     "cost": 1025,
     "effect": "Moderate physical damage to all foes",
     "element": "phy",
@@ -802,6 +914,7 @@
   },
   "Magaru": {
     "accuracy": 120,
+    "code": 31,
     "cost": 1009,
     "effect": "Light wind damage to all foes",
     "element": "win",
@@ -810,6 +923,7 @@
   },
   "Magarudyne": {
     "accuracy": 120,
+    "code": 33,
     "cost": 1030,
     "effect": "Heavy wind damage to all foes",
     "element": "win",
@@ -818,6 +932,7 @@
   },
   "Magarula": {
     "accuracy": 120,
+    "code": 32,
     "cost": 1018,
     "effect": "Moderate wind damage to all foes",
     "element": "win",
@@ -825,48 +940,56 @@
     "rank": 6
   },
   "Mahama": {
+    "code": 60,
     "cost": 1018,
     "effect": "30% expel-based death to all foes",
     "element": "exp",
     "rank": 6
   },
   "Mahamaon": {
+    "code": 61,
     "cost": 1030,
     "effect": "55% expel-based death to all foes",
     "element": "exp",
     "rank": 8
   },
   "Makajama": {
+    "code": 75,
     "cost": 1005,
     "effect": "80% mute on one foe",
     "element": "ail",
     "rank": 1
   },
   "Makarakarn": {
+    "code": 140,
     "cost": 1045,
     "effect": "Magic repel shield on all allies for one turn",
     "element": "sup",
     "rank": 10
   },
   "Mamudo": {
+    "code": 55,
     "cost": 1018,
     "effect": "30% curse-based death to all foes",
     "element": "cur",
     "rank": 6
   },
   "Mamudoon": {
+    "code": 56,
     "cost": 1030,
     "effect": "55% curse-based death to all foes",
     "element": "cur",
     "rank": 8
   },
   "Mana Aid": {
+    "code": 394,
     "effect": "Heal 1% mp after battle",
     "element": "pas",
     "inherit": "spe",
     "rank": 12
   },
   "Mana Bonus": {
+    "code": 417,
     "effect": "Increase mp by 10%",
     "element": "pas",
     "inherit": "man",
@@ -874,6 +997,7 @@
   },
   "Mana Drain": {
     "accuracy": 120,
+    "code": 49,
     "cost": 1002,
     "effect": "Absorb a small amount of mp from one foe",
     "element": "alm",
@@ -882,12 +1006,14 @@
     "rank": 7
   },
   "Mana Gain": {
+    "code": 418,
     "effect": "Increase mp by 20%",
     "element": "pas",
     "inherit": "man",
     "rank": 7
   },
   "Mana Surge": {
+    "code": 419,
     "effect": "Increase mp by 30%",
     "element": "pas",
     "inherit": "man",
@@ -895,6 +1021,7 @@
   },
   "Maragi": {
     "accuracy": 120,
+    "code": 4,
     "cost": 1009,
     "effect": "Light fire damage to all foes",
     "element": "fir",
@@ -903,6 +1030,7 @@
   },
   "Maragidyne": {
     "accuracy": 120,
+    "code": 6,
     "cost": 1030,
     "effect": "Heavy fire damage to all foes",
     "element": "fir",
@@ -911,6 +1039,7 @@
   },
   "Maragion": {
     "accuracy": 120,
+    "code": 5,
     "cost": 1018,
     "effect": "Moderate fire damage to all foes",
     "element": "fir",
@@ -918,6 +1047,7 @@
     "rank": 6
   },
   "Marin Karin": {
+    "code": 69,
     "cost": 1005,
     "effect": "80% charm on one foe",
     "element": "ail",
@@ -925,6 +1055,7 @@
   },
   "Mazio": {
     "accuracy": 120,
+    "code": 22,
     "cost": 1009,
     "effect": "Light electric damage to all foes",
     "element": "ele",
@@ -933,6 +1064,7 @@
   },
   "Maziodyne": {
     "accuracy": 120,
+    "code": 24,
     "cost": 1030,
     "effect": "Heavy electric damage to all foes",
     "element": "ele",
@@ -941,6 +1073,7 @@
   },
   "Mazionga": {
     "accuracy": 120,
+    "code": 23,
     "cost": 1018,
     "effect": "Moderate electric damage to all foes",
     "element": "ele",
@@ -948,12 +1081,14 @@
     "rank": 6
   },
   "Me Patra": {
+    "code": 109,
     "cost": 1012,
     "effect": "Heal all allies' sleep or fear",
     "element": "rec",
     "rank": 4
   },
   "Media": {
+    "code": 104,
     "cost": 1010,
     "effect": "Small heal on all allies",
     "element": "rec",
@@ -961,12 +1096,14 @@
     "rank": 3
   },
   "Mediarahan": {
+    "code": 106,
     "cost": 1035,
     "effect": "Full heal on all allies",
     "element": "rec",
     "rank": 11
   },
   "Mediarama": {
+    "code": 105,
     "cost": 1020,
     "effect": "Large heal on all allies",
     "element": "rec",
@@ -975,6 +1112,7 @@
   },
   "Mega Claw": {
     "accuracy": 130,
+    "code": 164,
     "cost": 1006,
     "effect": "Moderate physical damage to one foe",
     "element": "phy",
@@ -983,6 +1121,7 @@
   },
   "Megaton Press": {
     "accuracy": 130,
+    "code": 155,
     "cost": 1015,
     "effect": "Light physical damage to random foes x 1-4 hits",
     "element": "phy",
@@ -991,6 +1130,7 @@
   },
   "Megido": {
     "accuracy": 120,
+    "code": 37,
     "cost": 1020,
     "effect": "Heavy almighty damage to all foes",
     "element": "alm",
@@ -999,6 +1139,7 @@
   },
   "Megidola": {
     "accuracy": 120,
+    "code": 38,
     "cost": 1040,
     "effect": "Huge almighty damage to all foes",
     "element": "alm",
@@ -1007,6 +1148,7 @@
   },
   "Megidolaon": {
     "accuracy": 120,
+    "code": 39,
     "cost": 1060,
     "effect": "Huge almighty damage to all foes",
     "element": "alm",
@@ -1015,6 +1157,7 @@
   },
   "Mortal Jihad": {
     "accuracy": 130,
+    "code": 153,
     "cost": 1012,
     "effect": "Heavy physical damage to to one foe",
     "element": "phy",
@@ -1022,18 +1165,21 @@
     "rank": 7
   },
   "Mudo": {
+    "code": 53,
     "cost": 1006,
     "effect": "30% curse-based death to one foe",
     "element": "cur",
     "rank": 2
   },
   "Mudoon": {
+    "code": 54,
     "cost": 1010,
     "effect": "55% curse-based death to one foe",
     "element": "cur",
     "rank": 4
   },
   "Mutudi": {
+    "code": 114,
     "cost": 1005,
     "effect": "Heal one ally's mute",
     "element": "rec",
@@ -1041,6 +1187,7 @@
   },
   "Needle Assault": {
     "accuracy": 130,
+    "code": 184,
     "cost": 1007,
     "effect": "Light gun damage to all foes",
     "element": "gun",
@@ -1049,6 +1196,7 @@
   },
   "Needle Rush": {
     "accuracy": 130,
+    "code": 180,
     "cost": 1003,
     "effect": "Light gun damage to one foe",
     "element": "gun",
@@ -1057,6 +1205,7 @@
   },
   "Nihil Claw": {
     "accuracy": 130,
+    "code": 165,
     "cost": 1010,
     "effect": "Heavy physical damage to one foe",
     "element": "phy",
@@ -1065,6 +1214,7 @@
   },
   "Occult Flash": {
     "accuracy": 130,
+    "code": 177,
     "cost": 1030,
     "effect": "Moderate physical damage to all foes; 50% death",
     "element": "phy",
@@ -1072,18 +1222,21 @@
     "rank": 11
   },
   "Offered Soul": {
+    "code": 138,
     "cost": 1020,
     "effect": "Strain on self but increase magic attack",
     "element": "sup",
     "rank": 6
   },
   "Paraladi": {
+    "code": 111,
     "cost": 1005,
     "effect": "Heal one ally's paralyze",
     "element": "rec",
     "rank": 1
   },
   "Patra": {
+    "code": 108,
     "cost": 1005,
     "effect": "Heal one ally's sleep or fear",
     "element": "rec",
@@ -1091,6 +1244,7 @@
   },
   "Peter Piper": {
     "accuracy": 130,
+    "code": 189,
     "cost": 1009,
     "effect": "Moderate gun damage to one foe; 60% mute",
     "element": "gun",
@@ -1098,24 +1252,28 @@
     "rank": 4
   },
   "Petradi": {
+    "code": 113,
     "cost": 1005,
     "effect": "Heal one ally's stone",
     "element": "rec",
     "rank": 1
   },
   "Phys Amp": {
+    "code": 410,
     "effect": "Physical skills are 1.5x more effective",
     "element": "pas",
     "inherit": "phy",
     "rank": 11
   },
   "Phys Boost": {
+    "code": 409,
     "effect": "Physical skills are 1.25x more effective",
     "element": "pas",
     "inherit": "phy",
     "rank": 6
   },
   "Poisma": {
+    "code": 65,
     "cost": 1004,
     "effect": "80% poison on one foe",
     "element": "ail",
@@ -1123,6 +1281,7 @@
   },
   "Poison Claw": {
     "accuracy": 130,
+    "code": 179,
     "cost": 1007,
     "effect": "Moderate physical damage to one foe; 60% poison",
     "element": "phy",
@@ -1130,12 +1289,14 @@
     "rank": 2
   },
   "Posumudi": {
+    "code": 110,
     "cost": 1005,
     "effect": "Heal one ally's poison",
     "element": "rec",
     "rank": 1
   },
   "Preparedness": {
+    "code": 402,
     "effect": "Demon co-op is 1.25x more effective",
     "element": "pas",
     "inherit": "sup",
@@ -1143,6 +1304,7 @@
   },
   "Ragnarok": {
     "accuracy": 120,
+    "code": 9,
     "cost": 1065,
     "effect": "Moderate fire damage to random foes x 1-4 hits",
     "element": "fir",
@@ -1150,12 +1312,14 @@
     "rank": 13
   },
   "Rakukaja": {
+    "code": 123,
     "cost": 1012,
     "effect": "+1 defense to all allies",
     "element": "sup",
     "rank": 4
   },
   "Rakunda": {
+    "code": 128,
     "cost": 1012,
     "effect": "-1 defense to all foes",
     "element": "sup",
@@ -1163,6 +1327,7 @@
   },
   "Rampage": {
     "accuracy": 130,
+    "code": 154,
     "cost": 1008,
     "effect": "Light physical damage to random foes x 1-4 hits",
     "element": "phy",
@@ -1170,114 +1335,133 @@
     "rank": 6
   },
   "Recarm": {
+    "code": 118,
     "cost": 1020,
     "effect": "Revive one ally with half hp",
     "element": "rec",
     "rank": 5
   },
   "Recarmdra": {
+    "code": 120,
     "cost": 1002,
     "effect": "Full heal on all allies and heal ailments; sacrifices self",
     "element": "rec",
     "rank": 12
   },
   "Recovery Amp": {
+    "code": 413,
     "effect": "Recovery skills are 1.5x more effective",
     "element": "pas",
     "inherit": "rec",
     "rank": 9
   },
   "Recovery Boost": {
+    "code": 412,
     "effect": "Recovery skills are 1.25x more effective",
     "element": "pas",
     "inherit": "rec",
     "rank": 4
   },
   "Repel Elec": {
+    "code": 369,
     "effect": "Reflect electric skills",
     "element": "pas",
     "inherit": "ele",
     "rank": 11
   },
   "Repel Fire": {
+    "code": 361,
     "effect": "Reflect fire skills",
     "element": "pas",
     "inherit": "fir",
     "rank": 11
   },
   "Repel Gun": {
+    "code": 357,
     "effect": "Reflect gun skills",
     "element": "pas",
     "inherit": "gun",
     "rank": 12
   },
   "Repel Ice": {
+    "code": 365,
     "effect": "Reflect ice skills",
     "element": "pas",
     "inherit": "ice",
     "rank": 11
   },
   "Repel Phys": {
+    "code": 353,
     "effect": "Reflect physical skills",
     "element": "pas",
     "inherit": "phy",
     "rank": 12
   },
   "Repel Wind": {
+    "code": 373,
     "effect": "Reflect wind skills",
     "element": "pas",
     "inherit": "win",
     "rank": 11
   },
   "Resist Curse": {
+    "code": 377,
     "effect": "Resist success of curse skills",
     "element": "pas",
     "inherit": "cur",
     "rank": 5
   },
   "Resist Elec": {
+    "code": 367,
     "effect": "Resist damage of electric skills",
     "element": "pas",
     "inherit": "ele",
     "rank": 5
   },
   "Resist Expel": {
+    "code": 375,
     "effect": "Resist success of expel skills",
     "element": "pas",
     "inherit": "exp",
     "rank": 5
   },
   "Resist Fire": {
+    "code": 359,
     "effect": "Resist damage of fire skills",
     "element": "pas",
     "inherit": "fir",
     "rank": 5
   },
   "Resist Gun": {
+    "code": 355,
     "effect": "Resist damage of gun skills",
     "element": "pas",
     "inherit": "gun",
     "rank": 6
   },
   "Resist Ice": {
+    "code": 363,
     "effect": "Resist damage of ice skills",
     "element": "pas",
     "inherit": "ice",
     "rank": 5
   },
   "Resist Phys": {
+    "code": 351,
     "effect": "Resist damage of physical skills",
     "element": "pas",
     "inherit": "phy",
     "rank": 6
   },
   "Resist Wind": {
+    "code": 371,
     "effect": "Resist damage of wind skills",
     "element": "pas",
     "inherit": "win",
     "rank": 5
   },
   "Retaliate": {
+    "code": 392,
     "effect": "50% 1.5x counter when hit with a physical attack",
     "element": "pas",
     "inherit": "spe",
@@ -1285,6 +1469,7 @@
   },
   "Riot Gun": {
     "accuracy": 130,
+    "code": 183,
     "cost": 1030,
     "effect": "Huge gun damage to one foe",
     "element": "gun",
@@ -1292,6 +1477,7 @@
     "rank": 13
   },
   "Sabbatma": {
+    "code": 146,
     "cost": 1020,
     "effect": "Summon a demon from your stock",
     "element": "alm",
@@ -1299,12 +1485,14 @@
     "rank": 6
   },
   "Salvation": {
+    "code": 107,
     "cost": 1045,
     "effect": "Full heal on all allies and heal ailments",
     "element": "rec",
     "rank": 14
   },
   "Samarecarm": {
+    "code": 119,
     "cost": 1035,
     "effect": "Revive one ally with full hp",
     "element": "rec",
@@ -1312,6 +1500,7 @@
   },
   "Sea of Chaos": {
     "accuracy": 120,
+    "code": 45,
     "cost": 1045,
     "effect": "Heavy almighty damage to all foes and allies; 2x damage to law targets",
     "element": "alm",
@@ -1319,6 +1508,7 @@
     "rank": 8
   },
   "Shibaboo": {
+    "code": 67,
     "cost": 1005,
     "effect": "50% paralyze on one foe",
     "element": "ail",
@@ -1326,6 +1516,7 @@
   },
   "Shock": {
     "accuracy": 120,
+    "code": 25,
     "cost": 1019,
     "effect": "Light electric damage to random foes x 1-4 hits",
     "element": "ele",
@@ -1334,6 +1525,7 @@
   },
   "Shooting Spree": {
     "accuracy": 130,
+    "code": 191,
     "cost": 1012,
     "effect": "Moderate gun damage to random foes; 60% strain x 1-3 hits",
     "element": "gun",
@@ -1341,12 +1533,14 @@
     "rank": 7
   },
   "Silent Prayer": {
+    "code": 131,
     "cost": 1015,
     "effect": "Cancel all foes' and allies' stat changes",
     "element": "sup",
     "rank": 10
   },
   "Sleepwalker": {
+    "code": 400,
     "effect": "Evade all attacks when asleep",
     "element": "pas",
     "inherit": "spe",
@@ -1354,6 +1548,7 @@
   },
   "Snipe": {
     "accuracy": 120,
+    "code": 228,
     "cost": 1020,
     "effect": "Moderate gun damage to one foe",
     "element": "gun",
@@ -1361,30 +1556,35 @@
     "power": 125
   },
   "Spring of Life": {
+    "code": 396,
     "effect": "While summoned, heal 3% hp every 10 steps",
     "element": "pas",
     "inherit": "spe",
     "rank": 2
   },
   "Staredown": {
+    "code": 74,
     "cost": 1009,
     "effect": "70% fear on all foes",
     "element": "ail",
     "rank": 5
   },
   "Stone Breath": {
+    "code": 72,
     "cost": 1013,
     "effect": "45% stone on all foes",
     "element": "ail",
     "rank": 7
   },
   "Stone Curse": {
+    "code": 71,
     "cost": 1005,
     "effect": "50% stone on one foe",
     "element": "ail",
     "rank": 3
   },
   "Strandi": {
+    "code": 115,
     "cost": 1005,
     "effect": "Heal one ally's strain",
     "element": "rec",
@@ -1392,6 +1592,7 @@
   },
   "Stun Claw": {
     "accuracy": 130,
+    "code": 178,
     "cost": 1009,
     "effect": "Moderate physical damage to one foe; 35% paralyze",
     "element": "phy",
@@ -1399,48 +1600,56 @@
     "rank": 3
   },
   "Sukukaja": {
+    "code": 122,
     "cost": 1012,
     "effect": "+1 agility/accuracy to all allies",
     "element": "sup",
     "rank": 4
   },
   "Sukunda": {
+    "code": 127,
     "cost": 1012,
     "effect": "-1 agility/accuracy to all foes",
     "element": "sup",
     "rank": 3
   },
   "Tables Turned": {
+    "code": 137,
     "cost": 1008,
     "effect": "70% reversal of all foes' and allies' stat changes",
     "element": "sup",
     "rank": 10
   },
   "Tarukaja": {
+    "code": 121,
     "cost": 1012,
     "effect": "+1 attack to all allies",
     "element": "sup",
     "rank": 4
   },
   "Tarunda": {
+    "code": 126,
     "cost": 1012,
     "effect": "-1 attack to all foes",
     "element": "sup",
     "rank": 3
   },
   "Taunt": {
+    "code": 136,
     "cost": 1020,
     "effect": "-2 defense, +2 attack to all foes",
     "element": "sup",
     "rank": 6
   },
   "Tetraja": {
+    "code": 141,
     "cost": 1015,
     "effect": "Block expel or curse shield on all allies for one turn",
     "element": "sup",
     "rank": 8
   },
   "Tetrakarn": {
+    "code": 139,
     "cost": 1045,
     "effect": "Physical repel shield on all allies for one turn",
     "element": "sup",
@@ -1448,6 +1657,7 @@
   },
   "Thunder Reign": {
     "accuracy": 120,
+    "code": 26,
     "cost": 1020,
     "effect": "Moderate electric damage to all foes",
     "element": "ele",
@@ -1455,6 +1665,7 @@
     "rank": 11
   },
   "Toxic Cloud": {
+    "code": 66,
     "cost": 1009,
     "effect": "70% poison on all foes",
     "element": "ail",
@@ -1462,6 +1673,7 @@
   },
   "Toxic Sting": {
     "accuracy": 130,
+    "code": 188,
     "cost": 1007,
     "effect": "Moderate gun damage to one foe; 60% poison",
     "element": "gun",
@@ -1469,6 +1681,7 @@
     "rank": 3
   },
   "Tricky Dance": {
+    "code": 76,
     "cost": 1013,
     "effect": "70% mute on all foes",
     "element": "ail",
@@ -1476,6 +1689,7 @@
   },
   "Trisagion": {
     "accuracy": 120,
+    "code": 8,
     "cost": 1020,
     "effect": "Huge fire damage to one foe",
     "element": "fir",
@@ -1484,6 +1698,7 @@
   },
   "True Lobotomy": {
     "accuracy": 130,
+    "code": 158,
     "cost": 1007,
     "effect": "Heavy physical damage to one foe",
     "element": "phy",
@@ -1492,6 +1707,7 @@
   },
   "Tyranny": {
     "accuracy": 130,
+    "code": 171,
     "cost": 1012,
     "effect": "Light physical damage to random foes; 60% fear x 1-3 hits",
     "element": "phy",
@@ -1499,96 +1715,112 @@
     "rank": 7
   },
   "Victory Cry": {
+    "code": 395,
     "effect": "Heal hp and mp fully after battle",
     "element": "pas",
     "inherit": "spe",
     "rank": 14
   },
   "Vigilant": {
+    "code": 399,
     "effect": "Greatly earn experience when not in battle",
     "element": "pas",
     "inherit": "spe",
     "rank": 6
   },
   "Void Curse": {
+    "code": 378,
     "effect": "Nullify curse skills",
     "element": "pas",
     "inherit": "cur",
     "rank": 8
   },
   "Void Elec": {
+    "code": 368,
     "effect": "Nullify electric skills",
     "element": "pas",
     "inherit": "ele",
     "rank": 9
   },
   "Void Expel": {
+    "code": 376,
     "effect": "Nullify expel skills",
     "element": "pas",
     "inherit": "exp",
     "rank": 8
   },
   "Void Fire": {
+    "code": 360,
     "effect": "Nullify fire skills",
     "element": "pas",
     "inherit": "fir",
     "rank": 9
   },
   "Void Gun": {
+    "code": 356,
     "effect": "Nullify gun skills",
     "element": "pas",
     "inherit": "gun",
     "rank": 10
   },
   "Void Ice": {
+    "code": 364,
     "effect": "Nullify ice skills",
     "element": "pas",
     "inherit": "ice",
     "rank": 9
   },
   "Void Mind": {
+    "code": 379,
     "effect": "Immune to strain, charm, mute, fear, and sleep",
     "element": "pas",
     "inherit": "ail",
     "rank": 10
   },
   "Void Nerve": {
+    "code": 380,
     "effect": "Immune to stone, paralyze, bomb, and poison",
     "element": "pas",
     "inherit": "ail",
     "rank": 11
   },
   "Void Phys": {
+    "code": 352,
     "effect": "Nullify physical skills",
     "element": "pas",
     "inherit": "phy",
     "rank": 10
   },
   "Void Wind": {
+    "code": 372,
     "effect": "Nullify wind skills",
     "element": "pas",
     "inherit": "win",
     "rank": 9
   },
   "War Cry": {
+    "code": 133,
     "cost": 1030,
     "effect": "-2 attack to all foes",
     "element": "sup",
     "rank": 7
   },
   "Watchful": {
+    "code": 398,
     "effect": "Earn experience when not in battle",
     "element": "pas",
     "inherit": "spe",
     "rank": 3
   },
   "Wind Amp": {
+    "code": 388,
     "effect": "Wind skills are 1.5x more effective",
     "element": "pas",
     "inherit": "win",
     "rank": 10
   },
   "Wind Boost": {
+    "code": 387,
     "effect": "Wind skills are 1.25x more effective",
     "element": "pas",
     "inherit": "win",
@@ -1596,6 +1828,7 @@
   },
   "Wind Breath": {
     "accuracy": 120,
+    "code": 34,
     "cost": 1019,
     "effect": "Light wind damage to random foes x 1-4 hits",
     "element": "win",
@@ -1604,6 +1837,7 @@
   },
   "Zan-Ei": {
     "accuracy": 130,
+    "code": 175,
     "cost": 1009,
     "effect": "Heavy physical damage to one foe; 1.5x damage on new moon",
     "element": "phy",
@@ -1612,6 +1846,7 @@
   },
   "Zio": {
     "accuracy": 120,
+    "code": 19,
     "cost": 1003,
     "effect": "Light electric damage to one foe",
     "element": "ele",
@@ -1620,6 +1855,7 @@
   },
   "Ziodyne": {
     "accuracy": 120,
+    "code": 21,
     "cost": 1010,
     "effect": "Heavy electric damage to one foe",
     "element": "ele",
@@ -1628,6 +1864,7 @@
   },
   "Zionga": {
     "accuracy": 120,
+    "code": 20,
     "cost": 1006,
     "effect": "Moderate electric damage to one foe",
     "element": "ele",

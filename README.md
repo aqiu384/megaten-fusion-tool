@@ -12,6 +12,7 @@ Fusion tool framework for Megami Tensei games.
 * Normal Forward Fusion Calculator
 * Triple Reverse Fusion Calculator
 * Triple Forward Fusion Calculator
+* Password Generator (Strange Journey and Redux)
 * DLC Demon/Persona Settings
 
 ## Supported Megami Tensei Games

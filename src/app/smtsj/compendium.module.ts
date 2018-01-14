@@ -1,31 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 
 import { SharedModule } from '../shared/shared.module';
 import { SharedCompendiumModule } from '../compendium/compendium.module';
 import { CompendiumRoutingModule } from './compendium-routing.module';
 
-import {
-  DemonListContainerComponent
-} from './components/demon-list.component';
-
-import {
-  SkillListContainerComponent
-} from './components/skill-list.component';
-
-import { FusionChartContainerComponent } from './components/fusion-chart.component';
-
-import {
-  FusionSettingsComponent
-} from './components/fusion-settings.component';
-
-import {
-  DemonEntryComponent,
-  DemonEntryContainerComponent
-} from './components/demon-entry.component';
-
 import { CompendiumComponent } from './components/compendium.component';
+import { DemonListContainerComponent } from './components/demon-list.component';
+import { SkillListContainerComponent } from './components/skill-list.component';
+import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
+import { FusionChartContainerComponent } from './components/fusion-chart.component';
+import { FusionSettingsComponent } from './components/fusion-settings.component';
+import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from './components/password-generator.component';
+import { DemonPasswordComponent } from './components/demon-password.component';
 
 import { FusionDataService } from './fusion-data.service';
 
@@ -42,6 +31,7 @@ const compendiumConfig: CompendiumConfig = {
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     SharedCompendiumModule,
     CompendiumRoutingModule
   ],
@@ -52,7 +42,10 @@ const compendiumConfig: CompendiumConfig = {
     DemonEntryContainerComponent,
     DemonListContainerComponent,
     SkillListContainerComponent,
-    FusionChartContainerComponent
+    FusionChartContainerComponent,
+    PasswordGeneratorComponent,
+    PasswordGeneratorContainerComponent,
+    DemonPasswordComponent
   ],
   providers: [
     Title,

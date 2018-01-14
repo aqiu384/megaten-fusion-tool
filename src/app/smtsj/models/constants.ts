@@ -130,6 +130,15 @@ export const ResistCodes = {
   d: -1100
 };
 
+export const PasswordEncodings = {
+  jap: 'しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ',
+  jen: 'しんいくみBやるＹけひKFとHむAちにZきWよLをのたれNえSふわJそりすCめPへQGRDこMTまつせかはEUてさなあもゆおうろ',
+  eng: '$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+',
+  engChars: '$0-9A-H%J-Za-k#m-z+-'
+};
+
+export const SkillCosts = [0, 112, 155, 222, 347, 564, 952, 1666, 3020, 5663, 10972, 21943, 43886, 87772, 175543];
+
 export const RaceOrder = getEnumOrder(Races);
 export const PrimeOrder = getEnumOrder(PrimeElements);
 export const SkillElementOrder = getEnumOrder(SkillElements);
