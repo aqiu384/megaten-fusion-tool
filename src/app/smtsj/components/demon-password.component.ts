@@ -50,8 +50,6 @@ export class DemonPasswordComponent {
         if (this.engRegex.test(password)) {
           this.passwordBytes.emit(password.split('').map(c => this.engBase64[c]));
         } else {
-          console.log(password.split(''));
-          console.log(password.split('').map(c => this.japBase64[c]));
           this.passwordBytes.emit(password.split('').map(c => this.japBase64[c]));
         }
       }
