@@ -37,3 +37,4 @@ Fusion tool framework for Megami Tensei games.
 * [Devil Survivor Overclocked](https://aqiu384.github.io/megaten-fusion-tool/dso)
 * [Devil Survivor 2](https://aqiu384.github.io/megaten-fusion-tool/ds2)
 * [Devil Survivor 2 Record Breaker](https://aqiu384.github.io/megaten-fusion-tool/ds2br)
+* [Dx2 Shin Megami Tensei: Liberation](https://aqiu384.github.io/megaten-fusion-tool/dx2)

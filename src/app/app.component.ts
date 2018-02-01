@@ -13,7 +13,7 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
               routerLinkActive="active"
               [style.width.%]="100 / navsPerRow">
               <div *ngIf="button.tool" [style.whiteSpace]="'pre-line'">
-                <a routerLink="{{ button.tool }}">{{ button.game }}</a>
+                <a routerLink="{{ button.tool }}">{{ button.abbr || button.game }}</a>
               </div>
             </th>
           </tr>
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
   };
 
   currentGame = 'none';
-  navsPerRow = 5;
+  navsPerRow = 7;
   navRows = [];
   loading = false;
 

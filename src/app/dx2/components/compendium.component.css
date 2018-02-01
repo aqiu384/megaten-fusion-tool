@@ -1,0 +1,41 @@
+.dx2 div.element-icon {
+  height: 12px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.dx2 div.element-icon.phys { background-image: url('/assets/images/smtsj/phy.png'); }
+.dx2 div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.dx2 div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.dx2 div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.dx2 div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.dx2 div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.dx2 div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.dx2 div.element-icon.ailment { background-image: url('/assets/images/smtsj/ail.png'); }
+.dx2 div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.dx2 div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.dx2 div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.dx2 div.element-icon.passive { background-image: url('/assets/images/smtsj/pas.png'); }
+
+.dx2 th {
+  color: white;
+  background-color: #693cbe;
+}
+
+.dx2 th.sortable:hover {
+  background-color: #8e51ff;
+}
+
+.dx2 th.nav {
+  background-color: #2d1a52;
+}
+
+.dx2 th.nav.active, .dx2 th.nav:hover {
+  background-color: #693cbe;
+}
+
+.dx2 th.nav.active a, .dx2 th.nav:hover a {
+  color: white;
+}

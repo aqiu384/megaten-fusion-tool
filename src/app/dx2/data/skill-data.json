@@ -1,0 +1,1634 @@
+{
+  "Acid Breath": {
+    "cost": 6,
+    "effect": "Debuffs all foe's defense, accuracy, and evasion by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Agi": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "fire",
+    "power": 120
+  },
+  "Agidyne": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "fire",
+    "power": 160
+  },
+  "Agilao": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "fire",
+    "power": 140
+  },
+  "Allure": {
+    "cost": 8,
+    "effect": "Miniscule damage to all foes. 25% chance of charm.",
+    "element": "death",
+    "power": 90
+  },
+  "Ama no Murakumo no Tsurugi": {
+    "cost": 7,
+    "effect": "Colossal damage to one enemy and buffs party's attack by 20% for 3 turns.",
+    "element": "force",
+    "power": 205
+  },
+  "Amrita": {
+    "cost": 4,
+    "effect": "Removes any ailment from one ally.",
+    "element": "recovery"
+  },
+  "Apocalypse": {
+    "cost": 8,
+    "effect": "Light damage to all foes. 30% chance of mute.",
+    "element": "almighty",
+    "power": 110
+  },
+  "Arms Master": {
+    "effect": "Increases physical attack and accuracy by 15%.",
+    "element": "passive"
+  },
+  "Assassin": {
+    "effect": "Increases damage of single-target skills by 10%.",
+    "element": "passive"
+  },
+  "Auto-Rakukaja": {
+    "effect": "Starts the battle with Rakukaja",
+    "element": "passive"
+  },
+  "Auto-Sukukaja": {
+    "effect": "Starts the battle with Sukukaja.",
+    "element": "passive"
+  },
+  "Auto-Tarukaja": {
+    "effect": "Starts the battle with Tarukaja.",
+    "element": "passive"
+  },
+  "Avatar": {
+    "effect": "Recovers 10% HP when clearing a wave and revives once per battle with 1 HP.",
+    "element": "passive"
+  },
+  "Barong Dance": {
+    "cost": 7,
+    "effect": "Medium HP recovery for all allies and buffs their attack, defense, accuracy, and evasion by 20% for 3 turns.",
+    "element": "support",
+    "power": 95
+  },
+  "Barrier": {
+    "cost": 4,
+    "effect": "Turns one ally immune to ailments for 3 turns.",
+    "element": "support"
+  },
+  "Barrier Break": {
+    "cost": 3,
+    "effect": "Cancels Barrier effect for all foes.",
+    "element": "support"
+  },
+  "Baton Pass": {
+    "cost": 3,
+    "effect": "Passes the turn without wasting a Turn Press.",
+    "element": "support"
+  },
+  "Berserker": {
+    "effect": "Increases damage dealt by 10% and damage received by 20% (demerit).",
+    "element": "passive"
+  },
+  "Berserker God": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "phys",
+    "power": 160
+  },
+  "Bind Pursuit": {
+    "effect": "Increases damage by 30% against bound foes.",
+    "element": "passive"
+  },
+  "Bind Voice": {
+    "cost": 6,
+    "effect": "30% chance of inflicting bind to random foes 2-3 times.",
+    "element": "ailment"
+  },
+  "Binding Bite": {
+    "cost": 5,
+    "effect": "Heavy damage to one foe. 35% chance of bind.",
+    "element": "phys",
+    "power": 160
+  },
+  "Binding Claw": {
+    "cost": 5,
+    "effect": "Light damage to one foe. 40% chance of bind.",
+    "element": "phys",
+    "power": 120
+  },
+  "Binge Eating": {
+    "cost": 6,
+    "effect": "Medium damage to one foe. Recovers 40% damage.",
+    "element": "phys",
+    "power": 140
+  },
+  "Bloody Glee": {
+    "effect": "Increases critical attack by 15%.",
+    "element": "passive"
+  },
+  "Bolt Storm": {
+    "cost": 5,
+    "effect": "Minuscule damage to random foes 2-4 times.",
+    "element": "elec",
+    "power": 50
+  },
+  "Bufu": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "ice",
+    "power": 120
+  },
+  "Bufudyne": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "ice",
+    "power": 160
+  },
+  "Bufula": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "ice",
+    "power": 140
+  },
+  "Charge": {
+    "cost": 6,
+    "effect": "Increases the power of the next physical attack by 125% (self).",
+    "element": "support"
+  },
+  "Charm Bite": {
+    "cost": 5,
+    "effect": "Light damage to one foe. 40% chance of charm.",
+    "element": "phys",
+    "power": 120
+  },
+  "Charm Pursuit": {
+    "effect": "Increases damage by 30% against charmed foes.",
+    "element": "passive"
+  },
+  "Charmdi": {
+    "cost": 3,
+    "effect": "Removes charm from one ally.",
+    "element": "recovery"
+  },
+  "Charming Divine Bow": {
+    "cost": 8,
+    "effect": "Severe damage to one foe. 45% chance of charm.",
+    "element": "almighty",
+    "power": 190
+  },
+  "Chomp": {
+    "cost": 5,
+    "effect": "Light damage to one foe. Recovers 25% damage.",
+    "element": "phys",
+    "power": 120
+  },
+  "Closedi": {
+    "cost": 3,
+    "effect": "Removes mute from one ally.",
+    "element": "recovery"
+  },
+  "Concentrate": {
+    "cost": 6,
+    "effect": "Increases the power of the next magical attack by 125% (self).",
+    "element": "support"
+  },
+  "Counter": {
+    "effect": "50% chance of countering physical attacks with miniscule damage.",
+    "element": "passive"
+  },
+  "Counterstrike": {
+    "effect": "50% chance of countering physical attacks with light damage.",
+    "element": "passive"
+  },
+  "Curse": {
+    "cost": 6,
+    "effect": "40% chance of inflicting curse to random foes 2-3 times.",
+    "element": "ailment"
+  },
+  "Cursedi": {
+    "cost": 3,
+    "effect": "Removes curse from one ally.",
+    "element": "recovery"
+  },
+  "Dark Sword": {
+    "cost": 5,
+    "effect": "Light damage to one foe. 40% chance of mute.",
+    "element": "phys",
+    "power": 120
+  },
+  "Deadly Sin of Gluttony": {
+    "cost": 7,
+    "effect": "Medium damage to all enemies. Recovers 50% damage.",
+    "element": "death",
+    "power": 130
+  },
+  "Deadly Wind": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "force",
+    "power": 180
+  },
+  "Death Amp": {
+    "effect": "Increases strength of death attacks by 25%.",
+    "element": "passive"
+  },
+  "Death Boost": {
+    "effect": "Increases strength of death attacks by 15%.",
+    "element": "passive"
+  },
+  "Deathbound": {
+    "cost": 4,
+    "effect": "Miniscule damage to random foes 2-3 times.",
+    "element": "phys",
+    "power": 55
+  },
+  "Deathtouch": {
+    "cost": 6,
+    "effect": "Medium damage to one foe. Recovers 40% damage.",
+    "element": "almighty",
+    "power": 140
+  },
+  "Debilitate": {
+    "cost": 8,
+    "effect": "Decreases all foe's stats by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Dekaja": {
+    "cost": 5,
+    "effect": "Removes buffs from all foes.",
+    "element": "support"
+  },
+  "Dekunda": {
+    "cost": 5,
+    "effect": "Removes debuffs from all allies.",
+    "element": "support"
+  },
+  "Desolate": {
+    "cost": 5,
+    "effect": "70% chance of inflicting weak to one foe.",
+    "element": "ailment"
+  },
+  "Desolateon": {
+    "cost": 6,
+    "effect": "80% chance of inflicting weak to one foe.",
+    "element": "ailment"
+  },
+  "Desperate Blow": {
+    "cost": 7,
+    "effect": "Severe damage to one foe. Reduces HP by 10% (demerit).",
+    "element": "phys",
+    "power": 170
+  },
+  "Dia": {
+    "cost": 4,
+    "effect": "Miniscule HP recovery for one ally.",
+    "element": "recovery",
+    "power": 50
+  },
+  "Diara": {
+    "cost": 5,
+    "effect": "Light HP recover for one ally.",
+    "element": "recovery",
+    "power": 90
+  },
+  "Diarahan": {
+    "cost": 7,
+    "effect": "Heavy HP recovery for one ally.",
+    "element": "recovery",
+    "power": 170
+  },
+  "Diarama": {
+    "cost": 6,
+    "effect": "Medium HP recovery for one ally.",
+    "element": "recovery",
+    "power": 130
+  },
+  "Die for Me!": {
+    "cost": 7,
+    "effect": "Kills one foe.",
+    "element": "death"
+  },
+  "Discord": {
+    "cost": 3,
+    "effect": "Cancels Charge and Concentrate effect for all foes.",
+    "element": "support"
+  },
+  "Disturbance": {
+    "effect": "Increases ailment success rate by 10%.",
+    "element": "passive"
+  },
+  "Drain Death": {
+    "effect": "Drains death attacks.",
+    "element": "passive"
+  },
+  "Drain Elec": {
+    "effect": "Drains elec attacks.",
+    "element": "passive"
+  },
+  "Drain Expel": {
+    "effect": "Drains expel attacks.",
+    "element": "passive"
+  },
+  "Drain Fire": {
+    "effect": "Drains fire attacks.",
+    "element": "passive"
+  },
+  "Drain Force": {
+    "effect": "Drains force attacks.",
+    "element": "passive"
+  },
+  "Drain Ice": {
+    "effect": "Drains ice attacks.",
+    "element": "passive"
+  },
+  "Drain Phys": {
+    "effect": "Drains physical attacks.",
+    "element": "passive"
+  },
+  "Elec Amp": {
+    "effect": "Increases strength of elec attacks by 25%.",
+    "element": "passive"
+  },
+  "Elec Boost": {
+    "effect": "Increases strength of elec attacks by 15%.",
+    "element": "passive"
+  },
+  "Endure": {
+    "effect": "Revives once per battle with 1 HP.",
+    "element": "passive"
+  },
+  "Enduring Soul": {
+    "effect": "Revives once per battle with 200 HP.",
+    "element": "passive"
+  },
+  "Energy Drain": {
+    "cost": 7,
+    "effect": "Light damage to one foe and drains 1 MP. Recovers 25% damage.",
+    "element": "almighty",
+    "power": 100
+  },
+  "Escape": {
+    "effect": "Increases evasion against physical skills by 10%.",
+    "element": "passive"
+  },
+  "Evil Gaze": {
+    "cost": 4,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "death",
+    "power": 40
+  },
+  "Expel Amp": {
+    "effect": "Increases strength of expel attacks by 25%.",
+    "element": "passive"
+  },
+  "Expel Boost": {
+    "effect": "Increases strength of expel attacks by 15%.",
+    "element": "passive"
+  },
+  "Fatal Sword": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "phys",
+    "power": 140
+  },
+  "Final Blow": {
+    "effect": "Damage increases by 10% when hitting an enemy weakness.",
+    "element": "passive"
+  },
+  "Fire Amp": {
+    "effect": "Increases strength of fire attacks by 25%.",
+    "element": "passive"
+  },
+  "Fire Boost": {
+    "effect": "Increases strength of fire attacks by 15%.",
+    "element": "passive"
+  },
+  "Fire Breath": {
+    "cost": 4,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "fire",
+    "power": 40
+  },
+  "Fire of Sinai": {
+    "cost": 7,
+    "effect": "Miniscule damage to random foes 5 times.",
+    "element": "almighty",
+    "power": 45
+  },
+  "First Rank Blessed Body": {
+    "effect": "Increases vitality by 5.",
+    "element": "passive"
+  },
+  "First Rank Fierce Speed": {
+    "effect": "Increases agility by 5.",
+    "element": "passive"
+  },
+  "First Rank Good Luck": {
+    "effect": "Increases luck by 5.",
+    "element": "passive"
+  },
+  "First Rank Intelligence": {
+    "effect": "Increases magic by 5.",
+    "element": "passive"
+  },
+  "First Rank Strength": {
+    "effect": "Increases strength by 5.",
+    "element": "passive"
+  },
+  "Fog Breath": {
+    "cost": 6,
+    "effect": "Debuffs all foe's attack, accuracy, and evasion by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Force Amp": {
+    "effect": "Increases strength of force attacks by 25%.",
+    "element": "passive"
+  },
+  "Force Boost": {
+    "effect": "Increases strength of force attacks by 15%.",
+    "element": "passive"
+  },
+  "Gae Bolg": {
+    "cost": 7,
+    "effect": "Miniscule damage to random foes 4-6 times.",
+    "element": "phys",
+    "power": 50
+  },
+  "Gigantomachia": {
+    "cost": 8,
+    "effect": "Heavy damage to all foes.",
+    "element": "phys",
+    "power": 160
+  },
+  "Glacial Blast": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "ice",
+    "power": 50
+  },
+  "God's Bow": {
+    "cost": 7,
+    "effect": "Colossal damage to one foe. 50% chance of instant death.",
+    "element": "expel",
+    "power": 200
+  },
+  "God's Hand": {
+    "cost": 8,
+    "effect": "Colossal damage to one foe.",
+    "element": "phys",
+    "power": 200
+  },
+  "Good Luck": {
+    "effect": "Increases experience and macca earned in battle by 20%.",
+    "element": "passive"
+  },
+  "Gungnir": {
+    "cost": 7,
+    "effect": "Medium damage to all foes. 30% chance of critical.",
+    "element": "phys",
+    "power": 135
+  },
+  "Hades Blast": {
+    "cost": 6,
+    "effect": "Light damage to all foes.",
+    "element": "phys",
+    "power": 120
+  },
+  "Hades Mask": {
+    "effect": "Increases ailment success rate by 60%.",
+    "element": "passive"
+  },
+  "Hama": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "expel",
+    "power": 120
+  },
+  "Hamadyne": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "expel",
+    "power": 160
+  },
+  "Hamaon": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "expel",
+    "power": 140
+  },
+  "Hassou Tobi": {
+    "cost": 7,
+    "effect": "Miniscule damage to random foes 8 times.",
+    "element": "phys",
+    "power": 35
+  },
+  "Healing Amp": {
+    "effect": "Increases power of healing spells by 25%.",
+    "element": "passive"
+  },
+  "Healing Boost": {
+    "effect": "Increases power of healing spells by 15%.",
+    "element": "passive"
+  },
+  "Heat Wave": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes. 30% critical rate.",
+    "element": "phys",
+    "power": 70
+  },
+  "Hell Eyes": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "death",
+    "power": 180
+  },
+  "Hell Thrust": {
+    "cost": 7,
+    "effect": "Miniscule damage to random foes 4 times. 35% chance of charm.",
+    "element": "phys",
+    "power": 35
+  },
+  "Hellish Mask": {
+    "effect": "Increases ailment success rate by 35%.",
+    "element": "passive"
+  },
+  "High Counter": {
+    "effect": "50% chance of countering physical attacks with medium damage.",
+    "element": "passive"
+  },
+  "Holy Wrath": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "expel",
+    "power": 50
+  },
+  "Hundred Strikes": {
+    "effect": "Increases accuracy of physical skills by 10%.",
+    "element": "passive"
+  },
+  "Ice Age": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "ice",
+    "power": 180
+  },
+  "Ice Amp": {
+    "effect": "Increases strength of ice attacks by 25%.",
+    "element": "passive"
+  },
+  "Ice Boost": {
+    "effect": "Increases strength of ice attacks by 15%.",
+    "element": "passive"
+  },
+  "Ice Breath": {
+    "cost": 4,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "ice",
+    "power": 40
+  },
+  "Imposing Stance": {
+    "effect": "When ambushed, foes will have one less Turn Press in the first round.",
+    "element": "passive"
+  },
+  "Ju": {
+    "cost": 5,
+    "effect": "50% chance of inflicting curse to one foe.",
+    "element": "ailment"
+  },
+  "Judgement": {
+    "cost": 9,
+    "effect": "Light damage to all foes and buffs party's attack by 20% for 3 turns.",
+    "element": "almighty",
+    "power": 100
+  },
+  "Judgement Light": {
+    "cost": 4,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "expel",
+    "power": 40
+  },
+  "Juon": {
+    "cost": 6,
+    "effect": "60% chance of inflicting curse to one foe.",
+    "element": "ailment"
+  },
+  "Life Bonus": {
+    "effect": "Increases maximum HP by 10%.",
+    "element": "passive"
+  },
+  "Life Drain": {
+    "cost": 5,
+    "effect": "Light damage to one foe. Recovers 25% damage.",
+    "element": "almighty",
+    "power": 120
+  },
+  "Life Gain": {
+    "effect": "Increases maximum HP by 20%.",
+    "element": "passive"
+  },
+  "Life Surge": {
+    "effect": "Increases maximum HP by 30%.",
+    "element": "passive"
+  },
+  "Lunge": {
+    "cost": 4,
+    "effect": "Light damage to one foe. 30% critical rate.",
+    "element": "phys",
+    "power": 115
+  },
+  "Mabufu": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes.",
+    "element": "ice",
+    "power": 80
+  },
+  "Mabufudyne": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "ice",
+    "power": 120
+  },
+  "Mabufula": {
+    "cost": 6,
+    "effect": "Light damage to all foes.",
+    "element": "ice",
+    "power": 100
+  },
+  "Madesolate": {
+    "cost": 6,
+    "effect": "60% chance of inflicting weak to all foes.",
+    "element": "ailment"
+  },
+  "Madesolateon": {
+    "cost": 7,
+    "effect": "70% chance of inflicting weak to all foes.",
+    "element": "ailment"
+  },
+  "Madness Nails": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-3 times.",
+    "element": "phys",
+    "power": 65
+  },
+  "Mahama": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes.",
+    "element": "expel",
+    "power": 80
+  },
+  "Mahamadyne": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "expel",
+    "power": 120
+  },
+  "Mahamaon": {
+    "cost": 6,
+    "effect": "Light damage to all foes.",
+    "element": "expel",
+    "power": 100
+  },
+  "Maju": {
+    "cost": 6,
+    "effect": "40% chance of inflicting curse to all foes.",
+    "element": "ailment"
+  },
+  "Majuon": {
+    "cost": 7,
+    "effect": "50% chance of inflicting curse to all foes.",
+    "element": "ailment"
+  },
+  "Makajam": {
+    "cost": 5,
+    "effect": "40% chance of inflicting mute to one foe.",
+    "element": "ailment"
+  },
+  "Makajamaon": {
+    "cost": 6,
+    "effect": "50% chance of inflicting mute to one foe.",
+    "element": "ailment"
+  },
+  "Makara Break": {
+    "cost": 3,
+    "effect": "Cancels Makarakarn effect for all foes.",
+    "element": "support"
+  },
+  "Makara Shift": {
+    "effect": "When ambushed, start the battle with Makarakarn.",
+    "element": "passive"
+  },
+  "Makarakarn": {
+    "cost": 7,
+    "effect": "Reflects magic for all allies for one turn.",
+    "element": "support"
+  },
+  "Mamakajam": {
+    "cost": 6,
+    "effect": "30% chance of inflicting mute to all foes.",
+    "element": "ailment"
+  },
+  "Mamakajaon": {
+    "cost": 7,
+    "effect": "40% chance of inflicting mute to all foes.",
+    "element": "ailment"
+  },
+  "Mamari Karion": {
+    "cost": 7,
+    "effect": "40% chance of inflicting charm to all foes.",
+    "element": "ailment"
+  },
+  "Mamarin Karin": {
+    "cost": 6,
+    "effect": "30% chance of inflicting charm to all foes.",
+    "element": "ailment"
+  },
+  "Mamudo": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes.",
+    "element": "death",
+    "power": 80
+  },
+  "Mamudodyne": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "death",
+    "power": 120
+  },
+  "Mamudoon": {
+    "cost": 5,
+    "effect": "Light damage to all foes.",
+    "element": "death",
+    "power": 100
+  },
+  "Mana Aid": {
+    "effect": "Recovers MP by 10 when clearing a wave.",
+    "element": "passive"
+  },
+  "Mana Bonus": {
+    "effect": "Increases maximum MP by 1.",
+    "element": "passive"
+  },
+  "Mana Gain": {
+    "effect": "Increases maximum MP by 2.",
+    "element": "passive"
+  },
+  "Mapoisma": {
+    "cost": 6,
+    "effect": "30% chance of inflicting poison to all foes.",
+    "element": "ailment"
+  },
+  "Mapoismaon": {
+    "cost": 7,
+    "effect": "40% chance of inflicting poison to all foes.",
+    "element": "ailment"
+  },
+  "Maragi": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes.",
+    "element": "fire",
+    "power": 80
+  },
+  "Maragidyne": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "fire",
+    "power": 120
+  },
+  "Maragion": {
+    "cost": 6,
+    "effect": "Light damage to all foes.",
+    "element": "fire",
+    "power": 100
+  },
+  "Marebito": {
+    "effect": "Becomes immune to all ailments.",
+    "element": "passive"
+  },
+  "Marin Karin": {
+    "cost": 5,
+    "effect": "40% chance of inflicting charm to one foe.",
+    "element": "ailment"
+  },
+  "Marin Karion": {
+    "cost": 6,
+    "effect": "50% chance of inflicting charm to one foe.",
+    "element": "ailment"
+  },
+  "Mashibaboo": {
+    "cost": 6,
+    "effect": "30% chance of inflicting bind to all foes.",
+    "element": "ailment"
+  },
+  "Mashibabooon": {
+    "cost": 7,
+    "effect": "40% chance of inflicting bind to all foes.",
+    "element": "ailment"
+  },
+  "Massacre": {
+    "effect": "Increases damage of multi-target skills by 20%.",
+    "element": "passive"
+  },
+  "Massacre Glee": {
+    "effect": "Increases critical attack by 25%.",
+    "element": "passive"
+  },
+  "Mazan": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes.",
+    "element": "force",
+    "power": 80
+  },
+  "Mazandyne": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "force",
+    "power": 120
+  },
+  "Mazanma": {
+    "cost": 6,
+    "effect": "Light damage to all foes.",
+    "element": "force",
+    "power": 100
+  },
+  "Mazio": {
+    "cost": 5,
+    "effect": "Miniscule damage to all foes.",
+    "element": "elec",
+    "power": 80
+  },
+  "Maziodyne": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "elec",
+    "power": 120
+  },
+  "Mazionga": {
+    "cost": 6,
+    "effect": "Light damage to all foes.",
+    "element": "elec",
+    "power": 100
+  },
+  "Mecharmdi": {
+    "cost": 4,
+    "effect": "Removes charm from all allies.",
+    "element": "recovery"
+  },
+  "Meclosedi": {
+    "cost": 4,
+    "effect": "Removes mute from all allies.",
+    "element": "recovery"
+  },
+  "Mecursedi": {
+    "cost": 4,
+    "effect": "Removes curse from all allies.",
+    "element": "recovery"
+  },
+  "Media": {
+    "cost": 6,
+    "effect": "Miniscule HP recovery for all allies.",
+    "element": "recovery",
+    "power": 25
+  },
+  "Mediara": {
+    "cost": 7,
+    "effect": "Light HP recovery for all allies.",
+    "element": "recovery",
+    "power": 60
+  },
+  "Mediarahan": {
+    "cost": 9,
+    "effect": "Heavy HP recovery for all allies.",
+    "element": "recovery",
+    "power": 130
+  },
+  "Mediarama": {
+    "cost": 8,
+    "effect": "Medium HP recovery for all allies.",
+    "element": "recovery",
+    "power": 95
+  },
+  "Megaton Press": {
+    "cost": 6,
+    "effect": "Miniscule damage to all foes. 30% critical rate.",
+    "element": "phys",
+    "power": 90
+  },
+  "Megaton Raid": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "phys",
+    "power": 180
+  },
+  "Megido": {
+    "cost": 6,
+    "effect": "Miniscule damage to all foes.",
+    "element": "almighty",
+    "power": 80
+  },
+  "Megidola": {
+    "cost": 7,
+    "effect": "Light damage to all foes.",
+    "element": "almighty",
+    "power": 100
+  },
+  "Megidolaon": {
+    "cost": 8,
+    "effect": "Light damage to all foes.",
+    "element": "almighty",
+    "power": 120
+  },
+  "Meparaladi": {
+    "cost": 3,
+    "effect": "Removes bind from all allies.",
+    "element": "recovery"
+  },
+  "Meposumudi": {
+    "cost": 4,
+    "effect": "Removes poison from all allies.",
+    "element": "recovery"
+  },
+  "Meweakdi": {
+    "cost": 4,
+    "effect": "Removes weak from all allies.",
+    "element": "recovery"
+  },
+  "Mind Leak": {
+    "cost": 5,
+    "effect": "Miniscule damage to one foes and reduces their MP by 3.",
+    "element": "almighty",
+    "power": 80
+  },
+  "Mjolnir": {
+    "cost": 7,
+    "effect": "Miniscule damage to random foes 3-5 times.",
+    "element": "elec",
+    "power": 60
+  },
+  "Monstrous Intuition": {
+    "effect": "Reduces enemy's critical rate against self by 25%.",
+    "element": "passive"
+  },
+  "Moon's Blessing": {
+    "effect": "Decreases MP consumption by 1.",
+    "element": "passive"
+  },
+  "Morning Star": {
+    "cost": 8,
+    "effect": "Medium damage to all foes.",
+    "element": "almighty",
+    "power": 135
+  },
+  "Mortal Jihad": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe. 30% critical rate.",
+    "element": "phys",
+    "power": 145
+  },
+  "Mow Down": {
+    "cost": 4,
+    "effect": "Miniscule damage to all foes.",
+    "element": "phys",
+    "power": 80
+  },
+  "Mudo": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "death",
+    "power": 120
+  },
+  "Mudodyne": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "death",
+    "power": 160
+  },
+  "Mudoon": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "death",
+    "power": 140
+  },
+  "Mute Pursuit": {
+    "effect": "Increases damage by 30% against muted foes.",
+    "element": "passive"
+  },
+  "Myriad Slashes": {
+    "cost": 7,
+    "effect": "Miniscule damage to random foes 2-5 times.",
+    "element": "phys",
+    "power": 65
+  },
+  "Natural Cure": {
+    "effect": "Increases ailment recovery rate by 20%.",
+    "element": "passive"
+  },
+  "Nihil Claw": {
+    "cost": 6,
+    "effect": "Miniscule damage to random foes 2-3 times.",
+    "element": "phys",
+    "power": 75
+  },
+  "Null Bind": {
+    "effect": "Becomes immune to bind.",
+    "element": "passive"
+  },
+  "Null Chakra": {
+    "effect": "Increases natural MP recovery by 1.",
+    "element": "passive"
+  },
+  "Null Charm": {
+    "effect": "Becomes immune to charm.",
+    "element": "passive"
+  },
+  "Null Curse": {
+    "effect": "Becomes immune to curse.",
+    "element": "passive"
+  },
+  "Null Dark Zone": {
+    "effect": "Becomes immune to the effect of dark zones.",
+    "element": "passive"
+  },
+  "Null Death": {
+    "effect": "Nulls death attacks.",
+    "element": "passive"
+  },
+  "Null Elec": {
+    "effect": "Nulls electric attacks.",
+    "element": "passive"
+  },
+  "Null Expel": {
+    "effect": "Nulls expel attacks.",
+    "element": "passive"
+  },
+  "Null Fire": {
+    "effect": "Nulls fire attacks.",
+    "element": "passive"
+  },
+  "Null Force": {
+    "effect": "Nulls force attacks.",
+    "element": "passive"
+  },
+  "Null Ice": {
+    "effect": "Nulls ice attacks.",
+    "element": "passive"
+  },
+  "Null Mute": {
+    "effect": "Becomes immune to mute.",
+    "element": "passive"
+  },
+  "Null Phys": {
+    "effect": "Nulls physical attacks.",
+    "element": "passive"
+  },
+  "Null Poison": {
+    "effect": "Becomes immune to poison.",
+    "element": "passive"
+  },
+  "Null Poison Floor": {
+    "effect": "Takes no damage when walking on damage floor.",
+    "element": "passive"
+  },
+  "Null Weak": {
+    "effect": "Becomes immune to weak.",
+    "element": "passive"
+  },
+  "Off-season Flowering": {
+    "effect": "Increases ailment success rate by 20%.",
+    "element": "passive"
+  },
+  "Oni-Kagura": {
+    "cost": 5,
+    "effect": "Medium damage to one foe. 30% critical rate.",
+    "element": "phys",
+    "power": 130
+  },
+  "Outbreak": {
+    "cost": 6,
+    "effect": "60% chance of inflicting weak to random foes 1-4 times.",
+    "element": "ailment"
+  },
+  "Paraladi": {
+    "cost": 3,
+    "effect": "Removes bind from one ally.",
+    "element": "recovery"
+  },
+  "Phys Amp": {
+    "effect": "Increases strength of physical attacks by 25%.",
+    "element": "passive"
+  },
+  "Phys Boost": {
+    "effect": "Increases strength of physical attacks by 15%.",
+    "element": "passive"
+  },
+  "Pierce Death": {
+    "effect": "Allows death attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Pierce Elec": {
+    "effect": "Allows elec attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Pierce Expel": {
+    "effect": "Allows expel attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Pierce Fire": {
+    "effect": "Allows fire attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Pierce Force": {
+    "effect": "Allows force attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Pierce Ice": {
+    "effect": "Allows ice attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Pierce Phys": {
+    "effect": "Allows physical attacks to ignore all resistances except Repel.",
+    "element": "passive"
+  },
+  "Poisma": {
+    "cost": 5,
+    "effect": "40% chance of inflicting poison to one foe.",
+    "element": "ailment"
+  },
+  "Poismaon": {
+    "cost": 6,
+    "effect": "50% chance of inflicting poison to one foe.",
+    "element": "ailment"
+  },
+  "Poison Breath": {
+    "cost": 6,
+    "effect": "30% chance of inflicting poison to random foes 2-4 times.",
+    "element": "ailment"
+  },
+  "Poison Floor Cross": {
+    "effect": "Reduces damage taken when walking on damage floor by 50%.",
+    "element": "passive"
+  },
+  "Poison Floor Walk": {
+    "effect": "Reduces damage taken when walking on damage floor by 25%.",
+    "element": "passive"
+  },
+  "Poison Pursuit": {
+    "effect": "Increases damage by 30% against poisoned foes.",
+    "element": "passive"
+  },
+  "Posumudi": {
+    "cost": 3,
+    "effect": "Removes poison from one ally.",
+    "element": "recovery"
+  },
+  "Pralaya": {
+    "cost": 8,
+    "effect": "Medium damage to all foes.",
+    "element": "almighty",
+    "power": 125
+  },
+  "Prayer": {
+    "cost": 5,
+    "effect": "Removes any ailments from all allies.",
+    "element": "recovery"
+  },
+  "Prominence": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "fire",
+    "power": 50
+  },
+  "Purgatory": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "death",
+    "power": 50
+  },
+  "Ragnarok": {
+    "cost": 7,
+    "effect": "Colossal damage to one foe.",
+    "element": "fire",
+    "power": 215
+  },
+  "Rakukaja": {
+    "cost": 5,
+    "effect": "Increases party's defense by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Rakunda": {
+    "cost": 5,
+    "effect": "Decreases all foe's defense by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Rampage": {
+    "cost": 3,
+    "effect": "Miniscule damage to random foes 2-3 times.",
+    "element": "phys",
+    "power": 45
+  },
+  "Rebellion": {
+    "cost": 6,
+    "effect": "Guarantees a critical hit for the next physical attack (self).",
+    "element": "support"
+  },
+  "Recarm": {
+    "cost": 6,
+    "effect": "Revives one ally with 10% HP.",
+    "element": "recovery"
+  },
+  "Recarmdra": {
+    "cost": 8,
+    "effect": "Revives all allies with full HP. User dies (demerit).",
+    "element": "recovery"
+  },
+  "Redia": {
+    "cost": 4,
+    "effect": "Grants small HP recovery for one ally for three actions.",
+    "element": "support"
+  },
+  "Redia Break": {
+    "cost": 3,
+    "effect": "Cancels Redia effect for all foes.",
+    "element": "support"
+  },
+  "Repel Death": {
+    "effect": "Repels death attacks.",
+    "element": "passive"
+  },
+  "Repel Elec": {
+    "effect": "Repels elec attacks.",
+    "element": "passive"
+  },
+  "Repel Expel": {
+    "effect": "Repels expel attacks.",
+    "element": "passive"
+  },
+  "Repel Fire": {
+    "effect": "Repels fire attacks.",
+    "element": "passive"
+  },
+  "Repel Force": {
+    "effect": "Repels force attacks.",
+    "element": "passive"
+  },
+  "Repel Ice": {
+    "effect": "Repels ice attacks.",
+    "element": "passive"
+  },
+  "Resist Bind": {
+    "effect": "Reduces chances of being bound by 50%.",
+    "element": "passive"
+  },
+  "Resist Charm": {
+    "effect": "Reduces chances of being charmed by 50%.",
+    "element": "passive"
+  },
+  "Resist Curse": {
+    "effect": "Reduces chances of being cursed by 50%.",
+    "element": "passive"
+  },
+  "Resist Death": {
+    "effect": "Resists death attacks.",
+    "element": "passive"
+  },
+  "Resist Elec": {
+    "effect": "Resists electric attacks.",
+    "element": "passive"
+  },
+  "Resist Expel": {
+    "effect": "Resists expel attacks.",
+    "element": "passive"
+  },
+  "Resist Fire": {
+    "effect": "Resists fire attacks.",
+    "element": "passive"
+  },
+  "Resist Force": {
+    "effect": "Resists force attacks.",
+    "element": "passive"
+  },
+  "Resist Ice": {
+    "effect": "Resists ice attacks.",
+    "element": "passive"
+  },
+  "Resist Mute": {
+    "effect": "Reduces chances of being muted by 50%.",
+    "element": "passive"
+  },
+  "Resist Phys": {
+    "effect": "Resists physical attacks.",
+    "element": "passive"
+  },
+  "Resist Poison": {
+    "effect": "Reduces chances of being poisoned by 50%.",
+    "element": "passive"
+  },
+  "Resist Weak": {
+    "effect": "Reduces chances of being weakened by 50%.",
+    "element": "passive"
+  },
+  "Ruthless Blow": {
+    "effect": "Damage increases by 20% when hitting an enemy weakness.",
+    "element": "passive"
+  },
+  "Salvation": {
+    "cost": 10,
+    "effect": "Medium HP recovery for all allies and removes ailments.",
+    "element": "recovery",
+    "power": 95
+  },
+  "Samarecarm": {
+    "cost": 8,
+    "effect": "Revives one ally with full HP.",
+    "element": "recovery"
+  },
+  "Sea of Chaos": {
+    "cost": 9,
+    "effect": "Light damage to all foes and debuffs their defense by 20% for 3 turns.",
+    "element": "almighty",
+    "power": 100
+  },
+  "Second Rank Blessed Body": {
+    "effect": "Increases vitality by 10.",
+    "element": "passive"
+  },
+  "Second Rank Fierce Speed": {
+    "effect": "Increases agility by 10.",
+    "element": "passive"
+  },
+  "Second Rank Good Luck": {
+    "effect": "Increases luck by 10.",
+    "element": "passive"
+  },
+  "Second Rank Intelligence": {
+    "effect": "Increases magic by 10.",
+    "element": "passive"
+  },
+  "Second Rank Strength": {
+    "effect": "Increases strength by 10.",
+    "element": "passive"
+  },
+  "Self-Healing": {
+    "effect": "Increases ailment recovery rate by 30%.",
+    "element": "passive"
+  },
+  "Sexy Dance": {
+    "cost": 6,
+    "effect": "30% chance of inflicting charm to random foes 2-3 times.",
+    "element": "ailment"
+  },
+  "Shibaboo": {
+    "cost": 5,
+    "effect": "40% chance of inflicting bind to one foe.",
+    "element": "ailment"
+  },
+  "Shibabooon": {
+    "cost": 6,
+    "effect": "50% chance of inflicting bind to one foe.",
+    "element": "ailment"
+  },
+  "Shock": {
+    "cost": 4,
+    "effect": "Minuscule damage to random foes 2-4 times.",
+    "element": "elec",
+    "power": 40
+  },
+  "Silent Prayer": {
+    "cost": 7,
+    "effect": "Removes any ailments from all participants in battle.",
+    "element": "recovery"
+  },
+  "Slash": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "phys",
+    "power": 120
+  },
+  "Slaughter": {
+    "effect": "Increases damage of multi-target skills by 10%.",
+    "element": "passive"
+  },
+  "Small Escape": {
+    "effect": "Increases evasion against physical skills by 20%.",
+    "element": "passive"
+  },
+  "Soul Drain": {
+    "cost": 8,
+    "effect": "Medium damage to one foe and drains 1 MP. Recovers 40% damage.",
+    "element": "almighty",
+    "power": 140
+  },
+  "Speed Master": {
+    "effect": "Increases effect of battle speed by 50%.",
+    "element": "passive"
+  },
+  "Spirit Drain": {
+    "cost": 6,
+    "effect": "Light damage to one foe and drains 1 MP.",
+    "element": "almighty",
+    "power": 100
+  },
+  "Stealth": {
+    "effect": "Increases evasion against physical skills by 20% and revives once per battle with 1 HP.",
+    "element": "passive"
+  },
+  "Sukukaja": {
+    "cost": 5,
+    "effect": "Increases party's accuracy and evasion by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Sukunda": {
+    "cost": 5,
+    "effect": "Decreases all foe's accuracy and evasion by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Tarukaja": {
+    "cost": 5,
+    "effect": "Increases party's attack by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Tarunda": {
+    "cost": 5,
+    "effect": "Decreases all foe's attack by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Taunt": {
+    "cost": 5,
+    "effect": "Debuffs all foe's defense and buffs their attack by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Tempest Slash": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-5 times.",
+    "element": "phys",
+    "power": 50
+  },
+  "Tenson Kourin": {
+    "cost": 8,
+    "effect": "Buffs party's attack, defense, accuracy, and evasion by 20% for 6 turns.",
+    "element": "support"
+  },
+  "Tetra Break": {
+    "cost": 3,
+    "effect": "Cancels Tetrakarn effect for all foes.",
+    "element": "support"
+  },
+  "Tetra Shift": {
+    "effect": "When ambushed, start the battle with Tetrakarn.",
+    "element": "passive"
+  },
+  "Tetrakarn": {
+    "cost": 7,
+    "effect": "Reflects physical for all allies for one turn.",
+    "element": "support"
+  },
+  "Third Rank Blessed Body": {
+    "effect": "Increases vitality by 15.",
+    "element": "passive"
+  },
+  "Third Rank Fierce Speed": {
+    "effect": "Increases agility by 15.",
+    "element": "passive"
+  },
+  "Third Rank Good Luck": {
+    "effect": "Increases luck by 15.",
+    "element": "passive"
+  },
+  "Third Rank Intelligence": {
+    "effect": "Increases magic by 15.",
+    "element": "passive"
+  },
+  "Third Rank Strength": {
+    "effect": "Increases strength by 15.",
+    "element": "passive"
+  },
+  "Thousand Strikes": {
+    "effect": "Increases accuracy of physical skills by 20%.",
+    "element": "passive"
+  },
+  "Thunder Reign": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "elec",
+    "power": 180
+  },
+  "Thunderclap": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "expel",
+    "power": 180
+  },
+  "Titanomachia": {
+    "cost": 7,
+    "effect": "Light damage to all foes. 30% critical rate.",
+    "element": "phys",
+    "power": 110
+  },
+  "Toxic Sting": {
+    "cost": 5,
+    "effect": "Light damage to one foe. 40% chance of poison.",
+    "element": "phys",
+    "power": 120
+  },
+  "Trap-Free": {
+    "effect": "Reduces damage taken from damage floors and becomes immune to the effect of dark zones.",
+    "element": "passive"
+  },
+  "Trickster": {
+    "effect": "20% chance of not using a Turn Press when hitting an weakness.",
+    "element": "passive"
+  },
+  "Trisagion": {
+    "cost": 7,
+    "effect": "Severe damage to one foe.",
+    "element": "fire",
+    "power": 180
+  },
+  "Twister": {
+    "cost": 5,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "force",
+    "power": 50
+  },
+  "Vajra Blast": {
+    "cost": 5,
+    "effect": "Light damage to all foes.",
+    "element": "phys",
+    "power": 100
+  },
+  "Victory Cry": {
+    "effect": "Recovers 30% HP when clearing a wave.",
+    "element": "passive"
+  },
+  "Vorpal Blade": {
+    "cost": 7,
+    "effect": "Medium damage to all foes.",
+    "element": "phys",
+    "power": 140
+  },
+  "War Cry": {
+    "cost": 6,
+    "effect": "Debuffs all foe's attack and defense by 20% for 3 turns.",
+    "element": "support"
+  },
+  "Weakdi": {
+    "cost": 3,
+    "effect": "Removes weak from one ally.",
+    "element": "recovery"
+  },
+  "White Noise": {
+    "cost": 6,
+    "effect": "30% chance of inflicting mute to random foes 2-3 times.",
+    "element": "ailment"
+  },
+  "Wild Intuition": {
+    "effect": "Reduces enemy's critical rate against self by 15%.",
+    "element": "passive"
+  },
+  "Wind Breath": {
+    "cost": 4,
+    "effect": "Miniscule damage to random foes 2-4 times.",
+    "element": "force",
+    "power": 40
+  },
+  "Zan": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "force",
+    "power": 120
+  },
+  "Zandyne": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "force",
+    "power": 160
+  },
+  "Zanma": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "force",
+    "power": 140
+  },
+  "Zio": {
+    "cost": 4,
+    "effect": "Light damage to one foe.",
+    "element": "elec",
+    "power": 120
+  },
+  "Ziodyne": {
+    "cost": 6,
+    "effect": "Heavy damage to one foe.",
+    "element": "elec",
+    "power": 160
+  },
+  "Zionga": {
+    "cost": 5,
+    "effect": "Medium damage to one foe.",
+    "element": "elec",
+    "power": 140
+  }
+}

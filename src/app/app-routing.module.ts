@@ -106,6 +106,11 @@ const appRoutes: Routes = [
     loadChildren: './desu2/compendium.module#CompendiumModule',
     data: { appName: 'Devil Survivor 2 Record Breaker' }
   },
+  {
+    path: 'dx2',
+    loadChildren: './dx2/compendium.module#CompendiumModule',
+    data: { appName: 'Dx2 Shin Megami Tensei: Liberation' }
+  },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

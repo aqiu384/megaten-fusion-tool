@@ -1,6 +1,7 @@
-export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] }[] = [
+export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, srcs: string[] }[] = [
   {
     game: 'Shin Megami Tensei III: Nocturne',
+    abbr: 'Shin Megami Tensei Nocturne',
     tool: 'smt3',
     srcs: [
       'http://www.phpsimplicity.com/heretic/',
@@ -9,6 +10,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
   },
   {
     game: 'Shin Megami Tensei: Strange Journey',
+    abbr: 'SMT Strange Journey',
     tool: 'smtsj',
     srcs: [
       'https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384',
@@ -17,6 +19,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
   },
   {
     game: 'Shin Megami Tensei: Strange Journey Redux',
+    abbr: 'SMT Strange Journey Redux',
     tool: 'smtdsj',
     srcs: [
       'https://www.gamefaqs.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384',
@@ -49,6 +52,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
   },
   {
     game: 'Raidou Kuzunoha vs. The Soulless Army',
+    abbr: 'Raidou Kuzunoha vs. Soulless Army',
     tool: 'krch',
     srcs: [
       'http://kaerukyo.net/html/dds_database/devil.php?title=22',
@@ -80,6 +84,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
   },
   {
     game: 'Persona 3 FES: The Answer',
+    abbr: 'Persona 3 FES Answer',
     tool: 'p3aeg',
     srcs: [
       'https://www.gamefaqs.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404'
@@ -155,6 +160,14 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, srcs: string[] 
     srcs: [
       'http://spwiki.net/ds2br/',
       'http://i40.tinypic.com/f2j6mo.png'
+    ]
+  },
+  {
+    game: 'Dx2 Shin Megami Tensei: Liberation',
+    tool: 'dx2',
+    srcs: [
+      'https://gamewith.jp/d2-megaten-l',
+      'http://megamitensei.wikia.com/wiki/List_of_Dx2_Shin_Megami_Tensei:_Liberation_Skills'
     ]
   }
 ];

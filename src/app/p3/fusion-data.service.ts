@@ -14,11 +14,13 @@ import * as VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import * as FES_DEMON_DATA_JSON from './data/fes-demon-data.json';
 import * as ANS_DEMON_DATA_JSON from './data/ans-demon-data.json';
 import * as P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
+import * as ORPHEUS_TELOS_JSON from './data/orpheus-telos.json';
 
 import * as VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
 import * as FES_SKILL_DATA_JSON from './data/fes-skill-data.json';
 import * as P3P_SKILL_DATA_JSON from './data/p3p-skill-data.json';
 
+import * as PAIR_SPECIAL_RECIPES from './data/pair-special-recipes.json';
 import * as VAN_SPECIAL_RECIPES from './data/van-special-recipes.json';
 import * as FES_SPECIAL_RECIPES from './data/fes-special-recipes.json';
 
@@ -50,19 +52,22 @@ export class FusionDataService implements IFusionTrioService {
     const game = router.url.split('/')[1];
     const demonDataJsons = [VAN_DEMON_DATA_JSON];
     const skillDataJsons = [VAN_SKILL_DATA_JSON];
-    const specialRecipes = [VAN_SPECIAL_RECIPES];
+    let specialRecipes = [PAIR_SPECIAL_RECIPES, VAN_SPECIAL_RECIPES];
     let fusionChart = VAN_FUSION_CHART_JSON;
 
     if (game !== 'p3') {
       this.appName = 'Persona 3 FES';
       demonDataJsons.push(FES_DEMON_DATA_JSON);
+      demonDataJsons.push(ORPHEUS_TELOS_JSON);
       skillDataJsons.push(FES_SKILL_DATA_JSON);
       specialRecipes.push(FES_SPECIAL_RECIPES);
       fusionChart = FES_FUSION_CHART_JSON;
 
       if (game === 'p3aeg') {
         this.appName = 'Persona 3 FES: The Answer';
+        demonDataJsons.pop();
         demonDataJsons.push(ANS_DEMON_DATA_JSON);
+        specialRecipes = [PAIR_SPECIAL_RECIPES];
       } else if (game === 'p3p') {
         this.appName = 'Persona 3 Portable';
         this.skillsHaveFuse = true;

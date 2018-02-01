@@ -12,6 +12,20 @@ export class SkillCostToStringPipe implements PipeTransform {
   }
 }
 
+const SKILL_LVLS = {
+  106: 'Rare Auction',
+  107: 'Bargain Auction',
+  110: 'Base Arch',
+  111: 'Attack Arch',
+  112: 'Support Arch',
+  113: 'Passive Arch',
+  114: 'Resist Arch',
+  115: 'Attack Gacha',
+  116: 'Support Gacha',
+  117: 'Passive Gacha',
+  118: 'Resist Gacha'
+};
+
 @Pipe({ name: 'skillLevelToString' })
 export class SkillLevelToStringPipe implements PipeTransform {
   transform(value: number): string {
@@ -19,20 +33,32 @@ export class SkillLevelToStringPipe implements PipeTransform {
     if (value < 100) { return value.toString(); }
     if (value === 100) { return 'Max Loyalty'; }
     if (value < 106) { return `${value - 100}-star Auction`; }
-    if (value === 106) { return 'Bargain Auction'; }
-    return 'Rare Auction';
+    return SKILL_LVLS[value];
   }
 }
+
+const SKILL_LVL_ABBRS = {
+  106: '(Ab)',
+  107: '(Ar)',
+  110: '(Ab)',
+  111: '(Aa)',
+  112: '(As)',
+  113: '(Ap)',
+  114: '(Ar)',
+  115: '(Ga)',
+  116: '(Gs)',
+  117: '(Gp)',
+  118: '(Gr)'
+};
 
 @Pipe({ name: 'skillLevelToShortString' })
 export class SkillLevelToShortStringPipe implements PipeTransform {
   transform(value: number): string {
     if (value === 0) { return ''; }
     if (value < 100) { return `(${value.toString()})`; }
-    if (value === 100) { return '(ML)'; }
+    if (value === 100) { return '(Lx)'; }
     if (value < 106) { return `(A${value - 100})`; }
-    if (value === 106) { return '(AB)'; }
-    return '(AR)';
+    return SKILL_LVL_ABBRS[value];
   }
 }
 
