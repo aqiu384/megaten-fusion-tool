@@ -67,8 +67,8 @@ export class Compendium implements ICompendium {
           resists: json.resists.split('').map(char => ResistCodes[char]),
           inherits: json.inherits.split('').map(char => char === 'o'),
           ailments: (json.ailments ? json.ailments : '---------').split('').map(char => ResistCodes[char]),
-          skills: json.skills.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
-          source: json.source.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
+          skills: json.skills.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
+          source: json.source.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         });
       }
     }
@@ -83,7 +83,7 @@ export class Compendium implements ICompendium {
           inherit: json.element,
           rank: 99,
           learnedBy: [],
-          dsource: []
+          transfer: []
         }, json);
       }
     }
@@ -136,11 +136,11 @@ export class Compendium implements ICompendium {
       inversions[demon.race][demon.lvl] = name;
 
       for (const [skill, lvl] of Object.entries(demon.skills)) {
-        skills[skill].learnedBy.push({ demon: name, level: 0 });
+        skills[skill].learnedBy.push({ demon: name, level: lvl });
       }
 
       for (const [skill, lvl] of Object.entries(demon.source)) {
-        skills[skill].dsource.push(name);
+        skills[skill].transfer.push({ demon: name, level: lvl });
       }
     }
 

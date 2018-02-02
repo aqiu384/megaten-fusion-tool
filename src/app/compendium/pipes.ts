@@ -13,8 +13,8 @@ export class SkillCostToStringPipe implements PipeTransform {
 }
 
 const SKILL_LVLS = {
-  106: 'Rare Auction',
-  107: 'Bargain Auction',
+  106: 'Bargain Auction',
+  107: 'Rare Auction',
   110: 'Base Arch',
   111: 'Attack Arch',
   112: 'Support Arch',
@@ -29,7 +29,7 @@ const SKILL_LVLS = {
 @Pipe({ name: 'skillLevelToString' })
 export class SkillLevelToStringPipe implements PipeTransform {
   transform(value: number): string {
-    if (value === 0) { return 'Innate'; }
+    if (value <= 0) { return 'Innate'; }
     if (value < 100) { return value.toString(); }
     if (value === 100) { return 'Max Loyalty'; }
     if (value < 106) { return `${value - 100}-star Auction`; }
@@ -54,7 +54,7 @@ const SKILL_LVL_ABBRS = {
 @Pipe({ name: 'skillLevelToShortString' })
 export class SkillLevelToShortStringPipe implements PipeTransform {
   transform(value: number): string {
-    if (value === 0) { return ''; }
+    if (value <= 0) { return ''; }
     if (value < 100) { return `(${value.toString()})`; }
     if (value === 100) { return '(Lx)'; }
     if (value < 106) { return `(A${value - 100})`; }

@@ -13,4 +13,5 @@ export interface Skill extends BaseSkill {
   power: number;
   rank: number;
   learnedBy: { demon: string, level: number }[];
+  transfer: { demon: string, level: number }[];
 }

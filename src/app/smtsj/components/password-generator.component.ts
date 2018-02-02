@@ -167,12 +167,12 @@ export class PasswordGeneratorComponent implements OnChanges {
   blankSkill: Skill = {
     code: 0, power: 0, accuracy: 0, cost: 0, level: 0, rank: 0,
     name: '-', element: '-', inherit: '-', effect: '-',
-    learnedBy: [], dsource: []
+    learnedBy: [], transfer: []
   };
   unknownSkill: Skill = {
     code: 0, power: 0, accuracy: 0, cost: 0, level: 0, rank: 0,
     name: '???', element: '-', inherit: '-', effect: '-',
-    learnedBy: [], dsource: []
+    learnedBy: [], transfer: []
   };
 
   constructor(private fb: FormBuilder) {

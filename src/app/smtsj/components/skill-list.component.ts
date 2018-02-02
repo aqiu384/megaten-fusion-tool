@@ -12,7 +12,7 @@ import { FusionDataService } from '../fusion-data.service';
     <app-smt-skill-list
       [elemOrder]="elemOrder"
       [inheritOrder]="inheritOrder"
-      [hasDsource]="true"
+      [transferTitle]="'D-Source'"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `

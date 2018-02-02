@@ -18,7 +18,7 @@ export interface Skill extends BaseSkill {
   inherit: string;
   rank: number;
   learnedBy: { demon: string, level: number }[];
-  dsource: string[];
+  transfer: { demon: string, level: number }[];
 }
 
 export interface DecodedDemon {

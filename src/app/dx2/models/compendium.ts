@@ -44,7 +44,7 @@ export class Compendium implements ICompendium {
         stats:   [json.rank].concat(json.stats),
         mstats:  [6].concat(json.mstats),
         resists: json.resists.split('').map(char => ResistCodes[char]),
-        skills:  json.innate.reduce((acc, skill) => { acc[skill] = 0; return acc; }, {}),
+        skills:  json.innate.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         learned: json.learned.reduce((acc, skill, i) => { acc[skill] = 110 + i; return acc; }, {}),
         gacha:   json.gacha.reduce((acc, skill, i) => { acc[skill] = 115 + i; return acc; }, {})
       };
@@ -61,7 +61,8 @@ export class Compendium implements ICompendium {
         rank:    json.power / 10 || 0,
         effect:  json.effect,
         level:   0,
-        learnedBy: []
+        learnedBy: [],
+        transfer: []
       };
     }
 
@@ -83,17 +84,20 @@ export class Compendium implements ICompendium {
     for (const [name, demon] of Object.entries(demons)) {
       inversions[demon.race][demon.lvl] = name;
 
-      for (const skillset of [demon.skills, demon.learned, demon.gacha]) {
-        for (const [skill, lvl] of Object.entries(skillset)) {
+      for (const [skill, lvl] of Object.entries(demon.skills)) {
+        if (lvl === -3) {
+          skills[skill].transfer.push({ demon: name, level: lvl });
+        } else {
           skills[skill].learnedBy.push({ demon: name, level: lvl });
         }
       }
-    }
 
-    for (const [name, skill] of Object.entries(skills)) {
-      if (skill.learnedBy.length === 1 && skill.learnedBy[0].level === 0) {
-        skill.unique = true;
-        skill.rank = 99;
+      for (const [skill, lvl] of Object.entries(demon.learned)) {
+        skills[skill].learnedBy.push({ demon: name, level: lvl });
+      }
+
+      for (const [skill, lvl] of Object.entries(demon.gacha)) {
+        skills[skill].transfer.push({ demon: name, level: lvl });
       }
     }
 

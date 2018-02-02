@@ -26,7 +26,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
       <th>Learned By</th>
       <th *ngIf="hasFuse">Card</th>
       <th *ngIf="hasTalk">Negotiate</th>
-      <th *ngIf="hasDsource">D-Source</th>
+      <th *ngIf="transferTitle">{{ transferTitle }}</th>
       <th *ngIf="hasPrereq">Requires</th>
     </tr>
   `,
@@ -42,8 +42,8 @@ export class SkillListHeaderComponent extends SortedTableHeaderComponent impleme
   @Input() hasRank = true;
   @Input() hasTalk = false;
   @Input() hasFuse = false;
-  @Input() hasDsource = false;
   @Input() hasPrereq = false;
+  @Input() transferTitle = '';
   skillHeaderLen = 4;
   acquireHeaderLen = 1;
 
@@ -64,7 +64,7 @@ export class SkillListHeaderComponent extends SortedTableHeaderComponent impleme
       this.acquireHeaderLen += 1;
     } if (this.hasFuse) {
       this.acquireHeaderLen += 1;
-    } if (this.hasDsource) {
+    } if (this.transferTitle) {
       this.acquireHeaderLen += 1;
     } if (this.hasPrereq) {
       this.acquireHeaderLen += 1;
