@@ -30,11 +30,13 @@ export const Races = [
   'Foul',
   'Tyrant',
   'Haunt',
+  'Avian',
   'Fiend',
   'Hero',
   'Rumor',
   'UMA',
-  'Enigma'
+  'Enigma',
+  'Zealot'
 ];
 
 export const ResistanceElements = [
