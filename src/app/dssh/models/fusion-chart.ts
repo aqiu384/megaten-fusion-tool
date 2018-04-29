@@ -59,7 +59,7 @@ export class FusionChart extends SmtFusionChart {
 
     this.races = Races.filter(race => FusionChart.UNFUSABLE_RACES.indexOf(race) === -1);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
-    this.lvlModifier = isTripleChart ? 4 : 3;
+    this.lvlModifier = isTripleChart ? 4 : 2.5;
 
     if (!isTripleChart) {
       this.initNormalEntityFusions();
