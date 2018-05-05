@@ -7,9 +7,11 @@ import * as DARK_CHART_JSON from '../data/dark-chart.json';
 import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
-  static readonly DARK_RACES = SmtFusionChart.DARK_RACES.concat([ 'Undead', 'Foul' ]);
+  static readonly LIGHT_RACES = SmtFusionChart.LIGHT_RACES.concat(['Zealot']);
+  static readonly DARK_RACES = SmtFusionChart.DARK_RACES
+    .filter(r => r !== 'Zealot')
+    .concat([ 'Undead', 'Foul' ]);
   static readonly UNFUSABLE_RACES = [
-    'Enigma', 'Entity', 'Reaper', 'Zealot', 'UMA',
     'Element', 'Mitama', 'Rumor', 'Hero', 'General',
     'Zoma', 'Ranger'
   ];
@@ -64,7 +66,7 @@ export class FusionChart extends SmtFusionChart {
   }
 
   getLightDark(race: string): number {
-    if (SmtFusionChart.LIGHT_RACES.indexOf(race) !== -1) {
+    if (FusionChart.LIGHT_RACES.indexOf(race) !== -1) {
       return 1;
     } else if (FusionChart.DARK_RACES.indexOf(race) !== -1) {
       return -1;

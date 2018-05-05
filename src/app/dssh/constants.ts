@@ -10,15 +10,15 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 
 export const Races = [
   'Deity',
-  'Megami',
   'Enigma',
   'Entity',
+  'Zealot',
+  'Megami',
   'Fury',
   'Lady',
   'Kishin',
   'Vile',
   'Reaper',
-  'Zealot',
   'Genma',
   'Yoma',
   'Fairy',
