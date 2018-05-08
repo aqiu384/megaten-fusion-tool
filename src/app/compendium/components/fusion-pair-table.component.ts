@@ -10,18 +10,19 @@ import { CompendiumConfig, FusionPair } from '../models';
   selector: 'tr.app-fusion-pair-table-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <td>{{ data.price }}</td>
+    <td class="price">{{ data.price }}</td>
     <td>{{ data.race1 }}</td>
     <td>{{ data.lvl1 | lvlToNumber }}</td>
-    <td><a routerLink="{{ baseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
+    <td><a routerLink="{{ leftBaseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
     <td>{{ data.race2 }}</td>
     <td>{{ data.lvl2 | lvlToNumber }}</td>
-    <td><a routerLink="{{ baseUrl }}/{{ data.name2 }}">{{ data.name2 }}</a></td>
+    <td><a routerLink="{{ rightBaseUrl }}/{{ data.name2 }}">{{ data.name2 }}</a></td>
   `
 })
 export class FusionPairTableRowComponent {
   @Input() data: FusionPair;
-  @Input() baseUrl: string;
+  @Input() leftBaseUrl: string;
+  @Input() rightBaseUrl: string;
 }
 
 @Component({
@@ -82,9 +83,10 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           </tr>
           <tr *ngFor="let data of rowData.slice(0, currRow)"
             class="app-fusion-pair-table-row"
-            [ngClass]="{ special: data.notes }"
+            [ngClass]="data.notes"
             [data]="data"
-            [baseUrl]="baseUrl">
+            [leftBaseUrl]="leftBaseUrl"
+            [rightBaseUrl]="rightBaseUrl">
           </tr>
           <tr *ngIf="currRow < rowData.length">
             <th class="nav" colspan="7"
@@ -103,7 +105,8 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
 
   @Input() leftHeader = 'Ingredient 1';
   @Input() rightHeader = 'Ingredient 2';
-  @Input() baseUrl = '../..';
+  @Input() leftBaseUrl = '../..';
+  @Input() rightBaseUrl = '../..';
   @Input() initRow = 500;
   @Input() incrRow = 500;
 

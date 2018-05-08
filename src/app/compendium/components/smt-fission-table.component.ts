@@ -83,8 +83,8 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
         .getSpecialNameEntries(this.currentDemon)
         .map(this.toFusionEntry);
       this.fusionPairs = this.calculator
-        .getFusions(this.currentDemon, this.compendium, this.fusionChart)
-        .map(this.toFusionPair);
+      .getFusions(this.currentDemon, this.compendium, this.fusionChart)
+      .map(this.toFusionPair);
     }
   }
 }

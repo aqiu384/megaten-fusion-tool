@@ -47,6 +47,11 @@ const appRoutes: Routes = [
     data: { appName: 'Raidou Kuzunoha vs. King Abaddon' }
   },
   {
+    path: 'mib',
+    loadChildren: './mib/compendium.module#CompendiumModule',
+    data: { appName: 'Megami Ibunroku Persona' }
+  },
+  {
     path: 'p3',
     loadChildren: './p3/compendium.module#CompendiumModule',
     data: { appName: 'Persona 3' }

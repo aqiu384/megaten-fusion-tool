@@ -18,7 +18,7 @@ import { Skill } from '../models';
       damage{{ data.hits ? ' x' + data.hits : '' }}{{ data.effect ? ', ' + data.effect : '' }}
     </td>
     <td *ngIf="!data.damage">{{ data.effect }}</td>
-    <td *ngIf="hasTarget">{{ data.target ? data.target : 'Self' }}</td>
+    <td *ngIf="hasTarget"><div class="target-icon a{{ data.target || 'Self' }}">{{ data.target || 'Self' }}</div></td>
     <td *ngIf="hasRank" [style.color]="data.rank !== 99 ? null: 'transparent'">{{ data.rank }}</td>
     <td *ngIf="data.inherit"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
     <td *ngIf="hasLvl" [ngClass]="'lvl' + data.level.toString()">{{ data.level | skillLevelToString }}</td>

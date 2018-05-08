@@ -68,6 +68,14 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     ]
   },
   {
+    game: 'Megami Ibunroku Persona',
+    tool: 'mib',
+    srcs: [
+      'http://persona1.wikidot.com',
+      'http://p1psp.gkwiki2.com/'
+    ]
+  },
+  {
     game: 'Persona 3',
     tool: 'p3',
     srcs: [

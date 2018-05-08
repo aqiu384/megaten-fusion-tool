@@ -13,7 +13,8 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
               routerLinkActive="active"
               [style.width.%]="100 / navsPerRow">
               <div *ngIf="button.tool" [style.whiteSpace]="'pre-line'">
-                <a routerLink="{{ button.tool }}">{{ button.abbr || button.game }}</a>
+                <a *ngIf="button.srcs.length" routerLink="{{ button.tool }}">{{ button.abbr || button.game }}</a>
+                <a *ngIf="!button.srcs.length" href="{{ button.tool }}">{{ button.game }}</a>
               </div>
             </th>
           </tr>
@@ -46,7 +47,7 @@ export class AppComponent implements OnInit {
   };
 
   currentGame = 'none';
-  navsPerRow = 7;
+  navsPerRow = 6;
   navRows = [];
   loading = false;
 
@@ -56,7 +57,10 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(v => this.interceptNavigation(v));
     this.navRows = [];
 
-    const navButtons = [].concat(MEGATEN_FUSION_TOOLS);
+    const homeGame = { game: 'Home', tool: 'home', srcs: ['https://github.com/aqiu384//megaten-fusion-tool'] };
+    const reportGame = { game: 'Report Issue', tool: 'https://github.com/aqiu384/megaten-fusion-tool/issues', srcs: [] };
+
+    const navButtons = [homeGame].concat(MEGATEN_FUSION_TOOLS).concat([reportGame]);
     const fillerGap = navButtons.length % this.navsPerRow;
     const fillerLen = fillerGap ? this.navsPerRow - fillerGap : 0;
     const fillerNav = { game: '', tool: '', srcs: [] };
