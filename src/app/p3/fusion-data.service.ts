@@ -16,6 +16,9 @@ import * as ANS_DEMON_DATA_JSON from './data/ans-demon-data.json';
 import * as P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
 import * as ORPHEUS_TELOS_JSON from './data/orpheus-telos.json';
 
+import * as VAN_ENEMY_DATA_JSON from './data/van-enemy-data.json';
+import * as ANS_ENEMY_DATA_JSON from './data/ans-enemy-data.json';
+
 import * as VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
 import * as FES_SKILL_DATA_JSON from './data/fes-skill-data.json';
 import * as P3P_SKILL_DATA_JSON from './data/p3p-skill-data.json';
@@ -51,6 +54,7 @@ export class FusionDataService implements IFusionTrioService {
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
     const demonDataJsons = [VAN_DEMON_DATA_JSON];
+    const enemyDataJsons = game !== 'p3aeg' ? [VAN_ENEMY_DATA_JSON] : [ANS_ENEMY_DATA_JSON];
     const skillDataJsons = [VAN_SKILL_DATA_JSON];
     let specialRecipes = [PAIR_SPECIAL_RECIPES, VAN_SPECIAL_RECIPES];
     let fusionChart = VAN_FUSION_CHART_JSON;
@@ -76,7 +80,7 @@ export class FusionDataService implements IFusionTrioService {
       }
     }
 
-    this._compendium = new Compendium(demonDataJsons, skillDataJsons, specialRecipes);
+    this._compendium = new Compendium(demonDataJsons, enemyDataJsons, skillDataJsons, specialRecipes);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 

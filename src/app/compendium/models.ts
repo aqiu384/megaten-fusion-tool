@@ -22,6 +22,7 @@ export interface Demon {
   fusion: string;
   prereq?: string;
   affinities?: number[];
+  eskills?: { [skill: string]: number };
 }
 
 export interface Skill {

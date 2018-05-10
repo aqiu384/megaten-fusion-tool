@@ -1,30 +1,33 @@
 import { ElementOrder, Races, ResistCodes } from '../constants';
 import { Demon, Skill } from '../models';
-import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as INHERITANCE_TYPES from '../data/inheritance-types.json';
+import * as ENEMY_DATA from '../data/van-enemy-data.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
+  private enemies: { [name: string]: BaseDemon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private _allDemons: Demon[];
+  private _allDemons: BaseDemon[];
   private _allSkills: Skill[];
   private _inheritTypes: { [inherti: string]: number[] };
 
   dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(demonDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
-    this.initImportedData(demonDataJsons, skillDataJsons, specialRecipeJsons);
+  constructor(demonDataJsons: any[], enemyDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
+    this.initImportedData(demonDataJsons, enemyDataJsons, skillDataJsons, specialRecipeJsons);
     this.updateDerivedData();
   }
 
-  initImportedData(demonDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
+  initImportedData(demonDataJsons: any[], enemyDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
     const demons:   { [name: string]: Demon } = {};
+    const enemies:   { [name: string]: BaseDemon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
@@ -42,6 +45,21 @@ export class Compendium implements ICompendium {
           resists: json.resists.split('').map(char => ResistCodes[char]),
           skills:  json.skills,
           fusion:  'normal'
+        };
+      }
+    }
+
+    for (const enemyDataJson of enemyDataJsons) {
+      for (const [name, enemy] of Object.entries(enemyDataJson)) {
+        enemies[name] = {
+          name,
+          race:    enemy.race,
+          lvl:     enemy.lvl,
+          price:   0,
+          stats:   enemy.stats.slice(0, 2),
+          resists: enemy.resists.toLowerCase().split('').map(char => ResistCodes[char]),
+          fusion:  'enemy',
+          eskills: enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {})
         };
       }
     }
@@ -89,14 +107,13 @@ export class Compendium implements ICompendium {
     }
 
     this.demons = demons;
+    this.enemies = enemies;
     this.skills = skills;
     this.specialRecipes = specials;
     this.invertedDemons = inverses;
   }
 
   updateDerivedData() {
-    const demonEntries = Object.assign({}, this.demons);
-    const skills =       Object.keys(this.skills).map(name => this.skills[name]);
     const ingredients:   { [race: string]: number[] } = {};
     const results:       { [race: string]: number[] } = {};
 
@@ -118,13 +135,15 @@ export class Compendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
-    this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
-    this._allSkills = skills;
+    const allies = Object.keys(this.demons).map(name => this.demons[name]);
+    const enemies = Object.keys(this.enemies).map(name => this.enemies[name]);
+    this._allDemons = enemies.concat(allies);
+    this._allSkills = Object.keys(this.skills).map(name => this.skills[name]);
     this.allIngredients = ingredients;
     this.allResults = results;
   }
 
-  get allDemons(): Demon[] {
+  get allDemons(): BaseDemon[] {
     return this._allDemons;
   }
 
@@ -140,8 +159,8 @@ export class Compendium implements ICompendium {
     return INHERITANCE_TYPES['elems'];
   }
 
-  getDemon(name: string): Demon {
-    return this.demons[name];
+  getDemon(name: string): BaseDemon {
+    return this.demons[name] || this.enemies[name];
   }
 
   getSkill(name: string): Skill {

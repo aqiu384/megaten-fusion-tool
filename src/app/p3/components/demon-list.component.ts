@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { RaceOrder, ElementOrder, BaseStats, ResistElements, APP_TITLE } from '../constants';
 
@@ -27,10 +28,19 @@ export class DemonListContainerComponent extends DLCC {
 
   constructor(
     title: Title,
+    route: ActivatedRoute,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
   ) {
     super(title, changeDetectorRef, fusionDataService);
     this.appName = `List of Personas - ${fusionDataService.appName}`;
+    this.showAllies = !route.snapshot.data.showShadows;
+    this.showEnemies = !this.showAllies;
+
+    if (this.showEnemies) {
+      this.inheritOrder = null;
+      this.statHeaders = ['HP', 'MP'];
+      this.resistHeaders = ResistElements.concat(['almighty']);
+    }
   }
 }

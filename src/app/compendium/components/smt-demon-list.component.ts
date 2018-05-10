@@ -67,7 +67,7 @@ export class SmtDemonListRowComponent {
           [hasAffinity]="affinityHeaders"
           [ngClass]="{
             special: data.fusion === 'special',
-            exception: data.fusion !== 'special' && data.fusion !== 'normal'
+            exception: data.fusion !== 'special' && data.fusion !== 'normal' && data.fusion !== 'enemy'
           }"
           [data]="data">
         </tr>
