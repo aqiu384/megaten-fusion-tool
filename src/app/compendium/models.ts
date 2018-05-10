@@ -20,9 +20,13 @@ export interface Demon {
   stats: number[];
   resists: number[];
   fusion: string;
+  skills: { [skill: string]: number; };
   prereq?: string;
   affinities?: number[];
-  eskills?: { [skill: string]: number };
+  estats?: number[];
+  area?: string;
+  drop?: string;
+  isEnemy?: boolean;
 }
 
 export interface Skill {
@@ -36,6 +40,7 @@ export interface Skill {
   requires?: string;
   inherit?: string;
   unique?: boolean;
+  learnedBy: { demon: string, level: number }[];
 }
 
 export interface Compendium {

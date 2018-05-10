@@ -16,6 +16,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
       <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">Base Stats</th>
       <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">Resistances</th>
       <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">Affinities</th>
+      <th *ngIf="isEnemy" colspan="2">Enemy</th>
     </tr>
     <tr>
       <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)">Race</th>
@@ -35,6 +36,8 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
         (click)="nextSortFunIndex(pair.index)">
         <div class="element-icon {{ pair.elem }}"></div>
       </th>
+      <th *ngIf="isEnemy">Drops</th>
+      <th *ngIf="isEnemy">Appears</th>
     </tr>
   `,
   styles: [`
@@ -44,6 +47,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
   `]
 })
 export class DemonListHeaderComponent extends SortedTableHeaderComponent implements OnInit {
+  @Input() isEnemy = false;
   @Input() isPersona = false;
   @Input() hasInherits = false;
   @Input() statHeaders: string[] = [];

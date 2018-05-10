@@ -5,8 +5,9 @@ export interface Demon {
   price: number;
   stats: number[];
   resists: number[];
-  command: { [skill: string]: number; };
-  passive: { [skill: string]: number; };
+  skills: { [skill: string]: number };
+  command: { [skill: string]: number };
+  passive: { [skill: string]: number };
   fusion: string;
   unique: boolean;
   raceup: number;

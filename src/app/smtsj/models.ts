@@ -5,9 +5,7 @@ export interface Demon extends BaseDemon {
   pcoeff: number;
   hpmod: number;
   align: string;
-  inherits: boolean[];
   ailments?: string[];
-  skills: { [skill: string]: number; };
   source: { [skill: string]: number; };
 }
 
@@ -16,8 +14,6 @@ export interface Skill extends BaseSkill {
   power: number;
   accuracy: number;
   inherit: string;
-  rank: number;
-  learnedBy: { demon: string, level: number }[];
   transfer: { demon: string, level: number }[];
 }
 

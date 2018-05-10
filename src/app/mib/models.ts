@@ -9,7 +9,6 @@ export interface Demon extends BaseDemon {
   presists: number[];
   mresists: number[];
   atks: number[];
-  skills: { [skill: string]: number; };
 }
 
 export interface Enemy extends BaseDemon {
@@ -22,7 +21,6 @@ export interface Enemy extends BaseDemon {
   drops: string;
   presists: number[];
   mresists: number[];
-  skills: { [skill: string]: number; };
   transfers: { [skill: string]: number; };
 }
 
@@ -30,6 +28,5 @@ export interface Skill extends BaseSkill {
   power: number;
   range: number;
   target: number;
-  learnedBy: { demon: string, level: number }[];
   transfer: { demon: string, level: number }[];
 }

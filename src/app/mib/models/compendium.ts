@@ -131,7 +131,8 @@ export class Compendium implements ICompendium {
         stats:   [],
         resists: [],
         fusion:  'recruit',
-        prereq:  'Item negotiation only'
+        prereq:  'Item negotiation only',
+        skills:  {}
       }
     }
 

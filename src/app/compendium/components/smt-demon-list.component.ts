@@ -27,9 +27,12 @@ import { DemonListComponent } from '../bases/demon-list.component';
         {{ affinity | affinityToString }}
       </td>
     </ng-container>
+    <td *ngIf="isEnemy">{{ data.drop }}</td>
+    <td *ngIf="isEnemy">{{ data.area }}</td>
   `
 })
 export class SmtDemonListRowComponent {
+  @Input() isEnemy = false;
   @Input() hasInherits = false;
   @Input() hasAffinity = false;
   @Input() data: Demon;
@@ -43,6 +46,8 @@ export class SmtDemonListRowComponent {
     <table appPositionSticky>
       <tfoot #stickyHeader appColumnWidths
         class="app-demon-list-header sticky-header"
+        [isPersona]="isPersona"
+        [isEnemy]="isEnemy"
         [hasInherits]="inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
@@ -54,6 +59,8 @@ export class SmtDemonListRowComponent {
     <table>
       <tfoot #hiddenHeader appColumnWidths
         class="app-demon-list-header"
+        [isPersona]="isPersona"
+        [isEnemy]="isEnemy"
         [hasInherits]="inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
@@ -63,11 +70,12 @@ export class SmtDemonListRowComponent {
       <tbody>
         <tr *ngFor="let data of rowData"
           class="app-smt-demon-list-row"
+          [isEnemy]="isEnemy"
           [hasInherits]="inheritOrder"
           [hasAffinity]="affinityHeaders"
           [ngClass]="{
             special: data.fusion === 'special',
-            exception: data.fusion !== 'special' && data.fusion !== 'normal' && data.fusion !== 'enemy'
+            exception: data.fusion !== 'special' && data.fusion !== 'normal'
           }"
           [data]="data">
         </tr>
@@ -75,4 +83,7 @@ export class SmtDemonListRowComponent {
     </table>
   `
 })
-export class SmtDemonListComponent extends DemonListComponent<Demon> { }
+export class SmtDemonListComponent extends DemonListComponent<Demon> {
+  @Input() isPersona = false;
+  @Input() isEnemy = false;
+}

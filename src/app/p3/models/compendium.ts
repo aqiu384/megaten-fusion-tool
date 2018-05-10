@@ -3,7 +3,6 @@ import { Demon, Skill } from '../models';
 import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as INHERITANCE_TYPES from '../data/inheritance-types.json';
-import * as ENEMY_DATA from '../data/van-enemy-data.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -27,7 +26,7 @@ export class Compendium implements ICompendium {
 
   initImportedData(demonDataJsons: any[], enemyDataJsons: any[], skillDataJsons: any[], specialRecipeJsons: any[]) {
     const demons:   { [name: string]: Demon } = {};
-    const enemies:   { [name: string]: BaseDemon } = {};
+    const enemies:  { [name: string]: BaseDemon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
@@ -57,9 +56,13 @@ export class Compendium implements ICompendium {
           lvl:     enemy.lvl,
           price:   0,
           stats:   enemy.stats.slice(0, 2),
+          estats:  enemy.stats.slice(2),
           resists: enemy.resists.toLowerCase().split('').map(char => ResistCodes[char]),
-          fusion:  'enemy',
-          eskills: enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {})
+          skills:  enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+          fusion:  'normal',
+          area:    enemy.area,
+          drop:    enemy.gem || '-',
+          isEnemy: true
         };
       }
     }
@@ -114,8 +117,8 @@ export class Compendium implements ICompendium {
   }
 
   updateDerivedData() {
-    const ingredients:   { [race: string]: number[] } = {};
-    const results:       { [race: string]: number[] } = {};
+    const ingredients: { [race: string]: number[] } = {};
+    const results:     { [race: string]: number[] } = {};
 
     for (const race of Races) {
       ingredients[race] = [];

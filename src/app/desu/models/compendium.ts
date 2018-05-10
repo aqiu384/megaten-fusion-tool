@@ -55,6 +55,7 @@ export class DesuCompendium implements ICompendium {
           stats:   json.stats,
           price:   DesuCompendium.estimateBasePrice(json.stats),
           resists: json.resists.split('').map(char => ResistCodes[char]),
+          skills:  {},
           command: json.command || {},
           passive: json.passive || {},
           fusion:  'normal',

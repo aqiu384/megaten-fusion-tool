@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { RaceOrder, ElementOrder, BaseStats, ResistElements, APP_TITLE } from '../constants';
+import { RaceOrder, ElementOrder, BaseStats, ResistElements } from '../constants';
 
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
@@ -11,6 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [isEnemy]="showEnemies"
       [raceOrder]="raceOrder"
       [inheritOrder]="inheritOrder"
       [statHeaders]="statHeaders"
@@ -38,6 +39,7 @@ export class DemonListContainerComponent extends DLCC {
     this.showEnemies = !this.showAllies;
 
     if (this.showEnemies) {
+      this.appName = `List of Shadows - ${fusionDataService.appName}`;
       this.inheritOrder = null;
       this.statHeaders = ['HP', 'MP'];
       this.resistHeaders = ResistElements.concat(['almighty']);

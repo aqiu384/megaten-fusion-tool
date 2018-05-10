@@ -10,10 +10,8 @@ import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 
-import {
-  DemonEntryComponent,
-  DemonEntryContainerComponent
-} from './components/demon-entry.component';
+import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
+import { EnemyEntryComponent } from './components/enemy-entry.component';
 
 import { FusionDataService } from './fusion-data.service';
 
@@ -39,7 +37,8 @@ const compendiumConfig: CompendiumConfig = {
     DemonListContainerComponent,
     SkillListContainerComponent,
     DemonEntryComponent,
-    DemonEntryContainerComponent
+    DemonEntryContainerComponent,
+    EnemyEntryComponent
   ],
   providers: [
     Title,

@@ -68,12 +68,12 @@ export class DemonEntryComponent {
   selector: 'app-demon-entry-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-entry *ngIf="!demon || demon.fusion !== 'enemy'"
+    <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
       [compendium]="compendium">
     </app-demon-entry>
-    <app-enemy-entry *ngIf="demon && demon.fusion === 'enemy'"
+    <app-enemy-entry *ngIf="demon && demon.isEnemy"
       [name]="name"
       [demon]="demon"
       [compendium]="compendium">

@@ -31,6 +31,10 @@ const compendiumRoutes: Routes = [
     component: CompendiumComponent,
     children: [
       {
+        path: 'shadows/:demonName',
+        component: DemonEntryContainerComponent,
+      },
+      {
         path: 'personas/:demonName',
         component: DemonEntryContainerComponent,
         children: [
@@ -60,6 +64,11 @@ const compendiumRoutes: Routes = [
       {
         path: 'personas',
         component: DemonListContainerComponent
+      },
+      {
+        path: 'shadows',
+        component: DemonListContainerComponent,
+        data: { showShadows: true }
       },
       {
         path: 'skills',

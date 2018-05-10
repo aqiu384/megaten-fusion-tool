@@ -44,9 +44,9 @@ export abstract class DemonListContainerComponent implements OnInit, OnDestroy {
       let demons = compendium.allDemons;
 
       if (!this.showAllies) {
-        demons = demons.filter(d => d.fusion === 'enemy');
+        demons = demons.filter(d => d.isEnemy);
       } if (!this.showEnemies) {
-        demons = demons.filter(d => d.fusion !== 'enemy');
+        demons = demons.filter(d => !d.isEnemy);
       }
 
       demons.sort(this.defaultSortFun);
