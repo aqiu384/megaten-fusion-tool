@@ -59,8 +59,17 @@ const compendiumRoutes: Routes = [
         ]
       },
       {
+        path: 'shadows/:demonName',
+        component: DemonEntryContainerComponent
+      },
+      {
         path: 'personas',
         component: DemonListContainerComponent
+      },
+      {
+        path: 'shadows',
+        component: DemonListContainerComponent,
+        data: { showShadows: true }
       },
       {
         path: 'skills',

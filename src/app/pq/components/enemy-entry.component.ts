@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
-import { BaseStats, ResistElements, ElementOrder } from '../constants';
+import { BaseStats, ResistElements, Ailments, ElementOrder } from '../constants';
 import { Demon } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 
@@ -11,7 +11,7 @@ import { Compendium } from '../models/compendium';
     <app-demon-stats
       [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
       [statHeaders]="statHeaders"
-      [stats]="demon.stats.concat(demon.estats)">
+      [stats]="[demon.exp].concat(demon.stats, demon.estats)">
     </app-demon-stats>
     <table>
       <thead>
@@ -32,7 +32,9 @@ import { Compendium } from '../models/compendium';
     </table>
     <app-demon-resists
       [resistHeaders]="resistanceHeaders"
-      [resists]="demon.resists">
+      [ailmentHeaders]="ailmentHeaders"
+      [resists]="demon.resists"
+      [ailments]="demon.ailments">
     </app-demon-resists>
     <app-demon-skills
       [elemOrder]="elemOrder"
@@ -46,7 +48,8 @@ export class EnemyEntryComponent {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
 
-  statHeaders = ['HP', 'MP'].concat(BaseStats);
+  statHeaders = ['EXP', 'HP', 'Atk', 'Def', 'St', 'Ma', 'En', 'Ag', 'Lu'];
   elemOrder = ElementOrder;
-  resistanceHeaders = ResistElements.concat(['almighty']);
+  resistanceHeaders = ResistElements.concat('almighty');
+  ailmentHeaders = Ailments;
 }

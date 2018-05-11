@@ -1,23 +1,15 @@
-export interface Demon {
-  name: string;
-  race: string;
-  lvl: number;
-  price: number;
-  inherits: boolean[];
-  stats: number[];
-  resists: number[];
-  skills: { [skill: string]: number; };
-  fusion: string;
+import { Demon as BaseDemon, Skill as BaseSkill } from '../compendium/models';
+
+export interface Demon extends BaseDemon {
+  sacrifice?: string;
 }
 
-export interface Skill {
-  name: string;
-  element: string;
-  cost: number;
-  rank: number;
-  effect: string;
+export interface Enemy extends BaseDemon {
+  ailments: string[];
+  exp: number;
+}
+
+export interface Skill extends BaseSkill {
   target: string;
-  learnedBy: { demon: string, level: number }[];
   fuse: string;
-  level: number;
 }

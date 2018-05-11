@@ -12,6 +12,7 @@ Fusion tool framework for Megami Tensei games.
 * Normal Forward Fusion Calculator
 * Triple Reverse Fusion Calculator
 * Triple Forward Fusion Calculator
+* Enemy Table (Persona Series)
 * Password Generator (Strange Journey and Redux)
 * DLC Demon/Persona Settings
 
@@ -25,6 +26,7 @@ Fusion tool framework for Megami Tensei games.
 * [Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh)
 * [Devil Summoner: Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
 * [Devil Summoner: Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
+* [Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/mib)
 * [Persona 3](https://aqiu384.github.io/megaten-fusion-tool/p3)
 * [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)
 * [Persona 3 FES: The Answer](https://aqiu384.github.io/megaten-fusion-tool/p3aeg)

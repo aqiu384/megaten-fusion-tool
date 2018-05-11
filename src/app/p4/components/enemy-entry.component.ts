@@ -13,6 +13,23 @@ import { Compendium } from '../models/compendium';
       [statHeaders]="statHeaders"
       [stats]="demon.stats.concat(demon.estats)">
     </app-demon-stats>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Appearances</th>
+        </tr>
+        <tr>
+          <th>Areas</th>
+          <th>Drops</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ demon.area }}</td>
+          <td>{{ demon.drop }}</td>
+        </tr>
+      </tbody>
+    </table>
     <app-demon-resists
       [resistHeaders]="resistanceHeaders"
       [resists]="demon.resists">

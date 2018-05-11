@@ -8,7 +8,11 @@ import {
   selector: 'app-p5-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-compendium [ngClass]="'p5'" [mainList]="'persona'"></app-demon-compendium>
+    <app-demon-compendium
+      [ngClass]="'p5'"
+      [mainList]="'persona'"
+      [otherLinks]="[{ title: 'Shadow List', link: 'shadows' }]">
+    </app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None

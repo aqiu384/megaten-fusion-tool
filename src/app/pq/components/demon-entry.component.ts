@@ -24,10 +24,6 @@ import { FusionDataService } from '../fusion-data.service';
         [stats]="demon.stats"
         [inherit]="demon.inherit">
       </app-demon-stats>
-      <app-demon-resists
-        [resistHeaders]="resistanceHeaders"
-        [resists]="demon.resists">
-      </app-demon-resists>
       <app-demon-inherits
         [inheritHeaders]="inheritHeaders"
         [inherits]="demon.inherits">
@@ -70,7 +66,16 @@ export class DemonEntryComponent {
   selector: 'app-demon-entry-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-entry [name]="name" [demon]="demon" [compendium]="compendium"></app-demon-entry>
+    <app-demon-entry *ngIf="!demon || !demon.isEnemy"
+      [name]="name"
+      [demon]="demon"
+      [compendium]="compendium">
+    </app-demon-entry>
+    <app-enemy-entry *ngIf="demon && demon.isEnemy"
+      [name]="name"
+      [demon]="demon"
+      [compendium]="compendium">
+    </app-enemy-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {

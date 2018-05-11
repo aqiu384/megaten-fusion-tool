@@ -225,6 +225,12 @@
     "effect": "Gather safely from Power Spots",
     "element": "navi"
   },
+  "Charge Shot": {
+    "effect": "A severe Stab attack that pierces to the back row",
+    "element": "stab",
+    "target": "1 enemy",
+    "unique": true
+  },
   "Circle Recovery": {
     "card": "Anubis",
     "effect": "Slight HP restore each turn. [Requires Circles]",
@@ -258,6 +264,12 @@
     "effect": "Higher rate of rare materials. Low chance to gather multiple times",
     "element": "navi"
   },
+  "Crazed Slash": {
+    "effect": "5-7 heavy Cut attacks against random targets",
+    "element": "cut",
+    "target": "All enemies",
+    "unique": true
+  },
   "Critical Eye": {
     "card": "Ose",
     "cost": 1028,
@@ -288,6 +300,12 @@
   "Deadly Vanguard": {
     "effect": "When user attacks, allies deal even more damage to that enemy that turn. Evolved Cerberus exclusive",
     "element": "passive",
+    "unique": true
+  },
+  "Deafening Roar": {
+    "effect": "A high chance of knockdown",
+    "element": "ailment",
+    "target": "All enemies",
     "unique": true
   },
   "Death Chaser": {
@@ -429,6 +447,24 @@
     "effect": "Act first and greatly raise physical attack for 3 turns",
     "element": "support"
   },
+  "Drain Touch": {
+    "effect": "A medium Bash attack. Recover HP equal to damage dealt",
+    "element": "bash",
+    "target": "1 enemy",
+    "unique": true
+  },
+  "Drastic Measure": {
+    "effect": "5 medium Bash attacks against random targets. Kind Doctor exclusive",
+    "element": "bash",
+    "target": "All enemies",
+    "unique": true
+  },
+  "Dream Slice": {
+    "effect": "A light Cut attack, with medium chance of Sleep",
+    "element": "cut",
+    "target": "1 enemy",
+    "unique": true
+  },
   "Elec Amp": {
     "effect": "Raise Elec attack strength",
     "element": "passive",
@@ -437,6 +473,18 @@
   "Elec Boost": {
     "effect": "Slightly raise Elec attack strength",
     "element": "passive"
+  },
+  "Elec Corrosion": {
+    "effect": "Lower Elec resistance for 3 turns",
+    "element": "support",
+    "target": "All enemies",
+    "unique": true
+  },
+  "Elec Dance": {
+    "effect": "A light Elec attack",
+    "element": "elec",
+    "target": "1 row",
+    "unique": true
   },
   "Elec Wall": {
     "card": "Hachiman",
@@ -516,6 +564,18 @@
   "Fire Boost": {
     "effect": "Slightly raise Fire attack strength",
     "element": "passive"
+  },
+  "Fire Corrosion": {
+    "effect": "Lower Fire resistance for 3 turns",
+    "element": "support",
+    "target": "All enemies",
+    "unique": true
+  },
+  "Fire Dance": {
+    "effect": "A light Fire attack that splashes to either side",
+    "element": "fire",
+    "target": "1 enemy",
+    "unique": true
   },
   "Fire Spray": {
     "cost": 1016,
@@ -620,6 +680,12 @@
     "effect": "A medium Wind attack.",
     "element": "wind",
     "target": "1 enemy"
+  },
+  "Gears of Time": {
+    "effect": "A countdown to death. Clockwork God exclusive",
+    "element": "almighty",
+    "target": "All enemies",
+    "unique": true
   },
   "Gigantic Fist": {
     "card": "Abaddon",
@@ -728,6 +794,12 @@
     "effect": "Medium chance of instant kill.",
     "element": "light",
     "target": "1 enemy"
+  },
+  "Hard Slash": {
+    "effect": "A medium Cut attack",
+    "element": "cut",
+    "target": "1 enemy",
+    "unique": true
   },
   "Harvest Prayer": {
     "card": "Dis",
@@ -839,6 +911,12 @@
     "element": "bash",
     "target": "1 enemy"
   },
+  "Holy Wrath": {
+    "effect": "Heavy damage, with Magic, Strength, and Agility Binds, on Vow Breakers. Merciful Clergyman exclusive",
+    "element": "almighty",
+    "target": "1 enemy",
+    "unique": true
+  },
   "Hunting Prayer": {
     "card": "Azumi",
     "effect": "Slightly higher rate of material drops from enemies",
@@ -852,6 +930,18 @@
   "Ice Boost": {
     "effect": "Slightly raise Ice attack strength",
     "element": "passive"
+  },
+  "Ice Corrosion": {
+    "effect": "Lower Ice resistance for 3 turns",
+    "element": "support",
+    "target": "All enemies",
+    "unique": true
+  },
+  "Ice Dance": {
+    "effect": "An Ice attack that pierces to the back row",
+    "element": "ice",
+    "target": "1 enemy",
+    "unique": true
   },
   "Ice Wall": {
     "card": "King Frost",
@@ -1008,6 +1098,12 @@
     "effect": "Nullifies 1 attack per turn, for 3 turns. Kaguya exclusive",
     "element": "support",
     "target": "Party",
+    "unique": true
+  },
+  "Lunge": {
+    "effect": "A heavy Stab attack",
+    "element": "stab",
+    "target": "1 enemy",
     "unique": true
   },
   "Mabufu": {
@@ -1202,6 +1298,18 @@
     "element": "recovery",
     "target": "Party"
   },
+  "Megaton Press": {
+    "effect": "A heavy Bash attack, with medium chance of knockdown",
+    "element": "bash",
+    "target": "1 enemy",
+    "unique": true
+  },
+  "Megaton Slam": {
+    "effect": "A heavy Bash attack",
+    "element": "bash",
+    "target": "1 enemy",
+    "unique": true
+  },
   "Megido": {
     "card": "Mithra",
     "cost": 1054,
@@ -1262,6 +1370,12 @@
     "target": "All enemies",
     "unique": true
   },
+  "Mow Down": {
+    "effect": "A light Cut attack",
+    "element": "cut",
+    "target": "1 row",
+    "unique": true
+  },
   "Mudo": {
     "cost": 1012,
     "effect": "Slight chance of instant kill.",
@@ -1274,6 +1388,12 @@
     "effect": "Medium chance of instant kill.",
     "element": "dark",
     "target": "1 enemy"
+  },
+  "Muscle Down": {
+    "effect": "Medium chance of Strength Bind",
+    "element": "ailment",
+    "target": "All enemies",
+    "unique": true
   },
   "Mutudi": {
     "card": "Angel",
@@ -1517,6 +1637,12 @@
     "effect": "Raise damage dealt with first hit and number of Links. ",
     "element": "passive"
   },
+  "Rabbit's Foot": {
+    "effect": "10 light Bash attacks at random, with low accuracy. Best Friend exclusive",
+    "element": "bash",
+    "target": "All enemies",
+    "unique": true
+  },
   "Raging Fists": {
     "card": "Zeus",
     "effect": "Raise critical hit damage",
@@ -1564,6 +1690,12 @@
     "effect": "Lower defense for 3 turns.",
     "element": "support",
     "target": "1 enemy"
+  },
+  "Rampage": {
+    "effect": "A heavy Bash attack",
+    "element": "bash",
+    "target": "All enemies",
+    "unique": true
   },
   "Rebel Spirit": {
     "card": "Masakado",
@@ -1729,6 +1861,12 @@
     "element": "bash",
     "target": "1 enemy"
   },
+  "Self-Destruct": {
+    "effect": "A medium Almighty attack*",
+    "element": "almighty",
+    "target": "All enemies",
+    "unique": true
+  },
   "Serene Journey": {
     "effect": "Slight SP restore for each step taken in a labyrinth",
     "element": "passive",
@@ -1773,6 +1911,12 @@
     "effect": "Medium chance of Magic Bind each turn, for 3 turns.",
     "element": "ailment",
     "target": "All enemies"
+  },
+  "Silent Song": {
+    "effect": "Medium chance of Magic Bind",
+    "element": "ailment",
+    "target": "All enemies",
+    "unique": true
   },
   "Silent Thrust": {
     "card": "Magatsu-Izanagi, Shiva",
@@ -1829,6 +1973,18 @@
     "target": "1 enemy",
     "unique": true
   },
+  "Spiderweb": {
+    "effect": "Medium chance of Agility Bind",
+    "element": "ailment",
+    "target": "All enemies",
+    "unique": true
+  },
+  "Spin Slash": {
+    "effect": "A heavy Cut attack",
+    "element": "cut",
+    "target": "All enemies",
+    "unique": true
+  },
   "Spotlight": {
     "cost": 2001,
     "effect": "Targeted ally takes their action first",
@@ -1843,6 +1999,12 @@
   "Squire Card": {
     "effect": "Slightly raise Fire, Ice, Wind, and Elec attack strength",
     "element": "passive",
+    "unique": true
+  },
+  "Stab Shower": {
+    "effect": "3 light Stab attacks against random targets",
+    "element": "stab",
+    "target": "1 row",
     "unique": true
   },
   "Stagnant Air": {
@@ -1860,6 +2022,18 @@
     "element": "bash",
     "melee": true,
     "target": "1 enemy"
+  },
+  "Stona": {
+    "effect": "Medium chance of Petrification",
+    "element": "ailment",
+    "target": "1 enemy",
+    "unique": true
+  },
+  "Stone Mist": {
+    "effect": "Medium chance of Petrification",
+    "element": "ailment",
+    "target": "All enemies",
+    "unique": true
   },
   "Stun Circle": {
     "card": "Anzu",
@@ -1901,6 +2075,12 @@
     "effect": "A medium Almighty attack. [Requires Circles]",
     "element": "almighty",
     "target": "All enemies"
+  },
+  "Summon Soldier": {
+    "effect": "Summon Card Soldiers and step back. Queen of Hearts exclusive",
+    "element": "almighty",
+    "target": "Self",
+    "unique": true
   },
   "Sutakora Foot": {
     "cost": 2001,
@@ -1963,6 +2143,24 @@
     "element": "ailment",
     "target": "All enemies"
   },
+  "Thorn Chains": {
+    "effect": "A light Stab attack, with medium chance of Magic Bind",
+    "element": "stab",
+    "target": "1 enemy",
+    "unique": true
+  },
+  "Thorn Cuffs": {
+    "effect": "A light Stab attack, with medium chance of Strength Bind",
+    "element": "stab",
+    "target": "1 enemy",
+    "unique": true
+  },
+  "Thorn Shackles": {
+    "effect": "A light Stab attack, with medium chance of Agility Bind",
+    "element": "stab",
+    "target": "1 enemy",
+    "unique": true
+  },
   "Thunder Clap": {
     "cost": 1016,
     "effect": "A light Elec attack. Zen exclusive",
@@ -1991,9 +2189,33 @@
     "target": "Party",
     "unique": true
   },
+  "Time Reversal": {
+    "effect": "Full HP restore. Removes stat penalties. Clockwork God exclusive",
+    "element": "support",
+    "target": "Self",
+    "unique": true
+  },
+  "Time Stop": {
+    "effect": "Act up to four times on the turn used. Clockwork God exclusive",
+    "element": "support",
+    "target": "Self",
+    "unique": true
+  },
+  "Time Warp": {
+    "effect": "Hasten the Gears of Time countdown. Clockwork God exclusive",
+    "element": "almighty",
+    "target": "All enemies",
+    "unique": true
+  },
   "Tornado Boost": {
     "effect": "Greatly raise Wind attack strength. Isis exclusive",
     "element": "passive",
+    "unique": true
+  },
+  "Torrent Shot": {
+    "effect": "A heavy Stab attack",
+    "element": "stab",
+    "target": "All enemies",
     "unique": true
   },
   "Tousatsujin": {
@@ -2053,6 +2275,12 @@
     "element": "cut",
     "target": "1 enemy"
   },
+  "Vow": {
+    "effect": "Forbid an action-type. Merciful Clergyman exclusive",
+    "element": "almighty",
+    "target": "All enemies",
+    "unique": true
+  },
   "Warrior Title": {
     "card": "Melchizedek",
     "effect": "Raise critical hit rate",
@@ -2072,6 +2300,18 @@
   "Wind Boost": {
     "effect": "Slightly raise Wind attack strength",
     "element": "passive"
+  },
+  "Wind Corrosion": {
+    "effect": "Lower Wind resistance for 3 turns",
+    "element": "support",
+    "target": "All enemies",
+    "unique": true
+  },
+  "Wind Dance": {
+    "effect": "2-4 light Wind attacks against random targets",
+    "element": "wind",
+    "target": "1 row",
+    "unique": true
   },
   "Wind Wall": {
     "card": "Jinn",

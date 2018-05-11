@@ -22,8 +22,7 @@ export class Compendium implements ICompendium {
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private _allDemons: Demon[];
-  private _allEnemies: Enemy[];
+  private _allDemons: BaseDemon[];
   private _allSkills: Skill[];
 
   dlcDemons: { [name: string]: boolean } = {};
@@ -112,13 +111,15 @@ export class Compendium implements ICompendium {
         lvl:       json.lvl,
         fusion:    'normal',
         price:     Math.pow(json.lvl, 2),
-        stats:     json.stats,
-        drops:     json.drops,
+        stats:     json.stats.slice(0, 2),
+        estats:    json.stats.slice(2),
         atks:      json.atks,
-        areas:     json.areas,
+        area:      json.areas.join(', '),
+        drop:      json.drops,
         contacts:  eagers.concat(happys),
         skills:    json.skills.reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
-        transfers: json.transfers.reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {})
+        transfers: json.transfers.reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
+        isEnemy:   true
       };
     }
 
@@ -244,19 +245,16 @@ export class Compendium implements ICompendium {
       }
     }
 
-    this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
-    this._allEnemies = Object.keys(this.enemies).map(name => this.enemies[name]);
+    const allies = Object.keys(this.demons).map(name => <BaseDemon>this.demons[name]);
+    const enemies = Object.keys(this.enemies).map(name => <BaseDemon>this.enemies[name]);
+    this._allDemons = enemies.concat(allies);
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
   }
 
-  get allDemons(): Demon[] {
+  get allDemons(): BaseDemon[] {
     return this._allDemons;
-  }
-
-  get allEnemies(): Enemy[] {
-    return this._allEnemies;
   }
 
   get allSkills(): Skill[] {

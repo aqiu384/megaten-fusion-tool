@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
-import { EnemyListContainerComponent } from './components/enemy-list.component';
 import { EnemyEntryComponent } from './components/enemy-entry.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
@@ -44,7 +43,8 @@ const compendiumRoutes: Routes = [
       },
       {
         path: 'demons',
-        component: EnemyListContainerComponent
+        component: DemonListContainerComponent,
+        data: { showEnemies: true }
       },
       {
         path: 'skills',

@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { RaceOrder, ElementOrder, BaseStats, ResistanceElements, APP_TITLE } from '../models/constants';
 
@@ -10,6 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [isEnemy]="showEnemies"
       [raceOrder]="raceOrder"
       [inheritOrder]="inheritOrder"
       [statHeaders]="statHeaders"
@@ -19,7 +21,6 @@ import { FusionDataService } from '../fusion-data.service';
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName = `List of Personas - ${APP_TITLE}`;
   raceOrder = RaceOrder;
   inheritOrder = ElementOrder;
   statHeaders = BaseStats;
@@ -28,7 +29,19 @@ export class DemonListContainerComponent extends DLCC {
 
   constructor(
     title: Title,
+    route: ActivatedRoute,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
-  ) { super(title, changeDetectorRef, fusionDataService); }
+  ) {
+    super(title, changeDetectorRef, fusionDataService);
+    this.appName = `List of Personas - ${APP_TITLE}`;
+    this.showAllies = !route.snapshot.data.showShadows;
+    this.showEnemies = !this.showAllies;
+
+    if (this.showEnemies) {
+      this.appName = `List of Shadows - ${APP_TITLE}`;
+      this.inheritOrder = null;
+      this.statHeaders = ['HP', 'MP'];
+    }
+  }
 }

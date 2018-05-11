@@ -11,17 +11,16 @@ export const Races = [
   'Hierophant', 'Lovers',   'Chariot',   'Justice', 'Hermit',
   'Fortune',    'Strength', 'Hanged',    'Death',   'Temperance',
   'Devil',      'Tower',    'Star',      'Moon',    'Sun',
-  'Judgement'
+  'Judgement',  'FOE'
 ];
 
 export const ElementDemons = [];
 
-export const ResistElements = [];
+export const ResistElements = ['cut', 'bash', 'stab', 'fire', 'ice', 'elec', 'wind', 'light', 'dark'];
+
+export const Ailments = ['Sleep', 'Panic', 'Poison', 'Curse', 'Para', 'SBind', 'MBind', 'ABind', 'Down', 'KO'];
 
 export const SkillElements = ResistElements.concat(
-  'cut',      'bash',    'stab',
-  'fire',     'ice',     'elec',   'wind',
-  'light',    'dark',
   'almighty', 'ailment', 'recovery',
   'support',  'navi',    'passive'
 );
@@ -34,12 +33,12 @@ export const InheritElements = [
 export const BaseStats = ['HP', 'MP'];
 
 export const ResistCodes = {
-  w: 'wk',
-  '-': 'no',
-  s: 'rs',
-  n: 'nu',
-  r: 'rp',
-  d: 'ab'
+  w: 1125,
+  '-': 100,
+  s: 50,
+  n: 0,
+  r: -100,
+  d: -1100
 };
 
 export const RaceOrder = Races.reduce((acc, race, i) => { acc[race] = i; return acc; }, {});

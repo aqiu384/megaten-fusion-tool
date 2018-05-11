@@ -374,7 +374,7 @@
     "element": "passive",
     "fuse": "Lamia"
   },
-  "Devil Smile": {
+  "Evil Smile": {
     "cost": 1012,
     "effect": "Inflict Fear (medium odds) to all foes.",
     "element": "ailment",
@@ -595,6 +595,11 @@
     "effect": "Inflict Fear (high odds) to 1 foe.",
     "element": "ailment",
     "talk": "Black Ooze"
+  },
+  "Famine's Scream": {
+    "effect": "Inflict Hunger (medium odds) to all foes.",
+    "element": "ailment",
+    "unique": "Enemies"
   },
   "Fast Heal": {
     "effect": "Half the time needed to recover from ailments.",
@@ -871,9 +876,14 @@
   },
   "Life Drain": {
     "cost": 1003,
-    "effect": "Drains\u00a0HP from 1 foe.",
+    "effect": "Drains HP from 1 foe.",
     "element": "almighty",
     "talk": "Incubus"
+  },
+  "Life Leech": {
+    "effect": "Drains 150 HP from 1 foe.",
+    "element": "almighty",
+    "unique": "Enemies"
   },
   "Lucky Punch": {
     "cost": 6,
@@ -1004,7 +1014,7 @@
     "element": "ailment",
     "fuse": "Makami"
   },
-  "Makajamon": {
+  "Makajamaon": {
     "cost": 1012,
     "effect": "Inflict Forget (medium odds) to all foes.",
     "element": "ailment",
@@ -1063,7 +1073,7 @@
     "element": "psy",
     "fuse": "Kaiwan"
   },
-  "Mapsoidyne": {
+  "Mapsiodyne": {
     "cost": 1022,
     "effect": "Deal heavy Psy damage to all foes.",
     "element": "psy",
@@ -1605,6 +1615,11 @@
     "effect": "Reduce damage from Wind attacks.",
     "element": "passive"
   },
+  "Reverse Rub": {
+    "effect": "Inflict Rage (100%) to 1 ally.",
+    "element": "ailment",
+    "unique": "Enemies"
+  },
   "Revolution": {
     "cost": 1005,
     "effect": "Increase all foes and allies' critical rate for 3 turns.",
@@ -1694,6 +1709,11 @@
     "effect": "Automatic Sukukaja at the start of battle.",
     "element": "passive"
   },
+  "Self-Destruct": {
+    "effect": "Sacrifice self and deal medium Almighty damage to all.",
+    "element": "almighty",
+    "unique": "Enemies"
+  },
   "Spell Master": {
     "effect": "Half SP cost for magic skills.",
     "element": "passive",
@@ -1722,6 +1742,11 @@
     "effect": "Decrease 1 foe's Agility for 3 turns.",
     "element": "support",
     "talk": "Obariyon"
+  },
+  "Summon": {
+    "effect": "Summon ally reinforcements.",
+    "element": "almighty",
+    "unique": "Enemies"
   },
   "Survival Trick": {
     "effect": "Survive one instant death attack with 1 HP remaining.",

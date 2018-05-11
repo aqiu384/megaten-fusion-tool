@@ -9,7 +9,6 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
-import { EnemyListContainerComponent } from './components/enemy-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 
@@ -43,7 +42,6 @@ const compendiumConfig: CompendiumConfig = {
     DemonEntryContainerComponent,
     DemonListContainerComponent,
     EnemyEntryComponent,
-    EnemyListContainerComponent,
     MibFissionTableComponent,
     MibFusionTableComponent,
     SkillListContainerComponent,

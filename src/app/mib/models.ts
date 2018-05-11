@@ -14,14 +14,14 @@ export interface Demon extends BaseDemon {
 export interface Enemy extends BaseDemon {
   type: string;
   subtype: string;
-  areas: string[];
   traits: string[];
   atks: number[];
   contacts: { actor: string, action: string, result: string }[];
-  drops: string;
   presists: number[];
   mresists: number[];
   transfers: { [skill: string]: number; };
+  area: string;
+  drop: string;
 }
 
 export interface Skill extends BaseSkill {
