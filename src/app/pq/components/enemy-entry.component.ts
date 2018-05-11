@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 import { BaseStats, ResistElements, Ailments, ElementOrder } from '../constants';
-import { Demon } from '../../compendium/models';
+import { Enemy } from '../models';
 import { Compendium } from '../models/compendium';
 
 @Component({
@@ -45,7 +45,7 @@ import { Compendium } from '../models/compendium';
 })
 export class EnemyEntryComponent {
   @Input() name: string;
-  @Input() demon: Demon;
+  @Input() demon: Enemy;
   @Input() compendium: Compendium;
 
   statHeaders = ['EXP', 'HP', 'Atk', 'Def', 'St', 'Ma', 'En', 'Ag', 'Lu'];
