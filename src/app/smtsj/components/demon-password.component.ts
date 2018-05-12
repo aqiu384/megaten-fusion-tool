@@ -22,12 +22,10 @@ export class DemonPasswordComponent {
   @Output() passwordBytes = new EventEmitter<string>();
 
   form: FormGroup;
-  engRegex = new RegExp(['^([', PasswordEncodings.engChars, ']){32}$'].join(''));
-  passwordRegex = new RegExp([
-    '^(\\s*)([', PasswordEncodings.jap, ']{16}|[', PasswordEncodings.jen, ']{16}|[', PasswordEncodings.engChars, ']{16})',
-    '(\\s*)([', PasswordEncodings.jap, ']{16}|[', PasswordEncodings.jen, ']{16}|[', PasswordEncodings.engChars, ']{16})(\\s*)$'
-  ].join(''));
+  isRedux = false;
 
+  engRegex: RegExp;
+  passwordRegex: RegExp;
   engBase64: { [char: string]: number; };
   japBase64: { [char: string]: number; };
 
@@ -36,9 +34,17 @@ export class DemonPasswordComponent {
   }
 
   createForm() {
-    this.engBase64 = PasswordEncodings.eng.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, {});
+    const engCode = this.isRedux ? PasswordEncodings.ren : PasswordEncodings.eng;
+    const engChars = this.isRedux ? PasswordEncodings.renChars : PasswordEncodings.engChars;
+
+    this.engBase64 = engCode.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, {});
     this.japBase64 = PasswordEncodings.jap.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, {});
     this.japBase64 = PasswordEncodings.jen.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, this.japBase64);
+    this.engRegex = new RegExp(['^([', engChars, ']){32}$'].join(''));
+    this.passwordRegex = new RegExp([
+      '^(\\s*)([', PasswordEncodings.jap, ']{16}|[', PasswordEncodings.jen, ']{16}|[', engChars, ']{16})',
+      '(\\s*)([', PasswordEncodings.jap, ']{16}|[', PasswordEncodings.jen, ']{16}|[', engChars, ']{16})(\\s*)$'
+    ].join(''));
 
     this.form = this.fb.group({
       password: [null, [Validators.required, Validators.pattern(this.passwordRegex)]],
@@ -54,5 +60,26 @@ export class DemonPasswordComponent {
         }
       }
     });
+  }
+}
+
+@Component({
+  selector: 'app-redux-demon-password',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <form [formGroup]="form">
+      <textarea formControlName="password"></textarea>
+    </form>
+  `,
+  styles: [`
+    textarea { width: 98%; border-width: 3px; }
+    textarea.ng-valid { border-color: lime; }
+    textarea.ng-invalid { border-color: red; }
+  `]
+})
+export class ReduxDemonPasswordComponent extends DemonPasswordComponent {
+  createForm() {
+    this.isRedux = true;
+    super.createForm();
   }
 }

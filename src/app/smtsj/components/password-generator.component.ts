@@ -33,7 +33,14 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
               <div><code>{{ engPassword.slice(0, 16) }}</code></div>
               <div><code>{{ engPassword.slice(16) }}</code></div>
             </td>
-            <td><app-demon-password (passwordBytes)="setPasswordValues($event)"></app-demon-password></td>
+            <td *ngIf="!isRedux">
+              <app-demon-password (passwordBytes)="setPasswordValues($event)">
+              </app-demon-password>
+            </td>
+            <td *ngIf="isRedux">
+              <app-redux-demon-password (passwordBytes)="setPasswordValues($event)">
+              </app-redux-demon-password>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -141,7 +148,9 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
   `]
 })
 export class PasswordGeneratorComponent implements OnChanges {
+  @Input() isRedux = false;
   @Input() compendium: Compendium;
+
   races = Races;
   stats = BaseStats;
   elems = SkillElements;
@@ -222,7 +231,9 @@ export class PasswordGeneratorComponent implements OnChanges {
       this.price = Math.floor((Math.floor((demon.pcoeff * Math.pow(n, 3)) % Math.pow(2, 32) / 1000) + SkillCosts[maxRank] + 1300) * 0.75);
 
       const passBytes = encodeDemon(decoded);
-      this.engPassword = passBytes.map(b => PasswordEncodings.eng[b]).join('');
+      const engCode = this.isRedux ? PasswordEncodings.ren : PasswordEncodings.eng;
+
+      this.engPassword = passBytes.map(b => engCode[b]).join('');
       this.japPassword = passBytes.map(b => PasswordEncodings.jap[b]).join('');
       this.currHP = decoded.lvl * 6 + Math.floor(decoded.stats[2] * 3 * demon.hpmod) + (demon.name === 'Knocker' ? 30 : 25);
       this.currMP = decoded.lvl * 3 + Math.floor(decoded.stats[1] * 2 * demon.hpmod) + (demon.name === 'Knocker' ? 14 : 13);
@@ -308,10 +319,14 @@ export class PasswordGeneratorComponent implements OnChanges {
   selector: 'app-password-generator-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-password-generator [compendium]="compendium"></app-password-generator>
+    <app-password-generator
+      [isRedux]="isRedux"
+      [compendium]="compendium">
+    </app-password-generator>
   `
 })
 export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
+  isRedux = false;
   compendium: Compendium;
   subscriptions: Subscription[] = [];
 
@@ -325,6 +340,7 @@ export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
 
   setTitle() {
     this.title.setTitle(`Password Generator - ${this.fusionDataService.appName}`);
+    this.isRedux = this.fusionDataService.isRedux;
   }
 
   subscribeAll() {

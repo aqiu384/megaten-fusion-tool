@@ -14,7 +14,7 @@ import { DemonEntryComponent, DemonEntryContainerComponent } from './components/
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { FusionSettingsComponent } from './components/fusion-settings.component';
 import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from './components/password-generator.component';
-import { DemonPasswordComponent } from './components/demon-password.component';
+import { DemonPasswordComponent, ReduxDemonPasswordComponent } from './components/demon-password.component';
 
 import { FusionDataService } from './fusion-data.service';
 
@@ -45,7 +45,8 @@ const compendiumConfig: CompendiumConfig = {
     FusionChartContainerComponent,
     PasswordGeneratorComponent,
     PasswordGeneratorContainerComponent,
-    DemonPasswordComponent
+    DemonPasswordComponent,
+    ReduxDemonPasswordComponent
   ],
   providers: [
     Title,

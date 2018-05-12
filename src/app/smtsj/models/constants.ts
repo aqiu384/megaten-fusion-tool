@@ -134,7 +134,9 @@ export const PasswordEncodings = {
   jap: 'しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ',
   jen: 'しんいくみBやるＹけひKFとHむAちにZきWよLをのたれNえSふわJそりすCめPへQGRDこMTまつせかはEUてさなあもゆおうろ',
   eng: '$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+',
-  engChars: '$0-9A-H%J-Za-k#m-z+-'
+  engChars: '$2-90A-H%J-Za-k#m-z+-',
+  ren: '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?&',
+  renChars: '0-9A-Za-z&?'
 };
 
 export const SkillCosts = [0, 112, 155, 222, 347, 564, 952, 1666, 3020, 5663, 10972, 21943, 43886, 87772, 175543];
