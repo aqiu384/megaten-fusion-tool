@@ -16,7 +16,7 @@ import { Enemy } from '../models';
     <table>
       <thead>
         <tr>
-          <th colspan="5">Negotiation"</th>
+          <th colspan="5">Negotiation</th>
         </tr>
         <tr>
           <th>Type</th>
@@ -36,7 +36,7 @@ import { Enemy } from '../models';
         </tr>
       </tbody>
     </table>
-    <table>
+    <table *ngIf="demon.contacts.length">
       <thead>
         <tr>
           <th colspan="3">Contacts</th>

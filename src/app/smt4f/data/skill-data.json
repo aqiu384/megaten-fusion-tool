@@ -237,6 +237,13 @@
     "rank": 7,
     "target": "Single"
   },
+  "Carol Hit": {
+    "damage": "Weak",
+    "effect": "50% Lost",
+    "element": "phys",
+    "rank": 0,
+    "target": "Single"
+  },
   "Chakra Walk": {
     "effect": "Regain MP while walking. Inactive while in stock.",
     "element": "passive",
@@ -1867,6 +1874,12 @@
     "effect": "Regain HP while walking. Inactive while in stock.",
     "element": "passive",
     "rank": 11
+  },
+  "Strange Ray": {
+    "effect": "Lose 50% MP",
+    "element": "other",
+    "rank": 0,
+    "target": "All"
   },
   "Stun Needle": {
     "cost": 1010,

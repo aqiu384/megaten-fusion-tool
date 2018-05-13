@@ -4,6 +4,7 @@ import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../c
 
 import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as ENEMY_DATA_JSON from '../data/enemy-data.json';
+import * as SUBBOSS_DATA_JSON from '../data/subboss-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import * as DLC_DEMONS from '../data/dlc-demons.json';
@@ -52,31 +53,33 @@ export class Compendium implements ICompendium {
       delete demons[name].inherits;
     }
 
-    for (const [name, enemy] of Object.entries(ENEMY_DATA_JSON)) {
-      const drops = enemy.drops || [];
+    for (const jsonfile of [ENEMY_DATA_JSON, SUBBOSS_DATA_JSON]) {
+      for (const [name, enemy] of Object.entries(jsonfile)) {
+        const drops = enemy.drops || [];
 
-      if (enemy.card && enemy.card != '-') {
-        drops.push(enemy.card);
-      } if (!drops.length) {
-        drops.push('-');
-      }
+        if (enemy.card && enemy.card != '-') {
+          drops.push(enemy.card);
+        } if (!drops.length) {
+          drops.push('-');
+        }
 
-      enemies[name] = {
-        name,
-        persona: enemy.persona,
-        trait:   enemy.trait,
-        exp:     enemy.exp,
-        race:    enemy.race,
-        lvl:     enemy.lvl,
-        price:   enemy.yen,
-        stats:   enemy.stats.slice(0, 2),
-        estats:  enemy.stats.slice(2),
-        resists: enemy.resists.split('').map(char => ResistCodes[char]),
-        fusion:  'normal',
-        skills:  enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
-        area:    enemy.area.join(', '),
-        drop:    drops.join(', '),
-        isEnemy: true
+        enemies[name] = {
+          name,
+          persona: enemy.persona,
+          trait:   enemy.trait,
+          exp:     enemy.exp,
+          race:    enemy.race,
+          lvl:     enemy.lvl,
+          price:   enemy.yen,
+          stats:   enemy.stats.slice(0, 2),
+          estats:  enemy.stats.slice(2),
+          resists: enemy.resists.split('').map(char => ResistCodes[char]),
+          fusion:  'normal',
+          skills:  enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+          area:    enemy.area.join(', '),
+          drop:    drops.join(', '),
+          isEnemy: true
+        }
       }
     }
 

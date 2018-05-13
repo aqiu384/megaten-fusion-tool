@@ -22,7 +22,9 @@ import { FusionDataService } from '../fusion-data.service';
         [price]="demon.price"
         [statHeaders]="statHeaders"
         [stats]="demon.stats"
+        [fusionHeaders]="['Electric Chair']"
         [inherit]="demon.inherit">
+        <td>{{ demon.item }}</td>
       </app-demon-stats>
       <app-demon-resists
         [resistHeaders]="resistanceHeaders"

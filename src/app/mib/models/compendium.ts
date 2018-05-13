@@ -106,7 +106,7 @@ export class Compendium implements ICompendium {
         resists:   this.getResistsSummary(presists, mresists),
         type:      json.type,
         subtype:   json.subtype,
-        traits:    json.traits,
+        traits:    json.traits.length ? json.traits : ['-'],
         race:      json.race,
         lvl:       json.lvl,
         fusion:    'normal',

@@ -43,6 +43,7 @@ export class Compendium implements ICompendium {
           stats:   json.stats,
           resists: json.resists.split('').map(char => ResistCodes[char]),
           skills:  json.skills,
+          item:    json.heart || '',
           fusion:  'normal'
         };
       }

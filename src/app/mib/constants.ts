@@ -51,6 +51,8 @@ export const DemonOrders = [
   'Spirit',
   'Grave',
   'Foul',
+  'Karma',
+  'Meta'
 ];
 
 export const Races = Arcanas.concat(DemonOrders).concat(['Gem']);

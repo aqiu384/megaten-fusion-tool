@@ -92,6 +92,12 @@
     "rank": 5,
     "target": "Party"
   },
+  "Barrage": {
+    "damage": "Weak",
+    "element": "gun",
+    "rank": -1,
+    "target": "All"
+  },
   "Beastly Reaction": {
     "effect": "Increases accuracy and evasion",
     "element": "pas",
@@ -180,6 +186,13 @@
     "damage": "Medium",
     "element": "ice",
     "rank": 7,
+    "target": "Single"
+  },
+  "Carol Hit": {
+    "damage": "Weak",
+    "effect": "50% Lost",
+    "element": "phy",
+    "rank": -1,
     "target": "Single"
   },
   "Chakra Walk": {
@@ -839,6 +852,12 @@
     "damage": "Medium",
     "element": "ice",
     "rank": 10,
+    "target": "All"
+  },
+  "Macca Beam": {
+    "effect": "Lose 20% Macca",
+    "element": "spe",
+    "rank": -1,
     "target": "All"
   },
   "Madness Nails": {
