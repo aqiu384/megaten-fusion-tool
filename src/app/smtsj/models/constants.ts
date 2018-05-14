@@ -50,7 +50,15 @@ export const Races = [
   'Geist',
   'Prime',
   'Mitama',
-  'Fake'
+  'Fake',
+  'Human',
+  'Meta',
+  'Judge',
+  'Pillar',
+  'Awake',
+  'Soil',
+  'Mother',
+  'Empty'
 ];
 
 export const PrimeElements = [

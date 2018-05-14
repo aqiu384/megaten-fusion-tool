@@ -3,6 +3,7 @@ import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import * as DEMON_DATA_JSON from '../data/demon-data.json';
+import * as BOSS_DATA_JSON from '../data/boss-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import * as FUSION_REQUIREMENTS_JSON from '../data/fusion-requirements.json';
@@ -16,6 +17,7 @@ export class Compendium implements ICompendium {
   private static CONVERTED_RACE = [ 'Fiend', 'UMA', 'Enigma' ];
 
   private demons: { [name: string]: Demon };
+  private bosses: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
@@ -41,6 +43,7 @@ export class Compendium implements ICompendium {
 
   initImportedData(importRedux: boolean) {
     const demons: { [name: string]: Demon } = {};
+    const bosses: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string } = {};
     const fusionRequirements: { [name: string]: string } = {};
@@ -70,6 +73,28 @@ export class Compendium implements ICompendium {
           skills: json.skills.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source: json.source.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         });
+      }
+    }
+
+    for (const [name, json] of Object.entries(BOSS_DATA_JSON)) {
+      const stats = [100, 100, 1, 1, 1, 1, 1];
+      bosses[name] = {
+        name,
+        lvl:      1,
+        hpmod:    1,
+        pcoeff:   96,
+        race:     json.race,
+        code:     json.code,
+        align:    'Neutral-Neutral',
+        fusion:   'password',
+        stats:    stats,
+        price:    Compendium.estimateBasePrice(stats, 96),
+        resists:  '--------'.split('').map(char => ResistCodes[char]),
+        ailments: '---------'.split('').map(char => ResistCodes[char]),
+        inherits: '---------------'.split('').map(char => char === 'o'),
+        skills:   {},
+        source:   {},
+        isEnemy:  true
       }
     }
 
@@ -145,6 +170,7 @@ export class Compendium implements ICompendium {
     }
 
     this.demons = demons;
+    this.bosses = bosses;
     this.skills = skills;
     this.specialRecipes = specialRecipes;
     this.fusionRequirements = fusionRequirements;
@@ -178,7 +204,9 @@ export class Compendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
-    this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
+    const allies = Object.keys(demonEntries).map(name => demonEntries[name]);
+    const enemies = Object.keys(this.bosses).map(name => this.bosses[name]);
+    this._allDemons = enemies.concat(allies);
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
@@ -197,7 +225,7 @@ export class Compendium implements ICompendium {
   }
 
   getDemon(name: string): Demon {
-    return this.demons[name];
+    return this.demons[name] || this.bosses[name];
   }
 
   getSkill(name: string): Skill {
@@ -262,6 +290,6 @@ export class Compendium implements ICompendium {
   }
 
   isElementDemon(name: string) {
-    return this.demons[name].race === 'Prime';
+    return this.demons[name] && this.demons[name].race === 'Prime';
   }
 }
