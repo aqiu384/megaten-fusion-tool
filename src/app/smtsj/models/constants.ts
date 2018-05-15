@@ -58,7 +58,8 @@ export const Races = [
   'Awake',
   'Soil',
   'Mother',
-  'Empty'
+  'Empty',
+  'Unknown'
 ];
 
 export const PrimeElements = [

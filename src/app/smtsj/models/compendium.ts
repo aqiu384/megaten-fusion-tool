@@ -55,6 +55,8 @@ export class Compendium implements ICompendium {
     const specialRecipesJsons = [SPECIAL_RECIPES_JSON];
     const fusionReqsJsons = [FUSION_REQUIREMENTS_JSON];
 
+    const knownDemonCodes: { [code: number]: string } = {};
+
     if (importRedux) {
       demonDataJsons.push(REDUX_DEMON_DATA_JSON);
       skillDataJsons.push(REDUX_SKILL_DATA_JSON);
@@ -73,28 +75,49 @@ export class Compendium implements ICompendium {
           skills: json.skills.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source: json.source.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         });
+
+        knownDemonCodes[json.code] = name;
       }
+    }
+
+    const defaultStats = [100, 100, 1, 1, 1, 1, 1];
+    const defaultDemon: Demon = {
+      name,
+      lvl:      1,
+      hpmod:    1,
+      pcoeff:   96,
+      race:     'Unknown',
+      code:     0,
+      align:    'Neutral-Neutral',
+      fusion:   'password',
+      stats:    defaultStats,
+      price:    Compendium.estimateBasePrice(defaultStats, 96),
+      resists:  '--------'.split('').map(char => ResistCodes[char]),
+      ailments: '---------'.split('').map(char => ResistCodes[char]),
+      inherits: '---------------'.split('').map(char => char === 'o'),
+      skills:   {},
+      source:   {},
+      isEnemy:  true
     }
 
     for (const [name, json] of Object.entries(BOSS_DATA_JSON)) {
       const stats = [100, 100, 1, 1, 1, 1, 1];
-      bosses[name] = {
+      bosses[name] = Object.assign({}, defaultDemon, {
         name,
-        lvl:      1,
-        hpmod:    1,
-        pcoeff:   96,
-        race:     json.race,
-        code:     json.code,
-        align:    'Neutral-Neutral',
-        fusion:   'password',
-        stats:    stats,
-        price:    Compendium.estimateBasePrice(stats, 96),
-        resists:  '--------'.split('').map(char => ResistCodes[char]),
-        ailments: '---------'.split('').map(char => ResistCodes[char]),
-        inherits: '---------------'.split('').map(char => char === 'o'),
-        skills:   {},
-        source:   {},
-        isEnemy:  true
+        race: json.race,
+        code: json.code
+      });
+
+      knownDemonCodes[json.code] = name;
+    }
+
+    for (let code = 1; code < 512; code++) {
+      if (!knownDemonCodes[code]) {
+        const name = `Code ${code}`;
+        bosses[name] = Object.assign({}, defaultDemon, {
+          name,
+          code: code
+        });
       }
     }
 
