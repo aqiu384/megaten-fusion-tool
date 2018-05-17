@@ -41,7 +41,7 @@
     "skills": [
       "Makarakarn",
       "Concentrate",
-      "Megido Fire"
+      "Megido Flame"
     ],
     "source": [
       "Trisagion",
@@ -68,7 +68,7 @@
     "race": "Nymph",
     "resists": "--wd--n-",
     "skills": [
-      "Hell Splash",
+      "Hellish Spurt",
       "Mediarama",
       "Tarukaja"
     ],
@@ -260,6 +260,9 @@
   },
   "Cybele": {
     "align": "Light-Chaos",
+    "attack": {
+      "ailment": "charm (10%)"
+    },
     "code": 230,
     "hpmod": 1.1,
     "inherits": "---------------",
@@ -354,7 +357,7 @@
     "skills": [
       "Acid Breath",
       "Charge",
-      "Death Coffin"
+      "Death Bite"
     ],
     "source": [
       "Madness Crush",
@@ -381,7 +384,7 @@
     "resists": "ssw-w--s",
     "skills": [
       "Mana Drain",
-      "Chomp",
+      "Taking a Bite",
       "Air Dive"
     ],
     "source": [
@@ -413,7 +416,7 @@
     "skills": [
       "Mudoon",
       "Makajama",
-      "Lethe Whisper"
+      "Lethe's Whisper"
     ],
     "source": [
       "Tricky Dance",
@@ -441,7 +444,7 @@
     "resists": "-----dnw",
     "skills": [
       "Silent Prayer",
-      "Charming Wind",
+      "Alluring Squall",
       "Invitation"
     ],
     "source": [
@@ -784,7 +787,7 @@
     },
     "skills": [
       "Evil Vortex",
-      "Illusion Ritual",
+      "Illusory Ritual",
       "Concentrate"
     ],
     "source": [
@@ -804,7 +807,7 @@
   },
   "Mitra": {
     "align": "Dark-Chaos",
-    "code": 394,
+    "code": 389,
     "inherits": "--o--o--oooooo-",
     "lvl": 25,
     "pcoeff": 27,
@@ -844,7 +847,7 @@
     },
     "skills": [
       "Gehenna",
-      "Horned Rampage",
+      "Horned Frenzy",
       "Counter"
     ],
     "source": [
@@ -955,7 +958,7 @@
       "ele": 125
     },
     "skills": [
-      "Wild Thunder",
+      "Wild Lightning",
       "Acid Breath",
       "Spring of Life"
     ],
@@ -1151,7 +1154,8 @@
     "align": "Neutral-Chaos",
     "attack": {
       "element": "Gun",
-      "hits": "1-3"
+      "hits": "1-3",
+      "target": "random foes"
     },
     "code": 277,
     "inherits": "---------------",
@@ -1210,6 +1214,9 @@
   "Zaou-Gongen": {
     "ailments": "-------n-",
     "align": "Light-Chaos",
+    "attack": {
+      "ailment": "fear (10%)"
+    },
     "code": 219,
     "hpmod": 1.1,
     "inherits": "---------------",
@@ -1248,7 +1255,7 @@
     "resists": "----rwnn",
     "skills": [
       "Keraunos",
-      "Adamas Sickle"
+      "Adamant Sickle"
     ],
     "source": [
       "Occult Flash",

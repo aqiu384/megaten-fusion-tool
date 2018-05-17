@@ -114,31 +114,33 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
           </tr>
         </thead>
         <tbody formArrayName="skills">
-          <tr *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
-            <td>
-              <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                <option value="-">-</option>
-                <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
-              </select>
-            </td>
-            <td>
-              <select formControlName="name">
-                <option *ngFor="let entry of skills[skill.controls.elem.value]" [value]="entry.name">{{ entry.name }}</option>
-              </select>
-            </td>
-            <ng-container *ngIf="compendium.getSkill(skill.controls.name.value); let entry; else noEntry">
-              <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
-              <td>{{ entry.effect }}</td>
-              <td [style.color]="entry.rank !== 99 ? null: 'transparent'">{{ entry.rank }}</td>
-              <td><div class="element-icon {{ entry.inherit }}">{{ entry.inherit }}</div></td>
-            </ng-container>
-            <ng-template #noEntry>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </ng-template>
-          </tr>
+          <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
+            <tr [ngClass]="{ unique: (compendium.getSkill(skill.controls.name.value) || blankSkill).rank === 99 }">
+              <td>
+                <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
+                  <option value="-">-</option>
+                  <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
+                </select>
+              </td>
+              <td>
+                <select formControlName="name">
+                  <option *ngFor="let entry of skills[skill.controls.elem.value]" [value]="entry.name">{{ entry.name }}</option>
+                </select>
+              </td>
+              <ng-container *ngIf="compendium.getSkill(skill.controls.name.value); let entry; else noEntry">
+                <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
+                <td>{{ entry.effect }}</td>
+                <td [style.color]="entry.rank !== 99 ? null: 'transparent'">{{ entry.rank }}</td>
+                <td><div class="element-icon {{ entry.inherit }}">{{ entry.inherit }}</div></td>
+              </ng-container>
+              <ng-template #noEntry>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </ng-template>
+            </tr>
+          </ng-container>
         </tbody>
       </table>
     </form>
