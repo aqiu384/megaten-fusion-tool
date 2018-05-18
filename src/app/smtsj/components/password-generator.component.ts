@@ -153,9 +153,9 @@ export class PasswordGeneratorComponent implements OnChanges {
   @Input() isRedux = false;
   @Input() compendium: Compendium;
 
-  races = Races;
   stats = BaseStats;
-  elems = SkillElements;
+  races: string[];
+  elems: string[];
   demons: { [race: string]: Demon[] };
   skills: { [elem: string]: Skill[] };
   dcodes: { [code: number]: Demon };
@@ -229,8 +229,9 @@ export class PasswordGeneratorComponent implements OnChanges {
         }
       }
 
-      const n = decoded.stats.reduce((acc, s) => acc + s, 0);
-      this.price = Math.floor((Math.floor((demon.pcoeff * Math.pow(n, 3)) % Math.pow(2, 32) / 1000) + SkillCosts[maxRank] + 1300) * 0.75);
+      const statsPrice = demon.pcoeff * Math.pow(decoded.stats.reduce((acc, s) => acc + s, 0), 3);
+      const overflowPrice = this.isRedux ? statsPrice : statsPrice % Math.pow(2, 32);
+      this.price = Math.floor((Math.floor(overflowPrice / 1000) + SkillCosts[maxRank] + 1300) * 0.75);
 
       const passBytes = encodeDemon(decoded);
       const engCode = this.isRedux ? PasswordEncodings.ren : PasswordEncodings.eng;
@@ -243,18 +244,26 @@ export class PasswordGeneratorComponent implements OnChanges {
   }
 
   initDropdowns() {
-    this.demons = this.races.reduce((acc, r) => { acc[r] = []; return acc; }, { '-': [this.unknownDemon]});
-    this.skills = this.elems.reduce((acc, e) => { acc[e] = []; return acc; }, { '-': [this.blankSkill, this.unknownSkill] });
+    this.demons = { '-': [this.unknownDemon]};
+    this.skills = { '-': [this.blankSkill, this.unknownSkill] };
     this.dcodes = {};
     this.scodes = { 0: this.blankSkill };
 
     if (this.compendium) {
       for (const demon of this.compendium.allDemons) {
+        if (!this.demons[demon.race]) {
+          this.demons[demon.race] = [];
+        }
+
         this.demons[demon.race].push(demon);
         this.dcodes[demon.code] = demon;
       }
 
       for (const skill of this.compendium.allSkills) {
+        if (!this.skills[skill.element]) {
+          this.skills[skill.element] = [];
+        }
+
         this.skills[skill.element].push(skill);
         this.scodes[skill.code] = skill;
       }
@@ -267,6 +276,8 @@ export class PasswordGeneratorComponent implements OnChanges {
         skillList.sort((a, b) => a.rank - b.rank);
       }
 
+      this.races = Races.filter(r => this.demons[r]);
+      this.elems = SkillElements.filter(e => this.skills[e]);
       this.setDefaultValues('Seraph');
     }
   }
@@ -306,7 +317,7 @@ export class PasswordGeneratorComponent implements OnChanges {
       }
 
       this.form.setValue({
-        maskByte: 170,
+        maskByte: 0,
         lvl: Math.floor(demon.lvl),
         race: demon.race,
         demon: demon.name,

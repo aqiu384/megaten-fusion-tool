@@ -100,15 +100,17 @@ export class Compendium implements ICompendium {
       isEnemy:  true
     }
 
-    for (const [name, json] of Object.entries(BOSS_DATA_JSON)) {
-      const stats = [100, 100, 1, 1, 1, 1, 1];
-      bosses[name] = Object.assign({}, defaultDemon, {
-        name,
-        race: json.race,
-        code: json.code
-      });
+    if (!importRedux) {
+      for (const [name, json] of Object.entries(BOSS_DATA_JSON)) {
+        const stats = [100, 100, 1, 1, 1, 1, 1];
+        bosses[name] = Object.assign({}, defaultDemon, {
+          name,
+          race: json.race,
+          code: json.code
+        });
 
-      knownDemonCodes[json.code] = name;
+        knownDemonCodes[json.code] = name;
+      }
     }
 
     for (let code = 1; code < 512; code++) {

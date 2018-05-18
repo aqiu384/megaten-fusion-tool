@@ -14,7 +14,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
   selector: 'tr.app-smt-demon-list-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <td>{{ data.race }}</td>
+    <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
     <td>{{ data.lvl | lvlToNumber }}</td>
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
     <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>

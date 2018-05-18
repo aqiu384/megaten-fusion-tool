@@ -27,6 +27,7 @@ export interface Demon {
   area?: string;
   drop?: string;
   isEnemy?: boolean;
+  align?: string;
 }
 
 export interface Skill {

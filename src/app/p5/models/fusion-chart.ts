@@ -6,7 +6,7 @@ import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
 import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
-  lvlModifier = 0;
+  lvlModifier = 0.5;
   elementDemons = ElementDemons;
   races: string[];
 
