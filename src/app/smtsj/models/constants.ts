@@ -112,7 +112,7 @@ export const InheritElements = [
 
 export const Ailments = [
   'Poison',
-  'Panic',
+  'Paralyze',
   'Stone',
   'Strain',
   'Sleep',

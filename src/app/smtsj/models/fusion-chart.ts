@@ -39,7 +39,7 @@ export class FusionChart extends SmtFusionChart {
   }
 
   get lvlModifier(): number {
-    return this.includedSubapps.Laplace ? 4 : 1;
+    return this.includedSubapps.Laplace ? 3.5 : 0.5;
   }
 
   initCharts() {

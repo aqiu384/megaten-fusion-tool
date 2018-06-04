@@ -35,6 +35,16 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
+      <app-fusion-entry-table *ngIf="demon.evolvesFrom"
+        [title]="'Evolves From'"
+        [baseUrl]="'..'"
+        [rowData]="[demon.evolvesFrom]">
+      </app-fusion-entry-table>
+      <app-fusion-entry-table *ngIf="demon.evolvesTo"
+        [title]="'Evolves To'"
+        [baseUrl]="'..'"
+        [rowData]="[demon.evolvesTo]">
+      </app-fusion-entry-table>
       <app-smt-fusions></app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">

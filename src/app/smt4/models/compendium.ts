@@ -15,6 +15,7 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import * as EVOLUTION_DATA_JSON from '../data/evolutions.json';
 import * as DLC_DEMONS from '../data/dlc-demons.json';
 
 export class Compendium implements ICompendium {
@@ -75,6 +76,22 @@ export class Compendium implements ICompendium {
         demons[name].fusion = 'accident';
         demons[name].prereq = 'Fusion accident only';
       }
+    }
+
+    for (const [name, { lvl, result }] of Object.entries(EVOLUTION_DATA_JSON)) {
+      demons[name].evolvesTo = {
+        price: demons[result].price,
+        race1: demons[result].race,
+        lvl1:  lvl,
+        name1: result
+      };
+
+      demons[result].evolvesFrom = {
+        price: demons[name].price,
+        race1: demons[name].race,
+        lvl1:  lvl,
+        name1: name
+      };
     }
 
     for (const race of Races) {
