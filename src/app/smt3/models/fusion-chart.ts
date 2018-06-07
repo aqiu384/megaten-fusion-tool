@@ -11,7 +11,7 @@ export class FusionChart extends SmtFusionChart {
     'Enable Cursed Fusion': false
   };
 
-  lvlModifier = 1;
+  lvlModifier = 0.5;
   races: string[];
   elementDemons = ElementDemons;
   chartSettings: { [name: string]: boolean } = Object.assign({}, FusionChart.CHART_SETTINGS);

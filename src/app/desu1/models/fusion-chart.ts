@@ -11,7 +11,7 @@ export class FusionChart extends SmtFusionChart {
   protected elementChart: ElementTable;
 
   elementDemons = ElementDemons;
-  lvlModifier = 1;
+  lvlModifier = 0.5;
   races: string[];
 
   constructor() {

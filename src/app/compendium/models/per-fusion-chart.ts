@@ -7,7 +7,7 @@ export class PersonaFusionChart extends SmtFusionChart {
   protected elementChart: ElementTable;
 
   elementDemons = [];
-  lvlModifier = 1;
+  lvlModifier = 0.5;
   races: string[];
 
   constructor(fusionTableJson: any, races: string[], isTripleChart?: boolean) {
@@ -32,7 +32,7 @@ export class PersonaFusionChart extends SmtFusionChart {
     }
 
     this.races = races;
-    this.lvlModifier = isTripleChart ? 5 : 1;
+    this.lvlModifier = isTripleChart ? 4.25 : 0.5;
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, this.elementDemons, table);
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.elementChart = {};

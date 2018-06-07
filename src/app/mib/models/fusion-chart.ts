@@ -8,7 +8,7 @@ import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
 export class FusionChart extends SmtFusionChart {
   races: string[];
   elementDemons = [];
-  lvlModifier = 3;
+  lvlModifier = 2.5;
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
