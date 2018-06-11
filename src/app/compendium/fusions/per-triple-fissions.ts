@@ -1,4 +1,5 @@
 import { FissionRow, FissionTable, Compendium, SquareChart, NameTrio } from '../models';
+import { fuseT1WithDiffRace, fuseN1WithDiffRace } from './per-triple-fusions';
 import { splitWithElement } from './smt-nonelem-fissions';
 
 function findBin(n: number, bins: number[]): number {
@@ -159,6 +160,23 @@ export function splitWithSameRace(nameR: string, comp: Compendium, chart: Square
   }
 
   return recipes;
+}
+
+export function splitWithPrevLvl(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
+  const lvlRs = comp.getResultDemonLvls(raceR).slice();
+
+  if (0 < lvlRs.indexOf(lvlR)) {
+    const prevNameR = comp.reverseLookupDemon(raceR, lvlRs[lvlRs.indexOf(lvlR) - 1]);
+    const rankUpRs: NameTrio[] = [].concat(
+      fuseT1WithDiffRace(prevNameR, comp, chart).filter(trio => trio.name3 === nameR),
+      fuseN1WithDiffRace(prevNameR, comp, chart).filter(trio => trio.name3 === nameR)
+    );
+
+    return rankUpRs.map(trio => ({ name1: trio.name1, name2: trio.name2, name3: prevNameR }));
+  } else {
+    return [];
+  }
 }
 
 export function splitWithElementPair(name: string, comp: Compendium, chart: SquareChart): NameTrio[] {

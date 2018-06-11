@@ -15,7 +15,8 @@ import {
 } from './fusions/per-triple-fusions';
 import {
   splitWithDiffRace as split3DR,
-  splitWithSameRace as split3SR
+  splitWithSameRace as split3SR,
+  splitWithPrevLvl as split3PL
 } from './fusions/per-triple-fissions';
 
 export const COMPENDIUM_CONFIG = new InjectionToken<CompendiumConfig>('compendium.config');
@@ -38,7 +39,7 @@ export const P3_TRIPLE_FUSION_CALCULATOR = new TripleFusionCalculator(
 );
 
 export const P3_TRIPLE_FISSION_CALCULATOR = new TripleFusionCalculator(
-  [ split3DR, split3SR ],
+  [ split3DR, split3SR, split3PL ],
   [ ]
 );
 

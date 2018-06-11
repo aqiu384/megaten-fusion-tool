@@ -77,6 +77,8 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: Squa
 
                   if (name3 !== name2 && name3 !== name1 && name3 !== nameT1) {
                     recipes.push({ name1, name2, name3 });
+                  } else if (binN2 + 1 < lvlRs.length) {
+                    recipes.push({ name1, name2, name3: comp.reverseLookupDemon(raceR, lvlRs[binN2 + 1]) });
                   }
                 }
               }
@@ -132,7 +134,9 @@ export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: Squa
                   const name3 = comp.reverseLookupDemon(raceR, lvlRs[binT1]);
 
                   if (name3 !== name2 && name3 !== name1 && name3 !== nameN1) {
-                    recipes.push({ name1, name2, name3 });
+                      recipes.push({ name1, name2, name3 });
+                  } else if (binT1 + 1 < lvlRs.length) {
+                    recipes.push({ name1, name2, name3: comp.reverseLookupDemon(raceR, lvlRs[binT1 + 1]) });
                   }
                 }
               }
