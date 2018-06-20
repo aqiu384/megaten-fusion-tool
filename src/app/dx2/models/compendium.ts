@@ -6,6 +6,9 @@ import * as DEMON_DATA_JSON from '../data/demon-data.json';
 import * as SKILL_DATA_JSON from '../data/skill-data.json';
 import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
+import * as UPDATED_DEMON_DATA_JSON from '../data/updated-demons.json';
+import * as UPADTED_SKILL_DATA_JSON from '../data/updated-skills.json';
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
@@ -32,38 +35,47 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
-    for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
-      demons[name] = {
-        name,
-        race:    json.race,
-        lvl:     json.lvl,
-        ai:      json.ai,
-        fusion:  'normal',
-        reikos:  json.reikos,
-        price:   Math.pow(json.lvl, 3),
-        stats:   [Math.floor(json.lvl / 20) + 1].concat(json.stats),
-        mstats:  [6].concat(json.mstats),
-        resists: json.resists.split('').map(char => ResistCodes[char]),
-        skills:  json.innate.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
-        learned: json.learned.reduce((acc, skill, i) => { acc[skill] = 110 + i; return acc; }, {}),
-        gacha:   json.gacha.reduce((acc, skill, i) => { acc[skill] = 115 + i; return acc; }, {})
-      };
+    for (const demonJson of [DEMON_DATA_JSON, UPDATED_DEMON_DATA_JSON]) {
+      for (const [name, json] of Object.entries(demonJson)) {
+        const stars = Math.floor(json.lvl / 20) + 1;
+        const stats = json.mstats.map(x => Math.floor(x / (12 - stars)));
 
-      delete demons[name].learned['-'];
+        stats[0] = Math.floor(stats[0] / 1.5);
+
+        demons[name] = {
+          name,
+          race:    json.race,
+          lvl:     json.lvl,
+          ai:      json.ai,
+          fusion:  'normal',
+          reikos:  json.reikos,
+          price:   Math.pow(json.lvl, 3),
+          stats:   [stars].concat(stats),
+          mstats:  [6].concat(json.mstats),
+          resists: json.resists.split('').map(char => ResistCodes[char]),
+          skills:  json.innate.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
+          learned: json.learned.reduce((acc, skill, i) => { acc[skill] = 110 + i; return acc; }, {}),
+          gacha:   json.gacha.reduce((acc, skill, i) => { acc[skill] = 115 + i; return acc; }, {})
+        };
+
+        delete demons[name].learned['-'];
+      }
     }
 
-    for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = {
-        name,
-        element: json.element,
-        power:   json.power || 0,
-        cost:    json.cost + 1000 || 0,
-        rank:    json.power / 10 || 0,
-        effect:  json.effect,
-        level:   0,
-        learnedBy: [],
-        transfer: []
-      };
+    for (const skillJson of [SKILL_DATA_JSON, UPADTED_SKILL_DATA_JSON]) {
+      for (const [name, json] of Object.entries(skillJson)) {
+        skills[name] = {
+          name,
+          element: json.element,
+          power:   json.power || 0,
+          cost:    json.cost + 1000 || 0,
+          rank:    json.power / 10 || 0,
+          effect:  json.effect,
+          level:   0,
+          learnedBy: [],
+          transfer: []
+        };
+      }
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {

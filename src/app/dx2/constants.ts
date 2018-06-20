@@ -35,6 +35,7 @@ export const Races = [
   'Hero',
   'Rumor',
   'UMA',
+  'Entity',
   'Enigma',
   'Zealot'
 ];
