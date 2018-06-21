@@ -7,8 +7,8 @@ import { DemonEntryContainerComponent } from './components/demon-entry.component
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 
-import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
-import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
+import { Dx2FissionTableComponent } from './components/dx2-fission-table.component';
+import { Dx2FusionTableComponent } from './components/dx2-fusion-table.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'demons', pathMatch: 'full' },
@@ -33,11 +33,11 @@ const compendiumRoutes: Routes = [
         children: [
           {
             path: 'fissions',
-            component: SmtFissionTableComponent
+            component: Dx2FissionTableComponent
           },
           {
             path: 'fusions',
-            component: SmtFusionTableComponent
+            component: Dx2FusionTableComponent
           },
           {
             path: '**',

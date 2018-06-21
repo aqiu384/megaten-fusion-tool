@@ -4,13 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
-import { EnemyEntryComponent } from './components/enemy-entry.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
-
-import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
-import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
-import { SmtFusionsComponent } from '../compendium/components/smt-fusions.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },

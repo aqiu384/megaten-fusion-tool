@@ -13,6 +13,9 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 
+import { Dx2FissionTableComponent } from './components/dx2-fission-table.component';
+import { Dx2FusionTableComponent } from './components/dx2-fusion-table.component';
+
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
@@ -38,7 +41,9 @@ const compendiumConfig: CompendiumConfig = {
     DemonEntryContainerComponent,
     DemonListContainerComponent,
     SkillListContainerComponent,
-    FusionChartContainerComponent
+    FusionChartContainerComponent,
+    Dx2FissionTableComponent,
+    Dx2FusionTableComponent
   ],
   providers: [
     Title,

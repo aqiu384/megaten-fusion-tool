@@ -37,7 +37,7 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
 
   subscriptions: Subscription[] = [];
   toFusionEntry = (name: string) => toFusionEntry(name, this.compendium);
-  toFusionPair = (names: NamePair) => toFusionPair(names, this.compendium);
+  toFusionPair = (currentDemon: string) => (names: NamePair) => toFusionPair(names, this.compendium);
 
   constructor(
     private currentDemonService: CurrentDemonService,
@@ -84,7 +84,7 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
         .map(this.toFusionEntry);
       this.fusionPairs = this.calculator
       .getFusions(this.currentDemon, this.compendium, this.fusionChart)
-      .map(this.toFusionPair);
+      .map(this.toFusionPair(this.currentDemon));
     }
   }
 }

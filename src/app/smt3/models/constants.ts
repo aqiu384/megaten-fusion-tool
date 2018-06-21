@@ -110,6 +110,7 @@ export const ElementDemons = [
 export const RaceOrder = getEnumOrder(Races);
 export const ElementOrder = getEnumOrder(SkillElements);
 export const ResistanceOrder = getEnumOrder(ResistanceLevels);
+export const InheritElementOrder = getEnumOrder(InheritElements.concat('None'));
 
 export const FUSION_SETTINGS_KEY = 'smt3-fusion-tool-settings';
 export const FUSION_SETTINGS_VERSION = 1709211400;

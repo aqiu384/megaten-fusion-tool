@@ -4,7 +4,7 @@ import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPair } from '../models/conversions';
 
 @Component({
-  selector: 'app-mib-fission-table',
+  selector: 'app-dx2-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table *ngIf="fusionPrereq">
@@ -13,17 +13,14 @@ import { toFusionPair } from '../models/conversions';
     </table>
     <app-fusion-entry-table *ngIf="fusionEntries.length"
       [title]="'Special Fusion Ingredients for ' + currentDemon"
-      [baseUrl]="'../../demons'"
       [rowData]="fusionEntries">
     </app-fusion-entry-table>
     <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionPrereq && !fusionEntries.length"
       [title]="'Ingredient 1 x Ingredient 2 = ' + currentDemon"
-      [leftBaseUrl]="'../../demons'"
-      [rightBaseUrl]="'../../demons'"
       [rowData]="fusionPairs">
     </app-fusion-pair-table>
   `
 })
-export class MibFissionTableComponent extends SmtFissionTableComponent {
-  toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPair(names, this.compendium);
+export class Dx2FissionTableComponent extends SmtFissionTableComponent {
+  toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPair(currentDemon, names, this.compendium);
 }

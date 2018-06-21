@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
 import { Title } from '@angular/platform-browser';
 
 import { SkillListContainerComponent as SLCC } from '../../compendium/containers/skill-list.component';
-import { ElementOrder, APP_TITLE } from '../models/constants';
+import { ElementOrder, APP_TITLE, InheritElementOrder } from '../models/constants';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
@@ -11,8 +11,8 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <app-smt-skill-list
       [elemOrder]="elemOrder"
+      [inheritOrder]="inheritOrder"
       [hasTarget]="true"
-      [hasPrereq]="true"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `
@@ -20,6 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
 export class SkillListContainerComponent extends SLCC {
   appName = `List of Skills - ${APP_TITLE}`;
   elemOrder = ElementOrder;
+  inheritOrder = InheritElementOrder;
   defaultSortFun = (a, b) => (ElementOrder[a.element] - ElementOrder[b.element]) * 10000 + a.rank - b.rank;
 
   constructor(

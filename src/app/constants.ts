@@ -174,8 +174,8 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     game: 'Dx2 Shin Megami Tensei: Liberation',
     tool: 'dx2',
     srcs: [
-      'https://gamewith.jp/d2-megaten-l',
-      'http://megamitensei.wikia.com/wiki/List_of_Dx2_Shin_Megami_Tensei:_Liberation_Skills'
+      'https://altema.jp/megaten/',
+      'https://oceanxdds.github.io/dx2_fusion/'
     ]
   }
 ];

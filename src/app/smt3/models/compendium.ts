@@ -1,4 +1,4 @@
-import { Races, ResistanceElements, SpecialResistances, BaseStats, ElementOrder, ResistCodes } from '../models/constants';
+import { Races, ElementOrder, ResistCodes } from '../models/constants';
 import { Demon, Skill, SpecialRecipe } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -56,6 +56,8 @@ export class Compendium implements ICompendium {
         requires: ''
       }, json);
 
+      skills[name].inherit = skills[name].requires || 'None';
+
       if (!skills[name].rank) {
         skills[name].rank = 99;
       }
@@ -80,8 +82,24 @@ export class Compendium implements ICompendium {
       } else if (recipe.entry && recipe.pair) {
         demon.prereq = 'Fuse one of the following combos and sacrifice one of the following ingredients at Full Kagatsuchi';
       } else if (recipe.lvl) {
-        demon.prereq = 'Evolve from one of the following ingredients';
+        demon.prereq = 'Evolution only';
         demon.fusion = 'evolve';
+
+        demons[recipe.entry].evolvesTo = {
+          price: demon.price,
+          race1: demon.race,
+          lvl1:  recipe.lvl,
+          name1: demon.name
+        };
+
+        demons[demon.name].evolvesFrom = {
+          price: demons[recipe.entry].price,
+          race1: demons[recipe.entry].race,
+          lvl1:  recipe.lvl,
+          name1: recipe.entry
+        };
+
+        recipe.entry = null;
       }
     }
 

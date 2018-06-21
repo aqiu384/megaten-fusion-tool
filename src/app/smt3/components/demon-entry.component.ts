@@ -1,7 +1,6 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs/Subscription';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 
@@ -35,10 +34,21 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-skills
         [hasTarget]="true"
         [hasRank]="true"
+        [hasInherit]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
+      <app-fusion-entry-table *ngIf="demon.evolvesFrom"
+        [title]="'Evolves From'"
+        [baseUrl]="'..'"
+        [rowData]="[demon.evolvesFrom]">
+      </app-fusion-entry-table>
+      <app-fusion-entry-table *ngIf="demon.evolvesTo"
+        [title]="'Evolves To'"
+        [baseUrl]="'..'"
+        [rowData]="[demon.evolvesTo]">
+      </app-fusion-entry-table>
       <app-smt-fusions [showFusionAlert]="isCursed">
         Cursed fusion enabled (More reverse fusions for Vile, Wilder, Night, and Haunt demons)
       </app-smt-fusions>

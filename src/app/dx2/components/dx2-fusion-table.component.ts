@@ -4,19 +4,17 @@ import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPairResult } from '../models/conversions';
 
 @Component({
-  selector: 'app-mib-fusion-table',
+  selector: 'app-dx2-fusion-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-fusion-pair-table
       [title]="currentDemon + ' x Ingredient 2 = Result'"
       [leftHeader]="'Ingredient 2'"
       [rightHeader]="'Result'"
-      [rowData]="fusionPairs"
-      [leftBaseUrl]="'..'"
-      [rightBaseUrl]="'../../personas'">
+      [rowData]="fusionPairs">
     </app-fusion-pair-table>
   `
 })
-export class MibFusionTableComponent extends SmtFusionTableComponent {
+export class Dx2FusionTableComponent extends SmtFusionTableComponent {
   toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPairResult(currentDemon, names, this.compendium);
 }
