@@ -11,5 +11,6 @@ export interface Demon extends BaseDemon {
 export interface Skill extends BaseSkill {
   power: number;
   rank: number;
+  target?: string;
   transfer: { demon: string, level: number }[];
 }

@@ -50,39 +50,25 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-skills
         [title]="'Innate Skills'"
         [hasLvl]="false"
+        [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
       <app-demon-skills
         [title]="'Archetype Skills'"
+        [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.learned">
       </app-demon-skills>
       <app-demon-skills
         [title]="'Gacha Skills'"
+        [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.gacha">
       </app-demon-skills>
-      <table>
-        <thead>
-          <tr>
-            <th colspan="2">Required Awakening Reiko</th>
-          </tr>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let reiko of reikos">
-            <td>{{ reiko.name }}</td>
-            <td>{{ reiko.amount }}</td>
-          </tr>
-        </tbody>
-      </table>
       <app-smt-fusions>
       </app-smt-fusions>
     </ng-container>
