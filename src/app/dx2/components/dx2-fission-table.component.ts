@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SmtFissionTableComponent } from '../../compendium/components/smt-fission-table.component';
 import { NamePair, FusionPair } from '../../compendium/models';
-import { toFusionPair } from '../models/conversions';
+import { toFusionEntry, toFusionPair } from '../models/conversions';
 
 @Component({
   selector: 'app-dx2-fission-table',
@@ -22,5 +22,6 @@ import { toFusionPair } from '../models/conversions';
   `
 })
 export class Dx2FissionTableComponent extends SmtFissionTableComponent {
+  toFusionEntry = (currentDemon: string) => (name: string) => toFusionEntry(currentDemon, name, this.compendium);
   toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPair(currentDemon, names, this.compendium);
 }

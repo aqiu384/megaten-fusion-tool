@@ -45,7 +45,7 @@ export class Compendium implements ICompendium {
         ai:      json.ai,
         fusion:  'normal',
         reikos:  {},
-        price:   Math.pow(json.lvl, 3),
+        price:   Math.pow(json.grade, 3),
         stats:   [stars].concat(estats),
         mstats:  [6].concat(json.stats),
         resists: json.resists.split('').map(char => ResistCodes[char]),
