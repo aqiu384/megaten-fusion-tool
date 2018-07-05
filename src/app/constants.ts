@@ -43,6 +43,15 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     ]
   },
   {
+    game: 'Shin Megami Tensei: Devil Summoner',
+    tool: 'dsum',
+    srcs: [
+      'https://gamefaqs.gamespot.com/psp/929271-shin-megami-tensei-devil-summoner/faqs/70850',
+      'http://onpleruler.web.fc2.com/megami/pspds.htm',
+      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/'
+    ]
+  },
+  {
     game: 'Devil Summoner: Soul Hackers',
     tool: 'dssh',
     srcs: [

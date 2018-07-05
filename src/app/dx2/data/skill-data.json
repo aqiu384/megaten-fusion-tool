@@ -96,7 +96,7 @@
   },
   "Avatar": {
     "element": "passive",
-    "effect": "Revive once per battle with 200 HP, Recover 40% HP after battle"
+    "effect": "Revive once per battle with 200 HP, Recover 40% HP between waves"
   },
   "Barong Dance": {
     "cost": 7,
@@ -217,7 +217,7 @@
     "cost": 3,
     "element": "recovery",
     "effect": "Remove Charm, Charm resistance +30% for 3 turns",
-    "target": "Ally"
+    "target": "One Ally"
   },
   "Chomp": {
     "cost": 5,
@@ -900,7 +900,7 @@
   },
   "Mana Aid": {
     "element": "passive",
-    "effect": "Recover 10 MP after battle"
+    "effect": "Recover 10 MP between waves"
   },
   "Mana Bonus": {
     "element": "passive",
@@ -1146,7 +1146,7 @@
     "cost": 8,
     "element": "recovery",
     "effect": "Samarecarm + Redia",
-    "target": "Single"
+    "target": "One Ally"
   },
   "Mow Down": {
     "cost": 4,
@@ -1354,7 +1354,7 @@
   "Pralaya": {
     "cost": 8,
     "element": "almighty",
-    "effect": "Tetra Break and Makara Break",
+    "effect": "Tetra Break and Makara Break, Damage relative to Strength",
     "power": 100,
     "target": "All Foes"
   },
@@ -1446,9 +1446,9 @@
     "element": "passive",
     "effect": "Repel Force damage"
   },
-  "Repel Phys": {
+  "Repel Ice": {
     "element": "passive",
-    "effect": "Repel Phys damage"
+    "effect": "Repel Ice damage"
   },
   "Resist Bind": {
     "element": "passive",
@@ -1727,7 +1727,7 @@
   },
   "Victory Cry": {
     "element": "passive",
-    "effect": "Recover 30% HP after battle"
+    "effect": "Recover 30% HP between waves"
   },
   "Vitality Bonus": {
     "element": "passive",
