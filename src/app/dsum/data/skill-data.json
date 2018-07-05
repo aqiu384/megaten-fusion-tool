@@ -1,0 +1,1720 @@
+{
+  "6 Shining Stars": {
+    "cost": 1010,
+    "effect": "Randomly heals 6 allies or enemies. Nanto Seikun exclusive",
+    "element": "curse",
+    "oeffect": "Exclusive to Nanto Seikun. Recovers HP 6",
+    "otarget": "All enemies",
+    "scost": 1030,
+    "target": "All enemies"
+  },
+  "7 Shooting Stars": {
+    "cost": 1020,
+    "effect": "7 consecutive instant death attacks. Hokuto Seikun exclusive.",
+    "element": "death",
+    "oeffect": "Exclusive to Hokuto Seikun. Casts 7 instances",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Active Song": {
+    "cost": 1014,
+    "effect": "Raise attack and magic power",
+    "element": "support",
+    "oeffect": "Raises attack and magic power",
+    "otarget": "All party members",
+    "scost": 1012,
+    "target": "All allies"
+  },
+  "Agi": {
+    "cost": 1003,
+    "effect": "Inflicts light Fire damage",
+    "element": "fire",
+    "oeffect": "Light fire damage",
+    "otarget": "1 front row enemy",
+    "target": "A1"
+  },
+  "Agilao": {
+    "cost": 1007,
+    "effect": "Inflicts moderate Fire damage",
+    "element": "fire",
+    "oeffect": "Medium fire damage",
+    "otarget": "2-3 front row enemies",
+    "scost": 1010,
+    "target": "A2-3"
+  },
+  "Angel's Kiss": {
+    "cost": 1010,
+    "effect": "Recover HP for Law-aligned only",
+    "element": "recovery",
+    "oeffect": "Recover HP",
+    "otarget": "Law-alignment party members",
+    "scost": 1012,
+    "target": "All allies"
+  },
+  "Arachno Wire": {
+    "cost": 1008,
+    "effect": "Inflicts Paralyze (Enemy only)",
+    "element": "nerve",
+    "oeffect": "Enemy-only. May inflict Paralyze",
+    "otarget": "1-2 enemies",
+    "target": "B0-2"
+  },
+  "Arm Chopper": {
+    "cost": 7,
+    "effect": "Inflicts light Slash damage and Paralyze",
+    "element": "slash",
+    "oeffect": "Light physical damage. May inflict Paralyze.",
+    "otarget": "1-2 enemies",
+    "target": "A0-2"
+  },
+  "Atom Slicer": {
+    "cost": 10,
+    "effect": "Inflicts continuous light Slash damage",
+    "element": "slash",
+    "oeffect": "Light physical damage",
+    "otarget": "1-7 enemies",
+    "target": "A0-7"
+  },
+  "Bamboo Slice": {
+    "cost": 17,
+    "effect": "Inflicts moderate Slash damage, taking 20% HP; 1/16 chance of instant death. Doesn't work on bosses",
+    "element": "slash",
+    "oeffect": "Damage is equal to 20% of current HP. 1/16 chance",
+    "otarget": "1 enemy",
+    "target": "A1"
+  },
+  "Bind Voice": {
+    "cost": 1010,
+    "effect": "Inflicts Bind",
+    "element": "nerve",
+    "oeffect": "May inflict Bind",
+    "otarget": "All enemies",
+    "scost": 1006,
+    "target": "All enemies"
+  },
+  "Bird Gimlet": {
+    "cost": 4,
+    "effect": "Inflicts light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Blight": {
+    "cost": 12,
+    "effect": "Inflicts light Slash damage and Poison",
+    "element": "slash",
+    "oeffect": "Light physical damage. May inflict Poison.",
+    "otarget": "Random enemies",
+    "target": "B2-4"
+  },
+  "Blizzard Breath": {
+    "cost": 1009,
+    "effect": "Inflicts moderate Ice damage",
+    "element": "ice",
+    "oeffect": "Light ice damage. May cause Freeze.",
+    "otarget": "All front row enemies",
+    "scost": 1008,
+    "target": "Front row"
+  },
+  "Brahmastra": {
+    "cost": 64,
+    "effect": "Inflicts heavy Almighty damage",
+    "element": "almighty",
+    "oeffect": "Exclusive to Rama. Almighty damage.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Brain Burst": {
+    "cost": 1010,
+    "effect": "Inflicts light Psionic damage and Bind",
+    "element": "psy",
+    "oeffect": "Telekinetic damage. May inflict Bind.",
+    "otarget": "4-6 enemies",
+    "scost": 1012,
+    "target": "B4-6"
+  },
+  "Buddha's Laugh": {
+    "cost": 1011,
+    "effect": "Inflicts Close",
+    "element": "curse",
+    "oeffect": "May inflict Close",
+    "otarget": "All enemies",
+    "scost": 1008,
+    "target": "All enemies"
+  },
+  "Bufu": {
+    "cost": 1003,
+    "effect": "Inflicts light Ice damage",
+    "element": "ice",
+    "oeffect": "Light ice damage. May cause Freeze.",
+    "otarget": "1 front row enemy",
+    "target": "A1"
+  },
+  "Bufula": {
+    "cost": 1007,
+    "effect": "Inflicts moderate Ice damage",
+    "element": "ice",
+    "oeffect": "Light ice damage. May cause Freeze.",
+    "otarget": "2-3 back row enemies",
+    "scost": 1010,
+    "target": "B2-3"
+  },
+  "Cauterizing Fist": {
+    "cost": 20,
+    "effect": "Inflicts light Fire damage. Consumes HP.",
+    "element": "fire",
+    "oeffect": "Light fire damage",
+    "otarget": "All enemies",
+    "scost": 28,
+    "target": "All enemies"
+  },
+  "Charm Bite": {
+    "cost": 7,
+    "effect": "Low chance to inflict light Rush damage and Charm",
+    "element": "rush",
+    "oeffect": "Light physical damage. May inflict Charm.",
+    "otarget": "1 enemy",
+    "target": "A0-1"
+  },
+  "Charmdi": {
+    "cost": 1005,
+    "effect": "Heal Charm",
+    "element": "recovery",
+    "oeffect": "Cures Charm",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Cherry Blossoms": {
+    "cost": 3,
+    "effect": "Sacrifice self to inflict heavy Rush damage",
+    "element": "rush",
+    "oeffect": "High physical damage in exchange for user's",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Chi Blast": {
+    "cost": 8,
+    "effect": "Inflicts continuous light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage.",
+    "otarget": "1-7 enemies",
+    "target": "A0-7"
+  },
+  "Chin Lock": {
+    "cost": 4,
+    "effect": "Inflicts moderate Tech damage to the enemy with lowest speed, taking 30% HP. (Enemy only)",
+    "element": "tech",
+    "oeffect": "Enemy-only. Damage equal to 30% of current HP to",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Cold-hearted Mistress": {
+    "cost": 11,
+    "effect": "Inflicts heavy Tech damage. Inaruna exclusive",
+    "element": "tech",
+    "oeffect": "Exclusive to Inaruna. High physical damage.",
+    "otarget": "All enemies",
+    "scost": 22,
+    "target": "All enemies"
+  },
+  "Critical Slash": {
+    "cost": 21,
+    "effect": "Inflicts light Slash damage, taking 30% HP; 1/16 chance of instant death. Doesn't work on bosses",
+    "element": "slash",
+    "oeffect": "Damage is equal to 30% of current HP.",
+    "otarget": "All front row enemies",
+    "target": "Front row"
+  },
+  "Crying Scream": {
+    "cost": 1030,
+    "effect": "Inflicts Charm and Stone",
+    "element": "mind",
+    "oeffect": "May inflict Stone or Charm",
+    "otarget": "All enemies",
+    "scost": 1055,
+    "target": "All enemies"
+  },
+  "Death Ring": {
+    "cost": 1020,
+    "effect": "Inflicts Paralyze. Demiurge exclusive",
+    "element": "nerve",
+    "oeffect": "Exclusive to Demiurge. May inflict Paralyze.",
+    "otarget": "All enemies",
+    "scost": 1040,
+    "target": "All enemies"
+  },
+  "Deathbound": {
+    "cost": 11,
+    "effect": "Inflicts continuous light Slash damage",
+    "element": "slash",
+    "oeffect": "Light physical damage",
+    "otarget": "1-7 enemies",
+    "target": "A0-7"
+  },
+  "Dekaja": {
+    "cost": 1009,
+    "effect": "Cancels -kaja effects",
+    "element": "support",
+    "oeffect": "Nullifies all enemy stat bonuses.",
+    "otarget": "All enemies",
+    "scost": 1008,
+    "target": "All enemies"
+  },
+  "Dekunda": {
+    "cost": 1009,
+    "effect": "Cancel -nda effects",
+    "element": "support",
+    "oeffect": "Nullifies all stat penalties.",
+    "otarget": "All party members",
+    "scost": 1008,
+    "target": "All allies"
+  },
+  "Demon's Allure F": {
+    "cost": 1000,
+    "effect": "Lowers the level of male enemies (Enemy only)",
+    "element": "death",
+    "oeffect": "Enemy-only. Inflicts Paralyze.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Demon's Allure M": {
+    "cost": 1000,
+    "effect": "Lowers the level of female enemies (Enemy only)",
+    "element": "death",
+    "oeffect": "Enemy-only. Inflicts Paralyze.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Demon's Kiss": {
+    "cost": 1010,
+    "effect": "Recovery HP for Chaos-aligned only",
+    "element": "recovery",
+    "oeffect": "Recover HP",
+    "otarget": "Chaos-alignment party members",
+    "scost": 1012,
+    "target": "All allies"
+  },
+  "Dia": {
+    "cost": 1002,
+    "effect": "Small HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover small amount of HP",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Diablo de Corps": {
+    "cost": 4,
+    "effect": "Reduces enemy HP by 40% or 100%, inflicts Shock. Gargantua 8 exclusive",
+    "element": "rush",
+    "oeffect": "Exclusive to Gargantua 8 and David. Three physical",
+    "otarget": "1 enemy",
+    "target": "A1"
+  },
+  "Diarahan": {
+    "cost": 1012,
+    "effect": "Full HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover all HP.",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Diarama": {
+    "cost": 1006,
+    "effect": "Moderate HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover medium amount of HP",
+    "otarget": "1 party member",
+    "scost": 1004,
+    "target": "One ally"
+  },
+  "Die Hard": {
+    "cost": 1014,
+    "effect": "Raise defense and accuracy",
+    "element": "support",
+    "oeffect": "Raises defense and accuracy",
+    "otarget": "All party members",
+    "scost": 1012,
+    "target": "All allies"
+  },
+  "Dormina": {
+    "cost": 1006,
+    "effect": "Inflicts Sleep",
+    "element": "mind",
+    "oeffect": "May inflict Sleep",
+    "otarget": "1 column",
+    "scost": 1003,
+    "target": "One row"
+  },
+  "Earth Wall": {
+    "cost": 1018,
+    "effect": "Reflect Physical attacks for one turn",
+    "element": "support",
+    "oeffect": "Reflects all physical attacks for one",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Eat Whole": {
+    "cost": 7,
+    "effect": "Inflicts Rush damage to the enemy with the lowest strength, taking 25% HP, with 1/16 chance of instant death. (Enemy only)",
+    "element": "rush",
+    "oeffect": "Enemy-only. Attack is equal to 25% of HP of the",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Empty Wave": {
+    "cost": 18,
+    "effect": "Inflicts moderate Slash damage. Guan Yu exclusive",
+    "element": "slash",
+    "oeffect": "Exclusive to Kantei Seikun. Medium physical",
+    "otarget": "1 column",
+    "target": "One row"
+  },
+  "Escape": {
+    "cost": 1000,
+    "effect": "Escape from combat",
+    "element": "special",
+    "oeffect": "Enemy-only. Escapes from battle.",
+    "otarget": "1 enemy",
+    "target": "One ally"
+  },
+  "Estoma": {
+    "cost": 1004,
+    "effect": "Avoid encounters with low level enemies",
+    "element": "special",
+    "oeffect": "Lowers encounter rate of lower-level demons",
+    "otarget": "None",
+    "scost": 1003,
+    "target": "-"
+  },
+  "Ether Mace": {
+    "cost": 14,
+    "effect": "Inflicts light Rush damage and Paralyze",
+    "element": "rush",
+    "oeffect": "Medium physical damage. May inflict Paralyze.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Evil Eyes": {
+    "cost": 1008,
+    "effect": "Chance of instant death",
+    "element": "death",
+    "oeffect": "May cause instant death",
+    "otarget": "1 random enemy",
+    "target": "C1"
+  },
+  "Feral Bite": {
+    "cost": 4,
+    "effect": "Inflicts continuous light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage",
+    "otarget": "2-4 enemies",
+    "target": "B2-4"
+  },
+  "Fiore Splendido": {
+    "cost": 1030,
+    "effect": "Inflicts Magic damage. Inaruna exclusive",
+    "element": "curse",
+    "oeffect": "Exclusive to Inaruna. Magic damage.",
+    "otarget": "All enemies",
+    "scost": 1050,
+    "target": "All enemies"
+  },
+  "Fire Breath": {
+    "cost": 1008,
+    "effect": "Inflicts moderate Fire damage",
+    "element": "fire",
+    "oeffect": "Medium fire damage",
+    "otarget": "Front row enemies",
+    "target": "Front row"
+  },
+  "Fire Wall": {
+    "cost": 1005,
+    "effect": "Block one Ice attack",
+    "element": "support",
+    "oeffect": "Blocks all ice attacks once",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Flare Rush": {
+    "cost": 7,
+    "effect": "Inflicts continuous light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage.",
+    "otarget": "1-7 enemies",
+    "target": "A0-7"
+  },
+  "Flesh Mash": {
+    "cost": 16,
+    "effect": "Inflicts heavy Tech damage. Ou-Magatsuhi exclusive",
+    "element": "tech",
+    "oeffect": "Exclusive to Oumagatsuhi and Enoch. High",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Flying Knee": {
+    "cost": 3,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "1 enemy",
+    "target": "A1"
+  },
+  "Foul Law": {
+    "cost": 1006,
+    "effect": "Inflicts moderate Almighty damage",
+    "element": "almighty",
+    "oeffect": "Medium almighty damage",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Frilly Wall": {
+    "cost": 1010,
+    "effect": "Reflect Fire, Ice, Elec, Force and Psionic attacks for one turn. Mamedanuki exclusive",
+    "element": "support",
+    "oeffect": "Exclusive to Mamedanuki. Reflects",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Genocide Fist": {
+    "cost": 10,
+    "effect": "Inflicts moderate Almighty damage against the slowest enemy. Inaruna exclusive",
+    "element": "almighty",
+    "oeffect": "Exclusive to Inaruna. Almighty damage to enemy",
+    "otarget": "1 enemy",
+    "scost": 20,
+    "target": "C1"
+  },
+  "Glacial Blast": {
+    "cost": 1019,
+    "effect": "Inflicts moderate Ice damage",
+    "element": "ice",
+    "oeffect": "Medium ice damage. May cause Freeze.",
+    "otarget": "All enemies",
+    "scost": 1026,
+    "target": "All enemies"
+  },
+  "Gouge": {
+    "cost": 10,
+    "effect": "Inflicts moderate Rush damage to the enemy with the lowest luck; 1/16 chance of instant death. (Enemy only)",
+    "element": "rush",
+    "oeffect": "Enemy-only. High physical damage to the enemy",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Guillotine Heel": {
+    "cost": 3,
+    "effect": "Inflicts light Rush damage",
+    "element": "rush",
+    "oeffect": "Medium physical damage",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Hakyou": {
+    "cost": 1006,
+    "effect": "Low chance to inflict Mirror status",
+    "element": "expel",
+    "oeffect": "May cause Mirror",
+    "otarget": "All front row enemies",
+    "scost": 1005,
+    "target": "Front row"
+  },
+  "Hama": {
+    "cost": 1010,
+    "effect": "Low chance of instant Holy death",
+    "element": "expel",
+    "oeffect": "Chance of instant death",
+    "otarget": "1 front row enemy",
+    "scost": 1008,
+    "target": "A2"
+  },
+  "Hamaon": {
+    "cost": 1030,
+    "effect": "Low chance of instant Holy death",
+    "element": "expel",
+    "oeffect": "Chance of instant death",
+    "otarget": "All enemies",
+    "scost": 1015,
+    "target": "All enemies"
+  },
+  "Hanma": {
+    "cost": 1020,
+    "effect": "Low chance of instant Holy death",
+    "element": "expel",
+    "oeffect": "Chance of instant death",
+    "otarget": "All front row enemies",
+    "scost": 1010,
+    "target": "Front row"
+  },
+  "Hapirma": {
+    "cost": 1008,
+    "effect": "Inflicts Happy",
+    "element": "mind",
+    "oeffect": "May inflict Happy",
+    "otarget": "All front row enemies",
+    "scost": 1004,
+    "target": "Front row"
+  },
+  "Happy Dance": {
+    "cost": 1011,
+    "effect": "Inflicts Happy",
+    "element": "mind",
+    "oeffect": "May inflict Happy",
+    "otarget": "All enemies",
+    "scost": 1012,
+    "target": "All enemies"
+  },
+  "Happy Trigger": {
+    "cost": 5,
+    "effect": "Inflict Gun damage (Enemy only)",
+    "element": "gun",
+    "oeffect": "Enemy only. Light physical damage.",
+    "otarget": "1 column",
+    "target": "One row"
+  },
+  "Hassou Tobi": {
+    "cost": 14,
+    "effect": "Inflicts moderate Slash damage 8 consecutive times. Yoshitsune exclusive",
+    "element": "slash",
+    "oeffect": "Exclusive to Yoshitsune. Eight consecutive",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Hell Thrust": {
+    "cost": 3,
+    "effect": "Inflicts light Tech damage and Close",
+    "element": "tech",
+    "oeffect": "Light physical damage. May inflict Close.",
+    "otarget": "1 enemy",
+    "target": "A0-1"
+  },
+  "Hellfire": {
+    "cost": 1021,
+    "effect": "Inflicts moderate Fire damage",
+    "element": "fire",
+    "oeffect": "Medium fire damage",
+    "otarget": "All enemies",
+    "scost": 1025,
+    "target": "All enemies"
+  },
+  "Hold in my Arms": {
+    "cost": 1018,
+    "effect": "Full HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover medium amount of HP",
+    "otarget": "All party members",
+    "scost": 1014,
+    "target": "All allies"
+  },
+  "Holy Wrath": {
+    "cost": 1108,
+    "effect": "Inflicts moderate Almighty damage to enemies with a different alignment",
+    "element": "almighty",
+    "oeffect": "Almighty damage to enemies with different",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Horseshoe": {
+    "cost": 3,
+    "effect": "Inflicts continuous light Tech damage against the enemy with lowest speed. (Enemy only)",
+    "element": "tech",
+    "oeffect": "Enemy only. Continuous light physical damage",
+    "otarget": "1-7 enemies",
+    "target": "A0-7"
+  },
+  "Innga": {
+    "cost": 7,
+    "effect": "Inflicts moderate Tech damage",
+    "element": "tech",
+    "oeffect": "Medium physical attack",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Insanity Eyes": {
+    "cost": 1006,
+    "effect": "Inflicts Charm",
+    "element": "nerve",
+    "oeffect": "May inflict Charm",
+    "otarget": "1-3 enemies",
+    "scost": 1008,
+    "target": "B1-3"
+  },
+  "Intimidate": {
+    "cost": 1006,
+    "effect": "Halves attack, doubles defense",
+    "element": "support",
+    "oeffect": "Doubles defense but halves attack",
+    "otarget": "All enemies",
+    "scost": 1003,
+    "target": "All enemies"
+  },
+  "Judgement": {
+    "cost": 1054,
+    "effect": "Inflicts moderate Almighty damage to enemies with a different alignment",
+    "element": "almighty",
+    "oeffect": "Almighty damage to enemies with different",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Jumping Knee": {
+    "cost": 3,
+    "effect": "Low chance to inflict light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "1 enemy",
+    "target": "C0-1"
+  },
+  "Killing Step": {
+    "cost": 2,
+    "effect": "Inflicts heavy Slash damage on Mirrored enemies. Strigoi exclusive",
+    "element": "slash",
+    "oeffect": "Exclusive to Strigoii. High physical",
+    "otarget": "1 random enemy",
+    "target": "C1"
+  },
+  "Kyou": {
+    "cost": 1003,
+    "effect": "Low chance to inflict Mirror status",
+    "element": "expel",
+    "oeffect": "May cause Mirror",
+    "otarget": "1 enemy",
+    "target": "A1"
+  },
+  "Lariat": {
+    "cost": 4,
+    "effect": "Inflicts moderate Rush damage",
+    "element": "rush",
+    "oeffect": "Medium physical damage",
+    "otarget": "1 enemy",
+    "target": "A0-1"
+  },
+  "Life Drain": {
+    "cost": 1003,
+    "effect": "Low chance to inflict Bat status (Enemy only)",
+    "element": "death",
+    "oeffect": "Enemy-only. Inflicts Vamp",
+    "otarget": "1 random enemy",
+    "target": "C0-1"
+  },
+  "Liftoma": {
+    "cost": 1004,
+    "effect": "Take no damage from Trap floors",
+    "element": "special",
+    "oeffect": "Nullifies damage traps",
+    "otarget": "All party members",
+    "target": "Party"
+  },
+  "Lightning Blade": {
+    "cost": 12,
+    "effect": "Low chance to inflict heavy Slash damage and Shock. Fariedone exclusive",
+    "element": "slash",
+    "oeffect": "Fury race only. High physical damage. May inflict",
+    "otarget": "1 enemy",
+    "target": "C0-1"
+  },
+  "Lucky Step": {
+    "cost": 1010,
+    "effect": "Greatly increases accuracy. Hare of Inaba exclusive",
+    "element": "support",
+    "oeffect": "Exclusive to Hare of Inaba. Raises",
+    "otarget": "All party members",
+    "scost": 1024,
+    "target": "All allies"
+  },
+  "Lucky Trigger": {
+    "cost": 11,
+    "effect": "Inflict Gun damage (Enemy only)",
+    "element": "gun",
+    "oeffect": "Enemy only. Light physical damage.",
+    "otarget": "1-7 enemies",
+    "target": "B0-7"
+  },
+  "Lullaby": {
+    "cost": 1010,
+    "effect": "Inflicts Sleep",
+    "element": "mind",
+    "oeffect": "May inflict Sleep",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Mabufu": {
+    "cost": 1006,
+    "effect": "Inflicts light Ice damage",
+    "element": "ice",
+    "oeffect": "Light ice damage. May cause Freeze.",
+    "otarget": "All front row enemies",
+    "target": "Front Row"
+  },
+  "Mabufula": {
+    "cost": 1016,
+    "effect": "Inflicts moderate Ice damage",
+    "element": "ice",
+    "oeffect": "Medium ice damage. May cause Freeze.",
+    "otarget": "All enemies",
+    "scost": 1025,
+    "target": "All enemies"
+  },
+  "Macha's Strike": {
+    "cost": 11,
+    "effect": "Consecutive Spear attacks",
+    "element": "gun",
+    "oeffect": "Light physical damage",
+    "otarget": "1-7 enemies",
+    "target": "A0-7"
+  },
+  "Magic Bullet": {
+    "cost": 1020,
+    "effect": "Damages demons only. Sid exclusive",
+    "element": "curse",
+    "oeffect": "Exclusive to Sid Davis. Magic damage to",
+    "otarget": "All enemies",
+    "scost": 1030,
+    "target": "All enemies"
+  },
+  "Magnetic Storm": {
+    "cost": 1007,
+    "effect": "Inflicts Bind",
+    "element": "nerve",
+    "oeffect": "May inflict Bind",
+    "otarget": "1 column",
+    "scost": 1005,
+    "target": "One row"
+  },
+  "Makafuji": {
+    "cost": 1003,
+    "effect": "Inflicts Close",
+    "element": "curse",
+    "oeffect": "May inflict Close",
+    "otarget": "1 enemy",
+    "scost": 1005,
+    "target": "C1"
+  },
+  "Makakaja": {
+    "cost": 1006,
+    "effect": "Increase magic power. Stacks up to 7 times",
+    "element": "support",
+    "oeffect": "Raises magic power. Can be stacked 7",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Makarakarn": {
+    "cost": 1025,
+    "effect": "Reflect Magic attacks for one turn",
+    "element": "support",
+    "oeffect": "Reflects all magic attacks for one turn",
+    "otarget": "All party members",
+    "scost": 1006,
+    "target": "All allies"
+  },
+  "Mapper": {
+    "cost": 1004,
+    "effect": "Display a map until the next New Moon",
+    "element": "special",
+    "oeffect": "Displays map of surrounding area for one moon cycle",
+    "otarget": "None",
+    "target": "-"
+  },
+  "Mapsi": {
+    "cost": 1010,
+    "effect": "Inflicts light Psionic damage",
+    "element": "psy",
+    "oeffect": "Light psionic damage",
+    "otarget": "All enemies in front row",
+    "scost": 1007,
+    "target": "One row"
+  },
+  "Mapsio": {
+    "cost": 1020,
+    "effect": "Inflicts moderate Psionic damage",
+    "element": "psy",
+    "oeffect": "Medium psionic damage",
+    "otarget": "All enemies",
+    "scost": 1032,
+    "target": "All enemies"
+  },
+  "Maragi": {
+    "cost": 1006,
+    "effect": "Inflicts light Fire damage",
+    "element": "fire",
+    "oeffect": "Light fire damage",
+    "otarget": "Front row enemies",
+    "target": "Front row"
+  },
+  "Maragion": {
+    "cost": 1016,
+    "effect": "Inflicts moderate Fire damage",
+    "element": "fire",
+    "oeffect": "Medium fire damage",
+    "otarget": "All enemies",
+    "scost": 1022,
+    "target": "All enemies"
+  },
+  "Marin Karin": {
+    "cost": 1003,
+    "effect": "Inflicts Charm",
+    "element": "nerve",
+    "oeffect": "May inflict Charm",
+    "otarget": "1 enemy",
+    "scost": 1004,
+    "target": "C1"
+  },
+  "Mass Genocide": {
+    "cost": 31,
+    "effect": "Inflicts light Slash damage",
+    "element": "slash",
+    "oeffect": "Light physical damage",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Mazan": {
+    "cost": 1006,
+    "effect": "Inflicts light Force damage",
+    "element": "force",
+    "oeffect": "Light force damage",
+    "otarget": "All front row enemies",
+    "scost": 1007,
+    "target": "Front row"
+  },
+  "Mazanma": {
+    "cost": 1015,
+    "effect": "Inflicts moderate Force damage",
+    "element": "force",
+    "oeffect": "Medium force damage",
+    "otarget": "All enemies",
+    "scost": 1028,
+    "target": "All enemies"
+  },
+  "Mazio": {
+    "cost": 1008,
+    "effect": "Inflicts light Elec damage",
+    "element": "elec",
+    "oeffect": "Light electric damage. May cause",
+    "otarget": "All front row enemies",
+    "scost": 1007,
+    "target": "One row"
+  },
+  "Mazionga": {
+    "cost": 1018,
+    "effect": "Inflicts moderate Elec damage",
+    "element": "elec",
+    "oeffect": "Medium electric damage. May cause Shock.",
+    "otarget": "All enemies",
+    "scost": 1026,
+    "target": "All enemies"
+  },
+  "Me Patra": {
+    "cost": 1008,
+    "effect": "Heals Panic, Happy, Sleep and Bind",
+    "element": "recovery",
+    "oeffect": "Cures Panic, Happy, Sleep, and Bind",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Meat Bullet": {
+    "cost": 3,
+    "effect": "Sacrifice self to inflict heavy Rush damage",
+    "element": "rush",
+    "oeffect": "High physical damage in exchange for user's death",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Media": {
+    "cost": 1008,
+    "effect": "Small HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover small amount of HP",
+    "otarget": "All party members",
+    "scost": 1006,
+    "target": "All allies"
+  },
+  "Mediarahan": {
+    "cost": 1048,
+    "effect": "Full HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover all HP.",
+    "otarget": "All party members",
+    "scost": 1032,
+    "target": "All allies"
+  },
+  "Mediarama": {
+    "cost": 1024,
+    "effect": "Moderate HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover medium amount of HP.",
+    "otarget": "All party members",
+    "scost": 1016,
+    "target": "All allies"
+  },
+  "Megido": {
+    "cost": 1007,
+    "effect": "Inflicts heavy Almighty damage",
+    "element": "almighty",
+    "oeffect": "Strong almighty damage",
+    "otarget": "1 enemy",
+    "scost": 1008,
+    "target": "A1"
+  },
+  "Megidola": {
+    "cost": 1028,
+    "effect": "Inflicts heavy Almighty damage",
+    "element": "almighty",
+    "oeffect": "Medium almighty damage",
+    "otarget": "All front row enemies",
+    "scost": 1022,
+    "target": "Front row"
+  },
+  "Megidolaon": {
+    "cost": 1056,
+    "effect": "Inflicts heavy Almighty damage",
+    "element": "almighty",
+    "oeffect": "Medium almighty damage",
+    "otarget": "All enemies",
+    "scost": 1052,
+    "target": "All enemies"
+  },
+  "Metamodi": {
+    "cost": 1003,
+    "effect": "Heal Mirror and Card",
+    "element": "recovery",
+    "oeffect": "Cures Mirror and Card",
+    "otarget": "1 party member",
+    "scost": 1004,
+    "target": "One ally"
+  },
+  "Meteor Fist": {
+    "cost": 4,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "3-6 enemies",
+    "target": "B3-6"
+  },
+  "Mince Needle": {
+    "cost": 7,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "All front row enemies",
+    "target": "Front row"
+  },
+  "Mirror Prison": {
+    "cost": 1010,
+    "effect": "Moderate chance to inflict Mirror status. Strix exclusive.",
+    "element": "expel",
+    "oeffect": "Exclusive to Strix. May cause Mirror.",
+    "otarget": "All enemies",
+    "scost": 1015,
+    "target": "All enemies"
+  },
+  "Mist Slash": {
+    "cost": 15,
+    "effect": "Inflicts moderate Slash damage",
+    "element": "slash",
+    "oeffect": "Medium physical damage",
+    "otarget": "All front row enemies",
+    "target": "Front row"
+  },
+  "Mudo": {
+    "cost": 1010,
+    "effect": "Low chance of instant Dark death",
+    "element": "death",
+    "oeffect": "Chance of instant death",
+    "otarget": "1 back row enemy",
+    "scost": 1004,
+    "target": "B2"
+  },
+  "Mudola": {
+    "cost": 1020,
+    "effect": "Low chance of instant Dark death",
+    "element": "death",
+    "oeffect": "Chance of instant death",
+    "otarget": "1 column",
+    "scost": 1012,
+    "target": "One row"
+  },
+  "Mudoon": {
+    "cost": 1030,
+    "effect": "Low chance of instant Dark death",
+    "element": "death",
+    "oeffect": "Chance of instant death",
+    "otarget": "All enemies",
+    "scost": 1018,
+    "target": "All enemies"
+  },
+  "Mutudi": {
+    "cost": 1005,
+    "effect": "Heal Close",
+    "element": "recovery",
+    "oeffect": "Cures Close",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Necroma": {
+    "cost": 1013,
+    "effect": "Revives an ally as Undead for one battle.",
+    "element": "special",
+    "oeffect": "Inflicts Undead status on dead party member",
+    "otarget": "1 party member",
+    "scost": 1012,
+    "target": "One ally"
+  },
+  "Nurse": {
+    "cost": 1001,
+    "effect": "Light HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover small amount of HP",
+    "otarget": "All party members",
+    "target": "One ally"
+  },
+  "Panic Voice": {
+    "cost": 1012,
+    "effect": "Inflicts Panic",
+    "element": "mind",
+    "oeffect": "May inflict Panic",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Paral Eyes": {
+    "cost": 1004,
+    "effect": "Low chance to inflict Paralyze",
+    "element": "nerve",
+    "oeffect": "May inflict Paralyze",
+    "otarget": "1-3 enemies",
+    "target": "C0-1"
+  },
+  "Paraladi": {
+    "cost": 1005,
+    "effect": "Heal Paralyze",
+    "element": "recovery",
+    "oeffect": "Cures Paralyze",
+    "otarget": "1 party member",
+    "scost": 1007,
+    "target": "One ally"
+  },
+  "Paralyze Needle": {
+    "cost": 8,
+    "effect": "Inflicts light Tech damage and Paralyze",
+    "element": "tech",
+    "oeffect": "Light physical damage. May inflict",
+    "otarget": "All front row enemies",
+    "target": "Front row"
+  },
+  "Patra": {
+    "cost": 1003,
+    "effect": "Heals Panic, Happy, Sleep and Bind",
+    "element": "recovery",
+    "oeffect": "Cures Panic, Happy, Sleep, and Bind",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Peck": {
+    "cost": 3,
+    "effect": "Inflicts light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Penta Wall": {
+    "cost": 1018,
+    "effect": "Reflect Magic attacks for one turn",
+    "element": "support",
+    "oeffect": "Reflects all magic attacks for one turn",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Petra Eyes": {
+    "cost": 1005,
+    "effect": "Low chance to inflict Stone status (Enemy only)",
+    "element": "death",
+    "oeffect": "Enemy-only. Inflicts Stone",
+    "otarget": "1 random enemy",
+    "scost": 1003,
+    "target": "C0-1"
+  },
+  "Petradi": {
+    "cost": 1005,
+    "effect": "Heal Stone",
+    "element": "recovery",
+    "oeffect": "Cures Stone",
+    "otarget": "1 party member",
+    "scost": 1008,
+    "target": "One ally"
+  },
+  "Phasedi": {
+    "cost": 1003,
+    "effect": "Heal Panic, Happy and Sleep",
+    "element": "recovery",
+    "oeffect": "Cures Panic, Happy, and Sleep",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Photon Shot": {
+    "cost": 1010,
+    "effect": "Inflicts Card. Kashiyama exclusive",
+    "element": "curse",
+    "oeffect": "Exclusive to Kashiyama. May inflict Card.",
+    "otarget": "All enemies",
+    "scost": 1015,
+    "target": "All enemies"
+  },
+  "Poison Claw": {
+    "cost": 3,
+    "effect": "Inflicts light Tech damage and Poison",
+    "element": "tech",
+    "oeffect": "Light physical damage. May inflict Poison.",
+    "otarget": "2 enemies",
+    "target": "A2"
+  },
+  "Posumudi": {
+    "cost": 1003,
+    "effect": "Heal Poison",
+    "element": "recovery",
+    "oeffect": "Cures Poison",
+    "otarget": "1 party member",
+    "scost": 1002,
+    "target": "One ally"
+  },
+  "Provoke": {
+    "cost": 1006,
+    "effect": "Doubles attack, halves defense",
+    "element": "support",
+    "oeffect": "Doubles attack but halves defense",
+    "otarget": "All enemies",
+    "scost": 1003,
+    "target": "All enemies"
+  },
+  "Psi": {
+    "cost": 1005,
+    "effect": "Inflicts light Psionic damage",
+    "element": "psy",
+    "oeffect": "Light psionic damage",
+    "otarget": "1 enemy",
+    "scost": 1003,
+    "target": "C1"
+  },
+  "Psio": {
+    "cost": 1010,
+    "effect": "Inflicts moderate Psionic damage",
+    "element": "psy",
+    "oeffect": "Medium psionic damage",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Psycho Barrier": {
+    "cost": 1005,
+    "effect": "Block one Psionic attack",
+    "element": "support",
+    "oeffect": "Blocks all psionic attacks once",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Psycho Blast": {
+    "cost": 1010,
+    "effect": "Lowers accuracy and magic power",
+    "element": "support",
+    "oeffect": "Lowers accuracy and magic power",
+    "otarget": "All enemies",
+    "scost": 1012,
+    "target": "All enemies"
+  },
+  "Quick Murder": {
+    "cost": 17,
+    "effect": "Low chance to inflicts light Slash damage and Bind",
+    "element": "slash",
+    "oeffect": "Low physical damage. May inflict Bind.",
+    "otarget": "1 enemy",
+    "target": "C0-1"
+  },
+  "Rakukaja": {
+    "cost": 1006,
+    "effect": "Increase defense. Stacks up to 7 times",
+    "element": "support",
+    "oeffect": "Raises defense. Can be stacked 7 times.",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Rakunda": {
+    "cost": 1004,
+    "effect": "Lowers defense. Stacks up to 4 times",
+    "element": "support",
+    "oeffect": "Lowers defense. Can be stacked 4 times.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Rasen": {
+    "cost": 10,
+    "effect": "Inflicts continuous light Tech damage",
+    "element": "tech",
+    "oeffect": "Enemy only. Light physical damage.",
+    "otarget": "1-7 enemies",
+    "target": "B0-7"
+  },
+  "Recarm": {
+    "cost": 1012,
+    "effect": "Revive with low HP",
+    "element": "recovery",
+    "oeffect": "Revives dead party member",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Recarmdra": {
+    "cost": 1016,
+    "effect": "Sacrifice self to revive with full HP",
+    "element": "recovery",
+    "oeffect": "Recovers party's HP but sacrifices",
+    "otarget": "All party members",
+    "scost": 1010,
+    "target": "All allies"
+  },
+  "Rest": {
+    "cost": 1005,
+    "effect": "Recover HP. Rarely causes Sleep",
+    "element": "special",
+    "oeffect": "Recovers HP. May fall asleep.",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Rumble Rush": {
+    "cost": 8,
+    "effect": "Inflicts light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Sabbath": {
+    "cost": 1013,
+    "effect": "Summon a demon from the COMP without the Magnetite cost",
+    "element": "special",
+    "oeffect": "Summon one demon without using MAG",
+    "otarget": "1 party member",
+    "scost": 1010,
+    "target": "One ally"
+  },
+  "Saint Song": {
+    "cost": 1006,
+    "effect": "Light HP recovery",
+    "element": "recovery",
+    "oeffect": "Recover small amount of HP",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Samarecarm": {
+    "cost": 1024,
+    "effect": "Revive with full HP",
+    "element": "recovery",
+    "oeffect": "Revives dead party member and recovers",
+    "otarget": "1 party member",
+    "target": "One ally"
+  },
+  "Scatter": {
+    "cost": 3,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "1-2 enemies",
+    "target": "A1-2"
+  },
+  "Schneiden Axe": {
+    "cost": 11,
+    "effect": "Inflicts moderate Slash damage",
+    "element": "slash",
+    "oeffect": "High physical damage",
+    "otarget": "1 enemy",
+    "target": "A1"
+  },
+  "Sexy Dance": {
+    "cost": 1016,
+    "effect": "Inflicts Charm",
+    "element": "nerve",
+    "oeffect": "May inflict Charm",
+    "otarget": "All enemies",
+    "scost": 1020,
+    "target": "All enemies"
+  },
+  "Shibaboo": {
+    "cost": 1010,
+    "effect": "Inflicts Bind",
+    "element": "nerve",
+    "oeffect": "May inflict Bind",
+    "otarget": "1 column",
+    "scost": 1005,
+    "target": "One row"
+  },
+  "Shikyou": {
+    "cost": 1010,
+    "effect": "Low chance to inflict Mirror status",
+    "element": "expel",
+    "oeffect": "May cause Mirror",
+    "otarget": "All enemies",
+    "scost": 1007,
+    "target": "All enemies"
+  },
+  "Shipani": {
+    "cost": 1012,
+    "effect": "Inflicts Panic",
+    "element": "mind",
+    "oeffect": "May inflict Panic",
+    "otarget": "All enemies",
+    "scost": 1006,
+    "target": "All enemies"
+  },
+  "Shock": {
+    "cost": 1006,
+    "effect": "Inflicts light Elec damage",
+    "element": "elec",
+    "oeffect": "Light electric damage. May cause Shock.",
+    "otarget": "All back enemies",
+    "scost": 1008,
+    "target": "B3-5"
+  },
+  "Shuff": {
+    "cost": 1003,
+    "effect": "Inflicts Card",
+    "element": "curse",
+    "oeffect": "May inflict Card",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Shuffle": {
+    "cost": 1006,
+    "effect": "Inflicts Card",
+    "element": "curse",
+    "oeffect": "May inflict Card",
+    "otarget": "1 column",
+    "scost": 1005,
+    "target": "One row"
+  },
+  "Shuffler": {
+    "cost": 1010,
+    "effect": "Inflicts Card",
+    "element": "curse",
+    "oeffect": "May inflict Card",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Skewer": {
+    "cost": 10,
+    "effect": "Inflict Spear damage to a column",
+    "element": "gun",
+    "oeffect": "Light physical damage",
+    "otarget": "1 column",
+    "target": "One row"
+  },
+  "Skull Cracker": {
+    "cost": 11,
+    "effect": "Low chance to inflict heavy Slash damage",
+    "element": "slash",
+    "oeffect": "Low chance of high physical damage",
+    "otarget": "1 enemy",
+    "target": "C0-1"
+  },
+  "Snipe": {
+    "cost": 2,
+    "effect": "Inflict Gun damage (Enemy only)",
+    "element": "gun",
+    "oeffect": "Enemy only. Light physical damage.",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Sonic Boom": {
+    "cost": 1014,
+    "effect": "Raise attack and accuracy",
+    "element": "support",
+    "oeffect": "Raises attack and accuracy",
+    "otarget": "All party members",
+    "scost": 1012,
+    "target": "All allies"
+  },
+  "Soul Jack": {
+    "cost": 1000,
+    "effect": "Reduces enemy's level by 1. Kumbhanda exclusive.",
+    "element": "death",
+    "oeffect": "Exclusive to Kumbhanda. Inflicts Paralyze.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Spin Slash": {
+    "cost": 10,
+    "effect": "Inflicts continuous light Slash damage",
+    "element": "slash",
+    "oeffect": "Light physical damage",
+    "otarget": "4-6 enemies",
+    "target": "B4-6"
+  },
+  "Spiral Bite": {
+    "cost": 3,
+    "effect": "Inflicts light Rush damage",
+    "element": "rush",
+    "oeffect": "Light physical damage",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Spite Shout": {
+    "cost": 1098,
+    "effect": "Reduces enemy's level by 2. Inaruna exclusive.",
+    "element": "death",
+    "oeffect": "Exclusive to Inaruna second form. Inflicts",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Stone Bite": {
+    "cost": 8,
+    "effect": "Low chance to inflict light Rush damage and Stone",
+    "element": "rush",
+    "oeffect": "Light physical damage. May inflict Stone.",
+    "otarget": "1 enemy",
+    "target": "A0-1"
+  },
+  "Stun Claw": {
+    "cost": 4,
+    "effect": "Inflicts light Tech damage and Paralyze",
+    "element": "tech",
+    "oeffect": "Light physical damage. May inflict Paralyze.",
+    "otarget": "1-2 enemies",
+    "target": "A0-2"
+  },
+  "Stun Crash": {
+    "cost": 5,
+    "effect": "Inflicts light Tech damage and Shock",
+    "element": "tech",
+    "oeffect": "Light physical damage. May inflict Shock.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Sukukaja": {
+    "cost": 1006,
+    "effect": "Increase accuracy. Stacks up to 7 times",
+    "element": "support",
+    "oeffect": "Raises accuracy. Can be stacked 7",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Sukunda": {
+    "cost": 1004,
+    "effect": "Lowers accuracy. Stacks up to 4 times",
+    "element": "support",
+    "oeffect": "Lowers accuracy. Can be stacked 4 times.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Tackle": {
+    "cost": 5,
+    "effect": "Inflicts continuous light Rush damage",
+    "element": "rush",
+    "oeffect": "Medium physical damage",
+    "otarget": "2-3 enemies",
+    "target": "B2-3"
+  },
+  "Tarukaja": {
+    "cost": 1006,
+    "effect": "Increase attack. Stacks up to 7 times",
+    "element": "support",
+    "oeffect": "Raises attack. Can be stacked 7 times.",
+    "otarget": "All party members",
+    "scost": 1005,
+    "target": "All allies"
+  },
+  "Tarunda": {
+    "cost": 1004,
+    "effect": "Lowers attack. Stacks up to 4 times",
+    "element": "support",
+    "oeffect": "Lowers attack. Can be stacked 4 times.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Tatami Shield": {
+    "cost": 5,
+    "effect": "Reflect Physical attacks for one turn. Consumes HP.",
+    "element": "support",
+    "oeffect": "Reflects all physical attacks for one",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Tetraja": {
+    "cost": 1005,
+    "effect": "Block any Holy or Dark spell once",
+    "element": "support",
+    "oeffect": "Blocks Expel and Death magic once",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Tetrakarn": {
+    "cost": 1025,
+    "effect": "Reflect Physical attacks for one turn",
+    "element": "support",
+    "oeffect": "Reflects all physical attacks for one",
+    "otarget": "All party members",
+    "scost": 1006,
+    "target": "All allies"
+  },
+  "Thunder Break": {
+    "cost": 1019,
+    "effect": "Inflicts moderate Elec damage",
+    "element": "elec",
+    "oeffect": "Medium electric damage. May cause Shock.",
+    "otarget": "All enemies",
+    "scost": 1028,
+    "target": "All enemies"
+  },
+  "Traesto": {
+    "cost": 1008,
+    "effect": "Teleport to the dungeon entrance",
+    "element": "special",
+    "oeffect": "Escape from dungeon",
+    "otarget": "All party members",
+    "scost": 1003,
+    "target": "Party"
+  },
+  "Untouched Zone": {
+    "cost": 1004,
+    "effect": "Block any Holy or Dark spell once",
+    "element": "support",
+    "oeffect": "Blocks Expel and Death magic once",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Vampire Kiss": {
+    "cost": 1020,
+    "effect": "Inflicts Bat status. Tendou exclusive.",
+    "element": "death",
+    "oeffect": "Exclusive to Tendou. Inflicts Vamp.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Venom Bite": {
+    "cost": 4,
+    "effect": "Inflicts light Rush damage and Poison",
+    "element": "rush",
+    "oeffect": "Light physical damage. May inflict Poison.",
+    "otarget": "1 enemy.",
+    "target": "A1"
+  },
+  "Venom Breath": {
+    "cost": 1011,
+    "effect": "Inflicts Poison",
+    "element": "curse",
+    "oeffect": "May inflict Poison",
+    "otarget": "All enemies",
+    "scost": 1005,
+    "target": "All enemies"
+  },
+  "Venom Flash": {
+    "cost": 1033,
+    "effect": "Inflicts light Almighty damage and Poison",
+    "element": "almighty",
+    "oeffect": "Light almighty damage. May cause Poison.",
+    "otarget": "All enemies",
+    "scost": 1036,
+    "target": "All enemies"
+  },
+  "Venom Needle": {
+    "cost": 12,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage. May inflict",
+    "otarget": "All front row enemies",
+    "scost": 5,
+    "target": "Front row"
+  },
+  "Vice Gospel": {
+    "cost": 1000,
+    "effect": "Inflicts various status ailments. Sid exclusive",
+    "element": "nerve",
+    "oeffect": "Exclusive to Sid Davis. May inflict random",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Virgin's Prayer": {
+    "cost": 1010,
+    "effect": "Revive. Jeanne D'Arc exclusive",
+    "element": "recovery",
+    "oeffect": "Exclusive to Jeanne D'Arc. Revives",
+    "otarget": "All party members",
+    "scost": 1024,
+    "target": "All allies"
+  },
+  "Volcanicker": {
+    "cost": 1050,
+    "effect": "Chance to inflict instant death. Orgone Ghost exclusive.",
+    "element": "elec",
+    "oeffect": "Exclusive to Orgone Ghost. May cause instant",
+    "otarget": "All enemies",
+    "scost": 1110,
+    "target": "All enemies"
+  },
+  "Vulcan Kick": {
+    "cost": 3,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "2-7 enemies",
+    "target": "A2-7"
+  },
+  "Water Wall": {
+    "cost": 1005,
+    "effect": "Block one Fire attack",
+    "element": "support",
+    "oeffect": "Blocks all fire attacks once",
+    "otarget": "All party members",
+    "target": "All allies"
+  },
+  "Wing Flap": {
+    "cost": 4,
+    "effect": "Inflicts light Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage.",
+    "otarget": "All enemies",
+    "target": "All enemies"
+  },
+  "Wolf Claw": {
+    "cost": 4,
+    "effect": "Inflicts Tech damage",
+    "element": "tech",
+    "oeffect": "Light physical damage",
+    "otarget": "All front row enemies",
+    "target": "Front row"
+  },
+  "Zan": {
+    "cost": 1003,
+    "effect": "Inflicts light Force damage",
+    "element": "force",
+    "oeffect": "Light force damage",
+    "otarget": "1 front row enemy",
+    "target": "A1"
+  },
+  "Zanma": {
+    "cost": 1008,
+    "effect": "Inflicts moderate Force damage",
+    "element": "force",
+    "oeffect": "Medium force damage",
+    "otarget": "2-4 enemies",
+    "scost": 1012,
+    "target": "B2-4"
+  },
+  "Zio": {
+    "cost": 1004,
+    "effect": "Inflicts light Elec damage",
+    "element": "elec",
+    "oeffect": "Light electric damage. May cause Shock.",
+    "otarget": "1 enemy",
+    "target": "C1"
+  },
+  "Zionga": {
+    "cost": 1009,
+    "effect": "Inflicts moderate Elec damage",
+    "element": "elec",
+    "oeffect": "Medium electric damage. May cause Shock.",
+    "otarget": "1 enemy",
+    "scost": 1010,
+    "target": "C1"
+  }
+}
