@@ -44,3 +44,21 @@
 .smtsj th.nav.active a, .smtsj th.nav:hover a {
   color: white;
 }
+
+.smtsj td.align.Light-Law,
+.smtsj td.align.Neutral-Law,
+.smtsj td.align.Dark-Law {
+  color: cyan;
+}
+
+.smtsj td.align.Neutral-Law:after,
+.smtsj td.align.Neutral-Neutral:after,
+.smtsj td.align.Neutral-Chaos:after {
+  content: ' ○';
+}
+
+.smtsj td.align.Light-Chaos,
+.smtsj td.align.Neutral-Chaos,
+.smtsj td.align.Dark-Chaos {
+  color: tomato;
+}
