@@ -1,0 +1,980 @@
+{
+  "Absorbtion": {
+    "effect": "Kill ally and absorb remaining HP and MP",
+    "element": "almighty",
+    "enemy": true,
+    "target": "1 Ally"
+  },
+  "Acid": {
+    "effect": "Poison",
+    "element": "flying",
+    "power": 5,
+    "target": "1 Foe"
+  },
+  "Agi": {
+    "cost": 1003,
+    "element": "fire",
+    "power": 23,
+    "target": "1 Foe"
+  },
+  "Agilao": {
+    "cost": 1007,
+    "element": "fire",
+    "power": 64,
+    "target": "1 Foe"
+  },
+  "Aim": {
+    "element": "gun",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Akasha Arts": {
+    "element": "punch",
+    "power": 20,
+    "target": "All Foes"
+  },
+  "Amaha Dance": {
+    "effect": "Paralyze",
+    "element": "flying",
+    "power": 20,
+    "target": "1 Foe"
+  },
+  "Autofire": {
+    "effect": "x2-4 hits",
+    "element": "gun",
+    "power": 20,
+    "target": "Random Foes"
+  },
+  "Backfist": {
+    "element": "punch",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Backspin": {
+    "cost": 1005,
+    "effect": "Restart battle",
+    "element": "special"
+  },
+  "Bael's Curse": {
+    "cost": 1008,
+    "effect": "Fly",
+    "element": "death",
+    "power": 6,
+    "target": "1 Foe"
+  },
+  "Berserk": {
+    "element": "rush",
+    "power": 15,
+    "target": "All Foes"
+  },
+  "Bind Voice": {
+    "cost": 1008,
+    "effect": "Bind",
+    "element": "bind",
+    "power": 9,
+    "target": "All Foes"
+  },
+  "Bodhisattva's Palm": {
+    "effect": "Power scales with max HP",
+    "element": "punch",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Bufu": {
+    "cost": 1003,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 15,
+    "target": "1 Foe"
+  },
+  "Bufula": {
+    "cost": 1008,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 40,
+    "target": "1 Foe"
+  },
+  "Call Ally": {
+    "effect": "Summon same-enemy reinforcements",
+    "element": "special",
+    "enemy": true,
+    "target": "1 Ally"
+  },
+  "Charm Bite": {
+    "effect": "Charm",
+    "element": "rush",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Cleave": {
+    "element": "rush",
+    "power": 5,
+    "target": "All Foes"
+  },
+  "Cobra Schemer": {
+    "effect": "-50% MAG",
+    "element": "special",
+    "enemy": true,
+    "target": "All Foes"
+  },
+  "Constrict": {
+    "effect": "Bind",
+    "element": "rush",
+    "power": 12,
+    "target": "1 Foe"
+  },
+  "Dark Breath": {
+    "cost": 1006,
+    "effect": "Rakukaja + Makakaja",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Deathbound": {
+    "effect": "x1-2 hits, Power scales with max HP",
+    "element": "sword",
+    "power": 100,
+    "target": "Random Foes"
+  },
+  "Deathtouch": {
+    "cost": 1004,
+    "effect": "Absorb HP",
+    "element": "curse",
+    "power": 30,
+    "target": "1 Foe"
+  },
+  "Dekaja": {
+    "cost": 1010,
+    "effect": "Remove -kaja effects",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Devil's Kiss (Female)": {
+    "effect": "Paralyze and -1 Lvl to already Paralyzed human females",
+    "element": "energy",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Devil's Kiss (Male)": {
+    "effect": "Paralyze and -1 Lvl to already Paralyzed human males",
+    "element": "energy",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Dharma Kaeshi": {
+    "effect": "Power scales with max HP",
+    "element": "sword",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Dia": {
+    "cost": 1002,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1008,
+    "effect": "Recover large HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Diarama": {
+    "cost": 1004,
+    "effect": "Recover some HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Dormina": {
+    "cost": 1003,
+    "effect": "x1-3 hits, Sleep",
+    "element": "nerve",
+    "power": 20,
+    "target": "Random Foes"
+  },
+  "Elohim's Light": {
+    "cost": 1003,
+    "effect": "Stone Foe with lowest Luck",
+    "element": "almighty",
+    "enemy": true,
+    "power": 78,
+    "target": "1 Foe"
+  },
+  "Escape": {
+    "effect": "Guarantee escape from battle",
+    "element": "special",
+    "enemy": true
+  },
+  "Estoma": {
+    "cost": 1006,
+    "effect": "Prevent lower-level encounters until next New Moon",
+    "element": "special"
+  },
+  "Evil Shine": {
+    "cost": 1010,
+    "effect": "Charm",
+    "element": "curse",
+    "enemy": true,
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Evil Smile": {
+    "effect": "Paralyze and -1 Lvl to already Paralyzed humans",
+    "element": "energy",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Feral Bite": {
+    "element": "rush",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Feral Claw": {
+    "element": "punch",
+    "power": 15,
+    "target": "2 Foes"
+  },
+  "Fire Breath": {
+    "cost": 1008,
+    "effect": "x1-3 hits",
+    "element": "fire",
+    "power": 60,
+    "target": "Random Foes"
+  },
+  "Fire Wall": {
+    "cost": 1004,
+    "effect": "Nullify Ice attacks for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Fog Breath": {
+    "cost": 1008,
+    "effect": "Sukunda x2",
+    "element": "nerve",
+    "power": 10,
+    "target": "All Foes"
+  },
+  "Fog of Temptation": {
+    "effect": "Charm",
+    "element": "flying",
+    "power": 1,
+    "target": "All Foes"
+  },
+  "Fool's Voice": {
+    "cost": 1006,
+    "effect": "Mute",
+    "element": "curse",
+    "power": 27,
+    "target": "All Foes"
+  },
+  "Fujin Attack": {
+    "effect": "Freeze",
+    "element": "punch",
+    "power": 15,
+    "target": "All Foes"
+  },
+  "Guard": {
+    "effect": "-50% damage taken for 1 turn",
+    "element": "special",
+    "enemy": true
+  },
+  "Hades Blast": {
+    "effect": "x1-3 hits, Power scales with max HP",
+    "element": "sword",
+    "power": 80,
+    "target": "Random Foes"
+  },
+  "Hama": {
+    "cost": 1005,
+    "effect": "Insta Death",
+    "element": "expel",
+    "power": 16,
+    "target": "2 Foes"
+  },
+  "Hapirma": {
+    "cost": 1002,
+    "effect": "x1-3 hits, Happy",
+    "element": "curse",
+    "power": 18,
+    "target": "Random Foes"
+  },
+  "Happy Dance": {
+    "cost": 1004,
+    "effect": "Happy",
+    "element": "curse",
+    "power": 22,
+    "target": "All Foes"
+  },
+  "Heat Wave": {
+    "effect": "x2-3 hits, Power scales with max HP",
+    "element": "sword",
+    "power": 50,
+    "target": "Random Foes"
+  },
+  "Hell Eyes": {
+    "cost": 1008,
+    "effect": "Insta Death",
+    "element": "death",
+    "power": 12,
+    "target": "1 Foe"
+  },
+  "Hell Fang": {
+    "effect": "Power scales with max HP",
+    "element": "sword",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Hell Thrust": {
+    "effect": "Mute",
+    "element": "rush",
+    "power": 12,
+    "target": "1 Foe"
+  },
+  "Holy Light": {
+    "cost": 1006,
+    "effect": "Charm",
+    "element": "curse",
+    "power": 70,
+    "target": "All Foes"
+  },
+  "Holy Wrath": {
+    "cost": 1080,
+    "effect": "Foes -25% HP, User -12% HP",
+    "element": "almighty",
+    "power": 39,
+    "target": "Universal"
+  },
+  "Howl": {
+    "cost": 1002,
+    "effect": "Advance Moon by 8 phases",
+    "element": "special"
+  },
+  "Ice Bound": {
+    "cost": 1005,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Ice Breath": {
+    "cost": 1008,
+    "effect": "x1-3 hits, Freeze",
+    "element": "ice",
+    "power": 38,
+    "target": "Random Foes"
+  },
+  "Iron Punch": {
+    "effect": "Mute",
+    "element": "punch",
+    "power": 10,
+    "target": "All Foes"
+  },
+  "Joy Song": {
+    "cost": 1004,
+    "effect": "Happy",
+    "element": "nerve",
+    "power": 14,
+    "target": "All Foes"
+  },
+  "Jump Kick": {
+    "effect": "x1-3 hits",
+    "element": "kick",
+    "power": 20,
+    "target": "Random Foes"
+  },
+  "Kick": {
+    "element": "kick",
+    "power": 6,
+    "target": "1 Foe"
+  },
+  "Landslide": {
+    "element": "almighty",
+    "power": 60,
+    "target": "All Foes"
+  },
+  "Life Drain": {
+    "cost": 1007,
+    "effect": "Bat",
+    "element": "death",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Lullaby": {
+    "cost": 1006,
+    "effect": "Sleep",
+    "element": "nerve",
+    "power": 23,
+    "target": "All Foes"
+  },
+  "Mabufu": {
+    "cost": 1006,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 12,
+    "target": "All Foes"
+  },
+  "Mabufula": {
+    "cost": 1011,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 32,
+    "target": "All Foes"
+  },
+  "Mahama": {
+    "cost": 1010,
+    "effect": "Insta Death",
+    "element": "expel",
+    "power": 12,
+    "target": "All Foes"
+  },
+  "Makajam": {
+    "cost": 1004,
+    "effect": "x1-3 hits, Mute",
+    "element": "curse",
+    "power": 12,
+    "target": "Random Foes"
+  },
+  "Makakaja": {
+    "cost": 1004,
+    "effect": "+1 Magic Attack (+4 Max)",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Makarakarn": {
+    "cost": 1006,
+    "effect": "Repel Magic attacks for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Mapper": {
+    "cost": 1002,
+    "effect": "Show minimap until next New Moon",
+    "element": "special"
+  },
+  "Maragi": {
+    "cost": 1005,
+    "element": "fire",
+    "power": 19,
+    "target": "All Foes"
+  },
+  "Maragion": {
+    "cost": 1009,
+    "element": "fire",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Marin Karin": {
+    "cost": 1006,
+    "effect": "Charm",
+    "element": "curse",
+    "power": 24,
+    "target": "1 Foe"
+  },
+  "Mazan": {
+    "cost": 1004,
+    "element": "force",
+    "power": 14,
+    "target": "All Foes"
+  },
+  "Mazanma": {
+    "cost": 1007,
+    "element": "force",
+    "power": 38,
+    "target": "All Foes"
+  },
+  "Mazio": {
+    "cost": 1007,
+    "effect": "Shock",
+    "element": "elec",
+    "power": 16,
+    "target": "All Foes"
+  },
+  "Mazionga": {
+    "cost": 1012,
+    "effect": "Shock",
+    "element": "elec",
+    "power": 41,
+    "target": "All Foes"
+  },
+  "Media": {
+    "cost": 1006,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Mediarahan": {
+    "cost": 1014,
+    "effect": "Recover large HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Mediarama": {
+    "cost": 1010,
+    "effect": "Recover some HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Megido": {
+    "cost": 1015,
+    "element": "almighty",
+    "power": 70,
+    "target": "All Foes"
+  },
+  "Megidolaon": {
+    "cost": 1030,
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Mouth of God (False)": {
+    "cost": 1010,
+    "effect": "Bind Foe with lowest Intelligence",
+    "element": "almighty",
+    "enemy": true,
+    "power": 69,
+    "target": "1 Foe"
+  },
+  "Mouth of God (True)": {
+    "cost": 1010,
+    "effect": "Kill Foe with lowest Intelligence",
+    "element": "almighty",
+    "enemy": true,
+    "power": 96,
+    "target": "1 Foe"
+  },
+  "Mudo": {
+    "cost": 1003,
+    "effect": "Insta Death",
+    "element": "death",
+    "power": 16,
+    "target": "2 Foes"
+  },
+  "Mudoon": {
+    "cost": 1009,
+    "effect": "x3-5 hits, Insta Death",
+    "element": "death",
+    "power": 12,
+    "target": "Random Foes"
+  },
+  "Necroma": {
+    "cost": 1020,
+    "effect": "Revive with Undead state for 1 battle",
+    "element": "special",
+    "target": "1 Ally"
+  },
+  "Needle Rush": {
+    "effect": "x3-5 hits",
+    "element": "flying",
+    "power": 8,
+    "target": "Random Foes"
+  },
+  "Panic Voice": {
+    "cost": 1002,
+    "effect": "Panic",
+    "element": "bind",
+    "power": 10,
+    "target": "All Foes"
+  },
+  "Paral Eyes": {
+    "cost": 1002,
+    "effect": "Paralyze",
+    "element": "death",
+    "power": 12,
+    "target": "1 Foe"
+  },
+  "Paraladi": {
+    "cost": 1006,
+    "effect": "Remove Paralyze",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Patra": {
+    "cost": 1002,
+    "effect": "Remove Shock, Freeze, Happy, Panic, Bind, Sleep, Mute",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Penpatra": {
+    "cost": 1004,
+    "effect": "Remove Shock, Freeze, Happy, Panic, Bind, Sleep, Mute",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Petra Eyes": {
+    "cost": 1004,
+    "effect": "Stone",
+    "element": "death",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Petradi": {
+    "cost": 1010,
+    "effect": "Remove Stone",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Poison Breath": {
+    "cost": 1007,
+    "effect": "x1-2 hits, Poison",
+    "element": "curse",
+    "power": 32,
+    "target": "Random Foes"
+  },
+  "Poison Mist": {
+    "cost": 1008,
+    "effect": "Poison",
+    "element": "curse",
+    "power": 48,
+    "target": "All Foes"
+  },
+  "Posumudi": {
+    "cost": 1004,
+    "effect": "Remove Poison",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Power Breath": {
+    "cost": 1006,
+    "effect": "Tarukaja + Sukukaja",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Pulinpa": {
+    "cost": 1002,
+    "effect": "x1-3 hits, Panic",
+    "element": "curse",
+    "power": 22,
+    "target": "Random Foes"
+  },
+  "Punch": {
+    "element": "punch",
+    "power": 5,
+    "target": "1 Foe"
+  },
+  "Raijin Attack": {
+    "effect": "Shock",
+    "element": "punch",
+    "enemy": true,
+    "power": 15,
+    "target": "All Foes"
+  },
+  "Rakukaja": {
+    "cost": 1004,
+    "effect": "+1 Defense (+4 Max)",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Rakunda": {
+    "cost": 1004,
+    "effect": "-1 Defense (-4 Max)",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Recarm": {
+    "cost": 1012,
+    "effect": "Revive with 25% HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Recarmdra": {
+    "cost": 1008,
+    "effect": "Revive with 100% HP, kills user",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Rest": {
+    "effect": "Recover 15% HP",
+    "element": "special"
+  },
+  "Rikaja": {
+    "cost": 1005,
+    "effect": "Remove -kunda effects",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Roundhouse Kick": {
+    "element": "kick",
+    "power": 12,
+    "target": "1 Foe"
+  },
+  "Sabaoth's Voice": {
+    "cost": 1006,
+    "effect": "Bind Foe with lowest Strength",
+    "element": "almighty",
+    "enemy": true,
+    "power": 72,
+    "target": "1 Foe"
+  },
+  "Sabatoma": {
+    "cost": 1008,
+    "effect": "Summon demon without using MAG",
+    "element": "special",
+    "target": "1 Ally"
+  },
+  "Sacrifice": {
+    "effect": "Foes lose MP equal to 50% damage taken",
+    "element": "almighty",
+    "power": 15,
+    "target": "All Foes"
+  },
+  "Samarecarm": {
+    "cost": 1024,
+    "effect": "Revive with 100% HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Scan": {
+    "effect": "Paralyze",
+    "element": "flying",
+    "power": 20,
+    "target": "2 Foes"
+  },
+  "Scapegoat": {
+    "effect": "Takes damage in place of ally",
+    "element": "special",
+    "target": "1 Ally"
+  },
+  "Self-Destruct": {
+    "effect": "Kills user",
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Sexy Dance": {
+    "cost": 1006,
+    "effect": "Charm",
+    "element": "curse",
+    "power": 12,
+    "target": "All Foes"
+  },
+  "Shaddai's Eye": {
+    "cost": 1004,
+    "effect": "Paralyze Foe with lowest Agility",
+    "element": "almighty",
+    "enemy": true,
+    "power": 76,
+    "target": "1 Foe"
+  },
+  "Shibaboo": {
+    "cost": 1003,
+    "effect": "x1-3 hits, Bind",
+    "element": "bind",
+    "power": 28,
+    "target": "Random Foes"
+  },
+  "Shock": {
+    "cost": 1006,
+    "effect": "x1-3 hits, Shock",
+    "element": "elec",
+    "power": 44,
+    "target": "Random Foes"
+  },
+  "Showtime": {
+    "element": "rush",
+    "enemy": true,
+    "power": 10,
+    "target": "All Foes"
+  },
+  "Shrapnel": {
+    "element": "gun",
+    "power": 18,
+    "target": "All Foes"
+  },
+  "Sonic Wave": {
+    "cost": 1005,
+    "effect": "Panic",
+    "element": "bind",
+    "power": 15,
+    "target": "All Foes"
+  },
+  "Spin Slash": {
+    "effect": "x2-3 hits, Power scales with max HP",
+    "element": "sword",
+    "power": 40,
+    "target": "Random Foes"
+  },
+  "Squash": {
+    "element": "rush",
+    "power": 30,
+    "target": "1 Foe"
+  },
+  "Stone Bite": {
+    "effect": "Stone",
+    "element": "rush",
+    "power": 20,
+    "target": "1 Foe"
+  },
+  "Stun Bite": {
+    "effect": "Paralyze",
+    "element": "rush",
+    "power": 20,
+    "target": "1 Foe"
+  },
+  "Stun Claw": {
+    "effect": "Paralyze",
+    "element": "punch",
+    "power": 15,
+    "target": "2 Foes"
+  },
+  "Stun Needle": {
+    "effect": "x2-3 hits, Paralyze",
+    "element": "flying",
+    "power": 8,
+    "target": "Random Foes"
+  },
+  "Suck": {
+    "effect": "Absorb 50% damage dealt",
+    "element": "almighty",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Sukukaja": {
+    "cost": 1002,
+    "effect": "+1 Hit, Evade (+4 Max)",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Sukunda": {
+    "cost": 1002,
+    "effect": "-1 Hit, Evade (-4 Max)",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Tackle": {
+    "element": "rush",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Tarukaja": {
+    "cost": 1004,
+    "effect": "+1 Attack (+4 Max)",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Tarunda": {
+    "cost": 1004,
+    "effect": "-1 Attack (-4 Max)",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Tekken Punch": {
+    "effect": "x1-3 hits",
+    "element": "punch",
+    "power": 15,
+    "target": "Random Foes"
+  },
+  "Tentarafoo": {
+    "cost": 1014,
+    "effect": "Panic",
+    "element": "nerve",
+    "power": 44,
+    "target": "All Foes"
+  },
+  "Tetra": {
+    "cost": 1008,
+    "effect": "Seals skills for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Tetraja": {
+    "cost": 1005,
+    "effect": "Nullify Energy Drain attacks for 1 battle",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Tetrakarn": {
+    "cost": 1006,
+    "effect": "Repel Phys attacks for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Thunder Kick": {
+    "effect": "Power scales with max HP",
+    "element": "kick",
+    "power": 100,
+    "target": "2 Foes"
+  },
+  "Toxic Sting": {
+    "effect": "Poison",
+    "element": "flying",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Traesto": {
+    "cost": 1006,
+    "effect": "Teleport to dungeon entrance",
+    "element": "special"
+  },
+  "Trafuri": {
+    "cost": 1002,
+    "effect": "Guarantee escape from normal battle",
+    "element": "special",
+    "target": "All Allies"
+  },
+  "Traport": {
+    "cost": 1006,
+    "effect": "Teleport to last save point",
+    "element": "special"
+  },
+  "Vacuum Throw": {
+    "effect": "Chance to end battle",
+    "element": "almighty",
+    "power": 15,
+    "target": "1 Foe"
+  },
+  "Venom Bite": {
+    "effect": "Poison",
+    "element": "rush",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Venom Claw": {
+    "effect": "Poison",
+    "element": "punch",
+    "power": 15,
+    "target": "2 Foes"
+  },
+  "Violet Flash": {
+    "cost": 1008,
+    "effect": "Front Row -50% HP, Back Row -25% HP",
+    "element": "almighty",
+    "enemy": true,
+    "power": 60,
+    "target": "All Foes"
+  },
+  "Water Wall": {
+    "cost": 1004,
+    "effect": "Nullify Fire attacks for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Wing Flap": {
+    "element": "flying",
+    "power": 5,
+    "target": "All Foes"
+  },
+  "Zan": {
+    "cost": 1002,
+    "element": "force",
+    "power": 18,
+    "target": "1 Foe"
+  },
+  "Zanma": {
+    "cost": 1005,
+    "element": "force",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Zio": {
+    "cost": 1004,
+    "effect": "Shock",
+    "element": "elec",
+    "power": 19,
+    "target": "1 Foe"
+  },
+  "Zionga": {
+    "cost": 1009,
+    "effect": "Shock",
+    "element": "elec",
+    "power": 55,
+    "target": "1 Foe"
+  }
+}
