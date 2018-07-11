@@ -7,6 +7,16 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   {
+    path: 'smt1',
+    loadChildren: './smt1/compendium.module#CompendiumModule',
+    data: { appName: 'Shin Megami Tensei' }
+  },
+  {
+    path: 'smt2',
+    loadChildren: './smt2/compendium.module#CompendiumModule',
+    data: { appName: 'Shin Megami Tensei' }
+  },
+  {
     path: 'smt3',
     loadChildren: './smt3/compendium.module#CompendiumModule',
     data: { appName: 'Shin Megami Tensei III: Nocturne' }

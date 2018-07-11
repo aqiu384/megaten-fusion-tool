@@ -1,0 +1,49 @@
+.smt1 div.element-icon {
+  height: 12px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.smt1 div.element-icon.sword { background-image: url('/assets/images/smt4f/sword.png'); }
+.smt1 div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.smt1 div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.smt1 div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.smt1 div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.smt1 div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.smt1 div.element-icon.nerve { background-image: url('/assets/images/smt4f/panic.png'); }
+.smt1 div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.smt1 div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.smt1 div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.smt1 div.element-icon.curse { background-image: url('/assets/images/smt4f/poison.png'); }
+.smt1 div.element-icon.bind { background-image: url('/assets/images/smt4f/bind.png'); }
+.smt1 div.element-icon.rush { background-image: url('/assets/images/smt4f/sword.png'); }
+.smt1 div.element-icon.punch { background-image: url('/assets/images/smtsj/phy.png'); }
+.smt1 div.element-icon.flying { background-image: url('/assets/images/smt4f/gun.png'); }
+
+.smt1 div.element-icon.energy { background-image: url('/assets/images/smtsj/alm.png'); }
+.smt1 div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.smt1 div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.smt1 div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
+
+.smt1 th {
+  color: white;
+  background-color: #608341;
+}
+
+.smt1 th.sortable:hover {
+  background-color: #b9ff7b;
+}
+
+.smt1 th.nav {
+  background-color: #29381b;
+}
+
+.smt1 th.nav.active, .smt1 th.nav:hover {
+  background-color: #608341;
+}
+
+.smt1 th.nav.active a, .smt1 th.nav:hover a {
+  color: white;
+}

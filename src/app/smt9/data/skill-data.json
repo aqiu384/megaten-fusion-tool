@@ -1,0 +1,1544 @@
+{
+  "Acid": {
+    "cost": 5,
+    "effect": "Poison + Tarunda",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Acid Breath": {
+    "cost": 5,
+    "effect": "Poison",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Affectionate Prayer": {
+    "cost": 1020,
+    "effect": "Recover 10% HP per turn for 5+ turn",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Agi": {
+    "cost": 1003,
+    "element": "fire",
+    "target": "1 Foe"
+  },
+  "Agidyne": {
+    "cost": 1015,
+    "element": "fire",
+    "target": "1 Foe"
+  },
+  "Agilao": {
+    "cost": 1007,
+    "element": "fire",
+    "target": "1 Foe"
+  },
+  "Amano Iwakura": {
+    "effect": "Allies start battle with Rakukaja + Samakaja, duration extended by number of Law Foes and Allies",
+    "element": "starter"
+  },
+  "Amano Iwato": {
+    "effect": "Construction and Repair are instantaneous",
+    "element": "phase"
+  },
+  "Angel's Blessing": {
+    "effect": "Allies recover 5% HP per count",
+    "element": "autorec"
+  },
+  "Ares Aid": {
+    "effect": "Allies start battle with Tarukaja",
+    "element": "starter"
+  },
+  "Army-Crushing Star": {
+    "effect": "Increase ally ambush success rate",
+    "element": "explore"
+  },
+  "Ascend": {
+    "cost": 2850,
+    "effect": "Move to higher floor",
+    "element": "area"
+  },
+  "Avatar": {
+    "effect": "Revive with 50% HP with (100 - 10 * # Deaths so far)% chance",
+    "element": "self"
+  },
+  "Avenging Goddess": {
+    "effect": "+25% Phys and Magic attack per count up till count 8",
+    "element": "self"
+  },
+  "Barrier": {
+    "cost": 1010,
+    "effect": "Reduce all damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Berserk": {
+    "cost": 20,
+    "element": "tech",
+    "target": "All Foes"
+  },
+  "Bharatanatyam": {
+    "effect": "+100% Area removal speed except Command and Control",
+    "element": "phase"
+  },
+  "Bind Trap": {
+    "cost": 2030,
+    "effect": "Build trap that freezes enemy for 1 count, upgrade x2",
+    "element": "area"
+  },
+  "Blade of Fury": {
+    "cost": 5,
+    "element": "slash",
+    "target": "All Foes"
+  },
+  "Blitzkrieg": {
+    "effect": "+100% Move Speed",
+    "element": "explore"
+  },
+  "Bonecrusher": {
+    "cost": 15,
+    "effect": "Tarunda",
+    "element": "rush",
+    "target": "1 Foe"
+  },
+  "Booby Trap": {
+    "cost": 2030,
+    "effect": "Build trap that removes 10% enemy MP per count, upgrade +10%",
+    "element": "area"
+  },
+  "Book of Amoghavajra": {
+    "effect": "Prevent battle support skills",
+    "element": "universe"
+  },
+  "Book of Enoch": {
+    "effect": "-50% CP for ally AERIALS",
+    "element": "plugin"
+  },
+  "Break Shot": {
+    "cost": 1,
+    "element": "gun",
+    "target": "1 Foe"
+  },
+  "Bufu": {
+    "cost": 1003,
+    "element": "ice",
+    "target": "1 Foe"
+  },
+  "Bufudyne": {
+    "cost": 1016,
+    "element": "ice",
+    "target": "1 Foe"
+  },
+  "Bufula": {
+    "cost": 1008,
+    "element": "ice",
+    "target": "1 Foe"
+  },
+  "Burst Shot": {
+    "cost": 1,
+    "effect": "Rakunda + Samanda",
+    "element": "gun",
+    "target": "All Foes"
+  },
+  "Caduceus": {
+    "effect": "Recover 100% MP per phase cycle",
+    "element": "plugin"
+  },
+  "Canceller": {
+    "effect": "Prevent encountered traps from triggering",
+    "element": "explore"
+  },
+  "Cardinal Aid": {
+    "effect": "Allies start battle with Barrier",
+    "element": "starter"
+  },
+  "Chaotic Darkness": {
+    "effect": "+3 Party Stealth, Large effect",
+    "element": "explore"
+  },
+  "Chronostasis": {
+    "effect": "-2 turns to current phase",
+    "element": "phase"
+  },
+  "Cocytus Pain": {
+    "cost": 1001,
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Compendium": {
+    "effect": "Temporarily view full analysis of Foes",
+    "element": "plugin"
+  },
+  "Crystal Wall": {
+    "cost": 1010,
+    "effect": "Reduce Elec damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "DBB": {
+    "effect": "Prevent party leaders from acting",
+    "element": "universe"
+  },
+  "Dark Breath": {
+    "cost": 1025,
+    "effect": "Reduce all damage for 5+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Dark Judgement": {
+    "cost": 1020,
+    "effect": "Insta Death",
+    "element": "death",
+    "target": "All Foes"
+  },
+  "Dark Wall": {
+    "cost": 1010,
+    "effect": "Reduce Expel damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Darkness Shot": {
+    "cost": 1,
+    "effect": "Tarunda + Makanda",
+    "element": "gun",
+    "target": "All Foes"
+  },
+  "Darkside Aid": {
+    "effect": "Allies start battle with Makakaja",
+    "element": "starter"
+  },
+  "Deadly Needle": {
+    "cost": 5,
+    "effect": "Expel-type Insta Death",
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Deathbound": {
+    "cost": 10,
+    "element": "slash",
+    "target": "1 Foe Row"
+  },
+  "Deathtouch": {
+    "cost": 5,
+    "effect": "Absorb HP",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Dekaja": {
+    "cost": 1010,
+    "effect": "Remove all -kaja effects",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Dekunda": {
+    "cost": 1005,
+    "effect": "Remove all -kunda effects",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Descend": {
+    "cost": 2850,
+    "effect": "Move to lower floor",
+    "element": "area"
+  },
+  "Dia": {
+    "cost": 1004,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1020,
+    "effect": "Recover 100% HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Diarama": {
+    "cost": 1008,
+    "effect": "Recover some HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Disarm": {
+    "effect": "Remove encountered traps",
+    "element": "explore"
+  },
+  "Divine Gate": {
+    "cost": 2400,
+    "effect": "Create path between areas",
+    "element": "area"
+  },
+  "Divine Judgement": {
+    "cost": 1020,
+    "effect": "Insta Death",
+    "element": "expel",
+    "target": "All Foes"
+  },
+  "Divine Light": {
+    "cost": 1,
+    "element": "gun",
+    "target": "All Foes"
+  },
+  "Dormina": {
+    "cost": 1003,
+    "effect": "Sleep",
+    "element": "mind",
+    "target": "1 Foe"
+  },
+  "Double Shot": {
+    "cost": 1,
+    "element": "gun",
+    "target": "1 Foe"
+  },
+  "Double Thrust": {
+    "cost": 2,
+    "element": "slash",
+    "target": "1 Foe Col"
+  },
+  "Dream Needle": {
+    "cost": 5,
+    "effect": "Sleep",
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Drive Shot": {
+    "cost": 1,
+    "element": "gun",
+    "target": "1 Foe Row"
+  },
+  "Duel": {
+    "effect": "Prevent battle support skill restrictions during current turn",
+    "element": "universe"
+  },
+  "Eagle Eye": {
+    "effect": "Discover stealth 2 enemies and traps at short-range, stealth 3 enemies at mid-range",
+    "element": "explore"
+  },
+  "Earth's Blessing": {
+    "effect": "Allies recover 20% HP per count",
+    "element": "autorec"
+  },
+  "Eat Whole": {
+    "cost": 10,
+    "effect": "Death-type Insta Death",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Eclipse": {
+    "effect": "Reverse phase cycle",
+    "element": "phase"
+  },
+  "Empty Wave": {
+    "cost": 2,
+    "effect": "Tarunda",
+    "element": "slash",
+    "target": "1 Foe Col"
+  },
+  "Endure": {
+    "effect": "Revive with 50% HP once per battle",
+    "element": "self"
+  },
+  "Enlightenment": {
+    "cost": 10,
+    "element": "thrown",
+    "target": "All Foes"
+  },
+  "Evil Eye": {
+    "cost": 1001,
+    "effect": "Mute, Stone",
+    "element": "almighty",
+    "target": "1 Foe"
+  },
+  "Evil Smile": {
+    "cost": 5,
+    "effect": "Charm, Panic",
+    "element": "tech",
+    "target": "1 Foe Row"
+  },
+  "Exorcism Bow": {
+    "cost": 5,
+    "element": "thrown",
+    "target": "All Foes"
+  },
+  "Eye of Heaven": {
+    "effect": "Discover stealth 2 enemies at mid-range, stealth 3 enemies and traps at long-range",
+    "element": "explore"
+  },
+  "Eye of Ra": {
+    "effect": "Change all enemy recognition levels to 3, discover all traps",
+    "element": "explore"
+  },
+  "Eye of Void": {
+    "effect": "Change all enemy recognition levels to 3, discover all traps on current floor",
+    "element": "explore"
+  },
+  "Fairy's Blessing": {
+    "effect": "Allies recover 5% MP per count",
+    "element": "autorec"
+  },
+  "Fast Escape": {
+    "effect": "Enemy ambush rate while fleeing is same as normal",
+    "element": "explore"
+  },
+  "Feline Crown": {
+    "effect": "-50% CP for ally BEASTS",
+    "element": "plugin"
+  },
+  "Feral Bite": {
+    "cost": 10,
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Feral Claw": {
+    "cost": 5,
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Fire Breath": {
+    "cost": 1010,
+    "element": "fire",
+    "target": "All Foes"
+  },
+  "Fire Wall": {
+    "cost": 1010,
+    "effect": "Reduce Ice damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Flowing Time": {
+    "effect": "-50% CP for ally NETHERS",
+    "element": "plugin"
+  },
+  "Fool's Voice": {
+    "cost": 1008,
+    "effect": "Mute",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Fountain of Energy": {
+    "cost": 2045,
+    "effect": "Build area that recovers 25% HP and MP per count, upgrade +25%",
+    "element": "area"
+  },
+  "Fountain of Life": {
+    "cost": 2015,
+    "effect": "Build area that recovers 25% HP per count, upgrade +25%",
+    "element": "area"
+  },
+  "Fountain of Mana": {
+    "cost": 2025,
+    "effect": "Build area that recovers 25% MP per count, upgrade +25%",
+    "element": "area"
+  },
+  "Fountain of Recovery": {
+    "cost": 2010,
+    "effect": "Build area that removes Mute, upgrade removes Poison, Stone, Death",
+    "element": "area"
+  },
+  "Galeforce": {
+    "effect": "+50% Move Speed",
+    "element": "explore"
+  },
+  "Gambler": {
+    "effect": "Randomize current phase to 3-8 turns",
+    "element": "phase"
+  },
+  "Gatekeeper": {
+    "effect": "Prevent reinforcements from acting",
+    "element": "universe"
+  },
+  "Glacial Blast": {
+    "cost": 1020,
+    "effect": "Expel-type Insta Death",
+    "element": "ice",
+    "target": "All Foes"
+  },
+  "God's Breath": {
+    "cost": 1050,
+    "effect": "Recover 100%, Remove ailments",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "God's Hand": {
+    "cost": 10,
+    "effect": "Rakunda",
+    "element": "rush",
+    "target": "All Foes"
+  },
+  "Godly Gate": {
+    "cost": 2600,
+    "effect": "Create path between areas in half the time of Divine Gate",
+    "element": "area"
+  },
+  "Greed": {
+    "effect": "Share positive battle support skills from enemies to allies",
+    "element": "universe"
+  },
+  "Growing Darkness": {
+    "effect": "+1 Party Stealth, Small effect",
+    "element": "explore"
+  },
+  "Guard Dog": {
+    "effect": "Prevent enemy ambush",
+    "element": "universe"
+  },
+  "Hades Blast": {
+    "cost": 5,
+    "element": "slash",
+    "target": "1 Foe Col"
+  },
+  "Hama": {
+    "cost": 1008,
+    "effect": "Insta Death",
+    "element": "expel",
+    "target": "1 Foe"
+  },
+  "Happy Trigger": {
+    "cost": 8,
+    "element": "thrown",
+    "target": "All Foes"
+  },
+  "Hassou Tobi": {
+    "cost": 10,
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Hastening": {
+    "effect": "+2 turns to current phase",
+    "element": "phase"
+  },
+  "Hawk Eye": {
+    "effect": "Discover stealth 2 enemies at short-range, stealth 3 enemies and traps at mid-range",
+    "element": "explore"
+  },
+  "Heat Wave": {
+    "cost": 5,
+    "effect": "Tarunda",
+    "element": "slash",
+    "target": "1 Foe Row"
+  },
+  "Heaven's Gate": {
+    "cost": 2550,
+    "effect": "Create a path to higher floor",
+    "element": "area"
+  },
+  "Heavenly Dance": {
+    "cost": 1025,
+    "effect": "Makakaja + Samakaja for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Heavenly Mandate": {
+    "effect": "+12.5% Magic attack per surviving Ally",
+    "element": "self"
+  },
+  "Hell's Gate": {
+    "cost": 2550,
+    "effect": "Create a path to lower floor",
+    "element": "area"
+  },
+  "Hemachandra": {
+    "effect": "+50% Area removal speed except Command and Control",
+    "element": "phase"
+  },
+  "Hero Soul": {
+    "effect": "+12.5% Phys attack per dead Ally",
+    "element": "self"
+  },
+  "Holy Wrath": {
+    "cost": 1060,
+    "effect": "Effective against Foes of opposite alignment",
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Honey Trap": {
+    "cost": 2030,
+    "effect": "Build trap that slow enemy for 15 counts by 10%, upgrade +5%",
+    "element": "area"
+  },
+  "Ice Breath": {
+    "cost": 1015,
+    "element": "ice",
+    "target": "All Foes"
+  },
+  "Infinite Firmament": {
+    "effect": "Divide individual damage received among Allies",
+    "element": "self"
+  },
+  "Iron Tail": {
+    "cost": 10,
+    "element": "rush",
+    "target": "1 Foe Col"
+  },
+  "Jackpot": {
+    "effect": "+100% Production area affect while present",
+    "element": "phase"
+  },
+  "Jump Kick": {
+    "cost": 10,
+    "element": "rush",
+    "target": "1 Foe"
+  },
+  "Justice Shot": {
+    "cost": 1,
+    "effect": "Makanda + Samanda",
+    "element": "gun",
+    "target": "1 Foe"
+  },
+  "Karma Mandala": {
+    "cost": 5,
+    "effect": "Tarunda + Makanda",
+    "element": "slash",
+    "target": "All Foes"
+  },
+  "King of Grief": {
+    "effect": "-50% CP for ally ICONS",
+    "element": "plugin"
+  },
+  "Kishin Strike": {
+    "cost": 5,
+    "effect": "Panic",
+    "element": "rush",
+    "target": "1 Foe Row"
+  },
+  "Lakshmi's Blessing": {
+    "effect": "Allies recover 50% HP per count",
+    "element": "autorec"
+  },
+  "Last Judgement": {
+    "effect": "50% chance to revive Ally upon death",
+    "element": "autorec"
+  },
+  "Leap": {
+    "cost": 2450,
+    "effect": "Move to area with no path at half normal speed",
+    "element": "area"
+  },
+  "Lemegeton": {
+    "effect": "Allies start battle with Tarukaja + Makakaja, duration extended by number of Chaos Allies",
+    "element": "starter"
+  },
+  "Light Wall": {
+    "cost": 1010,
+    "effect": "Reduce Death damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Lightning Thrust": {
+    "cost": 2,
+    "element": "slash",
+    "target": "1 Foe Col"
+  },
+  "Long Shot": {
+    "cost": 1,
+    "element": "gun",
+    "target": "1 Foe Col"
+  },
+  "Lullaby": {
+    "cost": 1008,
+    "effect": "Sleep",
+    "element": "mind",
+    "target": "All Foes"
+  },
+  "Lunar Aid": {
+    "effect": "Allies start battle with Samakaja",
+    "element": "starter"
+  },
+  "Mabufu": {
+    "cost": 1003,
+    "element": "ice",
+    "target": "1 Foe Row"
+  },
+  "Mabufudyne": {
+    "cost": 1016,
+    "element": "ice",
+    "target": "All Foes"
+  },
+  "Mabufula": {
+    "cost": 1008,
+    "element": "ice",
+    "target": "1 Foe Row"
+  },
+  "Mad Tea Party": {
+    "cost": 1020,
+    "effect": "Sleep, Panic, Charm",
+    "element": "mind",
+    "target": "Universal"
+  },
+  "Madormina": {
+    "cost": 1003,
+    "effect": "Sleep",
+    "element": "mind",
+    "target": "All Foes"
+  },
+  "Magnetite Convertor": {
+    "cost": 2030,
+    "effect": "Build trap that absorbs 6 enemy MAG per count, upgrade x2",
+    "element": "area"
+  },
+  "Magnetite Creator": {
+    "cost": 2025,
+    "effect": "Build area that recovers 8 MAG per count, upgrade x2",
+    "element": "area"
+  },
+  "Magnetite Destroyer": {
+    "cost": 2030,
+    "effect": "Build trap that removes 8 enemy MAG per count, upgrade x2",
+    "element": "area"
+  },
+  "Mahakala": {
+    "effect": "+3 Party Stealth, Full effect",
+    "element": "explore"
+  },
+  "Mahama": {
+    "cost": 1008,
+    "effect": "Insta Death",
+    "element": "expel",
+    "target": "All Foes"
+  },
+  "Maiden Dance": {
+    "effect": "+50% Construction and Repair speed",
+    "element": "phase"
+  },
+  "Makajam": {
+    "cost": 1004,
+    "effect": "Mute",
+    "element": "nerve",
+    "target": "1 Foe"
+  },
+  "Makakaja": {
+    "cost": 1008,
+    "effect": "+1 Magic Attack for 1 turn",
+    "element": "support",
+    "target": "1 Ally"
+  },
+  "Makanda": {
+    "cost": 1010,
+    "effect": "-1 Magic Attack for 3 turns",
+    "element": "support",
+    "target": "1 Foe"
+  },
+  "Makarakarn": {
+    "cost": 1020,
+    "effect": "Repel Magic damage for 1 turn",
+    "element": "support"
+  },
+  "Mamakajam": {
+    "cost": 1004,
+    "effect": "Mute",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Mamakakaja": {
+    "cost": 1008,
+    "effect": "+1 Magic Attack for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Mamakanda": {
+    "cost": 1010,
+    "effect": "-1 Magic Attack for 3 turns",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Mamarin Karin": {
+    "cost": 1005,
+    "effect": "Charm",
+    "element": "mind",
+    "target": "All Foes"
+  },
+  "Mamudo": {
+    "cost": 1006,
+    "effect": "Insta Death",
+    "element": "death",
+    "target": "All Foes"
+  },
+  "Mana Drain": {
+    "cost": 1001,
+    "effect": "Absorb MP",
+    "element": "almighty",
+    "target": "1 Foe"
+  },
+  "Mapetra": {
+    "cost": 1006,
+    "effect": "Stone",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Mapoisma": {
+    "cost": 1004,
+    "effect": "Poison",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Mapulinpa": {
+    "cost": 1002,
+    "effect": "Panic",
+    "element": "mind",
+    "target": "All Foes"
+  },
+  "Maragi": {
+    "cost": 1003,
+    "element": "fire",
+    "target": "1 Foe Row"
+  },
+  "Maragidyne": {
+    "cost": 1015,
+    "element": "fire",
+    "target": "All Foes"
+  },
+  "Maragion": {
+    "cost": 1007,
+    "element": "fire",
+    "target": "1 Foe Row"
+  },
+  "Marakukaja": {
+    "cost": 1008,
+    "effect": "+1 Phys Attack for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Marakunda": {
+    "cost": 1010,
+    "effect": "-1 Phys Defense for 3 turns",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Marin Karin": {
+    "cost": 1005,
+    "effect": "Charm",
+    "element": "mind",
+    "target": "1 Foe"
+  },
+  "Masamakaja": {
+    "cost": 1008,
+    "effect": "+1 Magic Defense for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Masamanda": {
+    "cost": 1010,
+    "effect": "-1 Magic Defense for 3 turns",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Matarukaja": {
+    "cost": 1008,
+    "effect": "+1 Phys Defense for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Matarunda": {
+    "cost": 1010,
+    "effect": "-1 Phys Attack for 3 turns",
+    "element": "support",
+    "target": "All Foes"
+  },
+  "Mazan": {
+    "cost": 1002,
+    "element": "force",
+    "target": "1 Foe Row"
+  },
+  "Mazandyne": {
+    "cost": 1012,
+    "element": "force",
+    "target": "All Foes"
+  },
+  "Mazanma": {
+    "cost": 1005,
+    "element": "force",
+    "target": "1 Foe Row"
+  },
+  "Mazio": {
+    "cost": 1004,
+    "element": "elec",
+    "target": "1 Foe Row"
+  },
+  "Maziodyne": {
+    "cost": 1018,
+    "element": "elec",
+    "target": "All Foes"
+  },
+  "Mazionga": {
+    "cost": 1009,
+    "element": "elec",
+    "target": "1 Foe Row"
+  },
+  "Me Patra": {
+    "cost": 1008,
+    "effect": "Remove Sleep, Panic, Charm",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Media": {
+    "cost": 1004,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Mediarahan": {
+    "cost": 1020,
+    "effect": "Recover 100% HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Mediarama": {
+    "cost": 1008,
+    "effect": "Recover some HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Mega Strike": {
+    "cost": 10,
+    "effect": "Tarunda + Rakunda",
+    "element": "slash",
+    "target": "All Foes"
+  },
+  "Megaton Press": {
+    "cost": 10,
+    "effect": "Tarunda",
+    "element": "tech",
+    "target": "All Foes"
+  },
+  "Megido": {
+    "cost": 1015,
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Megido Fire": {
+    "cost": 1001,
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Megidola": {
+    "cost": 1030,
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Megidolaon": {
+    "cost": 1045,
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Menat": {
+    "effect": "Recover 100% HP per phase cycle",
+    "element": "plugin"
+  },
+  "Midsummer Night's Dream": {
+    "effect": "Prevent universal negative battle support skills from affecting allies",
+    "element": "universe"
+  },
+  "Mine Trap": {
+    "cost": 2030,
+    "effect": "Build trap that removes 10% enemy HP and MP per count, upgrade +10%",
+    "element": "area"
+  },
+  "Mist Slash": {
+    "cost": 2,
+    "element": "slash",
+    "target": "1 Foe"
+  },
+  "Mitama Aid": {
+    "effect": "Allies start battle with Dark Wall",
+    "element": "starter"
+  },
+  "Mow Down": {
+    "cost": 5,
+    "element": "rush",
+    "target": "1 Foe Row"
+  },
+  "Mudo": {
+    "cost": 1006,
+    "effect": "Insta Death",
+    "element": "death",
+    "target": "1 Foe"
+  },
+  "Nataraja": {
+    "effect": "Area removal is instantaneous",
+    "element": "phase"
+  },
+  "Needle Rush": {
+    "cost": 5,
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Nirvana": {
+    "effect": "Remove all Mute, Poison, Stone, Death by 1, 2, 4, 8 counts",
+    "element": "autorec"
+  },
+  "Orleans Prayer": {
+    "cost": 1020,
+    "effect": "Remove ailments",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Pandemonium": {
+    "effect": "Allies start battle with Tarukaja + Makakaja, duration extended by number of Chaos Foes and Allies",
+    "element": "starter"
+  },
+  "Panic Voice": {
+    "cost": 1008,
+    "effect": "Panic",
+    "element": "mind",
+    "target": "All Foes"
+  },
+  "Parthenon": {
+    "effect": "Allies start battle with Rakukaja + Samakaja, duration extended by number of Law Allies",
+    "element": "starter"
+  },
+  "Passionate Kiss": {
+    "cost": 5,
+    "effect": "Charm",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Pasupata": {
+    "effect": "-50% CP for ally BRUTES",
+    "element": "plugin"
+  },
+  "Patra": {
+    "cost": 1004,
+    "effect": "Remove Sleep, Panic, Charm",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Patroller": {
+    "effect": "Move Speed normal while alert",
+    "element": "explore"
+  },
+  "Petra": {
+    "cost": 1006,
+    "effect": "Stone",
+    "element": "nerve",
+    "target": "1 Foe"
+  },
+  "Petra Claw": {
+    "cost": 5,
+    "effect": "Poison, Stone",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Petra Eyes": {
+    "cost": 1014,
+    "effect": "Stone",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Petra Needle": {
+    "cost": 5,
+    "effect": "Poison, Stone",
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Petradi": {
+    "cost": 1004,
+    "effect": "Remove Stone",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Phantasm": {
+    "effect": "+2 Party Stealth",
+    "element": "explore"
+  },
+  "Pinaka": {
+    "effect": "-50% CP for ally ICONS",
+    "element": "plugin"
+  },
+  "Pit Trap": {
+    "cost": 2015,
+    "effect": "Build trap that removes 10% enemy HP per count, upgrade +10%",
+    "element": "area"
+  },
+  "Pixie Dust": {
+    "effect": "+100% Drive Capactiy",
+    "element": "universe"
+  },
+  "Poisma": {
+    "cost": 1004,
+    "effect": "Poison",
+    "element": "nerve",
+    "target": "1 Foe"
+  },
+  "Poison Breath": {
+    "cost": 1012,
+    "effect": "Poison",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Poison Claw": {
+    "cost": 5,
+    "effect": "Poison",
+    "element": "tech",
+    "target": "1 Foe"
+  },
+  "Posumudi": {
+    "cost": 1002,
+    "effect": "Remove Poison",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Power Breath": {
+    "cost": 1025,
+    "effect": "Tarukaja + Makakaja for 5+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Priestess Dance": {
+    "effect": "+100% Construction and Repair speed",
+    "element": "phase"
+  },
+  "Prominence": {
+    "cost": 1015,
+    "effect": "Poison",
+    "element": "fire",
+    "target": "All Foes"
+  },
+  "Pulinpa": {
+    "cost": 1002,
+    "effect": "Panic",
+    "element": "mind",
+    "target": "1 Foe"
+  },
+  "Puppet Needle": {
+    "cost": 5,
+    "effect": "Sleep, Charm",
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Rabbit Hole": {
+    "cost": 2650,
+    "effect": "Move to random lower floor",
+    "element": "area"
+  },
+  "Ragnarok": {
+    "effect": "Prevent multi-hit Magic attacks from landing on more than one target",
+    "element": "universe"
+  },
+  "Rakukaja": {
+    "cost": 1008,
+    "effect": "+1 Phys Defense for 1 turn",
+    "element": "support",
+    "target": "1 Ally"
+  },
+  "Rakunda": {
+    "cost": 1010,
+    "effect": "-1 Phys Defense for 3 turns",
+    "element": "support",
+    "target": "1 Foe"
+  },
+  "Rampage": {
+    "cost": 20,
+    "element": "tech",
+    "target": "1 Foe Row"
+  },
+  "Recarm": {
+    "cost": 1020,
+    "effect": "Revive with 50% HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Recarmdra": {
+    "cost": 1001,
+    "effect": "Revive with 100% HP, kills user",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Reincarnation": {
+    "effect": "Revive with 100% HP once per battle, kills random Ally",
+    "element": "self"
+  },
+  "Rending Arrows": {
+    "cost": 5,
+    "effect": "Expel-type Insta Death",
+    "element": "thrown",
+    "target": "All Foes"
+  },
+  "Royal Guard": {
+    "effect": "Prevent enemy reinforcements from acting",
+    "element": "universe"
+  },
+  "Runic Aid": {
+    "effect": "Allies start battle with Light Wall",
+    "element": "starter"
+  },
+  "Ryuku's Pearl": {
+    "effect": "-50% CP for ally DRAGONS",
+    "element": "plugin"
+  },
+  "Sacrifice": {
+    "effect": "Tarukaja + Makakaja, Dies after 3 turns",
+    "element": "self"
+  },
+  "Saintly Soul": {
+    "effect": "+12.5% Magic attack per dead Ally",
+    "element": "self"
+  },
+  "Samakaja": {
+    "cost": 1008,
+    "effect": "+1 Magic Defense for 1 turn",
+    "element": "support",
+    "target": "1 Ally"
+  },
+  "Samanda": {
+    "cost": 1010,
+    "effect": "-1 Magic Defense for 3 turns",
+    "element": "support",
+    "target": "1 Foe"
+  },
+  "Samarecarm": {
+    "cost": 1040,
+    "effect": "Revive with 100% HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Samsara": {
+    "effect": "Remove all Mute, Poison, Stone, Death by 2, 4, 8, 16 counts",
+    "element": "autorec"
+  },
+  "Sarunda": {
+    "effect": "-50% CP for ally DEITIES",
+    "element": "plugin"
+  },
+  "Scapegoat": {
+    "effect": "Intercept all damage aimed at Leader from non-Leader Foes",
+    "element": "self"
+  },
+  "Seize": {
+    "effect": "+100% Battle support skill duration",
+    "element": "universe"
+  },
+  "Self-Destruct": {
+    "cost": 100,
+    "element": "rush",
+    "target": "All Foes"
+  },
+  "Severing Sword": {
+    "effect": "Remove all ailments per phase cycle",
+    "element": "autorec"
+  },
+  "Sexy Dance": {
+    "cost": 1012,
+    "effect": "Charm",
+    "element": "mind",
+    "target": "All Foes"
+  },
+  "Shell Shot": {
+    "cost": 1,
+    "element": "gun",
+    "target": "1 Foe Row"
+  },
+  "Shijin Souou": {
+    "cost": 2300,
+    "effect": "Clear all paths leading to current area for 6 counts",
+    "element": "area"
+  },
+  "Shrink": {
+    "effect": "+1 Party Stealth",
+    "element": "explore"
+  },
+  "Silent Prayer": {
+    "cost": 1001,
+    "effect": "Remove all -kaja and -kunda effects",
+    "element": "almighty",
+    "target": "Universal"
+  },
+  "Single Shot": {
+    "cost": 1,
+    "element": "gun",
+    "target": "1 Foe"
+  },
+  "Sisterhood": {
+    "effect": "Recover 100% HP per phase cycle",
+    "element": "plugin"
+  },
+  "Snipe Shot": {
+    "cost": 1,
+    "effect": "Death-type Insta Death",
+    "element": "gun",
+    "target": "1 Foe Col"
+  },
+  "Sonic Boom": {
+    "cost": 1020,
+    "effect": "Tarunda",
+    "element": "force",
+    "target": "All Foes"
+  },
+  "Soothing Melody": {
+    "cost": 1010,
+    "effect": "Recover 5% HP per turn for 5+ turn",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Spike Claw": {
+    "cost": 5,
+    "element": "tech",
+    "target": "1 Foe Row"
+  },
+  "Spin Slash": {
+    "cost": 5,
+    "element": "slash",
+    "target": "1 Foe Row"
+  },
+  "Spiral Shot": {
+    "cost": 5,
+    "effect": "Samanda",
+    "element": "thrown",
+    "target": "1 Foe Col"
+  },
+  "Spirit Aid": {
+    "effect": "Allies start battle with Water, Fire, Crystal, and Steel Walls",
+    "element": "starter"
+  },
+  "Spirit's Blessing": {
+    "effect": "Allies recover 20% MP per count",
+    "element": "autorec"
+  },
+  "Squash": {
+    "cost": 10,
+    "element": "tech",
+    "target": "1 Foe Row"
+  },
+  "Steel Wall": {
+    "cost": 1010,
+    "effect": "Reduce Force damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Tablet of Heaven": {
+    "effect": "-50% CP for ally DRAGONS",
+    "element": "plugin"
+  },
+  "Tackle": {
+    "cost": 15,
+    "element": "rush",
+    "target": "1 Foe"
+  },
+  "Tail Strike": {
+    "cost": 10,
+    "effect": "Tarunda + Rakunda",
+    "element": "rush",
+    "target": "1 Foe Col"
+  },
+  "Tarukaja": {
+    "cost": 1008,
+    "effect": "+1 Phys Attack for 1 turn",
+    "element": "support",
+    "target": "1 Ally"
+  },
+  "Tarunda": {
+    "cost": 1010,
+    "effect": "-1 Phys Attack for 3 turns",
+    "element": "support",
+    "target": "1 Foe"
+  },
+  "Tekken Punch": {
+    "cost": 10,
+    "element": "rush",
+    "target": "1 Foe"
+  },
+  "Teleport": {
+    "cost": 2650,
+    "effect": "Move to area with no path at normal speed",
+    "element": "area"
+  },
+  "Testament": {
+    "cost": 1001,
+    "effect": "Tarunda + Makanda",
+    "element": "almighty",
+    "target": "All Foes"
+  },
+  "Tetrakarn": {
+    "cost": 1020,
+    "effect": "Repel Phys damage for 1 turn",
+    "element": "support"
+  },
+  "Third Eye": {
+    "cost": 2999,
+    "effect": "Clear all areas except command, control, and current area",
+    "element": "area"
+  },
+  "Thunder Kick": {
+    "cost": 10,
+    "element": "rush",
+    "target": "1 Foe Col"
+  },
+  "Thunderbolt": {
+    "cost": 1012,
+    "element": "elec",
+    "target": "All Foes"
+  },
+  "Time of Madness": {
+    "effect": "+100% Phys attack",
+    "element": "universe"
+  },
+  "Time of Merriment": {
+    "effect": "+100% Magic attack",
+    "element": "universe"
+  },
+  "Time of Requiem": {
+    "effect": "+100% Magic defense",
+    "element": "universe"
+  },
+  "Time of Rest": {
+    "effect": "+100% Phys defense",
+    "element": "universe"
+  },
+  "Torrent Shot": {
+    "cost": 5,
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Trafuri": {
+    "cost": 1002,
+    "effect": "Escape back to Drive Zone",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Trigger Happy": {
+    "cost": 1,
+    "effect": "Panic",
+    "element": "gun",
+    "target": "All Foes"
+  },
+  "Trinity": {
+    "effect": "Prevent battle support skills",
+    "element": "universe"
+  },
+  "Triple Down": {
+    "cost": 1,
+    "effect": "Makanda",
+    "element": "gun",
+    "target": "1 Foe"
+  },
+  "Tupsimati": {
+    "effect": "-50% CP for ally AVIANS",
+    "element": "plugin"
+  },
+  "Twin Slash": {
+    "cost": 5,
+    "element": "slash",
+    "target": "1 Foe"
+  },
+  "Underworld": {
+    "cost": 2900,
+    "effect": "Move to lower floor with no path, cannot move for three counts",
+    "element": "area"
+  },
+  "Unknowable Darkness": {
+    "effect": "+2 Party Stealth. Medium effect",
+    "element": "explore"
+  },
+  "Untouched Zone": {
+    "cost": 1010,
+    "effect": "Reduce Expel, Death, Mind, Nerve damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Valhallan Mandate": {
+    "effect": "+12.5% Phys attack per surviving Ally",
+    "element": "self"
+  },
+  "Valiant Dance": {
+    "cost": 1025,
+    "effect": "Tarukaja + Rakukaja for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Valkyrie Aid": {
+    "effect": "Allies start battle with Rakukaja",
+    "element": "starter"
+  },
+  "Vanish": {
+    "effect": "+3 Party Stealth",
+    "element": "explore"
+  },
+  "Venomous Needle": {
+    "cost": 5,
+    "effect": "Poison",
+    "element": "thrown",
+    "target": "1 Foe"
+  },
+  "Violet Flash": {
+    "cost": 1020,
+    "effect": "Expel-type Insta Death",
+    "element": "elec",
+    "target": "All Foes"
+  },
+  "Virus": {
+    "cost": 1010,
+    "effect": "-50% ailment resistance",
+    "element": "mind",
+    "target": "1 Foe"
+  },
+  "Virus Trap": {
+    "cost": 2045,
+    "effect": "Build area that inflicts 30% Mute, upgrade inflicts Poison, Stone, Death",
+    "element": "area"
+  },
+  "Walpurgis Night": {
+    "effect": "Prevent multi-hit Phys attacks from landing on more than one target",
+    "element": "universe"
+  },
+  "Warrior Oath": {
+    "effect": "+33% Phys and Magic attack per count up till count 9",
+    "element": "self"
+  },
+  "Wasteland": {
+    "effect": "-50% All Area and Drive effects",
+    "element": "universe"
+  },
+  "Water Wall": {
+    "cost": 1010,
+    "effect": "Reduce Fire damage for 3+ turns",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Whirlwind Blast": {
+    "cost": 8,
+    "effect": "Samanda",
+    "element": "thrown",
+    "target": "All Foes"
+  },
+  "White Rabbit Watch": {
+    "effect": "+100% reaction speed for Allies",
+    "element": "plugin"
+  },
+  "Windfall": {
+    "effect": "+50% Production area affect while present",
+    "element": "phase"
+  },
+  "Wing Flap": {
+    "cost": 1012,
+    "element": "force",
+    "target": "All Foes"
+  },
+  "Zan": {
+    "cost": 1002,
+    "element": "force",
+    "target": "1 Foe"
+  },
+  "Zandyne": {
+    "cost": 1012,
+    "element": "force",
+    "target": "1 Foe"
+  },
+  "Zanma": {
+    "cost": 1005,
+    "element": "force",
+    "target": "1 Foe"
+  },
+  "Zio": {
+    "cost": 1004,
+    "element": "elec",
+    "target": "1 Foe"
+  },
+  "Ziodyne": {
+    "cost": 1018,
+    "element": "elec",
+    "target": "1 Foe"
+  },
+  "Zionga": {
+    "cost": 1009,
+    "element": "elec",
+    "target": "1 Foe"
+  }
+}

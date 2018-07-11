@@ -1,5 +1,29 @@
 export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, srcs: string[] }[] = [
   {
+    game: 'Shin Megami Tensei',
+    tool: 'smt1',
+    srcs: [
+      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/',
+      'http://ゆめのしま.jp/index.html'
+    ]
+  },
+  {
+    game: 'Shin Megami Tensei II',
+    tool: 'smt2',
+    srcs: [
+      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/',
+      'http://ゆめのしま.jp/index.html'
+    ]
+  },
+  {
+    game: 'Shin Megami Tensei If...',
+    tool: 'smtif',
+    srcs: [
+      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/',
+      'http://ゆめのしま.jp/index.html'
+    ]
+  },
+  {
     game: 'Shin Megami Tensei III: Nocturne',
     abbr: 'Shin Megami Tensei Nocturne',
     tool: 'smt3',
