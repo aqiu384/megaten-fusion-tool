@@ -3,24 +3,32 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     game: 'Shin Megami Tensei',
     tool: 'smt1',
     srcs: [
-      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/',
-      'http://ゆめのしま.jp/index.html'
+      'http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds/index.html',
+      'http://kaerukyo.net/html/dds_database/skill.php?title=3'
     ]
   },
   {
     game: 'Shin Megami Tensei II',
     tool: 'smt2',
     srcs: [
-      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/',
-      'http://ゆめのしま.jp/index.html'
+      'http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds2/index.html',
+      'http://kaerukyo.net/html/dds_database/skill.php?title=4'
     ]
   },
   {
     game: 'Shin Megami Tensei If...',
     tool: 'smtif',
     srcs: [
-      'http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/',
-      'http://ゆめのしま.jp/index.html'
+      'http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_if/index.html',
+      'http://kaerukyo.net/html/dds_database/skill.php?title=5'
+    ]
+  },
+  {
+    game: 'Shin Megami Tensei NINE',
+    tool: 'smt9',
+    srcs: [
+      'http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_nine/index.html',
+      'http://kaerukyo.net/html/dds_database/skill.php?title=17'
     ]
   },
   {
@@ -60,6 +68,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
   },
   {
     game: 'Shin Megami Tensei IV Apocalypse',
+    abbr: 'SMT IV Apocalypse',
     tool: 'smt4f',
     srcs: [
       'http://gamers-high.com/megami4-final/',
@@ -68,6 +77,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
   },
   {
     game: 'Shin Megami Tensei: Devil Summoner',
+    abbr: 'SMT Devil Summoner',
     tool: 'dsum',
     srcs: [
       'https://gamefaqs.gamespot.com/psp/929271-shin-megami-tensei-devil-summoner/faqs/70850',
@@ -125,7 +135,6 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
   },
   {
     game: 'Persona 3 FES: The Answer',
-    abbr: 'Persona 3 FES Answer',
     tool: 'p3aeg',
     srcs: [
       'https://www.gamefaqs.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404'
@@ -157,6 +166,7 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
   },
   {
     game: 'Persona Q: Shadow of the Labyrinth',
+    abbr: 'Persona Q',
     tool: 'pq',
     srcs: [
       'https://www.gamefaqs.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70858',
@@ -204,7 +214,8 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     ]
   },
   {
-    game: 'Dx2 Shin Megami Tensei: Liberation',
+    game: 'Shin Megami Tensei: Dx2 Liberation',
+    abbr: 'SMT Dx2 Liberation',
     tool: 'dx2',
     srcs: [
       'https://altema.jp/megaten/',

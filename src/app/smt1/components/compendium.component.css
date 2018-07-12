@@ -1,4 +1,5 @@
-.smt1 div.element-icon {
+/* SMT NES Series */
+.devilsum div.element-icon, .smtnes div.element-icon {
   height: 12px;
   background-size: 12px;
   background-repeat: no-repeat;
@@ -6,45 +7,96 @@
   color: transparent;
 }
 
-.smt1 div.element-icon.sword { background-image: url('/assets/images/smt4f/sword.png'); }
-.smt1 div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
-.smt1 div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
-.smt1 div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
-.smt1 div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
-.smt1 div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
-.smt1 div.element-icon.nerve { background-image: url('/assets/images/smt4f/panic.png'); }
-.smt1 div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
-.smt1 div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
-.smt1 div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
-.smt1 div.element-icon.curse { background-image: url('/assets/images/smt4f/poison.png'); }
-.smt1 div.element-icon.bind { background-image: url('/assets/images/smt4f/bind.png'); }
-.smt1 div.element-icon.rush { background-image: url('/assets/images/smt4f/sword.png'); }
-.smt1 div.element-icon.punch { background-image: url('/assets/images/smtsj/phy.png'); }
-.smt1 div.element-icon.leg { background-image: url('/assets/images/smtsj/gun.png'); }
-.smt1 div.element-icon.flying { background-image: url('/assets/images/smt4f/gun.png'); }
+.smtnes div.element-icon.sword { background-image: url('/assets/images/smt4f/sword.png'); }
+.smtnes div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.smtnes div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.smtnes div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.smtnes div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.smtnes div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.smtnes div.element-icon.nerve { background-image: url('/assets/images/smt4f/panic.png'); }
+.smtnes div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.smtnes div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.smtnes div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.smtnes div.element-icon.curse { background-image: url('/assets/images/smt4f/poison.png'); }
+.smtnes div.element-icon.bind { background-image: url('/assets/images/smt4f/bind.png'); }
+.smtnes div.element-icon.rush { background-image: url('/assets/images/smt4f/sword.png'); }
+.smtnes div.element-icon.punch { background-image: url('/assets/images/smtsj/phy.png'); }
+.smtnes div.element-icon.kick { background-image: url('/assets/images/smtsj/gun.png'); }
+.smtnes div.element-icon.flying { background-image: url('/assets/images/smt4f/gun.png'); }
 
-.smt1 div.element-icon.energy { background-image: url('/assets/images/smtsj/alm.png'); }
-.smt1 div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
-.smt1 div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
-.smt1 div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
+.smtnes div.element-icon.energy { background-image: url('/assets/images/smtsj/alm.png'); }
+.smtnes div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.smtnes div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.smtnes div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
 
-.smt1 th {
-  color: white;
-  background-color: #608341;
-}
+/* Devil Summoner Series */
+.devilsum div.element-icon.slash { background-image: url('/assets/images/smt4f/sword.png'); }
+.devilsum div.element-icon.rush { background-image: url('/assets/images/smtsj/phy.png'); }
+.devilsum div.element-icon.tech { background-image: url('/assets/images/smt4f/gun.png'); }
+.devilsum div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.devilsum div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.devilsum div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.devilsum div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.devilsum div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.devilsum div.element-icon.psy { background-image: url('/assets/images/smt4f/panic.png'); }
+.devilsum div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.devilsum div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.devilsum div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
+.devilsum div.element-icon.nerve { background-image: url('/assets/images/smt4f/bind.png'); }
+.devilsum div.element-icon.curse { background-image: url('/assets/images/smt4f/poison.png'); }
 
-.smt1 th.sortable:hover {
-  background-color: #b9ff7b;
-}
+.devilsum div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.devilsum div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.devilsum div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.devilsum div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
 
-.smt1 th.nav {
-  background-color: #29381b;
-}
+.devilsum div.element-icon.phys { background-image: url('/assets/images/smtsj/phy.png'); }
+.devilsum div.element-icon.ailment { background-image: url('/assets/images/smtsj/ail.png'); }
+.devilsum div.element-icon.quad { background-image: url('/assets/images/smt4f/curse.png'); }
+.devilsum div.element-icon.elem { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.none { background-image: url('/assets/images/smtsj/spe.png'); }
 
-.smt1 th.nav.active, .smt1 th.nav:hover {
-  background-color: #608341;
-}
+.devilsum div.element-icon.thrown { background-image: url('/assets/images/smt4f/gun.png'); }
+.devilsum div.element-icon.starter { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.autorec { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.phase { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.explore { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.area { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.plugin { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.self { background-image: url('/assets/images/smtsj/spe.png'); }
+.devilsum div.element-icon.universe { background-image: url('/assets/images/smtsj/spe.png'); }
 
-.smt1 th.nav.active a, .smt1 th.nav:hover a {
-  color: white;
-}
+/* Shin Megami Tensei */
+.smt1 th, .smt1 th.nav.active, .smt1 th.nav:hover { background-color: #608341; }
+.smt1 th.sortable:hover { background-color: #b9ff7b; }
+.smt1 th.nav { background-color: #29381b; }
+.smt1 th.nav.active a, .smt1 th.nav:hover a { color: white; }
+.smt1 th { color: white; }
+
+/* Shin Megami Tensei II */
+.smt2 th, .smt2 th.nav.active, .smt2 th.nav:hover { background-color: #2f4f4f; }
+.smt2 th.sortable:hover { background-color: #84dfdf; }
+.smt2 th.nav { background-color: #172727; }
+.smt2 th.nav.active a, .smt2 th.nav:hover a { color: white; }
+.smt2 th { color: white; }
+
+/* Shin Megami Tensei If... */
+.smtif th, .smtif th.nav.active, .smtif th.nav:hover { background-color: #8fbc8f; }
+.smtif th.sortable:hover { background-color: #b4f1b4; }
+.smtif th.nav { background-color: #435743; }
+.smtif th.nav.active a, .smtif th.nav:hover a { color: black; }
+.smtif th { color: black; }
+
+/* Shin Megami Tensei: Devil Summoner */
+.dsum th, .dsum th.nav.active, .dsum th.nav:hover { background-color: #4372aa; }
+.dsum th.sortable:hover { background-color: #61a8ff; }
+.dsum th.nav { background-color: #28405e; }
+.dsum th.nav.active a, .dsum th.nav:hover a { color: white; }
+.dsum th { color: white; }
+
+/* Shin Megami Tensei NINE */
+.smt9 th, .smt9 th.nav.active, .smt9 th.nav:hover { background-color: #693cbe; }
+.smt9 th.sortable:hover { background-color: #8e51ff; }
+.smt9 th.nav { background-color: #2d1a52; }
+.smt9 th.nav.active a, .smt9 th.nav:hover a { color: white; }
+.smt9 th { color: white; }

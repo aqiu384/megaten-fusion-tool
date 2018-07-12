@@ -10,7 +10,7 @@ import { FusionTrioService as IFusionTrioService, SquareChart } from '../compend
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
 import { SMT_NORMAL_FUSION_CALCULATOR, SMT_NORMAL_FISSION_CALCULATOR } from '../compendium/constants';
 
-import { splitWithDiffRace as splitTripleDR } from '../compendium/fusions/per-triple-fissions';
+import { splitWithDiffRace as splitTripleDR, splitWithElementPair } from '../compendium/fusions/per-triple-fissions';
 import { fuseT1WithDiffRace, fuseN1WithDiffRace } from '../compendium/fusions/per-triple-fusions';
 import { Observable } from 'rxjs/Observable';
 
@@ -18,14 +18,8 @@ import { Observable } from 'rxjs/Observable';
 export class FusionDataService implements IFusionTrioService {
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
-  triFusionCalculator = new TripleFusionCalculator(
-    [fuseN1WithDiffRace, fuseT1WithDiffRace],
-    []
-  );
-  triFissionCalculator = new TripleFusionCalculator(
-    [splitTripleDR],
-    []
-  );
+  triFusionCalculator: TripleFusionCalculator;
+  triFissionCalculator: TripleFusionCalculator;
 
   compConfig: CompendiumConfig;
   appName: string;
@@ -38,13 +32,34 @@ export class FusionDataService implements IFusionTrioService {
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle;
 
-    const tripleChart = new SpeciesFusionChart(compConfig);
-
     this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
+
+    const normalChart = new FusionChart(compConfig);
+    let doubleChart, tripleChart;
+
+    if (compConfig.useSpeciesFusion) {
+      doubleChart = new SpeciesFusionChart(compConfig);
+      tripleChart = doubleChart;
+    } else {
+      doubleChart = normalChart;
+      tripleChart = new FusionChart(compConfig, true);
+    }
+
+    this.triFusionCalculator = new TripleFusionCalculator(
+      [fuseN1WithDiffRace, fuseT1WithDiffRace],
+      []
+    );
+    this.triFissionCalculator = new TripleFusionCalculator(
+      compConfig.tripleElementTable ?
+        [splitTripleDR, splitWithElementPair] :
+        [splitTripleDR],
+      []
+    );
+
     this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
     this.squareChart = new BehaviorSubject({ 
+      normalChart: doubleChart,
       tripleChart,
-      normalChart: tripleChart,
       raceOrder: compConfig.raceOrder
     }).asObservable();
   }

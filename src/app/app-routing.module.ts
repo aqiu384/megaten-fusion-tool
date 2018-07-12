@@ -22,6 +22,11 @@ const appRoutes: Routes = [
     data: { appName: 'Shin Megami Tensei If...' }
   },
   {
+    path: 'smt9',
+    loadChildren: './smt9/compendium.module#CompendiumModule',
+    data: { appName: 'Shin Megami Tensei NINE' }
+  },
+  {
     path: 'smt3',
     loadChildren: './smt3/compendium.module#CompendiumModule',
     data: { appName: 'Shin Megami Tensei III: Nocturne' }
@@ -45,6 +50,11 @@ const appRoutes: Routes = [
     path: 'smt4f',
     loadChildren: './smt4f/compendium.module#CompendiumModule',
     data: { appName: 'Shin Megami Tensei IV Apocalypse' }
+  },
+  {
+    path: 'dsum',
+    loadChildren: './dsum/compendium.module#CompendiumModule',
+    data: { appName: 'Shin Megami Tensei: Devil Summoner' }
   },
   {
     path: 'dssh',
@@ -129,7 +139,7 @@ const appRoutes: Routes = [
   {
     path: 'dx2',
     loadChildren: './dx2/compendium.module#CompendiumModule',
-    data: { appName: 'Dx2 Shin Megami Tensei: Liberation' }
+    data: { appName: 'Shin Megami Tensei: Dx2 Liberation' }
   },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];

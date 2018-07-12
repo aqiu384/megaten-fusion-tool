@@ -40,17 +40,20 @@ for (const rs of COMP_CONFIG_JSON['species']) {
 }
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
-  appTitle: 'Shin Megami Tensei',
+  appTitle: 'Shin Megami Tensei II',
+  appCssClasses: ['smtnes', 'smt2'],
   races,
   resistElems,
   skillElems,
   baseStats: COMP_CONFIG_JSON['baseStats'],
+  baseAtks: COMP_CONFIG_JSON['baseAtks'],
 
   speciesLookup,
   species,
   resistCodes: COMP_CONFIG_JSON['resistCodes'],
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
+  useSpeciesFusion: true,
 
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,

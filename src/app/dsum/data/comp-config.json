@@ -1,0 +1,72 @@
+{
+  "baseAtks": [
+    "CP",
+    "P.Atk",
+    "M.Atk",
+    "Hit",
+    "P.Def",
+    "M.Def",
+    "Avd"
+  ],
+  "baseStats": [
+    "HP",
+    "MP",
+    "St",
+    "In",
+    "Ma",
+    "Vi",
+    "Ag",
+    "Lu"
+  ],
+  "resistCodes": {
+    "d": -1100,
+    "r": -100,
+    "n": 0,
+    "s": 50,
+    "-": 100,
+    "w": 1150
+  },
+  "resistElems": [
+    "slash",
+    "rush",
+    "tech",
+    "gun",
+    "fire",
+    "ice",
+    "elec",
+    "force",
+    "psy",
+    "expel",
+    "death",
+    "mind",
+    "nerve",
+    "curse"
+  ],
+  "skillElems": [
+    "almighty",
+    "recovery",
+    "support",
+    "special",
+    "phys",
+    "ailment",
+    "quad",
+    "elem",
+    "none"
+  ],
+  "species": [
+    ["DEITIES", "Deity|ll", "Megami|ll", "Enigma|ln"],
+    ["ICONS", "Fury|lc", "Lady|lc", "Kishin|lc", "Vile|dl", "Reaper|dn"],
+    ["NETHERS", "Genma|ln", "Yoma|nn", "Fairy|nn", "Night|nc", "Tyrant|dc"],
+    ["AERIALS", "Herald|ll", "Divine|nl", "Fallen|nc"],
+    ["DRAGONS", "Dragon|lc", "Snake|nn", "Drake|dc"],
+    ["AVIANS", "Avian|ll", "Flight|nl", "Raptor|dl"],
+    ["BEASTS", "Avatar|ln", "Holy|ln", "Beast|nn", "UMA|nn", "Wilder|dn"],
+    ["BRUTES", "Jirae|nn", "Brute|nc", "Femme|nc", "Jaki|dn"],
+    ["VEGETATION", "Tree|ll", "Wood|dl"],
+    ["ELEMENTS", "Element|ln", "Mitama|ln"],
+    ["SPIRITS", "Haunt|dc", "Undead|dn", "Spirit|dc"],
+    ["FOULS", "Foul|dc", "Vermin|dn"],
+    ["HUMANS", "Hero|ln"],
+    ["OTHERS", "Zoma|nn"]
+  ]
+}

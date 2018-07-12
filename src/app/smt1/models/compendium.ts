@@ -18,7 +18,6 @@ export class Compendium implements ICompendium {
   compConfig: CompendiumConfig;
 
   constructor(compConfig: CompendiumConfig) {
-    this.compConfig = compConfig;
     this.initImportedData(compConfig);
     this.updateDerivedData(compConfig);
   }
@@ -39,8 +38,11 @@ export class Compendium implements ICompendium {
         drop:    json['drop'] || '-',
         price:   Math.pow(json['lvl'], 3),
         stats:   json['stats'],
+        atks:    json['atks'] || [],
         resists: json['resists'].split('').map(char => compConfig.resistCodes[char]),
-        skills:  json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 8; return acc; }, {})
+        skills:  json['skills'].reduce((acc, skill, i) => { if (skill) {
+          acc[skill.replace('*', '')] = i - 8; 
+        }return acc; }, {})
       };
     }
 

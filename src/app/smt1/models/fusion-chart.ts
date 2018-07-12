@@ -7,6 +7,7 @@ export class FusionChart extends SmtFusionChart {
   elementDemons = [];
   lvlModifier = 1.5;
   speciesLookup: { [race: string]: string };
+  hasDarkTable = false;
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
@@ -14,34 +15,64 @@ export class FusionChart extends SmtFusionChart {
 
   alignments: { [race: string]: string };
 
-  constructor(compConfig: CompendiumConfig) {
+  constructor(compConfig: CompendiumConfig, isTripleChart?: boolean) {
     super();
-    this.initCharts(compConfig);
+    this.initCharts(compConfig, isTripleChart);
   }
 
-  initCharts(compConfig: CompendiumConfig) {
-    const races: string[] = compConfig.normalTable['races'];
-    const table: string[][] = compConfig.normalTable['table'];
-
-    this.races = races;
+  initCharts(compConfig: CompendiumConfig, isTripleChart?: boolean) {
     this.alignments = compConfig.alignData['races'];
-    this.elementDemons = compConfig.elementTable['elems'];
     this.speciesLookup = compConfig.speciesLookup;
+    this.elementDemons = isTripleChart ?
+      compConfig.tripleElementTable['elems'] :
+      compConfig.elementTable['elems'];
 
-    this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
-    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, [], table);
+    const races: string[] = isTripleChart ?
+      compConfig.tripleTable['races'] :
+      compConfig.normalTable['races'];
+    const table: string[][] = isTripleChart ?
+      compConfig.tripleTable['table'] :
+      compConfig.normalTable['table'];
+
+    const normFusions = SmtFusionChart.loadFusionTableJson(races, table);
+    const normFissions = SmtFusionChart.loadFissionTableJson(races, [], table);
+
+    if (compConfig.darkTable) {
+      this.hasDarkTable = true;
+
+      const darkRaces: string[] = isTripleChart && compConfig.tripleDarkTable ?
+        compConfig.tripleDarkTable['races'] :
+        compConfig.darkTable['races'];
+      const darkTable: string[][] = isTripleChart && compConfig.tripleDarkTable ?
+        compConfig.tripleDarkTable['table'] :
+        compConfig.darkTable['table'];
+
+      const darkFusions = SmtFusionChart.loadFusionTableJson(darkRaces, darkTable);
+      const darkFissions = SmtFusionChart.loadFissionTableJson(darkRaces, [], darkTable);
+
+      this.races = races.concat(darkRaces.filter(r => this.getLightDark(r) < 0));
+      this.fusionChart = SmtFusionChart.mergeFusionTables(normFusions, darkFusions);
+      this.fissionChart = SmtFusionChart.mergeFissionTables(normFissions, darkFissions);
+    } else {
+      this.races = races;
+      this.fusionChart = normFusions;
+      this.fissionChart = normFissions;
+    }
+
     this.elementChart = SmtFusionChart.loadElementTableJson(
       compConfig.elementTable['races'],
       this.elementDemons,
-      compConfig.elementTable['table']
+      isTripleChart ?
+        compConfig.tripleElementTable['table'] :
+        compConfig.elementTable['table']
     );
   }
 
   getLightDark(race: string): number {
     if (this.alignments[race].charAt(0) == 'l') {
-      return 0;
-    } else if (this.alignments[race].charAt(0) == 'd') {
       return 1;
+    } else if (this.alignments[race].charAt(0) == 'd') {
+      return -1;
     } else {
       return 0;
     }
