@@ -1,29 +1,25 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser'
 
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
-import { RaceOrder, BaseStats, ResistanceElements, ElementOrder } from '../constants';
 import { FusionDataService } from '../fusion-data.service';
+import { CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-demon-list-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
-      [raceOrder]="raceOrder"
-      [statHeaders]="statHeaders"
-      [resistHeaders]="resistHeaders"
-      [inheritOrder]="elementOrder"
+      [raceOrder]="compConfig.raceOrder"
+      [statHeaders]="compConfig.baseStats"
+      [resistHeaders]="compConfig.resistElems"
+      [inheritOrder]="compConfig.elemOrder"
       [rowData]="demons | async">
     </app-smt-demon-list>
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  raceOrder = RaceOrder;
-  statHeaders = BaseStats;
-  elementOrder = ElementOrder;
-  resistHeaders = ResistanceElements;
-  defaultSortFun = (d1, d2) => (RaceOrder[d1.race] - RaceOrder[d2.race]) * 200 + d2.lvl - d1.lvl;
+  compConfig: CompendiumConfig;
 
   constructor(
     title: Title,
@@ -32,5 +28,11 @@ export class DemonListContainerComponent extends DLCC {
   ) {
     super(title, changeDetectorRef, fusionDataService);
     this.appName = `List of Demons - ${fusionDataService.appName}`;
+
+    this.compConfig = fusionDataService.compConfig;
+    this.defaultSortFun = (d1, d2) => (
+      this.compConfig.raceOrder[d1.race] -
+      this.compConfig.raceOrder[d2.race]
+    ) * 200 + d2.lvl - d1.lvl;
   }
 }

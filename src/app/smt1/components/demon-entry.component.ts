@@ -3,8 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistanceElements, ElementOrder } from '../constants';
-import { Demon } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -18,21 +17,21 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
-        [statHeaders]="statHeaders"
+        [statHeaders]="compConfig.baseStats"
         [fusionHeaders]="['Drop']"
         [stats]="demon.stats"
         [inherit]="demon.inherit">
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
       <app-demon-resists
-        [resistHeaders]="resistanceHeaders"
+        [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-skills
         [title]="'Innate Skills'"
         [hasLvl]="false"
         [hasTarget]="true"
-        [elemOrder]="elemOrder"
+        [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
@@ -56,12 +55,7 @@ export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
-
-  reikos: { name: string; amount: number; }[] = [];
-  aiTypes = { atk: 'Attack', sup: 'Support', rec: 'Recovery' };
-  statHeaders = BaseStats;
-  resistanceHeaders = ResistanceElements;
-  elemOrder = ElementOrder;
+  @Input() compConfig: CompendiumConfig;
 }
 
 @Component({
@@ -71,11 +65,14 @@ export class DemonEntryComponent {
     <app-demon-entry
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {
+  compConfig: CompendiumConfig;
+
   constructor(
     private route: ActivatedRoute,
     private title: Title,
@@ -84,5 +81,6 @@ export class DemonEntryContainerComponent extends DECC {
   ) {
     super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
+    this.compConfig = fusionDataService.compConfig;
   }
 }

@@ -2,20 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumRoutingModule } from './compendium-routing.module';
-import { FusionDataService } from './fusion-data.service';
+import { CompendiumRoutingModule } from '../smt1/compendium-routing.module';
+import { FusionDataService } from '../smt1/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
-import { SmtSnesCompendiumModule } from './smt-snes-compendium.module';
-import { CompendiumConfig } from './models';
+import { SmtSnesCompendiumModule } from '../smt1/smt-snes-compendium.module';
+import { CompendiumConfig } from '../smt1/models';
 
-import * as COMP_CONFIG_JSON from './data/comp-config.json';
 import * as DEMON_DATA_JSON from './data/demon-data.json';
 import * as SKILL_DATA_JSON from './data/skill-data.json';
-import * as ALIGNMENT_JSON from './data/alignments.json';
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
-import * as TRIPLE_CHART_JSON from './data/triple-chart.json';
-import * as ELEMENT_CHART_JSON from './data/element-chart.json';
+
+import * as COMP_CONFIG_JSON from '../smt2/data/comp-config.json';
+import * as ALIGNMENT_JSON from '../smt2/data/alignments.json';
+import * as FUSION_CHART_JSON from '../smt2/data/fusion-chart.json';
+import * as TRIPLE_CHART_JSON from '../smt2/data/triple-chart.json';
+import * as ELEMENT_CHART_JSON from '../smt2/data/element-chart.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};

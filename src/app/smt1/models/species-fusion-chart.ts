@@ -1,7 +1,5 @@
 import { FusionChart, FissionTable, FissionRow, FusionTable, FusionRow, ElemModifiers, ElementRow } from '../../compendium/models';
-
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
-import * as TRIPLE_CHART_JSON from '../data/triple-chart.json';
+import { CompendiumConfig } from '../models';
 
 export class SpeciesFusionChart implements FusionChart {
   lvlModifier = 7.5;
@@ -12,16 +10,16 @@ export class SpeciesFusionChart implements FusionChart {
   fusionChart: FusionTable;
   races: string[];
 
-  constructor() {
-    this.initCharts()
+  constructor(compConfig: CompendiumConfig) {
+    this.initCharts(compConfig);
   }
 
-  initCharts() {
-    const races: string[] = TRIPLE_CHART_JSON['races']
-    const table: string[][] = TRIPLE_CHART_JSON['table'];
-    const species: { [species: string]: string[] } = FUSION_CHART_JSON['species'];
+  initCharts(compConfig: CompendiumConfig) {
+    const races: string[] = compConfig.tripleTable['races']
+    const table: string[][] = compConfig.tripleTable['table'];
     const triRaces = races.map(race => '3' + race);
 
+    this.speciesLookup = compConfig.speciesLookup;
     this.fissionChart = {};
     this.fusionChart = {};
     this.races = races;
@@ -59,14 +57,6 @@ export class SpeciesFusionChart implements FusionChart {
           this.fusionChart[race1][race2] = raceR;
           this.fusionChart[race2][race1] = raceR;
         }
-      }
-    }
-
-    this.speciesLookup = {};
-
-    for (const [spec, races] of Object.entries(species)) {
-      for (const race of races) {
-        this.speciesLookup[race] = spec;
       }
     }
   }

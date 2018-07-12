@@ -14,7 +14,12 @@ const appRoutes: Routes = [
   {
     path: 'smt2',
     loadChildren: './smt2/compendium.module#CompendiumModule',
-    data: { appName: 'Shin Megami Tensei' }
+    data: { appName: 'Shin Megami Tensei II' }
+  },
+  {
+    path: 'smtif',
+    loadChildren: './smtif/compendium.module#CompendiumModule',
+    data: { appName: 'Shin Megami Tensei If...' }
   },
   {
     path: 'smt3',

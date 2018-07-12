@@ -1,0 +1,71 @@
+{
+  "baseStats": [
+    "HP",
+    "MP",
+    "St",
+    "In",
+    "Ma",
+    "Vi",
+    "Ag",
+    "Lu"
+  ],
+  "resistCodes": {
+    "d": -1100,
+    "D": -1050,
+    "r": -100,
+    "R": -50,
+    "n": 0,
+    "1": 12,
+    "2": 25,
+    "3": 37,
+    "s": 50,
+    "5": 100,
+    "6": 100,
+    "7": 100,
+    "-": 100,
+    "w": 1150,
+    "8": 1200,
+    "9": 1250,
+    "0": 1300
+  },
+  "resistElems": [
+    "sword",
+    "gun",
+    "fire",
+    "ice",
+    "elec",
+    "force",
+    "nerve",
+    "expel",
+    "death",
+    "curse",
+    "bind",
+    "rush",
+    "punch",
+    "leg",
+    "flying",
+    "almighty"
+  ],
+  "skillElems": [
+    "energy",
+    "recovery",
+    "support",
+    "special"
+  ],
+  "species": [
+    ["DEITIES", "Deity", "Megami", "Amatsu"],
+    ["ICONS", "Fury", "Lady", "Kunitsu", "Vile"],
+    ["NETHERS", "Yoma", "Night", "Fairy", "Tyrant"],
+    ["AERIALS", "Herald", "Divine", "Fallen"],
+    ["DRAGONS", "Dragon", "Snake", "Drake"],
+    ["AVIANS", "Avian", "Flight", "Raptor"],
+    ["BEASTS", "Avatar", "Holy", "Beast", "Wilder"],
+    ["BRUTES", "Jirae", "Brute", "Femme", "Jaki"],
+    ["SPIRITS", "Undead", "Haunt", "Spirit"],
+    ["FOULS", "Foul", "Demonoid"],
+    ["HUMANS", "Messian", "Gaean", "Fiend"],
+    ["ELEMENTS", "Element"],
+    ["VEGETATION", "Wood"],
+    ["MACHINES", "Machine", "Virus", "Vaccine"]
+  ]
+}

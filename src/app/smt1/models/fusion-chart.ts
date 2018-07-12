@@ -1,5 +1,6 @@
 import { FissionTable, FissionRow, FusionTable, FusionRow, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
+import { CompendiumConfig } from '../models';
 
 export class FusionChart extends SmtFusionChart {
   races: string[];
@@ -13,35 +14,27 @@ export class FusionChart extends SmtFusionChart {
 
   alignments: { [race: string]: string };
 
-  constructor(normalJson, elementJson, alignJson) {
+  constructor(compConfig: CompendiumConfig) {
     super();
-    this.initCharts(normalJson, elementJson, alignJson);
+    this.initCharts(compConfig);
   }
 
-  initCharts(normalJson, elementJson, alignJson) {
-    const races: string[] = normalJson['races'];
-    const table: string[][] = normalJson['table'];
-    const species: { [species: string]: string[] } = alignJson['species'];
+  initCharts(compConfig: CompendiumConfig) {
+    const races: string[] = compConfig.normalTable['races'];
+    const table: string[][] = compConfig.normalTable['table'];
 
     this.races = races;
-    this.alignments = alignJson['races'];
-    this.elementDemons = elementJson['elems'];
+    this.alignments = compConfig.alignData['races'];
+    this.elementDemons = compConfig.elementTable['elems'];
+    this.speciesLookup = compConfig.speciesLookup;
 
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, [], table);
     this.elementChart = SmtFusionChart.loadElementTableJson(
-      elementJson['races'],
+      compConfig.elementTable['races'],
       this.elementDemons,
-      elementJson['table']
+      compConfig.elementTable['table']
     );
-
-    this.speciesLookup = {};
-
-    for (const [spec, races] of Object.entries(species)) {
-      for (const race of races) {
-        this.speciesLookup[race] = spec;
-      }
-    }
   }
 
   getLightDark(race: string): number {

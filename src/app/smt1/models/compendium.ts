@@ -1,5 +1,4 @@
-import { ElementOrder, ResistCodes } from '../constants';
-import { Demon, Skill } from '../models';
+import { Demon, Skill, CompendiumConfig } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 export class Compendium implements ICompendium {
@@ -16,49 +15,46 @@ export class Compendium implements ICompendium {
   private _allSkills: Skill[];
 
   dlcDemons: { [name: string]: boolean } = {};
+  compConfig: CompendiumConfig;
 
-  constructor(demonJson: any, skillJson: any, alignJson: any) {
-    this.initImportedData(demonJson, skillJson, alignJson);
-    this.updateDerivedData(alignJson);
+  constructor(compConfig: CompendiumConfig) {
+    this.compConfig = compConfig;
+    this.initImportedData(compConfig);
+    this.updateDerivedData(compConfig);
   }
 
-  initImportedData(demonJson: any, skillJson: any, alignJson: any) {
+  initImportedData(compConfig: CompendiumConfig) {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
-    for (const [name, json] of Object.entries(demonJson)) {
-      const stars = Math.floor(json.grade / 20) + 1;
-      const estats = json.stats.map(x => Math.floor(x / (12 - stars)));
-
-      estats[0] = Math.floor(estats[0] / 1.5);
-
+    for (const [name, json] of Object.entries(compConfig.demonData)) {
       demons[name] = {
         name,
-        race:    json.race,
-        lvl:     json.lvl,
+        race:    json['race'],
+        lvl:     json['lvl'],
         fusion:  'normal',
-        inherit: json.inherit || 'special',
-        drop:    json.drop || '-',
-        price:   Math.pow(json.lvl, 3),
-        stats:   json.stats,
-        resists: json.resists.split('').map(char => ResistCodes[char]),
-        skills:  json.skills.reduce((acc, skill, i) => { acc[skill] = i - 8; return acc; }, {})
+        inherit: json['inherit'] || 'special',
+        drop:    json['drop'] || '-',
+        price:   Math.pow(json['lvl'], 3),
+        stats:   json['stats'],
+        resists: json['resists'].split('').map(char => compConfig.resistCodes[char]),
+        skills:  json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 8; return acc; }, {})
       };
     }
 
-    for (const [name, json] of Object.entries(skillJson)) {
-      const powerUnit = json.element === 'recovery' ? ' Rec ' : ' Dmg ';
+    for (const [name, json] of Object.entries(compConfig.skillData)) {
+      const powerUnit = json['element'] === 'recovery' ? ' Rec ' : ' Dmg ';
 
       skills[name] = {
         name,
-        element: json.element,
-        power:   json.power || 0,
-        cost:    json.cost || 0,
-        rank:    json.enemy ? 99 : 0,
-        effect:  (json.power ? json.power.toString() + powerUnit : ' ') + (json.effect || ''),
-        target:  json.target,
+        element: json['element'],
+        power:   json['power'] || 0,
+        cost:    json['cost'] || 0,
+        rank:    json['enemy'] ? 99 : 0,
+        effect:  (json['power'] ? json['power'].toString() + powerUnit : ' ') + (json['effect'] || ''),
+        target:  json['target'],
         level:   0,
         learnedBy: []
       };
@@ -72,37 +68,29 @@ export class Compendium implements ICompendium {
 
     this.demons = demons;
     this.skills = skills;
-    this.elementDemons = alignJson['elems'];
+    this.elementDemons = compConfig.elementTable.elems;
     this.specialRecipes = specialRecipes;
     this.invertedSpecials = invSpecs;
   }
 
-  updateDerivedData(alignJson: any) {
+  updateDerivedData(compConfig: CompendiumConfig) {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
 
-    for (const race of Object.keys(alignJson['races'])) {
+    for (const race of compConfig.races) {
       inversions[race] = {};
       ingredients[race] = [];
       results[race] = [];
     }
 
     for (const [name, demon] of Object.entries(this.demons)) {
-      if (!inversions[demon.race]) {
-        inversions[demon.race] = {};
-        ingredients[demon.race] = [];
-        results[demon.race] = [];
-      }
-
       inversions[demon.race][demon.lvl] = name;
       ingredients[demon.race].push(demon.lvl);
       results[demon.race].push(demon.lvl);
     }
 
-    const specs: { [species: string]: string[] } = alignJson['species'];
-
-    for (const [species, races] of Object.entries(specs)) {
+    for (const [species, races] of Object.entries(compConfig.species)) {
       const triSpecies = '3' + species;
 
       inversions[species] = {};
@@ -117,7 +105,7 @@ export class Compendium implements ICompendium {
         const race = races[i - 1];
         let triLvlOffset = races.length - i;
 
-        if (alignJson['races'][race].charAt(0) == 'd') {
+        if (compConfig.alignData['races'][race].charAt(0) == 'd') {
           triLvlOffset -= 400;
         } else {
           Object.assign(inversions[species], inversions[race]);
@@ -139,8 +127,6 @@ export class Compendium implements ICompendium {
       ingredients[race].sort((a, b) => a - b);
       results[race].sort((a, b) => a - b);
     }
-
-    console.log(JSON.stringify(inversions, null, '\t'))
 
     this._allDemons = Object.values(this.demons);
     this._allSkills = Object.values(this.skills);
@@ -171,7 +157,10 @@ export class Compendium implements ICompendium {
 
   getSkills(names: string[]): Skill[] {
     const skills = names.map(name => this.skills[name]);
-    skills.sort((d1, d2) => (ElementOrder[d1.element] - ElementOrder[d2.element]) * 10000 + d1.rank - d2.rank);
+    skills.sort((d1, d2) => (
+      this.compConfig.elemOrder[d1.element] -
+      this.compConfig.elemOrder[d2.element]
+    ) * 10000 + d1.rank - d2.rank);
     return skills;
   }
 

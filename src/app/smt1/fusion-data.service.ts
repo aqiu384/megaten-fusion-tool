@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
-import { RaceOrder } from './constants';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { SpeciesFusionChart } from './models/species-fusion-chart';
+import { CompendiumConfig } from './models';
 
 import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
@@ -23,43 +23,30 @@ export class FusionDataService implements IFusionTrioService {
     []
   );
   triFissionCalculator = new TripleFusionCalculator(
-    [],
+    [splitTripleDR],
     []
   );
 
+  compConfig: CompendiumConfig;
   appName: string;
 
-  private _compendium: Compendium;
-  private _compendium$: BehaviorSubject<Compendium>;
   compendium: Observable<Compendium>;
-
-  private _fusionChart: FusionChart;
-  private _fusionChart$: BehaviorSubject<FusionChart>;
   fusionChart: Observable<FusionChart>
-
-  private _tripleChart: SpeciesFusionChart;
-  private _squareChart$: BehaviorSubject<SquareChart>;
   squareChart: Observable<SquareChart>;
 
-  constructor(demonJson, skillJson, alignJson, normalJson, elementJson, appName: string) {
-    this.appName = appName;
+  constructor(compConfig: CompendiumConfig) {
+    this.compConfig = compConfig;
+    this.appName = compConfig.appTitle;
 
-    this._compendium = new Compendium(demonJson, skillJson, alignJson);
-    this._compendium$ = new BehaviorSubject(this._compendium);
-    this.compendium = this._compendium$.asObservable();
+    const tripleChart = new SpeciesFusionChart(compConfig);
 
-    this._fusionChart = new FusionChart(normalJson, elementJson, alignJson);
-    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
-    this.fusionChart = this._fusionChart$.asObservable();
-
-    this._tripleChart = new SpeciesFusionChart();
-    this._squareChart$ = new BehaviorSubject({
-      normalChart: this._tripleChart,
-      tripleChart: this._tripleChart,
-      raceOrder: RaceOrder
-    });
-
-    this.squareChart = this._squareChart$.asObservable();
+    this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
+    this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
+    this.squareChart = new BehaviorSubject({ 
+      tripleChart,
+      normalChart: tripleChart,
+      raceOrder: compConfig.raceOrder
+    }).asObservable();
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) { return {}; }
