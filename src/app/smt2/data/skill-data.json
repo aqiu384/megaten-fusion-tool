@@ -1,11 +1,13 @@
 {
   "Absorbtion": {
+    "cost": 20,
     "effect": "Kill ally and absorb remaining HP and MP",
     "element": "almighty",
     "enemy": true,
     "target": "1 Ally"
   },
   "Acid": {
+    "cost": 5,
     "effect": "Poison",
     "element": "flying",
     "power": 5,
@@ -24,28 +26,33 @@
     "target": "1 Foe"
   },
   "Aim": {
+    "cost": 2,
     "element": "gun",
     "power": 10,
     "target": "1 Foe"
   },
   "Akasha Arts": {
+    "cost": 9,
     "element": "punch",
     "power": 20,
     "target": "All Foes"
   },
   "Amaha Dance": {
+    "cost": 10,
     "effect": "Paralyze",
     "element": "flying",
     "power": 20,
     "target": "1 Foe"
   },
   "Autofire": {
+    "cost": 4,
     "effect": "x2-4 hits",
     "element": "gun",
     "power": 20,
     "target": "Random Foes"
   },
   "Backfist": {
+    "cost": 6,
     "element": "punch",
     "power": 10,
     "target": "1 Foe"
@@ -63,6 +70,7 @@
     "target": "1 Foe"
   },
   "Berserk": {
+    "cost": 15,
     "element": "rush",
     "power": 15,
     "target": "All Foes"
@@ -75,6 +83,7 @@
     "target": "All Foes"
   },
   "Bodhisattva's Palm": {
+    "cost": 10,
     "effect": "Power scales with max HP",
     "element": "punch",
     "power": 100,
@@ -101,12 +110,14 @@
     "target": "1 Ally"
   },
   "Charm Bite": {
+    "cost": 3,
     "effect": "Charm",
     "element": "rush",
     "power": 10,
     "target": "1 Foe"
   },
   "Cleave": {
+    "cost": 15,
     "element": "rush",
     "power": 5,
     "target": "All Foes"
@@ -118,6 +129,7 @@
     "target": "All Foes"
   },
   "Constrict": {
+    "cost": 8,
     "effect": "Bind",
     "element": "rush",
     "power": 12,
@@ -130,6 +142,7 @@
     "target": "All Allies"
   },
   "Deathbound": {
+    "cost": 20,
     "effect": "x1-2 hits, Power scales with max HP",
     "element": "sword",
     "power": 100,
@@ -161,6 +174,7 @@
     "target": "1 Foe"
   },
   "Dharma Kaeshi": {
+    "cost": 20,
     "effect": "Power scales with max HP",
     "element": "sword",
     "power": 100,
@@ -224,11 +238,13 @@
     "target": "1 Foe"
   },
   "Feral Bite": {
+    "cost": 3,
     "element": "rush",
     "power": 10,
     "target": "1 Foe"
   },
   "Feral Claw": {
+    "cost": 5,
     "element": "punch",
     "power": 15,
     "target": "2 Foes"
@@ -254,6 +270,7 @@
     "target": "All Foes"
   },
   "Fog of Temptation": {
+    "cost": 1,
     "effect": "Charm",
     "element": "flying",
     "power": 1,
@@ -267,6 +284,7 @@
     "target": "All Foes"
   },
   "Fujin Attack": {
+    "cost": 10,
     "effect": "Freeze",
     "element": "punch",
     "power": 15,
@@ -278,6 +296,7 @@
     "enemy": true
   },
   "Hades Blast": {
+    "cost": 20,
     "effect": "x1-3 hits, Power scales with max HP",
     "element": "sword",
     "power": 80,
@@ -305,6 +324,7 @@
     "target": "All Foes"
   },
   "Heat Wave": {
+    "cost": 10,
     "effect": "x2-3 hits, Power scales with max HP",
     "element": "sword",
     "power": 50,
@@ -318,12 +338,14 @@
     "target": "1 Foe"
   },
   "Hell Fang": {
+    "cost": 10,
     "effect": "Power scales with max HP",
     "element": "sword",
     "power": 100,
     "target": "1 Foe"
   },
   "Hell Thrust": {
+    "cost": 8,
     "effect": "Mute",
     "element": "rush",
     "power": 12,
@@ -363,6 +385,7 @@
     "target": "Random Foes"
   },
   "Iron Punch": {
+    "cost": 6,
     "effect": "Mute",
     "element": "punch",
     "power": 10,
@@ -376,17 +399,20 @@
     "target": "All Foes"
   },
   "Jump Kick": {
+    "cost": 12,
     "effect": "x1-3 hits",
     "element": "kick",
     "power": 20,
     "target": "Random Foes"
   },
   "Kick": {
+    "cost": 4,
     "element": "kick",
     "power": 6,
     "target": "1 Foe"
   },
   "Landslide": {
+    "cost": 10,
     "element": "almighty",
     "power": 60,
     "target": "All Foes"
@@ -562,6 +588,7 @@
     "target": "1 Ally"
   },
   "Needle Rush": {
+    "cost": 10,
     "effect": "x3-5 hits",
     "element": "flying",
     "power": 8,
@@ -646,11 +673,13 @@
     "target": "Random Foes"
   },
   "Punch": {
+    "cost": 3,
     "element": "punch",
     "power": 5,
     "target": "1 Foe"
   },
   "Raijin Attack": {
+    "cost": 10,
     "effect": "Shock",
     "element": "punch",
     "enemy": true,
@@ -682,6 +711,7 @@
     "target": "All Allies"
   },
   "Rest": {
+    "cost": 5,
     "effect": "Recover 15% HP",
     "element": "special"
   },
@@ -692,6 +722,7 @@
     "target": "All Allies"
   },
   "Roundhouse Kick": {
+    "cost": 8,
     "element": "kick",
     "power": 12,
     "target": "1 Foe"
@@ -711,6 +742,7 @@
     "target": "1 Ally"
   },
   "Sacrifice": {
+    "cost": 8,
     "effect": "Foes lose MP equal to 50% damage taken",
     "element": "almighty",
     "power": 15,
@@ -723,17 +755,20 @@
     "target": "1 Ally"
   },
   "Scan": {
+    "cost": 8,
     "effect": "Paralyze",
     "element": "flying",
     "power": 20,
     "target": "2 Foes"
   },
   "Scapegoat": {
+    "cost": 10,
     "effect": "Takes damage in place of ally",
     "element": "special",
     "target": "1 Ally"
   },
   "Self-Destruct": {
+    "cost": 50,
     "effect": "Kills user",
     "element": "almighty",
     "target": "All Foes"
@@ -768,12 +803,14 @@
     "target": "Random Foes"
   },
   "Showtime": {
+    "cost": 5,
     "element": "rush",
     "enemy": true,
     "power": 10,
     "target": "All Foes"
   },
   "Shrapnel": {
+    "cost": 8,
     "element": "gun",
     "power": 18,
     "target": "All Foes"
@@ -786,41 +823,48 @@
     "target": "All Foes"
   },
   "Spin Slash": {
+    "cost": 10,
     "effect": "x2-3 hits, Power scales with max HP",
     "element": "sword",
     "power": 40,
     "target": "Random Foes"
   },
   "Squash": {
+    "cost": 12,
     "element": "rush",
     "power": 30,
     "target": "1 Foe"
   },
   "Stone Bite": {
+    "cost": 5,
     "effect": "Stone",
     "element": "rush",
     "power": 20,
     "target": "1 Foe"
   },
   "Stun Bite": {
+    "cost": 5,
     "effect": "Paralyze",
     "element": "rush",
     "power": 20,
     "target": "1 Foe"
   },
   "Stun Claw": {
+    "cost": 5,
     "effect": "Paralyze",
     "element": "punch",
     "power": 15,
     "target": "2 Foes"
   },
   "Stun Needle": {
+    "cost": 8,
     "effect": "x2-3 hits, Paralyze",
     "element": "flying",
     "power": 8,
     "target": "Random Foes"
   },
   "Suck": {
+    "cost": 5,
     "effect": "Absorb 50% damage dealt",
     "element": "almighty",
     "power": 10,
@@ -839,6 +883,7 @@
     "target": "All Foes"
   },
   "Tackle": {
+    "cost": 12,
     "element": "rush",
     "power": 50,
     "target": "1 Foe"
@@ -856,6 +901,7 @@
     "target": "All Foes"
   },
   "Tekken Punch": {
+    "cost": 10,
     "effect": "x1-3 hits",
     "element": "punch",
     "power": 15,
@@ -887,12 +933,14 @@
     "target": "All Allies"
   },
   "Thunder Kick": {
+    "cost": 20,
     "effect": "Power scales with max HP",
     "element": "kick",
     "power": 100,
     "target": "2 Foes"
   },
   "Toxic Sting": {
+    "cost": 5,
     "effect": "Poison",
     "element": "flying",
     "power": 10,
@@ -915,18 +963,21 @@
     "element": "special"
   },
   "Vacuum Throw": {
+    "cost": 10,
     "effect": "Chance to end battle",
     "element": "almighty",
     "power": 15,
     "target": "1 Foe"
   },
   "Venom Bite": {
+    "cost": 3,
     "effect": "Poison",
     "element": "rush",
     "power": 10,
     "target": "1 Foe"
   },
   "Venom Claw": {
+    "cost": 5,
     "effect": "Poison",
     "element": "punch",
     "power": 15,
@@ -947,6 +998,7 @@
     "target": "All Allies"
   },
   "Wing Flap": {
+    "cost": 10,
     "element": "flying",
     "power": 5,
     "target": "All Foes"

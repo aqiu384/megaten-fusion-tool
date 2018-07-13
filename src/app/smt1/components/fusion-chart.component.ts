@@ -12,12 +12,14 @@ import { FusionDataService } from '../fusion-data.service';
       <app-fusion-chart
         [normChart]="normChart"
         [tripChart]="normChart"
+        [mitaTable]="mitamaTable"
         [normTitle]="'Light and Neutral Normal Fusions'"
         [tripTitle]="'Dark Normal Fusions'">
       </app-fusion-chart>
       <app-fusion-chart
         [normChart]="tripChart"
         [tripChart]="tripChart"
+        [mitaTable]="tripleMitamaTable"
         [normTitle]="'Light and Neutral Triple Fusions'"
         [tripTitle]="'Dark Triple Fusions'">
       </app-fusion-chart>
@@ -25,12 +27,14 @@ import { FusionDataService } from '../fusion-data.service';
     <ng-container *ngIf="fullChart">
       <app-fusion-chart
         [normChart]="fullChart"
+        [mitaTable]="mitamaTable"
+        [filterDarks]="false"
         [normTitle]="'Normal Fusions'">
       </app-fusion-chart>
-      <app-fusion-chart
-        [normChart]="tripChart"
-        [normTitle]="'Triple Fusions'">
-      </app-fusion-chart>
+      <app-species-triple-chart
+        [speciesChart]="tripChart"
+        [title]="appName + ' - Triple Fusions'">
+      </app-species-triple-chart>
     </ng-container>
   `
 })
@@ -39,13 +43,19 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   normChart: FusionChart;
   tripChart: FusionChart;
   fullChart: FusionChart;
+  appName: string;
 
-  constructor(
-    private changeDetectorRef: ChangeDetectorRef,
-    private fusionDataService: FusionDataService
-  ) { }
+  tripleMitamaTable: string[][];
+  mitamaTable: string[][];
+
+  constructor(private fusionDataService: FusionDataService) { }
 
   ngOnInit() {
+    const compConfig = this.fusionDataService.compConfig;
+    this.appName = compConfig.appTitle;
+    this.mitamaTable = compConfig.mitamaTable;
+    this.tripleMitamaTable = compConfig.tripleMitamaTable;
+
     if (this.fusionDataService.compConfig.useSpeciesFusion) {
       this.subscriptions.push(
         this.fusionDataService.fusionChart.subscribe(chart => {

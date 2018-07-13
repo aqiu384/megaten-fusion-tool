@@ -35,6 +35,16 @@ const raceAligns = {};
 const species = {};
 const speciesLookup = {};
 
+const normalTable = {
+  races: FUSION_CHART_JSON['races'].concat(['Hero']),
+  table: FUSION_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
+}
+
+const tripleTable = {
+  races: TRIPLE_CHART_JSON['races'].concat(['Hero']),
+  table: TRIPLE_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
+}
+
 const normalElemChart = {
   elems: ELEMENT_CHART_JSON['elems'].slice(0, 4),
   races: ELEMENT_CHART_JSON['races'],
@@ -46,11 +56,6 @@ const tripleElemChart = {
   races: ELEMENT_CHART_JSON['races'],
   table: ELEMENT_CHART_JSON['table'].map(row => row.slice(4, 10))
 };
-
-const normalTable = {
-  races: ['Deity', 'Enigma'].concat(FUSION_CHART_JSON['races'].slice(1)),
-  table: [['-']].concat(FUSION_CHART_JSON['table'].map(row => [row[0], row[0]].concat(row.slice(1))))
-}
 
 for (const rs of COMP_CONFIG_JSON['species']) {
   const spec = rs[0];
@@ -88,10 +93,12 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   normalTable,
   darkTable: DARK_CHART_JSON,
   elementTable: normalElemChart,
+  mitamaTable: ELEMENT_CHART_JSON['pairs'],
 
-  tripleTable: TRIPLE_CHART_JSON,
+  tripleTable,
   tripleDarkTable: DARK_TRIPLE_CHART_JSON,
-  tripleElementTable: tripleElemChart
+  tripleElementTable: tripleElemChart,
+  tripleMitamaTable: ELEMENT_CHART_JSON['triples']
 };
 
 export const fusionDataFactory = () => {

@@ -60,7 +60,8 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   alignData: ALIGNMENT_JSON,
   normalTable: FUSION_CHART_JSON,
   tripleTable: TRIPLE_CHART_JSON,
-  elementTable: ELEMENT_CHART_JSON
+  elementTable: ELEMENT_CHART_JSON,
+  mitamaTable: ELEMENT_CHART_JSON['pairs']
 };
 
 export const fusionDataFactory = () => {

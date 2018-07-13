@@ -9,6 +9,7 @@ import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
+import { SpeciesTripleChartComponent } from './components/species-triple-chart.component';
 
 import { CompendiumComponent } from './components/compendium.component';
 
@@ -25,7 +26,8 @@ import { CompendiumComponent } from './components/compendium.component';
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
-    FusionChartContainerComponent
+    FusionChartContainerComponent,
+    SpeciesTripleChartComponent
   ],
   exports: [
     CompendiumComponent,
@@ -33,7 +35,8 @@ import { CompendiumComponent } from './components/compendium.component';
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
-    FusionChartContainerComponent
+    FusionChartContainerComponent,
+    SpeciesTripleChartComponent
   ]
 })
 export class SmtSnesCompendiumModule {

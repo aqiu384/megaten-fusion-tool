@@ -89,9 +89,11 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   alignData: { races: raceAligns },
   normalTable: normalChart,
   darkTable: DARK_CHART_JSON,
+  mitamaTable: ELEMENT_CHART_JSON['pairs'],
   tripleTable: tripleChart,
   elementTable: normalElemChart,
-  tripleElementTable: tripleElemChart
+  tripleElementTable: tripleElemChart,
+  tripleMitamaTable: ELEMENT_CHART_JSON['triples']
 };
 
 export const fusionDataFactory = () => {

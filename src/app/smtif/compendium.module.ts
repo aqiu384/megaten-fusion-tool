@@ -61,6 +61,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   alignData: ALIGNMENT_JSON,
   tripleTable: TRIPLE_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
+  mitamaTable: ELEMENT_CHART_JSON['pairs'],
   normalTable: {
     races: FUSION_CHART_JSON['races'].slice(0, FUSION_CHART_JSON['races'].length - 1),
     table: FUSION_CHART_JSON['table'].slice(0, FUSION_CHART_JSON['table'].length - 1)

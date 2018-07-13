@@ -32,7 +32,9 @@ export interface CompendiumConfig extends BaseComp {
   normalTable;
   darkTable?;
   elementTable;
+  mitamaTable?;
   tripleTable;
   tripleDarkTable?;
   tripleElementTable?;
+  tripleMitamaTable?;
 }

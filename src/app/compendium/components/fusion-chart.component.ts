@@ -46,6 +46,7 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   @Input() normTitle = 'Normal Fusions';
   @Input() tripTitle = '';
   @Input() isPersona = false;
+  @Input() filterDarks = true;
   @Input() counter: number;
 
   appName: string;
@@ -81,10 +82,16 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     const noResult = 'None';
     const emResult = 'Empt-';
 
-    const lights = this.normChart.races.filter(race => this.normChart.getLightDark(race) === 1);
-    const norms = this.normChart.races.filter(race => this.normChart.getLightDark(race) === 0);
-    const darks = this.normChart.races.filter(race => this.normChart.getLightDark(race) === -1);
     const elems = this.normChart.elementDemons;
+    let lights = [];
+    let norms = this.normChart.races;
+    let darks = [];
+
+    if (this.filterDarks) {
+      lights = this.normChart.races.filter(race => this.normChart.getLightDark(race) === 1);
+      norms = this.normChart.races.filter(race => this.normChart.getLightDark(race) === 0);
+      darks = this.normChart.races.filter(race => this.normChart.getLightDark(race) === -1);
+    }
 
     const leftOff = lights.length - darks.length;
     const top = lights.concat(norms, elems);
