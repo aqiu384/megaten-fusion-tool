@@ -4,7 +4,7 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
-  private specialRecipes: { [name: string]: string[] } = {};
+  private specialRecipes: { [name: string]: string[] };
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
   private invertedSpecials: { [name: string]: { result: string, recipe: string }[] };
   private elementDemons: string[];
@@ -28,7 +28,15 @@ export class Compendium implements ICompendium {
     const specialRecipes: { [name: string]: string[] } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
+    const statLen = compConfig.baseStats.length;
+    const resLen = compConfig.resistElems.length;
+
     for (const [name, json] of Object.entries(compConfig.demonData)) {
+      const skills = compConfig.appTitle !== 'Shin Megami Tensei IMAGINE' ?
+        json['skills'].reduce((acc, skill, i) => { if (skill) {
+          acc[skill.replace('*', '')] = i - 8; 
+        } return acc; }, {}) : json['skills'];
+
       demons[name] = {
         name,
         race:    json['race'],
@@ -37,12 +45,10 @@ export class Compendium implements ICompendium {
         inherit: json['inherit'] || 'special',
         drop:    json['drop'] || '-',
         price:   Math.pow(json['lvl'], 3),
-        stats:   json['stats'],
+        stats:   json['stats'].slice(0, statLen),
         atks:    json['atks'] || [],
-        resists: json['resists'].split('').map(char => compConfig.resistCodes[char]),
-        skills:  json['skills'].reduce((acc, skill, i) => { if (skill) {
-          acc[skill.replace('*', '')] = i - 8; 
-        }return acc; }, {})
+        resists: json['resists'].substring(0, resLen).split('').map(char => compConfig.resistCodes[char]),
+        skills
       };
     }
 
@@ -68,6 +74,13 @@ export class Compendium implements ICompendium {
       }
     }
 
+    if (compConfig.specialRecipes) {
+      for (const [name, recipe] of Object.entries(compConfig.specialRecipes)) {
+        specialRecipes[name] = <string[]>recipe;
+        demons[name].fusion = 'special';
+      }
+    }
+
     this.demons = demons;
     this.skills = skills;
     this.elementDemons = compConfig.elementTable.elems;
@@ -89,7 +102,10 @@ export class Compendium implements ICompendium {
     for (const [name, demon] of Object.entries(this.demons)) {
       inversions[demon.race][demon.lvl] = name;
       ingredients[demon.race].push(demon.lvl);
-      results[demon.race].push(demon.lvl);
+
+      if (demon.fusion === 'normal') {
+        results[demon.race].push(demon.lvl);
+      }
     }
 
     for (const [species, races] of Object.entries(compConfig.species)) {

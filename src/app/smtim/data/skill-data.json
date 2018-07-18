@@ -1,0 +1,2822 @@
+{
+  "10% Demon Pulse": {
+    "effect": "+10% Max MP",
+    "element": "passive"
+  },
+  "10% Life Boost": {
+    "effect": "+10% Max HP",
+    "element": "passive",
+    "ename": "10 Percent Life Boost"
+  },
+  "20% Life Bonus": {
+    "effect": "+20% Max HP",
+    "element": "passive"
+  },
+  "20% Mana Bonus": {
+    "effect": "+20% Max MP",
+    "element": "passive"
+  },
+  "30% Life Bonus": {
+    "effect": "+40% Max HP",
+    "element": "passive",
+    "ename": "40% Life Bonus"
+  },
+  "30% Mana Bonus": {
+    "effect": "+40% Max MP",
+    "element": "passive",
+    "ename": "40% Mana Bonus"
+  },
+  "99 Needles": {
+    "action": "rapid",
+    "cost": 1001,
+    "effect": "x3 hits",
+    "element": "penetrate",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "ARS Full Booster": {
+    "effect": "+25% Atk, Rush, Spin Dmg",
+    "element": "passive",
+    "ename": "ARS Full Booster 1",
+    "inherit": "none"
+  },
+  "Absolute Zero": {
+    "action": "spin",
+    "cost": 12,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Absolute Zero Sword": {
+    "acost": "5 MP",
+    "action": "rush",
+    "cost": 1,
+    "effect": "100% Freeze",
+    "element": "ice",
+    "inherit": "sacri",
+    "stat": "Pc",
+    "target": "Foe Line"
+  },
+  "Agi": {
+    "cost": 1008,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Agi os Nikolaos": {
+    "acost": "100 Mag",
+    "cost": 1100,
+    "effect": "Slow-moving Shot",
+    "element": "fire",
+    "inherit": "none",
+    "stat": "Pl",
+    "target": "1 Foe"
+  },
+  "Agidyne": {
+    "acost": "10 Mag",
+    "cost": 1020,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Agilao": {
+    "cost": 1015,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Akasha Arts": {
+    "action": "spin",
+    "cost": 10,
+    "element": "blunt",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Alp Helm": {
+    "cost": 1020,
+    "effect": "+1 MP Regen",
+    "element": "recovery",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Anesthetic": {
+    "action": "rapid",
+    "cost": 1003,
+    "effect": "x2 hits, 70% Paralysis",
+    "element": "penetrate",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Angel Halo": {
+    "cost": 1006,
+    "effect": "Rakukaja x1",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Annihilation Slash": {
+    "action": "rush",
+    "cost": 10,
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Anti-Death": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Death Res",
+    "element": "defend",
+    "ename": "Anti-Curse",
+    "target": "1 Ally"
+  },
+  "Anti-Demon Stance": {
+    "cost": 1002,
+    "effect": "+50% Atk and Spin Res, Slows Foe recovery",
+    "element": "defend"
+  },
+  "Anti-Elec": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Elec Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Anti-Expel": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Expel Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Anti-Fire": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Fire Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Anti-Force": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Force Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Anti-Ice": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Ice Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Anti-Melee": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Slash, Blunt, Charge Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Anti-Shot": {
+    "acost": "5 Mag",
+    "cost": 1003,
+    "effect": "+50% Handgun, Penetrate, Spread Res",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Armor's Breath": {
+    "effect": "+2 HP Regen",
+    "element": "passive"
+  },
+  "Assault": {
+    "action": "rush",
+    "cost": 5,
+    "element": "charge",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Attack Booster": {
+    "effect": "+25 Atk Dmg",
+    "element": "passive"
+  },
+  "Attack Booster X": {
+    "effect": "+50 Atk Dmg",
+    "element": "passive"
+  },
+  "Aurora of Eternal Night": {
+    "acost": "120 Mag",
+    "cost": 1040,
+    "effect": "+50% 3 of Fire, Ice, Elec, Force Res",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Awareness 1": {
+    "effect": "-10% Cooldown",
+    "element": "passive"
+  },
+  "Awareness 2": {
+    "effect": "-20% Cooldown",
+    "element": "passive"
+  },
+  "Awareness 3": {
+    "effect": "-30% Cooldown",
+    "element": "passive"
+  },
+  "Barrage of Sadness": {
+    "action": "rapid",
+    "cost": 1001,
+    "effect": "x10 hits, 50% Depression",
+    "element": "mind",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Beast Claw": {
+    "action": "atk",
+    "element": "slash",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Beast Eyes": {
+    "acost": "500 Mag",
+    "cost": 1060,
+    "effect": "Allows skills to be stacked x3 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Beast's Discernment": {
+    "acost": "500 Mag",
+    "cost": 1030,
+    "effect": "Allows skills to be stacked x3 Max",
+    "element": "support",
+    "ename": "Insight of the Beast",
+    "stat": "U"
+  },
+  "Bharata Natyam": {
+    "cost": 1005,
+    "effect": "Sukukaja x1",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U"
+  },
+  "Bind Counter": {
+    "effect": "Counter next Atk or Rush Atk with 100% Bind",
+    "element": "defend"
+  },
+  "Bind Voice": {
+    "action": "ail",
+    "cost": 1010,
+    "effect": "85% Bind",
+    "element": "nerve",
+    "inherit": "mouth",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Bite": {
+    "action": "rush",
+    "cost": 3,
+    "element": "charge",
+    "inherit": "fang",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Blast of Envy": {
+    "acost": "15 MP, 200 Mag",
+    "action": "spin",
+    "cost": 15,
+    "element": "almighty",
+    "stat": "CLS",
+    "target": "Foe Circle"
+  },
+  "Blizzard Cannon": {
+    "acost": "5 Mag",
+    "cost": 1015,
+    "effect": "Slow-moving Shot",
+    "element": "ice",
+    "stat": "Pl",
+    "target": "1 Foe"
+  },
+  "Bloodsucker": {
+    "action": "atk",
+    "effect": "Absorb 50% HP and MP Dmg",
+    "element": "mystic",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Body Attack": {
+    "action": "rush",
+    "cost": 3,
+    "element": "blunt",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Bolt Storm": {
+    "action": "spin",
+    "cost": 13,
+    "effect": "70% Shock",
+    "element": "elec",
+    "ename": "Electrical Discharge",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Boomerang Frosterius": {
+    "acost": "100 Mag",
+    "action": "fspin",
+    "cost": 10,
+    "effect": "100% Freeze",
+    "element": "ice",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Buddha's Palm": {
+    "action": "rush",
+    "cost": 8,
+    "element": "blunt",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Bufu": {
+    "cost": 1007,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Bufudyne": {
+    "acost": "10 Mag",
+    "cost": 1020,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Bufula": {
+    "cost": 1015,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Burn Storm": {
+    "acost": "20 Mag",
+    "action": "spin",
+    "cost": 15,
+    "effect": "95% Burn",
+    "element": "fire",
+    "stat": "Cp",
+    "target": "Foe Circle"
+  },
+  "Call of the Nine-Headed Dragon": {
+    "action": "ail",
+    "cost": 1009,
+    "effect": "85% Rage",
+    "element": "support",
+    "inherit": "mouth",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Canubis Bite": {
+    "action": "rush",
+    "cost": 10,
+    "element": "charge",
+    "inherit": "fang",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Chain Shot": {
+    "action": "rapid",
+    "cost": 1003,
+    "effect": "x3 hits",
+    "element": "handgun",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Chakra Armor": {
+    "effect": "+2 MP Regen",
+    "element": "passive",
+    "ename": "Chakura Armor"
+  },
+  "Chakra Walk": {
+    "effect": "+3 MP Regen",
+    "element": "passive"
+  },
+  "Charm Bite": {
+    "action": "rush",
+    "cost": 8,
+    "effect": "70% Charm",
+    "element": "charge",
+    "inherit": "fang",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Charmdi": {
+    "cost": 1005,
+    "effect": "Remove Charm",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Circle of Force": {
+    "acost": "30 Mag",
+    "cost": 1030,
+    "effect": "Drain next 2 Force Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Clench": {
+    "effect": "50% chance to survive lethal Dmg",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Close Range Booster": {
+    "effect": "+25% Melee Dmg",
+    "element": "passive",
+    "ename": "Close-range Booster"
+  },
+  "Close Range Booster X": {
+    "effect": "+50% Melee Dmg",
+    "element": "passive",
+    "ename": "Close-Range Booster X"
+  },
+  "Closedi": {
+    "cost": 1005,
+    "effect": "Remove Mute, Seal",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Cocytus Pain": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Concentration": {
+    "cost": 1050,
+    "effect": "Next Magic Atk +150% Dmg",
+    "element": "support",
+    "ename": "Willpower Surge",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Corona Cannon": {
+    "acost": "5 Mag",
+    "cost": 1015,
+    "effect": "Slow-moving Shot",
+    "element": "fire",
+    "stat": "Pl",
+    "target": "1 Foe"
+  },
+  "Counter": {
+    "effect": "Counter next Atk or Rush Atk",
+    "element": "defend",
+    "ename": "Counter (Demon)"
+  },
+  "Cup of Babylon": {
+    "cost": 1025,
+    "effect": "70% Muddle, 70% Panic, 100% Charm",
+    "element": "almighty",
+    "inherit": "sacri",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Curative Booster": {
+    "effect": "+25% Rec",
+    "element": "passive"
+  },
+  "Cursed Spit": {
+    "acost": "120 Mag",
+    "cost": 1030,
+    "effect": "20% Shock",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "Pl",
+    "target": "1 Foe"
+  },
+  "D.B.B.": {
+    "cost": 1007,
+    "effect": "Tarukaja + Makakaja",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U"
+  },
+  "Dark Breath": {
+    "cost": 1010,
+    "effect": "Rakukaja + Makakaja, x4 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Dark Breath (Spin)": {
+    "action": "fspin",
+    "cost": 1020,
+    "effect": "-100% Rec",
+    "element": "death",
+    "inherit": "mouth",
+    "stat": "P",
+    "target": "Foe Front"
+  },
+  "Dark Night Sword": {
+    "action": "fspin",
+    "cost": 11,
+    "effect": "70% Mute",
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Darkness Claw": {
+    "action": "fspin",
+    "cost": 8,
+    "effect": "100% Blind",
+    "element": "slash",
+    "inherit": "claw",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Darkness Needle": {
+    "action": "rapid",
+    "cost": 1005,
+    "effect": "x2 hits, 100% Blind",
+    "element": "penetrate",
+    "ename": "Dark Needle",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Death Flies": {
+    "acost": "6 Mag",
+    "action": "spin",
+    "cost": 1001,
+    "effect": "100% Curse",
+    "element": "almighty",
+    "ename": "Funeral of Death Flies",
+    "inherit": "none",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Death Touch": {
+    "action": "rush",
+    "cost": 1003,
+    "effect": "Absorb 50% Dmg",
+    "element": "mystic",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Deathbound": {
+    "action": "rush",
+    "cost": 11,
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Defensive Stance": {
+    "cost": 1001,
+    "effect": "+50% Atk and Spin Res",
+    "element": "defend"
+  },
+  "Dekaja": {
+    "cost": 1010,
+    "effect": "Remove all -kaja effects",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Dekunda": {
+    "cost": 1010,
+    "effect": "Remove all -kunda effects",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Desert Storm": {
+    "acost": "250 Mag",
+    "action": "spin",
+    "cost": 1080,
+    "effect": "70% Blind",
+    "element": "almighty",
+    "inherit": "sacri",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Devil Break Tuner": {
+    "cost": 2100,
+    "effect": "x4 hits, Intensive Break",
+    "element": "support",
+    "ename": "Break Shooter (Demon)",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Dia": {
+    "cost": 1007,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1018,
+    "effect": "Recover large HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Diarama": {
+    "cost": 1010,
+    "effect": "Recover medium HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Dissection Wave": {
+    "action": "fspin",
+    "cost": 13,
+    "element": "slash",
+    "ename": "Disection Wave",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Divine Blast": {
+    "acost": "20 MP, 200 Mag",
+    "action": "fspin",
+    "cost": 20,
+    "effect": "Dmg scales with Foe align and User HP",
+    "element": "expel",
+    "inherit": "sacri",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Divine Punishment (C)": {
+    "acost": "20 MP, 250 Mag",
+    "action": "fspin",
+    "cost": 20,
+    "effect": "100% Stone, +20% Dmg to Neutral, +50% Dmg to Law",
+    "element": "almighty",
+    "ename": "Divine Punishment (Physical)",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Divine Punishment (L)": {
+    "acost": "20 MP, 250 Mag",
+    "action": "fspin",
+    "cost": 20,
+    "effect": "100% Stone, +20% Dmg to Neutral, +50% Dmg to Chaos",
+    "element": "almighty",
+    "ename": "Divine Punishment (Spell)",
+    "inherit": "none",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Dormina": {
+    "action": "ail",
+    "cost": 1004,
+    "effect": "85% Sleep",
+    "element": "mind",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Dream Eater": {
+    "acost": "10 Mag",
+    "cost": 1014,
+    "effect": "Absorb 50% Dmg, Effective against sleeping Foes",
+    "element": "mystic",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Earth Protection": {
+    "cost": 1010,
+    "effect": "+1 HP Regen",
+    "element": "recovery",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Eclipse": {
+    "acost": "120 Mag",
+    "action": "shot",
+    "cost": 1030,
+    "effect": "Only Knockback cancels cast",
+    "element": "almighty",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Eclipse Hallel": {
+    "acost": "120 Mag",
+    "action": "shot",
+    "cost": 1030,
+    "effect": "Only Knockback cancels cast",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Eight End": {
+    "action": "atk",
+    "effect": "x8 hits",
+    "element": "blunt",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Eight Pillars of Flame": {
+    "acost": "200 Mag",
+    "action": "spin",
+    "cost": 1001,
+    "effect": "100% Burn",
+    "element": "fire",
+    "inherit": "none",
+    "stat": "Pc",
+    "target": "Foe Circle"
+  },
+  "Electric Booster": {
+    "effect": "+25% Elec Dmg",
+    "element": "passive"
+  },
+  "Electric Booster X": {
+    "effect": "+50% Elec Dmg",
+    "element": "passive"
+  },
+  "Enma Crest": {
+    "action": "rush",
+    "cost": 1,
+    "effect": "Kills user",
+    "element": "suicide",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Erosion Hex": {
+    "cost": 1010,
+    "effect": "50% Poison, 45% Muddle, 35% Stone",
+    "element": "nerve",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Estoma": {
+    "cost": 1006,
+    "effect": "Calm hostile Foes",
+    "element": "support",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Eternal Sleep": {
+    "cost": 1014,
+    "effect": "Effective against sleeping foes",
+    "element": "nerve",
+    "inherit": "mouth",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Etnadi": {
+    "cost": 1005,
+    "effect": "Remove Muddle",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Evil Eyes": {
+    "action": "ail",
+    "cost": 1006,
+    "effect": "85% Bind",
+    "element": "mystic",
+    "inherit": "eyes",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Evolve 1": {
+    "effect": "+10% Limit Break Dmg and Change, +160 Crit",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Evolve 2": {
+    "effect": "+20% Limit Break Dmg and Change, +220 Crit",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Evolve 3": {
+    "effect": "+30% Limit Break Dmg and Change, +280 Crit",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Evolve 4": {
+    "effect": "+40% Limit Break Dmg and Change, +340 Crit",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Fairy Ring": {
+    "cost": 1005,
+    "effect": "Samakaja x1",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Feral Claw": {
+    "action": "fspin",
+    "cost": 7,
+    "element": "slash",
+    "inherit": "claw",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Ferocious Howl": {
+    "action": "ail",
+    "cost": 1009,
+    "effect": "Matarunda + Mamakanda",
+    "element": "support",
+    "inherit": "mouth",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Fierce Counter": {
+    "effect": "Counter next Atk or Rush Atk",
+    "element": "defend"
+  },
+  "Fierce Fang": {
+    "action": "atk",
+    "element": "charge",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Fighting Spirit": {
+    "cost": 1050,
+    "effect": "Next Phys Atk +150% Dmg",
+    "element": "support",
+    "ename": "Focus Surge",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Fire Booster": {
+    "effect": "+25% Fire Dmg",
+    "element": "passive"
+  },
+  "Fire Booster X": {
+    "effect": "+50% Fire Dmg",
+    "element": "passive"
+  },
+  "Fire Breath": {
+    "action": "fspin",
+    "cost": 11,
+    "effect": "70% Burn",
+    "element": "fire",
+    "inherit": "mouth",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Fog Breath": {
+    "action": "fspin",
+    "cost": 12,
+    "effect": "70% Muddle",
+    "element": "mystic",
+    "inherit": "mouth",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Fool's Voice": {
+    "action": "ail",
+    "cost": 1014,
+    "effect": "85% Mute",
+    "element": "mystic",
+    "inherit": "mouth",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Force Booster": {
+    "effect": "+25% Force Dmg",
+    "element": "passive"
+  },
+  "Force Booster X": {
+    "effect": "+50% Force Dmg",
+    "element": "passive"
+  },
+  "Frolic": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "100% Charm, 100% Arousal, Only knockback cancels cast",
+    "element": "mind",
+    "inherit": "maiden",
+    "stat": "U",
+    "target": "Foe Circle"
+  },
+  "Frolic (Male)": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "100% Charm, 100% Arousal, Only knockback cancels cast",
+    "element": "mind",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Foe Circle"
+  },
+  "Frost Punch": {
+    "action": "rush",
+    "cost": 5,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "ename": "Frost's Punch",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Gae Bolg": {
+    "acost": "15 Mag",
+    "action": "shot",
+    "cost": 20,
+    "effect": "Only Knockback cancels cast",
+    "element": "penetrate",
+    "ename": "Gae Bolg (Demon)",
+    "inherit": "sacri",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Galactic Frost Punch": {
+    "action": "rush",
+    "cost": 7,
+    "effect": "100% Freeze",
+    "element": "ice",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Gale": {
+    "cost": 1001,
+    "effect": "Negate next Shot or Rapid Atk",
+    "element": "defend"
+  },
+  "Gale Force": {
+    "cost": 1002,
+    "effect": "Counter next Atk or Rush Atk with 100% Stun",
+    "element": "defend"
+  },
+  "Gate of Hell": {
+    "cost": 1010,
+    "effect": "30% Stone, Dmg scales with remaining HP",
+    "element": "almighty",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Glow of a Thousand Magics": {
+    "acost": "100 Mag",
+    "cost": 1025,
+    "element": "mystic",
+    "stat": "P",
+    "target": "Foe Front"
+  },
+  "Gnaw": {
+    "action": "atk",
+    "element": "charge",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "God's Malice": {
+    "acost": "24 Mag",
+    "cost": 1020,
+    "effect": "45% Mute, 40% Paralysis, 50% Panic, 35% Charm",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Godspeed 1": {
+    "effect": "-10% Cooldown and Incantation",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Godspeed 2": {
+    "effect": "-20% Cooldown and Incantation",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Godspeed 3": {
+    "effect": "-30% Cooldown and Incantation",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Godspeed 4": {
+    "effect": "-40% Cooldown and Incantation",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Gouwan no Renkan Jyuusan Kizu": {
+    "action": "rapid",
+    "cost": 1001,
+    "effect": "x13 hits",
+    "element": "slash",
+    "ename": "Thirteen Chain Wounds of Strong Arm",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Great Hug": {
+    "effect": "Counter next Atk or Rush Atk with HP Rec",
+    "element": "defend"
+  },
+  "Guillotine Cut": {
+    "action": "fspin",
+    "cost": 11,
+    "effect": "70% Paralysis",
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Gungnir": {
+    "action": "shot",
+    "cost": 1030,
+    "effect": "Only Knockback cancels cast",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Hades Blast": {
+    "acost": "10 Mag",
+    "action": "spin",
+    "cost": 22,
+    "element": "charge",
+    "inherit": "thrust",
+    "stat": "CLS",
+    "target": "Foe Circle"
+  },
+  "Hail Assault": {
+    "action": "rush",
+    "cost": 2,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Hama": {
+    "cost": 1010,
+    "element": "expel",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Hamaon": {
+    "acost": "12 Mag",
+    "cost": 1030,
+    "effect": "10% Insta Death",
+    "element": "expel",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Hasso-Happa": {
+    "acost": "40 Mag",
+    "action": "fspin",
+    "cost": 1015,
+    "element": "almighty",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Hassou Tobi": {
+    "action": "spin",
+    "cost": 20,
+    "effect": "x8 hits, Dmg scales with remaining HP",
+    "element": "slash",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Heat Wave": {
+    "action": "rush",
+    "cost": 9,
+    "effect": "70% Burn",
+    "element": "fire",
+    "ename": "Heat wave",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Heaven Shaking Sword": {
+    "acost": "25 Mag",
+    "action": "spin",
+    "cost": 25,
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "CLS",
+    "target": "Foe Circle"
+  },
+  "Heaven's Bow": {
+    "action": "rapid",
+    "cost": 4,
+    "effect": "x5 hits",
+    "element": "penetrate",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "Foe Area"
+  },
+  "Hell Thrust": {
+    "action": "rush",
+    "cost": 7,
+    "effect": "70% Mute",
+    "element": "charge",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Hell's Eyes": {
+    "action": "ail",
+    "cost": 1005,
+    "element": "death",
+    "inherit": "eyes",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Hellfire": {
+    "action": "spin",
+    "cost": 13,
+    "effect": "70% Burn",
+    "element": "fire",
+    "ename": "Hell Fire",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Hidden Sword": {
+    "action": "spin",
+    "cost": 10,
+    "element": "slash",
+    "stat": "Cp",
+    "target": "Foe Circle"
+  },
+  "Hostia Sancta": {
+    "acost": "20 MP",
+    "cost": 50,
+    "element": "expel",
+    "inherit": "none",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Hot Pursuit 1": {
+    "effect": "+5% Tech Dmg and Chance",
+    "element": "passive"
+  },
+  "Hot Pursuit 2": {
+    "effect": "+10% Tech Dmg and Chance",
+    "element": "passive"
+  },
+  "Hurricane Cannon": {
+    "acost": "5 Mag",
+    "cost": 1015,
+    "effect": "Slow-moving Shot",
+    "element": "force",
+    "stat": "Pl",
+    "target": "1 Foe"
+  },
+  "Hyper Saver 1": {
+    "effect": "-10% HP and MP Costs",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Hyper Saver 2": {
+    "effect": "-20% HP and MP Costs",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Hyper Saver 3": {
+    "effect": "-30% HP and MP Costs",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Hyper Saver 4": {
+    "effect": "-40% HP and MP Costs",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Ice Booster": {
+    "effect": "+25% Ice Dmg",
+    "element": "passive"
+  },
+  "Ice Booster X": {
+    "effect": "+50% Ice Dmg",
+    "element": "passive"
+  },
+  "Ice Breath": {
+    "action": "fspin",
+    "cost": 11,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "inherit": "mouth",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Immunity 1": {
+    "effect": "+50 Ailment Res",
+    "element": "passive"
+  },
+  "Immunity 2": {
+    "effect": "+100 Ailment Res",
+    "element": "passive"
+  },
+  "Immunity 3": {
+    "effect": "+150 Ailment Res",
+    "element": "passive"
+  },
+  "Immunity 4": {
+    "effect": "+200 Ailment Res",
+    "element": "passive"
+  },
+  "Incantation Booster 1": {
+    "effect": "-10% Incantation",
+    "element": "passive"
+  },
+  "Incantation Booster 2": {
+    "effect": "-20% Incantation",
+    "element": "passive"
+  },
+  "Incantation Booster 3": {
+    "effect": "-30% Incantation",
+    "element": "passive"
+  },
+  "Incantation Booster 4": {
+    "effect": "-40% Incantation",
+    "element": "passive"
+  },
+  "Iron Claw": {
+    "action": "fspin",
+    "cost": 6,
+    "element": "slash",
+    "inherit": "claw",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Journey to Eternal Sleep": {
+    "cost": 1040,
+    "effect": "Effective against sleeping foes",
+    "element": "nerve",
+    "inherit": "mouth",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Kick Combo": {
+    "action": "atk",
+    "effect": "x2 hits",
+    "element": "blunt",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Killing Wind": {
+    "acost": "7 MP",
+    "action": "rush",
+    "cost": 1,
+    "effect": "100% Stun",
+    "element": "force",
+    "inherit": "sacri",
+    "stat": "Pc",
+    "target": "Foe Line"
+  },
+  "Kiss Cannon": {
+    "acost": "20 Mag",
+    "cost": 1030,
+    "effect": "Slow-moving Shot",
+    "element": "mind",
+    "stat": "Pl",
+    "target": "Foe Area"
+  },
+  "Kiss Throw": {
+    "action": "shot",
+    "element": "mind",
+    "inherit": "none",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Lemegeton": {
+    "cost": 1007,
+    "effect": "Makakaja x2",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U"
+  },
+  "Liberama": {
+    "cost": 1004,
+    "effect": "Attract enemy hostility",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Life Spring": {
+    "effect": "+3 HP Regen",
+    "element": "passive"
+  },
+  "Light Arrow": {
+    "action": "rapid",
+    "cost": 1002,
+    "effect": "x2 hits",
+    "element": "handgun",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Lightning Cannon": {
+    "acost": "5 Mag",
+    "cost": 1015,
+    "effect": "Slow-moving Shot",
+    "element": "elec",
+    "stat": "Pl",
+    "target": "1 Foe"
+  },
+  "Lightning Thrust": {
+    "action": "rush",
+    "cost": 6,
+    "effect": "70% Shock",
+    "element": "elec",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Long Range Booster": {
+    "effect": "+25% Gun Dmg",
+    "element": "passive",
+    "ename": "Long-Range Booster"
+  },
+  "Long Range Booster X": {
+    "effect": "+50% Gun Dmg",
+    "element": "passive",
+    "ename": "Long-Range Booster X"
+  },
+  "Lullaby": {
+    "action": "ail",
+    "cost": 1014,
+    "effect": "85% Sleep",
+    "element": "mind",
+    "inherit": "mouth",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "M. Tea Party": {
+    "action": "ail",
+    "cost": 1014,
+    "effect": "85% Muddle, Charm",
+    "element": "mystic",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Mabufu": {
+    "cost": 1009,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mabufudyne": {
+    "acost": "20 Mag",
+    "cost": 1030,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mabufula": {
+    "cost": 1021,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Madou no Renkan Jyuusan Kizu": {
+    "action": "rapid",
+    "cost": 1001,
+    "effect": "x13 hits",
+    "element": "mystic",
+    "ename": "Thirteen Chain Wounds of Sorcery",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Magic Blast": {
+    "action": "shot",
+    "cost": 1005,
+    "element": "mystic",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Magic Save 1": {
+    "effect": "-10% MP Costs",
+    "element": "passive"
+  },
+  "Magic Save 2": {
+    "effect": "-20% MP Costs",
+    "element": "passive"
+  },
+  "Magic Save 3": {
+    "effect": "-30% MP Costs",
+    "element": "passive"
+  },
+  "Magic Save 4": {
+    "effect": "-40% MP Costs",
+    "element": "passive"
+  },
+  "Magic Seal": {
+    "action": "rapid",
+    "cost": 1006,
+    "effect": "x2 hits",
+    "element": "handgun",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Magic Shot": {
+    "action": "shot",
+    "element": "mystic",
+    "inherit": "none",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Magical Meteor": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "40% Paralysis, +70% Cooldown, +70% Incantation",
+    "element": "mystic",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Mahama": {
+    "cost": 1020,
+    "element": "expel",
+    "ename": "Manma",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mahamaon": {
+    "acost": "24 Mag",
+    "cost": 1040,
+    "effect": "10% Insta Death",
+    "element": "expel",
+    "ename": "Manmaon",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maharantandyne": {
+    "acost": "30 Mag",
+    "cost": 1040,
+    "effect": "70% Burn",
+    "element": "fire",
+    "inherit": "none",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maiden's Prayer": {
+    "cost": 1030,
+    "effect": "Revive with 100% HP",
+    "element": "recovery",
+    "inherit": "none",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Makajam": {
+    "action": "ail",
+    "cost": 1004,
+    "effect": "85% Mute",
+    "element": "mystic",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Makakaja": {
+    "cost": 1005,
+    "effect": "+8 Spell and Support, +32 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Makanda": {
+    "cost": 1003,
+    "effect": "-10 Spell and Support, -40 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Makarakarn": {
+    "cost": 1010,
+    "effect": "Repel next Magic Atk",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Makatora": {
+    "cost": 1020,
+    "effect": "Recover 10 MP",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Mamakakaja": {
+    "cost": 1010,
+    "effect": "+8 Spell and Support, +32 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Mamakanda": {
+    "cost": 1006,
+    "effect": "-10 Spell and Support, -40 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Mamudo": {
+    "cost": 1020,
+    "element": "death",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mamudoon": {
+    "acost": "24 Mag",
+    "cost": 1040,
+    "effect": "10% Insta Death",
+    "element": "death",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Marabufudyne": {
+    "acost": "300 Mag",
+    "cost": 1010,
+    "effect": "70% Freeze",
+    "element": "ice",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maragi": {
+    "cost": 1010,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maragidyne": {
+    "acost": "20 Mag",
+    "cost": 1030,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maragion": {
+    "cost": 1021,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Marakukaja": {
+    "cost": 1006,
+    "effect": "+5 Phys Def, +20 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Marakunda": {
+    "cost": 1004,
+    "effect": "-6 Phys Def, -24 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Maralagidyne": {
+    "acost": "300 Mag",
+    "cost": 1010,
+    "effect": "70% Burn",
+    "element": "fire",
+    "inherit": "none",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maramakakaja": {
+    "cost": 1025,
+    "effect": "Makakaja x4, 100% Engorged",
+    "element": "support",
+    "stat": "U"
+  },
+  "Mararakukaja": {
+    "cost": 1025,
+    "effect": "Rakukaja x4, 100% Engorged",
+    "element": "support",
+    "stat": "U"
+  },
+  "Marasamakaja": {
+    "cost": 1025,
+    "effect": "Samakaja x4, 100% Engorged",
+    "element": "support",
+    "stat": "U"
+  },
+  "Marasukukaja": {
+    "cost": 1025,
+    "effect": "Sukukaja x4, 100% Engorged",
+    "element": "support",
+    "stat": "U"
+  },
+  "Maratarukaja": {
+    "cost": 1025,
+    "effect": "Tarukaja x4, 100% Engorged",
+    "element": "support",
+    "stat": "U"
+  },
+  "Marazandyne": {
+    "acost": "300 Mag",
+    "cost": 1010,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maraziodyne": {
+    "acost": "300 Mag",
+    "cost": 1010,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Marin Karin": {
+    "action": "ail",
+    "cost": 1004,
+    "effect": "85% Charm",
+    "element": "mind",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Masamakaja": {
+    "cost": 1006,
+    "effect": "+5 Magic Def, +20 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Masamanda": {
+    "cost": 1004,
+    "effect": "-6 Magic Def, -24 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Masukukaja": {
+    "cost": 1006,
+    "effect": "+15 Crit and Crit Def, +60 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Masukunda": {
+    "cost": 1004,
+    "effect": "-20 Crit and Crit Def, -80 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Matarukaja": {
+    "cost": 1010,
+    "effect": "+8 Close and Long Range, +32 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Matarunda": {
+    "cost": 1006,
+    "effect": "-10 Close and Long Range, -40 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Mazan": {
+    "cost": 1012,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mazandyne": {
+    "acost": "20 Mag",
+    "cost": 1035,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mazanma": {
+    "cost": 1027,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mazio": {
+    "cost": 1011,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Maziodyne": {
+    "acost": "20 Mag",
+    "cost": 1035,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mazionga": {
+    "cost": 1024,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Media": {
+    "cost": 1012,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Mediarahan": {
+    "cost": 1026,
+    "effect": "Recover large HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Mediarama": {
+    "cost": 1017,
+    "effect": "Recover medium HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Meditation": {
+    "cost": 2030,
+    "effect": "Absorb HP and MP",
+    "element": "almighty",
+    "inherit": "sacri",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Mega Strike": {
+    "action": "rush",
+    "cost": 8,
+    "element": "mind",
+    "inherit": "thrust",
+    "stat": "Cp",
+    "target": "Foe Line"
+  },
+  "Megido": {
+    "cost": 1020,
+    "element": "almighty",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Megido Fire I": {
+    "acost": "180 Mag",
+    "action": "shot",
+    "cost": 1040,
+    "effect": "Dmg cannot cancel cast",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "CLS",
+    "target": "Foe Line"
+  },
+  "Megido Fire II": {
+    "acost": "180 Mag",
+    "action": "shot",
+    "cost": 1040,
+    "effect": "Dmg cannot cancel cast",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "CLS",
+    "target": "Foe Front"
+  },
+  "Megidola": {
+    "acost": "40 Mag",
+    "cost": 1050,
+    "element": "almighty",
+    "ename": "Megidora",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Megidolaon": {
+    "acost": "200 Mag",
+    "cost": 1080,
+    "element": "almighty",
+    "ename": "Megidoraon",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Mepatra": {
+    "cost": 1010,
+    "effect": "Remove Sleep, Bind, Blindness",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Mighty Swing of Destruction": {
+    "effect": "+20% Melee Dmg",
+    "element": "passive"
+  },
+  "Mighty Swing of the Warrior": {
+    "effect": "+10% Melee Dmg",
+    "element": "passive"
+  },
+  "Miracle Sword": {
+    "action": "rush",
+    "cost": 8,
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Misfortune Purification 1": {
+    "effect": "+15 Crit Def, +50 Ailment Res, 1% chance to Endure",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Misfortune Purification 2": {
+    "effect": "+30 Crit Def, +100 Ailment Res, 3% chance to Endure",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Misfortune Purification 3": {
+    "effect": "+45 Crit Def, +150 Ailment Res, 5% chance to Endure",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Misfortune Purification 4": {
+    "effect": "+60 Crit Def, +200 Ailment Res, 7% chance to Endure",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Morning Star's Light": {
+    "acost": "25 MP, 400 Mag",
+    "action": "fspin",
+    "cost": 25,
+    "effect": "Dmg cannot cancel cast",
+    "element": "almighty",
+    "inherit": "sacri",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Mudo": {
+    "cost": 1010,
+    "element": "death",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Mudoon": {
+    "acost": "12 Mag",
+    "cost": 1030,
+    "effect": "10% Insta Death",
+    "element": "death",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Myriad Arrows": {
+    "action": "rapid",
+    "cost": 1001,
+    "effect": "x12 hits",
+    "element": "handgun",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Naga Loca": {
+    "cost": 1012,
+    "effect": "Tarukaja + Makakaja",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Nervous Edge": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "85% Bind",
+    "element": "nerve",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Noble": {
+    "effect": "+20% Limit Break Dmg, +10% Tech Dmg",
+    "element": "passive",
+    "inherit": "none"
+  },
+  "Null Death": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Negate next 3 Death Atks",
+    "element": "defend",
+    "ename": "Curse Null",
+    "target": "1 Ally"
+  },
+  "Null Elec": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Negate next 3 Elec Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Null Expel": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Negate next 3 Expel Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Null Fire": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Negate next 3 Fire Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Null Force": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Negate next 3 Force Atks",
+    "element": "defend",
+    "ename": "Force Null",
+    "target": "1 Ally"
+  },
+  "Null Ice": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Negate next 3 Ice Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Numb Bite": {
+    "action": "rush",
+    "cost": 5,
+    "effect": "70% Paralysis",
+    "element": "charge",
+    "inherit": "fang",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Occult Flash": {
+    "acost": "200 Mag",
+    "action": "fspin",
+    "cost": 25,
+    "effect": "20% Insta Death, Dmg cannot cancel cast",
+    "element": "almighty",
+    "ename": "Mystery Flash",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Overkiller 1": {
+    "effect": "+10% Limit Break Dmg and Change, +10 Crit",
+    "element": "passive"
+  },
+  "Overkiller 2": {
+    "effect": "+20% Limit Break Dmg and Change, +20 Crit",
+    "element": "passive"
+  },
+  "Overkiller 3": {
+    "effect": "+30% Limit Break Dmg and Change, +30 Crit",
+    "element": "passive"
+  },
+  "Palm Blast": {
+    "acost": "30 MP",
+    "action": "atk",
+    "cost": 30,
+    "effect": "100% Shock, Only knockback cancels cast",
+    "element": "almighty",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Panic Voice": {
+    "action": "ail",
+    "cost": 1012,
+    "effect": "85% Panic",
+    "element": "mind",
+    "inherit": "mouth",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Paral Eyes": {
+    "action": "ail",
+    "cost": 1006,
+    "effect": "85% Paralysis",
+    "element": "nerve",
+    "inherit": "eyes",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Paraladi": {
+    "cost": 1005,
+    "effect": "Remove Paralyze",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Patra": {
+    "cost": 1005,
+    "effect": "Remove Sleep, Bind, Blindness",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Patrecarm": {
+    "cost": 1100,
+    "effect": "Revive with 100% HP and negate Dmg for 10s",
+    "element": "recovery",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Penta Wall": {
+    "cost": 1010,
+    "effect": "Makarakarn x1",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U"
+  },
+  "Petra Eyes": {
+    "action": "ail",
+    "cost": 1010,
+    "effect": "85% Stone",
+    "element": "mystic",
+    "inherit": "eyes",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Petradi": {
+    "cost": 1005,
+    "effect": "Remove Stone",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Petrify Needle": {
+    "action": "rapid",
+    "cost": 1010,
+    "effect": "x3 hits, 70% Stone",
+    "element": "penetrate",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Phlegethon": {
+    "action": "rush",
+    "cost": 8,
+    "effect": "70% Burn",
+    "element": "fire",
+    "ename": "Phlegethon (Demon)",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Poison Bite": {
+    "action": "rush",
+    "cost": 4,
+    "effect": "70% Poison",
+    "element": "charge",
+    "inherit": "fang",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Poison Counter": {
+    "effect": "Counter next Atk or Rush Atk with 100% Poison",
+    "element": "defend"
+  },
+  "Poison Gas Breath": {
+    "action": "fspin",
+    "cost": 11,
+    "effect": "70% Poison",
+    "element": "mystic",
+    "inherit": "mouth",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Poison Needle": {
+    "action": "rapid",
+    "cost": 1002,
+    "effect": "x2 hits, 70% Poison",
+    "element": "penetrate",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Poison Scratch": {
+    "action": "fspin",
+    "cost": 9,
+    "effect": "70% Poison",
+    "element": "slash",
+    "inherit": "claw",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Posumudi": {
+    "cost": 1005,
+    "effect": "Remove Poison, Plague",
+    "element": "recovery",
+    "ename": "Posmundi",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Power Save 1": {
+    "effect": "-10% HP Costs",
+    "element": "passive"
+  },
+  "Power Save 2": {
+    "effect": "-20% HP Costs",
+    "element": "passive"
+  },
+  "Power Save 3": {
+    "effect": "-30% HP Costs",
+    "element": "passive"
+  },
+  "Power Save 4": {
+    "effect": "-40% HP Costs",
+    "element": "passive"
+  },
+  "Prominence": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "70% Burn",
+    "element": "fire",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Pulinpa": {
+    "action": "ail",
+    "cost": 1003,
+    "effect": "85% Panic",
+    "element": "mind",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Punch": {
+    "action": "atk",
+    "element": "blunt",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Purity and Poison": {
+    "acost": "10 Mag",
+    "cost": 1014,
+    "effect": "100% Curse, 90% Charm, 85% Sleep, 80% Mute",
+    "element": "mind",
+    "inherit": "none",
+    "stat": "P",
+    "target": "Foe Front"
+  },
+  "Pyriphlegethon": {
+    "action": "rush",
+    "cost": 12,
+    "effect": "70% Burn",
+    "element": "fire",
+    "ename": "Pyriphlegeton",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Rage": {
+    "action": "fspin",
+    "cost": 11,
+    "element": "charge",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Rakukaja": {
+    "cost": 1003,
+    "effect": "+5 Phys Def, +20 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Rakunda": {
+    "cost": 1002,
+    "effect": "-6 Phys Def, -24 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Randomizer": {
+    "acost": "20 Mag",
+    "cost": 1020,
+    "effect": "Tarunda, Rakunda, Makanda, Samanda",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Rapid Booster": {
+    "effect": "+25% Rapid Dmg",
+    "element": "passive"
+  },
+  "Rapid Booster X": {
+    "effect": "+50% Rapid Dmg",
+    "element": "passive"
+  },
+  "Recarm": {
+    "cost": 1020,
+    "effect": "Revive with 25% HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Recarmdora": {
+    "cost": 1020,
+    "effect": "Revive with 40% HP, kills user",
+    "element": "recovery",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Reincarnation": {
+    "acost": "200 Mag",
+    "cost": 1040,
+    "effect": "Revive with 100% HP and no EXP loss",
+    "element": "recovery",
+    "inherit": "none",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Repel Elec": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Repel next 3 Elec Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Repel Fire": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Repel next 3 Fire Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Repel Force": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Repel next 3 Force Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Repel Ice": {
+    "acost": "10 Mag",
+    "cost": 1007,
+    "effect": "Repel next 3 Ice Atks",
+    "element": "defend",
+    "target": "1 Ally"
+  },
+  "Rising Upper": {
+    "action": "fspin",
+    "cost": 7,
+    "element": "blunt",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Romantic Hell": {
+    "action": "atk",
+    "effect": "x1-3 hits",
+    "element": "slash",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Rush Booster": {
+    "effect": "+25% Rush Dmg",
+    "element": "passive"
+  },
+  "Rush Booster X": {
+    "effect": "+50% Rush Dmg",
+    "element": "passive"
+  },
+  "SR Full Booster": {
+    "effect": "+25% Shot and Rapid Dmg",
+    "element": "passive",
+    "ename": "SR Full Booster 1",
+    "inherit": "none"
+  },
+  "Samakaja": {
+    "cost": 1003,
+    "effect": "+5 Magic Def, +20 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Samanda": {
+    "cost": 1002,
+    "effect": "-6 Magic Def, -24 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Samarecarm": {
+    "cost": 1030,
+    "effect": "Revive with 50% HP",
+    "element": "recovery",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Sanctus": {
+    "cost": 1030,
+    "effect": "+1 HP and MP Regen",
+    "element": "recovery",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Satisfaction 1": {
+    "effect": "+150 Crit Def",
+    "element": "passive"
+  },
+  "Satisfaction 2": {
+    "effect": "+200 Crit Def",
+    "element": "passive"
+  },
+  "Satisfaction 3": {
+    "effect": "+250 Crit Def",
+    "element": "passive"
+  },
+  "Scar Plunge": {
+    "acost": "15 Mag",
+    "action": "shot",
+    "cost": 1016,
+    "effect": "85% Stun",
+    "element": "penetrate",
+    "stat": "L",
+    "target": "Foe Circle"
+  },
+  "Sea of Chaos": {
+    "acost": "10 MP, 100 Mag",
+    "action": "spin",
+    "cost": 20,
+    "effect": "30% Panic, +50% Dmg to opposite Align",
+    "element": "almighty",
+    "inherit": "none",
+    "stat": "Cp",
+    "target": "Foe Circle"
+  },
+  "Self-Explosion": {
+    "action": "rush",
+    "cost": 1,
+    "effect": "Kills user",
+    "element": "suicide",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Seraphic Lore": {
+    "acost": "250 Mag",
+    "action": "spin",
+    "cost": 1010,
+    "effect": "Dmg scales with Support",
+    "element": "almighty",
+    "inherit": "sacri",
+    "stat": "U",
+    "target": "Foe Circle"
+  },
+  "Sexy Dance": {
+    "action": "ail",
+    "cost": 1014,
+    "effect": "85% Charm",
+    "element": "mind",
+    "inherit": "maiden",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "Sexy Eyes": {
+    "action": "ail",
+    "cost": 1008,
+    "effect": "85% Charm",
+    "element": "mind",
+    "inherit": "eyes",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Shadow-Sewing Waltz": {
+    "action": "spin",
+    "cost": 8,
+    "effect": "100% Stun",
+    "element": "slash",
+    "ename": "Shadow Sewing Waltz",
+    "inherit": "none",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Shibaboo": {
+    "action": "ail",
+    "cost": 1003,
+    "effect": "85% Bind",
+    "element": "nerve",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Shining Eye": {
+    "acost": "20 MP",
+    "cost": 1018,
+    "effect": "18% Insta Death, 100% Stone",
+    "element": "death",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Shockwave": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Shot Booster": {
+    "effect": "+25% Shot Dmg",
+    "element": "passive"
+  },
+  "Shot Booster X": {
+    "effect": "+50% Shot Dmg",
+    "element": "passive"
+  },
+  "Silent Eyes": {
+    "action": "ail",
+    "cost": 1008,
+    "effect": "85% Mute",
+    "element": "mystic",
+    "inherit": "eyes",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Silver Arrow": {
+    "action": "rapid",
+    "cost": 1003,
+    "effect": "x3 hits",
+    "element": "expel",
+    "inherit": "needle",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Silver Moon Protection": {
+    "cost": 1008,
+    "effect": "Makakaja x1, Ailment Res up",
+    "element": "support",
+    "ename": "Protection of the Silver Moon",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Slash": {
+    "action": "atk",
+    "element": "slash",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Slash Combo": {
+    "action": "atk",
+    "effect": "x1-3 hits",
+    "element": "slash",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Solidity 1": {
+    "effect": "+15 Crit Def",
+    "element": "passive"
+  },
+  "Solidity 2": {
+    "effect": "+30 Crit Def",
+    "element": "passive"
+  },
+  "Solidity 3": {
+    "effect": "+45 Crit Def",
+    "element": "passive"
+  },
+  "Solidity 4": {
+    "effect": "+60 Crit Def",
+    "element": "passive"
+  },
+  "Sonic Boom": {
+    "action": "spin",
+    "cost": 12,
+    "effect": "70% Stun",
+    "element": "force",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Soul Suck": {
+    "action": "rush",
+    "cost": 3,
+    "effect": "Absorb 30% MP Dmg",
+    "element": "mystic",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Spear": {
+    "action": "rush",
+    "cost": 15,
+    "element": "penetrate",
+    "ename": "Spear (Demon)",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Spell Booster": {
+    "effect": "+25% Magic Dmg",
+    "element": "passive"
+  },
+  "Spell Booster X": {
+    "effect": "+50% Magic Dmg",
+    "element": "passive"
+  },
+  "Spin Booster": {
+    "effect": "+25% Spin Dmg",
+    "element": "passive"
+  },
+  "Spin Booster X": {
+    "effect": "+50% Spin Dmg",
+    "element": "passive"
+  },
+  "Spin Slash": {
+    "action": "fspin",
+    "cost": 8,
+    "element": "slash",
+    "ename": "Spin slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Suicide Assault": {
+    "action": "rush",
+    "cost": 1,
+    "effect": "Kills user",
+    "element": "suicide",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Sukukaja": {
+    "cost": 1003,
+    "effect": "+15 Crit and Crit Def, +60 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Sukunda": {
+    "cost": 1002,
+    "effect": "-20 Crit and Crit Def, -80 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Tackle": {
+    "action": "atk",
+    "element": "charge",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Tailwhip": {
+    "action": "atk",
+    "element": "blunt",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Tarukaja": {
+    "cost": 1005,
+    "effect": "+8 Close and Long Range, +32 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Tarunda": {
+    "cost": 1003,
+    "effect": "-10 Close and Long Range, -40 Max",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Foe"
+  },
+  "Tentarafoo": {
+    "acost": "20 Mag",
+    "cost": 1020,
+    "effect": "80% Panic",
+    "element": "mind",
+    "stat": "P",
+    "target": "Foe Area"
+  },
+  "Tetraja": {
+    "cost": 1010,
+    "effect": "Negate next 3 Expel or Death Atks",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "Tetrakarn": {
+    "cost": 1010,
+    "effect": "Repel next Phys Atk",
+    "element": "support",
+    "stat": "U",
+    "target": "1 Ally"
+  },
+  "The Essence of Awareness": {
+    "effect": "-40% Cooldown",
+    "element": "passive"
+  },
+  "The Great Drunk": {
+    "acost": "10 Mag",
+    "cost": 1015,
+    "effect": "100% Panic, 100% Sleep, 100% Muddle, 100% Drunk",
+    "element": "mind",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Foe Area"
+  },
+  "The Protection of the Four Beasts": {
+    "cost": 1010,
+    "effect": "Rakukaja + Samakaja",
+    "element": "support",
+    "inherit": "none",
+    "stat": "U",
+    "target": "Ally Area"
+  },
+  "Thrust": {
+    "action": "atk",
+    "element": "charge",
+    "inherit": "none",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Thunderous Shout": {
+    "effect": "Counter next Atk or Rush Atk with 100% Shock",
+    "element": "defend"
+  },
+  "Tornado": {
+    "acost": "15 Mag",
+    "action": "spin",
+    "cost": 1015,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "Foe Circle"
+  },
+  "Twin Slash": {
+    "action": "rush",
+    "cost": 4,
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "1 Foe"
+  },
+  "Unleashed Power": {
+    "action": "fspin",
+    "cost": 13,
+    "element": "blunt",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Vacuum Blade": {
+    "action": "spin",
+    "cost": 14,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Vacuum Wave": {
+    "acost": "100 Mag",
+    "action": "shot",
+    "cost": 1050,
+    "effect": "Only Knockback cancels cast",
+    "element": "slash",
+    "ename": "Void Slash",
+    "stat": "C",
+    "target": "Foe Area"
+  },
+  "Vamp Cyclone": {
+    "action": "spin",
+    "cost": 1020,
+    "effect": "Absorb 50% Dmg",
+    "element": "mystic",
+    "stat": "C",
+    "target": "Foe Circle"
+  },
+  "Venom Zapper": {
+    "action": "rush",
+    "cost": 10,
+    "effect": "70% Poison",
+    "element": "slash",
+    "inherit": "weapon",
+    "stat": "C",
+    "target": "Foe Line"
+  },
+  "Vinyl Strike": {
+    "action": "rush",
+    "cost": 1,
+    "effect": "Kills user",
+    "element": "suicide",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Area"
+  },
+  "Violent Wind": {
+    "action": "fspin",
+    "cost": 11,
+    "effect": "70% Stun",
+    "element": "force",
+    "inherit": "thrust",
+    "stat": "C",
+    "target": "Foe Front"
+  },
+  "Wing Flap": {
+    "action": "rapid",
+    "cost": 1002,
+    "effect": "x2 hits, 70% Stun",
+    "element": "force",
+    "inherit": "wings",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Wing Flap (Strong)": {
+    "action": "rapid",
+    "cost": 1010,
+    "effect": "x3 hits, 70% Stun",
+    "element": "force",
+    "inherit": "wings",
+    "stat": "L",
+    "target": "1 Foe"
+  },
+  "Woodland Thread": {
+    "action": "shot",
+    "cost": 5,
+    "effect": "Dmg cannot cancel cast",
+    "element": "penetrate",
+    "ename": "Thread of the Forest",
+    "stat": "L",
+    "target": "Foe Circle"
+  },
+  "Zan": {
+    "cost": 1010,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Zandyne": {
+    "acost": "10 Mag",
+    "cost": 1028,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Zanma": {
+    "cost": 1021,
+    "effect": "70% Stun",
+    "element": "force",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Zio": {
+    "cost": 1009,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Ziodyne": {
+    "acost": "10 Mag",
+    "cost": 1022,
+    "effect": "70% Shock",
+    "element": "elec",
+    "ename": "Ziondyne",
+    "stat": "P",
+    "target": "1 Foe"
+  },
+  "Zionga": {
+    "cost": 1018,
+    "effect": "70% Shock",
+    "element": "elec",
+    "stat": "P",
+    "target": "1 Foe"
+  }
+}

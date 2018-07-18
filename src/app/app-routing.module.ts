@@ -27,6 +27,11 @@ const appRoutes: Routes = [
     data: { appName: 'Shin Megami Tensei NINE' }
   },
   {
+    path: 'smtim',
+    loadChildren: './smtim/compendium.module#CompendiumModule',
+    data: { appName: 'Shin Megami Tensei IMAGINE' }
+  },
+  {
     path: 'smt3',
     loadChildren: './smt3/compendium.module#CompendiumModule',
     data: { appName: 'Shin Megami Tensei III: Nocturne' }

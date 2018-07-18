@@ -33,7 +33,6 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <app-demon-skills
         [title]="'Innate Skills'"
-        [hasLvl]="false"
         [hasTarget]="true"
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"

@@ -32,6 +32,15 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     ]
   },
   {
+    game: 'Shin Megami Tensei IMAGINE',
+    tool: 'smtim',
+    srcs: [
+      'https://wikiwiki.jp/imagine/',
+      'http://megatenonline.wiki.fc2.com/wiki/',
+      'http://megaten.sesshou.com'
+    ]
+  },
+  {
     game: 'Shin Megami Tensei III: Nocturne',
     abbr: 'Shin Megami Tensei Nocturne',
     tool: 'smt3',
