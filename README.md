@@ -22,6 +22,7 @@ Fusion tool framework for Megami Tensei games.
 * [Shin Megami Tensei II (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smt2)
 * [Shin Megami Tensei If... (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smtif)
 * [Shin Megami Tensei NINE (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smt9)
+* [Shin Megami Tensei IMAGINE](https://aqiu384.github.io/megaten-fusion-tool/smtim)
 * [Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3)
 * [Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
 * [Shin Megami Tensei: Strange Journey Redux](https://aqiu384.github.io/megaten-fusion-tool/smtdsj)
