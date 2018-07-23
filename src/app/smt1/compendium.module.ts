@@ -39,6 +39,10 @@ for (const rs of COMP_CONFIG_JSON['species']) {
   }
 }
 
+for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
+  demon['resists'] = demon['resists'].slice(0, 7).concat(demon['resists'].slice(8));
+}
+
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei',
   appCssClasses: ['smtnes', 'smt1'],

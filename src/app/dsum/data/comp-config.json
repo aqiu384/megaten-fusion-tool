@@ -1,5 +1,6 @@
 {
   "baseAtks": [
+    "NoH",
     "CP",
     "P.Atk",
     "M.Atk",
@@ -20,36 +21,47 @@
   ],
   "resistCodes": {
     "d": -1100,
+    "D": -1050,
+    "4": -1020,
+    "2": -200,
     "r": -100,
+    "R": -50,
     "n": 0,
+    "1": 10,
     "s": 50,
+    "7": 70,
     "-": 100,
-    "w": 1150
+    "w": 1150,
+    "3": 1300
   },
   "resistElems": [
-    "slash",
-    "spear",
+    "attack",
     "rush",
     "tech",
-    "gun",
+    "slash",
     "fire",
     "ice",
     "elec",
     "force",
     "psy",
+    "mind",
     "expel",
     "death",
-    "mind",
-    "nerve",
-    "curse"
+    "curse",
+    "bind",
+    "nerve"
   ],
   "skillElems": [
+    "sword",
+    "spear",
+    "thrown",
+    "gun",
     "almighty",
     "recovery",
     "support",
     "special",
-    "phys",
     "ailment",
+    "phys",
     "quad",
     "elem",
     "none"

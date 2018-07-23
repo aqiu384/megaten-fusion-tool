@@ -1,9 +1,15 @@
 {
   "Acid Breath": {
     "cost": 6,
-    "element": "support",
     "effect": "Rakunda + Sukunda",
+    "element": "support",
     "target": "All Foes"
+  },
+  "Advent of Ce Acatl": {
+    "cost": 7,
+    "effect": "Revive with all HP, 1 use",
+    "element": "recovery",
+    "target": "All Allies"
   },
   "Agi": {
     "cost": 4,
@@ -24,107 +30,107 @@
     "target": "One Foe"
   },
   "Agility Bonus": {
-    "element": "passive",
-    "effect": "Agility +5"
+    "effect": "Agility +5",
+    "element": "passive"
   },
   "Agility Gain": {
-    "element": "passive",
-    "effect": "Agility +10"
+    "effect": "Agility +10",
+    "element": "passive"
   },
   "Agility Surge": {
-    "element": "passive",
-    "effect": "Agility +15"
+    "effect": "Agility +15",
+    "element": "passive"
   },
   "Allure": {
     "cost": 6,
-    "element": "death",
     "effect": "35% Charm",
+    "element": "death",
     "power": 110,
     "target": "All Foes"
   },
   "Ameno Murakumo": {
     "cost": 6,
-    "element": "force",
     "effect": "Tarukaja, Damage relative to Strength",
+    "element": "force",
     "power": 180,
     "target": "One Foe"
   },
   "Amrita": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove all ailments",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Apocalypse": {
     "cost": 8,
-    "element": "almighty",
     "effect": "30% Mute",
+    "element": "almighty",
     "power": 110,
     "target": "All Foes"
   },
   "Arms Master": {
-    "element": "passive",
-    "effect": "Phys damage +15%, Phys hit +15%"
+    "effect": "Phys damage +15%, Phys hit +15%",
+    "element": "passive"
   },
   "Assassin": {
-    "element": "passive",
-    "effect": "Single-target skill damage +10%"
+    "effect": "Single-target skill damage +10%",
+    "element": "passive"
   },
   "Auto-Rakukaja": {
-    "element": "passive",
-    "effect": "Begin battle with Rakukaja"
+    "effect": "Begin battle with Rakukaja",
+    "element": "passive"
   },
   "Auto-Rakunda": {
-    "element": "passive",
-    "effect": "Start battle with Rakunda"
+    "effect": "Start battle with Rakunda",
+    "element": "passive"
   },
   "Auto-Sukukaja": {
-    "element": "passive",
-    "effect": "Begin battle with Sukukaja"
+    "effect": "Begin battle with Sukukaja",
+    "element": "passive"
   },
   "Auto-Sukunda": {
-    "element": "passive",
-    "effect": "Start battle with Sukunda"
+    "effect": "Start battle with Sukunda",
+    "element": "passive"
   },
   "Auto-Tarukaja": {
-    "element": "passive",
-    "effect": "Begin battle with Tarukaja"
+    "effect": "Begin battle with Tarukaja",
+    "element": "passive"
   },
   "Auto-Tarunda": {
-    "element": "passive",
-    "effect": "Start battle with Tarunda"
+    "effect": "Start battle with Tarunda",
+    "element": "passive"
   },
   "Avatar": {
-    "element": "passive",
-    "effect": "Revive once per battle with 200 HP, Recover 40% HP between waves"
+    "effect": "Revive once per battle with 200 HP, Recover 40% HP between waves",
+    "element": "passive"
   },
   "Barong Dance": {
     "cost": 7,
-    "element": "recovery",
     "effect": "Tarukaja + Rakukaja + Sukukaja, 3 uses",
+    "element": "recovery",
     "power": 95,
     "target": "All Allies"
   },
   "Barrier": {
     "cost": 4,
-    "element": "support",
     "effect": "Nullify all ailments for 3 turns",
+    "element": "support",
     "target": "All Allies"
   },
   "Barrier Break": {
     "cost": 3,
-    "element": "support",
     "effect": "Remove Barrier",
+    "element": "support",
     "target": "All Foes"
   },
   "Baton Pass": {
     "cost": 3,
-    "element": "support",
-    "effect": "Pass without consuming Press Turn"
+    "effect": "Pass without consuming Press Turn",
+    "element": "support"
   },
   "Berserker": {
-    "element": "passive",
-    "effect": "Damage dealt +10%, Damage received +20%"
+    "effect": "Damage dealt +10%, Damage received +20%",
+    "element": "passive"
   },
   "Berserker God": {
     "cost": 6,
@@ -133,44 +139,44 @@
     "target": "One Foe"
   },
   "Bind Pursuit": {
-    "element": "passive",
-    "effect": "Damage +30% to enemies with Bind"
+    "effect": "Damage +30% to enemies with Bind",
+    "element": "passive"
   },
   "Bind Voice": {
     "cost": 6,
-    "element": "ailment",
     "effect": "2-4 hits, 30% Bind",
+    "element": "ailment",
     "target": "Multi Foes"
   },
   "Binding Bite": {
     "cost": 5,
-    "element": "phys",
     "effect": "35% Bind",
+    "element": "phys",
     "power": 160,
     "target": "One Foe"
   },
   "Binding Claw": {
     "cost": 5,
-    "element": "phys",
     "effect": "40% Bind",
+    "element": "phys",
     "power": 120,
     "target": "One Foe"
   },
   "Binge Eating": {
     "cost": 6,
-    "element": "phys",
     "effect": "Drain 40% damage dealt",
+    "element": "phys",
     "power": 140,
     "target": "One Foe"
   },
   "Bloody Glee": {
-    "element": "passive",
-    "effect": "Critical rate +15%"
+    "effect": "Critical rate +15%",
+    "element": "passive"
   },
   "Bolt Storm": {
     "cost": 5,
-    "element": "elec",
     "effect": "2-4 hits",
+    "element": "elec",
     "power": 50,
     "target": "Multi Foes"
   },
@@ -194,89 +200,89 @@
   },
   "Charge": {
     "cost": 6,
-    "element": "support",
-    "effect": "Next physical attack +125% damage"
+    "effect": "Next physical attack +125% damage",
+    "element": "support"
   },
   "Charged Rebellion": {
     "cost": 6,
-    "element": "support",
-    "effect": "Charge + Rebellion"
+    "effect": "Charge + Rebellion",
+    "element": "support"
   },
   "Charm Bite": {
     "cost": 5,
-    "element": "phys",
     "effect": "40% Charm",
+    "element": "phys",
     "power": 120,
     "target": "One Foe"
   },
   "Charm Pursuit": {
-    "element": "passive",
-    "effect": "Damage +30% to enemies with Charm"
+    "effect": "Damage +30% to enemies with Charm",
+    "element": "passive"
   },
   "Charmdi": {
     "cost": 3,
-    "element": "recovery",
     "effect": "Remove Charm, Charm resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Chomp": {
     "cost": 5,
-    "element": "phys",
     "effect": "Drain 25% damage dealt",
+    "element": "phys",
     "power": 120,
     "target": "One Foe"
   },
   "Closedi": {
     "cost": 3,
-    "element": "recovery",
     "effect": "Remove Mute, Mute resistance by +30% for 3 turns",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Cold World": {
     "cost": 7,
-    "element": "ice",
     "effect": "Rakunda",
+    "element": "ice",
     "power": 130,
     "target": "All Foes"
   },
   "Concentrate": {
     "cost": 6,
-    "element": "support",
-    "effect": "Next magical attack +125% damage"
+    "effect": "Next magical attack +125% damage",
+    "element": "support"
   },
   "Counter": {
-    "element": "passive",
     "effect": "50% chance of counter upon receiving physical damage",
+    "element": "passive",
     "power": 50
   },
   "Counterstrike": {
-    "element": "passive",
     "effect": "50% chance of counter upon receiving physical damage",
+    "element": "passive",
     "power": 100
   },
   "Cupid's Bow": {
     "cost": 8,
-    "element": "almighty",
     "effect": "45% Charm",
+    "element": "almighty",
     "power": 190,
     "target": "One Foe"
   },
   "Curse": {
     "cost": 6,
-    "element": "ailment",
     "effect": "1-4 hits, 40% Curse",
+    "element": "ailment",
     "target": "Multi Foes"
   },
   "Cursedi": {
     "cost": 3,
-    "element": "recovery",
     "effect": "Remove Curse, Curse resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Dark Sword": {
     "cost": 5,
-    "element": "phys",
     "effect": "40% Mute",
+    "element": "phys",
     "power": 120,
     "target": "One Foe"
   },
@@ -287,61 +293,61 @@
     "target": "One Foe"
   },
   "Death Amp": {
-    "element": "passive",
-    "effect": "Death damage +25%"
+    "effect": "Death damage +25%",
+    "element": "passive"
   },
   "Death Boost": {
-    "element": "passive",
-    "effect": "Death damage +15%"
+    "effect": "Death damage +15%",
+    "element": "passive"
   },
   "Deathbound": {
     "cost": 4,
-    "element": "phys",
     "effect": "2-3 hits",
+    "element": "phys",
     "power": 55,
     "target": "Multi Foes"
   },
   "Deathtouch": {
     "cost": 6,
-    "element": "almighty",
     "effect": "Drain 40% damage dealt",
+    "element": "almighty",
     "power": 140,
     "target": "One Foe"
   },
   "Debilitate": {
     "cost": 8,
-    "element": "support",
     "effect": "Tarunda + Rakunda + Sukunda",
+    "element": "support",
     "target": "All Foes"
   },
   "Dekaja": {
     "cost": 5,
-    "element": "support",
     "effect": "Remove all -kaja effects",
+    "element": "support",
     "target": "All Foes"
   },
   "Dekunda": {
     "cost": 5,
-    "element": "support",
     "effect": "Remove all -kundu effects",
+    "element": "support",
     "target": "All Allies"
   },
   "Desolate": {
     "cost": 5,
-    "element": "ailment",
     "effect": "70% Weak",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Desolateon": {
     "cost": 6,
-    "element": "ailment",
     "effect": "80% Weak",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Desperate Blow": {
     "cost": 7,
-    "element": "phys",
     "effect": "Remove 10% own HP",
+    "element": "phys",
     "power": 170,
     "target": "One Foe"
   },
@@ -371,97 +377,101 @@
   },
   "Die for Me!": {
     "cost": 7,
-    "element": "death",
     "effect": "100% instant death, 1 use",
+    "element": "death",
     "target": "One Foe"
   },
   "Discord": {
     "cost": 3,
-    "element": "support",
     "effect": "Remove Charge and Concentrate",
+    "element": "support",
     "target": "All Foes"
   },
   "Disturbance": {
-    "element": "passive",
-    "effect": "Ailment success rate +10%"
+    "effect": "Ailment success rate +10%",
+    "element": "passive"
   },
   "Dodge Phys": {
-    "element": "passive",
-    "effect": "Phys avoid +10%"
+    "effect": "Phys avoid +10%",
+    "element": "passive"
+  },
+  "Draconic Reaction": {
+    "effect": "Phys hit +15%, Phys avoid +15%",
+    "element": "passive"
   },
   "Drain Elec": {
-    "element": "passive",
-    "effect": "Drain Elec damage"
+    "effect": "Drain Elec damage",
+    "element": "passive"
   },
   "Drain Expel": {
-    "element": "passive",
-    "effect": "Drain Expel damage"
+    "effect": "Drain Expel damage",
+    "element": "passive"
   },
   "Drain Fire": {
-    "element": "passive",
-    "effect": "Drain Fire damage"
+    "effect": "Drain Fire damage",
+    "element": "passive"
   },
   "Drain Ice": {
-    "element": "passive",
-    "effect": "Drain Ice damage"
+    "effect": "Drain Ice damage",
+    "element": "passive"
   },
   "Drain Phys": {
-    "element": "passive",
-    "effect": "Drain Phys damage"
+    "effect": "Drain Phys damage",
+    "element": "passive"
   },
   "Drain Stance": {
-    "element": "passive",
-    "effect": "Enemy loses one more Press Turn when ally Drains attack"
+    "effect": "Enemy loses one more Press Turn when ally Drains attack",
+    "element": "passive"
   },
   "Elec Amp": {
-    "element": "passive",
-    "effect": "Elec damage +25%"
+    "effect": "Elec damage +25%",
+    "element": "passive"
   },
   "Elec Boost": {
-    "element": "passive",
-    "effect": "Elec damage +15%"
+    "effect": "Elec damage +15%",
+    "element": "passive"
   },
   "Emperor's Mandate": {
-    "element": "passive",
-    "effect": "Phys hit +20%, Phys Pierce"
+    "effect": "Phys hit +20%, Phys Pierce",
+    "element": "passive"
   },
   "Endure": {
-    "element": "passive",
-    "effect": "Revive once per battle with 1 HP"
+    "effect": "Revive once per battle with 1 HP",
+    "element": "passive"
   },
   "Enduring Soul": {
-    "element": "passive",
-    "effect": "Revive once per battle with 200 HP"
+    "effect": "Revive once per battle with 200 HP",
+    "element": "passive"
   },
   "Energy Drain": {
     "cost": 7,
-    "element": "almighty",
     "effect": "Drain 25% damage dealt and 1 MP",
+    "element": "almighty",
     "power": 120,
     "target": "One Foe"
   },
   "Evade Phys": {
-    "element": "passive",
-    "effect": "Phys avoid +20%"
+    "effect": "Phys avoid +20%",
+    "element": "passive"
   },
   "Evil Gaze": {
     "cost": 4,
-    "element": "death",
     "effect": "2-4 hits",
+    "element": "death",
     "power": 40,
     "target": "Multi Foes"
   },
   "Expel Amp": {
-    "element": "passive",
-    "effect": "Expel damage +25%"
+    "effect": "Expel damage +25%",
+    "element": "passive"
   },
   "Expel Boost": {
-    "element": "passive",
-    "effect": "Expel damage +15%"
+    "effect": "Expel damage +15%",
+    "element": "passive"
   },
   "Fast Heal": {
-    "element": "passive",
-    "effect": "Ailment recovery rate +20%"
+    "effect": "Ailment recovery rate +20%",
+    "element": "passive"
   },
   "Fatal Sword": {
     "cost": 5,
@@ -470,45 +480,51 @@
     "target": "One Foe"
   },
   "Final Blow": {
-    "element": "passive",
-    "effect": "Damage +10% when enemy weakness struck"
+    "effect": "Damage +10% when enemy weakness struck",
+    "element": "passive"
   },
   "Fire Boost": {
-    "element": "passive",
-    "effect": "Fire damage +15%"
+    "effect": "Fire damage +15%",
+    "element": "passive"
   },
   "Fire Breath": {
     "cost": 4,
-    "element": "fire",
     "effect": "2-4 hits",
+    "element": "fire",
     "power": 40,
     "target": "Multi Foes"
   },
   "Fire of Sinai": {
     "cost": 7,
-    "element": "almighty",
     "effect": "5 hits",
+    "element": "almighty",
     "power": 45,
     "target": "Multi Foes"
   },
+  "Five Elements": {
+    "cost": 6,
+    "effect": "Repel all magical attacks including Almighty for 1 turn",
+    "element": "support",
+    "target": "All Allies"
+  },
   "Fog Breath": {
     "cost": 6,
-    "element": "support",
     "effect": "Tarunda + Sukunda",
+    "element": "support",
     "target": "All Foes"
   },
   "Force Amp": {
-    "element": "passive",
-    "effect": "Force damage +25%"
+    "effect": "Force damage +25%",
+    "element": "passive"
   },
   "Force Boost": {
-    "element": "passive",
-    "effect": "Force damage +15%"
+    "effect": "Force damage +15%",
+    "element": "passive"
   },
   "Gae Bolg": {
     "cost": 7,
-    "element": "phys",
     "effect": "4-6 hits",
+    "element": "phys",
     "power": 50,
     "target": "Multi Foes"
   },
@@ -520,22 +536,22 @@
   },
   "Glacial Blast": {
     "cost": 5,
-    "element": "ice",
     "effect": "2-4 hits",
+    "element": "ice",
     "power": 50,
     "target": "Multi Foes"
   },
   "Gluttony": {
     "cost": 7,
-    "element": "death",
     "effect": "Drain 50% damage dealt",
+    "element": "death",
     "power": 130,
     "target": "All Foes"
   },
   "God's Bow": {
     "cost": 7,
-    "element": "expel",
     "effect": "50% instant death, 1 use",
+    "element": "expel",
     "power": 200,
     "target": "One Foe"
   },
@@ -546,17 +562,17 @@
     "target": "One Foe"
   },
   "Good Fortune": {
-    "element": "passive",
-    "effect": "Battle experience +20%, Macca +20%"
+    "effect": "Battle experience +20%, Macca +20%",
+    "element": "passive"
   },
   "Good Fortune Prayer": {
-    "element": "passive",
-    "effect": "Max HP +10%, All Allies recover 1 MP whenever a Press Turn is lost"
+    "effect": "Max HP +10%, All Allies recover 1 MP whenever a Press Turn is lost",
+    "element": "passive"
   },
   "Gungnir": {
     "cost": 7,
-    "element": "phys",
     "effect": "30% Critical, 3 uses",
+    "element": "phys",
     "power": 145,
     "target": "All Foes"
   },
@@ -567,8 +583,8 @@
     "target": "All Foes"
   },
   "Hades Mask": {
-    "element": "passive",
-    "effect": "Ailment resistance +60%"
+    "effect": "Ailment resistance +60%",
+    "element": "passive"
   },
   "Hama": {
     "cost": 4,
@@ -590,30 +606,30 @@
   },
   "Hassou Tobi": {
     "cost": 7,
-    "element": "phys",
     "effect": "8 hits",
+    "element": "phys",
     "power": 35,
     "target": "Multi Foes"
   },
   "Heal Amp": {
-    "element": "passive",
-    "effect": "Recovery effectiveness +25%"
+    "effect": "Recovery effectiveness +25%",
+    "element": "passive"
   },
   "Heal Boost": {
-    "element": "passive",
-    "effect": "Recovery effectiveness +15%"
+    "effect": "Recovery effectiveness +15%",
+    "element": "passive"
   },
   "Heat Wave": {
     "cost": 5,
-    "element": "phys",
     "effect": "30% Critical",
+    "element": "phys",
     "power": 70,
     "target": "All Foes"
   },
   "Hell Claw": {
     "cost": 5,
-    "element": "phys",
     "effect": "3 hits, 30% Critical",
+    "element": "phys",
     "power": 65,
     "target": "Multi Foes"
   },
@@ -625,30 +641,30 @@
   },
   "Hell Thrust": {
     "cost": 7,
-    "element": "phys",
     "effect": "4 hits, 35% Charm",
+    "element": "phys",
     "power": 50,
     "target": "Multi Foes"
   },
   "Hellish Mask": {
-    "element": "passive",
-    "effect": "Ailment resistance +35%"
+    "effect": "Ailment resistance +35%",
+    "element": "passive"
   },
   "High Counter": {
-    "element": "passive",
     "effect": "50% chance of counter upon receiving physical damage",
+    "element": "passive",
     "power": 150
   },
   "Holy Wrath": {
     "cost": 5,
-    "element": "expel",
     "effect": "2-4 hits",
+    "element": "expel",
     "power": 50,
     "target": "Multi Foes"
   },
   "Hundred Hits": {
-    "element": "passive",
-    "effect": "Phys hit +10%"
+    "effect": "Phys hit +10%",
+    "element": "passive"
   },
   "Ice Age": {
     "cost": 7,
@@ -657,97 +673,116 @@
     "target": "One Foe"
   },
   "Ice Boost": {
-    "element": "passive",
-    "effect": "Ice damage +15%"
+    "effect": "Ice damage +15%",
+    "element": "passive"
   },
   "Ice Breath": {
     "cost": 4,
-    "element": "ice",
     "effect": "2-4 hits",
+    "element": "ice",
     "power": 40,
     "target": "Multi Foes"
   },
   "Imposing Stance": {
-    "element": "passive",
-    "effect": "Remove 1 enemy Turn Icon during first round when ambushed"
+    "effect": "Remove 1 enemy Turn Icon during first round when ambushed",
+    "element": "passive"
   },
   "Infinite Prayer": {
     "cost": 5,
-    "element": "recovery",
     "effect": "Remove all ailments",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Instant Heal": {
-    "element": "passive",
-    "effect": "Ailment recovery rate +30%"
+    "effect": "Ailment recovery rate +30%",
+    "element": "passive"
   },
   "Ju": {
     "cost": 5,
-    "element": "ailment",
     "effect": "50% Curse",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Judgement": {
     "cost": 9,
-    "element": "almighty",
     "effect": "Tarukaja",
+    "element": "almighty",
     "power": 100,
     "target": "All Foes"
   },
   "Judgement Light": {
     "cost": 4,
-    "element": "expel",
     "effect": "2-4 hits",
+    "element": "expel",
     "power": 40,
     "target": "Multi Foes"
   },
   "Juon": {
     "cost": 6,
-    "element": "ailment",
     "effect": "60% Curse",
+    "element": "ailment",
     "target": "One Foe"
   },
+  "Last Judgement": {
+    "cost": 5,
+    "effect": "7 hits",
+    "element": "expel",
+    "power": 30,
+    "target": "Multi Foes"
+  },
   "Life Bonus": {
-    "element": "passive",
-    "effect": "Max HP +10%"
+    "effect": "Max HP +10%",
+    "element": "passive"
   },
   "Life Drain": {
     "cost": 5,
-    "element": "almighty",
     "effect": "Drain 25% damage dealt",
+    "element": "almighty",
     "power": 120,
     "target": "One Foe"
   },
   "Life Gain": {
-    "element": "passive",
-    "effect": "Max HP +20%"
+    "effect": "Max HP +20%",
+    "element": "passive"
   },
   "Life Surge": {
-    "element": "passive",
-    "effect": "Max HP +30%"
+    "effect": "Max HP +30%",
+    "element": "passive"
+  },
+  "Lotus Dance": {
+    "cost": 6,
+    "effect": "60% Charm",
+    "element": "ailment",
+    "target": "All Foes"
   },
   "Luck Bonus": {
-    "element": "passive",
-    "effect": "Luck +5"
+    "effect": "Luck +5",
+    "element": "passive"
   },
   "Luck Gain": {
-    "element": "passive",
-    "effect": "Luck +10"
+    "effect": "Luck +10",
+    "element": "passive"
   },
   "Luck Surge": {
-    "element": "passive",
-    "effect": "Luck +15"
+    "effect": "Luck +15",
+    "element": "passive"
   },
   "Lunar Blessing": {
-    "element": "passive",
-    "effect": "Skill costs -1 MP"
+    "effect": "Skill costs -1 MP",
+    "element": "passive"
   },
   "Lunge": {
     "cost": 4,
-    "element": "phys",
     "effect": "30% Critical",
+    "element": "phys",
     "power": 115,
     "target": "One Foe"
+  },
+  "Luster Candy": {
+    "cost": 8,
+    "effect": "Tarukaja + Rakukaja + Sukukaja",
+    "element": "support",
+    "target": "All Allies"
   },
   "Mabufu": {
     "cost": 5,
@@ -769,34 +804,34 @@
   },
   "Madesolate": {
     "cost": 6,
-    "element": "ailment",
     "effect": "60% Weak",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Madesolateon": {
     "cost": 7,
-    "element": "ailment",
     "effect": "70% Weak",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Madness Nails": {
     "cost": 5,
-    "element": "phys",
     "effect": "2-3 hits",
+    "element": "phys",
     "power": 65,
     "target": "Multi Foes"
   },
   "Magic Bonus": {
-    "element": "passive",
-    "effect": "Magic +5"
+    "effect": "Magic +5",
+    "element": "passive"
   },
   "Magic Gain": {
-    "element": "passive",
-    "effect": "Magic +10"
+    "effect": "Magic +10",
+    "element": "passive"
   },
   "Magic Surge": {
-    "element": "passive",
-    "effect": "Magic +15"
+    "effect": "Magic +15",
+    "element": "passive"
   },
   "Mahama": {
     "cost": 5,
@@ -818,66 +853,66 @@
   },
   "Maju": {
     "cost": 6,
-    "element": "ailment",
     "effect": "40% Curse",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Majuon": {
     "cost": 7,
-    "element": "ailment",
     "effect": "50% Curse",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Makajam": {
     "cost": 5,
-    "element": "ailment",
     "effect": "40% Mute",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Makajamaon": {
     "cost": 6,
-    "element": "ailment",
     "effect": "50% Mute",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Makara Break": {
     "cost": 3,
-    "element": "support",
     "effect": "Remove Makarakarn",
+    "element": "support",
     "target": "All Foes"
   },
   "Makara Shift": {
-    "element": "passive",
-    "effect": "Begin battle with Makarakarn when ambushed"
+    "effect": "Begin battle with Makarakarn when ambushed",
+    "element": "passive"
   },
   "Makarakarn": {
     "cost": 7,
-    "element": "support",
     "effect": "Repel all magical attacks except Almighty for 1 turn",
+    "element": "support",
     "target": "All Allies"
   },
   "Mamakajam": {
     "cost": 6,
-    "element": "ailment",
     "effect": "30% Mute",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Mamakajaon": {
     "cost": 7,
-    "element": "ailment",
     "effect": "40% Mute",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Mamarin Karin": {
     "cost": 6,
-    "element": "ailment",
     "effect": "30% Charm",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Mamarin Karion": {
     "cost": 7,
-    "element": "ailment",
     "effect": "40% Charm",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Mamudo": {
@@ -899,27 +934,27 @@
     "target": "All Foes"
   },
   "Mana Aid": {
-    "element": "passive",
-    "effect": "Recover 10 MP between waves"
+    "effect": "Recover 10 MP between waves",
+    "element": "passive"
   },
   "Mana Bonus": {
-    "element": "passive",
-    "effect": "Max MP +1"
+    "effect": "Max MP +1",
+    "element": "passive"
   },
   "Mana Gain": {
-    "element": "passive",
-    "effect": "Max MP +2"
+    "effect": "Max MP +2",
+    "element": "passive"
   },
   "Mapoisma": {
     "cost": 6,
-    "element": "ailment",
     "effect": "30% Poison",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Mapoismaon": {
     "cost": 7,
-    "element": "ailment",
     "effect": "40% Poison",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Maragi": {
@@ -941,40 +976,40 @@
     "target": "All Foes"
   },
   "Marebito": {
-    "element": "passive",
-    "effect": "Immune to ailments"
+    "effect": "Immune to ailments",
+    "element": "passive"
   },
   "Marin Karin": {
     "cost": 5,
-    "element": "ailment",
     "effect": "40% Charm",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Marin Karion": {
     "cost": 6,
-    "element": "ailment",
     "effect": "50% Charm",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Mashibaboo": {
     "cost": 6,
-    "element": "ailment",
     "effect": "30% Bind",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Mashibabooon": {
     "cost": 7,
-    "element": "ailment",
     "effect": "40% Bind",
+    "element": "ailment",
     "target": "All Foes"
   },
   "Massacre": {
-    "element": "passive",
-    "effect": "All-target skill damage +20%"
+    "effect": "All-target skill damage +20%",
+    "element": "passive"
   },
   "Massacre Glee": {
-    "element": "passive",
-    "effect": "Critical rate +25%"
+    "effect": "Critical rate +25%",
+    "element": "passive"
   },
   "Mazan": {
     "cost": 5,
@@ -1014,20 +1049,20 @@
   },
   "Mecharmdi": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove Charm, Charm resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Meclosedi": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove Mute, Mute resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Mecursedi": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove Curse, Curse resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Media": {
@@ -1056,8 +1091,8 @@
   },
   "Megaton Press": {
     "cost": 6,
-    "element": "phys",
     "effect": "30% Critical",
+    "element": "phys",
     "power": 90,
     "target": "All Foes"
   },
@@ -1087,65 +1122,65 @@
   },
   "Meparaladi": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove Bind, Bind resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Meposumudi": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove Poison, Poison resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Meweakdi": {
     "cost": 4,
-    "element": "recovery",
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Mind Leak": {
     "cost": 5,
-    "element": "almighty",
     "effect": "Remove 3 MP",
+    "element": "almighty",
     "power": 80,
     "target": "One Foe"
   },
   "Mist Slash": {
     "cost": 7,
-    "element": "phys",
     "effect": "3-5 hits",
+    "element": "phys",
     "power": 50,
     "target": "Multi Foes"
   },
   "Mjolnir": {
     "cost": 7,
-    "element": "elec",
     "effect": "4-5 hits",
+    "element": "elec",
     "power": 60,
     "target": "Multi Foes"
   },
   "Monstrous Intuition": {
-    "element": "passive",
-    "effect": "Critical rate of damage received -25%"
+    "effect": "Critical rate of damage received -25%",
+    "element": "passive"
   },
   "Morning Star": {
     "cost": 8,
-    "element": "almighty",
     "effect": "3 uses",
+    "element": "almighty",
     "power": 150,
     "target": "All Foes"
   },
   "Mortal Jihad": {
     "cost": 6,
-    "element": "phys",
     "effect": "30% Critical",
+    "element": "phys",
     "power": 145,
     "target": "One Foe"
   },
   "Mother's Creation": {
     "cost": 8,
-    "element": "recovery",
     "effect": "Samarecarm + Redia",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Mow Down": {
@@ -1173,202 +1208,202 @@
     "target": "One Foe"
   },
   "Mute Pursuit": {
-    "element": "passive",
-    "effect": "Damage +30% to enemies with Mute"
+    "effect": "Damage +30% to enemies with Mute",
+    "element": "passive"
   },
   "Myriad Slashes": {
     "cost": 7,
-    "element": "phys",
     "effect": "2-5 hits",
+    "element": "phys",
     "power": 65,
     "target": "Multi Foes"
   },
   "Nihil Claw": {
     "cost": 6,
-    "element": "phys",
     "effect": "2-3 hits",
+    "element": "phys",
     "power": 75,
     "target": "Multi Foes"
   },
   "Null Bind": {
-    "element": "passive",
-    "effect": "Immune to Bind"
+    "effect": "Immune to Bind",
+    "element": "passive"
   },
   "Null Chakra": {
-    "element": "passive",
-    "effect": "MP recovery per turn +1"
+    "effect": "MP recovery per turn +1",
+    "element": "passive"
   },
   "Null Charm": {
-    "element": "passive",
-    "effect": "Immune to Charm"
+    "effect": "Immune to Charm",
+    "element": "passive"
   },
   "Null Curse": {
-    "element": "passive",
-    "effect": "Immune to Curse"
+    "effect": "Immune to Curse",
+    "element": "passive"
   },
   "Null Dark Zone": {
-    "element": "passive",
-    "effect": "Immune to Dark Zone effects"
+    "effect": "Immune to Dark Zone effects",
+    "element": "passive"
   },
   "Null Death": {
-    "element": "passive",
-    "effect": "Nullify Death damage"
+    "effect": "Nullify Death damage",
+    "element": "passive"
   },
   "Null Elec": {
-    "element": "passive",
-    "effect": "Nullify Elec damage"
+    "effect": "Nullify Elec damage",
+    "element": "passive"
   },
   "Null Expel": {
-    "element": "passive",
-    "effect": "Nullify Expel damage"
+    "effect": "Nullify Expel damage",
+    "element": "passive"
   },
   "Null Fire": {
-    "element": "passive",
-    "effect": "Nullify Fire damage"
+    "effect": "Nullify Fire damage",
+    "element": "passive"
   },
   "Null Force": {
-    "element": "passive",
-    "effect": "Nullify Force damage"
+    "effect": "Nullify Force damage",
+    "element": "passive"
   },
   "Null Ice": {
-    "element": "passive",
-    "effect": "Nullify Ice damage"
+    "effect": "Nullify Ice damage",
+    "element": "passive"
   },
   "Null Mute": {
-    "element": "passive",
-    "effect": "Immune to Mute"
+    "effect": "Immune to Mute",
+    "element": "passive"
   },
   "Null Phys": {
-    "element": "passive",
-    "effect": "Nullify Phys damage"
+    "effect": "Nullify Phys damage",
+    "element": "passive"
   },
   "Null Poison": {
-    "element": "passive",
-    "effect": "Immune to Poison"
+    "effect": "Immune to Poison",
+    "element": "passive"
   },
   "Null Poison Floor": {
-    "element": "passive",
-    "effect": "Nullify Poison Floors damage"
+    "effect": "Nullify Poison Floors damage",
+    "element": "passive"
   },
   "Null Weak": {
-    "element": "passive",
-    "effect": "Immune to Weak"
+    "effect": "Immune to Weak",
+    "element": "passive"
   },
   "Off-season Flowering": {
-    "element": "passive",
-    "effect": "Ailment success rate +20%"
+    "effect": "Ailment success rate +20%",
+    "element": "passive"
   },
   "Oni-Kagura": {
     "cost": 5,
-    "element": "phys",
     "effect": "30% Critical",
+    "element": "phys",
     "power": 130,
     "target": "One Foe"
   },
   "Ordeal of Hatred": {
     "cost": 7,
-    "element": "expel",
     "effect": "Tarunda, Rakunda, or Sukunda",
+    "element": "expel",
     "power": 130,
     "target": "All Foes"
   },
   "Orleans Prayer": {
     "cost": 6,
-    "element": "recovery",
     "effect": "Recover 3 MP",
+    "element": "recovery",
     "power": 130,
     "target": "One Ally"
   },
   "Outbreak": {
     "cost": 6,
-    "element": "ailment",
     "effect": "1-4 hits, 60% Weak",
+    "element": "ailment",
     "target": "Multi Foes"
   },
   "Paraladi": {
     "cost": 3,
-    "element": "recovery",
     "effect": "Remove Bind, Bind resistance +by 30% for 3 turns",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Phys Amp": {
-    "element": "passive",
-    "effect": "Phys damage +25%"
+    "effect": "Phys damage +25%",
+    "element": "passive"
   },
   "Phys Boost": {
-    "element": "passive",
-    "effect": "Phys damage +15%"
+    "effect": "Phys damage +15%",
+    "element": "passive"
   },
   "Pierce Elec": {
-    "element": "passive",
-    "effect": "Elec attacks bypass resistances"
+    "effect": "Elec attacks bypass resistances",
+    "element": "passive"
   },
   "Pierce Fire": {
-    "element": "passive",
-    "effect": "Fire attacks bypass resistances"
+    "effect": "Fire attacks bypass resistances",
+    "element": "passive"
   },
   "Pierce Force": {
-    "element": "passive",
-    "effect": "Force attacks bypass resistances"
+    "effect": "Force attacks bypass resistances",
+    "element": "passive"
   },
   "Pierce Phys": {
-    "element": "passive",
-    "effect": "Phys attacks bypass resistances"
+    "effect": "Phys attacks bypass resistances",
+    "element": "passive"
   },
   "Poisma": {
     "cost": 5,
-    "element": "ailment",
     "effect": "40% Poison",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Poismaon": {
     "cost": 6,
-    "element": "ailment",
     "effect": "50% Poison",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Poison Breath": {
     "cost": 6,
-    "element": "ailment",
     "effect": "2-4 hits, 30% Poison",
+    "element": "ailment",
     "target": "Multi Foes"
   },
   "Poison Floor Cross": {
-    "element": "passive",
-    "effect": "Damage from Poison Floors -50%"
+    "effect": "Damage from Poison Floors -50%",
+    "element": "passive"
   },
   "Poison Floor Walk": {
-    "element": "passive",
-    "effect": "Damage from Poison Floors -25%"
+    "effect": "Damage from Poison Floors -25%",
+    "element": "passive"
   },
   "Poison Pursuit": {
-    "element": "passive",
-    "effect": "Damage +30% to enemies with Poison"
+    "effect": "Damage +30% to enemies with Poison",
+    "element": "passive"
   },
   "Posumudi": {
     "cost": 3,
-    "element": "recovery",
     "effect": "Remove Poison, Poison resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Pralaya": {
     "cost": 8,
-    "element": "almighty",
     "effect": "Tetra Break and Makara Break, Damage relative to Strength",
+    "element": "almighty",
     "power": 100,
     "target": "All Foes"
   },
   "Prominence": {
     "cost": 5,
-    "element": "fire",
     "effect": "2-4 hits",
+    "element": "fire",
     "power": 50,
     "target": "Multi Foes"
   },
   "Purgatory": {
     "cost": 5,
-    "element": "death",
     "effect": "2-4 hits",
+    "element": "death",
     "power": 50,
     "target": "Multi Foes"
   },
@@ -1380,181 +1415,185 @@
   },
   "Rakukaja": {
     "cost": 5,
-    "element": "support",
     "effect": "Defense +20% for 3 turns",
+    "element": "support",
     "target": "All Allies"
   },
   "Rakunda": {
     "cost": 5,
-    "element": "support",
     "effect": "Decrease -20% for 3 turns",
+    "element": "support",
     "target": "All Allies"
   },
   "Rampage": {
     "cost": 3,
-    "element": "phys",
     "effect": "2-3 hits",
+    "element": "phys",
     "power": 45,
     "target": "Multi Foes"
   },
   "Rebellion": {
     "cost": 6,
-    "element": "support",
-    "effect": "Next physical attack will critical"
+    "effect": "Next physical attack will critical",
+    "element": "support"
   },
   "Recarm": {
     "cost": 6,
-    "element": "recovery",
     "effect": "Revive with 10% HP",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Recarmdra": {
     "cost": 8,
-    "element": "recovery",
     "effect": "Revive with all HP, User dies",
+    "element": "recovery",
     "target": "All Allies"
   },
   "Redia": {
     "cost": 4,
-    "element": "support",
     "effect": "Recover HP for 3 turns",
+    "element": "support",
     "target": "All Allies"
   },
   "Redia Break": {
     "cost": 3,
-    "element": "support",
     "effect": "Remove Redia",
+    "element": "support",
     "target": "All Foes"
   },
   "Repel Death": {
-    "element": "passive",
-    "effect": "Repel Death damage"
+    "effect": "Repel Death damage",
+    "element": "passive"
   },
   "Repel Elec": {
-    "element": "passive",
-    "effect": "Repel Elec damage"
+    "effect": "Repel Elec damage",
+    "element": "passive"
   },
   "Repel Expel": {
-    "element": "passive",
-    "effect": "Repel Expel damage"
+    "effect": "Repel Expel damage",
+    "element": "passive"
   },
   "Repel Fire": {
-    "element": "passive",
-    "effect": "Repel Fire damage"
+    "effect": "Repel Fire damage",
+    "element": "passive"
   },
   "Repel Force": {
-    "element": "passive",
-    "effect": "Repel Force damage"
+    "effect": "Repel Force damage",
+    "element": "passive"
   },
   "Repel Ice": {
-    "element": "passive",
-    "effect": "Repel Ice damage"
+    "effect": "Repel Ice damage",
+    "element": "passive"
+  },
+  "Repel Phys": {
+    "effect": "Repel Phys damage",
+    "element": "passive"
   },
   "Resist Bind": {
-    "element": "passive",
-    "effect": "Bind resistance +50%"
+    "effect": "Bind resistance +50%",
+    "element": "passive"
   },
   "Resist Charm": {
-    "element": "passive",
-    "effect": "Charm resistance +50%"
+    "effect": "Charm resistance +50%",
+    "element": "passive"
   },
   "Resist Curse": {
-    "element": "passive",
-    "effect": "Curse resistance +50%"
+    "effect": "Curse resistance +50%",
+    "element": "passive"
   },
   "Resist Death": {
-    "element": "passive",
-    "effect": "Resist Death damage"
+    "effect": "Resist Death damage",
+    "element": "passive"
   },
   "Resist Elec": {
-    "element": "passive",
-    "effect": "Resist Elec damage"
+    "effect": "Resist Elec damage",
+    "element": "passive"
   },
   "Resist Expel": {
-    "element": "passive",
-    "effect": "Resist Expel damage"
+    "effect": "Resist Expel damage",
+    "element": "passive"
   },
   "Resist Fire": {
-    "element": "passive",
-    "effect": "Resist Fire damage"
+    "effect": "Resist Fire damage",
+    "element": "passive"
   },
   "Resist Force": {
-    "element": "passive",
-    "effect": "Resist Force damage"
+    "effect": "Resist Force damage",
+    "element": "passive"
   },
   "Resist Ice": {
-    "element": "passive",
-    "effect": "Resist Ice damage"
+    "effect": "Resist Ice damage",
+    "element": "passive"
   },
   "Resist Mute": {
-    "element": "passive",
-    "effect": "Mute resistance +50%"
+    "effect": "Mute resistance +50%",
+    "element": "passive"
   },
   "Resist Phys": {
-    "element": "passive",
-    "effect": "Resist Phys damage"
+    "effect": "Resist Phys damage",
+    "element": "passive"
   },
   "Resist Poison": {
-    "element": "passive",
-    "effect": "Poison resistance +50%"
+    "effect": "Poison resistance +50%",
+    "element": "passive"
   },
   "Resist Weak": {
-    "element": "passive",
-    "effect": "Weak resistance +50%"
+    "effect": "Weak resistance +50%",
+    "element": "passive"
   },
   "Ruthless Blow": {
-    "element": "passive",
-    "effect": "Damage +20% when enemy weakness struck"
+    "effect": "Damage +20% when enemy weakness struck",
+    "element": "passive"
   },
   "Salvation": {
     "cost": 10,
-    "element": "recovery",
     "effect": "Remove all ailments",
+    "element": "recovery",
     "power": 95,
     "target": "All Allies"
   },
   "Samarecarm": {
     "cost": 8,
-    "element": "recovery",
     "effect": "Revive with all HP",
+    "element": "recovery",
     "target": "One Ally"
   },
   "Sea of Chaos": {
     "cost": 9,
-    "element": "almighty",
     "effect": "Rakunda",
+    "element": "almighty",
     "power": 100,
     "target": "All Foes"
   },
   "Sexy Dance": {
     "cost": 6,
-    "element": "ailment",
     "effect": "2-4 hits, 30% Charm",
+    "element": "ailment",
     "target": "Multi Foes"
   },
   "Shibaboo": {
     "cost": 5,
-    "element": "ailment",
     "effect": "40% Bind",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Shibabooon": {
     "cost": 6,
-    "element": "ailment",
     "effect": "50% Bind",
+    "element": "ailment",
     "target": "One Foe"
   },
   "Shock": {
     "cost": 4,
-    "element": "elec",
     "effect": "2-4 hits",
+    "element": "elec",
     "power": 40,
     "target": "Multi Foes"
   },
   "Silent Prayer": {
     "cost": 7,
-    "element": "recovery",
     "effect": "Remove all ailments",
+    "element": "recovery",
     "target": "Universal"
   },
   "Slash": {
@@ -1564,109 +1603,115 @@
     "target": "One Foe"
   },
   "Slaughter": {
-    "element": "passive",
-    "effect": "All-target skill damage +10%"
+    "effect": "All-target skill damage +10%",
+    "element": "passive"
   },
   "Soul Drain": {
     "cost": 8,
-    "element": "almighty",
     "effect": "Drain 40% damage dealt and 1 MP",
+    "element": "almighty",
     "power": 140,
     "target": "One Foe"
   },
   "Speed Master": {
-    "element": "passive",
-    "effect": "Battle speed +50%"
+    "effect": "Battle speed +50%",
+    "element": "passive"
   },
   "Spirit Barrier": {
-    "element": "passive",
-    "effect": "Ally Repel resistances invalidate enemy Pierce effects"
+    "effect": "Ally Repel resistances invalidate enemy Pierce effects",
+    "element": "passive"
   },
   "Spirit Drain": {
     "cost": 6,
-    "element": "almighty",
     "effect": "Drain 1 MP",
+    "element": "almighty",
     "power": 100,
     "target": "One Foe"
   },
   "Stealth": {
-    "element": "passive",
-    "effect": "Phys avoid +20%, Revive once per battle with 1 HP"
+    "effect": "Phys avoid +20%, Revive once per battle with 1 HP",
+    "element": "passive"
   },
   "Strength Bonus": {
-    "element": "passive",
-    "effect": "Strength +5"
+    "effect": "Strength +5",
+    "element": "passive"
   },
   "Strength Gain": {
-    "element": "passive",
-    "effect": "Strength +10"
+    "effect": "Strength +10",
+    "element": "passive"
   },
   "Strength Surge": {
-    "element": "passive",
-    "effect": "Strength +15"
+    "effect": "Strength +15",
+    "element": "passive"
   },
   "Sukukaja": {
     "cost": 5,
-    "element": "support",
     "effect": "Hit/avoid +20% for 3 turns",
+    "element": "support",
     "target": "All Allies"
   },
   "Sukunda": {
     "cost": 5,
-    "element": "support",
     "effect": "Hit/avoid -20% for 3 turns",
+    "element": "support",
     "target": "All Foes"
   },
   "Tarukaja": {
     "cost": 5,
-    "element": "support",
     "effect": "Attack +20% for 3 turns",
+    "element": "support",
     "target": "All Allies"
   },
   "Tarunda": {
     "cost": 5,
-    "element": "support",
     "effect": "Attack -20% for 3 turns",
+    "element": "support",
     "target": "All Foes"
   },
   "Taunt": {
     "cost": 3,
-    "element": "support",
     "effect": "Tarukaja + Rakunda",
+    "element": "support",
     "target": "All Foes"
   },
   "Tempest Slash": {
     "cost": 5,
-    "element": "phys",
     "effect": "2-5 hits",
+    "element": "phys",
     "power": 50,
     "target": "Multi Foes"
   },
   "Tenson Kourin": {
     "cost": 8,
-    "element": "support",
     "effect": "Tarukaja + Rakukaja + Sukukaja for 6 turns, 3 uses",
+    "element": "support",
     "target": "All Allies"
   },
   "Tetra Break": {
     "cost": 3,
-    "element": "support",
     "effect": "Remove Tetrakarn",
+    "element": "support",
     "target": "All Foes"
   },
   "Tetra Shift": {
-    "element": "passive",
-    "effect": "Begin battle with Tetrakarn when ambushed"
+    "effect": "Begin battle with Tetrakarn when ambushed",
+    "element": "passive"
+  },
+  "Tetraja": {
+    "cost": 7,
+    "effect": "Nullify Insta-death for one turn",
+    "element": "support",
+    "target": "All Allies"
   },
   "Tetrakarn": {
     "cost": 7,
-    "element": "support",
     "effect": "Repel all physical attacks for one turn",
+    "element": "support",
     "target": "All Allies"
   },
   "Thousand Strikes": {
-    "element": "passive",
-    "effect": "Phys hit +20%"
+    "effect": "Phys hit +20%",
+    "element": "passive"
   },
   "Thunder Reign": {
     "cost": 7,
@@ -1682,25 +1727,25 @@
   },
   "Titanomachia": {
     "cost": 7,
-    "element": "phys",
     "effect": "30% Critical",
+    "element": "phys",
     "power": 110,
     "target": "All Foes"
   },
   "Toxic Sting": {
     "cost": 5,
-    "element": "phys",
     "effect": "40% Poison",
+    "element": "phys",
     "power": 120,
     "target": "One Foe"
   },
   "Trap-Free": {
-    "element": "passive",
-    "effect": "Damage from Poison Floor -30%, Immune to Dark Zone effects"
+    "effect": "Damage from Poison Floor -30%, Immune to Dark Zone effects",
+    "element": "passive"
   },
   "Trickster": {
-    "element": "passive",
-    "effect": "20% chance not to use Press Turn when enemy weakness struck"
+    "effect": "20% chance not to use Press Turn when enemy weakness struck",
+    "element": "passive"
   },
   "Trisagion": {
     "cost": 7,
@@ -1710,14 +1755,14 @@
   },
   "Twister": {
     "cost": 5,
-    "element": "force",
     "effect": "2-4 hits",
+    "element": "force",
     "power": 50,
     "target": "Multi Foes"
   },
   "Vahana": {
-    "element": "passive",
-    "effect": "Phys avoid +15%, Ailment resistance +30%"
+    "effect": "Phys avoid +15%, Ailment resistance +30%",
+    "element": "passive"
   },
   "Vajra Blast": {
     "cost": 5,
@@ -1726,20 +1771,20 @@
     "target": "All Foes"
   },
   "Victory Cry": {
-    "element": "passive",
-    "effect": "Recover 30% HP between waves"
+    "effect": "Recover 30% HP between waves",
+    "element": "passive"
   },
   "Vitality Bonus": {
-    "element": "passive",
-    "effect": "Vitality +5"
+    "effect": "Vitality +5",
+    "element": "passive"
   },
   "Vitality Gain": {
-    "element": "passive",
-    "effect": "Vitality +10"
+    "effect": "Vitality +10",
+    "element": "passive"
   },
   "Vitality Surge": {
-    "element": "passive",
-    "effect": "Vitality +15"
+    "effect": "Vitality +15",
+    "element": "passive"
   },
   "Vorpal Blade": {
     "cost": 7,
@@ -1749,37 +1794,37 @@
   },
   "War Cry": {
     "cost": 6,
-    "element": "support",
     "effect": "Tarunda + Rakunda",
+    "element": "support",
     "target": "All Foes"
   },
   "Weakdi": {
     "cost": 3,
-    "element": "recovery",
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
+    "element": "recovery",
     "target": "One Ally"
   },
   "White Noise": {
     "cost": 6,
-    "element": "ailment",
     "effect": "2-4 hits, 30% Mute",
+    "element": "ailment",
     "target": "Multi Foes"
   },
   "Wild Intuition": {
-    "element": "passive",
-    "effect": "Critical rate of damage received -15%"
+    "effect": "Critical rate of damage received -15%",
+    "element": "passive"
   },
   "Wind Breath": {
     "cost": 4,
-    "element": "force",
     "effect": "2-4 hits",
+    "element": "force",
     "power": 40,
     "target": "Multi Foes"
   },
   "Yinlong Killer": {
     "cost": 8,
-    "element": "phys",
     "effect": "50% Critical",
+    "element": "phys",
     "power": 150,
     "target": "All Foes"
   },

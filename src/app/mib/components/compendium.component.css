@@ -73,28 +73,34 @@
 .mib div.target-icon.a909090 { background-image: url('/assets/images/mib/909090.png'); }
 .mib div.target-icon.a949494 { background-image: url('/assets/images/mib/949494.png'); }
 
-.mib tr.fusion-color.blue td {
-  background-color: #000020;
-}
-
+.mib-fusion-table td.sec:after,
 .mib tr.fusion-color.second td.price:after {
   content: "↗";
 }
 
+.mib-fusion-table td.fir:after,
 .mib tr.fusion-color.first td.price:after {
   content: "→";
 }
 
+.mib-fusion-table td.non:after,
 .mib tr.fusion-color.none td.price:after {
-  content: "×";
+  content: "○";
 }
 
+.mib-fusion-table td.unf:after,
 .mib tr.fusion-color.unfav td.price:after {
   content: "↘";
 }
 
-.mib tr.fusion-color.red td {
-  background-color: #200000;
+.mib-fusion-table td.blu,
+.mib tr.fusion-color.blue td.price {
+  color: cyan;
+}
+
+.mib-fusion-table td.red,
+.mib tr.fusion-color.red td.price {
+  color: tomato;
 }
 
 .mib th {

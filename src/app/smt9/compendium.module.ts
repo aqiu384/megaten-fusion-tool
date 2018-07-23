@@ -46,6 +46,10 @@ for (const rs of COMP_CONFIG_JSON['species']) {
   }
 }
 
+for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
+  demon['resists'] = demon['resists'].slice(0, 9).concat(demon['resists'].slice(11));
+}
+
 const normalElemChart = {
   elems: ELEMENT_CHART_JSON['elems'].slice(0, 4),
   races: ELEMENT_CHART_JSON['races'],
