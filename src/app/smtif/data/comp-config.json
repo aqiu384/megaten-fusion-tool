@@ -41,6 +41,10 @@
   "resistElems": [
     "sword",
     "gun",
+    "slash",
+    "attack",
+    "tech",
+    "rush",
     "fire",
     "ice",
     "elec",
@@ -49,10 +53,7 @@
     "expel",
     "death",
     "curse",
-    "bind",
-    "rush",
-    "punch",
-    "flying"
+    "bind"
   ],
   "skillElems": [
     "almighty",
@@ -62,18 +63,19 @@
     "special"
   ],
   "species": [
-    ["DEITIES", "Deity", "Megami"],
-    ["ICONS", "Tenma", "Kishin", "Femme", "Vile"],
-    ["NETHERS", "Tyrant", "Yoma", "Night", "Fairy"],
-    ["AERIALS", "Seraph", "Divine", "Fallen"],
+    ["DEITIES", "Deity", "Megami", "Amatsu"],
+    ["ICONS", "Fury", "Lady", "Kunitsu", "Vile"],
+    ["NETHERS", "Yoma", "Night", "Fairy", "Tyrant"],
+    ["AERIALS", "Herald", "Divine", "Fallen"],
     ["DRAGONS", "Dragon", "Snake", "Drake"],
     ["AVIANS", "Avian", "Flight", "Raptor"],
     ["BEASTS", "Avatar", "Holy", "Beast", "Wilder"],
-    ["BRUTES", "Touki", "Brute", "Jirae", "Jaki"],
+    ["BRUTES", "Jirae", "Brute", "Femme", "Jaki"],
+    ["SPIRITS", "Undead", "Haunt", "Spirit"],
+    ["FOULS", "Foul", "Demonoid"],
+    ["HUMANS", "Messian", "Gaean", "Fiend"],
     ["ELEMENTS", "Element"],
-    ["SPIRITS", "Haunt", "Spirit", "Undead"],
-    ["FOULS", "Foul"],
-    ["HUMANS", "Therian", "Messian", "Gaean", "Fiend"],
-    ["MACHINES", "Machine"]
+    ["VEGETATION", "Wood"],
+    ["MACHINES", "Machine", "Virus", "Vaccine"]
   ]
 }

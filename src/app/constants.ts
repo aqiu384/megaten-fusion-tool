@@ -28,7 +28,9 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     tool: 'smt9',
     srcs: [
       'http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_nine/index.html',
-      'http://kaerukyo.net/html/dds_database/skill.php?title=17'
+      'http://kaerukyo.net/html/dds_database/skill.php?title=17',
+      'http://softtank.web.fc2.com/nine_index.html',
+      'http://ゆめのしま.jp/nine.html'
     ]
   },
   {

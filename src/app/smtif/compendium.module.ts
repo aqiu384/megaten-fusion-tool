@@ -9,10 +9,10 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../
 import { SmtSnesCompendiumModule } from '../smt1/smt-snes-compendium.module';
 import { CompendiumConfig } from '../smt1/models';
 
+import * as COMP_CONFIG_JSON from './data/comp-config.json';
 import * as DEMON_DATA_JSON from './data/demon-data.json';
 import * as SKILL_DATA_JSON from './data/skill-data.json';
 
-import * as COMP_CONFIG_JSON from '../smt2/data/comp-config.json';
 import * as ALIGNMENT_JSON from '../smt2/data/alignments.json';
 import * as FUSION_CHART_JSON from '../smt2/data/fusion-chart.json';
 import * as TRIPLE_CHART_JSON from '../smt2/data/triple-chart.json';
