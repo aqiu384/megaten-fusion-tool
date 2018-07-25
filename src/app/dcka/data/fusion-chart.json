@@ -1,0 +1,14 @@
+{
+  "races": [
+    "Deity",  "Icon",   "Aerial", "Brute",  "Spirit", "Dragon", "Nether"
+  ],
+  "table": [
+    ["-"],
+    ["Aerial", "-"],
+    ["Spirit", "Dragon", "-"],
+    ["Dragon", "Spirit", "Deity",  "-"],
+    ["Dragon", "Nether", "Nether", "Icon",   "-"],
+    ["Aerial", "Aerial", "Deity",  "Nether", "Brute",  "-"],
+    ["Brute",  "Dragon", "Brute",  "Icon",   "Aerial", "Icon",   "-"]
+  ]
+}

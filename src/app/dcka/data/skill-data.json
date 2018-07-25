@@ -1,0 +1,752 @@
+{
+  "Agi": {
+    "cost": 1005,
+    "desc": "Light Fire damage to one enemy.",
+    "element": "fir"
+  },
+  "Agilao": {
+    "cost": 1010,
+    "desc": "Heavy Fire damage to one enemy.",
+    "element": "fir"
+  },
+  "Aques": {
+    "cost": 15,
+    "desc": "Light Ice damage and inflicts Freeze to one enemy.",
+    "element": "ice"
+  },
+  "Auto Call": {
+    "cost": 8,
+    "desc": "Replaces an ally for another demon in the Devil Riser.",
+    "element": "lig"
+  },
+  "Big Wing": {
+    "cost": 20,
+    "desc": "Light Force damage and lowers Luck for one enemy.",
+    "element": "for"
+  },
+  "Bomb Claw": {
+    "cost": 35,
+    "desc": "Medium Fire damage to one enemy and inflicts Bomb.",
+    "element": "fir"
+  },
+  "Bufu": {
+    "cost": 1005,
+    "desc": "Light Ice damage to one enemy.",
+    "element": "ice"
+  },
+  "Bufula": {
+    "cost": 1010,
+    "desc": "Heavy Ice damage to one enemy.",
+    "element": "ice"
+  },
+  "Burning Mite": {
+    "cost": 32,
+    "desc": "Medium Fire damage to one enemy and inflicts Bomb. Hits twice.",
+    "element": "fir"
+  },
+  "Call Attack": {
+    "cost": 20,
+    "desc": "Retreats for one turn and then returns to deal damage.",
+    "element": "lig"
+  },
+  "Cold Voice": {
+    "cost": 20,
+    "desc": "Light Ice damage and inflicts Mute to one enemy.",
+    "element": "ice"
+  },
+  "Countdown": {
+    "cost": 28,
+    "desc": "Inflicts Paralysis but raises one stats for one enemy.",
+    "element": "dar"
+  },
+  "Dark Flame": {
+    "cost": 32,
+    "desc": "Medium Fire damage to one enemy.",
+    "element": "fir"
+  },
+  "Dark Saber": {
+    "cost": 20,
+    "desc": "Medium Dark damage and inflicts Charm to one enemy.",
+    "element": "dar"
+  },
+  "Dark Spear": {
+    "cost": 5,
+    "desc": "Inflicts damage equal to 1/3 of the target's current HP.",
+    "element": "dar"
+  },
+  "Death Breath": {
+    "cost": 30,
+    "desc": "Heavy Dark damage and inflicts Charm to all enemies.",
+    "element": "dar"
+  },
+  "Death Claw": {
+    "cost": 20,
+    "desc": "Hits all enemies twice.",
+    "element": "spe"
+  },
+  "Death Rush": {
+    "cost": 40,
+    "desc": "Hits all enemies four times.",
+    "element": "spe"
+  },
+  "Death Vice": {
+    "cost": 30,
+    "desc": "Hits one enemy twice.",
+    "element": "spe"
+  },
+  "Dekaja": {
+    "cost": 1008,
+    "desc": "Removes buffs for all enemies.",
+    "element": "deb"
+  },
+  "Dekunda": {
+    "cost": 1008,
+    "desc": "Removes debuffs for all allies.",
+    "element": "buf"
+  },
+  "Dia": {
+    "cost": 1005,
+    "desc": "Light HP recovery for one ally.",
+    "element": "rec"
+  },
+  "Diarahan": {
+    "cost": 1020,
+    "desc": "Large HP recovery for one ally.",
+    "element": "rec"
+  },
+  "Diarama": {
+    "cost": 1010,
+    "desc": "Medium HP recovery for one ally.",
+    "element": "rec"
+  },
+  "Divine Thrust": {
+    "cost": 15,
+    "desc": "Light Holy damage to one enemy.",
+    "element": "lig"
+  },
+  "Domudi": {
+    "cost": 1020,
+    "desc": "Absorbs HP from one enemy.",
+    "element": "dar"
+  },
+  "Dormina": {
+    "cost": 1006,
+    "desc": "Inflicts Sleep on one enemy.",
+    "element": "ail"
+  },
+  "Double Hit": {
+    "cost": 10,
+    "desc": "Light Dark damage to one enemy. Hits twice.",
+    "element": "dar"
+  },
+  "Double Vise": {
+    "cost": 30,
+    "desc": "Medium Fire damage to one enemy. Hits twice.",
+    "element": "fir"
+  },
+  "Earth Break": {
+    "cost": 20,
+    "desc": "Medium Earth damage and lowers Defense for one enemy.",
+    "element": "ear"
+  },
+  "Estoma": {
+    "cost": 1004,
+    "desc": "Lowers enemy encounter rate.",
+    "element": "spe"
+  },
+  "Evil Eyes": {
+    "cost": 10,
+    "desc": "Light Dark damage and lowers Defense for all enemies. User recovers MP.",
+    "element": "dar"
+  },
+  "Feral Claw": {
+    "cost": 15,
+    "desc": "Light Holy damage to one enemy.",
+    "element": "lig"
+  },
+  "Fire Breath": {
+    "cost": 23,
+    "desc": "Light Fire damage to all enemies.",
+    "element": "fir"
+  },
+  "Freya": {
+    "cost": 15,
+    "desc": "Light Fire damage to one enemy.",
+    "element": "fir"
+  },
+  "Gaia Break": {
+    "cost": 25,
+    "desc": "Medium Earth damage and lowers Defense for all enemies.",
+    "element": "ear"
+  },
+  "Gaia Buster": {
+    "cost": 25,
+    "desc": "Light Earth damage to all enemies.",
+    "element": "ear"
+  },
+  "Gather Power": {
+    "cost": 15,
+    "desc": "Increases attack (self).",
+    "element": "lig"
+  },
+  "God Hand": {
+    "cost": 50,
+    "desc": "Heavy Holy damage to all enemies.",
+    "element": "lig"
+  },
+  "Grand Break": {
+    "cost": 35,
+    "desc": "Heavy Earth damage and lowers Defense for all enemies.",
+    "element": "ear"
+  },
+  "Guillotine Blade": {
+    "cost": 15,
+    "desc": "Light Dark damage and inflicts Charm to one enemy.",
+    "element": "dar"
+  },
+  "Hama": {
+    "cost": 1012,
+    "desc": "Medium Holy damage to one enemy.",
+    "element": "lig"
+  },
+  "Hamaon": {
+    "cost": 1015,
+    "desc": "Heavy Holy damage to one enemy.",
+    "element": "lig"
+  },
+  "Hapirma": {
+    "cost": 1006,
+    "desc": "Inflicts Happy on one enemy.",
+    "element": "ail"
+  },
+  "Hell Buster": {
+    "cost": 60,
+    "desc": "Hits one enemy four times.",
+    "element": "spe"
+  },
+  "Hell Rush": {
+    "cost": 40,
+    "desc": "Hits all enemies four times.",
+    "element": "spe"
+  },
+  "Hell Thrust": {
+    "cost": 25,
+    "desc": "Medium Dark damage and inflicts Mute to one enemy. Ignores enemy's Guard.",
+    "element": "dar"
+  },
+  "Hell Vice": {
+    "cost": 30,
+    "desc": "Hits one enemy twice.",
+    "element": "spe"
+  },
+  "Hellfire": {
+    "cost": 25,
+    "desc": "Light Fire damage to all enemies.",
+    "element": "fir"
+  },
+  "Ice Blade": {
+    "cost": 25,
+    "desc": "Medium Ice damage and inflicts Mute to one enemy.",
+    "element": "ice"
+  },
+  "Ice Breath": {
+    "cost": 23,
+    "desc": "Light Ice damage and inflicts Freeze to all enemies.",
+    "element": "ice"
+  },
+  "Icicle": {
+    "cost": 32,
+    "desc": "Heavy Ice damage and inflicts Freeze to one enemy.",
+    "element": "ice"
+  },
+  "Ill Omen": {
+    "cost": 30,
+    "desc": "Heavy Holy damage to all enemies.",
+    "element": "lig"
+  },
+  "Initalize": {
+    "cost": 22,
+    "desc": "Resets buffs and debuffs for all participants in battle.",
+    "element": "lig"
+  },
+  "Intense Freeze": {
+    "cost": 35,
+    "desc": "Heavy Ice damage and inflicts Mute to one enemy.",
+    "element": "ice"
+  },
+  "Iron-cutting Leaves": {
+    "cost": 28,
+    "desc": "Medium Force damage to one enemy.",
+    "element": "for"
+  },
+  "Judgement Thunder": {
+    "cost": 35,
+    "desc": "Medium Elec damage and inflicts Paralysis to all enemies.",
+    "element": "ele"
+  },
+  "Killing Blow": {
+    "cost": 5,
+    "desc": "Earth damage to one enemy. Damage increases as user loses HP.",
+    "element": "ear"
+  },
+  "King Buster": {
+    "cost": 60,
+    "desc": "Hits one enemy four times.",
+    "element": "spe"
+  },
+  "King Rush": {
+    "cost": 40,
+    "desc": "Hits all enemies four times.",
+    "element": "spe"
+  },
+  "King Storm": {
+    "cost": 99,
+    "desc": "Hits all enemies eight times.",
+    "element": "spe"
+  },
+  "Last Blow": {
+    "cost": 8,
+    "desc": "Earth damage to all enemies. Damage increases as user loses HP.",
+    "element": "ear"
+  },
+  "Last Resort": {
+    "cost": 2,
+    "desc": "Damage equal to user's current HP to all enemies. Lowers user's HP to 1.",
+    "element": "fir"
+  },
+  "Life Drain": {
+    "cost": 30,
+    "desc": "Heavy Dark damage to one enemy. User recovers MP.",
+    "element": "dar"
+  },
+  "Light Blast": {
+    "cost": 60,
+    "desc": "Heavy Holy damage to all enemies.",
+    "element": "lig"
+  },
+  "Light Flare": {
+    "cost": 15,
+    "desc": "Medium Holy damage to one enemy.",
+    "element": "lig"
+  },
+  "Light Spear": {
+    "cost": 60,
+    "desc": "Heavy Holy damage to one enemy two times.",
+    "element": "lig"
+  },
+  "Lightning Thrust": {
+    "cost": 15,
+    "desc": "Light Elec damage and inflicts Shock to one enemy.",
+    "element": "ele"
+  },
+  "Mabufu": {
+    "cost": 1018,
+    "desc": "Light Ice damage to all enemies.",
+    "element": "ice"
+  },
+  "Mabufudyne": {
+    "cost": 1050,
+    "desc": "Heavy Ice damage to all enemies.",
+    "element": "ice"
+  },
+  "Mabufula": {
+    "cost": 1030,
+    "desc": "Medium Ice damage to all enemies.",
+    "element": "ice"
+  },
+  "Magna": {
+    "cost": 1005,
+    "desc": "Light Earth damage to one enemy.",
+    "element": "ear"
+  },
+  "Magnus": {
+    "cost": 1010,
+    "desc": "Heavy Earth damage to one enemy.",
+    "element": "ear"
+  },
+  "Magukaja": {
+    "cost": 1006,
+    "desc": "Increases Magical Defense for all allies.",
+    "element": "buf"
+  },
+  "Magunda": {
+    "cost": 1005,
+    "desc": "Lowers Magical Defense for all enemies.",
+    "element": "deb"
+  },
+  "Mahama": {
+    "cost": 1027,
+    "desc": "Heavy Holy damage to all enemies.",
+    "element": "lig"
+  },
+  "Makafuji": {
+    "cost": 1006,
+    "desc": "Inflicts Mute on one ememy.",
+    "element": "ail"
+  },
+  "Makakaja": {
+    "cost": 1006,
+    "desc": "Increases Magical Attack for all allies.",
+    "element": "buf"
+  },
+  "Makandyne": {
+    "cost": 1020,
+    "desc": "Inflicts damage and lowers Magic Defense for one enemy.",
+    "element": "deb"
+  },
+  "Makarakarn": {
+    "cost": 1012,
+    "desc": "Creates a barrier that reflects all spells.",
+    "element": "lig"
+  },
+  "Mamagna": {
+    "cost": 1018,
+    "desc": "Light Earth damage to all enemies.",
+    "element": "ear"
+  },
+  "Mamagnadyne": {
+    "cost": 1050,
+    "desc": "Heavy Earth damage to all enemies.",
+    "element": "ear"
+  },
+  "Mamagnus": {
+    "cost": 1030,
+    "desc": "Medium Earth damage to all enemies.",
+    "element": "ear"
+  },
+  "Maragi": {
+    "cost": 1018,
+    "desc": "Light Fire damage to all enemies.",
+    "element": "fir"
+  },
+  "Maragidyne": {
+    "cost": 1050,
+    "desc": "Heavy Fire damage to all enemies.",
+    "element": "fir"
+  },
+  "Maragion": {
+    "cost": 1030,
+    "desc": "Medium Fire damage to all enemies.",
+    "element": "fir"
+  },
+  "Marin Karin": {
+    "cost": 1006,
+    "desc": "Inflicts Charm on one enemy.",
+    "element": "ail"
+  },
+  "Marvelous Dance": {
+    "cost": 10,
+    "desc": "Inflicts Charm to one random enemy.",
+    "element": "dar"
+  },
+  "Mazan": {
+    "cost": 1018,
+    "desc": "Light Force damage to all enemies.",
+    "element": "for"
+  },
+  "Mazandyne": {
+    "cost": 1050,
+    "desc": "Heavy Force damage to all enemies.",
+    "element": "for"
+  },
+  "Mazanma": {
+    "cost": 1030,
+    "desc": "Medium Force damage to all enemies.",
+    "element": "for"
+  },
+  "Mazio": {
+    "cost": 1018,
+    "desc": "Light Elec damage to all enemies.",
+    "element": "ele"
+  },
+  "Maziodyne": {
+    "cost": 1050,
+    "desc": "Heavy Elec damage to all enemies.",
+    "element": "ele"
+  },
+  "Mazionga": {
+    "cost": 1030,
+    "desc": "Medium Elec damage to all enemies.",
+    "element": "ele"
+  },
+  "Media": {
+    "cost": 1012,
+    "desc": "Light HP recovery for all allies.",
+    "element": "rec"
+  },
+  "Mediarahan": {
+    "cost": 1030,
+    "desc": "Large HP recovery for all allies.",
+    "element": "rec"
+  },
+  "Mediarama": {
+    "cost": 1018,
+    "desc": "Medium HP recovery for all allies.",
+    "element": "rec"
+  },
+  "Mega Cyclone": {
+    "cost": 35,
+    "desc": "Medium Force damage and lowers Luck for one enemy.",
+    "element": "for"
+  },
+  "Mite": {
+    "cost": 1006,
+    "desc": "Inflicts Bomb on one enemy.",
+    "element": "ail"
+  },
+  "Mitedyne": {
+    "cost": 1020,
+    "desc": "Inflicts damage and Bomb on one enemy.",
+    "element": "ail"
+  },
+  "Mudo": {
+    "cost": 1010,
+    "desc": "Medium Dark damage to one enemy.",
+    "element": "dar"
+  },
+  "Mudoon": {
+    "cost": 1020,
+    "desc": "Heavy Dark damage to all enemies.",
+    "element": "dar"
+  },
+  "Myriad Hits": {
+    "cost": 15,
+    "desc": "Light Dark damage to one enemy. Hits three times.",
+    "element": "dar"
+  },
+  "Parala Eyes": {
+    "cost": 20,
+    "desc": "Medium Dark damage and inflicts Paralysis to one enemy.",
+    "element": "dar"
+  },
+  "Paraladyne": {
+    "cost": 1035,
+    "desc": "Inflicts damage and Paralysis on one enemy.",
+    "element": "ail"
+  },
+  "Paralama": {
+    "cost": 1006,
+    "desc": "Inflicts Paralysis on one enemy.",
+    "element": "ail"
+  },
+  "Patra": {
+    "cost": 1006,
+    "desc": "Removes ailments for one ally.",
+    "element": "rec"
+  },
+  "Patradi": {
+    "cost": 1012,
+    "desc": "Removes ailments and restores HP for one ally.",
+    "element": "rec"
+  },
+  "Poisdyne": {
+    "cost": 1020,
+    "desc": "Inflicts damage and Poison on one enemy.",
+    "element": "ail"
+  },
+  "Poisma": {
+    "cost": 1006,
+    "desc": "Inflicts Poison on one enemy.",
+    "element": "ail"
+  },
+  "Poison Blade": {
+    "cost": 25,
+    "desc": "Medium Dark damage and inflicts Poison to one enemy.",
+    "element": "dar"
+  },
+  "Poison Breath": {
+    "cost": 35,
+    "desc": "Heavy Dark damage and inflicts Poison to all enemies.",
+    "element": "dar"
+  },
+  "Poison Claw": {
+    "cost": 10,
+    "desc": "Light Dark damage and inflicts Poison to one enemy.",
+    "element": "dar"
+  },
+  "Pulinpa": {
+    "cost": 1006,
+    "desc": "Inflicts Confusion on one enemy.",
+    "element": "ail"
+  },
+  "Pulinpadyne": {
+    "cost": 1030,
+    "desc": "Inflicts damage and Confusion on one enemy.",
+    "element": "ail"
+  },
+  "Quick Blade": {
+    "cost": 20,
+    "desc": "Dark damage and resets buffs for all enemies. Always goes first.",
+    "element": "dar"
+  },
+  "Quick Buster": {
+    "cost": 40,
+    "desc": "Medium Elec damage to one enemy. Always goes first.",
+    "element": "ele"
+  },
+  "Quick Spear": {
+    "cost": 28,
+    "desc": "Light Elec damage to one enemy. Always goes first.",
+    "element": "ele"
+  },
+  "Rakukaja": {
+    "cost": 1006,
+    "desc": "Increases Defense for all allies.",
+    "element": "buf"
+  },
+  "Rakunda": {
+    "cost": 1005,
+    "desc": "Lowers Defense for all enemies.",
+    "element": "deb"
+  },
+  "Rakundyne": {
+    "cost": 1015,
+    "desc": "Inflicts damage and lowers Defense for all enemies.",
+    "element": "deb"
+  },
+  "Rampage": {
+    "cost": 20,
+    "desc": "Medium Dark damage to one enemy. Hits four times.",
+    "element": "dar"
+  },
+  "Recarm": {
+    "cost": 1018,
+    "desc": "Revives one ally with low HP.",
+    "element": "rec"
+  },
+  "Riberama": {
+    "cost": 1004,
+    "desc": "Increases enemy encounter rate.",
+    "element": "spe"
+  },
+  "Rock Fall": {
+    "cost": 32,
+    "desc": "Heavy Earth damage to one enemy.",
+    "element": "ear"
+  },
+  "Round Bite": {
+    "cost": 10,
+    "desc": "Light Dark damage to one enemy. Ignores enemy's Guard.",
+    "element": "dar"
+  },
+  "Saint Attack": {
+    "cost": 35,
+    "desc": "Heavy Holy damage to one enemy.",
+    "element": "lig"
+  },
+  "Samarecarm": {
+    "cost": 1025,
+    "desc": "Revives one ally with full HP.",
+    "element": "rec"
+  },
+  "Skull Breaker": {
+    "cost": 25,
+    "desc": "Light Elec damage and inflicts Shock to all enemies.",
+    "element": "ele"
+  },
+  "Sonic Boom": {
+    "cost": 23,
+    "desc": "Light Force damage to all enemies.",
+    "element": "for"
+  },
+  "Sonic Wing": {
+    "cost": 25,
+    "desc": "Light Force damage to all enemies.",
+    "element": "for"
+  },
+  "Speed Up": {
+    "cost": 1006,
+    "desc": "Increases Speed for all allies.",
+    "element": "buf"
+  },
+  "Stun Shot": {
+    "cost": 12,
+    "desc": "Light Elec damage and inflicts Shock to one enemy.",
+    "element": "ele"
+  },
+  "Sukukaja": {
+    "cost": 1006,
+    "desc": "Increases Luck for all allies.",
+    "element": "buf"
+  },
+  "Sukunda": {
+    "cost": 1005,
+    "desc": "Lowers Luck for all enemies.",
+    "element": "deb"
+  },
+  "Tackle": {
+    "cost": 15,
+    "desc": "Light Earth damage to one enemy.",
+    "element": "ear"
+  },
+  "Tarukaja": {
+    "cost": 1006,
+    "desc": "Increases Attack for all allies.",
+    "element": "buf"
+  },
+  "Tarunda": {
+    "cost": 1005,
+    "desc": "Lowers Attack for all enemies.",
+    "element": "deb"
+  },
+  "Tarundyne": {
+    "cost": 1015,
+    "desc": "Inflicts damage and lowers Attack for one enemy.",
+    "element": "deb"
+  },
+  "Tetrakarn": {
+    "cost": 25,
+    "desc": "Creates a barrier that reflects all skills.",
+    "element": "dar"
+  },
+  "Thor Hammer": {
+    "cost": 32,
+    "desc": "Medium Elec damage and inflicts Shock to one enemy.",
+    "element": "ele"
+  },
+  "Thunderbolt": {
+    "cost": 23,
+    "desc": "Light Elec damage and inflicts Shock to all enemies.",
+    "element": "ele"
+  },
+  "Traport": {
+    "cost": 1010,
+    "desc": "Teleports to any Land / Area.",
+    "element": "spe"
+  },
+  "Trio The Punch": {
+    "cost": 16,
+    "desc": "Random Ice damage and inflicts Happy. Hits eight times (random enemies).",
+    "element": "ice"
+  },
+  "Triple Vise": {
+    "cost": 50,
+    "desc": "Heavy Fire damage to one enemy. Hits three times.",
+    "element": "fir"
+  },
+  "Wing Flap": {
+    "cost": 15,
+    "desc": "Light Force damage to one enemy.",
+    "element": "for"
+  },
+  "Zan": {
+    "cost": 1005,
+    "desc": "Light Force damage to one enemy.",
+    "element": "for"
+  },
+  "Zanma": {
+    "cost": 1010,
+    "desc": "Heavy Force damage to one enemy.",
+    "element": "for"
+  },
+  "Zio": {
+    "cost": 1005,
+    "desc": "Light Elec damage to one enemy.",
+    "element": "ele"
+  },
+  "Zionga": {
+    "cost": 1010,
+    "desc": "Heavy Elec damage to one enemy.",
+    "element": "ele"
+  }
+}
