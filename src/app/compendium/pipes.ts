@@ -15,15 +15,15 @@ export class SkillCostToStringPipe implements PipeTransform {
 const SKILL_LVLS = {
   106: 'Bargain Auction',
   107: 'Rare Auction',
-  110: 'Base Arch',
-  111: 'Attack Arch',
-  112: 'Support Arch',
-  113: 'Passive Arch',
-  114: 'Resist Arch',
-  115: 'Attack Gacha',
-  116: 'Support Gacha',
-  117: 'Passive Gacha',
-  118: 'Resist Gacha'
+  110: 'Common Arch',
+  111: 'Aragami Arch',
+  112: 'Protect Arch',
+  113: 'Psychic Arch',
+  114: 'Element Arch',
+  115: 'Aragami Gacha',
+  116: 'Protect Gacha',
+  117: 'Psychic Gacha',
+  118: 'Element Gacha'
 };
 
 @Pipe({ name: 'skillLevelToString' })
@@ -40,15 +40,15 @@ export class SkillLevelToStringPipe implements PipeTransform {
 const SKILL_LVL_ABBRS = {
   106: '(Ab)',
   107: '(Ar)',
-  110: '(Ab)',
+  110: '(Ac)',
   111: '(Aa)',
-  112: '(As)',
-  113: '(Ap)',
-  114: '(Ar)',
+  112: '(Ap)',
+  113: '(Ay)',
+  114: '(Ae)',
   115: '(Ga)',
-  116: '(Gs)',
-  117: '(Gp)',
-  118: '(Gr)'
+  116: '(Gp)',
+  117: '(Gy)',
+  118: '(Ge)'
 };
 
 @Pipe({ name: 'skillLevelToShortString' })

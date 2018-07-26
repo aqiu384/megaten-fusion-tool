@@ -48,6 +48,7 @@
   "Agathion": {
     "ai": "atk",
     "arch": [
+      "Mazio",
       "Heat Wave",
       "Mutudi",
       "Luck Amp I",
@@ -55,8 +56,7 @@
     ],
     "base": [
       "Cursedi",
-      "Zio",
-      "Mazio"
+      "Zio"
     ],
     "cnum": 61,
     "grade": 5,
@@ -93,7 +93,11 @@
   "Alilat": {
     "ai": "sup",
     "arch": [
-      "Diarahan"
+      "Diarahan",
+      "Soul Drain",
+      "Mediarama",
+      "Mana Gain",
+      "Null Phys"
     ],
     "base": [
       "Megidola",
@@ -259,6 +263,7 @@
   "Apsaras": {
     "ai": "rec",
     "arch": [
+      "Diara",
       "Bufula",
       "Mecharmdi",
       "Agility Amp I",
@@ -266,8 +271,7 @@
     ],
     "base": [
       "Posumudi",
-      "Bufu",
-      "Diara"
+      "Bufu"
     ],
     "cnum": 63,
     "grade": 11,
@@ -402,7 +406,11 @@
   "Attis": {
     "ai": "atk",
     "arch": [
-      "Life Aid"
+      "Life Aid",
+      "Mabufudyne",
+      "Diarama",
+      "Null Charm",
+      "Null Ice"
     ],
     "base": [
       "Enduring Soul",
@@ -444,6 +452,7 @@
   "Azumi": {
     "ai": "rec",
     "arch": [
+      "Ice Breath",
       "Mabufu",
       "Dia",
       "Life Bonus",
@@ -451,8 +460,7 @@
     ],
     "base": [
       "Paraladi",
-      "Bufu",
-      "Ice Breath"
+      "Bufu"
     ],
     "cnum": 96,
     "grade": 3,
@@ -619,6 +627,7 @@
   "Bicorn": {
     "ai": "atk",
     "arch": [
+      "Maragi",
       "Heat Wave",
       "Charmdi",
       "Hellish Mask",
@@ -626,8 +635,7 @@
     ],
     "base": [
       "Lunge",
-      "Agi",
-      "Maragi"
+      "Agi"
     ],
     "cnum": 124,
     "grade": 9,
@@ -730,6 +738,7 @@
   "Chagrin": {
     "ai": "sup",
     "arch": [
+      "Shock",
       "Mazio",
       "Sukukaja",
       "Agility Amp I",
@@ -737,8 +746,7 @@
     ],
     "base": [
       "Weakdi",
-      "Zio",
-      "Shock"
+      "Zio"
     ],
     "cnum": 123,
     "grade": 4,
@@ -800,11 +808,16 @@
   },
   "Chupacabra": {
     "ai": "atk",
-    "arch": [],
+    "arch": [
+      "Auto-Sukuka",
+      "Spirit Drain",
+      "Paraladi",
+      "Hellish Mask",
+      "Resist Elec"
+    ],
     "base": [
       "Mazan",
-      "Stealth",
-      "Auto-Sukuka"
+      "Stealth"
     ],
     "cnum": 156,
     "grade": 15,
@@ -841,6 +854,7 @@
   "Cu Sith": {
     "ai": "sup",
     "arch": [
+      "Amrita",
       "Sweet Bite",
       "Tarukaja",
       "Life Bonus",
@@ -848,8 +862,7 @@
     ],
     "base": [
       "Cleave",
-      "Agi",
-      "Amrita"
+      "Agi"
     ],
     "cnum": 74,
     "grade": 3,
@@ -1004,6 +1017,7 @@
   "Eligor": {
     "ai": "atk",
     "arch": [
+      "Endure",
       "Fatal Sword",
       "Rakukaja",
       "Counter",
@@ -1011,8 +1025,7 @@
     ],
     "base": [
       "Mudo",
-      "Mow Down",
-      "Endure"
+      "Mow Down"
     ],
     "cnum": 90,
     "grade": 10,
@@ -1297,7 +1310,11 @@
   "Hare of Inaba": {
     "ai": "rec",
     "arch": [
-      "Recarm"
+      "Recarm",
+      "Madness Nails",
+      "Discord",
+      "Agility Amp I",
+      "Null Fire"
     ],
     "base": [
       "Dekaja",
@@ -1549,6 +1566,7 @@
   "Inugami": {
     "ai": "sup",
     "arch": [
+      "Maragi",
       "Agilao",
       "Rakunda",
       "Resist Bind",
@@ -1556,8 +1574,7 @@
     ],
     "base": [
       "Agi",
-      "Paraladi",
-      "Maragi"
+      "Paraladi"
     ],
     "cnum": 75,
     "grade": 9,
@@ -1620,6 +1637,7 @@
   "Jack Frost": {
     "ai": "atk",
     "arch": [
+      "Hama",
       "Bufula",
       "Tag",
       "Counter",
@@ -1627,8 +1645,7 @@
     ],
     "base": [
       "Bufu",
-      "Mabufu",
-      "Hama"
+      "Mabufu"
     ],
     "cnum": 81,
     "grade": 7,
@@ -1743,7 +1760,11 @@
   "Kama": {
     "ai": "sup",
     "arch": [
-      "Vorpal Blade"
+      "Vorpal Blade",
+      "Hurricane Slash",
+      "Silent Prayer",
+      "Auto-Sukuka",
+      "Repel Fire"
     ],
     "base": [
       "Speedster",
@@ -1759,7 +1780,11 @@
   "Kamiotoko": {
     "ai": "sup",
     "arch": [
-      "War Cry"
+      "War Cry",
+      "Eat Whole",
+      "Discord",
+      "Luck Amp I",
+      "Null Force"
     ],
     "base": [
       "Mudoon",
@@ -1775,7 +1800,11 @@
   "Kanbari": {
     "ai": "atk",
     "arch": [
-      "Megaton Press"
+      "Megaton Press",
+      "Mahama",
+      "Mecursedi",
+      "Mana Aid",
+      "Resist Fire"
     ],
     "base": [
       "Rampage",
@@ -1863,7 +1892,11 @@
   "Kinmamon": {
     "ai": "sup",
     "arch": [
-      "Megidola"
+      "Megidola",
+      "Energy Drain",
+      "Amrita",
+      "Dodge",
+      "Null Dark"
     ],
     "base": [
       "Megido",
@@ -1905,6 +1938,7 @@
   "Koppa Tengu": {
     "ai": "atk",
     "arch": [
+      "Wind Breath",
       "Zanma",
       "Tarunda",
       "Wild Guess",
@@ -1912,8 +1946,7 @@
     ],
     "base": [
       "Dmg Panel V I",
-      "Zan",
-      "Wind Breath"
+      "Zan"
     ],
     "cnum": 62,
     "grade": 7,
@@ -2048,6 +2081,7 @@
   "Leanan Sidhe": {
     "ai": "rec",
     "arch": [
+      "Media",
       "Mudoon",
       "Recarm",
       "Resist Poison",
@@ -2055,8 +2089,7 @@
     ],
     "base": [
       "Dia",
-      "Bufu",
-      "Media"
+      "Bufu"
     ],
     "cnum": 103,
     "grade": 12,
@@ -2273,7 +2306,7 @@
       "Megido",
       "Makarakarn",
       "Life Surge",
-      "Bufula"
+      "Resist Fire"
     ],
     "base": [
       "Makara Break",
@@ -2282,6 +2315,7 @@
     ],
     "cnum": 174,
     "gach": [
+      "Bufula",
       "Counter",
       "Mind Break",
       "Sweet Bite"
@@ -2346,6 +2380,7 @@
   "Melchom": {
     "ai": "rec",
     "arch": [
+      "Fire Breath",
       "Maragi",
       "Cursedi",
       "Mana Bonus",
@@ -2353,8 +2388,7 @@
     ],
     "base": [
       "Dia",
-      "Agi",
-      "Fire Breath"
+      "Agi"
     ],
     "cnum": 89,
     "grade": 4,
@@ -2469,6 +2503,7 @@
   "Mokoi": {
     "ai": "atk",
     "arch": [
+      "Rampage",
       "Zionga",
       "Weakdi",
       "Strength Amp I",
@@ -2476,8 +2511,7 @@
     ],
     "base": [
       "Zio",
-      "Lunge",
-      "Rampage"
+      "Lunge"
     ],
     "cnum": 109,
     "grade": 5,
@@ -2488,6 +2522,7 @@
   "Momunofu": {
     "ai": "atk",
     "arch": [
+      "Heat Wave",
       "Oni-Kagura",
       "Dekunda",
       "Endure",
@@ -2495,8 +2530,7 @@
     ],
     "base": [
       "Mow Down",
-      "Counter",
-      "Heat Wave"
+      "Counter"
     ],
     "cnum": 97,
     "grade": 15,
@@ -2573,6 +2607,7 @@
   "Nekomata": {
     "ai": "sup",
     "arch": [
+      "Sukukaja",
       "Zanma",
       "Amrita",
       "Resist Charm",
@@ -2580,8 +2615,7 @@
     ],
     "base": [
       "Charmdi",
-      "Mazan",
-      "Sukukaja"
+      "Mazan"
     ],
     "cnum": 76,
     "grade": 14,
@@ -2592,6 +2626,7 @@
   "Nozuchi": {
     "ai": "atk",
     "arch": [
+      "Rampage",
       "Zionga",
       "Cursedi",
       "Good Aim",
@@ -2599,8 +2634,7 @@
     ],
     "base": [
       "Life Bonus",
-      "Mazio",
-      "Rampage"
+      "Mazio"
     ],
     "cnum": 68,
     "grade": 15,
@@ -2631,6 +2665,7 @@
   "Obariyon": {
     "ai": "rec",
     "arch": [
+      "Lunge",
       "Rampage",
       "Sukunda",
       "Dodge",
@@ -2638,8 +2673,7 @@
     ],
     "base": [
       "Mutudi",
-      "Media",
-      "Lunge"
+      "Media"
     ],
     "cnum": 144,
     "grade": 7,
@@ -2944,6 +2978,7 @@
   "Phantom": {
     "ai": "atk",
     "arch": [
+      "Mazio",
       "Zionga",
       "Dekaja",
       "Hellish Mask",
@@ -2951,8 +2986,7 @@
     ],
     "base": [
       "Zio",
-      "Mudo",
-      "Mazio"
+      "Mudo"
     ],
     "cnum": 131,
     "grade": 10,
@@ -2983,6 +3017,7 @@
   "Pixie": {
     "ai": "rec",
     "arch": [
+      "Recovery Boost",
       "Mazio",
       "Media",
       "Resist Mute",
@@ -2990,8 +3025,7 @@
     ],
     "base": [
       "Zan",
-      "Dia",
-      "Recovery Boost"
+      "Dia"
     ],
     "cnum": 80,
     "grade": 2,
@@ -3028,6 +3062,7 @@
   "Preta": {
     "ai": "atk",
     "arch": [
+      "Mabufu",
       "Life Drain",
       "Discord",
       "Good Aim",
@@ -3035,8 +3070,7 @@
     ],
     "base": [
       "Bufu",
-      "Mudo",
-      "Mabufu"
+      "Mudo"
     ],
     "cnum": 143,
     "grade": 4,
@@ -3093,6 +3127,7 @@
   "Pyro Jack": {
     "ai": "atk",
     "arch": [
+      "Agilao",
       "Fire Breath",
       "Tag",
       "Mana Bonus",
@@ -3100,8 +3135,7 @@
     ],
     "base": [
       "Agi",
-      "Maragi",
-      "Agilao"
+      "Maragi"
     ],
     "cnum": 82,
     "grade": 13,
@@ -3236,6 +3270,7 @@
   "Sandman": {
     "ai": "atk",
     "arch": [
+      "Shibaboo",
       "Dark Sword",
       "Sukunda",
       "Epic Recovery",
@@ -3243,8 +3278,7 @@
     ],
     "base": [
       "Zan",
-      "Cleave",
-      "Shibaboo"
+      "Cleave"
     ],
     "cnum": 110,
     "grade": 10,
@@ -3575,6 +3609,7 @@
   "Slime": {
     "ai": "atk",
     "arch": [
+      "Life Drain",
       "Spirit Drain",
       "Posumudi",
       "Counter",
@@ -3582,8 +3617,7 @@
     ],
     "base": [
       "Cleave",
-      "Life Bonus",
-      "Life Drain"
+      "Life Bonus"
     ],
     "cnum": 130,
     "grade": 1,
