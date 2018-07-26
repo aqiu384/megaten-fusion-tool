@@ -1,752 +1,1114 @@
 {
   "Agi": {
     "cost": 1005,
-    "desc": "Light Fire damage to one enemy.",
-    "element": "fir"
+    "element": "fir",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Agilao": {
     "cost": 1010,
-    "desc": "Heavy Fire damage to one enemy.",
-    "element": "fir"
+    "element": "fir",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Aques": {
     "cost": 15,
-    "desc": "Light Ice damage and inflicts Freeze to one enemy.",
-    "element": "ice"
+    "effect": "Freeze",
+    "element": "wat",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Attack Call": {
+    "cost": 20,
+    "effect": "User flees battle for 1 turn but deals dmg upon return",
+    "element": "lig",
+    "target": "1 Foe"
   },
   "Auto Call": {
     "cost": 8,
-    "desc": "Replaces an ally for another demon in the Devil Riser.",
-    "element": "lig"
+    "effect": "Summon next Ally",
+    "element": "lig",
+    "target": "1 Foe"
   },
   "Big Wing": {
     "cost": 20,
-    "desc": "Light Force damage and lowers Luck for one enemy.",
-    "element": "for"
+    "effect": "Sukunda",
+    "element": "for",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Blizzard": {
+    "cost": 1015,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Bomb Claw": {
     "cost": 35,
-    "desc": "Medium Fire damage to one enemy and inflicts Bomb.",
-    "element": "fir"
+    "effect": "Bomb",
+    "element": "fir",
+    "target": "1 Foe"
   },
   "Bufu": {
     "cost": 1005,
-    "desc": "Light Ice damage to one enemy.",
-    "element": "ice"
+    "effect": "Freeze",
+    "element": "wat",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Bufula": {
     "cost": 1010,
-    "desc": "Heavy Ice damage to one enemy.",
-    "element": "ice"
+    "effect": "Freeze",
+    "element": "wat",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Burning Flare": {
+    "cost": 1025,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Burning Mite": {
     "cost": 32,
-    "desc": "Medium Fire damage to one enemy and inflicts Bomb. Hits twice.",
-    "element": "fir"
-  },
-  "Call Attack": {
-    "cost": 20,
-    "desc": "Retreats for one turn and then returns to deal damage.",
-    "element": "lig"
+    "effect": "2 hits. Bomb",
+    "element": "fir",
+    "target": "1 Foe"
   },
   "Cold Voice": {
     "cost": 20,
-    "desc": "Light Ice damage and inflicts Mute to one enemy.",
-    "element": "ice"
+    "effect": "Mute",
+    "element": "wat",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Countdown": {
     "cost": 28,
-    "desc": "Inflicts Paralysis but raises one stats for one enemy.",
-    "element": "dar"
+    "effect": "Bind. Buff all stats",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Dark Flame": {
     "cost": 32,
-    "desc": "Medium Fire damage to one enemy.",
-    "element": "fir"
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Dark Saber": {
     "cost": 20,
-    "desc": "Medium Dark damage and inflicts Charm to one enemy.",
-    "element": "dar"
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Dark Spear": {
     "cost": 5,
-    "desc": "Inflicts damage equal to 1/3 of the target's current HP.",
-    "element": "dar"
+    "effect": "Deal dmg equal to 33% user HP",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Deadly Hurricane": {
+    "cost": 1025,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Death Breath": {
     "cost": 30,
-    "desc": "Heavy Dark damage and inflicts Charm to all enemies.",
-    "element": "dar"
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 150,
+    "target": "All Foes"
   },
   "Death Claw": {
     "cost": 20,
-    "desc": "Hits all enemies twice.",
-    "element": "spe"
+    "effect": "1 Random Foe. 2 hits",
+    "element": "for",
+    "restrict": "unique",
+    "target": "Special"
   },
   "Death Rush": {
     "cost": 40,
-    "desc": "Hits all enemies four times.",
-    "element": "spe"
+    "effect": "1 Random Foe. 4 hits",
+    "element": "for",
+    "restrict": "unique",
+    "target": "Special"
   },
   "Death Vice": {
     "cost": 30,
-    "desc": "Hits one enemy twice.",
-    "element": "spe"
+    "effect": "2 hits",
+    "element": "for",
+    "restrict": "unique",
+    "target": "1 Foe"
   },
   "Dekaja": {
     "cost": 1008,
-    "desc": "Removes buffs for all enemies.",
-    "element": "deb"
+    "effect": "Remove all -kaja effects",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Dekunda": {
     "cost": 1008,
-    "desc": "Removes debuffs for all allies.",
-    "element": "buf"
+    "effect": "Remove all -kunda effects",
+    "element": "lig",
+    "target": "All Allies"
   },
   "Dia": {
     "cost": 1005,
-    "desc": "Light HP recovery for one ally.",
-    "element": "rec"
+    "effect": "Recover some HP",
+    "element": "lig",
+    "power": 50,
+    "target": "1 Ally"
   },
   "Diarahan": {
     "cost": 1020,
-    "desc": "Large HP recovery for one ally.",
-    "element": "rec"
+    "effect": "Recover some HP",
+    "element": "lig",
+    "power": 150,
+    "target": "1 Ally"
   },
   "Diarama": {
     "cost": 1010,
-    "desc": "Medium HP recovery for one ally.",
-    "element": "rec"
+    "effect": "Recover some HP",
+    "element": "lig",
+    "power": 100,
+    "target": "1 Ally"
   },
-  "Divine Thrust": {
-    "cost": 15,
-    "desc": "Light Holy damage to one enemy.",
-    "element": "lig"
+  "Divine Thunder": {
+    "cost": 1035,
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Domudi": {
     "cost": 1020,
-    "desc": "Absorbs HP from one enemy.",
-    "element": "dar"
+    "effect": "Absorb HP",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Dormina": {
     "cost": 1006,
-    "desc": "Inflicts Sleep on one enemy.",
-    "element": "ail"
+    "effect": "Sleep",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Double Hit": {
     "cost": 10,
-    "desc": "Light Dark damage to one enemy. Hits twice.",
-    "element": "dar"
+    "effect": "2 hits",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
   },
-  "Double Vise": {
+  "Double Vice": {
     "cost": 30,
-    "desc": "Medium Fire damage to one enemy. Hits twice.",
-    "element": "fir"
+    "effect": "2 hits",
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Dragon Breath": {
+    "cost": 1035,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Earth Break": {
     "cost": 20,
-    "desc": "Medium Earth damage and lowers Defense for one enemy.",
-    "element": "ear"
+    "effect": "Rakunda",
+    "element": "ear",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Earth Hammer": {
+    "cost": 1015,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Estoma": {
     "cost": 1004,
-    "desc": "Lowers enemy encounter rate.",
-    "element": "spe"
+    "effect": "Lower encounter rate",
+    "element": "lig",
+    "target": "Special"
   },
   "Evil Eyes": {
     "cost": 10,
-    "desc": "Light Dark damage and lowers Defense for all enemies. User recovers MP.",
-    "element": "dar"
+    "effect": "Rakunda. Recover MP",
+    "element": "dar",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Feral Bite": {
+    "cost": 15,
+    "element": "lig",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Feral Claw": {
     "cost": 15,
-    "desc": "Light Holy damage to one enemy.",
-    "element": "lig"
+    "element": "lig",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Fire Breath": {
     "cost": 23,
-    "desc": "Light Fire damage to all enemies.",
-    "element": "fir"
+    "element": "fir",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Freezing Wave": {
+    "cost": 1025,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Freya": {
     "cost": 15,
-    "desc": "Light Fire damage to one enemy.",
-    "element": "fir"
+    "element": "fir",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Gaia Break": {
     "cost": 25,
-    "desc": "Medium Earth damage and lowers Defense for all enemies.",
-    "element": "ear"
+    "effect": "Rakunda",
+    "element": "ear",
+    "power": 100,
+    "target": "All Foes"
   },
   "Gaia Buster": {
     "cost": 25,
-    "desc": "Light Earth damage to all enemies.",
-    "element": "ear"
+    "element": "ear",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Gale Strike": {
+    "cost": 1015,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Gather Power": {
     "cost": 15,
-    "desc": "Increases attack (self).",
-    "element": "lig"
+    "effect": "Raise Attack for 1 turn",
+    "element": "lig",
+    "target": "Self"
   },
-  "God Hand": {
+  "God's Hand": {
     "cost": 50,
-    "desc": "Heavy Holy damage to all enemies.",
-    "element": "lig"
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "God's Shield": {
+    "cost": 1015,
+    "effect": "Buff all stats",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
   },
   "Grand Break": {
     "cost": 35,
-    "desc": "Heavy Earth damage and lowers Defense for all enemies.",
-    "element": "ear"
+    "effect": "Rakunda",
+    "element": "ear",
+    "power": 150,
+    "target": "All Foes"
   },
   "Guillotine Blade": {
     "cost": 15,
-    "desc": "Light Dark damage and inflicts Charm to one enemy.",
-    "element": "dar"
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Hades Fire": {
+    "cost": 1025,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Hama": {
     "cost": 1012,
-    "desc": "Medium Holy damage to one enemy.",
-    "element": "lig"
+    "element": "lig",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Hamaon": {
     "cost": 1015,
-    "desc": "Heavy Holy damage to one enemy.",
-    "element": "lig"
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Hapirma": {
     "cost": 1006,
-    "desc": "Inflicts Happy on one enemy.",
-    "element": "ail"
+    "effect": "Happy",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Heavenly Attack": {
+    "cost": 1025,
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Heavenly Cross": {
+    "cost": 1035,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Hell Buster": {
     "cost": 60,
-    "desc": "Hits one enemy four times.",
-    "element": "spe"
+    "effect": "4 hits",
+    "element": "ele",
+    "restrict": "unique",
+    "target": "1 Foe"
   },
   "Hell Rush": {
     "cost": 40,
-    "desc": "Hits all enemies four times.",
-    "element": "spe"
+    "effect": "1 Random Foe. 4 hits",
+    "element": "ele",
+    "restrict": "unique",
+    "target": "Special"
   },
   "Hell Thrust": {
     "cost": 25,
-    "desc": "Medium Dark damage and inflicts Mute to one enemy. Ignores enemy's Guard.",
-    "element": "dar"
+    "effect": "Mute. Pierce guard",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Hell Vice": {
     "cost": 30,
-    "desc": "Hits one enemy twice.",
-    "element": "spe"
+    "effect": "2 hits",
+    "element": "ele",
+    "restrict": "unique",
+    "target": "1 Foe"
   },
   "Hellfire": {
     "cost": 25,
-    "desc": "Light Fire damage to all enemies.",
-    "element": "fir"
+    "element": "fir",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Holy Song": {
+    "cost": 1030,
+    "effect": "Revive with some HP",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
   },
   "Ice Blade": {
     "cost": 25,
-    "desc": "Medium Ice damage and inflicts Mute to one enemy.",
-    "element": "ice"
+    "effect": "Mute",
+    "element": "wat",
+    "power": 100,
+    "target": "All Foes"
   },
   "Ice Breath": {
     "cost": 23,
-    "desc": "Light Ice damage and inflicts Freeze to all enemies.",
-    "element": "ice"
+    "effect": "Freeze",
+    "element": "wat",
+    "power": 50,
+    "target": "All Foes"
   },
   "Icicle": {
     "cost": 32,
-    "desc": "Heavy Ice damage and inflicts Freeze to one enemy.",
-    "element": "ice"
+    "effect": "Freeze",
+    "element": "wat",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Ill Omen": {
     "cost": 30,
-    "desc": "Heavy Holy damage to all enemies.",
-    "element": "lig"
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
   },
   "Initalize": {
     "cost": 22,
-    "desc": "Resets buffs and debuffs for all participants in battle.",
-    "element": "lig"
+    "effect": "Remove all -kaja and -kunda effects",
+    "element": "lig",
+    "target": "All Foes"
   },
   "Intense Freeze": {
     "cost": 35,
-    "desc": "Heavy Ice damage and inflicts Mute to one enemy.",
-    "element": "ice"
+    "effect": "Mute",
+    "element": "wat",
+    "power": 150,
+    "target": "All Foes"
   },
   "Iron-cutting Leaves": {
     "cost": 28,
-    "desc": "Medium Force damage to one enemy.",
-    "element": "for"
+    "element": "for",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Judgement Thunder": {
     "cost": 35,
-    "desc": "Medium Elec damage and inflicts Paralysis to all enemies.",
-    "element": "ele"
+    "effect": "Bind",
+    "element": "ele",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Killing Blade": {
+    "cost": 1035,
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Killing Blow": {
     "cost": 5,
-    "desc": "Earth damage to one enemy. Damage increases as user loses HP.",
-    "element": "ear"
+    "effect": "Power scales with lost HP",
+    "element": "ear",
+    "target": "1 Foe"
   },
   "King Buster": {
     "cost": 60,
-    "desc": "Hits one enemy four times.",
-    "element": "spe"
+    "effect": "4 hits",
+    "element": "ele",
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "King Freeze": {
+    "cost": 1035,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "King Rush": {
     "cost": 40,
-    "desc": "Hits all enemies four times.",
-    "element": "spe"
+    "effect": "1 Random Foe. 4 hits",
+    "element": "ele",
+    "restrict": "unique",
+    "target": "Special"
   },
   "King Storm": {
     "cost": 99,
-    "desc": "Hits all enemies eight times.",
-    "element": "spe"
+    "effect": "1 Random Foe. 8 hits",
+    "element": "ele",
+    "restrict": "unique",
+    "target": "Special"
   },
   "Last Blow": {
     "cost": 8,
-    "desc": "Earth damage to all enemies. Damage increases as user loses HP.",
-    "element": "ear"
+    "effect": "Power scales with lost HP",
+    "element": "ear",
+    "target": "All Foes"
   },
   "Last Resort": {
     "cost": 2,
-    "desc": "Damage equal to user's current HP to all enemies. Lowers user's HP to 1.",
-    "element": "fir"
+    "effect": "Deal dmg equal to HP. User drops to 1 HP",
+    "element": "fir",
+    "target": "All Foes"
   },
   "Life Drain": {
     "cost": 30,
-    "desc": "Heavy Dark damage to one enemy. User recovers MP.",
-    "element": "dar"
+    "effect": "Absorb HP",
+    "element": "dar",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Light Blast": {
     "cost": 60,
-    "desc": "Heavy Holy damage to all enemies.",
-    "element": "lig"
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
   },
   "Light Flare": {
     "cost": 15,
-    "desc": "Medium Holy damage to one enemy.",
-    "element": "lig"
+    "element": "lig",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Light Howl": {
+    "cost": 1015,
+    "effect": "Buff all stats",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
   },
   "Light Spear": {
     "cost": 60,
-    "desc": "Heavy Holy damage to one enemy two times.",
-    "element": "lig"
+    "effect": "2 hits",
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Lightning Thrust": {
     "cost": 15,
-    "desc": "Light Elec damage and inflicts Shock to one enemy.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Mabufu": {
     "cost": 1018,
-    "desc": "Light Ice damage to all enemies.",
-    "element": "ice"
+    "effect": "Freeze",
+    "element": "wat",
+    "power": 50,
+    "target": "All Foes"
   },
   "Mabufudyne": {
-    "cost": 1050,
-    "desc": "Heavy Ice damage to all enemies.",
-    "element": "ice"
+    "cost": 1025,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Mabufula": {
-    "cost": 1030,
-    "desc": "Medium Ice damage to all enemies.",
-    "element": "ice"
+    "cost": 1015,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Magna": {
     "cost": 1005,
-    "desc": "Light Earth damage to one enemy.",
-    "element": "ear"
+    "element": "ear",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Magnus": {
     "cost": 1010,
-    "desc": "Heavy Earth damage to one enemy.",
-    "element": "ear"
+    "element": "ear",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Magukaja": {
     "cost": 1006,
-    "desc": "Increases Magical Defense for all allies.",
-    "element": "buf"
+    "effect": "M.Defense +1",
+    "element": "lig",
+    "target": "All Allies"
   },
   "Magunda": {
     "cost": 1005,
-    "desc": "Lowers Magical Defense for all enemies.",
-    "element": "deb"
+    "effect": "M.Defense -1",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Mahama": {
     "cost": 1027,
-    "desc": "Heavy Holy damage to all enemies.",
-    "element": "lig"
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
   },
   "Makafuji": {
     "cost": 1006,
-    "desc": "Inflicts Mute on one ememy.",
-    "element": "ail"
+    "effect": "Mute",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Makakaja": {
     "cost": 1006,
-    "desc": "Increases Magical Attack for all allies.",
-    "element": "buf"
+    "effect": "Magic +1",
+    "element": "lig",
+    "target": "All Allies"
   },
   "Makandyne": {
     "cost": 1020,
-    "desc": "Inflicts damage and lowers Magic Defense for one enemy.",
-    "element": "deb"
+    "effect": "Makanda",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Makarakarn": {
     "cost": 1012,
-    "desc": "Creates a barrier that reflects all spells.",
-    "element": "lig"
+    "effect": "Repel Magic dmg for 1 turn",
+    "element": "lig",
+    "target": "Self"
   },
   "Mamagna": {
     "cost": 1018,
-    "desc": "Light Earth damage to all enemies.",
-    "element": "ear"
+    "element": "ear",
+    "power": 50,
+    "target": "All Foes"
   },
   "Mamagnadyne": {
-    "cost": 1050,
-    "desc": "Heavy Earth damage to all enemies.",
-    "element": "ear"
+    "cost": 1025,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Mamagnus": {
-    "cost": 1030,
-    "desc": "Medium Earth damage to all enemies.",
-    "element": "ear"
+    "cost": 1015,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Maragi": {
     "cost": 1018,
-    "desc": "Light Fire damage to all enemies.",
-    "element": "fir"
+    "element": "fir",
+    "power": 50,
+    "target": "All Foes"
   },
   "Maragidyne": {
-    "cost": 1050,
-    "desc": "Heavy Fire damage to all enemies.",
-    "element": "fir"
+    "cost": 1025,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Maragion": {
-    "cost": 1030,
-    "desc": "Medium Fire damage to all enemies.",
-    "element": "fir"
+    "cost": 1015,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Marin Karin": {
     "cost": 1006,
-    "desc": "Inflicts Charm on one enemy.",
-    "element": "ail"
+    "effect": "Charm",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Marvelous Dance": {
     "cost": 10,
-    "desc": "Inflicts Charm to one random enemy.",
-    "element": "dar"
+    "effect": "1 Random Foe. Charm",
+    "element": "dar",
+    "target": "Special"
   },
   "Mazan": {
     "cost": 1018,
-    "desc": "Light Force damage to all enemies.",
-    "element": "for"
+    "element": "for",
+    "power": 50,
+    "target": "All Foes"
   },
   "Mazandyne": {
-    "cost": 1050,
-    "desc": "Heavy Force damage to all enemies.",
-    "element": "for"
+    "cost": 1025,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Mazanma": {
-    "cost": 1030,
-    "desc": "Medium Force damage to all enemies.",
-    "element": "for"
+    "cost": 1015,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Mazio": {
     "cost": 1018,
-    "desc": "Light Elec damage to all enemies.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "All Foes"
   },
   "Maziodyne": {
-    "cost": 1050,
-    "desc": "Heavy Elec damage to all enemies.",
-    "element": "ele"
+    "cost": 1025,
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Mazionga": {
-    "cost": 1030,
-    "desc": "Medium Elec damage to all enemies.",
-    "element": "ele"
+    "cost": 1015,
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Media": {
     "cost": 1012,
-    "desc": "Light HP recovery for all allies.",
-    "element": "rec"
+    "effect": "Recover some HP",
+    "element": "lig",
+    "power": 50,
+    "target": "All Allies"
   },
   "Mediarahan": {
     "cost": 1030,
-    "desc": "Large HP recovery for all allies.",
-    "element": "rec"
+    "effect": "Recover some HP",
+    "element": "lig",
+    "power": 150,
+    "target": "All Allies"
   },
   "Mediarama": {
     "cost": 1018,
-    "desc": "Medium HP recovery for all allies.",
-    "element": "rec"
+    "effect": "Recover some HP",
+    "element": "lig",
+    "power": 100,
+    "target": "All Allies"
   },
   "Mega Cyclone": {
     "cost": 35,
-    "desc": "Medium Force damage and lowers Luck for one enemy.",
-    "element": "for"
+    "effect": "Sukunda",
+    "element": "for",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Megaton Press": {
+    "cost": 1035,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Meteor Strike": {
+    "cost": 1035,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Mite": {
     "cost": 1006,
-    "desc": "Inflicts Bomb on one enemy.",
-    "element": "ail"
+    "effect": "Bomb",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Mitedyne": {
     "cost": 1020,
-    "desc": "Inflicts damage and Bomb on one enemy.",
-    "element": "ail"
+    "effect": "Bomb",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Mudo": {
     "cost": 1010,
-    "desc": "Medium Dark damage to one enemy.",
-    "element": "dar"
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Mudoon": {
     "cost": 1020,
-    "desc": "Heavy Dark damage to all enemies.",
-    "element": "dar"
+    "element": "dar",
+    "power": 150,
+    "target": "All Foes"
   },
   "Myriad Hits": {
     "cost": 15,
-    "desc": "Light Dark damage to one enemy. Hits three times.",
-    "element": "dar"
+    "effect": "3 hits",
+    "element": "dar",
+    "power": 50,
+    "target": "All Foes"
   },
-  "Parala Eyes": {
+  "Paral Eyes": {
     "cost": 20,
-    "desc": "Medium Dark damage and inflicts Paralysis to one enemy.",
-    "element": "dar"
+    "effect": "Bind",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Paraladyne": {
     "cost": 1035,
-    "desc": "Inflicts damage and Paralysis on one enemy.",
-    "element": "ail"
+    "effect": "Bind",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Paralama": {
     "cost": 1006,
-    "desc": "Inflicts Paralysis on one enemy.",
-    "element": "ail"
+    "effect": "Bind",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Patra": {
     "cost": 1006,
-    "desc": "Removes ailments for one ally.",
-    "element": "rec"
+    "effect": "Remove all ailments",
+    "element": "lig",
+    "target": "1 Ally"
   },
   "Patradi": {
     "cost": 1012,
-    "desc": "Removes ailments and restores HP for one ally.",
-    "element": "rec"
+    "effect": "Recover some HP. Remove all ailments",
+    "element": "lig",
+    "target": "1 Ally"
   },
   "Poisdyne": {
     "cost": 1020,
-    "desc": "Inflicts damage and Poison on one enemy.",
-    "element": "ail"
+    "effect": "Poison",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Poisma": {
     "cost": 1006,
-    "desc": "Inflicts Poison on one enemy.",
-    "element": "ail"
+    "effect": "Poison",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Poison Blade": {
     "cost": 25,
-    "desc": "Medium Dark damage and inflicts Poison to one enemy.",
-    "element": "dar"
+    "effect": "Poison",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Poison Breath": {
     "cost": 35,
-    "desc": "Heavy Dark damage and inflicts Poison to all enemies.",
-    "element": "dar"
+    "effect": "Poison",
+    "element": "dar",
+    "power": 150,
+    "target": "All Foes"
   },
   "Poison Claw": {
     "cost": 10,
-    "desc": "Light Dark damage and inflicts Poison to one enemy.",
-    "element": "dar"
+    "effect": "Poison",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Pulinpa": {
     "cost": 1006,
-    "desc": "Inflicts Confusion on one enemy.",
-    "element": "ail"
+    "effect": "Panic",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Pulinpadyne": {
     "cost": 1030,
-    "desc": "Inflicts damage and Confusion on one enemy.",
-    "element": "ail"
+    "effect": "Panic",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Pyramid Power": {
+    "cost": 1015,
+    "effect": "Buff all stats",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
   },
   "Quick Blade": {
     "cost": 20,
-    "desc": "Dark damage and resets buffs for all enemies. Always goes first.",
-    "element": "dar"
+    "effect": "Act first. Initialize",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Quick Buster": {
     "cost": 40,
-    "desc": "Medium Elec damage to one enemy. Always goes first.",
-    "element": "ele"
+    "effect": "Act first",
+    "element": "ele",
+    "power": 100,
+    "target": "1 Foe"
   },
   "Quick Spear": {
     "cost": 28,
-    "desc": "Light Elec damage to one enemy. Always goes first.",
-    "element": "ele"
+    "effect": "Act first",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Rakukaja": {
     "cost": 1006,
-    "desc": "Increases Defense for all allies.",
-    "element": "buf"
+    "effect": "Defense +1",
+    "element": "lig",
+    "target": "All Allies"
   },
   "Rakunda": {
     "cost": 1005,
-    "desc": "Lowers Defense for all enemies.",
-    "element": "deb"
+    "effect": "Defense -1",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Rakundyne": {
     "cost": 1015,
-    "desc": "Inflicts damage and lowers Defense for all enemies.",
-    "element": "deb"
+    "effect": "Rakunda",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Rampage": {
     "cost": 20,
-    "desc": "Medium Dark damage to one enemy. Hits four times.",
-    "element": "dar"
+    "effect": "4 hits",
+    "element": "dar",
+    "power": 100,
+    "target": "All Foes"
   },
   "Recarm": {
     "cost": 1018,
-    "desc": "Revives one ally with low HP.",
-    "element": "rec"
+    "effect": "Revive with full HP",
+    "element": "lig",
+    "target": "1 Ally"
   },
   "Riberama": {
     "cost": 1004,
-    "desc": "Increases enemy encounter rate.",
-    "element": "spe"
+    "effect": "Raise encounter rate",
+    "element": "lig",
+    "target": "Special"
   },
   "Rock Fall": {
     "cost": 32,
-    "desc": "Heavy Earth damage to one enemy.",
-    "element": "ear"
+    "element": "ear",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Round Bite": {
     "cost": 10,
-    "desc": "Light Dark damage to one enemy. Ignores enemy's Guard.",
-    "element": "dar"
+    "effect": "Pierce guard",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Saint Attack": {
     "cost": 35,
-    "desc": "Heavy Holy damage to one enemy.",
-    "element": "lig"
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Samarecarm": {
     "cost": 1025,
-    "desc": "Revives one ally with full HP.",
-    "element": "rec"
+    "effect": "Revive with some HP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Shadow Break": {
+    "cost": 1025,
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Skull Breaker": {
     "cost": 25,
-    "desc": "Light Elec damage and inflicts Shock to all enemies.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "All Foes"
   },
   "Sonic Boom": {
     "cost": 23,
-    "desc": "Light Force damage to all enemies.",
-    "element": "for"
+    "element": "for",
+    "power": 50,
+    "target": "All Foes"
   },
   "Sonic Wing": {
     "cost": 25,
-    "desc": "Light Force damage to all enemies.",
-    "element": "for"
+    "element": "for",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Sparking Bolt": {
+    "cost": 1025,
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Speed Up": {
     "cost": 1006,
-    "desc": "Increases Speed for all allies.",
-    "element": "buf"
+    "effect": "Agility +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Stomp": {
+    "cost": 1025,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Stun Claw": {
+    "cost": 1015,
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Stun Shot": {
     "cost": 12,
-    "desc": "Light Elec damage and inflicts Shock to one enemy.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Sukukaja": {
     "cost": 1006,
-    "desc": "Increases Luck for all allies.",
-    "element": "buf"
+    "effect": "Luck +1",
+    "element": "lig",
+    "target": "All Allies"
   },
   "Sukunda": {
     "cost": 1005,
-    "desc": "Lowers Luck for all enemies.",
-    "element": "deb"
+    "effect": "Luck -1",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Tackle": {
     "cost": 15,
-    "desc": "Light Earth damage to one enemy.",
-    "element": "ear"
+    "element": "ear",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Tarukaja": {
     "cost": 1006,
-    "desc": "Increases Attack for all allies.",
-    "element": "buf"
+    "effect": "Attack +1",
+    "element": "lig",
+    "target": "All Allies"
   },
   "Tarunda": {
     "cost": 1005,
-    "desc": "Lowers Attack for all enemies.",
-    "element": "deb"
+    "effect": "Attack -1",
+    "element": "dar",
+    "target": "All Foes"
   },
   "Tarundyne": {
     "cost": 1015,
-    "desc": "Inflicts damage and lowers Attack for one enemy.",
-    "element": "deb"
+    "effect": "Tarunda",
+    "element": "dar",
+    "target": "1 Foe"
   },
   "Tetrakarn": {
     "cost": 25,
-    "desc": "Creates a barrier that reflects all skills.",
-    "element": "dar"
+    "effect": "Repel Phys dmg for 1 turn",
+    "element": "dar",
+    "target": "Self"
   },
   "Thor Hammer": {
     "cost": 32,
-    "desc": "Medium Elec damage and inflicts Shock to one enemy.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Thunder Call": {
+    "cost": 1015,
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Thunderbolt": {
     "cost": 23,
-    "desc": "Light Elec damage and inflicts Shock to all enemies.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "All Foes"
   },
   "Traport": {
     "cost": 1010,
-    "desc": "Teleports to any Land / Area.",
-    "element": "spe"
+    "effect": "Teleport to another area",
+    "element": "lig",
+    "target": "Special"
   },
   "Trio The Punch": {
     "cost": 16,
-    "desc": "Random Ice damage and inflicts Happy. Hits eight times (random enemies).",
-    "element": "ice"
+    "effect": "1 Random Foe. 8 hits. Happy",
+    "element": "wat",
+    "restrict": "unique",
+    "target": "All Foes"
   },
-  "Triple Vise": {
+  "Triple Vice": {
     "cost": 50,
-    "desc": "Heavy Fire damage to one enemy. Hits three times.",
-    "element": "fir"
+    "effect": "3 hits",
+    "element": "fir",
+    "target": "1 Foe"
+  },
+  "Twin Vice": {
+    "cost": 1015,
+    "effect": "2 hits",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
   },
   "Wing Flap": {
     "cost": 15,
-    "desc": "Light Force damage to one enemy.",
-    "element": "for"
+    "element": "for",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Zan": {
     "cost": 1005,
-    "desc": "Light Force damage to one enemy.",
-    "element": "for"
+    "element": "for",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Zanma": {
     "cost": 1010,
-    "desc": "Heavy Force damage to one enemy.",
-    "element": "for"
+    "element": "for",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Zio": {
     "cost": 1005,
-    "desc": "Light Elec damage to one enemy.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
   },
   "Zionga": {
     "cost": 1010,
-    "desc": "Heavy Elec damage to one enemy.",
-    "element": "ele"
+    "effect": "Shock",
+    "element": "ele",
+    "power": 150,
+    "target": "1 Foe"
   }
 }

@@ -34,19 +34,12 @@
     "range": 77,
     "target": "Multiple enemies"
   },
-  "Bite": {
-    "effect": "70% chance to inflict Close",
-    "element": "phy",
-    "power": 100,
-    "range": 11,
-    "target": "Single enemy"
-  },
-  "Body Blow": {
+  "Berserk": {
     "effect": "Deals damage",
     "element": "phy",
-    "power": 200,
+    "power": 150,
     "range": 11,
-    "target": "Single enemy"
+    "target": "Multiple enemies"
   },
   "Bomb Throw": {
     "effect": "Deals damage",
@@ -97,13 +90,20 @@
     "range": 11,
     "target": "Single enemy"
   },
+  "Constrict": {
+    "effect": "75% chance of inflicting Bind",
+    "element": "phy",
+    "power": 100,
+    "range": 11,
+    "target": "Multiple enemies"
+  },
   "Coup de Grace": {
     "effect": "80% chance of instant death",
     "element": "ail",
     "range": 11,
     "target": "Single enemy"
   },
-  "Death Touch": {
+  "Deathtouch": {
     "effect": "Absorbs half of the enemy's max HP and gives to the user",
     "element": "rec",
     "range": 11,
@@ -118,13 +118,6 @@
   "Devil's Wink": {
     "effect": "80% chance to inflict Paralyze",
     "element": "ail",
-    "range": 11,
-    "target": "Multiple enemies"
-  },
-  "Di Punish": {
-    "effect": "Same effect as Megidolaon",
-    "element": "alm",
-    "power": 100,
     "range": 11,
     "target": "Multiple enemies"
   },
@@ -159,7 +152,14 @@
     "range": 7,
     "target": "1 ally"
   },
-  "Dogururadoru": {
+  "Dipunish": {
+    "effect": "Same effect as Megidolaon",
+    "element": "alm",
+    "power": 100,
+    "range": 11,
+    "target": "Multiple enemies"
+  },
+  "Dogradoru": {
     "cost": 1010,
     "effect": "Give Poison status to one enemy",
     "element": "sup",
@@ -183,6 +183,20 @@
     "effect": "Same effect as Gigarion",
     "element": "gig",
     "power": 86,
+    "range": 11,
+    "target": "Multiple enemies"
+  },
+  "Feral Bite": {
+    "effect": "70% chance to inflict Close",
+    "element": "phy",
+    "power": 100,
+    "range": 11,
+    "target": "Single enemy"
+  },
+  "Feral Claw": {
+    "effect": "70% chance to inflict Sleep",
+    "element": "phy",
+    "power": 200,
     "range": 11,
     "target": "Multiple enemies"
   },
@@ -255,15 +269,15 @@
     "range": 22,
     "target": "Multiple enemies"
   },
-  "Hell Splash": {
-    "effect": "Ice based attack",
+  "Hellfire": {
+    "effect": "Fire based attack",
     "element": "phy",
     "power": 100,
     "range": 22,
     "target": "Multiple enemies"
   },
-  "Hellfire": {
-    "effect": "Fire based attack",
+  "Hellish Spurt": {
+    "effect": "Ice based attack",
     "element": "phy",
     "power": 100,
     "range": 22,
@@ -490,7 +504,7 @@
     "range": 11,
     "target": "Multiple allies"
   },
-  "Para-roux": {
+  "Paral": {
     "cost": 1012,
     "effect": "Gives Paralyze status to one enemy",
     "element": "sup",
@@ -503,20 +517,6 @@
     "element": "rec",
     "range": 1,
     "target": "1 ally"
-  },
-  "Paralysis Bite": {
-    "effect": "70% chance to inflict Paralyze",
-    "element": "phy",
-    "power": 100,
-    "range": 11,
-    "target": "Single enemy"
-  },
-  "Paralyzing Scratch": {
-    "effect": "70% chance to inflict Paralyze",
-    "element": "phy",
-    "power": 200,
-    "range": 11,
-    "target": "Multiple enemies"
   },
   "Patra": {
     "cost": 1030,
@@ -532,20 +532,6 @@
     "range": 11,
     "target": "1 enemy"
   },
-  "Petra Bite": {
-    "effect": "70% chance to inflict Stone",
-    "element": "phy",
-    "power": 100,
-    "range": 11,
-    "target": "Single enemy"
-  },
-  "Petra Breath": {
-    "effect": "100% chance to inflict Stone",
-    "element": "phy",
-    "power": 100,
-    "range": 57,
-    "target": "Single enemy"
-  },
   "Petradi": {
     "cost": 1025,
     "effect": "Heals Stone for 1 ally",
@@ -560,14 +546,7 @@
     "range": 57,
     "target": "Single enemy"
   },
-  "Poison Burr": {
-    "effect": "100% chance to inflict Poison",
-    "element": "phy",
-    "power": 100,
-    "range": 11,
-    "target": "Single enemy"
-  },
-  "Poison Scratch": {
+  "Poison Claw": {
     "effect": "70% chance to inflict Poison",
     "element": "phy",
     "power": 200,
@@ -585,13 +564,6 @@
     "effect": "Same effect as Zioraon",
     "element": "ele",
     "power": 88,
-    "range": 11,
-    "target": "Multiple enemies"
-  },
-  "Rampage": {
-    "effect": "Deals damage",
-    "element": "phy",
-    "power": 150,
     "range": 11,
     "target": "Multiple enemies"
   },
@@ -628,13 +600,6 @@
     "range": 7,
     "target": "1 ally"
   },
-  "Scratch": {
-    "effect": "70% chance to inflict Sleep",
-    "element": "phy",
-    "power": 200,
-    "range": 11,
-    "target": "Multiple enemies"
-  },
   "Second Wind": {
     "effect": "Elec based attack",
     "element": "phy",
@@ -668,23 +633,58 @@
     "range": 1,
     "target": "Multiple allies"
   },
-  "Song of Life": {
-    "effect": "Same effect as Diarahan",
-    "element": "rec",
-    "range": 1,
-    "target": "Multiple allies"
-  },
-  "Song of the Earth": {
+  "Song of Earth": {
     "effect": "Same effect as Diarama",
     "element": "rec",
     "power": 32,
     "range": 7,
     "target": "Multiple allies"
   },
-  "Squeezing": {
+  "Song of Life": {
+    "effect": "Same effect as Diarahan",
+    "element": "rec",
+    "range": 1,
+    "target": "Multiple allies"
+  },
+  "Squash": {
     "effect": "Deals damage",
     "element": "phy",
     "power": 300,
+    "range": 11,
+    "target": "Single enemy"
+  },
+  "Stone Bite": {
+    "effect": "70% chance to inflict Stone",
+    "element": "phy",
+    "power": 100,
+    "range": 11,
+    "target": "Single enemy"
+  },
+  "Stone Breath": {
+    "effect": "100% chance to inflict Stone",
+    "element": "phy",
+    "power": 100,
+    "range": 57,
+    "target": "Single enemy"
+  },
+  "Stun Bite": {
+    "effect": "70% chance to inflict Paralyze",
+    "element": "phy",
+    "power": 100,
+    "range": 11,
+    "target": "Single enemy"
+  },
+  "Stun Claw": {
+    "effect": "70% chance to inflict Paralyze",
+    "element": "phy",
+    "power": 200,
+    "range": 11,
+    "target": "Multiple enemies"
+  },
+  "Tackle": {
+    "effect": "Deals damage",
+    "element": "phy",
+    "power": 200,
     "range": 11,
     "target": "Single enemy"
   },
@@ -709,7 +709,14 @@
     "range": 77,
     "target": "Multiple enemies"
   },
-  "Tsukumo Burr": {
+  "Toxic Sting": {
+    "effect": "100% chance to inflict Poison",
+    "element": "phy",
+    "power": 100,
+    "range": 11,
+    "target": "Single enemy"
+  },
+  "Tsukumo Sting": {
     "effect": "100% chance to inflict Close",
     "element": "phy",
     "power": 100,
@@ -721,13 +728,6 @@
     "element": "fir",
     "power": 80,
     "range": 77,
-    "target": "Multiple enemies"
-  },
-  "Winding": {
-    "effect": "75% chance of inflicting Bind",
-    "element": "phy",
-    "power": 100,
-    "range": 11,
     "target": "Multiple enemies"
   },
   "Wing Flap": {

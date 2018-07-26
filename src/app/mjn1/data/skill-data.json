@@ -13,13 +13,13 @@
     "range": 22,
     "target": "1 enemy"
   },
-  "Body Blow": {
+  "Berserk": {
     "effect": "Deals damage",
     "element": "phy",
     "hit": 100,
-    "power": 200,
-    "range": 11,
-    "target": "1 enemy"
+    "power": 150,
+    "range": 12,
+    "target": "Multiple enemies"
   },
   "Bufu": {
     "cost": 1008,
@@ -33,14 +33,6 @@
     "element": "ice",
     "power": 36,
     "range": 22,
-    "target": "1 enemy"
-  },
-  "Crush": {
-    "effect": "Deals damage",
-    "element": "phy",
-    "hit": 100,
-    "power": 300,
-    "range": 11,
     "target": "1 enemy"
   },
   "Detoxify": {
@@ -85,13 +77,6 @@
     "hit": 50,
     "power": 25,
     "range": 11,
-    "target": "1 enemy"
-  },
-  "Electric Shock": {
-    "element": "ele",
-    "hit": 100,
-    "power": 45,
-    "range": 22,
     "target": "1 enemy"
   },
   "Fire Breath": {
@@ -192,7 +177,7 @@
     "range": 2,
     "target": "Multiple allies"
   },
-  "Paral Eye": {
+  "Paral Eyes": {
     "effect": "Deals damage and Paralysis status",
     "element": "phy",
     "hit": 75,
@@ -206,29 +191,6 @@
     "element": "rec",
     "range": 2,
     "target": "One ally"
-  },
-  "Paralysis Bite": {
-    "effect": "Deals damage and Paralysis status",
-    "element": "phy",
-    "hit": 50,
-    "power": 25,
-    "range": 11,
-    "target": "1 enemy"
-  },
-  "Paralysis Recovery": {
-    "effect": "Heals Paralysis status",
-    "element": "rec",
-    "hit": 100,
-    "range": 12,
-    "target": "1 ally"
-  },
-  "Paralysis Scratch": {
-    "effect": "Deals damage and Paralysis status",
-    "element": "phy",
-    "hit": 100,
-    "power": 25,
-    "range": 11,
-    "target": "1 enemy"
   },
   "Patra": {
     "cost": 1015,
@@ -252,7 +214,15 @@
     "range": 11,
     "target": "1 enemy"
   },
-  "Poison Scratch": {
+  "Poison Breath": {
+    "effect": "Deals damage and Poison status",
+    "element": "phy",
+    "hit": 75,
+    "power": 25,
+    "range": 11,
+    "target": "1 enemy"
+  },
+  "Poison Claw": {
     "effect": "Deals damage and Poison status",
     "element": "phy",
     "power": 25,
@@ -280,14 +250,6 @@
     "range": 22,
     "target": "Multiple enemies"
   },
-  "Rampage": {
-    "effect": "Deals damage",
-    "element": "phy",
-    "hit": 100,
-    "power": 150,
-    "range": 12,
-    "target": "Multiple enemies"
-  },
   "Rimdora": {
     "cost": 1099,
     "element": "for",
@@ -308,7 +270,14 @@
     "range": 11,
     "target": "1 enemy"
   },
-  "Shock Wave": {
+  "Shock": {
+    "element": "ele",
+    "hit": 100,
+    "power": 45,
+    "range": 22,
+    "target": "1 enemy"
+  },
+  "Shockwave": {
     "element": "for",
     "hit": 100,
     "power": 96,
@@ -322,11 +291,42 @@
     "range": 12,
     "target": "Multiple allies"
   },
-  "Spit Poison": {
-    "effect": "Deals damage and Poison status",
+  "Squash": {
+    "effect": "Deals damage",
     "element": "phy",
-    "hit": 75,
+    "hit": 100,
+    "power": 300,
+    "range": 11,
+    "target": "1 enemy"
+  },
+  "Stun Bite": {
+    "effect": "Deals damage and Paralysis status",
+    "element": "phy",
+    "hit": 50,
     "power": 25,
+    "range": 11,
+    "target": "1 enemy"
+  },
+  "Stun Claw": {
+    "effect": "Deals damage and Paralysis status",
+    "element": "phy",
+    "hit": 100,
+    "power": 25,
+    "range": 11,
+    "target": "1 enemy"
+  },
+  "Stun Recovery": {
+    "effect": "Heals Paralysis status",
+    "element": "rec",
+    "hit": 100,
+    "range": 12,
+    "target": "1 ally"
+  },
+  "Tackle": {
+    "effect": "Deals damage",
+    "element": "phy",
+    "hit": 100,
+    "power": 200,
     "range": 11,
     "target": "1 enemy"
   },

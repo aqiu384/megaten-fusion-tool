@@ -1,0 +1,2911 @@
+{
+  "Acid Nebula": {
+    "cost": 1035,
+    "effect": "Bind",
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Acid Rain": {
+    "cost": 1025,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Aerial Slayer": {
+    "effect": "Aerial enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Agi": {
+    "cost": 1005,
+    "element": "fir",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Agidyne": {
+    "cost": 1015,
+    "element": "fir",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Agilao": {
+    "cost": 1010,
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Aloof": {
+    "effect": "Encounter rate -10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Angelic Song": {
+    "cost": 1025,
+    "effect": "Insta Death",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Aqua": {
+    "cost": 1005,
+    "element": "wat",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Aqua Flood": {
+    "cost": 20,
+    "element": "wat",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Aqua Wall": {
+    "cost": 35,
+    "effect": "Nullify Water dmg for one turn",
+    "element": "wat",
+    "target": "Unknown"
+  },
+  "Aquadyne": {
+    "cost": 1015,
+    "element": "wat",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Aques": {
+    "cost": 1010,
+    "element": "wat",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Arc Blade": {
+    "cost": 30,
+    "effect": "Act first. 2 hits. Charm",
+    "element": "dar",
+    "power": 50,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Arid Blade": {
+    "cost": 30,
+    "effect": "4 hits. Rakunda",
+    "element": "dar",
+    "power": 100,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Armageddon": {
+    "cost": 1025,
+    "effect": "3 hits",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Assault Dive": {
+    "cost": 15,
+    "effect": "Dmgs user",
+    "element": "ear",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Asura Cycle": {
+    "cost": 50,
+    "effect": "4 hits",
+    "element": "dar",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Atom Smasher": {
+    "cost": 1025,
+    "effect": "Mute",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Aura Cannon": {
+    "cost": 1030,
+    "effect": "Insta Death",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "1 Foe"
+  },
+  "Aurora Mail": {
+    "cost": 1025,
+    "effect": "Repel all magic for one turn",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Auto Call": {
+    "cost": 8,
+    "effect": "Summon next Ally",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Avian Slayer": {
+    "effect": "Avian enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Awkward": {
+    "effect": "Chance of being targetted +50%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Battle Breath": {
+    "cost": 1015,
+    "effect": "Buff all stats",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Battle Rush": {
+    "cost": 50,
+    "effect": "4 hits",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Battle Song": {
+    "cost": 1025,
+    "effect": "Tarukaja + Makakaja",
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Beast Affinity": {
+    "effect": "Increase negotiation success rate against Beast-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Beast Slayer": {
+    "effect": "Beast enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Berserk": {
+    "cost": 1040,
+    "effect": "1-4 hits",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "Special"
+  },
+  "Big Wing": {
+    "cost": 20,
+    "effect": "Sukunda",
+    "element": "for",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Blitz Rain": {
+    "cost": 1025,
+    "effect": "Shock",
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Blizzard": {
+    "cost": 1015,
+    "effect": "Freeze",
+    "element": "ice",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Blood Lance": {
+    "cost": 40,
+    "effect": "2 hits",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Blood Rain": {
+    "cost": 35,
+    "effect": "8 hits. Rakunda",
+    "element": "wat",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Blood Strike": {
+    "cost": 30,
+    "effect": "2 hits. Panic",
+    "element": "dar",
+    "power": 50,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Bomb Claw": {
+    "cost": 35,
+    "effect": "Bomb",
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Braid Dance": {
+    "cost": 50,
+    "effect": "2 hits. Pierce guard",
+    "element": "dar",
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Bright Judgement": {
+    "cost": 40,
+    "effect": "Mute",
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Brute Slayer": {
+    "effect": "Brute enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Bufu": {
+    "cost": 1005,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Bufudyne": {
+    "cost": 1015,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Bufula": {
+    "cost": 1010,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Burning Flare": {
+    "cost": 1025,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Burning Mite": {
+    "cost": 32,
+    "effect": "2 hits. Bomb",
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Burning Ray": {
+    "cost": 35,
+    "effect": "8 hits. Bomb",
+    "element": "fir",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Burning Soul": {
+    "cost": 30,
+    "effect": "4 hits. Tarunda",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Burning Wall": {
+    "cost": 35,
+    "effect": "Nullify Fire dmg for one turn",
+    "element": "fir",
+    "target": "Unknown"
+  },
+  "Butterfly Bead": {
+    "cost": 40,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Buzz Blast": {
+    "cost": 18,
+    "effect": "Panic",
+    "element": "for",
+    "power": 100,
+    "target": "2 Foes"
+  },
+  "Calm": {
+    "effect": "Crit +20% when HP drops below 20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Chaos Fang": {
+    "cost": 30,
+    "effect": "2 hits. Panic",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Chaos Wave": {
+    "cost": 50,
+    "effect": "Panic",
+    "element": "dar",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Charisma": {
+    "effect": "Encounter rate +10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Cheer": {
+    "cost": 1030,
+    "effect": "Buff all stats",
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Chilly 1": {
+    "effect": "Normal attack +10% Freeze",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Chilly 2": {
+    "effect": "Normal attack +15% Freeze",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Cocytus": {
+    "cost": 1025,
+    "effect": "3 hits",
+    "element": "ice",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Cold Voice": {
+    "cost": 20,
+    "effect": "Mute",
+    "element": "ice",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Countdown": {
+    "cost": 28,
+    "effect": "Bind. Buff all stats",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Crimson Ray": {
+    "cost": 50,
+    "effect": "2 hits",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Crocus Beam": {
+    "cost": 10,
+    "effect": "Bind",
+    "element": "lig",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Cross Nova": {
+    "cost": 50,
+    "effect": "Insta Death",
+    "element": "fir",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Crushing Claw": {
+    "cost": 20,
+    "effect": "Rakunda",
+    "element": "dar",
+    "power": 50,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Crushing Noise": {
+    "cost": 20,
+    "effect": "High crit. Avian targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Crystal Dance": {
+    "cost": 1025,
+    "effect": "Freeze",
+    "element": "ice",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Crystallos": {
+    "cost": 40,
+    "effect": "1 Random Foe. 2 hits. Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "Special"
+  },
+  "Cupid's Bow": {
+    "cost": 10,
+    "effect": "Charm",
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Curl Up": {
+    "cost": 10,
+    "effect": "Rakukaja",
+    "element": "ear",
+    "target": "Self"
+  },
+  "Cursed Gust": {
+    "cost": 1025,
+    "effect": "Poison",
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Dance of Flames": {
+    "cost": 40,
+    "effect": "2 hits. Bomb",
+    "element": "fir",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Dark Boost": {
+    "effect": "Dark dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Dark Crescent": {
+    "cost": 1025,
+    "effect": "Insta Death",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Dark Flame": {
+    "cost": 32,
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Dark Gate": {
+    "cost": 20,
+    "effect": "High crit. Nether targets only",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Dark Howl": {
+    "cost": 25,
+    "element": "dar",
+    "power": 50,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Dark Judgement": {
+    "cost": 50,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Dark Saber": {
+    "cost": 20,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Dark Spear": {
+    "cost": 5,
+    "effect": "Deal dmg equal to 33% user HP",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Dark Wall": {
+    "cost": 35,
+    "effect": "Nullify Dark dmg for one turn",
+    "element": "dar",
+    "target": "Unknown"
+  },
+  "Deadly Hurricane": {
+    "cost": 1025,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Deadly Storm": {
+    "cost": 50,
+    "effect": "4 hits. Bind",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Death Breath": {
+    "cost": 30,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Death Claw": {
+    "cost": 20,
+    "effect": "1 Random Foe. 2 hits",
+    "element": "for",
+    "power": 50,
+    "restrict": "unique",
+    "target": "Special"
+  },
+  "Death Rush": {
+    "cost": 40,
+    "effect": "1-4 hits",
+    "element": "for",
+    "power": 100,
+    "restrict": "unique",
+    "target": "Special"
+  },
+  "Death Scythe": {
+    "cost": 1025,
+    "effect": "Pierce guard",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Death Vice": {
+    "cost": 30,
+    "effect": "2 hits",
+    "element": "for",
+    "power": 100,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Deicide": {
+    "cost": 20,
+    "effect": "High crit. Deity targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Deity Slayer": {
+    "effect": "Deity enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Dekaja": {
+    "cost": 1008,
+    "effect": "Remove all -kaja effects",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Dekunda": {
+    "cost": 1008,
+    "effect": "Remove all -kunda effects",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Delta Force": {
+    "cost": 55,
+    "effect": "70% Sleep",
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Dia": {
+    "cost": 1005,
+    "effect": "Recover 40 HP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1020,
+    "effect": "Recover all HP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Diarama": {
+    "cost": 1010,
+    "effect": "Recover 90 HP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Divine Thunder": {
+    "cost": 1035,
+    "effect": "Shock",
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Divine Veil": {
+    "cost": 1025,
+    "effect": "Buff all stats",
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Domudi": {
+    "cost": 1020,
+    "effect": "Absorb HP",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Dormina": {
+    "cost": 1006,
+    "effect": "70% Sleep",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Double Hit": {
+    "cost": 10,
+    "effect": "2 hits",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Double Vice": {
+    "cost": 30,
+    "effect": "2 hits",
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Dragon Blow": {
+    "cost": 1015,
+    "effect": "2 hits",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Dragon Breath": {
+    "cost": 1025,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Dragon Burst": {
+    "cost": 1035,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Dragon Cross": {
+    "cost": 1035,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Dragon Cry": {
+    "cost": 40,
+    "effect": "2 hits. Bind",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Dragon Gate": {
+    "cost": 50,
+    "effect": "4 hits",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Dragon Killing": {
+    "cost": 20,
+    "effect": "High crit. Dragon targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Dragon Power": {
+    "cost": 1025,
+    "effect": "Tarukaja",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Dragon Slayer": {
+    "effect": "Dragon enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Dark": {
+    "effect": "Drain Dark dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Earth": {
+    "effect": "Drain Earth dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Elec": {
+    "effect": "Drain Elec dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Fire": {
+    "effect": "Drain Fire dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Force": {
+    "effect": "Drain Force dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Ice": {
+    "effect": "Drain Ice dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Light": {
+    "effect": "Drain Light dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Drain Water": {
+    "effect": "Drain Water dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Earth Boost": {
+    "effect": "Earth dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Earth Break": {
+    "cost": 20,
+    "effect": "Rakunda",
+    "element": "ear",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Earth Hammer": {
+    "cost": 1015,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Elec Boost": {
+    "effect": "Elec dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Electric Spark": {
+    "cost": 15,
+    "effect": "Bind",
+    "element": "ele",
+    "power": 100,
+    "target": "2 Foes"
+  },
+  "Element Chaos": {
+    "cost": 1025,
+    "effect": "Random ailment",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Endure Dark": {
+    "effect": "Survive Dark dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Earth": {
+    "effect": "Survive Earth dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Elec": {
+    "effect": "Survive Elec dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Fire": {
+    "effect": "Survive Fire dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Force": {
+    "effect": "Survive Force dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Ice": {
+    "effect": "Survive Ice dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Light": {
+    "effect": "Survive Light dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Endure Water": {
+    "effect": "Survive Water dmg with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Epsilon Bomb": {
+    "cost": 40,
+    "effect": "4 hits. Bomb",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Escape 1": {
+    "effect": "Escape success rate +10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Escape 2": {
+    "effect": "Escape success rate +15%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Escape 3": {
+    "effect": "Escape success rate +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Escape Master": {
+    "effect": "Swap out with next Ally when HP drops below 10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Estoma": {
+    "cost": 1004,
+    "effect": "Lower encounter rate",
+    "element": "lig",
+    "target": "Special"
+  },
+  "Evil Eyes": {
+    "cost": 10,
+    "effect": "Absorb MP. Rakunda",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Evil Smile": {
+    "cost": 1030,
+    "effect": "Panic",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Exorcism": {
+    "cost": 20,
+    "effect": "High crit. Icon targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Extreme Chill": {
+    "cost": 35,
+    "effect": "Mute",
+    "element": "ice",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Fang Spear": {
+    "cost": 1025,
+    "effect": "2 hits. Insta Death",
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "1 Foe"
+  },
+  "Female Affinity": {
+    "effect": "Increase negotiation success rate against Female-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Feral Bite": {
+    "cost": 15,
+    "element": "lig",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Feral Claw": {
+    "cost": 15,
+    "element": "lig",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Fire Boost": {
+    "effect": "Fire dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Fire Breath": {
+    "cost": 23,
+    "element": "fir",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Firm Stance": {
+    "cost": 10,
+    "effect": "Buff all stats",
+    "element": "ear",
+    "target": "Self"
+  },
+  "Focused": {
+    "effect": "Nullify all dmg for 1 turn when HP drops below 10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Focused 1": {
+    "effect": "Magic dmg +10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Focused 2": {
+    "effect": "Magic dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Focused 3": {
+    "effect": "Magic dmg +30%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Force Boost": {
+    "effect": "Force dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Foreign Affinity": {
+    "effect": "Increase negotiation success rate against Foreign-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Forgiving": {
+    "effect": "Remove all ailments universally at start of turn",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Fortune Dance": {
+    "cost": 1025,
+    "effect": "1 Random Foe. 8 hits",
+    "element": "for",
+    "restrict": "fusion",
+    "target": "Special"
+  },
+  "Four Down": {
+    "cost": 20,
+    "effect": "High crit. Aerial targets only",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Freezing Wave": {
+    "cost": 1025,
+    "effect": "Freeze",
+    "element": "ice",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Freya": {
+    "cost": 15,
+    "element": "fir",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Frolic": {
+    "cost": 1040,
+    "effect": "Charm",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Gaia Blow": {
+    "cost": 23,
+    "element": "ear",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Gaia Break": {
+    "cost": 25,
+    "effect": "Rakunda",
+    "element": "ear",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Gaia Buster": {
+    "cost": 20,
+    "element": "ear",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Gaia Tears": {
+    "cost": 50,
+    "effect": "4 hits. Rakunda",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Gal Affinity": {
+    "effect": "Increase negotiation success rate against Gal-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Gale Dance": {
+    "cost": 20,
+    "effect": "8 hits",
+    "element": "for",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Gale Strike": {
+    "cost": 1015,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Gather Power": {
+    "cost": 15,
+    "effect": "Raise Attack for 1 turn",
+    "element": "lig",
+    "target": "Self"
+  },
+  "Ghost Exorcism": {
+    "cost": 20,
+    "effect": "High crit. Spirit targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Giant Tackle": {
+    "cost": 1015,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "God's Breath": {
+    "cost": 50,
+    "effect": "Recover some HP. Power scales with use",
+    "element": "lig",
+    "restrict": "unique",
+    "target": "All Allies"
+  },
+  "God's Hand": {
+    "cost": 50,
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "God's Shield": {
+    "cost": 1015,
+    "effect": "Buff all stats",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Good Aim": {
+    "effect": "Normal attack always hits",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Grand Break": {
+    "cost": 35,
+    "effect": "Rakunda",
+    "element": "ear",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Gravity Mine": {
+    "cost": 40,
+    "effect": "2 hits",
+    "element": "ear",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Guillotine Blade": {
+    "cost": 15,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Hades Breath": {
+    "cost": 34,
+    "effect": "Random ailment",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Hades Fire": {
+    "cost": 1025,
+    "effect": "Bomb",
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Hail Breath": {
+    "cost": 30,
+    "effect": "1 Random Foe. 4 hits. Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "Special"
+  },
+  "Hama": {
+    "cost": 1010,
+    "effect": "Remove all ailments from user",
+    "element": "lig",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Hamaon": {
+    "cost": 1020,
+    "effect": "Remove all ailments from user",
+    "element": "lig",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Hapirma": {
+    "cost": 1006,
+    "effect": "Happy",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Heart Drop": {
+    "cost": 30,
+    "effect": "Recover some HP. Power scales with use",
+    "element": "wat",
+    "target": "All Allies"
+  },
+  "Heaven's Door": {
+    "cost": 50,
+    "effect": "2 hits. Pierce guard",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Heavenly Attack": {
+    "cost": 1025,
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Heavenly Cross": {
+    "cost": 1025,
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Heavenly Mandate": {
+    "cost": 70,
+    "effect": "Insta Death",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Heavy 1": {
+    "effect": "Phys dmg +10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Heavy 2": {
+    "effect": "Phys dmg +15%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Heavy 3": {
+    "effect": "Phys dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Hell Buster": {
+    "cost": 60,
+    "effect": "4 hits",
+    "element": "for",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Hell Rush": {
+    "cost": 40,
+    "effect": "1-4 hits",
+    "element": "for",
+    "power": 100,
+    "restrict": "unique",
+    "target": "Special"
+  },
+  "Hell Thrust": {
+    "cost": 25,
+    "effect": "Mute. Pierce guard",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Hell Vice": {
+    "cost": 30,
+    "effect": "2 hits",
+    "element": "for",
+    "power": 100,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Hellfire": {
+    "cost": 40,
+    "effect": "3 hits",
+    "element": "fir",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Hellish Blizzard": {
+    "cost": 55,
+    "effect": "3 hits. Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Heretic Melody": {
+    "cost": 18,
+    "effect": "Panic",
+    "element": "wat",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Holy Shot": {
+    "cost": 18,
+    "effect": "Mute",
+    "element": "lig",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Holy Song": {
+    "cost": 1030,
+    "effect": "Revive with some HP",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Holy Wrath": {
+    "cost": 10,
+    "element": "ele",
+    "power": 50,
+    "target": "Universal"
+  },
+  "Hydro Boost": {
+    "cost": 1025,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Ice Blade": {
+    "cost": 25,
+    "effect": "Mute",
+    "element": "ice",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Ice Boost": {
+    "effect": "Ice dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Ice Breath": {
+    "cost": 23,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Ice Over": {
+    "cost": 35,
+    "element": "ice",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Ice Pick": {
+    "cost": 1030,
+    "effect": "Freeze",
+    "element": "ice",
+    "restrict": "fusion",
+    "target": "2 Foes"
+  },
+  "Ice Pillar": {
+    "cost": 18,
+    "element": "ice",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Ice Prison": {
+    "cost": 50,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Ice Wall": {
+    "cost": 35,
+    "effect": "Nullify Ice dmg for one turn",
+    "element": "ice",
+    "target": "Unknown"
+  },
+  "Icicle": {
+    "cost": 32,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Icon Slayer": {
+    "effect": "Icon enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Ignis Bomb": {
+    "cost": 20,
+    "effect": "Bomb",
+    "element": "fir",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Ill Omen": {
+    "cost": 30,
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Immortal": {
+    "effect": "Revive with 1 HP after battle",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Impish Breath": {
+    "cost": 10,
+    "effect": "Bind",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Initalize": {
+    "cost": 22,
+    "effect": "Tarukaja + Dekunda",
+    "element": "lig",
+    "target": "Universal"
+  },
+  "Intimidating": {
+    "effect": "Greatly reduce encounter rate",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Invisible": {
+    "effect": "Chance of being targetted -50%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Iron-cutting Leaves": {
+    "cost": 28,
+    "element": "for",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Jack Box": {
+    "cost": 23,
+    "effect": "Panic",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Jihad Breath": {
+    "cost": 50,
+    "effect": "Recover some HP. Power scales with use",
+    "element": "dar",
+    "restrict": "unique",
+    "target": "All Allies"
+  },
+  "Judgement Thunder": {
+    "cost": 35,
+    "effect": "Bind",
+    "element": "ele",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Kaiser Fang": {
+    "cost": 50,
+    "effect": "4 hits. Sukunda",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Kidnap": {
+    "cost": 20,
+    "effect": "Increase negotiation success rate",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Killing Blade": {
+    "cost": 1035,
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Killing Blow": {
+    "cost": 5,
+    "effect": "Power scales with lost HP",
+    "element": "ear",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "King Buster": {
+    "cost": 60,
+    "effect": "4 hits",
+    "element": "ele",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "King Freeze": {
+    "cost": 1035,
+    "effect": "Freeze",
+    "element": "ice",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "King Rush": {
+    "cost": 40,
+    "effect": "1-4 hits",
+    "element": "ele",
+    "power": 150,
+    "restrict": "unique",
+    "target": "Special"
+  },
+  "King Storm": {
+    "cost": 99,
+    "effect": "1 Random Foe. 8 hits",
+    "element": "ele",
+    "power": 150,
+    "restrict": "unique",
+    "target": "Special"
+  },
+  "Lady Affinity": {
+    "effect": "Increase negotiation success rate against Lady-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Last Blow": {
+    "cost": 8,
+    "effect": "Power scales with lost HP",
+    "element": "ear",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Last Judgement": {
+    "cost": 40,
+    "effect": "3 hits. Mute",
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Last Resort": {
+    "cost": 2,
+    "effect": "Kills user",
+    "element": "fir",
+    "target": "Universal"
+  },
+  "Life Drain": {
+    "cost": 30,
+    "effect": "Absorb MP",
+    "element": "dar",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Light Blast": {
+    "cost": 60,
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Light Boost": {
+    "effect": "Light dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Light Flare": {
+    "cost": 15,
+    "element": "lig",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Light Howl": {
+    "cost": 25,
+    "element": "lig",
+    "power": 50,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Light Spear": {
+    "cost": 60,
+    "effect": "2 hits",
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Light Wall": {
+    "cost": 35,
+    "effect": "Nullify Light dmg for one turn",
+    "element": "lig",
+    "target": "Unknown"
+  },
+  "Lightning Thrust": {
+    "cost": 15,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Lion Ring": {
+    "cost": 30,
+    "effect": "1 Random Foe. 4 hits. Bomb",
+    "element": "fir",
+    "power": 150,
+    "target": "Special"
+  },
+  "Lord Affinity": {
+    "effect": "Increase negotiation success rate against Lord-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Lucky": {
+    "effect": "Macca dropped +2%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Lunar Shield": {
+    "cost": 1025,
+    "effect": "Rakukaja + Magukaja",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Mabufu": {
+    "cost": 1008,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Mabufudyne": {
+    "cost": 1045,
+    "effect": "2 hits. Freeze",
+    "element": "ice",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mabufula": {
+    "cost": 1020,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Maelstrom": {
+    "cost": 50,
+    "element": "wat",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Magic Gate": {
+    "cost": 25,
+    "effect": "Recover MP when attacked",
+    "element": "dar",
+    "target": "Self"
+  },
+  "Magna": {
+    "cost": 1005,
+    "element": "ear",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Magnadyne": {
+    "cost": 1015,
+    "element": "ear",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Magnus": {
+    "cost": 1010,
+    "element": "ear",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Magukaja": {
+    "cost": 1006,
+    "effect": "M.Def +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Magunda": {
+    "cost": 1005,
+    "effect": "M.Defense -1",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Mahama": {
+    "cost": 1035,
+    "effect": "Remove all ailments from user",
+    "element": "lig",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Makafuji": {
+    "cost": 1006,
+    "effect": "Mute",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Makakaja": {
+    "cost": 1006,
+    "effect": "Magic +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Makandyne": {
+    "cost": 1020,
+    "effect": "M.Defense -1",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Makarakarn": {
+    "cost": 1012,
+    "effect": "Repel Magic dmg for 1 turn",
+    "element": "lig",
+    "target": "Self"
+  },
+  "Malaqua": {
+    "cost": 1008,
+    "element": "wat",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Malaquadyne": {
+    "cost": 1045,
+    "effect": "2 hits",
+    "element": "wat",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Malaques": {
+    "cost": 1020,
+    "element": "wat",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Male Affinity": {
+    "effect": "Increase negotiation success rate against Male-type demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Mamagna": {
+    "cost": 1008,
+    "element": "ear",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Mamagnadyne": {
+    "cost": 1045,
+    "effect": "2 hits",
+    "element": "ear",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mamagnus": {
+    "cost": 1020,
+    "element": "ear",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Manly": {
+    "effect": "Attack scales with Ally death",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Maragi": {
+    "cost": 1008,
+    "element": "fir",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Maragidyne": {
+    "cost": 1045,
+    "effect": "2 hits",
+    "element": "fir",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Maragion": {
+    "cost": 1020,
+    "element": "fir",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Marin Karin": {
+    "cost": 1006,
+    "effect": "Charm",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Marvelous Dance": {
+    "cost": 10,
+    "effect": "1 Random Foe. Charm",
+    "element": "dar",
+    "target": "Special"
+  },
+  "Mazan": {
+    "cost": 1008,
+    "element": "for",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Mazandyne": {
+    "cost": 1045,
+    "effect": "2 hits",
+    "element": "for",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mazanma": {
+    "cost": 1020,
+    "element": "for",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Mazio": {
+    "cost": 1008,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Maziodyne": {
+    "cost": 1045,
+    "effect": "2 hits. Shock",
+    "element": "ele",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mazionga": {
+    "cost": 1020,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Media": {
+    "cost": 1012,
+    "effect": "Recover 40 HP",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Mediarahan": {
+    "cost": 1030,
+    "effect": "Recover all HP",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Mediarama": {
+    "cost": 1018,
+    "effect": "Recover 160 HP",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Mega Blaze": {
+    "cost": 1025,
+    "effect": "Bomb",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Mega Cyclone": {
+    "cost": 35,
+    "effect": "Sukunda",
+    "element": "for",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mega Inferno": {
+    "cost": 50,
+    "element": "fir",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Megaton Press": {
+    "cost": 1035,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Megido Cross": {
+    "cost": 80,
+    "effect": "8 hits",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Megido Flare": {
+    "cost": 80,
+    "effect": "8 hits",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Meteor Strike": {
+    "cost": 1035,
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Mist Slash": {
+    "cost": 1020,
+    "effect": "2 hits. Sukunda",
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "1 Foe"
+  },
+  "Mite": {
+    "cost": 1006,
+    "effect": "Bomb",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Mitedyne": {
+    "cost": 1020,
+    "effect": "Bomb",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Moody": {
+    "effect": "HP% chance of 2nd hit",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Moonlight": {
+    "cost": 40,
+    "effect": "4 hits. Bind",
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Moratorium": {
+    "effect": "When killed, Insta Death to last Foe",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Mudo": {
+    "cost": 1010,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Mudoon": {
+    "cost": 1020,
+    "effect": "Insta Death",
+    "element": "dar",
+    "power": 100,
+    "target": "2 Foes"
+  },
+  "Myriad Hits": {
+    "cost": 15,
+    "effect": "3 hits",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Myriad Strikes": {
+    "cost": 1025,
+    "effect": "8 hits",
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "1 Foe"
+  },
+  "Nether Slayer": {
+    "effect": "Nether enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Noire Blaze": {
+    "cost": 50,
+    "effect": "4 hits. Tarukaja to self",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Nosy 1": {
+    "effect": "Negotiation success rate +10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Nosy 2": {
+    "effect": "Negotiation success rate +15%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Nosy 3": {
+    "effect": "Negotiation success rate +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Ogre Blast": {
+    "cost": 50,
+    "effect": "4 hits. Tarunda",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Ogre Killing": {
+    "cost": 20,
+    "effect": "High crit. Brute targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Omega Gain": {
+    "cost": 20,
+    "effect": "High crit. Mutant targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Order of Flames": {
+    "cost": 20,
+    "effect": "2 hits. Bomb",
+    "element": "fir",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Paral Eyes": {
+    "cost": 20,
+    "effect": "Bind",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Paraladyne": {
+    "cost": 1035,
+    "effect": "Bind",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Paralama": {
+    "cost": 1006,
+    "effect": "Bind",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Patra": {
+    "cost": 1006,
+    "effect": "Remove all ailments",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Patradi": {
+    "cost": 1012,
+    "effect": "Remove all ailments. Recover all HP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Pheromone 1": {
+    "effect": "Normal attack +10% Charm",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Pheromone 2": {
+    "effect": "Normal attack +15% Charm",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Poisdyne": {
+    "cost": 1020,
+    "effect": "Poison",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Poisma": {
+    "cost": 1006,
+    "effect": "Poison",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Poison Blade": {
+    "cost": 25,
+    "effect": "Poison",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Poison Breath": {
+    "cost": 35,
+    "effect": "Poison",
+    "element": "dar",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Poison Claw": {
+    "cost": 10,
+    "effect": "Poison",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Poison Foam": {
+    "cost": 20,
+    "effect": "Poison",
+    "element": "wat",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Powder Mite": {
+    "cost": 20,
+    "effect": "Bomb",
+    "element": "fir",
+    "target": "All Foes"
+  },
+  "Pulinpa": {
+    "cost": 1006,
+    "effect": "Panic",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Pulinpadyne": {
+    "cost": 1030,
+    "effect": "Panic",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Punk Affinity": {
+    "effect": "Increase negotiation success rate against Punktype demons",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Pyramid Power": {
+    "cost": 1015,
+    "effect": "Buff all stats",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Allies"
+  },
+  "Quick Blade": {
+    "cost": 20,
+    "effect": "Act first. Tarukaja + Dekunda",
+    "element": "dar",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Quick Buster": {
+    "cost": 40,
+    "effect": "Act first",
+    "element": "ele",
+    "target": "1 Foe"
+  },
+  "Quick Spear": {
+    "cost": 28,
+    "effect": "Act first",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Ragnarok": {
+    "cost": 1015,
+    "effect": "2 hits",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Rainbow Foam": {
+    "cost": 25,
+    "effect": "Panic",
+    "element": "wat",
+    "power": 100,
+    "target": "2 Foes"
+  },
+  "Rakukaja": {
+    "cost": 1006,
+    "effect": "Defense +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Rakunda": {
+    "cost": 1005,
+    "effect": "Defense -1",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Rakundyne": {
+    "cost": 1015,
+    "effect": "Defense -1",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Rampage": {
+    "cost": 20,
+    "effect": "1-4 hits",
+    "element": "dar",
+    "power": 50,
+    "target": "Special"
+  },
+  "Ray Field": {
+    "cost": 1040,
+    "effect": "2 hits. Insta Death",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Recarm": {
+    "cost": 1018,
+    "effect": "Revive with some HP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Repel Dark": {
+    "effect": "Repel Dark dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Earth": {
+    "effect": "Repel Earth dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Elec": {
+    "effect": "Repel Elec dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Fire": {
+    "effect": "Repel Fire dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Force": {
+    "effect": "Repel Force dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Ice": {
+    "effect": "Repel Ice dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Light": {
+    "effect": "Repel Light dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Repel Water": {
+    "effect": "Repel Water dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Riberama": {
+    "cost": 1004,
+    "effect": "Raise encounter rate",
+    "element": "lig",
+    "target": "Special"
+  },
+  "Rock Fall": {
+    "cost": 32,
+    "element": "ear",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Rocky Tempest": {
+    "cost": 1025,
+    "effect": "Panic",
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Rotting 1": {
+    "effect": "Normal attack +10% Poison",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Rotting 2": {
+    "effect": "Normal attack +15% Poison",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Round Bite": {
+    "cost": 10,
+    "effect": "Pierce guard",
+    "element": "dar",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Roundhouse Kick": {
+    "cost": 23,
+    "element": "for",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Rude": {
+    "effect": "Counter with 10% chance",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Ruinous Light": {
+    "cost": 50,
+    "element": "ele",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Ruinous Scale": {
+    "cost": 16,
+    "effect": "Deal dmg equal to current HP",
+    "element": "dar",
+    "target": "Unknown"
+  },
+  "Runic Bind": {
+    "cost": 30,
+    "effect": "2 hits. Bind",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Saint Attack": {
+    "cost": 35,
+    "element": "lig",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Saint Slash": {
+    "cost": 1025,
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Samarecarm": {
+    "cost": 1025,
+    "effect": "Revive with full HP and MP",
+    "element": "lig",
+    "target": "1 Ally"
+  },
+  "Sandstorm": {
+    "cost": 28,
+    "effect": "Sukunda",
+    "element": "ear",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Schemer 1": {
+    "effect": "Normal attack +10% Mute",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Schemer 2": {
+    "effect": "Normal attack +15% Mute",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Shadow Break": {
+    "cost": 1025,
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Shadow Claw": {
+    "cost": 1025,
+    "effect": "Bind",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Shadow Clone": {
+    "cost": 15,
+    "effect": "Agility +1. Evade +1",
+    "element": "dar",
+    "target": "Self"
+  },
+  "Shadow Sewing": {
+    "cost": 12,
+    "effect": "Bind",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Shadow Wall": {
+    "cost": 25,
+    "effect": "Nullify all magic for one turn",
+    "element": "dar",
+    "target": "Unknown"
+  },
+  "Shining Flame": {
+    "cost": 40,
+    "effect": "2 hits",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Shiny Fang": {
+    "cost": 50,
+    "effect": "4 hits",
+    "element": "lig",
+    "power": 150,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Silver Fog": {
+    "cost": 30,
+    "effect": "Bind",
+    "element": "wat",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Skull Breaker": {
+    "cost": 25,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Sneaky 1": {
+    "effect": "Ambush rate -10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Sneaky 2": {
+    "effect": "Ambush rate -20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Sneaky 3": {
+    "effect": "Ambush rate -30%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Solar Wind": {
+    "effect": "Recover some HP. Remove all ailments. Kills user",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Sonic Boom": {
+    "cost": 23,
+    "element": "for",
+    "power": 50,
+    "target": "All Foes"
+  },
+  "Sonic Fang": {
+    "cost": 20,
+    "effect": "Act first",
+    "element": "lig",
+    "power": 50,
+    "restrict": "unique",
+    "target": "1 Foe"
+  },
+  "Sonic Wing": {
+    "cost": 25,
+    "element": "for",
+    "power": 100,
+    "target": "2 Foes"
+  },
+  "Soul Crush": {
+    "cost": 25,
+    "effect": "Absorb HP",
+    "element": "dar",
+    "target": "1 Foe"
+  },
+  "Soul Eater": {
+    "cost": 1035,
+    "effect": "Absorb HP",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Soul Venom": {
+    "cost": 50,
+    "effect": "4 hits. Poison",
+    "element": "dar",
+    "power": 150,
+    "restrict": "unique",
+    "target": "All Foes"
+  },
+  "Sparking Bolt": {
+    "cost": 1025,
+    "effect": "Shock",
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Speckle": {
+    "cost": 15,
+    "effect": "Freeze",
+    "element": "ice",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Speed Up": {
+    "cost": 1006,
+    "effect": "Agility +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Speedster": {
+    "effect": "Act first",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Spellbound": {
+    "cost": 1025,
+    "effect": "Bind",
+    "element": "lig",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Spinning Wheel": {
+    "cost": 15,
+    "effect": "Panic",
+    "element": "ele",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Spiral Strike": {
+    "cost": 30,
+    "effect": "Sukunda",
+    "element": "for",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Spirit Slayer": {
+    "effect": "Spirit enemies flee upon encounter",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Splash Rei": {
+    "cost": 1015,
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Stalemate": {
+    "cost": 10,
+    "effect": "Add last 2 turns of dmg received to atk",
+    "element": "lig",
+    "target": "Special"
+  },
+  "Stardust": {
+    "cost": 50,
+    "effect": "Random ailment",
+    "element": "lig",
+    "target": "All Foes"
+  },
+  "Stomp": {
+    "cost": 1025,
+    "element": "ear",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Stone Shot": {
+    "cost": 15,
+    "effect": "Sukunda",
+    "element": "ear",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Stone Wall": {
+    "cost": 35,
+    "effect": "Nullify Earth dmg for one turn",
+    "element": "ear",
+    "target": "Unknown"
+  },
+  "Storm Wall": {
+    "cost": 35,
+    "effect": "Nullify Force dmg for one turn",
+    "element": "for",
+    "target": "Unknown"
+  },
+  "Stun Claw": {
+    "cost": 10,
+    "effect": "Bind",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Stun Shot": {
+    "cost": 12,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Sturdy": {
+    "effect": "10% chance of nullifying Phys dmg",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Sukukaja": {
+    "cost": 1006,
+    "effect": "Luck +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Sukunda": {
+    "cost": 1005,
+    "effect": "Luck -1",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Supportive": {
+    "effect": "Raise Attack of all Allies",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Survivor": {
+    "effect": "Chance to endure with 1 HP",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Tackle": {
+    "cost": 15,
+    "element": "ear",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Tarukaja": {
+    "cost": 1006,
+    "effect": "Attack +1",
+    "element": "lig",
+    "target": "All Allies"
+  },
+  "Tarunda": {
+    "cost": 1005,
+    "effect": "Attack -1",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Tarundyne": {
+    "cost": 1015,
+    "effect": "Attack -1",
+    "element": "dar",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Tenacious 1": {
+    "effect": "Normal attack +10% Shock",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Tenacious 2": {
+    "effect": "Normal attack +15% Shock",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Tetra Prison": {
+    "cost": 60,
+    "effect": "Panic",
+    "element": "dar",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Tetrakarn": {
+    "cost": 25,
+    "effect": "Repel Phys dmg for 1 turn",
+    "element": "dar",
+    "target": "Self"
+  },
+  "Thor Hammer": {
+    "cost": 32,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Thunder Call": {
+    "cost": 1015,
+    "effect": "Shock",
+    "element": "ele",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Thunder Strike": {
+    "cost": 22,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Thunder Wall": {
+    "cost": 35,
+    "effect": "Nullify Elec dmg for one turn",
+    "element": "ele",
+    "target": "Unknown"
+  },
+  "Thunderbolt": {
+    "cost": 23,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "2 Foes"
+  },
+  "Tidal Wave": {
+    "cost": 25,
+    "element": "wat",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Tiger Hunt": {
+    "cost": 30,
+    "effect": "High crit. Beast targets only",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Traport": {
+    "cost": 1010,
+    "effect": "Teleport to another area",
+    "element": "lig",
+    "target": "Special"
+  },
+  "Trickster": {
+    "effect": "Moody + Whimsy",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Trio The Punch": {
+    "cost": 16,
+    "effect": "8 hits. Happy",
+    "element": "dar",
+    "target": "All Foes"
+  },
+  "Triple Vice": {
+    "cost": 50,
+    "effect": "3 hits",
+    "element": "fir",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Twin Vice": {
+    "cost": 1015,
+    "effect": "2 hits",
+    "element": "dar",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Tyrant Hit": {
+    "cost": 1025,
+    "effect": "Bind",
+    "element": "fir",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Vacuum Wave": {
+    "cost": 1040,
+    "effect": "Insta Death",
+    "element": "for",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Vague 1": {
+    "effect": "Evade +10%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Vague 2": {
+    "effect": "Evade +15%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Vague 3": {
+    "effect": "Evade +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Vapour Bomb": {
+    "cost": 1025,
+    "effect": "70% Sleep",
+    "element": "wat",
+    "restrict": "fusion",
+    "target": "All Foes"
+  },
+  "Wary 1": {
+    "effect": "20% chance of nullifying 1st enemy attack during ambush",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Wary 2": {
+    "effect": "30% chance of nullifying 1st enemy attack during ambush",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Wary 3": {
+    "effect": "60% chance of nullifying 1st enemy attack during ambush",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Water Boost": {
+    "effect": "Water dmg +20%",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Water Cutter": {
+    "cost": 10,
+    "element": "wat",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Weak Point": {
+    "cost": 25,
+    "effect": "High crit",
+    "element": "lig",
+    "target": "1 Foe"
+  },
+  "Whimsy": {
+    "effect": "10% change to use magic of higher rank when casting",
+    "element": "spe",
+    "restrict": "auto",
+    "target": "Special"
+  },
+  "Wind Strike": {
+    "cost": 50,
+    "element": "for",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Wing Flap": {
+    "cost": 15,
+    "element": "for",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Zan": {
+    "cost": 1005,
+    "element": "for",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Zandyne": {
+    "cost": 1015,
+    "element": "for",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Zanma": {
+    "cost": 1010,
+    "element": "for",
+    "power": 100,
+    "target": "1 Foe"
+  },
+  "Zio": {
+    "cost": 1005,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Ziodyne": {
+    "cost": 1015,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 150,
+    "target": "1 Foe"
+  },
+  "Zionga": {
+    "cost": 1010,
+    "effect": "Shock",
+    "element": "ele",
+    "power": 100,
+    "target": "1 Foe"
+  }
+}
