@@ -1,0 +1,17 @@
+{
+  "races": [
+    "Beast",  "Suiyou", "Brute",  "Nether", "Therian","Icon",   "Aerial", "Avian",  "Dragon", "Foul"
+  ],
+  "table": [
+    ["-"],
+    ["Brute",  "-"],
+    ["Dragon", "Foul",   "-"],
+    ["Suiyou", "Icon",   "Beast",  "-"],
+    ["Aerial", "Beast",  "Suiyou", "Avian",  "-"],
+    ["Nether", "Avian",  "Aerial", "Therian","Dragon", "-"],
+    ["Avian",  "Nether", "Therian","Dragon", "Foul",   "Suiyou", "-"],
+    ["Therian","Aerial", "Icon",   "Suiyou", "Nether", "Foul",   "Beast",  "-"],
+    ["Foul",   "Therian","Nether", "Aerial", "Brute",  "Beast",  "Icon",   "Suiyou", "-"],
+    ["Element","Element","Element","Element","Element","Element","Element","Element","Element","-"]
+  ]
+}

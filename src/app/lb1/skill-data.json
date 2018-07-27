@@ -1,0 +1,383 @@
+{
+  "Agi": {
+    "cost": 1002,
+    "element": "fir",
+    "power": 20,
+    "target": "1 Foe"
+  },
+  "Agidyne": {
+    "cost": 1025,
+    "element": "fir",
+    "power": 180,
+    "target": "All Foes"
+  },
+  "Agira": {
+    "cost": 1004,
+    "element": "fir",
+    "power": 40,
+    "target": "Group of Foes"
+  },
+  "Agirama": {
+    "cost": 1018,
+    "element": "fir",
+    "power": 140,
+    "target": "Group of Foes"
+  },
+  "Agiraon": {
+    "cost": 1012,
+    "element": "fir",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Bufu": {
+    "cost": 1002,
+    "element": "ice",
+    "power": 20,
+    "target": "1 Foe"
+  },
+  "Bufudyne": {
+    "cost": 1025,
+    "element": "ice",
+    "power": 240,
+    "target": "All Foes"
+  },
+  "Bufula": {
+    "cost": 1005,
+    "element": "ice",
+    "power": 40,
+    "target": "Group of Foes"
+  },
+  "Bufurama": {
+    "cost": 1018,
+    "element": "ice",
+    "power": 170,
+    "target": "Group of Foes"
+  },
+  "Bufuraon": {
+    "cost": 1012,
+    "element": "ice",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Burn All": {
+    "element": "fir",
+    "power": 100,
+    "target": "Special"
+  },
+  "Burn Group": {
+    "element": "fir",
+    "power": 60,
+    "target": "Special"
+  },
+  "Call Help": {
+    "effect": "Summon reinforcements",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Combo": {
+    "cost": 1005,
+    "effect": "Fuse 2 demons outside battle",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Di": {
+    "cost": 1004,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 20,
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1025,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 999,
+    "target": "1 Ally"
+  },
+  "Dirama": {
+    "cost": 1008,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 250,
+    "target": "1 Ally"
+  },
+  "Dormin": {
+    "cost": 1005,
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Dormina": {
+    "cost": 1008,
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Force": {
+    "cost": 1030,
+    "element": "for",
+    "power": 250,
+    "target": "All Foes"
+  },
+  "Freeze All": {
+    "element": "ice",
+    "power": 100,
+    "target": "Special"
+  },
+  "Freeze Group": {
+    "element": "ice",
+    "power": 60,
+    "target": "Special"
+  },
+  "Hold Hands": {
+    "effect": "Absorb 50 + Intelligence MP",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Hypno All": {
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Hypno Group": {
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Makajam": {
+    "cost": 1011,
+    "effect": "Mute",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Makaranda": {
+    "cost": 1000,
+    "effect": "Absorb MP",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Marin Karin": {
+    "cost": 1007,
+    "effect": "Panic",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Medi": {
+    "cost": 1010,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 15,
+    "target": "All Allies"
+  },
+  "Media": {
+    "cost": 1028,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 200,
+    "target": "All Allies"
+  },
+  "Mediahan": {
+    "cost": 1050,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 400,
+    "target": "All Allies"
+  },
+  "Mudo": {
+    "cost": 1012,
+    "effect": "Insta Death",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Mudoon": {
+    "cost": 1018,
+    "effect": "Insta Death",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Panic All": {
+    "effect": "Panic",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Panic Group": {
+    "effect": "Panic",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Paral Breath": {
+    "effect": "Bind",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Paraladi": {
+    "cost": 1007,
+    "effect": "Remove Bind",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Patra": {
+    "cost": 1002,
+    "effect": "Remove Panic, Sleep, Mute",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Penpatra": {
+    "cost": 1005,
+    "effect": "Remove Panic, Sleep, Mute",
+    "element": "spe",
+    "target": "All Allies"
+  },
+  "Pirula": {
+    "cost": 1012,
+    "effect": "Poison",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Poison Breath": {
+    "effect": "Poison",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Posumudi": {
+    "cost": 1005,
+    "effect": "Remove Poison",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Pulinpa": {
+    "cost": 1004,
+    "effect": "Panic",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Rakukaja": {
+    "cost": 1008,
+    "effect": "Defense +1",
+    "element": "spe",
+    "target": "All Allies"
+  },
+  "Rakunda": {
+    "cost": 1010,
+    "effect": "Defense -1",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Rakundaku": {
+    "cost": 1020,
+    "effect": "Defense -1",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Ranka": {
+    "cost": 1001,
+    "effect": "Increase dmg for 2 turns. 2 MP used",
+    "element": "spe",
+    "power": 300,
+    "target": "All Foes"
+  },
+  "Rankam": {
+    "cost": 1002,
+    "effect": "Increase dmg for 3 turns. 6 MP used",
+    "element": "spe",
+    "power": 480,
+    "target": "All Foes"
+  },
+  "Rankyne": {
+    "cost": 1003,
+    "effect": "Increase dmg for 4 turns. 12 MP used",
+    "element": "spe",
+    "power": 1000,
+    "target": "All Foes"
+  },
+  "Recarm": {
+    "cost": 1020,
+    "effect": "Chance to revive",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Rienz": {
+    "cost": 1003,
+    "effect": "Lower encounter rate",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Samarecarm": {
+    "cost": 1030,
+    "effect": "Revive with some HP",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Stardust": {
+    "cost": 1025,
+    "element": "ele",
+    "power": 250,
+    "target": "All Foes"
+  },
+  "Tarukaja": {
+    "cost": 1015,
+    "effect": "Attack +1",
+    "element": "spe",
+    "target": "All Allies"
+  },
+  "Tentarafoo": {
+    "cost": 1010,
+    "effect": "Panic + Sleep",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Trampa": {
+    "cost": 1010,
+    "effect": "Teleport to town",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Zan": {
+    "cost": 1004,
+    "element": "for",
+    "power": 40,
+    "target": "1 Foe"
+  },
+  "Zanma": {
+    "cost": 1008,
+    "element": "for",
+    "power": 40,
+    "target": "Group of Foes"
+  },
+  "Zanma S": {
+    "cost": 1025,
+    "element": "for",
+    "power": 130,
+    "target": "Group of Foes"
+  },
+  "Zanmaon": {
+    "cost": 1014,
+    "element": "for",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Zio": {
+    "cost": 1002,
+    "element": "ele",
+    "power": 20,
+    "target": "1 Foe"
+  },
+  "Ziora": {
+    "cost": 1005,
+    "element": "ele",
+    "power": 40,
+    "target": "Group of Foes"
+  },
+  "Ziorama": {
+    "cost": 1018,
+    "element": "ele",
+    "power": 130,
+    "target": "Group of Foes"
+  },
+  "Zioraon": {
+    "cost": 1012,
+    "element": "ele",
+    "power": 80,
+    "target": "All Foes"
+  }
+}

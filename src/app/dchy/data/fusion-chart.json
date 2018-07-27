@@ -1,0 +1,17 @@
+{
+  "races": [
+    "Deity",  "Icon",   "Aerial", "Dragon", "Avian",  "Beast",  "Brute",  "Spirit", "Nether", "Mute"
+  ],
+  "table": [
+    ["-"],
+    ["Aerial", "-"],
+    ["Spirit", "Dragon", "-"],
+    ["Aerial", "Avian",  "Deity",  "-"],
+    ["Beast",  "Aerial", "Nether", "Deity",  "-"],
+    ["Brute",  "Spirit", "Deity",  "Avian",  "Nether", "-"],
+    ["Dragon", "Beast",  "Deity",  "Icon",   "Spirit", "Spirit", "-"],
+    ["Dragon", "Nether", "Brute",  "Beast",  "Aerial", "Brute",  "Icon",   "-"],
+    ["Beast",  "Dragon", "Beast",  "Avian",  "Dragon", "Icon",   "Avian",  "Aerial", "-"],
+    ["Nether", "Brute",  "Dragon", "Deity",  "Icon",   "Avian",  "Beast",  "Aerial", "Deity",  "-"]
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "Agi": {
+    "cost": 1003,
+    "element": "fir",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Agilao": {
+    "cost": 1005,
+    "element": "fir",
+    "power": 30,
+    "target": "1 Foe"
+  },
+  "Agiraon": {
+    "cost": 1014,
+    "element": "fir",
+    "power": 50,
+    "target": "Group of Foes"
+  },
+  "Ambush": {
+    "cost": 1018,
+    "effect": "High crit",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Arcana": {
+    "cost": 1006,
+    "effect": "Increase dmg for 1 turn",
+    "element": "spe",
+    "power": 40,
+    "target": "All Foes"
+  },
+  "Assault": {
+    "cost": 1008,
+    "element": "spe",
+    "power": 40,
+    "target": "1 Foe"
+  },
+  "Ast": {
+    "cost": 1016,
+    "effect": "Increase dmg for 1 turn",
+    "element": "spe",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Astra": {
+    "cost": 1014,
+    "effect": "Increase dmg for 2 turns. 14 MP used",
+    "element": "spe",
+    "power": 130,
+    "target": "All Foes"
+  },
+  "Astral": {
+    "cost": 1018,
+    "effect": "Increase dmg for 3 turns. 18 MP used",
+    "element": "spe",
+    "power": 200,
+    "target": "All Foes"
+  },
+  "Bard": {
+    "cost": 1012,
+    "effect": "Increase dmg for 1 turn",
+    "element": "spe",
+    "power": 60,
+    "target": "All Foes"
+  },
+  "Battle Combo": {
+    "cost": 1004,
+    "effect": "Fuse 2 demons during battle",
+    "element": "spe",
+    "target": "2 Foes"
+  },
+  "Berserk": {
+    "cost": 1020,
+    "element": "spe",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Bilam": {
+    "cost": 1030,
+    "effect": "Poison",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Bitarda": {
+    "cost": 1015,
+    "effect": "P.Attack x0.5",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Bitarja": {
+    "cost": 1008,
+    "effect": "P.Attack x2",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Bufu": {
+    "cost": 1003,
+    "element": "ice",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Bufula": {
+    "cost": 1005,
+    "element": "ice",
+    "power": 30,
+    "target": "1 Foe"
+  },
+  "Bufuraon": {
+    "cost": 1014,
+    "element": "ice",
+    "power": 50,
+    "target": "Group of Foes"
+  },
+  "Cleave": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ski",
+    "target": "1 Foe"
+  },
+  "Combo": {
+    "cost": 1005,
+    "effect": "Fuse 2 demons outside battle",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Dekusda": {
+    "cost": 1008,
+    "effect": "Agility x0.5",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Dekusja": {
+    "cost": 1008,
+    "effect": "Agility x2",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Devour": {
+    "cost": 1015,
+    "effect": "Absorb HP",
+    "element": "spe",
+    "power": 120,
+    "target": "1 Foe"
+  },
+  "Dia": {
+    "cost": 1004,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 20,
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1025,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 150,
+    "target": "1 Ally"
+  },
+  "Diarama": {
+    "cost": 1010,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 60,
+    "target": "1 Ally"
+  },
+  "Dormin": {
+    "cost": 1006,
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Dorminal": {
+    "cost": 1018,
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Eat Whole": {
+    "cost": 1010,
+    "effect": "Absorb HP",
+    "element": "spe",
+    "power": 80,
+    "target": "1 Foe"
+  },
+  "Estoma": {
+    "cost": 1010,
+    "effect": "Lower encounter rate",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Face Hit": {
+    "cost": 1012,
+    "element": "spe",
+    "power": 70,
+    "target": "1 Foe"
+  },
+  "Giga Breath": {
+    "cost": 1020,
+    "element": "fir",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Intja": {
+    "cost": 1006,
+    "effect": "M.Attack x2",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Intoda": {
+    "cost": 1006,
+    "effect": "M.Attack x0.5",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Mabufu": {
+    "cost": 1017,
+    "element": "ice",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Mabufula": {
+    "cost": 1025,
+    "element": "ice",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Makajam": {
+    "cost": 1008,
+    "effect": "Mute",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Makajamil": {
+    "cost": 1015,
+    "effect": "Mute",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Makarakarn": {
+    "cost": 1024,
+    "effect": "Repel Magic dmg for 3 turns",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Makaranda": {
+    "cost": 1000,
+    "effect": "Absorb MP",
+    "element": "spe",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Maragi": {
+    "cost": 1017,
+    "element": "fir",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Maragion": {
+    "cost": 1025,
+    "element": "fir",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mazan": {
+    "cost": 1017,
+    "element": "for",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Mazanma": {
+    "cost": 1025,
+    "element": "for",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Mazio": {
+    "cost": 1017,
+    "element": "ele",
+    "power": 80,
+    "target": "All Foes"
+  },
+  "Mazionga": {
+    "cost": 1025,
+    "element": "ele",
+    "power": 150,
+    "target": "All Foes"
+  },
+  "Media": {
+    "cost": 1010,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 12,
+    "target": "All Allies"
+  },
+  "Mediama": {
+    "cost": 1028,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 40,
+    "target": "All Allies"
+  },
+  "Mediarahan": {
+    "cost": 1058,
+    "effect": "Recover HP",
+    "element": "spe",
+    "power": 150,
+    "target": "All Allies"
+  },
+  "Moonlight": {
+    "cost": 1020,
+    "element": "spe",
+    "power": 200,
+    "target": "All Foes"
+  },
+  "Mudo": {
+    "cost": 1015,
+    "effect": "Insta Death",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Mudoon": {
+    "cost": 1032,
+    "effect": "Insta Death",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Parala": {
+    "cost": 1008,
+    "effect": "Bind",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Paraladi": {
+    "cost": 1007,
+    "effect": "Remove Bind",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Paralal": {
+    "cost": 1022,
+    "effect": "Bind",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Patrecarm": {
+    "cost": 1050,
+    "effect": "Revive with all HP",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Petit Breath": {
+    "cost": 1006,
+    "element": "fir",
+    "power": 30,
+    "target": "All Foes"
+  },
+  "Pirula": {
+    "cost": 1014,
+    "effect": "Poison",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Possess": {
+    "cost": 1005,
+    "effect": "Posessed",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Posumudi": {
+    "cost": 1009,
+    "effect": "Remove Poison",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Prayer": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "fir",
+    "target": "1 Foe"
+  },
+  "Prims 1": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "fir",
+    "target": "All Foes"
+  },
+  "Prism 2": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ice",
+    "target": "All Foes"
+  },
+  "Prism 3": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ele",
+    "target": "All Foes"
+  },
+  "Prism 4": {
+    "cost": 1015,
+    "effect": "Panic",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Prism 5": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "for",
+    "target": "All Foes"
+  },
+  "Prism 6": {
+    "cost": 1025,
+    "effect": "Insta Death",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Prism 7": {
+    "cost": 1015,
+    "effect": "Sleep",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Pulinfu": {
+    "cost": 1016,
+    "effect": "Panic",
+    "element": "spe",
+    "target": "Group of Foes"
+  },
+  "Pulinpa": {
+    "cost": 1008,
+    "effect": "Panic",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Ranka": {
+    "cost": 1010,
+    "effect": "Increase dmg for 2 turns. 10 MP used",
+    "element": "spe",
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Rankam": {
+    "cost": 1012,
+    "effect": "Increase dmg for 3 turns. 12 MP used",
+    "element": "spe",
+    "power": 180,
+    "target": "All Foes"
+  },
+  "Rankyne": {
+    "cost": 1016,
+    "effect": "Increase dmg for 4 turns. 16 MP used",
+    "element": "spe",
+    "power": 255,
+    "target": "All Foes"
+  },
+  "Recarm": {
+    "cost": 1020,
+    "effect": "Chance to revive",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Rush": {
+    "cost": 1015,
+    "element": "spe",
+    "power": 80,
+    "target": "Group of Foes"
+  },
+  "Samarecarm": {
+    "cost": 1035,
+    "effect": "Revive with some HP",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Shock": {
+    "cost": 1010,
+    "element": "ice",
+    "power": 50,
+    "target": "1 Foe"
+  },
+  "Shout": {
+    "cost": 1006,
+    "effect": "Panic",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Sob": {
+    "cost": 1015,
+    "effect": "Pass turn",
+    "element": "spe",
+    "target": "All Foes"
+  },
+  "Soul Flash": {
+    "cost": 1020,
+    "element": "spe",
+    "power": 200,
+    "target": "All Foes"
+  },
+  "Spark": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ele",
+    "target": "1 Foe"
+  },
+  "Strada": {
+    "cost": 1018,
+    "effect": "Power x0.5",
+    "element": "spe",
+    "target": "1 Foe"
+  },
+  "Straja": {
+    "cost": 1018,
+    "effect": "Power x2",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Terra Freya": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "fir",
+    "target": "Group of Foes"
+  },
+  "Terra Slash": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ski",
+    "target": "Group of Foes"
+  },
+  "Terra Spark": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ele",
+    "target": "Group of Foes"
+  },
+  "Terra Wave": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "for",
+    "target": "Group of Foes"
+  },
+  "Terral Freya": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "fir",
+    "target": "All Foes"
+  },
+  "Terral Slash": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ski",
+    "target": "All Foes"
+  },
+  "Terral Spark": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "ele",
+    "target": "All Foes"
+  },
+  "Terral Wave": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "for",
+    "target": "All Foes"
+  },
+  "Tetrakarn": {
+    "cost": 1018,
+    "effect": "Repel Phys dmg for 3 turns",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Torarecarm": {
+    "cost": 1008,
+    "effect": "Remove Posessed",
+    "element": "spe",
+    "target": "1 Ally"
+  },
+  "Trampa": {
+    "cost": 1010,
+    "effect": "Teleport to town",
+    "element": "spe",
+    "target": "Special"
+  },
+  "Web": {
+    "cost": 1001,
+    "effect": "Power scales with lost MP",
+    "element": "for",
+    "target": "1 Foe"
+  },
+  "Zan": {
+    "cost": 1003,
+    "element": "for",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Zanma": {
+    "cost": 1005,
+    "element": "for",
+    "power": 30,
+    "target": "1 Foe"
+  },
+  "Zanmaon": {
+    "cost": 1014,
+    "element": "for",
+    "power": 50,
+    "target": "Group of Foes"
+  },
+  "Zio": {
+    "cost": 1003,
+    "element": "ele",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Zionga": {
+    "cost": 1005,
+    "element": "ele",
+    "power": 30,
+    "target": "1 Foe"
+  },
+  "Zioraon": {
+    "cost": 1014,
+    "element": "ele",
+    "power": 50,
+    "target": "Group of Foes"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "races": [
+    "Beast",  "Avian",  "Brute",  "Icon",   "Dragon", "Nether", "Foul"
+  ],
+  "table": [
+    ["Element"],
+    ["Nether", "Element"],
+    ["Dragon", "Icon",   "Element"],
+    ["Brute",  "Beast",  "Nether", "Element"],
+    ["Icon",   "Brute",  "Foul",   "Avian",  "Element"],
+    ["Foul",   "Icon",   "Avian",  "Dragon", "Beast",  "Element"],
+    ["Avian",  "Dragon", "Beast",  "Foul",   "Nether", "Brute",  "Element"]
+  ]
+}
