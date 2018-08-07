@@ -1,4 +1,4 @@
-import { NamePair, Compendium, FusionChart } from '../models';
+import { NamePair, Compendium, FusionChart, ElemModifiers } from '../models';
 
 function findBin(n: number, bins: number[]): number {
   if (!bins.length) {
@@ -27,7 +27,7 @@ export function fuseWithDiffRace(name: string, compendium: Compendium, fusionCha
     for (const lvlB of compendium.getIngredientDemonLvls(raceB)) {
       const binB = findBin(lvlB, binsB);
 
-      if (binB !== -1) {
+      if (binB !== -1 && (raceA != raceB || lvlA != lvlB)) {
         recipes.push({
           name1: compendium.reverseLookupDemon(raceB, lvlB),
           name2: compendium.reverseLookupDemon(raceR, lvlsR[binB])
@@ -45,7 +45,7 @@ export function fuseWithSameRace(name: string, compendium: Compendium, fusionCha
   const ingLvls2 = compendium.getIngredientDemonLvls(ingRace1).filter(lvl => lvl !== ingLvl1);
   const recipes: NamePair[] = [];
 
-  if (elementResult) {
+  if (compendium.isElementDemon(elementResult)) {
     for (const ingLvl2 of ingLvls2) {
       recipes.push({
         name1: compendium.reverseLookupDemon(ingRace1, ingLvl2),
@@ -87,4 +87,70 @@ export function fuseWithElement(name: string, compendium: Compendium, fusionChar
   }
 
   return recipes;
+}
+
+export function getDarkOffsets(name: string, comp: Compendium, chart: FusionChart): ElemModifiers {
+  const { race: raceA, lvl: lvlA } = comp.getDemon(name);
+  const isDarkA = chart.getLightDark(raceA) === -1;
+  const darkLvlA = isDarkA ? -1 * lvlA : lvlA;
+  const mods = <ElemModifiers>{ '2': [], '1': [], '-1': [] };
+
+  const remainA7 = (7 - lvlA % 7) % 7;
+  const remainA5 = (5 - lvlA % 5) % 5;
+  const remainA3 = (3 - lvlA % 3) % 3;
+
+  for (const demonB of comp.allDemons) {
+    const { name: nameB, race: raceB, lvl: lvlB } = demonB;
+    const isDarkB = chart.getLightDark(raceB) === -1;
+    const darkLvlB = isDarkB ? -1 * lvlB : lvlB;
+
+    if (isDarkA === isDarkB || darkLvlA + darkLvlB < 0 || comp.isElementDemon(nameB)) {
+      continue;
+    } else if (lvlB % 7 === remainA7) {
+      mods[2].push(nameB);
+    } else if (lvlB % 5 === remainA5) {
+      mods[1].push(nameB);
+    } else if (lvlB % 3 === remainA3) {
+      mods[-1].push(nameB);
+    }
+  }
+
+  return mods;
+}
+
+export function fuseLightDark(name: string, comp: Compendium, chart: FusionChart): NamePair[] {
+  const { race: raceA, lvl: lvlA } = comp.getDemon(name);
+  const isDarkA = chart.getLightDark(raceA) === -1;
+  const pairs = <NamePair[]>[];
+
+  if (isDarkA) {
+    return pairs;
+  }
+
+  const lvlRs = [0, 0].concat(comp.getResultDemonLvls(raceA), [100, 100]);
+  if (lvlRs.indexOf(lvlA) < 0) {
+    lvlRs.push(lvlA);
+    lvlRs.sort((a, b) => a - b);
+  }
+
+  const lvlIndexA1 = lvlRs.indexOf(lvlA);
+  const elementModifiers = getDarkOffsets(name, comp, chart);
+  const elementOffsets = Object.keys(elementModifiers).map(x => parseInt(x, 10));
+
+  for (const offset of elementOffsets) {
+    const lvlR = lvlRs[lvlIndexA1 + offset];
+
+    if (lvlR !== 0 && lvlR !== 100) {
+      const nameR = comp.reverseLookupDemon(raceA, lvlR);
+
+      for (const nameE of elementModifiers[offset]) {
+        pairs.push({
+          name1: nameE,
+          name2: nameR
+        });
+      }
+    }
+  }
+
+  return pairs;
 }

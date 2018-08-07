@@ -8,7 +8,11 @@ import { CompendiumConfig } from './models';
 
 import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
-import { SMT_NORMAL_FUSION_CALCULATOR, SMT_NORMAL_FISSION_CALCULATOR } from '../compendium/constants';
+import {
+  SMT_NORMAL_FUSION_CALCULATOR,
+  SMT_NES_NORMAL_FUSION_CALCULATOR,
+  SMT_NORMAL_FISSION_CALCULATOR
+} from '../compendium/constants';
 
 import { splitWithDiffRace as splitTripleDR, splitWithElementPair } from '../compendium/fusions/per-triple-fissions';
 import { fuseT1WithDiffRace, fuseN1WithDiffRace } from '../compendium/fusions/per-triple-fusions';
@@ -43,6 +47,10 @@ export class FusionDataService implements IFusionTrioService {
     } else {
       doubleChart = normalChart;
       tripleChart = new FusionChart(compConfig, true);
+    }
+
+    if (compConfig.darknessRecipes) {
+      this.fusionCalculator = SMT_NES_NORMAL_FUSION_CALCULATOR;
     }
 
     this.triFusionCalculator = new TripleFusionCalculator(

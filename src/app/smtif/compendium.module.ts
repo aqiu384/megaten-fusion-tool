@@ -62,6 +62,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   tripleTable: TRIPLE_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
   mitamaTable: ELEMENT_CHART_JSON['pairs'],
+  darknessRecipes: FUSION_CHART_JSON['darks'],
   normalTable: {
     races: FUSION_CHART_JSON['races'].slice(0, FUSION_CHART_JSON['races'].length - 1),
     table: FUSION_CHART_JSON['table'].slice(0, FUSION_CHART_JSON['table'].length - 1)

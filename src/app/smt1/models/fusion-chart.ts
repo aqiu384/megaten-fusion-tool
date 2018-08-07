@@ -59,6 +59,16 @@ export class FusionChart extends SmtFusionChart {
       this.fissionChart = normFissions;
     }
 
+    if (compConfig.darknessRecipes) {
+      for (const [raceD, raceRO] of Object.entries(compConfig.darknessRecipes)) {
+        const raceR = <string>raceRO;
+        this.fusionChart[raceD] = {};
+        this.fusionChart[raceD][raceD] = raceR;
+        this.fissionChart[raceR] = {};
+        this.fissionChart[raceR][raceD] = [raceD];
+      }
+    }
+
     this.elementChart = SmtFusionChart.loadElementTableJson(
       compConfig.elementTable['races'],
       this.elementDemons,

@@ -61,7 +61,8 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   normalTable: FUSION_CHART_JSON,
   tripleTable: TRIPLE_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
-  mitamaTable: ELEMENT_CHART_JSON['pairs']
+  mitamaTable: ELEMENT_CHART_JSON['pairs'],
+  darknessRecipes: FUSION_CHART_JSON['darks']
 };
 
 export const fusionDataFactory = () => {

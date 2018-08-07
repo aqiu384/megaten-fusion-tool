@@ -38,4 +38,5 @@ export interface CompendiumConfig extends BaseComp {
   tripleElementTable?;
   tripleMitamaTable?;
   specialRecipes?;
+  darknessRecipes?;
 }

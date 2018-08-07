@@ -30,7 +30,7 @@ export function splitWithDiffRace(name: string, compendium: Compendium, fusionCh
 
       for (const raceB of raceBs) {
         for (const lvlB of compendium.getIngredientDemonLvls(raceB)) {
-          if (minLvlB < lvlB && lvlB <= maxLvlB) {
+          if (minLvlB < lvlB && lvlB <= maxLvlB && (raceA != raceB || lvlA < lvlB)) {
             recipes.push({
               name1: compendium.reverseLookupDemon(raceA, lvlA),
               name2: compendium.reverseLookupDemon(raceB, lvlB)
