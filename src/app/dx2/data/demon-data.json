@@ -179,9 +179,9 @@
     "cnum": 73,
     "gach": [
       "Gigantomachia",
+      "Deadly Poison",
       "Mazandyne",
-      "Mortal Jihad",
-      "Oni-Kagura"
+      "Resist Force"
     ],
     "grade": 83,
     "race": "Snake",
@@ -237,7 +237,7 @@
   "Apis": {
     "ai": "sup",
     "arch": [
-      "Media",
+      "Mediara",
       "Power Hit",
       "Discord",
       "Life Surge",
@@ -538,8 +538,8 @@
     "gach": [
       "Bufudyne",
       "Mahashibaboo",
-      "Vitality Amp II",
-      "Makajam"
+      "Vitality Amp III",
+      "Resist Force"
     ],
     "grade": 84,
     "race": "Avatar",
@@ -1346,6 +1346,32 @@
     "race": "Megami",
     "resists": "w-s-ss-",
     "stats": [1183, 106, 124, 173, 167, 106]
+  },
+  "Hell Biker": {
+    "ai": "atk",
+    "arch": [
+      "Power Hit",
+      "Mamudoon",
+      "Recarmdra",
+      "Auto-Sukuka",
+      "Repel Light"
+    ],
+    "base": [
+      "Maragion",
+      "Speedster",
+      "Red Zone"
+    ],
+    "cnum": 181,
+    "gach": [
+      "Agidyne",
+      "War Cry",
+      "Deadly Bondage",
+      "Resist Dark"
+    ],
+    "grade": 77,
+    "race": "Fiend",
+    "resists": "-r--sw-",
+    "stats": [1004, 156, 156, 135, 229, 87]
   },
   "Heqet": {
     "ai": "rec",
@@ -2465,9 +2491,9 @@
     "cnum": 4,
     "gach": [
       "Titanomachia",
-      "Resist Fire",
+      "Magic Amp III",
       "Ziodyne",
-      "Hurricane Slash"
+      "Null Bind"
     ],
     "grade": 90,
     "race": "Herald",
@@ -3227,13 +3253,13 @@
     "base": [
       "Mana Aid",
       "Salvation",
-      "Energy Drain"
+      "God's Malice"
     ],
     "cnum": 95,
     "gach": [
       "Fire Breath",
-      "Agilao",
-      "Eat Whole",
+      "Mudodyne",
+      "Wind Breath",
       "Recovery Boost"
     ],
     "grade": 84,
@@ -3376,7 +3402,7 @@
     "base": [
       "Zandyne",
       "Debilitate",
-      "Mortal Jihad"
+      "Was Sceptre"
     ],
     "cnum": 122,
     "gach": [
@@ -3492,10 +3518,10 @@
     ],
     "cnum": 40,
     "gach": [
-      "Dezoreton",
-      "Ice Breath",
-      "Bufula",
-      "Mahapoisma"
+      "Strength Amp III",
+      "Mortal Jihad",
+      "Binge Eating",
+      "Resist Force"
     ],
     "grade": 93,
     "race": "Fury",
@@ -3889,9 +3915,9 @@
     ],
     "cnum": 152,
     "gach": [
-      "Tarukaja",
-      "Mabufula",
-      "Vorpal Blade",
+      "Evade",
+      "Auto-Tarunda",
+      "Trisagion",
       "Resist Fire"
     ],
     "grade": 94,
@@ -4045,10 +4071,10 @@
     ],
     "cnum": 18,
     "gach": [
-      "Mortal Jihad",
-      "Resist Mute",
+      "Hellfire",
+      "Null Bind",
       "Wind Breath",
-      "Hamaon"
+      "Resist Fire"
     ],
     "grade": 97,
     "race": "Deity",
@@ -4204,6 +4230,32 @@
     "race": "Snake",
     "resists": "-wns--w",
     "stats": [1347, 123, 104, 207, 157, 133]
+  },
+  "Zaou-Gongen": {
+    "ai": "atk",
+    "arch": [
+      "Enduring Soul",
+      "Herculean Strike",
+      "Rebellion",
+      "Fire Amp",
+      "Drain Phys"
+    ],
+    "base": [
+      "Maragidyne",
+      "God's Hand",
+      "Zaou-Vajra"
+    ],
+    "cnum": 180,
+    "gach": [
+      "Strength Amp III",
+      "Auto-Taruka",
+      "Hellfire",
+      "Death Counter"
+    ],
+    "grade": 85,
+    "race": "Fury",
+    "resists": "nr-w-ss",
+    "stats": [1065, 193, 170, 148, 123, 148]
   },
   "Zhong Kui": {
     "ai": "atk",

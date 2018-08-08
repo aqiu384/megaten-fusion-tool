@@ -265,7 +265,7 @@ export class Compendium implements ICompendium {
   }
 
   isElementDemon(name: string) {
-    return this.demons[name].race === 'Element';
+    return this.demons[name] && this.demons[name].race === 'Element';
   }
 
   isOverlappingResult(name: string) {

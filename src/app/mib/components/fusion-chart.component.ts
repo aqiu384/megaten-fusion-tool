@@ -136,8 +136,6 @@ export class MibFusionChartComponent implements OnChanges {
 
     elemTable.push([''].concat(Arcanas, ['']));
     this.elemTable = elemTable;
-
-    console.log(JSON.stringify(this.elemTable))
   }
 }
 

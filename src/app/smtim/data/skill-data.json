@@ -489,7 +489,7 @@
   "Counter": {
     "effect": "Counter next Atk or Rush Atk",
     "element": "defend",
-    "ename": "Counter (Demon)"
+    "ename": "Counter Demon"
   },
   "Cup of Babylon": {
     "cost": 1025,
@@ -526,7 +526,7 @@
     "stat": "U",
     "target": "Ally Area"
   },
-  "Dark Breath (Spin)": {
+  "Dark Breath Spin": {
     "action": "fspin",
     "cost": 1020,
     "effect": "-100% Rec",
@@ -623,7 +623,7 @@
     "cost": 2100,
     "effect": "x4 hits, Intensive Break",
     "element": "support",
-    "ename": "Break Shooter (Demon)",
+    "ename": "Break Shooter Demon",
     "stat": "U",
     "target": "1 Ally"
   },
@@ -667,24 +667,24 @@
     "stat": "P",
     "target": "Foe Circle"
   },
-  "Divine Punishment (C)": {
+  "Divine Punishment C": {
     "acost": "20 MP, 250 Mag",
     "action": "fspin",
     "cost": 20,
     "effect": "100% Stone, +20% Dmg to Neutral, +50% Dmg to Law",
     "element": "almighty",
-    "ename": "Divine Punishment (Physical)",
+    "ename": "Divine Punishment Physical",
     "inherit": "none",
     "stat": "C",
     "target": "Foe Circle"
   },
-  "Divine Punishment (L)": {
+  "Divine Punishment L": {
     "acost": "20 MP, 250 Mag",
     "action": "fspin",
     "cost": 20,
     "effect": "100% Stone, +20% Dmg to Neutral, +50% Dmg to Chaos",
     "element": "almighty",
-    "ename": "Divine Punishment (Spell)",
+    "ename": "Divine Punishment Spell",
     "inherit": "none",
     "stat": "P",
     "target": "Foe Circle"
@@ -922,7 +922,7 @@
     "stat": "U",
     "target": "Foe Circle"
   },
-  "Frolic (Male)": {
+  "Frolic Male": {
     "acost": "15 Mag",
     "action": "spin",
     "cost": 1015,
@@ -948,7 +948,7 @@
     "cost": 20,
     "effect": "Only Knockback cancels cast",
     "element": "penetrate",
-    "ename": "Gae Bolg (Demon)",
+    "ename": "Gae Bolg Demon",
     "inherit": "sacri",
     "stat": "C",
     "target": "Foe Front"
@@ -2085,7 +2085,7 @@
     "cost": 8,
     "effect": "70% Burn",
     "element": "fire",
-    "ename": "Phlegethon (Demon)",
+    "ename": "Phlegethon Demon",
     "inherit": "thrust",
     "stat": "C",
     "target": "Foe Line"
@@ -2534,7 +2534,7 @@
     "action": "rush",
     "cost": 15,
     "element": "penetrate",
-    "ename": "Spear (Demon)",
+    "ename": "Spear Demon",
     "inherit": "thrust",
     "stat": "C",
     "target": "Foe Line"
@@ -2756,7 +2756,7 @@
     "stat": "L",
     "target": "1 Foe"
   },
-  "Wing Flap (Strong)": {
+  "Wing Flap Strong": {
     "action": "rapid",
     "cost": 1010,
     "effect": "x3 hits, 70% Stun",

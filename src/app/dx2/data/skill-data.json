@@ -453,6 +453,10 @@
     "power": 140,
     "target": "One Foe"
   },
+  "Fire Amp": {
+    "effect": "Fire damage +25%",
+    "element": "passive"
+  },
   "Fire Boost": {
     "effect": "Fire damage +15%",
     "element": "passive"
@@ -539,6 +543,13 @@
     "power": 200,
     "target": "One Foe"
   },
+  "God's Malice": {
+    "cost": 7,
+    "effect": "30% Poison, Bind, Charm, Mute",
+    "element": "almighty",
+    "power": 120,
+    "target": "One Foe"
+  },
   "Good Aim": {
     "effect": "Phys hit +10%",
     "element": "passive"
@@ -549,7 +560,7 @@
   },
   "Gungnir": {
     "cost": 7,
-    "effect": "30% Critical, 3 uses",
+    "effect": "30% Critical",
     "element": "phys",
     "power": 145,
     "target": "All Foes"
@@ -1433,6 +1444,12 @@
     "effect": "Recovery effectiveness +15%",
     "element": "passive"
   },
+  "Red Zone": {
+    "cost": 7,
+    "effect": "Next physical attack will critical",
+    "element": "support",
+    "target": "All Allies"
+  },
   "Repel Dark": {
     "effect": "Repel Death damage",
     "element": "passive"
@@ -1794,6 +1811,13 @@
     "element": "support",
     "target": "All Foes"
   },
+  "Was Sceptre": {
+    "cost": 6,
+    "effect": "50% Critical, Drain 40% damage dealt",
+    "element": "phys",
+    "power": 160,
+    "target": "One Foe"
+  },
   "Weakdi": {
     "cost": 3,
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
@@ -1845,6 +1869,10 @@
     "element": "force",
     "power": 140,
     "target": "One Foe"
+  },
+  "Zaou-Vajra": {
+    "effect": "Ally guaranteed critical skills also gain Phys Pierce",
+    "element": "passive"
   },
   "Zio": {
     "cost": 4,
