@@ -45,7 +45,7 @@ export function fuseWithSameRace(name: string, compendium: Compendium, fusionCha
   const ingLvls2 = compendium.getIngredientDemonLvls(ingRace1).filter(lvl => lvl !== ingLvl1);
   const recipes: NamePair[] = [];
 
-  if (compendium.isElementDemon(elementResult)) {
+  if (elementResult && compendium.isElementDemon(elementResult)) {
     for (const ingLvl2 of ingLvls2) {
       recipes.push({
         name1: compendium.reverseLookupDemon(ingRace1, ingLvl2),
