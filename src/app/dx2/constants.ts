@@ -32,6 +32,7 @@ export const Races = [
   'Haunt',
   'Avian',
   'Dragon',
+  'Jaki',
   'Fiend',
   'Hero',
   'Rumor',

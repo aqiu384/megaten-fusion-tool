@@ -102,7 +102,7 @@
     "base": [
       "Megidola",
       "Infernal Mask",
-      "Bane of Pierce"
+      "Repel Pierce"
     ],
     "cnum": 168,
     "grade": 85,
@@ -126,15 +126,15 @@
     ],
     "cnum": 17,
     "gach": [
-      "Juon",
+      "Luck Amp III",
       "Null Charm",
-      "Rakukaja",
-      "Sukunda"
+      "Mahamadyne",
+      "Mahamakajaon"
     ],
     "grade": 82,
     "race": "Deity",
     "resists": "-r-w-s-",
-    "stats": [1112, 88, 228, 157, 133, 157]
+    "stats": [1112, 88, 213, 157, 133, 157]
   },
   "Ammut": {
     "ai": "atk",
@@ -668,6 +668,32 @@
     "race": "Kishin",
     "resists": "-wn----",
     "stats": [1192, 207, 86, 175, 117, 133]
+  },
+  "Black Frost": {
+    "ai": "atk",
+    "arch": [
+      "Maragion",
+      "Hell Gaze",
+      "Concentrate",
+      "Ice Amp",
+      "Null Fire"
+    ],
+    "base": [
+      "Mabufudyne",
+      "Anguished Seal",
+      "Go to Hell!"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Merciless Blow",
+      "Insanity",
+      "Ice Age",
+      "Resist Light"
+    ],
+    "grade": 81,
+    "race": "Jaki",
+    "resists": "-sn--wn",
+    "stats": [1107, 68, 201, 157, 153, 169]
   },
   "Black Ooze": {
     "ai": "sup",
@@ -1209,6 +1235,51 @@
     "resists": "r--www-",
     "stats": [1042, 216, 93, 142, 126, 142]
   },
+  "Gremlin": {
+    "ai": "atk",
+    "arch": [
+      "Lunge",
+      "Mudo",
+      "Makajam",
+      "Mana Bonus",
+      "Resist Fire"
+    ],
+    "base": [
+      "Zio",
+      "Bufu"
+    ],
+    "cnum": 0,
+    "grade": 11,
+    "race": "Jaki",
+    "resists": "-wssw--",
+    "stats": [896, 104, 159, 112, 159, 112]
+  },
+  "Grendel": {
+    "ai": "atk",
+    "arch": [
+      "Life Gain",
+      "Herculean Strike",
+      "Charge",
+      "Great Aim",
+      "Resist Force"
+    ],
+    "base": [
+      "Deathbound",
+      "Mortal Jihad",
+      "Agonizing Seal"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Binding Claw",
+      "Endure",
+      "Retaliate",
+      "Wild Guess"
+    ],
+    "grade": 51,
+    "race": "Jaki",
+    "resists": "s---w--",
+    "stats": [1342, 207, 82, 207, 63, 136]
+  },
   "Gucumatz": {
     "ai": "sup",
     "arch": [
@@ -1346,6 +1417,32 @@
     "race": "Megami",
     "resists": "w-s-ss-",
     "stats": [1183, 106, 124, 173, 167, 106]
+  },
+  "Hecatoncheires": {
+    "ai": "atk",
+    "arch": [
+      "Auto-Rakuka",
+      "Binge Eating",
+      "Charge",
+      "Life Surge",
+      "Drain Phys"
+    ],
+    "base": [
+      "Megaton Press",
+      "Bloody Glee",
+      "Hell Guard"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Phys Boost",
+      "Deadly Curse",
+      "Acid Breath",
+      "Resist Light"
+    ],
+    "grade": 74,
+    "race": "Jaki",
+    "resists": "n---ww-",
+    "stats": [1399, 219, 76, 219, 61, 166]
   },
   "Hell Biker": {
     "ai": "atk",
@@ -1608,6 +1705,26 @@
     "resists": "-sw----",
     "stats": [1079, 113, 95, 151, 149, 140]
   },
+  "Ippon-Datara": {
+    "ai": "atk",
+    "arch": [
+      "Mahaju",
+      "Mow Down",
+      "Tarukaja",
+      "Back Attack",
+      "Resist Light"
+    ],
+    "base": [
+      "Mudoon",
+      "Oni-Kagura",
+      "Agonizing Seal"
+    ],
+    "cnum": 0,
+    "grade": 26,
+    "race": "Jaki",
+    "resists": "-s---w-",
+    "stats": [952, 153, 142, 124, 110, 133]
+  },
   "Ishtar": {
     "ai": "rec",
     "arch": [
@@ -1620,14 +1737,14 @@
     "base": [
       "Mahamaon",
       "Diarahan",
-      "Judgement"
+      "Mesopotamian Star"
     ],
     "cnum": 11,
     "gach": [
-      "God's Hand",
-      "Dmg Panel V II",
-      "Dekunda",
-      "Agilao"
+      "Ice Age",
+      "Mahamarin Karion",
+      "Dmg Panel Immunity",
+      "Resist Dark"
     ],
     "grade": 82,
     "race": "Megami",
@@ -2006,6 +2123,32 @@
     "resists": "----wn-",
     "stats": [1013, 118, 146, 137, 146, 118]
   },
+  "Kudlak": {
+    "ai": "sup",
+    "arch": [
+      "Mana Gain",
+      "Mudodyne",
+      "Madezoreton",
+      "Endure",
+      "Drain Dark"
+    ],
+    "base": [
+      "Energy Drain",
+      "Anguished Seal",
+      "Pandemic Bomb"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Deadly Curse",
+      "Mahapoismaon",
+      "Back Attack",
+      "Resist Light"
+    ],
+    "grade": 67,
+    "race": "Jaki",
+    "resists": "-s---wn",
+    "stats": [1084, 85, 163, 152, 146, 174]
+  },
   "Kurama Tengu": {
     "ai": "atk",
     "arch": [
@@ -2367,10 +2510,10 @@
     ],
     "cnum": 141,
     "gach": [
-      "Thunder Reign",
-      "Dezoreton",
-      "Mahamakajaon",
-      "Hellfire"
+      "Strength Amp III",
+      "Great Aim",
+      "Phys Boost",
+      "Resist Phys"
     ],
     "grade": 90,
     "race": "Tyrant",
@@ -2389,7 +2532,7 @@
     "base": [
       "Judgement Light",
       "Binding Cry",
-      "Ordeal of Hatred"
+      "Trial of Hate"
     ],
     "cnum": 169,
     "gach": [
@@ -2465,9 +2608,9 @@
     "cnum": 5,
     "gach": [
       "Spirit Drain",
-      "Mahapoisma",
+      "Maragidyne",
       "Maziodyne",
-      "Maragidyne"
+      "Resist Phys"
     ],
     "grade": 99,
     "race": "Herald",
@@ -3215,6 +3358,58 @@
     "resists": "---sw--",
     "stats": [995, 115, 96, 133, 164, 152]
   },
+  "Rakshasa": {
+    "ai": "atk",
+    "arch": [
+      "Endure",
+      "Dark Sword",
+      "Taunt",
+      "Retaliate",
+      "Null Force"
+    ],
+    "base": [
+      "Fatal Sword",
+      "Charge",
+      "Neiri Chiou"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Tempest Slash",
+      "Agility Amp II",
+      "Deadly Curse",
+      "Speedster"
+    ],
+    "grade": 61,
+    "race": "Jaki",
+    "resists": "s--w-w-",
+    "stats": [849, 212, 84, 102, 164, 150]
+  },
+  "Rama": {
+    "ai": "atk",
+    "arch": [
+      "Hades Blast",
+      "Energy Drain",
+      "Luster Candy",
+      "Ice Pierce",
+      "Drain Ice"
+    ],
+    "base": [
+      "Mabufudyne",
+      "Drain Pierce",
+      "Brahmastra"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Mana Aid",
+      "Concentrate",
+      "Ice Age",
+      "Null Mute"
+    ],
+    "grade": 86,
+    "race": "Hero",
+    "resists": "-ns----",
+    "stats": [1117, 139, 193, 159, 145, 139]
+  },
   "Rangda": {
     "ai": "atk",
     "arch": [
@@ -3402,14 +3597,14 @@
     "base": [
       "Zandyne",
       "Debilitate",
-      "Was Sceptre"
+      "Ouas"
     ],
     "cnum": 122,
     "gach": [
-      "Marin Karin",
-      "Mahamarin Karin",
-      "Hades Blast",
-      "Ju"
+      "Sweet Bite",
+      "Luck Amp III",
+      "Vorpal Blade",
+      "Assassin"
     ],
     "grade": 84,
     "race": "Vile",
@@ -3544,10 +3739,10 @@
     ],
     "cnum": 153,
     "gach": [
-      "Maziodyne",
-      "Trisagion",
-      "Megidola",
-      "Evil Gaze"
+      "Great Aim",
+      "Auto-Sukunda",
+      "Hurricane Slash",
+      "Resist Dark"
     ],
     "grade": 83,
     "race": "Hero",
@@ -3739,9 +3934,9 @@
     ],
     "cnum": 140,
     "gach": [
-      "Deadly Poison",
-      "Force Boost",
-      "Rakunda",
+      "Hellfire",
+      "Magic Amp III",
+      "Fire Boost",
       "Eat Whole"
     ],
     "grade": 83,
@@ -3765,10 +3960,10 @@
     ],
     "cnum": 39,
     "gach": [
-      "Diarahan",
-      "Hellfire",
+      "Deadly Bondage",
+      "Agility Amp III",
       "Fog Breath",
-      "Hamadyne"
+      "Resist Fire"
     ],
     "grade": 82,
     "race": "Fury",
@@ -3838,14 +4033,14 @@
     "cnum": 53,
     "gach": [
       "Mahamadyne",
-      "Mahamarin Karion",
-      "Evil Gaze",
-      "Mahamarin Karin"
+      "Auto-Rakuka",
+      "Elec Boost",
+      "Resist Force"
     ],
     "grade": 83,
     "race": "Kishin",
     "resists": "sn-dws-",
-    "stats": [1169, 201, 147, 170, 133, 88]
+    "stats": [1169, 201, 180, 170, 133, 117]
   },
   "Throne": {
     "ai": "atk",
@@ -4243,7 +4438,7 @@
     "base": [
       "Maragidyne",
       "God's Hand",
-      "Zaou-Vajra"
+      "Kongo Zaou"
     ],
     "cnum": 180,
     "gach": [

@@ -35,6 +35,10 @@
     "effect": "Agility +15",
     "element": "passive"
   },
+  "Agonizing Seal": {
+    "effect": "Damage dealt +10% to and damage received -10% from enemies with Curse",
+    "element": "passive"
+  },
   "Allure": {
     "cost": 6,
     "effect": "35% Charm",
@@ -47,6 +51,10 @@
     "effect": "Remove all ailments",
     "element": "recovery",
     "target": "One Ally"
+  },
+  "Anguished Seal": {
+    "effect": "Damage dealt +15% to and damage received -15% from enemies with Curse",
+    "element": "passive"
   },
   "Apocalypse": {
     "cost": 8,
@@ -93,10 +101,6 @@
   },
   "Back Attack": {
     "effect": "Damage +10% when enemy weakness struck",
-    "element": "passive"
-  },
-  "Bane of Pierce": {
-    "effect": "Ally Repel resistances invalidate enemy Pierce effects",
     "element": "passive"
   },
   "Barong Dance": {
@@ -158,6 +162,13 @@
     "element": "elec",
     "power": 50,
     "target": "Multi Foes"
+  },
+  "Brahmastra": {
+    "cost": 7,
+    "effect": "3 hits",
+    "element": "almighty",
+    "power": 40,
+    "target": "All Foes"
   },
   "Bufu": {
     "cost": 4,
@@ -248,6 +259,10 @@
   },
   "Deadly Charm": {
     "effect": "Damage +30% to enemies with Charm",
+    "element": "passive"
+  },
+  "Deadly Curse": {
+    "effect": "Damage +30% to enemies with Curse",
     "element": "passive"
   },
   "Deadly Mute": {
@@ -370,6 +385,10 @@
     "effect": "Phys hit +15%, Phys avoid +15%",
     "element": "passive"
   },
+  "Drain Dark": {
+    "effect": "Drain Dark damage",
+    "element": "passive"
+  },
   "Drain Elec": {
     "effect": "Drain Elec damage",
     "element": "passive"
@@ -388,6 +407,10 @@
   },
   "Drain Phys": {
     "effect": "Drain Phys damage",
+    "element": "passive"
+  },
+  "Drain Pierce": {
+    "effect": "Ally Drain resistances invalidate Pierce effects",
     "element": "passive"
   },
   "Eat Whole": {
@@ -530,6 +553,13 @@
     "power": 130,
     "target": "All Foes"
   },
+  "Go to Hell!": {
+    "cost": 7,
+    "effect": "80% Curse, Dark Pierce",
+    "element": "death",
+    "power": 100,
+    "target": "All Foes"
+  },
   "God's Bow": {
     "cost": 7,
     "effect": "50% instant death, 1 use",
@@ -616,6 +646,10 @@
     "power": 180,
     "target": "One Foe"
   },
+  "Hell Guard": {
+    "effect": "Damage against allies from multi-target skills -15%",
+    "element": "passive"
+  },
   "Hell Thrust": {
     "cost": 7,
     "effect": "4 hits, 35% Charm",
@@ -660,6 +694,10 @@
     "power": 180,
     "target": "One Foe"
   },
+  "Ice Amp": {
+    "effect": "Ice damage +25%",
+    "element": "passive"
+  },
   "Ice Boost": {
     "effect": "Ice damage +15%",
     "element": "passive"
@@ -670,6 +708,10 @@
     "element": "ice",
     "power": 40,
     "target": "Multi Foes"
+  },
+  "Ice Pierce": {
+    "effect": "Ice attacks bypass resistances",
+    "element": "passive"
   },
   "Infernal Mask": {
     "effect": "Ailment resistance +60%",
@@ -718,6 +760,10 @@
     "element": "force",
     "power": 180,
     "target": "One Foe"
+  },
+  "Kongo Zaou": {
+    "effect": "Allies in state of Rebellion gain Phys Pierce",
+    "element": "passive"
   },
   "Kusanagi": {
     "cost": 6,
@@ -1157,6 +1203,13 @@
     "effect": "Damage +20% when enemy weakness struck",
     "element": "passive"
   },
+  "Mesopotamian Star": {
+    "cost": 8,
+    "effect": "Tarunda to enemies, Tarukaja to allies",
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
+  },
   "Meweakdi": {
     "cost": 4,
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
@@ -1238,6 +1291,10 @@
     "element": "recovery",
     "target": "One Ally"
   },
+  "Neiri Chiou": {
+    "effect": "Phys hit +10%, begin battle with Rebellion",
+    "element": "passive"
+  },
   "Nihil Claw": {
     "cost": 6,
     "effect": "2-3 hits",
@@ -1304,13 +1361,6 @@
     "power": 130,
     "target": "One Foe"
   },
-  "Ordeal of Hatred": {
-    "cost": 7,
-    "effect": "Tarunda, Rakunda, or Sukunda",
-    "element": "expel",
-    "power": 130,
-    "target": "All Foes"
-  },
   "Orlean Prayer": {
     "cost": 6,
     "effect": "Recover 3 MP",
@@ -1318,11 +1368,24 @@
     "power": 130,
     "target": "One Ally"
   },
+  "Ouas": {
+    "cost": 6,
+    "effect": "50% Critical, Drain 40% damage dealt",
+    "element": "phys",
+    "power": 160,
+    "target": "One Foe"
+  },
   "Outbreak": {
     "cost": 6,
     "effect": "1-4 hits, 60% Weak",
     "element": "ailment",
     "target": "Multi Foes"
+  },
+  "Pandemic Bomb": {
+    "cost": 5,
+    "effect": "Dekaja + Debilitate",
+    "element": "support",
+    "target": "All Foes"
   },
   "Paraladi": {
     "cost": 3,
@@ -1476,6 +1539,10 @@
   },
   "Repel Phys": {
     "effect": "Repel Phys damage",
+    "element": "passive"
+  },
+  "Repel Pierce": {
+    "effect": "Ally Repel resistances invalidate Pierce effects",
     "element": "passive"
   },
   "Resist Bind": {
@@ -1756,6 +1823,13 @@
     "effect": "Damage from Poison Floor -30%, Immune to Dark Zone effects",
     "element": "passive"
   },
+  "Trial of Hate": {
+    "cost": 7,
+    "effect": "Tarunda, Rakunda, or Sukunda",
+    "element": "expel",
+    "power": 130,
+    "target": "All Foes"
+  },
   "Trickster": {
     "effect": "20% chance not to use Press Turn when enemy weakness struck",
     "element": "passive"
@@ -1811,13 +1885,6 @@
     "element": "support",
     "target": "All Foes"
   },
-  "Was Sceptre": {
-    "cost": 6,
-    "effect": "50% Critical, Drain 40% damage dealt",
-    "element": "phys",
-    "power": 160,
-    "target": "One Foe"
-  },
   "Weakdi": {
     "cost": 3,
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
@@ -1869,10 +1936,6 @@
     "element": "force",
     "power": 140,
     "target": "One Foe"
-  },
-  "Zaou-Vajra": {
-    "effect": "Ally guaranteed critical skills also gain Phys Pierce",
-    "element": "passive"
   },
   "Zio": {
     "cost": 4,
