@@ -69,7 +69,7 @@
     "arch": [
       "Soul Drain",
       "Hell Gaze",
-      "Mahajuon",
+      "Necro Dogma",
       "Dark Amp",
       "Repel Light"
     ],
@@ -680,10 +680,10 @@
     ],
     "base": [
       "Mabufudyne",
-      "Anguished Seal",
+      "Curse of Anguish",
       "Go to Hell!"
     ],
-    "cnum": 0,
+    "cnum": 189,
     "gach": [
       "Merciless Blow",
       "Insanity",
@@ -805,6 +805,32 @@
     "race": "Haunt",
     "resists": "-dw--wn",
     "stats": [877, 136, 186, 108, 116, 136]
+  },
+  "Chernobog": {
+    "ai": "atk",
+    "arch": [
+      "Sea of Chaos",
+      "Dark Sword",
+      "Outbreak",
+      "Savage Glee",
+      "Null Fire"
+    ],
+    "base": [
+      "Deadly Poison",
+      "Hades Blast",
+      "Fog of Death"
+    ],
+    "cnum": 195,
+    "gach": [
+      "Deadly Mute",
+      "Dmg Panel V II",
+      "Tempest Slash",
+      "Resist Light"
+    ],
+    "grade": 64,
+    "race": "Reaper",
+    "resists": "-----wn",
+    "stats": [990, 193, 85, 132, 144, 162]
   },
   "Chimera": {
     "ai": "atk",
@@ -967,6 +993,26 @@
     "race": "Fallen",
     "resists": "-----ws",
     "stats": [1089, 88, 173, 153, 119, 133]
+  },
+  "Dionysus": {
+    "ai": "sup",
+    "arch": [
+      "Luck Amp II",
+      "Megidola",
+      "Madezoreton",
+      "Life Gain",
+      "Resist Ice"
+    ],
+    "base": [
+      "Back Attack",
+      "Infernal Mask",
+      "Euphoric Frenzy"
+    ],
+    "cnum": 193,
+    "grade": 64,
+    "race": "Zealot",
+    "resists": "-nwn---",
+    "stats": [1032, 112, 141, 141, 134, 183]
   },
   "Dis": {
     "ai": "rec",
@@ -1248,7 +1294,7 @@
       "Zio",
       "Bufu"
     ],
-    "cnum": 0,
+    "cnum": 183,
     "grade": 11,
     "race": "Jaki",
     "resists": "-wssw--",
@@ -1266,9 +1312,9 @@
     "base": [
       "Deathbound",
       "Mortal Jihad",
-      "Agonizing Seal"
+      "Curse of Distress"
     ],
-    "cnum": 0,
+    "cnum": 185,
     "gach": [
       "Binding Claw",
       "Endure",
@@ -1430,9 +1476,9 @@
     "base": [
       "Megaton Press",
       "Bloody Glee",
-      "Hell Guard"
+      "Guards of Tartarus"
     ],
-    "cnum": 0,
+    "cnum": 188,
     "gach": [
       "Phys Boost",
       "Deadly Curse",
@@ -1443,6 +1489,32 @@
     "race": "Jaki",
     "resists": "n---ww-",
     "stats": [1399, 219, 76, 219, 61, 166]
+  },
+  "Hel": {
+    "ai": "atk",
+    "arch": [
+      "Ice Breath",
+      "Bufudyne",
+      "Rattle",
+      "Ice Boost",
+      "Repel Ice"
+    ],
+    "base": [
+      "Mabufula",
+      "Mamudo",
+      "Call to Helheim"
+    ],
+    "cnum": 194,
+    "gach": [
+      "Merciless Blow",
+      "Enduring Soul",
+      "Bufudyne",
+      "Resist Fire"
+    ],
+    "grade": 60,
+    "race": "Reaper",
+    "resists": "-wn---n",
+    "stats": [981, 92, 202, 130, 141, 140]
   },
   "Hell Biker": {
     "ai": "atk",
@@ -1717,9 +1789,9 @@
     "base": [
       "Mudoon",
       "Oni-Kagura",
-      "Agonizing Seal"
+      "Curse of Distress"
     ],
-    "cnum": 0,
+    "cnum": 184,
     "grade": 26,
     "race": "Jaki",
     "resists": "-s---w-",
@@ -1776,6 +1848,58 @@
     "race": "Lady",
     "resists": "-s-n---",
     "stats": [1018, 100, 148, 138, 169, 148]
+  },
+  "Ixtab": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Hell Gaze",
+      "Mahashibabooon",
+      "Berserker",
+      "Null Light"
+    ],
+    "base": [
+      "Mamudoon",
+      "Bufudyne",
+      "Yaxche"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Assassin",
+      "Insanity",
+      "Auto-Rakunda",
+      "Mabufudyne"
+    ],
+    "grade": 84,
+    "race": "Reaper",
+    "resists": "-------",
+    "stats": [0, 0, 0, 0, 0, 0]
+  },
+  "Izanami": {
+    "ai": "sup",
+    "arch": [
+      "Life Surge",
+      "Hell Gaze",
+      "Concentrate",
+      "Elec Amp",
+      "Repel Ice"
+    ],
+    "base": [
+      "Bolt Storm",
+      "Merciless Blow",
+      "Yomotsu Okami"
+    ],
+    "cnum": 191,
+    "gach": [
+      "Auto-Rakunda",
+      "Silent Prayer",
+      "Maziodyne",
+      "Recarmdra"
+    ],
+    "grade": 89,
+    "race": "Megami",
+    "resists": "-wn--sd",
+    "stats": [1122, 90, 226, 160, 126, 160]
   },
   "Jack Frost": {
     "ai": "atk",
@@ -2134,10 +2258,10 @@
     ],
     "base": [
       "Energy Drain",
-      "Anguished Seal",
-      "Pandemic Bomb"
+      "Curse of Anguish",
+      "Dark Pandemic"
     ],
-    "cnum": 0,
+    "cnum": 187,
     "gach": [
       "Deadly Curse",
       "Mahapoismaon",
@@ -2226,7 +2350,7 @@
     "arch": [
       "Mana Gain",
       "Killing Wind",
-      "Makarakarn",
+      "Defensive Cry",
       "Insanity",
       "Null Force"
     ],
@@ -2394,7 +2518,7 @@
     "ai": "atk",
     "arch": [
       "Vitality Amp III",
-      "Titanomachia",
+      "Mind Blast",
       "Recarmdra",
       "Butcher",
       "Drain Light"
@@ -2414,7 +2538,7 @@
     "grade": 98,
     "race": "Tyrant",
     "resists": "s----wr",
-    "stats": [1140, 176, 163, 163, 152, 132]
+    "stats": [1140, 176, 186, 163, 152, 132]
   },
   "Mad Gasser": {
     "ai": "sup",
@@ -2596,7 +2720,7 @@
     "arch": [
       "Enduring Soul",
       "Mahamadyne",
-      "Salvation",
+      "Offensive Cry",
       "Mana Gain",
       "Repel Elec"
     ],
@@ -2615,7 +2739,7 @@
     "grade": 99,
     "race": "Herald",
     "resists": "-ssssn-",
-    "stats": [1140, 176, 199, 164, 129, 122]
+    "stats": [1140, 176, 210, 164, 129, 122]
   },
   "Michael": {
     "ai": "atk",
@@ -2623,7 +2747,7 @@
       "Endure",
       "Thunderclap",
       "Mediarahan",
-      "Hellish Mask",
+      "Infernal Mask",
       "Repel Dark"
     ],
     "base": [
@@ -2706,6 +2830,58 @@
     "race": "Brute",
     "resists": "s---w--",
     "stats": [1126, 180, 79, 161, 108, 132]
+  },
+  "Mot": {
+    "ai": "atk",
+    "arch": [
+      "Mana Gain",
+      "Deathtouch",
+      "Judgement",
+      "Life Surge",
+      "Null Phys"
+    ],
+    "base": [
+      "Megidolaon",
+      "Mamudodyne",
+      "Harmonious Death"
+    ],
+    "cnum": 198,
+    "gach": [
+      "Magic Amp III",
+      "Auto-Rakuka",
+      "Enduring Soul",
+      "Resist Elec"
+    ],
+    "grade": 91,
+    "race": "Reaper",
+    "resists": "ss-wr-r",
+    "stats": [1178, 120, 195, 172, 138, 140]
+  },
+  "Mother Harlot": {
+    "ai": "sup",
+    "arch": [
+      "Magic Amp III",
+      "Deathtouch",
+      "Debilitate",
+      "Deadly Charm",
+      "Drain Phys"
+    ],
+    "base": [
+      "Mana Gain",
+      "Death Lust",
+      "Babylon Goblet"
+    ],
+    "cnum": 190,
+    "gach": [
+      "Tetraka Shift",
+      "Infernal Mask",
+      "Insanity",
+      "Makaraka Shift"
+    ],
+    "grade": 95,
+    "race": "Fiend",
+    "resists": "n--dwss",
+    "stats": [1131, 91, 207, 162, 128, 184]
   },
   "Mothman": {
     "ai": "sup",
@@ -2791,6 +2967,32 @@
     "race": "Beast",
     "resists": "-swws--",
     "stats": [990, 114, 96, 132, 170, 141]
+  },
+  "Nergal": {
+    "ai": "sup",
+    "arch": [
+      "Strength Amp III",
+      "Hades Blast",
+      "Toxic Sting",
+      "Auto-Taruka",
+      "Null Light"
+    ],
+    "base": [
+      "Berserker God",
+      "Meslamtaea",
+      "Plague of Babylon"
+    ],
+    "cnum": 197,
+    "gach": [
+      "Savage Glee",
+      "Auto-Sukuka",
+      "Strength Amp III",
+      "Resist Ice"
+    ],
+    "grade": 82,
+    "race": "Reaper",
+    "resists": "-sw--sr",
+    "stats": [919, 223, 78, 117, 164, 169]
   },
   "Nozuchi": {
     "ai": "atk",
@@ -2947,6 +3149,32 @@
     "race": "Brute",
     "resists": "---w---",
     "stats": [999, 202, 97, 134, 94, 143]
+  },
+  "Orcus": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Mamudoon",
+      "Nocturne",
+      "Tetraka Shift",
+      "Null Phys"
+    ],
+    "base": [
+      "War Cry",
+      "Law of Hell",
+      "Hell's Gate"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Auto-Tarunda",
+      "Null Bind",
+      "Hell Gaze",
+      "Vitality Amp III"
+    ],
+    "grade": 80,
+    "race": "Reaper",
+    "resists": "-------",
+    "stats": [0, 0, 0, 0, 0, 0]
   },
   "Orochi": {
     "ai": "atk",
@@ -3143,6 +3371,32 @@
     "race": "Lady",
     "resists": "-sw----",
     "stats": [1333, 81, 185, 205, 88, 126]
+  },
+  "Persephone": {
+    "ai": "sup",
+    "arch": [
+      "Vengeance",
+      "Energy Drain",
+      "Prayer",
+      "Null Bind",
+      "Drain Dark"
+    ],
+    "base": [
+      "Bufudyne",
+      "Mamudoon",
+      "Fruit of the Dead"
+    ],
+    "cnum": 196,
+    "gach": [
+      "Acid Breath",
+      "Life Gain",
+      "War Cry",
+      "Resist Elec"
+    ],
+    "grade": 72,
+    "race": "Reaper",
+    "resists": "--nw--n",
+    "stats": [1046, 94, 165, 144, 158, 165]
   },
   "Phantom": {
     "ai": "atk",
@@ -3370,9 +3624,9 @@
     "base": [
       "Fatal Sword",
       "Charge",
-      "Neiri Chiou"
+      "Rasetsu"
     ],
-    "cnum": 0,
+    "cnum": 186,
     "gach": [
       "Tempest Slash",
       "Agility Amp II",
@@ -3398,7 +3652,7 @@
       "Drain Pierce",
       "Brahmastra"
     ],
-    "cnum": 0,
+    "cnum": 182,
     "gach": [
       "Mana Aid",
       "Concentrate",
@@ -3435,6 +3689,26 @@
     "race": "Femme",
     "resists": "r--w---",
     "stats": [948, 122, 174, 122, 146, 152]
+  },
+  "Reiko Kashima": {
+    "ai": "atk",
+    "arch": [
+      "Null Curse",
+      "Mamudo",
+      "Sukunda",
+      "Berserker",
+      "Resist Fire"
+    ],
+    "base": [
+      "Mudo",
+      "Lunge",
+      "You're next!"
+    ],
+    "cnum": 192,
+    "grade": 42,
+    "race": "Rumor",
+    "resists": "-w---wd",
+    "stats": [877, 117, 126, 108, 142, 108]
   },
   "Samael": {
     "ai": "sup",
@@ -3589,8 +3863,8 @@
     "ai": "atk",
     "arch": [
       "Titanomachia",
-      "Mind Break",
-      "Outbreak",
+      "Bleeder",
+      "Nocturne",
       "Force Amp",
       "Resist Fire"
     ],
@@ -3923,7 +4197,7 @@
     "arch": [
       "Intimidating Stance",
       "Maragidyne",
-      "Lydia",
+      "Rattle",
       "Fire Pierce",
       "Null Ice"
     ],
@@ -3948,7 +4222,7 @@
     "ai": "atk",
     "arch": [
       "Strength Amp III",
-      "Killing Wind",
+      "Bleeder",
       "Charge",
       "Merciless Blow",
       "Drain Elec"
@@ -4099,7 +4373,7 @@
     "arch": [
       "Mahamakajaon",
       "Judgement",
-      "Vengeance",
+      "Demon Birth Cry",
       "Auto-Rakuka",
       "Resist Phys"
     ],
@@ -4118,7 +4392,7 @@
     "grade": 94,
     "race": "Fiend",
     "resists": "-----nn",
-    "stats": [1032, 121, 184, 141, 160, 156]
+    "stats": [1032, 121, 207, 141, 160, 162]
   },
   "Tsukuyomi": {
     "ai": "sup",
@@ -4255,8 +4529,8 @@
     "arch": [
       "Mudodyne",
       "Megidolaon",
-      "Prayer",
-      "Null Weak",
+      "War Dance",
+      "Null Mute",
       "Repel Dark"
     ],
     "base": [
@@ -4379,7 +4653,7 @@
     "arch": [
       "Enduring Soul",
       "Gigantomachia",
-      "Tetrakarn",
+      "Charge",
       "Phys Amp",
       "Drain Phys"
     ],
@@ -4398,7 +4672,7 @@
     "grade": 97,
     "race": "Hero",
     "resists": "s----nn",
-    "stats": [1089, 198, 132, 153, 163, 132]
+    "stats": [1089, 198, 132, 153, 163, 152]
   },
   "Yurlungur": {
     "ai": "sup",

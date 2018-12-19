@@ -35,10 +35,6 @@
     "effect": "Agility +15",
     "element": "passive"
   },
-  "Agonizing Seal": {
-    "effect": "Damage dealt +10% to and damage received -10% from enemies with Curse",
-    "element": "passive"
-  },
   "Allure": {
     "cost": 6,
     "effect": "35% Charm",
@@ -51,10 +47,6 @@
     "effect": "Remove all ailments",
     "element": "recovery",
     "target": "One Ally"
-  },
-  "Anguished Seal": {
-    "effect": "Damage dealt +15% to and damage received -15% from enemies with Curse",
-    "element": "passive"
   },
   "Apocalypse": {
     "cost": 8,
@@ -98,6 +90,13 @@
   "Avatar": {
     "effect": "Revive once per battle with 200 HP, Recover 40% HP between waves",
     "element": "passive"
+  },
+  "Babylon Goblet": {
+    "cost": 8,
+    "effect": "Drain 1 MP",
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
   },
   "Back Attack": {
     "effect": "Damage +10% when enemy weakness struck",
@@ -152,6 +151,13 @@
     "power": 140,
     "target": "One Foe"
   },
+  "Bleeder": {
+    "cost": 5,
+    "effect": "Remove 2 MP",
+    "element": "phys",
+    "power": 120,
+    "target": "One Foe"
+  },
   "Bloody Glee": {
     "effect": "Critical rate +15%",
     "element": "passive"
@@ -190,6 +196,10 @@
   },
   "Butcher": {
     "effect": "All-target skill damage +20%",
+    "element": "passive"
+  },
+  "Call to Helheim": {
+    "effect": "Tarunda + Rakunda whenever a foe is killed",
     "element": "passive"
   },
   "Ce Acatls' Return": {
@@ -232,6 +242,14 @@
     "element": "passive",
     "power": 50
   },
+  "Curse of Anguish": {
+    "effect": "Damage dealt +15% to and damage received -15% from enemies with Curse",
+    "element": "passive"
+  },
+  "Curse of Distress": {
+    "effect": "Damage dealt +10% to and damage received -10% from enemies with Curse",
+    "element": "passive"
+  },
   "Cursedi": {
     "cost": 3,
     "effect": "Remove Curse, Curse resistance +30% for 3 turns",
@@ -245,6 +263,12 @@
   "Dark Boost": {
     "effect": "Death damage +15%",
     "element": "passive"
+  },
+  "Dark Pandemic": {
+    "cost": 5,
+    "effect": "Dekaja + Debilitate",
+    "element": "support",
+    "target": "All Foes"
   },
   "Dark Sword": {
     "cost": 5,
@@ -278,6 +302,10 @@
     "element": "passive",
     "power": 150
   },
+  "Death Lust": {
+    "effect": "30% Charm to all foes on first turn and +25% atk against Charmed foes",
+    "element": "passive"
+  },
   "Deathbound": {
     "cost": 4,
     "effect": "2-3 hits",
@@ -298,6 +326,12 @@
     "element": "support",
     "target": "All Foes"
   },
+  "Defensive Cry": {
+    "cost": 6,
+    "effect": "Rakukaja to allies + Tarunda to foes",
+    "element": "support",
+    "target": "Universal"
+  },
   "Dekaja": {
     "cost": 5,
     "effect": "Remove all -kaja effects",
@@ -309,6 +343,13 @@
     "effect": "Remove all -kundu effects",
     "element": "support",
     "target": "All Allies"
+  },
+  "Demon Birth Cry": {
+    "cost": 8,
+    "effect": "Tarunda",
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
   },
   "Dezoreto": {
     "cost": 5,
@@ -451,6 +492,10 @@
     "effect": "Ailment recovery rate +30%",
     "element": "passive"
   },
+  "Euphoric Frenzy": {
+    "effect": "Counter Phys damage with 50% Charm",
+    "element": "passive"
+  },
   "Evade": {
     "effect": "Phys avoid +20%",
     "element": "passive"
@@ -514,6 +559,10 @@
     "element": "support",
     "target": "All Foes"
   },
+  "Fog of Death": {
+    "effect": "Sukunda + Poison whenever a foe is Weakened",
+    "element": "passive"
+  },
   "Force Amp": {
     "effect": "Force damage +25%",
     "element": "passive"
@@ -524,6 +573,10 @@
   },
   "Force Pierce": {
     "effect": "Force attacks bypass resistances",
+    "element": "passive"
+  },
+  "Fruit of the Dead": {
+    "effect": "Foes can only revive with 1 HP",
     "element": "passive"
   },
   "Gae Bolg": {
@@ -588,6 +641,10 @@
     "effect": "Phys hit +20%",
     "element": "passive"
   },
+  "Guards of Tartarus": {
+    "effect": "Damage against allies from multi-target skills -15%",
+    "element": "passive"
+  },
   "Gungnir": {
     "cost": 7,
     "effect": "30% Critical",
@@ -619,6 +676,10 @@
     "power": 140,
     "target": "One Foe"
   },
+  "Harmonious Death": {
+    "effect": "Every 2nd turn, atk +10% (+50% max) and x2 Press Turn Icons for that turn",
+    "element": "passive"
+  },
   "Hassou Tobi": {
     "cost": 7,
     "effect": "8 hits",
@@ -646,16 +707,16 @@
     "power": 180,
     "target": "One Foe"
   },
-  "Hell Guard": {
-    "effect": "Damage against allies from multi-target skills -15%",
-    "element": "passive"
-  },
   "Hell Thrust": {
     "cost": 7,
     "effect": "4 hits, 35% Charm",
     "element": "phys",
     "power": 50,
     "target": "Multi Foes"
+  },
+  "Hell's Gate": {
+    "effect": "Ally dmg taken from multi-target atks -3 x (# Weak resistances in party)% (-30% max)",
+    "element": "passive"
   },
   "Hellfire": {
     "cost": 5,
@@ -771,6 +832,10 @@
     "element": "force",
     "power": 180,
     "target": "One Foe"
+  },
+  "Law of Hell": {
+    "effect": "Ally Weak resistances will not grant Press Turn bonuses for foes",
+    "element": "passive"
   },
   "Life Aid": {
     "effect": "Recover 30% HP between waves",
@@ -1203,6 +1268,10 @@
     "effect": "Damage +20% when enemy weakness struck",
     "element": "passive"
   },
+  "Meslamtaea": {
+    "effect": "Hit +20% and Rebellion whenever a foe is Poisoned",
+    "element": "passive"
+  },
   "Mesopotamian Star": {
     "cost": 8,
     "effect": "Tarunda to enemies, Tarukaja to allies",
@@ -1215,6 +1284,13 @@
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
     "element": "recovery",
     "target": "All Allies"
+  },
+  "Mind Blast": {
+    "cost": 6,
+    "effect": "Remove 4 MP",
+    "element": "almighty",
+    "power": 100,
+    "target": "One Foe"
   },
   "Mind Break": {
     "cost": 5,
@@ -1291,9 +1367,12 @@
     "element": "recovery",
     "target": "One Ally"
   },
-  "Neiri Chiou": {
-    "effect": "Phys hit +10%, begin battle with Rebellion",
-    "element": "passive"
+  "Necro Dogma": {
+    "cost": 8,
+    "effect": "Rakukaja to allies",
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
   },
   "Nihil Claw": {
     "cost": 6,
@@ -1301,6 +1380,12 @@
     "element": "phys",
     "power": 75,
     "target": "Multi Foes"
+  },
+  "Nocturne": {
+    "cost": 5,
+    "effect": "Rakukaja + Sukukaja",
+    "element": "support",
+    "target": "All Allies"
   },
   "Null Bind": {
     "effect": "Immune to Bind",
@@ -1354,6 +1439,12 @@
     "effect": "Immune to Weak",
     "element": "passive"
   },
+  "Offensive Cry": {
+    "cost": 6,
+    "effect": "Tarukaja to allies + Rakunda to foes",
+    "element": "support",
+    "target": "Universal"
+  },
   "Oni-Kagura": {
     "cost": 5,
     "effect": "30% Critical",
@@ -1381,12 +1472,6 @@
     "element": "ailment",
     "target": "Multi Foes"
   },
-  "Pandemic Bomb": {
-    "cost": 5,
-    "effect": "Dekaja + Debilitate",
-    "element": "support",
-    "target": "All Foes"
-  },
   "Paraladi": {
     "cost": 3,
     "effect": "Remove Bind, Bind resistance +by 30% for 3 turns",
@@ -1411,6 +1496,12 @@
   "Phys Pierce": {
     "effect": "Phys attacks bypass resistances",
     "element": "passive"
+  },
+  "Plague of Babylon": {
+    "cost": 6,
+    "effect": "Barrier Break + 80% Weak",
+    "element": "ailment",
+    "target": "All Foes"
   },
   "Poisma": {
     "cost": 5,
@@ -1481,6 +1572,17 @@
     "element": "phys",
     "power": 45,
     "target": "Multi Foes"
+  },
+  "Rasetsu": {
+    "effect": "Phys hit +10%, begin battle with Rebellion",
+    "element": "passive"
+  },
+  "Rattle": {
+    "cost": 8,
+    "effect": "Sukunda",
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
   },
   "Rebellion": {
     "cost": 6,
@@ -1885,6 +1987,12 @@
     "element": "support",
     "target": "All Foes"
   },
+  "War Dance": {
+    "cost": 5,
+    "effect": "Tarukaja + Rakukaja",
+    "element": "support",
+    "target": "All Allies"
+  },
   "Weakdi": {
     "cost": 3,
     "effect": "Remove Weak, Weak resistance +30% for 3 turns",
@@ -1912,12 +2020,24 @@
     "power": 40,
     "target": "Multi Foes"
   },
+  "Yaxche": {
+    "effect": "Upon death, counter with Almighty 100 dmg, 100% insta-death, and nullify attacker's endure effects",
+    "element": "passive"
+  },
   "Yinlong Killer": {
     "cost": 8,
     "effect": "50% Critical",
     "element": "phys",
     "power": 150,
     "target": "All Foes"
+  },
+  "Yomotsu Okami": {
+    "effect": "Ally Elec and Dark dmg +10%",
+    "element": "passive"
+  },
+  "You're next!": {
+    "effect": "A foe killed with a single-target atk can only revive as a Lvl 1 Reiko Kashima",
+    "element": "passive"
   },
   "Zan": {
     "cost": 4,
