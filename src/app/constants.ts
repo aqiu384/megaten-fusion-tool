@@ -130,13 +130,6 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     ]
   },
   {
-    game: 'Persona 3',
-    tool: 'p3',
-    srcs: [
-      'https://www.gamefaqs.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404'
-    ]
-  },
-  {
     game: 'Persona 3 FES',
     tool: 'p3fes',
     srcs: [
@@ -190,6 +183,14 @@ export const MEGATEN_FUSION_TOOLS: { game: string, tool: string, abbr?: string, 
     srcs: [
       'http://spwiki.net/persona5/',
       'http://megamitensei.wikia.com/wiki/List_of_Persona_5_Skills'
+    ]
+  },
+  {
+    game: 'Persona Q2: New Cinema Labyrinth',
+    abbr: 'Persona Q2',
+    tool: 'pq2',
+    srcs: [
+      'https://www.gamefaqs.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70858',
     ]
   },
   {

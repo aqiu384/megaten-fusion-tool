@@ -122,6 +122,11 @@ const appRoutes: Routes = [
     data: { appName: 'Persona 5' }
   },
   {
+    path: 'pq2',
+    loadChildren: './pq2/compendium.module#CompendiumModule',
+    data: { appName: 'Persona Q2: New Cinema Labyrinth' }
+  },
+  {
     path: 'ds1',
     loadChildren: './desu1/compendium.module#CompendiumModule',
     data: { appName: 'Devil Survivor' }

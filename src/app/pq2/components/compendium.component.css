@@ -1,0 +1,47 @@
+.pq2 div.element-icon {
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+  
+.pq2 div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
+.pq2 div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.pq2 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.pq2 div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.pq2 div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.pq2 div.element-icon.psy { background-image: url('/assets/images/p5/psy.png'); }
+.pq2 div.element-icon.nuk { background-image: url('/assets/images/p5/nuke.png'); }
+.pq2 div.element-icon.ble { background-image: url('/assets/images/p5/bless.png'); }
+.pq2 div.element-icon.cur { background-image: url('/assets/images/p5/curse.png'); }
+.pq2 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
+.pq2 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.pq2 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
+.pq2 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
+.pq2 div.element-icon.nav { background-image: url('/assets/images/p5/nuke.png'); }
+.pq2 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+
+.pq2 th, .pq2 th {
+  color: white;
+  background-color: #ff4800;
+}
+
+.pq2 th.sortable:hover {
+  background-color: #ff520C;
+}
+
+.pq2 th.nav {
+  color: white;
+  cursor: pointer;
+  background-color: #772200;
+}
+
+.pq2 th.nav.active, .pq2 th.nav:hover {
+  color: white;
+  background-color: #ff4800;
+}
+
+.pq2 th.nav.active a, .pq2 th.nav:hover a {
+  color: white;
+}
