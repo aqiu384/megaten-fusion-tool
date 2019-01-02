@@ -78,7 +78,10 @@ export class Compendium implements ICompendium {
       if (json.length > 1) {
         specialRecipes[name] = json;
         demons[name].fusion = 'special';
-      } else if (json.length === 0) {
+      } else if (json.length === 1) {
+        demons[name].fusion = 'recruit';
+        demons[name].prereq = json[0];
+      } else {
         specialRecipes[name] = json;
         demons[name].fusion = 'accident';
         demons[name].prereq = 'Gacha only';
@@ -129,7 +132,10 @@ export class Compendium implements ICompendium {
 
     for (const [name, demon] of Object.entries(this.demons)) {
       ingredients[demon.race].push(demon.lvl);
-      results[demon.race].push(demon.lvl);
+
+      if (demon.fusion === 'normal') {
+        results[demon.race].push(demon.lvl);
+      }
     }
 
     for (const race of Races) {

@@ -570,7 +570,7 @@
     "grade": 68,
     "race": "Tyrant",
     "resists": "---ssnn",
-    "stats": [1089, 152, 142, 152, 146, 123]
+    "stats": [1089, 152, 164, 152, 146, 123]
   },
   "Beiji-Weng": {
     "ai": "atk",
@@ -1542,6 +1542,22 @@
     "resists": "-r--sw-",
     "stats": [1004, 156, 156, 135, 229, 87]
   },
+  "Helper Frost": {
+    "ai": "atk",
+    "arch": [
+      "Mafroston"
+    ],
+    "base": [
+      "Bufula",
+      "Hamaon",
+      "Endure"
+    ],
+    "cnum": 81,
+    "grade": 63,
+    "race": "Fairy",
+    "resists": "-wd----",
+    "stats": [1130, 92, 183, 162, 123, 151]
+  },
   "Heqet": {
     "ai": "rec",
     "arch": [
@@ -1850,9 +1866,9 @@
     "stats": [1018, 100, 148, 138, 169, 148]
   },
   "Ixtab": {
-    "ai": "atk",
+    "ai": "sup",
     "arch": [
-      "Agi",
+      "Null Weak",
       "Hell Gaze",
       "Mahashibabooon",
       "Berserker",
@@ -1863,7 +1879,7 @@
       "Bufudyne",
       "Yaxche"
     ],
-    "cnum": 0,
+    "cnum": 200,
     "gach": [
       "Assassin",
       "Insanity",
@@ -1872,8 +1888,8 @@
     ],
     "grade": 84,
     "race": "Reaper",
-    "resists": "-------",
-    "stats": [0, 0, 0, 0, 0, 0]
+    "resists": "-----wr",
+    "stats": [877, 128, 180, 108, 154, 180]
   },
   "Izanami": {
     "ai": "sup",
@@ -2767,6 +2783,32 @@
     "resists": "--nn-rw",
     "stats": [1028, 183, 183, 140, 158, 120]
   },
+  "Mishaguji": {
+    "ai": "atk",
+    "arch": [
+      "Vengeance",
+      "Shock",
+      "Concentrate",
+      "Wild Instinct",
+      "Drain Elec"
+    ],
+    "base": [
+      "Mazionga",
+      "Elec Boost",
+      "Anasu-hajime"
+    ],
+    "cnum": 201,
+    "gach": [
+      "Tetraja",
+      "Mana Gain",
+      "Speedster",
+      "Resist Force"
+    ],
+    "grade": 65,
+    "race": "Vile",
+    "resists": "---nwwn",
+    "stats": [990, 93, 183, 132, 154, 151]
+  },
   "Mitra": {
     "ai": "sup",
     "arch": [
@@ -3151,9 +3193,9 @@
     "stats": [999, 202, 97, 134, 94, 143]
   },
   "Orcus": {
-    "ai": "atk",
+    "ai": "sup",
     "arch": [
-      "Agi",
+      "Tetrakarn",
       "Mamudoon",
       "Nocturne",
       "Tetraka Shift",
@@ -3164,7 +3206,7 @@
       "Law of Hell",
       "Hell's Gate"
     ],
-    "cnum": 0,
+    "cnum": 199,
     "gach": [
       "Auto-Tarunda",
       "Null Bind",
@@ -3173,8 +3215,8 @@
     ],
     "grade": 80,
     "race": "Reaper",
-    "resists": "-------",
-    "stats": [0, 0, 0, 0, 0, 0]
+    "resists": "swsws-n",
+    "stats": [1413, 136, 157, 222, 92, 136]
   },
   "Orochi": {
     "ai": "atk",
@@ -3565,6 +3607,22 @@
     "race": "Fairy",
     "resists": "-sw----",
     "stats": [1032, 79, 190, 141, 116, 141]
+  },
+  "Pyro Trickster": {
+    "ai": "atk",
+    "arch": [
+      "Malantyne"
+    ],
+    "base": [
+      "Agilao",
+      "Mudoon",
+      "Endure"
+    ],
+    "cnum": 82,
+    "grade": 65,
+    "race": "Fairy",
+    "resists": "-dw----",
+    "stats": [1079, 103, 193, 151, 124, 151]
   },
   "Quetzalcoatl": {
     "ai": "atk",
@@ -3995,7 +4053,7 @@
     "grade": 93,
     "race": "Fury",
     "resists": "sdwd---",
-    "stats": [1032, 229, 151, 141, 160, 152]
+    "stats": [1032, 229, 91, 141, 160, 151]
   },
   "Siegfried": {
     "ai": "atk",
