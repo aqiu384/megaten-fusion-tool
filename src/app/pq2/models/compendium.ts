@@ -44,6 +44,7 @@ export class Compendium implements ICompendium {
         stats:    json['stats'],
         skills:   json['skills'],
         resists:  [],
+        inherit:  json['type'],
         fusion:   'normal'
       };
     }
@@ -69,6 +70,20 @@ export class Compendium implements ICompendium {
       demons[name].fusion = 'special';
     }
 
+    for (const [name, json] of Object.entries(this.compConfig.skillData)) {
+      skills[name] = {
+        name,
+        element:   json['elem'],
+        cost:      json['cost'] || 0,
+        rank:      json['unique'] ? 91 : json['cost'] / 100 || 1,
+        effect:    json['effect'],
+        target:    json['target'] || 'Self',
+        learnedBy: [],
+        fuse:      [],
+        level:     0
+      };
+    }
+
     for (const race of this.compConfig.races) {
       inverses[race] = {};
     }
@@ -77,20 +92,6 @@ export class Compendium implements ICompendium {
       inverses[demon.race][demon.lvl] = name;
 
       for (const [skill, level] of Object.entries(demon.skills)) {
-        if (!skills[skill]) {
-          skills[skill] = {
-            name:      skill,
-            element:   'phy',
-            cost:      0,
-            rank:      1,
-            effect:    'None',
-            target:    'Self',
-            learnedBy: [],
-            fuse:      [],
-            level:     0
-          };
-        }
-
         skills[skill].learnedBy.push({ demon: name, level });
       }
 
@@ -101,21 +102,9 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, demon] of Object.entries(enemies)) {
-      for (const [skill, level] of Object.entries(demon.skills)) {
-        if (!skills[skill]) {
-          skills[skill] = {
-            name:      skill,
-            element:   'phy',
-            cost:      0,
-            rank:      99,
-            effect:    'None',
-            target:    'Self',
-            learnedBy: [],
-            fuse:      [],
-            level:     0
-          };
-        }
+    for (const [name, skill] of Object.entries(skills)) {
+      if (skill.learnedBy.length < 1) {
+        skill.rank = 99;
       }
     }
 

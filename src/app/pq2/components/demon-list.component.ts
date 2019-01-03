@@ -15,6 +15,7 @@ import { CompendiumConfig } from '../models';
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
+      [inheritOrder]="inheritOrder"
       [rowData]="demons | async">
     </app-smt-demon-list>
   `
@@ -23,6 +24,7 @@ export class DemonListContainerComponent extends DLCC {
   appName: string;
   statHeaders: string[];
   resistHeaders: string[];
+  inheritOrder: { [elem: string]: number };
   compConfig: CompendiumConfig;
 
   constructor(
@@ -44,11 +46,13 @@ export class DemonListContainerComponent extends DLCC {
     this.appName = `List of Personas - ${this.compConfig.appTitle}`;
     this.statHeaders = this.compConfig.baseStats;
     this.resistHeaders = this.compConfig.resistElems;
+    this.inheritOrder = this.compConfig.elemOrder;
 
     if (this.showEnemies) {
       this.appName = `List of Shadows - ${this.compConfig.appTitle}`;
       this.statHeaders = this.compConfig.enemyStats;
       this.resistHeaders = this.compConfig.enemyResists;
+      this.inheritOrder = null;
     }
 
   }

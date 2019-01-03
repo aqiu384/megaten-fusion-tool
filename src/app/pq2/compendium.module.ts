@@ -21,6 +21,7 @@ import { CompendiumConfig } from './models';
 
 import * as COMP_CONFIG_JSON from './data/comp-config.json';
 import * as DEMON_DATA_JSON from './data/demon-data.json';
+import * as SKILL_DATA_JSON from './data/skill-data.json';
 import * as DLC_DATA_JSON from './data/dlc-data.json';
 import * as ENEMY_DATA_JSON from './data/enemy-data.json';
 import * as FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
@@ -44,7 +45,7 @@ export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
   raceOrder: getEnumOrder(races),
   appCssClasses: ['pq2'],
 
-  skillData: {},
+  skillData: SKILL_DATA_JSON,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON['resistCodes'],
