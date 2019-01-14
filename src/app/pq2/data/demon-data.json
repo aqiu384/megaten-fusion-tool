@@ -29,13 +29,13 @@
   },
   "Alice": {
     "card": "Curse Amp",
-    "lvl": 53,
+    "lvl": 52,
     "race": "Death",
     "skills": {
       "Eigaon": 0,
       "Salome's Kiss": 0,
       "Die for Me!": 0,
-      "Maeiga": 54,
+      "Curse Boost": 53,
       "Dekunda": 56,
       "Curse Amp": 57
     },
@@ -138,7 +138,9 @@
     "skills": {
       "Toxic Slice": 0,
       "Psi": 0,
-      "Scarecrow": 15
+      "Scarecrow": 15,
+      "Deadly Ailment": 16,
+      "Psy Wall": 17
     },
     "stats": [20, 9],
     "type": "mag"
@@ -150,7 +152,6 @@
     "skills": {
       "Dia": 0,
       "Luck Amp I": 0,
-      "Tarunda": 0,
       "Kouha": 9,
       "Resist Bless": 10,
       "Hama": 11
@@ -256,7 +257,7 @@
       "Prana": 75,
       "Mafreidyne": 76,
       "Myriad Slashes": 77,
-      "Invigorate 3": 79
+      "Invigorate 3": 78
     },
     "stats": [121, 41],
     "type": "mag"
@@ -315,7 +316,8 @@
       "Heavy Rain": 0,
       "Death Counter": 0,
       "Fatal Bind": 74,
-      "Mighty Tornado": 75
+      "Mighty Tornado": 75,
+      "Hamaon": 76
     },
     "stats": [162, 31],
     "type": "phy"
@@ -1037,8 +1039,9 @@
       "Frei": 0,
       "Psi": 0,
       "Dia": 0,
-      "Rakukaja": 18,
+      "Life Aid": 18,
       "Healing Hand": 19,
+      "Psy Boost": 20,
       "Nuke Boost": 21
     },
     "stats": [23, 9],
@@ -1180,7 +1183,8 @@
       "Safeguard": 0,
       "Invigorate 1": 50,
       "Furuedensai": 51,
-      "Psy Amp": 52
+      "Lullaby Song": 52,
+      "Psy Amp": 53
     },
     "stats": [69, 23],
     "type": "mag"
@@ -1366,7 +1370,9 @@
     "skills": {
       "Heavy Rain": 0,
       "Dream Fist": 0,
-      "Masukukaja": 63
+      "Masukukaja": 63,
+      "Fast Heal": 64,
+      "Marakunda": 65
     },
     "stats": [123, 22],
     "type": "phy"
@@ -1536,7 +1542,9 @@
       "Nilfheim": 0,
       "Infinite Link": 0,
       "Agneyastra": 74,
-      "Drain Ice": 75
+      "Regenerate 3": 75,
+      "Golden Link": 76,
+      "Drain Ice": 77
     },
     "stats": [152, 28],
     "type": "phy"
@@ -1549,6 +1557,7 @@
       "Shadow Run": 0,
       "Psiodyne": 0,
       "Tentarafoo": 0,
+      "Invigorate 2": 73,
       "Mapsiodyne": 74,
       "Matarunda": 75,
       "Mudoon": 77
@@ -1876,7 +1885,10 @@
       "Blade of Fury": 0,
       "Line Guard": 0,
       "Mediarahan": 0,
-      "God's Hand": 69
+      "God's Hand": 69,
+      "Regenerate 3": 71,
+      "Hamaon": 72,
+      "Heat Riser": 73
     },
     "stats": [157, 28],
     "type": "phy"
@@ -1964,7 +1976,7 @@
       "Marakukaja": 0,
       "Psiodyne": 61,
       "Regenerate 2": 62,
-      "Rebel Amp": 62
+      "Rebel Amp": 63
     },
     "stats": [129, 19],
     "type": "phy"
@@ -2117,8 +2129,6 @@
     "skills": {
       "Purifying Rain": 0,
       "Heroic Wind": 0,
-      "Mabufula": 0,
-      "Evade Amp": 0,
       "Paths of Light": 59,
       "Life Aid": 60
     },
@@ -2147,6 +2157,7 @@
       "Mazio": 0,
       "Dark Wall": 0,
       "Assault Dive": 21,
+      "Strength Amp I": 22,
       "Resist Curse": 23
     },
     "stats": [30, 9],
@@ -2249,9 +2260,9 @@
     "skills": {
       "Magarula": 0,
       "Dekaja": 0,
-      "Aeon Rain": 0,
-      "Brain Shake": 58,
-      "Garudyne": 59
+      "Garudyne": 59,
+      "Brain Shake": 60,
+      "Magic Amp II": 61
     },
     "stats": [83, 28],
     "type": "mag"
@@ -2365,7 +2376,9 @@
       "Armor Killer": 0,
       "Death Chaser": 0,
       "Shura Tensei": 64,
-      "Myriad Slashes": 65
+      "Myriad Slashes": 66,
+      "Evil Smile": 67,
+      "Mamudoon": 68
     },
     "stats": [142, 20],
     "type": "phy"
@@ -2390,7 +2403,6 @@
     "skills": {
       "Eiga": 0,
       "Stagnant Air": 0,
-      "Marakunda": 0,
       "Matarunda": 37,
       "Null Curse": 38,
       "Curse Boost": 39
@@ -2744,10 +2756,12 @@
     "race": "Tower",
     "skills": {
       "One-shot Kill": 0,
-      "Psycho Force": 0,
+      "Psycho Blast": 0,
       "Pralaya": 0,
-      "Drain Psy": 84,
-      "Psy Stream": 85
+      "Psy Stream": 85,
+      "Marakunda": 86,
+      "Amrita": 87,
+      "Drain Psy": 88
     },
     "stats": [155, 40],
     "type": "mag"
@@ -3190,7 +3204,10 @@
       "Decay Circle": 0,
       "Magic Circle": 0,
       "Diarahan": 0,
-      "Bind Amp": 63
+      "Bind Amp": 63,
+      "Silence Circle": 64,
+      "Lethargy Circle": 65,
+      "Summon Demon": 66
     },
     "stats": [97, 30],
     "type": "mag"
