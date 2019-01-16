@@ -4,7 +4,7 @@
     "arch": [
       "Hellfire",
       "Megaton Raid",
-      "Madezoreto",
+      "Acid Breath",
       "Bloody Glee",
       "Null Phys"
     ],
@@ -428,7 +428,7 @@
     "arch": [
       "Makarakarn",
       "Mudodyne",
-      "Vengeance",
+      "Foresight",
       "Makaraka Shift",
       "Null Dark"
     ],
@@ -551,7 +551,7 @@
     "arch": [
       "Wild Instinct",
       "Bolt Storm",
-      "Outbreak",
+      "Sea of Chaos",
       "Makaraka Shift",
       "Repel Light"
     ],
@@ -577,7 +577,7 @@
     "arch": [
       "Recarm",
       "Mabufudyne",
-      "Barrier",
+      "Judgement",
       "Null Curse",
       "Repel Ice"
     ],
@@ -735,12 +735,38 @@
     "resists": "s-w--wn",
     "stats": [1272, 152, 105, 192, 83, 133]
   },
+  "Bodyconian": {
+    "ai": "sup",
+    "arch": [
+      "Agi",
+      "Sweet Bite",
+      "Taunt",
+      "Evade",
+      "Null Light"
+    ],
+    "base": [
+      "Madness",
+      "Sexy Dance",
+      "Nightlife"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Good Aim",
+      "Lydia",
+      "Wild Guess",
+      "Fast Recovery"
+    ],
+    "grade": 40,
+    "race": "Undead",
+    "resists": "-w---ws",
+    "stats": [915, 88, 116, 116, 142, 164]
+  },
   "Cerberus": {
     "ai": "atk",
     "arch": [
       "Life Gain",
       "Fire Breath",
-      "Madezoreton",
+      "War Dance",
       "Back Attack",
       "Resist Phys"
     ],
@@ -1545,7 +1571,7 @@
   "Helper Frost": {
     "ai": "atk",
     "arch": [
-      "Mafroston"
+      "Mahafrosty"
     ],
     "base": [
       "Bufula",
@@ -2471,7 +2497,7 @@
       "Dmg Panel V II",
       "Tarunda",
       "Purgatory",
-      "Assassin"
+      "Resist Force"
     ],
     "grade": 80,
     "race": "Night",
@@ -2483,7 +2509,7 @@
     "arch": [
       "Ziodyne",
       "Bufudyne",
-      "Vengeance",
+      "Mind Blast",
       "Void Dark Zones",
       "Resist Light"
     ],
@@ -2634,6 +2660,32 @@
     "resists": "-ws----",
     "stats": [1103, 108, 156, 156, 133, 126]
   },
+  "Man Eater": {
+    "ai": "sup",
+    "arch": [
+      "Agi",
+      "Bleeder",
+      "Binding Claw",
+      "Insanity",
+      "Repel Elec"
+    ],
+    "base": [
+      "Sexy Dance",
+      "Eat Whole",
+      "Sass"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Berserker",
+      "Deadly Bondage",
+      "Retaliate",
+      "Resist Light"
+    ],
+    "grade": 60,
+    "race": "Undead",
+    "resists": "---s-wr",
+    "stats": [938, 150, 130, 121, 132, 170]
+  },
   "Mara": {
     "ai": "atk",
     "arch": [
@@ -2659,6 +2711,32 @@
     "race": "Tyrant",
     "resists": "--wd-ss",
     "stats": [934, 228, 109, 120, 136, 172]
+  },
+  "Masakado": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Hurricane Slash",
+      "Binge Eating",
+      "Phys Amp",
+      "Drain Phys"
+    ],
+    "base": [
+      "Vorpal Blade",
+      "Warlord's Wrath",
+      "Occult Flash"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Auto-Rakunda",
+      "Auto-Sukunda",
+      "Auto-Taruka",
+      "Auto-Rakuka"
+    ],
+    "grade": 98,
+    "race": "General",
+    "resists": "n----sd",
+    "stats": [938, 256, 111, 121, 118, 186]
   },
   "Mastema": {
     "ai": "atk",
@@ -3151,7 +3229,7 @@
     "arch": [
       "Deathtouch",
       "Nihil Claw",
-      "Outbreak",
+      "Nocturne",
       "Death Counter",
       "Null Dark"
     ],
@@ -3608,10 +3686,10 @@
     "resists": "-sw----",
     "stats": [1032, 79, 190, 141, 116, 141]
   },
-  "Pyro Trickster": {
+  "Halloween Jack": {
     "ai": "atk",
     "arch": [
-      "Malantyne"
+      "Mahalantine"
     ],
     "base": [
       "Agilao",
@@ -4405,7 +4483,7 @@
     "arch": [
       "Mana Gain",
       "Bolt Storm",
-      "Dezoreton",
+      "Prayer",
       "Back Attack",
       "Resist Phys"
     ],
@@ -4639,7 +4717,7 @@
     "arch": [
       "Charge",
       "Titanomachia",
-      "Outbreak",
+      "Blood Rush",
       "Vitality Amp III",
       "Null Phys"
     ],
@@ -4789,7 +4867,7 @@
     "arch": [
       "Null Mute",
       "Megaton Raid",
-      "Dezoreton",
+      "Blood Rush",
       "Intimidating Stance",
       "Resist Phys"
     ],

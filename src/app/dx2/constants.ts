@@ -36,6 +36,8 @@ export const Races = [
   'Fiend',
   'Hero',
   'Reaper',
+  'General',
+  'Undead',
   'Rumor',
   'UMA',
   'Entity',

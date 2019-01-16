@@ -162,6 +162,12 @@
     "power": 120,
     "target": "One Foe"
   },
+  "Blood Rush": {
+    "cost": 6,
+    "effect": "Tarukaja + Sukukaja",
+    "element": "support",
+    "target": "All Allies"
+  },
   "Bloody Glee": {
     "effect": "Critical rate +15%",
     "element": "passive"
@@ -579,6 +585,13 @@
     "effect": "Force attacks bypass resistances",
     "element": "passive"
   },
+  "Foresight": {
+    "cost": 9,
+    "effect": "Sukunda",
+    "element": "almighty",
+    "power": 100,
+    "target": "All Foes"
+  },
   "Fruit of the Dead": {
     "effect": "Foes can only revive with 1 HP",
     "element": "passive"
@@ -964,13 +977,6 @@
     "power": 65,
     "target": "Multi Foes"
   },
-  "Mafroston": {
-    "cost": 7,
-    "effect": "2 hits",
-    "element": "ice",
-    "power": 50,
-    "target": "All Foes"
-  },
   "Magic Amp I": {
     "effect": "Magic +5",
     "element": "passive"
@@ -983,6 +989,13 @@
     "effect": "Magic +15",
     "element": "passive"
   },
+  "Mahafrosty": {
+    "cost": 7,
+    "effect": "2 hits",
+    "element": "ice",
+    "power": 50,
+    "target": "All Foes"
+  },
   "Mahaju": {
     "cost": 6,
     "effect": "40% Curse",
@@ -993,6 +1006,13 @@
     "cost": 7,
     "effect": "50% Curse",
     "element": "ailment",
+    "target": "All Foes"
+  },
+  "Mahalantine": {
+    "cost": 7,
+    "effect": "2 hits",
+    "element": "fire",
+    "power": 50,
     "target": "All Foes"
   },
   "Mahama": {
@@ -1088,13 +1108,6 @@
     "effect": "Repel all magical attacks except Almighty for 1 turn",
     "element": "support",
     "target": "All Allies"
-  },
-  "Malantyne": {
-    "cost": 7,
-    "effect": "2 hits",
-    "element": "fire",
-    "power": 50,
-    "target": "All Foes"
   },
   "Mamudo": {
     "cost": 5,
@@ -1392,6 +1405,10 @@
     "power": 100,
     "target": "All Foes"
   },
+  "Nightlife": {
+    "effect": "Macca +5%",
+    "element": "passive"
+  },
   "Nihil Claw": {
     "cost": 6,
     "effect": "2-3 hits",
@@ -1456,6 +1473,13 @@
   "Null Weak": {
     "effect": "Immune to Weak",
     "element": "passive"
+  },
+  "Occult Flash": {
+    "cost": 8,
+    "effect": "50% Critical, 100% instant death, 3 uses",
+    "element": "phys",
+    "power": 200,
+    "target": "One Foe"
   },
   "Offensive Cry": {
     "cost": 6,
@@ -1735,6 +1759,10 @@
     "element": "recovery",
     "target": "One Ally"
   },
+  "Sass": {
+    "effect": "Rakunda to Charmed foes",
+    "element": "passive"
+  },
   "Savage Glee": {
     "effect": "Critical rate +25%",
     "element": "passive"
@@ -2006,10 +2034,14 @@
     "target": "All Foes"
   },
   "War Dance": {
-    "cost": 5,
+    "cost": 6,
     "effect": "Tarukaja + Rakukaja",
     "element": "support",
     "target": "All Allies"
+  },
+  "Warlord's Wrath": {
+    "effect": "Remove 1 enemy Turn Icon during first round when ambushed, prevent foes from removing more than 2 ally Turn Icons, 100% chance to counter phys dmg with 100 dmg phys atk",
+    "element": "passive"
   },
   "Weakdi": {
     "cost": 3,
