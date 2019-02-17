@@ -2,52 +2,90 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { SharedModule } from '../shared/shared.module';
-import { SharedCompendiumModule } from '../compendium/compendium.module';
-import { CompendiumRoutingModule } from './compendium-routing.module';
-
-import { CompendiumComponent } from './components/compendium.component';
-import { DemonListContainerComponent } from './components/demon-list.component';
-import { SkillListContainerComponent } from './components/skill-list.component';
-import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
-
-import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
-import { EnemyEntryComponent } from './components/enemy-entry.component';
-
-import { FusionDataService } from './fusion-data.service';
+import { CompendiumRoutingModule } from '../pq2/compendium-routing.module';
+import { FusionDataService } from '../pq2/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
-import { CompendiumConfig } from '../compendium/models';
-import { RaceOrder } from './constants';
-import { APP_TITLE } from './constants';
+import { PersonaCompendiumModule } from '../pq2/persona-compendium.module';
+import { CompendiumConfig } from '../pq2/models';
 
-const compendiumConfig: CompendiumConfig = {
-  appTitle: APP_TITLE,
-  raceOrder: RaceOrder
+import * as COMP_CONFIG_JSON from './data/comp-config.json';
+import * as DEMON_DATA_JSON from './data/demon-data.json';
+import * as SKILL_DATA_JSON from './data/skill-data.json';
+import * as DLC_DATA_JSON from './data/dlc-data.json';
+import * as ENEMY_DATA_JSON from './data/enemy-data.json';
+import * as FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
+import * as SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+
+function getEnumOrder(target: string[]): { [key: string]: number } {
+  const result = {};
+  for (let i = 0; i < target.length; i++) {
+    result[target[i]] = i;
+  }
+  return result;
+}
+
+const resistElems = COMP_CONFIG_JSON['resistElems'];
+const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
+const races = COMP_CONFIG_JSON['races'];
+
+for (const demon of Object.values(DEMON_DATA_JSON)) {
+  demon['inherit'] = demon['inherit'].slice(0, 3);
+}
+
+for (const demon of Object.values(DLC_DATA_JSON)) {
+  demon['inherit'] = demon['inherit'].slice(0, 3);
+}
+
+for (const enemy of Object.values(ENEMY_DATA_JSON)) {
+  enemy['stats'] = enemy['stats'].slice(0, 3);
+  enemy['resists'] = enemy['resists'].slice(0, 9);
+}
+
+export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
+  appTitle: 'Persona Q: Shadow of the Labyrinth',
+  races,
+  raceOrder: getEnumOrder(races),
+  appCssClasses: ['pq1'],
+
+  skillData: SKILL_DATA_JSON,
+  skillElems,
+  elemOrder: getEnumOrder(skillElems),
+  resistCodes: COMP_CONFIG_JSON['resistCodes'],
+
+  demonData: DEMON_DATA_JSON,
+  dlcData: DLC_DATA_JSON,
+  baseStats: ['HP', 'MP'],
+  resistElems: [],
+
+  enemyData: ENEMY_DATA_JSON,
+  enemyStats: ['HP', 'Atk', 'Def'],
+  enemyResists: resistElems,
+
+  normalTable: FUSION_CHART_JSON,
+  hasTripleFusion: true,
+  specialRecipes: SPECIAL_RECIPES_JSON,
+
+  settingsKey: 'pq-fusion-tool-settings',
+  settingsVersion: 1709211400
+};
+
+export const fusionDataFactory = () => {
+  return new FusionDataService(PQ_COMPENDIUM_CONFIG);
 };
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
-    SharedCompendiumModule,
+    PersonaCompendiumModule,
     CompendiumRoutingModule
-  ],
-  declarations: [
-    CompendiumComponent,
-    DemonListContainerComponent,
-    SkillListContainerComponent,
-    DemonEntryComponent,
-    DemonEntryContainerComponent,
-    EnemyEntryComponent,
-    DemonDlcSettingsContainerComponent
   ],
   providers: [
     Title,
-    FusionDataService,
+    { provide: FusionDataService, useFactory: fusionDataFactory },
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
     [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: PQ_COMPENDIUM_CONFIG }]
   ]
 })
 export class CompendiumModule { }

@@ -19,7 +19,7 @@
 .pq2 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
 .pq2 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
 .pq2 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
-.pq2 div.element-icon.def { background-image: url('/assets/images/p5/passive.png'); }
+.pq2 div.element-icon.def { background-image: url('/assets/images/p5/support.png'); }
 .pq2 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
 .pq2 div.element-icon.nav { background-image: url('/assets/images/p5/nuke.png'); }
 .pq2 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
@@ -46,4 +46,52 @@
 
 .pq2 th.nav.active a, .pq2 th.nav:hover a {
   color: white;
+}
+
+.pq div.element-icon {
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+  
+.pq div.element-icon.cut { background-image: url('/assets/images/p5/sword.png'); }
+.pq div.element-icon.bas { background-image: url('/assets/images/p5/phys.png'); }
+.pq div.element-icon.sta { background-image: url('/assets/images/p5/gun.png'); }
+.pq div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.pq div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.pq div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.pq div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.pq div.element-icon.lig { background-image: url('/assets/images/p5/bless.png'); }
+.pq div.element-icon.dar { background-image: url('/assets/images/p5/curse.png'); }
+.pq div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
+.pq div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.pq div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
+.pq div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
+.pq div.element-icon.nav { background-image: url('/assets/images/p5/nuke.png'); }
+.pq div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+
+.pq th, .pq th {
+  color: black;
+  background-color: #AA1CA9;
+}
+
+.pq th.sortable:hover {
+  background-color: #ff89ff;
+}
+
+.pq th.nav {
+  color: white;
+  cursor: pointer;
+  background-color: #520052;
+}
+
+.pq th.nav.active, .pq th.nav:hover {
+  color: black;
+  background-color: #AA1CA9;
+}
+
+.pq th.nav.active a, .pq th.nav:hover a {
+  color: black;
 }

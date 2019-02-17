@@ -1,5 +1,6 @@
 import { Demon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Skill, CompendiumConfig } from '../models';
+import { JsonPipe } from '@angular/common';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -44,7 +45,7 @@ export class Compendium implements ICompendium {
         stats:    json['stats'],
         skills:   json['skills'],
         resists:  [],
-        inherit:  json['type'],
+        inherit:  json['inherit'],
         fusion:   'normal'
       };
     }
@@ -53,9 +54,9 @@ export class Compendium implements ICompendium {
       enemies[name] = {
         name,
         race:     json['race'],
-        lvl:      Math.floor(json['lvl'] / 20) + 1,
+        lvl:      json['lvl'],
         price:    0,
-        stats:    [json['lvl']].concat(json['stats']),
+        stats:    json['stats'],
         resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
         skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
         area:     json['area'],
@@ -79,7 +80,7 @@ export class Compendium implements ICompendium {
         effect:    json['effect'],
         target:    json['target'] || 'Self',
         learnedBy: [],
-        fuse:      [],
+        fuse:      (json['card'] || '').split(', '),
         level:     0
       };
     }
@@ -93,12 +94,6 @@ export class Compendium implements ICompendium {
 
       for (const [skill, level] of Object.entries(demon.skills)) {
         skills[skill].learnedBy.push({ demon: name, level });
-      }
-
-      const card = this.compConfig.demonData[name]['card'];
-
-      if (card) {
-        skills[card].fuse.push(name);
       }
     }
 

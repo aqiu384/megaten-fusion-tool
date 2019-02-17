@@ -1,34 +1,62 @@
 {
+  "Absorb Elec": {
+    "card": "Ishtar",
+    "effect": "Absorb Elec damage",
+    "elem": "pas"
+  },
+  "Absorb Fire": {
+    "card": "Attis",
+    "effect": "Absorb Fire damage",
+    "elem": "pas"
+  },
+  "Absorb Ice": {
+    "card": "Kresnik",
+    "effect": "Absorb Ice damage",
+    "elem": "pas"
+  },
+  "Absorb Nuke": {
+    "card": "Metatron",
+    "effect": "Absorb Nuke damage",
+    "elem": "pas"
+  },
+  "Absorb Psy": {
+    "card": "Shiva",
+    "effect": "Absorb Psy damage",
+    "elem": "pas"
+  },
+  "Absorb Wind": {
+    "card": "Mahakala",
+    "effect": "Absorb Wind damage",
+    "elem": "pas"
+  },
   "Abyssal Wings": {
     "effect": "High chance of attack skills executing twice",
     "elem": "pas",
     "unique": true
   },
-  "Fatal End": {
-    "cost": 132,
-    "effect": "Heavy damage, medium chance of Agility Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Aeon Rain": {
+    "card": "Siegfried",
     "cost": 199,
     "effect": "Severe damage, 3-10 hits, power scales with Boost",
     "elem": "phy",
     "target": "Rand Foes"
   },
   "Agi": {
+    "card": "Orobas",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "fir",
     "target": "1 Foe"
   },
   "Agidyne": {
+    "card": "Hell Biker",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "fir",
     "target": "1 Foe"
   },
   "Agilao": {
+    "card": "Orthrus",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "fir",
@@ -47,23 +75,11 @@
     "elem": "pas"
   },
   "Agneyastra": {
+    "card": "Chi You",
     "cost": 164,
     "effect": "Heavy damage, power scales with Boost",
     "elem": "phy",
     "target": "All Foes"
-  },
-  "Impure Reach II": {
-    "effect": "Greatly increase success rate for ailments",
-    "elem": "pas"
-  },
-  "Impure Reach": {
-    "effect": "Increase success rate for ailments",
-    "elem": "pas"
-  },
-  "Life Wall": {
-    "cost": 1009,
-    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
-    "elem": "sup"
   },
   "Amrita": {
     "cost": 1040,
@@ -91,37 +107,22 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Moondrop": {
-    "cost": 132,
-    "effect": "Medium damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Teardrop": {
-    "cost": 116,
-    "effect": "Light damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Stardrop": {
-    "cost": 148,
-    "effect": "Heavy damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Arrow Rain": {
+    "card": "Hare of Inaba",
     "cost": 130,
     "effect": "Medium damage, 3-6 hits, power scales with Boost",
     "elem": "phy",
     "target": "Rand Foes"
   },
   "Assault Dive": {
+    "card": "Power",
     "cost": 125,
     "effect": "Medium damage, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Assault Shot": {
+    "card": "Triglav",
     "cost": 128,
     "effect": "Medium damage, power scales with Boost",
     "elem": "phy",
@@ -134,44 +135,27 @@
     "target": "1 Foe",
     "unique": true
   },
-  "Silent Thrust": {
-    "cost": 119,
-    "effect": "Light damage, medium chance of Curse",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Swift Strike": {
-    "cost": 124,
-    "effect": "Light damage, 2-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
   "Bestial Roar": {
     "cost": 1008,
     "effect": "Raise attack and act first for 3 turns",
     "elem": "sup"
-  },
-  "Binding Hands II": {
-    "effect": "Greatly increase success rate for binds",
-    "elem": "pas"
-  },
-  "Binding Hands": {
-    "effect": "Increase success rate for binds",
-    "elem": "pas"
   },
   "Bind Slice": {
     "effect": "Heavy damage, high chance of Paralysis",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Danse Macabre": {
-    "cost": 140,
-    "effect": "Medium damage, 5-7 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes",
-    "unique": true
+  "Binding Hands": {
+    "effect": "Increase success rate for binds",
+    "elem": "pas"
+  },
+  "Binding Hands II": {
+    "card": "Vouivre",
+    "effect": "Greatly increase success rate for binds",
+    "elem": "pas"
   },
   "Black Spot": {
+    "card": "Hanuman",
     "cost": 136,
     "effect": "Heavy damage, power scales with Boost",
     "elem": "phy",
@@ -185,16 +169,19 @@
     "unique": true
   },
   "Blade of Fury": {
+    "card": "Uriel",
     "cost": 156,
     "effect": "Heavy damage, power scales with Boost",
     "elem": "phy",
     "target": "Foe Row"
   },
   "Bless Amp": {
+    "card": "Daisoujou",
     "effect": "Moderately increase Bless damage",
     "elem": "pas"
   },
   "Bless Boost": {
+    "card": "Dominion",
     "effect": "Increase Bless damage",
     "elem": "pas"
   },
@@ -202,42 +189,80 @@
     "effect": "Greatly increase Bless damage",
     "elem": "pas"
   },
+  "Body Shield": {
+    "card": "Nata Taishi",
+    "cost": 1003,
+    "effect": "Raise defense and take attacks in place of same-row allies with reduced damage",
+    "elem": "sup"
+  },
   "Bolt Link": {
     "cost": 148,
     "effect": "Light damage, links once with ally attack",
     "elem": "ele",
     "target": "1 Foe"
   },
+  "Bolt Strike": {
+    "card": "Ikusa",
+    "cost": 132,
+    "effect": "Light damage",
+    "elem": "psy",
+    "target": "Foe Row"
+  },
   "Brain Shake": {
+    "card": "Ophanim",
     "cost": 132,
     "effect": "Heavy damage, high chance of Panic",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Brave Blade": {
+    "card": "Ongyo-Ki",
     "cost": 182,
     "effect": "Severe damage, power scales with Boost",
     "elem": "phy",
     "target": "Foe Row"
+  },
+  "Broadshot": {
+    "card": "Longinus",
+    "cost": 156,
+    "effect": "Heavy damage, power scales with Boost",
+    "elem": "phy",
+    "target": "Foe Col"
+  },
+  "Brutal Slash": {
+    "cost": 140,
+    "effect": "Medium damage, hits again if user takes no damage that turn",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Brutal Swing": {
     "effect": "High chance to add splash effect on single-target attack skills",
     "elem": "pas",
     "unique": true
   },
+  "Buchikamashi": {
+    "card": "Ukobach",
+    "cost": 114,
+    "effect": "Light damage, power scales with Boost",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Bufu": {
+    "card": "Apsaras",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "ice",
     "target": "1 Foe"
   },
   "Bufudyne": {
+    "card": "Lilith",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "ice",
     "target": "1 Foe"
   },
   "Bufula": {
+    "card": "Jack Frost",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "ice",
@@ -251,23 +276,36 @@
     "unique": true
   },
   "Calming Lull": {
+    "card": "Kusi Mitama",
     "effect": "Gather safely from Power Spots",
     "elem": "nav"
-  },
-  "Phys Link": {
-    "cost": 120,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "phy",
-    "target": "1 Foe"
   },
   "Charge Shot": {
     "effect": "Severe damage",
     "elem": "phy",
     "target": "Foe Col"
   },
+  "Circle Recovery": {
+    "card": "Alilat",
+    "effect": "Allies recover some HP every turn, magic-type team",
+    "elem": "pas"
+  },
   "Clairvoyance": {
+    "card": "Hua Po, Genbu",
     "effect": "Reveal nearby treasure boxes, FOEs, and shortcuts",
     "elem": "nav"
+  },
+  "Cleave": {
+    "card": "Yaksini",
+    "cost": 116,
+    "effect": "Light damage, power scales with Boost",
+    "elem": "phy",
+    "target": "Foe Row"
+  },
+  "Colossal Swing": {
+    "card": "Balor",
+    "effect": "Low chance to add splash effect to single-target attack skills",
+    "elem": "pas"
   },
   "Cosmic Flare": {
     "cost": 1075,
@@ -285,6 +323,12 @@
     "elem": "phy",
     "target": "Rand Foes"
   },
+  "Critical Eye": {
+    "card": "Ippon-Datara",
+    "cost": 1012,
+    "effect": "Raise critical rate for 3 turns",
+    "elem": "sup"
+  },
   "Cross Slash": {
     "cost": 112,
     "effect": "Medium damage",
@@ -293,22 +337,25 @@
     "unique": true
   },
   "Curse Amp": {
+    "card": "Alice",
     "effect": "Moderately increase Curse damage",
     "elem": "pas"
   },
   "Curse Boost": {
+    "card": "Pazuzu",
     "effect": "Increase Curse damage",
     "elem": "pas"
-  },
-  "Stun Circle": {
-    "cost": 1018,
-    "effect": "Medium chance of Curse each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
   },
   "Curse Stream": {
     "effect": "Greatly increase Curse damage",
     "elem": "pas"
+  },
+  "Danse Macabre": {
+    "cost": 140,
+    "effect": "Medium damage, 5-7 hits, power scales with Boost",
+    "elem": "phy",
+    "target": "Rand Foes",
+    "unique": true
   },
   "Dark Wall": {
     "cost": 1016,
@@ -321,31 +368,40 @@
     "elem": "ble",
     "target": "1 Foe"
   },
-  "Death's Scythe": {
-    "effect": "Increase damage against enemies with ailments",
-    "elem": "pas"
-  },
   "Deadly Bind": {
     "effect": "Increase damage against enemies with binds",
     "elem": "pas"
   },
   "Death Chaser": {
+    "card": "Turdak",
     "cost": 224,
     "effect": "Follow-up user's row's attacks for 3 turns",
     "elem": "sup"
   },
   "Death Counter": {
+    "card": "Girimehkala",
     "cost": 154,
     "effect": "Counter-attack whenever user's ally is attacked for 3 turns",
     "elem": "sup"
   },
+  "Death's Scythe": {
+    "effect": "Increase damage against enemies with ailments",
+    "elem": "pas"
+  },
+  "Death's Scythe II": {
+    "card": "Mada",
+    "effect": "Greatly increase damage against enemies with ailments",
+    "elem": "pas"
+  },
   "Deathbound": {
+    "card": "Chernobog",
     "cost": 148,
     "effect": "Heavy damage, power scales with Boost",
     "elem": "phy",
     "target": "All Foes"
   },
   "Debilitate": {
+    "card": "Rangda",
     "cost": 1035,
     "effect": "Lower attack, defense, and hit/evade for 3 turns",
     "elem": "sup",
@@ -370,18 +426,21 @@
     "target": "All Allies"
   },
   "Dia": {
+    "card": "Gemori",
     "cost": 1005,
     "effect": "Light HP restore",
     "elem": "rec",
     "target": "1 Ally"
   },
   "Diarahan": {
+    "card": "Leanan Sidhe",
     "cost": 1028,
     "effect": "Full HP restore",
     "elem": "rec",
     "target": "1 Ally"
   },
   "Diarama": {
+    "card": "Yatagarasu",
     "cost": 1010,
     "effect": "Medium HP restore",
     "elem": "rec",
@@ -408,84 +467,56 @@
     "unique": true
   },
   "Dormina": {
+    "card": "Pixie",
     "cost": 1006,
     "effect": "Medium chance of Sleep",
     "elem": "ail",
     "target": "Foe Row"
   },
   "Double Link": {
+    "card": "Yuki Jyorou",
     "effect": "Link chains last up to 2 hits",
     "elem": "pas"
   },
   "Dragon Cry": {
+    "card": "Ouroboros",
     "cost": 1016,
     "effect": "Greatly raise attack and act first for 3 turns",
     "elem": "sup"
-  },
-  "Absorb Elec": {
-    "effect": "Absorb Elec damage",
-    "elem": "pas"
-  },
-  "Absorb Fire": {
-    "effect": "Absorb Fire damage",
-    "elem": "pas"
-  },
-  "Absorb Ice": {
-    "effect": "Absorb Ice damage",
-    "elem": "pas"
-  },
-  "Absorb Nuke": {
-    "effect": "Absorb Nuke damage",
-    "elem": "pas"
-  },
-  "Absorb Psy": {
-    "effect": "Absorb Psy damage",
-    "elem": "pas"
   },
   "Drain Touch": {
     "effect": "Medium damage, drain damage dealt",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Absorb Wind": {
-    "effect": "Absorb Wind damage",
-    "elem": "pas"
-  },
-  "Sonic Punch": {
-    "cost": 132,
-    "effect": "Heavy damage, high chance of Sleep",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Sleeper Punch": {
-    "cost": 119,
-    "effect": "Light damage, medium chance of Sleep",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Eiga": {
+    "card": "Red Rider",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "cur",
     "target": "1 Foe"
   },
   "Eigaon": {
+    "card": "Black Rider",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "cur",
     "target": "1 Foe"
   },
   "Eiha": {
+    "card": "Incubus",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "cur",
     "target": "1 Foe"
   },
   "Elec Amp": {
+    "card": "Odin",
     "effect": "Moderately increase Elec damage",
     "elem": "pas"
   },
   "Elec Boost": {
+    "card": "Sleipnir",
     "effect": "Increase Elec damage",
     "elem": "pas"
   },
@@ -522,15 +553,12 @@
     "elem": "pas"
   },
   "Endure": {
+    "card": "Slime",
     "effect": "Withstand damage that brings HP down to 0 with 1 HP",
     "elem": "pas"
   },
-  "Revenge Blow": {
-    "cost": 116,
-    "effect": "Light damage, power scales with damage taken during same turn",
-    "elem": "phy"
-  },
   "Enduring Judgement": {
+    "card": "Abaddon",
     "cost": 156,
     "effect": "Heavy damage, power scales with damage taken during same turn",
     "elem": "phy"
@@ -541,18 +569,11 @@
     "elem": "phy"
   },
   "Eternal Melody": {
+    "card": "Kingu",
     "cost": 2003,
     "effect": "Extend timers on -kaja effects for 3 turns, does not stack",
     "elem": "nav",
     "target": "All Allies"
-  },
-  "Trick Step II": {
-    "effect": "Greatly increase evasion against all attacks",
-    "elem": "pas"
-  },
-  "Trick Step": {
-    "effect": "Increase evasion against all attacks",
-    "elem": "pas"
   },
   "Evil Smile": {
     "cost": 1012,
@@ -561,42 +582,47 @@
     "target": "All Foes"
   },
   "Evil Touch": {
+    "card": "Alp",
     "cost": 1006,
     "effect": "Medium chance of Curse",
     "elem": "ail",
     "target": "Foe Row"
   },
   "Faerie's Vigil": {
+    "card": "Mothman, Mandrake",
     "effect": "Reveal nearby shortcuts",
     "elem": "nav"
   },
   "Fang Smash": {
+    "card": "Xiezhai",
     "cost": 116,
     "effect": "Light damage, lowers target's attack for 3 turns",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Farsight": {
+    "card": "Arahabaki",
     "effect": "Reveal treasure boxes, FOEs, and shortcuts in a wide area",
     "elem": "nav"
   },
-  "Restoring Touch": {
-    "effect": "Increase bind and ailment resistance",
-    "elem": "pas"
-  },
-  "Death's Scythe II": {
-    "effect": "Greatly increase damage against enemies with ailments",
-    "elem": "pas"
-  },
   "Fatal Bind": {
+    "card": "Atavaka",
     "effect": "Greatly increase damage against enemies with binds",
     "elem": "pas"
   },
+  "Fatal End": {
+    "cost": 132,
+    "effect": "Heavy damage, medium chance of Agility Bind",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Fire Amp": {
+    "card": "Mara",
     "effect": "Moderately increase Fire damage",
     "elem": "pas"
   },
   "Fire Boost": {
+    "card": "Dzelarhons",
     "effect": "Increase Fire damage",
     "elem": "pas"
   },
@@ -616,6 +642,7 @@
     "target": "All Allies"
   },
   "First Star": {
+    "card": "Halphas",
     "effect": "Raise damage when attacking before all enemies act",
     "elem": "pas"
   },
@@ -626,6 +653,7 @@
     "target": "1 Foe"
   },
   "Fortune Hunter": {
+    "card": "Thoth",
     "effect": "Reveal treasure boxes in a wide area",
     "elem": "nav"
   },
@@ -636,24 +664,28 @@
     "target": "User Row"
   },
   "Frei": {
+    "card": "Archangel",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "nuk",
     "target": "1 Foe"
   },
   "Freidyne": {
+    "card": "Baphomet",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "nuk",
     "target": "1 Foe"
   },
   "Freila": {
+    "card": "Titania",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "nuk",
     "target": "1 Foe"
   },
   "Frost Edge": {
+    "card": "Matador",
     "cost": 132,
     "effect": "Light damage",
     "elem": "ice",
@@ -679,13 +711,8 @@
     "target": "All Allies",
     "unique": true
   },
-  "Thunder Smash": {
-    "cost": 182,
-    "effect": "Heavy damage",
-    "elem": "psy",
-    "target": "Foe Row"
-  },
   "Fusion Blast": {
+    "card": "Kaiwan",
     "cost": 132,
     "effect": "Light damage",
     "elem": "nuk",
@@ -698,48 +725,56 @@
     "target": "1 Foe"
   },
   "Garu": {
+    "card": "Anzu",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "win",
     "target": "1 Foe"
   },
   "Garudyne": {
+    "card": "Suparna",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "win",
     "target": "1 Foe"
   },
   "Garula": {
+    "card": "Seiryu",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "win",
     "target": "1 Foe"
   },
-  "Cleave": {
-    "cost": 116,
-    "effect": "Light damage, power scales with Boost",
+  "Gigantic Fist": {
+    "card": "Valkyrie",
+    "cost": 119,
+    "effect": "Medium damage, medium chance of Strength Bind",
     "elem": "phy",
-    "target": "Foe Row"
+    "target": "1 Foe"
   },
   "Glacial Edge": {
+    "card": "King Frost",
     "cost": 156,
     "effect": "Medium damage",
     "elem": "ice",
     "target": "Foe Row"
   },
   "God's Hand": {
+    "card": "Michael",
     "cost": 199,
     "effect": "Severe damage, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Gokuentou": {
+    "card": "Pyro Jack",
     "cost": 156,
     "effect": "Medium damage",
     "elem": "fir",
     "target": "Foe Row"
   },
   "Golden Link": {
+    "card": "Zaou-Gongen",
     "effect": "Link damage raises with link number",
     "elem": "pas"
   },
@@ -762,10 +797,18 @@
     "target": "1 Foe"
   },
   "Gurentou": {
+    "card": "Eligor",
     "cost": 132,
     "effect": "Light damage",
     "elem": "fir",
     "target": "Foe Row"
+  },
+  "Hailstorm": {
+    "card": "Jeanne D'Arc",
+    "cost": 148,
+    "effect": "Heavy damage, 3-8 hits, power scales with Boost",
+    "elem": "phy",
+    "target": "Rand Foes"
   },
   "Hama": {
     "cost": 1010,
@@ -779,18 +822,13 @@
     "elem": "ble",
     "target": "1 Foe"
   },
-  "Gigantic Fist": {
-    "cost": 119,
-    "effect": "Medium damage, medium chance of Strength Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Hard Slash": {
     "effect": "Medium damage",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Harvest Prayer": {
+    "card": "Lachesis",
     "effect": "Rare chance to gather multiple times from Power Spots",
     "elem": "nav"
   },
@@ -800,12 +838,6 @@
     "elem": "phy",
     "target": "Rand Foes",
     "unique": true
-  },
-  "Skull Cracker": {
-    "cost": 119,
-    "effect": "Light damage, medium chance of Panic",
-    "elem": "phy",
-    "target": "1 Foe"
   },
   "Healing Hand": {
     "effect": "HP recovery skills +50%",
@@ -819,72 +851,85 @@
     "unique": true
   },
   "Heat Riser": {
+    "card": "Mishaguji",
     "cost": 1035,
     "effect": "Raise attack, defense, and hit/evade for 3 turns",
     "elem": "sup",
     "target": "1 Ally"
   },
   "Heat Wave": {
+    "card": "Orochi",
     "cost": 124,
     "effect": "Medium damage, power scales with Boost",
     "elem": "phy",
     "target": "All Foes"
   },
-  "Hailstorm": {
-    "cost": 148,
-    "effect": "Heavy damage, 3-8 hits, power scales with Boost",
+  "Heaven's Blade": {
+    "card": "Tam Lin",
+    "cost": 156,
+    "effect": "Heavy damage, hits again if user takes no damage that turn",
     "elem": "phy",
-    "target": "Rand Foes"
+    "target": "1 Foe"
+  },
+  "Heavy Shot": {
+    "card": "Barong",
+    "cost": 148,
+    "effect": "Heavy damage, lowers target's attack for 3 turns",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Helping Hand": {
     "effect": "HP recovery skills +100%",
     "elem": "pas"
   },
   "Heroic Gemini": {
+    "card": "Beelzebub",
     "effect": "Low chance of attack skills executing twice",
     "elem": "pas"
   },
   "Heroic Wind": {
+    "card": "Kohryu",
     "effect": "Recover 5% HP each turn",
     "elem": "nav"
   },
   "Hex Slice": {
+    "card": "Ganesha",
     "cost": 132,
     "effect": "Heavy damage, high chance of Curse",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Hientou": {
+    "card": "Yatsufusa",
     "cost": 182,
     "effect": "Heavy damage",
     "elem": "fir",
     "target": "Foe Row"
   },
   "High Counter": {
+    "card": "Black Frost",
     "effect": "High chance of countering damage with basic attack",
     "elem": "pas"
   },
   "Holy Touch": {
+    "card": "Mithra",
     "cost": 119,
     "effect": "Medium damage, medium chance of Magic Bind",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Broadshot": {
-    "cost": 156,
-    "effect": "Heavy damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Col"
-  },
   "Hunting Prayer": {
+    "card": "Nigi Mitama, Heqet",
     "effect": "Slightly higher rate of material drops from enemies",
     "elem": "nav"
   },
   "Ice Amp": {
+    "card": "Mother Harlot",
     "effect": "Moderately increase Ice damage",
     "elem": "pas"
   },
   "Ice Boost": {
+    "card": "Vivian",
     "effect": "Increase Ice damage",
     "elem": "pas"
   },
@@ -910,59 +955,82 @@
     "target": "Rand Foes",
     "unique": true
   },
+  "Immunity Buffer": {
+    "effect": "Low chance to nullify phys attack",
+    "elem": "pas"
+  },
+  "Impure Reach": {
+    "effect": "Increase success rate for ailments",
+    "elem": "pas"
+  },
+  "Impure Reach II": {
+    "card": "Belial",
+    "effect": "Greatly increase success rate for ailments",
+    "elem": "pas"
+  },
   "Infinite Link": {
     "effect": "Link chains last up to 8 hits",
     "elem": "pas"
   },
   "Invigorate 1": {
+    "card": "Bugs",
     "effect": "Recover MP per turn",
     "elem": "pas"
   },
   "Invigorate 2": {
+    "card": "Tzitzimitl",
     "effect": "Moderately recover MP per turn",
     "elem": "pas"
   },
   "Invigorate 3": {
+    "card": "Seraph",
     "effect": "Greatly recover MP per turn",
     "elem": "pas"
   },
   "Jinpugeki": {
+    "card": "Fortuna",
     "cost": 132,
     "effect": "Light damage",
     "elem": "win",
     "target": "Foe Row"
   },
   "Kamikaze Strike": {
+    "card": "Garuda",
     "cost": 182,
     "effect": "Heavy damage",
     "elem": "win",
     "target": "Foe Row"
   },
   "Kidney Smash": {
+    "card": "Basilisk",
     "cost": 132,
     "effect": "Medium damage, lowers target's attack for 3 turns",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Kouga": {
+    "card": "Oumitsunu",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "ble",
     "target": "1 Foe"
   },
   "Kougaon": {
+    "card": "Trumpeter",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "ble",
     "target": "1 Foe"
   },
   "Kouha": {
+    "card": "Angel",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "ble",
     "target": "1 Foe"
   },
   "Leg Reaper": {
+    "card": "Chimera",
     "cost": 119,
     "effect": "Medium damage, medium chance of Agility Bind",
     "elem": "phy",
@@ -975,8 +1043,15 @@
     "target": "All Foes"
   },
   "Life Aid": {
+    "card": "Norn",
     "effect": "Recover 20% HP after battle",
     "elem": "nav"
+  },
+  "Life Wall": {
+    "card": "Ouyamatsumi",
+    "cost": 1009,
+    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
+    "elem": "sup"
   },
   "Light Wall": {
     "cost": 1016,
@@ -991,10 +1066,12 @@
     "target": "1 Foe",
     "unique": true
   },
-  "Body Shield": {
-    "cost": 1003,
-    "effect": "Raise defense and take attacks in place of same-row allies with reduced damage",
-    "elem": "sup"
+  "Lightning Smash": {
+    "card": "Pabilsag",
+    "cost": 156,
+    "effect": "Medium damage",
+    "elem": "psy",
+    "target": "Foe Row"
   },
   "Luck Amp I": {
     "effect": "Luck +2",
@@ -1027,79 +1104,85 @@
     "target": "All Allies",
     "unique": true
   },
-  "Buchikamashi": {
-    "cost": 114,
-    "effect": "Light damage, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Mabufu": {
+    "card": "Ganga",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "ice",
     "target": "All Foes"
   },
   "Mabufudyne": {
+    "card": "Xi Wangmu",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "ice",
     "target": "All Foes"
   },
   "Mabufula": {
+    "card": "Belphegor",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "ice",
     "target": "All Foes"
   },
   "Maeiga": {
+    "card": "Anubis",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "cur",
     "target": "All Foes"
   },
   "Maeigaon": {
+    "card": "Astaroth",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "cur",
     "target": "All Foes"
   },
   "Maeiha": {
+    "card": "Legion",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "cur",
     "target": "All Foes"
   },
   "Mafrei": {
+    "card": "Moh Shuvuu",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "nuk",
     "target": "All Foes"
   },
   "Mafreidyne": {
+    "card": "Ardha",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "nuk",
     "target": "All Foes"
   },
   "Mafreila": {
+    "card": "Dantalian",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "nuk",
     "target": "All Foes"
   },
   "Magaru": {
+    "card": "High Pixie",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "win",
     "target": "All Foes"
   },
   "Magarudyne": {
+    "card": "Scathach",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "win",
     "target": "All Foes"
   },
   "Magarula": {
+    "card": "Cybele",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "win",
@@ -1117,11 +1200,8 @@
     "effect": "Magic +4",
     "elem": "pas"
   },
-  "Circle Recovery": {
-    "effect": "Allies recover some HP every turn, magic-type team",
-    "elem": "pas"
-  },
   "Magic Mallet": {
+    "card": "Kurama Tengu",
     "effect": "Higher rate of rare materials from Power Spots",
     "elem": "nav"
   },
@@ -1144,18 +1224,21 @@
     "target": "Foe Row"
   },
   "Makouga": {
+    "card": "Sraosha",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "ble",
     "target": "All Foes"
   },
   "Makougaon": {
+    "card": "Vasuki",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "ble",
     "target": "All Foes"
   },
   "Makouha": {
+    "card": "Unicorn",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "ble",
@@ -1174,90 +1257,105 @@
     "target": "All Foes"
   },
   "Mapsi": {
+    "card": "Oukuninushi",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "psy",
     "target": "All Foes"
   },
   "Mapsio": {
+    "card": "Hariti",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "psy",
     "target": "All Foes"
   },
   "Mapsiodyne": {
+    "card": "Kudlak",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "psy",
     "target": "All Foes"
   },
   "Maragi": {
+    "card": "Phoenix",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "fir",
     "target": "All Foes"
   },
   "Maragidyne": {
+    "card": "Surt",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "fir",
     "target": "All Foes"
   },
   "Maragion": {
+    "card": "Throne",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "fir",
     "target": "All Foes"
   },
   "Marakukaja": {
+    "card": "Mot",
     "cost": 1018,
     "effect": "Raise defense for 3 turns",
     "elem": "sup",
     "target": "All Allies"
   },
   "Marakunda": {
+    "card": "Ammut",
     "cost": 1018,
     "effect": "Lower defense for 3 turns",
     "elem": "sup",
     "target": "All Foes"
   },
   "Masukukaja": {
+    "card": "Skadi",
     "cost": 1018,
     "effect": "Raise hit/evade for 3 turns",
     "elem": "sup",
     "target": "All Allies"
   },
   "Masukunda": {
+    "card": "Nebiros",
     "cost": 1018,
     "effect": "Lower hit/evade for 3 turns",
     "elem": "sup",
     "target": "All Foes"
   },
   "Matarukaja": {
+    "card": "Suzaku",
     "cost": 1018,
     "effect": "Raise attack for 3 turns",
     "elem": "sup",
     "target": "All Allies"
   },
   "Matarunda": {
+    "card": "Narasimha",
     "cost": 1018,
     "effect": "Lower attack for 3 turns",
     "elem": "sup",
     "target": "All Foes"
   },
   "Mazio": {
+    "card": "Nue",
     "cost": 1018,
     "effect": "Light damage",
     "elem": "ele",
     "target": "All Foes"
   },
   "Maziodyne": {
+    "card": "Baal Zebul",
     "cost": 1052,
     "effect": "Heavy damage",
     "elem": "ele",
     "target": "All Foes"
   },
   "Mazionga": {
+    "card": "Gabriel",
     "cost": 1036,
     "effect": "Medium damage",
     "elem": "ele",
@@ -1270,18 +1368,21 @@
     "target": "All Allies"
   },
   "Media": {
+    "card": "Silky",
     "cost": 1012,
     "effect": "Light HP restore",
     "elem": "rec",
     "target": "All Allies"
   },
   "Mediarahan": {
+    "card": "Helel",
     "cost": 1056,
     "effect": "Full HP restore",
     "elem": "rec",
     "target": "All Allies"
   },
   "Mediarama": {
+    "card": "Bai Suzhen",
     "cost": 1030,
     "effect": "Medium HP restore",
     "elem": "rec",
@@ -1293,34 +1394,35 @@
     "target": "1 Foe"
   },
   "Megido": {
+    "card": "Queen Mab",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "alm",
     "target": "All Foes"
   },
   "Megidola": {
+    "card": "Decarabia",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "alm",
     "target": "All Foes"
   },
   "Megidolaon": {
+    "card": "Lucifer, Huang Di",
     "cost": 1048,
     "effect": "Severe damage",
     "elem": "alm",
     "target": "All Foes"
   },
   "Mighty Swing": {
+    "card": "Mezuki",
     "cost": 132,
     "effect": "Medium damage, power scales with Boost",
     "elem": "phy",
     "target": "Foe Row"
   },
-  "Colossal Swing": {
-    "effect": "Low chance to add splash effect to single-target attack skills",
-    "elem": "pas"
-  },
   "Mighty Tornado": {
+    "card": "Futsunushi",
     "effect": "Moderate chance to add splash effect to single-target attack skills",
     "elem": "pas"
   },
@@ -1329,9 +1431,23 @@
     "effect": "Triple magic attack for next hit, lasts 3 turns",
     "elem": "sup"
   },
+  "Mind's Eye": {
+    "card": "Kali",
+    "cost": 1024,
+    "effect": "Raise critical rate for 3 turns",
+    "elem": "sup",
+    "target": "All Allies"
+  },
   "Miracle Punch": {
     "cost": 124,
     "effect": "Medium damage, high crit + low hit",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Moondrop": {
+    "card": "Gozuki",
+    "cost": 132,
+    "effect": "Medium damage, lowers target's defense for 1 turn",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -1360,12 +1476,14 @@
     "target": "All Foes"
   },
   "Mutudi": {
+    "card": "Principality",
     "cost": 1004,
     "effect": "Remove all binds",
     "elem": "rec",
     "target": "Ally Row"
   },
   "Myriad Arrows": {
+    "card": "Pale Rider",
     "cost": 175,
     "effect": "Heavy damage, 6-8 hits, power scales with Boost",
     "elem": "phy",
@@ -1379,6 +1497,7 @@
     "unique": true
   },
   "Nuclear Blast": {
+    "card": "Lugh",
     "cost": 182,
     "effect": "Heavy damage",
     "elem": "nuk",
@@ -1391,10 +1510,12 @@
     "target": "1 Foe"
   },
   "Nuke Amp": {
+    "card": "Mithras",
     "effect": "Moderately increase Nuke damage",
     "elem": "pas"
   },
   "Nuke Boost": {
+    "card": "Kikuri-Hime",
     "effect": "Increase Nuke damage",
     "elem": "pas"
   },
@@ -1437,6 +1558,7 @@
     "elem": "pas"
   },
   "One-shot Kill": {
+    "card": "Yoshitsune",
     "cost": 182,
     "effect": "Severe damage, power scales with Boost",
     "elem": "phy",
@@ -1450,18 +1572,21 @@
     "unique": true
   },
   "Orb of Haste": {
+    "card": "Saki Mitama, Hitokotonushi",
     "cost": 2002,
     "effect": "Raise hit/evade for 3 turns",
     "elem": "nav",
     "target": "All Allies"
   },
   "Orb of Power": {
+    "card": "Clotho, Nidhoggr",
     "cost": 2002,
     "effect": "Raise attack for 3 turns",
     "elem": "nav",
     "target": "All Allies"
   },
   "Orb of Resolve": {
+    "card": "Gorgon, Dis",
     "cost": 2002,
     "effect": "Raise defense for 3 turns",
     "elem": "nav",
@@ -1481,10 +1606,12 @@
     "unique": true
   },
   "Paths of Light": {
+    "card": "Seth",
     "effect": "HP restore for each step taken in a labyrinth",
     "elem": "nav"
   },
   "Patra": {
+    "card": "Koropokkur",
     "cost": 1006,
     "effect": "Remove all ailments",
     "elem": "rec",
@@ -1496,7 +1623,14 @@
     "elem": "alm",
     "target": "1 Foe"
   },
+  "Phys Link": {
+    "cost": 120,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Poisma": {
+    "card": "Empusa",
     "cost": 1006,
     "effect": "Medium chance of Poison",
     "elem": "ail",
@@ -1515,6 +1649,7 @@
     "target": "All Foes"
   },
   "Power Charge": {
+    "card": "Masakado",
     "cost": 1022,
     "effect": "Triple physical attack for next hit, lasts 3 turns",
     "elem": "sup"
@@ -1534,34 +1669,40 @@
     "unique": true
   },
   "Primal Force": {
+    "card": "Asura",
     "cost": 142,
     "effect": "Heavy damage, 2 hits, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Psi": {
+    "card": "Neko Shogun",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "psy",
     "target": "1 Foe"
   },
   "Psio": {
+    "card": "Narcissus",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "psy",
     "target": "1 Foe"
   },
   "Psiodyne": {
+    "card": "Lorelei",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "psy",
     "target": "1 Foe"
   },
   "Psy Amp": {
+    "card": "Hathor",
     "effect": "Moderately increase Psy damage",
     "elem": "pas"
   },
   "Psy Boost": {
+    "card": "Virtue",
     "effect": "Increase Psy damage",
     "elem": "pas"
   },
@@ -1582,20 +1723,21 @@
     "target": "All Allies"
   },
   "Psycho Blast": {
-    "cost": 1075,
-    "effect": "Severe damage",
-    "elem": "psy",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Psycho Force": {
     "cost": 1065,
     "effect": "Severe damage",
     "elem": "psy",
     "target": "1 Foe",
     "unique": true
   },
+  "Psycho Force": {
+    "cost": 1075,
+    "effect": "Severe damage",
+    "elem": "psy",
+    "target": "All Foes",
+    "unique": true
+  },
   "Pulinpa": {
+    "card": "Ame-no-Uzume",
     "cost": 1006,
     "effect": "Medium chance of Panic",
     "elem": "ail",
@@ -1626,12 +1768,14 @@
     "target": "User Row"
   },
   "Purifying Rain": {
+    "card": "Jinn",
     "cost": 2002,
     "effect": "Remove all binds and ailments",
     "elem": "nav",
     "target": "All Allies"
   },
   "Quadruple Link": {
+    "card": "Baal",
     "effect": "Link chains last up to 4 hits",
     "elem": "pas"
   },
@@ -1643,30 +1787,35 @@
     "unique": true
   },
   "Raijinzan": {
+    "card": "Cherub",
     "cost": 182,
     "effect": "Heavy damage",
     "elem": "ele",
     "target": "Foe Row"
   },
   "Raikouzan": {
+    "card": "Caladrius",
     "cost": 132,
     "effect": "Light damage",
     "elem": "ele",
     "target": "Foe Row"
   },
   "Raimeizan": {
+    "card": "Ares",
     "cost": 156,
     "effect": "Medium damage",
     "elem": "ele",
     "target": "Foe Row"
   },
   "Rakukaja": {
+    "card": "Agathion",
     "cost": 1008,
     "effect": "Raise defense for 3 turns",
     "elem": "sup",
     "target": "1 Ally"
   },
   "Rakunda": {
+    "card": "Onmoraki",
     "cost": 1008,
     "effect": "Lower defense for 3 turns",
     "elem": "sup",
@@ -1677,52 +1826,50 @@
     "elem": "phy",
     "target": "All Foes"
   },
-  "Rebel Spirit II": {
-    "effect": "Greatly increase damage against enemies with more HP",
-    "elem": "pas"
-  },
   "Rebel Spirit": {
     "effect": "Increase damage against enemies with more HP",
     "elem": "pas"
   },
-  "Critical Eye": {
-    "cost": 1012,
-    "effect": "Raise critical rate for 3 turns",
-    "elem": "sup"
+  "Rebel Spirit II": {
+    "card": "Moloch",
+    "effect": "Greatly increase damage against enemies with more HP",
+    "elem": "pas"
   },
   "Recarm": {
+    "card": "Sarasvati",
     "cost": 1012,
     "effect": "Revive with 50% HP",
     "elem": "rec",
     "target": "1 Ally"
   },
   "Regenerate 1": {
+    "card": "Setanta",
     "effect": "Recover HP per turn",
     "elem": "pas"
   },
   "Regenerate 2": {
+    "card": "Berserker",
     "effect": "Moderately recover HP per turn",
     "elem": "pas"
   },
   "Regenerate 3": {
+    "card": "Satan",
     "effect": "Greatly recover HP per turn",
     "elem": "pas"
   },
   "Renewal Ray": {
+    "card": "Atropos",
     "cost": 2002,
     "effect": "Light HP restore",
     "elem": "nav",
     "target": "All Allies"
   },
   "Reppu Strike": {
+    "card": "Cu Chulainn",
     "cost": 156,
     "effect": "Medium damage",
     "elem": "win",
     "target": "Foe Row"
-  },
-  "Resist Light": {
-    "effect": "Resist Light damage",
-    "elem": "pas"
   },
   "Resist Dark": {
     "effect": "Resist Dark damage",
@@ -1738,6 +1885,10 @@
   },
   "Resist Ice": {
     "effect": "Resist Ice damage",
+    "elem": "pas"
+  },
+  "Resist Light": {
+    "effect": "Resist Light damage",
     "elem": "pas"
   },
   "Resist Nuke": {
@@ -1758,13 +1909,17 @@
     "elem": "alm",
     "target": "Rand Foes"
   },
-  "Mind's Eye": {
-    "cost": 1024,
-    "effect": "Raise critical rate for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
+  "Restoring Touch": {
+    "effect": "Increase bind and ailment resistance",
+    "elem": "pas"
+  },
+  "Revenge Blow": {
+    "cost": 116,
+    "effect": "Light damage, power scales with damage taken during same turn",
+    "elem": "phy"
   },
   "Roads of Light": {
+    "card": "Sandalphon",
     "effect": "Slight MP restore for each step taken in a labyrinth",
     "elem": "nav"
   },
@@ -1773,11 +1928,8 @@
     "elem": "pas",
     "unique": true
   },
-  "Immunity Buffer": {
-    "effect": "Low chance to nullify phys attack",
-    "elem": "pas"
-  },
   "Safety Prayer": {
+    "card": "Cu Sith",
     "effect": "Gather somewhat safely from Power Spots",
     "elem": "nav"
   },
@@ -1792,12 +1944,14 @@
     "elem": "pas"
   },
   "Salome's Kiss": {
+    "card": "Black Maria",
     "cost": 1042,
     "effect": "High chance of Strength, Magic, and Agility Binds",
     "elem": "ail",
     "target": "1 Foe"
   },
   "Samarecarm": {
+    "card": "White Rider",
     "cost": 1036,
     "effect": "Revive with 100% HP",
     "elem": "rec",
@@ -1822,6 +1976,7 @@
     "target": "1 Foe"
   },
   "Scorching Blast": {
+    "card": "Mayahuel",
     "cost": 156,
     "effect": "Medium damage",
     "elem": "nuk",
@@ -1831,12 +1986,6 @@
     "effect": "Medium damage, user dies",
     "elem": "alm",
     "target": "All Foes"
-  },
-  "Bolt Strike": {
-    "cost": 132,
-    "effect": "Light damage",
-    "elem": "psy",
-    "target": "Foe Row"
   },
   "Shadow Run": {
     "cost": 247,
@@ -1853,13 +2002,7 @@
   },
   "Shibaboo": {
     "effect": "Medium chance of Paralysis",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
-  "Lightning Smash": {
-    "cost": 156,
-    "effect": "Medium damage",
-    "elem": "psy",
+    "elem": "ail",
     "target": "Foe Row"
   },
   "Shinkuuha": {
@@ -1869,6 +2012,7 @@
     "target": "1 Foe"
   },
   "Shura Instincts": {
+    "card": "Fenrir",
     "effect": "High chance of Shura Tensei when battle starts",
     "elem": "pas"
   },
@@ -1893,11 +2037,26 @@
     "elem": "ail",
     "target": "All Foes"
   },
+  "Silent Thrust": {
+    "card": "Pele",
+    "cost": 119,
+    "effect": "Light damage, medium chance of Curse",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Single Shot": {
+    "card": "Berith",
     "cost": 116,
     "effect": "Light damage, power scales with Boost",
     "elem": "phy",
     "target": "Foe Col"
+  },
+  "Skull Cracker": {
+    "card": "Nozuchi",
+    "cost": 119,
+    "effect": "Light damage, medium chance of Panic",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Sleep Circle": {
     "cost": 1018,
@@ -1905,16 +2064,32 @@
     "elem": "ail",
     "target": "All Foes"
   },
+  "Sleeper Punch": {
+    "card": "Succubus",
+    "cost": 119,
+    "effect": "Light damage, medium chance of Sleep",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Snake Glare": {
+    "card": "Ara Mitama",
     "effect": "High chance of preventing preemptive attacks",
     "elem": "nav"
   },
+  "Sonic Punch": {
+    "card": "Jatayu",
+    "cost": 132,
+    "effect": "Heavy damage, high chance of Sleep",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Spiderweb": {
     "effect": "Medium chance of Agility Bind",
-    "elem": "phy",
+    "elem": "ail",
     "target": "All Foes"
   },
   "Spotter": {
+    "card": "Shiisaa, Kelpie",
     "effect": "Slightly higher rate of rare materials from Power Spots",
     "elem": "nav"
   },
@@ -1923,6 +2098,13 @@
     "effect": "Extend timers on binds and ailments, does not stack",
     "elem": "sup",
     "target": "All Foes"
+  },
+  "Stardrop": {
+    "card": "Kartikeya",
+    "cost": 148,
+    "effect": "Heavy damage, lowers target's defense for 1 turn",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Stone Mist": {
     "effect": "Medium chance of Petrification",
@@ -1941,13 +2123,21 @@
     "effect": "Strength +4",
     "elem": "pas"
   },
+  "Stun Circle": {
+    "cost": 1018,
+    "effect": "Medium chance of Curse each turn for 3 turns",
+    "elem": "ail",
+    "target": "All Foes"
+  },
   "Sukukaja": {
+    "card": "Raijuu",
     "cost": 1008,
     "effect": "Raise hit/evade for 3 turns",
     "elem": "sup",
     "target": "1 Ally"
   },
   "Sukunda": {
+    "card": "Azumi",
     "cost": 1008,
     "effect": "Lower hit/evade for 3 turns",
     "elem": "sup",
@@ -1965,33 +2155,45 @@
     "elem": "alm",
     "target": "All Foes"
   },
+  "Swift Strike": {
+    "card": "Tsuchigumo",
+    "cost": 124,
+    "effect": "Light damage, 2-6 hits, power scales with Boost",
+    "elem": "phy",
+    "target": "Rand Foes"
+  },
   "Tarukaja": {
+    "card": "Oni",
     "cost": 1008,
     "effect": "Raise attack for 3 turns",
     "elem": "sup",
     "target": "1 Ally"
   },
   "Tarunda": {
+    "card": "Bifrons",
     "cost": 1008,
     "effect": "Lower attack for 3 turns",
     "elem": "sup",
     "target": "1 Foe"
   },
+  "Teardrop": {
+    "card": "Mokoi",
+    "cost": 116,
+    "effect": "Light damage, lowers target's defense for 1 turn",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Tempest Slash": {
+    "card": "Raphael",
     "cost": 144,
     "effect": "Medium damage, 2-6 hits, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Tengu's Vigil": {
+    "card": "Koppa Tengu",
     "effect": "Reveal shortcuts in a wide area",
     "elem": "nav"
-  },
-  "Heaven's Blade": {
-    "cost": 156,
-    "effect": "Heavy damage, hits again if user takes no damage that turn",
-    "elem": "phy",
-    "target": "1 Foe"
   },
   "Tentarafoo": {
     "cost": 1012,
@@ -2021,39 +2223,62 @@
     "target": "1 Foe",
     "unique": true
   },
+  "Thunder Smash": {
+    "card": "Shiki-Ouji",
+    "cost": 182,
+    "effect": "Heavy damage",
+    "elem": "psy",
+    "target": "Foe Row"
+  },
   "Tousatsujin": {
+    "card": "Byakko",
     "cost": 182,
     "effect": "Heavy damage",
     "elem": "ice",
     "target": "Foe Row"
   },
   "Toxic Needle": {
+    "card": "Ananta",
     "cost": 132,
     "effect": "Heavy damage, high chance of Poison",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Toxic Slice": {
+    "card": "Andras",
     "cost": 119,
     "effect": "Light damage, medium chance of Poison",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Treasure Hunter": {
+    "card": "Bicorn, Sudama",
     "effect": "Reveal nearby treasure boxes",
     "elem": "nav"
   },
+  "Trick Step": {
+    "effect": "Increase evasion against all attacks",
+    "elem": "pas"
+  },
+  "Trick Step II": {
+    "card": "Lakshmi",
+    "effect": "Greatly increase evasion against all attacks",
+    "elem": "pas"
+  },
   "Triple Down": {
+    "card": "Rakshasa",
     "cost": 125,
     "effect": "Medium damage, 3 hits, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
   },
   "Triple Link": {
+    "card": "Ose",
     "effect": "Link chains last up to 3 hits",
     "elem": "pas"
   },
   "Twin Slash": {
+    "card": "Sandman",
     "cost": 114,
     "effect": "Light damage, 2 hits, power scales with Boost",
     "elem": "phy",
@@ -2066,26 +2291,24 @@
     "target": "Rand Foes"
   },
   "Victory Cry": {
+    "card": "Hachiman",
     "effect": "Recover 100% HP after battle",
     "elem": "nav"
   },
   "Vorpal Blade": {
+    "card": "Melchizedek",
     "cost": 167,
     "effect": "Heavy damage, 4 hits, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Heavy Shot": {
-    "cost": 148,
-    "effect": "Heavy damage, lowers target's attack for 3 turns",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Wind Amp": {
+    "card": "Vishnu",
     "effect": "Moderately increase Wind damage",
     "elem": "pas"
   },
   "Wind Boost": {
+    "card": "Alraune",
     "effect": "Increase Wind damage",
     "elem": "pas"
   },
@@ -2112,6 +2335,7 @@
     "unique": true
   },
   "Yomi Return": {
+    "card": "Parvati",
     "cost": 2003,
     "effect": "Revive with 50% HP",
     "elem": "nav",
@@ -2123,25 +2347,22 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Brutal Slash": {
-    "cost": 140,
-    "effect": "Medium damage, hits again if user takes no damage that turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Zio": {
+    "card": "Oberon",
     "cost": 1006,
     "effect": "Light damage",
     "elem": "ele",
     "target": "1 Foe"
   },
   "Ziodyne": {
+    "card": "Thor",
     "cost": 1032,
     "effect": "Heavy damage",
     "elem": "ele",
     "target": "1 Foe"
   },
   "Zionga": {
+    "card": "Flauros",
     "cost": 1014,
     "effect": "Medium damage",
     "elem": "ele",

@@ -2,21 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { SharedModule } from '../shared/shared.module';
-import { SharedCompendiumModule } from '../compendium/compendium.module';
 import { CompendiumRoutingModule } from './compendium-routing.module';
-
-import { CompendiumComponent } from './components/compendium.component';
-import { DemonListContainerComponent } from './components/demon-list.component';
-import { SkillListContainerComponent } from './components/skill-list.component';
-import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
-
-import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
-import { EnemyEntryComponent } from './components/enemy-entry.component';
-
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
+import { PersonaCompendiumModule } from './persona-compendium.module';
 import { CompendiumConfig } from './models';
 
 import * as COMP_CONFIG_JSON from './data/comp-config.json';
@@ -38,6 +28,11 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 const resistElems = COMP_CONFIG_JSON['resistElems'];
 const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
 const races = COMP_CONFIG_JSON['races'];
+
+for (const enemy of Object.values(ENEMY_DATA_JSON)) {
+  enemy['stats'] = [enemy['lvl']].concat(enemy['stats']);
+  enemy['lvl'] = Math.floor(enemy['lvl'] / 20) + 1;
+}
 
 export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona Q2: New Cinema Labyrinth',
@@ -74,18 +69,8 @@ export const fusionDataFactory = () => {
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
-    SharedCompendiumModule,
+    PersonaCompendiumModule,
     CompendiumRoutingModule
-  ],
-  declarations: [
-    CompendiumComponent,
-    DemonListContainerComponent,
-    SkillListContainerComponent,
-    DemonEntryComponent,
-    DemonEntryContainerComponent,
-    EnemyEntryComponent,
-    DemonDlcSettingsContainerComponent
   ],
   providers: [
     Title,
