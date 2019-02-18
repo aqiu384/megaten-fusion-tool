@@ -1,8 +1,22 @@
-import { Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
+import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
+
+export interface Demon extends BaseDemon {
+  code: number;
+}
 
 export interface Skill extends BaseSkill {
   target: string;
   fuse: string[];
+  code: number;
+}
+
+export interface DecodedDemon {
+  demonCode: number;
+  lvl: number;
+  exp: number;
+  hp: number;
+  mp: number;
+  skillCodes: number[];
 }
 
 export interface CompendiumConfig extends BaseComp {

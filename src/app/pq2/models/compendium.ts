@@ -1,6 +1,5 @@
-import { Demon, Compendium as ICompendium, NamePair } from '../../compendium/models';
-import { Skill, CompendiumConfig } from '../models';
-import { JsonPipe } from '@angular/common';
+import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { Demon, Skill, CompendiumConfig } from '../models';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -46,6 +45,7 @@ export class Compendium implements ICompendium {
         skills:   json['skills'],
         resists:  [],
         inherit:  json['inherit'],
+        code:     json['code'] || 0,
         fusion:   'normal'
       };
     }
@@ -61,6 +61,7 @@ export class Compendium implements ICompendium {
         skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
         area:     json['area'],
         drop:     json['drops'].join(', '),
+        code:     0,
         fusion:   'normal',
         isEnemy:  true
       }
@@ -81,6 +82,7 @@ export class Compendium implements ICompendium {
         target:    json['target'] || 'Self',
         learnedBy: [],
         fuse:      (json['card'] || '').split(', '),
+        code:      json['code'] || 0,
         level:     0
       };
     }
@@ -97,7 +99,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, skill] of Object.entries(skills)) {
+    for (const skill of Object.values(skills)) {
       if (skill.learnedBy.length < 1) {
         skill.rank = 99;
       }

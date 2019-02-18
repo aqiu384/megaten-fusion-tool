@@ -5,6 +5,7 @@ import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
+import { PasswordGeneratorContainerComponent } from './components/password-generator.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
@@ -74,6 +75,10 @@ const compendiumRoutes: Routes = [
       {
         path: 'skills',
         component: SkillListContainerComponent
+      },
+      {
+        path: 'passwords',
+        component: PasswordGeneratorContainerComponent
       },
       {
         path: 'settings',
