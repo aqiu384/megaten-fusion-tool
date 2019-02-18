@@ -7,12 +7,12 @@ var map = {
 	"./desu1/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/desu1/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.13"
+		"compendium.module.11"
 	],
 	"./desu2/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/desu2/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.10"
+		"compendium.module.9"
 	],
 	"./dssh/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/dssh/compendium.module.ngfactory.ts",
@@ -32,12 +32,12 @@ var map = {
 	"./krao/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/krao/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.12"
+		"compendium.module.10"
 	],
 	"./krch/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/krch/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.14"
+		"compendium.module.12"
 	],
 	"./mib/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/mib/compendium.module.ngfactory.ts",
@@ -62,12 +62,12 @@ var map = {
 	"./pq/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/pq/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.11"
+		"compendium.module.14"
 	],
 	"./pq2/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/pq2/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.7"
+		"compendium.module.13"
 	],
 	"./smt1/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/smt1/compendium.module.ngfactory.ts",
@@ -87,12 +87,12 @@ var map = {
 	"./smt4/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/smt4/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.9"
+		"compendium.module.8"
 	],
 	"./smt4f/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/smt4f/compendium.module.ngfactory.ts",
 		"common",
-		"compendium.module.8"
+		"compendium.module.7"
 	],
 	"./smt9/compendium.module.ngfactory": [
 		"../../../../../src/$$_gendir/app/smt9/compendium.module.ngfactory.ts",
