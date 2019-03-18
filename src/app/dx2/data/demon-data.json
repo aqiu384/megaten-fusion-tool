@@ -25,6 +25,32 @@
     "resists": "-r-w---",
     "stats": [1126, 190, 111, 160, 122, 121]
   },
+  "Abaddon A": {
+    "ai": "atk",
+    "arch": [
+      "Enduring Soul",
+      "Hellfire",
+      "Necro Dogma",
+      "Infernal Mask",
+      "Repel Phys"
+    ],
+    "base": [
+      "Binge Eating",
+      "Death Counter",
+      "Lord of the Abyss"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Fire Boost",
+      "Life Gain",
+      "Hellish Mask",
+      "Resist Elec"
+    ],
+    "grade": 60,
+    "race": "Tyrant",
+    "resists": "nr-w---",
+    "stats": [1220, 181, 160, 181, 66, 160]
+  },
   "Abraxas": {
     "ai": "sup",
     "arch": [
@@ -278,6 +304,26 @@
     "race": "Yoma",
     "resists": "-ws----",
     "stats": [1028, 86, 170, 140, 115, 140]
+  },
+  "Ara Mitama": {
+    "ai": "atk",
+    "arch": [
+      "Agility Amp I",
+      "Fire Breath",
+      "Tarukaja",
+      "Good Aim",
+      "Deathtouch"
+    ],
+    "base": [
+      "Strength Amp I",
+      "Charge",
+      "Lunge"
+    ],
+    "cnum": 0,
+    "grade": 21,
+    "race": "Mitama",
+    "resists": "---s-ss",
+    "stats": [862, 146, 105, 105, 122, 105]
   },
   "Arahabaki": {
     "ai": "atk",
@@ -546,6 +592,58 @@
     "resists": "s--nwnw",
     "stats": [1018, 158, 128, 138, 178, 170]
   },
+  "Bayonetta": {
+    "ai": "atk",
+    "arch": [
+      "Strength Amp II",
+      "Hurricane Slash",
+      "Sweet Bite",
+      "Savage Glee",
+      "Null Dark"
+    ],
+    "base": [
+      "Mortal Jihad",
+      "Berserker",
+      "Soul Drain"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Strength Amp II",
+      "Deadly Charm",
+      "Phys Boost",
+      "Speedster"
+    ],
+    "grade": 65,
+    "race": "Witch",
+    "resists": "-----ss",
+    "stats": [854, 172, 151, 103, 145, 151]
+  },
+  "Bayonetta S": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Hurricane Slash",
+      "Sweet Bite",
+      "Savage Glee",
+      "Null Dark"
+    ],
+    "base": [
+      "Mortal Jihad",
+      "Madama Stomp",
+      "Gomorrah B"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Strength Amp III",
+      "Deadly Charm",
+      "Assassin",
+      "Titanomachia"
+    ],
+    "grade": 85,
+    "race": "Witch",
+    "resists": "-----ss",
+    "stats": [877, 181, 158, 108, 156, 158]
+  },
   "Beelzebub": {
     "ai": "atk",
     "arch": [
@@ -597,6 +695,32 @@
     "race": "Fury",
     "resists": "-wn--s-",
     "stats": [1089, 86, 186, 153, 157, 153]
+  },
+  "Beloved": {
+    "ai": "atk",
+    "arch": [
+      "Vitality Amp II",
+      "Power Hit",
+      "Rebellion",
+      "Retaliate",
+      "Null Light"
+    ],
+    "base": [
+      "Bloody Glee",
+      "Oni-Kagura",
+      "Beloved Slash"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Good Aim",
+      "Phys Boost",
+      "Wild Guess",
+      "Hellish Mask"
+    ],
+    "grade": 70,
+    "race": "Hallel",
+    "resists": "s----sw",
+    "stats": [1192, 195, 94, 175, 106, 153]
   },
   "Berserker": {
     "ai": "atk",
@@ -999,6 +1123,58 @@
     "race": "Fallen",
     "resists": "-sswnws",
     "stats": [1291, 76, 195, 195, 127, 144]
+  },
+  "Dante": {
+    "ai": "atk",
+    "arch": [
+      "Strength Amp II",
+      "Megaton Raid",
+      "Taunt",
+      "Death Counter",
+      "Null Dark"
+    ],
+    "base": [
+      "Phys Boost",
+      "Fatal Sword",
+      "Titanomachia"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Strength Amp II",
+      "Tempest Slash",
+      "Vitality Amp II",
+      "Resist Phys"
+    ],
+    "grade": 70,
+    "race": "Fiend",
+    "resists": "-s----s",
+    "stats": [1244, 207, 104, 186, 117, 144]
+  },
+  "Dante S": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Megaton Raid",
+      "Taunt",
+      "Death Counter",
+      "Null Dark"
+    ],
+    "base": [
+      "Phys Boost",
+      "Rapid Shot",
+      "Million Stab"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Life Aid",
+      "Phys Amp",
+      "Savage Glee",
+      "Null Fire"
+    ],
+    "grade": 90,
+    "race": "Fiend",
+    "resists": "-s----s",
+    "stats": [1286, 217, 109, 195, 126, 150]
   },
   "Decarabia": {
     "ai": "atk",
@@ -1403,6 +1579,22 @@
     "race": "Snake",
     "resists": "-wn----",
     "stats": [1103, 156, 186, 156, 81, 108]
+  },
+  "Halloween Jack": {
+    "ai": "atk",
+    "arch": [
+      "Mahalantine"
+    ],
+    "base": [
+      "Agilao",
+      "Mudoon",
+      "Endure"
+    ],
+    "cnum": 82,
+    "grade": 65,
+    "race": "Fairy",
+    "resists": "-dw----",
+    "stats": [1079, 103, 193, 151, 124, 151]
   },
   "Hamsa": {
     "ai": "sup",
@@ -1988,6 +2180,58 @@
     "resists": "--swdnw",
     "stats": [750, 117, 98, 81, 225, 165]
   },
+  "Jeanne": {
+    "ai": "atk",
+    "arch": [
+      "Magic Amp II",
+      "Tempest Slash",
+      "Dark Sword",
+      "Evade",
+      "Null Light"
+    ],
+    "base": [
+      "Hades Blast",
+      "Berserker",
+      "Soul Drain"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Magic Amp II",
+      "Deadly Bondage",
+      "Retaliate",
+      "Speedster"
+    ],
+    "grade": 65,
+    "race": "Witch",
+    "resists": "-----ss",
+    "stats": [854, 151, 172, 103, 145, 151]
+  },
+  "Jeanne S": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Tempest Slash",
+      "Dark Sword",
+      "Evade",
+      "Null Light"
+    ],
+    "base": [
+      "Hades Blast",
+      "Madama Uppercut",
+      "Gomorrah J"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Magic Amp III",
+      "Deadly Bondage",
+      "Serial Killer",
+      "Megidola"
+    ],
+    "grade": 85,
+    "race": "Witch",
+    "resists": "-----ss",
+    "stats": [877, 158, 181, 108, 156, 158]
+  },
   "Jeanne d'Arc": {
     "ai": "rec",
     "arch": [
@@ -2361,6 +2605,26 @@
     "resists": "-----sw",
     "stats": [1009, 73, 186, 136, 156, 136]
   },
+  "Kusi Mitama": {
+    "ai": "atk",
+    "arch": [
+      "Vitality Amp I",
+      "Mazan",
+      "Sukukaja",
+      "Dodge",
+      "Null Force"
+    ],
+    "base": [
+      "Agility Amp I",
+      "Charge",
+      "Concentrate"
+    ],
+    "cnum": 0,
+    "grade": 31,
+    "race": "Mitama",
+    "resists": "--s--ss",
+    "stats": [976, 106, 106, 129, 144, 106]
+  },
   "Lailah": {
     "ai": "atk",
     "arch": [
@@ -2494,9 +2758,9 @@
     ],
     "cnum": 116,
     "gach": [
-      "Dmg Panel V II",
-      "Tarunda",
-      "Purgatory",
+      "Deadly Charm",
+      "Madezoreton",
+      "Agility Amp III",
       "Resist Force"
     ],
     "grade": 80,
@@ -3088,6 +3352,32 @@
     "resists": "-swws--",
     "stats": [990, 114, 96, 132, 170, 141]
   },
+  "Nekomata A": {
+    "ai": "sup",
+    "arch": [
+      "Wild Instinct",
+      "Binding Claw",
+      "Mahamarin Karin",
+      "Null Charm",
+      "Repel Elec"
+    ],
+    "base": [
+      "Speedster",
+      "Evade",
+      "Pussyfoot"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Dodge",
+      "Madness",
+      "War Dance",
+      "Blood Rush"
+    ],
+    "grade": 60,
+    "race": "Beast",
+    "resists": "-s-ws--",
+    "stats": [849, 130, 102, 102, 226, 160]
+  },
   "Nergal": {
     "ai": "sup",
     "arch": [
@@ -3113,6 +3403,78 @@
     "race": "Reaper",
     "resists": "-sw--sr",
     "stats": [919, 223, 78, 117, 164, 169]
+  },
+  "Nero": {
+    "ai": "atk",
+    "arch": [
+      "Agility Amp II",
+      "Ziodyne",
+      "Necro Dogma",
+      "Auto-Rakuka",
+      "Null Dark"
+    ],
+    "base": [
+      "Elec Boost",
+      "Back Attack",
+      "Mazionga"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Agility Amp II",
+      "Magic Amp II",
+      "Ziodyne",
+      "Resist Ice"
+    ],
+    "grade": 70,
+    "race": "Fiend",
+    "resists": "---s--s",
+    "stats": [995, 153, 186, 133, 157, 123]
+  },
+  "Nero S": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Ziodyne",
+      "Necro Dogma",
+      "Auto-Rakuka",
+      "Null Dark"
+    ],
+    "base": [
+      "Elec Boost",
+      "Voltage",
+      "Overture"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Elec Amp",
+      "Mana Aid",
+      "Merciless Blow",
+      "Null Elec"
+    ],
+    "grade": 90,
+    "race": "Fiend",
+    "resists": "---s--s",
+    "stats": [1028, 160, 195, 140, 169, 129]
+  },
+  "Nigi Mitama": {
+    "ai": "rec",
+    "arch": [
+      "Luck Amp I",
+      "Ice Breath",
+      "Diara",
+      "Fast Recovery",
+      "Null Ice"
+    ],
+    "base": [
+      "Magic Amp I",
+      "Media",
+      "Recarm"
+    ],
+    "cnum": 0,
+    "grade": 26,
+    "race": "Mitama",
+    "resists": "----sss",
+    "stats": [863, 105, 147, 105, 102, 129]
   },
   "Nozuchi": {
     "ai": "atk",
@@ -3686,22 +4048,6 @@
     "resists": "-sw----",
     "stats": [1032, 79, 190, 141, 116, 141]
   },
-  "Halloween Jack": {
-    "ai": "atk",
-    "arch": [
-      "Mahalantine"
-    ],
-    "base": [
-      "Agilao",
-      "Mudoon",
-      "Endure"
-    ],
-    "cnum": 82,
-    "grade": 65,
-    "race": "Fairy",
-    "resists": "-dw----",
-    "stats": [1079, 103, 193, 151, 124, 151]
-  },
   "Quetzalcoatl": {
     "ai": "atk",
     "arch": [
@@ -3845,6 +4191,26 @@
     "race": "Rumor",
     "resists": "-w---wd",
     "stats": [877, 117, 126, 108, 142, 108]
+  },
+  "Saki Mitama": {
+    "ai": "sup",
+    "arch": [
+      "Luck Amp I",
+      "Shock",
+      "Rakukaja",
+      "Madness",
+      "Null Elec"
+    ],
+    "base": [
+      "Vitality Amp I",
+      "Makarakarn",
+      "Life Bonus"
+    ],
+    "cnum": 0,
+    "grade": 36,
+    "race": "Mitama",
+    "resists": "-s---ss",
+    "stats": [1157, 113, 106, 154, 111, 132]
   },
   "Samael": {
     "ai": "sup",
@@ -4581,6 +4947,58 @@
     "race": "Holy",
     "resists": "---w-nn",
     "stats": [1103, 136, 185, 156, 97, 99]
+  },
+  "V": {
+    "ai": "atk",
+    "arch": [
+      "Magic Amp II",
+      "Sea of Chaos",
+      "Rattle",
+      "Infernal Mask",
+      "Null Dark"
+    ],
+    "base": [
+      "Enduring Soul",
+      "Soul Drain",
+      "Megido"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Magic Amp II",
+      "Luck Amp II",
+      "Hamadyne",
+      "Resist Force"
+    ],
+    "grade": 70,
+    "race": "Fiend",
+    "resists": "-----ss",
+    "stats": [905, 123, 175, 114, 147, 164]
+  },
+  "V S": {
+    "ai": "atk",
+    "arch": [
+      "Agi",
+      "Sea of Chaos",
+      "Rattle",
+      "Infernal Mask",
+      "Null Dark"
+    ],
+    "base": [
+      "Enduring Soul",
+      "Shadow-Shock",
+      "Griffon-Bolt"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Butcher",
+      "Wild Instinct",
+      "Megidolaon",
+      "Null Light"
+    ],
+    "grade": 90,
+    "race": "Fiend",
+    "resists": "-----ss",
+    "stats": [934, 129, 183, 120, 158, 172]
   },
   "Valkyrie": {
     "ai": "atk",

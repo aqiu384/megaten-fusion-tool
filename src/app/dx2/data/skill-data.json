@@ -125,6 +125,13 @@
     "element": "support",
     "target": "All Foes"
   },
+  "Beloved Slash": {
+    "cost": 6,
+    "effect": "x2 hits",
+    "element": "phys",
+    "power": 60,
+    "target": "All Foes"
+  },
   "Berserker": {
     "effect": "Damage dealt +10%, Damage received +20%",
     "element": "passive"
@@ -650,12 +657,30 @@
     "power": 120,
     "target": "One Foe"
   },
+  "Gomorrah B": {
+    "cost": 8,
+    "effect": "x5 hits, 50% crit, 50% Charm, Phys Pierce, power scales with St and Ma, 1 use after 3rd turn only",
+    "element": "phys",
+    "power": 50,
+    "target": "One Foe"
+  },
+  "Gomorrah J": {
+    "cost": 8,
+    "effect": "50% crit, 50% Bind, Phys Pierce, power scales with St and Ma, 1 use after 3rd turn only",
+    "element": "phys",
+    "power": 180,
+    "target": "All Foes"
+  },
   "Good Aim": {
     "effect": "Phys hit +10%",
     "element": "passive"
   },
   "Great Aim": {
     "effect": "Phys hit +20%",
+    "element": "passive"
+  },
+  "Griffon-Bolt": {
+    "effect": "Follow up ally normal atk with almighty 30 dmg x4 hits on multi foes",
     "element": "passive"
   },
   "Guards of Tartarus": {
@@ -885,6 +910,10 @@
     "effect": "Expel damage +15%",
     "element": "passive"
   },
+  "Lord of the Abyss": {
+    "effect": "Dekaja + Debilitate during 1st turn of Boss battle",
+    "element": "passive"
+  },
   "Lotus Dance": {
     "cost": 6,
     "effect": "60% Charm",
@@ -953,6 +982,14 @@
     "element": "ice",
     "power": 100,
     "target": "All Foes"
+  },
+  "Madama Stomp": {
+    "effect": "100 almighty dmg and 30% Charm upon crit",
+    "element": "passive"
+  },
+  "Madama Uppercut": {
+    "effect": "100 almighty dmg and 30% bind to Charmed foes",
+    "element": "passive"
   },
   "Madezoreto": {
     "cost": 6,
@@ -1316,6 +1353,13 @@
     "element": "recovery",
     "target": "All Allies"
   },
+  "Million Stab": {
+    "cost": 8,
+    "effect": "4 hits, Phys Pierce during Might",
+    "element": "phys",
+    "power": 35,
+    "target": "All Foes"
+  },
   "Mind Blast": {
     "cost": 6,
     "effect": "Remove 4 MP",
@@ -1514,6 +1558,13 @@
     "element": "ailment",
     "target": "Multi Foes"
   },
+  "Overture": {
+    "cost": 80,
+    "effect": "Elec Piece, cast Concentrate afterwards",
+    "element": "elec",
+    "power": 180,
+    "target": "All Foes"
+  },
   "Paraladi": {
     "cost": 3,
     "effect": "Remove Bind, Bind resistance +by 30% for 3 turns",
@@ -1590,6 +1641,10 @@
     "power": 50,
     "target": "Multi Foes"
   },
+  "Pussyfoot": {
+    "effect": "Ally Phys avoid +20%",
+    "element": "passive"
+  },
   "Ragnarok": {
     "cost": 7,
     "element": "fire",
@@ -1614,6 +1669,10 @@
     "element": "phys",
     "power": 45,
     "target": "Multi Foes"
+  },
+  "Rapid Shot": {
+    "effect": "+20% Phys hit, Regular atk hits x5 with 20 dmg and 25% crit, cast Might afterwards",
+    "element": "passive"
   },
   "Rasetsu": {
     "effect": "Phys hit +10%, begin battle with Rebellion",
@@ -1783,6 +1842,10 @@
     "effect": "2-4 hits, 30% Charm",
     "element": "ailment",
     "target": "Multi Foes"
+  },
+  "Shadow-Shock": {
+    "effect": "Regular atk hits with almighty 100 dmg",
+    "element": "passive"
   },
   "Shibaboo": {
     "cost": 5,
@@ -2019,6 +2082,10 @@
   },
   "Void Dark Zones": {
     "effect": "Immune to Dark Zone effects",
+    "element": "passive"
+  },
+  "Voltage": {
+    "effect": "Cast Tarukaja + Sukukaja for 1 turn during Concentrate",
     "element": "passive"
   },
   "Vorpal Blade": {
