@@ -11,6 +11,7 @@ export interface Skill extends BaseSkill {
 }
 
 export interface DecodedDemon {
+  language: string;
   demonCode: number;
   lvl: number;
   exp: number;

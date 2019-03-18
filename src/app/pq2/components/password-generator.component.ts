@@ -14,26 +14,45 @@ import { encodeDemon } from '../models/password-generator';
   template: `
     <form [formGroup]="form">
       <table>
-        <tr><th colspan="2">Passwords</th></tr>
+        <tr><th colspan="2">QR Codes</th></tr>
         <tr>
-          <th [ngStyle]="{ width: '33%' }">Japanese Password</th>
-          <th [ngStyle]="{ width: '67%' }">English Password</th>
+          <th [ngStyle]="{ width: '33%' }"></th>
+          <th [ngStyle]="{ width: '67%' }">QR Code</th>
         </tr>
         <tr>
           <td></td>
-          <td><app-qrcode [byteArray]="engPassword"></app-qrcode></td>
+          <td><app-qrcode [byteArray]="passBytes"></app-qrcode></td>
         </tr>
       </table>
       <table>
-        <tr><th colspan="3">Persona Entry</th></tr>
+        <tr><th colspan="6">Persona Entry</th></tr>
         <tr>
+          <th>Language</th>
           <th>Level</th>
+          <th>HP</th>
+          <th>MP</th>
           <th>Race</th>
           <th>Demon</th>
         </tr>
         <tr>
           <td>
+            <select formControlName="language">
+              <option value="jap">Japanese</option>
+              <option value="eng">English</option>
+            </select>
+          </td>
+          <td>
             <select formControlName="lvl">
+              <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+            </select>
+          </td>
+          <td>
+            <select formControlName="hp">
+              <option *ngFor="let _ of range299; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+            </select>
+          </td>
+          <td>
+            <select formControlName="mp">
               <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
             </select>
           </td>
@@ -108,8 +127,8 @@ export class PasswordGeneratorComponent implements OnChanges {
   form: FormGroup;
 
   range99 = Array(99);
-  japPassword: Array<number>;
-  engPassword: Array<number>;
+  range299 = Array(299);
+  passBytes: Array<number>;
 
   blankSkill: Skill = {
     code: 0, cost: 0, level: 0, rank: 0, target: 'Self',
@@ -131,7 +150,10 @@ export class PasswordGeneratorComponent implements OnChanges {
     }
 
     this.form = this.fb.group({
+      language: 'eng',
       lvl: 1,
+      hp: 1,
+      mp: 1,
       race: this.defaultRace,
       demon: this.defaultDemon,
       skills: this.fb.array(skills)
@@ -143,17 +165,16 @@ export class PasswordGeneratorComponent implements OnChanges {
         const dskills = form.skills.map(s => this.compendium.getSkill(s.name) || this.blankSkill);
 
         const decoded: DecodedDemon = {
+          language: form.language,
           demonCode: demon.code,
           lvl: parseInt(form.lvl, 10),
           exp: 13568664,
-          hp: 200,
-          mp: 100,
+          hp: parseInt(form.hp, 10),
+          mp: parseInt(form.mp, 10),
           skillCodes: dskills.map(s => s.code),
         };
 
-        const passBytes = encodeDemon(decoded);
-        this.japPassword = passBytes;
-        this.engPassword = passBytes;
+        this.passBytes = encodeDemon(decoded, this.compConfig.appTitle);
       }
     });
   }
@@ -216,6 +237,8 @@ export class PasswordGeneratorComponent implements OnChanges {
 
     this.form.patchValue({
       lvl: Math.floor(demon.lvl),
+      hp: demon.stats[0],
+      mp: demon.stats[1],
       race: demon.race,
       demon: demon.name,
       skills: skills.map(s => ({ elem: s.element, name: s.name }))
@@ -249,7 +272,7 @@ export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
   ngOnDestroy() { this.unsubscribeAll(); }
 
   setTitle() {
-    this.title.setTitle(`Password Generator - ${this.fusionDataService.appName}`);
+    this.title.setTitle(`QR Code Generator - ${this.fusionDataService.appName}`);
   }
 
   subscribeAll() {

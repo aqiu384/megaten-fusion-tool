@@ -30,8 +30,8 @@ import { MEGATEN_FUSION_TOOLS } from './constants';
       </div>
       <div [ngStyle]="{ 'text-align': 'center' }">
         <br>
-        <a href="https://www.youtube.com/watch?v=8eYf3OHqq9s">
-          https://www.youtube.com/watch?v=8eYf3OHqq9s
+        <a href="https://www.youtube.com/watch?v=b1KfNEPKncQ">
+          https://www.youtube.com/watch?v=b1KfNEPKncQ
         </a>
       </div>
     </div>

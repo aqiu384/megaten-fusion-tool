@@ -77,7 +77,7 @@ const compendiumRoutes: Routes = [
         component: SkillListContainerComponent
       },
       {
-        path: 'passwords',
+        path: 'qrcodes',
         component: PasswordGeneratorContainerComponent
       },
       {
