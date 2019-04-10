@@ -9,4 +9,5 @@ export interface Demon extends BaseDemon {
 export interface Skill extends BaseSkill {
   damage?: string;
   target?: string;
+  hits?: string;
 }

@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 import { Races, BaseStats, SkillElements, PasswordEncodings, SkillCosts } from '../models/constants';
 import { Demon, Skill, DecodedDemon } from '../models';

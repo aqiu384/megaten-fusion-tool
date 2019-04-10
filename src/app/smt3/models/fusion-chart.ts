@@ -1,10 +1,10 @@
-import { Races, ElementDemons } from './constants';
+import { ElementDemons } from './constants';
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
-import * as CURSED_CHART_JSON from '../data/cursed-chart.json';
-import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
+import FUSION_CHART_JSON from '../data/fusion-chart.json';
+import CURSED_CHART_JSON from '../data/cursed-chart.json';
+import ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   private static readonly CHART_SETTINGS = {

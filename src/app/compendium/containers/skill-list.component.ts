@@ -4,8 +4,8 @@ import {
   OnDestroy
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
+import { Observable } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 import { Skill, Compendium, FusionDataService } from '../models';
 

@@ -2,8 +2,8 @@ import { ElementOrder, Races, ResistCodes } from '../constants';
 import { Demon, Skill } from '../models';
 import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
-import * as INHERITANCE_TYPES from '../data/inheritance-types.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import INHERITANCE_TYPES from '../data/inheritance-types.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -37,13 +37,13 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          race:    json.race,
-          lvl:     json.lvl,
-          price:   Math.pow(json.stats.reduce((acc, stat) => stat + acc, 0), 2) + 2000,
-          inherit: json.inherits,
-          stats:   json.stats,
-          resists: json.resists.split('').map(char => ResistCodes[char]),
-          skills:  json.skills,
+          race:    json['race'],
+          lvl:     json['lvl'],
+          price:   Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
+          inherit: json['inherits'],
+          stats:   json['stats'],
+          resists: json['resists'].split('').map(char => ResistCodes[char]),
+          skills:  json['skills'],
           fusion:  'normal'
         };
       }
@@ -53,27 +53,27 @@ export class Compendium implements ICompendium {
       for (const [name, enemy] of Object.entries(enemyDataJson)) {
         let drops = []
         
-        if (enemy.material && enemy.material !== '-') {
-          drops.push(enemy.material);
-        } if (enemy.gem && enemy.gem !== '-') {
-          drops.push(enemy.gem);
-        } if (enemy.drops) {
-          drops = drops.concat(enemy.drops);
+        if (enemy['material'] && enemy['material'] !== '-') {
+          drops.push(enemy['material']);
+        } if (enemy['gem'] && enemy['gem'] !== '-') {
+          drops.push(enemy['gem']);
+        } if (enemy['drops']) {
+          drops = drops.concat(enemy['drops']);
         } if (!drops.length) {
           drops.push('-');
         }
 
         enemies[name] = {
           name,
-          race:    enemy.race,
-          lvl:     enemy.lvl,
+          race:    enemy['race'],
+          lvl:     enemy['lvl'],
           price:   0,
-          stats:   enemy.stats.slice(0, 2),
-          estats:  enemy.stats.slice(2),
-          resists: enemy.resists.toLowerCase().split('').map(char => ResistCodes[char]),
-          skills:  enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+          stats:   enemy['stats'].slice(0, 2),
+          estats:  enemy['stats'].slice(2),
+          resists: enemy['resists'].toLowerCase().split('').map(char => ResistCodes[char]),
+          skills:  enemy['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
           fusion:  'normal',
-          area:    enemy.area,
+          area:    enemy['area'],
           drop:    drops.join(', '),
           isEnemy: true
         };
@@ -84,12 +84,12 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(skillData)) {
         skills[name] = {
           name,
-          element:   json.element,
-          cost:      json.cost ? json.cost : 0,
-          rank:      json.rank ? json.rank : 99,
-          effect:    json.effect,
+          element:   json['element'],
+          cost:      json['cost'] || 0,
+          rank:      json['rank'] || 99,
+          effect:    json['effect'],
           learnedBy: [],
-          fuse:      json.card ? json.card.split(', ') : [],
+          fuse:      json['card'] || '',
           level:     0
         };
       }

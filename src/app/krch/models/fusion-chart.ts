@@ -2,7 +2,7 @@ import { Races } from '../constants';
 import { FissionTable, FusionTable, ElementTable, FissionRow, FusionRow } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
+import FUSION_CHART_JSON from '../data/fusion-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   races: string[];

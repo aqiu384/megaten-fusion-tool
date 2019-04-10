@@ -1,6 +1,6 @@
 import { NamePair, FusionPair, Compendium } from '../../compendium/models';
 import { Races } from '../constants';
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
+import FUSION_CHART_JSON from '../data/fusion-chart.json';
 
 const COLOR_ABBRS = {
   'B': 0,

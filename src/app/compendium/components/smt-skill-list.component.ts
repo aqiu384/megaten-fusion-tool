@@ -30,11 +30,7 @@ import { Skill } from '../models';
         </li>
       </ul>
     </td>
-    <td *ngIf="hasFuse">
-      <ul class="comma-list">
-        <li *ngFor="let demon of data.fuse">{{ demon }} </li>
-      </ul>
-    </td>
+    <td *ngIf="hasFuse">{{ data.fuse }}</td>
     <td *ngIf="hasTalk">{{ data.talk }}</td>
     <td *ngIf="hasTransferTitle">
       <ul class="comma-list">

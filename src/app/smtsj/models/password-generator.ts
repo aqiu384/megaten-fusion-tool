@@ -1,5 +1,5 @@
 import { DecodedDemon } from '../models';
-import * as PASSWORD_PBOX from '../data/password-pbox.json';
+import PASSWORD_PBOX from '../data/password-pbox.json';
 
 function base2(n: number, b: number): string {
   const suffix = n.toString(2);

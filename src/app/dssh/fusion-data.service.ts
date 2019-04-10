@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 
 import { RaceOrder, FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './constants';
 import { Compendium } from './models/compendium';

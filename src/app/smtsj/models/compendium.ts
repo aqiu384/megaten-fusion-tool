@@ -1,17 +1,17 @@
-import { Races, ResistanceElements, SkillElements, BaseStats, Ailments, SkillElementOrder, ResistCodes } from './constants';
+import { Races, SkillElementOrder, ResistCodes } from './constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as BOSS_DATA_JSON from '../data/boss-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
-import * as FUSION_REQUIREMENTS_JSON from '../data/fusion-requirements.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import BOSS_DATA_JSON from '../data/boss-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import FUSION_REQUIREMENTS_JSON from '../data/fusion-requirements.json';
 
-import * as REDUX_DEMON_DATA_JSON from '../data/redux-demon-data.json';
-import * as REDUX_SKILL_DATA_JSON from '../data/redux-skill-data.json';
-import * as REDUX_SPECIAL_RECIPES_JSON from '../data/redux-special-recipes.json';
-import * as REDUX_FUSION_REQUIREMENTS_JSON from '../data/redux-fusion-requirements.json';
+import REDUX_DEMON_DATA_JSON from '../data/redux-demon-data.json';
+import REDUX_SKILL_DATA_JSON from '../data/redux-skill-data.json';
+import REDUX_SPECIAL_RECIPES_JSON from '../data/redux-special-recipes.json';
+import REDUX_FUSION_REQUIREMENTS_JSON from '../data/redux-fusion-requirements.json';
 
 export class Compendium implements ICompendium {
   private static CONVERTED_RACE = [ 'Fiend', 'UMA', 'Enigma' ];
@@ -50,10 +50,10 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
-    const demonDataJsons = [DEMON_DATA_JSON];
-    const skillDataJsons = [SKILL_DATA_JSON];
-    const specialRecipesJsons = [SPECIAL_RECIPES_JSON];
-    const fusionReqsJsons = [FUSION_REQUIREMENTS_JSON];
+    const demonDataJsons: any = [DEMON_DATA_JSON];
+    const skillDataJsons: any = [SKILL_DATA_JSON];
+    const specialRecipesJsons: any = [SPECIAL_RECIPES_JSON];
+    const fusionReqsJsons: any = [FUSION_REQUIREMENTS_JSON];
 
     const knownDemonCodes: { [code: number]: string } = {};
 
@@ -66,17 +66,25 @@ export class Compendium implements ICompendium {
 
     for (const demonDataJson of demonDataJsons) {
       for (const [name, json] of Object.entries(demonDataJson)) {
-        demons[name] = Object.assign({ name, fusion: 'normal', hpmod: 1 }, json, {
-          price: Compendium.estimateBasePrice(json.stats, json.pcoeff),
-          stats: json.stats,
-          resists: json.resists.split('').map(char => ResistCodes[char]),
-          inherits: json.inherits.split('').map(char => char === 'o'),
-          ailments: (json.ailments ? json.ailments : '---------').split('').map(char => ResistCodes[char]),
-          skills: json.skills.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
-          source: json.source.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
-        });
+        demons[name] = {
+          name,
+          lvl:      json['lvl'],
+          hpmod:    json['hpmod'] || 1,
+          pcoeff:   json['pcoeff'],
+          race:     json['race'],
+          code:     json['code'],
+          align:    json['align'],
+          fusion:   'normal',
+          stats:    json['stats'],
+          price:    Compendium.estimateBasePrice(json['stats'], json['pcoeff']),
+          resists:  json['resists'].split('').map(char => ResistCodes[char]),
+          ailments: (json['ailments'] || '---------').split('').map(char => ResistCodes[char]),
+          inherits: json['inherits'].split('').map(char => char === 'o'),
+          skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
+          source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
+        };
 
-        knownDemonCodes[json.code] = name;
+        knownDemonCodes[json['code']] = name;
       }
     }
 
@@ -125,21 +133,26 @@ export class Compendium implements ICompendium {
 
     for (const skillDataJson of skillDataJsons) {
       for (const [name, json] of Object.entries(skillDataJson)) {
-        skills[name] = Object.assign({
+        skills[name] = {
           name,
-          power: 0,
-          accuracy: 0,
-          cost: 0,
-          inherit: json.element,
-          rank: 99,
+          code:     json['code'],
+          element:  json['element'],
+          effect:   json['effect'],
+          power:    json['power'] || 0,
+          accuracy: json['accuracy'] || 0,
+          cost:     json['cost'] || 0,
+          inherit:  json['inherit'] || json['element'],
+          rank:     json['rank'] || 99,
           learnedBy: [],
-          transfer: []
-        }, json);
+          transfer: [],
+          level: 0
+        }
       }
     }
 
     for (const specialRecipesJson of specialRecipesJsons) {
-      for (const [name, json] of Object.entries(specialRecipesJson)) {
+      for (const [name, tempJson] of Object.entries(specialRecipesJson)) {
+        const json = specialRecipesJson[name]
         specialRecipes[name] = json;
 
         if (json === 'Normal') {
@@ -174,7 +187,7 @@ export class Compendium implements ICompendium {
 
     for (const fusionReqsJson of fusionReqsJsons) {
       for (const [name, json] of Object.entries(fusionReqsJson)) {
-        fusionRequirements[name] = json;
+        fusionRequirements[name] = fusionReqsJson[name];
       }
     }
 

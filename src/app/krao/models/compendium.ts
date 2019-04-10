@@ -2,9 +2,9 @@ import { Races, BaseStats, ElementDemons, ElementOrder } from '../constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES from '../data/special-recipes.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import SPECIAL_RECIPES from '../data/special-recipes.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };

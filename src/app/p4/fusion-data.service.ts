@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './constants';
 import { Compendium } from './models/compendium';
@@ -10,17 +10,17 @@ import { FusionTrioService as IFusionTrioService, SquareChart } from '../compend
 import { Races, RaceOrder, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
 import { P3_TRIPLE_FISSION_CALCULATOR, P3_TRIPLE_FUSION_CALCULATOR } from '../compendium/constants';
 
-import * as DEMON_DATA_JSON from './data/demon-data.json';
-import * as GOLDEN_DEMON_DATA_JSON from './data/golden-demon-data.json';
+import DEMON_DATA_JSON from './data/demon-data.json';
+import GOLDEN_DEMON_DATA_JSON from './data/golden-demon-data.json';
 
-import * as ENEMY_DATA_JSON from './data/enemy-data.json';
-import * as GOLDEN_ENEMY_DATA_JSON from './data/golden-enemy-data.json';
+import ENEMY_DATA_JSON from './data/enemy-data.json';
+import GOLDEN_ENEMY_DATA_JSON from './data/golden-enemy-data.json';
 
-import * as SKILL_DATA_JSON from './data/skill-data.json';
-import * as GOLDEN_SKILL_DATA_JSON from './data/golden-skill-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import GOLDEN_SKILL_DATA_JSON from './data/golden-skill-data.json';
 
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
-import * as GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
+import GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -45,9 +45,9 @@ export class FusionDataService implements IFusionTrioService {
 
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
-    const demonData = [DEMON_DATA_JSON];
-    const enemyData = game !== 'p4g' ? [ENEMY_DATA_JSON] : [GOLDEN_ENEMY_DATA_JSON];
-    const skillData = [SKILL_DATA_JSON];
+    const demonData: any = [DEMON_DATA_JSON];
+    const enemyData: any = game !== 'p4g' ? [ENEMY_DATA_JSON] : [GOLDEN_ENEMY_DATA_JSON];
+    const skillData: any = [SKILL_DATA_JSON];
     let fusionChart = FUSION_CHART_JSON;
     let races = Races.slice(0, Races.length - 3);
 

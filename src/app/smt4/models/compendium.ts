@@ -1,22 +1,18 @@
 import {
   Races,
-  ResistanceElements,
-  ShortElements,
   InverseShortElements,
-  BaseStats,
   ElementOrder,
-  Ailments,
   ResistCodes
 } from '../models/constants';
 
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
-import * as EVOLUTION_DATA_JSON from '../data/evolutions.json';
-import * as DLC_DEMONS from '../data/dlc-demons.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import EVOLUTION_DATA_JSON from '../data/evolutions.json';
+import DLC_DEMONS from '../data/dlc-demons.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -54,11 +50,18 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = Object.assign({
+      skills[name] = {
         name,
-        cost: 0,
+        element: json['element'],
+        rank:    json['rank'],
+        effect:  json['effect'],
+        damage:  json['damage'] || '',
+        target:  json['target'] || '',
+        hits:    json['hits'] || '',
+        cost:    json['cost'] || 0,
         learnedBy: [],
-      }, json);
+        level: 0
+      };
 
       skills[name].element = InverseShortElements[skills[name].element];
 

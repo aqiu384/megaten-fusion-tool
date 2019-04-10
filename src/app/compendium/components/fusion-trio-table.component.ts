@@ -14,7 +14,7 @@ import { SortedTableComponent, SortedTableHeaderComponent } from '../../shared/s
 
 import { FusionTrio, NameTrio } from '../models';
 
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'tbody.app-fusion-trio-table-row',

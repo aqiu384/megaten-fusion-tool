@@ -9,15 +9,15 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../
 import { PersonaCompendiumModule } from '../pq2/persona-compendium.module';
 import { CompendiumConfig } from '../pq2/models';
 
-import * as COMP_CONFIG_JSON from './data/comp-config.json';
-import * as DEMON_DATA_JSON from './data/demon-data.json';
-import * as SKILL_DATA_JSON from './data/skill-data.json';
-import * as DLC_DATA_JSON from './data/dlc-data.json';
-import * as ENEMY_DATA_JSON from './data/enemy-data.json';
-import * as FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
-import * as SPECIAL_RECIPES_JSON from './data/special-recipes.json';
-import * as DEMON_CODES_JSON from './data/demon-codes.json';
-import * as SKILL_CODES_JSON from './data/skill-codes.json';
+import COMP_CONFIG_JSON from './data/comp-config.json';
+import DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import DLC_DATA_JSON from './data/dlc-data.json';
+import ENEMY_DATA_JSON from './data/enemy-data.json';
+import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import DEMON_CODES_JSON from './data/demon-codes.json';
+import SKILL_CODES_JSON from './data/skill-codes.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -80,10 +80,6 @@ export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
   settingsVersion: 1709211400
 };
 
-export const fusionDataFactory = () => {
-  return new FusionDataService(PQ_COMPENDIUM_CONFIG);
-};
-
 @NgModule({
   imports: [
     CommonModule,
@@ -92,10 +88,10 @@ export const fusionDataFactory = () => {
   ],
   providers: [
     Title,
-    { provide: FusionDataService, useFactory: fusionDataFactory },
+    FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
     [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: PQ_COMPENDIUM_CONFIG }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: PQ_COMPENDIUM_CONFIG }],
   ]
 })
 export class CompendiumModule { }

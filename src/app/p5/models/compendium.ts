@@ -1,14 +1,14 @@
-import { Races, ResistanceElements, BaseStats, ElementOrder, ResistCodes } from './constants';
+import { Races, ElementOrder, ResistCodes } from './constants';
 import { Demon, Enemy, Skill } from '../models';
 import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as ENEMY_DATA_JSON from '../data/enemy-data.json';
-import * as SUBBOSS_DATA_JSON from '../data/subboss-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
-import * as DLC_DEMONS from '../data/dlc-demons.json';
-import * as INHERITANCE_TYPES from '../data/inheritance-types.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import ENEMY_DATA_JSON from '../data/enemy-data.json';
+import SUBBOSS_DATA_JSON from '../data/subboss-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import DLC_DEMONS from '../data/dlc-demons.json';
+import INHERITANCE_TYPES from '../data/inheritance-types.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -41,13 +41,17 @@ export class Compendium implements ICompendium {
     this._inheritTypes = {};
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
-      demons[name] = Object.assign({}, json, {
+      demons[name] = {
         name,
+        item:    json.item,
+        race:    json.race,
+        lvl:     json.lvl,
+        skills:  json.skills,
         price:   Math.pow(json.stats.reduce((acc, stat) => stat + acc, 0), 2) + 2000,
         stats:   json.stats,
         resists: json.resists.split('').map(char => ResistCodes[char]),
         fusion: 'normal'
-      });
+      };
 
       demons[name].inherit = json.inherits;
       delete demons[name].inherits;
@@ -55,7 +59,7 @@ export class Compendium implements ICompendium {
 
     for (const jsonfile of [ENEMY_DATA_JSON, SUBBOSS_DATA_JSON]) {
       for (const [name, enemy] of Object.entries(jsonfile)) {
-        const drops = enemy.drops || [];
+        const drops = enemy['drops'] || [];
 
         if (enemy.card && enemy.card != '-') {
           drops.push(enemy.card);
@@ -75,23 +79,26 @@ export class Compendium implements ICompendium {
           estats:  enemy.stats.slice(2),
           resists: enemy.resists.split('').map(char => ResistCodes[char]),
           fusion:  'normal',
-          skills:  enemy.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+          skills:  (enemy.skills || []).reduce((acc, s) => { acc[s] = 0; return acc }, {}),
           area:    enemy.area.join(', '),
           drop:    drops.join(', '),
           isEnemy: true
-        }
+        };
       }
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = Object.assign(json, {
+      skills[name] = {
         name,
-        rank: json.cost / 100 || 0,
-        cost: json.cost || 0,
+        element: json.element,
+        effect:  json.effect,
+        rank:    json.cost / 100 || 0,
+        cost:    json.cost || 0,
+        talk:    json.talk || '',
+        fuse:    json.fuse || '',
         learnedBy: [],
-        talk: json.talk ? json.talk.split(', ') : [],
-        fuse: json.fuse ? json.fuse.split(', ') : []
-      });
+        level: 0
+      };
 
       if (json.unique) {
         skills[name].rank = 99;

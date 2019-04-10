@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Injectable, Inject } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
@@ -9,6 +9,7 @@ import { CompendiumConfig } from './models';
 import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
 import {
+  COMPENDIUM_CONFIG,
   SMT_NORMAL_FUSION_CALCULATOR,
   SMT_NES_NORMAL_FUSION_CALCULATOR,
   SMT_NORMAL_FISSION_CALCULATOR
@@ -16,7 +17,6 @@ import {
 
 import { splitWithDiffRace as splitTripleDR, splitWithElementPair } from '../compendium/fusions/per-triple-fissions';
 import { fuseT1WithDiffRace, fuseN1WithDiffRace } from '../compendium/fusions/per-triple-fusions';
-import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -32,7 +32,7 @@ export class FusionDataService implements IFusionTrioService {
   fusionChart: Observable<FusionChart>
   squareChart: Observable<SquareChart>;
 
-  constructor(compConfig: CompendiumConfig) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle;
 

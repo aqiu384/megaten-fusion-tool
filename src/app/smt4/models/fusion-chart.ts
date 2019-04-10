@@ -1,8 +1,8 @@
-import { Races, ElementDemons } from './constants';
+import { ElementDemons } from './constants';
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
+import ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   lvlModifier = 1;

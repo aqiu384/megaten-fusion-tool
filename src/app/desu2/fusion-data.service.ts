@@ -1,20 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
-import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './constants';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 import { DesuCompendium as Compendium } from '../desu/models/compendium';
 
-import * as VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
-import * as VAN_SPECIAL_RECIPES_JSON from './data/van-special-recipes.json';
-import * as VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
-import * as REC_DEMON_DATA_JSON from './data/rec-demon-data.json';
-import * as REC_SPECIAL_RECIPES_JSON from './data/rec-special-recipes.json';
-import * as REC_SKILL_DATA_JSON from './data/rec-skill-data.json';
+import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
+import VAN_SPECIAL_RECIPES_JSON from './data/van-special-recipes.json';
+import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
+import REC_DEMON_DATA_JSON from './data/rec-demon-data.json';
+import REC_SPECIAL_RECIPES_JSON from './data/rec-special-recipes.json';
+import REC_SKILL_DATA_JSON from './data/rec-skill-data.json';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
@@ -32,9 +31,9 @@ export class FusionDataService implements IFusionDataService {
 
   constructor(private router: Router) {
     const game = router.url.split('/')[1];
-    const demonDataJsons = [VAN_DEMON_DATA_JSON];
-    const skillDataJsons = [VAN_SKILL_DATA_JSON];
-    const specRecipesJsons = [VAN_SPECIAL_RECIPES_JSON];
+    const demonDataJsons: any[] = [VAN_DEMON_DATA_JSON];
+    const skillDataJsons: any[] = [VAN_SKILL_DATA_JSON];
+    const specRecipesJsons: any[] = [VAN_SPECIAL_RECIPES_JSON];
 
     if (game === 'ds2br') {
       this.appName = 'Devil Survivor 2 Record Breaker';

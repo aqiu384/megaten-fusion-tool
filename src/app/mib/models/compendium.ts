@@ -3,11 +3,11 @@ import { Demon as BaseDemon } from '../../compendium/models';
 import { Demon, Enemy, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as ENEMY_DATA_JSON from '../data/enemy-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
-import * as GROWTH_TYPES from '../data/growth-types.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import ENEMY_DATA_JSON from '../data/enemy-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import GROWTH_TYPES from '../data/growth-types.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -118,7 +118,7 @@ export class Compendium implements ICompendium {
         drop:      json.drops,
         contacts:  eagers.concat(happys),
         skills:    json.skills.reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
-        transfers: json.transfers.reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
+        transfers: (json.transfers || []).reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
         isEnemy:   true
       };
     }
@@ -142,7 +142,7 @@ export class Compendium implements ICompendium {
         name,
         element: json.element,
         power:   json.power || 0,
-        range:   json.range,
+        range:   json['range'],
         cost:    0,
         rank:    json.power / 10 || 0,
         effect:  json.effect,

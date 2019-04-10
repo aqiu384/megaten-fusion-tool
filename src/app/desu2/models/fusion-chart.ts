@@ -2,8 +2,8 @@ import { ElementDemons, Races } from '../../desu/constants';
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as ELEMENT_CHART_JSON from '../../desu1/data/element-chart.json';
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
+import ELEMENT_CHART_JSON from '../../desu1/data/element-chart.json';
+import FUSION_CHART_JSON from '../data/fusion-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   protected fissionChart: FissionTable;

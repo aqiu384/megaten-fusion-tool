@@ -2,9 +2,9 @@ import { Races, ElementOrder, ResistCodes } from '../models/constants';
 import { Demon, Skill, SpecialRecipe } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -49,12 +49,18 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = Object.assign({
+      skills[name] = {
         name,
-        cost: 0,
+        rank:    json.rank,
+        element: json.element,
+        effect:  json.effect,
+        cost:    json.cost || 0,
+        damage:  json.damage || '',
+        target:  json.target || '',
+        requires: json.requires || '',
         learnedBy: [],
-        requires: ''
-      }, json);
+        level: 0
+      };
 
       skills[name].inherit = skills[name].requires || 'None';
 
@@ -88,14 +94,14 @@ export class Compendium implements ICompendium {
         demons[recipe.entry].evolvesTo = {
           price: demon.price,
           race1: demon.race,
-          lvl1:  recipe.lvl,
+          lvl1:  parseInt(recipe.lvl),
           name1: demon.name
         };
 
         demons[demon.name].evolvesFrom = {
           price: demons[recipe.entry].price,
           race1: demons[recipe.entry].race,
-          lvl1:  recipe.lvl,
+          lvl1:  parseInt(recipe.lvl),
           name1: recipe.entry
         };
 

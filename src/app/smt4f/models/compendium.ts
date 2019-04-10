@@ -3,10 +3,10 @@ import { Ailments } from '../models/constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as DEMON_DATA_JSON from '../data/demon-data.json';
-import * as SKILL_DATA_JSON from '../data/skill-data.json';
-import * as EVOLUTION_DATA_JSON from '../data/evolutions.json';
-import * as SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import DEMON_DATA_JSON from '../data/demon-data.json';
+import SKILL_DATA_JSON from '../data/skill-data.json';
+import EVOLUTION_DATA_JSON from '../data/evolutions.json';
+import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -48,11 +48,18 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      skills[name] = Object.assign({
+      skills[name] = {
         name,
-        cost: 0,
+        element: json['element'],
+        rank:    json['rank'],
+        effect:  json['effect'],
+        damage:  json['damage'] || '',
+        target:  json['target'] || '',
+        hits:    json['hits'] || '',
+        cost:    json['cost'] || 0,
         learnedBy: [],
-      }, json);
+        level: 0
+      };
 
       if (!skills[name].rank) {
         skills[name].rank = 99;

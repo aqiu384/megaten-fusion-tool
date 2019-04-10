@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 
 import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './models/constants';
 import { Compendium } from './models/compendium';
@@ -7,7 +7,7 @@ import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {

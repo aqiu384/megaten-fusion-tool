@@ -9,13 +9,12 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../
 import { SmtSnesCompendiumModule } from '../smt1/smt-snes-compendium.module';
 import { CompendiumConfig } from '../smt1/models';
 
-import * as DEMON_DATA_JSON from './data/demon-data.json';
-import * as SKILL_DATA_JSON from './data/skill-data.json';
-import * as COMP_CONFIG_JSON from './data/comp-config.json';
-
-import * as FUSION_CHART_JSON from './data/fusion-chart.json';
-import * as DARK_CHART_JSON from './data/dark-chart.json';
-import * as ELEMENT_CHART_JSON from './data/element-chart.json';
+import DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import COMP_CONFIG_JSON from './data/comp-config.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
+import DARK_CHART_JSON from './data/dark-chart.json';
+import ELEMENT_CHART_JSON from './data/element-chart.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -100,10 +99,6 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   tripleMitamaTable: ELEMENT_CHART_JSON['triples']
 };
 
-export const fusionDataFactory = () => {
-  return new FusionDataService(SMT_COMP_CONFIG);
-};
-
 @NgModule({
   imports: [
     CommonModule,
@@ -112,7 +107,7 @@ export const fusionDataFactory = () => {
   ],
   providers: [
     Title,
-    { provide: FusionDataService, useFactory: fusionDataFactory },
+    FusionDataService,
     { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
     { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService },
     { provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }

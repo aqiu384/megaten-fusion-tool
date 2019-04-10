@@ -2,7 +2,7 @@ import { ElementOrder, Races, ResistCodes } from '../constants';
 import { Demon, Skill, RacialSkill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
-import * as RACIAL_SKILLS_JSON from '../data/racial-skills.json';
+import RACIAL_SKILLS_JSON from '../data/racial-skills.json';
 
 export class DesuCompendium implements ICompendium {
   static readonly MITAMA_FUSIONS: { [mitama: string]: NamePair[] } = {
@@ -43,34 +43,39 @@ export class DesuCompendium implements ICompendium {
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
 
     for (const [race, json] of Object.entries(RACIAL_SKILLS_JSON)) {
-      racials[race] = json;
+      racials[race] = {
+        skill:    json.skill,
+        effect:   json.effect,
+        enskill:  json.enskill || '',
+        eneffect: json.eneffect || ''
+      }
     }
 
     for (const demonData of demonDataJsons) {
       for (const [name, json] of Object.entries(demonData)) {
         demons[name] = {
           name,
-          race:    json.race,
-          lvl:     json.lvl,
-          stats:   json.stats,
-          price:   DesuCompendium.estimateBasePrice(json.stats),
-          resists: json.resists.split('').map(char => ResistCodes[char]),
+          race:    json['race'],
+          lvl:     json['lvl'],
+          stats:   json['stats'],
+          price:   DesuCompendium.estimateBasePrice(json['stats']),
+          resists: json['resists'].split('').map(char => ResistCodes[char]),
           skills:  {},
-          command: json.command || {},
-          passive: json.passive || {},
+          command: json['command'] || {},
+          passive: json['passive'] || {},
           fusion:  'normal',
-          unique:  json.unique === true,
-          raceup:  json.raceup ? json.raceup : 0
+          unique:  json['unique'] === true,
+          raceup:  json['raceup'] || 0
         };
 
-        const racialSkill = racials[json.race] || racials[name];
+        const racialSkill = racials[json['race']] || racials[name];
 
         if (racialSkill) {
           demons[name].racial = racialSkill;
         }
 
-        if (json.raceup) {
-          demons[name].raceup = json.raceup;
+        if (json['raceup']) {
+          demons[name].raceup = json['raceup'];
         }
       }
     }
@@ -79,11 +84,11 @@ export class DesuCompendium implements ICompendium {
       for (const [name, json] of Object.entries(skillData)) {
         skills[name] = {
           name,
-          element:   json.element,
-          cost:      json.cost ? json.cost : 0,
-          rank:      json.rank ? json.rank : 99,
-          effect:    json.effect,
-          requires:  json.prereq || '',
+          element:   json['element'],
+          cost:      json['cost'] || 0,
+          rank:      json['rank'] || 99,
+          effect:    json['effect'],
+          requires:  json['prereq'] || '',
           learnedBy: [],
           level:     0
         };
@@ -96,7 +101,7 @@ export class DesuCompendium implements ICompendium {
 
     for (const specialRecipes of specialRecipesJsons) {
       for (const [name, json] of Object.entries(specialRecipes)) {
-        specials[name] = json;
+        specials[name] = specialRecipes[name];
         demons[name].fusion = 'special';
       }
     }

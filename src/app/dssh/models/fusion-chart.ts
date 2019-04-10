@@ -2,9 +2,9 @@ import { Races, ElementDemons } from '../constants';
 import { FissionTable, FusionTable, ElementTable, FissionRow, FusionRow } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import * as FUSION_CHART_JSON from '../data/fusion-chart.json';
-import * as DARK_CHART_JSON from '../data/dark-chart.json';
-import * as ELEMENT_CHART_JSON from '../data/element-chart.json';
+import FUSION_CHART_JSON from '../data/fusion-chart.json';
+import DARK_CHART_JSON from '../data/dark-chart.json';
+import ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 export class FusionChart extends SmtFusionChart {
   static readonly LIGHT_RACES = SmtFusionChart.LIGHT_RACES.concat(['Zealot']);

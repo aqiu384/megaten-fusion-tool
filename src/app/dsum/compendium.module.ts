@@ -9,15 +9,14 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../
 import { SmtSnesCompendiumModule } from '../smt1/smt-snes-compendium.module';
 import { CompendiumConfig } from '../smt1/models';
 
-import * as DEMON_DATA_JSON from './data/demon-data.json';
-import * as SKILL_DATA_JSON from './data/skill-data.json';
-import * as COMP_CONFIG_JSON from './data/comp-config.json';
-
-import * as FUSION_CHART_JSON from './data/norm-chart.json';
-import * as DARK_CHART_JSON from './data/dark-chart.json';
-import * as TRIPLE_CHART_JSON from './data/norm-triple-chart.json';
-import * as DARK_TRIPLE_CHART_JSON from './data/dark-triple-chart.json';
-import * as ELEMENT_CHART_JSON from './data/element-chart.json';
+import DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import COMP_CONFIG_JSON from './data/comp-config.json';
+import FUSION_CHART_JSON from './data/norm-chart.json';
+import DARK_CHART_JSON from './data/dark-chart.json';
+import TRIPLE_CHART_JSON from './data/norm-triple-chart.json';
+import DARK_TRIPLE_CHART_JSON from './data/dark-triple-chart.json';
+import ELEMENT_CHART_JSON from './data/element-chart.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};

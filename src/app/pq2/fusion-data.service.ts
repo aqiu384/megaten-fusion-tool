@@ -1,17 +1,16 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Injectable, Inject } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
 
 import { Compendium } from './models/compendium';
 import { PersonaFusionChart } from '../compendium/models/per-fusion-chart';
 import { FusionTrioService as IFusionTrioService } from '../compendium/models';
 import { 
+  COMPENDIUM_CONFIG,
   P3_NORMAL_FISSION_CALCULATOR,
   P3_NORMAL_FUSION_CALCULATOR,
   P3_TRIPLE_FISSION_CALCULATOR,
   P3_TRIPLE_FUSION_CALCULATOR 
 } from '../compendium/constants';
-
 import { CompendiumConfig } from './models';
 
 @Injectable()
@@ -36,7 +35,7 @@ export class FusionDataService implements IFusionTrioService {
   private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
   squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
-  constructor(compConfig: CompendiumConfig) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle;
 
