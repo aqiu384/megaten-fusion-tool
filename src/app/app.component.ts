@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
-import { MEGATEN_FUSION_TOOLS } from './constants';
+import MEGATEN_FUSION_TOOLS from './data-sources.json';
 
 @Component({
   selector: 'app-root',

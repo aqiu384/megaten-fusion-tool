@@ -1,13 +1,10 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistanceElements, ElementOrder, APP_TITLE } from '../constants';
-import { Demon } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
-import { FusionChart } from '../models/fusion-chart';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
@@ -20,24 +17,24 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
-        [statHeaders]="statHeaders"
-        [fusionHeaders]="fusionHeaders"
+        [statHeaders]="compConfig.baseStats"
+        [fusionHeaders]="[ 'Personality' ]"
         [stats]="demon.stats">
         <td>{{ demon.person }}</td>
-        <td *ngIf="demon.confine">Yes</td>
-        <td *ngIf="!demon.confine">No</td>
       </app-demon-stats>
       <app-demon-resists
-        [resistHeaders]="resistHeaders"
+        [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-skills
+        [title]="'Innate Skills'"
         [hasTarget]="true"
-        [elemOrder]="elemOrder"
+        [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-smt-fusions></app-smt-fusions>
+      <app-smt-fusions>
+      </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
       <table>
@@ -55,11 +52,7 @@ export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
-
-  statHeaders = BaseStats;
-  fusionHeaders = [ 'Personality', 'Confinable' ];
-  elemOrder = ElementOrder;
-  resistHeaders = ResistanceElements;
+  @Input() compConfig: CompendiumConfig;
 }
 
 @Component({
@@ -69,12 +62,13 @@ export class DemonEntryComponent {
     <app-demon-entry
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {
-  appName = APP_TITLE;
+  compConfig: CompendiumConfig;
 
   constructor(
     private route: ActivatedRoute,
@@ -83,5 +77,7 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+    this.appName = fusionDataService.appName;
+    this.compConfig = fusionDataService.compConfig;
   }
 }

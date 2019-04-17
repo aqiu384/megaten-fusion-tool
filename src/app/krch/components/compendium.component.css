@@ -1,4 +1,4 @@
-.krch div.element-icon {
+.kuzu div.element-icon {
   height: 12px;
   background-size: 12px;
   background-repeat: no-repeat;
@@ -6,38 +6,38 @@
   color: transparent;
 }
 
-.krch div.element-icon.phys { background-image: url('/assets/images/smtsj/phy.png'); }
-.krch div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
-.krch div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
-.krch div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
-.krch div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
-.krch div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
-.krch div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
-.krch div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
-.krch div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
-.krch div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
-.krch div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
-.krch div.element-icon.passive { background-image: url('/assets/images/smtsj/pas.png'); }
-.krao div.element-icon.investigate { background-image: url('/assets/images/smtsj/spe.png'); }
+.kuzu div.element-icon.phy { background-image: url('/assets/images/smtsj/phy.png'); }
+.kuzu div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.kuzu div.element-icon.fir { background-image: url('/assets/images/smtsj/fir.png'); }
+.kuzu div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.kuzu div.element-icon.ele { background-image: url('/assets/images/smtsj/ele.png'); }
+.kuzu div.element-icon.for { background-image: url('/assets/images/smtsj/win.png'); }
+.kuzu div.element-icon.dea { background-image: url('/assets/images/smtsj/cur.png'); }
+.kuzu div.element-icon.min { background-image: url('/assets/images/smt4f/panic.png'); }
+.kuzu div.element-icon.alm { background-image: url('/assets/images/smtsj/alm.png'); }
+.kuzu div.element-icon.rec { background-image: url('/assets/images/smtsj/rec.png'); }
+.kuzu div.element-icon.sup { background-image: url('/assets/images/smtsj/sup.png'); }
+.kuzu div.element-icon.pas { background-image: url('/assets/images/smtsj/pas.png'); }
+.kuzu div.element-icon.inv { background-image: url('/assets/images/smtsj/spe.png'); }
+.kuzu div.element-icon.bos { background-image: url('/assets/images/smtsj/spe.png'); }
 
-.krch th {
-  color: black;
-  background-color: #856363;
-}
+/* Raidou Kuzunoha vs. The Soulless Army */
+.krch th, .krch th.nav.active, .krch th.nav:hover { color: black; background-color: #856363; }
+.krch th.sortable:hover { background-color: #ca9c9c; }
+.krch th.nav { color: white; background-color: #3b2d2d; }
+.krch th.nav.active a, .smtif th.nav:hover a { color: black; }
+.krch th { color: black; }
 
-.krch th.sortable:hover {
-  background-color: #ca9c9c;
-}
+/* Raidou Kuzunoha vs. King Abaddon */
+.krao th, .krao th.nav.active, .krao th.nav:hover { color: white; background-color: #8e283d; }
+.krao th.sortable:hover { background-color: #e24063; }
+.krao th.nav { color: white; background-color: #521724; }
+.krao th.nav.active a, .smtif th.nav:hover a { color: white; }
+.krao th { color: white; }
 
-.krch th.nav {
-  color: white;
-  background-color: #3b2d2d;
-}
-
-.krch th.nav.active, .krch th.nav:hover {
-  background-color: #856363;
-}
-
-.krch th.nav.active a, .krch th.nav:hover a {
-  color: black;
-}
+/* Majin Tensei */
+.mjn1 th, .mjn1 th.nav.active, .mjn1 th.nav:hover { color: white; background-color: #004381; }
+.mjn1 th.sortable:hover { background-color: #0069cc; }
+.mjn1 th.nav { color: white; background-color: #002446; }
+.mjn1 th.nav.active a, .smtif th.nav:hover a { color: white; }
+.mjn1 th { color: white; }

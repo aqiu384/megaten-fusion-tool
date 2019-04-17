@@ -1,31 +1,35 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { FusionChart } from '../models/fusion-chart';
+import { FusionChart } from '../../compendium/models';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
   selector: 'app-fusion-chart-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-fusion-chart [normChart]="normChart">
+    <app-fusion-chart
+      [normChart]="normChart"
+      [mitaTable]="mitamaTable">
     </app-fusion-chart>
   `
 })
 export class FusionChartContainerComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   normChart: FusionChart;
+  appName: string;
+  mitamaTable: string[][];
 
-  constructor(
-    private changeDetectorRef: ChangeDetectorRef,
-    private fusionDataService: FusionDataService
-  ) { }
+  constructor(private fusionDataService: FusionDataService) { }
 
   ngOnInit() {
+    const compConfig = this.fusionDataService.compConfig;
+    this.appName = compConfig.appTitle;
+    this.mitamaTable = compConfig.mitamaTable;
+
     this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(fusionChart => {
-        this.changeDetectorRef.markForCheck();
-        this.normChart = fusionChart;
+      this.fusionDataService.fusionChart.subscribe(chart => {
+        this.normChart = chart;
       }));
   }
 

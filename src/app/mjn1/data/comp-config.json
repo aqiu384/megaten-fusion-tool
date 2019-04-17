@@ -1,4 +1,17 @@
 {
+  "baseAtks": [
+    "Move"
+  ],
+  "baseStats": [
+    "HP",
+    "MP",
+    "St",
+    "Ma",
+    "Vi",
+    "En",
+    "Ag",
+    "Lu"
+  ],
   "raceRes": {
     "Avatar": "?--?--?1s?-2?1-?--?2217",
     "Avian": "111212s-s-2-111121s11-7",
@@ -24,27 +37,24 @@
     "1": 10,
     "2": 25,
     "7": 75,
-    "?": -999,
+    "?": 100,
     "s": 50
   },
-  "species": {
-    "Avatar": "BEASTS",
-    "Avian": "AERIALS",
-    "Beast": "BEASTS",
-    "Deity": "DEITIES",
-    "Divine": "AERIALS",
-    "Dragon": "DRAGONS",
-    "Drake": "DRAGONS",
-    "Fairy": "NETHERS",
-    "Fallen": "AERIALS",
-    "Genma": "NETHERS",
-    "Jaki": "BRUTES",
-    "Kishin": "BRUTES",
-    "Megami": "DEITIES",
-    "Snake": "DRAGONS",
-    "Touki": "BRUTES",
-    "Tyrant": "NETHERS",
-    "Vile": "DEITIES",
-    "Wilder": "BEASTS"
-  }
+  "skillElems": [
+    "phys",
+    "fire",
+    "ice",
+    "elec",
+    "force",
+    "recovery",
+    "support"
+  ],
+  "species": [
+    ["DEITIES", "Deity", "Megami", "Vile"],
+    ["NETHERS", "Genma", "Fairy", "Tyrant"],
+    ["AERIALS", "Divine", "Fallen", "Avian" ],
+    ["DRAGONS", "Dragon", "Snake", "Drake"],
+    ["BEASTS", "Avatar", "Beast", "Wilder"],
+    ["BRUTES", "Kishin", "Touki", "Jaki"]
+  ]
 }

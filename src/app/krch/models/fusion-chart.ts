@@ -1,34 +1,40 @@
-import { Races } from '../constants';
-import { FissionTable, FusionTable, ElementTable, FissionRow, FusionRow } from '../../compendium/models';
+import { FissionTable, FusionTable, ElementTable, FusionRow } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
-
-import FUSION_CHART_JSON from '../data/fusion-chart.json';
+import { CompendiumConfig } from '../models';
 
 export class FusionChart extends SmtFusionChart {
   races: string[];
-  elementDemons = [];
-  lvlModifier = 2.5;
+  elementDemons: string[];
+  lvlModifier: number;
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
 
-  constructor() {
+  constructor(compConfig: CompendiumConfig) {
     super();
-    this.initCharts();
+    this.initCharts(compConfig);
   }
 
-  initCharts() {
-    const races: string[] = FUSION_CHART_JSON['races'];
-    const table: string[][] = FUSION_CHART_JSON['table'];
+  initCharts(compConfig: CompendiumConfig) {
+    const races = compConfig.normalTable.races;
+    const table = compConfig.normalTable.table;
+    const elems = compConfig.elementTable.elems;
+    const elemRaces = compConfig.elementTable.races;
+    const elemTable = compConfig.elementTable.table;
 
     this.races = races;
+    this.elementDemons = elems;
+    this.lvlModifier = compConfig.fusionLvlMod;
+
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, [], table);
     this.elementChart = {};
 
-    for (const race of Races) {
-      this.elementChart[race] = {};
+    if (elems.length) {
+      this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+    } else {
+      this.elementChart = races.reduce((acc, r) => { acc[r] = []; return acc; }, {})
     }
   }
 

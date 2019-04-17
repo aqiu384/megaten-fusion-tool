@@ -45,6 +45,22 @@
 .smtnes div.element-icon.defend { background-image: url('/assets/images/smtsj/spe.png'); }
 .smtnes div.element-icon.phys { background-image: url('/assets/images/smtsj/phy.png'); }
 
+/* Majin Tensei Series */
+.smtnes div.element-icon.gro { background-image: url('/assets/images/smt4f/sword.png'); }
+.smtnes div.element-icon.air { background-image: url('/assets/images/smt4f/gun.png'); }
+.smtnes div.element-icon.fir { background-image: url('/assets/images/smtsj/fir.png'); }
+.smtnes div.element-icon.ele { background-image: url('/assets/images/smtsj/ele.png'); }
+.smtnes div.element-icon.for { background-image: url('/assets/images/smtsj/win.png'); }
+.smtnes div.element-icon.gig { background-image: url('/assets/images/smt4f/bind.png'); }
+.smtnes div.element-icon.alm { background-image: url('/assets/images/smtsj/alm.png'); }
+.smtnes div.element-icon.lig { background-image: url('/assets/images/smtsj/exp.png'); }
+.smtnes div.element-icon.dar { background-image: url('/assets/images/smtsj/cur.png'); }
+
+.smtnes div.element-icon.phy { background-image: url('/assets/images/smtsj/phy.png'); }
+.smtnes div.element-icon.ail { background-image: url('/assets/images/smtsj/ail.png'); }
+.smtnes div.element-icon.rec { background-image: url('/assets/images/smtsj/rec.png'); }
+.smtnes div.element-icon.sup { background-image: url('/assets/images/smtsj/sup.png'); }
+
 /* Devil Summoner Series */
 .devilsum div.element-icon.attack { background-image: url('/assets/images/smtsj/phy.png'); }
 .devilsum div.element-icon.rush { background-image: url('/assets/images/smtsj/phy.png'); }
@@ -114,6 +130,13 @@
 .dsum th.nav.active a, .dsum th.nav:hover a { color: white; }
 .dsum th { color: white; }
 
+/* Majin Tensei II: Spiral Nemesis */
+.mjn2 th, .mjn2 th.nav.active, .mjn2 th.nav:hover { background-color: #514f7e; }
+.mjn2 th.sortable:hover { background-color: #9a96e6; }
+.mjn2 th.nav { background-color: #1c1b42; }
+.mjn2 th.nav.active a, .mjn2 th.nav:hover a { color: white; }
+.mjn2 th { color: white; }
+
 /* Shin Megami Tensei NINE */
 .smt9 th, .smt9 th.nav.active, .smt9 th.nav:hover { background-color: #693cbe; }
 .smt9 th.sortable:hover { background-color: #8e51ff; }
@@ -121,7 +144,7 @@
 .smt9 th.nav.active a, .smt9 th.nav:hover a { color: white; }
 .smt9 th { color: white; }
 
-/* Shin Megami Tensei NINE */
+/* Shin Megami Tensei IMAGINE */
 .smtim th, .smtim th.nav.active, .smtim th.nav:hover { background-color: #009d96; }
 .smtim th.sortable:hover { background-color: #00e7dc; }
 .smtim th.nav { background-color: #00504d; }

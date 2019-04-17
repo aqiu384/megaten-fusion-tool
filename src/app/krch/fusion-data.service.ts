@@ -1,23 +1,32 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, Inject } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
-import { FISSION_CALCULATOR, FUSION_CALCULATOR, FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './constants';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
-import { FusionDataService as IFusionDataService } from '../compendium/models';
+import { COMPENDIUM_CONFIG } from '../compendium/constants';
+import { FusionDataService as IFusionDataService, FusionCalculator } from '../compendium/models';
+
+import { CompendiumConfig } from './models'
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
-  fissionCalculator = FISSION_CALCULATOR;
-  fusionCalculator = FUSION_CALCULATOR;
+  fissionCalculator: FusionCalculator;;
+  fusionCalculator: FusionCalculator;
+  compConfig: CompendiumConfig;
+  appName: string;
 
-  private _compendium = new Compendium();
-  private _compendium$ = new BehaviorSubject(this._compendium);
-  compendium = this._compendium$.asObservable();
+  compendium: Observable<Compendium>;
+  fusionChart: Observable<FusionChart>
 
-  private _fusionChart = new FusionChart();
-  private _fusionChart$ = new BehaviorSubject(this._fusionChart);
-  fusionChart = this._fusionChart$.asObservable();
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
+    this.fissionCalculator = compConfig.fissionCalculator;
+    this.fusionCalculator = compConfig.fusionCalculator;
+    this.compConfig = compConfig;
+    this.appName = compConfig.appTitle;
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+    this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
+    this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
+  }
+
+  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { return {}; }
 }

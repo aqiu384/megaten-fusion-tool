@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { MEGATEN_FUSION_TOOLS } from './constants';
+import MEGATEN_FUSION_TOOLS from './data-sources.json';
 
 @Component({
   template: `

@@ -127,6 +127,16 @@ const appRoutes: Routes = [
     data: { appName: 'Persona Q2: New Cinema Labyrinth' }
   },
   {
+    path: 'mjn1',
+    loadChildren: './mjn1/compendium.module#CompendiumModule',
+    data: { appName: 'Majin Tensei' }
+  },
+  {
+    path: 'mjn2',
+    loadChildren: './mjn2/compendium.module#CompendiumModule',
+    data: { appName: 'Majin Tensei 2: Spiral Nemesis' }
+  },
+  {
     path: 'ds1',
     loadChildren: './desu1/compendium.module#CompendiumModule',
     data: { appName: 'Devil Survivor' }
