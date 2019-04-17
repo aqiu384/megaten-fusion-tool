@@ -43,6 +43,8 @@ Fusion tool framework for Megami Tensei games.
 * [Persona Q: Shadow of the Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq)
 * [Persona 5](https://aqiu384.github.io/megaten-fusion-tool/p5)
 * [Persona Q2: New Cinema Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq2)
+* [Majin Tensei](https://aqiu384.github.io/megaten-fusion-tool/mjn1)
+* [Majin Tensei II: Spiral Nemesis](https://aqiu384.github.io/megaten-fusion-tool/mjn2)
 * [Devil Survivor](https://aqiu384.github.io/megaten-fusion-tool/ds1)
 * [Devil Survivor Overclocked](https://aqiu384.github.io/megaten-fusion-tool/dso)
 * [Devil Survivor 2](https://aqiu384.github.io/megaten-fusion-tool/ds2)

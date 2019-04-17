@@ -25,19 +25,16 @@
 .krch th, .krch th.nav.active, .krch th.nav:hover { color: black; background-color: #856363; }
 .krch th.sortable:hover { background-color: #ca9c9c; }
 .krch th.nav { color: white; background-color: #3b2d2d; }
-.krch th.nav.active a, .smtif th.nav:hover a { color: black; }
-.krch th { color: black; }
+.krch th, .krch th.nav.active a, .krch th.nav:hover a { color: black; }
 
 /* Raidou Kuzunoha vs. King Abaddon */
 .krao th, .krao th.nav.active, .krao th.nav:hover { color: white; background-color: #8e283d; }
 .krao th.sortable:hover { background-color: #e24063; }
 .krao th.nav { color: white; background-color: #521724; }
-.krao th.nav.active a, .smtif th.nav:hover a { color: white; }
-.krao th { color: white; }
+.krao th, .krao th.nav.active a, .krao th.nav:hover a { color: white; }
 
 /* Majin Tensei */
 .mjn1 th, .mjn1 th.nav.active, .mjn1 th.nav:hover { color: white; background-color: #004381; }
 .mjn1 th.sortable:hover { background-color: #0069cc; }
 .mjn1 th.nav { color: white; background-color: #002446; }
-.mjn1 th.nav.active a, .smtif th.nav:hover a { color: white; }
-.mjn1 th { color: white; }
+.mjn1 th, .mjn1 th.nav.active a, .mjn1 th.nav:hover a { color: white; }
