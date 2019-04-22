@@ -4,6 +4,7 @@ export interface Demon extends BaseDemon {
   atks: string[];
   inherit: string;
   drop: string;
+  align: string;
 }
 
 export interface Skill extends BaseSkill {

@@ -102,6 +102,10 @@
 .devilsum div.element-icon.self { background-image: url('/assets/images/smtsj/spe.png'); }
 .devilsum div.element-icon.universe { background-image: url('/assets/images/smtsj/spe.png'); }
 
+/* Alignments */
+.smtnes td.align.ll, .smtnes td.align.nl, .smtnes td.align.dl { color: cyan; }
+.smtnes td.align.lc, .smtnes td.align.nc, .smtnes td.align.dc { color: tomato; }
+
 /* Shin Megami Tensei */
 .smt1 th, .smt1 th.nav.active, .smt1 th.nav:hover { background-color: #608341; }
 .smt1 th.sortable:hover { background-color: #b9ff7b; }

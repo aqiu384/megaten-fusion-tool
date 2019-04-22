@@ -48,6 +48,7 @@ export class Compendium implements ICompendium {
         stats:   json['stats'].slice(0, statLen),
         atks:    json['atks'] || [],
         resists: json['resists'].substring(0, resLen).split('').map(char => compConfig.resistCodes[char]),
+        align:   compConfig.alignData.races[json['race']],
         skills
       };
     }

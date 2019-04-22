@@ -81,7 +81,7 @@ export class Compendium implements ICompendium {
         effect:    json['effect'],
         target:    json['target'] || 'Self',
         learnedBy: [],
-        fuse:      (json['card'] || '').split(', '),
+        fuse:      json['card'] || '',
         code:      json['code'] || 0,
         level:     0
       };

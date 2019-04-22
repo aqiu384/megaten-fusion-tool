@@ -6,10 +6,12 @@
       "Ariadne's Chain": 0,
       "Punishment": 0,
       "Debilitate": 0,
-      "Power Charge": 16
+      "Power Charge": 16,
+      "Absorb Fire": 17,
+      "Absorb Elec": 18
     },
     "stats": [28, 14],
-    "type": "sup"
+    "inherit": "sup"
   },
   "Ariadne Picaro": {
     "lvl": 30,
@@ -18,10 +20,12 @@
       "Ariadne's Chain": 0,
       "Black Spot": 0,
       "Heat Riser": 0,
-      "Mind Charge": 31
+      "Mind Charge": 31,
+      "Absorb Ice": 32,
+      "Absorb Wind": 33
     },
     "stats": [40, 20],
-    "type": "mag"
+    "inherit": "mag"
   },
   "Asterius": {
     "lvl": 80,
@@ -30,10 +34,12 @@
       "Brutal Swing": 0,
       "God's Hand": 0,
       "Regenerate 3": 0,
-      "Immunity Buffer": 81
+      "Immunity Buffer": 81,
+      "Endure": 82,
+      "Full Power Charge": 83
     },
     "stats": [195, 32],
-    "type": "phy"
+    "inherit": "phy"
   },
   "Asterius Picaro": {
     "lvl": 82,
@@ -42,10 +48,12 @@
       "Brutal Swing": 0,
       "Primal Force": 0,
       "Myriad Arrows": 0,
-      "Shura Instincts": 83
+      "Shura Instincts": 83,
+      "Strength Amp III": 84,
+      "Full Power Charge": 85
     },
     "stats": [200, 28],
-    "type": "phy"
+    "inherit": "phy"
   },
   "Izanagi Picaro": {
     "lvl": 23,
@@ -54,10 +62,12 @@
       "Cross Slash": 0,
       "Mazio": 0,
       "Regenerate 2": 0,
-      "Elec Amp": 24
+      "Elec Amp": 24,
+      "High Counter": 25,
+      "Dragon Cry": 26
     },
     "stats": [60, 20],
-    "type": "mag"
+    "inherit": "mag"
   },
   "Kaguya": {
     "lvl": 16,
@@ -66,10 +76,12 @@
       "Lunar Blessing": 0,
       "Media": 0,
       "Me Patra": 0,
-      "Healing Hand": 17
+      "Healing Hand": 17,
+      "Invigorate 1": 18,
+      "Mediarama": 19
     },
     "stats": [28, 12],
-    "type": "sup"
+    "inherit": "sup"
   },
   "Kaguya Picaro": {
     "lvl": 25,
@@ -78,10 +90,12 @@
       "Lunar Blessing": 0,
       "Makouha": 0,
       "Invigorate 2": 0,
-      "Samarecarm": 26
+      "Samarecarm": 26,
+      "Heroic Wind": 27,
+      "Bless Amp": 28
     },
     "stats": [50, 20],
-    "type": "mag"
+    "inherit": "mag"
   },
   "Magatsu-Izanagi": {
     "lvl": 25,
@@ -90,10 +104,12 @@
       "Calamity Seed": 0,
       "Eiga": 0,
       "Curse Amp": 0,
-      "Maeiga": 26
+      "Maeiga": 26,
+      "Mamudo": 27,
+      "Curse Stream": 28
     },
     "stats": [44, 18],
-    "type": "mag"
+    "inherit": "mag"
   },
   "Magatsu-Izanagi Picaro": {
     "lvl": 40,
@@ -102,10 +118,12 @@
       "Calamity Seed": 0,
       "Vorpal Blade": 0,
       "Shura Tensei": 0,
-      "Shura Revert": 41
+      "Shura Revert": 41,
+      "Power Charge": 42,
+      "One-shot Kill": 42
     },
     "stats": [99, 24],
-    "type": "phy"
+    "inherit": "phy"
   },
   "Messiah Picaro": {
     "lvl": 60,
@@ -114,10 +132,12 @@
       "Oratorio": 0,
       "Phys Link": 0,
       "Infinite Link": 0,
-      "Golden Link": 61
+      "Golden Link": 61,
+      "Trick Step II": 62,
+      "Victory Cry": 63
     },
     "stats": [120, 28],
-    "type": "phy"
+    "inherit": "phy"
   },
   "Orpheus Picaro": {
     "lvl": 35,
@@ -126,22 +146,40 @@
       "Healing Harp": 0,
       "Maragion": 0,
       "Invigorate 2": 0,
-      "Fire Amp": 36
+      "Fire Amp": 36,
+      "Agidyne": 37,
+      "Mind's Eye": 38
     },
     "stats": [60, 25],
-    "type": "mag"
+    "inherit": "mag"
   },
-  "Thanatos Picaro": {
+  "Thanatos": {
     "lvl": 36,
     "race": "Death",
     "skills": {
       "Door of Hades": 0,
       "Megido": 0,
       "Life Wall": 0,
-      "Trick Step": 37
+      "Trick Step": 37,
+      "Endurance Amp II": 38,
+      "Endurance Amp III": 39
     },
     "stats": [72, 26],
-    "type": "mag"
+    "inherit": "mag"
+  },
+  "Thanatos Picaro": {
+    "lvl": 48,
+    "race": "Death",
+    "skills": {
+      "Door of Hades": 0,
+      "Megidola": 0,
+      "Death Counter": 0,
+      "Runic Shield": 49,
+      "Broadshot": 50,
+      "Megidolaon": 51
+    },
+    "stats": [100, 35],
+    "inherit": "mag"
   },
   "Tsukiyomi": {
     "lvl": 72,
@@ -150,10 +188,12 @@
       "Abyssal Wings": 0,
       "Psycho Force": 0,
       "Psycho Blast": 0,
-      "Invigorate 3": 73
+      "Invigorate 3": 73,
+      "Absorb Psy": 74,
+      "Full Mind Charge": 75
     },
     "stats": [125, 48],
-    "type": "mag"
+    "inherit": "mag"
   },
   "Tsukiyomi Picaro": {
     "lvl": 76,
@@ -162,9 +202,11 @@
       "Abyssal Wings": 0,
       "Atomic Flare": 0,
       "Cosmic Flare": 0,
-      "Mind Charge": 77
+      "Mind Charge": 77,
+      "Absorb Nuke": 78,
+      "Full Mind Charge": 79
     },
     "stats": [136, 45],
-    "type": "mag"
+    "inherit": "mag"
   }
 }

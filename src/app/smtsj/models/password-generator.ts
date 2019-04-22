@@ -18,11 +18,11 @@ export function encodeDemon(demon: DecodedDemon): number[] {
     base2(demon.skillCodes[1], 9), // 2nd Skill
     base2(demon.skillCodes[0], 9), // 1st Skill
     base2(demon.exp, 32),          // EXP
-    base2(demon.stats[1], 7),      // Max Ma
-    base2(demon.stats[4], 7),      // Max Lu
-    base2(demon.stats[3], 7),      // Max Ag
-    base2(demon.stats[2], 7),      // Max Vi
-    base2(demon.stats[0], 7),      // Max St
+    99,                            // Max Ma
+    99,                            // Max Lu
+    99,                            // Max Ag
+    99,                            // Max Vi
+    99,                            // Max St
     base2(demon.stats[1], 7),      // Ma
     base2(demon.stats[4], 7),      // Lu
     base2(demon.stats[3], 7),      // Ag
