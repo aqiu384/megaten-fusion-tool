@@ -15,6 +15,7 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import DARK_CHART_JSON from './data/dark-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
+import { DemonEntryComponent } from '../p3/components/demon-entry.component';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -31,6 +32,7 @@ const races = [];
 const raceAligns = {};
 const species = {};
 const speciesLookup = {};
+const specialRecipes = {};
 
 for (const rs of COMP_CONFIG_JSON['species']) {
   const spec = rs[0];
@@ -47,6 +49,10 @@ for (const rs of COMP_CONFIG_JSON['species']) {
 
 for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
   demon['resists'] = demon['resists'].slice(0, 9).concat(demon['resists'].slice(11));
+
+  if (demon.race === 'Fiend') {
+    specialRecipes[name] = { fusion: 'phase', prereq: 'Phase shift only' };
+  }
 }
 
 const normalElemChart = {
@@ -86,6 +92,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
   useSpeciesFusion: false,
+  specialRecipes,
 
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,

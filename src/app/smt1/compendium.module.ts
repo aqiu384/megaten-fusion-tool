@@ -16,6 +16,7 @@ import ALIGNMENT_JSON from './data/alignments.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import TRIPLE_CHART_JSON from './data/triple-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -25,6 +26,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
+const RECRUIT_RACES = [ 'Messian', 'Gaean' ];
 const resistElems = COMP_CONFIG_JSON['resistElems'];
 const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
 const races = [].concat.apply([], COMP_CONFIG_JSON['species']);
@@ -41,6 +43,12 @@ for (const rs of COMP_CONFIG_JSON['species']) {
 
 for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
   demon['resists'] = demon['resists'].slice(0, 7).concat(demon['resists'].slice(8));
+
+  if (RECRUIT_RACES.indexOf(demon.race) !== -1) {
+    SPECIAL_RECIPES_JSON[name] = { fusion: 'recruit', prereq: 'Recruitment only' };
+  } else if (demon.race === 'Machine') {
+    SPECIAL_RECIPES_JSON[name] = { fusion: 'enemy', prereq: 'Enemy only' };
+  }
 }
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
@@ -66,6 +74,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   tripleTable: TRIPLE_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
   mitamaTable: ELEMENT_CHART_JSON['pairs'],
+  specialRecipes: SPECIAL_RECIPES_JSON,
   darknessRecipes: FUSION_CHART_JSON['darks']
 };
 

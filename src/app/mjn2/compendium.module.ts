@@ -14,6 +14,7 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import TRIPLE_CHART_JSON from './data/triple-chart.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -23,6 +24,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
+const ENEMY_RACES = [ 'Soshin', 'Herald', 'Machine', 'Human' ];
 const resistElems = COMP_CONFIG_JSON.resistElems.map(r => r.slice(0, 3));
 const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems.map(r => r.slice(0, 3)));
 const races = [];
@@ -47,6 +49,12 @@ for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
   entry['resists'] = COMP_CONFIG_JSON.raceRes[entry.race];
   entry.atks = entry.atks.slice(0, 2);
   entry.skills = entry.skills || [];
+
+  if (entry.race === 'Vile' && !SPECIAL_RECIPES_JSON[demon]) {
+    SPECIAL_RECIPES_JSON[demon] = { fusion: 'normal', prereq: 'Defeat to unlock fusion' };
+  } else if (ENEMY_RACES.indexOf(entry.race) !== -1) {
+    SPECIAL_RECIPES_JSON[demon] = { fusion: 'enemy', prereq: 'Enemy only' };
+  }
 }
 
 const ELEMENTS = ['Salamander', 'Undine', 'Sylph', 'Gnome'];
@@ -60,6 +68,16 @@ for (const row of FUSION_CHART_JSON.table) {
 
   if (eind > -1) {
     erow[eind] = 1;
+  }
+}
+
+for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
+  if (recipe.fusion === 'accident') {
+    recipe.prereq = 'Fusion accident only';
+  } else if (recipe.fusion === 'recruit') {
+    recipe.prereq = 'Recruitment only';
+  } else if (recipe.prereq === 'defeat') {
+    recipe.prereq = 'Defeat to unlock fusion';
   }
 }
 
@@ -77,6 +95,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   resistCodes: COMP_CONFIG_JSON.resistCodes,
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
+  specialRecipes: SPECIAL_RECIPES_JSON,
   useSpeciesFusion: true,
 
   demonData: DEMON_DATA_JSON,

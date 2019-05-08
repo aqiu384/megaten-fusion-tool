@@ -17,6 +17,7 @@ import DARK_CHART_JSON from './data/dark-chart.json';
 import TRIPLE_CHART_JSON from './data/norm-triple-chart.json';
 import DARK_TRIPLE_CHART_JSON from './data/dark-triple-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -33,14 +34,16 @@ const races = [];
 const raceAligns = {};
 const species = {};
 const speciesLookup = {};
+const DEITIES = [];
+const BEASTS = [];
 
 const normalTable = {
-  races: FUSION_CHART_JSON['races'].concat(['Hero']),
+  races: FUSION_CHART_JSON['races'].concat(['Mitama']),
   table: FUSION_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
 }
 
 const tripleTable = {
-  races: TRIPLE_CHART_JSON['races'].concat(['Hero']),
+  races: TRIPLE_CHART_JSON['races'].concat(['Mitama']),
   table: TRIPLE_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
 }
 
@@ -71,6 +74,22 @@ for (const rs of COMP_CONFIG_JSON['species']) {
 
 for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
   demon['resists'] = demon['resists'].slice(4, 8).concat(demon['resists'].slice(9));
+
+  if (demon.race === 'Deity' ) {
+    DEITIES.push(name);
+  } else if (demon.race === 'Beast') {
+    BEASTS.push(name);
+  }
+
+  if (demon.race === 'Enigma' || demon.race === 'UMA') {
+    const mphase = demon.race === 'Enigma' ? 'new' : 'full';
+
+    SPECIAL_RECIPES_JSON[name] = {
+      fusion: 'accident',
+      prereq: `Trigger fusion accident using one of the following ingredients during ${mphase} moon`,
+      special: demon.race === 'Enigma' ? DEITIES : BEASTS
+    };
+  }
 }
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
@@ -92,6 +111,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,
   alignData: { races: raceAligns },
+  specialRecipes: SPECIAL_RECIPES_JSON,
 
   normalTable,
   darkTable: DARK_CHART_JSON,

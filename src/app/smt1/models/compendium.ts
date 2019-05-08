@@ -5,6 +5,7 @@ export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] };
+  private pairRecipes: { [name: string]: NamePair[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
   private invertedSpecials: { [name: string]: { result: string, recipe: string }[] };
   private elementDemons: string[];
@@ -26,6 +27,7 @@ export class Compendium implements ICompendium {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
+    const pairRecipes: { [name: string]: NamePair[] } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
     const statLen = compConfig.baseStats.length;
@@ -77,8 +79,22 @@ export class Compendium implements ICompendium {
 
     if (compConfig.specialRecipes) {
       for (const [name, recipe] of Object.entries(compConfig.specialRecipes)) {
-        specialRecipes[name] = <string[]>recipe;
-        demons[name].fusion = 'special';
+        demons[name].fusion = recipe['fusion'] || 'special';
+
+        if (recipe['prereq']) {
+          demons[name].prereq = recipe['prereq'];
+        }
+
+        if (recipe['special']) {
+          specialRecipes[name] = <string[]>recipe['special'];
+        }
+
+        if (recipe['pairs']) {
+          pairRecipes[name] = recipe['pairs'].map((pair: string) => {
+            const [name1, name2] = pair.split(' x ');
+            return { name1, name2 };
+          });
+        }
       }
     }
 
@@ -86,6 +102,7 @@ export class Compendium implements ICompendium {
     this.skills = skills;
     this.elementDemons = compConfig.elementTable.elems;
     this.specialRecipes = specialRecipes;
+    this.pairRecipes = pairRecipes;
     this.invertedSpecials = invSpecs;
   }
 
@@ -196,7 +213,7 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
-    return [];
+    return this.pairRecipes[name] || [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

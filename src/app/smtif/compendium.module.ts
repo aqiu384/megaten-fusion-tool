@@ -16,6 +16,7 @@ import ALIGNMENT_JSON from '../smt2/data/alignments.json';
 import FUSION_CHART_JSON from '../smt2/data/fusion-chart.json';
 import TRIPLE_CHART_JSON from '../smt2/data/triple-chart.json';
 import ELEMENT_CHART_JSON from '../smt2/data/element-chart.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -53,6 +54,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   resistCodes: COMP_CONFIG_JSON['resistCodes'],
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
+  specialRecipes: SPECIAL_RECIPES_JSON,
   useSpeciesFusion: true,
 
   demonData: DEMON_DATA_JSON,
