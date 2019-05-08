@@ -50,6 +50,10 @@ for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
   demon['resists'] = demon['resists'].slice(2);
 }
 
+for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
+  SPECIAL_RECIPES_JSON[name] = { special: recipe };
+}
+
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei IMAGINE',
   appCssClasses: ['smtnes', 'smtim'],
@@ -74,10 +78,6 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   tripleTable: TRIPLE_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
   mitamaTable: ELEMENT_CHART_JSON['pairs']
-};
-
-export const fusionDataFactory = () => {
-  return new FusionDataService(SMT_COMP_CONFIG);
 };
 
 @NgModule({

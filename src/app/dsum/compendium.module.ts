@@ -75,20 +75,33 @@ for (const rs of COMP_CONFIG_JSON['species']) {
 for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
   demon['resists'] = demon['resists'].slice(4, 8).concat(demon['resists'].slice(9));
 
-  if (demon.race === 'Deity' ) {
-    DEITIES.push(name);
-  } else if (demon.race === 'Beast') {
-    BEASTS.push(name);
-  }
-
-  if (demon.race === 'Enigma' || demon.race === 'UMA') {
-    const mphase = demon.race === 'Enigma' ? 'new' : 'full';
-
-    SPECIAL_RECIPES_JSON[name] = {
-      fusion: 'accident',
-      prereq: `Trigger fusion accident using one of the following ingredients during ${mphase} moon`,
-      special: demon.race === 'Enigma' ? DEITIES : BEASTS
-    };
+  switch (demon.race) {
+    case 'Deity':
+    case 'Megami':
+      DEITIES.push(name);
+      break;
+    case 'Avatar':
+    case 'Holy':
+    case 'Beast':
+    case 'Wilder':
+      BEASTS.push(name);
+      break;
+    case 'Enigma':
+      SPECIAL_RECIPES_JSON[name] = {
+        fusion: 'accident',
+        prereq: 'Trigger fusion accident using one of the following ingredients during new moon',
+        special: DEITIES
+      }
+      break;
+    case 'UMA':
+      SPECIAL_RECIPES_JSON[name] = {
+        fusion: 'accident',
+        prereq: 'Trigger fusion accident using one of the following ingredients during full moon',
+        special: BEASTS
+      };
+      break;
+    default:
+      break;
   }
 }
 
@@ -124,10 +137,6 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   tripleMitamaTable: ELEMENT_CHART_JSON['triples']
 };
 
-export const fusionDataFactory = () => {
-  return new FusionDataService(SMT_COMP_CONFIG);
-};
-
 @NgModule({
   imports: [
     CommonModule,
@@ -136,7 +145,7 @@ export const fusionDataFactory = () => {
   ],
   providers: [
     Title,
-    { provide: FusionDataService, useFactory: fusionDataFactory },
+    FusionDataService,
     { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
     { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService },
     { provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }

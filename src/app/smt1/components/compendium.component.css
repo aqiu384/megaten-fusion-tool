@@ -102,6 +102,33 @@
 .devilsum div.element-icon.self { background-image: url('/assets/images/smtsj/spe.png'); }
 .devilsum div.element-icon.universe { background-image: url('/assets/images/smtsj/spe.png'); }
 
+/* Soul Hackers */
+.dssh div.element-icon.strike { background-image: url('/assets/images/smtsj/phy.png'); }
+.dssh div.element-icon.slash { background-image: url('/assets/images/smt4f/sword.png'); }
+.dssh div.element-icon.skill { background-image: url('/assets/images/smt4f/gun.png'); }
+.dssh div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.dssh div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.dssh div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.dssh div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.dssh div.element-icon.force { background-image: url('/assets/images/smtsj/win.png'); }
+.dssh div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.dssh div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.dssh div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
+.dssh div.element-icon.nerve { background-image: url('/assets/images/smt4f/bind.png'); }
+.dssh div.element-icon.curse { background-image: url('/assets/images/smt4f/poison.png'); }
+.dssh div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.dssh div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.dssh div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.dssh div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
+.dssh div.element-icon.temp { background-image: url('/assets/images/smt4f/smirk.png'); }
+.dssh div.element-icon.dark { background-image: url('/assets/images/smt4f/curse.png'); }
+.dssh div.element-icon.witch { background-image: url('/assets/images/smtsj/ail.png'); }
+.dssh div.element-icon.rea { background-image: url('/assets/images/smtsj/rec.png'); }
+.dssh div.element-icon.reb { background-image: url('/assets/images/smtsj/sup.png'); }
+.dssh div.element-icon.element { background-image: url('/assets/images/smtsj/spe.png'); }
+.dssh div.element-icon.hero { background-image: url('/assets/images/smtsj/spe.png'); }
+.dssh div.element-icon.none { background-image: url('/assets/images/smtsj/spe.png'); }
+
 /* Alignments */
 .smtnes td.align.ll, .smtnes td.align.nl, .smtnes td.align.dl { color: cyan; }
 .smtnes td.align.lc, .smtnes td.align.nc, .smtnes td.align.dc { color: tomato; }
@@ -133,6 +160,13 @@
 .dsum th.nav { background-color: #28405e; }
 .dsum th.nav.active a, .dsum th.nav:hover a { color: white; }
 .dsum th { color: white; }
+
+/* Devil Summoner: Soul Hackers */
+.dssh th, .dssh th.nav.active, .dssh th.nav:hover { background-color: #302878; }
+.dssh th.sortable:hover { background-color: #5044ce; }
+.dssh th.nav { background-color: #131033; }
+.dssh th.nav.active a, .dssh th.nav:hover a { color: white; }
+.dssh th { color: white; }
 
 /* Majin Tensei II: Spiral Nemesis */
 .mjn2 th, .mjn2 th.nav.active, .mjn2 th.nav:hover { background-color: #514f7e; }

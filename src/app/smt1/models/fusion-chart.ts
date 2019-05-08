@@ -37,6 +37,10 @@ export class FusionChart extends SmtFusionChart {
     const normFusions = SmtFusionChart.loadFusionTableJson(races, table);
     const normFissions = SmtFusionChart.loadFissionTableJson(races, [], table);
 
+    if (compConfig.appTitle.indexOf('Summoner') !== -1) {
+      this.lvlModifier = isTripleChart ? 3.25 : 2.5;
+    }
+
     if (compConfig.darkTable) {
       this.hasDarkTable = true;
 

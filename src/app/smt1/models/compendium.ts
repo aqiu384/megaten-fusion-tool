@@ -63,7 +63,7 @@ export class Compendium implements ICompendium {
         element: json['element'],
         power:   json['power'] || 0,
         cost:    json['cost'] || 0,
-        rank:    json['enemy'] ? 99 : 0,
+        rank:    (json['enemy'] ? 99 : 0) + (json['cost'] / 1000 || 0),
         effect:  (json['power'] ? json['power'].toString() + powerUnit : ' ') + (json['effect'] || ''),
         target:  json['target'],
         level:   0,

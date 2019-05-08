@@ -1,167 +1,179 @@
 {
   "Ara Mitama": {
-    "pair": [
-      "Gnome x Salamander",
-      "Sylph x Salamander",
-      "Undine x Salamander"
+    "pairs": [
+      "Salamander x Gnome",
+      "Undine x Gnome",
+      "Sylph x Gnome",
+      "Sylph N x Gnome"
     ]
   },
+  "Nigi Mitama": {
+    "pairs": [
+      "Salamander x Undine",
+      "Salamander x Sylph",
+      "Salamander x Sylph N",
+      "Undine x Sylph",
+      "Undine x Sylph N"
+    ]
+  },
+  "Kusi Mitama": {
+    "pairs": [
+      "Sylph x Gnome",
+      "Sylph N x Gnome"
+    ],
+    "special": [
+      "Salamander",
+      "Undine"
+    ]
+  },
+  "Saki Mitama": {
+    "pairs": [
+      "Salamander x Undine"
+    ],
+    "special": [
+      "Sylph",
+      "Sylph N",
+      "Gnome"
+    ]
+  },
+  "Huang Di": {
+    "prereq": "Fuse with Lvl 80 Zoma",
+    "special": [
+      "Xi Wangmu"
+    ]
+  },
+  "Rama": {
+    "prereq": "Fuse with Lvl 70 Zoma",
+    "special": [
+      "Vishnu"
+    ]
+  },
+  "Saladin": {
+    "prereq": "Fuse with Lvl 60 Zoma",
+    "special": [
+      "Alilat"
+    ]
+  },
+  "Siegfried": {
+    "prereq": "Fuse with Lvl 50 Zoma",
+    "special": [
+      "Lugh"
+    ]
+  },
+  "Jeanne D'Arc": {
+    "prereq": "Fuse with Lvl 40 Zoma",
+    "special": [
+      "Black Maria"
+    ]
+  },
+  "Masakado": {
+    "prereq": "Fuse with Lvl 80 Zoma during new moon",
+    "special": [
+      "Hachiman"
+    ]
+  },
+  "Longinus": {
+    "prereq": "Fuse with Lvl 70 Zoma during new moon",
+    "special": [
+      "Metatron"
+    ]
+  },
+  "Yoshitsune": {
+    "prereq": "Fuse with Lvl 60 Zoma during new moon",
+    "special": [
+      "Hachiman"
+    ]
+  },
+  "Hagen": {
+    "prereq": "Fuse with Lvl 50 Zoma during new moon",
+    "special": [
+      "Fafnir"
+    ]
+  },
+  "Lanling Wang": {
+    "prereq": "Fuse with Lvl 40 Zoma during new moon",
+    "special": [
+      "Seiryu"
+    ]
+  },
+  "Frost Five": {
+    "prereq": "Special fusion event requires all other Rangers"
+  },
   "Baal": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Anat",
       "Mot"
     ]
   },
   "Cybele": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Pallas Athena",
       "Diana"
     ]
   },
-  "Frost Five": {
-    "cond": "Special fusion event only"
-  },
-  "Hagen": {
-    "cond": "50",
-    "spec": [
-      "Fafnir"
-    ]
-  },
-  "Huang Di": {
-    "cond": "80",
-    "spec": [
-      "Xi Wangmu"
-    ]
-  },
-  "Jeanne D'Arc": {
-    "cond": "40",
-    "spec": [
-      "Black Maria"
-    ]
-  },
   "Kali": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Kangiten",
       "Kartikeya"
     ]
   },
-  "Kusi Mitama": {
-    "pair": [
-      "Gnome x Sylph N",
-      "Gnome x Undine",
-      "Gnome x Salamander",
-      "Sylph N x Undine"
-    ],
-    "spec": [
-      "Sylph"
-    ]
-  },
-  "Lanling Wang": {
-    "cond": "40",
-    "spec": [
-      "Seiryu"
-    ]
-  },
   "Loki": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Sleipnir",
       "Fenrir"
     ]
   },
-  "Longinus": {
-    "cond": "70",
-    "spec": [
-      "Metatron"
-    ]
-  },
-  "Masakado": {
-    "cond": "80",
-    "spec": [
-      "Hachiman"
-    ]
-  },
   "Mitra": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Sraosha",
       "Haoma"
     ]
   },
   "Mot": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Baal",
       "Anat"
     ]
   },
-  "Nigi Mitama": {
-    "pair": [
-      "Gnome x Sylph",
-      "Gnome x Undine",
-      "Sylph x Sylph N",
-      "Sylph x Undine"
-    ]
-  },
   "Norn": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Odin",
       "Loki"
     ]
   },
   "Persephone": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Diana",
       "Volvo"
     ]
   },
-  "Rama": {
-    "cond": "70",
-    "spec": [
-      "Vishnu"
-    ]
-  },
-  "Saki Mitama": {
-    "pair": [
-      "Gnome x Undine",
-      "Sylph x Undine",
-      "Sylph x Sylph N"
-    ],
-    "spec": [
-      "Salamander"
-    ]
-  },
-  "Saladin": {
-    "cond": "60",
-    "spec": [
-      "Alilat"
-    ]
-  },
   "Saturnus": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Nyx",
       "Volvo"
     ]
   },
   "Shiva": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Barong",
       "Rangda"
     ]
   },
-  "Siegfried": {
-    "cond": "50",
-    "spec": [
-      "Lugh"
-    ]
-  },
   "Surt": {
-    "spec": [
+    "fusion": "normal",
+    "special": [
       "Loki",
       "Muspell"
-    ]
-  },
-  "Yoshitsune": {
-    "cond": "60",
-    "spec": [
-      "Hachiman"
     ]
   }
 }
