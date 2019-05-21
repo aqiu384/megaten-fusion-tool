@@ -29,7 +29,7 @@
     "effect": "Absorb Wind damage",
     "elem": "pas"
   },
-  "Abyssal Wings": {
+  "Infernal Wings": {
     "effect": "High chance of attack skills executing twice",
     "elem": "pas",
     "unique": true
@@ -94,7 +94,7 @@
     "target": "Rand Foes",
     "unique": true
   },
-  "Ariadne's Chain": {
+  "Ariadne Chain": {
     "cost": 1016,
     "effect": "Medium chance of Strength, Magic, and Agility Binds",
     "elem": "ail",
@@ -189,7 +189,7 @@
     "effect": "Greatly increase Bless damage",
     "elem": "pas"
   },
-  "Body Shield": {
+  "Line Guard": {
     "card": "Nata Taishi",
     "cost": 1003,
     "effect": "Raise defense and take attacks in place of same-row allies with reduced damage",
@@ -235,7 +235,7 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Brutal Swing": {
+  "Brutal Arm": {
     "effect": "High chance to add splash effect on single-target attack skills",
     "elem": "pas",
     "unique": true
@@ -287,7 +287,7 @@
   },
   "Circle Recovery": {
     "card": "Alilat",
-    "effect": "Allies recover some HP every turn, magic-type team",
+    "effect": "Allies recover some HP every turn, requires circles",
     "elem": "pas"
   },
   "Clairvoyance": {
@@ -314,8 +314,8 @@
     "target": "All Foes",
     "unique": true
   },
-  "Counter": {
-    "effect": "Low chance of countering damage with basic attack",
+  "Forked Spear": {
+    "effect": "Low chance of basic attack executing twice",
     "elem": "pas"
   },
   "Crazed Slash": {
@@ -839,7 +839,7 @@
     "target": "Rand Foes",
     "unique": true
   },
-  "Healing Hand": {
+  "Healing Finger": {
     "effect": "HP recovery skills +50%",
     "elem": "pas"
   },
@@ -906,9 +906,9 @@
     "elem": "fir",
     "target": "Foe Row"
   },
-  "High Counter": {
+  "Forked Spear II": {
     "card": "Black Frost",
-    "effect": "High chance of countering damage with basic attack",
+    "effect": "High chance of basic attack executing twice",
     "elem": "pas"
   },
   "Holy Touch": {
@@ -975,17 +975,17 @@
   },
   "Invigorate 1": {
     "card": "Bugs",
-    "effect": "Recover MP per turn",
+    "effect": "Recover 3 MP per turn",
     "elem": "pas"
   },
   "Invigorate 2": {
     "card": "Tzitzimitl",
-    "effect": "Moderately recover MP per turn",
+    "effect": "Recover 5 MP per turn",
     "elem": "pas"
   },
   "Invigorate 3": {
     "card": "Seraph",
-    "effect": "Greatly recover MP per turn",
+    "effect": "Recover 7 MP per turn",
     "elem": "pas"
   },
   "Jinpugeki": {
@@ -1048,7 +1048,7 @@
     "effect": "Recover 20% HP after battle",
     "elem": "nav"
   },
-  "Life Wall": {
+  "All Guard": {
     "card": "Ouyamatsumi",
     "cost": 1009,
     "effect": "Raise defense and take attacks in place of all allies with reduced damage",
@@ -1627,7 +1627,7 @@
     "elem": "alm",
     "target": "1 Foe"
   },
-  "Phys Link": {
+  "Strike Link": {
     "cost": 120,
     "effect": "Light damage, links once with ally attack",
     "elem": "phy",
@@ -2262,11 +2262,11 @@
     "effect": "Reveal nearby treasure boxes",
     "elem": "nav"
   },
-  "Trick Step": {
+  "Dodge Arts": {
     "effect": "Increase evasion against all attacks",
     "elem": "pas"
   },
-  "Trick Step II": {
+  "Dodge Arts II": {
     "card": "Lakshmi",
     "effect": "Greatly increase evasion against all attacks",
     "elem": "pas"
