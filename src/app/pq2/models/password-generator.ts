@@ -38,15 +38,19 @@ export function encodeDemon(demon: DecodedDemon, game?: string): number[] {
 }
 
 function encodePqDemon(demon: DecodedDemon): number[] {
-  const nameBytes = demon.language === 'jap' ? PQ1J_NAME_BYTES : PQ1E_NAME_BYTES;
+  const nameBytes = demon.language === 'jpn' ? PQ1J_NAME_BYTES : PQ1E_NAME_BYTES;
   const passBytes = Array(30).fill(0);
+
+  const xl = demon.lvl;
+  const xe = Math.floor((((-0.07600161 * xl + 14.0603287) * xl + -0.02256972) * xl +  0.59031556) * xl + -1.87981906);
+  const exp = demon.exp < 0 ? xe : demon.exp;
 
   passBytes[0] = demon.demonCode;
   passBytes[2] = demon.lvl;
 
-  passBytes[6] = demon.exp % 256;
-  passBytes[7] = Math.floor(demon.exp / 256) % 256;
-  passBytes[8] = Math.floor(demon.exp / 65536);
+  passBytes[6] = exp % 256;
+  passBytes[7] = Math.floor(exp / 256) % 256;
+  passBytes[8] = Math.floor(exp / 65536);
 
   for (let i = 0; i < 6; i++) {
     passBytes[10 + 2*i] = demon.skillCodes[i] % 256;
@@ -62,15 +66,19 @@ function encodePqDemon(demon: DecodedDemon): number[] {
 }
 
 function encodePq2Demon(demon: DecodedDemon): number[] {
-  const nameBytes = demon.language === 'jap' ? PQ2J_NAME_BYTES : PQ2E_NAME_BYTES;
+  const nameBytes = demon.language === 'jpn' ? PQ2J_NAME_BYTES : PQ2E_NAME_BYTES;
   const passBytes = Array(25).fill(0);
+
+  const xl = demon.lvl;
+  const xe = Math.floor((((-0.0479755766 * xl + 9.28700353) * xl + 71.9694228) * xl + -81.1026214) * xl + 0.120783542);
+  const exp = demon.exp < 0 ? xe : demon.exp;
 
   passBytes[0] = demon.demonCode % 256;
   passBytes[1] = demon.lvl * 2 + Math.floor(demon.demonCode / 256);
 
-  passBytes[2] = demon.exp % 256;
-  passBytes[3] = Math.floor(demon.exp / 256) % 256;
-  passBytes[4] = Math.floor(demon.exp / 65536);
+  passBytes[2] = exp % 256;
+  passBytes[3] = Math.floor(exp / 256) % 256;
+  passBytes[4] = Math.floor(exp / 65536);
 
   for (let i = 0; i < 6; i++) {
     passBytes[6 + 2*i] = demon.skillCodes[i] % 256;

@@ -41,6 +41,7 @@ for (const [code, name] of Object.entries(SKILL_CODES_JSON)) {
 
 for (const demon of Object.values(DEMON_DATA_JSON)) {
   demon['inherit'] = demon['inherit'].slice(0, 3);
+  demon.stats = demon.stats.map(s => Math.floor(s / 10));
 }
 
 for (const demon of Object.values(DLC_DATA_JSON)) {

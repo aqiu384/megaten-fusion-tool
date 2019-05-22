@@ -37,7 +37,7 @@ import { encodeDemon } from '../models/password-generator';
         <tr>
           <td>
             <select formControlName="language">
-              <option value="jap">Japanese</option>
+              <option value="jpn">Japanese</option>
               <option value="eng">English</option>
             </select>
           </td>
@@ -168,7 +168,7 @@ export class PasswordGeneratorComponent implements OnChanges {
           language: form.language,
           demonCode: demon.code,
           lvl: parseInt(form.lvl, 10),
-          exp: 13568664,
+          exp: -1,
           hp: parseInt(form.hp, 10),
           mp: parseInt(form.mp, 10),
           skillCodes: dskills.map(s => s.code),

@@ -19,17 +19,17 @@ Fusion tool framework for Megami Tensei games.
 
 ## Supported Megami Tensei Games
 
-* [Shin Megami Tensei (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smt1)
-* [Shin Megami Tensei II (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smt2)
-* [Shin Megami Tensei If... (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smtif)
-* [Shin Megami Tensei NINE (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smt9)
+* [Shin Megami Tensei](https://aqiu384.github.io/megaten-fusion-tool/smt1)
+* [Shin Megami Tensei II](https://aqiu384.github.io/megaten-fusion-tool/smt2)
+* [Shin Megami Tensei If...](https://aqiu384.github.io/megaten-fusion-tool/smtif)
+* [Shin Megami Tensei NINE](https://aqiu384.github.io/megaten-fusion-tool/smt9)
 * [Shin Megami Tensei IMAGINE](https://aqiu384.github.io/megaten-fusion-tool/smtim)
 * [Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3)
 * [Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
 * [Shin Megami Tensei: Strange Journey Redux](https://aqiu384.github.io/megaten-fusion-tool/smtdsj)
 * [Shin Megami Tensei IV](https://aqiu384.github.io/megaten-fusion-tool/smt4)
 * [Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
-* [Shin Megami Tensei: Devil Summoner (WIP)](https://aqiu384.github.io/megaten-fusion-tool/dsum)
+* [Shin Megami Tensei: Devil Summoner](https://aqiu384.github.io/megaten-fusion-tool/dsum)
 * [Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh)
 * [Devil Summoner: Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
 * [Devil Summoner: Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
