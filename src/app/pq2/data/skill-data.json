@@ -29,10 +29,11 @@
     "effect": "Absorb Wind damage",
     "elem": "pas"
   },
-  "Infernal Wings": {
-    "effect": "High chance of attack skills executing twice",
-    "elem": "pas",
-    "unique": true
+  "Achilles Reaper": {
+    "cost": 136,
+    "effect": "Heavy damage, medium chance of Agility Bind",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Aeon Rain": {
     "card": "Siegfried",
@@ -62,16 +63,16 @@
     "elem": "fir",
     "target": "1 Foe"
   },
-  "Agility Amp I": {
+  "Agility Knack": {
     "effect": "Agility +2",
     "elem": "pas"
   },
-  "Agility Amp II": {
-    "effect": "Agility +3",
+  "Agility Genius": {
+    "effect": "Agility +4",
     "elem": "pas"
   },
-  "Agility Amp III": {
-    "effect": "Agility +4",
+  "Agility Talent": {
+    "effect": "Agility +3",
     "elem": "pas"
   },
   "Agneyastra": {
@@ -80,6 +81,30 @@
     "effect": "Heavy damage, power scales with Boost",
     "elem": "phy",
     "target": "All Foes"
+  },
+  "Ailment Arts": {
+    "effect": "Increase success rate for ailments",
+    "elem": "pas"
+  },
+  "Ailment Arts+": {
+    "card": "Belial",
+    "effect": "Greatly increase success rate for ailments",
+    "elem": "pas"
+  },
+  "All Guard": {
+    "card": "Ouyamatsumi",
+    "cost": 1009,
+    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
+    "elem": "sup"
+  },
+  "Ambush Arts": {
+    "effect": "Increase damage against enemies with ailments",
+    "elem": "pas"
+  },
+  "Ambush Arts+": {
+    "card": "Mada",
+    "effect": "Greatly increase damage against enemies with ailments",
+    "elem": "pas"
   },
   "Amrita": {
     "cost": 1045,
@@ -102,8 +127,36 @@
     "unique": true
   },
   "Arm Chopper": {
+    "card": "Valkyrie",
+    "cost": 119,
+    "effect": "Medium damage, medium chance of Strength Bind",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Arm Crusher": {
     "cost": 136,
     "effect": "Heavy damage, medium chance of Strength Bind",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Armor Breaker": {
+    "card": "Gozuki",
+    "cost": 132,
+    "effect": "Medium damage, lowers target's defense for 1 turn",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Armor Destroyer": {
+    "card": "Kartikeya",
+    "cost": 152,
+    "effect": "Heavy damage, lowers target's defense for 1 turn",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Armor Splitter": {
+    "card": "Mokoi",
+    "cost": 116,
+    "effect": "Light damage, lowers target's defense for 1 turn",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -135,24 +188,41 @@
     "target": "1 Foe",
     "unique": true
   },
+  "Bane Slice": {
+    "effect": "Medium damage, medium chance of Hex",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Beast Summon": {
+    "cost": 1058,
+    "effect": "Medium damage, requires circles",
+    "elem": "alm",
+    "target": "All Foes"
+  },
+  "Berserk Frenzy": {
+    "effect": "Light damage, 3-6 hits",
+    "elem": "phy",
+    "target": "Rand Foes"
+  },
   "Bestial Roar": {
     "cost": 1008,
     "effect": "Raise attack and act first for 3 turns",
     "elem": "sup"
   },
-  "Bind Slice": {
-    "effect": "Heavy damage, high chance of Paralysis",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Binding Hands": {
+  "Bind Arts": {
     "effect": "Increase success rate for binds",
     "elem": "pas"
   },
-  "Binding Hands II": {
+  "Bind Arts+": {
     "card": "Vouivre",
     "effect": "Greatly increase success rate for binds",
     "elem": "pas"
+  },
+  "Binding Aura": {
+    "cost": 1018,
+    "effect": "Extend timers on binds and ailments, does not stack",
+    "elem": "sup",
+    "target": "All Foes"
   },
   "Black Spot": {
     "card": "Hanuman",
@@ -163,7 +233,7 @@
   },
   "Black Viper": {
     "cost": 1052,
-    "effect": "Severe damage",
+    "effect": "Extreme damage",
     "elem": "alm",
     "target": "1 Foe",
     "unique": true
@@ -185,33 +255,34 @@
     "effect": "Increase Bless damage",
     "elem": "pas"
   },
-  "Bless Stream": {
+  "Bless Screen": {
+    "cost": 1016,
+    "effect": "Raise Bless resistance for 3 turns",
+    "elem": "sup",
+    "target": "All Allies"
+  },
+  "Bless Turbo": {
     "effect": "Greatly increase Bless damage",
     "elem": "pas"
   },
-  "Line Guard": {
-    "card": "Nata Taishi",
-    "cost": 1003,
-    "effect": "Raise defense and take attacks in place of same-row allies with reduced damage",
-    "elem": "sup"
-  },
-  "Bolt Link": {
-    "cost": 148,
-    "effect": "Light damage, links once with ally attack",
+  "Bolt Dance": {
+    "effect": "Medium damage",
     "elem": "ele",
-    "target": "1 Foe"
-  },
-  "Bolt Strike": {
-    "card": "Ikusa",
-    "cost": 132,
-    "effect": "Light damage",
-    "elem": "psy",
     "target": "Foe Row"
+  },
+  "Bound Arts": {
+    "effect": "Increase crit rate against enemies with binds",
+    "elem": "pas"
+  },
+  "Bound Arts+": {
+    "card": "Atavaka",
+    "effect": "Greatly increase crit rate against enemies with binds",
+    "elem": "pas"
   },
   "Brain Shake": {
     "card": "Ophanim",
     "cost": 132,
-    "effect": "Heavy damage, high chance of Panic",
+    "effect": "Heavy damage, high chance of Confusion",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -229,21 +300,19 @@
     "elem": "phy",
     "target": "Foe Col"
   },
+  "Brutal Arm": {
+    "effect": "High chance to add splash effect on single-target attack skills",
+    "elem": "pas",
+    "unique": true
+  },
   "Brutal Slash": {
     "cost": 142,
     "effect": "Medium damage, hits again if user takes no damage that turn",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Brutal Arm": {
-    "effect": "High chance to add splash effect on single-target attack skills",
-    "elem": "pas",
-    "unique": true
-  },
   "Buchikamashi": {
-    "card": "Ukobach",
-    "cost": 114,
-    "effect": "Light damage, power scales with Boost",
+    "effect": "Light damage",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -275,13 +344,29 @@
     "target": "All Foes",
     "unique": true
   },
+  "Calm Blade": {
+    "card": "Ganesha",
+    "cost": 132,
+    "effect": "Heavy damage, high chance of Hex",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Calming Lull": {
     "card": "Kusi Mitama",
     "effect": "Gather safely from Power Spots",
     "elem": "nav"
   },
+  "Challenger Arts": {
+    "effect": "Increase damage against enemies with more HP",
+    "elem": "pas"
+  },
+  "Challenger Arts+": {
+    "card": "Moloch",
+    "effect": "Greatly increase damage against enemies with more HP",
+    "elem": "pas"
+  },
   "Charge Shot": {
-    "effect": "Severe damage",
+    "effect": "Medium damage",
     "elem": "phy",
     "target": "Foe Col"
   },
@@ -295,17 +380,25 @@
     "effect": "Reveal nearby treasure boxes, FOEs, and shortcuts",
     "elem": "nav"
   },
-  "Cleave": {
-    "card": "Yaksini",
-    "cost": 116,
-    "effect": "Light damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
   "Colossal Swing": {
     "card": "Balor",
     "effect": "Low chance to add splash effect to single-target attack skills",
     "elem": "pas"
+  },
+  "Combo Arts": {
+    "effect": "Low chance of basic attack executing twice",
+    "elem": "pas"
+  },
+  "Combo Arts+": {
+    "card": "Black Frost",
+    "effect": "High chance of basic attack executing twice",
+    "elem": "pas"
+  },
+  "Confusion Circle": {
+    "cost": 1018,
+    "effect": "Medium chance of Confusion each turn for 3 turns",
+    "elem": "ail",
+    "target": "All Foes"
   },
   "Cosmic Flare": {
     "cost": 1064,
@@ -313,15 +406,6 @@
     "elem": "nuk",
     "target": "All Foes",
     "unique": true
-  },
-  "Forked Spear": {
-    "effect": "Low chance of basic attack executing twice",
-    "elem": "pas"
-  },
-  "Crazed Slash": {
-    "effect": "Heavy damage, 5-7 hits",
-    "elem": "phy",
-    "target": "Rand Foes"
   },
   "Critical Eye": {
     "card": "Ippon-Datara",
@@ -346,7 +430,13 @@
     "effect": "Increase Curse damage",
     "elem": "pas"
   },
-  "Curse Stream": {
+  "Curse Screen": {
+    "cost": 1016,
+    "effect": "Raise Curse resistance for 3 turns",
+    "elem": "sup",
+    "target": "All Allies"
+  },
+  "Curse Turbo": {
     "card": "Magatsu-Izanagi",
     "effect": "Greatly increase Curse damage",
     "elem": "pas"
@@ -357,21 +447,6 @@
     "elem": "phy",
     "target": "Rand Foes",
     "unique": true
-  },
-  "Dark Wall": {
-    "cost": 1016,
-    "effect": "Raise Curse resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Dazzle Ray": {
-    "effect": "High chance of insta-death",
-    "elem": "ble",
-    "target": "1 Foe"
-  },
-  "Deadly Bind": {
-    "effect": "Increase damage against enemies with binds",
-    "elem": "pas"
   },
   "Death Chaser": {
     "card": "Turdak",
@@ -385,14 +460,12 @@
     "effect": "Counter-attack whenever user's ally is attacked for 3 turns",
     "elem": "sup"
   },
-  "Death's Scythe": {
-    "effect": "Increase damage against enemies with ailments",
-    "elem": "pas"
-  },
-  "Death's Scythe II": {
-    "card": "Mada",
-    "effect": "Greatly increase damage against enemies with ailments",
-    "elem": "pas"
+  "Death Needle": {
+    "card": "Ananta",
+    "cost": 132,
+    "effect": "Heavy damage, high chance of Poison",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Deathbound": {
     "card": "Chernobog",
@@ -460,6 +533,15 @@
     "elem": "ail",
     "target": "Foe Row"
   },
+  "Dodge Arts": {
+    "effect": "Increase evasion against all attacks",
+    "elem": "pas"
+  },
+  "Dodge Arts+": {
+    "card": "Lakshmi",
+    "effect": "Greatly increase evasion against all attacks",
+    "elem": "pas"
+  },
   "Door of Hades": {
     "cost": 1078,
     "effect": "Heavy damage each turn for 3 turns",
@@ -487,6 +569,11 @@
   },
   "Drain Touch": {
     "effect": "Medium damage, drain damage dealt",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Dream Slice": {
+    "effect": "Medium damage, medium chance of Sleep",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -526,44 +613,51 @@
     "elem": "ele",
     "target": "Foe Row"
   },
-  "Elec Stream": {
-    "effect": "Greatly increase Elec damage",
-    "elem": "pas"
-  },
-  "Elec Wall": {
+  "Elec Screen": {
     "cost": 1016,
     "effect": "Raise Elec resistance for 3 turns",
     "elem": "sup",
     "target": "All Allies"
   },
-  "End Shot": {
-    "effect": "Heavy damage, takes longer to execute",
-    "elem": "phy",
+  "Elec Turbo": {
+    "effect": "Greatly increase Elec damage",
+    "elem": "pas"
+  },
+  "Elecstrike Link": {
+    "cost": 148,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "ele",
     "target": "1 Foe"
   },
-  "Endurance Amp I": {
-    "effect": "Endurance +2",
-    "elem": "pas"
+  "Empyrean Storm": {
+    "cost": 1065,
+    "effect": "Heavy damage, power scales with HP",
+    "elem": "ele",
+    "target": "All Foes",
+    "unique": true
   },
-  "Endurance Amp II": {
-    "effect": "Endurance +3",
-    "elem": "pas"
-  },
-  "Endurance Amp III": {
-    "card": "Thanatos",
-    "effect": "Endurance +4",
-    "elem": "pas"
+  "End Shot": {
+    "effect": "Medium damage, takes longer to execute",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Endure": {
     "card": "Slime",
     "effect": "Withstand damage that brings HP down to 0 with 1 HP",
     "elem": "pas"
   },
-  "Enduring Judgement": {
-    "card": "Abaddon",
-    "cost": 167,
-    "effect": "Heavy damage, power scales with damage taken during same turn",
-    "elem": "phy"
+  "Endure Knack": {
+    "effect": "Endurance +2",
+    "elem": "pas"
+  },
+  "Endure Genius": {
+    "card": "Thanatos",
+    "effect": "Endurance +4",
+    "elem": "pas"
+  },
+  "Endure Talent": {
+    "effect": "Endurance +3",
+    "elem": "pas"
   },
   "Enduring Punishment": {
     "cost": 146,
@@ -579,14 +673,14 @@
   },
   "Evil Smile": {
     "cost": 1012,
-    "effect": "Medium chance of Curse",
+    "effect": "Medium chance of Hex",
     "elem": "ail",
     "target": "All Foes"
   },
   "Evil Touch": {
     "card": "Alp",
     "cost": 1006,
-    "effect": "Medium chance of Curse",
+    "effect": "Medium chance of Hex",
     "elem": "ail",
     "target": "Foe Row"
   },
@@ -607,17 +701,6 @@
     "effect": "Reveal treasure boxes, FOEs, and shortcuts in a wide area",
     "elem": "nav"
   },
-  "Fatal Bind": {
-    "card": "Atavaka",
-    "effect": "Greatly increase damage against enemies with binds",
-    "elem": "pas"
-  },
-  "Fatal End": {
-    "cost": 136,
-    "effect": "Heavy damage, medium chance of Agility Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Fire Amp": {
     "card": "Mara, Orpheus Picaro",
     "effect": "Moderately increase Fire damage",
@@ -633,26 +716,33 @@
     "elem": "fir",
     "target": "1 Foe"
   },
-  "Fire Stream": {
-    "effect": "Greatly increase Fire damage",
-    "elem": "pas"
-  },
-  "Fire Wall": {
+  "Fire Screen": {
     "cost": 1016,
     "effect": "Raise Fire resistance for 3 turns",
     "elem": "sup",
     "target": "All Allies"
+  },
+  "Firestrike Link": {
+    "cost": 148,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "fir",
+    "target": "1 Foe"
   },
   "First Star": {
     "card": "Halphas",
     "effect": "Raise damage when attacking before all enemies act",
     "elem": "pas"
   },
-  "Flame Link": {
-    "cost": 148,
-    "effect": "Light damage, links once with ally attack",
+  "Flame Dance": {
+    "effect": "Medium damage, splash effect",
     "elem": "fir",
     "target": "1 Foe"
+  },
+  "Focus Order": {
+    "cost": 1044,
+    "effect": "Triple magic attack for next hit, lasts 3 turns",
+    "elem": "sup",
+    "target": "All Allies"
   },
   "Fortune Hunter": {
     "card": "Thoth",
@@ -686,6 +776,16 @@
     "elem": "nuk",
     "target": "1 Foe"
   },
+  "Frigid Dance": {
+    "effect": "Heavy damage",
+    "elem": "ice",
+    "target": "Foe Col"
+  },
+  "Frost Dance": {
+    "effect": "Medium damage",
+    "elem": "ice",
+    "target": "Foe Col"
+  },
   "Frost Edge": {
     "card": "Matador",
     "cost": 132,
@@ -693,19 +793,7 @@
     "elem": "ice",
     "target": "Foe Row"
   },
-  "Frost Link": {
-    "cost": 148,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "ice",
-    "target": "1 Foe"
-  },
-  "Full Mind Charge": {
-    "cost": 1044,
-    "effect": "Triple magic attack for next hit, lasts 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Full Power Charge": {
+  "Fury Order": {
     "cost": 1044,
     "effect": "Triple physical attack for next hit, lasts 3 turns",
     "elem": "sup",
@@ -717,12 +805,6 @@
     "effect": "Light damage",
     "elem": "nuk",
     "target": "Foe Row"
-  },
-  "Gale Link": {
-    "cost": 148,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "win",
-    "target": "1 Foe"
   },
   "Garu": {
     "card": "Anzu",
@@ -745,12 +827,12 @@
     "elem": "win",
     "target": "1 Foe"
   },
-  "Gigantic Fist": {
-    "card": "Valkyrie",
-    "cost": 119,
-    "effect": "Medium damage, medium chance of Strength Bind",
+  "Giant Slice": {
+    "card": "Yaksini",
+    "cost": 116,
+    "effect": "Light damage, power scales with Boost",
     "elem": "phy",
-    "target": "1 Foe"
+    "target": "Foe Row"
   },
   "Glacial Edge": {
     "card": "King Frost",
@@ -784,7 +866,7 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Guillotine Slicer": {
+  "Guillotine Slice": {
     "cost": 140,
     "effect": "Medium damage, higher damage against ailments",
     "elem": "phy",
@@ -802,6 +884,11 @@
     "effect": "Light damage",
     "elem": "fir",
     "target": "Foe Row"
+  },
+  "Gust Dance": {
+    "effect": "Medium damage, 2-3 hits",
+    "elem": "win",
+    "target": "Rand Foes"
   },
   "Hailstorm": {
     "card": "Jeanne D'Arc",
@@ -823,7 +910,7 @@
     "target": "1 Foe"
   },
   "Hard Slash": {
-    "effect": "Medium damage",
+    "effect": "Heavy damage",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -839,8 +926,19 @@
     "target": "Rand Foes",
     "unique": true
   },
+  "Headbutt": {
+    "card": "Nozuchi",
+    "cost": 119,
+    "effect": "Light damage, medium chance of Confusion",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
   "Healing Finger": {
     "effect": "HP recovery skills +50%",
+    "elem": "pas"
+  },
+  "Healing Hand": {
+    "effect": "HP recovery skills +100%",
     "elem": "pas"
   },
   "Healing Harp": {
@@ -871,16 +969,11 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Heavy Shot": {
-    "card": "Barong",
-    "cost": 152,
-    "effect": "Heavy damage, lowers target's attack for 3 turns",
+  "Herculean Strike": {
+    "cost": 144,
+    "effect": "Medium damage, 3-6 hits, power scales with Boost",
     "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Helping Hand": {
-    "effect": "HP recovery skills +100%",
-    "elem": "pas"
+    "target": "Rand Foes"
   },
   "Heroic Gemini": {
     "card": "Beelzebub",
@@ -892,24 +985,12 @@
     "effect": "Recover 5% HP each turn",
     "elem": "nav"
   },
-  "Hex Slice": {
-    "card": "Ganesha",
-    "cost": 132,
-    "effect": "Heavy damage, high chance of Curse",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Hientou": {
     "card": "Yatsufusa",
     "cost": 182,
     "effect": "Heavy damage",
     "elem": "fir",
     "target": "Foe Row"
-  },
-  "Forked Spear II": {
-    "card": "Black Frost",
-    "effect": "High chance of basic attack executing twice",
-    "elem": "pas"
   },
   "Holy Touch": {
     "card": "Mithra",
@@ -922,6 +1003,11 @@
     "card": "Nigi Mitama, Heqet",
     "effect": "Slightly higher rate of material drops from enemies",
     "elem": "nav"
+  },
+  "Hurricane Dance": {
+    "effect": "Heavy damage, 2-3 hits",
+    "elem": "win",
+    "target": "Rand Foes"
   },
   "Ice Amp": {
     "card": "Mother Harlot",
@@ -938,15 +1024,21 @@
     "elem": "ice",
     "target": "Foe Col"
   },
-  "Ice Stream": {
-    "effect": "Greatly increase Ice damage",
-    "elem": "pas"
-  },
-  "Ice Wall": {
+  "Ice Screen": {
     "cost": 1016,
     "effect": "Raise Ice resistance for 3 turns",
     "elem": "sup",
     "target": "All Allies"
+  },
+  "Ice Turbo": {
+    "effect": "Greatly increase Ice damage",
+    "elem": "pas"
+  },
+  "Icestrike Link": {
+    "cost": 148,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "ice",
+    "target": "1 Foe"
   },
   "Icy Paradise": {
     "cost": 1024,
@@ -955,17 +1047,21 @@
     "target": "Rand Foes",
     "unique": true
   },
+  "Idol Hands": {
+    "effect": "HP recovery skills +150%",
+    "elem": "pas"
+  },
   "Immunity Buffer": {
-    "effect": "Low chance to nullify phys attack",
+    "effect": "High chance to nullify phys attack",
     "elem": "pas"
   },
-  "Impure Reach": {
-    "effect": "Increase success rate for ailments",
-    "elem": "pas"
+  "Infernal Wings": {
+    "effect": "High chance of attack skills executing twice",
+    "elem": "pas",
+    "unique": true
   },
-  "Impure Reach II": {
-    "card": "Belial",
-    "effect": "Greatly increase success rate for ailments",
+  "Infero Boost": {
+    "effect": "Greatly increase Fire damage",
     "elem": "pas"
   },
   "Infinite Link": {
@@ -1048,18 +1144,6 @@
     "effect": "Recover 20% HP after battle",
     "elem": "nav"
   },
-  "All Guard": {
-    "card": "Ouyamatsumi",
-    "cost": 1009,
-    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
-    "elem": "sup"
-  },
-  "Light Wall": {
-    "cost": 1016,
-    "effect": "Raise Bless resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
   "Light Wave": {
     "cost": 199,
     "effect": "Severe damage, power scales with Boost",
@@ -1067,23 +1151,22 @@
     "target": "1 Foe",
     "unique": true
   },
-  "Lightning Smash": {
-    "card": "Pabilsag",
-    "cost": 156,
-    "effect": "Medium damage",
-    "elem": "psy",
-    "target": "Foe Row"
+  "Line Guard": {
+    "card": "Nata Taishi",
+    "cost": 1003,
+    "effect": "Raise defense and take attacks in place of same-row allies with reduced damage",
+    "elem": "sup"
   },
-  "Luck Amp I": {
+  "Luck Knack": {
     "effect": "Luck +2",
     "elem": "pas"
   },
-  "Luck Amp II": {
-    "effect": "Luck +3",
+  "Luck Genius": {
+    "effect": "Luck +4",
     "elem": "pas"
   },
-  "Luck Amp III": {
-    "effect": "Luck +4",
+  "Luck Talent": {
+    "effect": "Luck +3",
     "elem": "pas"
   },
   "Lucky Punch": {
@@ -1105,6 +1188,13 @@
     "elem": "sup",
     "target": "All Allies",
     "unique": true
+  },
+  "Lunge": {
+    "card": "Ukobach",
+    "cost": 114,
+    "effect": "Light damage, power scales with Boost",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Mabufu": {
     "card": "Ganga",
@@ -1178,7 +1268,7 @@
   },
   "Magarudyne": {
     "card": "Scathach",
-    "cost": 1036,
+    "cost": 1052,
     "effect": "Heavy damage",
     "elem": "win",
     "target": "All Foes"
@@ -1190,15 +1280,11 @@
     "elem": "win",
     "target": "All Foes"
   },
-  "Magic Amp I": {
+  "Magic Knack": {
     "effect": "Magic +2",
     "elem": "pas"
   },
-  "Magic Amp II": {
-    "effect": "Magic +3",
-    "elem": "pas"
-  },
-  "Magic Amp III": {
+  "Magic Genius": {
     "effect": "Magic +4",
     "elem": "pas"
   },
@@ -1206,6 +1292,10 @@
     "card": "Kurama Tengu",
     "effect": "Higher rate of rare materials from Power Spots",
     "elem": "nav"
+  },
+  "Magic Talent": {
+    "effect": "Magic +3",
+    "elem": "pas"
   },
   "Mahama": {
     "cost": 1022,
@@ -1390,7 +1480,7 @@
     "elem": "rec",
     "target": "All Allies"
   },
-  "Megaton Slam": {
+  "Megaton Press": {
     "effect": "Heavy damage",
     "elem": "phy",
     "target": "1 Foe"
@@ -1416,6 +1506,13 @@
     "elem": "alm",
     "target": "All Foes"
   },
+  "Mental Smash": {
+    "card": "Pabilsag",
+    "cost": 156,
+    "effect": "Medium damage",
+    "elem": "psy",
+    "target": "Foe Row"
+  },
   "Mighty Swing": {
     "card": "Mezuki",
     "cost": 128,
@@ -1423,23 +1520,18 @@
     "elem": "phy",
     "target": "Foe Row"
   },
-  "Mighty Tornado": {
-    "card": "Futsunushi",
-    "effect": "Moderate chance to add splash effect to single-target attack skills",
-    "elem": "pas"
-  },
   "Mind Charge": {
     "card": "Ariadne Picaro",
     "cost": 1022,
     "effect": "Triple magic attack for next hit, lasts 3 turns",
     "elem": "sup"
   },
-  "Mind's Eye": {
-    "card": "Kali",
-    "cost": 1026,
-    "effect": "Raise critical rate for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
+  "Mind Strike": {
+    "card": "Ikusa",
+    "cost": 132,
+    "effect": "Light damage",
+    "elem": "psy",
+    "target": "Foe Row"
   },
   "Miracle Punch": {
     "cost": 149,
@@ -1448,19 +1540,17 @@
     "target": "1 Foe",
     "unique": true
   },
-  "Moondrop": {
-    "card": "Gozuki",
-    "cost": 132,
-    "effect": "Medium damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Morning Star": {
     "cost": 1068,
-    "effect": "Severe damage",
+    "effect": "Extreme damage",
     "elem": "alm",
     "target": "All Foes",
     "unique": true
+  },
+  "Mow Down": {
+    "effect": "Light damage",
+    "elem": "phy",
+    "target": "Foe Row"
   },
   "Mudo": {
     "cost": 1010,
@@ -1507,7 +1597,7 @@
     "elem": "nuk",
     "target": "Foe Row"
   },
-  "Nuclear Link": {
+  "Nucleostrike Link": {
     "cost": 148,
     "effect": "Light damage, links once with ally attack",
     "elem": "nuk",
@@ -1523,30 +1613,30 @@
     "effect": "Increase Nuke damage",
     "elem": "pas"
   },
-  "Nuke Stream": {
-    "effect": "Greatly increase Nuke damage",
-    "elem": "pas"
-  },
-  "Nuke Wall": {
+  "Nuke Screen": {
     "cost": 1016,
     "effect": "Raise Nuke resistance for 3 turns",
     "elem": "sup",
     "target": "All Allies"
   },
+  "Nuke Turbo": {
+    "effect": "Greatly increase Nuke damage",
+    "elem": "pas"
+  },
   "Null A-Bind": {
     "effect": "Immune to Agility Bind",
     "elem": "pas"
   },
-  "Null Curse": {
-    "effect": "Immune to Curse",
+  "Null Confusion": {
+    "effect": "Immune to Confusion",
+    "elem": "pas"
+  },
+  "Null Hex": {
+    "effect": "Immune to Hex",
     "elem": "pas"
   },
   "Null M-Bind": {
     "effect": "Immune to Magic Bind",
-    "elem": "pas"
-  },
-  "Null Panic": {
-    "effect": "Immune to Panic",
     "elem": "pas"
   },
   "Null Poison": {
@@ -1561,7 +1651,7 @@
     "effect": "Immune to Sleep",
     "elem": "pas"
   },
-  "One-shot Kill": {
+  "Oneshot Kill": {
     "card": "Yoshitsune, Magatsu-Izanagi Picaro",
     "cost": 192,
     "effect": "Severe damage, power scales with Boost",
@@ -1596,12 +1686,6 @@
     "elem": "nav",
     "target": "All Allies"
   },
-  "Panic Circle": {
-    "cost": 1018,
-    "effect": "Medium chance of Panic each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
   "Panta Rhei": {
     "cost": 1064,
     "effect": "Severe damage",
@@ -1621,16 +1705,15 @@
     "elem": "rec",
     "target": "Ally Row"
   },
-  "Photon Edge": {
-    "cost": 163,
-    "effect": "Severe damage",
-    "elem": "alm",
+  "Perplex Flash": {
+    "effect": "Medium chance of Confusion",
+    "elem": "ail",
     "target": "1 Foe"
   },
-  "Strike Link": {
-    "cost": 120,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "phy",
+  "Photon Edge": {
+    "cost": 163,
+    "effect": "Heavy damage",
+    "elem": "alm",
     "target": "1 Foe"
   },
   "Poisma": {
@@ -1652,15 +1735,34 @@
     "elem": "ail",
     "target": "All Foes"
   },
+  "Poison Skewer": {
+    "card": "Andras",
+    "cost": 119,
+    "effect": "Light damage, medium chance of Poison",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Power Knack": {
+    "effect": "Strength +2",
+    "elem": "pas"
+  },
   "Power Charge": {
     "card": "Masakado, Ariadne",
     "cost": 1022,
     "effect": "Triple physical attack for next hit, lasts 3 turns",
     "elem": "sup"
   },
+  "Power Genius": {
+    "effect": "Strength +4",
+    "elem": "pas"
+  },
+  "Power Talent": {
+    "effect": "Strength +3",
+    "elem": "pas"
+  },
   "Pralaya": {
     "cost": 199,
-    "effect": "Severe damage",
+    "effect": "Severe damage, medium chance of insta-death",
     "elem": "alm",
     "target": "All Foes",
     "unique": true
@@ -1710,50 +1812,57 @@
     "effect": "Increase Psy damage",
     "elem": "pas"
   },
-  "Psy Link": {
-    "cost": 148,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "psy",
-    "target": "1 Foe"
-  },
-  "Psy Stream": {
-    "effect": "Greatly increase Psy damage",
-    "elem": "pas"
-  },
-  "Psy Wall": {
+  "Psy Screen": {
     "cost": 1016,
     "effect": "Raise Psy resistance for 3 turns",
     "elem": "sup",
     "target": "All Allies"
   },
+  "Psy Turbo": {
+    "effect": "Greatly increase Psy damage",
+    "elem": "pas"
+  },
   "Psycho Blast": {
     "cost": 1064,
     "effect": "Severe damage",
     "elem": "psy",
-    "target": "1 Foe",
+    "target": "All Foes",
     "unique": true
   },
   "Psycho Force": {
     "cost": 1048,
     "effect": "Severe damage",
     "elem": "psy",
-    "target": "All Foes",
+    "target": "1 Foe",
     "unique": true
+  },
+  "Psycho Smash": {
+    "card": "Shiki-Ouji",
+    "cost": 182,
+    "effect": "Heavy damage",
+    "elem": "psy",
+    "target": "Foe Row"
+  },
+  "Psystrike Link": {
+    "cost": 148,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "psy",
+    "target": "1 Foe"
   },
   "Pulinpa": {
     "card": "Ame-no-Uzume",
     "cost": 1006,
-    "effect": "Medium chance of Panic",
+    "effect": "Medium chance of Confusion",
     "elem": "ail",
     "target": "Foe Row"
   },
-  "Punish Bite": {
+  "Punishing Bite": {
     "cost": 140,
     "effect": "Medium damage, higher damage against binds, but will remove binds",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Punish End": {
+  "Punishing End": {
     "cost": 156,
     "effect": "Heavy damage, higher damage against binds, but will remove binds",
     "elem": "phy",
@@ -1826,18 +1935,11 @@
     "target": "1 Foe"
   },
   "Rampage": {
-    "effect": "Heavy damage",
+    "card": "Tsuchigumo",
+    "cost": 124,
+    "effect": "Light damage, 2-6 hits, power scales with Boost",
     "elem": "phy",
-    "target": "All Foes"
-  },
-  "Rebel Spirit": {
-    "effect": "Increase damage against enemies with more HP",
-    "elem": "pas"
-  },
-  "Rebel Spirit II": {
-    "card": "Moloch",
-    "effect": "Greatly increase damage against enemies with more HP",
-    "elem": "pas"
+    "target": "Rand Foes"
   },
   "Recarm": {
     "card": "Sarasvati",
@@ -1929,9 +2031,18 @@
   },
   "Runic Shield": {
     "card": "Thanatos Picaro",
-    "effect": "Medium chance to nullify Fire, Ice, Elec, Wind, Psy, and Nuke damage against the user's row",
+    "effect": "High chance to nullify Fire, Ice, Elec, Wind, Psy, and Nuke damage against the user's row",
     "elem": "pas",
     "unique": true
+  },
+  "Sabaton Slice": {
+    "effect": "Heavy damage, medium change of Agility Bind",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Safeguard": {
+    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
+    "elem": "sup"
   },
   "Safety Prayer": {
     "card": "Cu Sith",
@@ -1943,10 +2054,6 @@
     "effect": "Heavy damage, medium chance of Magic Bind",
     "elem": "phy",
     "target": "1 Foe"
-  },
-  "Saintly Hands": {
-    "effect": "HP recovery skills +150%",
-    "elem": "pas"
   },
   "Salome's Kiss": {
     "card": "Black Maria",
@@ -1988,9 +2095,9 @@
     "target": "Foe Row"
   },
   "Self-Destruct": {
-    "effect": "Medium damage, user dies",
+    "effect": "Heavy damage, user dies",
     "elem": "alm",
-    "target": "All Foes"
+    "target": "Universal"
   },
   "Shadow Run": {
     "cost": 164,
@@ -1999,17 +2106,10 @@
     "target": "All Foes",
     "unique": true
   },
-  "Shangdi's Lightning": {
-    "cost": 1065,
-    "effect": "Heavy damage, power scales with HP",
-    "elem": "ele",
-    "target": "All Foes",
-    "unique": true
-  },
   "Shibaboo": {
     "effect": "Medium chance of Paralysis",
     "elem": "ail",
-    "target": "Foe Row"
+    "target": "1 Foe"
   },
   "Shinkuuha": {
     "cost": 156,
@@ -2046,7 +2146,7 @@
   "Silent Thrust": {
     "card": "Pele",
     "cost": 119,
-    "effect": "Light damage, medium chance of Curse",
+    "effect": "Light damage, medium chance of Hex",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -2057,18 +2157,18 @@
     "elem": "phy",
     "target": "Foe Col"
   },
-  "Skull Cracker": {
-    "card": "Nozuchi",
-    "cost": 119,
-    "effect": "Light damage, medium chance of Panic",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Sleep Circle": {
     "cost": 1018,
     "effect": "Medium chance of Sleep each turn for 3 turns",
     "elem": "ail",
     "target": "All Foes"
+  },
+  "Sleep Strike": {
+    "card": "Jatayu",
+    "cost": 132,
+    "effect": "Heavy damage, high chance of Sleep",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Sleeper Punch": {
     "card": "Succubus",
@@ -2082,16 +2182,10 @@
     "effect": "High chance of preventing preemptive attacks",
     "elem": "nav"
   },
-  "Sonic Punch": {
-    "card": "Jatayu",
-    "cost": 132,
-    "effect": "Heavy damage, high chance of Sleep",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Spiderweb": {
-    "effect": "Medium chance of Agility Bind",
-    "elem": "ail",
+  "Spirit Summon": {
+    "cost": 1072,
+    "effect": "Heavy damage, requires circles",
+    "elem": "alm",
     "target": "All Foes"
   },
   "Spotter": {
@@ -2099,41 +2193,37 @@
     "effect": "Slightly higher rate of rare materials from Power Spots",
     "elem": "nav"
   },
-  "Stagnant Air": {
-    "cost": 1018,
-    "effect": "Extend timers on binds and ailments, does not stack",
-    "elem": "sup",
-    "target": "All Foes"
-  },
-  "Stardrop": {
-    "card": "Kartikeya",
-    "cost": 152,
-    "effect": "Heavy damage, lowers target's defense for 1 turn",
+  "Stab Shower": {
+    "effect": "Light damage, 3 hits",
     "elem": "phy",
+    "target": "Rand Foes"
+  },
+  "Stona": {
+    "effect": "Medium chance of Petrification",
+    "elem": "ail",
     "target": "1 Foe"
   },
   "Stone Mist": {
     "effect": "Medium chance of Petrification",
     "elem": "ail",
-    "target": "All Foes"
+    "target": "Foe Row"
   },
-  "Strength Amp I": {
-    "effect": "Strength +2",
-    "elem": "pas"
-  },
-  "Strength Amp II": {
-    "effect": "Strength +3",
-    "elem": "pas"
-  },
-  "Strength Amp III": {
-    "effect": "Strength +4",
-    "elem": "pas"
+  "Strike Link": {
+    "cost": 120,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Stun Circle": {
     "cost": 1018,
-    "effect": "Medium chance of Curse each turn for 3 turns",
+    "effect": "Medium chance of Paralysis each turn for 3 turns",
     "elem": "ail",
     "target": "All Foes"
+  },
+  "Stunning Slice": {
+    "effect": "Light damage, medium chance of Paralysis",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Sukukaja": {
     "card": "Raijuu",
@@ -2149,25 +2239,6 @@
     "elem": "sup",
     "target": "1 Foe"
   },
-  "Summon Demon": {
-    "cost": 1072,
-    "effect": "Heavy damage, requires circles",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Summon Ghost": {
-    "cost": 1058,
-    "effect": "Medium damage, requires circles",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Swift Strike": {
-    "card": "Tsuchigumo",
-    "cost": 124,
-    "effect": "Light damage, 2-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
   "Tarukaja": {
     "card": "Oni",
     "cost": 1008,
@@ -2180,13 +2251,6 @@
     "cost": 1008,
     "effect": "Lower attack for 3 turns",
     "elem": "sup",
-    "target": "1 Foe"
-  },
-  "Teardrop": {
-    "card": "Mokoi",
-    "cost": 116,
-    "effect": "Light damage, lowers target's defense for 1 turn",
-    "elem": "phy",
     "target": "1 Foe"
   },
   "Tempest Slash": {
@@ -2203,7 +2267,7 @@
   },
   "Tentarafoo": {
     "cost": 1012,
-    "effect": "Medium chance of Panic",
+    "effect": "Medium chance of Confusion",
     "elem": "ail",
     "target": "All Foes"
   },
@@ -2229,12 +2293,9 @@
     "target": "1 Foe",
     "unique": true
   },
-  "Thunder Smash": {
-    "card": "Shiki-Ouji",
-    "cost": 182,
-    "effect": "Heavy damage",
-    "elem": "psy",
-    "target": "Foe Row"
+  "Tornado Boost": {
+    "effect": "Greatly increase Wind damage",
+    "elem": "pas"
   },
   "Tousatsujin": {
     "card": "Byakko",
@@ -2243,33 +2304,10 @@
     "elem": "ice",
     "target": "Foe Row"
   },
-  "Toxic Needle": {
-    "card": "Ananta",
-    "cost": 132,
-    "effect": "Heavy damage, high chance of Poison",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Toxic Slice": {
-    "card": "Andras",
-    "cost": 119,
-    "effect": "Light damage, medium chance of Poison",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
   "Treasure Hunter": {
     "card": "Bicorn, Sudama",
     "effect": "Reveal nearby treasure boxes",
     "elem": "nav"
-  },
-  "Dodge Arts": {
-    "effect": "Increase evasion against all attacks",
-    "elem": "pas"
-  },
-  "Dodge Arts II": {
-    "card": "Lakshmi",
-    "effect": "Greatly increase evasion against all attacks",
-    "elem": "pas"
   },
   "Triple Down": {
     "card": "Rakshasa",
@@ -2283,6 +2321,13 @@
     "effect": "Link chains last up to 3 hits",
     "elem": "pas"
   },
+  "True Critical Eye": {
+    "card": "Kali",
+    "cost": 1026,
+    "effect": "Raise critical rate for 3 turns",
+    "elem": "sup",
+    "target": "All Allies"
+  },
   "Twin Slash": {
     "card": "Sandman",
     "cost": 114,
@@ -2290,11 +2335,11 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Vajra Blast": {
-    "cost": 144,
-    "effect": "Medium damage, 3-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
+  "Vengeful Melee": {
+    "card": "Abaddon",
+    "cost": 167,
+    "effect": "Heavy damage, power scales with damage taken during same turn",
+    "elem": "phy"
   },
   "Victory Cry": {
     "card": "Hachiman",
@@ -2308,6 +2353,18 @@
     "elem": "phy",
     "target": "1 Foe"
   },
+  "Weapon Crusher": {
+    "card": "Barong",
+    "cost": 152,
+    "effect": "Heavy damage, lowers target's attack for 3 turns",
+    "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Whirlwind Swing": {
+    "card": "Futsunushi",
+    "effect": "Moderate chance to add splash effect to single-target attack skills",
+    "elem": "pas"
+  },
   "Wind Amp": {
     "card": "Vishnu",
     "effect": "Moderately increase Wind damage",
@@ -2319,19 +2376,21 @@
     "elem": "pas"
   },
   "Wind Dance": {
-    "effect": "Light damage, 2-4 hits",
+    "effect": "Light damage, 2-3 hits",
     "elem": "win",
     "target": "Rand Foes"
   },
-  "Wind Stream": {
-    "effect": "Greatly increase Wind damage",
-    "elem": "pas"
-  },
-  "Wind Wall": {
+  "Wind Screen": {
     "cost": 1016,
     "effect": "Raise Wind resistance for 3 turns",
     "elem": "sup",
     "target": "All Allies"
+  },
+  "Windstrike Link": {
+    "cost": 148,
+    "effect": "Light damage, links once with ally attack",
+    "elem": "win",
+    "target": "1 Foe"
   },
   "World's End": {
     "cost": 211,

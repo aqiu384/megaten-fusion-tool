@@ -28,7 +28,6 @@ const PP_NAME = 'hamuko';
 const PQ1J_NAME_BYTES = [].concat(strToBytes(P3_NAME, 17), strToBytes(P4_NAME, 17));
 const PQ1E_NAME_BYTES = [].concat(strToBytes(P3_NAME, 29), strToBytes(P4_NAME, 29));
 const PQ2J_NAME_BYTES = [].concat(strToBytes(P3_NAME, 17), strToBytes(P4_NAME, 17), strToBytes(P5_NAME, 17), strToBytes(PP_NAME, 17));
-const PQ2E_NAME_BYTES = [].concat(strToBytes(P3_NAME, 15), strToBytes(P4_NAME, 15), strToBytes(P5_NAME, 15), strToBytes(PP_NAME, 15));
 
 const PQ1_TEAM_BYTES = [].concat([34, 50], Array(36).fill(31), [31, 0, 31, 0, 0, 0, 1, 128]);
 const PQ2_TEAM_BYTES = [].concat([34, 50], Array(54).fill(31), [31, 0, 1, 0]);
@@ -66,13 +65,14 @@ function encodePqDemon(demon: DecodedDemon): number[] {
 }
 
 function encodePq2Demon(demon: DecodedDemon): number[] {
-  const nameBytes = demon.language === 'jpn' ? PQ2J_NAME_BYTES : PQ2E_NAME_BYTES;
+  const playBytes = PLAY_BYTES.slice()
   const passBytes = Array(25).fill(0);
 
   const xl = demon.lvl;
   const xe = Math.floor((((-0.0479755766 * xl + 9.28700353) * xl + 71.9694228) * xl + -81.1026214) * xl + 0.120783542);
   const exp = demon.exp < 0 ? xe : demon.exp;
 
+  playBytes[6] = 256 - playBytes[6];
   passBytes[0] = demon.demonCode % 256;
   passBytes[1] = demon.lvl * 2 + Math.floor(demon.demonCode / 256);
 
@@ -89,5 +89,5 @@ function encodePq2Demon(demon: DecodedDemon): number[] {
   passBytes[23] = (demon.mp * 10 % 16) * 16 + Math.floor(demon.hp / 25.6);
   passBytes[24] = Math.floor(demon.mp / 1.6);
 
-  return [].concat(PLAY_BYTES, PQ_MSG_BYTES, nameBytes, PQ2_TEAM_BYTES, passBytes, Array(21).fill(0));
+  return [].concat(playBytes, PQ_MSG_BYTES, PQ2J_NAME_BYTES, PQ2_TEAM_BYTES, passBytes, Array(21).fill(0));
 }
