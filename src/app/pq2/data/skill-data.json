@@ -659,11 +659,6 @@
     "effect": "Endurance +3",
     "elem": "pas"
   },
-  "Enduring Punishment": {
-    "cost": 146,
-    "effect": "Medium damage, power scales with damage taken during same turn",
-    "elem": "phy"
-  },
   "Eternal Melody": {
     "card": "Kingu",
     "cost": 2003,
@@ -866,15 +861,15 @@
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Guillotine Slice": {
-    "cost": 140,
-    "effect": "Medium damage, higher damage against ailments",
+  "Guillotine Blade": {
+    "cost": 163,
+    "effect": "Heavy damage, higher damage against ailments",
     "elem": "phy",
     "target": "1 Foe"
   },
-  "Guillotine Zapper": {
-    "cost": 163,
-    "effect": "Heavy damage, higher damage against ailments",
+  "Guillotine Slice": {
+    "cost": 140,
+    "effect": "Medium damage, higher damage against ailments",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -1977,8 +1972,12 @@
     "elem": "win",
     "target": "Foe Row"
   },
-  "Resist Dark": {
-    "effect": "Resist Dark damage",
+  "Resist Bless": {
+    "effect": "Resist Bless damage",
+    "elem": "pas"
+  },
+  "Resist Curse": {
+    "effect": "Resist Curse damage",
     "elem": "pas"
   },
   "Resist Elec": {
@@ -1991,10 +1990,6 @@
   },
   "Resist Ice": {
     "effect": "Resist Ice damage",
-    "elem": "pas"
-  },
-  "Resist Light": {
-    "effect": "Resist Light damage",
     "elem": "pas"
   },
   "Resist Nuke": {
@@ -2041,7 +2036,7 @@
     "target": "1 Foe"
   },
   "Safeguard": {
-    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
+    "effect": "Raise defense and take attacks in place of 1 ally with reduced damage",
     "elem": "sup"
   },
   "Safety Prayer": {
@@ -2049,7 +2044,7 @@
     "effect": "Gather somewhat safely from Power Spots",
     "elem": "nav"
   },
-  "Saint Touch": {
+  "Saint's Touch": {
     "cost": 136,
     "effect": "Heavy damage, medium chance of Magic Bind",
     "elem": "phy",
@@ -2083,7 +2078,7 @@
     "target": "Foe Row"
   },
   "Scepter Strike": {
-    "effect": "Heavy damage",
+    "effect": "Halve HP",
     "elem": "phy",
     "target": "1 Foe"
   },
@@ -2334,6 +2329,11 @@
     "effect": "Light damage, 2 hits, power scales with Boost",
     "elem": "phy",
     "target": "1 Foe"
+  },
+  "Vengeful Smash": {
+    "cost": 146,
+    "effect": "Medium damage, power scales with damage taken during same turn",
+    "elem": "phy"
   },
   "Vengeful Melee": {
     "card": "Abaddon",
