@@ -16,6 +16,7 @@ import DLC_DATA_JSON from './data/dlc-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import PARTY_DATA_JSON from './data/party-data.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
 
@@ -29,7 +30,20 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 
 const resistElems = COMP_CONFIG_JSON['resistElems'];
 const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
-const races = COMP_CONFIG_JSON['races'];
+const races = [];
+
+for(const race of COMP_CONFIG_JSON['races']) {
+  races.push(race);
+  races.push(race + ' P');
+}
+
+for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
+  entry.race = entry.race + ' P';
+  entry['lvl'] = 1;
+  entry['fusion'] = 'party';
+  entry['inherit'] = 'almpp';
+  DEMON_DATA_JSON[demon] = entry;
+}
 
 for (const [code, name] of Object.entries(DEMON_CODES_JSON)) {
   DEMON_DATA_JSON[name]['code'] = parseInt(code, 10);

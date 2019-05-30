@@ -41,12 +41,12 @@ export class Compendium implements ICompendium {
         race:     json['race'],
         lvl:      json['lvl'],
         price:    json['lvl'] * json['lvl'] * 100,
-        stats:    json['stats'],
+        stats:    json['stats'].slice(0, 2),
         skills:   json['skills'],
         resists:  [],
         inherit:  json['inherit'],
         code:     json['code'] || 0,
-        fusion:   'normal'
+        fusion:   json['fusion'] || 'normal'
       };
     }
 
@@ -99,12 +99,6 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const skill of Object.values(skills)) {
-      if (skill.learnedBy.length < 1) {
-        skill.rank = 99;
-      }
-    }
-
     this.demons = demons;
     this.enemies = enemies;
     this.skills = skills;
@@ -114,9 +108,17 @@ export class Compendium implements ICompendium {
 
   updateDerivedData() {
     const demonEntries = Object.assign({}, this.demons);
-    const skills =       Object.keys(this.skills).map(name => this.skills[name]);
+    const skills:        Skill[] = [];
     const ingredients:   { [race: string]: number[] } = {};
     const results:       { [race: string]: number[] } = {};
+
+    for (const skill of Object.values(this.skills)) {
+      if (skill.learnedBy.length < 1) {
+        skill.rank = 99;
+      } else {
+        skills.push(skill);
+      }
+    }
 
     for (const race of this.compConfig.races) {
       ingredients[race] = [];

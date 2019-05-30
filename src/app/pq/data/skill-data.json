@@ -100,11 +100,18 @@
     "target": "1 enemy",
     "unique": true
   },
+  "Bash": {
+    "effect": "Normal attack using the Bash attribute",
+    "elem": "bas",
+    "target": "1 enemy",
+    "unique": true
+  },
   "Becalm": {
     "cost": 1018,
     "effect": "Remove all Binds. [Only usable in battle]",
     "elem": "rec",
-    "target": "1 row"
+    "target": "1 row",
+    "unique": true
   },
   "Bestial Roar": {
     "card": "Nue",
@@ -275,6 +282,12 @@
     "cost": 1028,
     "effect": "Raise critical hit rate for 3 turns",
     "elem": "sup"
+  },
+  "Cut": {
+    "effect": "Normal attack using the Cut attribute",
+    "elem": "cut",
+    "target": "1 enemy",
+    "unique": true
   },
   "Cyclone": {
     "cost": 1018,
@@ -1721,7 +1734,8 @@
     "cost": 1018,
     "effect": "Remove status ailments. [Only usable in battle]",
     "elem": "rec",
-    "target": "1 row"
+    "target": "1 row",
+    "unique": true
   },
   "Renewal": {
     "cost": 1016,
@@ -1999,6 +2013,12 @@
   "Squire Card": {
     "effect": "Slightly raise Fire, Ice, Wind, and Elec attack strength",
     "elem": "pas",
+    "unique": true
+  },
+  "Stab": {
+    "effect": "Normal attack using the Stab attribute",
+    "elem": "sta",
+    "target": "1 enemy",
     "unique": true
   },
   "Stab Shower": {
