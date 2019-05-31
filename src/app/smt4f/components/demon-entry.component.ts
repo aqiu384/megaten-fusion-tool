@@ -1,12 +1,9 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistanceElements, AffinityElements, ElementOrder } from '../../smt4/models/constants';
-import { Ailments, APP_TITLE } from '../models/constants';
-import { Demon } from '../models';
+import { CompendiumConfig, Demon } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -20,24 +17,24 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
-        [statHeaders]="statHeaders"
+        [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats">
       </app-demon-stats>
       <app-demon-resists
-        [resistHeaders]="resistanceHeaders"
+        [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists"
-        [ailmentHeaders]="ailmentHeaders"
+        [ailmentHeaders]="compConfig.ailmentElems"
         [ailments]="demon.ailments">
       </app-demon-resists>
       <app-demon-inherits
         [hasLvls]="true"
-        [inheritHeaders]="affinityHeaders"
+        [inheritHeaders]="compConfig.affinityElems"
         [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-skills
         [hasTarget]="true"
         [hasRank]="true"
-        [elemOrder]="elemOrder"
+        [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
@@ -68,24 +65,24 @@ import { FusionDataService } from '../fusion-data.service';
 export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
+  @Input() compConfig: CompendiumConfig;
   @Input() compendium: Compendium;
-
-  statHeaders = BaseStats;
-  resistanceHeaders = ResistanceElements;
-  elemOrder = ElementOrder;
-  ailmentHeaders = Ailments;
-  affinityHeaders = AffinityElements;
 }
 
 @Component({
   selector: 'app-demon-entry-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-entry [name]="name" [demon]="demon" [compendium]="compendium"></app-demon-entry>
+    <app-demon-entry
+      [name]="name"
+      [demon]="demon"
+      [compConfig]="compConfig"
+      [compendium]="compendium">
+    </app-demon-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {
-  appName = APP_TITLE;
+  compConfig: CompendiumConfig;
 
   constructor(
     private route: ActivatedRoute,
@@ -94,5 +91,8 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+
+    this.appName = fusionDataService.appName;
+    this.compConfig = fusionDataService.compConfig;
   }
 }

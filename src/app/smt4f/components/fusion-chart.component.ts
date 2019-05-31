@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { FusionChart } from '../../smt4/models/fusion-chart';
+import { FusionChart } from '../models/fusion-chart';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({

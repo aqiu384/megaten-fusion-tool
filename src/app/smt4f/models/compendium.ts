@@ -1,12 +1,5 @@
-import { Races, ResistanceElements, AffinityElements, BaseStats, ElementOrder, ResistCodes } from '../../smt4/models/constants';
-import { Ailments } from '../models/constants';
-import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
-
-import DEMON_DATA_JSON from '../data/demon-data.json';
-import SKILL_DATA_JSON from '../data/skill-data.json';
-import EVOLUTION_DATA_JSON from '../data/evolutions.json';
-import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import { Demon, Skill, CompendiumConfig } from '../models';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -24,7 +17,7 @@ export class Compendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
-  constructor() {
+  constructor(private compConfig: CompendiumConfig) {
     this.initImportedData();
     this.updateDerivedData();
   }
@@ -35,19 +28,28 @@ export class Compendium implements ICompendium {
     const specialRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
 
-    for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
-      demons[name] = Object.assign({ name, fusion: 'normal' }, json, {
-        price: json.price * 2,
-        stats: json.stats,
-        resists: json.resists.split('').map(char => ResistCodes[char]),
-        affinities: AffinityElements.map(val => json.affinities[val] ? json.affinities[val] : 0),
-        ailments: json.ailments ?
-          json.ailments.split('').map(char => ResistCodes[char]) :
-          [ 100, 100, 100, 100, 100, 100, 100, 100 ]
-      });
+    const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(100);
+
+    for (const [name, json] of Object.entries(this.compConfig.demonData)) {
+      demons[name] = {
+        name,
+        race:       json['race'],
+        lvl:        json['lvl'],
+        skills:     json['skills'],
+        price:      json['price'] * 2,
+        stats:      json['stats'],
+        resists:    json['resists'].split('').map(e => this.compConfig.resistCodes[e]),
+        affinities: this.compConfig.affinityElems.map(e => json['affinities'][e] ? json['affinities'][e] : 0),
+        ailments:   json['ailments'] ? json['ailments'].split('').map(e => this.compConfig.resistCodes[e]) : blankAils,
+        fusion:     json['fusion'] || 'normal'
+      }
+
+      if (json['fusion'] === 'enemy') {
+        demons[name]['prereq'] = 'Enemy only';
+      }
     }
 
-    for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
+    for (const [name, json] of Object.entries(this.compConfig.skillData)) {
       skills[name] = {
         name,
         element: json['element'],
@@ -66,7 +68,9 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
+    for (const [name, ojson] of Object.entries(this.compConfig.specialRecipes)) {
+      const json = <string[]>ojson;
+
       if (json.length > 1) {
         specialRecipes[name] = json;
         demons[name].fusion = 'special';
@@ -77,23 +81,25 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, { lvl, result }] of Object.entries(EVOLUTION_DATA_JSON)) {
+    for (const [name, json] of Object.entries(this.compConfig.evolveData)) {
+      const result = json['result'];
+
       demons[name].evolvesTo = {
         price: demons[result].price,
         race1: demons[result].race,
-        lvl1:  lvl,
+        lvl1:  json['lvl'],
         name1: result
       };
 
       demons[result].evolvesFrom = {
         price: demons[name].price,
         race1: demons[name].race,
-        lvl1:  lvl,
+        lvl1:  json['lvl'],
         name1: name
       };
     }
 
-    for (const race of Races) {
+    for (const race of this.compConfig.races) {
       inversions[race] = {};
     }
 
@@ -102,14 +108,17 @@ export class Compendium implements ICompendium {
     }
 
     for (const demon of Object.values(demons)) {
-      for (const name of Object.keys(demon.skills)) {
-        skills[name].learnedBy.push({
-          demon: demon.name,
-          level: demon.skills[name]
-        });
+      if (demon.fusion !== 'enemy') {
+        for (const name of Object.keys(demon.skills)) {
+          skills[name].learnedBy.push({
+            demon: demon.name,
+            level: demon.skills[name]
+          });
+        }
       }
     }
 
+    this._dlcDemons = this.compConfig.dlcDemons.reduce((acc, d) => { acc[d] = false; return acc }, {});
     this.demons = demons;
     this.skills = skills;
     this.specialRecipes = specialRecipes;
@@ -122,7 +131,7 @@ export class Compendium implements ICompendium {
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
 
-    for (const race of Races) {
+    for (const race of this.compConfig.races) {
       ingredients[race] = [];
       results[race] = [];
     }
@@ -137,7 +146,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const race of Races) {
+    for (const race of this.compConfig.races) {
       ingredients[race].sort((a, b) => a - b);
       results[race].sort((a, b) => a - b);
     }
@@ -189,16 +198,11 @@ export class Compendium implements ICompendium {
     return this.skills[name];
   }
 
-  getSkills(skills: { [skill: string]: number }): Skill[] {
-    const retSkills = [];
-
-    for (const [name, lvl] of Object.entries(skills)) {
-      retSkills.push(this.skills[name]);
-      this.skills[name].level = lvl;
-    }
-
-    retSkills.sort((d1, d2) => (d1.level - d2.level) * 100 + ElementOrder[d1.element] - ElementOrder[d2.element]);
-    return retSkills;
+  getSkills(names: string[]): Skill[] {
+    const elemOrder = this.compConfig.elemOrder;
+    const skills = names.map(name => this.skills[name]);
+    skills.sort((d1, d2) => (elemOrder[d1.element] - elemOrder[d2.element]) * 10000 + d1.rank - d2.rank);
+    return skills;
   }
 
   getIngredientDemonLvls(race: string): number[] {

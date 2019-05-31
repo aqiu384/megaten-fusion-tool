@@ -1,31 +1,42 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, Inject } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
 
-import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './models/constants';
 import { Compendium } from './models/compendium';
-import { FusionChart } from '../smt4/models/fusion-chart';
+import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
-import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
-
-import FUSION_CHART_JSON from './data/fusion-chart.json';
+import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { CompendiumConfig } from './models';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
+  compConfig: CompendiumConfig;
+  appName: string;
 
-  private _compendium = new Compendium();
-  private _compendium$ = new BehaviorSubject(this._compendium);
-  compendium = this._compendium$.asObservable();
+  private _compendium: Compendium;
+  private _compendium$: BehaviorSubject<Compendium>;
+  compendium: Observable<Compendium>;
 
-  private _fusionChart = new FusionChart(FUSION_CHART_JSON);
-  private _fusionChart$ = new BehaviorSubject(this._fusionChart);
-  fusionChart = this._fusionChart$.asObservable();
+  private _fusionChart: FusionChart;
+  private _fusionChart$: BehaviorSubject<FusionChart>;
+  fusionChart: Observable<FusionChart>;
 
-  constructor() {
-    const settings = JSON.parse(localStorage.getItem(FUSION_SETTINGS_KEY));
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
+    this.compConfig = compConfig;
+    this.appName = compConfig.appTitle;
 
-    if (settings && settings.version && settings.version >= FUSION_SETTINGS_VERSION) {
+    this._compendium = new Compendium(compConfig);
+    this._compendium$ = new BehaviorSubject(this._compendium);
+    this.compendium = this._compendium$.asObservable();
+
+    this._fusionChart = new FusionChart(compConfig);
+    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
+    this.fusionChart = this._fusionChart$.asObservable();
+
+    const settings = JSON.parse(localStorage.getItem(compConfig.settingsKey));
+
+    if (settings && settings.version && settings.version >= compConfig.settingsVersion) {
       this.nextDlcDemons(settings.dlcDemons);
     }
 
@@ -33,14 +44,14 @@ export class FusionDataService implements IFusionDataService {
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) {
-    localStorage.setItem(FUSION_SETTINGS_KEY, JSON.stringify({ version: FUSION_SETTINGS_VERSION, dlcDemons }));
+    localStorage.setItem(this.compConfig.settingsKey, JSON.stringify({ version: this.compConfig.settingsVersion, dlcDemons }));
     this._compendium.dlcDemons = dlcDemons;
     this._compendium$.next(this._compendium);
   }
 
   onStorageUpdated(e) {
     switch (e.key) {
-      case FUSION_SETTINGS_KEY:
+      case this.compConfig.settingsKey:
         this._compendium.dlcDemons = JSON.parse(e.newValue).dlcDemons;
         this._compendium$.next(this._compendium);
         break;

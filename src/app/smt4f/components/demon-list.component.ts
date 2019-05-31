@@ -1,35 +1,38 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { RaceOrder, BaseStats, ResistanceElements, AffinityElements } from '../../smt4/models/constants';
-import { APP_TITLE } from '../models/constants';
 
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
+import { CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-demon-list-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
-      [raceOrder]="raceOrder"
-      [statHeaders]="statHeaders"
-      [resistHeaders]="resistHeaders"
-      [affinityHeaders]="affinityHeaders"
+      [raceOrder]="compConfig.raceOrder"
+      [statHeaders]="compConfig.baseStats"
+      [resistHeaders]="compConfig.resistElems"
+      [affinityHeaders]="compConfig.affinityElems"
       [rowData]="demons | async">
     </app-smt-demon-list>
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName = `List of Demons - ${APP_TITLE}`;
-  raceOrder = RaceOrder;
-  statHeaders = BaseStats;
-  resistHeaders = ResistanceElements;
-  affinityHeaders = AffinityElements;
-  defaultSortFun = (d1, d2) => (RaceOrder[d1.race] - RaceOrder[d2.race]) * 200 + d2.lvl - d1.lvl;
+  compConfig: CompendiumConfig;
 
   constructor(
     title: Title,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
-  ) { super(title, changeDetectorRef, fusionDataService); }
+  ) {
+    super(title, changeDetectorRef, fusionDataService);
+
+    this.compConfig = fusionDataService.compConfig;
+    this.defaultSortFun = (d1, d2) => (
+      this.compConfig.raceOrder[d1.race] -
+      this.compConfig.raceOrder[d2.race]
+    ) * 200 + d2.lvl - d1.lvl;
+    this.appName = `List of Demons - ${this.compConfig.appTitle}`;
+  }
 }
