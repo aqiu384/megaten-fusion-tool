@@ -92,7 +92,9 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(demons)) {
-      inverses[demon.race][demon.lvl] = name;
+      if (demon.fusion !== 'party') {
+        inverses[demon.race][demon.lvl] = name;
+      }
 
       for (const [skill, level] of Object.entries(demon.skills)) {
         skills[skill].learnedBy.push({ demon: name, level });
@@ -126,10 +128,12 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(this.demons)) {
-      ingredients[demon.race].push(demon.lvl);
+      if (demon.fusion !== 'party') {
+        ingredients[demon.race].push(demon.lvl);
 
-      if (!this.specialRecipes.hasOwnProperty(name)) {
-        results[demon.race].push(demon.lvl);
+        if (!this.specialRecipes.hasOwnProperty(name)) {
+          results[demon.race].push(demon.lvl);
+        }
       }
     }
 

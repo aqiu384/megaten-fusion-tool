@@ -1,26 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { BehaviorSubject } from 'rxjs';
 
-import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './constants';
 import { Compendium } from './models/compendium';
 import { PersonaFusionChart } from '../compendium/models/per-fusion-chart';
-import { FusionTrioService as IFusionTrioService, SquareChart } from '../compendium/models';
-import { Races, RaceOrder, P3_NORMAL_FISSION_CALCULATOR, P3_NORMAL_FUSION_CALCULATOR } from './constants';
-import { P3_TRIPLE_FISSION_CALCULATOR, P3_TRIPLE_FUSION_CALCULATOR } from '../compendium/constants';
-
-import DEMON_DATA_JSON from './data/demon-data.json';
-import GOLDEN_DEMON_DATA_JSON from './data/golden-demon-data.json';
-
-import ENEMY_DATA_JSON from './data/enemy-data.json';
-import GOLDEN_ENEMY_DATA_JSON from './data/golden-enemy-data.json';
-
-import SKILL_DATA_JSON from './data/skill-data.json';
-import GOLDEN_SKILL_DATA_JSON from './data/golden-skill-data.json';
-
-import FUSION_CHART_JSON from './data/fusion-chart.json';
-import GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
+import { FusionTrioService as IFusionTrioService } from '../compendium/models';
+import { 
+  COMPENDIUM_CONFIG,
+  P3_NORMAL_FISSION_CALCULATOR,
+  P3_NORMAL_FUSION_CALCULATOR,
+  P3_TRIPLE_FISSION_CALCULATOR,
+  P3_TRIPLE_FUSION_CALCULATOR 
+} from '../compendium/constants';
+import { CompendiumConfig } from './models';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -28,8 +20,10 @@ export class FusionDataService implements IFusionTrioService {
   fusionCalculator = P3_NORMAL_FUSION_CALCULATOR;
   triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
   triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
-  appName = 'Persona 4';
-  skillsHaveFuse = false;
+
+  compConfig: CompendiumConfig;
+  gameAbbr: string;
+  appName: string;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -40,41 +34,31 @@ export class FusionDataService implements IFusionTrioService {
   fusionChart: Observable<PersonaFusionChart>;
 
   private _tripleChart: PersonaFusionChart;
-  private _squareChart$: BehaviorSubject<SquareChart>;
-  squareChart: Observable<SquareChart>;
+  private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
+  squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
-  constructor(private router: Router) {
-    const game = router.url.split('/')[1];
-    const demonData: any = [DEMON_DATA_JSON];
-    const enemyData: any = game !== 'p4g' ? [ENEMY_DATA_JSON] : [GOLDEN_ENEMY_DATA_JSON];
-    const skillData: any = [SKILL_DATA_JSON];
-    let fusionChart = FUSION_CHART_JSON;
-    let races = Races.slice(0, Races.length - 3);
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, router: Router) {
+    const gameCand = router.url.split('/')[1];
+    const game = compConfig.demonData[gameCand] ? gameCand : 'p4';
 
-    if (game === 'p4g') {
-      demonData.push(GOLDEN_DEMON_DATA_JSON);
-      skillData.push(GOLDEN_SKILL_DATA_JSON);
-      fusionChart = GOLDEN_FUSION_CHART_JSON;
-      races = Races.slice(0, Races.length - 1);
-      this.appName = 'Persona 4 Golden';
-      this.skillsHaveFuse = true;
-    }
+    this.appName = compConfig.gameTitles[game];
+    this.compConfig = compConfig;
+    this.gameAbbr = game;
 
-    this._compendium = new Compendium(demonData, enemyData, skillData);
+    this._compendium = new Compendium(compConfig, game);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 
-    this._fusionChart = new PersonaFusionChart(fusionChart, races);
+    this._fusionChart = new PersonaFusionChart(compConfig.normalTable[game], compConfig.races);
     this._fusionChart$ = new BehaviorSubject(this._fusionChart);
     this.fusionChart = this._fusionChart$.asObservable();
 
-    this._tripleChart = new PersonaFusionChart(fusionChart, races, true);
+    this._tripleChart = new PersonaFusionChart(compConfig.normalTable[game], compConfig.races, true);
     this._squareChart$ = new BehaviorSubject({
       normalChart: this._fusionChart,
       tripleChart: this._tripleChart,
-      raceOrder: RaceOrder
+      raceOrder: compConfig.raceOrder
     });
-
     this.squareChart = this._squareChart$.asObservable();
   }
 

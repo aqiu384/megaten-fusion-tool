@@ -1,12 +1,10 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, AfterViewChecked, OnDestroy, ViewChild, OnChanges } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { BehaviorSubject } from 'rxjs';
-import { Subscription } from 'rxjs';
 
+import { Demon } from '../../compendium/models';
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistElements, ElementOrder, APP_TITLE } from '../constants';
-import { Demon } from '../models';
+import { CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -20,12 +18,12 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
-        [statHeaders]="statHeaders"
+        [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
         [inherit]="demon.inherit">
       </app-demon-stats>
       <app-demon-resists
-        [resistHeaders]="resistanceHeaders"
+        [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-inherits
@@ -34,12 +32,12 @@ import { FusionDataService } from '../fusion-data.service';
         [inherits]="compendium.getInheritElems(demon.inherit)">
       </app-demon-inherits>
       <app-demon-skills
-        [elemOrder]="elemOrder"
+        [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-smt-fusions [hasTripleFusion]="true" [showFusionAlert]="demon.fusion === 'excluded'">
-        DLC marked as excluded, fusions involving {{ name }} may be inaccurate!
+      <app-smt-fusions
+        [hasTripleFusion]="true">
       </app-smt-fusions>
     </ng-container>
     <ng-container *ngIf="!demon">
@@ -58,10 +56,7 @@ export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
-
-  statHeaders = BaseStats;
-  elemOrder = ElementOrder;
-  resistanceHeaders = ResistElements;
+  @Input() compConfig: CompendiumConfig;
 }
 
 @Component({
@@ -71,16 +66,20 @@ export class DemonEntryComponent {
     <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
     <app-enemy-entry *ngIf="demon && demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-enemy-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {
+  compConfig: CompendiumConfig;
+
   constructor(
     private route: ActivatedRoute,
     private title: Title,
@@ -89,5 +88,6 @@ export class DemonEntryContainerComponent extends DECC {
   ) {
     super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
+    this.compConfig = fusionDataService.compConfig;
   }
 }
