@@ -2,20 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { SharedModule } from '../shared/shared.module';
-import { SharedCompendiumModule } from '../compendium/compendium.module';
 import { CompendiumRoutingModule } from './compendium-routing.module';
-
-import { CompendiumComponent } from './components/compendium.component';
-import { DemonListContainerComponent } from './components/demon-list.component';
-import { SkillListContainerComponent } from './components/skill-list.component';
-
-import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
-import { EnemyEntryComponent } from './components/enemy-entry.component';
-
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
+import { P4CompendiumModule } from './p4-compendium.module';
 import { CompendiumConfig } from './models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -88,17 +79,8 @@ export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
-    SharedCompendiumModule,
+    P4CompendiumModule,
     CompendiumRoutingModule
-  ],
-  declarations: [
-    CompendiumComponent,
-    DemonListContainerComponent,
-    SkillListContainerComponent,
-    DemonEntryComponent,
-    DemonEntryContainerComponent,
-    EnemyEntryComponent
   ],
   providers: [
     Title,

@@ -48,6 +48,11 @@
     "element": "curse",
     "unique": "Tsukiyomi"
   },
+  "Active Support": {
+    "effect": "Moral Support may now Charge or recover SP.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
   "Adverse Resolve": {
     "effect": "Increase critical rate when being ambushed.",
     "element": "passive",
@@ -113,6 +118,11 @@
     "effect": "Cure all ailments of party except for unique status.",
     "element": "healing",
     "talk": "Scathach"
+  },
+  "Analysis": {
+    "effect": "Confirm affinities you have previously attacked.",
+    "element": "passive",
+    "unique": "Necronomicon"
   },
   "Angelic Grace": {
     "effect": "Double evasion against Fire/Ice/Elec/Wind/Nuke/Psy/Bless/Curse attacks.",
@@ -532,6 +542,11 @@
     "element": "support",
     "talk": "Apsaras"
   },
+  "Emergency Shift": {
+    "effect": "Chance to swap current party with backups when 2 or more people are KO'd.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
   "Endure": {
     "effect": "Survive one fatal blow with 1 HP remaining.",
     "element": "passive",
@@ -610,6 +625,11 @@
     "effect": "Increase chance of inflicting Fear.",
     "element": "passive",
     "fuse": "Kodama"
+  },
+  "Final Guard": {
+    "effect": "Chance to nullify a fatal attack to a current party member.",
+    "element": "passive",
+    "unique": "Necronomicon"
   },
   "Fire Amp": {
     "effect": "Strengthen Fire attacks by 50%.",
@@ -1208,6 +1228,11 @@
     "element": "almighty",
     "talk": "Mot"
   },
+  "Mementos Scan": {
+    "effect": "Chance to fully map a floor of Mementos when entering that floor.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
   "Memory Blow": {
     "cost": 15,
     "effect": "Deal light Phys damage and inflict Forget (low odds) to all foes.",
@@ -1226,6 +1251,11 @@
     "element": "phys",
     "fuse": "Ganesha",
     "talk": "Ganesha"
+  },
+  "Moral Support": {
+    "effect": "Chance to cast Kaja or party-healing magic during battle.",
+    "element": "passive",
+    "unique": "Necronomicon"
   },
   "Morning Star": {
     "cost": 1054,
@@ -1391,6 +1421,11 @@
     "element": "healing",
     "fuse": "Genbu",
     "talk": "Silky"
+  },
+  "Position Hack": {
+    "effect": "Chance to instantly Hold Up enemies when starting a battle.",
+    "element": "passive",
+    "unique": "Necronomicon"
   },
   "Pressing Stance": {
     "effect": "Reduce hit rate by 2/3 of all incoming attack when being ambushed.",
@@ -1741,6 +1776,26 @@
     "element": "phys",
     "unique": "Enemies"
   },
+  "Subrecover HP": {
+    "effect": "After battle, 10% HP recovery for backup allies.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
+  "Subrecover HP EX": {
+    "effect": "After battle, 20% HP recovery for backup allies.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
+  "Subrecover SP": {
+    "effect": "After battle, 1% SP recovery for backup allies.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
+  "Subrecover SP EX": {
+    "effect": "After battle, 3% SP recovery for backup allies.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
   "Sukukaja": {
     "cost": 1008,
     "effect": "Increase 1 ally's Agility for 3 turns.",
@@ -1850,6 +1905,16 @@
   "Touch n' Go": {
     "effect": "Apply Sukukaja when performing Baton Pass .",
     "element": "passive"
+  },
+  "Treasure Reboot": {
+    "effect": "Chance to revive search objects in the area after battle.",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
+  "Treasure Skimmer": {
+    "effect": "Find out if a foe is carrying a rare item ahead of time.",
+    "element": "passive",
+    "unique": "Necronomicon"
   },
   "Trigger Happy": {
     "effect": "Increase critical rate of Gun attacks.",

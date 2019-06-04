@@ -6,7 +6,8 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
-export const Races = [
+export const Races = [];
+const BaseRaces = [
   'Fool',
   'Magician',
   'Priestess',
@@ -29,6 +30,11 @@ export const Races = [
   'Sun',
   'Judgement'
 ];
+
+for (const race of BaseRaces) {
+  Races.push(race);
+  Races.push(race + ' P');
+}
 
 export const ResistanceElements = [
   'phys',

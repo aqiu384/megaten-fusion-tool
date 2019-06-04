@@ -1,4 +1,29 @@
 {
+  "AoA Level 1": {
+    "effect": "Increases All-out Attack damage output to level 1",
+    "element": "passive",
+    "unique": true
+  },
+  "AoA Level 2": {
+    "effect": "Increases All-out Attack damage output to level 2",
+    "element": "passive",
+    "unique": true
+  },
+  "AoA Level 3": {
+    "effect": "Increases All-out Attack damage output to level 3",
+    "element": "passive",
+    "unique": true
+  },
+  "AoA Level 4": {
+    "effect": "Increases All-out Attack damage output to level 4",
+    "element": "passive",
+    "unique": true
+  },
+  "AoA Level 5": {
+    "effect": "Increases All-out Attack damage output to max level",
+    "element": "passive",
+    "unique": true
+  },
   "Burning Petals": {
     "cost": 1034,
     "effect": "Deals severe Fire damage to all foes",
@@ -7,16 +32,46 @@
     "power": 400,
     "unique": true
   },
+  "Certain Escape": {
+    "effect": "Escape random battles successfully",
+    "element": "passive",
+    "unique": true
+  },
+  "Complete Analysis": {
+    "effect": "Reveals all elemental affinities on all enemies",
+    "element": "passive",
+    "unique": true
+  },
   "Dragon Hustle": {
     "cost": 1150,
     "effect": "Increases Attack, Defense, and Hit/Evasion rates for 3 turns (party)",
     "element": "support",
     "unique": true
   },
+  "Enemy Radar": {
+    "effect": "Reveal the location of Shadows on each floor over a wide area",
+    "element": "passive",
+    "unique": true
+  },
+  "Full Analysis": {
+    "effect": "Reveal an enemy's stats, weak points, and skills (Excludes Bosses)",
+    "element": "passive",
+    "unique": true
+  },
+  "Healing Wave": {
+    "effect": "Recover 5% HP after battle (party)",
+    "element": "passive",
+    "unique": true
+  },
   "Kamui Miracle": {
     "cost": 1025,
     "effect": "Anything could happen... All allies and/or all foes' HP and SP fully recovered. All allies and/or all foes downed. All allies and/or all foes inflicted with random status ailment. Nothing",
     "element": "ailment",
+    "unique": true
+  },
+  "Relaxing Wave": {
+    "effect": "Recover 5% SP after battle (party)",
+    "element": "passive",
     "unique": true
   },
   "Shield of Justice": {
@@ -29,6 +84,21 @@
     "cost": 1030,
     "effect": "Chance of causing Down and Dizzy to all foes",
     "element": "ailment",
+    "unique": true
+  },
+  "Third Eye": {
+    "effect": "Reveal the effectiveness of an attack (after target has been attacked with the same affinity)",
+    "element": "passive",
+    "unique": true
+  },
+  "Treasure Radar": {
+    "effect": "Reveal the location of treasure chests on each floor",
+    "element": "passive",
+    "unique": true
+  },
+  "Weakness Scan": {
+    "effect": "Reveal an enemy's affinity at the start of battle (weakness or immunity)",
+    "element": "passive",
     "unique": true
   },
   "Youthful Wind": {

@@ -80,7 +80,7 @@ export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
   resistElems: [],
 
   enemyData: ENEMY_DATA_JSON,
-  enemyStats: ['HP', 'Patk', 'Matk'],
+  enemyStats: ['HP', 'Atk', 'Def'],
   enemyResists: resistElems,
 
   normalTable: FUSION_CHART_JSON,

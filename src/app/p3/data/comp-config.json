@@ -28,9 +28,7 @@
     "Moon",
     "Sun",
     "Judgement",
-    "Aeon",
-    "Jester",
-    "World"
+    "Aeon"
   ],
   "resistCodes": {
     "w": 1125,
@@ -41,7 +39,9 @@
     "d": -1100
   },
   "resistElems": [
-    "phys",
+    "slash",
+    "strike",
+    "pierce",
     "fire",
     "ice",
     "elec",
@@ -50,11 +50,13 @@
     "dark"
   ],
   "skillElems": [
+    "lidark",
     "almighty",
     "ailment",
     "recovery",
     "support",
     "special",
+    "all",
     "passive"
   ]
 }

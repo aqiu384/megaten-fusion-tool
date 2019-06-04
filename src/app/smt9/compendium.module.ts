@@ -15,7 +15,6 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import DARK_CHART_JSON from './data/dark-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
-import { DemonEntryComponent } from '../p3/components/demon-entry.component';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};

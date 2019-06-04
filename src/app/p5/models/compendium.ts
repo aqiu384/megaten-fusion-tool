@@ -3,6 +3,7 @@ import { Demon, Enemy, Skill } from '../models';
 import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import DEMON_DATA_JSON from '../data/demon-data.json';
+import PARTY_DATA_JSON from '../data/party-data.json';
 import ENEMY_DATA_JSON from '../data/enemy-data.json';
 import SUBBOSS_DATA_JSON from '../data/subboss-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
@@ -40,6 +41,13 @@ export class Compendium implements ICompendium {
     const normalExceptions: { [name: string]: string } = {};
     this._inheritTypes = {};
 
+    for (const [name, json] of Object.entries(PARTY_DATA_JSON)) {
+      json.race += ' P';
+      json['item'] = '-';
+      json['fusion'] = 'party';
+      DEMON_DATA_JSON[name] = json;
+    }
+
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = {
         name,
@@ -50,7 +58,7 @@ export class Compendium implements ICompendium {
         price:   Math.pow(json.stats.reduce((acc, stat) => stat + acc, 0), 2) + 2000,
         stats:   json.stats,
         resists: json.resists.split('').map(char => ResistCodes[char]),
-        fusion: 'normal'
+        fusion:  json['fusion'] || 'normal'
       };
 
       demons[name].inherit = json.inherits;
@@ -127,7 +135,9 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(demons)) {
-      inversions[demon.race][demon.lvl] = name;
+      if (demon.fusion !== 'party') {
+        inversions[demon.race][demon.lvl] = name;
+      }
     }
 
     for (const demon of Object.values(demons)) {
@@ -170,12 +180,14 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(this.demons)) {
-      if (!this.isElementDemon(name)) {
-        ingredients[demon.race].push(demon.lvl);
-      }
+      if (demon.fusion !== 'party') {
+        if (!this.isElementDemon(name)) {
+          ingredients[demon.race].push(demon.lvl);
+        }
 
-      if (!this.specialRecipes.hasOwnProperty(name)) {
-        results[demon.race].push(demon.lvl);
+        if (!this.specialRecipes.hasOwnProperty(name)) {
+          results[demon.race].push(demon.lvl);
+        }
       }
     }
 
