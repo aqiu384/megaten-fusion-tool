@@ -18,6 +18,7 @@ import DARK_CHART_JSON from './data/dark-chart.json';
 import TRIPLE_CHART_JSON from './data/triple-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import INHERIT_SKILLS_JSON from './data/inherit-skills.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -34,6 +35,7 @@ const races = [];
 const raceAligns = {};
 const species = {};
 const speciesLookup = {};
+const inheritSkills = skillElems.reduce((acc, elem) => { acc[elem] = {}; return acc; }, {});
 const DEITIES = [];
 const BEASTS = [];
 
@@ -117,6 +119,12 @@ for (const [name, skill] of Object.entries(SKILL_DATA_JSON)) {
   }
 }
 
+for (const [elem, skills] of Object.entries(INHERIT_SKILLS_JSON)) {
+  inheritSkills[elem] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
+}
+
+console.log(JSON.stringify(inheritSkills));
+
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Devil Summoner: Soul Hackers',
   appCssClasses: ['devilsum', 'dssh'],
@@ -132,6 +140,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
   useSpeciesFusion: false,
+  inheritSkills,
 
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,

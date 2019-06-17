@@ -26,6 +26,7 @@ export interface CompendiumConfig extends BaseComp {
   resistCodes: { [code: string]: number };
   elemOrder: { [elem: string]: number };
   useSpeciesFusion: boolean;
+  inheritSkills?: { [elem: string]: { [skill: string]: number } };
 
   demonData;
   skillData;

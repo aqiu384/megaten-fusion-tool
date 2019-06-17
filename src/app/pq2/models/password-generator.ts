@@ -72,7 +72,10 @@ function encodePq2Demon(demon: DecodedDemon): number[] {
   const xe = Math.floor((((-0.0479755766 * xl + 9.28700353) * xl + 71.9694228) * xl + -81.1026214) * xl + 0.120783542);
   const exp = demon.exp < 0 ? xe : demon.exp;
 
-  playBytes[6] = 256 - playBytes[6];
+  if (demon.language !== 'jpn') {
+    playBytes[6] = 256 - playBytes[6];
+  }
+
   passBytes[0] = demon.demonCode % 256;
   passBytes[1] = demon.lvl * 2 + Math.floor(demon.demonCode / 256);
 

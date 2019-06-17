@@ -34,9 +34,18 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-skills
         [title]="'Innate Skills'"
         [hasTarget]="true"
+        [hasLvl]="false"
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
+      </app-demon-skills>
+      <app-demon-skills *ngIf="compConfig.inheritSkills"
+        [title]="'Inheritable Skills'"
+        [hasTarget]="true"
+        [hasLvl]="false"
+        [elemOrder]="compConfig.elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="compConfig.inheritSkills[demon.inherit]">
       </app-demon-skills>
       <app-smt-fusions
         [hasTripleFusion]="true">
