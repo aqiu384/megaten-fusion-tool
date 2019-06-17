@@ -123,8 +123,6 @@ for (const [elem, skills] of Object.entries(INHERIT_SKILLS_JSON)) {
   inheritSkills[elem] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
 }
 
-console.log(JSON.stringify(inheritSkills));
-
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Devil Summoner: Soul Hackers',
   appCssClasses: ['devilsum', 'dssh'],
