@@ -148,14 +148,14 @@
     "base": [
       "Maragion",
       "Tarunda",
-      "Tenson Korin"
+      "Tenson Kourin"
     ],
     "cnum": 17,
     "gach": [
       "Luck Amp III",
       "Null Charm",
       "Mahamadyne",
-      "Mahamakajaon"
+      "Mahamakajamaon"
     ],
     "grade": 82,
     "race": "Deity",
@@ -272,7 +272,7 @@
     "base": [
       "Tarukaja",
       "Mahama",
-      "Makaraka Shift"
+      "Makara Shift"
     ],
     "cnum": 26,
     "gach": [
@@ -319,7 +319,7 @@
       "Charge",
       "Lunge"
     ],
-    "cnum": 0,
+    "cnum": 205,
     "grade": 21,
     "race": "Mitama",
     "resists": "---s-ss",
@@ -331,7 +331,7 @@
       "Energy Drain",
       "Ice Breath",
       "Meposumudi",
-      "Makaraka Shift",
+      "Makara Shift",
       "Null Ice"
     ],
     "base": [
@@ -401,7 +401,7 @@
     "ai": "atk",
     "arch": [
       "Diara",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Lydia Break",
       "Great Aim",
       "Null Ice"
@@ -434,15 +434,15 @@
     ],
     "base": [
       "Mediarama",
-      "Mother Creation",
+      "Mother's Creation",
       "Maragion"
     ],
     "cnum": 46,
     "gach": [
-      "Judgement Light",
-      "Hellish Mask",
-      "Luck Amp II",
-      "Deadly Bondage"
+      "Vitality Amp III",
+      "Null Bind",
+      "Luck Amp III",
+      "Resist Dark"
     ],
     "grade": 83,
     "race": "Lady",
@@ -475,7 +475,7 @@
       "Makarakarn",
       "Mudodyne",
       "Foresight",
-      "Makaraka Shift",
+      "Makara Shift",
       "Null Dark"
     ],
     "base": [
@@ -590,13 +590,13 @@
     "grade": 84,
     "race": "Avatar",
     "resists": "s--nwnw",
-    "stats": [1018, 158, 128, 138, 178, 170]
+    "stats": [1018, 158, 158, 138, 178, 170]
   },
   "Bayonetta": {
     "ai": "atk",
     "arch": [
       "Strength Amp II",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Sweet Bite",
       "Savage Glee",
       "Null Dark"
@@ -622,7 +622,7 @@
     "ai": "atk",
     "arch": [
       "Agi",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Sweet Bite",
       "Savage Glee",
       "Null Dark"
@@ -650,7 +650,7 @@
       "Wild Instinct",
       "Bolt Storm",
       "Sea of Chaos",
-      "Makaraka Shift",
+      "Makara Shift",
       "Repel Light"
     ],
     "base": [
@@ -862,18 +862,18 @@
   "Bodyconian": {
     "ai": "sup",
     "arch": [
-      "Agi",
+      "Luck Amp II",
       "Sweet Bite",
       "Taunt",
       "Evade",
-      "Null Light"
+      "Resist Light"
     ],
     "base": [
       "Madness",
       "Sexy Dance",
       "Nightlife"
     ],
-    "cnum": 0,
+    "cnum": 202,
     "gach": [
       "Good Aim",
       "Lydia",
@@ -1039,7 +1039,7 @@
     "base": [
       "Savage Glee",
       "Mazandyne",
-      "Gae Bolg"
+      "Gae Bulg"
     ],
     "cnum": 35,
     "gach": [
@@ -1071,6 +1071,32 @@
     "race": "Beast",
     "resists": "-----n-",
     "stats": [896, 159, 112, 112, 147, 112]
+  },
+  "Daisoujou": {
+    "ai": "sup",
+    "arch": [
+      "Magic Amp III",
+      "Mahamadyne",
+      "Diarahan",
+      "Enduring Soul",
+      "Drain Light"
+    ],
+    "base": [
+      "Soul Drain",
+      "Preach",
+      "Cleansing Shout"
+    ],
+    "cnum": 211,
+    "gach": [
+      "Auto-Tarunda",
+      "Recovery Amp",
+      "Recarmdra",
+      "Void Dark Zones"
+    ],
+    "grade": 81,
+    "race": "Fiend",
+    "resists": "-----nn",
+    "stats": [1107, 78, 178, 157, 164, 169]
   },
   "Dakini": {
     "ai": "atk",
@@ -1104,7 +1130,7 @@
       "Mana Gain",
       "Binge Eating",
       "Binding Cry",
-      "Makaraka Shift",
+      "Makara Shift",
       "Repel Dark"
     ],
     "base": [
@@ -1483,6 +1509,32 @@
     "resists": "r--www-",
     "stats": [1042, 216, 93, 142, 126, 142]
   },
+  "Gogmagog": {
+    "ai": "atk",
+    "arch": [
+      "Vitality Amp III",
+      "Muscle Punch",
+      "Charge",
+      "Death Counter",
+      "Repel Phys"
+    ],
+    "base": [
+      "Earthquake",
+      "Life Surge",
+      "Final Opposition"
+    ],
+    "cnum": 220,
+    "gach": [
+      "Phys Pierce Weak",
+      "Auto-Rakuka",
+      "Epitome of Fortitude",
+      "Epitome of Aggression"
+    ],
+    "grade": 80,
+    "race": "Jirae",
+    "resists": "swrnw-w",
+    "stats": [1413, 212, 88, 222, 62, 169]
+  },
   "Gremlin": {
     "ai": "atk",
     "arch": [
@@ -1528,13 +1580,39 @@
     "resists": "s---w--",
     "stats": [1342, 207, 82, 207, 63, 136]
   },
+  "Guan Yu": {
+    "ai": "atk",
+    "arch": [
+      "Vitality Amp III",
+      "Vorpal Blade",
+      "War Dance",
+      "Null Mortal",
+      "Drain Phys"
+    ],
+    "base": [
+      "Savage Glee",
+      "Loyal God of War",
+      "Dragon Blade"
+    ],
+    "cnum": 212,
+    "gach": [
+      "Butcher",
+      "Phys Amp",
+      "Great Aim",
+      "Null Bind"
+    ],
+    "grade": 85,
+    "race": "Hero",
+    "resists": "n------",
+    "stats": [1277, 214, 108, 193, 123, 148]
+  },
   "Gucumatz": {
     "ai": "sup",
     "arch": [
       "Wild Guess",
       "Wind Breath",
       "Fog Breath",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Null Fire"
     ],
     "base": [
@@ -1868,6 +1946,32 @@
     "resists": "s----rw",
     "stats": [966, 99, 157, 127, 217, 90]
   },
+  "Hua Po": {
+    "ai": "sup",
+    "arch": [
+      "Meposumudi",
+      "Agidyne",
+      "Amrita",
+      "Fire Boost",
+      "Null Elec"
+    ],
+    "base": [
+      "Maragi",
+      "Agi",
+      "Dodge"
+    ],
+    "cnum": 216,
+    "gach": [
+      "Fire Boost",
+      "Fast Recovery",
+      "Fire Breath",
+      "Agility Amp II"
+    ],
+    "grade": 40,
+    "race": "Jirae",
+    "resists": "-n-w---",
+    "stats": [962, 98, 164, 126, 172, 116]
+  },
   "Huang Di": {
     "ai": "atk",
     "arch": [
@@ -1924,7 +2028,7 @@
     "ai": "atk",
     "arch": [
       "Merciless Blow",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Juon",
       "Savage Glee",
       "Resist Light"
@@ -2037,7 +2141,7 @@
       "Samarecarm",
       "Thunderclap",
       "Concentrate",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Null Force"
     ],
     "base": [
@@ -2314,7 +2418,7 @@
     "ai": "sup",
     "arch": [
       "Vorpal Blade",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Silent Prayer",
       "Auto-Sukuka",
       "Repel Fire"
@@ -2396,7 +2500,7 @@
       "Vitality Amp II",
       "Agidyne",
       "Diarama",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Resist Dark"
     ],
     "base": [
@@ -2462,6 +2566,26 @@
     "resists": "-nw--ss",
     "stats": [1065, 74, 138, 148, 181, 159]
   },
+  "Kodama": {
+    "ai": "atk",
+    "arch": [
+      "Lunge",
+      "Mazan",
+      "Diara",
+      "Back Attack",
+      "Repel Force"
+    ],
+    "base": [
+      "Zan",
+      "Hama",
+      "Fast Recovery"
+    ],
+    "cnum": 215,
+    "grade": 22,
+    "race": "Jirae",
+    "resists": "-w--n--",
+    "stats": [910, 115, 152, 115, 164, 115]
+  },
   "Komokuten": {
     "ai": "atk",
     "arch": [
@@ -2506,6 +2630,25 @@
     "race": "Yoma",
     "resists": "---ws--",
     "stats": [741, 140, 122, 79, 158, 150]
+  },
+  "Koropokkur": {
+    "ai": "sup",
+    "arch": [
+      "Amrita",
+      "Mazio",
+      "Sukukaja",
+      "Wild Guess",
+      "Drain Light"
+    ],
+    "base": [
+      "Tarunda",
+      "Hama"
+    ],
+    "cnum": 214,
+    "grade": 12,
+    "race": "Jirae",
+    "resists": "-----nw",
+    "stats": [1079, 86, 132, 151, 150, 132]
   },
   "Kresnik": {
     "ai": "atk",
@@ -2619,11 +2762,37 @@
       "Charge",
       "Concentrate"
     ],
-    "cnum": 0,
+    "cnum": 207,
     "grade": 31,
     "race": "Mitama",
     "resists": "--s--ss",
     "stats": [976, 106, 106, 129, 144, 106]
+  },
+  "Kwancha": {
+    "ai": "sup",
+    "arch": [
+      "Outbreak",
+      "Mind Break",
+      "Binding Cry",
+      "Infernal Mask",
+      "Null Force"
+    ],
+    "base": [
+      "Toxic Sting",
+      "Mahama",
+      "Insanity"
+    ],
+    "cnum": 217,
+    "gach": [
+      "Magic Amp II",
+      "Madness",
+      "Hellish Mask",
+      "Deadly Poison"
+    ],
+    "grade": 46,
+    "race": "Jirae",
+    "resists": "----w--",
+    "stats": [919, 145, 135, 117, 135, 176]
   },
   "Lailah": {
     "ai": "atk",
@@ -2927,7 +3096,7 @@
   "Man Eater": {
     "ai": "sup",
     "arch": [
-      "Agi",
+      "Deathtouch",
       "Bleeder",
       "Binding Claw",
       "Insanity",
@@ -2938,7 +3107,7 @@
       "Eat Whole",
       "Sass"
     ],
-    "cnum": 0,
+    "cnum": 203,
     "gach": [
       "Berserker",
       "Deadly Bondage",
@@ -2979,8 +3148,8 @@
   "Masakado": {
     "ai": "atk",
     "arch": [
-      "Agi",
-      "Hurricane Slash",
+      "Enduring Soul",
+      "Myriad Arrows",
       "Binge Eating",
       "Phys Amp",
       "Drain Phys"
@@ -2990,7 +3159,7 @@
       "Warlord's Wrath",
       "Occult Flash"
     ],
-    "cnum": 0,
+    "cnum": 204,
     "gach": [
       "Auto-Rakunda",
       "Auto-Sukunda",
@@ -3027,6 +3196,32 @@
     "race": "Herald",
     "resists": "-wn-rr-",
     "stats": [1060, 97, 201, 147, 133, 170]
+  },
+  "Matador": {
+    "ai": "atk",
+    "arch": [
+      "Taunt",
+      "Hades Blast",
+      "Agile Cry",
+      "Great Aim",
+      "Repel Ice"
+    ],
+    "base": [
+      "Dark Sword",
+      "Evade",
+      "Andalucia"
+    ],
+    "cnum": 209,
+    "gach": [
+      "Deadly Mute",
+      "Speedster",
+      "Vorpal Blade",
+      "Taunt"
+    ],
+    "grade": 73,
+    "race": "Fiend",
+    "resists": "s-w--ss",
+    "stats": [858, 208, 67, 104, 237, 154]
   },
   "Melchom": {
     "ai": "rec",
@@ -3257,10 +3452,10 @@
     ],
     "cnum": 190,
     "gach": [
-      "Tetraka Shift",
+      "Tetra Shift",
       "Infernal Mask",
       "Insanity",
-      "Makaraka Shift"
+      "Makara Shift"
     ],
     "grade": 95,
     "race": "Fiend",
@@ -3312,6 +3507,26 @@
     "race": "Haunt",
     "resists": "-----wn",
     "stats": [863, 87, 201, 105, 118, 152]
+  },
+  "Nadja": {
+    "ai": "atk",
+    "arch": [
+      "Dmg Panel V II",
+      "Mazan",
+      "Media",
+      "Fast Recovery",
+      "Null Force"
+    ],
+    "base": [
+      "Meposumudi",
+      "Diara",
+      "New Hope"
+    ],
+    "cnum": 210,
+    "grade": 30,
+    "race": "Fairy",
+    "resists": "--w-s--",
+    "stats": [868, 97, 153, 106, 148, 153]
   },
   "Naga": {
     "ai": "atk",
@@ -3470,7 +3685,7 @@
       "Media",
       "Recarm"
     ],
-    "cnum": 0,
+    "cnum": 206,
     "grade": 26,
     "race": "Mitama",
     "resists": "----sss",
@@ -3638,7 +3853,7 @@
       "Tetrakarn",
       "Mamudoon",
       "Nocturne",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Null Phys"
     ],
     "base": [
@@ -3741,7 +3956,7 @@
     ],
     "base": [
       "Resist Force",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Holy Wrath"
     ],
     "cnum": 9,
@@ -3755,6 +3970,26 @@
     "race": "Megami",
     "resists": "s----nw",
     "stats": [896, 192, 74, 111, 164, 182]
+  },
+  "Parvati": {
+    "ai": "rec",
+    "arch": [
+      "Recarm",
+      "Mahama",
+      "Amrita",
+      "Recovery Boost",
+      "Null Fire"
+    ],
+    "base": [
+      "Mediara",
+      "Auto-Sukuka",
+      "Joy Song"
+    ],
+    "cnum": 213,
+    "grade": 60,
+    "race": "Megami",
+    "resists": "-ws--ss",
+    "stats": [981, 92, 170, 130, 152, 160]
   },
   "Patrimpas": {
     "ai": "rec",
@@ -4014,7 +4249,7 @@
     ],
     "base": [
       "Fire Boost",
-      "Makaraka Shift",
+      "Makara Shift",
       "Agidyne"
     ],
     "cnum": 15,
@@ -4184,7 +4419,7 @@
     "base": [
       "Mudo",
       "Lunge",
-      "You're next!"
+      "You're Next"
     ],
     "cnum": 192,
     "grade": 42,
@@ -4206,7 +4441,7 @@
       "Makarakarn",
       "Life Bonus"
     ],
-    "cnum": 0,
+    "cnum": 208,
     "grade": 36,
     "race": "Mitama",
     "resists": "-s---ss",
@@ -4499,6 +4734,32 @@
     "resists": "sdwd---",
     "stats": [1032, 229, 91, 141, 160, 151]
   },
+  "Shiva A": {
+    "ai": "atk",
+    "arch": [
+      "Vorpal Blade",
+      "Soul Drain",
+      "Blood Rush",
+      "Savage Glee",
+      "Drain Force"
+    ],
+    "base": [
+      "Serial Killer",
+      "Ishvara",
+      "Third Eye"
+    ],
+    "cnum": 0,
+    "gach": [
+      "Null Mute",
+      "Great Aim",
+      "Mana Aid",
+      "Null Charm"
+    ],
+    "grade": 93,
+    "race": "Fury",
+    "resists": "sd-dw--",
+    "stats": [1032, 91, 229, 141, 160, 151]
+  },
   "Siegfried": {
     "ai": "atk",
     "arch": [
@@ -4517,7 +4778,7 @@
     "gach": [
       "Great Aim",
       "Auto-Sukunda",
-      "Hurricane Slash",
+      "Myriad Arrows",
       "Resist Dark"
     ],
     "grade": 83,
@@ -4633,7 +4894,7 @@
     ],
     "base": [
       "Barrier",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Mahamaon"
     ],
     "cnum": 29,
@@ -4705,7 +4966,7 @@
     ],
     "base": [
       "Berserker God",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Ragnarok"
     ],
     "cnum": 140,
@@ -4772,7 +5033,7 @@
       "Hamadyne",
       "Deathbound",
       "Mediara",
-      "Tetraka Shift",
+      "Tetra Shift",
       "Resist Fire"
     ],
     "base": [
@@ -4844,6 +5105,32 @@
     "resists": "-nw--nw",
     "stats": [1028, 121, 140, 140, 163, 140]
   },
+  "Titan": {
+    "ai": "atk",
+    "arch": [
+      "Strength Amp II",
+      "Titanomachia",
+      "Charge",
+      "Tetra Shift",
+      "Null Phys"
+    ],
+    "base": [
+      "Muscle Punch",
+      "Bloody Glee",
+      "Unyielding Phalanx"
+    ],
+    "cnum": 218,
+    "gach": [
+      "Phys Boost",
+      "Vitality Amp III",
+      "Wild Guess",
+      "Retaliate"
+    ],
+    "grade": 60,
+    "race": "Jirae",
+    "resists": "s------",
+    "stats": [1319, 190, 84, 202, 103, 140]
+  },
   "Titania": {
     "ai": "sup",
     "arch": [
@@ -4870,10 +5157,36 @@
     "resists": "-----ss",
     "stats": [722, 111, 235, 74, 104, 140]
   },
+  "Tlaltecuhtli": {
+    "ai": "atk",
+    "arch": [
+      "Megido",
+      "Maragion",
+      "Recarmdra",
+      "Elec Boost",
+      "Drain Elec"
+    ],
+    "base": [
+      "Mazionga",
+      "Agidyne",
+      "Earth Sacrifice"
+    ],
+    "cnum": 219,
+    "gach": [
+      "Hellfire",
+      "Life Gain",
+      "Bolt Storm",
+      "Resist Ice"
+    ],
+    "grade": 66,
+    "race": "Jirae",
+    "resists": "s-wn---",
+    "stats": [1084, 112, 184, 152, 105, 163]
+  },
   "Trumpeter": {
     "ai": "atk",
     "arch": [
-      "Mahamakajaon",
+      "Mahamakajamaon",
       "Judgement",
       "Demon Birth Cry",
       "Auto-Rakuka",

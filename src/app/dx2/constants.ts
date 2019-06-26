@@ -33,6 +33,7 @@ export const Races = [
   'Avian',
   'Dragon',
   'Jaki',
+  'Jirae',
   'Fiend',
   'Hero',
   'Reaper',
@@ -49,21 +50,21 @@ export const Races = [
 ];
 
 export const ResistanceElements = [
-  'phys',
-  'fire',
+  'phy',
+  'fir',
   'ice',
-  'elec',
-  'force',
-  'expel',
-  'death'
+  'ele',
+  'for',
+  'lig',
+  'dar'
 ];
 
 export const SkillElements = ResistanceElements.concat(
-  'ailment',
-  'recovery',
-  'almighty',
-  'support',
-  'passive'
+  'ail',
+  'rec',
+  'alm',
+  'sup',
+  'pas'
 );
 
 export const BaseStats = [

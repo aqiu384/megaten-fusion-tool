@@ -58,11 +58,11 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      const powerUnit = json.element === 'recovery' ? ' Rec ' : ' Dmg ';
+      const powerUnit = json.elem === 'recovery' ? ' Rec ' : ' Dmg ';
 
       skills[name] = {
         name,
-        element: json.element,
+        element: json.elem,
         power:   json.power || 0,
         cost:    json.cost + 1000 || 0,
         rank:    10 * json.cost - 20 + (json.power || 0) / 100 || 0,
