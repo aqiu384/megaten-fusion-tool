@@ -20,25 +20,18 @@ import { FusionDataService } from '../fusion-data.service';
       <table>
         <thead>
           <tr>
-            <th [attr.colSpan]="statHeaders.length + 2">
+            <th [attr.colSpan]="statHeaders.length + 1">
               Grade {{ demon.lvl }} {{ demon.race }} {{ demon.name }}
             </th>
           </tr>
           <tr>
-            <th>Stats</th>
             <th *ngFor="let stat of statHeaders">{{ stat }}</th>
             <th>AI</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Base</td>
             <td *ngFor="let stat of demon.stats">{{ stat }}</td>
-            <td>{{ aiTypes[demon.ai] }}</td>
-          </tr>
-          <tr>
-            <td>Max</td>
-            <td *ngFor="let stat of demon.mstats">{{ stat }}</td>
             <td>{{ aiTypes[demon.ai] }}</td>
           </tr>
         </tbody>
@@ -50,6 +43,7 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-skills
         [title]="'Innate Skills'"
         [hasLvl]="false"
+        [hasRank]="true"
         [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
@@ -57,6 +51,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-skills>
       <app-demon-skills
         [title]="'Archetype Skills'"
+        [hasRank]="true"
         [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"
@@ -64,6 +59,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-skills>
       <app-demon-skills
         [title]="'Gacha Skills'"
+        [hasRank]="true"
         [hasTarget]="true"
         [elemOrder]="elemOrder"
         [compendium]="compendium"

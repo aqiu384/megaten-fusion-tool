@@ -36,11 +36,14 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(this.compConfig.demonData)) {
+      const baseSkills = Object.values(json['skills']).reduce<number>((acc, lvl) => lvl === 0 ? acc + 1 : acc, 0);
+      const price = Math.floor((800 + 120 * json['lvl']) * (1 + 0.25 * baseSkills) / 10) * 10;
+
       demons[name] = {
         name,
         race:     json['race'],
         lvl:      json['lvl'],
-        price:    json['lvl'] * json['lvl'] * 100,
+        price,
         stats:    json['stats'].slice(0, 2),
         skills:   json['skills'],
         resists:  [],

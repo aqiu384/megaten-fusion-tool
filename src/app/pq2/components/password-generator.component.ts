@@ -25,8 +25,9 @@ import { encodeDemon } from '../models/password-generator';
         </tr>
       </table>
       <table>
-        <tr><th colspan="6">Persona Entry</th></tr>
+        <tr><th colspan="7">Persona Entry</th></tr>
         <tr>
+          <th>Price</th>
           <th>Language</th>
           <th>Level</th>
           <th>HP</th>
@@ -35,6 +36,7 @@ import { encodeDemon } from '../models/password-generator';
           <th>Demon</th>
         </tr>
         <tr>
+          <td>{{ price }}</td>
           <td>
             <select formControlName="language">
               <option value="jpn">Japanese</option>
@@ -129,6 +131,7 @@ export class PasswordGeneratorComponent implements OnChanges {
   range99 = Array(99);
   range299 = Array(299);
   passBytes: Array<number>;
+  price = 0;
 
   blankSkill: Skill = {
     code: 0, cost: 0, level: 0, rank: 0, target: 'Self',
@@ -174,6 +177,8 @@ export class PasswordGeneratorComponent implements OnChanges {
           skillCodes: dskills.map(s => s.code),
         };
 
+        const baseSkills = decoded.skillCodes.reduce<number>((acc, lvl) => lvl !== 0 ? acc + 1 : acc, 0);
+        this.price = Math.floor((800 + 120 * decoded.lvl) * (1 + 0.25 * baseSkills) / 10) * 10;
         this.passBytes = encodeDemon(decoded, this.compConfig.appTitle);
       }
     });

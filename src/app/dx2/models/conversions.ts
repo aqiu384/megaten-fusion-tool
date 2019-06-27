@@ -24,7 +24,8 @@ const SPECIAL_FUSION_COSTS = {
   'Kinmamon': 10000 / 4,
   'Attis': 200000 / 4,
   'Kama': 200000 / 4,
-  'Alilat': 500000 / 4
+  'Alilat': 500000 / 4,
+  'Parvati': 840000 / 3
 }
 
 function estimateMagCost(grade1, grade2, gradeR): number {

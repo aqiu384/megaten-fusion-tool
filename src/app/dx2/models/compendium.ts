@@ -34,9 +34,6 @@ export class Compendium implements ICompendium {
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       const stars = Math.floor(json.grade / 20) + 1;
-      const estats = json.stats.map(x => Math.floor(x / (12 - stars)));
-
-      estats[0] = Math.floor(estats[0] / 1.5);
 
       demons[name] = {
         name,
@@ -46,8 +43,7 @@ export class Compendium implements ICompendium {
         fusion:  'normal',
         reikos:  {},
         price:   Math.pow(json.grade, 3),
-        stats:   [stars].concat(estats),
-        mstats:  [6].concat(json.stats),
+        stats:   [stars].concat(json.stats),
         resists: json.resists.split('').map(char => ResistCodes[char]),
         skills:  json.base.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         learned: json.arch.reduce((acc, skill, i) => { acc[skill] = 110 + i; return acc; }, {}),
@@ -65,7 +61,7 @@ export class Compendium implements ICompendium {
         element: json.elem,
         power:   json.power || 0,
         cost:    json.cost + 1000 || 0,
-        rank:    10 * json.cost - 20 + (json.power || 0) / 100 || 0,
+        rank:    json.points || 99,
         effect:  (json.power ? json.power.toString() + powerUnit : ' ') + (json.effect || ''),
         target:  json.target,
         level:   0,
