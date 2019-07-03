@@ -20,7 +20,7 @@ function findBin(n: number, bins: number[]): number {
 export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceT1, lvl: lvlT1 } = comp.getDemon(nameT1);
-  const lvlMod = 3 * trioChart.lvlModifier - 2;
+  const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
 
   const fusionT2Rs = trioChart.getRaceFusions(raceT1);
@@ -95,7 +95,7 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: Squa
 export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceN1, lvl: lvlN1 } = comp.getDemon(nameN1);
-  const lvlMod = 3 * trioChart.lvlModifier - 2;
+  const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
 
   const fusionN2T1Rs: FusionTable = {};
@@ -177,7 +177,7 @@ export function fuseWithSameRace(nameN1: string, comp: Compendium, chart: Square
       if (comp.isElementDemon(raceR)) {
         recipes.push({ name1, name2, name3: raceR });
       } else {
-        const lvlRp = (lvlT1 + lvlN1 + lvlN2 - 2) / 3 + lvlMod;
+        const lvlRp = (lvlT1 + lvlN1 + lvlN2) / 3 + lvlMod;
         const binR = findBin(lvlRp, binRs);
 
         if (binR !== -1) {

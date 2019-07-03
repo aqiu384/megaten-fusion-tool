@@ -21,7 +21,7 @@ function findBin(n: number, bins: number[]): number {
 export function splitWithDiffRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
-  const lvlMod = 3 * trioChart.lvlModifier - 2;
+  const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
 
   const binRs = comp.getResultDemonLvls(raceR);
@@ -149,7 +149,7 @@ export function splitWithSameRace(nameR: string, comp: Compendium, chart: Square
         const binRs = binN2s.filter(lvl => lvl !== lvlN2);
         const name3 = comp.reverseLookupDemon(raceR, lvlN2);
 
-        const lvlRp = (lvlT1 + lvlN1 + lvlN2 - 2) / 3 + lvlMod;
+        const lvlRp = (lvlT1 + lvlN1 + lvlN2) / 3 + lvlMod;
         const binR = findBin(lvlRp, binRs);
 
         if (binR !== -1 && binRs[binR] === lvlR) {
