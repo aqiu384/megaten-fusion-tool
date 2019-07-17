@@ -1,0 +1,578 @@
+{
+  "Allure": {
+    "cost": 1008,
+    "effect": "Inflicts Charm, all enemies.",
+    "elem": "cha",
+    "skills": ["Marin Karin", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Angelic Grace": {
+    "cost": 1020,
+    "effect": "Mediarama and Rakukaja",
+    "elem": "rec",
+    "skills": ["Media,Mediarama,Mediarahan", "Media,Mediarama,Mediarahan"]
+  },
+  "Black Sun": {
+    "cost": 1099,
+    "effect": "Severe almighty damage, all enemies.",
+    "elem": "alm",
+    "skills": ["Chaturbhuja", "Spiteful Force", "Third Eye"]
+  },
+  "Blizzard Shot": {
+    "cost": 1009,
+    "effect": "Heavy ice damage/Freeze, 1 enemy.",
+    "elem": "ice",
+    "skills": ["Handgun", "Drain *"]
+  },
+  "Blizzard Shot II": {
+    "cost": 1009,
+    "effect": "Heavy ice damage/Freeze, 1 enemy.",
+    "elem": "ice",
+    "skills": ["Handgun B", "Drain *"]
+  },
+  "Blood Curse": {
+    "cost": 1012,
+    "effect": "Inflicts Curse, all enemies.",
+    "elem": "dea",
+    "skills": ["Curse", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Call Angel": {
+    "cost": 1050,
+    "effect": "Great HP recovery and Rakukaja twice, party.",
+    "elem": "rec",
+    "skills": ["Mediarahan", "Mediarahan"]
+  },
+  "Call Seraph": {
+    "cost": 1030,
+    "effect": "Full HP recovery, removes ailments, revives, party.",
+    "elem": "rec",
+    "skills": ["Mediarahan", "Samarecarm"]
+  },
+  "Charge": {
+    "cost": 1015,
+    "effect": "All kinds of -kaja buffs in one cast, party.",
+    "elem": "sup",
+    "skills": ["Mind Charge", "Tarukaja,Rakukaja,Sukukaja"]
+  },
+  "Cocytus": {
+    "cost": 1010,
+    "effect": "Mega ice damage, 1 enemy. High chance of Freeze.",
+    "elem": "ice",
+    "skills": ["Bufudyne", "phy"]
+  },
+  "Cold Wave": {
+    "cost": 1010,
+    "effect": "Moderate ice damage, random enemies. Low chance of Freeze.",
+    "elem": "ice",
+    "skills": ["ice", "Megido,Megidola,Megidolaon"]
+  },
+  "Crossfire": {
+    "cost": 10,
+    "effect": "Heavy gun damage, 1 enemy.",
+    "elem": "gin",
+    "skills": ["gun", "gun", "gun"]
+  },
+  "Crystal Dust": {
+    "cost": 1008,
+    "effect": "Moderate ice damage, all enemies. High chance of Freeze.",
+    "elem": "ice",
+    "skills": ["ice", "Tarukaja,Rakukaja,Sukukaja", "Tarukaja,Rakukaja,Sukukaja"]
+  },
+  "Cyclone": {
+    "cost": 1010,
+    "effect": "Mega force damage/Tarunda, 1 enemy.",
+    "elem": "for",
+    "skills": ["Zandyne", "phy"]
+  },
+  "Debilitate": {
+    "cost": 1017,
+    "effect": "All kinds of -nda debuffs in one cast, all enemies.",
+    "elem": "sup",
+    "skills": ["Mind Charge", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Dekaja": {
+    "cost": 1006,
+    "effect": "Negates all -kaja buffs, all enemies.",
+    "elem": "sup",
+    "skills": ["Tarunda,Rakunda,Sukunda", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Dekunda": {
+    "cost": 1006,
+    "effect": "Negates all -nda debuffs, party.",
+    "elem": "sup",
+    "skills": ["Tarukaja,Rakukaja,Sukukaja", "Tarukaja,Rakukaja,Sukukaja"]
+  },
+  "Demon Fury": {
+    "cost": 25,
+    "effect": "Mega almighty-physical damage/Debilitate, all enemies.",
+    "elem": "phy",
+    "skills": ["Last Meal", "Gate of Hell", "Debilitate"]
+  },
+  "Divine Shot": {
+    "cost": 1015,
+    "effect": "Heavy almighty damage, 1 enemy.",
+    "elem": "alm",
+    "skills": ["Prana Beam", "Drain *"]
+  },
+  "Earth Shot": {
+    "cost": 1004,
+    "effect": "Light earth damage, 1 enemy.",
+    "elem": "ear",
+    "skills": ["Rifle", "Void *"]
+  },
+  "Elec Shot": {
+    "cost": 1006,
+    "effect": "Light elec damage/Shock, random enemies.",
+    "elem": "ele",
+    "skills": ["Submachine Gun", "Void *"]
+  },
+  "Elec Shot II": {
+    "cost": 1006,
+    "effect": "Light elec damage/Shock, all enemies.",
+    "elem": "ele",
+    "skills": ["Shotgun", "Void *"]
+  },
+  "Explode": {
+    "cost": 1010,
+    "effect": "Moderate fire damage, random enemies.",
+    "elem": "fir",
+    "skills": ["Any fire skill", "Megido,Megidola,Megidolaon"]
+  },
+  "Fire Shot": {
+    "cost": 1006,
+    "effect": "Light fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Grenade Gun", "Void *"]
+  },
+  "Flame Shot": {
+    "cost": 1012,
+    "effect": "Moderate fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Grenade Gun", "Repel *"]
+  },
+  "Freeze Shot": {
+    "cost": 1006,
+    "effect": "Moderate ice damage/Freeze, 1 enemy.",
+    "elem": "ice",
+    "skills": ["Handgun", "Repel *"]
+  },
+  "Freeze Shot II": {
+    "cost": 1006,
+    "effect": "Moderate ice damage/Freeze, 1 enemy.",
+    "elem": "ice",
+    "skills": ["Handgun B", "Repel *"]
+  },
+  "Gale Shot": {
+    "cost": 1010,
+    "effect": "Moderate force damage, random enemies.",
+    "elem": "for",
+    "skills": ["Assault Rifle", "Repel *"]
+  },
+  "Gang Blast": {
+    "cost": 8,
+    "effect": "Moderate physical damage, all enemies.",
+    "elem": "phy",
+    "skills": ["phy", "phy", "phy"]
+  },
+  "Genocide": {
+    "cost": 20,
+    "effect": "Heavy physical damage, all enemies. Power related to participants' remaining HP.",
+    "elem": "phy",
+    "skills": ["phy", "phy", "Power Charge"]
+  },
+  "Heavy Rock": {
+    "cost": 1010,
+    "effect": "Moderate earth damage, random enemies.",
+    "elem": "ear",
+    "skills": ["ear", "Megido,Megidola,Megidolaon"]
+  },
+  "Ice Shot": {
+    "cost": 1003,
+    "effect": "Light ice damage/Freeze, 1 enemy.",
+    "elem": "ice",
+    "skills": ["Handgun", "Void *"]
+  },
+  "Ice Shot II": {
+    "cost": 1003,
+    "effect": "Light ice damage/Freeze, 1 enemy.",
+    "elem": "ice",
+    "skills": ["Handgun B", "Void *"]
+  },
+  "Inferno Shot": {
+    "cost": 1018,
+    "effect": "Heavy fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Grenade Gun", "Drain *"]
+  },
+  "Jupiter's Fury": {
+    "cost": 1010,
+    "effect": "Moderate elec damage, random enemies. Low chance of Shock.",
+    "elem": "ele",
+    "skills": ["ele", "Megido,Megidola,Megidolaon"]
+  },
+  "Laevateinn": {
+    "cost": 1010,
+    "effect": "Mega fire damage/Rakunda, 1 enemy.",
+    "elem": "fir",
+    "skills": ["Agidyne", "phy"]
+  },
+  "Landslide": {
+    "cost": 1010,
+    "effect": "Mega earth damage/Sukunda, 1 enemy.",
+    "elem": "ear",
+    "skills": ["Teradyne", "phy"]
+  },
+  "Mabufu": {
+    "cost": 1005,
+    "effect": "Light ice damage, all enemies. Low chance of Freeze.",
+    "elem": "ice",
+    "skills": ["Bufu,Bufula,Bufudyne", "Tera,Terazi,Teradyne"]
+  },
+  "Mabufudyne": {
+    "cost": 1020,
+    "effect": "Heavy ice damage, all enemies. Low chance of Freeze.",
+    "elem": "ice",
+    "skills": ["Bufudyne", "Teradyne"]
+  },
+  "Mabufula": {
+    "cost": 1010,
+    "effect": "Moderate ice damage, all enemies. Low chance of Freeze.",
+    "elem": "ice",
+    "skills": ["Bufula or Bufudyne", "Terazi or Teradyne"]
+  },
+  "Magic Repel": {
+    "cost": 1020,
+    "effect": "Repel any magical or ailment attack except almighty, party.",
+    "elem": "shi",
+    "skills": ["High Counter", "Any magic repel shield"]
+  },
+  "Mahama": {
+    "cost": 1008,
+    "effect": "Reduces HP by half, all enemies.",
+    "elem": "exp",
+    "skills": ["exp", "Media,Mediarama,Mediarahan"]
+  },
+  "Mahamaon": {
+    "cost": 1015,
+    "effect": "Reduces HP by four fifth, all enemies.",
+    "elem": "exp",
+    "skills": ["Hamaon or Mahamaon", "Mediarama or Mediarahan"]
+  },
+  "Makajamon": {
+    "cost": 1007,
+    "effect": "Inflicts Mute, all enemies.",
+    "elem": "mut",
+    "skills": ["Makajam", "Makajam"]
+  },
+  "Mamudo": {
+    "cost": 1008,
+    "effect": "Death fatal, all enemies.",
+    "elem": "dea",
+    "skills": ["dea", "Death Spray or Death Blow"]
+  },
+  "Mamudoon": {
+    "cost": 1015,
+    "effect": "High chance of death fatal, all enemies.",
+    "elem": "dea",
+    "skills": ["Mudoon", "Death Blow"]
+  },
+  "Maragi": {
+    "cost": 1005,
+    "effect": "Light fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Agi,Agilao,Agidyne", "Zan,Zanma,Zandyne"]
+  },
+  "Maragidyne": {
+    "cost": 1020,
+    "effect": "Heavy fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Agidyne", "Zandyne"]
+  },
+  "Maragion": {
+    "cost": 1010,
+    "effect": "Moderate fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Agilao or Agidyne", "Zanma or Zandyne"]
+  },
+  "Matera": {
+    "cost": 1005,
+    "effect": "Light earth damage, all enemies.",
+    "elem": "ear",
+    "skills": ["Tera,Terazi,Teradyne", "Agi,Agilao,Agidyne"]
+  },
+  "Materadyne": {
+    "cost": 1020,
+    "effect": "Heavy earth damage, all enemies.",
+    "elem": "ear",
+    "skills": ["Teradyne", "Agidyne"]
+  },
+  "Materazi": {
+    "cost": 1010,
+    "effect": "Moderate earth damage, all enemies.",
+    "elem": "ear",
+    "skills": ["Terazi or Teradyne", "Agilao or Agidyne"]
+  },
+  "Mazan": {
+    "cost": 1005,
+    "effect": "Light force damage, all enemies.",
+    "elem": "for",
+    "skills": ["Zan,Zanma,Zandyne", "Zio,Zionga,Ziodyne"]
+  },
+  "Mazandyne": {
+    "cost": 1020,
+    "effect": "Heavy force damage, all enemies.",
+    "elem": "for",
+    "skills": ["Zandyne", "Ziodyne"]
+  },
+  "Mazanma": {
+    "cost": 1010,
+    "effect": "Moderate force damage, all enemies.",
+    "elem": "for",
+    "skills": ["Zanma,Zandyne", "Zionga,Ziodyne"]
+  },
+  "Mazio": {
+    "cost": 1005,
+    "effect": "Light elec damage, all enemies. Low chance of Shock.",
+    "elem": "ele",
+    "skills": ["Zio,Zionga,Ziodyne", "Bufu,Bufula,Bufudyne"]
+  },
+  "Maziodyne": {
+    "cost": 1020,
+    "effect": "Heavy elec damage, all enemies. Low chance of Shock.",
+    "elem": "ele",
+    "skills": ["Ziodyne", "Bufudyne"]
+  },
+  "Mazionga": {
+    "cost": 1010,
+    "effect": "Moderate elec damage, all enemies. Low chance of Shock.",
+    "elem": "ele",
+    "skills": ["Zionga,Ziodyne", "Bufula,Bufudyne"]
+  },
+  "Me Patra": {
+    "cost": 1010,
+    "effect": "Removes Panic/Charm/Sleep, party.",
+    "elem": "rec",
+    "skills": ["Patra,Posumudi,Achedi,Closedi,Paraladi,Petradi,Cursedi", "Media,Mediarama,Mediarahan"]
+  },
+  "Media": {
+    "cost": 1008,
+    "effect": "Light HP recovery, party.",
+    "elem": "rec",
+    "skills": ["Dia,Diarama,Diarahan", "Dia,Diarama,Diarahan"]
+  },
+  "Mediarahan": {
+    "cost": 1022,
+    "effect": "Full HP recovery, party.",
+    "elem": "rec",
+    "skills": ["Diarahan", "Diarahan"]
+  },
+  "Mediarama": {
+    "cost": 1012,
+    "effect": "Moderate HP recovery, party.",
+    "elem": "rec",
+    "skills": ["Diarama,Diarahan", "Diarama,Diarahan"]
+  },
+  "Megido": {
+    "cost": 1020,
+    "effect": "Moderate almighty damage, all enemies.",
+    "elem": "alm",
+    "skills": ["exp", "dea"]
+  },
+  "Megidola": {
+    "cost": 1030,
+    "effect": "Heavy almighty damage, all enemies.",
+    "elem": "alm",
+    "skills": ["Hamaon,Mahamaon", "Mudoon,Mamudoon"]
+  },
+  "Megidolaon": {
+    "cost": 1040,
+    "effect": "Mega almighty damage, all enemies.",
+    "elem": "alm",
+    "skills": ["Mahamaon", "Mamudoon"]
+  },
+  "Micro Nova": {
+    "cost": 1010,
+    "effect": "Moderate almighty damage, all enemies.",
+    "elem": "alm",
+    "skills": ["Bufu", "Tera", "Zan"]
+  },
+  "Millennia Curse": {
+    "cost": 1010,
+    "effect": "High chance of death fatal/Curse, all enemies.",
+    "elem": "dea",
+    "skills": ["dea", "dea", "dea"]
+  },
+  "Narukami": {
+    "cost": 1040,
+    "effect": "Mega elec damage, all enemies. Low chance of Shock.",
+    "elem": "ele",
+    "skills": ["Elec Amp", "Ice Amp", "Megido,Megidola,Megidolaon"]
+  },
+  "Neutron Shot": {
+    "cost": 1018,
+    "effect": "Heavy elec damage/Shock, random enemies.",
+    "elem": "ele",
+    "skills": ["Submachine Gun", "Drain *"]
+  },
+  "Neutron Shot II": {
+    "cost": 1018,
+    "effect": "Heavy elec damage/Shock, all enemies.",
+    "elem": "ele",
+    "skills": ["Shotgun", "Drain *"]
+  },
+  "Niflheim": {
+    "cost": 1040,
+    "effect": "Mega ice damage, all enemies. Low chance of Freeze.",
+    "elem": "ice",
+    "skills": ["Ice Amp", "Earth Amp", "Megido,Megidola,Megidolaon"]
+  },
+  "Petrifier": {
+    "cost": 1008,
+    "effect": "Inflicts Petrify, all enemies.",
+    "elem": "dea",
+    "skills": ["Stone Gaze", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Phys Repel": {
+    "cost": 1020,
+    "effect": "Repels physical attack except almighty-physical based, party.",
+    "elem": "shi",
+    "skills": ["Void Phys", "Phys Resist"]
+  },
+  "Primal Dance": {
+    "cost": 13,
+    "effect": "Heavy physical damage, 1 enemy.",
+    "elem": "phy",
+    "skills": ["hun", "hun", "hun"]
+  },
+  "Punishment": {
+    "cost": 1013,
+    "effect": "High chance reduces HP by four fifth, all enemies.",
+    "elem": "exp",
+    "skills": ["exp", "exp", "exp"]
+  },
+  "Quake Shot": {
+    "cost": 1008,
+    "effect": "Moderate earth damage, 1 enemy.",
+    "elem": "ear",
+    "skills": ["Rifle", "Repel *"]
+  },
+  "Seismic Shot": {
+    "cost": 1012,
+    "effect": "Heavy earth damage, 1 enemy.",
+    "elem": "ear",
+    "skills": ["Rifle", "Drain *"]
+  },
+  "Seraph Grace": {
+    "cost": 1016,
+    "effect": "Moderate HP recovery, removes ailments, party.",
+    "elem": "rec",
+    "skills": ["Patra,Posumudi,Achedi,Closedi,Paraladi,Petradi,Cursedi", "Patra,Posumudi,Achedi,Closedi,Paraladi,Petradi,Cursedi", "Media,Mediarama,Mediarahan"]
+  },
+  "Sol Blaster": {
+    "cost": 15,
+    "effect": "Heavy physical damage, all enemies. High critical chance.",
+    "elem": "phy",
+    "skills": ["phy", "phy", "Tarukaja"]
+  },
+  "Sonic Blast": {
+    "cost": 1010,
+    "effect": "Moderate force damage/Stun, random enemies.",
+    "elem": "for",
+    "skills": ["for", "Stun Sphere,Stun Wave", "phy"]
+  },
+  "Stun Wave": {
+    "cost": 1008,
+    "effect": "Inflicts Stun, all enemies.",
+    "elem": "ner",
+    "skills": ["Stun Sphere", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Tempest": {
+    "cost": 1010,
+    "effect": "Moderate force damage, random enemies.",
+    "elem": "for",
+    "skills": ["for", "Megido,Megidola,Megidolaon"]
+  },
+  "Tentarafoo": {
+    "cost": 1015,
+    "effect": "Inflicts Panic, all enemies.",
+    "elem": "pan",
+    "skills": ["Pulinpa", "Tarunda,Rakunda,Sukunda"]
+  },
+  "Thunder Shot": {
+    "cost": 1012,
+    "effect": "Moderate elec damage/Shock, random enemies.",
+    "elem": "ele",
+    "skills": ["Submachine Gun", "Repel *"]
+  },
+  "Thunder Shot II": {
+    "cost": 1012,
+    "effect": "Moderate elec damage/Shock, all enemies.",
+    "elem": "ele",
+    "skills": ["Shotgun", "Repel *"]
+  },
+  "Thunderbolt": {
+    "cost": 1010,
+    "effect": "Mega elec damage, 1 enemy. High chance of Shock.",
+    "elem": "ele",
+    "skills": ["Ziodyne", "phy"]
+  },
+  "Titanomachia": {
+    "cost": 1040,
+    "effect": "Mega earth damage, all enemies.",
+    "elem": "ear",
+    "skills": ["Earth Amp", "Fire Amp", "Megido,Megidola,Megidolaon"]
+  },
+  "Tornado Shot": {
+    "cost": 1015,
+    "effect": "Heavy force damage, random enemies.",
+    "elem": "for",
+    "skills": ["Assault Rifle", "Drain *"]
+  },
+  "Triple Threat": {
+    "cost": 15,
+    "effect": "Mega physical damage, 1 enemy.",
+    "elem": "phy",
+    "skills": ["phy", "phy", "Sukukaja"]
+  },
+  "Trisagion": {
+    "cost": 1040,
+    "effect": "Mega fire damage, all enemies.",
+    "elem": "fir",
+    "skills": ["Fire Amp", "Force Amp", "Megido,Megidola,Megidolaon"]
+  },
+  "Twin Shot": {
+    "cost": 7,
+    "effect": "Moderate gun damage, 1 enemy.",
+    "elem": "gin",
+    "skills": ["gun", "gun"]
+  },
+  "Vanity": {
+    "cost": 1015,
+    "effect": "Inflicts random ailment, all enemies, almighty.",
+    "elem": "alm",
+    "skills": ["ail", "ail"]
+  },
+  "Vayaviya": {
+    "cost": 1040,
+    "effect": "Mega force damage, all enemies.",
+    "elem": "for",
+    "skills": ["Force Amp", "Elec Amp", "Megido,Megidola,Megidolaon"]
+  },
+  "Vile Blade": {
+    "cost": 12,
+    "effect": "Light physical damage, all enemies. Power related to participants' remaining HP.",
+    "elem": "phy",
+    "skills": ["phy", "ail"]
+  },
+  "Wind Shot": {
+    "cost": 1005,
+    "effect": "Light force damage, random enemies.",
+    "elem": "for",
+    "skills": ["Assault Rifle", "Void *"]
+  },
+  "Xanadu": {
+    "cost": 1022,
+    "effect": "Heavy expel damage, all enemies.",
+    "elem": "exp",
+    "skills": ["Mahamaon", "Mediarahan"]
+  }
+}
