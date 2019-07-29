@@ -32,9 +32,13 @@ import { CompendiumConfig } from '../models';
     </table>
     <app-demon-resists
       [resistHeaders]="compConfig.enemyResists"
-      [resists]="demon.resists">
+      [resists]="demon.resists"
+      [ailmentHeaders]="compConfig.ailmentElems"
+      [ailments]="demon.ailments">
     </app-demon-resists>
     <app-demon-skills
+      [hasTarget]="true"
+      [hasLvl]="false"
       [elemOrder]="compConfig.elemOrder"
       [compendium]="compendium"
       [skillLevels]="demon.skills">

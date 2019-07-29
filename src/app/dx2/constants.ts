@@ -39,6 +39,7 @@ export const Races = [
   'Reaper',
   'General',
   'Undead',
+  'Tenma',
   'Witch',
   'Hallel',
   'Mitama',

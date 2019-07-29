@@ -9,6 +9,16 @@
     "elem": "phy",
     "target": "Rand Foes"
   },
+  "Binding Cry": {
+    "effect": "Medium chance of Paralysis",
+    "elem": "ail",
+    "target": "All Foes"
+  },
+  "Bunny Slumber": {
+    "effect": "Sleep",
+    "elem": "ail",
+    "target": "1 Foe"
+  },
   "Burst Arm": {
     "effect": "Light damage x4-8 hits",
     "elem": "phy",
@@ -24,6 +34,11 @@
     "elem": "phy",
     "target": "1 Foe"
   },
+  "Crazed Slash": {
+    "effect": "Heavy damage",
+    "elem": "phy",
+    "target": "All Foes"
+  },
   "Crushing Strike": {
     "effect": "Heavy damage, medium chance of Strength, Magic, and Agility Binds",
     "elem": "phy",
@@ -32,6 +47,21 @@
   "Egg Bomb": {
     "effect": "Light damage, splash effect",
     "elem": "phy",
+    "target": "1 Foe"
+  },
+  "Flame Tempest": {
+    "effect": "Heavy damage",
+    "elem": "fir",
+    "target": "Rand Foes"
+  },
+  "Frost Tempest": {
+    "effect": "Heavy damage",
+    "elem": "ice",
+    "target": "Rand Foes"
+  },
+  "Gale Fang": {
+    "effect": "Medium damage",
+    "elem": "win",
     "target": "1 Foe"
   },
   "Head Eraser": {
@@ -83,6 +113,14 @@
     "elem": "phy",
     "target": "1 Foe"
   },
+  "Psych Up": {
+    "effect": "Triple physical attack for next hit, lasts 3 turns",
+    "elem": "sup"
+  },
+  "Rage": {
+    "effect": "Increase turn count",
+    "elem": "sup"
+  },
   "Retake": {
     "effect": "Rewind time",
     "elem": "sup"
@@ -91,6 +129,21 @@
     "effect": "Heavy damage, power scales with HP",
     "elem": "alm",
     "target": "All Foes"
+  },
+  "Saint Tempest": {
+    "effect": "Heavy damage",
+    "elem": "ble",
+    "target": "Rand Foes"
+  },
+  "Scarlet Laser": {
+    "effect": "Heavy damage",
+    "elem": "phy",
+    "target": "All Foes"
+  },
+  "Storm Dance": {
+    "effect": "Heavy damage, 2-3 hits",
+    "elem": "win",
+    "target": "Rand Foes"
   },
   "Supersonic Hero": {
     "effect": "Light damage",
@@ -107,9 +160,24 @@
     "elem": "phy",
     "target": "Foe Row"
   },
+  "Tempest Fang": {
+    "effect": "Heavy damage",
+    "elem": "win",
+    "target": "1 Foe"
+  },
   "Time Accelerate": {
     "effect": "Fast-forward time",
     "elem": "sup"
+  },
+  "Umbral Tempest": {
+    "effect": "Heavy damage",
+    "elem": "cur",
+    "target": "Rand Foes"
+  },
+  "Weapon Breaker": {
+    "effect": "Medium damage, lowers target's attack for 3 turns",
+    "elem": "phy",
+    "target": "1 Foe"
   },
   "Wild Rush": {
     "effect": "Heavy damage x4 hits",

@@ -47,6 +47,7 @@ export class Compendium implements ICompendium {
         stats:    json['stats'].slice(0, 2),
         skills:   json['skills'],
         resists:  [],
+        ailments: [],
         inherit:  json['inherit'],
         code:     json['code'] || 0,
         fusion:   json['fusion'] || 'normal'
@@ -61,6 +62,7 @@ export class Compendium implements ICompendium {
         price:    0,
         stats:    json['stats'],
         resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
+        ailments: json['ailments'].split('').map(char => this.compConfig.resistCodes[char]),
         skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
         area:     json['area'],
         drop:     json['drops'].join(', '),

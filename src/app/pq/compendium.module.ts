@@ -75,6 +75,7 @@ export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   skillData: SKILL_DATA_JSON,
   skillElems,
+  ailmentElems: COMP_CONFIG_JSON['ailments'],
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON['resistCodes'],
 

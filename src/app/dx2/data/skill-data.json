@@ -637,6 +637,11 @@
     "elem": "pas",
     "points": 6
   },
+  "Elec Enhancement": {
+    "effect": "Elec dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
+  },
   "Elec Pierce": {
     "effect": "Elec atks bypass Foe resists",
     "elem": "pas",
@@ -1174,6 +1179,17 @@
     "effect": "Light atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Lightning Shower": {
+    "cost": 6,
+    "effect": "5 hits, 30% Bind",
+    "elem": "ele",
+    "power": 40,
+    "target": "1 Foe"
+  },
+  "Lord of Clouds": {
+    "effect": "Elec Pierce, Recovers 3 MP and casts Five Elements when killing Foe",
+    "elem": "pas"
   },
   "Lord of the Abyss": {
     "effect": "Casts Dekaja + Debilitate on 1st turn of Boss battle",
@@ -2390,6 +2406,10 @@
     "elem": "rec",
     "points": 8,
     "target": "Universal"
+  },
+  "Skanda": {
+    "effect": "Ally Phys acc +15% and Crit rate +20%",
+    "elem": "pas"
   },
   "Soul Drain": {
     "cost": 8,

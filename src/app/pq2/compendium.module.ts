@@ -18,6 +18,7 @@ import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import PARTY_SKILLS_JSON from './data/party-skills.json';
+import BOSS_SKILLS_JSON from './data/boss-skills.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
 
@@ -32,6 +33,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 const resistElems = COMP_CONFIG_JSON['resistElems'];
 const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
 const races = [];
+const enemyData = {};
 
 for(const race of COMP_CONFIG_JSON['races']) {
   races.push(race);
@@ -49,9 +51,19 @@ for (const [skill, entry] of Object.entries(PARTY_SKILLS_JSON)) {
   SKILL_DATA_JSON[skill] = entry;
 }
 
-for (const enemy of Object.values(ENEMY_DATA_JSON)) {
-  enemy['stats'] = [enemy['lvl']].concat(enemy['stats']);
-  enemy['lvl'] = Math.floor(enemy['lvl'] / 20) + 1;
+for (const [skill, entry] of Object.entries(BOSS_SKILLS_JSON)) {
+  SKILL_DATA_JSON[skill] = entry;
+}
+
+for (const [name, enemy] of Object.entries(ENEMY_DATA_JSON)) {
+  enemy['stats'] = enemy['stats'].slice(0, 3);
+  enemy['ailments'] = enemy['ailments'] || '----------';
+  enemy['skills'] = enemy['skills'] || [];
+  enemy['drops'] = enemy['drops'] || [];
+
+  if (enemy.race !== 'Boss') {
+    enemyData[name] = enemy;
+  }
 }
 
 for (const [code, name] of Object.entries(DEMON_CODES_JSON)) {
@@ -71,6 +83,7 @@ export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   skillData: SKILL_DATA_JSON,
   skillElems,
+  ailmentElems: COMP_CONFIG_JSON['ailments'],
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON['resistCodes'],
 
@@ -79,7 +92,7 @@ export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
   baseStats: ['HP', 'MP'],
   resistElems: [],
 
-  enemyData: ENEMY_DATA_JSON,
+  enemyData,
   enemyStats: ['HP', 'Atk', 'Def'],
   enemyResists: resistElems,
 
