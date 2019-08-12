@@ -1,8 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
-import { Demon } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
-import { CompendiumConfig } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-enemy-entry',

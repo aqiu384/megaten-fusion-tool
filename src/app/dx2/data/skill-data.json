@@ -89,6 +89,13 @@
     "effect": "Phys dmg +15%, Phys acc +15%",
     "elem": "pas"
   },
+  "Ashura": {
+    "cost": 8,
+    "effect": "30% crit, Phys Pierce, Follow up with Dekaja and 25 Phys dmg x10 hits with 50% crit to random Foes",
+    "elem": "phy",
+    "power": 50,
+    "target": "Rand Foes"
+  },
   "Assassin": {
     "effect": "Single-target skill dmg +10%",
     "elem": "pas",
@@ -349,6 +356,11 @@
     "effect": "Dark dmg +15%",
     "elem": "pas",
     "points": 6
+  },
+  "Dark Enhancement": {
+    "effect": "Dark dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
   },
   "Dark Pandemic": {
     "cost": 5,
@@ -670,6 +682,10 @@
     "power": 120,
     "target": "1 Foe"
   },
+  "Enma's Judgement": {
+    "effect": "Begin battle with Tetraja for 1st 3 turns",
+    "elem": "pas"
+  },
   "Epic Recovery": {
     "effect": "Ailment recovery rate +30%",
     "elem": "pas",
@@ -677,6 +693,11 @@
   },
   "Epitome of Aggression": {
     "effect": "Phys acc +15%, Ailment resist +45%",
+    "elem": "pas",
+    "points": 16
+  },
+  "Epitome of Carnage": {
+    "effect": "Phys dmg +15%, Crit rate +20%",
     "elem": "pas",
     "points": 16
   },
@@ -906,6 +927,10 @@
   },
   "Guards of Tartarus": {
     "effect": "Ally Multi-target dmg received -15%",
+    "elem": "pas"
+  },
+  "Guilty": {
+    "effect": "Dark dmg +15%, Casts Mamudodyne + 100% Curse on 1st turn of Boss battle",
     "elem": "pas"
   },
   "Gungnir": {
@@ -2561,6 +2586,10 @@
     "elem": "alm",
     "power": 130,
     "target": "All Foes"
+  },
+  "Three Faces Six Arms": {
+    "effect": "Take random attacks in place of all Allies with -25% dmg",
+    "elem": "pas"
   },
   "Thunder Reign": {
     "cost": 7,
