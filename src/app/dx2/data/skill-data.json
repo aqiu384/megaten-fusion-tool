@@ -773,6 +773,11 @@
     "power": 45,
     "target": "Rand Foes"
   },
+  "Fire Enhancement": {
+    "effect": "Fire dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
+  },
   "Fire Pierce": {
     "effect": "Fire atks bypass Foe resists",
     "elem": "pas",
@@ -1081,6 +1086,10 @@
     "effect": "Ice atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Ignite": {
+    "effect": "Every 2nd turn, casts Maragidyne and Rakunda",
+    "elem": "pas"
   },
   "Infernal Mask": {
     "effect": "Ailment resist +60%",
@@ -2554,6 +2563,10 @@
     "elem": "sup",
     "target": "All Allies"
   },
+  "Terror of London": {
+    "effect": "Casts 1-3 hits of phys dmg with 50% crit when team attacks first",
+    "elem": "pas"
+  },
   "Tetra Break": {
     "cost": 3,
     "effect": "Removes Tetrakarn",
@@ -2579,6 +2592,10 @@
     "elem": "sup",
     "points": 8,
     "target": "All Allies"
+  },
+  "The Great Darkness": {
+    "effect": "Fire Pierce. Every 3rd turn, casts 5 hits of 40 fire dmg and Concentrate",
+    "elem": "pas"
   },
   "Third Eye": {
     "cost": 8,
@@ -2721,6 +2738,13 @@
   "Warlord's Wrath": {
     "effect": "Phys Pierce + Imposing Stance + Death Counter 100%",
     "elem": "pas"
+  },
+  "Wrathful Flame": {
+    "cost": 6,
+    "effect": "3 hits, Rakunda",
+    "elem": "fir",
+    "power": 60,
+    "target": "One Foe"
   },
   "Weakdi": {
     "cost": 3,
