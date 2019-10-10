@@ -107,7 +107,7 @@ for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei: Devil Summoner',
-  appCssClasses: ['devilsum', 'dsum'],
+  appCssClasses: ['smtnes', 'dsum'],
   races,
   resistElems,
   skillElems,

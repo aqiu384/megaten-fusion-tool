@@ -78,7 +78,7 @@ const tripleChart = {
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei NINE',
-  appCssClasses: ['devilsum', 'smt9'],
+  appCssClasses: ['smtnes', 'smt9'],
   races,
   resistElems,
   skillElems,

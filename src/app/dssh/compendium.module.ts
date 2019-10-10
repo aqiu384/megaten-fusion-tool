@@ -125,7 +125,7 @@ for (const [elem, skills] of Object.entries(INHERIT_SKILLS_JSON)) {
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Devil Summoner: Soul Hackers',
-  appCssClasses: ['devilsum', 'dssh'],
+  appCssClasses: ['smtnes', 'dssh'],
   races,
   resistElems,
   skillElems,
