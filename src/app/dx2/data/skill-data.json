@@ -822,6 +822,11 @@
     "elem": "pas",
     "points": 6
   },
+  "Force Enhancement": {
+    "effect": "Force dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
+  },
   "Force Pierce": {
     "effect": "Force atks bypass Foe resists",
     "elem": "pas",
@@ -2174,6 +2179,10 @@
     "effect": "Ally eva +20%",
     "elem": "pas"
   },
+  "Rains of Canaan": {
+    "effect": "Ally Force dmg and ailment recovery rate +10%",
+    "elem": "pas"
+  },
   "Ragnarok": {
     "cost": 7,
     "effect": "Dmg scales with 20% Patk",
@@ -2547,6 +2556,13 @@
     "effect": "Tarukaja + Rakunda to all Foes",
     "elem": "sup",
     "points": 8,
+    "target": "All Foes"
+  },
+  "Tempest": {
+    "cost": 8,
+    "effect": "Force Pierce, Sukunda",
+    "elem": "for",
+    "power": 130,
     "target": "All Foes"
   },
   "Tempest Slash": {
