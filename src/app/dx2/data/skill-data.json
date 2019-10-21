@@ -1,4 +1,11 @@
 {
+  "Ascension": {
+    "cost": 6,
+    "effect": "Light Pierce, Revives random Ally with 25% HP, 6 uses",
+    "elem": "lig",
+    "power": 160,
+    "target": "1 Foe"
+  },
   "Acid Breath": {
     "cost": 6,
     "effect": "Rakunda + Sukunda",
@@ -885,12 +892,20 @@
     "power": 100,
     "target": "All Foes"
   },
+  "God's Blessing": {
+    "effect": "Ally Force and Light dmg +10%, Casts Mediara + Rakukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
+    "elem": "pas"
+  },
   "God's Bow": {
     "cost": 7,
     "effect": "50% Instant Death",
     "elem": "lig",
     "power": 200,
     "target": "1 Foe"
+  },
+  "God's Fire": {
+    "effect": "Ally Fire and Light dmg +10%, Casts piercing Fire Breath + Tarukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
+    "elem": "pas"
   },
   "God's Hand": {
     "cost": 8,
@@ -905,6 +920,10 @@
     "elem": "alm",
     "power": 120,
     "target": "All Foes"
+  },
+  "God's Word": {
+    "effect": "Ally Elec and Light dmg +10%, Casts piercing Mahamaon + Sukukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
+    "elem": "pas"
   },
   "Gomorrah B": {
     "cost": 8,
@@ -1213,6 +1232,11 @@
     "effect": "Light dmg +15%",
     "elem": "pas",
     "points": 6
+  },
+  "Light Enhancement": {
+    "effect": "Light dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
   },
   "Light Pierce Weak": {
     "effect": "Light atks bypass Foe resists with 30% dmg",
@@ -2100,7 +2124,7 @@
     "points": 21
   },
   "Phys Boost": {
-    "effect": "Phs dmg +15%",
+    "effect": "Phys dmg +15%",
     "elem": "pas",
     "points": 6
   },
@@ -2515,6 +2539,13 @@
     "points": 6,
     "target": "All Foes"
   },
+  "Sunrise": {
+    "cost": 7,
+    "effect": "Fire Pierce, Revives random Ally with 25% HP, 6 uses",
+    "elem": "fir",
+    "power": 120,
+    "target": "All Foes"
+  },
   "Superior Power": {
     "effect": "Phys pierce, Phys acc +20%",
     "elem": "pas"
@@ -2536,6 +2567,13 @@
     "effect": "Pass without using Press Turn",
     "elem": "sup",
     "points": 6
+  },
+  "Tailwind": {
+    "cost": 6,
+    "effect": "4 hits, Force Pierce, Revives random Ally with 25% HP, 6 uses",
+    "elem": "for",
+    "power": 45,
+    "target": "Rand Foes"
   },
   "Tarukaja": {
     "cost": 5,
