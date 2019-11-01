@@ -42,7 +42,7 @@ import MEGATEN_FUSION_TOOLS from './data-sources.json';
 export class AppComponent implements OnInit {
   static readonly GAME_PREFIXES: { [game: string]: string } = {
     smtdsj: 'smtsj',
-    p3fes: 'p3', p3aeg: 'p3', p3p: 'p3', p4g: 'p4',
+    p3fes: 'p3', p3aeg: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5',
     ds1: 'desu1', dso: 'desu1', ds2: 'desu2', ds2br: 'desu2'
   };
 

@@ -122,6 +122,11 @@ const appRoutes: Routes = [
     data: { appName: 'Persona 5' }
   },
   {
+    path: 'p5r',
+    loadChildren: './p5/compendium.module#CompendiumModule',
+    data: { appName: 'Persona 5 Royal' }
+  },
+  {
     path: 'pq2',
     loadChildren: './pq2/compendium.module#CompendiumModule',
     data: { appName: 'Persona Q2: New Cinema Labyrinth' }

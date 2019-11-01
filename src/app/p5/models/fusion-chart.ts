@@ -1,38 +1,31 @@
-import { Races, RaceOrder, ElementDemons } from './constants';
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
-import FUSION_CHART_JSON from '../data/fusion-chart.json';
-import ELEMENT_CHART_JSON from '../data/element-chart.json';
-
 export class FusionChart extends SmtFusionChart {
   lvlModifier = 0.5;
-  elementDemons = ElementDemons;
+  elementDemons: string[];
   races: string[];
 
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
 
-  constructor() {
+  constructor(normalTableJson: any, elementTableJson: any) {
     super();
-    this.initCharts();
+    this.initCharts(normalTableJson, elementTableJson);
   }
 
-  initCharts() {
-    const races: string[] = FUSION_CHART_JSON['races'];
-    const elems: string[] = ELEMENT_CHART_JSON['elems'];
-    const table: string[][] = FUSION_CHART_JSON['table'];
-    const elemRaces: string[] = ELEMENT_CHART_JSON['races'];
-    const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
+  initCharts(normalTableJson: any, elementTableJson: any) {
+    const races: string[] = normalTableJson['races'];
+    const table: string[][] = normalTableJson['table'];
+    const elems: string[] = elementTableJson['elems'];
+    const elemRaces: string[] = elementTableJson['races'];
+    const elemTable: number[][] = elementTableJson['table'];
 
-    for (let i = 0; i < table.length; i++) {
-      table[i][0] = '-';
-    }
-
-    this.races = races;
+    this.elementDemons = elems;
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
+    this.races = races;
   }
 }

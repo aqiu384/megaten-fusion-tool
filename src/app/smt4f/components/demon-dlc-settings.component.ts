@@ -9,17 +9,20 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <app-demon-dlc-settings
       [dlcDemons]="dlcDemons"
-      [appTitle]="'Shin Megami Tensei IV Apocalypse'"
+      [appTitle]="appTitle"
       [dlcTitle]="'Included DLC Demons'"
       (toggledName)="toggleName($event)">
     </app-demon-dlc-settings>
   `
 })
 export class DemonDlcSettingsContainerComponent extends DDSCC {
+  appTitle: string;
+
   constructor(
     private changeDetector: ChangeDetectorRef,
     private fusionDataService: FusionDataService
   ) {
     super(changeDetector, fusionDataService);
+    this.appTitle = fusionDataService.appName;
   }
 }

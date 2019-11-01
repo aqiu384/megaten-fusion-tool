@@ -1,11 +1,9 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, AfterViewChecked, OnDestroy, ViewChild, OnChanges } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { BehaviorSubject } from 'rxjs';
-import { Subscription } from 'rxjs';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistanceElements, ElementOrder, APP_TITLE } from '../models/constants';
+import { CompendiumConfig } from '../models';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -20,22 +18,22 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
-        [statHeaders]="statHeaders"
+        [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
         [fusionHeaders]="['Electric Chair']"
         [inherit]="demon.inherit">
         <td>{{ demon.item }}</td>
       </app-demon-stats>
       <app-demon-resists
-        [resistHeaders]="resistanceHeaders"
+        [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-inherits
-        [inheritHeaders]="compendium.inheritHeaders"
+        [inheritHeaders]="compConfig.inheritElems"
         [inherits]="compendium.getInheritElems(demon.inherit)">
       </app-demon-inherits>
       <app-demon-skills
-        [elemOrder]="elemOrder"
+        [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
@@ -58,10 +56,7 @@ export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
-
-  statHeaders = BaseStats;
-  elemOrder = ElementOrder;
-  resistanceHeaders = ResistanceElements;
+  @Input() compConfig: CompendiumConfig;
 }
 
 @Component({
@@ -71,17 +66,19 @@ export class DemonEntryComponent {
     <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
     <app-enemy-entry *ngIf="demon && demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-enemy-entry>
   `
 })
 export class DemonEntryContainerComponent extends DECC {
-  appName = APP_TITLE;
+  compConfig: CompendiumConfig;
 
   constructor(
     private route: ActivatedRoute,
@@ -90,5 +87,7 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+    this.appName = fusionDataService.appName;
+    this.compConfig = fusionDataService.compConfig;
   }
 }

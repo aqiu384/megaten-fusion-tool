@@ -1,7 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
-import { BaseStats, ResistanceElements, ElementOrder } from '../models/constants';
-import { Enemy } from '../models';
+import { Enemy, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
 @Component({
@@ -10,7 +9,7 @@ import { Compendium } from '../models/compendium';
   template: `
     <app-demon-stats
       [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
-      [statHeaders]="statHeaders"
+      [statHeaders]="['EXP', 'Yen', 'HP', 'MP'].concat(compConfig.baseStats)"
       [stats]="[demon.exp, demon.price].concat(demon.stats, demon.estats)">
     </app-demon-stats>
     <table>
@@ -39,11 +38,11 @@ import { Compendium } from '../models/compendium';
       </tbody>
     </table>
     <app-demon-resists
-      [resistHeaders]="resistanceHeaders"
+      [resistHeaders]="compConfig.resistElems"
       [resists]="demon.resists">
     </app-demon-resists>
     <app-demon-skills
-      [elemOrder]="elemOrder"
+      [elemOrder]="compConfig.elemOrder"
       [compendium]="compendium"
       [skillLevels]="demon.skills">
     </app-demon-skills>
@@ -53,8 +52,5 @@ export class EnemyEntryComponent {
   @Input() name: string;
   @Input() demon: Enemy;
   @Input() compendium: Compendium;
-
-  statHeaders = ['EXP', 'Yen', 'HP', 'MP'].concat(BaseStats);
-  elemOrder = ElementOrder;
-  resistanceHeaders = ResistanceElements;
+  @Input() compConfig: CompendiumConfig;
 }

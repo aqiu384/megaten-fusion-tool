@@ -43,13 +43,13 @@ export class DemonListContainerComponent extends DLCC {
       this.compConfig.raceOrder[d2.race]
     ) * 200 + d2.lvl - d1.lvl;
 
-    this.appName = `List of Personas - ${this.compConfig.appTitle}`;
+    this.appName = `List of Personas - ${fusionDataService.appName}`;
     this.statHeaders = this.compConfig.baseStats;
     this.resistHeaders = this.compConfig.resistElems;
     this.inheritOrder = this.compConfig.elemOrder;
 
     if (this.showEnemies) {
-      this.appName = `List of Shadows - ${this.compConfig.appTitle}`;
+      this.appName = `List of Shadows - ${fusionDataService.appName}`;
       this.statHeaders = this.compConfig.enemyStats;
       this.resistHeaders = this.compConfig.enemyResists;
       this.inheritOrder = null;

@@ -36,7 +36,7 @@ function estimateMagCost(grade1, grade2, gradeR): number {
   const rareR = Math.floor(gradeR / 20) + 1;
 
   const rareDelta = 2 * rareR - rare1 - rare2;
-  const gradeDelta = gradeR - (grade1 + grade2) / 2;
+  const gradeDelta = Math.max(gradeR - (grade1 + grade2) / 2, 0);
   const rareCost = RARITY_DELTA_COSTS[rareR - 1][rareDelta + 1] || 0;
   const gradeCost = GRADE_DELTA_COSTS[Math.floor(gradeR / 10)];
 
