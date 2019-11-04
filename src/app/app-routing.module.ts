@@ -123,7 +123,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'p5r',
-    loadChildren: './p5/compendium.module#CompendiumModule',
+    loadChildren: './p5r/compendium.module#CompendiumModule',
     data: { appName: 'Persona 5 Royal' }
   },
   {

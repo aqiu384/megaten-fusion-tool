@@ -46,20 +46,17 @@ export class FusionDataService implements IFusionDataService {
   fusionSettingsVersion: number;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, router: Router) {
-    const gameCand = router.url.split('/')[1];
-    const game = compConfig.demonData[gameCand] ? gameCand : 'p5';
-
-    this.appName = compConfig.gameTitles[game];
     this.compConfig = compConfig;
-    this.gameAbbr = game;
-    this.fusionSettingsKey = compConfig.settingsKey[game];
+    this.appName = compConfig.appTitle;
+
+    this.fusionSettingsKey = compConfig.settingsKey;
     this.fusionSettingsVersion = compConfig.settingsVersion;
 
-    this._compendium = new Compendium(compConfig, game);
+    this._compendium = new Compendium(compConfig);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 
-    this._fusionChart = new FusionChart(compConfig.normalTable[game], compConfig.elementTable[game]);
+    this._fusionChart = new FusionChart(compConfig.normalTable, compConfig.elementTable);
     this._fusionChart$ = new BehaviorSubject(this._fusionChart);
     this.fusionChart = this._fusionChart$.asObservable();
 

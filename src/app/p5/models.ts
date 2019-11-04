@@ -16,9 +16,6 @@ export interface Skill extends BaseSkill {
 }
 
 export interface CompendiumConfig extends BaseComp {
-  gameTitles: { [game: string]: string };
-  appCssClasses: string[];
-
   races: string[];
   baseStats: string[];
   skillElems: string[];
@@ -31,17 +28,15 @@ export interface CompendiumConfig extends BaseComp {
   enemyStats: string[];
   enemyResists: string[];
 
-  demonData: { [game: string]: any[] };
-  skillData: { [game: string]: any[] };
-  enemyData: { [game: string]: any[] };
-  traitData: { [trait: string]: any };
+  demonData: any[];
+  skillData: any[];
+  enemyData: any[];
 
-  normalTable: { [game: string]: any };
-  elementTable: { [game: string]: any };
-  specialRecipes: { [game: string]: any };
-  hasSkillCards: { [game: string]: boolean };
+  normalTable;
+  elementTable;
+  specialRecipes;
 
-  dlcDemons: { [game: string]: string[] };
-  settingsKey: { [game: string]: string };
+  dlcDemons: string[];
+  settingsKey: string;
   settingsVersion: number;
 }

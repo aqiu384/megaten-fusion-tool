@@ -27,6 +27,17 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
                                                           []
   ];
 
+  royalMitaTable = [
+    ['Moon', 'Hang', 'Temp', 'Fait', 'Deat', 'Towe', 'Stre'],
+            ['Empe', 'Empr', 'Magi', 'Devi', 'Deat', 'Magi'],
+                    ['Just', 'Herm', 'Fait', 'Prie', 'Fool'],
+                            ['Sun ', 'Towe', 'Devi', 'Herm'],
+                                    ['Temp', 'Empe', 'Star'],
+                                            ['Temp', 'Hier'],
+                                                    ['Moon'],
+                                                          []
+  ];
+
   subscriptions: Subscription[] = [];
   normChart: FusionChart;
 

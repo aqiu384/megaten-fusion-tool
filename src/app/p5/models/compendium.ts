@@ -16,7 +16,7 @@ export class Compendium implements ICompendium {
   private _allDemons: BaseDemon[];
   private _allSkills: Skill[];
 
-  constructor(private compConfig: CompendiumConfig, private gameAbbr: string) {
+  constructor(private compConfig: CompendiumConfig) {
     this.initImportedData();
     this.updateDerivedData();
   }
@@ -30,7 +30,7 @@ export class Compendium implements ICompendium {
     const dlcDemons: { [name: string]: boolean } = {};
     const normalExceptions: { [name: string]: string } = {};
 
-    for (const demonDataJson of this.compConfig.demonData[this.gameAbbr]) {
+    for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
@@ -48,7 +48,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const enemyDataJson of this.compConfig.enemyData[this.gameAbbr]) {
+    for (const enemyDataJson of this.compConfig.enemyData) {
       for (const [name, enemy] of Object.entries(enemyDataJson)) {
         const drops = enemy['drops'] || [];
 
@@ -78,7 +78,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const skillDataJson of this.compConfig.skillData[this.gameAbbr]) {
+    for (const skillDataJson of this.compConfig.skillData) {
       for (const [name, json] of Object.entries(skillDataJson)) {
         skills[name] = {
           name,
@@ -98,31 +98,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    if (this.gameAbbr === 'p5r') {
-      for (const [name, json] of Object.entries(this.compConfig.traitData)) {
-        const ename = json['ename'];
-
-        skills[ename] = {
-          name: ename,
-          element: 'trait',
-          effect: json['edesc'],
-          rank: 0,
-          cost: 0,
-          talk: '',
-          fuse: '',
-          learnedBy: json['demons'],
-          level: 0
-        };
-
-        for (const demon of json['demons']) {
-          if (demons[demon]) {
-            demons[demon].skills[ename] = 99;
-          }
-        }
-      }
-    }
-
-    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes[this.gameAbbr])) {
+    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes)) {
       const demon = demons[name];
       const json = <string[]>recipe;
 
@@ -159,7 +135,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const dlcDemon of this.compConfig.dlcDemons[this.gameAbbr]) {
+    for (const dlcDemon of this.compConfig.dlcDemons) {
       dlcDemons[dlcDemon] = false;
     }
 
