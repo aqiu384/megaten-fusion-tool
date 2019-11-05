@@ -34,6 +34,7 @@ export const Races = [
   'Dragon',
   'Jaki',
   'Jirae',
+  'Drake',
   'Fiend',
   'Hero',
   'Reaper',

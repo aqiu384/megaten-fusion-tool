@@ -1,6 +1,6 @@
 {
   "races": [
-     "Herald", "Megami", "Avian",  "Deity",  "Avatar", "Holy",   "Genma",  "Fury",   "Dragon", "Lady",   "Kishin", "Divine", "Yoma",   "Snake",  "Beast",  "Fairy",  "Jirae",  "Jaki",   "Fallen", "Brute",  "Femme",  "Night",  "Vile",   "Wilder", "Foul",   "Tyrant", "Haunt"
+     "Herald", "Megami", "Avian",  "Deity",  "Avatar", "Holy",   "Genma",  "Fury",   "Dragon", "Lady",   "Kishin", "Divine", "Yoma",   "Snake",  "Beast",  "Fairy",  "Jirae",  "Jaki",   "Fallen", "Brute",  "Femme",  "Night",  "Vile",   "Wilder", "Foul",   "Tyrant", "Drake",  "Haunt"
   ],
   "table": [
     ["-"],
@@ -14,21 +14,22 @@
     ["Holy",   "Herald", "Avatar", "Beast",  "Fury",   "Tyrant", "Holy",   "Fallen", "-"],
     ["Deity",  "Fury",   "Fury",   "Megami", "Genma",  "Avatar", "Megami", "Genma",  "Fury",   "-"],
     ["Fury",   "Lady",   "Lady",   "Fury",   "Dragon", "Lady",   "Yoma",   "Lady",   "Fury",   "Tyrant", "-"],
-    ["Megami", "Herald", "Snake",  "Fury",   "Avian",  "Herald", "Holy",   "Vile",   "Megami", "Fury",   "Night",  "-"],
+    ["Megami", "Herald", "Snake",  "Fury",   "Avian",  "Herald", "Holy",   "Vile",   "Drake",  "Fury",   "Night",  "-"],
     ["Brute",  "Avian",  "Night",  "Genma",  "Jirae",  "Divine", "Snake",  "Holy",   "Genma",  "Jaki",   "Femme",  "Fairy",  "-"],
     ["Beast",  "Fairy",  "Kishin", "Fury",   "Beast",  "Dragon", "Avatar", "Tyrant", "Lady",   "Femme",  "Femme",  "Fairy",  "Night",  "-"],
     ["Deity",  "Haunt",  "Femme",  "Avatar", "Avian",  "Avatar", "Fairy",  "Avatar", "Wilder", "Femme",  "Holy",   "Fallen", "Fallen", "Brute",  "-"],
     ["Holy",   "Haunt",  "Night",  "Night",  "Divine", "Jirae",  "Snake",  "Brute",  "Night",  "Foul",   "Brute",  "Holy",   "Holy",   "Avian",  "Avian",  "-"],
     ["Deity",  "Lady",   "Yoma",   "Brute",  "Avian",  "Beast",  "Avatar", "Brute",  "Tyrant", "Kishin", "Snake",  "Fallen", "Lady",   "Fallen", "Yoma",   "Beast",  "-"],
-    ["Lady",   "Femme",  "Holy",   "Genma",  "Vile",   "Avian",  "Tyrant", "Deity",  "Snake",  "Kishin", "Dragon", "Fairy",  "Haunt",  "Dragon", "Wilder", "Lady",   "Haunt",  "-"],
-    ["Lady",   "Femme",  "Snake",  "Fury",   "Divine", "Herald", "Yoma",   "Tyrant", "Snake",  "Dragon", "Beast",  "Megami", "Jirae",  "Dragon", "Deity",  "Divine", "Dragon", "Vile",   "-"],
+    ["Lady",   "Femme",  "Holy",   "Genma",  "Vile",   "Avian",  "Tyrant", "Deity",  "Snake",  "Kishin", "Dragon", "Fairy",  "Haunt",  "Drake",  "Wilder", "Lady",   "Haunt",  "-"],
+    ["Lady",   "Femme",  "Snake",  "Fury",   "Divine", "Herald", "Yoma",   "Tyrant", "Snake",  "Dragon", "Beast",  "Megami", "Jirae",  "Dragon", "Deity",  "Divine", "Dragon", "Drake",  "-"],
     ["Wilder", "Femme",  "Kishin", "Jirae",  "Kishin", "Jaki",   "Beast",  "Lady",   "Night",  "Dragon", "Deity",  "Jirae",  "Femme",  "Dragon", "Fallen", "Night",  "Fairy",  "Haunt",  "Snake",  "-"],
-    ["Megami", "Fairy",  "Brute",  "Lady",   "Megami", "Jirae",  "Night",  "Lady",   "Night",  "Megami", "Jirae",  "Foul",   "Brute",  "Kishin", "Foul",   "Megami", "Foul",   "Haunt",  "Wilder", "Jaki",   "-"],
+    ["Megami", "Fairy",  "Brute",  "Lady",   "Megami", "Jirae",  "Night",  "Lady",   "Night",  "Megami", "Jirae",  "Foul",   "Brute",  "Drake",  "Foul",   "Megami", "Foul",   "Haunt",  "Wilder", "Jaki",   "-"],
     ["Fallen", "Fallen", "Femme",  "Wilder", "Holy",   "Jirae",  "Holy",   "Jirae",  "Femme",  "Kishin", "Femme",  "Snake",  "Avatar", "Fairy",  "Fairy",  "Divine", "Fairy",  "Yoma",   "Deity",  "Avian",  "Divine", "-"],
-    ["Haunt",  "Fury",   "Yoma",   "Avatar", "Deity",  "Yoma",   "Fallen", "Tyrant", "Snake",  "Genma",  "Genma",  "Fallen", "Wilder", "Kishin", "Deity",  "Jaki",   "Jaki",   "Haunt",  "Brute",  "Jaki",   "Brute",  "Jaki",   "-"],
-    ["Haunt",  "Holy",   "Avatar", "Night",  "Beast",  "Brute",  "Yoma",   "Haunt",  "Beast",  "Haunt",  "Dragon", "Fairy",  "Avian",  "Avian",  "Vile",   "Foul",   "Brute",  "Beast",  "Night",  "Fairy",  "Fallen", "Beast",  "Avatar", "-"],
-    ["Divine", "Fallen", "Wilder", "Kishin", "Genma",  "Avatar", "Snake",  "Yoma",   "Snake",  "Jaki",   "Fairy",  "Fallen", "Snake",  "Divine", "Wilder", "Haunt",  "Fairy",  "Kishin", "Genma",  "Wilder", "Wilder", "Yoma",   "Haunt",  "Beast",  "-"],
-    ["Wilder", "Haunt",  "Fairy",  "Fury",   "Genma",  "Beast",  "Yoma",   "Snake",  "Fallen", "Genma",  "Haunt",  "Vile",   "Avian",  "Kishin", "Vile",   "Night",  "Jaki",   "Vile",   "Fury",   "Jaki",   "Lady",   "Jaki",   "Haunt",  "Night",  "Snake",  "-"],
-    ["Fallen", "Fury",   "Beast",  "Genma",  "Divine", "Divine", "Femme",  "Beast",  "Genma",  "Wilder", "Dragon", "Jaki",   "Jirae",  "Brute",  "Wilder", "Holy",   "Jaki",   "Megami", "Brute",  "Foul",   "Foul",   "Femme",  "Foul",   "Night",  "Brute",  "Beast",  "-"]
+    ["Haunt",  "Fury",   "Yoma",   "Avatar", "Deity",  "Yoma",   "Fallen", "Tyrant", "Snake",  "Genma",  "Genma",  "Fallen", "Wilder", "Drake",  "Deity",  "Jaki",   "Jaki",   "Haunt",  "Brute",  "Jaki",   "Brute",  "Jaki",   "-"],
+    ["Haunt",  "Holy",   "Avatar", "Night",  "Beast",  "Brute",  "Yoma",   "Haunt",  "Beast",  "Haunt",  "Dragon", "Fairy",  "Avian",  "Avian",  "Vile",   "Foul",   "Brute",  "Drake",  "Night",  "Fairy",  "Fallen", "Beast",  "Avatar", "-"],
+    ["Divine", "Fallen", "Wilder", "Kishin", "Genma",  "Avatar", "Snake",  "Yoma",   "Drake",  "Jaki",   "Fairy",  "Fallen", "Snake",  "Divine", "Wilder", "Haunt",  "Fairy",  "Kishin", "Genma",  "Wilder", "Wilder", "Yoma",   "Haunt",  "Beast",  "-"],
+    ["Wilder", "Haunt",  "Fairy",  "Fury",   "Genma",  "Beast",  "Yoma",   "Snake",  "Fallen", "Genma",  "Haunt",  "Vile",   "Avian",  "Drake",  "Vile",   "Night",  "Jaki",   "Drake",  "Drake",  "Jaki",   "Lady",   "Jaki",   "Haunt",  "Drake",  "Snake",  "-"],
+    ["Snake",  "Vile",   "Jirae",  "Lady",   "Kishin", "Jaki",   "Fury",   "Tyrant", "Kishin", "Dragon", "Fury",   "Fallen", "Genma",  "Vile",   "Foul",   "Night",  "Snake",  "Tyrant", "Fury",   "Dragon", "Foul",   "Kishin", "Wilder", "Avian",  "Dragon", "Wilder", "-"],
+    ["Fallen", "Fury",   "Beast",  "Genma",  "Divine", "Divine", "Femme",  "Beast",  "Genma",  "Wilder", "Dragon", "Jaki",   "Jirae",  "Brute",  "Wilder", "Holy",   "Jaki",   "Megami", "Brute",  "Foul",   "Foul",   "Femme",  "Foul",   "Night",  "Brute",  "Beast",  "Kishin", "-"]
   ]
 }

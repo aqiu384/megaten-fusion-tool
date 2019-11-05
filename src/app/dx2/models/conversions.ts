@@ -40,7 +40,7 @@ function estimateMagCost(grade1, grade2, gradeR): number {
   const rareCost = RARITY_DELTA_COSTS[rareR - 1][rareDelta + 1] || 0;
   const gradeCost = GRADE_DELTA_COSTS[Math.floor(gradeR / 10)];
 
-  return rareCost ? (rareCost + Math.floor(gradeCost * gradeDelta)) : 0;
+  return rareCost ? (rareCost + Math.floor(gradeCost * gradeDelta)) : 5;
 }
 
 export function toFusionEntry(currentDemon: string, name: string, compendium: Compendium): FusionEntry {

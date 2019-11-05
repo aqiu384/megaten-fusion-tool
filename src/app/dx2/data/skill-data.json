@@ -225,6 +225,14 @@
     "power": 120,
     "target": "1 Foe"
   },
+  "Blight": {
+    "cost": 6,
+    "effect": "30% crit, 30% Poison",
+    "elem": "phy",
+    "points": 6,
+    "power": 100,
+    "target": "All Foes"
+  },
   "Blood Rush": {
     "cost": 6,
     "effect": "Tarukaja + Sukukaja",
@@ -863,6 +871,10 @@
     "power": 50,
     "target": "Rand Foes"
   },
+  "Garden of Eden": {
+    "effect": "Ally dmg +10% when striking Foe weakness and dmg -10% when own weakness struck",
+    "elem": "pas"
+  },
   "Gigantomachia": {
     "cost": 8,
     "elem": "phy",
@@ -925,6 +937,10 @@
     "effect": "Ally Elec and Light dmg +10%, Casts piercing Mahamaon + Sukukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
     "elem": "pas"
   },
+  "Golden Greed": {
+    "effect": "Ally dmg +200% against Poisoned Foes",
+    "elem": "pas"
+  },
   "Gomorrah B": {
     "cost": 8,
     "effect": "5 hits, 50% crit, 50% Charm, Dmg scales with Patk and Matk, Phys Pierce, 3rd turn onwards only",
@@ -975,6 +991,13 @@
     "points": 6,
     "power": 120,
     "target": "All Foes"
+  },
+  "Halahala": {
+    "cost": 6,
+    "effect": "5 hits, 50% Poison",
+    "elem": "ice",
+    "power": 40,
+    "target": "Rand Foes"
   },
   "Hama": {
     "cost": 4,
@@ -1165,6 +1188,10 @@
     "points": 7,
     "power": 45,
     "target": "Rand Foes"
+  },
+  "Judgement of Nahar": {
+    "effect": "Every 2nd turn, Casts Mabufudyne + Sukunda for 2 turns",
+    "elem": "pas"
   },
   "Juon": {
     "cost": 6,
@@ -1952,6 +1979,10 @@
     "points": 9,
     "power": 65,
     "target": "Rand Foes"
+  },
+  "Nastrond": {
+    "effect": "Recover 80% HP and nullify Instant Death for 1 turn when Ally killed",
+    "elem": "pas"
   },
   "Necro Dogma": {
     "cost": 9,
