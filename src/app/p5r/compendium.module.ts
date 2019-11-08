@@ -18,6 +18,7 @@ import ROYAL_SKILL_DATA_JSON from './data/skill-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import PARTY_DATA_JSON from '../p5/data/party-data.json';
 import DLC_DATA_JSON from '../p5/data/dlc-data.json';
+import TRAIT_DATA_JSON from './data/jap-traits.json';
 
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -44,6 +45,21 @@ for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
   inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = INHERIT_TYPES_JSON.ratios[i].split('').map(x => x === 'O' ? 100 : 0);
 }
 
+const TRAIT_SKILLS = {};
+
+for (const entry of Object.values(TRAIT_DATA_JSON)) {
+  TRAIT_SKILLS[entry.ename] = {
+    element: 'trait',
+    effect: entry.edesc
+  }
+
+  for (const demon of entry.demons) {
+    if (DEMON_DATA_JSON[demon]) {
+      DEMON_DATA_JSON[demon].skills[entry.ename] = 100
+    }
+  }
+}
+
 export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona 5 Royal',
 
@@ -61,7 +77,7 @@ export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
   enemyResists: COMP_CONFIG_JSON.resistElems,
 
   demonData: [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON],
-  skillData: [SKILL_DATA_JSON, ROYAL_SKILL_DATA_JSON],
+  skillData: [SKILL_DATA_JSON, ROYAL_SKILL_DATA_JSON, TRAIT_SKILLS],
   enemyData: [ENEMY_DATA_JSON],
 
   normalTable: FUSION_CHART_JSON,

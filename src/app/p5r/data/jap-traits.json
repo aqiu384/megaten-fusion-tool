@@ -1,335 +1,603 @@
 {
+  "はじける演算力": {
+    "demons": [
+      "Necronomicon"
+    ],
+    "edesc": "Recovers 25% HP after an All-Out Attack",
+    "ename": "High-speed Hacking",
+    "jdesc": "総攻撃のトドメを決める事があり味方全体のHPを25%回復する"
+  },
+  "アヴェマリア": {
+    "demons": [
+      "Maria"
+    ],
+    "edesc": "Reduces cost of Support spells by 75%",
+    "ename": "Ave Maria",
+    "jdesc": "補助スキル使用時のSP消費量が自動的に75％減少する"
+  },
+  "ナーラーナーリー": {
+    "demons": [
+      "Ardha"
+    ],
+    "edesc": "Doubles effectiveness of SP regeneration skills",
+    "ename": "Naranari",
+    "jdesc": "自身に対するSP回復効果2倍"
+  },
+  "パンデミックの瞳": {
+    "demons": [
+      "Mishaguji",
+      "Red Rider"
+    ],
+    "edesc": "Raises damage dealt by 25% for each foe afflicted with an ailment",
+    "ename": "Pandemic Gaze",
+    "jdesc": "敵の状態異常の数に応じて攻撃力が25％上昇する"
+  },
   "一騎当千の眼差し": {
     "demons": [
       "Atropos",
+      "Lilith",
+      "Mara",
+      "Mot",
       "Nue",
       "Orobas"
     ],
-    "jdesc": "全体対象の魔法スキルの攻撃力20%上昇",
     "edesc": "Strengthens all-target magic by 20%",
-    "ename": "Peerless Gaze"
+    "ename": "Peerless Gaze",
+    "jdesc": "敵全体を対象とする魔法スキルの攻撃力が自動的に20%上昇する"
+  },
+  "万物のはからい": {
+    "demons": [
+      "Johanna"
+    ],
+    "edesc": "Increases chance of inflicting Burn, Freeze, and Shock by 25%",
+    "ename": "All Judge",
+    "jdesc": "味方のスキルによる炎上・凍結・感電の付着率が25％上昇する"
+  },
+  "不可侵の美貌": {
+    "demons": [
+      "Kaguya",
+      "Kaguya Picaro"
+    ],
+    "edesc": "Triples damage from Counter skills",
+    "ename": "Untouchable Beauty",
+    "jdesc": "自身が発動するカウンタ、反射のダメージが3倍になる"
   },
   "並外れた抗体": {
     "demons": [
       "Agathion",
+      "Black Ooze",
+      "Kumbhanda",
       "Pisaca",
-      "Slime",
-      "Black Ooze"
+      "Slime"
     ],
-    "jdesc": "すべての状態異常にかかりにくい",
-    "edesc": "Reduce susceptibility to all ailments",
-    "ename": "Odd Immunity"
+    "edesc": "Reduces susceptibility to all ailments",
+    "ename": "Odd Immunity",
+    "jdesc": "すべての状態異常にかかりにくくなる"
   },
   "伝染する淀み臭": {
     "demons": [
-      "Sandman",
-      "Lamia",
-      "Succubus",
-      "Koropokkuru",
-      "Inugami",
       "Andras",
-      "Yaksini",
-      "Nekomata"
+      "Inugami",
+      "Koropokkuru",
+      "Lamia",
+      "Nekomata",
+      "Sandman",
+      "Succubus",
+      "Yaksini"
     ],
-    "jdesc": "バトンタッチを受けた時の行動で状態異常付着率上昇",
     "edesc": "Increased chance of inflicting all ailments after Baton Pass",
-    "ename": "Foul Contagion"
+    "ename": "Foul Contagion",
+    "jdesc": "バトンタッチを受けた時の行動で状態異常付着率が増加する"
+  },
+  "兵主神の異能": {
+    "demons": [
+      "Shiva"
+    ],
+    "edesc": "Reduces cost of Psy skills by 75%",
+    "ename": "Wargod's Wrath",
+    "jdesc": "念動使用時のSP消費75％減少"
+  },
+  "冷徹な気質": {
+    "demons": [
+      "Milady"
+    ],
+    "edesc": "Reduces susceptibility to all ailments by 25%",
+    "ename": "Coolheadedness",
+    "jdesc": "味方が状態異常にかかる確率を25%減少させる"
   },
   "凍てつく血統": {
     "demons": [
       "Jack Frost",
+      "King Frost",
       "Sui-Ki"
     ],
-    "jdesc": "氷結スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Ice skills",
-    "ename": "Ice Lineage"
+    "ename": "Ice Lineage",
+    "jdesc": "氷結スキル使用時のSP消費量が自動的に半分になる"
   },
   "卓越した暗示力": {
     "demons": [
-      "Matador"
+      "Cu Chulainn",
+      "Hanuman",
+      "Horus",
+      "Matador",
+      "Yatagarasu"
     ],
-    "jdesc": "味方に対する補助効果のターン数が1増加",
     "edesc": "Extends ally-cast buffs by 1 turn",
-    "ename": "Superior Hypnosis"
+    "ename": "Group Hypnosis",
+    "jdesc": "自身が味方に対して発動する補助効果のターン数が1増加する"
   },
   "各個集中の眼差し": {
     "demons": [
-      "Fuu-Ki",
-      "Onmoraki",
       "Belphegor",
-      "Koppa Tengu"
+      "Fuu-Ki",
+      "Koppa Tengu",
+      "Norn",
+      "Onmoraki",
+      "Silky",
+      "Thor"
     ],
-    "jdesc": "単体対象の魔法スキルの攻撃力20%上昇",
     "edesc": "Strengthens single-target magic by 20%",
-    "ename": "Focused Gaze"
+    "ename": "Focused Gaze",
+    "jdesc": "敵単体を対象とする魔法スキルの攻撃力が自動的に20%上昇する"
   },
   "吸い尽くす口先": {
     "demons": [
-      "Incubus",
-      "Daisoujou",
       "Choronzon",
+      "Daisoujou",
+      "Incubus",
       "Legion"
     ],
-    "jdesc": "自身への吸収効果と吸血・吸魔の効果倍増",
-    "edesc": "Strengthens offensive absorbption skills by 100%",
-    "ename": "Bloodsucker"
+    "edesc": "Doubles effectiveness of absorption skills",
+    "ename": "Bloodsucker",
+    "jdesc": "自身に対する吸血効果と吸血・吸魔の効果が倍増する"
+  },
+  "呪われた血統": {
+    "demons": [
+      "Girimehkala",
+      "Pazuzu",
+      "Rangda"
+    ],
+    "edesc": "Halves SP cost for Curse skills",
+    "ename": "Curse Lineage",
+    "jdesc": "呪怨スキル使用時のSP消費量が自動的に半分になる"
+  },
+  "味わいの口先": {
+    "demons": [
+      "Abaddon",
+      "Uriel",
+      "Yurlungur"
+    ],
+    "edesc": "Strengthens SP regeneration skills by 50%",
+    "ename": "Spirit Focus",
+    "jdesc": "自身に対するSP回復効果が自動的に50％上昇する"
+  },
+  "国産みが如き業": {
+    "demons": [
+      "Izanagi-no-Okami",
+      "Izanagi-no-Okami Picaro"
+    ],
+    "edesc": "Attack and Defense scales with Compendium completion rate",
+    "ename": "Creation Ceremony",
+    "jdesc": "囚人名簿の登録率によって攻撃力と防御力が上昇するペルソナ"
   },
   "型破りの重量": {
     "demons": [
-      "Naga",
-      "Ippon-Datara",
       "Bicorn",
-      "Obariyon",
-      "Kelpie"
+      "Ippon-Datara",
+      "Kelpie",
+      "Naga",
+      "Obariyon"
     ],
-    "jdesc": "物理属性の攻撃力20%アップ",
-    "edesc": "Strengthes Phys skills by 20%",
-    "ename": "Heavyweight"
+    "edesc": "Strengthens Phys skills by 20%",
+    "ename": "Heavyweight",
+    "jdesc": "物理属性の攻撃力が自動的に20%上昇する"
   },
   "報復する肉体": {
     "demons": [
+      "Byakko",
       "Kin-Ki",
       "Oni",
+      "Ose",
       "Setanta",
-      "Ose"
+      "Siegfried",
+      "Yoshitsune"
     ],
-    "jdesc": "自身のカウンタ、反射のダメージ倍増",
-    "edesc": "Doubles effectiveness of reflected damage",
-    "ename": "Avenger"
+    "edesc": "Doubles damage from Counter skills",
+    "ename": "Avenger",
+    "jdesc": "自身が発動するカウンタ、反射のダメージが倍増する"
   },
   "天性の危機管理": {
     "demons": [
-      "Berith"
+      "Berith",
+      "Chernobog",
+      "Throne"
     ],
-    "jdesc": "自身の弱点に対するダメージを軽減",
     "edesc": "Reduces damage taken when weakness struck",
-    "ename": "Crisis Management"
+    "ename": "Crisis Management",
+    "jdesc": "自身が受ける弱点に対するダメージを軽減する"
   },
   "妙技の手管": {
     "demons": [
       "Leanan Sidhe",
-      "Thoth",
+      "Makami",
       "Mithras",
-      "Makami"
+      "Parvati",
+      "Scathach",
+      "Thoth"
     ],
-    "jdesc": "テクニカルのダメージ25%上昇",
     "edesc": "Strengthens technical damage by 25%",
-    "ename": "Exquisite Technique"
+    "ename": "Exquisite Technique",
+    "jdesc": "テクニカルによるダメージが25％上昇する"
   },
   "後追いする冷血": {
     "demons": [
+      "Genbu",
       "Lilim",
-      "Genbu"
+      "Yamata-no-Orochi"
     ],
-    "jdesc": "自身の1MOREで凍結付着率増加",
-    "edesc": "Increases chance of inflicting Freeze after Downing foe",
-    "ename": "Freezing Follow-up"
+    "edesc": "Increases chance of inflicting Freeze after downing foe",
+    "ename": "Freezing Follow-up",
+    "jdesc": "自身の1MOREによる行動で氷結属性の凍結付着率が増加する"
   },
   "念視の血統": {
     "demons": [
       "Kaiwan",
+      "Nebiros",
+      "Okuninushi",
       "Shiki-Ouji"
     ],
-    "jdesc": "念動スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Psy skills",
-    "ename": "Psy Lineage"
+    "ename": "Psy Lineage",
+    "jdesc": "念動スキル使用時のSP消費量が自動的に半分になる"
   },
   "悪天候の申し子": {
     "demons": [
+      "Black Rider",
       "Mokoi",
       "Sudama"
     ],
-    "jdesc": "実際の天候に関わらず、常に雨・雪注意報扱い",
     "edesc": "Activates all equipped special weather passives",
-    "ename": "Storm Born"
+    "ename": "Storm Born",
+    "jdesc": "実際の天候に関わらず常に雨・雪注意報扱いなる"
   },
-  "指先からの熱伝導": {
+  "悲しみの輪": {
     "demons": [
-      "Orthrus",
+      "Orpheus",
+      "Orpheus Picaro"
+    ],
+    "edesc": "Activates Endure up to 4 times",
+    "ename": "Cycle of Sorrow",
+    "jdesc": "HPが0になった際に自動的に4度までHP1で復帰する"
+  },
+  "拝火の血統": {
+    "demons": [
+      "Cerberus",
+      "Decarabia",
+      "Surt"
+    ],
+    "edesc": "Halves SP cost for Fire skills",
+    "ename": "Fire Lineage",
+    "jdesc": "火炎スキル使用時のSP消費量が自動的に半分になる"
+  },
+  "指先から熱伝導": {
+    "demons": [
+      "Baphomet",
+      "Cait Sith",
+      "Eligor",
       "Hua Po",
       "Jack-o'-Lantern",
-      "Cait Sith",
-      "Eligor"
+      "Orthrus"
     ],
-    "jdesc": "バトンタッチを受けた時の行動で炎上付着率上昇",
     "edesc": "Increases chance of inflicting Burn after Baton Pass",
-    "ename": "Burning Touch"
+    "ename": "Burning Touch",
+    "jdesc": "バトンタッチを受けた時の行動で炎上付着率が増加する"
   },
   "支援の血統": {
     "demons": [
       "Clotho",
       "Kikuri-Hime",
-      "Nigi Mitama"
+      "Nigi Mitama",
+      "Sarasvati"
     ],
-    "jdesc": "補助スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Support skills",
-    "ename": "Support Lineage"
+    "ename": "Support Lineage",
+    "jdesc": "補助スキル使用時のSP消費量が自動的に半分になる"
   },
   "救い手の血統": {
     "demons": [
-      "Mandrake",
-      "Isis"
+      "Atavaka",
+      "Bishamonten",
+      "Isis",
+      "Kushinada-Hime",
+      "Mandrake"
     ],
-    "jdesc": "回復スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Recovery skills",
-    "ename": "Recovery Lineage"
+    "ename": "Recovery Lineage",
+    "jdesc": "回復スキル使用時のSP消費量が自動的に半分になる"
+  },
+  "最小手への誘い": {
+    "demons": [
+      "Ariadne",
+      "Ariadne Picaro"
+    ],
+    "edesc": "Allows use of consumables without expending them after Baton Pass",
+    "ename": "Offered Hand",
+    "jdesc": "バトンタッチを受けた時の行動で消費アイテムが減らなくなる"
+  },
+  "桂の由来": {
+    "demons": [
+      "Tsukiyomi",
+      "Tsukiyomi Picaro"
+    ],
+    "edesc": "Strengthens damage dealt by 50% after downing foe",
+    "ename": "Tree of Life",
+    "jdesc": "自身の1MOREによる行動で攻撃力が50%上昇する"
   },
   "死に至る病": {
     "demons": [
-      "Anubis"
+      "Anubis",
+      "Melchizedek"
     ],
-    "jdesc": "即死スキルの成功率が上昇",
     "edesc": "Increases success rate of instant death skills",
-    "ename": "Deadly Plague"
+    "ename": "Deadly Plague",
+    "jdesc": "即死スキルの成功率が上昇する"
+  },
+  "気高き風格": {
+    "demons": [
+      "Zorro"
+    ],
+    "edesc": "Doubless effectivess of Recovery skills",
+    "ename": "Noblility",
+    "jdesc": "戦闘中味方が使用する回復スキル効果が倍増する"
+  },
+  "淀みきったオーラ": {
+    "demons": [
+      "Pale Rider",
+      "Titania"
+    ],
+    "edesc": "Increases chance of inflicting all ailments",
+    "ename": "Stagnant Aura",
+    "jdesc": "状態異常を付着させる確率が上昇する"
+  },
+  "深追いの気質": {
+    "demons": [
+      "Asura",
+      "Gabriel",
+      "Kali",
+      "Seiryu"
+    ],
+    "edesc": "Strengthens attacks that strike foe weaknesses by 50%",
+    "ename": "Relentlessness",
+    "jdesc": "弱点を突いた際のダメージ50％UP"
+  },
+  "無頼の眼力": {
+    "demons": [
+      "Goemon"
+    ],
+    "edesc": "Chance to nullify Phys damage",
+    "ename": "Roguish Instinct",
+    "jdesc": "味方が物理攻撃を受ける際に攻撃を回避する事がある"
   },
   "無類の自己暗示力": {
     "demons": [
-      "Jikokuten",
-      "Hell Biker",
       "Apsaras",
+      "Jikokuten",
       "Lachesis",
+      "Power",
       "Saki Mitama"
     ],
-    "jdesc": "自身の補助効果のターン数が1増加",
     "edesc": "Extends self-cast buffs by 1 turn",
-    "ename": "Self Hypnosis"
+    "ename": "Self Hypnosis",
+    "jdesc": "自身にかかる補助効果のターン数が1増加する"
   },
   "熱病みの血統": {
     "demons": [
+      "Ananta",
       "Ara Mitama",
-      "Shiisaa",
-      "Phoenix"
+      "Phoenix",
+      "Shiisaa"
     ],
-    "jdesc": "核熱スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Nuke skills",
-    "ename": "Nuke Lineage"
+    "ename": "Nuke Lineage",
+    "jdesc": "核熱スキル使用時のSP消費量が自動的に半分になる"
+  },
+  "異端の魅力": {
+    "demons": [
+      "Satanael"
+    ],
+    "edesc": "Strengthens magic skills by 50%",
+    "ename": "Heretic Charisma",
+    "jdesc": "魔法スキルの攻撃力が50%上昇する"
+  },
+  "知恵の誘惑": {
+    "demons": [
+      "Lucifer"
+    ],
+    "edesc": "Reduces cost of magic skills by 75%",
+    "ename": "Forbidden Knowledge",
+    "jdesc": "魔法スキル攻撃時のSP消費量が自動的に75％減少する"
   },
   "祝福された血統": {
     "demons": [
+      "Barong",
+      "Dominion",
       "Mithra",
-      "Unicorn",
-      "Principality"
+      "Principality",
+      "Unicorn"
     ],
-    "jdesc": "祝福スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Bless skills",
-    "ename": "Bless Lineage"
+    "ename": "Bless Lineage",
+    "jdesc": "祝福スキル使用時のSP消費量が自動的に半分になる"
+  },
+  "神産みが如き業": {
+    "demons": [
+      "Izanagi",
+      "Izanagi Picaro"
+    ],
+    "edesc": "Raises likelihood of ally traits activating",
+    "ename": "Divine Ceremony",
+    "jdesc": "仲間のペルソナ特性が発生しやすくなる"
+  },
+  "究極破滅の怒髪天": {
+    "demons": [
+      "Zaou-Gongen"
+    ],
+    "edesc": "Strengthens Phys attacks by 30%",
+    "ename": "Apocalyptic Fury",
+    "jdesc": "???"
+  },
+  "聖別された魂": {
+    "demons": [
+      "Messiah",
+      "Messiah Picaro"
+    ],
+    "edesc": "Doubles effectiveness of HP and SP regeneration skills",
+    "ename": "Offered Soul",
+    "jdesc": "自身に対するHP・SPの回復効果が自動的に2倍になる"
   },
   "背水のアンカー": {
     "demons": [
       "Arsene",
-      "Neko Shogun"
+      "Dionysus",
+      "Raphael"
     ],
-    "jdesc": "バトンタッチで包囲された時用のスキルを使える",
     "edesc": "Allows use of ambush-only skills after Baton Pass",
-    "ename": "Last Stand"
+    "ename": "Last Stand",
+    "jdesc": "バトンタッチを受けた時の行動で包囲された時用のスキルが使える"
   },
   "至福の大器": {
-    "demons": [
-      "Stone of Scone",
-      "Regent",
-      "Queen's Necklace"
-    ],
-    "jdesc": "宝魔に秘められた特性を合体時に獲得",
+    "demons": [],
     "edesc": "Treasure demons only",
-    "ename": "Treasured Talent"
+    "ename": "Treasured Talent",
+    "jdesc": "宝魔に秘められた特性を合体時に獲得"
+  },
+  "荒ぶる気性": {
+    "demons": [
+      "Captain Kidd"
+    ],
+    "edesc": "Chance to strengthen Phys attacks by 40%",
+    "ename": "Wild Spirit",
+    "jdesc": "味方の物理攻撃の攻撃力が稀に40％上昇する"
+  },
+  "虚無の道化師": {
+    "demons": [
+      "Magatsu-Izanagi",
+      "Magatsu-Izanagi Picaro"
+    ],
+    "edesc": "Raises damage dealt by 40% for each foe afflicted with an ailment",
+    "ename": "Hollow Fool",
+    "jdesc": "敵の状態異常の数に応じて攻撃力が40%上昇する"
   },
   "血塗られた瞳": {
     "demons": [
+      "Belial",
+      "Forneus",
+      "Skadi",
       "White Rider"
     ],
-    "jdesc": "状態異常の敵からの攻撃を高確率で回避",
     "edesc": "Raises evasion against foes afflicted with ailments",
-    "ename": "Bloodshot Gaze"
+    "ename": "Bloodshot Gaze",
+    "jdesc": "状態異常にかかている敵からの攻撃を高確率で避ける"
   },
   "貪食の口先": {
     "demons": [
-      "Flauros",
-      "Tam Lin",
-      "Suzaku",
-      "Kusi Mitama"
+      "Ganesha",
+      "Hecatoncheires",
+      "Koumokuten",
+      "Kusi Mitama",
+      "Narcissus",
+      "Suzaku"
     ],
-    "jdesc": "自身へのHP回復効果が50%上昇",
-    "edesc": "Strengthens own Recovery spells by 50%",
-    "ename": "Voracious Appetite"
+    "edesc": "Strengthens HP regeneration skills by 50%",
+    "ename": "Life Focus",
+    "jdesc": "自身に対するHP回復効果が自動的に50%上昇する"
   },
   "追い撃つ帯電体質": {
     "demons": [
       "Mothman",
-      "Pixie"
+      "Oberon",
+      "Pixie",
+      "Queen Mab"
     ],
-    "jdesc": "ダウン中の敵への電撃付着率増加",
-    "edesc": "Increases chance of inflicting Shock after Downing foe",
-    "ename": "Shocking Follow-up"
+    "edesc": "Increased chance to inflict Shock on downed foes",
+    "ename": "Shocking Follow-up",
+    "jdesc": "ダウンしている敵に対する電撃属性の感電付着率が増加する"
+  },
+  "逆上の雄牛": {
+    "demons": [
+      "Asterius",
+      "Asterius Picaro"
+    ],
+    "edesc": "Damage scales with lost HP",
+    "ename": "Charging Bull",
+    "jdesc": "自身のHPが少なくなると攻撃のダメージが上昇する"
   },
   "連鎖の手管": {
     "demons": [
+      "Angel",
+      "Archangel",
+      "Dakini",
       "High Pixie",
       "Kodama",
       "Kurama Tengu",
-      "Angel",
-      "Archangel",
-      "Rakshasa"
+      "Rakshasa",
+      "Valkyrie"
     ],
-    "jdesc": "バトンタッチを受けた時の行動でダメージ上昇",
     "edesc": "Raises damage dealt after Baton Pass",
-    "ename": "Chained Technique"
+    "ename": "Chained Technique",
+    "jdesc": "バトンタッチを受けたときの行動でダメージが上昇する"
+  },
+  "鉄の心臓": {
+    "demons": [
+      "Thanatos",
+      "Thanatos Picaro"
+    ],
+    "edesc": "Halves SP cost after Baton Pass",
+    "ename": "Iron Heart",
+    "jdesc": "バトンタッチを受けた時の行動でSP消費が半分になる"
   },
   "鉄壁の抗体": {
     "demons": [
-      "Arahabaki"
+      "Arahabaki",
+      "Moloch"
     ],
-    "jdesc": "すべての状態異常にかからない",
     "edesc": "Nullifies all ailments",
-    "ename": "Iron Immunity"
+    "ename": "Iron Immunity",
+    "jdesc": "すべての状態異常にかからなくなる"
   },
   "雷呼びの血統": {
     "demons": [
-      "Zouchouten",
-      "Thunderbird",
+      "Ame-no-Uzume",
       "Hariti",
+      "Raja Naga",
       "Take-Minakata",
-      "Ame-no-Uzume"
+      "Thunderbird",
+      "Zouchouten"
     ],
-    "jdesc": "電撃スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Elec skills",
-    "ename": "Elec Lineage"
+    "ename": "Elec Lineage",
+    "jdesc": "電撃スキル使用時のSP消費量が自動的に半分になる"
   },
   "風来の血統": {
     "demons": [
-      "Anzu"
+      "Anzu",
+      "Baal",
+      "Fortuna",
+      "Garuda",
+      "Jatayu",
+      "Quetzalcoatl"
     ],
-    "jdesc": "疾風スキル使用時のSP消費量が半分",
     "edesc": "Halves SP cost for Wind skills",
-    "ename": "Wind Lineage"
-  },
-  "万物のはからい": {
-    "ename": "All Judge",
-    "edesc": "Increases chance of inflicting Burn, Freeze, and Shock by 25%",
-    "demons": ["Johanna"]
-  },
-  "荒ぶる気性": {
-    "ename": "Wild Spirit",
-    "edesc": "Chance to Strengthen Phys attacks by 40%",
-    "demons": ["Captain Kidd"]
-  },
-  "無頼の眼力": {
-    "ename": "Roguish Instinct",
-    "edesc": "Chance to nullify Phys damage",
-    "demons": ["Goemon"]
-  },
-  "気高き風格": {
-    "ename": "Noblility",
-    "edesc": "Strengthens Recovery skills by 100%",
-    "demons": ["Zorro"]
+    "ename": "Wind Lineage",
+    "jdesc": "疾風スキル使用時のSP消費量が自動的に半分になる"
   },
   "魔性の極意": {
-    "ename": "Witchcraft",
+    "demons": [
+      "Carmen"
+    ],
     "edesc": "Chance to decrease costs for attack spells",
-    "demons": ["Carmen"]
-  },
-  "はじける演算力": {
-    "ename": "High-speed Hacking",
-    "edesc": "???",
-    "demons": ["Necronomicon"]
+    "ename": "Witchcraft",
+    "jdesc": "味方の攻撃魔法のSP消費量が稀に減少する"
   }
 }
