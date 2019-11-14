@@ -5,7 +5,7 @@ export interface Demon extends BaseDemon {
 }
 
 export interface Skill extends BaseSkill {
-  fuse: string;
+  transfer: { demon: string, level: number }[];
 }
 
 export interface CompendiumConfig extends BaseComp {

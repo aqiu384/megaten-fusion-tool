@@ -55,7 +55,7 @@ for (const entry of Object.values(TRAIT_DATA_JSON)) {
 
   for (const demon of entry.demons) {
     if (DEMON_DATA_JSON[demon]) {
-      DEMON_DATA_JSON[demon].skills[entry.ename] = 100
+      DEMON_DATA_JSON[demon].skills[entry.ename] = 0;
     }
   }
 }

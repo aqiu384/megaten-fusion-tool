@@ -85,9 +85,13 @@ export class Compendium implements ICompendium {
           rank:      json['rank'] || 99,
           effect:    json['effect'],
           learnedBy: [],
-          fuse:      json['card'] || '',
+          transfer:  [],
           level:     0
         };
+
+        if (json['card']) {
+          skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: demons[d] ? 0 : -100 }));
+        }
       }
     }
 

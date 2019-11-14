@@ -20,7 +20,7 @@ export interface Skill {
   cost: number;
   rank: number;
   effect: string;
-  requires: string;
+  transfer: { demon: string, level: number }[];
   learnedBy: { demon: string, level: number }[];
   newoc?: boolean;
   level: number;

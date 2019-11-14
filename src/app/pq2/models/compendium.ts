@@ -86,10 +86,14 @@ export class Compendium implements ICompendium {
         effect:    json['effect'],
         target:    json['target'] || 'Self',
         learnedBy: [],
-        fuse:      json['card'] || '',
+        transfer:  [],
         code:      json['code'] || 0,
         level:     0
       };
+
+      if (json['card']) {
+        skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: 0 }));
+      }
     }
 
     for (const race of this.compConfig.races) {

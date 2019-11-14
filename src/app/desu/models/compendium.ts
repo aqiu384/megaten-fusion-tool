@@ -88,7 +88,7 @@ export class DesuCompendium implements ICompendium {
           cost:      json['cost'] || 0,
           rank:      json['rank'] || 99,
           effect:    json['effect'],
-          requires:  json['prereq'] || '',
+          transfer:  [{ demon: json['prereq'] || '', level: -100 }],
           learnedBy: [],
           level:     0
         };

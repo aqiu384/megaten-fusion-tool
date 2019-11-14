@@ -11,15 +11,15 @@ import { CompendiumConfig } from '../models';
   template: `
     <app-smt-skill-list
       [elemOrder]="compConfig.elemOrder"
-      [hasFuse]="hasFuse"
       [isPersona]="true"
+      [transferTitle]="transferTitle"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `
 })
 export class SkillListContainerComponent extends SLCC {
   compConfig: CompendiumConfig;
-  hasFuse: boolean;
+  transferTitle: string;
 
   constructor(
     title: Title,
@@ -29,7 +29,7 @@ export class SkillListContainerComponent extends SLCC {
     super(title, changeDetectorRef, fusionDataService);
     this.compConfig = fusionDataService.compConfig;
     this.appName = `List of Skills - ${fusionDataService.appName}`;
-    this.hasFuse = this.compConfig.hasSkillCards[fusionDataService.gameAbbr];
+    this.transferTitle = this.compConfig.hasSkillCards[fusionDataService.gameAbbr] ? 'Skill Card' : '';
 
     this.defaultSortFun = (a, b) => (
       this.compConfig.elemOrder[a.element] -

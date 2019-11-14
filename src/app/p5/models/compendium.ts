@@ -34,17 +34,20 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          item:    json['item'],
+          item:    json['item'] || '',
           race:    json['race'],
           lvl:     json['lvl'],
           skills:  json['skills'],
           price:   Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
           stats:   json['stats'],
           resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
-          fusion:  json['fusion'] || 'normal'
+          fusion:  json['fusion'] || 'normal',
+          inherit: json['inherits']
         };
 
-        demons[name].inherit = json['inherits'];
+        if (json['itemr']) {
+          demons[name].item += (', ' + json['itemr'])
+        }
       }
     }
 
@@ -86,11 +89,16 @@ export class Compendium implements ICompendium {
           effect:  json['effect'],
           rank:    json['cost'] / 100 || 0,
           cost:    json['cost'] || 0,
-          talk:    json['talk'] || '',
-          fuse:    json['fuse'] || '',
+          transfer:  [],
           learnedBy: [],
           level: 0
         };
+
+        if (json['talk']) {
+          skills[name].transfer = [{ demon: json['talk'], level: 100 }];
+        } else if (json['fuse'] && !demons[json['fuse']]) {
+          skills[name].transfer = [{ demon: json['fuse'], level: -100 }];
+        }
 
         if (json['unique']) {
           skills[name].rank = 99;
@@ -121,6 +129,16 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, demon] of Object.entries(demons)) {
+      if (demon.item) {
+        const [item, itemR] = demon.item.split(', ');
+
+        if (skills[item]) {
+          skills[item].transfer.unshift({ demon: name, level: 0 });
+        } if (skills[itemR]) {
+          skills[itemR].transfer.unshift({ demon: name, level: 2 });
+        }
+      }
+
       if (demon.fusion !== 'party') {
         inversions[demon.race][demon.lvl] = name;
       }

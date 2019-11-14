@@ -11,8 +11,7 @@ export interface Enemy extends BaseDemon {
 }
 
 export interface Skill extends BaseSkill {
-  talk: string;
-  fuse: string;
+  transfer: { demon: string, level: number }[];
 }
 
 export interface CompendiumConfig extends BaseComp {

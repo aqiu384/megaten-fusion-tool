@@ -7,8 +7,8 @@ export interface Demon extends BaseDemon {
 
 export interface Skill extends BaseSkill {
   target: string;
-  fuse: string[];
   code: number;
+  transfer: { demon: string, level: number }[];
 }
 
 export interface DecodedDemon {

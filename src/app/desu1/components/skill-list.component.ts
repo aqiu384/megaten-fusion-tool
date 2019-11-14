@@ -11,7 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <app-smt-skill-list
       [elemOrder]="elemOrder"
-      [hasPrereq]="true"
+      [transferTitle]="'Prereq'"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `
