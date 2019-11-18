@@ -5,10 +5,90 @@
     "element": "phys",
     "unique": "Athena"
   },
+  "Ali Dance": {
+    "effect": "Half hit rate of all incoming attacks.",
+    "element": "passive",
+    "fuse": "Jazz 1/15"
+  },
+  "All Grace": {
+    "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 50%",
+    "element": "trait",
+    "unique": "Agnes"
+  },
+  "Arms Master": {
+    "effect": "Half HP cost for physical skills.",
+    "element": "passive",
+    "fuse": "Jazz 1/22"
+  },
+  "Blade of Rebellion": {
+    "cost": 1099,
+    "effect": "Deal severe Almighty damage to 1 for with extra effectiveness if down.",
+    "element": "almighty",
+    "unique": "Hereward"
+  },
+  "Brave Step": {
+    "cost": 1016,
+    "effect": "Increase critical rate for all allies.",
+    "element": "support",
+    "unique": "Cendrillon"
+  },
+  "Champion Cup": {
+    "cost": 1099,
+    "effect": "Diarama + Tarukaja",
+    "element": "support",
+    "fuse": "Kamoshida Ishi",
+    "unique": "Kamoshida Ishi"
+  },
+  "Charge": {
+    "cost": 1015,
+    "effect": "Multiply user's next Phys attack damage by 2.5.",
+    "element": "support",
+    "fuse": "Jazz 9/4"
+  },
+  "Charge All": {
+    "cost": 1060,
+    "effect": "Multiply all allies' next Phys attack damage by 2.5.",
+    "element": "support",
+    "unique": "William"
+  },
+  "Checkmate": {
+    "cost": 1090,
+    "effect": "Decrease all foes' Attack, Defense and Agility for 3 turns.",
+    "element": "support",
+    "unique": "Agnes"
+  },
+  "Concentrate": {
+    "cost": 1015,
+    "effect": "Multiply user's next magical attack damage by 2.5.",
+    "element": "support",
+    "fuse": "Jazz 9/25"
+  },
+  "Concentrate All": {
+    "cost": 1060,
+    "effect": "Multiply all allies' next Magic attack damage by 2.5.",
+    "element": "support",
+    "unique": "Celestine"
+  },
+  "Cunning Strategist": {
+    "effect": "Chance to halve SP cost for ally Support and Almighty skills",
+    "element": "trait",
+    "unique": "Hereward"
+  },
+  "Daybreak Bell": {
+    "effect": "High chance to prevent ally down when weakness struck",
+    "element": "trait",
+    "unique": "Ella"
+  },
   "Death Scythe": {
     "cost": 99,
     "effect": "Deal servere Phys damage and inflict Fear (medium odds) to all foes.",
     "element": "phys"
+  },
+  "Debilitate": {
+    "cost": 1030,
+    "effect": "Decrease 1 foe's Attack, Defense and Agility for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 12/11"
   },
   "Demon Kingdom": {
     "effect": "Strengthen all magical attacks by 50%.",
@@ -25,15 +105,141 @@
     "effect": "Deal weak Gun damage and inflict Sleep (medium odds) to 1 foe.",
     "element": "gun"
   },
+  "False Painting": {
+    "cost": 1099,
+    "effect": "Absorbs any non-almighty attack once + Removes weakness",
+    "element": "support",
+    "fuse": "Madarame Ishi",
+    "unique": "Madarame Ishi"
+  },
+  "Fiendish Insight": {
+    "effect": "High chance to nullify Phys damage for all allies",
+    "element": "trait",
+    "unique": "Gorokichi"
+  },
+  "Furious Spirit": {
+    "effect": "Chance to strengthen ally Phys attacks by 80%",
+    "element": "trait",
+    "unique": "William"
+  },
+  "Gambler Intuition": {
+    "cost": 1099,
+    "effect": "Masukukaja + Begin battle with Concentrate",
+    "element": "support",
+    "fuse": "Niijima Ishi",
+    "unique": "Niijima Ishi"
+  },
   "Gattling Blows": {
     "cost": 99,
     "effect": "Deal 2 to 4 times medium Phys damage to all foes.",
     "element": "phys"
   },
+  "Guiding Tentacle": {
+    "cost": 1099,
+    "effect": "Life Aid + Down all foes",
+    "element": "support",
+    "fuse": "??? Ishi",
+    "unique": "??? Ishi"
+  },
+  "Heat Riser": {
+    "cost": 1030,
+    "effect": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 12/4"
+  },
+  "Immovable": {
+    "effect": "Reduces ally ailment susceptibility by 50%",
+    "element": "trait",
+    "unique": "Lucy"
+  },
   "Kill Rush": {
     "cost": 14,
     "effect": "Deal 1-3 times light Phys damage to 1 foe.",
     "element": "phys"
+  },
+  "Laevatein": {
+    "cost": 25,
+    "effect": "Deal severe Phys damage to 1 foe.",
+    "element": "phys",
+    "unique": "Loki"
+  },
+  "Life Wall": {
+    "cost": 1095,
+    "effect": "Repels next non-almighty attack for all allies.",
+    "element": "support",
+    "unique": "Lucy"
+  },
+  "Majestic Aura": {
+    "effect": "Doubles effectiveness and may decrease costs of Recovery skills",
+    "element": "trait",
+    "unique": "Diego"
+  },
+  "Makarakarn": {
+    "cost": 1036,
+    "effect": "Create a shield on 1 ally to repel 1 magical attack.",
+    "element": "support",
+    "fuse": "Jazz 10/30"
+  },
+  "Marakukaja": {
+    "cost": 1024,
+    "effect": "Increase party's Defense for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 7/17 10/16"
+  },
+  "Marakunda": {
+    "cost": 1024,
+    "effect": "Decrease all foes' Defense for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 8/14 11/13"
+  },
+  "Masquerade": {
+    "cost": 25,
+    "effect": "Deal 2 times severe Phys damage to 1 foe.",
+    "element": "phys",
+    "unique": "Ella"
+  },
+  "Mastermind Authority": {
+    "cost": 1099,
+    "effect": "Defense Master + Charge on Ally",
+    "element": "support",
+    "fuse": "??? Ishi",
+    "unique": "??? Ishi"
+  },
+  "Masukukaja": {
+    "cost": 1024,
+    "effect": "Increase party's Agility for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 7/31 10/23"
+  },
+  "Masukunda": {
+    "cost": 1024,
+    "effect": "Decrease all foes' Agility for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 8/28 11/27"
+  },
+  "Matarukaja": {
+    "cost": 1024,
+    "effect": "Increase party's Attack power for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 7/10 10/9"
+  },
+  "Matarunda": {
+    "cost": 1024,
+    "effect": "Decrease all foes' Attack power for 3 turns.",
+    "element": "support",
+    "fuse": "Jazz 8/7 11/6"
+  },
+  "Miracle Rush": {
+    "cost": 16,
+    "effect": "Deal medium Phys damage to all foes. High critical rate.",
+    "element": "phys",
+    "unique": "Diego"
+  },
+  "Myriad Blooms": {
+    "cost": 1090,
+    "effect": "Increase all allies' Attack, Defense and Agility for 3 turns.",
+    "element": "support",
+    "unique": "Gorokichi"
   },
   "Myriad Truths": {
     "cost": 1040,
@@ -58,10 +264,12 @@
     "effect": "Deal medium Phys damage to 1 foe.",
     "element": "phys"
   },
-  "Saintly Embrace": {
-    "effect": "Recover 25% max HP each turn in battle.",
-    "element": "passive",
-    "unique": "Maria"
+  "President Intuition": {
+    "cost": 1099,
+    "effect": "Attack Master + Concentrate on Ally",
+    "element": "support",
+    "fuse": "Okumura Ishi",
+    "unique": "Okumura Ishi"
   },
   "Saintly Devotion": {
     "cost": 1099,
@@ -69,14 +277,59 @@
     "element": "healing",
     "unique": "Maria"
   },
+  "Saintly Embrace": {
+    "effect": "Recover 25% max HP each turn in battle.",
+    "element": "passive",
+    "unique": "Maria"
+  },
   "Saintly Words": {
     "effect": "Recover 15% max HP and SP each turn in battle.",
     "element": "passive",
     "unique": "Maria"
   },
+  "Sorcery": {
+    "effect": "Chance to halve ally costs for attack spells",
+    "element": "trait",
+    "unique": "Celestine"
+  },
+  "Spell Master": {
+    "effect": "Half SP cost for magic skills.",
+    "element": "passive",
+    "fuse": "Jazz 1/29"
+  },
   "Swift Strike": {
     "cost": 17,
     "effect": "Deal 2 to 4 times weak Phys damage to all foes.",
     "element": "phys"
+  },
+  "Tetrakarn": {
+    "cost": 1036,
+    "effect": "Create a shield on 1 ally to repel 1 Phys attack.",
+    "element": "support",
+    "fuse": "Jazz 10/2"
+  },
+  "Ultimate Support": {
+    "effect": "Moral Support may activate simultaneous effects",
+    "element": "passive",
+    "unique": "Al Azif"
+  },
+  "Unstoppable Hacking": {
+    "effect": "Recovers all HP if battle ends with an All-Out Attack",
+    "element": "trait",
+    "unique": "Al Azif"
+  },
+  "Vault Guardian": {
+    "cost": 1099,
+    "effect": "Marakukaja + Begin battle with Tetrakarn and Makarakarn",
+    "element": "support",
+    "fuse": "Kaneshiro Ishi",
+    "unique": "Kaneshiro Ishi"
+  },
+  "Wings of Wisdom": {
+    "cost": 1099,
+    "effect": "Speed Master + Amrita Shower",
+    "element": "support",
+    "fuse": "Futaba Ishi",
+    "unique": "Futaba Ishi"
   }
 }

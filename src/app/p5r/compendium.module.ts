@@ -16,8 +16,8 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from '../p5/data/skill-data.json';
 import ROYAL_SKILL_DATA_JSON from './data/skill-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
-import PARTY_DATA_JSON from '../p5/data/party-data.json';
-import DLC_DATA_JSON from '../p5/data/dlc-data.json';
+import PARTY_DATA_JSON from './data/party-data.json';
+import DLC_DATA_JSON from './data/dlc-data.json';
 import TRAIT_DATA_JSON from './data/jap-traits.json';
 
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -56,6 +56,10 @@ for (const entry of Object.values(TRAIT_DATA_JSON)) {
   for (const demon of entry.demons) {
     if (DEMON_DATA_JSON[demon]) {
       DEMON_DATA_JSON[demon].skills[entry.ename] = 0;
+    } if (DLC_DATA_JSON[demon]) {
+      DLC_DATA_JSON[demon].skills[entry.ename] = 0;
+    } if (PARTY_DATA_JSON[demon]) {
+      PARTY_DATA_JSON[demon].skills[entry.ename] = 0;
     }
   }
 }
