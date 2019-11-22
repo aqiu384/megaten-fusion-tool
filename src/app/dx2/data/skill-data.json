@@ -217,6 +217,12 @@
     "power": 140,
     "target": "1 Foe"
   },
+  "Blade of Terror": {
+    "cost": 6,
+    "effect": "Removes 25% current HP (<1000), 30% Bind",
+    "elem": "phy",
+    "target": "All Foes"
+  },
   "Bleeder": {
     "cost": 6,
     "effect": "Remove 2 MP",
@@ -244,6 +250,10 @@
     "effect": "Crit rate +15%",
     "elem": "pas",
     "points": 8
+  },
+  "Bloodshed": {
+    "effect": "After using Blade of Terror, Casts Heatwave bypassing Counter skills",
+    "elem": "pas"
   },
   "Bolt Storm": {
     "cost": 5,
@@ -745,6 +755,10 @@
   },
   "Faith in Wealth": {
     "effect": "HP +10%, Allies recover 1 MP for every Press Turn lost to Foe skills",
+    "elem": "pas"
+  },
+  "Famine": {
+    "effect": "At end of enemy phase, Reduce all Foe HP by 10% current (<200) and remove 1 MP",
     "elem": "pas"
   },
   "Fast Recovery": {
@@ -2149,6 +2163,10 @@
     "power": 160,
     "target": "1 Foe"
   },
+  "Pestilence": {
+    "effect": "Nullify Instant Death prevention. At end of enemy phase, Reduce all Poisoned Foe HP by 50% max (<2000)",
+    "elem": "pas"
+  },
   "Phys Amp": {
     "effect": "Phys dmg +25%",
     "elem": "pas",
@@ -2168,6 +2186,10 @@
     "effect": "Phys atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Plague": {
+    "effect": "At end of player phase, Reduce all Foe HP by 10% current (<200) with 50% Poison",
+    "elem": "pas"
   },
   "Plague of Babylon": {
     "cost": 6,
@@ -2507,6 +2529,10 @@
   },
   "Skanda": {
     "effect": "Ally Phys acc +15% and Crit rate +20%",
+    "elem": "pas"
+  },
+  "Soul Divide": {
+    "effect": "After Foe casts recovery magic, Reduce Foe HP by 50% current (<2000)",
     "elem": "pas"
   },
   "Soul Drain": {

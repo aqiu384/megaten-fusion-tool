@@ -82,7 +82,11 @@
       "Akasha Arts": 0,
       "Marakukaja": 0,
       "Rising Slash": 0,
-      "Diarahan": 47
+      "Diarahan": 47,
+      "Matarukaja": 48,
+      "Auto-Maraku": 50,
+      "Samarecarm": 51,
+      "Megaton Raid": 52
     },
     "stats": [33, 27, 29, 29, 27]
   },
@@ -97,7 +101,11 @@
       "Akasha Arts": 0,
       "Matarukaja": 0,
       "Rising Slash": 0,
-      "Diarahan": 51
+      "Diarahan": 51,
+      "Marakukaja": 52,
+      "Auto-Mataru": 54,
+      "Samarecarm": 55,
+      "Megaton Raid": 56
     },
     "stats": [35, 30, 31, 32, 29]
   },
@@ -167,7 +175,7 @@
       "Myriad Truths": 0,
       "Victory Cry": 0,
       "Angelic Grace": 0,
-      "Concentrate": 81
+      "Concentrate": 90
     },
     "stats": [54, 61, 56, 58, 45]
   },
@@ -329,7 +337,9 @@
       "Agi": 0,
       "Tarunda": 0,
       "Endure": 0,
-      "Maragion": 12
+      "Maragion": 12,
+      "Marakukaja": 12,
+      "Dodge Curse": 12
     },
     "stats": [8, 9, 8, 9, 6]
   },
@@ -348,6 +358,25 @@
       "Agilao": 14
     },
     "stats": [9, 11, 9, 10, 7]
+  },
+  "Raoul": {
+    "inherits": "almighty",
+    "item": "Phantom Hat",
+    "itemr": "Trickster Hat",
+    "lvl": 76,
+    "race": "Fool",
+    "resists": "--------wn",
+    "skills": {
+      "Phantom Show": 0,
+      "Eigaon": 0,
+      "Ali Dance": 0,
+      "Maeigaon": 78,
+      "Heat Riser": 79,
+      "Curse Amp": 80,
+      "Life Aid": 81,
+      "Concentrate": 82
+    },
+    "stats": [47, 49, 43, 54, 42]
   },
   "Thanatos": {
     "inherits": "almighty",

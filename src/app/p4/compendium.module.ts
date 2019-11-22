@@ -21,6 +21,7 @@ import GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import INHERIT_TYPES_JSON from './data/inheritance-types.json';
 import PARTY_DATA_JSON from './data/party-data.json';
+import GOLDEN_PARTY_DATA_JSON from './data/golden-party-data.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -43,10 +44,14 @@ for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
   inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = INHERIT_TYPES_JSON.ratios[i];
 }
 
-for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
+for (const entry of Object.values(PARTY_DATA_JSON)) {
   entry.race = entry.race + ' P';
   entry['fusion'] = 'party';
-  DEMON_DATA_JSON[demon] = entry;
+}
+
+for (const entry of Object.values(GOLDEN_PARTY_DATA_JSON)) {
+  entry.race = entry.race + ' P';
+  entry['fusion'] = 'party';
 }
 
 export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
@@ -67,7 +72,7 @@ export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
   enemyStats: ['HP', 'MP'],
   enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
 
-  demonData: { p4: [DEMON_DATA_JSON], p4g: [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON] },
+  demonData: { p4: [DEMON_DATA_JSON, PARTY_DATA_JSON], p4g: [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON] },
   skillData: { p4: [SKILL_DATA_JSON, GOLDEN_SKILL_DATA_JSON], p4g: [SKILL_DATA_JSON, GOLDEN_SKILL_DATA_JSON] },
   enemyData: { p4: [ENEMY_DATA_JSON], p4g: [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON] },
 
