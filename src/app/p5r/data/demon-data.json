@@ -1,6 +1,6 @@
 {
   "Abaddon": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Megaton Raid Belt",
     "itemr": "God's Hand Belt",
     "lvl": 75,
@@ -15,10 +15,11 @@
       "Absorb Phys": 80,
       "Gigantomachia": 81
     },
-    "stats": [51, 42, 58, 38, 43]
+    "stats": [51, 42, 58, 38, 43],
+    "trait": "Spirit Focus"
   },
   "Agathion": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Zio",
     "itemr": "Mazio",
     "lvl": 3,
@@ -32,10 +33,11 @@
       "Zio": 7,
       "Dodge Elec": 8
     },
-    "stats": [3, 4, 5, 7, 3]
+    "stats": [3, 4, 5, 7, 3],
+    "trait": "Odd Immunity"
   },
   "Alice": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Mamudoon Ring",
     "itemr": "Demonic Decree Ring",
     "lvl": 83,
@@ -50,10 +52,11 @@
       "Concentrate": 87,
       "Survival Trick": 88
     },
-    "stats": [45, 61, 49, 54, 47]
+    "stats": [45, 61, 49, 54, 47],
+    "trait": "Die Already!"
   },
   "Alilat": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Mabufudyne",
     "itemr": "Diamond Dust",
     "lvl": 81,
@@ -61,18 +64,19 @@
     "resists": "rrwd--n--w",
     "skills": {
       "Diamond Dust": 0,
-      "Freeze Boost": 0,
       "Marakukaja": 0,
+      "Freeze Boost": 0,
       "Mabufudyne": 82,
       "Concentrate": 83,
       "Auto-Maraku": 85,
       "Ice Amp": 86,
       "Ice Age": 87
     },
-    "stats": [99, 99, 99, 99, 99]
+    "stats": [45, 54, 57, 49, 45],
+    "trait": "Ice Lineage"
   },
   "Ame-no-Uzume": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Senryou Takusha",
     "itemr": "Senryou Takusha R",
     "lvl": 13,
@@ -86,10 +90,11 @@
       "Baisudi": 16,
       "Divine Grace": 18
     },
-    "stats": [7, 10, 9, 11, 9]
+    "stats": [7, 10, 9, 11, 9],
+    "trait": "Elec Lineage"
   },
   "Ananta": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Mafreila Ring",
     "itemr": "Freidyne Ring",
     "lvl": 44,
@@ -98,12 +103,18 @@
     "skills": {
       "Mafreila": 0,
       "Defense Master": 0,
-      "Elec Wall": 0
+      "Elec Wall": 0,
+      "Abysmal Surge": 46,
+      "Growth 2": 47,
+      "Marakukaja": 48,
+      "Freidyne": 49,
+      "Nuke Boost": 50
     },
-    "stats": [26, 30, 31, 27, 25]
+    "stats": [26, 30, 31, 27, 25],
+    "trait": "Nuke Lineage"
   },
   "Andras": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Evil Touch",
     "itemr": "Evil Smile",
     "lvl": 27,
@@ -111,16 +122,17 @@
     "resists": "--ws--s-wn",
     "skills": {
       "Foul Breath": 0,
-      "Tentarafoo": 0,
+      "Terror Claw": 0,
       "Evil Touch": 28,
       "Fear Boost": 29,
       "Rakunda": 31,
       "Ghastly Wail": 32
     },
-    "stats": [15, 19, 19, 21, 14]
+    "stats": [15, 19, 19, 21, 14],
+    "trait": "Foul Contagion"
   },
   "Angel": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Kouha",
     "itemr": "Makouha",
     "lvl": 9,
@@ -129,9 +141,13 @@
     "skills": {
       "Kouha": 0,
       "Makajam": 0,
-      "Dia": 0
+      "Dia": 0,
+      "Baisudi": 10,
+      "Dodge Curse": 11,
+      "Dekunda": 12
     },
-    "stats": [6, 9, 5, 9, 5]
+    "stats": [6, 9, 5, 9, 5],
+    "trait": "Chained Technique"
   },
   "Anubis": {
     "inherits": "almighty",
@@ -148,15 +164,16 @@
       "Dekunda": 37,
       "Resist Bless": 38
     },
-    "stats": [19, 24, 22, 21, 23]
+    "stats": [19, 24, 22, 21, 23],
+    "trait": "Deadly Plague"
   },
   "Anzu": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Garula",
     "itemr": "Magarula",
     "lvl": 25,
     "race": "Hierophant",
-    "resists": "-w--sd-w--",
+    "resists": "-w--sr-w--",
     "skills": {
       "Garula": 0,
       "Masukukaja": 0,
@@ -165,10 +182,11 @@
       "Dekaja": 28,
       "Null Forget": 29
     },
-    "stats": [14, 18, 15, 21, 14]
+    "stats": [14, 18, 15, 21, 14],
+    "trait": "Wind Lineage"
   },
   "Apsaras": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Media",
     "itemr": "Diarama",
     "lvl": 11,
@@ -182,10 +200,11 @@
       "Elec Wall": 14,
       "Wind Wall": 16
     },
-    "stats": [7, 11, 6, 10, 6]
+    "stats": [7, 11, 6, 10, 6],
+    "trait": "Self Hypnosis"
   },
   "Ara Mitama": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Freila Ring",
     "itemr": "Mafreila Ring",
     "lvl": 30,
@@ -200,10 +219,11 @@
       "Rage Boost": 34,
       "Matarukaja": 35
     },
-    "stats": [20, 18, 20, 20, 19]
+    "stats": [20, 18, 20, 20, 19],
+    "trait": "Nuke Lineage"
   },
   "Arahabaki": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Tapsuan",
     "itemr": "Tapsuan R",
     "lvl": 35,
@@ -217,34 +237,48 @@
       "Flash Bomb": 38,
       "Defense Master": 39
     },
-    "stats": [21, 23, 22, 24, 22]
+    "stats": [21, 23, 22, 24, 22],
+    "trait": "Iron Immunity"
   },
   "Archangel": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Hama",
     "itemr": "Mahama",
     "lvl": 14,
     "race": "Justice",
     "resists": "----w---nw",
     "skills": {
-      "Cleave": 0,
+      "Giant Slice": 0,
       "Dazzler": 0,
-      "Hama": 0
+      "Hama": 0,
+      "Rebellion": 16,
+      "Power Slash": 17,
+      "Vajra Blast": 19
     },
-    "stats": [11, 9, 10, 12, 7]
+    "stats": [11, 9, 10, 12, 7],
+    "trait": "Chained Technique"
   },
   "Ardha": {
     "inherits": "almighty",
     "item": "Sahasrara",
     "itemr": "Sahasrara R",
-    "lvl": 99,
+    "lvl": 84,
     "race": "Temperance",
-    "resists": "----------",
-    "skills": {},
-    "stats": [99, 99, 99, 99, 99]
+    "resists": "s--nn-----",
+    "skills": {
+      "God's Hand": 0,
+      "Cosmic Flare": 0,
+      "Invigorate 3": 0,
+      "Agneyastra": 87,
+      "Auto-Masuku": 88,
+      "Fortified Moxy": 89,
+      "Salvation": 90
+    },
+    "stats": [54, 56, 55, 54, 40],
+    "trait": "Naranari"
   },
   "Arsene": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Arsene's Cane",
     "itemr": "Arsene's Cane R",
     "lvl": 1,
@@ -257,10 +291,11 @@
       "Dream Needle": 5,
       "Adverse Resolve": 7
     },
-    "stats": [2, 2, 2, 3, 1]
+    "stats": [2, 2, 2, 3, 1],
+    "trait": "Last Stand"
   },
   "Asura-Ou": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Vajra",
     "itemr": "Vajra R",
     "lvl": 76,
@@ -275,10 +310,11 @@
       "High Counter": 80,
       "Unshaken Will": 81
     },
-    "stats": [52, 48, 51, 49, 35]
+    "stats": [52, 48, 51, 49, 35],
+    "trait": "Path of Carnage"
   },
   "Atavaka": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Brave Blade",
     "itemr": "Sword Dance",
     "lvl": 65,
@@ -293,10 +329,11 @@
       "Brave Blade": 70,
       "Attack Master": 71
     },
-    "stats": [51, 36, 43, 38, 34]
+    "stats": [51, 36, 43, 38, 34],
+    "trait": "Recovery Lineage"
   },
   "Atropos": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Mazionga",
     "itemr": "Ziodyne",
     "lvl": 39,
@@ -307,14 +344,15 @@
       "Fire Wall": 0,
       "Elec Break": 0,
       "Mediarama": 41,
-      "Elec Boost": 43,
-      "Dodge Fire": 44,
+      "Elec Boost": 42,
+      "Ziodyne": 44,
       "Concentrate": 45
     },
-    "stats": [23, 30, 22, 27, 22]
+    "stats": [23, 30, 22, 27, 22],
+    "trait": "Peerless Gaze"
   },
   "Attis": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Null Curse",
     "itemr": "Absorb Curse",
     "lvl": 82,
@@ -329,10 +367,11 @@
       "Absorb Curse": 86,
       "Blazing Hell": 88
     },
-    "stats": [56, 50, 48, 51, 48]
+    "stats": [49, 50, 48, 54, 52],
+    "trait": "Dying Will"
   },
   "Baal": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Yagrush",
     "itemr": "Yagrush R",
     "lvl": 82,
@@ -347,7 +386,8 @@
       "Charge": 86,
       "Vacuum Wave": 87
     },
-    "stats": [54, 58, 53, 47, 41]
+    "stats": [54, 58, 53, 47, 41],
+    "trait": "Wind Lineage"
   },
   "Baphomet": {
     "inherits": "almighty",
@@ -365,10 +405,11 @@
       "Shock Boost": 62,
       "Freeze Boost": 63
     },
-    "stats": [34, 42, 36, 38, 31]
+    "stats": [34, 42, 36, 38, 31],
+    "trait": "Burning Touch"
   },
   "Barong": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Ziodyne",
     "itemr": "Maziodyne",
     "lvl": 52,
@@ -382,10 +423,11 @@
       "Null Elec": 55,
       "Maziodyne": 57
     },
-    "stats": [33, 35, 33, 37, 25]
+    "stats": [33, 35, 33, 37, 25],
+    "trait": "Bless Lineage"
   },
   "Beelzebub": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Fleurs du Mal",
     "itemr": "Fleurs du Mal R",
     "lvl": 87,
@@ -401,10 +443,11 @@
       "Repel Ice": 91,
       "Megidolaon": 92
     },
-    "stats": [55, 61, 54, 56, 42]
+    "stats": [55, 61, 54, 56, 42],
+    "trait": "Reaper's Despair"
   },
   "Belial": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Mamudoon",
     "itemr": "Demonic Decree",
     "lvl": 82,
@@ -419,10 +462,11 @@
       "Mamudoon": 86,
       "Demonic Decree": 88
     },
-    "stats": [52, 53, 51, 48, 49]
+    "stats": [52, 53, 51, 48, 49],
+    "trait": "Bloodshot Gaze"
   },
   "Belphegor": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Mabufula",
     "itemr": "Bufudyne",
     "lvl": 37,
@@ -436,10 +480,11 @@
       "Bufudyne": 41,
       "Concentrate": 42
     },
-    "stats": [25, 27, 24, 23, 19]
+    "stats": [25, 27, 24, 23, 19],
+    "trait": "Focused Gaze"
   },
   "Berith": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Cleave",
     "itemr": "Power Slash",
     "lvl": 9,
@@ -452,10 +497,11 @@
       "Dodge Fire": 11,
       "Power Slash": 13
     },
-    "stats": [9, 6, 8, 8, 3]
+    "stats": [9, 6, 8, 8, 3],
+    "trait": "Crisis Management"
   },
   "Bicorn": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Lunge",
     "itemr": "Assault Dive",
     "lvl": 4,
@@ -468,10 +514,11 @@
       "Ice Wall": 7,
       "Apt Pupil": 8
     },
-    "stats": [5, 3, 3, 5, 3]
+    "stats": [5, 3, 3, 5, 3],
+    "trait": "Heavyweight"
   },
   "Bishamonten": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Mafreidyne",
     "itemr": "Atomic Flare",
     "lvl": 67,
@@ -486,10 +533,11 @@
       "Tetrakarn": 72,
       "God's Hand": 73
     },
-    "stats": [51, 37, 42, 44, 34]
+    "stats": [51, 37, 42, 44, 34],
+    "trait": "Recovery Lineage"
   },
   "Biyarky": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Null Wind",
     "itemr": "Repel Wind",
     "lvl": 70,
@@ -497,14 +545,15 @@
     "resists": "--nw-n-w-n",
     "skills": {
       "Agidyne": 0,
-      "Death Scythe": 0,
       "Foul Breath": 0,
+      "Death Scythe": 0,
       "Maragidyne": 72,
       "Ailment Boost": 73,
       "Fire Break": 74,
       "Heat Riser": 75
     },
-    "stats": [99, 99, 99, 99, 99]
+    "stats": [42, 49, 43, 51, 32],
+    "trait": "Fire Lineage"
   },
   "Black Frost": {
     "inherits": "almighty",
@@ -522,10 +571,11 @@
       "Repel Fire": 71,
       "Diamond Dust": 72
     },
-    "stats": [44, 46, 41, 42, 35]
+    "stats": [44, 46, 41, 42, 35],
+    "trait": "Ice Lineage"
   },
   "Black Ooze": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Headbutt",
     "itemr": "Memory Blow",
     "lvl": 18,
@@ -534,12 +584,17 @@
     "skills": {
       "Sledgehammer": 0,
       "Evil Touch": 0,
-      "Foul Breath": 0
+      "Stagnant Air": 0,
+      "Ambient Aid": 20,
+      "Headbutt": 21,
+      "Brain Jack": 23,
+      "Flash Bomb": 24
     },
-    "stats": [15, 7, 16, 8, 15]
+    "stats": [15, 7, 16, 8, 15],
+    "trait": "Odd Immunity"
   },
   "Black Rider": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Megidola",
     "itemr": "Megidolaon",
     "lvl": 59,
@@ -554,7 +609,8 @@
       "Ghastly Wail": 63,
       "Megidola": 64
     },
-    "stats": [36, 42, 34, 42, 30]
+    "stats": [36, 42, 34, 42, 30],
+    "trait": "Storm Born"
   },
   "Bugs": {
     "inherits": "almighty",
@@ -572,10 +628,11 @@
       "Evade Physical": 54,
       "Fast Heal": 55
     },
-    "stats": [35, 33, 30, 32, 24]
+    "stats": [35, 33, 30, 32, 24],
+    "trait": "Group Hypnosis"
   },
   "Byakko": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Mabufula Ring",
     "itemr": "Bufudyne Ring",
     "lvl": 45,
@@ -584,12 +641,18 @@
     "skills": {
       "Swift Strike": 0,
       "Mabufula": 0,
-      "Counterstrike": 0
+      "Counterstrike": 0,
+      "Ice Boost": 47,
+      "Ice Break": 48,
+      "Evade Fire": 49,
+      "Null Rage": 50,
+      "Bufudyne": 51
     },
-    "stats": [35, 28, 30, 32, 17]
+    "stats": [35, 28, 30, 32, 17],
+    "trait": "Avenger"
   },
   "Cait Sith": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Agi",
     "itemr": "Maragi",
     "lvl": 5,
@@ -603,10 +666,11 @@
       "Sukukaja": 7,
       "Media": 9
     },
-    "stats": [6, 4, 4, 5, 3]
+    "stats": [6, 4, 4, 5, 3],
+    "trait": "Burning Touch"
   },
   "Cerberus": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Megaton Raid",
     "itemr": "God's Hand",
     "lvl": 55,
@@ -620,10 +684,11 @@
       "Maragidyne": 58,
       "Enduring Soul": 60
     },
-    "stats": [39, 35, 32, 39, 27]
+    "stats": [39, 35, 32, 39, 27],
+    "trait": "Fire Lineage"
   },
   "Chernobog": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Mudoon",
     "itemr": "Mamudoon",
     "lvl": 62,
@@ -638,10 +703,11 @@
       "Fear Boost": 66,
       "Brave Blade": 67
     },
-    "stats": [40, 37, 39, 38, 39]
+    "stats": [40, 37, 39, 38, 39],
+    "trait": "Crisis Management"
   },
   "Chi You": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Repel Phys",
     "itemr": "Absorb Phys",
     "lvl": 88,
@@ -656,20 +722,30 @@
       "Absorb Psy": 92,
       "Concentrate": 94
     },
-    "stats": [56, 57, 54, 53, 51]
+    "stats": [56, 57, 54, 53, 51],
+    "trait": "Wargod's Wrath"
   },
   "Chimera": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Null Fire",
     "itemr": "Absorb Fire",
     "lvl": 74,
     "race": "Strength",
     "resists": "--dn-w---w",
-    "skills": {},
-    "stats": [51, 40, 42, 48, 48]
+    "skills": {
+      "Maragidyne": 0,
+      "Heat Wave": 0,
+      "Bufudyne": 0,
+      "Marakunda": 76,
+      "Fire Amp": 77,
+      "Mabufudyne": 78,
+      "Ice Amp": 79
+    },
+    "stats": [51, 40, 42, 48, 48],
+    "trait": "Stagnant Aura"
   },
   "Choronzon": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Eiga Ring",
     "itemr": "Maeiga Ring",
     "lvl": 28,
@@ -685,10 +761,11 @@
       "Curse Boost": 32,
       "Rainy Play": 33
     },
-    "stats": [16, 19, 19, 18, 19]
+    "stats": [16, 19, 19, 18, 19],
+    "trait": "Bloodsucker"
   },
   "Clotho": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Tetraja",
     "itemr": "Makarakarn",
     "lvl": 27,
@@ -703,7 +780,8 @@
       "Energy Shower": 31,
       "Invigorate 1": 33
     },
-    "stats": [14, 19, 18, 20, 17]
+    "stats": [14, 19, 18, 20, 17],
+    "trait": "Support Lineage"
   },
   "Crystal Skull": {
     "inherits": "almighty",
@@ -715,17 +793,21 @@
     "skills": {
       "Maragidyne": 0,
       "Mabufudyne": 0,
-      "Maziodyne": 0,
       "Magarudyne": 0,
+      "Maziodyne": 0,
       "Mapsiodyne": 0,
       "Mafreidyne": 0,
       "Makougaon": 0,
-      "Maeigaon": 0
+      "Maeigaon": 0,
+      "Stagnant Aura": 0,
+      "Pandemic Gaze": 0,
+      "Curse Lineage": 0
     },
-    "stats": [50, 50, 50, 50, 50]
+    "stats": [50, 50, 50, 50, 50],
+    "trait": "Treasured Talent"
   },
   "Cu Chulainn": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "One-shot Kill",
     "itemr": "Riot Gun",
     "lvl": 76,
@@ -740,10 +822,11 @@
       "Charge": 80,
       "Apt Pupil": 81
     },
-    "stats": [55, 44, 46, 48, 42]
+    "stats": [55, 44, 46, 48, 42],
+    "trait": "Group Hypnosis"
   },
   "Cybele": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Sabazios",
     "itemr": "Gorodias",
     "lvl": 83,
@@ -752,12 +835,17 @@
     "skills": {
       "Samarecarm": 0,
       "Mediarahan": 0,
-      "Makougaon": 0
+      "Makougaon": 0,
+      "Amrita Shower": 84,
+      "Auto-Maraku": 86,
+      "Absorb Bless": 87,
+      "Salvation": 89
     },
-    "stats": [44, 57, 49, 51, 55]
+    "stats": [44, 57, 49, 51, 55],
+    "trait": "Chained Lineage"
   },
   "Daisoujou": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Makouga Ring",
     "itemr": "Kougaon Ring",
     "lvl": 40,
@@ -772,10 +860,11 @@
       "Me Patra": 44,
       "Null Rage": 45
     },
-    "stats": [21, 33, 24, 24, 25]
+    "stats": [21, 33, 24, 24, 25],
+    "trait": "Bloodsucker"
   },
   "Dakini": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Tempest Slash",
     "itemr": "Myriad Slashes",
     "lvl": 50,
@@ -790,10 +879,11 @@
       "Rebellion": 54,
       "Charge": 55
     },
-    "stats": [34, 32, 34, 28, 29]
+    "stats": [34, 32, 34, 28, 29],
+    "trait": "Chained Technique"
   },
   "Decarabia": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Maragion",
     "itemr": "Agidyne",
     "lvl": 32,
@@ -808,10 +898,11 @@
       "Null Fire": 37,
       "Megidola": 38
     },
-    "stats": [21, 23, 19, 22, 18]
+    "stats": [21, 23, 19, 22, 18],
+    "trait": "Fire Lineage"
   },
   "Dionysus": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Maziodyne",
     "itemr": "Thunder Reign",
     "lvl": 71,
@@ -826,10 +917,11 @@
       "Amrita Shower": 75,
       "Debilitate": 76
     },
-    "stats": [42, 48, 44, 42, 44]
+    "stats": [42, 48, 44, 42, 44],
+    "trait": "Last Stand"
   },
   "Dominion": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Makougaon",
     "itemr": "Divine Judgement",
     "lvl": 68,
@@ -842,12 +934,13 @@
       "Makougaon": 70,
       "Hama Boost": 71,
       "Mahamaon": 72,
-      "Evade Curse": 73
+      "Evade Curse": 74
     },
-    "stats": [42, 45, 43, 44, 37]
+    "stats": [42, 45, 43, 44, 37],
+    "trait": "Bless Lineage"
   },
   "Eligor": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Tarukaja",
     "itemr": "Matarukaja",
     "lvl": 16,
@@ -861,7 +954,8 @@
       "Sukunda": 19,
       "Memory Blow": 20
     },
-    "stats": [12, 10, 13, 10, 10]
+    "stats": [12, 10, 13, 10, 10],
+    "trait": "Burning Touch"
   },
   "Emperor's Amulet": {
     "inherits": "almighty",
@@ -873,17 +967,21 @@
     "skills": {
       "Agidyne": 0,
       "Bufudyne": 0,
-      "Ziodyne": 0,
       "Garudyne": 0,
+      "Ziodyne": 0,
       "Psiodyne": 0,
       "Freidyne": 0,
       "Kougaon": 0,
-      "Eigaon": 0
+      "Eigaon": 0,
+      "Ice Lineage": 0,
+      "Wind Lineage": 0,
+      "Psy Lineage": 0
     },
-    "stats": [35, 35, 35, 35, 35]
+    "stats": [35, 35, 35, 35, 35],
+    "trait": "Treasured Talent"
   },
   "Fafnir": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Mafreidyne Ring",
     "itemr": "Atomic Flare Ring",
     "lvl": 86,
@@ -898,10 +996,11 @@
       "Debilitate": 91,
       "Absorb Nuke": 92
     },
-    "stats": [61, 55, 58, 48, 43]
+    "stats": [61, 55, 58, 48, 43],
+    "trait": "Pandemic Gaze"
   },
   "Flauros": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Giant Slice Belt",
     "itemr": "Rising Slash Belt",
     "lvl": 19,
@@ -916,10 +1015,11 @@
       "Rat Fang": 23,
       "Heat Up": 24
     },
-    "stats": [15, 11, 13, 14, 11]
+    "stats": [15, 11, 13, 14, 11],
+    "trait": "Life Focus"
   },
   "Forneus": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Psiodyne",
     "itemr": "Mapsiodyne",
     "lvl": 63,
@@ -934,10 +1034,11 @@
       "Mapsiodyne": 67,
       "Evade Psy": 68
     },
-    "stats": [41, 39, 40, 42, 34]
+    "stats": [41, 39, 40, 42, 34],
+    "trait": "Bloodshot Gaze"
   },
   "Fortuna": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Fortuna Robe",
     "itemr": "Fortuna Robe R",
     "lvl": 46,
@@ -952,10 +1053,11 @@
       "Amrita Drop": 50,
       "Evade Elec": 51
     },
-    "stats": [23, 32, 29, 34, 27]
+    "stats": [23, 32, 29, 34, 27],
+    "trait": "Wind Lineage"
   },
   "Futsunushi": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Hinokagutsuchi",
     "itemr": "Hinokagutsuchi R",
     "lvl": 86,
@@ -971,10 +1073,11 @@
       "Firm Stance": 91,
       "Auto-Maraku": 92
     },
-    "stats": [60, 58, 55, 52, 40]
+    "stats": [60, 58, 55, 52, 40],
+    "trait": "Sword God"
   },
   "Fuu-Ki": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Wind Boost",
     "itemr": "Wind Amp",
     "lvl": 23,
@@ -985,10 +1088,11 @@
       "Tarukaja": 0,
       "Garula": 0,
       "Wind Boost": 25,
-      "Dodge Wind": 26,
-      "Resist Psy": 27
+      "Magarula": 26,
+      "Resist Wind": 27
     },
-    "stats": [14, 17, 16, 15, 14]
+    "stats": [14, 17, 16, 15, 14],
+    "trait": "Focused Gaze"
   },
   "Gabriel": {
     "inherits": "almighty",
@@ -1007,10 +1111,11 @@
       "Ice Amp": 82,
       "Salvation": 83
     },
-    "stats": [43, 51, 48, 54, 42]
+    "stats": [43, 51, 48, 54, 42],
+    "trait": "Relentlessness"
   },
   "Ganesha": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Rebellion",
     "itemr": "Revolution",
     "lvl": 53,
@@ -1025,10 +1130,11 @@
       "Masukunda": 57,
       "Charge": 60
     },
-    "stats": [39, 31, 37, 33, 26]
+    "stats": [39, 31, 37, 33, 26],
+    "trait": "Life Focus"
   },
   "Garuda": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Garudyne",
     "itemr": "Magarudyne",
     "lvl": 52,
@@ -1043,10 +1149,11 @@
       "Magarudyne": 57,
       "Wind Amp": 59
     },
-    "stats": [30, 36, 29, 39, 29]
+    "stats": [30, 36, 29, 39, 29],
+    "trait": "Wind Lineage"
   },
   "Genbu": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Bufu Ring",
     "itemr": "Mabufu Ring",
     "lvl": 7,
@@ -1056,14 +1163,15 @@
       "Bufu": 0,
       "Rakunda": 0,
       "Patra": 8,
+      "Resist Forget": 9,
       "Mabufu": 10,
-      "Resist Forget": 11,
       "Defense Master": 12
     },
-    "stats": [5, 6, 7, 6, 4]
+    "stats": [5, 6, 7, 6, 4],
+    "trait": "Freezing Follow-up"
   },
   "Girimehkala": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Swift Strike",
     "itemr": "Deathbound",
     "lvl": 43,
@@ -1077,10 +1185,11 @@
       "Wage War": 47,
       "Repel Phys": 50
     },
-    "stats": [32, 24, 32, 29, 19]
+    "stats": [32, 24, 32, 29, 19],
+    "trait": "Curse Lineage"
   },
   "Hanuman": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Ruyi Jingu Bang",
     "itemr": "Ruyi Jingu Bang R",
     "lvl": 64,
@@ -1094,10 +1203,11 @@
       "Tetra Break": 67,
       "Regenerate 3": 69
     },
-    "stats": [43, 38, 40, 40, 38]
+    "stats": [43, 38, 40, 40, 38],
+    "trait": "Group Hypnosis"
   },
   "Hariti": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Recarm Charm",
     "itemr": "Samarecarm Charm",
     "lvl": 40,
@@ -1113,10 +1223,11 @@
       "Dizzy Boost": 45,
       "Spirit Drain": 46
     },
-    "stats": [21, 32, 24, 23, 27]
+    "stats": [21, 32, 24, 23, 27],
+    "trait": "Elec Lineage"
   },
   "Hastur": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Magarudyne Ring",
     "itemr": "Panta Rhei Ring",
     "lvl": 84,
@@ -1131,10 +1242,11 @@
       "Spirit Drain": 88,
       "Repel Wind": 89
     },
-    "stats": [51, 59, 52, 56, 41]
+    "stats": [51, 59, 52, 56, 41],
+    "trait": "Spirit Focus"
   },
   "Hecatoncheires": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Swift Strike Belt",
     "itemr": "Gattling Blows Belt",
     "lvl": 42,
@@ -1145,14 +1257,15 @@
       "Regenerate 2": 0,
       "Tarukaja": 0,
       "Endure": 43,
-      "Foul Breath": 45,
+      "Rebellion": 45,
       "Fortified Moxy": 46,
-      "Charge": 48
+      "Gattling Blows": 49
     },
-    "stats": [35, 22, 27, 23, 26]
+    "stats": [35, 22, 27, 23, 26],
+    "trait": "Life Focus"
   },
   "Hell Biker": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Black Jacket",
     "itemr": "Dark Jacket",
     "lvl": 37,
@@ -1167,10 +1280,11 @@
       "Maragion": 40,
       "Mamudoon": 41
     },
-    "stats": [23, 24, 24, 30, 17]
+    "stats": [23, 24, 24, 30, 17],
+    "trait": "Self Hypnosis"
   },
   "High Pixie": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Magaru",
     "itemr": "Garula",
     "lvl": 16,
@@ -1184,7 +1298,8 @@
       "Pulinpa": 20,
       "Magaru": 22
     },
-    "stats": [8, 14, 10, 13, 10]
+    "stats": [8, 14, 10, 13, 10],
+    "trait": "Chained Technique"
   },
   "Hope Diamond": {
     "inherits": "almighty",
@@ -1201,9 +1316,13 @@
       "Regenerate 2": 0,
       "Invigorate 2": 0,
       "High Counter": 0,
-      "Fast Heal": 0
+      "Fast Heal": 0,
+      "Self Hypnosis": 0,
+      "Heavyweight": 0,
+      "Avenger": 0
     },
-    "stats": [40, 40, 40, 40, 40]
+    "stats": [40, 40, 40, 40, 40],
+    "trait": "Treasured Talent"
   },
   "Horus": {
     "inherits": "almighty",
@@ -1221,10 +1340,11 @@
       "Hamaon": 51,
       "Hama Boost": 52
     },
-    "stats": [30, 32, 29, 35, 22]
+    "stats": [30, 32, 29, 35, 22],
+    "trait": "Group Hypnosis"
   },
   "Hua Po": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Agi Ring",
     "itemr": "Maragi Ring",
     "lvl": 9,
@@ -1238,10 +1358,11 @@
       "Maragi": 13,
       "Burn Boost": 15
     },
-    "stats": [4, 10, 4, 8, 8]
+    "stats": [4, 10, 4, 8, 8],
+    "trait": "Burning Touch"
   },
   "Incubus": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Dream Needle",
     "itemr": "Dormin Rush",
     "lvl": 5,
@@ -1254,10 +1375,11 @@
       "Tarunda": 8,
       "Dodge Curse": 9
     },
-    "stats": [4, 6, 4, 5, 3]
+    "stats": [4, 6, 4, 5, 3],
+    "trait": "Bloodsucker"
   },
   "Inugami": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Giant Slice",
     "itemr": "Rising Slash",
     "lvl": 14,
@@ -1272,10 +1394,11 @@
       "Brain Shake": 18,
       "Confuse Boost": 19
     },
-    "stats": [11, 9, 9, 12, 8]
+    "stats": [11, 9, 9, 12, 8],
+    "trait": "Foul Contagion"
   },
   "Ippon-Datara": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Sledgehammer",
     "itemr": "Flash Bomb",
     "lvl": 13,
@@ -1289,7 +1412,8 @@
       "Sharp Student": 16,
       "Counter": 18
     },
-    "stats": [11, 7, 14, 6, 8]
+    "stats": [11, 7, 14, 6, 8],
+    "trait": "Heavyweight"
   },
   "Ishtar": {
     "inherits": "healing",
@@ -1307,10 +1431,11 @@
       "Spell Master": 89,
       "Salvation": 90
     },
-    "stats": [48, 59, 49, 58, 48]
+    "stats": [48, 59, 49, 58, 48],
+    "trait": "Mother Blessing"
   },
   "Isis": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Kouga",
     "itemr": "Makouga",
     "lvl": 26,
@@ -1325,10 +1450,11 @@
       "Hama Boost": 30,
       "Makarakarn": 32
     },
-    "stats": [14, 20, 17, 18, 16]
+    "stats": [14, 20, 17, 18, 16],
+    "trait": "Recovery Lineage"
   },
   "Jack Frost": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Frost Hood",
     "itemr": "Frost Hood R",
     "lvl": 11,
@@ -1342,10 +1468,11 @@
       "Rakunda": 13,
       "Freeze Boost": 15
     },
-    "stats": [8, 9, 7, 9, 7]
+    "stats": [8, 9, 7, 9, 7],
+    "trait": "Ice Lineage"
   },
   "Jack-o'-Lantern": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Pumpkin Bomb",
     "itemr": "Pumpkin Buster",
     "lvl": 2,
@@ -1358,10 +1485,11 @@
       "Dazzler": 5,
       "Resist Sleep": 7
     },
-    "stats": [2, 3, 3, 3, 2]
+    "stats": [2, 3, 3, 3, 2],
+    "trait": "Burning Touch"
   },
   "Jatayu": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Speed Master",
     "itemr": "Auto-Masuku",
     "lvl": 51,
@@ -1376,10 +1504,11 @@
       "Magarudyne": 55,
       "Speed Master": 57
     },
-    "stats": [31, 34, 29, 36, 30]
+    "stats": [31, 34, 29, 36, 30],
+    "trait": "Wind Lineage"
   },
   "Jikokuten": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Assault Dive Belt",
     "itemr": "Kill Rush Belt",
     "lvl": 22,
@@ -1388,9 +1517,14 @@
     "skills": {
       "Assault Dive": 0,
       "Defense Master": 0,
-      "Rakunda": 0
+      "Rakunda": 0,
+      "Kill Rush": 24,
+      "Counter": 25,
+      "Matarukaja": 27,
+      "Adverse Resolve": 28
     },
-    "stats": [18, 11, 16, 15, 13]
+    "stats": [18, 11, 16, 15, 13],
+    "trait": "Self Hypnosis"
   },
   "Kaiwan": {
     "inherits": "almighty",
@@ -1408,10 +1542,11 @@
       "Psiodyne": 40,
       "Marakunda": 41
     },
-    "stats": [23, 26, 24, 22, 20]
+    "stats": [23, 26, 24, 22, 20],
+    "trait": "Psy Lineage"
   },
   "Kali": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Null Psy",
     "itemr": "Repel Psy",
     "lvl": 63,
@@ -1426,10 +1561,11 @@
       "Repel Psy": 67,
       "Vorpal Blade": 68
     },
-    "stats": [43, 41, 39, 39, 34]
+    "stats": [43, 41, 39, 39, 34],
+    "trait": "Relentlessness"
   },
   "Kelpie": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Garu",
     "itemr": "Magaru",
     "lvl": 6,
@@ -1442,10 +1578,11 @@
       "Sukukaja": 9,
       "Terror Claw": 10
     },
-    "stats": [5, 5, 5, 6, 4]
+    "stats": [5, 5, 5, 6, 4],
+    "trait": "Heavyweight"
   },
   "Kikuri-Hime": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Energy Drop",
     "itemr": "Energy Shower",
     "lvl": 40,
@@ -1459,10 +1596,11 @@
       "Tetraja": 43,
       "Divine Grace": 45
     },
-    "stats": [22, 31, 24, 28, 22]
+    "stats": [22, 31, 24, 28, 22],
+    "trait": "Support Lineage"
   },
   "Kin-Ki": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Vajra Blast",
     "itemr": "Vicious Strike",
     "lvl": 25,
@@ -1477,10 +1615,11 @@
       "Bad Beat": 30,
       "Counterstrike": 31
     },
-    "stats": [21, 13, 21, 15, 12]
+    "stats": [21, 13, 21, 15, 12],
+    "trait": "Avenger"
   },
   "King Frost": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "King Frost Hood",
     "itemr": "King Frost Hood R",
     "lvl": 61,
@@ -1495,10 +1634,11 @@
       "Concentrate": 65,
       "Ice Amp": 67
     },
-    "stats": [40, 44, 43, 29, 34]
+    "stats": [40, 44, 43, 29, 34],
+    "trait": "Ice Lineage"
   },
   "Kodama": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Psi Ring",
     "itemr": "Mapsi Ring",
     "lvl": 11,
@@ -1513,7 +1653,8 @@
       "Tarukaja": 15,
       "Resist Fear": 17
     },
-    "stats": [7, 11, 8, 10, 4]
+    "stats": [7, 11, 8, 10, 4],
+    "trait": "Chained Technique"
   },
   "Koh-i-Noor": {
     "inherits": "almighty",
@@ -1525,17 +1666,21 @@
     "skills": {
       "Dodge Fire": 0,
       "Dodge Ice": 0,
-      "Dodge Elec": 0,
       "Dodge Wind": 0,
+      "Dodge Elec": 0,
       "Dodge Psy": 0,
       "Dodge Nuke": 0,
       "Dodge Bless": 0,
-      "Dodge Curse": 0
+      "Dodge Curse": 0,
+      "Crisis Management": 0,
+      "Bloodshot Gaze": 0,
+      "Odd Immunity": 0
     },
-    "stats": [25, 25, 25, 25, 25]
+    "stats": [25, 25, 25, 25, 25],
+    "trait": "Treasured Talent"
   },
   "Kohryu": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Mapsiodyne Ring",
     "itemr": "Psycho Force Ring",
     "lvl": 76,
@@ -1550,10 +1695,11 @@
       "Psy Amp": 80,
       "Spell Master": 82
     },
-    "stats": [43, 51, 50, 53, 38]
+    "stats": [43, 51, 50, 53, 38],
+    "trait": "Five Elements"
   },
   "Koppa Tengu": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Garu Ring",
     "itemr": "Magaru Ring",
     "lvl": 11,
@@ -1561,12 +1707,17 @@
     "resists": "---w-s--w-",
     "skills": {
       "Garu": 0,
-      "Sukukaja": 0
+      "Sukukaja": 0,
+      "Growth 1": 12,
+      "Taunt": 13,
+      "Rage Boost": 13,
+      "Wage War": 15
     },
-    "stats": [7, 8, 8, 11, 6]
+    "stats": [7, 8, 8, 11, 6],
+    "trait": "Focused Gaze"
   },
   "Koropokkuru": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Bufu",
     "itemr": "Mabufu",
     "lvl": 9,
@@ -1576,14 +1727,16 @@
       "Makajam": 0,
       "Bufu": 0,
       "Dodge Ice": 11,
-      "Rakunda": 12,
+      "Sukunda": 12,
       "Fire Wall": 13,
-      "Mabufu": 14
+      "Mabufu": 14,
+      "Rainy Play": 15
     },
-    "stats": [5, 8, 6, 9, 6]
+    "stats": [5, 8, 6, 9, 6],
+    "trait": "Foul Contagion"
   },
   "Koumokuten": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Regenerate 2",
     "itemr": "Regenerate 3",
     "lvl": 49,
@@ -1598,10 +1751,11 @@
       "Enduring Soul": 54,
       "Deadly Fury": 55
     },
-    "stats": [37, 29, 34, 29, 25]
+    "stats": [37, 29, 34, 29, 25],
+    "trait": "Life Focus"
   },
   "Kumbhanda": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Terror Claw",
     "itemr": "Bloodbath",
     "lvl": 42,
@@ -1616,10 +1770,11 @@
       "Fear Boost": 46,
       "Revolution": 47
     },
-    "stats": [25, 30, 25, 27, 26]
+    "stats": [25, 30, 25, 27, 26],
+    "trait": "Odd Immunity"
   },
   "Kurama Tengu": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Garula Ring",
     "itemr": "Magarula Ring",
     "lvl": 31,
@@ -1633,10 +1788,11 @@
       "Brain Jack": 34,
       "Growth 2": 36
     },
-    "stats": [20, 19, 21, 24, 16]
+    "stats": [20, 19, 21, 24, 16],
+    "trait": "Chained Technique"
   },
   "Kushinada-Hime": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Diarama Ring",
     "itemr": "Mediarama Ring",
     "lvl": 42,
@@ -1652,10 +1808,11 @@
       "Amrita Shower": 47,
       "Null Ice": 48
     },
-    "stats": [24, 30, 26, 28, 25]
+    "stats": [24, 30, 26, 28, 25],
+    "trait": "Recovery Lineage"
   },
   "Kusi Mitama": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Dia Charm",
     "itemr": "Media Charm",
     "lvl": 12,
@@ -1664,12 +1821,16 @@
     "skills": {
       "Dia": 0,
       "Media": 0,
-      "Makajam": 0
+      "Makajam": 0,
+      "Regenerate 1": 13,
+      "Wind Wall": 14,
+      "Forget Boost": 16
     },
-    "stats": [7, 11, 9, 8, 8]
+    "stats": [7, 11, 9, 8, 8],
+    "trait": "Life Focus"
   },
   "Lachesis": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Bufula Ring",
     "itemr": "Mabufula Ring",
     "lvl": 35,
@@ -1678,12 +1839,17 @@
     "skills": {
       "Mabaisudi": 0,
       "Bufula": 0,
-      "Growth 2": 0
+      "Growth 2": 0,
+      "Marakukaja": 36,
+      "Elec Wall": 37,
+      "Mabufula": 39,
+      "Ice Boost": 41
     },
-    "stats": [18, 26, 22, 25, 21]
+    "stats": [18, 26, 22, 25, 21],
+    "trait": "Self Hypnosis"
   },
   "Lakshmi": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Amrita Drop Charm",
     "itemr": "Amrita Shower Charm",
     "lvl": 69,
@@ -1698,10 +1864,11 @@
       "Amrita Shower": 72,
       "Life Aid": 74
     },
-    "stats": [39, 49, 41, 47, 38]
+    "stats": [39, 49, 41, 47, 38],
+    "trait": "Lotus Dance"
   },
   "Lamia": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Rakukaja",
     "itemr": "Marakukaja",
     "lvl": 26,
@@ -1710,9 +1877,14 @@
     "skills": {
       "Mudo": 0,
       "Rakukaja": 0,
-      "Rising Slash": 0
+      "Rising Slash": 0,
+      "Ominous Words": 27,
+      "Foul Breath": 28,
+      "Mamudo": 30,
+      "Despair Boost": 31
     },
-    "stats": [21, 15, 18, 19, 12]
+    "stats": [21, 15, 18, 19, 12],
+    "trait": "Foul Contagion"
   },
   "Leanan Sidhe": {
     "inherits": "almighty",
@@ -1729,10 +1901,11 @@
       "Mapsi": 22,
       "Eiga": 23
     },
-    "stats": [9, 17, 12, 16, 10]
+    "stats": [9, 17, 12, 16, 10],
+    "trait": "Exquisite Technique"
   },
   "Legion": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Foul Breath",
     "itemr": "Stagnant Air",
     "lvl": 38,
@@ -1747,10 +1920,11 @@
       "Null Dizzy": 42,
       "Eigaon": 45
     },
-    "stats": [24, 24, 30, 23, 20]
+    "stats": [24, 24, 30, 23, 20],
+    "trait": "Bloodsucker"
   },
   "Lilim": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Ice Boost",
     "itemr": "Ice Amp",
     "lvl": 32,
@@ -1765,10 +1939,11 @@
       "Spirit Drain": 36,
       "Mabufula": 37
     },
-    "stats": [17, 23, 18, 25, 20]
+    "stats": [17, 23, 18, 25, 20],
+    "trait": "Freezing Follow-up"
   },
   "Lilith": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Null Nuke",
     "itemr": "Repel Nuke",
     "lvl": 60,
@@ -1777,40 +1952,56 @@
     "skills": {
       "Mabufudyne": 0,
       "Makarakarn": 0,
-      "Freidyne": 0
+      "Freidyne": 0,
+      "Mafreidyne": 62,
+      "Spirit Drain": 63,
+      "Freeze Boost": 64,
+      "Nuke Amp": 65
     },
-    "stats": [33, 43, 37, 39, 35]
+    "stats": [33, 43, 37, 39, 35],
+    "trait": "Peerless Gaze"
   },
   "Loa": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Ominous Words",
     "itemr": "Abysmal Surge",
     "lvl": 70,
     "race": "Hermit",
     "resists": "--s-n-wsw-",
     "skills": {
-      "Life Drain": 0,
-      "Abysmal Surge": 0,
       "Mamudoon": 0,
+      "Abysmal Surge": 0,
+      "Life Drain": 0,
       "Maeigaon": 72,
       "Absorb Curse": 73,
       "Spirit Drain": 74,
       "Fortify Spirit": 75
     },
-    "stats": [45, 47, 43, 46, 39]
+    "stats": [45, 47, 43, 46, 39],
+    "trait": "Bloodsucker"
   },
   "Lucifer": {
     "inherits": "almighty",
     "item": "Tyrant Pistol",
     "itemr": "Tyrant Pistol R",
-    "lvl": 99,
+    "lvl": 93,
     "race": "Star",
-    "resists": "----------",
-    "skills": {},
-    "stats": [99, 99, 99, 99, 99]
+    "resists": "nnssss--wd",
+    "skills": {
+      "Gigantomachia": 0,
+      "Absorb Curse": 0,
+      "Morning Star": 94,
+      "Spell Master": 95,
+      "Heat Riser": 96,
+      "Repel Bless": 97,
+      "Insta-Heal": 98,
+      "Absorb Phys": 99
+    },
+    "stats": [61, 59, 59, 56, 51],
+    "trait": "Forbidden Knowledge"
   },
   "Macabre": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Bloodbath",
     "itemr": "Death Scythe",
     "lvl": 73,
@@ -1825,20 +2016,31 @@
       "Myriad Slashes": 76,
       "Ali Dance": 78
     },
-    "stats": [48, 49, 42, 48, 39]
+    "stats": [48, 49, 42, 48, 39],
+    "trait": "Pandemic Gaze"
   },
   "Mada": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Maragidyne Ring",
     "itemr": "Inferno Ring",
-    "lvl": 99,
+    "lvl": 90,
     "race": "Tower",
-    "resists": "----------",
-    "skills": {},
-    "stats": [99, 99, 99, 99, 99]
+    "resists": "--dw--sn--",
+    "skills": {
+      "Inferno": 0,
+      "Fire Amp": 0,
+      "Burn Boost": 0,
+      "Fortify Spirit": 91,
+      "Blazing Hell": 92,
+      "Amrita Shower": 93,
+      "Enduring Soul": 95,
+      "Spell Master": 96
+    },
+    "stats": [55, 54, 61, 59, 48],
+    "trait": "Drunken Frenzy"
   },
   "Makami": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Frei",
     "itemr": "Mafrei",
     "lvl": 15,
@@ -1853,10 +2055,11 @@
       "Resist Despair": 19,
       "Dodge Elec": 20
     },
-    "stats": [13, 12, 8, 11, 8]
+    "stats": [13, 12, 8, 11, 8],
+    "trait": "Exquisite Technique"
   },
   "Mandrake": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Sukunda",
     "itemr": "Masukunda",
     "lvl": 3,
@@ -1866,12 +2069,14 @@
       "Pulinpa": 0,
       "Energy Drop": 0,
       "Lunge": 4,
-      "Sukunda": 5
+      "Sukunda": 5,
+      "Skull Cracker": 7
     },
-    "stats": [2, 3, 3, 4, 4]
+    "stats": [2, 3, 3, 4, 4],
+    "trait": "Recovery Lineage"
   },
   "Mara": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Mapsiodyne",
     "itemr": "Psycho Force",
     "lvl": 73,
@@ -1886,10 +2091,11 @@
       "Psy Amp": 77,
       "Psycho Force": 78
     },
-    "stats": [51, 43, 43, 45, 44]
+    "stats": [51, 43, 43, 45, 44],
+    "trait": "Peerless Gaze"
   },
   "Maria": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Mediarahan Charm",
     "itemr": "Saintly Devotion Charm",
     "lvl": 93,
@@ -1904,10 +2110,11 @@
       "Angelic Grace": 97,
       "Saintly Words": 98
     },
-    "stats": [52, 66, 53, 54, 61]
+    "stats": [52, 66, 53, 54, 61],
+    "trait": "Ave Maria"
   },
   "Matador": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Red Capote",
     "itemr": "Red Capote R",
     "lvl": 17,
@@ -1921,10 +2128,11 @@
       "Double Shot": 20,
       "Swift Strike": 22
     },
-    "stats": [11, 13, 10, 16, 8]
+    "stats": [11, 13, 10, 16, 8],
+    "trait": "Group Hypnosis"
   },
   "Melchizedek": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Hamaon",
     "itemr": "Mahamaon",
     "lvl": 58,
@@ -1939,17 +2147,28 @@
       "Matarukaja": 63,
       "God's Hand": 65
     },
-    "stats": [37, 32, 40, 39, 33]
+    "stats": [37, 32, 40, 39, 33],
+    "trait": "Deadly Plague"
   },
   "Metatron": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Nataraja",
     "itemr": "Nataraja R",
-    "lvl": 99,
+    "lvl": 89,
     "race": "Justice",
-    "resists": "----------",
-    "skills": {},
-    "stats": [99, 99, 99, 99, 99]
+    "resists": "----wrdd-w",
+    "skills": {
+      "Mahamaon": 0,
+      "Sword Dance": 0,
+      "Makougaon": 0,
+      "Megidolaon": 91,
+      "Hama Boost": 92,
+      "Concentrate": 93,
+      "Bless Amp": 94,
+      "Divine Judgement": 95
+    },
+    "stats": [54, 61, 60, 57, 42],
+    "trait": "Herald's Grace"
   },
   "Michael": {
     "inherits": "almighty",
@@ -1967,10 +2186,11 @@
       "Megidolaon": 91,
       "Cosmic Flare": 92
     },
-    "stats": [57, 54, 55, 56, 46]
+    "stats": [57, 54, 55, 56, 46],
+    "trait": "Group Hypnosis"
   },
   "Mishaguji": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Mapsio Ring",
     "itemr": "Psiodyne Ring",
     "lvl": 52,
@@ -1985,10 +2205,11 @@
       "Deathbound": 56,
       "Ailment Boost": 57
     },
-    "stats": [32, 32, 32, 32, 35]
+    "stats": [32, 32, 32, 32, 35],
+    "trait": "Pandemic Gaze"
   },
   "Mithra": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Death Contract",
     "itemr": "Death Vow",
     "lvl": 33,
@@ -2003,10 +2224,11 @@
       "Bless Boost": 37,
       "Thermopylae": 38
     },
-    "stats": [19, 26, 19, 24, 18]
+    "stats": [19, 26, 19, 24, 18],
+    "trait": "Bless Lineage"
   },
   "Mithras": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Nuke Boost",
     "itemr": "Nuke Amp",
     "lvl": 39,
@@ -2021,10 +2243,11 @@
       "Mabaisudi": 43,
       "Freidyne": 45
     },
-    "stats": [27, 25, 27, 25, 20]
+    "stats": [27, 25, 27, 25, 20],
+    "trait": "Exquisite Technique"
   },
   "Mokoi": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Dekunda",
     "itemr": "Dekaja",
     "lvl": 9,
@@ -2038,10 +2261,11 @@
       "Dodge Elec": 13,
       "Dekunda": 14
     },
-    "stats": [9, 5, 6, 10, 4]
+    "stats": [9, 5, 6, 10, 4],
+    "trait": "Storm Born"
   },
   "Moloch": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Agidyne Ring",
     "itemr": "Maragidyne Ring",
     "lvl": 60,
@@ -2056,10 +2280,11 @@
       "Absorb Fire": 64,
       "Fire Amp": 65
     },
-    "stats": [32, 45, 42, 31, 37]
+    "stats": [32, 45, 42, 31, 37],
+    "trait": "Iron Immunity"
   },
   "Mot": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Null Elec",
     "itemr": "Repel Elec",
     "lvl": 72,
@@ -2073,10 +2298,11 @@
       "Megidolaon": 76,
       "Repel Elec": 77
     },
-    "stats": [43, 51, 48, 42, 39]
+    "stats": [43, 51, 48, 42, 39],
+    "trait": "Peerless Gaze"
   },
   "Mother Harlot": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Claiomh Solais",
     "itemr": "Claiomh Solais R",
     "lvl": 85,
@@ -2086,15 +2312,16 @@
       "Mabufudyne": 0,
       "Mamudoon": 0,
       "Mudo Boost": 0,
-      "Ice Age": 81,
-      "Ice Amp": 82,
-      "Null Bless": 83,
-      "Debilitate": 85
+      "Ice Age": 86,
+      "Ice Amp": 87,
+      "Repel Bless": 88,
+      "Debilitate": 90
     },
-    "stats": [99, 99, 99, 99, 99]
+    "stats": [55, 54, 48, 50, 55],
+    "trait": "Goblet of Sin"
   },
   "Mothman": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Skull Cracker",
     "itemr": "Mind Slice",
     "lvl": 33,
@@ -2109,10 +2336,11 @@
       "Makajamaon": 37,
       "Ziodyne": 38
     },
-    "stats": [21, 24, 16, 24, 21]
+    "stats": [21, 24, 16, 24, 21],
+    "trait": "Shocking Follow-up"
   },
   "Naga": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Counter",
     "itemr": "Counterstrike",
     "lvl": 24,
@@ -2127,10 +2355,11 @@
       "Mazionga": 28,
       "Marakukaja": 29
     },
-    "stats": [15, 17, 15, 17, 15]
+    "stats": [15, 17, 15, 17, 15],
+    "trait": "Heavyweight"
   },
   "Narcissus": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Dazzler",
     "itemr": "Nocturnal Flash",
     "lvl": 48,
@@ -2145,10 +2374,11 @@
       "Mediarama": 52,
       "Ambient Aid": 53
     },
-    "stats": [27, 31, 29, 33, 31]
+    "stats": [27, 31, 29, 33, 31],
+    "trait": "Life Focus"
   },
   "Nebiros": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Marin Karin",
     "itemr": "Brain Jack",
     "lvl": 74,
@@ -2163,7 +2393,8 @@
       "Megidolaon": 78,
       "Null Bless": 80
     },
-    "stats": [45, 52, 44, 46, 42]
+    "stats": [45, 52, 44, 46, 42],
+    "trait": "Psy Lineage"
   },
   "Neko Shogun": {
     "inherits": "almighty",
@@ -2176,15 +2407,16 @@
       "Psio": 0,
       "Diarama": 0,
       "Masukukaja": 0,
-      "Invigorate 1": 0,
+      "Invigorate 1": 31,
       "Rat Fang": 33,
-      "Defense Master": 34,
+      "Defense Master": 35,
       "Fortified Moxy": 36
     },
-    "stats": [19, 20, 19, 21, 18]
+    "stats": [19, 20, 19, 21, 18],
+    "trait": "Last Stand"
   },
   "Nekomata": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Cat Punch Bazooka",
     "itemr": "Cat Punch Bomber",
     "lvl": 17,
@@ -2199,10 +2431,11 @@
       "Elec Wall": 21,
       "Dodge Elec": 22
     },
-    "stats": [13, 10, 12, 15, 8]
+    "stats": [13, 10, 12, 15, 8],
+    "trait": "Foul Contagion"
   },
   "Nigi Mitama": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Kouha Ring",
     "itemr": "Makouha Ring",
     "lvl": 22,
@@ -2216,7 +2449,8 @@
       "Me Patra": 25,
       "Rainy Play": 26
     },
-    "stats": [13, 15, 15, 16, 14]
+    "stats": [13, 15, 15, 16, 14],
+    "trait": "Support Lineage"
   },
   "Norn": {
     "inherits": "almighty",
@@ -2234,10 +2468,11 @@
       "Tetraja": 56,
       "Samarecarm": 57
     },
-    "stats": [30, 38, 33, 34, 28]
+    "stats": [30, 38, 33, 34, 28],
+    "trait": "Focused Gaze"
   },
   "Nue": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Maeiha",
     "itemr": "Eiga",
     "lvl": 20,
@@ -2252,10 +2487,11 @@
       "Assault Dive": 25,
       "Curse Boost": 26
     },
-    "stats": [16, 10, 17, 14, 10]
+    "stats": [16, 10, 17, 14, 10],
+    "trait": "Peerless Gaze"
   },
   "Obariyon": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Lucky Punch",
     "itemr": "Miracle Punch",
     "lvl": 8,
@@ -2268,10 +2504,11 @@
       "Resist Fear": 10,
       "Dekaja": 12
     },
-    "stats": [7, 3, 9, 8, 4]
+    "stats": [7, 3, 9, 8, 4],
+    "trait": "Heavyweight"
   },
   "Oberon": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Heat Wave",
     "itemr": "Vorpal Blade",
     "lvl": 66,
@@ -2287,10 +2524,11 @@
       "Samarecarm": 71,
       "Elec Amp": 72
     },
-    "stats": [40, 45, 42, 43, 35]
+    "stats": [40, 45, 42, 43, 35],
+    "trait": "Shocking Follow-up"
   },
   "Odin": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Wild Hunt",
     "itemr": "Gungnir",
     "lvl": 84,
@@ -2305,10 +2543,11 @@
       "Fast Heal": 88,
       "Elec Amp": 89
     },
-    "stats": [53, 58, 54, 52, 42]
+    "stats": [53, 58, 54, 52, 42],
+    "trait": "Hunting Premonition"
   },
   "Okuninushi": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Official's Robe",
     "itemr": "Official's Robe R",
     "lvl": 54,
@@ -2323,20 +2562,30 @@
       "Evade Nuke": 57,
       "Heat Wave": 59
     },
-    "stats": [39, 35, 33, 32, 30]
+    "stats": [39, 35, 33, 32, 30],
+    "trait": "Psy Lineage"
   },
   "Ongyo-Ki": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Myriad Slashes Belt",
     "itemr": "Sword Dance Belt",
-    "lvl": 99,
+    "lvl": 89,
     "race": "Hermit",
-    "resists": "----------",
-    "skills": {},
-    "stats": [99, 99, 99, 99, 99]
+    "resists": "s-------rr",
+    "skills": {
+      "Myriad Slashes": 0,
+      "Makajamaon": 0,
+      "Pressing Stance": 0,
+      "Arms Master": 91,
+      "Regenerate 3": 92,
+      "Firm Stance": 93,
+      "Agneyastra": 95
+    },
+    "stats": [56, 53, 57, 59, 49],
+    "trait": "Oni Whisper"
   },
   "Oni": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Rampage",
     "itemr": "Kill Rush",
     "lvl": 20,
@@ -2344,16 +2593,17 @@
     "resists": "ss--------",
     "skills": {
       "Rampage": 0,
-      "Counterstrike": 0,
+      "Counter": 0,
       "Snap": 0,
       "Giant Slice": 22,
       "Sharp Student": 23,
       "Memory Blow": 24
     },
-    "stats": [19, 9, 17, 12, 10]
+    "stats": [19, 9, 17, 12, 10],
+    "trait": "Avenger"
   },
   "Onmoraki": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Eiha Ring",
     "itemr": "Maeiha Ring",
     "lvl": 12,
@@ -2363,11 +2613,12 @@
       "Eiha": 0,
       "Ice Wall": 0,
       "Agi": 13,
-      "Pulinpa": 14,
-      "Confuse Boost": 15,
-      "Resist Fear": 17
+      "Evil Touch": 14,
+      "Pulinpa": 15,
+      "Confuse Boost": 17
     },
-    "stats": [9, 12, 7, 10, 5]
+    "stats": [9, 12, 7, 10, 5],
+    "trait": "Focused Gaze"
   },
   "Orihalcum": {
     "inherits": "almighty",
@@ -2384,9 +2635,13 @@
       "Psycho Force": 0,
       "Atomic Flare": 0,
       "Divine Judgement": 0,
-      "Demonic Decree": 0
+      "Demonic Decree": 0,
+      "Iron Immunity": 0,
+      "Spirit Focus": 0,
+      "Bless Lineage": 0
     },
-    "stats": [60, 60, 60, 60, 60]
+    "stats": [60, 60, 60, 60, 60],
+    "trait": "Treasured Talent"
   },
   "Orlov": {
     "inherits": "almighty",
@@ -2398,17 +2653,21 @@
     "skills": {
       "Maragion": 0,
       "Mabufula": 0,
-      "Mazionga": 0,
       "Magarula": 0,
+      "Mazionga": 0,
       "Mapsio": 0,
       "Mafreila": 0,
       "Makouga": 0,
-      "Maeiga": 0
+      "Maeiga": 0,
+      "Fire Lineage": 0,
+      "Elec Lineage": 0,
+      "Nuke Lineage": 0
     },
-    "stats": [30, 30, 30, 30, 30]
+    "stats": [30, 30, 30, 30, 30],
+    "trait": "Treasured Talent"
   },
   "Orobas": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Rakunda",
     "itemr": "Marakunda",
     "lvl": 17,
@@ -2422,10 +2681,11 @@
       "Fire Break": 20,
       "Makajamaon": 21
     },
-    "stats": [11, 14, 15, 12, 6]
+    "stats": [11, 14, 15, 12, 6],
+    "trait": "Peerless Gaze"
   },
   "Orthrus": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Agilao",
     "itemr": "Maragion",
     "lvl": 21,
@@ -2439,10 +2699,11 @@
       "Rat Fang": 24,
       "Matarukaja": 26
     },
-    "stats": [16, 14, 14, 19, 7]
+    "stats": [16, 14, 14, 19, 7],
+    "trait": "Burning Touch"
   },
   "Ose": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Counterstrike",
     "itemr": "High Counter",
     "lvl": 42,
@@ -2456,10 +2717,11 @@
       "Matarukaja": 45,
       "Heat Wave": 47
     },
-    "stats": [32, 24, 25, 31, 21]
+    "stats": [32, 24, 25, 31, 21],
+    "trait": "Avenger"
   },
   "Pale Rider": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Eigaon Ring",
     "itemr": "Maeigaon Ring",
     "lvl": 54,
@@ -2474,10 +2736,11 @@
       "Evade Bless": 58,
       "Deathbound": 59
     },
-    "stats": [32, 37, 33, 40, 27]
+    "stats": [32, 37, 33, 40, 27],
+    "trait": "Stagnant Aura"
   },
   "Parvati": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Null Ice",
     "itemr": "Repel Ice",
     "lvl": 56,
@@ -2492,10 +2755,11 @@
       "Mapsiodyne": 59,
       "Null Ice": 61
     },
-    "stats": [33, 39, 33, 39, 31]
+    "stats": [33, 39, 33, 39, 31],
+    "trait": "Exquisite Technique"
   },
   "Pazuzu": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Maeiga Ring",
     "itemr": "Eigaon Ring",
     "lvl": 45,
@@ -2510,10 +2774,11 @@
       "Stagnant Air": 49,
       "Eigaon": 50
     },
-    "stats": [29, 33, 27, 26, 27]
+    "stats": [29, 33, 27, 26, 27],
+    "trait": "Curse Lineage"
   },
   "Phoenix": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Miracle Dress",
     "itemr": "Miracle Dress R",
     "lvl": 21,
@@ -2521,12 +2786,17 @@
     "resists": "---swn----",
     "skills": {
       "Freila": 0,
-      "Dream Needle": 0
+      "Dream Needle": 0,
+      "Diarama": 22,
+      "Recarm": 23,
+      "Nuke Boost": 25,
+      "Mafreila": 26
     },
-    "stats": [12, 15, 15, 17, 11]
+    "stats": [12, 15, 15, 17, 11],
+    "trait": "Nuke Lineage"
   },
   "Pisaca": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Headhunter Ladle",
     "itemr": "Headhunter Ladle R",
     "lvl": 28,
@@ -2541,10 +2811,11 @@
       "Despair Boost": 32,
       "Mudoon": 33
     },
-    "stats": [19, 21, 21, 16, 14]
+    "stats": [19, 21, 21, 16, 14],
+    "trait": "Odd Immunity"
   },
   "Pixie": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Zio Ring",
     "itemr": "Mazio Ring",
     "lvl": 2,
@@ -2557,10 +2828,11 @@
       "Tarukaja": 4,
       "Resist Confuse": 5
     },
-    "stats": [1, 3, 3, 4, 2]
+    "stats": [1, 3, 3, 4, 2],
+    "trait": "Shocking Follow-up"
   },
   "Power": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Bless Boost",
     "itemr": "Bless Amp",
     "lvl": 41,
@@ -2575,10 +2847,11 @@
       "Masukukaja": 45,
       "Null Curse": 46
     },
-    "stats": [30, 26, 28, 25, 21]
+    "stats": [30, 26, 28, 25, 21],
+    "trait": "Self Hypnosis"
   },
   "Principality": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Kouga Ring",
     "itemr": "Makouga Ring",
     "lvl": 29,
@@ -2588,11 +2861,13 @@
       "Makouga": 0,
       "Makajamaon": 0,
       "Tetraja": 0,
-      "Mediarama": 31,
-      "Mabaisudi": 32,
-      "Bless Boost": 34
+      "Mediarama": 30,
+      "Forget Boost": 32,
+      "Bless Boost": 34,
+      "Mabaisudi": 35
     },
-    "stats": [17, 19, 18, 21, 19]
+    "stats": [17, 19, 18, 21, 19],
+    "trait": "Bless Lineage"
   },
   "Queen Mab": {
     "inherits": "almighty",
@@ -2610,7 +2885,8 @@
       "Agidyne": 47,
       "Concentrate": 48
     },
-    "stats": [23, 35, 26, 30, 22]
+    "stats": [23, 35, 26, 30, 22],
+    "trait": "Shocking Follow-up"
   },
   "Queen's Necklace": {
     "inherits": "almighty",
@@ -2627,12 +2903,16 @@
       "Media": 0,
       "Tarunda": 0,
       "Rakunda": 0,
-      "Sukunda": 0
+      "Sukunda": 0,
+      "Group Hypnosis": 0,
+      "Support Lineage": 0,
+      "Recovery Lineage": 0
     },
-    "stats": [15, 15, 15, 15, 15]
+    "stats": [15, 15, 15, 15, 15],
+    "trait": "Treasured Talent"
   },
   "Quetzalcoatl": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Magarudyne",
     "itemr": "Panta Rhei",
     "lvl": 66,
@@ -2647,10 +2927,11 @@
       "Magarudyne": 70,
       "Wind Amp": 71
     },
-    "stats": [41, 46, 41, 43, 34]
+    "stats": [41, 46, 41, 43, 34],
+    "trait": "Wind Lineage"
   },
   "Raja Naga": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Ziodyne Ring",
     "itemr": "Maziodyne Ring",
     "lvl": 55,
@@ -2665,10 +2946,11 @@
       "Maziodyne": 59,
       "Evade Wind": 60
     },
-    "stats": [33, 37, 36, 35, 31]
+    "stats": [33, 37, 36, 35, 31],
+    "trait": "Elec Lineage"
   },
   "Rakshasa": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Regenerate 1",
     "itemr": "Regenerate 2",
     "lvl": 24,
@@ -2683,10 +2965,11 @@
       "Counterstrike": 28,
       "Adverse Resolve": 30
     },
-    "stats": [20, 15, 18, 17, 9]
+    "stats": [20, 15, 18, 17, 9],
+    "trait": "Chained Technique"
   },
   "Rangda": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Maeiga",
     "itemr": "Eigaon",
     "lvl": 48,
@@ -2700,7 +2983,8 @@
       "Matarunda": 51,
       "Mudoon": 53
     },
-    "stats": [28, 34, 30, 33, 26]
+    "stats": [28, 34, 30, 33, 26],
+    "trait": "Curse Lineage"
   },
   "Raphael": {
     "inherits": "almighty",
@@ -2718,10 +3002,11 @@
       "Adverse Resolve": 82,
       "Arms Master": 83
     },
-    "stats": [57, 45, 49, 55, 35]
+    "stats": [57, 45, 49, 55, 35],
+    "trait": "Last Stand"
   },
   "Red Rider": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Psio Ring",
     "itemr": "Mapsio Ring",
     "lvl": 41,
@@ -2736,7 +3021,8 @@
       "Ominous Words": 45,
       "Pressing Stance": 46
     },
-    "stats": [26, 27, 25, 29, 23]
+    "stats": [26, 27, 25, 29, 23],
+    "trait": "Pandemic Gaze"
   },
   "Regent": {
     "inherits": "almighty",
@@ -2748,17 +3034,21 @@
     "skills": {
       "Maragi": 0,
       "Mabufu": 0,
-      "Mazio": 0,
       "Magaru": 0,
+      "Mazio": 0,
       "Mapsi": 0,
       "Mafrei": 0,
       "Makouha": 0,
-      "Maeiha": 0
+      "Maeiha": 0,
+      "Peerless Gaze": 0,
+      "Exquisite Technique": 0,
+      "Chained Technique": 0
     },
-    "stats": [10, 10, 10, 10, 10]
+    "stats": [10, 10, 10, 10, 10],
+    "trait": "Treasured Talent"
   },
   "Saki Mitama": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Energy Drop Charm",
     "itemr": "Energy Shower Charm",
     "lvl": 6,
@@ -2772,10 +3062,11 @@
       "Rakukaja": 8,
       "Resist Dizzy": 10
     },
-    "stats": [4, 6, 5, 6, 4]
+    "stats": [4, 6, 5, 6, 4],
+    "trait": "Self Hypnosis"
   },
   "Sandalphon": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Sword of Sinai",
     "itemr": "Sword of Sinai R",
     "lvl": 75,
@@ -2790,10 +3081,11 @@
       "Sword Dance": 79,
       "Megidolaon": 81
     },
-    "stats": [46, 51, 49, 48, 38]
+    "stats": [46, 51, 49, 48, 38],
+    "trait": "Herald's Verdict"
   },
   "Sandman": {
-    "inherits": "almighty",
+    "inherits": "wind",
     "item": "Dormina",
     "itemr": "Lullaby",
     "lvl": 23,
@@ -2808,10 +3100,11 @@
       "Magarula": 27,
       "Sleep Boost": 28
     },
-    "stats": [11, 13, 14, 17, 21]
+    "stats": [11, 13, 14, 17, 21],
+    "trait": "Foul Contagion"
   },
   "Sarasvati": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Mediarama",
     "itemr": "Diarahan",
     "lvl": 50,
@@ -2826,7 +3119,8 @@
       "Matarunda": 53,
       "Diarahan": 54
     },
-    "stats": [30, 35, 32, 33, 27]
+    "stats": [30, 35, 32, 33, 27],
+    "trait": "Support Lineage"
   },
   "Satan": {
     "inherits": "ice",
@@ -2845,7 +3139,8 @@
       "Concentrate": 97,
       "Absorb Ice": 98
     },
-    "stats": [62, 59, 55, 52, 55]
+    "stats": [62, 59, 55, 52, 55],
+    "trait": "Cocytus"
   },
   "Satanael": {
     "inherits": "almighty",
@@ -2864,10 +3159,11 @@
       "Demon Kingdom": 98,
       "Victory Cry": 99
     },
-    "stats": [63, 60, 57, 56, 56]
+    "stats": [63, 60, 57, 56, 56],
+    "trait": "Heretic Charisma"
   },
   "Scathach": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Makarakarn",
     "itemr": "Tetrakarn",
     "lvl": 77,
@@ -2882,10 +3178,11 @@
       "Vorpal Blade": 81,
       "Attack Master": 82
     },
-    "stats": [48, 52, 46, 48, 44]
+    "stats": [48, 52, 46, 48, 44],
+    "trait": "Exquisite Technique"
   },
   "Seiryu": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Bufudyne Ring",
     "itemr": "Mabufudyne Ring",
     "lvl": 62,
@@ -2900,10 +3197,11 @@
       "Amrita Drop": 66,
       "Makarakarn": 67
     },
-    "stats": [38, 41, 43, 37, 34]
+    "stats": [38, 41, 43, 37, 34],
+    "trait": "Relentlessness"
   },
   "Setanta": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Rebellion Ring",
     "itemr": "Revolution Ring",
     "lvl": 25,
@@ -2917,10 +3215,11 @@
       "Rebellion": 29,
       "Rising Slash": 30
     },
-    "stats": [19, 16, 18, 13, 16]
+    "stats": [19, 16, 18, 13, 16],
+    "trait": "Avenger"
   },
   "Seth": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Triple Down Belt",
     "itemr": "One-shot Kill Belt",
     "lvl": 51,
@@ -2934,10 +3233,11 @@
       "Fire Break": 54,
       "Fortify Spirit": 56
     },
-    "stats": [32, 35, 30, 25, 28]
+    "stats": [32, 35, 30, 35, 28],
+    "trait": "Group Hypnosis"
   },
   "Shiisaa": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Double Fangs",
     "itemr": "Rat Fang",
     "lvl": 15,
@@ -2951,10 +3251,11 @@
       "Rampage": 17,
       "Dodge Elec": 19
     },
-    "stats": [10, 11, 11, 11, 9]
+    "stats": [10, 11, 11, 11, 9],
+    "trait": "Nuke Lineage"
   },
   "Shiki-Ouji": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Double Shot",
     "itemr": "Triple Down",
     "lvl": 18,
@@ -2969,10 +3270,11 @@
       "Psio": 23,
       "Oni Kagura": 24
     },
-    "stats": [16, 14, 12, 9, 10]
+    "stats": [16, 14, 12, 9, 10],
+    "trait": "Psy Lineage"
   },
   "Shiva": {
-    "inherits": "almighty",
+    "inherits": "psy",
     "item": "Megido Fire",
     "itemr": "Megido Buster",
     "lvl": 82,
@@ -2987,10 +3289,11 @@
       "Auto-Mataru": 87,
       "Psycho Blast": 88
     },
-    "stats": [55, 54, 53, 53, 38]
+    "stats": [55, 54, 53, 53, 38],
+    "trait": "Psy Lineage"
   },
   "Siegfried": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Vorpal Blade Belt",
     "itemr": "Brave Blade Belt",
     "lvl": 84,
@@ -3005,10 +3308,11 @@
       "Vorpal Blade": 89,
       "Auto-Mataru": 90
     },
-    "stats": [61, 43, 55, 55, 45]
+    "stats": [61, 43, 55, 55, 45],
+    "trait": "Avenger"
   },
   "Silky": {
-    "inherits": "almighty",
+    "inherits": "healing",
     "item": "Silk Dress",
     "itemr": "Silk Dress R",
     "lvl": 6,
@@ -3021,10 +3325,11 @@
       "Patra": 9,
       "Sharp Student": 10
     },
-    "stats": [4, 7, 4, 5, 5]
+    "stats": [4, 7, 4, 5, 5],
+    "trait": "Focused Gaze"
   },
   "Skadi": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Snow Queen Whip",
     "itemr": "Snow Queen Whip R",
     "lvl": 53,
@@ -3039,10 +3344,11 @@
       "Maeigaon": 57,
       "Spirit Drain": 58
     },
-    "stats": [33, 39, 32, 34, 28]
+    "stats": [33, 39, 32, 34, 28],
+    "trait": "Bloodshot Gaze"
   },
   "Slime": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Tarunda",
     "itemr": "Matarunda",
     "lvl": 10,
@@ -3055,10 +3361,11 @@
       "Fire Wall": 13,
       "Headbutt": 14
     },
-    "stats": [9, 6, 11, 6, 5]
+    "stats": [9, 6, 11, 6, 5],
+    "trait": "Odd Immunity"
   },
   "Sraosha": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Archangel Bra",
     "itemr": "Archangel Bra R",
     "lvl": 80,
@@ -3073,7 +3380,8 @@
       "Amrita Shower": 84,
       "Debilitate": 85
     },
-    "stats": [47, 56, 45, 56, 43]
+    "stats": [47, 56, 45, 56, 43],
+    "trait": "Bless Lineage"
   },
   "Stone of Scone": {
     "inherits": "almighty",
@@ -3085,17 +3393,21 @@
     "skills": {
       "Agilao": 0,
       "Bufula": 0,
-      "Zionga": 0,
       "Garula": 0,
+      "Zionga": 0,
       "Psio": 0,
       "Freila": 0,
       "Kouga": 0,
-      "Eiga": 0
+      "Eiga": 0,
+      "Relentlessness": 0,
+      "Life Focus": 0,
+      "Focused Gaze": 0
     },
-    "stats": [20, 20, 20, 20, 20]
+    "stats": [20, 20, 20, 20, 20],
+    "trait": "Treasured Talent"
   },
   "Succubus": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Brain Shot",
     "itemr": "Brain Shot R",
     "lvl": 7,
@@ -3106,13 +3418,14 @@
       "Rebellion": 0,
       "Agi": 8,
       "Dekaja": 10,
-      "Brainwash Boost": 11,
+      "Sleep Boost": 11,
       "Mudo": 12
     },
-    "stats": [4, 7, 5, 8, 4]
+    "stats": [4, 7, 5, 8, 4],
+    "trait": "Foul Contagion"
   },
   "Sudama": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Mapsi",
     "itemr": "Psio",
     "lvl": 17,
@@ -3121,12 +3434,17 @@
     "skills": {
       "Mapsi": 0,
       "Lucky Punch": 0,
-      "Tarukaja": 0
+      "Tarukaja": 0,
+      "Ambient Aid": 20,
+      "Wind Wall": 21,
+      "Apt Pupil": 22,
+      "Psio": 23
     },
-    "stats": [9, 14, 12, 13, 10]
+    "stats": [9, 14, 12, 13, 10],
+    "trait": "Storm Born"
   },
   "Sui-Ki": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Bufula",
     "itemr": "Mabufula",
     "lvl": 24,
@@ -3141,10 +3459,11 @@
       "Mabufula": 28,
       "Dodge Fire": 29
     },
-    "stats": [16, 15, 15, 18, 15]
+    "stats": [16, 15, 15, 18, 15],
+    "trait": "Ice Lineage"
   },
   "Surt": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Maragidyne",
     "itemr": "Inferno",
     "lvl": 83,
@@ -3159,10 +3478,11 @@
       "Evade Ice": 86,
       "Gigantomachia": 88
     },
-    "stats": [55, 54, 51, 50, 46]
+    "stats": [55, 54, 51, 50, 46],
+    "trait": "Fire Lineage"
   },
   "Suzaku": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Frei Ring",
     "itemr": "Mafrei Ring",
     "lvl": 16,
@@ -3177,10 +3497,11 @@
       "Speed Master": 20,
       "Matarunda": 21
     },
-    "stats": [9, 12, 10, 15, 9]
+    "stats": [9, 12, 10, 15, 9],
+    "trait": "Life Focus"
   },
   "Take-Minakata": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Zionga",
     "itemr": "Mazionga",
     "lvl": 26,
@@ -3195,10 +3516,11 @@
       "Swift Strike": 31,
       "Shock Boost": 32
     },
-    "stats": [17, 19, 18, 16, 15]
+    "stats": [17, 19, 18, 16, 15],
+    "trait": "Elec Lineage"
   },
   "Tam Lin": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Genma Armor",
     "itemr": "Genma Armor R",
     "lvl": 27,
@@ -3213,10 +3535,11 @@
       "Brainwash Boost": 31,
       "Heat Up": 32
     },
-    "stats": [21, 16, 18, 16, 17]
+    "stats": [21, 16, 18, 16, 17],
+    "trait": "Life Focus"
   },
   "Thor": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Mjolnir",
     "itemr": "Mjolnir R",
     "lvl": 64,
@@ -3231,10 +3554,11 @@
       "Heat Up": 68,
       "Wild Thunder": 71
     },
-    "stats": [44, 39, 43, 38, 35]
+    "stats": [44, 39, 43, 38, 35],
+    "trait": "Focused Gaze"
   },
   "Thoth": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Mafreila",
     "itemr": "Freidyne",
     "lvl": 36,
@@ -3249,10 +3573,11 @@
       "Concentrate": 40,
       "Growth 2": 42
     },
-    "stats": [21, 28, 21, 24, 21]
+    "stats": [21, 28, 21, 24, 21],
+    "trait": "Exquisite Technique"
   },
   "Throne": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Makougaon Ring",
     "itemr": "Divine Judgement Ring",
     "lvl": 72,
@@ -3262,15 +3587,16 @@
       "Agidyne": 0,
       "Hamaon": 0,
       "Burn Boost": 0,
-      "Makougaon": 73,
-      "Bless Amp": 74,
-      "Evade Curse": 75,
-      "Auto-Maraku": 76
+      "Fire Amp": 74,
+      "Makougaon": 75,
+      "Invigorate 3": 76,
+      "Inferno": 78
     },
-    "stats": [42, 49, 43, 46, 43]
+    "stats": [42, 49, 43, 46, 43],
+    "trait": "Crisis Management"
   },
   "Thunderbird": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Elec Boost",
     "itemr": "Elec Amp",
     "lvl": 34,
@@ -3279,12 +3605,16 @@
     "skills": {
       "Mazionga": 0,
       "Tarukaja": 0,
-      "Shock Boost": 0
+      "Shock Boost": 0,
+      "Rebellion": 35,
+      "Ziodyne": 37,
+      "Elec Boost": 38
     },
-    "stats": [17, 24, 24, 26, 18]
+    "stats": [17, 24, 24, 26, 18],
+    "trait": "Elec Lineage"
   },
   "Titania": {
-    "inherits": "almighty",
+    "inherits": "nuke",
     "item": "Freidyne",
     "itemr": "Mafreidyne",
     "lvl": 56,
@@ -3293,9 +3623,13 @@
     "skills": {
       "Freidyne": 0,
       "Ziodyne": 0,
-      "Lullaby": 0
+      "Lullaby": 0,
+      "Concentrate": 59,
+      "Nuke Amp": 60,
+      "Mediarahan": 61
     },
-    "stats": [32, 40, 35, 38, 30]
+    "stats": [32, 40, 35, 38, 30],
+    "trait": "Stagnant Aura"
   },
   "Trumpeter": {
     "inherits": "almighty",
@@ -3313,10 +3647,11 @@
       "Life Aid": 63,
       "Debilitate": 65
     },
-    "stats": [33, 42, 40, 38, 31]
+    "stats": [33, 42, 40, 38, 31],
+    "trait": "Relentlessness"
   },
   "Unicorn": {
-    "inherits": "almighty",
+    "inherits": "bless",
     "item": "Mahama",
     "itemr": "Hamaon",
     "lvl": 39,
@@ -3331,7 +3666,8 @@
       "Kouga": 43,
       "Hamaon": 44
     },
-    "stats": [20, 27, 25, 28, 24]
+    "stats": [20, 27, 25, 28, 24],
+    "trait": "Bless Lineage"
   },
   "Uriel": {
     "inherits": "almighty",
@@ -3349,10 +3685,11 @@
       "Angelic Grace": 85,
       "Spell Master": 86
     },
-    "stats": [50, 54, 49, 55, 42]
+    "stats": [50, 54, 49, 55, 42],
+    "trait": "Spirit Focus"
   },
   "Valkyrie": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Rising Slash",
     "itemr": "Deadly Fury",
     "lvl": 44,
@@ -3366,10 +3703,11 @@
       "Matarukaja": 47,
       "Dodge Physical": 49
     },
-    "stats": [33, 24, 28, 29, 25]
+    "stats": [33, 24, 28, 29, 25],
+    "trait": "Chained Technique"
   },
   "Vasuki": {
-    "inherits": "almighty",
+    "inherits": "ailment",
     "item": "Kuzuryu Gouhou",
     "itemr": "Kuzuryu Gouhou R",
     "lvl": 68,
@@ -3384,7 +3722,8 @@
       "Brainwash Boost": 72,
       "Null Curse": 73
     },
-    "stats": [42, 45, 44, 42, 38]
+    "stats": [42, 45, 44, 42, 38],
+    "trait": "Stagnant Aura"
   },
   "Vishnu": {
     "inherits": "almighty",
@@ -3403,10 +3742,11 @@
       "Wind Amp": 88,
       "Riot Gun": 90
     },
-    "stats": [56, 51, 49, 57, 43]
+    "stats": [56, 51, 49, 57, 43],
+    "trait": "Vahana"
   },
   "Vohu Manah": {
-    "inherits": "almighty",
+    "inherits": "trait",
     "item": "Doomsday",
     "itemr": "Ancient of Days",
     "lvl": 80,
@@ -3421,10 +3761,11 @@
       "Invigorate 3": 84,
       "Salvation": 85
     },
-    "stats": [99, 99, 99, 99, 99]
+    "stats": [46, 59, 45, 56, 41],
+    "trait": "Enlightenment"
   },
   "White Rider": {
-    "inherits": "almighty",
+    "inherits": "curse",
     "item": "Snipe",
     "itemr": "Cripple",
     "lvl": 38,
@@ -3440,10 +3781,11 @@
       "Foul Breath": 43,
       "Ailment Boost": 44
     },
-    "stats": [22, 21, 26, 27, 25]
+    "stats": [22, 21, 26, 27, 25],
+    "trait": "Bloodshot Gaze"
   },
   "Yaksini": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Hysterical Slap",
     "itemr": "Oni Kagura",
     "lvl": 20,
@@ -3457,10 +3799,11 @@
       "Attack Master": 23,
       "Vicious Strike": 24
     },
-    "stats": [14, 11, 13, 16, 13]
+    "stats": [14, 11, 13, 16, 13],
+    "trait": "Foul Contagion"
   },
   "Yamata-no-Orochi": {
-    "inherits": "almighty",
+    "inherits": "ice",
     "item": "Triple Down",
     "itemr": "One-shot Kill",
     "lvl": 64,
@@ -3474,10 +3817,11 @@
       "Ice Amp": 67,
       "Diamond Dust": 69
     },
-    "stats": [44, 38, 48, 36, 33]
+    "stats": [44, 38, 48, 36, 33],
+    "trait": "Freezing Follow-up"
   },
   "Yatagarasu": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "Black Wing Robe",
     "itemr": "Black Wing Robe R",
     "lvl": 57,
@@ -3492,10 +3836,11 @@
       "Wind Break": 61,
       "Null Wind": 64
     },
-    "stats": [35, 41, 30, 40, 32]
+    "stats": [35, 41, 30, 40, 32],
+    "trait": "Group Hypnosis"
   },
   "Yoshitsune": {
-    "inherits": "almighty",
+    "inherits": "phys",
     "item": "Usumidori",
     "itemr": "Usumidori R",
     "lvl": 87,
@@ -3510,10 +3855,11 @@
       "Elec Amp": 92,
       "Hassou Tobi": 94
     },
-    "stats": [63, 52, 50, 54, 49]
+    "stats": [63, 52, 50, 54, 49],
+    "trait": "Avenger"
   },
   "Yurlungur": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Mirrirmina",
     "itemr": "Mirrirmina R",
     "lvl": 43,
@@ -3528,10 +3874,11 @@
       "Tetra Break": 48,
       "Elec Boost": 49
     },
-    "stats": [26, 29, 30, 27, 24]
+    "stats": [26, 29, 30, 27, 24],
+    "trait": "Spirit Focus"
   },
   "Zaou-Gongen": {
-    "inherits": "almighty",
+    "inherits": "fire",
     "item": "God's Hand Belt",
     "itemr": "Gigantomachia Belt",
     "lvl": 80,
@@ -3546,10 +3893,11 @@
       "Cripple": 84,
       "Blazing Hell": 86
     },
-    "stats": [57, 45, 50, 56, 39]
+    "stats": [57, 45, 50, 56, 39],
+    "trait": "Apocalyptic Fury"
   },
   "Zouchouten": {
-    "inherits": "almighty",
+    "inherits": "elec",
     "item": "Zionga Ring",
     "itemr": "Mazionga Ring",
     "lvl": 31,
@@ -3564,6 +3912,7 @@
       "Swift Strike": 35,
       "Attack Master": 36
     },
-    "stats": [22, 19, 24, 18, 17]
+    "stats": [22, 19, 24, 18, 17],
+    "trait": "Elec Lineage"
   }
 }
