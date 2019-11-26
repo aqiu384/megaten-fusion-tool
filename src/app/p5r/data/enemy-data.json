@@ -1,19 +1,930 @@
 {
-  "Headhunting Puss in Boots": {
-    "area": [
-      "Kamoshida's Palace"
-    ],
-    "card":"Agi",
-    "drops": [],
-    "exp": 0,
+  "Abyssal King of Avarice": {
+    "areas": "Mementos Depths",
+    "lvl": 75,
+    "persona": "Abaddon",
+    "race": "Judgement",
+    "resists": "dd------sd",
+    "trait": "Irritable"
+  },
+  "Ambassador of Filth": {
+    "areas": "Okumura's Palace",
+    "lvl": 37,
+    "persona": "Belphegor",
+    "race": "Tower",
+    "resists": "--wss--s-r",
+    "trait": "Irritable"
+  },
+  "Apprentice in a Jug": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 3,
+    "persona": "Agathion",
+    "race": "Chariot",
+    "resists": "-s--sw----",
+    "trait": "Timid"
+  },
+  "Ascended Feline": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 17,
+    "persona": "Nekomata",
+    "race": "Magician",
+    "resists": "----w-s---",
+    "trait": "Upbeat"
+  },
+  "Auspicious Pachyderm": {
+    "areas": "Niijima's Palace",
+    "lvl": 53,
+    "persona": "Ganesha",
+    "race": "Sun",
+    "resists": "ss---dw---",
+    "trait": "Upbeat"
+  },
+  "Awakened God": {
+    "areas": "Okumura's Palace",
+    "lvl": 35,
+    "persona": "Arahabaki",
+    "race": "Hermit",
+    "resists": "rr----wwss",
+    "trait": "Gloomy"
+  },
+  "Battle Fiend": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 24,
+    "persona": "Rakshasa",
+    "race": "Strength",
+    "resists": "sns--w--ws",
+    "trait": "Irritable"
+  },
+  "Bearer of the Scales": {
+    "areas": "Futaba's Palace",
+    "lvl": 34,
+    "persona": "Anubis",
+    "race": "Judgement",
+    "resists": "-s----s-nn",
+    "trait": "Irritable"
+  },
+  "Bedside Brute": {
+    "areas": "Kamoshida's Palace",
     "lvl": 5,
-    "material":"-",
-    "persona":"Cait Sith",
-    "race":"Magician",
-    "resists":"----sw----",
-    "skills": [],
-    "stats": [0, 0, 0, 0, 0, 0, 0],
-    "trait":"Upbeat",
-    "yen": 0
+    "persona": "Incubus",
+    "race": "Devil",
+    "resists": "--w-s---w-",
+    "trait": "Timid"
+  },
+  "Beguiling Girl": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 2,
+    "persona": "Pixie",
+    "race": "Lovers",
+    "resists": "-w-ws---sw",
+    "trait": "Timid"
+  },
+  "Blazing Judgement Wheel": {
+    "areas": "Qliphoth World",
+    "lvl": 72,
+    "persona": "Throne",
+    "race": "Justice",
+    "resists": "--n--n-wr-",
+    "trait": "Gloomy"
+  },
+  "Blood-Thirsty Demoness": {
+    "areas": "Shido's Palace",
+    "lvl": 50,
+    "persona": "Dakini",
+    "race": "Empress",
+    "resists": "-ns-------",
+    "trait": "Upbeat"
+  },
+  "Bringer of Misfortune": {
+    "areas": "Madarame's Palace",
+    "lvl": 18,
+    "persona": "Shiki-Ouji",
+    "race": "Chariot",
+    "resists": "nn-----wnn",
+    "trait": "Irritable"
+  },
+  "Brutal Calvaryman": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 9,
+    "persona": "Berith",
+    "race": "Hierophant",
+    "resists": "-nsw------",
+    "trait": "Irritable"
+  },
+  "Cavern Snakeman": {
+    "areas": "Futaba's Palace",
+    "lvl": 24,
+    "persona": "Naga",
+    "race": "Hermit",
+    "resists": "-s--nw----",
+    "trait": "Gloomy"
+  },
+  "Chanting Baboon": {
+    "areas": "Futaba's Palace",
+    "lvl": 36,
+    "persona": "Thoth",
+    "race": "Emperor",
+    "resists": "------wnns",
+    "trait": "Irritable"
+  },
+  "Child-Hunting Teddy Bear": {
+    "areas": "??? Palace",
+    "lvl": 65,
+    "persona": "Bugs",
+    "race": "Fool",
+    "resists": "--w----w--",
+    "trait": "Irritable"
+  },
+  "Chivalrous Fiend": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 20,
+    "persona": "Oni",
+    "race": "Strength",
+    "resists": "ss--------",
+    "trait": "Upbeat"
+  },
+  "Coffin Borne God": {
+    "areas": "Qliphoth World",
+    "lvl": 72,
+    "persona": "Mot",
+    "race": "Death",
+    "resists": "-s--dw---r",
+    "trait": "Gloomy"
+  },
+  "Corpse Bird": {
+    "areas": "Madarame's Palace",
+    "lvl": 12,
+    "persona": "Onmoraki",
+    "race": "Moon",
+    "resists": "--sw----wn",
+    "trait": "Gloomy"
+  },
+  "Cruel Leopard": {
+    "areas": "Niijima's Palace",
+    "lvl": 42,
+    "persona": "Ose",
+    "race": "Fool",
+    "resists": "--s-----wn",
+    "trait": "Irritable"
+  },
+  "Crypt-Dwelling Pyromaniac": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 2,
+    "persona": "Jack-o'-Lantern",
+    "race": "Magician",
+    "resists": "--dw-w----",
+    "trait": "Gloomy"
+  },
+  "Crystal Skull D": {
+    "areas": "Qliphoth World",
+    "lvl": 50,
+    "persona": "Crystal Skull",
+    "race": "Fool",
+    "resists": "ss---w----",
+    "trait": "Upbeat"
+  },
+  "Dancer of Death": {
+    "areas": "??? Palace",
+    "lvl": 73,
+    "persona": "Macabre",
+    "race": "Hanged",
+    "resists": "----s---wn",
+    "trait": "Gloomy"
+  },
+  "Dancing Lion": {
+    "areas": "Shido's Palace",
+    "lvl": 52,
+    "persona": "Barong",
+    "race": "Emperor",
+    "resists": "-s--sw--nw",
+    "trait": "Timid"
+  },
+  "Dancing Witch": {
+    "areas": "Niijima's Palace",
+    "lvl": 48,
+    "persona": "Rangda",
+    "race": "Magician",
+    "resists": "rrn-w---wn",
+    "trait": "Gloomy"
+  },
+  "Dark Sun": {
+    "areas": "Okumura's Palace",
+    "lvl": 39,
+    "persona": "Mithras",
+    "race": "Sun",
+    "resists": "ssd---wn--",
+    "trait": "Gloomy"
+  },
+  "Defeated Avenger": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 26,
+    "persona": "Take-Minakata",
+    "race": "Hanged",
+    "resists": "----s-w--s",
+    "trait": "Gloomy"
+  },
+  "Degenerate Idol": {
+    "areas": "??? Palace",
+    "lvl": 81,
+    "persona": "Alilat",
+    "race": "Empress",
+    "resists": "rrwd--n--w",
+    "trait": "Timid"
+  },
+  "Destructive Beauty": {
+    "areas": "Shido's Palace",
+    "lvl": 56,
+    "persona": "Parvati",
+    "race": "Lovers",
+    "resists": "---r--s-sw",
+    "trait": "Timid"
+  },
+  "Dirty Two-Horned Beast": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 4,
+    "persona": "Bicorn",
+    "race": "Hermit",
+    "resists": "----w----s",
+    "trait": "Irritable"
+  },
+  "Divine Warrior": {
+    "areas": "Niijima's Palace",
+    "lvl": 41,
+    "persona": "Power",
+    "race": "Justice",
+    "resists": "-----s--nw",
+    "trait": "Upbeat"
+  },
+  "Dream-Dwelling Skull": {
+    "areas": "??? Palace",
+    "lvl": 70,
+    "persona": "Loa",
+    "race": "Hermit",
+    "resists": "--s-n-wsw-",
+    "trait": "Upbeat"
+  },
+  "Drunken Serpents": {
+    "areas": "Mementos Depths",
+    "lvl": 64,
+    "persona": "Yamata-no-Orochi",
+    "race": "Judgement",
+    "resists": "s--d-s---s",
+    "trait": "Gloomy"
+  },
+  "Emperor's Amulet D": {
+    "areas": "Shido's Palace",
+    "lvl": 35,
+    "persona": "Emperor's Amulet",
+    "race": "Hanged",
+    "resists": "ss--w-----",
+    "trait": "Upbeat"
+  },
+  "Envoy of Slumber": {
+    "areas": "Futaba's Palace",
+    "lvl": 23,
+    "persona": "Sandman",
+    "race": "Magician",
+    "resists": "--w-ws----",
+    "trait": "Upbeat"
+  },
+  "Equine Sage": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 17,
+    "persona": "Orobas",
+    "race": "Hierophant",
+    "resists": "---w-s---s",
+    "trait": "Timid"
+  },
+  "Expressionless Beast": {
+    "areas": "Niijima's Palace",
+    "lvl": 39,
+    "persona": "Unicorn",
+    "race": "Faith",
+    "resists": "---n--s-nw",
+    "trait": "Timid"
+  },
+  "Final Assessor": {
+    "areas": "Niijima's Palace",
+    "lvl": 52,
+    "persona": "Norn",
+    "race": "Fortune",
+    "resists": "----rd--s-",
+    "trait": "Upbeat"
+  },
+  "Foolish Monk": {
+    "areas": "Madarame's Palace",
+    "lvl": 11,
+    "persona": "Koppa Tengu",
+    "race": "Temperance",
+    "resists": "---w-s--w-",
+    "trait": "Upbeat"
+  },
+  "Funerary Warrior": {
+    "areas": "Niijima's Palace",
+    "lvl": 44,
+    "persona": "Valkyrie",
+    "race": "Strength",
+    "resists": "-swr----n-",
+    "trait": "Irritable"
+  },
+  "Furious Wisdom King": {
+    "areas": "Shido's Palace",
+    "lvl": 65,
+    "persona": "Atavaka",
+    "race": "Faith",
+    "resists": "snr------s",
+    "trait": "Irritable"
+  },
+  "Gallows Flower": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 3,
+    "persona": "Mandrake",
+    "race": "Death",
+    "resists": "--w-s-----",
+    "trait": "Upbeat"
+  },
+  "Girl of the Hanging Tree": {
+    "areas": "Madarame's Palace",
+    "lvl": 9,
+    "persona": "Hua Po",
+    "race": "Hanged",
+    "resists": "-wrw------",
+    "trait": "Upbeat"
+  },
+  "Guard Dog of Hades": {
+    "areas": "Shido's Palace",
+    "lvl": 55,
+    "persona": "Cerberus",
+    "race": "Chariot",
+    "resists": "--dw---s--",
+    "trait": "Irritable"
+  },
+  "Harlot of Desire": {
+    "areas": "Mementos Depths",
+    "lvl": 60,
+    "persona": "Lilith",
+    "race": "Moon",
+    "resists": "--wr---r-n",
+    "trait": "Timid"
+  },
+  "Haughty Vulture": {
+    "areas": "Niijima's Palace",
+    "lvl": 51,
+    "persona": "Jatayu",
+    "race": "Tower",
+    "resists": "---s-r-ws-",
+    "trait": "Upbeat"
+  },
+  "Headhunting Puss in Boots": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 5,
+    "persona": "Cait Sith",
+    "race": "Magician",
+    "resists": "----sw----",
+    "trait": "Upbeat"
+  },
+  "Heavenly Punisher": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 14,
+    "persona": "Archangel",
+    "race": "Justice",
+    "resists": "----w---nw",
+    "trait": "Irritable"
+  },
+  "Hedonistic Braggart": {
+    "areas": "??? Palace",
+    "lvl": 71,
+    "persona": "Dionysus",
+    "race": "Consultant",
+    "resists": "----r---nn",
+    "trait": "Upbeat"
+  },
+  "Heretic Goat": {
+    "areas": "Shido's Palace",
+    "lvl": 58,
+    "persona": "Baphomet",
+    "race": "Devil",
+    "resists": "--s-----wn",
+    "trait": "Timid"
+  },
+  "Hope Diamond D": {
+    "areas": "Mementos Depths",
+    "lvl": 40,
+    "persona": "Hope Diamond",
+    "race": "Death",
+    "resists": "ss-w------",
+    "trait": "Upbeat"
+  },
+  "Human-Eating Lady": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 20,
+    "persona": "Yaksini",
+    "race": "Empress",
+    "resists": "-n-s---w--",
+    "trait": "Irritable"
+  },
+  "Hunting Wolf Spirit": {
+    "areas": "Madarame's Palace",
+    "lvl": 15,
+    "persona": "Makami",
+    "race": "Temperance",
+    "resists": "-n--ws-sn-",
+    "trait": "Upbeat"
+  },
+  "Hybrid Servant of Evil": {
+    "areas": "??? Palace",
+    "lvl": 70,
+    "persona": "Biyarky",
+    "race": "Moon",
+    "resists": "--nw-n-w-n",
+    "trait": "Gloomy"
+  },
+  "Jealous Lover": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 19,
+    "persona": "Leanan Sidhe",
+    "race": "Lovers",
+    "resists": "--w--ss---",
+    "trait": "Irritable"
+  },
+  "Koh-i-Noor D": {
+    "areas": "Okumura's Palace",
+    "lvl": 25,
+    "persona": "Koh-i-Noor",
+    "race": "Priestess",
+    "resists": "sw--------",
+    "trait": "Upbeat"
+  },
+  "Lamenting Sacrifice": {
+    "areas": "Niijima's Palace",
+    "lvl": 42,
+    "persona": "Kushinada-Hime",
+    "race": "Lovers",
+    "resists": "-------wr-",
+    "trait": "Gloomy"
+  },
+  "Leafy Old Man": {
+    "areas": "Madarame's Palace",
+    "lvl": 9,
+    "persona": "Koropokkuru",
+    "race": "Hermit",
+    "resists": "--ws-s----",
+    "trait": "Timid"
+  },
+  "Life-Draining Spirit": {
+    "areas": "Okumura's Palace",
+    "lvl": 42,
+    "persona": "Kumbhanda",
+    "race": "Hermit",
+    "resists": "--n---w--s",
+    "trait": "Irritable"
+  },
+  "Mad Marsh Horse": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 6,
+    "persona": "Kelpie",
+    "race": "Strength",
+    "resists": "---sw-----",
+    "trait": "Upbeat"
+  },
+  "Menacing Owlman": {
+    "areas": "Futaba's Palace",
+    "lvl": 27,
+    "persona": "Andras",
+    "race": "Devil",
+    "resists": "--ws--s-wn",
+    "trait": "Timid"
+  },
+  "Merciless Inquisitor": {
+    "areas": "Qliphoth World",
+    "lvl": 68,
+    "persona": "Dominion",
+    "race": "Justice",
+    "resists": "----w--rnw",
+    "trait": "Gloomy"
+  },
+  "Midnight Queen": {
+    "areas": "Niijima's Palace",
+    "lvl": 43,
+    "persona": "Queen Mab",
+    "race": "Magician",
+    "resists": "--n-sw----",
+    "trait": "Gloomy"
+  },
+  "Mirthful Dancer": {
+    "areas": "Madarame's Palace",
+    "lvl": 13,
+    "persona": "Ame-no-Uzume",
+    "race": "Lovers",
+    "resists": "--d---w---",
+    "trait": "Upbeat"
+  },
+  "Missionary of Depravity": {
+    "areas": "??? Palace",
+    "lvl": 82,
+    "persona": "Belial",
+    "race": "Devil",
+    "resists": "n--s-----n",
+    "trait": "Gloomy"
+  },
+  "Mocking Snowman": {
+    "areas": "Madarame's Palace",
+    "lvl": 11,
+    "persona": "Jack Frost",
+    "race": "Magician",
+    "resists": "--wn------",
+    "trait": "Timid"
+  },
+  "Monarch of Snow": {
+    "areas": "Shido's Palace",
+    "lvl": 61,
+    "persona": "King Frost",
+    "race": "Emperor",
+    "resists": "---d----n-",
+    "trait": "Upbeat"
+  },
+  "Mountain Girl": {
+    "areas": "Niijima's Palace",
+    "lvl": 40,
+    "persona": "Kikuri-Hime",
+    "race": "Priestess",
+    "resists": "--w--n--s-",
+    "trait": "Timid"
+  },
+  "Mutant Lion God": {
+    "areas": "??? Palace",
+    "lvl": 74,
+    "persona": "Chimera",
+    "race": "Strength",
+    "resists": "--dn-w---w",
+    "trait": "Upbeat"
+  },
+  "Night Chimera": {
+    "areas": "Madarame's Palace",
+    "lvl": 20,
+    "persona": "Nue",
+    "race": "Moon",
+    "resists": "--ws-----n",
+    "trait": "Irritable"
+  },
+  "Night-Walking Warrior": {
+    "areas": "Madarame's Palace",
+    "lvl": 9,
+    "persona": "Mokoi",
+    "race": "Death",
+    "resists": "----sw----",
+    "trait": "Gloomy"
+  },
+  "Nimble Monkey King": {
+    "areas": "Shido's Palace",
+    "lvl": 64,
+    "persona": "Hanuman",
+    "race": "Star",
+    "resists": "---w--s-s-",
+    "trait": "Upbeat"
+  },
+  "Orichalcum D": {
+    "areas": "??? Palace",
+    "lvl": 60,
+    "persona": "Orichalcum",
+    "race": "Faith",
+    "resists": "ss------w-",
+    "trait": "Upbeat"
+  },
+  "Orlov D": {
+    "areas": "Niijima's Palace",
+    "lvl": 30,
+    "persona": "Orlov",
+    "race": "Strength",
+    "resists": "ss-------w",
+    "trait": "Upbeat"
+  },
+  "Pagan Saviour": {
+    "areas": "Mementos Depths",
+    "lvl": 60,
+    "persona": "Melchizedek",
+    "race": "Justice",
+    "resists": "-----ws-dn",
+    "trait": "Irritable"
+  },
+  "Possessive Dog Ghost": {
+    "areas": "Madarame's Palace",
+    "lvl": 14,
+    "persona": "Inugami",
+    "race": "Hanged",
+    "resists": "-nn--w---n",
+    "trait": "Timid"
+  },
+  "Prankster Leader": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 16,
+    "persona": "High Pixie",
+    "race": "Fool",
+    "resists": "-w--ss-w--",
+    "trait": "Irritable"
+  },
+  "Pulsing Mud": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 18,
+    "persona": "Black Ooze",
+    "race": "Moon",
+    "resists": "ss-sw-w-wn",
+    "trait": "Timid"
+  },
+  "Quaking Lady of Shadow": {
+    "areas": "Niijima's Palace",
+    "lvl": 55,
+    "persona": "Skadi",
+    "race": "Priestess",
+    "resists": "---r-----n",
+    "trait": "Timid"
+  },
+  "Queen's Necklace D": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 15,
+    "persona": "Queen's Necklace",
+    "race": "Empress",
+    "resists": "ss----w---",
+    "trait": "Upbeat"
+  },
+  "Raging Bird God": {
+    "areas": "Shido's Palace",
+    "lvl": 52,
+    "persona": "Garuda",
+    "race": "Star",
+    "resists": "-----s--r-",
+    "trait": "Irritable"
+  },
+  "Ravenous Dragon": {
+    "areas": "??? Palace",
+    "lvl": 86,
+    "persona": "Fafnir",
+    "race": "Hermit",
+    "resists": "rrd-s--d--",
+    "trait": "Irritable"
+  },
+  "Rebellious Elephant": {
+    "areas": "Okumura's Palace",
+    "lvl": 43,
+    "persona": "Girimehkala",
+    "race": "Moon",
+    "resists": "rrs-----wn",
+    "trait": "Gloomy"
+  },
+  "Regent D": {
+    "areas": "Madarame's Palace",
+    "lvl": 10,
+    "persona": "Regent",
+    "race": "Emperor",
+    "resists": "ss-----w--",
+    "trait": "Upbeat"
+  },
+  "Reviled Dictator": {
+    "areas": "??? Palace",
+    "lvl": 75,
+    "persona": "Baal",
+    "race": "Emperor",
+    "resists": "--s--d--s-",
+    "trait": "Upbeat"
+  },
+  "Rhetorician of the Sea": {
+    "areas": "Shido's Palace",
+    "lvl": 63,
+    "persona": "Forneus",
+    "race": "Hierophant",
+    "resists": "---dw-n---",
+    "trait": "Gloomy"
+  },
+  "Rooftop Lion": {
+    "areas": "Madarame's Palace",
+    "lvl": 15,
+    "persona": "Shiisaa",
+    "race": "Strength",
+    "resists": "s-----w-nw",
+    "trait": "Upbeat"
+  },
+  "Sacrificial Pyrekeeper": {
+    "areas": "Mementos Depths",
+    "lvl": 60,
+    "persona": "Moloch",
+    "race": "Hanged",
+    "resists": "--dwssd--n",
+    "trait": "Gloomy"
+  },
+  "Scandalous Queen": {
+    "areas": "Shido's Palace",
+    "lvl": 56,
+    "persona": "Titania",
+    "race": "Empress",
+    "resists": "------wsss",
+    "trait": "Timid"
+  },
+  "Self-Infatuated Star": {
+    "areas": "Shido's Palace",
+    "lvl": 48,
+    "persona": "Narcissus",
+    "race": "Lovers",
+    "resists": "--w-ns--s-",
+    "trait": "Timid"
+  },
+  "She of Life and Death": {
+    "areas": "Futaba's Palace",
+    "lvl": 26,
+    "persona": "Isis",
+    "race": "Priestess",
+    "resists": "------w-n-",
+    "trait": "Timid"
+  },
+  "Slithering Snakewoman": {
+    "areas": "Futaba's Palace",
+    "lvl": 26,
+    "persona": "Lamia",
+    "race": "Empress",
+    "resists": "---ws--w-n",
+    "trait": "Gloomy"
+  },
+  "Spear-Wielding General": {
+    "areas": "??? Palace",
+    "lvl": 76,
+    "persona": "Cu Chulainn",
+    "race": "Faith",
+    "resists": "ss--wr--n-",
+    "trait": "Irritable"
+  },
+  "Spiral of the Abyss": {
+    "areas": "??? Palace",
+    "lvl": 81,
+    "persona": "Hastur",
+    "race": "Star",
+    "resists": "--s--dn--n",
+    "trait": "Irritable"
+  },
+  "Stone of Scone D": {
+    "areas": "Futaba's Palace",
+    "lvl": 20,
+    "persona": "Stone of Scone",
+    "race": "Fortune",
+    "resists": "ssw-------",
+    "trait": "Upbeat"
+  },
+  "Storm-Calling Bird": {
+    "areas": "Okumura's Palace",
+    "lvl": 34,
+    "persona": "Thunderbird",
+    "race": "Sun",
+    "resists": "----d-w--w",
+    "trait": "Upbeat"
+  },
+  "Strumming Veena Player": {
+    "areas": "Shido's Palace",
+    "lvl": 50,
+    "persona": "Sarasvati",
+    "race": "Priestess",
+    "resists": "---ns--w--",
+    "trait": "Timid"
+  },
+  "The Black Avenger": {
+    "areas": "Mementos Depths",
+    "lvl": 62,
+    "persona": "Chernobog",
+    "race": "Death",
+    "resists": "-swdn---wr",
+    "trait": "Gloomy"
+  },
+  "The Blackened Fury": {
+    "areas": "Shido's Palace",
+    "lvl": 63,
+    "persona": "Kali",
+    "race": "Empress",
+    "resists": "-rn---r--s",
+    "trait": "Irritable"
+  },
+  "The Shadowed One": {
+    "areas": "??? Palace",
+    "lvl": 77,
+    "persona": "Scathach",
+    "race": "Priestess",
+    "resists": "---nr----n",
+    "trait": "Irritable"
+  },
+  "Thief of Tablets": {
+    "areas": "Futaba's Palace",
+    "lvl": 25,
+    "persona": "Anzu",
+    "race": "Hierophant",
+    "resists": "-w--sr-w--",
+    "trait": "Irritable"
+  },
+  "Throbbing King of Desires": {
+    "areas": "Qliphoth World",
+    "lvl": 73,
+    "persona": "Mara",
+    "race": "Tower",
+    "resists": "-nd---r-sn",
+    "trait": "Irritable"
+  },
+  "Thunder Emperor": {
+    "areas": "Mementos Depths",
+    "lvl": 64,
+    "persona": "Thor",
+    "race": "Chariot",
+    "resists": "s---n---ss",
+    "trait": "Upbeat"
+  },
+  "Torn King of Desires": {
+    "areas": "Qliphoth World",
+    "lvl": 60,
+    "persona": "-",
+    "race": "Tower",
+    "resists": "--sww--sws",
+    "trait": "Irritable"
+  },
+  "Troublesome Maid": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 6,
+    "persona": "Silky",
+    "race": "Priestess",
+    "resists": "--wsw-----",
+    "trait": "Gloomy"
+  },
+  "Twilight Prostitute": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 7,
+    "persona": "Succubus",
+    "race": "Moon",
+    "resists": "--s--w--wn",
+    "trait": "Irritable"
+  },
+  "Twin-Headed Guardian": {
+    "areas": "Kaneshiro's Palace",
+    "lvl": 21,
+    "persona": "Orthrus",
+    "race": "Hanged",
+    "resists": "--dw---s--",
+    "trait": "Gloomy"
+  },
+  "Unfaithful Dream-King": {
+    "areas": "Shido's Palace",
+    "lvl": 66,
+    "persona": "Oberon",
+    "race": "Emperor",
+    "resists": "----s-nw--",
+    "trait": "Irritable"
+  },
+  "Vampire Moth": {
+    "areas": "Okumura's Palace",
+    "lvl": 33,
+    "persona": "Mothman",
+    "race": "Moon",
+    "resists": "-w--n-s---",
+    "trait": "Timid"
+  },
+  "Vicious Pentagram": {
+    "areas": "Okumura's Palace",
+    "lvl": 32,
+    "persona": "Decarabia",
+    "race": "Consultant",
+    "resists": "w-r----s-s",
+    "trait": "Gloomy"
+  },
+  "Wandering Reviver": {
+    "areas": "??? Palace",
+    "lvl": 74,
+    "persona": "Nebiros",
+    "race": "Devil",
+    "resists": "s-----n-wn",
+    "trait": "Timid"
+  },
+  "Waterside Nymph": {
+    "areas": "Madarame's Palace",
+    "lvl": 11,
+    "persona": "Apsaras",
+    "race": "Priestess",
+    "resists": "--wsw-----",
+    "trait": "Timid"
+  },
+  "Wishless Star": {
+    "areas": "Okumura's Palace",
+    "lvl": 36,
+    "persona": "Kaiwan",
+    "race": "Star",
+    "resists": "-n----nw--",
+    "trait": "Timid"
+  },
+  "Woman who brings Ruin": {
+    "areas": "Okumura's Palace",
+    "lvl": 32,
+    "persona": "Lilim",
+    "race": "Devil",
+    "resists": "---s-w--wn",
+    "trait": "Gloomy"
+  },
+  "Zealous Messenger": {
+    "areas": "Kamoshida's Palace",
+    "lvl": 9,
+    "persona": "Angel",
+    "race": "Justice",
+    "resists": "-w--s---nw",
+    "trait": "Irritable"
   }
 }
