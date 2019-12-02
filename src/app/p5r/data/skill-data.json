@@ -1,6 +1,11 @@
 {
+  "Abysmal Surge": {
+    "cost": 1008,
+    "effect": "Inflict Despair (medium odds) to all foes.",
+    "element": "ailment"
+  },
   "Abyssal Gaze": {
-    "cost": 1099,
+    "cost": 1050,
     "effect": "Deal severe Almighty damage to all foes.",
     "element": "almighty",
     "unique": "Hastur"
@@ -61,6 +66,11 @@
     "effect": "Doubles effectiveness of absorption skills",
     "element": "trait"
   },
+  "Brain Jack": {
+    "cost": 1008,
+    "effect": "Inflict Brainwash (medium odds) to all foes.",
+    "element": "ailment"
+  },
   "Brave Step": {
     "cost": 1016,
     "effect": "Increase critical rate for all allies.",
@@ -80,7 +90,7 @@
     "element": "trait"
   },
   "Champion Cup": {
-    "cost": 1099,
+    "cost": 1010,
     "effect": "Diarama + Tarukaja",
     "element": "support",
     "fuse": "Kamoshida Ishi",
@@ -93,7 +103,7 @@
     "fuse": "Jazz 9/4"
   },
   "Charge All": {
-    "cost": 1060,
+    "cost": 1080,
     "effect": "Multiply all allies' next Phys attack damage by 2.5.",
     "element": "support",
     "unique": "William"
@@ -120,7 +130,7 @@
     "fuse": "Jazz 9/25"
   },
   "Concentrate All": {
-    "cost": 1060,
+    "cost": 1080,
     "effect": "Multiply all allies' next Magic attack damage by 2.5.",
     "element": "support",
     "unique": "Celestine"
@@ -163,12 +173,17 @@
     "element": "trait",
     "unique": "Ella"
   },
+  "Dazzler": {
+    "cost": 1003,
+    "effect": "Inflict Dizzy (high odds) to 1 foe.",
+    "element": "ailment"
+  },
   "Deadly Plague": {
     "effect": "Increases success rate of instant death skills",
     "element": "trait"
   },
   "Death Scythe": {
-    "cost": 99,
+    "cost": 20,
     "effect": "Deal severe Phys damage and inflict Fear (medium odds) to 1 foe.",
     "element": "phys"
   },
@@ -192,6 +207,11 @@
     "element": "trait",
     "unique": "Izanagi"
   },
+  "Dormina": {
+    "cost": 1003,
+    "effect": "Inflict Sleep (high odds) to 1 foe.",
+    "element": "ailment"
+  },
   "Double Shot": {
     "cost": 12,
     "effect": "Deal 2 times light Gun damage to 1 foe.",
@@ -210,6 +230,11 @@
     "effect": "Allows use of ambush-only skills under normal conditions",
     "element": "trait"
   },
+  "Elec Break": {
+    "cost": 1006,
+    "effect": "Negate Electric resistances of all foes.",
+    "element": "support"
+  },
   "Elec Lineage": {
     "effect": "Halves costs of Elec skills",
     "element": "trait"
@@ -218,12 +243,22 @@
     "effect": "Extends buffs cast on self by 2 turns",
     "element": "trait"
   },
+  "Evil Smile": {
+    "cost": 1008,
+    "effect": "Inflict Fear (medium odds) to all foes.",
+    "element": "ailment"
+  },
+  "Evil Touch": {
+    "cost": 1003,
+    "effect": "Inflict Fear (high odds) to 1 foe.",
+    "element": "ailment"
+  },
   "Exquisite Technique": {
     "effect": "Strengthens technical damage by 25%",
     "element": "trait"
   },
   "False Painting": {
-    "cost": 1099,
+    "cost": 1022,
     "effect": "Absorbs any non-almighty attack once + Removes weakness",
     "element": "support",
     "fuse": "Madarame Ishi",
@@ -233,6 +268,11 @@
     "effect": "High chance to evade Phys attacks for all allies",
     "element": "trait",
     "unique": "Gorokichi"
+  },
+  "Fire Break": {
+    "cost": 1006,
+    "effect": "Negate Fire resistances of all foes.",
+    "element": "support"
   },
   "Fire Lineage": {
     "effect": "Halves costs of Fire skills",
@@ -264,15 +304,15 @@
     "unique": "William"
   },
   "Gambler Intuition": {
-    "cost": 1099,
+    "cost": 1020,
     "effect": "Masukukaja + Begin battle with Concentrate",
     "element": "support",
     "fuse": "Niijima Ishi",
     "unique": "Niijima Ishi"
   },
   "Gattling Blows": {
-    "cost": 99,
-    "effect": "Deal 2 to 4 times medium Phys damage to all foes.",
+    "cost": 16,
+    "effect": "Deal 3 to 4 times light Phys damage to 1 foe.",
     "element": "phys"
   },
   "Goblet of Sin": {
@@ -284,7 +324,7 @@
     "element": "trait"
   },
   "Guiding Tentacle": {
-    "cost": 1099,
+    "cost": 1054,
     "effect": "Life Aid + Down all foes",
     "element": "support",
     "fuse": "??? Ishi",
@@ -330,6 +370,11 @@
   "Hunting Premonition": {
     "effect": "Reduces costs of Elec skills by 75%",
     "element": "trait"
+  },
+  "Ice Break": {
+    "cost": 1006,
+    "effect": "Negate Ice resistances of all foes.",
+    "element": "support"
   },
   "Ice Lineage": {
     "effect": "Halves costs of Ice skills",
@@ -378,13 +423,28 @@
     "effect": "Extends buffs cast on allies by 2 turns",
     "element": "trait"
   },
+  "Lullaby": {
+    "cost": 1008,
+    "effect": "Inflict Sleep (medium odds) to all foes.",
+    "element": "ailment"
+  },
   "Majestic Aura": {
     "effect": "Doubles effectiveness and decreases costs of Recovery skills for all allies",
     "element": "trait",
     "unique": "Diego"
   },
+  "Makajam": {
+    "cost": 1003,
+    "effect": "Inflict Forget (high odds) to 1 foe.",
+    "element": "ailment"
+  },
+  "Makajamaon": {
+    "cost": 1008,
+    "effect": "Inflict Forget (medium odds) to all foes.",
+    "element": "ailment"
+  },
   "Makarakarn": {
-    "cost": 1036,
+    "cost": 1024,
     "effect": "Create a shield on 1 ally to repel 1 magical attack.",
     "element": "support",
     "fuse": "Jazz 10/30"
@@ -401,6 +461,11 @@
     "element": "support",
     "fuse": "Jazz 8/14 11/13"
   },
+  "Marin Karin": {
+    "cost": 1003,
+    "effect": "Inflict Brainwash (high odds) to 1 foe.",
+    "element": "ailment"
+  },
   "Masquerade": {
     "cost": 25,
     "effect": "Deal 2 times severe Phys damage to 1 foe.",
@@ -408,7 +473,7 @@
     "unique": "Ella"
   },
   "Mastermind Authority": {
-    "cost": 1099,
+    "cost": 1015,
     "effect": "Defense Master + Charge on Ally",
     "element": "support",
     "fuse": "??? Ishi",
@@ -480,6 +545,16 @@
     "element": "trait",
     "unique": "Zorro"
   },
+  "Nocturnal Flash": {
+    "cost": 1008,
+    "effect": "Inflict Dizzy (medium odds) to all foes.",
+    "element": "ailment"
+  },
+  "Nuke Break": {
+    "cost": 1006,
+    "effect": "Negate Nuclear resistances of all foes.",
+    "element": "support"
+  },
   "Nuke Lineage": {
     "effect": "Halves costs of Nuke skills",
     "element": "trait"
@@ -503,8 +578,13 @@
     "element": "trait",
     "unique": "Athena"
   },
+  "Ominous Words": {
+    "cost": 1003,
+    "effect": "Inflict Despair (high odds) to 1 foe.",
+    "element": "ailment"
+  },
   "Oni Whisper": {
-    "effect": "Reduces costs of Phys skills by 75%",
+    "effect": "Doubles effectiveness of HP regeneration skills",
     "element": "trait"
   },
   "Pandemic Gaze": {
@@ -520,7 +600,7 @@
     "element": "trait"
   },
   "Phantom Show": {
-    "cost": 4,
+    "cost": 1004,
     "effect": "Inflict Sleep (high odds) to all foes.",
     "element": "ailment",
     "unique": "Raoul"
@@ -531,15 +611,25 @@
     "element": "phys"
   },
   "President Intuition": {
-    "cost": 1099,
+    "cost": 1015,
     "effect": "Attack Master + Concentrate on Ally",
     "element": "support",
     "fuse": "Okumura Ishi",
     "unique": "Okumura Ishi"
   },
+  "Psy Break": {
+    "cost": 1006,
+    "effect": "Negate Psy resistances of all foes.",
+    "element": "support"
+  },
   "Psy Lineage": {
     "effect": "Halves costs of Psy skills",
     "element": "trait"
+  },
+  "Pulinpa": {
+    "cost": 1003,
+    "effect": "Inflict Confuse (high odds) to 1 foe.",
+    "element": "ailment"
   },
   "Reaper's Despair": {
     "effect": "Reduces costs of Curse skills by 75%",
@@ -559,7 +649,7 @@
     "unique": "Goemon"
   },
   "Saintly Devotion": {
-    "cost": 1099,
+    "cost": 1026,
     "effect": "Revive and fully restore HP for all allies.",
     "element": "healing",
     "unique": "Maria"
@@ -617,8 +707,18 @@
     "effect": "Triples damage from Charge skills",
     "element": "trait"
   },
+  "Taunt": {
+    "cost": 1003,
+    "effect": "Inflict Rage (high odds) to 1 foe.",
+    "element": "ailment"
+  },
+  "Tentarafoo": {
+    "cost": 1008,
+    "effect": "Inflict Confuse (medium odds) to all foes.",
+    "element": "ailment"
+  },
   "Tetrakarn": {
-    "cost": 1036,
+    "cost": 1024,
     "effect": "Create a shield on 1 ally to repel 1 Phys attack.",
     "element": "support",
     "fuse": "Jazz 10/2"
@@ -653,11 +753,16 @@
     "element": "trait"
   },
   "Vault Guardian": {
-    "cost": 1099,
+    "cost": 1020,
     "effect": "Marakukaja + Begin battle with Tetrakarn and Makarakarn",
     "element": "support",
     "fuse": "Kaneshiro Ishi",
     "unique": "Kaneshiro Ishi"
+  },
+  "Wage War": {
+    "cost": 1008,
+    "effect": "Inflict Rage (medium odds) to all foes.",
+    "element": "ailment"
   },
   "Wargod's Wrath": {
     "effect": "Reduces costs of Psy skills by 75%",
@@ -668,12 +773,17 @@
     "element": "trait",
     "unique": "Captain Kidd"
   },
+  "Wind Break": {
+    "cost": 1006,
+    "effect": "Negate Wind resistances of all foes.",
+    "element": "support"
+  },
   "Wind Lineage": {
     "effect": "Halves costs of Wind skills",
     "element": "trait"
   },
   "Wings of Wisdom": {
-    "cost": 1099,
+    "cost": 1010,
     "effect": "Speed Master + Amrita Shower",
     "element": "support",
     "fuse": "Futaba Ishi",
