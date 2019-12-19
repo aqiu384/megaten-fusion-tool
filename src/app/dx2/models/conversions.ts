@@ -27,7 +27,9 @@ const SPECIAL_FUSION_COSTS = {
   'Alilat': 500000 / 4,
   'Parvati': 840000 / 3,
   'Cybele': 1500000 / 3,
-  'Kartikeya': 1500000 / 3
+  'Baal': 1500000 / 3,
+  'Kartikeya': 1500000 / 3,
+  'Neko Shogun': 840000 / 4
 }
 
 function estimateMagCost(grade1, grade2, gradeR): number {

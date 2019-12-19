@@ -94,10 +94,8 @@ export class Compendium implements ICompendium {
           level: 0
         };
 
-        if (json['talk']) {
-          skills[name].transfer = [{ demon: json['talk'], level: 100 }];
-        } else if (json['fuse'] && !demons[json['fuse']]) {
-          skills[name].transfer = [{ demon: json['fuse'], level: -100 }];
+        if (json['card']) {
+          skills[name].transfer = [{ demon: json['card'], level: -100 }];
         }
 
         if (json['unique']) {
@@ -126,6 +124,17 @@ export class Compendium implements ICompendium {
 
     for (const race of this.compConfig.races) {
       inversions[race] = {};
+    }
+
+    for (const demon of Object.values(enemies)) {
+      if (demon.drop) {
+        const items = demon.drop.split(', ');
+        const item = items[items.length - 1];
+
+        if (skills[item]) {
+          skills[item].transfer.unshift({ demon: demon.persona, level: 100 });
+        }
+      }
     }
 
     for (const [name, demon] of Object.entries(demons)) {

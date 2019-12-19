@@ -16,7 +16,7 @@
     "base": ["Binge Eating", "Death Counter", "Lord of the Abyss"],
     "cnum": 0,
     "gach": ["Fire Boost", "Life Gain", "Hellish Mask", "Resist Elec"],
-    "grade": 61,
+    "grade": 60.1,
     "race": "Tyrant",
     "resists": "nr-w---",
     "stats": [1220, 181, 160, 181, 66, 160]
@@ -408,9 +408,9 @@
   },
   "Black Rider": {
     "ai": "atk",
-    "arch": ["Magic Amp III", "Glacial Blast", "Mind Blast", "Auto-Tarunda", "Null Fire"],
+    "arch": ["Vitality Amp III", "Glacial Blast", "Mind Blast", "Auto-Tarunda", "Null Fire"],
     "base": ["Bufudyne", "Famine", "Soul Divide"],
-    "cnum": 0,
+    "cnum": 241,
     "gach": ["Ice Amp", "Epitome of Fortitude", "Ice Age", "Enduring Soul"],
     "grade": 82,
     "race": "Fiend",
@@ -654,7 +654,7 @@
     "ai": "atk",
     "arch": ["Toxic Cloud", "Binge Eating", "War Cry", "Enduring Soul", "Repel Elec"],
     "base": ["Blight", "Dragon Sense", "Golden Greed"],
-    "cnum": 0,
+    "cnum": 237,
     "gach": ["Strength Amp III", "Bleeder", "Death Counter", "Dmg Panel Immunity"],
     "grade": 81,
     "race": "Drake",
@@ -704,11 +704,22 @@
     "resists": "--dw--n",
     "stats": [1197, 176, 117, 176, 80, 136]
   },
+  "Frost Ace": {
+    "ai": "atk",
+    "arch": ["Mahamaon", "Mabufula", "War Dance", "Master Assassin", "Null Dark"],
+    "base": ["Ice Boost", "Icy Rage", "Vengeful Frost Fist"],
+    "cnum": 244,
+    "gach": ["Ice Enhancement", "Mabufudyne", "Mana Aid", "Infernal Mask"],
+    "grade": 80,
+    "race": "Genma",
+    "resists": "-rr--sw",
+    "stats": [1056, 106, 190, 146, 153, 146]
+  },
   "Gabriel": {
     "ai": "atk",
     "arch": ["Ziodyne", "Mahamadyne", "Concentrate", "Elec Enhancement", "Repel Dark"],
     "base": ["Thunder Reign", "God's Word", "Ascension"],
-    "cnum": 231,
+    "cnum": 233,
     "gach": ["Light Enhancement", "Auto-Sukunda", "Maziodyne", "Null Charm"],
     "grade": 88,
     "race": "Herald",
@@ -736,6 +747,17 @@
     "race": "Avian",
     "resists": "-rw-ns-",
     "stats": [783, 68, 190, 88, 256, 157]
+  },
+  "Garuda A": {
+    "ai": "atk",
+    "arch": ["Magic Amp III", "Mazandyne", "Agile Cry", "Butcher", "Null Ice"],
+    "base": ["Force Amp", "Brilliant Wings", "Gale Talon"],
+    "cnum": 0,
+    "gach": ["Merciless Blow", "Evade", "Speedster", "Auto-Sukuka"],
+    "grade": 80.1,
+    "race": "Avian",
+    "resists": "-rw-ds-",
+    "stats": [915, 68, 200, 116, 208, 157]
   },
   "Girimehkala": {
     "ai": "atk",
@@ -1716,6 +1738,17 @@
     "resists": "-wssw-w",
     "stats": [1277, 163, 71, 193, 112, 125]
   },
+  "Neko Shogun": {
+    "ai": "sup",
+    "arch": ["Mahamakajam", "Shock", "Samarecarm", "Wild Instinct", "Repel Light"],
+    "base": ["Mediarama", "Mazionga", "Shogun's Order"],
+    "cnum": 243,
+    "gach": [],
+    "grade": 61,
+    "race": "Enigma",
+    "resists": "s--rwnn",
+    "stats": [1028, 74, 170, 140, 164, 160]
+  },
   "Nekomata": {
     "ai": "sup",
     "arch": ["Sukukaja", "Zanma", "Amrita", "Resist Charm", "Resist Ice"],
@@ -1774,7 +1807,7 @@
     "ai": "atk",
     "arch": ["Vitality Amp III", "Megaton Press", "Fog Breath", "Wild Instinct", "Null Elec"],
     "base": ["Binge Eating", "Enduring Soul", "Nastrond"],
-    "cnum": 0,
+    "cnum": 235,
     "gach": ["Power Hit", "Life Gain", "Muscle Punch", "Resist Light"],
     "grade": 72,
     "race": "Drake",
@@ -1909,9 +1942,9 @@
   },
   "Pale Rider": {
     "ai": "atk",
-    "arch": ["Magic Amp III", "Mazandyne", "Debilitate", "Auto-Rakunda", "Null Elec"],
+    "arch": ["Luck Amp III", "Mazandyne", "Debilitate", "Auto-Rakunda", "Null Elec"],
     "base": ["Zandyne", "Plague", "Pestilence"],
-    "cnum": 0,
+    "cnum": 242,
     "gach": ["Force Amp", "Epitome of Madness", "Killing Wind", "Enduring Soul"],
     "grade": 84,
     "race": "Fiend",
@@ -2130,7 +2163,7 @@
     "stats": [948, 122, 174, 122, 146, 152]
   },
   "Raphael": {
-    "ai": "atk",
+    "ai": "rec",
     "arch": ["Mediarama", "Mahamadyne", "Prayer", "Force Enhancement", "Repel Dark"],
     "base": ["Thunderclap", "God's Blessing", "Tailwind"],
     "cnum": 232,
@@ -2144,7 +2177,7 @@
     "ai": "atk",
     "arch": ["Strength Amp III", "Fatal Sword", "Charge", "Auto-Sukunda", "Null Ice"],
     "base": ["Savage Glee", "Bloodshed", "Blade of Terror"],
-    "cnum": 0,
+    "cnum": 240,
     "gach": ["Phys Amp", "Epitome of Carnage", "God's Hand", "Enduring Soul"],
     "grade": 80,
     "race": "Fiend",
@@ -2227,9 +2260,9 @@
   },
   "Seraph": {
     "ai": "atk",
-    "arch": ["Merciless Blow"],
+    "arch": ["Merciless Blow", "Thunder Reign", "Salvation", "Light Enhancement", "Repel Elec"],
     "base": ["Trisagion", "Thunderclap", "Garden of Eden"],
-    "cnum": 0,
+    "cnum": 239,
     "grade": 95,
     "race": "Herald",
     "resists": "sdw-sds",
@@ -2315,7 +2348,7 @@
     "base": ["Serial Killer", "Ishvara", "Third Eye"],
     "cnum": 0,
     "gach": ["Null Mute", "Great Aim", "Mana Aid", "Null Charm"],
-    "grade": 94,
+    "grade": 93.1,
     "race": "Fury",
     "resists": "sd-dw--",
     "stats": [1032, 91, 229, 141, 160, 151]
@@ -2428,6 +2461,17 @@
     "resists": "sw--d--",
     "stats": [971, 235, 106, 127, 133, 147]
   },
+  "Susano-o A": {
+    "ai": "atk",
+    "arch": ["Strength Amp III", "Vorpal Blade", "War Cry", "Master Assassin", "Drain Phys"],
+    "base": ["Epitome of Carnage", "Heavenly Valor", "Violent Slash"],
+    "cnum": 0,
+    "gach": ["Wild Instinct", "Epitome of Aggression", "Null Bind", "Null Fire"],
+    "grade": 82.1,
+    "race": "Fury",
+    "resists": "nw--d--",
+    "stats": [1107, 235, 68, 157, 154, 147]
+  },
   "Take-Minakata": {
     "ai": "atk",
     "arch": ["Elec Boost", "Shock", "Meparaladi", "Mana Bonus", "Resist Dark"],
@@ -2475,7 +2519,7 @@
     "ai": "atk",
     "arch": ["Megidola", "Bufudyne", "Silent Prayer", "Mana Aid", "Drain Ice"],
     "base": ["Mabufula", "Ice Boost", "Ice Breath"],
-    "cnum": 0,
+    "cnum": 234,
     "gach": ["Magic Amp II", "Resist Charm", "Megido", "Bufula"],
     "grade": 58,
     "race": "Drake",
@@ -2552,7 +2596,7 @@
     "ai": "atk",
     "arch": ["Agidyne", "Thunderclap", "Concentrate", "Fire Enhancement", "Repel Dark"],
     "base": ["Mahamadyne", "God's Fire", "Sunrise"],
-    "cnum": 233,
+    "cnum": 231,
     "gach": ["Light Enhancement", "Auto-Rakunda", "Trisagion", "Null Mute"],
     "grade": 86,
     "race": "Herald",
@@ -2596,7 +2640,7 @@
     "ai": "atk",
     "arch": ["Ice Age", "Mabufudyne", "Concentrate", "Butcher", "Null Fire"],
     "base": ["Insanity", "Ice Boost", "Halahala"],
-    "cnum": 0,
+    "cnum": 238,
     "gach": ["Ice Age", "Sea of Chaos", "Deadly Poison", "Null Poison"],
     "grade": 86,
     "race": "Drake",
@@ -2694,7 +2738,7 @@
     "ai": "atk",
     "arch": ["Bufudyne", "Glacial Blast", "Sea of Chaos", "Back Attack", "Drain Ice"],
     "base": ["Ice Boost", "Mabufula", "Judgement of Nahar"],
-    "cnum": 0,
+    "cnum": 236,
     "gach": ["Bufudyne", "Soul Drain", "Enduring Soul", "Resist Force"],
     "grade": 77,
     "race": "Drake",

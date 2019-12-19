@@ -270,6 +270,10 @@
     "power": 40,
     "target": "All Foes"
   },
+  "Brilliant Wings": {
+    "effect": "Force Pierce, Casts Mazan + 2-turn Sukunda when Ally evades Phys atk",
+    "elem": "pas"
+  },
   "Bufu": {
     "cost": 4,
     "elem": "ice",
@@ -885,6 +889,13 @@
     "power": 50,
     "target": "Rand Foes"
   },
+  "Gale Talon": {
+    "cost": 6,
+    "effect": "4 hits, 2nd cast 6 hits, 3rd cast 8 hits",
+    "elem": "for",
+    "power": 40,
+    "target": "Rand Foes"
+  },
   "Garden of Eden": {
     "effect": "Ally dmg +10% when striking Foe weakness and dmg -10% when own weakness struck",
     "elem": "pas"
@@ -1060,6 +1071,10 @@
     "power": 85,
     "target": "All Foes"
   },
+  "Heavenly Valor": {
+    "effect": "Phys Pierce, Cast Heat Wave when Foe passes",
+    "elem": "pas"
+  },
   "Hell Claw": {
     "cost": 5,
     "effect": "3 hits, 30% crit",
@@ -1138,6 +1153,11 @@
     "power": 45,
     "target": "Rand Foes"
   },
+  "Ice Enhancement": {
+    "effect": "Ice dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
+  },
   "Ice Pierce": {
     "effect": "Ice atks bypass Foe resists",
     "elem": "pas",
@@ -1147,6 +1167,10 @@
     "effect": "Ice atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Icy Rage": {
+    "effect": "Ally Ice dmg +10%",
+    "elem": "pas"
   },
   "Ignite": {
     "effect": "Every 2nd turn, casts Maragidyne and Rakunda",
@@ -2520,6 +2544,10 @@
     "power": 45,
     "target": "Rand Foes"
   },
+  "Shogun's Order": {
+    "effect": "Casts Sukukaja for 1 turn when Foe Muted",
+    "elem": "pas"
+  },
   "Silent Prayer": {
     "cost": 7,
     "effect": "Cures all ailments",
@@ -2800,6 +2828,20 @@
     "elem": "ail",
     "points": 7,
     "target": "Rand Foes"
+  },
+  "Vengeful Frost Fist": {
+    "cost": 5,
+    "effect": "Phys Ice dmg scales off Matk, Casts Rebellion upon hit",
+    "elem": "ice",
+    "power": 130,
+    "target": "1 Foe"
+  },
+  "Violent Slash": {
+    "cost": 6,
+    "effect": "30% crit, 2nd cast 180 dmg + 50% crit + Nullify endure effects, 3rd cast 220 dmg + 80% crit + Nullify counter effects",
+    "elem": "phy",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Vitality Amp I": {
     "effect": "Vitality +5",
