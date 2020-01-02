@@ -260,6 +260,10 @@
     "effect": "Deal weak Phys damage to 1 foe.",
     "element": "phys"
   },
+  "Climate Decorum": {
+    "effect": "Greatly increase evasion under rainy day or special weather warning.",
+    "element": "passive"
+  },
   "Concentrate": {
     "card": "Jazz 9/25",
     "cost": 1015,
@@ -269,6 +273,11 @@
   "Confuse Boost": {
     "effect": "Increase chance of inflicting Confuse.",
     "element": "passive"
+  },
+  "Cornered Fang": {
+    "cost": 10,
+    "effect": "Deal medium Phys damage to 1 foe. More powerful when being ambushed.",
+    "element": "phys"
   },
   "Cosmic Flare": {
     "cost": 1054,
@@ -1325,10 +1334,6 @@
     "effect": "Increase chance of inflicting Rage.",
     "element": "passive"
   },
-  "Rainy Play": {
-    "effect": "Greatly increase evasion under rainy day or special weather warning.",
-    "element": "passive"
-  },
   "Rakukaja": {
     "card": "CJ Sky Tree",
     "cost": 1008,
@@ -1343,11 +1348,6 @@
   "Rampage": {
     "cost": 13,
     "effect": "Deal 1 to 3 times weak Phys damage to all foes.",
-    "element": "phys"
-  },
-  "Rat Fang": {
-    "cost": 10,
-    "effect": "Deal medium Phys damage to 1 foe. More powerful when being ambushed.",
     "element": "phys"
   },
   "Rebellion": {
