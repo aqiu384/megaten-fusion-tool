@@ -154,6 +154,13 @@
     "elem": "pas",
     "points": 12
   },
+  "Barbed Spear": {
+    "cost": 6,
+    "effect": "3 hits, 0% crit, Force Pierce, Dmg scales with Patk, Nullifies counter effects",
+    "elem": "for",
+    "power": 35,
+    "target": "All Foes"
+  },
   "Barong Dance": {
     "cost": 7,
     "effect": "Recover HP + Luster Candy, 3 uses",
@@ -360,6 +367,10 @@
     "effect": "50% chance to counter with 50 Phys dmg when receiving Phys dmg",
     "elem": "pas",
     "points": 6
+  },
+  "Culann's Hound": {
+    "effect": "Phys Pierce, Casts Charge at end of turn",
+    "elem": "pas"
   },
   "Curse of Anguish": {
     "effect": "Dmg dealt +15%, Dmg received -15% from Cursed Foes",
@@ -698,6 +709,10 @@
     "elem": "pas",
     "points": 6
   },
+  "Endless War": {
+    "effect": "Phys Pierce, Crit hit +20% and Crit dmg +10% to all Allies",
+    "elem": "pas"
+  },
   "Enduring Soul": {
     "effect": "Revive once per battle with 200 HP",
     "elem": "pas",
@@ -740,6 +755,11 @@
     "elem": "pas",
     "points": 16
   },
+  "Epitome of Swiftness": {
+    "effect": "Battle Speed +25%, Phys Eva +10%",
+    "elem": "pas",
+    "points": 16
+  },
   "Euphoric Frenzy": {
     "effect": "Counter Phys damage with 50% Charm",
     "elem": "pas"
@@ -760,6 +780,11 @@
   "Faith in Wealth": {
     "effect": "HP +10%, Allies recover 1 MP for every Press Turn lost to Foe skills",
     "elem": "pas"
+  },
+  "Faithful Counter": {
+    "effect": "100% chance to counter with 100 Phys dmg when receiving Phys dmg",
+    "elem": "pas",
+    "points": 18
   },
   "Famine": {
     "effect": "At end of enemy phase, Reduce all Foe HP by 10% current (<200) and remove 1 MP",
@@ -994,6 +1019,10 @@
     "effect": "Casts 30 Almighty dmg x4 hits to Random Foes when Ally uses regular attack",
     "elem": "pas",
     "target": "Rand Foes"
+  },
+  "Guardian of the East": {
+    "effect": "Phys Pierce, Add 1 press turn when attacking first",
+    "elem": "pas"
   },
   "Guards of Tartarus": {
     "effect": "Ally Multi-target dmg received -15%",
@@ -1255,6 +1284,13 @@
     "elem": "for",
     "power": 180,
     "target": "1 Foe"
+  },
+  "Kuyo Flash": {
+    "cost": 7,
+    "effect": "Mag dmg, scales with Patk, Rakunda + Sukunda + Tarukaja + Sukukaja for 1 turn",
+    "elem": "alm",
+    "power": 80,
+    "target": "All Foes"
   },
   "Law of Hell": {
     "effect": "Nullify Foe Press Turn bonus when Ally weakness struck",
@@ -2558,6 +2594,13 @@
   "Skanda": {
     "effect": "Ally Phys acc +15% and Crit rate +20%",
     "elem": "pas"
+  },
+  "Slaughter All": {
+    "cost": 7,
+    "effect": "30% crit, Dmg scales with Patk, Nullifies endure effects",
+    "elem": "alm",
+    "power": 210,
+    "target": "1 Foe"
   },
   "Soul Divide": {
     "effect": "After Foe casts recovery magic, Reduce Foe HP by 50% current (<2000)",
