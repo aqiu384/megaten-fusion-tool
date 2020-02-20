@@ -38,6 +38,12 @@
     "effect": "Doubles damage from Counter skills",
     "element": "trait"
   },
+  "Black Viper": {
+    "cost": 1048,
+    "effect": "Deal severe Almighty damage to 1 foe.",
+    "element": "almighty",
+    "unique": "Satan"
+  },
   "Blade of Rebellion": {
     "cost": 1099,
     "effect": "Deal severe Almighty damage to 1 for with extra effectiveness if down.",
@@ -93,7 +99,7 @@
     "unique": "William"
   },
   "Charging Bull": {
-    "effect": "Scales damage dealt against lost HP",
+    "effect": "Scales damage dealt against lost HP under 50%",
     "element": "trait",
     "unique": "Asterius"
   },
@@ -166,7 +172,7 @@
     "element": "phys"
   },
   "Demon Kingdom": {
-    "effect": "Strengthen all magical attacks by 50%.",
+    "effect": "Strengthen all attacks by 25%.",
     "element": "passive",
     "unique": "Satanel"
   },
@@ -488,7 +494,7 @@
     "element": "trait"
   },
   "Offered Hand": {
-    "effect": "Allows use of consumables without expending them after Baton Pass",
+    "effect": "Chance to use consumables without expending them after Baton Pass",
     "element": "trait",
     "unique": "Ariadne"
   },
@@ -498,7 +504,7 @@
     "unique": "Messiah"
   },
   "Olive Grace": {
-    "effect": "Halves costs of skills after Baton Pass",
+    "effect": "Reduces costs of skills to 0 after Baton Pass",
     "element": "trait",
     "unique": "Athena"
   },
@@ -574,7 +580,7 @@
   },
   "Saintly Devotion": {
     "cost": 1026,
-    "effect": "Revive and fully restore HP for all allies.",
+    "effect": "Revive all allies with all HP recovered.",
     "element": "healing",
     "unique": "Maria"
   },
@@ -584,7 +590,7 @@
     "unique": "Maria"
   },
   "Saintly Words": {
-    "effect": "Recover 15% max HP and SP each turn in battle.",
+    "effect": "Recover 15% max HP and 15 SP each turn in battle.",
     "element": "passive",
     "unique": "Maria"
   },
@@ -650,6 +656,11 @@
     "effect": "Moral Support may activate simultaneous effects",
     "element": "passive",
     "unique": "Al Azif"
+  },
+  "Unshaken Will": {
+    "effect": "Impart immunity against Confuse, Fear, and Rage.",
+    "element": "passive",
+    "unique": "Asura"
   },
   "Unstoppable Hacking": {
     "effect": "Restores 100% after Futaba's All-Out Attack for all allies",
