@@ -67,6 +67,9 @@ for (const [demon, entry] of Object.entries(PSYCHE_JSON)) {
 
 for (const [demon, recipe] of Object.entries(PAIR_SPECIAL_RECIPES_JSON)) {
   VAN_SPECIAL_RECIPES_JSON[demon] = recipe;
+}
+
+for (const [demon, recipe] of Object.entries(VAN_SPECIAL_RECIPES_JSON)) {
   FES_SPECIAL_RECIPES_JSON[demon] = recipe;
 }
 

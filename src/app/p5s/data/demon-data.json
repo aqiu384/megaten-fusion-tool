@@ -1,12 +1,30 @@
 {
+  "Abaddon": {
+    "inherits": "curse",
+    "lvl": 66,
+    "race": "Judgement",
+    "resists": "sn----wwsd",
+    "skills": {"Deathbound": 0, "Brain Buster": 0, "Maeigaon": 0, "Defense Master": 99},
+    "stats": [45, 37, 49, 36, 38]
+  },
+  "Alice": {
+    "inherits": "curse",
+    "lvl": 75,
+    "race": "Death",
+    "resists": "------sswd",
+    "skills": {"Mamudoon": 0, "Megidolaon": 0, "Concentrate": 0, "Survival Trick": 99},
+    "stats": [41, 55, 39, 54, 43]
+  },
   "Ame-no-Uzume": {
+    "inherits": "ice",
     "lvl": 23,
     "race": "Lovers",
     "resists": "--d---w---",
-    "skills": {"Bufula": 0, "Masukukaja": 0, "Diarama": 99},
+    "skills": {"Bufula": 0, "Masukukaja": 0, "Diarama": 24, "Media": 26, "Divine Grace": 29},
     "stats": [13, 16, 16, 16, 15]
   },
   "Andras": {
+    "inherits": "ice",
     "lvl": 10,
     "race": "Devil",
     "resists": "--ws--s-wn",
@@ -14,13 +32,15 @@
     "stats": [5, 9, 7, 10, 6]
   },
   "Arahabaki": {
+    "inherits": "curse",
     "lvl": 36,
     "race": "Hermit",
     "resists": "ss-w--wwnn",
-    "skills": {},
+    "skills": {"Maeiga": 0, "Masukunda": 0, "Assault Dive": 0, "Curse Boost": 38, "Defense Master": 41},
     "stats": [22, 24, 22, 25, 22]
   },
   "Archangel": {
+    "inherits": "bless",
     "lvl": 19,
     "race": "Justice",
     "resists": "----w---dw",
@@ -28,13 +48,15 @@
     "stats": [16, 11, 16, 14, 7]
   },
   "Arsene": {
+    "inherits": "curse",
     "lvl": 1,
     "race": "Fool",
     "resists": "---w----ws",
-    "skills": {"Eiha": 0, "Cleave": 0, "Tarunda": 2, "Dream Needle": 4, "Rebel Will": 99},
+    "skills": {"Eiha": 0, "Cleave": 0, "Tarunda": 2, "Dream Needle": 4, "Rebel Will": 10, "Maeiga": 32, "One-shot Kill": 45, "Maeigaon": 62},
     "stats": [4, 4, 4, 5, 6]
   },
   "Berith": {
+    "inherits": "support",
     "lvl": 15,
     "race": "Hierophant",
     "resists": "-nsw------",
@@ -42,72 +64,127 @@
     "stats": [13, 9, 11, 13, 6]
   },
   "Bicorn": {
+    "inherits": "wind",
     "lvl": 4,
     "race": "Hermit",
     "resists": "----w---s-",
     "skills": {"Lunge": 0, "Garu": 0, "Rampage": 6, "Null Dizzy": 7},
     "stats": [5, 3, 3, 5, 3]
   },
+  "Black Frost": {
+    "inherits": "ice",
+    "lvl": 67,
+    "race": "Fool",
+    "resists": "--nd---swn",
+    "skills": {"Mabufudyne": 0, "Deathbound": 0, "Evil Smile": 0, "Soul Stealer": 99},
+    "stats": [44, 46, 41, 42, 35]
+  },
   "Black Ooze": {
+    "inherits": "curse",
     "lvl": 33,
     "race": "Moon",
     "resists": "ss-sw-w-wn",
-    "skills": {},
+    "skills": {"Matarunda": 0, "Headbutt": 0, "Eiga": 35, "Ailment Boost": 38},
     "stats": [21, 20, 22, 18, 25]
   },
-  "Crystal Skull": {
-    "inherits": "almighty",
-    "lvl": 50,
+  "Bugs": {
+    "inherits": "psy",
+    "lvl": 53,
     "race": "Fool",
-    "resists": "ss---w----",
-    "skills": {},
-    "stats": [50, 50, 50, 50, 50]
+    "resists": "-----sswwn",
+    "skills": {"Bloodbath": 0, "Masukunda": 0, "Psiodyne": 0, "Fear Boost": 99},
+    "stats": [39, 36, 32, 35, 24]
+  },
+  "Cerberus": {
+    "inherits": "fire",
+    "lvl": 57,
+    "race": "Chariot",
+    "resists": "--dw---s--",
+    "skills": {"Agidyne": 0, "Megaton Raid": 0, "Matarukaja": 0, "Speed Master": 99},
+    "stats": [41, 35, 33, 41, 28]
+  },
+  "Cu Chulainn": {
+    "inherits": "phys",
+    "lvl": 59,
+    "race": "Star",
+    "resists": "ss--wn--d-",
+    "skills": {"Dormin Rush": 0, "Oni Kagura": 0, "Speed Master": 0, "Rage Boost": 99},
+    "stats": [40, 32, 40, 40, 32]
+  },
+  "Dominion": {
+    "inherits": "bless",
+    "lvl": 62,
+    "race": "Justice",
+    "resists": "-w--w--dns",
+    "skills": {"Nocturnal Flash": 0, "Hamaon": 0, "Kougaon": 0, "Hama Boost": 99},
+    "stats": [38, 41, 39, 40, 35]
   },
   "Eligor": {
+    "inherits": "fire",
     "lvl": 31,
     "race": "Emperor",
     "resists": "--s-w----s",
-    "skills": {"Maragion": 0, "Tarukaja": 0, "Memory Blow": 0, "Rakunda": 99},
+    "skills": {"Maragion": 0, "Tarukaja": 0, "Memory Blow": 0, "Rakunda": 32, "Swift Strike": 34},
     "stats": [23, 17, 28, 16, 16]
   },
-  "Emperor's Amulet": {
-    "inherits": "almighty",
-    "lvl": 35,
+  "Forneus": {
+    "inherits": "psy",
+    "lvl": 60,
+    "race": "Hierophant",
+    "resists": "---nw-d---",
+    "skills": {"Mapsiodyne": 0, "Eigaon": 0, "Makajamaon": 0, "Psy Amp": 99},
+    "stats": [39, 37, 38, 40, 33]
+  },
+  "Fortuna": {
+    "inherits": "wind",
+    "lvl": 49,
+    "race": "Fortune",
+    "resists": "--n-wd----",
+    "skills": {"Garudyne": 0, "Matarunda": 0, "Concentrate": 0, "Amrita Drop": 50, "Evade Elec": 52, "Vacuum Wave": 99},
+    "stats": [24, 34, 31, 37, 28]
+  },
+  "Ganesha": {
+    "inherits": "nuke",
+    "lvl": 47,
+    "race": "Sun",
+    "resists": "s---wnwd-w",
+    "skills": {"Freidyne": 0, "Vajra Blast": 0, "Charge": 0, "Regenerate 2": 49, "Endure": 51, "Atomic Flare": 99},
+    "stats": [33, 28, 33, 30, 24]
+  },
+  "Hecatoncheires": {
+    "inherits": "phys",
+    "lvl": 46,
     "race": "Hanged",
-    "resists": "ss--w-----",
-    "skills": {},
-    "stats": [35, 35, 35, 35, 35]
+    "resists": "-s------wd",
+    "skills": {"Swift Strike": 0, "Tarukaja": 0, "Endure": 48, "Triple Down": 49, "Attack Master": 51},
+    "stats": [32, 28, 34, 28, 23]
   },
   "High Pixie": {
+    "inherits": "wind",
     "lvl": 16,
     "race": "Fool",
     "resists": "-w--ss-w--",
-    "skills": {"Magaru": 0, "Makajam": 0, "Media": 99},
+    "skills": {"Magaru": 0, "Makajam": 0, "Media": 18, "Garula": 20, "Recarm": 22},
     "stats": [8, 14, 10, 13, 10]
   },
-  "Hope Diamond": {
-    "inherits": "almighty",
-    "lvl": 40,
-    "race": "Death",
-    "resists": "ss-w------",
-    "skills": {},
-    "stats": [40, 40, 40, 40, 40]
-  },
   "Hua Po": {
+    "inherits": "fire",
     "lvl": 13,
     "race": "Hanged",
     "resists": "-wnw------",
-    "skills": {"Maragi": 0, "Tarunda": 0, "Amrita Drop": 14, "Null Forget": 16, "Soul Stealer": 99},
+    "skills": {"Maragi": 0, "Tarunda": 0, "Amrita Drop": 14, "Null Forget": 16, "Soul Stealer": 18},
     "stats": [5, 14, 5, 11, 11]
   },
   "Jack Frost": {
+    "inherits": "ice",
     "lvl": 24,
     "race": "Magician",
     "resists": "--wd------",
-    "skills": {"Bufula": 0, "Marakunda": 0, "Freeze Boost": 25, "Ice Boost": 99},
+    "skills": {"Bufula": 0, "Marakunda": 0, "Freeze Boost": 25, "Ice Boost": 28},
     "stats": [17, 20, 11, 20, 11]
   },
   "Jack-o'-Lantern": {
+    "inherits": "fire",
     "lvl": 2,
     "race": "Magician",
     "resists": "--dw-w----",
@@ -115,106 +192,207 @@
     "stats": [2, 3, 3, 3, 2]
   },
   "Kaiwan": {
+    "inherits": "psy",
     "lvl": 30,
     "race": "Star",
     "resists": "-n----dw--",
-    "skills": {"Concentrate": 0, "Mapsio": 0, "Dodge Nuke": 99},
+    "skills": {"Concentrate": 0, "Mapsio": 0, "Dodge Nuke": 32, "Finesse": 34},
     "stats": [19, 21, 20, 19, 18]
   },
+  "Kali": {
+    "inherits": "psy",
+    "lvl": 64,
+    "race": "Empress",
+    "resists": "--nw--n--s",
+    "skills": {"Vorpal Blade": 0, "Oni Kagura": 0, "Psiodyne": 0, "Myriad Slashes": 99},
+    "stats": [42, 38, 40, 42, 37]
+  },
   "Kikuri-Hime": {
+    "inherits": "support",
     "lvl": 40,
     "race": "Priestess",
     "resists": "--w--n--s-",
-    "skills": {},
+    "skills": {"Lullaby": 0, "Lullaby": 0, "Diarama": 0, "Mediarama": 42, "Divine Grace": 44},
     "stats": [22, 31, 24, 28, 22]
   },
-  "Koh-i-Noor": {
-    "inherits": "almighty",
-    "lvl": 25,
-    "race": "Priestess",
-    "resists": "sw--------",
-    "skills": {},
-    "stats": [25, 25, 25, 25, 25]
+  "King Frost": {
+    "inherits": "ice",
+    "lvl": 63,
+    "race": "Emperor",
+    "resists": "--wd----n-",
+    "skills": {"Bufudyne": 0, "Marakunda": 0, "Freeze Boost": 0, "Defense Master": 99},
+    "stats": [41, 46, 44, 30, 35]
   },
   "Koppa Tengu": {
+    "inherits": "wind",
     "lvl": 39,
     "race": "Temperance",
     "resists": "-w-w-s--w-",
-    "skills": {},
+    "skills": {"Magarula": 0, "One-shot Kill": 0, "Taunt": 41, "Snipe": 44},
     "stats": [23, 25, 25, 32, 19]
   },
+  "Kurama Tengu": {
+    "inherits": "wind",
+    "lvl": 52,
+    "race": "Hermit",
+    "resists": "-w-w-n--ss",
+    "skills": {"Heat Wave": 0, "Nocturnal Flash": 0, "Garudyne": 0, "Wind Boost": 54, "Marakunda": 56},
+    "stats": [32, 35, 32, 39, 25]
+  },
   "Lamia": {
+    "inherits": "fire",
     "lvl": 18,
     "race": "Empress",
     "resists": "--sws--w-n",
-    "skills": {"Agilao": 0, "Brain Shake": 0, "Tetraja": 99},
+    "skills": {"Agilao": 0, "Brain Shake": 0, "Tetraja": 19, "Brainwash Boost": 22},
     "stats": [13, 11, 13, 14, 10]
   },
   "Legion": {
+    "inherits": "psy",
     "lvl": 34,
     "race": "Fool",
     "resists": "s-s-w-swwn",
-    "skills": {},
+    "skills": {"Psio": 0, "Brain Shake": 0, "Life Drain": 0, "Rampage": 36, "Brainwash Boost": 41},
     "stats": [22, 21, 26, 20, 20]
   },
   "Lilim": {
+    "inherits": "support",
     "lvl": 25,
     "race": "Devil",
     "resists": "---s-w--wn",
-    "skills": {"Mabufula": 0, "Evil Smile": 0, "Null Forget": 27, "Soul Stealer": 99},
+    "skills": {"Mabufula": 0, "Evil Smile": 0, "Null Forget": 27, "Soul Stealer": 29, "Dekaja": 30},
     "stats": [15, 18, 14, 19, 16]
   },
+  "Lilith": {
+    "inherits": "ice",
+    "lvl": 54,
+    "race": "Moon",
+    "resists": "--wn---n-n",
+    "skills": {"Mabufudyne": 0, "Maragidyne": 0, "Magarudyne": 0, "Brain Jack": 56, "Soul Stealer": 59},
+    "stats": [30, 38, 34, 35, 32]
+  },
+  "Lucifer": {
+    "inherits": "almighty",
+    "lvl": 90,
+    "race": "Star",
+    "resists": "snssss--wd",
+    "skills": {"Gigantomachia": 0, "Blazing Hell": 0, "Rebel Will": 0, "Concentrate": 99},
+    "stats": [59, 57, 57, 54, 50]
+  },
+  "Mara": {
+    "inherits": "fire",
+    "lvl": 72,
+    "race": "Tower",
+    "resists": "-nd---wssn",
+    "skills": {"Maragidyne": 0, "One-shot Kill": 0, "Charge": 0, "Maeigaon": 0, "Defense Master": 99},
+    "stats": [50, 43, 43, 44, 43]
+  },
+  "Metatron": {
+    "inherits": "bless",
+    "lvl": 80,
+    "race": "Justice",
+    "resists": "----wndd-w",
+    "skills": {"Megidolaon": 0, "Sword Dance": 0, "Makougaon": 0, "Debilitate": 0, "Charge": 99},
+    "stats": [49, 53, 54, 52, 39]
+  },
   "Mithra": {
+    "inherits": "bless",
     "lvl": 33,
     "race": "Temperance",
     "resists": "---nw---n-",
-    "skills": {},
+    "skills": {"Kouga": 0, "Mahama": 0, "Eiga": 0, "Makouga": 34, "Maeiga": 35},
     "stats": [19, 26, 19, 24, 18]
   },
+  "Mithras": {
+    "inherits": "nuke",
+    "lvl": 41,
+    "race": "Sun",
+    "resists": "s-d-wwwdss",
+    "skills": {"Marakukaja": 0, "Mafreila": 0, "Vicious Strike": 0, "Nuke Boost": 43},
+    "stats": [29, 27, 29, 26, 19]
+  },
   "Mokoi": {
+    "inherits": "support",
     "lvl": 8,
     "race": "Death",
     "resists": "----sw----",
     "skills": {"Tarukaja": 0, "Sledgehammer": 0, "Dekunda": 10, "Null Rage": 12},
     "stats": [8, 5, 5, 9, 4]
   },
+  "Mot": {
+    "inherits": "nuke",
+    "lvl": 57,
+    "race": "Death",
+    "resists": "-s--dw---n",
+    "skills": {"Megidola": 0, "Marakukaja": 0, "Mafreidyne": 0, "Concentrate": 59, "Nuke Amp": 62, "Cosmic Flare": 99},
+    "stats": [35, 38, 38, 34, 33]
+  },
   "Mothman": {
+    "inherits": "elec",
     "lvl": 28,
     "race": "Moon",
     "resists": "-w--d-s---",
-    "skills": {"Mazionga": 0, "Flash Bomb": 0, "Dizzy Boost": 99},
+    "skills": {"Mazionga": 0, "Flash Bomb": 0, "Dizzy Boost": 30, "Megido": 33},
     "stats": [18, 20, 15, 20, 18]
   },
+  "Naga": {
+    "inherits": "elec",
+    "lvl": 44,
+    "race": "Hermit",
+    "resists": "-s--nw----",
+    "skills": {"Rakukaja": 0, "Memory Blow": 0, "Mazionga": 0, "Shock Boost": 46, "Defense Master": 48},
+    "stats": [24, 33, 24, 34, 24]
+  },
+  "Nebiros": {
+    "inherits": "curse",
+    "lvl": 55,
+    "race": "Devil",
+    "resists": "------n-ws",
+    "skills": {"Eigaon": 0, "Mudoon": 0, "Mudo Boost": 0, "Curse Amp": 58, "Debilitate": 61},
+    "stats": [35, 35, 36, 33, 33]
+  },
   "Neko Shogun": {
+    "inherits": "fire",
     "lvl": 37,
     "race": "Star",
     "resists": "----sw--ns",
-    "skills": {},
+    "skills": {"Maragion": 0, "Sukukaja": 0, "Dodge Wind": 39, "Heat Wave": 40, "Speed Master": 42},
     "stats": [23, 24, 23, 26, 22]
   },
-  "Orlov": {
-    "inherits": "almighty",
-    "lvl": 30,
-    "race": "Strength",
-    "resists": "ss-------w",
-    "skills": {},
-    "stats": [30, 30, 30, 30, 30]
+  "Norn": {
+    "inherits": "wind",
+    "lvl": 53,
+    "race": "Fortune",
+    "resists": "----nd-wsw",
+    "skills": {"Magarudyne": 0, "Megidola": 0, "Diarahan": 54, "Samarecarm": 56, "Wind Amp": 58, "Panta Rhei": 99},
+    "stats": [30, 39, 34, 35, 28]
+  },
+  "Okuninushi": {
+    "inherits": "psy",
+    "lvl": 42,
+    "race": "Emperor",
+    "resists": "----nwdw--",
+    "skills": {"Psio": 0, "Tempest Slash": 0, "Matarukaja": 0, "Psy Boost": 46, "Psiodyne": 48},
+    "stats": [28, 27, 27, 26, 25]
   },
   "Orthrus": {
+    "inherits": "nuke",
     "lvl": 21,
     "race": "Hanged",
     "resists": "--dw---s--",
-    "skills": {"Frei": 0, "Double Fangs": 0, "Terror Claw": 0, "Dodge Ice": 99},
+    "skills": {"Frei": 0, "Double Fangs": 0, "Terror Claw": 0, "Dodge Ice": 23},
     "stats": [16, 14, 14, 19, 7]
   },
   "Pisaca": {
+    "inherits": "curse",
     "lvl": 22,
     "race": "Death",
     "resists": "--w-s---wd",
-    "skills": {"Life Drain": 0, "Mudo": 0, "Dream Needle": 99},
+    "skills": {"Life Drain": 0, "Mudo": 0, "Dream Needle": 24},
     "stats": [15, 16, 16, 14, 12]
   },
   "Pixie": {
+    "inherits": "healing",
     "lvl": 2,
     "race": "Lovers",
     "resists": "-w-ws---sw",
@@ -222,43 +400,71 @@
     "stats": [1, 3, 3, 4, 2]
   },
   "Principality": {
+    "inherits": "healing",
     "lvl": 27,
     "race": "Justice",
     "resists": "--s-----nw",
-    "skills": {"Makouga": 0, "Makajam": 0, "Media": 0, "Recarm": 28, "Forget Boost": 99},
+    "skills": {"Makouga": 0, "Makajam": 0, "Media": 0, "Recarm": 28, "Forget Boost": 30},
     "stats": [15, 18, 17, 20, 18]
   },
-  "Queen's Necklace": {
-    "inherits": "almighty",
-    "lvl": 15,
-    "race": "Empress",
-    "resists": "ss----w---",
-    "skills": {},
-    "stats": [15, 15, 15, 15, 15]
+  "Queen Mab": {
+    "inherits": "fire",
+    "lvl": 43,
+    "race": "Magician",
+    "resists": "--n-sw----",
+    "skills": {"Maragion": 0, "Mabufula": 0, "Makajamaon": 0, "Agidyne": 46, "Bufudyne": 48},
+    "stats": [23, 35, 36, 30, 22]
   },
-  "Regent": {
-    "inherits": "almighty",
-    "lvl": 10,
-    "race": "Emperor",
-    "resists": "ss-----w--",
-    "skills": {},
-    "stats": [10, 10, 10, 10, 10]
+  "Raja Naga": {
+    "inherits": "elec",
+    "lvl": 50,
+    "race": "Temperance",
+    "resists": "-s--d----w",
+    "skills": {"Ziodyne": 0, "Masukukaja": 0, "Elec Boost": 0, "Maziodyne": 52, "Evade Wind": 53, "Thunder Reign": 99},
+    "stats": [30, 32, 34, 32, 29]
+  },
+  "Sarasvati": {
+    "inherits": "healing",
+    "lvl": 48,
+    "race": "Priestess",
+    "resists": "---ns--w--",
+    "skills": {"Mediarama": 0, "Dekaja": 0, "Matarunda": 0, "Amrita Shower": 50, "Dekunda": 52, "Diarahan": 54},
+    "stats": [29, 33, 31, 32, 26]
   },
   "Setanta": {
+    "inherits": "nuke",
     "lvl": 26,
     "race": "Emperor",
     "resists": "-s----ws--",
-    "skills": {"Giant Slice": 0, "Dormin Rush": 0, "Mafrei": 0, "Sleep Boost": 99},
+    "skills": {"Giant Slice": 0, "Dormin Rush": 0, "Mafrei": 0, "Sleep Boost": 28, "Regenerate 1": 31},
     "stats": [18, 16, 18, 17, 16]
   },
+  "Seth": {
+    "inherits": "curse",
+    "lvl": 51,
+    "race": "Tower",
+    "resists": "--n--d--ws",
+    "skills": {"One-shot Kill": 0, "Eigaon": 0, "Masukukaja": 0, "Cripple": 53, "Down Technique": 55, "Fortify Spirit": 61, "Riot Gun": 68},
+    "stats": [32, 35, 30, 35, 28]
+  },
   "Shiisaa": {
+    "inherits": "elec",
     "lvl": 35,
     "race": "Chariot",
     "resists": "s-w---w-nw",
-    "skills": {"Dodge Curse": 37, "Critical Boost": 99},
+    "skills": {"Assault Dive": 0, "Sukukaja": 0, "Zionga": 0, "Dodge Curse": 37, "Critical Boost": 40},
     "stats": [30, 16, 23, 30, 13]
   },
+  "Siegfried": {
+    "inherits": "phys",
+    "lvl": 69,
+    "race": "Strength",
+    "resists": "s--snw-w--",
+    "skills": {"Heat Riser": 0, "Charge": 0, "Megaton Raid": 0, "Vorpal Blade": 99},
+    "stats": [51, 37, 47, 48, 31]
+  },
   "Silky": {
+    "inherits": "ice",
     "lvl": 6,
     "race": "Priestess",
     "resists": "wsw-------",
@@ -266,32 +472,67 @@
     "stats": [4, 7, 4, 5, 5]
   },
   "Slime": {
+    "inherits": "curse",
     "lvl": 12,
     "race": "Chariot",
     "resists": "ssw--w----",
     "skills": {"Hysterical Slap": 0, "Evil Touch": 0, "Maeiha": 13, "Rage Boost": 15},
     "stats": [10, 8, 13, 7, 5]
   },
-  "Stone of Scone": {
-    "inherits": "almighty",
-    "lvl": 20,
-    "race": "Fortune",
-    "resists": "ssw-------",
-    "skills": {},
-    "stats": [20, 20, 20, 20, 20]
-  },
   "Succubus": {
+    "inherits": "psy",
     "lvl": 11,
     "race": "Moon",
     "resists": "-ws--ws-wn",
     "skills": {"Marin Karin": 0, "Psi": 0, "Null Brainwash": 12, "Snap": 14},
     "stats": [5, 10, 7, 13, 5]
   },
+  "Thor": {
+    "inherits": "elec",
+    "lvl": 61,
+    "race": "Chariot",
+    "resists": "s---nww-ss",
+    "skills": {"Maziodyne": 0, "Megaton Raid": 0, "Wage War": 0, "Elec Amp": 99},
+    "stats": [42, 37, 41, 37, 33]
+  },
+  "Trumpeter": {
+    "inherits": "nuke",
+    "lvl": 56,
+    "race": "Judgement",
+    "resists": "--wds---nn",
+    "skills": {"Mafreidyne": 0, "Nocturnal Flash": 0, "Fortify Spirit": 0, "Cripple": 58, "Triple Down": 60},
+    "stats": [32, 39, 38, 36, 30]
+  },
   "Unicorn": {
+    "inherits": "nuke",
     "lvl": 38,
     "race": "Hierophant",
     "resists": "---n--s-nw",
-    "skills": {},
+    "skills": {"Assault Dive": 0, "Mafreila": 0, "Mediarama": 0, "Recarm": 40, "Regenerate 2": 42},
     "stats": [20, 26, 24, 27, 24]
+  },
+  "Valkyrie": {
+    "inherits": "phys",
+    "lvl": 45,
+    "race": "Strength",
+    "resists": "-swn----d-",
+    "skills": {"Brain Buster": 0, "Bloodbath": 0, "Attack Master": 46, "Oni Kagura": 48, "Deathbound": 50},
+    "stats": [34, 24, 29, 30, 25]
+  },
+  "Yatagarasu": {
+    "inherits": "elec",
+    "lvl": 58,
+    "race": "Sun",
+    "resists": "-w---s--nw",
+    "skills": {"Ziodyne": 0, "Sukukaja": 0, "Dekunda": 0, "Maziodyne": 99},
+    "stats": [36, 42, 30, 41, 32]
+  },
+  "Yoshitsune": {
+    "inherits": "phys",
+    "lvl": 78,
+    "race": "Tower",
+    "resists": "s-s-n---n-",
+    "skills": {"Myriad Slashes": 0, "Brave Blade": 0, "Charge": 0, "Rebel Will": 99},
+    "stats": [57, 46, 45, 52, 41]
   }
 }
