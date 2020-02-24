@@ -26,6 +26,11 @@
     "effect": "Medium damage to close range Foes",
     "element": "fire"
   },
+  "Agneyastra": {
+    "cost": 24,
+    "effect": "Severe damage to wide range Foes with high chance of critical hit",
+    "element": "phys"
+  },
   "Ailment Boost": {
     "effect": "Increases chance of inflicting all ailments",
     "element": "passive"
@@ -62,6 +67,10 @@
     "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "fire"
+  },
+  "Bless Amp": {
+    "effect": "Bless damage +50%",
+    "element": "passive"
   },
   "Bless Boost": {
     "effect": "Bless damage +25%",
@@ -131,6 +140,7 @@
     "element": "support"
   },
   "Cosmic Flare": {
+    "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "nuke"
   },
@@ -278,6 +288,10 @@
     "element": "passive"
   },
   "Evade Elec": {
+    "effect": "Triples evasion rate against Elec attacks",
+    "element": "passive"
+  },
+  "Evade Ice": {
     "effect": "Triples evasion rate against Elec attacks",
     "element": "passive"
   },
@@ -493,6 +507,11 @@
     "effect": "Low chance of instant killing wide range Foes",
     "element": "bless"
   },
+  "Mahamaon": {
+    "cost": 1014,
+    "effect": "Medium chance of instant killing wide range Foes",
+    "element": "bless"
+  },
   "Makajam": {
     "cost": 1008,
     "effect": "High chance of Forget to close range Foes",
@@ -517,6 +536,11 @@
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "bless"
+  },
+  "Mamudo": {
+    "cost": 1012,
+    "effect": "Low chance of instant killing wide range Foes",
+    "element": "curse"
   },
   "Mamudoon": {
     "cost": 1014,
@@ -717,6 +741,7 @@
     "element": "phys"
   },
   "Panta Rhei": {
+    "cost": 1034,
     "effect": "Severe damage to close range Foes",
     "element": "wind"
   },
@@ -742,6 +767,16 @@
   "Psy Boost": {
     "effect": "Psy damage +25%",
     "element": "passive"
+  },
+  "Psycho Blast": {
+    "cost": 1038,
+    "effect": "Severe damage to wide range Foes",
+    "element": "psy"
+  },
+  "Psycho Force": {
+    "cost": 1036,
+    "effect": "Severe damage to close range Foes",
+    "element": "psy"
   },
   "Rage Boost": {
     "effect": "Increases chance of inflicting Rage",
@@ -777,6 +812,10 @@
   },
   "Regenerate 2": {
     "effect": "Moderately restore HP over time",
+    "element": "passive"
+  },
+  "Regenerate 3": {
+    "effect": "Greatly restore HP over time",
     "element": "passive"
   },
   "Riot Gun": {
@@ -907,6 +946,11 @@
     "cost": 1010,
     "effect": "High chance of Rage to wide range Foes",
     "element": "ailment"
+  },
+  "Wild Thunder": {
+    "cost": 1038,
+    "effect": "Severe damage to wide range Foes",
+    "element": "elec"
   },
   "Wind Amp": {
     "effect": "Wind damage +50%",
