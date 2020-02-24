@@ -7,12 +7,7 @@
       const l = window.location
       const csrParam = 'csr'
       const siteRoot = '/megaten-fusion-tool'
-      const pathParams = encodeURIComponent(l.pathname.slice(siteRoot.length))
-      const replacePath = (
-        l.protocol + '//' + l.hostname + (l.prot ? ':' + l.port : '') + siteRoot +
-        '?' + (l.search + '&' + csrParam + '=' + pathParams).slice(1) +
-        l.hash
-      )
+      const replacePath = siteRoot + '/#' + l.pathname.slice(siteRoot.length)
       l.replace(replacePath)
     </script>
   </head>
