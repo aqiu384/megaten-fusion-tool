@@ -49,6 +49,10 @@
     "effect": "Reveal info for 1 Foe",
     "element": "passive"
   },
+  "Angelic Grace": {
+    "effect": "Double evasion against Fire/Ice/Elec/Wind/Nuke/Psy/Bless/Curse attacks.",
+    "element": "passive"
+  },
   "Assault Dive": {
     "cost": 15,
     "effect": "Heavy damage to close range Foes",
@@ -204,6 +208,16 @@
     "effect": "Moderately restore HP for 1 Ally",
     "element": "recovery"
   },
+  "Diamond Dust": {
+    "cost": 1036,
+    "effect": "Severe damage to close range Foes",
+    "element": "ice"
+  },
+  "Die For Me!": {
+    "cost": 1020,
+    "effect": "High chance of instant killing wide range Foes",
+    "element": "curse"
+  },
   "Divine Grace": {
     "effect": "Recovery skill effectiveness +50%",
     "element": "passive"
@@ -214,6 +228,10 @@
   },
   "Dodge Curse": {
     "effect": "Doubles evasion rate against Curse attacks",
+    "element": "passive"
+  },
+  "Dodge Elec": {
+    "effect": "Doubles evasion rate against Elec attacks",
     "element": "passive"
   },
   "Dodge Fire": {
@@ -287,8 +305,16 @@
     "effect": "Survive lethal attack with 1 HP once per battle",
     "element": "passive"
   },
+  "Enduring Soul": {
+    "effect": "Survive lethal attack with full HP once per battle",
+    "element": "passive"
+  },
   "Evade Elec": {
     "effect": "Triples evasion rate against Elec attacks",
+    "element": "passive"
+  },
+  "Evade Fire": {
+    "effect": "Triples evasion rate against Fire attacks",
     "element": "passive"
   },
   "Evade Ice": {
@@ -313,8 +339,24 @@
     "effect": "Increases chance of inflicting Fear",
     "element": "passive"
   },
+  "Final Guard": {
+    "effect": "Chance to nullify fatal attack for all Allies",
+    "element": "passive"
+  },
   "Finesse": {
     "effect": "Increase damage inflicted by technical hits",
+    "element": "passive"
+  },
+  "Fire Amp": {
+    "effect": "Fire damage +50%",
+    "element": "passive"
+  },
+  "Fire Boost": {
+    "effect": "Fire damage +25%",
+    "element": "passive"
+  },
+  "Firm Stance": {
+    "effect": "Halves all damage received by sacrificing evasion",
     "element": "passive"
   },
   "Flash Bomb": {
@@ -374,6 +416,11 @@
     "effect": "Severe damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
+  "God's Hand": {
+    "cost": 25,
+    "effect": "Severe damage to close range Foes with high chance of critical hit",
+    "element": "phys"
+  },
   "Hama": {
     "cost": 8,
     "effect": "Low chance of instant killing close range Foes",
@@ -387,6 +434,11 @@
     "cost": 1010,
     "effect": "Medium chance of instant killing close range Foes",
     "element": "bless"
+  },
+  "Hassou Tobi": {
+    "cost": 30,
+    "effect": "Severe damage to wide range Foes with high chance of critical hit",
+    "element": "phys"
   },
   "Headbutt": {
     "cost": 10,
@@ -408,9 +460,23 @@
     "effect": "Light damage to close range Foes with medium chance of Rage",
     "element": "phys"
   },
+  "Ice Age": {
+    "cost": 1038,
+    "effect": "Severe damage to wide range Foes",
+    "element": "ice"
+  },
+  "Ice Amp": {
+    "effect": "Ice damage +50%",
+    "element": "passive"
+  },
   "Ice Boost": {
     "effect": "Ice damage +25%",
     "element": "passive"
+  },
+  "Inferno": {
+    "cost": 1036,
+    "effect": "Severe damage to close range Foes",
+    "element": "fire"
   },
   "Kouga": {
     "cost": 1014,
@@ -426,6 +492,10 @@
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "bless"
+  },
+  "Lamentation": {
+    "effect": "Recovers SP when draining damage",
+    "element": "passive"
   },
   "Life Drain": {
     "cost": 1010,
@@ -632,6 +702,11 @@
     "effect": "Slightly restore HP for all Allies",
     "element": "recovery"
   },
+  "Mediarahan": {
+    "cost": 1068,
+    "effect": "Fully restore HP for all Allies",
+    "element": "recovery"
+  },
   "Mediarama": {
     "cost": 1032,
     "effect": "Moderately restore HP for all Allies",
@@ -674,6 +749,11 @@
     "effect": "Chance to recover HP, recover SP, or cast random -kaja effect on all Allies",
     "element": "passive"
   },
+  "Morning Star": {
+    "cost": 1050,
+    "effect": "Severe damage to wide range Foes",
+    "element": "almighty"
+  },
   "Mudo": {
     "cost": 1008,
     "effect": "Low chance of instant killing close range Foes",
@@ -684,7 +764,7 @@
     "element": "passive"
   },
   "Mudoon": {
-    "cost": 1024,
+    "cost": 1010,
     "effect": "Medium chance of instant killing close range Foes",
     "element": "curse"
   },
@@ -720,6 +800,10 @@
   },
   "Null Forget": {
     "effect": "Imparts immunity to Forget",
+    "element": "passive"
+  },
+  "Null Nuke": {
+    "effect": "Nullifies Nuke damage",
     "element": "passive"
   },
   "Null Rage": {
@@ -823,6 +907,11 @@
     "effect": "Severe damage to wide range Foes with high chance of critical hit",
     "element": "gun"
   },
+  "Salvation": {
+    "cost": 1084,
+    "effect": "Fully restore HP and recover non-unique ailments for all Allies",
+    "element": "recovery"
+  },
   "Samarecarm": {
     "cost": 1048,
     "effect": "Revive 1 Ally with 100% HP",
@@ -856,6 +945,10 @@
   },
   "Speed Master": {
     "effect": "Begin battle with Sukukaja",
+    "element": "passive"
+  },
+  "Spell Master": {
+    "effect": "Halves SP costs for skills",
     "element": "passive"
   },
   "Sukukaja": {

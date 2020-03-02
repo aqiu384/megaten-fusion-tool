@@ -31,7 +31,7 @@ import { FusionChart } from '../models';
     td.ra-1 { color: red; }
     td.ran1 { color: lime; }
     td.ran2 { color: cyan; }
-    td.None { color: #222; }
+    td.None { color: transparent; }
     td.Sala, td.Flae, td.Ara,  td.Fien { color: red; }
     td.Undi, td.Aqua, td.Nigi, td.Enig { color: cyan; }
     td.Sylp, td.Aero, td.Kusi, td.UMA  { color: lime; }

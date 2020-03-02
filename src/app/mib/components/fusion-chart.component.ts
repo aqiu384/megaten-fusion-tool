@@ -43,7 +43,7 @@ import { Arcanas } from '../constants';
     td.ra-1 { color: red; }
     td.ran1 { color: lime; }
     td.ran2 { color: cyan; }
-    td.None, td.emp { color: #222; }
+    td.None, td.emp { color: transparent; }
     td.Empt { background-color: black; color: transparent; }
   `]
 })
