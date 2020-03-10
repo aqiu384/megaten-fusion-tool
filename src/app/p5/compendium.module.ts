@@ -69,6 +69,7 @@ export const P5_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SPECIAL_RECIPES_JSON,
 
   dlcDemons: COMP_CONFIG_JSON.dlcDemons,
+  downloadedDemons: [],
   settingsKey: 'p5-fusion-tool-settings',
   settingsVersion: 1709211400
 };

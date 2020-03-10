@@ -84,8 +84,9 @@ export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SPECIAL_RECIPES_JSON,
 
   dlcDemons: COMP_CONFIG_JSON.dlcDemons,
+  downloadedDemons: COMP_CONFIG_JSON.downloadedDemons,
   settingsKey: 'p5r-fusion-tool-settings',
-  settingsVersion: 1709211400
+  settingsVersion: 2003100800
 };
 
 @NgModule({

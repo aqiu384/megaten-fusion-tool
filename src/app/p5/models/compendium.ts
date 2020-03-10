@@ -162,7 +162,9 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const dlcDemon of this.compConfig.dlcDemons) {
+    for (const dlcDemon of this.compConfig.downloadedDemons) {
+      dlcDemons[dlcDemon] = true;
+    } for (const dlcDemon of this.compConfig.dlcDemons) {
       dlcDemons[dlcDemon] = false;
     }
 

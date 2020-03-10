@@ -36,6 +36,7 @@ export interface CompendiumConfig extends BaseComp {
   specialRecipes;
 
   dlcDemons: string[];
+  downloadedDemons: string[];
   settingsKey: string;
   settingsVersion: number;
 }
