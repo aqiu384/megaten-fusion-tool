@@ -8,9 +8,25 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1976d2">
+  <script type="text/javascript">
+    const l = window.location
+    const csrParam = 'csr'
+    if (l.search.indexOf(csrParam) !== -1) {
+      const searchSegs = (l.search + '&').split(csrParam + '=')
+      const pathEnd = searchSegs[1].indexOf('&')
+      const pathParams = decodeURIComponent(searchSegs[1].substring(0, pathEnd))
+      const searchParams = (searchSegs[0] + searchSegs[1].substring(pathEnd + 1)).slice(0, -1)
+
+      const replacePath = (
+        (l.pathname.slice(-1) === '/' ? l.pathname.slice(0, -1) : l.pathname) +
+        pathParams + searchParams + l.hash
+      )
+      window.history.replaceState(null, null, replacePath)
+    }
+  </script>
 <link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script type="text/javascript" src="runtime.d60be097de2451583084.js"></script><script type="text/javascript" src="es2015-polyfills.5855748105aff2df16f9.js" nomodule></script><script type="text/javascript" src="polyfills.b55b55c1910a507ac2ad.js"></script><script type="text/javascript" src="scripts.f40e929b83915fe92148.js"></script><script type="text/javascript" src="main.becfba6d42fccbcdcd77.js"></script></body>
+<script type="text/javascript" src="runtime.d60be097de2451583084.js"></script><script type="text/javascript" src="es2015-polyfills.5855748105aff2df16f9.js" nomodule></script><script type="text/javascript" src="polyfills.b55b55c1910a507ac2ad.js"></script><script type="text/javascript" src="scripts.f40e929b83915fe92148.js"></script><script type="text/javascript" src="main.6a92ee4678b8ff06e0ac.js"></script></body>
 </html>
