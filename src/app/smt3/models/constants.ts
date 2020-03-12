@@ -40,7 +40,8 @@ export const Races = [
   'Element',
   'Mitama',
   'D-Fiend',
-  'Summoner'
+  'Summoner',
+  'Magatama'
 ];
 
 export const ResistanceElements = [

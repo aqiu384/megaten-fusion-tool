@@ -5,6 +5,7 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import DEMON_DATA_JSON from '../data/demon-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import MAGATAMA_DATA_JSON from '../data/magatama-data.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -45,6 +46,20 @@ export class Compendium implements ICompendium {
         inherits: json.inherits.split('').map(char => char === 'o'),
         skills: json.skills,
         fusion: 'normal'
+      };
+    }
+
+    for (const [name, json] of Object.entries(MAGATAMA_DATA_JSON)) {
+      demons[name] = {
+        name: name,
+        race: 'Magatama',
+        lvl: json.lvl,
+        price: Compendium.estimateBasePrice(json.stats),
+        stats: [0, 0].concat(json.stats),
+        resists: json.resists.split('').map(char => ResistCodes[char]),
+        inherits: 'oo-oo-oo-'.split('').map(char => char === 'o'),
+        skills: json.skills,
+        fusion: 'magatama'
       };
     }
 

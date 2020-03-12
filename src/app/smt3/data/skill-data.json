@@ -1,21 +1,21 @@
 {
   "Agi": {
     "cost": 1003,
-    "damage": "Weak",
+    "damage": "Weak (37)",
     "element": "fir",
     "rank": 1,
     "target": "Single"
   },
   "Agidyne": {
     "cost": 1010,
-    "damage": "Heavy",
+    "damage": "Heavy (75)",
     "element": "fir",
     "rank": 7,
     "target": "Single"
   },
   "Agilao": {
     "cost": 1006,
-    "damage": "Medium",
+    "damage": "Medium (55)",
     "element": "fir",
     "rank": 4,
     "target": "Single"
@@ -35,7 +35,7 @@
   },
   "Andalucia": {
     "cost": 6,
-    "damage": "Medium",
+    "damage": "Medium (32)",
     "effect": "x1-4",
     "element": "phy",
     "target": "All"
@@ -97,7 +97,7 @@
   },
   "Arid Needle": {
     "cost": 12,
-    "damage": "Weak",
+    "damage": "Weak (31)",
     "effect": "60% Stone",
     "element": "phy",
     "rank": 7,
@@ -115,7 +115,7 @@
   },
   "Beast Roar": {
     "cost": 1037,
-    "damage": "Heavy",
+    "damage": "Heavy (80)",
     "effect": "Restores HP",
     "element": "alm",
     "target": "All"
@@ -134,7 +134,7 @@
   },
   "Berserk": {
     "cost": 13,
-    "damage": "Weak",
+    "damage": "Weak (16)",
     "effect": "Medium hit",
     "element": "phy",
     "rank": 6,
@@ -163,7 +163,7 @@
   },
   "Blight": {
     "cost": 22,
-    "damage": "Weak",
+    "damage": "Weak (22)",
     "effect": "20% Poison",
     "element": "phy",
     "rank": 10,
@@ -172,14 +172,14 @@
   },
   "Bolt Storm": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "ele",
     "rank": 9,
     "target": "Multi"
   },
   "Boogie-Woogie": {
     "cost": 1003,
-    "damage": "Weak",
+    "damage": "Weak (32)",
     "effect": "x1-4",
     "element": "phy",
     "target": "Single"
@@ -197,7 +197,7 @@
   },
   "Brutal Slash": {
     "cost": 13,
-    "damage": "Heavy",
+    "damage": "Heavy (50)",
     "effect": "Medium crit/medium hit",
     "element": "phy",
     "rank": 6,
@@ -206,35 +206,35 @@
   },
   "Bufu": {
     "cost": 1003,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "element": "ice",
     "rank": 1,
     "target": "Single"
   },
   "Bufudyne": {
     "cost": 1010,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "ice",
     "rank": 7,
     "target": "Single"
   },
   "Bufula": {
     "cost": 1006,
-    "damage": "Medium",
+    "damage": "Medium (45)",
     "element": "ice",
     "rank": 4,
     "target": "Single"
   },
   "Bullet Time": {
     "cost": 1010,
-    "damage": "Medium",
+    "damage": "Medium (25)",
     "effect": "Always hit, 30% Panic",
     "element": "phy",
     "target": "All"
   },
   "Chaos Blade": {
     "cost": 32,
-    "damage": "Weak",
+    "damage": "Weak (22)",
     "effect": "30% Panic",
     "element": "phy",
     "rank": 10,
@@ -248,7 +248,7 @@
   },
   "Charm Bite": {
     "cost": 18,
-    "damage": "Medium",
+    "damage": "Medium (41)",
     "effect": "Medium crit/medium hit, 40% Charm",
     "element": "phy",
     "rank": 5,
@@ -273,7 +273,7 @@
   },
   "Dark Sword": {
     "cost": 22,
-    "damage": "Heavy",
+    "damage": "Heavy (53)",
     "effect": "Hight crit/low hit, 40% Mute",
     "element": "phy",
     "rank": 8,
@@ -282,21 +282,21 @@
   },
   "Deadly Fury": {
     "cost": 32,
-    "damage": "Heavy",
+    "damage": "Heavy (41)",
     "effect": "High crit",
     "element": "phy",
     "target": "All"
   },
   "Death Flies": {
     "cost": 1050,
-    "damage": "Severe",
+    "damage": "Severe (90)",
     "effect": "Causes instant death to any enemy not immune to Death",
     "element": "alm",
     "target": "All"
   },
   "Death Lust": {
     "cost": 1015,
-    "damage": "Heavy",
+    "damage": "Heavy (50)",
     "effect": "May cause charm",
     "element": "min",
     "target": "All"
@@ -308,7 +308,7 @@
   },
   "Deathbound": {
     "cost": 25,
-    "damage": "Medium",
+    "damage": "Medium (38)",
     "element": "phy",
     "rank": 11,
     "requires": "Weapon",
@@ -316,7 +316,7 @@
   },
   "Deathtouch": {
     "cost": 1005,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "effect": "Absorbs HP",
     "element": "alm",
     "rank": 1,
@@ -371,7 +371,7 @@
   },
   "Dismal Tune": {
     "cost": 1030,
-    "damage": "Medium",
+    "damage": "Medium (55)",
     "effect": "May cause mute",
     "element": "cur",
     "rank": 7,
@@ -379,7 +379,7 @@
   },
   "Divine Shot": {
     "cost": 13,
-    "damage": "Heavy",
+    "damage": "Heavy (50)",
     "effect": "Medium crit",
     "element": "phy",
     "target": "Single"
@@ -396,41 +396,16 @@
     "element": "pas",
     "rank": 7
   },
-  "Elec Drain": {
-    "effect": "Absorbs elec damage",
-    "element": "pas",
-    "rank": 9
-  },
-  "Fire Drain": {
-    "effect": "Absorbs fire damage",
-    "element": "pas",
-    "rank": 9
-  },
-  "Force Drain": {
-    "effect": "Absorbs force damage",
-    "element": "pas",
-    "rank": 9
-  },
-  "Ice Drain": {
-    "effect": "Absorbs ice damage",
-    "element": "pas",
-    "rank": 9
-  },
-  "Phys Drain": {
-    "effect": "Absorbs phys damage",
-    "element": "pas",
-    "rank": 11
-  },
   "E & I": {
     "cost": 1003,
-    "damage": "Weak",
+    "damage": "Weak (32)",
     "effect": "x1-4",
     "element": "phy",
     "target": "Single"
   },
   "Earthquake": {
     "cost": 45,
-    "damage": "Severe",
+    "damage": "Severe (70)",
     "effect": "No crit",
     "element": "phy",
     "target": "All"
@@ -439,6 +414,16 @@
     "effect": "Elec damage +50%",
     "element": "pas",
     "rank": 6
+  },
+  "Elec Drain": {
+    "effect": "Absorbs elec damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Elec Repel": {
+    "effect": "Repels elec damage",
+    "element": "pas",
+    "rank": 10
   },
   "Endure": {
     "effect": "Revive from death once per battle with 1 HP",
@@ -478,7 +463,7 @@
   },
   "Feral Bite": {
     "cost": 12,
-    "damage": "Medium",
+    "damage": "Medium (44)",
     "effect": "Medium crit/medium hit",
     "element": "phy",
     "rank": 1,
@@ -487,7 +472,7 @@
   },
   "Feral Claw": {
     "cost": 6,
-    "damage": "Weak",
+    "damage": "Weak (34)",
     "element": "phy",
     "rank": 1,
     "requires": "Claw",
@@ -500,15 +485,25 @@
   },
   "Fire Breath": {
     "cost": 1009,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "element": "fir",
     "rank": 5,
     "requires": "Mouth",
     "target": "Multi"
   },
+  "Fire Drain": {
+    "effect": "Absorbs fire damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Fire Repel": {
+    "effect": "Repels fire damage",
+    "element": "pas",
+    "rank": 10
+  },
   "Fire of Sinai": {
     "cost": 1050,
-    "damage": "Severe",
+    "damage": "Severe (90)",
     "element": "alm",
     "target": "Multi"
   },
@@ -536,23 +531,33 @@
     "element": "pas",
     "rank": 6
   },
+  "Force Drain": {
+    "effect": "Absorbs force damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Force Repel": {
+    "effect": "Repels force damage",
+    "element": "pas",
+    "rank": 10
+  },
   "Freikugel": {
     "cost": 17,
-    "damage": "Severe",
+    "damage": "Severe (65)",
     "effect": "Medium crit",
     "element": "alm",
     "target": "Single"
   },
   "Gaea Rage": {
     "cost": 35,
-    "damage": "Severe",
+    "damage": "Severe (37)",
     "effect": "Medium crit",
     "element": "phy",
     "target": "All"
   },
   "Glacial Blast": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "ice",
     "rank": 8,
     "target": "Multi"
@@ -582,7 +587,7 @@
   },
   "Guillotine": {
     "cost": 17,
-    "damage": "Heavy",
+    "damage": "Heavy (47)",
     "effect": "Medium crit/medium hit",
     "element": "phy",
     "rank": 7,
@@ -591,7 +596,7 @@
   },
   "Hades Blast": {
     "cost": 32,
-    "damage": "Heavy",
+    "damage": "Heavy (41)",
     "effect": "High crit",
     "element": "phy",
     "rank": 11,
@@ -619,7 +624,7 @@
   },
   "Hassohappa": {
     "cost": 35,
-    "damage": "Heavy",
+    "damage": "Heavy (47)",
     "effect": "High crit",
     "element": "phy",
     "rank": 11,
@@ -628,7 +633,7 @@
   },
   "Heat Wave": {
     "cost": 16,
-    "damage": "Weak",
+    "damage": "Weak (19)",
     "effect": "Medium crit",
     "element": "phy",
     "rank": 8,
@@ -637,20 +642,20 @@
   },
   "Hell Burner": {
     "cost": 1008,
-    "damage": "Heavy",
+    "damage": "Heavy (30)",
     "element": "fir",
     "target": "All"
   },
   "Hell Exhaust": {
     "cost": 1015,
-    "damage": "Medium",
+    "damage": "Medium (40)",
     "effect": "Dekaja",
     "element": "for",
     "target": "All"
   },
   "Hell Fang": {
     "cost": 15,
-    "damage": "Heavy",
+    "damage": "Heavy (56)",
     "effect": "Hight crit/low hit",
     "element": "phy",
     "rank": 8,
@@ -667,13 +672,13 @@
   },
   "Hell Spin": {
     "cost": 25,
-    "damage": "Medium",
+    "damage": "Medium (31)",
     "element": "phy",
     "target": "All"
   },
   "Hell Thrust": {
     "cost": 12,
-    "damage": "Medium",
+    "damage": "Medium (47)",
     "effect": "Medium crit/medium hit",
     "element": "phy",
     "rank": 3,
@@ -682,14 +687,14 @@
   },
   "Hellfire": {
     "cost": 1020,
-    "damage": "Medium",
+    "damage": "Medium (50)",
     "element": "fir",
     "rank": 7,
     "target": "Multi"
   },
   "Hitokoto Gust": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "for",
     "target": "All"
   },
@@ -719,11 +724,21 @@
   },
   "Ice Breath": {
     "cost": 1009,
-    "damage": "Weak",
+    "damage": "Weak (25)",
     "element": "ice",
     "rank": 5,
     "requires": "Mouth",
     "target": "Multi"
+  },
+  "Ice Drain": {
+    "effect": "Absorbs ice damage",
+    "element": "pas",
+    "rank": 9
+  },
+  "Ice Repel": {
+    "effect": "Repels ice damage",
+    "element": "pas",
+    "rank": 10
   },
   "Intimidate": {
     "effect": "Urges an indecisive demon. Effective when user is 10 levels higher than target or youth or adult to child",
@@ -738,7 +753,7 @@
   },
   "Iron Claw": {
     "cost": 15,
-    "damage": "Heavy",
+    "damage": "Heavy (56)",
     "effect": "Hight crit/low hit",
     "element": "phy",
     "rank": 7,
@@ -747,19 +762,24 @@
   },
   "Javelin Rain": {
     "cost": 40,
-    "damage": "Heavy",
+    "damage": "Heavy (41)",
     "effect": "Medium crit, 20% Mute",
     "element": "phy",
     "target": "All"
   },
   "Jiraiya Tarantella": {
     "cost": 1040,
-    "damage": "Heavy",
+    "damage": "Heavy (90)",
     "element": "alm",
     "target": "All"
   },
+  "Jive Talk": {
+    "effect": "Recruit Foul, Haunt, and Wilder enemies under normal circumstances.",
+    "element": "tal",
+    "target": "Single"
+  },
   "Kamikaze": {
-    "damage": "Severe",
+    "damage": "Severe (78)",
     "effect": "Kills user instantly",
     "element": "alm",
     "rank": 3,
@@ -772,7 +792,7 @@
     "target": "Single"
   },
   "Last Resort": {
-    "damage": "Heavy",
+    "damage": "Heavy (59)",
     "effect": "No crit/always hit, kills user instantly",
     "element": "alm",
     "rank": 4,
@@ -790,7 +810,7 @@
   },
   "Life Drain": {
     "cost": 1010,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "effect": "Absorbs HP and MP",
     "element": "alm",
     "rank": 7,
@@ -843,7 +863,7 @@
   },
   "Lunge": {
     "cost": 10,
-    "damage": "Weak",
+    "damage": "Weak (41)",
     "effect": "Medium crit/medium hit",
     "element": "phy",
     "rank": 1,
@@ -852,28 +872,28 @@
   },
   "Mabufu": {
     "cost": 1008,
-    "damage": "Weak",
+    "damage": "Weak (20)",
     "element": "ice",
     "rank": 4,
     "target": "All"
   },
   "Mabufudyne": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (55)",
     "element": "ice",
     "rank": 10,
     "target": "All"
   },
   "Mabufula": {
     "cost": 1015,
-    "damage": "Medium",
+    "damage": "Medium (35)",
     "element": "ice",
     "rank": 7,
     "target": "All"
   },
   "Magma Axis": {
     "cost": 30,
-    "damage": "Heavy",
+    "damage": "Heavy (48)",
     "effect": "Phys/Fire damage relative to Magic",
     "element": "fir",
     "target": "Single"
@@ -957,7 +977,7 @@
   },
   "Mana Drain": {
     "cost": 1002,
-    "damage": "Weak",
+    "damage": "Weak (15)",
     "effect": "Absorbs MP",
     "element": "alm",
     "rank": 5,
@@ -980,21 +1000,21 @@
   },
   "Maragi": {
     "cost": 1008,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "element": "fir",
     "rank": 4,
     "target": "All"
   },
   "Maragidyne": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "fir",
     "rank": 10,
     "target": "All"
   },
   "Maragion": {
     "cost": 1015,
-    "damage": "Medium",
+    "damage": "Medium (45)",
     "element": "fir",
     "rank": 7,
     "target": "All"
@@ -1008,42 +1028,42 @@
   },
   "Mazan": {
     "cost": 1008,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "element": "for",
     "rank": 4,
     "target": "All"
   },
   "Mazandyne": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "for",
     "rank": 10,
     "target": "All"
   },
   "Mazanma": {
     "cost": 1015,
-    "damage": "Medium",
+    "damage": "Medium (40)",
     "element": "for",
     "rank": 7,
     "target": "All"
   },
   "Mazio": {
     "cost": 1008,
-    "damage": "Weak",
+    "damage": "Weak (20)",
     "element": "ele",
     "rank": 4,
     "target": "All"
   },
   "Maziodyne": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (55)",
     "element": "ele",
     "rank": 10,
     "target": "All"
   },
   "Mazionga": {
     "cost": 1015,
-    "damage": "Medium",
+    "damage": "Medium (35)",
     "element": "ele",
     "rank": 7,
     "target": "All"
@@ -1078,28 +1098,28 @@
   },
   "Meditation": {
     "cost": 1010,
-    "damage": "Medium",
+    "damage": "Medium (60)",
     "effect": "Absorbs HP and MP",
     "element": "alm",
     "target": "Single"
   },
   "Megido": {
     "cost": 1030,
-    "damage": "Medium",
+    "damage": "Medium (70)",
     "element": "alm",
     "rank": 8,
     "target": "All"
   },
   "Megidola": {
     "cost": 1037,
-    "damage": "Heavy",
+    "damage": "Heavy (80)",
     "element": "alm",
     "rank": 10,
     "target": "All"
   },
   "Megidolaon": {
     "cost": 1050,
-    "damage": "Severe",
+    "damage": "Severe (90)",
     "element": "alm",
     "rank": 14,
     "target": "All"
@@ -1111,7 +1131,7 @@
   },
   "Mighty Gust": {
     "cost": 14,
-    "damage": "Heavy",
+    "damage": "Heavy (53)",
     "effect": "Medium crit/medium hit",
     "element": "phy",
     "rank": 5,
@@ -1130,13 +1150,13 @@
   },
   "Mishaguji Thunder": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (55)",
     "element": "ele",
     "target": "All"
   },
   "Mokoi Boomerang": {
     "cost": 1010,
-    "damage": "Medium",
+    "damage": "Medium (25)",
     "effect": "Always hit, 30% Panic",
     "element": "phy",
     "target": "All"
@@ -1177,7 +1197,7 @@
   },
   "Needle Rush": {
     "cost": 10,
-    "damage": "Medium",
+    "damage": "Medium (41)",
     "element": "phy",
     "rank": 1,
     "target": "Single"
@@ -1188,7 +1208,7 @@
   },
   "Oni-Kagura": {
     "cost": 30,
-    "damage": "Medium",
+    "damage": "Medium (38)",
     "effect": "Medium crit",
     "element": "phy",
     "target": "All"
@@ -1228,7 +1248,7 @@
   },
   "Pestilence": {
     "cost": 1016,
-    "damage": "Medium",
+    "damage": "Medium (50)",
     "effect": "Instant death to enemies already inflicted with poison",
     "element": "alm",
     "target": "All"
@@ -1239,6 +1259,16 @@
     "element": "rec",
     "rank": 3,
     "target": "Single"
+  },
+  "Phys Drain": {
+    "effect": "Absorbs phys damage",
+    "element": "pas",
+    "rank": 11
+  },
+  "Phys Repel": {
+    "effect": "Repels phys damage",
+    "element": "pas",
+    "rank": 12
   },
   "Pierce": {
     "effect": "Phys attacks bypass all resistances except Repel",
@@ -1268,7 +1298,7 @@
   },
   "Prominence": {
     "cost": 1030,
-    "damage": "Heavy",
+    "damage": "Heavy (90)",
     "element": "fir",
     "rank": 10,
     "target": "Multi"
@@ -1287,14 +1317,14 @@
   },
   "Radiance": {
     "cost": 1030,
-    "damage": "Heavy",
+    "damage": "Heavy (75)",
     "element": "exp",
     "rank": 11,
     "target": "All"
   },
   "Ragnarok": {
     "cost": 1030,
-    "damage": "Severe",
+    "damage": "Severe (80)",
     "element": "fir",
     "target": "Single"
   },
@@ -1318,7 +1348,7 @@
   },
   "Rebellion": {
     "cost": 9,
-    "damage": "Medium",
+    "damage": "Medium (36)",
     "effect": "High crit/always hit",
     "element": "phy",
     "target": "Single"
@@ -1342,31 +1372,6 @@
     "effect": "Sukukaja x4",
     "element": "sup"
   },
-  "Elec Repel": {
-    "effect": "Repels elec damage",
-    "element": "pas",
-    "rank": 10
-  },
-  "Fire Repel": {
-    "effect": "Repels fire damage",
-    "element": "pas",
-    "rank": 10
-  },
-  "Force Repel": {
-    "effect": "Repels force damage",
-    "element": "pas",
-    "rank": 10
-  },
-  "Ice Repel": {
-    "effect": "Repels ice damage",
-    "element": "pas",
-    "rank": 10
-  },
-  "Phys Repel": {
-    "effect": "Repels phys damage",
-    "element": "pas",
-    "rank": 12
-  },
   "Retaliate": {
     "effect": "50% chance to counter enemy's physical attack, medium damage",
     "element": "pas",
@@ -1380,12 +1385,12 @@
   },
   "Roundtrip": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (55)",
     "element": "ele",
     "target": "All"
   },
   "Sacrifice": {
-    "damage": "Heavy",
+    "damage": "Heavy (56)",
     "effect": "Kills user instantly",
     "element": "alm",
     "rank": 6,
@@ -1427,14 +1432,14 @@
   },
   "Shock": {
     "cost": 1009,
-    "damage": "Weak",
+    "damage": "Weak (25)",
     "element": "ele",
     "rank": 5,
     "target": "Multi"
   },
   "Showtime": {
     "cost": 1040,
-    "damage": "Heavy",
+    "damage": "Heavy (90)",
     "element": "alm",
     "target": "All"
   },
@@ -1464,20 +1469,20 @@
   },
   "Spiral Viper": {
     "cost": 18,
-    "damage": "Severe",
+    "damage": "Severe (62)",
     "effect": "Medium crit",
     "element": "phy",
     "target": "Single"
   },
   "Starlight": {
     "cost": 1022,
-    "damage": "Medium",
+    "damage": "Medium (50)",
     "element": "exp",
     "target": "All"
   },
   "Stasis Blade": {
     "cost": 22,
-    "damage": "Heavy",
+    "damage": "Heavy (53)",
     "effect": "Hight crit/low hit, 65% Bind",
     "element": "phy",
     "rank": 9,
@@ -1486,14 +1491,14 @@
   },
   "Stinger": {
     "cost": 12,
-    "damage": "Heavy",
+    "damage": "Heavy (40)",
     "effect": "40% instant death",
     "element": "alm",
     "target": "Single"
   },
   "Stone Bite": {
     "cost": 22,
-    "damage": "Medium",
+    "damage": "Medium (44)",
     "effect": "Medium crit/medium hit, 40% Stone",
     "element": "phy",
     "rank": 7,
@@ -1516,7 +1521,7 @@
   },
   "Stun Bite": {
     "cost": 18,
-    "damage": "Medium",
+    "damage": "Medium (44)",
     "effect": "Medium crit/medium hit, 40% Stun",
     "element": "phy",
     "rank": 6,
@@ -1525,7 +1530,7 @@
   },
   "Stun Claw": {
     "cost": 17,
-    "damage": "Medium",
+    "damage": "Medium (44)",
     "effect": "Medium crit, 40% Stun",
     "element": "phy",
     "rank": 5,
@@ -1542,7 +1547,7 @@
   },
   "Stun Needle": {
     "cost": 6,
-    "damage": "Weak",
+    "damage": "Weak (31)",
     "effect": "40% Stun",
     "element": "phy",
     "rank": 5,
@@ -1585,14 +1590,14 @@
   },
   "Tekisatsu": {
     "cost": 12,
-    "damage": "Heavy",
+    "damage": "Heavy (40)",
     "effect": "40% instant death",
     "element": "alm",
     "target": "Single"
   },
   "Tempest": {
     "cost": 25,
-    "damage": "Medium",
+    "damage": "Medium (31)",
     "effect": "Medium crit",
     "element": "phy",
     "rank": 8,
@@ -1601,7 +1606,7 @@
   },
   "Tentarafoo": {
     "cost": 1015,
-    "damage": "Medium",
+    "damage": "Medium (50)",
     "effect": "May cause panic",
     "element": "min",
     "rank": 8,
@@ -1609,7 +1614,7 @@
   },
   "Terrorblade": {
     "cost": 1010,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "effect": "x1-3, 30% Panic",
     "element": "phy",
     "target": "Random"
@@ -1637,14 +1642,14 @@
   },
   "Tornado": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "for",
     "rank": 7,
     "target": "Multi"
   },
   "Toxic Cloud": {
     "cost": 1008,
-    "damage": "Weak",
+    "damage": "Weak (25)",
     "effect": "May cause poison",
     "element": "cur",
     "rank": 4,
@@ -1653,7 +1658,7 @@
   },
   "Toxic Sting": {
     "cost": 7,
-    "damage": "Weak",
+    "damage": "Weak (31)",
     "effect": "40% Poison",
     "element": "phy",
     "rank": 3,
@@ -1673,7 +1678,7 @@
   },
   "Venom Bite": {
     "cost": 18,
-    "damage": "Medium",
+    "damage": "Medium (41)",
     "effect": "Medium crit/medium hit, 40% Poison",
     "element": "phy",
     "rank": 3,
@@ -1682,7 +1687,7 @@
   },
   "Venom Claw": {
     "cost": 18,
-    "damage": "Medium",
+    "damage": "Medium (41)",
     "effect": "Medium crit, 40% Poison",
     "element": "phy",
     "rank": 3,
@@ -1696,7 +1701,7 @@
   },
   "Violet Flash": {
     "cost": 1010,
-    "damage": "Medium",
+    "damage": "Medium (75)",
     "element": "exp",
     "rank": 8,
     "target": "Single"
@@ -1766,14 +1771,14 @@
   },
   "Wet Wind": {
     "cost": 1025,
-    "damage": "Medium",
+    "damage": "Medium (65)",
     "effect": "Stun",
     "element": "for",
     "target": "All"
   },
   "Whirlwind": {
     "cost": 1025,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "for",
     "target": "All"
   },
@@ -1785,7 +1790,7 @@
   },
   "Wind Cutter": {
     "cost": 1013,
-    "damage": "Severe",
+    "damage": "Severe (90)",
     "element": "for",
     "rank": 9,
     "target": "Single"
@@ -1798,7 +1803,7 @@
   },
   "Wing Buffet": {
     "cost": 1009,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "element": "for",
     "rank": 5,
     "requires": "Wings",
@@ -1812,56 +1817,56 @@
   },
   "Xeros Beat": {
     "cost": 40,
-    "damage": "Medium",
+    "damage": "Medium (37)",
     "effect": "Medium crit, 30% Bind",
     "element": "phy",
     "target": "All"
   },
   "Yoshitsune Show-up": {
     "cost": 9,
-    "damage": "Medium",
+    "damage": "Medium (36)",
     "effect": "High crit/always hit",
     "element": "phy",
     "target": "Single"
   },
   "Zan": {
     "cost": 1003,
-    "damage": "Weak",
+    "damage": "Weak (37)",
     "element": "for",
     "rank": 1,
     "target": "Single"
   },
   "Zandyne": {
     "cost": 1010,
-    "damage": "Heavy",
+    "damage": "Heavy (75)",
     "element": "for",
     "rank": 7,
     "target": "Single"
   },
   "Zanma": {
     "cost": 1006,
-    "damage": "Medium",
+    "damage": "Medium (55)",
     "element": "for",
     "rank": 4,
     "target": "Single"
   },
   "Zio": {
     "cost": 1003,
-    "damage": "Weak",
+    "damage": "Weak (30)",
     "element": "ele",
     "rank": 1,
     "target": "Single"
   },
   "Ziodyne": {
     "cost": 1010,
-    "damage": "Heavy",
+    "damage": "Heavy (65)",
     "element": "ele",
     "rank": 7,
     "target": "Single"
   },
   "Zionga": {
     "cost": 1006,
-    "damage": "Medium",
+    "damage": "Medium (45)",
     "element": "ele",
     "rank": 4,
     "target": "Single"
