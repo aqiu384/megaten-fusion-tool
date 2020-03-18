@@ -729,6 +729,13 @@
     "elem": "pas",
     "points": 12
   },
+  "Enemy Annihilation": {
+    "cost": 8,
+    "effect": "Phys Pierce, Debilitate for 1 turn",
+    "elem": "phy",
+    "power": 120,
+    "target": "All Foes"
+  },
   "Energy Drain": {
     "cost": 7,
     "effect": "Drains 25% dmg dealt and 1 MP",
@@ -1140,6 +1147,13 @@
     "effect": "Dmg -5% from multi-target attacks for every Ally Weak resist, -50% max",
     "elem": "pas"
   },
+  "Hell's Trivia": {
+    "cost": 6,
+    "effect": "Mamudo, Dark Pierce",
+    "elem": "dar",
+    "power": 130,
+    "target": "1 Foe"
+  },
   "Hellfire": {
     "cost": 5,
     "effect": "2-4 hits",
@@ -1398,6 +1412,10 @@
     "effect": "Luck +15",
     "elem": "pas",
     "points": 12
+  },
+  "Lunar Awakening": {
+    "effect": "Recovers 30% and cures own status ailments at end of enemy phase",
+    "elem": "pas"
   },
   "Lunar Blessing": {
     "effect": "Skill costs -1 MP",
@@ -2234,6 +2252,13 @@
     "power": 160,
     "target": "1 Foe"
   },
+  "Path of Prominence": {
+    "cost": 8,
+    "effect": "Luster Candy for 1 turn",
+    "elem": "alm",
+    "power": 100,
+    "target": "All Foes"
+  },
   "Pestilence": {
     "effect": "Nullify Instant Death prevention. At end of enemy phase, Reduce all Poisoned Foe HP by 50% max (<2000)",
     "elem": "pas"
@@ -2325,6 +2350,10 @@
   },
   "Pussyfoot": {
     "effect": "Ally eva +20%",
+    "elem": "pas"
+  },
+  "Radiant Mantra": {
+    "effect": "Casts Dekaja + Dekunda when enemy phase starts",
     "elem": "pas"
   },
   "Rains of Canaan": {
@@ -2927,6 +2956,10 @@
     "points": 8,
     "power": 140,
     "target": "All Foes"
+  },
+  "War Aid": {
+    "effect": "Great Aim + Repel Pierce",
+    "elem": "pas"
   },
   "War Cry": {
     "cost": 6,
