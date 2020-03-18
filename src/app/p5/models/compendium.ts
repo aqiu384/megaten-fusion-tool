@@ -179,7 +179,9 @@ export class Compendium implements ICompendium {
 
   updateDerivedData() {
     const demonEntries = Object.assign({}, this.demons);
-    const skills = Object.keys(this.skills).map(name => this.skills[name]);
+    const skills = Object.keys(this.skills)
+      .map(name => this.skills[name])
+      .filter(skill => skill.learnedBy.length !== 0 || skill.transfer.length !== 0);
 
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
