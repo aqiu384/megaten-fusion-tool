@@ -5,6 +5,7 @@ export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private pairRecipes: { [name: string]: NamePair[] } = {};
+  private entryRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
   private allIngredients: { [race: string]: number[] };
@@ -13,10 +14,8 @@ export class Compendium implements ICompendium {
   private _allSkills: Skill[];
 
   dlcDemons: { [name: string]: boolean } = {};
-  compConfig: CompendiumConfig;
 
-  constructor(compConfig: CompendiumConfig) {
-    this.compConfig = compConfig;
+  constructor(private compConfig: CompendiumConfig, private gameAbbr: string) {
     this.initImportedData();
     this.updateDerivedData();
   }
@@ -25,33 +24,38 @@ export class Compendium implements ICompendium {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const pairRecipes: { [name: string]: NamePair[] } = {};
+    const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
 
-    for (const [name, json] of Object.entries(this.compConfig.demonData)) {
-      demons[name] = {
-        name: name,
-        race: json['race'],
-        lvl: json['lvl'],
-        price: 100 * (Math.floor(Math.pow(json['stats'].slice(3).reduce((acc, stat) => stat + acc, 0), 2) / 20) + json['lvl']),
-        stats: json['stats'],
-        resists: json['nresists'] || json['resists'],
-        skills: json['nskills'] || json['skills'],
-        person: json['person'] || '',
-        fusion: 'normal'
-      };
+    for (const dataJson of this.compConfig.demonData[this.gameAbbr]) {
+      for (const [name, json] of Object.entries(dataJson)) {
+        demons[name] = {
+          name: name,
+          race: json['race'],
+          lvl: json['lvl'],
+          price: 100 * (Math.floor(Math.pow(json['stats'].slice(3).reduce((acc, stat) => stat + acc, 0), 2) / 20) + json['lvl']),
+          stats: json['stats'],
+          resists: (json['nresists'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
+          skills: json['nskills'] || json['skills'],
+          person: json['person'] || '',
+          fusion: 'normal'
+        };
+      }
     }
 
-    for (const [name, json] of Object.entries(this.compConfig.skillData)) {
-      skills[name] = {
-        name: name,
-        rank: json['cost'] ? json['cost'] / 100 : 0,
-        cost: json['cost'] || 0,
-        effect: json['effect'] || '',
-        target: json['target'] || 'Self',
-        element: json['elem'],
-        learnedBy: [],
-        level: 0
-      };
+    for (const dataJson of this.compConfig.skillData[this.gameAbbr]) {
+      for (const [name, json] of Object.entries(dataJson)) {
+        skills[name] = {
+          name: name,
+          rank: json['rank'] || json['cost'] / 100 || 0,
+          cost: json['cost'] || 0,
+          effect: json['effect'] || '',
+          target: json['prereq'] || json['target'] || 'Self',
+          element: json['elem'],
+          learnedBy: [],
+          level: 0
+        };
+      }
     }
 
     for (const race of this.compConfig.races) {
@@ -66,7 +70,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes)) {
+    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes[this.gameAbbr])) {
       const entry = demons[name];
       entry.fusion = recipe['prereq'] === 'accident' ? 'accident' : 'special';
       entry.prereq = recipe['prereq'];
@@ -80,6 +84,8 @@ export class Compendium implements ICompendium {
           const [name1, name2] = pair.split(' x ');
           return { name1, name2 };
         });
+      } else if (recipe['entries']) {
+        entryRecipes[name] = recipe['entries'];
       } else {
         pairRecipes[name] = [];
       }
@@ -88,6 +94,7 @@ export class Compendium implements ICompendium {
     this.demons = demons;
     this.skills = skills;
     this.pairRecipes = pairRecipes;
+    this.entryRecipes = entryRecipes;
     this.invertedDemons = inversions;
   }
 
@@ -107,7 +114,7 @@ export class Compendium implements ICompendium {
         ingredients[demon.race].push(demon.lvl);
       }
 
-      if (!this.pairRecipes.hasOwnProperty(name)) {
+      if (!this.pairRecipes[name] && !this.entryRecipes[name]) {
         results[demon.race].push(demon.lvl);
       }
     }
@@ -161,7 +168,7 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNameEntries(name: string): string[] {
-    return [];
+    return this.entryRecipes[name] || [];
   }
 
   getSpecialNamePairs(name: string): NamePair[] {

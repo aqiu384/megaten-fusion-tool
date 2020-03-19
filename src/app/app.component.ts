@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
   static readonly GAME_PREFIXES: { [game: string]: string } = {
     smtdsj: 'smtsj',
     p3fes: 'p3', p3aeg: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5', p5s: 'p5',
-    ds1: 'desu1', dso: 'desu1', ds2: 'desu2', ds2br: 'desu2'
+    dso: 'ds1', ds2br: 'ds2'
   };
 
   currentGame = 'none';

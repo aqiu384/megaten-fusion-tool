@@ -1,5 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
@@ -18,13 +19,18 @@ export class FusionDataService implements IFusionDataService {
   compendium: Observable<Compendium>;
   fusionChart: Observable<FusionChart>
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, router: Router) {
+    const gameCand = router.url.split('/')[1];
+    const game = compConfig.demonData[gameCand] ? gameCand : 'krch';
+
+    this.appName = compConfig.gameTitles[game] + ' Fusion Calculator';
+
     this.fissionCalculator = compConfig.fissionCalculator;
     this.fusionCalculator = compConfig.fusionCalculator;
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle + ' Fusion Calculator';
 
-    this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
+    this.compendium = new BehaviorSubject(new Compendium(compConfig, game)).asObservable();
     this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
   }
 

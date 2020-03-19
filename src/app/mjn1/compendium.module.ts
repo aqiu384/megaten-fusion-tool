@@ -38,7 +38,7 @@ for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
   entry.stats = entry.stats.slice(0, 8);
   entry['person'] = entry.race;
   entry['nskills'] = (entry.skills || []).reduce((acc, s) => { acc[s] = 0; return acc; }, {});
-  entry['nresists'] = [];
+  entry['resists'] = '';
 }
 
 for (const [skill, entry] of Object.entries(SKILL_DATA_JSON)) {
@@ -49,24 +49,27 @@ for (const [skill, entry] of Object.entries(SKILL_DATA_JSON)) {
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Majin Tensei',
+  gameTitles: { mjn1: 'Majin Tensei' },
   appCssClasses: ['kuzu', 'mjn1'],
+
   races,
   resistElems: [],
   skillElems,
   baseStats: COMP_CONFIG_JSON.baseStats,
   fusionLvlMod: 2.5,
+  resistCodes: {},
 
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
   fissionCalculator: MJN1_FISSION_CALCULATOR,
   fusionCalculator: MJN1_FUSION_CALCULATOR,
 
-  demonData: DEMON_DATA_JSON,
-  skillData: SKILL_DATA_JSON,
+  demonData: { mjn1: [DEMON_DATA_JSON] },
+  skillData: { mjn1: [SKILL_DATA_JSON] },
   normalTable: FUSION_CHART_JSON,
   elementTable: { elems: [], races: [], table: [] },
   mitamaTable: [],
-  specialRecipes: {}
+  specialRecipes: { mjn1: {} }
 };
 
 @NgModule({

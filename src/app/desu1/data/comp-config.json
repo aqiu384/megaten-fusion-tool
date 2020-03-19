@@ -2,20 +2,32 @@
   "baseStats": [
     "HP",
     "MP",
-    "MG",
     "St",
     "Ma",
     "Vi",
-    "Lu"
+    "Ag"
   ],
   "races": [
-    "Pyro",
-    "Frost",
-    "Volt",
-    "Wind",
-    "Fury",
-    "Pagan",
-    "Skill"
+    "Megami",
+    "Deity",
+    "Vile",
+    "Snake",
+    "Dragon",
+    "Divine",
+    "Avian",
+    "Fallen",
+    "Avatar",
+    "Beast",
+    "Wilder",
+    "Genma",
+    "Fairy",
+    "Tyrant",
+    "Kishin",
+    "Touki",
+    "Jaki",
+    "Femme",
+    "Element",
+    "Mitama"
   ],
   "resistCodes": {
     "w": 1125,
@@ -27,19 +39,20 @@
   },
   "resistElems": [
     "phys",
-    "gun",
     "fire",
     "ice",
     "elec",
     "force",
-    "death",
-    "mind"
+    "curse"
   ],
   "skillElems": [
+    "strike",
     "almighty",
+    "none",
     "recovery",
     "support",
     "passive",
-    "investigate"
+    "racial",
+    "auto"
   ]
 }

@@ -2,48 +2,141 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { SharedModule } from '../shared/shared.module';
-import { SharedCompendiumModule } from '../compendium/compendium.module';
-import { CompendiumRoutingModule } from './compendium-routing.module';
+import { CompendiumConfig } from '../krch/models';
+import {
+  COMPENDIUM_CONFIG,
+  FUSION_DATA_SERVICE,
+  SMT_NORMAL_FISSION_CALCULATOR,
+  SMT_NORMAL_FUSION_CALCULATOR
+} from '../compendium/constants';
 
-import { CompendiumComponent } from './components/compendium.component';
-import { DemonListContainerComponent } from './components/demon-list.component';
-import { SkillListContainerComponent } from './components/skill-list.component';
-import { DemonEntryContainerComponent, DemonEntryComponent } from './components/demon-entry.component';
-import { FusionChartContainerComponent } from './components/fusion-chart.component';
+import COMP_CONFIG_JSON from './data/comp-config.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
+import ELEMENT_CHART_JSON from '../desu1/data/element-chart.json';
+import SPECIAL_RECIPES_JSON from './data/van-special-recipes.json';
+import REC_SPECIAL_RECIPES_JSON from './data/rec-special-recipes.json';
 
-import { FusionDataService } from './fusion-data.service';
+import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
+import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
+import REC_DEMON_DATA_JSON from './data/rec-demon-data.json';
+import REC_SKILL_DATA_JSON from './data/rec-skill-data.json';
+import RACIAL_SKILLS_JSON from '../desu1/data/racial-skills.json';
 
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
-import { CompendiumConfig } from '../compendium/models';
-import { RaceOrder } from '../desu/constants';
-import { APP_TITLE } from './constants';
+import { FusionDataService } from '../krch/fusion-data.service';
+import { SmtKuzuCompendiumModule } from '../krch/smt-kuzu-compendium.module';
+import { CompendiumRoutingModule } from '../krch/compendium-routing.module';
 
-const compendiumConfig: CompendiumConfig = {
-  appTitle: APP_TITLE,
-  raceOrder: RaceOrder
+function getEnumOrder(target: string[]): { [key: string]: number } {
+  const result = {};
+  for (let i = 0; i < target.length; i++) {
+    result[target[i]] = i;
+  }
+  return result;
+}
+
+const rskillLookup = {}
+const enrskillLookup = {}
+const races = COMP_CONFIG_JSON.races;
+const resistElems = COMP_CONFIG_JSON.resistElems;
+const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+const MITAMA_TABLE = [
+  ['Nigi', 'Ara ', 'Kusi'],
+  ['Kusi', 'Ara '],
+  ['Saki'],
+  []
+];
+
+for (const dataJson of [VAN_SKILL_DATA_JSON, REC_SKILL_DATA_JSON]) {
+  for (const entry of Object.values(dataJson)) {
+    entry['elem'] = entry.element;
+    entry['rank'] = entry['rank'] || (entry['elem'] === 'auto' ? 1 : 99)
+  }
+}
+
+for (const [race, entry] of Object.entries(RACIAL_SKILLS_JSON)) {
+  if (races.includes(race)) {
+    rskillLookup[race] = entry.skill;
+    VAN_SKILL_DATA_JSON[entry.skill] = {
+      elem: 'racial',
+      effect: entry.effect
+    };
+
+    enrskillLookup[race] = entry.enskill;
+    VAN_SKILL_DATA_JSON[entry.enskill] = {
+      elem: 'racial',
+      effect: entry.eneffect
+    };
+  }
+}
+
+for (const dataJson of [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON]) {
+  for (const entry of Object.values(dataJson)) {
+    entry['skills'] = Object.assign({}, entry['command'] || {}, entry['passive'] || {});
+
+    if (rskillLookup[entry.race]) {
+      if (entry['raceup']) {
+        entry['skills'][rskillLookup[entry.race]] = 0;
+        entry['skills'][enrskillLookup[entry.race]] = entry['raceup'];
+      } else {
+        entry['skills'][enrskillLookup[entry.race]] = 0;
+      }
+    }
+  }
+}
+
+for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
+  SPECIAL_RECIPES_JSON[name] = { 'entries': entry };
+}
+
+SPECIAL_RECIPES_JSON['Ara Mitama'] = { pairs: ['Erthys x Aquans', 'Aeros x Flaemis'] };
+SPECIAL_RECIPES_JSON['Kusi Mitama'] = { pairs: ['Erthys x Flaemis', 'Aeros x Aquans'] };
+SPECIAL_RECIPES_JSON['Nigi Mitama'] = { pairs: ['Erthys x Aeros'] };
+SPECIAL_RECIPES_JSON['Saki Mitama'] = { pairs: ['Aquans x Flaemis'] };
+
+for (const [name, entry] of Object.entries(REC_SPECIAL_RECIPES_JSON)) {
+  REC_SPECIAL_RECIPES_JSON[name] = { 'entries': entry };
+}
+
+for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
+  REC_SPECIAL_RECIPES_JSON[name] = entry;
+}
+
+export const SMT_COMP_CONFIG: CompendiumConfig = {
+  appTitle: 'Devil Survivor',
+  gameTitles: { ds2: 'Devil Survivor', ds2br: 'Devil Survivor Overclocked' },
+
+  appCssClasses: ['kuzu', 'ds2'],
+  races,
+  resistElems,
+  skillElems,
+  baseStats: COMP_CONFIG_JSON.baseStats,
+  fusionLvlMod: 2.5,
+  resistCodes: COMP_CONFIG_JSON.resistCodes,
+
+  raceOrder: getEnumOrder(races),
+  elemOrder: getEnumOrder(skillElems),
+  fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
+  fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+
+  demonData: { ds2: [VAN_DEMON_DATA_JSON], ds2br: [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON] },
+  skillData: { ds2: [VAN_SKILL_DATA_JSON], ds2br: [VAN_SKILL_DATA_JSON, REC_SKILL_DATA_JSON] },
+  normalTable: FUSION_CHART_JSON,
+  elementTable: ELEMENT_CHART_JSON,
+  mitamaTable: MITAMA_TABLE,
+  specialRecipes: { ds2: SPECIAL_RECIPES_JSON, ds2br: REC_SPECIAL_RECIPES_JSON }
 };
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
-    SharedCompendiumModule,
+    SmtKuzuCompendiumModule,
     CompendiumRoutingModule
-  ],
-  declarations: [
-    CompendiumComponent,
-    DemonListContainerComponent,
-    SkillListContainerComponent,
-    DemonEntryContainerComponent,
-    DemonEntryComponent,
-    FusionChartContainerComponent
   ],
   providers: [
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
   ]
 })
 export class CompendiumModule { }

@@ -29,6 +29,16 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
+function resistNumToStr(value: number): string {
+  if (value < -1000) { return 'd'; }
+  if (value < 0) { return 'r'; }
+  if (value === 0) { return 'n'; }
+  if (value < 100) { return 's'; }
+  if (value < 1000) { return '-'; }
+  if (value < 2000) { return 'w'; }
+  return 'f';
+}
+
 const demonData = {};
 const skillData = {};
 const races = COMP_CONFIG_JSON.races;
@@ -44,6 +54,8 @@ const MITAMA_TABLE = [
 ];
 
 for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
+  entry['nresists'] = entry.resists.map(resistNumToStr).join('')
+
   if (entry.person !== 'N/A') {
     entry['race'] = entry.order;
     demonData[demon] = entry;
@@ -76,24 +88,27 @@ for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Raidou Kuzunoha vs. King Abaddon',
+  gameTitles: { krao: 'Raidou Kuzunoha vs. King Abaddon' },
+
   appCssClasses: ['kuzu', 'krao'],
   races,
   resistElems,
   skillElems,
   baseStats: COMP_CONFIG_JSON.baseStats,
   fusionLvlMod: 2.5,
+  resistCodes: COMP_CONFIG_JSON.resistCodes,
 
   raceOrder: getEnumOrder(races),
   elemOrder: getEnumOrder(skillElems),
   fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
   fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
 
-  demonData,
-  skillData,
+  demonData: { krao: [demonData] },
+  skillData: { krao: [skillData] },
   normalTable: FUSION_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
   mitamaTable: MITAMA_TABLE,
-  specialRecipes: SPECIAL_RECIPES_JSON
+  specialRecipes: { krao: SPECIAL_RECIPES_JSON }
 };
 
 @NgModule({
