@@ -1,10 +1,4 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  Input,
-  OnInit
-} from '@angular/core';
-
+import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
 import { SortedTableHeaderComponent } from '../../shared/sorted-table.component';
 
 @Component({

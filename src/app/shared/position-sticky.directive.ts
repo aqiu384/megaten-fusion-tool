@@ -8,7 +8,6 @@ import {
   OnDestroy
 } from '@angular/core';
 
-import { Observable } from 'rxjs';
 import { Subscription } from 'rxjs';
 
 import { PositionEdges } from './position-edges';

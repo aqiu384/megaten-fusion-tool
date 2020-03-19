@@ -1,4 +1,4 @@
-import { ElementDemons, Races } from '../../desu/constants';
+import { ElementDemons } from '../../desu/constants';
 import { FissionTable, FusionTable, ElementTable } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 

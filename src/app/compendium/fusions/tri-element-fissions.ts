@@ -1,4 +1,4 @@
-import { FissionRow, FissionTable, Compendium, SquareChart, NameTrio } from '../models';
+import { Compendium, SquareChart, NameTrio } from '../models';
 
 export function splitWithDiffRace(elem: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;

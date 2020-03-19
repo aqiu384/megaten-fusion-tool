@@ -1,11 +1,4 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Input
-} from '@angular/core';
-import { Title } from '@angular/platform-browser';
-
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
 import { DemonListComponent } from '../bases/demon-list.component';

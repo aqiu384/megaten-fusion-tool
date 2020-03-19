@@ -1,5 +1,5 @@
-import { Races, PrimeElements } from './constants';
-import { FissionTable, FusionTable, ElementTable, FissionRow, FusionRow } from '../../compendium/models';
+import { PrimeElements } from './constants';
+import { FissionTable, FusionTable, ElementTable, FusionRow } from '../../compendium/models';
 import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 
 import FUSION_CHART_JSON from '../data/fusion-chart.json';
@@ -10,12 +10,6 @@ export class FusionChart extends SmtFusionChart {
     Beast: 'UMA',
     Genma: 'Fiend',
     Deity: 'Enigma'
-  };
-
-  private static INVERSE_RACE_CONVERTERS = {
-    UMA: 'Beast',
-    Fiend: 'Genma',
-    Enigma: 'Deity'
   };
 
   private static INCLUDED_SUBAPPS = {

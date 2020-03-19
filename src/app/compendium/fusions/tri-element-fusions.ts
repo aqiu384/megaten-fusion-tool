@@ -1,4 +1,4 @@
-import { FusionTable, Compendium, NameTrio, SquareChart } from '../models';
+import { Compendium, NameTrio, SquareChart } from '../models';
 import { fuseWithNormResult, fuseWithSpecResult } from './smt-element-fusions';
 
 export function fuseInElementPair(elem: string, comp: Compendium, chart: SquareChart): NameTrio[] {

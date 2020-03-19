@@ -1,7 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PositionEdgesService } from './position-edges.service';
 import { PositionStickyDirective } from './position-sticky.directive';
 import { ColumnWidthsDirective } from './column-widths.directive';
 

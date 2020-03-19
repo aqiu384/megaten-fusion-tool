@@ -144,7 +144,7 @@ const appRoutes: Routes = [
   {
     path: 'mjn2',
     loadChildren: './mjn2/compendium.module#CompendiumModule',
-    data: { appName: 'Majin Tensei 2: Spiral Nemesis' }
+    data: { appName: 'Majin Tensei II: Spiral Nemesis' }
   },
   {
     path: 'ds1',

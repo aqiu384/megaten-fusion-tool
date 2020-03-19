@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy, Input, Inject } from '@angular/core';
-import { Observable } from 'rxjs';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { SortedTableHeaderComponent, SortedTableComponent } from '../../shared/sorted-table.component';

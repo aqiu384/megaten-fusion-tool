@@ -33,6 +33,6 @@ export class DemonListContainerComponent extends DLCC {
       this.compConfig.raceOrder[d1.race] -
       this.compConfig.raceOrder[d2.race]
     ) * 200 + d2.lvl - d1.lvl;
-    this.appName = `List of Demons - ${this.compConfig.appTitle}`;
+    this.appName = `List of Demons - ${fusionDataService.appName}`;
   }
 }

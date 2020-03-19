@@ -2,9 +2,7 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestro
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { APP_TITLE } from '../models/constants';
 import { FusionChart } from '../models/fusion-chart';
-
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({

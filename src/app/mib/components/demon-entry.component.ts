@@ -8,7 +8,6 @@ import { Demon } from '../models';
 import {
   Arcanas,
   DemonOrders,
-  BaseAtks,
   BaseStats,
   PartyMembers,
   PhysResistanceElements,

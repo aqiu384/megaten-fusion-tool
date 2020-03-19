@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 
-import { BaseStats, ResistanceElements, ElementOrder, InheritElements, APP_TITLE } from '../models/constants';
+import { BaseStats, ResistanceElements, ElementOrder, InheritElements } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -85,7 +85,6 @@ export class DemonEntryComponent {
   `
 })
 export class DemonEntryContainerComponent extends DECC {
-  appName = APP_TITLE;
   isCursed = false;
 
   constructor(
@@ -95,6 +94,7 @@ export class DemonEntryContainerComponent extends DECC {
     private fusionDataService: FusionDataService
   ) {
     super(route, title, currentDemonService, fusionDataService);
+    this.appName = fusionDataService.appName;
   }
 
   subscribeAll() {

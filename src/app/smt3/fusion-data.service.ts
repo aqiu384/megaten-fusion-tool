@@ -11,6 +11,7 @@ import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
+  appName = 'Shin Megami tensei III: Nocturne Fusion Calculator';
 
   private _compendium = new Compendium();
   private _compendium$ = new BehaviorSubject(this._compendium);

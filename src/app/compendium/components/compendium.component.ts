@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Inject, Input, OnInit, OnDestroy, ViewChild } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -14,7 +14,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
       <thead>
         <tr>
           <th class="nav" [attr.colspan]="hlength">
-            <div><a routerLink="{{ mainList }}s">{{ appName }} Fusion Tool</a></div>
+            <div><a routerLink="{{ mainList }}s">{{ appName }} Fusion Calculator</a></div>
           </th>
         </tr>
         <tr>

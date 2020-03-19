@@ -1,7 +1,6 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { BaseStats, ResistElements, ElementOrder } from '../../desu/constants';

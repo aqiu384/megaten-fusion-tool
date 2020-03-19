@@ -47,7 +47,7 @@ export class FusionDataService implements IFusionDataService {
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, router: Router) {
     this.compConfig = compConfig;
-    this.appName = compConfig.appTitle;
+    this.appName = compConfig.appTitle + ' Fusion Calculator';
 
     this.fusionSettingsKey = compConfig.settingsKey;
     this.fusionSettingsVersion = compConfig.settingsVersion;

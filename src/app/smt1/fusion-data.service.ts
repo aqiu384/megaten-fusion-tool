@@ -49,7 +49,7 @@ export class FusionDataService implements IFusionTrioService {
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.compConfig = compConfig;
-    this.appName = compConfig.appTitle;
+    this.appName = compConfig.appTitle + ' Fusion Calculator';
 
     this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
 

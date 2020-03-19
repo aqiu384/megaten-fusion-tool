@@ -18,7 +18,7 @@ export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   settingsKey = VAN_FUSION_SETTINGS_KEY;
-  appName = 'Shin Megami Tensei: Strange Journey';
+  appName = 'Shin Megami Tensei: Strange Journey Fusion Calculator';
   isRedux = false;
 
   private _compendium: Compendium;
@@ -38,7 +38,7 @@ export class FusionDataService implements IFusionDataService {
 
     if (game === 'smtdsj') {
       this.settingsKey = DSJ_FUSION_SETTINGS_KEY;
-      this.appName = 'Shin Megami Tensei: Strange Journey Redux';
+      this.appName = 'Shin Megami Tensei: Strange Journey Redux Fusion Calculator';
       this.isRedux = true;
     }
 

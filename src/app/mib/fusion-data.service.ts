@@ -14,7 +14,7 @@ export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   settingsKey = FUSION_SETTINGS_KEY;
-  appName = APP_TITLE;
+  appName = APP_TITLE + ' Fusion Calculator';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;

@@ -57,12 +57,6 @@ export const ResistanceElements = [
   'cur'
 ];
 
-export const SpecialResistances = {
-  'all': ResistanceElements,
-  'mag': [ 'fir', 'ice', 'ele', 'for' ],
-  'ail': [ 'cur', 'ner', 'min' ]
-};
-
 export const SkillElements = ResistanceElements.concat(
   'alm',
   'rec',

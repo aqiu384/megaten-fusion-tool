@@ -1,10 +1,4 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  AfterViewChecked
-} from '@angular/core';
-
+import { Input, OnInit, AfterViewChecked } from '@angular/core';
 import { SortedTableComponent } from '../../shared/sorted-table.component';
 import { Skill } from '../models';
 

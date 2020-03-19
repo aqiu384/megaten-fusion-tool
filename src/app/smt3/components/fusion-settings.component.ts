@@ -2,9 +2,6 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestro
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { APP_TITLE } from '../models/constants';
-import { FusionChart } from '../models/fusion-chart';
-
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
@@ -45,7 +42,7 @@ export class FusionSettingsComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.title.setTitle(`Fusion Settings - ${APP_TITLE}`);
+    this.title.setTitle(`Fusion Settings - ${this.fusionDataService.appName}`);
     this.subscriptions.push(this.fusionDataService.fusionChart.subscribe(chart => {
       this.changeDetectorRef.markForCheck();
       this._chartSettings = Object.assign({}, chart.chartSettings);

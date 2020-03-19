@@ -1,13 +1,11 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { BaseStats, ResistanceElements, InheritElements, Ailments, SkillElementOrder } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
-import { FusionChart } from '../models/fusion-chart';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';

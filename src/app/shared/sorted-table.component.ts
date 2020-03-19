@@ -4,10 +4,7 @@ import {
   EventEmitter,
   ViewChild
 } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ColumnWidthsDirective } from './column-widths.directive';
-
-import { PositionEdgesService } from '../shared/position-edges.service';
 import { PositionStickyDirective } from '../shared/position-sticky.directive';
 
 export abstract class SortedTableHeaderComponent {

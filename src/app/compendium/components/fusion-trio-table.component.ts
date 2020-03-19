@@ -11,10 +11,7 @@ import {
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { SortedTableComponent, SortedTableHeaderComponent } from '../../shared/sorted-table.component';
-
-import { FusionTrio, NameTrio } from '../models';
-
-import { BehaviorSubject } from 'rxjs';
+import { FusionTrio } from '../models';
 
 @Component({
   selector: 'tbody.app-fusion-trio-table-row',

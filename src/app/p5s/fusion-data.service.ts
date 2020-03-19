@@ -37,7 +37,7 @@ export class FusionDataService implements IFusionDataService {
   fusionChart: Observable<PersonaFusionChart>;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
-    this.appName = compConfig.appTitle;
+    this.appName = compConfig.appTitle + ' Fusion Calculator';
     this.compConfig = compConfig;
 
     this._compendium = new Compendium(compConfig);

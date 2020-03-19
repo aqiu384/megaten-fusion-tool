@@ -1,13 +1,5 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  Input,
-  OnInit,
-  OnChanges
-} from '@angular/core';
-
-import { Skill } from '../models';
-import { Compendium } from '../models';
+import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges } from '@angular/core';
+import { Compendium, Skill } from '../models';
 
 @Component({
   selector: 'app-demon-skills',

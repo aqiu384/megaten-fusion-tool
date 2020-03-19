@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Subscription } from 'rxjs';
 
 import { FUSION_DATA_SERVICE } from '../constants';

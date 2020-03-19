@@ -41,7 +41,7 @@ export class FusionDataService implements IFusionTrioService {
     const gameCand = router.url.split('/')[1];
     const game = compConfig.demonData[gameCand] ? gameCand : 'p4';
 
-    this.appName = compConfig.gameTitles[game];
+    this.appName = compConfig.gameTitles[game] + ' Fusion Calculator';
     this.compConfig = compConfig;
     this.gameAbbr = game;
 

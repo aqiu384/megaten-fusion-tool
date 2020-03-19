@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
@@ -62,7 +62,7 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     this.subscriptions.push(
       this.route.parent.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
-        this.title2.setTitle(`Fusion Chart - ${this.appName}`);
+        this.title2.setTitle(`Fusion Chart - ${this.appName} Fusion Calculator`);
       }));
   }
 

@@ -28,5 +28,8 @@ export class DemonListContainerComponent extends DLCC {
     title: Title,
     changeDetectorRef: ChangeDetectorRef,
     fusionDataService: FusionDataService
-  ) { super(title, changeDetectorRef, fusionDataService); }
+  ) {
+    super(title, changeDetectorRef, fusionDataService);
+    this.appName = `List of Demons - ${fusionDataService.appName}`;
+  }
 }

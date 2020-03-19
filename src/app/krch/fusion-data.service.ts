@@ -22,7 +22,7 @@ export class FusionDataService implements IFusionDataService {
     this.fissionCalculator = compConfig.fissionCalculator;
     this.fusionCalculator = compConfig.fusionCalculator;
     this.compConfig = compConfig;
-    this.appName = compConfig.appTitle;
+    this.appName = compConfig.appTitle + ' Fusion Calculator';
 
     this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
     this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();

@@ -1,8 +1,7 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, Output, EventEmitter} from '@angular/core';
+import { Component, ChangeDetectionStrategy, Output, EventEmitter} from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { PasswordEncodings } from '../models/constants';
-import { PasswordGeneratorComponent } from './password-generator.component';
 
 @Component({
   selector: 'app-demon-password',

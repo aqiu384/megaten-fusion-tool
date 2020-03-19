@@ -19,7 +19,7 @@ import REC_SKILL_DATA_JSON from './data/rec-skill-data.json';
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
-  appName = 'Devil Survivor 2';
+  appName = 'Devil Survivor 2 Fusion Calculator';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -36,7 +36,7 @@ export class FusionDataService implements IFusionDataService {
     const specRecipesJsons: any[] = [VAN_SPECIAL_RECIPES_JSON];
 
     if (game === 'ds2br') {
-      this.appName = 'Devil Survivor 2 Record Breaker';
+      this.appName = 'Devil Survivor 2 Record Breaker Fusion Calculator';
       demonDataJsons.push(REC_DEMON_DATA_JSON);
       skillDataJsons.push(REC_SKILL_DATA_JSON);
       specRecipesJsons.push(REC_SPECIAL_RECIPES_JSON);

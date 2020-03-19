@@ -1,12 +1,5 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  AfterViewChecked
-} from '@angular/core';
-
+import { Input, OnInit, AfterViewChecked } from '@angular/core';
 import { SortedTableComponent } from '../../shared/sorted-table.component';
-import { ResistOrder } from '../constants';
 import { Demon } from '../models';
 
 export class DemonListComponent<TDemon extends Demon> extends SortedTableComponent<TDemon> implements OnInit, AfterViewChecked {

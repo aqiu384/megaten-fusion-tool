@@ -73,7 +73,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.route.parent.data.subscribe(data => {
         this.appName = data.appName;
-        this.title2.setTitle(`Fusion Chart - ${data.appName}`);
+        this.title2.setTitle(`Fusion Chart - ${data.appName} Fusion Calculator`);
       }));
   }
 

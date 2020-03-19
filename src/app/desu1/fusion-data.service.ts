@@ -18,7 +18,7 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
-  appName = 'Devil Survivor';
+  appName = 'Devil Survivor Fusion Calculator';
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -34,7 +34,7 @@ export class FusionDataService implements IFusionDataService {
     const skillDataJsons: any[] = [VAN_SKILL_DATA_JSON];
 
     if (game === 'dso') {
-      this.appName = 'Devil Surivor Overclocked';
+      this.appName = 'Devil Surivor Overclocked Fusion Calculator';
       demonDataJsons.push(OVE_DEMON_DATA_JSON);
       skillDataJsons.push(OVE_SKILL_DATA_JSON);
     }
