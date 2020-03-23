@@ -24,11 +24,9 @@ export class FusionDataService implements IFusionDataService {
     const game = compConfig.demonData[gameCand] ? gameCand : 'krch';
 
     this.appName = compConfig.gameTitles[game] + ' Fusion Calculator';
-
     this.fissionCalculator = compConfig.fissionCalculator;
     this.fusionCalculator = compConfig.fusionCalculator;
     this.compConfig = compConfig;
-    this.appName = compConfig.appTitle + ' Fusion Calculator';
 
     this.compendium = new BehaviorSubject(new Compendium(compConfig, game)).asObservable();
     this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();

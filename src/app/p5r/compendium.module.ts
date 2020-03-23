@@ -52,7 +52,10 @@ for (const json of [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON]) {
 for (const entry of Object.values(ENEMY_DATA_JSON)) {
   entry['exp'] = 0;
   entry['yen'] = 0;
-  entry['stats'] = [0, 0, 0, 0, 0, 0, 0];
+  entry['stats'] = entry.stats ?
+    [entry.stats[0], Math.floor(entry.stats[0] * 0.66)] :
+    [entry.lvl * 15, entry.lvl * 10];
+  entry['stats'] = entry.stats.concat([0, 0, 0, 0, 0]);
   entry['area'] = [entry['areas']];
 }
 

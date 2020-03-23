@@ -103,7 +103,7 @@ for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Devil Survivor',
-  gameTitles: { ds2: 'Devil Survivor', ds2br: 'Devil Survivor Overclocked' },
+  gameTitles: { ds2: 'Devil Survivor 2', ds2br: 'Devil Survivor 2 Record Breaker' },
 
   appCssClasses: ['kuzu', 'ds2'],
   races,

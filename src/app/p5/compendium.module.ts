@@ -16,7 +16,6 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
-import SUBBOSS_DATA_JSON from './data/subboss-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -62,7 +61,7 @@ export const P5_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   demonData: [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON],
   skillData: [SKILL_DATA_JSON],
-  enemyData: [ENEMY_DATA_JSON, SUBBOSS_DATA_JSON],
+  enemyData: [ENEMY_DATA_JSON],
 
   normalTable: FUSION_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,

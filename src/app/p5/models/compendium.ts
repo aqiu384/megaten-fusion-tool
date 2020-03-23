@@ -53,13 +53,7 @@ export class Compendium implements ICompendium {
 
     for (const enemyDataJson of this.compConfig.enemyData) {
       for (const [name, enemy] of Object.entries(enemyDataJson)) {
-        const drops = enemy['drops'] || [];
-
-        if (enemy['card'] && enemy['card'] != '-') {
-          drops.push(enemy['card']);
-        } if (!drops.length) {
-          drops.push('-');
-        }
+        const drops = [enemy['material'] || '-', enemy['armor'] || '-', enemy['card'] || '-'].filter(drop => drop !== '-');
 
         enemies[name] = {
           name,
@@ -75,7 +69,7 @@ export class Compendium implements ICompendium {
           fusion:  'normal',
           skills:  (enemy['skills'] || []).reduce((acc, s) => { acc[s] = 0; return acc }, {}),
           area:    enemy['area'].join(', '),
-          drop:    drops.join(', '),
+          drop:    drops.join(', ') || '-',
           isEnemy: true
         };
       }
