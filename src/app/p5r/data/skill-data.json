@@ -88,6 +88,10 @@
     "effect": "Ailment success rate +25%",
     "element": "passive"
   },
+  "Ailment Hunter": {
+    "effect": "Damage +25% for each foe afflicted with an ailment",
+    "element": "trait"
+  },
   "Akasha Arts": {
     "cost": 20,
     "effect": "Heavy damage to all foes, x2 hits",
@@ -103,11 +107,6 @@
     "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 50% for all allies",
     "element": "trait",
     "unique": "Agnes"
-  },
-  "All Judge": {
-    "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 25% for all allies",
-    "element": "trait",
-    "unique": "Johanna"
   },
   "All-out Attack Boost": {
     "effect": "Increases damage from All-out Attacks",
@@ -149,7 +148,7 @@
     "element": "passive"
   },
   "Apocalyptic Fury": {
-    "effect": "Chance to strengthen Phys attacks by 30%",
+    "effect": "Phys and Gun damage +30%",
     "element": "trait"
   },
   "Apt Pupil": {
@@ -166,6 +165,10 @@
     "cost": 13,
     "effect": "Heavy damage to 1 foe",
     "element": "phys"
+  },
+  "Atomic Bloodline": {
+    "effect": "Halves costs of Nuke skills",
+    "element": "trait"
   },
   "Atomic Flare": {
     "cost": 1048,
@@ -195,11 +198,7 @@
     "element": "passive"
   },
   "Ave Maria": {
-    "effect": "Chance to reduce costs of Support spells by 75%",
-    "element": "trait"
-  },
-  "Avenger": {
-    "effect": "Doubles damage from Counter skills",
+    "effect": "Reduces costs of Support spells by 75%",
     "element": "trait"
   },
   "Ayamur": {
@@ -249,8 +248,8 @@
     "effect": "Bless damage +25%",
     "element": "passive"
   },
-  "Bless Lineage": {
-    "effect": "Chance to halve costs of Bless skills",
+  "Blessed Bloodline": {
+    "effect": "Halves costs of Bless skills",
     "element": "trait"
   },
   "Bloodbath": {
@@ -258,13 +257,14 @@
     "effect": "Heavy damage to all foes, Low chance of Fear",
     "element": "phys"
   },
-  "Bloodshot Gaze": {
+  "Bloodstained Eyes": {
     "effect": "Raises evasion against foes afflicted with ailments",
     "element": "trait"
   },
-  "Bloodsucker": {
-    "effect": "Doubles effectiveness of absorption skills",
-    "element": "trait"
+  "Bolstering Force": {
+    "effect": "Damage dealt during 1 More +50%",
+    "element": "trait",
+    "unique": "Tsukiyomi"
   },
   "Brain Buster": {
     "cost": 22,
@@ -315,10 +315,6 @@
     "effect": "Burn success rate +25%",
     "element": "passive"
   },
-  "Burning Touch": {
-    "effect": "Increases chance of inflicting Burn after Baton Pass",
-    "element": "trait"
-  },
   "Cadenza": {
     "cost": 1024,
     "effect": "Recover 50% HP for all allies, Masukukaja",
@@ -327,10 +323,6 @@
   },
   "Chained Lineage": {
     "effect": "Greatly raises damage dealt after Baton Pass",
-    "element": "trait"
-  },
-  "Chained Technique": {
-    "effect": "Raises damage dealt after Baton Pass",
     "element": "trait"
   },
   "Champion Cup": {
@@ -352,16 +344,16 @@
     "element": "support",
     "unique": "William"
   },
-  "Charging Bull": {
-    "effect": "Scales damage dealt against lost HP under 50%",
-    "element": "trait",
-    "unique": "Asterius"
-  },
   "Checkmate": {
     "cost": 1090,
     "effect": "Matarunda + Marakunda + Masukunda",
     "element": "support",
     "unique": "Agnes"
+  },
+  "Circle of Sadness": {
+    "effect": "Activates endure up to 4 times",
+    "element": "trait",
+    "unique": "Orpheus"
   },
   "Cleave": {
     "cost": 6,
@@ -373,7 +365,11 @@
     "element": "passive"
   },
   "Cocytus": {
-    "effect": "Chance to reduce costs of Ice skills by 75%",
+    "effect": "Reduces costs of Ice skills by 75%",
+    "element": "trait"
+  },
+  "Cold-Blooded": {
+    "effect": "Increases chance of inflicting Freeze during 1 More",
     "element": "trait"
   },
   "Conceal": {
@@ -421,8 +417,8 @@
     "effect": "15% chance of reflecting Phys attack",
     "element": "passive"
   },
-  "Creation Ceremony": {
-    "effect": "Chance to scale damage dealt and received against Compendium completion rate",
+  "Country Maker": {
+    "effect": "Scales damage dealt and received against Compendium completion rate",
     "element": "trait",
     "unique": "Izanagi-no-Okami"
   },
@@ -430,7 +426,7 @@
     "effect": "Gun damage +50%",
     "element": "passive"
   },
-  "Crisis Management": {
+  "Crisis Control": {
     "effect": "Reduces damage taken when weakness struck",
     "element": "trait"
   },
@@ -458,14 +454,9 @@
     "effect": "Curse damage +25%",
     "element": "passive"
   },
-  "Curse Lineage": {
-    "effect": "Chance to halve costs of Curse skills",
+  "Cursed Bloodline": {
+    "effect": "Halves costs of Curse skills",
     "element": "trait"
-  },
-  "Cycle of Sorrow": {
-    "effect": "Activates endure up to 4 times",
-    "element": "trait",
-    "unique": "Orpheus"
   },
   "Daybreak Bell": {
     "effect": "High chance to prevent down when weakness struck for all allies",
@@ -482,10 +473,6 @@
     "effect": "Severe damage to 1 foe, Damage +50% after Baton Pass",
     "element": "phys"
   },
-  "Deadly Plague": {
-    "effect": "Increases success rate of instant death skills",
-    "element": "trait"
-  },
   "Death Scythe": {
     "cost": 20,
     "effect": "Severe damage to 1 foe, Medium chance of Fear",
@@ -495,6 +482,10 @@
     "cost": 22,
     "effect": "Medium damage to all foes, x1-2 hits",
     "element": "phys"
+  },
+  "Deathly Illness": {
+    "effect": "Increases success rate of instant death skills",
+    "element": "trait"
   },
   "Debilitate": {
     "card": "Jazz 12/11",
@@ -554,7 +545,7 @@
     "element": "healing"
   },
   "Die Already!": {
-    "effect": "Chance to reduce costs of instant death skills to 0",
+    "effect": "Reduces costs of instant death skills to 0",
     "element": "trait"
   },
   "Die For Me!": {
@@ -562,11 +553,6 @@
     "effect": "Instant death to all foes, High chance",
     "element": "curse",
     "unique": "Alice"
-  },
-  "Divine Ceremony": {
-    "effect": "Increases chance of ally traits activating",
-    "element": "trait",
-    "unique": "Izanagi"
   },
   "Divine Grace": {
     "card": "Fusion Accident",
@@ -645,13 +631,17 @@
     "effect": "Light damage to 1 foe, x2 hits",
     "element": "gun"
   },
+  "Draining Mouth": {
+    "effect": "Doubles effectiveness of absorption skills",
+    "element": "trait"
+  },
   "Dream Needle": {
     "cost": 8,
     "effect": "Light damage to 1 foe",
     "element": "gun"
   },
   "Drunken Frenzy": {
-    "effect": "Chance to reduce costs of Fire skills by 75%",
+    "effect": "Reduces costs of Fire skills by 75%",
     "element": "trait"
   },
   "Dying Will": {
@@ -690,14 +680,14 @@
     "effect": "Removes innate Elec resistances from all foes",
     "element": "support"
   },
-  "Elec Lineage": {
-    "effect": "Chance to halve costs of Elec skills",
-    "element": "trait"
-  },
   "Elec Wall": {
     "cost": 1018,
     "effect": "Gives Elec resistance for 3 turns to 1 ally",
     "element": "support"
+  },
+  "Electric Bloodline": {
+    "effect": "Halves costs of Elec skills",
+    "element": "trait"
   },
   "Emergency Shift": {
     "effect": "Chance to swap current party with backups when 2 or more people are KO'd",
@@ -774,10 +764,6 @@
     "effect": "High chance of Fear to 1 foe",
     "element": "ailment"
   },
-  "Exquisite Technique": {
-    "effect": "Strengthens technical damage by 25%",
-    "element": "trait"
-  },
   "False Painting": {
     "card": "Ring of Vanity",
     "cost": 1022,
@@ -821,10 +807,6 @@
     "effect": "Removes innate Fire resistances from all foes",
     "element": "support"
   },
-  "Fire Lineage": {
-    "effect": "Chance to halve costs of Fire skills",
-    "element": "trait"
-  },
   "Fire Wall": {
     "cost": 1018,
     "effect": "Gives Fire resistance for 3 turns to 1 ally",
@@ -835,7 +817,7 @@
     "element": "passive"
   },
   "Five Elements": {
-    "effect": "Strengthens technical damage by 50%",
+    "effect": "Technical damage +50%",
     "element": "trait"
   },
   "Flash Bomb": {
@@ -843,12 +825,8 @@
     "effect": "Medium damage to all foes, Low chance of Dizzy",
     "element": "phys"
   },
-  "Focused Gaze": {
-    "effect": "Chance to strengthen single-target magic by 20%",
-    "element": "trait"
-  },
   "Forbidden Knowledge": {
-    "effect": "Chance to reduce costs of magic attack skills by 75%",
+    "effect": "Reduces costs of magic attack skills by 75%",
     "element": "trait"
   },
   "Forget Boost": {
@@ -869,17 +847,17 @@
     "effect": "Increases susceptibility to all ailments for 1 foe",
     "element": "almighty"
   },
-  "Foul Contagion": {
+  "Foul Odor": {
     "effect": "Increases chance of inflicting ailments after Baton Pass",
+    "element": "trait"
+  },
+  "Foul Stench": {
+    "effect": "Increases chance of inflicting ailments",
     "element": "trait"
   },
   "Freeze Boost": {
     "effect": "Freeze success rate +25%",
     "element": "passive"
-  },
-  "Freezing Follow-up": {
-    "effect": "Increases chance of inflicting Freeze on downed foe",
-    "element": "trait"
   },
   "Frei": {
     "card": "CJ Theater",
@@ -897,10 +875,24 @@
     "effect": "Medium damage to 1 foe",
     "element": "nuke"
   },
+  "Frenzied Bull": {
+    "effect": "Scales damage dealt against lost HP under 50%",
+    "element": "trait",
+    "unique": "Asterius"
+  },
+  "Frigid Bloodline": {
+    "effect": "Halves costs of Ice skills",
+    "element": "trait"
+  },
   "Furious Spirit": {
     "effect": "Low chance to strengthen Phys attacks by 80% for all allies",
     "element": "trait",
     "unique": "William"
+  },
+  "Gaia Pact": {
+    "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 25% for all allies",
+    "element": "trait",
+    "unique": "Johanna"
   },
   "Gambler Intuition": {
     "card": "Ring of Envy",
@@ -944,22 +936,36 @@
     "effect": "Colossal damage to all foes",
     "element": "phys"
   },
+  "Gloomy Child": {
+    "effect": "Activates all equipped special weather passives",
+    "element": "trait"
+  },
+  "Gluttonmouth": {
+    "effect": "Strengthens own HP recovery by 50%",
+    "element": "trait"
+  },
   "Goblet of Sin": {
     "effect": "Increases chance of inflicting ailments on downed foes",
     "element": "trait"
+  },
+  "God Maker": {
+    "effect": "Increases chance of ally traits activating",
+    "element": "trait",
+    "unique": "Izanagi"
   },
   "God's Hand": {
     "cost": 25,
     "effect": "Colossal damage to 1 foe",
     "element": "phys"
   },
+  "Grace of the Olive": {
+    "effect": "Reduces costs of skills to 0 after Baton Pass",
+    "element": "trait",
+    "unique": "Athena"
+  },
   "Great Aim": {
     "effect": "Gun hit rate +5%",
     "element": "passive"
-  },
-  "Group Hypnosis": {
-    "effect": "Extends buffs targeting allies by 1 turn",
-    "element": "trait"
   },
   "Growth 1": {
     "effect": "Gains 25% EXP when not equipped",
@@ -981,6 +987,11 @@
     "element": "support",
     "unique": "??? Ishi"
   },
+  "Hallowed Spirit": {
+    "effect": "Doubles own HP and SP recovery",
+    "element": "trait",
+    "unique": "Messiah"
+  },
   "Hama": {
     "cost": 1006,
     "effect": "Instant death to 1 foe, Low chance",
@@ -1000,6 +1011,11 @@
     "effect": "Light damage to all foes, x8 hits",
     "element": "phys",
     "unique": "Yoshitsune"
+  },
+  "Hazy Presence": {
+    "effect": "Increases chance of ally follow-up attacks",
+    "element": "trait",
+    "unique": "Raoul"
   },
   "Headbutt": {
     "cost": 9,
@@ -1022,12 +1038,12 @@
     "effect": "Heavy damage to all foes",
     "element": "phys"
   },
-  "Heavyweight": {
-    "effect": "Chance to strengthen Phys skills by 20%",
+  "Heated Bloodline": {
+    "effect": "Halves costs of Fire skills",
     "element": "trait"
   },
   "Herald's Grace": {
-    "effect": "Chance to reduce costs of Bless skills by 75%",
+    "effect": "Reduces costs of Bless skills by 75%",
     "element": "trait"
   },
   "Herald's Verdict": {
@@ -1035,13 +1051,8 @@
     "element": "trait"
   },
   "Heretic Charisma": {
-    "effect": "Chance to strengthen magic skills by 50%, Cannot exceed 100% limit",
+    "effect": "Magic damage +50%, Cannot exceed 100% limit",
     "element": "trait"
-  },
-  "Hidden Presence": {
-    "effect": "Increases chance of ally follow-up attacks",
-    "element": "trait",
-    "unique": "Raoul"
   },
   "High Counter": {
     "card": "CJ Leblanc",
@@ -1053,13 +1064,13 @@
     "element": "trait",
     "unique": "Necronomicon"
   },
-  "Hollow Fool": {
-    "effect": "Raises damage dealt by 40% for each foe afflicted with an ailment",
+  "Hollow Jester": {
+    "effect": "Damage +40% for each foe afflicted with an ailment",
     "element": "trait",
     "unique": "Magatsu-Izanagi"
   },
   "Hunting Premonition": {
-    "effect": "Chance to reduce costs of Elec skills by 75%",
+    "effect": "Reduces costs of Elec skills by 75%",
     "element": "trait"
   },
   "Hysterical Slap": {
@@ -1085,10 +1096,6 @@
     "effect": "Removes innate Ice resistances from all foes",
     "element": "support"
   },
-  "Ice Lineage": {
-    "effect": "Chance to halve costs of Ice skills",
-    "element": "trait"
-  },
   "Ice Wall": {
     "cost": 1018,
     "effect": "Gives Ice resistance for 3 turns to 1 ally",
@@ -1099,6 +1106,10 @@
     "element": "trait",
     "unique": "Lucy"
   },
+  "Immunity": {
+    "effect": "Nullifies ailments",
+    "element": "trait"
+  },
   "Inferno": {
     "cost": 1048,
     "effect": "Severe damage to 1 foe",
@@ -1107,6 +1118,14 @@
   "Insta-Heal": {
     "effect": "Automatically recover from ailments in 1 turn",
     "element": "passive"
+  },
+  "Intense Focus": {
+    "effect": "Single-target magic damage +20%",
+    "element": "trait"
+  },
+  "Internal Hypnosis": {
+    "effect": "Extends buffs received by 1 turn",
+    "element": "trait"
   },
   "Invigorate 1": {
     "card": "Technician 30",
@@ -1121,14 +1140,15 @@
     "effect": "Recover 7 SP per turn",
     "element": "passive"
   },
+  "Inviolable Beauty": {
+    "effect": "Triples damage dealt by Counter skills",
+    "element": "trait",
+    "unique": "Kaguya"
+  },
   "Iron Heart": {
     "effect": "Halves costs of SP skills after Baton Pass",
     "element": "trait",
     "unique": "Thanatos"
-  },
-  "Iron Immunity": {
-    "effect": "Nullifies ailments",
-    "element": "trait"
   },
   "Kill Rush": {
     "cost": 14,
@@ -1160,10 +1180,6 @@
     "element": "phys",
     "unique": "Loki"
   },
-  "Last Stand": {
-    "effect": "Allows use of ambush-only skills after Baton Pass",
-    "element": "trait"
-  },
   "Life Aid": {
     "card": "Trial 80, Fusion Accident (56)",
     "effect": "Recover 8% HP and SP after battle",
@@ -1178,10 +1194,6 @@
     "effect": "Drains HP from 1 foe",
     "element": "almighty"
   },
-  "Life Focus": {
-    "effect": "Strengthens HP regeneration skills by 50%",
-    "element": "trait"
-  },
   "Life Leech": {
     "effect": "Drains 150 HP from 1 foe",
     "element": "almighty",
@@ -1194,7 +1206,7 @@
     "unique": "Lucy"
   },
   "Lotus Dance": {
-    "effect": "Extends buffs targeting allies by 2 turns",
+    "effect": "Extends buffs cast by 2 turns",
     "element": "trait"
   },
   "Lucky Punch": {
@@ -1300,7 +1312,7 @@
     "element": "bless"
   },
   "Majestic Aura": {
-    "effect": "Chance to double effectiveness and decrease costs of Recovery skills for all allies",
+    "effect": "Doubles effectiveness and decreases costs of Recovery skills for all allies",
     "element": "trait",
     "unique": "Diego"
   },
@@ -1411,6 +1423,11 @@
     "element": "support",
     "unique": "??? Ishi"
   },
+  "Mastery of Magic": {
+    "effect": "Low chance to decrease attack spell costs for all allies",
+    "element": "trait",
+    "unique": "Carmen"
+  },
   "Masukukaja": {
     "card": "Jazz 7/31 10/23 CJ Aquarium",
     "cost": 1024,
@@ -1507,6 +1524,10 @@
     "element": "trait",
     "unique": "Cendrillon"
   },
+  "Mighty Gaze": {
+    "effect": "All-target magic damage +20%",
+    "element": "trait"
+  },
   "Mind Slice": {
     "cost": 19,
     "effect": "Medium damage to all foes, Low chance of Confusion",
@@ -1539,7 +1560,11 @@
     "unique": "Lucifer"
   },
   "Mother Blessing": {
-    "effect": "Chance to reduce costs of Recovery skills by 75%",
+    "effect": "Reduces costs of Recovery skills by 75%",
+    "element": "trait"
+  },
+  "Mouth of Savoring": {
+    "effect": "Strengthens own SP recovery by 50%",
     "element": "trait"
   },
   "Mudo": {
@@ -1574,7 +1599,7 @@
     "unique": "Izanagi-no-Okami"
   },
   "Naranari": {
-    "effect": "Doubles effectiveness of SP regeneration skills",
+    "effect": "Doubles own SP recovery",
     "element": "trait"
   },
   "Negative Pile": {
@@ -1587,11 +1612,6 @@
     "effect": "Recover 50% HP for all allies, Matarukaja + Marakukaja + Masukukaja",
     "element": "healing",
     "unique": "Orpheus F"
-  },
-  "Nobility": {
-    "effect": "Chance to double effectiveness of Recovery skills for all allies",
-    "element": "trait",
-    "unique": "Zorro"
   },
   "Nocturnal Flash": {
     "cost": 1008,
@@ -1610,10 +1630,6 @@
     "cost": 1006,
     "effect": "Removes innate Nuke resistances from all foes",
     "element": "support"
-  },
-  "Nuke Lineage": {
-    "effect": "Chance to halve costs of Nuke skills",
-    "element": "trait"
   },
   "Nuke Wall": {
     "cost": 1018,
@@ -1708,25 +1724,6 @@
     "effect": "Nullifies Wind attacks",
     "element": "passive"
   },
-  "Odd Immunity": {
-    "effect": "Reduces susceptibility to ailments",
-    "element": "trait"
-  },
-  "Offered Hand": {
-    "effect": "Chance to use consumables without expending them after Baton Pass",
-    "element": "trait",
-    "unique": "Ariadne"
-  },
-  "Offered Soul": {
-    "effect": "Doubles effectiveness of HP and SP regeneration skills",
-    "element": "trait",
-    "unique": "Messiah"
-  },
-  "Olive Grace": {
-    "effect": "Reduces costs of skills to 0 after Baton Pass",
-    "element": "trait",
-    "unique": "Athena"
-  },
   "Ominous Words": {
     "cost": 1003,
     "effect": "High chance of Despair to 1 foe",
@@ -1743,7 +1740,7 @@
     "element": "phys"
   },
   "Oni Whisper": {
-    "effect": "Doubles effectiveness of HP regeneration skills",
+    "effect": "Doubles own HP recovery",
     "element": "trait"
   },
   "Oratorio": {
@@ -1752,17 +1749,13 @@
     "element": "healing",
     "unique": "Messiah"
   },
-  "Pandemic Gaze": {
-    "effect": "Raises damage dealt by 25% for each foe afflicted with an ailment",
-    "element": "trait"
-  },
   "Panta Rhei": {
     "cost": 1042,
     "effect": "Severe damage to 1 foe",
     "element": "wind"
   },
   "Path of Carnage": {
-    "effect": "Chance to reduce costs of Nuke skills by 75%",
+    "effect": "Reduces costs of Nuke skills by 75%",
     "element": "trait"
   },
   "Patra": {
@@ -1770,20 +1763,24 @@
     "effect": "Cures Dizzy, Forget, Sleep, and Hunger for 1 ally",
     "element": "healing"
   },
-  "Peerless Gaze": {
-    "effect": "Chance to strengthen all-target magic by 20%",
-    "element": "trait"
-  },
   "Phantom Show": {
     "cost": 1004,
     "effect": "High chance of Sleep to all foes",
     "element": "ailment",
     "unique": "Raoul"
   },
+  "Pinch Anchor": {
+    "effect": "Allows use of ambush-only skills after Baton Pass",
+    "element": "trait"
+  },
   "Position Hack": {
     "effect": "Chance to instantly Hold Up enemies when starting a battle",
     "element": "passive",
     "unique": "Necronomicon"
+  },
+  "Potent Hypnosis": {
+    "effect": "Extends buffs cast by 1 turn",
+    "element": "trait"
   },
   "Power Slash": {
     "cost": 10,
@@ -1800,6 +1797,11 @@
   "Pressing Stance": {
     "effect": "Reduces enemy hit rate by 2/3 when ambushed",
     "element": "passive"
+  },
+  "Proud Presence": {
+    "effect": "Doubles effectiveness of Recovery skills for all allies",
+    "element": "trait",
+    "unique": "Zorro"
   },
   "Psi": {
     "card": "CJ Theater",
@@ -1830,14 +1832,14 @@
     "effect": "Removes innate Psy resistances from all foes",
     "element": "support"
   },
-  "Psy Lineage": {
-    "effect": "Chance to halve costs of Psy skills",
-    "element": "trait"
-  },
   "Psy Wall": {
     "cost": 1018,
     "effect": "Gives Psy resistance for 3 turns to 1 ally",
     "element": "support"
+  },
+  "Psychic Bloodline": {
+    "effect": "Halves costs of Psy skills",
+    "element": "trait"
   },
   "Psycho Blast": {
     "cost": 1054,
@@ -1858,6 +1860,11 @@
     "effect": "Rage success rate +25%",
     "element": "passive"
   },
+  "Raging Temper": {
+    "effect": "Low chance to strengthen Phys attacks by 40% for all allies",
+    "element": "trait",
+    "unique": "Captain Kidd"
+  },
   "Rakukaja": {
     "card": "CJ Sky Tree",
     "cost": 1008,
@@ -1874,8 +1881,12 @@
     "effect": "Light damage to all foes, x1-3 hits",
     "element": "phys"
   },
+  "Rare Antibody": {
+    "effect": "Reduces susceptibility to ailments",
+    "element": "trait"
+  },
   "Reaper's Despair": {
-    "effect": "Chance to reduce costs of Curse skills by 75%",
+    "effect": "Reduces costs of Curse skills by 75%",
     "element": "trait"
   },
   "Rebellion": {
@@ -1887,10 +1898,6 @@
     "cost": 1008,
     "effect": "Revive 1 ally with 50% HP",
     "element": "healing"
-  },
-  "Recovery Lineage": {
-    "effect": "Chance to halve costs of Recovery skills",
-    "element": "trait"
   },
   "Regenerate 1": {
     "effect": "Recover 2% HP per turn",
@@ -1905,8 +1912,12 @@
     "effect": "Recover 6% HP per turn",
     "element": "passive"
   },
-  "Relentlessness": {
-    "effect": "Strengthens attacks that strike foe weaknesses by 50%",
+  "Relentless": {
+    "effect": "Damage that strikes foe weaknesses +50%",
+    "element": "trait"
+  },
+  "Relief Bloodline": {
+    "effect": "Halves costs of Support skills",
     "element": "trait"
   },
   "Repel Bless": {
@@ -2029,6 +2040,10 @@
     "effect": "Halves damage from Wind attacks",
     "element": "passive"
   },
+  "Retaliating Body": {
+    "effect": "Doubles damage from Counter skills",
+    "element": "trait"
+  },
   "Reverse Rub": {
     "effect": "Inflict Rage (100%) to 1 ally",
     "element": "ailment",
@@ -2048,11 +2063,6 @@
     "cost": 14,
     "effect": "Heavy damage to 1 foe, Damage +50% after Baton Pass",
     "element": "phys"
-  },
-  "Roguish Instinct": {
-    "effect": "Raises evasion rate against Phys attacks for all allies",
-    "element": "trait",
-    "unique": "Goemon"
   },
   "Saintly Devotion": {
     "cost": 1026,
@@ -2091,9 +2101,14 @@
     "effect": "Raises critical rate and Magic evasion",
     "element": "passive"
   },
-  "Self Hypnosis": {
-    "effect": "Extends buffs received by 1 turn",
+  "Savior Bloodline": {
+    "effect": "Halves costs of Recovery skills",
     "element": "trait"
+  },
+  "Scoundrel Eyes": {
+    "effect": "Raises evasion rate against Phys attacks for all allies",
+    "element": "trait",
+    "unique": "Goemon"
   },
   "Self-Destruct": {
     "effect": "Medium damage to all foes, Kills user",
@@ -2115,8 +2130,12 @@
     "effect": "Shock success rate +25%",
     "element": "passive"
   },
-  "Shocking Follow-up": {
-    "effect": "Increases chance of inflicting Shock on downed foes",
+  "Skillful Combo": {
+    "effect": "Raises damage dealt after Baton Pass",
+    "element": "trait"
+  },
+  "Skillful Technique": {
+    "effect": "Technical damage +25%",
     "element": "trait"
   },
   "Skull Cracker": {
@@ -2170,10 +2189,6 @@
     "effect": "Drains SP from 1 foe",
     "element": "almighty"
   },
-  "Spirit Focus": {
-    "effect": "Strengthens SP regeneration skills by 50%",
-    "element": "trait"
-  },
   "Spirit Leech": {
     "effect": "Drains 150 SP from 1 foe",
     "element": "almighty",
@@ -2184,8 +2199,8 @@
     "effect": "Increases susceptibility to all ailments for all",
     "element": "almighty"
   },
-  "Stagnant Aura": {
-    "effect": "Increases chance of inflicting ailments",
+  "Static Electricity": {
+    "effect": "Increases chance of inflicting Shock on downed foes",
     "element": "trait"
   },
   "Stealth": {
@@ -2197,8 +2212,8 @@
     "element": "phys",
     "unique": "Enemies"
   },
-  "Storm Born": {
-    "effect": "Activates all equipped special weather passives",
+  "Striking Weight": {
+    "effect": "Phys and Gun damage +20%",
     "element": "trait"
   },
   "Subrecover HP": {
@@ -2241,10 +2256,6 @@
     "effect": "Adds Masukunda, Marakunda, and Matarunda to Moral Support pool",
     "element": "passive"
   },
-  "Support Lineage": {
-    "effect": "Chance to halve costs of Support skills",
-    "element": "trait"
-  },
   "Support UP": {
     "effect": "Raises chance of Moral Support activating",
     "element": "passive"
@@ -2274,6 +2285,11 @@
   "Sword God": {
     "effect": "Triples damage when Charged or Concentrated",
     "element": "trait"
+  },
+  "Tag Team": {
+    "effect": "Allows use of consumables without expending them after Baton Pass",
+    "element": "trait",
+    "unique": "Ariadne"
   },
   "Tarukaja": {
     "card": "CJ Sky Tree",
@@ -2323,6 +2339,10 @@
     "effect": "Repels next Phys attack for 1 ally",
     "element": "support"
   },
+  "Thermal Conduct": {
+    "effect": "Increases chance of inflicting Burn after Baton Pass",
+    "element": "trait"
+  },
   "Thermopylae": {
     "cost": 1030,
     "effect": "Matarukaja + Marakukaja + Masukukaja, Only usable when ambushed by foe",
@@ -2353,16 +2373,6 @@
     "element": "passive",
     "unique": "Necronomicon"
   },
-  "Treasured Talent": {
-    "effect": "Carries multiple traits to pass down during fusion",
-    "element": "trait",
-    "unique": "Regent"
-  },
-  "Tree of Life": {
-    "effect": "Strengthens damage dealt on downed foes by 50%",
-    "element": "trait",
-    "unique": "Tsukiyomi"
-  },
   "Trigger Happy": {
     "effect": "Gun critical rate +15%",
     "element": "passive"
@@ -2377,6 +2387,11 @@
     "element": "passive",
     "unique": "Al Azif"
   },
+  "Ultimate Vessel": {
+    "effect": "Carries multiple traits to pass down during fusion",
+    "element": "trait",
+    "unique": "Regent"
+  },
   "Unshaken Will": {
     "effect": "Immune to Confusion, Fear, Rage, and Despair",
     "element": "passive",
@@ -2387,18 +2402,13 @@
     "element": "trait",
     "unique": "Al Azif"
   },
-  "Untouchable Beauty": {
-    "effect": "Triples damage dealt by Counter skills",
-    "element": "trait",
-    "unique": "Kaguya"
-  },
   "Vacuum Wave": {
     "cost": 1048,
     "effect": "Severe damage to all foes",
     "element": "wind"
   },
   "Vahana": {
-    "effect": "Chance to reduce costs of Wind skills by 75%",
+    "effect": "Reduces costs of Wind skills by 75%",
     "element": "trait"
   },
   "Vajra Blast": {
@@ -2433,13 +2443,8 @@
     "element": "ailment"
   },
   "Wargod's Wrath": {
-    "effect": "Chance to reduce costs of Psy skills by 75%",
+    "effect": "Reduces costs of Psy skills by 75%",
     "element": "trait"
-  },
-  "Wild Spirit": {
-    "effect": "Low chance to strengthen Phys attacks by 40% for all allies",
-    "element": "trait",
-    "unique": "Captain Kidd"
   },
   "Wild Thunder": {
     "cost": 1054,
@@ -2450,6 +2455,10 @@
     "effect": "Wind damage +50%",
     "element": "passive"
   },
+  "Wind Bloodline": {
+    "effect": "Halves costs of Wind skills",
+    "element": "trait"
+  },
   "Wind Boost": {
     "effect": "Wind damage +25%",
     "element": "passive"
@@ -2458,10 +2467,6 @@
     "cost": 1006,
     "effect": "Removes innate Wind resistances from all foes",
     "element": "support"
-  },
-  "Wind Lineage": {
-    "effect": "Chance to halve costs of Wind skills",
-    "element": "trait"
   },
   "Wind Wall": {
     "cost": 1018,
@@ -2474,11 +2479,6 @@
     "effect": "Amrita Shower, Speed Master",
     "element": "support",
     "unique": "Futaba Ishi"
-  },
-  "Witchcraft": {
-    "effect": "Low chance to decrease attack spell costs for all allies",
-    "element": "trait",
-    "unique": "Carmen"
   },
   "Zio": {
     "cost": 1004,
