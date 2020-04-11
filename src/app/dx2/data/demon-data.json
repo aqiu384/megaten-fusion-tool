@@ -127,6 +127,17 @@
     "resists": "-----ns",
     "stats": [952, 76, 217, 123, 78, 186]
   },
+  "Anzu": {
+    "ai": "atk",
+    "arch": ["Wild Instinct", "Mazionga", "Acid Breath", "Elec Boost", "Repel Elec"],
+    "base": ["Ziodyne", "War Cry", "Thunder of Destiny"],
+    "cnum": 252,
+    "gach": ["Bolt Storm", "Back Attack", "Magic Amp II", "Resist Force"],
+    "grade": 60,
+    "race": "Raptor",
+    "resists": "---nw--",
+    "stats": [1028, 92, 170, 140, 172, 130]
+  },
   "Apis": {
     "ai": "sup",
     "arch": ["Mediara", "Power Hit", "Discord", "Life Surge", "Resist Dark"],
@@ -235,10 +246,10 @@
     "stats": [1131, 242, 110, 162, 160, 152]
   },
   "Atavaka": {
-    "ai": "atk",
+    "ai": "sup",
     "arch": ["Strength Amp III", "Berserker God", "Charge", "Intimidating Stance", "Null Ice"],
     "base": ["Great Aim", "War Aid", "Enemy Annihilation"],
-    "cnum": 0,
+    "cnum": 248,
     "gach": ["Phys Amp", "Auto-Sukuka", "God's Hand", "Mana Aid"],
     "grade": 84,
     "race": "Deity",
@@ -459,6 +470,17 @@
     "race": "Undead",
     "resists": "-w---ws",
     "stats": [915, 88, 116, 116, 142, 164]
+  },
+  "Camazotz": {
+    "ai": "sup",
+    "arch": ["Retaliate", "Toxic Sting", "Sweet Bite", "Deadly Poison", "Repel Phys"],
+    "base": ["Toxic Cloud", "Madness", "Eat Whole"],
+    "cnum": 250,
+    "gach": ["Madness Nails", "Good Aim", "Resist Poison", "Bloody Glee"],
+    "grade": 42,
+    "race": "Raptor",
+    "resists": "w--w-w-",
+    "stats": [919, 156, 62, 117, 202, 145]
   },
   "Cerberus": {
     "ai": "atk",
@@ -868,6 +890,17 @@
     "resists": "-wn----",
     "stats": [1103, 156, 186, 156, 81, 108]
   },
+  "Gurr": {
+    "ai": "sup",
+    "arch": ["Nihil Claw", "Blight", "Binding Claw", "Auto-Sukunda", "Repel Force"],
+    "base": ["Toxic Sting", "Speedster", "Yaksa Claw"],
+    "cnum": 253,
+    "gach": ["Deadly Poison", "Deadly Bondage", "Agility Amp II", "Resist Light"],
+    "grade": 71,
+    "race": "Raptor",
+    "resists": "w---nw-",
+    "stats": [858, 175, 58, 104, 236, 165]
+  },
   "Halloween Jack": {
     "ai": "atk",
     "arch": ["Mahalantine"],
@@ -923,7 +956,7 @@
     "ai": "atk",
     "arch": ["Magic Amp III", "Mamudodyne", "Mahamarin Karin", "Dark Enhancement", "Null Light"],
     "base": ["Null Bind", "Lunar Awakening", "Hell's Trivia"],
-    "cnum": 0,
+    "cnum": 247,
     "gach": ["Dark Amp", "Auto-Taruka", "Merciless Blow", "Wild Instinct"],
     "grade": 81,
     "race": "Tyrant",
@@ -1014,6 +1047,17 @@
     "race": "Deity",
     "resists": "s----rw",
     "stats": [966, 99, 157, 127, 217, 90]
+  },
+  "Hresvelgr": {
+    "ai": "atk",
+    "arch": ["Magic Amp III", "Mazandyne", "War Cry", "Auto-Rakunda", "Drain Force"],
+    "base": ["Bufudyne", "Ice Boost", "North Wind"],
+    "cnum": 254,
+    "gach": ["Mabufudyne", "Speedster", "Glacial Blast", "Resist Phys"],
+    "grade": 84,
+    "race": "Raptor",
+    "resists": "wwd-n--",
+    "stats": [1065, 68, 180, 148, 260, 108]
   },
   "Hua Po": {
     "ai": "sup",
@@ -1535,6 +1579,16 @@
     "resists": "s----wr",
     "stats": [1140, 176, 186, 163, 152, 132]
   },
+  "Lucifuge": {
+    "ai": "sup",
+    "arch": ["Necro Dogma", "Mudodyne", "Luster Candy", "Infernal Mask", "Null Light"],
+    "base": ["Dark Amp", "Hell's Ministry", "Light Devourer"],
+    "cnum": 255,
+    "grade": 92,
+    "race": "Tyrant",
+    "resists": "----nwd",
+    "stats": [999, 91, 206, 151, 159, 162]
+  },
   "Mad Gasser": {
     "ai": "sup",
     "arch": ["Hellish Mask", "Deathtouch", "Barrier Break", "Madness", "Null Dark"],
@@ -1709,6 +1763,17 @@
     "race": "Deity",
     "resists": "r-w--ss",
     "stats": [1117, 159, 148, 159, 120, 110]
+  },
+  "Moh Shuvuu": {
+    "ai": "atk",
+    "arch": ["Diarama", "Last Resort", "Mahamarin Karin", "Auto-Tarunda", "Drain Force"],
+    "base": ["Zanma", "Mazan", "Life Drain"],
+    "cnum": 251,
+    "gach": ["Endure", "Madness", "Wild Guess", "Wind Breath"],
+    "grade": 49,
+    "race": "Raptor",
+    "resists": "-w--n--",
+    "stats": [877, 73, 157, 108, 206, 146]
   },
   "Mokoi": {
     "ai": "atk",
@@ -2692,10 +2757,10 @@
     "stats": [934, 129, 183, 120, 158, 172]
   },
   "Vairocana": {
-    "ai": "atk",
+    "ai": "sup",
     "arch": ["Magic Amp III", "Sea of Chaos", "Mediarahan", "Butcher", "Repel Dark"],
     "base": ["Enduring Soul", "Radiant Mantra", "Path of Prominence"],
-    "cnum": 0,
+    "cnum": 249,
     "gach": ["Makara Shift", "Auto-Rakuka", "Maragidyne", "Null Charm"],
     "grade": 93,
     "race": "Deity",

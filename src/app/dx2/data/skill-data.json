@@ -1147,6 +1147,10 @@
     "effect": "Dmg -5% from multi-target attacks for every Ally Weak resist, -50% max",
     "elem": "pas"
   },
+  "Hell's Ministry": {
+    "effect": "Ally Tyrant dmg received -10% and Almighty costs -1 MP",
+    "elem": "pas"
+  },
   "Hell's Trivia": {
     "cost": 6,
     "effect": "Mamudo, Dark Pierce",
@@ -1317,6 +1321,12 @@
     "power": 80,
     "target": "All Foes"
   },
+  "Last Resort": {
+    "cost": 6,
+    "effect": "30% current foe HP (1000 max), Kills user",
+    "elem": "alm",
+    "target": "All Foes"
+  },
   "Law of Hell": {
     "effect": "Nullify Foe Press Turn bonus when Ally weakness struck",
     "elem": "pas"
@@ -1358,6 +1368,13 @@
     "effect": "Light dmg +15%",
     "elem": "pas",
     "points": 6
+  },
+  "Light Devourer": {
+    "cost": 6,
+    "effect": "Dark Pierce, Drains 50% dmg dealt",
+    "elem": "dar",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Light Enhancement": {
     "effect": "Light dmg +15%, Dmg +10% when striking Foe weakness",
@@ -2118,6 +2135,10 @@
     "points": 8,
     "target": "All Allies"
   },
+  "North Wind": {
+    "effect": "Casts Mabufu when foe killed",
+    "elem": "pas"
+  },
   "Null Bind": {
     "effect": "Immune to Bind",
     "elem": "pas",
@@ -2837,6 +2858,10 @@
     "power": 180,
     "target": "1 Foe"
   },
+  "Thunder of Destiny": {
+    "effect": "Casts Maziodyne and Sukunda for 2 turns every other turn",
+    "elem": "pas"
+  },
   "Thunderclap": {
     "cost": 7,
     "elem": "lig",
@@ -3017,6 +3042,10 @@
     "points": 7,
     "power": 45,
     "target": "Rand Foes"
+  },
+  "Yaksa Claw": {
+    "effect": "Casts 3 random hits of 35 Phys dmg with 30% Bind when foe Poisoned",
+    "elem": "pas"
   },
   "Yaxche": {
     "effect": "Counter with Almighty Dmg + 100% Instant Death when killed, Nullifies endure effects",

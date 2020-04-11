@@ -112,6 +112,10 @@
     "effect": "Increases damage from All-out Attacks",
     "element": "passive"
   },
+  "Allure of Wisdom": {
+    "effect": "Reduces costs of magic skills by 75%",
+    "element": "trait"
+  },
   "Almighty Amp": {
     "card": "Network Fusion",
     "effect": "Almighty damage +50%",
@@ -147,10 +151,6 @@
     "effect": "Doubles evasion against non-Almighty Magic attacks",
     "element": "passive"
   },
-  "Apocalyptic Fury": {
-    "effect": "Phys damage +30%",
-    "element": "trait"
-  },
   "Apt Pupil": {
     "card": "CJ Gym Trickster 50",
     "effect": "Doubles critical rate",
@@ -174,6 +174,10 @@
     "cost": 1048,
     "effect": "Severe damage to 1 foe",
     "element": "nuke"
+  },
+  "Atomic Hellscape": {
+    "effect": "Reduces costs of Nuke skills by 75%",
+    "element": "trait"
   },
   "Attack Master": {
     "effect": "Begin battle with Tarukaja",
@@ -217,9 +221,13 @@
     "effect": "Cures Burn, Freeze, and Shock for 1 ally",
     "element": "healing"
   },
+  "Bargain Bolts": {
+    "effect": "Reduces costs of Elec skills by 75%",
+    "element": "trait"
+  },
   "Beast Weaver": {
     "cost": 20,
-    "effect": "Colossal damage to 1 foe, Reduces own attack",
+    "effect": "Colossal damage to 1 foe, Reduces own attack for rest of battle",
     "element": "phys",
     "unique": "Ariadne"
   },
@@ -321,10 +329,6 @@
     "element": "healing",
     "unique": "Orpheus"
   },
-  "Chained Lineage": {
-    "effect": "Greatly raises damage dealt after Baton Pass",
-    "element": "trait"
-  },
   "Champion Cup": {
     "card": "Ring of Lust",
     "cost": 1010,
@@ -349,6 +353,10 @@
     "effect": "Matarunda + Marakunda + Masukunda",
     "element": "support",
     "unique": "Agnes"
+  },
+  "Chi You's Blessing": {
+    "effect": "Reduces costs of Psy skills by 75%",
+    "element": "trait"
   },
   "Circle of Sadness": {
     "effect": "Activates endure up to 4 times",
@@ -394,11 +402,6 @@
     "effect": "Confusion success rate +25%",
     "element": "passive"
   },
-  "Coolheadedness": {
-    "effect": "Reduces ailment susceptibility by 25% for all allies",
-    "element": "trait",
-    "unique": "Milady"
-  },
   "Cornered Fang": {
     "cost": 10,
     "effect": "Medium damage to 1 foe, Damage +50% when ambushed by foe",
@@ -422,10 +425,6 @@
     "element": "trait",
     "unique": "Izanagi-no-Okami"
   },
-  "Cripple": {
-    "effect": "Gun damage +50%",
-    "element": "passive"
-  },
   "Crisis Control": {
     "effect": "Reduces damage taken when weakness struck",
     "element": "trait"
@@ -440,11 +439,6 @@
     "effect": "Chance to halve Support and Almighty skill costs for all allies",
     "element": "trait",
     "unique": "Hereward"
-  },
-  "Cunning Tactician": {
-    "effect": "Chance to halve Support skill costs for all allies",
-    "element": "trait",
-    "unique": "Robin Hood"
   },
   "Curse Amp": {
     "effect": "Curse damage +50%",
@@ -509,10 +503,9 @@
     "effect": "Removes all -kunda effects from all allies",
     "element": "support"
   },
-  "Demon Kingdom": {
-    "effect": "Strengthen all attacks by 25%",
-    "element": "passive",
-    "unique": "Satanel"
+  "Demon's Bite": {
+    "effect": "Doubles own HP recovery",
+    "element": "trait"
   },
   "Demonic Decree": {
     "cost": 1038,
@@ -543,10 +536,6 @@
     "cost": 1006,
     "effect": "Moderately recovers HP for 1 ally",
     "element": "healing"
-  },
-  "Die Already!": {
-    "effect": "Reduces costs of instant death skills to 0",
-    "element": "trait"
   },
   "Die For Me!": {
     "cost": 1040,
@@ -640,12 +629,8 @@
     "effect": "Light damage to 1 foe",
     "element": "gun"
   },
-  "Drunken Frenzy": {
+  "Drunken Passion": {
     "effect": "Reduces costs of Fire skills by 75%",
-    "element": "trait"
-  },
-  "Dying Will": {
-    "effect": "Allows use of ambush-only skills under normal conditions",
     "element": "trait"
   },
   "EXP Boost": {
@@ -714,10 +699,6 @@
     "effect": "Cures Confusion, Fear, Despair, Rage, and Brainwash for all allies",
     "element": "healing"
   },
-  "Enlightenment": {
-    "effect": "Extends buffs received by 2 turns",
-    "element": "trait"
-  },
   "Evade Bless": {
     "effect": "Triples evasion rate against Bless attacks",
     "element": "passive"
@@ -763,6 +744,11 @@
     "cost": 1003,
     "effect": "High chance of Fear to 1 foe",
     "element": "ailment"
+  },
+  "Explosive Scheme": {
+    "effect": "Restores 25% HP after Futaba's All-Out Attack for all allies",
+    "element": "trait",
+    "unique": "Necronomicon"
   },
   "False Painting": {
     "card": "Ring of Vanity",
@@ -816,18 +802,10 @@
     "effect": "Halves damage from all attacks but can never evade",
     "element": "passive"
   },
-  "Five Elements": {
-    "effect": "Technical damage +50%",
-    "element": "trait"
-  },
   "Flash Bomb": {
     "cost": 19,
     "effect": "Medium damage to all foes, Low chance of Dizzy",
     "element": "phys"
-  },
-  "Forbidden Knowledge": {
-    "effect": "Reduces costs of magic attack skills by 75%",
-    "element": "trait"
   },
   "Forget Boost": {
     "effect": "Forget success rate +25%",
@@ -926,6 +904,10 @@
     "effect": "Instantly kills all foes with Fear",
     "element": "almighty"
   },
+  "Ghost Nest": {
+    "effect": "Increases chance of inflicting ailments on downed foes",
+    "element": "trait"
+  },
   "Giant Slice": {
     "cost": 9,
     "effect": "Medium damage to 1 foe, Damage +50% after Baton Pass",
@@ -944,10 +926,6 @@
     "effect": "Strengthens own HP recovery by 50%",
     "element": "trait"
   },
-  "Goblet of Sin": {
-    "effect": "Increases chance of inflicting ailments on downed foes",
-    "element": "trait"
-  },
   "God Maker": {
     "effect": "Increases chance of ally traits activating",
     "element": "trait",
@@ -958,8 +936,12 @@
     "effect": "Colossal damage to 1 foe",
     "element": "phys"
   },
+  "Grace of Mother": {
+    "effect": "Reduces costs of Recovery skills by 75%",
+    "element": "trait"
+  },
   "Grace of the Olive": {
-    "effect": "Reduces costs of skills to 0 after Baton Pass",
+    "effect": "Reduces costs of skills to 0 during 1 More",
     "element": "trait",
     "unique": "Athena"
   },
@@ -986,6 +968,14 @@
     "effect": "Downs all foes, Only usable when ambushing foe, Life Aid",
     "element": "support",
     "unique": "??? Ishi"
+  },
+  "Gun Amp": {
+    "effect": "Gun damage +50%",
+    "element": "passive"
+  },
+  "Gun Boost": {
+    "effect": "Gun damage +25%",
+    "element": "passive"
   },
   "Hallowed Spirit": {
     "effect": "Doubles own HP and SP recovery",
@@ -1042,36 +1032,15 @@
     "effect": "Halves costs of Fire skills",
     "element": "trait"
   },
-  "Herald's Grace": {
-    "effect": "Reduces costs of Bless skills by 75%",
-    "element": "trait"
-  },
-  "Herald's Verdict": {
-    "effect": "Greatly increases success rate of instant death skills",
-    "element": "trait"
-  },
-  "Heretic Charisma": {
-    "effect": "Magic damage +50%, Cannot exceed 100% limit",
-    "element": "trait"
-  },
   "High Counter": {
     "card": "CJ Leblanc",
     "effect": "20% chance of reflecting Phys attack",
     "element": "passive"
   },
-  "High-speed Hacking": {
-    "effect": "Restores 25% HP after Futaba's All-Out Attack for all allies",
-    "element": "trait",
-    "unique": "Necronomicon"
-  },
   "Hollow Jester": {
     "effect": "Damage +40% for each foe afflicted with an ailment",
     "element": "trait",
     "unique": "Magatsu-Izanagi"
-  },
-  "Hunting Premonition": {
-    "effect": "Reduces costs of Elec skills by 75%",
-    "element": "trait"
   },
   "Hysterical Slap": {
     "cost": 9,
@@ -1100,6 +1069,11 @@
     "cost": 1018,
     "effect": "Gives Ice resistance for 3 turns to 1 ally",
     "element": "support"
+  },
+  "Icy Glare": {
+    "effect": "Reduces ailment susceptibility by 25% for all allies",
+    "element": "trait",
+    "unique": "Milady"
   },
   "Immovable": {
     "effect": "Reduces ailment susceptibility by 50% for all allies",
@@ -1150,6 +1124,10 @@
     "element": "trait",
     "unique": "Thanatos"
   },
+  "Just Die": {
+    "effect": "Reduces costs of instant death skills to 0",
+    "element": "trait"
+  },
   "Kill Rush": {
     "cost": 14,
     "effect": "Light damage to 1 foe, x1-3 hits",
@@ -1180,6 +1158,10 @@
     "element": "phys",
     "unique": "Loki"
   },
+  "Last Stand": {
+    "effect": "Reduces enemy hit rate by 2/3 when ambushed",
+    "element": "passive"
+  },
   "Life Aid": {
     "card": "Trial 80, Fusion Accident (56)",
     "effect": "Recover 8% HP and SP after battle",
@@ -1205,8 +1187,8 @@
     "element": "support",
     "unique": "Lucy"
   },
-  "Lotus Dance": {
-    "effect": "Extends buffs cast by 2 turns",
+  "Linked Bloodline": {
+    "effect": "Greatly raises damage dealt after Baton Pass",
     "element": "trait"
   },
   "Lucky Punch": {
@@ -1410,6 +1392,10 @@
     "effect": "High chance of Brainwash to 1 foe",
     "element": "ailment"
   },
+  "Martyr's Gift": {
+    "effect": "Reduces costs of Bless skills by 75%",
+    "element": "trait"
+  },
   "Masquerade": {
     "cost": 25,
     "effect": "Severe damage to 1 foe, x2 hits",
@@ -1559,8 +1545,8 @@
     "element": "almighty",
     "unique": "Lucifer"
   },
-  "Mother Blessing": {
-    "effect": "Reduces costs of Recovery skills by 75%",
+  "Mother's Lament": {
+    "effect": "Reduces costs of Curse skills by 75%",
     "element": "trait"
   },
   "Mouth of Savoring": {
@@ -1724,6 +1710,10 @@
     "effect": "Nullifies Wind attacks",
     "element": "passive"
   },
+  "Omen": {
+    "effect": "Greatly increases success rate of instant death skills",
+    "element": "trait"
+  },
   "Ominous Words": {
     "cost": 1003,
     "effect": "High chance of Despair to 1 foe",
@@ -1739,24 +1729,20 @@
     "effect": "Medium damage to all foes, Low chance of Rage",
     "element": "phys"
   },
-  "Oni Whisper": {
-    "effect": "Doubles own HP recovery",
-    "element": "trait"
-  },
   "Oratorio": {
     "cost": 1038,
     "effect": "Completely recovers HP for all allies, Dekunda",
     "element": "healing",
     "unique": "Messiah"
   },
+  "Pagan Allure": {
+    "effect": "Magic damage +50%, Cannot exceed 100% limit",
+    "element": "trait"
+  },
   "Panta Rhei": {
     "cost": 1042,
     "effect": "Severe damage to 1 foe",
     "element": "wind"
-  },
-  "Path of Carnage": {
-    "effect": "Reduces costs of Nuke skills by 75%",
-    "element": "trait"
   },
   "Patra": {
     "cost": 1004,
@@ -1778,6 +1764,10 @@
     "element": "passive",
     "unique": "Necronomicon"
   },
+  "Positive Thoughts": {
+    "effect": "Extends buffs received by 2 turns",
+    "element": "trait"
+  },
   "Potent Hypnosis": {
     "effect": "Extends buffs cast by 1 turn",
     "element": "trait"
@@ -1793,10 +1783,6 @@
     "effect": "Next Magic attack +150% damage for 1 ally, Attack Master",
     "element": "support",
     "unique": "Okumura Ishi"
-  },
-  "Pressing Stance": {
-    "effect": "Reduces enemy hit rate by 2/3 when ambushed",
-    "element": "passive"
   },
   "Proud Presence": {
     "effect": "Doubles effectiveness of Recovery skills for all allies",
@@ -1883,10 +1869,6 @@
   },
   "Rare Antibody": {
     "effect": "Reduces susceptibility to ailments",
-    "element": "trait"
-  },
-  "Reaper's Despair": {
-    "effect": "Reduces costs of Curse skills by 75%",
     "element": "trait"
   },
   "Rebellion": {
@@ -2157,10 +2139,6 @@
     "effect": "Medium damage to 1 foe",
     "element": "gun"
   },
-  "Snipe": {
-    "effect": "Gun damage +25%",
-    "element": "passive"
-  },
   "Sorcery": {
     "effect": "Low chance to halve attack spell costs for all allies",
     "element": "trait",
@@ -2286,6 +2264,11 @@
     "effect": "Triples damage when Charged or Concentrated",
     "element": "trait"
   },
+  "Tactical Spirit": {
+    "effect": "Chance to halve Support skill costs for all allies",
+    "element": "trait",
+    "unique": "Robin Hood"
+  },
   "Tag Team": {
     "effect": "Allows use of consumables without expending them after Baton Pass",
     "element": "trait",
@@ -2382,6 +2365,11 @@
     "effect": "Light damage to all foes, x3 hits",
     "element": "gun"
   },
+  "Tyrant's Mind": {
+    "effect": "All damage +25%",
+    "element": "passive",
+    "unique": "Satanel"
+  },
   "Ultimate Support": {
     "effect": "Moral Support may activate multiple effects",
     "element": "passive",
@@ -2391,6 +2379,14 @@
     "effect": "Carries multiple traits to pass down during fusion",
     "element": "trait",
     "unique": "Regent"
+  },
+  "Undying Fury": {
+    "effect": "Phys damage +30%",
+    "element": "trait"
+  },
+  "Universal Law": {
+    "effect": "Technical damage +50%",
+    "element": "trait"
   },
   "Unshaken Will": {
     "effect": "Immune to Confusion, Fear, Rage, and Despair",
@@ -2432,6 +2428,10 @@
     "effect": "Recover all HP and SP after battle",
     "element": "passive"
   },
+  "Vitality of the Tree": {
+    "effect": "Allows use of ambush-only skills under normal conditions",
+    "element": "trait"
+  },
   "Vorpal Blade": {
     "cost": 23,
     "effect": "Severe damage to all foes",
@@ -2442,8 +2442,8 @@
     "effect": "Medium chance of Rage to all foes",
     "element": "ailment"
   },
-  "Wargod's Wrath": {
-    "effect": "Reduces costs of Psy skills by 75%",
+  "Wealth of Lotus": {
+    "effect": "Extends buffs cast by 2 turns",
     "element": "trait"
   },
   "Wild Thunder": {

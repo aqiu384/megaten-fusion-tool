@@ -35,6 +35,7 @@ export const Races = [
   'Jaki',
   'Jirae',
   'Drake',
+  'Raptor',
   'Fiend',
   'Hero',
   'Reaper',
