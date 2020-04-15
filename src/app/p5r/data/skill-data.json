@@ -42,7 +42,7 @@
     "effect": "Medium chance of Despair to all foes",
     "element": "ailment"
   },
-  "Abyssal Gaze": {
+  "Abyssal Eye": {
     "cost": 1050,
     "effect": "Severe damage to all foes",
     "element": "almighty",
@@ -102,11 +102,6 @@
     "card": "Jazz 1/15 Foggy Day 50",
     "effect": "Halves enemy hit rate when attacked",
     "element": "passive"
-  },
-  "All Grace": {
-    "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 50% for all allies",
-    "element": "trait",
-    "unique": "Agnes"
   },
   "All-out Attack Boost": {
     "effect": "Increases damage from All-out Attacks",
@@ -237,16 +232,17 @@
     "element": "almighty",
     "unique": "Satan"
   },
-  "Blade of Rebellion": {
-    "cost": 1099,
-    "effect": "Colossal damage to 1 foe, Damage +150% when target downed",
-    "element": "almighty",
-    "unique": "Hereward"
-  },
   "Blazing Hell": {
     "cost": 1054,
     "effect": "Severe damage to all foes",
     "element": "fire"
+  },
+  "Bleeding Dry Brush": {
+    "card": "Ring of Vanity",
+    "cost": 1022,
+    "effect": "Drains next non-Almighty attack for 1 ally, Removes innate weaknesses",
+    "element": "support",
+    "unique": "Ring of Vanity"
   },
   "Bless Amp": {
     "effect": "Bless damage +50%",
@@ -329,24 +325,18 @@
     "element": "healing",
     "unique": "Orpheus"
   },
-  "Champion Cup": {
+  "Champion's Cup": {
     "card": "Ring of Lust",
     "cost": 1010,
     "effect": "Diarama + Tarukaja",
-    "element": "support",
-    "unique": "Kamoshida Ishi"
+    "element": "healing",
+    "unique": "Ring of Lust"
   },
   "Charge": {
     "card": "Jazz 9/4",
     "cost": 1015,
     "effect": "Next Phys attack +150% damage",
     "element": "support"
-  },
-  "Charge All": {
-    "cost": 1080,
-    "effect": "Next Phys attack +150% damage for all allies",
-    "element": "support",
-    "unique": "William"
   },
   "Checkmate": {
     "cost": 1090,
@@ -392,15 +382,14 @@
     "effect": "Next Magic attack +150% damage",
     "element": "support"
   },
-  "Concentrate All": {
-    "cost": 1080,
-    "effect": "Next Magic attack +150% damage for all allies",
-    "element": "support",
-    "unique": "Celestine"
-  },
   "Confuse Boost": {
     "effect": "Confusion success rate +25%",
     "element": "passive"
+  },
+  "Cool Customer": {
+    "effect": "Reduces ailment susceptibility by 50% for all allies",
+    "element": "trait",
+    "unique": "Lucy"
   },
   "Cornered Fang": {
     "cost": 10,
@@ -435,11 +424,6 @@
     "element": "phys",
     "unique": "Izanagi"
   },
-  "Cunning Strategist": {
-    "effect": "Chance to halve Support and Almighty skill costs for all allies",
-    "element": "trait",
-    "unique": "Hereward"
-  },
   "Curse Amp": {
     "effect": "Curse damage +50%",
     "element": "passive"
@@ -451,11 +435,6 @@
   "Cursed Bloodline": {
     "effect": "Halves costs of Curse skills",
     "element": "trait"
-  },
-  "Daybreak Bell": {
-    "effect": "High chance to prevent down when weakness struck for all allies",
-    "element": "trait",
-    "unique": "Ella"
   },
   "Dazzler": {
     "cost": 1003,
@@ -637,6 +616,11 @@
     "effect": "EXP +15% after battle",
     "element": "passive"
   },
+  "Eccentric Temper": {
+    "effect": "Low chance to strengthen Phys attacks by 80% for all allies",
+    "element": "trait",
+    "unique": "William"
+  },
   "Eiga": {
     "cost": 1008,
     "effect": "Medium damage to 1 foe",
@@ -750,13 +734,6 @@
     "element": "trait",
     "unique": "Necronomicon"
   },
-  "False Painting": {
-    "card": "Ring of Vanity",
-    "cost": 1022,
-    "effect": "Drains next non-Almighty attack for 1 ally, Removes innate weaknesses",
-    "element": "support",
-    "unique": "Madarame Ishi"
-  },
   "Famine's Scream": {
     "effect": "Medium chance of Hunger to all foes",
     "element": "ailment",
@@ -770,10 +747,11 @@
     "effect": "Fear success rate +25%",
     "element": "passive"
   },
-  "Fiendish Insight": {
-    "effect": "Greatly raises evasion rate against Phys attacks for all allies",
-    "element": "trait",
-    "unique": "Gorokichi"
+  "Fighting Spirit": {
+    "cost": 1080,
+    "effect": "Next Phys attack +150% damage for all allies",
+    "element": "support",
+    "unique": "William"
   },
   "Final Guard": {
     "effect": "Chance to nullify a fatal attack to a current party member",
@@ -862,22 +840,22 @@
     "effect": "Halves costs of Ice skills",
     "element": "trait"
   },
-  "Furious Spirit": {
-    "effect": "Low chance to strengthen Phys attacks by 80% for all allies",
+  "Gaia Blessing": {
+    "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 50% for all allies",
     "element": "trait",
-    "unique": "William"
+    "unique": "Agnes"
   },
   "Gaia Pact": {
     "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 25% for all allies",
     "element": "trait",
     "unique": "Johanna"
   },
-  "Gambler Intuition": {
+  "Gambler's Foresight": {
     "card": "Ring of Envy",
     "cost": 1020,
     "effect": "Masukukaja, Begins battle with Concentrate",
     "element": "support",
-    "unique": "Niijima Ishi"
+    "unique": "Ring of Envy"
   },
   "Garu": {
     "cost": 1003,
@@ -967,7 +945,7 @@
     "cost": 1054,
     "effect": "Downs all foes, Only usable when ambushing foe, Life Aid",
     "element": "support",
-    "unique": "??? Ishi"
+    "unique": "Ring of Grief"
   },
   "Gun Amp": {
     "effect": "Gun damage +50%",
@@ -1037,10 +1015,38 @@
     "effect": "20% chance of reflecting Phys attack",
     "element": "passive"
   },
+  "High Energy": {
+    "cost": 1080,
+    "effect": "Next Magic attack +150% damage for all allies",
+    "element": "support",
+    "unique": "Celestine"
+  },
   "Hollow Jester": {
     "effect": "Damage +40% for each foe afflicted with an ailment",
     "element": "trait",
     "unique": "Magatsu-Izanagi"
+  },
+  "Holy Benevolence": {
+    "cost": 1026,
+    "effect": "Revive all allies with 100% HP",
+    "element": "healing",
+    "unique": "Maria"
+  },
+  "Holy Embrace": {
+    "effect": "Recover 25% max HP each turn in battle",
+    "element": "passive",
+    "unique": "Maria"
+  },
+  "Holy Whisper": {
+    "effect": "Recover 15% max HP and 15 SP each turn in battle",
+    "element": "passive",
+    "unique": "Maria"
+  },
+  "Hyakka Ryouran": {
+    "cost": 1090,
+    "effect": "Matarukaja + Marakukaja + Masukukaja",
+    "element": "support",
+    "unique": "Gorokichi"
   },
   "Hysterical Slap": {
     "cost": 9,
@@ -1075,11 +1081,6 @@
     "element": "trait",
     "unique": "Milady"
   },
-  "Immovable": {
-    "effect": "Reduces ailment susceptibility by 50% for all allies",
-    "element": "trait",
-    "unique": "Lucy"
-  },
   "Immunity": {
     "effect": "Nullifies ailments",
     "element": "trait"
@@ -1088,6 +1089,16 @@
     "cost": 1048,
     "effect": "Severe damage to 1 foe",
     "element": "fire"
+  },
+  "Infinite Scheme": {
+    "effect": "Restores 100% after Futaba's All-Out Attack for all allies",
+    "element": "trait",
+    "unique": "Al Azif"
+  },
+  "Ingenious Spirit": {
+    "effect": "Chance to halve Support and Almighty skill costs for all allies",
+    "element": "trait",
+    "unique": "Hereward"
   },
   "Insta-Heal": {
     "effect": "Automatically recover from ailments in 1 turn",
@@ -1152,7 +1163,7 @@
     "effect": "Reduces skill costs by 25%",
     "element": "passive"
   },
-  "Laevatein": {
+  "Laevateinn": {
     "cost": 25,
     "effect": "Colossal damage to 1 foe",
     "element": "phys",
@@ -1293,7 +1304,7 @@
     "effect": "Instant death to all foes, Medium chance",
     "element": "bless"
   },
-  "Majestic Aura": {
+  "Majestic Presence": {
     "effect": "Doubles effectiveness and decreases costs of Recovery skills for all allies",
     "element": "trait",
     "unique": "Diego"
@@ -1402,13 +1413,6 @@
     "element": "phys",
     "unique": "Ella"
   },
-  "Mastermind Authority": {
-    "card": "Ring of Pride",
-    "cost": 1015,
-    "effect": "Next Phys attack +150% damage for 1 ally, Defense Master",
-    "element": "support",
-    "unique": "??? Ishi"
-  },
   "Mastery of Magic": {
     "effect": "Low chance to decrease attack spell costs for all allies",
     "element": "trait",
@@ -1505,11 +1509,6 @@
     "effect": "Light damage to all foes, Low chance of Forget",
     "element": "phys"
   },
-  "Midnight Bell": {
-    "effect": "Chance to prevent down when weakness struck for all allies",
-    "element": "trait",
-    "unique": "Cendrillon"
-  },
   "Mighty Gaze": {
     "effect": "All-target magic damage +20%",
     "element": "trait"
@@ -1566,12 +1565,6 @@
     "cost": 1012,
     "effect": "Instant death to 1 foe, Medium chance",
     "element": "curse"
-  },
-  "Myriad Blooms": {
-    "cost": 1090,
-    "effect": "Matarukaja + Marakukaja + Masukukaja",
-    "element": "support",
-    "unique": "Gorokichi"
   },
   "Myriad Slashes": {
     "cost": 20,
@@ -1759,6 +1752,11 @@
     "effect": "Allows use of ambush-only skills after Baton Pass",
     "element": "trait"
   },
+  "Pinnacle of Magic": {
+    "effect": "Low chance to halve attack spell costs for all allies",
+    "element": "trait",
+    "unique": "Celestine"
+  },
   "Position Hack": {
     "effect": "Chance to instantly Hold Up enemies when starting a battle",
     "element": "passive",
@@ -1777,12 +1775,12 @@
     "effect": "Medium damage to 1 foe",
     "element": "phys"
   },
-  "President Intuition": {
+  "President's Insight": {
     "card": "Ring of Greed",
     "cost": 1015,
     "effect": "Next Magic attack +150% damage for 1 ally, Attack Master",
     "element": "support",
-    "unique": "Okumura Ishi"
+    "unique": "Ring of Greed"
   },
   "Proud Presence": {
     "effect": "Doubles effectiveness of Recovery skills for all allies",
@@ -1875,6 +1873,12 @@
     "cost": 1005,
     "effect": "Raises critical rate for 3 turns for 1 ally",
     "element": "support"
+  },
+  "Rebellion Blade": {
+    "cost": 1099,
+    "effect": "Colossal damage to 1 foe, Damage +150% when target downed",
+    "element": "almighty",
+    "unique": "Hereward"
   },
   "Recarm": {
     "cost": 1008,
@@ -2046,22 +2050,6 @@
     "effect": "Heavy damage to 1 foe, Damage +50% after Baton Pass",
     "element": "phys"
   },
-  "Saintly Devotion": {
-    "cost": 1026,
-    "effect": "Revive all allies with 100% HP",
-    "element": "healing",
-    "unique": "Maria"
-  },
-  "Saintly Embrace": {
-    "effect": "Recover 25% max HP each turn in battle",
-    "element": "passive",
-    "unique": "Maria"
-  },
-  "Saintly Words": {
-    "effect": "Recover 15% max HP and 15 SP each turn in battle",
-    "element": "passive",
-    "unique": "Maria"
-  },
   "Salvation": {
     "cost": 1048,
     "effect": "Completely recovers HP and cures all ailments for all allies",
@@ -2138,11 +2126,6 @@
     "cost": 9,
     "effect": "Medium damage to 1 foe",
     "element": "gun"
-  },
-  "Sorcery": {
-    "effect": "Low chance to halve attack spell costs for all allies",
-    "element": "trait",
-    "unique": "Celestine"
   },
   "Soul Chain": {
     "card": "Network Fusion",
@@ -2230,7 +2213,7 @@
     "element": "almighty",
     "unique": "Enemies"
   },
-  "Supoort+ 3": {
+  "Support+ 3": {
     "effect": "Adds Masukunda, Marakunda, and Matarunda to Moral Support pool",
     "element": "passive"
   },
@@ -2259,10 +2242,6 @@
     "cost": 21,
     "effect": "Colossal damage to 1 foe, High critical rate",
     "element": "phys"
-  },
-  "Sword God": {
-    "effect": "Triples damage when Charged or Concentrated",
-    "element": "trait"
   },
   "Tactical Spirit": {
     "effect": "Chance to halve Support skill costs for all allies",
@@ -2370,8 +2349,15 @@
     "element": "passive",
     "unique": "Satanel"
   },
+  "Tyrant's Will": {
+    "card": "Ring of Pride",
+    "cost": 1015,
+    "effect": "Next Phys attack +150% damage for 1 ally, Defense Master",
+    "element": "support",
+    "unique": "Ring of Pride"
+  },
   "Ultimate Support": {
-    "effect": "Moral Support may activate multiple effects",
+    "effect": "Moral Support may now fully recover and buff all allies",
     "element": "passive",
     "unique": "Al Azif"
   },
@@ -2388,22 +2374,22 @@
     "effect": "Technical damage +50%",
     "element": "trait"
   },
+  "Unparalleled Eyes": {
+    "effect": "Greatly raises evasion rate against Phys attacks for all allies",
+    "element": "trait",
+    "unique": "Gorokichi"
+  },
   "Unshaken Will": {
     "effect": "Immune to Confusion, Fear, Rage, and Despair",
     "element": "passive",
     "unique": "Asura"
-  },
-  "Unstoppable Hacking": {
-    "effect": "Restores 100% after Futaba's All-Out Attack for all allies",
-    "element": "trait",
-    "unique": "Al Azif"
   },
   "Vacuum Wave": {
     "cost": 1048,
     "effect": "Severe damage to all foes",
     "element": "wind"
   },
-  "Vahana": {
+  "Vahana's Wings": {
     "effect": "Reduces costs of Wind skills by 75%",
     "element": "trait"
   },
@@ -2417,7 +2403,17 @@
     "cost": 1020,
     "effect": "Marakukaja, Begins battle with Tetrakarn + Makarakarn",
     "element": "support",
-    "unique": "Kaneshiro Ishi"
+    "unique": "Ring of Gluttony"
+  },
+  "Veil of Midnight": {
+    "effect": "Chance to prevent down when weakness struck for all allies",
+    "element": "trait",
+    "unique": "Cendrillon"
+  },
+  "Veil of Sunrise": {
+    "effect": "High chance to prevent down when weakness struck for all allies",
+    "element": "trait",
+    "unique": "Ella"
   },
   "Vicious Strike": {
     "cost": 18,
@@ -2451,6 +2447,10 @@
     "effect": "Severe damage to all foes",
     "element": "elec"
   },
+  "Will of the Sword": {
+    "effect": "Charge skills +200% damage instead, Begins battle with Concentrate",
+    "element": "trait"
+  },
   "Wind Amp": {
     "effect": "Wind damage +50%",
     "element": "passive"
@@ -2478,7 +2478,7 @@
     "cost": 1010,
     "effect": "Amrita Shower, Speed Master",
     "element": "support",
-    "unique": "Futaba Ishi"
+    "unique": "Ring of Wrath"
   },
   "Zio": {
     "cost": 1004,
