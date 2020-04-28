@@ -940,12 +940,12 @@
     "effect": "Gains 100% EXP when not equipped",
     "element": "passive"
   },
-  "Guiding Tentacle": {
-    "card": "Ring of Grief",
-    "cost": 1054,
+  "Guiding Tendril": {
+    "card": "Ring of Sorrow",
+    "cost": 1020,
     "effect": "Downs all foes, Only usable when ambushing foe, Life Aid",
     "element": "support",
-    "unique": "Ring of Grief"
+    "unique": "Ring of Sorrow"
   },
   "Gun Amp": {
     "effect": "Gun damage +50%",
@@ -2213,21 +2213,29 @@
     "element": "almighty",
     "unique": "Enemies"
   },
-  "Support+ 3": {
-    "effect": "Adds Masukunda, Marakunda, and Matarunda to Moral Support pool",
-    "element": "passive"
-  },
-  "Support UP": {
-    "effect": "Raises chance of Moral Support activating",
-    "element": "passive"
-  },
-  "Support+ 1": {
+  "Support Plus 1": {
+    "card": "Jazz 1",
     "effect": "Adds Masukunda to Moral Support pool",
-    "element": "passive"
+    "element": "passive",
+    "unique": "Necronomicon"
   },
-  "Support+ 2": {
+  "Support Plus 2": {
+    "card": "Jazz 2",
     "effect": "Adds Masukunda and Marakunda to Moral Support pool",
-    "element": "passive"
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
+  "Support Plus 3": {
+    "card": "Jazz 3",
+    "effect": "Adds Masukunda, Marakunda, and Matarunda to Moral Support pool",
+    "element": "passive",
+    "unique": "Necronomicon"
+  },
+  "Support Rate Up": {
+    "card": "Jazz 4",
+    "effect": "Raises chance of Moral Support activating",
+    "element": "passive",
+    "unique": "Necronomicon"
   },
   "Survival Trick": {
     "effect": "Survive instant death attack with 1 HP once per battle",
@@ -2345,7 +2353,7 @@
     "element": "gun"
   },
   "Tyrant's Mind": {
-    "effect": "All damage +25%",
+    "effect": "All damage +25%, Can exceed 100% limit",
     "element": "passive",
     "unique": "Satanel"
   },

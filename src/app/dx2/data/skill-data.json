@@ -70,6 +70,13 @@
     "power": 110,
     "target": "All Foes"
   },
+  "Amakusa Uprising": {
+    "cost": 6,
+    "effect": "Light Pierce, Chance to crit, Tarukaja + Sukukaja for 2 turns",
+    "elem": "lig",
+    "power": 140,
+    "target": "1 Foe"
+  },
   "Amrita": {
     "cost": 4,
     "effect": "Cures all ailments",
@@ -115,6 +122,11 @@
   },
   "Auto-Rakunda": {
     "effect": "Casts Rakunda on 1st turn",
+    "elem": "pas",
+    "points": 12
+  },
+  "Auto-Rebellion": {
+    "effect": "Casts Rebellion on 1st turn",
     "elem": "pas",
     "points": 12
   },
@@ -461,6 +473,11 @@
     "effect": "Dmg +30% to Poisoned Foes",
     "elem": "pas",
     "points": 13
+  },
+  "Death Blow": {
+    "effect": "Crit dmg +20%",
+    "elem": "pas",
+    "points": 16
   },
   "Death Counter": {
     "effect": "50% chance to counter with 150 Phys dmg when receiving Phys dmg",
@@ -876,6 +893,10 @@
     "effect": "Repel all Mag attacks including Almighty for 1 turn",
     "elem": "sup",
     "target": "All Allies"
+  },
+  "Flag of Salvation": {
+    "effect": "Ally Light dmg +10%, Recover 1 MP when clearing wave",
+    "elem": "pas"
   },
   "Fog Breath": {
     "cost": 6,
