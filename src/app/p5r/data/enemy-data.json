@@ -129,18 +129,6 @@
     "stats": [174],
     "trait": "Timid"
   },
-  "Blazing Judgement Wheel": {
-    "areas": "Qliphoth",
-    "card": "Mahamaon",
-    "drops": ["Hell Magatama", "Homunculus", "Sacramental Bread"],
-    "lvl": 72,
-    "persona": "Throne",
-    "race": "Justice",
-    "resists": "--n--n-wr-",
-    "skills": ["Hamaon", "Inferno", "Fire Amp", "Burn Boost"],
-    "stats": [757],
-    "trait": "Gloomy"
-  },
   "Blood-Thirsty Demoness": {
     "areas": "Cruiser",
     "card": "Charge",
@@ -153,19 +141,6 @@
     "skills": ["Charge", "Myriad Slashes"],
     "stats": [442],
     "trait": "Upbeat"
-  },
-  "Brave Spear-Bearer": {
-    "areas": "Laboratory",
-    "card": "One-shot Kill",
-    "drops": ["Empowering Ofuda", "Rasetsu Ofuda", "Soul Drop"],
-    "lvl": 76,
-    "material": "Aluminum Sheet",
-    "persona": "Cu Chulainn",
-    "race": "Faith",
-    "resists": "ss--wr--n-",
-    "skills": ["One-shot Kill", "Rebellion", "Apt Pupil", "High Counter"],
-    "stats": [1021],
-    "trait": "Irritable"
   },
   "Bringer of Misfortune": {
     "areas": "Museum",
@@ -367,19 +342,7 @@
     "stats": [455],
     "trait": "Gloomy"
   },
-  "Defeated Avenger": {
-    "areas": "Bank",
-    "armor": "Sooty Man's Armor",
-    "card": "Swift Strike",
-    "lvl": 26,
-    "persona": "Take-Minakata",
-    "race": "Hanged",
-    "resists": "----r-w--s",
-    "skills": ["Shock Boost", "Elec Boost", "Mazionga", "Swift Strike", "Assault Dive"],
-    "stats": [420],
-    "trait": "Gloomy"
-  },
-  "Degenerate Idol": {
+  "Decadent False God": {
     "areas": "Laboratory",
     "card": "Concentrate",
     "drops": ["Kongou Ofuda", "Magic Ointment", "Soul Drop"],
@@ -392,18 +355,30 @@
     "stats": [1700],
     "trait": "Timid"
   },
-  "Demonic Warlord": {
-    "areas": "Kaitul",
-    "card": "Vajra Blast",
-    "drops": ["Kongou Ofuda", "Revival Bead"],
-    "lvl": 25,
-    "material": "Silk Yarn",
-    "persona": "Kin-Ki",
-    "race": "Chariot",
-    "resists": "sr--------",
-    "skills": ["Rakukaja", "Vajra Blast", "Charge"],
-    "stats": [392],
+  "Defeated Avenger": {
+    "areas": "Bank",
+    "armor": "Sooty Man's Armor",
+    "card": "Swift Strike",
+    "lvl": 26,
+    "persona": "Take-Minakata",
+    "race": "Hanged",
+    "resists": "----r-w--s",
+    "skills": ["Shock Boost", "Elec Boost", "Mazionga", "Swift Strike", "Assault Dive"],
+    "stats": [420],
     "trait": "Gloomy"
+  },
+  "Deformed Lion God": {
+    "areas": "Laboratory",
+    "card": "Fire Amp",
+    "drops": ["Nirvana AG", "Frost Magatama", "Soul Drop"],
+    "lvl": 74,
+    "material": "Thick Parchment",
+    "persona": "Chimera",
+    "race": "Strength",
+    "resists": "--dn-w---w",
+    "skills": ["Maragidyne", "Bufudyne", "Cornered Fang", "Fire Amp", "Burn Boost", "High Counter"],
+    "stats": [727],
+    "trait": "Upbeat"
   },
   "Destructive Beauty": {
     "areas": "Cruiser",
@@ -516,6 +491,31 @@
     "stats": [262],
     "trait": "Timid"
   },
+  "Evil Synthetic Organism": {
+    "areas": "Laboratory",
+    "card": "Heat Riser",
+    "drops": ["Idaten Ofuda", "Nirvana LU", "Soul Drop"],
+    "lvl": 70,
+    "material": "Red Phosphorus",
+    "persona": "Byakhee",
+    "race": "Moon",
+    "resists": "--nw-n-w-n",
+    "skills": ["Agidyne", "Terror Claw", "Heat Riser", "Diarahan", "Foul Breath"],
+    "stats": [558],
+    "trait": "Gloomy"
+  },
+  "Evil Voracious Dragon": {
+    "areas": "Laboratory",
+    "armor": "Sooty Scale Armor",
+    "card": "Gigantomachia",
+    "lvl": 86,
+    "persona": "Fafnir",
+    "race": "Hermit",
+    "resists": "rrd-s--d--",
+    "skills": ["Gigantomachia", "Cosmic Flare", "Nocturnal Flash", "Concentrate", "Debilitate", "Nuke Break", "Nuke Amp"],
+    "stats": [2006],
+    "trait": "Irritable"
+  },
   "Expressionless Beast": {
     "areas": "Casino",
     "armor": "Sooty Horn",
@@ -540,17 +540,16 @@
     "stats": [609],
     "trait": "Upbeat"
   },
-  "Floodbringer Demon": {
-    "areas": "Kaitul",
-    "card": "Mabufu",
-    "drops": ["Extinguish Orb", "Rasetsu Ofuda", "Revival Bead"],
-    "lvl": 24,
-    "material": "Cork Bark",
-    "persona": "Sui-Ki",
-    "race": "Moon",
-    "resists": "-s-ds--w--",
-    "skills": ["Sledgehammer", "Bufula", "Mabufula"],
-    "stats": [312],
+  "Fire Assassin": {
+    "areas": "Qliphoth",
+    "card": "Mahamaon",
+    "drops": ["Hell Magatama", "Homunculus", "Sacramental Bread"],
+    "lvl": 72,
+    "persona": "Throne",
+    "race": "Justice",
+    "resists": "--n--n-wr-",
+    "skills": ["Hamaon", "Inferno", "Fire Amp", "Burn Boost"],
+    "stats": [757],
     "trait": "Gloomy"
   },
   "Foolish Monk": {
@@ -575,18 +574,6 @@
     "resists": "-swr----n-",
     "skills": ["Rising Slash", "Counterstrike", "Dodge Physical", "Tarukaja"],
     "stats": [524],
-    "trait": "Irritable"
-  },
-  "Furious Wisdom King": {
-    "areas": "Cruiser",
-    "card": "Brave Blade",
-    "drops": ["Hell Magatama"],
-    "lvl": 65,
-    "persona": "Atavaka",
-    "race": "Faith",
-    "resists": "snr------s",
-    "skills": ["Oni Kagura", "Maragidyne", "Taunt", "Tarukaja", "Rage Boost", "Fire Amp"],
-    "stats": [760],
     "trait": "Irritable"
   },
   "Fused Ghost": {
@@ -687,19 +674,6 @@
     "resists": "---s-r-ws-",
     "trait": "Upbeat"
   },
-  "Headhunting Puss in Boots": {
-    "areas": "Castle",
-    "armor": "Sooty Boots",
-    "card": "Cleave",
-    "drops": ["Soul Drop"],
-    "lvl": 5,
-    "persona": "Cait Sith",
-    "race": "Magician",
-    "resists": "----sw----",
-    "skills": ["Agi", "Cleave", "Tarukaja"],
-    "stats": [130],
-    "trait": "Upbeat"
-  },
   "Heavenly Punisher": {
     "areas": "Castle",
     "card": "Kouha",
@@ -761,6 +735,19 @@
     "stats": [262],
     "trait": "Irritable"
   },
+  "Hunting Puss in Boots": {
+    "areas": "Castle",
+    "armor": "Sooty Boots",
+    "card": "Cleave",
+    "drops": ["Soul Drop"],
+    "lvl": 5,
+    "persona": "Cait Sith",
+    "race": "Magician",
+    "resists": "----sw----",
+    "skills": ["Agi", "Cleave", "Tarukaja"],
+    "stats": [130],
+    "trait": "Upbeat"
+  },
   "Hunting Wolf Spirit": {
     "areas": "Museum",
     "card": "Mafrei",
@@ -773,18 +760,17 @@
     "stats": [305],
     "trait": "Upbeat"
   },
-  "Hybrid Servant of Evil": {
-    "areas": "Laboratory",
-    "card": "Heat Riser",
-    "drops": ["Idaten Ofuda", "Nirvana LU", "Soul Drop"],
-    "lvl": 70,
-    "material": "Red Phosphorus",
-    "persona": "Byakhee",
-    "race": "Moon",
-    "resists": "--nw-n-w-n",
-    "skills": ["Agidyne", "Terror Claw", "Heat Riser", "Diarahan", "Foul Breath"],
-    "stats": [558],
-    "trait": "Gloomy"
+  "Infuriated Wisdom King": {
+    "areas": "Cruiser",
+    "card": "Brave Blade",
+    "drops": ["Hell Magatama"],
+    "lvl": 65,
+    "persona": "Atavaka",
+    "race": "Faith",
+    "resists": "snr------s",
+    "skills": ["Oni Kagura", "Maragidyne", "Taunt", "Tarukaja", "Rage Boost", "Fire Amp"],
+    "stats": [760],
+    "trait": "Irritable"
   },
   "Jealous Lover": {
     "areas": "Bank",
@@ -966,19 +952,6 @@
     "stats": [445],
     "trait": "Timid"
   },
-  "Mutant Lion God": {
-    "areas": "Laboratory",
-    "card": "Fire Amp",
-    "drops": ["Nirvana AG", "Frost Magatama", "Soul Drop"],
-    "lvl": 74,
-    "material": "Thick Parchment",
-    "persona": "Chimera",
-    "race": "Strength",
-    "resists": "--dn-w---w",
-    "skills": ["Maragidyne", "Bufudyne", "Cornered Fang", "Fire Amp", "Burn Boost", "High Counter"],
-    "stats": [727],
-    "trait": "Upbeat"
-  },
   "Night Chimera": {
     "areas": "Museum",
     "card": "Skull Cracker",
@@ -1140,17 +1113,18 @@
     "stats": [504],
     "trait": "Irritable"
   },
-  "Ravenous Dragon": {
-    "areas": "Laboratory",
-    "armor": "Sooty Scale Armor",
-    "card": "Gigantomachia",
-    "lvl": 86,
-    "persona": "Fafnir",
-    "race": "Hermit",
-    "resists": "rrd-s--d--",
-    "skills": ["Gigantomachia", "Cosmic Flare", "Nocturnal Flash", "Concentrate", "Debilitate", "Nuke Break", "Nuke Amp"],
-    "stats": [2006],
-    "trait": "Irritable"
+  "Raging Water Demon": {
+    "areas": "Kaitul",
+    "card": "Mabufu",
+    "drops": ["Extinguish Orb", "Rasetsu Ofuda", "Revival Bead"],
+    "lvl": 24,
+    "material": "Cork Bark",
+    "persona": "Sui-Ki",
+    "race": "Moon",
+    "resists": "-s-ds--w--",
+    "skills": ["Sledgehammer", "Bufula", "Mabufula"],
+    "stats": [312],
+    "trait": "Gloomy"
   },
   "Rebellious Elephant": {
     "areas": "Spaceport",
@@ -1220,6 +1194,19 @@
     "stats": [751],
     "trait": "Gloomy"
   },
+  "Samurai Killer": {
+    "areas": "Kaitul",
+    "card": "Vajra Blast",
+    "drops": ["Kongou Ofuda", "Revival Bead"],
+    "lvl": 25,
+    "material": "Silk Yarn",
+    "persona": "Kin-Ki",
+    "race": "Chariot",
+    "resists": "sr--------",
+    "skills": ["Rakukaja", "Vajra Blast", "Charge"],
+    "stats": [392],
+    "trait": "Gloomy"
+  },
   "Scandalous Queen": {
     "areas": "Cruiser",
     "card": "Freidyne",
@@ -1271,17 +1258,17 @@
     "stats": [291],
     "trait": "Gloomy"
   },
-  "Spiral of the Abyss": {
+  "Spear-Wielding General": {
     "areas": "Laboratory",
-    "card": "Wind Amp",
-    "drops": ["Debilitate Ofuda", "Soul Drop", "Vacuum Cutter"],
-    "lvl": 81,
-    "material": "Condenser Lens",
-    "persona": "Hastur",
-    "race": "Star",
-    "resists": "--s--dn--n",
-    "skills": ["Abyssal Eye", "Vacuum Wave", "Nocturnal Flash", "Concentrate", "Evade Physical", "Wind Amp", "Dizzy Boost"],
-    "stats": [1294],
+    "card": "One-shot Kill",
+    "drops": ["Empowering Ofuda", "Rasetsu Ofuda", "Soul Drop"],
+    "lvl": 76,
+    "material": "Aluminum Sheet",
+    "persona": "Cu Chulainn",
+    "race": "Faith",
+    "resists": "ss--wr--n-",
+    "skills": ["One-shot Kill", "Rebellion", "Apt Pupil", "High Counter"],
+    "stats": [1021],
     "trait": "Irritable"
   },
   "Stone of Scone D": {
@@ -1292,7 +1279,7 @@
     "resists": "ssw-------",
     "trait": "Upbeat"
   },
-  "Storm-Calling Bird": {
+  "Storm-Invoking Ptarmigan": {
     "areas": "Spaceport",
     "armor": "Sooty Feather Coat",
     "card": "Mazionga",
@@ -1524,6 +1511,19 @@
     "resists": "--s-w----s",
     "skills": ["Double Fangs", "Tarukaja"],
     "stats": [285],
+    "trait": "Irritable"
+  },
+  "Warped Abyss": {
+    "areas": "Laboratory",
+    "card": "Wind Amp",
+    "drops": ["Debilitate Ofuda", "Soul Drop", "Vacuum Cutter"],
+    "lvl": 81,
+    "material": "Condenser Lens",
+    "persona": "Hastur",
+    "race": "Star",
+    "resists": "--s--dn--n",
+    "skills": ["Abyssal Eye", "Vacuum Wave", "Nocturnal Flash", "Concentrate", "Evade Physical", "Wind Amp", "Dizzy Boost"],
+    "stats": [1294],
     "trait": "Irritable"
   },
   "Waterside Nymph": {
