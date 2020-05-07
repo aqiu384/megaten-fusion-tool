@@ -4,8 +4,17 @@
     "St",
     "Ma",
     "Vi",
-    "Lu"
+    "Lu",
+    "Lp"
   ],
+  "inheritTypes": {
+    "dash": ["Rush", "Mad Rush"],
+    "melee": ["Combo", "Venomstrike", "Frenzy", "Mighty Blow"],
+    "weapon": ["Winged Fury"],
+    "breath": ["Fire Breath", "Glacial Blast", "Shock Wave", "Wind Cutter"],
+    "pyro": ["Bufu"],
+    "frost": ["Agi"]
+  },
   "races": [
     "Pyro",
     "Frost",
@@ -19,6 +28,15 @@
     "Fiend",
     "Evil"
   ],
+  "raceSkills": {
+    "Pyro": "Ignite",
+    "Frost": "Cool Down",
+    "Volt": "Light Up",
+    "Wind": "Kamikaze",
+    "Fury": "Use Force",
+    "Pagan": "Read Mind",
+    "Skill": "Transform"
+  },
   "resistCodes": {
     "f": 2125,
     "w": 1125,

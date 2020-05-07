@@ -85,19 +85,6 @@ for (const dataJson of [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON]) {
 }
 
 for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
-  SPECIAL_RECIPES_JSON[name] = { 'entries': entry };
-}
-
-SPECIAL_RECIPES_JSON['Ara Mitama'] = { pairs: ['Erthys x Aquans', 'Aeros x Flaemis'] };
-SPECIAL_RECIPES_JSON['Kusi Mitama'] = { pairs: ['Erthys x Flaemis', 'Aeros x Aquans'] };
-SPECIAL_RECIPES_JSON['Nigi Mitama'] = { pairs: ['Erthys x Aeros'] };
-SPECIAL_RECIPES_JSON['Saki Mitama'] = { pairs: ['Aquans x Flaemis'] };
-
-for (const [name, entry] of Object.entries(REC_SPECIAL_RECIPES_JSON)) {
-  REC_SPECIAL_RECIPES_JSON[name] = { 'entries': entry };
-}
-
-for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
   REC_SPECIAL_RECIPES_JSON[name] = entry;
 }
 

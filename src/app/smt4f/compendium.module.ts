@@ -15,6 +15,7 @@ import ENEMY_DATA_JSON from './data/enemy-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../smt4/data/element-chart.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
 
@@ -32,8 +33,14 @@ const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
 for (const [demon, entry] of Object.entries(ENEMY_DATA_JSON)) {
   entry['skills'] = entry['eskills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {});
   entry['fusion'] = 'enemy';
+  entry['prereq'] = 'Enemy Only';
   entry['price'] = 0;
   DEMON_DATA_JSON[demon] = entry;
+}
+
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name].prereq = prereq;
+  DEMON_DATA_JSON[name].fusion = prereq.includes('Fusion Accident') ? 'accident' : 'normal';
 }
 
 export const SMT4F_COMPENDIUM_CONFIG: CompendiumConfig = {

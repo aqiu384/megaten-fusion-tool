@@ -1,1129 +1,1091 @@
 {
-  "Acid": {
-    "effect": "Poison rains down from the sky several times.",
-    "elem": "boss"
-  },
   "Agi": {
     "cost": 2008,
-    "effect": "Light Fire dmg to an enemy. Stun:Short",
-    "elem": "fire"
+    "effect": "Short stun",
+    "elem": "fir",
+    "power": 25,
+    "target": "Single"
   },
   "Agidyne": {
     "cost": 2018,
-    "effect": "Heavy Splash Fire dmg. Stun: Long",
-    "elem": "fire"
+    "effect": "Long stun",
+    "elem": "fir",
+    "power": 36,
+    "target": "Splash"
   },
   "Agirati": {
     "cost": 2015,
-    "effect": "Light Fire dmg, 3-way spread. Stun: Med",
-    "elem": "fire"
+    "effect": "x3 hits, Medium stun",
+    "elem": "fir",
+    "power": 22,
+    "target": "Spread"
   },
   "Agni's Blessing": {
-    "effect": "Boosts all stats by 3",
-    "elem": "passive"
+    "effect": "All Stats +3",
+    "elem": "pas"
   },
   "Agnostic Crush": {
     "cost": 2070,
-    "effect": "Mega Death dmg to all. Stun: Short Type: Axe",
-    "elem": "death"
+    "effect": "Axe-type",
+    "elem": "dea",
+    "power": 90,
+    "target": "Combo"
   },
   "Barrage": {
     "cost": 2048,
-    "effect": "Area multi-hit Heavy Gun dmg",
-    "elem": "gun"
-  },
-  "Begin Starvation": {
-    "effect": "Heavy attack. Drains MAG.",
-    "elem": "boss"
-  },
-  "Bite the Bullet": {
-    "effect": "Multi-hit Gun dmg",
-    "elem": "boss"
+    "effect": "x8 hits",
+    "elem": "gun",
+    "power": 58,
+    "target": "Line",
+    "unique": "Yomi-kugutsu C"
   },
   "Blizzard Slash": {
     "cost": 2110,
-    "effect": "Ultra Ice dmg to all. Stun: Short Type: Blade",
-    "elem": "ice"
-  },
-  "Bloody Inferno": {
-    "effect": "Fire attack. Hits whole field",
-    "elem": "boss"
+    "effect": "Blade-type",
+    "elem": "ice",
+    "power": 125,
+    "target": "Combo"
   },
   "Bolt Slash": {
     "cost": 2040,
-    "effect": "Heavy Elec dmg to all. Stun: Short Type: Blade",
-    "elem": "elec"
+    "effect": "Sword-type",
+    "elem": "ele",
+    "power": 55,
+    "target": "Combo"
+  },
+  "Brainwash": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Bufu": {
     "cost": 2008,
-    "effect": "Light Ice dmg to an enemy. Stun:Short",
-    "elem": "ice"
+    "effect": "Short stun",
+    "elem": "ice",
+    "power": 25,
+    "target": "Single"
   },
   "Bufudyne": {
     "cost": 2018,
-    "effect": "Heavy Splash Ice dmg. Stun: Long",
-    "elem": "ice"
+    "effect": "Long stun",
+    "elem": "ice",
+    "power": 36,
+    "target": "Splash"
   },
   "Bufurati": {
     "cost": 2015,
-    "effect": "Light Ice dmg, 3-way spread. Stun: Med",
-    "elem": "ice"
-  },
-  "Bullet Rain": {
-    "effect": "Ice attack. Hits whole field.",
-    "elem": "boss"
-  },
-  "Burning Resolve": {
-    "effect": "Fire dmg to all enemies",
-    "elem": "boss"
-  },
-  "Called for Reinforcements": {
-    "effect": "Summons two Lamia.",
-    "elem": "boss"
+    "effect": "x3 hits, Medium stun",
+    "elem": "ice",
+    "power": 22,
+    "target": "Spread"
   },
   "Capital's Fury": {
-    "effect": "High chance of countering all dmg taken",
-    "elem": "passive"
+    "effect": "80% chance to repel all damage not nullified or drained",
+    "elem": "pas"
+  },
+  "Charisma": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Cocytus": {
     "cost": 2038,
-    "effect": "Severe Piercing Ice dmg. Stun: Extreme",
-    "elem": "ice"
-  },
-  "Coercion": {
-    "effect": "Phys dmg to an enemy, Knockback + Dizzy",
-    "elem": "boss"
+    "effect": "Extreme stun",
+    "elem": "ice",
+    "power": 62,
+    "target": "Line"
   },
   "Combo": {
     "cost": 2006,
-    "effect": "Light multi-hit Phys dmg. +Dizzy(Low)",
-    "elem": "phys"
-  },
-  "Cool Down": {
-    "effect": "Cool down the target. Frost Order",
-    "elem": "investigate"
-  },
-  "Corona Pillars": {
-    "effect": "Several pillars move across the field. Deal almighty damage if touched.",
-    "elem": "boss"
+    "effect": "x3 hits, Low chance of Dizzy",
+    "elem": "phy",
+    "power": 40,
+    "target": "Single"
   },
   "Cross Slash": {
     "cost": 2090,
-    "effect": "Heavy Phys dmg to all enemies +Dizzy(Low)",
-    "elem": "phys"
+    "effect": "Medium chance of Dizzy",
+    "elem": "phy",
+    "power": 120,
+    "target": "Combo"
   },
   "Cursed Bolt": {
     "cost": 2060,
-    "effect": "Heavy Mind dmg, 5-way spread +Charm(High)",
-    "elem": "mind"
+    "effect": "x5 hits, High chance of Charm",
+    "elem": "min",
+    "power": 60,
+    "target": "Spread",
+    "unique": "Mishaguji"
   },
   "Cursed Emission": {
     "cost": 2022,
-    "effect": "Medium Almighty dmg to an enemy +Dizzy(High)  Mara and Mishaguji exclusive.",
-    "elem": "almighty"
+    "effect": "Low speed, High chance of Dizzy",
+    "elem": "alm",
+    "power": 40,
+    "target": "Single",
+    "unique": "Mara"
   },
   "Cyclone Stab": {
+    "cost": 2070,
+    "effect": "Spear-type",
+    "elem": "for",
+    "power": 90,
+    "target": "Combo"
+  },
+  "Cyclone Stab R": {
     "cost": 2110,
-    "effect": "Ultra Force dmg to all. Stun: Short Type: Spear",
-    "elem": "force"
+    "effect": "Spear-type",
+    "elem": "for",
+    "power": 125,
+    "target": "Combo"
   },
   "Death Bullet": {
     "cost": 2030,
-    "effect": "Adds Death dmg to gun attacks. Duration: Short",
-    "elem": "support"
-  },
-  "Death Cutter": {
-    "effect": "Phys attack. User chases target during use.",
-    "elem": "boss"
+    "effect": "Adds death damage to gun attacks for short time",
+    "elem": "sup",
+    "power": 10,
+    "target": "Allies"
   },
   "Death Drain": {
     "cost": 2080,
-    "effect": "Briefly drain Death dmg. All allies",
-    "elem": "support"
+    "effect": "Drains death damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
-  "Death Shot": {
-    "effect": "Phys attack unleashed after Acid.",
-    "elem": "boss"
+  "Debate": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Dekaja": {
     "cost": 2018,
-    "effect": "Void stat boosts on all foes",
-    "elem": "support"
-  },
-  "Demon Hunt": {
-    "effect": "Unknown Effect",
-    "elem": "boss"
+    "effect": "Removes all -kaja and shield effects",
+    "elem": "sup",
+    "target": "Foes"
   },
   "Demon's Blessing": {
-    "effect": "Boost all stats",
-    "elem": "passive"
-  },
-  "Demonic Star": {
-    "effect": "Almighty attack. Hits whole field and can be blocked.",
-    "elem": "boss"
-  },
-  "Demonstrate": {
-    "effect": "Use craftsmen skill while moving. Skill Order",
-    "elem": "investigate"
+    "effect": "Stats +20% based on base stat values",
+    "elem": "pas"
   },
   "Desperate Power": {
-    "effect": "Raises Fiend encounter rate",
-    "elem": "passive"
+    "effect": "Increases Fiend encounter rate during New Moon",
+    "elem": "pas"
   },
   "Destructive Joy": {
-    "effect": "Boosts the power of all attacks",
-    "elem": "passive"
+    "effect": "All damage +50%",
+    "elem": "pas"
   },
   "Dia": {
     "cost": 2010,
-    "effect": "Slightly restores HP. 1 Ally",
-    "elem": "recovery"
+    "effect": "Slightly recovers HP",
+    "elem": "rec",
+    "target": "Single"
   },
   "Dia Aura": {
     "cost": 2012,
-    "effect": "Gradually slightly restores HP 1 Ally",
-    "elem": "recovery"
-  },
-  "Diamond Crush": {
-    "effect": "Multi-hitting ice attack.",
-    "elem": "boss"
+    "effect": "Slightly restores HP over short time",
+    "elem": "rec",
+    "target": "Single"
   },
   "Diarahan": {
     "cost": 2036,
-    "effect": "Fully restores HP. 1 Ally",
-    "elem": "recovery"
+    "effect": "Fully recovers HP",
+    "elem": "rec",
+    "target": "Single"
   },
   "Diarama": {
     "cost": 2022,
-    "effect": "Moderately restores HP. 1 Ally",
-    "elem": "recovery"
-  },
-  "Dismiss Demon": {
-    "effect": "Mind attack. Inflicts charm.",
-    "elem": "boss"
-  },
-  "Divine Thunder": {
-    "effect": "Elec. attack. Hits whole field.",
-    "elem": "boss"
+    "effect": "Moderately recovers HP",
+    "elem": "rec",
+    "target": "Single"
   },
   "Dormina": {
     "cost": 2016,
-    "effect": "Light Mind dmg to an area +Sleep(Med)",
-    "elem": "mind"
+    "effect": "Medium chance of Sleep",
+    "elem": "min",
+    "power": 10,
+    "target": "Area"
   },
   "Doubt Beam": {
     "cost": 2054,
-    "effect": "Medium multi-hit Mind dmg +Panic/dizzy(High)",
-    "elem": "mind"
-  },
-  "Dragon Fang": {
-    "effect": "Linear piercing phys dmg",
-    "elem": "boss"
+    "effect": "x3 hits, High chance of Panic",
+    "elem": "min",
+    "power": 30,
+    "target": "Single",
+    "unique": "Red Cape"
   },
   "Drain": {
-    "effect": "MAG absorption rate increases",
-    "elem": "passive"
+    "effect": "Increases MAG drained from attacking foes",
+    "elem": "pas"
   },
   "EXP Boost": {
-    "effect": "Small increase to EXP earned after battle",
-    "elem": "passive"
+    "effect": "Increases EXP earned",
+    "elem": "pas"
   },
   "Elec Boost": {
-    "effect": "Increase Elec attack dmg",
-    "elem": "passive"
+    "effect": "Elec damage +50%",
+    "elem": "pas"
   },
   "Elec Bullet": {
     "cost": 2030,
-    "effect": "Adds Elec dmg to gun attacks. Duration: Short",
-    "elem": "support"
+    "effect": "Adds elec damage to gun attacks for short time",
+    "elem": "sup",
+    "power": 10,
+    "target": "Allies"
   },
   "Elec Drain": {
     "cost": 2080,
-    "effect": "Briefly drain Elec dmg. All allies",
-    "elem": "support"
+    "effect": "Drains elec damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Elec Resist": {
-    "effect": "Halves Elec dmg taken. Can void weakness",
-    "elem": "passive"
+    "effect": "Halves damage from elec attacks",
+    "elem": "pas"
   },
   "Electric Crush": {
     "cost": 2070,
-    "effect": "Mega Elec dmg to all. Stun: Short Type: Axe",
-    "elem": "elec"
-  },
-  "Electric Slash": {
-    "cost": 2070,
-    "effect": "Mega Elec dmg to all. Stun: Short Type: Blade",
-    "elem": "elec"
+    "effect": "Axe-type",
+    "elem": "ele",
+    "power": 90,
+    "target": "Combo"
   },
   "Endure": {
-    "effect": "Revive with 1 HP (once per battle)",
-    "elem": "passive"
+    "effect": "Survive fatal attack with 1 HP once per battle",
+    "elem": "pas"
   },
   "Eternal Rest": {
     "cost": 2120,
-    "effect": "High chance of Instant death to all sleeping foes.",
-    "elem": "mind"
+    "effect": "Insta-death to all sleeping foes",
+    "elem": "min",
+    "target": "Combo"
   },
-  "Evil Gleam": {
-    "effect": "Hits entire field. Can be blocked. Inflicts Charm.",
-    "elem": "boss"
-  },
-  "Evil Hurricane": {
-    "effect": "Wind attack. Hits whole field. Can be blocked.",
-    "elem": "boss"
+  "Extortion": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Fast Escape": {
-    "effect": "Escape quicker if skill holder is present",
-    "elem": "passive"
+    "effect": "Decreases time required to flee from battle",
+    "elem": "pas"
+  },
+  "Fast Talk": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Finders Keepers": {
-    "effect": "Find items while walking",
-    "elem": "passive"
+    "effect": "Finds items when active field member",
+    "elem": "pas"
   },
   "Fire Boost": {
-    "effect": "Increase Fire attack dmg",
-    "elem": "passive"
+    "effect": "Fire damage +50%",
+    "elem": "pas"
   },
   "Fire Breath": {
     "cost": 2034,
-    "effect": "Heavy Piercing multi-hit Fire dmg. Stun: Med",
-    "elem": "fire"
+    "effect": "x3 hits, Medium stun",
+    "elem": "fir",
+    "power": 25,
+    "target": "Line"
   },
   "Fire Bullet": {
     "cost": 2030,
-    "effect": "Adds Fire dmg to gun attacks. Duration: Short",
-    "elem": "support"
+    "effect": "Adds fire damage to gun attacks for short time",
+    "elem": "sup",
+    "power": 10,
+    "target": "Allies"
   },
   "Fire Drain": {
     "cost": 2080,
-    "effect": "Briefly drain Fire dmg. All allies.",
-    "elem": "support"
+    "effect": "Drains fire damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Fire Resist": {
-    "effect": "Halves Fire dmg taken. Can void weakness",
-    "elem": "passive"
+    "effect": "Halves damage from fire attacks",
+    "elem": "pas"
   },
   "Fire Slash": {
     "cost": 2040,
-    "effect": "Heavy Fire dmg to all. Stun: Short Type: Blade",
-    "elem": "fire"
+    "effect": "Blade-type",
+    "elem": "fir",
+    "power": 55,
+    "target": "Combo"
   },
   "First Aid": {
-    "effect": "Recover some HP (self) after battle",
-    "elem": "passive"
+    "effect": "Recovers HP after battle",
+    "elem": "pas"
   },
   "Flare Slash": {
     "cost": 2110,
-    "effect": "Ultra Fire dmg to all. Stun: Short Type: Blade",
-    "elem": "fire"
-  },
-  "Flying Head": {
-    "effect": "Chases after Raidou. Inflicts Random Status ailment and stuns target for 8 seconds if it hits.",
-    "elem": "boss"
+    "effect": "Blade-type",
+    "elem": "fir",
+    "power": 125,
+    "target": "Combo"
   },
   "Force Boost": {
-    "effect": "Increase Force attack dmg",
-    "elem": "passive"
+    "effect": "Force damage +50%",
+    "elem": "pas"
   },
   "Force Bullet": {
     "cost": 2030,
-    "effect": "Adds Force dmg to gun attacks. Duration: Short",
-    "elem": "support"
+    "effect": "Adds force damage to gun attacks for short time",
+    "elem": "sup",
+    "power": 10,
+    "target": "Allies"
   },
   "Force Drain": {
     "cost": 2080,
-    "effect": "Briefly drain Wind dmg. All allies",
-    "elem": "support"
+    "effect": "Drains force damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Force Resist": {
-    "effect": "Halves Force dmg taken. Can void weakness",
-    "elem": "passive"
+    "effect": "Halves damage from force attacks",
+    "elem": "pas"
   },
   "Freeze Slash": {
     "cost": 2070,
-    "effect": "Mega Ice dmg to all. Stun: Short Type: Blade",
-    "elem": "ice"
+    "effect": "Blade-type",
+    "elem": "ice",
+    "power": 90,
+    "target": "Combo"
   },
   "Frenzy": {
     "cost": 2022,
-    "effect": "Light Phys dmg to an area +Dizzy(Low)",
-    "elem": "phys"
+    "effect": "Low chance of Dizzy",
+    "elem": "phy",
+    "power": 60,
+    "target": "Area"
   },
   "Frost Killer": {
     "cost": 2060,
-    "effect": "Imbue Raidou's sword with Ice. Duration: Long",
-    "elem": "support"
+    "effect": "Adds ice damage to sword attacks for long time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Frost Sword": {
     "cost": 2035,
-    "effect": "Imbue Raidou's sword with Ice. Duration: Short",
-    "elem": "support"
+    "effect": "Adds ice damage to sword attacks for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Gale Stab": {
     "cost": 2040,
-    "effect": "Heavy Force dmg to all. Stun: Short Type: Spear",
-    "elem": "force"
+    "effect": "Spear-type",
+    "elem": "for",
+    "power": 55,
+    "target": "Combo"
   },
   "Glacial Blast": {
     "cost": 2034,
-    "effect": "Heavy Piercing multi-hit Ice dmg. Stun:Med",
-    "elem": "ice"
+    "effect": "x3 hits, Medium stun",
+    "elem": "ice",
+    "power": 25,
+    "target": "Line"
   },
   "Growth": {
-    "effect": "Obtain Exp when not summoned",
-    "elem": "passive"
-  },
-  "Grudge Sword": {
-    "effect": "Massive Damage. Drains Raidou's MAG if it hits Demons or Raidou.",
-    "elem": "boss"
+    "effect": "Gains EXP even when not active party member",
+    "elem": "pas"
   },
   "Halve Death": {
-    "effect": "Death dmg -50%, negates Death stun",
-    "elem": "passive"
+    "effect": "Halves damage from death attacks",
+    "elem": "pas"
   },
   "Halve Mind": {
-    "effect": "Halves susceptibility to ailments",
-    "elem": "passive"
+    "effect": "Halves damage from mind attacks",
+    "elem": "pas"
   },
   "Halve Mortal": {
-    "effect": "Halves chance of instant death",
-    "elem": "passive"
+    "effect": "Halves chances of being insta-killed",
+    "elem": "pas"
   },
   "Headcrush": {
     "cost": 2032,
-    "effect": "Medium Phys dmg to all +Dizzy(High)",
-    "elem": "phys"
-  },
-  "Headcrush (Boss)": {
-    "effect": "Phys Attack. Hits whole field.",
-    "elem": "boss"
+    "effect": "Low chance of Dizzy",
+    "elem": "phy",
+    "power": 80,
+    "target": "Combo"
   },
   "Heal Boost": {
-    "effect": "Increase healing ability",
-    "elem": "passive"
+    "effect": "Recovery power +50%",
+    "elem": "pas"
   },
   "Hellfire": {
     "cost": 2038,
-    "effect": "Severe Piercing Fire dmg. Stun: Extreme",
-    "elem": "fire"
+    "effect": "Extreme stun",
+    "elem": "fir",
+    "power": 62,
+    "target": "Line"
   },
   "Heretic Crush": {
     "cost": 2040,
-    "effect": "Heavy Death dmg to all. Stun: Short Type: Axe",
-    "elem": "death"
+    "effect": "Axe-type",
+    "elem": "dea",
+    "power": 55,
+    "target": "Combo"
   },
   "Hero's Might": {
-    "effect": "Chance of increasing Phys attack dmg",
-    "elem": "passive"
-  },
-  "Hiding": {
-    "effect": "Teleports",
-    "elem": "boss"
+    "effect": "50% chance to double damage for phys attack",
+    "elem": "pas"
   },
   "Ice Boost": {
-    "effect": "Increase Ice attack dmg",
-    "elem": "passive"
+    "effect": "Ice damage +50%",
+    "elem": "pas"
   },
   "Ice Bullet": {
     "cost": 2030,
-    "effect": "Adds Ice dmg to gun attacks. Duration: Short",
-    "elem": "support"
+    "effect": "Adds ice damage to gun attacks for short time",
+    "elem": "sup",
+    "power": 10,
+    "target": "Allies"
   },
   "Ice Drain": {
     "cost": 2080,
-    "effect": "Briefly drain Ice dmg. All allies",
-    "elem": "support"
+    "effect": "Drains ice damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Ice Resist": {
-    "effect": "Halves Ice dmg taken. Can void weakness",
-    "elem": "passive"
+    "effect": "Halves damage from ice attacks",
+    "elem": "pas"
   },
   "Ice Slash": {
     "cost": 2040,
-    "effect": "Heavy Ice dmg to all. Stun: Short Type: Blade",
-    "elem": "ice"
-  },
-  "Ignite": {
-    "effect": "Ignite the Target. Pyro Order",
-    "elem": "investigate"
-  },
-  "Inferno": {
-    "effect": "Fire attack hits whole field.",
-    "elem": "boss"
-  },
-  "Inspect": {
-    "effect": "Illuminate Hidden Locations. Volt Order",
-    "elem": "investigate"
+    "effect": "Blade-type",
+    "elem": "ice",
+    "power": 55,
+    "target": "Combo"
   },
   "Intimidate": {
     "effect": "Decrease encounter rate until new moon.",
-    "elem": "investigate"
-  },
-  "Judgement": {
-    "effect": "Almighty dmg to all enemies",
-    "elem": "boss"
-  },
-  "Judging Eye": {
-    "effect": "Chases Raidou across the field. Causes dizzy.",
-    "elem": "boss"
+    "elem": "inv"
   },
   "Justification": {
     "cost": 2014,
-    "effect": "Moderately restores HP of the caster.  Red Cape exclusive.",
-    "elem": "recovery"
-  },
-  "Kamikaze": {
-    "effect": "Use the wind to fly somewhere. Wind Order",
-    "elem": "investigate"
-  },
-  "King's Yell": {
-    "effect": "Almighty attack. Lingers in front of Lucifer. Inflicts Panic.",
-    "elem": "boss"
+    "effect": "Moderately recovers HP",
+    "elem": "rec",
+    "unique": "Red Cape"
   },
   "Lay Waste": {
     "cost": 2120,
-    "effect": "Mega Almighty dmg to all poisoned foes",
-    "elem": "almighty"
+    "effect": "Damage to all poisoned foes",
+    "elem": "alm",
+    "power": 180,
+    "target": "Combo"
   },
   "Life Bonus": {
-    "effect": "Raises MAX HP by 10%",
-    "elem": "passive"
+    "effect": "Max HP +10%",
+    "elem": "pas"
   },
   "Life Gain": {
-    "effect": "Raises MAX HP by 20%",
-    "elem": "passive"
+    "effect": "Max HP +20%",
+    "elem": "pas"
   },
   "Life Surge": {
-    "effect": "Raises MAX HP by 30%",
-    "elem": "passive"
-  },
-  "Light Up": {
-    "effect": "Illuminate an area with lightning. Volt Order",
-    "elem": "investigate"
+    "effect": "Max HP +30%",
+    "elem": "pas"
   },
   "Luck Chakra": {
-    "effect": "Boosts Luck by 3",
-    "elem": "passive"
+    "effect": "Lu +3",
+    "elem": "pas"
   },
   "Lucky Capote": {
-    "effect": "Nullify the dmg dealt, depending on Luck",
-    "elem": "passive"
+    "effect": "Lu% chance to nullifly all damage not nullified or drained",
+    "elem": "pas"
   },
   "Lucky Strike": {
-    "effect": "Raise critical chances on normal attacks",
-    "elem": "passive"
+    "effect": "Increase strike attack crit by Lu%",
+    "elem": "pas"
   },
   "Mabufu": {
     "cost": 2012,
-    "effect": "Medium Ice dmg to an area. Stun:Med",
-    "elem": "ice"
+    "effect": "Medium stun",
+    "elem": "ice",
+    "power": 30,
+    "target": "Area"
   },
   "Mabufudyne": {
     "cost": 2028,
-    "effect": "Heavy Ice dmg to an area. Stun: Long",
-    "elem": "ice"
+    "effect": "Long stun",
+    "elem": "ice",
+    "power": 48,
+    "target": "Area"
   },
   "Mad Rush": {
     "cost": 2028,
-    "effect": "Medium Phys dmg, dash attack +Dizzy(Low)",
-    "elem": "phys"
+    "effect": "x3 hits, Low chance of Dizzy",
+    "elem": "phy",
+    "power": 70,
+    "target": "Dash"
   },
   "Mag Bullet": {
     "cost": 2060,
-    "effect": "Greatly increases gun attack dmg. Duration: Short",
-    "elem": "support"
+    "effect": "Increases gun damage",
+    "elem": "sup",
+    "power": 15,
+    "target": "Single"
   },
   "Mage's Craft": {
-    "effect": "Chance of increasing Magic attack dmg",
-    "elem": "passive"
+    "effect": "50% chance to double damage for magic attack",
+    "elem": "pas"
   },
   "Magic Boost": {
-    "effect": "Reduce MAG usage for skills",
-    "elem": "passive"
+    "effect": "Spell costs -25%",
+    "elem": "pas"
   },
   "Magic Chakra": {
-    "effect": "Boosts Magic by 3",
-    "elem": "passive"
+    "effect": "Ma +3",
+    "elem": "pas"
   },
   "Makajam": {
     "cost": 2016,
-    "effect": "Light Mind dmg to an area +Mute(Med)",
-    "elem": "mind"
+    "effect": "Medium chance of Mute",
+    "elem": "min",
+    "power": 10,
+    "target": "Area"
   },
   "Makakaja": {
     "cost": 2014,
-    "effect": "Raises Magic attack until battle ends. All allies",
-    "elem": "support"
+    "effect": "Magic attack +20%, Stacks up to +50%",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Makakajaon": {
     "cost": 2032,
-    "effect": "Raises Magic attack until battle ends. All allies",
-    "elem": "support"
+    "effect": "Magic attack +30%, Stacks up to +60%",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Mamudo": {
     "cost": 2025,
-    "effect": "Area Death attack, halves HP. Stun: Med",
-    "elem": "death"
+    "effect": "Halves HP, Medium stun",
+    "elem": "dea",
+    "target": "Area"
   },
   "Mamudoon": {
     "cost": 2038,
-    "effect": "Area Death attack. Instantly lethal",
-    "elem": "death"
-  },
-  "Mamudoon (Boss)": {
-    "effect": "Instant Death Attack. Hits whole field. Can be blocked",
-    "elem": "boss"
+    "effect": "Low chance of insta-death",
+    "elem": "dea",
+    "target": "Area"
   },
   "Maragi": {
     "cost": 2012,
-    "effect": "Medium Fire dmg to an area. Stun: Med",
-    "elem": "fire"
+    "effect": "Medium stun",
+    "elem": "fir",
+    "power": 30,
+    "target": "Area"
   },
   "Maragidyne": {
     "cost": 2028,
-    "effect": "Heavy Fire dmg to an area. Stun: Long",
-    "elem": "fire"
-  },
-  "Maragidyne (Boss)": {
-    "effect": "Fire attack. Hits entire field.",
-    "elem": "boss"
+    "effect": "Long stun",
+    "elem": "fir",
+    "power": 48,
+    "target": "Area"
   },
   "Marin Karin": {
     "cost": 2016,
-    "effect": "Light Mind dmg to an area +Charm(Med)",
-    "elem": "mind"
+    "effect": "Medium chance of Charm",
+    "elem": "min",
+    "power": 10,
+    "target": "Area"
   },
   "Mazan": {
     "cost": 2012,
-    "effect": "Medium Force dmg to an area. Stun: Med",
-    "elem": "force"
+    "effect": "Medium stun",
+    "elem": "for",
+    "power": 30,
+    "target": "Area"
   },
   "Mazandyne": {
     "cost": 2028,
-    "effect": "Heavy Force dmg to an area. Stun: Long",
-    "elem": "force"
+    "effect": "Long stun",
+    "elem": "for",
+    "power": 48,
+    "target": "Area"
   },
   "Mazio": {
     "cost": 2012,
-    "effect": "Medium Elec dmg to an area. Stun: Med",
-    "elem": "elec"
+    "effect": "Medium stun",
+    "elem": "ele",
+    "power": 30,
+    "target": "Area"
   },
   "Maziodyne": {
     "cost": 2028,
-    "effect": "Heavy Elc dmg to an area. Stun: Long",
-    "elem": "elec"
+    "effect": "Long stun",
+    "elem": "ele",
+    "power": 48,
+    "target": "Area"
   },
   "Media": {
     "cost": 2018,
-    "effect": "Slightly restores HP. All allies",
-    "elem": "recovery"
+    "effect": "Slightly recovers HP",
+    "elem": "rec",
+    "target": "Allies"
   },
   "Mediarama": {
     "cost": 2034,
-    "effect": "Moderately restores HP. All alies",
-    "elem": "recovery"
+    "effect": "Moderately recovers HP",
+    "elem": "rec",
+    "target": "Allies"
   },
   "Megido": {
     "cost": 2080,
-    "effect": "Heavy Almighty dmg to an area",
-    "elem": "almighty"
+    "elem": "alm",
+    "power": 130,
+    "target": "Area"
   },
   "Megido Fire": {
     "cost": 2090,
-    "effect": "Adds Heavy Almighty dmg to gun attacks",
-    "elem": "almighty"
-  },
-  "Megidola": {
-    "effect": "Mega Almighty dmg to an area",
-    "elem": "boss"
+    "effect": "Adds almighty damage to gun attacks for short time",
+    "elem": "sup",
+    "power": 18,
+    "target": "Allies"
   },
   "Megidolaon": {
     "cost": 2180,
-    "effect": "Severe Almighty dmg to all foes. Combination Attack.",
-    "elem": "almighty"
+    "elem": "alm",
+    "power": 200,
+    "target": "Combo"
   },
   "Melee": {
     "cost": 2032,
-    "effect": "Light linear multi-hit Phys dmg +Panic(Med)",
-    "elem": "phys"
+    "effect": "x3 hits, Medium chance of Panic",
+    "elem": "phy",
+    "power": 40,
+    "target": "Single",
+    "unique": "Yomi-kugutsu A"
   },
   "Metal Bullet": {
     "cost": 2040,
-    "effect": "Increases gun attack dmg. Duration: Short",
-    "elem": "support"
+    "effect": "Increases gun damage",
+    "elem": "sup",
+    "power": 10,
+    "target": "Single"
   },
   "Mighty Blow": {
     "cost": 2026,
-    "effect": "Heavy Phys dmg to an enemy +Dizzy(Med)",
-    "elem": "phys"
+    "effect": "Medium chance of Dizzy",
+    "elem": "phy",
+    "power": 120,
+    "target": "Single"
   },
   "Mind Boost": {
-    "effect": "Increase chance of Mind ailment attack",
-    "elem": "passive"
-  },
-  "Money Rain": {
-    "effect": "Money rains from the sky. Must go into clear spot near the end to avoid the final part of the attack.",
-    "elem": "boss"
+    "effect": "Increases chances of inflicting ailments",
+    "elem": "pas"
   },
   "Money-Getter": {
-    "effect": "Find money while walking",
-    "elem": "passive"
+    "effect": "Finds money when active field member",
+    "elem": "pas"
   },
   "Moonlight Rage": {
-    "effect": "Boosts strength during Full Moon",
-    "elem": "passive"
+    "effect": "Damage during Full Moon +50%",
+    "elem": "pas"
   },
   "Mudo": {
     "cost": 2013,
-    "effect": "Single target Death attack, halves HP. Stun: Med",
-    "elem": "death"
-  },
-  "Mudoon": {
-    "effect": "Area Death attack. Instantly lethal",
-    "elem": "boss"
-  },
-  "Mute Beam": {
-    "effect": "Almighty attack. Desummons a demon for the entire battle and hurts Raidou.",
-    "elem": "boss"
+    "effect": "Halves HP, Medium stun",
+    "elem": "dea",
+    "target": "Single"
   },
   "Null Death": {
     "cost": 2045,
-    "effect": "Briefly nullify Death dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies death damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Null Elec": {
     "cost": 2045,
-    "effect": "Briefly nullify Elec dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies elec damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Null Fire": {
     "cost": 2045,
-    "effect": "Briefly nullify Fire dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies fire damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Null Force": {
     "cost": 2045,
-    "effect": "Briefly nullify Force dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies force damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Null Ice": {
     "cost": 2045,
-    "effect": "Briefly nullify Ice dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies ice damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Null Mind": {
     "cost": 2045,
-    "effect": "Briefly nullify Mind dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies mind damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Null Mortal": {
-    "effect": "Prevents instant death",
-    "elem": "passive"
+    "effect": "Nullifies insta-kill attacks",
+    "elem": "pas"
   },
   "Null Phys": {
     "cost": 2080,
-    "effect": "Briefly nullify Phys dmg. All allies",
-    "elem": "support"
+    "effect": "Nullifies phys damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Orienteering": {
-    "effect": "Possessor won't get lost",
-    "elem": "passive"
+    "effect": "Nullifies Lost ailment",
+    "elem": "pas"
   },
   "Pagan Killer": {
     "cost": 2060,
-    "effect": "Imbue Raidou's sword with Death. Duration: Long",
-    "elem": "support"
+    "effect": "Adds death damage to sword attacks for long time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Pagan Sword": {
     "cost": 2035,
-    "effect": "Imbue Raidou's sword with Death. Duration: Short",
-    "elem": "support"
+    "effect": "Adds death damage to sword attacks for short time",
+    "elem": "sup",
+    "target": "Allies"
+  },
+  "Panic Urge": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Patra": {
     "cost": 2008,
-    "effect": "Cures Sleep, Panic, Charm, and Dizzy. 1 Ally",
-    "elem": "recovery"
+    "effect": "Cures Sleep, Confusion, Charm, and Dizzy",
+    "elem": "rec",
+    "target": "Single"
+  },
+  "Patter": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Petra": {
     "cost": 2018,
-    "effect": "Light Mind dmg to an area +Stone(Low)",
-    "elem": "mind"
+    "effect": "Medium chance of Stone",
+    "elem": "min",
+    "power": 10,
+    "target": "Area"
   },
   "Phys Drain": {
     "cost": 2120,
-    "effect": "Briefly drain Phys dmg. All allies",
-    "elem": "support"
+    "effect": "Drains phys damage for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Phys Resist": {
-    "effect": "Halves Phys dmg taken. Can void weakness",
-    "elem": "passive"
-  },
-  "Plasma": {
-    "effect": "Chases Raidou across field. Causes Dizzy",
-    "elem": "boss"
-  },
-  "Poison Punch": {
-    "effect": "Phys dmg to an enemy + Poison",
-    "elem": "boss"
-  },
-  "Poison Smash": {
-    "effect": "Poisons all enemies",
-    "elem": "boss"
+    "effect": "Halves damage from phys attacks",
+    "elem": "pas"
   },
   "Power Chakra": {
-    "effect": "Boosts Strength by 3",
-    "elem": "passive"
-  },
-  "Prominence": {
-    "effect": "Almighty attack. Can't be blocked.",
-    "elem": "boss"
+    "effect": "St +3",
+    "elem": "pas"
   },
   "Provoke": {
     "effect": "Increase encounter rate until new moon.",
-    "elem": "investigate"
-  },
-  "Psycho Crush": {
-    "effect": "Phys attack. User chases target during use.",
-    "elem": "boss"
-  },
-  "Psycho Smash": {
-    "effect": "Unleash several teleporting kick attacks.",
-    "elem": "boss"
+    "elem": "inv"
   },
   "Pulinpa": {
     "cost": 2016,
-    "effect": "Light Mind dmg to an area +Panic(Med)",
-    "elem": "mind"
+    "effect": "Medium chance of Panic",
+    "elem": "min",
+    "power": 10,
+    "target": "Area"
   },
   "Pyro Blade": {
     "cost": 2035,
-    "effect": "Imbue Raidou's sword with Fire. Duration: Short",
-    "elem": "support"
+    "effect": "Adds fire damage to sword attacks for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Pyro Killer": {
     "cost": 2060,
-    "effect": "Imbue Raidou's sword with Fire. Duration: Long",
-    "elem": "support"
-  },
-  "Quick & Dead": {
-    "effect": "Single piercing Gun dmg",
-    "elem": "boss"
+    "effect": "Adds fire damage to sword attacks for long time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Raging Blast": {
     "cost": 2120,
-    "effect": "Severe Phys dmg to all enemies +Dizzy(Med)",
-    "elem": "phys"
+    "effect": "High chance of Dizzy",
+    "elem": "phy",
+    "power": 160,
+    "target": "Combo"
   },
   "Rakukaja": {
     "cost": 2014,
-    "effect": "Raises Defense until battle ends. All allies",
-    "elem": "support"
+    "effect": "Defense +15%, Stacks up to 30%",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Rakukajaon": {
     "cost": 2032,
-    "effect": "Raises Defense until battle ends. All allies",
-    "elem": "support"
+    "effect": "Defense +20%, Stacks up to 40%",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Rapidfire": {
     "cost": 2040,
-    "effect": "Medium linear multi-hit Gun dmg +Panic(Low)",
-    "elem": "gun"
-  },
-  "Rawhide": {
-    "effect": "Multi-hit Phys dmg to an area",
-    "elem": "boss"
-  },
-  "Read Mind": {
-    "effect": "Read the target's mind. Pagan Order",
-    "elem": "investigate"
+    "effect": "x8 hits, Low chance of Panic",
+    "elem": "gun",
+    "power": 40,
+    "target": "Line",
+    "unique": "Yomi-kugutsu B"
   },
   "Recarm": {
     "cost": 2026,
-    "effect": "Revives target with some HP. 1 Ally",
-    "elem": "recovery"
+    "effect": "Revives with some HP",
+    "elem": "rec",
+    "target": "Single"
   },
   "Retribution": {
-    "effect": "Chance of heavy Almighty area dmg upon death",
-    "elem": "passive"
-  },
-  "Roughouse": {
-    "effect": "Almighty attack. Appears where Raidou is and can't be blocked, but can be dodged. Inflicts Dizzy.",
-    "elem": "boss"
+    "effect": "High chance to deal almighty damage to surrounding area when killed",
+    "elem": "pas"
   },
   "Roundhouse": {
     "cost": 2025,
-    "effect": "Light multi-hit Phys dmg +Dizzy(Low)",
-    "elem": "phys"
+    "effect": "x3 hits, Low chance of Dizzy",
+    "elem": "phy",
+    "power": 30,
+    "target": "Single",
+    "unique": "Yomi-kugutsu A"
   },
   "Rush": {
     "cost": 2024,
-    "effect": "Light Phys dmg, dash attack +Dizzy(Low)",
-    "elem": "phys"
+    "effect": "x3 hits, Low chance of Dizzy",
+    "elem": "phy",
+    "power": 60,
+    "target": "Dash"
   },
   "Samarecarm": {
     "cost": 2042,
-    "effect": "Revives target with full HP. 1 Ally",
-    "elem": "recovery"
+    "effect": "Revives with full HP",
+    "elem": "rec",
+    "target": "Single"
   },
-  "Samurai Frost": {
-    "effect": "Summons a Samurai Frost to charge at the enemy. Disappears with time.",
-    "elem": "boss"
+  "Scolding": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Scorch Slash": {
     "cost": 2070,
-    "effect": "Mega Fire dmg to all. Stun: Short Type: Blade",
-    "elem": "fire"
+    "effect": "Blade-type",
+    "elem": "fir",
+    "power": 90,
+    "target": "Combo"
   },
-  "Scout": {
-    "effect": "Check for treasure and demons in the area. Wind Order",
-    "elem": "investigate"
+  "Sexy Voice": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Shock Wave": {
     "cost": 2034,
-    "effect": "Heavy Piercing multi-hit Elc dmg. Stun: Med",
-    "elem": "elec"
+    "effect": "x3 hits, Medium stun",
+    "elem": "ele",
+    "power": 25,
+    "target": "Line"
   },
   "Shoot": {
     "cost": 2036,
-    "effect": "Heavy Gun dmg to an enemy.",
-    "elem": "gun"
+    "elem": "gun",
+    "power": 110,
+    "target": "Single",
+    "unique": "Zombie Guard"
   },
   "Shot Bullet": {
     "cost": 2050,
-    "effect": "Gun attacks will hit a wider area",
-    "elem": "support"
+    "effect": "Increases gun radius",
+    "elem": "sup",
+    "power": 8,
+    "target": "Single"
   },
   "Sink or Swim": {
-    "effect": "Boosts critical rate and accuracy",
-    "elem": "passive"
+    "effect": "Crit +30%, Hit -10%",
+    "elem": "pas"
   },
   "Skeptic Crush": {
     "cost": 2110,
-    "effect": "Ultra Death dmg to all. Stun: Short Type: Axe",
-    "elem": "death"
+    "effect": "Axe-type",
+    "elem": "dea",
+    "power": 125,
+    "target": "Combo"
   },
   "Skill Extension": {
-    "effect": "Extends duration of skills",
-    "elem": "passive"
-  },
-  "Slice and Dice": {
-    "effect": "Multi-hit Phys dmg",
-    "elem": "boss"
-  },
-  "Soul Balance": {
-    "effect": "Death element. Hits whole Field. Can be Blocked. Instant death if not Blocked.",
-    "elem": "boss"
+    "effect": "Extends timers on all skills",
+    "elem": "pas"
   },
   "Spinning Death": {
     "cost": 2022,
-    "effect": "Medium Phys dmg to an enemy +Mute(High)",
-    "elem": "phys"
+    "effect": "Medium chance of Mute",
+    "elem": "phy",
+    "power": 110,
+    "target": "Area",
+    "unique": "Nesting Doll"
   },
   "Stamina Chakra": {
-    "effect": "Boosts Vitality by 3",
-    "elem": "passive"
-  },
-  "Star's Funeral": {
-    "effect": "Almighty attack. Three large spots appear on the field and harm those who come into contact with it. Can't be blocked.",
-    "elem": "boss"
+    "effect": "Vi +3",
+    "elem": "pas"
   },
   "State of Bliss": {
     "cost": 2020,
-    "effect": "Gradually moderately restores HP. 1 Ally",
-    "elem": "recovery"
-  },
-  "Stone Needle": {
-    "effect": "Stabs the ground around it with its tail. Causes Petrification.",
-    "elem": "boss"
-  },
-  "Storm Stab": {
-    "effect": "Multi-hitting spear attack. (Wind)",
-    "elem": "boss"
+    "effect": "Moderately restores HP over short time",
+    "elem": "rec",
+    "target": "Single"
   },
   "Streaming Death": {
     "cost": 2054,
-    "effect": "Light linear multi-hit Death dmg +Poison(High).  Nesting Skull exclusive.",
-    "elem": "death"
+    "effect": "x4 hits, Hight chance of Poison",
+    "elem": "dea",
+    "power": 30,
+    "target": "Line",
+    "unique": "Nesting Skull"
   },
-  "Summon": {
-    "effect": "Calls for Reinforcements.",
-    "elem": "boss"
-  },
-  "Summon Demon": {
-    "effect": "Summon a demon",
-    "elem": "boss"
-  },
-  "Summon Phantom": {
-    "effect": "Summons lingering phantoms.",
-    "elem": "boss"
-  },
-  "Summon Undead": {
-    "effect": "Death element spirit chases target.",
-    "elem": "boss"
-  },
-  "Super Hurricane": {
-    "effect": "Force attack. Hits whole field.",
-    "elem": "boss"
-  },
-  "Take Down": {
-    "effect": "Phys attack hits all. Deals damage to user.",
-    "elem": "boss"
+  "Sweet Talk": {
+    "effect": "Negotiate",
+    "elem": "inv"
   },
   "Tarukaja": {
     "cost": 2014,
-    "effect": "Raises Phys attack until battle ends. All allies",
-    "elem": "support"
+    "effect": "Phys attack +20%, Stacks up to +50%",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Tarukajaon": {
     "cost": 2032,
-    "effect": "Raises Phys attack until battle ends. All allies",
-    "elem": "support"
+    "effect": "Phys attack +30%, Stacks up to +60%",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Tempest": {
     "cost": 2038,
-    "effect": "Severe Piercing Force dmg. Stun: Extreme",
-    "elem": "force"
-  },
-  "Terror Blizzard": {
-    "effect": "Ice Attack. His whole field. Can be blocked.",
-    "elem": "boss"
+    "effect": "Extreme stun",
+    "elem": "for",
+    "power": 62,
+    "target": "Line"
   },
   "Tetrakarn": {
     "cost": 2040,
-    "effect": "Reflect Phys attacks for a short time. All allies",
-    "elem": "support"
-  },
-  "Three pillars eletrification": {
-    "effect": "Almighty attack. Can be Blocked",
-    "elem": "boss"
+    "effect": "Repels phys damage for set time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Thunder Stab": {
     "cost": 2110,
-    "effect": "Ultra Elec dmg to all. Stun: Short Type: Spear",
-    "elem": "elec"
+    "effect": "Spear-type",
+    "elem": "ele",
+    "power": 125,
+    "target": "Combo"
   },
   "Thunderbolt": {
     "cost": 2038,
-    "effect": "Severe Piercing Elec dmg. Stun: Extreme",
-    "elem": "elec"
-  },
-  "Thunderbolt (Boss)": {
-    "effect": "Elec attack hits entire field.",
-    "elem": "boss"
-  },
-  "Tombstone": {
-    "effect": "Linear Phys dmg",
-    "elem": "boss"
-  },
-  "Transform": {
-    "effect": "Transform into something else. Skill Order",
-    "elem": "investigate"
+    "effect": "Extreme stun",
+    "elem": "ele",
+    "power": 62,
+    "target": "Line"
   },
   "Unreachable Soul": {
-    "effect": "Drops Fiend encounter rate",
-    "elem": "passive"
-  },
-  "Use Force": {
-    "effect": "Use brute strength to crush the target. Fury Order",
-    "elem": "investigate"
+    "effect": "Decreases Fiend encounter rate during New Moon",
+    "elem": "pas"
   },
   "Vengeance Seal": {
-    "effect": "Revive with 50% HP on death (once per battle)",
-    "elem": "passive"
-  },
-  "Venom Tear": {
-    "effect": "Poison rains down from the sky several times.",
-    "elem": "boss"
+    "effect": "Survive fatal attack with 50% HP once per battle",
+    "elem": "pas"
   },
   "Venomstrike": {
     "cost": 2018,
-    "effect": "Light Phys dmg to an enemy +Poison(Med)",
-    "elem": "phys"
-  },
-  "Victory of Fire": {
-    "effect": "Fire Attack. Hits whole field. Can be blocked.",
-    "elem": "boss"
+    "effect": "Medium chance of Poison",
+    "elem": "phy",
+    "power": 70,
+    "target": "Single"
   },
   "Volt Killer": {
     "cost": 2060,
-    "effect": "Imbue Raidou's sword with Elec. Duration: Long",
-    "elem": "support"
+    "effect": "Adds elec damage to sword attacks for long time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Volt Sword": {
     "cost": 2035,
-    "effect": "Imbue Raidou's sword with Elec. Duration: Short",
-    "elem": "support"
+    "effect": "Adds elec damage to sword attacks for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "War Cry": {
     "cost": 2010,
-    "effect": "Briefly boosts Phys attack. All allies.",
-    "elem": "support"
+    "effect": "Phys attack +45% for short time, Stacks with Tarukaja effects",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Whimsy Aid": {
-    "effect": "Recover own HP after battle depending on Luck.",
-    "elem": "passive"
-  },
-  "Wild Bunch": {
-    "effect": "Multi-hit linear Phys dmg",
-    "elem": "boss"
-  },
-  "Wind Blade": {
-    "effect": "Wind attack.",
-    "elem": "boss"
+    "effect": "Recovers HP after battle based on Lu",
+    "elem": "pas"
   },
   "Wind Cutter": {
     "cost": 2034,
-    "effect": "Heavy Piercing multi-hit Force dmg. Stun: Med",
-    "elem": "force"
+    "effect": "x3 hits, Medium stun",
+    "elem": "for",
+    "power": 25,
+    "target": "Line"
   },
   "Wind Killer": {
     "cost": 2060,
-    "effect": "Imbue Raidou's sword with Force. Duration: Long",
-    "elem": "support"
+    "effect": "Adds force damage to sword attacks for long time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Wind Sword": {
     "cost": 2035,
-    "effect": "Imbue Raidou's sword with Force. Duration: Short",
-    "elem": "support"
-  },
-  "Wing Flap": {
-    "effect": "Hits foes around user + Knockback.",
-    "elem": "boss"
+    "effect": "Adds force damage to sword attacks for short time",
+    "elem": "sup",
+    "target": "Allies"
   },
   "Winged Fury": {
     "cost": 2020,
-    "effect": "Medium Phys dmg, arc attack +Dizzy(Low)",
-    "elem": "phys"
+    "effect": "Low chance of Dizzy",
+    "elem": "phy",
+    "power": 65,
+    "target": "Arc"
   },
   "Zan": {
     "cost": 2008,
-    "effect": "Light Force dmg to an enemy. Stun:Short",
-    "elem": "force"
+    "effect": "Short stun",
+    "elem": "for",
+    "power": 25,
+    "target": "Single"
   },
   "Zandyne": {
     "cost": 2018,
-    "effect": "Heavy Splash Force dmg. Stun: Long",
-    "elem": "force"
+    "effect": "Long stun",
+    "elem": "for",
+    "power": 36,
+    "target": "Splash"
   },
   "Zanrati": {
     "cost": 2015,
-    "effect": "Light Force dmg, 3-way spread. Stun: Med",
-    "elem": "force"
+    "effect": "x3 hits, Medium stun",
+    "elem": "for",
+    "power": 22,
+    "target": "Spread"
   },
   "Zio": {
     "cost": 2008,
-    "effect": "Light Elec dmg to an enemy. Stun:Short",
-    "elem": "elec"
+    "effect": "Short stun",
+    "elem": "ele",
+    "power": 25,
+    "target": "Single"
   },
   "Ziodyne": {
     "cost": 2018,
-    "effect": "Heavy Splash Elec dmg. Stun: Long",
-    "elem": "elec"
+    "effect": "Long stun",
+    "elem": "ele",
+    "power": 36,
+    "target": "Splash"
   },
   "Ziorati": {
     "cost": 2015,
-    "effect": "Light Elec dmg, 3-way spread. Stun: Med",
-    "elem": "elec"
+    "effect": "x3 hits, Medium stun",
+    "elem": "ele",
+    "power": 22,
+    "target": "Spread"
   }
 }

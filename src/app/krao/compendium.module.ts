@@ -15,6 +15,7 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 
 import { FusionDataService } from '../krch/fusion-data.service';
@@ -29,18 +30,6 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
-function resistNumToStr(value: number): string {
-  if (value < -1000) { return 'd'; }
-  if (value < 0) { return 'r'; }
-  if (value === 0) { return 'n'; }
-  if (value < 100) { return 's'; }
-  if (value < 1000) { return '-'; }
-  if (value < 2000) { return 'w'; }
-  return 'f';
-}
-
-const demonData = {};
-const skillData = {};
 const races = COMP_CONFIG_JSON.races;
 const resistElems = COMP_CONFIG_JSON.resistElems.map(e => e.slice(0, 3));
 const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems.map(e => e.slice(0, 3)));
@@ -53,37 +42,34 @@ const MITAMA_TABLE = [
   []
 ];
 
-for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
-  entry['nresists'] = entry.resists.map(resistNumToStr).join('')
+for (const entry of Object.values(DEMON_DATA_JSON)) {
+  const skills = entry.skills;
+  const nskills = {};
 
-  if (entry.person !== 'N/A') {
-    entry['race'] = entry.order;
-    demonData[demon] = entry;
+  nskills[skills[0]] = 0;
+  nskills[skills[1]] = entry.lvl + 1;
+  nskills[skills[skills.length - 2]] = 4488;
+  nskills[skills[skills.length - 1]] = 0;
+
+  if (skills.length > 4) {
+    nskills[skills[2]] = entry.lvl + 2;
+  } if (entry.skilli) {
+    nskills[entry.skilli] = 0;
   }
+
+  entry['nskills'] = nskills;
 }
 
-for (const [skill, entry] of Object.entries(SKILL_DATA_JSON)) {
-  if (entry.elem !== 'investigate' && entry.elem !== 'boss') {
-    entry.elem = entry.elem.slice(0, 3);
-    skillData[skill] = entry;
+for (const entry of Object.values(SKILL_DATA_JSON)) {
+  if (entry.power) {
+    entry.effect = entry.power + ' dmg ' + (entry.effect || '');
   }
+
+  entry['rank'] = entry.unique ? 99 : (entry.cost - 2000) / 10 || 0;
 }
 
-for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
-  const entry = demonData[name];
-  const prereq = recipe.prereq;
-
-  if (entry.race === 'Fiend') {
-    recipe.prereq = `
-      (Fiend Fever Fusion) Fuse any two demons at new moon,
-      with fusion count divisble by 7, and at least ${prereq} gem points.
-    `;
-  } else if (prereq && prereq !== 'accident') {
-    recipe.prereq = `
-      (Evil Fever Fusion) Fuse any two demons
-      with fusion count divisble by 7 and at least ${prereq} gem points.
-    `;
-  }
+for(const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name]['prereq'] = prereq;
 }
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {
@@ -103,8 +89,8 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
   fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
 
-  demonData: { krao: [demonData] },
-  skillData: { krao: [skillData] },
+  demonData: { krao: [DEMON_DATA_JSON] },
+  skillData: { krao: [SKILL_DATA_JSON] },
   normalTable: FUSION_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
   mitamaTable: MITAMA_TABLE,

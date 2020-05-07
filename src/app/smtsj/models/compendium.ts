@@ -5,24 +5,21 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import DEMON_DATA_JSON from '../data/demon-data.json';
 import BOSS_DATA_JSON from '../data/boss-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
+import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
-import FUSION_REQUIREMENTS_JSON from '../data/fusion-requirements.json';
 
 import REDUX_DEMON_DATA_JSON from '../data/redux-demon-data.json';
 import REDUX_SKILL_DATA_JSON from '../data/redux-skill-data.json';
+import REDUX_FUSION_PREREQS_JSON from '../data/redux-fusion-prereqs.json';
 import REDUX_SPECIAL_RECIPES_JSON from '../data/redux-special-recipes.json';
-import REDUX_FUSION_REQUIREMENTS_JSON from '../data/redux-fusion-requirements.json';
 
 export class Compendium implements ICompendium {
-  private static CONVERTED_RACE = [ 'Fiend', 'UMA', 'Enigma' ];
-
   private demons: { [name: string]: Demon };
   private bosses: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
-  private specialRecipes: { [name: string]: string } = {};
+  private pairRecipes: { [name: string]: NamePair[] } = {};
+  private entryRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-  private invertedSpecials: { [name: string]: { result: string, recipe: string }[] };
-  private fusionRequirements: { [name: string]: string };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -45,23 +42,25 @@ export class Compendium implements ICompendium {
     const demons: { [name: string]: Demon } = {};
     const bosses: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
-    const specialRecipes: { [name: string]: string } = {};
-    const fusionRequirements: { [name: string]: string } = {};
+    const pairRecipes: { [name: string]: NamePair[] } = {};
+    const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
     const demonDataJsons: any = [DEMON_DATA_JSON];
     const skillDataJsons: any = [SKILL_DATA_JSON];
     const specialRecipesJsons: any = [SPECIAL_RECIPES_JSON];
-    const fusionReqsJsons: any = [FUSION_REQUIREMENTS_JSON];
+    const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
 
     const knownDemonCodes: { [code: number]: string } = {};
 
     if (importRedux) {
       demonDataJsons.push(REDUX_DEMON_DATA_JSON);
       skillDataJsons.push(REDUX_SKILL_DATA_JSON);
+      fusionReqsJsons.push(REDUX_FUSION_PREREQS_JSON);
       specialRecipesJsons.push(REDUX_SPECIAL_RECIPES_JSON);
-      fusionReqsJsons.push(REDUX_FUSION_REQUIREMENTS_JSON);
+    } else {
+      fusionReqsJsons.push({ 'Alciel': 'Password Only' });
+      specialRecipesJsons.push({ 'Alciel': [], 'Demonee-ho': [] });
     }
 
     for (const demonDataJson of demonDataJsons) {
@@ -150,44 +149,32 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const specialRecipesJson of specialRecipesJsons) {
-      for (const [name, tempJson] of Object.entries(specialRecipesJson)) {
-        const json = specialRecipesJson[name]
-        specialRecipes[name] = json;
-
-        if (json === 'Normal') {
-          delete specialRecipes[name];
-          delete demons[name].prereq;
-          demons[name].fusion = 'normal';
-        } else if (json === 'Password') {
-          demons[name].prereq = 'Password only';
-          demons[name].fusion = 'accident';
-        } else if (json === 'Accident') {
-          demons[name].prereq = 'Fusion accident only';
-          demons[name].fusion = 'accident';
-        } else {
-          delete demons[name].prereq;
-
-          if (json.indexOf(',') < 0) {
-            demons[name].fusion = 'special';
-          }
-
-          for (const recipe of json.split(', ')) {
-            for (const ingredient of recipe.split(' x ')) {
-              if (!invSpecs[ingredient]) {
-                invSpecs[ingredient] = [];
-              }
-
-              invSpecs[ingredient].push({ result: name, recipe });
-            }
-          }
-        }
+    for (const fusionReqsJson of fusionReqsJsons) {
+      for (const [name, prereq] of Object.entries(fusionReqsJson)) {
+        demons[name].prereq = prereq;
+        demons[name].fusion = prereq.includes('Fusion Accident') || prereq.includes('Password Only') ? 'accident' : 'normal';
       }
     }
 
-    for (const fusionReqsJson of fusionReqsJsons) {
-      for (const [name, json] of Object.entries(fusionReqsJson)) {
-        fusionRequirements[name] = fusionReqsJson[name];
+    for (const specialRecipesJson of specialRecipesJsons) {
+      for (const [name, recipe] of Object.entries(specialRecipesJson)) {
+        const recipeList = <string[]>recipe;
+        const entryList: string[] = [];
+        const pairList: NamePair[] = [];
+        const entry = demons[name];
+
+        entry.fusion = recipeList.length > 1 ? 'special' : 'accident';
+        entryRecipes[name] = entryList;
+        pairRecipes[name] = pairList;
+
+        for (const ingred of recipeList) {
+          if (ingred.includes(' x ')) {
+            const [name1, name2] = ingred.split(' x ');
+            pairList.push({ name1, name2 });
+          } else {
+            entryList.push(ingred);
+          }
+        }
       }
     }
 
@@ -210,10 +197,9 @@ export class Compendium implements ICompendium {
     this.demons = demons;
     this.bosses = bosses;
     this.skills = skills;
-    this.specialRecipes = specialRecipes;
-    this.fusionRequirements = fusionRequirements;
+    this.pairRecipes = pairRecipes;
+    this.entryRecipes = entryRecipes;
     this.invertedDemons = inversions;
-    this.invertedSpecials = invSpecs;
   }
 
   updateDerivedData() {
@@ -232,7 +218,7 @@ export class Compendium implements ICompendium {
         ingredients[demon.race].push(demon.lvl);
       }
 
-      if (!this.specialRecipes.hasOwnProperty(name)) {
+      if (!this.pairRecipes[name] && !this.entryRecipes[name]) {
         results[demon.race].push(demon.lvl);
       }
     }
@@ -259,7 +245,7 @@ export class Compendium implements ICompendium {
   }
 
   get specialDemons(): Demon[] {
-    return Object.keys(this.specialRecipes).map(name => this.demons[name]);
+    return [];
   }
 
   getDemon(name: string): Demon {
@@ -285,38 +271,15 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNameEntries(name: string): string[] {
-    const recipe = this.specialRecipes[name];
-    const isSpecial = recipe && recipe !== 'Password' && recipe !== 'Accident' && recipe.indexOf(', ') === -1;
-    return isSpecial ? recipe.split(' x ') : [];
+    return this.entryRecipes[name] || [];
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
-    const recipe = this.specialRecipes[name];
-    const names: NamePair[] = [];
-
-    if (recipe && recipe !== 'Password' && recipe !== 'Accident' && recipe.indexOf(', ') !== -1) {
-      for (const pair of recipe.split(', ')) {
-        const [ name1, name2 ] = pair.split(' x ');
-        names.push({ name1, name2 });
-      }
-    }
-
-    return names;
+    return this.pairRecipes[name] || [];
   }
 
   getFusionRequirements(name: string): string[] {
-    const { race } = this.getDemon(name);
-    const fusionReq = this.fusionRequirements[name];
-    const reqs = [];
-
-    if (fusionReq) {
-      reqs.push(fusionReq);
-    }
-    if (Compendium.CONVERTED_RACE.indexOf(race) !== -1 && !this.specialRecipes.hasOwnProperty(name)) {
-      reqs.push(`${race} Converter Subapp enabled`);
-    }
-
-    return reqs.length > 0 ? reqs : ['None'];
+    return [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {
@@ -324,7 +287,7 @@ export class Compendium implements ICompendium {
   }
 
   reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
-    return this.invertedSpecials[ingredient] ? this.invertedSpecials[ingredient] : [];
+    return [];
   }
 
   isElementDemon(name: string) {

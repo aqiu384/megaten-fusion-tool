@@ -1,55 +1,14 @@
 {
   "races": [
-    "Pyro",
-    "Frost",
-    "Volt",
-    "Wind",
-    "Fury",
-    "Pagan",
-    "Skill"
+    "Pyro",   "Frost",  "Volt",   "Wind",   "Fury",   "Pagan",  "Skill"
   ],
   "table": [
-    [
-      "Skill",
-      "Wind",
-      "Fury",
-      "Volt",
-      "Wind",
-      "Frost",
-      "Random"
-    ],
-    [
-      "Pagan",
-      "Fury",
-      "Pyro",
-      "Volt",
-      "Fury",
-      "Random"
-    ],
-    [
-      "Pagan",
-      "Frost",
-      "Frost",
-      "Pyro",
-      "Random"
-    ],
-    [
-      "Skill",
-      "Pyro",
-      "Volt",
-      "Random"
-    ],
-    [
-      "Skill",
-      "Wind",
-      "Random"
-    ],
-    [
-      "Skill",
-      "Random"
-    ],
-    [
-      "Pagan"
-    ]
+    ["Skill"],
+    ["Wind",   "Pagan"],
+    ["Fury",   "Fury",   "Pagan"],
+    ["Volt",   "Pyro",   "Frost",  "Skill"],
+    ["Wind",   "Volt",   "Frost",  "Pyro",   "Skill"],
+    ["Frost",  "Fury",   "Pyro",   "Volt",   "Wind",   "Skill"],
+    ["Random", "Random", "Random", "Random", "Random", "Random", "Pagan"]
   ]
 }

@@ -38,7 +38,8 @@ export class Compendium implements ICompendium {
           resists: (json['nresists'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
           skills: json['nskills'] || json['skills'],
           person: json['person'] || '',
-          fusion: 'normal'
+          fusion: 'normal',
+          prereq:  json['prereq'] || ''
         };
       }
     }
@@ -71,23 +72,22 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes[this.gameAbbr])) {
+      const recipeList = <string[]>recipe;
+      const entryList: string[] = [];
+      const pairList: NamePair[] = [];
       const entry = demons[name];
-      entry.fusion = recipe['prereq'] === 'accident' ? 'accident' : 'special';
-      entry.prereq = recipe['prereq'];
 
-      if (entry.fusion === 'accident') {
-        entry.prereq = 'Fusion accident only';
-      }
+      entry.fusion = recipeList.length > 1 ? 'special' : 'accident';
+      entryRecipes[name] = entryList;
+      pairRecipes[name] = pairList;
 
-      if (recipe['pairs']) {
-        pairRecipes[name] = recipe['pairs'].map(pair => {
-          const [name1, name2] = pair.split(' x ');
-          return { name1, name2 };
-        });
-      } else if (recipe['entries']) {
-        entryRecipes[name] = recipe['entries'];
-      } else {
-        pairRecipes[name] = [];
+      for (const ingred of recipeList) {
+        if (ingred.includes(' x ')) {
+          const [name1, name2] = ingred.split(' x ');
+          pairList.push({ name1, name2 });
+        } else {
+          entryList.push(ingred);
+        }
       }
     }
 

@@ -1,8 +1,9 @@
 {
   "Messiah": {
-    "heart": "Armor of Light,Shoes of Light,Soul of Athena,Swan Legs,Aura Dog Suit,Omnipotent Orb (1%) [Aigis Armor v.8,Aigis Legs v.8 (The Answer)]",
+    "heart": "Armor of Light,Shoes of Light,Soul of Athena,Swan Legs,Aura Dog Suit,Omnipotent Orb (1%)",
     "inherits": "lidark",
     "lvl": 90,
+    "prereq": "Judgement Rank 10",
     "race": "Judgement",
     "resists": "---ssssrw",
     "skills": {
@@ -15,18 +16,12 @@
       "Regenerate 3": 0,
       "Salvation": 93
     },
-    "stats": [
-      63,
-      62,
-      60,
-      62,
-      63
-    ]
+    "stats": [63, 62, 60, 62, 63]
   },
   "Mokoi": {
-    "race": "Devil",
     "inherits": "ailment",
     "lvl": 18,
+    "race": "Devil",
     "resists": "---wn---n",
     "skills": {
       "Charm Boost": 21,
@@ -37,18 +32,12 @@
       "Poison Mist": 20,
       "Stagnant Air": 0
     },
-    "stats": [
-      6,
-      9,
-      12,
-      17,
-      23
-    ]
+    "stats": [6, 9, 12, 17, 23]
   },
   "Neko Shogun": {
-    "race": "Star",
     "inherits": "strike",
     "lvl": 19,
+    "race": "Star",
     "resists": "s-----wnn",
     "skills": {
       "Assault Dive": 0,
@@ -58,18 +47,12 @@
       "Regenerate 1": 0,
       "Swift Strike": 24
     },
-    "stats": [
-      18,
-      11,
-      11,
-      19,
-      7
-    ]
+    "stats": [18, 11, 11, 19, 7]
   },
   "Setanta": {
-    "race": "Star",
     "inherits": "pierce",
     "lvl": 28,
+    "race": "Star",
     "resists": "---w----w",
     "skills": {
       "Auto-Sukukaja": 33,
@@ -80,18 +63,12 @@
       "Twin Shot": 0,
       "Zionga": 0
     },
-    "stats": [
-      26,
-      19,
-      18,
-      21,
-      14
-    ]
+    "stats": [26, 19, 18, 21, 14]
   },
   "Tam Lin": {
-    "race": "Lovers",
     "inherits": "pierce",
     "lvl": 13,
+    "race": "Lovers",
     "resists": "s--s-s-n-",
     "skills": {
       "Auto-Rakukaja": 19,
@@ -102,12 +79,6 @@
       "Tarukaja": 0,
       "Zio": 0
     },
-    "stats": [
-      9,
-      10,
-      5,
-      10,
-      8
-    ]
+    "stats": [9, 10, 5, 10, 8]
   }
 }

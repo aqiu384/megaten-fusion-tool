@@ -39,13 +39,10 @@ export class Compendium implements ICompendium {
         price:      json['price'] * 2,
         stats:      json['stats'],
         resists:    json['resists'].split('').map(e => this.compConfig.resistCodes[e]),
-        affinities: this.compConfig.affinityElems.map(e => json['affinities'][e] ? json['affinities'][e] : 0),
+        affinities: json['affinities'],
         ailments:   json['ailments'] ? json['ailments'].split('').map(e => this.compConfig.resistCodes[e]) : blankAils,
-        fusion:     json['fusion'] || 'normal'
-      }
-
-      if (json['fusion'] === 'enemy') {
-        demons[name]['prereq'] = 'Enemy only';
+        fusion:     json['fusion'] || 'normal',
+        prereq:     json['prereq'] || ''
       }
     }
 
@@ -69,15 +66,10 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, ojson] of Object.entries(this.compConfig.specialRecipes)) {
-      const json = <string[]>ojson;
+      specialRecipes[name] = <string[]>ojson;
 
-      if (json.length > 1) {
-        specialRecipes[name] = json;
+      if (demons[name].fusion === 'normal') {
         demons[name].fusion = 'special';
-      } else if (json.length === 0) {
-        specialRecipes[name] = json;
-        demons[name].fusion = 'accident';
-        demons[name].prereq = 'Fusion accident only';
       }
     }
 

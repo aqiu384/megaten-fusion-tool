@@ -1,78 +1,16 @@
 {
   "races": [
-    "Pyro",
-    "Frost",
-    "Volt",
-    "Wind",
-    "Fury",
-    "Pagan",
-    "Evil",
-    "Skill",
-    "Fiend"
+     "Pyro",   "Frost",  "Volt",   "Wind",   "Fury",   "Pagan",  "Evil",   "Skill",  "Fiend"
   ],
   "table": [
-    [
-      "Flaemis",
-      "Wind",
-      "Fury",
-      "Volt",
-      "Skill",
-      "Frost",
-      "Frost",
-      "Pagan",
-      "Pagan"
-    ],
-    [
-      "Aquans",
-      "Pagan",
-      "Skill",
-      "Volt",
-      "Fury",
-      "Fury",
-      "Pyro",
-      "Pyro"
-    ],
-    [
-      "Aquans",
-      "Frost",
-      "Pyro",
-      "Skill",
-      "Skill",
-      "Fury",
-      "Fury"
-    ],
-    [
-      "Aeros",
-      "Pagan",
-      "Pyro",
-      "Pyro",
-      "Volt",
-      "Volt"
-    ],
-    [
-      "Erthys",
-      "Wind",
-      "Wind",
-      "Frost",
-      "Frost"
-    ],
-    [
-      "Flaemis",
-      "-",
-      "Wind",
-      "Wind"
-    ],
-    [
-      "Flaemis",
-      "Wind",
-      "Wind"
-    ],
-    [
-      "Aeros",
-      "-"
-    ],
-    [
-      "Aeros"
-    ]
+    ["Flaemis"],
+    ["Wind",   "Aquans"],
+    ["Fury",   "Pagan",  "Aquans"],
+    ["Volt",   "Skill",  "Frost",  "Aeros"],
+    ["Skill",  "Volt",   "Pyro",   "Pagan",  "Erthys"],
+    ["Frost",  "Fury",   "Skill",  "Pyro",   "Wind",   "Flaemis"],
+    ["Frost",  "Fury",   "Skill",  "Pyro",   "Wind",   "-",      "Flaemis"],
+    ["Pagan",  "Pyro",   "Fury",   "Volt",   "Frost",  "Wind",   "Wind",   "Aeros"],
+    ["Pagan",  "Pyro",   "Fury",   "Volt",   "Frost",  "Wind",   "Wind",   "-",      "Aeros"]
   ]
 }

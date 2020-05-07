@@ -19,6 +19,7 @@ import PARTY_DATA_JSON from './data/party-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
 
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 
@@ -47,6 +48,10 @@ for (const json of [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON]) {
   for (const entry of Object.values(json)) {
     entry['skills'][entry['trait']] = 0;
   }
+}
+
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name].prereq = prereq;
 }
 
 for (const entry of Object.values(ENEMY_DATA_JSON)) {

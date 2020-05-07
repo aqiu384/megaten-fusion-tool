@@ -1,841 +1,272 @@
 {
   "Angel Army M": {
-    "affinities": {
-      "dark": -5,
-      "elec": -5,
-      "force": 2,
-      "gun": -4,
-      "light": 3,
-      "recovery": 2,
-      "support": 1
-    },
+    "affinities": [0, -4, 0, 0, -5, 2, 3, -5, 0, 2, 0, 1],
     "ailments": "-ns-----",
+    "eskills": ["Mahamaon", "Mediarama", "Makarakarn", "Mazandyne"],
     "lvl": 62,
     "race": "Horde",
     "resists": "-w--wnrw",
-    "eskills": [
-      "Mahamaon",
-      "Mediarama",
-      "Makarakarn",
-      "Mazandyne"
-    ],
-    "stats": [
-      3044,
-      728,
-      49,
-      52,
-      111,
-      69,
-      82
-    ]
+    "stats": [3044, 728, 49, 52, 111, 69, 82]
   },
   "Angel Army P": {
-    "affinities": {
-      "dark": -5,
-      "force": -3,
-      "gun": 1,
-      "light": 3,
-      "phys": 1,
-      "recovery": 1,
-      "support": 1
-    },
+    "affinities": [1, 1, 0, 0, 0, -3, 3, -5, 0, 1, 0, 1],
     "ailments": "sss--sss",
+    "eskills": ["Hades Blast", "Grand Tack", "Maziodyne", "Hamaon", "Tarukaja"],
     "lvl": 65,
     "race": "Horde",
     "resists": "----swnw",
-    "eskills": [
-      "Hades Blast",
-      "Grand Tack",
-      "Maziodyne",
-      "Hamaon",
-      "Tarukaja"
-    ],
-    "stats": [
-      2404,
-      736,
-      71,
-      71,
-      73,
-      69,
-      68
-    ]
+    "stats": [2404, 736, 71, 71, 73, 69, 68]
   },
   "Ara Mitama": {
-    "affinities": {
-      "fire": 3,
-      "phys": 4,
-      "support": 1
-    },
+    "affinities": [4, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     "ailments": "--------",
+    "eskills": ["Berserker God", "Fire Breath", "Charge", "Taunt"],
     "lvl": 30,
     "race": "Mitama",
     "resists": "ssn--sss",
-    "eskills": [
-      "Berserker God",
-      "Fire Breath",
-      "Charge",
-      "Taunt"
-    ],
-    "stats": [
-      50,
-      0,
-      1,
-      1,
-      1,
-      1,
-      1
-    ]
+    "stats": [50, 0, 1, 1, 1, 1, 1]
   },
   "Azteca Force": {
-    "affinities": {
-      "ailment": -1,
-      "elec": 3,
-      "fire": 3,
-      "force": -5,
-      "gun": 2,
-      "ice": 3
-    },
+    "affinities": [0, 2, 3, 3, 3, -5, 0, 0, 0, 0, -1, 0],
     "ailments": "--s----w",
+    "eskills": ["Mazionga", "Maragidyne", "Mabufula", "Rakunda"],
     "lvl": 50,
     "race": "Horde",
     "resists": "-ns-nw-s",
-    "eskills": [
-      "Mazionga",
-      "Maragidyne",
-      "Mabufula",
-      "Rakunda"
-    ],
-    "stats": [
-      1595,
-      475,
-      42,
-      53,
-      85,
-      58,
-      69
-    ]
+    "stats": [1595, 475, 42, 53, 85, 58, 69]
   },
   "Blazing Horde": {
-    "affinities": {
-      "ailment": 2,
-      "fire": 4,
-      "ice": -5
-    },
+    "affinities": [0, 0, 4, -5, 0, 0, 0, 0, 0, 0, 2, 0],
     "ailments": "--sn----",
+    "eskills": ["Maragidyne", "Hades Blast", "Sukukaja", "Bind Voice"],
     "lvl": 70,
     "race": "Horde",
     "resists": "--dwr--n",
-    "eskills": [
-      "Maragidyne",
-      "Hades Blast",
-      "Sukukaja",
-      "Bind Voice"
-    ],
-    "stats": [
-      4839,
-      578,
-      76,
-      76,
-      65,
-      105,
-      94
-    ]
+    "stats": [4839, 578, 76, 76, 65, 105, 94]
   },
   "Blizzard Horde": {
-    "affinities": {
-      "ailment": 1,
-      "fire": -5,
-      "force": -5,
-      "ice": 4,
-      "phys": 4,
-      "recovery": 2
-    },
+    "affinities": [4, 0, -5, 4, 0, -5, 0, 0, 0, 2, 1, 0],
     "ailments": "-ss-s-ss",
+    "eskills": ["Mabufula", "Carol Hit", "Mamudo", "Ice Pleroma"],
     "lvl": 34,
     "race": "Horde",
     "resists": "--wd----",
-    "eskills": [
-      "Mabufula",
-      "Carol Hit",
-      "Mamudo",
-      "Ice Pleroma"
-    ],
-    "stats": [
-      959,
-      501,
-      33,
-      40,
-      62,
-      44,
-      51
-    ]
+    "stats": [959, 501, 33, 40, 62, 44, 51]
   },
   "Dead Horde": {
-    "affinities": {
-      "ailment": 2,
-      "dark": 1,
-      "fire": 2,
-      "force": -3,
-      "gun": -4,
-      "ice": -3,
-      "light": -3,
-      "phys": 4,
-      "recovery": 1
-    },
+    "affinities": [4, -4, 2, -3, 0, -3, -3, 1, 0, 1, 2, 0],
     "ailments": "--s-sw-s",
+    "eskills": ["Agilao", "Critical Wave", "Mamudo"],
     "lvl": 24,
     "race": "Horde",
     "resists": "--nw-wwn",
-    "eskills": [
-      "Agilao",
-      "Critical Wave",
-      "Mamudo"
-    ],
-    "stats": [
-      788,
-      456,
-      27,
-      32,
-      48,
-      35,
-      40
-    ]
+    "stats": [788, 456, 27, 32, 48, 35, 40]
   },
   "Defiant Horde": {
-    "affinities": {
-      "ailment": 1,
-      "dark": 2,
-      "ice": -5,
-      "light": -3,
-      "phys": 4
-    },
+    "affinities": [4, 0, 0, -5, 0, 0, -3, 2, 0, 0, 1, 0],
     "ailments": "wns-s-w-",
+    "eskills": ["Hades Blast", "Mudoon", "Energy Drain", "Panic Voice"],
     "lvl": 69,
     "race": "Horde",
     "resists": "s--w---n",
-    "eskills": [
-      "Hades Blast",
-      "Mudoon",
-      "Energy Drain",
-      "Panic Voice"
-    ],
-    "stats": [
-      3765,
-      549,
-      111,
-      73,
-      54,
-      75,
-      86
-    ]
+    "stats": [3765, 549, 111, 73, 54, 75, 86]
   },
   "Demon Army": {
-    "affinities": {
-      "dark": 3,
-      "fire": 3,
-      "ice": -5,
-      "light": -5,
-      "phys": 3
-    },
+    "affinities": [3, 0, 3, -5, 0, 0, -5, 3, 0, 0, 0, 0],
     "ailments": "w-s-----",
+    "eskills": ["Mamudoon", "Maragion", "Pandemic Bomb", "Madness Nails"],
     "lvl": 69,
     "race": "Horde",
     "resists": "s--wn-wr",
-    "eskills": [
-      "Mamudoon",
-      "Maragion",
-      "Pandemic Bomb",
-      "Madness Nails"
-    ],
-    "stats": [
-      4243,
-      820,
-      89,
-      73,
-      111,
-      75,
-      90
-    ]
+    "stats": [4243, 820, 89, 73, 111, 75, 90]
   },
   "Demon Horde": {
-    "affinities": {
-      "ailment": 4,
-      "elec": -4,
-      "fire": -2,
-      "force": 2,
-      "ice": 2,
-      "light": -3,
-      "recovery": 1,
-      "support": 1
-    },
+    "affinities": [0, 0, -2, 2, -4, 2, -3, 0, 0, 1, 4, 1],
     "ailments": "-ns----n",
+    "eskills": ["Sexy Dance", "Energy Drain", "Lullaby", "Mazanma"],
     "lvl": 45,
     "race": "Horde",
     "resists": "-ws-wn-n",
-    "eskills": [
-      "Sexy Dance",
-      "Energy Drain",
-      "Lullaby",
-      "Mazanma"
-    ],
-    "stats": [
-      1095,
-      601,
-      39,
-      49,
-      78,
-      54,
-      63
-    ]
+    "stats": [1095, 601, 39, 49, 78, 54, 63]
   },
   "Dragon Horde": {
-    "affinities": {
-      "elec": 1,
-      "fire": -3,
-      "gun": 1,
-      "ice": 1,
-      "recovery": 2,
-      "support": 1
-    },
+    "affinities": [0, 1, -3, 1, 1, 0, 0, 0, 0, 2, 0, 1],
     "ailments": "-----wss",
+    "eskills": ["Tarunda", "Dormina", "Mabufu", "Head Crush"],
     "lvl": 20,
     "race": "Horde",
     "resists": "--wns---",
-    "eskills": [
-      "Tarunda",
-      "Dormina",
-      "Mabufu",
-      "Head Crush"
-    ],
-    "stats": [
-      742,
-      376,
-      43,
-      30,
-      24,
-      31,
-      35
-    ]
+    "stats": [742, 376, 43, 30, 24, 31, 35]
   },
   "Fallen Horde": {
-    "affinities": {
-      "ailment": -1,
-      "elec": -5,
-      "fire": 2,
-      "force": 2,
-      "gun": -4,
-      "ice": -3,
-      "phys": 3,
-      "recovery": 1
-    },
+    "affinities": [3, -4, 2, -3, -5, 2, 0, 0, 0, 1, -1, 0],
     "ailments": "--s-----",
+    "eskills": ["Tetrakarn", "Mazanma", "Blight", "Agidyne"],
     "lvl": 67,
     "race": "Horde",
     "resists": "-wnsw-ws",
-    "eskills": [
-      "Tetrakarn",
-      "Mazanma",
-      "Blight",
-      "Agidyne"
-    ],
-    "stats": [
-      3476,
-      492,
-      85,
-      75,
-      85,
-      80,
-      80
-    ]
+    "stats": [3476, 492, 85, 75, 85, 80, 80]
   },
   "Freezing Horde": {
-    "affinities": {
-      "dark": 2,
-      "elec": -5,
-      "fire": -5,
-      "ice": 4
-    },
+    "affinities": [0, 0, -5, 4, -5, 0, 0, 2, 0, 0, 0, 0],
     "ailments": "--sn----",
+    "eskills": ["Mabufudyne", "Fang Breaker", "Mamudoon", "Rakukaja"],
     "lvl": 70,
     "race": "Horde",
     "resists": "--wdw-sn",
-    "eskills": [
-      "Mabufudyne",
-      "Fang Breaker",
-      "Mamudoon",
-      "Rakukaja"
-    ],
-    "stats": [
-      4893,
-      552,
-      83,
-      83,
-      83,
-      83,
-      83
-    ]
+    "stats": [4893, 552, 83, 83, 83, 83, 83]
   },
   "Greek Force": {
-    "affinities": {
-      "ailment": 2,
-      "dark": 3,
-      "elec": -3,
-      "fire": -2,
-      "force": -3,
-      "gun": 2,
-      "ice": 2,
-      "phys": 3,
-      "recovery": 1
-    },
+    "affinities": [3, 2, -2, 2, -3, -3, 0, 3, 0, 1, 2, 0],
     "ailments": "--s-s---",
+    "eskills": ["Bufudyne", "Critical Eye", "Sukukaja", "Megaton Press"],
     "lvl": 58,
     "race": "Horde",
     "resists": "s-wnws--",
-    "eskills": [
-      "Bufudyne",
-      "Critical Eye",
-      "Sukukaja",
-      "Megaton Press"
-    ],
-    "stats": [
-      2023,
-      572,
-      96,
-      62,
-      47,
-      65,
-      75
-    ]
+    "stats": [2023, 572, 96, 62, 47, 65, 75]
   },
   "Herald Army": {
-    "affinities": {
-      "ailment": 2,
-      "gun": 2,
-      "ice": 3
-    },
+    "affinities": [0, 2, 0, 3, 0, 0, 0, 0, 0, 0, 2, 0],
     "ailments": "s-sss-ss",
+    "eskills": ["Critical Eye", "Ice Age", "Heaven's Bow", "Panic Voice"],
     "lvl": 90,
     "race": "Horde",
     "resists": "-swdwsrs",
-    "eskills": [
-      "Critical Eye",
-      "Ice Age",
-      "Heaven's Bow",
-      "Panic Voice"
-    ],
-    "stats": [
-      7850,
-      515,
-      93,
-      103,
-      121,
-      112,
-      105
-    ]
+    "stats": [7850, 515, 93, 103, 121, 112, 105]
   },
   "Indian Force": {
-    "affinities": {
-      "dark": -5,
-      "fire": -5,
-      "ice": 3,
-      "phys": 4,
-      "support": 2
-    },
+    "affinities": [4, 0, -5, 3, 0, 0, 0, -5, 0, 0, 0, 2],
     "ailments": "-ws-nw--",
+    "eskills": ["Earthquake", "Mabufudyne", "Rakukaja", "Tarukaja"],
     "lvl": 75,
     "race": "Horde",
     "resists": "s-wns-nw",
-    "eskills": [
-      "Earthquake",
-      "Mabufudyne",
-      "Rakukaja",
-      "Tarukaja"
-    ],
-    "stats": [
-      6074,
-      514,
-      120,
-      77,
-      57,
-      81,
-      92
-    ]
+    "stats": [6074, 514, 120, 77, 57, 81, 92]
   },
   "Inferno Horde": {
-    "affinities": {
-      "ailment": 1,
-      "fire": 5,
-      "ice": -8,
-      "light": -3,
-      "phys": 1
-    },
+    "affinities": [1, 0, 5, -8, 0, 0, -3, 0, 0, 0, 1, 0],
     "ailments": "--s-----",
+    "eskills": ["Fire Breath", "Agidyne", "Heat Wave"],
     "lvl": 38,
     "race": "Horde",
     "resists": "--dw----",
-    "eskills": [
-      "Fire Breath",
-      "Agidyne",
-      "Heat Wave"
-    ],
-    "stats": [
-      1061,
-      451,
-      51,
-      51,
-      51,
-      51,
-      51
-    ]
+    "stats": [1061, 451, 51, 51, 51, 51, 51]
   },
   "Innocent Horde": {
-    "affinities": {
-      "ailment": 1,
-      "force": 3,
-      "ice": -3,
-      "phys": 1,
-      "support": 1
-    },
+    "affinities": [1, 0, 0, -3, 0, 3, 0, 0, 0, 0, 1, 1],
     "ailments": "-n------",
+    "eskills": ["Lunge", "Zan", "Marin Karin"],
     "lvl": 13,
     "race": "Horde",
     "resists": "---w-w--",
-    "eskills": [
-      "Lunge",
-      "Zan",
-      "Marin Karin"
-    ],
-    "stats": [
-      618,
-      495,
-      20,
-      23,
-      33,
-      25,
-      28
-    ]
+    "stats": [618, 495, 20, 23, 33, 25, 28]
   },
   "Jaki Horde": {
-    "affinities": {
-      "ailment": -1,
-      "elec": -3,
-      "force": -3,
-      "light": -3,
-      "phys": 4,
-      "support": 1
-    },
+    "affinities": [4, 0, 0, 0, -3, -3, -3, 0, 0, 0, -1, 1],
     "ailments": "--s-w---",
+    "eskills": ["Mortal Jihad", "Head Crush", "Retaliate", "Purple Smoke"],
     "lvl": 51,
     "race": "Horde",
     "resists": "ss--www-",
-    "eskills": [
-      "Mortal Jihad",
-      "Head Crush",
-      "Retaliate",
-      "Purple Smoke"
-    ],
-    "stats": [
-      2117,
-      304,
-      86,
-      56,
-      43,
-      59,
-      67
-    ]
+    "stats": [2117, 304, 86, 56, 43, 59, 67]
   },
   "Kusi Mitama": {
-    "affinities": {
-      "almighty": 4,
-      "force": 3
-    },
+    "affinities": [0, 0, 0, 0, 0, 3, 0, 0, 4, 0, 0, 0],
     "ailments": "--------",
+    "eskills": ["Wind Breath", "Energy Drain", "Spirit Drain", "Strange Ray"],
     "lvl": 30,
     "race": "Mitama",
     "resists": "--sssnss",
-    "eskills": [
-      "Wind Breath",
-      "Energy Drain",
-      "Spirit Drain",
-      "Strange Ray"
-    ],
-    "stats": [
-      50,
-      0,
-      1,
-      1,
-      1,
-      1,
-      1
-    ]
+    "stats": [50, 0, 1, 1, 1, 1, 1]
   },
   "Metatron Army": {
-    "affinities": {
-      "almighty": 6,
-      "elec": -3,
-      "light": 5,
-      "support": 1
-    },
+    "affinities": [0, 0, 0, 0, -3, 0, 5, 0, 6, 0, 0, 1],
     "ailments": "ssssssss",
+    "eskills": ["Fire of Sinai", "Judgment Light", "Megidolaon", "Makakaja", "Dekaja"],
     "lvl": 99,
     "race": "Horde",
     "resists": "sssswsrs",
-    "eskills": [
-      "Fire of Sinai",
-      "Judgment Light",
-      "Megidolaon",
-      "Makakaja",
-      "Dekaja"
-    ],
-    "stats": [
-      18155,
-      943,
-      132,
-      132,
-      147,
-      102,
-      102
-    ]
+    "stats": [18155, 943, 132, 132, 147, 102, 102]
   },
   "Nigi Mitama": {
-    "affinities": {
-      "ice": 3,
-      "support": 4
-    },
+    "affinities": [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 4],
     "ailments": "--------",
+    "eskills": ["Ice Breath", "Tetrakarn", "Makarakarn"],
     "lvl": 30,
     "race": "Mitama",
     "resists": "sssnss--",
-    "eskills": [
-      "Ice Breath",
-      "Tetrakarn",
-      "Makarakarn"
-    ],
-    "stats": [
-      50,
-      0,
-      1,
-      1,
-      1,
-      1,
-      1
-    ]
+    "stats": [50, 0, 1, 1, 1, 1, 1]
   },
   "Norse Force": {
-    "affinities": {
-      "elec": -5,
-      "fire": -5,
-      "force": 3,
-      "gun": 4
-    },
+    "affinities": [0, 4, -5, 0, -5, 3, 0, 0, 0, 0, 0, 0],
     "ailments": "s-sww---",
+    "eskills": ["Dekunda", "Mazandyne", "Pandemic Bomb", "Heaven's Bow"],
     "lvl": 75,
     "race": "Horde",
     "resists": "--wnwrns",
-    "eskills": [
-      "Dekunda",
-      "Mazandyne",
-      "Pandemic Bomb",
-      "Heaven's Bow"
-    ],
-    "stats": [
-      5811,
-      567,
-      88,
-      88,
-      88,
-      88,
-      88
-    ]
+    "stats": [5811, 567, 88, 88, 88, 88, 88]
   },
   "Oni Horde": {
-    "affinities": {
-      "ailment": -2,
-      "elec": -3,
-      "ice": 3,
-      "light": -3,
-      "phys": 4,
-      "recovery": 1
-    },
+    "affinities": [4, 0, 0, 3, -3, 0, -3, 0, 0, 1, -2, 0],
     "ailments": "--s--w--",
+    "eskills": ["Ice Breath", "Critical Wave", "Power Punch", "Mudo"],
     "lvl": 20,
     "race": "Horde",
     "resists": "--ssw-w-",
-    "eskills": [
-      "Ice Breath",
-      "Critical Wave",
-      "Power Punch",
-      "Mudo"
-    ],
-    "stats": [
-      741,
-      376,
-      43,
-      30,
-      24,
-      31,
-      35
-    ]
+    "stats": [741, 376, 43, 30, 24, 31, 35]
   },
   "Pirate Horde": {
-    "affinities": {
-      "ailment": 5,
-      "elec": 1,
-      "fire": -3,
-      "force": -3,
-      "light": -3,
-      "phys": 1
-    },
+    "affinities": [1, 0, -3, 0, 1, -3, -3, 0, 0, 0, 5, 0],
     "ailments": "s--sssss",
+    "eskills": ["Mazionga", "Axel Claw"],
     "lvl": 20,
     "race": "Horde",
     "resists": "--wnnwss",
-    "eskills": [
-      "Mazionga",
-      "Axel Claw"
-    ],
-    "stats": [
-      861,
-      337,
-      24,
-      29,
-      43,
-      31,
-      36
-    ]
+    "stats": [861, 337, 24, 29, 43, 31, 36]
   },
   "Saki Mitama": {
-    "affinities": {
-      "elec": 3,
-      "light": 2,
-      "phys": 1
-    },
+    "affinities": [1, 0, 0, 0, 3, 0, 2, 0, 0, 0, 0, 0],
     "ailments": "--------",
+    "eskills": ["Shock", "Carol Hit", "Mahama", "Smile Charge"],
     "lvl": 30,
     "race": "Mitama",
     "resists": "ssssnsss",
-    "eskills": [
-      "Shock",
-      "Carol Hit",
-      "Mahama",
-      "Smile Charge"
-    ],
-    "stats": [
-      50,
-      0,
-      1,
-      1,
-      1,
-      1,
-      1
-    ]
+    "stats": [50, 0, 1, 1, 1, 1, 1]
   },
   "Seraph Army": {
-    "affinities": {
-      "fire": 6,
-      "gun": 4,
-      "ice": -5,
-      "light": 3,
-      "recovery": 3
-    },
+    "affinities": [0, 4, 6, -5, 0, 0, 3, 0, 0, 3, 0, 0],
     "ailments": "sss-ss-s",
+    "eskills": ["Riot Gun", "Trisagion", "Amrita", "Concentrate"],
     "lvl": 95,
     "race": "Horde",
     "resists": "--r-dwdn",
-    "eskills": [
-      "Riot Gun",
-      "Trisagion",
-      "Amrita",
-      "Concentrate"
-    ],
-    "stats": [
-      8015,
-      679,
-      69,
-      89,
-      148,
-      99,
-      118
-    ]
+    "stats": [8015, 679, 69, 89, 148, 99, 118]
   },
   "Tengu Horde": {
-    "affinities": {
-      "ailment": 2,
-      "elec": -5,
-      "fire": 3,
-      "force": 4,
-      "gun": -4,
-      "support": 1
-    },
+    "affinities": [0, -4, 3, 0, -5, 4, 0, 0, 0, 0, 2, 1],
     "ailments": "s-s-s--s",
+    "eskills": ["Mahama", "Javelin Rain", "Zandyne"],
     "lvl": 45,
     "race": "Horde",
     "resists": "-ws-wn--",
-    "eskills": [
-      "Mahama",
-      "Javelin Rain",
-      "Zandyne"
-    ],
-    "stats": [
-      1210,
-      491,
-      49,
-      49,
-      56,
-      73,
-      66
-    ]
+    "stats": [1210, 491, 49, 49, 56, 73, 66]
   },
   "Thunder Horde": {
-    "affinities": {
-      "elec": 4,
-      "force": -5,
-      "phys": 2
-    },
+    "affinities": [2, 0, 0, 0, 4, -5, 0, 0, 0, 0, 0, 0],
     "ailments": "--sn----",
+    "eskills": ["Maziodyne", "Ziodyne", "Madness Nails", "War Cry"],
     "lvl": 70,
     "race": "Horde",
     "resists": "---sdwn-",
-    "eskills": [
-      "Maziodyne",
-      "Ziodyne",
-      "Madness Nails",
-      "War Cry"
-    ],
-    "stats": [
-      5112,
-      502,
-      113,
-      73,
-      54,
-      76,
-      87
-    ]
+    "stats": [5112, 502, 113, 73, 54, 76, 87]
   },
   "Wildfire Horde": {
-    "affinities": {
-      "ailment": -3,
-      "fire": 4,
-      "ice": -5,
-      "phys": 3
-    },
+    "affinities": [3, 0, 4, -5, 0, 0, 0, 0, 0, 0, -3, 0],
     "ailments": "--s-sw--",
+    "eskills": ["Maragidyne", "Nihil Claw", "Eat Whole"],
     "lvl": 64,
     "race": "Horde",
     "resists": "--rw---n",
-    "eskills": [
-      "Maragidyne",
-      "Nihil Claw",
-      "Eat Whole"
-    ],
-    "stats": [
-      3270,
-      533,
-      87,
-      77,
-      92,
-      82,
-      77
-    ]
+    "stats": [3270, 533, 87, 77, 92, 82, 77]
   }
 }

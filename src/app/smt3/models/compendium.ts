@@ -1,18 +1,22 @@
 import { Races, ElementOrder, ResistCodes } from '../models/constants';
-import { Demon, Skill, SpecialRecipe } from '../models';
+import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import DEMON_DATA_JSON from '../data/demon-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
+import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import MAGATAMA_DATA_JSON from '../data/magatama-data.json';
+import EVOLUTIONS_JSON from '../data/evolutions.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
-  private specialRecipes: { [name: string]: SpecialRecipe };
+  private pairRecipes: { [name: string]: NamePair[] } = {};
+  private entryRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-  private _dlcDemons: { [name: string]: boolean };
+
+  dlcDemons: { [name: string]: boolean } = {};
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -31,9 +35,9 @@ export class Compendium implements ICompendium {
   initImportedData() {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
-    const specialRecipes: { [name: string]: SpecialRecipe } = {};
+    const pairRecipes: { [name: string]: NamePair[] } = {};
+    const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const dlcDemons: { [name: string]: boolean } = {};
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = {
@@ -45,7 +49,8 @@ export class Compendium implements ICompendium {
         resists: json.resists.split('').map(char => ResistCodes[char]),
         inherits: json.inherits.split('').map(char => char === 'o'),
         skills: json.skills,
-        fusion: 'normal'
+        fusion: 'normal',
+        prereq: FUSION_PREREQS_JSON[name] || ''
       };
     }
 
@@ -59,7 +64,8 @@ export class Compendium implements ICompendium {
         resists: json.resists.split('').map(char => ResistCodes[char]),
         inherits: 'oo-oo-oo-'.split('').map(char => char === 'o'),
         skills: json.skills,
-        fusion: 'magatama'
+        fusion: 'magatama',
+        prereq: json.prereq
       };
     }
 
@@ -84,46 +90,6 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      const demon = demons[name];
-      const recipe = {
-        pair: json.nor,
-        entry: json.spe,
-        lvl: json.lvl
-      };
-
-      specialRecipes[name] = recipe;
-      demon.fusion = 'special';
-
-      if (recipe.entry === 'Recruit') {
-        demon.prereq = 'Recruitment only';
-        demon.fusion = 'evolve';
-      } else if (recipe.lvl && !demons.hasOwnProperty(recipe.entry)) {
-        demon.prereq = `Fuse one of the following ingredients with a Deathstone at Kagatsuchi phase ${recipe.lvl}`;
-      } else if (recipe.entry && recipe.pair) {
-        demon.prereq = 'Fuse one of the following combos and sacrifice one of the following ingredients at Full Kagatsuchi';
-      } else if (recipe.lvl) {
-        demon.prereq = 'Evolution only';
-        demon.fusion = 'evolve';
-
-        demons[recipe.entry].evolvesTo = {
-          price: demon.price,
-          race1: demon.race,
-          lvl1:  parseInt(recipe.lvl),
-          name1: demon.name
-        };
-
-        demons[demon.name].evolvesFrom = {
-          price: demons[recipe.entry].price,
-          race1: demons[recipe.entry].race,
-          lvl1:  parseInt(recipe.lvl),
-          name1: recipe.entry
-        };
-
-        recipe.entry = null;
-      }
-    }
-
     for (const race of Races) {
       inversions[race] = {};
     }
@@ -141,11 +107,62 @@ export class Compendium implements ICompendium {
       }
     }
 
+    for (const [name, recipeList] of Object.entries(SPECIAL_RECIPES_JSON)) {
+      const entry = demons[name];
+      entryRecipes[name] = [];
+      pairRecipes[name] = [];
+
+      entry.fusion = recipeList.length > 0 ? 'special' : 'accident';
+
+      for (const ingred of recipeList) {
+        if (ingred.includes(' x ')) {
+          const [race1, race2] = ingred.split(' x ');
+          const leftNames = demons[race1] ? [race1] : Object.values(inversions[race1]);
+          const rightNames = demons[race2] ? [race2] : Object.values(inversions[race2]);
+
+          for (const name1 of leftNames) {
+            for (const name2 of rightNames) {
+              if (name1 !== name2) {
+                pairRecipes[name].push({ name1, name2 });
+              }
+            }
+          }
+        } else {
+          if (demons[ingred]) {
+            entryRecipes[name].push(ingred);
+          } else {
+            for (const name1 of Object.values(inversions[ingred])) {
+              entryRecipes[name].push(name1);
+            }
+          }
+        }
+      }
+    }
+
+    for (const [name, json] of Object.entries(EVOLUTIONS_JSON)) {
+      const fromDemon = demons[name];
+      const toDemon = demons[json.result];
+
+      demons[fromDemon.name].evolvesTo = {
+        price: toDemon.price,
+        race1: toDemon.race,
+        lvl1: json.lvl,
+        name1: toDemon.name
+      }
+
+      demons[toDemon.name].evolvesFrom = {
+        price: fromDemon.price,
+        race1: fromDemon.race,
+        lvl1: json.lvl,
+        name1: fromDemon.name
+      }
+    }
+
     this.demons = demons;
     this.skills = skills;
-    this.specialRecipes = specialRecipes;
+    this.pairRecipes = pairRecipes;
+    this.entryRecipes = entryRecipes;
     this.invertedDemons = inversions;
-    this._dlcDemons = dlcDemons;
   }
 
   updateDerivedData() {
@@ -164,7 +181,7 @@ export class Compendium implements ICompendium {
         ingredients[demon.race].push(demon.lvl);
       }
 
-      if (!this.specialRecipes.hasOwnProperty(name)) {
+      if (!this.pairRecipes[name] && !this.entryRecipes[name]) {
         results[demon.race].push(demon.lvl);
       }
     }
@@ -174,31 +191,10 @@ export class Compendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
-    for (const [names, included] of Object.entries(this._dlcDemons)) {
-      if (!included) {
-        for (const name of names.split(',')) {
-          const { race, lvl } = this.demons[name];
-          delete demonEntries[name];
-
-          ingredients[race] = ingredients[race].filter(l => l !== lvl);
-          results[race] = results[race].filter(l => l !== lvl);
-        }
-      }
-    }
-
     this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
-  }
-
-  get dlcDemons(): { [name: string]: boolean } {
-    return this._dlcDemons;
-  }
-
-  set dlcDemons(dlcDemons: { [name: string]: boolean }) {
-    this._dlcDemons = dlcDemons;
-    this.updateDerivedData();
   }
 
   get allDemons(): Demon[] {
@@ -210,7 +206,7 @@ export class Compendium implements ICompendium {
   }
 
   get specialDemons(): Demon[] {
-    return Object.keys(this.specialRecipes).map(name => this.demons[name]);
+    return [];
   }
 
   getDemon(name: string): Demon {
@@ -242,39 +238,11 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNameEntries(name: string): string[] {
-    const recipe = this.specialRecipes[name] || {};
-    const entries: string[] = [];
-
-    if (recipe.lvl && this.getDemon(recipe.entry)) {
-      entries.push(recipe.entry);
-    } else if (recipe.entry && !this.getDemon(recipe.entry)) {
-      for (const lvl of this.getResultDemonLvls(recipe.entry)) {
-        entries.push(this.reverseLookupDemon(recipe.entry, lvl));
-      }
-    } else if (recipe.entry) {
-      entries.push(recipe.entry);
-    }
-
-    return entries;
+    return this.entryRecipes[name] || [];
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
-    const recipe = this.specialRecipes[name] || {};
-    const pairs: NamePair[] = [];
-
-    if (recipe.pair && recipe.pair.indexOf(', ') !== -1) {
-      for (const pair of recipe.pair.split(', ')) {
-        const [ name1, name2 ] = pair.split(' x ');
-        pairs.push({ name1, name2 });
-      }
-    } else if (recipe.pair && recipe.pair.indexOf(' x ') === -1) {
-      pairs.push({ name1: recipe.pair, name2: recipe.pair });
-    } else if (recipe.pair) {
-      const [name1, name2 ] = recipe.pair.split(' x ');
-      pairs.push({ name1, name2 });
-    }
-
-    return pairs;
+    return this.pairRecipes[name] || [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

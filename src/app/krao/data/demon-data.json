@@ -1,1459 +1,1436 @@
 {
   "Abihiko": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 47,
-    "order": "Skill",
     "person": "Knight",
-    "resists": [100, 1150, 50, 2150, 50, 50, 0, 100],
-    "skills": {"Death Bullet": 0, "Null Death": 49, "Retribution": 4488, "Tarukaja": 48},
-    "stats": [585, 16, 24, 15, 11]
+    "race": "Skill",
+    "resists": "-wsfssn-",
+    "skills": ["Death Bullet", "Tarukaja", "Null Death", "Retribution", "Extortion"],
+    "stats": [585, 16, 24, 15, 11, 3]
   },
   "Aeros": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 17,
-    "order": "Element",
     "person": "Gentleman",
-    "resists": [100, 100, 2100, 100, 100, 0, 0, 100],
-    "skills": {"Force Resist": 4488, "Wind Sword": 18, "Zanrati": 0},
-    "stats": [251, 6, 14, 5, 11]
+    "race": "Element",
+    "resists": "--f--nn-",
+    "skills": ["Zanrati", "Wind Sword", "Force Resist", "Debate"],
+    "stats": [251, 6, 14, 5, 11, 5]
   },
   "Agathion": {
-    "conv": "Patter",
+    "inherit": "-o-o",
     "lvl": 10,
-    "order": "Volt",
     "person": "Little Kid",
-    "resists": [100, 1150, 100, 100, 0, 2100, 100, 100],
-    "skills": {"Bolt Slash": 11, "Luck Chakra": 4488, "Zio": 0},
-    "stats": [182, 5, 10, 6, 8]
+    "race": "Volt",
+    "resists": "-w--nf--",
+    "skills": ["Zio", "Bolt Slash", "Luck Chakra", "Patter"],
+    "stats": [182, 5, 10, 6, 8, 7]
   },
   "Alice": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 42,
-    "order": "Fiend",
     "person": "Young Girl",
-    "resists": [100, 0, 50, 50, 50, 50, -1100, 0],
-    "skills": {"Mamudoon": 0, "Marin Karin": 43, "Petra": 44, "Skill Extension": 4488},
-    "stats": [495, 10, 26, 8, 17]
+    "race": "Fiend",
+    "resists": "-nssssdn",
+    "skills": ["Mamudoon", "Marin Karin", "Petra", "Skill Extension", "Debate"],
+    "stats": [495, 10, 26, 8, 17, 2]
   },
   "Alp": {
-    "conv": "Patter",
+    "inherit": "-o--",
     "lvl": 12,
-    "order": "Pagan",
     "person": "Young Girl",
-    "resists": [100, 100, 2100, 100, 100, 100, 0, 0],
-    "skills": {"Death Bullet": 14, "Magic Chakra": 4488, "Marin Karin": 0, "Pulinpa": 13},
-    "stats": [205, 6, 10, 6, 9]
+    "race": "Pagan",
+    "resists": "--f---nn",
+    "skills": ["Marin Karin", "Pulinpa", "Death Bullet", "Magic Chakra", "Patter"],
+    "stats": [205, 6, 10, 6, 9, 5]
   },
   "Alraune": {
-    "conv": "Debate",
+    "inherit": "oo-o",
     "lvl": 29,
-    "order": "Frost",
     "person": "Lady",
-    "resists": [100, 100, 100, -1100, 2100, 100, 0, 0],
-    "skills": {"Bufurati": 0, "Dia Aura": 31, "Ice Resist": 4488, "Ice Slash": 30},
-    "stats": [415, 8, 20, 11, 9]
+    "race": "Frost",
+    "resists": "---df-nn",
+    "skills": ["Bufurati", "Ice Slash", "Dia Aura", "Ice Resist", "Debate"],
+    "stats": [415, 8, 20, 11, 9, 4]
   },
   "Angel": {
-    "conv": "Scolding",
+    "inherit": "-o-o",
     "lvl": 8,
-    "order": "Wind",
     "person": "Lady",
-    "resists": [100, 1150, 2100, 100, 100, -1100, 2100, 100],
-    "skills": {"Dia": 9, "Force Resist": 4488, "Gale Stab": 10, "Mazan": 0},
-    "stats": [171, 4, 10, 6, 7]
+    "race": "Wind",
+    "resists": "-wf--df-",
+    "skills": ["Mazan", "Dia", "Gale Stab", "Force Resist", "Scolding"],
+    "stats": [171, 4, 10, 6, 7, 6]
   },
   "Anzu": {
-    "conv": "Fast Talk",
+    "inherit": "oo-o",
     "lvl": 23,
-    "order": "Wind",
     "person": "Beast",
-    "resists": [100, 1150, 2150, 100, 2100, 0, 100, 100],
-    "skills": {"EXP Boost": 4488, "Makakaja": 24, "Mazan": 0, "Wind Cutter": 25},
-    "stats": [335, 16, 12, 8, 6]
+    "race": "Wind",
+    "resists": "-wf-fn--",
+    "skills": ["Mazan", "Makakaja", "Wind Cutter", "EXP Boost", "Fast Talk"],
+    "stats": [335, 16, 12, 8, 6, 4]
   },
   "Aquans": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 19,
-    "order": "Element",
     "person": "Gentleman",
-    "resists": [100, 100, 100, 0, 2100, 100, 0, 100],
-    "skills": {"Bufurati": 0, "Frost Sword": 20, "Ice Resist": 4488},
-    "stats": [295, 7, 15, 8, 8]
+    "race": "Element",
+    "resists": "---nf-n-",
+    "skills": ["Bufurati", "Frost Sword", "Ice Resist", "Sweet Talk"],
+    "stats": [295, 7, 15, 8, 8, 5]
   },
   "Ara Mitama": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 22,
-    "order": "Spirit",
     "person": "Foreigner",
-    "resists": [100, 1150, 100, 100, 100, 100, 0, 0],
-    "skills": {"Combo": 0, "Orienteering": 4488, "Tarukaja": 23},
-    "stats": [325, 17, 8, 8, 8]
+    "race": "Spirit",
+    "resists": "-w----nn",
+    "skills": ["Combo", "Tarukaja", "Orienteering", "Panic Urge"],
+    "stats": [325, 17, 8, 8, 8, 4]
   },
   "Arachne": {
-    "conv": "Scolding",
+    "inherit": "oo-o",
     "lvl": 52,
-    "order": "Pagan",
     "person": "Lady",
-    "resists": [100, 0, 0, 2100, 100, 100, -1100, 0],
-    "skills": {"Desperate Power": 4488, "Mamudo": 0, "Mediarama": 53, "Ziodyne": 54},
-    "stats": [665, 20, 16, 21, 14]
+    "race": "Pagan",
+    "resists": "-nnf--dn",
+    "skills": ["Mamudo", "Mediarama", "Ziodyne", "Desperate Power", "Scolding"],
+    "stats": [665, 20, 16, 21, 14, 3]
   },
   "Arahabaki": {
-    "conv": "Fast Talk",
+    "inherit": "oo-o",
     "lvl": 62,
-    "order": "Frost",
     "person": "Undead",
-    "resists": [1200, 1200, 0, 0, 0, 0, 0, 1200],
-    "skills": {"Cocytus": 0, "Frost Killer": 64, "Mad Rush": 63, "Whimsy Aid": 4488},
-    "stats": [733, 18, 27, 23, 13]
+    "race": "Frost",
+    "resists": "wwnnnnnw",
+    "skills": ["Cocytus", "Mad Rush", "Frost Killer", "Whimsy Aid", "Fast Talk"],
+    "stats": [733, 18, 27, 23, 13, 2]
   },
   "Archangel": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 18,
-    "order": "Wind",
     "person": "Gentleman",
-    "resists": [50, 1150, 2100, 100, 2100, -1100, 2100, 100],
-    "skills": {"Life Bonus": 4488, "Mazan": 0, "Wind Sword": 19, "Zanrati": 20},
-    "stats": [309, 16, 5, 11, 5]
+    "race": "Wind",
+    "resists": "swf-fdf-",
+    "skills": ["Mazan", "Wind Sword", "Zanrati", "Life Bonus", "Brainwash"],
+    "stats": [309, 16, 5, 11, 5, 5]
   },
   "Arioch": {
-    "conv": "Sweet Talk",
+    "inherit": "oooo",
     "lvl": 72,
-    "order": "Frost",
     "person": "Knight",
-    "resists": [10, 0, 100, -1100, 2050, 50, 0, 100],
-    "skills": {"Blizzard Slash": 74, "Cocytus": 0, "First Aid": 4488, "Marin Karin": 73},
-    "stats": [804, 36, 16, 27, 12]
+    "race": "Frost",
+    "resists": "snsdfsn-",
+    "skills": ["Cocytus", "Marin Karin", "Blizzard Slash", "First Aid", "Sweet Talk"],
+    "stats": [804, 36, 16, 27, 12, 1]
   },
   "Astaroth": {
-    "conv": "Fast Talk",
+    "inherit": "oooo",
     "lvl": 68,
-    "order": "Volt",
     "person": "Gentleman",
-    "resists": [100, 0, 50, 50, -1100, 2100, 0, 100],
-    "skills": {"EXP Boost": 4488, "Thunder Stab": 70, "Thunderbolt": 69, "Winged Fury": 0},
-    "stats": [766, 34, 17, 24, 12]
+    "race": "Volt",
+    "resists": "--ssdf-n",
+    "skills": ["Winged Fury", "Thunderbolt", "Thunder Stab", "EXP Boost", "Fast Talk"],
+    "stats": [766, 34, 17, 24, 12, 2]
   },
   "Asura": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 75,
-    "order": "Pyro",
     "person": "Knight",
-    "resists": [50, 0, -1100, 100, 50, 10, 0, 100],
-    "skills": {"Agni's Blessing": 4488, "Flare Slash": 77, "Maragidyne": 0, "Tetrakarn": 76},
-    "stats": [774, 26, 30, 22, 16]
+    "race": "Pyro",
+    "resists": "snd-ssn-",
+    "skills": ["Maragidyne", "Tetrakarn", "Flare Slash", "Agni's Blessing", "Brainwash"],
+    "stats": [774, 26, 30, 22, 16, 1]
   },
   "Atavaka": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 49,
-    "order": "Fury",
     "person": "Knight",
-    "resists": [50, 50, 2050, 2050, 100, 100, 0, 100],
-    "skills": {"Agni's Blessing": 4488, "Cross Slash": 50, "Mad Rush": 0, "Null Phys": 51},
-    "stats": [662, 26, 9, 23, 10]
+    "race": "Fury",
+    "resists": "ssff--n-",
+    "skills": ["Mad Rush", "Cross Slash", "Null Phys", "Agni's Blessing", "Brainwash"],
+    "stats": [662, 26, 9, 23, 10, 3]
   },
   "Azumi": {
-    "conv": "Patter",
+    "inherit": "oo-o",
     "lvl": 16,
-    "order": "Frost",
     "person": "Old Woman",
-    "resists": [100, 1150, 100, 0, 2150, 100, 2100, 100],
-    "skills": {"Bufurati": 18, "Mabufu": 0, "Money-Getter": 4488, "Rakukaja": 17},
-    "stats": [248, 8, 13, 6, 8]
+    "race": "Frost",
+    "resists": "-w-nf-f-",
+    "skills": ["Mabufu", "Rakukaja", "Bufurati", "Money-Getter", "Patter"],
+    "stats": [248, 8, 13, 6, 8, 6]
   },
   "Baek Yong": {
-    "conv": "Sweet Talk",
+    "inherit": "oo-o",
     "lvl": 38,
-    "order": "Wind",
     "person": "Knight",
-    "resists": [100, 0, 2100, 100, 100, -1100, 0, 0],
-    "skills": {"Cyclone Stab": 39, "Force Resist": 4488, "War Cry": 0, "Zandyne": 40},
-    "stats": [513, 22, 12, 14, 9]
+    "race": "Wind",
+    "resists": "-nf--dnn",
+    "skills": ["War Cry", "Cyclone Stab", "Zandyne", "Force Resist", "Sweet Talk"],
+    "stats": [513, 22, 12, 14, 9, 3]
   },
   "Barong": {
-    "conv": "Fast Talk",
+    "inherit": "oo-o",
     "lvl": 60,
-    "order": "Volt",
     "person": "Foreigner",
-    "resists": [100, 100, 100, 100, -1100, 50, 2100, 0],
-    "skills": {"Elec Drain": 62, "Magic Chakra": 4488, "Maziodyne": 0, "Shock Wave": 61},
-    "stats": [675, 22, 26, 17, 14]
+    "race": "Volt",
+    "resists": "----dsfn",
+    "skills": ["Maziodyne", "Shock Wave", "Elec Drain", "Magic Chakra", "Fast Talk"],
+    "stats": [675, 22, 26, 17, 14, 4]
   },
   "Basilisk": {
-    "conv": "Sweet Talk",
+    "inherit": "oo-o",
     "lvl": 58,
-    "order": "Frost",
     "person": "Beast",
-    "resists": [100, 100, 0, 0, 2100, 50, 100, 1150],
-    "skills": {"Freeze Slash": 60, "Glacial Blast": 0, "Ice Resist": 4488, "Petra": 59},
-    "stats": [714, 30, 11, 23, 13]
+    "race": "Frost",
+    "resists": "--nnfs-w",
+    "skills": ["Glacial Blast", "Petra", "Freeze Slash", "Ice Resist", "Sweet Talk"],
+    "stats": [714, 30, 11, 23, 13, 3]
   },
   "Beelzebub": {
-    "conv": "Panic Urge",
+    "inherit": "oo-o",
     "lvl": 75,
-    "order": "Pagan",
     "person": "Knight",
-    "resists": [50, 1150, 100, 50, 10, 50, -1100, 0],
-    "skills": {"Magic Boost": 4488, "Makakajaon": 77, "Mamudoon": 0, "Skeptic Crush": 76},
-    "stats": [806, 25, 30, 26, 13]
+    "race": "Pagan",
+    "resists": "sw-sssdn",
+    "skilli": "Intimidate",
+    "skills": ["Mamudoon", "Skeptic Crush", "Makakajaon", "Magic Boost", "Panic Urge"],
+    "stats": [806, 25, 30, 26, 13, 1]
   },
   "Belial": {
-    "conv": "Debate",
+    "inherit": "oo-o",
     "lvl": 68,
-    "order": "Pyro",
     "person": "Knight",
-    "resists": [100, 50, 0, 2100, 50, 100, -1100, 50],
-    "skills": {"Diarahan": 69, "Fire Drain": 70, "Null Mortal": 4488, "Pyro Killer": 0},
-    "stats": [742, 34, 18, 21, 14]
+    "race": "Pyro",
+    "resists": "-snfs-ds",
+    "skills": ["Pyro Killer", "Diarahan", "Fire Drain", "Null Mortal", "Debate"],
+    "stats": [742, 34, 18, 21, 14, 2]
   },
   "Belphegor": {
-    "conv": "Panic Urge",
+    "inherit": "oo-o",
     "lvl": 71,
-    "order": "Skill",
     "person": "Punk",
-    "resists": [100, 50, 2050, 0, 100, 10, 100, 0],
-    "skills": {"Glacial Blast": 72, "Mad Rush": 73, "Null Mortal": 4488, "Wind Cutter": 0},
-    "stats": [777, 22, 27, 24, 17]
+    "race": "Skill",
+    "resists": "-sfn-s-n",
+    "skills": ["Wind Cutter", "Glacial Blast", "Mad Rush", "Null Mortal", "Panic Urge"],
+    "stats": [777, 22, 27, 24, 17, 1]
   },
   "Binbou-gami": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 33,
-    "order": "Fiend",
     "person": "Fiend",
-    "resists": [100, 100, 2100, -1100, 100, 100, 0, 0],
-    "skills": {"Bufudyne": 34, "Mad Rush": 35, "Money-Getter": 4488, "Pulinpa": 0},
-    "stats": [441, 16, 16, 10, 10]
+    "race": "Fiend",
+    "resists": "--fd--nn",
+    "skills": ["Pulinpa", "Bufudyne", "Mad Rush", "Money-Getter", "Extortion"],
+    "stats": [441, 16, 16, 10, 10, 1]
   },
   "Black Frost": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 55,
-    "order": "Pagan",
     "person": "Jack",
-    "resists": [100, 0, 0, -1100, 100, 2100, 0, 100],
-    "skills": {"Cocytus": 57, "Dekaja": 56, "Mamudoon": 0, "Moonlight Rage": 4488},
-    "stats": [634, 20, 22, 15, 17]
+    "race": "Pagan",
+    "resists": "-nnd-fn-",
+    "skills": ["Mamudoon", "Dekaja", "Cocytus", "Moonlight Rage", "Extortion"],
+    "stats": [634, 20, 22, 15, 17, 3]
   },
   "Black Ooze": {
-    "conv": "Panic Urge",
+    "inherit": "oo-o",
     "lvl": 32,
-    "order": "Frost",
     "person": "Undead",
-    "resists": [1150, 100, 2100, 50, 2100, 2100, 0, 0],
-    "skills": {"Bufu": 0, "Desperate Power": 4488, "Null Ice": 34, "Venomstrike": 33},
-    "stats": [473, 16, 10, 15, 10]
+    "race": "Frost",
+    "resists": "w-fsffnn",
+    "skills": ["Bufu", "Venomstrike", "Null Ice", "Desperate Power", "Panic Urge"],
+    "stats": [473, 16, 10, 15, 10, 3]
   },
   "Black Rider": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 60,
-    "order": "Fiend",
     "person": "Fiend",
-    "resists": [50, 0, 100, 100, 0, 2100, -1100, 0],
-    "skills": {"Diarahan": 61, "Elec Boost": 4488, "Mad Rush": 0, "Maziodyne": 62},
-    "stats": [740, 21, 21, 25, 12]
+    "race": "Fiend",
+    "resists": "sn--nfdn",
+    "skills": ["Mad Rush", "Diarahan", "Maziodyne", "Elec Boost", "Extortion"],
+    "stats": [740, 21, 21, 25, 12, 1]
   },
   "Blob": {
-    "conv": "Panic Urge",
+    "inherit": "oo-o",
     "lvl": 17,
-    "order": "Skill",
     "person": "Undead",
-    "resists": [100, 1200, 2100, 2100, 2100, 100, 0, 1200],
-    "skills": {"Halve Mortal": 4488, "Makajam": 19, "Mudo": 0, "Pulinpa": 18},
-    "stats": [307, 12, 4, 12, 8]
+    "race": "Skill",
+    "resists": "-wfff-nw",
+    "skills": ["Mudo", "Pulinpa", "Makajam", "Halve Mortal", "Panic Urge"],
+    "stats": [307, 12, 4, 12, 8, 3]
   },
   "Camael": {
-    "conv": "Charisma",
+    "inherit": "oo-o",
     "lvl": 69,
-    "order": "Wind",
     "person": "Gentleman",
-    "resists": [1050, 0, 0, 100, 1050, 0, 2100, 100],
-    "skills": {"Force Drain": 71, "Mediarama": 0, "Rakukajaon": 70, "Vengeance Seal": 4488},
-    "stats": [786, 30, 15, 26, 17]
+    "race": "Wind",
+    "resists": "wnn-wnf-",
+    "skills": ["Mediarama", "Rakukajaon", "Force Drain", "Vengeance Seal", "Charisma"],
+    "stats": [786, 30, 15, 26, 17, 2]
   },
   "Cerberus": {
-    "conv": "Brainwash",
+    "inherit": "-o-o",
     "lvl": 46,
-    "order": "Pyro",
     "person": "Beast",
-    "resists": [50, 100, -1100, 2150, 100, 100, 100, 100],
-    "skills": {"Maragidyne": 47, "Mighty Blow": 0, "Scorch Slash": 48, "Vengeance Seal": 4488},
-    "stats": [603, 30, 8, 18, 9]
+    "race": "Pyro",
+    "resists": "s-df----",
+    "skilli": "Provoke",
+    "skills": ["Mighty Blow", "Maragidyne", "Scorch Slash", "Vengeance Seal", "Brainwash"],
+    "stats": [603, 30, 8, 18, 9, 4]
   },
   "Chernobog": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 32,
-    "order": "Fury",
     "person": "Old Man",
-    "resists": [100, 100, 2100, 50, 100, 100, 0, 100],
-    "skills": {"Bufurati": 33, "Endure": 4488, "Null Phys": 34, "Venomstrike": 0},
-    "stats": [465, 18, 14, 14, 5]
+    "race": "Fury",
+    "resists": "--fs--n-",
+    "skills": ["Venomstrike", "Bufurati", "Null Phys", "Endure", "Panic Urge"],
+    "stats": [465, 18, 14, 14, 5, 4]
   },
   "Chou-keshin": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 9,
-    "order": "Frost",
     "person": "Young Girl",
-    "resists": [100, 1150, 50, -1100, 2100, 50, 100, 100],
-    "skills": {"Bufu": 10, "Dia": 0, "Endure": 4488, "Ice Slash": 11},
-    "stats": [155, 6, 11, 4, 7]
+    "race": "Frost",
+    "resists": "-wsdfs--",
+    "skills": ["Dia", "Bufu", "Ice Slash", "Endure", "Sexy Voice"],
+    "stats": [155, 6, 11, 4, 7, 5]
   },
   "Cu Chulainn": {
-    "conv": "Charisma",
+    "inherit": "-ooo",
     "lvl": 39,
-    "order": "Fury",
     "person": "Knight",
-    "resists": [50, 0, 50, 100, 50, 100, 2100, 100],
-    "skills": {"Cross Slash": 0, "Mag Bullet": 41, "Phys Resist": 4488, "Winged Fury": 40},
-    "stats": [513, 22, 13, 13, 10]
+    "race": "Fury",
+    "resists": "sns-s-f-",
+    "skills": ["Cross Slash", "Winged Fury", "Mag Bullet", "Phys Resist", "Charisma"],
+    "stats": [513, 22, 13, 13, 10, 3]
   },
   "Cybele": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 53,
-    "order": "Volt",
     "person": "Lady",
-    "resists": [100, 100, 0, 0, 0, 2150, 100, 1150],
-    "skills": {"Magic Boost": 4488, "Marin Karin": 54, "Maziodyne": 55, "Shock Wave": 0},
-    "stats": [670, 15, 24, 21, 12]
+    "race": "Volt",
+    "resists": "--nnnf-w",
+    "skills": ["Shock Wave", "Marin Karin", "Maziodyne", "Magic Boost", "Sexy Voice"],
+    "stats": [670, 15, 24, 21, 12, 3]
   },
   "Decarabia": {
-    "conv": "Patter",
+    "inherit": "oo--",
     "lvl": 55,
-    "order": "Wind",
     "person": "Foreigner",
-    "resists": [100, 0, 2050, 50, 50, -1100, 0, 100],
-    "skills": {"Makakaja": 56, "Skill Extension": 4488, "Tempest": 57, "Zandyne": 0},
-    "stats": [658, 19, 24, 18, 13]
+    "race": "Wind",
+    "resists": "-nfssdn-",
+    "skills": ["Zandyne", "Makakaja", "Tempest", "Skill Extension", "Patter"],
+    "stats": [658, 19, 24, 18, 13, 3]
   },
   "Dominion": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 34,
-    "order": "Wind",
     "person": "Gentleman",
-    "resists": [100, 1150, 2100, 100, 100, -1100, 2100, 50],
-    "skills": {"Dia Aura": 35, "Mazan": 0, "Null Force": 36, "Stamina Chakra": 4488},
-    "stats": [457, 11, 19, 11, 12]
+    "race": "Wind",
+    "resists": "-wf--dfs",
+    "skills": ["Mazan", "Dia Aura", "Null Force", "Stamina Chakra", "Brainwash"],
+    "stats": [457, 11, 19, 11, 12, 4]
   },
   "Enku": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 7,
-    "order": "Pyro",
     "person": "Old Man",
-    "resists": [100, 100, -1100, 2150, 100, 2100, 0, 100],
-    "skills": {"Agi": 0, "Maragi": 8, "Money-Getter": 4488, "Pyro Blade": 9},
-    "stats": [171, 6, 11, 5, 4]
+    "race": "Pyro",
+    "resists": "--df-fn-",
+    "skills": ["Agi", "Maragi", "Pyro Blade", "Money-Getter", "Brainwash"],
+    "stats": [171, 6, 11, 5, 4, 7]
   },
   "Erthys": {
-    "conv": "Brainwash",
+    "inherit": "-o-o",
     "lvl": 14,
-    "order": "Element",
     "person": "Gentleman",
-    "resists": [100, 100, 100, 100, 50, 2100, 0, 100],
-    "skills": {"Elec Resist": 4488, "Volt Sword": 15, "Ziorati": 0},
-    "stats": [275, 11, 5, 12, 5]
+    "race": "Element",
+    "resists": "----sfn-",
+    "skills": ["Ziorati", "Volt Sword", "Elec Resist", "Brainwash"],
+    "stats": [275, 11, 5, 12, 5, 5]
   },
   "Feng Huang": {
-    "conv": "Debate",
+    "inherit": "oo-o",
     "lvl": 30,
-    "order": "Wind",
     "person": "Old Man",
-    "resists": [100, 1150, 50, 50, 50, 50, 2100, 100],
-    "skills": {"Gale Stab": 31, "Orienteering": 4488, "Recarm": 32, "Zanrati": 0},
-    "stats": [407, 12, 15, 9, 13]
+    "race": "Wind",
+    "resists": "-wssssf-",
+    "skills": ["Zanrati", "Gale Stab", "Recarm", "Orienteering", "Debate"],
+    "stats": [407, 12, 15, 9, 13, 5]
   },
   "Fenrir": {
-    "conv": "Charisma",
+    "inherit": "-o-o",
     "lvl": 60,
-    "order": "Fury",
     "person": "Beast",
-    "resists": [0, 100, 10, 10, 10, 2150, 0, 100],
-    "skills": {"Agidyne": 61, "Frenzy": 0, "Mag Bullet": 62, "Power Chakra": 4488},
-    "stats": [651, 28, 27, 14, 10]
+    "race": "Fury",
+    "resists": "n-sssfn-",
+    "skills": ["Frenzy", "Agidyne", "Mag Bullet", "Power Chakra", "Charisma"],
+    "stats": [651, 28, 27, 14, 10, 2]
   },
   "Flaemis": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 21,
-    "order": "Element",
     "person": "Gentleman",
-    "resists": [100, 100, 0, 2100, 100, 100, 0, 100],
-    "skills": {"Agirati": 0, "Fire Resist": 4488, "Pyro Blade": 22},
-    "stats": [315, 13, 13, 8, 6]
+    "race": "Element",
+    "resists": "--nf--n-",
+    "skills": ["Agirati", "Pyro Blade", "Fire Resist", "Extortion"],
+    "stats": [315, 13, 13, 8, 6, 5]
   },
   "Futsunushi": {
-    "conv": "Brainwash",
+    "inherit": "-o--",
     "lvl": 65,
-    "order": "Skill",
     "person": "Old Man",
-    "resists": [50, 1150, 100, 0, 100, 100, 2100, 50],
-    "skills": {"Cross Slash": 0, "Lucky Strike": 4488, "Mighty Blow": 67, "Rakukajaon": 66},
-    "stats": [722, 29, 19, 20, 16]
+    "race": "Skill",
+    "resists": "sw-n--fs",
+    "skills": ["Cross Slash", "Rakukajaon", "Mighty Blow", "Lucky Strike", "Brainwash"],
+    "stats": [722, 29, 19, 20, 16, 2]
   },
   "Gashadokuro": {
-    "conv": "Patter",
+    "inherit": "-o--",
     "lvl": 44,
-    "order": "Pagan",
     "person": "Old Woman",
-    "resists": [100, 1200, 2150, -1100, 100, 2100, 0, 100],
-    "skills": {"Halve Mortal": 4488, "Mamudo": 0, "Null Death": 46, "Petra": 45},
-    "stats": [621, 16, 13, 22, 12]
+    "race": "Pagan",
+    "resists": "-wfd-fn-",
+    "skilli": "Provoke",
+    "skills": ["Mamudo", "Petra", "Null Death", "Halve Mortal", "Patter"],
+    "stats": [621, 16, 13, 22, 12, 3]
   },
   "Gdon": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 37,
-    "order": "Pyro",
     "person": "Beast",
-    "resists": [100, 0, 0, 2100, 100, 100, 100, 50],
-    "skills": {"Fire Breath": 38, "Power Chakra": 4488, "Rush": 0, "Scorch Slash": 39},
-    "stats": [498, 24, 9, 13, 10]
+    "race": "Pyro",
+    "resists": "-nnf---s",
+    "skills": ["Rush", "Fire Breath", "Scorch Slash", "Power Chakra", "Extortion"],
+    "stats": [498, 24, 9, 13, 10, 5]
   },
   "Ghoul": {
-    "conv": "Panic Urge",
+    "inherit": "oo--",
     "lvl": 27,
-    "order": "Pagan",
     "person": "Undead",
-    "resists": [100, 100, 2100, 100, 100, 100, -1100, 100],
-    "skills": {"Luck Chakra": 4488, "Mamudo": 29, "Pagan Sword": 0, "Venomstrike": 28},
-    "stats": [357, 15, 9, 6, 16]
+    "race": "Pagan",
+    "resists": "--f---d-",
+    "skills": ["Pagan Sword", "Venomstrike", "Mamudo", "Luck Chakra", "Panic Urge"],
+    "stats": [357, 15, 9, 6, 16, 4]
   },
   "Gozuki": {
-    "conv": "Patter",
+    "inherit": "oo-o",
     "lvl": 22,
-    "order": "Fury",
     "person": "Punk",
-    "resists": [50, 100, 100, 100, 100, 1150, 2100, 50],
-    "skills": {"Lucky Strike": 4488, "Metal Bullet": 24, "Rush": 0, "War Cry": 23},
-    "stats": [381, 15, 5, 15, 6]
+    "race": "Fury",
+    "resists": "s----wfs",
+    "skills": ["Rush", "War Cry", "Metal Bullet", "Lucky Strike", "Patter"],
+    "stats": [381, 15, 5, 15, 6, 5]
   },
   "High Pixie": {
-    "conv": "Scolding",
+    "inherit": "oo-o",
     "lvl": 48,
-    "order": "Skill",
     "person": "Young Girl",
-    "resists": [100, 1150, 2050, 0, 0, 50, 100, 100],
-    "skills": {"Dekaja": 50, "Diarama": 0, "Heal Boost": 4488, "Samarecarm": 49},
-    "stats": [576, 13, 26, 13, 15]
+    "race": "Skill",
+    "resists": "-wfnns--",
+    "skills": ["Diarama", "Samarecarm", "Dekaja", "Heal Boost", "Scolding"],
+    "stats": [576, 13, 26, 13, 15, 4]
   },
   "Hiruko": {
-    "conv": "Charisma",
+    "inherit": "-o-o",
     "lvl": 33,
-    "order": "Evil",
     "person": "Jack",
-    "resists": [100, 1150, 100, 2100, 100, 100, 0, 0],
-    "skills": {"Diarahan": 0, "Orienteering": 4488, "Patra": 34, "Samarecarm": 35},
-    "stats": [473, 7, 22, 14, 9]
+    "race": "Evil",
+    "resists": "-w-f--nn",
+    "skills": ["Diarahan", "Patra", "Samarecarm", "Orienteering", "Charisma"],
+    "stats": [473, 7, 22, 14, 9, 4]
   },
   "Hitokotonusi": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 50,
-    "order": "Wind",
     "person": "Undead",
-    "resists": [50, -1100, 2100, 100, 100, -1100, 0, 100],
-    "skills": {"Cyclone Stab": 52, "Force Boost": 4488, "Mamudo": 51, "Wind Cutter": 0},
-    "stats": [620, 18, 22, 17, 12]
+    "race": "Wind",
+    "resists": "sdf--dn-",
+    "skills": ["Wind Cutter", "Mamudo", "Cyclone Stab", "Force Boost", "Debate"],
+    "stats": [620, 18, 22, 17, 12, 3]
   },
   "Ichimokuren": {
-    "conv": "Fast Talk",
+    "inherit": "oo-o",
     "lvl": 42,
-    "order": "Wind",
     "person": "Undead",
-    "resists": [100, 1150, 0, 100, 100, 0, 100, 100],
-    "skills": {"Frenzy": 43, "Life Gain": 4488, "Wind Cutter": 0, "Wind Killer": 44},
-    "stats": [567, 18, 18, 17, 8]
+    "race": "Wind",
+    "resists": "-wn--n--",
+    "skills": ["Wind Cutter", "Frenzy", "Wind Killer", "Life Gain", "Fast Talk"],
+    "stats": [567, 18, 18, 17, 8, 3]
   },
   "Ikusa": {
-    "conv": "Patter",
+    "inherit": "-oo-",
     "lvl": 35,
-    "order": "Fury",
     "person": "Foreigner",
-    "resists": [100, 100, 100, 100, 2100, 100, -1100, 100],
-    "skills": {"Life Gain": 4488, "Makakaja": 37, "War Cry": 36, "Winged Fury": 0},
-    "stats": [458, 22, 10, 10, 12]
+    "race": "Fury",
+    "resists": "----f-d-",
+    "skills": ["Winged Fury", "War Cry", "Makakaja", "Life Gain", "Patter"],
+    "stats": [458, 22, 10, 10, 12, 4]
   },
   "Incubus": {
-    "conv": "Fast Talk",
+    "inherit": "oo-o",
     "lvl": 48,
-    "order": "Pagan",
     "person": "Little Kid",
-    "resists": [100, 1150, 100, 100, 2100, 100, -1100, 1150],
-    "skills": {"Agnostic Crush": 50, "Marin Karin": 0, "Mind Boost": 4488, "Mudo": 49},
-    "stats": [568, 17, 24, 12, 14]
+    "race": "Pagan",
+    "resists": "-w--f-dw",
+    "skills": ["Marin Karin", "Mudo", "Agnostic Crush", "Mind Boost", "Fast Talk"],
+    "stats": [568, 17, 24, 12, 14, 4]
   },
   "Inugami": {
-    "conv": "Patter",
+    "inherit": "oo-o",
     "lvl": 5,
-    "order": "Pagan",
     "person": "Beast",
-    "resists": [100, 100, 2100, 100, 100, 100, 0, 50],
-    "skills": {"Combo": 0, "Dia": 7, "Halve Mind": 4488, "Pulinpa": 6},
-    "stats": [132, 9, 4, 7, 4]
+    "race": "Pagan",
+    "resists": "--f---ns",
+    "skills": ["Combo", "Pulinpa", "Dia", "Halve Mind", "Patter"],
+    "stats": [132, 9, 4, 7, 4, 6]
   },
   "Ippon-datara": {
-    "conv": "Brainwash",
+    "inherit": "-o-o",
     "lvl": 24,
-    "order": "Skill",
     "person": "Undead",
-    "resists": [100, 100, 100, 2100, 2100, 100, -1100, 50],
-    "skills": {"Combo": 0, "Life Bonus": 4488, "Maragi": 25, "Tarukaja": 26},
-    "stats": [385, 13, 10, 13, 7]
+    "race": "Skill",
+    "resists": "---ff-ds",
+    "skills": ["Combo", "Maragi", "Tarukaja", "Life Bonus", "Brainwash"],
+    "stats": [385, 13, 10, 13, 7, 6]
   },
   "Jack Frost": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 13,
-    "order": "Frost",
     "person": "Jack",
-    "resists": [100, 100, 2150, -1100, 100, 100, 100, 100],
-    "skills": {"Bufu": 0, "Finders Keepers": 4488, "Ice Bullet": 15, "Mabufu": 14},
-    "stats": [232, 6, 12, 8, 6]
+    "race": "Frost",
+    "resists": "--fd----",
+    "skills": ["Bufu", "Mabufu", "Ice Bullet", "Finders Keepers", "Sweet Talk"],
+    "stats": [232, 6, 12, 8, 6, 6]
   },
   "Jorougumo": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 34,
-    "order": "Pagan",
     "person": "Lady",
-    "resists": [100, 100, 50, 50, 100, 2100, 0, 0],
-    "skills": {"Moonlight Rage": 4488, "Pagan Sword": 36, "Pulinpa": 0, "Rush": 35},
-    "stats": [497, 16, 8, 16, 13]
+    "race": "Pagan",
+    "resists": "--ss-fnn",
+    "skills": ["Pulinpa", "Rush", "Pagan Sword", "Moonlight Rage", "Sexy Voice"],
+    "stats": [497, 16, 8, 16, 13, 5]
   },
   "Jubokko": {
-    "conv": "Patter",
+    "inherit": "-o--",
     "lvl": 23,
-    "order": "Frost",
     "person": "Old Man",
-    "resists": [100, 100, 2100, 50, 2100, 100, 0, 50],
-    "skills": {"Diarama": 0, "Glacial Blast": 25, "Mabufu": 24, "Stamina Chakra": 4488},
-    "stats": [335, 9, 16, 8, 9]
-  },
-  "Kageboushi A": {
-    "conv": "N/A",
-    "lvl": 75,
-    "order": "Fiend",
-    "person": "N/A",
-    "resists": [100, 0, 0, 2100, 100, 100, 0, 0],
-    "skills": {"Headcrush": 0, "Pyro Blade": 0, "Slice and Dice": 0},
-    "stats": [7036, 25, 25, 24, 20]
-  },
-  "Kageboushi B": {
-    "conv": "N/A",
-    "lvl": 75,
-    "order": "Fiend",
-    "person": "N/A",
-    "resists": [100, 0, 100, 100, 0, 2100, 0, 0],
-    "skills": {"Dragon Fang": 0, "Storm Stab": 0, "Volt Sword": 0},
-    "stats": [7036, 22, 24, 28, 20]
-  },
-  "Kageboushi C": {
-    "conv": "N/A",
-    "lvl": 75,
-    "order": "Fiend",
-    "person": "N/A",
-    "resists": [100, 0, 2100, 100, 100, 0, 0, 0],
-    "skills": {"Diamond Crush": 0, "Megidolaon": 0, "Wind Blade": 0},
-    "stats": [7036, 30, 20, 24, 20]
+    "race": "Frost",
+    "resists": "--fsf-ns",
+    "skills": ["Diarama", "Mabufu", "Glacial Blast", "Stamina Chakra", "Patter"],
+    "stats": [335, 9, 16, 8, 9, 5]
   },
   "Kagutsuchi": {
-    "conv": "Brainwash",
+    "inherit": "-o-o",
     "lvl": 59,
-    "order": "Pyro",
     "person": "Knight",
-    "resists": [100, 100, -1100, 2100, 0, 100, 100, 100],
-    "skills": {"Agidyne": 0, "Flare Slash": 61, "Mamudo": 60, "Retribution": 4488},
-    "stats": [655, 26, 24, 15, 13]
+    "race": "Pyro",
+    "resists": "--dfn---",
+    "skills": ["Agidyne", "Mamudo", "Flare Slash", "Retribution", "Brainwash"],
+    "stats": [655, 26, 24, 15, 13, 2]
   },
   "Kohryu": {
-    "conv": "Debate",
+    "inherit": "oo-o",
     "lvl": 65,
-    "order": "Volt",
     "person": "Knight",
-    "resists": [100, 100, 50, 50, -1100, 2100, 0, 0],
-    "skills": {"Dekaja": 66, "Luck Chakra": 4488, "Megido": 67, "Thunderbolt": 0},
-    "stats": [674, 26, 29, 14, 15]
+    "race": "Volt",
+    "resists": "--ssdfnn",
+    "skills": ["Thunderbolt", "Dekaja", "Megido", "Luck Chakra", "Debate"],
+    "stats": [674, 26, 29, 14, 15, 2]
   },
   "Koropokkur": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 3,
-    "order": "Volt",
     "person": "Old Man",
-    "resists": [1200, 50, 100, 100, 0, 2100, 100, 100],
-    "skills": {"Combo": 4, "Magic Chakra": 4488, "Zio": 0},
-    "stats": [84, 4, 5, 4, 9]
+    "race": "Volt",
+    "resists": "ws--nf--",
+    "skills": ["Zio", "Combo", "Magic Chakra", "Debate"],
+    "stats": [84, 4, 5, 4, 9, 8]
   },
   "Kudan": {
-    "conv": "Debate",
+    "inherit": "oo--",
     "lvl": 59,
-    "order": "Skill",
     "person": "Gentleman",
-    "resists": [100, -1100, 50, 50, 50, 50, 2150, 0],
-    "skills": {"Mamudoon": 0, "Null Mind": 60, "Null Mortal": 4488, "State of Bliss": 61},
-    "stats": [687, 6, 22, 19, 31]
+    "race": "Skill",
+    "resists": "-dssssfn",
+    "skills": ["Mamudoon", "Null Mind", "State of Bliss", "Null Mortal", "Debate"],
+    "stats": [687, 6, 22, 19, 31, 3]
   },
   "Kurama": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 46,
-    "order": "Wind",
     "person": "Knight",
-    "resists": [100, 1150, 2100, 100, 100, -1100, 100, 100],
-    "skills": {"Growth": 4488, "Mazandyne": 48, "Patra": 47, "Zandyne": 0},
-    "stats": [587, 17, 22, 16, 10]
+    "race": "Wind",
+    "resists": "-wf--d--",
+    "skills": ["Zandyne", "Patra", "Mazandyne", "Growth", "Extortion"],
+    "stats": [587, 17, 22, 16, 10, 3]
   },
   "Kusi Mitama": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 30,
-    "order": "Spirit",
     "person": "Foreigner",
-    "resists": [100, 1150, 100, 100, 100, 100, 0, 0],
-    "skills": {"Drain": 4488, "Makakaja": 31, "Media": 0},
-    "stats": [415, 10, 19, 10, 10]
+    "race": "Spirit",
+    "resists": "-w----nn",
+    "skills": ["Media", "Makakaja", "Drain", "Panic Urge"],
+    "stats": [415, 10, 19, 10, 10, 4]
   },
   "Lamia": {
-    "conv": "Sexy Voice",
+    "inherit": "-o-o",
     "lvl": 19,
-    "order": "Fury",
     "person": "Lady",
-    "resists": [100, 100, 100, 2100, 100, 2100, 50, 50],
-    "skills": {"Makakaja": 21, "Marin Karin": 0, "Mind Boost": 4488, "Tarukaja": 20},
-    "stats": [327, 13, 8, 12, 5]
+    "race": "Fury",
+    "resists": "s--f-fs-",
+    "skills": ["Marin Karin", "Tarukaja", "Makakaja", "Mind Boost", "Sexy Voice"],
+    "stats": [327, 13, 8, 12, 5, 5]
   },
   "Leanan Sidhe": {
-    "conv": "Scolding",
+    "inherit": "-o--",
     "lvl": 20,
-    "order": "Skill",
     "person": "Lady",
-    "resists": [100, 1150, 2150, 0, 100, 100, 100, 50],
-    "skills": {"Growth": 4488, "Media": 0, "Null Mind": 22, "Patra": 21},
-    "stats": [297, 9, 15, 7, 8]
+    "race": "Skill",
+    "resists": "-wfn---s",
+    "skills": ["Media", "Patra", "Null Mind", "Growth", "Scolding"],
+    "stats": [297, 9, 15, 7, 8, 5]
   },
   "Legion": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 26,
-    "order": "Skill",
     "person": "Undead",
-    "resists": [100, 100, 100, 100, 100, 100, -1100, 100],
-    "skills": {"Death Bullet": 28, "Makajam": 27, "Null Mortal": 4488, "Pulinpa": 0},
-    "stats": [411, 16, 6, 14, 9]
+    "race": "Skill",
+    "resists": "------d-",
+    "skills": ["Pulinpa", "Makajam", "Death Bullet", "Null Mortal", "Panic Urge"],
+    "stats": [411, 16, 6, 14, 9, 3]
   },
   "Lilim": {
-    "conv": "Sexy Voice",
+    "inherit": "-o--",
     "lvl": 19,
-    "order": "Pagan",
     "person": "Lady",
-    "resists": [100, 100, 50, 3150, 100, 50, -1100, 0],
-    "skills": {"Dia Aura": 21, "Dormina": 0, "Drain": 4488, "Pagan Sword": 20},
-    "stats": [311, 6, 14, 10, 8]
+    "race": "Pagan",
+    "resists": "--sf-sdn",
+    "skills": ["Dormina", "Pagan Sword", "Dia Aura", "Drain", "Sexy Voice"],
+    "stats": [311, 6, 14, 10, 8, 4]
   },
   "Lilith": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 66,
-    "order": "Pagan",
     "person": "Lady",
-    "resists": [0, 1300, 100, 2100, 50, 100, 0, 50],
-    "skills": {"Dormina": 0, "Eternal Rest": 68, "Mamudoon": 67, "Mind Boost": 4488},
-    "stats": [694, 19, 32, 16, 18]
+    "race": "Pagan",
+    "resists": "nw-fs-ns",
+    "skilli": "Intimidate",
+    "skills": ["Dormina", "Mamudoon", "Eternal Rest", "Mind Boost", "Sexy Voice"],
+    "stats": [694, 19, 32, 16, 18, 2]
   },
   "Long": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 47,
-    "order": "Frost",
     "person": "Knight",
-    "resists": [50, 100, 100, -1100, 2100, 100, 0, 0],
-    "skills": {"Glacial Blast": 0, "Growth": 4488, "Mediarama": 48, "Null Ice": 49},
-    "stats": [649, 18, 15, 23, 10]
+    "race": "Frost",
+    "resists": "s--df-nn",
+    "skills": ["Glacial Blast", "Mediarama", "Null Ice", "Growth", "Brainwash"],
+    "stats": [649, 18, 15, 23, 10, 3]
   },
   "Lucifer": {
-    "conv": "Charisma",
+    "inherit": "oo-o",
     "lvl": 80,
-    "order": "Pyro",
     "person": "Knight",
-    "resists": [50, 0, -1100, 100, 10, 10, 0, 0],
-    "skills": {"Demon's Blessing": 4488, "Fire Drain": 81, "Hellfire": 0, "Megidolaon": 82},
-    "stats": [803, 25, 30, 24, 20]
-  },
-  "Luck Locust": {
-    "conv": "N/A",
-    "lvl": 15,
-    "person": "N/A",
-    "resists": [100, 100, 100, 100, 100, 100, 0, 100],
-    "skills": {},
-    "stats": [5, 7, 10, 10, 7]
+    "race": "Pyro",
+    "resists": "snd-ssnn",
+    "skills": ["Hellfire", "Fire Drain", "Megidolaon", "Demon's Blessing", "Charisma"],
+    "stats": [803, 25, 30, 24, 20, 1]
   },
   "Mada": {
-    "conv": "Panic Urge",
+    "inherit": "oooo",
     "lvl": 64,
-    "order": "Pyro",
     "person": "Foreigner",
-    "resists": [0, 100, 0, 2100, 100, 100, 100, 1150],
-    "skills": {"Agni's Blessing": 4488, "Hellfire": 66, "Maragidyne": 0, "Winged Fury": 65},
-    "stats": [742, 31, 16, 23, 13]
+    "race": "Pyro",
+    "resists": "n-nf---w",
+    "skills": ["Maragidyne", "Winged Fury", "Hellfire", "Agni's Blessing", "Panic Urge"],
+    "stats": [742, 31, 16, 23, 13, 3]
   },
   "Mahakala": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 67,
-    "order": "Fury",
     "person": "Gentleman",
-    "resists": [50, 100, 0, 2100, 100, 0, 2100, 1200],
-    "skills": {"Life Surge": 4488, "Mad Rush": 0, "Tarukajaon": 68, "Tetrakarn": 69},
-    "stats": [746, 32, 19, 22, 13]
+    "race": "Fury",
+    "resists": "s-nf-nfw",
+    "skills": ["Mad Rush", "Tarukajaon", "Tetrakarn", "Life Surge", "Extortion"],
+    "stats": [746, 32, 19, 22, 13, 1]
   },
   "Makami": {
-    "conv": "Debate",
+    "inherit": "oo-o",
     "lvl": 14,
-    "order": "Volt",
     "person": "Punk",
-    "resists": [100, 1150, 0, 100, 0, 2150, 100, 100],
-    "skills": {"Elec Bullet": 15, "Mazio": 0, "Orienteering": 4488, "Recarm": 16},
-    "stats": [259, 6, 12, 10, 5]
+    "race": "Volt",
+    "resists": "-wn-nf--",
+    "skills": ["Mazio", "Elec Bullet", "Recarm", "Orienteering", "Debate"],
+    "stats": [259, 6, 12, 10, 5, 6]
   },
   "Mara": {
-    "conv": "Sweet Talk",
+    "inherit": "oo-o",
     "lvl": 62,
-    "order": "Pagan",
     "person": "Old Man",
-    "resists": [50, 0, 2100, 100, 100, 100, -1100, 0],
-    "skills": {"Cursed Emission": 0, "Drain": 4488, "Mad Rush": 63, "State of Bliss": 64},
-    "stats": [749, 30, 16, 25, 10]
+    "race": "Pagan",
+    "resists": "snf---dn",
+    "skills": ["Cursed Emission", "Mad Rush", "State of Bliss", "Drain", "Sweet Talk"],
+    "stats": [749, 30, 16, 25, 10, 2]
   },
   "Masakado": {
-    "conv": "Brainwash",
+    "inherit": "-o-o",
     "lvl": 78,
-    "order": "Fury",
     "person": "Knight",
-    "resists": [0, 0, 100, 10, 10, 10, -1100, 100],
-    "skills": {"Capital's Fury": 4488, "Hellfire": 0, "Skeptic Crush": 80, "Tarukajaon": 79},
-    "stats": [838, 36, 18, 29, 14]
+    "race": "Fury",
+    "resists": "nn-sssd-",
+    "skills": ["Hellfire", "Tarukajaon", "Skeptic Crush", "Capital's Fury", "Brainwash"],
+    "stats": [838, 36, 18, 29, 14, 1]
   },
   "Metatron": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 73,
-    "order": "Wind",
     "person": "Gentleman",
-    "resists": [100, 1150, 100, 10, 50, -1100, 0, 0],
-    "skills": {"Cyclone Stab": 74, "Force Boost": 4488, "Megidolaon": 75, "Tempest": 0},
-    "stats": [784, 23, 29, 24, 16]
+    "race": "Wind",
+    "resists": "-w-ssdnn",
+    "skills": ["Tempest", "Cyclone Stab R", "Megidolaon", "Force Boost", "Debate"],
+    "stats": [784, 23, 29, 24, 16, 1]
   },
   "Mezuki": {
-    "conv": "Patter",
+    "inherit": "-o-o",
     "lvl": 25,
-    "order": "Fury",
     "person": "Gentleman",
-    "resists": [100, 100, 50, 50, 50, 50, 2100, 1150],
-    "skills": {"Media": 26, "Recarm": 27, "Shot Bullet": 0, "Unreachable Soul": 4488},
-    "stats": [402, 15, 8, 11, 7]
+    "race": "Fury",
+    "resists": "--ssssfw",
+    "skills": ["Shot Bullet", "Media", "Recarm", "Unreachable Soul", "Patter"],
+    "stats": [402, 15, 8, 11, 7, 5]
   },
   "Mikaboshi": {
-    "conv": "Charisma",
+    "inherit": "oo-o",
     "lvl": 51,
-    "order": "Skill",
     "person": "Gentleman",
-    "resists": [100, 0, -1100, 2100, 100, 100, 0, 0],
-    "skills": {"Mediarama": 53, "Patra": 52, "Tempest": 0, "Unreachable Soul": 4488},
-    "stats": [603, 23, 21, 14, 12]
+    "race": "Skill",
+    "resists": "-ndf--nn",
+    "skills": ["Tempest", "Patra", "Mediarama", "Unreachable Soul", "Charisma"],
+    "stats": [603, 23, 21, 14, 12, 2]
   },
   "Mishaguji": {
-    "conv": "Sweet Talk",
+    "inherit": "oo-o",
     "lvl": 45,
-    "order": "Volt",
     "person": "Old Man",
-    "resists": [100, 100, 100, 100, 0, 2100, 0, 100],
-    "skills": {"Cursed Bolt": 47, "Cursed Emission": 0, "EXP Boost": 4488, "Samarecarm": 46},
-    "stats": [580, 18, 19, 16, 11]
+    "race": "Volt",
+    "resists": "----nfn-",
+    "skills": ["Cursed Emission", "Samarecarm", "Cursed Bolt", "EXP Boost", "Sweet Talk"],
+    "stats": [580, 18, 19, 16, 11, 3]
   },
   "Moh Shuvuu": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 13,
-    "order": "Wind",
     "person": "Young Girl",
-    "resists": [100, 1150, 2100, 100, -1100, 0, 2100, 100],
-    "skills": {"Dia": 14, "Force Boost": 4488, "Force Bullet": 15, "Zan": 0},
-    "stats": [208, 6, 13, 5, 8]
+    "race": "Wind",
+    "resists": "-wf-dnf-",
+    "skills": ["Zan", "Dia", "Force Bullet", "Force Boost", "Sexy Voice"],
+    "stats": [208, 6, 13, 5, 8, 5]
   },
   "Mokoi": {
-    "conv": "Debate",
+    "inherit": "-ooo",
     "lvl": 15,
-    "order": "Pagan",
     "person": "Show-Off",
-    "resists": [100, 100, 2150, 0, 100, 2100, 50, 100],
-    "skills": {"Fast Escape": 4488, "Mudo": 16, "Null Death": 17, "Winged Fury": 0},
-    "stats": [230, 12, 9, 5, 8]
+    "race": "Pagan",
+    "resists": "--fn-fs-",
+    "skills": ["Winged Fury", "Mudo", "Null Death", "Fast Escape", "Debate"],
+    "stats": [230, 12, 9, 5, 8, 6]
   },
   "Mot": {
-    "conv": "Patter",
+    "inherit": "oo-o",
     "lvl": 70,
-    "order": "Pagan",
     "person": "Little Kid",
-    "resists": [100, 100, 100, 50, 2100, 50, 0, 0],
-    "skills": {"Death Drain": 72, "Mad Rush": 71, "Mamudoon": 0, "Phys Resist": 4488},
-    "stats": [773, 21, 29, 24, 15]
+    "race": "Pagan",
+    "resists": "---sfsnn",
+    "skills": ["Mamudoon", "Mad Rush", "Death Drain", "Phys Resist", "Patter"],
+    "stats": [773, 21, 29, 24, 15, 2]
   },
   "Muspell": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 50,
-    "order": "Pyro",
     "person": "Old Man",
-    "resists": [100, 100, -1100, 2100, 100, 100, 100, 100],
-    "skills": {"Agidyne": 0, "Fire Boost": 4488, "Fire Breath": 51, "Null Fire": 52},
-    "stats": [604, 28, 18, 15, 8]
+    "race": "Pyro",
+    "resists": "--df----",
+    "skills": ["Agidyne", "Fire Breath", "Null Fire", "Fire Boost", "Debate"],
+    "stats": [604, 28, 18, 15, 8, 3]
   },
   "Nagasunehiko": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 43,
-    "order": "Skill",
     "person": "Punk",
-    "resists": [100, 1150, 2150, 50, 50, 50, 0, 100],
-    "skills": {"Dia Aura": 45, "Frenzy": 0, "Halve Mind": 4488, "Ice Bullet": 44},
-    "stats": [558, 22, 16, 15, 9]
+    "race": "Skill",
+    "resists": "-wfsssn-",
+    "skills": ["Frenzy", "Ice Bullet", "Dia Aura", "Halve Mind", "Extortion"],
+    "stats": [558, 22, 16, 15, 9, 3]
   },
   "Nandi": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 26,
-    "order": "Volt",
     "person": "Foreigner",
-    "resists": [100, 0, 1150, 2100, 0, -1100, 100, 100],
-    "skills": {"Life Gain": 4488, "Volt Sword": 28, "Zio": 0, "Ziorati": 27},
-    "stats": [379, 13, 16, 10, 6]
+    "race": "Volt",
+    "resists": "-nwfnd--",
+    "skills": ["Zio", "Ziorati", "Volt Sword", "Life Gain", "Brainwash"],
+    "stats": [379, 13, 16, 10, 6, 4]
   },
   "Nebiros": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 40,
-    "order": "Pagan",
     "person": "Knight",
-    "resists": [0, 1300, 1150, 1150, 1150, 2100, -1100, 100],
-    "skills": {"Diarama": 42, "Mamudoon": 0, "Patra": 41, "Whimsy Aid": 4488},
-    "stats": [488, 23, 20, 9, 7]
+    "race": "Pagan",
+    "resists": "nwwwwfd-",
+    "skills": ["Mamudoon", "Patra", "Diarama", "Whimsy Aid", "Debate"],
+    "stats": [488, 23, 20, 9, 7, 4]
   },
   "Nekomata": {
-    "conv": "Sexy Voice",
+    "inherit": "-o-o",
     "lvl": 28,
-    "order": "Skill",
     "person": "Seductive",
-    "resists": [100, 100, 50, 50, 2150, 100, 100, 50],
-    "skills": {"Desperate Power": 4488, "Force Bullet": 30, "Marin Karin": 0, "Rakukaja": 29},
-    "stats": [382, 15, 12, 8, 12]
+    "race": "Skill",
+    "resists": "--ssf--s",
+    "skills": ["Marin Karin", "Rakukaja", "Force Bullet", "Desperate Power", "Sexy Voice"],
+    "stats": [382, 15, 12, 8, 12, 6]
   },
   "Nesting Doll": {
-    "conv": "Fast Talk",
+    "inherit": "-o--",
     "lvl": 31,
-    "order": "Evil",
     "person": "Young Girl",
-    "resists": [100, 250, 50, 50, 2150, 50, 0, 0],
-    "skills": {"Agnostic Crush": 33, "Dia Aura": 32, "Sink or Swim": 4488, "Spinning Death": 0},
-    "stats": [448, 6, 22, 13, 9]
+    "race": "Evil",
+    "resists": "-wsswsnn",
+    "skills": ["Spinning Death", "Dia Aura", "Agnostic Crush", "Sink or Swim", "Fast Talk"],
+    "stats": [448, 6, 22, 13, 9, 5]
   },
   "Nesting Skull": {
-    "conv": "Fast Talk",
+    "inherit": "-o-o",
     "lvl": 44,
-    "order": "Evil",
     "person": "Little Kid",
-    "resists": [100, 250, 1150, 50, 0, 50, 0, 0],
-    "skills": {"Lay Waste": 46, "Mamudoon": 0, "Retribution": 4488, "Streaming Death": 45},
-    "stats": [549, 8, 25, 13, 17]
+    "race": "Evil",
+    "resists": "-wwsnsnn",
+    "skills": ["Mamudoon", "Streaming Death", "Lay Waste", "Retribution", "Fast Talk"],
+    "stats": [549, 8, 25, 13, 17, 3]
   },
   "Nezha": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 14,
-    "order": "Fury",
     "person": "Foreigner",
-    "resists": [50, 100, 100, 1150, 1150, 100, 2100, 100],
-    "skills": {"Frenzy": 0, "Metal Bullet": 16, "Stamina Chakra": 4488, "War Cry": 15},
-    "stats": [259, 14, 4, 10, 5]
+    "race": "Fury",
+    "resists": "s--ww-f-",
+    "skills": ["Frenzy", "War Cry", "Metal Bullet", "Stamina Chakra", "Panic Urge"],
+    "stats": [259, 14, 4, 10, 5, 4]
   },
   "Nigi Mitama": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 25,
-    "order": "Spirit",
     "person": "Foreigner",
-    "resists": [100, 1150, 100, 100, 100, 100, 0, 0],
-    "skills": {"Marin Karin": 0, "Mind Boost": 4488, "Rakukaja": 26},
-    "stats": [426, 9, 9, 17, 9]
+    "race": "Spirit",
+    "resists": "-w----nn",
+    "skills": ["Marin Karin", "Rakukaja", "Mind Boost", "Panic Urge"],
+    "stats": [426, 9, 9, 17, 9, 4]
   },
   "Nue": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 36,
-    "order": "Volt",
     "person": "Beast",
-    "resists": [100, 100, 2100, 100, 0, 50, 100, 1150],
-    "skills": {"Combo": 37, "Elec Resist": 4488, "Mazio": 0, "Shock Wave": 38},
-    "stats": [474, 22, 14, 11, 8]
+    "race": "Volt",
+    "resists": "--f-ns-w",
+    "skills": ["Mazio", "Combo", "Shock Wave", "Elec Resist", "Panic Urge"],
+    "stats": [474, 22, 14, 11, 8, 4]
   },
   "Obariyon": {
-    "conv": "Brainwash",
+    "inherit": "-o-o",
     "lvl": 6,
-    "order": "Fury",
     "person": "Show-Off",
-    "resists": [50, 100, 100, 100, 100, 2100, 2100, 100],
-    "skills": {"Frenzy": 7, "Power Chakra": 4488, "War Cry": 0},
-    "stats": [152, 10, 3, 8, 4]
+    "race": "Fury",
+    "resists": "s----ff-",
+    "skills": ["War Cry", "Frenzy", "Power Chakra", "Brainwash"],
+    "stats": [152, 10, 3, 8, 4, 8]
   },
   "Oberon": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 35,
-    "order": "Skill",
     "person": "Gentleman",
-    "resists": [50, 0, 50, 50, 2050, 100, 100, 50],
-    "skills": {"Combo": 0, "Dekaja": 37, "Eternal Rest": 36, "Magic Chakra": 4488},
-    "stats": [474, 16, 14, 12, 12]
+    "race": "Skill",
+    "resists": "snssf--s",
+    "skills": ["Combo", "Eternal Rest", "Dekaja", "Magic Chakra", "Sweet Talk"],
+    "stats": [474, 16, 14, 12, 12, 3]
   },
   "Oboroguruma": {
-    "conv": "Fast Talk",
+    "inherit": "oo-o",
     "lvl": 31,
-    "order": "Volt",
     "person": "Undead",
-    "resists": [50, 0, 100, 100, -1100, 2100, 100, 100],
-    "skills": {"Electric Crush": 33, "Fast Escape": 4488, "Rush": 32, "Ziorati": 0},
-    "stats": [464, 20, 11, 15, 4]
+    "race": "Volt",
+    "resists": "sn--df--",
+    "skills": ["Ziorati", "Rush", "Electric Crush", "Fast Escape", "Fast Talk"],
+    "stats": [464, 20, 11, 15, 4, 4]
   },
   "Okiku-mushi": {
-    "conv": "Scolding",
+    "inherit": "-o-o",
     "lvl": 24,
-    "order": "Pagan",
     "person": "Seductive",
-    "resists": [100, 100, 2150, 100, -1100, 100, 0, 100],
-    "skills": {"Endure": 4488, "Heretic Crush": 26, "Mudo": 0, "Pulinpa": 25},
-    "stats": [361, 13, 12, 10, 8]
+    "race": "Pagan",
+    "resists": "--f-d-n-",
+    "skilli": "Provoke",
+    "skills": ["Mudo", "Pulinpa", "Heretic Crush", "Endure", "Scolding"],
+    "stats": [361, 13, 12, 10, 8, 4]
   },
   "Oni": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 17,
-    "order": "Fury",
     "person": "Punk",
-    "resists": [50, 100, 100, 100, 2100, 100, 2100, 1150],
-    "skills": {"Combo": 18, "Frenzy": 0, "Headcrush": 19, "Sink or Swim": 4488},
-    "stats": [307, 14, 4, 12, 6]
+    "race": "Fury",
+    "resists": "s---f-fw",
+    "skilli": "Provoke",
+    "skills": ["Frenzy", "Combo", "Headcrush", "Sink or Swim", "Extortion"],
+    "stats": [307, 14, 4, 12, 6, 4]
   },
   "Onmoraki": {
-    "conv": "Patter",
+    "inherit": "-o-o",
     "lvl": 2,
-    "order": "Pyro",
     "person": "Little Kid",
-    "resists": [100, 1150, 0, 2100, 2100, 100, 100, 100],
-    "skills": {"Agi": 0, "Fire Bullet": 3, "Life Bonus": 4488},
-    "stats": [80, 5, 6, 5, 5]
+    "race": "Pyro",
+    "resists": "-wnff---",
+    "skills": ["Agi", "Fire Bullet", "Life Bonus", "Patter"],
+    "stats": [80, 5, 6, 5, 5, 8]
   },
   "Ophanim": {
-    "conv": "Patter",
+    "inherit": "oo-o",
     "lvl": 64,
-    "order": "Wind",
     "person": "Knight",
-    "resists": [1150, 0, 50, 50, 50, 0, 2100, 100],
-    "skills": {"Force Resist": 4488, "Megido Fire": 66, "Wind Cutter": 0, "Wind Killer": 65},
-    "stats": [718, 23, 25, 20, 15]
+    "race": "Wind",
+    "resists": "wnsssnf-",
+    "skills": ["Wind Cutter", "Wind Killer", "Megido Fire", "Force Resist", "Patter"],
+    "stats": [718, 23, 25, 20, 15, 2]
   },
   "Orochi": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 66,
-    "order": "Frost",
     "person": "Beast",
-    "resists": [50, -1100, 100, -1100, 2100, 50, 100, 100],
-    "skills": {"Glacial Blast": 67, "Ice Drain": 68, "Life Surge": 4488, "Mabufudyne": 0},
-    "stats": [774, 17, 28, 26, 14]
+    "race": "Frost",
+    "resists": "sd-dfs--",
+    "skills": ["Mabufudyne", "Glacial Blast", "Ice Drain", "Life Surge", "Extortion"],
+    "stats": [774, 17, 28, 26, 14, 2]
   },
   "Orthrus": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 22,
-    "order": "Pyro",
     "person": "Beast",
-    "resists": [100, 100, 0, 2100, 100, 100, 100, 1150],
-    "skills": {"Combo": 23, "Finders Keepers": 4488, "Fire Bullet": 24, "Maragi": 0},
-    "stats": [349, 17, 7, 11, 6]
+    "race": "Pyro",
+    "resists": "--nf---w",
+    "skills": ["Maragi", "Combo", "Fire Bullet", "Finders Keepers", "Extortion"],
+    "stats": [349, 17, 7, 11, 6, 4]
   },
   "Oshichi": {
-    "conv": "Sexy Voice",
+    "inherit": "-o-o",
     "lvl": 28,
-    "order": "Pyro",
     "person": "Seductive",
-    "resists": [100, 0, 50, 2100, 100, 100, 0, 0],
-    "skills": {"Agi": 0, "Agirati": 29, "Fire Boost": 4488, "Null Fire": 30},
-    "stats": [374, 11, 18, 7, 11]
+    "race": "Pyro",
+    "resists": "-nsf--nn",
+    "skilli": "Intimidate",
+    "skills": ["Agi", "Agirati", "Null Fire", "Fire Boost", "Sexy Voice"],
+    "stats": [374, 11, 18, 7, 11, 4]
   },
   "Oukuninushi": {
-    "conv": "Sweet Talk",
+    "inherit": "oo-o",
     "lvl": 35,
-    "order": "Frost",
     "person": "Knight",
-    "resists": [100, 0, 100, 0, 2100, 100, 0, 50],
-    "skills": {"Bufudyne": 0, "Diarama": 36, "Halve Mind": 4488, "Tarukaja": 37},
-    "stats": [482, 19, 17, 13, 5]
+    "race": "Frost",
+    "resists": "-n-nf-ns",
+    "skilli": "Intimidate",
+    "skills": ["Bufudyne", "Diarama", "Tarukaja", "Halve Mind", "Sweet Talk"],
+    "stats": [482, 19, 17, 13, 5, 3]
   },
   "Oumitsunu": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 49,
-    "order": "Volt",
     "person": "Knight",
-    "resists": [50, 1150, 100, 100, -1100, 2100, 100, 100],
-    "skills": {"Life Gain": 4488, "Null Elec": 51, "Rakukaja": 50, "Ziodyne": 0},
-    "stats": [686, 19, 12, 26, 11]
+    "race": "Volt",
+    "resists": "sw--df--",
+    "skills": ["Ziodyne", "Rakukaja", "Null Elec", "Life Gain", "Panic Urge"],
+    "stats": [686, 19, 12, 26, 11, 4]
   },
   "Ouyamatsumi": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 55,
-    "order": "Frost",
     "person": "Knight",
-    "resists": [50, 1150, 2150, 50, 50, 50, 0, 100],
-    "skills": {"Frenzy": 56, "Ice Drain": 57, "Mabufudyne": 0, "Vengeance Seal": 4488},
-    "stats": [754, 25, 11, 30, 8]
+    "race": "Frost",
+    "resists": "swfsssn-",
+    "skills": ["Mabufudyne", "Frenzy", "Ice Drain", "Vengeance Seal", "Extortion"],
+    "stats": [754, 25, 11, 30, 8, 3]
   },
   "Pabilsag": {
-    "conv": "Fast Talk",
+    "inherit": "oo--",
     "lvl": 20,
-    "order": "Frost",
     "person": "Gentleman",
-    "resists": [100, 100, 50, 0, 2100, 2100, 0, 100],
-    "skills": {"Frost Sword": 22, "Ice Boost": 4488, "Mabufu": 21, "Venomstrike": 0},
-    "stats": [345, 7, 15, 13, 4]
+    "race": "Frost",
+    "resists": "--snffn-",
+    "skills": ["Venomstrike", "Mabufu", "Frost Sword", "Ice Boost", "Fast Talk"],
+    "stats": [345, 7, 15, 13, 4, 5]
   },
   "Pale Rider": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 69,
-    "order": "Fiend",
     "person": "Fiend",
-    "resists": [50, 0, 2100, 100, 100, 0, -1100, 0],
-    "skills": {"Cyclone Stab": 71, "Force Boost": 4488, "Mazandyne": 0, "Tarukajaon": 70},
-    "stats": [740, 21, 27, 21, 19]
+    "race": "Fiend",
+    "resists": "snf--ndn",
+    "skills": ["Mazandyne", "Tarukajaon", "Cyclone Stab R", "Force Boost", "Extortion"],
+    "stats": [740, 21, 27, 21, 19, 1]
   },
   "Parvati": {
-    "conv": "Sexy Voice",
+    "inherit": "-o-o",
     "lvl": 41,
-    "order": "Volt",
     "person": "Lady",
-    "resists": [50, 1150, 0, 100, 0, 2150, 2100, 100],
-    "skills": {"Heal Boost": 4488, "Media": 0, "Null Elec": 43, "Ziodyne": 42},
-    "stats": [528, 9, 24, 13, 14]
+    "race": "Volt",
+    "resists": "swn-nff-",
+    "skills": ["Media", "Ziodyne", "Null Elec", "Heal Boost", "Sexy Voice"],
+    "stats": [528, 9, 24, 13, 14, 3]
   },
   "Pixie": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 2,
-    "order": "Skill",
     "person": "Young Girl",
-    "resists": [100, 1150, 2050, 2050, 100, 0, 100, 100],
-    "skills": {"Dia": 0, "Finders Keepers": 4488, "Patra": 3},
-    "stats": [64, 4, 8, 3, 6]
+    "race": "Skill",
+    "resists": "-wff-n--",
+    "skills": ["Dia", "Patra", "Finders Keepers", "Sexy Voice"],
+    "stats": [64, 4, 8, 3, 6, 8]
   },
   "Poltergeist": {
-    "conv": "Patter",
+    "inherit": "oo-o",
     "lvl": 4,
-    "order": "Wind",
     "person": "Little Kid",
-    "resists": [100, 0, 2100, 100, 2100, 0, 50, 0],
-    "skills": {"Fast Escape": 4488, "Wind Sword": 5, "Zan": 0},
-    "stats": [128, 5, 9, 4, 5]
+    "race": "Wind",
+    "resists": "-nf-fnsn",
+    "skills": ["Zan", "Wind Sword", "Fast Escape", "Patter"],
+    "stats": [128, 5, 9, 4, 5, 7]
   },
   "Power": {
-    "conv": "Brainwash",
+    "inherit": "oo--",
     "lvl": 27,
-    "order": "Wind",
     "person": "Punk",
-    "resists": [100, 1150, 10, 10, 10, 10, 2100, 100],
-    "skills": {"Force Bullet": 28, "Halve Death": 4488, "Null Force": 29, "Zan": 0},
-    "stats": [429, 18, 6, 15, 7]
+    "race": "Wind",
+    "resists": "-wssssf-",
+    "skills": ["Zan", "Force Bullet", "Null Force", "Halve Death", "Brainwash"],
+    "stats": [429, 18, 6, 15, 7, 4]
   },
   "Preta": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 4,
-    "order": "Frost",
     "person": "Punk",
-    "resists": [100, 100, 2100, 0, 2100, 1150, 0, 100],
-    "skills": {"Bufu": 0, "Finders Keepers": 4488, "Makajam": 5},
-    "stats": [104, 7, 7, 5, 5]
+    "race": "Frost",
+    "resists": "--fnfwn-",
+    "skills": ["Bufu", "Makajam", "Finders Keepers", "Extortion"],
+    "stats": [104, 7, 7, 5, 5, 8]
   },
   "Pyro Jack": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 17,
-    "order": "Pyro",
     "person": "Jack",
-    "resists": [100, 1150, -1100, 2150, 100, 100, 100, 100],
-    "skills": {"Agi": 0, "Agirati": 19, "Dormina": 18, "Fire Resist": 4488},
-    "stats": [283, 5, 14, 9, 8]
+    "race": "Pyro",
+    "resists": "-wdf----",
+    "skills": ["Agi", "Dormina", "Agirati", "Fire Resist", "Sweet Talk"],
+    "stats": [283, 5, 14, 9, 8, 6]
   },
   "Raiho": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 40,
-    "order": "Frost",
     "person": "Jack",
-    "resists": [100, 100, 1150, -1100, 100, 100, 100, 0],
-    "skills": {"Dia Aura": 41, "Fire Resist": 4488, "Frost Killer": 42, "Glacial Blast": 0},
-    "stats": [504, 13, 20, 11, 15]
+    "race": "Frost",
+    "resists": "--wd---n",
+    "skills": ["Glacial Blast", "Dia Aura", "Frost Killer", "Fire Resist", "Sweet Talk"],
+    "stats": [504, 13, 20, 11, 15, 3]
   },
   "Raiju": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 18,
-    "order": "Volt",
     "person": "Punk",
-    "resists": [100, 1150, 100, 100, -1100, 2100, 0, 1150],
-    "skills": {"Bolt Slash": 20, "Elec Resist": 4488, "Makajam": 19, "Ziorati": 0},
-    "stats": [301, 14, 7, 10, 6]
+    "race": "Volt",
+    "resists": "-w--dfnw",
+    "skills": ["Ziorati", "Makajam", "Bolt Slash", "Elec Resist", "Extortion"],
+    "stats": [301, 14, 7, 10, 6, 4]
   },
   "Raja Naga": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 43,
-    "order": "Frost",
     "person": "Punk",
-    "resists": [100, 0, 2100, 0, 100, 100, 100, 1150],
-    "skills": {"Bufudyne": 0, "Freeze Slash": 45, "Moonlight Rage": 4488, "Rush": 44},
-    "stats": [526, 23, 18, 11, 10]
+    "race": "Frost",
+    "resists": "-nfn---w",
+    "skills": ["Bufudyne", "Rush", "Freeze Slash", "Moonlight Rage", "Extortion"],
+    "stats": [526, 23, 18, 11, 10, 4]
   },
   "Rakshasa": {
-    "conv": "Sweet Talk",
-    "lvl": 45,
-    "order": "Fury",
+    "inherit": "oo--",
+    "lvl": 47,
     "person": "Undead",
-    "resists": [50, 1150, 100, 100, 100, 100, 2100, 1150],
-    "skills": {"Frenzy": 0, "Headcrush": 49, "Moonlight Rage": 4488, "Tarukaja": 48},
-    "stats": [572, 25, 11, 15, 13]
+    "race": "Fury",
+    "resists": "sw----fw",
+    "skilli": "Provoke",
+    "skills": ["Frenzy", "Tarukaja", "Headcrush", "Moonlight Rage", "Sweet Talk"],
+    "stats": [572, 25, 11, 15, 13, 4]
   },
   "Rangda": {
-    "conv": "Sexy Voice",
+    "inherit": "oo-o",
     "lvl": 58,
-    "order": "Pagan",
     "person": "Old Woman",
-    "resists": [0, 1150, 100, 100, 2150, 100, -1100, 100],
-    "skills": {"Death Drain": 60, "Mamudo": 0, "Null Mortal": 4488, "Pagan Killer": 59},
-    "stats": [698, 17, 26, 21, 13]
+    "race": "Pagan",
+    "resists": "nw--f-d-",
+    "skills": ["Mamudo", "Pagan Killer", "Death Drain", "Null Mortal", "Sexy Voice"],
+    "stats": [698, 17, 26, 21, 13, 3]
   },
   "Red Cape": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 61,
-    "order": "Evil",
     "person": "Beast",
-    "resists": [50, 100, -1100, 50, 100, 50, 0, 0],
-    "skills": {"Doubt Beam": 62, "Justification": 63, "Money-Getter": 4488, "Pulinpa": 0},
-    "stats": [672, 20, 30, 16, 14]
+    "race": "Evil",
+    "resists": "s-ds-snn",
+    "skills": ["Pulinpa", "Doubt Beam", "Justification", "Money-Getter", "Sweet Talk"],
+    "stats": [672, 20, 30, 16, 14, 2]
   },
   "Red Rider": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 51,
-    "order": "Fiend",
     "person": "Fiend",
-    "resists": [50, 0, 100, 0, 2100, 100, -1100, 0],
-    "skills": {"Cocytus": 52, "Ice Boost": 4488, "Mabufudyne": 53, "Mamudo": 0},
-    "stats": [627, 14, 28, 17, 11]
+    "race": "Fiend",
+    "resists": "sn-nf-dn",
+    "skills": ["Mamudo", "Cocytus", "Mabufudyne", "Ice Boost", "Extortion"],
+    "stats": [627, 14, 28, 17, 11, 1]
   },
   "Saki Mitama": {
-    "conv": "Panic Urge",
+    "inherit": "-o-o",
     "lvl": 32,
-    "order": "Spirit",
     "person": "Foreigner",
-    "resists": [100, 1150, 100, 100, 100, 100, 0, 0],
-    "skills": {"Diarama": 33, "Heal Boost": 4488, "Recarm": 0},
-    "stats": [433, 10, 10, 10, 21]
+    "race": "Spirit",
+    "resists": "-w----nn",
+    "skills": ["Recarm", "Diarama", "Heal Boost", "Panic Urge"],
+    "stats": [433, 10, 10, 10, 21, 4]
   },
   "Sandalphon": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 60,
-    "order": "Wind",
     "person": "Knight",
-    "resists": [100, 1150, 100, 100, 100, -1100, 2100, 100],
-    "skills": {"First Aid": 4488, "Force Drain": 62, "Mazandyne": 0, "Samarecarm": 61},
-    "stats": [699, 21, 25, 20, 13]
+    "race": "Wind",
+    "resists": "-w---df-",
+    "skills": ["Mazandyne", "Samarecarm", "Force Drain", "First Aid", "Debate"],
+    "stats": [699, 21, 25, 20, 13, 2]
   },
   "Sandman": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 7,
-    "order": "Pagan",
     "person": "Undead",
-    "resists": [100, 0, 2100, 100, 100, 2100, -1100, 0],
-    "skills": {"Dormina": 0, "Fast Escape": 4488, "Heretic Crush": 9, "Patra": 8},
-    "stats": [160, 7, 8, 6, 5]
+    "race": "Pagan",
+    "resists": "-nf--fdn",
+    "skills": ["Dormina", "Patra", "Heretic Crush", "Fast Escape", "Sweet Talk"],
+    "stats": [160, 7, 8, 6, 5, 7]
   },
   "Sati": {
-    "conv": "Scolding",
+    "inherit": "-o--",
     "lvl": 33,
-    "order": "Pyro",
     "person": "Old Woman",
-    "resists": [100, -1100, -1100, 2150, 100, 100, 2100, 100],
-    "skills": {"Agirati": 0, "Fire Resist": 4488, "Fire Slash": 35, "Recarm": 34},
-    "stats": [465, 7, 22, 13, 10]
+    "race": "Pyro",
+    "resists": "-ddf--f-",
+    "skills": ["Agirati", "Recarm", "Fire Slash", "Fire Resist", "Scolding"],
+    "stats": [465, 7, 22, 13, 10, 3]
   },
   "Scathach": {
-    "conv": "Scolding",
+    "inherit": "-o--",
     "lvl": 55,
-    "order": "Skill",
     "person": "Lady",
-    "resists": [100, 1150, 100, 100, 2100, 0, 100, 50],
-    "skills": {"Diarahan": 0, "Frenzy": 56, "Rakukajaon": 57, "Whimsy Aid": 4488},
-    "stats": [618, 21, 27, 13, 13]
+    "race": "Skill",
+    "resists": "-w--fn-s",
+    "skills": ["Diarahan", "Frenzy", "Rakukajaon", "Whimsy Aid", "Scolding"],
+    "stats": [618, 21, 27, 13, 13, 5]
   },
   "Selket": {
-    "conv": "Scolding",
+    "inherit": "oo--",
     "lvl": 15,
-    "order": "Skill",
     "person": "Lady",
-    "resists": [50, 0, 100, 2100, 100, 2100, 0, 0],
-    "skills": {"Dormina": 16, "Luck Chakra": 4488, "Recarm": 17, "Venomstrike": 0},
-    "stats": [262, 12, 4, 9, 9]
+    "race": "Skill",
+    "resists": "sn-f-fnn",
+    "skills": ["Venomstrike", "Dormina", "Recarm", "Luck Chakra", "Scolding"],
+    "stats": [262, 12, 4, 9, 9, 5]
   },
   "Shiva": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 75,
-    "order": "Fury",
     "person": "Knight",
-    "resists": [-1100, 100, 50, 50, 10, 50, 0, 100],
-    "skills": {"Makakajaon": 77, "Mighty Blow": 0, "Raging Blast": 76, "Vengeance Seal": 4488},
-    "stats": [766, 29, 29, 21, 15]
+    "race": "Fury",
+    "resists": "d-ssssn-",
+    "skills": ["Mighty Blow", "Raging Blast", "Makakajaon", "Vengeance Seal", "Sweet Talk"],
+    "stats": [766, 29, 29, 21, 15, 1]
   },
   "Shouten": {
-    "conv": "Panic Urge",
+    "inherit": "oo-o",
     "lvl": 52,
-    "order": "Fury",
     "person": "Knight",
-    "resists": [50, 100, 2100, 50, 100, 50, 100, 1150],
-    "skills": {"Halve Death": 4488, "Mad Rush": 53, "Pulinpa": 0, "Tetrakarn": 54},
-    "stats": [689, 27, 9, 24, 11]
+    "race": "Fury",
+    "resists": "s-fs-s-w",
+    "skills": ["Pulinpa", "Mad Rush", "Tetrakarn", "Halve Death", "Panic Urge"],
+    "stats": [689, 27, 9, 24, 11, 2]
   },
   "Siegfried": {
-    "conv": "Sweet Talk",
+    "inherit": "oo--",
     "lvl": 56,
-    "order": "Fury",
     "person": "Gentleman",
-    "resists": [50, 100, 50, 2100, 50, 50, 0, 0],
-    "skills": {"Mighty Blow": 0, "Phys Resist": 4488, "Raging Blast": 58, "Tarukaja": 57},
-    "stats": [695, 26, 13, 22, 14]
+    "race": "Fury",
+    "resists": "s-sfssnn",
+    "skilli": "Intimidate",
+    "skills": ["Mighty Blow", "Tarukaja", "Raging Blast", "Phys Resist", "Sweet Talk"],
+    "stats": [695, 26, 13, 22, 14, 2]
   },
   "Slime": {
-    "conv": "Panic Urge",
+    "inherit": "oo-o",
     "lvl": 1,
-    "order": "Fury",
     "person": "Undead",
-    "resists": [100, 1150, 2200, 2200, 2150, 2150, 0, 100],
-    "skills": {"Dia": 2, "Endure": 4488, "Rush": 0},
-    "stats": [83, 5, 4, 7, 4]
+    "race": "Fury",
+    "resists": "-wffffn-",
+    "skills": ["Rush", "Dia", "Endure", "Panic Urge"],
+    "stats": [83, 5, 4, 7, 4, 3]
   },
   "Susano-o": {
-    "conv": "Extortion",
+    "inherit": "-ooo",
     "lvl": 63,
-    "order": "Fury",
     "person": "Punk",
-    "resists": [50, 1150, -1100, 50, 2100, 100, 0, 1150],
-    "skills": {"Lucky Strike": 4488, "Phys Drain": 64, "Winged Fury": 0, "Ziodyne": 65},
-    "stats": [737, 33, 15, 23, 11]
+    "race": "Fury",
+    "resists": "swdsf-nw",
+    "skills": ["Winged Fury", "Phys Drain", "Ziodyne", "Lucky Strike", "Extortion"],
+    "stats": [737, 33, 15, 23, 11, 1]
   },
   "Sylph": {
-    "conv": "Sexy Voice",
+    "inherit": "-o-o",
     "lvl": 29,
-    "order": "Element",
     "person": "Lady",
-    "resists": [100, 100, 0, 1150, 1150, -1100, 0, 100],
-    "skills": {"Agirati": 30, "Halve Death": 4488, "Zanrati": 0},
-    "stats": [399, 9, 17, 9, 13]
+    "race": "Element",
+    "resists": "--nwwdn-",
+    "skills": ["Zanrati", "Agirati", "Halve Death", "Sexy Voice"],
+    "stats": [399, 9, 17, 9, 13, 4]
   },
   "Tam Lin": {
-    "conv": "Sweet Talk",
+    "inherit": "-ooo",
     "lvl": 10,
-    "order": "Skill",
     "person": "Gentleman",
-    "resists": [50, 100, 100, 100, 50, 50, 2100, 1200],
-    "skills": {"Elec Bullet": 11, "Endure": 4488, "Winged Fury": 0},
-    "stats": [199, 14, 4, 7, 4]
+    "race": "Skill",
+    "resists": "s---ssfw",
+    "skills": ["Winged Fury", "Elec Bullet", "Endure", "Sweet Talk"],
+    "stats": [199, 14, 4, 7, 4, 3]
   },
   "Taotie": {
-    "conv": "Debate",
+    "inherit": "oo-o",
     "lvl": 62,
-    "order": "Skill",
     "person": "Knight",
-    "resists": [50, 100, 100, 100, 2100, 0, 100, 0],
-    "skills": {"Dekaja": 64, "Magic Boost": 4488, "Megido": 0, "Samarecarm": 63},
-    "stats": [741, 17, 26, 24, 14]
+    "race": "Skill",
+    "resists": "s---fn-n",
+    "skills": ["Megido", "Samarecarm", "Dekaja", "Magic Boost", "Debate"],
+    "stats": [741, 17, 26, 24, 14, 3]
   },
   "Tarrasque": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 51,
-    "order": "Frost",
     "person": "Old Man",
-    "resists": [50, 100, 50, 50, 2100, 50, 100, 100],
-    "skills": {"Frost Killer": 52, "Ice Boost": 4488, "Mabufudyne": 0, "State of Bliss": 53},
-    "stats": [699, 20, 12, 26, 12]
+    "race": "Frost",
+    "resists": "s-ssfs--",
+    "skills": ["Mabufudyne", "Frost Killer", "State of Bliss", "Ice Boost", "Extortion"],
+    "stats": [699, 20, 12, 26, 12, 5]
   },
   "Thor": {
-    "conv": "Brainwash",
+    "inherit": "oo--",
     "lvl": 56,
-    "order": "Volt",
     "person": "Knight",
-    "resists": [50, 100, 100, 100, -1100, 2100, 100, 100],
-    "skills": {"Elec Boost": 4488, "Tarukajaon": 57, "Thunderbolt": 0, "Volt Killer": 58},
-    "stats": [679, 29, 14, 20, 12]
+    "race": "Volt",
+    "resists": "s---df--",
+    "skills": ["Thunderbolt", "Tarukajaon", "Volt Killer", "Elec Boost", "Brainwash"],
+    "stats": [679, 29, 14, 20, 12, 3]
   },
   "Thoth": {
-    "conv": "Debate",
+    "inherit": "-o-o",
     "lvl": 31,
-    "order": "Skill",
     "person": "Show-Off",
-    "resists": [1200, 100, -1100, -1100, -1100, -1100, 2100, -1100],
-    "skills": {"Diarama": 32, "Makakaja": 33, "Patra": 0, "Skill Extension": 4488},
-    "stats": [384, 8, 22, 5, 15]
+    "race": "Skill",
+    "resists": "w-ddddfd",
+    "skills": ["Patra", "Diarama", "Makakaja", "Skill Extension", "Debate"],
+    "stats": [384, 8, 22, 5, 15, 4]
   },
   "Throne": {
-    "conv": "Sweet Talk",
+    "inherit": "oo-o",
     "lvl": 41,
-    "order": "Pyro",
     "person": "Gentleman",
-    "resists": [1150, 1150, -1100, 2100, 0, 0, 0, 1200],
-    "skills": {"Agidyne": 43, "Agirati": 0, "Luck Chakra": 4488, "Makajam": 42},
-    "stats": [520, 13, 23, 12, 12]
+    "race": "Pyro",
+    "resists": "wwdfnnnw",
+    "skilli": "Intimidate",
+    "skills": ["Agirati", "Makajam", "Agidyne", "Luck Chakra", "Sweet Talk"],
+    "stats": [520, 13, 23, 12, 12, 4]
   },
   "Titania": {
-    "conv": "Sexy Voice",
+    "inherit": "-o-o",
     "lvl": 39,
-    "order": "Skill",
     "person": "Lady",
-    "resists": [100, 0, 50, 2050, 50, 50, 0, 0],
-    "skills": {"Bufudyne": 0, "Dormina": 40, "Magic Boost": 4488, "Mediarama": 41},
-    "stats": [521, 11, 24, 14, 9]
+    "race": "Skill",
+    "resists": "-nsfssnn",
+    "skills": ["Bufudyne", "Dormina", "Mediarama", "Magic Boost", "Sexy Voice"],
+    "stats": [521, 11, 24, 14, 9, 2]
   },
   "Triglav": {
-    "conv": "Fast Talk",
+    "inherit": "oooo",
     "lvl": 42,
-    "order": "Fury",
     "person": "Punk",
-    "resists": [50, 0, 100, -1100, 100, 2100, 2100, 100],
-    "skills": {"Power Chakra": 4488, "Rush": 0, "Shot Bullet": 44, "Winged Fury": 43},
-    "stats": [535, 22, 15, 13, 11]
+    "race": "Fury",
+    "resists": "sn-d-ff-",
+    "skills": ["Rush", "Winged Fury", "Shot Bullet", "Power Chakra", "Fast Talk"],
+    "stats": [535, 22, 15, 13, 11, 4]
   },
   "Tsuchigumo": {
-    "conv": "Extortion",
+    "inherit": "oo-o",
     "lvl": 22,
-    "order": "Volt",
     "person": "Punk",
-    "resists": [50, 100, 100, 2100, 0, 2100, 100, 100],
-    "skills": {"Bolt Slash": 24, "Elec Boost": 4488, "Mazio": 23, "Venomstrike": 0},
-    "stats": [357, 17, 7, 12, 5]
+    "race": "Volt",
+    "resists": "s--fnf--",
+    "skills": ["Venomstrike", "Mazio", "Bolt Slash", "Elec Boost", "Extortion"],
+    "stats": [357, 17, 7, 12, 5, 5]
   },
   "Turdak": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 11,
-    "order": "Fury",
     "person": "Undead",
-    "resists": [50, 100, 2100, 100, 100, 2100, 100, 100],
-    "skills": {"Combo": 0, "Life Bonus": 4488, "Venomstrike": 12, "Zio": 13},
-    "stats": [226, 12, 3, 10, 5]
+    "race": "Fury",
+    "resists": "s-f--f--",
+    "skills": ["Combo", "Venomstrike", "Zio", "Life Bonus", "Extortion"],
+    "stats": [226, 12, 3, 10, 5, 6]
   },
   "Ukobach": {
-    "conv": "Fast Talk",
+    "inherit": "-o-o",
     "lvl": 12,
-    "order": "Pyro",
     "person": "Punk",
-    "resists": [100, 100, 0, 2100, 2100, 100, 100, 100],
-    "skills": {"Agi": 0, "Endure": 4488, "Maragi": 13, "Pulinpa": 14},
-    "stats": [205, 8, 10, 6, 7]
+    "race": "Pyro",
+    "resists": "--nff---",
+    "skills": ["Agi", "Maragi", "Pulinpa", "Endure", "Fast Talk"],
+    "stats": [205, 8, 10, 6, 7, 7]
   },
   "Undine": {
-    "conv": "Scolding",
+    "inherit": "-o-o",
     "lvl": 31,
-    "order": "Element",
     "person": "Lady",
-    "resists": [100, 100, 1150, -1100, 0, 1150, 0, 100],
-    "skills": {"Bufurati": 0, "Halve Mortal": 4488, "Ziorati": 32},
-    "stats": [440, 10, 19, 12, 9]
+    "race": "Element",
+    "resists": "--wdnwn-",
+    "skills": ["Bufurati", "Ziorati", "Halve Mortal", "Scolding"],
+    "stats": [440, 10, 19, 12, 9, 4]
   },
   "Utai-gaikotsu": {
-    "conv": "Patter",
+    "inherit": "oo--",
     "lvl": 30,
-    "order": "Pagan",
     "person": "Punk",
-    "resists": [1150, 1200, -1100, 100, 100, 2100, 0, 1150],
-    "skills": {"Dormina": 31, "Makajam": 0, "Petra": 32, "Sink or Swim": 4488},
-    "stats": [415, 9, 17, 10, 13]
+    "race": "Pagan",
+    "resists": "wwd--fnw",
+    "skills": ["Makajam", "Dormina", "Petra", "Sink or Swim", "Patter"],
+    "stats": [415, 9, 17, 10, 13, 4]
   },
   "Vishnu": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 74,
-    "order": "Volt",
     "person": "Gentleman",
-    "resists": [50, 100, 10, 50, -1100, 100, 0, 50],
-    "skills": {"Elec Drain": 76, "Life Surge": 4488, "Maziodyne": 0, "Volt Killer": 75},
-    "stats": [779, 25, 30, 23, 15]
+    "race": "Volt",
+    "resists": "s-ssd-ns",
+    "skills": ["Maziodyne", "Volt Killer", "Elec Drain", "Life Surge", "Sweet Talk"],
+    "stats": [779, 25, 30, 23, 15, 1]
   },
   "Vritra": {
-    "conv": "Brainwash",
+    "inherit": "oo-o",
     "lvl": 54,
-    "order": "Pyro",
     "person": "Knight",
-    "resists": [100, 100, -1100, 2150, 50, 50, 0, 0],
-    "skills": {"Fire Breath": 0, "Growth": 4488, "Hellfire": 56, "Rush": 55},
-    "stats": [660, 20, 24, 19, 10]
+    "race": "Pyro",
+    "resists": "--dfssnn",
+    "skills": ["Fire Breath", "Rush", "Hellfire", "Growth", "Brainwash"],
+    "stats": [660, 20, 24, 19, 10, 3]
   },
   "White Rider": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 49,
-    "order": "Fiend",
     "person": "Fiend",
-    "resists": [50, 0, 0, 2100, 100, 100, 0, 0],
-    "skills": {"Fire Boost": 4488, "Maragidyne": 50, "Mighty Blow": 0, "Pyro Killer": 51},
-    "stats": [606, 24, 18, 16, 10]
+    "race": "Fiend",
+    "resists": "snnf--nn",
+    "skills": ["Mighty Blow", "Maragidyne", "Pyro Killer", "Fire Boost", "Extortion"],
+    "stats": [606, 24, 18, 16, 10, 1]
   },
   "Yakubyou-gami": {
-    "conv": "Extortion",
+    "inherit": "-o-o",
     "lvl": 55,
-    "order": "Fiend",
     "person": "Fiend",
-    "resists": [50, 0, 100, 50, 50, 50, -1100, 0],
-    "skills": {"Eternal Rest": 57, "Mediarama": 56, "Mighty Blow": 0, "Retribution": 4488},
-    "stats": [666, 15, 26, 19, 14]
+    "race": "Fiend",
+    "resists": "sn-sssdn",
+    "skills": ["Mighty Blow", "Mediarama", "Eternal Rest", "Retribution", "Extortion"],
+    "stats": [666, 15, 26, 19, 14, 1]
   },
   "Yomi-kugutsu A": {
-    "conv": "Extortion",
+    "inherit": "-o--",
     "lvl": 17,
-    "order": "Evil",
     "person": "Foreigner",
-    "resists": [50, 100, 100, 100, 100, 100, 0, 0],
-    "skills": {"Desperate Power": 4488, "Melee": 18, "Metal Bullet": 19, "Roundhouse": 0},
-    "stats": [299, 15, 5, 11, 5]
+    "race": "Evil",
+    "resists": "s-----nn",
+    "skills": ["Roundhouse", "Melee", "Metal Bullet", "Desperate Power", "Extortion"],
+    "stats": [299, 15, 5, 11, 5, 6]
   },
   "Yomi-kugutsu B": {
-    "conv": "Extortion",
+    "inherit": "----",
     "lvl": 24,
-    "order": "Evil",
     "person": "Foreigner",
-    "resists": [50, 0, 100, 100, 100, 100, 0, 0],
-    "skills": {"Rapidfire": 25, "Roundhouse": 0, "Shot Bullet": 26, "Unreachable Soul": 4488},
-    "stats": [393, 17, 6, 14, 6]
+    "race": "Evil",
+    "resists": "sn----nn",
+    "skills": ["Roundhouse", "Rapidfire", "Shot Bullet", "Unreachable Soul", "Extortion"],
+    "stats": [393, 17, 6, 14, 6, 6]
   },
   "Yomi-kugutsu C": {
-    "conv": "Extortion",
+    "inherit": "----",
     "lvl": 55,
-    "order": "Evil",
     "person": "Foreigner",
-    "resists": [50, 0, 100, 100, 100, 100, 0, 0],
-    "skills": {"Barrage": 56, "Life Surge": 4488, "Mag Bullet": 57, "Roundhouse": 0},
-    "stats": [722, 26, 9, 26, 13]
+    "race": "Evil",
+    "resists": "sn----nn",
+    "skills": ["Roundhouse", "Barrage", "Mag Bullet", "Life Surge", "Extortion"],
+    "stats": [722, 26, 9, 26, 13, 3]
   },
   "Yoshitsune": {
-    "conv": "Sweet Talk",
+    "inherit": "-o-o",
     "lvl": 29,
-    "order": "Fury",
     "person": "Punk",
-    "resists": [100, 50, 100, 100, 100, 50, 0, 2200],
-    "skills": {"Cross Slash": 31, "Frenzy": 0, "Tarukaja": 30, "Vengeance Seal": 4488},
-    "stats": [415, 18, 13, 11, 6]
+    "race": "Fury",
+    "resists": "-s---snf",
+    "skilli": "Provoke",
+    "skills": ["Frenzy", "Tarukaja", "Cross Slash", "Vengeance Seal", "Sweet Talk"],
+    "stats": [415, 18, 13, 11, 6, 3]
   },
   "Zombie": {
-    "conv": "Panic Urge",
+    "inherit": "-o--",
     "lvl": 8,
-    "order": "Evil",
     "person": "Undead",
-    "resists": [1150, 100, 2100, 100, 100, 2100, 0, 0],
-    "skills": {"Dia": 9, "Finders Keepers": 4488, "Venomstrike": 0},
-    "stats": [144, 11, 6, 4, 6]
+    "race": "Evil",
+    "resists": "w-f--fnn",
+    "skills": ["Venomstrike", "Dia", "Finders Keepers", "Panic Urge"],
+    "stats": [144, 11, 6, 4, 6, 8]
   },
   "Zombie Guard": {
-    "conv": "Panic Urge",
+    "inherit": "---o",
     "lvl": 36,
-    "order": "Evil",
     "person": "Undead",
-    "resists": [100, 100, 2100, 100, 100, 100, 0, 0],
-    "skills": {"Luck Chakra": 4488, "Mag Bullet": 38, "Shoot": 0, "War Cry": 37},
-    "stats": [506, 21, 10, 15, 9]
+    "race": "Evil",
+    "resists": "--f---nn",
+    "skills": ["Shoot", "War Cry", "Mag Bullet", "Luck Chakra", "Panic Urge"],
+    "stats": [506, 21, 10, 15, 9, 5]
   },
   "Zombie Lady": {
-    "conv": "Panic Urge",
+    "inherit": "-o--",
     "lvl": 13,
-    "order": "Evil",
     "person": "Seductive",
-    "resists": [1150, 100, 2100, 100, 100, 2100, 0, 0],
-    "skills": {"Dormina": 14, "Marin Karin": 0, "Money-Getter": 4488, "Pulinpa": 15},
-    "stats": [208, 5, 15, 5, 7]
+    "race": "Evil",
+    "resists": "w-f--fnn",
+    "skills": ["Marin Karin", "Dormina", "Pulinpa", "Money-Getter", "Panic Urge"],
+    "stats": [208, 5, 15, 5, 7, 8]
   },
   "Zombie Officer": {
-    "conv": "Panic Urge",
+    "inherit": "-o--",
     "lvl": 29,
-    "order": "Evil",
     "person": "Punk",
-    "resists": [100, 100, 100, 100, 100, 2100, 0, 0],
-    "skills": {"Combo": 30, "Halve Mortal": 4488, "Mag Bullet": 31, "Metal Bullet": 0},
-    "stats": [439, 18, 8, 14, 8]
+    "race": "Evil",
+    "resists": "-----fnn",
+    "skills": ["Metal Bullet", "Combo", "Mag Bullet", "Halve Mortal", "Panic Urge"],
+    "stats": [439, 18, 8, 14, 8, 5]
   }
 }

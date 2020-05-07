@@ -19,6 +19,7 @@ import ENEMY_DATA_JSON from './data/enemy-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 
@@ -41,6 +42,10 @@ for(const race of COMP_CONFIG_JSON.races) {
 
 for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
   inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = INHERIT_TYPES_JSON.ratios[i].split('').map(x => x === 'O' ? 100 : 0);
+}
+
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name].prereq = prereq;
 }
 
 export const P5_COMPENDIUM_CONFIG: CompendiumConfig = {

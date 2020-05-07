@@ -42,11 +42,12 @@ export class Compendium implements ICompendium {
           stats:   json['stats'],
           resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
           fusion:  json['fusion'] || 'normal',
-          inherit: json['inherits']
+          inherit: json['inherits'],
+          prereq:  json['prereq'] || ''
         };
 
         if (json['itemr']) {
-          demons[name].item += (', ' + json['itemr'])
+          demons[name].item += (', ' + json['itemr']);
         }
       }
     }
@@ -111,7 +112,6 @@ export class Compendium implements ICompendium {
       }
 
       if (json.length === 0) {
-        demon.prereq = 'Recruitment only';
         demon.fusion = 'recruit';
       }
     }

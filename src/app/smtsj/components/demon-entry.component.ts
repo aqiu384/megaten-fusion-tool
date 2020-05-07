@@ -28,7 +28,6 @@ import { FusionDataService } from '../fusion-data.service';
           to {{ attack.target ? attack.target : 'single foe' }}
           {{ attack.ailment ? '- ' + attack.ailment : '' }}
         </td>
-        <td [style.width.%]="30"><div *ngFor="let req of compendium.getFusionRequirements(name)">{{ req }}</div></td>
       </app-demon-stats>
       <app-demon-resists
         [resistHeaders]="resistanceHeaders"
@@ -80,7 +79,7 @@ export class DemonEntryComponent {
   @Input() laplaceOn = false;
 
   statHeaders = BaseStats;
-  fusionHeaders = [ 'Normal Attack', 'Fusion Condition' ];
+  fusionHeaders = [ 'Normal Attack', ];
   resistanceHeaders = ResistanceElements;
   elemOrder = SkillElementOrder;
   inheritanceHeaders = InheritElements;

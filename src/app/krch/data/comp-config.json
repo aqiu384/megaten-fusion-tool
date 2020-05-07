@@ -8,6 +8,12 @@
     "Vi",
     "Lu"
   ],
+  "inheritTypes": {
+    "dash": ["Rush"],
+    "melee": ["Raging Blast"],
+    "weapon": ["Astral Burst"],
+    "breath": ["Fire Breath", "Glacial Blast", "Shock Wave", "Wind Cutter"]
+  },
   "races": [
     "Pyro",
     "Frost",
@@ -17,6 +23,15 @@
     "Pagan",
     "Skill"
   ],
+  "raceSkills": {
+    "Pyro": "Ignite",
+    "Frost": "Cool Down",
+    "Volt": "Inspect",
+    "Wind": "Scout",
+    "Fury": "Use Force",
+    "Pagan": "Read Mind",
+    "Skill": "Demonstrate"
+  },
   "resistCodes": {
     "w": 1125,
     "-": 100,

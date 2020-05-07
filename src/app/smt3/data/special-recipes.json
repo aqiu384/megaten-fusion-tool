@@ -1,192 +1,52 @@
 {
-  "Aciel": {
-    "lvl": "74",
-    "spe": "Abaddon"
-  },
-  "Albion": {
-    "lvl": "60",
-    "spe": "Gogmagog"
-  },
-  "Amaterasu": {
-    "nor": "Yatagarasu x Mikazuchi",
-    "spe": "Uzume"
-  },
-  "Ara Mitama": {
-    "nor": "Erthys x Aquans, Aeros x Flaemis"
-  },
-  "Arahabaki": {
-    "lvl": "24",
-    "spe": "Momunofu"
-  },
-  "Beelzebub Fly": {
-    "lvl": "86",
-    "spe": "Beelzebub"
-  },
-  "Black Rider": {
-    "lvl": "0",
-    "spe": "Night"
-  },
-  "Cu Chulainn": {
-    "lvl": "48",
-    "spe": "Setanta"
-  },
-  "Daisoujou": {
-    "lvl": "5-8",
-    "spe": "Night"
-  },
-  "Dante": {
-    "spe": "Recruit"
-  },
-  "Efreet": {
-    "lvl": "48",
-    "spe": "Jinn"
-  },
-  "Gabriel": {
-    "nor": "Throne x Raphael"
-  },
-  "Ganesha": {
-    "lvl": "53",
-    "spe": "Purski"
-  },
-  "Garuda": {
-    "lvl": "58",
-    "spe": "Sparna"
-  },
-  "Girimehkala": {
-    "nor": "Purski",
-    "spe": "Vile"
-  },
-  "Gui Xian": {
-    "lvl": "18",
-    "spe": "Nozuchi"
-  },
-  "Gurr": {
-    "nor": "Sparna",
-    "spe": "Tyrant"
-  },
-  "Hanuman": {
-    "lvl": "42",
-    "spe": "Onkot"
-  },
-  "Hell Biker": {
-    "lvl": "4-7",
-    "spe": "Fairy"
-  },
-  "High Pixie": {
-    "lvl": "6",
-    "spe": "Pixie"
-  },
-  "Karasu": {
-    "lvl": "24",
-    "spe": "Koppa"
-  },
-  "Kurama": {
-    "lvl": "33",
-    "spe": "Karasu"
-  },
-  "Kusi Mitama": {
-    "nor": "Erthys x Flaemis, Aeros x Aquans"
-  },
-  "Lilith": {
-    "lvl": "12",
-    "spe": "Lilim"
-  },
-  "Long": {
-    "lvl": "38",
-    "spe": "Mizuchi"
-  },
-  "Makami": {
-    "lvl": "17",
-    "spe": "Inugami"
-  },
-  "Matador": {
-    "lvl": "1-4",
-    "spe": "Yoma"
-  },
-  "Metatron": {
-    "nor": "Michael x Angel, Michael x Archangel, Michael x Principality, Michael x Power, Michael x Virtue, Michael x Dominion, Michael x Throne, Michael x Uriel, Michael x Raphael, Michael x Gabriel",
-    "spe": "Tyrant"
-  },
-  "Michael": {
-    "nor": "Uriel x Raphael",
-    "spe": "Gabriel"
-  },
-  "Nigi Mitama": {
-    "nor": "Erthys x Aeros"
-  },
-  "Ongyo-Ki": {
-    "nor": "Kin-Ki x Sui-Ki",
-    "spe": "Fuu-Ki"
-  },
-  "Pale Rider": {
-    "lvl": "0",
-    "spe": "Tyrant"
-  },
-  "Parvati": {
-    "lvl": "52",
-    "spe": "Sati"
-  },
-  "Queen Mab": {
-    "lvl": "16",
-    "spe": "High Pixie"
-  },
-  "Raidou Kuzunoha the XIV": {
-    "spe": "Recruit"
-  },
-  "Raja Naga": {
-    "lvl": "32",
-    "spe": "Naga"
-  },
-  "Raphael": {
-    "nor": "Dominion x Uriel"
-  },
-  "Red Rider": {
-    "lvl": "0",
-    "spe": "Fairy"
-  },
-  "Sakahagi": {
-    "nor": "Shadow x Erthys, Shadow x Aeros, Shadow x Flaemis, Phantom x Aquans"
-  },
-  "Saki Mitama": {
-    "nor": "Aquans x Flaemis"
-  },
-  "Samael": {
-    "nor": "Throne",
-    "spe": "Vile"
-  },
-  "Senri": {
-    "lvl": "22",
-    "spe": "Nekomata"
-  },
-  "Shiva": {
-    "nor": "Rangda x Barong"
-  },
-  "Skadi": {
-    "lvl": "69",
-    "spe": "Scathach"
-  },
-  "The Harlot": {
-    "lvl": "4",
-    "spe": "Tyrant"
-  },
-  "Trumpeter": {
-    "lvl": "8",
-    "spe": "Tyrant"
-  },
-  "Uriel": {
-    "lvl": "68",
-    "spe": "Throne"
-  },
-  "Valkyrie": {
-    "lvl": "37",
-    "spe": "Dis"
-  },
-  "White Rider": {
-    "lvl": "0",
-    "spe": "Yoma"
-  },
-  "Wu Kong": {
-    "lvl": "50",
-    "spe": "Hanuman"
-  }
+  "Ara Mitama": ["Erthys x Aquans", "Aeros x Flaemis"],
+  "Kusi Mitama": ["Erthys x Flaemis", "Aeros x Aquans"],
+  "Nigi Mitama": ["Erthys x Aeros"],
+  "Saki Mitama": ["Aquans x Flaemis"],
+  "Shiva": ["Rangda x Barong"],
+  "Raphael": ["Dominion x Uriel"],
+  "Gabriel": ["Throne x Raphael"],
+  "Michael": ["Gabriel", "Uriel x Raphael"],
+  "Metatron": ["Tyrant", "Michael x Divine", "Michael x Seraph"],
+  "Sakahagi": ["Shadow x Erthys", "Shadow x Aeros", "Shadow x Flaemis", "Phantom x Aquans"],
+  "Amaterasu": ["Uzume", "Yatagarasu x Mikazuchi"],
+  "Ongyo-Ki": ["Fuu-Ki", "Kin-Ki x Sui-Ki"],
+  "Samael": ["Throne", "Vile"],
+  "Girimehkala": ["Purski", "Vile"],
+  "Gurr": ["Sparna", "Tyrant"],
+  "Matador": ["Yoma"],
+  "Daisoujou": ["Night"],
+  "Hell Biker": ["Fairy"],
+  "White Rider": ["Yoma"],
+  "Red Rider": ["Fairy"],
+  "Black Rider": ["Night"],
+  "Pale Rider": ["Tyrant"],
+  "The Harlot": ["Tyrant"],
+  "Trumpeter": ["Tyrant"],
+  "Aciel": [],
+  "Albion": [],
+  "Arahabaki": [],
+  "Beelzebub Fly": [],
+  "Cu Chulainn": [],
+  "Efreet": [],
+  "Ganesha": [],
+  "Garuda": [],
+  "Gui Xian": [],
+  "Hanuman": [],
+  "High Pixie": [],
+  "Karasu": [],
+  "Kurama": [],
+  "Lilith": [],
+  "Long": [],
+  "Makami": [],
+  "Parvati": [],
+  "Queen Mab": [],
+  "Raja Naga": [],
+  "Senri": [],
+  "Skadi": [],
+  "Uriel": [],
+  "Valkyrie": [],
+  "Wu Kong": [],
+  "Dante": [],
+  "Raidou Kuzunoha the XIV": []
 }

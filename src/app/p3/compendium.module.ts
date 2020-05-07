@@ -22,6 +22,8 @@ import PSYCHE_JSON from './data/psyche.json';
 
 import VAN_FUSION_CHART_JSON from './data/van-fusion-chart.json';
 import FES_FUSION_CHART_JSON from './data/fes-fusion-chart.json';
+import VAN_FUSION_PREREQS_JSON from './data/van-fusion-prereqs.json';
+import FES_FUSION_PREREQS_JSON from './data/fes-fusion-prereqs.json';
 
 import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
 import FES_SKILL_DATA_JSON from './data/fes-skill-data.json';
@@ -71,6 +73,14 @@ for (const [demon, recipe] of Object.entries(PAIR_SPECIAL_RECIPES_JSON)) {
 
 for (const [demon, recipe] of Object.entries(VAN_SPECIAL_RECIPES_JSON)) {
   FES_SPECIAL_RECIPES_JSON[demon] = recipe;
+}
+
+for(const [name, prereq] of Object.entries(VAN_FUSION_PREREQS_JSON)) {
+  VAN_DEMON_DATA_JSON[name]['prereq'] = prereq;
+}
+
+for(const [name, prereq] of Object.entries(FES_FUSION_PREREQS_JSON)) {
+  FES_DEMON_DATA_JSON[name]['prereq'] = prereq;
 }
 
 export const P3_COMPENDIUM_CONFIG: CompendiumConfig = {

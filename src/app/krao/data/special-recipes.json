@@ -1,104 +1,29 @@
 {
-  "Alice": {
-    "prereq": "45000"
-  },
-  "Ara Mitama": {
-    "pairs": [
-      "Aeros x Aquans",
-      "Aquans x Flaemis",
-      "Erthys x Sylph",
-      "Flaemis x Undine"
-    ]
-  },
-  "Binbou-gami": {
-    "prereq": "15000"
-  },
-  "Black Ooze": {
-    "prereq": "accident"
-  },
-  "Black Rider": {
-    "prereq": "65000"
-  },
-  "Blob": {
-    "prereq": "accident"
-  },
-  "Hiruko": {
-    "prereq": "45000"
-  },
-  "Kusi Mitama": {
-    "pairs": [
-      "Aeros x Sylph",
-      "Aquans x Undine",
-      "Erthys x Undine",
-      "Flaemis x Sylph"
-    ]
-  },
-  "Nesting Doll": {
-    "prereq": "35000"
-  },
-  "Nesting Skull": {
-    "prereq": "45000"
-  },
-  "Nigi Mitama": {
-    "pairs": [
-      "Aeros x Undine",
-      "Erthys x Aeros",
-      "Erthys x Flaemis",
-      "Aquans x Sylph"
-    ]
-  },
-  "Pale Rider": {
-    "prereq": "65000"
-  },
-  "Red Cape": {
-    "prereq": "65000"
-  },
-  "Red Rider": {
-    "prereq": "5000"
-  },
-  "Saki Mitama": {
-    "pairs": [
-      "Sylph x Undine"
-    ]
-  },
-  "Slime": {
-    "prereq": "accident"
-  },
-  "Sylph": {
-    "pairs": [
-      "Aeros x Flaemis"
-    ]
-  },
-  "Undine": {
-    "pairs": [
-      "Erthys x Aquans"
-    ]
-  },
-  "White Rider": {
-    "prereq": "5000"
-  },
-  "Yakubyou-gami": {
-    "prereq": "35000"
-  },
-  "Yomi-kugutsu A": {
-    "prereq": "15000"
-  },
-  "Yomi-kugutsu B": {
-    "prereq": "35000"
-  },
-  "Yomi-kugutsu C": {
-    "prereq": "65000"
-  },
-  "Zombie": {
-    "prereq": "5000"
-  },
-  "Zombie Guard": {
-    "prereq": "15000"
-  },
-  "Zombie Lady": {
-    "prereq": "5000"
-  },
-  "Zombie Officer": {
-    "prereq": "5000"
-  }
+  "Sylph": ["Aeros x Flaemis"],
+  "Undine": ["Erthys x Aquans"],
+  "Ara Mitama": ["Aeros x Aquans", "Aquans x Flaemis", "Erthys x Sylph", "Flaemis x Undine"],
+  "Nigi Mitama": ["Aeros x Undine", "Erthys x Aeros", "Erthys x Flaemis", "Aquans x Sylph"],
+  "Kusi Mitama": ["Aeros x Sylph", "Aquans x Undine", "Erthys x Undine", "Flaemis x Sylph"],
+  "Saki Mitama": ["Sylph x Undine"],
+  "Slime": [],
+  "Blob": [],
+  "Black Ooze": [],
+  "Zombie": [],
+  "Zombie Lady": [],
+  "Zombie Officer": [],
+  "Zombie Guard": [],
+  "Yomi-kugutsu A": [],
+  "Nesting Doll": [],
+  "Yomi-kugutsu B": [],
+  "Nesting Skull": [],
+  "Hiruko": [],
+  "Red Cape": [],
+  "Yomi-kugutsu C": [],
+  "White Rider": [],
+  "Red Rider": [],
+  "Binbou-gami": [],
+  "Yakubyou-gami": [],
+  "Alice": [],
+  "Black Rider": [],
+  "Pale Rider": []
 }

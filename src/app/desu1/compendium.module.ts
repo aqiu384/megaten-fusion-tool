@@ -76,15 +76,6 @@ for (const dataJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
   }
 }
 
-for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
-  SPECIAL_RECIPES_JSON[name] = { 'entries': entry };
-}
-
-SPECIAL_RECIPES_JSON['Ara Mitama'] = { pairs: ['Erthys x Aquans', 'Aeros x Flaemis'] };
-SPECIAL_RECIPES_JSON['Kusi Mitama'] = { pairs: ['Erthys x Flaemis', 'Aeros x Aquans'] };
-SPECIAL_RECIPES_JSON['Nigi Mitama'] = { pairs: ['Erthys x Aeros'] };
-SPECIAL_RECIPES_JSON['Saki Mitama'] = { pairs: ['Aquans x Flaemis'] };
-
 export const SMT_COMP_CONFIG: CompendiumConfig = {
   appTitle: 'Devil Survivor',
   gameTitles: { ds1: 'Devil Survivor', dso: 'Devil Survivor Overclocked' },

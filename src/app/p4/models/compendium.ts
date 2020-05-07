@@ -1,5 +1,6 @@
 import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
+import { JsonPipe } from '@angular/common';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -40,7 +41,8 @@ export class Compendium implements ICompendium {
           stats:   json['stats'],
           resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
           skills:  json['skills'],
-          fusion:  json['fusion'] || 'normal'
+          fusion:  json['fusion'] || 'normal',
+          prereq:  json['prereq'] || ''
         };
       }
     }
