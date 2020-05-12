@@ -143,6 +143,17 @@ export class Compendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
+    for (const race of this.compConfig.races) {
+      const currIngreds = ingredients[race];
+      const currResults = results[race];
+      const ingredsLen = currIngreds.length;
+      const resultsLen = currResults.length;
+
+      if (ingredsLen && resultsLen && currIngreds[ingredsLen - 1] !== currResults[resultsLen - 1]) {
+        currResults.push(100);
+      }
+    }
+
     for (const [names, included] of Object.entries(this._dlcDemons)) {
       if (!included) {
         for (const name of names.split(',')) {

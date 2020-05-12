@@ -4,7 +4,7 @@ export function fuseWithNormResult(name: string, compendium: Compendium, fusionC
   const recipes: NamePair[] = [];
 
   for (const [ ingRace, resultModifier ] of Object.entries(fusionChart.getElemFusions(name))) {
-    const ingLvls = compendium.getResultDemonLvls(ingRace);
+    const ingLvls = compendium.getResultDemonLvls(ingRace).filter(lvl => lvl < 100);
     const ingLvls2 = resultModifier < 0 ? ingLvls.slice(-1 * resultModifier) : ingLvls.slice(0, -1 * resultModifier);
     const resultLvls = resultModifier < 0 ? ingLvls.slice(0, resultModifier) : ingLvls.slice(resultModifier);
 
@@ -28,7 +28,7 @@ export function fuseWithSpecResult(name: string, compendium: Compendium, fusionC
 
     if (resultModifier) {
       const findResultLevelFun = (index, resultLvl) => ingLvl2 > resultLvl ? index + 1 : index;
-      const resultLvls = compendium.getResultDemonLvls(ingRace2);
+      const resultLvls = compendium.getResultDemonLvls(ingRace2).filter(lvl => lvl < 100);
       const resultLvlIndex = resultModifier + resultLvls.reduce(findResultLevelFun, 0);
 
       if (0 < resultLvlIndex && resultLvlIndex < resultLvls.length) {
