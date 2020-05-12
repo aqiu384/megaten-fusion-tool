@@ -16,13 +16,13 @@ import { fuseWithSameRace } from '../compendium/fusions/per-nonelem-fusions';
 import { fuseWithNormResult, fuseWithSpecResult } from '../compendium/fusions/smt-element-fusions';
 import { fuseTwoElements } from '../compendium/fusions/per-element-fusions';
 
-import { splitWithDiffRace, splitWithElement } from '../compendium/fusions/smt-nonelem-fissions';
+import { splitWithDiffRace } from '../compendium/fusions/smt-nonelem-fissions';
 import { splitWithSameRace } from '../compendium/fusions/per-nonelem-fissions';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = new NormalFusionCalculator(
-    [ splitWithDiffRace, splitWithSameRace, splitWithElement ],
+    [ splitWithDiffRace, splitWithSameRace ],
     [ ]
   );
 

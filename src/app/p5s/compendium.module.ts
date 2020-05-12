@@ -24,6 +24,8 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import PAIR_RECIPES_JSON from './data/pair-recipes.json';
+import DOWN_RECIPES_JSON from './data/down-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 
 import FUSION_CHART_JSON from '../p5/data/fusion-chart.json';
 import INHERIT_TYPES_JSON from '../p5/data/inheritance-types.json';
@@ -54,6 +56,10 @@ for (const entry of Object.values(PARTY_DATA_JSON)) {
   entry['fusion'] = 'party';
 }
 
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name]['prereq'] = prereq;
+}
+
 export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona 5 Scramble',
   appCssClasses: ['p5'],
@@ -72,7 +78,8 @@ export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
   skillData: [SKILL_DATA_JSON],
   normalTable: FUSION_CHART_JSON,
   specialRecipes: SPECIAL_RECIPES_JSON,
-  pairRecipes: PAIR_RECIPES_JSON
+  pairRecipes: PAIR_RECIPES_JSON,
+  downRecipes: DOWN_RECIPES_JSON
 };
 
 @NgModule({

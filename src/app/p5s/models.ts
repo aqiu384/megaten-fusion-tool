@@ -8,6 +8,16 @@ export interface Skill extends BaseSkill {
   transfer: { demon: string, level: number }[];
 }
 
+export interface MultiFusionTrio {
+  price: number;
+  names1: string[];
+  lvl1: number;
+  names2: string[];
+  lvl2: number;
+  names3: string[];
+  lvl3: number;
+}
+
 export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
 
@@ -25,4 +35,5 @@ export interface CompendiumConfig extends BaseComp {
   normalTable: any;
   specialRecipes: { [result: string]: string[] };
   pairRecipes: { [result: string]: string[] };
+  downRecipes: { [result: string]: string[] };
 }

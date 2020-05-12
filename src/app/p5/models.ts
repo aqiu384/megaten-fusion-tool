@@ -14,6 +14,14 @@ export interface Skill extends BaseSkill {
   transfer: { demon: string, level: number }[];
 }
 
+export interface MultiFusionPair {
+  price: number;
+  names1: string[];
+  lvl1: number;
+  names2: string[];
+  lvl2: number;
+}
+
 export interface CompendiumConfig extends BaseComp {
   races: string[];
   baseStats: string[];
@@ -31,9 +39,9 @@ export interface CompendiumConfig extends BaseComp {
   skillData: any[];
   enemyData: any[];
 
-  normalTable;
-  elementTable;
-  specialRecipes;
+  normalTable: { races: string[], table: string[][] };
+  elementTable: { elems: string[], races: string[], table: number[][] };
+  specialRecipes: { [name: string]: string[] };
 
   dlcDemons: string[];
   downloadedDemons: string[];

@@ -19,22 +19,7 @@ const compendiumRoutes: Routes = [
     children: [
       {
         path: 'personas/:demonName',
-        component: DemonEntryContainerComponent,
-        children: [
-          {
-            path: 'fissions',
-            component: SmtFissionTableComponent
-          },
-          {
-            path: 'fusions',
-            component: SmtFusionTableComponent
-          },
-          {
-            path: '**',
-            redirectTo: 'fissions',
-            pathMatch: 'full'
-          }
-        ]
+        component: DemonEntryContainerComponent
       },
       {
         path: 'personas',

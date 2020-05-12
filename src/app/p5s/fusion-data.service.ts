@@ -9,19 +9,15 @@ import { COMPENDIUM_CONFIG } from '../compendium/constants';
 import { CompendiumConfig } from './models';
 import { Compendium } from './models/compendium';
 
-import { splitNormal, fuseNormal } from '../compendium/fusions/p5s-nonelem-fusions';
-import { splitWithSameRace } from '../compendium/fusions/per-nonelem-fissions';
-import { fuseWithSameRace } from '../compendium/fusions/per-nonelem-fusions';
-
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = new NormalFusionCalculator(
-    [ splitWithSameRace, splitNormal ],
+    [ ],
     [ ]
   );
 
   fusionCalculator = new NormalFusionCalculator(
-    [ fuseWithSameRace, fuseNormal ],
+    [ ],
     [ ]
   );
 
