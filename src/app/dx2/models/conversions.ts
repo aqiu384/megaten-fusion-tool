@@ -30,7 +30,8 @@ const SPECIAL_FUSION_COSTS = {
   'Baal': 1500000 / 3,
   'Kartikeya': 1500000 / 3,
   'Neko Shogun': 840000 / 4,
-  'Lucifuge': Math.floor(1000000 / 3)
+  'Lucifuge': Math.floor(1000000 / 3),
+  'Anat': Math.floor(5000000 / 3)
 }
 
 function estimateMagCost(grade1, grade2, gradeR): number {

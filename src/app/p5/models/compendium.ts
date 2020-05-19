@@ -191,7 +191,7 @@ export class Compendium implements ICompendium {
           ingredients[demon.race].push(demon.lvl);
         }
 
-        if (!this.specialRecipes.hasOwnProperty(name)) {
+        if (!this.specialRecipes.hasOwnProperty(name) || demon.race === 'World') {
           results[demon.race].push(demon.lvl);
         }
       }
