@@ -50,7 +50,8 @@ export class Compendium implements ICompendium {
         ailments: [],
         inherit:  json['inherit'],
         code:     json['code'] || 0,
-        fusion:   json['fusion'] || 'normal'
+        fusion:   json['fusion'] || 'normal',
+        prereq:   json['prereq'] || ''
       };
     }
 

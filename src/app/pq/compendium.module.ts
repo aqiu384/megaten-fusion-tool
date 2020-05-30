@@ -16,6 +16,7 @@ import DLC_DATA_JSON from './data/dlc-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
@@ -65,6 +66,10 @@ for (const demon of Object.values(DLC_DATA_JSON)) {
 for (const enemy of Object.values(ENEMY_DATA_JSON)) {
   enemy['stats'] = enemy['stats'].slice(0, 3);
   enemy['resists'] = enemy['resists'].slice(0, 9);
+}
+
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name]['prereq'] = prereq;
 }
 
 export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {

@@ -85,6 +85,7 @@ export class Compendium implements ICompendium {
         if (ingred.includes(' x ')) {
           const [name1, name2] = ingred.split(' x ');
           pairList.push({ name1, name2 });
+          entry.fusion = 'special';
         } else {
           entryList.push(ingred);
         }

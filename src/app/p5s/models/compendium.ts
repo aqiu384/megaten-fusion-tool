@@ -215,10 +215,23 @@ export class Compendium implements ICompendium {
     const recipes: MultiFusionTrio[] = [];
 
     const upperIngreds = this.getIngredientDemonLvls(race).filter(l => l > lvl).map(l => this.reverseLookupDemon(race, l));
+    const downIngreds = this.compConfig.downRecipes[name] || [];
 
     if (upperIngreds.length > 0) {
-      const names1 = upperIngreds.slice(1).concat(this.compConfig.downRecipes[name] || []);
+      const names1 = upperIngreds.slice(1);
       const names2 = upperIngreds.slice(0, 1);
+
+      if (downIngreds.length > 0) {
+        const demon1 = this.getDemon(downIngreds[0]);
+        const demon2 = this.getDemon(names2[0]);
+
+        recipes.push({
+          price: demon1.price + demon2.price,
+          names1: downIngreds, lvl1: demon1.lvl,
+          names2, lvl2: demon2.lvl,
+          names3: [], lvl3: 0
+        });
+      }
 
       if (names1.length > 0) {
         const demon1 = this.getDemon(names1[0]);

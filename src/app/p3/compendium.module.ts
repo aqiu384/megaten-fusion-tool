@@ -72,7 +72,9 @@ for (const [demon, recipe] of Object.entries(PAIR_SPECIAL_RECIPES_JSON)) {
 }
 
 for (const [demon, recipe] of Object.entries(VAN_SPECIAL_RECIPES_JSON)) {
-  FES_SPECIAL_RECIPES_JSON[demon] = recipe;
+  if (!FES_SPECIAL_RECIPES_JSON[demon]) {
+    FES_SPECIAL_RECIPES_JSON[demon] = recipe;
+  }
 }
 
 for(const [name, prereq] of Object.entries(VAN_FUSION_PREREQS_JSON)) {

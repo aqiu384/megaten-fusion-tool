@@ -16,6 +16,7 @@ import DLC_DATA_JSON from './data/dlc-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import PARTY_SKILLS_JSON from './data/party-skills.json';
 import BOSS_SKILLS_JSON from './data/boss-skills.json';
@@ -74,6 +75,9 @@ for (const [code, name] of Object.entries(SKILL_CODES_JSON)) {
   SKILL_DATA_JSON[name]['code'] = parseInt(code, 10);
 }
 
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name]['prereq'] = prereq;
+}
 
 export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona Q2: New Cinema Labyrinth',

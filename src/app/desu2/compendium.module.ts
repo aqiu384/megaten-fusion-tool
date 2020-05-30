@@ -15,6 +15,7 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../desu1/data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/van-special-recipes.json';
 import REC_SPECIAL_RECIPES_JSON from './data/rec-special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 
 import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
@@ -80,6 +81,12 @@ for (const dataJson of [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON]) {
       } else {
         entry['skills'][enrskillLookup[entry.race]] = 0;
       }
+    }
+  }
+
+  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    if (dataJson[name]) {
+      dataJson[name]['prereq'] = prereq
     }
   }
 }
