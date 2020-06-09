@@ -12,46 +12,20 @@ export class SkillCostToStringPipe implements PipeTransform {
   }
 }
 
-const SKILL_LVLS = {
-  110: 'Common Arch',
-  111: 'Aragami Arch',
-  112: 'Protect Arch',
-  113: 'Psychic Arch',
-  114: 'Element Arch',
-  115: 'Aragami Gacha',
-  116: 'Protect Gacha',
-  117: 'Psychic Gacha',
-  118: 'Element Gacha'
-};
-
 @Pipe({ name: 'skillLevelToString' })
 export class SkillLevelToStringPipe implements PipeTransform {
   transform(value: number): string {
     if (value <= 0) { return 'Innate'; }
-    if (value < 100) { return value.toString(); }
-    if (value < 120) { return SKILL_LVLS[value]; }
+    if (value < 120) { return value.toString(); }
     return String.fromCharCode(Math.floor(value / 100) + 32) + String.fromCharCode(value % 100 + 32);
   }
 }
-
-const SKILL_LVL_ABBRS = {
-  110: '(Ac)',
-  111: '(Aa)',
-  112: '(Ap)',
-  113: '(Ay)',
-  114: '(Ae)',
-  115: '(Ga)',
-  116: '(Gp)',
-  117: '(Gy)',
-  118: '(Ge)'
-};
 
 @Pipe({ name: 'skillLevelToShortString' })
 export class SkillLevelToShortStringPipe implements PipeTransform {
   transform(value: number): string {
     if (value <= 0) { return ''; }
-    if (value < 100) { return `(${value.toString()})`; }
-    if (value < 120) { return SKILL_LVL_ABBRS[value]; }
+    if (value < 120) { return `(${value.toString()})`; }
     return '(' + String.fromCharCode(Math.floor(value / 100) + 32) + String.fromCharCode(value % 100 + 32) + ')';
   }
 }

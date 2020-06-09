@@ -912,11 +912,22 @@
     "resists": "w---nw-",
     "stats": [858, 175, 58, 104, 236, 165]
   },
+  "Guts": {
+    "ai": "atk",
+    "arch": ["Good Aim", "Megaton Raid", "Charge", "Butcher", "Null Phys"],
+    "base": ["Savage Glee", "The Struggler", "Dragon Slayer"],
+    "cnum": 0,
+    "gach": ["Evade", "Phys Amp", "Myriad Arrows", "Null Dark"],
+    "grade": 80,
+    "race": "Hero",
+    "resists": "s-----s",
+    "stats": [1220, 193, 79, 181, 156, 158]
+  },
   "Halloween Jack": {
     "ai": "atk",
     "arch": ["Mahalantine"],
     "base": ["Agilao", "Mudoon", "Endure"],
-    "cnum": 82,
+    "cnum": 0,
     "grade": 65,
     "race": "Fairy",
     "resists": "-dw----",
@@ -1011,7 +1022,7 @@
     "ai": "atk",
     "arch": ["Mahafrosty"],
     "base": ["Bufula", "Hamaon", "Endure"],
-    "cnum": 81,
+    "cnum": 0,
     "grade": 63,
     "race": "Fairy",
     "resists": "-wd----",
@@ -1849,6 +1860,17 @@
     "resists": "-----wn",
     "stats": [863, 87, 201, 105, 118, 152]
   },
+  "Mozgus": {
+    "ai": "atk",
+    "arch": ["Strength Amp III", "Earthquake", "War Cry", "Faithful Counter", "Null Fire"],
+    "base": ["Muscle Punch", "Bloody Scripture", "God 1000 Fist Cannon"],
+    "cnum": 0,
+    "gach": ["Savage Glee", "Great Aim", "Life Surge", "Life Aid"],
+    "grade": 80,
+    "race": "Fiend",
+    "resists": "nw---ss",
+    "stats": [1310, 200, 68, 200, 111, 169]
+  },
   "Nadja": {
     "ai": "atk",
     "arch": ["Dmg Panel V II", "Mazan", "Media", "Fast Recovery", "Null Force"],
@@ -2400,6 +2422,17 @@
     "resists": "---wns-",
     "stats": [924, 187, 99, 118, 137, 146]
   },
+  "Schierke": {
+    "ai": "atk",
+    "arch": ["Magic Amp III", "Thunder Reign", "Concentrate", "Epic Recovery", "Null Light"],
+    "base": ["Mana Aid", "Elemental Magic", "Summon Elementals"],
+    "cnum": 0,
+    "gach": ["Maziodyne", "Butcher", "Silent Prayer", "Null Ice"],
+    "grade": 80,
+    "race": "Witch",
+    "resists": "-ssss--",
+    "stats": [966, 106, 190, 127, 153, 169]
+  },
   "Seraph": {
     "ai": "atk",
     "arch": ["Merciless Blow", "Thunder Reign", "Salvation", "Light Enhancement", "Repel Elec"],
@@ -2527,6 +2560,17 @@
     "race": "Lady",
     "resists": "-wd----",
     "stats": [1042, 85, 206, 142, 135, 163]
+  },
+  "Skull Knight": {
+    "ai": "atk",
+    "arch": ["Strength Amp III", "Hades Blast", "Offensive Cry", "Master Assassin", "Repel Phys"],
+    "base": ["Great Aim", "Foe of Demons", "Sword of Actuation"],
+    "cnum": 0,
+    "gach": ["God's Hand", "Infernal Mask", "Enduring Soul", "Null Light"],
+    "grade": 90,
+    "race": "Fiend",
+    "resists": "n----sn",
+    "stats": [1122, 217, 109, 160, 147, 150]
   },
   "Sleipnir": {
     "ai": "atk",

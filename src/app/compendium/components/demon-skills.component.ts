@@ -11,7 +11,7 @@ import { Compendium, Skill } from '../models';
           <th [attr.colSpan]="skillHeaderLen">{{ title }}</th>
         </tr>
         <tr>
-          <th>Element</th>
+          <th>Elem</th>
           <th>Name</th>
           <th>Cost</th>
           <th>Effect</th>

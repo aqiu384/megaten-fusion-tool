@@ -60,7 +60,8 @@ export class AppComponent implements OnInit {
     const homeGame = { game: 'Home', tool: 'home', srcs: ['https://github.com/aqiu384//megaten-fusion-tool'] };
     const reportGame = { game: 'Report Issue', tool: 'https://github.com/aqiu384/megaten-fusion-tool/issues', srcs: [] };
 
-    const navButtons = [homeGame].concat(MEGATEN_FUSION_TOOLS).concat([reportGame]);
+    const menuTools = MEGATEN_FUSION_TOOLS.filter(tool => tool.menu)
+    const navButtons = [homeGame].concat(menuTools).concat([reportGame]);
     const fillerGap = navButtons.length % this.navsPerRow;
     const fillerLen = fillerGap ? this.navsPerRow - fillerGap : 0;
     const fillerNav = { game: '', tool: '', srcs: [] };
@@ -69,7 +70,7 @@ export class AppComponent implements OnInit {
       navButtons.push(fillerNav);
     }
 
-    for (let i = 0; i < MEGATEN_FUSION_TOOLS.length + 1; i += this.navsPerRow) {
+    for (let i = 0; i < menuTools.length + 1; i += this.navsPerRow) {
       this.navRows.push(navButtons.slice(i, i + this.navsPerRow));
     }
   }

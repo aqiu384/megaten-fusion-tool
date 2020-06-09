@@ -64,15 +64,15 @@ export const ResistanceElements = [
 ];
 
 export const SkillElements = ResistanceElements.concat(
+  'alm',
   'ail',
   'rec',
-  'alm',
   'sup',
   'pas'
 );
 
 export const BaseStats = [
-  '★', 'HP', 'St', 'Ma', 'Vi', 'Ag', 'Lu'
+  '★', 'HP', 'St', 'Ma', 'Vi', 'Ag', 'Lu', 'Nu'
 ];
 
 export const ResistCodes = {

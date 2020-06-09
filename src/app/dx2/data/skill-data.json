@@ -1,11 +1,4 @@
 {
-  "Ascension": {
-    "cost": 6,
-    "effect": "Light Pierce, Revives random Ally with 25% HP, 6 uses",
-    "elem": "lig",
-    "power": 160,
-    "target": "1 Foe"
-  },
   "Acid Breath": {
     "cost": 6,
     "effect": "Rakunda + Sukunda",
@@ -43,10 +36,10 @@
   },
   "Agile Cry": {
     "cost": 6,
-    "effect": "Sukukaja to Allies + Sukunda to Foes",
+    "effect": "Sukukaja for allies + Sukunda",
     "elem": "sup",
     "points": 15,
-    "target": "Universal"
+    "target": "All Foes"
   },
   "Agility Amp I": {
     "effect": "Agility +5",
@@ -102,6 +95,13 @@
   "Arms Mastery": {
     "effect": "Phys dmg +15%, Phys acc +15%",
     "elem": "pas"
+  },
+  "Ascension": {
+    "cost": 6,
+    "effect": "Light Pierce, Revives random Ally with 25% HP, 6 uses",
+    "elem": "lig",
+    "power": 160,
+    "target": "1 Foe"
   },
   "Ashura": {
     "cost": 8,
@@ -182,8 +182,8 @@
   },
   "Barong Dance": {
     "cost": 7,
-    "effect": "Recover HP + Luster Candy, 3 uses",
-    "elem": "sup",
+    "effect": "Luster Candy, 3 uses",
+    "elem": "rec",
     "power": 95,
     "target": "All Allies"
   },
@@ -237,7 +237,7 @@
   },
   "Binge Eating": {
     "cost": 6,
-    "effect": "Drain 40% dmg dealt",
+    "effect": "Drains 40% dmg dealt",
     "elem": "phy",
     "points": 8,
     "power": 140,
@@ -245,13 +245,13 @@
   },
   "Blade of Terror": {
     "cost": 6,
-    "effect": "Removes 25% current HP (<1000), 30% Bind",
-    "elem": "phy",
+    "effect": "Reduces all foes current HP by 25% (<1000), 30% Bind",
+    "elem": "alm",
     "target": "All Foes"
   },
   "Bleeder": {
     "cost": 6,
-    "effect": "Remove 2 MP",
+    "effect": "Removes 2 MP",
     "elem": "phy",
     "points": 8,
     "power": 120,
@@ -272,13 +272,17 @@
     "points": 6,
     "target": "All Allies"
   },
+  "Bloodshed": {
+    "effect": "After using Blade of Terror, Casts Heatwave bypassing Counter skills",
+    "elem": "pas"
+  },
   "Bloody Glee": {
     "effect": "Crit rate +15%",
     "elem": "pas",
     "points": 8
   },
-  "Bloodshed": {
-    "effect": "After using Blade of Terror, Casts Heatwave bypassing Counter skills",
+  "Bloody Scripture": {
+    "effect": "Dmg dealt +15% and received -30% when HP is full",
     "elem": "pas"
   },
   "Bolt Storm": {
@@ -338,7 +342,7 @@
     "elem": "pas"
   },
   "Ce Acatl": {
-    "effect": "Fire Pierce + Enduring Soul (Full HP + 1 Press Turn)",
+    "effect": "Fire Pierce + Endure with 100% HP and 1 Press Turn",
     "elem": "pas"
   },
   "Ce Acatls' Return": {
@@ -396,11 +400,11 @@
     "elem": "pas"
   },
   "Curse of Anguish": {
-    "effect": "Dmg dealt +15%, Dmg received -15% from Cursed Foes",
+    "effect": "Dmg dealt +15% and received -15% from Cursed Foes",
     "elem": "pas"
   },
   "Curse of Distress": {
-    "effect": "Dmg dealt +10%, Dmg received -10% from Cursed Foes",
+    "effect": "Dmg dealt +10% and received -10% from Cursed Foes",
     "elem": "pas"
   },
   "Cursedi": {
@@ -427,7 +431,7 @@
   },
   "Dark Pandemic": {
     "cost": 5,
-    "effect": "Dekaja + Tarunda, Rakunda, or Sukunda",
+    "effect": "Dekaja + Tarunda or Rakunda or Sukunda",
     "elem": "sup",
     "target": "All Foes"
   },
@@ -485,7 +489,7 @@
     "points": 18
   },
   "Death Lust": {
-    "effect": "Casts Mahamarin Karin on 1st turn, Dmg +25% to Charmed Foes",
+    "effect": "Dmg +25% to Charmed foes, 30% Charm to all foes during first turn",
     "elem": "pas",
     "target": "All Foes"
   },
@@ -514,10 +518,10 @@
   },
   "Defensive Cry": {
     "cost": 6,
-    "effect": "Rakukaja to Allies + Tarunda to Foes",
+    "effect": "Rakukaja for allies + Tarunda",
     "elem": "sup",
     "points": 15,
-    "target": "Universal"
+    "target": "All Foes"
   },
   "Dekaja": {
     "cost": 5,
@@ -557,7 +561,7 @@
   },
   "Dia": {
     "cost": 4,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 1,
     "power": 50,
@@ -565,7 +569,7 @@
   },
   "Diara": {
     "cost": 5,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 5,
     "power": 90,
@@ -573,7 +577,7 @@
   },
   "Diara L": {
     "cost": 4,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 5,
     "power": 90,
@@ -581,7 +585,7 @@
   },
   "Diarahan": {
     "cost": 7,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 11,
     "power": 170,
@@ -589,7 +593,7 @@
   },
   "Diarama": {
     "cost": 6,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 8,
     "power": 130,
@@ -604,7 +608,7 @@
   },
   "Discord": {
     "cost": 3,
-    "effect": "Removes Charge, Concentrate, and Might",
+    "effect": "Removes Charge + Concentrate + Might",
     "elem": "sup",
     "points": 6,
     "target": "All Foes"
@@ -646,6 +650,13 @@
   "Dragon Sense": {
     "effect": "Phys acc +15%, Phys eva +15%",
     "elem": "pas"
+  },
+  "Dragon Slayer": {
+    "cost": 6,
+    "effect": "30% crit, Pierce, Nullifies counter effects, 2nd cast Crit +20%, Dmg +20, Nullifies endure effects",
+    "elem": "phy",
+    "power": 115,
+    "target": "All Foes"
   },
   "Drain Dark": {
     "effect": "Drain Dark dmg",
@@ -693,7 +704,7 @@
   },
   "Earthquake": {
     "cost": 7,
-    "effect": "Dmg scales with Pdef",
+    "effect": "Scales with Pdef",
     "elem": "phy",
     "points": 10,
     "power": 150,
@@ -701,7 +712,7 @@
   },
   "Eat Whole": {
     "cost": 5,
-    "effect": "Drain 25% dmg dealt",
+    "effect": "Drains 25% dmg dealt",
     "elem": "phy",
     "points": 6,
     "power": 120,
@@ -732,14 +743,21 @@
     "elem": "pas",
     "points": 16
   },
-  "Endure": {
-    "effect": "Revive once per battle with 1 HP",
-    "elem": "pas",
-    "points": 6
+  "Elemental Magic": {
+    "cost": 5,
+    "effect": "Deals Fire, Ice, or Force dmg",
+    "elem": "alm",
+    "power": 100,
+    "target": "All Foes"
   },
   "Endless War": {
     "effect": "Phys Pierce, Crit hit +20% and Crit dmg +10% to all Allies",
     "elem": "pas"
+  },
+  "Endure": {
+    "effect": "Revive once per battle with 1 HP",
+    "elem": "pas",
+    "points": 6
   },
   "Enduring Soul": {
     "effect": "Revive once per battle with 200 HP",
@@ -796,7 +814,7 @@
     "points": 16
   },
   "Euphoric Frenzy": {
-    "effect": "Counter Phys damage with 50% Charm",
+    "effect": "Counter Phys dmg with 50% Charm",
     "elem": "pas"
   },
   "Evade": {
@@ -898,6 +916,10 @@
     "effect": "Ally Light dmg +10%, Recover 1 MP when clearing wave",
     "elem": "pas"
   },
+  "Foe of Demons": {
+    "effect": "Phys Pierce, Casts Rakukaja + Sukukaja for 1 turn at the start of enemy phase",
+    "elem": "pas"
+  },
   "Fog Breath": {
     "cost": 6,
     "effect": "Tarunda + Sukunda",
@@ -988,10 +1010,14 @@
   },
   "Go to Hell!": {
     "cost": 8,
-    "effect": "80% Curse, Dark Pierce",
+    "effect": "80% Curse, Pierce",
     "elem": "dar",
     "power": 100,
     "target": "All Foes"
+  },
+  "God 1000 Fist Cannon": {
+    "effect": "Casts A6 hits of 20 phys dmg with 30% crit, Phys Pierce, and PDef bonus when enemy land a crit",
+    "elem": "pas"
   },
   "God's Blessing": {
     "effect": "Ally Force and Light dmg +10%, Casts Mediara + Rakukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
@@ -1031,15 +1057,15 @@
     "elem": "pas"
   },
   "Gomorrah B": {
-    "cost": 8,
-    "effect": "5 hits, 50% crit, 50% Charm, Dmg scales with Patk and Matk, Phys Pierce, 3rd turn onwards only",
+    "cost": 7,
+    "effect": "5 hits, 50% crit, 50% Charm, Dmg scales with 70% Patk and 30% Matk, Phys Pierce, 2nd turn onwards only",
     "elem": "phy",
     "power": 50,
     "target": "All Foes"
   },
   "Gomorrah J": {
-    "cost": 8,
-    "effect": "5 hits, 50% crit, 50% Bind, Dmg scales with Patk and Matk, Phys Pierce, 3rd turn onwards only",
+    "cost": 7,
+    "effect": "50% crit, 50% Bind, Dmg scales with 30% Patk and 70% Matk, Phys Pierce, 2nd turn onwards only",
     "elem": "phy",
     "power": 180,
     "target": "All Foes"
@@ -1060,11 +1086,11 @@
     "target": "Rand Foes"
   },
   "Guardian of the East": {
-    "effect": "Phys Pierce, Add 1 press turn when attacking first",
+    "effect": "Phys Pierce, Adds 1 Press Turn when attacking first",
     "elem": "pas"
   },
   "Guards of Tartarus": {
-    "effect": "Ally Multi-target dmg received -15%",
+    "effect": "Ally multi-target dmg received -15%",
     "elem": "pas"
   },
   "Guilty": {
@@ -1126,7 +1152,7 @@
   },
   "Hassou Tobi": {
     "cost": 7,
-    "effect": "8 hits, Phys Pierce",
+    "effect": "8 hits, Pierce",
     "elem": "phy",
     "power": 35,
     "target": "Rand Foes"
@@ -1194,6 +1220,13 @@
   },
   "Herculean Strike": {
     "cost": 5,
+    "elem": "phy",
+    "points": 4,
+    "power": 100,
+    "target": "All Foes"
+  },
+  "Herculean Strike L": {
+    "cost": 4,
     "elem": "phy",
     "points": 4,
     "power": 100,
@@ -1348,7 +1381,7 @@
   },
   "Last Resort": {
     "cost": 6,
-    "effect": "30% current foe HP (1000 max), Kills user",
+    "effect": "Reduces all foes current HP by 30% (<1000), Kills user",
     "elem": "alm",
     "target": "All Foes"
   },
@@ -1396,7 +1429,7 @@
   },
   "Light Devourer": {
     "cost": 6,
-    "effect": "Dark Pierce, Drains 50% dmg dealt",
+    "effect": "Pierce, Drains 50% dmg dealt",
     "elem": "dar",
     "power": 150,
     "target": "1 Foe"
@@ -1581,13 +1614,6 @@
     "power": 50,
     "target": "All Foes"
   },
-  "Mahalantine": {
-    "cost": 7,
-    "effect": "2 hits",
-    "elem": "fir",
-    "power": 50,
-    "target": "All Foes"
-  },
   "Mahaju": {
     "cost": 6,
     "effect": "40% Curse",
@@ -1600,6 +1626,13 @@
     "effect": "50% Curse",
     "elem": "ail",
     "points": 9,
+    "target": "All Foes"
+  },
+  "Mahalantine": {
+    "cost": 7,
+    "effect": "2 hits",
+    "elem": "fir",
+    "power": 50,
     "target": "All Foes"
   },
   "Mahama": {
@@ -1881,9 +1914,16 @@
     "points": 5,
     "target": "All Allies"
   },
+  "Mecursedi": {
+    "cost": 4,
+    "effect": "Cures Curse, Curse resist +30% for 1 wave",
+    "elem": "rec",
+    "points": 5,
+    "target": "All Allies"
+  },
   "Media": {
     "cost": 6,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 2,
     "power": 25,
@@ -1891,7 +1931,15 @@
   },
   "Mediara": {
     "cost": 7,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
+    "elem": "rec",
+    "points": 5,
+    "power": 60,
+    "target": "All Allies"
+  },
+  "Mediara L": {
+    "cost": 6,
+    "effect": "9 uses",
     "elem": "rec",
     "points": 5,
     "power": 60,
@@ -1899,7 +1947,7 @@
   },
   "Mediarahan": {
     "cost": 9,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 11,
     "power": 130,
@@ -1907,7 +1955,7 @@
   },
   "Mediarama": {
     "cost": 8,
-    "effect": "Recover HP, 9 uses",
+    "effect": "9 uses",
     "elem": "rec",
     "points": 8,
     "power": 95,
@@ -1953,13 +2001,6 @@
     "points": 12,
     "power": 120,
     "target": "All Foes"
-  },
-  "Mecursedi": {
-    "cost": 4,
-    "effect": "Cures Curse, Curse resist +30% for 1 wave",
-    "elem": "rec",
-    "points": 5,
-    "target": "All Allies"
   },
   "Memutudi": {
     "cost": 4,
@@ -2007,7 +2048,7 @@
   },
   "Million Stab": {
     "cost": 8,
-    "effect": "4 hits, Phys Pierce when in Might",
+    "effect": "4 hits, Pierce when in Might",
     "elem": "phy",
     "power": 35,
     "target": "All Foes"
@@ -2100,7 +2141,7 @@
   },
   "Muscle Punch": {
     "cost": 6,
-    "effect": "Dmg scales with Pdef",
+    "effect": "Scales with Pdef",
     "elem": "phy",
     "points": 9,
     "power": 170,
@@ -2243,10 +2284,10 @@
   },
   "Offensive Cry": {
     "cost": 6,
-    "effect": "Tarukaja to Allies + Rakunda to Foes",
+    "effect": "Tarukaja for allies + Rakunda",
     "elem": "sup",
     "points": 15,
-    "target": "Universal"
+    "target": "All Foes"
   },
   "Oni-Kagura": {
     "cost": 5,
@@ -2258,7 +2299,7 @@
   },
   "Orlean Prayer": {
     "cost": 6,
-    "effect": "Recover HP and 3 MP, 5 uses",
+    "effect": "130 rec and recover 3 MP, 5 uses",
     "elem": "rec",
     "power": 130,
     "target": "1 Ally"
@@ -2402,16 +2443,16 @@
     "effect": "Casts Dekaja + Dekunda when enemy phase starts",
     "elem": "pas"
   },
-  "Rains of Canaan": {
-    "effect": "Ally Force dmg and ailment recovery rate +10%",
-    "elem": "pas"
-  },
   "Ragnarok": {
     "cost": 7,
-    "effect": "Dmg scales with 20% Patk",
+    "effect": "Scales with 20% Patk",
     "elem": "fir",
     "power": 215,
     "target": "1 Foe"
+  },
+  "Rains of Canaan": {
+    "effect": "Ally Force dmg and ailment recovery rate +10%",
+    "elem": "pas"
   },
   "Rakukaja": {
     "cost": 5,
@@ -2483,7 +2524,7 @@
   },
   "Red Zone": {
     "cost": 7,
-    "effect": "Might, next attack will crit, 3 uses",
+    "effect": "Rebellion, 3 uses",
     "elem": "sup",
     "target": "All Allies"
   },
@@ -2598,7 +2639,7 @@
   },
   "Salvation": {
     "cost": 9,
-    "effect": "Recover HP, Cures all ailments, 3 uses",
+    "effect": "Cures all ailments, 3 uses",
     "elem": "rec",
     "points": 15,
     "power": 95,
@@ -2675,7 +2716,7 @@
     "effect": "Cures all ailments",
     "elem": "rec",
     "points": 8,
-    "target": "Universal"
+    "target": "All Allies and Foes"
   },
   "Skanda": {
     "effect": "Ally Phys acc +15% and Crit rate +20%",
@@ -2683,7 +2724,7 @@
   },
   "Slaughter All": {
     "cost": 7,
-    "effect": "30% crit, Dmg scales with Patk, Nullifies endure effects",
+    "effect": "30% crit, Scales with Patk, Nullifies endure effects",
     "elem": "alm",
     "power": 210,
     "target": "1 Foe"
@@ -2741,16 +2782,23 @@
   },
   "Sukukaja": {
     "cost": 5,
-    "effect": "Acc/eva +20% for 3 turns",
+    "effect": "Acc/Eva +20% for 3 turns",
     "elem": "sup",
     "points": 6,
     "target": "All Allies"
   },
   "Sukunda": {
     "cost": 5,
-    "effect": "Acc/eva -20% for 3 turns",
+    "effect": "Acc/Eva -20% for 3 turns",
     "elem": "sup",
     "points": 6,
+    "target": "All Foes"
+  },
+  "Summon Elementals": {
+    "cost": 7,
+    "effect": "Pierce, Available every 2 turns Deals Fire (Rakunda), Ice (Tarunda), or Force (Sukunda) dmg",
+    "elem": "alm",
+    "power": 140,
     "target": "All Foes"
   },
   "Sunrise": {
@@ -2774,6 +2822,13 @@
     "elem": "phy",
     "points": 6,
     "power": 120,
+    "target": "1 Foe"
+  },
+  "Sword of Actuation": {
+    "cost": 6,
+    "effect": "Can crit, Nullifies endure effects, Prevents revival of foes killed by attack",
+    "elem": "alm",
+    "power": 160,
     "target": "1 Foe"
   },
   "Tag": {
@@ -2805,7 +2860,7 @@
   },
   "Taunt": {
     "cost": 3,
-    "effect": "Tarukaja + Rakunda to all Foes",
+    "effect": "Tarukaja + Rakunda",
     "elem": "sup",
     "points": 8,
     "target": "All Foes"
@@ -2865,9 +2920,13 @@
     "effect": "Fire Pierce. Every 3rd turn, casts 5 hits of 40 fire dmg and Concentrate",
     "elem": "pas"
   },
+  "The Struggler": {
+    "effect": "Crit +25%, Phys hit +20%, Endure with 300 HP",
+    "elem": "pas"
+  },
   "Third Eye": {
     "cost": 8,
-    "effect": "Almighty Phys, Dmg scales with Matk",
+    "effect": "Can crit, Scales with Matk",
     "elem": "alm",
     "power": 130,
     "target": "All Foes"
@@ -3036,13 +3095,6 @@
     "effect": "Phys Pierce + Imposing Stance + Death Counter 100%",
     "elem": "pas"
   },
-  "Wrathful Flame": {
-    "cost": 6,
-    "effect": "3 hits, Rakunda",
-    "elem": "fir",
-    "power": 60,
-    "target": "One Foe"
-  },
   "Weakdi": {
     "cost": 3,
     "effect": "Cures Weak, Weak resist +30% for 1 wave",
@@ -3074,6 +3126,13 @@
     "points": 7,
     "power": 45,
     "target": "Rand Foes"
+  },
+  "Wrathful Flame": {
+    "cost": 6,
+    "effect": "3 hits, Rakunda",
+    "elem": "fir",
+    "power": 60,
+    "target": "One Foe"
   },
   "Yaksa Claw": {
     "effect": "Casts 3 random hits of 35 Phys dmg with 30% Bind when foe Poisoned",

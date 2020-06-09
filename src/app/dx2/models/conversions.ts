@@ -1,4 +1,4 @@
-import { NamePair, FusionEntry, FusionPair, Compendium } from '../../compendium/models';
+import { NamePair, FusionPair, Compendium } from '../../compendium/models';
 
 const RARITY_DELTA_COSTS = [
   [5,       5,       5,       5,       5,       5],
@@ -16,24 +16,6 @@ const BASE_ARCH_COEFFS = [
   1, 1, 1, 0.5, 0.7
 ];
 
-const SPECIAL_FUSION_COSTS = {
-  'Chupacabra': Math.floor(100 / 3),
-  'Kamiotoko': Math.floor(500 / 3),
-  'Kanbari': 1000 / 4,
-  'Hare of Inaba': Math.floor(5000 / 3),
-  'Kinmamon': 10000 / 4,
-  'Attis': 200000 / 4,
-  'Kama': 200000 / 4,
-  'Alilat': 500000 / 4,
-  'Parvati': 840000 / 3,
-  'Cybele': 1500000 / 3,
-  'Baal': 1500000 / 3,
-  'Kartikeya': 1500000 / 3,
-  'Neko Shogun': 840000 / 4,
-  'Lucifuge': Math.floor(1000000 / 3),
-  'Anat': Math.floor(5000000 / 3)
-}
-
 function estimateMagCost(grade1, grade2, gradeR): number {
   const rare1 = Math.floor(grade1 / 20) + 1;
   const rare2 = Math.floor(grade2 / 20) + 1;
@@ -45,18 +27,6 @@ function estimateMagCost(grade1, grade2, gradeR): number {
   const gradeCost = GRADE_DELTA_COSTS[Math.floor(gradeR / 10)];
 
   return rareCost ? (rareCost + Math.floor(gradeCost * gradeDelta)) : 5;
-}
-
-export function toFusionEntry(currentDemon: string, name: string, compendium: Compendium): FusionEntry {
-  const demon = compendium.getDemon(name);
-  const price = SPECIAL_FUSION_COSTS[currentDemon] || demon.price;
-
-  return {
-    price,
-    race1: demon.race,
-    lvl1: demon.lvl,
-    name1: name
-  };
 }
 
 export function toFusionPair(currentDemon: string, names: NamePair, compendium: Compendium): FusionPair {

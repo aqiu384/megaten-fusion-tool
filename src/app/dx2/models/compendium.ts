@@ -5,6 +5,7 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import DEMON_DATA_JSON from '../data/demon-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -32,6 +33,9 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
+    const archCodes = [3367, 3365, 3380, 3389, 3369];
+    const gachCodes = [3965, 3980, 3989, 3969];
+
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       const stars = Math.floor(json.grade / 20) + 1;
 
@@ -41,20 +45,31 @@ export class Compendium implements ICompendium {
         lvl:     json.grade,
         ai:      json.ai,
         fusion:  'normal',
-        reikos:  {},
         price:   Math.pow(json.grade, 3),
-        stats:   [stars].concat(json.stats),
+        stats:   [stars].concat(json.stats, [json.cnum]),
         resists: json.resists.split('').map(char => ResistCodes[char]),
-        skills:  json.base.reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
-        learned: json.arch.reduce((acc, skill, i) => { acc[skill] = 110 + i; return acc; }, {}),
-        gacha:   (json.gach || []).reduce((acc, skill, i) => { acc[skill] = 115 + i; return acc; }, {})
+        skills:  {},
+        baseSkills: [].concat(
+          json.base.map((skill) => ({ skill, source: 0 })),
+          json.arch.map((skill, i) => ({ skill, source: archCodes[i] })),
+          (json.gach || []).map((skill, i) => ({ skill, source: gachCodes[i] }))
+        )
       };
-
-      delete demons[name].learned['-'];
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      const powerUnit = json.elem === 'recovery' ? ' Rec ' : ' Dmg ';
+      let effect = json.effect;
+
+      if (json.power) {
+        effect = json.power ? json.power.toString() + (json.elem === 'rec' ? ' rec' : ' dmg') : '';
+        effect += json.target ? ' to ' + json.target.toLowerCase() : '';
+        effect += json.effect ? ', ' + json.effect : '';
+      } if (json.elem === 'ail') {
+        effect = json.effect + ' to ' + (json.target || '').toLowerCase();
+      } else if (json.elem === 'rec' || json.elem === 'sup') {
+        effect = (json.effect + ',').replace(',', ' for ' + (json.target || 'User').toLowerCase() + ',');
+        effect = effect.substring(0, effect.length - 1);
+      }
 
       skills[name] = {
         name,
@@ -62,7 +77,7 @@ export class Compendium implements ICompendium {
         power:   json.power || 0,
         cost:    json.cost + 1000 || 0,
         rank:    json.points || 99,
-        effect:  (json.power ? json.power.toString() + powerUnit : ' ') + (json.effect || ''),
+        effect,
         target:  json.target,
         level:   0,
         learnedBy: [],
@@ -70,18 +85,14 @@ export class Compendium implements ICompendium {
       };
     }
 
+    for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+      demons[name].fusion = 'accident';
+      demons[name].prereq = prereq;
+    }
+
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      if (json.length > 1) {
-        specialRecipes[name] = json;
-        demons[name].fusion = 'special';
-      } else if (json.length === 1) {
-        demons[name].fusion = 'recruit';
-        demons[name].prereq = json[0];
-      } else {
-        specialRecipes[name] = json;
-        demons[name].fusion = 'accident';
-        demons[name].prereq = 'Gacha only';
-      }
+      demons[name].fusion = 'special'
+      specialRecipes[name] = json;
     }
 
     for (const race of Races) {
@@ -90,21 +101,14 @@ export class Compendium implements ICompendium {
 
     for (const [name, demon] of Object.entries(demons)) {
       inversions[demon.race][demon.lvl] = name;
+      skills[demon.baseSkills[0].skill].transfer.push({ demon: name, level: 0 });
 
-      for (const [skill, lvl] of Object.entries(demon.skills)) {
-        if (lvl === -3) {
-          skills[skill].transfer.push({ demon: name, level: lvl });
+      for (const { skill, source } of demon.baseSkills.slice(1)) {
+        if (source > 3900) {
+          skills[skill].transfer.push({ demon: name, level: source });
         } else {
-          skills[skill].learnedBy.push({ demon: name, level: lvl });
+          skills[skill].learnedBy.push({ demon: name, level: source });
         }
-      }
-
-      for (const [skill, lvl] of Object.entries(demon.learned)) {
-        skills[skill].learnedBy.push({ demon: name, level: lvl });
-      }
-
-      for (const [skill, lvl] of Object.entries(demon.gacha)) {
-        skills[skill].transfer.push({ demon: name, level: lvl });
       }
     }
 
@@ -117,9 +121,10 @@ export class Compendium implements ICompendium {
 
   updateDerivedData() {
     const demonEntries = Object.assign({}, this.demons);
-    const skills = Object.keys(this.skills).map(name => this.skills[name]);
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
+    const skills = Object.keys(this.skills).map(name => this.skills[name])
+      .filter(skill => skill.learnedBy.length + skill.transfer.length > 0);
 
     for (const race of Races) {
       ingredients[race] = [];

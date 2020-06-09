@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
-import { BaseStats, ResistanceElements, SkillElementOrder } from '../constants';
-import { Demon } from '../models';
+import { BaseStats, ResistanceElements } from '../constants';
+import { Demon, Skill } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -38,31 +38,31 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="resistanceHeaders"
         [resists]="demon.resists">
       </app-demon-resists>
-      <app-demon-skills
-        [title]="'Innate Skills'"
-        [hasLvl]="false"
-        [hasRank]="true"
-        [hasTarget]="true"
-        [elemOrder]="elemOrder"
-        [compendium]="compendium"
-        [skillLevels]="demon.skills">
-      </app-demon-skills>
-      <app-demon-skills
-        [title]="'Archetype Skills'"
-        [hasRank]="true"
-        [hasTarget]="true"
-        [elemOrder]="elemOrder"
-        [compendium]="compendium"
-        [skillLevels]="demon.learned">
-      </app-demon-skills>
-      <app-demon-skills
-        [title]="'Gacha Skills'"
-        [hasRank]="true"
-        [hasTarget]="true"
-        [elemOrder]="elemOrder"
-        [compendium]="compendium"
-        [skillLevels]="demon.gacha">
-      </app-demon-skills>
+      <table>
+        <thead>
+          <tr>
+            <th [attr.colSpan]="7">Available Skills</th>
+          </tr>
+          <tr>
+            <th>Available</th>
+            <th>Elem</th>
+            <th>Name</th>
+            <th>Costs</th>
+            <th>Effect</th>
+            <th>Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let slvl of skillLvls">
+            <td [ngClass]="['lvl' + slvl.source]">{{ lvlCodes[slvl.source] }}</td>
+            <td><div class="element-icon {{ slvl.skill.element }}">{{ slvl.skill.element }}</div></td>
+            <td>{{ slvl.skill.name }}</td>
+            <td [style.color]="slvl.skill.cost ? null: 'transparent'">{{ slvl.skill.cost | skillCostToString }}</td>
+            <td>{{ slvl.skill.effect }}</td>
+            <td [style.color]="slvl.skill.rank !== 99 ? null: 'transparent'">{{ slvl.skill.rank }}</td>
+          </tr>
+        </tbody>
+      </table>
       <app-smt-fusions>
       </app-smt-fusions>
     </ng-container>
@@ -83,23 +83,18 @@ export class DemonEntryComponent implements OnChanges {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
 
-  reikos: { name: string; amount: number; }[] = [];
+  skillLvls: { skill: Skill; source: number; }[] = [];
+
   aiTypes = { atk: 'Attack', sup: 'Support', rec: 'Recovery' };
   statHeaders = BaseStats;
   resistanceHeaders = ResistanceElements;
-  elemOrder = SkillElementOrder;
-  reikoCodes = { l: 'Law', n: 'Neutral', c: 'Chaos', u: 'Light', d: 'Dark'};
-  sizeCodes = { s: 'Small', m: 'Medium', l: 'Large' };
+  lvlCodes = {
+    3367: 'Arch Com', 3365: 'Arch Ara', 3380: 'Arch Pro', 3389: 'Arch Psy', 3369: 'Arch Ele',
+    0: 'Innate', 3965: 'Gach Ara', 3980: 'Gach Pro', 3989: 'Gach Psy', 3969: 'Gach Ele'
+  }
 
   ngOnChanges() {
-    this.reikos = [];
-
-    for (const [name, amount] of Object.entries(this.demon.reikos)) {
-      this.reikos.push({
-        name: this.sizeCodes[name[1]] + ' ' + this.reikoCodes[name[0]],
-        amount
-      });
-    }
+    this.skillLvls = this.demon.baseSkills.map(slvl => ({ skill: this.compendium.getSkill(slvl.skill), source: slvl.source }));
   }
 }
 

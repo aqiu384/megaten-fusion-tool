@@ -16,7 +16,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
       <th [attr.colSpan]="acquireHeaderLen">How To Acquire</th>
     </tr>
     <tr>
-      <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)">Element<span>--</span></th>
+      <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)">Elem<span>--</span></th>
       <th class="sortable" [ngClass]="sortDirClass(2)" (click)="nextSortFunIndex(2)">Name</th>
       <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)">Cost<span>--</span></th>
       <th>Effect</th>

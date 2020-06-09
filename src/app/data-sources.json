@@ -1,6 +1,7 @@
 [
   {
     "game": "Shin Megami Tensei",
+    "menu": true,
     "tool": "smt1",
     "srcs": [
       "http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds/index.html",
@@ -9,6 +10,7 @@
   },
   {
     "game": "Shin Megami Tensei II",
+    "menu": true,
     "tool": "smt2",
     "srcs": [
       "http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds2/index.html",
@@ -17,6 +19,7 @@
   },
   {
     "game": "Shin Megami Tensei If...",
+    "menu": true,
     "tool": "smtif",
     "srcs": [
       "http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_if/index.html",
@@ -24,13 +27,20 @@
     ]
   },
   {
-    "game": "Shin Megami Tensei IMAGINE",
-    "tool": "smtim",
+    "game": "Shin Megami Tensei NINE",
+    "tool": "smt9",
     "srcs": [
       "http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_nine/index.html",
       "https://kaerukyo.net/dds_database/skill.php?title=17",
       "http://softtank.web.fc2.com/nine_index.html",
-      "http://ゆめのしま.jp/nine.html",
+      "http://ゆめのしま.jp/nine.html"
+    ]
+  },
+  {
+    "game": "Shin Megami Tensei IMAGINE",
+    "menu": true,
+    "tool": "smtim",
+    "srcs": [
       "https://wikiwiki.jp/imagine/",
       "http://megatenonline.wiki.fc2.com/wiki/",
       "http://megaten.sesshou.com"
@@ -38,6 +48,7 @@
   },
   {
     "game": "Shin Megami Tensei III: Nocturne",
+    "menu": true,
     "abbr": "Shin Megami Tensei Nocturne",
     "tool": "smt3",
     "srcs": [
@@ -48,6 +59,7 @@
   },
   {
     "game": "Shin Megami Tensei: Strange Journey",
+    "menu": true,
     "abbr": "SMT Strange Journey",
     "tool": "smtsj",
     "srcs": [
@@ -57,6 +69,7 @@
   },
   {
     "game": "Shin Megami Tensei: Strange Journey Redux",
+    "menu": true,
     "abbr": "SMT Strange Journey Redux",
     "tool": "smtdsj",
     "srcs": [
@@ -65,6 +78,7 @@
   },
   {
     "game": "Shin Megami Tensei IV",
+    "menu": true,
     "tool": "smt4",
     "srcs": [
       "https://erikku.github.io/smt4tool/",
@@ -73,6 +87,7 @@
   },
   {
     "game": "Shin Megami Tensei IV Apocalypse",
+    "menu": true,
     "abbr": "SMT IV Apocalypse",
     "tool": "smt4f",
     "srcs": [
@@ -82,6 +97,7 @@
   },
   {
     "game": "Shin Megami Tensei: Devil Summoner",
+    "menu": true,
     "abbr": "SMT Devil Summoner",
     "tool": "dsum",
     "srcs": [
@@ -92,6 +108,7 @@
   },
   {
     "game": "Devil Summoner: Soul Hackers",
+    "menu": true,
     "tool": "dssh",
     "srcs": [
       "http://bmky.net/data/sh/system/unite/hero.html",
@@ -100,6 +117,7 @@
   },
   {
     "game": "Raidou Kuzunoha vs. The Soulless Army",
+    "menu": true,
     "abbr": "Raidou Kuzunoha vs. Soulless Army",
     "tool": "krch",
     "srcs": [
@@ -109,6 +127,7 @@
   },
   {
     "game": "Raidou Kuzunoha vs. King Abaddon",
+    "menu": true,
     "tool": "krao",
     "srcs": [
       "https://www31.atwiki.jp/abaddon/pages/37.html",
@@ -117,6 +136,7 @@
   },
   {
     "game": "Megami Ibunroku Persona",
+    "menu": true,
     "tool": "mib",
     "srcs": [
       "http://persona1.wikidot.com",
@@ -124,15 +144,30 @@
     ]
   },
   {
-    "game": "Persona 3 FES",
-    "tool": "p3fes",
+    "game": "Persona 3",
+    "tool": "p3",
     "srcs": [
-      "https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404",
       "https://megamitensei.fandom.com/wiki/List_of_Persona_3_FES_Personas"
     ]
   },
   {
+    "game": "Persona 3 FES",
+    "menu": true,
+    "tool": "p3fes",
+    "srcs": [
+      "https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404"
+    ]
+  },
+  {
+    "game": "Persona 3 FES: The Answer",
+    "tool": "p3aeg",
+    "srcs": [
+      "https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404"
+    ]
+  },
+  {
     "game": "Persona 3 Portable",
+    "menu": true,
     "tool": "p3p",
     "srcs": [
       "https://megamitensei.fandom.com/wiki/List_of_Persona_3_Portable_Personas"
@@ -140,6 +175,7 @@
   },
   {
     "game": "Persona 4",
+    "menu": true,
     "tool": "p4",
     "srcs": [
       "https://gamefaqs.gamespot.com/ps2/945498-shin-megami-tensei-persona-4/faqs/53550",
@@ -148,6 +184,7 @@
   },
   {
     "game": "Persona 4 Golden",
+    "menu": true,
     "tool": "p4g",
     "srcs": [
       "http://h1g.jp/p4g/",
@@ -156,6 +193,7 @@
   },
   {
     "game": "Persona 5",
+    "menu": true,
     "tool": "p5",
     "srcs": [
       "http://spwiki.net/persona5/",
@@ -164,6 +202,7 @@
   },
   {
     "game": "Persona 5 Royal",
+    "menu": true,
     "tool": "p5r",
     "srcs": [
       "http://bozumemo.blogspot.com/p/5.html",
@@ -173,6 +212,7 @@
   },
   {
     "game": "Persona 5 Scramble",
+    "menu": true,
     "tool": "p5s",
     "srcs": [
       "https://gamy.jp/persona5s",
@@ -182,6 +222,7 @@
   },
   {
     "game": "Persona Q: Shadow of the Labyrinth",
+    "menu": true,
     "abbr": "Persona Q",
     "tool": "pq",
     "srcs": [
@@ -192,6 +233,7 @@
   },
   {
     "game": "Persona Q2: New Cinema Labyrinth",
+    "menu": true,
     "abbr": "Persona Q2",
     "tool": "pq2",
     "srcs": [
@@ -202,6 +244,7 @@
   },
   {
     "game": "Majin Tensei",
+    "menu": true,
     "tool": "mjn1",
     "srcs": [
       "http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/majin/majin1/index.html",
@@ -210,6 +253,7 @@
   },
   {
     "game": "Majin Tensei II: Spiral Nemesis",
+    "menu": true,
     "tool": "mjn2",
     "srcs": [
       "http://www.demitree.jp/コンテンツ/魔神転生２/",
@@ -220,23 +264,38 @@
     ]
   },
   {
-    "game": "Devil Survivor Overclocked",
-    "tool": "dso",
+    "game": "Devil Survivor",
+    "tool": "ds1",
     "srcs": [
-      "https://gamefaqs.gamespot.com/3ds/997806-shin-megami-tensei-devil-survivor-overclocked/faqs/69601",
       "https://gamefaqs.gamespot.com/ds/954869-shin-megami-tensei-devil-survivor/faqs/56943"
     ]
   },
   {
-    "game": "Devil Survivor 2 Record Breaker",
-    "tool": "ds2br",
+    "game": "Devil Survivor Overclocked",
+    "menu": true,
+    "tool": "dso",
     "srcs": [
-      "http://spwiki.net/ds2br/",
+      "https://gamefaqs.gamespot.com/3ds/997806-shin-megami-tensei-devil-survivor-overclocked/faqs/69601"
+    ]
+  },
+  {
+    "game": "Devil Survivor 2",
+    "tool": "ds2",
+    "srcs": [
       "http://i40.tinypic.com/f2j6mo.png"
     ]
   },
   {
+    "game": "Devil Survivor 2 Record Breaker",
+    "menu": true,
+    "tool": "ds2br",
+    "srcs": [
+      "http://spwiki.net/ds2br/"
+    ]
+  },
+  {
     "game": "Shin Megami Tensei: Dx2 Liberation",
+    "menu": true,
     "abbr": "SMT Dx2 Liberation",
     "tool": "dx2",
     "srcs": [
