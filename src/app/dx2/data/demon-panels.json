@@ -1,4 +1,9 @@
 {
+  "Abaddon A": [
+    "Max HP +250", "+5% to Phys hit rate.",
+    "Phys ATK +50", "+10% to Critical hit rate.",
+    "Max HP +250", "Activates the following Chain Effect when Lord of the Abyss is activated: Inflicts Phys (Physical) damage (Power: 50) 3 times on random enemies."
+  ],
   "Agni": [
     "Max HP +150", "+5% to Fire damage inflicted.",
     "Mag ATK  +50", "-25% to Fire damage received.",
@@ -75,7 +80,7 @@
     "Max HP +250", "While this demon is alive, all party members will receive the following effect: +10% to Force damage inflicted and +10% to status ailment auto cure rate."
   ],
   "Barong": [
-    "Max HP +250", "Increases the uses of Barong Dance by 2.",
+    "Max HP +250", "Reduces the cost of Barong Dance by 1.",
     "Mag ATK +100", "-50% to Elec damage received.",
     "Max HP +250", "While this demon is alive, all party members will receive the following effect: -20% to Elec damage received."
   ],
@@ -154,6 +159,11 @@
     "Mag ATK +100", "Activates the following Chain Effect after Gale Talon is activated: Reduce DEF of all enemies by 20%. (1 turn)",
     "Max HP +250", "+25% to Force damage inflicted."
   ],
+  "Girimehkala": [
+    "Max HP +250", "+5% to Phys hit rate.",
+    "Phys ATK +50", "-25% to Phys damage received.",
+    "Max HP +250", "+10% to Phys damage inflicted."
+  ],
   "Gogmagog": [
     "Max HP +250", "+15% to Phys hit rate.",
     "Phys DEF +150", "While this demon is alive, all party members will receive the following effect: -15% to Phys damage received.",
@@ -178,6 +188,11 @@
     "Max HP +250", "Activates the following Chain Effect when HP <= 50% at end of enemy turn: Inflicts Fire pierce (Physical) damage (Power: 80) on all enemies. Negates Counter effects. Damage depends on Phys ATK with chance for Critical and Miss.",
     "Phys ATK +100", "Adds Phys Pierce.",
     "Max HP +250", "+20% to Phys damage inflicted, +20% to Fire damage inflicted."
+  ],
+  "Hannuman": [
+    "Max HP +250", "+5% to Phys hit rate.",
+    "Phys ATK +50", "-25% to Force damage received.",
+    "Max HP +250", "+10% to Phys damage inflicted."
   ],
   "Hecate": [
     "Max HP +250", "-30% to Fire damage received, -30% to Dark damage received.",
@@ -234,6 +249,11 @@
     "Mag ATK +50", "+10% to HP Healing skill effectiveness.",
     "Max HP +150", "Activates the following Chain Effect after Orlean Prayer is activated: Increase own party's ATK and EV/AC by 20%. (1 turn)"
   ],
+  "Kama": [
+    "Max HP +250", "+10 to Magic.",
+    "Phys ATK +40, Mag ATK +40", "+5% to Almighty damage inflicted.",
+    "Max HP +250", "+15% chance to inflict status ailments."
+  ],
   "Kartikeya": [
     "Max HP +250", "Reduces the cost of Mortal Jihad by 1 MP.",
     "Phys ATK +100", "+30% to Battle Speed.",
@@ -248,6 +268,11 @@
     "Max HP +250", "+15% chance to inflict status ailments.",
     "Mag DEF +150", "+15% Phys evasion rate.",
     "Max HP +250", "Activates the following Chain Effect after Lotus Dance is activated: All party members recover 1 MP."
+  ],
+  "Lakshmi A": [
+    "Max HP +250", "+15% Phys evasion rate.",
+    "Mag DEF +150", "+30% to HP Healing skill effectiveness.",
+    "Max HP +250", "Activates the following Chain Effect at the start of enemy turn: +20% to DEF of all party members. (1 turn)"
   ],
   "Lilith": [
     "Max HP +250", "+15% chance to inflict status ailments.",
@@ -319,10 +344,20 @@
     "Phys DEF +150", "Activates the following Chain Effect at the start of enemy turn: Heals 15% of own Max HP.",
     "Max HP +250", "Adds Null Mortal. +20% to Max HP."
   ],
+  "Nekomata A": [
+    "Max HP +250", "-15% chance of receiving status ailments.",
+    "Mag DEF +80", "+5% Phys evasion rate.",
+    "Max HP +250", "While this demon is alive, all party members will receive the following effect: +5% Phys evasion rate."
+  ],
   "Nergal": [
     "Max HP +250", "+15% chance to inflict status ailments.",
     "Phys ATK +100", "+25% to damage inflicted on Weakened enemies.",
     "Max HP +250", "Adds Phys Pierce against Weakened enemies."
+  ],
+  "Nidhoggr": [
+    "Max HP +250", "+5% to Phys hit rate.",
+    "Phys ATK +50", "-15% to Critical hit rate of damage received.",
+    "Max HP +250", "+10% to Phys damage inflicted."
   ],
   "Orcus": [
     "Max HP +250", "-50% to Dark damage received.",
@@ -333,6 +368,16 @@
     "Max HP +250", "Reduces the cost of Force skills by 1 MP.",
     "Mag ATK +100", "Gains Force Pierce.",
     "Max HP +250", "+15% to Force damage inflicted. +10% Phys evasion rate. +10% chance to inflict status ailments."
+  ],
+  "Pallas Athena": [
+    "Max HP +250", "+5% to Phys hit rate.",
+    "Phys ATK +50", "+10% to Critical hit rate.",
+    "Max HP +250", "+10% to Phys damage inflicted."
+  ],
+  "Pazuzu": [
+    "Max HP +250", "+10% to max HP.",
+    "Mag ATK +50", "-15% to Force and Dark damage received.",
+    "Max HP +250", "+15% to HP Healing skill effectiveness."
   ],
   "Quetzalcoatl": [
     "Max HP +250", "+15% damage to attacks that target all or random enemies.",
@@ -368,6 +413,11 @@
     "Max HP +150", "+10 to Ma.",
     "Mag ATK +50", "-10% to Magic damage received.",
     "Max HP +150", "+10% to Magic damage inflicted."
+  ],
+  "Sarasvati": [
+    "Max HP +250", "-15% chance of receiving status ailments.",
+    "Mag ATK +50", "-25% to Ice damage received.",
+    "Max HP +250", "+10% to Ice damage inflicted."
   ],
   "Schierke": [
     "Max HP +250", "+10% to Fire, Ice, Elec and Force damage inflicted.",
@@ -464,6 +514,11 @@
     "Mag ATK +100", "Activates the following Chain Effect when entering a state of Concentrate: Removes Barrier from all enemies.",
     "Max HP +250", "Reduces the cost of Concentrate by 2 MP."
   ],
+  "Tsukiyomi": [
+    "Max HP +250", "+10% to max HP.",
+    "Mag ATK +50", "-15% to Fire and Ice damage received.",
+    "Max HP +250", "+5% to all attack damage inflicted."
+  ],
   "Uriel": [
     "Max HP +250", "-30% to Fire damage received, -30% to Light damage received.",
     "Mag ATK +100", "Activates the following Chain Effect after God's Fire is activated: Reduces DEF of all enemies by 20%. (1 turn)",
@@ -493,6 +548,11 @@
     "Max HP +250", "+15% to Dark damage inflicted.",
     "Mag ATK +100", "-50% to Dark damage received.",
     "Max HP +250", "Reduces the cost of Dark skills by 1 MP."
+  ],
+  "Ym": [
+    "Max HP +250", "+10% to max HP.",
+    "Mag ATK +50", "-25% to Ice damage received.",
+    "Max HP +250", "+10% to Ice damage inflicted."
   ],
   "Yoshitsune": [
     "Max HP +250", "+15% to Phys hit rate.",

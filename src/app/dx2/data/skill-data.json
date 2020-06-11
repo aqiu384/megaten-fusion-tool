@@ -182,7 +182,7 @@
   },
   "Barong Dance": {
     "cost": 7,
-    "effect": "Luster Candy, 3 uses",
+    "effect": "Luster Candy",
     "elem": "rec",
     "power": 95,
     "target": "All Allies"
@@ -619,6 +619,10 @@
     "elem": "alm",
     "power": 190,
     "target": "1 Foe"
+  },
+  "Diwali": {
+    "effect": "All allies recover 1 MP when an ally is healed excluding Endure, Recarm, Lydia, Life Aid, and Dx2 effects",
+    "elem": "pas"
   },
   "Dmg Panel Immunity": {
     "effect": "Nullify dmg from Damage Panels",
@@ -2299,7 +2303,7 @@
   },
   "Orlean Prayer": {
     "cost": 6,
-    "effect": "130 rec and recover 3 MP, 5 uses",
+    "effect": "130 rec and recover 3 MP",
     "elem": "rec",
     "power": 130,
     "target": "1 Ally"
@@ -3041,6 +3045,13 @@
     "elem": "phy",
     "power": 150,
     "target": "1 Foe"
+  },
+  "Virtuous Prosperity": {
+    "cost": 6,
+    "effect": "50 rec + Tetraja, 2nd cast 75 rec + Prayer, 3rd cast 100 rec + Prayer + Five Elements",
+    "elem": "rec",
+    "power": 50,
+    "target": "All Allies"
   },
   "Vitality Amp I": {
     "effect": "Vitality +5",

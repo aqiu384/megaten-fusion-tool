@@ -126,7 +126,7 @@ export class Compendium implements ICompendium {
         const item = items[items.length - 1];
 
         if (skills[item]) {
-          skills[item].transfer.unshift({ demon: demon.persona, level: 4073 });
+          skills[item].transfer.unshift({ demon: demon.persona, level: 5275 });
         }
       }
     }
@@ -136,9 +136,9 @@ export class Compendium implements ICompendium {
         const [item, itemR] = demon.item.split(', ');
 
         if (skills[item]) {
-          skills[item].transfer.unshift({ demon: name, level: 3778 });
+          skills[item].transfer.unshift({ demon: name, level: 0 });
         } if (skills[itemR]) {
-          skills[itemR].transfer.unshift({ demon: name, level: 3765 });
+          skills[itemR].transfer.unshift({ demon: name, level: 3865 });
         }
       }
 

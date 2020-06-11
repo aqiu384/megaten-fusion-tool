@@ -10,4 +10,5 @@ export interface Skill extends BaseSkill {
   rank: number;
   target?: string;
   transfer: { demon: string, level: number }[];
+  upgrade: string;
 }

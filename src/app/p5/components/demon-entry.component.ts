@@ -39,25 +39,29 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-skills>
       <ng-container *ngIf="compendium.splitMultiFusion(name) as rows">
         <table *ngIf="rows.length">
-          <tr><th colspan=5>Treasure Demon Reverse Fusions</th></tr>
-          <tr><th colspan=5>Ingredient 1 x Ingredient 2 = {{ demon.name }}</th></tr>
-          <tr><th rowspan=2>Price</th><th colspan=3>Ingredient 1</th><th>Ingredient 2</th></tr>
-          <tr><th>Names</th><th>MinLvl</th><th>MaxLvl</th><th>Names</th></tr>
-          <tr *ngFor="let row of rows">
-            <td>{{ row.price }}</td>
-            <td>
-              <ul class="comma-list">
-                <li *ngFor="let name of row.names1"><a routerLink="../{{ name }}">{{ name }} </a></li>
-              </ul>
-            </td>
-            <td>{{ row.lvl1 }}</td>
-            <td>{{ row.lvl2 }}</td>
-            <td>
-              <ul class="comma-list">
-                <li *ngFor="let name of row.names2"><a routerLink="../{{ name }}">{{ name }} </a></li>
-              </ul>
-            </td>
-          </tr>
+          <thead>
+            <tr><th colspan=5>Treasure Demon Reverse Fusions</th></tr>
+            <tr><th colspan=5>Ingredient 1 x Ingredient 2 = {{ demon.name }}</th></tr>
+            <tr><th rowspan=2>Price</th><th colspan=3>Ingredient 1</th><th>Ingredient 2</th></tr>
+            <tr><th>Names</th><th>MinLvl</th><th>MaxLvl</th><th>Names</th></tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{ row.price }}</td>
+              <td>
+                <ul class="comma-list">
+                  <li *ngFor="let name of row.names1"><a routerLink="../{{ name }}">{{ name }} </a></li>
+                </ul>
+              </td>
+              <td>{{ row.lvl1 }}</td>
+              <td>{{ row.lvl2 }}</td>
+              <td>
+                <ul class="comma-list">
+                  <li *ngFor="let name of row.names2"><a routerLink="../{{ name }}">{{ name }} </a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </ng-container>
       <app-smt-fusions [excludedDlc]="demon.fusion === 'excluded'">

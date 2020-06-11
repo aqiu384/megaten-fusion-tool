@@ -8,7 +8,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       <thead>
         <tr>
           <th *ngIf="!hasLvls" [attr.colspan]="inheritHeaders.length">Inheritable Skills</th>
-          <th *ngIf="hasLvls" [attr.colspan]="inheritHeaders.length">Skill Affinities</th>
+          <th *ngIf="hasLvls && inheritHeaders.length" [attr.colspan]="inheritHeaders.length">Skill Affinities</th>
         </tr>
         <tr>
           <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">

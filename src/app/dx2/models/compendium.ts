@@ -6,6 +6,9 @@ import DEMON_DATA_JSON from '../data/demon-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
+import SKILL_UPGRADES_JSON from '../data/skill-upgrades.json';
+import UPGRADE_TYPES_JSON from '../data/upgrade-types.json';
+import DEMON_PANELS_JSON from '../data/demon-panels.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -46,7 +49,7 @@ export class Compendium implements ICompendium {
         ai:      json.ai,
         fusion:  'normal',
         price:   Math.pow(json.grade, 3),
-        stats:   [stars].concat(json.stats, [json.cnum]),
+        stats:   [stars].concat(json.stats, [json.cnum, DEMON_PANELS_JSON[name] ? 3 : 0]),
         resists: json.resists.split('').map(char => ResistCodes[char]),
         skills:  {},
         baseSkills: [].concat(
@@ -80,6 +83,7 @@ export class Compendium implements ICompendium {
         effect,
         target:  json.target,
         level:   0,
+        upgrade: '',
         learnedBy: [],
         transfer: []
       };
@@ -93,6 +97,12 @@ export class Compendium implements ICompendium {
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
       demons[name].fusion = 'special'
       specialRecipes[name] = json;
+    }
+
+    for (const [utype, snames] of Object.entries(SKILL_UPGRADES_JSON)) {
+      for (const sname of snames) {
+        skills[sname].upgrade = utype;
+      }
     }
 
     for (const race of Races) {
@@ -166,6 +176,10 @@ export class Compendium implements ICompendium {
     return this.demons[name];
   }
 
+  getDemonPanels(name: string): string[] {
+    return DEMON_PANELS_JSON[name] || [];
+  }
+
   getSkill(name: string): Skill {
     return this.skills[name];
   }
@@ -174,6 +188,10 @@ export class Compendium implements ICompendium {
     const skills = names.map(name => this.skills[name]);
     skills.sort((d1, d2) => (SkillElementOrder[d1.element] - SkillElementOrder[d2.element]) * 10000 + d1.rank - d2.rank);
     return skills;
+  }
+
+  getSkillUpgrade(name: string): string[] {
+    return UPGRADE_TYPES_JSON[this.skills[name].upgrade] || [];
   }
 
   getIngredientDemonLvls(race: string): number[] {
