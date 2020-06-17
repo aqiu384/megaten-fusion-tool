@@ -9,6 +9,7 @@ import { FusionChartComponent } from './components/fusion-chart.component';
 import { DemonListHeaderComponent } from './components/demon-list-header.component';
 import { SkillListHeaderComponent } from './components/skill-list-header.component';
 
+import { DemonMissingComponent } from './components/demon-missing.component';
 import { DemonStatsComponent } from './components/demon-stats.component';
 import { DemonResistsComponent } from './components/demon-resists.component';
 import { DemonSkillsComponent } from './components/demon-skills.component';
@@ -57,6 +58,7 @@ import {
     SharedModule
   ],
   declarations: [
+    DemonMissingComponent,
     DemonStatsComponent,
     DemonResistsComponent,
     DemonSkillsComponent,
@@ -93,6 +95,7 @@ import {
     RoundInheritPercentPipe
   ],
   exports: [
+    DemonMissingComponent,
     DemonStatsComponent,
     DemonResistsComponent,
     DemonSkillsComponent,

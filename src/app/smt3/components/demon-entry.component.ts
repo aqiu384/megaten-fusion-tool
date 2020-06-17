@@ -53,16 +53,8 @@ import { FusionDataService } from '../fusion-data.service';
         Cursed fusion enabled (More reverse fusions for Vile, Wilder, Night, and Haunt demons)
       </app-smt-fusions>
     </ng-container>
-    <ng-container *ngIf="!demon">
-      <table>
-        <thead>
-          <tr><th>Entry for {{ name }}</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Error: Could not find entry in compendium for {{ name }}</td></tr>
-        </tbody>
-      </table>
-    </ng-container>
+    <app-demon-missing *ngIf="!demon" [name]="name">
+    </app-demon-missing>
   `
 })
 export class DemonEntryComponent {
