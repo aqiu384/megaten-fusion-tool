@@ -87,8 +87,10 @@
     "rank": 7
   },
   "Ailment Boost": {
+    "card": "Nozuchi",
     "effect": "All status ailment attacks are 1.5 times more effective",
     "element": "passive",
+    "price": 60000,
     "rank": 6
   },
   "Akasha Arts": {
@@ -115,9 +117,11 @@
     "rank": 5
   },
   "Amrita": {
+    "card": "Scathach",
     "cost": 1012,
     "effect": "Cures all ailments except Down and Death (party)",
     "element": "recovery",
+    "price": 40000,
     "rank": 4
   },
   "Angelic Grace": {
@@ -437,15 +441,19 @@
     "price": 200000
   },
   "Dekaja": {
+    "card": "Mokoi",
     "cost": 1010,
     "effect": "Nullifies stat bonuses on all foes. (Offsets the effects of all enemies' \"-kaja\" magic.)",
     "element": "support",
+    "price": 25000,
     "rank": 3
   },
   "Dekunda": {
+    "card": "Senri",
     "cost": 1010,
     "effect": "Nullifies stat penalties on party. (Offsets the effects of \"-nda\" magic for all allies.)",
     "element": "support",
+    "price": 25000,
     "rank": 3
   },
   "Dia": {
@@ -525,12 +533,14 @@
     "rank": 2
   },
   "Double Fangs": {
+    "card": "Shuffle",
     "cost": 8,
     "crit": 15,
     "effect": "Deals light Phys damage to 1 foe 2x",
     "element": "phys",
     "hit": 90,
     "power": 80,
+    "price": 10000,
     "rank": 2
   },
   "Elec Amp": {
@@ -556,8 +566,10 @@
     "rank": 3
   },
   "Endure": {
+    "card": "Ganesha",
     "effect": "Restores 1 HP upon death 1x per battle",
     "element": "passive",
+    "price": 70000,
     "rank": 5
   },
   "Endure Dark": {
@@ -582,9 +594,11 @@
     "rank": 7
   },
   "Energy Shower": {
+    "card": "Sati",
     "cost": 1018,
     "effect": "Cures Exhaustion and Enervation (party)",
     "element": "recovery",
+    "price": 50000,
     "rank": 2
   },
   "Enervate Boost": {
@@ -717,7 +731,7 @@
     "cost": 1008,
     "effect": "Increase 1 foe's susceptibility to ailments and Light/Dark skills",
     "element": "almighty",
-    "price": 25000,
+    "price": 10000,
     "rank": 2
   },
   "Gale Slash": {
@@ -770,7 +784,7 @@
     "cost": 1028,
     "effect": "Instantly kills foes who are fearful",
     "element": "dark",
-    "price": 25000,
+    "price": 50000,
     "rank": 6
   },
   "Gigantic Fist": {
@@ -996,9 +1010,11 @@
     "element": "almighty"
   },
   "Life Drain": {
+    "card": "Kaiwan",
     "cost": 1003,
     "effect": "Drains 30 HP from 1 foe",
     "element": "almighty",
+    "price": 30000,
     "rank": 2
   },
   "Life Leech": {
@@ -1088,9 +1104,11 @@
     "rank": 1
   },
   "Makara Break": {
+    "card": "Lachesis",
     "cost": 1018,
     "effect": "Negates all foes' Makarakarn",
     "element": "support",
+    "price": 70000,
     "rank": 7
   },
   "Makarakarn": {
@@ -1102,15 +1120,19 @@
     "rank": 7
   },
   "Mamudo": {
+    "card": "Ippon-Datara",
     "cost": 1018,
     "effect": "Darkness: low chance of instant kill, all foes. (30% chance)",
     "element": "dark",
+    "price": 15000,
     "rank": 3
   },
   "Mamudoon": {
+    "card": "Nebiros",
     "cost": 1034,
     "effect": "Darkness: high chance of instant kill, all foes. (40% chance)",
     "element": "dark",
+    "price": 60000,
     "rank": 6
   },
   "Maragi": {
@@ -1222,9 +1244,11 @@
     "rank": 4
   },
   "Me Patra": {
+    "card": "Apsaras",
     "cost": 1006,
     "effect": "Dispels Rage, Fear, and Confusion (party)",
     "element": "recovery",
+    "price": 15000,
     "rank": 3
   },
   "Media": {
@@ -1319,9 +1343,11 @@
     "power": 440
   },
   "Mudo": {
+    "card": "Lilim",
     "cost": 1008,
     "effect": "Darkness: low chance of instant kill, 1 foe. (40% chance)",
     "element": "dark",
+    "price": 10000,
     "rank": 2
   },
   "Mudo Boost": {
@@ -1332,9 +1358,11 @@
     "rank": 5
   },
   "Mudoon": {
+    "card": "Loa",
     "cost": 1015,
     "effect": "Darkness: high chance of instant kill, 1 foe. (60% chance)",
     "element": "dark",
+    "price": 50000,
     "rank": 5
   },
   "Mustard Bomb": {
@@ -1349,9 +1377,11 @@
     "rank": 5
   },
   "Mutudi": {
+    "card": "Shuffle",
     "cost": 1003,
     "effect": "Cures Silence (1 ally)",
     "element": "recovery",
+    "price": 5000,
     "rank": 2
   },
   "Muzzle Shot": {
@@ -1388,9 +1418,11 @@
     "rank": 5
   },
   "Nervundi": {
+    "card": "Shuffle",
     "cost": 1003,
     "effect": "Cures Exhaustion and Enervation (1 ally)",
     "element": "recovery",
+    "price": 10000,
     "rank": 2
   },
   "Niflheim": {
@@ -1495,9 +1527,11 @@
     "power": 400
   },
   "Patra": {
+    "card": "Shuffle",
     "cost": 1003,
     "effect": "Dispels Rage, Fear, and Confusion (1 ally)",
     "element": "recovery",
+    "price": 5000,
     "rank": 1
   },
   "Poisma": {
@@ -1542,9 +1576,11 @@
     "rank": 2
   },
   "Posumudi": {
+    "card": "Shuffle",
     "cost": 1003,
     "effect": "Neutralizes Poison (1 ally)",
     "element": "recovery",
+    "price": 10000,
     "rank": 2
   },
   "Power Charge": {
@@ -1642,15 +1678,19 @@
     "rank": 3
   },
   "Re Patra": {
+    "card": "Shuffle",
     "cost": 1003,
     "effect": "Recovers 1 ally from Knockdown or Dizzy status",
     "element": "recovery",
+    "price": 10000,
     "rank": 2
   },
   "Rebellion": {
+    "card": "Shuffle",
     "cost": 1005,
     "effect": "Increases Critical rate for 3 turns (1 ally)",
     "element": "support",
+    "price": 10000,
     "rank": 2
   },
   "Recarm": {
@@ -1926,9 +1966,11 @@
     "rank": 7
   },
   "Spirit Drain": {
+    "card": "Succubus",
     "cost": 1003,
     "effect": "Drains 30 SP from 1 foe",
     "element": "almighty",
+    "price": 30000,
     "rank": 2
   },
   "Spirit Leech": {
@@ -2012,21 +2054,27 @@
     "rank": 6
   },
   "Tentarafoo": {
+    "card": "Leanan Sidhe",
     "cost": 1012,
     "effect": "Confuses* all foes (30% chance)",
     "element": "ailment",
+    "price": 15000,
     "rank": 3
   },
   "Tetra Break": {
+    "card": "Sui-Ki",
     "cost": 1018,
     "effect": "Negates all foes' Tetrakarn",
     "element": "support",
+    "price": 70000,
     "rank": 7
   },
   "Tetraja": {
+    "card": "Girimehkala",
     "cost": 1024,
     "effect": "Nullifies instant kill attack once (1 ally)",
     "element": "support",
+    "price": 60000,
     "rank": 5
   },
   "Tetrakarn": {
@@ -2056,15 +2104,19 @@
     "rank": 5
   },
   "Traesto": {
+    "card": "Shuffle",
     "cost": 1018,
     "effect": "Instantly escape from a dungeon. (Not available during combat)",
     "element": "support",
+    "price": 6000,
     "rank": 1
   },
   "Trafuri": {
+    "card": "Shuffle",
     "cost": 1024,
     "effect": "Enables escape from most battles. (100% chance to escape normal battles)",
     "element": "support",
+    "price": 8000,
     "rank": 3
   },
   "Twin Shot": {

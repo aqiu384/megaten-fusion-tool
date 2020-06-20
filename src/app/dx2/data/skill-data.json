@@ -445,6 +445,12 @@
     "elem": "pas",
     "points": 16
   },
+  "Dark Premonition": {
+    "cost": 6,
+    "effect": "50% Mute, 51% dmg based on curr HP, Changes to Disastrous Eclipse when HP < 50%",
+    "elem": "ail",
+    "target": "All Foes"
+  },
   "Dark Sword": {
     "cost": 5,
     "effect": "40% Mute",
@@ -605,6 +611,13 @@
     "elem": "dar",
     "power": 180,
     "target": "1 Foe"
+  },
+  "Disastrous Eclipse": {
+    "cost": 6,
+    "effect": "Pierce, Prevents revival of foes killed by attack",
+    "elem": "dar",
+    "power": 100,
+    "target": "All Foes"
   },
   "Discord": {
     "cost": 3,
@@ -2764,6 +2777,10 @@
     "points": 3,
     "power": 100,
     "target": "1 Foe"
+  },
+  "Star of Darkness": {
+    "effect": "Dark dmg +30% and Phys eva +25% when HP < 50%",
+    "elem": "pas"
   },
   "Stealth": {
     "effect": "Endure, Phys eva +20%",
