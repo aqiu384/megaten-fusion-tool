@@ -220,6 +220,12 @@
     "power": 160,
     "target": "1 Foe"
   },
+  "Be My Friend": {
+    "cost": 9,
+    "effect": "30% frac dmg (1500 max) based on curr foe HP, 100% Mortal, Nullifies endure effects",
+    "elem": "alm",
+    "target": "All Foes"
+  },
   "Binding Claw": {
     "cost": 5,
     "effect": "40% Bind",
@@ -336,6 +342,10 @@
     "effect": "Multi-target skill dmg +20%",
     "elem": "pas",
     "points": 24
+  },
+  "Call of the Dead": {
+    "effect": "At start of own turn, revive all allies with 10% HP when a foe is Cursed",
+    "elem": "pas"
   },
   "Call to Helheim": {
     "effect": "Casts Tarunda + Rakunda when killing Foe",
@@ -657,6 +667,12 @@
     "elem": "pas",
     "points": 4
   },
+  "Do Me A Favor": {
+    "cost": 9,
+    "effect": "Activates Be My Friend when a foe is cursed, Play With Me? otherwise",
+    "elem": "alm",
+    "target": "All Foes"
+  },
   "Dragon Blade": {
     "cost": 7,
     "effect": "30% crit, Follow up with Heat Wave if attack hits",
@@ -815,6 +831,11 @@
     "elem": "pas",
     "points": 16
   },
+  "Epitome of Endurance": {
+    "effect": "-25% battle speed, +20% max HP",
+    "elem": "pas",
+    "points": 16
+  },
   "Epitome of Fortitude": {
     "effect": "HP +20%, Crit rate of Dmg received -50%",
     "elem": "pas",
@@ -933,6 +954,13 @@
     "effect": "Ally Light dmg +10%, Recover 1 MP when clearing wave",
     "elem": "pas"
   },
+  "Flames of Gomorrah": {
+    "cost": 6,
+    "effect": "Pierce, 80% Curse, Dmg scales with Patk",
+    "elem": "fir",
+    "power": 110,
+    "target": "All Foes"
+  },
   "Foe of Demons": {
     "effect": "Phys Pierce, Casts Rakukaja + Sukukaja for 1 turn at the start of enemy phase",
     "elem": "pas"
@@ -1009,6 +1037,10 @@
     "points": 10,
     "power": 160,
     "target": "All Foes"
+  },
+  "Give Me Jewels?": {
+    "effect": "At start of enemy turn, inflict 10% frac dmg (300 max) and drain 1 MP from all foes",
+    "elem": "pas"
   },
   "Glacial Blast": {
     "cost": 5,
@@ -1162,6 +1194,10 @@
     "points": 6,
     "power": 140,
     "target": "1 Foe"
+  },
+  "Hand of Glory": {
+    "effect": "Luster Candy for 1 turn on all allies and 80% Curse on all foes when an ally is downed",
+    "elem": "pas"
   },
   "Harmonious Death": {
     "effect": "Every 2nd turn, Press Turn +1 for every surving Ally and Dmg +20% for Self, +60% max",
@@ -2397,6 +2433,12 @@
     "elem": "sup",
     "target": "All Foes"
   },
+  "Play With Me?": {
+    "cost": 9,
+    "effect": "30% frac dmg (1500 max) based on curr foe HP, 80% Curse",
+    "elem": "alm",
+    "target": "All Foes"
+  },
   "Poisma": {
     "cost": 5,
     "effect": "40% Poison",
@@ -2734,6 +2776,10 @@
     "elem": "rec",
     "points": 8,
     "target": "All Allies and Foes"
+  },
+  "Sins of Sodom": {
+    "effect": "Phys Pierce, At start of own turn, remove Mortal nullifying barriers and Debilitate for 1 turn to all foes when one is Cursed",
+    "elem": "pas"
   },
   "Skanda": {
     "effect": "Ally Phys acc +15% and Crit rate +20%",
