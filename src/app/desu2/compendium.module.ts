@@ -104,7 +104,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   resistElems,
   skillElems,
   baseStats: COMP_CONFIG_JSON.baseStats,
-  fusionLvlMod: 2.5,
+  fusionLvlMod: 0.5,
   resistCodes: COMP_CONFIG_JSON.resistCodes,
 
   raceOrder: getEnumOrder(races),

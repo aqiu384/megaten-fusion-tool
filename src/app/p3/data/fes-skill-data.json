@@ -3,461 +3,503 @@
     "card": "Sandalphon",
     "clvl": 82,
     "cost": 19,
-    "crit": 10,
-    "effect": "Deals heavy Strike damage 1x to 2x to all foes",
+    "damage": "Heavy",
+    "effect": "10% crit, x1-2 hits",
     "element": "strike",
     "hit": 85,
     "power": 350,
-    "rank": 7
+    "rank": 7,
+    "target": "All Foes"
   },
   "Arrow Rain": {
     "card": "Garuda",
     "clvl": 71,
     "cost": 19,
-    "crit": 5,
-    "effect": "Deals medium Pierce damage to all foes. (1-2 hits)",
+    "damage": "Medium",
+    "effect": "5% crit, x1-2 hits",
     "element": "pierce",
     "hit": 90,
     "power": 130,
-    "rank": 6
+    "rank": 6,
+    "target": "All Foes"
   },
   "Assault Dive": {
     "card": "Legion",
     "clvl": 23,
     "cost": 9,
-    "crit": 5,
-    "effect": "Deals light Strike damage to one foe",
+    "damage": "Light",
+    "effect": "5% crit",
     "element": "strike",
     "hit": 88,
     "power": 90,
-    "rank": 2
+    "rank": 2,
+    "target": "One Foe"
   },
   "Bash": {
     "cost": 7,
-    "crit": 5,
-    "effect": "Deals light Strike damage to one foe",
+    "damage": "Light",
+    "effect": "5% crit",
     "element": "strike",
     "hit": 90,
     "power": 30,
-    "rank": 1
+    "rank": 1,
+    "target": "One Foe"
   },
   "Blade of Fury": {
     "card": "Chernobog",
     "clvl": 64,
     "cost": 16,
-    "crit": 3,
-    "effect": "Deals medium Slash damage to all foes. (1-3 hits)",
+    "damage": "Medium",
+    "effect": "3% crit, x1-3 hits",
     "element": "slash",
     "hit": 82,
     "power": 100,
-    "rank": 5
+    "rank": 5,
+    "target": "All Foes"
   },
   "Brave Blade": {
     "card": "Atavaka",
     "clvl": 88,
     "cost": 20,
-    "crit": 5,
-    "effect": "Deals severe Slash damage to one foe",
+    "damage": "Severe",
+    "effect": "5% crit",
     "element": "slash",
     "hit": 95,
     "power": 550,
-    "rank": 8
+    "rank": 8,
+    "target": "One Foe"
   },
   "Cleave": {
     "cost": 7,
-    "crit": 5,
-    "effect": "Deals light Slash damage to one foe",
+    "damage": "Light",
+    "effect": "5% crit",
     "element": "slash",
     "hit": 90,
     "power": 30,
-    "rank": 1
+    "rank": 1,
+    "target": "One Foe"
   },
   "Cruel Attack": {
     "card": "Kurama Tengu",
     "clvl": 49,
     "cost": 10,
-    "crit": 3,
-    "effect": "Deals medium Pierce damage to one foe. (1.5x to Downed foes)",
+    "damage": "Medium",
+    "effect": "3% crit, Dmg x1.5 on Downed foes",
     "element": "pierce",
     "hit": 99,
     "power": 225,
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Deathbound": {
     "card": "Uriel",
     "clvl": 63,
     "cost": 19,
-    "crit": 25,
-    "effect": "Deals heavy Slash damage to all foes",
+    "damage": "Heavy",
+    "effect": "25% crit",
     "element": "slash",
     "hit": 90,
     "power": 370,
-    "rank": 6
+    "rank": 6,
+    "target": "All Foes"
   },
   "Double Fangs": {
     "card": "Naga",
     "clvl": 18,
     "cost": 9,
-    "crit": 1,
-    "effect": "Deals light Pierce damage to one foe. (2 hits)",
+    "damage": "Light",
+    "effect": "1% crit, x2 hits",
     "element": "pierce",
     "hit": 85,
     "power": 20,
-    "rank": 2
+    "rank": 2,
+    "target": "One Foe"
   },
   "Elec Break": {
     "card": "Hokuto Seikun",
     "clvl": 53,
     "cost": 1040,
-    "effect": "Reduces 1 foe's Electricity resistance to average",
+    "effect": "Removes Elec resistance for 3 turns",
     "element": "support",
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Fatal End": {
     "card": "Taraka",
     "clvl": 44,
     "cost": 13,
-    "crit": 10,
-    "effect": "Deals medium Slash damage to one foe",
+    "damage": "Medium",
+    "effect": "10% crit",
     "element": "slash",
     "hit": 92,
     "power": 230,
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Fire Break": {
     "card": "Succubus",
     "clvl": 47,
     "cost": 1040,
-    "effect": "Reduces 1 foe's Fire resistance to average",
+    "effect": "Removes Fire resistance for 3 turns",
     "element": "support",
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Gale Slash": {
     "card": "Shiisaa",
     "clvl": 27,
     "cost": 14,
-    "crit": 3,
-    "effect": "Deals medium Slash damage to all foes",
+    "damage": "Medium",
+    "effect": "3% crit",
     "element": "slash",
     "hit": 95,
     "power": 100,
-    "rank": 3
+    "rank": 3,
+    "target": "All Foes"
   },
   "Getsu-ei": {
     "card": "Ares, Tam Lin",
     "clvl": 23,
     "cost": 10,
-    "crit": 10,
-    "effect": "Deals medium Slash damage to one foe. (\"Full Moon\" bonus)",
+    "damage": "Medium",
+    "effect": "10% crit, Dmg x1.5 during Full Moon",
     "element": "slash",
     "hit": 90,
     "power": 120,
-    "rank": 3
+    "rank": 3,
+    "target": "One Foe"
   },
   "Gigantic Fist": {
     "card": "Ubelluris",
     "clvl": 53,
     "cost": 12,
-    "crit": 15,
-    "effect": "Deals heavy Strike damage to one foe",
+    "damage": "Heavy",
+    "effect": "15% crit",
     "element": "strike",
     "hit": 85,
     "power": 315,
-    "rank": 5
+    "rank": 5,
+    "target": "One Foe"
   },
   "God's Hand": {
     "card": "Metatron",
     "clvl": 9,
     "cost": 14,
-    "crit": 10,
-    "effect": "Deals severe Strike damage to one foe",
+    "damage": "Severe",
+    "effect": "10% crit",
     "element": "strike",
     "hit": 90,
     "power": 600,
-    "rank": 8
+    "rank": 8,
+    "target": "One Foe"
   },
   "Heat Wave": {
     "card": "Dionysus",
     "clvl": 53,
     "cost": 16,
-    "crit": 10,
-    "effect": "Deals medium Strike damage to all foes",
+    "damage": "Medium",
+    "effect": "10% crit",
     "element": "strike",
     "hit": 90,
     "power": 280,
-    "rank": 5
+    "rank": 5,
+    "target": "All Foes"
   },
   "Heaven's Blade": {
     "cost": 13,
-    "crit": 30,
-    "effect": "Deals severe Slash damage to one foe. Michael exclusive",
+    "damage": "Severe",
+    "effect": "30% crit",
     "element": "slash",
     "hit": 95,
     "power": 500,
     "rank": 7,
+    "target": "One Foe",
     "unique": "Michael"
   },
   "Herculean Strike": {
     "card": "Nata Taishi",
     "clvl": 42,
     "cost": 18,
-    "crit": 3,
-    "effect": "Deals medium Strike damage to all foes",
+    "damage": "Medium",
+    "effect": "3% crit",
     "element": "strike",
     "hit": 85,
     "power": 210,
-    "rank": 4
+    "rank": 4,
+    "target": "All Foes"
   },
   "Holy Arrow": {
     "cost": 9,
-    "crit": 3,
-    "effect": "Deals light Pierce damage / Charms one foe. (25% chance)",
+    "damage": "Light",
+    "effect": "3% crit, 25% Charm",
     "element": "pierce",
     "hit": 92,
     "power": 60,
-    "rank": 2
+    "rank": 2,
+    "target": "One Foe"
   },
   "Ice Break": {
     "card": "Laksmi",
     "clvl": 62,
     "cost": 1040,
-    "effect": "Reduces 1 foe's Ice resistance to average",
+    "effect": "Removes Ice resistance for 3 turns",
     "element": "support",
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Kill Rush": {
     "card": "Vetala",
     "clvl": 27,
     "cost": 10,
-    "crit": 3,
-    "effect": "Deals light Strike damage to one foe. (1-2 hits)",
+    "damage": "Light",
+    "effect": "3% crit, x1-2 hits",
     "element": "strike",
     "hit": 85,
     "power": 110,
-    "rank": 3
+    "rank": 3,
+    "target": "One Foe"
   },
   "Maralagidyne": {
     "card": "Mara",
     "clvl": 86,
     "cost": 1032,
-    "effect": "Deals severe Fire damage to all foes. Mara exclusive",
+    "damage": "Severe",
     "element": "fire",
     "hit": 95,
     "power": 650,
     "rank": 0,
+    "target": "All Foes",
     "unique": "Mara"
   },
   "Mighty Swing": {
     "card": "Orthrus",
     "clvl": 34,
     "cost": 10,
-    "crit": 5,
-    "effect": "Deals medium Slash damage to one foe",
+    "damage": "Medium",
+    "effect": "5% crit",
     "element": "slash",
     "hit": 95,
     "power": 220,
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Myriad Arrows": {
     "card": "Cybele",
     "clvl": 76,
     "cost": 19,
-    "crit": 3,
-    "effect": "Deals medium Pierce damage to all foes. (1-2 hits)",
+    "damage": "Medium",
+    "effect": "3% crit, x1-2 hits",
     "element": "pierce",
     "hit": 87,
     "power": 140,
-    "rank": 7
+    "rank": 7,
+    "target": "All Foes"
   },
   "Poison Arrow": {
     "cost": 13,
-    "crit": 3,
-    "effect": "Deals heavy Pierce damage / Poisons one foe. (25% chance)",
+    "damage": "Heavy",
+    "effect": "3% crit, 25% Poison",
     "element": "pierce",
     "hit": 95,
     "power": 300,
-    "rank": 5
+    "rank": 5,
+    "target": "One Foe"
   },
   "Power Slash": {
     "card": "Valkyrie",
     "clvl": 16,
     "cost": 10,
-    "crit": 5,
-    "effect": "Deals light Slash damage to one foe",
+    "damage": "Light",
+    "effect": "5% crit",
     "element": "slash",
     "hit": 92,
     "power": 88,
-    "rank": 2
+    "rank": 2,
+    "target": "One Foe"
   },
   "Pralaya": {
     "card": "Shiva",
     "clvl": 89,
     "cost": 18,
-    "crit": 25,
-    "effect": "Deals severe Pierce damage / instills Fear in all foes. (25% chance) Shiva exclusive",
+    "damage": "Severe",
+    "effect": "25% crit, 25% Fear",
     "element": "pierce",
     "hit": 95,
     "power": 600,
-    "rank": 8
+    "rank": 8,
+    "target": "All Foes"
   },
   "Primal Force": {
     "card": "Beelzebub",
     "clvl": 88,
     "cost": 21,
-    "crit": 5,
-    "effect": "Deals severe Pierce damage to one foe",
+    "damage": "Severe",
+    "effect": "5% crit",
     "element": "pierce",
     "hit": 95,
     "power": 600,
-    "rank": 8
+    "rank": 8,
+    "target": "One Foe"
   },
   "Regenerate 1": {
     "card": "Neko Shogun",
     "clvl": 23,
-    "effect": "Restores 2% HP each turn in battle",
+    "effect": "Recover 2% HP per turn",
     "element": "passive",
     "rank": 4
   },
   "Regenerate 2": {
     "card": "Aquamarine x5",
-    "effect": "Restores 4% HP each turn in battle",
+    "effect": "Recover 4% HP per turn",
     "element": "passive",
     "rank": 5
   },
   "Regenerate 3": {
     "card": "Norn",
     "clvl": 70,
-    "effect": "Restores 6% HP each turn in battle",
+    "effect": "Recover 6% HP per turn",
     "element": "passive",
     "rank": 6
   },
   "Single Shot": {
     "cost": 8,
-    "crit": 5,
-    "effect": "Deals light Pierce damage to one foe",
+    "damage": "Light",
+    "effect": "5% crit",
     "element": "pierce",
     "hit": 95,
     "power": 28,
-    "rank": 1
+    "rank": 1,
+    "target": "One Foe"
   },
   "Sonic Punch": {
     "card": "Chimera",
     "clvl": 13,
     "cost": 9,
-    "crit": 12,
-    "effect": "Deals light Strike damage to one foe",
+    "damage": "Light",
+    "effect": "12% crit",
     "element": "strike",
     "hit": 95,
     "power": 70,
-    "rank": 2
+    "rank": 2,
+    "target": "One Foe"
   },
   "Swift Strike": {
     "card": "Titan",
     "clvl": 28,
     "cost": 15,
-    "crit": 3,
-    "effect": "Deals light Strike damage to all foes. (1-3 hits)",
+    "damage": "Light",
+    "effect": "3% crit, x1-3 hits",
     "element": "strike",
     "hit": 80,
     "power": 95,
-    "rank": 3
+    "rank": 3,
+    "target": "All Foes"
   },
   "Tempest Slash": {
     "card": "Masakado",
     "clvl": 78,
     "cost": 13,
-    "crit": 10,
-    "effect": "Deals heavy Slash damage to one foe. (1-2 hits)",
+    "damage": "Heavy",
+    "effect": "10% crit, x1-2 hits",
     "element": "slash",
     "hit": 95,
     "power": 350,
-    "rank": 7
+    "rank": 7,
+    "target": "One Foe"
   },
   "Torrent Shot": {
     "card": "Raja Naga",
     "clvl": 42,
     "cost": 10,
-    "crit": 5,
-    "effect": "Deals light Pierce damage to one foe. (2-3 hits)",
+    "damage": "Light",
+    "effect": "5% crit, x2-3 hits",
     "element": "pierce",
     "hit": 82,
     "power": 50,
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Twin Shot": {
     "card": "Vasuki",
     "clvl": 42,
     "cost": 10,
-    "crit": 5,
-    "effect": "Deals medium Pierce damage to one foe. (2 hits)",
+    "damage": "Medium",
+    "effect": "5% crit, x2 hits",
     "element": "pierce",
     "hit": 85,
     "power": 100,
-    "rank": 3
+    "rank": 3,
+    "target": "One Foe"
   },
   "Vicious Strike": {
     "card": "Arahabaki",
     "clvl": 67,
     "cost": 19,
-    "crit": 1,
-    "effect": "Deals heavy Strike damage to all foes",
+    "damage": "Heavy",
+    "effect": "1% crit",
     "element": "strike",
     "hit": 92,
     "power": 340,
-    "rank": 6
+    "rank": 6,
+    "target": "All Foes"
   },
   "Vile Assault": {
     "card": "Kaiwan",
     "clvl": 55,
     "cost": 12,
-    "crit": 3,
-    "effect": "Deals heavy Pierce damage to one foe. (1.5x to Downed foes)",
+    "damage": "Heavy",
+    "effect": "3% crit, Dmg x1.5 on Downed foes",
     "element": "pierce",
     "hit": 99,
     "power": 311,
-    "rank": 5
+    "rank": 5,
+    "target": "One Foe"
   },
   "Vorpal Blade": {
     "card": "Susanoo",
     "clvl": 85,
     "cost": 21,
-    "crit": 5,
-    "effect": "Deals heavy Slash damage to all foes. (1.5x \"Great\" condition bonus)",
+    "damage": "Heavy",
+    "effect": "5% crit, Dmg x1.5 when Great",
     "element": "slash",
     "hit": 99,
     "power": 550,
     "rank": 8,
+    "target": "All Foes",
     "unique": "Multiple"
   },
   "Weary Thrust": {
     "card": "Seiten Taisei",
     "clvl": 72,
     "cost": 13,
-    "crit": 5,
-    "effect": "Deals heavy Strike damage to one foe. (1.5x \"Tired\" condition bonus)",
+    "damage": "Heavy",
+    "effect": "5% crit, Dmg x1.5 when Tired",
     "element": "strike",
     "hit": 99,
     "power": 405,
     "rank": 6,
+    "target": "One Foe",
     "unique": "Multiple"
   },
   "Wind Break": {
     "card": "Orobas",
     "clvl": 38,
     "cost": 1040,
-    "effect": "Reduces 1 foe's Wind resistance to average",
+    "effect": "Removes Wind resistance for 3 turns",
     "element": "support",
-    "rank": 4
+    "rank": 4,
+    "target": "One Foe"
   },
   "Zan-ei": {
     "card": "Pale Rider",
     "clvl": 26,
     "cost": 10,
-    "crit": 10,
-    "effect": "Deals medium Slash damage to one foe. (\"New Moon\" bonus)",
+    "damage": "Medium",
+    "effect": "10% crit, Dmg x1.5 during New Moon",
     "element": "slash",
     "hit": 90,
     "power": 120,
-    "rank": 3
+    "rank": 3,
+    "target": "One Foe"
   }
 }

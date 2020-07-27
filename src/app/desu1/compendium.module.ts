@@ -34,11 +34,6 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
-function estimateBasePrice(stats: number[]): number {
-  const x = stats.slice(2).reduce((acc, stat) => stat + acc, 0);
-  return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
-}
-
 const rskillLookup = {}
 const races = COMP_CONFIG_JSON.races;
 const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -92,7 +87,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   resistElems,
   skillElems,
   baseStats: COMP_CONFIG_JSON.baseStats,
-  fusionLvlMod: 2.5,
+  fusionLvlMod: 0.5,
   resistCodes: COMP_CONFIG_JSON.resistCodes,
 
   raceOrder: getEnumOrder(races),

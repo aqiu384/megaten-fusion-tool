@@ -20,12 +20,22 @@ export class Compendium implements ICompendium {
     this.updateDerivedData();
   }
 
+  estimateKuzuPrice(stats: number[]): number {
+    return Math.floor(Math.pow(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0), 2) / 20);
+  }
+
+  estimateDesuPrice(stats: number[]): number {
+    const x = stats.slice(2).reduce((acc, stat) => stat + acc, 0);
+    return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
+  }
+
   initImportedData() {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const pairRecipes: { [name: string]: NamePair[] } = {};
     const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
+    const isDesu = this.gameAbbr.startsWith('ds');
 
     for (const dataJson of this.compConfig.demonData[this.gameAbbr]) {
       for (const [name, json] of Object.entries(dataJson)) {
@@ -33,7 +43,7 @@ export class Compendium implements ICompendium {
           name: name,
           race: json['race'],
           lvl: json['lvl'],
-          price: 100 * (Math.floor(Math.pow(json['stats'].slice(3).reduce((acc, stat) => stat + acc, 0), 2) / 20) + json['lvl']),
+          price: isDesu ? this.estimateDesuPrice(json['stats']) : 100 * (this.estimateKuzuPrice(json['stats']) + json['lvl']),
           stats: json['stats'],
           resists: (json['nresists'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
           skills: json['nskills'] || json['skills'],

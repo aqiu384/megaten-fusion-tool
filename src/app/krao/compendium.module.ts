@@ -43,6 +43,7 @@ const MITAMA_TABLE = [
 ];
 
 for (const entry of Object.values(DEMON_DATA_JSON)) {
+  const stats = entry.stats;
   const skills = entry.skills;
   const nskills = {};
 
@@ -57,6 +58,7 @@ for (const entry of Object.values(DEMON_DATA_JSON)) {
     nskills[entry.skilli] = 0;
   }
 
+  entry.stats = [stats[0], stats[5]].concat(stats.slice(1, 5));
   entry['nskills'] = nskills;
 }
 
