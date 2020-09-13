@@ -561,6 +561,10 @@
     "power": 100,
     "target": "All Foes"
   },
+  "Desperate Hit": {
+    "effect": "Casts x3-8 alm-phys hits with 25 dmg and 30% crit on random foes, Nullifies counter effects, Scales off Patk",
+    "elem": "pas"
+  },
   "Dezoreto": {
     "cost": 5,
     "effect": "70% Weak",
@@ -1050,6 +1054,10 @@
     "power": 55,
     "target": "Rand Foes"
   },
+  "Glamorous Allure": {
+    "effect": "Regular attack changed to alm 60 dmg to all foes with 20% Charm",
+    "elem": "pas"
+  },
   "Gluttony": {
     "cost": 7,
     "effect": "Drains 50% dmg dealt",
@@ -1100,6 +1108,16 @@
   "God's Word": {
     "effect": "Ally Elec and Light dmg +10%, Casts piercing Mahamaon + Sukukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
     "elem": "pas"
+  },
+  "Goddess of Slaughter": {
+    "effect": "Phys Pierce, +10% dmg when in Might, Enters Might when a foe enters Might",
+    "elem": "pas"
+  },
+  "Goddess' Fan": {
+    "cost": 7,
+    "effect": "Dekaja + Debilitate for 6 turns",
+    "elem": "sup",
+    "target": "All Foes"
   },
   "Golden Greed": {
     "effect": "Ally dmg +200% against Poisoned Foes",
@@ -1341,6 +1359,10 @@
     "effect": "Every 2nd turn, casts Maragidyne and Rakunda",
     "elem": "pas"
   },
+  "Illusionary World": {
+    "effect": "Ailment hit +15%, Cures party of Mute and casts Megido when any ally is muted",
+    "elem": "pas"
+  },
   "Infernal Mask": {
     "effect": "Ailment resist +60%",
     "elem": "pas",
@@ -1360,6 +1382,13 @@
     "effect": "Removes 1 Foe Press Turn when Foe attacks first, 2 Turns max",
     "elem": "pas",
     "points": 21
+  },
+  "Iron Judgement": {
+    "cost": 5,
+    "effect": "Pierce, 30% crit, 50% Bind",
+    "elem": "phy",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Ishvara": {
     "effect": "Crit rate +25%, Acc +20%",
@@ -2136,6 +2165,10 @@
     "power": 60,
     "target": "Rand Foes"
   },
+  "Moment of Fate": {
+    "effect": "-30% to Light and Dark dmg, Dekunda + Luster Candy on first turn of boss battle",
+    "elem": "pas"
+  },
   "Morning Star": {
     "cost": 8,
     "effect": "3 uses",
@@ -2396,8 +2429,12 @@
     "cost": 8,
     "effect": "Luster Candy for 1 turn",
     "elem": "alm",
-    "power": 100,
+    "power": 120,
     "target": "All Foes"
+  },
+  "Peach of Immortality": {
+    "effect": "Revives a random ally with 100% HP when an ally is killed twice per battle",
+    "elem": "pas"
   },
   "Pestilence": {
     "effect": "Nullify Instant Death prevention. At end of enemy phase, Reduce all Poisoned Foe HP by 50% max (<2000)",
@@ -3100,6 +3137,13 @@
     "effect": "Phys Ice dmg scales off Matk, Casts Rebellion upon hit",
     "elem": "ice",
     "power": 130,
+    "target": "1 Foe"
+  },
+  "Violent Dance": {
+    "cost": 6,
+    "effect": "30% crit, x6 hits, Nullifies counter effects, Enters Might",
+    "elem": "phy",
+    "power": 35,
     "target": "1 Foe"
   },
   "Violent Slash": {
