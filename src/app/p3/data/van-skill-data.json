@@ -65,7 +65,7 @@
     "damage": "Light",
     "element": "fire",
     "hit": 95,
-    "power": 50,
+    "power": 40,
     "rank": 1,
     "target": "One Foe"
   },
@@ -244,7 +244,7 @@
   },
   "Bewilder": {
     "cost": 1005,
-    "effect": "25% Distress",
+    "effect": "40% Distress",
     "element": "ailment",
     "rank": 1,
     "target": "One Foe"
@@ -284,7 +284,7 @@
     "effect": "10% Freeze",
     "element": "ice",
     "hit": 95,
-    "power": 50,
+    "power": 40,
     "rank": 1,
     "target": "One Foe"
   },
@@ -411,7 +411,7 @@
     "card": "Unicorn, Pixie",
     "clvl": 4,
     "cost": 1004,
-    "effect": "Light HP restore",
+    "effect": "50 HP restore",
     "element": "recovery",
     "rank": 2,
     "target": "One Ally"
@@ -429,14 +429,14 @@
     "card": "Ganga, Leanan Sidhe",
     "clvl": 37,
     "cost": 1008,
-    "effect": "Medium HP restore",
+    "effect": "160 HP restore",
     "element": "recovery",
     "rank": 3,
     "target": "One Ally"
   },
   "Die for Me!": {
     "cost": 1035,
-    "effect": "80% insta-kill",
+    "effect": "45% insta-kill",
     "element": "dark",
     "rank": 9,
     "target": "All Foes",
@@ -502,7 +502,7 @@
   },
   "Dreamfest": {
     "cost": 1015,
-    "effect": "High chance of Charm",
+    "effect": "80% Charm",
     "element": "ailment",
     "rank": 0,
     "target": "All Foes",
@@ -510,7 +510,7 @@
   },
   "Eerie Sound": {
     "cost": 1010,
-    "effect": "25% Distress",
+    "effect": "35% Distress",
     "element": "ailment",
     "rank": 2,
     "target": "All Foes"
@@ -618,14 +618,14 @@
     "card": "Mokoi",
     "clvl": 20,
     "cost": 1010,
-    "effect": "25% Fear",
+    "effect": "35% Fear",
     "element": "ailment",
     "rank": 4,
     "target": "All Foes"
   },
   "Evil Touch": {
     "cost": 1005,
-    "effect": "25% Fear",
+    "effect": "40% Fear",
     "element": "ailment",
     "rank": 3,
     "target": "One Foe"
@@ -692,7 +692,7 @@
   },
   "Frolic": {
     "cost": 1010,
-    "effect": "Restores 100% HP, Low chance of Charm",
+    "effect": "Restores 100% HP, 30% Charm",
     "element": "recovery",
     "rank": 0,
     "target": "All Allies",
@@ -711,7 +711,7 @@
     "damage": "Light",
     "element": "wind",
     "hit": 95,
-    "power": 50,
+    "power": 40,
     "rank": 1,
     "target": "One Foe"
   },
@@ -805,7 +805,7 @@
     "card": "Archangel",
     "clvl": 11,
     "cost": 1006,
-    "effect": "25% insta-kill",
+    "effect": "30% insta-kill",
     "element": "light",
     "rank": 2,
     "target": "One Foe"
@@ -821,7 +821,7 @@
     "card": "Virtue",
     "clvl": 38,
     "cost": 1012,
-    "effect": "50% insta-kill",
+    "effect": "40% insta-kill",
     "element": "light",
     "rank": 4,
     "target": "One Foe"
@@ -910,7 +910,7 @@
   },
   "Infuriate": {
     "cost": 1010,
-    "effect": "25% Rage",
+    "effect": "35% Rage",
     "element": "ailment",
     "rank": 3,
     "target": "All Foes"
@@ -1070,7 +1070,7 @@
     "card": "Power",
     "clvl": 28,
     "cost": 1012,
-    "effect": "20% insta-kill",
+    "effect": "25% insta-kill",
     "element": "light",
     "rank": 3,
     "target": "All Foes"
@@ -1079,7 +1079,7 @@
     "card": "Throne",
     "clvl": 58,
     "cost": 1024,
-    "effect": "40% insta-kill",
+    "effect": "35% insta-kill",
     "element": "light",
     "rank": 5,
     "target": "All Foes"
@@ -1097,16 +1097,16 @@
     "card": "Ghoul",
     "clvl": 22,
     "cost": 1012,
-    "effect": "20% insta-kill",
+    "effect": "25% insta-kill",
     "element": "dark",
-    "rank": 4,
+    "rank": 3,
     "target": "All Foes"
   },
   "Mamudoon": {
     "card": "Anubis",
     "clvl": 66,
     "cost": 1024,
-    "effect": "40% insta-kill",
+    "effect": "35% insta-kill",
     "element": "dark",
     "rank": 5,
     "target": "All Foes"
@@ -1164,7 +1164,7 @@
   },
   "Marin Karin": {
     "cost": 1005,
-    "effect": "25% Charm",
+    "effect": "40% Charm",
     "element": "ailment",
     "rank": 2,
     "target": "One Foe"
@@ -1251,7 +1251,7 @@
     "card": "Sati, Principality",
     "clvl": 20,
     "cost": 1008,
-    "effect": "Light HP restore",
+    "effect": "40 HP restore",
     "element": "recovery",
     "rank": 3,
     "target": "All Allies"
@@ -1269,7 +1269,7 @@
     "card": "Saki Mitama",
     "clvl": 45,
     "cost": 1016,
-    "effect": "Medium HP restore",
+    "effect": "140 HP restore",
     "element": "recovery",
     "rank": 5,
     "target": "All Allies"
@@ -1341,7 +1341,7 @@
     "card": "Lilim",
     "clvl": 12,
     "cost": 1006,
-    "effect": "25% insta-kill",
+    "effect": "30% insta-kill",
     "element": "dark",
     "rank": 2,
     "target": "One Foe"
@@ -1357,9 +1357,9 @@
     "card": "Samael",
     "clvl": 44,
     "cost": 1012,
-    "effect": "50% insta-kill",
+    "effect": "40% insta-kill",
     "element": "dark",
-    "rank": 3,
+    "rank": 4,
     "target": "One Foe"
   },
   "Myriad Arrows": {
@@ -1505,7 +1505,7 @@
   },
   "Poisma": {
     "cost": 1005,
-    "effect": "25% Poison",
+    "effect": "40% Poison",
     "element": "ailment",
     "rank": 1,
     "target": "One Foe"
@@ -1517,7 +1517,7 @@
   },
   "Poison Mist": {
     "cost": 1010,
-    "effect": "25% Poison",
+    "effect": "35% Poison",
     "element": "ailment",
     "rank": 3,
     "target": "All Foes"
@@ -1545,7 +1545,7 @@
     "clvl": 89,
     "cost": 25,
     "damage": "Severe",
-    "effect": "25% crit, 25% Fear",
+    "effect": "30% crit, 50% Fear",
     "element": "pierce",
     "hit": 95,
     "power": 600,
@@ -1565,7 +1565,7 @@
     "effect": "5% crit",
     "element": "pierce",
     "hit": 95,
-    "power": 600,
+    "power": 580,
     "rank": 8,
     "target": "One Foe"
   },
@@ -1573,14 +1573,14 @@
     "card": "Nekomata",
     "clvl": 11,
     "cost": 1005,
-    "effect": "25% Rage",
+    "effect": "40% Rage",
     "element": "ailment",
     "rank": 2,
     "target": "One Foe"
   },
   "Pulinpa": {
     "cost": 1005,
-    "effect": "25% Panic",
+    "effect": "40% Panic",
     "element": "ailment",
     "rank": 2,
     "target": "One Foe"
@@ -1814,7 +1814,7 @@
   },
   "Samsara": {
     "cost": 1035,
-    "effect": "80% insta-kill",
+    "effect": "45% insta-kill",
     "element": "light",
     "rank": 9,
     "target": "All Foes"
@@ -1834,7 +1834,7 @@
     "card": "Yaksini",
     "clvl": 52,
     "cost": 1010,
-    "effect": "25% Charm",
+    "effect": "35% Charm",
     "element": "ailment",
     "rank": 3,
     "target": "All Foes"
@@ -2001,7 +2001,7 @@
   },
   "Tentarafoo": {
     "cost": 1010,
-    "effect": "25% Panic",
+    "effect": "35% Panic",
     "element": "ailment",
     "rank": 4,
     "target": "All Foes"
@@ -2062,7 +2062,7 @@
   },
   "Trickster": {
     "cost": 1015,
-    "effect": "High chance of random ailment",
+    "effect": "100% random ailment",
     "element": "ailment",
     "rank": 0,
     "target": "All Foes",
@@ -2110,7 +2110,7 @@
     "effect": "3% crit, Dmg x1.5 on Downed foes",
     "element": "pierce",
     "hit": 99,
-    "power": 311,
+    "power": 295,
     "rank": 5,
     "target": "One Foe"
   },
@@ -2192,7 +2192,7 @@
     "effect": "10% Shock",
     "element": "elec",
     "hit": 95,
-    "power": 50,
+    "power": 40,
     "rank": 1,
     "target": "One Foe"
   },

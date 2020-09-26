@@ -469,6 +469,13 @@
     "power": 120,
     "target": "1 Foe"
   },
+  "Daylight Blade": {
+    "cost": 7,
+    "effect": "30% crit, Pierce, Casts Concentrate after use",
+    "elem": "phy",
+    "power": 120,
+    "target": "1 Foe"
+  },
   "Deadly Bondage": {
     "effect": "Dmg +30% to Bound Foes",
     "elem": "pas",
@@ -800,6 +807,11 @@
     "effect": "Revive once per battle with 200 HP",
     "elem": "pas",
     "points": 12
+  },
+  "Enduring Soul+": {
+    "effect": "Revive once per battle with 500 HP",
+    "elem": "pas",
+    "points": 18
   },
   "Enemy Annihilation": {
     "cost": 8,
@@ -2794,6 +2806,10 @@
     "elem": "ail",
     "points": 8,
     "target": "1 Foe"
+  },
+  "Shimmer Arrow": {
+    "effect": "Casts 80 piercing Light dmg on 1 foe when ally uses MP Phys skill, Scales off Patk, Nullifies endure effects",
+    "elem": "pas"
   },
   "Shock": {
     "cost": 4,
