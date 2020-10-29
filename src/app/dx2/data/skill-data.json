@@ -787,6 +787,11 @@
     "elem": "pas",
     "points": 16
   },
+  "Elemental Cycle": {
+    "effect": "Quad-elem dmg +15%",
+    "elem": "pas",
+    "points": 21
+  },
   "Elemental Magic": {
     "cost": 5,
     "effect": "Deals Fire, Ice, or Force dmg",
@@ -1070,6 +1075,13 @@
     "effect": "Regular attack changed to alm 60 dmg to all foes with 20% Charm",
     "elem": "pas"
   },
+  "Glorious Bolt": {
+    "cost": 6,
+    "effect": "Pierce, Recovers 1 MP to all allies",
+    "elem": "elec",
+    "power": 160,
+    "target": "1 Foe"
+  },
   "Gluttony": {
     "cost": 7,
     "effect": "Drains 50% dmg dealt",
@@ -1101,6 +1113,10 @@
   },
   "God's Fire": {
     "effect": "Ally Fire and Light dmg +10%, Casts piercing Fire Breath + Tarukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
+    "elem": "pas"
+  },
+  "God's Grace": {
+    "effect": "Elec and Light dmg +10%, Casts Five Elements for 1 turn and recovers 1 MP to all allies when 3 or more Divines/Heralds in party each turn",
     "elem": "pas"
   },
   "God's Hand": {
@@ -1590,6 +1606,16 @@
     "effect": "Skill costs -1 MP",
     "elem": "pas"
   },
+  "Lunar Downfall": {
+    "effect": "Casts Tarunda + Sukunda for 1 turn when Foe attacks first",
+    "elem": "pas",
+    "points": 18
+  },
+  "Lunar Prosperity": {
+    "effect": "Casts Rakukaja + Sukukaja for 1 turn when Foe attacks first",
+    "elem": "pas",
+    "points": 18
+  },
   "Lunge": {
     "cost": 4,
     "effect": "30% crit",
@@ -2001,6 +2027,12 @@
     "power": 100,
     "target": "All Foes"
   },
+  "Measured Fate": {
+    "cost": 6,
+    "effect": "Dekaja + Remove Null Mortal barriers, Dekunda to allies",
+    "elem": "sup",
+    "target": "All Foes"
+  },
   "Mecharmdi": {
     "cost": 4,
     "effect": "Cures Charm, Charm resist +30% for 1 wave",
@@ -2142,9 +2174,9 @@
   },
   "Million Stab": {
     "cost": 8,
-    "effect": "4 hits, Pierce when in Might",
+    "effect": "4 hits, Pierce, Nullifies counter effects",
     "elem": "phy",
-    "power": 35,
+    "power": 40,
     "target": "All Foes"
   },
   "Mind Blast": {
@@ -2437,6 +2469,18 @@
     "power": 160,
     "target": "1 Foe"
   },
+  "Passionate Allure": {
+    "effect": "Healing +10%, Casts Barrier Break and 50% Charm/Poison when 3 or more Femme/Lady demons in party each turn",
+    "elem": "pas"
+  },
+  "Passionate Embrace": {
+    "effect": "Max HP +10%, Casts Tarunda/kaja + Rakunda/kaja for 2 turns when 3 or more Femme/Lady demons in party each turn",
+    "elem": "pas"
+  },
+  "Passionate Rage": {
+    "effect": "Quad-elem dmg +5%, Casts 60 piercing Fire dmg and 60 piercing Elec dmg on all foes when 3 or more Femme/Lady demons in party each turn",
+    "elem": "pas"
+  },
   "Path of Prominence": {
     "cost": 8,
     "effect": "Luster Candy for 1 turn",
@@ -2585,7 +2629,7 @@
     "target": "Rand Foes"
   },
   "Rapid Shot": {
-    "effect": "Regular attack changed to 20 dmg, 5 hits, 25% crit, enters Might after use",
+    "effect": "Regular attack changed to 25 dmg, 5 hits, 30% crit, enters Might after use, Nullifies counter effects",
     "elem": "pas"
   },
   "Rasetsu": {
@@ -2781,6 +2825,13 @@
     "effect": "Multi-target dmg +10%",
     "elem": "pas",
     "points": 8
+  },
+  "Severed Fate": {
+    "cost": 6,
+    "effect": "Pierce, Chooses one among Quad-elems",
+    "elem": "alm",
+    "power": 160,
+    "target": "One Foe"
   },
   "Sexy Dance": {
     "cost": 6,
@@ -3260,6 +3311,13 @@
     "points": 7,
     "power": 45,
     "target": "Rand Foes"
+  },
+  "Woven Fate": {
+    "cost": 6,
+    "effect": "6 uses, Recarm to random ally",
+    "elem": "rec",
+    "power": 75,
+    "target": "All Allies"
   },
   "Wrathful Flame": {
     "cost": 6,
