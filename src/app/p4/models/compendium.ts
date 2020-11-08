@@ -1,6 +1,5 @@
 import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
-import { JsonPipe } from '@angular/common';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -8,6 +7,7 @@ export class Compendium implements ICompendium {
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
+  private invertedSpecials: { [ingred: string]: { result: string, recipe: string }[] };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -28,6 +28,7 @@ export class Compendium implements ICompendium {
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
+    const invertedSpecials: { [ingred: string]: { result: string, recipe: string }[] } = {};
     this._inheritTypes = {};
 
     for (const demonDataJson of this.compConfig.demonData[this.gameAbbr]) {
@@ -112,8 +113,16 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(this.compConfig.specialRecipes[this.gameAbbr])) {
-      specials[name] = <string[]>json;
+      const ingreds = <string[]>json;
+      specials[name] = ingreds;
       demons[name].fusion = 'special';
+
+      if (ingreds.length === 2) {
+        if (!invertedSpecials[ingreds[0]]) { invertedSpecials[ingreds[0]] = []; }
+        if (!invertedSpecials[ingreds[1]]) { invertedSpecials[ingreds[1]] = []; }
+        invertedSpecials[ingreds[0]].push({ result: name, recipe: ingreds[1] });
+        invertedSpecials[ingreds[1]].push({ result: name, recipe: ingreds[0] });
+      }
     }
 
     for (const race of this.compConfig.races) {
@@ -135,6 +144,7 @@ export class Compendium implements ICompendium {
     this.skills = skills;
     this.specialRecipes = specials;
     this.invertedDemons = inverses;
+    this.invertedSpecials = invertedSpecials;
     this._inheritTypes = this.compConfig.inheritTypes;
   }
 
@@ -235,7 +245,7 @@ export class Compendium implements ICompendium {
   }
 
   reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
-    return [];
+    return this.invertedSpecials[ingredient] || [];
   }
 
   isElementDemon(name: string): boolean {
