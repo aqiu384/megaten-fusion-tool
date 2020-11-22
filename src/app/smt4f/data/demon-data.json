@@ -218,7 +218,7 @@
     "resists": "--s-wsnw",
     "skills": {
       "High Light Pleroma": 84,
-      "Judgment Light": 0,
+      "Judgement Light": 0,
       "Luster Candy": 0,
       "Mediarahan": 83
     },
@@ -232,7 +232,7 @@
     "resists": "----rwd-",
     "skills": {
       "Dekunda": 91,
-      "Judgment Light": 92,
+      "Judgement Light": 92,
       "Makajamaon": 0,
       "Thunder Gods": 93,
       "Thunder Reign": 0
@@ -249,7 +249,7 @@
     "skills": {
       "Dark Pleroma": 63,
       "Dekunda": 61,
-      "Judgment Light": 0,
+      "Judgement Light": 0,
       "Light Pleroma": 62,
       "Mamudoon": 0
     },
@@ -263,8 +263,8 @@
     "race": "Raptor",
     "resists": "-w--nw--",
     "skills": {
-      "Critical Eye": 52,
-      "Me Patra": 51,
+      "Critical Eye": 51,
+      "Me Patra": 50,
       "Nihil Claw": 0,
       "Shock": 0
     },
@@ -373,12 +373,12 @@
     "stats": [451, 365, 42, 56, 94, 84, 73]
   },
   "Archangel": {
-    "affinities": [1, 0, 1, 0, 0, 0, 3, -5, 0, 0, 0, 0],
+    "affinities": [1, 0, 1, 0, 0, 0, 3, -5, 0, 0, 0, 1],
     "evolves": "Principality",
     "lvl": 18,
     "price": 2066,
     "race": "Divine",
-    "resists": "---w--nw",
+    "resists": "------nw",
     "skills": {
       "Agilao": 19,
       "Hama": 0,
@@ -411,14 +411,14 @@
     "skills": {
       "Diarama": 52,
       "Grand Tack": 0,
-      "Judgment": 53,
+      "Judgement": 53,
       "Maragion": 0,
       "Samarecarm": 54
     },
     "stats": [462, 293, 50, 85, 75, 45, 57]
   },
   "Asura": {
-    "affinities": [4, 0, 2, -5, 0, 0, 0, 0, 0, -2, 0, 1],
+    "affinities": [4, 0, 2, -5, 0, 0, 0, 0, 0, -2, 0, 0],
     "attack": "Phys x1-3, 1 enemy",
     "lvl": 43,
     "price": 17466,
@@ -475,10 +475,10 @@
       "Maragidyne": 0,
       "Samarecarm": 72
     },
-    "stats": [687, 345, 64, 54, 113, 76, 73]
+    "stats": [687, 345, 64, 54, 113, 76, 85]
   },
   "Azrael": {
-    "affinities": [-5, 0, 3, -3, 0, 0, 4, 4, 0, 0, 0, 0],
+    "affinities": [-5, 0, 3, -3, 0, 0, 3, 4, 0, 0, 0, 3],
     "lvl": 77,
     "price": 27535,
     "race": "Herald",
@@ -493,7 +493,7 @@
     "stats": [482, 398, 51, 67, 115, 75, 91]
   },
   "Azumi": {
-    "affinities": [0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, 0, 3, -3, 0, 0, 0, 0, 1, 0, -1],
     "lvl": 19,
     "price": 2527,
     "race": "Brute",
@@ -577,7 +577,7 @@
       "Mamudo": 37,
       "Megaton Press": 0
     },
-    "stats": [402, 116, 58, 37, 32, 34, 44]
+    "stats": [408, 116, 58, 37, 32, 34, 44]
   },
   "Baphomet": {
     "affinities": [0, 0, 0, 0, 0, 0, -3, 3, 0, 0, 0, 0],
@@ -802,7 +802,7 @@
     "stats": [536, 439, 53, 67, 123, 85, 111]
   },
   "Brigid": {
-    "affinities": [0, 0, 4, -6, 0, 0, 0, 0, 0, 2, 0, 0],
+    "affinities": [0, 0, 4, -5, 0, 0, 0, 0, 0, 2, 0, 0],
     "lvl": 33,
     "price": 5853,
     "race": "Megami",
@@ -811,17 +811,17 @@
       "Agilao": 0,
       "Makakaja": 34,
       "Mana Gain": 35,
-      "Mediarama": 0
+      "Media": 0
     },
     "stats": [256, 226, 25, 32, 59, 36, 45]
   },
   "Cabracan": {
-    "affinities": [0, 0, 2, -2, 2, -5, 0, -3, 0, 0, 0, 0],
+    "affinities": [0, 0, 2, -2, 2, -5, 0, -3, 0, 1, 0, 1],
     "ailments": "-----w--",
     "lvl": 59,
     "price": 17548,
     "race": "Wilder",
-    "resists": "--n-nw--",
+    "resists": "--n-nw-w",
     "skills": {
       "Acid Breath": 61,
       "Earthquake": 60,
@@ -860,7 +860,7 @@
     "stats": [227, 121, 29, 29, 27, 40, 33]
   },
   "Catoblepas": {
-    "affinities": [3, 0, 0, 0, 2, 0, -3, 1, 0, 0, 0, 0],
+    "affinities": [3, 0, 0, 0, 2, 0, -3, 1, 0, 0, -4, -3],
     "ailments": "---w--w-",
     "lvl": 52,
     "price": 20249,
@@ -948,7 +948,7 @@
     "stats": [463, 259, 71, 56, 71, 61, 51]
   },
   "Cherub": {
-    "affinities": [0, 3, 0, 0, -5, -5, 4, 0, 3, 0, 0, -3],
+    "affinities": [0, 3, 0, 0, -5, 0, 4, -5, 3, 0, 0, -3],
     "ailments": "---w----",
     "evolves": "Angel White Wings",
     "lvl": 71,
@@ -1073,7 +1073,7 @@
     "stats": [333, 156, 38, 34, 32, 58, 43]
   },
   "Corpses": {
-    "affinities": [0, 2, -5, 2, -3, 0, -3, 2, 0, 0, 0, 0],
+    "affinities": [0, 2, -5, 2, -3, 0, -3, 2, 0, -5, 2, 0],
     "evolves": "Nebiros",
     "lvl": 35,
     "price": 3513,
@@ -1181,7 +1181,7 @@
       "Smile Charge": 83,
       "Soul Drain": 0
     },
-    "stats": [603, 455, 65, 77, 143, 115, 87]
+    "stats": [604, 455, 65, 77, 143, 115, 87]
   },
   "Decarabia": {
     "affinities": [0, -4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -1221,7 +1221,7 @@
       "Blank Bullet": 0,
       "Breath": 78,
       "Desperate Hit": 77,
-      "Iron Judgment": 0,
+      "Iron Judgement": 0,
       "Smile Charge": 0
     },
     "stats": [714, 216, 114, 71, 51, 75, 86]
@@ -1236,7 +1236,7 @@
     "skills": {
       "Blast Arrow": 0,
       "Grand Tack": 43,
-      "Gun Pleroma": 43,
+      "Gun Pleroma": 42,
       "Madness Needle": 0
     },
     "stats": [455, 174, 42, 72, 47, 52, 42]
@@ -1341,7 +1341,7 @@
       "Mana Bonus": 21,
       "Maragi": 20
     },
-    "stats": [162, 152, 16, 16, 39, 23, 31]
+    "stats": [167, 152, 16, 16, 39, 23, 31]
   },
   "Enku": {
     "affinities": [0, 0, 4, -5, 0, -3, 0, 3, 0, -2, 0, 0],
@@ -1527,7 +1527,7 @@
       "Shibaboo": 0,
       "Zan": 0
     },
-    "stats": [116, 46, 11, 16, 10, 13, 12]
+    "stats": [116, 45, 11, 16, 10, 13, 12]
   },
   "Ganesha": {
     "affinities": [3, 3, 0, 0, -6, 3, 0, 0, 0, 0, -2, 1],
@@ -1712,7 +1712,7 @@
     "lvl": 16,
     "price": 1808,
     "race": "Flight",
-    "resists": "-rsw-s-w",
+    "resists": "-wsw-s-w",
     "skills": {
       "Agilao": 0,
       "Makakaja": 17,
@@ -1741,7 +1741,7 @@
     "lvl": 63,
     "price": 33358,
     "race": "Reaper",
-    "resists": "-------n",
+    "resists": "-------r",
     "skills": {
       "Amrita": 0,
       "Dark Pleroma": 65,
@@ -1797,7 +1797,7 @@
     "stats": [726, 244, 111, 70, 50, 74, 97]
   },
   "Hagen": {
-    "affinities": [3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [3, 3, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
     "attack": "Phys x1-3, 1 enemy",
     "lvl": 56,
     "price": 32639,
@@ -1810,7 +1810,7 @@
       "Hellish Mask": 0,
       "Loyalty Slash": 0
     },
-    "stats": [615, 121, 86, 54, 39, 67, 90]
+    "stats": [596, 216, 86, 54, 39, 67, 90]
   },
   "Hairy Jack": {
     "affinities": [3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 1],
@@ -1873,11 +1873,11 @@
     "stats": [630, 212, 100, 62, 45, 66, 76]
   },
   "Haoma": {
-    "affinities": [2, 0, -4, 0, 0, 0, 0, 0, 0, 2, 0, 1],
+    "affinities": [0, 2, -4, 0, 0, 0, 0, 0, 0, 2, 0, 1],
     "lvl": 54,
     "price": 20506,
     "race": "Tree",
-    "resists": "-nn---s-",
+    "resists": "-nw---s-",
     "skills": {
       "Amrita": 0,
       "Blast Arrow": 55,
@@ -1981,7 +1981,7 @@
     "stats": [647, 196, 103, 64, 46, 67, 78]
   },
   "Hel": {
-    "affinities": [0, 0, -5, 4, 0, 0, 0, 4, 0, 0, 0, 0],
+    "affinities": [0, 0, -5, 4, 0, 0, 0, 4, 0, 0, 0, -2],
     "lvl": 43,
     "price": 10514,
     "race": "Reaper",
@@ -2027,7 +2027,7 @@
     "stats": [213, 207, 23, 32, 48, 36, 39]
   },
   "Hitokoto-Nushi": {
-    "affinities": [0, 0, -3, 0, 2, -2, 3, -3, 0, 0, 0, 0],
+    "affinities": [0, 0, -3, 0, 2, -2, 3, -3, 0, 0, 0, 3],
     "lvl": 49,
     "price": 20627,
     "race": "Kunitsu",
@@ -2062,9 +2062,7 @@
     "race": "Tyrant",
     "resists": "s-w---w-",
     "skills": {
-      "Counter": 28,
       "Critical Wave": 0,
-      "Endure": 30,
       "Megaton Press": 28
     },
     "stats": [364, 91, 44, 26, 19, 27, 34]
@@ -2091,16 +2089,16 @@
     "race": "Beast",
     "resists": "--s-sw--",
     "skills": {
+      "Attack Knowhow": 0,
       "Beastly Reaction": 50,
       "Binding Claw": 0,
-      "Healing Knowhow": 0,
       "Sukukaja": 0,
       "Taunt": 49
     },
     "stats": [360, 171, 72, 44, 32, 70, 62]
   },
   "Hua Po": {
-    "affinities": [0, 0, 2, 0, -3, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, 2, 0, -3, 0, 0, 0, 0, 2, 0, -1],
     "lvl": 12,
     "price": 947,
     "race": "Jirae",
@@ -2234,10 +2232,10 @@
       "Heat Wave": 0,
       "Maragion": 34
     },
-    "stats": [325, 188, 24, 28, 46, 34, 39]
+    "stats": [324, 188, 24, 28, 46, 34, 39]
   },
   "Inti": {
-    "affinities": [0, 0, 2, 2, -3, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, 2, 2, -3, 0, 0, 0, 0, 0, 0, -2],
     "lvl": 34,
     "price": 11776,
     "race": "Deity",
@@ -2255,7 +2253,7 @@
     "lvl": 20,
     "price": 5029,
     "race": "Beast",
-    "resists": "--sw----",
+    "resists": "--sw--ws",
     "skills": {
       "Fire Breath": 0,
       "Maragi": 21,
@@ -2289,7 +2287,7 @@
     "skills": {
       "Concentrate": 46,
       "Hamaon": 0,
-      "Judgment": 0,
+      "Judgement": 0,
       "Samarecarm": 47
     },
     "stats": [337, 317, 29, 40, 90, 46, 57]
@@ -2309,7 +2307,7 @@
     "stats": [493, 309, 56, 57, 80, 87, 79]
   },
   "Israfel": {
-    "affinities": [0, 0, -5, 3, 0, 0, 3, 3, 2, 0, 0, 0],
+    "affinities": [0, 0, -5, 3, 0, 0, 3, 0, 2, 0, 3, 0],
     "ailments": "----n---",
     "lvl": 68,
     "price": 16393,
@@ -2318,7 +2316,7 @@
     "skills": {
       "Ally Retaliate": 71,
       "Bufudyne": 0,
-      "Judgment": 70,
+      "Judgement": 70,
       "Mahamaon": 69,
       "Panic Voice": 0
     },
@@ -2465,7 +2463,7 @@
     "race": "Beast",
     "resists": "---sw---",
     "skills": {
-      "Binding Claw": 0,
+      "Bouncing Claw": 0,
       "Dia": 8,
       "Poison Claw": 7
     },
@@ -2487,7 +2485,7 @@
     "stats": [462, 176, 66, 38, 27, 52, 59]
   },
   "Kaiwan": {
-    "affinities": [0, 0, 0, -3, 0, 0, -3, 2, 0, 0, 0, 0],
+    "affinities": [0, 0, 0, -3, 0, 0, -3, 2, 0, 0, 0, 1],
     "ailments": "---s---s",
     "lvl": 39,
     "price": 7068,
@@ -2537,7 +2535,7 @@
     "lvl": 23,
     "price": 5060,
     "race": "Avatar",
-    "resists": "swswsw-w",
+    "resists": "swswss--",
     "skills": {
       "Media": 0,
       "Oni-Kagura": 0,
@@ -2547,7 +2545,7 @@
     "stats": [299, 103, 46, 26, 17, 29, 28]
   },
   "Kanbari": {
-    "affinities": [3, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0],
+    "affinities": [3, 0, 0, 0, 0, 0, 3, -3, 0, 0, 3, 0],
     "ailments": "w-------",
     "lvl": 27,
     "price": 8817,
@@ -2624,7 +2622,7 @@
     "stats": [629, 325, 66, 81, 54, 109, 97]
   },
   "Kaso": {
-    "affinities": [0, 0, 2, -3, 0, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, 2, -3, 0, 0, 0, 0, 0, 0, 0, 1],
     "lvl": 10,
     "price": 712,
     "race": "Beast",
@@ -2632,7 +2630,7 @@
     "skills": {
       "Agi": 0,
       "Beastly Reaction": 13,
-      "Sukukaja": 0
+      "Sukukaja": 12
     },
     "stats": [107, 92, 11, 14, 19, 22, 13]
   },
@@ -2666,7 +2664,7 @@
     "stats": [586, 268, 105, 65, 87, 114, 96]
   },
   "Kelpie": {
-    "affinities": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, 0, 0, 0, -3, 0, 0, 0, 1, 0, 1],
     "ailments": "s-------",
     "evolves": "Valkyrie",
     "lvl": 31,
@@ -2674,10 +2672,11 @@
     "race": "Fairy",
     "resists": "---s-w--",
     "skills": {
+      "Diarama": 0,
       "Tarunda": 0,
-      "Trafuri": 37
+      "Trafuri": 32
     },
-    "stats": [322, 144, 42, 39, 39, 50, 42]
+    "stats": [236, 172, 34, 34, 39, 50, 43]
   },
   "Kikimora": {
     "affinities": [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2],
@@ -2768,7 +2767,7 @@
     "stats": [603, 220, 41, 51, 73, 91, 79]
   },
   "Knocker": {
-    "affinities": [0, 0, 0, 0, -3, 1, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, 0, 0, -3, 1, 0, 0, 0, 0, 0, 3],
     "lvl": 17,
     "price": 2879,
     "race": "Jirae",
@@ -2986,10 +2985,10 @@
     "race": "Famed",
     "resists": "-n--s---",
     "skills": {
-      "Ally Counter": 0,
-      "Berserker God": 46,
+      "Ally Counter": 50,
       "Javelin Rain": 0,
-      "Resist Phys": 44
+      "Marin Karin": 0,
+      "Mortal Jihad": 52
     },
     "stats": [538, 198, 79, 50, 35, 61, 58]
   },
@@ -3037,7 +3036,7 @@
     "stats": [261, 80, 38, 25, 18, 26, 30]
   },
   "Lilim": {
-    "affinities": [0, 0, 0, -3, -2, 2, 0, 0, 0, 0, 3, 0],
+    "affinities": [0, 0, 0, -3, -2, 2, 0, 0, 0, 0, 3, -2],
     "ailments": "-n-----s",
     "lvl": 33,
     "price": 6901,
@@ -3105,10 +3104,10 @@
     "race": "Fairy",
     "resists": "----wn--",
     "skills": {
-      "Mabufula": 0,
-      "Makarakarn": 54,
-      "Mediarama": 0,
-      "Panic Voice": 53
+      "Lullaby": 0,
+      "Mabufudyne": 0,
+      "Makarakarn": 60,
+      "Marin Karin": 59
     },
     "stats": [366, 341, 40, 52, 94, 53, 71]
   },
@@ -3126,7 +3125,7 @@
       "Hades Blast": 0,
       "Myriad Arrows": 0
     },
-    "stats": [968, 435, 150, 145, 111, 110, 116]
+    "stats": [886, 423, 150, 145, 111, 110, 116]
   },
   "Lucifuge": {
     "affinities": [0, 3, 0, 0, -5, 3, 0, 4, 0, 0, 0, 2],
@@ -3213,6 +3212,7 @@
     "resists": "------sw",
     "skills": {
       "Diarama": 0,
+      "Heal Pleroma": 0,
       "Posumudi": 34,
       "Recarm": 0,
       "Workaholic": 35
@@ -3247,7 +3247,7 @@
     "stats": [120, 65, 14, 14, 12, 19, 17]
   },
   "Mandrake": {
-    "affinities": [0, 0, -3, 0, 0, 0, 0, 0, 0, 1, 1, 0],
+    "affinities": [0, 0, -3, 0, 0, 0, 0, 0, 0, 1, 3, 0],
     "ailments": "n-------",
     "lvl": 4,
     "price": 455,
@@ -3317,7 +3317,7 @@
     "resists": "--wrwrr-",
     "skills": {
       "Ice Age": 95,
-      "Judgment Light": 94,
+      "Judgement Light": 94,
       "Megidolaon": 0,
       "Panic Voice": 0,
       "Repel Gun": 96,
@@ -3400,12 +3400,12 @@
       "Marin Karin": 0,
       "Mazionga": 0,
       "Snake's Fangs": 0,
-      "Ziodyne": 42
+      "Ziodyne": 43
     },
     "stats": [420, 189, 39, 69, 57, 54, 46]
   },
   "Melchom": {
-    "affinities": [0, 0, 1, -3, 0, -3, 0, 2, 0, 0, -1, 0],
+    "affinities": [0, 0, 1, -3, 0, -3, 0, 2, 0, 1, -1, 0],
     "ailments": "w-------",
     "lvl": 13,
     "price": 969,
@@ -3475,7 +3475,7 @@
       "Almighty Pleroma": 99,
       "Dekaja": 0,
       "Fire of Sinai": 0,
-      "Judgment Light": 0,
+      "Judgement Light": 0,
       "Megidolaon": 0
     },
     "stats": [1149, 390, 128, 128, 143, 93, 93]
@@ -3520,7 +3520,7 @@
       "Berserker God": 0,
       "Glacial Blast": 97,
       "Self-Righteous Vow": 98,
-      "Severe Judgment": 0,
+      "Severe Judgement": 0,
       "Smile Charge": 0,
       "Tetrabreak": 0
     },
@@ -3668,6 +3668,7 @@
     "resists": "----nww-",
     "skills": {
       "Axel Claw": 48,
+      "Elec Pleroma": 49,
       "Posumudi": 0,
       "Ziodyne": 0
     },
@@ -3730,7 +3731,7 @@
       "Zan": 0,
       "Zanma": 15
     },
-    "stats": [130, 113, 11, 13, 19, 22, 15]
+    "stats": [130, 113, 14, 11, 24, 25, 20]
   },
   "Narcissus": {
     "affinities": [-2, 0, -3, 2, -2, 4, 0, 0, 0, 0, 2, 2],
@@ -3778,7 +3779,7 @@
     "stats": [308, 256, 33, 43, 72, 48, 57]
   },
   "Nekomata": {
-    "affinities": [2, 0, 2, -5, -5, 2, 0, 0, 0, 0, 0, 0],
+    "affinities": [2, 0, 2, -5, -5, 2, 0, 0, 0, 0, 0, -2],
     "ailments": "wsw-----",
     "attack": "Phys x2, 1 enemy",
     "lvl": 35,
@@ -3798,7 +3799,7 @@
     "lvl": 81,
     "price": 21973,
     "race": "Reaper",
-    "resists": "--sw--sr",
+    "resists": "--sw-nsr",
     "skills": {
       "Berserker God": 83,
       "Hades Blast": 0,
@@ -3808,7 +3809,7 @@
     "stats": [786, 246, 123, 83, 51, 76, 97]
   },
   "Niddhoggr": {
-    "affinities": [2, 2, -2, 3, -3, 0, -3, 0, 0, 0, 0, 0],
+    "affinities": [2, 2, -2, 3, -3, 0, -3, 0, 0, 0, 0, -3],
     "ailments": "----w---",
     "attack": "Phys x1-3, 1 enemy",
     "lvl": 60,
@@ -3824,7 +3825,7 @@
     "stats": [682, 198, 69, 92, 63, 66, 52]
   },
   "Night Stalker": {
-    "affinities": [2, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0],
+    "affinities": [2, 0, 0, 0, 0, 0, -3, 0, 0, 0, 1, -2],
     "ailments": "-------s",
     "lvl": 22,
     "price": 2336,
@@ -3869,7 +3870,7 @@
     "stats": [369, 103, 25, 26, 23, 26, 26]
   },
   "Nue": {
-    "affinities": [0, -4, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, -4, 0, 0, 3, -3, 0, 0, 0, 0, 0, -2],
     "lvl": 39,
     "price": 6840,
     "race": "Wilder",
@@ -3995,7 +3996,7 @@
     "skills": {
       "Agidyne": 0,
       "Bufudyne": 60,
-      "Judgment": 61,
+      "Judgement": 61,
       "Recarmdra": 0
     },
     "stats": [493, 319, 49, 51, 83, 93, 75]
@@ -4088,7 +4089,7 @@
     "stats": [554, 204, 86, 50, 38, 59, 67]
   },
   "Orthrus": {
-    "affinities": [3, 0, 3, -6, 0, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [3, 0, 3, -6, 0, 0, 0, 0, 0, 0, 0, -3],
     "ailments": "----sw--",
     "evolves": "Cerberus",
     "lvl": 52,
@@ -4215,7 +4216,7 @@
     "race": "Vile",
     "resists": "--wn--sd",
     "skills": {
-      "Beastly Reaction": 75,
+      "Beastly Reaction": 74,
       "Berserker God": 75,
       "Mamudoon": 0,
       "Pandemic Bomb": 0
@@ -4228,7 +4229,7 @@
     "lvl": 51,
     "price": 24149,
     "race": "Megami",
-    "resists": "sn----nw",
+    "resists": "-n----nw",
     "skills": {
       "Chakra Walk": 53,
       "Holy Wrath": 52,
@@ -4312,7 +4313,7 @@
     "stats": [105, 82, 10, 11, 20, 11, 15]
   },
   "Pendragon": {
-    "affinities": [3, -4, -2, 3, 2, -2, 0, 0, 0, 0, 0, 0],
+    "affinities": [3, -4, -2, 3, 2, -2, 0, 0, 0, 0, 0, 3],
     "lvl": 66,
     "price": 21452,
     "race": "Snake",
@@ -4458,7 +4459,7 @@
     "stats": [140, 66, 17, 17, 17, 17, 17]
   },
   "Principality": {
-    "affinities": [0, -4, 0, 0, 0, 0, 4, -5, 0, 0, 0, 0],
+    "affinities": [0, -4, 0, 0, 0, 0, 4, -5, 0, 2, 0, 1],
     "evolves": "Power",
     "lvl": 26,
     "price": 5773,
@@ -4610,7 +4611,7 @@
     "stats": [355, 121, 59, 38, 28, 45, 50]
   },
   "Rama": {
-    "affinities": [4, 0, 0, 3, 0, 0, -2, -2, 0, 0, 0, 0],
+    "affinities": [4, 0, 0, 3, 0, 0, -2, -2, 0, 0, 0, 2],
     "lvl": 74,
     "price": 31935,
     "race": "Famed",
@@ -4621,7 +4622,7 @@
       "Luster Candy": 0,
       "Megidolaon": 76
     },
-    "stats": [698, 212, 111, 69, 50, 73, 87]
+    "stats": [698, 212, 111, 69, 50, 73, 84]
   },
   "Rangda": {
     "affinities": [2, 0, 0, 0, -3, 3, 0, 0, 0, 1, 0, -3],
@@ -4714,7 +4715,7 @@
     "stats": [476, 392, 51, 67, 114, 75, 90]
   },
   "Sandman": {
-    "affinities": [0, 1, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 1, 0, 0, -3, 0, 0, 0, 0, 0, 3, -1],
     "ailments": "-------n",
     "attack": "Phys x1-3, 1 enemy",
     "lvl": 10,
@@ -4761,7 +4762,7 @@
     "stats": [1253, 722, 178, 116, 191, 138, 123]
   },
   "Scathach": {
-    "affinities": [1, 2, 0, 0, -5, 2, 0, 0, 0, 0, 0, 0],
+    "affinities": [1, 2, 0, 0, -5, 2, 0, 0, 0, 1, 0, 0],
     "ailments": "---s----",
     "lvl": 39,
     "price": 9102,
@@ -4862,7 +4863,7 @@
     "resists": "--ws----",
     "skills": {
       "Binding Claw": 0,
-      "Bouncing Claw": 0,
+      "Bouncing Claw": 12,
       "Poison Claw": 13
     },
     "stats": [133, 73, 16, 16, 14, 22, 20]
@@ -4890,7 +4891,7 @@
     "skills": {
       "Frenzied Chomp": 16,
       "Mazan": 0,
-      "Shibaboo": 0
+      "Shibaboo": 15
     },
     "stats": [173, 83, 22, 22, 15, 25, 23]
   },
@@ -5042,7 +5043,7 @@
       "Mediarahan": 73,
       "Mediarama": 0
     },
-    "stats": [578, 400, 48, 63, 107, 70, 85]
+    "stats": [548, 400, 48, 63, 107, 70, 85]
   },
   "Spriggan": {
     "affinities": [2, -1, 0, 0, 0, 0, -5, -3, 0, 0, 1, 1],
@@ -5072,12 +5073,12 @@
       "Drain Elec": 89,
       "High Light Pleroma": 88,
       "Holy Wrath": 0,
-      "Judgment Light": 0
+      "Judgement Light": 0
     },
     "stats": [532, 498, 62, 100, 113, 92, 101]
   },
   "Stonka": {
-    "affinities": [2, -2, 0, 0, 0, -3, 0, 0, 0, 0, -1, 0],
+    "affinities": [2, -2, 0, 0, 0, -3, 0, 0, 0, 0, -1, 1],
     "ailments": "-w------",
     "lvl": 26,
     "price": 4996,
@@ -5142,7 +5143,7 @@
     "race": "Jirae",
     "resists": "--wws---",
     "skills": {
-      "Pulinpa": 0,
+      "Pulinpa": 6,
       "Zio": 0
     },
     "stats": [84, 40, 8, 8, 10, 10, 9]
@@ -5162,7 +5163,7 @@
     "stats": [333, 322, 30, 49, 83, 55, 71]
   },
   "Sukuna-Hikona": {
-    "affinities": [2, 0, 0, 4, -1, 4, 0, 0, 0, 0, 1, 1],
+    "affinities": [2, 0, 0, 4, -1, 4, 0, 0, 0, 0, 3, 1],
     "ailments": "------w-",
     "lvl": 34,
     "price": 14558,
@@ -5173,7 +5174,7 @@
       "Infernal Hail": 0,
       "Makajam": 35,
       "Needlestorm": 0,
-      "Null Mind": 36
+      "Null Mind": 38
     },
     "stats": [351, 188, 52, 44, 55, 46, 56]
   },
@@ -5251,7 +5252,7 @@
     "stats": [608, 214, 97, 53, 38, 74, 64]
   },
   "Take-Minakata": {
-    "affinities": [2, 0, -3, 0, 1, 0, 0, 0, 0, 0, -1, 0],
+    "affinities": [2, 0, -3, 0, 1, -1, 0, 0, 0, 0, -1, 0],
     "ailments": "w-------",
     "lvl": 21,
     "price": 3026,
@@ -5367,7 +5368,7 @@
       "Imposing Stance": 79,
       "Mahamaon": 0
     },
-    "stats": [482, 398, 51, 67, 115, 78, 91]
+    "stats": [482, 398, 51, 67, 115, 75, 91]
   },
   "Tezcatlipoca": {
     "affinities": [3, 0, 5, -3, -3, 4, 0, 0, 0, 0, 0, 0],
@@ -5398,7 +5399,7 @@
       "High Elec Pleroma": 82,
       "Ziodyne": 0
     },
-    "stats": [746, 227, 120, 74, 53, 78, 91]
+    "stats": [748, 227, 120, 74, 53, 78, 91]
   },
   "Thoth": {
     "affinities": [0, -4, 0, 0, 0, 0, 2, -3, 1, 0, 0, -2],
@@ -5526,14 +5527,14 @@
     "lvl": 57,
     "price": 15306,
     "race": "Megami",
-    "resists": "--wd--s-",
+    "resists": "--wn--n-",
     "skills": {
       "Mabufudyne": 0,
       "Makakaja": 58,
       "Posumudi": 0,
       "Recarmdra": 59
     },
-    "stats": [315, 306, 54, 60, 78, 51, 72]
+    "stats": [390, 356, 42, 54, 92, 72, 72]
   },
   "Tokisada": {
     "affinities": [0, -3, 0, 0, 0, 0, 4, -3, 0, 0, 0, 2],
@@ -5544,7 +5545,7 @@
     "skills": {
       "Debilitate": 0,
       "High Light Pleroma": 82,
-      "Judgment Light": 0,
+      "Judgement Light": 0,
       "Smile Charge": 81
     },
     "stats": [499, 411, 53, 70, 120, 78, 95]
@@ -5564,7 +5565,7 @@
     "stats": [372, 148, 50, 48, 43, 45, 43]
   },
   "Toubyou": {
-    "affinities": [0, 0, 0, -3, 2, 0, 0, 0, 0, 0, 3, 0],
+    "affinities": [0, 0, 0, -3, 2, 0, 0, 0, 0, 0, 3, -2],
     "ailments": "-----nsw",
     "attack": "Phys x1~3, 1 enemy",
     "lvl": 14,
@@ -5615,7 +5616,7 @@
     "lvl": 30,
     "price": 5957,
     "race": "Flight",
-    "resists": "-w--r--w",
+    "resists": "-w--s--w",
     "skills": {
       "Ice Breath": 0,
       "Magaon": 32,
@@ -5672,7 +5673,7 @@
     "stats": [615, 350, 34, 34, 24, 83, 73]
   },
   "Undine": {
-    "affinities": [0, 0, -7, 5, 0, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 0, -7, 5, 0, 0, 0, 0, 0, 0, 1, 0],
     "lvl": 32,
     "price": 14600,
     "race": "Element",
@@ -5731,7 +5732,7 @@
     "stats": [581, 264, 89, 87, 86, 70, 68]
   },
   "Victor": {
-    "affinities": [0, 2, 0, 0, -3, 0, 4, 1, 0, 0, 0, 0],
+    "affinities": [0, 2, 0, 0, -3, 0, 4, 0, 0, 0, 1, 0],
     "ailments": "-------n",
     "lvl": 61,
     "price": 18709,
@@ -5761,7 +5762,7 @@
     "stats": [261, 231, 26, 38, 55, 47, 44]
   },
   "Virtue": {
-    "affinities": [0, 0, 0, 0, -5, -3, 3, -5, 0, 1, 0, 0],
+    "affinities": [0, 0, 0, 0, -5, 2, 4, -5, 0, 0, 0, 2],
     "evolves": "Dominion",
     "lvl": 41,
     "price": 9694,
@@ -5798,7 +5799,7 @@
     "race": "Yoma",
     "resists": "----sw--",
     "skills": {
-      "Bouncing Claw": 0,
+      "Bouncing Claw": 9,
       "Mana Bonus": 10,
       "Zio": 0
     },
@@ -5867,7 +5868,7 @@
     "stats": [329, 151, 47, 44, 43, 44, 42]
   },
   "Wild Hunt": {
-    "affinities": [0, 3, 0, 0, 0, 0, -3, 1, 0, 0, 0, 0],
+    "affinities": [0, 3, 0, 0, 0, 0, -3, 1, 0, 0, 0, -2],
     "evolves": "Abaddon",
     "lvl": 53,
     "price": 10025,
@@ -5962,14 +5963,14 @@
     "lvl": 52,
     "price": 21889,
     "race": "Avian",
-    "resists": "-wdw--n-",
+    "resists": "-wnw--s-",
     "skills": {
       "Grand Tack": 53,
       "Gun Pleroma": 0,
       "Maragidyne": 54,
       "Maragion": 0
     },
-    "stats": [504, 225, 68, 62, 62, 81, 68]
+    "stats": [510, 236, 46, 93, 63, 71, 40]
   },
   "Yggdrasil": {
     "affinities": [0, 3, -4, 0, 0, 0, 0, 0, 0, 0, 1, 2],
@@ -6048,7 +6049,7 @@
     "stats": [199, 183, 23, 30, 53, 33, 40]
   },
   "Yurlungur": {
-    "affinities": [0, 2, -5, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+    "affinities": [0, 2, -5, 2, 0, 0, 0, 0, 0, 2, -3, 0],
     "ailments": "---w--w-",
     "lvl": 29,
     "price": 3886,

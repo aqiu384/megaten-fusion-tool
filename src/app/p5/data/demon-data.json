@@ -9,6 +9,7 @@
       "Absorb Phys": 79,
       "Deathbound": 0,
       "Gigantomachia": 80,
+      "Maeigaon": 78,
       "Makarakarn": 0,
       "Spirit Drain": 0,
       "Survival Trick": 77
@@ -27,7 +28,7 @@
       "Dodge Elec": 8,
       "Lunge": 4,
       "Rakukaja": 6,
-      "Zio": 0
+      "Zio": 7
     },
     "stats": [3, 4, 5, 7, 3]
   },
@@ -239,7 +240,7 @@
       "Adverse Resolve": 7,
       "Cleave": 2,
       "Dream Needle": 5,
-      "Eiha": 1,
+      "Eiha": 0,
       "Sukunda": 4
     },
     "stats": [2, 2, 2, 3, 1]
@@ -409,7 +410,7 @@
       "Rakukaja": 0,
       "Sledgehammer": 13
     },
-    "stats": [8, 6, 7, 9, 7]
+    "stats": [8, 6, 7, 8, 5]
   },
   "Bicorn": {
     "inherits": "wind",
@@ -451,7 +452,8 @@
     "resists": "--rd---n-r",
     "skills": {
       "Diamond Dust": 72,
-      "Ice Amp": 70,
+      "Freeze Boost": 70,
+      "Ice Amp": 68,
       "Mabufudyne": 0,
       "Miracle Punch": 0,
       "One-shot Kill": 0,
@@ -491,7 +493,7 @@
       "Mamudoon": 0,
       "Megidola": 64
     },
-    "stats": [38, 43, 37, 45, 30]
+    "stats": [36, 42, 34, 42, 30]
   },
   "Bugs": {
     "inherits": "almighty",
@@ -501,7 +503,7 @@
     "resists": "------sw-n",
     "skills": {
       "Auto-Mataru": 51,
-      "Evade Physical": 54,
+      "Evade Phys": 54,
       "Fast Heal": 55,
       "Masukunda": 0,
       "Miracle Punch": 0,
@@ -669,7 +671,7 @@
     "item": "Makouga",
     "lvl": 42,
     "race": "Hierophant",
-    "resists": "-s------nw",
+    "resists": "s-------nw",
     "skills": {
       "Bless Boost": 44,
       "Diarahan": 45,
@@ -747,14 +749,14 @@
       "Makougaon": 70,
       "Nocturnal Flash": 0
     },
-    "stats": [46, 47, 45, 48, 40]
+    "stats": [43, 44, 43, 44, 37]
   },
   "Eligor": {
     "inherits": "fire",
     "item": "Tarukaja",
     "lvl": 16,
     "race": "Emperor",
-    "resists": "-ss-w-----",
+    "resists": "-ss-w----s",
     "skills": {
       "Double Fangs": 18,
       "Maragi": 0,
@@ -790,9 +792,10 @@
     "race": "Devil",
     "resists": "--nw-s-s--",
     "skills": {
+      "Apt Pupil": 28,
       "Assault Dive": 29,
       "Dekaja": 0,
-      "Dodge Physical": 26,
+      "Dodge Phys": 26,
       "Dormin Rush": 0,
       "Giant Slice": 0,
       "Heat Up": 30
@@ -1117,7 +1120,7 @@
       "Pulinpa": 0,
       "Tarukaja": 0
     },
-    "stats": [12, 11, 9, 12, 8]
+    "stats": [11, 9, 9, 12, 8]
   },
   "Ippon-Datara": {
     "inherits": "phys",
@@ -1348,7 +1351,7 @@
       "Resist Fear": 17,
       "Tarukaja": 14
     },
-    "stats": [9, 11, 8, 10, 4]
+    "stats": [7, 11, 8, 10, 4]
   },
   "Koh-i-Noor": {
     "inherits": "almighty",
@@ -1433,7 +1436,7 @@
       "Regenerate 2": 0,
       "Revolution": 0
     },
-    "stats": [37, 32, 34, 31, 25]
+    "stats": [37, 29, 34, 29, 25]
   },
   "Kumbhanda": {
     "inherits": "ailment",
@@ -1494,7 +1497,6 @@
     "skills": {
       "Bufu": 0,
       "Forget Boost": 18,
-      "Garu": 0,
       "Makajam": 0,
       "Media": 0,
       "Regenerate 1": 15,
@@ -1797,6 +1799,7 @@
     "resists": "s-d---wn--",
     "skills": {
       "Freidyne": 45,
+      "Mabaisudi": 43,
       "Mafreila": 0,
       "Nuke Break": 42,
       "Tentarafoo": 0,
@@ -1816,7 +1819,7 @@
       "Dekunda": 14,
       "Dodge Elec": 13,
       "Marin Karin": 11,
-      "Skull Cracker": 0,
+      "Skull Cracker": 10,
       "Tarukaja": 0
     },
     "stats": [9, 5, 6, 10, 4]
@@ -2199,6 +2202,7 @@
       "Heat Wave": 47,
       "Matarukaja": 45,
       "Oni Kagura": 0,
+      "Taunt": 0,
       "Tempest Slash": 43
     },
     "stats": [32, 24, 25, 31, 21]
@@ -2355,7 +2359,7 @@
     "item": "Queen's Necklace",
     "lvl": 15,
     "race": "Empress",
-    "resists": "swssssssss",
+    "resists": "swssssssnn",
     "skills": {
       "Media": 0,
       "Rakukaja": 0,
@@ -2492,7 +2496,7 @@
     "item": "Rakukaja",
     "lvl": 6,
     "race": "Lovers",
-    "resists": "---sw-----",
+    "resists": "---s-w----",
     "skills": {
       "Bufu": 0,
       "Energy Drop": 0,
@@ -2508,11 +2512,12 @@
     "item": "Angelic Grace",
     "lvl": 75,
     "race": "Moon",
-    "resists": "ss--s---rn",
+    "resists": "ss------rn",
     "skills": {
       "Amrita Shower": 0,
       "Angelic Grace": 77,
       "Mahamaon": 0,
+      "Megidolaon": 81,
       "Repel Curse": 78,
       "Samarecarm": 0,
       "Sword Dance": 79
@@ -2653,7 +2658,7 @@
       "Masukukaja": 0,
       "One-shot Kill": 0
     },
-    "stats": [34, 37, 33, 37, 31]
+    "stats": [32, 35, 30, 35, 28]
   },
   "Shiisaa": {
     "inherits": "elec",
@@ -2686,7 +2691,7 @@
       "Tarukaja": 0,
       "Taunt": 0
     },
-    "stats": [21, 11, 15, 16, 13]
+    "stats": [16, 14, 15, 14, 11]
   },
   "Shiva": {
     "inherits": "psy",
@@ -2981,7 +2986,7 @@
       "Cripple": 62,
       "Debilitate": 65,
       "Fortify Spirit": 61,
-      "Life Aid": 64,
+      "Life Aid": 63,
       "Mafreidyne": 0
     },
     "stats": [33, 42, 40, 38, 31]
@@ -3030,7 +3035,7 @@
       "Attack Master": 45,
       "Counterstrike": 0,
       "Deathbound": 46,
-      "Dodge Physical": 49,
+      "Dodge Phys": 49,
       "Matarukaja": 47,
       "Rising Slash": 0
     },
@@ -3183,7 +3188,7 @@
       "Blazing Hell": 86,
       "Cripple": 84,
       "Enduring Soul": 83,
-      "Evade Physical": 82,
+      "Evade Phys": 82,
       "God's Hand": 0,
       "Maragidyne": 0
     },

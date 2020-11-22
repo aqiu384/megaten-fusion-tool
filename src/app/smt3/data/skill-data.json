@@ -155,12 +155,6 @@
     "requires": "Mouth",
     "target": "All"
   },
-  "Blackmail": {
-    "effect": "Requests Macca or Item. Effective when talker is 10 levels higher than target. Adverse when talker is 10 levels lower than target",
-    "element": "tal",
-    "rank": 4,
-    "target": "Single"
-  },
   "Blight": {
     "cost": 22,
     "damage": "Weak (22)",
@@ -1396,7 +1390,7 @@
     "rank": 6,
     "target": "Random"
   },
-  "Samarecarm": {
+  "Samrecarm": {
     "cost": 1035,
     "effect": "Revive with all HP",
     "element": "rec",
@@ -1632,6 +1626,12 @@
     "element": "sup",
     "rank": 8,
     "target": "All"
+  },
+  "Threaten": {
+    "effect": "Requests Macca or Item. Effective when talker is 10 levels higher than target. Adverse when talker is 10 levels lower than target",
+    "element": "tal",
+    "rank": 4,
+    "target": "Single"
   },
   "Thunderclap": {
     "cost": 1012,

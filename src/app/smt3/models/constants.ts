@@ -39,6 +39,7 @@ export const Races = [
   'Fiend',
   'Element',
   'Mitama',
+  'Broker',
   'D-Fiend',
   'Summoner',
   'Magatama'
