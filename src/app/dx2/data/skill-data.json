@@ -249,6 +249,16 @@
     "power": 140,
     "target": "1 Foe"
   },
+  "Black Beckoning": {
+    "effect": "Reduces all foes curr HP by 10% (<200) at end of turn, 3rd cast 50% (<1000), 4th cast max HP by 50% (<2000), Nullifies Endure Effects (1 use)",
+    "elem": "pas"
+  },
+  "Black Lullaby": {
+    "cost": 6,
+    "effect": "30% Mute, 75 rec to all allies",
+    "elem": "ail",
+    "target": "All Foes"
+  },
   "Blade of Terror": {
     "cost": 6,
     "effect": "Reduces all foes current HP by 25% (<1000), 30% Bind",
@@ -862,6 +872,11 @@
     "elem": "pas",
     "points": 16
   },
+  "Epitome of Illusion": {
+    "effect": "Phys eva +15%, Ailment resist +45%",
+    "elem": "pas",
+    "points": 16
+  },
   "Epitome of Madness": {
     "effect": "Ailment acc +15%, Eva +15%",
     "elem": "pas",
@@ -897,6 +912,10 @@
     "effect": "100% chance to counter with 100 Phys dmg when receiving Phys dmg",
     "elem": "pas",
     "points": 18
+  },
+  "Fallen Grigori": {
+    "effect": "Endure with 300 HP, Heals 30% of own HP, 3 MP, and enters Might when HP < 50%",
+    "elem": "pas"
   },
   "Famine": {
     "effect": "At end of enemy phase, Reduce all Foe HP by 10% current (<200) and remove 1 MP",
@@ -1187,6 +1206,13 @@
   "Guards of Tartarus": {
     "effect": "Ally multi-target dmg received -15%",
     "elem": "pas"
+  },
+  "Guillotine Blaze": {
+    "cost": 6,
+    "effect": "Pierce, 50% crit, Scales with Matk, Nullifies endure effects",
+    "elem": "fir",
+    "power": 150,
+    "target": "1 Foe"
   },
   "Guilty": {
     "effect": "Dark dmg +15%, Casts Mamudodyne + 100% Curse on 1st turn of Boss battle",
@@ -2895,6 +2921,11 @@
     "elem": "alm",
     "power": 210,
     "target": "1 Foe"
+  },
+  "Solar Prosperity": {
+    "effect": "Casts Tarukaja + Sukukaja for 1 turn when Ally attack first",
+    "elem": "pas",
+    "points": 18
   },
   "Soul Divide": {
     "effect": "After Foe casts recovery magic, Reduce Foe HP by 50% current (<2000)",
