@@ -12,7 +12,7 @@
   "Agni": [
     "Max HP +150", "+5% to Fire damage inflicted.",
     "Mag ATK +50", "-25% to Fire damage received.",
-    "Max HP +150", "Gains Fire Pierce. Damage dealt through this skill is reduced by 30% if the enemy has Null, Repel or Drain Fire attribute."
+    "Max HP +150", "Adds Fire Pierce. Damage dealt through this skill is reduced by 30% if the enemy has Null, Repel or Drain Fire attribute."
   ],
   "Alice": [
     "Max HP +250", "+15% to Dark damage inflicted.",
@@ -44,6 +44,11 @@
     "Mag ATK +100", "Reduces the cost of Thunderstorm by 1 MP.",
     "Max HP +250", "+25% to Elec damage inflicted."
   ],
+  "Angra Mainyu": [
+    "Max HP +250", "+15% to Phys evasion rate.",
+    "Mag DEF +150", "Activates the following Chain Effect after Everything Evil is activated: Increases ATK, DEF and EV/AC of all party members by 20%. (1 turn)",
+    "Max HP +250", "+20% to max HP. +20% chance to inflict status ailments."
+  ],
   "Aniel": [
     "Max HP +250", "-30% to Light and Elec damage received.",
     "Mag ATK +100", "-10% to damage received by all party members of the Divine/Herald races while this demon is alive.",
@@ -58,6 +63,11 @@
     "Max HP +150", "-15% to Critical hit rate of damage received.",
     "Mag ATK +50", "-25% to Elec damage received.",
     "Max HP +150", "+10% to Elec damage inflicted."
+  ],
+  "Ardha": [
+    "Max HP +250", "Activates the following Chain Effect at the beginning of a battle if the enemy attacks first: Increases DEF and EV/AC of all party members by 20%. (1 turn)",
+    "Mag ATK +100", "Activates the following Chain Effect when attacking first at the beginning of a battle: Increases own party's ATK and EV/AC by 20%. (1 turn)",
+    "Max HP +250", "+15% to all damage inflicted. +20% to HP Healing skill effectiveness."
   ],
   "Asherah": [
     "Max HP +250", "Reduces the cost of Mediarama by 1 MP.",
@@ -141,7 +151,7 @@
   ],
   "Black Rider": [
     "Max HP +250", "Reduces the cost of Ice skills by 1 MP.",
-    "Mag ATK +100", "Gains Ice Pierce.",
+    "Mag ATK +100", "Adds Ice Pierce.",
     "Max HP +250", "+15% to Ice damage inflicted. -20% to Critical hit rate of damage received. -20% chance of receiving status ailments."
   ],
   "Cerberus": [
@@ -204,10 +214,15 @@
     "Phys ATK +100", "-20% damage received from Poisoned enemies.",
     "Max HP +250", "Adds Phys Pierce against Poisoned enemies."
   ],
+  "Flauros": [
+    "Max HP +250", "+15% to Phys hit rate.",
+    "Phys ATK +100", "Activates the following Chain Effect after Hell Leopard is activated: Inflicts Phys (Physical) Pierce effect damage (Power: 25) 3 times on random enemies. Counter effects will not work on this skill.",
+    "Max HP +250", "Adds Phys Pierce. +15% to Phys damage inflicted."
+  ],
   "Frost Ace": [
     "Max HP +250", "-30% to Fire damage received, -30% to Ice damage received.",
     "Mag ATK +100", "While this demon is alive, all party members will receive the following effect: +10% to Ice damage inflicted.",
-    "Max HP +250", "Gains Ice Pierce. +15% to Ice damage inflicted."
+    "Max HP +250", "Adds Ice Pierce. +15% to Ice damage inflicted."
   ],
   "Gabriel": [
     "Max HP +250", "-30% to Elec damage received, -30% to Light damage received.",
@@ -267,7 +282,7 @@
   "Hel": [
     "Max HP +150", "+5% to Ice damage inflicted.",
     "Mag ATK +50", "-25% to Ice damage received.",
-    "Max HP +150", "Gains Ice Pierce. Damage dealt through this skill is reduced by 30% if the enemy has Null, Repel or Drain Ice attribute."
+    "Max HP +150", "Adds Ice Pierce. Damage dealt through this skill is reduced by 30% if the enemy has Null, Repel or Drain Ice attribute."
   ],
   "Hresvelgr": [
     "Max HP +250", "-30% to Ice damage received, -30% to Force damage received.",
@@ -359,6 +374,11 @@
     "Mag ATK +100", "-50% to Dark damage received.",
     "Max HP +250", "Activates the following Chain Effect when enemy is Charmed: 30% chance to Bind all enemies."
   ],
+  "Lilith A": [
+    "Max HP +250", "+15% to Phys hit rate.",
+    "Mag ATK +100", "+50% to Critical hit rate.",
+    "Max HP +250", "+20% to Dark damage inflicted. +20% chance to inflict status ailments."
+  ],
   "Loki": [
     "Max HP +150", "+10% to max HP.",
     "Mag ATK +50", "-25% to Ice damage received.",
@@ -434,6 +454,11 @@
     "Mag ATK +100", "Adds Null Mortal.",
     "Max HP +250", "Activates the following Chain Effect at the beginning of every third turn: Receive 1 additional Press Turn Icon."
   ],
+  "Motoko Kusanagi": [
+    "Max HP +250", "Activates the following Chain Effect at the start of every own second turn: Inflicts Phys (Physical) Pierce effect damage (Power: 160) with 50% crit rate on a single enemy. Counter effects will not work on this skill.",
+    "Phys ATK +100", "Activates the following Chain Effect after Ghost Hack is activated: Increases own party's ATK and EV/AC by 20%. (1 turn)",
+    "Max HP +250", "+20% to Phys damage inflicted. +20% chance to inflict status ailments."
+  ],
   "Mother Harlot": [
     "Max HP +250", "Activates the following Chain Effect at the beginning of a battle if the enemy attacks first: Removes Barrier from all enemies.",
     "Mag ATK +100", "Activates the following Chain Effect after Babylon Goblet is activated: 30% chance to inflict Charm on random enemies 3 to 4 times.",
@@ -481,7 +506,7 @@
   ],
   "Pale Rider": [
     "Max HP +250", "Reduces the cost of Force skills by 1 MP.",
-    "Mag ATK +100", "Gains Force Pierce.",
+    "Mag ATK +100", "Adds Force Pierce.",
     "Max HP +250", "+15% to Force damage inflicted. +10% Phys evasion rate. +10% chance to inflict status ailments."
   ],
   "Pallas Athena": [
@@ -526,7 +551,7 @@
   ],
   "Red Rider": [
     "Max HP +250", "+15% to Phys hit rate.",
-    "Phys ATK +100", "Gains Phys Pierce.",
+    "Phys ATK +100", "Adds Phys Pierce.",
     "Max HP +250", "+15% to Phys damage inflicted. +10% to Critical hit rate. +10% chance to inflict status ailments."
   ],
   "Samael": [
@@ -613,6 +638,11 @@
     "Max HP +250", "+15% to Phys hit rate.",
     "Phys ATK +100", "Activates the following Chain Effect when downing an enemy: Recovers 2 MP.",
     "Max HP +250", "+25% to single-target attack damage inflicted."
+  ],
+  "Tachikoma": [
+    "Max HP +150", "Increases the uses of 50 mm Grenade Launcher by 2.",
+    "Phys ATK +50", "Adds Phys Pierce. Damage dealt through this effect is reduced by 30% if the enemy has Null, Repel or Drain Phys attribute.",
+    "Max HP +150", "+15% to Phys and Fire damage inflicted."
   ],
   "Thor": [
     "Max HP +250", "+15% damage to attacks that target all or random enemies.",

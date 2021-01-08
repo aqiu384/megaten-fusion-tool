@@ -1,4 +1,17 @@
 {
+  "16 Scourges": {
+    "cost": 6,
+    "effect": "Reduces all foes current HP by 25% (<1000), 20% Poison/Bind/Charm Mute/Curse/Weak",
+    "elem": "alm",
+    "target": "All Foes"
+  },
+  "50 mm Grenade Launcher": {
+    "cost": 5,
+    "effect": "30% crit, Scales of Patk, Nullifies counter effects, 2 uses",
+    "elem": "fir",
+    "power": 80,
+    "target": "All Foes"
+  },
   "Acid Breath": {
     "cost": 6,
     "effect": "Rakunda + Sukunda",
@@ -887,8 +900,17 @@
     "elem": "pas",
     "points": 16
   },
+  "Epitome of Wisdom": {
+    "effect": "Phys hit +15%, Ailment hit +15%",
+    "elem": "pas",
+    "points": 16
+  },
   "Euphoric Frenzy": {
-    "effect": "Counter Phys dmg with 50% Charm",
+    "effect": "",
+    "elem": "pas"
+  },
+  "Everything Evil": {
+    "effect": "All allies recover 2 MP at beginning of turn, Actives twice per battle",
     "elem": "pas"
   },
   "Evade": {
@@ -1016,6 +1038,10 @@
     "effect": "Casts Sukuda + 100% Poison when Foe Weakened",
     "elem": "pas"
   },
+  "Forbidden Fruit": {
+    "effect": "Dark Pierce, Casts Temptation at end of own turn if a foe is Charmed",
+    "elem": "pas"
+  },
   "Force Amp": {
     "effect": "Force dmg +25%",
     "elem": "pas",
@@ -1070,6 +1096,12 @@
   "Garden of Eden": {
     "effect": "Ally dmg +10% when striking Foe weakness and dmg -10% when own weakness struck",
     "elem": "pas"
+  },
+  "Ghost Hack": {
+    "cost": 6,
+    "effect": "50% Mute/Bind, Barrier Break",
+    "elem": "ail",
+    "target": "All Foes"
   },
   "Gigantomachia": {
     "cost": 8,
@@ -1308,6 +1340,10 @@
     "power": 180,
     "target": "1 Foe"
   },
+  "Hell Leopard": {
+    "effect": "Phys hit +20%, Casts 40 piercing phys dmg with 30% crit on all foes then enters Might after casting Iron Fist",
+    "elem": "pas"
+  },
   "Hell Thrust": {
     "cost": 7,
     "effect": "4 hits, 35% Charm",
@@ -1436,6 +1472,13 @@
     "effect": "Removes 1 Foe Press Turn when Foe attacks first, 2 Turns max",
     "elem": "pas",
     "points": 21
+  },
+  "Iron Fist": {
+    "cost": 6,
+    "effect": "Pierce, 30% crit, Casts Tarukaja + Sukukaja for 2 turns",
+    "elem": "phy",
+    "power": 120,
+    "target": "1 Foe"
   },
   "Iron Judgement": {
     "cost": 5,
@@ -2453,6 +2496,10 @@
     "power": 135,
     "target": "1 Foe"
   },
+  "Optical Camouflage": {
+    "effect": "Phys eva +20%, Casts 100 piercing phys dmg with 30% crit at end of own turn on foes with ailments, Nullifies counter effects",
+    "elem": "pas"
+  },
   "Orlean Prayer": {
     "cost": 6,
     "effect": "130 rec and recover 3 MP",
@@ -2815,6 +2862,22 @@
     "elem": "pas",
     "points": 12
   },
+  "Ruin and Grace": {
+    "cost": 7,
+    "effect": "50% crit, Pierce, Scales off Matk, Heals 80 to all allies",
+    "elem": "phy",
+    "power": 200,
+    "target": "1 Foe"
+  },
+  "Sadistic Blow": {
+    "effect": "Crit dmg +15%, Dmg +10% when striking Foe weakness",
+    "elem": "pas",
+    "points": 15
+  },
+  "Sahasrara": {
+    "effect": "Dmg +10%, Phys hit +20%, Healing +20%, Recover +1 MP per turn",
+    "elem": "pas"
+  },
   "Salvation": {
     "cost": 9,
     "effect": "Cures all ailments, 3 uses",
@@ -2857,7 +2920,7 @@
     "effect": "Pierce, Chooses one among Quad-elems",
     "elem": "alm",
     "power": 160,
-    "target": "One Foe"
+    "target": "1 Foe"
   },
   "Sexy Dance": {
     "cost": 6,
@@ -2923,7 +2986,12 @@
     "target": "1 Foe"
   },
   "Solar Prosperity": {
-    "effect": "Casts Tarukaja + Sukukaja for 1 turn when Ally attack first",
+    "effect": "Casts Tarukaja + Sukukaja for 1 turn when Ally attacks first",
+    "elem": "pas",
+    "points": 18
+  },
+  "Solar Downfall": {
+    "effect": "Casts Rakunda + Sukunda for 1 turn when Ally attacks first",
     "elem": "pas",
     "points": 18
   },
@@ -3081,6 +3149,13 @@
     "points": 7,
     "power": 50,
     "target": "Rand Foes"
+  },
+  "Temptation": {
+    "cost": 6,
+    "effect": "Can crit, 50% Charm, Dmg scales with Matk",
+    "elem": "dar",
+    "power": 130,
+    "target": "1 Foe"
   },
   "Tenson Kourin": {
     "cost": 8,
@@ -3355,7 +3430,7 @@
     "effect": "3 hits, Rakunda",
     "elem": "fir",
     "power": 60,
-    "target": "One Foe"
+    "target": "1 Foe"
   },
   "Yaksa Claw": {
     "effect": "Casts 3 random hits of 35 Phys dmg with 30% Bind when foe Poisoned",

@@ -171,9 +171,9 @@ export const ResistCodes = {
 export const PartyMembers = [
   'Protag',
   'Maki',
-  'Brown',
-  'Nanjo',
   'Mark',
+  'Nanjo',
+  'Brown',
   'Eriko',
   'Ayase',
   'Yukino',

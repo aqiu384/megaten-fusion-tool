@@ -45,6 +45,8 @@ export const Races = [
   'Witch',
   'Powers',
   'Unknown', 
+  'Cyborg', 
+  'Machine', 
   'Mitama',
   'Rumor',
   'UMA',
