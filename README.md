@@ -42,7 +42,7 @@ Fusion tool framework for Megami Tensei games.
 * [Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g)
 * [Persona 5](https://aqiu384.github.io/megaten-fusion-tool/p5)
 * [Persona 5 Royal](https://aqiu384.github.io/megaten-fusion-tool/p5r)
-* [Persona 5 Scramble](https://aqiu384.github.io/megaten-fusion-tool/p5s)
+* [Persona 5 Strikers](https://aqiu384.github.io/megaten-fusion-tool/p5s)
 * [Persona Q: Shadow of the Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq)
 * [Persona Q2: New Cinema Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq2)
 * [Majin Tensei](https://aqiu384.github.io/megaten-fusion-tool/mjn1)

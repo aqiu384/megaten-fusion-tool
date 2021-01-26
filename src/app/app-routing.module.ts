@@ -129,7 +129,7 @@ const appRoutes: Routes = [
   {
     path: 'p5s',
     loadChildren: './p5s/compendium.module#CompendiumModule',
-    data: { appName: 'Persona 5 Scramble' }
+    data: { appName: 'Persona 5 Strikers' }
   },
   {
     path: 'pq2',

@@ -58,10 +58,11 @@ for (const entry of Object.values(PARTY_DATA_JSON)) {
 
 for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name]['prereq'] = prereq;
+  DEMON_DATA_JSON[name]['fusion'] = 'enemy';
 }
 
 export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
-  appTitle: 'Persona 5 Scramble',
+  appTitle: 'Persona 5 Striker',
   appCssClasses: ['p5'],
 
   races,

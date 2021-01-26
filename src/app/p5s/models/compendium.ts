@@ -59,6 +59,34 @@ export class Compendium implements ICompendium {
           transfer:  [],
           level:     0
         };
+
+        const transfer = [];
+
+        if (json['cardn']) {
+          for (const dname of json['cardn'].split(', ')) {
+            transfer.push({ demon: dname, level: demons[dname] ? 0 : -100 });
+          }
+        }
+
+        if (json['cardr']) {
+          for (const dname of json['cardr'].split(', ')) {
+            if (demons[dname]) {
+              transfer.push({ demon: dname, level: 5073 });
+            } else {
+              transfer.push({ demon: dname + ' (Ri)', level: -100 });
+            }
+          }
+        }
+
+        if (json['cardt']) {
+          for (const dname of json['cardt'].split(', ')) {
+            transfer.push({ demon: dname === 'Request' ? dname : dname + ' (Tr)', level: -100 });
+          }
+        }
+
+        if (transfer.length > 0) {
+          skills[name].transfer = transfer;
+        }
       }
     }
 
@@ -102,15 +130,6 @@ export class Compendium implements ICompendium {
   updateDerivedData() {
     const ingredients: { [race: string]: number[] } = {};
     const results:     { [race: string]: number[] } = {};
-    const skills: Skill[] = [];
-
-    for (const skill of Object.values(this.skills)) {
-      if (skill.learnedBy.length < 1) {
-        skill.rank = 99;
-      } else {
-        skills.push(skill);
-      }
-    }
 
     for (const race of this.compConfig.races) {
       ingredients[race] = [];
@@ -133,7 +152,7 @@ export class Compendium implements ICompendium {
     }
 
     this._allDemons = Object.keys(this.demons).map(name => this.demons[name]);
-    this._allSkills = skills;
+    this._allSkills = Object.values(this.skills);
     this.allIngredients = ingredients;
     this.allResults = results;
   }
@@ -198,7 +217,7 @@ export class Compendium implements ICompendium {
   }
 
   isElementDemon(name: string): boolean {
-    return false;
+    return this.getDemon(name).race === 'Treasure';
   }
 
   splitSpecialFusion(name: string): FusionEntry[] {
@@ -213,6 +232,10 @@ export class Compendium implements ICompendium {
   splitMultiFusion(name: string): MultiFusionTrio[] {
     const { race, lvl } = this.getDemon(name);
     const recipes: MultiFusionTrio[] = [];
+
+    if (this.isElementDemon(name)) {
+      return recipes;
+    }
 
     const upperIngreds = this.getIngredientDemonLvls(race).filter(l => l > lvl).map(l => this.reverseLookupDemon(race, l));
     const downIngreds = this.compConfig.downRecipes[name] || [];

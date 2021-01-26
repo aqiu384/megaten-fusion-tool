@@ -1,4 +1,44 @@
 {
+  "Absorb Bless": {
+    "cardr": "Snow White",
+    "effect": "Drains Bless attacks",
+    "element": "passive"
+  },
+  "Absorb Curse": {
+    "cardr": "Snow White",
+    "effect": "Drains Curse attacks",
+    "element": "passive"
+  },
+  "Absorb Elec": {
+    "cardr": "Snow White",
+    "effect": "Drains Elec attacks",
+    "element": "passive"
+  },
+  "Absorb Fire": {
+    "cardr": "Snow White",
+    "effect": "Drains Fire attacks",
+    "element": "passive"
+  },
+  "Absorb Ice": {
+    "cardr": "Mad Rabbit, Snow White",
+    "effect": "Drains Ice attacks",
+    "element": "passive"
+  },
+  "Absorb Nuke": {
+    "cardr": "Snow White",
+    "effect": "Drains Nuke attacks",
+    "element": "passive"
+  },
+  "Absorb Psy": {
+    "cardr": "Snow White",
+    "effect": "Drains Psy attacks",
+    "element": "passive"
+  },
+  "Absorb Wind": {
+    "cardr": "Snow White",
+    "effect": "Drains Wind attacks",
+    "element": "passive"
+  },
   "Active Boost": {
     "effect": "Improves Active Support rate for increasing Showtime Gauge",
     "element": "passive"
@@ -12,35 +52,46 @@
     "element": "passive"
   },
   "Agi": {
+    "cardn": "Pinky Love",
+    "cardr": "Bicorn, Devoted, Jack-o'-Lantern",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "fire"
   },
   "Agidyne": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Naga B",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "fire"
   },
   "Agilao": {
+    "cardr": "Devoted",
     "cost": 1014,
     "effect": "Medium damage to close range Foes",
     "element": "fire"
   },
   "Agneyastra": {
+    "cardr": "Devoted, Frozen Blood",
     "cost": 24,
     "effect": "Severe damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Ailment Boost": {
+    "cardn": "Fortuna B",
+    "cardt": "Osaka",
     "effect": "Increases chance of inflicting all ailments",
     "element": "passive"
   },
   "Amrita Drop": {
+    "cardn": "Ganesha, Naga B",
     "cost": 1004,
     "effect": "Recover non-unique ailments for 1 Ally",
     "element": "recovery"
   },
   "Amrita Shower": {
+    "cardn": "Dominion, Lilith",
+    "cardt": "Abyssal, Final",
     "cost": 1008,
     "effect": "Recover non-unique ailments for all Allies",
     "element": "recovery"
@@ -50,57 +101,77 @@
     "element": "passive"
   },
   "Angelic Grace": {
+    "cardr": "Devoted, Heroic Amulet",
     "effect": "Double evasion against Fire/Ice/Elec/Wind/Nuke/Psy/Bless/Curse attacks.",
     "element": "passive"
   },
   "Assault Dive": {
+    "cardn": "Setanta B",
+    "cardr": "Devoted, Ruby of Wrath",
+    "cardt": "Sapporo",
     "cost": 15,
     "effect": "Heavy damage to close range Foes",
     "element": "phys"
   },
   "Atomic Flare": {
+    "cardr": "Devoted, Vanitas",
     "cost": 1036,
     "effect": "Severe damage to close range Foes",
     "element": "nuke"
   },
   "Attack Master": {
+    "cardr": "Devoted",
     "effect": "Begin battle with Tarukaja",
     "element": "passive"
   },
   "Blazing Hell": {
+    "cardr": "Abyss, Devoted, Ruby of Wrath",
     "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "fire"
   },
   "Bless Amp": {
+    "cardr": "Devoted",
     "effect": "Bless damage +50%",
     "element": "passive"
   },
   "Bless Boost": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Devoted",
     "effect": "Bless damage +25%",
     "element": "passive"
   },
   "Bloodbath": {
+    "cardn": "Raja Naga B",
+    "cardt": "Osaka",
     "cost": 12,
     "effect": "Medium damage to wide range Foes with medium chance of Rage",
     "element": "phys"
   },
   "Brain Buster": {
+    "cardr": "Devoted",
+    "cardt": "Osaka",
     "cost": 12,
     "effect": "Medium damage to wide range Foes with medium chance of Brainwash",
     "element": "phys"
   },
   "Brain Jack": {
+    "cardn": "Dominion, Forneus",
+    "cardt": "Final",
     "cost": 1010,
     "effect": "High chance of Brainwash to wide range Foes",
     "element": "ailment"
   },
   "Brain Shake": {
+    "cardn": "High Pixie, High Pixie B, Orthrus",
+    "cardr": "Devoted",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of Brainwash",
     "element": "phys"
   },
   "Brainwash Boost": {
+    "cardn": "Jack Frost B",
+    "cardr": "Devoted",
     "effect": "Increases chance of inflicting Brainwash",
     "element": "passive"
   },
@@ -110,108 +181,144 @@
     "element": "phys"
   },
   "Bufu": {
+    "cardn": "Pinky Love",
+    "cardr": "Devoted",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "ice"
   },
   "Bufudyne": {
+    "cardn": "Abyss, Heroic Amulet",
+    "cardr": "Devoted, Sarasvati",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "ice"
   },
   "Bufula": {
+    "cardr": "Demon Jewel, High Pixie, Pinky Love",
+    "cardt": "Sendai",
     "cost": 1014,
     "effect": "Medium damage to close range Foes",
     "element": "ice"
   },
   "Burn Boost": {
+    "cardn": "Lilim B",
+    "cardt": "Sapporo",
     "effect": "Increases chance of inflicting Burn",
     "element": "passive"
   },
   "Charge": {
+    "cardr": "Devoted, Heroic Amulet",
+    "cardt": "Request",
     "cost": 1026,
     "effect": "Next Physical attack +150% damage",
     "element": "support"
   },
   "Cleave": {
+    "cardt": "Shibuya",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of critical hit",
     "element": "phys"
   },
   "Concentrate": {
+    "cardr": "Abyss",
+    "cardt": "Request",
     "cost": 1026,
     "effect": "Next Magic attack +150% damage",
     "element": "support"
   },
   "Cosmic Flare": {
+    "cardr": "Devoted, Frozen Blood",
     "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "nuke"
   },
   "Cripple": {
+    "cardr": "Devoted, Frozen Blood",
     "effect": "Gun damage +50%",
     "element": "passive"
   },
-  "Critical Boost": {
-    "effect": "Increases chance of inflicting critical hit",
+  "Critical High": {
+    "cardn": "Lilim B",
+    "cardt": "Sapporo",
+    "effect": "Extends duration of -kaja skills when inflicting critical hits",
     "element": "passive"
   },
   "Curse Amp": {
+    "cardr": "Devoted, Frozen Blood, Pinky Love",
     "effect": "Curse damage +50%",
     "element": "passive"
   },
   "Curse Boost": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Sarasvati",
     "effect": "Curse damage +25%",
     "element": "passive"
   },
   "Dazzler": {
+    "cardr": "Jack Frost",
     "cost": 1008,
     "effect": "High chance of Dizzy to close range Foes",
     "element": "ailment"
   },
   "Deathbound": {
+    "cardn": "Devoted",
+    "cardr": "Yatagarasu, Yatagarasu B",
     "cost": 24,
     "effect": "Severe damage to wide range Foes with medium chance of critical hit",
     "element": "phys"
   },
   "Debilitate": {
+    "cardr": "Devoted, Frozen Blood",
     "cost": 1036,
     "effect": "Tarunda + Rakund + Sukunda",
     "element": "support"
   },
   "Defense Master": {
+    "cardt": "Kyoto",
     "effect": "Begin battle with Rakukaja",
     "element": "passive"
   },
   "Dekaja": {
+    "cardn": "Berith, High Pixie B, Slime",
+    "cardt": "Sendai",
     "cost": 1006,
     "effect": "Remove -kaja effects for wide range Foes",
     "element": "support"
   },
   "Dekunda": {
+    "cardn": "Slime, Slime B",
+    "cardt": "Sendai",
     "cost": 1006,
     "effect": "Remove -kunda effects for all Allies",
     "element": "support"
   },
   "Dia": {
+    "cardn": "Andras, Demon Jewel, Pixie B",
+    "cardt": "Shibuya",
     "cost": 1006,
     "effect": "Slightly restore HP for 1 Ally",
     "element": "recovery"
   },
+  "Diamond Dust": {
+    "cardr": "Devoted, Frozen Blood, Vanitas",
+    "cost": 1036,
+    "effect": "Severe damage to close range Foes",
+    "element": "ice"
+  },
   "Diarahan": {
+    "cardn": "Fortuna B, Naga B",
     "cost": 1040,
     "effect": "Fully restore HP for 1 Ally",
     "element": "recovery"
   },
   "Diarama": {
+    "cardn": "Slime B",
+    "cardr": "Devoted",
+    "cardt": "Request",
     "cost": 1016,
     "effect": "Moderately restore HP for 1 Ally",
     "element": "recovery"
-  },
-  "Diamond Dust": {
-    "cost": 1036,
-    "effect": "Severe damage to close range Foes",
-    "element": "ice"
   },
   "Die For Me!": {
     "cost": 1020,
@@ -219,123 +326,200 @@
     "element": "curse"
   },
   "Divine Grace": {
+    "cardn": "Kikuri-Hime",
+    "cardr": "Devoted",
+    "cardt": "Request",
     "effect": "Recovery skill effectiveness +50%",
     "element": "passive"
   },
   "Dizzy Boost": {
-    "effect": "Increases chance of inflicting Burn",
+    "cardn": "Mothman B, Setanta",
+    "cardt": "Sapporo",
+    "effect": "Increases chance of inflicting Dizzy",
+    "element": "passive"
+  },
+  "Dodge Bless": {
+    "cardr": "Abyss, Devoted",
+    "effect": "Doubles evasion rate against Bless attacks",
     "element": "passive"
   },
   "Dodge Curse": {
+    "cardn": "Frozen Blood",
     "effect": "Doubles evasion rate against Curse attacks",
     "element": "passive"
   },
   "Dodge Elec": {
+    "cardn": "Frozen Blood",
     "effect": "Doubles evasion rate against Elec attacks",
     "element": "passive"
   },
   "Dodge Fire": {
+    "cardn": "Jack Frost B",
     "effect": "Doubles evasion rate against Fire attacks",
     "element": "passive"
   },
   "Dodge Ice": {
+    "cardr": "Heroic Amulet, Ruby of Wrath",
     "effect": "Doubles evasion rate against Ice attacks",
     "element": "passive"
   },
   "Dodge Nuke": {
+    "cardn": "Frozen Blood",
+    "cardr": "Devoted, Mothman",
     "effect": "Doubles evasion rate against Nuke attacks",
     "element": "passive"
   },
-  "Dodge Physical": {
+  "Dodge Phys": {
+    "cardr": "Devoted",
     "effect": "Doubles evasion rate against Phys attacks",
     "element": "passive"
   },
+  "Dodge Psy": {
+    "cardn": "Frozen Blood",
+    "effect": "Doubles evasion rate against Psy attacks",
+    "element": "passive"
+  },
   "Dodge Wind": {
+    "cardr": "Jack Frost, Setanta",
     "effect": "Doubles evasion rate against Wind attacks",
     "element": "passive"
   },
   "Dormin Rush": {
+    "cardr": "Ruby of Wrath",
     "cost": 12,
     "effect": "Medium damage to wide range Foes with medium chance of Sleep",
     "element": "phys"
   },
   "Dormina": {
+    "cardr": "Jack Frost",
     "cost": 1008,
     "effect": "High chance of Sleep to close range Foes",
     "element": "ailment"
   },
   "Double Fangs": {
+    "cardr": "Devoted",
+    "cardt": "Sendai",
     "cost": 12,
     "effect": "Medium damage to close range Foes with medium chance of critical hit",
     "element": "phys"
   },
   "Down Technique": {
+    "cardn": "Jack Frost, Jack Frost B",
+    "cardr": "Frozen Blood",
+    "cardt": "Sapporo",
     "effect": "Improves rate for decreasing Down Gauge when inflicting critical hits",
     "element": "passive"
   },
   "Dream Needle": {
+    "cardr": "Devoted",
+    "cardt": "Shibuya",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of Sleep",
     "element": "phys"
   },
   "Eiga": {
+    "cardn": "Frozen Blood, High Pixie B",
     "cost": 1014,
     "effect": "Medium damage to close range Foes",
     "element": "curse"
   },
   "Eigaon": {
+    "cardr": "Bugs",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "curse"
   },
   "Eiha": {
+    "cardn": "Pinky Love",
+    "cardr": "Bicorn, Silky",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "curse"
   },
   "Elec Amp": {
+    "cardr": "Devoted, Frozen Blood, Heroic Amulet, Ruby of Wrath",
     "effect": "Elec damage +50%",
     "element": "passive"
   },
   "Elec Boost": {
+    "cardr": "Naga B",
     "effect": "Elec damage +25%",
     "element": "passive"
   },
   "Endure": {
+    "cardn": "Dominion",
+    "cardt": "Final",
     "effect": "Survive lethal attack with 1 HP once per battle",
     "element": "passive"
   },
   "Enduring Soul": {
+    "cardr": "Ruby of Wrath",
     "effect": "Survive lethal attack with full HP once per battle",
     "element": "passive"
   },
+  "Evade Bless": {
+    "cardr": "Devoted",
+    "effect": "Triples evasion rate against Bless attacks",
+    "element": "passive"
+  },
+  "Evade Curse": {
+    "cardn": "Ruby of Wrath",
+    "effect": "Triples evasion rate against Curse attacks",
+    "element": "passive"
+  },
   "Evade Elec": {
+    "cardr": "Kikuri-Hime, Koppa Tengu, Koppa Tengu B, Nebiros B, Neko Shogun",
     "effect": "Triples evasion rate against Elec attacks",
     "element": "passive"
   },
   "Evade Fire": {
+    "cardr": "Koppa Tengu B",
     "effect": "Triples evasion rate against Fire attacks",
     "element": "passive"
   },
   "Evade Ice": {
+    "cardr": "Demon Jewel, Devoted",
     "effect": "Triples evasion rate against Elec attacks",
     "element": "passive"
   },
+  "Evade Nuke": {
+    "cardn": "Ruby of Wrath",
+    "cardr": "Demon Jewel, Frozen Blood, Kikuri-Hime",
+    "effect": "Triples evasion rate against Nuke attacks",
+    "element": "passive"
+  },
+  "Evade Phys": {
+    "cardn": "Ruby of Wrath",
+    "cardr": "Koppa Tengu, Koppa Tengu B, Nebiros B",
+    "effect": "Triples evasion rate against Phys attacks",
+    "element": "passive"
+  },
+  "Evade Psy": {
+    "cardr": "Devoted, Nebiros B, Neko Shogun",
+    "effect": "Triples evasion rate against Psy attacks",
+    "element": "passive"
+  },
   "Evade Wind": {
+    "cardr": "Devoted, Kikuri-Hime, Nebiros B, Neko Shogun",
     "effect": "Triples evasion rate against Wind attacks",
     "element": "passive"
   },
   "Evil Smile": {
+    "cardn": "Dominion, Yatagarasu B",
+    "cardr": "Devoted, Frozen Blood",
     "cost": 1010,
     "effect": "High chance of Fear to wide range Foes",
     "element": "ailment"
   },
   "Evil Touch": {
+    "cardn": "Frozen Blood",
     "cost": 1008,
     "effect": "High chance of Fear to close range Foes",
     "element": "ailment"
   },
   "Fear Boost": {
+    "cardn": "Jack Frost, Kaiwan, Setanta B",
+    "cardr": "Demon Jewel",
     "effect": "Increases chance of inflicting Fear",
     "element": "passive"
   },
@@ -344,14 +528,20 @@
     "element": "passive"
   },
   "Finesse": {
+    "cardn": "Jack Frost, Lilim B, Setanta B",
+    "cardr": "Devoted",
+    "cardt": "Sapporo",
     "effect": "Increase damage inflicted by technical hits",
     "element": "passive"
   },
   "Fire Amp": {
+    "cardr": "Devoted, Heroic Amulet, Vanitas",
     "effect": "Fire damage +50%",
     "element": "passive"
   },
   "Fire Boost": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Devoted",
     "effect": "Fire damage +25%",
     "element": "passive"
   },
@@ -360,28 +550,38 @@
     "element": "passive"
   },
   "Flash Bomb": {
+    "cardn": "Kaiwan, Setanta",
+    "cardr": "Pinky Love",
     "cost": 12,
     "effect": "Medium damage to wide range Foes with medium chance of Dizzy",
     "element": "phys"
   },
   "Forget Boost": {
+    "cardt": "Sapporo",
     "effect": "Increases chance of inflicting Forget",
     "element": "passive"
   },
   "Fortify Spirit": {
+    "cardt": "Request",
     "effect": "Reduces chance of receiving all ailments",
     "element": "passive"
   },
   "Freeze Boost": {
+    "cardr": "Devoted",
+    "cardt": "Sapporo",
     "effect": "Increases chance of inflicting Freeze",
     "element": "passive"
   },
   "Frei": {
+    "cardn": "Pinky Love",
+    "cardr": "Bicorn, Devoted, Pixie",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "nuke"
   },
   "Freidyne": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Frozen Blood, Heroic Amulet, Naga B",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "nuke"
@@ -392,41 +592,50 @@
     "element": "nuke"
   },
   "Garu": {
+    "cardn": "Pinky Love",
+    "cardr": "Devoted, Silky",
     "cost": 1006,
     "effect": "Light damage to close range Foes",
     "element": "wind"
   },
   "Garudyne": {
+    "cardn": "Heroic Amulet",
     "cost": 1022,
     "effect": "Heavy damage to close range Foes",
     "element": "wind"
   },
   "Garula": {
+    "cardn": "Slime B",
     "cost": 1012,
     "effect": "Medium damage to close range Foes",
     "element": "wind"
   },
   "Giant Slice": {
+    "cardn": "Berith, High Pixie B, Lamia",
     "cost": 15,
     "effect": "Medium damage to close range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Gigantomachia": {
+    "cardr": "Devoted",
     "cost": 24,
     "effect": "Severe damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "God's Hand": {
+    "cardr": "Devoted, Frozen Blood",
     "cost": 25,
     "effect": "Severe damage to close range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Hama": {
+    "cardr": "Devoted",
     "cost": 8,
     "effect": "Low chance of instant killing close range Foes",
     "element": "bless"
   },
   "Hama Boost": {
+    "cardn": "Lilim B",
     "effect": "Increases success rate of Bless-type instant death attacks",
     "element": "passive"
   },
@@ -441,39 +650,51 @@
     "element": "phys"
   },
   "Headbutt": {
+    "cardn": "Slime B",
+    "cardr": "Devoted, Frozen Blood",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of Forget",
     "element": "phys"
   },
   "Heat Riser": {
+    "cardr": "Frozen Blood, Heroic Amulet, Pinky Love, Vanitas",
     "cost": 1036,
     "effect": "Tarukaja + Rakukaja + Sukukaja",
     "element": "support"
   },
   "Heat Wave": {
+    "cardr": "Vanitas",
+    "cardt": "Kyoto",
     "cost": 18,
     "effect": "Heavy damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Hysterical Slap": {
+    "cardn": "Berith, Lamia, Slime, Slime B",
+    "cardt": "Sendai",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of Rage",
     "element": "phys"
   },
   "Ice Age": {
+    "cardr": "Devoted",
     "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "ice"
   },
   "Ice Amp": {
+    "cardr": "Devoted, Frozen Blood, Pinky Love, Ruby of Wrath",
     "effect": "Ice damage +50%",
     "element": "passive"
   },
   "Ice Boost": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Naga, Naga B",
     "effect": "Ice damage +25%",
     "element": "passive"
   },
   "Inferno": {
+    "cardr": "Devoted, Frozen Blood",
     "cost": 1036,
     "effect": "Severe damage to close range Foes",
     "element": "fire"
@@ -484,11 +705,13 @@
     "element": "bless"
   },
   "Kougaon": {
+    "cardr": "Devoted",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "bless"
   },
   "Kouha": {
+    "cardr": "Pixie",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "bless"
@@ -498,26 +721,33 @@
     "element": "passive"
   },
   "Life Drain": {
+    "cardn": "Slime, Slime B",
     "cost": 1010,
     "effect": "Drains HP from close range Foes",
     "element": "almighty"
   },
   "Lullaby": {
+    "cardn": "Bugs, Lilith",
+    "cardr": "Devoted",
     "cost": 1010,
     "effect": "High chance of Sleep to wide range Foes",
     "element": "ailment"
   },
   "Lunge": {
+    "cardn": "Bicorn, Silky",
     "cost": 10,
     "effect": "Light damage to close range Foes",
     "element": "phys"
   },
   "Mabufu": {
+    "cardn": "Demon Jewel",
+    "cardr": "Devoted, High Pixie, Slime",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "ice"
   },
   "Mabufudyne": {
+    "cardr": "Pinky Love, Vanitas",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "ice"
@@ -528,116 +758,146 @@
     "element": "ice"
   },
   "Maeiga": {
+    "cardn": "Vanitas",
     "cost": 1014,
     "effect": "Medium damage to wide range Foes",
     "element": "curse"
   },
   "Maeigaon": {
+    "cardn": "Devoted",
+    "cardr": "Devoted, Dominion, Yatagarasu, Yatagarasu B",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "curse"
   },
   "Maeiha": {
+    "cardr": "Devoted",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "curse"
   },
   "Mafrei": {
+    "cardr": "Pinky Love",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "nuke"
   },
   "Mafreidyne": {
+    "cardr": "Bugs B, Devoted",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "nuke"
   },
   "Mafreila": {
+    "cardr": "Devoted",
     "cost": 1016,
     "effect": "Medium damage to wide range Foes",
     "element": "nuke"
   },
   "Magaru": {
+    "cardr": "Devoted",
     "cost": 1008,
     "effect": "Light damage to wide range Foes",
     "element": "wind"
   },
   "Magarudyne": {
+    "cardr": "Demon Jewel",
     "cost": 1024,
     "effect": "Heavy damage to wide range Foes",
     "element": "wind"
   },
   "Magarula": {
+    "cardn": "Vanitas",
+    "cardr": "Devoted",
     "cost": 1014,
     "effect": "Medium damage to wide range Foes",
     "element": "wind"
   },
   "Mahama": {
+    "cardr": "Devoted",
     "cost": 1012,
     "effect": "Low chance of instant killing wide range Foes",
     "element": "bless"
   },
   "Mahamaon": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Naga, Naga B",
     "cost": 1014,
     "effect": "Medium chance of instant killing wide range Foes",
     "element": "bless"
   },
   "Makajam": {
+    "cardn": "Frozen Blood",
+    "cardr": "Jack Frost",
     "cost": 1008,
     "effect": "High chance of Forget to close range Foes",
     "element": "ailment"
   },
   "Makajamaon": {
+    "cardn": "Dominion, Kali, Yatagarasu B",
+    "cardt": "Abyssal, Final",
     "cost": 1010,
     "effect": "High chance of Forget to wide range Foes",
     "element": "ailment"
   },
   "Makouga": {
+    "cardr": "Frozen Blood",
     "cost": 1016,
     "effect": "Medium damage to wide range Foes",
     "element": "bless"
   },
   "Makougaon": {
+    "cardn": "Devoted",
+    "cardr": "Yatagarasu, Yatagarasu B",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "bless"
   },
   "Makouha": {
+    "cardn": "Demon Jewel",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "bless"
   },
   "Mamudo": {
+    "cardn": "Jack Frost B, Lilim B",
     "cost": 1012,
     "effect": "Low chance of instant killing wide range Foes",
     "element": "curse"
   },
   "Mamudoon": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Naga",
     "cost": 1014,
     "effect": "Medium chance of instant killing wide range Foes",
     "element": "curse"
   },
   "Mapsi": {
+    "cardr": "Slime",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "psy"
   },
   "Mapsio": {
+    "cardr": "Devoted",
     "cost": 1016,
     "effect": "Medium damage to wide range Foes",
     "element": "psy"
   },
   "Mapsiodyne": {
+    "cardn": "Abyss",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "psy"
   },
   "Maragi": {
+    "cardr": "High Pixie",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "fire"
   },
   "Maragidyne": {
+    "cardn": "Abyss",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "fire"
@@ -648,91 +908,120 @@
     "element": "fire"
   },
   "Marakukaja": {
+    "cardn": "Naga B",
+    "cardt": "Osaka",
     "cost": 1024,
     "effect": "Raise defense and nullify knock-back for set period for all Allies",
     "element": "support"
   },
   "Marakunda": {
+    "cardn": "Fortuna",
+    "cardr": "Heroic Amulet",
     "cost": 1016,
     "effect": "Lower defense for set period for wide range Foes",
     "element": "support"
   },
   "Marin Karin": {
+    "cardr": "Setanta",
     "cost": 1008,
     "effect": "High chance of Brainwash to close range Foes",
     "element": "ailment"
   },
   "Masukukaja": {
+    "cardn": "Naga, Naga B",
     "cost": 1024,
     "effect": "Raise evade and critical evade for set period for all Allies",
     "element": "support"
   },
   "Masukunda": {
+    "cardn": "Fortuna B, Naga B, Sarasvati",
+    "cardr": "Devoted",
     "cost": 1016,
     "effect": "Lower evade and critical evade for set period for wide range Foes",
     "element": "support"
   },
   "Matarukaja": {
+    "cardn": "Naga B",
     "cost": 1024,
     "effect": "Raise attack for set period for all Allies",
     "element": "support"
   },
   "Matarunda": {
+    "cardt": "Osaka",
     "cost": 1016,
     "effect": "Lower attack for set period for wise range Foes",
     "element": "support"
   },
   "Mazio": {
+    "cardn": "Demon Jewel",
+    "cardr": "Slime",
     "cost": 1010,
     "effect": "Light damage to wide range Foes",
     "element": "elec"
   },
   "Maziodyne": {
+    "cardn": "Abyss",
+    "cardr": "Devoted, Vanitas",
     "cost": 1026,
     "effect": "Heavy damage to wide range Foes",
     "element": "elec"
   },
   "Mazionga": {
+    "cardr": "Devoted",
     "cost": 1016,
     "effect": "Medium damage to wide range Foes",
     "element": "elec"
   },
   "Media": {
+    "cardn": "High Pixie B, Slime",
     "cost": 1014,
     "effect": "Slightly restore HP for all Allies",
     "element": "recovery"
   },
   "Mediarahan": {
+    "cardn": "Devoted",
+    "cardr": "Devoted, Yatagarasu, Yatagarasu B",
+    "cardt": "Request",
     "cost": 1068,
     "effect": "Fully restore HP for all Allies",
     "element": "recovery"
   },
   "Mediarama": {
+    "cardt": "Okinawa",
     "cost": 1032,
     "effect": "Moderately restore HP for all Allies",
     "element": "recovery"
   },
   "Megaton Raid": {
+    "cardn": "Abyss",
+    "cardr": "Mot",
     "cost": 24,
     "effect": "Severe damage to close range Foes with medium chance of critical hit",
     "element": "phys"
   },
   "Megido": {
+    "cardn": "Vanitas",
     "cost": 1014,
     "effect": "Medium damage to wide range Foes",
     "element": "almighty"
   },
   "Megidola": {
+    "cardn": "Devoted",
+    "cardr": "Abyss, Yatagarasu, Yatagarasu B",
     "cost": 1024,
     "effect": "Heavy damage to wide range Foes",
     "element": "almighty"
   },
   "Megidolaon": {
+    "cardr": "Demon Jewel, Devoted",
     "cost": 1036,
     "effect": "Severe damage to wide range Foes",
     "element": "almighty"
   },
   "Memory Blow": {
+    "cardn": "Lilim",
+    "cardr": "Devoted",
+    "cardt": "Sapporo",
     "cost": 12,
     "effect": "Medium damage to wide range Foes with medium chance of Forget",
     "element": "phys"
@@ -755,58 +1044,113 @@
     "element": "almighty"
   },
   "Mudo": {
+    "cardr": "Vanitas",
     "cost": 1008,
     "effect": "Low chance of instant killing close range Foes",
     "element": "curse"
   },
   "Mudo Boost": {
+    "cardn": "Mothman B, Setanta B",
+    "cardr": "Devoted",
+    "cardt": "Sapporo",
     "effect": "Increases success rate of Curse-type instant death attacks",
     "element": "passive"
   },
   "Mudoon": {
+    "cardr": "Frozen Blood",
     "cost": 1010,
     "effect": "Medium chance of instant killing close range Foes",
     "element": "curse"
   },
   "Myriad Slashes": {
+    "cardr": "Devoted, Heroic Amulet",
     "cost": 24,
     "effect": "Severe damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Nocturnal Flash": {
+    "cardn": "Bugs, Bugs B, Dominion",
+    "cardr": "Devoted",
+    "cardt": "Final",
     "cost": 1010,
     "effect": "High chance of Dizzy to wide range Foes",
     "element": "ailment"
   },
   "Nuke Amp": {
+    "cardr": "Demon Jewel, Devoted, Frozen Blood, Heroic Amulet, Pinky Love",
     "effect": "Nuke damage +50%",
     "element": "passive"
   },
   "Nuke Boost": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Devoted, Naga B",
     "effect": "Nuke damage +25%",
     "element": "passive"
   },
+  "Null Bless": {
+    "cardn": "Night Dragon",
+    "effect": "Nullifies Bless attacks",
+    "element": "passive"
+  },
   "Null Brainwash": {
+    "cardn": "Bicorn, Jack-o'-Lantern",
+    "cardr": "Devoted",
     "effect": "Imparts immunity to Brainwash",
     "element": "passive"
   },
+  "Null Curse": {
+    "cardn": "Night Dragon",
+    "cardr": "Devoted",
+    "effect": "Nullifies Curse attacks",
+    "element": "passive"
+  },
   "Null Dizzy": {
+    "cardr": "Devoted",
+    "cardt": "Shibuya",
     "effect": "Imparts immunity to Dizzy",
     "element": "passive"
   },
+  "Null Elec": {
+    "cardn": "Mad Rabbit",
+    "cardr": "Heroic Amulet",
+    "effect": "Nullifies Elec attacks",
+    "element": "passive"
+  },
   "Null Fear": {
+    "cardr": "Devoted, Heroic Amulet",
+    "cardt": "Shibuya",
     "effect": "Imparts immunity to Fear",
     "element": "passive"
   },
+  "Null Fire": {
+    "cardr": "Demon Jewel",
+    "effect": "Nullifies Fire attacks",
+    "element": "passive"
+  },
   "Null Forget": {
+    "cardn": "Silky B",
+    "cardr": "Devoted",
     "effect": "Imparts immunity to Forget",
     "element": "passive"
   },
+  "Null Ice": {
+    "cardr": "Devoted",
+    "effect": "Nullifies Ice attacks",
+    "element": "passive"
+  },
   "Null Nuke": {
-    "effect": "Nullifies Nuke damage",
+    "cardn": "False God",
+    "cardr": "Devoted, Heroic Amulet",
+    "effect": "Nullifies Nuke attacks",
+    "element": "passive"
+  },
+  "Null Psy": {
+    "cardn": "True Hero",
+    "effect": "Nullifies Psy attacks",
     "element": "passive"
   },
   "Null Rage": {
+    "cardr": "Devoted",
     "effect": "Imparts immunity to Rage",
     "element": "passive"
   },
@@ -814,256 +1158,391 @@
     "effect": "Imparts immunity to Sleep",
     "element": "passive"
   },
+  "Null Wind": {
+    "effect": "Nullifies Wind attacks",
+    "element": "passive"
+  },
   "One-shot Kill": {
+    "cardr": "Devoted",
     "cost": 30,
     "effect": "Heavy damage to close range Foes with high chance of critical hit",
     "element": "gun"
   },
   "Oni Kagura": {
+    "cardr": "Devoted, Frozen Blood",
+    "cardt": "Osaka",
     "cost": 18,
     "effect": "Medium damage to wide range Foes with medium chance of Rage",
     "element": "phys"
   },
   "Panta Rhei": {
+    "cardr": "Devoted, Pinky Love",
     "cost": 1034,
     "effect": "Severe damage to close range Foes",
     "element": "wind"
   },
   "Psi": {
+    "cardn": "Pinky Love",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "psy"
   },
   "Psio": {
+    "cardr": "Slime",
     "cost": 1014,
     "effect": "Medium damage to close range Foes",
     "element": "psy"
   },
   "Psiodyne": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Devoted, Frozen Blood, Naga B",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "psy"
   },
   "Psy Amp": {
+    "cardr": "Devoted",
     "effect": "Psy damage +50%",
     "element": "passive"
   },
   "Psy Boost": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Devoted",
     "effect": "Psy damage +25%",
     "element": "passive"
   },
   "Psycho Blast": {
+    "cardr": "Abyss, Demon Jewel, Devoted",
     "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "psy"
   },
   "Psycho Force": {
+    "cardr": "Devoted, Ruby of Wrath",
     "cost": 1036,
     "effect": "Severe damage to close range Foes",
     "element": "psy"
   },
   "Rage Boost": {
+    "cardr": "Devoted",
+    "cardt": "Sapporo",
     "effect": "Increases chance of inflicting Rage",
     "element": "passive"
   },
   "Rakukaja": {
+    "cardn": "Jack-o'-Lantern, Mokoi, Pixie",
+    "cardr": "Frozen Blood",
     "cost": 1012,
     "effect": "Raise defense and nullify knock-back for set period for 1 Ally",
     "element": "support"
   },
   "Rakunda": {
+    "cardn": "Pixie B, Silky B",
+    "cardr": "Devoted, Heroic Amulet",
     "cost": 1012,
     "effect": "Lower defense for set period for close range Foes",
     "element": "support"
   },
   "Rampage": {
+    "cardr": "Devoted",
+    "cardt": "Sendai",
     "cost": 12,
     "effect": "Medium damage to wide range Foes",
     "element": "phys"
   },
   "Rebel Will": {
+    "cardr": "Devoted",
+    "cardt": "Request",
     "effect": "Improves rate for increasing Showtime Gauge",
     "element": "passive"
   },
   "Recarm": {
+    "cardn": "Mothman B",
+    "cardt": "Sapporo",
     "cost": 1024,
     "effect": "Revive 1 Ally with 50% HP",
     "element": "recovery"
   },
   "Regenerate 1": {
+    "cardn": "Lilim B",
+    "cardt": "Sapporo, Sendai",
     "effect": "Slightly restore HP over time",
     "element": "passive"
   },
   "Regenerate 2": {
+    "cardn": "Kikuri-Hime, Neko Shogun, Okuninushi",
+    "cardr": "Devoted",
     "effect": "Moderately restore HP over time",
     "element": "passive"
   },
   "Regenerate 3": {
+    "cardr": "Pinky Love",
+    "cardt": "Final, Request",
     "effect": "Greatly restore HP over time",
     "element": "passive"
   },
+  "Resist Bless": {
+    "cardn": "Shiisaa B",
+    "cardr": "Pinky Love",
+    "effect": "Halves damage from Bless attacks",
+    "element": "passive"
+  },
+  "Resist Curse": {
+    "cardn": "Arahabaki, Shiisaa B",
+    "cardt": "Okinawa",
+    "effect": "Halves damage from Curse attacks",
+    "element": "passive"
+  },
+  "Resist Elec": {
+    "cardt": "Okinawa",
+    "effect": "Halves damage from Elec attacks",
+    "element": "passive"
+  },
+  "Resist Fire": {
+    "cardr": "Devoted",
+    "effect": "Halves damage from Fire attacks",
+    "element": "passive"
+  },
+  "Resist Ice": {
+    "cardr": "Demon Jewel",
+    "effect": "Halves damage from Ice attacks",
+    "element": "passive"
+  },
+  "Resist Nuke": {
+    "cardn": "Legion",
+    "cardr": "Devoted, Heroic Amulet, Pinky Love",
+    "cardt": "Okinawa",
+    "effect": "Halves damage from Nuke attacks",
+    "element": "passive"
+  },
+  "Resist Phys": {
+    "cardr": "Devoted",
+    "effect": "Halves damage from Phys attacks",
+    "element": "passive"
+  },
+  "Resist Psy": {
+    "cardt": "Okinawa",
+    "effect": "Halves damage from Psy attacks",
+    "element": "passive"
+  },
+  "Resist Wind": {
+    "cardn": "Shiisaa B",
+    "cardr": "Devoted, Frozen Blood",
+    "effect": "Halves damage from Wind attacks",
+    "element": "passive"
+  },
   "Riot Gun": {
+    "cardr": "Demon Jewel, Devoted, Pinky Love",
     "cost": 40,
     "effect": "Severe damage to wide range Foes with high chance of critical hit",
     "element": "gun"
   },
   "Salvation": {
+    "cardn": "Metatron B",
+    "cardr": "Demon Jewel, Devoted, Frozen Blood, Heroic Amulet",
     "cost": 1084,
     "effect": "Fully restore HP and recover non-unique ailments for all Allies",
     "element": "recovery"
   },
   "Samarecarm": {
+    "cardn": "Ruby of Wrath",
+    "cardr": "Devoted, Koppa Tengu B",
     "cost": 1048,
     "effect": "Revive 1 Ally with 100% HP",
     "element": "recovery"
   },
   "Shock Boost": {
+    "cardn": "Lilim, Setanta B",
+    "cardr": "Devoted",
+    "cardt": "Sapporo",
     "effect": "Increases chance of inflicting Shock",
     "element": "passive"
   },
   "Sledgehammer": {
+    "cardn": "High Pixie B, Slime B",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of Dizzy",
     "element": "phys"
   },
   "Sleep Boost": {
+    "cardn": "Mothman B",
     "effect": "Increases chance of inflicting Sleep",
     "element": "passive"
   },
   "Snap": {
+    "cardr": "Devoted",
+    "cardt": "Shibuya",
     "cost": 16,
     "effect": "Light damage to close range Foes",
     "element": "gun"
   },
   "Snipe": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Naga",
     "effect": "Gun damage +25%",
     "element": "passive"
   },
   "Soul Stealer": {
+    "cardt": "Request",
     "effect": "Attacks will drain SP from Foes afflicted with ailments",
     "element": "passive"
   },
   "Speed Master": {
+    "cardn": "Neko Shogun",
     "effect": "Begin battle with Sukukaja",
     "element": "passive"
   },
   "Spell Master": {
+    "cardr": "Devoted, Frozen Blood",
     "effect": "Halves SP costs for skills",
     "element": "passive"
   },
   "Sukukaja": {
+    "cardt": "Shibuya",
     "cost": 1012,
     "effect": "Raise evade and critical evade for set period for all Allies",
     "element": "support"
   },
   "Sukunda": {
+    "cardn": "Jack-o'-Lantern, Pixie B",
     "cost": 1012,
     "effect": "Lower evade and critical evade for set period for close range Foes",
     "element": "support"
   },
   "Survival Trick": {
+    "cardr": "Ruby of Wrath",
     "effect": "Survive all instant death attacks with 1 HP",
     "element": "passive"
   },
   "Swift Strike": {
+    "cardn": "Legion, Shiisaa B",
     "cost": 18,
     "effect": "Heavy damage to wide range Foes",
     "element": "phys"
   },
   "Sword Dance": {
+    "cardr": "Demon Jewel, Devoted, Heroic Amulet",
     "cost": 25,
     "effect": "Severe damage to close range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Tarukaja": {
+    "cardn": "Andras",
+    "cardt": "Shibuya",
     "cost": 1012,
     "effect": "Raise attack for set period for 1 Ally",
     "element": "support"
   },
   "Tarunda": {
+    "cardt": "Shibuya",
     "cost": 1012,
     "effect": "Lower attack for set period for close range Foes",
     "element": "support"
   },
   "Taunt": {
+    "cardn": "Frozen Blood",
     "cost": 1008,
     "effect": "High chance of Rage to close range Foes",
     "element": "ailment"
   },
   "Tempest Slash": {
+    "cardn": "Kikuri-Hime",
+    "cardr": "Devoted",
     "cost": 18,
     "effect": "Heavy damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Terror Claw": {
+    "cardr": "Devoted",
     "cost": 10,
     "effect": "Light damage to close range Foes with medium chance of Fear",
     "element": "phys"
   },
   "Tetraja": {
+    "cardn": "High Pixie, High Pixie B",
+    "cardr": "Devoted",
     "cost": 1006,
     "effect": "Nullify next instant death attack for 1 Ally",
     "element": "support"
   },
   "Thunder Reign": {
+    "cardr": "Devoted",
     "cost": 1036,
     "effect": "Severe damage to close range Foes",
     "element": "elec"
   },
   "Triple Down": {
+    "cardt": "Osaka",
     "cost": 24,
     "effect": "Heavy damage to wide range Foes with high chance of critical hit",
     "element": "gun"
   },
   "Vacuum Wave": {
+    "cardr": "Abyss, Devoted",
     "cost": 1036,
     "effect": "Severe damage to wide range Foes",
     "element": "wind"
   },
   "Vajra Blast": {
+    "cardn": "Orthrus",
+    "cardr": "Devoted",
+    "cardt": "Sendai",
     "cost": 12,
     "effect": "Medium damage to wide range Foes",
     "element": "phys"
   },
   "Vicious Strike": {
+    "cardn": "Slime B",
+    "cardr": "Devoted",
     "cost": 12,
     "effect": "Light damage to wide range Foes with medium chance of critical hit",
     "element": "phys"
   },
   "Vorpal Blade": {
+    "cardr": "Devoted, Pinky Love",
     "cost": 18,
     "effect": "Severe damage to close range Foes with medium chance of critical hit",
     "element": "phys"
   },
   "Wage War": {
+    "cardn": "Dominion, Mot, Nebiros",
+    "cardr": "Devoted",
+    "cardt": "Final",
     "cost": 1010,
     "effect": "High chance of Rage to wide range Foes",
     "element": "ailment"
   },
   "Wild Thunder": {
+    "cardr": "Devoted",
     "cost": 1038,
     "effect": "Severe damage to wide range Foes",
     "element": "elec"
   },
   "Wind Amp": {
+    "cardr": "Devoted, Heroic Amulet, Pinky Love",
     "effect": "Wind damage +50%",
     "element": "passive"
   },
   "Wind Boost": {
+    "cardn": "Heroic Amulet",
     "effect": "Wind damage +25%",
     "element": "passive"
   },
   "Zio": {
+    "cardr": "Devoted, Pixie",
     "cost": 1008,
     "effect": "Light damage to close range Foes",
     "element": "elec"
   },
   "Ziodyne": {
+    "cardn": "Heroic Amulet",
+    "cardr": "Pinky Love",
     "cost": 1024,
     "effect": "Heavy damage to close range Foes",
     "element": "elec"
   },
   "Zionga": {
+    "cardr": "Devoted",
     "cost": 1014,
     "effect": "Medium damage to close range Foes",
     "element": "elec"

@@ -76,6 +76,11 @@
     "power": 110,
     "target": "All Foes"
   },
+  "Almighty Boost": {
+    "effect": "Almighty dmg +15%",
+    "elem": "pas",
+    "points": 6
+  },
   "Amakusa Uprising": {
     "cost": 6,
     "effect": "Light Pierce, Chance to crit, Tarukaja + Sukukaja for 2 turns",
@@ -108,6 +113,12 @@
   "Arms Mastery": {
     "effect": "Phys dmg +15%, Phys acc +15%",
     "elem": "pas"
+  },
+  "Ars Magna": {
+    "cost": 8,
+    "elem": "alm",
+    "power": 180,
+    "target": "1 Foe"
   },
   "Ascension": {
     "cost": 6,
@@ -939,6 +950,10 @@
     "effect": "Endure with 300 HP, Heals 30% of own HP, 3 MP, and enters Might when HP < 50%",
     "elem": "pas"
   },
+  "False God": {
+    "effect": "Almighty dmg +10%, Repel Pierce, Casts Megidola when an ally repels an attack",
+    "elem": "pas"
+  },
   "Famine": {
     "effect": "At end of enemy phase, Reduce all Foe HP by 10% current (<200) and remove 1 MP",
     "elem": "pas"
@@ -1472,6 +1487,12 @@
     "effect": "Removes 1 Foe Press Turn when Foe attacks first, 2 Turns max",
     "elem": "pas",
     "points": 21
+  },
+  "Invasion": {
+    "cost": 8,
+    "effect": "Luster Candy + Debilitate for 1 turn",
+    "elem": "sup",
+    "target": "All Allies"
   },
   "Iron Fist": {
     "cost": 6,
@@ -2429,6 +2450,11 @@
     "elem": "pas",
     "points": 12
   },
+  "Null Elec-Force": {
+    "effect": "Nullify Elec and Force dmg",
+    "elem": "pas",
+    "points": 12
+  },
   "Null Fire": {
     "effect": "Nullify Fire dmg",
     "elem": "pas",
@@ -3084,6 +3110,10 @@
   },
   "Suppress Stance Drain": {
     "effect": "Foes lose extra Press Turn when Allies drain an atk",
+    "elem": "pas"
+  },
+  "Supreme Creator": {
+    "effect": "Skill costs -1 MP, Drain Pierce, Recovers 75 HP and 1 MP to all allies when an ally drains an attack",
     "elem": "pas"
   },
   "Sweet Bite": {
