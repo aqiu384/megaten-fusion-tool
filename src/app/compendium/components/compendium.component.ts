@@ -10,13 +10,8 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table *ngIf="3 + otherLinks.length + (hasSettings ? 1 : 0); let hlength"
-      [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1000px' }">
+      [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
       <thead>
-        <tr>
-          <th class="nav" [attr.colspan]="hlength">
-            <div><a routerLink="{{ mainList }}s">{{ appName }} Fusion Calculator</a></div>
-          </th>
-        </tr>
         <tr>
           <th class="nav" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
@@ -46,6 +41,9 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             </a></div>
           </th>
         </tr>
+        <tr>
+          <th [attr.colspan]="hlength" class="title">{{ appName }} Fusion Calculator</th>
+        </tr>
       </thead>
     </table>
   `,
@@ -63,7 +61,7 @@ export class CompendiumHeaderComponent {
   providers: [ PositionEdgesService ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: isChart ? 'auto' : '1000px' }">
+    <div [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: isChart ? 'auto' : '1080px' }">
       <div *ngIf="!isChart" appPositionSticky>
         <app-demon-compendium-header appPositionSticky
           [appName]="appName"

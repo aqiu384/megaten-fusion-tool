@@ -8,7 +8,7 @@ import { Compendium, Skill } from '../models';
     <table>
       <thead>
         <tr>
-          <th [attr.colSpan]="skillHeaderLen">{{ title }}</th>
+          <th [attr.colSpan]="skillHeaderLen" class="title">{{ title }}</th>
         </tr>
         <tr>
           <th>Elem</th>

@@ -67,7 +67,7 @@ export class FusionTrioTableRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th colspan="11">{{ title }}</th>
+      <th colspan="11" class="title">{{ title }}</th>
     </tr>
     <tr>
       <th class="sortable" rowspan="2" [style.width.%]="8" (click)="toggleHideAll()">Hide All</th>

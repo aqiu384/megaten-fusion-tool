@@ -18,7 +18,6 @@ import { FusionChart } from '../../compendium/models';
   `,
   styles: [`
     table { width: auto; margin: 0 auto; }
-    th.title { height: 2em; }
     td.elem { color: lime; }
     td.trip { color: lightgray; }
     td.ra-2 { color: orange; }

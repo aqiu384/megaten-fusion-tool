@@ -29,7 +29,7 @@ export class FusionPairTableRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th colspan="7">{{ title }}</th>
+      <th colspan="7" class="title">{{ title }}</th>
     </tr>
     <tr>
       <th rowSpan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Price</th>

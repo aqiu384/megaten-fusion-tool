@@ -103,25 +103,9 @@
   color: tomato;
 }
 
-.mib th {
+.mib th.title, .mib th.nav.active, .mib th.nav.active a {
   color: black;
   background-color: #a9a9a9;
-}
-
-.mib th.sortable:hover {
-  background-color: #ffffff;
-}
-
-.mib th.nav {
-  background-color: #666666;
-}
-
-.mib th.nav.active, .mib th.nav:hover {
-  background-color: #a9a9a9;
-}
-
-.mib th.nav a {
-  color: black;
 }
 
 .mib td.lvl111, .mib td.lvl115 {

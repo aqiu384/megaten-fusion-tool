@@ -40,8 +40,7 @@ import { FusionDataService } from '../fusion-data.service';
       <ng-container *ngIf="compendium.splitMultiFusion(name) as rows">
         <table *ngIf="rows.length">
           <thead>
-            <tr><th colspan=5>Treasure Demon Reverse Fusions</th></tr>
-            <tr><th colspan=5>Ingredient 1 x Ingredient 2 = {{ demon.name }}</th></tr>
+            <tr><th colspan=5 class="title">Ingredient 1 x Ingredient 2 = {{ demon.name }}</th></tr>
             <tr><th rowspan=2>Price</th><th colspan=3>Ingredient 1</th><th>Ingredient 2</th></tr>
             <tr><th>Names</th><th>MinLvl</th><th>MaxLvl</th><th>Names</th></tr>
           </thead>

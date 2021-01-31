@@ -15,7 +15,7 @@ import { Compendium } from '../models/compendium';
     <table>
       <thead>
         <tr>
-          <th colspan="4">Negotiation</th>
+          <th colspan="4" class="title">Negotiation</th>
         </tr>
         <tr>
           <th>Persona</th>

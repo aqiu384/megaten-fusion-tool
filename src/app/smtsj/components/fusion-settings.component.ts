@@ -11,7 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <table>
       <thead>
-        <tr><th>Included Subapps</th></tr>
+        <tr><th class="title">Included Subapps</th></tr>
       </thead>
       <tbody>
         <tr *ngFor="let subapp of subapps">

@@ -1,6 +1,6 @@
 /* Demon Compendium */
 body {
-  background-color: black;
+  background-color: #333333;
   color: white;
   width: 100%;
   margin: 0;
@@ -26,22 +26,26 @@ table {
   position: sticky;
 }
 
-thead tr, tfoot tr {
-  background-color: black;
-}
-
-thead th, tfoot th {
-  color: black;
-  background-color: white;
-}
-
 tbody tr:nth-child(even) td {
   background-color: #222;
 }
 
 th, td {
-  border: solid 1px black;
+  border: solid 1px #333333;
   border-radius: 3.5px;
+}
+
+td {
+  background-color: #282828;
+}
+
+th {
+  background-color: black;
+}
+
+th.title, th.nav.active, th.nav.active a {
+  background-color: white;
+  color: black;
 }
 
 /* Table Sort Directions */
@@ -78,7 +82,7 @@ ul.comma-list li {
 th.nav {
   height: 2em;
   cursor: pointer;
-  background-color: #394d5b;
+  background-color: black;
 }
 
 th.nav div {
@@ -88,18 +92,8 @@ th.nav div {
 }
 
 th.nav a {
-  color: white;
   display: table-cell;
   vertical-align: middle;
-  text-decoration: none;
-}
-
-th.nav.active, th.nav:hover {
-  background-color: white;
-}
-
-th.nav.active a, th.nav:hover a {
-  color: black;
 }
 
 /* Resistances */

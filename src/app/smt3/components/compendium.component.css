@@ -35,23 +35,7 @@
   color: white;
 }
 
-.smt3 th {
+.smt3 th.title, .smt3 th.nav.active, .smt3 th.nav.active a {
   color: white;
   background-color: #3b3a62;
-}
-
-.smt3 th.sortable:hover {
-  background-color: #7170A1;
-}
-
-.smt3 th.nav {
-  background-color: #1b1744;
-}
-
-.smt3 th.nav.active, .smt3 th.nav:hover {
-  background-color: #3b3a62;
-}
-
-.smt3 th.nav a {
-  color: white;
 }

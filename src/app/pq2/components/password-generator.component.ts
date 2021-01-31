@@ -14,7 +14,7 @@ import { encodeDemon } from '../models/password-generator';
   template: `
     <form [formGroup]="form">
       <table>
-        <tr><th colspan="2">QR Codes</th></tr>
+        <tr><th colspan="2" class="title">QR Codes</th></tr>
         <tr>
           <th [ngStyle]="{ width: '33%' }"></th>
           <th [ngStyle]="{ width: '67%' }">QR Code</th>
@@ -25,7 +25,7 @@ import { encodeDemon } from '../models/password-generator';
         </tr>
       </table>
       <table>
-        <tr><th colspan="7">Persona Entry</th></tr>
+        <tr><th colspan="7" class="title">Persona Entry</th></tr>
         <tr>
           <th>Price</th>
           <th>Language</th>
@@ -71,7 +71,7 @@ import { encodeDemon } from '../models/password-generator';
         </tr>
       </table>
       <table formArrayName="skills">
-        <tr><th colspan="5">Learned Skills</th></tr>
+        <tr><th colspan="5" class="title">Learned Skills</th></tr>
         <tr>
           <th>Element</th>
           <th>Name</th>

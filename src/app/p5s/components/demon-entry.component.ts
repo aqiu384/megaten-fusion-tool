@@ -37,7 +37,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-skills>
       <ng-container *ngIf="compendium.splitMultiFusion(name) as rows">
         <table *ngIf="rows.length">
-          <tr><th colspan=7>Normal Reverse Fusions</th></tr>
+          <tr><th colspan=7 class="title">Normal Reverse Fusions</th></tr>
           <tr><th colspan=7>Ingredient 1 x Ingredient 2 x Ingredient 3 = {{ demon.name }}</th></tr>
           <tr>
             <th rowspan=2>Price</th>
@@ -74,8 +74,7 @@ import { FusionDataService } from '../fusion-data.service';
         </table>
       </ng-container>
       <table *ngIf="demon.prereq">
-        <tr><th>Notes</th></tr>
-        <tr><th>Special Fusion Condition</th></tr>
+        <tr><th class="title">Special Fusion Condition</th></tr>
         <tr><td>{{ demon.prereq }}</td></tr>
       </table>
       <ng-container *ngIf="compendium.splitSpecialFusion(name) as rows">

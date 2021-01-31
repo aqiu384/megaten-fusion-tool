@@ -18,7 +18,7 @@ import { FusionDataService } from '../fusion-data.service';
       <table>
         <thead>
           <tr>
-            <th [attr.colSpan]="statHeaders.length + 1">
+            <th [attr.colSpan]="statHeaders.length + 1" class="title">
               Grade {{ demon.lvl }} {{ demon.race }} {{ demon.name }}
             </th>
           </tr>
@@ -40,7 +40,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <table *ngIf="demonPanels.length">
         <thead>
-          <tr><th colspan="3">Panels</th></tr>
+          <tr><th colspan="3" class="title">Panels</th></tr>
           <tr><th>Level</th><th>Step</th><th>Bonus</th></tr>
         </thead>
         <tbody>
@@ -53,7 +53,7 @@ import { FusionDataService } from '../fusion-data.service';
       </table>
       <table>
         <thead>
-          <tr><th colSpan="7">Available Skills</th></tr>
+          <tr><th colSpan="7" class="title">Available Skills</th></tr>
           <tr><th>Available</th><th>Elem</th><th>Name</th><th>Costs</th><th>Rank</th><th>Effect</th><th>Upgrades</th></tr>
         </thead>
         <tbody>

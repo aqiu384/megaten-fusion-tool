@@ -24,7 +24,6 @@ import { FusionChart } from '../models';
   `,
   styles: [`
     table { width: auto; margin: 0 auto; }
-    th.title { height: 2em; }
     td.elem { color: lime; }
     td.trip { color: lightgray; }
     td.ra-2 { color: orange; }
@@ -36,7 +35,7 @@ import { FusionChart } from '../models';
     td.Undi, td.Aqua, td.Nigi, td.Enig { color: cyan; }
     td.Sylp, td.Aero, td.Kusi, td.UMA  { color: lime; }
     td.Gnom, td.Erth, td.Saki, td.Rand { color: orange; }
-    td.Empt { background-color: black; color: transparent; }
+    td.Empt { background-color: transparent; color: transparent; }
   `]
 })
 export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {

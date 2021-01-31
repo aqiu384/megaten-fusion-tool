@@ -7,7 +7,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
     <table>
       <thead>
         <tr>
-          <th [attr.colSpan]="stats.length + fusionHeaders.length + (inherit ? 1 : 0) + (price ? 1 : 0)">
+          <th [attr.colSpan]="stats.length + fusionHeaders.length + (inherit ? 1 : 0) + (price ? 1 : 0)" class="title">
             {{ title }}
           </th>
         </tr>

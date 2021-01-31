@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   template: `
     <table>
       <thead>
-        <tr><th>{{ dlcTitle }}</th></tr>
+        <tr><th class="title">{{ dlcTitle }}</th></tr>
       </thead>
       <tbody>
         <tr *ngFor="let demon of dlcDemons">

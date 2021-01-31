@@ -6,7 +6,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   template: `
     <table *ngIf="resistHeaders.length">
       <thead>
-        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length">Resistances</th></tr>
+        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length" class="title">Resistances</th></tr>
         <tr>
           <th [attr.colSpan]="resistHeaders.length">Element</th>
           <th *ngIf="ailmentHeaders.length" [attr.colSpan]="ailmentHeaders.length">Ailment</th>

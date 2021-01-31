@@ -24,23 +24,7 @@
 .p5 div.element-icon.passive { background-image: url('/assets/images/p5/passive.png'); }
 .p5 div.element-icon.trait { background-image: url('/assets/images/p5/trait.png'); }
 
-.p5 th {
+.p5 th.title, .p5 th.nav.active, .p5 th.nav.active a {
   color: white;
   background-color: #f41000;
-}
-
-.p5 th.sortable:hover {
-  background-color: #F46E00;
-}
-
-.p5 th.nav {
-  background-color: #5F0503;
-}
-
-.p5 th.nav.active, .p5 th.nav:hover {
-  background-color: #f41000;
-}
-
-.p5 th.nav.active a, .p5 th.nav:hover a {
-  color: white;
 }

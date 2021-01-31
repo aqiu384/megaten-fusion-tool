@@ -9,7 +9,7 @@ import { FusionEntry } from '../models';
     <table>
       <thead>
         <tr>
-          <th colspan="4">{{ title }}</th>
+          <th colspan="4" class="title">{{ title }}</th>
         </tr>
         <tr>
           <th>Price</th>

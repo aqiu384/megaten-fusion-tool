@@ -12,7 +12,7 @@ import { CurrentDemonService } from '../current-demon.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table *ngIf="fusionPrereq">
-      <thead><tr><th>Special Fusion Condition</th></tr></thead>
+      <thead><tr><th class="title">Special Fusion Condition</th></tr></thead>
       <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
     </table>
     <app-fusion-entry-table *ngIf="fusionEntries.length"

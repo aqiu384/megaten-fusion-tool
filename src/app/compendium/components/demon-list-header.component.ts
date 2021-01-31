@@ -7,7 +7,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
   template: `
     <tr>
       <th [attr.colSpan]="hasInherits ? 4 : 3">{{ isPersona ? 'Persona' : 'Demon' }}</th>
-      <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">Base Stats</th>
+      <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">Stats</th>
       <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">Resistances</th>
       <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">Affinities</th>
       <th *ngIf="isEnemy" colspan="2">Enemy</th>

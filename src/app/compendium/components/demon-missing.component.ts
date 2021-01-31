@@ -6,7 +6,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   template: `
     <table>
       <thead>
-        <tr><th>Entry for {{ name }}</th></tr>
+        <tr><th class="title">Entry for {{ name }}</th></tr>
       </thead>
       <tbody>
         <tr>

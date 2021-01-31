@@ -24,28 +24,9 @@
 .pq2 div.element-icon.nav { background-image: url('/assets/images/p5/trait.png'); }
 .pq2 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
 
-.pq2 th, .pq2 th {
+.pq2 th.title, .pq2 th.nav.active, .pq2 th.nav.active a {
   color: white;
   background-color: #ff4800;
-}
-
-.pq2 th.sortable:hover {
-  background-color: #ff520C;
-}
-
-.pq2 th.nav {
-  color: white;
-  cursor: pointer;
-  background-color: #772200;
-}
-
-.pq2 th.nav.active, .pq2 th.nav:hover {
-  color: white;
-  background-color: #ff4800;
-}
-
-.pq2 th.nav.active a, .pq2 th.nav:hover a {
-  color: white;
 }
 
 .pq div.element-icon {
@@ -72,26 +53,7 @@
 .pq div.element-icon.nav { background-image: url('/assets/images/p5/trait.png'); }
 .pq div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
 
-.pq th, .pq th {
+.pq th.title, .pq th.nav.active, .pq th.nav.active a {
   color: black;
   background-color: #AA1CA9;
-}
-
-.pq th.sortable:hover {
-  background-color: #ff89ff;
-}
-
-.pq th.nav {
-  color: white;
-  cursor: pointer;
-  background-color: #520052;
-}
-
-.pq th.nav.active, .pq th.nav:hover {
-  color: black;
-  background-color: #AA1CA9;
-}
-
-.pq th.nav.active a, .pq th.nav:hover a {
-  color: black;
 }

@@ -16,7 +16,7 @@ import { CompendiumConfig } from '../models';
     <table>
       <thead>
         <tr>
-          <th colspan="2">Appearances</th>
+          <th colspan="2" class="title">Appearances</th>
         </tr>
         <tr>
           <th>Areas</th>

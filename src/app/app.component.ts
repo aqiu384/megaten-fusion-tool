@@ -6,7 +6,7 @@ import MEGATEN_FUSION_TOOLS from './data-sources.json';
   selector: 'app-root',
   template: `
     <div [ngClass]="currentGame">
-      <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1000px' }">
+      <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
         <thead>
           <tr *ngFor="let row of navRows">
             <th *ngFor="let button of row" class="nav"

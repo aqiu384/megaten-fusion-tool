@@ -24,25 +24,9 @@
 .smtsj div.element-icon.spe { background-image: url('/assets/images/smtsj/spe.png'); }
 .smtsj div.element-icon.non { background-image: none }
 
-.smtsj th {
+.smtsj th.title, .smtsj th.nav.active, .smtsj th.nav.active a {
   color: white;
   background-color: #200470;
-}
-
-.smtsj th.sortable:hover {
-  background-color: #390DBD;
-}
-
-.smtsj th.nav {
-  background-color: #0E0136;
-}
-
-.smtsj th.nav.active, .smtsj th.nav:hover {
-  background-color: #200470;
-}
-
-.smtsj th.nav.active a, .smtsj th.nav:hover a {
-  color: white;
 }
 
 .smtsj td.align.Light-Law,

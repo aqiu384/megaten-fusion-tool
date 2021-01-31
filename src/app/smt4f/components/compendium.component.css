@@ -55,14 +55,5 @@
 .smt4f td.affinity7 { color: seagreen; }
 .smt4f td.affinity8 { color: forestgreen; }
 
-.smt4f th, .smt4f th.nav.active, .smt4f th.nav:hover { background-color: white; }
-.smt4f th.sortable:hover { background-color: #94abbb; }
-.smt4f th.nav { background-color: #394d5b; }
-.smt4f th.nav.active a, .smt4f th.nav:hover a { color: black; }
-.smt4f th { color: black; }
-
-.smt4 th, .smt4 th.nav.active, .smt4 th.nav:hover { background-color: white; }
-.smt4 th.sortable:hover { background-color: #94abbb; }
-.smt4 th.nav { background-color: #f49800; }
-.smt4 th.nav a, .smt4 th.nav:hover a { color: black; }
-.smt4 th { color: black; }
+.smt4f th.title, .smt4f th.nav.active, .smt4f th.nav.active a { background-color: white; color: black; }
+.smt4 th.title, .smt4 th.nav.active, .smt4 th.nav.active a { background-color: white; color: black; }

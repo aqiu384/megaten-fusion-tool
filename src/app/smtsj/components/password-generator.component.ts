@@ -16,7 +16,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
     <form [formGroup]="form">
       <table>
         <thead>
-          <tr><th colspan="4">Passwords</th></tr>
+          <tr><th colspan="4" class="title">Passwords</th></tr>
           <tr>
             <th [ngStyle]="{ width: '33.333%' }">Japanese Password</th>
             <th [ngStyle]="{ width: '33.333%' }">English Password</th>
@@ -46,7 +46,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </table>
       <table>
         <thead>
-          <tr><th colspan="4">Demon Entry</th></tr>
+          <tr><th colspan="4" class="title">Demon Entry</th></tr>
           <tr>
             <th>Mask Byte</th>
             <th>Level</th>
@@ -82,7 +82,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </table>
       <table>
         <thead>
-          <tr><th colspan="8">Stats</th></tr>
+          <tr><th colspan="8" class="title">Stats</th></tr>
           <tr>
             <th>Price</th>
             <th *ngFor="let stat of stats">{{ stat }}</th>
@@ -103,7 +103,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </table>
       <table>
         <thead>
-          <tr><th colspan="6">Learned Skills</th></tr>
+          <tr><th colspan="6" class="title">Learned Skills</th></tr>
           <tr>
             <th>Element</th>
             <th>Name</th>

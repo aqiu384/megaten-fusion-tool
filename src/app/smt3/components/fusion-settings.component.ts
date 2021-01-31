@@ -10,7 +10,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <table>
       <thead>
-        <tr><th>Fusion Chart Settings</th></tr>
+        <tr><th class="title">Fusion Chart Settings</th></tr>
       </thead>
       <tbody>
         <tr *ngFor="let setting of chartSettings">

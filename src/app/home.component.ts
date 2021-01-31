@@ -4,10 +4,10 @@ import MEGATEN_FUSION_TOOLS from './data-sources.json';
 
 @Component({
   template: `
-    <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1000px' }">
+    <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
       <thead>
         <tr>
-          <th colspan="2">Data Sources</th>
+          <th colspan="2" class="title">Data Sources</th>
         </tr>
         <tr>
           <th>Fusion Tool</th>

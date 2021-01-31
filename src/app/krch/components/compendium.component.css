@@ -37,31 +37,16 @@
 .kuzu div.element-icon.none { background-image: url('/assets/images/smtsj/spe.png'); }
 
 /* Raidou Kuzunoha vs. The Soulless Army */
-.krch th, .krch th.nav.active, .krch th.nav:hover { color: black; background-color: #856363; }
-.krch th.sortable:hover { background-color: #ca9c9c; }
-.krch th.nav { color: white; background-color: #3b2d2d; }
-.krch th, .krch th.nav.active a, .krch th.nav:hover a { color: black; }
+.krch th.title, .krch th.nav.active, .krch th.nav.active a { color: black; background-color: #856363; }
 
 /* Raidou Kuzunoha vs. King Abaddon */
-.krao th, .krao th.nav.active, .krao th.nav:hover { color: white; background-color: #8e283d; }
-.krao th.sortable:hover { background-color: #e24063; }
-.krao th.nav { color: white; background-color: #521724; }
-.krao th, .krao th.nav.active a, .krao th.nav:hover a { color: white; }
+.krao th.title, .krao th.nav.active, .krao th.nav.active a { color: white; background-color: #8e283d; }
 
 /* Majin Tensei */
-.mjn1 th, .mjn1 th.nav.active, .mjn1 th.nav:hover { color: white; background-color: #004381; }
-.mjn1 th.sortable:hover { background-color: #0069cc; }
-.mjn1 th.nav { color: white; background-color: #002446; }
-.mjn1 th, .mjn1 th.nav.active a, .mjn1 th.nav:hover a { color: white; }
+.mjn1 th.title, .mjn1 th.nav.active, .mjn1 th.nav.active a { color: white; background-color: #004381; }
 
 /* Devil Survivor */
-.ds1 th, .ds1 th.nav.active, .ds1 th.nav:hover { color: white; background-color: #e83145; }
-.ds1 th.sortable:hover { background-color: #ffb3bb; }
-.ds1 th.nav { color: white; background-color: #7c1b26; }
-.ds1 th, .ds1 th.nav.active a, .ds1 th.nav:hover a { color: white; }
+.ds1 th.title, .ds1 th.nav.active, .ds1 th.nav.active a { color: white; background-color: #e83145; }
 
 /* Devil Survivor 2 */
-.ds2 th, .ds2 th.nav.active, .ds2 th.nav:hover { color: white; background-color: #0078e8; }
-.ds2 th.sortable:hover { background-color: #97ceff; }
-.ds2 th.nav { color: white; background-color: #00335f; }
-.ds2 th, .ds2 th.nav.active a, .ds2 th.nav:hover a { color: white; }
+.ds2 th.title, .ds2 th.nav.active, .ds2 th.nav.active a { color: white; background-color: #0078e8; }
