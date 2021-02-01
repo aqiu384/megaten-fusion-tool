@@ -1,4 +1,4 @@
-import { Races, SkillElementOrder, ResistCodes } from './constants';
+import { Races, SkillElementOrder, ResistCodes, Ailments } from './constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -52,6 +52,26 @@ export class Compendium implements ICompendium {
     const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
 
     const knownDemonCodes: { [code: number]: string } = {};
+    const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
+
+    for (const [lvl, prefix]  of Object.entries({ 1125: 'Weak', 50: 'Resist', 0: 'Null' })) {
+      for (const ail of Ailments) {
+        ailmentResists[lvl].push({
+          name:     prefix + ' ' + ail,
+          code:     -1,
+          element:  'pas',
+          effect:   'Innate resistance',
+          power:    0,
+          accuracy: 0,
+          cost:     0,
+          inherit:  'non',
+          rank:     99,
+          learnedBy: [],
+          transfer: [],
+          level: 0
+        });
+      }
+    }
 
     if (importRedux) {
       demonDataJsons.push(REDUX_DEMON_DATA_JSON);
@@ -82,6 +102,15 @@ export class Compendium implements ICompendium {
           skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         };
+
+        if (demons[name].ailments) {
+          const ailLvls = demons[name].ailments;
+          for (let i = 0; i < ailLvls.length; i++) {
+            if (ailmentResists[ailLvls[i]]) {
+              ailmentResists[ailLvls[i]][i].learnedBy.push({ demon: name, level: 0 });
+            }
+          }
+        }
 
         knownDemonCodes[json['code']] = name;
       }
@@ -146,6 +175,12 @@ export class Compendium implements ICompendium {
           transfer: [],
           level: 0
         }
+      }
+    }
+
+    for (const sentries of Object.values(ailmentResists)) {
+      for (const sentry of sentries) {
+        skills[sentry.name] = sentry;
       }
     }
 

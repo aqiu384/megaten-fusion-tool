@@ -1,3 +1,4 @@
+import { SkillLevelToShortStringPipe } from 'src/app/compendium/pipes';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 
@@ -29,6 +30,21 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
 
     const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(100);
+    const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
+
+    for (const [lvl, prefix]  of Object.entries({ 1125: 'Weak', 50: 'Resist', 0: 'Null' })) {
+      for (const ail of this.compConfig.ailmentElems) {
+        ailmentResists[lvl].push({
+          name:     prefix + ' ' + ail,
+          element:  'passive',
+          effect:   'Innate resistance',
+          cost:     0,
+          rank:     99,
+          learnedBy: [],
+          level: 0
+        });
+      }
+    }
 
     for (const [name, json] of Object.entries(this.compConfig.demonData)) {
       demons[name] = {
@@ -43,6 +59,15 @@ export class Compendium implements ICompendium {
         ailments:   json['ailments'] ? json['ailments'].split('').map(e => this.compConfig.resistCodes[e]) : blankAils,
         fusion:     json['fusion'] || 'normal',
         prereq:     json['prereq'] || ''
+      }
+
+      if (demons[name].ailments) {
+        const ailLvls = demons[name].ailments;
+        for (let i = 0; i < ailLvls.length; i++) {
+          if (ailmentResists[ailLvls[i]]) {
+            ailmentResists[ailLvls[i]][i].learnedBy.push({ demon: name, level: 0 });
+          }
+        }
       }
     }
 
@@ -62,6 +87,12 @@ export class Compendium implements ICompendium {
 
       if (!skills[name].rank) {
         skills[name].rank = 99;
+      }
+    }
+
+    for (const sentries of Object.values(ailmentResists)) {
+      for (const sentry of sentries) {
+        skills[sentry.name] = sentry;
       }
     }
 

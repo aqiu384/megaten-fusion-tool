@@ -264,8 +264,10 @@ export class PasswordGeneratorComponent implements OnChanges {
           this.skills[skill.element] = [];
         }
 
-        this.skills[skill.element].push(skill);
-        this.scodes[skill.code] = skill;
+        if (skill.code > 0) {
+          this.skills[skill.element].push(skill);
+          this.scodes[skill.code] = skill;
+        }
       }
 
       for (const demonList of Object.values(this.demons)) {
