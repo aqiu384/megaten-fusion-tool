@@ -6,7 +6,7 @@ export function toFusionEntry(name: string, compendium: Compendium): FusionEntry
   return {
     price: demon.price,
     race1: demon.race,
-    lvl1: demon.lvl,
+    lvl1: demon.currLvl,
     name1: name
   };
 }
@@ -18,10 +18,10 @@ export function toFusionPair(names: NamePair, compendium: Compendium): FusionPai
   return {
     price: demon1.price + demon2.price,
     race1: demon1.race,
-    lvl1: demon1.lvl,
+    lvl1: demon1.currLvl,
     name1: names.name1,
     race2: demon2.race,
-    lvl2: demon2.lvl,
+    lvl2: demon2.currLvl,
     name2: names.name2
   };
 }
@@ -33,7 +33,7 @@ export function toFusionPairResult(names: NamePair, compendium: Compendium): Fus
   return {
     price: demon1.price,
     race1: demon1.race,
-    lvl1: demon1.lvl,
+    lvl1: demon1.currLvl,
     name1: names.name1,
     race2: demon2.race,
     lvl2: demon2.lvl,

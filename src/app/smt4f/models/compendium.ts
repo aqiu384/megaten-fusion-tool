@@ -51,6 +51,7 @@ export class Compendium implements ICompendium {
         name,
         race:       json['race'],
         lvl:        json['lvl'],
+        currLvl:    json['lvl'],
         skills:     json['skills'],
         price:      json['price'] * 2,
         stats:      json['stats'],

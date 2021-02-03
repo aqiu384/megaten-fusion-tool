@@ -36,6 +36,7 @@ export class Compendium implements ICompendium {
           name,
           race:    json['race'],
           lvl:     json['lvl'],
+          currLvl: json['lvl'],
           price:   Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
           inherit: json['inherits'],
           stats:   json['stats'],

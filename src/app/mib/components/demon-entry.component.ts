@@ -52,7 +52,7 @@ import { FusionDataService } from '../fusion-data.service';
       <table>
         <thead>
           <tr>
-            <th [attr.colSpan]="statHeaders.length">Stat Growths</th>
+            <th [attr.colSpan]="statHeaders.length" class="title">Stat Growths</th>
           </tr>
           <tr>
             <th *ngFor="let stat of statHeaders">{{ stat }}</th>
@@ -68,7 +68,7 @@ import { FusionDataService } from '../fusion-data.service';
       <table>
         <thead>
           <tr>
-            <th [attr.colSpan]="affinityHeaders.length">
+            <th [attr.colSpan]="affinityHeaders.length" class="title">
               Party Affinities
             </th>
           </tr>

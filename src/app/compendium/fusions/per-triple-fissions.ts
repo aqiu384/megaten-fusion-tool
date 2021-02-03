@@ -81,6 +81,7 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, chart: Square
   for (const [raceT1, raceT2s] of Object.entries(fissionT1N1N2s)) {
     for (const lvlT1 of comp.getIngredientDemonLvls(raceT1)) {
       const name1 = comp.reverseLookupDemon(raceT1, lvlT1);
+      const clvlT1 = comp.getDemon(name1).currLvl;
 
       if (name1 !== nameR) {
         const minLvlT2 = minLvlR - lvlT1;
@@ -89,11 +90,12 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, chart: Square
         for (const [raceN1, raceN2s] of Object.entries(raceT2s)) {
           for (const lvlN1 of comp.getIngredientDemonLvls(raceN1)) {
             const name2 = comp.reverseLookupDemon(raceN1, lvlN1);
+            const clvlN1 = comp.getDemon(name2).currLvl;
 
             if (
               name2 !== name1 &&
               name2 !== nameR &&
-              (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && raceOrder[raceT1] < raceOrder[raceN1]))
+              (clvlT1 > clvlN1 || (clvlT1 === clvlN1 && raceOrder[raceT1] < raceOrder[raceN1]))
             ) {
               const minLvlN2 = minLvlT2 - lvlN1;
               const maxLvlN2 = maxLvlT2 - lvlN1;
@@ -101,13 +103,14 @@ export function splitWithDiffRace(nameR: string, comp: Compendium, chart: Square
               for (const raceN2 of raceN2s) {
                 for (const lvlN2 of comp.getIngredientDemonLvls(raceN2)) {
                   const name3 = comp.reverseLookupDemon(raceN2, lvlN2);
+                  const clvlN2 = comp.getDemon(name3).currLvl;
 
                   if (
                     name3 !== name2 &&
                     name3 !== name1 &&
                     name3 !== nameR &&
                     (raceN1 !== raceN2 || lvlN1 < lvlN2) &&
-                    (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
+                    (clvlT1 > clvlN2 || (clvlT1 === clvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
                   ) {
                     if (minLvlN2 < lvlN2 && lvlN2 <= maxLvlN2) {
                       recipes.push({ name1, name2, name3 });

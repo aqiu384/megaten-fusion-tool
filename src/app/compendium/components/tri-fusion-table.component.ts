@@ -13,7 +13,7 @@ import { CurrentDemonService } from '../../compendium/current-demon.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-fusion-trio-table
-      [title]="'Result = ' + currentDemon +  ' x Ingredient 2 x Ingredient 3'"
+      [title]="'Result = Lvl ' + compendium.getDemon(currentDemon).currLvl + ' ' + currentDemon +  ' x Ingredient 2 x Ingredient 3'"
       [raceOrder]="chart.raceOrder"
       [leftHeader]="'Result'"
       [rowData]="fusionTrios">

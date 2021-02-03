@@ -46,6 +46,7 @@ export class Compendium implements ICompendium {
         name,
         race:    json.race,
         lvl:     json.grade,
+        currLvl: json.grade,
         ai:      json.ai,
         fusion:  'normal',
         price:   Math.pow(json.grade, 3),

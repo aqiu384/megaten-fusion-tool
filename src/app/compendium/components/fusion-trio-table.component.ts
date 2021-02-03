@@ -25,7 +25,7 @@ import { FusionTrio } from '../models';
       </th>
       <td>{{ trio.minPrice }}</td>
       <td>{{ trio.demon.race }}</td>
-      <td>{{ trio.demon.lvl }}</td>
+      <td>{{ trio.demon.currLvl }}</td>
       <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
       <td colspan="6" [style.color]="'#666'">{{ trio.fusions.length }} recipes hidden</td>
     </tr>
@@ -41,12 +41,12 @@ import { FusionTrio } from '../models';
       <tr *ngFor="let recipe of trio.fusions">
         <td>{{ recipe.price }}</td>
         <td>{{ trio.demon.race }}</td>
-        <td>{{ trio.demon.lvl }}</td>
+        <td>{{ trio.demon.currLvl }}</td>
         <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
         <ng-container *ngFor="let demon of [ recipe.d1, recipe.d2, recipe.d3 ]">
           <ng-container *ngIf="trio.demon !== demon">
             <td>{{ demon.race }}</td>
-            <td>{{ demon.lvl }}</td>
+            <td>{{ demon.currLvl }}</td>
             <td><a routerLink="{{ baseUrl }}/{{ demon.name }}">{{ demon.name }}</a></td>
           </ng-container>
         </ng-container>
@@ -178,8 +178,8 @@ export class FusionTrioTableComponent extends SortedTableComponent<FusionTrio> i
       this.sortFuns.push(
         (a, b) => a.minPrice - b.minPrice,
         (a, b) => a.minPrice - b.minPrice,
-        (a, b) => (this.raceOrder[a.demon.race] - this.raceOrder[b.demon.race]) * 200 + a.demon.lvl - b.demon.lvl,
-        (a, b) => a.demon.lvl - b.demon.lvl,
+        (a, b) => (this.raceOrder[a.demon.race] - this.raceOrder[b.demon.race]) * 200 + a.demon.currLvl - b.demon.currLvl,
+        (a, b) => a.demon.currLvl - b.demon.currLvl,
         (a, b) => a.demon.name.localeCompare(b.demon.name)
       );
 

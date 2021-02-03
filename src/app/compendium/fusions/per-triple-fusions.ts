@@ -19,7 +19,7 @@ function findBin(n: number, bins: number[]): number {
 
 export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
-  const { race: raceT1, lvl: lvlT1 } = comp.getDemon(nameT1);
+  const { race: raceT1, lvl: lvlT1, currLvl: clvlT1 } = comp.getDemon(nameT1);
   const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
 
@@ -49,10 +49,11 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: Squa
   for (const [raceN1, raceN2s] of Object.entries(fusionN1N2Rs)) {
     for (const lvlN1 of comp.getIngredientDemonLvls(raceN1)) {
       const name1 = comp.reverseLookupDemon(raceN1, lvlN1);
+      const clvlN1 = comp.getDemon(name1).currLvl;
 
       if (
         name1 !== nameT1 &&
-        (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && raceOrder[raceT1] < raceOrder[raceN1]))
+        (clvlT1 > clvlN1 || (clvlT1 === clvlN1 && raceOrder[raceT1] < raceOrder[raceN1]))
       ) {
         for (const [raceN2, raceR] of Object.entries(raceN2s)) {
           const lvlRs = comp.getResultDemonLvls(raceR);
@@ -60,12 +61,13 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: Squa
 
           for (const lvlN2 of comp.getIngredientDemonLvls(raceN2)) {
             const name2 = comp.reverseLookupDemon(raceN2, lvlN2);
+            const clvlN2 = comp.getDemon(name2).currLvl;
 
             if (
               name2 !== name1 &&
               name2 !== nameT1 &&
               (raceN1 !== raceN2 || lvlN1 < lvlN2) &&
-              (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
+              (clvlT1 > clvlN2 || (clvlT1 === clvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
             ) {
               if (comp.isElementDemon(raceR)) {
                 recipes.push({ name1, name2, name3: raceR });
@@ -94,7 +96,7 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: Squa
 
 export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
   const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
-  const { race: raceN1, lvl: lvlN1 } = comp.getDemon(nameN1);
+  const { race: raceN1, lvl: lvlN1, currLvl: clvlN1 } = comp.getDemon(nameN1);
   const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
 
@@ -110,6 +112,7 @@ export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: Squa
   for (const [raceN2, raceT1s] of Object.entries(fusionN2T1Rs)) {
     for (const lvlN2 of comp.getIngredientDemonLvls(raceN2)) {
       const name1 = comp.reverseLookupDemon(raceN2, lvlN2);
+      const clvlN2 = comp.getDemon(name1).currLvl;
 
       if (name1 !== nameN1) {
         for (const [raceT1, raceR] of Object.entries(raceT1s)) {
@@ -118,12 +121,13 @@ export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: Squa
 
           for (const lvlT1 of comp.getIngredientDemonLvls(raceT1)) {
             const name2 = comp.reverseLookupDemon(raceT1, lvlT1);
+            const clvlT1 = comp.getDemon(name2).currLvl;
 
             if (
               name2 !== name1 &&
               name2 !== nameN1 &&
-              (lvlT1 > lvlN1 || (lvlT1 === lvlN1 && raceOrder[raceT1] < raceOrder[raceN1])) &&
-              (lvlT1 > lvlN2 || (lvlT1 === lvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
+              (clvlT1 > clvlN1 || (clvlT1 === clvlN1 && raceOrder[raceT1] < raceOrder[raceN1])) &&
+              (clvlT1 > clvlN2 || (clvlT1 === clvlN2 && raceOrder[raceT1] < raceOrder[raceN2]))
             ) {
               if (comp.isElementDemon(raceR)) {
                 recipes.push({ name1, name2, name3: raceR });

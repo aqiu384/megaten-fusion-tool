@@ -12,6 +12,7 @@ import { CompendiumConfig } from '../models';
   template: `
     <app-smt-demon-list
       [isEnemy]="showEnemies"
+      [hasCurrLvl]="!showEnemies"
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
@@ -54,6 +55,5 @@ export class DemonListContainerComponent extends DLCC {
       this.resistHeaders = this.compConfig.enemyResists;
       this.inheritOrder = null;
     }
-
   }
 }

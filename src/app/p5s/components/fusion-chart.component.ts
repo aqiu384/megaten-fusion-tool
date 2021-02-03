@@ -19,10 +19,7 @@ import { CompendiumConfig } from '../models';
         </tr>
       </tbody>
     </table>
-  `,
-  styles: [`
-    th.title { height: 2em; }
-  `]
+  `
 })
 export class P5SFusionChartComponent implements OnChanges {
   @Input() compConfig: CompendiumConfig;

@@ -27,12 +27,28 @@ table {
 }
 
 tbody tr:nth-child(even) td {
-  background-color: #222;
+  background-color: #222222;
 }
 
 th, td {
   border: solid 1px #333333;
   border-radius: 3.5px;
+}
+
+input[type=number] {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 3.5px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 td {

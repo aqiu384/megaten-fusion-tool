@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
 import { DemonListComponent } from '../bases/demon-list.component';
@@ -8,7 +8,10 @@ import { DemonListComponent } from '../bases/demon-list.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
-    <td>{{ data.lvl | lvlToNumber }}</td>
+    <td *ngIf="!hasCurrLvl">{{ data.lvl | lvlToNumber }}</td>
+    <td *ngIf="hasCurrLvl" style="text-align: center;">
+      <input type="number" min="1" max="99" size="1" [value]="data.currLvl" (change)="emitValidLvl($event.target.value)">
+    </td>
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
     <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
@@ -26,9 +29,20 @@ import { DemonListComponent } from '../bases/demon-list.component';
 })
 export class SmtDemonListRowComponent {
   @Input() isEnemy = false;
+  @Input() hasCurrLvl = false;
   @Input() hasInherits = false;
   @Input() hasAffinity = false;
   @Input() data: Demon;
+  @Output() currLvl = new EventEmitter<number>();
+
+  emitValidLvl(lvlStr: string) {
+    const lvl = parseInt(lvlStr, 10);
+
+    if (lvl !== this.data.lvl && 0 < lvl && lvl < 100 && Number.isInteger(lvl)) {
+      this.data.currLvl = lvl;
+      this.currLvl.emit(lvl);
+    }
+  }
 }
 
 @Component({
@@ -64,13 +78,15 @@ export class SmtDemonListRowComponent {
         <tr *ngFor="let data of rowData"
           class="app-smt-demon-list-row"
           [isEnemy]="isEnemy"
+          [hasCurrLvl]="hasCurrLvl"
           [hasInherits]="inheritOrder"
           [hasAffinity]="affinityHeaders"
           [ngClass]="{
             special: data.fusion === 'special',
             exception: data.fusion !== 'special' && data.fusion !== 'normal'
           }"
-          [data]="data">
+          [data]="data"
+          (currLvl)="lvlChanged.emit({ demon: data.name, currLvl: $event })">
         </tr>
       </tbody>
     </table>
@@ -79,4 +95,6 @@ export class SmtDemonListRowComponent {
 export class SmtDemonListComponent extends DemonListComponent<Demon> {
   @Input() isPersona = false;
   @Input() isEnemy = false;
+  @Input() hasCurrLvl = false;
+  @Output() lvlChanged = new EventEmitter<{ demon: string, currLvl: number }>();
 }

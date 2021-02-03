@@ -43,6 +43,7 @@ export class Compendium implements ICompendium {
         name,
         race:    json['race'],
         lvl:     json['lvl'],
+        currLvl: json['lvl'],
         fusion:  'normal',
         inherit: json['inherit'] || 'special',
         drop:    json['drop'] || '-',

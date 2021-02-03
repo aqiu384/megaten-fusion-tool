@@ -79,7 +79,7 @@ import { FusionDataService } from '../fusion-data.service';
       </table>
       <ng-container *ngIf="compendium.splitSpecialFusion(name) as rows">
         <table *ngIf="rows.length">
-          <tr><th colspan=4>Special Fusion Ingredients for {{ name }}</th></tr>
+          <tr><th colspan=4 class="title">Special Fusion Ingredients for {{ name }}</th></tr>
           <tr><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
           <tr *ngFor="let row of rows">
             <td>{{ row.price }}</td>

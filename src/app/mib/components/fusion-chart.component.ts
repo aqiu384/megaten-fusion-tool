@@ -38,13 +38,12 @@ import { Arcanas } from '../constants';
   `,
   styles: [`
     table { width: auto; margin: 0 auto; }
-    th.title { height: 2em; }
     td.ra-2 { color: orange; }
     td.ra-1 { color: red; }
     td.ran1 { color: lime; }
     td.ran2 { color: cyan; }
     td.None, td.emp { color: transparent; }
-    td.Empt { background-color: black; color: transparent; }
+    td.Empt { background-color: transparent; color: transparent; }
   `]
 })
 export class MibFusionChartComponent implements OnChanges {

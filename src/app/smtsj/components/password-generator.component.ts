@@ -171,7 +171,7 @@ export class PasswordGeneratorComponent implements OnChanges {
   price = 0;
 
   unknownDemon: Demon = {
-    code: 0, pcoeff: 0, hpmod: 0, price: 0, lvl: 0,
+    code: 0, pcoeff: 0, hpmod: 0, price: 0, lvl: 0, currLvl: 0,
     name: '???', align: '', race: '-', fusion: '-',
     inherits: [], skills: {}, source: {}, stats: [], resists: []
   };

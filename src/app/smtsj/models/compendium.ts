@@ -88,6 +88,7 @@ export class Compendium implements ICompendium {
         demons[name] = {
           name,
           lvl:      json['lvl'],
+          currLvl:  json['lvl'],
           hpmod:    json['hpmod'] || 1,
           pcoeff:   json['pcoeff'],
           race:     json['race'],
@@ -120,6 +121,7 @@ export class Compendium implements ICompendium {
     const defaultDemon: Demon = {
       name,
       lvl:      1,
+      currLvl:  1,
       hpmod:    1,
       pcoeff:   96,
       race:     'Unknown',
