@@ -35,6 +35,22 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
+      <table *ngIf="demon.prereq">
+        <tr><th class="title">Special Fusion Condition</th></tr>
+        <tr><td>{{ demon.prereq }}</td></tr>
+      </table>
+      <ng-container *ngIf="compendium.splitSpecialFusion(name) as rows">
+        <table *ngIf="rows.length">
+          <tr><th colspan=4 class="title">Special Fusion Ingredients for {{ name }}</th></tr>
+          <tr><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
+          <tr *ngFor="let row of rows">
+            <td>{{ row.price }}</td>
+            <td>{{ row.race1 }}</td>
+            <td>{{ row.lvl1 }}</td>
+            <td><a routerLink="../../{{ row.name1 }}">{{ row.name1 }}</a></td>
+          </tr>
+        </table>
+      </ng-container>
       <app-smt-fusions>
       </app-smt-fusions>
     </ng-container>

@@ -7,22 +7,6 @@ import { MultiFusionTrio } from '../models';
   selector: 'app-p5s-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table *ngIf="compendium.getDemon(currentDemon).prereq as prereq">
-      <tr><th class="title">Special Fusion Condition</th></tr>
-      <tr><td>{{ prereq }}</td></tr>
-    </table>
-    <ng-container *ngIf="compendium.splitSpecialFusion(currentDemon) as rows">
-      <table *ngIf="rows.length">
-        <tr><th colspan=4 class="title">Special Fusion Ingredients for {{ currentDemon }}</th></tr>
-        <tr><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
-        <tr *ngFor="let row of rows">
-          <td>{{ row.price }}</td>
-          <td>{{ row.race1 }}</td>
-          <td>{{ row.lvl1 }}</td>
-          <td><a routerLink="../../{{ row.name1 }}">{{ row.name1 }}</a></td>
-        </tr>
-      </table>
-    </ng-container>
     <table>
       <tr><th colspan=7 class="title">Normal Reverse Fusions</th></tr>
       <tr><th colspan=7>Ingredient 1 x Ingredient 2 x Ingredient 3 = {{ currentDemon }}</th></tr>
