@@ -1,25 +1,21 @@
 import { Injectable, Inject } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 
-import { PersonaFusionChart } from '../compendium/models/per-fusion-chart';
-import { FusionDataService as IFusionDataService } from '../compendium/models';
-import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
-import { COMPENDIUM_CONFIG } from '../compendium/constants';
-
-import { CompendiumConfig } from './models';
 import { Compendium } from './models/compendium';
+import { PersonaFusionChart } from '../compendium/models/per-fusion-chart';
+import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
+import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
+import { FusionTrioService as IFusionTrioService } from '../compendium/models';
+import { splitWithSameRace, fuseWithSameRace, splitWithDiffRace, fuseWithDiffRace } from '../compendium/fusions/p5s-nonelem-fusions';
+import { COMPENDIUM_CONFIG } from '../compendium/constants';
+import { CompendiumConfig } from './models';
 
 @Injectable()
-export class FusionDataService implements IFusionDataService {
-  fissionCalculator = new NormalFusionCalculator(
-    [ ],
-    [ ]
-  );
-
-  fusionCalculator = new NormalFusionCalculator(
-    [ ],
-    [ ]
-  );
+export class FusionDataService implements IFusionTrioService {
+  fissionCalculator = new NormalFusionCalculator([splitWithSameRace], [ ]);
+  fusionCalculator = new NormalFusionCalculator([fuseWithSameRace], [ ]);
+  triFissionCalculator = new TripleFusionCalculator([splitWithDiffRace], [ ]);
+  triFusionCalculator = new TripleFusionCalculator([fuseWithDiffRace], [ ]);
 
   compConfig: CompendiumConfig;
   appName: string;
@@ -32,6 +28,10 @@ export class FusionDataService implements IFusionDataService {
   private _fusionChart$: BehaviorSubject<PersonaFusionChart>;
   fusionChart: Observable<PersonaFusionChart>;
 
+  private _tripleChart: PersonaFusionChart;
+  private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
+  squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
+
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.appName = compConfig.appTitle + ' Fusion Calculator';
     this.compConfig = compConfig;
@@ -43,6 +43,14 @@ export class FusionDataService implements IFusionDataService {
     this._fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races);
     this._fusionChart$ = new BehaviorSubject(this._fusionChart);
     this.fusionChart = this._fusionChart$.asObservable();
+
+    this._tripleChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races, true);
+    this._squareChart$ = new BehaviorSubject({
+      normalChart: this._fusionChart,
+      tripleChart: this._tripleChart,
+      raceOrder: compConfig.raceOrder
+    });
+    this.squareChart = this._squareChart$.asObservable();
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }

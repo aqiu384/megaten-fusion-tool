@@ -251,7 +251,7 @@ export class Compendium implements ICompendium {
     return this.invertedDemons[race][lvl];
   }
 
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
+  reverseLookupSpecial(ingredient: string): string[] {
     return [];
   }
 

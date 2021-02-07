@@ -9,6 +9,7 @@ export interface Skill extends BaseSkill {
 }
 
 export interface MultiFusionTrio {
+  lvl0: number;
   price: number;
   names1: string[];
   lvl1: number;

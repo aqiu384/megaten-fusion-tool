@@ -7,8 +7,8 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 
-import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
-import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
+import { P5SFissionTableComponent } from './components/p5s-fission-table.component';
+import { P5SFusionTableComponent } from './components/p5s-fusion-table.component';
 
 
 const compendiumRoutes: Routes = [
@@ -19,7 +19,22 @@ const compendiumRoutes: Routes = [
     children: [
       {
         path: 'personas/:demonName',
-        component: DemonEntryContainerComponent
+        component: DemonEntryContainerComponent,
+        children: [
+          {
+            path: 'fissions',
+            component: P5SFissionTableComponent
+          },
+          {
+            path: 'fusions',
+            component: P5SFusionTableComponent
+          },
+          {
+            path: '**',
+            redirectTo: 'fissions',
+            pathMatch: 'full'
+          }
+        ]
       },
       {
         path: 'personas',

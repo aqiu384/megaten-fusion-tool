@@ -15,7 +15,6 @@ export class Compendium implements ICompendium {
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-  private invertedSpecials: { [name: string]: { result: string, recipe: string }[] };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -34,7 +33,6 @@ export class Compendium implements ICompendium {
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
     const archCodes = [3367, 3365, 3380, 3389, 3369];
     const gachCodes = [3965, 3980, 3989, 3969];
@@ -56,33 +54,33 @@ export class Compendium implements ICompendium {
         baseSkills: [].concat(
           json.base.map((skill) => ({ skill, source: 0 })),
           json.arch.map((skill, i) => ({ skill, source: archCodes[i] })),
-          (json.gach || []).map((skill, i) => ({ skill, source: gachCodes[i] }))
+          (json['gach'] || []).map((skill, i) => ({ skill, source: gachCodes[i] }))
         )
       };
     }
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
-      let effect = json.effect;
+      let effect = json['effect'];
 
-      if (json.power) {
-        effect = json.power ? json.power.toString() + (json.elem === 'rec' ? ' rec' : ' dmg') : '';
-        effect += json.target ? ' to ' + json.target.toLowerCase() : '';
-        effect += json.effect ? ', ' + json.effect : '';
+      if (json['power']) {
+        effect = json['power'] ? json['power'].toString() + (json.elem === 'rec' ? ' rec' : ' dmg') : '';
+        effect += json['target'] ? ' to ' + json['target'].toLowerCase() : '';
+        effect += json['effect'] ? ', ' + json['effect'] : '';
       } if (json.elem === 'ail') {
-        effect = json.effect + ' to ' + (json.target || '').toLowerCase();
+        effect = json['effect'] + ' to ' + (json['target'] || '').toLowerCase();
       } else if (json.elem === 'rec' || json.elem === 'sup') {
-        effect = (json.effect + ',').replace(',', ' for ' + (json.target || 'User').toLowerCase() + ',');
+        effect = (json['effect'] + ',').replace(',', ' for ' + (json['target'] || 'User').toLowerCase() + ',');
         effect = effect.substring(0, effect.length - 1);
       }
 
       skills[name] = {
         name,
         element: json.elem,
-        power:   json.power || 0,
-        cost:    json.cost + 1000 || 0,
-        rank:    json.points || 99,
+        power:   json['power'] || 0,
+        cost:    json['cost'] + 1000 || 0,
+        rank:    json['points'] || 99,
         effect,
-        target:  json.target,
+        target:  json['target'],
         level:   0,
         upgrade: '',
         learnedBy: [],
@@ -127,7 +125,6 @@ export class Compendium implements ICompendium {
     this.skills = skills;
     this.specialRecipes = specialRecipes;
     this.invertedDemons = inversions;
-    this.invertedSpecials = invSpecs;
   }
 
   updateDerivedData() {
@@ -215,8 +212,8 @@ export class Compendium implements ICompendium {
     return this.invertedDemons[race][lvl];
   }
 
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
-    return this.invertedSpecials[ingredient] ? this.invertedSpecials[ingredient] : [];
+  reverseLookupSpecial(ingredient: string): string[] {
+    return [];
   }
 
   isElementDemon(name: string) {

@@ -58,7 +58,7 @@ export interface Compendium {
   getSpecialNameEntries(name: string): string[];
   getSpecialNamePairs(name: string): NamePair[];
 
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[];
+  reverseLookupSpecial(ingredient: string): string[];
   reverseLookupDemon(race: string, lvl: number): string;
   isElementDemon(name: string): boolean;
 }

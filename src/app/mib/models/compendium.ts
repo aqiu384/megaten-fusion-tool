@@ -18,7 +18,6 @@ export class Compendium implements ICompendium {
   private specialRecipes: { [name: string]: string[] };
   private growthTypes: { [type: string]: number[][] };
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-  private invertedSpecials: { [name: string]: { result: string, recipe: string }[] };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -60,7 +59,6 @@ export class Compendium implements ICompendium {
     const specialRecipes: { [name: string]: string[] } = {};
     const growthTypes: { [type: string]: number[][] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
     const learnRanks = [0, 3, 4, 5, 7, 8];
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
@@ -144,10 +142,10 @@ export class Compendium implements ICompendium {
       skills[name] = {
         name,
         element: json.element,
-        power:   json.power || 0,
+        power:   json['power'] || 0,
         range:   json['range'],
         cost:    0,
-        rank:    json.power / 10 || 0,
+        rank:    json['power'] / 10 || 0,
         effect:  json.effect,
         target:  json.target,
         level:   0,
@@ -157,14 +155,14 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      if (json.totem) {
+      if (json['totem']) {
         demons[name].fusion = 'special';
 
-        if (json.ingredients) {
-          demons[name].prereq = `Perform fusion that uses the following ingredients with ${json.totem} totem`;
-          specialRecipes[name] = json.ingredients;
+        if (json['ingredients']) {
+          demons[name].prereq = `Perform fusion that uses the following ingredients with ${json['totem']} totem`;
+          specialRecipes[name] = json['ingredients'];
         } else {
-          demons[name].prereq = `Perform fusion that creates one of the following results with ${json.totem} totem`;
+          demons[name].prereq = `Perform fusion that creates one of the following results with ${json['totem']} totem`;
           specialRecipes[name] = [name, name, name];
         }
 
@@ -207,7 +205,6 @@ export class Compendium implements ICompendium {
     this.specialRecipes = specialRecipes;
     this.growthTypes = growthTypes;
     this.invertedDemons = inversions;
-    this.invertedSpecials = invSpecs;
   }
 
   updateDerivedData() {
@@ -310,8 +307,8 @@ export class Compendium implements ICompendium {
     return this.invertedDemons[race][lvl];
   }
 
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
-    return this.invertedSpecials[ingredient] ? this.invertedSpecials[ingredient] : [];
+  reverseLookupSpecial(ingredient: string): string[] {
+    return [];
   }
 
   isElementDemon(name: string) {

@@ -44,12 +44,5 @@ export function fuseWithSpecResult(name: string, compendium: Compendium, fusionC
 }
 
 export function fuseTwoElements(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
-  const recipes: NamePair[] = [];
-
-  for (const { result, recipe } of compendium.reverseLookupSpecial(name)) {
-    const ingName2 = recipe.split(' x ').filter(ing => ing !== name)[0];
-    recipes.push({ name1: ingName2, name2: result });
-  }
-
-  return recipes;
+  return [];
 }

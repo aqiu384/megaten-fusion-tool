@@ -37,9 +37,9 @@ th, td {
 
 input[type=number] {
   color: white;
-  background-color: black;
-  border: 1px solid black;
+  background-color: #111111;
   border-radius: 3.5px;
+  border: 0;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -56,7 +56,7 @@ td {
 }
 
 th {
-  background-color: black;
+  background-color: #1b1b1b;
 }
 
 th.title, th.nav.active, th.nav.active a {
@@ -98,7 +98,7 @@ ul.comma-list li {
 th.nav {
   height: 2em;
   cursor: pointer;
-  background-color: black;
+  background-color: #1b1b1b;
 }
 
 th.nav div {

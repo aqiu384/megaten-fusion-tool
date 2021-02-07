@@ -17,6 +17,8 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { P5SFusionChartComponent, FusionChartContainerComponent } from './components/fusion-chart.component';
+import { P5SFissionTableComponent } from './components/p5s-fission-table.component';
+import { P5SFusionTableComponent } from './components/p5s-fusion-table.component';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -96,6 +98,8 @@ export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
+    P5SFissionTableComponent,
+    P5SFusionTableComponent,
     P5SFusionChartComponent,
     FusionChartContainerComponent
   ],

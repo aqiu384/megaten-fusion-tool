@@ -1,21 +1,85 @@
-import { Compendium, FusionChart, NamePair } from '../models';
+import { Compendium, FusionChart, SquareChart, NamePair, NameTrio } from '../models';
 
-export function splitNormal(nameR: string, comp: Compendium, chart: FusionChart): NamePair[] {
+export function splitWithSameRace(nameR: string, comp: Compendium, fusionChart: FusionChart): NamePair[] {
+  const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
   const recipes: NamePair[] = [];
 
-  for (const recipe of comp.getSpecialNamePairs(nameR)) {
-    recipes.push(recipe);
+  const ingredLvls = comp.getIngredientDemonLvls(raceR);
+  const nextInd = ingredLvls.indexOf(lvlR);
+  const nextLvl = -1 < nextInd && nextInd < ingredLvls.length - 1 ? ingredLvls[nextInd + 1] : 0;
+  const upperLvls = ingredLvls.filter(l => nextLvl < l);
+
+  if (nextLvl) {
+    for (const upLvl of upperLvls) {
+      recipes.push({
+        name1: comp.reverseLookupDemon(raceR, nextLvl),
+        name2: comp.reverseLookupDemon(raceR, upLvl)
+      })
+    }
+  }
+
+  for (const { name1, name2 } of comp.getSpecialNamePairs(nameR)) {
+    if (name2 === 'Valjean' && nextLvl) {
+      recipes.push({ name1: comp.reverseLookupDemon(raceR, nextLvl), name2: name1 });
+    }
   }
 
   return recipes;
 }
 
-export function fuseNormal(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
+export function fuseWithSameRace(name1: string, comp: Compendium, fusionChart: FusionChart): NamePair[] {
+  const { race: race1, lvl: lvl1 } = comp.getDemon(name1);
   const recipes: NamePair[] = [];
 
-  for (const { result, recipe } of compendium.reverseLookupSpecial(name)) {
-    const ingName2 = recipe.split(' x ').filter(ing => ing !== name)[0];
-    recipes.push({ name1: ingName2, name2: result });
+  const resultLvls = comp.getIngredientDemonLvls(race1);
+  const lowerLvls = resultLvls.filter(l => l < lvl1);
+  const prevLvl = lowerLvls.length ? lowerLvls[lowerLvls.length - 1] : 0;
+  const nameR = prevLvl ? comp.reverseLookupDemon(race1, prevLvl) : '';
+
+  if (nameR) {
+    for (const rec of splitWithSameRace(nameR, comp, fusionChart)) {
+      if (rec.name1 === name1) {
+        recipes.push({ name1: rec.name2, name2: nameR });
+      } else {
+        recipes.push({ name1: rec.name1, name2: nameR });
+      }
+    }
+  }
+
+  return recipes;
+}
+
+export function splitWithDiffRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const recipes: NameTrio[] = [];
+
+  const nameEntries = comp.getSpecialNameEntries(nameR);
+  const namePairs = comp.getSpecialNamePairs(nameR);
+  const tripleLen = Math.min(nameEntries.length, namePairs.length);
+
+  for (let i = 0; i < tripleLen; i++) {
+    const { name1, name2 } = namePairs[i];
+
+    if (name2 !== 'Valjean') {
+      recipes.push({ name1, name2, name3: nameEntries[i] });
+    }
+  }
+
+  return recipes;
+}
+
+export function fuseWithDiffRace(name1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
+  const recipes: NameTrio[] = [];
+
+  for (const nameR of comp.reverseLookupSpecial(name1)) {
+    for (const rec of splitWithDiffRace(nameR, comp, chart)) {
+      if (rec.name1 === name1) {
+        recipes.push({ name1: nameR, name2: rec.name2, name3: rec.name3 });
+      } else if (rec.name2 === name1) {
+        recipes.push({ name1: nameR, name2: rec.name1, name3: rec.name3 });
+      } else if (rec.name3 === name1) {
+        recipes.push({ name1: nameR, name2: rec.name1, name3: rec.name2 });
+      }
+    }
   }
 
   return recipes;

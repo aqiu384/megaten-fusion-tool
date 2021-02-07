@@ -36,10 +36,16 @@ export function fuseWithDiffRace(name: string, compendium: Compendium, fusionCha
     }
   }
 
-  for (const { result: specResult, recipe: specRecipe } of compendium.reverseLookupSpecial(name)) {
-    for (const pair of recipes) {
-      if (pair.name1 === specRecipe) {
-        pair.name2 = specResult;
+  for (const name2 of compendium.reverseLookupSpecial(name)) {
+    const specIngreds = compendium.getSpecialNameEntries(name2);
+
+    if (specIngreds.length === 2) {
+      const name1 = specIngreds[0] === name ? specIngreds[1] : specIngreds[0];
+
+      for (const pair of recipes) {
+        if (pair.name1 === name1) {
+          pair.name2 = name2;
+        }
       }
     }
   }

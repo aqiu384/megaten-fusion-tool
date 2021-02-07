@@ -7,7 +7,7 @@ export class Compendium implements ICompendium {
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-  private invertedSpecials: { [ingred: string]: { result: string, recipe: string }[] };
+  private invertedSpecials: { [ingred: string]: string[] };
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
@@ -28,7 +28,7 @@ export class Compendium implements ICompendium {
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
-    const invertedSpecials: { [ingred: string]: { result: string, recipe: string }[] } = {};
+    const invertedSpecials: { [ingred: string]: string[] } = {};
     this._inheritTypes = {};
 
     for (const demonDataJson of this.compConfig.demonData[this.gameAbbr]) {
@@ -120,10 +120,10 @@ export class Compendium implements ICompendium {
       demons[name].fusion = 'special';
 
       if (ingreds.length === 2) {
-        if (!invertedSpecials[ingreds[0]]) { invertedSpecials[ingreds[0]] = []; }
-        if (!invertedSpecials[ingreds[1]]) { invertedSpecials[ingreds[1]] = []; }
-        invertedSpecials[ingreds[0]].push({ result: name, recipe: ingreds[1] });
-        invertedSpecials[ingreds[1]].push({ result: name, recipe: ingreds[0] });
+        for (const ingred of ingreds) {
+          if (!invertedSpecials[ingred]) { invertedSpecials[ingred] = []; }
+          invertedSpecials[ingred].push(name);
+        }
       }
     }
 
@@ -246,7 +246,7 @@ export class Compendium implements ICompendium {
     return this.invertedDemons[race][lvl];
   }
 
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
+  reverseLookupSpecial(ingredient: string): string[] {
     return this.invertedSpecials[ingredient] || [];
   }
 

@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { FUSION_TRIO_SERVICE } from '../constants';
-import { Compendium, FusionTrioService, TripleCalculator, NameTrio, DemonTrio, FusionTrio, SquareChart } from '../models';
+import { Compendium, FusionTrioService, FusionCalculator, TripleCalculator, NameTrio, DemonTrio, FusionTrio, SquareChart } from '../models';
 import { toDemonTrioResult } from '../models/conversions';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -22,6 +22,7 @@ import { CurrentDemonService } from '../../compendium/current-demon.service';
 })
 export class TripleFusionTableComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
+  pairCalculator: FusionCalculator;
   calculator: TripleCalculator;
   compendium: Compendium;
   chart: SquareChart;
@@ -39,24 +40,25 @@ export class TripleFusionTableComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
+    this.pairCalculator = this.fusionTrioService.fusionCalculator;
     this.calculator = this.fusionTrioService.triFusionCalculator;
 
     this.subscriptions.push(
       this.fusionTrioService.compendium.subscribe(compendium => {
         this.compendium = compendium;
-        this.getFusions();
+        this.checkFusions();
       }));
 
     this.subscriptions.push(
       this.fusionTrioService.squareChart.subscribe(chart => {
         this.chart = chart;
-        this.getFusions();
+        this.checkFusions();
       }));
 
     this.subscriptions.push(
       this.currentDemonService.currentDemon.subscribe(name => {
         this.currentDemon = name;
-        this.getFusions();
+        this.checkFusions();
       }));
   }
 
@@ -66,36 +68,39 @@ export class TripleFusionTableComponent implements OnInit, OnDestroy {
     }
   }
 
-  getFusions() {
+  checkFusions() {
     if (this.compendium && this.chart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
-
-      const names = this.calculator.getFusions(
-        this.currentDemon,
-        this.compendium,
-        this.chart
-      );
-
-      const demons = names.map(this.toDemonTrio);
-      const fusions: { [name: string]: DemonTrio[] } = {};
-
-      for (const trio of demons) {
-        if (!fusions[trio.d3.name]) {
-          fusions[trio.d3.name] = [];
-        }
-
-        fusions[trio.d3.name].push(trio);
-      }
-
-      for (const recipes of Object.values(fusions)) {
-        recipes.sort(this.sortDemonTrio);
-      }
-
-      this.fusionTrios = Object.entries(fusions).map(recipe => ({
-        demon: this.compendium.getDemon(recipe[0]),
-        minPrice: recipe[1][0].price,
-        fusions: recipe[1]
-      }));
+      this.getFusions();
     }
+  }
+
+  getFusions() {
+    const names = this.calculator.getFusions(
+      this.currentDemon,
+      this.compendium,
+      this.chart
+    );
+
+    const demons = names.map(this.toDemonTrio);
+    const fusions: { [name: string]: DemonTrio[] } = {};
+
+    for (const trio of demons) {
+      if (!fusions[trio.d3.name]) {
+        fusions[trio.d3.name] = [];
+      }
+
+      fusions[trio.d3.name].push(trio);
+    }
+
+    for (const recipes of Object.values(fusions)) {
+      recipes.sort(this.sortDemonTrio);
+    }
+
+    this.fusionTrios = Object.entries(fusions).map(recipe => ({
+      demon: this.compendium.getDemon(recipe[0]),
+      minPrice: recipe[1][0].price,
+      fusions: recipe[1]
+    }));
   }
 }

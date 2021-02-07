@@ -7,7 +7,6 @@ export class Compendium implements ICompendium {
   private specialRecipes: { [name: string]: string[] };
   private pairRecipes: { [name: string]: NamePair[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
-  private invertedSpecials: { [name: string]: { result: string, recipe: string }[] };
   private elementDemons: string[];
 
   private allIngredients: { [race: string]: number[] };
@@ -28,7 +27,6 @@ export class Compendium implements ICompendium {
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
     const pairRecipes: { [name: string]: NamePair[] } = {};
-    const invSpecs: { [name: string]: { result: string, recipe: string }[] } = {};
 
     const statLen = compConfig.baseStats.length;
     const resLen = compConfig.resistElems.length;
@@ -104,7 +102,6 @@ export class Compendium implements ICompendium {
     this.elementDemons = compConfig.elementTable.elems;
     this.specialRecipes = specialRecipes;
     this.pairRecipes = pairRecipes;
-    this.invertedSpecials = invSpecs;
   }
 
   updateDerivedData(compConfig: CompendiumConfig) {
@@ -221,8 +218,8 @@ export class Compendium implements ICompendium {
     return this.invertedDemons[race][lvl];
   }
 
-  reverseLookupSpecial(ingredient: string): { result: string, recipe: string }[] {
-    return this.invertedSpecials[ingredient] ? this.invertedSpecials[ingredient] : [];
+  reverseLookupSpecial(ingredient: string): string[] {
+    return [];
   }
 
   isElementDemon(name: string) {

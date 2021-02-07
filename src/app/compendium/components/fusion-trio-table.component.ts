@@ -128,7 +128,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
           [style.visibility]="'collapse'">
         </tfoot>
         <tbody *ngIf="!rowData.length">
-          <tr><td colspan="10">No fusions found!</td></tr>
+          <tr><td colspan="11">No fusions found!</td></tr>
         </tbody>
         <tbody *ngFor="let data of rowData; let i = index"
           class="app-fusion-trio-table-row"
