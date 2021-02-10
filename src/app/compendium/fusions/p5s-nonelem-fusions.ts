@@ -1,6 +1,6 @@
 import { Compendium, FusionChart, SquareChart, NamePair, NameTrio } from '../models';
 
-export function splitWithSameRace(nameR: string, comp: Compendium, fusionChart: FusionChart): NamePair[] {
+export function splitWithSameRace(nameR: string, comp: Compendium, chart: FusionChart): NamePair[] {
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
   const recipes: NamePair[] = [];
 
@@ -27,20 +27,18 @@ export function splitWithSameRace(nameR: string, comp: Compendium, fusionChart: 
   return recipes;
 }
 
-export function fuseWithSameRace(name1: string, comp: Compendium, fusionChart: FusionChart): NamePair[] {
+export function fuseWithSameRace(name1: string, comp: Compendium, chart: FusionChart): NamePair[] {
   const { race: race1, lvl: lvl1 } = comp.getDemon(name1);
   const recipes: NamePair[] = [];
 
-  const resultLvls = comp.getIngredientDemonLvls(race1);
-  const lowerLvls = resultLvls.filter(l => l < lvl1);
-  const prevLvl = lowerLvls.length ? lowerLvls[lowerLvls.length - 1] : 0;
-  const nameR = prevLvl ? comp.reverseLookupDemon(race1, prevLvl) : '';
+  const lowerResults = comp.getIngredientDemonLvls(race1).filter(l => l < lvl1).map(l => comp.reverseLookupDemon(race1, l));
+  const forwardResults = lowerResults.concat(comp.reverseLookupSpecial(name1));
 
-  if (nameR) {
-    for (const rec of splitWithSameRace(nameR, comp, fusionChart)) {
+  for (const nameR of forwardResults) {
+    for (const rec of splitWithSameRace(nameR, comp, chart)) {
       if (rec.name1 === name1) {
         recipes.push({ name1: rec.name2, name2: nameR });
-      } else {
+      } else if (rec.name2 === name1) {
         recipes.push({ name1: rec.name1, name2: nameR });
       }
     }

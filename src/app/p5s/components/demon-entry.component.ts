@@ -47,7 +47,7 @@ import { FusionDataService } from '../fusion-data.service';
             <td>{{ row.price }}</td>
             <td>{{ row.race1 }}</td>
             <td>{{ row.lvl1 }}</td>
-            <td><a routerLink="../../{{ row.name1 }}">{{ row.name1 }}</a></td>
+            <td><a routerLink="../{{ row.name1 }}">{{ row.name1 }}</a></td>
           </tr>
         </table>
       </ng-container>

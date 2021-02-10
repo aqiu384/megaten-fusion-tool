@@ -9,13 +9,13 @@ import { MultiFusionTrio } from '../models';
   template: `
     <table>
       <tr><th colspan=8 class="title">Normal Forward Fusions</th></tr>
-      <tr><th colspan=8>Result = Min Lvl {{ currentDemon }} x Ingredient 1 x Ingredient 2</th></tr>
+      <tr><th colspan=8>Result = Min Lvl {{ currentDemon }} x Ingredient 2 x Ingredient 3</th></tr>
       <tr>
         <th rowspan=2>Price</th>
         <th rowspan=2>Min Lvl</th>
         <th colspan=2>Result</th>
-        <th colspan=2>Ingredient 1</th>
         <th colspan=2>Ingredient 2</th>
+        <th colspan=2>Ingredient 3</th>
       </tr>
       <tr>
         <th>Names</th><th>Lvl</th>
