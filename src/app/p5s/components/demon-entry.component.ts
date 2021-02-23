@@ -1,8 +1,8 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
-import { Demon } from '../../compendium/models';
+import { Demon, Skill } from '../models';
 import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
@@ -26,10 +26,20 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
-      <app-demon-inherits
-        [inheritHeaders]="compConfig.inheritElems"
-        [inherits]="compendium.getInheritElems(demon.inherit)">
-      </app-demon-inherits>
+      <table *ngIf="comboSkills.length">
+        <thead>
+          <tr><th colSpan="4" class="title">Combo Skills</th></tr>
+          <tr><th>Elem</th><th>Name</th><th>Effect</th><th>Input</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of comboSkills">
+            <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
+            <td>{{ data.skill.name }}</td>
+            <td>{{ data.skill.effect }}</td>
+            <td>{{ data.combo }}</td>
+          </tr>
+        </tbody>
+      </table>
       <app-demon-skills
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
@@ -58,11 +68,31 @@ import { FusionDataService } from '../fusion-data.service';
     </app-demon-missing>
   `
 })
-export class DemonEntryComponent {
+export class DemonEntryComponent implements OnChanges {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
+  comboSkills: { skill: Skill, combo: string }[];
+
+  ngOnChanges() {
+    if (!this.demon) {
+      return;
+    }
+
+    const combos = [];
+    const inputs = ['□□△△', '□□□△', '□□□□□△△'];
+
+    for (let i = 0; i < this.demon.combos.length; i++) {
+      const skill = this.compendium.getSkill(this.demon.combos[i]);
+
+      if (skill.element !== 'passive') {
+        combos.push({ skill, combo: inputs[i] });
+      }
+    }
+
+    this.comboSkills = combos;
+  }
 }
 
 @Component({

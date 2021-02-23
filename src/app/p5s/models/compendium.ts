@@ -45,6 +45,7 @@ export class Compendium implements ICompendium {
           inherit: json['inherits'],
           stats:   json['stats'],
           resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
+          combos:  json['combos'],
           skills:  json['skills'],
           fusion:  json['fusion'] || 'normal',
           prereq:  json['prereq'] || ''
@@ -113,7 +114,9 @@ export class Compendium implements ICompendium {
         specialNamePairs[name].push({ name1: ingreds[0], name2: ingreds[1] });
 
         for (const ingred of ingreds) {
-          invertedSpecials[ingred].push(name);
+          if (invertedSpecials[ingred].indexOf(name) === -1) {
+            invertedSpecials[ingred].push(name);
+          }
         }
       }
     }
@@ -140,6 +143,14 @@ export class Compendium implements ICompendium {
 
       for (const [skill, level] of Object.entries(demon.skills)) {
         skills[skill].learnedBy.push({ demon: name, level });
+      }
+
+      for (let i = 0; i < demon.combos.length; i++) {
+        const skill = demon.combos[i];
+
+        if (skills[skill].element !== 'passive') {
+          skills[skill].learnedBy.push({ demon: name, level: 3517 + i })
+        }
       }
     }
 

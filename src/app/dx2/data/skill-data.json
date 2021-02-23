@@ -197,6 +197,13 @@
     "elem": "pas",
     "points": 12
   },
+  "Baptisma": {
+    "cost": 6,
+    "effect": "Nullify endure effects, Nullifies revive effects, Boost",
+    "elem": "lig",
+    "power": 160,
+    "target": "1 Foe"
+  },
   "Barbed Spear": {
     "cost": 6,
     "effect": "3 hits, 0% crit, Force Pierce, Dmg scales with Patk, Nullifies counter effects",
@@ -1286,6 +1293,10 @@
     "power": 40,
     "target": "Rand Foes"
   },
+  "Halo of Hallel": {
+    "effect": "Light Pierce, Lydia + Boost at beginning of turn, Boost 1 Null Curse, Boost 2 Lydia to all allies, Boost 3 Luster Candy for 1 turn",
+    "elem": "pas"
+  },
   "Hama": {
     "cost": 4,
     "elem": "lig",
@@ -1336,6 +1347,13 @@
     "points": 2,
     "power": 85,
     "target": "All Foes"
+  },
+  "Heavenly Sword": {
+    "cost": 6,
+    "effect": "Nullify endure effects, Might + Charge + Boost",
+    "elem": "phy",
+    "power": 120,
+    "target": "1 Foe"
   },
   "Heavenly Valor": {
     "effect": "Phys Pierce, Cast Heat Wave when Foe passes",
@@ -3130,6 +3148,10 @@
     "elem": "alm",
     "power": 160,
     "target": "1 Foe"
+  },
+  "Sword of Hallel": {
+    "effect": "Phys Pierce, Might + Boost at beginning of turn, Boost 1 +20% phys hit, Boost 2 +20% phys dmg, Boost 3 Debilitate for 1 turn",
+    "elem": "pas"
   },
   "Tag": {
     "cost": 3,
