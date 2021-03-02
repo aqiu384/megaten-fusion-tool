@@ -139,6 +139,11 @@
     "Phys ATK +100", "Activates the following Chain Effect after Flames of Gomorrah is activated: Enters a state of Might.",
     "Max HP +250", "+20% to Phys and Fire damage inflicted."
   ],
+  "Berserker Guts": [
+    "Max HP +250", "+15% to Phys hit rate.",
+    "Phys ATK +100", "-20% to damage received.",
+    "Max HP +250", "+15% to Phys damage inflicted, +20% to Critical hit rate."
+  ],
   "Black Frost": [
     "Max HP +250", "+15% damage to attacks that target all or random enemies.",
     "Mag ATK +100", "While this demon is alive, all party members will receive the following effect: -15% to damage received from Cursed enemies.",
@@ -258,6 +263,11 @@
     "Max HP +250", "+15% to Phys hit rate.",
     "Phys DEF +150", "While this demon is alive, all party members will receive the following effect: -15% to Phys damage received.",
     "Max HP +250", "While this demon is alive, all party members will receive the following effect: -30% to Critical hit rate of damage received."
+  ],
+  "Griffith": [
+    "Max HP +250", "+15% to Phys evasion rate.",
+    "Phys ATK +100", "Adds Null Charm and Null Bind.",
+    "Max HP +250", "+25% to single-target attack damage inflicted."
   ],
   "Guan Yu": [
     "Max HP +250", "+15% to Critical hit rate.",
@@ -758,5 +768,10 @@
     "Max HP +250", "+15% to Phys damage inflicted, +15% to Fire damage inflicted.",
     "Phys ATK +80, Mag ATK +80", "+15% to Phys hit rate.",
     "Max HP +250", "Activates the following Chain Effect when landing a critical hit: Puts all party members into a state of Might."
+  ],
+  "Zodd": [
+    "Max HP +250", "+15% to Phys hit rate.",
+    "Phys ATK +100", "Adds Phys Pierce.",
+    "Max HP +250", "+15% to Phys damage inflicted, +20% to max HP."
   ]
 }

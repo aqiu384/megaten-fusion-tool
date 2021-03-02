@@ -239,10 +239,21 @@
     "power": 60,
     "target": "All Foes"
   },
+  "Berserk": {
+    "cost": 6,
+    "effect": "30% crit, Follow up with 160 phys dmg 50% crit, Nullifies counter and endure effects, 2 uses",
+    "elem": "phy",
+    "power": 140,
+    "target": "1 Foe"
+  },
   "Berserker": {
     "effect": "Dmg dealt +10%, Dmg received +20%",
     "elem": "pas",
     "points": 18
+  },
+  "Berserker Armor": {
+    "effect": "Phys Pierce, Crit +50%, Dmg received -40%, 40% frac dmg every turn to self based on max HP (nullifies endure and revive effects)",
+    "elem": "pas"
   },
   "Berserker God": {
     "cost": 6,
@@ -296,6 +307,13 @@
     "elem": "alm",
     "target": "All Foes"
   },
+  "Blade of the Absolute": {
+    "cost": 6,
+    "effect": "5 hits, High hit, 50% crit, Scales off Patk, Nullifies counter effects",
+    "elem": "alm",
+    "power": 35,
+    "target": "1 Foe"
+  },
   "Bleeder": {
     "cost": 6,
     "effect": "Removes 2 MP",
@@ -329,7 +347,7 @@
     "points": 8
   },
   "Bloody Scripture": {
-    "effect": "Dmg dealt +15% and received -30% when HP is full",
+    "effect": "Dmg dealt +15% and received -30% when HP > 80%",
     "elem": "pas"
   },
   "Bolt Storm": {
@@ -389,7 +407,7 @@
     "elem": "pas"
   },
   "Call to Helheim": {
-    "effect": "Casts Tarunda + Rakunda when killing Foe",
+    "effect": "Casts Tarunda + Rakunda when downing a Foe",
     "elem": "pas"
   },
   "Ce Acatl": {
@@ -676,7 +694,7 @@
   },
   "Disastrous Eclipse": {
     "cost": 6,
-    "effect": "Pierce, Prevents revival of foes killed by attack",
+    "effect": "Pierce, Prevents revival of foes downed by attack",
     "elem": "dar",
     "power": 100,
     "target": "All Foes"
@@ -784,7 +802,7 @@
     "points": 20
   },
   "Earth Sacrifice": {
-    "effect": "Casts Tetrakarn and Luster Candy for 1 turn when killed",
+    "effect": "Casts Tetrakarn and Luster Candy for 1 turn when downed",
     "elem": "pas"
   },
   "Earthquake": {
@@ -1170,7 +1188,7 @@
     "target": "All Foes"
   },
   "God 1000 Fist Cannon": {
-    "effect": "Casts A6 hits of 20 phys dmg with 30% crit, Phys Pierce, and PDef bonus when enemy land a crit",
+    "effect": "Casts 6 hits of 25 phys dmg with 30% crit when enemy land a crit, Pierce, Scales off Pdef, Nullifies counter effects",
     "elem": "pas"
   },
   "God's Blessing": {
@@ -1339,6 +1357,10 @@
     "elem": "phy",
     "power": 35,
     "target": "Rand Foes"
+  },
+  "Hawk of Light": {
+    "effect": "Phys Pierce, Phys eva +15%, Restores 3 MP and casts Tetrakarn + phys alm when downing a Foe",
+    "elem": "pas"
   },
   "Heat Wave": {
     "cost": 5,
@@ -1569,7 +1591,7 @@
     "target": "1 Foe"
   },
   "Killer Impulse": {
-    "effect": "Casts 4 hits of 25 piercing elec dmg when killing Foe, Can only activate twice in a row",
+    "effect": "Casts 4 hits of 25 piercing elec dmg when downing a Foe, Can only activate twice in a row",
     "elem": "pas"
   },
   "Killing Wind": {
@@ -1599,7 +1621,7 @@
   },
   "Last Resort": {
     "cost": 6,
-    "effect": "Reduces all foes current HP by 30% (<1000), Kills user",
+    "effect": "Reduces all foes current HP by 30% (<1000), Downs user",
     "elem": "alm",
     "target": "All Foes"
   },
@@ -1670,7 +1692,7 @@
     "target": "1 Foe"
   },
   "Lord of Clouds": {
-    "effect": "Elec Pierce, Recovers 3 MP and casts Five Elements when killing Foe",
+    "effect": "Elec Pierce, Recovers 3 MP and casts Five Elements when downing a Foe",
     "elem": "pas"
   },
   "Lord of the Abyss": {
@@ -1684,7 +1706,7 @@
     "target": "All Foes"
   },
   "Loyal God of War": {
-    "effect": "Recover 30% HP and 3 MP when killing Foe",
+    "effect": "Recover 30% HP and 3 MP when downing a Foe",
     "elem": "pas"
   },
   "Luck": {
@@ -2405,7 +2427,7 @@
     "target": "Rand Foes"
   },
   "Nastrond": {
-    "effect": "Recover 80% HP and nullify Instant Death for 1 turn when Ally killed",
+    "effect": "Recover 80% HP and nullify Instant Death for 1 turn when Ally downed",
     "elem": "pas"
   },
   "Necro Dogma": {
@@ -2417,7 +2439,7 @@
     "target": "All Foes"
   },
   "New Hope": {
-    "effect": "Allies recover 15% HP when user killed",
+    "effect": "Allies recover 15% HP when user downed",
     "elem": "pas"
   },
   "Nightlife": {
@@ -2440,7 +2462,11 @@
     "target": "All Allies"
   },
   "North Wind": {
-    "effect": "Casts Mabufu when foe killed",
+    "effect": "Casts Mabufu when foe downed",
+    "elem": "pas"
+  },
+  "Nosferatu": {
+    "effect": "Endure with 300 HP, Dmg +10% every turn (50% max, resets between waves)",
     "elem": "pas"
   },
   "Null Bind": {
@@ -2606,7 +2632,7 @@
     "target": "All Foes"
   },
   "Peach of Immortality": {
-    "effect": "Revives a random ally with 100% HP when an ally is killed twice per battle",
+    "effect": "Revives a random ally with 100% HP when an ally is downed twice per battle",
     "elem": "pas"
   },
   "Pestilence": {
@@ -2906,6 +2932,13 @@
     "elem": "pas",
     "points": 12
   },
+  "Rip": {
+    "cost": 7,
+    "effect": "Pierce, 30% crit, Drains 50% dmg dealt",
+    "elem": "phy",
+    "power": 110,
+    "target": "All Foes"
+  },
   "Ruin and Grace": {
     "cost": 7,
     "effect": "50% crit, Pierce, Scales off Matk, Heals 80 to all allies",
@@ -3144,7 +3177,7 @@
   },
   "Sword of Actuation": {
     "cost": 6,
-    "effect": "Can crit, Nullifies endure effects, Prevents revival of foes killed by attack",
+    "effect": "Can crit, Nullifies endure effects, Prevents revival of foes downed by attack",
     "elem": "alm",
     "power": 160,
     "target": "1 Foe"
@@ -3489,7 +3522,7 @@
     "elem": "pas"
   },
   "Yaxche": {
-    "effect": "Counter with Almighty Dmg + 100% Instant Death when killed, Nullifies endure effects",
+    "effect": "Counter with Almighty Dmg + 100% Instant Death when downed, Nullifies endure effects",
     "elem": "pas"
   },
   "Yinlong Killer": {
@@ -3504,7 +3537,7 @@
     "elem": "pas"
   },
   "You're Next": {
-    "effect": "Foes can only revive as Lvl 1 Reiko Kashima if user kills said foe with single-target attack",
+    "effect": "Foes can only revive as Lvl 1 Reiko Kashima if user downs said foe with single-target attack",
     "elem": "pas"
   },
   "Zan": {

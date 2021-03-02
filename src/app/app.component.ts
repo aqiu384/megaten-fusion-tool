@@ -57,11 +57,12 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(v => this.interceptNavigation(v));
     this.navRows = [];
 
-    const homeGame = { game: 'Home', tool: 'home', srcs: ['https://github.com/aqiu384//megaten-fusion-tool'] };
+    const homeGame = { game: 'Home', tool: 'home', srcs: ['https://github.com/aqiu384/megaten-fusion-tool'] };
     const reportGame = { game: 'Report Issue', tool: 'https://github.com/aqiu384/megaten-fusion-tool/issues', srcs: [] };
+    const reloadGame = { game: 'Reload Tool', tool: 'home?version=latest', srcs: [] };
 
     const menuTools = MEGATEN_FUSION_TOOLS.filter(tool => tool.menu)
-    const navButtons = [homeGame].concat(menuTools).concat([reportGame]);
+    const navButtons = [homeGame].concat(menuTools).concat([reportGame, reloadGame]);
     const fillerGap = navButtons.length % this.navsPerRow;
     const fillerLen = fillerGap ? this.navsPerRow - fillerGap : 0;
     const fillerNav = { game: '', tool: '', srcs: [] };
