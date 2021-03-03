@@ -16,7 +16,7 @@ HEADER = '\n'.join((
 ))
 
 INFILE = sys.argv[1]
-OUTFILE = INFILE.replace('docs/', 'gh-pages/docs/').replace('.md', '.html')
+OUTFILE = INFILE.replace('docs/', '../aqiu384.github.io/docs-megaten/').replace('.md', '.html')
 
 with open(INFILE) as mdfile:
     TITLE = mdfile.readline().replace('#', '').strip()

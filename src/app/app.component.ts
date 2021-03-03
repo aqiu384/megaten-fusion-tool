@@ -45,10 +45,10 @@ export class AppComponent implements OnInit {
   };
 
   links = [
-    { title: 'How to Use', link: 'docs/how-to-use' },
-    { title: 'Fusion Theory', link: 'docs/fusion-theory' },
-    { title: 'Save Offline', link: 'docs/how-to-use#saveoffline' },
-    { title: 'Update to Latest', link: 'home?version=latest' },
+    { title: 'How to Use', link: 'https://aqiu384.github.io/docs-megaten/how-to-use' },
+    { title: 'Fusion Theory', link: 'https://aqiu384.github.io/docs-megaten/fusion-theory' },
+    { title: 'Save Offline', link: 'https://aqiu384.github.io/docs-megaten/how-to-use#saveoffline' },
+    { title: 'Update to Latest', link: 'https://aqiu384.github.io/megaten-fusion-tool?version=latest' },
     { title: 'Report Issue', link: 'https://github.com/aqiu384/megaten-fusion-tool/issues' }
   ];
   
