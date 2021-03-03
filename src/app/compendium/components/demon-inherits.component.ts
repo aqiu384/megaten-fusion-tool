@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   selector: 'app-demon-inherits',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table class="entry-table">
       <thead>
         <tr>
           <th *ngIf="!hasLvls" [attr.colspan]="inheritHeaders.length" class="title">Inheritable Skills</th>

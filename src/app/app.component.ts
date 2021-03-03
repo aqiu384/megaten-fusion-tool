@@ -1,34 +1,32 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
-import MEGATEN_FUSION_TOOLS from './data-sources.json';
 
 @Component({
   selector: 'app-root',
   template: `
     <div [ngClass]="currentGame">
-      <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
+      <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
-          <tr *ngFor="let row of navRows">
-            <th *ngFor="let button of row" class="nav"
-              routerLinkActive="active"
-              [style.width.%]="100 / navsPerRow">
-              <div *ngIf="button.tool" [style.whiteSpace]="'pre-line'">
-                <a *ngIf="button.srcs.length" routerLink="{{ button.tool }}">{{ button.abbr || button.game }}</a>
-                <a *ngIf="!button.srcs.length" href="{{ button.tool }}">{{ button.game }}</a>
-              </div>
+          <tr>
+            <th class="nav" routerLinkActive="active" [style.width.%]="1 / (1 + links.length)">
+              <div><a routerLink="home">All Games</a></div>
             </th>
+            <th class="nav" *ngFor="let link of links" [style.width.%]="1 / (1 + links.length)">
+              <div><a [href]="link.link">{{ link.title }}</a></div>
+            </th>
+          </tr>
+          <tr>
+            <th [attr.colspan]="links.length + 1" class="title">Megami Tensei Fusion Tools</th>
           </tr>
         </thead>
       </table>
-      <div [ngStyle]="{ display: loading ? 'table' : 'none', height: '2em', 'text-align': 'center', 'width': '100%' }">
-        <h4 [ngStyle]="{ display: 'table-cell', 'vertical-align': 'middle' }">
-          Loading Fusion Tool...
-        </h4>
-      </div>
-      <div [style.display]="loading ? 'none' : null">
+      <h4 *ngIf="loading" style="text-align: center;">
+        Loading Fusion Tool...
+      </h4>
+      <ng-container *ngIf="!loading">
         <router-outlet></router-outlet>
-      </div>
-      <div [ngStyle]="{ 'text-align': 'center' }">
+      </ng-container>
+      <div style="text-align: center;">
         <br>
         <a href="https://www.youtube.com/watch?v=b1KfNEPKncQ">
           https://www.youtube.com/watch?v=b1KfNEPKncQ
@@ -46,34 +44,21 @@ export class AppComponent implements OnInit {
     dso: 'ds1', ds2br: 'ds2'
   };
 
+  links = [
+    { title: 'How to Use', link: 'docs/how-to-use' },
+    { title: 'Fusion Theory', link: 'docs/fusion-theory' },
+    { title: 'Save Offline', link: 'docs/how-to-use#saveoffline' },
+    { title: 'Update to Latest', link: 'home?version=latest' },
+    { title: 'Report Issue', link: 'https://github.com/aqiu384/megaten-fusion-tool/issues' }
+  ];
+  
   currentGame = 'none';
-  navsPerRow = 6;
-  navRows = [];
   loading = false;
 
   constructor(private router: Router) {}
 
   ngOnInit() {
     this.router.events.subscribe(v => this.interceptNavigation(v));
-    this.navRows = [];
-
-    const homeGame = { game: 'Home', tool: 'home', srcs: ['https://github.com/aqiu384/megaten-fusion-tool'] };
-    const reportGame = { game: 'Report Issue', tool: 'https://github.com/aqiu384/megaten-fusion-tool/issues', srcs: [] };
-    const reloadGame = { game: 'Reload Tool', tool: 'home?version=latest', srcs: [] };
-
-    const menuTools = MEGATEN_FUSION_TOOLS.filter(tool => tool.menu)
-    const navButtons = [homeGame].concat(menuTools).concat([reportGame, reloadGame]);
-    const fillerGap = navButtons.length % this.navsPerRow;
-    const fillerLen = fillerGap ? this.navsPerRow - fillerGap : 0;
-    const fillerNav = { game: '', tool: '', srcs: [] };
-
-    for (let i = 0; i < fillerLen; i++) {
-      navButtons.push(fillerNav);
-    }
-
-    for (let i = 0; i < menuTools.length + 1; i += this.navsPerRow) {
-      this.navRows.push(navButtons.slice(i, i + this.navsPerRow));
-    }
   }
 
   interceptNavigation(event: Event) {

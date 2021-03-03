@@ -13,7 +13,7 @@ import { Enemy } from '../models';
       [statHeaders]="statHeaders"
       [stats]="demon.stats.concat(demon.estats, demon.atks)">
     </app-demon-stats>
-    <table>
+    <table class="entry-table">
       <thead>
         <tr>
           <th colspan="5" class="title">Negotiation</th>
@@ -36,7 +36,7 @@ import { Enemy } from '../models';
         </tr>
       </tbody>
     </table>
-    <table *ngIf="demon.contacts.length">
+    <table *ngIf="demon.contacts.length" class="entry-table">
       <thead>
         <tr>
           <th colspan="3" class="title">Contacts</th>

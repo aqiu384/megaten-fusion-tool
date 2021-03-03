@@ -7,9 +7,6 @@ import MEGATEN_FUSION_TOOLS from './data-sources.json';
     <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
       <thead>
         <tr>
-          <th colspan="2" class="title">Data Sources</th>
-        </tr>
-        <tr>
           <th>Fusion Tool</th>
           <th>Data Sources</th>
         </tr>

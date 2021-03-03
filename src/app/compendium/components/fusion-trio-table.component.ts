@@ -110,7 +110,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div>
-      <table appPositionSticky>
+      <table appPositionSticky class="list-table">
         <tfoot #stickyHeader appColumnWidths
           class="app-fusion-trio-table-header"
           [title]="title"
@@ -120,7 +120,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
           (sortFunIndexChanged)="sortFunIndex = $event">
         </tfoot>
       </table>
-      <table>
+      <table class="list-table">
         <tfoot #hiddenHeader appColumnWidths
           class="app-fusion-trio-table-header"
           [title]="title"

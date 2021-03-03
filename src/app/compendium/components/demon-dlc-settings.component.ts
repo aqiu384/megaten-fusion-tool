@@ -5,22 +5,25 @@ import { Title } from '@angular/platform-browser';
   selector: 'app-demon-dlc-settings',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
-      <thead>
-        <tr><th class="title">{{ dlcTitle }}</th></tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let demon of dlcDemons">
-          <td>
-            <label>{{ demon.name.split(',').join(', ') }}
-              <input type="checkbox"
-                [checked]="demon.included"
-                (change)="toggledName.emit(demon.name)">
-            </label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <ng-container>
+      <h2>{{ dlcTitle }}</h2>
+      <table class="entry-table">
+        <thead>
+          <tr><th class="title">DLC</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let demon of dlcDemons">
+            <td>
+              <label>{{ demon.name.split(',').join(', ') }}
+                <input type="checkbox"
+                  [checked]="demon.included"
+                  (change)="toggledName.emit(demon.name)">
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
   `
 })
 export class DemonDlcSettingsComponent {

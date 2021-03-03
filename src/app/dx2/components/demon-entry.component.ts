@@ -15,12 +15,11 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container *ngIf="demon">
-      <table>
+      <h2>Grade {{ demon.lvl }} {{ demon.race }} {{ demon.name }}</h2>
+      <table class="entry-table">
         <thead>
           <tr>
-            <th [attr.colSpan]="statHeaders.length + 1" class="title">
-              Grade {{ demon.lvl }} {{ demon.race }} {{ demon.name }}
-            </th>
+            <th [attr.colSpan]="statHeaders.length + 1" class="title">Stats</th>
           </tr>
           <tr>
             <th *ngFor="let stat of statHeaders">{{ stat }}</th>
@@ -38,7 +37,7 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="resistanceHeaders"
         [resists]="demon.resists">
       </app-demon-resists>
-      <table *ngIf="demonPanels.length">
+      <table *ngIf="demonPanels.length" class="entry-table">
         <thead>
           <tr><th colspan="3" class="title">Panels</th></tr>
           <tr><th>Level</th><th>Step</th><th>Bonus</th></tr>
@@ -51,7 +50,7 @@ import { FusionDataService } from '../fusion-data.service';
           </tr>
         </tbody>
       </table>
-      <table>
+      <table class="entry-table">
         <thead>
           <tr><th colSpan="7" class="title">Available Skills</th></tr>
           <tr><th>Available</th><th>Elem</th><th>Name</th><th>Costs</th><th>Rank</th><th>Effect</th><th>Upgrades</th></tr>

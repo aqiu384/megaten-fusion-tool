@@ -7,13 +7,14 @@ import { toFusionPair } from '../models/conversions';
   selector: 'app-dx2-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table *ngIf="fusionPrereq">
+    <table *ngIf="fusionPrereq" class="list-table">
       <thead><tr><th class="title">Special Fusion Condition</th></tr></thead>
       <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
     </table>
     <app-fusion-entry-table *ngIf="fusionEntries.length"
       [title]="'Special Fusion Ingredients for ' + currentDemon"
-      [rowData]="fusionEntries">
+      [rowData]="fusionEntries"
+      [isFusion]="true">
     </app-fusion-entry-table>
     <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionPrereq && !fusionEntries.length"
       [title]="'Ingredient 1 x Ingredient 2 = ' + currentDemon"

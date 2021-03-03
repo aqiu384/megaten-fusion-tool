@@ -13,7 +13,7 @@ import { CompendiumConfig } from '../models';
       [statHeaders]="['HP', 'MP'].concat(compConfig.baseStats)"
       [stats]="demon.stats.concat(demon.estats)">
     </app-demon-stats>
-    <table>
+    <table class="entry-table">
       <thead>
         <tr>
           <th colspan="2" class="title">Appearances</th>

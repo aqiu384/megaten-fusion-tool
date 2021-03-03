@@ -26,7 +26,7 @@ import { FusionDataService } from '../fusion-data.service';
         [ailmentHeaders]="compConfig.ailmentElems"
         [ailments]="demon.ailments">
       </app-demon-resists>
-      <app-demon-inherits
+      <app-demon-inherits *ngIf="demon.affinitites"
         [hasLvls]="true"
         [inheritHeaders]="compConfig.affinityElems"
         [inherits]="demon.affinities">

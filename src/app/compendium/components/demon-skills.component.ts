@@ -5,7 +5,7 @@ import { Compendium, Skill } from '../models';
   selector: 'app-demon-skills',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table class="entry-table">
       <thead>
         <tr>
           <th [attr.colSpan]="skillHeaderLen" class="title">{{ title }}</th>

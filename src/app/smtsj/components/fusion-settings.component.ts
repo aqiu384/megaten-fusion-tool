@@ -9,22 +9,25 @@ import { FusionDataService } from '../fusion-data.service';
   selector: 'app-fusion-settings',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
-      <thead>
-        <tr><th class="title">Included Subapps</th></tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let subapp of subapps">
-          <td>
-            <label>{{ subapp.name }}
-              <input type="checkbox"
-                [checked]="subapp.included"
-                (change)="toggleIncludedSubapp(subapp.name)">
-            </label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <ng-container>
+      <h2>Enabled Subapps</h2>
+      <table class="entry-table">
+        <thead>
+          <tr><th class="title">Subapps</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let subapp of subapps">
+            <td>
+              <label>{{ subapp.name }}
+                <input type="checkbox"
+                  [checked]="subapp.included"
+                  (change)="toggleIncludedSubapp(subapp.name)">
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
   `
 })
 export class FusionSettingsComponent implements OnInit, OnDestroy {

@@ -12,7 +12,7 @@ import { Demon, CompendiumConfig } from '../models';
       [statHeaders]="compConfig.enemyStats"
       [stats]="demon.stats">
     </app-demon-stats>
-    <table>
+    <table class="entry-table">
       <thead>
         <tr>
           <th colspan="2" class="title">Appearances</th>

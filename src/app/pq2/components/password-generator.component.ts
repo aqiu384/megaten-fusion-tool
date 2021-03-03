@@ -13,18 +13,14 @@ import { encodeDemon } from '../models/password-generator';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form [formGroup]="form">
-      <table>
-        <tr><th colspan="2" class="title">QR Codes</th></tr>
+      <h2>QR Code Generator</h2>
+      <table class="entry-table">
+        <tr><th colspan="2" class="title">QR Code</th></tr>
         <tr>
-          <th [ngStyle]="{ width: '33%' }"></th>
-          <th [ngStyle]="{ width: '67%' }">QR Code</th>
-        </tr>
-        <tr>
-          <td></td>
           <td><app-qrcode [byteArray]="passBytes"></app-qrcode></td>
         </tr>
       </table>
-      <table>
+      <table class="entry-table">
         <tr><th colspan="7" class="title">Persona Entry</th></tr>
         <tr>
           <th>Price</th>
@@ -70,7 +66,7 @@ import { encodeDemon } from '../models/password-generator';
           </td>
         </tr>
       </table>
-      <table formArrayName="skills">
+      <table formArrayName="skills" class="list-table">
         <tr><th colspan="5" class="title">Learned Skills</th></tr>
         <tr>
           <th>Element</th>

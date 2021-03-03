@@ -16,9 +16,22 @@ a:hover {
 }
 
 /* Tables */
+h2 {
+  text-align: center;
+}
+
 table {
-  width: 100%;
   border-spacing: 0;
+}
+
+.list-table {
+  width: 100%;
+}
+
+.entry-table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3em;
 }
 
 .position-sticky {

@@ -7,7 +7,7 @@ import { MultiFusionTrio } from '../models';
   selector: 'app-p5s-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table class="list-table">
       <tr><th colspan=7 class="title">Normal Reverse Fusions</th></tr>
       <tr><th colspan=7>Ingredient 1 x Ingredient 2 x Ingredient 3 = {{ currentDemon }}</th></tr>
       <tr>

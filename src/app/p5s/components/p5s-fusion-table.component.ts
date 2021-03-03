@@ -7,7 +7,7 @@ import { MultiFusionTrio } from '../models';
   selector: 'app-p5s-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table class="list-table">
       <tr><th colspan=8 class="title">Normal Forward Fusions</th></tr>
       <tr><th colspan=8>Result = Min Lvl {{ currentDemon }} x Ingredient 2 x Ingredient 3</th></tr>
       <tr>

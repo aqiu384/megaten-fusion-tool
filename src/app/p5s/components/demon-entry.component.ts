@@ -26,7 +26,7 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
-      <table *ngIf="comboSkills.length">
+      <table *ngIf="comboSkills.length" class="entry-table">
         <thead>
           <tr><th colSpan="4" class="title">Combo Skills</th></tr>
           <tr><th>Elem</th><th>Name</th><th>Effect</th><th>Input</th></tr>
@@ -45,12 +45,12 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <table *ngIf="demon.prereq">
+      <table *ngIf="demon.prereq" class="entry-table">
         <tr><th class="title">Special Fusion Condition</th></tr>
         <tr><td>{{ demon.prereq }}</td></tr>
       </table>
       <ng-container *ngIf="compendium.splitSpecialFusion(name) as rows">
-        <table *ngIf="rows.length">
+        <table *ngIf="rows.length" class="entry-table">
           <tr><th colspan=4 class="title">Special Fusion Ingredients for {{ name }}</th></tr>
           <tr><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
           <tr *ngFor="let row of rows">

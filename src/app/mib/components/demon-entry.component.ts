@@ -24,12 +24,11 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container *ngIf="demon">
-      <table>
+      <h2>Lvl {{ demon.lvl }} {{ demon.race }} {{ demon.name }}</h2>
+      <table class="entry-table">
         <thead>
           <tr>
-            <th colspan="5">
-              Lvl {{ demon.lvl }} {{ demon.race }} {{ demon.name }}
-            </th>
+            <th colspan="5" class="title">Stats</th>
           </tr>
           <tr>
             <th>SP Cost</th>
@@ -49,7 +48,7 @@ import { FusionDataService } from '../fusion-data.service';
           </tr>
         </tbody>
       </table>
-      <table>
+      <table class="entry-table">
         <thead>
           <tr>
             <th [attr.colSpan]="statHeaders.length" class="title">Stat Growths</th>
@@ -65,7 +64,7 @@ import { FusionDataService } from '../fusion-data.service';
           </tr>
         </tbody>
       </table>
-      <table>
+      <table class="entry-table">
         <thead>
           <tr>
             <th [attr.colSpan]="affinityHeaders.length" class="title">

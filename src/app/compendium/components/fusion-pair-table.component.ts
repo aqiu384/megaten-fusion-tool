@@ -58,7 +58,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div>
-      <table appPositionSticky>
+      <table appPositionSticky class="list-table">
         <tfoot #stickyHeader appColumnWidths
           class="app-fusion-pair-table-header"
           [title]="title"
@@ -68,7 +68,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           (sortFunIndexChanged)="sortFunIndex = $event">
         </tfoot>
       </table>
-      <table>
+      <table class="list-table">
         <tfoot #hiddenHeader appColumnWidths
           class="app-fusion-pair-table-header"
           [title]="title"

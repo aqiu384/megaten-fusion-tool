@@ -50,7 +50,7 @@ export class SmtDemonListRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ PositionEdgesService ],
   template: `
-    <table appPositionSticky>
+    <table appPositionSticky class="list-table">
       <tfoot #stickyHeader appColumnWidths
         class="app-demon-list-header sticky-header"
         [isPersona]="isPersona"
@@ -63,7 +63,7 @@ export class SmtDemonListRowComponent {
         (sortFunIndexChanged)="sortFunIndex = $event">
       </tfoot>
     </table>
-    <table>
+    <table class="list-table">
       <tfoot #hiddenHeader appColumnWidths
         class="app-demon-list-header"
         [isPersona]="isPersona"

@@ -10,7 +10,7 @@ import { CompendiumConfig } from '../models';
   selector: 'app-p5s-fusion-chart',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table class="entry-table">
       <tbody>
         <tr><th class="title" colspan="2">{{ normTitle }}</th></tr>
         <tr *ngFor="let row of table">

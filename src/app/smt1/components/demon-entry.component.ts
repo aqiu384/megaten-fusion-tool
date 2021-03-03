@@ -23,10 +23,11 @@ import { FusionDataService } from '../fusion-data.service';
         [inherit]="demon.inherit">
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
-      <table *ngIf="compConfig.baseAtks.length">
-        <thead><tr><th *ngFor="let atk of compConfig.baseAtks">{{ atk }}</th></tr></thead>
-        <tbody><tr><td *ngFor="let atk of demon.atks">{{ atk }}</td></tr></tbody>
-      </table>
+      <app-demon-stats *ngIf="compConfig.baseAtks.length"
+        [title]="'Attacks'"
+        [statHeaders]="compConfig.baseAtks"
+        [stats]="demon.atks">
+      </app-demon-stats>
       <app-demon-resists
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">

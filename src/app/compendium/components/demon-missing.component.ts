@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   selector: 'app-demon-missing',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table class="entry-table">
       <thead>
         <tr><th class="title">Entry for {{ name }}</th></tr>
       </thead>

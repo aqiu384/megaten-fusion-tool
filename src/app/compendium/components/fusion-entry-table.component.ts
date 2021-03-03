@@ -6,7 +6,7 @@ import { FusionEntry } from '../models';
   selector: 'app-fusion-entry-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
+    <table [ngClass]="isFusion ? 'list-table' : 'entry-table'">
       <thead>
         <tr>
           <th colspan="4" class="title">{{ title }}</th>
@@ -33,4 +33,5 @@ export class FusionEntryTableComponent {
   @Input() title = 'Special Fusion Ingredients';
   @Input() baseUrl = '../..';
   @Input() rowData: FusionEntry[];
+  @Input() isFusion = false;
 }

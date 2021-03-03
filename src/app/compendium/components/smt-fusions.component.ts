@@ -8,7 +8,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div>
-      <table #stickyTable appPositionSticky>
+      <table #stickyTable appPositionSticky class="list-table">
         <thead>
           <tr>
             <th *ngFor="let option of fusionOptions"
@@ -27,7 +27,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             </th>
           <tr>
           <tr *ngIf="showFusionAlert">
-            <th [attr.colspan]="fusionOptions.length"><ng-content></ng-content></th>
+            <th [attr.colspan]="fusionOptions.length" class="title"><ng-content></ng-content></th>
           <tr>
         </thead>
       </table>

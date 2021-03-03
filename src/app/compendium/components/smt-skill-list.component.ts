@@ -58,7 +58,7 @@ export class SmtSkillListRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ PositionEdgesService ],
   template: `
-    <table appPositionSticky>
+    <table appPositionSticky class="list-table">
       <tfoot #stickyHeader appColumnWidths
         class="app-skill-list-header sticky-header"
         [hasInherit]="inheritOrder"
@@ -69,7 +69,7 @@ export class SmtSkillListRowComponent {
         (sortFunIndexChanged)="sortFunIndex = $event">
       </tfoot>
     </table>
-    <table>
+    <table class="list-table">
       <tfoot #hiddenHeader appColumnWidths
         class="app-skill-list-header"
         [hasInherit]="inheritOrder"

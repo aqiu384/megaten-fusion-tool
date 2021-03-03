@@ -8,22 +8,25 @@ import { FusionDataService } from '../fusion-data.service';
   selector: 'app-fusion-settings',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table>
-      <thead>
-        <tr><th class="title">Fusion Chart Settings</th></tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let setting of chartSettings">
-          <td>
-            <label>{{ setting.name }}
-              <input type="checkbox"
-                [checked]="setting.enabled"
-                (change)="toggleChartSetting(setting.name)">
-            </label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <ng-container>
+      <h2>Enabled Fusion Settings</h2>
+      <table class="entry-table">
+        <thead>
+          <tr><th class="title">Fusion Settings</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let setting of chartSettings">
+            <td>
+              <label>{{ setting.name }}
+                <input type="checkbox"
+                  [checked]="setting.enabled"
+                  (change)="toggleChartSetting(setting.name)">
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
   `
 })
 export class FusionSettingsComponent implements OnInit, OnDestroy {

@@ -14,7 +14,8 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form [formGroup]="form">
-      <table>
+      <h2>Password Generator</h2>
+      <table class="entry-table">
         <thead>
           <tr><th colspan="4" class="title">Passwords</th></tr>
           <tr>
@@ -44,7 +45,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
           </tr>
         </tbody>
       </table>
-      <table>
+      <table class="entry-table">
         <thead>
           <tr><th colspan="4" class="title">Demon Entry</th></tr>
           <tr>
@@ -80,7 +81,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
           </tr>
         </tbody>
       </table>
-      <table>
+      <table class="entry-table">
         <thead>
           <tr><th colspan="8" class="title">Stats</th></tr>
           <tr>
@@ -101,7 +102,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
           </tr>
         </tbody>
       </table>
-      <table>
+      <table class="list-table">
         <thead>
           <tr><th colspan="6" class="title">Learned Skills</th></tr>
           <tr>
