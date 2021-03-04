@@ -22,7 +22,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             </th>
           </tr>
           <tr *ngIf="excludedDlc">
-            <th [attr.colspan]="fusionOptions.length">
+            <th [attr.colspan]="fusionOptions.length" class="title">
               DLC marked as excluded in fusion settings, results may be inaccurate!
             </th>
           <tr>

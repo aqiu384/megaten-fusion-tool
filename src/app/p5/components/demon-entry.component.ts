@@ -41,7 +41,7 @@ import { FusionDataService } from '../fusion-data.service';
         <table *ngIf="rows.length" class="entry-table">
           <thead>
             <tr><th colspan=5 class="title">Ingredient 1 x Treasure Demon 2 = {{ demon.name }}</th></tr>
-            <tr><th rowspan=2>Price</th><th colspan=3>Ingredient 1</th><th>Ingredient 2</th></tr>
+            <tr><th rowspan=2>Price</th><th colspan=3>Ingredient 1</th><th>Treasure Demon 2</th></tr>
             <tr><th>Names</th><th>MinLvl</th><th>MaxLvl</th><th>Names</th></tr>
           </thead>
           <tbody>

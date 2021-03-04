@@ -12,7 +12,7 @@ import { Compendium } from '../models/compendium';
       [statHeaders]="['EXP', 'Yen', 'HP', 'MP'].concat(compConfig.baseStats)"
       [stats]="[demon.exp, demon.price].concat(demon.stats, demon.estats)">
     </app-demon-stats>
-    <table>
+    <table class="entry-table">
       <thead>
         <tr>
           <th colspan="4" class="title">Negotiation</th>
