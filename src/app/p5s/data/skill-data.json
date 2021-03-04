@@ -74,7 +74,7 @@
   "Agneyastra": {
     "cardr": "Devoted, Frozen Blood",
     "cost": 24,
-    "effect": "Severe damage to wide range Foes with high chance of critical hit",
+    "effect": "Colossal damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Ailment Boost": {
@@ -86,14 +86,14 @@
   "Amrita Drop": {
     "cardn": "Ganesha, Naga B",
     "cost": 1004,
-    "effect": "Recover non-unique ailments for 1 Ally",
+    "effect": "Cures all non-special ailments for one ally",
     "element": "recovery"
   },
   "Amrita Shower": {
     "cardn": "Dominion, Lilith",
     "cardt": "Abyssal, Final",
     "cost": 1008,
-    "effect": "Recover non-unique ailments for all Allies",
+    "effect": "Cures all non-special ailments for all allies",
     "element": "recovery"
   },
   "Analysis": {
@@ -121,7 +121,7 @@
   },
   "Attack Master": {
     "cardr": "Devoted",
-    "effect": "Begin battle with Tarukaja",
+    "effect": "Activates Tarukaja at the start of battle",
     "element": "passive"
   },
   "Blazing Hell": {
@@ -145,7 +145,7 @@
     "cardn": "Raja Naga B",
     "cardt": "Osaka",
     "cost": 12,
-    "effect": "Medium damage to wide range Foes with medium chance of Rage",
+    "effect": "Medium damage to wide range Foes with medium chance of Fear",
     "element": "phys"
   },
   "Brain Buster": {
@@ -211,7 +211,7 @@
     "cardr": "Devoted, Heroic Amulet",
     "cardt": "Request",
     "cost": 1026,
-    "effect": "Next Physical attack +150% damage",
+    "effect": "Next Physical attack deals over double the damage",
     "element": "support"
   },
   "Cleave": {
@@ -224,7 +224,7 @@
     "cardr": "Abyss",
     "cardt": "Request",
     "cost": 1026,
-    "effect": "Next Magic attack +150% damage",
+    "effect": "Next magical attack deals over double the damage",
     "element": "support"
   },
   "Cosmic Flare": {
@@ -238,10 +238,10 @@
     "effect": "Gun damage +50%",
     "element": "passive"
   },
-  "Critical High": {
+  "Technical High": {
     "cardn": "Lilim B",
     "cardt": "Sapporo",
-    "effect": "Extends duration of -kaja skills when inflicting critical hits",
+    "effect": "Increases duration of Kaja-type buff skills when landing a Critical",
     "element": "passive"
   },
   "Curse Amp": {
@@ -271,26 +271,26 @@
   "Debilitate": {
     "cardr": "Devoted, Frozen Blood",
     "cost": 1036,
-    "effect": "Tarunda + Rakunda + Sukunda",
+    "effect": "Temporarily decreases ATK/DEF and Critical/auto-evade rate for an area of foes",
     "element": "support"
   },
   "Defense Master": {
     "cardt": "Kyoto",
-    "effect": "Begin battle with Rakukaja",
+    "effect": "Activates Rakukaja at the start of battle",
     "element": "passive"
   },
   "Dekaja": {
     "cardn": "Berith, High Pixie B, Slime",
     "cardt": "Sendai",
     "cost": 1006,
-    "effect": "Remove -kaja effects for wide range Foes",
+    "effect": "Remove all stat buffs for all foes",
     "element": "support"
   },
   "Dekunda": {
     "cardn": "Slime, Slime B",
     "cardt": "Sendai",
     "cost": 1006,
-    "effect": "Remove -kunda effects for all Allies",
+    "effect": "Remove all stat debuffs for all allies",
     "element": "support"
   },
   "Dia": {
@@ -407,7 +407,7 @@
     "cardn": "Jack Frost, Jack Frost B",
     "cardr": "Frozen Blood",
     "cardt": "Sapporo",
-    "effect": "Improves rate for decreasing Down Gauge when inflicting critical hits",
+    "effect": "Greatly decreases down gauge of one foe when landing a Critical",
     "element": "passive"
   },
   "Dream Needle": {
@@ -527,11 +527,11 @@
     "effect": "Chance to nullify fatal attack for all Allies",
     "element": "passive"
   },
-  "Technical High": {
+  "Technical Adept": {
     "cardn": "Jack Frost, Lilim B, Setanta B",
     "cardr": "Devoted",
     "cardt": "Sapporo",
-    "effect": "Increase damage inflicted by technical hits",
+    "effect": "Increases damage of Technical hits",
     "element": "passive"
   },
   "Fire Amp": {
@@ -625,7 +625,7 @@
   "God's Hand": {
     "cardr": "Devoted, Frozen Blood",
     "cost": 25,
-    "effect": "Severe damage to close range Foes with high chance of critical hit",
+    "effect": "Colossal damage to close range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Hama": {
@@ -646,7 +646,7 @@
   },
   "Hassou Tobi": {
     "cost": 30,
-    "effect": "Severe damage to wide range Foes with high chance of critical hit",
+    "effect": "Colossal damage to wide range Foes with high chance of critical hit",
     "element": "phys"
   },
   "Headbutt": {
@@ -659,7 +659,7 @@
   "Heat Riser": {
     "cardr": "Frozen Blood, Heroic Amulet, Pinky Love, Vanitas",
     "cost": 1036,
-    "effect": "Tarukaja + Rakukaja + Sukukaja",
+    "effect": "Temporarily increases ATK/DEF and Critical/auto-evade rate for one ally",
     "element": "support"
   },
   "Heat Wave": {
@@ -717,7 +717,7 @@
     "element": "bless"
   },
   "Shadow of Grief": {
-    "effect": "Recovers SP when draining damage",
+    "effect": "Drain-affinity passive skills also restore SP, based on damage absorbed",
     "element": "passive"
   },
   "Life Drain": {
@@ -911,14 +911,14 @@
     "cardn": "Naga B",
     "cardt": "Osaka",
     "cost": 1024,
-    "effect": "Raise defense and nullify knock-back for set period for all Allies",
+    "effect": "Temporarily increases Defense and prevents attacks from being interrupted for all allies",
     "element": "support"
   },
   "Marakunda": {
     "cardn": "Fortuna",
     "cardr": "Heroic Amulet",
     "cost": 1016,
-    "effect": "Lower defense for set period for wide range Foes",
+    "effect": "Temporarily decreases Defense for a wide area of foes",
     "element": "support"
   },
   "Marin Karin": {
@@ -930,26 +930,26 @@
   "Masukukaja": {
     "cardn": "Naga, Naga B",
     "cost": 1024,
-    "effect": "Raise evade and critical evade for set period for all Allies",
+    "effect": "Temporarily increases Critical/auto-evade rate for all allies",
     "element": "support"
   },
   "Masukunda": {
     "cardn": "Fortuna B, Naga B, Sarasvati",
     "cardr": "Devoted",
     "cost": 1016,
-    "effect": "Lower evade and critical evade for set period for wide range Foes",
+    "effect": "Temporarily decreases Critical/auto-evade rate for a wide area of foes",
     "element": "support"
   },
   "Matarukaja": {
     "cardn": "Naga B",
     "cost": 1024,
-    "effect": "Raise attack for set period for all Allies",
+    "effect": "Temporarily increases Attack for all allies",
     "element": "support"
   },
   "Matarunda": {
     "cardt": "Osaka",
     "cost": 1016,
-    "effect": "Lower attack for set period for wise range Foes",
+    "effect": "Temporarily decreases Attack for a wide area of foes",
     "element": "support"
   },
   "Mazio": {
@@ -1040,7 +1040,7 @@
   },
   "Morning Star": {
     "cost": 1050,
-    "effect": "Severe damage to wide range Foes",
+    "effect": "Colossal Almighty damage to a wide area foes",
     "element": "almighty"
   },
   "Mudo": {
@@ -1165,7 +1165,7 @@
   "One-shot Kill": {
     "cardr": "Devoted",
     "cost": 30,
-    "effect": "Heavy damage to close range Foes with high chance of critical hit",
+    "effect": "Heavy damage to close range Foes with very high chance of critical hit",
     "element": "gun"
   },
   "Oni Kagura": {
@@ -1233,14 +1233,14 @@
     "cardn": "Jack-o'-Lantern, Mokoi, Pixie",
     "cardr": "Frozen Blood",
     "cost": 1012,
-    "effect": "Raise defense and nullify knock-back for set period for 1 Ally",
+    "effect": "Temporarily increases Defense and prevents attacks from being interrupted for one ally",
     "element": "support"
   },
   "Rakunda": {
     "cardn": "Pixie B, Silky B",
     "cardr": "Devoted, Heroic Amulet",
     "cost": 1012,
-    "effect": "Lower defense for set period for close range Foes",
+    "effect": "Temporarily decreases Defense for an area of foes",
     "element": "support"
   },
   "Rampage": {
@@ -1253,32 +1253,32 @@
   "Rebel Soul": {
     "cardr": "Devoted",
     "cardt": "Request",
-    "effect": "Improves rate for increasing Showtime Gauge",
+    "effect": "Showtime gauge increases more quickly",
     "element": "passive"
   },
   "Recarm": {
     "cardn": "Mothman B",
     "cardt": "Sapporo",
     "cost": 1024,
-    "effect": "Revive 1 Ally with 50% HP",
+    "effect": "Revives one fallen ally to 50% HP",
     "element": "recovery"
   },
   "Regenerate 1": {
     "cardn": "Lilim B",
     "cardt": "Sapporo, Sendai",
-    "effect": "Slightly restore HP over time",
+    "effect": "Gradually restores HP. Minimum effect. Stacks with other Regenerate skills.",
     "element": "passive"
   },
   "Regenerate 2": {
     "cardn": "Kikuri-Hime, Neko Shogun, Okuninushi",
     "cardr": "Devoted",
-    "effect": "Moderately restore HP over time",
+    "effect": "Gradually restores HP. Minor effect. Stacks with other Regenerate skills.",
     "element": "passive"
   },
   "Regenerate 3": {
     "cardr": "Pinky Love",
     "cardt": "Final, Request",
-    "effect": "Greatly restore HP over time",
+    "effect": "Gradually restores HP. Stacks with other Regenerate skills.",
     "element": "passive"
   },
   "Resist Bless": {
@@ -1348,7 +1348,7 @@
     "cardn": "Ruby of Wrath",
     "cardr": "Devoted, Koppa Tengu B",
     "cost": 1048,
-    "effect": "Revive 1 Ally with 100% HP",
+    "effect": "Revives one fallen ally to full HP",
     "element": "recovery"
   },
   "Shock Boost": {
@@ -1384,29 +1384,29 @@
   },
   "Soul Thief": {
     "cardt": "Request",
-    "effect": "Attacks will drain SP from Foes afflicted with ailments",
+    "effect": "Drains SP when inflicting an ailment on one foe",
     "element": "passive"
   },
   "Speed Master": {
     "cardn": "Neko Shogun",
-    "effect": "Begin battle with Sukukaja",
+    "effect": "Activates Sukukaja at the start of battle",
     "element": "passive"
   },
   "Spell Master": {
     "cardr": "Devoted, Frozen Blood",
-    "effect": "Halves SP costs for skills",
+    "effect": "Decreases SP cost of skills",
     "element": "passive"
   },
   "Sukukaja": {
     "cardt": "Shibuya",
     "cost": 1012,
-    "effect": "Raise evade and critical evade for set period for all Allies",
+    "effect": "Temporarily increases Critical/auto-evade rate for one ally",
     "element": "support"
   },
   "Sukunda": {
     "cardn": "Jack-o'-Lantern, Pixie B",
     "cost": 1012,
-    "effect": "Lower evade and critical evade for set period for close range Foes",
+    "effect": "Temporarily decreases Critical/auto-evade rate for an area of foes",
     "element": "support"
   },
   "Survival Trick": {
@@ -1423,20 +1423,20 @@
   "Sword Dance": {
     "cardr": "Demon Jewel, Devoted, Heroic Amulet",
     "cost": 25,
-    "effect": "Severe damage to close range Foes with high chance of critical hit",
+    "effect": "Severe damage to close range Foes with very high chance of critical hit",
     "element": "phys"
   },
   "Tarukaja": {
     "cardn": "Andras",
     "cardt": "Shibuya",
     "cost": 1012,
-    "effect": "Raise attack for set period for 1 Ally",
+    "effect": "Temporarily increases Attack for one ally",
     "element": "support"
   },
   "Tarunda": {
     "cardt": "Shibuya",
     "cost": 1012,
-    "effect": "Lower attack for set period for close range Foes",
+    "effect": "Temporarily decreases Attack for an area of foes",
     "element": "support"
   },
   "Taunt": {
@@ -1462,7 +1462,7 @@
     "cardn": "High Pixie, High Pixie B",
     "cardr": "Devoted",
     "cost": 1006,
-    "effect": "Nullify next instant death attack for 1 Ally",
+    "effect": "A barrier that nullifies an insta-kill once for one ally",
     "element": "support"
   },
   "Thunder Reign": {
