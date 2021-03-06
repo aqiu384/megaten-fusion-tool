@@ -68,7 +68,7 @@ export class Compendium implements ICompendium {
           rank:      json['rank'] || 99,
           effect:    json['effect'],
           learnedBy: [],
-          transfer:  [],
+          transfer:  json['transfer'] ? [{ demon: json['transfer'], level: -100 }] : [],
           level:     0
         };
       }

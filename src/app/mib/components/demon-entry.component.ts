@@ -148,15 +148,18 @@ export class DemonEntryComponent implements OnChanges {
       [demon]="demon"
       [compendium]="compendium">
     </app-enemy-entry>
-    <table *ngIf="demon && demon.race === 'Gem'">
-      <thead>
-        <tr><th>Gem {{ demon.name }}</th></tr>
-        <tr><th>How to Obtain</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Item drop only</td></tr>
-      </tbody>
-    </table>
+    <ng-container>
+    <ng-container *ngIf="demon && demon.race === 'Gem'">
+      <h2>Gem {{ demon.name }}</h2>
+      <table class="entry-table">
+        <thead>
+          <tr><th class="title">How to Obtain</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Item drop only</td></tr>
+        </tbody>
+      </table>
+    </ng-container>
   `
 })
 export class DemonEntryContainerComponent extends DECC {

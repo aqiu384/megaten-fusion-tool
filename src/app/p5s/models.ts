@@ -1,9 +1,9 @@
 import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
-  eresists?: number[];
+  eresists: number[];
   combos: string[];
-  area?: string;
+  area: string;
 }
 
 export interface Skill extends BaseSkill {

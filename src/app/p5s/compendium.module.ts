@@ -58,12 +58,18 @@ for (const entry of Object.values(PARTY_DATA_JSON)) {
   entry['fusion'] = 'party';
 }
 
+for (const entry of Object.values(SKILL_DATA_JSON)) {
+  if (entry['rank'] < 21) {
+    entry['transfer'] = COMP_CONFIG_JSON.skillCardRanks[entry['rank'] - 1];
+  }
+}
+
 for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name]['prereq'] = prereq;
   DEMON_DATA_JSON[name]['fusion'] = 'enemy';
 }
 
-export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
+export const P5S_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona 5 Striker',
   appCssClasses: ['p5'],
 
@@ -108,7 +114,7 @@ export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
     [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: P4_COMPENDIUM_CONFIG }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: P5S_COMPENDIUM_CONFIG }]
   ]
 })
 export class CompendiumModule { }

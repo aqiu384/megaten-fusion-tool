@@ -30,7 +30,9 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
               Fusion Chart
             </a></div>
           </th>
-          <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
+          <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [style.width.%]="1 / hlength">
             <div><a routerLink="{{ l.link }}">
               {{ l.title }}
             </a></div>
