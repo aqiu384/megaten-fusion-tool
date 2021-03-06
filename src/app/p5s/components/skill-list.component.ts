@@ -11,7 +11,6 @@ import { CompendiumConfig } from '../models';
   template: `
     <app-smt-skill-list
       [elemOrder]="compConfig.elemOrder"
-      [hasRank]="false"
       [isPersona]="true"
       [rowData]="skills | async">
     </app-smt-skill-list>

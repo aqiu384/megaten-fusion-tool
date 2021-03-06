@@ -2,6 +2,7 @@
   "Abyss": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Abyssal",
     "lvl": 69,
     "race": "Treasure",
     "resists": "--------w-",
@@ -38,15 +39,18 @@
   "Andras": {
     "combos": ["Shadow of Grief", "Mabufu", "Terror Claw"],
     "inherits": "ice",
+    "location": "Shibuya",
     "lvl": 10,
     "race": "Devil",
     "resists": "--ws--s-wn",
+    "riskyrs": "--wd-ns-wn",
     "skills": {"Mabufu": 0, "Terror Claw": 0, "Sukunda": 12, "Dodge Phys": 14},
     "stats": [5, 9, 7, 10, 6]
   },
   "Arahabaki": {
     "combos": ["Masukunda", "Assault Dive", "Maeiga"],
     "inherits": "curse",
+    "location": "Okinawa",
     "lvl": 36,
     "race": "Hermit",
     "resists": "ss-w--wwnn",
@@ -74,18 +78,22 @@
   "Berith": {
     "combos": ["Shadow of Grief", "Rakukaja", "Rampage"],
     "inherits": "support",
+    "location": "Sendai",
     "lvl": 15,
     "race": "Hierophant",
     "resists": "-nsw------",
+    "riskyrs": "-ndw-n----",
     "skills": {"Rakukaja": 0, "Double Fangs": 0, "Rampage": 0, "Null Fear": 16, "Dodge Fire": 17},
     "stats": [13, 9, 11, 13, 6]
   },
   "Bicorn": {
     "combos": ["Shadow of Grief", "Garu", "Lunge"],
     "inherits": "wind",
+    "location": "Shibuya",
     "lvl": 4,
     "race": "Hermit",
     "resists": "----w---s-",
+    "riskyrs": "-s--wd--s-",
     "skills": {"Lunge": 0, "Garu": 0, "Rampage": 6, "Null Dizzy": 7},
     "stats": [5, 3, 3, 5, 3]
   },
@@ -101,18 +109,22 @@
   "Black Ooze": {
     "combos": ["Headbutt", "Eiga", "Matarunda"],
     "inherits": "curse",
+    "location": "Okinawa",
     "lvl": 33,
     "race": "Moon",
     "resists": "ss-sw-w-wn",
+    "riskyrs": "nn-sw-w-wd",
     "skills": {"Matarunda": 0, "Headbutt": 0, "Eiga": 35, "Ailment Boost": 38},
     "stats": [21, 20, 22, 18, 25]
   },
   "Bugs": {
     "combos": ["Masukunda", "Psiodyne", "Bloodbath"],
     "inherits": "psy",
+    "location": "Abyssal",
     "lvl": 53,
     "race": "Fool",
     "resists": "-----sswwn",
+    "riskyrs": "-----nnwwn",
     "skills": {"Bloodbath": 0, "Masukunda": 0, "Psiodyne": 0, "Fear Boost": 55, "Dodge Phys": 58},
     "stats": [39, 36, 32, 35, 24]
   },
@@ -137,6 +149,7 @@
   "Demon Jewel": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Sendai",
     "lvl": 19,
     "race": "Treasure",
     "resists": "---w------",
@@ -146,6 +159,7 @@
   "Devoted": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Final",
     "lvl": 79,
     "race": "Treasure",
     "resists": "---------w",
@@ -155,9 +169,11 @@
   "Dominion": {
     "combos": ["Hamaon", "Kougaon", "Mahamaon"],
     "inherits": "bless",
+    "location": "Final",
     "lvl": 62,
     "race": "Justice",
     "resists": "-w--w--dns",
+    "riskyrs": "-w-nw--dns",
     "skills": {"Nocturnal Flash": 0, "Hamaon": 0, "Kougaon": 0, "Hama Boost": 63, "Mahamaon": 65, "Bless Amp": 67},
     "stats": [38, 41, 39, 40, 35]
   },
@@ -173,15 +189,18 @@
   "Forneus": {
     "combos": ["Shadow of Grief", "Mapsiodyne", "Makajamaon"],
     "inherits": "psy",
+    "location": "Final",
     "lvl": 60,
     "race": "Hierophant",
     "resists": "---nw-d---",
+    "riskyrs": "-s-nw-d--d",
     "skills": {"Mapsiodyne": 0, "Eigaon": 0, "Makajamaon": 0, "Psy Amp": 62, "Technical Adept": 64, "Psycho Blast": 74},
     "stats": [39, 37, 38, 40, 33]
   },
   "Fortuna": {
     "combos": ["Shadow of Grief", "Garudyne", "Concentrate"],
     "inherits": "wind",
+    "location": "Osaka",
     "lvl": 49,
     "race": "Fortune",
     "resists": "--n-wd----",
@@ -191,6 +210,7 @@
   "Frozen Blood": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Sapporo",
     "lvl": 29,
     "race": "Treasure",
     "resists": "------w---",
@@ -200,6 +220,7 @@
   "Ganesha": {
     "combos": ["Vajra Blast", "Freidyne", "Charge"],
     "inherits": "nuke",
+    "location": "Osaka",
     "lvl": 47,
     "race": "Sun",
     "resists": "s---wnwd-w",
@@ -218,6 +239,7 @@
   "Heroic Amulet": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Osaka",
     "lvl": 59,
     "race": "Treasure",
     "resists": "-------w--",
@@ -227,9 +249,11 @@
   "High Pixie": {
     "combos": ["Makajam", "Magaru", "Garula"],
     "inherits": "wind",
+    "location": "Sendai",
     "lvl": 16,
     "race": "Fool",
     "resists": "-w--ss-w--",
+    "riskyrs": "-w--sdnw--",
     "skills": {"Magaru": 0, "Makajam": 0, "Media": 18, "Garula": 20, "Recarm": 22},
     "stats": [8, 14, 10, 13, 10]
   },
@@ -245,15 +269,18 @@
   "Jack Frost": {
     "combos": ["Marakunda", "Bufula", "Mabufula"],
     "inherits": "ice",
+    "location": "Sapporo",
     "lvl": 24,
     "race": "Magician",
     "resists": "--wd------",
+    "riskyrs": "--wd---sn-",
     "skills": {"Bufula": 0, "Marakunda": 0, "Freeze Boost": 25, "Ice Boost": 28, "Mabufula": 30},
     "stats": [17, 20, 11, 20, 11]
   },
   "Jack-o'-Lantern": {
     "combos": ["Shadow of Grief", "Agi", "Rakunda"],
     "inherits": "fire",
+    "location": "Shibuya",
     "lvl": 2,
     "race": "Magician",
     "resists": "--dw-w----",
@@ -263,27 +290,33 @@
   "Kaiwan": {
     "combos": ["Shadow of Grief", "Mapsio", "Concentrate"],
     "inherits": "psy",
+    "location": "Sapporo",
     "lvl": 30,
     "race": "Star",
     "resists": "-n----dw--",
+    "riskyrs": "-n----dwn-",
     "skills": {"Concentrate": 0, "Mapsio": 0, "Dodge Nuke": 32, "Technical Adept": 34},
     "stats": [19, 21, 20, 19, 18]
   },
   "Kali": {
     "combos": ["Oni Kagura", "Psiodyne", "Vorpal Blade"],
     "inherits": "psy",
+    "location": "Final",
     "lvl": 64,
     "race": "Empress",
     "resists": "--nw--n--s",
+    "riskyrs": "--nwn-n--s",
     "skills": {"Vorpal Blade": 0, "Oni Kagura": 0, "Psiodyne": 0, "Myriad Slashes": 65, "Evade Ice": 67, "Mapsiodyne": 69, "Psycho Force": 75},
     "stats": [42, 38, 40, 42, 37]
   },
   "Kikuri-Hime": {
     "combos": ["Lullaby", "Marakukaja", "Diarama"],
     "inherits": "support",
+    "location": "Kyoto",
     "lvl": 40,
     "race": "Priestess",
     "resists": "--w--n--s-",
+    "riskyrs": "--w--ns-ds",
     "skills": {"Lullaby": 0, "Marakukaja": 0, "Diarama": 0, "Mediarama": 42, "Divine Grace": 44},
     "stats": [22, 31, 24, 28, 22]
   },
@@ -299,6 +332,7 @@
   "Koppa Tengu": {
     "combos": ["Shadow of Grief", "Magarula", "One-shot Kill"],
     "inherits": "wind",
+    "location": "Kyoto",
     "lvl": 39,
     "race": "Temperance",
     "resists": "-w-w-s--w-",
@@ -317,36 +351,44 @@
   "Lamia": {
     "combos": ["Shadow of Grief", "Agilao", "Brain Shake"],
     "inherits": "fire",
+    "location": "Sendai",
     "lvl": 18,
     "race": "Empress",
     "resists": "--sws--w-n",
+    "riskyrs": "--nws--w-n",
     "skills": {"Agilao": 0, "Brain Shake": 0, "Tetraja": 19, "Brainwash Boost": 22},
     "stats": [13, 11, 13, 14, 10]
   },
   "Legion": {
     "combos": ["Rampage", "Psio", "Brain Shake"],
     "inherits": "psy",
+    "location": "Okinawa",
     "lvl": 34,
     "race": "Fool",
     "resists": "s-s-w-swwn",
+    "riskyrs": "s-n-w-dwwn",
     "skills": {"Psio": 0, "Brain Shake": 0, "Life Drain": 0, "Rampage": 36, "Brainwash Boost": 41},
     "stats": [22, 21, 26, 20, 20]
   },
   "Lilim": {
     "combos": ["Evil Smile", "Mabufula", "Dekaja"],
     "inherits": "support",
+    "location": "Sapporo",
     "lvl": 25,
     "race": "Devil",
     "resists": "---s-w--wn",
+    "riskyrs": "--ns-w--wd",
     "skills": {"Mabufula": 0, "Evil Smile": 0, "Null Forget": 27, "Soul Thief": 29, "Dekaja": 30},
     "stats": [15, 18, 14, 19, 16]
   },
   "Lilith": {
     "combos": ["Shadow of Grief", "Mabufudyne", "Maragidyne"],
     "inherits": "ice",
+    "location": "Abyssal",
     "lvl": 54,
     "race": "Moon",
     "resists": "--wn---n-n",
+    "riskyrs": "--wn-n-n-n",
     "skills": {"Mabufudyne": 0, "Maragidyne": 0, "Magarudyne": 0, "Brain Jack": 56, "Soul Thief": 59},
     "stats": [30, 38, 34, 35, 32]
   },
@@ -398,15 +440,18 @@
   "Mokoi": {
     "combos": ["Shadow of Grief", "Tarukaja", "Sledgehammer"],
     "inherits": "support",
+    "location": "Shibuya",
     "lvl": 8,
     "race": "Death",
     "resists": "----sw----",
+    "riskyrs": "-n-ssw----",
     "skills": {"Tarukaja": 0, "Sledgehammer": 0, "Dekunda": 10, "Null Rage": 12},
     "stats": [8, 5, 5, 9, 4]
   },
   "Mot": {
     "combos": ["Marakukaja", "Megidola", "Mafreidyne"],
     "inherits": "nuke",
+    "location": "Abyssal",
     "lvl": 57,
     "race": "Death",
     "resists": "-s--dw---n",
@@ -416,15 +461,18 @@
   "Mothman": {
     "combos": ["Shadow of Grief", "Mazionga", "Flash Bomb"],
     "inherits": "elec",
+    "location": "Sapporo",
     "lvl": 28,
     "race": "Moon",
     "resists": "-w--d-s---",
+    "riskyrs": "-w-sd-s---",
     "skills": {"Mazionga": 0, "Flash Bomb": 0, "Dizzy Boost": 30, "Megido": 33},
     "stats": [18, 20, 15, 20, 18]
   },
   "Naga": {
     "combos": ["Rakukaja", "Mazionga", "Memory Blow"],
     "inherits": "elec",
+    "location": "Osaka",
     "lvl": 44,
     "race": "Hermit",
     "resists": "-s--nw----",
@@ -434,6 +482,7 @@
   "Nebiros": {
     "combos": ["Shadow of Grief", "Eigaon", "Mudoon"],
     "inherits": "curse",
+    "location": "Abyssal",
     "lvl": 55,
     "race": "Devil",
     "resists": "------n-ws",
@@ -443,9 +492,11 @@
   "Neko Shogun": {
     "combos": ["Sukukaja", "Maragion", "Heat Wave"],
     "inherits": "fire",
+    "location": "Kyoto",
     "lvl": 37,
     "race": "Star",
     "resists": "----sw--ns",
+    "riskyrs": "----nw--ns",
     "skills": {"Maragion": 0, "Sukukaja": 0, "Dodge Wind": 39, "Heat Wave": 40, "Speed Master": 42},
     "stats": [23, 24, 23, 26, 22]
   },
@@ -461,24 +512,29 @@
   "Okuninushi": {
     "combos": ["Shadow of Grief", "Psio", "Tempest Slash"],
     "inherits": "psy",
+    "location": "Kyoto",
     "lvl": 42,
     "race": "Emperor",
     "resists": "----nwdw--",
+    "riskyrs": "--ssnwdw--",
     "skills": {"Psio": 0, "Tempest Slash": 0, "Matarukaja": 0, "Psy Boost": 46, "Psiodyne": 48},
     "stats": [28, 27, 27, 26, 25]
   },
   "Orthrus": {
     "combos": ["Double Fangs", "Frei", "Terror Claw"],
     "inherits": "nuke",
+    "location": "Sendai",
     "lvl": 21,
     "race": "Hanged",
     "resists": "--dw---s--",
+    "riskyrs": "--dw---d--",
     "skills": {"Frei": 0, "Double Fangs": 0, "Terror Claw": 0, "Dodge Ice": 23, "Freila": 26},
     "stats": [16, 14, 14, 19, 7]
   },
   "Pinky Love": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Shibuya",
     "lvl": 9,
     "race": "Treasure",
     "resists": "--w-------",
@@ -488,6 +544,7 @@
   "Pisaca": {
     "combos": ["Mudo", "Life Drain", "Mamudo"],
     "inherits": "curse",
+    "location": "Sendai",
     "lvl": 22,
     "race": "Death",
     "resists": "--w-s---wd",
@@ -497,18 +554,22 @@
   "Pixie": {
     "combos": ["Dia", "Zio", "Mazio"],
     "inherits": "healing",
+    "location": "Shibuya",
     "lvl": 2,
     "race": "Lovers",
     "resists": "-w-ws---sw",
+    "riskyrs": "-w-wd---sw",
     "skills": {"Zio": 0, "Dia": 0, "Null Sleep": 3, "Mazio": 6},
     "stats": [1, 3, 3, 4, 2]
   },
   "Principality": {
     "combos": ["Makajam", "Media", "Makouga"],
     "inherits": "healing",
+    "location": "Sapporo",
     "lvl": 27,
     "race": "Justice",
     "resists": "--s-----nw",
+    "riskyrs": "--s----sdw",
     "skills": {"Makouga": 0, "Makajam": 0, "Media": 0, "Recarm": 28, "Forget Boost": 30},
     "stats": [15, 18, 17, 20, 18]
   },
@@ -524,6 +585,7 @@
   "Raja Naga": {
     "combos": ["Masukukaja", "Ziodyne", "Maziodyne"],
     "inherits": "elec",
+    "location": "Osaka",
     "lvl": 50,
     "race": "Temperance",
     "resists": "-s--d----w",
@@ -533,6 +595,7 @@
   "Ruby of Wrath": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Kyoto",
     "lvl": 49,
     "race": "Treasure",
     "resists": "----w-----",
@@ -542,6 +605,7 @@
   "Sarasvati": {
     "combos": ["Dekaja", "Mediarama", "Matarunda"],
     "inherits": "healing",
+    "location": "Osaka",
     "lvl": 48,
     "race": "Priestess",
     "resists": "---ns--w--",
@@ -551,9 +615,11 @@
   "Setanta": {
     "combos": ["Giant Slice", "Dormin Rush", "Mafrei"],
     "inherits": "nuke",
+    "location": "Sapporo",
     "lvl": 26,
     "race": "Emperor",
     "resists": "-s----ws--",
+    "riskyrs": "-s-s--wd--",
     "skills": {"Giant Slice": 0, "Dormin Rush": 0, "Mafrei": 0, "Sleep Boost": 28, "Regenerate 1": 31},
     "stats": [18, 16, 18, 17, 16]
   },
@@ -569,9 +635,11 @@
   "Shiisaa": {
     "combos": ["Shadow of Grief", "Zionga", "Assault Dive"],
     "inherits": "elec",
+    "location": "Okinawa",
     "lvl": 35,
     "race": "Chariot",
     "resists": "s-w---w-nw",
+    "riskyrs": "s-w-d-w-nw",
     "skills": {"Assault Dive": 0, "Sukukaja": 0, "Zionga": 0, "Dodge Curse": 37, "Technical High": 40},
     "stats": [30, 16, 23, 30, 13]
   },
@@ -587,27 +655,33 @@
   "Silky": {
     "combos": ["Dormina", "Bufu", "Mabufu"],
     "inherits": "ice",
+    "location": "Shibuya",
     "lvl": 6,
     "race": "Priestess",
     "resists": "--wsw-----",
+    "riskyrs": "--wdwn----",
     "skills": {"Dormina": 0, "Bufu": 0, "Sleep Boost": 7, "Mabufu": 9, "Dekaja": 10},
     "stats": [4, 7, 4, 5, 5]
   },
   "Slime": {
     "combos": ["Evil Touch", "Eiha", "Hysterical Slap"],
     "inherits": "curse",
+    "location": "Sendai",
     "lvl": 12,
     "race": "Chariot",
     "resists": "ssw--w----",
+    "riskyrs": "nnws-w---d",
     "skills": {"Hysterical Slap": 0, "Evil Touch": 0, "Maeiha": 13, "Rage Boost": 15},
     "stats": [10, 8, 13, 7, 5]
   },
   "Succubus": {
     "combos": ["Marin Karin", "Psi", "Snap"],
     "inherits": "psy",
+    "location": "Shibuya",
     "lvl": 11,
     "race": "Moon",
     "resists": "-ws--ws-wn",
+    "riskyrs": "-wn--wdswn",
     "skills": {"Marin Karin": 0, "Psi": 0, "Null Brainwash": 12, "Snap": 14},
     "stats": [5, 10, 7, 13, 5]
   },
@@ -641,6 +715,7 @@
   "Valkyrie": {
     "combos": ["Shadow of Grief", "Bloodbath", "Brain Buster"],
     "inherits": "phys",
+    "location": "Osaka",
     "lvl": 45,
     "race": "Strength",
     "resists": "-swn----d-",
@@ -650,6 +725,7 @@
   "Vanitas": {
     "combos": [],
     "inherits": "almighty",
+    "location": "Okinawa",
     "lvl": 39,
     "race": "Treasure",
     "resists": "-----w----",
@@ -659,9 +735,11 @@
   "Yatagarasu": {
     "combos": ["Sukukaja", "Ziodyne", "Dekunda"],
     "inherits": "elec",
+    "location": "Final",
     "lvl": 58,
     "race": "Sun",
     "resists": "-w---s--nw",
+    "riskyrs": "-ws-ds--nw",
     "skills": {"Ziodyne": 0, "Sukukaja": 0, "Dekunda": 0, "Maziodyne": 59, "Knockdown Style": 61},
     "stats": [36, 42, 30, 41, 32]
   },

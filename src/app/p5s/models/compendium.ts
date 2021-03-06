@@ -45,6 +45,8 @@ export class Compendium implements ICompendium {
           inherit: json['inherits'],
           stats:   json['stats'],
           resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
+          eresists: (json['riskyrs'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
+          area:    json['location'] || '',
           combos:  json['combos'],
           skills:  json['skills'],
           fusion:  json['fusion'] || 'normal',
@@ -63,40 +65,12 @@ export class Compendium implements ICompendium {
           name,
           element:   json['element'],
           cost:      json['cost'] || 0,
-          rank:      json['cost'] / 100 || 0,
+          rank:      json['rank'] || 99,
           effect:    json['effect'],
           learnedBy: [],
           transfer:  [],
           level:     0
         };
-
-        const transfer = [];
-
-        if (json['cardn']) {
-          for (const dname of json['cardn'].split(', ')) {
-            transfer.push({ demon: dname, level: demons[dname] ? 0 : -100 });
-          }
-        }
-
-        if (json['cardr']) {
-          for (const dname of json['cardr'].split(', ')) {
-            if (demons[dname]) {
-              transfer.push({ demon: dname, level: 5073 });
-            } else {
-              transfer.push({ demon: dname + ' (Ri)', level: -100 });
-            }
-          }
-        }
-
-        if (json['cardt']) {
-          for (const dname of json['cardt'].split(', ')) {
-            transfer.push({ demon: dname === 'Request' ? dname : dname + ' (Tr)', level: -100 });
-          }
-        }
-
-        if (transfer.length > 0) {
-          skills[name].transfer = transfer;
-        }
       }
     }
 

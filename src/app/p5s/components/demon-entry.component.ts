@@ -26,6 +26,11 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
+      <app-demon-resists *ngIf="demon.area"
+        [title]="demon.area + ' Encounter (Risky)'"
+        [resistHeaders]="compConfig.resistElems"
+        [resists]="demon.eresists">
+      </app-demon-resists>
       <table *ngIf="comboSkills.length" class="entry-table">
         <thead>
           <tr><th colSpan="4" class="title">Combo Skills</th></tr>

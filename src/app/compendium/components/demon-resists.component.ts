@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { ResistanceLevels } from '../constants';
 
 @Component({
   selector: 'app-demon-resists',
@@ -6,7 +7,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   template: `
     <table *ngIf="resistHeaders.length" class="entry-table">
       <thead>
-        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length" class="title">Resistances</th></tr>
+        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length" class="title">{{ title }}</th></tr>
         <tr>
           <th [attr.colSpan]="resistHeaders.length">Element</th>
           <th *ngIf="ailmentHeaders.length" [attr.colSpan]="ailmentHeaders.length">Ailment</th>
@@ -36,6 +37,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   `
 })
 export class DemonResistsComponent {
+  @Input() title = 'Resistances';
   @Input() resistHeaders: string[] = [];
   @Input() resists: number[] = [];
   @Input() ailmentHeaders: string[] = [];
