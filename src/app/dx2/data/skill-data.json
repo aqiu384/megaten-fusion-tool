@@ -314,6 +314,13 @@
     "power": 35,
     "target": "1 Foe"
   },
+  "Blasphemy": {
+    "cost": 6,
+    "effect": "Deals Fire or Ice dmg, Pierce, 40% Charm or Poison on all Foes",
+    "elem": "alm",
+    "power": 160,
+    "target": "1 Foe"
+  },
   "Bleeder": {
     "cost": 6,
     "effect": "Removes 2 MP",
@@ -2091,6 +2098,10 @@
     "elem": "ail",
     "points": 8,
     "target": "1 Foe"
+  },
+  "Mark of the Beast": {
+    "effect": "66% Mute on all Poisoned Foes and 666 dmg on all Charmed Foes at end of turn, Nullifies endure effects",
+    "elem": "pas"
   },
   "Master Assassin": {
     "effect": "Single-target skill dmg +20%",
