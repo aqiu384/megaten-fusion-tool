@@ -1,14 +1,4 @@
 {
-  "Abyss": {
-    "combos": [],
-    "inherits": "almighty",
-    "location": "Abyssal",
-    "lvl": 69,
-    "race": "Treasure",
-    "resists": "--------w-",
-    "skills": {},
-    "stats": [35, 35, 35, 35, 35]
-  },
   "Abaddon": {
     "combos": ["Brain Buster", "Maeigaon", "Deathbound"],
     "inherits": "curse",
@@ -17,6 +7,17 @@
     "resists": "sn----wwsd",
     "skills": {"Deathbound": 0, "Brain Buster": 0, "Maeigaon": 0, "Defense Master": 67, "Survival Trick": 69, "Agneyastra": 71},
     "stats": [45, 37, 49, 36, 38]
+  },
+  "Abyssal Bezoar": {
+    "combos": [],
+    "inherits": "almighty",
+    "location": "Abyss",
+    "lvl": 62,
+    "race": "Treasure",
+    "resists": "--------w-",
+    "riskyrs": "ssnnnnnnwn",
+    "skills": {},
+    "stats": [35, 35, 35, 35, 35]
   },
   "Alice": {
     "combos": ["Concentrate", "Mamudoon", "Megidolaon"],
@@ -36,6 +37,17 @@
     "skills": {"Bufula": 0, "Masukukaja": 0, "Diarama": 24, "Media": 26, "Divine Grace": 29},
     "stats": [13, 16, 16, 16, 15]
   },
+  "Amulet of Heroes": {
+    "combos": [],
+    "inherits": "almighty",
+    "location": "Osaka",
+    "lvl": 59,
+    "race": "Treasure",
+    "resists": "-------w--",
+    "riskyrs": "ssnnnnnwnn",
+    "skills": {},
+    "stats": [30, 30, 30, 30, 30]
+  },
   "Andras": {
     "combos": ["Shadow of Grief", "Mabufu", "Terror Claw"],
     "inherits": "ice",
@@ -46,6 +58,17 @@
     "riskyrs": "--wd-ns-wn",
     "skills": {"Mabufu": 0, "Terror Claw": 0, "Sukunda": 12, "Dodge Phys": 14},
     "stats": [5, 9, 7, 10, 6]
+  },
+  "Apple of Rage": {
+    "combos": [],
+    "inherits": "almighty",
+    "location": "Kyoto",
+    "lvl": 47,
+    "race": "Treasure",
+    "resists": "----w-----",
+    "riskyrs": "ssnnwnnnnn",
+    "skills": {},
+    "stats": [25, 25, 25, 25, 25]
   },
   "Arahabaki": {
     "combos": ["Masukunda", "Assault Dive", "Maeiga"],
@@ -120,7 +143,7 @@
   "Bugs": {
     "combos": ["Masukunda", "Psiodyne", "Bloodbath"],
     "inherits": "psy",
-    "location": "Abyssal",
+    "location": "Abyss",
     "lvl": 53,
     "race": "Fool",
     "resists": "-----sswwn",
@@ -146,25 +169,16 @@
     "skills": {"Dormin Rush": 0, "Oni Kagura": 0, "Speed Master": 0, "Rage Boost": 60, "Matarukaja": 62, "Regenerate 3": 65},
     "stats": [40, 32, 40, 40, 32]
   },
-  "Demon Jewel": {
+  "Diabolus Jewel": {
     "combos": [],
     "inherits": "almighty",
     "location": "Sendai",
-    "lvl": 19,
+    "lvl": 27,
     "race": "Treasure",
     "resists": "---w------",
+    "riskyrs": "ssnwnnnnnn",
     "skills": {},
     "stats": [10, 10, 10, 10, 10]
-  },
-  "Devoted": {
-    "combos": [],
-    "inherits": "almighty",
-    "location": "Final",
-    "lvl": 79,
-    "race": "Treasure",
-    "resists": "---------w",
-    "skills": {},
-    "stats": [40, 40, 40, 40, 40]
   },
   "Dominion": {
     "combos": ["Hamaon", "Kougaon", "Mahamaon"],
@@ -211,9 +225,10 @@
     "combos": [],
     "inherits": "almighty",
     "location": "Sapporo",
-    "lvl": 29,
+    "lvl": 38,
     "race": "Treasure",
     "resists": "------w---",
+    "riskyrs": "ssnnnnwnnn",
     "skills": {},
     "stats": [15, 15, 15, 15, 15]
   },
@@ -235,16 +250,6 @@
     "resists": "-s------wd",
     "skills": {"Swift Strike": 0, "Tarukaja": 0, "Endure": 48, "Triple Down": 49, "Attack Master": 51},
     "stats": [32, 28, 34, 28, 23]
-  },
-  "Heroic Amulet": {
-    "combos": [],
-    "inherits": "almighty",
-    "location": "Osaka",
-    "lvl": 59,
-    "race": "Treasure",
-    "resists": "-------w--",
-    "skills": {},
-    "stats": [30, 30, 30, 30, 30]
   },
   "High Pixie": {
     "combos": ["Makajam", "Magaru", "Garula"],
@@ -384,7 +389,7 @@
   "Lilith": {
     "combos": ["Shadow of Grief", "Mabufudyne", "Maragidyne"],
     "inherits": "ice",
-    "location": "Abyssal",
+    "location": "Abyss",
     "lvl": 54,
     "race": "Moon",
     "resists": "--wn---n-n",
@@ -451,7 +456,7 @@
   "Mot": {
     "combos": ["Marakukaja", "Megidola", "Mafreidyne"],
     "inherits": "nuke",
-    "location": "Abyssal",
+    "location": "Abyss",
     "lvl": 57,
     "race": "Death",
     "resists": "-s--dw---n",
@@ -482,7 +487,7 @@
   "Nebiros": {
     "combos": ["Shadow of Grief", "Eigaon", "Mudoon"],
     "inherits": "curse",
-    "location": "Abyssal",
+    "location": "Abyss",
     "lvl": 55,
     "race": "Devil",
     "resists": "------n-ws",
@@ -531,16 +536,6 @@
     "skills": {"Frei": 0, "Double Fangs": 0, "Terror Claw": 0, "Dodge Ice": 23, "Freila": 26},
     "stats": [16, 14, 14, 19, 7]
   },
-  "Pinky Love": {
-    "combos": [],
-    "inherits": "almighty",
-    "location": "Shibuya",
-    "lvl": 9,
-    "race": "Treasure",
-    "resists": "--w-------",
-    "skills": {},
-    "stats": [5, 5, 5, 5, 5]
-  },
   "Pisaca": {
     "combos": ["Mudo", "Life Drain", "Mamudo"],
     "inherits": "curse",
@@ -561,6 +556,17 @@
     "riskyrs": "-w-wd---sw",
     "skills": {"Zio": 0, "Dia": 0, "Null Sleep": 3, "Mazio": 6},
     "stats": [1, 3, 3, 4, 2]
+  },
+  "Precious Pink": {
+    "combos": [],
+    "inherits": "almighty",
+    "location": "Shibuya",
+    "lvl": 18,
+    "race": "Treasure",
+    "resists": "--w-------",
+    "riskyrs": "sswnnnnnnn",
+    "skills": {},
+    "stats": [5, 5, 5, 5, 5]
   },
   "Principality": {
     "combos": ["Makajam", "Media", "Makouga"],
@@ -592,15 +598,16 @@
     "skills": {"Ziodyne": 0, "Masukukaja": 0, "Elec Boost": 0, "Maziodyne": 52, "Evade Wind": 53, "Thunder Reign": 75},
     "stats": [30, 32, 34, 32, 29]
   },
-  "Ruby of Wrath": {
+  "Sacrificial Offering": {
     "combos": [],
     "inherits": "almighty",
-    "location": "Kyoto",
-    "lvl": 49,
+    "location": "Final",
+    "lvl": 64,
     "race": "Treasure",
-    "resists": "----w-----",
+    "resists": "---------w",
+    "riskyrs": "ssnnnnnnnw",
     "skills": {},
-    "stats": [25, 25, 25, 25, 25]
+    "stats": [40, 40, 40, 40, 40]
   },
   "Sarasvati": {
     "combos": ["Dekaja", "Mediarama", "Matarunda"],
@@ -726,9 +733,10 @@
     "combos": [],
     "inherits": "almighty",
     "location": "Okinawa",
-    "lvl": 39,
+    "lvl": 42,
     "race": "Treasure",
     "resists": "-----w----",
+    "riskyrs": "ssnnnwnnnn",
     "skills": {},
     "stats": [20, 20, 20, 20, 20]
   },
