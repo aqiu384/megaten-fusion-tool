@@ -1,4 +1,9 @@
 {
+  "Analysis": {
+    "effect": "Displays enemy stats and resistances",
+    "element": "passive",
+    "unique": true
+  },
   "AoA Level 1": {
     "effect": "Increases All-out Attack damage output to level 1",
     "element": "passive",
@@ -84,6 +89,11 @@
     "target": "All Allies",
     "unique": true
   },
+  "Stamina Song": {
+    "effect": "Recover 10% HP to party after battle",
+    "element": "passive",
+    "unique": true
+  },
   "The Man's Way": {
     "cost": 1030,
     "effect": "Chance of Down or Dizzy",
@@ -98,6 +108,11 @@
   },
   "Treasure Radar": {
     "effect": "Reveal the location of treasure chests on each floor",
+    "element": "passive",
+    "unique": true
+  },
+  "Vigor Song": {
+    "effect": "Recover 10% SP to party after battle",
     "element": "passive",
     "unique": true
   },
