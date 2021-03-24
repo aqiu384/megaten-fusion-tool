@@ -13,10 +13,8 @@ import MEGATEN_FUSION_TOOLS from './data-sources.json';
       </thead>
       <tbody>
         <tr *ngFor="let tool of fusionTools">
-          <th class="nav">
-            <div>
-              <a routerLink="../{{ tool.tool }}">{{ tool.game }}</a>
-            </div>
+          <th class="nav" [routerLink]="'../' + tool.tool">
+            <a [routerLink]="'../' + tool.tool">{{ tool.game }}</a>
           </th>
           <td>
             <ul>
@@ -27,7 +25,7 @@ import MEGATEN_FUSION_TOOLS from './data-sources.json';
           </td>
         </tr>
         <tr>
-          <th class="nav">
+          <th class="nav external">
             <div>
               <a href="https://github.com/aqiu384/megaten-fusion-tool/issues">Report Issue</a>
             </div>

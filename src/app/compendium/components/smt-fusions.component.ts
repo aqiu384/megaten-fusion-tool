@@ -14,10 +14,11 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             <th *ngFor="let option of fusionOptions"
               class="nav"
               routerLinkActive="active"
+              [routerLink]="option.link"
               [style.width.%]="100 / fusionOptions.length"
               [routerLinkActiveOptions]="{ exact: true }">
               <div>
-                <a routerLink="{{ option.link }}">{{ option.title }}</a>
+                <a [routerLink]="option.link">{{ option.title }}</a>
               </div>
             </th>
           </tr>

@@ -114,13 +114,13 @@ th.nav {
   background-color: #1b1b1b;
 }
 
-th.nav div {
+th.nav.external div {
   display: table;
   width: 100%;
   height: 100%;
 }
 
-th.nav a {
+th.nav.external a {
   display: table-cell;
   vertical-align: middle;
 }

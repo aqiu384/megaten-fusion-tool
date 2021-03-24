@@ -8,10 +8,10 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
           <tr>
-            <th class="nav" routerLinkActive="active" [style.width.%]="1 / (1 + links.length)">
-              <div><a routerLink="home">All Games</a></div>
+            <th routerLink="home" class="nav" routerLinkActive="active" [style.width.%]="1 / (1 + links.length)">
+              <a routerLink="home">All Games</a>
             </th>
-            <th class="nav" *ngFor="let link of links" [style.width.%]="1 / (1 + links.length)">
+            <th class="nav external" *ngFor="let link of links" [style.width.%]="1 / (1 + links.length)">
               <div><a [href]="link.link">{{ link.title }}</a></div>
             </th>
           </tr>

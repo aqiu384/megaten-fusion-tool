@@ -14,33 +14,35 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
       <thead>
         <tr>
           <th class="nav" routerLinkActive="active"
+            [routerLink]="mainList + 's'"
             [routerLinkActiveOptions]="{ exact: true }"
             [style.width.%]="1 / hlength">
-            <div><a routerLink="{{ mainList }}s">
+            <a [routerLink]="mainList + 's'">
               {{ mainList.charAt(0).toUpperCase() + mainList.slice(1) }} List
-            </a></div>
+            </a>
           </th>
-          <th class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
-            <div><a routerLink="skills">
+          <th class="nav" routerLink="skills" routerLinkActive="active" [style.width.%]="1 / hlength">
+            <a routerLink="skills">
               Skill List
-            </a></div>
+            </a>
           </th>
-          <th class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
-            <div><a routerLink="chart">
+          <th class="nav" routerLink="chart" routerLinkActive="active" [style.width.%]="1 / hlength">
+            <a routerLink="chart">
               Fusion Chart
-            </a></div>
+            </a>
           </th>
           <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active"
+            [routerLink]="l.link"
             [routerLinkActiveOptions]="{ exact: true }"
             [style.width.%]="1 / hlength">
-            <div><a routerLink="{{ l.link }}">
+            <a [routerLink]="l.link">
               {{ l.title }}
-            </a></div>
+            </a>
           </th>
-          <th *ngIf="hasSettings" class="nav" routerLinkActive="active" [style.width.%]="1 / hlength">
-            <div><a routerLink="settings">
+          <th *ngIf="hasSettings" class="nav" routerLink="settings" routerLinkActive="active" [style.width.%]="1 / hlength">
+            <a routerLink="settings">
               Fusion Settings
-            </a></div>
+            </a>
           </th>
         </tr>
         <tr>

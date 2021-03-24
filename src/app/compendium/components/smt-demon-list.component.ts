@@ -10,7 +10,11 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
     <td *ngIf="!hasCurrLvl">{{ data.lvl | lvlToNumber }}</td>
     <td *ngIf="hasCurrLvl" style="text-align: center;">
-      <input type="number" min="1" max="99" size="1" [value]="data.currLvl" (change)="emitValidLvl($event.target.value)">
+      <select (change)="emitValidLvl($event.target.value)" (focus)="updateCurrRange()">
+        <option [value]="data.currLvl">{{ data.currLvl }}</option>
+        <option *ngFor="let _ of currRange; let i = index" [value]="i + currOffset">{{ i + currOffset }}</option>
+        <option value="99">99</option>
+      </select>
     </td>
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
     <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
@@ -35,10 +39,19 @@ export class SmtDemonListRowComponent {
   @Input() data: Demon;
   @Output() currLvl = new EventEmitter<number>();
 
+  currOffset = 0;
+  currRange = Array(0);
+
+  updateCurrRange() {
+    if (this.currOffset !== 0) { return; }
+    this.currOffset = Math.floor(this.data.lvl);
+    this.currRange = Array(99 - this.currOffset);
+  }
+
   emitValidLvl(lvlStr: string) {
     const lvl = parseInt(lvlStr, 10);
 
-    if (lvl !== this.data.lvl && 0 < lvl && lvl < 100 && Number.isInteger(lvl)) {
+    if (this.data.currLvl !== lvl && 0 < lvl && lvl < 100 && Number.isInteger(lvl)) {
       this.data.currLvl = lvl;
       this.currLvl.emit(lvl);
     }
