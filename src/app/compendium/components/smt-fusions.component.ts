@@ -17,9 +17,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
               [routerLink]="option.link"
               [style.width.%]="100 / fusionOptions.length"
               [routerLinkActiveOptions]="{ exact: true }">
-              <div>
-                <a [routerLink]="option.link">{{ option.title }}</a>
-              </div>
+              <a [routerLink]="option.link">{{ option.title }}</a>
             </th>
           </tr>
           <tr *ngIf="excludedDlc">
