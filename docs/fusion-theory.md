@@ -82,8 +82,8 @@
     * Race AB = Hanged (row) x Star (column) = Empress (upper-right)
 3. Determine Race R
     * [Fusion Chart - Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g/chart)
-    * Empress (row) x Emperor (column) does not lie in lower-left half of chart, so lookup Emperor (column) x Empress (row) instead
-    * Race R = Emperor (column) x Empress (row) = Fool (lower-left)
+    * Empress (row) x Emperor (column) does not lie in lower-left half of chart, so lookup Emperor (row) x Empress (column) instead
+    * Race R = Emperor (row) x Empress (column) = Fool (lower-left)
 4. Determine Result R
     * [List of Personas - Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g/personas)
     * Persona 4 Golden Triple Level Modifier = 5

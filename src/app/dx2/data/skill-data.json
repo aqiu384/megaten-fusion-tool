@@ -3083,6 +3083,13 @@
     "elem": "pas",
     "points": 18
   },
+  "Soul Break": {
+    "cost": 5,
+    "effect": "30% crit, Pierce, Removes 3 MP",
+    "elem": "phys",
+    "power": 145,
+    "target": "1 Foe"
+  },
   "Soul Divide": {
     "effect": "After Foe casts recovery magic, Reduce Foe HP by 50% current (<2000)",
     "elem": "pas"
@@ -3101,6 +3108,10 @@
     "elem": "lig",
     "power": 30,
     "target": "Rand Foes"
+  },
+  "Soul Judgement S": {
+    "effect": "Casts 60 piercing phys dmg with 30% crit on all Foes when an Ally downs a Foe",
+    "elem": "pas"
   },
   "Speedster": {
     "effect": "Battle speed +50%",

@@ -8,8 +8,7 @@ import { MultiFusionTrio } from '../models';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table class="list-table">
-      <tr><th colspan=7 class="title">Normal Reverse Fusions</th></tr>
-      <tr><th colspan=7>Ingredient 1 x Ingredient 2 x Ingredient 3 = {{ currentDemon }}</th></tr>
+      <tr><th colspan=7 class="title">Ingredient 1 x Ingredient 2 x Ingredient 3 = {{ currentDemon }}</th></tr>
       <tr>
         <th rowspan=2>Price</th>
         <th colspan=2>Ingredient 1</th>
