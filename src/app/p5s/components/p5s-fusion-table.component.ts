@@ -55,6 +55,7 @@ export class P5SFusionTableComponent extends TripleFusionTableComponent {
   getFusions() {
     const fusions: MultiFusionTrio[] = [];
     const pairs = this.pairCalculator.getFusions(this.currentDemon, this.compendium, this.chart.normalChart);
+    const higherIngreds = getHigherIngredients(this.currentDemon, this.compendium);
 
     for (const pair of pairs) {
       const lvl1 = this.compendium.getDemon(pair.name1).lvl;
@@ -72,16 +73,20 @@ export class P5SFusionTableComponent extends TripleFusionTableComponent {
       });
     }
 
-    for (const name1 of getHigherIngredients(this.currentDemon, this.compendium)) {
-      for (const trio of this.calculator.getFusions(name1, this.compendium, this.chart)) {
+    for (let ind1 = 0; ind1 < higherIngreds.length; ind1++) {
+      for (const trio of this.calculator.getFusions(higherIngreds[ind1], this.compendium, this.chart)) {
         const lvlR = this.compendium.getDemon(trio.name1).lvl;
         const { lvl: lvl2, price: price2, } = this.compendium.getDemon(trio.name2);
         const names3 = getLowerIngredients(trio.name3, this.compendium);
         const lvl3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).lvl : 0;
         const price3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).price : 0;
 
+        if (lvl3 > 0 && ind1 > 1) {
+          continue;
+        }
+
         fusions.push({
-          lvl0: this.compendium.getDemon(name1).lvl,
+          lvl0: this.compendium.getDemon(higherIngreds[ind1]).lvl,
           names1: [trio.name1],
           lvl1: lvlR,
           names2: getLowerIngredients(trio.name2, this.compendium),

@@ -72,19 +72,21 @@ export class P5SFissionTableComponent extends TripleFissionTableComponent {
     }
 
     for (const trio of trios) {
+      const names1 = getLowerIngredients(trio.name1, this.compendium);
+      const names2 = getLowerIngredients(trio.name2, this.compendium);
+      const names3 = getLowerIngredients(trio.name3, this.compendium);
       const { lvl: lvl1, price: price1, } = this.compendium.getDemon(trio.name1);
       const { lvl: lvl2, price: price2, } = this.compendium.getDemon(trio.name2);
-      const names3 = getLowerIngredients(trio.name3, this.compendium);
       const lvl3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).lvl : 0;
       const price3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).price : 0;
 
       fissions.push({
         lvl0: 0,
-        names1: getLowerIngredients(trio.name1, this.compendium),
+        names1: lvl3 ? names1.slice(-2) : names1,
         lvl1: lvl1,
-        names2: getLowerIngredients(trio.name2, this.compendium),
+        names2: lvl3 ? names2.slice(-2) : names2,
         lvl2: lvl2,
-        names3,
+        names3: names3.slice(-2),
         lvl3,
         price: price1 + price2 + price3
       });

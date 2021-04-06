@@ -70,7 +70,7 @@ for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
 }
 
 export const P5S_COMPENDIUM_CONFIG: CompendiumConfig = {
-  appTitle: 'Persona 5 Striker',
+  appTitle: 'Persona 5 Strikers',
   appCssClasses: ['p5'],
 
   races,
