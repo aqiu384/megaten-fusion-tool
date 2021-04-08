@@ -77,6 +77,7 @@ export class P5SFusionTableComponent extends TripleFusionTableComponent {
       for (const trio of this.calculator.getFusions(higherIngreds[ind1], this.compendium, this.chart)) {
         const lvlR = this.compendium.getDemon(trio.name1).lvl;
         const { lvl: lvl2, price: price2, } = this.compendium.getDemon(trio.name2);
+        const names2 = getLowerIngredients(trio.name2, this.compendium);
         const names3 = getLowerIngredients(trio.name3, this.compendium);
         const lvl3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).lvl : 0;
         const price3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).price : 0;
@@ -89,9 +90,9 @@ export class P5SFusionTableComponent extends TripleFusionTableComponent {
           lvl0: this.compendium.getDemon(higherIngreds[ind1]).lvl,
           names1: [trio.name1],
           lvl1: lvlR,
-          names2: getLowerIngredients(trio.name2, this.compendium),
+          names2: names2.slice(-2),
           lvl2: lvl2,
-          names3,
+          names3: names3.slice(-2),
           lvl3,
           price: price2 + price3
         });
