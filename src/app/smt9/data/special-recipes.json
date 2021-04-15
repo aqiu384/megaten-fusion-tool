@@ -1,0 +1,34 @@
+{
+  "Amaterasu": {
+    "fusion": "normal",
+    "special": ["Susano-o", "Tsukuyomi"]
+  },
+  "Susano-o": {
+    "fusion": "normal",
+    "special": ["Amaterasu", "Tsukuyomi"]
+  },
+  "Tsukuyomi": {
+    "fusion": "normal",
+    "special": ["Amaterasu", "Susano-o"]
+  },
+  "Baal": {
+    "fusion": "normal",
+    "special": ["Anat", "Mot"]
+  },
+  "Shiva": {
+    "fusion": "normal",
+    "special": ["Barong", "Rangda"]
+  },
+  "Yoshitsune": {
+    "fusion": "shift",
+    "prereq": "Phase shift only"
+  },
+  "Alice": {
+    "fusion": "shift",
+    "prereq": "Phase shift only"
+  },
+  "Jeanne D'Arc": {
+    "fusion": "shift",
+    "prereq": "Phase shift only"
+  }
+}

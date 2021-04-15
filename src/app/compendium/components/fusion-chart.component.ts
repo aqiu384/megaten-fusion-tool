@@ -87,9 +87,15 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     let darks = [];
 
     if (this.filterDarks) {
-      lights = this.normChart.races.filter(race => this.normChart.getLightDark(race) === 1);
+      lights = this.normChart.races.filter(race => this.normChart.getLightDark(race) > 0);
       norms = this.normChart.races.filter(race => this.normChart.getLightDark(race) === 0);
       darks = this.normChart.races.filter(race => this.normChart.getLightDark(race) === -1);
+
+      if (darks.length === 0) {
+        lights = this.normChart.races.filter(race => this.normChart.getLightDark(race) > -1);
+        norms = [];
+        darks = this.normChart.races.filter(race => this.normChart.getLightDark(race) < -1);
+      }
     }
 
     const leftOff = lights.length - darks.length;

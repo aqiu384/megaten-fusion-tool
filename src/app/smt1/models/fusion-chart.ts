@@ -37,9 +37,7 @@ export class FusionChart extends SmtFusionChart {
     const normFusions = SmtFusionChart.loadFusionTableJson(races, table);
     const normFissions = SmtFusionChart.loadFissionTableJson(races, [], table);
 
-    if (compConfig.appTitle.indexOf('Summoner') !== -1) {
-      this.lvlModifier = isTripleChart ? 3.25 : 2.5;
-    }
+    this.lvlModifier = isTripleChart ? compConfig.tripleLvlModifier : compConfig.normalLvlModifier;
 
     if (compConfig.darkTable) {
       this.hasDarkTable = true;
@@ -70,6 +68,26 @@ export class FusionChart extends SmtFusionChart {
         this.fusionChart[raceD][raceD] = raceR;
         this.fissionChart[raceR] = {};
         this.fissionChart[raceR][raceD] = [raceD];
+
+        if (!this.races.includes(raceD)) {
+          this.races.push(raceD);
+        }
+      }
+    }
+
+    if (compConfig.useSpeciesFusion) {
+      for (const raceR of this.races) {
+        const raceFissions = this.getRaceFissions(raceR);
+
+        for (const [raceA, raceBs] of Object.entries(this.getRaceFissions(this.speciesLookup[raceR]))) {
+          if (!raceFissions[raceA]) {
+            raceFissions[raceA] = [];
+          }
+
+          for (const raceB of raceBs) {
+            raceFissions[raceA].push(raceB);
+          }
+        }
       }
     }
 
@@ -87,16 +105,15 @@ export class FusionChart extends SmtFusionChart {
       return 1;
     } else if (this.alignments[race].charAt(0) == 'd') {
       return -1;
+    } else if (this.alignments[race].charAt(0) == 'D') {
+      return -2;
     } else {
       return 0;
     }
   }
 
   getRaceFissions(race: string): FissionRow {
-    return Object.assign({},
-      this.fissionChart[race] || {},
-      this.fissionChart[this.speciesLookup[race]] || {}
-    );
+    return this.fissionChart[race] || {};
   }
 
   getRaceFusions(race: string): FusionRow {

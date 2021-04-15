@@ -1,15 +1,158 @@
 {
   "Shiva": {
-    "special": [
-      "Barong",
-      "Rangda"
-    ]
+    "fusion": "normal",
+    "special": ["Barong", "Rangda"]
   },
   "Uriel": {
-    "special": [
-      "Cherub",
-      "Throne",
-      "Dominion"
-    ]
+    "fusion": "normal",
+    "special": ["Cherub", "Throne", "Dominion"]
+  },
+  "Corpses": {
+    "fusion": "normal",
+    "prereq": "Undead x Undead x Undead"
+  },
+  "Itzamna": {
+    "fusion": "normal",
+    "special": ["Salamander", "Undine"]
+  },
+  "Agni": {
+    "fusion": "normal",
+    "special": ["Salamander", "Sylph"]
+  },
+  "Kotoshironushi": {
+    "fusion": "normal",
+    "special": ["Salamander", "Gnome"]
+  },
+  "Lakhe": {
+    "fusion": "normal",
+    "special": ["Salamander", "Flaemis"]
+  },
+  "Orobas": {
+    "fusion": "normal",
+    "special": ["Salamander", "Aquans"]
+  },
+  "Phoenix": {
+    "fusion": "normal",
+    "special": ["Salamander", "Aeros"]
+  },
+  "Berith": {
+    "fusion": "normal",
+    "special": ["Salamander", "Erthys"]
+  },
+  "Archangel": {
+    "fusion": "normal",
+    "special": ["Undine", "Sylph"]
+  },
+  "Raja Naga": {
+    "fusion": "normal",
+    "special": ["Undine", "Gnome"]
+  },
+  "Yaksini": {
+    "fusion": "normal",
+    "special": ["Undine", "Flaemis"]
+  },
+  "Forneus": {
+    "fusion": "normal",
+    "special": ["Undine", "Aquans"]
+  },
+  "Gandharva": {
+    "fusion": "normal",
+    "special": ["Undine", "Aeros"]
+  },
+  "Dryad": {
+    "fusion": "normal",
+    "special": ["Undine", "Erthys"]
+  },
+  "Angel": {
+    "fusion": "normal",
+    "special": ["Sylph", "Gnome"]
+  },
+  "Feng Huang": {
+    "fusion": "normal",
+    "special": ["Sylph", "Flaemis"]
+  },
+  "Siren": {
+    "fusion": "normal",
+    "special": ["Sylph", "Aquans"]
+  },
+  "Furiae": {
+    "fusion": "normal",
+    "special": ["Sylph", "Aeros"]
+  },
+  "Onkot": {
+    "fusion": "normal",
+    "special": ["Sylph", "Erthys"]
+  },
+  "Dwarf": {
+    "fusion": "normal",
+    "special": ["Gnome", "Flaemis"]
+  },
+  "Qilin": {
+    "fusion": "normal",
+    "special": ["Gnome", "Aquans"]
+  },
+  "Wyrm": {
+    "fusion": "normal",
+    "special": ["Gnome", "Aeros"]
+  },
+  "Worm": {
+    "fusion": "normal",
+    "special": ["Gnome", "Erthys"]
+  },
+  "Bai Ze": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aquans"]
+  },
+  "Sytry": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aeros"]
+  },
+  "Unicorn": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Erthys"]
+  },
+  "Jack Frost": {
+    "fusion": "normal",
+    "special": ["Aquans", "Aeros"]
+  },
+  "Bogle": {
+    "fusion": "normal",
+    "special": ["Aquans", "Erthys"]
+  },
+  "Bugaboo": {
+    "fusion": "normal",
+    "special": ["Aeros", "Erthys"]
+  },
+  "Kikuri-Hime": {
+    "fusion": "normal",
+    "special": ["Undine", "Sylph", "Gnome"]
+  },
+  "Chimera": {
+    "fusion": "normal",
+    "special": ["Salamander", "Sylph", "Gnome"]
+  },
+  "Yama": {
+    "fusion": "normal",
+    "special": ["Salamander", "Undine", "Gnome"]
+  },
+  "Dominion": {
+    "fusion": "normal",
+    "special": ["Salamander", "Undine", "Sylph"]
+  },
+  "Salamander": {
+    "fusion": "normal",
+    "special": ["Aquans", "Aeros", "Erthys"]
+  },
+  "Undine": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aeros", "Erthys"]
+  },
+  "Sylph": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aquans", "Erthys"]
+  },
+  "Gnome": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aquans", "Aeros"]
   }
 }

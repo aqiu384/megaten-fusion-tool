@@ -71,6 +71,8 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   useSpeciesFusion: true,
   specialRecipes: SPECIAL_RECIPES_JSON,
 
+  normalLvlModifier: -0.5,
+  tripleLvlModifier: -0.75,
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,
   alignData: { races: raceAligns },

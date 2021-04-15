@@ -28,6 +28,8 @@ export interface CompendiumConfig extends BaseComp {
   useSpeciesFusion: boolean;
   inheritSkills?: { [elem: string]: { [skill: string]: number } };
 
+  normalLvlModifier: number;
+  tripleLvlModifier: number;
   demonData;
   skillData;
   alignData;

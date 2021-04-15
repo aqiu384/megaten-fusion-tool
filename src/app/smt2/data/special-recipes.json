@@ -1,107 +1,204 @@
 {
   "Phoenix": {
-    "special": [
-      "Aello",
-      "Celaeno",
-      "Ocypete"
-    ]
+    "fusion": "normal",
+    "special": ["Aello", "Celaeno", "Ocypete"]
   },
   "Bastet": {
-    "special": [
-      "Seiryuu",
-      "Suzaku",
-      "Genbu"
-    ]
+    "fusion": "normal",
+    "special": ["Seiryuu", "Suzaku", "Genbu"]
   },
   "Yatagarasu": {
-    "special": [
-      "Morrigan",
-      "Macha",
-      "Nemhain"
-    ]
+    "fusion": "normal",
+    "special": ["Morrigan", "Macha", "Nemhain"]
   },
   "Narasimha": {
-    "special": [
-      "Seiryuu",
-      "Suzaku",
-      "Byakko"
-    ]
+    "fusion": "normal",
+    "special": ["Seiryuu", "Suzaku", "Byakko"]
   },
   "Parvati": {
     "fusion": "normal",
-    "special": [
-      "Durga",
-      "Kali"
-    ]
+    "special": ["Durga", "Kali"]
   },
   "Durga": {
     "fusion": "normal",
-    "special": [
-      "Parvati",
-      "Kali"
-    ]
+    "special": ["Parvati", "Kali"]
   },
   "Garuda": {
-    "special": [
-      "Seiryuu",
-      "Genbu",
-      "Byakko"
-    ]
+    "fusion": "normal",
+    "special": ["Seiryuu", "Genbu", "Byakko"]
   },
   "Astaroth": {
-    "special": [
-      "Ashtar",
-      "Ishtar"
-    ]
+    "fusion": "normal",
+    "prereq":"Unlock fusion",
+    "special": ["Ashtar", "Ishtar"]
   },
   "Tsukuyomi": {
     "fusion": "normal",
-    "special": [
-      "Amaterasu",
-      "Susano-o"
-    ]
+    "prereq":"Unlock fusion",
+    "special": ["Amaterasu", "Susano-o"]
   },
   "Ananta": {
-    "special": [
-      "Suzaku",
-      "Genbu",
-      "Byakko"
-    ]
+    "fusion": "normal",
+    "special": ["Suzaku", "Genbu", "Byakko"]
   },
   "Amaterasu": {
     "fusion": "normal",
-    "special": [
-      "Susano-o",
-      "Tsukuyomi",
-      "Lakshmi",
-      "Sarasvati"
-    ]
+    "prereq":"Unlock fusion, Susano-o x Tsukuyomi, Lakshmi x Parvati x Sarasvati",
+    "special": ["Susano-o", "Tsukuyomi", "Lakshmi", "Parvati", "Sarasvati"]
   },
   "Susano-o": {
     "fusion": "normal",
-    "special": [
-      "Amaterasu",
-      "Tsukuyomi"
-    ]
+    "special": ["Amaterasu", "Tsukuyomi"]
   },
   "Kali": {
     "fusion": "normal",
-    "special": [
-      "Parvati",
-      "Durga"
-    ]
+    "special": ["Parvati", "Durga"]
   },
   "Ardha": {
-    "pairs": [
-      "Shiva x Parvati",
-      "Shiva x Kali",
-      "Shiva x Durga"
-    ]
+    "fusion": "normal",
+    "prereq": "Shiva x Parvati, Shiva x Kali, Shiva x Durga",
+    "special": ["Shiva", "Parvati", "Kali", "Durga"]
   },
   "Shiva": {
-    "pairs": [
-      "Barong x Rangda",
-      "Kali x Durga"
-    ]
+    "fusion": "normal",
+    "prereq": "Barong x Rangda, Parvati x Kali x Durga",
+    "special": ["Barong", "Rangda", "Parvati", "Kali", "Durga"]
+  },
+  "Kikuri-Hime": {
+    "fusion": "normal",
+    "special": ["Undine", "Sylph", "Gnome"]
+  },
+  "Sphinx": {
+    "fusion": "normal",
+    "special": ["Salamander", "Sylph", "Gnome"]
+  },
+  "Maya": {
+    "fusion": "normal",
+    "special": ["Salamander", "Undine", "Gnome"]
+  },
+  "Kushiel": {
+    "fusion": "normal",
+    "special": ["Salamander", "Undine", "Sylph"]
+  },
+  "Salamander": {
+    "fusion": "normal",
+    "special": ["Aquans", "Aeros", "Erthys"]
+  },
+  "Undine": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aeros", "Erthys"]
+  },
+  "Sylph": {
+    "fusion": "normal",
+    "special": ["Flaemis", "Aquans", "Erthys"]
+  },
+  "Gnome": {
+    "fusion": "normal",
+    "prereq": "Demonoid x Demonoid x Demonoid, Flaemis x Aquans x Aeros",
+    "special": ["Flaemis", "Aquans", "Aeros"]
+  },
+  "Slime": {
+    "fusion": "accident",
+    "prereq": "Invalid double-element or dark-light fusion"
+  },
+  "Satan": {
+    "fusion": "recruit",
+    "prereq": "Recruitment only"
+  },
+  "Lucifer": {
+    "fusion": "recruit",
+    "prereq": "Recruitment only"
+  },
+  "Take-Mikazuchi": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Omoikane": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Tajikarao": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Virochana": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Atavaka": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Ashtar": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Ishtar": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Oonamuchi": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Kotoshironushi": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Sarutahiko": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Sukuna-Hikona": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Ouyamatsumi": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Mercurius": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Cerberus": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Oberon": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Nadja": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Demi-Nandi": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Baphomet": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Betelgeuse": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Beelzebub": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Mara": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Hecate": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
+  },
+  "Tiamat": {
+    "fusion": "normal",
+    "prereq": "Unlock fusion"
   }
 }

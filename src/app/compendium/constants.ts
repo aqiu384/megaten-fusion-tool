@@ -2,10 +2,12 @@ import { InjectionToken } from '@angular/core';
 import { CompendiumConfig, FusionDataService, FusionTrioService } from './models';
 
 import { NormalFusionCalculator } from './models/normal-fusion-calculator';
-import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement, fuseLightDark } from './fusions/smt-nonelem-fusions';
+import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement } from './fusions/smt-nonelem-fusions';
 import { fuseWithNormResult, fuseWithSpecResult, fuseTwoElements } from './fusions/smt-element-fusions';
 import { splitWithDiffRace, splitWithElement } from './fusions/smt-nonelem-fissions';
 import { splitElement } from './fusions/smt-element-fissions';
+
+import { splitWithDarkRace, fuseWithDarkRace } from './fusions/snes-dark-fusions';
 
 import { fuseWithSameRace as perFuseSame } from './fusions/per-nonelem-fusions';
 import { splitWithSameRace as perSplitSame } from './fusions/per-nonelem-fissions';
@@ -32,12 +34,17 @@ export const SMT_NORMAL_FUSION_CALCULATOR = new NormalFusionCalculator(
 );
 
 export const SMT_NES_NORMAL_FUSION_CALCULATOR = new NormalFusionCalculator(
-  [ fuseWithDiffRace, fuseWithSameRace, fuseWithElement, fuseLightDark ],
+  [ fuseWithDiffRace, fuseWithSameRace, fuseWithElement, fuseWithDarkRace ],
   [ fuseWithNormResult, fuseWithSpecResult, fuseTwoElements ]
 );
 
 export const SMT_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
   [ splitWithDiffRace, splitWithElement ],
+  [ splitElement ]
+);
+
+export const SMT_NES_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
+  [ splitWithDiffRace, splitWithElement, splitWithDarkRace ],
   [ splitElement ]
 );
 

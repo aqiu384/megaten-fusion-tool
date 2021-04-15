@@ -13,7 +13,8 @@ import {
   COMPENDIUM_CONFIG,
   SMT_NORMAL_FUSION_CALCULATOR,
   SMT_NES_NORMAL_FUSION_CALCULATOR,
-  SMT_NORMAL_FISSION_CALCULATOR
+  SMT_NORMAL_FISSION_CALCULATOR,
+  SMT_NES_NORMAL_FISSION_CALCULATOR
 } from '../compendium/constants';
 
 import { splitWithDiffRace, splitWithElement } from '../compendium/fusions/smt-nonelem-fissions';
@@ -73,6 +74,7 @@ export class FusionDataService implements IFusionTrioService {
 
     if (compConfig.darknessRecipes) {
       this.fusionCalculator = SMT_NES_NORMAL_FUSION_CALCULATOR;
+      this.fissionCalculator = SMT_NES_NORMAL_FISSION_CALCULATOR;
     }
 
     if (compConfig.tripleElementTable) {

@@ -67,6 +67,8 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   elemOrder: getEnumOrder(skillElems),
   useSpeciesFusion: true,
 
+  normalLvlModifier: 1.5,
+  tripleLvlModifier: 7.25,
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,
   alignData: ALIGNMENT_JSON,
@@ -74,8 +76,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   tripleTable: TRIPLE_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
   mitamaTable: ELEMENT_CHART_JSON['pairs'],
-  specialRecipes: SPECIAL_RECIPES_JSON,
-  darknessRecipes: FUSION_CHART_JSON['darks']
+  specialRecipes: SPECIAL_RECIPES_JSON
 };
 
 @NgModule({

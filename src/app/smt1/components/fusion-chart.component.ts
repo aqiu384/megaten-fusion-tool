@@ -24,12 +24,25 @@ import { FusionDataService } from '../fusion-data.service';
         [tripTitle]="'Dark Triple Fusions'">
       </app-fusion-chart>
     </ng-container>
-    <ng-container *ngIf="fullChart">
+    <ng-container *ngIf="fullChart && !hasDarkRanks">
       <app-fusion-chart
         [normChart]="fullChart"
         [mitaTable]="mitamaTable"
         [filterDarks]="false"
         [normTitle]="'Normal Fusions'">
+      </app-fusion-chart>
+      <app-species-triple-chart
+        [speciesChart]="tripChart"
+        [title]="appName + ' - Triple Fusions'">
+      </app-species-triple-chart>
+    </ng-container>
+    <ng-container *ngIf="fullChart && hasDarkRanks">
+      <app-fusion-chart
+        [normChart]="fullChart"
+        [tripChart]="fullChart"
+        [mitaTable]="mitamaTable"
+        [normTitle]="'Light and Neutral Normal Fusions'"
+        [tripTitle]="'Dark Normal Fusions'">
       </app-fusion-chart>
       <app-species-triple-chart
         [speciesChart]="tripChart"
@@ -44,6 +57,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   tripChart: FusionChart;
   fullChart: FusionChart;
   appName: string;
+  hasDarkRanks: boolean;
 
   tripleMitamaTable: string[][];
   mitamaTable: string[][];
@@ -55,6 +69,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
     this.appName = compConfig.appTitle;
     this.mitamaTable = compConfig.mitamaTable;
     this.tripleMitamaTable = compConfig.tripleMitamaTable;
+    this.hasDarkRanks = compConfig.darknessRecipes;
 
     if (this.fusionDataService.compConfig.useSpeciesFusion) {
       this.subscriptions.push(
