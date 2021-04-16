@@ -101,7 +101,7 @@
   },
   "Apocalypse": {
     "cost": 8,
-    "effect": "40% Mute",
+    "effect": "60% Mute",
     "elem": "alm",
     "power": 120,
     "target": "All Foes"
@@ -111,7 +111,7 @@
     "elem": "pas"
   },
   "Arms Mastery": {
-    "effect": "Phys dmg +15%, Phys acc +15%",
+    "effect": "Phys dmg +20%, Phys acc +20%",
     "elem": "pas"
   },
   "Ars Magna": {
@@ -122,14 +122,14 @@
   },
   "Ascension": {
     "cost": 6,
-    "effect": "Light Pierce, Revives random Ally with 25% HP, 6 uses",
+    "effect": "Light Pierce, Revives random Ally with 50% HP, 6 uses",
     "elem": "lig",
     "power": 160,
     "target": "1 Foe"
   },
   "Ashura": {
     "cost": 8,
-    "effect": "30% crit, Phys Pierce, Follow up with Dekaja and 25 Phys dmg x10 hits with 50% crit to random Foes",
+    "effect": "50% crit, Phys Pierce, Follow up with Dekaja and 25 Phys dmg x10 hits with 80% crit to random Foes",
     "elem": "phy",
     "power": 50,
     "target": "Rand Foes"
@@ -180,7 +180,7 @@
   },
   "Aztec Pulse": {
     "cost": 6,
-    "effect": "Dmg +20 on 2nd use, Dmg +40 and Rakunda for 1 turn on 3rd use",
+    "effect": "Dmg +20 on 2nd use, Dmg +40 and Rakunda for 3 turns on 3rd use",
     "elem": "fir",
     "power": 100,
     "target": "All Foes"
@@ -292,7 +292,7 @@
     "target": "1 Foe"
   },
   "Black Beckoning": {
-    "effect": "Reduces all foes curr HP by 10% (<200) at end of turn, 3rd cast 50% (<1000), 4th cast max HP by 50% (<2000), Nullifies Endure Effects (1 use)",
+    "effect": "Reduces all foes curr HP by 10% (<200) at end of turn, 2nd cast 50% (<1000), 3rd cast max HP by 50% (<2000), Nullifies Endure Effects (1 use)",
     "elem": "pas"
   },
   "Black Lullaby": {
@@ -345,7 +345,7 @@
     "target": "All Allies"
   },
   "Bloodshed": {
-    "effect": "After using Blade of Terror, Casts Heatwave bypassing Counter skills",
+    "effect": "After using Blade of Terror, casts 80 piercing phys dmg with 50% crit on all Foes, Nullifies counter effects",
     "elem": "pas"
   },
   "Bloody Glee": {
@@ -373,7 +373,7 @@
     "target": "All Foes"
   },
   "Brilliant Wings": {
-    "effect": "Force Pierce, Casts Mazan + 2-turn Sukunda when Ally evades Phys atk",
+    "effect": "Max Ag 220, Force Pierce, Casts Mazan + 2-turn Sukunda when Ally evades Phys atk",
     "elem": "pas"
   },
   "Bufu": {
@@ -537,9 +537,9 @@
   },
   "Daylight Blade": {
     "cost": 7,
-    "effect": "30% crit, Pierce, Casts Concentrate after use",
+    "effect": "50% crit, Pierce, Casts Concentrate after use",
     "elem": "phy",
-    "power": 120,
+    "power": 130,
     "target": "1 Foe"
   },
   "Deadly Bondage": {
@@ -694,7 +694,7 @@
   },
   "Die for Me!": {
     "cost": 7,
-    "effect": "100% Instant Death, Nullifies endure effects",
+    "effect": "100% Mortal, Nullifies endure effects",
     "elem": "dar",
     "power": 180,
     "target": "1 Foe"
@@ -900,7 +900,7 @@
     "target": "1 Foe"
   },
   "Enma's Judgement": {
-    "effect": "Begin battle with Tetraja for 1st 3 turns",
+    "effect": "Begin battle with Taruakaja, Rakukaja, and Null Mortal for 6 turns",
     "elem": "pas"
   },
   "Epic Recovery": {
@@ -979,7 +979,7 @@
     "points": 18
   },
   "Fallen Grigori": {
-    "effect": "Endure with 300 HP, Heals 30% of own HP, 3 MP, and enters Might when HP < 50%",
+    "effect": "Endure with 300 HP, Heals 30% of own HP, 3 MP, and enters Might when HP < 80%",
     "elem": "pas"
   },
   "False God": {
@@ -987,7 +987,7 @@
     "elem": "pas"
   },
   "Famine": {
-    "effect": "At end of enemy phase, Reduce all Foe HP by 10% current (<200) and remove 1 MP",
+    "effect": "At end of enemy phase, Reduce all Foe HP by 15% current (<200) and remove 1 MP",
     "elem": "pas"
   },
   "Fast Recovery": {
@@ -1170,14 +1170,14 @@
     "target": "Rand Foes"
   },
   "Glamorous Allure": {
-    "effect": "Regular attack changed to alm 60 dmg to all foes with 20% Charm",
+    "effect": "Regular attack changed to alm 70 dmg to all foes with 20% Charm",
     "elem": "pas"
   },
   "Glorious Bolt": {
     "cost": 6,
     "effect": "Pierce, Recovers 1 MP to all allies",
     "elem": "elec",
-    "power": 160,
+    "power": 170,
     "target": "1 Foe"
   },
   "Gluttony": {
@@ -1199,12 +1199,12 @@
     "elem": "pas"
   },
   "God's Blessing": {
-    "effect": "Ally Force and Light dmg +10%, Casts Mediara + Rakukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
+    "effect": "Ally Force and Light dmg +10%, Casts Mediarama + Rakukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
     "elem": "pas"
   },
   "God's Bow": {
     "cost": 7,
-    "effect": "50% Instant Death",
+    "effect": "50% Mortal",
     "elem": "lig",
     "power": 200,
     "target": "1 Foe"
@@ -1214,7 +1214,7 @@
     "elem": "pas"
   },
   "God's Grace": {
-    "effect": "Elec and Light dmg +10%, Casts Five Elements for 1 turn and recovers 1 MP to all allies when 3 or more Divines/Heralds in party each turn",
+    "effect": "Elec and Light dmg +10%, Casts Five Elements for 1 turn and recovers 2 MP to all allies when 3 or more Divines/Heralds in party each turn",
     "elem": "pas"
   },
   "God's Hand": {
@@ -1288,7 +1288,7 @@
   },
   "Guillotine Blaze": {
     "cost": 6,
-    "effect": "Pierce, 50% crit, Scales with Matk, Nullifies endure effects",
+    "effect": "Pierce, 50% crit, 10% Mortal, Scales with Matk, Nullifies endure effects",
     "elem": "fir",
     "power": 150,
     "target": "1 Foe"
@@ -1385,7 +1385,7 @@
     "target": "1 Foe"
   },
   "Heavenly Valor": {
-    "effect": "Phys Pierce, Cast Heat Wave when Foe passes",
+    "effect": "Phys Pierce, Cast 85 phys dmg with 50% crit on all foes when Foe passes, Nullifies counter effects",
     "elem": "pas"
   },
   "Hell Claw": {
@@ -1512,7 +1512,7 @@
     "elem": "pas"
   },
   "Illusionary World": {
-    "effect": "Ailment hit +15%, Cures party of Mute and casts Megido when any ally is muted",
+    "effect": "Ailment hit +15%, Cures party of Mute and casts 90 alm dmg on all Foes when any ally is muted",
     "elem": "pas"
   },
   "Infernal Mask": {
@@ -1550,7 +1550,7 @@
   },
   "Iron Judgement": {
     "cost": 5,
-    "effect": "Pierce, 30% crit, 50% Bind",
+    "effect": "Pierce, 50% crit, 80% Bind",
     "elem": "phy",
     "power": 150,
     "target": "1 Foe"
@@ -1699,7 +1699,7 @@
     "target": "1 Foe"
   },
   "Lord of Clouds": {
-    "effect": "Elec Pierce, Recovers 3 MP and casts Five Elements when downing a Foe",
+    "effect": "Elec Pierce, +20% Battle Speed, Recovers 3 MP and casts Five Elements when downing a Foe",
     "elem": "pas"
   },
   "Lord of the Abyss": {
@@ -2438,7 +2438,7 @@
     "target": "Rand Foes"
   },
   "Nastrond": {
-    "effect": "Recover 80% HP and nullify Instant Death for 1 turn when Ally downed",
+    "effect": "Recover 80% HP and nullify Mortal for 1 turn when Ally downed",
     "elem": "pas"
   },
   "Necro Dogma": {
@@ -2531,7 +2531,7 @@
     "points": 12
   },
   "Null Mortal": {
-    "effect": "Immune to Instant Death",
+    "effect": "Immune to Mortal",
     "elem": "pas",
     "points": 12
   },
@@ -2557,7 +2557,7 @@
   },
   "Occult Flash": {
     "cost": 8,
-    "effect": "50% crit, 100% Instant Death, 3 uses",
+    "effect": "50% crit, 100% Mortal, 3 uses",
     "elem": "phy",
     "power": 200,
     "target": "1 Foe"
@@ -2647,7 +2647,7 @@
     "elem": "pas"
   },
   "Pestilence": {
-    "effect": "Nullify Instant Death prevention. At end of enemy phase, Reduce all Poisoned Foe HP by 50% max (<2000)",
+    "effect": "Nullify Mortal prevention. At end of enemy phase, Reduce all Poisoned Foe HP by 50% max (<2000)",
     "elem": "pas"
   },
   "Phys Amp": {
@@ -2671,12 +2671,12 @@
     "points": 16
   },
   "Plague": {
-    "effect": "At end of player phase, Reduce all Foe HP by 10% current (<200) with 50% Poison",
+    "effect": "At end of player phase, Reduce all Foe HP by 10% current (<200) with 100% Poison",
     "elem": "pas"
   },
   "Plague of Babylon": {
-    "cost": 6,
-    "effect": "Barrier Break + 80% Weak",
+    "cost": 5,
+    "effect": "Barrier Break + 100% Weak",
     "elem": "sup",
     "target": "All Foes"
   },
@@ -3068,7 +3068,7 @@
   },
   "Slaughter All": {
     "cost": 7,
-    "effect": "30% crit, Scales with Patk, Nullifies endure effects",
+    "effect": "50% crit, Scales with Patk, Nullifies endure effects, Nullifies counter effects",
     "elem": "alm",
     "power": 210,
     "target": "1 Foe"
@@ -3172,13 +3172,13 @@
   },
   "Sunrise": {
     "cost": 7,
-    "effect": "Fire Pierce, Revives random Ally with 25% HP, 6 uses",
+    "effect": "Fire Pierce, Revives random Ally with 50% HP, 6 uses",
     "elem": "fir",
     "power": 120,
     "target": "All Foes"
   },
   "Superior Power": {
-    "effect": "Phys pierce, Phys acc +20%",
+    "effect": "Phys pierce, Phys acc +30%",
     "elem": "pas"
   },
   "Suppress Stance Drain": {
@@ -3216,9 +3216,9 @@
   },
   "Tailwind": {
     "cost": 6,
-    "effect": "4 hits, Force Pierce, Revives random Ally with 25% HP, 6 uses",
+    "effect": "4 hits, Force Pierce, Revives random Ally with 50% HP, 6 uses",
     "elem": "for",
-    "power": 45,
+    "power": 50,
     "target": "Rand Foes"
   },
   "Tarukaja": {
@@ -3259,9 +3259,9 @@
   },
   "Temptation": {
     "cost": 6,
-    "effect": "Can crit, 50% Charm, Dmg scales with Matk",
+    "effect": "30% crit, 50% Charm, Dmg scales with Matk",
     "elem": "dar",
-    "power": 130,
+    "power": 135,
     "target": "1 Foe"
   },
   "Tenson Kourin": {
@@ -3288,7 +3288,7 @@
   },
   "Tetraja": {
     "cost": 4,
-    "effect": "Nullifies Instant Death for 1 turn",
+    "effect": "Nullifies Mortal for 1 turn",
     "elem": "sup",
     "points": 4,
     "target": "All Allies"
@@ -3301,7 +3301,7 @@
     "target": "All Allies"
   },
   "The Great Darkness": {
-    "effect": "Fire Pierce. Every 3rd turn, casts 5 hits of 40 fire dmg and Concentrate",
+    "effect": "Fire Pierce. Every 2nd turn, casts 5 hits of 40 fire dmg and Concentrate",
     "elem": "pas"
   },
   "The Struggler": {
@@ -3402,7 +3402,7 @@
     "elem": "pas"
   },
   "Vahana": {
-    "effect": "Phys eva +15%, Ailment resist +30%",
+    "effect": "Phys eva +20%, Ailment resist +50%",
     "elem": "pas"
   },
   "Vengeance": {
@@ -3428,7 +3428,7 @@
   },
   "Violent Slash": {
     "cost": 6,
-    "effect": "30% crit, 2nd cast 180 dmg + 50% crit + Nullify endure effects, 3rd cast 220 dmg + 80% crit + Nullify counter effects",
+    "effect": "30% crit, 2nd cast 180 dmg + 50% crit + Nullify endure effects, 3rd cast 230 dmg + 80% crit + Nullify counter effects",
     "elem": "phy",
     "power": 150,
     "target": "1 Foe"
@@ -3544,7 +3544,7 @@
     "elem": "pas"
   },
   "Yaxche": {
-    "effect": "Counter with Almighty Dmg + 100% Instant Death when downed, Nullifies endure effects",
+    "effect": "Counter with 120 alm dmg + 100% Mortal when downed, Nullifies endure effects",
     "elem": "pas"
   },
   "Yinlong Killer": {
