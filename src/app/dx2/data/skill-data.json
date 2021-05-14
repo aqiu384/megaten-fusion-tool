@@ -357,6 +357,13 @@
     "effect": "Dmg dealt +15% and received -30% when HP > 80%",
     "elem": "pas"
   },
+  "Blossoming Cyclone": {
+    "cost": 6,
+    "effect": "Pierce, Heals 70 to all allies",
+    "elem": "for",
+    "power": 170,
+    "target": "1 Foe"
+  },
   "Bolt Storm": {
     "cost": 5,
     "effect": "2-4 hits",
@@ -470,6 +477,10 @@
     "effect": "50% chance to counter with 50 Phys dmg when receiving Phys dmg",
     "elem": "pas",
     "points": 6
+  },
+  "Cry of the Poor": {
+    "effect": "When 2+ Vile/Jaki/Drakes alive: At end of own turn, reduce all Foe HP by 15% current (<300), 3+: 15% current (<300)",
+    "elem": "pas"
   },
   "Culann's Hound": {
     "effect": "Phys Pierce, Casts Charge at end of turn",
@@ -759,7 +770,8 @@
   },
   "Dragon Sense": {
     "effect": "Phys acc +15%, Phys eva +15%",
-    "elem": "pas"
+    "elem": "pas",
+    "points": 16
   },
   "Dragon Slayer": {
     "cost": 6,
@@ -928,6 +940,11 @@
     "elem": "pas",
     "points": 16
   },
+  "Epitome of Hardiness": {
+    "effect": "HP +20%, Healing +20%",
+    "elem": "pas",
+    "points": 16
+  },
   "Epitome of Illusion": {
     "effect": "Phys eva +15%, Ailment resist +45%",
     "elem": "pas",
@@ -948,8 +965,15 @@
     "elem": "pas",
     "points": 16
   },
+  "Eruption": {
+    "cost": 7,
+    "effect": "Rakunda, Casts 4 hits of 25 fir dmg on random foes",
+    "elem": "fir",
+    "power": 120,
+    "target": "All Foes"
+  },
   "Euphoric Frenzy": {
-    "effect": "",
+    "effect": "50% chance to counter with Charm when receiving Phys dmg",
     "elem": "pas"
   },
   "Everything Evil": {
@@ -1176,7 +1200,7 @@
   "Glorious Bolt": {
     "cost": 6,
     "effect": "Pierce, Recovers 1 MP to all allies",
-    "elem": "elec",
+    "elem": "ele",
     "power": 170,
     "target": "1 Foe"
   },
@@ -1612,6 +1636,10 @@
     "effect": "Allies in Might gain Phys Pierce",
     "elem": "pas"
   },
+  "Kujaku Myo-o": {
+    "effect": "Immune to all ailments, Cures all ally ailments at beginning of own turn",
+    "elem": "pas"
+  },
   "Kusanagi": {
     "cost": 6,
     "effect": "Tarukaja to Allies, Dmg scales with Patk",
@@ -1634,6 +1662,10 @@
   },
   "Law of Hell": {
     "effect": "Nullify Foe Press Turn bonus when Ally weakness struck",
+    "elem": "pas"
+  },
+  "Life & Death": {
+    "effect": "Recover 1 MP and revive a random ally with 50% HP when a foe is downed",
     "elem": "pas"
   },
   "Life Aid": {
@@ -2269,6 +2301,10 @@
     "power": 120,
     "target": "All Foes"
   },
+  "Megingjord": {
+    "effect": "Phys Pierce, -20% phys damage received, -30% crit rate received",
+    "elem": "pas"
+  },
   "Memutudi": {
     "cost": 4,
     "effect": "Cures Mute, Mute resist +30% for 1 wave",
@@ -2782,6 +2818,11 @@
     "power": 45,
     "target": "Rand Foes"
   },
+  "Rallying Survivor": {
+    "effect": "Endure, Ailment recovery rate +25%",
+    "elem": "pas",
+    "points": 16
+  },
   "Rapid Shot": {
     "effect": "Regular attack changed to 25 dmg, 5 hits, 30% crit, enters Might after use, Nullifies counter effects",
     "elem": "pas"
@@ -3086,7 +3127,7 @@
   "Soul Break": {
     "cost": 5,
     "effect": "30% crit, Pierce, Removes 3 MP",
-    "elem": "phys",
+    "elem": "phy",
     "power": 145,
     "target": "1 Foe"
   },
@@ -3100,6 +3141,13 @@
     "elem": "alm",
     "points": 7,
     "power": 140,
+    "target": "1 Foe"
+  },
+  "Soul Hunt": {
+    "cost": 6,
+    "effect": "Pierce, Tarunda + Rakunda, Nullifies endure effects",
+    "elem": "dar",
+    "power": 170,
     "target": "1 Foe"
   },
   "Soul Judgement": {
@@ -3319,6 +3367,13 @@
     "effect": "Take random attacks in place of all Allies with -25% dmg",
     "elem": "pas"
   },
+  "Thunderous Hammer": {
+    "cost": 6,
+    "effect": "30% crit, Pierce, 2nd cast 50% crit nullifies counter and endure effects, 3rd cast add 125 elec dmg with 50% crit",
+    "elem": "phy",
+    "power": 150,
+    "target": "1 Foe"
+  },
   "Thunder Reign": {
     "cost": 7,
     "elem": "ele",
@@ -3389,6 +3444,10 @@
     "power": 180,
     "target": "1 Foe"
   },
+  "Twilight Inferno": {
+    "effect": "Fire Pierce, Casts Maragidyne when downed",
+    "elem": "pas"
+  },
   "Twister": {
     "cost": 5,
     "effect": "2-4 hits",
@@ -3418,6 +3477,10 @@
     "elem": "ice",
     "power": 130,
     "target": "1 Foe"
+  },
+  "Vile Glare": {
+    "effect": "When 2+ Vile/Jaki/Drakes alive and foe attacks first: Tarunda + Remove 1 Press Turn, 3+: Rakunda + Remove 1 Press Turn",
+    "elem": "pas"
   },
   "Violent Dance": {
     "cost": 6,
