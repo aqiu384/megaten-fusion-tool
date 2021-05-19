@@ -28,12 +28,24 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 
 const resistElems = COMP_CONFIG_JSON['resistElems'];
 const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
-const races = [].concat.apply([], COMP_CONFIG_JSON['species']);
+const races = [];
 const speciesLookup = {};
 const species = {};
 
 for (const rs of COMP_CONFIG_JSON['species']) {
   species[rs[0]] = rs.slice(1);
+
+  for (const race of rs.slice(1)) {
+    speciesLookup[race] = rs[0];
+  }
+}
+
+for (const rs of COMP_CONFIG_JSON['species']) {
+  species[rs[0]] = rs.slice(1);
+
+  for (const race of rs) {
+    races.push(race);
+  }
 
   for (const race of rs.slice(1)) {
     speciesLookup[race] = rs[0];

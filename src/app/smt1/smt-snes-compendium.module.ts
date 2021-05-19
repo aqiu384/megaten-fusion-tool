@@ -40,7 +40,7 @@ import { CompendiumComponent } from './components/compendium.component';
   ]
 })
 export class SmtSnesCompendiumModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SmtSnesCompendiumModule> {
     return {
       ngModule: SmtSnesCompendiumModule
     };

@@ -18,7 +18,7 @@ import { ColumnWidthsDirective } from './column-widths.directive';
   ]
 })
 export class SharedModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SharedModule> {
     return {
       ngModule: SharedModule
     };

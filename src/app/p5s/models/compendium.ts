@@ -1,4 +1,4 @@
-import { Demon as BaseDemon, Compendium as ICompendium, NamePair, FusionEntry } from '../../compendium/models';
+import { Compendium as ICompendium, NamePair, FusionEntry } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 
 export class Compendium implements ICompendium {
@@ -13,7 +13,7 @@ export class Compendium implements ICompendium {
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private _allDemons: BaseDemon[];
+  private _allDemons: Demon[];
   private _allSkills: Skill[];
   private _inheritTypes: { [inherti: string]: number[] };
 
@@ -168,7 +168,7 @@ export class Compendium implements ICompendium {
     this.allResults = results;
   }
 
-  get allDemons(): BaseDemon[] {
+  get allDemons(): Demon[] {
     return this._allDemons;
   }
 
@@ -184,7 +184,7 @@ export class Compendium implements ICompendium {
     return this.compConfig.inheritElems;
   }
 
-  getDemon(name: string): BaseDemon {
+  getDemon(name: string): Demon {
     return this.demons[name];
   }
 

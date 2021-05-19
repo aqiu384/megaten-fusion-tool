@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 
-import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { Compendium } from '../models/compendium';
 import { Demon } from '../models';
 import {
@@ -44,7 +44,7 @@ import { FusionDataService } from '../fusion-data.service';
             <td>{{ demon.growth }}</td>
             <td>{{ demon.type }}</td>
             <td>{{ demon.subtype }}</td>
-            <td>{{ demon.drops }}</td>
+            <td>{{ demon.drop }}</td>
           </tr>
         </tbody>
       </table>
@@ -162,7 +162,12 @@ export class DemonEntryComponent implements OnChanges {
     </ng-container>
   `
 })
-export class DemonEntryContainerComponent extends DECC {
+export class DemonEntryContainerComponent {
+  protected subscriptions: Subscription[] = [];
+  name: string;
+  demon: Demon;
+  compendium: Compendium;
+  appName = 'Test App';
   arcanas = Arcanas;
   demonOrders = DemonOrders;
 
@@ -172,8 +177,35 @@ export class DemonEntryContainerComponent extends DECC {
     private currentDemonService: CurrentDemonService,
     private fusionDataService: FusionDataService
   ) {
-    super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
+  }
+
+  ngOnInit() {
+    this.subscribeAll();
+  }
+
+  ngOnDestroy() {
+    for (const subscription of this.subscriptions) {
+      subscription.unsubscribe();
+    }
+  }
+
+  subscribeAll() {
+    this.subscriptions.push(
+      this.fusionDataService.compendium.subscribe(comp => {
+        this.compendium = comp;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
+      this.currentDemonService.currentDemon.subscribe(name => {
+        this.name = name;
+        this.getDemonEntry();
+      }));
+
+    this.route.params.subscribe(params => {
+      this.currentDemonService.nextCurrentDemon(params['demonName']);
+    });
   }
 
   getDemonEntry() {

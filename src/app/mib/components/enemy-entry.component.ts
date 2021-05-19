@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 import { BaseStats, PhysResistanceElements, MagicResistanceElements, SkillElementOrder } from '../constants';
 import { Compendium } from '../models/compendium';
-import { Enemy } from '../models';
+import { Demon } from '../models';
 
 @Component({
   selector: 'app-enemy-entry',
@@ -85,7 +85,7 @@ import { Enemy } from '../models';
 })
 export class EnemyEntryComponent {
   @Input() name: string;
-  @Input() demon: Enemy;
+  @Input() demon: Demon;
   @Input() compendium: Compendium;
 
   statHeaders = ['HP', 'MP'].concat(BaseStats, ['MAtk', 'MDef']);

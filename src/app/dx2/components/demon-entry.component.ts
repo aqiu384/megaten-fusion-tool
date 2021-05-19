@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 
-import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { BaseStats, ResistanceElements } from '../constants';
 import { Demon, Skill } from '../models';
 import { Compendium } from '../models/compendium';
@@ -84,7 +84,7 @@ export class DemonEntryComponent implements OnChanges {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
 
-  skillLvls: { skill: Skill; source: number; costmod: number, upgrades: string[]; }[] = [];
+  skillLvls: { skill: Skill; cost: number; source: number; costmod: number, upgrades: string[]; }[] = [];
   demonPanels: { level: number, step: string; bonus: string }[] = [];
   demonAtks = [0, 0, 0, 0];
 
@@ -144,14 +144,54 @@ export class DemonEntryComponent implements OnChanges {
     </app-demon-entry>
   `
 })
-export class DemonEntryContainerComponent extends DECC {
+export class DemonEntryContainerComponent {
+  protected subscriptions: Subscription[] = [];
+  name: string;
+  demon: Demon;
+  compendium: Compendium;
+  appName = 'Test App';
+
   constructor(
     private route: ActivatedRoute,
     private title: Title,
     private currentDemonService: CurrentDemonService,
     private fusionDataService: FusionDataService
   ) {
-    super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
+  }
+
+  ngOnInit() {
+    this.subscribeAll();
+  }
+
+  ngOnDestroy() {
+    for (const subscription of this.subscriptions) {
+      subscription.unsubscribe();
+    }
+  }
+
+  subscribeAll() {
+    this.subscriptions.push(
+      this.fusionDataService.compendium.subscribe(comp => {
+        this.compendium = comp;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
+      this.currentDemonService.currentDemon.subscribe(name => {
+        this.name = name;
+        this.getDemonEntry();
+      }));
+
+    this.route.params.subscribe(params => {
+      this.currentDemonService.nextCurrentDemon(params['demonName']);
+    });
+  }
+
+  getDemonEntry() {
+    if (this.compendium && this.name) {
+      this.title.setTitle(`${this.name} - ${this.appName}`);
+      this.demon = this.compendium.getDemon(this.name);
+    }
   }
 }

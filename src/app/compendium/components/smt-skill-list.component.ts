@@ -61,7 +61,7 @@ export class SmtSkillListRowComponent {
     <table appPositionSticky class="list-table">
       <tfoot #stickyHeader appColumnWidths
         class="app-skill-list-header sticky-header"
-        [hasInherit]="inheritOrder"
+        [hasInherit]="!!inheritOrder"
         [hasTarget]="hasTarget"
         [hasRank]="hasRank"
         [transferTitle]="transferTitle"
@@ -72,7 +72,7 @@ export class SmtSkillListRowComponent {
     <table class="list-table">
       <tfoot #hiddenHeader appColumnWidths
         class="app-skill-list-header"
-        [hasInherit]="inheritOrder"
+        [hasInherit]="!!inheritOrder"
         [hasTarget]="hasTarget"
         [hasRank]="hasRank"
         [transferTitle]="transferTitle"
@@ -81,11 +81,11 @@ export class SmtSkillListRowComponent {
       <tbody>
         <tr *ngFor="let data of rowData"
           class="app-smt-skill-list-row"
-          [hasInherit]="inheritOrder"
+          [hasInherit]="!!inheritOrder"
           [hasTarget]="hasTarget"
           [hasRank]="hasRank"
           [isPersona]="isPersona"
-          [hasTransferTitle]="transferTitle"
+          [hasTransferTitle]="!!transferTitle"
           [data]="data"
           [ngClass]="{
             extra: data.rank > 70 && data.rank < 90,

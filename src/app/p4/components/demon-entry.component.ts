@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 
 import { Demon } from '../../compendium/models';
-import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
@@ -69,8 +69,13 @@ export class DemonEntryComponent {
     </app-enemy-entry>
   `
 })
-export class DemonEntryContainerComponent extends DECC {
+export class DemonEntryContainerComponent {
+  protected subscriptions: Subscription[] = [];
+  name: string;
+  demon: Demon;
+  compendium: Compendium;
   compConfig: CompendiumConfig;
+  appName = 'Test App';
 
   constructor(
     private route: ActivatedRoute,
@@ -78,8 +83,42 @@ export class DemonEntryContainerComponent extends DECC {
     private currentDemonService: CurrentDemonService,
     private fusionDataService: FusionDataService
   ) {
-    super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
     this.compConfig = fusionDataService.compConfig;
+  }
+
+  ngOnInit() {
+    this.subscribeAll();
+  }
+
+  ngOnDestroy() {
+    for (const subscription of this.subscriptions) {
+      subscription.unsubscribe();
+    }
+  }
+
+  subscribeAll() {
+    this.subscriptions.push(
+      this.fusionDataService.compendium.subscribe(comp => {
+        this.compendium = comp;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
+      this.currentDemonService.currentDemon.subscribe(name => {
+        this.name = name;
+        this.getDemonEntry();
+      }));
+
+    this.route.params.subscribe(params => {
+      this.currentDemonService.nextCurrentDemon(params['demonName']);
+    });
+  }
+
+  getDemonEntry() {
+    if (this.compendium && this.name) {
+      this.title.setTitle(`${this.name} - ${this.appName}`);
+      this.demon = this.compendium.getDemon(this.name);
+    }
   }
 }

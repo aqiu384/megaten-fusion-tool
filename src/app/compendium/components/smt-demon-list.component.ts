@@ -10,7 +10,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
     <td *ngIf="!hasCurrLvl">{{ data.lvl | lvlToNumber }}</td>
     <td *ngIf="hasCurrLvl" style="text-align: center;">
-      <select (change)="emitValidLvl($event.target.value)" (focus)="updateCurrRange()">
+      <select (change)="emitValidLvl($event)" (focus)="updateCurrRange()">
         <option [value]="data.currLvl">{{ data.currLvl }}</option>
         <option *ngFor="let _ of currRange; let i = index" [value]="i + currOffset">{{ i + currOffset }}</option>
         <option value="99">99</option>
@@ -48,8 +48,8 @@ export class SmtDemonListRowComponent {
     this.currRange = Array(99 - this.currOffset);
   }
 
-  emitValidLvl(lvlStr: string) {
-    const lvl = parseInt(lvlStr, 10);
+  emitValidLvl(lvlEvent: Event) {
+    const lvl = parseInt((<HTMLInputElement>lvlEvent.target).value, 10);
 
     if (this.data.currLvl !== lvl && 0 < lvl && lvl < 100 && Number.isInteger(lvl)) {
       this.data.currLvl = lvl;
@@ -68,7 +68,7 @@ export class SmtDemonListRowComponent {
         class="app-demon-list-header sticky-header"
         [isPersona]="isPersona"
         [isEnemy]="isEnemy"
-        [hasInherits]="inheritOrder"
+        [hasInherits]="!!inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
         [affinityHeaders]="affinityHeaders"
@@ -81,7 +81,7 @@ export class SmtDemonListRowComponent {
         class="app-demon-list-header"
         [isPersona]="isPersona"
         [isEnemy]="isEnemy"
-        [hasInherits]="inheritOrder"
+        [hasInherits]="!!inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
         [affinityHeaders]="affinityHeaders"
@@ -92,8 +92,8 @@ export class SmtDemonListRowComponent {
           class="app-smt-demon-list-row"
           [isEnemy]="isEnemy"
           [hasCurrLvl]="hasCurrLvl"
-          [hasInherits]="inheritOrder"
-          [hasAffinity]="affinityHeaders"
+          [hasInherits]="!!inheritOrder"
+          [hasAffinity]="!!affinityHeaders"
           [ngClass]="{
             special: data.fusion === 'special',
             exception: data.fusion !== 'special' && data.fusion !== 'normal'

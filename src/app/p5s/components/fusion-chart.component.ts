@@ -25,7 +25,7 @@ export class P5SFusionChartComponent implements OnChanges {
   @Input() compConfig: CompendiumConfig;
   @Input() normTitle: string;
 
-  table: { result: string, recipe: string }[];
+  table: { result: string, recipes: string }[];
 
   ngOnChanges() {
     if (this.compConfig) {

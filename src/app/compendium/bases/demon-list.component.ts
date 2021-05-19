@@ -1,7 +1,9 @@
+import { Directive } from '@angular/core';
 import { Input, OnInit, AfterViewChecked } from '@angular/core';
 import { SortedTableComponent } from '../../shared/sorted-table.component';
 import { Demon } from '../models';
 
+@Directive()
 export class DemonListComponent<TDemon extends Demon> extends SortedTableComponent<TDemon> implements OnInit, AfterViewChecked {
   @Input() raceOrder: { [race: string]: number };
   @Input() inheritOrder: { [elem: string]: number };

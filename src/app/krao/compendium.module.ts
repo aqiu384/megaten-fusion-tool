@@ -54,8 +54,8 @@ for (const entry of Object.values(DEMON_DATA_JSON)) {
 
   if (skills.length > 4) {
     nskills[skills[2]] = entry.lvl + 2;
-  } if (entry.skilli) {
-    nskills[entry.skilli] = 0;
+  } if (entry['skilli']) {
+    nskills[entry['skilli']] = 0;
   }
 
   entry.stats = [stats[0], stats[5]].concat(stats.slice(1, 5));
@@ -63,11 +63,11 @@ for (const entry of Object.values(DEMON_DATA_JSON)) {
 }
 
 for (const entry of Object.values(SKILL_DATA_JSON)) {
-  if (entry.power) {
-    entry.effect = entry.power + ' dmg ' + (entry.effect || '');
+  if (entry['power']) {
+    entry['effect'] = entry['power'] + ' dmg ' + (entry['effect'] || '');
   }
 
-  entry['rank'] = entry.unique ? 99 : (entry.cost - 2000) / 10 || 0;
+  entry['rank'] = entry['unique'] ? 99 : (entry['cost'] - 2000) / 10 || 0;
 }
 
 for(const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {

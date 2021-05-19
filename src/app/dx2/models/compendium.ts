@@ -132,7 +132,6 @@ export class Compendium implements ICompendium {
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
     const skills = Object.keys(this.skills).map(name => this.skills[name])
-      .filter(skill => skill.rank < 99)
       .filter(skill => skill.learnedBy.length + skill.transfer.length > 0);
 
     for (const race of Races) {

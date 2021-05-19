@@ -48,7 +48,7 @@ for (const rs of COMP_CONFIG_JSON.species) {
 for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
   entry['resists'] = COMP_CONFIG_JSON.raceRes[entry.race];
   entry.atks = entry.atks.slice(0, 2);
-  entry.skills = entry.skills || [];
+  entry['skills'] = entry['skills'] || [];
 
   if (entry.race === 'Vile' && !SPECIAL_RECIPES_JSON[demon]) {
     SPECIAL_RECIPES_JSON[demon] = { fusion: 'normal', prereq: 'Defeat to unlock fusion' };
@@ -73,11 +73,11 @@ for (const row of FUSION_CHART_JSON.table) {
 
 for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
   if (recipe.fusion === 'accident') {
-    recipe.prereq = 'Fusion accident only';
+    recipe['prereq'] = 'Fusion accident only';
   } else if (recipe.fusion === 'recruit') {
-    recipe.prereq = 'Recruitment only';
-  } else if (recipe.prereq === 'defeat') {
-    recipe.prereq = 'Defeat to unlock fusion';
+    recipe['prereq'] = 'Recruitment only';
+  } else if (recipe['prereq'] === 'defeat') {
+    recipe['prereq'] = 'Defeat to unlock fusion';
   }
 }
 

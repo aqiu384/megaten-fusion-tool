@@ -1,7 +1,7 @@
 import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
-  atks: string[];
+  atks: number[];
   inherit: string;
   drop: string;
   align: string;

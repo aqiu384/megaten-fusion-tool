@@ -42,6 +42,9 @@ export interface Skill {
   requires?: string;
   inherit?: string;
   unique?: boolean;
+  hits?: string;
+  target?: string;
+  transfer?: { demon: string, level: number }[];
   learnedBy: { demon: string, level: number }[];
 }
 

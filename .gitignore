@@ -1,14 +1,21 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# megaten-specific
+/gh-pages
+package-lock.json
+
 # compiled output
 /dist
 /tmp
 /out-tsc
-/gh-pages
+# Only exists if Bazel was run
+/bazel-out
 
 # dependencies
 /node_modules
-package-lock.json
+
+# profiling files
+chrome-profiler-events*.json
 
 # IDEs and editors
 /.idea
@@ -25,6 +32,7 @@ package-lock.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history/*
 
 # misc
 /.sass-cache
@@ -32,12 +40,9 @@ package-lock.json
 /coverage
 /libpeerconnection.log
 npm-debug.log
+yarn-error.log
 testem.log
 /typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
 
 # System Files
 .DS_Store

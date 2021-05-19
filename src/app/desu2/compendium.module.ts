@@ -56,16 +56,16 @@ for (const dataJson of [VAN_SKILL_DATA_JSON, REC_SKILL_DATA_JSON]) {
 
 for (const [race, entry] of Object.entries(RACIAL_SKILLS_JSON)) {
   if (races.includes(race)) {
-    rskillLookup[race] = entry.skill;
-    VAN_SKILL_DATA_JSON[entry.skill] = {
+    rskillLookup[race] = entry['skill'];
+    VAN_SKILL_DATA_JSON[entry['skill']] = {
       elem: 'racial',
       effect: entry.effect
     };
 
-    enrskillLookup[race] = entry.enskill;
-    VAN_SKILL_DATA_JSON[entry.enskill] = {
+    enrskillLookup[race] = entry['enskill'];
+    VAN_SKILL_DATA_JSON[entry['enskill']] = {
       elem: 'racial',
-      effect: entry.eneffect
+      effect: entry['eneffect']
     };
   }
 }

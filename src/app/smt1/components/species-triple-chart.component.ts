@@ -34,7 +34,7 @@ import { FusionChart } from '../../compendium/models';
 })
 export class SpeciesTripleChartComponent implements OnChanges {
   @Input() speciesChart: FusionChart;
-  @Input() title: FusionChart;
+  @Input() title: string;
 
   table: string[][] = [];
 

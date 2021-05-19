@@ -87,6 +87,7 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
+          attack:   'Physical x1 to single foe',
           lvl:      json['lvl'],
           currLvl:  json['lvl'],
           hpmod:    json['hpmod'] || 1,
@@ -99,10 +100,19 @@ export class Compendium implements ICompendium {
           price:    Compendium.estimateBasePrice(json['stats'], json['pcoeff']),
           resists:  json['resists'].split('').map(char => ResistCodes[char]),
           ailments: (json['ailments'] || '---------').split('').map(char => ResistCodes[char]),
-          inherits: json['inherits'].split('').map(char => char === 'o'),
+          affinities: json['inherits'].split('').map(char => char === 'o' ? 1 : 0),
           skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         };
+
+        if (json['attack']) {
+          const attack = json['attack'];
+          demons[name].attack = 
+            (attack.element ? attack.element : 'Physical') +
+            (attack.hits ? ' x' + attack.hits : ' x1') +
+            (attack.target ? ' to ' + attack.target : ' to single foe') +
+            (attack.ailment ? ' - ' + attack.ailment : '');
+        }
 
         if (demons[name].ailments) {
           const ailLvls = demons[name].ailments;
@@ -119,7 +129,8 @@ export class Compendium implements ICompendium {
 
     const defaultStats = [100, 100, 1, 1, 1, 1, 1];
     const defaultDemon: Demon = {
-      name,
+      name:     'Unknown',
+      attack:   'Physical x1 to single foe',
       lvl:      1,
       currLvl:  1,
       hpmod:    1,
@@ -132,7 +143,7 @@ export class Compendium implements ICompendium {
       price:    Compendium.estimateBasePrice(defaultStats, 96),
       resists:  '--------'.split('').map(char => ResistCodes[char]),
       ailments: '---------'.split('').map(char => ResistCodes[char]),
-      inherits: '---------------'.split('').map(char => char === 'o'),
+      affinities: '---------------'.split('').map(char => char === 'o' ? 1 : 0),
       skills:   {},
       source:   {},
       isEnemy:  true

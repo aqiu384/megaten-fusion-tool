@@ -114,7 +114,7 @@ for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
 for (const [name, skill] of Object.entries(SKILL_DATA_JSON)) {
   skill['element'] = skill.elem;
 
-  if (skill.unique) {
+  if (skill['unique']) {
     skill['enemy'] = true;
   }
 }

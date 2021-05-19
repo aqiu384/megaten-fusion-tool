@@ -1,12 +1,8 @@
-import {
-  Input,
-  Output,
-  EventEmitter,
-  ViewChild
-} from '@angular/core';
+import { Input, Output, EventEmitter, ViewChild, Directive } from '@angular/core';
 import { ColumnWidthsDirective } from './column-widths.directive';
 import { PositionStickyDirective } from '../shared/position-sticky.directive';
 
+@Directive()
 export abstract class SortedTableHeaderComponent {
   private sortAsc = true;
   private sortAscIndex = 1;
@@ -34,6 +30,7 @@ export abstract class SortedTableHeaderComponent {
   }
 }
 
+@Directive()
 export abstract class SortedTableComponent<TData> {
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
   @ViewChild('stickyHeader', { read: ColumnWidthsDirective }) stickyHeader: ColumnWidthsDirective;

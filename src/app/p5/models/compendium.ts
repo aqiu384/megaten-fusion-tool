@@ -1,10 +1,10 @@
-import { Demon, Enemy, Skill } from '../models';
-import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { Demon, Skill } from '../models';
+import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { MultiFusionPair, CompendiumConfig } from '../models';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
-  private enemies: { [name: string]: Enemy };
+  private enemies: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] };
   private _dlcDemons: { [name: string]: boolean };
@@ -13,7 +13,7 @@ export class Compendium implements ICompendium {
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private _allDemons: BaseDemon[];
+  private _allDemons: Demon[];
   private _allSkills: Skill[];
 
   constructor(private compConfig: CompendiumConfig) {
@@ -23,7 +23,7 @@ export class Compendium implements ICompendium {
 
   initImportedData() {
     const demons: { [name: string]: Demon } = {};
-    const enemies: { [name: string]: Enemy } = {};
+    const enemies: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string [] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
@@ -44,7 +44,10 @@ export class Compendium implements ICompendium {
           resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
           fusion:  json['fusion'] || 'normal',
           inherit: json['inherits'],
-          prereq:  json['prereq'] || ''
+          prereq:  json['prereq'] || '',
+          persona: name,
+          trait:   '',
+          exp:     0
         };
 
         if (json['itemr']) {
@@ -72,7 +75,7 @@ export class Compendium implements ICompendium {
           fusion:  'normal',
           skills:  (enemy['skills'] || []).reduce((acc, s) => { acc[s] = 0; return acc }, {}),
           area:    enemy['area'].join(', '),
-          drop:    drops.join(', ') || '-',
+          item:    drops.join(', ') || '-',
           isEnemy: true
         };
       }
@@ -218,8 +221,8 @@ export class Compendium implements ICompendium {
       }
     }
 
-    const allies = Object.keys(demonEntries).map(name => <BaseDemon>demonEntries[name]);
-    const enemies = Object.keys(this.enemies).map(name => <BaseDemon>this.enemies[name]);
+    const allies = Object.keys(demonEntries).map(name => demonEntries[name]);
+    const enemies = Object.keys(this.enemies).map(name => this.enemies[name]);
     this._allDemons = enemies.concat(allies);
     this._allSkills = skills;
     this.allIngredients = ingredients;
@@ -235,7 +238,7 @@ export class Compendium implements ICompendium {
     this.updateDerivedData();
   }
 
-  get allDemons(): BaseDemon[] {
+  get allDemons(): Demon[] {
     return this._allDemons;
   }
 
@@ -249,7 +252,7 @@ export class Compendium implements ICompendium {
       .map(name => this.demons[name]);
   }
 
-  getDemon(name: string): BaseDemon {
+  getDemon(name: string): Demon {
     return this.demons[name] || this.enemies[name];
   }
 

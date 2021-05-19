@@ -1,14 +1,11 @@
-import {
-  ChangeDetectorRef,
-  OnInit,
-  OnDestroy
-} from '@angular/core';
+import { ChangeDetectorRef, OnInit, OnDestroy, Directive } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Observable } from 'rxjs';
 import { Subscription } from 'rxjs';
 
 import { Demon, Compendium, FusionDataService } from '../models';
 
+@Directive()
 export abstract class DemonListContainerComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
   demons: Observable<Demon[]>;

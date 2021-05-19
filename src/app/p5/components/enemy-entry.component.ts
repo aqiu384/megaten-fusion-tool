@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
-import { Enemy, CompendiumConfig } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
 @Component({
@@ -33,7 +33,7 @@ import { Compendium } from '../models/compendium';
           </td>
           <td>{{ demon.trait }}</td>
           <td>{{ demon.area }}</td>
-          <td>{{ demon.drop }}</td>
+          <td>{{ demon.item }}</td>
         </tr>
       </tbody>
     </table>
@@ -50,7 +50,7 @@ import { Compendium } from '../models/compendium';
 })
 export class EnemyEntryComponent {
   @Input() name: string;
-  @Input() demon: Enemy;
+  @Input() demon: Demon;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
 }

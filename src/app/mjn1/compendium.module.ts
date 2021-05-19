@@ -30,21 +30,27 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 const MJN1_FUSION_CALCULATOR = new NormalFusionCalculator([ fuseMajinByRank ], [ ]);
 const MJN1_FISSION_CALCULATOR = new NormalFusionCalculator([ splitMajinByRank ], [ ]);
 
-const races = [].concat.apply([], COMP_CONFIG_JSON.species);
+const races = [];
 const resistElems = races.map(r => r.slice(0, 3)).slice(0, 23);
 const skillElems = COMP_CONFIG_JSON.skillElems.map(r => r.slice(0, 3));
+
+for (const rs of COMP_CONFIG_JSON['species']) {
+  for (const race of rs) {
+    races.push(race);
+  }
+}
 
 for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
   entry.stats = entry.stats.slice(0, 8);
   entry['person'] = entry.race;
-  entry['nskills'] = (entry.skills || []).reduce((acc, s) => { acc[s] = 0; return acc; }, {});
+  entry['nskills'] = (entry['skills'] || []).reduce((acc, s) => { acc[s] = 0; return acc; }, {});
   entry['resists'] = '';
 }
 
 for (const [skill, entry] of Object.entries(SKILL_DATA_JSON)) {
   entry['elem'] = entry.element;
-  entry.target = (entry.target || 'Self') + (entry.range ? ' ' + entry.range : '');
-  entry.effect = entry.effect || entry.power + ' dmg';
+  entry['target'] = (entry['target'] || 'Self') + (entry['range'] ? ' ' + entry['range'] : '');
+  entry['effect'] = entry['effect'] || entry['power'] + ' dmg';
 }
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {

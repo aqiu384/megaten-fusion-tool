@@ -37,7 +37,7 @@ import { EnemyEntryComponent } from './components/enemy-entry.component';
   ],
 })
 export class P4CompendiumModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<P4CompendiumModule> {
     return {
       ngModule: P4CompendiumModule
     };

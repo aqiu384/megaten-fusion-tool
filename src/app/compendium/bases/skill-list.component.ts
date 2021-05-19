@@ -1,7 +1,9 @@
+import { Directive } from '@angular/core';
 import { Input, OnInit, AfterViewChecked } from '@angular/core';
 import { SortedTableComponent } from '../../shared/sorted-table.component';
 import { Skill } from '../models';
 
+@Directive()
 export class SkillListComponent<TSkill extends Skill> extends SortedTableComponent<TSkill> implements OnInit, AfterViewChecked {
   @Input() elemOrder: { [elem: string]: number };
   @Input() inheritOrder: { [elem: string]: number };

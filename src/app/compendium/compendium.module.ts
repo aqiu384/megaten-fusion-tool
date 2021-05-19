@@ -129,7 +129,7 @@ import {
   ]
 })
 export class SharedCompendiumModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SharedCompendiumModule> {
     return {
       ngModule: SharedCompendiumModule,
       providers: [ CurrentDemonService ]

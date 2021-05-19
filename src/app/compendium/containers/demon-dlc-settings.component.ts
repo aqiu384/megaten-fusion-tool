@@ -1,8 +1,9 @@
-import { ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, OnInit, OnDestroy, Directive } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Compendium, FusionDataService } from '../models';
 
+@Directive()
 export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
   private _dlcDemons: { [name: string]: boolean };
   dlcDemons: { name: string, included: boolean }[];

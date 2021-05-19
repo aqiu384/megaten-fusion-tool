@@ -48,7 +48,7 @@ export class Compendium implements ICompendium {
         price: Compendium.estimateBasePrice(json.stats),
         stats: json.stats,
         resists: json.resists.split('').map(char => ResistCodes[char]),
-        inherits: json.inherits.split('').map(char => char === 'o'),
+        affinities: json.inherits.split('').map(char => char === 'o' ? 1 : 0),
         skills: json.skills,
         fusion: 'normal',
         prereq: FUSION_PREREQS_JSON[name] || ''
@@ -64,7 +64,7 @@ export class Compendium implements ICompendium {
         price: Compendium.estimateBasePrice(json.stats),
         stats: [0, 0].concat(json.stats),
         resists: json.resists.split('').map(char => ResistCodes[char]),
-        inherits: 'oo-oo-oo-'.split('').map(char => char === 'o'),
+        affinities: 'oo-oo-oo-'.split('').map(char => char === 'o' ? 1 : 0),
         skills: json.skills,
         fusion: 'magatama',
         prereq: json.prereq
@@ -74,13 +74,13 @@ export class Compendium implements ICompendium {
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
       skills[name] = {
         name,
-        rank:    json.rank,
-        element: json.element,
-        effect:  json.effect,
-        cost:    json.cost || 0,
-        damage:  json.damage || '',
-        target:  json.target || '',
-        requires: json.requires || '',
+        rank:    json['rank'],
+        element: json['element'],
+        effect:  json['effect'],
+        cost:    json['cost'] || 0,
+        damage:  json['damage'] || '',
+        target:  json['target'] || '',
+        requires: json['requires'] || '',
         learnedBy: [],
         level: 0
       };

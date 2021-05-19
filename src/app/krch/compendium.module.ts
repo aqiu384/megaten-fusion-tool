@@ -45,8 +45,8 @@ for (const entry of Object.values(DEMON_DATA_JSON)) {
 
   if (skills.length > 3) {
     nskills[skills[1]] = 0;
-  } if (entry.skilli) {
-    nskills[entry.skilli] = 0;
+  } if (entry['skilli']) {
+    nskills[entry['skilli']] = 0;
   }
 
   entry['nskills'] = nskills;

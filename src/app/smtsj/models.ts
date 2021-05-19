@@ -1,11 +1,12 @@
 import { Demon as BaseDemon, Skill as BaseSkill } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
+  attack: string;
   code: number;
   pcoeff: number;
   hpmod: number;
   align: string;
-  ailments?: string[];
+  ailments?: number[];
   source: { [skill: string]: number; };
 }
 

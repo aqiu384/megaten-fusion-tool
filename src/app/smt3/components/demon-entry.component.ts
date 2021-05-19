@@ -1,8 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-
-import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
+import { Subscription } from 'rxjs';
 
 import { BaseStats, ResistanceElements, ElementOrder, InheritElements } from '../models/constants';
 import { Demon } from '../models';
@@ -29,7 +28,7 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-inherits
         [hasIcons]="false"
         [inheritHeaders]="inheritHeaders"
-        [inherits]="demon.inherits">
+        [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-skills
         [hasTarget]="true"
@@ -76,7 +75,12 @@ export class DemonEntryComponent {
     <app-demon-entry [name]="name" [demon]="demon" [compendium]="compendium" [isCursed]="isCursed"></app-demon-entry>
   `
 })
-export class DemonEntryContainerComponent extends DECC {
+export class DemonEntryContainerComponent {
+  protected subscriptions: Subscription[] = [];
+  name: string;
+  demon: Demon;
+  compendium: Compendium;
+  appName = 'Test App';
   isCursed = false;
 
   constructor(
@@ -85,16 +89,46 @@ export class DemonEntryContainerComponent extends DECC {
     private currentDemonService: CurrentDemonService,
     private fusionDataService: FusionDataService
   ) {
-    super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
   }
 
+  ngOnInit() {
+    this.subscribeAll();
+  }
+
+  ngOnDestroy() {
+    for (const subscription of this.subscriptions) {
+      subscription.unsubscribe();
+    }
+  }
+
   subscribeAll() {
-    super.subscribeAll();
+    this.subscriptions.push(
+      this.fusionDataService.compendium.subscribe(comp => {
+        this.compendium = comp;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
+      this.currentDemonService.currentDemon.subscribe(name => {
+        this.name = name;
+        this.getDemonEntry();
+      }));
+
+    this.route.params.subscribe(params => {
+      this.currentDemonService.nextCurrentDemon(params['demonName']);
+    });
 
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(chart => {
         this.isCursed = chart.isCursed;
       }));
+  }
+
+  getDemonEntry() {
+    if (this.compendium && this.name) {
+      this.title.setTitle(`${this.name} - ${this.appName}`);
+      this.demon = this.compendium.getDemon(this.name);
+    }
   }
 }

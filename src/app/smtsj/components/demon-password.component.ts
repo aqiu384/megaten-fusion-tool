@@ -18,7 +18,7 @@ import { PasswordEncodings } from '../models/constants';
   `]
 })
 export class DemonPasswordComponent {
-  @Output() passwordBytes = new EventEmitter<string>();
+  @Output() passwordBytes = new EventEmitter<number[]>();
 
   form: FormGroup;
   isRedux = false;

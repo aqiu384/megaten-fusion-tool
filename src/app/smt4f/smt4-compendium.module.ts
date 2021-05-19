@@ -39,7 +39,7 @@ import { FusionChartContainerComponent } from './components/fusion-chart.compone
   ],
 })
 export class Smt4CompendiumModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<Smt4CompendiumModule> {
     return {
       ngModule: Smt4CompendiumModule
     };

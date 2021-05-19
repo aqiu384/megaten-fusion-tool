@@ -2,9 +2,6 @@ import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } 
 
 export interface Demon extends BaseDemon {
   item: string;
-}
-
-export interface Enemy extends BaseDemon {
   persona: string;
   trait: string;
   exp: number;

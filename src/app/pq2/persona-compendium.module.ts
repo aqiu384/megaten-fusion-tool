@@ -50,7 +50,7 @@ import { QrcodeComponent } from './components/qrcode-component';
   ],
 })
 export class PersonaCompendiumModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<PersonaCompendiumModule> {
     return {
       ngModule: PersonaCompendiumModule
     };

@@ -57,10 +57,10 @@ for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
 for (const entry of Object.values(ENEMY_DATA_JSON)) {
   entry['exp'] = 0;
   entry['yen'] = 0;
-  entry['stats'] = entry.stats ?
-    [entry.stats[0], Math.floor(entry.stats[0] * 0.66)] :
+  entry['stats'] = entry['stats'] ?
+    [entry['stats'][0], Math.floor(entry['stats'][0] * 0.66)] :
     [entry.lvl * 15, entry.lvl * 10];
-  entry['stats'] = entry.stats.concat([0, 0, 0, 0, 0]);
+  entry['stats'] = entry['stats'].concat([0, 0, 0, 0, 0]);
   entry['area'] = [entry['areas']];
 }
 

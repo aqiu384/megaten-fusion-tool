@@ -37,7 +37,7 @@ import { CompendiumComponent } from './components/compendium.component';
   ]
 })
 export class SmtKuzuCompendiumModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SmtKuzuCompendiumModule> {
     return {
       ngModule: SmtKuzuCompendiumModule
     };

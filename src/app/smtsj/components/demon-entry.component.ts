@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 
-import { DemonEntryContainerComponent as DECC } from '../../compendium/containers/demon-entry.component';
 import { BaseStats, ResistanceElements, InheritElements, Ailments, SkillElementOrder } from '../models/constants';
 import { Demon } from '../models';
 import { Compendium } from '../models/compendium';
@@ -21,13 +21,7 @@ import { FusionDataService } from '../fusion-data.service';
         [statHeaders]="statHeaders"
         [fusionHeaders]="fusionHeaders"
         [stats]="demon.stats">
-        <td *ngIf="!demon.attack">Physical 1x to single foe</td>
-        <td *ngIf="demon.attack as attack">
-          {{ attack.element ? attack.element : 'Physical' }}
-          x{{ attack.hits ? attack.hits : '1' }}
-          to {{ attack.target ? attack.target : 'single foe' }}
-          {{ attack.ailment ? '- ' + attack.ailment : '' }}
-        </td>
+        <td>{{ demon.attack }}</td>
       </app-demon-stats>
       <app-demon-resists
         [resistHeaders]="resistanceHeaders"
@@ -37,7 +31,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <app-demon-inherits
         [inheritHeaders]="inheritanceHeaders"
-        [inherits]="demon.inherits">
+        [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-skills
         [hasRank]="true"
@@ -90,7 +84,12 @@ export class DemonEntryComponent {
     </app-demon-entry>
   `
 })
-export class DemonEntryContainerComponent extends DECC {
+export class DemonEntryContainerComponent {
+  protected subscriptions: Subscription[] = [];
+  name: string;
+  demon: Demon;
+  compendium: Compendium;
+  appName = 'Test App';
   laplaceOn = false;
 
   constructor(
@@ -99,16 +98,46 @@ export class DemonEntryContainerComponent extends DECC {
     private currentDemonService: CurrentDemonService,
     private fusionDataService: FusionDataService
   ) {
-    super(route, title, currentDemonService, fusionDataService);
     this.appName = fusionDataService.appName;
   }
 
+  ngOnInit() {
+    this.subscribeAll();
+  }
+
+  ngOnDestroy() {
+    for (const subscription of this.subscriptions) {
+      subscription.unsubscribe();
+    }
+  }
+
   subscribeAll() {
-    super.subscribeAll();
+    this.subscriptions.push(
+      this.fusionDataService.compendium.subscribe(comp => {
+        this.compendium = comp;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
+      this.currentDemonService.currentDemon.subscribe(name => {
+        this.name = name;
+        this.getDemonEntry();
+      }));
+
+    this.route.params.subscribe(params => {
+      this.currentDemonService.nextCurrentDemon(params['demonName']);
+    });
 
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(chart => {
         this.laplaceOn = chart.isSubappOn('Laplace');
       }));
+  }
+
+  getDemonEntry() {
+    if (this.compendium && this.name) {
+      this.title.setTitle(`${this.name} - ${this.appName}`);
+      this.demon = this.compendium.getDemon(this.name);
+    }
   }
 }
