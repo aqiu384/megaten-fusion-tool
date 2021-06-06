@@ -76,6 +76,10 @@
     "power": 110,
     "target": "All Foes"
   },
+  "Alder King": {
+    "effect": "Recovers 15% HP to all allies at beginning of own turn, Casts 1-turn Rakunda at beginning of foe turn",
+    "elem": "pas"
+  },
   "Almighty Boost": {
     "effect": "Almighty dmg +15%",
     "elem": "pas",
@@ -117,7 +121,7 @@
   "Ars Magna": {
     "cost": 8,
     "elem": "alm",
-    "power": 180,
+    "power": 200,
     "target": "1 Foe"
   },
   "Ascension": {
@@ -839,6 +843,10 @@
     "points": 6,
     "power": 120,
     "target": "1 Foe"
+  },
+  "Ego Erosion": {
+    "effect": "Foe ailment recovery rate -10%",
+    "elem": "pas"
   },
   "Elec Amp": {
     "effect": "Elec dmg +25%",
@@ -2751,6 +2759,10 @@
     "power": 170,
     "target": "1 Foe"
   },
+  "Power of Life": {
+    "effect": "Ailment resist +30%, Begin battle with Lydia",
+    "elem": "pas"
+  },
   "Pralaya": {
     "cost": 8,
     "effect": "Tetra Break + Makara Break, Dmg scales with Patk",
@@ -3244,6 +3256,10 @@
     "points": 6,
     "power": 120,
     "target": "1 Foe"
+  },
+  "Sweet Whisper": {
+    "effect": "Mahamarin Karin + Rakunda when ally downed",
+    "elem": "pas"
   },
   "Sword of Actuation": {
     "cost": 6,

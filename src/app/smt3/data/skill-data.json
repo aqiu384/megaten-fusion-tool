@@ -41,52 +41,52 @@
     "target": "All"
   },
   "Anti-Curse": {
-    "effect": "Resists curse damage",
+    "effect": "Halves curse damage, does not override innate weakness",
     "element": "pas",
     "rank": 3
   },
-  "Anti-Death": {
-    "effect": "Resists death damage",
+  "Anti-Dark": {
+    "effect": "Halves dark damage, does not override innate weakness",
     "element": "pas",
     "rank": 5
   },
   "Anti-Elec": {
-    "effect": "Resists elec damage",
+    "effect": "Halves elec damage, does not override innate weakness",
     "element": "pas",
     "rank": 4
   },
-  "Anti-Expel": {
-    "effect": "Resists expel damage",
-    "element": "pas",
-    "rank": 5
-  },
   "Anti-Fire": {
-    "effect": "Resists fire damage",
+    "effect": "Halves fire damage, does not override innate weakness",
     "element": "pas",
     "rank": 4
   },
   "Anti-Force": {
-    "effect": "Resists force damage",
+    "effect": "Halves force damage, does not override innate weakness",
     "element": "pas",
     "rank": 4
   },
   "Anti-Ice": {
-    "effect": "Resists ice damage",
+    "effect": "Halves ice damage, does not override innate weakness",
     "element": "pas",
     "rank": 4
   },
+  "Anti-Light": {
+    "effect": "Halves light damage, does not override innate weakness",
+    "element": "pas",
+    "rank": 5
+  },
   "Anti-Mind": {
-    "effect": "Resists mind damage",
+    "effect": "Halves mind damage, does not override innate weakness",
     "element": "pas",
     "rank": 3
   },
   "Anti-Nerve": {
-    "effect": "Resists nerve damage",
+    "effect": "Halves nerve damage, does not override innate weakness",
     "element": "pas",
     "rank": 3
   },
   "Anti-Phys": {
-    "effect": "Resists phys damage",
+    "effect": "Halves phys damage, does not override innate weakness",
     "element": "pas",
     "rank": 5
   },
@@ -155,6 +155,12 @@
     "requires": "Mouth",
     "target": "All"
   },
+  "Blackmail": {
+    "effect": "Requests Macca or Item. Effective when talker is 10 levels higher than target. Adverse when talker is 10 levels lower than target",
+    "element": "tal",
+    "rank": 4,
+    "target": "Single"
+  },
   "Blight": {
     "cost": 22,
     "damage": "Weak (22)",
@@ -218,13 +224,6 @@
     "element": "ice",
     "rank": 4,
     "target": "Single"
-  },
-  "Bullet Time": {
-    "cost": 1010,
-    "damage": "Medium (25)",
-    "effect": "Always hit, 30% Panic",
-    "element": "phy",
-    "target": "All"
   },
   "Chaos Blade": {
     "cost": 32,
@@ -424,6 +423,13 @@
     "element": "pas",
     "rank": 5
   },
+  "Enter Yoshitsune": {
+    "cost": 9,
+    "damage": "Medium (36)",
+    "effect": "High crit/always hit",
+    "element": "phy",
+    "target": "Single"
+  },
   "Estoma": {
     "cost": 1010,
     "effect": "Reduces Encounter rate until New Kagutsuchi",
@@ -568,17 +574,6 @@
     "element": "exp",
     "target": "All"
   },
-  "Gonnection": {
-    "effect": "Urges an indecisive demon. Effective when user is the same race as the target",
-    "element": "pas",
-    "rank": 5
-  },
-  "Guardian Raptor": {
-    "cost": 1010,
-    "effect": "Removes all debuffs",
-    "element": "sup",
-    "target": "All"
-  },
   "Guillotine": {
     "cost": 17,
     "damage": "Heavy (47)",
@@ -686,7 +681,7 @@
     "rank": 7,
     "target": "Multi"
   },
-  "Hitokoto Gust": {
+  "Hitokoto Storm": {
     "cost": 1025,
     "damage": "Heavy (65)",
     "element": "for",
@@ -761,7 +756,7 @@
     "element": "phy",
     "target": "All"
   },
-  "Jiraiya Tarantella": {
+  "Jiraiya Dance": {
     "cost": 1040,
     "damage": "Heavy (90)",
     "element": "alm",
@@ -784,6 +779,11 @@
     "element": "tal",
     "rank": 6,
     "target": "Single"
+  },
+  "Kinspeak": {
+    "effect": "Urges an indecisive demon. Effective when user is the same race as the target",
+    "element": "pas",
+    "rank": 5
   },
   "Last Resort": {
     "damage": "Heavy (59)",
@@ -1142,7 +1142,7 @@
     "rank": 3,
     "target": "Single"
   },
-  "Mishaguji Thunder": {
+  "Mishaguji Raiden": {
     "cost": 1025,
     "damage": "Heavy (55)",
     "element": "ele",
@@ -1265,7 +1265,7 @@
     "rank": 12
   },
   "Pierce": {
-    "effect": "Phys attacks bypass all resistances except Repel",
+    "effect": "Attacks bypass all resistances except Repel",
     "element": "pas",
     "rank": 8
   },
@@ -1322,8 +1322,8 @@
     "element": "fir",
     "target": "Single"
   },
-  "Raidou the Aeon": {
-    "effect": "Attack damage +50% and phys attacks bypass all resistances except Repel",
+  "Raidou the Eternal": {
+    "effect": "Attack damage +50% and attacks bypass all resistances except Repel",
     "element": "pas"
   },
   "Rakukaja": {
@@ -1338,6 +1338,12 @@
     "effect": "Debuff defense once",
     "element": "sup",
     "rank": 2,
+    "target": "All"
+  },
+  "Raptor Guardian": {
+    "cost": 1010,
+    "effect": "Removes all debuffs",
+    "element": "sup",
     "target": "All"
   },
   "Rebellion": {
@@ -1390,7 +1396,7 @@
     "rank": 6,
     "target": "Random"
   },
-  "Samrecarm": {
+  "Samarecarm": {
     "cost": 1035,
     "effect": "Revive with all HP",
     "element": "rec",
@@ -1438,7 +1444,7 @@
     "target": "All"
   },
   "Son's Oath": {
-    "effect": "Attack damage +50% ",
+    "effect": "Attack damage +50% and attacks bypass all resistances except Repel",
     "element": "pas"
   },
   "Sonic Wave": {
@@ -1627,12 +1633,6 @@
     "rank": 8,
     "target": "All"
   },
-  "Threaten": {
-    "effect": "Requests Macca or Item. Effective when talker is 10 levels higher than target. Adverse when talker is 10 levels lower than target",
-    "element": "tal",
-    "rank": 4,
-    "target": "Single"
-  },
   "Thunderclap": {
     "cost": 1012,
     "effect": "Chance of reducing an enemy's current HP by half",
@@ -1676,6 +1676,13 @@
     "element": "spe",
     "rank": 5
   },
+  "Twosome Time": {
+    "cost": 1010,
+    "damage": "Medium (25)",
+    "effect": "Always hit, 30% Panic",
+    "element": "phy",
+    "target": "All"
+  },
   "Venom Bite": {
     "cost": 18,
     "damage": "Medium (41)",
@@ -1711,8 +1718,8 @@
     "element": "pas",
     "rank": 6
   },
-  "Void Death": {
-    "effect": "Nullifies death damage",
+  "Void Dark": {
+    "effect": "Nullifies dark damage",
     "element": "pas",
     "rank": 8
   },
@@ -1720,11 +1727,6 @@
     "effect": "Nullifies elec damage",
     "element": "pas",
     "rank": 7
-  },
-  "Void Expel": {
-    "effect": "Nullifies expel damage",
-    "element": "pas",
-    "rank": 8
   },
   "Void Fire": {
     "effect": "Nullifies fire damage",
@@ -1740,6 +1742,11 @@
     "effect": "Nullifies ice damage",
     "element": "pas",
     "rank": 7
+  },
+  "Void Light": {
+    "effect": "Nullifies light damage",
+    "element": "pas",
+    "rank": 8
   },
   "Void Mind": {
     "effect": "Nullifies mind damage",
@@ -1821,13 +1828,6 @@
     "effect": "Medium crit, 30% Bind",
     "element": "phy",
     "target": "All"
-  },
-  "Yoshitsune Show-up": {
-    "cost": 9,
-    "damage": "Medium (36)",
-    "effect": "High crit/always hit",
-    "element": "phy",
-    "target": "Single"
   },
   "Zan": {
     "cost": 1003,

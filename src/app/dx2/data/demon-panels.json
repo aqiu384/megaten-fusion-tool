@@ -29,6 +29,11 @@
     "Phys DEF +120, Mag DEF +120", "-10% to Phys damage received, -10% to Light damage received, -10% to Dark damage received.",
     "Max HP +250", "+30% to Max HP."
   ],
+  "Alraune": [
+    "Max HP +150", "-15% chance of receiving status ailments.",
+    "Mag ATK +80", "+10% to max HP.",
+    "Max HP +150", "+15% chance to inflict status ailments."
+  ],
   "Amaterasu": [
     "Max HP +250", "+15% to Fire damage inflicted.",
     "Mag DEF +150", "-50% to Fire damage received.",
@@ -216,13 +221,23 @@
   ],
   "Demiurge": [
     "Max HP +250", "+10% to Phys evasion rate. +10% to HP Healing skill effectiveness.",
-    "Mag ATK +100", " Activates the following Chain Effect when the enemy enters a state of Repel Magic: Removes Repel Magic from all enemies.",
+    "Mag ATK +100", "Reduces the cost of all skills by 1 MP. Activates the following Chain Effect when the enemy enters a state of Repel Magic: Removes Repel Magic from all enemies.",
     "Max HP +250", "+10% to Almighty damage dealt. +25% to max HP."
   ],
   "Dionysus": [
     "Max HP +150", "-15% to Critical hit rate of damage received.",
     "Phys DEF +80", "+10% to Max HP.",
     "Max HP +150", "+15% chance to inflict status ailments."
+  ],
+  "Erlkonig": [
+    "Max HP +250", "+20% to max HP.",
+    "Mag DEF +150", "While the one with this skill is alive, -20% to Dark damage received by all allies.",
+    "Max HP +250", "+25% to Healing skill effectiveness. Activates the following Chain Effect at the start of enemy turn: +20% to DEF of all party members. (1 turn)"
+  ],
+  "Es": [
+    "Max HP +150", "-15% chance of receiving status ailments.",
+    "Mag DEF +80", "+10% chance to inflict status ailments.",
+    "Max HP +150", "+20% to max HP."
   ],
   "Fafnir": [
     "Max HP +250", "+15% to Phys hit rate.",
