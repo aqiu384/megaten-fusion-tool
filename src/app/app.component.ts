@@ -21,7 +21,7 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
         </thead>
       </table>
       <h4 *ngIf="loading" style="text-align: center;">
-        Loading Fusion Tool...
+        Loading fusion tool... Reopen in a private session if tool does not load.
       </h4>
       <ng-container *ngIf="!loading">
         <router-outlet></router-outlet>

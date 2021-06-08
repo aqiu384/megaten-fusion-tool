@@ -11,7 +11,9 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js"
+          "/main.*.js",
+          "/common.*.js",
+          "/*-polyfills.*.js"
         ]
       }
     },
@@ -21,6 +23,7 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
+          "/*.js",
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
