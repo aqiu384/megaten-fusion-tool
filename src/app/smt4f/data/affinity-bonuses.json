@@ -1,0 +1,92 @@
+{
+  "elements": {
+    "phys": "attack",
+    "gun": "attack",
+    "fire": "attack",
+    "ice": "attack",
+    "elec": "attack",
+    "force": "attack",
+    "light": "attack",
+    "dark": "attack",
+    "almighty": "attack",
+    "recovery": "support",
+    "ailment": "ailment",
+    "support": "support"
+  },
+  "bonuses": {
+    "attack": [
+      "Dmg +10%",
+      "Dmg +10%, Cost -10%",
+      "Dmg +20%, Cost -10%",
+      "Dmg +30%, Cost -10%",
+      "Dmg +30%, Cost -20%",
+      "Dmg +40%, Cost -20%",
+      "Dmg +50%, Cost -20%",
+      "Dmg +60%, Cost -20%",
+      "Dmg +70%, Cost -20%"
+    ],
+    "ailment": [
+      "Hit +10%",
+      "Hit +10%, Cost -10%",
+      "Hit +20%, Cost -10%",
+      "Hit +30%, Cost -10%",
+      "Hit +30%, Cost -20%",
+      "Hit +40%, Cost -20%",
+      "Hit +50%, Cost -20%",
+      "Hit +60%, Cost -20%",
+      "Hit +70%, Cost -20%"
+    ],
+    "recovery": [
+      "Heal +15%",
+      "Heal +15%, Cost -10%",
+      "Heal +30%, Cost -10%",
+      "Heal +45%, Cost -10%",
+      "Heal +45%, Cost -20%"
+    ],
+    "support": [
+      "Cost -10%",
+      "Cost -20%",
+      "Cost -30%",
+      "Cost -40%",
+      "Cost -50%"
+    ]
+  },
+  "penalties": {
+    "attack": [
+      "Dmg -10%",
+      "Dmg -20%",
+      "Dmg -30%",
+      "Dmg -40%",
+      "Dmg -50%",
+      "Dmg -60%",
+      "Dmg -70%",
+      "Dmg -80%",
+      "Dmg -90%"
+    ],
+    "ailment": [
+      "Hit -10%",
+      "Hit -20%",
+      "Hit -30%",
+      "Hit -40%",
+      "Hit -50%",
+      "Hit -60%",
+      "Hit -70%",
+      "Hit -80%",
+      "Hit -90%"
+    ],
+    "recovery": [
+      "Cost +10%",
+      "Cost +20%",
+      "Cost +30%",
+      "Cost +40%",
+      "Cost +50%"
+    ],
+    "support": [
+      "Cost +10%",
+      "Cost +20%",
+      "Cost +30%",
+      "Cost +40%",
+      "Cost +50%"
+    ]
+  }
+}

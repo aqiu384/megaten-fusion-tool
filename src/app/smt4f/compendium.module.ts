@@ -18,6 +18,7 @@ import ELEMENT_CHART_JSON from '../smt4/data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
+import AFFINITIES_JSON from './data/affinity-bonuses.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -29,6 +30,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 
 const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
 const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
+const affinityBonuses: { bonuses: string[][], penalties: string[][] } = { bonuses: [], penalties: [] };
 
 for (const [demon, entry] of Object.entries(ENEMY_DATA_JSON)) {
   entry['skills'] = entry['eskills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {});
@@ -43,6 +45,12 @@ for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name].fusion = prereq.includes('Fusion Accident') ? 'accident' : 'normal';
 }
 
+for (const elem of affinityElems) {
+  const bonusElem = AFFINITIES_JSON.elements[elem];
+  affinityBonuses.bonuses.push(AFFINITIES_JSON.bonuses[bonusElem]);
+  affinityBonuses.penalties.push(AFFINITIES_JSON.penalties[bonusElem]);
+}
+
 export const SMT4F_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei IV Apocalypse',
   races: COMP_CONFIG_JSON.races,
@@ -54,6 +62,7 @@ export const SMT4F_COMPENDIUM_CONFIG: CompendiumConfig = {
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
+  affinityBonuses,
 
   demonData: DEMON_DATA_JSON,
   evolveData: EVOLUTIONS_JSON,

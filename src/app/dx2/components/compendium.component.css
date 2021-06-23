@@ -19,6 +19,10 @@
 .dx2 div.element-icon.sup { background-image: url('/assets/images/smtsj/sup.png'); }
 .dx2 div.element-icon.pas { background-image: url('/assets/images/smtsj/pas.png'); }
 
+.dx2 tr.fusion-color td.price:after {
+  content: "★";
+}
+
 .dx2 th.title, .dx2 th.nav.active, .dx2 th.nav.active a {
   color: white;
   background-color: #9d19bb;

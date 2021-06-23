@@ -85,7 +85,7 @@
     "stats": [1246, 50, 170, 181, 145, 181]
   },
   "Alraune": {
-    "ai": "sup",
+    "ai": "atk",
     "arch": ["Life Gain", "Megidola", "Samarecarm", "Insanity", "Null Fire"],
     "base": ["Deathtouch", "Power of Life", "Sweet Whisper"],
     "cnum": 287,
@@ -871,7 +871,7 @@
     "stats": [1263, 190, 113, 190, 65, 104]
   },
   "Erlkonig": {
-    "ai": "sup",
+    "ai": "atk",
     "arch": ["Vitality Amp III", "Mamudodyne", "Recarmdra", "Null Mortal", "Drain Elec"],
     "base": ["Maziodyne", "Power of Life", "Alder King"],
     "cnum": 289,
@@ -2955,6 +2955,17 @@
     "resists": "wwwwww-",
     "stats": [896, 130, 112, 112, 138, 130]
   },
+  "Sonic": {
+    "ai": "atk",
+    "arch": ["Agility Amp III", "Vorpal Blade", "Charge", "Force Boost", "Null Force"],
+    "base": ["Speedster", "Supersonic Hedgehog", "Spin Dash"],
+    "cnum": 0,
+    "gach": ["Serial Killer", "Agility Amp II", "Good Aim", "Endure"],
+    "grade": 70,
+    "race": "Unknown",
+    "resists": "----s--",
+    "stats": [858, 164, 76, 104, 235, 153]
+  },
   "Sphinx": {
     "ai": "sup",
     "arch": ["Mortal Jihad", "Ziodyne", "Mediarahan", "Auto-Rakuka", "Null Ice"],
@@ -3304,6 +3315,16 @@
     "race": "Deity",
     "resists": "-wd--nn",
     "stats": [1037, 152, 208, 142, 117, 152]
+  },
+  "Vouivre": {
+    "ai": "atk",
+    "arch": ["Blight"],
+    "base": ["Toxic Sting", "Marin Karin", "Resonant Garnet"],
+    "cnum": 290,
+    "grade": 60,
+    "race": "Snake",
+    "resists": "--ws---",
+    "stats": [981, 170, 84, 130, 163, 160]
   },
   "White Rider": {
     "ai": "atk",

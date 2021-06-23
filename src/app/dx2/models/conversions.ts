@@ -25,8 +25,9 @@ function estimateMagCost(grade1, grade2, gradeR): number {
   const gradeDelta = Math.max(gradeR - (grade1 + grade2) / 2, 0);
   const rareCost = RARITY_DELTA_COSTS[rareR - 1][rareDelta + 1] || 0;
   const gradeCost = GRADE_DELTA_COSTS[Math.floor(gradeR / 10)];
+  const fusionCost = rareCost ? (rareCost + Math.floor(gradeCost * gradeDelta)) : 5;
 
-  return rareCost ? (rareCost + Math.floor(gradeCost * gradeDelta)) : 5;
+  return rare1 > rare2 ? rare1 * 10 + rare2 : rare2 * 10 + rare1;
 }
 
 export function toFusionPair(currentDemon: string, names: NamePair, compendium: Compendium): FusionPair {
@@ -41,7 +42,8 @@ export function toFusionPair(currentDemon: string, names: NamePair, compendium: 
     name1: names.name1,
     race2: demon2.race,
     lvl2: demon2.lvl,
-    name2: names.name2
+    name2: names.name2,
+    notes: 'fusion-color'
   };
 }
 
@@ -57,6 +59,7 @@ export function toFusionPairResult(currentDemon: string, names: NamePair, compen
     name1: names.name1,
     race2: demonR.race,
     lvl2: demonR.lvl,
-    name2: names.name2
+    name2: names.name2,
+    notes: 'fusion-color'
   };
 }

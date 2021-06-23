@@ -1,0 +1,75 @@
+{
+  "elements": {
+    "phys": "phys",
+    "gun": "phys",
+    "fire": "magic",
+    "ice": "magic",
+    "elec": "magic",
+    "force": "magic",
+    "light": "ailment",
+    "dark": "ailment",
+    "almighty": "magic",
+    "recovery": "support",
+    "ailment": "ailment",
+    "support": "support"
+  },
+  "bonuses": {
+    "recovery": [
+      "Heal +5",
+      "Heal +5, Cost -1",
+      "Heal +10, Cost -1",
+      "Heal +15, Cost -1",
+      "Heal +20, Cost -1",
+      "Heal +25, Cost -1",
+      "Heal +30, Cost -1",
+      "Heal +35, Cost -1"
+    ],
+    "support": [
+      "Cost -1",
+      "Cost -2",
+      "Cost -3"
+    ],
+    "death's door": [
+      "Cost -1",
+      "Cost -2",
+      "Cost -3",
+      "Cost -4",
+      "Cost -5"
+    ],
+    "drain": [
+      "Dmg +1",
+      "Dmg +1, Cost -1",
+      "Dmg +4, Cost -1",
+      "Dmg +9, Cost -1",
+      "Dmg +14, Cost -1"
+    ],
+    "magic": [
+      "Dmg +1",
+      "Dmg +1, Cost -1",
+      "Dmg +4, Cost -1",
+      "Dmg +9, Cost -1",
+      "Dmg +9, Cost -2",
+      "Dmg +14, Cost -2",
+      "Dmg +19, Cost -2",
+      "Dmg +24, Cost -2"
+    ],
+    "phys": [
+      "Dmg +7",
+      "Dmg +7, Cost -1",
+      "Dmg +14, Cost -1",
+      "Dmg +21, Cost -1",
+      "Dmg +21, Cost -2",
+      "Dmg +28, Cost -2",
+      "Dmg +35, Cost -2",
+      "Dmg +42, Cost -2"
+    ],
+    "ailment": [
+      "Hit +5",
+      "Hit +5, Cost -1",
+      "Hit +10, Cost -1",
+      "Hit +15, Cost -1",
+      "Hit +15, Cost -2"
+    ]
+  },
+  "penalties": {}
+}

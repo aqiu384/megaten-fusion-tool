@@ -22,6 +22,11 @@ export interface CompendiumConfig extends BaseComp {
   elemOrder: { [elem: string]: number };
   resistCodes: { [code: string]: number };
 
+  affinityBonuses: {
+    bonuses: string[][],
+    penalties: string[][]
+  }
+
   demonData;
   evolveData;
   dlcDemons: string[];

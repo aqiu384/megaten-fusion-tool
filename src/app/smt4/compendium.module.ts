@@ -59,6 +59,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
+  affinityBonuses: { bonuses: [], penalties: [] },
 
   demonData: DEMON_DATA_JSON,
   evolveData: EVOLUTIONS_JSON,

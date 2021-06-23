@@ -52,6 +52,7 @@ export const DemonOrders = [
   'Grave',
   'Foul',
   'Karma',
+  'Fiend',
   'Meta'
 ];
 
