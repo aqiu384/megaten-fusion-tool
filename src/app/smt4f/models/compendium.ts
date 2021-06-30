@@ -36,7 +36,7 @@ export class Compendium implements ICompendium {
       for (const ail of this.compConfig.ailmentElems) {
         ailmentResists[lvl].push({
           name:     prefix + ' ' + ail,
-          element:  'passive',
+          element:  'pas',
           effect:   'Innate resistance',
           cost:     0,
           rank:     99,
@@ -199,7 +199,7 @@ export class Compendium implements ICompendium {
     }
 
     this._allDemons = Object.keys(demonEntries).map(name => demonEntries[name]);
-    this._allSkills = skills;
+    this._allSkills = skills.filter(skill => skill.rank < 99 || skill.learnedBy.length > 0);
     this.allIngredients = ingredients;
     this.allResults = results;
   }

@@ -84,7 +84,7 @@ export class DemonEntryComponent implements OnChanges {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
 
-  skillLvls: { skill: Skill; cost: number; source: number; costmod: number, upgrades: string[]; }[] = [];
+  skillLvls: { skill: Skill; cost: number; source: number; upgrades: string[]; }[] = [];
   demonPanels: { level: number, step: string; bonus: string }[] = [];
   demonAtks = [0, 0, 0, 0];
 
@@ -103,9 +103,9 @@ export class DemonEntryComponent implements OnChanges {
 
     const rawPanels = this.compendium.getDemonPanels(this.demon.name);
     const stats = this.demon.stats;
-    const panels = [];
-    const skills = [];
-    const attacks = [
+    this.demonPanels = [];
+    this.skillLvls = [];
+    this.demonAtks = [
       // Math.floor(stats[4] * 4.7 + 50 * 7.4),
       Math.floor(stats[2] * 2.1 + 50 * 5.6 + 50),
       Math.floor(stats[3] * 2.1 + 50 * 5.6 + 50),
@@ -114,22 +114,18 @@ export class DemonEntryComponent implements OnChanges {
     ];
 
     for (let i = 0; i < rawPanels.length; i+= 2) {
-      panels.push({ level: i / 2 + 1, step: rawPanels[i], bonus: rawPanels[i + 1] });
+      this.demonPanels.push({ level: i / 2 + 1, step: rawPanels[i], bonus: rawPanels[i + 1] });
     }
 
     for (const slvl of this.demon.baseSkills) {
       const skill = this.compendium.getSkill(slvl.skill);
-      skills.push({
+      this.skillLvls.push({
         skill,
         cost: skill.cost > 0 && 3300 < slvl.source && slvl.source < 3900 ? skill.cost - 1 : skill.cost,
         source: slvl.source,
         upgrades: this.compendium.getSkillUpgrade(slvl.skill).map((u, i) => `Lvl ${i + 2}: ${u}`)
       });
     }
-
-    this.skillLvls = skills;
-    this.demonPanels = panels;
-    this.demonAtks = attacks;
   }
 }
 

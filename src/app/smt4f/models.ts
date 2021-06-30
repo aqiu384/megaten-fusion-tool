@@ -23,8 +23,8 @@ export interface CompendiumConfig extends BaseComp {
   resistCodes: { [code: string]: number };
 
   affinityBonuses: {
-    bonuses: string[][],
-    penalties: string[][]
+    costs: number[][],
+    upgrades: number[][]
   }
 
   demonData;

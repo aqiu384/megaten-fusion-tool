@@ -52,14 +52,14 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei IV',
   races: COMP_CONFIG_JSON.races,
   raceOrder: getEnumOrder(COMP_CONFIG_JSON.races),
-  appCssClasses: ['smt4'],
+  appCssClasses: ['smt4', 'smt4f'],
 
   affinityElems: [],
   skillData: SKILL_DATA_JSON,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
-  affinityBonuses: { bonuses: [], penalties: [] },
+  affinityBonuses: { costs: [], upgrades: [] },
 
   demonData: DEMON_DATA_JSON,
   evolveData: EVOLUTIONS_JSON,

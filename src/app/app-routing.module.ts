@@ -57,6 +57,11 @@ const appRoutes: Routes = [
     data: { appName: 'Shin Megami Tensei IV Apocalypse' }
   },
   {
+    path: 'smt5',
+    loadChildren: () => import('./smt5/compendium.module').then(m => m.CompendiumModule),
+    data: { appName: 'Shin Megami Tensei V' }
+  },
+  {
     path: 'dsum',
     loadChildren: () => import('./dsum/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Shin Megami Tensei: Devil Summoner' }

@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { CompendiumConfig, Demon } from '../models';
+import { CompendiumConfig, Demon, Skill } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -31,13 +31,33 @@ import { FusionDataService } from '../fusion-data.service';
         [inheritHeaders]="compConfig.affinityElems"
         [inherits]="demon.affinities">
       </app-demon-inherits>
-      <app-demon-skills
-        [hasTarget]="true"
-        [hasRank]="true"
-        [elemOrder]="compConfig.elemOrder"
-        [compendium]="compendium"
-        [skillLevels]="demon.skills">
-      </app-demon-skills>
+      <table class="entry-table">
+        <thead>
+          <tr><th colSpan="7" class="title">Learned Skills</th></tr>
+          <tr>
+            <th>Elem</th>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Effect</th>
+            <th>Target</th>
+            <th>Rank</th>
+            <th>Level</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of skillLvls">
+            <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
+            <td>{{ data.skill.name + (data.lvl ? ' +' + data.lvl : '') }}</td>
+            <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
+            <td>{{ data.skill.effect + (data.upgrade ? ' (+' + data.upgrade + '%)' : '') }}</td>
+            <td>{{ data.skill.target }}</td>
+            <td [style.color]="data.skill.rank !== 99 ? null: 'transparent'">{{ data.skill.rank }}</td>
+            <td>{{ data.skill.level | skillLevelToString }}</td>
+          </tr>
+          <tr *ngIf="!skillLvls.length">
+            <td colSpan="7">No Learned Skills Found</td>
+          <tr>
+        </tbody>
+      </table>
       <app-fusion-entry-table *ngIf="demon.evolvesFrom"
         [title]="'Evolves From'"
         [baseUrl]="'..'"
@@ -59,6 +79,50 @@ export class DemonEntryComponent {
   @Input() demon: Demon;
   @Input() compConfig: CompendiumConfig;
   @Input() compendium: Compendium;
+
+  skillLvls: { skill: Skill; cost: number; lvl: number, upgrade: number; }[] = [];
+
+  ngOnChanges() {
+    if (!this.demon) {
+      return;
+    }
+
+    this.skillLvls = [];
+
+    for (const sname of Object.keys(this.demon.skills)) {
+      const skill = this.compendium.getSkill(sname);
+      let alvl = 0;
+      let acost = skill.cost;
+      let aupgrade = 0;
+
+      if (this.demon.affinities) {
+        const rawCost = skill.cost - 1000;
+        const elemIndex = this.compConfig.affinityElems.indexOf(skill.element);
+        alvl = elemIndex > -1 ? this.demon.affinities[elemIndex] : 0;
+        
+        if (alvl > 0) {
+          aupgrade = this.compConfig.affinityBonuses.upgrades[elemIndex][alvl - 1];
+          acost = skill.cost - Math.round(rawCost * this.compConfig.affinityBonuses.costs[elemIndex][alvl - 1] / 100);
+        }
+      }
+
+      this.skillLvls.push({
+        skill,
+        cost: acost,
+        lvl: alvl,
+        upgrade: aupgrade
+      });
+    }
+
+    for (const skill of this.skillLvls) {
+      skill.skill.level = this.demon.skills[skill.skill.name];
+    }
+
+    this.skillLvls.sort((a, b) =>
+      (a.skill.level - b.skill.level) * 20 +
+      this.compConfig.elemOrder[a.skill.element] - this.compConfig.elemOrder[b.skill.element]
+    );
+  }
 }
 
 @Component({

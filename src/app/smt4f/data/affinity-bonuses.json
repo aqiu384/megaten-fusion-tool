@@ -1,92 +1,28 @@
 {
   "elements": {
-    "phys": "attack",
+    "phy": "attack",
     "gun": "attack",
-    "fire": "attack",
+    "fir": "attack",
     "ice": "attack",
-    "elec": "attack",
-    "force": "attack",
-    "light": "attack",
-    "dark": "attack",
-    "almighty": "attack",
-    "recovery": "support",
-    "ailment": "ailment",
-    "support": "support"
+    "ele": "attack",
+    "for": "attack",
+    "lig": "attack",
+    "dar": "attack",
+    "alm": "attack",
+    "rec": "sup",
+    "ail": "ail",
+    "sup": "sup"
   },
-  "bonuses": {
-    "attack": [
-      "Dmg +10%",
-      "Dmg +10%, Cost -10%",
-      "Dmg +20%, Cost -10%",
-      "Dmg +30%, Cost -10%",
-      "Dmg +30%, Cost -20%",
-      "Dmg +40%, Cost -20%",
-      "Dmg +50%, Cost -20%",
-      "Dmg +60%, Cost -20%",
-      "Dmg +70%, Cost -20%"
-    ],
-    "ailment": [
-      "Hit +10%",
-      "Hit +10%, Cost -10%",
-      "Hit +20%, Cost -10%",
-      "Hit +30%, Cost -10%",
-      "Hit +30%, Cost -20%",
-      "Hit +40%, Cost -20%",
-      "Hit +50%, Cost -20%",
-      "Hit +60%, Cost -20%",
-      "Hit +70%, Cost -20%"
-    ],
-    "recovery": [
-      "Heal +15%",
-      "Heal +15%, Cost -10%",
-      "Heal +30%, Cost -10%",
-      "Heal +45%, Cost -10%",
-      "Heal +45%, Cost -20%"
-    ],
-    "support": [
-      "Cost -10%",
-      "Cost -20%",
-      "Cost -30%",
-      "Cost -40%",
-      "Cost -50%"
-    ]
+  "costs": {
+    "attack": [0, 10, 10, 10, 20, 20, 20, 20, 20],
+    "ail": [0, 10, 10, 10, 20, 20, 20, 20, 20],
+    "rec": [0, 10, 10, 10, 20],
+    "sup": [10, 20, 30, 40, 50]
   },
-  "penalties": {
-    "attack": [
-      "Dmg -10%",
-      "Dmg -20%",
-      "Dmg -30%",
-      "Dmg -40%",
-      "Dmg -50%",
-      "Dmg -60%",
-      "Dmg -70%",
-      "Dmg -80%",
-      "Dmg -90%"
-    ],
-    "ailment": [
-      "Hit -10%",
-      "Hit -20%",
-      "Hit -30%",
-      "Hit -40%",
-      "Hit -50%",
-      "Hit -60%",
-      "Hit -70%",
-      "Hit -80%",
-      "Hit -90%"
-    ],
-    "recovery": [
-      "Cost +10%",
-      "Cost +20%",
-      "Cost +30%",
-      "Cost +40%",
-      "Cost +50%"
-    ],
-    "support": [
-      "Cost +10%",
-      "Cost +20%",
-      "Cost +30%",
-      "Cost +40%",
-      "Cost +50%"
-    ]
+  "upgrades": {
+    "attack": [10, 10, 20, 30, 30, 40, 50, 60, 70],
+    "ail": [5, 5, 10, 15, 15, 20, 25, 30, 35],
+    "rec": [15, 15, 30, 45, 45],
+    "sup": [0, 0, 0, 0, 0]
   }
 }

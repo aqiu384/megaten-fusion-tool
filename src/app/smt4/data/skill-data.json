@@ -4,28 +4,28 @@
     "effect": "Rakunda and Sukunda once",
     "element": "sup",
     "rank": 13,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Agi": {
     "cost": 1005,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "fir",
     "rank": 1,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Agidyne": {
     "cost": 1014,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "fir",
     "rank": 13,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Agilao": {
     "cost": 1008,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "fir",
     "rank": 7,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Ally Counter": {
     "effect": "Chance of countering with weak normal attack after ally receiving physical or gun damage",
@@ -42,22 +42,21 @@
     "effect": "Cures all ailments",
     "element": "rec",
     "rank": 9,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Antichthon": {
     "cost": 1080,
-    "damage": "Severe",
-    "effect": "Debilitate",
+    "effect": "Severe dmg, Debilitate",
     "element": "alm",
     "rank": 31,
-    "target": "All"
+    "target": "All foes"
   },
   "Archangel's Law": {
     "cost": 1050,
     "effect": "Bestows smirk. Cannot use when target is under effect of any ailment",
     "element": "sup",
     "rank": 31,
-    "target": "Ally"
+    "target": "1 ally"
   },
   "Attack Knowhow": {
     "effect": "Demon with this skill can use attack items in battle",
@@ -71,32 +70,30 @@
   },
   "Axel Claw": {
     "cost": 1015,
-    "damage": "Medium",
+    "effect": "Medium dmg, 1-3 hits",
     "element": "phy",
-    "hits": "1-3",
     "rank": 8,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Babylon Goblet": {
     "cost": 1065,
-    "damage": "Medium",
-    "effect": "25% Panic",
+    "effect": "Medium dmg, 25% Panic",
     "element": "alm",
     "rank": -22,
-    "target": "All"
+    "target": "All foes"
   },
   "Bad Company": {
     "cost": 1015,
     "effect": "Summons highest level demons from the stock",
-    "element": "spe",
+    "element": "oth",
     "rank": 5,
-    "target": "Party"
+    "target": "All allies"
   },
   "Barrage": {
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "gun",
     "rank": -1,
-    "target": "All"
+    "target": "All foes"
   },
   "Beastly Reaction": {
     "effect": "Increases accuracy and evasion",
@@ -105,40 +102,38 @@
   },
   "Berserker God": {
     "cost": 1012,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "phy",
     "rank": 15,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Bind Voice": {
     "cost": 1015,
     "effect": "45% bind",
     "element": "ail",
     "rank": 7,
-    "target": "All"
+    "target": "All foes"
   },
   "Binding Claw": {
     "cost": 1011,
-    "damage": "Medium",
-    "effect": "35% Bind",
+    "effect": "Medium dmg, 35% Bind",
     "element": "phy",
     "rank": 8,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Blast Arrow": {
     "cost": 1016,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "gun",
     "rank": 9,
-    "target": "All"
+    "target": "All foes"
   },
   "Blight": {
     "cost": 1014,
-    "damage": "Weak",
-    "effect": "60% Poison",
+    "effect": "Weak dmg, 60% Poison",
     "element": "phy",
     "rank": 11,
-    "target": "All"
+    "target": "All foes"
   },
   "Blood Ritual": {
     "cost": 1025,
@@ -153,47 +148,44 @@
   },
   "Bouncing Claw": {
     "cost": 1004,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-3 hits",
     "element": "phy",
-    "hits": "1-3",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Breath": {
     "cost": 1026,
-    "damage": "Medium",
+    "effect": "Medium dmg, 1-5 hits",
     "element": "ice",
-    "hits": "1-5",
     "rank": -26,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Bufu": {
     "cost": 1005,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "ice",
     "rank": 1,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Bufudyne": {
     "cost": 1014,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "ice",
     "rank": 13,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Bufula": {
     "cost": 1008,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "ice",
     "rank": 7,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Carol Hit": {
-    "damage": "Weak",
-    "effect": "50% Lost",
+    "effect": "Weak dmg, 50% Lost",
     "element": "phy",
     "rank": -1,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Chakra Walk": {
     "effect": "Recovers MP gradually while moving",
@@ -208,19 +200,17 @@
   },
   "Charming Bolt": {
     "cost": 1045,
-    "damage": "Heavy",
-    "effect": "25% panic",
+    "effect": "Heavy dmg, 25% panic",
     "element": "ele",
     "rank": 22,
-    "target": "All"
+    "target": "All foes"
   },
   "Cold World": {
     "cost": 1050,
-    "damage": "Heavy",
-    "effect": "15% instant death",
+    "effect": "Heavy dmg, 15% instant death",
     "element": "ice",
     "rank": 22,
-    "target": "All"
+    "target": "All foes"
   },
   "Concentrate": {
     "cost": 1011,
@@ -233,7 +223,7 @@
     "effect": "90% sick",
     "element": "ail",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Counter": {
     "effect": "Chance of countering with weak normal attack after receiving physical or gun damage",
@@ -242,35 +232,31 @@
   },
   "Critical Wave": {
     "cost": 1010,
-    "damage": "Weak",
-    "effect": "High critical, low accuracy",
+    "effect": "Weak dmg, High critical, low accuracy",
     "element": "phy",
     "rank": 6,
-    "target": "All"
+    "target": "All foes"
   },
   "Curse Thy Enemy": {
     "cost": 1080,
-    "damage": "Heavy",
-    "effect": "Guarantees weakness",
+    "effect": "Heavy dmg, Guarantees weakness",
     "element": "alm",
     "rank": 31,
-    "target": "All"
+    "target": "All foes"
   },
   "Damascus Claw": {
     "cost": 1007,
-    "damage": "Medium",
+    "effect": "Medium dmg, 1-3 hits",
     "element": "phy",
-    "hits": "1-3",
     "rank": 8,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Damnation": {
     "cost": 1065,
-    "damage": "Heavy",
-    "effect": "70% Poison",
+    "effect": "Heavy dmg, 70% Poison",
     "element": "alm",
     "rank": -31,
-    "target": "All"
+    "target": "All foes"
   },
   "Dark Energy": {
     "cost": 1025,
@@ -280,97 +266,94 @@
   },
   "Deadly Fury": {
     "cost": 1045,
-    "damage": "Heavy",
-    "effect": "70% Panic",
+    "effect": "Heavy dmg, 70% Panic",
     "element": "phy",
     "rank": 27,
-    "target": "All"
+    "target": "All foes"
   },
   "Deadly Wind": {
     "cost": 1022,
-    "damage": "Severe",
+    "effect": "Severe dmg",
     "element": "for",
     "rank": 19,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Death's Door": {
     "cost": 1010,
-    "damage": "Weak",
-    "effect": "Sick targets reduced to 1 HP",
+    "effect": "Weak dmg, Sick targets reduced to 1 HP",
     "element": "alm",
     "rank": 9,
-    "target": "All"
+    "target": "All foes"
   },
   "Debilitate": {
     "cost": 1050,
     "effect": "All 3 -nda skills once",
     "element": "sup",
     "rank": 19,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Dekaja": {
     "cost": 1010,
     "effect": "Negates all -kaja effects",
     "element": "sup",
     "rank": 6,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Dekunda": {
     "cost": 1010,
     "effect": "Negates all -nda effects",
     "element": "sup",
     "rank": 6,
-    "target": "Party"
+    "target": "All allies"
   },
   "Desperate Hit": {
     "cost": 1040,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-5 hits",
     "element": "alm",
-    "hits": "1-5",
     "rank": -23,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Dia": {
     "cost": 1005,
     "effect": "Recovers little HP",
     "element": "rec",
     "rank": 2,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Diarahan": {
     "cost": 1016,
     "effect": "Recovers all HP",
     "element": "rec",
     "rank": 14,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Diarama": {
     "cost": 1009,
     "effect": "Recovers medium HP",
     "element": "rec",
     "rank": 8,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Die For Me!": {
     "cost": 1045,
     "effect": "80% instant death",
     "element": "dar",
     "rank": -18,
-    "target": "All"
+    "target": "All foes"
   },
   "Doping": {
     "cost": 1045,
     "effect": "Increases max HP by 30%",
     "element": "sup",
     "rank": 16,
-    "target": "Party"
+    "target": "All allies"
   },
   "Dormina": {
     "cost": 1004,
     "effect": "90% sleep",
     "element": "ail",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Draconic Reaction": {
     "effect": "Greatly increases accuracy and evasion",
@@ -409,19 +392,17 @@
   },
   "Dream Fist": {
     "cost": 1009,
-    "damage": "Weak",
-    "effect": "70% Sleep",
+    "effect": "Weak dmg, 70% Sleep",
     "element": "phy",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Dream Needle": {
     "cost": 1009,
-    "damage": "Weak",
-    "effect": "70% Sleep",
+    "effect": "Weak dmg, 70% Sleep",
     "element": "gun",
     "rank": 2,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Elec Pierce": {
     "effect": "Electric attack can pierce through drain, null and resist attributes",
@@ -445,49 +426,45 @@
   },
   "Energy Drain": {
     "cost": 1010,
-    "damage": "Weak",
-    "effect": "Drains HP and MP",
+    "effect": "Weak dmg, Drains HP and MP",
     "element": "alm",
     "rank": 8,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Estoma Sword": {
     "cost": 1025,
     "effect": "Allows the player's attack on the field to banish enemies that are lower leveled. It also automatically banishes enemies on the map",
-    "element": "spe",
+    "element": "oth",
     "rank": 12,
-    "target": "Party"
+    "target": "All allies"
   },
   "Fallen Grace": {
     "cost": 1050,
-    "damage": "Heavy",
-    "effect": "666 damage, almighty Pierce",
+    "effect": "Heavy dmg, 666 damage, almighty Pierce",
     "element": "alm",
     "rank": -31,
-    "target": "All"
+    "target": "All foes"
   },
   "Fang Breaker": {
     "cost": 1012,
-    "damage": "Weak",
-    "effect": "Tarunda",
+    "effect": "Weak dmg, Tarunda",
     "element": "phy",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Fatal Sword": {
     "cost": 1008,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "phy",
     "rank": 8,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Fire Breath": {
     "cost": 1021,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-4 hits",
     "element": "fir",
-    "hits": "1-4",
     "rank": 11,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Fire Pierce": {
     "effect": "Fire attack can pierce through drain, null and resist attributes",
@@ -501,18 +478,17 @@
   },
   "Floral Gust": {
     "cost": 1035,
-    "damage": "Medium",
+    "effect": "Medium dmg, 1-4 hits",
     "element": "for",
-    "hits": "1-4",
     "rank": 23,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Fog Breath": {
     "cost": 1045,
     "effect": "Tarunda and Sukunda once",
     "element": "sup",
     "rank": 13,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Force Pierce": {
     "effect": "Force attack can pierce through drain, null and resist attributes",
@@ -526,46 +502,45 @@
   },
   "Gaea Rage": {
     "cost": 1062,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "alm",
     "rank": -31,
-    "target": "All"
+    "target": "All foes"
   },
   "Glacial Blast": {
     "cost": 1022,
-    "damage": "Medium",
+    "effect": "Medium dmg, 1-4 hits",
     "element": "ice",
-    "hits": "1-4",
     "rank": 23,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Gram Slice": {
     "cost": 1005,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "phy",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Grand Tack": {
     "cost": 1011,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "gun",
     "rank": 14,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Great Logos": {
     "cost": 1070,
-    "damage": "Severe",
+    "effect": "Severe dmg",
     "element": "alm",
     "rank": 28,
-    "target": "All"
+    "target": "All foes"
   },
   "Guardian's Eye": {
     "cost": 1255,
     "effect": "Grants 3 blinking turn icons",
-    "element": "spe",
+    "element": "oth",
     "rank": -31,
-    "target": "Party"
+    "target": "All allies"
   },
   "Gun Pierce": {
     "effect": "Gun attack can pierce through drain, null and resist attributes",
@@ -579,32 +554,31 @@
   },
   "Hades Blast": {
     "cost": 1032,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "phy",
     "rank": 15,
-    "target": "All"
+    "target": "All foes"
   },
   "Hailstorm of God": {
     "cost": 1050,
-    "damage": "Heavy",
-    "effect": "Ice Pierce",
+    "effect": "Heavy dmg, Ice Pierce",
     "element": "ice",
     "rank": -29,
-    "target": "All"
+    "target": "All foes"
   },
   "Hama": {
     "cost": 1006,
     "effect": "30% instant death",
     "element": "lig",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Hamaon": {
     "cost": 1010,
     "effect": "55% instant death",
     "element": "lig",
     "rank": 9,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Hard Worker": {
     "effect": "Increases experience points received after battles",
@@ -628,17 +602,17 @@
   },
   "Heat Wave": {
     "cost": 1011,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "phy",
     "rank": 8,
-    "target": "All"
+    "target": "All foes"
   },
   "Heaven's Bow": {
     "cost": 1026,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "gun",
     "rank": 14,
-    "target": "All"
+    "target": "All foes"
   },
   "Hellish Mask": {
     "effect": "Resists all ailments",
@@ -682,19 +656,17 @@
   },
   "Holy Wrath": {
     "cost": 1045,
-    "damage": "Medium",
-    "effect": "150% damage on Chaos targets",
+    "effect": "Medium dmg, 150% damage on Chaos targets",
     "element": "alm",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Ice Breath": {
     "cost": 1021,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-4 hits",
     "element": "ice",
-    "hits": "1-4",
     "rank": 11,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Ice Pierce": {
     "effect": "Ice attack can pierce through drain, null and resist attributes",
@@ -708,62 +680,59 @@
   },
   "Inferno of God": {
     "cost": 1050,
-    "damage": "Heavy",
-    "effect": "Fire Pierce",
+    "effect": "Heavy dmg, Fire Pierce",
     "element": "fir",
     "rank": -29,
-    "target": "All"
+    "target": "All foes"
   },
   "Invitation": {
     "cost": 1045,
     "effect": "Summons or returns another allied demon and revives the demon if dead",
-    "element": "spe",
+    "element": "oth",
     "rank": 21,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Iron Judgement": {
     "cost": 1008,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "phy",
     "rank": -6,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Javelin Rain": {
     "cost": 1021,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "phy",
     "rank": 12,
-    "target": "All"
+    "target": "All foes"
   },
   "Judgement": {
     "cost": 1045,
-    "damage": "Medium",
-    "effect": "150% damage on Neutral targets",
+    "effect": "Medium dmg, 150% damage on Neutral targets",
     "element": "alm",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Judgement Light": {
     "cost": 1045,
     "effect": "80% instant death",
     "element": "lig",
     "rank": 18,
-    "target": "All"
+    "target": "All foes"
   },
   "Kannuki-Throw": {
     "cost": 1035,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-15 hits",
     "element": "phy",
-    "hits": "1-15",
     "rank": -26,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Lamentation": {
     "cost": 1045,
     "effect": "45% bind, panic, sleep, sick and/or poison and 100% brand",
     "element": "ail",
     "rank": -24,
-    "target": "All"
+    "target": "All foes"
   },
   "Life Aid": {
     "effect": "Recovers HP moderately after victory",
@@ -777,11 +746,10 @@
   },
   "Life Drain": {
     "cost": 1005,
-    "damage": "Weak",
-    "effect": "Drains HP",
+    "effect": "Weak dmg, Drains HP",
     "element": "alm",
     "rank": 2,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Life Gain": {
     "effect": "Increases max HP by 20%",
@@ -805,118 +773,114 @@
   },
   "Lightning of God": {
     "cost": 1050,
-    "damage": "Heavy",
-    "effect": "Elec Pierce",
+    "effect": "Heavy dmg, Elec Pierce",
     "element": "ele",
     "rank": -29,
-    "target": "All"
+    "target": "All foes"
   },
   "Lullaby": {
     "cost": 1011,
     "effect": "70% sleep",
     "element": "ail",
     "rank": 6,
-    "target": "All"
+    "target": "All foes"
   },
   "Lunge": {
     "cost": 1006,
-    "damage": "Weak",
-    "effect": "High critical, low accuracy",
+    "effect": "Weak dmg, High critical, low accuracy",
     "element": "phy",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Luster Candy": {
     "cost": 1050,
     "effect": "All 3 -kaja skills once",
     "element": "sup",
     "rank": 19,
-    "target": "Party"
+    "target": "All allies"
   },
   "Mabufu": {
     "cost": 1011,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "ice",
     "rank": 4,
-    "target": "All"
+    "target": "All foes"
   },
   "Mabufudyne": {
     "cost": 1032,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "ice",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Mabufula": {
     "cost": 1020,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "ice",
     "rank": 10,
-    "target": "All"
+    "target": "All foes"
   },
   "Macca Beam": {
     "effect": "Lose 20% Macca",
-    "element": "spe",
+    "element": "oth",
     "rank": -1,
-    "target": "All"
+    "target": "All foes"
   },
   "Madness Nails": {
     "cost": 1026,
-    "damage": "Heavy",
+    "effect": "Heavy dmg, 1-3 hits",
     "element": "phy",
-    "hits": "1-3",
     "rank": 14,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Madness Needle": {
     "cost": 1011,
-    "damage": "Weak",
-    "effect": "70% Panic",
+    "effect": "Weak dmg, 70% Panic",
     "element": "gun",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Mahama": {
     "cost": 1018,
     "effect": "30% instant death",
     "element": "lig",
     "rank": 6,
-    "target": "All"
+    "target": "All foes"
   },
   "Mahamaon": {
     "cost": 1030,
     "effect": "55% instant death",
     "element": "lig",
     "rank": 12,
-    "target": "All"
+    "target": "All foes"
   },
   "Makaracoerce": {
     "cost": 1035,
     "effect": "Cancels Makarakarn effect",
     "element": "sup",
     "rank": 14,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Makarakarn": {
     "cost": 1050,
     "effect": "Repels magical attacks except ailment or almighty for one turn",
     "element": "sup",
     "rank": 11,
-    "target": "Party"
+    "target": "All allies"
   },
   "Mamudo": {
     "cost": 1018,
     "effect": "30% instant death",
     "element": "dar",
     "rank": 6,
-    "target": "All"
+    "target": "All foes"
   },
   "Mamudoon": {
     "cost": 1030,
     "effect": "55% instant death",
     "element": "dar",
     "rank": 12,
-    "target": "All"
+    "target": "All foes"
   },
   "Mana Aid": {
     "effect": "Recovers MP moderately after victory",
@@ -940,175 +904,171 @@
   },
   "Maragi": {
     "cost": 1011,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "fir",
     "rank": 4,
-    "target": "All"
+    "target": "All foes"
   },
   "Maragidyne": {
     "cost": 1032,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "fir",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Maragion": {
     "cost": 1020,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "fir",
     "rank": 10,
-    "target": "All"
+    "target": "All foes"
   },
   "Mazan": {
     "cost": 1011,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "for",
     "rank": 4,
-    "target": "All"
+    "target": "All foes"
   },
   "Mazandyne": {
     "cost": 1032,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "for",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Mazanma": {
     "cost": 1020,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "for",
     "rank": 10,
-    "target": "All"
+    "target": "All foes"
   },
   "Mazio": {
     "cost": 1011,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "ele",
     "rank": 4,
-    "target": "All"
+    "target": "All foes"
   },
   "Maziodyne": {
     "cost": 1032,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "ele",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Mazionga": {
     "cost": 1020,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "ele",
     "rank": 10,
-    "target": "All"
+    "target": "All foes"
   },
   "Me Patra": {
     "cost": 1015,
     "effect": "Cures sleep, panic and bind",
     "element": "rec",
     "rank": 6,
-    "target": "Party"
+    "target": "All allies"
   },
   "Media": {
     "cost": 1012,
     "effect": "Recovers little HP",
     "element": "rec",
     "rank": 5,
-    "target": "Party"
+    "target": "All allies"
   },
   "Mediarahan": {
     "cost": 1040,
     "effect": "Recovers all HP",
     "element": "rec",
     "rank": 17,
-    "target": "Party"
+    "target": "All allies"
   },
   "Mediarama": {
     "cost": 1022,
     "effect": "Recovers medium HP",
     "element": "rec",
     "rank": 11,
-    "target": "Party"
+    "target": "All allies"
   },
   "Megaton Press": {
     "cost": 1021,
-    "damage": "Medium",
-    "effect": "High critical, low accuracy",
+    "effect": "Medium dmg, High critical, low accuracy",
     "element": "phy",
     "rank": 9,
-    "target": "All"
+    "target": "All foes"
   },
   "Megido": {
     "cost": 1025,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "alm",
     "rank": 13,
-    "target": "All"
+    "target": "All foes"
   },
   "Megidola": {
     "cost": 1040,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "alm",
     "rank": 19,
-    "target": "All"
+    "target": "All foes"
   },
   "Megidolaon": {
     "cost": 1060,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "alm",
     "rank": 25,
-    "target": "All"
+    "target": "All foes"
   },
   "Megidoplasma": {
     "cost": 1041,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "alm",
     "rank": 22,
-    "target": "All"
+    "target": "All foes"
   },
   "Mortal Jihad": {
     "cost": 1013,
-    "damage": "Heavy",
-    "effect": "High critical, low accuracy",
+    "effect": "Heavy dmg, High critical, low accuracy",
     "element": "phy",
     "rank": 12,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Mudo": {
     "cost": 1006,
     "effect": "30% instant death",
     "element": "dar",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Mudoon": {
     "cost": 1010,
     "effect": "55% instant death",
     "element": "dar",
     "rank": 9,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Myriad Arrows": {
     "cost": 1030,
-    "damage": "Weak",
+    "effect": "Weak dmg, 2-4 hits",
     "element": "gun",
-    "hits": "2-4",
     "rank": 20,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Needle Shot": {
     "cost": 1004,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "gun",
     "rank": 1,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Nihil Claw": {
     "cost": 1011,
-    "damage": "Heavy",
+    "effect": "Heavy dmg, 1-3 hits",
     "element": "phy",
-    "hits": "1-3",
     "rank": 14,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Null Dark": {
     "effect": "Nullifies dark fatal attack",
@@ -1162,26 +1122,24 @@
   },
   "Occult Flash": {
     "cost": 1030,
-    "damage": "Medium",
-    "effect": "50% Instant death",
+    "effect": "Medium dmg, 50% Instant death",
     "element": "phy",
     "rank": 17,
-    "target": "All"
+    "target": "All foes"
   },
   "Oni-Kagura": {
     "cost": 1009,
-    "damage": "Medium",
-    "effect": "High critical, low accuracy",
+    "effect": "Medium dmg, High critical, low accuracy",
     "element": "phy",
     "rank": 8,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Pandemic Bomb": {
     "cost": 1011,
     "effect": "70% sick",
     "element": "ail",
     "rank": 6,
-    "target": "All"
+    "target": "All foes"
   },
   "Panic Caster": {
     "cost": 1010,
@@ -1194,14 +1152,14 @@
     "effect": "70% panic",
     "element": "ail",
     "rank": 7,
-    "target": "All"
+    "target": "All foes"
   },
   "Patra": {
     "cost": 1005,
     "effect": "Cures sleep, panic and bind",
     "element": "rec",
     "rank": 3,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Phys Pierce": {
     "effect": "Physical attack can pierce through drain, null and resist attributes",
@@ -1215,107 +1173,101 @@
   },
   "Plasma Discharge": {
     "cost": 1022,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-8 hits",
     "element": "ele",
-    "hits": "1-8",
     "rank": 14,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Poisma": {
     "cost": 1004,
     "effect": "90% poison",
     "element": "ail",
     "rank": 2,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Poison Breath": {
     "cost": 1011,
     "effect": "70% poison",
     "element": "ail",
     "rank": 5,
-    "target": "All"
+    "target": "All foes"
   },
   "Poison Claw": {
     "cost": 1009,
-    "damage": "Medium",
-    "effect": "70% Poison",
+    "effect": "Medium dmg, 70% Poison",
     "element": "phy",
     "rank": 7,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Posumudi": {
     "cost": 1005,
     "effect": "Cures poison and sick",
     "element": "rec",
     "rank": 2,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Pulinpa": {
     "cost": 1005,
     "effect": "90% panic",
     "element": "ail",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Purple Smoke": {
     "cost": 1014,
-    "damage": "Medium",
-    "effect": "70% Panic",
+    "effect": "Medium dmg, 1-3 hits, 70% Panic",
     "element": "phy",
-    "hits": "1-3",
     "rank": 12,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Ragnarok": {
     "cost": 1035,
-    "damage": "Medium",
+    "effect": "Medium dmg, 1-4 hits",
     "element": "fir",
-    "hits": "1-4",
     "rank": 23,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Rakukaja": {
     "cost": 1015,
     "effect": "Boosts defense by 1 level",
     "element": "sup",
     "rank": 7,
-    "target": "Party"
+    "target": "All allies"
   },
   "Rakunda": {
     "cost": 1015,
     "effect": "Reduces defense by 1 level",
     "element": "sup",
     "rank": 7,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Rapid Needle": {
     "cost": 1009,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "gun",
     "rank": 3,
-    "target": "All"
+    "target": "All foes"
   },
   "Recarm": {
     "cost": 1020,
     "effect": "Revives with little HP",
     "element": "rec",
     "rank": 9,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Recarmdra": {
     "cost": 1001,
     "effect": "Caster dies, fully revives and recovers other active allies",
     "element": "rec",
     "rank": 18,
-    "target": "Party"
+    "target": "All allies"
   },
   "Refrigerate": {
     "cost": 1026,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-8 hits",
     "element": "ice",
-    "hits": "1-8",
     "rank": 26,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Repel Elec": {
     "effect": "Reflects electric damage",
@@ -1394,84 +1346,80 @@
   },
   "Riot Gun": {
     "cost": 1030,
-    "damage": "Severe",
+    "effect": "Severe dmg",
     "element": "gun",
     "rank": 31,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Sabbatma": {
     "cost": 1020,
     "effect": "Summons or returns another allied demon",
-    "element": "spe",
+    "element": "oth",
     "rank": 9,
-    "target": "Ally"
+    "target": "1 ally"
   },
   "Salvation": {
     "cost": 1050,
     "effect": "Recovers all HP and dares all ailments",
     "element": "rec",
     "rank": 31,
-    "target": "Party"
+    "target": "All allies"
   },
   "Samarecarm": {
     "cost": 1040,
     "effect": "Revives with full HP",
     "element": "rec",
     "rank": 15,
-    "target": "Single"
+    "target": "1 ally"
   },
   "Scratch Dance": {
     "cost": 1009,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-3 hits",
     "element": "phy",
-    "hits": "1-3",
     "rank": 5,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Sea of Chaos": {
     "cost": 1045,
-    "damage": "Medium",
-    "effect": "150% damage on Law targets",
+    "effect": "Medium dmg, 150% damage on Law targets",
     "element": "alm",
     "rank": 16,
-    "target": "All"
+    "target": "All foes"
   },
   "Serpent of Sheol": {
     "cost": 1045,
-    "damage": "Severe",
-    "effect": "Drains HP and MP",
+    "effect": "Severe dmg, Drains HP and MP",
     "element": "alm",
     "rank": -20,
-    "target": "All"
+    "target": "All foes"
   },
   "Shibaboo": {
     "cost": 1005,
     "effect": "50% bind",
     "element": "ail",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Shivering Taboo": {
     "cost": 1040,
     "effect": "70% bind, panic, sleep, sick and/or poison",
     "element": "ail",
     "rank": -18,
-    "target": "All"
+    "target": "All foes"
   },
   "Shock": {
     "cost": 1021,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-4 hits",
     "element": "ele",
-    "hits": "1-4",
     "rank": 11,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Silent Prayer": {
     "cost": 1015,
     "effect": "Negates all -kaja and -nda effects",
     "element": "sup",
     "rank": 9,
-    "target": "Universal"
+    "target": "All allies and foes"
   },
   "Speed Lesson": {
     "effect": "Boosts agility stat by 10 points",
@@ -1480,11 +1428,10 @@
   },
   "Spirit Drain": {
     "cost": 1005,
-    "damage": "Weak",
-    "effect": "Drains MP",
+    "effect": "Weak dmg, Drains MP",
     "element": "alm",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Spirit Focus": {
     "cost": 1025,
@@ -1499,160 +1446,150 @@
   },
   "Star Tarantella": {
     "cost": 1036,
-    "damage": "Heavy",
-    "effect": "70% Panic",
+    "effect": "Heavy dmg, 70% Panic",
     "element": "gun",
     "rank": 28,
-    "target": "All"
+    "target": "All foes"
   },
   "Stigmata Strike": {
     "cost": 1020,
-    "damage": "Heavy",
-    "effect": "250% Brand",
+    "effect": "Heavy dmg, 250% Brand",
     "element": "phy",
     "rank": 27,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Stigmatic Gleam": {
     "cost": 1075,
-    "damage": "Heavy",
-    "effect": "20% Brand",
+    "effect": "Heavy dmg, 20% Brand",
     "element": "alm",
     "rank": 27,
-    "target": "All"
+    "target": "All foes"
   },
   "Stun Needle": {
     "cost": 1011,
-    "damage": "Weak",
-    "effect": "60% Bind",
+    "effect": "Weak dmg, 60% Bind",
     "element": "gun",
     "rank": 3,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Stun Needles": {
     "cost": 1014,
-    "damage": "Medium",
-    "effect": "60% Bind",
+    "effect": "Medium dmg, 1-3 hits, 60% Bind",
     "element": "gun",
-    "hits": "1-3",
     "rank": 10,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Sukukaja": {
     "cost": 1015,
     "effect": "Boosts agility by 1 level",
     "element": "sup",
     "rank": 7,
-    "target": "Party"
+    "target": "All allies"
   },
   "Sukunda": {
     "cost": 1015,
     "effect": "Reduces agility by 1 level",
     "element": "sup",
     "rank": 7,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Tarukaja": {
     "cost": 1015,
     "effect": "Boosts attack damage by 1 level",
     "element": "sup",
     "rank": 7,
-    "target": "Party"
+    "target": "All allies"
   },
   "Tarunda": {
     "cost": 1015,
     "effect": "Reduces attack damage by 1 level",
     "element": "sup",
     "rank": 7,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Tathlum Shot": {
     "cost": 1007,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "gun",
     "rank": 4,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Taunt": {
     "cost": 1020,
     "effect": "Tarukaja and Rakunda twice",
     "element": "sup",
     "rank": 7,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Tetanus Cut": {
     "cost": 1011,
-    "damage": "Medium",
-    "effect": "70% Sick",
+    "effect": "Medium dmg, 70% Sick",
     "element": "phy",
     "rank": 9,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Tetracoerce": {
     "cost": 1035,
     "effect": "Cancels Tetrakarn effect",
     "element": "sup",
     "rank": 14,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Tetraja": {
     "cost": 1015,
     "effect": "Shields Light or Dark attacks for one attack",
     "element": "sup",
     "rank": 7,
-    "target": "Party"
+    "target": "All allies"
   },
   "Tetrakarn": {
     "cost": 1050,
     "effect": "Repels physical or gun attacks for one turn",
     "element": "sup",
     "rank": 11,
-    "target": "Party"
+    "target": "All allies"
   },
   "Thunder Reign": {
     "cost": 1022,
-    "damage": "Severe",
+    "effect": "Severe dmg",
     "element": "ele",
     "rank": 22,
-    "target": "All"
+    "target": "All foes"
   },
   "Titanomachia": {
     "cost": 1030,
-    "damage": "Heavy",
-    "effect": "High critical, low accuracy",
+    "effect": "Heavy dmg, High critical, low accuracy",
     "element": "phy",
     "rank": 14,
-    "target": "All"
+    "target": "All foes"
   },
   "Tornado of God": {
     "cost": 1050,
-    "damage": "Heavy",
-    "effect": "Force Pierce",
+    "effect": "Heavy dmg, Force Pierce",
     "element": "for",
     "rank": -29,
-    "target": "All"
+    "target": "All foes"
   },
   "Toxic Sting": {
     "cost": 1009,
-    "damage": "Weak",
-    "effect": "70% Poison",
+    "effect": "Weak dmg, 70% Poison",
     "element": "gun",
     "rank": 2,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Trafuri": {
     "cost": 1005,
     "effect": "Guarantees escape from battle",
-    "element": "spe",
+    "element": "oth",
     "rank": 10,
-    "target": "Party"
+    "target": "All allies"
   },
   "Trisagion": {
     "cost": 1022,
-    "damage": "Severe",
+    "effect": "Severe dmg",
     "element": "fir",
     "rank": 19,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Victory Cry": {
     "effect": "Recovers HP and MP fully after victory",
@@ -1664,15 +1601,14 @@
     "effect": "Tarunda and Rakunda once",
     "element": "sup",
     "rank": 13,
-    "target": "Foes"
+    "target": "All foes"
   },
   "Wind Breath": {
     "cost": 1021,
-    "damage": "Weak",
+    "effect": "Weak dmg, 1-4 hits",
     "element": "for",
-    "hits": "1-4",
     "rank": 11,
-    "target": "Multi"
+    "target": "Multi foes"
   },
   "Workaholic": {
     "effect": "Greatly increases experience points received after battles",
@@ -1681,44 +1617,44 @@
   },
   "Zan": {
     "cost": 1005,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "for",
     "rank": 1,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Zandyne": {
     "cost": 1014,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "for",
     "rank": 13,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Zanma": {
     "cost": 1008,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "for",
     "rank": 7,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Zio": {
     "cost": 1005,
-    "damage": "Weak",
+    "effect": "Weak dmg",
     "element": "ele",
     "rank": 1,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Ziodyne": {
     "cost": 1014,
-    "damage": "Heavy",
+    "effect": "Heavy dmg",
     "element": "ele",
     "rank": 13,
-    "target": "Single"
+    "target": "1 foe"
   },
   "Zionga": {
     "cost": 1008,
-    "damage": "Medium",
+    "effect": "Medium dmg",
     "element": "ele",
     "rank": 7,
-    "target": "Single"
+    "target": "1 foe"
   }
 }

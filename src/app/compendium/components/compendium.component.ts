@@ -41,7 +41,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
           </th>
           <th *ngIf="hasSettings" class="nav" routerLink="settings" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="settings">
-              Fusion Settings
+              DLC Settings
             </a>
           </th>
         </tr>
