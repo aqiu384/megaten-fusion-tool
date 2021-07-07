@@ -13,6 +13,10 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from '../smt4/data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../smt4/data/element-chart.json';
 
+declare const SMT5_DEMON_DATA: any;
+declare const SMT5_SKILL_DATA: any;
+declare const SMT5_AFFINITY_BONUSES: any;
+
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
   for (let i = 0; i < target.length; i++) {
@@ -23,6 +27,23 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 
 const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
 const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
+const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
+
+for (const elem of affinityElems) {
+  const bonusElem = SMT5_AFFINITY_BONUSES['elements'][elem];
+  affinityBonuses.costs.push(SMT5_AFFINITY_BONUSES['costs'][bonusElem]);
+  affinityBonuses.upgrades.push(SMT5_AFFINITY_BONUSES['upgrades'][bonusElem]);
+}
+
+for (const demon of Object.values(SMT5_DEMON_DATA)) {
+  demon['price'] = demon['lvl'] * demon['lvl'];
+}
+
+for (const skill of Object.values(SMT5_SKILL_DATA)) {
+  if (skill['rank']) { continue; }
+  if (skill['cost']) { skill['rank'] = Math.ceil((skill['cost'] - 1000) / 5); }
+  else { skill['rank'] = 1; }
+}
 
 export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei V',
@@ -31,13 +52,13 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   appCssClasses: ['smt4', 'smt5'],
 
   affinityElems,
-  skillData: {},
+  skillData: SMT5_SKILL_DATA,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
-  affinityBonuses: { costs: [], upgrades: [] },
+  affinityBonuses,
 
-  demonData: {},
+  demonData: SMT5_DEMON_DATA,
   evolveData: {},
   dlcDemons: COMP_CONFIG_JSON.dlcDemons,
   baseStats: COMP_CONFIG_JSON.baseStats,
