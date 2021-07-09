@@ -126,8 +126,8 @@ export class Compendium implements ICompendium {
     }
 
     for (const demon of Object.values(enemies)) {
-      if (demon.drop) {
-        const items = demon.drop.split(', ');
+      if (demon.item) {
+        const items = demon.item.split(', ');
         const item = items[items.length - 1];
 
         if (skills[item]) {
