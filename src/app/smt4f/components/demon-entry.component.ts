@@ -102,7 +102,7 @@ export class DemonEntryComponent {
         if (alvl > 0) {
           const bonusCost = this.compConfig.affinityBonuses.costs[elemIndex][alvl - 1];
           aupgrade = this.compConfig.affinityBonuses.upgrades[elemIndex][alvl - 1];
-          acost = skill.cost === 1008 ? 1006 : 1000 + Math.floor((100 - bonusCost) / 100 * (skill.cost - 1000));
+          acost = 1000 + Math.floor((100 - bonusCost) / 100 * (skill.cost - 1000));
         }
       }
 

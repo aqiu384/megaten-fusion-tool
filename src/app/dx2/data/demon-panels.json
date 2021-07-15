@@ -134,6 +134,16 @@
     "Mag ATK +50", "-30% to Light damage received, -30% to Dark damage received.",
     "Max HP +150", "Adds Dark Pierce."
   ],
+  "Beelzebub F": [
+    "Max HP +250", "Activates the following Chain Effect when own HP is at 80% or under at end of enemy turn: Heals 25% of own HP and recovers 3 MP.",
+    "Mag ATK +100", "Adds Null Mute, Null Bind and Null Charm.",
+    "Max HP +250", "+20% to Almighty damage dealt. +20% to max HP."
+  ],
+  "Beelzebub H": [
+    "Max HP +250", "Activates the following Chain Effect at the beginning of a battle if the enemy attacks first: Removes Barrier from all enemies.",
+    "Mag ATK +100", "While the one with this skill is alive, reduces damage received by 30% when Phys repel is Pierced for all party members.",
+    "Max HP +250", "+20% to Elec/Dark damage dealt. +20% to max HP."
+  ],
   "Beiji-Weng": [
     "Max HP +150", "+10 to Ag.",
     "Mag ATK +50", "-25% to Ice damage received.",
@@ -432,7 +442,8 @@
   "Lucifer": [
     "Max HP +250", "+15% damage to attacks that target all or random enemies.",
     "Mag ATK +100", "+50% to Max HP.",
-    "Max HP +250", "+25% to Almighty damage inflicted."
+    "Max HP +250", "+25% to Almighty damage inflicted.",
+    "Max HP +250", "+30 to Ma. +30 to Vi. Activates the following Chain Effect at the beginning of own turn: Reduces ATK, DEF and EV/AC of all enemies by 20%. (1 turn)"
   ],
   "Lucifuge": [
     "Max HP +250", "While this demon is alive, all party members of the Tyrant race will receive the following effect: Reduces the cost of Almighty skills by 1 MP.",
@@ -491,13 +502,15 @@
   ],
   "Metatron": [
     "Max HP +250", "Reduces the cost of Almighty skills by 1 MP.",
-    "Mag ATK +100", "-20% to Magic damage received.",
-    "Max HP +250", "+20% to Magic damage inflicted."
+    "Mag ATK +100", "-30% to Magic damage received.",
+    "Max HP +250", "+20% to Magic damage inflicted.",
+    "Max HP +250", "Decreases all damage received by 20%. Activates the following Chain Effect when Fire of Sinai is activated: Inflicts Almighty (Magic) damage 3 times (Power: 55) on random enemies."
   ],
   "Michael": [
     "Max HP +250", "+15% damage to attacks that target all or random enemies.",
-    "Mag ATK +100", "-50% to Light damage received.",
-    "Max HP +250", "+25% to Light damage inflicted."
+    "Mag ATK +100", "+20% to own affect on Battle Speed. -50% to Light damage received.",
+    "Max HP +250", "+25% to Light damage inflicted.",
+    "Max HP +250", "+30% to own affect on Battle Speed. Adds Light Pierce and +15% to damage inflicted by all party members of the Divine/Herald races while the one with this skill is alive."
   ],
   "Mot": [
     "Max HP +250", "Reduces the cost of Almighty skills by 1 MP.",
@@ -647,7 +660,8 @@
   "Shiva": [
     "Max HP +250", "+15% to all attack damage inflicted.",
     "Phys ATK +100", "+15% to Phys hit rate, +20% to Critical hit rate.",
-    "Max HP +250", "Reduces the cost of Phys skills by 2 MP."
+    "Max HP +250", "Reduces the cost of Phys skills by 2 MP.",
+    "Max HP +250", "Adds Phys Pierce. Activates the following Chain Effect when Pralaya is activated: Enters a state of Might."
   ],
   "Shiva A": [
     "Max HP +250", "+15% to Phys hit rate.",
@@ -785,9 +799,10 @@
     "Max HP +250", "Activates the following Chain Effect after Halahala is activated: Reduces all enemy DEF by 20%. (3 turns)"
   ],
   "Vishnu": [
-    "Max HP +250", "-50% to Ice damage received.",
-    "Mag ATK +100", "Activates the following Chain Effect at the beginning of your own turn: Heals 15% Max HP of caster.",
-    "Max HP +250", "Reduces the cost of Magic attack skills by 2 MP."
+    "Max HP +250", "-50% to Ice damage received. Adds Null Bind.",
+    "Mag ATK +100", "Activates the following Chain Effect at the beginning of your own turn: Heals 25% Max HP of caster. Adds Null Curse.",
+    "Max HP +250", "Reduces the cost of Magic attack skills by 2 MP.",
+    "Max HP +250", "Activates the following Chain Effect at the beginning of a battle if the enemy attacks first: Reduces 1 enemy Press Turn Icon. Activates the following Chain Effect at the end of own turn: Inflicts Almighty (Magic) damage (Power: 60) on all enemies."
   ],
   "Vouivre": [
     "Max HP +150", "+10% to Phys hit rate and +10% chance to inflict status ailments.",

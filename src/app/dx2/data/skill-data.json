@@ -85,6 +85,11 @@
     "elem": "pas",
     "points": 6
   },
+  "Almighty Survivor": {
+    "effect": "Endure + Almighty Boost",
+    "elem": "pas",
+    "points": 14
+  },
   "Amakusa Uprising": {
     "cost": 6,
     "effect": "Light Pierce, Chance to crit, Tarukaja + Sukukaja for 2 turns",
@@ -591,6 +596,13 @@
     "effect": "50% chance to counter with 150 Phys dmg when receiving Phys dmg",
     "elem": "pas",
     "points": 18
+  },
+  "Death Flyers": {
+    "cost": 8,
+    "effect": "Debilitate, Nullifies endure effects, 2nd cast power 130, 3rd cast 100% Bind",
+    "elem": "alm",
+    "power": 110,
+    "target": "All Foes"
   },
   "Death Lust": {
     "effect": "Dmg +25% to Charmed foes, 30% Charm to all foes during first turn",
@@ -1305,6 +1317,13 @@
     "elem": "pas",
     "points": 16
   },
+  "Great Chaos": {
+    "cost": 7,
+    "effect": "Pierce, 80% Mute, Follow up with 80 piercing elec dmg + 50% Bind to all foes",
+    "elem": "dar",
+    "power": 160,
+    "target": "1 Foe"
+  },
   "Griffon-Bolt": {
     "effect": "Casts 30 Almighty dmg x4 hits to Random Foes when Ally uses regular attack",
     "elem": "pas",
@@ -1640,6 +1659,10 @@
     "power": 180,
     "target": "1 Foe"
   },
+  "King of Hell": {
+    "effect": "Endure with 800 HP, Recovers 3 MP and casts Tarukaja + Rakunda when party attacks first, Casts Intimidating Stance + Rakukaja + Tarunda when foe attacks first",
+    "elem": "pas"
+  },
   "Kongo Zaou": {
     "effect": "Allies in Might gain Phys Pierce",
     "elem": "pas"
@@ -1744,6 +1767,10 @@
   },
   "Lord of the Abyss": {
     "effect": "Casts Dekaja + Debilitate on 1st turn of Boss battle",
+    "elem": "pas"
+  },
+  "Lord of the Dead": {
+    "effect": "Endure with 500 HP, Casts Tetrakarn + Repel alm + Rakukaja for 1 turn at start of foe turn",
     "elem": "pas"
   },
   "Lotus Dance": {
@@ -2399,7 +2426,7 @@
     "elem": "pas"
   },
   "Morning Star": {
-    "cost": 8,
+    "cost": 7,
     "effect": "3 uses",
     "elem": "alm",
     "power": 150,
@@ -2764,7 +2791,7 @@
     "elem": "pas"
   },
   "Pralaya": {
-    "cost": 8,
+    "cost": 7,
     "effect": "Tetra Break + Makara Break, Dmg scales with Patk",
     "elem": "alm",
     "power": 100,
