@@ -49,7 +49,7 @@ import { FusionDataService } from '../fusion-data.service';
             <td>{{ data.skill.name + (data.lvl ? ' +' + data.lvl : '') }}</td>
             <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
             <td>{{ data.skill.effect + (data.upgrade ? ' (+' + data.upgrade + '%)' : '') }}</td>
-            <td>{{ data.skill.target }}</td>
+            <td>{{ data.skill.target || 'Self' }}</td>
             <td [style.color]="data.skill.rank !== 99 ? null: 'transparent'">{{ data.skill.rank }}</td>
             <td>{{ data.skill.level | skillLevelToString }}</td>
           </tr>
