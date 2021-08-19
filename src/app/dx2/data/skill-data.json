@@ -777,6 +777,10 @@
     "elem": "alm",
     "target": "All Foes"
   },
+  "Dragon of Defense": {
+    "effect": "Phys pierce, Phys hit +20%, Casts Sukukaja + Sukunda when attacking first",
+    "elem": "pas"
+  },
   "Dragon Blade": {
     "cost": 7,
     "effect": "30% crit, Follow up with Heat Wave if attack hits",
@@ -835,6 +839,17 @@
     "effect": "Ally Drain resists nullify Foe Pierce skills",
     "elem": "pas",
     "points": 20
+  },
+  "Duke of Hell": {
+    "effect": "Phys Pierce, Dmg dealt +5% for every ally weak resist (+35% max), Dmg received from single-target skills -10% for every ally weak resist (-70% max)",
+    "elem": "pas"
+  },
+  "Dynamic Evil Spear": {
+    "cost": 6,
+    "effect": "50% crit, scales with Patk, Revives all allies with 30% HP, 6 uses",
+    "elem": "dar",
+    "power": 150,
+    "target": "1 foe"
   },
   "Earth Sacrifice": {
     "effect": "Casts Tetrakarn and Luster Candy for 1 turn when downed",
@@ -951,7 +966,12 @@
     "points": 16
   },
   "Epitome of Endurance": {
-    "effect": "-25% battle speed, +20% max HP",
+    "effect": "Battle speed -25%, Max HP +20%",
+    "elem": "pas",
+    "points": 16
+  },
+  "Epitome of Finesse": {
+    "effect": "Crit rate +20%, Phys hit +15%",
     "elem": "pas",
     "points": 16
   },
@@ -2536,6 +2556,12 @@
     "power": 75,
     "target": "Rand Foes"
   },
+  "Noblewoman Aid": {
+    "cost": 6,
+    "effect": "Rakukaja + Sukukaja for 1 turn, Add Tarunda + Sukunda for 1 turn on 2nd cast, Extends buffs to 3 turns on 3rd cast",
+    "elem": "sup",
+    "target": "All Allies"
+  },
   "Nocturne": {
     "cost": 6,
     "effect": "Rakukaja + Sukukaja",
@@ -2639,6 +2665,10 @@
     "elem": "sup",
     "points": 15,
     "target": "All Foes"
+  },
+  "Omniscient Guidance": {
+    "effect": "Increments all Boost lvls by 1 at start of own turn",
+    "elem": "pas"
   },
   "Oni-Kagura": {
     "cost": 5,
@@ -3155,6 +3185,13 @@
     "effect": "50% crit, Scales with Patk, Nullifies endure effects, Nullifies counter effects",
     "elem": "alm",
     "power": 210,
+    "target": "1 Foe"
+  },
+  "Soaring Blades": {
+    "cost": 6,
+    "effect": "4 hits, 50% crit, Pierce, Scales with Patk, Nullifies counter effects, Follows up with 50 dmg x2 hits on all foes, 3 uses",
+    "elem": "for",
+    "power": 40,
     "target": "1 Foe"
   },
   "Solar Prosperity": {

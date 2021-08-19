@@ -95,7 +95,7 @@ export class DemonEntryComponent {
       let acost = skill.cost;
       let aupgrade = 0;
 
-      if (this.demon.affinities) {
+      if (this.demon.affinities && acost < 2000) {
         const elemIndex = this.compConfig.affinityElems.indexOf(skill.element);
         alvl = elemIndex > -1 ? this.demon.affinities[elemIndex] : 0;
         

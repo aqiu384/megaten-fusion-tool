@@ -16,6 +16,7 @@ import ELEMENT_CHART_JSON from '../smt4/data/element-chart.json';
 declare const SMT5_DEMON_DATA: any;
 declare const SMT5_SKILL_DATA: any;
 declare const SMT5_AFFINITY_BONUSES: any;
+declare const SMT5_SPECIAL_RECIPES: any;
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -67,7 +68,7 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   normalTable: FUSION_CHART_JSON,
   elementTable: ELEMENT_CHART_JSON,
-  specialRecipes: {},
+  specialRecipes: SMT5_SPECIAL_RECIPES,
 
   settingsKey: 'smt5-fusion-tool-settings',
   settingsVersion: 1709211400
