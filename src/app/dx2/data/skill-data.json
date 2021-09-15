@@ -94,7 +94,7 @@
     "cost": 6,
     "effect": "Light Pierce, Chance to crit, Tarukaja + Sukukaja for 2 turns",
     "elem": "lig",
-    "power": 140,
+    "power": 150,
     "target": "1 Foe"
   },
   "Amrita": {
@@ -1043,7 +1043,7 @@
     "points": 18
   },
   "Fallen Grigori": {
-    "effect": "Endure with 300 HP, Heals 30% of own HP, 3 MP, and enters Might when HP < 80%",
+    "effect": "Phys hit +20%, Endure with 300 HP, Heals 30% of own HP, 3 MP, and enters Might when HP < 80%",
     "elem": "pas"
   },
   "False God": {
@@ -1150,7 +1150,7 @@
     "elem": "pas"
   },
   "Forbidden Fruit": {
-    "effect": "Dark Pierce, Casts Temptation at end of own turn if a foe is Charmed",
+    "effect": "Dark Pierce, Phys hit +15%, Ailment hit +15%, Casts Temptation at end of own turn if a foe is Charmed",
     "elem": "pas"
   },
   "Force Amp": {
@@ -1300,7 +1300,7 @@
     "elem": "pas"
   },
   "Goddess of Slaughter": {
-    "effect": "Phys Pierce, +10% dmg when in Might, Enters Might when a foe enters Might",
+    "effect": "Phys Pierce, +20% dmg when in Might, Enters Might when a foe enters Might",
     "elem": "pas"
   },
   "Goddess' Fan": {
@@ -1308,6 +1308,10 @@
     "effect": "Dekaja + Debilitate for 6 turns",
     "elem": "sup",
     "target": "All Foes"
+  },
+  "God of Light": {
+    "effect": "All ally light skills +5% dmg and -1 MP cost",
+    "elem": "pas"
   },
   "Golden Greed": {
     "effect": "Ally dmg +200% against Poisoned Foes",
@@ -1359,7 +1363,7 @@
   },
   "Guillotine Blaze": {
     "cost": 6,
-    "effect": "Pierce, 50% crit, 10% Mortal, Scales with Matk, Nullifies endure effects",
+    "effect": "Pierce, 80% crit, 10% Mortal, Scales with Matk, Nullifies endure effects",
     "elem": "fir",
     "power": 150,
     "target": "1 Foe"
@@ -1614,7 +1618,7 @@
   },
   "Iron Fist": {
     "cost": 6,
-    "effect": "Pierce, 30% crit, Casts Tarukaja + Sukukaja for 2 turns",
+    "effect": "Pierce, 50% crit, Casts Tarukaja + Sukukaja for 2 turns",
     "elem": "phy",
     "power": 120,
     "target": "1 Foe"
@@ -2357,7 +2361,7 @@
     "target": "All Foes"
   },
   "Megingjord": {
-    "effect": "Phys Pierce, -20% phys damage received, -30% crit rate received",
+    "effect": "Phys Pierce, -30% phys damage received, -50% crit rate received",
     "elem": "pas"
   },
   "Memutudi": {
@@ -2436,7 +2440,7 @@
   },
   "Mjolnir": {
     "cost": 7,
-    "effect": "4-5 hits",
+    "effect": "5 hits",
     "elem": "ele",
     "power": 60,
     "target": "Rand Foes"
@@ -2654,7 +2658,7 @@
   },
   "Occult Flash": {
     "cost": 8,
-    "effect": "50% crit, 100% Mortal, 3 uses",
+    "effect": "50% crit, 100% Mortal, Nullifies endure effects",
     "elem": "phy",
     "power": 200,
     "target": "1 Foe"
@@ -2691,7 +2695,7 @@
   },
   "Ouas": {
     "cost": 6,
-    "effect": "50% crit, Drains 40% dmg dealt",
+    "effect": "50% crit, Pierce, Drains 50% dmg dealt",
     "elem": "phy",
     "power": 160,
     "target": "1 Foe"
@@ -2770,6 +2774,11 @@
     "effect": "Phys atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Phys Survivor": {
+    "effect": "Endure + Phys Boost",
+    "elem": "pas",
+    "points": 14
   },
   "Plague": {
     "effect": "At end of player phase, Reduce all Foe HP by 10% current (<200) with 100% Poison",
@@ -3112,6 +3121,13 @@
     "power": 100,
     "target": "All Foes"
   },
+  "SEBURO C40A": {
+    "cost": 4,
+    "effect": "3 hits, Pierce, 50% crit, Follow up with 5 hits of 40 phys dmg and 30% crit on rand foes, Nullifies counter effects, 3 uses",
+    "elem": "phy",
+    "power": 40,
+    "target": "1 Foe"
+  },
   "Serial Killer": {
     "effect": "Multi-target dmg +10%",
     "elem": "pas",
@@ -3162,7 +3178,7 @@
     "target": "Rand Foes"
   },
   "Shogun's Order": {
-    "effect": "Casts Sukukaja for 1 turn when Foe Muted",
+    "effect": "Casts Sukukaja for 2 turn when Foe Muted",
     "elem": "pas"
   },
   "Silent Prayer": {
@@ -3184,7 +3200,7 @@
     "cost": 7,
     "effect": "50% crit, Scales with Patk, Nullifies endure effects, Nullifies counter effects",
     "elem": "alm",
-    "power": 210,
+    "power": 220,
     "target": "1 Foe"
   },
   "Soaring Blades": {
@@ -3351,6 +3367,10 @@
     "effect": "Phys Pierce, Might + Boost at beginning of turn, Boost 1 +20% phys hit, Boost 2 +20% phys dmg, Boost 3 Debilitate for 1 turn",
     "elem": "pas"
   },
+  "Tachikoma Support": {
+    "effect": "Battle Speed +75%, Rakunda + Sukunda for 2 turns when attacking first",
+    "elem": "pas"
+  },
   "Tag": {
     "cost": 3,
     "effect": "Pass without using Press Turn",
@@ -3404,7 +3424,7 @@
     "cost": 6,
     "effect": "30% crit, 50% Charm, Dmg scales with Matk",
     "elem": "dar",
-    "power": 135,
+    "power": 140,
     "target": "1 Foe"
   },
   "Tenson Kourin": {
@@ -3464,7 +3484,7 @@
   },
   "Thunderous Hammer": {
     "cost": 6,
-    "effect": "30% crit, Pierce, 2nd cast 50% crit nullifies counter and endure effects, 3rd cast add 125 elec dmg with 50% crit",
+    "effect": "50% crit, Pierce, 2nd cast add 125 elec dmg with 50% crit, 3rd cast increase follow-up dmg to 150, Nullifies counter effects, Nullifies endure effects",
     "elem": "phy",
     "power": 150,
     "target": "1 Foe"

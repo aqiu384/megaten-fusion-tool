@@ -115,14 +115,24 @@
     "Max HP +150", "+10% to Dark damage inflicted."
   ],
   "Baal": [
-    "Max HP +25 MAX +250", "-50% to Force damage received.",
+    "Max HP +250", "-50% to Force damage received.",
     "Mag ATK +100", "Reduces the cost of Tempest by 1 MP.",
     "Max HP +250", "While this demon is alive, all party members will receive the following effect: +10% to Force damage inflicted and +10% to status ailment auto cure rate."
+  ],
+  "Baldur": [
+    "Max HP +150", "Activates the following Chain Effect if the one with this skill dies: Reduces ATK, DEF and EV/AC of all enemies by 20%. (1 turn)",
+    "Mag ATK +50", "Adds Light Pierce. Damage dealt through this skill is reduced by 30% if the enemy has Null, Repel or Drain Light attribute.",
+    "Max HP +150", "+10% to Light damage dealt by all party members while the one with this skill is alive."
   ],
   "Barong": [
     "Max HP +250", "Reduces the cost of Barong Dance by 1.",
     "Mag ATK +100", "-50% to Elec damage received.",
     "Max HP +250", "While this demon is alive, all party members will receive the following effect: -20% to Elec damage received."
+  ],
+  "Batou": [
+    "Max HP +250", "Adds Phys Pierce.",
+    "Phys ATK +100", "+15% to Phys hit rate, +15% to Critical hit rate. Increases the uses of SEBURO C40A by 1.",
+    "Max HP +250", "+15% to Phys damage. +25% to max HP."
   ],
   "Bayonetta S": [
     "Max HP +250", "+10% to Phys hit rate. +10% chance to inflict status ailments.",
@@ -256,7 +266,7 @@
   ],
   "Flauros": [
     "Max HP +250", "+15% to Phys hit rate.",
-    "Phys ATK +100", "Activates the following Chain Effect after Hell Leopard is activated: Inflicts Phys (Physical) Pierce effect damage (Power: 25) 3 times on random enemies. Counter effects will not work on this skill.",
+    "Phys ATK +100", "Activates the following Chain Effect after Hell Leopard is activated: Inflicts Phys (Physical) Pierce effect damage (Power: 30) 3 times on random enemies. Counter effects will not work on this skill.",
     "Max HP +250", "Adds Phys Pierce. +15% to Phys damage inflicted."
   ],
   "Flauros Hallel": [
@@ -422,7 +432,7 @@
   "Lakshmi": [
     "Max HP +250", "+15% chance to inflict status ailments.",
     "Mag DEF +150", "+15% Phys evasion rate.",
-    "Max HP +250", "Activates the following Chain Effect after Lotus Dance is activated: All party members recover 1 MP."
+    "Max HP +250", "+20% to max HP. Activates the following Chain Effect after Lotus Dance is activated: All party members recover 1 MP."
   ],
   "Lakshmi A": [
     "Max HP +250", "+15% Phys evasion rate.",
@@ -736,7 +746,7 @@
   "Susano-o": [
     "Max HP +250", "+15% to single-target attack damage inflicted.",
     "Phys ATK +100", "-50% to Force damage received.",
-    "Max HP +250", "+25% to single-target attack damage inflicted."
+    "Max HP +250", "+25% to Phys attack damage inflicted."
   ],
   "Susano-o A": [
     "Max HP +250", "+15% to Phys hit rate.",
@@ -755,7 +765,7 @@
   ],
   "Thor A": [
     "Max HP +250", "+15% to Phys hit rate.",
-    "Phys ATK +100", "-15% to Physical damage received. -20% to Critical hit rate of damage received.",
+    "Phys ATK +100", "-20% to Physical damage received. -30% to Critical hit rate of damage received.",
     "Max HP +250", "+25% to Elec damage inflicted."
   ],
   "Throne": [
