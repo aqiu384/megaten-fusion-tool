@@ -10,10 +10,10 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
     <td *ngIf="!hasCurrLvl">{{ data.lvl | lvlToNumber }}</td>
     <td *ngIf="hasCurrLvl" style="text-align: center;">
-      <select (change)="emitValidLvl($event)" (focus)="updateCurrRange()">
+      <button *ngIf="!currOffset" (click)="updateCurrRange()">{{ data.currLvl }}</button>
+      <select *ngIf="currOffset" (change)="emitValidLvl($event)">
         <option [value]="data.currLvl">{{ data.currLvl }}</option>
         <option *ngFor="let _ of currRange; let i = index" [value]="i + currOffset">{{ i + currOffset }}</option>
-        <option value="99">99</option>
       </select>
     </td>
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
@@ -45,7 +45,7 @@ export class SmtDemonListRowComponent {
   updateCurrRange() {
     if (this.currOffset !== 0) { return; }
     this.currOffset = Math.floor(this.data.lvl);
-    this.currRange = Array(99 - this.currOffset);
+    this.currRange = Array(100 - this.currOffset);
   }
 
   emitValidLvl(lvlEvent: Event) {

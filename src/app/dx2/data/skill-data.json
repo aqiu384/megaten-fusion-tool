@@ -19,6 +19,11 @@
     "points": 8,
     "target": "All Foes"
   },
+  "Ailment Survivor": {
+    "effect": "Endure, Ailment hit +15%",
+    "elem": "pas",
+    "points": 14
+  },
   "Agi": {
     "cost": 4,
     "elem": "fir",
@@ -210,7 +215,7 @@
     "cost": 6,
     "effect": "Nullify endure effects, Nullifies revive effects, Boost",
     "elem": "lig",
-    "power": 160,
+    "power": 170,
     "target": "1 Foe"
   },
   "Barbed Spear": {
@@ -248,6 +253,12 @@
     "power": 60,
     "target": "All Foes"
   },
+  "Bemusing Rhapsody": {
+    "cost": 6,
+    "effect": "Barrier Break, 50% Charm, 80% Curse",
+    "elem": "ail",
+    "target": "All Foes"
+  },
   "Berserk": {
     "cost": 6,
     "effect": "30% crit, Follow up with 160 phys dmg 50% crit, Nullifies counter and endure effects, 2 uses",
@@ -261,7 +272,7 @@
     "points": 18
   },
   "Berserker Armor": {
-    "effect": "Phys Pierce, Crit +50%, Dmg received -40%, 40% frac dmg every turn to self based on max HP (nullifies endure and revive effects)",
+    "effect": "Phys Pierce, Crit +50%, Dmg received -40%, 30% frac dmg every turn to self based on max HP (nullifies endure effects)",
     "elem": "pas"
   },
   "Berserker God": {
@@ -301,12 +312,12 @@
     "target": "1 Foe"
   },
   "Black Beckoning": {
-    "effect": "Reduces all foes curr HP by 10% (<200) at end of turn, 2nd cast 50% (<1000), 3rd cast max HP by 50% (<2000), Nullifies Endure Effects (1 use)",
+    "effect": "Reduces all foes curr HP by 10% (<200) at end of turn, 2nd cast 50% (<2000), 3rd cast max HP by 50% (<2000), Nullifies Endure Effects (1 use)",
     "elem": "pas"
   },
   "Black Lullaby": {
     "cost": 6,
-    "effect": "30% Mute, 75 rec to all allies",
+    "effect": "50% Mute, 80 rec to all allies",
     "elem": "ail",
     "target": "All Foes"
   },
@@ -318,16 +329,16 @@
   },
   "Blade of the Absolute": {
     "cost": 6,
-    "effect": "5 hits, High hit, 50% crit, Scales off Patk, Nullifies counter effects",
+    "effect": "5 hits, High hit, 50% crit, Scales off Patk, Might, Nullifies counter effects",
     "elem": "alm",
-    "power": 35,
+    "power": 40,
     "target": "1 Foe"
   },
   "Blasphemy": {
     "cost": 6,
-    "effect": "Deals Fire or Ice dmg, Pierce, 40% Charm or Poison on all Foes",
+    "effect": "Deals Fire or Ice dmg, Pierce, 66% Charm or Poison on all Foes",
     "elem": "alm",
-    "power": 160,
+    "power": 166,
     "target": "1 Foe"
   },
   "Bleeder": {
@@ -368,7 +379,7 @@
   },
   "Blossoming Cyclone": {
     "cost": 6,
-    "effect": "Pierce, Heals 70 to all allies",
+    "effect": "Pierce, Heals 80 to all allies",
     "elem": "for",
     "power": 170,
     "target": "1 Foe"
@@ -542,7 +553,7 @@
     "points": 16
   },
   "Dark Premonition": {
-    "cost": 6,
+    "cost": 5,
     "effect": "50% Mute, 51% dmg based on curr HP, Changes to Disastrous Eclipse when HP < 50%",
     "elem": "ail",
     "target": "All Foes"
@@ -576,6 +587,10 @@
     "effect": "Dmg +30% to Cursed Foes",
     "elem": "pas",
     "points": 13
+  },
+  "Deadly Melody": {
+    "effect": "2 of Luster Candy and 2 of Debilitate for 1 turn when foe inflicted with ailment",
+    "elem": "pas"
   },
   "Deadly Mute": {
     "effect": "Dmg +30% to Muted Foes",
@@ -1047,7 +1062,7 @@
     "elem": "pas"
   },
   "False God": {
-    "effect": "Almighty dmg +10%, Repel Pierce, Casts Megidola when an ally repels an attack",
+    "effect": "Almighty dmg +10%, Repel Pierce, Casts 120 alm dmg on all foes when an ally repels an attack",
     "elem": "pas"
   },
   "Famine": {
@@ -1234,7 +1249,7 @@
     "target": "Rand Foes"
   },
   "Glamorous Allure": {
-    "effect": "Regular attack changed to alm 70 dmg to all foes with 20% Charm",
+    "effect": "Regular attack changed to alm 80 dmg to all foes with 30% Charm",
     "elem": "pas"
   },
   "Glorious Bolt": {
@@ -1441,7 +1456,7 @@
     "target": "Rand Foes"
   },
   "Hawk of Light": {
-    "effect": "Phys Pierce, Phys eva +15%, Restores 3 MP and casts Tetrakarn + phys alm when downing a Foe",
+    "effect": "Phys Pierce, Phys eva +20%, Restores 3 MP and casts Tetrakarn + phys alm + Prayer when downing a Foe",
     "elem": "pas"
   },
   "Heat Wave": {
@@ -1456,7 +1471,7 @@
     "cost": 6,
     "effect": "Nullify endure effects, Might + Charge + Boost",
     "elem": "phy",
-    "power": 120,
+    "power": 125,
     "target": "1 Foe"
   },
   "Heavenly Valor": {
@@ -1498,7 +1513,7 @@
   },
   "Hell's Trivia": {
     "cost": 6,
-    "effect": "Mamudo, Dark Pierce",
+    "effect": "Dark Pierce, Follow up with 80 dark dmg to all foes",
     "elem": "dar",
     "power": 130,
     "target": "1 Foe"
@@ -1587,7 +1602,7 @@
     "elem": "pas"
   },
   "Illusionary World": {
-    "effect": "Ailment hit +15%, Cures party of Mute and casts 90 alm dmg on all Foes when any ally is muted",
+    "effect": "Ailment hit +15%, Cures party of Mute and casts 100 alm dmg on all Foes when any ally is muted",
     "elem": "pas"
   },
   "Infernal Mask": {
@@ -1720,7 +1735,7 @@
     "elem": "pas"
   },
   "Life & Death": {
-    "effect": "Recover 1 MP and revive a random ally with 50% HP when a foe is downed",
+    "effect": "Recover 2 MP and revive a random ally with 50% HP when a foe is downed",
     "elem": "pas"
   },
   "Life Aid": {
@@ -1762,10 +1777,10 @@
     "points": 6
   },
   "Light Devourer": {
-    "cost": 6,
+    "cost": 5,
     "effect": "Pierce, Drains 50% dmg dealt",
     "elem": "dar",
-    "power": 150,
+    "power": 160,
     "target": "1 Foe"
   },
   "Light Enhancement": {
@@ -2578,7 +2593,7 @@
     "elem": "pas"
   },
   "Nosferatu": {
-    "effect": "Endure with 300 HP, Dmg +10% every turn (50% max, resets between waves)",
+    "effect": "Max HP +25%, Endure with 500 HP, Dmg +15% every turn (60% max, resets between waves)",
     "elem": "pas"
   },
   "Null Bind": {
@@ -3074,7 +3089,7 @@
     "target": "All Foes"
   },
   "Ruin and Grace": {
-    "cost": 7,
+    "cost": 6,
     "effect": "50% crit, Pierce, Scales off Matk, Heals 80 to all allies",
     "elem": "phy",
     "power": 200,
@@ -3243,7 +3258,7 @@
     "cost": 6,
     "effect": "Pierce, Tarunda + Rakunda, Nullifies endure effects",
     "elem": "dar",
-    "power": 170,
+    "power": 180,
     "target": "1 Foe"
   },
   "Soul Judgement": {
@@ -3278,7 +3293,7 @@
     "target": "1 Foe"
   },
   "Star of Darkness": {
-    "effect": "Dark dmg +30% and Phys eva +25% when HP < 50%",
+    "effect": "Dark dmg +30% and Phys eva +40% when HP < 50%",
     "elem": "pas"
   },
   "Stealth": {
@@ -3341,7 +3356,7 @@
     "elem": "pas"
   },
   "Supreme Creator": {
-    "effect": "Skill costs -1 MP, Drain Pierce, Recovers 75 HP and 1 MP to all allies when an ally drains an attack",
+    "effect": "Skill costs -1 MP, Drain Pierce, Recovers 90 HP and 2 MP to all allies when an ally drains an attack",
     "elem": "pas"
   },
   "Sweet Bite": {
@@ -3714,7 +3729,7 @@
     "cost": 6,
     "effect": "3 hits, Rakunda",
     "elem": "fir",
-    "power": 60,
+    "power": 70,
     "target": "1 Foe"
   },
   "Yaksa Claw": {
