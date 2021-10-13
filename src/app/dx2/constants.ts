@@ -93,4 +93,4 @@ export const SkillElementOrder = getEnumOrder(SkillElements);
 
 export const VAN_FUSION_SETTINGS_KEY = 'dx2-fusion-tool-settings';
 export const FUSION_SETTINGS_VERSION = 1709211400;
-export const APP_TITLE = 'Shin Megami Tensei: Dx2 Liberation';
+export const APP_TITLE = 'Shin Megami Tensei: Liberation Dx2';

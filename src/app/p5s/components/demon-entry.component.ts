@@ -27,7 +27,7 @@ import { FusionDataService } from '../fusion-data.service';
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-resists *ngIf="demon.area"
-        [title]="demon.area + ' Encounter (Risky)'"
+        [title]="demon.area + ' Encounter (Merciless)'"
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.eresists">
       </app-demon-resists>

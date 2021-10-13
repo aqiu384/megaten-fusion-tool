@@ -1,17 +1,230 @@
-# Megami Tensei Fusion Tools - How to Use
+## <a name="home"></a>Megami Tensei Fusion Tools - How to Use
 ## Navigation
 * [All Fusion Tools](https://aqiu384.github.io/megaten-fusion-tool/home)
 * [Fusion Theory](https://aqiu384.github.io/docs-megaten/fusion-theory)
 * [Report Issue](https://github.com/aqiu384/megaten-fusion-tool/issues)
 
-## Save Offline
-### iOS and Android
+## <a name="save-offline"></a>Save Offline
+### iOS
 1. Navigate to the [Megami Tensei Fusion Tools homepage](https://aqiu384.github.io/megaten-fusion-tool/home)
-2. Add page to Home Screen
-    * iOS Safari: Safari > Action (Share) > Add to Home Screen > Add
-    * Android Chrome: Chrome > Settings > Add to Home Screen > Add Automatically
+2. Add page to Home Screen: Safari > Action (Share) > Add to Home Screen > Add
 3. Open the downloaded page from the Home Screen
 4. Navigate to the skills page of each desired game (e.g. [List of Skills - Persona 5 Royal](https://aqiu384.github.io/megaten-fusion-tool/p5r/skills))
 5. Close the downloaded page and disable Wi-Fi and Cellular Data
 6. Reopen the page from the Home Screen and ensure each downloaded game is still accessible
 7. Reenable Wi-Fi and repeat steps 4-6 if game does not load offline
+
+## <a name="smt1"></a>[Shin Megami Tensei](https://aqiu384.github.io/megaten-fusion-tool/smt1)
+### Data Sources
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_dds/index.html
+* https://kaerukyo.net/dds\_database/skill.php?title=3
+
+## <a name="smt2"></a>[Shin Megami Tensei II](https://aqiu384.github.io/megaten-fusion-tool/smt2)
+### Data Sources
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_dds2/index.html
+* https://kaerukyo.net/dds\_database/skill.php?title=4
+
+## <a name="smtif"></a>[Shin Megami Tensei If...](https://aqiu384.github.io/megaten-fusion-tool/smtif)
+### Data Sources
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_if/index.html
+* https://kaerukyo.net/dds\_database/skill.php?title=5
+
+## <a name="smt9"></a>[Shin Megami Tensei NINE](https://aqiu384.github.io/megaten-fusion-tool/smt9)
+### Data Sources
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_nine/index.html
+* https://kaerukyo.net/dds\_database/skill.php?title=17
+* http://softtank.web.fc2.com/nine\_index.html
+* http://ゆめのしま.jp/nine.html
+
+## <a name="smtim"></a>[Shin Megami Tensei IMAGINE](https://aqiu384.github.io/megaten-fusion-tool/smtim)
+### Data Sources
+* https://wikiwiki.jp/imagine/
+* http://megatenonline.wiki.fc2.com/wiki/
+* http://megaten.sesshou.com
+
+## <a name="smt3"></a>[Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3)
+### Data Sources
+* http://www.phpsimplicity.com/heretic/
+* https://pathshower.wordpress.com/smt/nocturne/
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_dds3/
+
+## <a name="smtsj"></a>[Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
+### [Shin Megami Tensei: Strange Journey Redux](https://aqiu384.github.io/megaten-fusion-tool/smtdsj)
+* Womb of Grief added
+* New endings added for all routes
+
+### Data Sources
+* https://gamefaqs.gamespot.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384
+* https://docs.google.com/spreadsheets/d/1R0Uq9YAW0yVwwHk020y6dLYR-EIsLOlIId05JFZpJcM
+* https://github.com/yuggrdrasill/megaten-sj-pw-generator
+
+## <a name="smt4"></a>[Shin Megami Tensei IV](https://aqiu384.github.io/megaten-fusion-tool/smt4)
+### Data Sources
+* https://erikku.github.io/smt4tool/
+* https://gamefaqs.gamespot.com/3ds/672441-shin-megami-tensei-iv/faqs/67766
+
+## <a name="smt4f"></a>[Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
+### Data Sources
+* http://gamers-high.com/megami4-final/
+* https://megamitensei.fandom.com/wiki/List\_of\_Shin\_Megami\_Tensei\_IV\_Apocalypse\_Skills
+
+### Unique Skills Fusion Accident Exploit
+
+## <a name="smt5"></a>[Shin Megami Tensei V](https://aqiu384.github.io/megaten-fusion-tool/smt5)
+### Data Sources
+* https://www.youtube.com/user/atlustube
+
+## <a name="dsum"></a>[Shin Megami Tensei: Devil Summoner](https://aqiu384.github.io/megaten-fusion-tool/dsum)
+### Data Sources
+* https://gamefaqs.gamespot.com/psp/929271-shin-megami-tensei-devil-summoner/faqs/70850
+* http://onpleruler.web.fc2.com/megami/pspds.htm
+* http://www.geocities.co.jp/Hollywood-Miyuki/1871/dds/
+
+## <a name="dssh"></a>[Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh)
+### Data Sources
+* http://bmky.net/data/sh/system/unite/hero.html
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/ds/sh/index.html
+
+## <a name="krch"></a>[Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
+### Data Sources
+* https://kaerukyo.net/dds\_database/devil.php?title=22
+* https://megamitensei.fandom.com/wiki/List\_of\_Devil\_Summoner:\_Raidou\_Kuzunoha\_vs.\_The\_Soulless\_Army\_Skills
+
+## <a name="krao"></a>[Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
+### Data Sources
+* https://www31.atwiki.jp/abaddon/pages/37.html
+* https://megamitensei.fandom.com/wiki/List\_of\_Devil\_Summoner:\_Raidou\_Kuzunoha\_vs.\_King\_Abaddon\_Skills
+
+## <a name="mib"></a>[Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/mib)
+### Data Sources
+* http://persona1.wikidot.com
+* http://p1psp.gkwiki2.com/
+
+## <a name="p3"></a>[Persona 3](https://aqiu384.github.io/megaten-fusion-tool/p3)
+### [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)
+* Aeon Social Link added
+* Orpheus Telos added
+
+### [Persona 3 FES: The Answer](https://aqiu384.github.io/megaten-fusion-tool/p3aeg)
+* No compendium available
+* 4+ spreads removed, can create through normal and triple fusion instead
+
+### [Persona 3 Portable](https://aqiu384.github.io/megaten-fusion-tool/p3p)
+* Skill cards added
+
+### Data Sources
+* https://megamitensei.fandom.com/wiki/List\_of\_Persona\_3\_FES\_Personas
+* https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404
+
+### Skill List
+* (Fs): Fusion Spell
+
+## <a name="p4"></a>[Persona 4](https://aqiu384.github.io/megaten-fusion-tool/p4)
+### [Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g)
+* Aeon and Jester Social Links added
+* Skill cards added
+
+### Data Sources
+* https://gamefaqs.gamespot.com/ps2/945498-shin-megami-tensei-persona-4/faqs/53550
+* https://gamefaqs.gamespot.com/ps2/945498-shin-megami-tensei-persona-4/faqs/55266
+* https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/64587
+* http://h1g.jp/p4g/
+
+### Skill List
+* (S?): Learned at Social Link Lv. ?
+* (Sx): Learned at Social Link Lv. 10
+* (Sy): Learned at Social Link Lv. 11
+* (B?): Learned during Bike Event ?
+
+## <a name="p5"></a>[Persona 5](https://aqiu384.github.io/megaten-fusion-tool/p5)
+### [Persona 5 Royal](https://aqiu384.github.io/megaten-fusion-tool/p5r)
+* Faith and Councillor Confidants added
+* Fusion Alarm added
+* Persona Traits added
+* [Max Confidant Walkthrough](https://aqiu384.github.io/p5r-walkthrough/introduction)
+
+### Data Sources
+* http://spwiki.net/persona5/
+* http://bozumemo.blogspot.com/p/5.html
+* https://wikiwiki.jp/persona5r/
+* https://h1g.jp/p5r/
+
+### Skill List
+* (Cx): Learned at Confidant Lv. 10
+* (Cy): Learned at Confidant Lv. 11
+* (Fa): Itemize during Fusion Alarm
+* (Tk): Negotiate during Hold Up
+
+## <a name="p5s"></a>[Persona 5 Strikers](https://aqiu384.github.io/megaten-fusion-tool/p5s)
+### Data Sources
+* https://altema.jp/persona5s/
+* https://gamewith.jp/p5s/
+* https://h1g.jp/p5s/
+
+## <a name="pq"></a>[Persona Q: Shadow of the Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq)
+### Data Sources
+* https://gamefaqs.gamespot.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70858
+* https://gamefaqs.gamespot.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70843
+* https://wikiwiki.jp/personaqr/
+
+## <a name="pq2"></a>[Persona Q2: New Cinema Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq2)
+### Data Sources
+* https://bozumemo.blogspot.com/p/pq2.html
+* https://wiki.denfaminicogamer.jp/pq2/
+* https://wikiwiki.jp/pq2/
+
+## <a name="mjn1"></a>[Majin Tensei](https://aqiu384.github.io/megaten-fusion-tool/mjn1)
+### Data Sources
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/majin/majin1/index.html
+* https://megamitensei.fandom.com/wiki/List\_of\_Majin\_Tensei\_Demons
+
+## <a name="mjn2"></a>[Majin Tensei II: Spiral Nemesis](https://aqiu384.github.io/megaten-fusion-tool/mjn2)
+### Data Sources
+* http://www.demitree.jp/コンテンツ/魔神転生２/
+* http://www.cam.hi-ho.ne.jp/oni2/oni1/Majin2/remix.htm
+* http://majinntennsei2.kouryaku.red/
+* http://oliva.m78.com/majin2.html
+* http://bmky.net/data/m2/
+
+## <a name="ds1"></a>[Devil Survivor](https://aqiu384.github.io/megaten-fusion-tool/ds1)
+### [Devil Survivor Overclocked](https://aqiu384.github.io/megaten-fusion-tool/dso)
+* 8th Day added for 3 routes
+* Compendium added
+
+### Data Sources
+* https://gamefaqs.gamespot.com/ds/954869-shin-megami-tensei-devil-survivor/faqs/56943
+* https://gamefaqs.gamespot.com/3ds/997806-shin-megami-tensei-devil-survivor-overclocked/faqs/69601
+
+### Skill List
+* (A?): Comes with ?-star Auction
+
+### Max Stat Underflow Exploit
+
+## <a name="ds2"></a>[Devil Survivor 2](https://aqiu384.github.io/megaten-fusion-tool/ds2)
+### [Devil Survivor 2 Record Breaker](https://aqiu384.github.io/megaten-fusion-tool/ds2br)
+* Triangulum Campaign added
+
+### Data Sources
+* http://i40.tinypic.com/f2j6mo.png
+* http://spwiki.net/ds2br/
+
+### Skill List
+* (A?): Comes with ?-star Auction
+* (Ar): Comes with Rare Auction
+
+## <a name="dx2"></a>[Shin Megami Tensei: Liberation Dx2](https://aqiu384.github.io/megaten-fusion-tool/dx2)
+### Data Sources
+* https://altema.jp/megaten/
+* https://d2-megaten-l.sega.com/en/
+* https://oceanxdds.github.io/dx2\_fusion/
+
+### Skill List
+* (Ac): Archetype Common
+* (Aa): Archetype Aragami
+* (Ap): Archetype Protector
+* (Ay): Archetype Psychic
+* (Ae): Archetype Elementalist
+* (Ga): Gacha Aragami
+* (Gp): Gacha Protector
+* (Gy): Gacha Psychic
+* (Ge): Gacha Elementalist

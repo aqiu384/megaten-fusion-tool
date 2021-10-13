@@ -21,7 +21,7 @@ OUTFILE = INFILE.replace('docs/', '../aqiu384.github.io/docs-megaten/').replace(
 with open(INFILE) as mdfile:
     TITLE = mdfile.readline().replace('#', '').strip()
 
-subprocess.call(['showdown', 'makehtml', '--tables', '-i', INFILE, '-o', OUTFILE])
+subprocess.call(['showdown', 'makehtml', '--tables', '--noHeaderId', '--simplifiedAutoLink', '-i', INFILE, '-o', OUTFILE])
 
 with open(OUTFILE) as htmlfile:
     lines = htmlfile.read()

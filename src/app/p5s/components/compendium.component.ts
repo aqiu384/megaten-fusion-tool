@@ -5,12 +5,12 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-compendium
-      [ngClass]="'p5'"
+      [ngClass]="'p5s'"
       [hasSettings]="false"
       [mainList]="'persona'">
     </app-demon-compendium>
   `,
-  styleUrls: [ '../../p5/components/compendium.component.css' ],
+  styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None
 })
 export class CompendiumComponent { }

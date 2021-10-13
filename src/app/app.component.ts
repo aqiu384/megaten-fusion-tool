@@ -8,15 +8,21 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
           <tr>
-            <th routerLink="home" class="nav" routerLinkActive="active" [style.width.%]="1 / (1 + links.length)">
+            <th routerLink="home" class="nav" routerLinkActive="active" style="width: 25%;">
               <a routerLink="home">All Games</a>
             </th>
-            <th class="nav external" *ngFor="let link of links" [style.width.%]="1 / (1 + links.length)">
-              <div><a [href]="link.link">{{ link.title }}</a></div>
+            <th class="nav external" style="width: 25%;">
+              <div><a href="https://aqiu384.github.io/docs-megaten/how-to-use#save-offline">Save Offline</a></div>
+            </th>
+            <th class="nav external" style="width: 25%;">
+              <div><a [href]="'https://aqiu384.github.io/docs-megaten/how-to-use#' + currentGame">Help</a></div>
+            </th>
+            <th class="nav external" style="width: 25%;">
+              <div><a href="https://github.com/aqiu384/megaten-fusion-tool/issues">Report Issue</a></div>
             </th>
           </tr>
           <tr>
-            <th [attr.colspan]="links.length + 1" class="title">Megami Tensei Fusion Tools</th>
+            <th colspan="4" class="title">Megami Tensei Fusion Tools</th>
           </tr>
         </thead>
       </table>
@@ -40,17 +46,10 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
 export class AppComponent implements OnInit {
   static readonly GAME_PREFIXES: { [game: string]: string } = {
     smtdsj: 'smtsj',
-    p3fes: 'p3', p3aeg: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5', p5s: 'p5',
+    p3fes: 'p3', p3aeg: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5',
     dso: 'ds1', ds2br: 'ds2'
   };
 
-  links = [
-    { title: 'How to Use', link: 'https://aqiu384.github.io/docs-megaten/how-to-use' },
-    { title: 'Fusion Theory', link: 'https://aqiu384.github.io/docs-megaten/fusion-theory' },
-    { title: 'Save Offline', link: 'https://aqiu384.github.io/docs-megaten/how-to-use#saveoffline' },
-    { title: 'Report Issue', link: 'https://github.com/aqiu384/megaten-fusion-tool/issues' }
-  ];
-  
   currentGame = 'none';
   loading = false;
 
