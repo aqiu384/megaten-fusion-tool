@@ -10,13 +10,13 @@ import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
-import FUSION_CHART_JSON from '../smt4/data/fusion-chart.json';
-import ELEMENT_CHART_JSON from '../smt4/data/element-chart.json';
 
 declare const SMT5_DEMON_DATA: any;
 declare const SMT5_SKILL_DATA: any;
 declare const SMT5_AFFINITY_BONUSES: any;
 declare const SMT5_SPECIAL_RECIPES: any;
+declare const SMT5_FUSION_CHART: any;
+declare const SMT5_ELEMENT_CHART: any;
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -66,8 +66,8 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   resistElems: COMP_CONFIG_JSON.resistElems,
   ailmentElems: COMP_CONFIG_JSON.ailments,
 
-  normalTable: FUSION_CHART_JSON,
-  elementTable: ELEMENT_CHART_JSON,
+  normalTable: SMT5_FUSION_CHART,
+  elementTable: SMT5_ELEMENT_CHART,
   specialRecipes: SMT5_SPECIAL_RECIPES,
 
   settingsKey: 'smt5-fusion-tool-settings',

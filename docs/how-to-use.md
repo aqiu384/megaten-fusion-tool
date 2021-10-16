@@ -1,4 +1,4 @@
-## <a name="home"></a>Megami Tensei Fusion Tools - How to Use
+# Megami Tensei Fusion Tools - How to Use
 ## Navigation
 * [All Fusion Tools](https://aqiu384.github.io/megaten-fusion-tool/home)
 * [Fusion Theory](https://aqiu384.github.io/docs-megaten/fusion-theory)
@@ -16,24 +16,24 @@
 
 ## <a name="smt1"></a>[Shin Megami Tensei](https://aqiu384.github.io/megaten-fusion-tool/smt1)
 ### Data Sources
-* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_dds/index.html
-* https://kaerukyo.net/dds\_database/skill.php?title=3
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds/index.html
+* https://kaerukyo.net/dds_database/skill.php?title=3
 
 ## <a name="smt2"></a>[Shin Megami Tensei II](https://aqiu384.github.io/megaten-fusion-tool/smt2)
 ### Data Sources
-* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_dds2/index.html
-* https://kaerukyo.net/dds\_database/skill.php?title=4
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds2/index.html
+* https://kaerukyo.net/dds_database/skill.php?title=4
 
 ## <a name="smtif"></a>[Shin Megami Tensei If...](https://aqiu384.github.io/megaten-fusion-tool/smtif)
 ### Data Sources
-* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_if/index.html
-* https://kaerukyo.net/dds\_database/skill.php?title=5
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_if/index.html
+* https://kaerukyo.net/dds_database/skill.php?title=5
 
 ## <a name="smt9"></a>[Shin Megami Tensei NINE](https://aqiu384.github.io/megaten-fusion-tool/smt9)
 ### Data Sources
-* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_nine/index.html
-* https://kaerukyo.net/dds\_database/skill.php?title=17
-* http://softtank.web.fc2.com/nine\_index.html
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_nine/index.html
+* https://kaerukyo.net/dds_database/skill.php?title=17
+* http://softtank.web.fc2.com/nine_index.html
 * http://ゆめのしま.jp/nine.html
 
 ## <a name="smtim"></a>[Shin Megami Tensei IMAGINE](https://aqiu384.github.io/megaten-fusion-tool/smtim)
@@ -46,7 +46,7 @@
 ### Data Sources
 * http://www.phpsimplicity.com/heretic/
 * https://pathshower.wordpress.com/smt/nocturne/
-* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin\_dds3/
+* http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds3/
 
 ## <a name="smtsj"></a>[Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
 ### [Shin Megami Tensei: Strange Journey Redux](https://aqiu384.github.io/megaten-fusion-tool/smtdsj)
@@ -66,13 +66,45 @@
 ## <a name="smt4f"></a>[Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
 ### Data Sources
 * http://gamers-high.com/megami4-final/
-* https://megamitensei.fandom.com/wiki/List\_of\_Shin\_Megami\_Tensei\_IV\_Apocalypse\_Skills
+* https://megamitensei.fandom.com/wiki/List_of_Shin_Megami_Tensei_IV_Apocalypse_Skills
+
+### Skill Affinities
+| Rank | Attack              | Ailment             | Recovery             | Support   |
+| ---- | ------------------- | ------------------- | -------------------- | --------- |
+| 9    | Dmg +70%, Cost -20% | Hit +35%, Cost -20% |                      |           |
+| 8    | Dmg +60%, Cost -20% | Hit +30%, Cost -20% |                      |           |
+| 7    | Dmg +50%, Cost -20% | Hit +25%, Cost -20% |                      |           |
+| 6    | Dmg +40%, Cost -20% | Hit +20%, Cost -20% |                      |           |
+| 5    | Dmg +30%, Cost -20% | Hit +15%, Cost -20% | Heal +45%, Cost -20% | Cost -50% |
+| 4    | Dmg +30%, Cost -10% | Hit +15%, Cost -10% | Heal +45%, Cost -10% | Cost -40% |
+| 3    | Dmg +20%, Cost -10% | Hit +10%, Cost -10% | Heal +30%, Cost -10% | Cost -30% |
+| 2    | Dmg +10%, Cost -10% | Hit +5%, Cost -10%  | Heal +15%, Cost -10% | Cost -20% |
+| 1    | Dmg +10%            | Hit +5%             | Heal +15%            | Cost -10% |
+| -1   | Dmg -10%            | Hit -10%            | Cost +10%            | Cost +10% |
+| -2   | Dmg -20%            | Hit -20%            | Cost +20%            | Cost +20% |
+| -3   | Dmg -30%            | Hit -30%            | Cost +30%            | Cost +30% |
+| -4   | Dmg -40%            | Hit -40%            | Cost +40%            | Cost +40% |
+| -5   | Dmg -50%            | Hit -50%            | Cost +50%            | Cost +50% |
+| -6   | Dmg -60%            | Hit -60%            |                      |           |
+| -7   | Dmg -70%            | Hit -70%            |                      |           |
+| -8   | Dmg -80%            | Hit -80%            |                      |           |
+| -9   | Dmg -90%            | Hit -90%            |                      |           |
 
 ### Unique Skills Fusion Accident Exploit
 
 ## <a name="smt5"></a>[Shin Megami Tensei V](https://aqiu384.github.io/megaten-fusion-tool/smt5)
 ### Data Sources
 * https://www.youtube.com/user/atlustube
+
+### Skill Potentials
+| Rank | Attack    | Recovery    | Support     |
+| ---- | --------- | ----------- | ----------- |
+| 6    | Cost -28% |             |             |
+| 5    | Cost -25% | Cost -41%   | Cost -41%   |
+| 4    | Cost -19% | Cost -30%   | Cost -30%   |
+| 3    | Cost -16% | Cost -25%   | Cost -25%   |
+| 2    | Cost -13% | Cost -20.5% | Cost -20.5% |
+| 1    | Cost -10% | Cost -16%   | Cost -15%   |
 
 ## <a name="dsum"></a>[Shin Megami Tensei: Devil Summoner](https://aqiu384.github.io/megaten-fusion-tool/dsum)
 ### Data Sources
@@ -87,13 +119,13 @@
 
 ## <a name="krch"></a>[Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
 ### Data Sources
-* https://kaerukyo.net/dds\_database/devil.php?title=22
-* https://megamitensei.fandom.com/wiki/List\_of\_Devil\_Summoner:\_Raidou\_Kuzunoha\_vs.\_The\_Soulless\_Army\_Skills
+* https://kaerukyo.net/dds_database/devil.php?title=22
+* https://megamitensei.fandom.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._The_Soulless_Army_Skills
 
 ## <a name="krao"></a>[Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
 ### Data Sources
 * https://www31.atwiki.jp/abaddon/pages/37.html
-* https://megamitensei.fandom.com/wiki/List\_of\_Devil\_Summoner:\_Raidou\_Kuzunoha\_vs.\_King\_Abaddon\_Skills
+* https://megamitensei.fandom.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._King_Abaddon_Skills
 
 ## <a name="mib"></a>[Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/mib)
 ### Data Sources
@@ -113,7 +145,7 @@
 * Skill cards added
 
 ### Data Sources
-* https://megamitensei.fandom.com/wiki/List\_of\_Persona\_3\_FES\_Personas
+* https://megamitensei.fandom.com/wiki/List_of_Persona_3_FES_Personas
 * https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404
 
 ### Skill List
@@ -161,6 +193,11 @@
 * https://gamewith.jp/p5s/
 * https://h1g.jp/p5s/
 
+### Skill List
+* (C1): Combo Input #1 □□△△
+* (C2): Combo Input #2 □□□△
+* (C3): Combo Input #3 □□□□□△△
+
 ## <a name="pq"></a>[Persona Q: Shadow of the Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq)
 ### Data Sources
 * https://gamefaqs.gamespot.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70858
@@ -176,7 +213,7 @@
 ## <a name="mjn1"></a>[Majin Tensei](https://aqiu384.github.io/megaten-fusion-tool/mjn1)
 ### Data Sources
 * http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/majin/majin1/index.html
-* https://megamitensei.fandom.com/wiki/List\_of\_Majin\_Tensei\_Demons
+* https://megamitensei.fandom.com/wiki/List_of_Majin_Tensei_Demons
 
 ## <a name="mjn2"></a>[Majin Tensei II: Spiral Nemesis](https://aqiu384.github.io/megaten-fusion-tool/mjn2)
 ### Data Sources
@@ -216,7 +253,7 @@
 ### Data Sources
 * https://altema.jp/megaten/
 * https://d2-megaten-l.sega.com/en/
-* https://oceanxdds.github.io/dx2\_fusion/
+* https://oceanxdds.github.io/dx2_fusion/
 
 ### Skill List
 * (Ac): Archetype Common
