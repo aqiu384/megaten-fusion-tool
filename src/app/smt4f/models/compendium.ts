@@ -61,15 +61,6 @@ export class Compendium implements ICompendium {
         fusion:     json['fusion'] || 'normal',
         prereq:     json['prereq'] || ''
       }
-
-      if (demons[name].ailments) {
-        const ailLvls = demons[name].ailments;
-        for (let i = 0; i < ailLvls.length; i++) {
-          if (ailmentResists[ailLvls[i]]) {
-            ailmentResists[ailLvls[i]][i].learnedBy.push({ demon: name, level: 0 });
-          }
-        }
-      }
     }
 
     for (const [name, json] of Object.entries(this.compConfig.skillData)) {
@@ -131,13 +122,19 @@ export class Compendium implements ICompendium {
       inversions[demon.race][demon.lvl] = name;
     }
 
-    for (const demon of Object.values(demons)) {
+    for (const demon of Object.values(demons).sort((a, b) => a.lvl - b.lvl)) {
       if (demon.fusion !== 'enemy') {
         for (const name of Object.keys(demon.skills)) {
           skills[name].learnedBy.push({
             demon: demon.name,
             level: demon.skills[name]
           });
+        }
+
+        for (let i = 0; i < demon.ailments.length; i++) {
+          if (ailmentResists[demon.ailments[i]]) {
+            ailmentResists[demon.ailments[i]][i].learnedBy.push({ demon: demon.name, level: 0 });
+          }
         }
       }
     }

@@ -114,15 +114,6 @@ export class Compendium implements ICompendium {
             (attack.ailment ? ' - ' + attack.ailment : '');
         }
 
-        if (demons[name].ailments) {
-          const ailLvls = demons[name].ailments;
-          for (let i = 0; i < ailLvls.length; i++) {
-            if (ailmentResists[ailLvls[i]]) {
-              ailmentResists[ailLvls[i]][i].learnedBy.push({ demon: name, level: 0 });
-            }
-          }
-        }
-
         knownDemonCodes[json['code']] = name;
       }
     }
@@ -230,15 +221,21 @@ export class Compendium implements ICompendium {
       inversions[race] = {};
     }
 
-    for (const [name, demon] of Object.entries(demons)) {
-      inversions[demon.race][demon.lvl] = name;
+    for (const demon of Object.values(demons).sort((a, b) => a.lvl - b.lvl)) {
+      inversions[demon.race][demon.lvl] = demon.name;
 
       for (const [skill, lvl] of Object.entries(demon.skills)) {
-        skills[skill].learnedBy.push({ demon: name, level: lvl });
+        skills[skill].learnedBy.push({ demon: demon.name, level: lvl });
       }
 
       for (const [skill, lvl] of Object.entries(demon.source)) {
-        skills[skill].transfer.push({ demon: name, level: lvl });
+        skills[skill].transfer.push({ demon: demon.name, level: lvl });
+      }
+
+      for (let i = 0; i < demon.ailments.length; i++) {
+        if (ailmentResists[demon.ailments[i]]) {
+          ailmentResists[demon.ailments[i]][i].learnedBy.push({ demon: demon.name, level: 0 });
+        }
       }
     }
 

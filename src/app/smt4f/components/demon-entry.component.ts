@@ -44,7 +44,7 @@ import { FusionDataService } from '../fusion-data.service';
             <th>Level</th>
         </thead>
         <tbody>
-          <tr *ngFor="let data of skillLvls">
+          <tr *ngFor="let data of skillLvls" [ngClass]="{ unique: data.skill.rank > 90 }">
             <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
             <td>{{ data.skill.name + (data.lvl ? ' +' + data.lvl : '') }}</td>
             <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>

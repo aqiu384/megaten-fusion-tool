@@ -131,13 +131,13 @@ export class Compendium implements ICompendium {
       inverses[race] = {};
     }
 
-    for (const [name, demon] of Object.entries(demons)) {
+    for (const demon of Object.values(demons).sort((a, b) => a.lvl - b.lvl)) {
       if (demon.fusion !== 'party') {
-        inverses[demon.race][demon.lvl] = name;
+        inverses[demon.race][demon.lvl] = demon.name;
       }
 
       for (const [skill, level] of Object.entries(demon.skills)) {
-        skills[skill].learnedBy.push({ demon: name, level });
+        skills[skill].learnedBy.push({ demon: demon.name, level });
       }
     }
 

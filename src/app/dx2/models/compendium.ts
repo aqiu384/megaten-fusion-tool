@@ -108,15 +108,15 @@ export class Compendium implements ICompendium {
       inversions[race] = {};
     }
 
-    for (const [name, demon] of Object.entries(demons)) {
-      inversions[demon.race][demon.lvl] = name;
-      skills[demon.baseSkills[0].skill].transfer.push({ demon: name, level: 0 });
+    for (const demon of Object.values(demons).sort((a, b) => a.lvl - b.lvl)) {
+      inversions[demon.race][demon.lvl] = demon.name;
+      skills[demon.baseSkills[0].skill].transfer.push({ demon: demon.name, level: 0 });
 
       for (const { skill, source } of demon.baseSkills.slice(1)) {
         if (source > 3900) {
-          skills[skill].transfer.push({ demon: name, level: source });
+          skills[skill].transfer.push({ demon: demon.name, level: source });
         } else {
-          skills[skill].learnedBy.push({ demon: name, level: source });
+          skills[skill].learnedBy.push({ demon: demon.name, level: source });
         }
       }
     }

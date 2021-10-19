@@ -70,9 +70,9 @@ export class Compendium implements ICompendium {
       };
     }
 
-    for (const [name, demon] of Object.entries(demons)) {
+    for (const demon of Object.values(demons).sort((a, b) => a.lvl - b.lvl)) {
       for (const [skill, lvl] of Object.entries(demon.skills)) {
-        skills[skill].learnedBy.push({ demon: name, level: lvl });
+        skills[skill].learnedBy.push({ demon: demon.name, level: lvl });
       }
     }
 
