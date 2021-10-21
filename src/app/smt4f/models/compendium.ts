@@ -184,14 +184,16 @@ export class Compendium implements ICompendium {
     }
 
     for (const [names, included] of Object.entries(this._dlcDemons)) {
-      if (!included) {
-        for (const name of names.split(',')) {
+      for (const name of names.split(',')) {
+        if (!included) {
           const { race, lvl } = this.demons[name];
           delete demonEntries[name];
 
           ingredients[race] = ingredients[race].filter(l => l !== lvl);
           results[race] = results[race].filter(l => l !== lvl);
         }
+
+        this.demons[name].fusion = included ? 'normal' : 'excluded';
       }
     }
 

@@ -68,7 +68,8 @@ import { FusionDataService } from '../fusion-data.service';
         [baseUrl]="'..'"
         [rowData]="[demon.evolvesTo]">
       </app-fusion-entry-table>
-      <app-smt-fusions></app-smt-fusions>
+      <app-smt-fusions [excludedDlc]="demon.fusion === 'excluded'">
+      </app-smt-fusions>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">
     </app-demon-missing>
