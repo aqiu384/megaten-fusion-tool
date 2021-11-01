@@ -103,6 +103,11 @@
     "rank": 7,
     "target": "Single"
   },
+  "Attack": {
+    "effect": "Phys/Fire",
+    "element": "fir",
+    "target": "Single"
+  },
   "Attack All": {
     "effect": "Normal physical attacks will hit all enemies",
     "element": "pas",
@@ -544,7 +549,7 @@
   "Freikugel": {
     "cost": 17,
     "damage": "Severe (65)",
-    "effect": "Medium crit",
+    "effect": "Phys/Almighty, Medium crit",
     "element": "alm",
     "target": "Single"
   },
@@ -769,7 +774,7 @@
   },
   "Kamikaze": {
     "damage": "Severe (78)",
-    "effect": "Kills user instantly",
+    "effect": "Phys/Almighty, Kills user instantly",
     "element": "alm",
     "rank": 3,
     "target": "Single"
@@ -787,7 +792,7 @@
   },
   "Last Resort": {
     "damage": "Heavy (59)",
-    "effect": "No crit/always hit, kills user instantly",
+    "effect": "Phys/Almighty, No crit/always hit, kills user instantly",
     "element": "alm",
     "rank": 4,
     "target": "Universal"
@@ -888,7 +893,6 @@
   "Magma Axis": {
     "cost": 30,
     "damage": "Heavy (48)",
-    "effect": "Phys/Fire damage relative to Magic",
     "element": "fir",
     "target": "Single"
   },
@@ -1391,7 +1395,7 @@
   },
   "Sacrifice": {
     "damage": "Heavy (56)",
-    "effect": "Kills user instantly",
+    "effect": "Phys/Almighty, Kills user instantly",
     "element": "alm",
     "rank": 6,
     "target": "Random"

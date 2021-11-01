@@ -12,6 +12,11 @@
     "power": 80,
     "target": "All Foes"
   },
+  "6th Sense Survivor": {
+    "effect": "Endure, -50% crit rate received",
+    "elem": "pas",
+    "points": 14
+  },
   "Acid Breath": {
     "cost": 6,
     "effect": "Rakunda + Sukunda",
@@ -796,6 +801,10 @@
     "effect": "Phys pierce, Phys hit +20%, Casts Sukukaja + Sukunda when attacking first",
     "elem": "pas"
   },
+  "Dragon of Hesperia": {
+    "effect": "Null Mortal, Lydia Break + Tarunda + Rakunda for 2 turns when foe casts Lydia, Reduce all foes current HP by 30% (<1500) + TaRakunda + Sukunda when foe heals",
+    "elem": "pas"
+  },
   "Dragon Blade": {
     "cost": 7,
     "effect": "30% crit, Follow up with Heat Wave if attack hits",
@@ -1088,6 +1097,10 @@
     "power": 140,
     "target": "1 Foe"
   },
+  "Fecund Womb": {
+    "effect": "Ice Pierce, Null Bind, Revive random ally with 100% HP at end of turn, 3 uses",
+    "elem": "pas"
+  },
   "Final Opposition": {
     "effect": "Recover 15% HP + Might when user weakness struck",
     "elem": "pas"
@@ -1201,9 +1214,22 @@
     "power": 100,
     "target": "All Foes"
   },
+  "Freezing Gale": {
+    "cost": 6,
+    "effect": "4 hits, Nullifies revive effects",
+    "elem": "ice",
+    "power": 35,
+    "target": "All Foes"
+  },
   "Fruit of the Dead": {
     "effect": "Foes can only revive with 1 HP",
     "elem": "pas"
+  },
+  "Fury Raid": {
+    "cost": 7,
+    "effect": "Rakunda + Sukunda for 1 turn, Follow up with 120 piercing phys dmg with 30% crit, 50% Bind",
+    "elem": "sup",
+    "target": "All Foes"
   },
   "Gae Bulg": {
     "cost": 7,
@@ -1592,6 +1618,11 @@
     "effect": "Ice atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Ice Survivor": {
+    "effect": "Endure + Ice Boost",
+    "elem": "pas",
+    "points": 14
   },
   "Icy Rage": {
     "effect": "Ally Ice dmg +10%",
@@ -2779,6 +2810,11 @@
     "effect": "Phys dmg +15%",
     "elem": "pas",
     "points": 6
+  },
+  "Phys Debuff": {
+    "effect": "Phys dmg +15%, Ailment hit +15%",
+    "elem": "pas",
+    "points": 16
   },
   "Phys Pierce": {
     "effect": "Phys atks bypass Foe resists",
