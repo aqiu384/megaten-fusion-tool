@@ -15,6 +15,8 @@ declare const SMT5_DEMON_DATA: any;
 declare const SMT5_SKILL_DATA: any;
 declare const SMT5_AFFINITY_BONUSES: any;
 declare const SMT5_SPECIAL_RECIPES: any;
+declare const SMT5_FUSION_PREREQS: any;
+declare const SMT5_EVOLUTIONS: any;
 declare const SMT5_FUSION_CHART: any;
 declare const SMT5_ELEMENT_CHART: any;
 
@@ -46,6 +48,10 @@ for (const skill of Object.values(SMT5_SKILL_DATA)) {
   else { skill['rank'] = 1; }
 }
 
+for (const [name, prereq] of Object.entries(SMT5_FUSION_PREREQS)) {
+  SMT5_DEMON_DATA[name].prereq = prereq;
+}
+
 export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei V',
   races: COMP_CONFIG_JSON.races,
@@ -60,7 +66,7 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   affinityBonuses,
 
   demonData: SMT5_DEMON_DATA,
-  evolveData: {},
+  evolveData: SMT5_EVOLUTIONS,
   dlcDemons: COMP_CONFIG_JSON.dlcDemons,
   baseStats: COMP_CONFIG_JSON.baseStats,
   resistElems: COMP_CONFIG_JSON.resistElems,

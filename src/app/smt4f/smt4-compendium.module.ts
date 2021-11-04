@@ -1,5 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { SharedModule } from '../shared/shared.module';
 import { SharedCompendiumModule } from '../compendium/compendium.module';
@@ -15,6 +16,7 @@ import { FusionChartContainerComponent } from './components/fusion-chart.compone
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     SharedModule,
     SharedCompendiumModule,
     CompendiumRoutingModule
