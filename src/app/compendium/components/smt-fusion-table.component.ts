@@ -12,9 +12,10 @@ import { CurrentDemonService } from '../current-demon.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-fusion-pair-table
-      [title]="currentDemon + ' x Ingredient 2 = Result'"
-      [leftHeader]="'Ingredient 2'"
-      [rightHeader]="'Result'"
+      [langEn]="langEn"
+      [title]="currentDemon + (langEn ? ' x Ingredient 2 = Result' : ' x 悪魔2 = 悪魔R')"
+      [leftHeader]="langEn ? 'Ingredient 2' : '悪魔2'"
+      [rightHeader]="langEn ? 'Result' : '悪魔R'"
       [rowData]="fusionPairs">
     </app-fusion-pair-table>
   `
@@ -24,6 +25,7 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
   compendium: Compendium;
   fusionChart: FusionChart;
   currentDemon: string;
+  langEn = true;
   fusionPairs: FusionPair[] = [];
 
   subscriptions: Subscription[] = [];
@@ -67,6 +69,7 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
     if (this.compendium && this.fusionChart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
 
+      this.langEn = this.currentDemon.charCodeAt(0) < 256;
       this.fusionPairs = this.calculator
         .getFusions(this.currentDemon, this.compendium, this.fusionChart)
         .map(this.toFusionPair(this.currentDemon));

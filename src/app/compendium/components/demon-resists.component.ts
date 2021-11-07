@@ -25,12 +25,22 @@ import { ResistanceLevels } from '../constants';
       </thead>
       <tbody>
         <tr>
-          <td *ngFor="let resist of resists" class="resists {{ resist | reslvlToString }}">
-            {{ resist | reslvlToString }}
-          </td>
-          <td *ngFor="let resist of ailments" class="resists {{ resist | reslvlToString }}">
-            {{ resist | reslvlToString }}
-          </td>
+          <ng-container *ngIf="langEn">
+            <td *ngFor="let resist of resists" class="resists {{ resist | reslvlToString }}">
+              {{ resist | reslvlToString }}
+            </td>
+            <td *ngFor="let resist of ailments" class="resists {{ resist | reslvlToString }}">
+              {{ resist | reslvlToString }}
+            </td>
+          </ng-container>
+          <ng-container *ngIf="!langEn">
+            <td *ngFor="let resist of resists" class="resists {{ resist | reslvlToString }}">
+              {{ resist | reslvlToStringJa }}
+            </td>
+            <td *ngFor="let resist of ailments" class="resists {{ resist | reslvlToString }}">
+              {{ resist | reslvlToStringJa }}
+            </td>
+          </ng-container>
         </tr>
       </tbody>
     </table>

@@ -48,6 +48,7 @@ import {
   ElementAffinityToStringPipe,
   LvlToNumberPipe,
   ReslvlToStringPipe,
+  ReslvlToStringJaPipe,
   RoundInheritPercentPipe
 } from './pipes';
 
@@ -92,6 +93,7 @@ import {
     ElementAffinityToStringPipe,
     LvlToNumberPipe,
     ReslvlToStringPipe,
+    ReslvlToStringJaPipe,
     RoundInheritPercentPipe
   ],
   exports: [
@@ -125,6 +127,7 @@ import {
     ElementAffinityToStringPipe,
     LvlToNumberPipe,
     ReslvlToStringPipe,
+    ReslvlToStringJaPipe,
     RoundInheritPercentPipe
   ]
 })

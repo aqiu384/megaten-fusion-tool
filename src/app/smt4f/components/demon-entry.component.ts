@@ -36,15 +36,15 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-inherits>
       <table class="entry-table">
         <thead>
-          <tr><th colSpan="7" class="title">Learned Skills</th></tr>
-          <tr>
-            <th>Elem</th>
-            <th>Name</th>
-            <th>Cost</th>
-            <th>Effect</th>
-            <th>Target</th>
-            <th>Rank</th>
-            <th>Level</th>
+          <tr><th colSpan="7" class="title">{{ langEn ? 'Learned Skills' : '習得スキル' }}</th></tr>
+          <tr *ngIf="langEn">
+            <th>Elem</th><th>Name</th><th>Cost</th><th>Effect</th>
+            <th>Target</th><th>Rank</th><th>Level</th>
+          </tr>
+          <tr *ngIf="!langEn">
+            <th>属性</th><th>スキル名</th><th>消費</th><th>説明</th>
+            <th>範囲</th><th>ランク</th><th>Lvl</th>
+          </tr>
         </thead>
         <tbody>
           <tr *ngFor="let data of skillLvls" [ngClass]="{ unique: data.skill.rank > 90 }">
@@ -57,7 +57,7 @@ import { FusionDataService } from '../fusion-data.service';
             <td>{{ data.skill.level | skillLevelToString }}</td>
           </tr>
           <tr *ngIf="!skillLvls.length">
-            <td colSpan="7">No Learned Skills Found</td>
+            <td colSpan="7">{{ langEn ? 'No Learned Skills Found' : 'スキルなし' }}</td>
           <tr>
         </tbody>
       </table>
@@ -71,7 +71,7 @@ import { FusionDataService } from '../fusion-data.service';
         [baseUrl]="'..'"
         [rowData]="[demon.evolvesTo]">
       </app-fusion-entry-table>
-      <app-smt-fusions [excludedDlc]="demon.fusion === 'excluded'">
+      <app-smt-fusions [langEn]="langEn" [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">

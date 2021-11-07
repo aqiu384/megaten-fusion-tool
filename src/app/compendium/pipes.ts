@@ -57,6 +57,19 @@ export class ReslvlToStringPipe implements PipeTransform {
   }
 }
 
+@Pipe({ name: 'reslvlToStringJa' })
+export class ReslvlToStringJaPipe implements PipeTransform {
+  transform(value: number): string {
+    if (value < -1000) { return '吸'; }
+    if (value < 0) { return '反'; }
+    if (value === 0) { return '無'; }
+    if (value < 100) { return '強'; }
+    if (value < 1000) { return 'ー'; }
+    if (value < 2000) { return '弱'; }
+    return '?';
+  }
+}
+
 @Pipe({ name: 'roundInheritPercent' })
 export class RoundInheritPercentPipe implements PipeTransform {
   transform(value: number): number {

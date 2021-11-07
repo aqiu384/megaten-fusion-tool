@@ -31,13 +31,18 @@ export class Compendium implements ICompendium {
 
     const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(100);
     const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
+    const langEn = this.compConfig.lang !== 'ja';
+    const ailEffect = langEn ? 'Innate resistance' : '';
+    const ailTarget = langEn ? 'Self' : '自身';
+    const ailLvls = langEn ? { 1125: 'Weak ', 50: 'Resist ', 0: 'Null ' } : { 1125: '弱', 50: '強', 0: '無' };
 
-    for (const [lvl, prefix]  of Object.entries({ 1125: 'Weak', 50: 'Resist', 0: 'Null' })) {
+    for (const [lvl, prefix]  of Object.entries(ailLvls)) {
       for (const ail of this.compConfig.ailmentElems) {
         ailmentResists[lvl].push({
-          name:     prefix + ' ' + ail,
+          name:     prefix + ail,
           element:  'pas',
-          effect:   'Innate resistance',
+          effect:   ailEffect,
+          target:   ailTarget,
           cost:     0,
           rank:     99,
           learnedBy: [],
@@ -185,19 +190,17 @@ export class Compendium implements ICompendium {
 
     for (const [names, included] of Object.entries(this._dlcDemons)) {
       for (const ename of names.split(',')) {
-        const name = this.compConfig.engNames[ename] || ename;
-
-        if (!this.demons[name]) { continue; }
+        if (!this.demons[ename]) { continue; }
 
         if (!included) {
-          const { race, lvl } = this.demons[name];
-          delete demonEntries[name];
+          const { race, lvl } = this.demons[ename];
+          delete demonEntries[ename];
 
           ingredients[race] = ingredients[race].filter(l => l !== lvl);
           results[race] = results[race].filter(l => l !== lvl);
         }
 
-        this.demons[name].fusion = included ? 'normal' : 'excluded';
+        this.demons[ename].fusion = included ? 'normal' : 'excluded';
       }
     }
 

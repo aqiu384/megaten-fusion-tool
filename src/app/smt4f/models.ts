@@ -15,7 +15,7 @@ export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
   races: string[];
   engNames: { [ename: string]: string };
-  lang?: string;
+  lang: string;
 
   skillData;
   ailmentElems: string[];
@@ -24,10 +24,7 @@ export interface CompendiumConfig extends BaseComp {
   elemOrder: { [elem: string]: number };
   resistCodes: { [code: string]: number };
 
-  affinityBonuses: {
-    costs: number[][],
-    upgrades: number[][]
-  }
+  affinityBonuses: { costs: number[][], upgrades: number[][] };
 
   demonData;
   evolveData;

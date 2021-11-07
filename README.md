@@ -30,6 +30,7 @@ Fusion tool framework for Megami Tensei games.
 * [Shin Megami Tensei IV](https://aqiu384.github.io/megaten-fusion-tool/smt4)
 * [Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
 * [Shin Megami Tensei V (WIP)](https://aqiu384.github.io/megaten-fusion-tool/smt5)
+* [真・女神転生V (WIP)](https://aqiu384.github.io/megaten-fusion-tool/ja/smt5)
 * [Shin Megami Tensei: Devil Summoner](https://aqiu384.github.io/megaten-fusion-tool/dsum)
 * [Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh)
 * [Devil Summoner: Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)

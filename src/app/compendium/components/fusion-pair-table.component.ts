@@ -32,17 +32,17 @@ export class FusionPairTableRowComponent {
       <th colspan="7" class="title">{{ title }}</th>
     </tr>
     <tr>
-      <th rowSpan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Price</th>
+      <th rowSpan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">{{ langEn ? 'Price' : '価格' }}</th>
       <th colspan="3" [style.width.%]="45">{{ leftHeader }}</th>
       <th colspan="3" [style.width.%]="45">{{ rightHeader }}</th>
     </tr>
     <tr>
-      <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">Race</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">{{ langEn ? 'Race' : '種族' }}</th>
       <th [ngClass]="[ 'sortable', sortDirClass(3) ]" (click)="nextSortFunIndex(3)">Lvl</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(4) ]" (click)="nextSortFunIndex(4)">Name</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(5) ]" (click)="nextSortFunIndex(5)">Race</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(4) ]" (click)="nextSortFunIndex(4)">{{ langEn ? 'Name' : '悪魔名' }}</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(5) ]" (click)="nextSortFunIndex(5)">{{ langEn ? 'Race' : '種族' }}</th>
       <th [ngClass]="[ 'sortable', sortDirClass(6) ]" (click)="nextSortFunIndex(6)">Lvl</th>
-      <th [ngClass]="[ 'sortable', sortDirClass(7) ]" (click)="nextSortFunIndex(7)">Name</th>
+      <th [ngClass]="[ 'sortable', sortDirClass(7) ]" (click)="nextSortFunIndex(7)">{{ langEn ? 'Name' : '悪魔名' }}</th>
     </tr>
   `
 })
@@ -50,6 +50,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
   @Input() title;
   @Input() leftHeader;
   @Input() rightHeader;
+  @Input() langEn = true;
 }
 
 @Component({
@@ -61,6 +62,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
       <table appPositionSticky class="list-table">
         <tfoot #stickyHeader appColumnWidths
           class="app-fusion-pair-table-header"
+          [langEn]="langEn"
           [title]="title"
           [leftHeader]="leftHeader"
           [rightHeader]="rightHeader"
@@ -71,6 +73,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
       <table class="list-table">
         <tfoot #hiddenHeader appColumnWidths
           class="app-fusion-pair-table-header"
+          [langEn]="langEn"
           [title]="title"
           [leftHeader]="leftHeader"
           [rightHeader]="rightHeader"
@@ -78,7 +81,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
         </tfoot>
         <tbody>
           <tr *ngIf="!rowData.length">
-            <td colspan="7">No fusions found!</td>
+            <td colspan="7">{{ langEn ? 'No fusions found!' : '合体なし' }}</td>
           </tr>
           <tr *ngFor="let data of rowData.slice(0, currRow)"
             class="app-fusion-pair-table-row"
@@ -108,6 +111,7 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
   @Input() rightBaseUrl = '../..';
   @Input() initRow = 500;
   @Input() incrRow = 500;
+  @Input() langEn = true;
 
   sortFuns: ((f1: FusionPair, f2: FusionPair) => number)[] = [];
   currRow = this.initRow;

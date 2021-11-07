@@ -8,15 +8,17 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-dlc-settings
+      [langEn]="langEn"
       [dlcDemons]="dlcDemons"
       [appTitle]="appTitle"
-      [dlcTitle]="'Included DLC Demons'"
+      [dlcTitle]="langEn ? 'Included DLC Demons' : 'DLC'"
       (toggledName)="toggleName($event)">
     </app-demon-dlc-settings>
   `
 })
 export class DemonDlcSettingsContainerComponent extends DDSCC {
   appTitle: string;
+  langEn = true;
 
   constructor(
     private changeDetector: ChangeDetectorRef,
@@ -24,5 +26,6 @@ export class DemonDlcSettingsContainerComponent extends DDSCC {
   ) {
     super(changeDetector, fusionDataService);
     this.appTitle = fusionDataService.appName;
+    this.langEn = fusionDataService.compConfig.lang !== 'ja';
   }
 }

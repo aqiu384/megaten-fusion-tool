@@ -22,7 +22,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
           </tr>
           <tr *ngIf="excludedDlc">
             <th [attr.colspan]="fusionOptions.length" class="title">
-              DLC marked as excluded in fusion settings, results may be inaccurate!
+              {{ langEn ? 'DLC marked as excluded in fusion settings, results may be inaccurate!' : 'DLCなし' }}
             </th>
           <tr>
           <tr *ngIf="showFusionAlert">
@@ -35,9 +35,14 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
   `
 })
 export class SmtFusionsComponent implements OnInit, OnChanges {
-  static readonly NORMAL_FUSIONS = [
+  static readonly NORMAL_FUSIONS_EN = [
     { title: 'Reverse Fusions', link: 'fissions' },
     { title: 'Forward Fusions', link: 'fusions' }
+  ];
+
+  static readonly NORMAL_FUSIONS_JA = [
+    { title: '逆引き合体', link: 'fissions' },
+    { title: '2体合体', link: 'fusions' }
   ];
 
   static readonly TRIPLE_FUSIONS = [
@@ -51,12 +56,14 @@ export class SmtFusionsComponent implements OnInit, OnChanges {
   @Input() hasTripleFusion = false;
   @Input() showFusionAlert = false;
   @Input() excludedDlc = false;
-  fusionOptions = SmtFusionsComponent.NORMAL_FUSIONS;
+  @Input() langEn = true;
+  fusionOptions = SmtFusionsComponent.NORMAL_FUSIONS_EN;
 
   ngOnInit() {
     this.fusionOptions = this.hasTripleFusion ?
       SmtFusionsComponent.TRIPLE_FUSIONS :
-      SmtFusionsComponent.NORMAL_FUSIONS;
+      this.langEn ? SmtFusionsComponent.NORMAL_FUSIONS_EN :
+        SmtFusionsComponent.NORMAL_FUSIONS_JA;
   }
 
   ngOnChanges() {

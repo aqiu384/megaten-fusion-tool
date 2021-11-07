@@ -32,7 +32,7 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
         </thead>
       </table>
       <h4 *ngIf="loading" style="text-align: center;">
-        Loading fusion tool... Reopen in a private session if tool does not load.
+        {{ langEn ? 'Loading fusion tool... Reopen in a private session if tool does not load.' : 'Now Loading...' }}
       </h4>
       <ng-container *ngIf="!loading">
         <router-outlet></router-outlet>

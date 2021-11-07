@@ -19,9 +19,16 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
     <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
-    <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">
-      {{ resist | reslvlToString }}
-    </td>
+    <ng-container *ngIf="langEn">
+      <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">
+        {{ resist | reslvlToString }}
+      </td>
+    </ng-container>
+    <ng-container *ngIf="!langEn">
+      <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">
+        {{ resist | reslvlToStringJa }}
+      </td>
+    </ng-container>
     <ng-container *ngIf="hasAffinity">
       <td *ngFor="let affinity of data.affinities" class="affinity{{ affinity }}">
         {{ affinity | affinityToString }}
@@ -36,6 +43,7 @@ export class SmtDemonListRowComponent {
   @Input() hasCurrLvl = false;
   @Input() hasInherits = false;
   @Input() hasAffinity = false;
+  @Input() langEn = true;
   @Input() data: Demon;
   @Output() currLvl = new EventEmitter<number>();
 
@@ -96,6 +104,7 @@ export class SmtDemonListRowComponent {
           [hasCurrLvl]="hasCurrLvl"
           [hasInherits]="!!inheritOrder"
           [hasAffinity]="!!affinityHeaders"
+          [langEn]="langEn"
           [ngClass]="{
             special: data.fusion === 'special',
             exception: data.fusion !== 'special' && data.fusion !== 'normal'

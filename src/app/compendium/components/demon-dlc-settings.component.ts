@@ -29,11 +29,12 @@ import { Title } from '@angular/platform-browser';
 export class DemonDlcSettingsComponent {
   @Input() dlcDemons: { name: string, included: boolean }[];
   @Input() dlcTitle = 'Included DLC Demons';
+  @Input() langEn = true;
   @Output() toggledName = new EventEmitter<string>();
 
   constructor(private title: Title) { }
 
   @Input() set appTitle(appTitle: string) {
-    this.title.setTitle(`Fusion Settings - ${appTitle}`);
+    this.title.setTitle((this.langEn ? 'Fusion Settings - ' : '合体設定 ') + appTitle);
   }
 }

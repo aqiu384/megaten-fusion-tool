@@ -46,6 +46,7 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   @Input() tripTitle = '';
   @Input() isPersona = false;
   @Input() filterDarks = true;
+  @Input() langEn = true;
   @Input() counter: number;
 
   appName: string;
@@ -61,7 +62,9 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     this.subscriptions.push(
       this.route.parent.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
-        this.title2.setTitle(`Fusion Chart - ${this.appName} Fusion Calculator`);
+        this.title2.setTitle(this.langEn ?
+          `Fusion Chart - ${this.appName} Fusion Calculator` :
+          `合体表 ${this.appName} 合体アプリ`);
       }));
   }
 

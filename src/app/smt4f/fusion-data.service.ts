@@ -3,20 +3,12 @@ import { Observable, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
+import { translateCompConfig } from './models/translator';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 import { CompendiumConfig } from './models';
-import { ThisReceiver } from '@angular/compiler';
-
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
-  }
-  return result;
-}
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
@@ -33,8 +25,7 @@ export class FusionDataService implements IFusionDataService {
     'element-chart.js': null,
     'special-recipes.js': null,
     'affinity-bonuses.js': null,
-    'fusion-prereqs.js': null,
-    'evolutions.js': null
+    'fusion-prereqs.js': null
   }
 
   private _compendium: Compendium;
@@ -45,83 +36,32 @@ export class FusionDataService implements IFusionDataService {
   private _fusionChart$: BehaviorSubject<FusionChart>;
   fusionChart: Observable<FusionChart>;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, httpClient: HttpClient, router: Router) {
-    this.compConfig = compConfig;
-    this.compConfig.lang = router.url.includes('/ja/') ? 'ja' : 'en';
-    this.appName = compConfig.appTitle + ' Fusion Calculator';
+  constructor(@Inject(COMPENDIUM_CONFIG) config: CompendiumConfig, httpClient: HttpClient, router: Router) {
+    this.compConfig = !router.url.includes('/ja/') ? config : translateCompConfig(config);
+    this.appName =  this.compConfig.appTitle + (this.compConfig.lang !== 'ja' ? ' Fusion Calculator' : ' 合体アプリ');
 
-    const langEn = this.compConfig.lang !== 'ja';
-
-    if (!langEn) {
-      this.appName = '真・女神転生V' + ' 合体アプリ'
-    }
-
-    this._compendium = new Compendium(compConfig);
+    this._compendium = new Compendium(this.compConfig);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 
-    this._fusionChart = new FusionChart(compConfig);
+    this._fusionChart = new FusionChart(this.compConfig);
     this._fusionChart$ = new BehaviorSubject(this._fusionChart);
     this.fusionChart = this._fusionChart$.asObservable();
 
-    const settings = JSON.parse(localStorage.getItem(compConfig.settingsKey));
+    const settings = JSON.parse(localStorage.getItem(this.compConfig.settingsKey));
 
-    if (settings && settings.version && settings.version >= compConfig.settingsVersion) {
+    if (settings && settings.version && settings.version >= this.compConfig.settingsVersion) {
       this.nextDlcDemons(settings.dlcDemons);
     }
 
     window.addEventListener('storage', this.onStorageUpdated.bind(this));
 
-    if (this.compConfig.appTitle === 'Shin Megami Tensei V') {
-      for (const dataKey of Object.keys(this.smt5DataFiles)) {
-        httpClient.get(this.smt5DataBaseUrl + dataKey, { responseType: 'text' })
-          .subscribe(data => this.updateSmt5CompConfig(dataKey, JSON.parse(data.substring(data.indexOf('=') + 1))));
-      }
-    }
-  }
-
-  translateDemonData(oldDemons: any): any {
-    const newDemons = {};
-
-    for (const [dname, entry] of Object.entries(oldDemons)) {
-      const newSkills = {};
-      const jdname = this.compConfig.engNames[dname];
-
-      for (const [sname, lvl] of Object.entries(entry['skills'])) {
-        newSkills[sname + '0'] = lvl;
-      }
-
-      newDemons[jdname] = Object.assign({}, entry);
-      newDemons[jdname]['race'] = this.compConfig.engNames[entry['race']]
-      newDemons[jdname]['skills'] = newSkills;
-    }
-
-    return newDemons;
-  }
-
-  translateSkillData(oldSkills: any): any {
-    const newSkills = {};
-
-    for (const [sname, entry] of Object.entries(oldSkills)) {
-      newSkills[sname + '0'] = Object.assign({}, entry);
-    }
-
-    return newSkills;
-  }
-
-  translateFusionChart(oldChart: any): any {
-    return {
-      races: oldChart['races'].map(race => this.compConfig.engNames[race]),
-      table: oldChart['table'].map(row => row.map(race => this.compConfig.engNames[race]))
-    };
-  }
-
-  translateElementChart(oldChart: any): any {
-    return {
-      elems: oldChart['elems'].map(race => this.compConfig.engNames[race]),
-      races: oldChart['races'].map(race => this.compConfig.engNames[race]),
-      table: oldChart['table']
-    };
+    // if (this.compConfig.appCssClasses.includes('smt5')) {
+    //   for (const dataKey of Object.keys(this.smt5DataFiles)) {
+    //     httpClient.get(this.smt5DataBaseUrl + dataKey, { responseType: 'text' })
+    //       .subscribe(data => this.updateSmt5CompConfig(dataKey, JSON.parse(data.substring(data.indexOf('=') + 1))));
+    //   }
+    // }
   }
 
   updateSmt5CompConfig(dataKey: string, data: string) {
@@ -153,21 +93,26 @@ export class FusionDataService implements IFusionDataService {
       demons[name].prereq = prereq;
     }
 
-    this.compConfig.races = this.compConfig.races.map(race => this.compConfig.engNames[race]);
-    this.compConfig.raceOrder = getEnumOrder(this.compConfig.races);
-    this.compConfig.demonData = this.translateDemonData(this.smt5DataFiles['demon-data.js']);
-    this.compConfig.skillData = this.translateSkillData(this.smt5DataFiles['skill-data.js']);
-    this.compConfig.evolveData = this.smt5DataFiles['evolutions.js'];
-    this.compConfig.normalTable = this.translateFusionChart(this.smt5DataFiles['fusion-chart.js']);
-    this.compConfig.elementTable = this.translateElementChart(this.smt5DataFiles['element-chart.js']);
-    this.compConfig.specialRecipes = {}; // this.smt5DataFiles['special-recipes.js'];
+    this.compConfig.demonData = this.smt5DataFiles['demon-data.js'];
+    this.compConfig.skillData = this.smt5DataFiles['skill-data.js'];
+    this.compConfig.normalTable = this.smt5DataFiles['fusion-chart.js'];
+    this.compConfig.elementTable = this.smt5DataFiles['element-chart.js'];
+    this.compConfig.specialRecipes = this.smt5DataFiles['special-recipes.js'];
     this.compConfig.affinityBonuses = affinityBonuses;
+
+    this.compConfig = this.compConfig.lang !== 'ja' ? this.compConfig : translateCompConfig(this.compConfig);
 
     this._compendium = new Compendium(this.compConfig);
     this._compendium$.next(this._compendium);
 
     this._fusionChart = new FusionChart(this.compConfig);
     this._fusionChart$.next(this._fusionChart);
+
+    const settings = JSON.parse(localStorage.getItem(this.compConfig.settingsKey));
+
+    if (settings && settings.version && settings.version >= this.compConfig.settingsVersion) {
+      this.nextDlcDemons(settings.dlcDemons);
+    }
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) {

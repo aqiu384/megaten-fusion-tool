@@ -12,16 +12,19 @@ import { CurrentDemonService } from '../current-demon.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table *ngIf="fusionPrereq" class="list-table">
-      <thead><tr><th class="title">Special Fusion Condition</th></tr></thead>
+      <thead><tr><th class="title">{{ langEn ? 'Special Fusion Condition' : '合体条件' }}</th></tr></thead>
       <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
     </table>
     <app-fusion-entry-table *ngIf="fusionEntries.length"
-      [title]="'Special Fusion Ingredients for ' + currentDemon"
+      [title]="(langEn ? 'Special Fusion Ingredients for ' : '特殊合体 ') + currentDemon"
       [rowData]="fusionEntries"
       [isFusion]="true">
     </app-fusion-entry-table>
     <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionPrereq && !fusionEntries.length"
-      [title]="'Ingredient 1 x Ingredient 2 = ' + currentDemon"
+      [langEn]="langEn"
+      [title]="(langEn ? 'Ingredient 1 x Ingredient 2 = ' : '悪魔1 x 悪魔2 = ') + currentDemon"
+      [leftHeader]="langEn ? 'Ingredient 1' : '悪魔1'"
+      [rightHeader]="langEn ? 'Ingredient 2' : '悪魔2'"
       [rowData]="fusionPairs">
     </app-fusion-pair-table>
   `
@@ -32,6 +35,7 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
   fusionChart: FusionChart;
   currentDemon: string;
   fusionPrereq = '';
+  langEn = true;
   fusionEntries: FusionEntry[] = [];
   fusionPairs: FusionPair[] = [];
 
@@ -77,6 +81,7 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
     if (this.compendium && this.fusionChart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
 
+      this.langEn = this.currentDemon.charCodeAt(0) < 256;
       this.fusionPrereq = this.compendium
         .getDemon(this.currentDemon).prereq;
       this.fusionEntries = this.compendium
