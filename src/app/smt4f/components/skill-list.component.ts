@@ -10,6 +10,7 @@ import { CompendiumConfig } from '../models';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-skill-list
+      [langEn]="langEn"
       [elemOrder]="compConfig.elemOrder"
       [hasTarget]="true"
       [rowData]="skills | async">
@@ -18,6 +19,7 @@ import { CompendiumConfig } from '../models';
 })
 export class SkillListContainerComponent extends SLCC {
   compConfig: CompendiumConfig;
+  langEn: boolean;
 
   constructor(
     title: Title,
@@ -26,6 +28,10 @@ export class SkillListContainerComponent extends SLCC {
   ) {
     super(title, changeDetectorRef, fusionDataService);
     this.appName = `List of Skills - ${fusionDataService.appName}`;
+
+    this.compConfig = fusionDataService.compConfig;
+    this.langEn = this.compConfig.lang !== 'ja';
+    this.appName = (this.langEn ? 'List of Skills - ' : ' スキル一覧 ') + fusionDataService.appName;
 
     this.compConfig = fusionDataService.compConfig;
     this.defaultSortFun = (a, b) => (

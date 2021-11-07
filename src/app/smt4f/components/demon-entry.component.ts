@@ -15,18 +15,21 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <ng-container *ngIf="demon">
       <app-demon-stats
+        [langEn]="langEn"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats">
       </app-demon-stats>
       <app-demon-resists
+        [langEn]="langEn"
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists"
         [ailmentHeaders]="compConfig.ailmentElems"
         [ailments]="demon.ailments">
       </app-demon-resists>
       <app-demon-inherits *ngIf="demon.affinities"
+        [langEn]="langEn"
         [hasLvls]="true"
         [inheritHeaders]="compConfig.affinityElems"
         [inherits]="demon.affinities">
@@ -80,6 +83,7 @@ export class DemonEntryComponent {
   @Input() demon: Demon;
   @Input() compConfig: CompendiumConfig;
   @Input() compendium: Compendium;
+  @Input() langEn = true;
 
   skillLvls: { skill: Skill; cost: number; lvl: number, upgrade: number; }[] = [];
 
@@ -131,6 +135,7 @@ export class DemonEntryComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-entry
+      [langEn]="compConfig.lang !== 'ja'"
       [name]="name"
       [demon]="demon"
       [compConfig]="compConfig"

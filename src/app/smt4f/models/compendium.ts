@@ -184,7 +184,11 @@ export class Compendium implements ICompendium {
     }
 
     for (const [names, included] of Object.entries(this._dlcDemons)) {
-      for (const name of names.split(',')) {
+      for (const ename of names.split(',')) {
+        const name = this.compConfig.engNames[ename] || ename;
+
+        if (!this.demons[name]) { continue; }
+
         if (!included) {
           const { race, lvl } = this.demons[name];
           delete demonEntries[name];

@@ -18,17 +18,17 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             [routerLinkActiveOptions]="{ exact: true }"
             [style.width.%]="1 / hlength">
             <a [routerLink]="mainList + 's'">
-              {{ mainList.charAt(0).toUpperCase() + mainList.slice(1) }} List
+              {{ langEn ? mainList.charAt(0).toUpperCase() + mainList.slice(1) + ' List' : '悪魔一覧' }}
             </a>
           </th>
           <th class="nav" routerLink="skills" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="skills">
-              Skill List
+              {{ langEn ? 'Skill List' : 'スキル一覧' }}
             </a>
           </th>
           <th class="nav" routerLink="chart" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="chart">
-              Fusion Chart
+              {{ langEn ? 'Fusion Chart' : '合体表' }}
             </a>
           </th>
           <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active"
@@ -41,12 +41,12 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
           </th>
           <th *ngIf="hasSettings" class="nav" routerLink="settings" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="settings">
-              DLC Settings
+              {{ langEn ? 'DLC Settings' : 'DLC' }}
             </a>
           </th>
         </tr>
         <tr>
-          <th [attr.colspan]="hlength" class="title">{{ appName }} Fusion Calculator</th>
+          <th [attr.colspan]="hlength" class="title">{{ appName + (langEn ? ' Fusion Calculator' : ' 合体アプリ') }}</th>
         </tr>
       </thead>
     </table>
@@ -56,6 +56,7 @@ export class CompendiumHeaderComponent {
   @Input() appName = 'Shin Megami Tensei';
   @Input() mainList = 'demon';
   @Input() hasSettings = true;
+  @Input() langEn = true;
   @Input() otherLinks: { title: string; link: string }[] = [];
 }
 
@@ -71,6 +72,7 @@ export class CompendiumHeaderComponent {
           [appName]="appName"
           [mainList]="mainList"
           [hasSettings]="hasSettings"
+          [langEn]="langEn"
           [otherLinks]="otherLinks">
         </app-demon-compendium-header>
       </div>
@@ -79,6 +81,7 @@ export class CompendiumHeaderComponent {
           [appName]="appName"
           [mainList]="mainList"
           [hasSettings]="hasSettings"
+          [langEn]="langEn"
           [otherLinks]="otherLinks">
         </app-demon-compendium-header>
       </div>
@@ -89,6 +92,7 @@ export class CompendiumHeaderComponent {
 export class CompendiumComponent implements OnInit, OnDestroy {
   appName: string;
   isChart: boolean;
+  langEn: boolean;
   subscriptions: Subscription[] = [];
 
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
@@ -103,6 +107,7 @@ export class CompendiumComponent implements OnInit, OnDestroy {
       this.route.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
         this.isChart = data.fusionTool === 'chart';
+        this.langEn = data.lang !== 'ja';
       }));
 
     setTimeout(() => this.stickyTable.nextEdges());

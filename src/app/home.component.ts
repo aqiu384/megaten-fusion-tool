@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   template: `
@@ -13,7 +14,7 @@ import { Title } from '@angular/platform-browser';
   `
 })
 export class HomeComponent implements OnInit {
-  fusionTools = [
+  static readonly fusionToolsEn = [
     { game: 'Shin Megami Tensei', abbr: 'smt1' },
     { game: 'Shin Megami Tensei II', abbr: 'smt2' },
     { game: 'Shin Megami Tensei If...', abbr: 'smtif' },
@@ -50,9 +51,18 @@ export class HomeComponent implements OnInit {
     { game: 'Shin Megami Tensei: Liberation Dx2', abbr: 'dx2' },
   ]
 
-  constructor(private title: Title) { }
+  static readonly fusionToolsJp = [
+    { game: '真・女神転生V', abbr: 'smt5' }
+  ]
+
+  langEn = true;
+  fusionTools = HomeComponent.fusionToolsEn;
+
+  constructor(private title: Title, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.title.setTitle(`Megami Tensei Fusion Tools`);
+    this.langEn = this.route.snapshot.data.lang !== 'ja';
+    this.fusionTools = this.langEn ? HomeComponent.fusionToolsEn : HomeComponent.fusionToolsJp;
+    this.title.setTitle(this.langEn ? 'Megami Tensei Fusion Tools' : '女神転生合体アプリ');
   }
 }

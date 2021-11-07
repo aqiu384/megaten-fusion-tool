@@ -19,6 +19,7 @@ declare const SMT5_FUSION_PREREQS: any;
 declare const SMT5_EVOLUTIONS: any;
 declare const SMT5_FUSION_CHART: any;
 declare const SMT5_ELEMENT_CHART: any;
+declare const SMT5_JAP_NAMES: { [jname: string]: string };
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -31,6 +32,11 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
 const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
 const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
+const engNames: { [ename: string]: string } = {};
+
+for (const [jname, ename] of Object.entries(SMT5_JAP_NAMES)) {
+  engNames[ename] = jname;
+}
 
 for (const elem of affinityElems) {
   const bonusElem = SMT5_AFFINITY_BONUSES['elements'][elem];
@@ -58,6 +64,8 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   raceOrder: getEnumOrder(COMP_CONFIG_JSON.races),
   appCssClasses: ['smt4', 'smt5'],
 
+  lang: 'en',
+  engNames,
   affinityElems,
   skillData: SMT5_SKILL_DATA,
   skillElems,

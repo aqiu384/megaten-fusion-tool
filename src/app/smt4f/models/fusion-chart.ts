@@ -7,6 +7,29 @@ export class FusionChart extends SmtFusionChart {
   elementDemons: string[];
   races: string[];
 
+  static readonly LIGHT_RACES = [
+    'Herald', 'Megami', 'Avian', 'Tree',
+    'Deity', 'Avatar', 'Holy', 'Genma',
+    'Fury', 'Lady', 'Dragon', 'Kishin',
+    'Enigma', 'Geist', 'Entity',
+    'Amatsu', 'Kunitsu', 'Godly', 'Chaos',
+    '大天使', '女神', '霊鳥',
+    '魔神', '神獣', '聖獣', '幻魔',
+    '破壊神', '地母神', '龍神', '鬼神',
+    '天津神', '国津神'
+  ];
+
+  static readonly DARK_RACES = [
+    'Vile', 'Raptor', 'Wood',
+    'Reaper', 'Wilder', 'Jaki', 'Vermin',
+    'Tyrant', 'Drake', 'Spirit',
+    'Haunt', 'Ghost', 'Zealot',
+    '邪神', '凶鳥',
+    '妖獣', '邪鬼',
+    '魔王', '邪龍',
+    '幽鬼'
+  ];
+
   protected fissionChart: FissionTable;
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
@@ -28,5 +51,11 @@ export class FusionChart extends SmtFusionChart {
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
     this.races = races;
+  }
+
+  getLightDark(race: string): number {
+    if (FusionChart.LIGHT_RACES.indexOf(race) !== -1) { return 1; }
+    if (FusionChart.DARK_RACES.indexOf(race) !== -1) { return -1; }
+    return 0;
   }
 }

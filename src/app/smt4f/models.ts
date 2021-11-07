@@ -14,6 +14,8 @@ export interface Skill extends BaseSkill {
 export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
   races: string[];
+  engNames: { [ename: string]: string };
+  lang?: string;
 
   skillData;
   ailmentElems: string[];

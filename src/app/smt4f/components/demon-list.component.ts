@@ -10,6 +10,7 @@ import { CompendiumConfig } from '../models';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [langEn]="langEn"
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="compConfig.baseStats"
       [resistHeaders]="compConfig.resistElems"
@@ -20,6 +21,7 @@ import { CompendiumConfig } from '../models';
 })
 export class DemonListContainerComponent extends DLCC {
   compConfig: CompendiumConfig;
+  langEn: boolean;
 
   constructor(
     title: Title,
@@ -29,10 +31,12 @@ export class DemonListContainerComponent extends DLCC {
     super(title, changeDetectorRef, fusionDataService);
 
     this.compConfig = fusionDataService.compConfig;
+    this.langEn = this.compConfig.lang !== 'ja';
+    this.appName = (this.langEn ? 'List of Demons - ' : '悪魔一覧 ') + fusionDataService.appName;
+
     this.defaultSortFun = (d1, d2) => (
       this.compConfig.raceOrder[d1.race] -
       this.compConfig.raceOrder[d2.race]
     ) * 200 + d2.lvl - d1.lvl;
-    this.appName = `List of Demons - ${fusionDataService.appName}`;
   }
 }

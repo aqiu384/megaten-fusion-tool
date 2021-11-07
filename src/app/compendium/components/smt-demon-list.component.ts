@@ -68,6 +68,7 @@ export class SmtDemonListRowComponent {
         class="app-demon-list-header sticky-header"
         [isPersona]="isPersona"
         [isEnemy]="isEnemy"
+        [langEn]="langEn"
         [hasInherits]="!!inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
@@ -81,6 +82,7 @@ export class SmtDemonListRowComponent {
         class="app-demon-list-header"
         [isPersona]="isPersona"
         [isEnemy]="isEnemy"
+        [langEn]="langEn"
         [hasInherits]="!!inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
@@ -109,5 +111,6 @@ export class SmtDemonListComponent extends DemonListComponent<Demon> {
   @Input() isPersona = false;
   @Input() isEnemy = false;
   @Input() hasCurrLvl = false;
+  @Input() langEn = true;
   @Output() lvlChanged = new EventEmitter<{ demon: string, currLvl: number }>();
 }

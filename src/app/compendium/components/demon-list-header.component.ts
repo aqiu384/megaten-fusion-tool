@@ -6,16 +6,16 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ isPersona ? 'Persona' : 'Demon' }}</th>
-      <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">Stats</th>
-      <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">Resistances</th>
-      <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">Affinities</th>
+      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ langEn ? (isPersona ? 'Persona' : 'Demon') : '悪魔' }}</th>
+      <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">{{ langEn ? 'Stats' : 'ステータス' }}</th>
+      <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">{{ langEn ? 'Resistances' : '耐性' }}</th>
+      <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">{{ langEn ? 'Affinities' : 'スキル適正' }}</th>
       <th *ngIf="isEnemy" colspan="2">Enemy</th>
     </tr>
     <tr>
-      <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)">Race</th>
-      <th class="sortable" [ngClass]="sortDirClass(2)" (click)="nextSortFunIndex(2)">Lvl<span>--</span></th>
-      <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)">Name</th>
+      <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)"><span>{{ langEn ? 'Race' : '種族' }}</span></th>
+      <th class="sortable" [ngClass]="sortDirClass(2)" (click)="nextSortFunIndex(2)"><span>Lvl</span></th>
+      <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)"><span>{{ langEn ? 'Name' : '悪魔名' }}</span></th>
       <th *ngIf="hasInherits" class="sortable" [ngClass]="sortDirClass(4)" (click)="nextSortFunIndex(4)">Inherits</th>
       <th *ngFor="let pair of statColIndices" class="sortable" (click)="nextSortFunIndex(pair.index)">
         {{ pair.stat }}
@@ -35,15 +35,14 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
     </tr>
   `,
   styles: [`
-    span {
-      color: transparent;
-    }
+    span { padding-right: 0.5em }
   `]
 })
 export class DemonListHeaderComponent extends SortedTableHeaderComponent implements OnInit {
   @Input() isEnemy = false;
   @Input() isPersona = false;
   @Input() hasInherits = false;
+  @Input() langEn = true;
   @Input() statHeaders: string[] = [];
   @Input() resistHeaders: string[] = [];
   @Input() affinityHeaders: string[] = [];

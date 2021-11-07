@@ -23,7 +23,7 @@ import { FusionChart } from '../models';
     </table>
   `,
   styles: [`
-    table { width: auto; margin: 0 auto; }
+    table { width: auto; margin: 0 auto; white-space: nowrap; }
     td.elem { color: lime; }
     td.trip { color: lightgray; }
     td.ra-2 { color: orange; }

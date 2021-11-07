@@ -64,6 +64,7 @@ export class SmtSkillListRowComponent {
         [hasInherit]="!!inheritOrder"
         [hasTarget]="hasTarget"
         [hasRank]="hasRank"
+        [langEn]="langEn"
         [transferTitle]="transferTitle"
         [sortFunIndex]="sortFunIndex"
         (sortFunIndexChanged)="sortFunIndex = $event">
@@ -75,6 +76,7 @@ export class SmtSkillListRowComponent {
         [hasInherit]="!!inheritOrder"
         [hasTarget]="hasTarget"
         [hasRank]="hasRank"
+        [langEn]="langEn"
         [transferTitle]="transferTitle"
         [style.visibility]="'collapse'">
       </tfoot>
@@ -100,5 +102,6 @@ export class SmtSkillListComponent extends SkillListComponent<Skill> {
   @Input() hasTarget = false;
   @Input() hasRank = true;
   @Input() isPersona = false;
+  @Input() langEn = true;
   @Input() transferTitle = '';
 }

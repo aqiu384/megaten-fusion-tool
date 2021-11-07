@@ -7,10 +7,10 @@ import { ResistanceLevels } from '../constants';
   template: `
     <table *ngIf="resistHeaders.length" class="entry-table">
       <thead>
-        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length" class="title">{{ title }}</th></tr>
+        <tr><th [attr.colspan]="resistHeaders.length + ailmentHeaders.length" class="title">{{ langEn ? title : '耐性' }}</th></tr>
         <tr>
-          <th [attr.colSpan]="resistHeaders.length">Element</th>
-          <th *ngIf="ailmentHeaders.length" [attr.colSpan]="ailmentHeaders.length">Ailment</th>
+          <th [attr.colSpan]="resistHeaders.length">{{ langEn ? 'Element' : '属性' }}</th>
+          <th *ngIf="ailmentHeaders.length" [attr.colSpan]="ailmentHeaders.length">{{ langEn ? 'Ailment' : '状態異常' }}</th>
         </tr>
         <tr>
           <th *ngFor="let element of resistHeaders"
@@ -42,4 +42,5 @@ export class DemonResistsComponent {
   @Input() resists: number[] = [];
   @Input() ailmentHeaders: string[] = [];
   @Input() ailments: number[] = [];
+  @Input() langEn = true;
 }

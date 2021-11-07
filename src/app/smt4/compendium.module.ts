@@ -54,6 +54,8 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   raceOrder: getEnumOrder(COMP_CONFIG_JSON.races),
   appCssClasses: ['smt4', 'smt4f'],
 
+  lang: 'en',
+  engNames: {},
   affinityElems: [],
   skillData: SKILL_DATA_JSON,
   skillElems,

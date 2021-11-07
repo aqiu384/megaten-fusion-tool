@@ -10,11 +10,11 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
         <thead>
           <tr>
             <th [attr.colSpan]="stats.length + fusionHeaders.length + (inherit ? 1 : 0) + (price ? 1 : 0)" class="title">
-              {{ title.includes('Lvl') ? 'Stats' : title }}
+              {{ title.includes('Lvl') ? (langEn ? 'Stats' : 'ステータス') : title }}
             </th>
           </tr>
           <tr>
-            <th *ngIf="price">Price</th>
+            <th *ngIf="price">{{ langEn ? 'Price' : '価格' }}</th>
             <th *ngFor="let stat of statHeaders">{{ stat }}</th>
             <th *ngIf="inherit">Inherits</th>
             <th *ngFor="let fusion of fusionHeaders">{{ fusion }}</th>
@@ -39,4 +39,5 @@ export class DemonStatsComponent {
   @Input() fusionHeaders: string[] = [];
   @Input() inherit: string;
   @Input() price = 0;
+  @Input() langEn = true;
 }

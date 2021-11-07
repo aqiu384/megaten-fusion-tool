@@ -8,7 +8,9 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       <thead>
         <tr>
           <th *ngIf="!hasLvls" [attr.colspan]="inheritHeaders.length" class="title">Inheritable Skills</th>
-          <th *ngIf="hasLvls && inheritHeaders.length" [attr.colspan]="inheritHeaders.length" class="title">Skill Affinities</th>
+          <th *ngIf="hasLvls && inheritHeaders.length" [attr.colspan]="inheritHeaders.length" class="title">
+            {{ langEn ? 'Skill Affinities' : 'スキル適正' }}
+          </th>
         </tr>
         <tr>
           <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">
@@ -43,4 +45,5 @@ export class DemonInheritsComponent {
   @Input() hasChance = false;
   @Input() hasIcons = true;
   @Input() hasLvls = false;
+  @Input() langEn = true;
 }

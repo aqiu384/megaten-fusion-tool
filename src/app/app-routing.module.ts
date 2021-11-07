@@ -7,6 +7,20 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   {
+    path: 'ja',
+    data: { lang: 'ja' },
+    children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      {
+        path: 'smt5',
+        loadChildren: () => import('./smt5/compendium.module').then(m => m.CompendiumModule),
+        data: { appName: '真・女神転生V' }
+      },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' }
+    ]
+  },
+  {
     path: 'smt1',
     loadChildren: () => import('./smt1/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Shin Megami Tensei' }

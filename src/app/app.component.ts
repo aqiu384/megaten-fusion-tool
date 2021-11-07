@@ -8,21 +8,26 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
           <tr>
-            <th routerLink="home" class="nav" routerLinkActive="active" style="width: 25%;">
-              <a routerLink="home">All Games</a>
+            <th routerLink="home" class="nav" routerLinkActive="active" style="width: 20%;">
+              <a routerLink="home">All Games (EN)</a>
             </th>
-            <th class="nav external" style="width: 25%;">
-              <div><a href="https://aqiu384.github.io/docs-megaten/how-to-use#save-offline">Save Offline</a></div>
+            <th routerLink="ja/home" class="nav" routerLinkActive="active" style="width: 20%;">
+              <a routerLink="ja/home">ゲーム (日本語)</a>
             </th>
-            <th class="nav external" style="width: 25%;">
-              <div><a [href]="'https://aqiu384.github.io/docs-megaten/how-to-use#' + currentGame">Help</a></div>
+            <th class="nav external" style="width: 20%;">
+              <div><a href="https://aqiu384.github.io/docs-megaten/how-to-use#save-offline">{{ langEn ? 'Save Offline' : 'オフラインセーブ' }}</a></div>
             </th>
-            <th class="nav external" style="width: 25%;">
-              <div><a [href]="'https://github.com/aqiu384/' + (currentGame === 'smt5' ? 'smt5-data' : 'megaten-fusion-tool') + '/issues'">Report Issue</a></div>
+            <th class="nav external" style="width: 20%;">
+              <div><a [href]="'https://aqiu384.github.io/docs-megaten/how-to-use#' + currentGame">{{ langEn ? 'Help' : 'ヘルプ' }}</a></div>
+            </th>
+            <th class="nav external" style="width: 20%;">
+              <div><a [href]="'https://github.com/aqiu384/' + (currentGame === 'smt5' ? 'smt5-data' : 'megaten-fusion-tool') + '/issues'">
+                {{ langEn ? 'Report Issue' : 'バグレポート' }}
+              </a></div>
             </th>
           </tr>
           <tr>
-            <th colspan="4" class="title">Megami Tensei Fusion Tools</th>
+            <th colspan="5" class="title">{{ langEn ? 'Megami Tensei Fusion Tools' : '女神転生合体アプリ' }}</th>
           </tr>
         </thead>
       </table>
@@ -50,6 +55,7 @@ export class AppComponent implements OnInit {
     dso: 'ds1', ds2br: 'ds2'
   };
 
+  langEn = true;
   currentGame = 'none';
   loading = false;
 
@@ -64,8 +70,9 @@ export class AppComponent implements OnInit {
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
       this.loading = false;
-      const currentGame = event.url.split('/')[1];
+      const currentGame = event.url.replace('/ja/', '/').split('/')[1];
       this.currentGame = AppComponent.GAME_PREFIXES[currentGame] || currentGame;
+      this.langEn = !event.url.includes('/ja/');
       window.scrollTo(0, 0);
     } else if (
       event instanceof NavigationCancel ||
