@@ -28,7 +28,8 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
     </tr>
   `,
   styles: [`
-    span { padding-right: 0.5em }
+    th { white-space: nowrap; }
+    span { padding-right: 0.6em; }
   `]
 })
 export class SkillListHeaderComponent extends SortedTableHeaderComponent implements OnInit {

@@ -10,15 +10,15 @@ import { FusionChart } from '../models';
   template: `
     <table>
       <tbody>
-        <tr><th class="title" [attr.colspan]="table[0].length">{{ appName }} - {{ normTitle }}</th></tr>
-        <tr><th *ngFor="let race of table[0]">{{ race.slice(0, 4) }}</th></tr>
+        <tr><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ normTitle }}</th></tr>
+        <tr><th *ngFor="let race of table[0]">{{ race.slice(0, nameCut) }}</th></tr>
         <tr *ngFor="let row of table.slice(1, table.length - 1)">
           <th>{{ row[0] }}</th>
-          <td *ngFor="let race of row.slice(1, row.length - 1)" [ngClass]="[race.slice(0, 4), race.slice(4, 8)]">{{ race.slice(4, 8) }}</td>
+          <td *ngFor="let race of row.slice(1, row.length - 1)" [ngClass]="race.slice(0, 4)">{{ race.slice(4, nameCut + 4) }}</td>
           <th>{{ row[row.length - 1] }}</th>
         </tr>
         <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, 4) }}</th></tr>
-        <tr *ngIf="tripTitle"><th class="title" [attr.colspan]="table[0].length">{{ appName }} - {{ tripTitle }}</th></tr>
+        <tr *ngIf="tripTitle"><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ tripTitle }}</th></tr>
       <tbody>
     </table>
   `,
@@ -26,16 +26,12 @@ import { FusionChart } from '../models';
     table { width: auto; margin: 0 auto; white-space: nowrap; }
     td.elem { color: lime; }
     td.trip { color: lightgray; }
-    td.ra-2 { color: orange; }
-    td.ra-1 { color: red; }
-    td.ran1 { color: lime; }
-    td.ran2 { color: cyan; }
-    td.None { color: transparent; }
-    td.Sala, td.Flae, td.Ara,  td.Fien { color: red; }
-    td.Undi, td.Aqua, td.Nigi, td.Enig { color: cyan; }
-    td.Sylp, td.Aero, td.Kusi, td.UMA  { color: lime; }
-    td.Gnom, td.Erth, td.Saki, td.Rand { color: orange; }
-    td.Empt { background-color: transparent; color: transparent; }
+    td.oran { color: orange; }
+    td.redd { color: red; }
+    td.gree { color: lime; }
+    td.blue { color: cyan; }
+    td.none { color: transparent; }
+    td.empt { background-color: transparent; color: transparent; }
   `]
 })
 export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
@@ -49,9 +45,17 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   @Input() langEn = true;
   @Input() counter: number;
 
+  static readonly RESULT_COLORS = Object.entries({
+    'oran': ['-2', 'Erthys', 'Gnome', 'Saki', 'Saki Mitama', 'Random', 'アーシーズ', 'サキミタマ'],
+    'redd': ['-1', 'Flaemis', 'Salamander', 'Ara ', 'Ara Mitama', 'Fiend', 'フレイミーズ', 'アラミタマ'],
+    'gree': ['1', 'Aeros', 'Sylph', 'Kusi', 'Kusi Mitama', 'UMA', 'エアロス', 'クシミタマ'],
+    'blue': ['2', 'Aquans', 'Undine', 'Nigi', 'Nigi Mitama', 'Enigma', 'アクアンズ', 'ニギミタマ']
+  });
+
   appName: string;
   subscriptions: Subscription[] = [];
   table: string[][] = [];
+  nameCut = 4;
 
   constructor(
     private title2: Title,
@@ -62,9 +66,8 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     this.subscriptions.push(
       this.route.parent.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
-        this.title2.setTitle(this.langEn ?
-          `Fusion Chart - ${this.appName} Fusion Calculator` :
-          `合体表 ${this.appName} 合体アプリ`);
+        this.nameCut = this.langEn ? 4 : 2;
+        this.title2.setTitle(this.langEn ? `Fusion Chart - ${this.appName} Fusion Calculator` : `合体表 ${this.appName} 合体アプリ`);
       }));
   }
 
@@ -81,8 +84,10 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   fillFusionChart() {
-    const noResult = 'None';
-    const emResult = 'Empt-';
+    const noResult = 'noneNone';
+    const emResult = 'empt-';
+    const colorLook = FusionChartComponent.RESULT_COLORS
+      .reduce((acc, [color, results]) => results.reduce((row, res) => { row[res] = color; return row }, acc), {});
 
     const elems = this.normChart.elementDemons;
     let lights = [];
@@ -131,14 +136,13 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
           const indexR = elems.indexOf(raceR);
           const indexT = elems.indexOf(raceT);
           const result = this.mitaTable[indexR][indexT - indexR - 1];
-          row[c + 1] = 'mita' + (result ? result : noResult);
+          row[c + 1] = result ? (colorLook[result] || 'norm') + result : noResult;
         } else if (isElemT && raceR) {
           const result = this.normChart.getElemFusions(raceT)[raceR];
-          const resstr = result ? result.toString() : '';
-          row[c + 1] = result ? (result > 0 ? 'ran' + resstr + '+' : 'ra' + resstr) + resstr : 'rank' + noResult;
+          row[c + 1] = result ? (colorLook[result] || 'rank') + (result > 0 ? '+' : '') + result.toString() : noResult;
         } else if (raceT && raceR) {
           const result = this.isPersona && raceT === raceR ? raceT : this.normChart.getRaceFusion(raceT, raceR);
-          row[c + 1] = (raceT === raceR ? 'elem' : 'norm') + (result ? result : noResult);
+          row[c + 1] = result ? (colorLook[result] || (raceT === raceR ? 'elem' : 'norm')) + result : noResult;
         }
       }
 
@@ -148,11 +152,10 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
 
           if (raceB && isElemL) {
             const result = this.tripChart.getElemFusions(raceL)[raceB];
-            const resstr = result ? result.toString() : '';
-            row[c + 1] = result ? (result > 0 ? 'ran' + resstr + '+' : 'ra' + resstr) + resstr: 'rank' + noResult;
+            row[c + 1] = result ? (colorLook[result] || 'rank') + (result > 0 ? '+' : '') + result.toString() : noResult;
           } else if (raceB && raceL) {
             const result = this.tripChart.getRaceFusion(raceB, raceL);
-            row[c + 1] = (raceB === raceL ? 'elem' : 'trip') + (result ? result : noResult);
+            row[c + 1] = result ? (colorLook[result] || (raceB === raceL ? 'elem' : 'trip')) + result : noResult;
           }
         }
       }
