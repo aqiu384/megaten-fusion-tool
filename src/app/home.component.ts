@@ -52,6 +52,8 @@ export class HomeComponent implements OnInit {
   ]
 
   static readonly FUSION_TOOLS_JP = [
+    { game: '真・女神転生IV', abbr: 'smt4' },
+    { game: '真・女神転生IV FINAL', abbr: 'smt4f' },
     { game: '真・女神転生V', abbr: 'smt5' }
   ]
 

@@ -13,6 +13,16 @@ const appRoutes: Routes = [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       {
+        path: 'smt4',
+        loadChildren: () => import('./smt4/compendium.module').then(m => m.CompendiumModule),
+        data: { appName: '真・女神転生IV' }
+      },
+      {
+        path: 'smt4f',
+        loadChildren: () => import('./smt4f/compendium.module').then(m => m.CompendiumModule),
+        data: { appName: '真・女神転生IV FINAL' }
+      },
+      {
         path: 'smt5',
         loadChildren: () => import('./smt5/compendium.module').then(m => m.CompendiumModule),
         data: { appName: '真・女神転生V' }

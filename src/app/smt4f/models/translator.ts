@@ -20,7 +20,7 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     affinityBonuses: compConfig.affinityBonuses,
 
     demonData: translateDemonData(compConfig.demonData, engNames),
-    evolveData: {},
+    evolveData: translateEvolutions(compConfig.evolveData, engNames),
     dlcDemons: compConfig.dlcDemons.map(dlist => dlist.split(',').map(d => engNames[d] || d).join(',')),
     baseStats: compConfig.baseStats.map(s => engNames[s] || s),
     resistElems: compConfig.resistElems,
@@ -75,6 +75,19 @@ function translateSpecialRecipes(oldRecipes: { [name: string]: string[] }, engNa
   }
 
   return newRecipes;
+}
+
+function translateEvolutions(oldEvolves: any, engNames: { [name: string]: string }): any {
+  const newEvolves = {};
+
+  for (const [dname, recipe] of Object.entries(oldEvolves)) {
+    newEvolves[engNames[dname] || dname] = {
+      lvl: recipe['lvl'],
+      result: engNames[recipe['result']] || recipe['result']
+    };
+  }
+
+  return newEvolves;
 }
 
 function translateFusionChart(oldChart: any, engNames: { [name: string]: string }): any {

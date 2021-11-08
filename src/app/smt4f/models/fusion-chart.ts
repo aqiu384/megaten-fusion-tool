@@ -11,12 +11,13 @@ export class FusionChart extends SmtFusionChart {
     'Herald', 'Megami', 'Avian', 'Tree',
     'Deity', 'Avatar', 'Holy', 'Genma',
     'Fury', 'Lady', 'Dragon', 'Kishin',
-    'Enigma', 'Geist', 'Entity',
+    'Enigma', 'Entity',
     'Amatsu', 'Kunitsu', 'Godly', 'Chaos',
-    '大天使', '女神', '霊鳥',
+    '大天使', '女神', '霊鳥', '神樹',
     '魔神', '神獣', '聖獣', '幻魔',
     '破壊神', '地母神', '龍神', '鬼神',
-    '天津神', '国津神'
+    '秘神', '威霊',
+    '天津神', '国津神', '神霊', '混沌王',
   ];
 
   static readonly DARK_RACES = [
@@ -24,10 +25,10 @@ export class FusionChart extends SmtFusionChart {
     'Reaper', 'Wilder', 'Jaki', 'Vermin',
     'Tyrant', 'Drake', 'Spirit',
     'Haunt', 'Ghost', 'Zealot',
-    '邪神', '凶鳥',
-    '妖獣', '邪鬼',
-    '魔王', '邪龍',
-    '幽鬼'
+    '邪神', '凶鳥', '妖樹',
+    '死神', '妖獣', '邪鬼', '幽虫',
+    '魔王', '邪龍', '悪霊',
+    '幽鬼', '幽鬼', '狂神'
   ];
 
   protected fissionChart: FissionTable;

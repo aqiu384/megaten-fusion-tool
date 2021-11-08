@@ -17,7 +17,7 @@ import { FusionChart } from '../models';
           <td *ngFor="let race of row.slice(1, row.length - 1)" [ngClass]="race.slice(0, 4)">{{ race.slice(4, nameCut + 4) }}</td>
           <th>{{ row[row.length - 1] }}</th>
         </tr>
-        <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, 4) }}</th></tr>
+        <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, nameCut) }}</th></tr>
         <tr *ngIf="tripTitle"><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ tripTitle }}</th></tr>
       <tbody>
     </table>
@@ -46,10 +46,10 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   @Input() counter: number;
 
   static readonly RESULT_COLORS = Object.entries({
-    'oran': ['-2', 'Erthys', 'Gnome', 'Saki', 'Saki Mitama', 'Random', 'アーシーズ', 'サキミタマ'],
-    'redd': ['-1', 'Flaemis', 'Salamander', 'Ara ', 'Ara Mitama', 'Fiend', 'フレイミーズ', 'アラミタマ'],
-    'gree': ['1', 'Aeros', 'Sylph', 'Kusi', 'Kusi Mitama', 'UMA', 'エアロス', 'クシミタマ'],
-    'blue': ['2', 'Aquans', 'Undine', 'Nigi', 'Nigi Mitama', 'Enigma', 'アクアンズ', 'ニギミタマ']
+    'oran': ['-2', 'Erthys', 'Gnome', 'Saki', 'Saki Mitama', 'Random', 'アーシーズ', 'ノーム', 'サキミタマ'],
+    'redd': ['-1', 'Flaemis', 'Salamander', 'Ara ', 'Ara Mitama', 'Fiend', 'フレイミーズ', 'サラマンダー', 'アラミタマ'],
+    'gree': ['1', 'Aeros', 'Sylph', 'Kusi', 'Kusi Mitama', 'UMA', 'エアロス', 'シルキー', 'クシミタマ'],
+    'blue': ['2', 'Aquans', 'Undine', 'Nigi', 'Nigi Mitama', 'Enigma', 'アクアンズ', 'ウンディーネ', 'ニギミタマ']
   });
 
   appName: string;

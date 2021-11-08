@@ -16,6 +16,7 @@ import { CurrentDemonService } from '../current-demon.service';
       <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
     </table>
     <app-fusion-entry-table *ngIf="fusionEntries.length"
+      [langEn]="langEn"
       [title]="(langEn ? 'Special Fusion Ingredients for ' : '特殊合体 ') + currentDemon"
       [rowData]="fusionEntries"
       [isFusion]="true">

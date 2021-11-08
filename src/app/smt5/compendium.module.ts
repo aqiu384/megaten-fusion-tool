@@ -22,11 +22,7 @@ declare const SMT5_ELEMENT_CHART: any;
 declare const SMT5_JAP_NAMES: { [jname: string]: string };
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
-  }
-  return result;
+  return target.reduce((acc, t, i) => { acc[t] = i; return acc }, {});
 }
 
 const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);

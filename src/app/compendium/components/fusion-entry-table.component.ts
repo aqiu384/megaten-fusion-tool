@@ -8,15 +8,9 @@ import { FusionEntry } from '../models';
   template: `
     <table [ngClass]="isFusion ? 'list-table' : 'entry-table'">
       <thead>
-        <tr>
-          <th colspan="4" class="title">{{ title }}</th>
-        </tr>
-        <tr>
-          <th>Price</th>
-          <th>Race</th>
-          <th>Lvl</th>
-          <th>Name</th>
-        </tr>
+        <tr><th colspan="4" class="title">{{ title }}</th></tr>
+        <tr *ngIf="langEn"><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
+        <tr *ngIf="!langEn"><th>価格</th><th>種族</th><th>Lvl</th><th>悪魔名</th></tr>
       </thead>
       <tbody>
         <tr *ngFor="let data of rowData">
@@ -34,4 +28,5 @@ export class FusionEntryTableComponent {
   @Input() baseUrl = '../..';
   @Input() rowData: FusionEntry[];
   @Input() isFusion = false;
+  @Input() langEn = true;
 }

@@ -62,12 +62,14 @@ import { FusionDataService } from '../fusion-data.service';
         </tbody>
       </table>
       <app-fusion-entry-table *ngIf="demon.evolvesFrom"
-        [title]="'Evolves From'"
+        [title]="langEn ? 'Evolves From' : '変異から'"
+        [langEn]="langEn"
         [baseUrl]="'..'"
         [rowData]="[demon.evolvesFrom]">
       </app-fusion-entry-table>
       <app-fusion-entry-table *ngIf="demon.evolvesTo"
-        [title]="'Evolves To'"
+        [title]="langEn ? 'Evolves To' : '変異'"
+        [langEn]="langEn"
         [baseUrl]="'..'"
         [rowData]="[demon.evolvesTo]">
       </app-fusion-entry-table>

@@ -19,18 +19,20 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
+import JAP_NAMES_JSON from '../smt4/data/jap-names.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
-  }
-  return result;
+  return target.reduce((acc, t, i) => { acc[t] = i; return acc }, {});
 }
 
 const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
 const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
 const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
+const engNames: { [ename: string]: string } = {};
+
+for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
+  engNames[ename] = jname;
+}
 
 for (const [demon, entry] of Object.entries(ENEMY_DATA_JSON)) {
   entry['skills'] = entry['eskills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {});
@@ -58,7 +60,7 @@ export const SMT4F_COMPENDIUM_CONFIG: CompendiumConfig = {
   appCssClasses: ['smt4', 'smt4f'],
 
   lang: 'en',
-  engNames: {},
+  engNames,
   affinityElems,
   skillData: SKILL_DATA_JSON,
   skillElems,
