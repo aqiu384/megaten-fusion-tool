@@ -20,6 +20,7 @@ OUTFILE = INFILE.replace('docs/', '../aqiu384.github.io/docs-megaten/').replace(
 
 with open(INFILE) as mdfile:
     TITLE = mdfile.readline().replace('#', '').strip()
+with open(INFILE) as mdfile:
     lines = mdfile.read().replace('_', '\_')
 
 with open(OUTFILE, 'w+') as mdfile:

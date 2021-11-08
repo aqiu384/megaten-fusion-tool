@@ -191,7 +191,7 @@ export class DemonEntryContainerComponent {
 
   getDemonEntry() {
     if (this.compendium && this.name) {
-      this.title.setTitle(`${this.name} - ${this.appName}`);
+      this.title.setTitle(this.name + (this.compConfig.lang !== 'ja' ? ' - ' : ' ') + this.appName);
       this.demon = this.compendium.getDemon(this.name);
     }
   }

@@ -9,10 +9,10 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
         <thead>
           <tr>
             <th routerLink="home" class="nav" routerLinkActive="active" style="width: 20%;">
-              <a routerLink="home">All Games (EN)</a>
+              <a routerLink="home">Game List (EN)</a>
             </th>
             <th routerLink="ja/home" class="nav" routerLinkActive="active" style="width: 20%;">
-              <a routerLink="ja/home">ゲーム (日本語)</a>
+              <a routerLink="ja/home">ゲーム一覧 (日本語)</a>
             </th>
             <th class="nav external" style="width: 20%;">
               <div><a href="https://aqiu384.github.io/docs-megaten/how-to-use#save-offline">{{ langEn ? 'Save Offline' : 'オフラインセーブ' }}</a></div>

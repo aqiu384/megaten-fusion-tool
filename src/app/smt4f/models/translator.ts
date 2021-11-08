@@ -7,7 +7,7 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
   return {
     appTitle: engNames[compConfig.appTitle] || compConfig.appTitle,
     races,
-    raceOrder: getEnumOrder(races),
+    raceOrder: compConfig.raceOrder,
     appCssClasses: compConfig.appCssClasses,
 
     lang: 'ja',
@@ -33,10 +33,6 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     settingsKey: compConfig.settingsKey.replace('-ja', '') + '-ja',
     settingsVersion: compConfig.settingsVersion
   }
-}
-
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  return target.reduce((acc, val, i) => { acc[val] = i; return acc }, {});
 }
 
 function translateDemonData(oldDemons: any, engNames: { [name: string]: string }): any {
