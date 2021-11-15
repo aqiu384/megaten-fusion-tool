@@ -106,6 +106,41 @@
 | 2    | Cost -13% | Cost -20.5% | Cost -20.5% |
 | 1    | Cost -10% | Cost -16%   | Cost -15%   |
 
+### Unlocking Magatsuhi Skills with Talismans (Tm)
+* Herald: ???
+* Megami: ???
+* Avian: Find 30 Miman
+* Divine: Talk to Angel NPC in Container Yard
+* Yoma: Clear "Pollution Panic"
+* Vile: Clear "Magic from the East"
+* Raptor: Clear "Movin' on Up"
+* Deity: ???
+* Wargod: Clear "No Stone Unturned"
+* Avatar: Find 45 Miman
+* Holy: Find 55 Miman
+* Genma: Find 100 Miman
+* Element: Find 10 Miman
+* Fairy: Clear "The Root of the Problem"
+* Beast: Clear "A Wish for a Fish"
+* Jirae: Clear "Chakra Drop Chomp"
+* Fiend: Find 70 Miman
+* Jaki: Talk to Rakshasa NPC in Nagatacho
+* Wilder: Talk to Nue NPC in Container Yard
+* Fury: ???
+* Lady: ???
+* Dragon: Clear "The Gold Dragon's Arrival"
+* Kishin: Find 90 Miman
+* Kunitsu: ???
+* Femme: Clear "The Demon of the Spring"
+* Brute: Clear "Talisman Hunt"
+* Fallen: Clear "To Cure a Curse"
+* Night: Clear "Kumbhanda's Bottle"
+* Snake: ???
+* Tyrant: ???
+* Drake: Clear "The Ultimate Omelette"
+* Haunt: Clear "A Preta Predicament"
+* Foul: Talk to Slime NPC in Hamamatsucho
+
 ## <a name="dsum"></a>[Shin Megami Tensei: Devil Summoner](https://aqiu384.github.io/megaten-fusion-tool/dsum)
 ### Data Sources
 * https://gamefaqs.gamespot.com/psp/929271-shin-megami-tensei-devil-summoner/faqs/70850

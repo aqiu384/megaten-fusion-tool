@@ -11,12 +11,12 @@ export class FusionChart extends SmtFusionChart {
     'Herald', 'Megami', 'Avian', 'Tree',
     'Deity', 'Avatar', 'Holy', 'Genma',
     'Fury', 'Lady', 'Dragon', 'Kishin',
-    'Enigma', 'Entity',
+    'Enigma', 'Entity', 'Wargod',
     'Amatsu', 'Kunitsu', 'Godly', 'Chaos',
     '大天使', '女神', '霊鳥', '神樹',
     '魔神', '神獣', '聖獣', '幻魔',
     '破壊神', '地母神', '龍神', '鬼神',
-    '秘神', '威霊',
+    '秘神', '威霊', '軍神',
     '天津神', '国津神', '神霊', '混沌王',
   ];
 

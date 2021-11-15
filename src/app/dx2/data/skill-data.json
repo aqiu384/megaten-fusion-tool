@@ -1579,6 +1579,13 @@
     "power": 55,
     "target": "Rand Foes"
   },
+  "Iai Isshin": {
+    "cost": 6,
+    "effect": "Enters Charge afterwards",
+    "elem": "phy",
+    "power": 80,
+    "target": "All Foes"
+  },
   "Ice Age": {
     "cost": 7,
     "elem": "ice",
@@ -3131,6 +3138,10 @@
     "power": 200,
     "target": "1 Foe"
   },
+  "Ryujin Reflection": {
+    "effect": "-100% to crit hit rate received, Counters any phys attack on allies with 60 phys dmg 30% crit and Tarunda + Rakunda (2 turns) on all foes, Nullifies counter effects",
+    "elem": "pas"
+  },
   "Sadistic Blow": {
     "effect": "Crit dmg +15%, Dmg +10% when striking Foe weakness",
     "elem": "pas",
@@ -3418,6 +3429,10 @@
     "effect": "Phys Pierce, Might + Boost at beginning of turn, Boost 1 +20% phys hit, Boost 2 +20% phys dmg, Boost 3 Debilitate for 1 turn",
     "elem": "pas"
   },
+  "Sword Deity's Might": {
+    "effect": "Phys Pierce, Casts Might on all allies at beginning of turn, Allies in Might receive +10% to phys hit and crit dmg",
+    "elem": "pas"
+  },
   "Tachikoma Support": {
     "effect": "Battle Speed +75%, Rakunda + Sukunda for 2 turns when attacking first",
     "elem": "pas"
@@ -3468,6 +3483,14 @@
     "effect": "2-5 hits",
     "elem": "phy",
     "points": 7,
+    "power": 50,
+    "target": "Rand Foes"
+  },
+  "Tempest Slash+": {
+    "cost": 6,
+    "effect": "4-5 hits, Nullifies endure effects",
+    "elem": "phy",
+    "points": 14,
     "power": 50,
     "target": "Rand Foes"
   },
@@ -3818,6 +3841,10 @@
     "points": 6,
     "power": 140,
     "target": "1 Foe"
+  },
+  "Zealous Rebel": {
+    "effect": "HP +20%, 100% chance to counter with 80 phys dmg",
+    "elem": "pas"
   },
   "Zio": {
     "cost": 4,

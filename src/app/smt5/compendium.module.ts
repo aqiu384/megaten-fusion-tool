@@ -10,16 +10,14 @@ import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
-
-declare const SMT5_DEMON_DATA: any;
-declare const SMT5_SKILL_DATA: any;
-declare const SMT5_AFFINITY_BONUSES: any;
-declare const SMT5_SPECIAL_RECIPES: any;
-declare const SMT5_FUSION_PREREQS: any;
-declare const SMT5_EVOLUTIONS: any;
-declare const SMT5_FUSION_CHART: any;
-declare const SMT5_ELEMENT_CHART: any;
-declare const SMT5_JAP_NAMES: { [jname: string]: string };
+import DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
+import ELEMENT_CHART_JSON from './data/element-chart.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import AFFINITIES_JSON from './data/affinity-bonuses.json';
+import JAP_NAMES_JSON from './data/jap-names.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   return target.reduce((acc, t, i) => { acc[t] = i; return acc }, {});
@@ -30,28 +28,28 @@ const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
 const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
 const engNames: { [ename: string]: string } = {};
 
-for (const [jname, ename] of Object.entries(SMT5_JAP_NAMES)) {
+for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
   engNames[ename] = jname;
 }
 
 for (const elem of affinityElems) {
-  const bonusElem = SMT5_AFFINITY_BONUSES['elements'][elem];
-  affinityBonuses.costs.push(SMT5_AFFINITY_BONUSES['costs'][bonusElem]);
-  affinityBonuses.upgrades.push(SMT5_AFFINITY_BONUSES['upgrades'][bonusElem]);
+  const bonusElem = AFFINITIES_JSON['elements'][elem];
+  affinityBonuses.costs.push(AFFINITIES_JSON['costs'][bonusElem]);
+  affinityBonuses.upgrades.push(AFFINITIES_JSON['upgrades'][bonusElem]);
 }
 
-for (const demon of Object.values(SMT5_DEMON_DATA)) {
-  demon['price'] = demon['lvl'] * demon['lvl'];
+for (const demon of Object.values(DEMON_DATA_JSON)) {
+  demon['price'] = demon['lvl'] * demon['lvl'] * 5 + 1000;
 }
 
-for (const skill of Object.values(SMT5_SKILL_DATA)) {
+for (const skill of Object.values(SKILL_DATA_JSON)) {
   if (skill['rank']) { continue; }
   if (skill['cost']) { skill['rank'] = Math.ceil((skill['cost'] - 1000) / 5); }
   else { skill['rank'] = 1; }
 }
 
-for (const [name, prereq] of Object.entries(SMT5_FUSION_PREREQS)) {
-  SMT5_DEMON_DATA[name].prereq = prereq;
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name].prereq = prereq;
 }
 
 export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
@@ -63,25 +61,25 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   lang: 'en',
   engNames,
   affinityElems,
-  skillData: SMT5_SKILL_DATA,
+  skillData: SKILL_DATA_JSON,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
   affinityBonuses,
 
-  demonData: SMT5_DEMON_DATA,
-  evolveData: SMT5_EVOLUTIONS,
+  demonData: DEMON_DATA_JSON,
+  evolveData: {},
   dlcDemons: COMP_CONFIG_JSON.dlcDemons,
   baseStats: COMP_CONFIG_JSON.baseStats,
   resistElems: COMP_CONFIG_JSON.resistElems,
   ailmentElems: COMP_CONFIG_JSON.ailments,
 
-  normalTable: SMT5_FUSION_CHART,
-  elementTable: SMT5_ELEMENT_CHART,
-  specialRecipes: SMT5_SPECIAL_RECIPES,
+  normalTable: FUSION_CHART_JSON,
+  elementTable: ELEMENT_CHART_JSON,
+  specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'smt5-fusion-tool-settings',
-  settingsVersion: 1709211400
+  settingsVersion: 2111141400
 }
 
 @NgModule({

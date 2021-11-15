@@ -21,7 +21,7 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
               <div><a [href]="'https://aqiu384.github.io/docs-megaten/how-to-use#' + currentGame">{{ langEn ? 'Help' : 'ヘルプ' }}</a></div>
             </th>
             <th class="nav external" style="width: 20%;">
-              <div><a [href]="'https://github.com/aqiu384/' + (currentGame === 'smt5' ? 'smt5-data' : 'megaten-fusion-tool') + '/issues'">
+              <div><a href="https://github.com/aqiu384/megaten-fusion-tool/issues">
                 {{ langEn ? 'Report Issue' : 'バグレポート' }}
               </a></div>
             </th>
