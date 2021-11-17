@@ -75,7 +75,7 @@ export class Compendium implements ICompendium {
         rank:    json['rank'],
         effect:  json['effect'],
         damage:  json['damage'] || '',
-        target:  json['target'] || '',
+        target:  json['target'] || 'Self',
         hits:    json['hits'] || '',
         cost:    json['cost'] || 0,
         learnedBy: [],

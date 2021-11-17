@@ -1,9 +1,10 @@
 import { Compendium } from './compendium';
 import { FusionChart } from './fusion-chart';
+import { FusionRecipe } from '../models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../../compendium/constants';
 import { toFusionPair, toFusionPairResult } from '../../compendium/models/conversions';
 
-export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart) {
+export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart): FusionRecipe {
   const demonR = comp.getDemon(demon);
   const skillsR = comp.getSkills(skills).filter(s =>
     s.rank < 50 &&
@@ -34,29 +35,21 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
     .map(p => toFusionPair(p, comp))
     .sort((a, b) => a.price - b.price)
     .find(p =>
-      p.name1 !== 'Slime' && p.name2 !== 'Slime' &&
-      comp.getSpecialNameEntries(p.name1).length === 0 &&
-      comp.getSpecialNameEntries(p.name2).length === 0
+      SMT_NORMAL_FISSION_CALCULATOR.getFusions(p.name1, comp, chart).length > 0 &&
+      SMT_NORMAL_FISSION_CALCULATOR.getFusions(p.name2, comp, chart).length > 0
     )
 
-  const specR = comp.getSpecialNameEntries(demon);
-  let stepR = [];
+  const stepR = pairR ? [pairR.name1, pairR.name2] : comp.getSpecialNameEntries(demon);
+  const halfPoint = Math.ceil(ingreds.length / 2);
   let chain1 = [];
   let chain2 = [];
 
-  if (specR.length > 1 || pairR) {
-    stepR = specR.length > 1 ? specR : [pairR.name1, pairR.name2];
-    chain1 = createFusionFull(
-      ingreds.slice(0, Math.ceil(ingreds.length / 2)),
-      stepR[stepR.length - 2], comp, chart
-    );
-    chain2 = createFusionFull(
-      ingreds.slice(Math.ceil(ingreds.length / 2)),
-      stepR[stepR.length - 1], comp, chart
-    );
+  if (stepR.length > 1) {
+    chain1 = createFusionFull(ingreds.slice(0, halfPoint), stepR[stepR.length - 2], comp, chart);
+    chain2 = createFusionFull(ingreds.slice(halfPoint), stepR[stepR.length - 1], comp, chart);
   }
 
-  return { chain1, chain2, stepR, skills: skillRef };
+  return { chain1, chain2, stepR, skills: skillRef, result: demon };
 }
 
 function createFusionFull(ingreds: string[], result: string, comp: Compendium, chart: FusionChart): string[] {

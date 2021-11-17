@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { Demon, Skill, CompendiumConfig } from '../models';
+import { Demon, Skill, CompendiumConfig, FusionRecipe } from '../models';
 import { createSkillsRecipe } from '../models/recipe-generator';
 import { Compendium } from '../models/compendium';
 import { FusionChart } from '../models/fusion-chart';
@@ -20,7 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
         <tr>
           <th>Race</th>
           <th>Demon</th>
-          <th>Other</th>
+          <th>Skill Slots</th>
         </tr>
         <tr>
           <td>
@@ -38,7 +38,7 @@ import { FusionDataService } from '../fusion-data.service';
           </td>
         </tr>
       </table>
-      <table formArrayName="skills" class="list-table">
+      <table formArrayName="skills" class="entry-table">
         <tr><th colspan="6" class="title">Learned Skills</th></tr>
         <tr>
           <th style="width: 5%;">Elem</th>
@@ -72,13 +72,30 @@ import { FusionDataService } from '../fusion-data.service';
               <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
               <td>{{ entry.effect }}</td>
               <td>{{ entry.target }}</td>
-              <td>{{ entry.rank }}</td>
+              <td [style.color]="entry.rank !== 99 ? null: 'transparent'">{{ entry.rank }}</td>
             </ng-container>
           </tr>
         </ng-container>
       </table>
+      <table *ngIf="recipe" class="entry-table">
+        <tr><th colspan="2" class="title">Fusion Recipe</th></tr>
+        <tr><th>Left Chain</th><th>Right Chain</th></tr>
+        <tr>
+          <td style="width: 50%"><ul><li *ngFor="let step of recipeLeft">{{ step }}</li></ul></td>
+          <td style="width: 50%"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
+        </tr>
+        <tr><td colspan="2" style="padding: 1em; text-align: center;">
+          <ng-container *ngIf="recipe.stepR.length">
+            {{ recipe.stepR.join(' x ') }} = {{ recipe.result }}<br>
+            [{{ resultSkills.join(', ') }}]
+          </ng-container>
+          <ng-container *ngIf="!recipe.stepR.length">No recipes found</ng-container>
+        </td></tr>
+      </table>
+    </form>
   `,
   styles: [`
+    ul { padding: 0 1em; list-style: none; }
     td select { width: 100%; }
   `]
 })
@@ -93,6 +110,10 @@ export class RecipeGeneratorComponent implements OnChanges {
   demons: { [race: string]: Demon[] } = {};
   skills: { [elem: string]: Skill[] } = {};
   form: FormGroup;
+  recipe: FusionRecipe;
+  recipeLeft: string[];
+  recipeRight: string[];
+  resultSkills: string[];
 
   blankDemon: Demon = {
     name: '-', race: '-', lvl: 0, currLvl: 0, price: 0,
@@ -101,7 +122,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   };
 
   blankSkill: Skill = {
-    name: '-', element: '-', rank: 0, cost: 0,
+    name: '-', element: '-', rank: 99, cost: 0,
     effect: '', target: '', level: 0, learnedBy: []
   };
 
@@ -126,9 +147,42 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
         const dskills = form.skills.map(s => s.custom.name).filter(s => s !== '-');
-        const recipe = createSkillsRecipe(form.demon.name, dskills, this.compendium, this.fusionChart);
+        this.updateRecipe(createSkillsRecipe(form.demon.name, dskills, this.compendium, this.fusionChart));
       }
     });
+  }
+
+  updateRecipe(recipe: FusionRecipe) {
+    this.recipe = recipe;
+    this.recipeLeft = this.decodeRecipechain(recipe.chain1);
+    this.recipeRight = this.decodeRecipechain(recipe.chain2);
+    this.resultSkills = [];
+
+    for (const [skill, slvl] of Object.entries(this.compendium.getDemon(recipe.result).skills)
+      .filter(s => s[1] < 2000)
+      .sort((a, b) => a[1] - b[1])
+    ) {
+      this.resultSkills.push(skill + (slvl ? ` (${slvl})` : ''));
+    }
+  }
+
+  private decodeRecipechain(chain: string[]): string[] {
+    const skillRef = {};
+    const steps = [];
+
+    for (const [skill, demon] of Object.entries(this.recipe.skills)) {
+      if (!skillRef[demon]) { skillRef[demon] = []; }
+      const slvl = this.compendium.getDemon(demon).skills[skill];
+      skillRef[demon].push(skill + (slvl ? ` (${slvl})` : ''));
+    }
+
+    for (let i = 0; i < chain.length - 2; i += 2) {
+      const skills1 = skillRef[chain[i]] ? '[' + skillRef[chain[i]].join(', ') + '] ' : '';
+      const skills2 = skillRef[chain[i+1]] ? '[' + skillRef[chain[i+1]].join(', ') + '] ' : '';
+      steps.push(`${chain[i]} ${skills1}x ${chain[i+1]} ${skills2}= ${chain[i+2]}`);
+    }
+
+    return steps;
   }
 
   initDropdowns() {
