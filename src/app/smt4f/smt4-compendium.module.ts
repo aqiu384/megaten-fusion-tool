@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 
 import { SharedModule } from '../shared/shared.module';
 import { SharedCompendiumModule } from '../compendium/compendium.module';
@@ -12,12 +12,13 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
+import { RecipeGeneratorComponent, RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    HttpClientModule,
     SharedModule,
+    ReactiveFormsModule,
     SharedCompendiumModule,
     CompendiumRoutingModule
   ],
@@ -28,7 +29,9 @@ import { FusionChartContainerComponent } from './components/fusion-chart.compone
     DemonEntryComponent,
     DemonEntryContainerComponent,
     DemonDlcSettingsContainerComponent,
-    FusionChartContainerComponent
+    FusionChartContainerComponent,
+    RecipeGeneratorComponent,
+    RecipeGeneratorContainerComponent
   ],
   exports: [
     CompendiumComponent,
@@ -37,7 +40,9 @@ import { FusionChartContainerComponent } from './components/fusion-chart.compone
     DemonEntryComponent,
     DemonEntryContainerComponent,
     DemonDlcSettingsContainerComponent,
-    FusionChartContainerComponent
+    FusionChartContainerComponent,
+    RecipeGeneratorComponent,
+    RecipeGeneratorContainerComponent
   ],
 })
 export class Smt4CompendiumModule {
