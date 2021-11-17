@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
 import { Demon, Skill, CompendiumConfig } from '../models';
-import { splitBySkills } from '../models/recipe-generator';
+import { createSkillsRecipe } from '../models/recipe-generator';
 import { Compendium } from '../models/compendium';
 import { FusionChart } from '../models/fusion-chart';
 import { FusionDataService } from '../fusion-data.service';
@@ -126,7 +126,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
         const dskills = form.skills.map(s => s.custom.name).filter(s => s !== '-');
-        splitBySkills(form.demon.name, dskills, this.compendium, this.fusionChart);
+        const recipe = createSkillsRecipe(form.demon.name, dskills, this.compendium, this.fusionChart);
       }
     });
   }
