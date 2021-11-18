@@ -191,7 +191,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.demons = {};
     this.skills = { '-': [this.blankSkill] };
 
-    for (const demon of this.compendium.allDemons.filter(d => d.stats[0])) {
+    for (const demon of this.compendium.allDemons) {
       if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
       this.demons[demon.race].push(demon);
     }

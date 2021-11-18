@@ -200,7 +200,7 @@ export class Compendium implements ICompendium {
           results[race] = results[race].filter(l => l !== lvl);
         }
 
-        this.demons[ename].fusion = included ? 'normal' : 'excluded';
+        this.demons[ename].fusion = included ? 'special' : 'excluded';
       }
     }
 

@@ -151,7 +151,7 @@ function createFusionChain(ingreds: string[], comp: Compendium, chart: FusionCha
       if (pairA.name1 === ingredD) {
         chain.push(ingredD);
         chain.push(pairA.name2);
-        ingredA = pairA.name2;
+        ingredA = chain[chain.length - 1];
         foundPair = true;
         break;
       }
@@ -168,6 +168,7 @@ function createFusionChain(ingreds: string[], comp: Compendium, chart: FusionCha
         chain.push(pairA.name2);
         chain.push(ingredD);
         chain.push(lookupD[pairA.name2]);
+        ingredA = chain[chain.length - 1];
         foundPair = true;
         break;
       }
