@@ -6,29 +6,6 @@ import { toFusionPair, toFusionPairResult } from '../../compendium/models/conver
 
 export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart): FusionRecipe {
   const demonR = comp.getDemon(demon);
-  const skillsR = comp.getSkills(skills).filter(s =>
-    s.rank < 50 &&
-    s.learnedBy.length > 0 &&
-    !demonR.skills.hasOwnProperty(s.name)
-  );
-
-  const skillRef: { [skill: string]: string } = {};
-  const ingreds: string[] = [];
-
-  for (const skill of skillsR) {
-    const demons = skill.learnedBy.map(d => comp.getDemon(d.demon));
-    skillRef[skill.name] = demons.length > 1 ?
-      demons.find(d => Object.keys(chart.getRaceFusions(d.race)).length > 0 && d.fusion !== 'excluded').name :
-      demons[0].name;
-  }
-
-  for (const dname of Object.values(skillRef)) {
-    if (!ingreds.includes(dname)) {
-      ingreds.push(dname);
-    }
-  }
-
-  ingreds.sort((a, b) => chart.getLightDark(comp.getDemon(a).race) - chart.getLightDark(comp.getDemon(b).race));
 
   const pairR = SMT_NORMAL_FISSION_CALCULATOR
     .getFusions(demon, comp, chart)
@@ -40,6 +17,50 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
     )
 
   const stepR = pairR ? [pairR.name1, pairR.name2] : comp.getSpecialNameEntries(demon);
+  const specIngreds = stepR.map(i => comp.getDemon(i));
+
+  const skillRef: { [skill: string]: string } = {};
+  const skillInit: { [skill: string]: string } = {};
+  const skillsR = [];
+  const skillsI = comp.getSkills(skills).filter(s =>
+    s.rank < 50 &&
+    s.learnedBy.length > 0 &&
+    !demonR.skills.hasOwnProperty(s.name)
+  );
+
+  for (const skill of skillsI) {
+    let foundSkill = false;
+
+    for (const ingred of specIngreds) {
+      if (ingred.skills.hasOwnProperty(skill.name)) {
+        foundSkill = true;
+        skillInit[skill.name] = ingred.name;
+        break;
+      }
+    }
+
+    if (!foundSkill) {
+      skillsR.push(skill);
+    }
+  }
+
+  for (const skill of skillsR) {
+    const demons = skill.learnedBy.map(d => comp.getDemon(d.demon));
+    skillRef[skill.name] = demons.length > 1 ?
+      demons.find(d => Object.keys(chart.getRaceFusions(d.race)).length > 0 && d.fusion !== 'excluded').name :
+      demons[0].name;
+  }
+
+  const ingreds: string[] = [];
+
+  for (const dname of Object.values(skillRef)) {
+    if (!ingreds.includes(dname)) {
+      ingreds.push(dname);
+    }
+  }
+
+  ingreds.sort((a, b) => chart.getLightDark(comp.getDemon(a).race) - chart.getLightDark(comp.getDemon(b).race));
+
   const halfPoint = Math.ceil(ingreds.length / 2);
   let chain1 = [];
   let chain2 = [];
@@ -49,7 +70,7 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
     chain2 = createFusionFull(ingreds.slice(halfPoint), stepR[stepR.length - 1], comp, chart);
   }
 
-  return { chain1, chain2, stepR, skills: skillRef, result: demon };
+  return { chain1, chain2, stepR, skills: Object.assign(skillRef, skillInit), result: demon };
 }
 
 function createFusionFull(ingreds: string[], result: string, comp: Compendium, chart: FusionChart): string[] {
@@ -106,7 +127,7 @@ function createFusionPath(ingredA: string, ingredE: string, comp: Compendium, ch
 
   const pairsE = SMT_NORMAL_FISSION_CALCULATOR
     .getFusions(ingredE, comp, chart)
-    .map(p => toFusionPairResult(p, comp))
+    .map(p => toFusionPair(p, comp))
     .sort((a, b) => a.price - b.price);
 
   pairsA.sort((a, b) => b.price - a.price);

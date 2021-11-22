@@ -97,24 +97,34 @@
 * https://www.youtube.com/user/atlustube
 
 ### Skill Potentials
-| Rank | Attack    | Recovery    | Support     |
-| ---- | --------- | ----------- | ----------- |
-| 6    | Cost -28% |             |             |
-| 5    | Cost -25% | Cost -41%   | Cost -41%   |
-| 4    | Cost -19% | Cost -30%   | Cost -30%   |
-| 3    | Cost -16% | Cost -25%   | Cost -25%   |
-| 2    | Cost -13% | Cost -20.5% | Cost -20.5% |
-| 1    | Cost -10% | Cost -16%   | Cost -15%   |
+| Rank | Attack    | Support   |
+| ---- | --------- | ----------|
+| 9    | Cost -40% |           |
+| 8    | Cost -34% |           |
+| 7    | Cost -31% |           |
+| 6    | Cost -28% |           |
+| 5    | Cost -25% | Cost -40% |
+| 4    | Cost -19% | Cost -30% |
+| 3    | Cost -16% | Cost -25% |
+| 2    | Cost -13% | Cost -20% |
+| 1    | Cost -10% | Cost -15% |
+| -1   | Cost +10% | Cost +15% |
+| -2   | Cost +13% | Cost +30% |
+| -3   | Cost +16% | Cost +40% |
+| -4   | Cost +25% | Cost +50% |
+| -5   | Cost +34% |           |
+| -6   | Cost +40% |           |
+| -7   | Cost +46% |           |
 
 ### Unlocking Magatsuhi Skills with Talismans (Tm)
-* Herald: ???
-* Megami: ???
+* Herald: Clear "The Holy Ring"
+* Megami: Clear "The Horn of Plenty"
 * Avian: Find 30 Miman
 * Divine: Talk to Angel NPC in Container Yard
 * Yoma: Clear "Pollution Panic"
 * Vile: Clear "Magic from the East"
 * Raptor: Clear "Movin' on Up"
-* Deity: ???
+* Deity: Clear "The Bull God's Lineage"
 * Wargod: Clear "No Stone Unturned"
 * Avatar: Find 45 Miman
 * Holy: Find 55 Miman
@@ -126,17 +136,17 @@
 * Fiend: Find 70 Miman
 * Jaki: Talk to Rakshasa NPC in Nagatacho
 * Wilder: Talk to Nue NPC in Container Yard
-* Fury: ???
-* Lady: ???
+* Fury: Clear "The Destined Leader"
+* Lady: Clear "The Falcon's Head"
 * Dragon: Clear "The Gold Dragon's Arrival"
 * Kishin: Find 90 Miman
-* Kunitsu: ???
+* Kunitsu: Clear "Clash with the Kunitsukami"
 * Femme: Clear "The Demon of the Spring"
 * Brute: Clear "Talisman Hunt"
 * Fallen: Clear "To Cure a Curse"
 * Night: Clear "Kumbhanda's Bottle"
-* Snake: ???
-* Tyrant: ???
+* Snake: Talk to Yurlungur NPC in Chiyoda
+* Tyrant: Clear "The Winged Sun"
 * Drake: Clear "The Ultimate Omelette"
 * Haunt: Clear "A Preta Predicament"
 * Foul: Talk to Slime NPC in Hamamatsucho

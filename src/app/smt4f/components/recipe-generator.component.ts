@@ -86,7 +86,7 @@ import { FusionDataService } from '../fusion-data.service';
         </tr>
         <tr><td colspan="2" style="padding: 1em; text-align: center;">
           <ng-container *ngIf="recipe.stepR.length">
-            {{ recipe.stepR.join(' x ') }} = {{ recipe.result }}<br>
+            {{ recipeResult.join(' x ') }} = {{ recipe.result }}<br>
             [{{ resultSkills.join(', ') }}]
           </ng-container>
           <ng-container *ngIf="!recipe.stepR.length">No recipes found</ng-container>
@@ -113,6 +113,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   recipe: FusionRecipe;
   recipeLeft: string[];
   recipeRight: string[];
+  recipeResult: string[];
   resultSkills: string[];
 
   blankDemon: Demon = {
@@ -153,10 +154,23 @@ export class RecipeGeneratorComponent implements OnChanges {
   }
 
   updateRecipe(recipe: FusionRecipe) {
+    const skillRef: { [demon: string]: string[] } = {};
+
+    for (const [skill, demon] of Object.entries(recipe.skills)) {
+      if (!skillRef[demon]) { skillRef[demon] = []; }
+      const slvl = this.compendium.getDemon(demon).skills[skill];
+      skillRef[demon].push(skill + (slvl ? ` (${slvl})` : ''));
+    }
+
     this.recipe = recipe;
-    this.recipeLeft = this.decodeRecipechain(recipe.chain1);
-    this.recipeRight = this.decodeRecipechain(recipe.chain2);
+    this.recipeLeft = this.decodeRecipechain(recipe.chain1, skillRef);
+    this.recipeRight = this.decodeRecipechain(recipe.chain2, skillRef);
     this.resultSkills = [];
+    this.recipeResult = [];
+
+    for (const result of recipe.stepR) {
+      this.recipeResult.push(skillRef[result] ? `${result} [${skillRef[result].join(', ')}]` : result);
+    }
 
     for (const [skill, slvl] of Object.entries(this.compendium.getDemon(recipe.result).skills)
       .filter(s => s[1] < 2000)
@@ -166,15 +180,8 @@ export class RecipeGeneratorComponent implements OnChanges {
     }
   }
 
-  private decodeRecipechain(chain: string[]): string[] {
-    const skillRef = {};
+  private decodeRecipechain(chain: string[], skillRef: { [demon: string]: string[] } ): string[] {
     const steps = [];
-
-    for (const [skill, demon] of Object.entries(this.recipe.skills)) {
-      if (!skillRef[demon]) { skillRef[demon] = []; }
-      const slvl = this.compendium.getDemon(demon).skills[skill];
-      skillRef[demon].push(skill + (slvl ? ` (${slvl})` : ''));
-    }
 
     for (let i = 0; i < chain.length - 2; i += 2) {
       const skills1 = skillRef[chain[i]] ? '[' + skillRef[chain[i]].join(', ') + '] ' : '';

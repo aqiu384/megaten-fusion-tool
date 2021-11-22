@@ -326,7 +326,7 @@
   },
   "Dekajaon": {
     "cost": 2001,
-    "effect": "",
+    "effect": "Remove all buff effects",
     "element": "sup",
     "rank": 50,
     "target": "All foes"
@@ -513,9 +513,9 @@
     "rank": 50,
     "target": "All allies"
   },
-  "Expand Pierce": {
+  "Expand Piercing Aura": {
     "cost": 2001,
-    "effect": "",
+    "effect": "Raise dmg of next attack with pierce",
     "element": "sup",
     "rank": 50,
     "target": "All allies"
@@ -661,9 +661,9 @@
     "rank": 99,
     "target": "1 foe"
   },
-  "Godly Shield": {
+  "Shield of God": {
     "cost": 2001,
-    "effect": "",
+    "effect": "Greatly decreases dmg receive until next turn",
     "element": "sup",
     "rank": 50,
     "target": "All allies"
@@ -906,10 +906,9 @@
   },
   "Impaler's Glory": {
     "cost": 2001,
-    "effect": "Raise dmg of next attack with pierce",
+    "effect": "Greatly raise dmg of next attack with pierce",
     "element": "sup",
-    "rank": 50,
-    "target": "All allies"
+    "rank": 50
   },
   "Inspiring Leader": {
     "effect": "Increases exp gained when lvl lower than protag",
@@ -1435,9 +1434,9 @@
     "rank": 50,
     "target": "All allies"
   },
-  "Omagatoki Assault": {
+  "Omagatoki Charge": {
     "cost": 2001,
-    "effect": "",
+    "effect": "All charge effects extended until the next turn",
     "element": "sup",
     "rank": 50,
     "target": "All allies"
@@ -1459,13 +1458,6 @@
   "Omagatoki Free": {
     "cost": 2001,
     "effect": "All attacks will cost 1 MP for 1 turn",
-    "element": "sup",
-    "rank": 50,
-    "target": "All allies"
-  },
-  "Omagatoki Gathering": {
-    "cost": 2001,
-    "effect": "",
     "element": "sup",
     "rank": 50,
     "target": "All allies"
@@ -1494,6 +1486,13 @@
   "Omagatoki Potential": {
     "cost": 2001,
     "effect": "Maxes out skill potentials for 1 turn",
+    "element": "sup",
+    "rank": 50,
+    "target": "All allies"
+  },
+  "Omagatoki Savage": {
+    "cost": 2001,
+    "effect": "All skill dmg and costs doubled for 1 turn",
     "element": "sup",
     "rank": 50,
     "target": "All allies"
@@ -1671,13 +1670,6 @@
     "element": "sup",
     "rank": 99,
     "target": "1 ally"
-  },
-  "Rejuvenating Water": {
-    "cost": 2001,
-    "effect": "",
-    "element": "rec",
-    "rank": 50,
-    "target": "All allies"
   },
   "Repel Dark": {
     "effect": "Repels dark dmg",
@@ -2035,6 +2027,12 @@
     "element": "dar",
     "rank": 99,
     "target": "1 foe"
+  },
+  "Waters of Youth": {
+    "cost": 2001,
+    "effect": "Full recover HP and MP",
+    "element": "rec",
+    "rank": 50
   },
   "White Dracostrike": {
     "cost": 1030,
