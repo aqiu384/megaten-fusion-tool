@@ -251,6 +251,11 @@
     "points": 6,
     "target": "All Foes"
   },
+  "Barrier Survivor": {
+    "effect": "Endure, Barrier on self at start of 1st turn",
+    "elem": "pas",
+    "points": 14
+  },
   "Beloved Slash": {
     "cost": 6,
     "effect": "2 hits",
@@ -865,12 +870,12 @@
     "points": 20
   },
   "Duke of Hell": {
-    "effect": "Phys Pierce, Dmg dealt +5% for every ally weak resist (+35% max), Dmg received from single-target skills -10% for every ally weak resist (-70% max)",
+    "effect": "Phys Pierce, Dmg dealt +10% for every ally weak resist (+50% max), Dmg received -10% for every ally weak resist (-70% max)",
     "elem": "pas"
   },
   "Dynamic Evil Spear": {
-    "cost": 6,
-    "effect": "50% crit, scales with Patk, Revives all allies with 30% HP, 6 uses",
+    "cost": 5,
+    "effect": "80% crit, scales with Patk, Revives all allies with 30% HP, Ignores endure effects, 6 uses",
     "elem": "dar",
     "power": 150,
     "target": "1 foe"
@@ -1137,6 +1142,11 @@
     "effect": "Fire atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Fire Survivor": {
+    "effect": "Endure + Fire Boost",
+    "elem": "pas",
+    "points": 14
   },
   "Fire of Sinai": {
     "cost": 7,
@@ -2615,7 +2625,7 @@
   },
   "Noblewoman Aid": {
     "cost": 6,
-    "effect": "Rakukaja + Sukukaja for 1 turn, Add Tarunda + Sukunda for 1 turn on 2nd cast, Extends buffs to 3 turns on 3rd cast",
+    "effect": "Luster Candy for 1 turn, Add Debilitate for 1 turn on 2nd cast, Extends buffs to 3 turns on 3rd cast",
     "elem": "sup",
     "target": "All Allies"
   },
@@ -2724,7 +2734,7 @@
     "target": "All Foes"
   },
   "Omniscient Guidance": {
-    "effect": "Increments all Boost lvls by 1 at start of own turn",
+    "effect": "Dekaja, Dekunda, Increments all Boost lvls by 1 at start of own turn",
     "elem": "pas"
   },
   "Oni-Kagura": {
@@ -3142,6 +3152,13 @@
     "effect": "-100% to crit hit rate received, Counters any phys attack on allies with 60 phys dmg 30% crit and Tarunda + Rakunda (2 turns) on all foes, Nullifies counter effects",
     "elem": "pas"
   },
+  "Sacrificial Inferno": {
+    "cost": 6,
+    "effect": "Tarukaja for 2 turns, Nullifies endure effects",
+    "elem": "fir",
+    "power": 240,
+    "target": "1 Foe"
+  },
   "Sadistic Blow": {
     "effect": "Crit dmg +15%, Dmg +10% when striking Foe weakness",
     "elem": "pas",
@@ -3389,6 +3406,10 @@
     "elem": "fir",
     "power": 120,
     "target": "All Foes"
+  },
+  "Sun God's Majesty": {
+    "effect": "Fire Pierce, Fire Amp, Luster Candy at start of 1st turn, Reduce all foe HP by 30% current (<1500) and MP by 1 then cast Barrier on allies when foe recovers MP through a skill",
+    "elem": "pas"
   },
   "Superior Power": {
     "effect": "Phys pierce, Phys acc +30%",
