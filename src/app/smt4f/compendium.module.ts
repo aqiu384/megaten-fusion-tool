@@ -14,7 +14,7 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
-import ELEMENT_CHART_JSON from '../smt4/data/element-chart.json';
+import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';

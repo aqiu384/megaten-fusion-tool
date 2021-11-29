@@ -95,6 +95,7 @@
 ## <a name="smt5"></a>[Shin Megami Tensei V](https://aqiu384.github.io/megaten-fusion-tool/smt5)
 ### Data Sources
 * https://www.youtube.com/user/atlustube
+* https://hyperwiki.jp/smt5/
 
 ### Skill Potentials
 | Rank | Attack    | Support   |
