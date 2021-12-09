@@ -253,7 +253,7 @@
     "target": "All foes"
   },
   "Curse Siphon": {
-    "effect": "Low MP recovery when inflicting ailments",
+    "effect": "Recover 10 MP when inflicting an ailment",
     "element": "pas"
   },
   "Damascus Claw": {
@@ -675,7 +675,7 @@
     "target": "1 foe"
   },
   "Great Curse Siphon": {
-    "effect": "MP recovery when inflicting ailments",
+    "effect": "Recover 20 MP when inflicting an ailment",
     "element": "pas"
   },
   "Great Life Spring": {
@@ -1094,7 +1094,7 @@
   },
   "Makarakarn": {
     "cost": 1050,
-    "effect": "Repel next Ma-based attack",
+    "effect": "Repel next magic attack",
     "element": "sup",
     "target": "1 ally"
   },
@@ -1430,6 +1430,13 @@
   "Omagatoki Charge": {
     "cost": 2001,
     "effect": "All charge effects extended until the next turn",
+    "element": "sup",
+    "rank": 50,
+    "target": "All allies"
+  },
+  "Omagatoki Dance": {
+    "cost": 2001,
+    "effect": "All multi-hits will deal their max number of hits for 1 turn",
     "element": "sup",
     "rank": 50,
     "target": "All allies"
@@ -1942,7 +1949,7 @@
   },
   "Tetrakarn": {
     "cost": 1050,
-    "effect": "Repel next St-based attack",
+    "effect": "Repel next phys attack",
     "element": "sup",
     "target": "1 ally"
   },

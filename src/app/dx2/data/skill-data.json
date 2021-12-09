@@ -95,6 +95,11 @@
     "elem": "pas",
     "points": 6
   },
+  "Almighty Debuff": {
+    "effect": "Almighty Boost, Ailment hit +15%",
+    "elem": "pas",
+    "points": 14
+  },
   "Almighty Survivor": {
     "effect": "Endure + Almighty Boost",
     "elem": "pas",
@@ -128,6 +133,13 @@
   "Arcane Ritual": {
     "effect": "Ally ailment recovery rate +20%",
     "elem": "pas"
+  },
+  "Ark": {
+    "cost": 6,
+    "effect": "100% Bind, Nullifies revive effects",
+    "elem": "alm",
+    "power": 180,
+    "target": "1 Foe"
   },
   "Arms Mastery": {
     "effect": "Phys dmg +20%, Phys acc +20%",
@@ -1224,6 +1236,10 @@
     "power": 100,
     "target": "All Foes"
   },
+  "Fox Sin of Greed": {
+    "effect": "Null Mortal, Endure with 800 HP, Casts 5% curr HP fractional dmg (100 max) on all foes and drains 1 MP at beginning of turn",
+    "elem": "pas"
+  },
   "Freezing Gale": {
     "cost": 6,
     "effect": "4 hits, Nullifies revive effects",
@@ -1348,6 +1364,10 @@
   },
   "God's Word": {
     "effect": "Ally Elec and Light dmg +10%, Casts piercing Mahamaon + Sukukaja for 1 turn when 3 or more Divines/Heralds in party each turn",
+    "elem": "pas"
+  },
+  "Goddess Aid": {
+    "effect": "Healing +20%, Cures Mute, Bind, Poison, and Weak and heals 80 for all allies at beginning of turn",
     "elem": "pas"
   },
   "Goddess of Slaughter": {
@@ -2818,6 +2838,14 @@
     "effect": "Nullify Mortal prevention. At end of enemy phase, Reduce all Poisoned Foe HP by 50% max (<2000)",
     "elem": "pas"
   },
+  "Physical Hunt": {
+    "cost": 6,
+    "effect": "80% crit, Drains 50% dmg dealt and 3 MP",
+    "elem": "phy",
+    "points": 6,
+    "power": 180,
+    "target": "1 Foe"
+  },
   "Phys Amp": {
     "effect": "Phys dmg +25%",
     "elem": "pas",
@@ -3566,6 +3594,10 @@
     "effect": "Crit +25%, Phys hit +20%, Endure with 300 HP",
     "elem": "pas"
   },
+  "The Ten Commandments": {
+    "effect": "Phys Pierce, Crit +20%, Phys hit +20%, Phys costs -2 MP",
+    "elem": "pas"
+  },
   "Third Eye": {
     "cost": 8,
     "effect": "Can crit, Scales with Matk",
@@ -3645,6 +3677,10 @@
   },
   "Trickster": {
     "effect": "20% chance to preserve Press Turn when striking Foe weakness",
+    "elem": "pas"
+  },
+  "Trillion Dark": {
+    "effect": "Casts 10 hits of piercing 15 Dark dmg with 30% crit on one foe after the user casts a Phys skill, Nullifies counter effects",
     "elem": "pas"
   },
   "Trisagion": {
