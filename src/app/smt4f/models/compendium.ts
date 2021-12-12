@@ -56,7 +56,7 @@ export class Compendium implements ICompendium {
         name,
         race:       json['race'],
         lvl:        json['lvl'],
-        currLvl:    json['lvl'],
+        currLvl:    json['currLvl'] || json['lvl'],
         skills:     json['skills'],
         price:      json['price'] * 2,
         stats:      json['stats'],
@@ -127,7 +127,7 @@ export class Compendium implements ICompendium {
       inversions[demon.race][demon.lvl] = name;
     }
 
-    for (const demon of Object.values(demons).sort((a, b) => a.lvl - b.lvl)) {
+    for (const demon of Object.values(demons).sort((a, b) => a.currLvl - b.currLvl)) {
       if (demon.fusion !== 'enemy') {
         for (const name of Object.keys(demon.skills)) {
           skills[name].learnedBy.push({
