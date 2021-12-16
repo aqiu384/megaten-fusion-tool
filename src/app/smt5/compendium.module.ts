@@ -38,10 +38,6 @@ for (const elem of affinityElems) {
   affinityBonuses.upgrades.push(AFFINITIES_JSON['upgrades'][bonusElem]);
 }
 
-for (const demon of Object.values(DEMON_DATA_JSON)) {
-  demon['price'] = demon['lvl'] * demon['lvl'] * 5 + 1000;
-}
-
 for (const skill of Object.values(SKILL_DATA_JSON)) {
   if (skill['rank']) { continue; }
   if (skill['cost']) { skill['rank'] = Math.ceil((skill['cost'] - 1000) / 5); }
