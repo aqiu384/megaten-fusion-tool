@@ -35,7 +35,7 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
 
     const archCodes = [3367, 3365, 3380, 3389, 3369];
-    const gachCodes = [3965, 3980, 3989, 3969];
+    const gachCodes = [3965, 3980, 3989, 3969, 4478];
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       const stars = Math.floor(json.grade / 20) + 1;

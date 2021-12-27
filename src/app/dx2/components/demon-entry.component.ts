@@ -93,7 +93,7 @@ export class DemonEntryComponent implements OnChanges {
   resistanceHeaders = ResistanceElements;
   lvlCodes = {
     3367: 'Arch Com', 3365: 'Arch Ara', 3380: 'Arch Pro', 3389: 'Arch Psy', 3369: 'Arch Ele',
-    0: 'Innate', 3965: 'Gach Ara', 3980: 'Gach Pro', 3989: 'Gach Psy', 3969: 'Gach Ele'
+    0: 'Innate', 3965: 'Gach Ara', 3980: 'Gach Pro', 3989: 'Gach Psy', 3969: 'Gach Ele', 4478: 'Limit No'
   }
 
   ngOnChanges() {

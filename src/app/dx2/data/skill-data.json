@@ -1122,6 +1122,11 @@
     "effect": "Recover 15% HP + Might when user weakness struck",
     "elem": "pas"
   },
+  "Fire Accele": {
+    "effect": "+20% Battle Speed + Fire Boost",
+    "elem": "pas",
+    "points": 14
+  },
   "Fire Amp": {
     "effect": "Fire dmg +25%",
     "elem": "pas",
@@ -1534,6 +1539,13 @@
     "effect": "Phys Pierce, Cast 85 phys dmg with 50% crit on all foes when Foe passes, Nullifies counter effects",
     "elem": "pas"
   },
+  "Hell Blaze": {
+    "cost": 6,
+    "effect": "3 hits, Pierce, 30% crit, Nullifies counter effects, 3 hits of 30 fir dmg with 30% crit on all foes on 2nd cast, 80% crit for both on 3rd cast",
+    "elem": "fir",
+    "power": 50,
+    "target": "Rand Foes"
+  },
   "Hell Claw": {
     "cost": 5,
     "effect": "3 hits, 30% crit",
@@ -1547,6 +1559,10 @@
     "points": 12,
     "power": 180,
     "target": "1 Foe"
+  },
+  "Hell Hound": {
+    "effect": "Phys Pierce, Tarunda + Rakunda + Turn Icon +1 when foe skills removes a Turn Icon, 1 use", 
+    "elem": "pas"
   },
   "Hell Leopard": {
     "effect": "Phys hit +20%, Casts 40 piercing phys dmg with 30% crit on all foes then enters Might after casting Iron Fist",
@@ -2668,6 +2684,11 @@
     "effect": "Immune to Bind",
     "elem": "pas",
     "points": 12
+  },
+  "Null Bind Weak": {
+    "effect": "Immune to Bind and Weak",
+    "elem": "pas",
+    "points": 14
   },
   "Null Charm": {
     "effect": "Immune to Charm",
@@ -3900,7 +3921,8 @@
   },
   "Zealous Rebel": {
     "effect": "HP +20%, 100% chance to counter with 80 phys dmg",
-    "elem": "pas"
+    "elem": "pas",
+    "points": 14
   },
   "Zio": {
     "cost": 4,

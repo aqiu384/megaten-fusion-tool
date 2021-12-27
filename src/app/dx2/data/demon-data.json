@@ -36,7 +36,7 @@
     "arch": ["Magic Amp III", "Maragidyne", "Luster Candy", "Master Assassin", "Null Ice"],
     "base": ["Fire Survivor", "Sun God's Majesty", "Sacrificial Inferno"],
     "cnum": 301,
-    "gach": ["Fire Amp", "Debilitate", "Fire Enhancement", "Barrier Survivor"],
+    "gach": ["Fire Amp", "Debilitate", "Fire Enhancement", "Barrier Survivor", "Null Bind Weak"],
     "grade": 85,
     "race": "Fallen",
     "resists": "-dw---s",
@@ -689,6 +689,17 @@
     "race": "Beast",
     "resists": "-rw----",
     "stats": [985, 170, 150, 130, 152, 140]
+  },
+  "Cerberus A": {
+    "ai": "atk",
+    "arch": ["Strength Amp III", "Hades Blast", "Solar Prosperity", "Epitome of Finesse", "Null Ice"],
+    "base": ["Fire Amp", "Hell Hound", "Hell Blaze"],
+    "cnum": 0,
+    "gach": ["Epitome of Aggression", "Auto-Sukunda", "Fire Enhancement", "Fire Survivor", "Fire Accele"],
+    "grade": 81,
+    "race": "Beast",
+    "resists": "ndw----",
+    "stats": [1060, 201, 106, 147, 176, 157]
   },
   "Chagrin": {
     "ai": "sup",
