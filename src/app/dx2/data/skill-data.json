@@ -406,6 +406,13 @@
     "power": 170,
     "target": "1 Foe"
   },
+  "Boar Rush": {
+    "cost": 5,
+    "effect": "30% crit, Scales with 30% max HP, Nullifies endure effects",
+    "elem": "phy",
+    "power": 150,
+    "target": "1 Foe"
+  },
   "Bolt Storm": {
     "cost": 5,
     "effect": "2-4 hits",
@@ -502,6 +509,13 @@
     "power": 120,
     "target": "1 Foe"
   },
+  "Cleaving Aura": {
+    "cost": 6,
+    "effect": "30% crit, Removes 2 MP",
+    "elem": "phy",
+    "power": 120,
+    "target": "All Foes"
+  },
   "Cold World": {
     "cost": 7,
     "effect": "Rakunda",
@@ -519,6 +533,10 @@
     "effect": "50% chance to counter with 50 Phys dmg when receiving Phys dmg",
     "elem": "pas",
     "points": 6
+  },
+  "Crawling Chaos": {
+    "effect": "Force Pierce, Null Bind, Casts Gloom (Phys + Crit + Ail hit and eva -20%) on all foes for 3 turns on 1st turn, While alive Gloomed foes Mag atk and def -20%",
+    "elem": "pas"
   },
   "Cry of the Poor": {
     "effect": "When 2+ Vile/Jaki/Drakes alive: At end of own turn, reduce all Foe HP by 15% current (<300), 3+: 15% current (<300)",
@@ -1233,6 +1251,11 @@
     "elem": "pas",
     "points": 16
   },
+  "Force Survivor": {
+    "effect": "Endure + Force Boost",
+    "elem": "pas",
+    "points": 14
+  },
   "Foresight": {
     "cost": 9,
     "effect": "Sukukaja to Allies",
@@ -1379,6 +1402,11 @@
     "effect": "Phys Pierce, +20% dmg when in Might, Enters Might when a foe enters Might",
     "elem": "pas"
   },
+  "Goddess' Embrace": {
+    "cost": 7,
+    "effect": "Samarecarm + Barrier, 3 uses",
+    "elem": "rec"
+  },
   "Goddess' Fan": {
     "cost": 7,
     "effect": "Dekaja + Debilitate for 6 turns",
@@ -1416,6 +1444,11 @@
     "effect": "Phys acc +20%",
     "elem": "pas",
     "points": 16
+  },
+  "Great Idea": {
+    "effect": "All stats +20",
+    "elem": "pas",
+    "points": 14
   },
   "Great Chaos": {
     "cost": 7,
@@ -1519,6 +1552,11 @@
   "Hawk of Light": {
     "effect": "Phys Pierce, Phys eva +20%, Restores 3 MP and casts Tetrakarn + phys alm + Prayer when downing a Foe",
     "elem": "pas"
+  },
+  "Heal Survivor": {
+    "effect": "Endure + Recovery Boost",
+    "elem": "pas",
+    "points": 14
   },
   "Heat Wave": {
     "cost": 5,
@@ -1786,6 +1824,10 @@
     "effect": "Endure with 800 HP, Recovers 3 MP and casts Tarukaja + Rakunda when party attacks first, Casts Intimidating Stance + Rakukaja + Tarunda when foe attacks first",
     "elem": "pas"
   },
+  "King of Vengeance": {
+    "effect": "Phys Pierce, Create Bulwark of approx 3000 HP scaled by max HP and Null Mortal for 1 turn at start of enemy turn, Inflict 20% max HP frac dmg (<1000) and enter Might and Charge at end of enemy turn, 1 use",
+    "elem": "pas"
+  },
   "Kongo Zaou": {
     "effect": "Allies in Might gain Phys Pierce",
     "elem": "pas"
@@ -1882,6 +1924,20 @@
     "effect": "5 hits, 30% Bind",
     "elem": "ele",
     "power": 40,
+    "target": "1 Foe"
+  },
+  "Lionfall": {
+    "cost": 6,
+    "effect": "50% crit, Scales with 30% max HP, Nullifies endure effects",
+    "elem": "phy",
+    "power": 120,
+    "target": "All Foes"
+  },
+  "Lord Astaroth": {
+    "cost": 6,
+    "effect": "50% crit, Casts again afterwards, Nullifies counter endure and revive effects",
+    "elem": "phy",
+    "power": 125,
     "target": "1 Foe"
   },
   "Lord of Clouds": {
@@ -2298,6 +2354,10 @@
     "elem": "pas",
     "points": 24
   },
+  "Master of Hell": {
+    "effect": "Phys Pierce, Crit +100%, Battle Speed +50%, Press Turn +1 (1 use) Tarukaja + Sukukaja + Rakund + Sukunda for 1 turn when an ally dows a foe",
+    "elem": "pas"
+  },
   "Master Prankster": {
     "effect": "Casts Sexy Dance when Foe Poisoned",
     "elem": "pas"
@@ -2530,6 +2590,10 @@
     "power": 80,
     "target": "1 Foe"
   },
+  "Miracle of Fatima": {
+    "effect": "Removes null revive effects + Luster Candy for 1 turn + Heals 80 to all allies when ally or self downed, Samarecarm to all allies and end of enemy turn when ally downed (1 use)",
+    "elem": "pas"
+  },
   "Mist Slashes": {
     "cost": 6,
     "effect": "3-5 hits",
@@ -2745,6 +2809,11 @@
     "elem": "pas",
     "points": 12
   },
+  "Null Mute Curse": {
+    "effect": "Immune to Mute and Curse",
+    "elem": "pas",
+    "points": 14
+  },
   "Null Phys": {
     "effect": "Nullify Phys dmg",
     "elem": "pas",
@@ -2796,6 +2865,13 @@
     "elem": "rec",
     "power": 130,
     "target": "1 Ally"
+  },
+  "Otherworldly Force": {
+    "cost": 6,
+    "effect": "4 hits, Nullifies revive effects",
+    "elem": "for",
+    "power": 35,
+    "target": "All Foes"
   },
   "Ouas": {
     "cost": 6,
@@ -2866,6 +2942,11 @@
     "power": 180,
     "target": "1 Foe"
   },
+  "Phys Accele": {
+    "effect": "Battle Speed +20%, Phys Boost",
+    "elem": "pas",
+    "points": 14
+  },
   "Phys Amp": {
     "effect": "Phys dmg +25%",
     "elem": "pas",
@@ -2890,6 +2971,11 @@
     "effect": "Phys atks bypass Foe resists with 30% dmg",
     "elem": "pas",
     "points": 16
+  },
+  "Phys Slowda": {
+    "effect": "Battle Speed -20%, Phys Boost",
+    "elem": "pas",
+    "points": 14
   },
   "Phys Survivor": {
     "effect": "Endure + Phys Boost",
@@ -3412,6 +3498,10 @@
     "effect": "Endure, Phys eva +20%",
     "elem": "pas"
   },
+  "Stella Maris": {
+    "effect": "Max HP +50%, Nullifies ailments, Null Mortal, Allies recover 1 additional MP",
+    "elem": "pas"
+  },
   "Strength Amp I": {
     "effect": "Strength +5",
     "elem": "pas",
@@ -3835,6 +3925,11 @@
     "elem": "ail",
     "points": 7,
     "target": "Rand Foes"
+  },
+  "Wicked Strike": {
+    "effect": "Crit +20%, Crit dmg +20%",
+    "elem": "pas",
+    "points": 14
   },
   "Wild Guess": {
     "effect": "Crit rate of Dmg received -25%",
