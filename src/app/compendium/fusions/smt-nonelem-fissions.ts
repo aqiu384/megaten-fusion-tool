@@ -44,6 +44,47 @@ export function splitWithDiffRace(name: string, compendium: Compendium, fusionCh
   return recipes;
 }
 
+export function splitWithSpecies(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
+  const recipes: NamePair[] = [];
+
+  const { race: targetRace, lvl: targetLvl } = compendium.getDemon(name);
+  const twoSpecies = Object.keys(fusionChart.getRaceFissions(targetRace)).find(s => s.charAt(0) === '2');
+
+  if (!twoSpecies) { return recipes; }
+
+  const targetSpecies = twoSpecies.substring(1);
+  const resultLvls = compendium.getResultDemonLvls(targetSpecies);
+  const targetLvlIndex = resultLvls.indexOf(targetLvl);
+
+  if (targetLvlIndex === -1) { return recipes; }
+
+  const pr1ResultLvl = resultLvls[targetLvlIndex - 2] || 0;
+  const pr2ResultLvl = resultLvls[targetLvlIndex - 1] || 0;
+  const maxResultLvl = resultLvls[targetLvlIndex + 1] ? 2 * targetLvl : 200;
+
+  for (const [raceA, raceBs] of Object.entries(fusionChart.getRaceFissions(targetSpecies))) {
+    for (const lvlA of compendium.getIngredientDemonLvls(raceA).filter(lvl => lvl !== targetLvl)) {
+      for (const raceB of raceBs) {
+        for (const lvlB of compendium.getIngredientDemonLvls(raceB).filter(lvl => lvl !== targetLvl)) {
+          const minResultLvl = (lvlA === pr2ResultLvl || lvlB === pr2ResultLvl) ? pr1ResultLvl : pr2ResultLvl;
+          const resultLvl = lvlA + lvlB + fusionChart.lvlModifier;
+
+          console.log(raceA, lvlA, raceB, lvlB, minResultLvl, maxResultLvl)
+
+          if (2 * minResultLvl < resultLvl && resultLvl <= maxResultLvl) {
+            recipes.push({
+              name1: compendium.reverseLookupDemon(raceA, lvlA),
+              name2: compendium.reverseLookupDemon(raceB, lvlB)
+            });
+          }
+        }
+      }
+    }
+  }
+
+  return recipes;
+}
+
 export function splitWithElement(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
   const { race: targetRace, lvl: targetLvl } = compendium.getDemon(name);
   const recipes: NamePair[] = [];

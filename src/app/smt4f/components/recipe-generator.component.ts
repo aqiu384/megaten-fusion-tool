@@ -21,6 +21,7 @@ import { FusionDataService } from '../fusion-data.service';
           <th>Race</th>
           <th>Demon</th>
           <th>Skill Slots</th>
+          <th>Max Lvl</th>
         </tr>
         <tr>
           <td>
@@ -35,6 +36,11 @@ import { FusionDataService } from '../fusion-data.service';
           </td>
           <td>
             <label>Lock innate skills<input type="checkbox" formControlName="innateLocked" (change)="setDemon(form.controls.demon.value)"></label>
+          </td>
+          <td>
+            <select>
+              <option *ngFor="let _ of range99; let i = index" [value]="99 - i">{{ 99 - i }}</option>
+            </select>
           </td>
         </tr>
       </table>
@@ -105,6 +111,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   @Input() fusionChart: FusionChart;
   @Input() compConfig: CompendiumConfig;
 
+  range99 = Array(99);
   races: string[];
   elems: string[];
   demons: { [race: string]: Demon[] } = {};

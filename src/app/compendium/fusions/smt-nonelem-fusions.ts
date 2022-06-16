@@ -28,10 +28,19 @@ export function fuseWithDiffRace(name: string, compendium: Compendium, fusionCha
       const binB = findBin(lvlB, binsB);
 
       if (binB !== -1 && lvlsR[binB] !== 100 && (raceA != raceB || lvlA != lvlB)) {
-        recipes.push({
-          name1: compendium.reverseLookupDemon(raceB, lvlB),
-          name2: compendium.reverseLookupDemon(raceR, lvlsR[binB])
-        });
+        const nameR = compendium.reverseLookupDemon(raceR, lvlsR[binB]);
+
+        if (nameR === name && binB + 1 < lvlsR.length) {
+          recipes.push({
+            name1: compendium.reverseLookupDemon(raceB, lvlB),
+            name2: compendium.reverseLookupDemon(raceR, lvlsR[binB + 1])
+          });
+        } else {
+          recipes.push({
+            name1: compendium.reverseLookupDemon(raceB, lvlB),
+            name2: nameR
+          });
+        }
       }
     }
   }

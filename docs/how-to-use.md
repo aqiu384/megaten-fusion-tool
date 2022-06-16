@@ -98,24 +98,24 @@
 * https://hyperwiki.jp/smt5/
 
 ### Skill Potentials
-| Rank | Attack    | Support   |
-| ---- | --------- | ----------|
-| 9    | Cost -40% |           |
-| 8    | Cost -34% |           |
-| 7    | Cost -31% |           |
-| 6    | Cost -28% |           |
-| 5    | Cost -25% | Cost -40% |
-| 4    | Cost -19% | Cost -30% |
-| 3    | Cost -16% | Cost -25% |
-| 2    | Cost -13% | Cost -20% |
-| 1    | Cost -10% | Cost -15% |
-| -1   | Cost +10% | Cost +15% |
-| -2   | Cost +13% | Cost +30% |
-| -3   | Cost +16% | Cost +40% |
-| -4   | Cost +25% | Cost +50% |
-| -5   | Cost +34% |           |
-| -6   | Cost +40% |           |
-| -7   | Cost +46% |           |
+| Rank | Attack              | Ailment             | Recovery             | Support   |
+| ---- | ------------------- | ------------------- | -------------------- | --------- |
+| 9    | Dmg +55%, Cost -40% | Hit +60%, Cost -40% |                      |           |
+| 8    | Dmg +47%, Cost -34% | Hit +50%, Cost -34% |                      |           |
+| 7    | Dmg +43%, Cost -31% | Hit +45%, Cost -31% |                      |           |
+| 6    | Dmg +39%, Cost -28% | Hit +40%, Cost -28% |                      |           |
+| 5    | Dmg +35%, Cost -25% | Hit +35%, Cost -25% | Heal +40%, Cost -40% | Cost -40% |
+| 4    | Dmg +25%, Cost -19% | Hit +25%, Cost -19% | Heal +25%, Cost -30% | Cost -30% |
+| 3    | Dmg +20%, Cost -16% | Hit +20%, Cost -16% | Heal +20%, Cost -25% | Cost -25% |
+| 2    | Dmg +15%, Cost -13% | Hit +15%, Cost -13% | Heal +15%, Cost -20% | Cost -20% |
+| 1    | Dmg +10%, Cost -10% | Hit +10%, Cost -10% | Heal +10%, Cost -15% | Cost -15% |
+| -1   | Dmg -10%, Cost +10% | Hit -10%, Cost +10% | Heal -10%, Cost +15% | Cost +15% |
+| -2   | Dmg -15%, Cost +13% | Hit -15%, Cost +13% | Heal -15%, Cost +30% | Cost +30% |
+| -3   | Dmg -20%, Cost +16% | Hit -20%, Cost +16% | Heal -20%, Cost +40% | Cost +40% |
+| -4   | Dmg -25%, Cost +25% | Hit -25%, Cost +25% | Heal -25%, Cost +50% | Cost +50% |
+| -5   | Dmg -35%, Cost +34% | Hit -35%, Cost +34% |                      |           |
+| -6   | Dmg -39%, Cost +40% | Hit -40%, Cost +40% |                      |           |
+| -7   | Dmg -43%, Cost +46% | Hit -45%, Cost +46% |                      |           |
 
 ### Unlocking Magatsuhi Skills with Talismans (Tm)
 * Herald: Clear "The Holy Ring"

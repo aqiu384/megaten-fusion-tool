@@ -4,7 +4,7 @@ import { CompendiumConfig, FusionDataService, FusionTrioService } from './models
 import { NormalFusionCalculator } from './models/normal-fusion-calculator';
 import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement } from './fusions/smt-nonelem-fusions';
 import { fuseWithNormResult, fuseWithSpecResult, fuseTwoElements } from './fusions/smt-element-fusions';
-import { splitWithDiffRace, splitWithElement } from './fusions/smt-nonelem-fissions';
+import { splitWithDiffRace, splitWithSpecies, splitWithElement } from './fusions/smt-nonelem-fissions';
 import { splitElement } from './fusions/smt-element-fissions';
 
 import { splitWithDarkRace, fuseWithDarkRace } from './fusions/snes-dark-fusions';
@@ -39,12 +39,12 @@ export const SMT_NES_NORMAL_FUSION_CALCULATOR = new NormalFusionCalculator(
 );
 
 export const SMT_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
-  [ splitWithDiffRace, splitWithElement ],
+  [ splitWithDiffRace, splitWithSpecies, splitWithElement ],
   [ splitElement ]
 );
 
 export const SMT_NES_NORMAL_FISSION_CALCULATOR = new NormalFusionCalculator(
-  [ splitWithDiffRace, splitWithElement, splitWithDarkRace ],
+  [ splitWithDiffRace, splitWithSpecies, splitWithElement, splitWithDarkRace ],
   [ splitElement ]
 );
 

@@ -77,16 +77,9 @@ export class FusionChart extends SmtFusionChart {
 
     if (compConfig.useSpeciesFusion) {
       for (const raceR of this.races) {
-        const raceFissions = this.getRaceFissions(raceR);
-
-        for (const [raceA, raceBs] of Object.entries(this.getRaceFissions(this.speciesLookup[raceR]))) {
-          if (!raceFissions[raceA]) {
-            raceFissions[raceA] = [];
-          }
-
-          for (const raceB of raceBs) {
-            raceFissions[raceA].push(raceB);
-          }
+        if (this.fissionChart[raceR]) {
+          const specR = this.speciesLookup[raceR];
+          this.fissionChart[raceR]['2' + specR] = ['2' + specR];
         }
       }
     }
