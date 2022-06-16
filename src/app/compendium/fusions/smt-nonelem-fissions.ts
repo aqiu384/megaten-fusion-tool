@@ -69,8 +69,6 @@ export function splitWithSpecies(name: string, compendium: Compendium, fusionCha
           const minResultLvl = (lvlA === pr2ResultLvl || lvlB === pr2ResultLvl) ? pr1ResultLvl : pr2ResultLvl;
           const resultLvl = lvlA + lvlB + fusionChart.lvlModifier;
 
-          console.log(raceA, lvlA, raceB, lvlB, minResultLvl, maxResultLvl)
-
           if (2 * minResultLvl < resultLvl && resultLvl <= maxResultLvl) {
             recipes.push({
               name1: compendium.reverseLookupDemon(raceA, lvlA),
