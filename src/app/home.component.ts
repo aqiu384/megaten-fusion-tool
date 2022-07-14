@@ -30,6 +30,7 @@ export class HomeComponent implements OnInit {
     { game: 'Devil Summoner: Soul Hackers', abbr: 'dssh' },
     { game: 'Raidou Kuzunoha vs. The Soulless Army', abbr: 'krch' },
     { game: 'Raidou Kuzunoha vs. King Abaddon', abbr: 'krao' },
+    { game: 'Soul Hackers 2', abbr: 'sh2' },
     { game: 'Megami Ibunroku Persona', abbr: 'mib' },
     { game: 'Persona 3', abbr: 'p3' },
     { game: 'Persona 3 FES', abbr: 'p3fes' },

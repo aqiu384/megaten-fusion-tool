@@ -106,6 +106,11 @@ const appRoutes: Routes = [
     data: { appName: 'Raidou Kuzunoha vs. King Abaddon' }
   },
   {
+    path: 'sh2',
+    loadChildren: () => import('./sh2/compendium.module').then(m => m.CompendiumModule),
+    data: { appName: 'Soul Hackers 2' }
+  },
+  {
     path: 'mib',
     loadChildren: () => import('./mib/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Megami Ibunroku Persona' }

@@ -8,12 +8,17 @@ import { FusionDataService } from '../fusion-data.service';
   selector: 'app-fusion-chart-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-fusion-chart
+    <app-fusion-chart *ngIf="hasLightDark"
       [langEn]="langEn"
       [normChart]="normChart"
       [tripChart]="normChart"
       [normTitle]="langEn ? 'Light and Neutral Normal Fusions' : 'LIGHT合体'"
       [tripTitle]="langEn ? 'Dark Normal Fusions' : 'DARK合体'">
+    </app-fusion-chart>
+    <app-fusion-chart *ngIf="!hasLightDark"
+      [langEn]="langEn"
+      [filterDarks]="false"
+      [normChart]="normChart">
     </app-fusion-chart>
   `
 })
@@ -22,6 +27,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   normChart: FusionChart;
   langEn: boolean;
+  hasLightDark: boolean;
 
   constructor(
     private changeDetectorRef: ChangeDetectorRef,
@@ -30,6 +36,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.langEn = this.fusionDataService.compConfig.lang !== 'ja';
+    this.hasLightDark = !this.fusionDataService.compConfig.appCssClasses.includes('sh2');
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(fusionChart => {
         this.changeDetectorRef.markForCheck();

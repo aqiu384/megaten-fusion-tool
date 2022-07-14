@@ -35,6 +35,7 @@ Fusion tool framework for Megami Tensei games.
 * [Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh)
 * [Devil Summoner: Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
 * [Devil Summoner: Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
+* [Soul Hackers 2 (WIP)](https://aqiu384.github.io/megaten-fusion-tool/sh2)
 * [Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/mib)
 * [Persona 3](https://aqiu384.github.io/megaten-fusion-tool/p3)
 * [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)
