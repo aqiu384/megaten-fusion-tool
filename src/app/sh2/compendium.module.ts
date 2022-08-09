@@ -63,7 +63,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   demonData: SH2_DEMON_DATA,
   evolveData: {},
-  dlcDemons: ['Aiho'],
+  dlcDemons: COMP_CONFIG_JSON.dlcDemons,
   baseStats: COMP_CONFIG_JSON.baseStats,
   resistElems: COMP_CONFIG_JSON.resistElems,
   ailmentElems: [],
@@ -73,7 +73,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SH2_SPECIAL_RECIPES,
 
   settingsKey: 'sh2-fusion-tool-settings',
-  settingsVersion: 1709211400
+  settingsVersion: 2208081400
 }
 
 @NgModule({
