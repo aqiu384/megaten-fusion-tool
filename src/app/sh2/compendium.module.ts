@@ -9,8 +9,6 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants'
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
 
-console.log(SH2_DEMON_DATA.length);
-
 declare const SH2_DEMON_DATA: any;
 declare const SH2_SKILL_DATA: any;
 declare const SH2_SPECIAL_RECIPES: any;
@@ -25,7 +23,8 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return target.reduce((acc, t, i) => { acc[t] = i; return acc }, {});
 }
 
-const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
+const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
+const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
 const engNames: { [ename: string]: string } = {};
 
 for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
@@ -34,6 +33,7 @@ for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
 
 for (const demon of Object.values(SH2_DEMON_DATA)) {
   demon['price'] = Math.floor(demon['lvl'] * demon['lvl']);
+  demon['affinities'] = (demon['inherits'] || '----------').split('').map(char => char === 'x' ? -1 : 0);
 }
 
 for (const skill of Object.values(SH2_SKILL_DATA)) {
@@ -54,7 +54,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   lang: 'en',
   engNames,
-  affinityElems: [],
+  affinityElems: affinityElems,
   skillData: SH2_SKILL_DATA,
   skillElems,
   elemOrder: getEnumOrder(skillElems),

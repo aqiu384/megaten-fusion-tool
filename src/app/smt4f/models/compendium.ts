@@ -1,4 +1,3 @@
-import { SkillLevelToShortStringPipe } from 'src/app/compendium/pipes';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 
@@ -6,6 +5,7 @@ export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] };
+  private specialPairRecipes: { [name: string]: NamePair[] };
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
   private _dlcDemons: { [name: string]: boolean } = {
@@ -27,6 +27,7 @@ export class Compendium implements ICompendium {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
+    const specialPairRecipes: { [name: string]: NamePair[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
 
     const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(100);
@@ -94,7 +95,23 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, ojson] of Object.entries(this.compConfig.specialRecipes)) {
-      specialRecipes[name] = <string[]>ojson;
+      const nameEntries: string[] = [];
+      const namePairs: NamePair[] = [];
+
+      for (const ingred of <string[]>ojson) {
+        if (ingred.includes(' x' )) {
+          const [name1, name2] = ingred.split(' x ');
+          namePairs.push({ name1, name2 });
+        } else {
+          nameEntries.push(ingred);
+        }
+      }
+
+      if (nameEntries.length > 0) {
+        specialRecipes[name] = nameEntries;
+      } if (namePairs.length > 0) {
+        specialPairRecipes[name] = namePairs;
+      }
 
       if (demons[name].fusion === 'normal') {
         demons[name].fusion = 'special';
@@ -148,6 +165,7 @@ export class Compendium implements ICompendium {
     this.demons = demons;
     this.skills = skills;
     this.specialRecipes = specialRecipes;
+    this.specialPairRecipes = specialPairRecipes;
     this.invertedDemons = inversions;
   }
 
@@ -259,7 +277,7 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
-    return [];
+    return this.specialPairRecipes[name] || [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {
