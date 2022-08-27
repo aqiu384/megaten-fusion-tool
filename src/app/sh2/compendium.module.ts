@@ -32,7 +32,6 @@ for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
 }
 
 for (const demon of Object.values(SH2_DEMON_DATA)) {
-  demon['price'] = Math.floor(demon['lvl'] * demon['lvl']);
   demon['affinities'] = (demon['inherits'] || '----------').split('').map(char => char === 'x' ? -1 : 0);
 }
 

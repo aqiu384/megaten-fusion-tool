@@ -16,13 +16,11 @@ import { FusionDataService } from '../fusion-data.service';
 export class CompendiumComponent {
   appCssClasses = ['smt4', 'smt4f'];
   langEn: boolean;
-  includeRecipes: boolean;
   otherLinks: { title: string, link: string }[];
 
   constructor(fusionDataService: FusionDataService) {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
     this.langEn = fusionDataService.compConfig.lang !== 'ja';
-    this.includeRecipes = !this.appCssClasses.includes('sh2');
-    this.otherLinks = this.langEn && this.includeRecipes ? [{ title: 'Recipe Generator', link: 'recipes' }] : [];
+    this.otherLinks = this.langEn ? [{ title: 'Recipe Generator', link: 'recipes' }] : [];
   }
 }
