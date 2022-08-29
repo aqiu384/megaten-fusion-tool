@@ -25,6 +25,7 @@ export interface CompendiumConfig extends BaseComp {
   resistCodes: { [code: string]: number };
 
   affinityBonuses: { costs: number[][], upgrades: number[][] };
+  lvlModifier: number;
 
   demonData;
   evolveData;

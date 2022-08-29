@@ -3,7 +3,7 @@ import { SmtFusionChart } from '../../compendium/models/smt-fusion-chart';
 import { CompendiumConfig } from '../models';
 
 export class FusionChart extends SmtFusionChart {
-  lvlModifier = 1;
+  lvlModifier: number;
   elementDemons: string[];
   races: string[];
 
@@ -47,6 +47,7 @@ export class FusionChart extends SmtFusionChart {
     const elemRaces: string[] = compConfig.elementTable['races'];
     const elemTable: number[][] = compConfig.elementTable['table'];
 
+    this.lvlModifier = compConfig.lvlModifier;
     this.elementDemons = elems;
     this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);

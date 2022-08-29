@@ -32,6 +32,7 @@ for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
 }
 
 for (const demon of Object.values(SH2_DEMON_DATA)) {
+  demon['price'] = Math.floor(demon['price'] / 2);
   demon['affinities'] = (demon['inherits'] || '----------').split('').map(char => char === 'x' ? -1 : 0);
 }
 
@@ -59,6 +60,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
   affinityBonuses: { costs: [], upgrades: [] },
+  lvlModifier: 0.5,
 
   demonData: SH2_DEMON_DATA,
   evolveData: {},
@@ -72,7 +74,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SH2_SPECIAL_RECIPES,
 
   settingsKey: 'sh2-fusion-tool-settings',
-  settingsVersion: 2208081400
+  settingsVersion: 2208280745
 }
 
 @NgModule({

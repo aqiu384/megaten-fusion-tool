@@ -18,6 +18,7 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     elemOrder: compConfig.elemOrder,
     resistCodes: compConfig.resistCodes,
     affinityBonuses: compConfig.affinityBonuses,
+    lvlModifier: compConfig.lvlModifier,
 
     demonData: translateDemonData(compConfig.demonData, engNames),
     evolveData: translateEvolutions(compConfig.evolveData, engNames),
