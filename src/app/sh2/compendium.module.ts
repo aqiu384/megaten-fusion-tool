@@ -9,13 +9,12 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants'
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
 
-declare const SH2_DEMON_DATA: any;
-declare const SH2_SKILL_DATA: any;
-declare const SH2_SPECIAL_RECIPES: any;
-declare const SH2_FUSION_PREREQS: any;
-declare const SH2_FUSION_CHART: any;
-declare const SH2_ELEMENT_CHART: any;
-
+import DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
+import ELEMENT_CHART_JSON from './data/element-chart.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import JAP_NAMES_JSON from '../smt4/data/jap-names.json';
 
@@ -31,19 +30,19 @@ for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
   engNames[ename] = jname;
 }
 
-for (const demon of Object.values(SH2_DEMON_DATA)) {
+for (const demon of Object.values(DEMON_DATA_JSON)) {
   demon['price'] = Math.floor(demon['price'] / 2);
   demon['affinities'] = demon['inherits'].split('').map(char => char === 'o' ? 0 : -1);
 }
 
-for (const skill of Object.values(SH2_SKILL_DATA)) {
+for (const skill of Object.values(SKILL_DATA_JSON)) {
   if (skill['rank']) { continue; }
   if (skill['cost']) { skill['rank'] = Math.ceil((skill['cost'] - 1000) / 5); }
   else { skill['rank'] = 1; }
 }
 
-for (const [name, prereq] of Object.entries(SH2_FUSION_PREREQS)) {
-  SH2_DEMON_DATA[name].prereq = prereq;
+for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[name].prereq = prereq;
 }
 
 export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
@@ -55,23 +54,23 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   lang: 'en',
   engNames,
   affinityElems: affinityElems,
-  skillData: SH2_SKILL_DATA,
+  skillData: SKILL_DATA_JSON,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
   affinityBonuses: { costs: [], upgrades: [] },
   lvlModifier: 0.5,
 
-  demonData: SH2_DEMON_DATA,
+  demonData: DEMON_DATA_JSON,
   evolveData: {},
   dlcDemons: COMP_CONFIG_JSON.dlcDemons,
   baseStats: COMP_CONFIG_JSON.baseStats,
   resistElems: COMP_CONFIG_JSON.resistElems,
   ailmentElems: [],
 
-  normalTable: SH2_FUSION_CHART,
-  elementTable: SH2_ELEMENT_CHART,
-  specialRecipes: SH2_SPECIAL_RECIPES,
+  normalTable: FUSION_CHART_JSON,
+  elementTable: ELEMENT_CHART_JSON,
+  specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'sh2-fusion-tool-settings',
   settingsVersion: 2208280745
