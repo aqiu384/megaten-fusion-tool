@@ -299,6 +299,10 @@
     "element": "fir",
     "target": "Multi foes"
   },
+  "Firm Stance": {
+    "effect": "Halves damage from all attacks but can never evade",
+    "element": "pas"
+  },
   "Flame Wall": {
     "cost": 1015,
     "effect": "Increases fire resistance to resist for 3 turns",
@@ -347,7 +351,7 @@
     "element": "ice",
     "target": "Multi foes"
   },
-  "Great Blessing": {
+  "Grand Blessing": {
     "cost": 1040,
     "effect": "Mediarama + Dekunda",
     "element": "rec",
@@ -372,7 +376,7 @@
     "element": "fir",
     "target": "Multi foes"
   },
-  "Hellish Spurt": {
+  "Hellish Geyser": {
     "cost": 1019,
     "effect": "Light dmg, 2-4 hits, Pierces through resist and null",
     "element": "ice",
@@ -417,10 +421,11 @@
     "effect": "Increases chance of being targeted",
     "element": "pas"
   },
-  "Kenshin Ichinyo": {
+  "Oneness of Body": {
     "cost": 1030,
     "effect": "Increases next phys/gun attack and guarantees crit",
-    "element": "sup"
+    "element": "sup",
+    "rank": 99
   },
   "Kurikara Kokuryu": {
     "cost": 1036,
@@ -636,7 +641,7 @@
     "element": "phy",
     "target": "All foes"
   },
-  "Megiddo Ark": {
+  "Megido Arc": {
     "cost": 1096,
     "effect": "Heavy dmg, Stack +1-3",
     "element": "alm",
@@ -907,7 +912,7 @@
     "element": "sab"
   },
   "Sabbath Love": {
-    "effect": "",
+    "effect": "Drains HP + Amrita",
     "element": "sab",
     "rank": 99
   },
@@ -1075,7 +1080,7 @@
     "effect": "Fully recover HP after battle",
     "element": "pas"
   },
-  "Violent Flame": {
+  "Rampant Wildfire": {
     "cost": 1049,
     "effect": "Heavy dmg, High chance of Dread",
     "element": "fir",
