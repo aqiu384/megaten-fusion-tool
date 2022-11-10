@@ -21,7 +21,7 @@ import { FusionDataService } from '../fusion-data.service';
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
         [fusionHeaders]="['Electric Chair']"
-        [inherit]="demon.inherit">
+        [inherits]="demon.inherits">
         <td>{{ demon.item }}</td>
       </app-demon-stats>
       <app-demon-resists
@@ -30,7 +30,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <app-demon-inherits
         [inheritHeaders]="compConfig.inheritElems"
-        [inherits]="compendium.getInheritElems(demon.inherit)">
+        [inherits]="compendium.getInheritElems(demon.inherits)">
       </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="compConfig.elemOrder"

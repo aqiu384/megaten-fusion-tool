@@ -20,7 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
-        [inherit]="demon.inherit">
+        [inherits]="demon.inherits">
       </app-demon-stats>
       <app-demon-resists
         [resistHeaders]="compConfig.resistElems"
@@ -29,7 +29,7 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-inherits
         [hasChance]="true"
         [inheritHeaders]="compendium.inheritHeaders"
-        [inherits]="compendium.getInheritElems(demon.inherit)">
+        [inherits]="compendium.getInheritElems(demon.inherits)">
       </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="compConfig.elemOrder"

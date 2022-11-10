@@ -40,11 +40,3 @@ export interface CompendiumConfig extends BaseComp {
   settingsKey: string;
   settingsVersion: number;
 }
-
-export interface FusionRecipe {
-  skills: { [skill: string]: string };
-  chain1: string[];
-  chain2: string[];
-  stepR: string[];
-  result: string;
-}

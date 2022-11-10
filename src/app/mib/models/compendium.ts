@@ -74,6 +74,7 @@ export class Compendium implements ICompendium {
         currLvl:   json.lvl,
         fusion:    'normal',
         price:     0,
+        inherits:  0,
         stats:     json.stats,
         type:      json.type,
         subtype:   json.subtype,
@@ -88,11 +89,9 @@ export class Compendium implements ICompendium {
         area:      ''
       };
 
-      if (json.disinherits.length) {
-        demons[name].inherits = (<string[]>json.disinherits).reduce((acc, d) => {
-          acc[InheritElements.indexOf(d)] = false; return acc;
-        }, Array(InheritElements.length).fill(true));
-      }
+      const inherits: number[] = Array(InheritElements.length).fill(1);
+      for (const elem of (json.disinherits || [])) { inherits[InheritElements.indexOf(elem)] = 0; }
+      demons[name].inherits = parseInt(inherits.join(''), 2);
     }
 
     for (const [name, json] of Object.entries(ENEMY_DATA_JSON)) {
@@ -114,6 +113,7 @@ export class Compendium implements ICompendium {
         currLvl:   json.lvl,
         fusion:    'normal',
         price:     Math.pow(json.lvl, 2),
+        inherits:  0,
         stats:     json.stats.slice(0, 2),
         estats:    json.stats.slice(2),
         atks:      json.atks,
@@ -143,6 +143,7 @@ export class Compendium implements ICompendium {
         fusion:    'recruit',
         prereq:    'Item negotiation only',
         price:     0,
+        inherits:  0,
         stats:     [],
         estats:    [],
         atks:      [],
@@ -319,6 +320,10 @@ export class Compendium implements ICompendium {
 
   getSpecialNamePairs(name: string): NamePair[] {
     return [];
+  }
+
+  getInheritElems(inherits: number): number[] {
+    return inherits.toString(2).padStart(InheritElements.length, '0').split('').map(i => parseInt(i) * 100);
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

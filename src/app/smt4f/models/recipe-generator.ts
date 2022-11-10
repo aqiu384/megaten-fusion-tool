@@ -1,37 +1,38 @@
-import { Compendium } from './compendium';
-import { FusionChart } from './fusion-chart';
-import { FusionRecipe } from '../models';
-import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../../compendium/constants';
+import { Demon, Skill, FusionRecipe, Compendium, FusionChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { toFusionPair, toFusionPairResult } from '../../compendium/models/conversions';
 
-export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart): FusionRecipe {
+export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
+  const { fissionCalculator, inheritElems, restrictInherits } = recipeConfig;
   const demonR = comp.getDemon(demon);
+  const skillsI = skills.map(s => comp.getSkill(s)).filter((s, i, a) =>
+    s.rank < 50 &&
+    s.learnedBy.length > 0 &&
+    !demonR.skills.hasOwnProperty(s.name) &&
+    a.indexOf(s) === i
+  );
 
-  const pairR = SMT_NORMAL_FISSION_CALCULATOR
+  const canInheritI = canInheritCode(skillsI.map(s => s.element), inheritElems);
+  const pairR = fissionCalculator
     .getFusions(demon, comp, chart)
     .map(p => toFusionPair(p, comp))
     .sort((a, b) => a.price - b.price)
     .find(p =>
-      SMT_NORMAL_FISSION_CALCULATOR.getFusions(p.name1, comp, chart).length > 0 &&
-      SMT_NORMAL_FISSION_CALCULATOR.getFusions(p.name2, comp, chart).length > 0
+      (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
+      fissionCalculator.getFusions(p.name1, comp, chart).length > 0 &&
+      fissionCalculator.getFusions(p.name2, comp, chart).length > 0
     )
 
   const stepR = pairR ? [pairR.name1, pairR.name2] : comp.getSpecialNameEntries(demon);
-  const specIngreds = stepR.map(i => comp.getDemon(i));
+  const ingredsR = stepR.map(i => comp.getDemon(i)).sort((a, b) => a.price - b.price);
 
   const skillRef: { [skill: string]: string } = {};
   const skillInit: { [skill: string]: string } = {};
-  const skillsR = [];
-  const skillsI = comp.getSkills(skills).filter(s =>
-    s.rank < 50 &&
-    s.learnedBy.length > 0 &&
-    !demonR.skills.hasOwnProperty(s.name)
-  );
+  const skillsR: Skill[] = [];
 
   for (const skill of skillsI) {
     let foundSkill = false;
 
-    for (const ingred of specIngreds) {
+    for (const ingred of ingredsR) {
       if (ingred.skills.hasOwnProperty(skill.name)) {
         foundSkill = true;
         skillInit[skill.name] = ingred.name;
@@ -51,32 +52,100 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
       demons[0].name;
   }
 
-  const ingreds: string[] = [];
+  const canInheritR = canInheritCode(skillsR.map(s => s.element), inheritElems);
+  const skillInheritsR = skillsR.map(s => canInheritCode([s.element], inheritElems));
+  let leftIngredR: Demon, rightIngredR: Demon, inheritScore = 0;
 
-  for (const dname of Object.values(skillRef)) {
-    if (!ingreds.includes(dname)) {
-      ingreds.push(dname);
+  for (let i = 0; i < ingredsR.length; i++) {
+    const leftIngred = ingredsR[i];
+    for (const rightIngred of ingredsR.slice(i + 1)) {
+      if ((canInheritR & (leftIngred.inherits | rightIngred.inherits)) === canInheritR) {
+        const leftScore = (canInheritR & leftIngred.inherits).toString(2).split('1').length;
+        const rightScore = (canInheritR & rightIngred.inherits).toString(2).split('1').length;
+        const totalScore = leftScore * rightScore;
+
+        if (inheritScore < totalScore) {
+          leftIngredR = leftIngred;
+          rightIngredR = rightIngred;
+          inheritScore = totalScore;
+        }
+      }
     }
   }
 
+  const recipe = { chain1: [], chain2: [], stepR, skills: Object.assign(skillRef, skillInit), result: demon };
+  if (!leftIngredR) { return recipe; }
+
+  const ingreds = Object.values(skillRef).filter((d, i, a) => a.indexOf(d) === i);
+  const halfPoint = Math.ceil(ingreds.length / 2);
   ingreds.sort((a, b) => chart.getLightDark(comp.getDemon(a).race) - chart.getLightDark(comp.getDemon(b).race));
 
-  const halfPoint = Math.ceil(ingreds.length / 2);
-  let chain1 = [];
-  let chain2 = [];
+  let leftIngreds = ingreds.slice(0, halfPoint);
+  let leftInherits = Array(leftIngreds.length).fill(0);
+  let rightIngreds = ingreds.slice(halfPoint);
+  let rightInherits = Array(rightIngreds.length).fill(0);
 
-  if (stepR.length > 1) {
-    chain1 = createFusionFull(ingreds.slice(0, halfPoint), stepR[stepR.length - 2], comp, chart);
-    chain2 = createFusionFull(ingreds.slice(halfPoint), stepR[stepR.length - 1], comp, chart);
+  if (restrictInherits) {
+    const { left: leftSkills, right: rightSkills } = divideInheritSkills(leftIngredR.inherits, rightIngredR.inherits, skillInheritsR, skillsR.map(s => s.name));
+    leftIngreds = leftSkills.map(s => skillRef[s]);
+    leftInherits = canInheritChain(leftSkills.map(s => comp.getSkill(s).element), inheritElems);
+    rightIngreds = rightSkills.map(s => skillRef[s]);
+    rightInherits = canInheritChain(rightSkills.map(s => comp.getSkill(s).element), inheritElems);
   }
 
-  return { chain1, chain2, stepR, skills: Object.assign(skillRef, skillInit), result: demon };
+  recipe.chain1 = createFusionFull(leftIngreds, leftInherits, leftIngredR.name, comp, chart, recipeConfig);
+  recipe.chain2 = createFusionFull(rightIngreds, rightInherits, rightIngredR.name, comp, chart, recipeConfig);
+
+  return recipe;
 }
 
-function createFusionFull(ingreds: string[], result: string, comp: Compendium, chart: FusionChart): string[] {
+function canInheritCode(includeElems: string[], inheritElems: string[]): number {
+  return parseInt(inheritElems.map(e => includeElems.includes(e) ? '1' : '0').join(''), 2);
+}
+
+function canInheritChain(includeElems: string[], inheritElems: string[]): number[] {
+  return includeElems.map((e, i, a) => canInheritCode(a.slice(0, i + 1), inheritElems));
+}
+
+function divideInheritSkills(leftInherit: number, rightInherit: number, skillInherits: number[], skills: string[]): { left: string[], right: string[] } {
+  let left: string[] = [], right: string[] = [];
+  const leftElems: number[] = [], rightElems: number[] = [];
+  const commands: { [elem: number]: string[] } = {};
+  const passives: string[] = [];
+
+  for (let i = 0; i < skillInherits.length; i++) {
+    const elem = skillInherits[i];
+    if (elem === 0) { passives.push(skills[i]); continue; }
+    if (!commands.hasOwnProperty(elem)) { commands[elem] = []; }
+    commands[elem].push(skills[i]);
+  }
+
+  for (const inheritStr of Object.keys(commands).sort()) {
+    const canInherit = parseInt(inheritStr);
+    if (leftElems.length <= rightElems.length) {
+      if ((canInherit & leftInherit) === canInherit) { leftElems.push(canInherit); }
+      else { rightElems.push(canInherit); }
+    } else {
+      if ((canInherit & rightInherit) === canInherit) { rightElems.push(canInherit); }
+      else { leftElems.push(canInherit); }
+    }
+  }
+
+  for (const elem of leftElems) { left = left.concat(commands[elem]); }
+  for (const elem of rightElems) { right = right.concat(commands[elem]); }
+  for (const skill of passives) {
+    if (left.length < right.length) { left.push(skill); }
+    else { right.push(skill); }
+  }
+
+  return { left: left.reverse(), right: right.reverse() };
+}
+
+function createFusionFull(ingreds: string[], inheritChain: number[], result: string, comp: Compendium, chart: FusionChart, recipeConfig: RecipeGeneratorConfig): string[] {
   let ingredR = result;
   let chain = [ingredR];
   const specIngreds = comp.getSpecialNameEntries(ingredR);
+  const inheritR = inheritChain[inheritChain.length - 1];
 
   if (specIngreds.length !== 0) {
     ingredR = specIngreds.find(d => comp.getSpecialNameEntries(d).length === 0);
@@ -85,14 +154,19 @@ function createFusionFull(ingreds: string[], result: string, comp: Compendium, c
   }
 
   if (ingreds.length > 0) {
-    const chain1 = createFusionChain(ingreds, comp, chart);
+    const chain1 = createFusionChain(ingreds, inheritChain, comp, chart, recipeConfig);
+
+    if (chain1.length === 0) { return []; }
+
     const ingred1 = chain1[chain1.length - 1];
-    let chain2 = createFusionPath(ingred1, ingredR, comp, chart);
+    let chain2 = createFusionPath(ingred1, ingredR, inheritR, comp, chart, recipeConfig);
 
     if (chain2.length === 0) {
       for (const elem of chart.elementDemons) {
-        const chain3 = createFusionPath(ingred1, elem, comp, chart);
-        const chain4 = createFusionPath(elem, ingredR, comp, chart);
+        if ((inheritR & comp.getDemon(elem).inherits) !== inheritR) { continue; }
+
+        const chain3 = createFusionPath(ingred1, elem, inheritR, comp, chart, recipeConfig);
+        const chain4 = createFusionPath(elem, ingredR, inheritR, comp, chart, recipeConfig);
 
         if (chain3.length !== 0 && chain4.length !== 0) {
           chain2 = chain3.concat(chain4.slice(1));
@@ -101,18 +175,21 @@ function createFusionFull(ingreds: string[], result: string, comp: Compendium, c
       }
     }
 
+    if (chain2.length === 0) { return []; }
+
     chain = chain1.concat(chain2.slice(1), chain.slice(1));
   }
 
   return chain;
 }
 
-function createFusionPath(ingredA: string, ingredE: string, comp: Compendium, chart: FusionChart): string[] {
+function createFusionPath(ingredA: string, ingredE: string, inheritR: number, comp: Compendium, chart: FusionChart, recipeConfig: RecipeGeneratorConfig): string[] {
+  const { fissionCalculator, fusionCalculator } = recipeConfig;
   const chain = [ingredA];
 
   if (ingredA === ingredE) { return chain; }
 
-  const pairsA = SMT_NORMAL_FUSION_CALCULATOR
+  const pairsA = fusionCalculator
     .getFusions(ingredA, comp, chart)
     .map(p => toFusionPairResult(p, comp))
     .sort((a, b) => a.price - b.price);
@@ -125,7 +202,7 @@ function createFusionPath(ingredA: string, ingredE: string, comp: Compendium, ch
     }
   }
 
-  const pairsE = SMT_NORMAL_FISSION_CALCULATOR
+  const pairsE = fissionCalculator
     .getFusions(ingredE, comp, chart)
     .map(p => toFusionPair(p, comp))
     .sort((a, b) => a.price - b.price);
@@ -134,7 +211,7 @@ function createFusionPath(ingredA: string, ingredE: string, comp: Compendium, ch
   const lookupA = pairsA.reduce((acc, p) => { acc[p.name2] = p.name1; return acc }, {});
 
   for (const pairE of pairsE) {
-    if (lookupA[pairE.name1]) {
+    if (lookupA[pairE.name1] && (inheritR & comp.getDemon(pairE.name1).inherits) === inheritR) {
       chain.push(lookupA[pairE.name1]);
       chain.push(pairE.name1);
       chain.push(pairE.name2);
@@ -142,7 +219,7 @@ function createFusionPath(ingredA: string, ingredE: string, comp: Compendium, ch
       return chain;
     }
 
-    if (lookupA[pairE.name2]) {
+    if (lookupA[pairE.name2] && (inheritR & comp.getDemon(pairE.name2).inherits) === inheritR) {
       chain.push(lookupA[pairE.name2]);
       chain.push(pairE.name2);
       chain.push(pairE.name1);
@@ -154,25 +231,31 @@ function createFusionPath(ingredA: string, ingredE: string, comp: Compendium, ch
   return [];
 }
 
-function createFusionChain(ingreds: string[], comp: Compendium, chart: FusionChart): string[] {
+function createFusionChain(ingreds: string[], inheritChain: number[], comp: Compendium, chart: FusionChart, recipeConfig: RecipeGeneratorConfig): string[] {
+  const { fusionCalculator } = recipeConfig;
   const chain = ingreds.slice(0, 1);
 
   if (ingreds.length < 2) { return chain; }
 
   let ingredA = chain[0];
+  let inheritA = inheritChain[0];
 
-  for (const ingredD of ingreds.slice(1)) {
-    const pairsA = SMT_NORMAL_FUSION_CALCULATOR
+  for (let i = 1; i < ingreds.length; i++) {
+    const ingredD = ingreds[i];
+    const inheritD = inheritChain[i];
+
+    const pairsA = fusionCalculator
       .getFusions(ingredA, comp, chart)
       .map(p => toFusionPairResult(p, comp))
       .sort((a, b) => a.price - b.price);
     let foundPair = false;
 
     for (const pairA of pairsA) {
-      if (pairA.name1 === ingredD) {
+      if (pairA.name1 === ingredD && (inheritD & comp.getDemon(pairA.name2).inherits) === inheritD) {
         chain.push(ingredD);
         chain.push(pairA.name2);
         ingredA = chain[chain.length - 1];
+        inheritA = inheritD;
         foundPair = true;
         break;
       }
@@ -180,16 +263,20 @@ function createFusionChain(ingreds: string[], comp: Compendium, chart: FusionCha
 
     if (foundPair) { continue; }
 
-    const pairsD = SMT_NORMAL_FUSION_CALCULATOR.getFusions(ingredD, comp, chart);
+    const pairsD = fusionCalculator.getFusions(ingredD, comp, chart);
     const lookupD = pairsD.reduce((acc, p) => { acc[p.name1] = p.name2; return acc }, {});
 
     for (const pairA of pairsA) {
-      if (lookupD[pairA.name2]) {
+      if (lookupD[pairA.name2] && 
+        (inheritA & comp.getDemon(pairA.name2).inherits) === inheritA &&
+        (inheritD & comp.getDemon(pairA.name2).inherits) === inheritD
+      ) {
         chain.push(pairA.name1);
         chain.push(pairA.name2);
         chain.push(ingredD);
         chain.push(lookupD[pairA.name2]);
         ingredA = chain[chain.length - 1];
+        inheritA = inheritD;
         foundPair = true;
         break;
       }

@@ -35,7 +35,7 @@ const races = [];
 const raceAligns = {};
 const species = {};
 const speciesLookup = {};
-const inheritSkills = skillElems.reduce((acc, elem) => { acc[elem] = {}; return acc; }, {});
+const inheritSkills = {};
 const DEITIES = [];
 const BEASTS = [];
 
@@ -119,8 +119,9 @@ for (const [name, skill] of Object.entries(SKILL_DATA_JSON)) {
   }
 }
 
-for (const [elem, skills] of Object.entries(INHERIT_SKILLS_JSON)) {
-  inheritSkills[elem] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
+for (let i = 0; i < skillElems.length; i++) {
+  const skills = INHERIT_SKILLS_JSON[skillElems[i]] || [];
+  inheritSkills[i] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
 }
 
 export const SMT_COMP_CONFIG: CompendiumConfig = {

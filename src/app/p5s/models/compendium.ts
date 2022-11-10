@@ -15,7 +15,6 @@ export class Compendium implements ICompendium {
   private allResults: { [race: string]: number[] };
   private _allDemons: Demon[];
   private _allSkills: Skill[];
-  private _inheritTypes: { [inherti: string]: number[] };
 
   dlcDemons: { [name: string]: boolean } = {};
 
@@ -32,25 +31,24 @@ export class Compendium implements ICompendium {
     const specialNameEntries: { [name: string]: string[] } = {};
     const specialNamePairs: { [name: string]: NamePair[] } = {};
     const invertedSpecials: { [ingred: string]: string[] } = {};
-    this._inheritTypes = {};
 
     for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          race:    json['race'],
-          lvl:     json['lvl'],
-          currLvl: json['lvl'],
-          price:   Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
-          inherit: json['inherits'],
-          stats:   json['stats'],
-          resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
+          race:     json['race'],
+          lvl:      json['lvl'],
+          currLvl:  json['lvl'],
+          price:    Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
+          inherits: this.compConfig.inheritTypes[json['inherits']],
+          stats:    json['stats'],
+          resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
           eresists: (json['riskyrs'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
-          area:    json['location'] || '',
-          combos:  json['combos'],
-          skills:  json['skills'],
-          fusion:  json['fusion'] || 'normal',
-          prereq:  json['prereq'] || ''
+          area:     json['location'] || '',
+          combos:   json['combos'],
+          skills:   json['skills'],
+          fusion:   json['fusion'] || 'normal',
+          prereq:   json['prereq'] || ''
         };
 
         specialNameEntries[name] = [];
@@ -135,7 +133,6 @@ export class Compendium implements ICompendium {
     this.specialNameEntries = specialNameEntries;
     this.specialNamePairs = specialNamePairs;
     this.invertedSpecials = invertedSpecials;
-    this._inheritTypes = this.compConfig.inheritTypes;
   }
 
   updateDerivedData() {
@@ -215,8 +212,8 @@ export class Compendium implements ICompendium {
     return this.specialNamePairs[name] || [];
   }
 
-  getInheritElems(inheritType: string): number[] {
-    return this._inheritTypes[inheritType];
+  getInheritElems(inherits: number): number[] {
+    return inherits.toString(2).padStart(this.compConfig.inheritElems.length, '0').split('').map(i => parseInt(i) * 100);
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

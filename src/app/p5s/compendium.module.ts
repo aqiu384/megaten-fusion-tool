@@ -41,7 +41,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 }
 
 const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-const inheritTypes: { [elem: string]: number[] } = {};
+const inheritTypes: { [elem: string]: number } = {};
 const races = [];
 
 for(const race of COMP_CONFIG_JSON['races']) {
@@ -50,7 +50,7 @@ for(const race of COMP_CONFIG_JSON['races']) {
 }
 
 for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
-  inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = INHERIT_TYPES_JSON.ratios[i].split('').map(x => x === 'O' ? 100 : 0);
+  inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = parseInt(INHERIT_TYPES_JSON.ratios[i], 2);
 }
 
 for (const entry of Object.values(PARTY_DATA_JSON)) {

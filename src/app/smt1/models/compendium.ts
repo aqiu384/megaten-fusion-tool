@@ -39,17 +39,17 @@ export class Compendium implements ICompendium {
 
       demons[name] = {
         name,
-        race:    json['race'],
-        lvl:     json['lvl'],
-        currLvl: json['lvl'],
-        fusion:  'normal',
-        inherit: json['inherit'] || 'special',
-        drop:    json['drop'] || '-',
-        price:   Math.pow(Math.floor(json['lvl']), 3),
-        stats:   json['stats'].slice(0, statLen),
-        atks:    json['atks'] || [],
-        resists: json['resists'].substring(0, resLen).split('').map(char => compConfig.resistCodes[char]),
-        align:   json['align'] || compConfig.alignData.races[json['race']],
+        race:     json['race'],
+        lvl:      json['lvl'],
+        currLvl:  json['lvl'],
+        fusion:   'normal',
+        inherits: compConfig.inheritSkills ? compConfig.skillElems.indexOf(json['inherit']) : 24,
+        drop:     json['drop'] || '-',
+        price:    Math.pow(Math.floor(json['lvl']), 3),
+        stats:    json['stats'].slice(0, statLen),
+        atks:     json['atks'] || [],
+        resists:  json['resists'].substring(0, resLen).split('').map(char => compConfig.resistCodes[char]),
+        align:    json['align'] || compConfig.alignData.races[json['race']],
         skills
       };
     }

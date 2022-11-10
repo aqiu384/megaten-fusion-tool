@@ -45,6 +45,7 @@ export class Compendium implements ICompendium {
           lvl: json['lvl'],
           currLvl: json['lvl'],
           price: isDesu ? this.estimateDesuPrice(json['stats']) : 100 * (this.estimateKuzuPrice(json['stats']) + json['lvl']),
+          inherits: 0,
           stats: json['stats'],
           resists: (json['nresists'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
           skills: json['nskills'] || json['skills'],

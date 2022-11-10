@@ -91,7 +91,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <app-demon-inherits
         [inheritHeaders]="inheritHeaders"
-        [inherits]="demon.inherits || inheritsAll">
+        [inherits]="compendium.getInheritElems(demon.inherits)">
       </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="elemOrder"
@@ -118,7 +118,6 @@ export class DemonEntryComponent implements OnChanges {
   pResistanceHeaders = PhysResistanceElements;
   mResistanceHeaders = MagicResistanceElements;
   inheritHeaders = InheritElements;
-  inheritsAll = Array(10).fill(true);
   elemOrder = SkillElementOrder;
 
   ngOnChanges() {

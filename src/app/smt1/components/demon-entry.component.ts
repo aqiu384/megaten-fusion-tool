@@ -20,7 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
         [statHeaders]="compConfig.baseStats"
         [fusionHeaders]="['Drop']"
         [stats]="demon.stats"
-        [inherit]="demon.inherit">
+        [inherits]="demon.inherits">
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
       <app-demon-stats *ngIf="compConfig.baseAtks.length"
@@ -46,7 +46,7 @@ import { FusionDataService } from '../fusion-data.service';
         [hasLvl]="false"
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
-        [skillLevels]="compConfig.inheritSkills[demon.inherit]">
+        [skillLevels]="compConfig.inheritSkills[demon.inherits]">
       </app-demon-skills>
       <app-smt-fusions
         [hasTripleFusion]="true">

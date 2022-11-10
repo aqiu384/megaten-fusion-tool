@@ -13,7 +13,7 @@ export class Compendium implements ICompendium {
   private allResults: { [race: string]: number[] };
   private _allDemons: BaseDemon[];
   private _allSkills: Skill[];
-  private _inheritTypes: { [inherti: string]: number[] };
+  private _inheritTypes: { [code: number]: number[] };
 
   dlcDemons: { [name: string]: boolean } = {};
 
@@ -29,22 +29,30 @@ export class Compendium implements ICompendium {
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
     const invertedSpecials: { [ingred: string]: string[] } = {};
-    this._inheritTypes = {};
+    const inheritCodes: { [elem: string]: number; } = {};
+    const inheritTypes: { [code: number]: number[]; } = {};
+    const inheritThresh = this.compConfig.races.includes('World') ? 0 : 1;
+
+    for (const [elem, ratios] of Object.entries(this.compConfig.inheritTypes)) {
+      const code = parseInt(ratios.map(r => r <= inheritThresh ? '0' : '1').join(''), 2);
+      inheritCodes[elem] = code;
+      inheritTypes[code] = ratios;
+    }
 
     for (const demonDataJson of this.compConfig.demonData[this.gameAbbr]) {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          race:    json['race'],
-          lvl:     json['lvl'],
-          currLvl: json['lvl'],
-          price:   Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
-          inherit: json['inherits'],
-          stats:   json['stats'],
-          resists: json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
-          skills:  json['skills'],
-          fusion:  json['fusion'] || 'normal',
-          prereq:  json['prereq'] || ''
+          race:     json['race'],
+          lvl:      json['lvl'],
+          currLvl:  json['lvl'],
+          price:    Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
+          inherits: inheritCodes[json['inherits']],
+          stats:    json['stats'],
+          resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
+          skills:   json['skills'],
+          fusion:   json['fusion'] || 'normal',
+          prereq:   json['prereq'] || ''
         };
       }
     }
@@ -65,18 +73,19 @@ export class Compendium implements ICompendium {
 
         enemies[name] = {
           name,
-          race:    enemy['race'],
-          lvl:     enemy['lvl'],
-          currLvl: enemy['lvl'],
-          price:   0,
-          stats:   enemy['stats'].slice(0, 2),
-          estats:  enemy['stats'].slice(2),
-          resists: enemy['resists'].toLowerCase().split('').map(char => this.compConfig.resistCodes[char]),
-          skills:  enemy['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
-          fusion:  'normal',
-          area:    enemy['area'],
-          drop:    drops.join(', '),
-          isEnemy: true
+          race:     enemy['race'],
+          lvl:      enemy['lvl'],
+          currLvl:  enemy['lvl'],
+          price:    0,
+          inherits: 0,
+          stats:    enemy['stats'].slice(0, 2),
+          estats:   enemy['stats'].slice(2),
+          resists:  enemy['resists'].toLowerCase().split('').map(char => this.compConfig.resistCodes[char]),
+          skills:   enemy['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+          fusion:   'normal',
+          area:     enemy['area'],
+          drop:     drops.join(', '),
+          isEnemy:  true
         };
       }
     }
@@ -147,7 +156,7 @@ export class Compendium implements ICompendium {
     this.specialRecipes = specials;
     this.invertedDemons = inverses;
     this.invertedSpecials = invertedSpecials;
-    this._inheritTypes = this.compConfig.inheritTypes;
+    this._inheritTypes = inheritTypes;
   }
 
   updateDerivedData() {
@@ -238,7 +247,7 @@ export class Compendium implements ICompendium {
     return [];
   }
 
-  getInheritElems(inheritType: string): number[] {
+  getInheritElems(inheritType: number): number[] {
     return this._inheritTypes[inheritType];
   }
 

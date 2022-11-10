@@ -3,7 +3,8 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { Demon, Skill, CompendiumConfig, FusionRecipe } from '../models';
+import { FusionRecipe, RecipeGeneratorConfig } from '../../compendium/models';
+import { Demon, Skill } from '../models';
 import { createSkillsRecipe } from '../models/recipe-generator';
 import { Compendium } from '../models/compendium';
 import { FusionChart } from '../models/fusion-chart';
@@ -20,7 +21,6 @@ import { FusionDataService } from '../fusion-data.service';
         <tr>
           <th>Race</th>
           <th>Demon</th>
-          <th>Skill Slots</th>
           <th>Max Lvl</th>
         </tr>
         <tr>
@@ -33,9 +33,6 @@ import { FusionDataService } from '../fusion-data.service';
             <select formControlName="demon" (change)="setDemon(form.controls.demon.value)">
               <option *ngFor="let demon of demons[form.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
             </select>
-          </td>
-          <td>
-            <label>Lock innate skills<input type="checkbox" formControlName="innateLocked" (change)="setDemon(form.controls.demon.value)"></label>
           </td>
           <td>
             <select>
@@ -55,25 +52,18 @@ import { FusionDataService } from '../fusion-data.service';
           <th style="width: 10%;">Rank</th>
         </tr>
         <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
-          <tr>
-            <ng-container *ngIf="!form.controls.innateLocked.value || skill.controls.innate.value.name === '-'; else lockInnate">
-              <td>
-                <select formControlName="elem" (change)="skill.controls.custom.setValue(skills[skill.controls.elem.value][0])">
-                  <option value="-">-</option>
-                  <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
-                </select>
-              </td>
-              <td>
-                <select formControlName="custom">
-                  <option [ngValue]="skill.controls.innate.value">{{ skill.controls.innate.value.name }}</option>
-                  <option *ngFor="let entry of skills[skill.controls.elem.value]" [ngValue]="entry">{{ entry.name }}</option>
-                </select>
-              </td>
-            </ng-container>
-            <ng-template #lockInnate>
-              <td><select disabled><option>{{ skill.controls.innate.value.element }}</option></select></td>
-              <td><select disabled><option>{{ skill.controls.innate.value.name }}</option></select></td>
-            </ng-template>
+          <tr *ngIf="i < maxSkills">
+            <td>
+              <select formControlName="elem" (change)="skill.controls.custom.setValue(skills[skill.controls.elem.value][0])">
+                <option value="-">-</option>
+                <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
+              </select>
+            </td>
+            <td>
+              <select formControlName="custom">
+                <option *ngFor="let entry of skills[skill.controls.elem.value]" [ngValue]="entry">{{ entry.name }}</option>
+              </select>
+            </td>
             <ng-container *ngIf="skill.controls.custom.value as entry">
               <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
               <td>{{ entry.effect }}</td>
@@ -87,8 +77,10 @@ import { FusionDataService } from '../fusion-data.service';
         <tr><th colspan="2" class="title">Fusion Recipe</th></tr>
         <tr><th>Left Chain</th><th>Right Chain</th></tr>
         <tr>
-          <td style="width: 50%"><ul><li *ngFor="let step of recipeLeft">{{ step }}</li></ul></td>
-          <td style="width: 50%"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
+          <td style="width: 50%" *ngIf="recipeLeft.length"><ul><li *ngFor="let step of recipeLeft">{{ step }}</li></ul></td>
+          <td style="width: 50%" *ngIf="!recipeLeft.length" style="padding: 1em; text-align: center;">No chains found</td>
+          <td style="width: 50%" *ngIf="recipeRight.length"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
+          <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">No chains found</td>
         </tr>
         <tr><td colspan="2" style="padding: 1em; text-align: center;">
           <ng-container *ngIf="recipe.stepR.length">
@@ -107,9 +99,10 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class RecipeGeneratorComponent implements OnChanges {
   @Input() defaultDemon = 'Pixie';
+  @Input() maxSkills = 8;
   @Input() compendium: Compendium;
   @Input() fusionChart: FusionChart;
-  @Input() compConfig: CompendiumConfig;
+  @Input() recipeConfig: RecipeGeneratorConfig;
 
   range99 = Array(99);
   races: string[];
@@ -124,7 +117,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   resultSkills: string[];
 
   blankDemon: Demon = {
-    name: '-', race: '-', lvl: 0, currLvl: 0, price: 0,
+    name: '-', race: '-', lvl: 0, currLvl: 0, price: 0, inherits: 0,
     skills: {}, stats: [], resists: [], affinities: [], ailments: [],
     fusion: 'normal', prereq: ''
   };
@@ -142,20 +135,19 @@ export class RecipeGeneratorComponent implements OnChanges {
     const skills = [];
 
     for (let i = 0; i < 8; i++) {
-      skills.push(this.fb.group({ elem: '-', innate: this.blankSkill, custom: this.blankSkill }));
+      skills.push(this.fb.group({ elem: '-', custom: this.blankSkill }));
     }
 
     this.form = this.fb.group({
       race: '-',
       demon: this.blankDemon,
-      skills: this.fb.array(skills),
-      innateLocked: true
+      skills: this.fb.array(skills)
     });
 
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
         const dskills = form.skills.map(s => s.custom.name).filter(s => s !== '-');
-        this.updateRecipe(createSkillsRecipe(form.demon.name, dskills, this.compendium, this.fusionChart));
+        this.updateRecipe(createSkillsRecipe(form.demon.name, dskills, this.compendium, this.fusionChart, this.recipeConfig));
       }
     });
   }
@@ -200,7 +192,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   }
 
   initDropdowns() {
-    if (!this.compConfig || !this.compendium || !this.fusionChart) { return; }
+    if (!this.recipeConfig || !this.compendium || !this.fusionChart) { return; }
 
     this.demons = {};
     this.skills = { '-': [this.blankSkill] };
@@ -223,23 +215,26 @@ export class RecipeGeneratorComponent implements OnChanges {
       skillList.sort((a, b) => a.rank - b.rank);
     }
 
-    this.races = this.compConfig.races.filter(r => this.demons[r]);
-    this.elems = this.compConfig.skillElems.filter(e => this.skills[e]);
+    this.races = this.recipeConfig.races.filter(r => this.demons[r]);
+    this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e]);
     this.setDemon(this.compendium.getDemon(this.defaultDemon));
   }
 
   setDemon(demon: Demon) {
-    const skills = Array(8).fill(this.blankSkill);
-    let i = 0;
+    const excludeElems: string[] = [];
+    const { inheritElems } = this.recipeConfig;
 
-    for (const [sname, sentry] of Object.entries(demon.skills)) {
-      if (sentry === 0) { skills[i++] = this.compendium.getSkill(sname); }
+    for (let i = 0; i < inheritElems.length; i++) {
+      if (!(demon.inherits & (1 << i))) {
+        excludeElems.push(inheritElems[inheritElems.length - i - 1]);
+      }
     }
-
+    
+    this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e] && !excludeElems.includes(e));
     this.form.patchValue({
       race: demon.race,
       demon: demon,
-      skills: skills.map(s => ({ elem: s.element, innate: s, custom: s }))
+      skills: Array(8).fill({ elem: '-', custom: this.blankSkill })
     });
   }
 }
@@ -249,20 +244,32 @@ export class RecipeGeneratorComponent implements OnChanges {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-recipe-generator
+      [maxSkills]="maxSkills"
       [compendium]="compendium"
       [fusionChart]="fusionChart"
-      [compConfig]="compConfig">
+      [recipeConfig]="recipeConfig">
     </app-recipe-generator>
   `
 })
 export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   compendium: Compendium;
   fusionChart: FusionChart;
-  compConfig: CompendiumConfig;
+  recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
+  maxSkills = 8;
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
-    this.compConfig = this.fusionDataService.compConfig;
+    const compConfig = this.fusionDataService.compConfig;
+    const isSh2 = compConfig.appCssClasses.includes('sh2');
+    this.maxSkills = isSh2 ? 6 : 8;
+    this.recipeConfig = {
+      fissionCalculator: this.fusionDataService.fissionCalculator,
+      fusionCalculator: this.fusionDataService.fusionCalculator,
+      races: compConfig.races,
+      skillElems: compConfig.skillElems,
+      inheritElems: compConfig.affinityElems,
+      restrictInherits: isSh2
+    };
   }
 
   ngOnInit()    { this.setTitle(); this.subscribeAll(); }

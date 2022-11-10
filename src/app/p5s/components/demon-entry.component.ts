@@ -20,7 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
-        [inherit]="demon.inherit">
+        [inherits]="demon.inherits">
       </app-demon-stats>
       <app-demon-resists
         [resistHeaders]="compConfig.resistElems"

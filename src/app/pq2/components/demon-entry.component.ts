@@ -19,8 +19,7 @@ import { FusionDataService } from '../fusion-data.service';
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
-        [stats]="demon.stats"
-        [inherit]="demon.inherit">
+        [stats]="demon.stats">
       </app-demon-stats>
       <app-demon-skills
         [hasTarget]="true"

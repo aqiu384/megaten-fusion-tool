@@ -60,6 +60,7 @@ export class Compendium implements ICompendium {
         currLvl:    json['currLvl'] || json['lvl'],
         skills:     json['skills'],
         price:      json['price'] * 2,
+        inherits:   parseInt(((json['affinities'] || [-9]).map(a => a <= -9 ? '0' : '1')).join(''), 2),
         stats:      json['stats'],
         resists:    json['resists'].split('').map(e => this.compConfig.resistCodes[e]),
         affinities: json['affinities'],

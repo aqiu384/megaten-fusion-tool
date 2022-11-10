@@ -175,7 +175,7 @@ export class PasswordGeneratorComponent implements OnChanges {
     attack:   'Physical x1 to single foe',
     code: 0, pcoeff: 0, hpmod: 0, price: 0, lvl: 0, currLvl: 0,
     name: '???', align: '', race: '-', fusion: '-',
-    inherits: [], skills: {}, source: {}, stats: [], resists: []
+    inherits: 0, skills: {}, source: {}, stats: [], resists: []
   };
   blankSkill: Skill = {
     code: 0, power: 0, accuracy: 0, cost: 0, level: 0, rank: 0,

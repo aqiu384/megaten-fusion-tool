@@ -2,7 +2,6 @@ import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } 
 
 export interface Demon extends BaseDemon {
   atks: number[];
-  inherit: string;
   drop: string;
   align: string;
 }
@@ -26,7 +25,7 @@ export interface CompendiumConfig extends BaseComp {
   resistCodes: { [code: string]: number };
   elemOrder: { [elem: string]: number };
   useSpeciesFusion: boolean;
-  inheritSkills?: { [elem: string]: { [skill: string]: number } };
+  inheritSkills?: { [code: number]: { [skill: string]: number } };
 
   normalLvlModifier: number;
   tripleLvlModifier: number;

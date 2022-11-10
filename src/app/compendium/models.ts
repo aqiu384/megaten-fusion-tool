@@ -16,8 +16,7 @@ export interface Demon {
   currLvl: number;
   name: string;
   price: number;
-  inherit?: string;
-  inherits?: boolean[];
+  inherits: number;
   stats: number[];
   resists: number[];
   fusion: string;
@@ -171,4 +170,21 @@ export interface SquareChart {
   normalChart: FusionChart;
   tripleChart: FusionChart;
   raceOrder?: { [race: string]: number };
+}
+
+export interface RecipeGeneratorConfig {
+  fissionCalculator: FusionCalculator;
+  fusionCalculator: FusionCalculator;
+  races: string[];
+  skillElems: string[];
+  inheritElems: string[];
+  restrictInherits: boolean;
+}
+
+export interface FusionRecipe {
+  skills: { [skill: string]: string };
+  chain1: string[];
+  chain2: string[];
+  stepR: string[];
+  result: string;
 }

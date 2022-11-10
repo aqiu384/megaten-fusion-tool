@@ -34,7 +34,7 @@ export class DemonListComponent<TDemon extends Demon> extends SortedTableCompone
 
     if (this.inheritOrder) {
       this.sortFuns.push(
-        (a, b) => (this.inheritOrder[a.inherit] - this.inheritOrder[b.inherit]),
+        (a, b) => (a.inherits - b.inherits),
       );
     }
 

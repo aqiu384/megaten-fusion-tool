@@ -17,7 +17,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
       </select>
     </td>
     <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
-    <td *ngIf="hasInherits"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
+    <td *ngIf="hasInherits"><div class="element-icon i{{ data.inherits }}">{{ data.inherits }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <ng-container *ngIf="langEn">
       <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">

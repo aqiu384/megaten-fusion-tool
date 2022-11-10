@@ -9,14 +9,14 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       <table class="entry-table">
         <thead>
           <tr>
-            <th [attr.colSpan]="stats.length + fusionHeaders.length + (inherit ? 1 : 0) + (price ? 1 : 0)" class="title">
+            <th [attr.colSpan]="stats.length + fusionHeaders.length + (inherits ? 1 : 0) + (price ? 1 : 0)" class="title">
               {{ title.includes('Lvl') ? (langEn ? 'Stats' : 'ステータス') : title }}
             </th>
           </tr>
           <tr>
             <th *ngIf="price">{{ langEn ? 'Price' : '価格' }}</th>
             <th *ngFor="let stat of statHeaders">{{ stat }}</th>
-            <th *ngIf="inherit">Inherits</th>
+            <th *ngIf="inherits">Inherits</th>
             <th *ngFor="let fusion of fusionHeaders">{{ fusion }}</th>
           </tr>
         </thead>
@@ -24,7 +24,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
           <tr>
             <td *ngIf="price">{{ price }}</td>
             <td *ngFor="let stat of stats">{{ stat }}</td>
-            <td *ngIf="inherit"><div class="element-icon {{ inherit }}">{{ inherit }}</div></td>
+            <td *ngIf="inherits"><div class="element-icon i{{ inherits }}">{{ inherits }}</div></td>
             <ng-content></ng-content>
           </tr>
         </tbody>
@@ -37,7 +37,7 @@ export class DemonStatsComponent {
   @Input() statHeaders: string[] = [];
   @Input() stats: number[] = [];
   @Input() fusionHeaders: string[] = [];
-  @Input() inherit: string;
+  @Input() inherits: number;
   @Input() price = 0;
   @Input() langEn = true;
 }
