@@ -1,5 +1,5 @@
-import { Demon, Skill, FusionRecipe, Compendium, FusionChart, RecipeGeneratorConfig } from '../../compendium/models';
-import { toFusionPair, toFusionPairResult } from '../../compendium/models/conversions';
+import { Demon, Skill, FusionRecipe, Compendium, FusionChart, RecipeGeneratorConfig } from '../models';
+import { toFusionPair, toFusionPairResult } from './conversions';
 
 export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
   const { fissionCalculator, inheritElems, restrictInherits } = recipeConfig;

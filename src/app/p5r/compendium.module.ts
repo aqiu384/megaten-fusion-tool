@@ -13,7 +13,8 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import INHERIT_TYPES_JSON from '../p5/data/inheritance-types.json';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
-import SKILL_DATA_JSON from './data/skill-data.json';
+import VAN_SKILL_DATA_JSON from '../p5/data/skill-data.json';
+import ROY_SKILL_DATA_JSON from './data/skill-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
@@ -81,7 +82,7 @@ export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
   enemyResists: COMP_CONFIG_JSON.resistElems,
 
   demonData: [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON],
-  skillData: [SKILL_DATA_JSON],
+  skillData: [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON],
   enemyData: [ENEMY_DATA_JSON],
 
   normalTable: FUSION_CHART_JSON,

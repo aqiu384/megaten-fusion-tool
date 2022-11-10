@@ -1,5 +1,4 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
@@ -12,13 +11,12 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
-import { RecipeGeneratorComponent, RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
+import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    ReactiveFormsModule,
     SharedCompendiumModule,
     CompendiumRoutingModule
   ],
@@ -30,7 +28,6 @@ import { RecipeGeneratorComponent, RecipeGeneratorContainerComponent } from './c
     DemonEntryContainerComponent,
     DemonDlcSettingsContainerComponent,
     FusionChartContainerComponent,
-    RecipeGeneratorComponent,
     RecipeGeneratorContainerComponent
   ],
   exports: [
@@ -41,7 +38,6 @@ import { RecipeGeneratorComponent, RecipeGeneratorContainerComponent } from './c
     DemonEntryContainerComponent,
     DemonDlcSettingsContainerComponent,
     FusionChartContainerComponent,
-    RecipeGeneratorComponent,
     RecipeGeneratorContainerComponent
   ],
 })

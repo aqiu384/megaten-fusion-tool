@@ -12,6 +12,7 @@ import { CompendiumConfig } from '../models';
     <app-smt-skill-list
       [elemOrder]="compConfig.elemOrder"
       [hasRank]="false"
+      [hasTarget]="true"
       [isPersona]="true"
       [transferTitle]="'Skill Card'"
       [rowData]="skills | async">

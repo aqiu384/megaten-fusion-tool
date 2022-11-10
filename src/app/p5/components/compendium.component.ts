@@ -11,10 +11,14 @@ import {
     <app-demon-compendium
       [ngClass]="'p5'"
       [mainList]="'persona'"
-      [otherLinks]="[{ title: 'Shadow List', link: 'shadows' }]">
+      [otherLinks]="otherLinks">
     </app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None
 })
-export class CompendiumComponent { }
+export class CompendiumComponent {
+  otherLinks = [
+    { title: 'Shadow List', link: 'shadows' }
+  ];
+}

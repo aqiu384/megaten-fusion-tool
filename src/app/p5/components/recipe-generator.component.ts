@@ -30,15 +30,13 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
-    const isSh2 = compConfig.appCssClasses.includes('sh2');
-    this.maxSkills = isSh2 ? 6 : 8;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
       fusionCalculator: this.fusionDataService.fusionCalculator,
       races: compConfig.races,
       skillElems: compConfig.skillElems,
-      inheritElems: compConfig.affinityElems,
-      restrictInherits: isSh2
+      inheritElems: compConfig.inheritElems,
+      restrictInherits: true,
     };
   }
 

@@ -1,1447 +1,1599 @@
 {
   "Absorb Bless": {
     "effect": "Drains Bless attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Curse": {
     "effect": "Drains Curse attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Elec": {
     "effect": "Drains Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Fire": {
     "effect": "Drains Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Ice": {
     "effect": "Drains Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Nuke": {
     "effect": "Drains Nuke attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Psy": {
     "effect": "Drains Psy attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Absorb Wind": {
     "effect": "Drains Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 20
   },
   "Active Boost": {
     "effect": "Improves Active Support rate for increasing Showtime Gauge",
-    "element": "passive"
+    "element": "pas"
   },
   "Active Boost EX": {
     "effect": "Greatly improves Active Support rate for increasing Showtime Gauge",
-    "element": "passive"
+    "element": "pas"
   },
   "Active Support": {
     "effect": "Chance to Charge and increase Showtime Gauge",
-    "element": "passive"
+    "element": "pas"
   },
   "Agi": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
-    "element": "fire",
-    "rank": 2
+    "effect": "Light dmg",
+    "element": "fir",
+    "rank": 2,
+    "target": "Close range"
   },
   "Agidyne": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
-    "element": "fire",
-    "rank": 12
+    "effect": "Heavy dmg",
+    "element": "fir",
+    "rank": 12,
+    "target": "Close range"
   },
   "Agilao": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
-    "element": "fire",
-    "rank": 4
+    "effect": "Medium dmg",
+    "element": "fir",
+    "rank": 4,
+    "target": "Close range"
   },
   "Agneyastra": {
     "cost": 30,
-    "effect": "Colossal damage to wide range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 19
+    "effect": "Colossal dmg, High crit",
+    "element": "phy",
+    "rank": 19,
+    "target": "Wide range"
   },
   "Ailment Boost": {
     "effect": "Increases chance of inflicting all ailments",
-    "element": "passive",
+    "element": "pas",
     "rank": 11
   },
   "Amrita Drop": {
     "cost": 1004,
-    "effect": "Cure all non-special ailments for 1 Ally",
-    "element": "recovery",
-    "rank": 11
+    "effect": "Cure non-unique ailments",
+    "element": "rec",
+    "rank": 11,
+    "target": "1 ally"
   },
   "Amrita Shower": {
     "cost": 1008,
-    "effect": "Cure all non-special ailments for all Allies",
-    "element": "recovery",
-    "rank": 13
+    "effect": "Cure non-unique ailments",
+    "element": "rec",
+    "rank": 13,
+    "target": "All allies"
   },
   "Analysis": {
     "effect": "Reveal info for 1 Foe",
-    "element": "passive"
+    "element": "pas"
   },
   "Angelic Grace": {
-    "effect": "Double evasion against Fire/Ice/Elec/Wind/Nuke/Psy/Bless/Curse attacks.",
-    "element": "passive",
+    "effect": "Double evasion against non-Almighty magic attacks",
+    "element": "pas",
     "rank": 19
   },
   "Assault Dive": {
     "cost": 15,
-    "effect": "Heavy damage to close range Foes",
-    "element": "phys",
-    "rank": 10
+    "effect": "Heavy dmg",
+    "element": "phy",
+    "rank": 10,
+    "target": "Close range"
   },
   "Atomic Flare": {
     "cost": 1036,
-    "effect": "Severe damage to close range Foes",
-    "element": "nuke",
-    "rank": 18
+    "effect": "Severe dmg",
+    "element": "nuk",
+    "rank": 18,
+    "target": "Close range"
   },
   "Attack Master": {
     "effect": "Activates Tarukaja at the start of battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Blazing Hell": {
     "cost": 1038,
-    "effect": "Severe damage to wide range Foes",
-    "element": "fire",
-    "rank": 19
+    "effect": "Severe dmg",
+    "element": "fir",
+    "rank": 19,
+    "target": "Wide range"
   },
   "Bless Amp": {
     "effect": "Bless damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Bless Boost": {
     "effect": "Bless damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Bloodbath": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes with medium chance of Fear",
-    "element": "phys",
-    "rank": 11
+    "effect": "Medium dmg, Fear",
+    "element": "phy",
+    "rank": 11,
+    "target": "Wide range"
   },
   "Brain Buster": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes with medium chance of Brainwash",
-    "element": "phys",
-    "rank": 11
+    "effect": "Medium dmg, Brainwash",
+    "element": "phy",
+    "rank": 11,
+    "target": "Wide range"
   },
   "Brain Jack": {
     "cost": 1010,
-    "effect": "High chance of Brainwash to wide range Foes",
-    "element": "ailment",
-    "rank": 13
+    "effect": "Brainwash",
+    "element": "ail",
+    "rank": 13,
+    "target": "Wide range"
   },
   "Brain Shake": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of Brainwash",
-    "element": "phys",
-    "rank": 3
+    "effect": "Light dmg, Brainwash",
+    "element": "phy",
+    "rank": 3,
+    "target": "Close range"
   },
   "Brainwash Boost": {
     "effect": "Increases chance of inflicting Brainwash",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Brave Blade": {
     "cost": 20,
-    "effect": "Heavy damage to close range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 17
+    "effect": "Heavy dmg, High crit",
+    "element": "phy",
+    "rank": 17,
+    "target": "Close range"
   },
   "Bufu": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
+    "effect": "Light dmg",
     "element": "ice",
-    "rank": 2
+    "rank": 2,
+    "target": "Close range"
   },
   "Bufudyne": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
+    "effect": "Heavy dmg",
     "element": "ice",
-    "rank": 12
+    "rank": 12,
+    "target": "Close range"
   },
   "Bufula": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
+    "effect": "Medium dmg",
     "element": "ice",
-    "rank": 4
+    "rank": 4,
+    "target": "Close range"
   },
   "Burn Boost": {
     "effect": "Increases chance of inflicting Burn",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Charge": {
     "cost": 1026,
     "effect": "Next Physical attack deals over double damage",
-    "element": "support",
+    "element": "sup",
     "rank": 16
   },
   "Cleave": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of critical hit",
-    "element": "phys",
-    "rank": 1
+    "effect": "Light dmg, Medium crit",
+    "element": "phy",
+    "rank": 1,
+    "target": "Close range"
   },
   "Concentrate": {
     "cost": 1026,
     "effect": "Next Magical attack deals over double damage",
-    "element": "support",
+    "element": "sup",
     "rank": 16
   },
   "Cosmic Flare": {
     "cost": 1038,
-    "effect": "Severe damage to wide range Foes",
-    "element": "nuke",
-    "rank": 19
+    "effect": "Severe dmg",
+    "element": "nuk",
+    "rank": 19,
+    "target": "Wide range"
   },
   "Curse Amp": {
     "effect": "Curse damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Curse Boost": {
     "effect": "Curse damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Dazzler": {
     "cost": 1008,
-    "effect": "High chance of Dizzy to close range Foes",
-    "element": "ailment",
-    "rank": 6
+    "effect": "Dizzy",
+    "element": "ail",
+    "rank": 6,
+    "target": "Close range"
   },
   "Deathbound": {
     "cost": 24,
-    "effect": "Severe damage to wide range Foes with medium chance of critical hit",
-    "element": "phys",
-    "rank": 14
+    "effect": "Severe dmg, Medium crit",
+    "element": "phy",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Debilitate": {
     "cost": 1036,
     "effect": "Tarunda + Rakunda + Sukunda",
-    "element": "support",
-    "rank": 19
+    "element": "sup",
+    "rank": 19,
+    "target": "Close range"
   },
   "Defense Master": {
     "effect": "Activates Rakukaja at the start of battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Dekaja": {
     "cost": 1006,
-    "effect": "Remove -kaja effects for wide range Foes",
-    "element": "support",
-    "rank": 3
+    "effect": "Remove -kaja effects",
+    "element": "sup",
+    "rank": 3,
+    "target": "Wide range"
   },
   "Dekunda": {
     "cost": 1006,
-    "effect": "Remove -kunda effects for all Allies",
-    "element": "support",
-    "rank": 3
+    "effect": "Remove -kunda effects",
+    "element": "sup",
+    "rank": 3,
+    "target": "All allies"
   },
   "Dia": {
     "cost": 1006,
-    "effect": "Slightly restore HP for 1 Ally",
-    "element": "recovery",
-    "rank": 1
+    "effect": "Slightly restore HP",
+    "element": "rec",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Diamond Dust": {
     "cost": 1036,
-    "effect": "Severe damage to close range Foes",
+    "effect": "Severe dmg",
     "element": "ice",
-    "rank": 18
+    "rank": 18,
+    "target": "Close range"
   },
   "Diarahan": {
     "cost": 1040,
-    "effect": "Fully restore HP for 1 Ally",
-    "element": "recovery",
-    "rank": 11
+    "effect": "Fully restore HP",
+    "element": "rec",
+    "rank": 11,
+    "target": "1 ally"
   },
   "Diarama": {
     "cost": 1016,
-    "effect": "Moderately restore HP for 1 Ally",
-    "element": "recovery",
-    "rank": 3
+    "effect": "Moderately restore HP",
+    "element": "rec",
+    "rank": 3,
+    "target": "1 ally"
   },
   "Die For Me!": {
     "cost": 1020,
-    "effect": "High chance of instant killing wide range Foes",
-    "element": "curse"
+    "effect": "High chance instakill",
+    "element": "dar",
+    "target": "Wide range"
   },
   "Divine Grace": {
     "effect": "Recovery skill effectiveness +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Dizzy Boost": {
     "effect": "Increases chance of inflicting Dizzy",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Dodge Bless": {
     "effect": "Doubles evasion rate against Bless attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Curse": {
     "effect": "Doubles evasion rate against Curse attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Elec": {
     "effect": "Doubles evasion rate against Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Fire": {
     "effect": "Doubles evasion rate against Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Ice": {
     "effect": "Doubles evasion rate against Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Nuke": {
     "effect": "Doubles evasion rate against Nuke attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Phys": {
     "effect": "Doubles evasion rate against Phys attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Psy": {
     "effect": "Doubles evasion rate against Psy attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dodge Wind": {
     "effect": "Doubles evasion rate against Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Dormin Rush": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes with medium chance of Sleep",
-    "element": "phys",
-    "rank": 5
+    "effect": "Medium dmg, Sleep",
+    "element": "phy",
+    "rank": 5,
+    "target": "Wide range"
   },
   "Dormina": {
     "cost": 1008,
-    "effect": "High chance of Sleep to close range Foes",
-    "element": "ailment",
-    "rank": 6
+    "effect": "Sleep",
+    "element": "ail",
+    "rank": 6,
+    "target": "Close range"
   },
   "Double Fangs": {
     "cost": 12,
-    "effect": "Medium damage to close range Foes with medium chance of critical hit",
-    "element": "phys",
-    "rank": 3
+    "effect": "Medium dmg, Medium crit",
+    "element": "phy",
+    "rank": 3,
+    "target": "Close range"
   },
   "Dream Needle": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of Sleep",
-    "element": "phys",
-    "rank": 1
+    "effect": "Light dmg, Sleep",
+    "element": "phy",
+    "rank": 1,
+    "target": "Close range"
   },
   "Eiga": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
-    "element": "curse",
-    "rank": 4
+    "effect": "Medium dmg",
+    "element": "dar",
+    "rank": 4,
+    "target": "Close range"
   },
   "Eigaon": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
-    "element": "curse",
-    "rank": 12
+    "effect": "Heavy dmg",
+    "element": "dar",
+    "rank": 12,
+    "target": "Close range"
   },
   "Eiha": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
-    "element": "curse",
-    "rank": 2
+    "effect": "Light dmg",
+    "element": "dar",
+    "rank": 2,
+    "target": "Close range"
   },
   "Elec Amp": {
     "effect": "Elec damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Elec Boost": {
     "effect": "Elec damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Endure": {
     "effect": "Survive lethal attack with 1 HP once per battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 13
   },
   "Enduring Soul": {
     "effect": "Survive lethal attack with full HP once per battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 17
   },
   "Evade Bless": {
     "effect": "Triples evasion rate against Bless attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Curse": {
     "effect": "Triples evasion rate against Curse attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Elec": {
     "effect": "Triples evasion rate against Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Fire": {
     "effect": "Triples evasion rate against Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Ice": {
     "effect": "Triples evasion rate against Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Nuke": {
     "effect": "Triples evasion rate against Nuke attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Phys": {
     "effect": "Triples evasion rate against Phys attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Psy": {
     "effect": "Triples evasion rate against Psy attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evade Wind": {
     "effect": "Triples evasion rate against Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 10
   },
   "Evil Smile": {
     "cost": 1010,
-    "effect": "High chance of Fear to wide range Foes",
-    "element": "ailment",
-    "rank": 13
+    "effect": "Fear",
+    "element": "ail",
+    "rank": 13,
+    "target": "Wide range"
   },
   "Evil Touch": {
     "cost": 1008,
-    "effect": "High chance of Fear to close range Foes",
-    "element": "ailment",
-    "rank": 6
+    "effect": "Fear",
+    "element": "ail",
+    "rank": 6,
+    "target": "Close range"
   },
   "Fear Boost": {
     "effect": "Increases chance of inflicting Fear",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Final Guard": {
     "effect": "Chance to nullify fatal attack for all Allies",
-    "element": "passive"
+    "element": "pas"
   },
   "Fire Amp": {
     "effect": "Fire damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Fire Boost": {
     "effect": "Fire damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Firm Stance": {
     "effect": "Halves all damage received by sacrificing evasion",
-    "element": "passive",
+    "element": "pas",
     "rank": 17
   },
   "Flash Bomb": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes with medium chance of Dizzy",
-    "element": "phys",
-    "rank": 5
+    "effect": "Medium dmg, Dizzy",
+    "element": "phy",
+    "rank": 5,
+    "target": "Wide range"
   },
   "Forget Boost": {
     "effect": "Increases chance of inflicting Forget",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Fortify Spirit": {
     "effect": "Reduces chance of receiving all ailments",
-    "element": "passive",
+    "element": "pas",
     "rank": 19
   },
   "Freeze Boost": {
     "effect": "Increases chance of inflicting Freeze",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Frei": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
-    "element": "nuke",
-    "rank": 2
+    "effect": "Light dmg",
+    "element": "nuk",
+    "rank": 2,
+    "target": "Close range"
   },
   "Freidyne": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
-    "element": "nuke",
-    "rank": 12
+    "effect": "Heavy dmg",
+    "element": "nuk",
+    "rank": 12,
+    "target": "Close range"
   },
   "Freila": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
-    "element": "nuke",
-    "rank": 4
+    "effect": "Medium dmg",
+    "element": "nuk",
+    "rank": 4,
+    "target": "Close range"
   },
   "Garu": {
     "cost": 1006,
-    "effect": "Light damage to close range Foes",
-    "element": "wind",
-    "rank": 2
+    "effect": "Light dmg",
+    "element": "win",
+    "rank": 2,
+    "target": "Close range"
   },
   "Garudyne": {
     "cost": 1022,
-    "effect": "Heavy damage to close range Foes",
-    "element": "wind",
-    "rank": 12
+    "effect": "Heavy dmg",
+    "element": "win",
+    "rank": 12,
+    "target": "Close range"
   },
   "Garula": {
     "cost": 1012,
-    "effect": "Medium damage to close range Foes",
-    "element": "wind",
-    "rank": 4
+    "effect": "Medium dmg",
+    "element": "win",
+    "rank": 4,
+    "target": "Close range"
   },
   "Giant Slice": {
     "cost": 15,
-    "effect": "Medium damage to close range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 3
+    "effect": "Medium dmg, High crit",
+    "element": "phy",
+    "rank": 3,
+    "target": "Close range"
   },
   "Gigantomachia": {
     "cost": 24,
-    "effect": "Severe damage to wide range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 18
+    "effect": "Severe dmg, High crit",
+    "element": "phy",
+    "rank": 18,
+    "target": "Wide range"
   },
   "God's Hand": {
     "cost": 25,
-    "effect": "Colossal damage to close range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 19
+    "effect": "Colossal dmg, High crit",
+    "element": "phy",
+    "rank": 19,
+    "target": "Close range"
   },
   "Gun Amp": {
     "effect": "Gun damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Gun Boost": {
     "effect": "Gun damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Hama": {
     "cost": 1008,
-    "effect": "Low chance of instant killing close range Foes",
-    "element": "bless",
-    "rank": 4
+    "effect": "Low chance instakill",
+    "element": "lig",
+    "rank": 4,
+    "target": "Close range"
   },
   "Hama Boost": {
     "effect": "Increases success rate of Bless-type instant death attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Hamaon": {
     "cost": 1010,
-    "effect": "Medium chance of instant killing close range Foes",
-    "element": "bless",
-    "rank": 8
+    "effect": "Medium chance instakill",
+    "element": "lig",
+    "rank": 8,
+    "target": "Close range"
   },
   "Hassou Tobi": {
     "cost": 30,
-    "effect": "Colossal damage to wide range Foes with high chance of critical hit",
-    "element": "phys"
+    "effect": "Colossal dmg, High crit",
+    "element": "phy",
+    "target": "Wide range"
   },
   "Headbutt": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of Forget",
-    "element": "phys",
-    "rank": 3
+    "effect": "Light dmg, Forget",
+    "element": "phy",
+    "rank": 3,
+    "target": "Close range"
   },
   "Heat Riser": {
     "cost": 1036,
     "effect": "Tarukaja + Rakukaja + Sukukaja",
-    "element": "support",
-    "rank": 19
+    "element": "sup",
+    "rank": 19,
+    "target": "1 ally"
   },
   "Heat Wave": {
     "cost": 18,
-    "effect": "Heavy damage to wide range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 9
+    "effect": "Heavy dmg, High crit",
+    "element": "phy",
+    "rank": 9,
+    "target": "Wide range"
   },
   "Hysterical Slap": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of Rage",
-    "element": "phys",
-    "rank": 3
+    "effect": "Light dmg, Rage",
+    "element": "phy",
+    "rank": 3,
+    "target": "Close range"
   },
   "Ice Age": {
     "cost": 1038,
-    "effect": "Severe damage to wide range Foes",
+    "effect": "Severe dmg",
     "element": "ice",
-    "rank": 19
+    "rank": 19,
+    "target": "Wide range"
   },
   "Ice Amp": {
     "effect": "Ice damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Ice Boost": {
     "effect": "Ice damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Inferno": {
     "cost": 1036,
-    "effect": "Severe damage to close range Foes",
-    "element": "fire",
-    "rank": 18
+    "effect": "Severe dmg",
+    "element": "fir",
+    "rank": 18,
+    "target": "Close range"
   },
   "Knockdown Style": {
     "effect": "Greatly decreases Down Gauge when landing a critical hit",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Kouga": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
-    "element": "bless",
-    "rank": 4
+    "effect": "Medium dmg",
+    "element": "lig",
+    "rank": 4,
+    "target": "Close range"
   },
   "Kougaon": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
-    "element": "bless",
-    "rank": 12
+    "effect": "Heavy dmg",
+    "element": "lig",
+    "rank": 12,
+    "target": "Close range"
   },
   "Kouha": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
-    "element": "bless",
-    "rank": 2
+    "effect": "Light dmg",
+    "element": "lig",
+    "rank": 2,
+    "target": "Close range"
   },
   "Life Drain": {
     "cost": 1010,
-    "effect": "Drains HP from close range Foes",
-    "element": "almighty",
-    "rank": 3
+    "effect": "Absorbs HP",
+    "element": "alm",
+    "rank": 3,
+    "target": "Close range"
   },
   "Lullaby": {
     "cost": 1010,
-    "effect": "High chance of Sleep to wide range Foes",
-    "element": "ailment",
-    "rank": 13
+    "effect": "Sleep",
+    "element": "ail",
+    "rank": 13,
+    "target": "Wide range"
   },
   "Lunge": {
     "cost": 10,
-    "effect": "Light damage to close range Foes",
-    "element": "phys",
-    "rank": 1
+    "effect": "Light dmg",
+    "element": "phy",
+    "rank": 1,
+    "target": "Close range"
   },
   "Mabufu": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
+    "effect": "Light dmg",
     "element": "ice",
-    "rank": 4
+    "rank": 4,
+    "target": "Wide range"
   },
   "Mabufudyne": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
+    "effect": "Heavy dmg",
     "element": "ice",
-    "rank": 14
+    "rank": 14,
+    "target": "Wide range"
   },
   "Mabufula": {
     "cost": 1016,
-    "effect": "Medium damage to wide range Foes",
+    "effect": "Medium dmg",
     "element": "ice",
-    "rank": 8
+    "rank": 8,
+    "target": "Wide range"
   },
   "Maeiga": {
     "cost": 1014,
-    "effect": "Medium damage to wide range Foes",
-    "element": "curse",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "dar",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Maeigaon": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "curse",
-    "rank": 14
+    "effect": "Heavy dmg",
+    "element": "dar",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Maeiha": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
-    "element": "curse",
-    "rank": 4
+    "effect": "Light dmg",
+    "element": "dar",
+    "rank": 4,
+    "target": "Wide range"
   },
   "Mafrei": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
-    "element": "nuke",
-    "rank": 4
+    "effect": "Light dmg",
+    "element": "nuk",
+    "rank": 4,
+    "target": "Wide range"
   },
   "Mafreidyne": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "nuke",
-    "rank": 14
+    "effect": "Heavy dmg",
+    "element": "nuk",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Mafreila": {
     "cost": 1016,
-    "effect": "Medium damage to wide range Foes",
-    "element": "nuke",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "nuk",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Magaru": {
     "cost": 1008,
-    "effect": "Light damage to wide range Foes",
-    "element": "wind",
-    "rank": 4
+    "effect": "Light dmg",
+    "element": "win",
+    "rank": 4,
+    "target": "Wide range"
   },
   "Magarudyne": {
     "cost": 1024,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "wind",
-    "rank": 14
+    "effect": "Heavy dmg",
+    "element": "win",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Magarula": {
     "cost": 1014,
-    "effect": "Medium damage to wide range Foes",
-    "element": "wind",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "win",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Mahama": {
     "cost": 1012,
-    "effect": "Low chance of instant killing wide range Foes",
-    "element": "bless",
-    "rank": 6
+    "effect": "Low chance instakill",
+    "element": "lig",
+    "rank": 6,
+    "target": "Wide range"
   },
   "Mahamaon": {
     "cost": 1014,
-    "effect": "Medium chance of instant killing wide range Foes",
-    "element": "bless",
-    "rank": 12
+    "effect": "Medium chance instakill",
+    "element": "lig",
+    "rank": 12,
+    "target": "Wide range"
   },
   "Makajam": {
     "cost": 1008,
-    "effect": "High chance of Forget to close range Foes",
-    "element": "ailment",
-    "rank": 6
+    "effect": "Forget",
+    "element": "ail",
+    "rank": 6,
+    "target": "Close range"
   },
   "Makajamaon": {
     "cost": 1010,
-    "effect": "High chance of Forget to wide range Foes",
-    "element": "ailment",
-    "rank": 13
+    "effect": "Forget",
+    "element": "ail",
+    "rank": 13,
+    "target": "Wide range"
   },
   "Makouga": {
     "cost": 1016,
-    "effect": "Medium damage to wide range Foes",
-    "element": "bless",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "lig",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Makougaon": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "bless",
-    "rank": 14
+    "effect": "Heavy dmg",
+    "element": "lig",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Makouha": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
-    "element": "bless",
-    "rank": 4
+    "effect": "Light dmg",
+    "element": "lig",
+    "rank": 4,
+    "target": "Wide range"
   },
   "Mamudo": {
     "cost": 1012,
-    "effect": "Low chance of instant killing wide range Foes",
-    "element": "curse",
-    "rank": 6
+    "effect": "Low chance instakill",
+    "element": "dar",
+    "rank": 6,
+    "target": "Wide range"
   },
   "Mamudoon": {
     "cost": 1014,
-    "effect": "Medium chance of instant killing wide range Foes",
-    "element": "curse",
-    "rank": 12
+    "effect": "Medium chance instakill",
+    "element": "dar",
+    "rank": 12,
+    "target": "Wide range"
   },
   "Mapsi": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
+    "effect": "Light dmg",
     "element": "psy",
-    "rank": 4
+    "rank": 4,
+    "target": "Wide range"
   },
   "Mapsio": {
     "cost": 1016,
-    "effect": "Medium damage to wide range Foes",
+    "effect": "Medium dmg",
     "element": "psy",
-    "rank": 8
+    "rank": 8,
+    "target": "Wide range"
   },
   "Mapsiodyne": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
+    "effect": "Heavy dmg",
     "element": "psy",
-    "rank": 14
+    "rank": 14,
+    "target": "Wide range"
   },
   "Maragi": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
-    "element": "fire",
-    "rank": 4
+    "effect": "Light dmg",
+    "element": "fir",
+    "rank": 4,
+    "target": "Wide range"
   },
   "Maragidyne": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "fire",
-    "rank": 14
-  },
-  "Maralagidyne": {
-    "effect": "Severe damage to wide range Foes",
-    "element": "fire"
+    "effect": "Heavy dmg",
+    "element": "fir",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Maragion": {
     "cost": 1016,
-    "effect": "Medium damage to wide range Foes",
-    "element": "fire",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "fir",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Marakukaja": {
     "cost": 1024,
-    "effect": "Raise defense and prevents attacks from being interrupted for 30 sec for all Allies",
-    "element": "support",
-    "rank": 11
+    "effect": "Raise defense and prevents attacks from being interrupted for 30 sec",
+    "element": "sup",
+    "rank": 11,
+    "target": "All allies"
   },
   "Marakunda": {
     "cost": 1016,
-    "effect": "Lower defense for 30 sec for wide range Foes",
-    "element": "support",
-    "rank": 11
+    "effect": "Lower defense for 30 sec",
+    "element": "sup",
+    "rank": 11,
+    "target": "Wide range"
+  },
+  "Maralagidyne": {
+    "effect": "Severe dmg",
+    "element": "fir",
+    "target": "Wide range"
   },
   "Marin Karin": {
     "cost": 1008,
-    "effect": "High chance of Brainwash to close range Foes",
-    "element": "ailment",
-    "rank": 6
+    "effect": "Brainwash",
+    "element": "ail",
+    "rank": 6,
+    "target": "Close range"
   },
   "Masukukaja": {
     "cost": 1024,
-    "effect": "Raise critical-evade and auto-evade rate for 30 sec for all Allies",
-    "element": "support",
-    "rank": 11
+    "effect": "Raise critical-evade and auto-evade rate for 30 sec",
+    "element": "sup",
+    "rank": 11,
+    "target": "All allies"
   },
   "Masukunda": {
     "cost": 1016,
-    "effect": "Lower critical-evade and auto-evade rate for 30 sec for wide range Foes",
-    "element": "support",
-    "rank": 11
+    "effect": "Lower critical-evade and auto-evade rate for 30 sec",
+    "element": "sup",
+    "rank": 11,
+    "target": "Wide range"
   },
   "Matarukaja": {
     "cost": 1024,
-    "effect": "Raise attack for 30 sec for all Allies",
-    "element": "support",
-    "rank": 11
+    "effect": "Raise attack for 30 sec",
+    "element": "sup",
+    "rank": 11,
+    "target": "All allies"
   },
   "Matarunda": {
     "cost": 1016,
-    "effect": "Lower attack for 30 sec for wide range Foes",
-    "element": "support",
-    "rank": 11
+    "effect": "Lower attack for 30 sec",
+    "element": "sup",
+    "rank": 11,
+    "target": "Wide range"
   },
   "Mazio": {
     "cost": 1010,
-    "effect": "Light damage to wide range Foes",
-    "element": "elec",
-    "rank": 4
+    "effect": "Light dmg",
+    "element": "ele",
+    "rank": 4,
+    "target": "Wide range"
   },
   "Maziodyne": {
     "cost": 1026,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "elec",
-    "rank": 14
+    "effect": "Heavy dmg",
+    "element": "ele",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Mazionga": {
     "cost": 1016,
-    "effect": "Medium damage to wide range Foes",
-    "element": "elec",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "ele",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Media": {
     "cost": 1014,
-    "effect": "Slightly restore HP for all Allies",
-    "element": "recovery",
-    "rank": 3
+    "effect": "Slightly restore HP",
+    "element": "rec",
+    "rank": 3,
+    "target": "All allies"
   },
   "Mediarahan": {
     "cost": 1068,
-    "effect": "Fully restore HP for all Allies",
-    "element": "recovery",
-    "rank": 14
+    "effect": "Fully restore HP",
+    "element": "rec",
+    "rank": 14,
+    "target": "All allies"
   },
   "Mediarama": {
     "cost": 1032,
-    "effect": "Moderately restore HP for all Allies",
-    "element": "recovery",
-    "rank": 7
+    "effect": "Moderately restore HP",
+    "element": "rec",
+    "rank": 7,
+    "target": "All allies"
   },
   "Megaton Raid": {
     "cost": 24,
-    "effect": "Severe damage to close range Foes with medium chance of critical hit",
-    "element": "phys",
-    "rank": 14
+    "effect": "Severe dmg, Medium crit",
+    "element": "phy",
+    "rank": 14,
+    "target": "Close range"
   },
   "Megido": {
     "cost": 1014,
-    "effect": "Medium damage to wide range Foes",
-    "element": "almighty",
-    "rank": 8
+    "effect": "Medium dmg",
+    "element": "alm",
+    "rank": 8,
+    "target": "Wide range"
   },
   "Megidola": {
     "cost": 1024,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "almighty",
-    "rank": 14
+    "effect": "Heavy dmg",
+    "element": "alm",
+    "rank": 14,
+    "target": "Wide range"
   },
   "Megidolaon": {
     "cost": 1036,
-    "effect": "Severe damage to wide range Foes",
-    "element": "almighty",
-    "rank": 19
+    "effect": "Severe dmg",
+    "element": "alm",
+    "rank": 19,
+    "target": "Wide range"
   },
   "Memory Blow": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes with medium chance of Forget",
-    "element": "phys",
-    "rank": 5
+    "effect": "Medium dmg, Forget",
+    "element": "phy",
+    "rank": 5,
+    "target": "Wide range"
   },
   "Moral Boost": {
     "effect": "Raises chance of Moral Support activating",
-    "element": "passive"
+    "element": "pas"
   },
   "Moral Boost EX": {
     "effect": "Greatly raises chance of Moral Support activating",
-    "element": "passive"
+    "element": "pas"
   },
   "Moral Support": {
     "effect": "Chance to recover HP, recover SP, or cast random -kaja effect on all Allies",
-    "element": "passive"
+    "element": "pas"
   },
   "Morning Star": {
     "cost": 1050,
-    "effect": "Colossal damage to wide range Foes",
-    "element": "almighty"
+    "effect": "Colossal dmg",
+    "element": "alm",
+    "target": "Wide range"
   },
   "Mudo": {
     "cost": 1008,
-    "effect": "Low chance of instant killing close range Foes",
-    "element": "curse",
-    "rank": 4
+    "effect": "Low chance instakill",
+    "element": "dar",
+    "rank": 4,
+    "target": "Close range"
   },
   "Mudo Boost": {
     "effect": "Increases success rate of Curse-type instant death attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Mudoon": {
     "cost": 1010,
-    "effect": "Medium chance of instant killing close range Foes",
-    "element": "curse",
-    "rank": 8
+    "effect": "Medium chance instakill",
+    "element": "dar",
+    "rank": 8,
+    "target": "Close range"
   },
   "Myriad Slashes": {
     "cost": 24,
-    "effect": "Severe damage to wide range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 18
+    "effect": "Severe dmg, High crit",
+    "element": "phy",
+    "rank": 18,
+    "target": "Wide range"
   },
   "Nocturnal Flash": {
     "cost": 1010,
-    "effect": "High chance of Dizzy to wide range Foes",
-    "element": "ailment",
-    "rank": 13
+    "effect": "Dizzy",
+    "element": "ail",
+    "rank": 13,
+    "target": "Wide range"
   },
   "Nuke Amp": {
     "effect": "Nuke damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Nuke Boost": {
     "effect": "Nuke damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Null Bless": {
     "effect": "Nullifies Bless attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Brainwash": {
     "effect": "Imparts immunity to Brainwash",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Null Curse": {
     "effect": "Nullifies Curse attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Dizzy": {
     "effect": "Imparts immunity to Dizzy",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Null Elec": {
     "effect": "Nullifies Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Fear": {
     "effect": "Imparts immunity to Fear",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Null Fire": {
     "effect": "Nullifies Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Forget": {
     "effect": "Imparts immunity to Forget",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Null Ice": {
     "effect": "Nullifies Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Nuke": {
     "effect": "Nullifies Nuke attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Psy": {
     "effect": "Nullifies Psy attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "Null Rage": {
     "effect": "Imparts immunity to Rage",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Null Sleep": {
     "effect": "Imparts immunity to Sleep",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Null Wind": {
     "effect": "Nullifies Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 15
   },
   "One-shot Kill": {
     "cost": 30,
-    "effect": "Heavy damage to close range Foes with very high chance of critical hit",
+    "effect": "Heavy dmg, Very high crit",
     "element": "gun",
-    "rank": 17
+    "rank": 17,
+    "target": "Close range"
   },
   "Oni Kagura": {
     "cost": 18,
-    "effect": "Medium damage to wide range Foes with medium chance of Rage",
-    "element": "phys",
-    "rank": 11
+    "effect": "Medium dmg, Rage",
+    "element": "phy",
+    "rank": 11,
+    "target": "Wide range"
   },
   "Panta Rhei": {
     "cost": 1034,
-    "effect": "Severe damage to close range Foes",
-    "element": "wind",
-    "rank": 18
+    "effect": "Severe dmg",
+    "element": "win",
+    "rank": 18,
+    "target": "Close range"
   },
   "Psi": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
+    "effect": "Light dmg",
     "element": "psy",
-    "rank": 2
+    "rank": 2,
+    "target": "Close range"
   },
   "Psio": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
+    "effect": "Medium dmg",
     "element": "psy",
-    "rank": 4
+    "rank": 4,
+    "target": "Close range"
   },
   "Psiodyne": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
+    "effect": "Heavy dmg",
     "element": "psy",
-    "rank": 12
+    "rank": 12,
+    "target": "Close range"
   },
   "Psy Amp": {
     "effect": "Psy damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Psy Boost": {
     "effect": "Psy damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Psycho Blast": {
     "cost": 1038,
-    "effect": "Severe damage to wide range Foes",
+    "effect": "Severe dmg",
     "element": "psy",
-    "rank": 19
+    "rank": 19,
+    "target": "Wide range"
   },
   "Psycho Force": {
     "cost": 1036,
-    "effect": "Severe damage to close range Foes",
+    "effect": "Severe dmg",
     "element": "psy",
-    "rank": 18
+    "rank": 18,
+    "target": "Close range"
   },
   "Rage Boost": {
     "effect": "Increases chance of inflicting Rage",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Rakukaja": {
     "cost": 1012,
-    "effect": "Raise defense and prevents attacks from being interrupted for 30 sec for 1 Ally",
-    "element": "support",
-    "rank": 1
+    "effect": "Raise defense and prevents attacks from being interrupted for 30 sec",
+    "element": "sup",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Rakunda": {
     "cost": 1012,
-    "effect": "Lower defense for 30 sec for close range Foes",
-    "element": "support",
-    "rank": 1
+    "effect": "Lower defense for 30 sec",
+    "element": "sup",
+    "rank": 1,
+    "target": "Close range"
   },
   "Rampage": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes",
-    "element": "phys",
-    "rank": 3
+    "effect": "Medium dmg",
+    "element": "phy",
+    "rank": 3,
+    "target": "Wide range"
   },
   "Rebel Soul": {
     "effect": "Showtime Gauge increases more quickly",
-    "element": "passive",
+    "element": "pas",
     "rank": 16
   },
   "Recarm": {
     "cost": 1024,
-    "effect": "Revive 1 Ally with 50% HP",
-    "element": "recovery",
-    "rank": 5
+    "effect": "Revive with 50% HP",
+    "element": "rec",
+    "rank": 5,
+    "target": "1 ally"
   },
   "Regenerate 1": {
     "effect": "Gradually restores HP, Minimum effect, Stacks with other Regenerate skills",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Regenerate 2": {
     "effect": "Gradually restores HP, Minor effect, Stacks with other Regenerate skills",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Regenerate 3": {
     "effect": "Gradually restores HP, Stacks with other Regenerate skills",
-    "element": "passive",
+    "element": "pas",
     "rank": 13
   },
   "Resist Bless": {
     "effect": "Halves damage from Bless attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Curse": {
     "effect": "Halves damage from Curse attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Elec": {
     "effect": "Halves damage from Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Fire": {
     "effect": "Halves damage from Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Ice": {
     "effect": "Halves damage from Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Nuke": {
     "effect": "Halves damage from Nuke attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Phys": {
     "effect": "Halves damage from Phys attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Psy": {
     "effect": "Halves damage from Psy attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Resist Wind": {
     "effect": "Halves damage from Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Riot Gun": {
     "cost": 40,
-    "effect": "Severe damage to wide range Foes with high chance of critical hit",
+    "effect": "Severe dmg, High crit",
     "element": "gun",
-    "rank": 19
+    "rank": 19,
+    "target": "Wide range"
   },
   "Salvation": {
     "cost": 1084,
-    "effect": "Fully restore HP and revive or recover non-special ailments for all Allies",
-    "element": "recovery",
-    "rank": 19
+    "effect": "Mediarahan + Amrita Shower",
+    "element": "rec",
+    "rank": 19,
+    "target": "All allies"
   },
   "Samarecarm": {
     "cost": 1048,
-    "effect": "Revive 1 Ally with 100% HP",
-    "element": "recovery",
-    "rank": 9
+    "effect": "Revive with 100% HP",
+    "element": "rec",
+    "rank": 9,
+    "target": "1 ally"
   },
   "Shadow of Grief": {
     "effect": "Recovers SP when draining damage",
-    "element": "passive"
+    "element": "pas"
   },
   "Shock Boost": {
     "effect": "Increases chance of inflicting Shock",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Sledgehammer": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of Dizzy",
-    "element": "phys",
-    "rank": 3
+    "effect": "Light dmg, Dizzy",
+    "element": "phy",
+    "rank": 3,
+    "target": "Close range"
   },
   "Sleep Boost": {
     "effect": "Increases chance of inflicting Sleep",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Snap": {
     "cost": 16,
-    "effect": "Light damage to close range Foes",
+    "effect": "Light dmg",
     "element": "gun",
-    "rank": 1
+    "rank": 1,
+    "target": "Close range"
   },
   "Soul Thief": {
     "effect": "Drains SP when inflicting an ailment on a Foe",
-    "element": "passive",
+    "element": "pas",
     "rank": 16
   },
   "Speed Master": {
     "effect": "Activates Sukukaja at the start of battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Spell Master": {
     "effect": "Halves SP costs for skills",
-    "element": "passive",
+    "element": "pas",
     "rank": 19
   },
   "Sukukaja": {
     "cost": 1012,
-    "effect": "Raise critical-evade and auto-evade rate for 30 sec for 1 Ally",
-    "element": "support",
-    "rank": 1
+    "effect": "Raise critical-evade and auto-evade rate for 30 sec",
+    "element": "sup",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Sukunda": {
     "cost": 1012,
-    "effect": "Lower critical-evade and auto-evade rate for 30 sec for close range Foes",
-    "element": "support",
-    "rank": 1
+    "effect": "Lower critical-evade and auto-evade rate for 30 sec",
+    "element": "sup",
+    "rank": 1,
+    "target": "Close range"
   },
   "Survival Trick": {
     "effect": "Survive all instant death attacks with 1 HP",
-    "element": "passive",
+    "element": "pas",
     "rank": 17
   },
   "Swift Strike": {
     "cost": 18,
-    "effect": "Heavy damage to wide range Foes",
-    "element": "phys",
-    "rank": 10
+    "effect": "Heavy dmg",
+    "element": "phy",
+    "rank": 10,
+    "target": "Wide range"
   },
   "Sword Dance": {
     "cost": 25,
-    "effect": "Severe damage to close range Foes with very high chance of critical hit",
-    "element": "phys",
-    "rank": 18
+    "effect": "Severe dmg, Very high crit",
+    "element": "phy",
+    "rank": 18,
+    "target": "Close range"
   },
   "Tarukaja": {
     "cost": 1012,
-    "effect": "Raise attack for 30 sec for 1 Ally",
-    "element": "support",
-    "rank": 1
+    "effect": "Raise attack for 30 sec",
+    "element": "sup",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Tarunda": {
     "cost": 1012,
-    "effect": "Lower attack for 30 sec for close range Foes",
-    "element": "support",
-    "rank": 1
+    "effect": "Lower attack for 30 sec",
+    "element": "sup",
+    "rank": 1,
+    "target": "Close range"
   },
   "Taunt": {
     "cost": 1008,
-    "effect": "High chance of Rage to close range Foes",
-    "element": "ailment",
-    "rank": 6
+    "effect": "Rage",
+    "element": "ail",
+    "rank": 6,
+    "target": "Close range"
   },
   "Technical Adept": {
     "effect": "Increases damage of technical hits",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Technical High": {
     "effect": "Extends duration of -kaja effects on self when landing a critical hit",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Tempest Slash": {
     "cost": 18,
-    "effect": "Heavy damage to wide range Foes with high chance of critical hit",
-    "element": "phys",
-    "rank": 9
+    "effect": "Heavy dmg, High crit",
+    "element": "phy",
+    "rank": 9,
+    "target": "Wide range"
   },
   "Terror Claw": {
     "cost": 10,
-    "effect": "Light damage to close range Foes with medium chance of Fear",
-    "element": "phys",
-    "rank": 1
+    "effect": "Light dmg, Fear",
+    "element": "phy",
+    "rank": 1,
+    "target": "Close range"
   },
   "Tetraja": {
     "cost": 1006,
-    "effect": "Nullify next instant death attack for 1 Ally",
-    "element": "support",
-    "rank": 3
+    "effect": "Nullify next instakill attack",
+    "element": "sup",
+    "rank": 3,
+    "target": "1 ally"
   },
   "Thunder Reign": {
     "cost": 1036,
-    "effect": "Severe damage to close range Foes",
-    "element": "elec",
-    "rank": 18
+    "effect": "Severe dmg",
+    "element": "ele",
+    "rank": 18,
+    "target": "Close range"
   },
   "Triple Down": {
     "cost": 24,
-    "effect": "Heavy damage to wide range Foes with high chance of critical hit",
+    "effect": "Heavy dmg, High crit",
     "element": "gun",
-    "rank": 11
+    "rank": 11,
+    "target": "Wide range"
   },
   "Vacuum Wave": {
     "cost": 1036,
-    "effect": "Severe damage to wide range Foes",
-    "element": "wind",
-    "rank": 19
+    "effect": "Severe dmg",
+    "element": "win",
+    "rank": 19,
+    "target": "Wide range"
   },
   "Vajra Blast": {
     "cost": 12,
-    "effect": "Medium damage to wide range Foes",
-    "element": "phys",
-    "rank": 3
+    "effect": "Medium dmg",
+    "element": "phy",
+    "rank": 3,
+    "target": "Wide range"
   },
   "Vicious Strike": {
     "cost": 12,
-    "effect": "Light damage to wide range Foes with medium chance of critical hit",
-    "element": "phys",
-    "rank": 3
+    "effect": "Light dmg, Medium crit",
+    "element": "phy",
+    "rank": 3,
+    "target": "Wide range"
   },
   "Vorpal Blade": {
     "cost": 18,
-    "effect": "Severe damage to close range Foes with medium chance of critical hit",
-    "element": "phys",
-    "rank": 18
+    "effect": "Severe dmg, Medium crit",
+    "element": "phy",
+    "rank": 18,
+    "target": "Close range"
   },
   "Wage War": {
     "cost": 1010,
-    "effect": "High chance of Rage to wide range Foes",
-    "element": "ailment",
-    "rank": 13
+    "effect": "Rage",
+    "element": "ail",
+    "rank": 13,
+    "target": "Wide range"
   },
   "Wild Thunder": {
     "cost": 1038,
-    "effect": "Severe damage to wide range Foes",
-    "element": "elec",
-    "rank": 19
+    "effect": "Severe dmg",
+    "element": "ele",
+    "rank": 19,
+    "target": "Wide range"
   },
   "Wind Amp": {
     "effect": "Wind damage +50%",
-    "element": "passive",
+    "element": "pas",
     "rank": 18
   },
   "Wind Boost": {
     "effect": "Wind damage +25%",
-    "element": "passive",
+    "element": "pas",
     "rank": 12
   },
   "Zio": {
     "cost": 1008,
-    "effect": "Light damage to close range Foes",
-    "element": "elec",
-    "rank": 2
+    "effect": "Light dmg",
+    "element": "ele",
+    "rank": 2,
+    "target": "Close range"
   },
   "Ziodyne": {
     "cost": 1024,
-    "effect": "Heavy damage to close range Foes",
-    "element": "elec",
-    "rank": 12
+    "effect": "Heavy dmg",
+    "element": "ele",
+    "rank": 12,
+    "target": "Close range"
   },
   "Zionga": {
     "cost": 1014,
-    "effect": "Medium damage to close range Foes",
-    "element": "elec",
-    "rank": 4
+    "effect": "Medium dmg",
+    "element": "ele",
+    "rank": 4,
+    "target": "Close range"
   }
 }

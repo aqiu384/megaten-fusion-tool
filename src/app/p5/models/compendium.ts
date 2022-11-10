@@ -88,6 +88,7 @@ export class Compendium implements ICompendium {
           name,
           element: json['element'],
           effect:  json['effect'],
+          target:  json['target'] || 'Self',
           rank:    json['cost'] / 100 || 0,
           cost:    json['cost'] || 0,
           transfer:  [],

@@ -10,9 +10,9 @@ import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
-
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { EnemyEntryComponent } from './components/enemy-entry.component';
+import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 @NgModule({
   imports: [
@@ -30,6 +30,7 @@ import { EnemyEntryComponent } from './components/enemy-entry.component';
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    RecipeGeneratorContainerComponent
   ],
   exports: [
     CompendiumComponent,
@@ -40,6 +41,7 @@ import { EnemyEntryComponent } from './components/enemy-entry.component';
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    RecipeGeneratorContainerComponent
   ],
 })
 export class P5CompendiumModule {

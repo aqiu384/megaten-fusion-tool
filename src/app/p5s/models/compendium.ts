@@ -64,6 +64,7 @@ export class Compendium implements ICompendium {
           element:   json['element'],
           cost:      json['cost'] || 0,
           rank:      json['rank'] || 99,
+          target:    json['target'] || 'Self',
           effect:    json['effect'],
           learnedBy: [],
           transfer:  json['transfer'] ? [{ demon: json['transfer'], level: -100 }] : [],
@@ -120,7 +121,7 @@ export class Compendium implements ICompendium {
       for (let i = 0; i < demon.combos.length; i++) {
         const skill = demon.combos[i];
 
-        if (skills[skill].element !== 'passive') {
+        if (skills[skill].element !== 'pas') {
           skills[skill].learnedBy.push({ demon: demon.name, level: 3517 + i })
         }
       }

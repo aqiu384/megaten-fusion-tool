@@ -91,7 +91,7 @@ export class DemonEntryComponent implements OnChanges {
     for (let i = 0; i < this.demon.combos.length; i++) {
       const skill = this.compendium.getSkill(this.demon.combos[i]);
 
-      if (skill.element !== 'passive') {
+      if (skill.element !== 'pas') {
         combos.push({ skill, combo: inputs[i] });
       }
     }

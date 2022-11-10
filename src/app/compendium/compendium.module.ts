@@ -1,10 +1,12 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 
 import { FusionEntryTableComponent } from './components/fusion-entry-table.component';
 import { FusionChartComponent } from './components/fusion-chart.component';
+import { RecipeGeneratorComponent } from './components/recipe-generator.component';
 
 import { DemonListHeaderComponent } from './components/demon-list-header.component';
 import { SkillListHeaderComponent } from './components/skill-list-header.component';
@@ -56,6 +58,7 @@ import {
   imports: [
     CommonModule,
     RouterModule,
+    ReactiveFormsModule,
     SharedModule
   ],
   declarations: [
@@ -73,6 +76,7 @@ import {
     SmtSkillListRowComponent,
     FusionEntryTableComponent,
     FusionChartComponent,
+    RecipeGeneratorComponent,
     CompendiumComponent,
     CompendiumHeaderComponent,
     SmtFusionsComponent,
@@ -111,6 +115,7 @@ import {
     SmtSkillListRowComponent,
     FusionEntryTableComponent,
     FusionChartComponent,
+    RecipeGeneratorComponent,
     CompendiumComponent,
     CompendiumHeaderComponent,
     SmtFusionsComponent,
