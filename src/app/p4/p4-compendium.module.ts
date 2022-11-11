@@ -8,9 +8,9 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
-
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { EnemyEntryComponent } from './components/enemy-entry.component';
+import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 @NgModule({
   imports: [
@@ -26,6 +26,7 @@ import { EnemyEntryComponent } from './components/enemy-entry.component';
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    RecipeGeneratorContainerComponent
   ],
   exports: [
     CompendiumComponent,
@@ -34,6 +35,7 @@ import { EnemyEntryComponent } from './components/enemy-entry.component';
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    RecipeGeneratorContainerComponent
   ],
 })
 export class P4CompendiumModule {

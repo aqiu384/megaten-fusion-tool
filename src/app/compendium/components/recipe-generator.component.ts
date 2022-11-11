@@ -41,9 +41,8 @@ import { createSkillsRecipe } from '../models/recipe-generator';
           <th style="width: 5%;">Elem</th>
           <th style="width: 15%;">Name</th>
           <th style="width: 10%;">Cost</th>
-          <th style="width: 50%;">Effect</th>
-          <th style="width: 10%;">Target</th>
-          <th style="width: 10%;">Rank</th>
+          <th style="width: 55%;">Effect</th>
+          <th style="width: 15%;">Target</th>
         </tr>
         <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
           <tr *ngIf="i < maxSkills">
@@ -62,7 +61,6 @@ import { createSkillsRecipe } from '../models/recipe-generator';
               <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
               <td>{{ entry.effect }}</td>
               <td>{{ entry.target }}</td>
-              <td [style.color]="entry.rank !== 99 ? null: 'transparent'">{{ entry.rank }}</td>
             </ng-container>
           </tr>
         </ng-container>
@@ -98,6 +96,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   @Input() fusionChart: FusionChart;
   @Input() recipeConfig: RecipeGeneratorConfig;
 
+  internalMaxSkills = 9;
   range99 = Array(99);
   races: string[];
   elems: string[];
@@ -128,7 +127,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   createForm() {
     const skills = [];
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < this.internalMaxSkills; i++) {
       skills.push(this.fb.group({ elem: '-', custom: this.blankSkill }));
     }
 
@@ -192,8 +191,10 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.skills = { '-': [this.blankSkill] };
 
     for (const demon of this.compendium.allDemons) {
-      if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
-      this.demons[demon.race].push(demon);
+      if ((demon.fusion === 'normal' || demon.fusion === 'special') && !demon.isEnemy) {
+        if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
+        this.demons[demon.race].push(demon);
+      }
     }
 
     for (const skill of this.compendium.allSkills.filter(s => s.rank < 50 && s.learnedBy.length > 0)) {
@@ -217,6 +218,9 @@ export class RecipeGeneratorComponent implements OnChanges {
   setDemon(demon: Demon) {
     const excludeElems: string[] = [];
     const { inheritElems } = this.recipeConfig;
+    const innateSkills = Object.entries(demon.skills)
+      .filter(s => s[1] === 0)
+      .map(s => this.compendium.getSkill(s[0]));
 
     for (let i = 0; i < inheritElems.length; i++) {
       if (!(demon.inherits & (1 << i))) {
@@ -224,11 +228,14 @@ export class RecipeGeneratorComponent implements OnChanges {
       }
     }
     
+    this.skills[this.blankSkill.element] = [this.blankSkill].concat(innateSkills);
     this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e] && !excludeElems.includes(e));
     this.form.patchValue({
       race: demon.race,
       demon: demon,
-      skills: Array(8).fill({ elem: '-', custom: this.blankSkill })
+      skills: innateSkills
+        .concat(Array(this.internalMaxSkills - innateSkills.length).fill(this.blankSkill))
+        .map(s => ({ elem: '-', custom: s }))
     });
   }
 }

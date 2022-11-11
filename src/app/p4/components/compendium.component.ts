@@ -9,16 +9,22 @@ import { FusionDataService } from '../fusion-data.service';
       [ngClass]="appCssClasses"
       [hasSettings]="false"
       [mainList]="'persona'"
-      [otherLinks]="[{ title: 'Shadow List', link: 'shadows' }]">
+      [otherLinks]="otherLinks">
     </app-demon-compendium>
   `,
   styleUrls: [ './compendium.component.css' ],
   encapsulation: ViewEncapsulation.None
 })
 export class CompendiumComponent {
-  appCssClasses = ['smtnes', 'smt1'];
+  otherLinks: { title: string, link: string }[];
+  appCssClasses: string[];
 
   constructor(fusionDataService: FusionDataService) {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
+    this.otherLinks = [{ title: 'Shadow List', link: 'shadows' }];
+
+    if (fusionDataService.appName.includes('Golden')) {
+      this.otherLinks.push({ title: 'Recipe Generator', link: 'recipes' });
+    }
   }
 }

@@ -33,20 +33,22 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-resists>
       <table *ngIf="comboSkills.length" class="entry-table">
         <thead>
-          <tr><th colSpan="4" class="title">Combo Skills</th></tr>
-          <tr><th>Elem</th><th>Name</th><th>Effect</th><th>Input</th></tr>
+          <tr><th colSpan="5" class="title">Combo Skills</th></tr>
+          <tr><th>Elem</th><th>Name</th><th>Effect</th><th>Target</th><th>Input</th></tr>
         </thead>
         <tbody>
           <tr *ngFor="let data of comboSkills">
             <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
             <td>{{ data.skill.name }}</td>
             <td>{{ data.skill.effect }}</td>
+            <td>{{ data.skill.target }}</td>
             <td>{{ data.combo }}</td>
           </tr>
         </tbody>
       </table>
       <app-demon-skills
         [elemOrder]="compConfig.elemOrder"
+        [hasTarget]="true"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>

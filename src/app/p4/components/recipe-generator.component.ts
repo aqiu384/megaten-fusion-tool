@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { RecipeGeneratorConfig } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
-import { FusionChart } from '../models/fusion-chart';
+import { PersonaFusionChart } from '../../compendium/models/per-fusion-chart';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
@@ -22,7 +22,7 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   compendium: Compendium;
-  fusionChart: FusionChart;
+  fusionChart: PersonaFusionChart;
   recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
   defaultDemon = 'Pixie';
@@ -30,7 +30,6 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
-    this.maxSkills = compConfig.skillElems.includes('tra') ? 9 : 8;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
       fusionCalculator: this.fusionDataService.fusionCalculator,

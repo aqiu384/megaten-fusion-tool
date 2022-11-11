@@ -120,6 +120,7 @@ export class Compendium implements ICompendium {
 
       if (json.length === 0) {
         demon.fusion = 'recruit';
+        demon.price += 200000;
       }
     }
 

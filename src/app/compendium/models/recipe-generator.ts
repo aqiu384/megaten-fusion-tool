@@ -18,8 +18,8 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
     .sort((a, b) => a.price - b.price)
     .find(p =>
       (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
-      fissionCalculator.getFusions(p.name1, comp, chart).length > 0 &&
-      fissionCalculator.getFusions(p.name2, comp, chart).length > 0
+      (comp.getDemon(p.name1).fusion === 'normal' || comp.getDemon(p.name1).fusion === 'special') &&
+      (comp.getDemon(p.name2).fusion === 'normal' || comp.getDemon(p.name2).fusion === 'special')
     )
 
   const stepR = pairR ? [pairR.name1, pairR.name2] : comp.getSpecialNameEntries(demon);
@@ -162,7 +162,12 @@ function createFusionFull(ingreds: string[], inheritChain: number[], result: str
     let chain2 = createFusionPath(ingred1, ingredR, inheritR, comp, chart, recipeConfig);
 
     if (chain2.length === 0) {
-      for (const elem of chart.elementDemons) {
+      const demonR = comp.getDemon(ingredR);
+      const sameRaceR = comp.getResultDemonLvls(demonR.race)
+        .map(l => comp.reverseLookupDemon(demonR.race, l))
+        .filter(i => i !== ingredR);
+
+      for (const elem of chart.elementDemons.concat(sameRaceR)) {
         if ((inheritR & comp.getDemon(elem).inherits) !== inheritR) { continue; }
 
         const chain3 = createFusionPath(ingred1, elem, inheritR, comp, chart, recipeConfig);
