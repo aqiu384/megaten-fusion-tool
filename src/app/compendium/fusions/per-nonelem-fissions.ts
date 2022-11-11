@@ -11,16 +11,18 @@ export function splitWithSameRace(name: string, compendium: Compendium, fusionCh
   const resultLvls = compendium.getResultDemonLvls(targetRace);
   const targetLvlIndex = resultLvls.indexOf(targetLvl);
 
-  const minResultLvl = 2 * targetLvl;
-  const maxResultLvl = resultLvls[targetLvlIndex + 1] ? 2 * resultLvls[targetLvlIndex + 1] : 200;
-  const nextResultLvl = resultLvls[targetLvlIndex + 2] ? 2 * resultLvls[targetLvlIndex + 2] : 200;
+  const lvlModifier = 1;
+  const minResultLvl = 2 * (targetLvl - lvlModifier);
+  const maxResultLvl = resultLvls[targetLvlIndex + 1] ? 2 * (resultLvls[targetLvlIndex + 1] - lvlModifier) : 200;
+  const nextResultLvl = resultLvls[targetLvlIndex + 2] ? 2 * (resultLvls[targetLvlIndex + 2] - lvlModifier) : 200;
 
   const ingLvls = compendium.getIngredientDemonLvls(targetRace).filter(lvl => lvl !== targetLvl);
+  const ingLvlM = maxResultLvl / 2 + lvlModifier;
 
   for (const ingLvl2 of ingLvls) {
-    if (maxResultLvl / 2 < ingLvl2 && ingLvl2 + maxResultLvl / 2 < nextResultLvl) {
+    if (ingLvlM < ingLvl2 && ingLvlM + ingLvl2 < nextResultLvl) {
       recipes.push({
-        name1: compendium.reverseLookupDemon(targetRace, maxResultLvl / 2),
+        name1: compendium.reverseLookupDemon(targetRace, ingLvlM),
         name2: compendium.reverseLookupDemon(targetRace, ingLvl2)
       });
     }
