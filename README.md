@@ -15,7 +15,7 @@ Fusion tool framework for Megami Tensei games.
 * Enemy Table (Persona Series)
 * Password Generator (Strange Journey and Redux)
 * QR Code Generator (Persona Q and Q2)
-* Recipe Generator (IV, Apocalypse, V, and Soul Hackers 2)
+* Recipe Generator (IV, Apocalypse, V, SH2, P4G, P5, and P5R)
 * DLC Demon/Persona Settings
 
 ## Supported Megami Tensei Games
