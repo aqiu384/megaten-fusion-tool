@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
-import { Demon, Skill, FusionRecipe, Compendium, FusionChart, RecipeGeneratorConfig } from '../../compendium/models';
+import { Demon, Skill, FusionRecipe, Compendium, SquareChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { createSkillsRecipe } from '../models/recipe-generator';
 
 @Component({
@@ -93,7 +93,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   @Input() defaultDemon = 'Pixie';
   @Input() maxSkills = 8;
   @Input() compendium: Compendium;
-  @Input() fusionChart: FusionChart;
+  @Input() squareChart: SquareChart;
   @Input() recipeConfig: RecipeGeneratorConfig;
 
   internalMaxSkills = 9;
@@ -140,7 +140,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
         const dskills = form.skills.map(s => s.custom.name).filter(s => s !== '-');
-        this.updateRecipe(createSkillsRecipe(form.demon.name, dskills, this.compendium, this.fusionChart, this.recipeConfig));
+        this.updateRecipe(createSkillsRecipe(form.demon.name, dskills, this.compendium, this.squareChart, this.recipeConfig));
       }
     });
   }
@@ -185,7 +185,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   }
 
   initDropdowns() {
-    if (!this.recipeConfig || !this.compendium || !this.fusionChart) { return; }
+    if (!this.recipeConfig || !this.compendium || !this.squareChart) { return; }
 
     this.demons = {};
     this.skills = { '-': [this.blankSkill] };

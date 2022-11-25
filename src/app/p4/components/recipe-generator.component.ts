@@ -2,9 +2,8 @@ import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { RecipeGeneratorConfig } from '../../compendium/models';
+import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
-import { PersonaFusionChart } from '../../compendium/models/per-fusion-chart';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
@@ -15,14 +14,14 @@ import { FusionDataService } from '../fusion-data.service';
       [defaultDemon]="defaultDemon"
       [maxSkills]="maxSkills"
       [compendium]="compendium"
-      [fusionChart]="fusionChart"
+      [squareChart]="squareChart"
       [recipeConfig]="recipeConfig">
     </app-recipe-generator>
   `
 })
 export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   compendium: Compendium;
-  fusionChart: PersonaFusionChart;
+  squareChart: SquareChart;
   recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
   defaultDemon = 'Pixie';
@@ -37,6 +36,9 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       skillElems: compConfig.skillElems,
       inheritElems: compConfig.inheritElems,
       restrictInherits: true,
+      triExclusiveRaces: ['Fool', 'Fortune', 'Tower', 'Judgement', 'Aeon', 'Jester'],
+      triFissionCalculator: this.fusionDataService.triFissionCalculator,
+      triFusionCalculator: this.fusionDataService.triFusionCalculator
     };
   }
 
@@ -54,8 +56,8 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       }));
 
     this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(chart => {
-        this.fusionChart = chart;
+      this.fusionDataService.squareChart.subscribe(chart => {
+        this.squareChart = chart;
       }));
   }
 

@@ -1,8 +1,9 @@
-import { Demon, Skill, FusionRecipe, Compendium, FusionChart, RecipeGeneratorConfig } from '../models';
-import { toFusionPair, toFusionPairResult } from './conversions';
+import { Demon, Skill, FusionRecipe, Compendium, FusionChart, SquareChart, RecipeGeneratorConfig } from '../models';
+import { toFusionPair, toFusionPairResult, toDemonTrio } from './conversions';
 
-export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, chart: FusionChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
-  const { fissionCalculator, inheritElems, restrictInherits } = recipeConfig;
+export function createSkillsRecipe(demon: string, skills: string[], comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
+  const { fissionCalculator, inheritElems, restrictInherits, triExclusiveRaces, triFissionCalculator } = recipeConfig;
+  const { normalChart } = squareChart;
   const demonR = comp.getDemon(demon);
   const skillsI = skills.map(s => comp.getSkill(s)).filter((s, i, a) =>
     s.rank < 50 &&
@@ -12,17 +13,38 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
   );
 
   const canInheritI = canInheritCode(skillsI.map(s => s.element), inheritElems);
-  const pairR = fissionCalculator
-    .getFusions(demon, comp, chart)
-    .map(p => toFusionPair(p, comp))
-    .sort((a, b) => a.price - b.price)
-    .find(p =>
-      (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
-      (comp.getDemon(p.name1).fusion === 'normal' || comp.getDemon(p.name1).fusion === 'special') &&
-      (comp.getDemon(p.name2).fusion === 'normal' || comp.getDemon(p.name2).fusion === 'special')
-    )
 
-  const stepR = pairR ? [pairR.name1, pairR.name2] : comp.getSpecialNameEntries(demon);
+  let stepR = comp.getSpecialNameEntries(demon);
+
+  if (stepR.length < 2 && triExclusiveRaces.includes(demonR.race)) {
+    const trioR = triFissionCalculator
+      .getFusions(demon, comp, squareChart)
+      .map(p => toDemonTrio(p, comp))
+      .sort((a, b) => a.price - b.price)
+      .find(t =>
+        (canInheritI & (t.d1.inherits | t.d2.inherits | t.d3.inherits)) === canInheritI &&
+        (t.d1.fusion === 'special' || !triExclusiveRaces.includes(t.d1.race)) &&
+        (t.d2.fusion === 'special' || !triExclusiveRaces.includes(t.d2.race)) &&
+        (t.d3.fusion === 'special' || !triExclusiveRaces.includes(t.d3.race))
+      );
+    if (trioR) { stepR = [trioR.d1.name, trioR.d2.name, trioR.d3.name]; }
+  }
+
+  if (stepR.length < 2) {
+    const pairR = fissionCalculator
+      .getFusions(demon, comp, normalChart)
+      .map(p => toFusionPair(p, comp))
+      .sort((a, b) => a.price - b.price)
+      .find(p =>
+        (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
+        (comp.getDemon(p.name1).fusion === 'normal' || comp.getDemon(p.name1).fusion === 'special') &&
+        (comp.getDemon(p.name2).fusion === 'normal' || comp.getDemon(p.name2).fusion === 'special')
+      );
+    if (pairR) { stepR = [pairR.name1, pairR.name2]; }
+  }
+
+  console.log(stepR)
+
   const ingredsR = stepR.map(i => comp.getDemon(i)).sort((a, b) => a.price - b.price);
 
   const skillRef: { [skill: string]: string } = {};
@@ -48,7 +70,7 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
   for (const skill of skillsR) {
     const demons = skill.learnedBy.map(d => comp.getDemon(d.demon));
     skillRef[skill.name] = demons.length > 1 ?
-      demons.find(d => Object.keys(chart.getRaceFusions(d.race)).length > 0 && d.fusion !== 'excluded').name :
+      demons.find(d => Object.keys(normalChart.getRaceFusions(d.race)).length > 0 && d.fusion !== 'excluded').name :
       demons[0].name;
   }
 
@@ -78,7 +100,7 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
 
   const ingreds = Object.values(skillRef).filter((d, i, a) => a.indexOf(d) === i);
   const halfPoint = Math.ceil(ingreds.length / 2);
-  ingreds.sort((a, b) => chart.getLightDark(comp.getDemon(a).race) - chart.getLightDark(comp.getDemon(b).race));
+  ingreds.sort((a, b) => normalChart.getLightDark(comp.getDemon(a).race) - normalChart.getLightDark(comp.getDemon(b).race));
 
   let leftIngreds = ingreds.slice(0, halfPoint);
   let leftInherits = Array(leftIngreds.length).fill(0);
@@ -93,14 +115,14 @@ export function createSkillsRecipe(demon: string, skills: string[], comp: Compen
     rightInherits = canInheritChain(rightSkills.map(s => comp.getSkill(s).element), inheritElems);
   }
 
-  recipe.chain1 = createFusionFull(leftIngreds, leftInherits, leftIngredR.name, comp, chart, recipeConfig);
-  recipe.chain2 = createFusionFull(rightIngreds, rightInherits, rightIngredR.name, comp, chart, recipeConfig);
+  recipe.chain1 = createFusionFull(leftIngreds, leftInherits, leftIngredR.name, comp, normalChart, recipeConfig);
+  recipe.chain2 = createFusionFull(rightIngreds, rightInherits, rightIngredR.name, comp, normalChart, recipeConfig);
 
   return recipe;
 }
 
 function canInheritCode(includeElems: string[], inheritElems: string[]): number {
-  return parseInt(inheritElems.map(e => includeElems.includes(e) ? '1' : '0').join(''), 2);
+  return parseInt(inheritElems.map(e => includeElems.includes(e) ? '1' : '0').join(''), 2) || 0;
 }
 
 function canInheritChain(includeElems: string[], inheritElems: string[]): number[] {

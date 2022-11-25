@@ -179,6 +179,9 @@ export interface RecipeGeneratorConfig {
   skillElems: string[];
   inheritElems: string[];
   restrictInherits: boolean;
+  triExclusiveRaces: string[];
+  triFissionCalculator: TripleCalculator;
+  triFusionCalculator: TripleCalculator;
 }
 
 export interface FusionRecipe {
