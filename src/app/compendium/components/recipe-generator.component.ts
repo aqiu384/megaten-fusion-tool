@@ -11,11 +11,11 @@ import { createSkillsRecipe } from '../models/recipe-generator';
     <form [formGroup]="form">
       <h2>Recipe Generator</h2>
       <table class="entry-table">
-        <tr><th colspan="7" class="title">Demon Entry</th></tr>
+        <tr><th colspan="3" class="title">Target</th></tr>
         <tr>
-          <th>Race</th>
-          <th>Demon</th>
-          <th>Max Lvl</th>
+          <th style="width: 35%;">Race</th>
+          <th style="width: 45%;">Name</th>
+          <th style="width: 20%;">Max Lvl</th>
         </tr>
         <tr>
           <td>
@@ -35,13 +35,37 @@ import { createSkillsRecipe } from '../models/recipe-generator';
           </td>
         </tr>
       </table>
-      <table formArrayName="skills" class="entry-table">
-        <tr><th colspan="6" class="title">Learned Skills</th></tr>
+      <table formArrayName="ingreds" class="entry-table">
+        <tr><th colspan="3" class="title">Include Ingredients</th></tr>
         <tr>
-          <th style="width: 5%;">Elem</th>
-          <th style="width: 15%;">Name</th>
+          <th style="width: 35%;">Race</th>
+          <th style="width: 45%;">Name</th>
+          <th style="width: 20%;">Lvl</th>
+        </tr>
+        <ng-container *ngFor="let ingred of form.controls.ingreds['controls']; let i = index" [formGroupName]="i">
+          <tr *ngIf="i < maxSkills">
+            <td>
+              <select formControlName="race" (change)="ingred.controls.custom.setValue(demons[ingred.controls.race.value][0])">
+                <option value="-">-</option>
+                <option *ngFor="let race of races" [value]="race">{{ race }}</option>
+              </select>
+            </td>
+            <td>
+              <select formControlName="custom">
+                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
+              </select>
+            </td>
+            <td>{{ ingred.controls.custom.value.lvl }}</td>
+          </tr>
+        </ng-container>
+      </table>
+      <table formArrayName="skills" class="entry-table">
+        <tr><th colspan="5" class="title">Include Skills</th></tr>
+        <tr>
+          <th style="width: 8%;">Elem</th>
+          <th style="width: 22%;">Name</th>
           <th style="width: 10%;">Cost</th>
-          <th style="width: 55%;">Effect</th>
+          <th style="width: 45%;">Effect</th>
           <th style="width: 15%;">Target</th>
         </tr>
         <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
@@ -125,22 +149,25 @@ export class RecipeGeneratorComponent implements OnChanges {
   ngOnChanges() { this.initDropdowns(); }
 
   createForm() {
-    const skills = [];
+    const ingreds = [], skills = [];
 
     for (let i = 0; i < this.internalMaxSkills; i++) {
+      ingreds.push(this.fb.group({ race: '-', custom: this.blankDemon }));
       skills.push(this.fb.group({ elem: '-', custom: this.blankSkill }));
     }
 
     this.form = this.fb.group({
       race: '-',
       demon: this.blankDemon,
+      ingreds: this.fb.array(ingreds),
       skills: this.fb.array(skills)
     });
 
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
+        const ingreds = form.ingreds.map(d => d.custom.name).filter(d => d !== '-');
         const dskills = form.skills.map(s => s.custom.name).filter(s => s !== '-');
-        this.updateRecipe(createSkillsRecipe(form.demon.name, dskills, this.compendium, this.squareChart, this.recipeConfig));
+        this.updateRecipe(createSkillsRecipe(form.demon.name, ingreds, dskills, this.compendium, this.squareChart, this.recipeConfig));
       }
     });
   }
@@ -187,7 +214,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   initDropdowns() {
     if (!this.recipeConfig || !this.compendium || !this.squareChart) { return; }
 
-    this.demons = {};
+    this.demons = { '-': [this.blankDemon] };
     this.skills = { '-': [this.blankSkill] };
 
     for (const demon of this.compendium.allDemons) {
@@ -233,6 +260,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.form.patchValue({
       race: demon.race,
       demon: demon,
+      ingreds: Array(this.internalMaxSkills).fill({ race: '-', custom: this.blankDemon }),
       skills: innateSkills
         .concat(Array(this.internalMaxSkills - innateSkills.length).fill(this.blankSkill))
         .map(s => ({ elem: '-', custom: s }))
