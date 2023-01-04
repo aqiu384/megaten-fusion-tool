@@ -17,7 +17,8 @@ import {
   SMT_NES_NORMAL_FISSION_CALCULATOR
 } from '../compendium/constants';
 
-import { splitWithDiffRace, splitWithElement } from '../compendium/fusions/smt-nonelem-fissions';
+import { splitWithDiffRace, splitWithSpecies, splitWithElement } from '../compendium/fusions/smt-nonelem-fissions';
+import { splitWithDarkRace } from '../compendium/fusions/snes-dark-fusions';
 import { splitElement } from '../compendium/fusions/smt-element-fissions';
 import {
   splitNormal as splitEntityNormal,
@@ -81,7 +82,7 @@ export class FusionDataService implements IFusionTrioService {
       this.triFissionCalculator = new TripleFusionCalculator([splitTripleDR, splitWithElementPair], []);
     }
 
-    if (compConfig.appTitle.indexOf('Soul Hackers') !== -1) {
+    if (compConfig.appCssClasses.includes('dssh')) {
       this.fissionCalculator = new NormalFusionCalculator(
         [ splitWithDiffRace, splitWithElement, splitEntityNormal ],
         [ splitElement ]
@@ -93,6 +94,13 @@ export class FusionDataService implements IFusionTrioService {
       this.triFissionCalculator = new TripleFusionCalculator(
         [ splitTripleDR, splitWithElementPair, splitEntityTriple ],
         [ splitElementDR, splitWithSameRace ]
+      );
+    }
+
+    if (compConfig.appCssClasses.includes('smt1') || compConfig.appCssClasses.includes('smt2')) {
+      this.fissionCalculator = new NormalFusionCalculator(
+        [ splitWithDiffRace, splitWithSpecies, splitWithDarkRace, splitWithElement ],
+        [ splitElement ]
       );
     }
   }

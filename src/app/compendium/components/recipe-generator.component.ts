@@ -36,56 +36,53 @@ import { createSkillsRecipe } from '../models/recipe-generator';
         </tr>
       </table>
       <table formArrayName="ingreds" class="entry-table">
-        <tr><th colspan="3" class="title">Include Ingredients</th></tr>
+        <tr><th colspan="5" class="title">Include Ingredients</th></tr>
         <tr>
-          <th style="width: 35%;">Race</th>
-          <th style="width: 45%;">Name</th>
-          <th style="width: 20%;">Lvl</th>
+          <th style="width: 20%">Search</th>
+          <th style="width: 10%">Elem</th>
+          <th style="width: 25%">Skill</th>
+          <th style="width: 20%">Race</th>
+          <th style="width: 25%">Ingredient</th>
         </tr>
         <ng-container *ngFor="let ingred of form.controls.ingreds['controls']; let i = index" [formGroupName]="i">
           <tr *ngIf="i < maxSkills">
             <td>
-              <select formControlName="race" (change)="ingred.controls.custom.setValue(demons[ingred.controls.race.value][0])">
-                <option value="-">-</option>
-                <option *ngFor="let race of races" [value]="race">{{ race }}</option>
-              </select>
+              <label>Search Skill
+                <input formControlName="searchSkill" type="checkbox"
+                (change)="setIngredDemon(ingred)">
+              </label>
             </td>
             <td>
-              <select formControlName="custom">
-                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
-              </select>
-            </td>
-            <td>{{ ingred.controls.custom.value.lvl }}</td>
-          </tr>
-        </ng-container>
-      </table>
-      <table formArrayName="skills" class="entry-table">
-        <tr><th colspan="5" class="title">Include Skills</th></tr>
-        <tr>
-          <th style="width: 8%;">Elem</th>
-          <th style="width: 22%;">Name</th>
-          <th style="width: 10%;">Cost</th>
-          <th style="width: 45%;">Effect</th>
-          <th style="width: 15%;">Target</th>
-        </tr>
-        <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
-          <tr *ngIf="i < maxSkills">
-            <td>
-              <select formControlName="elem" (change)="skill.controls.custom.setValue(skills[skill.controls.elem.value][0])">
+              <select formControlName="elem"
+                [attr.disabled]="!ingred.controls.searchSkill.value || null"
+                (change)="setIngredElem(ingred)">
                 <option value="-">-</option>
                 <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
               </select>
             </td>
             <td>
-              <select formControlName="custom">
-                <option *ngFor="let entry of skills[skill.controls.elem.value]" [ngValue]="entry">{{ entry.name }}</option>
+              <select formControlName="skill"
+                [attr.disabled]="!ingred.controls.searchSkill.value || null"
+                (change)="setIngredDemon(ingred)">
+                <option *ngFor="let skill of skills[ingred.controls.elem.value]" [ngValue]="skill">{{ skill.name }}</option>
               </select>
             </td>
-            <ng-container *ngIf="skill.controls.custom.value as entry">
-              <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
-              <td>{{ entry.effect }}</td>
-              <td>{{ entry.target }}</td>
-            </ng-container>
+            <td>
+              <select formControlName="race"
+                [attr.disabled]="ingred.controls.searchSkill.value || null"
+                (change)="setIngredDemon(ingred)">
+                <option value="-">-</option>
+                <option *ngFor="let race of races" [value]="race">{{ race }}</option>
+              </select>
+            </td>
+            <td>
+              <select *ngIf="ingred.controls.searchSkill.value" formControlName="demon">
+                <option *ngFor="let demon of learnedBy[ingred.controls.skill.value.name]" [ngValue]="demon">{{ demon.name }}</option>
+              </select>
+              <select *ngIf="!ingred.controls.searchSkill.value" formControlName="demon">
+                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
+              </select>
+            </td>
           </tr>
         </ng-container>
       </table>
@@ -126,6 +123,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   elems: string[];
   demons: { [race: string]: Demon[] } = {};
   skills: { [elem: string]: Skill[] } = {};
+  learnedBy: { [skill: string]: Demon[] } = {};
   form: FormGroup;
   recipe: FusionRecipe;
   recipeLeft: string[];
@@ -141,7 +139,7 @@ export class RecipeGeneratorComponent implements OnChanges {
 
   blankSkill: Skill = {
     name: '-', element: '-', rank: 99, cost: 0,
-    effect: '', target: '', level: 0, learnedBy: []
+    effect: '', target: '', level: 0, learnedBy: [{ demon: '-', level: 0 }]
   };
 
   constructor(private fb: FormBuilder) { this.createForm(); }
@@ -149,27 +147,36 @@ export class RecipeGeneratorComponent implements OnChanges {
   ngOnChanges() { this.initDropdowns(); }
 
   createForm() {
-    const ingreds = [], skills = [];
+    const ingreds = [];
 
     for (let i = 0; i < this.internalMaxSkills; i++) {
-      ingreds.push(this.fb.group({ race: '-', custom: this.blankDemon }));
-      skills.push(this.fb.group({ elem: '-', custom: this.blankSkill }));
+      ingreds.push(this.fb.group({ searchSkill: true, elem: '-', skill: this.blankSkill, race: '-', demon: this.blankDemon }));
     }
 
     this.form = this.fb.group({
       race: '-',
       demon: this.blankDemon,
-      ingreds: this.fb.array(ingreds),
-      skills: this.fb.array(skills)
+      ingreds: this.fb.array(ingreds)
     });
 
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
-        const ingreds = form.ingreds.map(d => d.custom.name).filter(d => d !== '-');
-        const dskills = form.skills.map(s => s.custom.name).filter(s => s !== '-');
-        this.updateRecipe(createSkillsRecipe(form.demon.name, ingreds, dskills, this.compendium, this.squareChart, this.recipeConfig));
+        const ingreds = form.ingreds.filter(i => i.demon.name !== '-' && i.demon.name !== form.demon.name).map(i => i.demon.name);
+        const skills = form.ingreds.filter(i => i.searchSkill && i.skill.name !== '-').map(i => i.skill.name);
+        this.updateRecipe(createSkillsRecipe(form.demon.name, ingreds, skills, this.compendium, this.squareChart, this.recipeConfig));
       }
     });
+  }
+
+  setIngredElem(ingred: FormGroup) {
+    ingred.controls.skill.setValue(this.skills[ingred.controls.elem.value][0]);
+    this.setIngredDemon(ingred);
+  }
+
+  setIngredDemon(ingred: FormGroup) {
+    const searchSkill: boolean = ingred.controls.searchSkill.value;
+    const demon: Demon[] = searchSkill ? this.learnedBy[ingred.controls.skill.value.name] : this.demons[ingred.controls.race.value];
+    ingred.controls.demon.setValue(demon[0]);
   }
 
   updateRecipe(recipe: FusionRecipe) {
@@ -216,11 +223,17 @@ export class RecipeGeneratorComponent implements OnChanges {
 
     this.demons = { '-': [this.blankDemon] };
     this.skills = { '-': [this.blankSkill] };
+    this.learnedBy = { '-': [this.blankDemon] };
 
     for (const demon of this.compendium.allDemons) {
       if ((demon.fusion === 'normal' || demon.fusion === 'special') && !demon.isEnemy) {
         if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
         this.demons[demon.race].push(demon);
+
+        for (const sname of Object.keys(demon.skills)) {
+          if (!this.learnedBy[sname]) { this.learnedBy[sname] = []; }
+          this.learnedBy[sname].push(demon);
+        }
       }
     }
 
@@ -260,10 +273,9 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.form.patchValue({
       race: demon.race,
       demon: demon,
-      ingreds: Array(this.internalMaxSkills).fill({ race: '-', custom: this.blankDemon }),
-      skills: innateSkills
+      ingreds: innateSkills
         .concat(Array(this.internalMaxSkills - innateSkills.length).fill(this.blankSkill))
-        .map(s => ({ elem: '-', custom: s }))
+        .map(s => ({ searchSkill: true, elem: '-', skill: s, race: '-', demon: s.name !== '-' ? demon : this.blankDemon }))
     });
   }
 }

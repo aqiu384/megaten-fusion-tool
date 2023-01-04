@@ -1,4 +1,4 @@
-import { Demon, Skill, FusionRecipe, Compendium, FusionChart, SquareChart, RecipeGeneratorConfig } from '../models';
+import { Demon, FusionRecipe, Compendium, FusionChart, SquareChart, RecipeGeneratorConfig } from '../models';
 import { toFusionPair, toFusionPairResult, toDemonTrio } from './conversions';
 
 export function createSkillsRecipe(demon: string, ingreds: string[], skills: string[], comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
@@ -43,35 +43,29 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: str
     if (pairR) { stepR = [pairR.name1, pairR.name2]; }
   }
 
-  const ingredsR = stepR.map(i => comp.getDemon(i)).sort((a, b) => a.price - b.price);
+  const ingredsR = stepR.map(i => comp.getDemon(i)).sort((a, b) => b.price - a.price);
+  const ingredsA = ingreds.map(i => comp.getDemon(i)).sort((a, b) => b.price - a.price);
 
-  const skillRef: { [skill: string]: string } = {};
   const skillInit: { [skill: string]: string } = {};
-  const skillsR: Skill[] = [];
+  const skillRef: { [skill: string]: string } = {};
 
   for (const skill of skillsI) {
-    let foundSkill = false;
-
     for (const ingred of ingredsR) {
       if (ingred.skills.hasOwnProperty(skill.name)) {
-        foundSkill = true;
         skillInit[skill.name] = ingred.name;
-        break;
       }
     }
 
-    if (!foundSkill) {
-      skillsR.push(skill);
+    if (!skillInit[skill.name]) {
+      for (const ingred of ingredsA) {
+        if (ingred.skills.hasOwnProperty(skill.name)) {
+          skillRef[skill.name] = ingred.name;
+        }
+      }
     }
   }
 
-  for (const skill of skillsR) {
-    const demons = skill.learnedBy.map(d => comp.getDemon(d.demon));
-    skillRef[skill.name] = demons.length > 1 ?
-      demons.find(d => Object.keys(normalChart.getRaceFusions(d.race)).length > 0 && d.fusion !== 'excluded').name :
-      demons[0].name;
-  }
-
+  const skillsR = Object.keys(skillRef).map(s => comp.getSkill(s));
   const canInheritR = canInheritCode(skillsR.map(s => s.element), inheritElems);
   const skillInheritsR = skillsR.map(s => canInheritCode([s.element], inheritElems));
   let leftIngredR: Demon, rightIngredR: Demon, inheritScore = 0;
@@ -97,6 +91,7 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: str
   if (!leftIngredR) { return recipe; }
 
   const skillIngreds = Object.values(skillRef).filter((d, i, a) => a.indexOf(d) === i);
+  const blankIngreds = ingreds.filter(d => !skillIngreds.includes(d));
   let halfPoint = Math.ceil(skillIngreds.length / 2);
   skillIngreds.sort((a, b) => normalChart.getLightDark(comp.getDemon(a).race) - normalChart.getLightDark(comp.getDemon(b).race));
 
@@ -113,11 +108,11 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: str
     rightInherits = canInheritChain(rightSkills.map(s => comp.getSkill(s).element), inheritElems);
   }
 
-  halfPoint = Math.ceil(ingreds.length / 2);
-  leftIngreds = ingreds.slice(0, halfPoint).concat(leftIngreds);
+  halfPoint = Math.ceil(blankIngreds.length / 2);
+  leftIngreds = blankIngreds.slice(0, halfPoint).concat(leftIngreds);
   leftInherits = Array(halfPoint).fill(0).concat(leftInherits);
-  rightIngreds = ingreds.slice(halfPoint).concat(rightIngreds);
-  rightInherits = Array(ingreds.length - halfPoint).fill(0).concat(rightInherits);
+  rightIngreds = blankIngreds.slice(halfPoint).concat(rightIngreds);
+  rightInherits = Array(blankIngreds.length - halfPoint).fill(0).concat(rightInherits);
 
   recipe.chain1 = createFusionFull(leftIngreds, leftInherits, leftIngredR.name, comp, normalChart, recipeConfig);
   recipe.chain2 = createFusionFull(rightIngreds, rightInherits, rightIngredR.name, comp, normalChart, recipeConfig);
