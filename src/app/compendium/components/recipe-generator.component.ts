@@ -11,11 +11,10 @@ import { createSkillsRecipe } from '../models/recipe-generator';
     <form [formGroup]="form">
       <h2>Recipe Generator</h2>
       <table class="entry-table">
-        <tr><th colspan="3" class="title">Target</th></tr>
+        <tr><th colspan="2" class="title">Target</th></tr>
         <tr>
-          <th style="width: 35%;">Race</th>
-          <th style="width: 45%;">Name</th>
-          <th style="width: 20%;">Max Lvl</th>
+          <th style="width: 40%;">Race</th>
+          <th style="width: 60%;">Name</th>
         </tr>
         <tr>
           <td>
@@ -26,11 +25,6 @@ import { createSkillsRecipe } from '../models/recipe-generator';
           <td>
             <select formControlName="demon" (change)="setDemon(form.controls.demon.value)">
               <option *ngFor="let demon of demons[form.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
-            </select>
-          </td>
-          <td>
-            <select>
-              <option *ngFor="let _ of range99; let i = index" [value]="99 - i">{{ 99 - i }}</option>
             </select>
           </td>
         </tr>
@@ -226,7 +220,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.learnedBy = { '-': [this.blankDemon] };
 
     for (const demon of this.compendium.allDemons) {
-      if ((demon.fusion === 'normal' || demon.fusion === 'special') && !demon.isEnemy) {
+      if (!demon.isEnemy) {
         if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
         this.demons[demon.race].push(demon);
 
