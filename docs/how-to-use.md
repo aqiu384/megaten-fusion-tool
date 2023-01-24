@@ -226,6 +226,7 @@
 * http://bozumemo.blogspot.com/p/5.html
 * https://wikiwiki.jp/persona5r/
 * https://h1g.jp/p5r/
+* https://docs.google.com/spreadsheets/d/1kPsA9fwhOyqyh7qLNfW2Xprc7wDK6RQ5d3Re4f7cTKk
 
 ### Skill List
 * (Cx): Learned at Confidant Lv. 10

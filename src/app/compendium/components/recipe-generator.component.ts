@@ -71,10 +71,10 @@ import { createSkillsRecipe } from '../models/recipe-generator';
             </td>
             <td>
               <select *ngIf="ingred.controls.searchSkill.value" formControlName="demon">
-                <option *ngFor="let demon of learnedBy[ingred.controls.skill.value.name]" [ngValue]="demon">{{ demon.name }}</option>
+                <option *ngFor="let demon of learnedBy[ingred.controls.skill.value.name]" [ngValue]="demon">{{ demon.name }} {{ demon.lvl ? '(' + demon.lvl + ')' : '' }}</option>
               </select>
               <select *ngIf="!ingred.controls.searchSkill.value" formControlName="demon">
-                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
+                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }} {{ demon.lvl ? '(' + demon.lvl + ')' : '' }}</option>
               </select>
             </td>
           </tr>
@@ -237,7 +237,11 @@ export class RecipeGeneratorComponent implements OnChanges {
     }
 
     for (const demonList of Object.values(this.demons)) {
-      demonList.sort((a, b) => b.lvl - a.lvl);
+      demonList.sort((a, b) => a.lvl - b.lvl);
+    }
+
+    for (const demonList of Object.values(this.learnedBy)) {
+      demonList.sort((a, b) => a.lvl - b.lvl);
     }
 
     for (const skillList of Object.values(this.skills)) {

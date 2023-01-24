@@ -34,7 +34,8 @@ import FES_SPECIAL_RECIPES_JSON from './data/fes-special-recipes.json';
 import PAIR_SPECIAL_RECIPES_JSON from './data/pair-special-recipes.json';
 
 import INHERIT_TYPES_JSON from './data/inheritance-types.json';
-import PARTY_DATA_JSON from './data/party-data.json';
+import FES_PARTY_DATA_JSON from './data/fes-party-data.json';
+import P3P_PARTY_DATA_JSON from './data/p3p-party-data.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   const result = {};
@@ -57,9 +58,11 @@ for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
   inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = INHERIT_TYPES_JSON.ratios[i];
 }
 
-for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
-  entry.race = entry.race + ' P';
-  entry['fusion'] = 'party';
+for (const partyData of [FES_PARTY_DATA_JSON, P3P_PARTY_DATA_JSON]) {
+  for (const [demon, entry] of Object.entries(partyData)) {
+    entry.race = entry.race + ' P';
+    entry['fusion'] = 'party';
+  }
 }
 
 for (const [demon, entry] of Object.entries(PSYCHE_JSON)) {
@@ -110,9 +113,9 @@ export const P3_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   demonData: {
     p3: [VAN_DEMON_DATA_JSON],
-    p3fes: [PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON],
+    p3fes: [FES_PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON],
     p3aeg: [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON, PSYCHE_JSON],
-    p3p: [PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON, P3P_DEMON_DATA_JSON]
+    p3p: [P3P_PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON, P3P_DEMON_DATA_JSON]
   },
   skillData: {
     p3: [VAN_SKILL_DATA_JSON],

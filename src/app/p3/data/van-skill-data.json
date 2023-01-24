@@ -1,11 +1,11 @@
 {
   "1hSwd Master": {
-    "effect": "1-handed sword dmg x2",
+    "effect": "1-handed sword dmg x1.25",
     "element": "passive",
     "rank": 6
   },
   "2hSwd Master": {
-    "effect": "2-handed sword dmg x2",
+    "effect": "2-handed sword dmg x1.25",
     "element": "passive",
     "rank": 6
   },
@@ -94,7 +94,7 @@
   "Ailment Boost": {
     "card": "Mother Harlot",
     "clvl": 79,
-    "effect": "All ailment success rate x1.5",
+    "effect": "All ailment success rate x1.25",
     "element": "passive",
     "rank": 7
   },
@@ -132,18 +132,20 @@
     "rank": 5
   },
   "Ardhanari": {
+    "card": "Malachite x3, Ruby x2",
     "cost": 1030,
-    "damage": "Severe",
+    "damage": "Massive",
     "element": "fire",
-    "hit": 99,
+    "hit": 100,
     "power": 900,
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
   },
   "Armageddon": {
+    "card": "Malachite x99, Ruby x10",
     "cost": 1100,
-    "damage": "Extreme",
+    "damage": "Ultimate",
     "element": "almighty",
     "hit": 100,
     "power": 9999,
@@ -235,6 +237,7 @@
     "target": "One Foe"
   },
   "Best Friends": {
+    "card": "Malachite x2, Topaz x2",
     "cost": 1015,
     "effect": "Tarukaja + Rakukaja + Sukukaja",
     "element": "support",
@@ -272,7 +275,7 @@
     "target": "All Foes"
   },
   "Bow Master": {
-    "effect": "Bow dmg x2",
+    "effect": "Bow dmg x1.25",
     "element": "passive",
     "rank": 6
   },
@@ -313,6 +316,7 @@
     "target": "One Foe"
   },
   "Cadenza": {
+    "card": "Malachite x2, Amethyst x1",
     "cost": 1020,
     "effect": "Restores 50% HP, Sukukaja",
     "element": "recovery",
@@ -321,7 +325,7 @@
     "unique": "Fusion Spell"
   },
   "Charm Boost": {
-    "effect": "Charm success rate x1.5",
+    "effect": "Charm success rate x1.25",
     "element": "passive",
     "rank": 3
   },
@@ -354,14 +358,14 @@
   "Counter": {
     "card": "Hanuman",
     "clvl": 40,
-    "effect": "15% chance to repel Phys attack",
+    "effect": "10% chance to repel Phys attack",
     "element": "passive",
     "rank": 3
   },
   "Counterstrike": {
     "card": "Koumokuten",
     "clvl": 48,
-    "effect": "30% chance to repel Phys attack",
+    "effect": "15% chance to repel Phys attack",
     "element": "passive",
     "rank": 4
   },
@@ -443,7 +447,7 @@
     "unique": "Alice"
   },
   "Distress Boost": {
-    "effect": "Distress success rate x1.5",
+    "effect": "Distress success rate x1.25",
     "element": "passive",
     "rank": 3
   },
@@ -501,6 +505,7 @@
     "target": "One Foe"
   },
   "Dreamfest": {
+    "card": "Malachite x2, Garnet x1",
     "cost": 1015,
     "effect": "80% Charm",
     "element": "ailment",
@@ -510,7 +515,7 @@
   },
   "Eerie Sound": {
     "cost": 1010,
-    "effect": "35% Distress",
+    "effect": "40% Distress",
     "element": "ailment",
     "rank": 2,
     "target": "All Foes"
@@ -649,7 +654,7 @@
     "target": "One Foe"
   },
   "Fear Boost": {
-    "effect": "Fear success rate x1.5",
+    "effect": "Fear success rate x1.25",
     "element": "passive",
     "rank": 3
   },
@@ -677,7 +682,7 @@
     "target": "One Foe"
   },
   "Fist Master": {
-    "effect": "Fist dmg x2",
+    "effect": "Fist dmg x1.25",
     "element": "passive",
     "rank": 6
   },
@@ -691,6 +696,7 @@
     "target": "One Foe"
   },
   "Frolic": {
+    "card": "Malachite x1, Amethyst x2",
     "cost": 1010,
     "effect": "Restores 100% HP, 30% Charm",
     "element": "recovery",
@@ -856,14 +862,14 @@
     "unique": "Michael"
   },
   "Heavy Master": {
-    "effect": "Bludgeon dmg x2",
+    "effect": "Bludgeon dmg x1.25",
     "element": "passive",
     "rank": 6
   },
   "High Counter": {
     "card": "Siegfried",
     "clvl": 67,
-    "effect": "50% chance to repel Phys attack",
+    "effect": "20% chance to repel Phys attack",
     "element": "passive",
     "rank": 5
   },
@@ -901,6 +907,7 @@
     "target": "One Foe"
   },
   "Infinity": {
+    "card": "Malachite x4, Pearl x4",
     "cost": 1030,
     "effect": "Nullifies next attack",
     "element": "support",
@@ -935,14 +942,16 @@
     "rank": 6
   },
   "Jack Brothers": {
+    "card": "Malachite x2, Emerald x1",
     "cost": 1020,
-    "effect": "Medium chance of Knockdown",
+    "effect": "50% chance of Knockdown",
     "element": "almighty",
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
   },
   "Justice": {
+    "card": "Malachite x1, Diamond x1",
     "cost": 1030,
     "effect": "Halves HP",
     "element": "light",
@@ -963,9 +972,10 @@
     "target": "One Foe"
   },
   "King and I": {
+    "card": "Malachite x3, Garnet x1",
     "cost": 1015,
     "damage": "Medium",
-    "effect": "Medium chance of Freeze",
+    "effect": "50% chance of Freeze",
     "element": "ice",
     "hit": 99,
     "power": 149,
@@ -974,17 +984,18 @@
     "unique": "Fusion Spell"
   },
   "Last Judge": {
+    "card": "Malachite x10, Ruby x1",
     "cost": 1030,
     "damage": "Severe",
     "element": "almighty",
-    "hit": 99,
+    "hit": 100,
     "power": 800,
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
   },
   "Last Resort": {
-    "effect": "Kills self and deals medium Almighty damage to everyone",
+    "effect": "Kills self and deals 50% HP as Almighty damage to everyone",
     "element": "almighty",
     "rank": 99
   },
@@ -1005,7 +1016,7 @@
     "effect": "8% Freeze",
     "element": "ice",
     "hit": 90,
-    "power": 50,
+    "power": 40,
     "rank": 2,
     "target": "All Foes"
   },
@@ -1040,7 +1051,7 @@
     "damage": "Light",
     "element": "wind",
     "hit": 90,
-    "power": 50,
+    "power": 40,
     "rank": 2,
     "target": "All Foes"
   },
@@ -1118,7 +1129,7 @@
     "damage": "Light",
     "element": "fire",
     "hit": 90,
-    "power": 50,
+    "power": 40,
     "rank": 2,
     "target": "All Foes"
   },
@@ -1148,7 +1159,7 @@
     "card": "Decarabia",
     "clvl": 56,
     "cost": 1012,
-    "effect": "Raises DEF for 3 turns",
+    "effect": "Raises DEF by 1.25x for 3 turns",
     "element": "support",
     "rank": 5,
     "target": "All Allies"
@@ -1157,7 +1168,7 @@
     "card": "Black Frost",
     "clvl": 39,
     "cost": 1012,
-    "effect": "Lowers DEF for 3 turns",
+    "effect": "Lowers DEF by 1.25x for 3 turns",
     "element": "support",
     "rank": 4,
     "target": "All Foes"
@@ -1173,14 +1184,14 @@
     "card": "Suzaku",
     "clvl": 56,
     "cost": 1012,
-    "effect": "Raises HIT/EVA for 3 turns",
+    "effect": "Raises HIT/EVA by 1.25x for 3 turns",
     "element": "support",
     "rank": 5,
     "target": "All Allies"
   },
   "Masukunda": {
     "cost": 1012,
-    "effect": "Lowers HIT/EVA for 3 turns",
+    "effect": "Lowers HIT/EVA by 1.25x for 3 turns",
     "element": "support",
     "rank": 4,
     "target": "All Foes"
@@ -1188,7 +1199,7 @@
   "Matarukaja": {
     "card": "Rescue and 1st term exam reward",
     "cost": 1012,
-    "effect": "Raises ATK for 3 turns",
+    "effect": "Raises ATK by 1.25x for 3 turns",
     "element": "support",
     "rank": 5,
     "target": "All Allies"
@@ -1197,7 +1208,7 @@
     "card": "Rangda",
     "clvl": 45,
     "cost": 1012,
-    "effect": "Lowers ATK for 3 turns",
+    "effect": "Lowers ATK by 1.25x for 3 turns",
     "element": "support",
     "rank": 4,
     "target": "All Foes"
@@ -1210,7 +1221,7 @@
     "effect": "8% Shock",
     "element": "elec",
     "hit": 90,
-    "power": 50,
+    "power": 40,
     "rank": 3,
     "target": "All Foes"
   },
@@ -1242,7 +1253,7 @@
     "card": "Clotho",
     "clvl": 43,
     "cost": 1006,
-    "effect": "Cures Panic, Fear, and Distress",
+    "effect": "Cures Panic, Fear, Distress, Freeze, and Shock",
     "element": "recovery",
     "rank": 3,
     "target": "All Allies"
@@ -1323,7 +1334,7 @@
     "card": "Atropos",
     "clvl": 59,
     "cost": 1015,
-    "effect": "Next Magic attack x2.5 dmg",
+    "effect": "Next Magic attack x1.9 dmg",
     "element": "support",
     "rank": 5,
     "target": "Self"
@@ -1385,6 +1396,7 @@
     "target": "One Foe"
   },
   "Null Charm": {
+    "card": "Turquoise x1",
     "effect": "Immune to Charm",
     "element": "passive",
     "rank": 5
@@ -1478,7 +1490,7 @@
     "unique": "Lucia"
   },
   "Panic Boost": {
-    "effect": "Panic success rate x1.5",
+    "effect": "Panic success rate x1.25",
     "element": "passive",
     "rank": 3
   },
@@ -1493,7 +1505,7 @@
   },
   "Patra": {
     "cost": 1003,
-    "effect": "Cures Panic, Fear, and Distress",
+    "effect": "Cures Panic, Fear, Distress, Freeze, and Shock",
     "element": "recovery",
     "rank": 1,
     "target": "One Ally"
@@ -1511,7 +1523,7 @@
     "target": "One Foe"
   },
   "Poison Boost": {
-    "effect": "Poison success rate x1.5",
+    "effect": "Poison success rate x1.25",
     "element": "passive",
     "rank": 3
   },
@@ -1535,7 +1547,7 @@
     "card": "Narasimha, Setanta",
     "clvl": 34,
     "cost": 1015,
-    "effect": "Next Phys attack x2.5 dmg",
+    "effect": "Next Phys attack x1.9 dmg",
     "element": "support",
     "rank": 4,
     "target": "Self"
@@ -1588,7 +1600,7 @@
   "Rage Boost": {
     "card": "Pyro Jack",
     "clvl": 18,
-    "effect": "Rage success rate x1.5",
+    "effect": "Rage success rate x1.25",
     "element": "passive",
     "rank": 3
   },
@@ -1607,8 +1619,9 @@
     "target": "One Foe"
   },
   "Raktapaksha": {
+    "card": "Malachite x4, Pearl x1",
     "cost": 1015,
-    "effect": "Medium chance of Knockdown, Dekaja",
+    "effect": "30% chance of Knockdown, Dekaja",
     "element": "almighty",
     "rank": 0,
     "target": "All Foes",
@@ -1618,7 +1631,7 @@
     "card": "Ara Mitama",
     "clvl": 10,
     "cost": 1006,
-    "effect": "Raises DEF for 3 turns",
+    "effect": "Raises DEF by 1.25x for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "One Ally"
@@ -1627,7 +1640,7 @@
     "card": "Queen Mab",
     "clvl": 30,
     "cost": 1006,
-    "effect": "Lowers DEF for 3 turns",
+    "effect": "Lowers DEF by 1.25x for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "One Foe"
@@ -1641,7 +1654,7 @@
   },
   "Rebellion": {
     "cost": 1005,
-    "effect": "Raises crit rate for 3 turns",
+    "effect": "Raises crit rate by 10% for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "Universal"
@@ -1789,7 +1802,7 @@
     "card": "Kali",
     "clvl": 60,
     "cost": 1005,
-    "effect": "Greatly raises crit rate for 3 turns",
+    "effect": "Greatly raises crit rate by 20% for 3 turns",
     "element": "support",
     "rank": 3,
     "target": "Universal"
@@ -1820,9 +1833,10 @@
     "target": "All Foes"
   },
   "Scarlet Havoc": {
+    "card": "Malachite x4, Sapphire x2",
     "cost": 1015,
     "damage": "Heavy",
-    "effect": "5% crit",
+    "effect": "1% crit",
     "element": "slash",
     "hit": 99,
     "power": 320,
@@ -1834,17 +1848,18 @@
     "card": "Yaksini",
     "clvl": 52,
     "cost": 1010,
-    "effect": "35% Charm",
+    "effect": "40% Charm",
     "element": "ailment",
     "rank": 3,
     "target": "All Foes"
   },
   "Shadow Hound": {
-    "cost": 1025,
+    "card": "Malachite x5, Sapphire x1",
+    "cost": 1015,
     "damage": "Heavy",
-    "effect": "5% crit",
+    "effect": "1% crit",
     "element": "strike",
-    "hit": 99,
+    "hit": 100,
     "power": 300,
     "rank": 0,
     "target": "All Foes",
@@ -1875,7 +1890,7 @@
     "target": "One Foe"
   },
   "Spear Master": {
-    "effect": "Spear dmg x2",
+    "effect": "Spear dmg x1.25",
     "element": "passive",
     "rank": 6
   },
@@ -1917,19 +1932,20 @@
   },
   "Sukukaja": {
     "cost": 1006,
-    "effect": "Raises HIT/EVA for 3 turns",
+    "effect": "Raises HIT/EVA by 1.25x for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "One Ally"
   },
   "Sukunda": {
     "cost": 1006,
-    "effect": "Lowers HIT/EVA for 3 turns",
+    "effect": "Lowers HIT/EVA by 1.25x for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "One Foe"
   },
   "Summer Dream": {
+    "card": "Malachite x5",
     "cost": 1015,
     "effect": "Random effect to allies, foes, or universal: HP and SP restored, Knockdown, Random ailment, Nothing",
     "element": "ailment",
@@ -1973,7 +1989,7 @@
     "card": "Forneus",
     "clvl": 8,
     "cost": 1006,
-    "effect": "Raises ATK for 3 turns",
+    "effect": "Raises ATK by 1.25x for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "One Ally"
@@ -1982,7 +1998,7 @@
     "card": "Yomotsu Shikome",
     "clvl": 12,
     "cost": 1006,
-    "effect": "Lowers ATK for 3 turns",
+    "effect": "Lowers ATK by 1.25x for 3 turns",
     "element": "support",
     "rank": 2,
     "target": "One Foe"
@@ -2001,7 +2017,7 @@
   },
   "Tentarafoo": {
     "cost": 1010,
-    "effect": "35% Panic",
+    "effect": "40% Panic",
     "element": "ailment",
     "rank": 4,
     "target": "All Foes"
@@ -2021,12 +2037,13 @@
     "unique": "Lucia"
   },
   "Thunder Call": {
+    "card": "Malachite x4, Topaz x1",
     "cost": 1015,
     "damage": "Heavy",
-    "effect": "High chance of Shock",
+    "effect": "100% chance of Shock",
     "element": "elec",
     "hit": 99,
-    "power": 320,
+    "power": 450,
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
@@ -2061,6 +2078,7 @@
     "target": "All Allies"
   },
   "Trickster": {
+    "card": "Malachite x2, Pearl x1",
     "cost": 1015,
     "effect": "100% random ailment",
     "element": "ailment",
@@ -2088,6 +2106,7 @@
     "rank": 9
   },
   "Valhalla": {
+    "card": "Malachite x1, Topaz x2",
     "cost": 1020,
     "effect": "Nullifies next attack, HP and SP reduced to 1",
     "element": "support",
@@ -2118,7 +2137,7 @@
     "card": "Kingu",
     "clvl": 51,
     "cost": 1040,
-    "effect": "Removes 25% HP, 25% Poison",
+    "effect": "Removes 25% HP, 75% Poison",
     "element": "ailment",
     "rank": 5,
     "target": "All Foes"
