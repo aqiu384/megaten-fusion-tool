@@ -48,6 +48,12 @@ for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name].prereq = prereq;
 }
 
+for (const entry of Object.values(SKILL_DATA_JSON)) {
+  if (entry['effect'].includes('power') && !entry['effect'].includes('√')) {
+    entry['effect'] = '√' + entry['effect'];
+  }
+}
+
 export const P5_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona 5',
 

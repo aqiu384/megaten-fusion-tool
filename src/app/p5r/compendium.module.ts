@@ -65,6 +65,14 @@ for (const entry of Object.values(ENEMY_DATA_JSON)) {
   entry['area'] = [entry['areas']];
 }
 
+for (const skills of [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON]) {
+  for (const entry of Object.values(skills)) {
+    if (entry['effect'].includes('power') && !entry['effect'].includes('√')) {
+      entry['effect'] = '√' + entry['effect'];
+    }
+  }
+}
+
 export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona 5 Royal',
 

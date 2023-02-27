@@ -37,7 +37,7 @@
   },
   "Abysmal Surge": {
     "cost": 1012,
-    "effect": "Medium chance of Despair",
+    "effect": "70% Despair",
     "element": "ail",
     "target": "All foes"
   },
@@ -167,7 +167,7 @@
   },
   "Bad Beat": {
     "cost": 21,
-    "effect": "110 power, Despair",
+    "effect": "110 power, 50% Despair",
     "element": "phy",
     "target": "All foes"
   },
@@ -206,25 +206,25 @@
   },
   "Bloodbath": {
     "cost": 19,
-    "effect": "120 power, Fear",
+    "effect": "120 power, 50% Fear",
     "element": "phy",
     "target": "All foes"
   },
   "Brain Buster": {
     "cost": 21,
-    "effect": "120 power, Brainwash",
+    "effect": "120 power, 50% Brainwash",
     "element": "phy",
     "target": "All foes"
   },
   "Brain Jack": {
     "cost": 1012,
-    "effect": "Medium chance of Brainwash",
+    "effect": "70% Brainwash",
     "element": "ail",
     "target": "All foes"
   },
   "Brain Shake": {
     "cost": 9,
-    "effect": "80 power, Brainwash",
+    "effect": "80 power, 70% Brainwash",
     "element": "phy",
     "target": "1 foe"
   },
@@ -262,7 +262,7 @@
   },
   "Cadenza": {
     "cost": 1024,
-    "effect": "Restore 50% HP, Masukukaja",
+    "effect": "50% HP restore, Masukukaja",
     "element": "rec",
     "target": "All allies",
     "unique": "Orpheus"
@@ -332,7 +332,7 @@
   },
   "Dazzler": {
     "cost": 1005,
-    "effect": "High chance of Dizzy",
+    "effect": "90% Dizzy",
     "element": "ail",
     "target": "1 foe"
   },
@@ -382,7 +382,7 @@
   },
   "Dia": {
     "cost": 1003,
-    "effect": "Restore HP, 50 power",
+    "effect": "50 power HP restore",
     "element": "rec",
     "target": "1 ally"
   },
@@ -394,13 +394,13 @@
   },
   "Diarahan": {
     "cost": 1018,
-    "effect": "Restore full HP",
+    "effect": "Full HP restore",
     "element": "rec",
     "target": "1 ally"
   },
   "Diarama": {
     "cost": 1006,
-    "effect": "Restore HP, 160 power",
+    "effect": "160 power HP restore",
     "element": "rec",
     "target": "1 ally"
   },
@@ -470,13 +470,13 @@
   },
   "Dormin Rush": {
     "cost": 16,
-    "effect": "80 power, Sleep",
+    "effect": "80 power, 50% Sleep",
     "element": "phy",
     "target": "All foes"
   },
   "Dormina": {
     "cost": 1005,
-    "effect": "High chance of Sleep",
+    "effect": "90% Sleep",
     "element": "ail",
     "target": "1 foe"
   },
@@ -488,7 +488,7 @@
   },
   "Dream Needle": {
     "cost": 8,
-    "effect": "70 power, Sleep",
+    "effect": "70 power, 70% Sleep",
     "element": "phy",
     "target": "1 foe"
   },
@@ -593,13 +593,13 @@
   },
   "Evil Smile": {
     "cost": 1012,
-    "effect": "Medium chance of Fear",
+    "effect": "70% Fear",
     "element": "ail",
     "target": "All foes"
   },
   "Evil Touch": {
     "cost": 1005,
-    "effect": "High chance of Fear",
+    "effect": "90% Fear",
     "element": "ail",
     "target": "1 foe"
   },
@@ -648,7 +648,7 @@
   },
   "Flash Bomb": {
     "cost": 19,
-    "effect": "100 power, Dizzy",
+    "effect": "100 power, 50% Dizzy",
     "element": "phy",
     "target": "All foes"
   },
@@ -771,7 +771,7 @@
   },
   "Headbutt": {
     "cost": 9,
-    "effect": "80 power, Forget",
+    "effect": "80 power, 70% Forget",
     "element": "phy",
     "target": "1 foe"
   },
@@ -797,7 +797,7 @@
   },
   "Hysterical Slap": {
     "cost": 9,
-    "effect": "80 power, Rage",
+    "effect": "80 power, 70% Rage",
     "element": "phy",
     "target": "1 foe"
   },
@@ -891,7 +891,7 @@
   },
   "Lullaby": {
     "cost": 1012,
-    "effect": "Medium chance of Sleep",
+    "effect": "70% Sleep",
     "element": "ail",
     "target": "All foes"
   },
@@ -981,7 +981,7 @@
   },
   "Magatsu Mandala": {
     "cost": 1030,
-    "effect": "160 power, Confuse, Fear, Despair",
+    "effect": "160 power, 70% Confuse, Fear, Despair",
     "element": "dar",
     "target": "All foes",
     "unique": "Magatsu-Izanagi"
@@ -1004,13 +1004,13 @@
   },
   "Makajam": {
     "cost": 1005,
-    "effect": "High chance of Forget",
+    "effect": "90% Forget",
     "element": "ail",
     "target": "1 foe"
   },
   "Makajamaon": {
     "cost": 1012,
-    "effect": "Medium chance of Forget",
+    "effect": "70% Forget",
     "element": "ail",
     "target": "All foes"
   },
@@ -1106,7 +1106,7 @@
   },
   "Marin Karin": {
     "cost": 1005,
-    "effect": "High chance of Brainwash",
+    "effect": "90% Brainwash",
     "element": "ail",
     "target": "1 foe"
   },
@@ -1160,19 +1160,19 @@
   },
   "Media": {
     "cost": 1007,
-    "effect": "Restore HP, 40 power",
+    "effect": "40 power HP restore",
     "element": "rec",
     "target": "All allies"
   },
   "Mediarahan": {
     "cost": 1030,
-    "effect": "Restore full HP",
+    "effect": "Full HP restore",
     "element": "rec",
     "target": "All allies"
   },
   "Mediarama": {
     "cost": 1012,
-    "effect": "Restore HP, 140 power",
+    "effect": "140 power HP restore",
     "element": "rec",
     "target": "All allies"
   },
@@ -1207,13 +1207,13 @@
   },
   "Memory Blow": {
     "cost": 15,
-    "effect": "70 power, Forget",
+    "effect": "70 power, 50% Forget",
     "element": "phy",
     "target": "All foes"
   },
   "Mind Slice": {
     "cost": 19,
-    "effect": "110 power, Confuse",
+    "effect": "110 power, 50% Confuse",
     "element": "phy",
     "target": "All foes"
   },
@@ -1259,13 +1259,13 @@
   },
   "Negative Pile": {
     "cost": 12,
-    "effect": "120 power, Despair",
+    "effect": "120 power, 70% Despair",
     "element": "phy",
     "target": "1 foe"
   },
   "Nocturnal Flash": {
     "cost": 1012,
-    "effect": "Medium chance of Dizzy",
+    "effect": "70% Dizzy",
     "element": "ail",
     "target": "All foes"
   },
@@ -1359,7 +1359,7 @@
   },
   "Ominous Words": {
     "cost": 1005,
-    "effect": "High chance of Despair",
+    "effect": "90% Despair",
     "element": "ail",
     "target": "1 foe"
   },
@@ -1371,7 +1371,7 @@
   },
   "Oni Kagura": {
     "cost": 16,
-    "effect": "80 power, Rage",
+    "effect": "80 power, 50% Rage",
     "element": "phy",
     "target": "All foes"
   },
@@ -1455,7 +1455,7 @@
   },
   "Pulinpa": {
     "cost": 1005,
-    "effect": "High chance of Confuse",
+    "effect": "90% Confuse",
     "element": "ail",
     "target": "1 foe"
   },
@@ -1675,13 +1675,13 @@
   },
   "Skull Cracker": {
     "cost": 10,
-    "effect": "100 power, Confuse",
+    "effect": "100 power, 70% Confuse",
     "element": "phy",
     "target": "1 foe"
   },
   "Sledgehammer": {
     "cost": 10,
-    "effect": "100 power, Dizzy",
+    "effect": "100 power, 70% Dizzy",
     "element": "phy",
     "target": "1 foe"
   },
@@ -1802,7 +1802,7 @@
   },
   "Taunt": {
     "cost": 1005,
-    "effect": "High chance of Rage",
+    "effect": "90% Rage",
     "element": "ail",
     "target": "1 foe"
   },
@@ -1814,13 +1814,13 @@
   },
   "Tentarafoo": {
     "cost": 1012,
-    "effect": "Medium chance of Confuse",
+    "effect": "70% Confuse",
     "element": "ail",
     "target": "All foes"
   },
   "Terror Claw": {
     "cost": 8,
-    "effect": "70 power, Fear",
+    "effect": "70 power, 70% Fear",
     "element": "phy",
     "target": "1 foe"
   },
@@ -1856,7 +1856,7 @@
   },
   "Titanomachia": {
     "cost": 1034,
-    "effect": "210 power, Fear",
+    "effect": "210 power, 90% Fear",
     "element": "fir",
     "target": "All foes",
     "unique": "Asterius"
@@ -1919,7 +1919,7 @@
   },
   "Wage War": {
     "cost": 1012,
-    "effect": "Medium chance of Rage",
+    "effect": "70% Rage",
     "element": "ail",
     "target": "All foes"
   },
