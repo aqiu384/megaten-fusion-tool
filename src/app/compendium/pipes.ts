@@ -5,7 +5,8 @@ export class SkillCostToStringPipe implements PipeTransform {
   transform(value: number): string {
     if (value === 0) { return 'Auto'; }
     if (value <= 100) { return `${value}% HP`; }
-    if (value <= 1000) { return `${value - 100} HP`; }
+    if (value <= 200) { return `${value - 100}% MP`; }
+    if (value <= 1000) { return `${value - 200} HP`; }
     if (value <= 2000) { return `${value - 1000} MP`; }
     if (value <= 2005) { return `${value - 2000} CC`; }
     return `${value - 2000} MG`;
