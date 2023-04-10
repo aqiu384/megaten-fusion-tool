@@ -26,6 +26,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 
 const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
 const engNames: { [ename: string]: string } = {};
+const skillData = {};
 
 for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
   engNames[ename] = jname;
@@ -39,9 +40,13 @@ for (const [demon, entry] of Object.entries(ENEMY_DATA_JSON)) {
   DEMON_DATA_JSON[demon] = entry;
 }
 
-for (const [skill, entry] of Object.entries(SKILL_DATA_JSON)) {
-  if (entry['rank'] < 0) {
-    entry['rank'] = 99;
+for (const skill of SKILL_DATA_JSON) {
+  skillData[skill.name] = {
+    element: skill.elem,
+    cost: skill.cost || 0,
+    effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
+    target: skill.target || 'Self',
+    rank: skill.rank < 99 ? skill.rank : 99
   }
 }
 
@@ -59,7 +64,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   lang: 'en',
   engNames,
   affinityElems: [],
-  skillData: SKILL_DATA_JSON,
+  skillData,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,

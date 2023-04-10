@@ -27,6 +27,7 @@ const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affin
 const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
 const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
 const engNames: { [ename: string]: string } = {};
+const skillData = {};
 
 for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
   engNames[ename] = jname;
@@ -38,10 +39,14 @@ for (const elem of affinityElems) {
   affinityBonuses.upgrades.push(AFFINITIES_JSON['upgrades'][bonusElem]);
 }
 
-for (const skill of Object.values(SKILL_DATA_JSON)) {
-  if (skill['rank']) { continue; }
-  if (skill['cost']) { skill['rank'] = Math.ceil((skill['cost'] - 1000) / 5); }
-  else { skill['rank'] = 1; }
+for (const skill of SKILL_DATA_JSON) {
+  skillData[skill.name] = {
+    element: skill.elem,
+    cost: skill.cost || 0,
+    effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
+    target: skill.target || 'Self',
+    rank: skill.rank
+  }
 }
 
 for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
@@ -57,7 +62,7 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   lang: 'en',
   engNames,
   affinityElems,
-  skillData: SKILL_DATA_JSON,
+  skillData,
   skillElems,
   elemOrder: getEnumOrder(skillElems),
   resistCodes: COMP_CONFIG_JSON.resistCodes,

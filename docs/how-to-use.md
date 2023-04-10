@@ -100,22 +100,102 @@
 ### Skill Potentials
 | Rank | Attack              | Ailment             | Recovery             | Support   |
 | ---- | ------------------- | ------------------- | -------------------- | --------- |
-| 9    | Dmg +55%, Cost -40% | Hit +60%, Cost -40% |                      |           |
-| 8    | Dmg +47%, Cost -34% | Hit +50%, Cost -34% |                      |           |
-| 7    | Dmg +43%, Cost -31% | Hit +45%, Cost -31% |                      |           |
-| 6    | Dmg +39%, Cost -28% | Hit +40%, Cost -28% |                      |           |
-| 5    | Dmg +35%, Cost -25% | Hit +35%, Cost -25% | Heal +40%, Cost -40% | Cost -40% |
-| 4    | Dmg +25%, Cost -19% | Hit +25%, Cost -19% | Heal +25%, Cost -30% | Cost -30% |
-| 3    | Dmg +20%, Cost -16% | Hit +20%, Cost -16% | Heal +20%, Cost -25% | Cost -25% |
-| 2    | Dmg +15%, Cost -13% | Hit +15%, Cost -13% | Heal +15%, Cost -20% | Cost -20% |
-| 1    | Dmg +10%, Cost -10% | Hit +10%, Cost -10% | Heal +10%, Cost -15% | Cost -15% |
-| -1   | Dmg -10%, Cost +10% | Hit -10%, Cost +10% | Heal -10%, Cost +15% | Cost +15% |
-| -2   | Dmg -15%, Cost +13% | Hit -15%, Cost +13% | Heal -15%, Cost +30% | Cost +30% |
-| -3   | Dmg -20%, Cost +16% | Hit -20%, Cost +16% | Heal -20%, Cost +40% | Cost +40% |
+| +9   | Dmg +55%, Cost -40% | Hit +60%, Cost -40% |                      |           |
+| +8   | Dmg +47%, Cost -34% | Hit +50%, Cost -34% |                      |           |
+| +7   | Dmg +43%, Cost -31% | Hit +45%, Cost -31% |                      |           |
+| +6   | Dmg +39%, Cost -28% | Hit +40%, Cost -28% |                      |           |
+| +5   | Dmg +35%, Cost -25% | Hit +35%, Cost -25% | Heal +40%, Cost -40% | Cost -40% |
+| +4   | Dmg +25%, Cost -19% | Hit +25%, Cost -19% | Heal +25%, Cost -30% | Cost -30% |
+| +3   | Dmg +20%, Cost -16% | Hit +20%, Cost -16% | Heal +20%, Cost -25% | Cost -25% |
+| +2   | Dmg +15%, Cost -13% | Hit +15%, Cost -13% | Heal +15%, Cost -20% | Cost -20% |
+| +1   | Dmg +10%, Cost -10% | Hit +10%, Cost -10% | Heal +10%, Cost -15% | Cost -15% |
+| -1   | Dmg -10%, Cost +10% | Hit -10%, Cost +10% | Heal -10%, Cost +20% | Cost +20% |
+| -2   | Dmg -15%, Cost +15% | Hit -15%, Cost +15% | Heal -15%, Cost +30% | Cost +30% |
+| -3   | Dmg -20%, Cost +20% | Hit -20%, Cost +20% | Heal -20%, Cost +40% | Cost +40% |
 | -4   | Dmg -25%, Cost +25% | Hit -25%, Cost +25% | Heal -25%, Cost +50% | Cost +50% |
-| -5   | Dmg -35%, Cost +34% | Hit -35%, Cost +34% |                      |           |
+| -5   | Dmg -35%, Cost +35% | Hit -35%, Cost +35% | Heal -40%, Cost +60% | Cost +60% |
 | -6   | Dmg -39%, Cost +40% | Hit -40%, Cost +40% |                      |           |
-| -7   | Dmg -43%, Cost +46% | Hit -45%, Cost +46% |                      |           |
+| -7   | Dmg -43%, Cost +45% | Hit -45%, Cost +45% |                      |           |
+
+### Buff Effects
+| Rank | Tarukaja (Attack) | Rakukaja (Defense) | Sukukaja (Hit) | Sukukaja (Evade) |
+| ---- | ----------------- | ------------------ | -------------- | ---------------- |
+| +2   | 140%              | 70%                | 120%           | 85%              |
+| +1   | 120%              | 80%                | 110%           | 90%              |
+| -1   | 80%               | 120%               | 90%            | 110%             |
+| -2   | 70%               | 140%               | 85%            | 120%             |
+
+### Level Difference Damage Modifier
+
+| Diff | Dmg Mod |
+| ---- | ------- |
+| >+9  | 405%    |
+| +9   | 352%    |
+| +8   | 306%    |
+| +7   | 266%    |
+| +6   | 231%    |
+| +5   | 201%    |
+| +4   | 175%    |
+| +3   | 152%    |
+| +2   | 132%    |
+| +1   | 115%    |
+| -1   | 87%     |
+| -2   | 76%     |
+| -3   | 66%     |
+| -4   | 57%     |
+| -5   | 50%     |
+| -6   | 43%     |
+| -7   | 38%     |
+| -8   | 33%     |
+| -9   | 28%     |
+| <-9  | 25%     |
+
+### Filling the Magtsuhi Gauge
+| Condition                 | Fill |
+| ------------------------- | ---- |
+| Red Magatsuhi Pickup      | 1%   |
+| End Turn (Minimum)        | 15%  |
+| End Turn (Maximum)        | 25%  |
+| Forestall                 | 20%  |
+| Constant Vigiliance       | 15%  |
+| Embolden                  | 5%   |
+| Vengeful Opportunist      | 3%   |
+| Fell Swoop                | 1%   |
+| Counter Incentive: Resist | 3%   |
+| Counter Incentive: Null   | 10%  |
+| Unyielding Will           | 5%   |
+| Vengeance                 | 30%  |
+
+### Ailments
+* Sleep
+  * Skips action
+  * Cured when attacked
+  * Disables counter skills
+* Mirage
+  * Halves hit/evade
+  * 50% chance to hit a foe other than the selected target
+* Poison
+  * Loses HP after every action
+* Panic
+  * 35% chance to hit an ally
+  * 15% chance to do nothing
+  * Reduces evade to 0
+  * Disables counter skills
+* Charm
+  * 20% chance to cast recovery skill on foe
+  * 10% chance to cast support skill on foe
+  * 20% chance to do nothing
+  * Reduces evade to 0
+  * Disables counter skills
+* Seal
+  * Cannot cast skills
+  * Foe skips action when casting a skill
+  * Disables counter skills
+* Mud
+  * Loses one press turn before every action
+* Shroud
+  * Loses MP before every action
+  * Takes only 5% damage from Heliopolis Dawn
 
 ### Unlocking Magatsuhi Skills with Talismans (Tm)
 * Herald: Clear "The Holy Ring"
