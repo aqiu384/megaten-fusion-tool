@@ -131,12 +131,22 @@ export const ResistanceLevels = [
 ];
 
 export const ResistCodes = {
+  F: 1300,
+  C: 1150,
   w: 1125,
+  B: 1100,
+  A: 1050,
+  2: 200,
+  1: 125,
   '-': 100,
+  5: 100,
+  7: 75,
   s: 50,
   n: 0,
   r: -100,
-  d: -1100
+  R: -125,
+  d: -1100,
+  D: -1125
 };
 
 export const PasswordEncodings = {

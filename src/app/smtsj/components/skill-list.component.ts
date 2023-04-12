@@ -11,6 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <app-smt-skill-list
       [elemOrder]="elemOrder"
+      [hasTarget]="true"
       [inheritOrder]="inheritOrder"
       [transferTitle]="'D-Source'"
       [rowData]="skills | async">

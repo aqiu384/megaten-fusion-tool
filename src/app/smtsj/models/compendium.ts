@@ -3,15 +3,18 @@ import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import DEMON_DATA_JSON from '../data/demon-data.json';
-import BOSS_DATA_JSON from '../data/boss-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
+import BOSS_DATA_JSON from '../data/boss-data.json';
 import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 
 import REDUX_DEMON_DATA_JSON from '../data/redux-demon-data.json';
-import REDUX_SKILL_DATA_JSON from '../data/redux-skill-data.json';
 import REDUX_FUSION_PREREQS_JSON from '../data/redux-fusion-prereqs.json';
 import REDUX_SPECIAL_RECIPES_JSON from '../data/redux-special-recipes.json';
+
+import DEMON_CODES_JSON from '../data/demon-codes.json';
+import SKILL_CODES_JSON from '../data/skill-codes.json';
+import ALIGNMENTS_JSON from '../data/alignments.json';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -47,11 +50,9 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
 
     const demonDataJsons: any = [DEMON_DATA_JSON];
-    const skillDataJsons: any = [SKILL_DATA_JSON];
     const specialRecipesJsons: any = [SPECIAL_RECIPES_JSON];
     const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
 
-    const knownDemonCodes: { [code: number]: string } = {};
     const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
 
     for (const [lvl, prefix]  of Object.entries({ 1125: 'Weak', 50: 'Resist', 0: 'Null' })) {
@@ -75,7 +76,6 @@ export class Compendium implements ICompendium {
 
     if (importRedux) {
       demonDataJsons.push(REDUX_DEMON_DATA_JSON);
-      skillDataJsons.push(REDUX_SKILL_DATA_JSON);
       fusionReqsJsons.push(REDUX_FUSION_PREREQS_JSON);
       specialRecipesJsons.push(REDUX_SPECIAL_RECIPES_JSON);
     } else {
@@ -87,14 +87,14 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          attack:   'Physical x1 to single foe',
+          attack:   json['attack'] || 'Normal',
           lvl:      json['lvl'],
           currLvl:  json['lvl'],
           hpmod:    json['hpmod'] || 1,
           pcoeff:   json['pcoeff'],
           race:     json['race'],
-          code:     json['code'],
-          align:    json['align'],
+          code:     0,
+          align:    json['align'] || ALIGNMENTS_JSON[json['race']],
           fusion:   'normal',
           stats:    json['stats'],
           price:    Compendium.estimateBasePrice(json['stats'], json['pcoeff']),
@@ -105,24 +105,13 @@ export class Compendium implements ICompendium {
           skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
         };
-
-        if (json['attack']) {
-          const attack = json['attack'];
-          demons[name].attack = 
-            (attack.element ? attack.element : 'Physical') +
-            (attack.hits ? ' x' + attack.hits : ' x1') +
-            (attack.target ? ' to ' + attack.target : ' to single foe') +
-            (attack.ailment ? ' - ' + attack.ailment : '');
-        }
-
-        knownDemonCodes[json['code']] = name;
       }
     }
 
     const defaultStats = [100, 100, 1, 1, 1, 1, 1];
     const defaultDemon: Demon = {
       name:     'Unknown',
-      attack:   'Physical x1 to single foe',
+      attack:   'Normal',
       lvl:      1,
       currLvl:  1,
       hpmod:    1,
@@ -143,45 +132,38 @@ export class Compendium implements ICompendium {
     }
 
     if (!importRedux) {
-      for (const [name, json] of Object.entries(BOSS_DATA_JSON)) {
-        const stats = [100, 100, 1, 1, 1, 1, 1];
-        bosses[name] = Object.assign({}, defaultDemon, {
-          name,
-          race: json.race,
-          code: json.code
-        });
-
-        knownDemonCodes[json.code] = name;
+      for (const [name, race] of Object.entries(BOSS_DATA_JSON)) {
+        bosses[name] = Object.assign({}, defaultDemon, { name, race });
       }
     }
 
-    for (let code = 1; code < 512; code++) {
-      if (!knownDemonCodes[code]) {
-        const name = `Code ${code}`;
-        bosses[name] = Object.assign({}, defaultDemon, {
-          name,
-          code: code
-        });
+    for (const json of SKILL_DATA_JSON) {
+      skills[json.name] = {
+        name:      json.name,
+        code:      0,
+        element:   json.elem,
+        effect:    json.power ? json.power + ' dmg' + (json.effect ? ', ' + json.effect : '') : json.effect,
+        target:    json.target || 'Self',
+        power:     0,
+        accuracy:  0,
+        cost:      json.cost || 0,
+        inherit:   json.rank == 99 ? 'non' : json.inherit || json.elem,
+        rank:      json.rank,
+        learnedBy: [],
+        transfer:  [],
+        level:     0,
       }
     }
 
-    for (const skillDataJson of skillDataJsons) {
-      for (const [name, json] of Object.entries(skillDataJson)) {
-        skills[name] = {
-          name,
-          code:     json['code'],
-          element:  json['element'],
-          effect:   json['effect'],
-          power:    json['power'] || 0,
-          accuracy: json['accuracy'] || 0,
-          cost:     json['cost'] || 0,
-          inherit:  json['inherit'] || json['element'],
-          rank:     json['rank'] || 99,
-          learnedBy: [],
-          transfer: [],
-          level: 0
-        }
-      }
+    for (let code = 0; code < DEMON_CODES_JSON.length; code++) {
+      const dname = DEMON_CODES_JSON[code];
+      if (demons[dname]) { demons[dname].code = code; }
+      if (bosses[dname]) { bosses[dname].code = code; }
+    }
+
+    for (let code = 0; code < SKILL_CODES_JSON.length; code++) {
+      const sname = SKILL_CODES_JSON[code];
+      if (skills[sname]) { skills[sname].code = code; }
     }
 
     for (const sentries of Object.values(ailmentResists)) {

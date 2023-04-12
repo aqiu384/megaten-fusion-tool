@@ -1,8 +1,6 @@
 {
   "Abaddon": {
     "ailments": "--n---w--",
-    "align": "Dark-Chaos",
-    "code": 292,
     "inherits": "o------oo-ooo--",
     "lvl": 60,
     "pcoeff": 20,
@@ -14,8 +12,6 @@
   },
   "Acheri": {
     "ailments": "s--------",
-    "align": "Neutral-Chaos",
-    "code": 276,
     "inherits": "----------o---o",
     "lvl": 8,
     "pcoeff": 12,
@@ -26,25 +22,18 @@
     "stats": [88, 51, 6, 7, 5, 9, 7]
   },
   "Aeros": {
-    "align": "Light-Neutral",
-    "code": 340,
     "hpmod": 1.1,
     "inherits": "----o---o----o-",
     "lvl": 12,
     "pcoeff": 45,
     "race": "Prime",
-    "resists": "----wsnn",
-    "reslvls": {
-      "win": 75
-    },
+    "resists": "----w7nn",
     "skills": ["Garu"],
     "source": ["Garula", "Magaru"],
     "stats": [126, 71, 7, 10, 9, 11, 9]
   },
   "Airavata": {
     "ailments": "------n--",
-    "align": "Light-Neutral",
-    "code": 121,
     "hpmod": 1.1,
     "inherits": "--------oo-o--o",
     "lvl": 41,
@@ -56,27 +45,18 @@
     "stats": [353, 188, 30, 24, 25, 29, 30]
   },
   "Alciel": {
-    "align": "Dark-Law",
-    "attack": {
-      "target": "all foes"
-    },
-    "code": 79,
+    "attack": "All foes",
     "inherits": "o------oo-ooo--",
     "lvl": 61,
     "pcoeff": 18,
     "race": "Vile",
-    "resists": "ww-s-swn",
-    "reslvls": {
-      "exp": 300
-    },
+    "resists": "ww-s-sFn",
     "skills": ["Hades Blast", "Counter", "Life Gain"],
     "source": ["Retaliate", "Life Surge"],
     "stats": [511, 280, 43, 42, 40, 39, 39]
   },
   "Alice": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 350,
     "inherits": "o----oo----oo-o",
     "lvl": 39,
     "pcoeff": 21,
@@ -88,8 +68,6 @@
   },
   "Alilat": {
     "ailments": "nnnnnnnnn",
-    "align": "Light-Chaos",
-    "code": 375,
     "hpmod": 1.1,
     "inherits": "ooo--o-o---oooo",
     "lvl": 84,
@@ -102,8 +80,6 @@
   },
   "Alraune": {
     "ailments": "wwn-nnn--",
-    "align": "Dark-Law",
-    "code": 93,
     "inherits": "----------o-ooo",
     "lvl": 51,
     "pcoeff": 14,
@@ -115,8 +91,6 @@
   },
   "Amaterasu": {
     "ailments": "---w-----",
-    "align": "Light-Law",
-    "code": 9,
     "hpmod": 1.1,
     "inherits": "-o---o-----oooo",
     "lvl": 79,
@@ -129,8 +103,6 @@
   },
   "Ame no Uzume": {
     "ailments": "-----ww--",
-    "align": "Neutral-Law",
-    "code": 68,
     "inherits": "o------------o-",
     "lvl": 24,
     "pcoeff": 12,
@@ -142,8 +114,6 @@
   },
   "Ammut": {
     "ailments": "sss------",
-    "align": "Neutral-Neutral",
-    "code": 150,
     "inherits": "--------o----o-",
     "lvl": 56,
     "pcoeff": 12,
@@ -154,11 +124,7 @@
     "stats": [472, 257, 40, 38, 37, 31, 32]
   },
   "Ananta": {
-    "align": "Neutral-Neutral",
-    "attack": {
-      "hits": "1-3"
-    },
-    "code": 170,
+    "attack": "1-3 hits",
     "inherits": "----------o---o",
     "lvl": 65,
     "pcoeff": 12,
@@ -169,8 +135,6 @@
     "stats": [532, 288, 45, 40, 39, 41, 40]
   },
   "Angel": {
-    "align": "Neutral-Law",
-    "code": 43,
     "inherits": "-----o--------o",
     "lvl": 4,
     "pcoeff": 11,
@@ -182,8 +146,6 @@
   },
   "Aniel": {
     "ailments": "sssssssss",
-    "align": "Light-Law",
-    "code": 7,
     "hpmod": 1.1,
     "inherits": "---o-o-oo--oo-o",
     "lvl": 79,
@@ -195,8 +157,6 @@
     "stats": [654, 366, 50, 53, 47, 53, 49]
   },
   "Anubis": {
-    "align": "Light-Neutral",
-    "code": 110,
     "hpmod": 1.1,
     "inherits": "-----oo---o-o--",
     "lvl": 61,
@@ -208,11 +168,7 @@
     "stats": [516, 292, 35, 44, 38, 39, 42]
   },
   "Anzu": {
-    "align": "Dark-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 83,
+    "attack": "Gun dmg",
     "inherits": "o--o----o--o---",
     "lvl": 49,
     "pcoeff": 15,
@@ -223,8 +179,6 @@
     "stats": [409, 220, 31, 30, 30, 39, 27]
   },
   "Apis": {
-    "align": "Light-Neutral",
-    "code": 124,
     "hpmod": 1.1,
     "inherits": "-----o--o--o-o-",
     "lvl": 18,
@@ -237,8 +191,6 @@
   },
   "Apsaras": {
     "ailments": "----s----",
-    "align": "Neutral-Law",
-    "code": 69,
     "inherits": "----------o---o",
     "lvl": 10,
     "pcoeff": 12,
@@ -249,24 +201,17 @@
     "stats": [103, 63, 5, 10, 6, 7, 12]
   },
   "Aquans": {
-    "align": "Light-Neutral",
-    "code": 339,
     "hpmod": 1.1,
     "inherits": "--o-----o----o-",
     "lvl": 16,
     "pcoeff": 45,
     "race": "Prime",
-    "resists": "--ws--nn",
-    "reslvls": {
-      "ice": 75
-    },
+    "resists": "--w7--nn",
     "skills": ["Bufu", "Patra"],
     "source": ["Bufula", "Mabufu"],
     "stats": [160, 85, 12, 11, 12, 11, 12]
   },
   "Ara Mitama": {
-    "align": "Light-Neutral",
-    "code": 331,
     "hpmod": 1.1,
     "inherits": "--------oo---o-",
     "lvl": 21,
@@ -279,11 +224,7 @@
   },
   "Arachne": {
     "ailments": "nn-------",
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "charm (10%)"
-    },
-    "code": 206,
+    "attack": "10% Charm",
     "inherits": "------o--oo-o--",
     "lvl": 39,
     "pcoeff": 15,
@@ -294,8 +235,6 @@
     "stats": [334, 172, 29, 21, 25, 30, 22]
   },
   "Aramisaki": {
-    "align": "Dark-Neutral",
-    "code": 371,
     "inherits": "o-----oo---ooo-",
     "lvl": 58,
     "pcoeff": 20,
@@ -306,8 +245,6 @@
     "stats": [484, 267, 42, 40, 37, 34, 36]
   },
   "Archangel": {
-    "align": "Neutral-Law",
-    "code": 42,
     "inherits": "-----o--o------",
     "lvl": 8,
     "pcoeff": 11,
@@ -319,8 +256,6 @@
   },
   "Ares": {
     "ailments": "wwwwwwwww",
-    "align": "Light-Chaos",
-    "code": 218,
     "hpmod": 1.1,
     "inherits": "o-------oo-ooo-",
     "lvl": 36,
@@ -332,8 +267,6 @@
     "stats": [336, 169, 29, 22, 29, 21, 22]
   },
   "Asherah": {
-    "align": "Light-Chaos",
-    "code": 396,
     "hpmod": 1.1,
     "inherits": "-o-----ooo-oooo",
     "lvl": 58,
@@ -345,8 +278,6 @@
     "stats": [495, 277, 40, 41, 37, 36, 35]
   },
   "Asura": {
-    "align": "Dark-Chaos",
-    "code": 391,
     "inherits": "oo------oooooo-",
     "lvl": 42,
     "pcoeff": 28,
@@ -358,8 +289,6 @@
   },
   "Atropos": {
     "ailments": "----ns---",
-    "align": "Neutral-Chaos",
-    "code": 271,
     "inherits": "-----oo--------",
     "lvl": 49,
     "pcoeff": 12,
@@ -371,8 +300,6 @@
   },
   "Attis": {
     "ailments": "-------w-",
-    "align": "Dark-Neutral",
-    "code": 370,
     "inherits": "o-o----o-o-oo--",
     "lvl": 73,
     "pcoeff": 19,
@@ -383,8 +310,6 @@
     "stats": [604, 320, 53, 44, 47, 44, 46]
   },
   "Azrael": {
-    "align": "Light-Law",
-    "code": 4,
     "hpmod": 1.1,
     "inherits": "-o---ooo---oo--",
     "lvl": 69,
@@ -397,8 +322,6 @@
   },
   "Azumi": {
     "ailments": "----w----",
-    "align": "Neutral-Chaos",
-    "code": 265,
     "inherits": "--o-----o------",
     "lvl": 12,
     "pcoeff": 11,
@@ -410,10 +333,7 @@
   },
   "Bagaboo": {
     "align": "Neutral-Law",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 326,
+    "attack": "1-2 hits",
     "inherits": "----o---------o",
     "lvl": 20.1,
     "pcoeff": 12,
@@ -425,8 +345,6 @@
   },
   "Bai Suzhen": {
     "ailments": "-w--nw---",
-    "align": "Dark-Chaos",
-    "code": 303,
     "inherits": "--o------o-o--o",
     "lvl": 27,
     "pcoeff": 15,
@@ -437,8 +355,6 @@
     "stats": [232, 130, 20, 18, 15, 18, 20]
   },
   "Baihu": {
-    "align": "Light-Neutral",
-    "code": 120,
     "hpmod": 1.1,
     "inherits": "---o----oo-o---",
     "lvl": 48,
@@ -451,8 +367,6 @@
   },
   "Balor": {
     "ailments": "------w--",
-    "align": "Dark-Chaos",
-    "code": 295,
     "inherits": "-o-----oo-ooo--",
     "lvl": 44,
     "pcoeff": 20,
@@ -463,8 +377,6 @@
     "stats": [370, 205, 32, 30, 27, 27, 26]
   },
   "Baphomet": {
-    "align": "Dark-Law",
-    "code": 78,
     "inherits": "------oo--oooo-",
     "lvl": 26,
     "pcoeff": 20,
@@ -476,8 +388,6 @@
   },
   "Barong": {
     "ailments": "nnnnnnnnn",
-    "align": "Light-Neutral",
-    "code": 109,
     "hpmod": 1.1,
     "inherits": "-----o--oo-----",
     "lvl": 69,
@@ -490,11 +400,7 @@
   },
   "Basilisk": {
     "ailments": "-sn------",
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "stone (3%)"
-    },
-    "code": 302,
+    "attack": "3% Stone",
     "inherits": "--------oooo---",
     "lvl": 35,
     "pcoeff": 14,
@@ -506,8 +412,6 @@
   },
   "Berserker": {
     "ailments": "----ss---",
-    "align": "Neutral-Chaos",
-    "code": 259,
     "inherits": "--------o----o-",
     "lvl": 53,
     "pcoeff": 12,
@@ -518,8 +422,6 @@
     "stats": [424, 236, 39, 32, 27, 37, 34]
   },
   "Bifrons": {
-    "align": "Neutral-Chaos",
-    "code": 254,
     "inherits": "-o----o--------",
     "lvl": 16,
     "pcoeff": 11,
@@ -530,8 +432,6 @@
     "stats": [151, 89, 10, 14, 10, 13, 11]
   },
   "Bishamonten": {
-    "align": "Light-Chaos",
-    "code": 241,
     "hpmod": 1.1,
     "inherits": "--o-----oo-ooo-",
     "lvl": 65,
@@ -543,8 +443,6 @@
     "stats": [570, 302, 44, 43, 47, 39, 42]
   },
   "Black Frost": {
-    "align": "Dark-Neutral",
-    "code": 199,
     "inherits": "-oo---o-o-ooo--",
     "lvl": 30,
     "pcoeff": 22,
@@ -556,8 +454,6 @@
   },
   "Black Maria": {
     "ailments": "----n----",
-    "align": "Light-Chaos",
-    "code": 223,
     "hpmod": 1.1,
     "inherits": "---o------o-o-o",
     "lvl": 64,
@@ -570,26 +466,17 @@
   },
   "Black Rider": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 347,
     "inherits": "--o--oo--o-oo--",
     "lvl": 69,
     "pcoeff": 21,
     "race": "Fiend",
-    "resists": "--wd--nn",
-    "reslvls": {
-      "fir": 100
-    },
+    "resists": "--Bd--nn",
     "skills": ["Glacial Blast", "Megidola", "Debilitate"],
     "source": ["Glacial Blast", "Ice Boost", "Mana Surge"],
     "stats": [559, 316, 43, 48, 40, 48, 43]
   },
   "Bogaboo": {
-    "align": "Neutral-Neutral",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 327,
+    "attack": "1-2 hits",
     "inherits": "--oo-----------",
     "lvl": 20.2,
     "pcoeff": 12,
@@ -601,10 +488,7 @@
   },
   "Bugaboo": {
     "align": "Neutral-Chaos",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 332,
+    "attack": "1-2 hits",
     "hpmod": 1.1,
     "inherits": "-o----o--------",
     "lvl": 20.3,
@@ -617,8 +501,6 @@
   },
   "Cabracan": {
     "ailments": "ww--n-w--",
-    "align": "Dark-Neutral",
-    "code": 187,
     "inherits": "--------oo-o--o",
     "lvl": 64,
     "pcoeff": 15,
@@ -630,11 +512,7 @@
   },
   "Caladrius": {
     "ailments": "nnnnnnnnn",
-    "align": "Neutral-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 49,
+    "attack": "Gun dmg",
     "inherits": "-------------oo",
     "lvl": 22,
     "pcoeff": 12,
@@ -645,8 +523,6 @@
     "stats": [196, 113, 12, 17, 13, 19, 15]
   },
   "Camazotz": {
-    "align": "Dark-Law",
-    "code": 85,
     "inherits": "o-------o--o-o-",
     "lvl": 31,
     "pcoeff": 15,
@@ -658,11 +534,7 @@
   },
   "Catoblepas": {
     "ailments": "wwnwwwwnw",
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "stone (3%)"
-    },
-    "code": 188,
+    "attack": "3% Stone",
     "inherits": "---------ooo-o-",
     "lvl": 52,
     "pcoeff": 15,
@@ -674,11 +546,7 @@
   },
   "Cerberus": {
     "ailments": "--s-ww---",
-    "align": "Neutral-Neutral",
-    "attack": {
-      "ailment": "poison (10%)"
-    },
-    "code": 149,
+    "attack": "10% Poison",
     "inherits": "-o------o------",
     "lvl": 66,
     "pcoeff": 12,
@@ -690,8 +558,6 @@
   },
   "Cherub": {
     "ailments": "--s--sw--",
-    "align": "Neutral-Law",
-    "code": 36,
     "inherits": "-------o-o-----",
     "lvl": 61,
     "pcoeff": 12,
@@ -702,8 +568,6 @@
     "stats": [499, 284, 38, 44, 36, 38, 37]
   },
   "Chimera": {
-    "align": "Light-Neutral",
-    "code": 111,
     "hpmod": 1.1,
     "inherits": "---o-o--o---o--",
     "lvl": 49,
@@ -716,8 +580,6 @@
   },
   "Chupacabra": {
     "ailments": "------w--",
-    "align": "Neutral-Neutral",
-    "code": 364,
     "inherits": "o-------o-ooo--",
     "lvl": 19,
     "pcoeff": 17,
@@ -729,8 +591,6 @@
   },
   "Churel": {
     "ailments": "-----n---",
-    "align": "Dark-Chaos",
-    "code": 323,
     "inherits": "------o---oo--o",
     "lvl": 24,
     "pcoeff": 15,
@@ -742,8 +602,6 @@
   },
   "Clotho": {
     "ailments": "----ns---",
-    "align": "Neutral-Chaos",
-    "code": 273,
     "inherits": "----------o---o",
     "lvl": 37,
     "pcoeff": 12,
@@ -755,8 +613,6 @@
   },
   "Cu Chulainn": {
     "ailments": "------n--",
-    "align": "Light-Neutral",
-    "code": 130,
     "hpmod": 1.1,
     "inherits": "----o---oo-ooo-",
     "lvl": 48,
@@ -768,8 +624,6 @@
     "stats": [425, 227, 36, 32, 34, 36, 26]
   },
   "Da Peng": {
-    "align": "Neutral-Law",
-    "code": 46,
     "inherits": "o---o----------",
     "lvl": 50,
     "pcoeff": 12,
@@ -781,8 +635,6 @@
   },
   "Dakini": {
     "ailments": "----sn---",
-    "align": "Neutral-Chaos",
-    "code": 270,
     "inherits": "-o--------o----",
     "lvl": 63,
     "pcoeff": 12,
@@ -794,24 +646,17 @@
   },
   "Dantalian": {
     "ailments": "-----w---",
-    "align": "Neutral-Chaos",
-    "code": 251,
     "inherits": "-o-----------o-",
     "lvl": 33,
     "pcoeff": 12,
     "race": "Fallen",
-    "resists": "w-sswnsn",
-    "reslvls": {
-      "phy": 150
-    },
+    "resists": "C-sswnsn",
     "skills": ["Magarula", "Tetrakarn", "Concentrate"],
     "source": ["Diarama", "Tetrakarn"],
     "stats": [283, 166, 17, 27, 20, 22, 23]
   },
   "Daphne": {
     "ailments": "-n---n---",
-    "align": "Light-Law",
-    "code": 33,
     "hpmod": 1.1,
     "inherits": "----------ooooo",
     "lvl": 21,
@@ -824,24 +669,17 @@
   },
   "David": {
     "ailments": "sssssssss",
-    "align": "Dark-Neutral",
-    "code": 352,
     "inherits": "-----oo--oooo--",
     "lvl": 22,
     "pcoeff": 20,
     "race": "Fiend",
-    "resists": "--ssw-sn",
-    "reslvls": {
-      "ele": 100
-    },
+    "resists": "--ssB-sn",
     "skills": ["Mamudo", "Staredown", "Blight"],
     "source": ["Blight", "Life Bonus", "Mana Bonus"],
     "stats": [199, 111, 16, 16, 14, 16, 19]
   },
   "Decarabia": {
     "ailments": "-ss-sws--",
-    "align": "Neutral-Chaos",
-    "code": 249,
     "inherits": "-------o-----o-",
     "lvl": 50,
     "pcoeff": 12,
@@ -853,20 +691,16 @@
   },
   "Demiurge": {
     "ailments": "sssssssss",
-    "align": "Dark-Law",
-    "code": 71,
     "inherits": "o----o-oo-ooooo",
     "lvl": 94,
     "pcoeff": 51,
     "race": "Vile",
     "resists": "--ssssnn",
-    "skills": ["Jihad", "Luster Candy", "Victory Cry"],
-    "source": ["Repel Phys", "Jihad", "Gun Amp"],
+    "skills": ["Antichthon", "Luster Candy", "Victory Cry"],
+    "source": ["Repel Phys", "Antichthon", "Gun Amp"],
     "stats": [766, 423, 66, 64, 59, 60, 53]
   },
   "Demonee-ho": {
-    "align": "Neutral-Neutral",
-    "code": 136,
     "hpmod": 1.1,
     "inherits": "--o-----oo-----",
     "lvl": 75,
@@ -879,68 +713,45 @@
   },
   "Demonica-C": {
     "align": "Neutral-Chaos",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 343,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "--------oo-----",
     "lvl": 1.3,
     "pcoeff": 12,
     "race": "Fake",
-    "resists": "------nw",
-    "reslvls": {
-      "gun": 50
-    },
+    "resists": "-5----nw",
     "skills": ["Headshot", "Armshot", "Watchful"],
     "source": ["Gun Boost"],
     "stats": [44, 22, 5, 3, 4, 4, 4]
   },
   "Demonica-L": {
     "align": "Neutral-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 333,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "--------oo-----",
     "lvl": 1.1,
     "pcoeff": 12,
     "race": "Fake",
-    "resists": "------nw",
-    "reslvls": {
-      "gun": 50
-    },
+    "resists": "-5----nw",
     "skills": ["Snipe", "Legshot", "Watchful"],
     "source": ["Resist Gun"],
     "stats": [44, 27, 3, 5, 4, 4, 4]
   },
   "Demonica-N": {
-    "align": "Neutral-Neutral",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 342,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "--------oo-----",
     "lvl": 1.2,
     "pcoeff": 12,
     "race": "Fake",
-    "resists": "------nw",
-    "reslvls": {
-      "gun": 50
-    },
+    "resists": "-5----nw",
     "skills": ["Airshot", "Cripple", "Watchful"],
     "source": ["Life Bonus", "Mana Bonus"],
     "stats": [44, 24, 4, 4, 4, 4, 4]
   },
   "Diana": {
     "ailments": "-----n---",
-    "align": "Light-Chaos",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 224,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "---------o--ooo",
     "lvl": 54,
@@ -953,8 +764,6 @@
   },
   "Dionysus": {
     "ailments": "--n----n-",
-    "align": "Dark-Neutral",
-    "code": 372,
     "inherits": "o------o--ooo-o",
     "lvl": 41,
     "pcoeff": 20,
@@ -966,8 +775,6 @@
   },
   "Dis": {
     "ailments": "------s--",
-    "align": "Neutral-Law",
-    "code": 59,
     "inherits": "----o-----o----",
     "lvl": 27,
     "pcoeff": 12,
@@ -979,8 +786,6 @@
   },
   "Dominion": {
     "ailments": "--s--s---",
-    "align": "Neutral-Law",
-    "code": 38,
     "inherits": "-----o-o-------",
     "lvl": 38,
     "pcoeff": 11,
@@ -991,24 +796,16 @@
     "stats": [319, 187, 28, 30, 22, 20, 24]
   },
   "Doppelganger": {
-    "align": "Dark-Chaos",
-    "code": 315,
     "inherits": "o---------oooo-",
     "lvl": 25,
     "pcoeff": 16,
     "race": "Foul",
-    "resists": "rr----ww",
-    "reslvls": {
-      "cur": 300,
-      "exp": 300
-    },
+    "resists": "rr----FF",
     "skills": ["Makarakarn"],
     "source": ["Tetraja", "Sabbatma"],
     "stats": [226, 122, 17, 17, 17, 17, 17]
   },
   "Dwarf": {
-    "align": "Neutral-Neutral",
-    "code": 165,
     "inherits": "--------o----o-",
     "lvl": 20,
     "pcoeff": 12,
@@ -1020,11 +817,7 @@
   },
   "Dybbuk": {
     "ailments": "s--------",
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "sleep (5%)"
-    },
-    "code": 311,
+    "attack": "5% Sleep",
     "inherits": "------o---o-oo-",
     "lvl": 2,
     "pcoeff": 14,
@@ -1035,8 +828,6 @@
     "stats": [43, 25, 3, 3, 2, 3, 5]
   },
   "Dzelarhons": {
-    "align": "Light-Chaos",
-    "code": 227,
     "hpmod": 1.1,
     "inherits": "-o----o-----o-o",
     "lvl": 21,
@@ -1049,8 +840,6 @@
   },
   "Erlkonig": {
     "ailments": "nnn------",
-    "align": "Dark-Law",
-    "code": 92,
     "inherits": "---o-----o--oo-",
     "lvl": 61,
     "pcoeff": 15,
@@ -1061,26 +850,18 @@
     "stats": [517, 272, 37, 38, 42, 36, 40]
   },
   "Erthys": {
-    "align": "Light-Neutral",
-    "code": 341,
     "hpmod": 1.1,
     "inherits": "---o-----o----o",
     "lvl": 8,
     "pcoeff": 47,
     "race": "Prime",
-    "resists": "-s----nn",
-    "reslvls": {
-      "gun": 75,
-      "win": 125
-    },
+    "resists": "-7---1nn",
     "skills": ["Zio"],
     "source": ["Zionga", "Mazio"],
     "stats": [92, 56, 7, 9, 6, 5, 7]
   },
   "Fafnir": {
     "ailments": "--s---w--",
-    "align": "Dark-Chaos",
-    "code": 298,
     "inherits": "--------oo-o-o-",
     "lvl": 72,
     "pcoeff": 14,
@@ -1091,11 +872,7 @@
     "stats": [598, 309, 51, 40, 47, 43, 45]
   },
   "Feng Huang": {
-    "align": "Light-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 22,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "oo-----o---o---",
     "lvl": 46,
@@ -1108,8 +885,6 @@
   },
   "Fenrir": {
     "ailments": "-nn------",
-    "align": "Dark-Neutral",
-    "code": 186,
     "inherits": "o-------oo-o---",
     "lvl": 71,
     "pcoeff": 16,
@@ -1120,25 +895,18 @@
     "stats": [580, 300, 51, 37, 43, 49, 43]
   },
   "Flaemis": {
-    "align": "Light-Neutral",
-    "code": 338,
     "hpmod": 1.1,
     "inherits": "-o-------o----o",
     "lvl": 20,
     "pcoeff": 45,
     "race": "Prime",
-    "resists": "--sw--nn",
-    "reslvls": {
-      "fir": 75
-    },
+    "resists": "--7w--nn",
     "skills": ["Maragi", "Paraladi"],
     "source": ["Agilao", "Maragi"],
     "stats": [191, 103, 15, 14, 14, 13, 14]
   },
   "Fomorian": {
     "ailments": "w---s----",
-    "align": "Neutral-Chaos",
-    "code": 284,
     "inherits": "---o----o------",
     "lvl": 16,
     "pcoeff": 12,
@@ -1149,8 +917,6 @@
     "stats": [160, 79, 15, 9, 13, 9, 12]
   },
   "Fortuna": {
-    "align": "Light-Law",
-    "code": 16,
     "hpmod": 1.1,
     "inherits": "----o-------ooo",
     "lvl": 20,
@@ -1162,8 +928,6 @@
     "stats": [187, 110, 12, 17, 13, 15, 18]
   },
   "Frost Ace": {
-    "align": "Light-Neutral",
-    "code": 133,
     "hpmod": 1.1,
     "inherits": "--o--o--oo-oooo",
     "lvl": 34,
@@ -1176,11 +940,7 @@
   },
   "Futotama": {
     "ailments": "--n------",
-    "align": "Light-Neutral",
-    "attack": {
-      "target": "all foes"
-    },
-    "code": 358,
+    "attack": "All foes",
     "hpmod": 1.1,
     "inherits": "-----o-o---oooo",
     "lvl": 42,
@@ -1193,8 +953,6 @@
   },
   "Fuu-Ki": {
     "ailments": "----n----",
-    "align": "Neutral-Chaos",
-    "code": 260,
     "inherits": "----o---o------",
     "lvl": 36,
     "pcoeff": 12,
@@ -1205,8 +963,6 @@
     "stats": [307, 165, 22, 22, 22, 28, 24]
   },
   "Ganesha": {
-    "align": "Neutral-Law",
-    "code": 55,
     "inherits": "----o---------o",
     "lvl": 67,
     "pcoeff": 12,
@@ -1218,11 +974,7 @@
   },
   "Garuda": {
     "ailments": "--n------",
-    "align": "Light-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 20,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "o---o---o--o---",
     "lvl": 71,
@@ -1235,8 +987,6 @@
   },
   "Gemori": {
     "ailments": "---nnnn--",
-    "align": "Neutral-Chaos",
-    "code": 248,
     "inherits": "----------o---o",
     "lvl": 60,
     "pcoeff": 12,
@@ -1248,11 +998,7 @@
   },
   "Ghoul": {
     "ailments": "------w--",
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "poison (30%)"
-    },
-    "code": 322,
+    "attack": "30% Poison",
     "inherits": "------o-o-oo---",
     "lvl": 30,
     "pcoeff": 14,
@@ -1264,8 +1010,6 @@
   },
   "Girimehkala": {
     "ailments": "n--------",
-    "align": "Dark-Neutral",
-    "code": 197,
     "inherits": "--------o-oo-o-",
     "lvl": 57,
     "pcoeff": 13,
@@ -1276,8 +1020,6 @@
     "stats": [460, 262, 40, 39, 31, 34, 37]
   },
   "Gnome": {
-    "align": "Light-Neutral",
-    "code": 337,
     "hpmod": 1.1,
     "inherits": "---o----o----o-",
     "lvl": 21,
@@ -1289,8 +1031,6 @@
     "stats": [207, 104, 14, 13, 17, 15, 14]
   },
   "Goblin": {
-    "align": "Neutral-Neutral",
-    "code": 145,
     "inherits": "--------o----o-",
     "lvl": 7,
     "pcoeff": 12,
@@ -1302,8 +1042,6 @@
   },
   "Gogmagog": {
     "ailments": "--s---w--",
-    "align": "Neutral-Neutral",
-    "code": 160,
     "inherits": "o--o-----------",
     "lvl": 55,
     "pcoeff": 12,
@@ -1314,8 +1052,6 @@
     "stats": [460, 240, 39, 31, 35, 32, 38]
   },
   "Gremlin": {
-    "align": "Dark-Neutral",
-    "code": 203,
     "inherits": "--o-----o--o-o-",
     "lvl": 5,
     "pcoeff": 14,
@@ -1327,8 +1063,6 @@
   },
   "Grendel": {
     "ailments": "------w--",
-    "align": "Dark-Neutral",
-    "code": 198,
     "inherits": "--------oo-o-o-",
     "lvl": 46,
     "pcoeff": 15,
@@ -1339,8 +1073,6 @@
     "stats": [394, 209, 36, 29, 31, 24, 28]
   },
   "Gryphon": {
-    "align": "Neutral-Neutral",
-    "code": 151,
     "inherits": "--------oo-----",
     "lvl": 46,
     "pcoeff": 12,
@@ -1351,8 +1083,6 @@
     "stats": [394, 203, 29, 26, 31, 36, 26]
   },
   "Gu Huo Niao": {
-    "align": "Neutral-Law",
-    "code": 50,
     "inherits": "o------------o-",
     "lvl": 15,
     "pcoeff": 11,
@@ -1363,8 +1093,6 @@
     "stats": [142, 76, 10, 9, 9, 16, 11]
   },
   "Gucumatz": {
-    "align": "Light-Chaos",
-    "code": 235,
     "hpmod": 1.1,
     "inherits": "-------o-o-o-o-",
     "lvl": 35,
@@ -1377,11 +1105,7 @@
   },
   "Guedhe": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "sleep (10%)"
-    },
-    "code": 181,
+    "attack": "10% Sleep",
     "inherits": "------oo-oooo--",
     "lvl": 62,
     "pcoeff": 21,
@@ -1393,8 +1117,6 @@
   },
   "Gui Xian": {
     "ailments": "----w----",
-    "align": "Neutral-Neutral",
-    "code": 172,
     "inherits": "--o------o-----",
     "lvl": 42,
     "pcoeff": 12,
@@ -1406,12 +1128,7 @@
   },
   "Gurr": {
     "ailments": "-----n---",
-    "align": "Dark-Law",
-    "attack": {
-      "ailment": "poison (15%)",
-      "element": "Gun"
-    },
-    "code": 84,
+    "attack": "Gun dmg, 15% Poison",
     "inherits": "o---o-o----o---",
     "lvl": 40,
     "pcoeff": 14,
@@ -1422,8 +1139,6 @@
     "stats": [331, 187, 23, 27, 22, 33, 25]
   },
   "Hachiman": {
-    "align": "Light-Neutral",
-    "code": 101,
     "hpmod": 1.1,
     "inherits": "o--o---o---ooo-",
     "lvl": 77,
@@ -1435,11 +1150,7 @@
     "stats": [635, 373, 50, 59, 45, 47, 45]
   },
   "Halphas": {
-    "align": "Neutral-Chaos",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 253,
+    "attack": "Gun dmg",
     "inherits": "---------o---o-",
     "lvl": 22,
     "pcoeff": 12,
@@ -1451,29 +1162,19 @@
   },
   "Hamsa": {
     "ailments": "-------n-",
-    "align": "Light-Law",
-    "attack": {
-      "ailment": "mute (5%)",
-      "element": "Gun"
-    },
-    "code": 26,
+    "attack": "Gun dmg, 5% Mute",
     "hpmod": 1.1,
     "inherits": "o--o-------o-o-",
     "lvl": 9,
     "pcoeff": 14,
     "race": "Avian",
-    "resists": "-w--sw--",
-    "reslvls": {
-      "ele": 75
-    },
+    "resists": "-w--7w--",
     "skills": ["Mazio", "Makajama", "Dekaja"],
     "source": ["Zionga", "Paraladi"],
     "stats": [108, 59, 6, 9, 9, 10, 8]
   },
   "Hanuman": {
     "ailments": "-----n---",
-    "align": "Light-Neutral",
-    "code": 129,
     "hpmod": 1.1,
     "inherits": "o-------o--ooo-",
     "lvl": 62,
@@ -1485,8 +1186,6 @@
     "stats": [519, 271, 45, 33, 37, 44, 42]
   },
   "Haoma": {
-    "align": "Light-Law",
-    "code": 30,
     "hpmod": 1.1,
     "inherits": "---------o-oooo",
     "lvl": 55,
@@ -1498,31 +1197,18 @@
     "stats": [470, 268, 36, 41, 35, 30, 38]
   },
   "Hare of Inaba": {
-    "align": "Neutral-Neutral",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 362,
+    "attack": "1-2 hits",
     "inherits": "o---------ooo-o",
     "lvl": 37,
     "pcoeff": 14,
     "race": "UMA",
-    "resists": "-wwwwwss",
-    "reslvls": {
-      "ele": 100,
-      "fir": 100,
-      "gun": 100,
-      "ice": 100,
-      "win": 100
-    },
+    "resists": "-BBBBBss",
     "skills": ["Mediarama", "Sukukaja", "Vigilant"],
     "source": ["Vigilant", "Recovery Amp"],
     "stats": [313, 170, 24, 23, 22, 33, 24]
   },
   "Hariti": {
     "ailments": "---ws--w-",
-    "align": "Light-Chaos",
-    "code": 225,
     "hpmod": 1.1,
     "inherits": "o---------o-o-o",
     "lvl": 44,
@@ -1535,12 +1221,7 @@
   },
   "Harpy": {
     "ailments": "-----s---",
-    "align": "Neutral-Law",
-    "attack": {
-      "ailment": "charm (5%)",
-      "element": "Gun"
-    },
-    "code": 51,
+    "attack": "Gun dmg, 5% Charm",
     "inherits": "----o---------o",
     "lvl": 9,
     "pcoeff": 11,
@@ -1551,11 +1232,7 @@
     "stats": [97, 52, 6, 6, 6, 12, 7]
   },
   "Hathor": {
-    "align": "Light-Law",
-    "attack": {
-      "ailment": "sleep (5%)"
-    },
-    "code": 17,
+    "attack": "5% Sleep",
     "hpmod": 1.1,
     "inherits": "o---o-------o-o",
     "lvl": 11,
@@ -1568,11 +1245,7 @@
   },
   "Hecatoncheir": {
     "ailments": "----sws--",
-    "align": "Dark-Neutral",
-    "attack": {
-      "hits": "1-3"
-    },
-    "code": 196,
+    "attack": "1-3 hits",
     "inherits": "--------oo-o-o-",
     "lvl": 70,
     "pcoeff": 15,
@@ -1584,8 +1257,6 @@
   },
   "Heimdall": {
     "ailments": "----n----",
-    "align": "Light-Neutral",
-    "code": 128,
     "hpmod": 1.1,
     "inherits": "-----o-o---ooo-",
     "lvl": 72,
@@ -1598,8 +1269,6 @@
   },
   "Hel": {
     "ailments": "----s----",
-    "align": "Dark-Neutral",
-    "code": 183,
     "inherits": "o-o---o---ooo--",
     "lvl": 47,
     "pcoeff": 19,
@@ -1610,8 +1279,6 @@
     "stats": [388, 224, 26, 35, 27, 33, 30]
   },
   "Heqet": {
-    "align": "Light-Neutral",
-    "code": 125,
     "hpmod": 1.1,
     "inherits": "--o-----o--o--o",
     "lvl": 10,
@@ -1624,12 +1291,7 @@
   },
   "High Pixie": {
     "ailments": "----nnn--",
-    "align": "Neutral-Neutral",
-    "attack": {
-      "ailment": "charm (5%)",
-      "hits": "2"
-    },
-    "code": 143,
+    "attack": "2 hits, 5% Charm",
     "inherits": "--ooo------oo-o",
     "lvl": 19,
     "pcoeff": 21,
@@ -1640,8 +1302,6 @@
     "stats": [169, 104, 10, 17, 10, 18, 17]
   },
   "Horkos": {
-    "align": "Dark-Chaos",
-    "code": 390,
     "inherits": "o-----o-oooooo-",
     "lvl": 33,
     "pcoeff": 27,
@@ -1652,11 +1312,7 @@
     "stats": [301, 158, 25, 23, 26, 19, 21]
   },
   "Hresvelgr": {
-    "align": "Dark-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 81,
+    "attack": "Gun dmg",
     "inherits": "o-o-o----------",
     "lvl": 70,
     "pcoeff": 15,
@@ -1668,8 +1324,6 @@
   },
   "Hsing-Hsing": {
     "ailments": "-s--w----",
-    "align": "Neutral-Neutral",
-    "code": 153,
     "inherits": "o-------o------",
     "lvl": 30,
     "pcoeff": 12,
@@ -1680,8 +1334,6 @@
     "stats": [259, 137, 23, 17, 18, 22, 20]
   },
   "Hua Po": {
-    "align": "Neutral-Neutral",
-    "code": 166,
     "inherits": "-o------------o",
     "lvl": 6,
     "pcoeff": 11,
@@ -1692,11 +1344,7 @@
     "stats": [67, 47, 3, 8, 2, 7, 8]
   },
   "Huang Long": {
-    "align": "Light-Chaos",
-    "attack": {
-      "hits": "1-3"
-    },
-    "code": 231,
+    "attack": "1-3 hits",
     "hpmod": 1.1,
     "inherits": "ooooo----o-oo--",
     "lvl": 78,
@@ -1708,8 +1356,6 @@
     "stats": [658, 365, 50, 54, 50, 52, 48]
   },
   "Huoniao": {
-    "align": "Dark-Law",
-    "code": 82,
     "inherits": "oo---------o--o",
     "lvl": 64,
     "pcoeff": 14,
@@ -1721,11 +1367,7 @@
   },
   "Incubus": {
     "ailments": "----n----",
-    "align": "Neutral-Chaos",
-    "attack": {
-      "ailment": "sleep (10%)"
-    },
-    "code": 283,
+    "attack": "10% Sleep",
     "inherits": "----o----o-----",
     "lvl": 23,
     "pcoeff": 12,
@@ -1737,8 +1379,6 @@
   },
   "Inferno": {
     "ailments": "-n-------",
-    "align": "Dark-Chaos",
-    "code": 310,
     "inherits": "-o----o---o-o--",
     "lvl": 23,
     "pcoeff": 15,
@@ -1749,8 +1389,6 @@
     "stats": [229, 108, 17, 13, 22, 13, 14]
   },
   "Inti": {
-    "align": "Light-Neutral",
-    "code": 105,
     "hpmod": 1.1,
     "inherits": "oo-o-------ooo-",
     "lvl": 49,
@@ -1763,8 +1401,6 @@
   },
   "Inugami": {
     "ailments": "------w--",
-    "align": "Neutral-Neutral",
-    "code": 155,
     "inherits": "o-------o------",
     "lvl": 17,
     "pcoeff": 12,
@@ -1775,11 +1411,7 @@
     "stats": [163, 86, 10, 11, 12, 15, 13]
   },
   "Ippon-Datara": {
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "mute (5%)"
-    },
-    "code": 202,
+    "attack": "5% Mute",
     "inherits": "--------oo-o-o-",
     "lvl": 10,
     "pcoeff": 14,
@@ -1791,8 +1423,6 @@
   },
   "Ishtar": {
     "ailments": "-----n---",
-    "align": "Light-Law",
-    "code": 18,
     "hpmod": 1.1,
     "inherits": "----o-------ooo",
     "lvl": 51,
@@ -1804,8 +1434,6 @@
     "stats": [439, 249, 33, 38, 33, 34, 35]
   },
   "Israfel": {
-    "align": "Light-Law",
-    "code": 5,
     "hpmod": 1.1,
     "inherits": "--o--o-o---oo-o",
     "lvl": 63,
@@ -1817,11 +1445,7 @@
     "stats": [525, 303, 38, 46, 37, 43, 40]
   },
   "Itsumade": {
-    "align": "Dark-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 88,
+    "attack": "Gun dmg",
     "inherits": "oo----o----o---",
     "lvl": 7,
     "pcoeff": 14,
@@ -1832,23 +1456,16 @@
     "stats": [88, 42, 6, 4, 7, 9, 5]
   },
   "Jack Frost": {
-    "align": "Neutral-Neutral",
-    "code": 144,
     "inherits": "--o----------o-",
     "lvl": 12,
     "pcoeff": 12,
     "race": "Fairy",
-    "resists": "--wr----",
-    "reslvls": {
-      "ice": 125
-    },
+    "resists": "--wR----",
     "skills": ["Bufu", "Mabufu", "Dream Fist"],
     "source": ["Mabufu", "Resist Ice"],
     "stats": [115, 73, 5, 12, 6, 11, 12]
   },
   "Jikokuten": {
-    "align": "Light-Chaos",
-    "code": 242,
     "hpmod": 1.1,
     "inherits": "----o---oo-ooo-",
     "lvl": 57,
@@ -1860,24 +1477,16 @@
     "stats": [482, 263, 42, 36, 35, 39, 39]
   },
   "Jueyuan": {
-    "align": "Dark-Neutral",
-    "code": 193,
     "inherits": "--------oo-o-o-",
     "lvl": 10,
     "pcoeff": 14,
     "race": "Wilder",
-    "resists": "ss--ww--",
-    "reslvls": {
-      "gun": 75,
-      "phy": 75
-    },
+    "resists": "77--ww--",
     "skills": ["Giant Slice", "Zan-Ei"],
     "source": ["Ambush"],
     "stats": [118, 57, 7, 7, 11, 7, 8]
   },
   "Kaiming Shou": {
-    "align": "Light-Neutral",
-    "code": 112,
     "hpmod": 1.1,
     "inherits": "-----o--o---oo-",
     "lvl": 43,
@@ -1889,8 +1498,6 @@
     "stats": [382, 197, 33, 25, 30, 29, 27]
   },
   "Kaiwan": {
-    "align": "Neutral-Chaos",
-    "code": 282,
     "inherits": "-o-----------o-",
     "lvl": 34,
     "pcoeff": 12,
@@ -1902,11 +1509,7 @@
   },
   "Kama": {
     "ailments": "--n--n---",
-    "align": "Light-Neutral",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 356,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "-------o-o-oooo",
     "lvl": 72,
@@ -1919,8 +1522,6 @@
   },
   "Kamapua'a": {
     "ailments": "-n-------",
-    "align": "Light-Neutral",
-    "code": 114,
     "hpmod": 1.1,
     "inherits": "-----o----o-o-o",
     "lvl": 24,
@@ -1933,25 +1534,18 @@
   },
   "Kanbari": {
     "ailments": "--s------",
-    "align": "Light-Neutral",
-    "code": 359,
     "hpmod": 1.1,
     "inherits": "-------o--ooooo",
     "lvl": 27,
     "pcoeff": 26,
     "race": "Enigma",
-    "resists": "ws----n-",
-    "reslvls": {
-      "phy": 100
-    },
+    "resists": "Bs----n-",
     "skills": ["Mahama", "Tetrakarn", "Needle Assault"],
     "source": ["Mahama", "Life Gain"],
     "stats": [262, 131, 21, 17, 23, 20, 20]
   },
   "Kangiten": {
     "ailments": "--s--s---",
-    "align": "Light-Neutral",
-    "code": 355,
     "hpmod": 1.1,
     "inherits": "-----o-o-o-oo-o",
     "lvl": 80,
@@ -1963,8 +1557,6 @@
     "stats": [679, 358, 51, 48, 53, 51, 57]
   },
   "Karasu Tengu": {
-    "align": "Neutral-Law",
-    "code": 60,
     "inherits": "----oo---------",
     "lvl": 18,
     "pcoeff": 12,
@@ -1975,8 +1567,6 @@
     "stats": [172, 91, 10, 12, 13, 16, 13]
   },
   "Kartikeya": {
-    "align": "Light-Chaos",
-    "code": 215,
     "hpmod": 1.1,
     "inherits": "-----o--oo-ooo-",
     "lvl": 70,
@@ -1988,8 +1578,6 @@
     "stats": [580, 313, 45, 41, 41, 55, 43]
   },
   "Kaso": {
-    "align": "Neutral-Neutral",
-    "code": 157,
     "inherits": "oo-------------",
     "lvl": 4,
     "pcoeff": 12,
@@ -2000,8 +1588,6 @@
     "stats": [61, 31, 6, 3, 4, 3, 6]
   },
   "Katakirauwa": {
-    "align": "Neutral-Neutral",
-    "code": 156,
     "inherits": "------o-------o",
     "lvl": 9,
     "pcoeff": 12,
@@ -2013,8 +1599,6 @@
   },
   "Kazfiel": {
     "ailments": "sssssssss",
-    "align": "Light-Law",
-    "code": 8,
     "hpmod": 1.1,
     "inherits": "----oo-oo--ooo-",
     "lvl": 66,
@@ -2026,8 +1610,6 @@
     "stats": [572, 299, 42, 40, 46, 41, 44]
   },
   "Kin-Ki": {
-    "align": "Neutral-Chaos",
-    "code": 262,
     "inherits": "---o----o------",
     "lvl": 32,
     "pcoeff": 12,
@@ -2039,8 +1621,6 @@
   },
   "King Frost": {
     "ailments": "--s---s--",
-    "align": "Dark-Chaos",
-    "code": 293,
     "inherits": "o-o---o-o-ooooo",
     "lvl": 40,
     "pcoeff": 41,
@@ -2052,8 +1632,6 @@
   },
   "Kingu": {
     "ailments": "------w--",
-    "align": "Dark-Chaos",
-    "code": 301,
     "inherits": "-o-------o-o-o-",
     "lvl": 46,
     "pcoeff": 15,
@@ -2065,8 +1643,6 @@
   },
   "Kinmamon": {
     "ailments": "--s------",
-    "align": "Light-Neutral",
-    "code": 357,
     "hpmod": 1.1,
     "inherits": "-----o-o--ooo-o",
     "lvl": 58,
@@ -2078,8 +1654,6 @@
     "stats": [495, 279, 33, 42, 37, 40, 42]
   },
   "Knocker": {
-    "align": "Neutral-Neutral",
-    "code": 167,
     "inherits": "--o-------o----",
     "lvl": 1,
     "pcoeff": 12,
@@ -2090,8 +1664,6 @@
     "stats": [45, 23, 2, 3, 3, 1, 4]
   },
   "Koppa Tengu": {
-    "align": "Neutral-Law",
-    "code": 62,
     "inherits": "----o--------o-",
     "lvl": 5,
     "pcoeff": 12,
@@ -2102,8 +1674,6 @@
     "stats": [70, 40, 3, 6, 5, 7, 4]
   },
   "Koumokuten": {
-    "align": "Light-Chaos",
-    "code": 243,
     "hpmod": 1.1,
     "inherits": "---o----oo-ooo-",
     "lvl": 47,
@@ -2115,8 +1685,6 @@
     "stats": [412, 224, 37, 32, 32, 31, 29]
   },
   "Kresnik": {
-    "align": "Light-Neutral",
-    "code": 135,
     "hpmod": 1.1,
     "inherits": "-----o---o-ooo-",
     "lvl": 55,
@@ -2128,8 +1696,6 @@
     "stats": [477, 261, 40, 38, 37, 37, 33]
   },
   "Kuda": {
-    "align": "Neutral-Neutral",
-    "code": 363,
     "inherits": "---o------oooo-",
     "lvl": 28,
     "pcoeff": 17,
@@ -2140,8 +1706,6 @@
     "stats": [250, 153, 17, 28, 19, 16, 19]
   },
   "Kudlak": {
-    "align": "Dark-Chaos",
-    "code": 320,
     "inherits": "o-----o---oo---",
     "lvl": 56,
     "pcoeff": 15,
@@ -2152,8 +1716,6 @@
     "stats": [472, 245, 36, 32, 37, 39, 34]
   },
   "Kukunochi": {
-    "align": "Light-Law",
-    "code": 31,
     "hpmod": 1.1,
     "inherits": "---------o-oooo",
     "lvl": 44,
@@ -2165,8 +1727,6 @@
     "stats": [374, 222, 28, 35, 26, 30, 28]
   },
   "Kurama Tengu": {
-    "align": "Light-Neutral",
-    "code": 131,
     "hpmod": 1.1,
     "inherits": "o---oo-----ooo-",
     "lvl": 38,
@@ -2178,8 +1738,6 @@
     "stats": [342, 184, 25, 26, 27, 31, 25]
   },
   "Kusi Mitama": {
-    "align": "Light-Neutral",
-    "code": 329,
     "hpmod": 1.1,
     "inherits": "--------oo----o",
     "lvl": 31,
@@ -2192,8 +1750,6 @@
   },
   "Kwancha": {
     "ailments": "n--------",
-    "align": "Neutral-Neutral",
-    "code": 163,
     "inherits": "----------o---o",
     "lvl": 25,
     "pcoeff": 11,
@@ -2205,8 +1761,6 @@
   },
   "Lachesis": {
     "ailments": "----n-n--",
-    "align": "Neutral-Chaos",
-    "code": 272,
     "inherits": "----------o--o-",
     "lvl": 43,
     "pcoeff": 12,
@@ -2218,8 +1772,6 @@
   },
   "Laksmi": {
     "ailments": "-----n---",
-    "align": "Light-Law",
-    "code": 10,
     "hpmod": 1.1,
     "inherits": "o---------o-o-o",
     "lvl": 73,
@@ -2232,8 +1784,6 @@
   },
   "Leanan Sidhe": {
     "ailments": "----s----",
-    "align": "Neutral-Chaos",
-    "code": 275,
     "inherits": "----------o---o",
     "lvl": 14,
     "pcoeff": 12,
@@ -2245,27 +1795,18 @@
   },
   "Legion": {
     "ailments": "------w--",
-    "align": "Dark-Chaos",
-    "code": 307,
     "inherits": "---o---o--o-o--",
     "lvl": 36,
     "pcoeff": 14,
     "race": "Spirit",
-    "resists": "wswssswn",
-    "reslvls": {
-      "phy": 150
-    },
+    "resists": "Cswssswn",
     "skills": ["Shock", "Last Resort"],
     "source": ["Last Resort", "Life Gain"],
     "stats": [322, 159, 30, 19, 27, 20, 22]
   },
   "Lilim": {
     "ailments": "-----s---",
-    "align": "Neutral-Chaos",
-    "attack": {
-      "ailment": "sleep (10%)"
-    },
-    "code": 285,
+    "attack": "10% Sleep",
     "inherits": "---o-----o-----",
     "lvl": 9,
     "pcoeff": 12,
@@ -2277,8 +1818,6 @@
   },
   "Lilith": {
     "ailments": "-----n---",
-    "align": "Neutral-Chaos",
-    "code": 279,
     "inherits": "o--o-----------",
     "lvl": 66,
     "pcoeff": 12,
@@ -2290,11 +1829,7 @@
   },
   "Loki": {
     "ailments": "--s-w-n--",
-    "align": "Dark-Chaos",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 294,
+    "attack": "1-2 hits",
     "inherits": "--o-----o-oooo-",
     "lvl": 52,
     "pcoeff": 21,
@@ -2305,8 +1840,6 @@
     "stats": [427, 245, 33, 38, 30, 32, 33]
   },
   "Long": {
-    "align": "Light-Chaos",
-    "code": 234,
     "hpmod": 1.1,
     "inherits": "----o---oo-o---",
     "lvl": 45,
@@ -2319,8 +1852,6 @@
   },
   "Lorelei": {
     "ailments": "-----n---",
-    "align": "Neutral-Neutral",
-    "code": 147,
     "inherits": "------o---ooo-o",
     "lvl": 31,
     "pcoeff": 15,
@@ -2332,8 +1863,6 @@
   },
   "Macabre": {
     "ailments": "s----w---",
-    "align": "Dark-Chaos",
-    "code": 309,
     "inherits": "------o-o-o-o--",
     "lvl": 18,
     "pcoeff": 15,
@@ -2344,8 +1873,6 @@
     "stats": [172, 85, 17, 9, 13, 12, 13]
   },
   "Makami": {
-    "align": "Light-Neutral",
-    "code": 113,
     "hpmod": 1.1,
     "inherits": "-----o---o--oo-",
     "lvl": 32,
@@ -2357,8 +1884,6 @@
     "stats": [283, 150, 29, 19, 20, 23, 20]
   },
   "Makara": {
-    "align": "Light-Chaos",
-    "code": 237,
     "hpmod": 1.1,
     "inherits": "--o------o-o--o",
     "lvl": 13,
@@ -2371,30 +1896,18 @@
   },
   "Mamedanuki": {
     "ailments": "----w----",
-    "align": "Neutral-Neutral",
-    "code": 365,
     "inherits": "o--------oooo--",
     "lvl": 13,
     "pcoeff": 18,
     "race": "UMA",
-    "resists": "--ssss--",
-    "reslvls": {
-      "ele": 75,
-      "fir": 75,
-      "ice": 75,
-      "win": 75
-    },
+    "resists": "--7777--",
     "skills": ["Getsu-ei", "Needle Rush", "Sleepwalker"],
     "source": ["Patra", "Sleepwalker"],
     "stats": [139, 68, 8, 8, 12, 11, 15]
   },
   "Mandrake": {
     "ailments": "nnn------",
-    "align": "Dark-Law",
-    "attack": {
-      "ailment": "mute (20%)"
-    },
-    "code": 96,
+    "attack": "20% Mute",
     "inherits": "----------o-ooo",
     "lvl": 22,
     "pcoeff": 15,
@@ -2406,8 +1919,6 @@
   },
   "Manticore": {
     "ailments": "n--------",
-    "align": "Dark-Neutral",
-    "code": 189,
     "inherits": "---o-----ooo---",
     "lvl": 45,
     "pcoeff": 15,
@@ -2418,12 +1929,7 @@
     "stats": [385, 206, 31, 29, 30, 25, 30]
   },
   "Mara": {
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "paralyze (10%)",
-      "element": "Gun"
-    },
-    "code": 289,
+    "attack": "Gun dmg, 10% Paralyze",
     "inherits": "oo------o-oooo-",
     "lvl": 88,
     "pcoeff": 24,
@@ -2434,8 +1940,6 @@
     "stats": [715, 399, 59, 61, 54, 52, 53]
   },
   "Masakado": {
-    "align": "Dark-Neutral",
-    "code": 368,
     "inherits": "ooooo--ooo-oo--",
     "lvl": 92,
     "pcoeff": 60,
@@ -2446,8 +1950,6 @@
     "stats": [742, 417, 62, 64, 55, 58, 57]
   },
   "Mastema": {
-    "align": "Light-Law",
-    "code": 399,
     "hpmod": 1.1,
     "inherits": "oo--oooo--ooo-o",
     "lvl": 82,
@@ -2460,64 +1962,39 @@
   },
   "Matador": {
     "ailments": "sssssssss",
-    "align": "Dark-Neutral",
-    "attack": {
-      "hits": "1-3"
-    },
-    "code": 351,
+    "attack": "1-3 hits",
     "inherits": "-----oo-o--ooo-",
     "lvl": 30,
     "pcoeff": 20,
     "race": "Fiend",
-    "resists": "ss--w-sn",
-    "reslvls": {
-      "ele": 100
-    },
+    "resists": "ss--B-sn",
     "skills": ["Taunt", "Deathbound", "Chakra Walk"],
     "source": ["Taunt", "Life Gain", "Mana Gain"],
     "stats": [256, 145, 21, 21, 17, 27, 19]
   },
   "Maya": {
-    "align": "Neutral-Chaos",
-    "code": 398,
     "inherits": "o---oo-o--ooooo",
     "lvl": 70,
     "pcoeff": 31,
     "race": "Night",
-    "resists": "-w----ss",
-    "reslvls": {
-      "ele": 200,
-      "fir": 200,
-      "gun": 100,
-      "ice": 200,
-      "win": 200
-    },
+    "resists": "-B2222ss",
     "skills": ["Megidola", "Concentrate"],
     "source": ["Megidolaon", "Concentrate", "Void Mind"],
     "stats": [565, 323, 44, 50, 40, 45, 46]
   },
   "Mayahuel": {
-    "align": "Light-Law",
-    "code": 32,
     "hpmod": 1.1,
     "inherits": "o----------oooo",
     "lvl": 35,
     "pcoeff": 16,
     "race": "Tree",
-    "resists": "wsw-----",
-    "reslvls": {
-      "phy": 50
-    },
+    "resists": "Asw-----",
     "skills": ["Me Patra", "Recarm", "Mana Aid"],
     "source": ["Recarm", "Mana Aid", "Mana Bonus"],
     "stats": [301, 179, 22, 28, 20, 26, 24]
   },
   "Melchom": {
-    "align": "Neutral-Chaos",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 255,
+    "attack": "1-2 hits",
     "inherits": "-o-------o-----",
     "lvl": 7,
     "pcoeff": 12,
@@ -2528,8 +2005,6 @@
     "stats": [85, 54, 4, 10, 6, 6, 5]
   },
   "Metatron": {
-    "align": "Light-Law",
-    "code": 2,
     "hpmod": 1.1,
     "inherits": "-o---o-o---ooo-",
     "lvl": 84,
@@ -2541,9 +2016,8 @@
     "stats": [710, 383, 57, 54, 55, 48, 53]
   },
   "Mishaguji": {
+    "attack": "10% Fear",
     "ailments": "----ws---",
-    "align": "Dark-Law",
-    "code": 77,
     "inherits": "---o---o--oooo-",
     "lvl": 39,
     "pcoeff": 20,
@@ -2554,8 +2028,6 @@
     "stats": [316, 186, 25, 28, 19, 30, 25]
   },
   "Mithras": {
-    "align": "Dark-Chaos",
-    "code": 389,
     "inherits": "--o--o--oooooo-",
     "lvl": 25,
     "pcoeff": 27,
@@ -2566,8 +2038,6 @@
     "stats": [232, 130, 17, 21, 19, 17, 16]
   },
   "Mitra": {
-    "align": "Neutral-Chaos",
-    "code": 394,
     "inherits": "-----oooo-ooo-o",
     "lvl": 53,
     "pcoeff": 35,
@@ -2578,11 +2048,7 @@
     "stats": [448, 248, 32, 38, 35, 34, 35]
   },
   "Moh Shuvuu": {
-    "align": "Dark-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 87,
+    "attack": "Gun dmg",
     "inherits": "o---o------o--o",
     "lvl": 17,
     "pcoeff": 14,
@@ -2594,24 +2060,17 @@
   },
   "Moloch": {
     "ailments": "-------n-",
-    "align": "Dark-Chaos",
-    "code": 393,
     "inherits": "oo-----oo-oooo-",
     "lvl": 50,
     "pcoeff": 29,
     "race": "Tyrant",
-    "resists": "--rws--n",
-    "reslvls": {
-      "fir": 125
-    },
+    "resists": "--Rws--n",
     "skills": ["Staredown", "Madness Crush", "Retaliate"],
     "source": ["Mortal Jihad", "Retaliate", "Fire Amp"],
     "stats": [415, 229, 36, 33, 30, 32, 34]
   },
   "Momunofu": {
     "ailments": "wwwwwwwww",
-    "align": "Neutral-Chaos",
-    "code": 263,
     "inherits": "--------o----o-",
     "lvl": 19,
     "pcoeff": 12,
@@ -2623,27 +2082,18 @@
   },
   "Morax": {
     "ailments": "-------n-",
-    "align": "Dark-Chaos",
-    "code": 388,
     "inherits": "oo------oooooo-",
     "lvl": 15,
     "pcoeff": 27,
     "race": "Tyrant",
-    "resists": "--rw---n",
-    "reslvls": {
-      "fir": 125
-    },
+    "resists": "--Rw---n",
     "skills": ["Bobasma", "Rampage", "Counter"],
     "source": ["Megaton Press"],
     "stats": [151, 88, 13, 15, 12, 11, 9]
   },
   "Mot": {
     "ailments": "--n---n--",
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "mute (10%)"
-    },
-    "code": 179,
+    "attack": "10% Mute",
     "inherits": "----o-ooo-ooo--",
     "lvl": 87,
     "pcoeff": 23,
@@ -2655,24 +2105,17 @@
   },
   "Mother Harlot": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 344,
     "inherits": "-oooooo----oo--",
     "lvl": 90,
     "pcoeff": 50,
     "race": "Fiend",
-    "resists": "n---dwnn",
-    "reslvls": {
-      "win": 100
-    },
+    "resists": "n---dBnn",
     "skills": ["Maziodyne", "Babylon Goblet", "Mamudoon"],
     "source": ["Babylon Goblet", "Life Surge", "Mana Surge"],
     "stats": [739, 407, 60, 62, 58, 53, 57]
   },
   "Mothman": {
     "ailments": "--s-ws---",
-    "align": "Dark-Neutral",
-    "code": 207,
     "inherits": "------o--oo-o--",
     "lvl": 29,
     "pcoeff": 14,
@@ -2683,11 +2126,7 @@
     "stats": [247, 144, 19, 22, 16, 23, 17]
   },
   "Mou-Ryo": {
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "fear (10%)"
-    },
-    "code": 324,
+    "attack": "10% Fear",
     "inherits": "o-----o----o-o-",
     "lvl": 17,
     "pcoeff": 14,
@@ -2698,8 +2137,6 @@
     "stats": [166, 86, 17, 11, 13, 10, 10]
   },
   "Mushussu": {
-    "align": "Dark-Chaos",
-    "code": 300,
     "inherits": "---o-----ooo---",
     "lvl": 61,
     "pcoeff": 15,
@@ -2711,8 +2148,6 @@
   },
   "Myrmecolion": {
     "ailments": "---w--w--",
-    "align": "Dark-Neutral",
-    "code": 208,
     "inherits": "---------oo-oo-",
     "lvl": 22,
     "pcoeff": 14,
@@ -2723,8 +2158,6 @@
     "stats": [202, 103, 19, 12, 15, 14, 16]
   },
   "Naga": {
-    "align": "Neutral-Neutral",
-    "code": 176,
     "inherits": "---o----o------",
     "lvl": 11,
     "pcoeff": 12,
@@ -2736,11 +2169,7 @@
   },
   "Nekomata": {
     "ailments": "----ww---",
-    "align": "Neutral-Neutral",
-    "attack": {
-      "ailment": "charm (10%)"
-    },
-    "code": 154,
+    "attack": "10% Charm",
     "inherits": "-o------o------",
     "lvl": 22,
     "pcoeff": 12,
@@ -2752,8 +2181,6 @@
   },
   "Nergal": {
     "ailments": "nnn------",
-    "align": "Dark-Neutral",
-    "code": 180,
     "inherits": "-----oo--oooo--",
     "lvl": 76,
     "pcoeff": 20,
@@ -2765,8 +2192,6 @@
   },
   "Nidhoggr": {
     "ailments": "--s---ss-",
-    "align": "Dark-Chaos",
-    "code": 299,
     "inherits": "--------oooo---",
     "lvl": 65,
     "pcoeff": 15,
@@ -2777,8 +2202,6 @@
     "stats": [553, 288, 46, 40, 46, 35, 38]
   },
   "Nigi Mitama": {
-    "align": "Light-Neutral",
-    "code": 330,
     "hpmod": 1.1,
     "inherits": "--------o----oo",
     "lvl": 26,
@@ -2790,11 +2213,7 @@
     "stats": [237, 135, 15, 20, 17, 17, 19]
   },
   "Norn": {
-    "align": "Light-Law",
-    "attack": {
-      "ailment": "charm (10%)"
-    },
-    "code": 11,
+    "attack": "10% Charm",
     "hpmod": 1.1,
     "inherits": "o---o-o---ooooo",
     "lvl": 72,
@@ -2806,8 +2225,6 @@
     "stats": [608, 336, 46, 49, 46, 44, 51]
   },
   "Nozuchi": {
-    "align": "Neutral-Neutral",
-    "code": 175,
     "inherits": "--------o----o-",
     "lvl": 18,
     "pcoeff": 10,
@@ -2818,12 +2235,7 @@
     "stats": [169, 89, 17, 11, 12, 10, 14]
   },
   "Nue": {
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "fear (10%)",
-      "element": "Gun"
-    },
-    "code": 191,
+    "attack": "Gun dmg, 10% Fear",
     "inherits": "---o-----o-o-o-",
     "lvl": 27,
     "pcoeff": 14,
@@ -2835,8 +2247,6 @@
   },
   "Oberon": {
     "ailments": "--s--s-n-",
-    "align": "Neutral-Neutral",
-    "code": 138,
     "inherits": "----o---------o",
     "lvl": 50,
     "pcoeff": 12,
@@ -2847,8 +2257,6 @@
     "stats": [412, 235, 28, 36, 29, 34, 33]
   },
   "Odin": {
-    "align": "Light-Neutral",
-    "code": 102,
     "hpmod": 1.1,
     "inherits": "o-oo-------ooo-",
     "lvl": 71,
@@ -2861,8 +2269,6 @@
   },
   "Ogun": {
     "ailments": "--sssss--",
-    "align": "Dark-Neutral",
-    "code": 373,
     "inherits": "oo-----o-o-oo--",
     "lvl": 24,
     "pcoeff": 21,
@@ -2873,8 +2279,6 @@
     "stats": [214, 115, 18, 15, 15, 22, 17]
   },
   "Okiku-Mushi": {
-    "align": "Dark-Neutral",
-    "code": 209,
     "inherits": "------o--o--o-o",
     "lvl": 3,
     "pcoeff": 14,
@@ -2885,8 +2289,6 @@
     "stats": [49, 34, 4, 6, 2, 3, 4]
   },
   "Omoteotl": {
-    "align": "Light-Neutral",
-    "code": 103,
     "hpmod": 1.1,
     "inherits": "ooo--------ooo-",
     "lvl": 65,
@@ -2898,8 +2300,6 @@
     "stats": [540, 311, 40, 47, 38, 43, 42]
   },
   "Ongyo-Ki": {
-    "align": "Neutral-Chaos",
-    "code": 258,
     "inherits": "--ooo---o--oo--",
     "lvl": 66,
     "pcoeff": 21,
@@ -2911,8 +2311,6 @@
   },
   "Oni": {
     "ailments": "wwwwwwwww",
-    "align": "Neutral-Chaos",
-    "code": 266,
     "inherits": "--------oo-----",
     "lvl": 8,
     "pcoeff": 12,
@@ -2923,11 +2321,7 @@
     "stats": [94, 49, 10, 6, 7, 4, 7]
   },
   "Onmoraki": {
-    "align": "Dark-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 89,
+    "attack": "Gun dmg",
     "inherits": "oo--------oo---",
     "lvl": 3,
     "pcoeff": 14,
@@ -2938,8 +2332,6 @@
     "stats": [49, 28, 3, 3, 2, 6, 5]
   },
   "Orcus": {
-    "align": "Dark-Neutral",
-    "code": 395,
     "inherits": "o-----ooooooo--",
     "lvl": 55,
     "pcoeff": 39,
@@ -2950,8 +2342,6 @@
     "stats": [472, 244, 38, 33, 39, 34, 36]
   },
   "Orias": {
-    "align": "Neutral-Chaos",
-    "code": 252,
     "inherits": "----o----o-----",
     "lvl": 27,
     "pcoeff": 12,
@@ -2963,11 +2353,7 @@
   },
   "Orochi": {
     "ailments": "n-n-ww---",
-    "align": "Neutral-Neutral",
-    "attack": {
-      "target": "all foes"
-    },
-    "code": 171,
+    "attack": "All foes",
     "inherits": "--o----------o-",
     "lvl": 60,
     "pcoeff": 12,
@@ -2979,8 +2365,6 @@
   },
   "Orthrus": {
     "ailments": "--s------",
-    "align": "Neutral-Neutral",
-    "code": 152,
     "inherits": "-o------o------",
     "lvl": 36,
     "pcoeff": 12,
@@ -2992,11 +2376,7 @@
   },
   "Ose": {
     "ailments": "ww-s-s-s-",
-    "align": "Neutral-Chaos",
-    "attack": {
-      "hits": "2"
-    },
-    "code": 250,
+    "attack": "2 hits",
     "inherits": "--------o----o-",
     "lvl": 41,
     "pcoeff": 12,
@@ -3007,24 +2387,17 @@
     "stats": [337, 186, 32, 25, 22, 32, 22]
   },
   "Ouroboros": {
-    "align": "Neutral-Neutral",
-    "code": 392,
     "inherits": "oo-o---o-o-ooo-",
     "lvl": 49,
     "pcoeff": 38,
     "race": "Snake",
-    "resists": "ssw-d-ss",
-    "reslvls": {
-      "ele": 125
-    },
+    "resists": "ssw-D-ss",
     "skills": ["Mazionga", "Acid Breath", "Spring of Life"],
     "source": ["Maziodyne", "Mana Surge"],
     "stats": [427, 226, 32, 33, 36, 32, 29]
   },
   "Pabilsag": {
     "ailments": "n--------",
-    "align": "Light-Neutral",
-    "code": 123,
     "hpmod": 1.1,
     "inherits": "--------oo-o--o",
     "lvl": 26,
@@ -3037,11 +2410,7 @@
   },
   "Pachacamac": {
     "ailments": "---n-----",
-    "align": "Dark-Law",
-    "attack": {
-      "ailment": "fear (10%)"
-    },
-    "code": 76,
+    "attack": "10% Fear",
     "inherits": "----o--o--ooo-o",
     "lvl": 48,
     "pcoeff": 20,
@@ -3053,23 +2422,16 @@
   },
   "Pale Rider": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 346,
     "inherits": "----ooo-o--oo--",
     "lvl": 78,
     "pcoeff": 21,
     "race": "Fiend",
-    "resists": "---swrnn",
-    "reslvls": {
-      "ele": 50
-    },
+    "resists": "---sArnn",
     "skills": ["Killing Wind", "Mamudoon", "Blight"],
     "source": ["Killing Wind", "Wind Boost", "Mana Surge"],
     "stats": [640, 337, 51, 45, 49, 54, 50]
   },
   "Pales": {
-    "align": "Dark-Law",
-    "code": 74,
     "inherits": "o------o--oooo-",
     "lvl": 68,
     "pcoeff": 20,
@@ -3080,8 +2442,6 @@
     "stats": [559, 313, 39, 48, 42, 41, 44]
   },
   "Pallas Athena": {
-    "align": "Light-Law",
-    "code": 13,
     "hpmod": 1.1,
     "inherits": "--------o---ooo",
     "lvl": 53,
@@ -3093,8 +2453,6 @@
     "stats": [461, 238, 37, 30, 36, 39, 32]
   },
   "Parvati": {
-    "align": "Light-Law",
-    "code": 15,
     "hpmod": 1.1,
     "inherits": "-------o--o-o-o",
     "lvl": 32,
@@ -3106,8 +2464,6 @@
     "stats": [286, 164, 20, 25, 21, 22, 23]
   },
   "Patrimpas": {
-    "align": "Light-Chaos",
-    "code": 236,
     "hpmod": 1.1,
     "inherits": "---oo----o-o---",
     "lvl": 24,
@@ -3120,8 +2476,6 @@
   },
   "Pele": {
     "ailments": "-----s---",
-    "align": "Light-Chaos",
-    "code": 228,
     "hpmod": 1.1,
     "inherits": "-o--------o-o-o",
     "lvl": 10,
@@ -3134,8 +2488,6 @@
   },
   "Pellaidh": {
     "ailments": "-s--s----",
-    "align": "Dark-Neutral",
-    "code": 190,
     "inherits": "--------oo-o--o",
     "lvl": 40,
     "pcoeff": 14,
@@ -3146,8 +2498,6 @@
     "stats": [352, 187, 24, 27, 29, 23, 27]
   },
   "Peri": {
-    "align": "Neutral-Law",
-    "code": 65,
     "inherits": "o-------------o",
     "lvl": 59,
     "pcoeff": 12,
@@ -3159,8 +2509,6 @@
   },
   "Persephone": {
     "ailments": "-n---n---",
-    "align": "Dark-Neutral",
-    "code": 182,
     "inherits": "----o-o---ooo-o",
     "lvl": 58,
     "pcoeff": 20,
@@ -3171,30 +2519,19 @@
     "stats": [484, 265, 35, 39, 37, 40, 33]
   },
   "Phoenix": {
-    "align": "Light-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 24,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "oo---------o--o",
     "lvl": 25,
     "pcoeff": 15,
     "race": "Avian",
-    "resists": "-wdw--nn",
-    "reslvls": {
-      "fir": 125
-    },
+    "resists": "-wDw--nn",
     "skills": ["Fire Breath", "Recarm"],
     "source": ["Maragion", "Heat Wave", "Recarm"],
     "stats": [221, 136, 15, 22, 14, 19, 20]
   },
   "Pisaca": {
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "poison (30%)"
-    },
-    "code": 308,
+    "attack": "30% Poison",
     "inherits": "----o----oo-o--",
     "lvl": 29,
     "pcoeff": 15,
@@ -3205,8 +2542,6 @@
     "stats": [256, 130, 25, 15, 19, 20, 18]
   },
   "Pixie": {
-    "align": "Neutral-Neutral",
-    "code": 146,
     "inherits": "-o------------o",
     "lvl": 2,
     "pcoeff": 12,
@@ -3217,8 +2552,6 @@
     "stats": [46, 25, 2, 3, 3, 3, 5]
   },
   "Poltergeist": {
-    "align": "Dark-Chaos",
-    "code": 312,
     "inherits": "------o---o-oo-",
     "lvl": 7,
     "pcoeff": 13,
@@ -3230,8 +2563,6 @@
   },
   "Power": {
     "ailments": "w--------",
-    "align": "Neutral-Law",
-    "code": 40,
     "inherits": "-----o---o-----",
     "lvl": 19,
     "pcoeff": 12,
@@ -3243,11 +2574,7 @@
   },
   "Preta": {
     "ailments": "------w--",
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "poison (30%)"
-    },
-    "code": 325,
+    "attack": "30% Poison",
     "inherits": "------o-oo-o---",
     "lvl": 6,
     "pcoeff": 13,
@@ -3258,8 +2585,6 @@
     "stats": [79, 41, 8, 5, 6, 7, 2]
   },
   "Principality": {
-    "align": "Neutral-Law",
-    "code": 41,
     "inherits": "---o-o---------",
     "lvl": 14,
     "pcoeff": 11,
@@ -3270,8 +2595,6 @@
     "stats": [142, 81, 11, 13, 11, 9, 8]
   },
   "Prometheus": {
-    "align": "Light-Neutral",
-    "code": 104,
     "hpmod": 1.1,
     "inherits": "oo-----o---ooo-",
     "lvl": 57,
@@ -3283,23 +2606,16 @@
     "stats": [499, 254, 42, 32, 40, 36, 36]
   },
   "Pyro Jack": {
-    "align": "Neutral-Neutral",
-    "code": 142,
     "inherits": "-o-----------o-",
     "lvl": 16,
     "pcoeff": 12,
     "race": "Fairy",
-    "resists": "--rw----",
-    "reslvls": {
-      "fir": 125
-    },
+    "resists": "--Rw----",
     "skills": ["Agi", "Maragi"],
     "source": ["Maragi", "Resist Fire"],
     "stats": [145, 91, 9, 15, 8, 11, 15]
   },
   "Qing Niuguai": {
-    "align": "Light-Neutral",
-    "code": 122,
     "hpmod": 1.1,
     "inherits": "-----o--o--o-o-",
     "lvl": 33,
@@ -3311,8 +2627,6 @@
     "stats": [295, 153, 25, 19, 22, 26, 22]
   },
   "Quetzalcoatl": {
-    "align": "Light-Chaos",
-    "code": 232,
     "hpmod": 1.1,
     "inherits": "-o-------o-o--o",
     "lvl": 69,
@@ -3324,8 +2638,6 @@
     "stats": [587, 312, 49, 42, 45, 45, 41]
   },
   "Raiju": {
-    "align": "Dark-Neutral",
-    "code": 192,
     "inherits": "---o----oo-o---",
     "lvl": 17,
     "pcoeff": 15,
@@ -3337,11 +2649,7 @@
   },
   "Rakshasa": {
     "ailments": "-----s---",
-    "align": "Dark-Neutral",
-    "attack": {
-      "ailment": "poison (10%)"
-    },
-    "code": 200,
+    "attack": "30% Poison",
     "inherits": "-o------o--o-o-",
     "lvl": 35,
     "pcoeff": 15,
@@ -3353,8 +2661,6 @@
   },
   "Rangda": {
     "ailments": "-n----w--",
-    "align": "Neutral-Chaos",
-    "code": 269,
     "inherits": "----o--------o-",
     "lvl": 68,
     "pcoeff": 12,
@@ -3366,24 +2672,17 @@
   },
   "Red Rider": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 348,
     "inherits": "-o---oo-o--oo--",
     "lvl": 59,
     "pcoeff": 20,
     "race": "Fiend",
-    "resists": "--nw--nn",
-    "reslvls": {
-      "ice": 100
-    },
+    "resists": "--nB--nn",
     "skills": ["Maragidyne", "True Lobotomy", "Retaliate"],
     "source": ["Trisagion", "Fire Boost", "Mana Surge"],
     "stats": [490, 268, 36, 39, 37, 44, 36]
   },
   "Rukh": {
     "ailments": "--s---w--",
-    "align": "Neutral-Law",
-    "code": 47,
     "inherits": "--o-----------o",
     "lvl": 42,
     "pcoeff": 12,
@@ -3394,8 +2693,6 @@
     "stats": [364, 187, 24, 24, 29, 34, 25]
   },
   "Saki Mitama": {
-    "align": "Light-Neutral",
-    "code": 328,
     "hpmod": 1.1,
     "inherits": "---------o---oo",
     "lvl": 36,
@@ -3407,8 +2704,6 @@
     "stats": [326, 169, 23, 22, 26, 22, 25]
   },
   "Salamander": {
-    "align": "Light-Neutral",
-    "code": 334,
     "hpmod": 1.1,
     "inherits": "-o------o----o-",
     "lvl": 32,
@@ -3421,8 +2716,6 @@
   },
   "Samael": {
     "ailments": "nn-------",
-    "align": "Dark-Law",
-    "code": 73,
     "inherits": "-----o-o--ooo-o",
     "lvl": 75,
     "pcoeff": 20,
@@ -3434,8 +2727,6 @@
   },
   "Sandman": {
     "ailments": "----s----",
-    "align": "Neutral-Chaos",
-    "code": 286,
     "inherits": "---o------o----",
     "lvl": 4,
     "pcoeff": 12,
@@ -3446,8 +2737,6 @@
     "stats": [64, 37, 3, 6, 5, 6, 2]
   },
   "Sarasvati": {
-    "align": "Neutral-Law",
-    "code": 66,
     "inherits": "--o-----------o",
     "lvl": 48,
     "pcoeff": 12,
@@ -3458,12 +2747,7 @@
     "stats": [397, 227, 29, 35, 28, 26, 36]
   },
   "Scathach": {
-    "align": "Light-Law",
-    "attack": {
-      "ailment": "fear (10%)",
-      "element": "Gun"
-    },
-    "code": 14,
+    "attack": "Gun dmg, 10% Fear",
     "hpmod": 1.1,
     "inherits": "----o----o--o-o",
     "lvl": 43,
@@ -3476,25 +2760,18 @@
   },
   "Sedna": {
     "ailments": "--n---n--",
-    "align": "Light-Chaos",
-    "code": 226,
     "hpmod": 1.1,
     "inherits": "--o---o-----o-o",
     "lvl": 34,
     "pcoeff": 14,
     "race": "Lady",
-    "resists": "--ws--wn",
-    "reslvls": {
-      "exp": 150
-    },
+    "resists": "--ws--Cn",
     "skills": ["Mabufula", "Mudo", "Mutudi"],
     "source": ["Diarama", "Rakukaja", "Mabufula"],
     "stats": [298, 174, 22, 27, 21, 21, 26]
   },
   "Senri": {
     "ailments": "-----n---",
-    "align": "Neutral-Law",
-    "code": 67,
     "inherits": "----o----o-----",
     "lvl": 36,
     "pcoeff": 12,
@@ -3505,11 +2782,7 @@
     "stats": [307, 173, 18, 26, 22, 25, 27]
   },
   "Seraph": {
-    "align": "Light-Law",
-    "attack": {
-      "target": "all foes"
-    },
-    "code": 1,
+    "attack": "All foes",
     "hpmod": 1.1,
     "inherits": "oooooo-o--ooooo",
     "lvl": 89,
@@ -3522,11 +2795,7 @@
   },
   "Seth": {
     "ailments": "ssn-sssn-",
-    "align": "Dark-Law",
-    "attack": {
-      "ailment": "stone (5%)"
-    },
-    "code": 72,
+    "attack": "5% Stone",
     "inherits": "-----o-oo-oooo-",
     "lvl": 85,
     "pcoeff": 23,
@@ -3538,8 +2807,6 @@
   },
   "Shan Xiao": {
     "ailments": "---nnn---",
-    "align": "Dark-Law",
-    "code": 97,
     "inherits": "--o-----o---oo-",
     "lvl": 14,
     "pcoeff": 14,
@@ -3550,8 +2817,6 @@
     "stats": [151, 73, 9, 9, 14, 8, 12]
   },
   "Shiisaa": {
-    "align": "Light-Neutral",
-    "code": 115,
     "hpmod": 1.1,
     "inherits": "---o-o------oo-",
     "lvl": 14,
@@ -3563,21 +2828,17 @@
     "stats": [148, 72, 15, 8, 12, 14, 8]
   },
   "Shiva": {
-    "align": "Light-Chaos",
-    "code": 213,
     "hpmod": 1.1,
     "inherits": "o------ooo-ooo-",
     "lvl": 91,
     "pcoeff": 23,
     "race": "Fury",
     "resists": "d-d-d-nn",
-    "skills": ["Jihad", "Enduring Soul", "Victory Cry"],
-    "source": ["Charming Bolt", "Jihad"],
+    "skills": ["Antichthon", "Enduring Soul", "Victory Cry"],
+    "source": ["Charming Bolt", "Antichthon"],
     "stats": [762, 418, 65, 60, 58, 56, 54]
   },
   "Shiwanna": {
-    "align": "Neutral-Law",
-    "code": 58,
     "inherits": "-o-o-----------",
     "lvl": 37,
     "pcoeff": 12,
@@ -3588,8 +2849,6 @@
     "stats": [322, 184, 19, 30, 25, 23, 24]
   },
   "Silky": {
-    "align": "Neutral-Neutral",
-    "code": 141,
     "inherits": "--o-----------o",
     "lvl": 23,
     "pcoeff": 12,
@@ -3600,8 +2859,6 @@
     "stats": [202, 122, 14, 20, 13, 15, 17]
   },
   "Skadi": {
-    "align": "Light-Chaos",
-    "code": 222,
     "hpmod": 1.1,
     "inherits": "--o---o-----o-o",
     "lvl": 73,
@@ -3614,8 +2871,6 @@
   },
   "Skogsra": {
     "ailments": "------s--",
-    "align": "Dark-Law",
-    "code": 95,
     "inherits": "---------o--ooo",
     "lvl": 29,
     "pcoeff": 15,
@@ -3626,8 +2881,6 @@
     "stats": [247, 144, 22, 22, 16, 21, 16]
   },
   "Sleipnir": {
-    "align": "Light-Neutral",
-    "code": 119,
     "hpmod": 1.1,
     "inherits": "o-------o--o-o-",
     "lvl": 56,
@@ -3640,24 +2893,17 @@
   },
   "Slime": {
     "ailments": "------w--",
-    "align": "Dark-Chaos",
-    "code": 316,
     "inherits": "-oooo------oo--",
     "lvl": 1,
     "pcoeff": 12,
     "race": "Foul",
-    "resists": "--wwwww-",
-    "reslvls": {
-      "exp": 300
-    },
+    "resists": "--wwwwF-",
     "skills": ["Lunge"],
     "source": ["Poison Claw", "Poisma"],
     "stats": [46, 26, 2, 5, 5, 3, 3]
   },
   "Sphinx": {
     "ailments": "--n---n--",
-    "align": "Light-Neutral",
-    "code": 118,
     "hpmod": 1.1,
     "inherits": "--------o--o-oo",
     "lvl": 70,
@@ -3670,8 +2916,6 @@
   },
   "Spriggan": {
     "ailments": "--s------",
-    "align": "Neutral-Neutral",
-    "code": 140,
     "inherits": "---o----o------",
     "lvl": 34,
     "pcoeff": 11,
@@ -3682,8 +2926,6 @@
     "stats": [307, 151, 25, 18, 26, 20, 23]
   },
   "Sraosha": {
-    "align": "Light-Law",
-    "code": 3,
     "hpmod": 1.1,
     "inherits": "o----o-o---oo-o",
     "lvl": 74,
@@ -3696,8 +2938,6 @@
   },
   "Strigoii": {
     "ailments": "n--------",
-    "align": "Dark-Chaos",
-    "code": 321,
     "inherits": "o-----o---oo---",
     "lvl": 45,
     "pcoeff": 14,
@@ -3709,11 +2949,7 @@
   },
   "Succubus": {
     "ailments": "----nn---",
-    "align": "Neutral-Chaos",
-    "attack": {
-      "ailment": "sleep (10%)"
-    },
-    "code": 281,
+    "attack": "10% Sleep",
     "inherits": "o---------o----",
     "lvl": 47,
     "pcoeff": 12,
@@ -3725,8 +2961,6 @@
   },
   "Sudama": {
     "ailments": "------s--",
-    "align": "Neutral-Neutral",
-    "code": 164,
     "inherits": "--o-------o----",
     "lvl": 15,
     "pcoeff": 12,
@@ -3738,8 +2972,6 @@
   },
   "Sui-Ki": {
     "ailments": "-----n---",
-    "align": "Neutral-Chaos",
-    "code": 261,
     "inherits": "--o-----o------",
     "lvl": 41,
     "pcoeff": 12,
@@ -3750,11 +2982,7 @@
     "stats": [343, 196, 30, 30, 24, 25, 24]
   },
   "Suparna": {
-    "align": "Light-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 25,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "o---o----o-o---",
     "lvl": 15,
@@ -3766,8 +2994,6 @@
     "stats": [144, 84, 11, 12, 9, 15, 13]
   },
   "Surt": {
-    "align": "Dark-Chaos",
-    "code": 290,
     "inherits": "-o------ooooo--",
     "lvl": 77,
     "pcoeff": 21,
@@ -3778,8 +3004,6 @@
     "stats": [640, 342, 53, 49, 51, 45, 48]
   },
   "Susano-O": {
-    "align": "Light-Chaos",
-    "code": 214,
     "hpmod": 1.1,
     "inherits": "----o--ooo-oo--",
     "lvl": 85,
@@ -3791,8 +3015,6 @@
     "stats": [709, 378, 60, 50, 53, 53, 54]
   },
   "Sylph": {
-    "align": "Light-Neutral",
-    "code": 336,
     "hpmod": 1.1,
     "inherits": "----o----o----o",
     "lvl": 25,
@@ -3805,8 +3027,6 @@
   },
   "Takeminakata": {
     "ailments": "--s--s---",
-    "align": "Light-Chaos",
-    "code": 245,
     "hpmod": 1.1,
     "inherits": "----o---o--ooo-",
     "lvl": 27,
@@ -3819,8 +3039,6 @@
   },
   "Tam Lin": {
     "ailments": "-w---n---",
-    "align": "Light-Neutral",
-    "code": 134,
     "hpmod": 1.1,
     "inherits": "---------o-oooo",
     "lvl": 29,
@@ -3832,11 +3050,7 @@
     "stats": [265, 137, 22, 17, 20, 24, 19]
   },
   "Tangata Manu": {
-    "align": "Neutral-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 48,
+    "attack": "Gun dmg",
     "inherits": "----o--------o-",
     "lvl": 2,
     "pcoeff": 11,
@@ -3847,26 +3061,16 @@
     "stats": [43, 23, 3, 2, 2, 5, 4]
   },
   "Taotie": {
-    "align": "Dark-Law",
-    "code": 75,
     "inherits": "-------oo-oooo-",
     "lvl": 53,
     "pcoeff": 16,
     "race": "Vile",
-    "resists": "nnwwww-n",
-    "reslvls": {
-      "ele": 100,
-      "fir": 100,
-      "ice": 100,
-      "win": 100
-    },
+    "resists": "nnBBBB-n",
     "skills": ["Tyranny", "Void Nerve"],
     "source": ["Megido", "Tricky Dance", "Void Nerve"],
     "stats": [433, 238, 39, 33, 30, 35, 32]
   },
   "Tezcatlipoca": {
-    "align": "Dark-Neutral",
-    "code": 369,
     "inherits": "o---o-oo---oo--",
     "lvl": 81,
     "pcoeff": 20,
@@ -3878,45 +3082,30 @@
   },
   "Thor": {
     "ailments": "ww--nn---",
-    "align": "Light-Chaos",
-    "attack": {
-      "hits": "1-2"
-    },
-    "code": 240,
+    "attack": "1-2 hits",
     "hpmod": 1.1,
     "inherits": "---o----o--ooo-",
     "lvl": 76,
     "pcoeff": 19,
     "race": "Kishin",
-    "resists": "s-d-d-ss",
-    "reslvls": {
-      "ele": 125,
-      "fir": 125
-    },
+    "resists": "s-D-D-ss",
     "skills": ["Ziodyne", "Mortal Jihad", "Elec Amp"],
     "source": ["Madness Crush", "Occult Flash"],
     "stats": [655, 340, 55, 45, 53, 41, 49]
   },
   "Thoth": {
-    "align": "Light-Neutral",
-    "code": 106,
     "hpmod": 1.1,
     "inherits": "o---o--o---ooo-",
     "lvl": 41,
     "pcoeff": 20,
     "race": "Deity",
-    "resists": "ww-nnd--",
-    "reslvls": {
-      "phy": 150
-    },
+    "resists": "Cw-nnd--",
     "skills": ["Tarukaja", "Tarunda", "Makarakarn"],
     "source": ["Debilitate", "Makarakarn"],
     "stats": [350, 202, 23, 30, 24, 32, 29]
   },
   "Throne": {
     "ailments": "-----s---",
-    "align": "Neutral-Law",
-    "code": 37,
     "inherits": "-o------------o",
     "lvl": 47,
     "pcoeff": 12,
@@ -3927,11 +3116,7 @@
     "stats": [388, 232, 26, 39, 27, 29, 30]
   },
   "Thunderbird": {
-    "align": "Light-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 23,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "o--o----o--o---",
     "lvl": 35,
@@ -3943,24 +3128,17 @@
     "stats": [307, 164, 26, 21, 22, 28, 23]
   },
   "Tiamat": {
-    "align": "Dark-Chaos",
-    "code": 397,
     "inherits": "-oooo----oooo-o",
     "lvl": 63,
     "pcoeff": 38,
     "race": "Drake",
-    "resists": "--ndw--s",
-    "reslvls": {
-      "ice": 200
-    },
+    "resists": "--nDw--s",
     "skills": ["Mabufudyne", "Silent Prayer", "Fang Breaker"],
     "source": ["Ice Amp", "Life Gain", "Mana Gain"],
     "stats": [529, 284, 41, 41, 42, 40, 40]
   },
   "Titan": {
     "ailments": "-ww-ww---",
-    "align": "Neutral-Neutral",
-    "code": 162,
     "inherits": "--------o----o-",
     "lvl": 35,
     "pcoeff": 12,
@@ -3972,11 +3150,7 @@
   },
   "Titania": {
     "ailments": "--s-nws--",
-    "align": "Neutral-Neutral",
-    "attack": {
-      "ailment": "charm (10%)"
-    },
-    "code": 137,
+    "attack": "10% Charm",
     "inherits": "---o----------o",
     "lvl": 60,
     "pcoeff": 12,
@@ -3988,8 +3162,6 @@
   },
   "Tlaloc": {
     "ailments": "--s------",
-    "align": "Light-Neutral",
-    "code": 132,
     "hpmod": 1.1,
     "inherits": "-o-o-------ooo-",
     "lvl": 40,
@@ -4002,8 +3174,6 @@
   },
   "Tlaltecuhtli": {
     "ailments": "--s-s----",
-    "align": "Neutral-Neutral",
-    "code": 161,
     "inherits": "-o------o------",
     "lvl": 45,
     "pcoeff": 12,
@@ -4015,8 +3185,6 @@
   },
   "Tlazolteotl": {
     "ailments": "nnn------",
-    "align": "Light-Law",
-    "code": 12,
     "hpmod": 1.1,
     "inherits": "--o---------ooo",
     "lvl": 64,
@@ -4028,8 +3196,6 @@
     "stats": [544, 306, 40, 46, 41, 38, 42]
   },
   "Tonatiuh": {
-    "align": "Light-Chaos",
-    "code": 217,
     "hpmod": 1.1,
     "inherits": "-o---o--oo-oo--",
     "lvl": 45,
@@ -4042,11 +3208,7 @@
   },
   "Toufei": {
     "ailments": "--s--s---",
-    "align": "Neutral-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 52,
+    "attack": "Gun dmg",
     "inherits": "--o------o-----",
     "lvl": 31,
     "pcoeff": 11,
@@ -4058,8 +3220,6 @@
   },
   "Trumpeter": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 345,
     "inherits": "-----ooo--ooo--",
     "lvl": 83,
     "pcoeff": 22,
@@ -4071,8 +3231,6 @@
   },
   "Tzitzimitl": {
     "ailments": "----nn-n-",
-    "align": "Dark-Chaos",
-    "code": 291,
     "inherits": "o------oo-ooo--",
     "lvl": 71,
     "pcoeff": 21,
@@ -4083,8 +3241,6 @@
     "stats": [580, 324, 45, 49, 43, 41, 45]
   },
   "Ubu": {
-    "align": "Dark-Neutral",
-    "code": 210,
     "inherits": "------o-oo--o--",
     "lvl": 11,
     "pcoeff": 14,
@@ -4095,8 +3251,6 @@
     "stats": [121, 68, 6, 11, 10, 9, 7]
   },
   "Undine": {
-    "align": "Light-Neutral",
-    "code": 335,
     "hpmod": 1.1,
     "inherits": "--o------o----o",
     "lvl": 28,
@@ -4108,8 +3262,6 @@
     "stats": [249, 143, 18, 21, 17, 19, 19]
   },
   "Valkyrie": {
-    "align": "Neutral-Law",
-    "code": 57,
     "inherits": "--------o----o-",
     "lvl": 45,
     "pcoeff": 12,
@@ -4121,11 +3273,7 @@
   },
   "Vetala": {
     "ailments": "nn--n----",
-    "align": "Dark-Chaos",
-    "attack": {
-      "ailment": "poison (30%)"
-    },
-    "code": 319,
+    "attack": "30% Poison",
     "inherits": "------o-o--o-o-",
     "lvl": 67,
     "pcoeff": 14,
@@ -4136,8 +3284,6 @@
     "stats": [568, 292, 47, 39, 47, 37, 41]
   },
   "Victor": {
-    "align": "Light-Law",
-    "code": 6,
     "hpmod": 1.1,
     "inherits": "-----ooo-o-oo--",
     "lvl": 51,
@@ -4149,8 +3295,6 @@
     "stats": [446, 229, 37, 29, 35, 31, 36]
   },
   "Virtue": {
-    "align": "Neutral-Law",
-    "code": 39,
     "inherits": "----oo---------",
     "lvl": 25,
     "pcoeff": 11,
@@ -4161,11 +3305,7 @@
     "stats": [220, 132, 13, 22, 15, 19, 16]
   },
   "Vishnu": {
-    "align": "Light-Neutral",
-    "attack": {
-      "hits": "1-3"
-    },
-    "code": 100,
+    "attack": "1-3 hits",
     "hpmod": 1.1,
     "inherits": "o------o---oooo",
     "lvl": 86,
@@ -4178,8 +3318,6 @@
   },
   "Vivian": {
     "ailments": "--w--n---",
-    "align": "Neutral-Neutral",
-    "code": 139,
     "inherits": "--o-------o----",
     "lvl": 40,
     "pcoeff": 12,
@@ -4190,8 +3328,6 @@
     "stats": [340, 187, 26, 27, 25, 23, 29]
   },
   "Vodyanik": {
-    "align": "Neutral-Law",
-    "code": 61,
     "inherits": "---o-----o-----",
     "lvl": 13,
     "pcoeff": 12,
@@ -4203,8 +3339,6 @@
   },
   "Vouivre": {
     "ailments": "n--------",
-    "align": "Neutral-Neutral",
-    "code": 174,
     "inherits": "-o--------o----",
     "lvl": 33,
     "pcoeff": 12,
@@ -4216,8 +3350,6 @@
   },
   "Wendigo": {
     "ailments": "------w--",
-    "align": "Dark-Neutral",
-    "code": 201,
     "inherits": "--o-----o-oo---",
     "lvl": 23,
     "pcoeff": 14,
@@ -4229,24 +3361,17 @@
   },
   "White Rider": {
     "ailments": "nnnnnnnnn",
-    "align": "Dark-Neutral",
-    "code": 349,
     "inherits": "---o-oo--o-oo--",
     "lvl": 49,
     "pcoeff": 20,
     "race": "Fiend",
-    "resists": "----nwnn",
-    "reslvls": {
-      "win": 100
-    },
+    "resists": "----nBnn",
     "skills": ["Maziodyne", "Arrow Rain", "Life Aid"],
     "source": ["Thunder Reign", "Elec Boost", "Mana Surge"],
     "stats": [412, 218, 35, 29, 31, 36, 31]
   },
   "Wild Hunt": {
     "ailments": "--n-n--n-",
-    "align": "Neutral-Chaos",
-    "code": 280,
     "inherits": "o-----o--------",
     "lvl": 55,
     "pcoeff": 12,
@@ -4257,8 +3382,6 @@
     "stats": [451, 238, 35, 30, 32, 43, 35]
   },
   "Wu Kong": {
-    "align": "Light-Chaos",
-    "code": 216,
     "hpmod": 1.1,
     "inherits": "o-------oo-ooo-",
     "lvl": 58,
@@ -4270,11 +3393,7 @@
     "stats": [488, 268, 42, 37, 35, 40, 35]
   },
   "Xi Wangmu": {
-    "align": "Light-Chaos",
-    "attack": {
-      "ailment": "charm (10%)"
-    },
-    "code": 221,
+    "attack": "10% Charm",
     "hpmod": 1.1,
     "inherits": "---------o--ooo",
     "lvl": 79,
@@ -4286,11 +3405,7 @@
     "stats": [667, 368, 50, 54, 51, 46, 51]
   },
   "Xiuhtecuhtli": {
-    "align": "Neutral-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 56,
+    "attack": "Gun dmg",
     "inherits": "-o-------o-----",
     "lvl": 54,
     "pcoeff": 12,
@@ -4302,8 +3417,6 @@
   },
   "Yamawaro": {
     "ailments": "------ws-",
-    "align": "Neutral-Chaos",
-    "code": 264,
     "inherits": "----o-----o----",
     "lvl": 24,
     "pcoeff": 11,
@@ -4314,11 +3427,7 @@
     "stats": [220, 111, 21, 13, 17, 16, 15]
   },
   "Yatagarasu": {
-    "align": "Light-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 21,
+    "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "oo---------o--o",
     "lvl": 59,
@@ -4330,8 +3439,6 @@
     "stats": [494, 273, 37, 38, 35, 43, 39]
   },
   "Yggdrasil": {
-    "align": "Light-Law",
-    "code": 29,
     "hpmod": 1.1,
     "inherits": "-----oo--o-ooo-",
     "lvl": 64,
@@ -4344,8 +3451,6 @@
   },
   "Yuki Jyorou": {
     "ailments": "----s----",
-    "align": "Neutral-Chaos",
-    "code": 274,
     "inherits": "--o---o--------",
     "lvl": 26,
     "pcoeff": 12,
@@ -4356,11 +3461,7 @@
     "stats": [232, 133, 15, 21, 17, 18, 17]
   },
   "Yurlungur": {
-    "align": "Neutral-Neutral",
-    "attack": {
-      "ailment": "paralyze (10%)"
-    },
-    "code": 173,
+    "attack": "10% Paralyze",
     "inherits": "--o-----------o",
     "lvl": 28,
     "pcoeff": 12,
@@ -4372,8 +3473,6 @@
   },
   "Zaccoum": {
     "ailments": "nnn--nnn-",
-    "align": "Dark-Law",
-    "code": 94,
     "inherits": "-o--------o-oo-",
     "lvl": 42,
     "pcoeff": 14,
@@ -4385,11 +3484,7 @@
   },
   "Zhen": {
     "ailments": "nn-------",
-    "align": "Dark-Law",
-    "attack": {
-      "element": "Gun"
-    },
-    "code": 86,
+    "attack": "Gun dmg",
     "inherits": "o-------o-oo---",
     "lvl": 28,
     "pcoeff": 14,
@@ -4400,8 +3495,6 @@
     "stats": [247, 131, 19, 17, 18, 23, 17]
   },
   "Zhu Tun She": {
-    "align": "Dark-Chaos",
-    "code": 304,
     "inherits": "--o-----oo-o---",
     "lvl": 15,
     "pcoeff": 14,
@@ -4413,8 +3506,6 @@
   },
   "Zhu Yin": {
     "ailments": "----nn---",
-    "align": "Light-Chaos",
-    "code": 233,
     "hpmod": 1.1,
     "inherits": "---------ooo-o-",
     "lvl": 58,
@@ -4426,8 +3517,6 @@
     "stats": [501, 261, 41, 34, 39, 38, 37]
   },
   "Zouchouten": {
-    "align": "Light-Chaos",
-    "code": 244,
     "hpmod": 1.1,
     "inherits": "-o------oo-ooo-",
     "lvl": 37,

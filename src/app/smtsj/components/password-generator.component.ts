@@ -104,12 +104,13 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </table>
       <table class="list-table">
         <thead>
-          <tr><th colspan="6" class="title">Learned Skills</th></tr>
+          <tr><th colspan="7" class="title">Learned Skills</th></tr>
           <tr>
             <th>Element</th>
             <th>Name</th>
             <th>Cost</th>
             <th>Effect</th>
+            <th>Target</th>
             <th>Rank</th>
             <th>Inherit</th>
           </tr>
@@ -131,10 +132,12 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
               <ng-container *ngIf="compendium.getSkill(skill.controls.name.value); let entry; else noEntry">
                 <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
                 <td>{{ entry.effect }}</td>
+                <td>{{ entry.target }}</td>
                 <td [style.color]="entry.rank !== 99 ? null: 'transparent'">{{ entry.rank }}</td>
                 <td><div class="element-icon {{ entry.inherit }}">{{ entry.inherit }}</div></td>
               </ng-container>
               <ng-template #noEntry>
+                <td>-</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -172,7 +175,7 @@ export class PasswordGeneratorComponent implements OnChanges {
   price = 0;
 
   unknownDemon: Demon = {
-    attack:   'Physical x1 to single foe',
+    attack:   'Normal',
     code: 0, pcoeff: 0, hpmod: 0, price: 0, lvl: 0, currLvl: 0,
     name: '???', align: '', race: '-', fusion: '-',
     inherits: 0, skills: {}, source: {}, stats: [], resists: []

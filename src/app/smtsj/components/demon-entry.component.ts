@@ -35,6 +35,7 @@ import { FusionDataService } from '../fusion-data.service';
       </app-demon-inherits>
       <app-demon-skills
         [hasRank]="true"
+        [hasTarget]="true"
         [hasInherit]="true"
         [hasLvl]="false"
         [elemOrder]="elemOrder"
@@ -44,6 +45,7 @@ import { FusionDataService } from '../fusion-data.service';
       <app-demon-skills
         [title]="'D-Source Skills'"
         [hasRank]="true"
+        [hasTarget]="true"
         [hasInherit]="true"
         [hasLvl]="false"
         [elemOrder]="elemOrder"
