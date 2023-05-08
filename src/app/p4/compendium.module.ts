@@ -15,7 +15,6 @@ import GOLDEN_DEMON_DATA_JSON from './data/golden-demon-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import GOLDEN_ENEMY_DATA_JSON from './data/golden-enemy-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
-import GOLDEN_SKILL_DATA_JSON from './data/golden-skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -34,6 +33,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
 const inheritTypes: { [elem: string]: number[] } = {};
 const races = [];
+const skillData = {};
 
 for(const race of COMP_CONFIG_JSON['races']) {
   races.push(race);
@@ -52,6 +52,22 @@ for (const entry of Object.values(PARTY_DATA_JSON)) {
 for (const entry of Object.values(GOLDEN_PARTY_DATA_JSON)) {
   entry.race = entry.race + ' P';
   entry['fusion'] = 'party';
+}
+
+for (const skill of SKILL_DATA_JSON) {
+  skillData[skill.name] = {
+    element: skill.elem,
+    cost: skill.cost || 0,
+    effect: skill.power ? skill.power + ' power' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
+    target: skill.target || 'Self',
+    rank: skill.rank,
+  }
+
+  if (skill.hasOwnProperty('card')) {
+    skillData[skill.name].card = skill.card;
+  } else if (skill.hasOwnProperty('shuffle')) {
+    skillData[skill.name].card = 'Shuffle ' + skill.shuffle;
+  }
 }
 
 export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
@@ -73,7 +89,7 @@ export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
   enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
 
   demonData: { p4: [DEMON_DATA_JSON, PARTY_DATA_JSON], p4g: [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON] },
-  skillData: { p4: [SKILL_DATA_JSON, GOLDEN_SKILL_DATA_JSON], p4g: [SKILL_DATA_JSON, GOLDEN_SKILL_DATA_JSON] },
+  skillData: { p4: [skillData], p4g: [skillData] },
   enemyData: { p4: [ENEMY_DATA_JSON], p4g: [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON] },
 
   normalTable: { p4: FUSION_CHART_JSON, p4g: GOLDEN_FUSION_CHART_JSON },

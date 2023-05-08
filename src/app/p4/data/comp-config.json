@@ -41,20 +41,27 @@
     "d": -1100
   },
   "resistElems": [
-    "phys",
-    "fire",
+    "phy",
+    "fir",
     "ice",
-    "elec",
-    "wind",
-    "light",
-    "dark"
+    "ele",
+    "win",
+    "lig",
+    "dar"
   ],
+  "skillHits": {
+    "physOne": 90,
+    "physAll": 80,
+    "physCrit": 5,
+    "magicOne": 98,
+    "magicAll": 95
+  },
   "skillElems": [
-    "almighty",
-    "ailment",
-    "recovery",
-    "support",
-    "special",
-    "passive"
+    "alm",
+    "ail",
+    "rec",
+    "sup",
+    "spe",
+    "pas"
   ]
 }

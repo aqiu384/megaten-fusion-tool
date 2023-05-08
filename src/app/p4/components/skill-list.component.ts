@@ -13,6 +13,7 @@ import { CompendiumConfig } from '../models';
       [elemOrder]="compConfig.elemOrder"
       [isPersona]="true"
       [transferTitle]="transferTitle"
+      [hasTarget]="true"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `

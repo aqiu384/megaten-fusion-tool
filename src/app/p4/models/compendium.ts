@@ -92,26 +92,13 @@ export class Compendium implements ICompendium {
 
     for (const skillData of this.compConfig.skillData[this.gameAbbr]) {
       for (const [name, json] of Object.entries(skillData)) {
-        const power = json['power'] || 0;
-        const damage = json['damage'];
-        const target = json['target'] || '';
-        const beffect = json['effect'];
-        let effect = json['effect'];
-
-        if (power) {
-          effect = power ? damage + ' (' + power.toString() + ') dmg' : '';
-          effect += target ? ' to ' + target.toLowerCase() : '';
-          effect += beffect ? ', ' + beffect : '';
-        } else if (target) {
-          effect += (json['element'] === 'support' ? ' for ' : ' to ') + target.toLowerCase();
-        }
-
         skills[name] = {
           name,
           element:   json['element'],
           cost:      json['cost'] || 0,
           rank:      json['rank'] || 99,
-          effect:    effect,
+          effect:    json['power'] ? json['power'] + ' power' + (json['effect'] ? ', ' + json['effect'] : '') : json['effect'],
+          target:    json['target'] || 'Self',
           learnedBy: [],
           transfer:  [],
           level:     0

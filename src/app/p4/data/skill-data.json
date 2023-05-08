@@ -1,2429 +1,2930 @@
-{
-  "Absorb Elec": {
-    "card": "Lucifer",
-    "effect": "Drains Elec attacks",
-    "element": "passive",
-    "price": 300000,
-    "rank": 8
+[
+  {
+    "cost": 6,
+    "effect": "20% crit",
+    "elem": "phy",
+    "hit": 100,
+    "name": "Bash",
+    "power": 60,
+    "rank": 1,
+    "target": "1 foe"
   },
-  "Absorb Fire": {
-    "card": "Hell Biker",
-    "effect": "Drains Fire attacks",
-    "element": "passive",
-    "price": 300000,
-    "rank": 8
+  {
+    "cost": 5,
+    "effect": "20% crit",
+    "elem": "phy",
+    "hit": 100,
+    "name": "Cleave",
+    "power": 65,
+    "rank": 1,
+    "target": "1 foe"
   },
-  "Absorb Ice": {
-    "card": "Isis",
-    "effect": "Drains Ice attacks",
-    "element": "passive",
-    "price": 300000,
-    "rank": 8
+  {
+    "cost": 5,
+    "effect": "20% crit",
+    "elem": "phy",
+    "hit": 85,
+    "name": "Skewer",
+    "power": 70,
+    "rank": 1,
+    "target": "1 foe"
   },
-  "Absorb Physical": {
-    "card": "Shuffle",
-    "effect": "Drains Phys attacks",
-    "element": "passive",
-    "price": 300000,
-    "rank": 8
+  {
+    "cost": 8,
+    "effect": "25% crit",
+    "elem": "phy",
+    "name": "Sonic Punch",
+    "power": 75,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
   },
-  "Absorb Wind": {
-    "card": "Horus",
-    "effect": "Drains Wind attacks",
-    "element": "passive",
-    "price": 300000,
-    "rank": 8
+  {
+    "cost": 8,
+    "effect": "25% crit",
+    "elem": "phy",
+    "name": "Single Shot",
+    "power": 85,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
   },
-  "Aeon Rain": {
-    "card": "Taowu",
+  {
+    "cost": 10,
+    "effect": "20% crit",
+    "elem": "phy",
+    "name": "Assault Dive",
+    "power": 100,
+    "price": 10000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "card": "Power",
+    "cost": 14,
+    "effect": "25% crit",
+    "elem": "phy",
+    "hit": 80,
+    "name": "Power Slash",
+    "power": 120,
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "1 foe"
+  },
+  {
+    "card": "Raja Naga",
+    "cost": 14,
+    "effect": "20% crit",
+    "elem": "phy",
+    "name": "Fatal End",
+    "power": 125,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "1 foe"
+  },
+  {
+    "card": "Orthrus",
+    "cost": 16,
+    "effect": "35% crit",
+    "elem": "phy",
+    "hit": 80,
+    "name": "Black Spot",
+    "power": 130,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "1 foe"
+  },
+  {
+    "card": "Hanuman",
+    "cost": 16,
+    "effect": "30% crit",
+    "elem": "phy",
+    "name": "Mighty Swing",
+    "power": 135,
+    "price": 40000,
+    "rank": 5,
+    "shuffle": 5,
+    "target": "1 foe"
+  },
+  {
+    "card": "Siegfried",
+    "cost": 21,
+    "effect": "35% crit",
+    "elem": "phy",
+    "hit": 85,
+    "name": "Rainy Death",
+    "power": 175,
+    "price": 70000,
+    "rank": 7,
+    "shuffle": 8,
+    "target": "1 foe"
+  },
+  {
+    "cost": 25,
+    "effect": "30% crit",
+    "elem": "phy",
+    "name": "Heaven's Blade",
+    "power": 230,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "card": "Cerberus",
     "cost": 18,
-    "damage": "Medium",
-    "effect": "5% crit, x1-3 hits",
-    "element": "phys",
+    "effect": "25% crit",
+    "elem": "phy",
+    "name": "Gigantic Fist",
+    "power": 330,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "1 foe"
+  },
+  {
+    "card": "Atavaka",
+    "cost": 20,
+    "effect": "20% crit",
+    "elem": "phy",
+    "name": "Brave Blade",
+    "power": 700,
+    "price": 80000,
+    "rank": 7,
+    "shuffle": 9,
+    "target": "1 foe"
+  },
+  {
+    "card": "Ardha",
+    "cost": 22,
+    "effect": "15% crit",
+    "elem": "phy",
+    "name": "God's Hand",
+    "power": 800,
+    "price": 150000,
+    "rank": 8,
+    "shuffle": 10,
+    "target": "1 foe"
+  },
+  {
+    "card": "Beelzebub",
+    "cost": 22,
+    "effect": "25% crit",
+    "elem": "phy",
+    "name": "Primal Force",
+    "power": 1100,
+    "price": 150000,
+    "rank": 8,
+    "shuffle": 10,
+    "target": "1 foe"
+  },
+  {
+    "cost": 8,
+    "effect": "15% crit, 2 hits",
+    "elem": "phy",
+    "name": "Double Fangs",
+    "power": 40,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
+  },
+  {
+    "card": "Titan",
+    "cost": 10,
+    "effect": "10% crit, 1-3 hits",
+    "elem": "phy",
+    "name": "Kill Rush",
+    "power": 50,
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "cost": 10,
+    "effect": "10% crit, 2 hits",
+    "elem": "phy",
+    "name": "Twin Shot",
+    "power": 55,
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "card": "Taotie",
+    "cost": 16,
+    "effect": "8% crit, 2-4 hits",
+    "elem": "phy",
+    "name": "Torrent Shot",
+    "power": 45,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Masakado",
+    "cost": 18,
+    "effect": "10% crit, 1-2 hits",
+    "elem": "phy",
+    "hit": 85,
+    "name": "Tempest Slash",
+    "power": 90,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "1 foe"
+  },
+  {
+    "card": "Ares",
+    "cost": 12,
+    "elem": "phy",
+    "hit": 85,
+    "name": "Gale Slash",
+    "power": 80,
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
+  },
+  {
+    "card": "Flauros",
+    "cost": 16,
+    "elem": "phy",
+    "name": "Herculean Strike",
+    "power": 90,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "All foes"
+  },
+  {
+    "card": "Yatsufusa",
+    "cost": 16,
+    "elem": "phy",
     "hit": 75,
+    "name": "Heat Wave",
+    "power": 125,
+    "price": 40000,
+    "rank": 5,
+    "shuffle": 5,
+    "target": "All foes"
+  },
+  {
+    "card": "Cybele",
+    "cost": 18,
+    "elem": "phy",
+    "hit": 90,
+    "name": "Vicious Strike",
     "power": 140,
     "price": 50000,
     "rank": 6,
-    "target": "All Foes"
+    "shuffle": 6,
+    "target": "All foes"
   },
-  "Agi": {
-    "card": "Ukobach",
-    "cost": 1004,
-    "damage": "Light",
-    "element": "fire",
-    "hit": 98,
-    "power": 80,
-    "price": 5000,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Agidyne": {
-    "card": "Mara",
-    "cost": 1012,
-    "damage": "Heavy",
-    "element": "fire",
-    "hit": 98,
-    "power": 320,
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Agilao": {
-    "card": "Lamia",
-    "cost": 1008,
-    "damage": "Medium",
-    "element": "fire",
-    "hit": 98,
-    "power": 200,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Agneyastra": {
-    "card": "Sandalphon",
-    "cost": 24,
-    "damage": "Heavy",
-    "effect": "5% crit, x1-3 hits",
-    "element": "phys",
-    "hit": 75,
-    "power": 240,
-    "price": 80000,
-    "rank": 7,
-    "target": "All Foes"
-  },
-  "Ailment Boost": {
-    "card": "Nozuchi",
-    "effect": "All ailment success rate x1.5",
-    "element": "passive",
-    "price": 60000,
-    "rank": 6
-  },
-  "Akasha Arts": {
-    "card": "Melchizedek",
-    "cost": 18,
-    "damage": "Heavy",
-    "effect": "5% crit, x1-2 hits",
-    "element": "phys",
-    "hit": 80,
-    "power": 260,
-    "price": 80000,
-    "rank": 7,
-    "target": "All Foes"
-  },
-  "Alertness": {
-    "card": "Saki Mitama",
-    "effect": "Lowers chances of being ambushed",
-    "element": "passive",
-    "price": 10000,
-    "rank": 2
-  },
-  "Ali Dance": {
-    "effect": "Halves enemy hit rate when attacked",
-    "element": "passive",
-    "rank": 5
-  },
-  "Amrita": {
-    "card": "Scathach",
-    "cost": 1012,
-    "effect": "Cures all ailments",
-    "element": "recovery",
-    "price": 40000,
-    "rank": 4,
-    "target": "All Allies"
-  },
-  "Angelic Grace": {
-    "card": "Sraosha",
-    "effect": "Doubles evasion against non-Almighty Magic attacks",
-    "element": "passive",
-    "price": 70000,
-    "rank": 7
-  },
-  "Anima Freeze": {
-    "card": "Narcissus",
-    "cost": 1012,
-    "effect": "30% Exhaustion",
-    "element": "ailment",
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Apt Pupil": {
-    "card": "Okuninushi",
-    "effect": "Doubles crit rate",
-    "element": "passive",
-    "price": 15000,
-    "rank": 3
-  },
-  "Arm Chopper": {
-    "card": "Valkyrie",
-    "cost": 9,
-    "damage": "Light",
-    "effect": "5% crit, x1-2 hits, Fear",
-    "element": "phys",
-    "hit": 90,
-    "power": 90,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Arms Master": {
-    "card": "Futsunushi",
-    "effect": "Halves all HP costs",
-    "element": "passive",
-    "price": 120000,
-    "rank": 7
-  },
-  "Arrow Rain": {
-    "card": "Abaddon",
-    "cost": 18,
-    "damage": "Heavy",
-    "effect": "5% crit, x2 hits",
-    "element": "phys",
-    "hit": 75,
-    "power": 160,
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Assault Dive": {
-    "card": "Shuffle",
-    "cost": 10,
-    "damage": "Light",
-    "effect": "20% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 200,
-    "price": 10000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Atom Smasher": {
-    "card": "Ose",
-    "cost": 16,
-    "damage": "Medium",
-    "effect": "5% crit, x1-2 hits, Fear",
-    "element": "phys",
-    "hit": 80,
-    "power": 100,
-    "price": 40000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Auto-Maraku": {
-    "card": "Setanta",
-    "effect": "Begin battle with Marakukaja",
-    "element": "passive",
-    "price": 80000,
-    "rank": 6
-  },
-  "Auto-Masuku": {
-    "card": "Kingu",
-    "effect": "Begin battle with Masukukaja",
-    "element": "passive",
-    "price": 80000,
-    "rank": 6
-  },
-  "Auto-Mataru": {
-    "card": "Narasimha",
-    "effect": "Begin battle with Matarukaja",
-    "element": "passive",
-    "price": 80000,
-    "rank": 6
-  },
-  "Auto-Rakukaja": {
-    "card": "Take-Minakata",
-    "effect": "Begin battle with Rakukaja",
-    "element": "passive",
-    "price": 60000,
-    "rank": 3
-  },
-  "Auto-Sukukaja": {
-    "card": "Makami",
-    "effect": "Begin battle with Sukukaja",
-    "element": "passive",
-    "price": 60000,
-    "rank": 3
-  },
-  "Auto-Tarukaja": {
-    "card": "Gurr",
-    "effect": "Begin battle with Tarukaja",
-    "element": "passive",
-    "price": 60000,
-    "rank": 3
-  },
-  "Balzac": {
-    "cost": 1005,
-    "effect": "40% Rage (+100% St, Auto melee attack)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Bash": {
-    "cost": 6,
-    "damage": "Light",
-    "effect": "20% crit",
-    "element": "phys",
-    "hit": 100,
-    "power": 120,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Black Spot": {
-    "card": "Orthrus",
-    "cost": 16,
-    "damage": "Medium",
-    "effect": "35% crit",
-    "element": "phys",
-    "hit": 80,
-    "power": 260,
-    "price": 40000,
-    "rank": 4,
-    "target": "One Foe"
-  },
-  "Black Viper": {
-    "cost": 1064,
-    "damage": "Massive",
-    "element": "almighty",
-    "hit": 98,
-    "power": 440,
-    "target": "One Foe"
-  },
-  "Blade of Fury": {
-    "card": "Hokuto Seikun",
-    "cost": 18,
-    "damage": "Medium",
-    "effect": "5% crit, x2-4 hits",
-    "element": "phys",
-    "hit": 90,
-    "power": 100,
-    "price": 50000,
-    "rank": 5,
-    "target": "All Foes"
-  },
-  "Blight": {
-    "card": "Pabilsag",
-    "cost": 16,
-    "damage": "Heavy",
-    "effect": "5% crit, Poison",
-    "element": "phys",
-    "hit": 80,
-    "power": 260,
-    "price": 70000,
-    "rank": 7,
-    "target": "All Foes"
-  },
-  "Blue Wall": {
-    "card": "Triglav",
-    "cost": 1018,
-    "effect": "Gives Elec resistance for 3 turns",
-    "element": "support",
-    "price": 20000,
-    "rank": 4,
-    "target": "One Ally"
-  },
-  "Brain Shake": {
-    "card": "Vetala",
-    "cost": 12,
-    "damage": "Light",
-    "effect": "5% crit, x1-3 hits, Exhaustion",
-    "element": "phys",
-    "hit": 100,
-    "power": 160,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Brave Blade": {
-    "card": "Atavaka",
-    "cost": 20,
-    "damage": "Severe",
-    "effect": "20% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 1400,
-    "price": 80000,
-    "rank": 7,
-    "target": "One Foe"
-  },
-  "Bufu": {
-    "card": "Forneus",
-    "cost": 1004,
-    "damage": "Light",
-    "element": "ice",
-    "hit": 98,
-    "power": 80,
-    "price": 5000,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Bufudyne": {
-    "card": "Hariti",
-    "cost": 1012,
-    "damage": "Heavy",
-    "element": "ice",
-    "hit": 98,
-    "power": 320,
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Bufula": {
-    "card": "Ganga",
-    "cost": 1008,
-    "damage": "Medium",
-    "element": "ice",
-    "hit": 98,
-    "power": 200,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Cell Breaker": {
-    "card": "Yomotsu-Ikusa",
-    "cost": 10,
-    "damage": "Light",
-    "effect": "5% crit, Enervation",
-    "element": "phys",
-    "hit": 90,
-    "power": 160,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Cleave": {
-    "cost": 5,
-    "damage": "Light",
-    "effect": "20% crit",
-    "element": "phys",
-    "hit": 100,
-    "power": 130,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Confuse Boost": {
-    "effect": "Confusion success rate x1.5",
-    "element": "passive",
-    "rank": 4
-  },
-  "Cool Breeze": {
-    "card": "Yatagarasu",
-    "effect": "Recover 8% HP and SP after battle",
-    "element": "passive",
-    "price": 70000,
-    "rank": 5
-  },
-  "Counter": {
-    "card": "Rakshasa",
-    "effect": "10% chance to repel Phys attack",
-    "element": "passive",
-    "price": 15000,
-    "rank": 3
-  },
-  "Counterstrike": {
-    "card": "Fuu-Ki",
-    "effect": "15% chance to repel Phys attack",
-    "element": "passive",
-    "price": 40000,
-    "rank": 4
-  },
-  "Crazy Chain": {
-    "card": "Gorgon",
-    "cost": 14,
-    "damage": "Medium",
-    "effect": "5% crit, Rage",
-    "element": "phys",
-    "hit": 80,
-    "power": 180,
-    "price": 25000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Cruel Attack": {
-    "card": "Oni",
-    "cost": 12,
-    "damage": "Medium",
-    "effect": "35% crit, Dmg x1.5 on Downed foes",
-    "element": "phys",
-    "hit": 90,
-    "power": 240,
-    "price": 25000,
-    "rank": 4,
-    "target": "One Foe"
-  },
-  "Deathbound": {
+  {
     "card": "Thor",
     "cost": 20,
-    "damage": "Heavy",
-    "effect": "5% crit",
-    "element": "phys",
-    "hit": 80,
-    "power": 290,
+    "elem": "phy",
+    "name": "Deathbound",
+    "power": 145,
     "price": 60000,
     "rank": 6,
-    "target": "All Foes"
+    "shuffle": 7,
+    "target": "All foes"
   },
-  "Debilitate": {
-    "card": "Trumpeter",
-    "cost": 1030,
-    "effect": "Tarunda + Rakunda + Sukunda",
-    "element": "support",
-    "price": 200000,
-    "target": "One Foe"
+  {
+    "card": "Zaou-Gongen",
+    "cost": 25,
+    "elem": "phy",
+    "name": "Vorpal Blade",
+    "power": 200,
+    "price": 150000,
+    "rank": 8,
+    "shuffle": 10,
+    "target": "All foes"
   },
-  "Dekaja": {
-    "card": "Mokoi",
-    "cost": 1010,
-    "effect": "Removes -kaja effects",
-    "element": "support",
-    "price": 25000,
+  {
+    "card": "Matador",
+    "cost": 12,
+    "effect": "1-3 hits",
+    "elem": "phy",
+    "hit": 75,
+    "name": "Rampage",
+    "power": 40,
+    "price": 15000,
     "rank": 3,
-    "target": "All Foes"
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Dekunda": {
-    "card": "Senri",
-    "cost": 1010,
-    "effect": "Removes -kunda effects",
-    "element": "support",
-    "price": 25000,
+  {
+    "card": "Yaksini",
+    "cost": 12,
+    "effect": "1-2 hits",
+    "elem": "phy",
+    "name": "Swift Strike",
+    "power": 65,
+    "price": 15000,
     "rank": 3,
-    "target": "All Allies"
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Dia": {
-    "card": "Pixie",
-    "cost": 1003,
-    "effect": "Light HP restore",
-    "element": "recovery",
-    "price": 7000,
-    "rank": 1,
-    "target": "One Ally"
-  },
-  "Diarahan": {
-    "card": "Kikuri-Hime",
-    "cost": 1018,
-    "effect": "Full HP restore",
-    "element": "recovery",
-    "price": 70000,
+  {
+    "card": "Hokuto Seikun",
+    "cost": 18,
+    "effect": "2-4 hits",
+    "elem": "phy",
+    "hit": 90,
+    "name": "Blade of Fury",
+    "power": 50,
+    "price": 50000,
     "rank": 5,
-    "target": "One Ally"
+    "shuffle": 6,
+    "target": "All foes"
   },
-  "Diarama": {
-    "card": "Nigi Mitama",
-    "cost": 1006,
-    "effect": "Medium HP restore",
-    "element": "recovery",
-    "price": 40000,
-    "rank": 3,
-    "target": "One Ally"
+  {
+    "card": "Mahakala",
+    "cost": 22,
+    "effect": "1-3 hits",
+    "elem": "phy",
+    "hit": 85,
+    "name": "Myriad Arrows",
+    "power": 75,
+    "price": 70000,
+    "rank": 7,
+    "shuffle": 8,
+    "target": "All foes"
   },
-  "Die for Me!": {
-    "cost": 1044,
-    "effect": "60% insta-kill",
-    "element": "dark",
-    "target": "All Foes"
-  },
-  "Divine Grace": {
-    "card": "Neko Shogun",
-    "effect": "Recovery skill effectiveness x1.5",
-    "element": "passive",
-    "price": 50000,
-    "rank": 8
-  },
-  "Dizzy Boost": {
-    "effect": "Dizzy success rate x1.5",
-    "element": "passive",
-    "rank": 4
-  },
-  "Dodge Elec": {
-    "card": "Ara Mitama",
-    "effect": "Doubles evasion rate against Elec attacks",
-    "element": "passive",
-    "price": 10000,
-    "rank": 2
-  },
-  "Dodge Fire": {
-    "card": "High Pixie",
-    "effect": "Doubles evasion rate against Fire attacks",
-    "element": "passive",
-    "price": 10000,
-    "rank": 2
-  },
-  "Dodge Ice": {
-    "card": "Dis",
-    "effect": "Doubles evasion rate against Ice attacks",
-    "element": "passive",
-    "price": 10000,
-    "rank": 2
-  },
-  "Dodge Physical": {
-    "card": "Baphomet",
-    "effect": "Doubles evasion rate against Phys attacks",
-    "element": "passive",
-    "price": 15000,
-    "rank": 2
-  },
-  "Dodge Wind": {
-    "card": "Andras",
-    "effect": "Doubles evasion rate against Wind attacks",
-    "element": "passive",
-    "price": 10000,
-    "rank": 2
-  },
-  "Double Fangs": {
-    "card": "Shuffle",
-    "cost": 8,
-    "damage": "Light",
-    "effect": "15% crit, x2 hits",
-    "element": "phys",
-    "hit": 90,
+  {
+    "card": "Abaddon",
+    "cost": 20,
+    "effect": "2 hits",
+    "elem": "phy",
+    "hit": 75,
+    "name": "Arrow Rain",
     "power": 80,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "card": "Taowu",
+    "cost": 18,
+    "effect": "1-3 hits",
+    "elem": "phy",
+    "hit": 75,
+    "name": "Aeon Rain",
+    "power": 70,
+    "price": 50000,
+    "rank": 6,
+    "shuffle": 6,
+    "target": "All foes"
+  },
+  {
+    "card": "Sandalphon",
+    "cost": 24,
+    "effect": "1-3 hits",
+    "elem": "phy",
+    "hit": 75,
+    "name": "Agneyastra",
+    "power": 120,
+    "price": 80000,
+    "rank": 7,
+    "shuffle": 9,
+    "target": "All foes"
+  },
+  {
+    "card": "Melchizedek",
+    "cost": 22,
+    "effect": "1-2 hits",
+    "elem": "phy",
+    "name": "Akasha Arts",
+    "power": 130,
+    "price": 80000,
+    "rank": 7,
+    "shuffle": 9,
+    "target": "All foes"
+  },
+  {
+    "cost": 25,
+    "effect": "8 hits",
+    "elem": "phy",
+    "hit": 75,
+    "name": "Hassou Tobi",
+    "power": 60,
+    "rank": 99,
+    "target": "All foes"
+  },
+  {
+    "card": "Oni",
+    "cost": 14,
+    "effect": "35% crit, Dmg x1.5 if Downed",
+    "elem": "phy",
+    "name": "Cruel Attack",
+    "power": 120,
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "1 foe"
+  },
+  {
+    "card": "Kin-Ki",
+    "cost": 18,
+    "effect": "Dmg x1.5 if Downed",
+    "elem": "phy",
+    "hit": 95,
+    "name": "Vile Assault",
+    "power": 350,
+    "price": 70000,
+    "rank": 6,
+    "shuffle": 8,
+    "target": "1 foe"
+  },
+  {
+    "card": "Eligor",
+    "cost": 9,
+    "effect": "Poison",
+    "elem": "phy",
+    "name": "Poison Skewer",
+    "power": 60,
     "price": 10000,
     "rank": 2,
-    "target": "One Foe"
+    "shuffle": 2,
+    "target": "1 foe"
   },
-  "Elec Amp": {
-    "card": "Suparna",
-    "effect": "Elec dmg x1.5",
-    "element": "passive",
-    "price": 80000,
-    "rank": 5
+  {
+    "card": "Hitokoto-Nushi",
+    "cost": 18,
+    "effect": "Poison",
+    "elem": "phy",
+    "hit": 85,
+    "name": "Poison Arrow",
+    "power": 130,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
   },
-  "Elec Boost": {
-    "card": "Oberon",
-    "effect": "Elec dmg x1.25",
-    "element": "passive",
-    "price": 18000,
-    "rank": 1
+  {
+    "card": "Tzitzimitl",
+    "cost": 21,
+    "effect": "Poison",
+    "elem": "phy",
+    "name": "Virus Wave",
+    "power": 90,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
   },
-  "Elec Break": {
-    "card": "Hachiman",
-    "cost": 1015,
-    "effect": "Removes Elec resistance for 3 turns",
-    "element": "support",
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Endure": {
-    "card": "Ganesha",
-    "effect": "Survive lethal attack with 1 HP once per battle",
-    "element": "passive",
+  {
+    "card": "Pabilsag",
+    "cost": 21,
+    "effect": "Poison",
+    "elem": "phy",
+    "name": "Blight",
+    "power": 130,
     "price": 70000,
-    "rank": 5
+    "rank": 7,
+    "shuffle": 8,
+    "target": "All foes"
   },
-  "Endure Dark": {
-    "card": "Daisoujou",
-    "effect": "100% chance to endure Dark attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 5
-  },
-  "Endure Light": {
-    "card": "Belial",
-    "effect": "100% chance to endure Light attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 5
-  },
-  "Enduring Soul": {
-    "card": "Attis",
-    "effect": "Survive lethal attack with 100% HP once per battle",
-    "element": "passive",
-    "price": 90000,
-    "rank": 7
-  },
-  "Energy Shower": {
-    "card": "Sati",
-    "cost": 1018,
-    "effect": "Cures Exhaustion and Enervation",
-    "element": "recovery",
-    "price": 50000,
+  {
+    "card": "Orobas",
+    "cost": 9,
+    "effect": "2 hits, Rage",
+    "elem": "phy",
+    "name": "Hysterical Slap",
+    "power": 50,
+    "price": 10000,
     "rank": 2,
-    "target": "All Allies"
+    "shuffle": 2,
+    "target": "1 foe"
   },
-  "Enervate Boost": {
-    "effect": "Enervation success rate x1.5",
-    "element": "passive",
-    "rank": 4
+  {
+    "card": "Gorgon",
+    "cost": 14,
+    "effect": "Rage",
+    "elem": "phy",
+    "name": "Crazy Chain",
+    "power": 90,
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All foes"
   },
-  "Enervation": {
-    "cost": 1005,
-    "effect": "40% Enervation (-50% St Ma En, Forget current order)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
+  {
+    "card": "Sandman",
+    "cost": 9,
+    "effect": "Confusion",
+    "elem": "phy",
+    "name": "Skull Cracker",
+    "power": 60,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
   },
-  "Evade Elec": {
-    "card": "Seiten Taisei",
-    "effect": "Triples evasion rate against Elec attacks",
-    "element": "passive",
-    "price": 35000,
-    "rank": 4
+  {
+    "card": "Pale Rider",
+    "cost": 14,
+    "effect": "Confusion",
+    "elem": "phy",
+    "name": "Mind Slice",
+    "power": 90,
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All foes"
   },
-  "Evade Fire": {
-    "card": "Atropos",
-    "effect": "Triples evasion rate against Fire attacks",
-    "element": "passive",
-    "price": 35000,
-    "rank": 4
-  },
-  "Evade Ice": {
-    "card": "White Rider",
-    "effect": "Triples evasion rate against Ice attacks",
-    "element": "passive",
-    "price": 35000,
-    "rank": 4
-  },
-  "Evade Physical": {
-    "card": "Alilat",
-    "effect": "Triples evasion rate against Phys attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 4
-  },
-  "Evade Wind": {
-    "card": "Vasuki",
-    "effect": "Triples evasion rate against Wind attacks",
-    "element": "passive",
-    "price": 35000,
-    "rank": 4
-  },
-  "Evil Smile": {
-    "card": "Incubus",
-    "cost": 1012,
-    "effect": "30% Fear",
-    "element": "ailment",
+  {
+    "card": "Yomotsu-Ikusa",
+    "cost": 10,
+    "effect": "Enervation",
+    "elem": "phy",
+    "name": "Cell Breaker",
+    "power": 80,
     "price": 15000,
     "rank": 3,
-    "target": "All Foes"
+    "shuffle": 3,
+    "target": "1 foe"
   },
-  "Evil Touch": {
-    "cost": 1005,
-    "effect": "40% Fear (-Crit Def, Lose turn or escape)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
+  {
+    "card": "Rangda",
+    "cost": 18,
+    "effect": "Enervation",
+    "elem": "phy",
+    "name": "Mustard Bomb",
+    "power": 110,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "All foes"
   },
-  "Exhaust Boost": {
-    "effect": "Exhaustion success rate x1.5",
-    "element": "passive",
-    "rank": 4
+  {
+    "card": "Vetala",
+    "cost": 12,
+    "effect": "1-3 hits, Exhaustion",
+    "elem": "phy",
+    "hit": 100,
+    "name": "Brain Shake",
+    "power": 80,
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
   },
-  "Fast Heal": {
-    "card": "Kaguya",
-    "effect": "Halves time to automatically recover from ailments",
-    "element": "passive",
-    "price": 70000,
-    "rank": 4
+  {
+    "card": "Pazuzu",
+    "cost": 18,
+    "effect": "Exhaustion",
+    "elem": "phy",
+    "name": "Navas Nebula",
+    "power": 110,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "All foes"
   },
-  "Fatal End": {
-    "card": "Raja Naga",
+  {
+    "card": "Archangel",
+    "cost": 9,
+    "effect": "Slience",
+    "elem": "phy",
+    "name": "Muzzle Shot",
+    "power": 60,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
+  },
+  {
+    "card": "Mithra",
     "cost": 14,
-    "damage": "Medium",
-    "effect": "20% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 250,
+    "effect": "Silence",
+    "elem": "phy",
+    "name": "Seal Bomb",
+    "power": 90,
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All foes"
+  },
+  {
+    "card": "Valkyrie",
+    "cost": 9,
+    "effect": "2 hits, Fear",
+    "elem": "phy",
+    "name": "Arm Chopper",
+    "power": 45,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
+  },
+  {
+    "card": "Ose",
+    "cost": 16,
+    "effect": "1-2 hits, Fear",
+    "elem": "phy",
+    "name": "Atom Smasher",
+    "power": 50,
     "price": 40000,
     "rank": 4,
-    "target": "One Foe"
+    "shuffle": 5,
+    "target": "All foes"
   },
-  "Fear Boost": {
-    "effect": "Fear success rate x1.5",
-    "element": "passive",
-    "rank": 4
+  {
+    "cost": 25,
+    "effect": "50% instakill",
+    "elem": "phy",
+    "name": "Pralaya",
+    "power": 220,
+    "rank": 99,
+    "target": "All foes"
   },
-  "Fire Amp": {
-    "card": "Black Frost",
-    "effect": "Fire dmg x1.5",
-    "element": "passive",
-    "price": 80000,
-    "rank": 5
+  {
+    "card": "Ukobach",
+    "cost": 1004,
+    "elem": "fir",
+    "name": "Agi",
+    "power": 40,
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
   },
-  "Fire Boost": {
-    "card": "Hua Po",
-    "effect": "Fire dmg x1.25",
-    "element": "passive",
-    "price": 18000,
-    "rank": 1
-  },
-  "Fire Break": {
-    "card": "Gdon",
-    "cost": 1015,
-    "effect": "Removes Fire resistance for 3 turns",
-    "element": "support",
+  {
+    "card": "Lamia",
+    "cost": 1008,
+    "elem": "fir",
+    "name": "Agilao",
+    "power": 100,
     "price": 15000,
     "rank": 3,
-    "target": "One Foe"
+    "shuffle": 3,
+    "target": "1 foe"
   },
-  "Firm Stance": {
-    "card": "Ongyo-Ki",
-    "effect": "Halves damage from all attacks but can never evade",
-    "element": "passive",
-    "price": 60000,
-    "rank": 7
-  },
-  "Foolish Whisper": {
-    "card": "Mada",
+  {
+    "card": "Mara",
     "cost": 1012,
-    "effect": "30% Silence",
-    "element": "ailment",
+    "elem": "fir",
+    "name": "Agidyne",
+    "power": 160,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Berith",
+    "cost": 1010,
+    "elem": "fir",
+    "name": "Maragi",
+    "power": 40,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "All foes"
+  },
+  {
+    "card": "Pyro Jack",
+    "cost": 1016,
+    "elem": "fir",
+    "name": "Maragion",
+    "power": 100,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "All foes"
+  },
+  {
+    "card": "Surt",
+    "cost": 1022,
+    "elem": "fir",
+    "name": "Maragidyne",
+    "power": 160,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "elem": "fir",
+    "name": "Ragnarok",
+    "power": 200,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "cost": 1034,
+    "elem": "fir",
+    "name": "Burning Petals",
+    "power": 200,
+    "rank": 99,
+    "target": "All foes"
+  },
+  {
+    "card": "Forneus",
+    "cost": 1004,
+    "elem": "ice",
+    "name": "Bufu",
+    "power": 40,
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Ganga",
+    "cost": 1008,
+    "elem": "ice",
+    "name": "Bufula",
+    "power": 100,
     "price": 15000,
     "rank": 3,
-    "target": "All Foes"
+    "shuffle": 3,
+    "target": "1 foe"
   },
-  "Foul Breath": {
+  {
+    "card": "Hariti",
+    "cost": 1012,
+    "elem": "ice",
+    "name": "Bufudyne",
+    "power": 160,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Jack Frost",
+    "cost": 1010,
+    "elem": "ice",
+    "name": "Mabufu",
+    "power": 40,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "All foes"
+  },
+  {
+    "card": "Genbu",
+    "cost": 1016,
+    "elem": "ice",
+    "name": "Mabufula",
+    "power": 100,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "All foes"
+  },
+  {
+    "card": "Byakko",
+    "cost": 1022,
+    "elem": "ice",
+    "name": "Mabufudyne",
+    "power": 160,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "elem": "ice",
+    "name": "Niflheim",
+    "power": 200,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "card": "Izanagi",
+    "cost": 1004,
+    "elem": "ele",
+    "name": "Zio",
+    "power": 40,
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Unicorn",
+    "cost": 1008,
+    "elem": "ele",
+    "name": "Zionga",
+    "power": 100,
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "card": "Tam Lin",
+    "cost": 1012,
+    "elem": "ele",
+    "name": "Ziodyne",
+    "power": 160,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Xiezhai",
+    "cost": 1010,
+    "elem": "ele",
+    "name": "Mazio",
+    "power": 40,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "All foes"
+  },
+  {
+    "card": "Dominion",
+    "cost": 1016,
+    "elem": "ele",
+    "name": "Mazionga",
+    "power": 100,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "All foes"
+  },
+  {
+    "card": "Kartikeya",
+    "cost": 1022,
+    "elem": "ele",
+    "name": "Maziodyne",
+    "power": 160,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "elem": "ele",
+    "name": "Thunder Reign",
+    "power": 200,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "card": "Cu Sith",
+    "cost": 1004,
+    "elem": "win",
+    "name": "Garu",
+    "power": 40,
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Kusi Mitama",
+    "cost": 1008,
+    "elem": "win",
+    "name": "Garula",
+    "power": 100,
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "card": "Garuda",
+    "cost": 1012,
+    "elem": "win",
+    "name": "Garudyne",
+    "power": 160,
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Anzu",
+    "cost": 1010,
+    "elem": "win",
+    "name": "Magaru",
+    "power": 40,
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "All foes"
+  },
+  {
+    "card": "Clotho",
+    "cost": 1016,
+    "elem": "win",
+    "name": "Magarula",
+    "power": 100,
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5,
+    "target": "All foes"
+  },
+  {
+    "card": "Jatayu",
+    "cost": 1022,
+    "elem": "win",
+    "name": "Magarudyne",
+    "power": 160,
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "elem": "win",
+    "name": "Panta Rhei",
+    "power": 200,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "card": "Principality",
+    "cost": 1008,
+    "effect": "40% instakill",
+    "elem": "lig",
+    "name": "Hama",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
+  },
+  {
+    "card": "Throne",
+    "cost": 1015,
+    "effect": "60% instakill",
+    "elem": "lig",
+    "name": "Hamaon",
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Virtue",
+    "cost": 1018,
+    "effect": "30% instakill",
+    "elem": "lig",
+    "name": "Mahama",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
+  },
+  {
+    "card": "Anubis",
+    "cost": 1034,
+    "effect": "40% instakill",
+    "elem": "lig",
+    "name": "Mahamaon",
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "cost": 1044,
+    "effect": "60% instakill",
+    "elem": "lig",
+    "name": "Samsara",
+    "rank": 99,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "effect": "Chance to halve HP",
+    "elem": "lig",
+    "name": "God's Judgment",
+    "rank": 8,
+    "target": "1 foe"
+  },
+  {
+    "card": "Lilim",
+    "cost": 1008,
+    "effect": "40% instakill",
+    "elem": "dar",
+    "name": "Mudo",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 foe"
+  },
+  {
+    "card": "Loa",
+    "cost": 1015,
+    "effect": "60% instakill",
+    "elem": "dar",
+    "name": "Mudoon",
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 foe"
+  },
+  {
+    "card": "Ippon-Datara",
+    "cost": 1018,
+    "effect": "30% instakill",
+    "elem": "dar",
+    "name": "Mamudo",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
+  },
+  {
+    "card": "Nebiros",
+    "cost": 1034,
+    "effect": "40% instakill",
+    "elem": "dar",
+    "name": "Mamudoon",
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7,
+    "target": "All foes"
+  },
+  {
+    "cost": 1044,
+    "effect": "60% instakill",
+    "elem": "dar",
+    "name": "Die for Me!",
+    "rank": 99,
+    "target": "All foes"
+  },
+  {
+    "card": "Niddhoggr",
+    "cost": 1028,
+    "effect": "Instakill if Fearful",
+    "elem": "dar",
+    "name": "Ghastly Wail",
+    "price": 50000,
+    "rank": 6,
+    "shuffle": 6,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "effect": "Chance to halve HP",
+    "elem": "dar",
+    "name": "Hell's Judgment",
+    "rank": 8,
+    "target": "1 foe"
+  },
+  {
+    "card": "Thoth",
+    "cost": 1015,
+    "elem": "alm",
+    "name": "Megido",
+    "power": 120,
+    "price": 25000,
+    "rank": 3,
+    "shuffle": 4,
+    "target": "All foes"
+  },
+  {
+    "card": "Decarabia",
+    "cost": 1024,
+    "elem": "alm",
+    "name": "Megidola",
+    "power": 180,
+    "price": 70000,
+    "rank": 6,
+    "shuffle": 8,
+    "target": "All foes"
+  },
+  {
+    "card": "Metatron",
+    "cost": 1038,
+    "elem": "alm",
+    "name": "Megidolaon",
+    "power": 210,
+    "price": 120000,
+    "rank": 8,
+    "shuffle": 10,
+    "target": "All foes"
+  },
+  {
+    "cost": 1048,
+    "elem": "alm",
+    "name": "Black Viper",
+    "power": 220,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "cost": 1055,
+    "elem": "alm",
+    "name": "Morning Star",
+    "power": 220,
+    "rank": 99,
+    "target": "All foes"
+  },
+  {
+    "card": "Kaiwan",
+    "cost": 1003,
+    "effect": "Absorbs 30 HP",
+    "elem": "alm",
+    "name": "Life Drain",
+    "price": 30000,
+    "rank": 2,
+    "shuffle": 4,
+    "target": "1 foe"
+  },
+  {
+    "card": "Succubus",
+    "cost": 1003,
+    "effect": "Absorbs 30 SP",
+    "elem": "alm",
+    "name": "Spirit Drain",
+    "price": 30000,
+    "rank": 2,
+    "shuffle": 4,
+    "target": "1 foe"
+  },
+  {
+    "cost": 1030,
+    "effect": "Chance of Down or Dizzy",
+    "elem": "alm",
+    "name": "The Man's Way",
+    "rank": 99,
+    "target": "All foes"
+  },
+  {
     "card": "Legion",
     "cost": 1008,
     "effect": "Halves ailment resistance for 3 turns",
-    "element": "almighty",
+    "elem": "alm",
+    "name": "Foul Breath",
     "price": 10000,
     "rank": 2,
-    "target": "One Foe"
+    "shuffle": 2,
+    "target": "1 foe"
   },
-  "Gale Slash": {
-    "card": "Ares",
-    "cost": 12,
-    "damage": "Light",
-    "effect": "5% crit",
-    "element": "phys",
-    "hit": 85,
-    "power": 160,
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Galgalim Eyes": {
-    "effect": "Reduces enemy to 1 HP",
-    "element": "almighty"
-  },
-  "Garu": {
-    "card": "Cu Sith",
-    "cost": 1004,
-    "damage": "Light",
-    "element": "wind",
-    "hit": 98,
-    "power": 80,
-    "price": 5000,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Garudyne": {
-    "card": "Garuda",
-    "cost": 1012,
-    "damage": "Heavy",
-    "element": "wind",
-    "hit": 98,
-    "power": 320,
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Garula": {
-    "card": "Kusi Mitama",
-    "cost": 1008,
-    "damage": "Medium",
-    "element": "wind",
-    "hit": 98,
-    "power": 200,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Ghastly Wail": {
-    "card": "Niddhoggr",
-    "cost": 1028,
-    "effect": "Insta-kill to Fearful foes",
-    "element": "dark",
-    "price": 50000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Gigantic Fist": {
-    "card": "Cerberus",
-    "cost": 16,
-    "damage": "Heavy",
-    "effect": "25% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 560,
-    "price": 60000,
-    "rank": 6,
-    "target": "One Foe"
-  },
-  "God's Hand": {
-    "card": "Ardha",
-    "cost": 22,
-    "damage": "Severe",
-    "effect": "15% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 1600,
-    "price": 150000,
-    "rank": 8,
-    "target": "One Foe"
-  },
-  "God's Judgment": {
-    "cost": 1048,
-    "effect": "Halves HP",
-    "element": "light",
-    "rank": 8,
-    "target": "All Foes"
-  },
-  "Golden Right": {
-    "effect": "Deals medium Phys damage to 1 foe with a chance of Fear",
-    "element": "phys"
-  },
-  "Green Wall": {
-    "card": "Ananta",
-    "cost": 1018,
-    "effect": "Gives Wind resistance for 3 turns",
-    "element": "support",
-    "price": 20000,
-    "rank": 4,
-    "target": "One Ally"
-  },
-  "Growth 1": {
-    "card": "Phoenix",
-    "effect": "Gains 25% EXP when not equipped",
-    "element": "passive",
-    "price": 15000,
-    "rank": 2
-  },
-  "Growth 2": {
-    "card": "Shiki-Ouji",
-    "effect": "Gains 50% EXP when not equipped",
-    "element": "passive",
-    "price": 40000,
-    "rank": 4
-  },
-  "Growth 3": {
-    "card": "Saturnus",
-    "effect": "Gains 100% EXP when not equipped",
-    "element": "passive",
-    "price": 70000,
-    "rank": 6
-  },
-  "Hama": {
-    "card": "Principality",
-    "cost": 1008,
-    "effect": "40% insta-kill",
-    "element": "light",
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Hama Boost": {
-    "card": "Angel",
-    "effect": "Light insta-kill success rate x1.5",
-    "element": "passive",
-    "price": 50000,
-    "rank": 5
-  },
-  "Hamaon": {
-    "card": "Throne",
-    "cost": 1015,
-    "effect": "60% insta-kill",
-    "element": "light",
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Hassou Tobi": {
-    "cost": 25,
-    "damage": "Light",
-    "effect": "5% crit, x8 hits",
-    "element": "phys",
-    "hit": 75,
-    "power": 120,
-    "target": "All Foes"
-  },
-  "Heat Riser": {
-    "card": "Magatsu-Izanagi",
-    "cost": 1030,
-    "effect": "Tarukaja + Rakukaja + Sukukaja",
-    "element": "support",
-    "price": 200000,
-    "target": "One Ally"
-  },
-  "Heat Wave": {
-    "card": "Yatsufusa",
-    "cost": 16,
-    "damage": "Medium",
-    "effect": "5% crit",
-    "element": "phys",
-    "hit": 75,
-    "power": 250,
-    "price": 40000,
-    "rank": 5,
-    "target": "All Foes"
-  },
-  "Heaven's Blade": {
-    "cost": 19,
-    "damage": "Heavy",
-    "effect": "30% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 460,
-    "target": "One Foe"
-  },
-  "Hell's Judgment": {
-    "cost": 1048,
-    "effect": "Halves HP",
-    "element": "dark",
-    "rank": 8,
-    "target": "All Foes"
-  },
-  "Herculean Strike": {
-    "card": "Flauros",
-    "cost": 16,
-    "damage": "Medium",
-    "effect": "5% crit",
-    "element": "phys",
-    "hit": 80,
-    "power": 180,
-    "price": 40000,
-    "rank": 5,
-    "target": "All Foes"
-  },
-  "High Counter": {
-    "card": "Uriel",
-    "effect": "20% chance to repel Phys attack",
-    "element": "passive",
-    "price": 50000,
-    "rank": 5
-  },
-  "Hysterical Slap": {
-    "card": "Orobas",
-    "cost": 9,
-    "damage": "Light",
-    "effect": "5% crit, x1-2 hits, Rage",
-    "element": "phys",
-    "hit": 90,
-    "power": 100,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Ice Amp": {
-    "card": "Skadi",
-    "effect": "Ice dmg x1.5",
-    "element": "passive",
-    "price": 80000,
-    "rank": 5
-  },
-  "Ice Boost": {
-    "card": "King Frost",
-    "effect": "Ice dmg x1.25",
-    "element": "passive",
-    "price": 18000,
-    "rank": 1
-  },
-  "Ice Break": {
-    "card": "Lakshmi",
-    "cost": 1015,
-    "effect": "Removes Ice resistance for 3 turns",
-    "element": "support",
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Insta-Heal": {
-    "card": "Norn",
-    "effect": "Automatically recover from ailments in 1 turn",
-    "element": "passive",
-    "price": 180000,
-    "rank": 7
-  },
-  "Invigorate 1": {
-    "card": "Ame-no-Uzume",
-    "effect": "Recover 3 SP per turn",
-    "element": "passive",
-    "price": 20000,
-    "rank": 3
-  },
-  "Invigorate 2": {
-    "card": "Barong",
-    "effect": "Recover 5 SP per turn",
-    "element": "passive",
-    "price": 60000,
-    "rank": 5
-  },
-  "Invigorate 3": {
-    "card": "Satan",
-    "effect": "Recover 7 SP per turn",
-    "element": "passive",
-    "price": 90000,
-    "rank": 6
-  },
-  "Judgement": {
-    "effect": "Reduces enemy to 1 HP",
-    "element": "light"
-  },
-  "Kill Rush": {
-    "card": "Titan",
-    "cost": 10,
-    "damage": "Light",
-    "effect": "10% crit, x1-3 hits",
-    "element": "phys",
-    "hit": 90,
-    "power": 100,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Last Resort": {
-    "effect": "Kills self and deals medium Almighty damage to everyone",
-    "element": "almighty"
-  },
-  "Life Drain": {
-    "card": "Kaiwan",
-    "cost": 1003,
-    "effect": "Drains 30 HP",
-    "element": "almighty",
-    "price": 30000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Life Leech": {
-    "effect": "Drains 100 HP from 1 foe",
-    "element": "almighty"
-  },
-  "Mabufu": {
-    "card": "Jack Frost",
-    "cost": 1010,
-    "damage": "Light",
-    "element": "ice",
-    "hit": 95,
-    "power": 80,
-    "price": 10000,
-    "rank": 2,
-    "target": "All Foes"
-  },
-  "Mabufudyne": {
-    "card": "Byakko",
-    "cost": 1022,
-    "damage": "Heavy",
-    "element": "ice",
-    "hit": 95,
-    "power": 320,
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Mabufula": {
-    "card": "Genbu",
-    "cost": 1016,
-    "damage": "Medium",
-    "element": "ice",
-    "hit": 95,
-    "power": 200,
-    "price": 40000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Magaru": {
-    "card": "Anzu",
-    "cost": 1010,
-    "damage": "Light",
-    "element": "wind",
-    "hit": 95,
-    "power": 80,
-    "price": 10000,
-    "rank": 2,
-    "target": "All Foes"
-  },
-  "Magarudyne": {
-    "card": "Jatayu",
-    "cost": 1022,
-    "damage": "Heavy",
-    "element": "wind",
-    "hit": 95,
-    "power": 320,
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Magarula": {
-    "card": "Clotho",
-    "cost": 1016,
-    "damage": "Medium",
-    "element": "wind",
-    "hit": 95,
-    "power": 200,
-    "price": 40000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Mahama": {
-    "card": "Virtue",
-    "cost": 1018,
-    "effect": "30% insta-kill",
-    "element": "light",
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Mahamaon": {
-    "card": "Anubis",
-    "cost": 1034,
-    "effect": "40% insta-kill",
-    "element": "light",
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Makajam": {
-    "cost": 1005,
-    "effect": "40% Silence (Cannot use skills or change persona)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Makara Break": {
-    "card": "Lachesis",
-    "cost": 1018,
-    "effect": "Removes Makarakarn",
-    "element": "support",
-    "price": 70000,
-    "rank": 7,
-    "target": "All Foes"
-  },
-  "Makarakarn": {
-    "card": "Lilith",
-    "cost": 1036,
-    "effect": "Repels next Magic attack",
-    "element": "support",
-    "price": 80000,
-    "rank": 7,
-    "target": "One Ally"
-  },
-  "Mamudo": {
-    "card": "Ippon-Datara",
-    "cost": 1018,
-    "effect": "30% insta-kill",
-    "element": "dark",
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Mamudoon": {
-    "card": "Nebiros",
-    "cost": 1034,
-    "effect": "40% insta-kill",
-    "element": "dark",
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Maragi": {
-    "card": "Berith",
-    "cost": 1010,
-    "damage": "Light",
-    "element": "fire",
-    "hit": 95,
-    "power": 80,
-    "price": 10000,
-    "rank": 2,
-    "target": "All Foes"
-  },
-  "Maragidyne": {
-    "card": "Surt",
-    "cost": 1022,
-    "damage": "Heavy",
-    "element": "fire",
-    "hit": 95,
-    "power": 320,
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Maragion": {
-    "card": "Pyro Jack",
-    "cost": 1016,
-    "damage": "Medium",
-    "element": "fire",
-    "hit": 95,
-    "power": 200,
-    "price": 40000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Marakukaja": {
-    "card": "Parvati",
-    "cost": 1024,
-    "effect": "Raises DEF for 3 turns",
-    "element": "support",
-    "price": 35000,
-    "rank": 4,
-    "target": "All Allies"
-  },
-  "Marakunda": {
-    "card": "Belphegor",
-    "cost": 1024,
-    "effect": "Lowers DEF for 3 turns",
-    "element": "support",
-    "price": 25000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Masukukaja": {
-    "card": "Quetzalcoatl",
-    "cost": 1024,
-    "effect": "Raises HIT/EVA for 3 turns",
-    "element": "support",
-    "price": 35000,
-    "rank": 4,
-    "target": "All Allies"
-  },
-  "Masukunda": {
-    "card": "Kurama Tengu",
-    "cost": 1024,
-    "effect": "Lowers HIT/EVA for 3 turns",
-    "element": "support",
-    "price": 25000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Matarukaja": {
-    "card": "Kushinada-Hime",
-    "cost": 1024,
-    "effect": "Raises ATK for 3 turns",
-    "element": "support",
-    "price": 35000,
-    "rank": 4,
-    "target": "All Allies"
-  },
-  "Matarunda": {
-    "card": "Seiryu",
-    "cost": 1024,
-    "effect": "Lowers ATK for 3 turns",
-    "element": "support",
-    "price": 25000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Mazio": {
-    "card": "Xiezhai",
-    "cost": 1010,
-    "damage": "Light",
-    "element": "elec",
-    "hit": 95,
-    "power": 80,
-    "price": 10000,
-    "rank": 2,
-    "target": "All Foes"
-  },
-  "Maziodyne": {
-    "card": "Kartikeya",
-    "cost": 1022,
-    "damage": "Heavy",
-    "element": "elec",
-    "hit": 95,
-    "power": 320,
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Mazionga": {
-    "card": "Dominion",
-    "cost": 1016,
-    "damage": "Medium",
-    "element": "elec",
-    "hit": 95,
-    "power": 200,
-    "price": 40000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Me Patra": {
-    "card": "Apsaras",
-    "cost": 1006,
-    "effect": "Cures Rage, Fear, and Confusion",
-    "element": "recovery",
-    "price": 15000,
-    "rank": 3,
-    "target": "All Allies"
-  },
-  "Media": {
-    "card": "Sarasvati",
-    "cost": 1007,
-    "effect": "Light HP restore",
-    "element": "recovery",
-    "price": 20000,
-    "rank": 3,
-    "target": "All Allies"
-  },
-  "Mediarahan": {
-    "card": "Ishtar",
-    "cost": 1030,
-    "effect": "Full HP restore",
-    "element": "recovery",
-    "price": 100000,
-    "rank": 7,
-    "target": "All Allies"
-  },
-  "Mediarama": {
-    "card": "Undine",
-    "cost": 1012,
-    "effect": "Medium HP restore",
-    "element": "recovery",
-    "price": 70000,
-    "rank": 5,
-    "target": "All Allies"
-  },
-  "Megido": {
-    "card": "Thoth",
-    "cost": 1018,
-    "damage": "Medium",
-    "element": "almighty",
-    "hit": 95,
-    "power": 240,
-    "price": 25000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Megidola": {
-    "card": "Decarabia",
-    "cost": 1032,
-    "damage": "Heavy",
-    "element": "almighty",
-    "hit": 95,
-    "power": 360,
-    "price": 70000,
-    "rank": 6,
-    "target": "All Foes"
-  },
-  "Megidolaon": {
-    "card": "Metatron",
-    "cost": 1060,
-    "damage": "Severe",
-    "element": "almighty",
-    "hit": 95,
-    "power": 420,
-    "price": 120000,
-    "rank": 8,
-    "target": "All Foes"
-  },
-  "Mighty Swing": {
-    "card": "Hanuman",
-    "cost": 14,
-    "damage": "Medium",
-    "effect": "30% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 270,
-    "price": 40000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Mind Charge": {
-    "card": "Alice",
-    "cost": 1015,
-    "effect": "Next Magic attack x2.5 dmg",
-    "element": "support",
-    "price": 90000,
-    "rank": 6,
-    "target": "Self"
-  },
-  "Mind Slice": {
-    "card": "Pale Rider",
-    "cost": 14,
-    "damage": "Medium",
-    "effect": "5% crit, Confusion",
-    "element": "phys",
-    "hit": 80,
-    "power": 180,
-    "price": 25000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Morning Star": {
-    "cost": 1072,
-    "damage": "Massive",
-    "element": "almighty",
-    "hit": 95,
-    "power": 440,
-    "target": "All Foes"
-  },
-  "Mudo": {
-    "card": "Lilim",
-    "cost": 1008,
-    "effect": "40% insta-kill",
-    "element": "dark",
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Mudo Boost": {
-    "card": "Mot",
-    "effect": "Dark insta-kill success rate x1.5",
-    "element": "passive",
-    "price": 50000,
-    "rank": 5
-  },
-  "Mudoon": {
-    "card": "Loa",
-    "cost": 1015,
-    "effect": "60% insta-kill",
-    "element": "dark",
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Mustard Bomb": {
-    "card": "Rangda",
-    "cost": 16,
-    "damage": "Medium",
-    "effect": "5% crit, Enervation",
-    "element": "phys",
-    "hit": 80,
-    "power": 200,
-    "price": 50000,
-    "rank": 5,
-    "target": "All Foes"
-  },
-  "Mutudi": {
-    "card": "Shuffle",
-    "cost": 1003,
-    "effect": "Cures Silence",
-    "element": "recovery",
-    "price": 5000,
-    "rank": 2,
-    "target": "One Ally"
-  },
-  "Muzzle Shot": {
-    "card": "Archangel",
-    "cost": 9,
-    "damage": "Light",
-    "effect": "5% crit, Slience",
-    "element": "phys",
-    "hit": 90,
-    "power": 120,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Myriad Arrows": {
-    "card": "Mahakala",
-    "cost": 22,
-    "damage": "Heavy",
-    "effect": "5% crit, x1-3 hits",
-    "element": "phys",
-    "hit": 85,
-    "power": 150,
-    "price": 70000,
-    "rank": 7,
-    "target": "All Foes"
-  },
-  "Navas Nebula": {
-    "card": "Pazuzu",
-    "cost": 18,
-    "damage": "Medium",
-    "effect": "5% crit, Exhaustion",
-    "element": "phys",
-    "hit": 80,
-    "power": 200,
-    "price": 50000,
-    "rank": 5,
-    "target": "All Foes"
-  },
-  "Nervundi": {
-    "card": "Shuffle",
-    "cost": 1003,
-    "effect": "Cures Exhaustion and Enervation",
-    "element": "recovery",
-    "price": 10000,
-    "rank": 2,
-    "target": "One Ally"
-  },
-  "Niflheim": {
-    "cost": 1048,
-    "damage": "Severe",
-    "element": "ice",
-    "hit": 98,
-    "power": 400,
-    "target": "One Foe"
-  },
-  "Null Confuse": {
-    "effect": "Immune to Confusion",
-    "element": "passive",
-    "rank": 4
-  },
-  "Null Dark": {
-    "effect": "Nullifies Dark attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Null Dizzy": {
-    "card": "Raphael",
-    "effect": "Immune to Dizzy",
-    "element": "passive",
-    "price": 25000,
-    "rank": 4
-  },
-  "Null Elec": {
-    "effect": "Nullifies Elec attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Null Enervate": {
-    "effect": "Immune to Enervation",
-    "element": "passive",
-    "rank": 4
-  },
-  "Null Exhaust": {
-    "effect": "Immune to Exhaustion",
-    "element": "passive",
-    "rank": 4
-  },
-  "Null Fear": {
-    "effect": "Immune to Fear",
-    "element": "passive",
-    "rank": 4
-  },
-  "Null Fire": {
-    "effect": "Nullifies Fire attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Null Ice": {
-    "effect": "Nullifies Ice attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Null Light": {
-    "effect": "Nullifies Light attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Null Mute": {
-    "effect": "Immune to Silence",
-    "element": "passive",
-    "rank": 4
-  },
-  "Null Physical": {
-    "effect": "Nullifies Phys attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Null Poison": {
-    "card": "Shuffle",
-    "effect": "Immune to Poison",
-    "element": "passive",
-    "price": 25000,
-    "rank": 4
-  },
-  "Null Rage": {
-    "effect": "Immune to Rage",
-    "element": "passive",
-    "rank": 4
-  },
-  "Null Wind": {
-    "effect": "Nullifies Wind attacks",
-    "element": "passive",
-    "rank": 6
-  },
-  "Old One": {
-    "card": "Alraune",
-    "cost": 1012,
-    "effect": "30% Enervation",
-    "element": "ailment",
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Panta Rhei": {
-    "cost": 1048,
-    "damage": "Severe",
-    "element": "wind",
-    "hit": 98,
-    "power": 400,
-    "target": "One Foe"
-  },
-  "Patra": {
-    "card": "Shuffle",
-    "cost": 1003,
-    "effect": "Cures Rage, Fear, and Confusion",
-    "element": "recovery",
-    "price": 5000,
-    "rank": 1,
-    "target": "One Ally"
-  },
-  "Poisma": {
-    "cost": 1005,
-    "effect": "40% Poison (-5% HP per turn, -50% St)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Poison Arrow": {
-    "card": "Hitokoto-Nushi",
-    "cost": 14,
-    "damage": "Medium",
-    "effect": "5% crit, Poison",
-    "element": "phys",
-    "hit": 85,
-    "power": 260,
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Poison Boost": {
-    "effect": "Poison success rate x1.5",
-    "element": "passive",
-    "rank": 4
-  },
-  "Poison Mist": {
-    "card": "Omoikane",
-    "cost": 1012,
-    "effect": "30% Poison",
-    "element": "ailment",
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Poison Skewer": {
-    "card": "Eligor",
-    "cost": 9,
-    "damage": "Light",
-    "effect": "5% crit, Poison",
-    "element": "phys",
-    "hit": 90,
-    "power": 120,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Posumudi": {
-    "card": "Shuffle",
-    "cost": 1003,
-    "effect": "Cures Poison",
-    "element": "recovery",
-    "price": 10000,
-    "rank": 2,
-    "target": "One Ally"
-  },
-  "Power Charge": {
-    "card": "Yoshitsune",
-    "cost": 1015,
-    "effect": "Next Phys attack x2.5 dmg",
-    "element": "support",
-    "price": 90000,
-    "rank": 6,
-    "target": "Self"
-  },
-  "Power Slash": {
-    "card": "Power",
-    "cost": 14,
-    "damage": "Medium",
-    "effect": "25% crit",
-    "element": "phys",
-    "hit": 80,
-    "power": 240,
-    "price": 25000,
-    "rank": 4,
-    "target": "One Foe"
-  },
-  "Pralaya": {
-    "cost": 25,
-    "damage": "Severe",
-    "effect": "5% crit, 50% insta-kill",
-    "element": "phys",
-    "hit": 80,
-    "power": 2200,
-    "target": "All Foes"
-  },
-  "Primal Force": {
-    "card": "Beelzebub",
-    "cost": 20,
-    "damage": "Severe",
-    "effect": "25% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 2200,
-    "price": 150000,
-    "rank": 8,
-    "target": "One Foe"
-  },
-  "Pulinpa": {
-    "cost": 1005,
-    "effect": "40% Confusion (Lose turn, attack ally, or waste 3% money)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Rage Boost": {
-    "effect": "Rage success rate x1.5",
-    "element": "passive",
-    "rank": 4
-  },
-  "Ragnarok": {
-    "cost": 1048,
-    "damage": "Severe",
-    "element": "fire",
-    "hit": 98,
-    "power": 400,
-    "target": "One Foe"
-  },
-  "Rainy Death": {
-    "card": "Siegfried",
-    "cost": 20,
-    "damage": "Heavy",
-    "effect": "35% crit",
-    "element": "phys",
-    "hit": 85,
-    "power": 350,
-    "price": 70000,
-    "rank": 7,
-    "target": "One Foe"
-  },
-  "Rakukaja": {
-    "card": "Shiisaa",
-    "cost": 1012,
-    "effect": "Raises DEF for 3 turns",
-    "element": "support",
-    "price": 5000,
-    "rank": 1,
-    "target": "One Ally"
-  },
-  "Rakunda": {
-    "card": "Nata Taishi",
-    "cost": 1012,
-    "effect": "Lowers DEF for 3 turns",
-    "element": "support",
-    "price": 5000,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Rampage": {
-    "card": "Matador",
-    "cost": 12,
-    "damage": "Light",
-    "effect": "5% crit, x1-3 hits",
-    "element": "phys",
-    "hit": 75,
-    "power": 80,
-    "price": 15000,
-    "rank": 3,
-    "target": "All Foes"
-  },
-  "Re Patra": {
-    "card": "Shuffle",
-    "cost": 1003,
-    "effect": "Cures Down and Dizzy",
-    "element": "recovery",
-    "price": 10000,
-    "rank": 2,
-    "target": "One Ally"
-  },
-  "Rebellion": {
-    "card": "Shuffle",
-    "cost": 1005,
-    "effect": "Raises crit rate for 3 turns",
-    "element": "support",
-    "price": 10000,
-    "rank": 2,
-    "target": "One Ally"
-  },
-  "Recarm": {
-    "card": "Queen Mab",
-    "cost": 1008,
-    "effect": "Revive with 50% HP",
-    "element": "recovery",
-    "price": 20000,
-    "rank": 2,
-    "target": "All Allies"
-  },
-  "Recarmdra": {
-    "effect": "Sacrifices remaining HP to heal all allies",
-    "element": "recovery"
-  },
-  "Red Wall": {
-    "card": "Yamata-no-Orochi",
-    "cost": 1018,
-    "effect": "Gives Fire resistance for 3 turns",
-    "element": "support",
-    "price": 20000,
-    "rank": 4,
-    "target": "One Ally"
-  },
-  "Regenerate 1": {
-    "card": "Sylph",
-    "effect": "Recover 2% HP per turn",
-    "element": "passive",
-    "price": 20000,
-    "rank": 3
-  },
-  "Regenerate 2": {
-    "card": "Titania",
-    "effect": "Recover 4% HP per turn",
-    "element": "passive",
-    "price": 60000,
-    "rank": 5
-  },
-  "Regenerate 3": {
-    "card": "Vishnu",
-    "effect": "Recover 6% HP per turn",
-    "element": "passive",
-    "price": 90000,
-    "rank": 6
-  },
-  "Repel Dark": {
-    "card": "Michael",
-    "effect": "Repels Dark attacks",
-    "element": "passive",
-    "price": 80000,
-    "rank": 7
-  },
-  "Repel Elec": {
-    "effect": "Repels Elec attacks",
-    "element": "passive",
-    "rank": 7
-  },
-  "Repel Fire": {
-    "effect": "Repels Fire attacks",
-    "element": "passive",
-    "rank": 7
-  },
-  "Repel Ice": {
-    "effect": "Repels Ice attacks",
-    "element": "passive",
-    "rank": 7
-  },
-  "Repel Light": {
-    "card": "Yurlungur",
-    "effect": "Repels Light attacks",
-    "element": "passive",
-    "price": 80000,
-    "rank": 7
-  },
-  "Repel Physical": {
-    "effect": "Repels Phys attacks",
-    "element": "passive",
-    "rank": 7
-  },
-  "Repel Wind": {
-    "effect": "Repels Wind attacks",
-    "element": "passive",
-    "rank": 7
-  },
-  "Resist Confuse": {
-    "effect": "Halves susceptibility to Confusion",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Dark": {
-    "effect": "Doubles evasion against Dark attacks",
-    "element": "passive",
-    "rank": 5
-  },
-  "Resist Dizzy": {
-    "effect": "Halves susceptibility to Dizzy",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Elec": {
-    "card": "Kumbhanda",
-    "effect": "Halves damage from Elec attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 4
-  },
-  "Resist Enervate": {
-    "effect": "Halves susceptibility to Enervation",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Exhaust": {
-    "effect": "Halves susceptibility to Exhaustion",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Fear": {
-    "effect": "Halves susceptibility to Fear",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Fire": {
-    "card": "Mother Harlot",
-    "effect": "Halves damage from Fire attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 4
-  },
-  "Resist Ice": {
-    "card": "Suzaku",
-    "effect": "Halves damage from Ice attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 4
-  },
-  "Resist Light": {
-    "effect": "Doubles evasion against Light attacks",
-    "element": "passive",
-    "rank": 5
-  },
-  "Resist Mute": {
-    "effect": "Halves susceptibility to Silence",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Physical": {
-    "card": "Jinn",
-    "effect": "Halves damage from Phys attacks",
-    "element": "passive",
-    "price": 70000,
-    "rank": 4
-  },
-  "Resist Poison": {
-    "effect": "Halves susceptibility to Poison",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Rage": {
-    "effect": "Halves susceptibility to Rage",
-    "element": "passive",
-    "rank": 2
-  },
-  "Resist Wind": {
-    "card": "Chernobog",
-    "effect": "Halves damage from Wind attacks",
-    "element": "passive",
-    "price": 50000,
-    "rank": 4
-  },
-  "Revolution": {
-    "card": "Kali",
-    "cost": 1005,
-    "effect": "Greatly raises crit rate for 3 turns",
-    "element": "support",
-    "price": 25000,
-    "rank": 4,
-    "target": "Universal"
-  },
-  "Salvation": {
-    "card": "Helel",
-    "cost": 1040,
-    "effect": "Full HP restore, Cures all ailments",
-    "element": "recovery",
-    "price": 120000,
-    "rank": 8,
-    "target": "All Allies"
-  },
-  "Samarecarm": {
-    "card": "Kohryu",
-    "cost": 1018,
-    "effect": "Revive with 100% HP",
-    "element": "recovery",
-    "price": 60000,
-    "rank": 5,
-    "target": "One Ally"
-  },
-  "Samsara": {
-    "cost": 1044,
-    "effect": "60% insta-kill",
-    "element": "light",
-    "target": "All Foes"
-  },
-  "Seal Bomb": {
-    "card": "Mithra",
-    "cost": 14,
-    "damage": "Medium",
-    "effect": "5% crit, Silence",
-    "element": "phys",
-    "hit": 80,
-    "power": 180,
-    "price": 25000,
-    "rank": 4,
-    "target": "All Foes"
-  },
-  "Sharp Student": {
-    "card": "Loki",
-    "effect": "Halves crit rate of damage received",
-    "element": "passive",
-    "price": 5000,
-    "rank": 1
-  },
-  "Silence Boost": {
-    "effect": "Silence success rate x1.5",
-    "element": "passive",
-    "rank": 4
-  },
-  "Single Shot": {
-    "card": "Obariyon",
-    "cost": 8,
-    "damage": "Light",
-    "effect": "25% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 170,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Skewer": {
-    "cost": 5,
-    "damage": "Light",
-    "effect": "20% crit",
-    "element": "phys",
-    "hit": 85,
-    "power": 140,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Skull Cracker": {
-    "card": "Sandman",
-    "cost": 9,
-    "damage": "Light",
-    "effect": "5% crit, Confusion",
-    "element": "phys",
-    "hit": 90,
-    "power": 120,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Sonic Punch": {
-    "card": "Shuffle",
-    "cost": 8,
-    "damage": "Light",
-    "effect": "25% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 150,
-    "price": 10000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Soul Break": {
-    "cost": 1005,
-    "effect": "40% Exhaustion (-10% SP per turn)",
-    "element": "ailment",
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Spell Master": {
-    "card": "Shiva",
-    "effect": "Halves all SP costs",
-    "element": "passive",
-    "price": 120000,
-    "rank": 7
-  },
-  "Spirit Drain": {
-    "card": "Succubus",
-    "cost": 1003,
-    "effect": "Drains 30 SP",
-    "element": "almighty",
-    "price": 30000,
-    "rank": 2,
-    "target": "One Foe"
-  },
-  "Spirit Leech": {
-    "effect": "Drains 100 SP from 1 foe",
-    "element": "almighty"
-  },
-  "Stagnant Air": {
+  {
     "card": "Baal Zebul",
     "cost": 1005,
     "effect": "Halves ailment resistance for 3 turns",
-    "element": "almighty",
+    "elem": "alm",
+    "name": "Stagnant Air",
     "price": 25000,
     "rank": 4,
+    "shuffle": 4,
     "target": "Universal"
   },
-  "Sukukaja": {
-    "card": "Ghoul",
-    "cost": 1012,
-    "effect": "Raises HIT/EVA for 3 turns",
-    "element": "support",
-    "price": 5000,
+  {
+    "cost": 1005,
+    "effect": "40% Poison",
+    "elem": "ail",
+    "name": "Poisma",
     "rank": 1,
-    "target": "One Ally"
+    "target": "1 foe"
   },
-  "Sukunda": {
-    "card": "Yomotsu-Shikome",
+  {
+    "card": "Omoikane",
     "cost": 1012,
-    "effect": "Lowers HIT/EVA for 3 turns",
-    "element": "support",
-    "price": 5000,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Survive Dark": {
-    "card": "Gabriel",
-    "effect": "50% chance to endure Dark attacks",
-    "element": "passive",
-    "price": 40000,
-    "rank": 4
-  },
-  "Survive Light": {
-    "card": "Samael",
-    "effect": "50% chance to endure Light attacks",
-    "element": "passive",
-    "price": 40000,
-    "rank": 4
-  },
-  "Swift Strike": {
-    "card": "Yaksini",
-    "cost": 12,
-    "damage": "Light",
-    "effect": "5% crit, x1-2 hits",
-    "element": "phys",
-    "hit": 80,
-    "power": 130,
+    "effect": "30% Poison",
+    "elem": "ail",
+    "name": "Poison Mist",
     "price": 15000,
     "rank": 3,
-    "target": "All Foes"
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Tarukaja": {
-    "card": "Obariyon",
-    "cost": 1012,
-    "effect": "Raises ATK for 3 turns",
-    "element": "support",
-    "price": 5000,
+  {
+    "cost": 1005,
+    "effect": "40% Confusion",
+    "elem": "ail",
+    "name": "Pulinpa",
     "rank": 1,
-    "target": "One Ally"
+    "target": "1 foe"
   },
-  "Tarunda": {
-    "card": "Slime",
-    "cost": 1012,
-    "effect": "Lowers ATK for 3 turns",
-    "element": "support",
-    "price": 5000,
-    "rank": 1,
-    "target": "One Foe"
-  },
-  "Tempest Slash": {
-    "card": "Masakado",
-    "cost": 15,
-    "damage": "Heavy",
-    "effect": "10% crit, x1-2 hits",
-    "element": "phys",
-    "hit": 85,
-    "power": 180,
-    "price": 60000,
-    "rank": 6,
-    "target": "One Foe"
-  },
-  "Tentarafoo": {
+  {
     "card": "Leanan Sidhe",
     "cost": 1012,
     "effect": "30% Confusion",
-    "element": "ailment",
+    "elem": "ail",
+    "name": "Tentarafoo",
     "price": 15000,
     "rank": 3,
-    "target": "All Foes"
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Tetra Break": {
-    "card": "Sui-Ki",
-    "cost": 1018,
-    "effect": "Removes Tetrakarn",
-    "element": "support",
-    "price": 70000,
-    "rank": 7,
-    "target": "All Foes"
-  },
-  "Tetraja": {
-    "card": "Girimehkala",
-    "cost": 1024,
-    "effect": "Nullifies next insta-kill attack",
-    "element": "support",
-    "price": 60000,
-    "rank": 5,
-    "target": "One Ally"
-  },
-  "Tetrakarn": {
-    "card": "Arahabaki",
-    "cost": 1036,
-    "effect": "Repels next Phys attack",
-    "element": "support",
-    "price": 80000,
-    "rank": 7,
-    "target": "One Ally"
-  },
-  "Thunder Reign": {
-    "cost": 1048,
-    "damage": "Severe",
-    "element": "elec",
-    "hit": 98,
-    "power": 400,
-    "target": "One Foe"
-  },
-  "Torrent Shot": {
-    "card": "Taotie",
-    "cost": 12,
-    "damage": "Medium",
-    "effect": "8% crit, x2-4 hits",
-    "element": "phys",
-    "hit": 90,
-    "power": 90,
-    "price": 50000,
-    "rank": 5,
-    "target": "One Foe"
-  },
-  "Traesto": {
-    "card": "Shuffle",
-    "cost": 1018,
-    "effect": "Instant escape from dungeon",
-    "element": "support",
-    "price": 6000,
+  {
+    "cost": 1005,
+    "effect": "40% Rage",
+    "elem": "ail",
+    "name": "Balzac",
     "rank": 1,
-    "target": "All Allies"
+    "target": "1 foe"
   },
-  "Trafuri": {
-    "card": "Shuffle",
-    "cost": 1024,
-    "effect": "Instant escape from battle",
-    "element": "support",
-    "price": 8000,
-    "rank": 3,
-    "target": "All Allies"
-  },
-  "Twin Shot": {
-    "card": "Shuffle",
-    "cost": 10,
-    "damage": "Light",
-    "effect": "10% crit, x2 hits",
-    "element": "phys",
-    "hit": 90,
-    "power": 110,
-    "price": 15000,
-    "rank": 3,
-    "target": "One Foe"
-  },
-  "Unshaken Will": {
-    "card": "Asura",
-    "effect": "Immune to all mental ailments",
-    "element": "passive",
-    "price": 300000
-  },
-  "Valiant Dance": {
+  {
     "card": "Mothman",
     "cost": 1012,
     "effect": "30% Rage",
-    "element": "ailment",
+    "elem": "ail",
+    "name": "Valiant Dance",
     "price": 15000,
     "rank": 3,
-    "target": "All Foes"
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Vicious Strike": {
-    "card": "Cybele",
-    "cost": 18,
-    "damage": "Heavy",
-    "effect": "5% crit",
-    "element": "phys",
-    "hit": 90,
-    "power": 280,
-    "price": 50000,
-    "rank": 6,
-    "target": "All Foes"
+  {
+    "cost": 1005,
+    "effect": "40% Silence",
+    "elem": "ail",
+    "name": "Makajam",
+    "rank": 1,
+    "target": "1 foe"
   },
-  "Victory Cry": {
-    "card": "Izanagi-no-Okami",
-    "effect": "Recover 100% HP and SP after battle",
-    "element": "passive",
-    "price": 500000,
-    "rank": 7
+  {
+    "card": "Mada",
+    "cost": 1012,
+    "effect": "30% Silence",
+    "elem": "ail",
+    "name": "Foolish Whisper",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Vile Assault": {
-    "card": "Kin-Ki",
-    "cost": 18,
-    "damage": "Heavy",
-    "effect": "5% crit, Dmg x1.5 on Downed foes",
-    "element": "phys",
-    "hit": 95,
-    "power": 700,
-    "price": 70000,
-    "rank": 6,
-    "target": "One Foe"
+  {
+    "cost": 1005,
+    "effect": "40% Fear",
+    "elem": "ail",
+    "name": "Evil Touch",
+    "rank": 1,
+    "target": "1 foe"
   },
-  "Virus Wave": {
-    "card": "Tzitzimitl",
-    "cost": 16,
-    "damage": "Heavy",
-    "effect": "5% crit, Poison",
-    "element": "phys",
-    "hit": 80,
-    "power": 180,
-    "price": 60000,
-    "rank": 6,
-    "target": "All Foes"
+  {
+    "card": "Incubus",
+    "cost": 1012,
+    "effect": "30% Fear",
+    "elem": "ail",
+    "name": "Evil Smile",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
   },
-  "Vorpal Blade": {
-    "card": "Zaou-Gongen",
-    "cost": 25,
-    "damage": "Heavy",
-    "effect": "5% crit",
-    "element": "phys",
-    "hit": 80,
-    "power": 400,
-    "price": 150000,
-    "rank": 8,
-    "target": "All Foes"
+  {
+    "cost": 1005,
+    "effect": "40% Enervation",
+    "elem": "ail",
+    "name": "Enervation",
+    "rank": 1,
+    "target": "1 foe"
   },
-  "White Wall": {
-    "card": "Cu Chulainn",
+  {
+    "card": "Alraune",
+    "cost": 1012,
+    "effect": "30% Enervation",
+    "elem": "ail",
+    "name": "Old One",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
+  },
+  {
+    "cost": 1005,
+    "effect": "40% Exhaustion",
+    "elem": "ail",
+    "name": "Soul Break",
+    "rank": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Narcissus",
+    "cost": 1012,
+    "effect": "30% Exhaustion",
+    "elem": "ail",
+    "name": "Anima Freeze",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All foes"
+  },
+  {
+    "card": "Pixie",
+    "cost": 1003,
+    "effect": "Light HP restore to one ally",
+    "elem": "rec",
+    "name": "Dia",
+    "price": 7000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 ally"
+  },
+  {
+    "card": "Nigi Mitama",
+    "cost": 1006,
+    "effect": "Medium HP restore to one ally",
+    "elem": "rec",
+    "name": "Diarama",
+    "price": 40000,
+    "rank": 3,
+    "shuffle": 4,
+    "target": "1 ally"
+  },
+  {
+    "card": "Kikuri-Hime",
     "cost": 1018,
-    "effect": "Gives Ice resistance for 3 turns",
-    "element": "support",
+    "effect": "Full HP restore to one ally",
+    "elem": "rec",
+    "name": "Diarahan",
+    "price": 70000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 ally"
+  },
+  {
+    "card": "Sarasvati",
+    "cost": 1007,
+    "effect": "Light HP restore to all allies",
+    "elem": "rec",
+    "name": "Media",
     "price": 20000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All allies"
+  },
+  {
+    "card": "Undine",
+    "cost": 1012,
+    "effect": "Medium HP restore to all allies",
+    "elem": "rec",
+    "name": "Mediarama",
+    "price": 70000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "All allies"
+  },
+  {
+    "card": "Ishtar",
+    "cost": 1030,
+    "effect": "Full HP restore to all allies",
+    "elem": "rec",
+    "name": "Mediarahan",
+    "price": 100000,
+    "rank": 7,
+    "shuffle": 9,
+    "target": "All allies"
+  },
+  {
+    "card": "Helel",
+    "cost": 1040,
+    "effect": "Mediarahan + Amrita",
+    "elem": "rec",
+    "name": "Salvation",
+    "price": 120000,
+    "rank": 8,
+    "shuffle": 10,
+    "target": "All allies"
+  },
+  {
+    "cost": 1003,
+    "effect": "Cures Rage, Fear, and Confusion",
+    "elem": "rec",
+    "name": "Patra",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 ally"
+  },
+  {
+    "card": "Apsaras",
+    "cost": 1006,
+    "effect": "Cures Rage, Fear, and Confusion",
+    "elem": "rec",
+    "name": "Me Patra",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "All allies"
+  },
+  {
+    "cost": 1003,
+    "effect": "Cures Down and Dizzy",
+    "elem": "rec",
+    "name": "Re Patra",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 ally"
+  },
+  {
+    "cost": 1003,
+    "effect": "Cures Poison",
+    "elem": "rec",
+    "name": "Posumudi",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 ally"
+  },
+  {
+    "cost": 1003,
+    "effect": "Cures Silence",
+    "elem": "rec",
+    "name": "Mutudi",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 ally"
+  },
+  {
+    "cost": 1003,
+    "effect": "Cures Exhaustion and Enervation",
+    "elem": "rec",
+    "name": "Nervundi",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 ally"
+  },
+  {
+    "card": "Sati",
+    "cost": 1018,
+    "effect": "Cures Exhaustion and Enervation",
+    "elem": "rec",
+    "name": "Energy Shower",
+    "price": 50000,
+    "rank": 2,
+    "shuffle": 6,
+    "target": "All allies"
+  },
+  {
+    "card": "Scathach",
+    "cost": 1012,
+    "effect": "Cures all ailments",
+    "elem": "rec",
+    "name": "Amrita",
+    "price": 40000,
     "rank": 4,
-    "target": "One Ally"
+    "shuffle": 5,
+    "target": "All allies"
   },
-  "Wind Amp": {
-    "card": "Odin",
-    "effect": "Wind dmg x1.5",
-    "element": "passive",
+  {
+    "card": "Queen Mab",
+    "cost": 1008,
+    "effect": "Revive with half HP",
+    "elem": "rec",
+    "name": "Recarm",
+    "price": 20000,
+    "rank": 2,
+    "shuffle": 3,
+    "target": "1 ally"
+  },
+  {
+    "card": "Kohryu",
+    "cost": 1018,
+    "effect": "Revive with full HP",
+    "elem": "rec",
+    "name": "Samarecarm",
+    "price": 60000,
+    "rank": 5,
+    "shuffle": 6,
+    "target": "1 ally"
+  },
+  {
+    "cost": 1025,
+    "effect": "Mediarama + Masukukaja",
+    "elem": "rec",
+    "name": "Youthful Wind",
+    "rank": 99,
+    "target": "All allies"
+  },
+  {
+    "card": "Slime",
+    "cost": 1012,
+    "effect": "Lowers attack for 3 turns",
+    "elem": "sup",
+    "name": "Tarunda",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Seiryu",
+    "cost": 1024,
+    "effect": "Lowers attack for 3 turns",
+    "elem": "sup",
+    "name": "Matarunda",
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All foes"
+  },
+  {
+    "card": "Yomotsu-Shikome",
+    "cost": 1012,
+    "effect": "Lowers hit/evade for 3 turns",
+    "elem": "sup",
+    "name": "Sukunda",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Kurama Tengu",
+    "cost": 1024,
+    "effect": "Lowers hit/evade for 3 turns",
+    "elem": "sup",
+    "name": "Masukunda",
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All foes"
+  },
+  {
+    "card": "Nata Taishi",
+    "cost": 1012,
+    "effect": "Lowers defense for 3 turns",
+    "elem": "sup",
+    "name": "Rakunda",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 foe"
+  },
+  {
+    "card": "Belphegor",
+    "cost": 1024,
+    "effect": "Lowers defense for 3 turns",
+    "elem": "sup",
+    "name": "Marakunda",
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All foes"
+  },
+  {
+    "card": "Trumpeter",
+    "cost": 1030,
+    "effect": "Tarunda + Rakunda + Sukunda",
+    "elem": "sup",
+    "name": "Debilitate",
+    "price": 200000,
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "card": "Senri",
+    "cost": 1010,
+    "effect": "Removes all -kunda effects",
+    "elem": "sup",
+    "name": "Dekunda",
+    "price": 25000,
+    "rank": 3,
+    "shuffle": 4,
+    "target": "All allies"
+  },
+  {
+    "card": "Obariyon",
+    "cost": 1012,
+    "effect": "Raises attack for 3 turns",
+    "elem": "sup",
+    "name": "Tarukaja",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 ally"
+  },
+  {
+    "card": "Kushinada-Hime",
+    "cost": 1024,
+    "effect": "Raises attack for 3 turns",
+    "elem": "sup",
+    "name": "Matarukaja",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All allies"
+  },
+  {
+    "card": "Ghoul",
+    "cost": 1012,
+    "effect": "Raises hit/evade for 3 turns",
+    "elem": "sup",
+    "name": "Sukukaja",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 ally"
+  },
+  {
+    "card": "Quetzalcoatl",
+    "cost": 1024,
+    "effect": "Raises hit/evade for 3 turns",
+    "elem": "sup",
+    "name": "Masukukaja",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All allies"
+  },
+  {
+    "card": "Shiisaa",
+    "cost": 1012,
+    "effect": "Raises defense for 3 turns",
+    "elem": "sup",
+    "name": "Rakukaja",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1,
+    "target": "1 ally"
+  },
+  {
+    "card": "Parvati",
+    "cost": 1024,
+    "effect": "Raises defense for 3 turns",
+    "elem": "sup",
+    "name": "Marakukaja",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "All allies"
+  },
+  {
+    "card": "Magatsu-Izanagi",
+    "cost": 1030,
+    "effect": "Tarukaja + Rakukaja + Sukukaja",
+    "elem": "sup",
+    "name": "Heat Riser",
+    "price": 200000,
+    "rank": 99,
+    "target": "1 ally"
+  },
+  {
+    "card": "Mokoi",
+    "cost": 1010,
+    "effect": "Removes all -kaja effects",
+    "elem": "sup",
+    "name": "Dekaja",
+    "price": 25000,
+    "rank": 3,
+    "shuffle": 4,
+    "target": "All foes"
+  },
+  {
+    "cost": 1005,
+    "effect": "Raises crit rate for 3 turns",
+    "elem": "sup",
+    "name": "Rebellion",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2,
+    "target": "1 ally"
+  },
+  {
+    "card": "Kali",
+    "cost": 1005,
+    "effect": "Greatly raises crit rate for 3 turns",
+    "elem": "sup",
+    "name": "Revolution",
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "Universal"
+  },
+  {
+    "card": "Yoshitsune",
+    "cost": 1015,
+    "effect": "Next Phys attack x2.5 dmg",
+    "elem": "sup",
+    "name": "Power Charge",
+    "price": 90000,
+    "rank": 6,
+    "shuffle": 8
+  },
+  {
+    "card": "Alice",
+    "cost": 1015,
+    "effect": "Next Magic attack x2.5 dmg",
+    "elem": "sup",
+    "name": "Mind Charge",
+    "price": 90000,
+    "rank": 6,
+    "shuffle": 8
+  },
+  {
+    "card": "Arahabaki",
+    "cost": 1036,
+    "effect": "Repels next Phys attack",
+    "elem": "sup",
+    "name": "Tetrakarn",
     "price": 80000,
-    "rank": 5
+    "rank": 7,
+    "shuffle": 9,
+    "target": "1 ally"
   },
-  "Wind Boost": {
-    "card": "Fortuna",
-    "effect": "Wind dmg x1.25",
-    "element": "passive",
-    "price": 18000,
-    "rank": 1
+  {
+    "card": "Lilith",
+    "cost": 1036,
+    "effect": "Repels next non-Almighty Magic attack",
+    "elem": "sup",
+    "name": "Makarakarn",
+    "price": 80000,
+    "rank": 7,
+    "shuffle": 9,
+    "target": "1 ally"
   },
-  "Wind Break": {
+  {
+    "card": "Girimehkala",
+    "cost": 1024,
+    "effect": "Nullifies next instakill attack",
+    "elem": "sup",
+    "name": "Tetraja",
+    "price": 60000,
+    "rank": 5,
+    "shuffle": 7,
+    "target": "1 ally"
+  },
+  {
+    "card": "Sui-Ki",
+    "cost": 1018,
+    "effect": "Removes Tetrakarn",
+    "elem": "sup",
+    "name": "Tetra Break",
+    "price": 70000,
+    "rank": 7,
+    "shuffle": 8,
+    "target": "All foes"
+  },
+  {
+    "card": "Lachesis",
+    "cost": 1018,
+    "effect": "Removes Makarakarn",
+    "elem": "sup",
+    "name": "Makara Break",
+    "price": 70000,
+    "rank": 7,
+    "shuffle": 8,
+    "target": "All foes"
+  },
+  {
+    "card": "Gdon",
+    "cost": 1015,
+    "effect": "Removes Fire resistance for 3 turns",
+    "elem": "sup",
+    "name": "Fire Break",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "card": "Lakshmi",
+    "cost": 1015,
+    "effect": "Removes Ice resistance for 3 turns",
+    "elem": "sup",
+    "name": "Ice Break",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
+    "card": "Hachiman",
+    "cost": 1015,
+    "effect": "Removes Elec resistance for 3 turns",
+    "elem": "sup",
+    "name": "Elec Break",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3,
+    "target": "1 foe"
+  },
+  {
     "card": "Seth",
     "cost": 1015,
     "effect": "Removes Wind resistance for 3 turns",
-    "element": "support",
+    "elem": "sup",
+    "name": "Wind Break",
     "price": 15000,
     "rank": 3,
-    "target": "One Foe"
+    "shuffle": 3,
+    "target": "1 foe"
   },
-  "Zio": {
-    "card": "Izanagi",
-    "cost": 1004,
-    "damage": "Light",
-    "element": "elec",
-    "hit": 98,
-    "power": 80,
-    "price": 5000,
+  {
+    "card": "Yamata-no-Orochi",
+    "cost": 1018,
+    "effect": "Gives Fire resistance for 3 turns",
+    "elem": "sup",
+    "name": "Red Wall",
+    "price": 20000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "1 ally"
+  },
+  {
+    "card": "Cu Chulainn",
+    "cost": 1018,
+    "effect": "Gives Ice resistance for 3 turns",
+    "elem": "sup",
+    "name": "White Wall",
+    "price": 20000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "1 ally"
+  },
+  {
+    "card": "Triglav",
+    "cost": 1018,
+    "effect": "Gives Elec resistance for 3 turns",
+    "elem": "sup",
+    "name": "Blue Wall",
+    "price": 20000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "1 ally"
+  },
+  {
+    "card": "Ananta",
+    "cost": 1018,
+    "effect": "Gives Wind resistance for 3 turns",
+    "elem": "sup",
+    "name": "Green Wall",
+    "price": 20000,
+    "rank": 4,
+    "shuffle": 4,
+    "target": "1 ally"
+  },
+  {
+    "cost": 1024,
+    "effect": "Instant escape from battle",
+    "elem": "sup",
+    "name": "Trafuri",
+    "price": 8000,
+    "rank": 3,
+    "shuffle": 4,
+    "target": "All allies"
+  },
+  {
+    "cost": 1018,
+    "effect": "Instant escape from dungeon",
+    "elem": "sup",
+    "name": "Traesto",
+    "price": 6000,
     "rank": 1,
-    "target": "One Foe"
+    "shuffle": 2,
+    "target": "All allies"
   },
-  "Ziodyne": {
-    "card": "Tam Lin",
-    "cost": 1012,
-    "damage": "Heavy",
-    "element": "elec",
-    "hit": 98,
-    "power": 320,
+  {
+    "cost": 1150,
+    "effect": "Tarukaja + Rakukaja + Sukukaja",
+    "elem": "sup",
+    "name": "Dragon Hustle",
+    "rank": 99,
+    "target": "All allies"
+  },
+  {
+    "cost": 1160,
+    "effect": "Nullifies next attack",
+    "elem": "sup",
+    "name": "Shield of Justice",
+    "rank": 99,
+    "target": "All allies"
+  },
+  {
+    "cost": 1025,
+    "effect": "HP and SP recovered, Down, Random ailment, Nothing",
+    "elem": "sup",
+    "name": "Kamui Miracle",
+    "rank": 99,
+    "target": "Universal"
+  },
+  {
+    "card": "Jinn",
+    "effect": "Halves damage from Phys attacks",
+    "elem": "pas",
+    "name": "Resist Physical",
+    "price": 70000,
+    "rank": 4,
+    "shuffle": 6
+  },
+  {
+    "effect": "Nullifies Phys attacks",
+    "elem": "pas",
+    "name": "Null Physical",
+    "rank": 6
+  },
+  {
+    "effect": "Repels Phys attacks",
+    "elem": "pas",
+    "name": "Repel Physical",
+    "rank": 7
+  },
+  {
+    "effect": "Drains Phys attacks",
+    "elem": "pas",
+    "name": "Absorb Physical",
+    "price": 300000,
+    "rank": 8,
+    "shuffle": 10
+  },
+  {
+    "card": "Mother Harlot",
+    "effect": "Halves damage from Fire attacks",
+    "elem": "pas",
+    "name": "Resist Fire",
+    "price": 50000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "effect": "Nullifies Fire attacks",
+    "elem": "pas",
+    "name": "Null Fire",
+    "rank": 6
+  },
+  {
+    "effect": "Repels Fire attacks",
+    "elem": "pas",
+    "name": "Repel Fire",
+    "rank": 7
+  },
+  {
+    "card": "Hell Biker",
+    "effect": "Drains Fire attacks",
+    "elem": "pas",
+    "name": "Absorb Fire",
+    "price": 300000,
+    "rank": 8,
+    "shuffle": 10
+  },
+  {
+    "card": "Suzaku",
+    "effect": "Halves damage from Ice attacks",
+    "elem": "pas",
+    "name": "Resist Ice",
+    "price": 50000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "effect": "Nullifies Ice attacks",
+    "elem": "pas",
+    "name": "Null Ice",
+    "rank": 6
+  },
+  {
+    "effect": "Repels Ice attacks",
+    "elem": "pas",
+    "name": "Repel Ice",
+    "rank": 7
+  },
+  {
+    "card": "Isis",
+    "effect": "Drains Ice attacks",
+    "elem": "pas",
+    "name": "Absorb Ice",
+    "price": 300000,
+    "rank": 8,
+    "shuffle": 10
+  },
+  {
+    "card": "Kumbhanda",
+    "effect": "Halves damage from Elec attacks",
+    "elem": "pas",
+    "name": "Resist Elec",
+    "price": 50000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "effect": "Nullifies Elec attacks",
+    "elem": "pas",
+    "name": "Null Elec",
+    "rank": 6
+  },
+  {
+    "effect": "Repels Elec attacks",
+    "elem": "pas",
+    "name": "Repel Elec",
+    "rank": 7
+  },
+  {
+    "card": "Lucifer",
+    "effect": "Drains Elec attacks",
+    "elem": "pas",
+    "name": "Absorb Elec",
+    "price": 300000,
+    "rank": 8,
+    "shuffle": 10
+  },
+  {
+    "card": "Chernobog",
+    "effect": "Halves damage from Wind attacks",
+    "elem": "pas",
+    "name": "Resist Wind",
+    "price": 50000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "effect": "Nullifies Wind attacks",
+    "elem": "pas",
+    "name": "Null Wind",
+    "rank": 6
+  },
+  {
+    "effect": "Repels Wind attacks",
+    "elem": "pas",
+    "name": "Repel Wind",
+    "rank": 7
+  },
+  {
+    "card": "Horus",
+    "effect": "Drains Wind attacks",
+    "elem": "pas",
+    "name": "Absorb Wind",
+    "price": 300000,
+    "rank": 8,
+    "shuffle": 10
+  },
+  {
+    "effect": "Doubles evasion against Light attacks",
+    "elem": "pas",
+    "name": "Resist Light",
+    "rank": 5
+  },
+  {
+    "effect": "Nullifies Light attacks",
+    "elem": "pas",
+    "name": "Null Light",
+    "rank": 6
+  },
+  {
+    "card": "Yurlungur",
+    "effect": "Repels Light attacks",
+    "elem": "pas",
+    "name": "Repel Light",
+    "price": 80000,
+    "rank": 7,
+    "shuffle": 8
+  },
+  {
+    "effect": "Doubles evasion against Dark attacks",
+    "elem": "pas",
+    "name": "Resist Dark",
+    "rank": 5
+  },
+  {
+    "effect": "Nullifies Dark attacks",
+    "elem": "pas",
+    "name": "Null Dark",
+    "rank": 6
+  },
+  {
+    "card": "Michael",
+    "effect": "Repels Dark attacks",
+    "elem": "pas",
+    "name": "Repel Dark",
+    "price": 80000,
+    "rank": 7,
+    "shuffle": 8
+  },
+  {
+    "effect": "Halves susceptibility to Poison",
+    "elem": "pas",
+    "name": "Resist Poison",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Poison",
+    "elem": "pas",
+    "name": "Null Poison",
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4
+  },
+  {
+    "effect": "Halves susceptibility to Confusion",
+    "elem": "pas",
+    "name": "Resist Confuse",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Confusion",
+    "elem": "pas",
+    "name": "Null Confuse",
+    "rank": 4
+  },
+  {
+    "effect": "Halves susceptibility to Rage",
+    "elem": "pas",
+    "name": "Resist Rage",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Rage",
+    "elem": "pas",
+    "name": "Null Rage",
+    "rank": 4
+  },
+  {
+    "effect": "Halves susceptibility to Silence",
+    "elem": "pas",
+    "name": "Resist Mute",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Silence",
+    "elem": "pas",
+    "name": "Null Mute",
+    "rank": 4
+  },
+  {
+    "effect": "Halves susceptibility to Fear",
+    "elem": "pas",
+    "name": "Resist Fear",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Fear",
+    "elem": "pas",
+    "name": "Null Fear",
+    "rank": 4
+  },
+  {
+    "effect": "Halves susceptibility to Enervation",
+    "elem": "pas",
+    "name": "Resist Enervate",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Enervation",
+    "elem": "pas",
+    "name": "Null Enervate",
+    "rank": 4
+  },
+  {
+    "effect": "Halves susceptibility to Exhaustion",
+    "elem": "pas",
+    "name": "Resist Exhaust",
+    "rank": 2
+  },
+  {
+    "effect": "Immune to Exhaustion",
+    "elem": "pas",
+    "name": "Null Exhaust",
+    "rank": 4
+  },
+  {
+    "effect": "Halves susceptibility to Dizzy",
+    "elem": "pas",
+    "name": "Resist Dizzy",
+    "rank": 2
+  },
+  {
+    "card": "Raphael",
+    "effect": "Immune to Dizzy",
+    "elem": "pas",
+    "name": "Null Dizzy",
+    "price": 25000,
+    "rank": 4,
+    "shuffle": 4
+  },
+  {
+    "card": "Asura",
+    "effect": "Immune to all ailments except Poison",
+    "elem": "pas",
+    "name": "Unshaken Will",
+    "price": 300000,
+    "rank": 99
+  },
+  {
+    "card": "Ganesha",
+    "effect": "Survive lethal attack with 1 HP once per battle",
+    "elem": "pas",
+    "name": "Endure",
+    "price": 70000,
+    "rank": 5,
+    "shuffle": 7
+  },
+  {
+    "card": "Attis",
+    "effect": "Survive lethal attack with 100% HP once per battle",
+    "elem": "pas",
+    "name": "Enduring Soul",
+    "price": 90000,
+    "rank": 7,
+    "shuffle": 8
+  },
+  {
+    "card": "Samael",
+    "effect": "50% chance to endure Light attacks",
+    "elem": "pas",
+    "name": "Survive Light",
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "card": "Gabriel",
+    "effect": "50% chance to endure Dark attacks",
+    "elem": "pas",
+    "name": "Survive Dark",
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "card": "Belial",
+    "effect": "100% chance to endure Light attacks",
+    "elem": "pas",
+    "name": "Endure Light",
     "price": 50000,
     "rank": 5,
-    "target": "One Foe"
+    "shuffle": 6
   },
-  "Zionga": {
-    "card": "Unicorn",
-    "cost": 1008,
-    "damage": "Medium",
-    "element": "elec",
-    "hit": 98,
-    "power": 200,
+  {
+    "card": "Daisoujou",
+    "effect": "100% chance to endure Dark attacks",
+    "elem": "pas",
+    "name": "Endure Dark",
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "card": "Baphomet",
+    "effect": "Doubles evasion rate against Phys attacks",
+    "elem": "pas",
+    "name": "Dodge Physical",
+    "price": 15000,
+    "rank": 2,
+    "shuffle": 3
+  },
+  {
+    "card": "Alilat",
+    "effect": "Triples evasion rate against Phys attacks",
+    "elem": "pas",
+    "name": "Evade Physical",
+    "price": 50000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "card": "High Pixie",
+    "effect": "Doubles evasion rate against Fire attacks",
+    "elem": "pas",
+    "name": "Dodge Fire",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2
+  },
+  {
+    "card": "Atropos",
+    "effect": "Triples evasion rate against Fire attacks",
+    "elem": "pas",
+    "name": "Evade Fire",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4
+  },
+  {
+    "card": "Dis",
+    "effect": "Doubles evasion rate against Ice attacks",
+    "elem": "pas",
+    "name": "Dodge Ice",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2
+  },
+  {
+    "card": "White Rider",
+    "effect": "Triples evasion rate against Ice attacks",
+    "elem": "pas",
+    "name": "Evade Ice",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4
+  },
+  {
+    "card": "Ara Mitama",
+    "effect": "Doubles evasion rate against Elec attacks",
+    "elem": "pas",
+    "name": "Dodge Elec",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2
+  },
+  {
+    "card": "Seiten Taisei",
+    "effect": "Triples evasion rate against Elec attacks",
+    "elem": "pas",
+    "name": "Evade Elec",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4
+  },
+  {
+    "card": "Andras",
+    "effect": "Doubles evasion rate against Wind attacks",
+    "elem": "pas",
+    "name": "Dodge Wind",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2
+  },
+  {
+    "card": "Vasuki",
+    "effect": "Triples evasion rate against Wind attacks",
+    "elem": "pas",
+    "name": "Evade Wind",
+    "price": 35000,
+    "rank": 4,
+    "shuffle": 4
+  },
+  {
+    "card": "Sraosha",
+    "effect": "Doubles evasion against non-Almighty Magic attacks",
+    "elem": "pas",
+    "name": "Angelic Grace",
+    "price": 70000,
+    "rank": 7,
+    "shuffle": 8
+  },
+  {
+    "effect": "Halves enemy hit rate when attacked",
+    "elem": "pas",
+    "name": "Ali Dance",
+    "rank": 5
+  },
+  {
+    "card": "Hua Po",
+    "effect": "Fire dmg x1.25",
+    "elem": "pas",
+    "name": "Fire Boost",
+    "price": 18000,
+    "rank": 1,
+    "shuffle": 3
+  },
+  {
+    "card": "Black Frost",
+    "effect": "Fire dmg x1.5",
+    "elem": "pas",
+    "name": "Fire Amp",
+    "price": 80000,
+    "rank": 5,
+    "shuffle": 7
+  },
+  {
+    "card": "King Frost",
+    "effect": "Ice dmg x1.25",
+    "elem": "pas",
+    "name": "Ice Boost",
+    "price": 18000,
+    "rank": 1,
+    "shuffle": 3
+  },
+  {
+    "card": "Skadi",
+    "effect": "Ice dmg x1.5",
+    "elem": "pas",
+    "name": "Ice Amp",
+    "price": 80000,
+    "rank": 5,
+    "shuffle": 7
+  },
+  {
+    "card": "Oberon",
+    "effect": "Elec dmg x1.25",
+    "elem": "pas",
+    "name": "Elec Boost",
+    "price": 18000,
+    "rank": 1,
+    "shuffle": 3
+  },
+  {
+    "card": "Suparna",
+    "effect": "Elec dmg x1.5",
+    "elem": "pas",
+    "name": "Elec Amp",
+    "price": 80000,
+    "rank": 5,
+    "shuffle": 7
+  },
+  {
+    "card": "Fortuna",
+    "effect": "Wind dmg x1.25",
+    "elem": "pas",
+    "name": "Wind Boost",
+    "price": 18000,
+    "rank": 1,
+    "shuffle": 3
+  },
+  {
+    "card": "Odin",
+    "effect": "Wind dmg x1.5",
+    "elem": "pas",
+    "name": "Wind Amp",
+    "price": 80000,
+    "rank": 5,
+    "shuffle": 7
+  },
+  {
+    "card": "Angel",
+    "effect": "Light insta-kill success rate x1.25",
+    "elem": "pas",
+    "name": "Hama Boost",
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "card": "Mot",
+    "effect": "Dark insta-kill success rate x1.25",
+    "elem": "pas",
+    "name": "Mudo Boost",
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "effect": "Poison success rate x1.25",
+    "elem": "pas",
+    "name": "Poison Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Confusion success rate x1.25",
+    "elem": "pas",
+    "name": "Confuse Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Rage success rate x1.25",
+    "elem": "pas",
+    "name": "Rage Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Silence success rate x1.25",
+    "elem": "pas",
+    "name": "Silence Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Fear success rate x1.25",
+    "elem": "pas",
+    "name": "Fear Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Enervation success rate x1.25",
+    "elem": "pas",
+    "name": "Enervate Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Exhaustion success rate x1.25",
+    "elem": "pas",
+    "name": "Exhaust Boost",
+    "rank": 4
+  },
+  {
+    "effect": "Dizzy success rate x1.25",
+    "elem": "pas",
+    "name": "Dizzy Boost",
+    "rank": 4
+  },
+  {
+    "card": "Nozuchi",
+    "effect": "All ailment success rate x1.25",
+    "elem": "pas",
+    "name": "Ailment Boost",
+    "price": 60000,
+    "rank": 6,
+    "shuffle": 7
+  },
+  {
+    "card": "Rakshasa",
+    "effect": "10% chance to repel Phys attack",
+    "elem": "pas",
+    "name": "Counter",
     "price": 15000,
     "rank": 3,
-    "target": "One Foe"
+    "shuffle": 3
+  },
+  {
+    "card": "Fuu-Ki",
+    "effect": "15% chance to repel Phys attack",
+    "elem": "pas",
+    "name": "Counterstrike",
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "card": "Uriel",
+    "effect": "20% chance to repel Phys attack",
+    "elem": "pas",
+    "name": "High Counter",
+    "price": 50000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "card": "Sylph",
+    "effect": "Recover 2% HP per turn",
+    "elem": "pas",
+    "name": "Regenerate 1",
+    "price": 20000,
+    "rank": 3,
+    "shuffle": 3
+  },
+  {
+    "card": "Titania",
+    "effect": "Recover 4% HP per turn",
+    "elem": "pas",
+    "name": "Regenerate 2",
+    "price": 60000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "card": "Vishnu",
+    "effect": "Recover 6% HP per turn",
+    "elem": "pas",
+    "name": "Regenerate 3",
+    "price": 90000,
+    "rank": 6,
+    "shuffle": 8
+  },
+  {
+    "card": "Ame-no-Uzume",
+    "effect": "Recover 3 SP per turn",
+    "elem": "pas",
+    "name": "Invigorate 1",
+    "price": 20000,
+    "rank": 3,
+    "shuffle": 3
+  },
+  {
+    "card": "Barong",
+    "effect": "Recover 5 SP per turn",
+    "elem": "pas",
+    "name": "Invigorate 2",
+    "price": 60000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "card": "Satan",
+    "effect": "Recover 7 SP per turn",
+    "elem": "pas",
+    "name": "Invigorate 3",
+    "price": 90000,
+    "rank": 6,
+    "shuffle": 8
+  },
+  {
+    "card": "Phoenix",
+    "effect": "Gains 25% EXP when not equipped",
+    "elem": "pas",
+    "name": "Growth 1",
+    "price": 15000,
+    "rank": 2,
+    "shuffle": 3
+  },
+  {
+    "card": "Shiki-Ouji",
+    "effect": "Gains 50% EXP when not equipped",
+    "elem": "pas",
+    "name": "Growth 2",
+    "price": 40000,
+    "rank": 4,
+    "shuffle": 5
+  },
+  {
+    "card": "Saturnus",
+    "effect": "Gains 100% EXP when not equipped",
+    "elem": "pas",
+    "name": "Growth 3",
+    "price": 70000,
+    "rank": 6,
+    "shuffle": 8
+  },
+  {
+    "card": "Gurr",
+    "effect": "Begin battle with Tarukaja",
+    "elem": "pas",
+    "name": "Auto-Tarukaja",
+    "price": 60000,
+    "rank": 3,
+    "shuffle": 7
+  },
+  {
+    "card": "Narasimha",
+    "effect": "Begin battle with Matarukaja",
+    "elem": "pas",
+    "name": "Auto-Mataru",
+    "price": 80000,
+    "rank": 6,
+    "shuffle": 9
+  },
+  {
+    "card": "Take-Minakata",
+    "effect": "Begin battle with Rakukaja",
+    "elem": "pas",
+    "name": "Auto-Rakukaja",
+    "price": 60000,
+    "rank": 3,
+    "shuffle": 7
+  },
+  {
+    "card": "Setanta",
+    "effect": "Begin battle with Marakukaja",
+    "elem": "pas",
+    "name": "Auto-Maraku",
+    "price": 80000,
+    "rank": 6,
+    "shuffle": 9
+  },
+  {
+    "card": "Makami",
+    "effect": "Begin battle with Sukukaja",
+    "elem": "pas",
+    "name": "Auto-Sukukaja",
+    "price": 60000,
+    "rank": 3,
+    "shuffle": 7
+  },
+  {
+    "card": "Kingu",
+    "effect": "Begin battle with Masukukaja",
+    "elem": "pas",
+    "name": "Auto-Masuku",
+    "price": 80000,
+    "rank": 6,
+    "shuffle": 9
+  },
+  {
+    "card": "Saki Mitama",
+    "effect": "Lowers chances of being ambushed",
+    "elem": "pas",
+    "name": "Alertness",
+    "price": 10000,
+    "rank": 2,
+    "shuffle": 2
+  },
+  {
+    "card": "Loki",
+    "effect": "Halves crit rate of damage received",
+    "elem": "pas",
+    "name": "Sharp Student",
+    "price": 5000,
+    "rank": 1,
+    "shuffle": 1
+  },
+  {
+    "card": "Okuninushi",
+    "effect": "Doubles crit rate",
+    "elem": "pas",
+    "name": "Apt Pupil",
+    "price": 15000,
+    "rank": 3,
+    "shuffle": 3
+  },
+  {
+    "card": "Ongyo-Ki",
+    "effect": "Halves damage from all attacks but can never evade",
+    "elem": "pas",
+    "name": "Firm Stance",
+    "price": 60000,
+    "rank": 5,
+    "shuffle": 7
+  },
+  {
+    "card": "Futsunushi",
+    "effect": "Halves all HP costs",
+    "elem": "pas",
+    "name": "Arms Master",
+    "price": 120000,
+    "rank": 7,
+    "shuffle": 9
+  },
+  {
+    "card": "Shiva",
+    "effect": "Halves all SP costs",
+    "elem": "pas",
+    "name": "Spell Master",
+    "price": 120000,
+    "rank": 7,
+    "shuffle": 9
+  },
+  {
+    "card": "Neko Shogun",
+    "effect": "Recovery skill effectiveness x1.5",
+    "elem": "pas",
+    "name": "Divine Grace",
+    "price": 50000,
+    "rank": 6,
+    "shuffle": 6
+  },
+  {
+    "card": "Yatagarasu",
+    "effect": "Recover 8% HP and SP after battle",
+    "elem": "pas",
+    "name": "Cool Breeze",
+    "price": 70000,
+    "rank": 5,
+    "shuffle": 6
+  },
+  {
+    "card": "Izanagi-no-Okami",
+    "effect": "Recover 100% HP and SP after battle",
+    "elem": "pas",
+    "name": "Victory Cry",
+    "price": 500000,
+    "rank": 7
+  },
+  {
+    "card": "Kaguya",
+    "effect": "Halves time to automatically recover from ailments",
+    "elem": "pas",
+    "name": "Fast Heal",
+    "price": 70000,
+    "rank": 3,
+    "shuffle": 4
+  },
+  {
+    "card": "Norn",
+    "effect": "Automatically recover from ailments in 1 turn",
+    "elem": "pas",
+    "name": "Insta-Heal",
+    "price": 180000,
+    "rank": 7
+  },
+  {
+    "effect": "Medium dmg, Fear",
+    "elem": "phy",
+    "name": "Golden Right",
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "effect": "Reduces HP to 1",
+    "elem": "lig",
+    "name": "Judgement",
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "effect": "Reduces HP to 1",
+    "elem": "alm",
+    "name": "Galgalim Eyes",
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "effect": "Medium dmg, Sacrifices self",
+    "elem": "alm",
+    "name": "Last Resort",
+    "rank": 99,
+    "target": "Universal"
+  },
+  {
+    "effect": "Absorbs 100 HP",
+    "elem": "alm",
+    "name": "Life Leech",
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "effect": "Absorbs 100 SP",
+    "elem": "alm",
+    "name": "Spirit Leech",
+    "rank": 99,
+    "target": "1 foe"
+  },
+  {
+    "effect": "Full HP restore, Sacrifices self",
+    "elem": "rec",
+    "name": "Recarmdra",
+    "rank": 99,
+    "target": "All allies"
+  },
+  {
+    "effect": "Displays enemy stats and resistances",
+    "elem": "pas",
+    "name": "Analysis",
+    "rank": 99
+  },
+  {
+    "effect": "Increases All-out Attack damage output to level 1",
+    "elem": "pas",
+    "name": "AoA Level 1",
+    "rank": 99
+  },
+  {
+    "effect": "Increases All-out Attack damage output to level 2",
+    "elem": "pas",
+    "name": "AoA Level 2",
+    "rank": 99
+  },
+  {
+    "effect": "Increases All-out Attack damage output to level 3",
+    "elem": "pas",
+    "name": "AoA Level 3",
+    "rank": 99
+  },
+  {
+    "effect": "Increases All-out Attack damage output to level 4",
+    "elem": "pas",
+    "name": "AoA Level 4",
+    "rank": 99
+  },
+  {
+    "effect": "Increases All-out Attack damage output to max level",
+    "elem": "pas",
+    "name": "AoA Level 5",
+    "rank": 99
+  },
+  {
+    "effect": "Instant escape from battle",
+    "elem": "pas",
+    "name": "Certain Escape",
+    "rank": 99
+  },
+  {
+    "effect": "Reveals all elemal affinities on all enemies",
+    "elem": "pas",
+    "name": "Complete Analysis",
+    "rank": 99
+  },
+  {
+    "effect": "Reveal the location of Shadows on each floor over a wide area",
+    "elem": "pas",
+    "name": "Enemy Radar",
+    "rank": 99
+  },
+  {
+    "effect": "Displays enemy stats, resistances, and skills",
+    "elem": "pas",
+    "name": "Full Analysis",
+    "rank": 99
+  },
+  {
+    "effect": "Recover 5% HP to party after battle",
+    "elem": "pas",
+    "name": "Healing Wave",
+    "rank": 99
+  },
+  {
+    "effect": "Recover 5% SP to party after battle",
+    "elem": "pas",
+    "name": "Relaxing Wave",
+    "rank": 99
+  },
+  {
+    "effect": "Recover 10% HP to party after battle",
+    "elem": "pas",
+    "name": "Stamina Song",
+    "rank": 99
+  },
+  {
+    "effect": "Changes target icon to show when attack will be ineffective",
+    "elem": "pas",
+    "name": "Third Eye",
+    "rank": 99
+  },
+  {
+    "effect": "Reveal the location of treasure chests on each floor",
+    "elem": "pas",
+    "name": "Treasure Radar",
+    "rank": 99
+  },
+  {
+    "effect": "Recover 10% SP to party after battle",
+    "elem": "pas",
+    "name": "Vigor Song",
+    "rank": 99
+  },
+  {
+    "effect": "Reveal an enemy's affinity at the start of battle",
+    "elem": "pas",
+    "name": "Weakness Scan",
+    "rank": 99
   }
-}
+]

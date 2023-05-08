@@ -49,9 +49,15 @@
 * http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds3/
 
 ## <a name="smtsj"></a>[Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj)
+### Cheap Password Demons
+* Passwords allow you to summon demons with stats and levels less than their default, decreasing their price and providing cheap fusion ingredients
+* Some higher-end demons like Alilat with their stats capped will overflow the max price and come out to around a couple thousand
+* Can also summon boss-exclusive demons with their corresponding passwords
+
 ### [Shin Megami Tensei: Strange Journey Redux](https://aqiu384.github.io/megaten-fusion-tool/smtdsj)
 * Womb of Grief added
 * New endings added for all routes
+* Password price overflow and boss-exclusives fixed
 
 ### Data Sources
 * https://gamefaqs.gamespot.com/ds/961651-shin-megami-tensei-strange-journey/faqs/59384
@@ -63,7 +69,18 @@
 * https://erikku.github.io/smt4tool/
 * https://gamefaqs.gamespot.com/3ds/672441-shin-megami-tensei-iv/faqs/67766
 
+### Fusion Accident Skill Inheritance
+* If demons A x B = C, but produces a fusion accident resulting in D instead
+  * D's first 4 skills will be the highest ranked from the combined ABCD skill pool
+  * D's last 4 skills will be randomly picked from the same pool
+* If D is of the Famed race
+  * D will inherit all of its innate skills
+  * D will pick the highest ranked from ABC's skill pool for the rest
+
 ## <a name="smt4f"></a>[Shin Megami Tensei IV Apocalypse](https://aqiu384.github.io/megaten-fusion-tool/smt4f)
+* Zealot made fusion accident exclusive
+* Unique skills added to fusion accident inheritance pool
+
 ### Data Sources
 * http://gamers-high.com/megami4-final/
 * https://megamitensei.fandom.com/wiki/List_of_Shin_Megami_Tensei_IV_Apocalypse_Skills
@@ -331,6 +348,10 @@
 * https://gamefaqs.gamespot.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70843
 * https://wikiwiki.jp/personaqr/
 
+### QR Code Unique Skills
+* Unlike Strange Journey passwords, QR codes are valid even with unique skills
+* Party member unique skills are still invalid
+
 ## <a name="pq2"></a>[Persona Q2: New Cinema Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq2)
 ### Data Sources
 * https://bozumemo.blogspot.com/p/pq2.html
@@ -351,6 +372,14 @@
 * http://bmky.net/data/m2/
 
 ## <a name="ds1"></a>[Devil Survivor](https://aqiu384.github.io/megaten-fusion-tool/ds1)
+### Maxing All Demon Stats
+* Like most games, there is a cap on how many bonus stats a demon can receive from Mitama fusion
+* This can be bypassed with the following chain
+  * 1-star auction demon x 1-star auction demon = Element with a negative stat penalty
+  * Penalty Element x Penalty Element = Mitama with a negative stat penalty
+* This Penalty Mitama will raise one stat and lower another, resulting in a net-zero change towards the bonus stat cap
+* By raising two stats on a demon to 40 and lowering the other two stats below 0, the latter will underflow and loop back around to 40
+
 ### [Devil Survivor Overclocked](https://aqiu384.github.io/megaten-fusion-tool/dso)
 * 8th Day added for 3 routes
 * Compendium added
@@ -362,9 +391,9 @@
 ### Skill List
 * (A?): Comes with ?-star Auction
 
-### Max Stat Underflow Exploit
-
 ## <a name="ds2"></a>[Devil Survivor 2](https://aqiu384.github.io/megaten-fusion-tool/ds2)
+* Max demon stat underflow fixed
+
 ### [Devil Survivor 2 Record Breaker](https://aqiu384.github.io/megaten-fusion-tool/ds2br)
 * Triangulum Campaign added
 
