@@ -6,8 +6,6 @@ import { Subscription } from 'rxjs';
 import { Compendium } from '../models/compendium';
 import { Demon } from '../models';
 import {
-  Arcanas,
-  DemonOrders,
   BaseStats,
   PartyMembers,
   PhysResistanceElements,
@@ -137,28 +135,16 @@ export class DemonEntryComponent implements OnChanges {
   selector: 'app-demon-entry-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-entry *ngIf="!demon || arcanas.indexOf(demon.race) !== -1"
+    <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
       [compendium]="compendium">
     </app-demon-entry>
-    <app-enemy-entry *ngIf="demon && demonOrders.indexOf(demon.race) !== -1"
+    <app-enemy-entry *ngIf="demon && demon.isEnemy"
       [name]="name"
       [demon]="demon"
       [compendium]="compendium">
     </app-enemy-entry>
-    <ng-container>
-    <ng-container *ngIf="demon && demon.race === 'Gem'">
-      <h2>Gem {{ demon.name }}</h2>
-      <table class="entry-table">
-        <thead>
-          <tr><th class="title">How to Obtain</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Item drop only</td></tr>
-        </tbody>
-      </table>
-    </ng-container>
   `
 })
 export class DemonEntryContainerComponent {
@@ -167,8 +153,6 @@ export class DemonEntryContainerComponent {
   demon: Demon;
   compendium: Compendium;
   appName = 'Test App';
-  arcanas = Arcanas;
-  demonOrders = DemonOrders;
 
   constructor(
     private route: ActivatedRoute,

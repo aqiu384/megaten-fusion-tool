@@ -32,6 +32,8 @@ import { FusionDataService } from '../fusion-data.service';
         [inherits]="compendium.getInheritElems(demon.inherits)">
       </app-demon-inherits>
       <app-demon-skills
+        [hasRank]="true"
+        [hasTarget]="true"
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">

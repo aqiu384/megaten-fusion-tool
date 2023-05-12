@@ -1,10 +1,11 @@
-import { Races, SkillElementOrder, ResistCodes, InheritElements, Gems } from '../constants';
+import { Races, SkillElementOrder, ResistCodes, InheritElements } from '../constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 import DEMON_DATA_JSON from '../data/demon-data.json';
 import ENEMY_DATA_JSON from '../data/enemy-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
+import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import GROWTH_TYPES from '../data/growth-types.json';
 
@@ -14,7 +15,7 @@ export class Compendium implements ICompendium {
   private gems: { [name: string]: Demon };
 
   private skills: { [name: string]: Skill };
-  private specialRecipes: { [name: string]: string[] };
+  private specialNamePairs: { [name: string]: NamePair[] };
   private growthTypes: { [type: string]: number[][] };
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
@@ -55,7 +56,7 @@ export class Compendium implements ICompendium {
     const gems: { [name: string]: Demon } = {};
 
     const skills: { [name: string]: Skill } = {};
-    const specialRecipes: { [name: string]: string[] } = {};
+    const specialNamePairs: { [name: string]: NamePair[] } = {};
     const growthTypes: { [type: string]: number[][] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const learnRanks = [0, 3, 4, 5, 7, 8];
@@ -128,35 +129,6 @@ export class Compendium implements ICompendium {
       };
     }
 
-    for (let i = 0; i < Gems.length; i++) {
-      gems[Gems[i]] = {
-        name:      Gems[i],
-        presists:  [],
-        mresists:  [],
-        resists:   [],
-        type:      '',
-        subtype:   '',
-        traits:    [],
-        race:      'Gem',
-        lvl:       i + 1,
-        currLvl:   i + 1,
-        fusion:    'recruit',
-        prereq:    'Item negotiation only',
-        price:     0,
-        inherits:  0,
-        stats:     [],
-        estats:    [],
-        atks:      [],
-        area:      '',
-        drop:      '',
-        contacts:  [],
-        skills:    {},
-        transfers: {},
-        growth:    '',
-        affinity:  ''
-      }
-    }
-
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
       skills[name] = {
         name,
@@ -173,22 +145,18 @@ export class Compendium implements ICompendium {
       };
     }
 
-    for (const [name, json] of Object.entries(SPECIAL_RECIPES_JSON)) {
-      if (json['totem']) {
-        demons[name].fusion = 'special';
+    for (const [name, totem] of Object.entries(FUSION_PREREQS_JSON)) {
+      demons[name].prereq = `Requires ${totem} totem`;
+      demons[name].fusion = 'special';
+      specialNamePairs[name] = [{ name1: name, name2: name }];
+    }
 
-        if (json['ingredients']) {
-          demons[name].prereq = `Perform fusion that uses the following ingredients with ${json['totem']} totem`;
-          specialRecipes[name] = json['ingredients'];
-        } else {
-          demons[name].prereq = `Perform fusion that creates one of the following results with ${json['totem']} totem`;
-          specialRecipes[name] = [name, name, name];
-        }
-
+    for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
+      if (recipe.length > 0) {
+        specialNamePairs[name] = [{ name1: recipe[0], name2: recipe[1] }];
       } else {
-        demons[name].fusion = 'accident';
-        demons[name].prereq = 'Fusion accident only';
-        specialRecipes[name] = [];
+        demons[name].prereq = 'Fusion Accident'
+        demons[name].fusion = 'accident'
       }
     }
 
@@ -221,7 +189,7 @@ export class Compendium implements ICompendium {
     this.gems = gems;
 
     this.skills = skills;
-    this.specialRecipes = specialRecipes;
+    this.specialNamePairs = specialNamePairs;
     this.growthTypes = growthTypes;
     this.invertedDemons = inversions;
   }
@@ -239,7 +207,6 @@ export class Compendium implements ICompendium {
 
     for (const [name, demon] of Object.entries(this.demons)) {
       if (this.demons[name].fusion === 'normal') {
-        ingredients[demon.race].push(demon.lvl);
         results[demon.race].push(demon.lvl);
       }
     }
@@ -248,20 +215,9 @@ export class Compendium implements ICompendium {
       ingredients[enemy.race].push(enemy.lvl);
     }
 
-    for (const [name, gem] of Object.entries(this.gems)) {
-      ingredients[gem.race].push(gem.lvl);
-    }
-
     for (const race of Races) {
       ingredients[race].sort((a, b) => a - b);
       results[race].sort((a, b) => a - b);
-    }
-
-    for (const [name, entry] of Object.entries(this.specialRecipes)) {
-      if (this.demons[name].prereq.includes('results')) {
-        const resultRace = this.demons[name].race;
-        this.specialRecipes[name] = results[resultRace].map(l => this.invertedDemons[resultRace][l]);
-      }
     }
 
     const allies = Object.keys(this.demons).map(name => <Demon>this.demons[name]);
@@ -281,7 +237,7 @@ export class Compendium implements ICompendium {
   }
 
   get specialDemons(): Demon[] {
-    return Object.keys(this.specialRecipes).map(name => this.demons[name]);
+    return this._allDemons.filter(d => d.fusion === 'special');
   }
 
   getDemon(name: string): Demon {
@@ -315,11 +271,11 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNameEntries(name: string): string[] {
-    return this.specialRecipes[name] || [];
+    return [];
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
-    return [];
+    return this.specialNamePairs[name] || [];
   }
 
   getInheritElems(inherits: number): number[] {

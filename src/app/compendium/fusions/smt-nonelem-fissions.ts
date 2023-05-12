@@ -4,10 +4,9 @@ export function splitWithDiffRace(name: string, compendium: Compendium, fusionCh
   const recipes: NamePair[] = [];
   const specials = compendium.getSpecialNamePairs(name);
 
-  if (specials.length === 1 && specials[0].name1 === specials[0].name2) {
-    name = specials[0].name1;
-  } else if (specials.length) {
-    return specials;
+  if (specials.length > 0) {
+    if (specials[0].name1 === specials[0].name2) { name = specials[0].name1; }
+    else if (name !== specials[0].name1) { return specials; }
   }
 
   const { race: targetRace, lvl: targetLvl } = compendium.getDemon(name);
@@ -123,6 +122,32 @@ export function splitWithElement(name: string, compendium: Compendium, fusionCha
         name1: elementRecipe.ingName,
         name2: elementName
       });
+    }
+  }
+
+  return recipes;
+}
+
+export function splitWithTotem(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
+  const recipes: NamePair[] = [];
+  const specials = compendium.getSpecialNamePairs(name);
+
+  if (specials.length === 0 || name !== specials[0].name1) {
+    return recipes;
+  }
+
+  const targetRace = compendium.getDemon(specials[0].name2).race;
+
+  for (const [raceA, raceBs] of Object.entries(fusionChart.getRaceFissions(targetRace))) {
+    for (const lvlA of compendium.getIngredientDemonLvls(raceA)) {
+      for (const raceB of raceBs) {
+        for (const lvlB of compendium.getIngredientDemonLvls(raceB)) {
+          recipes.push({
+            name1: compendium.reverseLookupDemon(raceA, lvlA),
+            name2: compendium.reverseLookupDemon(raceB, lvlB)
+          });
+        }
+      }
     }
   }
 

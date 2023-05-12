@@ -120,25 +120,10 @@ export class Compendium implements ICompendium {
 
       for (const ingred of recipeList) {
         if (ingred.includes(' x ')) {
-          const [race1, race2] = ingred.split(' x ');
-          const leftNames = demons[race1] ? [race1] : Object.values(inversions[race1]);
-          const rightNames = demons[race2] ? [race2] : Object.values(inversions[race2]);
-
-          for (const name1 of leftNames) {
-            for (const name2 of rightNames) {
-              if (name1 !== name2) {
-                pairRecipes[name].push({ name1, name2 });
-              }
-            }
-          }
+          const [name1, name2] = ingred.split(' x ');
+          pairRecipes[name].push({ name1, name2 });
         } else {
-          if (demons[ingred]) {
-            entryRecipes[name].push(ingred);
-          } else {
-            for (const name1 of Object.values(inversions[ingred])) {
-              entryRecipes[name].push(name1);
-            }
-          }
+          entryRecipes[name].push(ingred);
         }
       }
     }

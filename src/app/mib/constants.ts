@@ -181,25 +181,6 @@ export const PartyMembers = [
   'Reiji'
 ];
 
-export const Gems = [
-  'Alexandrite',
-  'Diamond',
-  'Sapphire',
-  'Emerald',
-  'Ruby',
-  'Pearl',
-  'Tanzanite',
-  'Opal',
-  'Amethyst',
-  'Garnet',
-  'Aquamarine',
-  'Topaz',
-  'Moonstone',
-  'Malachite',
-  'Onyx',
-  'Turquoise'
-];
-
 export const RaceOrder = getEnumOrder(Races);
 export const SkillElementOrder = getEnumOrder(SkillElements);
 
