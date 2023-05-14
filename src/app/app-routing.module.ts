@@ -116,6 +116,11 @@ const appRoutes: Routes = [
     data: { appName: 'Megami Ibunroku Persona' }
   },
   {
+    path: 'p2t',
+    loadChildren: () => import('./p2t/compendium.module').then(m => m.CompendiumModule),
+    data: { appName: 'Person 2: Innocent Sin' }
+  },
+  {
     path: 'p3',
     loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Persona 3' }

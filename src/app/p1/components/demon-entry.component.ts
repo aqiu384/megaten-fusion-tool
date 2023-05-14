@@ -65,7 +65,7 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-p1-fission-table>
+      <app-p1-fission-table *ngIf="compConfig.appCssClasses[0] === 'p1'">
       </app-p1-fission-table>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">

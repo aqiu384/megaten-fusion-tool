@@ -1,4 +1,4 @@
-.p1 div.element-icon {
+.mib div.element-icon {
   height: 12px;
   background-size: 12px;
   background-repeat: no-repeat;
@@ -6,59 +6,75 @@
   color: transparent;
 }
 
-.p1 div.element-icon.s1h { background-image: url('/assets/images/p1/sword1h.png'); }
-.p1 div.element-icon.s2h { background-image: url('/assets/images/p1/sword2h.png'); }
-.p1 div.element-icon.spr { background-image: url('/assets/images/p1/spear.png'); }
-.p1 div.element-icon.axe { background-image: url('/assets/images/p1/axe.png'); }
-.p1 div.element-icon.whi { background-image: url('/assets/images/p1/whip.png'); }
-.p1 div.element-icon.thr { background-image: url('/assets/images/p1/thrown.png'); }
-.p1 div.element-icon.arr { background-image: url('/assets/images/p1/arrow.png'); }
-.p1 div.element-icon.fis { background-image: url('/assets/images/p1/strike.png'); }
-.p1 div.element-icon.hgn { background-image: url('/assets/images/p1/handgun.png'); }
-.p1 div.element-icon.agn { background-image: url('/assets/images/p1/autogun.png'); }
-.p1 div.element-icon.sgn { background-image: url('/assets/images/p1/shotgun.png'); }
-.p1 div.element-icon.rif { background-image: url('/assets/images/p1/rifle.png'); }
-.p1 div.element-icon.tec { background-image: url('/assets/images/p1/havoc.png'); }
-.p1 div.element-icon.rus { background-image: url('/assets/images/p1/rush.png'); }
+.mib div.element-icon.s1h { background-image: url('/assets/images/p1/sword1h.png'); }
+.mib div.element-icon.sla,
+.mib div.element-icon.s2h { background-image: url('/assets/images/p1/sword2h.png'); }
+.mib div.element-icon.spr { background-image: url('/assets/images/p1/spear.png'); }
+.mib div.element-icon.axe { background-image: url('/assets/images/p1/axe.png'); }
+.mib div.element-icon.whi { background-image: url('/assets/images/p1/whip.png'); }
+.mib div.element-icon.thr { background-image: url('/assets/images/p1/thrown.png'); }
+.mib div.element-icon.arr { background-image: url('/assets/images/p1/arrow.png'); }
+.mib div.element-icon.str,
+.mib div.element-icon.fis { background-image: url('/assets/images/p1/strike.png'); }
+.mib div.element-icon.hgn { background-image: url('/assets/images/p1/handgun.png'); }
+.mib div.element-icon.agn { background-image: url('/assets/images/p1/autogun.png'); }
+.mib div.element-icon.sgn { background-image: url('/assets/images/p1/shotgun.png'); }
+.mib div.element-icon.gun,
+.mib div.element-icon.rif { background-image: url('/assets/images/p1/rifle.png'); }
+.mib div.element-icon.hav,
+.mib div.element-icon.tec { background-image: url('/assets/images/p1/havoc.png'); }
+.mib div.element-icon.rus { background-image: url('/assets/images/p1/rush.png'); }
 
-.p1 div.element-icon.fir { background-image: url('/assets/images/p1/fire.png'); }
-.p1 div.element-icon.i14 { background-image: url('/assets/images/p1/fire.png'); }
-.p1 div.element-icon.ice { background-image: url('/assets/images/p1/ice.png'); }
-.p1 div.element-icon.i15 { background-image: url('/assets/images/p1/ice.png'); }
-.p1 div.element-icon.win { background-image: url('/assets/images/p1/wind.png'); }
-.p1 div.element-icon.i16 { background-image: url('/assets/images/p1/wind.png'); }
-.p1 div.element-icon.ear { background-image: url('/assets/images/p1/earth.png'); }
-.p1 div.element-icon.i17 { background-image: url('/assets/images/p1/earth.png'); }
-.p1 div.element-icon.ele { background-image: url('/assets/images/p1/elec.png'); }
-.p1 div.element-icon.i18 { background-image: url('/assets/images/p1/elec.png'); }
-.p1 div.element-icon.nuk { background-image: url('/assets/images/p1/nuke.png'); }
-.p1 div.element-icon.i19 { background-image: url('/assets/images/p1/nuke.png'); }
-.p1 div.element-icon.bla { background-image: url('/assets/images/p1/blast.png'); }
-.p1 div.element-icon.i20 { background-image: url('/assets/images/p1/blast.png'); }
-.p1 div.element-icon.gra { background-image: url('/assets/images/p1/gravity.png'); }
-.p1 div.element-icon.i21 { background-image: url('/assets/images/p1/gravity.png'); }
+.p1 div.element-icon.i14,
+.p2 div.element-icon.i5,
+.mib div.element-icon.fir { background-image: url('/assets/images/p1/fire.png'); }
+.p1 div.element-icon.i15,
+.mib div.element-icon.ice { background-image: url('/assets/images/p1/ice.png'); }
+.p2 div.element-icon.i6,
+.mib div.element-icon.wat { background-image: url('/assets/images/p1/water.png'); }
+.p1 div.element-icon.i16,
+.p2 div.element-icon.i7,
+.mib div.element-icon.win { background-image: url('/assets/images/p1/wind.png'); }
+.p1 div.element-icon.i17,
+.p2 div.element-icon.i8,
+.mib div.element-icon.ear { background-image: url('/assets/images/p1/earth.png'); }
+.p1 div.element-icon.i18,
+.mib div.element-icon.ele { background-image: url('/assets/images/p1/elec.png'); }
+.p1 div.element-icon.i19,
+.mib div.element-icon.nuk { background-image: url('/assets/images/p1/nuke.png'); }
+.p1 div.element-icon.i20,
+.mib div.element-icon.bla { background-image: url('/assets/images/p1/blast.png'); }
+.p1 div.element-icon.i21,
+.mib div.element-icon.gra { background-image: url('/assets/images/p1/gravity.png'); }
 
-.p1 div.element-icon.exp { background-image: url('/assets/images/p1/expel.png'); }
-.p1 div.element-icon.i22 { background-image: url('/assets/images/p1/expel.png'); }
-.p1 div.element-icon.mir { background-image: url('/assets/images/p1/miracle.png'); }
-.p1 div.element-icon.i23 { background-image: url('/assets/images/p1/miracle.png'); }
-.p1 div.element-icon.dea { background-image: url('/assets/images/p1/death.png'); }
-.p1 div.element-icon.i24 { background-image: url('/assets/images/p1/death.png'); }
-.p1 div.element-icon.cur { background-image: url('/assets/images/p1/curse.png'); }
-.p1 div.element-icon.i25 { background-image: url('/assets/images/p1/curse.png'); }
-.p1 div.element-icon.ner { background-image: url('/assets/images/p1/nerve.png'); }
-.p1 div.element-icon.i26 { background-image: url('/assets/images/p1/nerve.png'); }
-.p1 div.element-icon.occ { background-image: url('/assets/images/p1/occult.png'); }
-.p1 div.element-icon.i28 { background-image: url('/assets/images/p1/occult.png'); }
+.p1 div.element-icon.i22,
+.mib div.element-icon.lig,
+.mib div.element-icon.exp { background-image: url('/assets/images/p1/expel.png'); }
+.p1 div.element-icon.i23,
+.mib div.element-icon.mir { background-image: url('/assets/images/p1/miracle.png'); }
+.p1 div.element-icon.i24,
+.mib div.element-icon.dar,
+.mib div.element-icon.dea { background-image: url('/assets/images/p1/death.png'); }
+.p1 div.element-icon.i25,
+.mib div.element-icon.min,
+.mib div.element-icon.cur { background-image: url('/assets/images/p1/curse.png'); }
+.p1 div.element-icon.i26,
+.mib div.element-icon.ner { background-image: url('/assets/images/p1/nerve.png'); }
+.p1 div.element-icon.i28,
+.mib div.element-icon.ail,
+.mib div.element-icon.occ { background-image: url('/assets/images/p1/occult.png'); }
 
-.p1 div.element-icon.ble { background-image: url('/assets/images/p1/bless.png'); }
-.p1 div.element-icon.i29 { background-image: url('/assets/images/p1/bless.png'); }
-.p1 div.element-icon.pra { background-image: url('/assets/images/p1/prayer.png'); }
-.p1 div.element-icon.i30 { background-image: url('/assets/images/p1/prayer.png'); }
+.p1 div.element-icon.i29,
+.mib div.element-icon.rec,
+.mib div.element-icon.ble { background-image: url('/assets/images/p1/bless.png'); }
+.p1 div.element-icon.i30,
+.mib div.element-icon.sup,
+.mib div.element-icon.pra { background-image: url('/assets/images/p1/prayer.png'); }
 
-.p1 div.element-icon.alm { background-image: url('/assets/images/p1/almighty.png'); }
-.p1 div.element-icon.spe { background-image: url('/assets/images/p1/almighty.png'); }
-.p1 div.element-icon.i32 { background-image: url('/assets/images/p1/almighty.png'); }
+.p1 div.element-icon.i32,
+.p2 div.element-icon.i17,
+.mib div.element-icon.spe,
+.mib div.element-icon.alm { background-image: url('/assets/images/p1/almighty.png'); }
 
 .p1 div.target-icon {
   height: 52px;
@@ -86,52 +102,33 @@
 .p1 div.target-icon.a949494 { background-image: url('/assets/images/p1/949494.png'); }
 
 .p1-fusion-table td.sec:after,
-.p1 tr.fusion-color.second td.price:after {
-  content: "↑";
-}
-
+.p1 tr.fusion-color.second td.price:after { content: "↑"; }
 .p1-fusion-table td.fir:after,
-.p1 tr.fusion-color.first td.price:after {
-  content: "→";
-}
-
+.p1 tr.fusion-color.first td.price:after { content: "→"; }
 .p1-fusion-table td.non:after,
-.p1 tr.fusion-color.none td.price:after {
-  content: "○";
-}
-
+.p1 tr.fusion-color.none td.price:after { content: "○"; }
 .p1-fusion-table td.unf:after,
-.p1 tr.fusion-color.unfav td.price:after {
-  content: "↓";
-}
+.p1 tr.fusion-color.unfav td.price:after { content: "↓"; }
 
 .p1-fusion-table td.blu,
-.p1 tr.fusion-color.blue td.price {
-  color: cyan;
-}
-
+.p1 tr.fusion-color.blue td.price { color: cyan; }
 .p1-fusion-table td.red,
-.p1 tr.fusion-color.red td.price {
-  color: tomato;
-}
+.p1 tr.fusion-color.red td.price { color: tomato; }
+.p1 td.lvl111,
+.p1 td.lvl115 { color: red; }
+.p1 td.lvl112,
+.p1 td.lvl116 { color: orange; }
+.p1 td.lvl113,
+.p1 td.lvl117 { color: magenta; }
+.p1 td.lvl114,
+.p1 td.lvl118 { color: cyan; }
 
 .p1 th.title, .p1 th.nav.active, .p1 th.nav.active a {
   color: black;
   background-color: #a9a9a9;
 }
 
-.p1 td.lvl111, .p1 td.lvl115 {
-  color: red;
-}
-
-.p1 td.lvl112, .p1 td.lvl116 {
-  color: orange;
-}
-
-.p1 td.lvl113, .p1 td.lvl117 {
-  color: magenta;
-}
-
-.p1 td.lvl114, .p1 td.lvl118 {
-  color: cyan;
+.p2t th.title, .p2t th.nav.active, .p2t th.nav.active a {
+  color: white;
+  background-color: #8b668b;
 }

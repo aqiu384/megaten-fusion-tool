@@ -40,7 +40,7 @@ import { Compendium } from '../models/compendium';
       [compendium]="compendium"
       [skillLevels]="demon.skills">
     </app-demon-skills>
-    <app-p1-fusion-table>
+    <app-p1-fusion-table *ngIf="compConfig.appCssClasses[0] === 'p1'">
     </app-p1-fusion-table>
   `
 })

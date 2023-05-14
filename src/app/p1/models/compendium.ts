@@ -1,4 +1,3 @@
-import { Races, SkillElementOrder, InheritElements } from '../constants';
 import { CompendiumConfig, Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -42,7 +41,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const race of Races) {
+    for (const race of this.compConfig.races) {
       inversions[race] = {};
     }
 
@@ -84,7 +83,7 @@ export class Compendium implements ICompendium {
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
 
-    for (const race of Races) {
+    for (const race of this.compConfig.races) {
       ingredients[race] = [];
       results[race] = [];
     }
@@ -99,7 +98,7 @@ export class Compendium implements ICompendium {
       ingredients[enemy.race].push(enemy.lvl);
     }
 
-    for (const race of Races) {
+    for (const race of this.compConfig.races) {
       ingredients[race].sort((a, b) => a - b);
       results[race].sort((a, b) => a - b);
     }
@@ -137,8 +136,9 @@ export class Compendium implements ICompendium {
   }
 
   getSkills(names: string[]): Skill[] {
+    const elemOrder = this.compConfig.elemOrder;
     const skills = names.map(name => this.skills[name]);
-    skills.sort((d1, d2) => (SkillElementOrder[d1.element] - SkillElementOrder[d2.element]) * 10000 + d1.rank - d2.rank);
+    skills.sort((d1, d2) => (elemOrder[d1.element] - elemOrder[d2.element]) * 10000 + d1.rank - d2.rank);
     return skills;
   }
 
@@ -163,7 +163,7 @@ export class Compendium implements ICompendium {
   }
 
   getInheritElems(inherits: number): number[] {
-    return inherits.toString(2).padStart(InheritElements.length, '0').split('').map(i => parseInt(i) * 100);
+    return inherits.toString(2).padStart(this.compConfig.inheritElems.length, '0').split('').map(i => parseInt(i) * 100);
   }
 
   reverseLookupDemon(race: string, lvl: number): string {
