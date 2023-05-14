@@ -1,11 +1,13 @@
-import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
+import { Component, ChangeDetectorRef, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { Compendium } from '../models/compendium';
-import { Demon, CompendiumConfig } from '../models';
+import { FusionEntry } from '../../compendium/models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
+
+import { Demon, CompendiumConfig } from '../models';
+import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
@@ -15,12 +17,27 @@ import { FusionDataService } from '../fusion-data.service';
     <ng-container *ngIf="demon">
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
-        [statHeaders]="['SP Cost']"
-        [stats]="demon.atks.slice(0, 1)"
-        [fusionHeaders]="['Returns']"
-        [inherits]="demon.inherits">
+        [statHeaders]="compConfig.baseAtks"
+        [stats]="demon.atks"
+        [inherits]="demon.inherits"
+        [fusionHeaders]="['Traits', 'Returns']">
+        <td>{{ demon.trait }}</td>
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
+      <table *ngIf="demon.prereq" class="entry-table">
+        <thead><tr><th class="title">Special Fusion Condition</th></tr></thead>
+        <tbody><tr><td>{{ demon.prereq }}</td></tr></tbody>
+      </table>
+      <app-fusion-entry-table *ngIf="mutatesFrom.length"
+        [title]="'Mutates From'"
+        [baseUrl]="'..'"
+        [rowData]="mutatesFrom">
+      </app-fusion-entry-table>
+      <app-fusion-entry-table *ngIf="mutatesTo.length"
+        [title]="'Mutates To'"
+        [baseUrl]="'..'"
+        [rowData]="mutatesTo">
+      </app-fusion-entry-table>
       <table class="entry-table">
         <thead>
           <tr>
@@ -80,6 +97,8 @@ export class DemonEntryComponent implements OnChanges {
 
   statGrowths: number[][];
   partyAffines: string[];
+  mutatesTo: FusionEntry[];
+  mutatesFrom: FusionEntry[];
   affinityLookup = { 0: 'Great', 50: 'Good', 100: 'Norm', 1150: 'Bad', 1200: 'Worst' };
 
   ngOnChanges() {
@@ -91,6 +110,12 @@ export class DemonEntryComponent implements OnChanges {
 
     this.statGrowths = statGrowths;
     this.partyAffines = this.demon.party.map(p => this.affinityLookup[p]);
+    this.mutatesTo = this.compendium.reverseLookupSpecial(this.demon.name)
+      .map(n => this.compendium.getDemon(n))
+      .map(d => ({ price: d.atks[0], race1: d.race, lvl1: d.lvl, name1: d.name }));
+    this.mutatesFrom = this.compendium.getSpecialNameEntries(this.demon.name)
+      .map(n => this.compendium.getDemon(n))
+      .map(d => ({ price: d.atks[0], race1: d.race, lvl1: d.lvl, name1: d.name }));
   }
 }
 
@@ -123,6 +148,7 @@ export class DemonEntryContainerComponent {
   constructor(
     private route: ActivatedRoute,
     private title: Title,
+    private changeDetectorRef: ChangeDetectorRef,
     private currentDemonService: CurrentDemonService,
     private fusionDataService: FusionDataService
   ) {
@@ -162,6 +188,7 @@ export class DemonEntryContainerComponent {
     if (this.compendium && this.name) {
       this.title.setTitle(`${this.name} - ${this.appName}`);
       this.demon = this.compendium.getDemon(this.name);
+      this.changeDetectorRef.markForCheck();
     }
   }
 }

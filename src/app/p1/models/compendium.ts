@@ -6,7 +6,9 @@ export class Compendium implements ICompendium {
   private enemies: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
 
-  private specialNamePairs: { [name: string]: NamePair[] };
+  private specialNameEntries: { [name: string]: string[] } = {};
+  private specialNamePairs: { [name: string]: NamePair[] } = {};
+  private invertedSpecials: { [ingred: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
   private allIngredients: { [race: string]: number[] };
@@ -23,12 +25,22 @@ export class Compendium implements ICompendium {
 
   initImportedData() {
     const { demons, enemies, skills } = this.compConfig;
+    const specialNameEntries: { [name: string]: string[] } = {};
     const specialNamePairs: { [name: string]: NamePair[] } = {};
+    const invertedSpecials: { [ingred: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
+
+    for (const [name1, results] of Object.entries(this.compConfig.mutations)) {
+      invertedSpecials[name1] = results;
+      for (const nameR of results) {
+        if (!specialNameEntries[nameR]) { specialNameEntries[nameR] = []; }
+        specialNameEntries[nameR].push(name1);
+      }
+    }
 
     for (const [name, prereq] of Object.entries(this.compConfig.fusionPrereqs)) {
       demons[name].prereq = prereq;
-      demons[name].fusion = 'special';
+      if (demons[name].fusion === 'normal') { demons[name].fusion = 'special'; }
       specialNamePairs[name] = [{ name1: name, name2: name }];
     }
 
@@ -74,7 +86,9 @@ export class Compendium implements ICompendium {
     this.enemies = enemies;
     this.skills = skills;
 
+    this.specialNameEntries = specialNameEntries
     this.specialNamePairs = specialNamePairs;
+    this.invertedSpecials = invertedSpecials;
     this.invertedDemons = inversions;
   }
 
@@ -106,7 +120,7 @@ export class Compendium implements ICompendium {
     const allies = Object.keys(this.demons).map(name => <Demon>this.demons[name]);
     const enemies = Object.keys(this.enemies).map(name => <Demon>this.enemies[name]);
     this._allDemons = enemies.concat(allies);
-    this._allSkills = skills;
+    this._allSkills = skills.filter(s => s.rank < 90);
     this.allIngredients = ingredients;
     this.allResults = results;
   }
@@ -155,7 +169,7 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNameEntries(name: string): string[] {
-    return [];
+    return this.specialNameEntries[name] || [];
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
@@ -171,7 +185,7 @@ export class Compendium implements ICompendium {
   }
 
   reverseLookupSpecial(ingredient: string): string[] {
-    return [];
+    return this.invertedSpecials[ingredient] || [];
   }
 
   isElementDemon(name: string) {

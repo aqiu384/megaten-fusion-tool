@@ -34,6 +34,7 @@ export interface CompendiumConfig extends BaseCompendiumConfig {
   fusionPrereqs: { [name: string]: string };
   specialRecipes: { [name: string]: string[] };
   growthTypes: { [name: string]: number[][] };
+  mutations: { [name: string]: string[] };
 
   resistCodes: { [code: string]: number };
   elemOrder: { [elem: string]: number };

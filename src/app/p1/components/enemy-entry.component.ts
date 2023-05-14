@@ -9,12 +9,17 @@ import { Compendium } from '../models/compendium';
     <app-demon-stats
       [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
       [price]="demon.price"
-      [statHeaders]="compConfig.baseStats"
-      [stats]="demon.estats"
-      [fusionHeaders]="['Trait', 'Drops']"
+      [statHeaders]="compConfig.enemyStats"
+      [stats]="demon.stats"
+      [fusionHeaders]="['Traits', 'Drops']"
       [inherits]="demon.inherits">
       <td>{{ demon.trait }}</td>
       <td>{{ demon.drop }}</td>
+    </app-demon-stats>
+    <app-demon-stats
+      [title]="'Stats'"
+      [statHeaders]="compConfig.baseStats"
+      [stats]="demon.atks">
     </app-demon-stats>
     <app-demon-resists *ngIf="compConfig.presistElems.length"
       [resistHeaders]="compConfig.presistElems"

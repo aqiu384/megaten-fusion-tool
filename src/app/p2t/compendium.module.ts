@@ -16,6 +16,7 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import GROWTH_TYPES_JSON from './data/growth-types.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import PARTY_AFFINITY_JSON from './data/party-affinities.json';
+import MUTATIONS_JSON from './data/mutations.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   return target.reduce((acc, s, i) => { acc[s] = i; return acc; }, {});
@@ -40,13 +41,13 @@ function loadDemons(): { [name: string]: Demon } {
       name,
       price:      0,
       inherits:   elemOrder[json['subtype'] || 'alm'],
-      atks:       json.atks,
+      atks:       ([json['cards'] || 0]).concat(json.atks),
       stats:      json.stats,
       resists,
       presists:   [],
       mresists:   resists,
       growth:     json.growth,
-      fusion:     'normal',
+      fusion:     json['cards'] ? 'normal' : 'accident',
       skills:     json.skills.reduce((acc, s, i) => { if (s.length > 1) { acc[s] = COMP_CONFIG_JSON.learnRanks[i]; } return acc; }, {}),
       drop:       json.drop,
       isEnemy:    false,
@@ -54,7 +55,7 @@ function loadDemons(): { [name: string]: Demon } {
       affinities: (json['inherits'] || 'oooo').split('').map(i => i === 'o'),
       trait:      json.traits.join(', '),
       transfers:  {},
-      area:       'None'
+      area:       '-'
     };
   }
   return demons;
@@ -83,8 +84,8 @@ function loadEnemies(): { [name: string]: Demon } {
       skills:     json.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
       drop:       json.drop,
       isEnemy:    true,
-      party:      (json['party'] || '------').split('').map(p => resistCodes[p]),
-      affinities: [1, 1, 1, 1],
+      party:      [],
+      affinities: [],
       trait:      json.traits.join(', '),
       transfers:  {},
       area:       '-'
@@ -99,8 +100,8 @@ function loadSkills(): { [name: string]: Skill } {
     skills[name] = {
       name,
       element: json.element,
-      cost:    0,
-      rank:    json['power'] / 10 || 0,
+      cost:    json['cost'] || 0,
+      rank:    (json['restrict'] ? 95 : 0) + (json['cost'] - 1951 || 0) + (json['power'] / 100 || 0),
       effect:  json['power'] ? json['power'] + ' dmg' + (json['effect'] ? ', ' + json['effect'] : '') : json['effect'],
       target:  json['target'] || 'Self',
       level:   0,
@@ -130,6 +131,7 @@ const compendiumConfig: CompendiumConfig = {
   fusionPrereqs:   FUSION_PREREQS_JSON,
   specialRecipes:  {},
   growthTypes:     GROWTH_TYPES_JSON,
+  mutations:       MUTATIONS_JSON,
 
   demons:    loadDemons(),
   enemies:   loadEnemies(),
