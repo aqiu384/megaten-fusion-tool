@@ -4,7 +4,7 @@ import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPairResult } from '../models/conversions';
 
 @Component({
-  selector: 'app-mib-fusion-table',
+  selector: 'app-p1-fusion-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-fusion-pair-table
@@ -17,6 +17,6 @@ import { toFusionPairResult } from '../models/conversions';
     </app-fusion-pair-table>
   `
 })
-export class MibFusionTableComponent extends SmtFusionTableComponent {
+export class P1FusionTableComponent extends SmtFusionTableComponent {
   toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPairResult(currentDemon, names, this.compendium);
 }

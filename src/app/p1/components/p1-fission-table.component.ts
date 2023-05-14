@@ -4,7 +4,7 @@ import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPair } from '../models/conversions';
 
 @Component({
-  selector: 'app-mib-fission-table',
+  selector: 'app-p1-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table *ngIf="fusionPrereq" class="list-table">
@@ -25,6 +25,6 @@ import { toFusionPair } from '../models/conversions';
     </app-fusion-pair-table>
   `
 })
-export class MibFissionTableComponent extends SmtFissionTableComponent {
+export class P1FissionTableComponent extends SmtFissionTableComponent {
   toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPair(names, this.compendium);
 }

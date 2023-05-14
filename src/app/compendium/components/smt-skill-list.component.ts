@@ -33,7 +33,7 @@ import { Skill } from '../models';
       <ul class="comma-list">
         <li *ngFor="let entry of data.transfer">
           <ng-container *ngIf="entry.level >= -99">
-            <a routerLink="../{{ isPersona ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
+            <a routerLink="../{{ hasSkillCards ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
             {{ entry.level | skillLevelToShortString }}
           </ng-container>
           <ng-container *ngIf="entry.level < -99">{{ entry.demon }} </ng-container>
@@ -50,6 +50,7 @@ export class SmtSkillListRowComponent {
   @Input() hasLvl = false;
   @Input() isPersona = false;
   @Input() hasTransferTitle = false;
+  @Input() hasSkillCards = false;
   @Input() data: Skill;
 }
 
@@ -88,6 +89,7 @@ export class SmtSkillListRowComponent {
           [hasRank]="hasRank"
           [isPersona]="isPersona"
           [hasTransferTitle]="!!transferTitle"
+          [hasSkillCards]="transferTitle.includes('Card')"
           [data]="data"
           [ngClass]="{
             extra: data.rank > 70 && data.rank < 90,

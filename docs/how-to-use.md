@@ -270,10 +270,11 @@
 * https://www31.atwiki.jp/abaddon/pages/37.html
 * https://megamitensei.fandom.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._King_Abaddon_Skills
 
-## <a name="mib"></a>[Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/mib)
+## <a name="p1"></a>[Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/p1)
 ### Data Sources
 * http://persona1.wikidot.com
 * http://p1psp.gkwiki2.com/
+* http://www.se-inst.com/html32/lib/pers_ms_dl.html
 
 ## <a name="p3"></a>[Persona 3](https://aqiu384.github.io/megaten-fusion-tool/p3)
 ### [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)

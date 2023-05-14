@@ -184,6 +184,6 @@ export const PartyMembers = [
 export const RaceOrder = getEnumOrder(Races);
 export const SkillElementOrder = getEnumOrder(SkillElements);
 
-export const FUSION_SETTINGS_KEY = 'mib-fusion-tool-settings';
+export const FUSION_SETTINGS_KEY = 'p1-fusion-tool-settings';
 export const FUSION_SETTINGS_VERSION = 1709211400;
 export const APP_TITLE = 'Megami Ibunroku Persona';

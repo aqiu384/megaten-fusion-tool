@@ -8,10 +8,10 @@ import { FusionDataService } from '../fusion-data.service';
 import { Arcanas } from '../constants';
 
 @Component({
-  selector: 'app-mib-fusion-chart',
+  selector: 'app-p1-fusion-chart',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table class="mib-fusion-table">
+    <table class="p1-fusion-table">
       <tbody>
         <tr><th class="title" [attr.colspan]="table[0].length">{{ normTitle }}</th></tr>
         <tr><th *ngFor="let race of table[0]">{{ race.slice(0, 4) }}</th></tr>
@@ -23,7 +23,7 @@ import { Arcanas } from '../constants';
         <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, 4) }}</th></tr>
       </tbody>
     </table>
-    <table class="mib-fusion-table">
+    <table class="p1-fusion-table">
       <tbody>
         <tr><th class="title" [attr.colspan]="elemTable[0].length">{{ elemTitle }}</th></tr>
         <tr><th *ngFor="let race of elemTable[0]">{{ race.slice(0, 4) }}</th></tr>
@@ -46,7 +46,7 @@ import { Arcanas } from '../constants';
     td.Empt { background-color: transparent; color: transparent; }
   `]
 })
-export class MibFusionChartComponent implements OnChanges {
+export class P1FusionChartComponent implements OnChanges {
   @Input() normChart: FusionChart;
   @Input() normTitle: string;
   @Input() elemTitle: string;
@@ -142,11 +142,11 @@ export class MibFusionChartComponent implements OnChanges {
   selector: 'app-fusion-chart-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-mib-fusion-chart
+    <app-p1-fusion-chart
       [normChart]="normChart"
       [normTitle]="appName + ' - Normal Fusions'"
       [elemTitle]="appName + ' - Gem Fusions'">
-    </app-mib-fusion-chart>
+    </app-p1-fusion-chart>
   `
 })
 export class FusionChartContainerComponent implements OnInit, OnDestroy {

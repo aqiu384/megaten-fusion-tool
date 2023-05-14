@@ -111,8 +111,8 @@ const appRoutes: Routes = [
     data: { appName: 'Soul Hackers 2' }
   },
   {
-    path: 'mib',
-    loadChildren: () => import('./mib/compendium.module').then(m => m.CompendiumModule),
+    path: 'p1',
+    loadChildren: () => import('./p1/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Megami Ibunroku Persona' }
   },
   {

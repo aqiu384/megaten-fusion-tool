@@ -6,7 +6,7 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
-import { PersonaCompendiumModule } from './persona-compendium.module';
+import { PQCompendiumModule } from './pq-compendium.module';
 import { CompendiumConfig } from './models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -111,7 +111,7 @@ export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
 @NgModule({
   imports: [
     CommonModule,
-    PersonaCompendiumModule,
+    PQCompendiumModule,
     CompendiumRoutingModule
   ],
   providers: [

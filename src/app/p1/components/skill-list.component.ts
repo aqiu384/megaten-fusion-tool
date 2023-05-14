@@ -2,15 +2,15 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
 import { Title } from '@angular/platform-browser';
 
 import { SkillListContainerComponent as SLCC } from '../../compendium/containers/skill-list.component';
-import { SkillElementOrder as ElementOrder } from '../constants';
 import { FusionDataService } from '../fusion-data.service';
+import { CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-skill-list-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-skill-list
-      [elemOrder]="elemOrder"
+      [elemOrder]="compConfig.elemOrder"
       [hasRank]="false"
       [hasTarget]="true"
       [isPersona]="true"
@@ -20,8 +20,8 @@ import { FusionDataService } from '../fusion-data.service';
   `
 })
 export class SkillListContainerComponent extends SLCC {
-  elemOrder = ElementOrder;
-  defaultSortFun = (a, b) => (ElementOrder[a.element] - ElementOrder[b.element]) * 10000 + a.rank - b.rank;
+  compConfig: CompendiumConfig;
+  transferTitle: string;
 
   constructor(
     title: Title,
@@ -29,6 +29,12 @@ export class SkillListContainerComponent extends SLCC {
     fusionDataService: FusionDataService
   ) {
     super(title, changeDetectorRef, fusionDataService);
+    this.compConfig = fusionDataService.compConfig;
     this.appName = `List of Skills - ${fusionDataService.appName}`;
+
+    this.defaultSortFun = (a, b) => (
+      this.compConfig.elemOrder[a.element] -
+      this.compConfig.elemOrder[b.element]
+    ) * 10000 + a.rank - b.rank;
   }
 }

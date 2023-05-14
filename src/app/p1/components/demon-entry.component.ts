@@ -4,16 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
 import { Compendium } from '../models/compendium';
-import { Demon } from '../models';
-import {
-  BaseStats,
-  PartyMembers,
-  PhysResistanceElements,
-  MagicResistanceElements,
-  SkillElementOrder,
-  InheritElements
-} from '../constants';
-
+import { Demon, CompendiumConfig } from '../models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
 
@@ -22,37 +13,22 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container *ngIf="demon">
-      <h2>Lvl {{ demon.lvl }} {{ demon.race }} {{ demon.name }}</h2>
+      <app-demon-stats
+        [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
+        [statHeaders]="['SP Cost']"
+        [stats]="demon.atks.slice(0, 1)"
+        [fusionHeaders]="['Returns']"
+        [inherits]="demon.inherits">
+        <td>{{ demon.drop }}</td>
+      </app-demon-stats>
       <table class="entry-table">
         <thead>
           <tr>
-            <th colspan="5" class="title">Stats</th>
+            <th [attr.colSpan]="compConfig.baseStats.length + 1" class="title">Stat Growths</th>
           </tr>
           <tr>
-            <th>SP Cost</th>
-            <th>Growth Type</th>
-            <th>Type</th>
-            <th>Subtype</th>
-            <th>Returns</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ demon.atks[0] }}</td>
-            <td>{{ demon.growth }}</td>
-            <td>{{ demon.type }}</td>
-            <td>{{ demon.subtype }}</td>
-            <td>{{ demon.drop }}</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="entry-table">
-        <thead>
-          <tr>
-            <th [attr.colSpan]="statHeaders.length" class="title">Stat Growths</th>
-          </tr>
-          <tr>
-            <th *ngFor="let stat of statHeaders">{{ stat }}</th>
+            <th>Rank</th>
+            <th *ngFor="let stat of compConfig.baseStats">{{ stat }}</th>
           </tr>
         </thead>
         <tbody>
@@ -64,41 +40,33 @@ import { FusionDataService } from '../fusion-data.service';
       </table>
       <table class="entry-table">
         <thead>
-          <tr>
-            <th [attr.colSpan]="affinityHeaders.length" class="title">
-              Party Affinities
-            </th>
-          </tr>
-          <tr>
-            <th *ngFor="let aff of affinityHeaders">{{ aff }}</th>
-          </tr>
+          <tr><th [attr.colSpan]="compConfig.party.length" class="title">Party Affinities</th></tr>
+          <tr><th *ngFor="let member of compConfig.party">{{ member }}</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td *ngFor="let aff of demon.affinity.split('')">{{ affinityLookup[aff] }}</td>
-          </tr>
+          <tr><td *ngFor="let affine of partyAffines;">{{ affine }}</td></tr>
         </tbody>
       </table>
-      <app-demon-resists
-        [resistHeaders]="pResistanceHeaders"
+      <app-demon-resists *ngIf="compConfig.presistElems.length"
+        [resistHeaders]="compConfig.presistElems"
         [resists]="demon.presists">
       </app-demon-resists>
       <app-demon-resists
-        [resistHeaders]="mResistanceHeaders"
+        [resistHeaders]="compConfig.mresistElems"
         [resists]="demon.mresists">
       </app-demon-resists>
       <app-demon-inherits
-        [inheritHeaders]="inheritHeaders"
-        [inherits]="compendium.getInheritElems(demon.inherits)">
+        [inheritHeaders]="compConfig.inheritElems"
+        [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-skills
-        [elemOrder]="elemOrder"
+        [elemOrder]="compConfig.elemOrder"
         [hasTarget]="true"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-mib-fission-table>
-      </app-mib-fission-table>
+      <app-p1-fission-table>
+      </app-p1-fission-table>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">
     </app-demon-missing>
@@ -108,26 +76,21 @@ export class DemonEntryComponent implements OnChanges {
   @Input() name: string;
   @Input() demon: Demon;
   @Input() compendium: Compendium;
+  @Input() compConfig: CompendiumConfig;
 
   statGrowths: number[][];
-  statHeaders = ['Rank'].concat(BaseStats).concat(['MAtk', 'MDef']);
-  affinityHeaders = PartyMembers;
-  affinityLookup = { 'e': 'Best', 'o': 'Good', 'a': 'Bad', 'w': 'Worst' };
-  pResistanceHeaders = PhysResistanceElements;
-  mResistanceHeaders = MagicResistanceElements;
-  inheritHeaders = InheritElements;
-  elemOrder = SkillElementOrder;
+  partyAffines: string[];
+  affinityLookup = { 0: 'Great', 50: 'Good', 100: 'Norm', 1150: 'Bad', 1200: 'Worst' };
 
   ngOnChanges() {
-    const initStats = this.demon.stats.concat(this.demon.atks.slice(1));
-    const statDeltas = this.compendium.getStatGrowths(this.demon.growth);
-    const statTotals = [initStats];
+    const statGrowths = [this.demon.stats];
 
-    for (const row of statDeltas) {
-      statTotals.push(statTotals[statTotals.length - 1].map((s, i) => s + row[i]));
+    for (const row of this.compendium.getStatGrowths(this.demon.growth)) {
+      statGrowths.push(statGrowths[statGrowths.length - 1].map((s, i) => s + row[i]));
     }
 
-    this.statGrowths = statTotals;
+    this.statGrowths = statGrowths;
+    this.partyAffines = this.demon.party.map(p => this.affinityLookup[p]);
   }
 }
 
@@ -138,11 +101,13 @@ export class DemonEntryComponent implements OnChanges {
     <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
     <app-enemy-entry *ngIf="demon && demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [compConfig]="compConfig"
       [compendium]="compendium">
     </app-enemy-entry>
   `
@@ -152,6 +117,7 @@ export class DemonEntryContainerComponent {
   name: string;
   demon: Demon;
   compendium: Compendium;
+  compConfig: CompendiumConfig;
   appName = 'Test App';
 
   constructor(
@@ -161,6 +127,7 @@ export class DemonEntryContainerComponent {
     private fusionDataService: FusionDataService
   ) {
     this.appName = fusionDataService.appName;
+    this.compConfig = fusionDataService.compConfig;
   }
 
   ngOnInit() {

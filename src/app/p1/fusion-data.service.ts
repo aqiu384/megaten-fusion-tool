@@ -1,12 +1,13 @@
-import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
 
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
-import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { CompendiumConfig } from './models';
+
 import { APP_TITLE, FUSION_SETTINGS_KEY } from './constants';
 
 @Injectable()
@@ -15,6 +16,7 @@ export class FusionDataService implements IFusionDataService {
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   settingsKey = FUSION_SETTINGS_KEY;
   appName = APP_TITLE + ' Fusion Calculator';
+  compConfig: CompendiumConfig;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -24,10 +26,12 @@ export class FusionDataService implements IFusionDataService {
   private _fusionChart$ = new BehaviorSubject(this._fusionChart);
   fusionChart = this._fusionChart$.asObservable();
 
-  constructor(private router: Router) {
-    this._compendium = new Compendium();
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
+    this._compendium = new Compendium(compConfig);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
+
+    this.compConfig = compConfig;
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }

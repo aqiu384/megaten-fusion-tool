@@ -1,11 +1,11 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-mib-compendium',
+  selector: 'app-p1-compendium',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-compendium
-      [ngClass]="'mib'"
+      [ngClass]="'p1'"
       [mainList]="'persona'"
       [hasSettings]="false"
       [otherLinks]="[{ title: 'Demon List', link: 'demons' }]">
