@@ -276,6 +276,12 @@
 * http://p1psp.gkwiki2.com/
 * http://www.se-inst.com/html32/lib/pers_ms_dl.html
 
+## <a name="p2t"></a>[Persona 2: Innocent Sin](https://aqiu384.github.io/megaten-fusion-tool/p2t)
+
+## <a name="p2b"></a>[Persona 2: Eternal Punishment](https://aqiu384.github.io/megaten-fusion-tool/p2b)
+### Data Sources
+* https://tartarus.rpgclassics.com/persona2ep/
+
 ## <a name="p3"></a>[Persona 3](https://aqiu384.github.io/megaten-fusion-tool/p3)
 ### [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)
 * Aeon Social Link added

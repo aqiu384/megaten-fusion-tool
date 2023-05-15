@@ -37,6 +37,8 @@ Fusion tool framework for Megami Tensei games.
 * [Devil Summoner: Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
 * [Soul Hackers 2](https://aqiu384.github.io/megaten-fusion-tool/sh2)
 * [Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/p1)
+* [Persona 2: Innocent Sin](https://aqiu384.github.io/megaten-fusion-tool/p2t)
+* [Persona 2: Eternal Punishment](https://aqiu384.github.io/megaten-fusion-tool/p2b)
 * [Persona 3](https://aqiu384.github.io/megaten-fusion-tool/p3)
 * [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3fes)
 * [Persona 3 FES: The Answer](https://aqiu384.github.io/megaten-fusion-tool/p3aeg)
