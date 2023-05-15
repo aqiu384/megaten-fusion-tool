@@ -121,6 +121,11 @@ const appRoutes: Routes = [
     data: { appName: 'Person 2: Innocent Sin' }
   },
   {
+    path: 'p2b',
+    loadChildren: () => import('./p2b/compendium.module').then(m => m.CompendiumModule),
+    data: { appName: 'Person 2: Eternal Punishment' }
+  },
+  {
     path: 'p3',
     loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Persona 3' }

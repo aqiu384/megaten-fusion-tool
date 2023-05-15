@@ -9,11 +9,11 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants'
 import { P1CompendiumModule } from '../p1/p1-compendium.module';
 import { Demon, Skill, CompendiumConfig } from '../p1/models';
 
+import GROWTH_TYPES_JSON from '../p2t/data/growth-types.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
-import GROWTH_TYPES_JSON from './data/growth-types.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import PARTY_AFFINITY_JSON from './data/party-affinities.json';
 import MUTATIONS_JSON from './data/mutations.json';
@@ -53,6 +53,7 @@ function loadDemons(): { [name: string]: Demon } {
       transfers:  {},
       area:       '-'
     };
+    demons[name].skills[COMP_CONFIG_JSON.unknownPowers[json.unknown]] = 5375;
   }
   return demons;
 }
@@ -110,8 +111,8 @@ function loadSkills(): { [name: string]: Skill } {
 }
 
 const compendiumConfig: CompendiumConfig = {
-  appTitle: 'Persona 2: Innocent Sin',
-  appCssClasses: ['p2t', 'p2', 'mib'],
+  appTitle: 'Persona 2: Eternal Punishment',
+  appCssClasses: ['p2b', 'p2', 'mib'],
 
   races:           COMP_CONFIG_JSON.races,
   resistElems:     COMP_CONFIG_JSON.resistElems,

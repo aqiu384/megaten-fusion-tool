@@ -1,0 +1,110 @@
+{
+  "baseAtks": [
+    "Tarot Cards",
+    "SP cost",
+    "PAtk",
+    "PDef",
+    "MAtk",
+    "MDef"
+  ],
+  "baseStats": [
+    "St",
+    "Vi",
+    "Dx",
+    "Ag",
+    "Lu"
+  ],
+  "enemyStats": [
+    "HP"
+  ],
+  "learnRanks": [0, 2, 3, 4, 5, 6, 7, 8, 4585, 5085, 3883, 3883],
+  "rankExp": {
+    "normal":   [2,  4,  8,  12, 16, 20, 26],
+    "earliest": [2,  2,  4,  4,  14, 24, 38],
+    "early":    [2,  4,  6,  8,  14, 22, 32],
+    "later":    [2,  6,  12, 20, 18, 16, 14],
+    "latest":   [2,  8,  16, 24, 16, 12, 8],
+    "short":    [2,  4,  6,  8,  10, 12, 14],
+    "long":     [2,  6,  12, 18, 24, 32, 42]
+  },
+  "unknownPowers": {
+    "atk": "Unknown Attack",
+    "rec": "Unknown Recovery",
+    "def": "Unknown Defense",
+    "sup": "Unknown Assist",
+    "rev": "Unknown Revival",
+    "spe": "Unknown Special"
+  },
+  "races": [
+    "Magician",
+    "Priestess",
+    "Empress",
+    "Emperor",
+    "Hierophant",
+    "Lovers",
+    "Chariot",
+    "Strength",
+    "Hermit",
+    "Fortune",
+    "Justice",
+    "Hanged",
+    "Death",
+    "Temperance",
+    "Devil",
+    "Tower",
+    "Star",
+    "Moon",
+    "Sun",
+    "Judgement",
+    "World",
+    "Fool",
+    "Rod",
+    "Cup",
+    "Sword",
+    "Pentacle"
+  ],
+  "resistCodes": {
+    "x": 1200,
+    "w": 1150,
+    "-": 100,
+    "T": 75,
+    "s": 50,
+    "S": 25,
+    "n": 0,
+    "R": -50,
+    "r": -100,
+    "d": -1100
+  },
+  "inheritElems": [
+    "fir",
+    "wat",
+    "ear",
+    "win"
+  ],
+  "resistElems": [
+    "sla",
+    "gun",
+    "str",
+    "thr",
+    "hav",
+    "fir",
+    "wat",
+    "win",
+    "ear",
+    "ice",
+    "ele",
+    "nuk",
+    "lig",
+    "dar",
+    "gra",
+    "ner",
+    "min"
+  ],
+  "skillElems": [
+    "alm",
+    "rec",
+    "sup",
+    "ail",
+    "spe"
+  ]
+}

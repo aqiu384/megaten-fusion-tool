@@ -2,7 +2,6 @@
   "Adramelech": {
     "atks": [435, 202, 198, 149, 151],
     "drop": "Gryva Card, Pressure Card",
-    "inherit": "None",
     "lvl": 57,
     "race": "Hanged",
     "resists": "------------xr-ss",
@@ -13,7 +12,6 @@
   "Aeshma": {
     "atks": [317, 144, 150, 109, 111],
     "drop": "Rattle Drink, Freila Card",
-    "inherit": "None",
     "lvl": 42,
     "race": "Tower",
     "resists": "------------nn-ss",
@@ -24,29 +22,28 @@
   "Agathion": {
     "atks": [66, 28, 28, 20, 20],
     "drop": "Agi Card",
-    "inherit": "Fire",
     "lvl": 8,
     "race": "Star",
     "resists": "-----nx-----ss-ss",
     "skills": ["Agi", "Dormina", "Dia", "Escape"],
     "stats": [6, 6, 7, 7, 5],
+    "subtype": "fir",
     "traits": ["Timid", "Joyful"]
   },
   "Agrippa": {
     "atks": [216, 106, 110, 86, 89],
     "drop": "Rattle Drink, Zanma Card",
-    "inherit": "Fire",
     "lvl": 31,
     "race": "Magician",
     "resists": "wwwwwSSSSSSSSSSSS",
     "skills": ["Maragion", "Zanma", "Poisma", "Summon Spirits"],
     "stats": [22, 24, 31, 21, 25],
+    "subtype": "fir",
     "traits": ["Forceful", "Wise"]
   },
   "Ah Puch": {
     "atks": [524, 240, 232, 172, 175],
     "drop": "Megido Card, Nuclear Card",
-    "inherit": "None",
     "lvl": 66,
     "race": "Death",
     "resists": "------------rr-ss",
@@ -57,7 +54,6 @@
   "Alice": {
     "atks": [4500, 276, 286, 204, 206],
     "drop": "Linden Amulet",
-    "inherit": "None",
     "lvl": 80,
     "race": "Lovers",
     "resists": "ssssssssssssnnsnn",
@@ -68,18 +64,17 @@
   "Angel": {
     "atks": [106, 64, 64, 42, 42],
     "drop": "Dia Card",
-    "inherit": "Water",
     "lvl": 18,
     "race": "Judgement",
     "resists": "------------nx-ss",
     "skills": ["Malaqua", "Dia", "Hama"],
     "stats": [14, 14, 14, 14, 15],
+    "subtype": "wat",
     "traits": ["Haughty", "Foolish"]
   },
   "Ankou": {
     "atks": [336, 162, 154, 107, 106],
     "drop": "Fluted Legs",
-    "inherit": "None",
     "lvl": 44,
     "race": "Death",
     "resists": "------------rr-ss",
@@ -90,18 +85,17 @@
   "Apep": {
     "atks": [67, 30, 34, 19, 19],
     "drop": "Bufu Card",
-    "inherit": "Water",
     "lvl": 9,
     "race": "Strength",
     "resists": "-----xS-----ss-ss",
     "skills": ["Feral Bite"],
     "stats": [6, 8, 6, 9, 6],
+    "subtype": "wat",
     "traits": ["Forceful", "Wise"]
   },
   "Ares": {
     "atks": [426, 196, 180, 108, 105],
     "drop": "Muscle Drink, Inferno Card",
-    "inherit": "None",
     "lvl": 50,
     "race": "Chariot",
     "resists": "-----Sx-----ss-ss",
@@ -112,18 +106,17 @@
   "Barbatos": {
     "atks": [314, 142, 138, 108, 109],
     "drop": "Zanma Card, Wavelength Card",
-    "inherit": "Earth",
     "lvl": 41,
     "race": "Hanged",
     "resists": "-------xr---ss-ss",
     "skills": ["Zanma", "Confusing Dance", "Triple Down", "Great Magnus"],
     "stats": [30, 28, 38, 33, 34],
+    "subtype": "ear",
     "traits": ["Forceful", "Gloomy", "Wise"]
   },
   "Blob": {
     "atks": [36, 24, 20, 14, 14],
     "drop": "Poisma Card",
-    "inherit": "None",
     "lvl": 5,
     "race": "Tower",
     "resists": "------------xn-nn",
@@ -134,51 +127,50 @@
   "Camazotz": {
     "atks": [212, 110, 100, 56, 53],
     "drop": "Chewing Soul, Miracle Egg",
-    "inherit": "Wind",
     "lvl": 28,
     "race": "Temperance",
     "resists": "-r-r--------ss-ss",
     "skills": ["Life Drain", "Venom Needle"],
     "stats": [27, 22, 17, 30, 15],
+    "subtype": "win",
     "traits": ["Forceful", "Gloomy", "Wise"]
   },
   "Catoblepas": {
     "atks": [387, 152, 164, 89, 90],
     "drop": "Bead, Magnadyne Card",
-    "inherit": "Earth",
     "lvl": 42,
     "race": "Hermit",
     "resists": "TTTTT-------ss-ww",
     "skills": ["Poison Breath", "Medusa's Eye", "Feral Bite"],
     "stats": [34, 40, 28, 32, 33],
+    "subtype": "ear",
     "traits": ["Timid", "Gloomy", "Foolish"]
   },
   "Cerberus": {
     "atks": [431, 190, 180, 118, 116],
     "drop": "Agidyne Card, Hell Hand",
-    "inherit": "Earth",
     "lvl": 51,
     "race": "Fortune",
     "resists": "-------xnRRRss-ss",
     "skills": ["Feral Bite", "Fire Breath", "High Pressure"],
     "stats": [44, 39, 39, 40, 41],
+    "subtype": "ear",
     "traits": ["Forceful", "Wise"]
   },
   "Cockatrice": {
     "atks": [108, 56, 48, 27, 25],
     "drop": "Balzac Card",
-    "inherit": "Wind",
     "lvl": 14,
     "race": "World",
     "resists": "SxSxS---x---ss-ss",
     "skills": ["Wing Flap", "Poison Breath"],
     "stats": [14, 10, 8, 13, 10],
+    "subtype": "win",
     "traits": ["Foolish"]
   },
   "Crowley": {
     "atks": [282, 132, 128, 104, 105],
     "drop": "Chewing Soul, Megido Card",
-    "inherit": "None",
     "lvl": 38,
     "race": "Magician",
     "resists": "xxxxxrrrrrrrrrrrr",
@@ -189,18 +181,17 @@
   "Culebre": {
     "atks": [267, 106, 110, 65, 65],
     "drop": "Bufu Card, Chakram",
-    "inherit": "Water",
     "lvl": 29,
     "race": "Strength",
     "resists": "--x-xTTTTSSSss-ss",
     "skills": ["Ice Breath", "Waterspout", "Feral Bite", "Wing Flap"],
     "stats": [24, 26, 21, 23, 21],
+    "subtype": "wat",
     "traits": ["Forceful", "Wise"]
   },
   "Cwn Annwn": {
     "atks": [183, 104, 94, 56, 51],
     "drop": "Chewing Soul, Poisma Card",
-    "inherit": "None",
     "lvl": 28,
     "race": "Hermit",
     "resists": "TTTTT-------ss-ww",
@@ -211,7 +202,6 @@
   "Demeter": {
     "atks": [222, 102, 104, 80, 80],
     "drop": "Rattle Drink, Diarama Card",
-    "inherit": "None",
     "lvl": 31,
     "race": "World",
     "resists": "------------nn-ss",
@@ -222,7 +212,6 @@
   "Demon King": {
     "atks": [301, 126, 122, 83, 83],
     "drop": "Energy Drink, Gryva Card",
-    "inherit": "None",
     "lvl": 34,
     "race": "Devil",
     "resists": "------------xn-ss",
@@ -233,7 +222,6 @@
   "Empusa": {
     "atks": [55, 24, 22, 21, 22],
     "drop": "Medicine, Bufu Card",
-    "inherit": "None",
     "lvl": 7,
     "race": "Magician",
     "resists": "------------xn-ss",
@@ -244,7 +232,6 @@
   "Erinyes": {
     "atks": [62, 32, 34, 26, 25],
     "drop": "Aques Card",
-    "inherit": "None",
     "lvl": 10,
     "race": "Moon",
     "resists": "---nn-------nn-nn",
@@ -255,7 +242,6 @@
   "Fafnir": {
     "atks": [454, 188, 204, 119, 122],
     "drop": "High Jet Knuckle",
-    "inherit": "None",
     "lvl": 52,
     "race": "Strength",
     "resists": "--x-xTTTTSSSss-ss",
@@ -266,7 +252,6 @@
   "Faust": {
     "atks": [155, 70, 72, 56, 58],
     "drop": "Energy Drink, Frei Card",
-    "inherit": "None",
     "lvl": 20,
     "race": "Magician",
     "resists": "------------xn-ss",
@@ -277,51 +262,50 @@
   "Fenrir": {
     "atks": [458, 266, 244, 150, 143],
     "drop": "All Incense",
-    "inherit": "Fire",
     "lvl": 70,
     "race": "Fortune",
     "resists": "-----n------nn-ss",
     "skills": ["Firestorm", "Stun Bite", "Frenzy", "Tackle"],
     "stats": [63, 52, 47, 59, 58],
+    "subtype": "fir",
     "traits": ["Haughty", "Snappish", "Forceful"]
   },
   "Fjalar": {
     "atks": [145, 68, 62, 43, 41],
     "drop": "Revival Bead, Balm of Life",
-    "inherit": "Wind",
     "lvl": 19,
     "race": "Temperance",
     "resists": "SxSxS---x---ss-ss",
     "skills": ["Magaru", "Bash", "Wing Flap"],
     "stats": [15, 12, 14, 20, 14],
+    "subtype": "win",
     "traits": ["Joyful", "Wise"]
   },
   "Gaia": {
     "atks": [4664, 254, 284, 185, 195],
     "drop": "Cradle of Creation",
-    "inherit": "Earth",
     "lvl": 72,
     "race": "Empress",
     "resists": "--------n---nn-ss",
     "skills": ["Megidola", "Earth's Anger", "Myriad Arrows", "Tetrakarn"],
     "stats": [55, 70, 64, 58, 52],
+    "subtype": "ear",
     "traits": ["Haughty", "Forceful"]
   },
   "Gandharva": {
     "atks": [188, 76, 80, 48, 49],
     "drop": "Silver Manisha, Agilao Card",
-    "inherit": "Fire",
     "lvl": 21,
     "race": "Star",
     "resists": "-----dx-----ss-ss",
     "skills": ["Agilao", "Mafui", "Confusing Dance"],
     "stats": [17, 19, 16, 16, 15],
+    "subtype": "fir",
     "traits": ["Haughty", "Joyful"]
   },
   "Ghost": {
     "atks": [10, 8, 6, 4, 6],
     "drop": "Antidote",
-    "inherit": "None",
     "lvl": 1,
     "race": "Devil",
     "resists": "xnnnn-------xn-nn",
@@ -332,7 +316,6 @@
   "Girimehkala": {
     "atks": [435, 206, 198, 126, 124],
     "drop": "Physical Guard, Thunderbolt Card",
-    "inherit": "None",
     "lvl": 55,
     "race": "Chariot",
     "resists": "rrrrrxxxxxxxwwxww",
@@ -343,18 +326,17 @@
   "Harpy": {
     "atks": [35, 18, 16, 12, 11],
     "drop": "Tranquilizer, Garu Card",
-    "inherit": "Wind",
     "lvl": 5,
     "race": "Temperance",
     "resists": "SxSxS---x---ss-ss",
     "skills": ["Feral Claw", "Zan", "Garu", "Dia"],
     "stats": [4, 3, 4, 5, 3],
+    "subtype": "win",
     "traits": ["Haughty", "Wise"]
   },
   "Hel": {
     "atks": [174, 76, 72, 57, 57],
     "drop": "Magna Card, Magnara Card",
-    "inherit": "None",
     "lvl": 22,
     "race": "Death",
     "resists": "------------nn-ss",
@@ -365,7 +347,6 @@
   "Hoenir": {
     "atks": [275, 132, 136, 84, 82],
     "drop": "Ohnusa, Zionga Card",
-    "inherit": "None",
     "lvl": 38,
     "race": "Star",
     "resists": "-n-n--------ss-ss",
@@ -376,18 +357,17 @@
   "Hunab Ku": {
     "atks": [353, 164, 170, 106, 106],
     "drop": "Magnadyne Card",
-    "inherit": "Earth",
     "lvl": 46,
     "race": "World",
     "resists": "-------xnSSSss-ss",
     "skills": ["Magnadyne", "Mamagnadyne", "Balzacaia"],
     "stats": [36, 39, 35, 37, 36],
+    "subtype": "ear",
     "traits": ["Haughty", "Wise"]
   },
   "Hunhau": {
     "atks": [214, 118, 104, 60, 56],
     "drop": "Rattle Drink, Wild Knight Armor",
-    "inherit": "None",
     "lvl": 30,
     "race": "Death",
     "resists": "------------nn-ss",
@@ -398,7 +378,6 @@
   "Ixtab": {
     "atks": [101, 48, 46, 36, 37],
     "drop": "Silver Manisha, Gry Card",
-    "inherit": "None",
     "lvl": 13,
     "race": "Death",
     "resists": "------------nn-ss",
@@ -409,29 +388,28 @@
   "Izanami": {
     "atks": [2554, 168, 178, 152, 159],
     "drop": "Netherworld Path",
-    "inherit": "Water",
     "lvl": 51,
     "race": "Priestess",
     "resists": "------n-----nn-ss",
     "skills": ["Malaquadyne", "Marin Karin", "Mirage", "Heartfelt Prayer"],
     "stats": [33, 38, 56, 45, 43],
+    "subtype": "wat",
     "traits": ["Wise"]
   },
   "Jack Frost": {
     "atks": [123, 66, 60, 44, 43],
     "drop": "Bufu Card, Hee-Ho Boots",
-    "inherit": "Water",
     "lvl": 18,
     "race": "Lovers",
     "resists": "-----xn--d--ss-ss",
     "skills": ["Bufu", "Sonic Punch", "Ice Breath", "Atomic Bufula"],
     "stats": [15, 12, 15, 18, 12],
+    "subtype": "wat",
     "traits": ["Joyful", "Foolish"]
   },
   "Jahi": {
     "atks": [415, 196, 192, 150, 152],
     "drop": "Wavelength Card",
-    "inherit": "None",
     "lvl": 56,
     "race": "Moon",
     "resists": "wwwwwSSSSSSSSSSSS",
@@ -442,51 +420,50 @@
   "Kabandha": {
     "atks": [208, 86, 94, 68, 71],
     "drop": "Magical Guard, Magic Mirror Card",
-    "inherit": "Water",
     "lvl": 25,
     "race": "Hanged",
     "resists": "-----xn-----ss-ss",
     "skills": ["Malaqua", "Feral Bite", "Bash", "Makarakarn"],
     "stats": [18, 22, 24, 19, 16],
+    "subtype": "wat",
     "traits": ["Forceful", "Joyful"]
   },
   "Kanaloa": {
     "atks": [230, 96, 108, 59, 60],
     "drop": "Dia Card, Diarama Card",
-    "inherit": "Water",
     "lvl": 27,
     "race": "Tower",
     "resists": "------n-----nn-ss",
     "skills": ["Skewer", "Media", "Wondrous Aques"],
     "stats": [21, 27, 19, 17, 23],
+    "subtype": "wat",
     "traits": ["Snappish", "Foolish"]
   },
   "Kinich Ahau": {
     "atks": [441, 210, 198, 124, 121],
     "drop": "Miracle Egg, Agidyne Card",
-    "inherit": "Fire",
     "lvl": 56,
     "race": "Hermit",
     "resists": "TTTTT-------ss-ww",
     "skills": ["Fire Breath", "Stun Bite", "War Cry", "Bash"],
     "stats": [49, 43, 40, 47, 44],
+    "subtype": "fir",
     "traits": ["Haughty", "Forceful", "Foolish"]
   },
   "Kinnara": {
     "atks": [132, 50, 56, 40, 41],
     "drop": "Revealing Glass",
-    "inherit": "Fire",
     "lvl": 15,
     "race": "Star",
     "resists": "-----nx-----ss-ss",
     "skills": ["Maragi", "Healing Melody", "Hama"],
     "stats": [10, 13, 14, 13, 9],
+    "subtype": "fir",
     "traits": ["Snappish", "Joyful", "Foolish"]
   },
   "Kisin": {
     "atks": [500, 214, 222, 134, 132],
     "drop": "Garula Card, Garudyne Card",
-    "inherit": "None",
     "lvl": 60,
     "race": "Death",
     "resists": "------------nn-ss",
@@ -497,40 +474,39 @@
   "Kiyohime": {
     "atks": [124, 54, 60, 45, 46],
     "drop": "Magenta Choker, Marin Karin Card",
-    "inherit": "Fire",
     "lvl": 17,
     "race": "Strength",
     "resists": "-----nx----dss-ss",
     "skills": ["Maragi", "Fire Breath", "Needle Rush", "Marin Karin"],
     "stats": [10, 13, 16, 17, 11],
+    "subtype": "fir",
     "traits": ["Haughty", "Forceful", "Foolish"]
   },
   "Kraken": {
     "atks": [199, 74, 86, 44, 46],
     "drop": "Tranquilizer, Aques Card",
-    "inherit": "Water",
     "lvl": 21,
     "race": "World",
     "resists": "-----xn-----ss-ss",
     "skills": ["Aques", "Waterspout", "Skewer"],
     "stats": [16, 22, 14, 15, 16],
+    "subtype": "wat",
     "traits": ["Forceful", "Foolish"]
   },
   "Leviathan": {
     "atks": [366, 142, 150, 97, 100],
     "drop": "Devil Capote, Clean Salt",
-    "inherit": "Water",
     "lvl": 39,
     "race": "World",
     "resists": "-----xd-----ss-ss",
     "skills": ["Ice Blade", "Fear Torrent"],
     "stats": [32, 36, 33, 28, 26],
+    "subtype": "wat",
     "traits": ["Snappish", "Forceful", "Foolish"]
   },
   "Lich": {
     "atks": [166, 82, 78, 60, 60],
     "drop": "Pulinpa Card",
-    "inherit": "None",
     "lvl": 23,
     "race": "Devil",
     "resists": "------------xn-ss",
@@ -541,7 +517,6 @@
   "Lilim": {
     "atks": [247, 132, 126, 102, 105],
     "drop": "Bufula Card, Magarula Card",
-    "inherit": "None",
     "lvl": 36,
     "race": "Moon",
     "resists": "------------xn-ss",
@@ -552,7 +527,6 @@
   "Lucifuge": {
     "atks": [352, 160, 162, 124, 127],
     "drop": "Magical Guard, Attack Mirror Card",
-    "inherit": "None",
     "lvl": 46,
     "race": "Devil",
     "resists": "wwwwwnnnnnnnnnnnn",
@@ -563,18 +537,17 @@
   "Manannan": {
     "atks": [342, 170, 168, 131, 132],
     "drop": "Revival Bead, Aquadyne Card",
-    "inherit": "Water",
     "lvl": 49,
     "race": "Magician",
     "resists": "-----xr-----ss-ss",
     "skills": ["Aquadyne", "Fear Torrent", "Heat Wave", "Makakaja"],
     "stats": [36, 35, 46, 41, 37],
+    "subtype": "wat",
     "traits": ["Haughty", "Wise"]
   },
   "Melchizedek": {
     "atks": [351, 154, 156, 102, 102],
     "drop": "Miracle Egg, Garudyne Card",
-    "inherit": "None",
     "lvl": 43,
     "race": "Judgement",
     "resists": "------------rx-ss",
@@ -585,40 +558,39 @@
   "Minotaur": {
     "atks": [165, 56, 64, 32, 33],
     "drop": "Rattle Drink, Tarukaja Card",
-    "inherit": "Earth",
     "lvl": 15,
     "race": "Chariot",
     "resists": "SSSSSwwwwwww--w--",
     "skills": ["Sonic Punch", "Bash", "War Cry"],
     "stats": [13, 17, 10, 11, 8],
+    "subtype": "ear",
     "traits": ["Snappish", "Foolish"]
   },
   "Moh Shuvuu": {
     "atks": [84, 40, 42, 25, 24],
     "drop": "Antidote, Zan Card",
-    "inherit": "Wind",
     "lvl": 12,
     "race": "Temperance",
     "resists": "SxSxS---x---ss-ss",
     "skills": ["Zan", "Magaru", "Binal Strike", "Possession"],
     "stats": [8, 9, 8, 11, 11],
+    "subtype": "win",
     "traits": ["Gloomy", "Wise"]
   },
   "Mucalinda": {
     "atks": [445, 190, 192, 141, 143],
     "drop": "Magic Mirror Card, Star Metal Armor",
-    "inherit": "Water",
     "lvl": 54,
     "race": "World",
     "resists": "wwwwwSSSSSSSSSSSS",
     "skills": ["Malaquadyne", "Ice Breath", "Megidola"],
     "stats": [41, 42, 49, 44, 39],
+    "subtype": "wat",
     "traits": ["Forceful", "Wise"]
   },
   "Nekomata": {
     "atks": [145, 50, 48, 31, 30],
     "drop": "Rough Drink, Cat Punch",
-    "inherit": "None",
     "lvl": 14,
     "race": "Hermit",
     "resists": "------------ss-rr",
@@ -629,18 +601,17 @@
   "Nezha": {
     "atks": [310, 144, 126, 78, 76],
     "drop": "Pao-Pei",
-    "inherit": "Wind",
     "lvl": 35,
     "race": "Justice",
     "resists": "ssssssssssxsnnsnn",
     "skills": ["Sonic Punch", "Tarukaja", "Tackle"],
     "stats": [37, 28, 25, 36, 23],
+    "subtype": "win",
     "traits": ["Forceful", "Wise"]
   },
   "Nightmare": {
     "atks": [25, 10, 10, 6, 6],
     "drop": "Revival Bead",
-    "inherit": "None",
     "lvl": 3,
     "race": "Moon",
     "resists": "xnnnn-------xn-nn",
@@ -651,18 +622,17 @@
   "Nisroc": {
     "atks": [72, 34, 32, 30, 30],
     "drop": "Agi Card, Agilao Card",
-    "inherit": "Fire",
     "lvl": 10,
     "race": "Hanged",
     "resists": "-----nx----rss-ss",
     "skills": ["Maragi", "Confusing Dance"],
     "stats": [7, 6, 11, 9, 6],
+    "subtype": "fir",
     "traits": ["Tempered", "Angry", "Cheerful"]
   },
   "Ochre Jelly": {
     "atks": [108, 46, 50, 28, 28],
     "drop": "Chewing Soul",
-    "inherit": "None",
     "lvl": 13,
     "race": "Tower",
     "resists": "------------xn-nn",
@@ -673,7 +643,6 @@
   "Odin": {
     "atks": [2841, 200, 204, 150, 155],
     "drop": "Rune Monument",
-    "inherit": "None",
     "lvl": 55,
     "race": "Emperor",
     "resists": "wwwwwnnnnnnnnnnnn",
@@ -684,7 +653,6 @@
   "Ogre": {
     "atks": [72, 32, 30, 16, 15],
     "drop": "Medicine, Rakukaja Card",
-    "inherit": "None",
     "lvl": 8,
     "race": "Chariot",
     "resists": "SSSSSwwwwwww--w--",
@@ -695,29 +663,28 @@
   "Orthrus": {
     "atks": [347, 148, 140, 90, 87],
     "drop": "St Card",
-    "inherit": "Earth",
     "lvl": 40,
     "race": "Fortune",
     "resists": "TTTTT-------ss-ww",
     "skills": ["Mirage Breath", "Venom Bite", "War Cry", "Bash"],
     "stats": [34, 30, 29, 32, 34],
+    "subtype": "ear",
     "traits": ["Snappish", "Forceful", "Foolish"]
   },
   "Ouroboros": {
     "atks": [508, 220, 234, 147, 149],
     "drop": "Open Sesame, Sacrifice Card",
-    "inherit": "Earth",
     "lvl": 62,
     "race": "World",
     "resists": "--x-xTTTTSSSss-ss",
     "skills": ["Skewer", "Poison Breath"],
     "stats": [48, 55, 49, 48, 47],
+    "subtype": "ear",
     "traits": ["Haughty", "Wise"]
   },
   "Pairika": {
     "atks": [171, 76, 78, 55, 55],
     "drop": "Medicine, Garula Card",
-    "inherit": "None",
     "lvl": 22,
     "race": "Moon",
     "resists": "xnnnn-------xn-nn",
@@ -728,18 +695,17 @@
   "Phaleg": {
     "atks": [57, 26, 26, 15, 15],
     "drop": "Garu Card",
-    "inherit": "Water",
     "lvl": 7,
     "race": "Judgement",
     "resists": "------------nx-ss",
     "skills": ["Aqua", "Double Pierce", "Hama"],
     "stats": [6, 6, 5, 5, 5],
+    "subtype": "wat",
     "traits": ["Haughty", "Wise"]
   },
   "Phantom": {
     "atks": [44, 26, 22, 18, 19],
     "drop": "Energy Drink, Zio Card",
-    "inherit": "None",
     "lvl": 6,
     "race": "Devil",
     "resists": "xnnnn-------xn-nn",
@@ -750,40 +716,39 @@
   "Phoenix": {
     "atks": [383, 198, 174, 129, 123],
     "drop": "Balm of Life, Holylight Card",
-    "inherit": "Fire",
     "lvl": 54,
     "race": "Temperance",
     "resists": "-----n------nn-ss",
     "skills": ["Assault Dive", "Fire Breath", "Kamikaze"],
     "stats": [45, 33, 43, 52, 42],
+    "subtype": "fir",
     "traits": ["Timid", "Wise"]
   },
   "Picollus": {
     "atks": [213, 102, 104, 80, 81],
     "drop": "Open Sesame, Aques Card",
-    "inherit": "Water",
     "lvl": 30,
     "race": "Star",
     "resists": "-----xn--n--ss-ss",
     "skills": ["Aques", "Hula of Misfortune", "Possession"],
     "stats": [21, 22, 28, 25, 23],
+    "subtype": "wat",
     "traits": ["Snappish", "Forceful", "Joyful"]
   },
   "Pixie": {
     "atks": [16, 8, 8, 7, 8],
     "drop": "Saffron Earring",
-    "inherit": "Wind",
     "lvl": 2,
     "race": "Lovers",
     "resists": "-------Sx---ss-ss",
     "skills": ["Garu", "Dia"],
     "stats": [2, 2, 3, 5, 3],
+    "subtype": "win",
     "traits": ["Forceful", "Joyful"]
   },
   "Poltergeist": {
     "atks": [14, 10, 8, 7, 8],
     "drop": "Medicine",
-    "inherit": "None",
     "lvl": 2,
     "race": "Devil",
     "resists": "------------xn-ss",
@@ -794,18 +759,17 @@
   "Principality": {
     "atks": [224, 104, 104, 69, 68],
     "drop": "Chewing Soul, Magnara Card",
-    "inherit": "Earth",
     "lvl": 29,
     "race": "Judgement",
     "resists": "------------nx-ss",
     "skills": ["Heat Wave", "Magnara", "Bufula", "Mahama"],
     "stats": [23, 23, 23, 23, 23],
+    "subtype": "ear",
     "traits": ["Haughty", "Forceful", "Wise"]
   },
   "Pucel": {
     "atks": [367, 178, 162, 128, 128],
     "drop": "Bufula Card, Frigid Card",
-    "inherit": "None",
     "lvl": 48,
     "race": "Hanged",
     "resists": "------------xn-ss",
@@ -816,29 +780,28 @@
   "Puck": {
     "atks": [48, 20, 18, 12, 11],
     "drop": "Open Sesame, Zan Card",
-    "inherit": "Wind",
     "lvl": 6,
     "race": "Lovers",
     "resists": "-------rx---ss-ss",
     "skills": ["Zan", "Pulinpa", "Escape"],
     "stats": [4, 3, 4, 6, 6],
+    "subtype": "win",
     "traits": ["Forceful", "Joyful"]
   },
   "Pyro Jack": {
     "atks": [190, 88, 96, 58, 58],
     "drop": "Agi Card, Agilao Card",
-    "inherit": "Fire",
     "lvl": 26,
     "race": "Lovers",
     "resists": "-----dx-----ss-ss",
     "skills": ["Maragi", "Agilao", "Dormina", "Magic Seal", "Dynamic Agilao"],
     "stats": [18, 22, 19, 25, 19],
+    "subtype": "fir",
     "traits": ["Forceful", "Joyful", "Foolish"]
   },
   "Python": {
     "atks": [282, 126, 134, 82, 83],
     "drop": "Silver Manisha, Hard Borer",
-    "inherit": "None",
     "lvl": 35,
     "race": "Strength",
     "resists": "--x-xTTTTSSSss-ss",
@@ -849,7 +812,6 @@
   "Rakshasa": {
     "atks": [332, 152, 138, 87, 85],
     "drop": "Physical Guard, Tarukaja Card",
-    "inherit": "None",
     "lvl": 39,
     "race": "Chariot",
     "resists": "SSSSSwwwwwww--w--",
@@ -860,7 +822,6 @@
   "Rasputin": {
     "atks": [157, 50, 56, 45, 49],
     "drop": "Tranquilizer, Garula Card",
-    "inherit": "None",
     "lvl": 24,
     "race": "Magician",
     "resists": "wwwwwnnnnnnnnnnnn",
@@ -871,73 +832,72 @@
   "Ratatoskr": {
     "atks": [24, 14, 12, 9, 8],
     "drop": "Open Sesame, Magna Card",
-    "inherit": "Earth",
     "lvl": 5,
     "race": "Hermit",
     "resists": "-------xS---ss-ss",
     "skills": ["Feral Claw", "Magna"],
     "stats": [3, 2, 3, 4, 3],
+    "subtype": "ear",
     "traits": ["Haughty", "Foolish"]
   },
   "Robin Goodfellow": {
     "atks": [76, 42, 36, 24, 23],
     "drop": "Medicine, Poisma Card",
-    "inherit": "Earth",
     "lvl": 11,
     "race": "Lovers",
     "resists": "-------xS---ss-ss",
     "skills": ["Poisma", "Rockfall", "Hula of Misfortune"],
     "stats": [10, 7, 8, 10, 8],
+    "subtype": "ear",
     "traits": ["Joyful"]
   },
   "Sakya": {
     "atks": [765, 100, 102, 87, 91],
     "drop": "Buddha's Words",
-    "inherit": "Earth",
     "lvl": 29,
     "race": "Hierophant",
     "resists": "ssssssssssssnnsnn",
     "skills": ["Holy Light", "Nirvana", "Hypnotic Waves", "Mafui"],
     "stats": [21, 22, 32, 24, 28],
+    "subtype": "ear",
     "traits": ["Wise"]
   },
   "Satyr": {
     "atks": [295, 124, 136, 86, 88],
     "drop": "Chewing Soul, Magnadyne Card",
-    "inherit": "Earth",
     "lvl": 36,
     "race": "Lovers",
     "resists": "-------xd---ss-ss",
     "skills": ["Mamagnara", "Confusing Dance", "Pressure Point"],
     "stats": [26, 32, 29, 31, 25],
+    "subtype": "ear",
     "traits": ["Forceful", "Joyful", "Foolish"]
   },
   "Seker": {
     "atks": [398, 172, 174, 124, 123],
     "drop": "Brink Tea",
-    "inherit": "Earth",
     "lvl": 50,
     "race": "Tower",
     "resists": "SxSxS---x---sn-nn",
     "skills": ["Mamagnadyne", "Mudoon", "Wing Flap", "Assault Dive"],
     "stats": [36, 37, 42, 45, 39],
+    "subtype": "ear",
     "traits": ["Haughty", "Gloomy", "Foolish"]
   },
   "Shax": {
     "atks": [136, 56, 54, 47, 47],
     "drop": "Zio Card, Zionga Card",
-    "inherit": "Water",
     "lvl": 17,
     "race": "Hanged",
     "resists": "SxSxSxn-x---ss-ss",
     "skills": ["Bufu", "Zio", "Sleeping Spell"],
     "stats": [11, 10, 17, 19, 10],
+    "subtype": "wat",
     "traits": ["Forceful", "Wise"]
   },
   "Shoggoth": {
     "atks": [360, 122, 152, 52, 50],
     "drop": "Tranquilizer, Victory Hachimaki",
-    "inherit": "None",
     "lvl": 35,
     "race": "Tower",
     "resists": "xnnnn-------xn-nn",
@@ -948,7 +908,6 @@
   "Slime": {
     "atks": [9, 8, 6, 6, 8],
     "drop": "Medicine",
-    "inherit": "None",
     "lvl": 1,
     "race": "Tower",
     "resists": "------------xn-nn",
@@ -959,18 +918,17 @@
   "Stymphalides": {
     "atks": [282, 134, 132, 105, 109],
     "drop": "Mafui Card, Wavelength Card",
-    "inherit": "Wind",
     "lvl": 37,
     "race": "Temperance",
     "resists": "SxSxS--rx---ss-ss",
     "skills": ["Zanma", "Pulinpa", "Mafui", "Dangerous Garula"],
     "stats": [30, 29, 38, 24, 26],
+    "subtype": "win",
     "traits": ["Snappish", "Wise"]
   },
   "Succubus": {
     "atks": [324, 162, 162, 127, 129],
     "drop": "Open Sesame, Thunderbolt Card",
-    "inherit": "None",
     "lvl": 47,
     "race": "Moon",
     "resists": "wwwwwSSSSSSSSSSSS",
@@ -981,40 +939,39 @@
   "Taksaka": {
     "atks": [356, 154, 162, 102, 104],
     "drop": "Physical Guard",
-    "inherit": "Fire",
     "lvl": 43,
     "race": "Strength",
     "resists": "ssssssssssxsnnsnn",
     "skills": ["Venom Bite", "Photon Cannon", "Dust Cloud"],
     "stats": [34, 38, 34, 35, 30],
+    "subtype": "fir",
     "traits": ["Forceful", "Gloomy", "Wise"]
   },
   "Taranis": {
     "atks": [228, 106, 100, 59, 58],
     "drop": "Silver Manisha, Garula Card",
-    "inherit": "Wind",
     "lvl": 27,
     "race": "Chariot",
     "resists": "SSSSSwwwwwww--w--",
     "skills": ["Gigantic Fist", "Garula", "Tackle"],
     "stats": [26, 23, 19, 18, 21],
+    "subtype": "win",
     "traits": ["Snappish", "Foolish"]
   },
   "Tengu": {
     "atks": [114, 60, 56, 42, 43],
     "drop": "Antidote, Gry Card",
-    "inherit": "Wind",
     "lvl": 16,
     "race": "Magician",
     "resists": "-------nx---ss-ss",
     "skills": ["Heat Wave", "Killer Wind", "Illuzone", "Gry"],
     "stats": [14, 12, 15, 13, 9],
+    "subtype": "win",
     "traits": ["Haughty", "Wise"]
   },
   "Tezcatlipoca": {
     "atks": [462, 226, 212, 135, 133],
     "drop": "Magnadyne Card",
-    "inherit": "None",
     "lvl": 59,
     "race": "Tower",
     "resists": "ssssssssssssnnsnn",
@@ -1025,18 +982,17 @@
   "Throne": {
     "atks": [419, 192, 190, 126, 126],
     "drop": "Bead, Agidyne Card",
-    "inherit": "Fire",
     "lvl": 53,
     "race": "Judgement",
     "resists": "------------nx-ss",
     "skills": ["Double Pierce", "Maragidyne", "Hamaon", "Firestorm"],
     "stats": [43, 42, 42, 42, 42],
+    "subtype": "fir",
     "traits": ["Haughty"]
   },
   "Tzitzimitl": {
     "atks": [483, 210, 216, 149, 151],
     "drop": "Ohnusa, Frigid Card",
-    "inherit": "None",
     "lvl": 59,
     "race": "Devil",
     "resists": "------------nn-ss",
@@ -1047,7 +1003,6 @@
   "Valkyrie": {
     "atks": [472, 230, 208, 140, 137],
     "drop": "Bead, Wavelength Card",
-    "inherit": "None",
     "lvl": 60,
     "race": "Star",
     "resists": "SSSSSwwwwwww--w--",
@@ -1058,29 +1013,28 @@
   "Virochana": {
     "atks": [514, 222, 224, 178, 180],
     "drop": "1000 Lotus Petals",
-    "inherit": "Fire",
     "lvl": 65,
     "race": "Sun",
     "resists": "-----n------nn-ss",
     "skills": ["Freidyne", "Magic Seal", "Hamaon", "Bright Judgement"],
     "stats": [46, 47, 63, 56, 59],
+    "subtype": "fir",
     "traits": ["Forceful", "Joyful", "Wise"]
   },
   "Vucub-Caquix": {
     "atks": [413, 160, 174, 100, 101],
     "drop": "Garudyne Card",
-    "inherit": "Wind",
     "lvl": 45,
     "race": "Temperance",
     "resists": "SxSxS--rx---ss-ss",
     "skills": ["Assault Dive", "Wing Flap", "Magarudyne"],
     "stats": [35, 42, 32, 37, 32],
+    "subtype": "win",
     "traits": ["Forceful", "Wise"]
   },
   "Wanyudo": {
     "atks": [236, 128, 118, 66, 63],
     "drop": "Physical Guard, Agilao Card",
-    "inherit": "None",
     "lvl": 33,
     "race": "Fortune",
     "resists": "------------xr-ss",
@@ -1091,7 +1045,6 @@
   "Wraith": {
     "atks": [128, 56, 58, 42, 43],
     "drop": "Ohnusa, Magnara Card",
-    "inherit": "None",
     "lvl": 16,
     "race": "Devil",
     "resists": "xnnnn-------xn-nn",
@@ -1102,18 +1055,17 @@
   "Xaphan": {
     "atks": [21, 12, 10, 8, 8],
     "drop": "Ultraviolet String",
-    "inherit": "Fire",
     "lvl": 3,
     "race": "Hanged",
     "resists": "-----Sx-----ss-ss",
     "skills": ["Agi", "Poisma"],
     "stats": [3, 2, 3, 4, 3],
+    "subtype": "fir",
     "traits": ["Forceful", "Joyful"]
   },
   "Yaksa": {
     "atks": [383, 194, 170, 103, 98],
     "drop": "Miracle Egg, Tarukaja Card",
-    "inherit": "None",
     "lvl": 49,
     "race": "Star",
     "resists": "SSSSSwwwwwww--w--",
@@ -1124,12 +1076,12 @@
   "Zaebos": {
     "atks": [263, 118, 110, 85, 86],
     "drop": "Aques Card, Aquadyne Card",
-    "inherit": "Water",
     "lvl": 32,
     "race": "Hanged",
     "resists": "------------xn-ss",
     "skills": ["Twin Slash", "Malaques", "Hypnotic Waves"],
     "stats": [27, 23, 30, 24, 23],
+    "subtype": "wat",
     "traits": ["Snappish", "Foolish", "Joyful"]
   }
 }

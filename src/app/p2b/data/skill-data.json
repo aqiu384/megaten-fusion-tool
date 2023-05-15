@@ -3,44 +3,47 @@
     "element": "gun",
     "power": 36,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Absolute Zero": {
-    "effect": "Freeze 30%",
+    "effect": "30% Freeze",
     "element": "ice",
     "power": 36,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Acid Rain": {
     "element": "wat",
     "power": 42,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Affectionate Prayer": {
     "effect": "Recover HP",
     "element": "rec",
     "power": 120,
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Agi": {
+    "card": "Agathion, Jack O' Lantern D, Nisroc",
     "element": "fir",
     "power": 5,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Agidyne": {
+    "card": "Abe no Seimei, Ares, Bishamonten, Varuna, Cerberus D, Kinich Ahau D, Throne",
     "element": "fir",
     "power": 58,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Agilao": {
+    "card": "Gandharva, Gandharva D, Jack O' Lantern D, Nisroc, Wanyuudo",
     "element": "fir",
     "power": 28,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Aimed Shot": {
-    "effect": "Insta Death 20%",
+    "effect": "20% Instakill",
     "element": "gun",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "All 1": {
     "effect": "Drop to 1 HP",
@@ -49,178 +52,185 @@
     "target": "Universal"
   },
   "Alluring Mazurka": {
-    "effect": "Charm 44%",
+    "effect": "44% Charm",
     "element": "min",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Alpha Blaster": {
     "effect": "Halve HP for next 8 actions",
     "element": "lig",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Anger of the Earth": {
     "element": "ear",
     "power": 100,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Another Dimension": {
-    "effect": "Insta Death 40%",
+    "effect": "40% Instakill",
     "element": "alm",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Aqua": {
     "element": "wat",
     "power": 5,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Aquadyne": {
+    "card": "Tishtoriya, Mananan D, Zaeboth",
     "element": "wat",
     "power": 58,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Aquary Tide": {
     "element": "wat",
     "power": 100,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Aques": {
+    "card": "Nemesis, Erinys, Kraken, Picollus, Zaeboth",
     "element": "wat",
     "power": 28,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Armageddon": {
-    "effect": "Insta Death 100%. Effective on all but Ultimate Boss",
+    "cost": 2001,
+    "effect": "100% Instakill, Effective against all but ultimate boss",
     "element": "alm",
-    "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Armaggedon R": {
-    "effect": "Insta Death 200%. Counters Armaggedon",
+    "effect": "200% Instakill, Counters Armageddon",
     "element": "alm",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Assault Dive": {
     "element": "hav",
     "power": 42,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Asteroid Bomb": {
     "element": "gra",
     "power": 196,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Atomic Bufula": {
-    "effect": "Freeze 50%. Dmg scale with rumor, 1/24/42",
+    "effect": "Rumor changes to 1 or 42",
     "element": "ice",
-    "restrict": "rumor",
-    "target": "1 Foe"
+    "power": 24,
+    "target": "1 foe"
   },
   "Atomic Destruction": {
-    "effect": "Insta Death 50%",
+    "effect": "50% Instakill",
     "element": "alm",
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Aum": {
+    "cost": 2001,
     "element": "alm",
-    "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Baptism by Thunder": {
-    "effect": "Shock 30%",
+    "effect": "30% Shock",
     "element": "ele",
     "power": 60,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Bastard Snap": {
-    "effect": "Mute 30%",
+    "effect": "30% Mute",
     "element": "thr",
     "power": 48,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Bersac": {
-    "effect": "Rage 24%",
+    "card": "Aeshma, Hunab Ku, Cockatrice",
+    "effect": "24% Rage",
     "element": "ail",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Bite": {
     "element": "hav",
     "power": 34,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Black Hole": {
-    "effect": "Insta Death 50%",
+    "effect": "50% Instakill",
     "element": "alm",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Blade of Fury": {
     "element": "sla",
     "power": 24,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Blazing Hell": {
     "element": "fir",
     "power": 72,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Blessing of Panacea": {
     "effect": "Remove all ailments",
     "element": "rec",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Blizzard Breath": {
-    "effect": "Freeze 30%. Dmg scales with user Lvl",
+    "effect": "Multiply by 10% user lvl",
     "element": "ice",
-    "target": "All Foes"
+    "power": 16,
+    "target": "All foes"
   },
   "Bloodsuck": {
     "effect": "Absorb HP",
     "element": "alm",
     "power": 44,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Bloody Divorce": {
-    "effect": "Insta Death 30%",
+    "effect": "30% Instakill",
     "element": "wat",
     "power": 112,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Brain Shake": {
-    "effect": "Panic 32%",
+    "effect": "32% Panic",
     "element": "str",
     "power": 44,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Bufu": {
-    "effect": "Freeze 50%",
+    "card": "Apep, Empusa, Jack Frost D, Kerepres D",
+    "effect": "50% Freeze",
     "element": "ice",
     "power": 8,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Bufudyne": {
-    "effect": "Freeze 50%",
+    "card": "Ameretat, Pucel, Tzitzimitl",
+    "effect": "50% Freeze",
     "element": "ice",
     "power": 60,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Bufula": {
-    "effect": "Freeze 50%",
+    "card": "Jack Frost, Lilim, Pucel",
+    "effect": "50% Freeze",
     "element": "ice",
     "power": 36,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Card of Binding": {
-    "effect": "Mute 32%",
+    "effect": "32% Mute",
     "element": "thr",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Card of Protection": {
     "effect": "Summon 4 fakes that disappear when real user is damaged",
@@ -228,127 +238,128 @@
     "restrict": "enemy"
   },
   "Celestial Veil": {
-    "effect": "For 1 battle, Nullify Fire, Water, Wind, Earth dmg",
+    "cost": 2001,
+    "effect": "Nullify Fire, Water, Wind, Earth dmg for rest of battle",
     "element": "sup",
-    "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Chaos Element": {
-    "effect": "8 hits. Dmg scales with user Lvl",
+    "effect": "8 hits, Multiply by user lvl",
     "element": "dar",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Circular Reasoning": {
-    "effect": "Panic 44%",
+    "effect": "44% Panic",
     "element": "min",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Classic Melody": {
-    "effect": "Sleep 120%",
+    "effect": "120% Sleep",
     "element": "ner",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Conflagrant Wrath": {
     "effect": "24 Fire Dmg",
     "element": "sla",
     "power": 48,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Corrosive Fluid": {
-    "effect": "Poison 28%",
+    "effect": "28% Poison",
     "element": "hav",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Crag Fang": {
     "element": "ear",
     "power": 88,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Crawling Chaos": {
-    "effect": "Mute 56%",
+    "effect": "56% Mute",
     "element": "alm",
     "power": 118,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Crescent Mirror": {
     "element": "gra",
     "power": 96,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Curse": {
     "element": "dar",
     "power": 40,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Cyclone Slash": {
     "element": "win",
     "power": 78,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Dance of Bravery": {
-    "effect": "For 1 battle, P.Atk and M.Atk x2",
+    "effect": "Taru Kaja + Maka Kaja",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Dance of Protection": {
-    "effect": "For 1 battle, P.Def and M.Def x2",
+    "effect": "Raku Kaja + Sama Kaja",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Dangerous Garula": {
-    "effect": "Dmg scales with rumor, 1/36/56",
+    "effect": "Rumor changes to 1 or 56",
     "element": "win",
-    "restrict": "rumor",
-    "target": "1 Foe"
+    "power": 36,
+    "target": "1 foe"
   },
   "Dark Baptism": {
-    "effect": "For 1 battle, Prevent Recovery skills",
+    "effect": "Prevent recovery skills for 1 battle",
     "element": "spe",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Dark Nebula": {
     "effect": "62 Dark dmg",
     "element": "win",
     "power": 122,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Dark Saber": {
-    "effect": "Dark Insta Death 80%",
+    "effect": "80% Instakill",
     "element": "sla",
     "power": 52,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "De Kaja": {
+    "card": "Lugh, Matsuo-sama",
     "effect": "Remove all -kaja effects",
     "element": "sup",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Deadly Burn": {
     "element": "fir",
     "power": 100,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Deadly Needle": {
-    "effect": "Insta Death 20%",
+    "effect": "20% Instakill",
     "element": "thr",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Death Bound": {
     "element": "sla",
     "power": 32,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Death's Roulette": {
-    "effect": "Insta Death to random unit on side with lower Avg Luck",
+    "effect": "Instakill to random unit on side with lower avg Lu",
     "element": "alm",
     "restrict": "fusion",
     "target": "Universal"
@@ -357,91 +368,94 @@
     "effect": "1999 Dmg 1/32, 777 Dmg 3/32, 333 Dmg 6/32, 222 Dmg 8/32, 111 Dmg 8/32, 222 Dmg to all Allies 6/32",
     "element": "alm",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Devil's Smile": {
-    "effect": "Rage 24%",
+    "effect": "24% Rage",
     "element": "ail",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Dia": {
+    "card": "Phaleg, Pixie, Angel, Kanaloa D",
     "effect": "Recover HP",
     "element": "rec",
     "power": 40,
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Diamai": {
-    "effect": "For 1 battle, Recovery 1/8 HP per turn",
+    "effect": "Recover 1/8 HP per turn for rest of battle",
     "element": "rec",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Diamond Dust": {
-    "effect": "Freeze 30%",
+    "effect": "30% Freeze",
     "element": "ice",
     "power": 60,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Diarahan": {
+    "card": "Alfred, Cerberus",
     "effect": "Recover all HP",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Diarama": {
+    "card": "Otohime, Demeter D, Kanaloa D",
     "effect": "Recover HP",
     "element": "rec",
     "power": 250,
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Divine Judgement": {
-    "effect": "Insta Death 50%",
+    "effect": "50% Instakill",
     "element": "lig",
     "power": 64,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Dormina": {
-    "effect": "Sleep 52%",
+    "effect": "52% Sleep",
     "element": "ner",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Double Thrust": {
     "element": "sla",
     "power": 48,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Dragon Cross": {
+    "cost": 2001,
     "element": "alm",
     "power": 120,
-    "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Dream Needle": {
-    "effect": "Sleep 42%",
+    "effect": "42% Sleep",
     "element": "thr",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Drive Shot": {
     "element": "gun",
     "power": 32,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Dynamic Agilao": {
-    "effect": "Dmg scales with rumor, 1/34/56",
+    "effect": "Rumor changes to 1 or 56",
     "element": "fir",
-    "restrict": "rumor",
-    "target": "1 Foe"
+    "power": 34,
+    "target": "1 foe"
   },
   "Eclipse Mirror": {
     "effect": "88 Dark Dmg",
     "element": "alm",
     "power": 96,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Estoma": {
-    "effect": "Prevent encounters if Lvl lower than Protagonist",
+    "effect": "Prevent encounters if lvl lower than Maya",
     "element": "spe"
   },
   "Eternal White": {
@@ -449,443 +463,454 @@
     "element": "lig",
     "power": 204,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Fata Morgana": {
-    "effect": "Illusion 52%",
+    "effect": "52% Illusion",
     "element": "ail",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Fear Torrent": {
     "element": "wat",
     "power": 68,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Fiendish Card": {
-    "effect": "Rage 100%",
+    "effect": "100% Rage",
     "element": "ail",
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Final Strike": {
-    "effect": "Kills user",
+    "effect": "User dies",
     "element": "alm",
     "power": 60,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Fire Breath": {
-    "effect": "Dmg scales with user Lvl x1.6",
+    "effect": "Multiply by 10% user lvl",
     "element": "fir",
-    "target": "All Foes"
+    "power": 16,
+    "target": "All foes"
   },
   "Fire Burst": {
     "effect": "24 Fire Dmg",
     "element": "fir",
     "power": 54,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Fire Storm": {
     "element": "fir",
     "power": 42,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "First Aid": {
-    "effect": "Endure 1 fatal attack with 25% HP",
+    "effect": "Endure fatal attack with 25% HP once",
     "element": "rec",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Flare Shot": {
-    "effect": "Illusion 68%",
+    "effect": "68% Illusion",
     "element": "gun",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Frei": {
+    "card": "Faust",
     "element": "nuk",
     "power": 24,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Freidyne": {
+    "card": "Shub Niggurath",
     "element": "nuk",
     "power": 82,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Freila": {
+    "card": "Apollo, Aeshma D",
     "element": "nuk",
     "power": 56,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Frigid Wrath": {
-    "effect": "24 Ice Dmg. Freeze 50%",
+    "effect": "24 Ice dmg, 50% Freeze",
     "element": "sla",
     "power": 48,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Furious Melody": {
-    "effect": "Rage 120%",
+    "effect": "120% Rage",
     "element": "ail",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Galvanic Wrath": {
-    "effect": "24 Elec Dmg. Shock 50%",
+    "effect": "24 Elec Dmg, 50% Shock",
     "element": "sla",
     "power": 48,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Garu": {
+    "card": "Harpie D",
     "element": "win",
     "power": 5,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Garudyne": {
+    "card": "Scathach, Kishin, Vucub-Kakish",
     "element": "win",
     "power": 58,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Garula": {
+    "card": "Taranis, Kishin, Pariker, Rasputin, Taranis D",
     "element": "win",
     "power": 28,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Giga Cyclone": {
     "element": "win",
     "power": 96,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Gigantic Fist": {
     "element": "str",
     "power": 48,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Gin'nunga Gap": {
-    "effect": "Insta Death 100% to fusion non-participants",
+    "effect": "100% Instakill to non-participants",
     "element": "alm",
     "restrict": "fusion",
     "target": "Universal"
   },
   "Gnome": {
-    "effect": "Dmg scales with Summon Spirits user Lvl",
+    "effect": "Add with Summon Spirits user lvl",
     "element": "ear",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "God's Hand": {
     "element": "gra",
     "power": 62,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Great Magnus": {
-    "effect": "Dmg scales with rumor, 1/40/56",
+    "effect": "Rumor changes to 1 or 56",
     "element": "ear",
-    "restrict": "rumor",
-    "target": "1 Foe"
+    "power": 40,
+    "target": "1 foe"
   },
   "Great War of Hell": {
-    "effect": "16 hits. Dmg to random units",
+    "cost": 2001,
+    "effect": "16 hits, Dmg to random units",
     "element": "alm",
     "power": 36,
-    "restrict": "fusion",
     "target": "Universal"
   },
   "Gry": {
+    "card": "Ixtab, Tengu D",
     "element": "gra",
     "power": 8,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Grydyne": {
+    "card": "Odin, Taksaka, Verdandi, Adramelech D",
     "element": "gra",
     "power": 60,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Gryva": {
+    "card": "Stymphalides, Adramelech D, Dairoku Tenmaou",
     "element": "gra",
     "power": 36,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Guard Punish": {
     "effect": "Dmg x2 to guarding foes",
     "element": "alm",
     "power": 150,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Guardian Hammer": {
-    "effect": "Shock 30%",
+    "effect": "30% Shock",
     "element": "ele",
     "power": 118,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Guillotine Fake": {
-    "effect": "Insta Death 36%",
+    "effect": "36% Instakill",
     "element": "sla",
     "power": 52,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Hachiman": {
-    "effect": "Dmg scales with Summon Spirits user Lvl",
+    "effect": "Add with Summon Spirits user lvl",
     "element": "gra",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Hama": {
-    "effect": "Insta Death 36%",
+    "effect": "36% Instakill",
     "element": "lig",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Hamaonn": {
-    "effect": "Insta Death 48%",
+    "effect": "48% Instakill",
     "element": "lig",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Heat Kaiser": {
     "element": "nuk",
     "power": 102,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Heat Wave": {
     "element": "sla",
     "power": 30,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Hell Desert": {
-    "effect": "Insta Death 106%",
+    "effect": "106% Instakill",
     "element": "ear",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Hieros Glupaine": {
-    "effect": "Dmg scales with Persona Lvl x Rank",
+    "effect": "Multiply by persona lvl and rank",
     "element": "lig",
-    "target": "All Foes"
+    "power": 1,
+    "target": "All foes"
   },
   "High Pressure": {
     "element": "gra",
     "power": 72,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "High-End Crush": {
-    "effect": "Drop highest Lvl unit to 1 HP",
+    "effect": "Drop highest lvl unit to 1 HP",
     "element": "alm",
     "restrict": "fusion",
     "target": "Universal"
   },
   "Hinokagutsuchi": {
-    "effect": "Dmg scales with Summon Spirits user Lvl",
+    "effect": "Add with Summon Spirits user lvl",
     "element": "nuk",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Holy Light": {
     "element": "lig",
     "power": 12,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Honey Comb": {
     "element": "gun",
     "power": 72,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Hula of Misfortune": {
     "effect": "Halves player money",
     "element": "spe",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Hydro-Boost": {
     "element": "wat",
     "power": 102,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Hyper Zionga": {
-    "effect": "50% Shock. Dmg scales with rumor, 1/44/60",
+    "effect": "50% Shock, Rumor changes to 1 or 60",
     "element": "ele",
-    "restrict": "rumor",
-    "target": "1 Foe"
+    "power": 44,
+    "target": "1 foe"
   },
   "Hypnotic Wave": {
-    "effect": "Sleep 44%",
+    "effect": "44% Sleep",
     "element": "ner",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Ice Blade": {
-    "effect": "24 Ice Dmg. Freeze 50%",
+    "effect": "24 Ice Dmg, 50% Freeze",
     "element": "sla",
     "power": 54,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Ice Blast": {
-    "effect": "Freeze 40%",
+    "effect": "40% Freeze",
     "element": "ice",
     "power": 54,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Ice Crush": {
-    "effect": "Freeze 40%",
+    "effect": "40% Freeze",
     "element": "ice",
     "power": 86,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Ice Jihad": {
-    "effect": "Freeze 40%",
+    "effect": "40% Freeze",
     "element": "ice",
     "power": 102,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Illuzone": {
-    "effect": "Illusion 52%",
+    "effect": "52% Illusion",
     "element": "ail",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Inferno": {
     "element": "fir",
     "power": 68,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Intoxicating Bite": {
-    "effect": "Sleep 70%",
+    "effect": "70% Sleep",
     "element": "hav",
     "power": 44,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Intoxicating Scratch": {
-    "effect": "Sleep 70%",
+    "effect": "70% Sleep",
     "element": "str",
     "power": 44,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Invitation to Sleep": {
-    "effect": "Sleep 52%",
+    "effect": "52% Sleep",
     "element": "ner",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "JM61": {
     "element": "gun",
     "power": 34,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "JOKER": {
     "effect": "Dmg all allies",
     "element": "alm",
     "power": 40,
     "restrict": "enemy",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Justice Shot": {
-    "effect": "Drop to 1 HP 48%",
+    "effect": "48% to drop HP to 1",
     "element": "gun",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Kamikaze Charge": {
-    "effect": "Insta Death. Kills user",
+    "effect": "Instakill, User dies",
     "element": "alm",
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Killer Wind": {
     "element": "win",
     "power": 42,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "King Frost": {
-    "effect": "Freeze 30%. Dmg scales with Summon Spirits user Lvl",
+    "effect": "30% Freeze, Add with Summon Spirits user lvl",
     "element": "ice",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Kotoludi": {
-    "effect": "Possession Remove",
+    "card": "Skuld",
+    "effect": "Remove Possession",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "L'Oiseau de Feu": {
     "element": "fir",
     "power": 78,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Land Spark": {
     "element": "ear",
     "power": 78,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Last Quake": {
     "element": "ear",
     "power": 96,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Level Trap": {
-    "effect": "If Lvl divisible by 2, 3, 5, take dmg. If Lvl divisible by 9, Insta Death",
+    "effect": "If Lvl divisible by 2, 3, 5, take dmg. If Lvl divisible by 9, Instakill",
     "element": "alm",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Light Smasher": {
-    "effect": "Light Insta Death 80%",
+    "effect": "80% Instakill",
     "element": "sla",
     "power": 52,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Lightning Blast": {
-    "effect": "Shock 40%",
+    "effect": "40% Shock",
     "element": "ele",
     "power": 54,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Lightning Crush": {
-    "effect": "Shock 40%",
+    "effect": "40% Shock",
     "element": "ele",
     "power": 86,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Lightning Jihad": {
-    "effect": "Shock 40%",
+    "effect": "40% Shock",
     "element": "ele",
     "power": 102,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Lightning Strike": {
-    "effect": "24 Elec Dmg. Shock 50%",
+    "effect": "24 Elec Dmg, 50% Shock",
     "element": "sla",
     "power": 54,
-    "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Lover of Darkness": {
     "effect": "54 Dark dmg",
     "element": "ear",
     "power": 86,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Low-End Breaker": {
-    "effect": "Insta Death to unit with lowest Lvl",
+    "effect": "Instakill to unit with lowest Lvl",
     "element": "alm",
     "restrict": "fusion",
     "target": "Universal"
@@ -894,523 +919,556 @@
     "element": "gun",
     "power": 42,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Maelstrom": {
-    "effect": "Insta Death 106%",
+    "effect": "106% Instakill",
     "element": "wat",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Mafui": {
-    "effect": "Mute 24%",
+    "card": "Genjo, Stuparideth",
+    "effect": "24% Mute",
     "element": "ail",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Magdyne": {
+    "card": "Catoblepas, Hunab Ku D, Satyrus, Tezcatlipoca",
     "element": "ear",
     "power": 58,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Magic Seal": {
-    "effect": "Mute 24%",
+    "effect": "24% Mute",
     "element": "ail",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Magma Drop": {
     "element": "ear",
     "power": 68,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Magna": {
+    "card": "Hel D, Ratatoskr",
     "element": "ear",
     "power": 5,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Magnus": {
+    "card": "Iris, Hel D, Principality, Wraith",
     "element": "ear",
     "power": 28,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Maha Agi": {
+    "card": "Surya, Kimnara D",
     "element": "fir",
     "power": 6,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Agidyne": {
+    "card": "Brahma, Hyperion, Il-Dana, Ares D, Kau",
     "element": "fir",
     "power": 64,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Agionn": {
+    "card": "Agrippa, Jack O' Lantern, Mithra, Nankyoku Roujin",
     "element": "fir",
     "power": 32,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Aqua": {
     "element": "wat",
     "power": 6,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Aquadyne": {
+    "card": "Uroboros",
     "element": "wat",
     "power": 64,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Aques": {
+    "card": "Kabandha, Yama",
     "element": "wat",
     "power": 32,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Garu": {
+    "card": "Fjalar, Tengu",
     "element": "win",
     "power": 6,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Garudyne": {
+    "card": "Kali, Seiryu",
     "element": "win",
     "power": 64,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Garula": {
+    "card": "Lilim",
     "element": "win",
     "power": 32,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Magdyne": {
+    "card": "Dagda, Seker",
     "element": "ear",
     "power": 64,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Magna": {
+    "card": "Robin Goodfellow",
     "element": "ear",
     "power": 6,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Magnus": {
+    "card": "Aizen Myouou",
     "element": "ear",
     "power": 32,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Maka Kaja": {
-    "effect": "For 1 battle, M.Atk x2",
+    "effect": "Increase magic attack",
     "element": "sup",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Maha Mudo": {
-    "effect": "Insta Death 42%",
+    "effect": "42% Instakill",
     "element": "dar",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maha Raku Kaja": {
-    "effect": "For 1 battle, P.Def x2",
+    "effect": "Increase phys defense",
     "element": "sup",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Maha Sama Kaja": {
-    "effect": "For 1 battle, M.Def x2",
+    "effect": "Increase magic defense",
     "element": "sup",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Maha Suku Kaja": {
-    "effect": "For 1 battle, Agility x2",
+    "effect": "Increase agility",
     "element": "sup",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Maha Taru Kaja": {
-    "effect": "For 1 battle, P.Atk x2",
+    "effect": "Increase phys attack",
     "element": "sup",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Mahanma": {
-    "effect": "Insta Death 42%",
+    "effect": "42% Instakill",
     "element": "lig",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maka Kaja": {
-    "effect": "For 1 battle, M.Atk x2",
+    "card": "Mananan",
+    "effect": "Increase magic attack",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Makarakarn": {
-    "effect": "Repel next Magic attack",
+    "card": "Kabanda, Lucifugus, Mucalinda D",
+    "effect": "Repel next magic attack",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Marin Karin": {
-    "effect": "Charm 52%",
+    "card": "Succubus, Kiyohime",
+    "effect": "52% Charm",
     "element": "min",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Marvelous Dance": {
-    "effect": "Panic 52%",
+    "effect": "52% Panic",
     "element": "min",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Maximum Tempest": {
     "element": "win",
     "power": 88,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Me Patra": {
-    "effect": "Sleep, Illusion Remove",
+    "card": "Astria, Melchisedec, Njord",
+    "effect": "Remove Illusion, Sleep",
     "element": "rec",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Media": {
+    "card": "Kanaloa",
     "effect": "Recover HP",
     "element": "rec",
     "power": 20,
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Mediamai": {
-    "effect": "For 1 battle, Recovery 1/8 HP per turn",
+    "effect": "Recover 1/8 HP per turn for rest of battle",
     "element": "rec",
     "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Mediarahan": {
+    "card": "Nannar, Urd",
     "effect": "Recover all HP",
     "element": "rec",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Medirama": {
+    "card": "Tensen Nyannyan",
     "effect": "Recover HP",
     "element": "rec",
     "power": 150,
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Mega Blaze": {
     "element": "fir",
     "power": 88,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Megalo-Fire": {
-    "effect": "Insta Death 106%",
+    "effect": "106% Instakill",
     "element": "fir",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Megaton Press": {
     "element": "hav",
     "power": 54,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Megido": {
+    "card": "Seiten Taisei, Ah Puch, Crowley",
     "element": "gra",
     "power": 50,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Megidola": {
+    "card": "Armaiti, Beelzebub, Gundari Myouou, Isis",
     "element": "gra",
     "power": 85,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Megidolaonn": {
+    "card": "Alice, Fenrir, Michael, Mot, Ah Puch, Alice D",
     "element": "gra",
     "power": 120,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Melody of Seduction": {
-    "effect": "Charm 120%",
+    "effect": "120% Charm",
     "element": "min",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Meltdown": {
     "element": "fir",
     "power": 96,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Mephistopheles": {
-    "effect": "Sleep, Panic, Charm, Poison, Mute, Rage, or Illusion 56%",
+    "effect": "56% Sleep, Panic, Charm, Poison, Mute, Rage, Illusion",
     "element": "ail",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Meteor Crush": {
     "element": "gra",
     "power": 140,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Mighty Swing": {
     "element": "sla",
     "power": 42,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Mirage Breath": {
-    "effect": "Illusion 44%",
+    "effect": "44% Illusion",
     "element": "ail",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Mudo": {
-    "effect": "Insta Death 36%",
+    "effect": "36% Instakill",
     "element": "dar",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Mudoonn": {
-    "effect": "Insta Death 48%",
+    "effect": "48% Instakill",
     "element": "dar",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Multi-Dimension": {
-    "effect": "Insta Death 20%",
+    "effect": "20% Instakill",
     "element": "alm",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Muramasa Copy": {
     "effect": "Prevent Persona skills for 3 turns",
     "element": "sla",
     "power": 30,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Muzzle Shoot": {
-    "effect": "Mute 64%",
+    "effect": "64% Mute",
     "element": "gun",
     "power": 68,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Ninety Nine Needles": {
     "element": "thr",
     "power": 34,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Nirvana": {
     "element": "lig",
     "power": 40,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Norn's Twinkles": {
+    "cost": 2001,
     "effect": "Mute all, Panic all, Kill all foes, All foes escape, Universal Samarecarm, Recover all ally SP, Foes cannot act for 3 turns, Double exp and money dropped",
     "element": "alm",
-    "restrict": "fusion",
     "target": "Universal"
   },
   "Nova Cyther": {
     "element": "nuk",
     "power": 152,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Nuclear Blast": {
     "element": "nuk",
     "power": 58,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Nuclear Crush": {
     "element": "nuk",
     "power": 110,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Nuclear Jihad": {
     "element": "nuk",
     "power": 124,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Nuclear Missile": {
     "element": "nuk",
     "power": 128,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Octopacy Fist": {
     "element": "str",
     "power": 112,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Old Maid": {
     "effect": "Force 1 foe to cast JOKER",
     "element": "alm",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Omega Cluster": {
-    "effect": "Insta Death starting from lowest Lvl for next 8 actions",
+    "effect": "Instakill starting from lowest lvl for next 8 actions",
     "element": "dar",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Ominous Waterfall": {
     "element": "wat",
     "power": 72,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Pandaemonium": {
-    "effect": "Holy dmg",
+    "effect": "80 Dark dmg",
     "element": "gra",
     "power": 80,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Pantheon": {
-    "effect": "Dark dmg",
+    "effect": "80 Light dmg",
     "element": "gra",
     "power": 80,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Paralyzing Bite": {
-    "effect": "Sleep 42%",
+    "effect": "42% Sleep",
     "element": "hav",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Paralyzing Scratch": {
-    "effect": "Sleep 42%",
+    "effect": "42% Sleep",
     "element": "str",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Patra": {
-    "effect": "Sleep, Illusion Remove",
+    "card": "Hathor",
+    "effect": "Remove Illusion, Sleep",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Perpetual Darkness": {
-    "effect": "Prevent Fusion Spells for 1 turn",
+    "effect": "Prevent fusion spells for 1 turn",
     "element": "spe",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Petrifying Glare": {
-    "effect": "Insta Death 40%",
+    "effect": "40% Instakill",
     "element": "alm",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Photon Cannon": {
     "element": "hav",
     "power": 48,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Pine Bamboo Plum": {
     "effect": "25% Media, 50% Mediarama, 25% Sthiti",
     "element": "rec",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Poisma": {
-    "effect": "Poison 24%",
+    "card": "Blob, Kun Anun, Robin Goodfellow D",
+    "effect": "24% Poison",
     "element": "ail",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Poison Breath": {
-    "effect": "Poison 20%",
+    "effect": "20% Poison",
     "element": "ail",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Poison Needle": {
-    "effect": "Poison 58%",
+    "effect": "58% Poison",
     "element": "thr",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Poison Scratch": {
-    "effect": "Poison 58%",
+    "effect": "58% Poison",
     "element": "str",
     "power": 30,
-    "target": "1 Foe"
+    "restrict": "enemy",
+    "target": "1 foe"
   },
   "Poisonous Bite": {
-    "effect": "Poison 58%",
+    "effect": "58% Poison",
     "element": "hav",
     "power": 30,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Possession": {
-    "effect": "Possession. Kills user",
+    "effect": "Possession, User dies",
     "element": "alm",
     "power": 30,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Posumudi": {
-    "effect": "Poison Remove",
+    "card": "Poltergeist",
+    "effect": "Remove Poison",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Prophecy": {
-    "effect": "Drops all equipped Personas to rank 1. Kills user",
+    "effect": "Drops all equipped personas to rank 1, User dies",
     "element": "alm",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Pulinpa": {
-    "effect": "Panic 52%",
+    "card": "Barbatos, Lich",
+    "effect": "52% Panic",
     "element": "min",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Puraraya": {
-    "effect": "Insta Death to 1-3 Foes",
+    "effect": "Instakill to 1-3 foes",
     "element": "sla",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Quadra-Termination": {
+    "cost": 2001,
     "element": "sla",
     "power": 166,
-    "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Radical Powerslide": {
     "effect": "User escapes",
     "element": "alm",
     "power": 84,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Ragnarok": {
-    "effect": "Insta Death to Odin and Heimdal or Loki and Fenrir",
+    "cost": 2001,
+    "effect": "Instakill to Odin and Heimdal or Loki and Fenrir",
     "element": "alm",
-    "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Rain of Arrows": {
     "element": "gun",
     "power": 48,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Raku Kaja": {
-    "effect": "For 1 battle, P.Def x2",
+    "card": "Nike, Tenhou Gensui, Ogre",
+    "effect": "Increase phys defense",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Rapidfire": {
     "element": "gun",
     "power": 48,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Recarm": {
+    "card": "Baal, Shaka",
     "effect": "Revive with 25% HP",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Recarm Dora": {
-    "effect": "Revive with full HP. Kills user",
+    "card": "Artemis, Gabriel, Hurakan, Izanami, Kinich Ahau, Rangda, Uroboros D",
+    "effect": "Revive with full HP, User dies",
     "element": "rec",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Refresh Ring": {
-    "effect": "Remove all ailments",
+    "effect": "Remove ailments",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Release Jail": {
-    "effect": "Freeze 30%",
+    "effect": "30% Freeze",
     "element": "ice",
     "power": 118,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Retreat": {
     "effect": "Guaranteed escape from battle",
@@ -1418,532 +1476,581 @@
     "restrict": "enemy"
   },
   "Reverie Needle": {
-    "effect": "Sleep 70%",
+    "effect": "70% Sleep",
     "element": "thr",
     "power": 44,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Roar": {
-    "effect": "Rage 20%",
+    "effect": "20% Rage",
     "element": "ail",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Rock Fall": {
     "element": "ear",
     "power": 42,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Rotten Flesh": {
     "element": "thr",
     "power": 62,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Ryuhi Tensho": {
     "element": "win",
     "power": 72,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Ryusei Rekken": {
     "element": "str",
     "power": 82,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "S.P.": {
     "effect": "Recover full SP",
     "element": "spe",
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Salamander": {
-    "effect": "Dmg scales with Summon Spirits user Lvl",
+    "effect": "Add with Summon Spirits user lvl",
     "element": "fir",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Sama Kaja": {
-    "effect": "For 1 battle, M.Def x2",
+    "effect": "Increase magic defense",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Sama Recarm": {
+    "card": "Gaia, Mucalinda, Cherub, Phoenix D",
     "effect": "Revive with all HP",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Scratch": {
     "element": "str",
     "power": 34,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Sea Sparrow": {
     "element": "gun",
     "power": 30,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Self Explosion": {
-    "effect": "Kills user",
+    "effect": "User dies",
     "element": "alm",
     "power": 30,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Senpu Jin": {
     "element": "win",
     "power": 68,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Serenade of Madness": {
-    "effect": "Rage Eri only",
+    "effect": "Rage to Elly",
     "element": "alm",
     "power": 48,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Shadow Force": {
     "effect": "Hide player status for 16 actions",
     "element": "spe",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Sharp Boulder": {
     "element": "ear",
     "power": 72,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Shikku Suisouha": {
     "element": "wat",
     "power": 78,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Sindu Mystery": {
+    "cost": 2001,
     "effect": "Nullify dmg received and dealt for 3 enemy actions",
     "element": "sup",
-    "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Single Shot": {
     "element": "gun",
     "power": 36,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Sonic Punch": {
     "element": "str",
     "power": 42,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Soothing Melody": {
     "effect": "Recover HP",
     "element": "rec",
     "power": 48,
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Spectra Force": {
-    "effect": "Random Element or Force dmg",
+    "effect": "Random element or force damage",
     "element": "alm",
     "power": 250,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Spiral Shot": {
     "element": "thr",
     "power": 32,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Sristi": {
     "effect": "Revive with all HP",
     "element": "rec",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Stagnant Air": {
     "element": "dar",
     "power": 12,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Sthiti": {
     "effect": "Recover all HP and remove all ailments",
     "element": "rec",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Stone Rise": {
     "element": "ear",
     "power": 102,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Storm Nightmare": {
-    "effect": "Insta Death 106%",
+    "effect": "106% Instakill",
     "element": "win",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Straight Slash": {
     "element": "sla",
     "power": 34,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Suku Kaja": {
-    "effect": "For 1 battle, Agility x2",
+    "card": "Heimdall",
+    "effect": "Increase agility",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Summon Shikigami": {
-    "effect": "For 1 battle, M.Def x2 deal enemy elemental weakness dmg",
+    "cost": 2001,
+    "effect": "Deal enemy elemental weakness dmg, Makakaja",
     "element": "sup",
     "power": 110,
-    "restrict": "fusion",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Summon Spirit": {
-    "effect": "Mute 20%",
+    "effect": "20% Mute",
     "element": "ail",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Super Megido": {
-    "effect": "Dmg scales with rumor, 1/50/75",
+    "effect": "50% Shock, Rumor changes to 1 or 75",
     "element": "gra",
-    "restrict": "rumor",
-    "target": "All Foes"
+    "power": 50,
+    "target": "All foes"
   },
   "Sylph": {
-    "effect": "Dmg scales with Summon Spirits user Lvl",
+    "effect": "Add with Summon Spirits user lvl",
     "element": "win",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Tackle": {
     "element": "hav",
     "power": 42,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Takemikazuchi": {
-    "effect": "Shock 30%. Dmg scales with Summon Spirits user Lvl",
+    "effect": "30% Shock, Add with Summon Spirits user lvl",
     "element": "ele",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Taru Kaja": {
-    "effect": "For 1 battle, P.Atk x2",
+    "card": "Kanshou, Susano-O, Minotaur D, Rakshasa, Yaksa",
+    "effect": "Increase phys attack",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Tenchu-Satsu": {
+    "cost": 2001,
     "effect": "Effective against certain boss",
     "element": "alm",
     "power": 72,
-    "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Tentacle": {
-    "effect": "Shock 50%",
+    "effect": "50% Shock",
     "element": "hav",
     "power": 52,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Terror of Fortune": {
-    "effect": "Sleep, Panic, Charm, Rage 58%",
+    "effect": "58% Sleep, Panic, Charm, Rage",
     "element": "win",
     "power": 108,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Tetraja": {
-    "effect": "Nullify Light or Dark attack once",
+    "card": "Gyokukou Joutei, Sif, Wong Long, Biyarky",
+    "effect": "Nullify next Light or Dark attack",
     "element": "sup",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Tetrakarn": {
-    "effect": "Repel Phys attack once",
+    "card": "Demeter, Futsuno Mitama, Kinich Kakmo, Pallas Athena, Lucifugus",
+    "effect": "Repel next phys attack",
     "element": "sup",
-    "target": "1 Ally"
+    "target": "1 ally"
   },
   "Throw A Kiss": {
-    "effect": "Charm 52%",
+    "effect": "52% Charm",
     "element": "min",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Thunder Crush": {
-    "effect": "Shock 40%",
+    "effect": "40% Shock",
     "element": "ele",
     "power": 86,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Tidal Wave": {
     "element": "wat",
     "power": 88,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Tir Na Nogg": {
+    "cost": 2001,
     "effect": "Dmg scales with lost HP",
     "element": "alm",
     "power": 180,
-    "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Tower Inferno": {
     "element": "fir",
     "power": 102,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Trafuri": {
+    "card": "Kimnara",
     "effect": "Guaranteed escape from battle",
     "element": "spe",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Tranquilizer": {
-    "effect": "Sleep 42%",
+    "effect": "42% Sleep",
     "element": "gun",
     "power": 30,
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Transfixion": {
-    "effect": "Insta Death 20%",
+    "effect": "20% Instakill",
     "element": "hav",
     "power": 36,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Transient Ripple": {
+    "effect": "Nullify buffs, shields, regeneration",
     "element": "alm",
     "power": 64,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Trial of Darkness": {
-    "effect": "Insta Death 50%",
+    "effect": "50% Instakill",
     "element": "dar",
     "power": 64,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Trimurti": {
-    "effect": "Insta Death 100%. Allies recover full HP. Participants lose all SP",
+    "cost": 2001,
+    "effect": "100% Instakill, Mediarahan, Participants lose all SP",
     "element": "alm",
-    "restrict": "fusion",
     "target": "Universal"
   },
   "Triple Charge": {
     "element": "hav",
     "power": 92,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Triple Down": {
     "element": "gun",
     "power": 54,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Turbid Mist": {
-    "effect": "Poison 24%",
+    "effect": "24% Poison",
     "element": "ail",
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Twin Slash": {
     "element": "sla",
     "power": 54,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Twinkle Nebula": {
     "element": "win",
     "power": 86,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Typhonic Wrath": {
     "effect": "24 Wind Dmg",
     "element": "sla",
     "power": 48,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Ultra Freila": {
-    "effect": "Dmg scales with rumor, 1/28/56",
+    "effect": "Rumor changes to 1 or 56",
     "element": "nuk",
-    "restrict": "rumor",
-    "target": "Group of Foes"
+    "power": 28,
+    "target": "Multi foes"
   },
   "Undine": {
-    "effect": "Dmg scales with Summon Spirits user Lvl",
+    "effect": "Add with Summon Spirits user lvl",
     "element": "wat",
     "power": 16,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
+  },
+  "Unknown Assist": {
+    "effect": "Rakukaja + Samukaja, All -kaja if Great affinity",
+    "element": "sup",
+    "restrict": "unknown",
+    "target": "Self"
+  },
+  "Unknown Attack": {
+    "effect": "500 dmg if Great affinity",
+    "element": "alm",
+    "power": 250,
+    "restrict": "unknown",
+    "target": "All foes"
+  },
+  "Unknown Defense": {
+    "effect": "Nullify next attack, Repel if Great affinity",
+    "element": "sup",
+    "restrict": "unknown",
+    "target": "Self"
+  },
+  "Unknown Recovery": {
+    "effect": "Recover all HP, Remove all ailments if Great affinity",
+    "element": "rec",
+    "restrict": "unknown",
+    "target": "Self"
+  },
+  "Unknown Revival": {
+    "effect": "Revive with 25% HP, Full HP if Great affinity",
+    "element": "rec",
+    "restrict": "unknown",
+    "target": "Self"
+  },
+  "Unknown Special": {
+    "effect": "Instakill if Great affinity",
+    "element": "alm",
+    "restrict": "unknown",
+    "target": "All foes"
   },
   "Unperishable Black": {
     "effect": "Dmg equal to 50% user HP",
     "element": "alm",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Vain Splash": {
     "element": "wat",
     "power": 96,
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Venomous Bite": {
-    "effect": "Poison 80%",
+    "effect": "80% Poison",
     "element": "hav",
     "power": 44,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Venomous Needle": {
-    "effect": "Poison 80%",
+    "effect": "80% Poison",
     "element": "thr",
     "power": 44,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Venomous Scratch": {
-    "effect": "Poison 80%",
+    "effect": "80% Poison",
     "element": "str",
     "power": 44,
-    "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Vice Shot": {
-    "effect": "Insta Death 64%",
+    "effect": "64% Instakill",
     "element": "alm",
     "restrict": "enemy",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Vile Thunderbolt": {
-    "effect": "Shock 30%",
+    "effect": "30% Shock",
     "element": "ele",
     "power": 36,
-    "target": "Group of Foes"
+    "target": "Multi foes"
   },
   "Violent Rage": {
     "element": "hav",
     "power": 42,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Viper Smash": {
     "element": "str",
     "power": 54,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Vital Thrust": {
-    "effect": "Insta Death 20%",
+    "effect": "20% Instakill",
     "element": "str",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Wall of Air": {
-    "effect": "For 1 battle, Nullify Wind dmg",
+    "effect": "Nullify Wind dmg for rest of battle",
     "element": "sup",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Wall of Earth": {
-    "effect": "For 1 battle, Nullify Earth dmg",
+    "effect": "Nullify Earth dmg for rest of battle",
     "element": "sup",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Wall of Fire": {
-    "effect": "For 1 battle, Nullify Fire dmg",
+    "effect": "Nullify Fire dmg for rest of battle",
     "element": "sup",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Wall of Water": {
-    "effect": "For 1 battle, Nullify Water dmg",
+    "effect": "Nullify Water dmg for rest of battle",
     "element": "sup",
-    "target": "All Allies"
+    "target": "All allies"
   },
   "Wheel of Fortune": {
-    "effect": "Prevent Persona change for 8 turns",
+    "effect": "Prevent persona change for 8 turns",
     "element": "spe",
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Wheel of Time": {
     "effect": "Dmg scales +10% per use",
     "element": "alm",
     "power": 100,
     "restrict": "enemy",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Whirlwind Blast": {
     "element": "thr",
     "power": 44,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Wind Cutter": {
     "element": "win",
     "power": 102,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Wind Slash": {
     "effect": "24 Wind Dmg",
     "element": "sla",
     "power": 54,
     "restrict": "fusion",
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Wingbeat": {
     "element": "hav",
     "power": 32,
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Wiseman Snap": {
     "element": "thr",
     "power": 54,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Wonder Story": {
     "effect": "All foes escape, but money still drops",
     "element": "alm",
     "restrict": "fusion",
-    "target": "All Foes"
+    "target": "All foes"
   },
   "Wonderful Aques": {
-    "effect": "Dmg scales with rumor, 1/32/56",
+    "effect": "Rumor changes to 1 or 56",
     "element": "wat",
-    "restrict": "rumor",
-    "target": "1 Foe"
+    "power": 32,
+    "target": "1 foe"
   },
   "Zan": {
+    "card": "Mou Shobo, Puck",
     "element": "gra",
     "power": 10,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Zandyne": {
+    "card": "Charon, Cu Chulainn, Prometheus, Barbatos D, Jahi, Stuparideth, Valkyrie D",
     "element": "gra",
     "power": 68,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Zanma": {
+    "card": "Agrippa D, Barbatos D",
     "element": "gra",
     "power": 38,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Zio": {
-    "effect": "Shock 50%",
+    "card": "Phantom, Shax D",
+    "effect": "50% Shock",
     "element": "ele",
     "power": 8,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Ziodyne": {
-    "effect": "Shock 50%",
+    "card": "Fariedone, Seth, Shiva, Vritra, Girimekara, Succubus D",
+    "effect": "50% Shock",
     "element": "ele",
     "power": 60,
-    "target": "1 Foe"
+    "target": "1 foe"
   },
   "Zionga": {
-    "effect": "Shock 50%",
+    "card": "Heinir D, Shax D",
+    "effect": "50% Shock",
     "element": "ele",
     "power": 36,
-    "target": "1 Foe"
+    "target": "1 foe"
   }
 }
