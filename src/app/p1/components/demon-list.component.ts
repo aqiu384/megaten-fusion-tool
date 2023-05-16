@@ -49,7 +49,7 @@ export class DemonListContainerComponent extends DLCC {
     this.inheritOrder = this.compConfig.elemOrder;
 
     if (this.showEnemies) {
-      this.appName = `List of Shadows - ${fusionDataService.appName}`;
+      this.appName = `List of Demons - ${fusionDataService.appName}`;
       this.statHeaders = this.compConfig.enemyStats;
     }
   }
