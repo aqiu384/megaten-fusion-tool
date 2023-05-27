@@ -1,69 +1,60 @@
 {
   "1hSwd Master": {
     "effect": "1-handed sword dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "2hSwd Master": {
     "effect": "2-handed sword dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Absorb Elec": {
     "card": "Kartikeya",
-    "clvl": 77,
     "effect": "Drains Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Absorb Fire": {
     "card": "Skadi",
-    "clvl": 88,
     "effect": "Drains Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Absorb Ice": {
     "card": "Saturnus",
-    "clvl": 85,
     "effect": "Drains Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Absorb Pierce": {
     "card": "Nidhoggr",
-    "clvl": 76,
     "effect": "Drains Pierce attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 8
   },
   "Absorb Slash": {
     "card": "Helel",
-    "clvl": 96,
     "effect": "Drains Slash attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 8
   },
   "Absorb Strike": {
     "card": "Abaddon",
-    "clvl": 75,
     "effect": "Drains Strike attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 8
   },
   "Absorb Wind": {
     "card": "Ananta",
-    "clvl": 83,
     "effect": "Drains Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Agi": {
     "card": "Orpheus, Berith",
-    "clvl": 17,
     "cost": 1003,
-    "damage": "Light",
-    "element": "fire",
+    "element": "fir",
     "hit": 95,
     "power": 40,
     "rank": 1,
@@ -71,10 +62,8 @@
   },
   "Agidyne": {
     "card": "Surt, Seth",
-    "clvl": 73,
     "cost": 1012,
-    "damage": "Heavy",
-    "element": "fire",
+    "element": "fir",
     "hit": 95,
     "power": 320,
     "rank": 5,
@@ -82,10 +71,8 @@
   },
   "Agilao": {
     "card": "Lamia",
-    "clvl": 29,
     "cost": 1006,
-    "damage": "Medium",
-    "element": "fire",
+    "element": "fir",
     "hit": 95,
     "power": 100,
     "rank": 3,
@@ -93,18 +80,15 @@
   },
   "Ailment Boost": {
     "card": "Mother Harlot",
-    "clvl": 79,
     "effect": "All ailment success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Akasha Arts": {
     "card": "Sandalphon",
-    "clvl": 82,
     "cost": 26,
-    "damage": "Heavy",
     "effect": "10% crit, x1-2 hits",
-    "element": "strike",
+    "element": "str",
     "hit": 85,
     "power": 350,
     "rank": 7,
@@ -112,30 +96,27 @@
   },
   "Alertness": {
     "effect": "Lowers chances of being ambushed",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Amrita": {
     "card": "Scathach",
-    "clvl": 73,
     "cost": 1025,
     "effect": "Cures all ailments",
-    "element": "recovery",
+    "element": "rec",
     "rank": 6,
     "target": "All Allies"
   },
   "Apt Pupil": {
     "card": "Okuninushi",
-    "clvl": 50,
     "effect": "Doubles crit rate",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Ardhanari": {
     "card": "Malachite x3, Ruby x2",
     "cost": 130,
-    "damage": "Massive",
-    "element": "fire",
+    "element": "fir",
     "hit": 100,
     "power": 900,
     "rank": 0,
@@ -145,8 +126,7 @@
   "Armageddon": {
     "card": "Malachite x99, Ruby x10",
     "cost": 200,
-    "damage": "Ultimate",
-    "element": "almighty",
+    "element": "alm",
     "hit": 100,
     "power": 9999,
     "rank": 0,
@@ -155,18 +135,15 @@
   },
   "Arms Master": {
     "card": "Chi You",
-    "clvl": 94,
     "effect": "Halves all HP costs",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Arrow Rain": {
     "card": "Garuda",
-    "clvl": 71,
     "cost": 26,
-    "damage": "Medium",
     "effect": "5% crit, x1-2 hits",
-    "element": "pierce",
+    "element": "pie",
     "hit": 90,
     "power": 130,
     "rank": 6,
@@ -174,11 +151,9 @@
   },
   "Assault Dive": {
     "card": "Legion",
-    "clvl": 23,
     "cost": 12,
-    "damage": "Light",
     "effect": "5% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 88,
     "power": 90,
     "rank": 2,
@@ -186,51 +161,44 @@
   },
   "Auto-Maraku": {
     "card": "Raphael",
-    "clvl": 68,
     "effect": "Begin battle with Marakukaja",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Auto-Masuku": {
     "card": "Horus",
-    "clvl": 68,
     "effect": "Begin battle with Masukukaja",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Auto-Mataru": {
     "card": "Melchizedek",
-    "clvl": 68,
     "effect": "Begin battle with Matarukaja",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Auto-Rakukaja": {
     "card": "Genbu",
-    "clvl": 33,
     "effect": "Begin battle with Rakukaja",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Auto-Sukukaja": {
     "card": "Flauros",
-    "clvl": 38,
     "effect": "Begin battle with Sukukaja",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Auto-Tarukaja": {
     "card": "Oumitsunu",
-    "clvl": 34,
     "effect": "Begin battle with Tarukaja",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Bash": {
     "cost": 10,
-    "damage": "Light",
     "effect": "5% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 90,
     "power": 30,
     "rank": 1,
@@ -240,7 +208,7 @@
     "card": "Malachite x2, Topaz x2",
     "cost": 115,
     "effect": "Tarukaja + Rakukaja + Sukukaja",
-    "element": "support",
+    "element": "sup",
     "rank": 0,
     "target": "One Ally",
     "unique": "Fusion Spell"
@@ -248,14 +216,13 @@
   "Bewilder": {
     "cost": 1005,
     "effect": "40% Distress",
-    "element": "ailment",
+    "element": "ail",
     "rank": 1,
     "target": "One Foe"
   },
   "Black Viper": {
     "cost": 1060,
-    "damage": "Massive",
-    "element": "almighty",
+    "element": "alm",
     "hit": 100,
     "power": 950,
     "rank": 9,
@@ -264,11 +231,9 @@
   },
   "Blade of Fury": {
     "card": "Chernobog",
-    "clvl": 64,
     "cost": 22,
-    "damage": "Medium",
     "effect": "3% crit, x1-3 hits",
-    "element": "slash",
+    "element": "sla",
     "hit": 82,
     "power": 100,
     "rank": 5,
@@ -276,14 +241,12 @@
   },
   "Bow Master": {
     "effect": "Bow dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Bufu": {
     "card": "Apsaras",
-    "clvl": 3,
     "cost": 1004,
-    "damage": "Light",
     "effect": "10% Freeze",
     "element": "ice",
     "hit": 95,
@@ -293,9 +256,7 @@
   },
   "Bufudyne": {
     "card": "Parvati, Hariti",
-    "clvl": 69,
     "cost": 1016,
-    "damage": "Heavy",
     "effect": "10% Freeze",
     "element": "ice",
     "hit": 95,
@@ -305,9 +266,7 @@
   },
   "Bufula": {
     "card": "High Pixie",
-    "clvl": 25,
     "cost": 1008,
-    "damage": "Medium",
     "effect": "10% Freeze",
     "element": "ice",
     "hit": 95,
@@ -319,30 +278,28 @@
     "card": "Malachite x2, Amethyst x1",
     "cost": 120,
     "effect": "Restores 50% HP, Sukukaja",
-    "element": "recovery",
+    "element": "rec",
     "rank": 0,
     "target": "All Allies",
     "unique": "Fusion Spell"
   },
   "Charm Boost": {
     "effect": "Charm success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Charmdi": {
     "card": "Alp",
-    "clvl": 9,
     "cost": 1005,
     "effect": "Cures Charm",
-    "element": "recovery",
+    "element": "rec",
     "rank": 2,
     "target": "One Ally"
   },
   "Cleave": {
     "cost": 10,
-    "damage": "Light",
     "effect": "5% crit",
-    "element": "slash",
+    "element": "sla",
     "hit": 90,
     "power": 30,
     "rank": 1,
@@ -350,32 +307,27 @@
   },
   "Cool Breeze": {
     "card": "Ose",
-    "clvl": 50,
     "effect": "Recover 8% HP and SP after battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Counter": {
     "card": "Hanuman",
-    "clvl": 40,
     "effect": "10% chance to repel Phys attack",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Counterstrike": {
     "card": "Koumokuten",
-    "clvl": 48,
     "effect": "15% chance to repel Phys attack",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Cruel Attack": {
     "card": "Kurama Tengu",
-    "clvl": 49,
     "cost": 14,
-    "damage": "Medium",
     "effect": "3% crit, Dmg x1.5 on Downed foes",
-    "element": "pierce",
+    "element": "pie",
     "hit": 99,
     "power": 225,
     "rank": 4,
@@ -383,11 +335,9 @@
   },
   "Deathbound": {
     "card": "Uriel",
-    "clvl": 63,
     "cost": 26,
-    "damage": "Heavy",
     "effect": "25% crit",
-    "element": "slash",
+    "element": "sla",
     "hit": 90,
     "power": 370,
     "rank": 6,
@@ -395,110 +345,103 @@
   },
   "Dekaja": {
     "card": "Take-Minakata",
-    "clvl": 27,
     "cost": 1015,
     "effect": "Removes -kaja effects",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Foes"
   },
   "Dekunda": {
     "card": "Narcissus",
-    "clvl": 25,
     "cost": 1015,
     "effect": "Removes -kunda effects",
-    "element": "support",
+    "element": "sup",
     "rank": 3,
     "target": "All Allies"
   },
   "Dia": {
     "card": "Unicorn, Pixie",
-    "clvl": 4,
     "cost": 1004,
     "effect": "50 HP restore",
-    "element": "recovery",
+    "element": "rec",
     "rank": 2,
     "target": "One Ally"
   },
   "Diarahan": {
     "card": "Daisoujou, Bishamonten",
-    "clvl": 66,
     "cost": 1020,
     "effect": "Full HP restore",
-    "element": "recovery",
+    "element": "rec",
     "rank": 5,
     "target": "One Ally"
   },
   "Diarama": {
     "card": "Ganga, Leanan Sidhe",
-    "clvl": 37,
     "cost": 1008,
     "effect": "160 HP restore",
-    "element": "recovery",
+    "element": "rec",
     "rank": 3,
     "target": "One Ally"
   },
   "Die for Me!": {
     "cost": 1035,
     "effect": "45% insta-kill",
-    "element": "dark",
+    "element": "dar",
     "rank": 9,
     "target": "All Foes",
     "unique": "Alice"
   },
   "Distress Boost": {
     "effect": "Distress success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Divine Grace": {
     "card": "Rescue reward",
     "effect": "HP recovery skills x2",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Dodge Elec": {
     "effect": "Doubles evasion rate against Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Dodge Fire": {
     "effect": "Doubles evasion rate against Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Dodge Ice": {
     "effect": "Doubles evasion rate against Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Dodge Pierce": {
     "effect": "Doubles evasion rate against Pierce attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Dodge Slash": {
     "effect": "Doubles evasion rate against Slash attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Dodge Strike": {
     "effect": "Doubles evasion rate against Strike attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Dodge Wind": {
     "effect": "Doubles evasion rate against Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Double Fangs": {
     "card": "Naga",
-    "clvl": 18,
     "cost": 12,
-    "damage": "Light",
     "effect": "1% crit, x2 hits",
-    "element": "pierce",
+    "element": "pie",
     "hit": 85,
     "power": 20,
     "rank": 2,
@@ -508,7 +451,7 @@
     "card": "Malachite x2, Garnet x1",
     "cost": 115,
     "effect": "80% Charm",
-    "element": "ailment",
+    "element": "ail",
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
@@ -516,138 +459,128 @@
   "Eerie Sound": {
     "cost": 1010,
     "effect": "40% Distress",
-    "element": "ailment",
+    "element": "ail",
     "rank": 2,
     "target": "All Foes"
   },
   "Elec Amp": {
     "card": "Odin",
-    "clvl": 66,
     "effect": "Elec dmg x1.5",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Elec Boost": {
     "card": "Take-Mikazuchi",
-    "clvl": 31,
     "effect": "Elec dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 2
   },
   "Elec Break": {
     "card": "Hokuto Seikun",
-    "clvl": 53,
     "cost": 1050,
     "effect": "Removes Elec resistance for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "One Foe"
   },
   "Endure": {
     "card": "Hell Biker",
-    "clvl": 66,
     "effect": "Survive lethal attack with 1 HP once per battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Endure Dark": {
     "card": "Jikokuten",
-    "clvl": 35,
     "effect": "100% chance to endure Dark attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Endure Light": {
     "effect": "100% chance to endure Light attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Enduring Soul": {
     "card": "Attis",
-    "clvl": 76,
     "effect": "Survive lethal attack with 100% HP once per battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Enradi": {
     "card": "Omoikane",
-    "clvl": 11,
     "cost": 1005,
     "effect": "Cures Rage",
-    "element": "recovery",
+    "element": "rec",
     "rank": 2,
     "target": "One Ally"
   },
   "Escape Route": {
     "effect": "Instant escape from dungeon",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Lucia"
   },
   "Evade Elec": {
     "effect": "Triples evasion rate against Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Evade Fire": {
     "effect": "Triples evasion rate against Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Evade Ice": {
     "effect": "Triples evasion rate against Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Evade Pierce": {
     "effect": "Triples evasion rate against Pierce attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Evade Slash": {
     "effect": "Triples evasion rate against Slash attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Evade Strike": {
     "effect": "Triples evasion rate against Strike attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Evade Wind": {
     "effect": "Triples evasion rate against Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Evil Smile": {
     "card": "Mokoi",
-    "clvl": 20,
     "cost": 1010,
     "effect": "35% Fear",
-    "element": "ailment",
+    "element": "ail",
     "rank": 4,
     "target": "All Foes"
   },
   "Evil Touch": {
     "cost": 1005,
     "effect": "40% Fear",
-    "element": "ailment",
+    "element": "ail",
     "rank": 3,
     "target": "One Foe"
   },
   "Fast Retreat": {
     "card": "Quest reward",
     "effect": "Raises chances of successful escape",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Fatal End": {
     "card": "Taraka",
-    "clvl": 44,
     "cost": 18,
-    "damage": "Medium",
     "effect": "10% crit",
-    "element": "slash",
+    "element": "sla",
     "hit": 92,
     "power": 230,
     "rank": 4,
@@ -655,43 +588,39 @@
   },
   "Fear Boost": {
     "effect": "Fear success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Fire Amp": {
     "card": "Kumbhanda",
-    "clvl": 58,
     "effect": "Fire dmg x1.5",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Fire Boost": {
     "card": "Hua Po",
-    "clvl": 25,
     "effect": "Fire dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 2
   },
   "Fire Break": {
     "card": "Succubus",
-    "clvl": 47,
     "cost": 1050,
     "effect": "Removes Fire resistance for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "One Foe"
   },
   "Fist Master": {
     "effect": "Fist dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Foul Breath": {
     "card": "Mothman",
-    "clvl": 34,
     "cost": 1015,
     "effect": "Halves ailment resistance for 3 turns",
-    "element": "almighty",
+    "element": "alm",
     "rank": 2,
     "target": "One Foe"
   },
@@ -699,23 +628,21 @@
     "card": "Malachite x1, Amethyst x2",
     "cost": 110,
     "effect": "Restores 100% HP, 30% Charm",
-    "element": "recovery",
+    "element": "rec",
     "rank": 0,
     "target": "All Allies",
     "unique": "Fusion Spell"
   },
   "Full Analysis": {
     "effect": "Displays enemy stats, resistances, and skills",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Lucia"
   },
   "Garu": {
     "card": "Angel",
-    "clvl": 5,
     "cost": 1003,
-    "damage": "Light",
-    "element": "wind",
+    "element": "win",
     "hit": 95,
     "power": 40,
     "rank": 1,
@@ -723,10 +650,8 @@
   },
   "Garudyne": {
     "card": "Loki, Pazuzu",
-    "clvl": 58,
     "cost": 1012,
-    "damage": "Heavy",
-    "element": "wind",
+    "element": "win",
     "hit": 95,
     "power": 320,
     "rank": 5,
@@ -734,10 +659,8 @@
   },
   "Garula": {
     "card": "Empusa",
-    "clvl": 28,
     "cost": 1006,
-    "damage": "Medium",
-    "element": "wind",
+    "element": "win",
     "hit": 95,
     "power": 100,
     "rank": 3,
@@ -745,11 +668,9 @@
   },
   "Getsu-ei": {
     "card": "Ares, Tam Lin",
-    "clvl": 23,
     "cost": 14,
-    "damage": "Medium",
     "effect": "10% crit, Dmg x1.5 during Full Moon",
-    "element": "slash",
+    "element": "sla",
     "hit": 90,
     "power": 120,
     "rank": 3,
@@ -758,17 +679,15 @@
   "Ghastly Wail": {
     "cost": 1015,
     "effect": "Insta-kill to Fearful foes",
-    "element": "ailment",
+    "element": "ail",
     "rank": 8,
     "target": "All Foes"
   },
   "Gigantic Fist": {
     "card": "Ubelluris",
-    "clvl": 53,
     "cost": 16,
-    "damage": "Heavy",
     "effect": "15% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 85,
     "power": 315,
     "rank": 5,
@@ -776,11 +695,9 @@
   },
   "God's Hand": {
     "card": "Metatron",
-    "clvl": 9,
     "cost": 20,
-    "damage": "Severe",
     "effect": "10% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 90,
     "power": 600,
     "rank": 8,
@@ -788,63 +705,55 @@
   },
   "Growth 1": {
     "card": "Gurr",
-    "clvl": 18,
     "effect": "Gains 25% EXP when not equipped",
-    "element": "passive",
+    "element": "pas",
     "rank": 2
   },
   "Growth 2": {
     "card": "Yatagarasu, Quetzalcoatl",
-    "clvl": 46,
     "effect": "Gains 50% EXP when not equipped",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Growth 3": {
     "card": "Jatayu",
-    "clvl": 59,
     "effect": "Gains 100% EXP when not equipped",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Hama": {
     "card": "Archangel",
-    "clvl": 11,
     "cost": 1006,
     "effect": "30% insta-kill",
-    "element": "light",
+    "element": "lig",
     "rank": 2,
     "target": "One Foe"
   },
   "Hama Boost": {
     "card": "Dominion",
-    "clvl": 48,
     "effect": "Light insta-kill success rate x1.5",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Hamaon": {
     "card": "Virtue",
-    "clvl": 38,
     "cost": 1012,
     "effect": "40% insta-kill",
-    "element": "light",
+    "element": "lig",
     "rank": 4,
     "target": "One Foe"
   },
   "Healing Wave": {
     "effect": "Recovers 15% HP to party when changing floors",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Lucia"
   },
   "Heat Wave": {
     "card": "Dionysus",
-    "clvl": 53,
     "cost": 22,
-    "damage": "Medium",
     "effect": "10% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 90,
     "power": 280,
     "rank": 5,
@@ -852,9 +761,8 @@
   },
   "Heaven's Blade": {
     "cost": 18,
-    "damage": "Severe",
     "effect": "30% crit",
-    "element": "slash",
+    "element": "sla",
     "hit": 95,
     "power": 500,
     "rank": 7,
@@ -863,21 +771,19 @@
   },
   "Heavy Master": {
     "effect": "Bludgeon dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "High Counter": {
     "card": "Siegfried",
-    "clvl": 67,
     "effect": "20% chance to repel Phys attack",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Holy Arrow": {
     "cost": 12,
-    "damage": "Light",
     "effect": "3% crit, 25% Charm",
-    "element": "pierce",
+    "element": "pie",
     "hit": 92,
     "power": 60,
     "rank": 2,
@@ -885,24 +791,21 @@
   },
   "Ice Amp": {
     "card": "Titania",
-    "clvl": 55,
     "effect": "Ice dmg x1.5",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Ice Boost": {
     "card": "Jack Frost",
-    "clvl": 14,
     "effect": "Ice dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 2
   },
   "Ice Break": {
     "card": "Laksmi",
-    "clvl": 62,
     "cost": 1050,
     "effect": "Removes Ice resistance for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "One Foe"
   },
@@ -910,7 +813,7 @@
     "card": "Malachite x4, Pearl x4",
     "cost": 130,
     "effect": "Nullifies next attack",
-    "element": "support",
+    "element": "sup",
     "rank": 0,
     "target": "All Allies",
     "unique": "Fusion Spell"
@@ -918,34 +821,33 @@
   "Infuriate": {
     "cost": 1010,
     "effect": "35% Rage",
-    "element": "ailment",
+    "element": "ail",
     "rank": 3,
     "target": "All Foes"
   },
   "Invigorate 1": {
     "card": "Kikuri-Hime",
-    "clvl": 57,
     "effect": "Recover 3 SP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Invigorate 2": {
     "card": "Amethyst x5",
     "effect": "Recover 5 SP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Invigorate 3": {
     "card": "Amethyst x7",
     "effect": "Recover 7 SP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Jack Brothers": {
     "card": "Malachite x2, Emerald x1",
     "cost": 120,
     "effect": "50% chance of Knockdown",
-    "element": "almighty",
+    "element": "alm",
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
@@ -954,18 +856,16 @@
     "card": "Malachite x1, Diamond x1",
     "cost": 130,
     "effect": "Halves HP",
-    "element": "light",
+    "element": "lig",
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
   },
   "Kill Rush": {
     "card": "Vetala",
-    "clvl": 27,
     "cost": 14,
-    "damage": "Light",
     "effect": "3% crit, x1-2 hits",
-    "element": "strike",
+    "element": "str",
     "hit": 85,
     "power": 110,
     "rank": 3,
@@ -974,7 +874,6 @@
   "King and I": {
     "card": "Malachite x3, Garnet x1",
     "cost": 115,
-    "damage": "Medium",
     "effect": "50% chance of Freeze",
     "element": "ice",
     "hit": 99,
@@ -986,8 +885,7 @@
   "Last Judge": {
     "card": "Malachite x10, Ruby x1",
     "cost": 130,
-    "damage": "Severe",
-    "element": "almighty",
+    "element": "alm",
     "hit": 100,
     "power": 800,
     "rank": 0,
@@ -996,23 +894,20 @@
   },
   "Last Resort": {
     "effect": "Kills self and deals 50% HP as Almighty damage to everyone",
-    "element": "almighty",
+    "element": "alm",
     "rank": 99
   },
   "Life Drain": {
     "cost": 1005,
-    "damage": "Set",
     "effect": "Drains 35 HP",
-    "element": "almighty",
+    "element": "alm",
     "power": 100,
     "rank": 3,
     "target": "One Foe"
   },
   "Mabufu": {
     "card": "Mithra, Yamatano-Orochi",
-    "clvl": 29,
     "cost": 1008,
-    "damage": "Light",
     "effect": "8% Freeze",
     "element": "ice",
     "hit": 90,
@@ -1022,9 +917,7 @@
   },
   "Mabufudyne": {
     "card": "Trumpeter, Michael",
-    "clvl": 77,
     "cost": 1032,
-    "damage": "Heavy",
     "effect": "8% Freeze",
     "element": "ice",
     "hit": 90,
@@ -1034,9 +927,7 @@
   },
   "Mabufula": {
     "card": "King Frost",
-    "clvl": 37,
     "cost": 1016,
-    "damage": "Medium",
     "effect": "8% Freeze",
     "element": "ice",
     "hit": 90,
@@ -1046,10 +937,8 @@
   },
   "Magaru": {
     "card": "Fortuna",
-    "clvl": 21,
     "cost": 1006,
-    "damage": "Light",
-    "element": "wind",
+    "element": "win",
     "hit": 90,
     "power": 40,
     "rank": 2,
@@ -1057,10 +946,8 @@
   },
   "Magarudyne": {
     "card": "Suparna",
-    "clvl": 77,
     "cost": 1024,
-    "damage": "Heavy",
-    "element": "wind",
+    "element": "win",
     "hit": 90,
     "power": 320,
     "rank": 6,
@@ -1068,10 +955,8 @@
   },
   "Magarula": {
     "card": "Nandi, Seiryu",
-    "clvl": 43,
     "cost": 1012,
-    "damage": "Medium",
-    "element": "wind",
+    "element": "win",
     "hit": 90,
     "power": 100,
     "rank": 4,
@@ -1079,55 +964,48 @@
   },
   "Mahama": {
     "card": "Power",
-    "clvl": 28,
     "cost": 1012,
     "effect": "25% insta-kill",
-    "element": "light",
+    "element": "lig",
     "rank": 3,
     "target": "All Foes"
   },
   "Mahamaon": {
     "card": "Throne",
-    "clvl": 58,
     "cost": 1024,
     "effect": "35% insta-kill",
-    "element": "light",
+    "element": "lig",
     "rank": 5,
     "target": "All Foes"
   },
   "Makarakarn": {
     "card": "Alilat",
-    "clvl": 91,
     "cost": 1055,
     "effect": "Repels next Magic attack",
-    "element": "support",
+    "element": "sup",
     "rank": 7,
     "target": "All Allies"
   },
   "Mamudo": {
     "card": "Ghoul",
-    "clvl": 22,
     "cost": 1012,
     "effect": "25% insta-kill",
-    "element": "dark",
+    "element": "dar",
     "rank": 3,
     "target": "All Foes"
   },
   "Mamudoon": {
     "card": "Anubis",
-    "clvl": 66,
     "cost": 1024,
     "effect": "35% insta-kill",
-    "element": "dark",
+    "element": "dar",
     "rank": 5,
     "target": "All Foes"
   },
   "Maragi": {
     "card": "Slime",
-    "clvl": 17,
     "cost": 1006,
-    "damage": "Light",
-    "element": "fire",
+    "element": "fir",
     "hit": 90,
     "power": 40,
     "rank": 2,
@@ -1135,10 +1013,8 @@
   },
   "Maragidyne": {
     "card": "Baal Zebul",
-    "clvl": 78,
     "cost": 1024,
-    "damage": "Heavy",
-    "element": "fire",
+    "element": "fir",
     "hit": 90,
     "power": 320,
     "rank": 6,
@@ -1146,10 +1022,8 @@
   },
   "Maragion": {
     "card": "Eligor",
-    "clvl": 35,
     "cost": 1012,
-    "damage": "Medium",
-    "element": "fire",
+    "element": "fir",
     "hit": 90,
     "power": 100,
     "rank": 4,
@@ -1157,42 +1031,39 @@
   },
   "Marakukaja": {
     "card": "Decarabia",
-    "clvl": 56,
     "cost": 1012,
     "effect": "Raises DEF by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Allies"
   },
   "Marakunda": {
     "card": "Black Frost",
-    "clvl": 39,
     "cost": 1012,
     "effect": "Lowers DEF by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "All Foes"
   },
   "Marin Karin": {
     "cost": 1005,
     "effect": "40% Charm",
-    "element": "ailment",
+    "element": "ail",
     "rank": 2,
     "target": "One Foe"
   },
   "Masukukaja": {
     "card": "Suzaku",
-    "clvl": 56,
     "cost": 1012,
     "effect": "Raises HIT/EVA by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Allies"
   },
   "Masukunda": {
     "cost": 1012,
     "effect": "Lowers HIT/EVA by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "All Foes"
   },
@@ -1200,26 +1071,23 @@
     "card": "Rescue and 1st term exam reward",
     "cost": 1012,
     "effect": "Raises ATK by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Allies"
   },
   "Matarunda": {
     "card": "Rangda",
-    "clvl": 45,
     "cost": 1012,
     "effect": "Lowers ATK by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "All Foes"
   },
   "Mazio": {
     "card": "Oberon",
-    "clvl": 19,
     "cost": 1008,
-    "damage": "Light",
     "effect": "8% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 90,
     "power": 40,
     "rank": 3,
@@ -1227,11 +1095,9 @@
   },
   "Maziodyne": {
     "card": "Lilith",
-    "clvl": 67,
     "cost": 1032,
-    "damage": "Heavy",
     "effect": "8% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 90,
     "power": 320,
     "rank": 6,
@@ -1239,11 +1105,9 @@
   },
   "Mazionga": {
     "card": "Thoth",
-    "clvl": 47,
     "cost": 1016,
-    "damage": "Medium",
     "effect": "8% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 90,
     "power": 100,
     "rank": 5,
@@ -1251,46 +1115,40 @@
   },
   "Me Patra": {
     "card": "Clotho",
-    "clvl": 43,
     "cost": 1006,
     "effect": "Cures Panic, Fear, Distress, Freeze, and Shock",
-    "element": "recovery",
+    "element": "rec",
     "rank": 3,
     "target": "All Allies"
   },
   "Media": {
     "card": "Sati, Principality",
-    "clvl": 20,
     "cost": 1008,
     "effect": "40 HP restore",
-    "element": "recovery",
+    "element": "rec",
     "rank": 3,
     "target": "All Allies"
   },
   "Mediarahan": {
     "card": "Yurlungur",
-    "clvl": 72,
     "cost": 1040,
     "effect": "Full HP restore",
-    "element": "recovery",
+    "element": "rec",
     "rank": 7,
     "target": "All Allies"
   },
   "Mediarama": {
     "card": "Saki Mitama",
-    "clvl": 45,
     "cost": 1016,
     "effect": "140 HP restore",
-    "element": "recovery",
+    "element": "rec",
     "rank": 5,
     "target": "All Allies"
   },
   "Megido": {
     "card": "Nebiros",
-    "clvl": 56,
     "cost": 1045,
-    "damage": "Medium",
-    "element": "almighty",
+    "element": "alm",
     "hit": 95,
     "power": 180,
     "rank": 6,
@@ -1298,10 +1156,8 @@
   },
   "Megidola": {
     "card": "Thanatos",
-    "clvl": 73,
     "cost": 1065,
-    "damage": "Heavy",
-    "element": "almighty",
+    "element": "alm",
     "hit": 95,
     "power": 320,
     "rank": 7,
@@ -1309,10 +1165,8 @@
   },
   "Megidolaon": {
     "card": "Messiah",
-    "clvl": 99,
     "cost": 1085,
-    "damage": "Severe",
-    "element": "almighty",
+    "element": "alm",
     "hit": 95,
     "power": 650,
     "rank": 8,
@@ -1320,11 +1174,9 @@
   },
   "Mighty Swing": {
     "card": "Orthrus",
-    "clvl": 34,
     "cost": 14,
-    "damage": "Medium",
     "effect": "5% crit",
-    "element": "slash",
+    "element": "sla",
     "hit": 95,
     "power": 220,
     "rank": 4,
@@ -1332,17 +1184,15 @@
   },
   "Mind Charge": {
     "card": "Atropos",
-    "clvl": 59,
     "cost": 1015,
     "effect": "Next Magic attack x1.9 dmg",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "Self"
   },
   "Morning Star": {
     "cost": 1080,
-    "damage": "Massive",
-    "element": "almighty",
+    "element": "alm",
     "hit": 100,
     "power": 800,
     "rank": 9,
@@ -1350,36 +1200,31 @@
   },
   "Mudo": {
     "card": "Lilim",
-    "clvl": 12,
     "cost": 1006,
     "effect": "30% insta-kill",
-    "element": "dark",
+    "element": "dar",
     "rank": 2,
     "target": "One Foe"
   },
   "Mudo Boost": {
     "card": "Alice, Mot",
-    "clvl": 63,
     "effect": "Dark insta-kill success rate x1.5",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Mudoon": {
     "card": "Samael",
-    "clvl": 44,
     "cost": 1012,
     "effect": "40% insta-kill",
-    "element": "dark",
+    "element": "dar",
     "rank": 4,
     "target": "One Foe"
   },
   "Myriad Arrows": {
     "card": "Cybele",
-    "clvl": 76,
     "cost": 26,
-    "damage": "Medium",
     "effect": "3% crit, x1-2 hits",
-    "element": "pierce",
+    "element": "pie",
     "hit": 87,
     "power": 140,
     "rank": 7,
@@ -1387,7 +1232,6 @@
   },
   "Niflheim": {
     "cost": 1032,
-    "damage": "Severe",
     "effect": "100% Freeze",
     "element": "ice",
     "hit": 99,
@@ -1398,106 +1242,104 @@
   "Null Charm": {
     "card": "Turquoise x1",
     "effect": "Immune to Charm",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Dark": {
     "effect": "Nullifies Dark attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Distress": {
     "effect": "Immune to Distress",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Elec": {
     "effect": "Nullifies Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Fear": {
     "effect": "Immune to Fear",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Fire": {
     "effect": "Nullifies Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Freeze": {
     "effect": "Immune to Freeze",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Ice": {
     "effect": "Nullifies Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Light": {
     "effect": "Nullifies Light attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Panic": {
     "effect": "Immune to Panic",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Pierce": {
     "effect": "Nullifies Pierce attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Null Poison": {
     "card": "Barong",
-    "clvl": 56,
     "effect": "Immune to Poison",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Rage": {
     "effect": "Immune to Rage",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Shock": {
     "effect": "Immune to Shock",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Null Slash": {
     "effect": "Nullifies Slash attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Null Strike": {
     "effect": "Nullifies Strike attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Null Wind": {
     "effect": "Nullifies Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Oracle": {
     "effect": "Random effect: HP restored, SP restored, Both restored, All ailments cured, HP and SP reduced to 1",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Lucia"
   },
   "Panic Boost": {
     "effect": "Panic success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Panta Rhei": {
     "cost": 1030,
-    "damage": "Severe",
-    "element": "wind",
+    "element": "win",
     "hit": 99,
     "power": 650,
     "rank": 9,
@@ -1506,59 +1348,55 @@
   "Patra": {
     "cost": 1003,
     "effect": "Cures Panic, Fear, Distress, Freeze, and Shock",
-    "element": "recovery",
+    "element": "rec",
     "rank": 1,
     "target": "One Ally"
   },
   "Pierce Attack": {
     "effect": "Normal attack using the Pierce attribute",
-    "element": "pierce",
+    "element": "pie",
     "rank": 99
   },
   "Poisma": {
     "cost": 1005,
     "effect": "40% Poison",
-    "element": "ailment",
+    "element": "ail",
     "rank": 1,
     "target": "One Foe"
   },
   "Poison Boost": {
     "effect": "Poison success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Poison Mist": {
     "cost": 1010,
     "effect": "35% Poison",
-    "element": "ailment",
+    "element": "ail",
     "rank": 3,
     "target": "All Foes"
   },
   "Posumudi": {
     "card": "Sarasvati",
-    "clvl": 30,
     "cost": 1005,
     "effect": "Cures Poison",
-    "element": "recovery",
+    "element": "rec",
     "rank": 2,
     "target": "One Ally"
   },
   "Power Charge": {
     "card": "Narasimha, Setanta",
-    "clvl": 34,
     "cost": 1015,
     "effect": "Next Phys attack x1.9 dmg",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "Self"
   },
   "Pralaya": {
     "card": "Shiva",
-    "clvl": 89,
     "cost": 25,
-    "damage": "Severe",
     "effect": "30% crit, 50% Fear",
-    "element": "pierce",
+    "element": "pie",
     "hit": 95,
     "power": 600,
     "rank": 8,
@@ -1566,16 +1404,14 @@
   },
   "Premonition": {
     "effect": "Doubles Evasion for all type of physical attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 99
   },
   "Primal Force": {
     "card": "Beelzebub",
-    "clvl": 88,
     "cost": 30,
-    "damage": "Severe",
     "effect": "5% crit",
-    "element": "pierce",
+    "element": "pie",
     "hit": 95,
     "power": 580,
     "rank": 8,
@@ -1583,36 +1419,33 @@
   },
   "Provoke": {
     "card": "Nekomata",
-    "clvl": 11,
     "cost": 1005,
     "effect": "40% Rage",
-    "element": "ailment",
+    "element": "ail",
     "rank": 2,
     "target": "One Foe"
   },
   "Pulinpa": {
     "cost": 1005,
     "effect": "40% Panic",
-    "element": "ailment",
+    "element": "ail",
     "rank": 2,
     "target": "One Foe"
   },
   "Rage Boost": {
     "card": "Pyro Jack",
-    "clvl": 18,
     "effect": "Rage success rate x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Raging Tiger": {
     "effect": "Doubles damage when Enraged",
-    "element": "passive",
+    "element": "pas",
     "rank": 1
   },
   "Ragnarok": {
     "cost": 1030,
-    "damage": "Severe",
-    "element": "fire",
+    "element": "fir",
     "hit": 99,
     "power": 650,
     "rank": 9,
@@ -1622,222 +1455,210 @@
     "card": "Malachite x4, Pearl x1",
     "cost": 115,
     "effect": "30% chance of Knockdown, Dekaja",
-    "element": "almighty",
+    "element": "alm",
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
   },
   "Rakukaja": {
     "card": "Ara Mitama",
-    "clvl": 10,
     "cost": 1006,
     "effect": "Raises DEF by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Ally"
   },
   "Rakunda": {
     "card": "Queen Mab",
-    "clvl": 30,
     "cost": 1006,
     "effect": "Lowers DEF by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Foe"
   },
   "Re Patra": {
     "cost": 1003,
     "effect": "Cures Down",
-    "element": "recovery",
+    "element": "rec",
     "rank": 2,
     "target": "One Ally"
   },
   "Rebellion": {
     "cost": 1005,
     "effect": "Raises crit rate by 10% for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "Universal"
   },
   "Recarm": {
     "card": "Lachesis, Nigi Mitama",
-    "clvl": 17,
     "cost": 1020,
     "effect": "Revive with 50% HP",
-    "element": "recovery",
+    "element": "rec",
     "rank": 4,
     "target": "One Ally"
   },
   "Recarmdra": {
     "card": "Hecatoncheires",
-    "clvl": 61,
     "cost": 1001,
     "effect": "Full HP restores, Reduces user's HP to 1",
-    "element": "special",
+    "element": "spe",
     "rank": 7,
     "target": "All Allies"
   },
   "Regenerate 1": {
     "card": "Neko Shogun",
-    "clvl": 23,
     "effect": "Recover 2% HP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Regenerate 2": {
     "card": "Aquamarine x5",
     "effect": "Recover 4% HP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Regenerate 3": {
     "card": "Norn",
-    "clvl": 70,
     "effect": "Recover 6% HP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Repel Dark": {
     "card": "Gabriel",
-    "clvl": 76,
     "effect": "Repels Dark attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Repel Elec": {
     "effect": "Repels Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Repel Fire": {
     "effect": "Repels Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Repel Ice": {
     "effect": "Repels Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Repel Light": {
     "card": "Satan",
-    "clvl": 87,
     "effect": "Repels Light attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Repel Pierce": {
     "effect": "Repels Pierce attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Repel Slash": {
     "effect": "Repels Slash attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Repel Strike": {
     "effect": "Repels Strike attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 7
   },
   "Repel Wind": {
     "effect": "Repels Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Resist Dark": {
     "effect": "Doubles evasion against Dark attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Resist Elec": {
     "card": "Sapphire x2, Ruby x1",
     "effect": "Halves damage from Elec attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Resist Fire": {
     "card": "Sapphire x2, Ruby x1",
     "effect": "Halves damage from Fire attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Resist Ice": {
     "card": "Sapphire x2, Pearl x1",
     "effect": "Halves damage from Ice attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Resist Light": {
     "effect": "Doubles evasion against Light attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Resist Pierce": {
     "card": "Sapphire x1, Diamond x1",
     "effect": "Halves damage from Pierce attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Resist Slash": {
     "card": "Sapphire x1, Diamond x1",
     "effect": "Halves damage from Slash attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Resist Strike": {
     "card": "Sapphire x1, Diamond x1",
     "effect": "Halves damage from Strike attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 5
   },
   "Resist Wind": {
     "card": "Sapphire x2, Pearl x1",
     "effect": "Halves damage from Wind attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Revolution": {
     "card": "Kali",
-    "clvl": 60,
     "cost": 1005,
     "effect": "Greatly raises crit rate by 20% for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 3,
     "target": "Universal"
   },
   "Salvation": {
     "card": "Vishnu",
-    "clvl": 87,
     "cost": 1060,
     "effect": "Full HP restore, Cures all ailments",
-    "element": "recovery",
+    "element": "rec",
     "rank": 9,
     "target": "All Allies"
   },
   "Samarecarm": {
     "card": "Kohryu",
-    "clvl": 74,
     "cost": 1040,
     "effect": "Revive with 100% HP",
-    "element": "recovery",
+    "element": "rec",
     "rank": 5,
     "target": "One Ally"
   },
   "Samsara": {
     "cost": 1035,
     "effect": "45% insta-kill",
-    "element": "light",
+    "element": "lig",
     "rank": 9,
     "target": "All Foes"
   },
   "Scarlet Havoc": {
     "card": "Malachite x4, Sapphire x2",
     "cost": 115,
-    "damage": "Heavy",
     "effect": "1% crit",
-    "element": "slash",
+    "element": "sla",
     "hit": 99,
     "power": 320,
     "rank": 0,
@@ -1846,19 +1667,17 @@
   },
   "Sexy Dance": {
     "card": "Yaksini",
-    "clvl": 52,
     "cost": 1010,
     "effect": "40% Charm",
-    "element": "ailment",
+    "element": "ail",
     "rank": 3,
     "target": "All Foes"
   },
   "Shadow Hound": {
     "card": "Malachite x5, Sapphire x1",
     "cost": 115,
-    "damage": "Heavy",
     "effect": "1% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 100,
     "power": 300,
     "rank": 0,
@@ -1867,23 +1686,20 @@
   },
   "Sharp Student": {
     "card": "Zouchouten",
-    "clvl": 19,
     "effect": "Halves crit rate of damage received",
-    "element": "passive",
+    "element": "pas",
     "rank": 3
   },
   "Slash Attack": {
     "effect": "Normal attack using the Slash attribute",
-    "element": "slash",
+    "element": "sla",
     "rank": 99
   },
   "Sonic Punch": {
     "card": "Chimera",
-    "clvl": 13,
     "cost": 12,
-    "damage": "Light",
     "effect": "12% crit",
-    "element": "strike",
+    "element": "str",
     "hit": 95,
     "power": 70,
     "rank": 2,
@@ -1891,56 +1707,53 @@
   },
   "Spear Master": {
     "effect": "Spear dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6
   },
   "Spell Master": {
     "card": "Lucifer",
-    "clvl": 97,
     "effect": "Halves all SP costs",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Spirit Drain": {
     "card": "Incubus",
-    "clvl": 38,
     "cost": 1005,
-    "damage": "Set",
     "effect": "Drains 20 SP",
-    "element": "almighty",
+    "element": "alm",
     "power": 100,
     "rank": 4,
     "target": "One Foe"
   },
   "Spring of Life": {
     "effect": "Recover 8% HP per turn",
-    "element": "passive",
+    "element": "pas",
     "rank": 5,
     "unique": "Trismegistus"
   },
   "Stagnant Air": {
     "cost": 1015,
     "effect": "Halves ailment resistance for 3 turns",
-    "element": "almighty",
+    "element": "alm",
     "rank": 3,
     "target": "Universal"
   },
   "Strike Attack": {
     "effect": "Normal attack using the Strike attribute",
-    "element": "strike",
+    "element": "str",
     "rank": 99
   },
   "Sukukaja": {
     "cost": 1006,
     "effect": "Raises HIT/EVA by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Ally"
   },
   "Sukunda": {
     "cost": 1006,
     "effect": "Lowers HIT/EVA by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Foe"
   },
@@ -1948,38 +1761,34 @@
     "card": "Malachite x5",
     "cost": 115,
     "effect": "Random effect to allies, foes, or universal: HP and SP restored, Knockdown, Random ailment, Nothing",
-    "element": "ailment",
+    "element": "ail",
     "rank": 0,
     "target": "Universal",
     "unique": "Fusion Spell"
   },
   "Support Scan": {
     "effect": "Displays all buffs and debuffs in effect",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Lucia"
   },
   "Survive Dark": {
     "card": "Cu Chulainn",
-    "clvl": 45,
     "effect": "50% chance to endure Dark attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Survive Light": {
     "card": "Girimehkala",
-    "clvl": 47,
     "effect": "50% chance to endure Light attacks",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Swift Strike": {
     "card": "Titan",
-    "clvl": 28,
     "cost": 21,
-    "damage": "Light",
     "effect": "3% crit, x1-3 hits",
-    "element": "strike",
+    "element": "str",
     "hit": 80,
     "power": 95,
     "rank": 3,
@@ -1987,29 +1796,25 @@
   },
   "Tarukaja": {
     "card": "Forneus",
-    "clvl": 8,
     "cost": 1006,
     "effect": "Raises ATK by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Ally"
   },
   "Tarunda": {
     "card": "Yomotsu Shikome",
-    "clvl": 12,
     "cost": 1006,
     "effect": "Lowers ATK by 1.25x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Foe"
   },
   "Tempest Slash": {
     "card": "Masakado",
-    "clvl": 78,
     "cost": 18,
-    "damage": "Heavy",
     "effect": "10% crit, x1-2 hits",
-    "element": "slash",
+    "element": "sla",
     "hit": 95,
     "power": 350,
     "rank": 7,
@@ -2018,7 +1823,7 @@
   "Tentarafoo": {
     "cost": 1010,
     "effect": "40% Panic",
-    "element": "ailment",
+    "element": "ail",
     "rank": 4,
     "target": "All Foes"
   },
@@ -2026,22 +1831,21 @@
     "card": "Rescue reward",
     "cost": 1055,
     "effect": "Repels next Phys attack",
-    "element": "support",
+    "element": "sup",
     "rank": 7,
     "target": "All Allies"
   },
   "Third Eye": {
     "effect": "Changes target icon to show when attack will be ineffective",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Lucia"
   },
   "Thunder Call": {
     "card": "Malachite x4, Topaz x1",
     "cost": 115,
-    "damage": "Heavy",
     "effect": "100% chance of Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 99,
     "power": 450,
     "rank": 0,
@@ -2050,9 +1854,8 @@
   },
   "Thunder Reign": {
     "cost": 1032,
-    "damage": "Severe",
     "effect": "100% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 99,
     "power": 650,
     "rank": 9,
@@ -2060,11 +1863,9 @@
   },
   "Torrent Shot": {
     "card": "Raja Naga",
-    "clvl": 42,
     "cost": 14,
-    "damage": "Light",
     "effect": "5% crit, x2-3 hits",
-    "element": "pierce",
+    "element": "pie",
     "hit": 82,
     "power": 50,
     "rank": 4,
@@ -2073,7 +1874,7 @@
   "Trafuri": {
     "cost": 1025,
     "effect": "Instant escape from battle",
-    "element": "special",
+    "element": "spe",
     "rank": 8,
     "target": "All Allies"
   },
@@ -2081,18 +1882,16 @@
     "card": "Malachite x2, Pearl x1",
     "cost": 115,
     "effect": "100% random ailment",
-    "element": "ailment",
+    "element": "ail",
     "rank": 0,
     "target": "All Foes",
     "unique": "Fusion Spell"
   },
   "Twin Shot": {
     "card": "Vasuki",
-    "clvl": 42,
     "cost": 14,
-    "damage": "Medium",
     "effect": "5% crit, x2 hits",
-    "element": "pierce",
+    "element": "pie",
     "hit": 85,
     "power": 100,
     "rank": 3,
@@ -2100,34 +1899,30 @@
   },
   "Unshaken Will": {
     "card": "Asura",
-    "clvl": 93,
     "effect": "Immune to all mental ailments",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Valhalla": {
     "card": "Malachite x1, Topaz x2",
     "cost": 120,
     "effect": "Nullifies next attack, HP and SP reduced to 1",
-    "element": "support",
+    "element": "sup",
     "rank": 0,
     "target": "One Ally",
     "unique": "Fusion Spell"
   },
   "Victory Cry": {
     "card": "Orpheus Telos",
-    "clvl": 99,
     "effect": "Recover 100% HP and SP after battle",
-    "element": "passive",
+    "element": "pas",
     "rank": 9
   },
   "Vile Assault": {
     "card": "Kaiwan",
-    "clvl": 55,
     "cost": 16,
-    "damage": "Heavy",
     "effect": "3% crit, Dmg x1.5 on Downed foes",
-    "element": "pierce",
+    "element": "pie",
     "hit": 99,
     "power": 295,
     "rank": 5,
@@ -2135,20 +1930,17 @@
   },
   "Virus Breath": {
     "card": "Kingu",
-    "clvl": 51,
     "cost": 1040,
     "effect": "Removes 25% HP, 75% Poison",
-    "element": "ailment",
+    "element": "ail",
     "rank": 5,
     "target": "All Foes"
   },
   "Vorpal Blade": {
     "card": "Susanoo",
-    "clvl": 85,
     "cost": 30,
-    "damage": "Heavy",
     "effect": "5% crit, Dmg x1.5 when Great",
-    "element": "slash",
+    "element": "sla",
     "hit": 99,
     "power": 550,
     "rank": 8,
@@ -2157,11 +1949,9 @@
   },
   "Weary Thrust": {
     "card": "Seiten Taisei",
-    "clvl": 72,
     "cost": 18,
-    "damage": "Heavy",
     "effect": "5% crit, Dmg x1.5 when Tired",
-    "element": "strike",
+    "element": "str",
     "hit": 99,
     "power": 405,
     "rank": 6,
@@ -2170,34 +1960,29 @@
   },
   "Wind Amp": {
     "card": "Ganesha",
-    "clvl": 65,
     "effect": "Wind dmg x1.5",
-    "element": "passive",
+    "element": "pas",
     "rank": 4
   },
   "Wind Boost": {
     "card": "Kusi Mitama",
-    "clvl": 35,
     "effect": "Wind dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 2
   },
   "Wind Break": {
     "card": "Orobas",
-    "clvl": 38,
     "cost": 1050,
     "effect": "Removes Wind resistance for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "One Foe"
   },
   "Zan-ei": {
     "card": "Pale Rider",
-    "clvl": 26,
     "cost": 14,
-    "damage": "Medium",
     "effect": "10% crit, Dmg x1.5 during New Moon",
-    "element": "slash",
+    "element": "sla",
     "hit": 90,
     "power": 120,
     "rank": 3,
@@ -2205,11 +1990,9 @@
   },
   "Zio": {
     "card": "Inugami",
-    "clvl": 13,
     "cost": 1004,
-    "damage": "Light",
     "effect": "10% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 95,
     "power": 40,
     "rank": 1,
@@ -2217,11 +2000,9 @@
   },
   "Ziodyne": {
     "card": "Byakko, Thor",
-    "clvl": 64,
     "cost": 1016,
-    "damage": "Heavy",
     "effect": "10% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 95,
     "power": 320,
     "rank": 4,
@@ -2229,11 +2010,9 @@
   },
   "Zionga": {
     "card": "Rakshasa, Loa",
-    "clvl": 36,
     "cost": 1008,
-    "damage": "Medium",
     "effect": "10% Shock",
-    "element": "elec",
+    "element": "ele",
     "hit": 95,
     "power": 100,
     "rank": 2,

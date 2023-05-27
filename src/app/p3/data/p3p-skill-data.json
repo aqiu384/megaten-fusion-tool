@@ -1,41 +1,65 @@
 {
+  "Black Viper": {
+    "cost": 1060,
+    "element": "alm",
+    "hit": 100,
+    "power": 950,
+    "rank": 0,
+    "target": "One Foe",
+    "unique": "Satan"
+  },
+  "Die for Me!": {
+    "cost": 1035,
+    "effect": "45% insta-kill",
+    "element": "dar",
+    "rank": 0,
+    "target": "All Foes",
+    "unique": "Alice"
+  },
+  "Heaven's Blade": {
+    "cost": 13,
+    "effect": "25% crit",
+    "element": "sla",
+    "hit": 95,
+    "power": 500,
+    "rank": 0,
+    "target": "One Foe",
+    "unique": "Michael"
+  },
   "Magic Skill Up": {
     "effect": "Magic dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 0,
     "unique": "Messiah"
   },
   "Marakukaja": {
     "card": "Decarabia",
-    "clvl": 56,
     "cost": 1016,
     "effect": "Raises DEF by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Allies"
   },
   "Marakunda": {
     "card": "Black Frost",
-    "clvl": 39,
     "cost": 1016,
     "effect": "Lowers DEF by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "All Foes"
   },
   "Masukukaja": {
     "card": "Suzaku",
-    "clvl": 56,
     "cost": 1016,
     "effect": "Raises HIT/EVA by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Allies"
   },
   "Masukunda": {
     "cost": 1016,
     "effect": "Lowers HIT/EVA by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "All Foes"
   },
@@ -43,79 +67,74 @@
     "card": "Rescue and 1st term exam reward",
     "cost": 1016,
     "effect": "Raises ATK by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 5,
     "target": "All Allies"
   },
   "Matarunda": {
     "card": "Rangda",
-    "clvl": 45,
     "cost": 1016,
     "effect": "Lowers ATK by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 4,
     "target": "All Foes"
   },
   "Physical Boost": {
     "card": "Rescue reward",
     "effect": "Weapon dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6,
     "unique": "Multiple"
   },
   "Rakukaja": {
     "card": "Ara Mitama",
-    "clvl": 10,
     "cost": 1008,
     "effect": "Raises DEF by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Ally"
   },
   "Rakunda": {
     "card": "Queen Mab",
-    "clvl": 30,
     "cost": 1008,
     "effect": "Lowers DEF by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Foe"
   },
   "Sukukaja": {
     "cost": 1008,
     "effect": "Raises HIT/EVA by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Ally"
   },
   "Sukunda": {
     "cost": 1008,
     "effect": "Lowers HIT/EVA by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Foe"
   },
   "Tarukaja": {
     "card": "Forneus",
-    "clvl": 8,
     "cost": 1008,
     "effect": "Raises ATK by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Ally"
   },
   "Tarunda": {
     "card": "Yomotsu Shikome",
-    "clvl": 12,
     "cost": 1008,
     "effect": "Lowers ATK by 1.33x for 3 turns",
-    "element": "support",
+    "element": "sup",
     "rank": 2,
     "target": "One Foe"
   },
   "Weapons Master": {
     "effect": "Weapon dmg x1.25",
-    "element": "passive",
+    "element": "pas",
     "rank": 6,
     "unique": "Multiple"
   }

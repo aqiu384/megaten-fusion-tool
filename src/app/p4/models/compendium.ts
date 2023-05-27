@@ -46,6 +46,7 @@ export class Compendium implements ICompendium {
           race:     json['race'],
           lvl:      json['lvl'],
           currLvl:  json['lvl'],
+          cardLvl:  json['cardlvl'] || 0,
           price:    Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
           inherits: inheritCodes[json['inherits']],
           stats:    json['stats'],
@@ -105,7 +106,7 @@ export class Compendium implements ICompendium {
         };
 
         if (json['card']) {
-          skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: demons[d] ? 0 : -100 }));
+          skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: demons[d] ? demons[d].cardLvl : -100 }));
         }
       }
     }

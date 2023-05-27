@@ -2,6 +2,7 @@ import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } 
 
 export interface Demon extends BaseDemon {
   card?: string;
+  cardLvl: number;
 }
 
 export interface Skill extends BaseSkill {
