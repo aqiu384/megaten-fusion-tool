@@ -60,7 +60,7 @@ for (const skill of SKILL_DATA_JSON) {
     cost: skill.cost || 0,
     effect: skill.power ? skill.power + ' power' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
     target: skill.target || 'Self',
-    rank: skill.rank,
+    rank: skill.rank + (skill.mutate ? 0.5 : 0),
   }
 
   if (skill.hasOwnProperty('card')) {
