@@ -70,7 +70,7 @@ export const SMT_COMP_CONFIG: CompendiumConfig = {
   elemOrder: getEnumOrder(skillElems),
   useSpeciesFusion: true,
 
-  normalLvlModifier: 2.5,
+  normalLvlModifier: 2.4,
   tripleLvlModifier: -4.75,
   demonData: DEMON_DATA_JSON,
   skillData: SKILL_DATA_JSON,
