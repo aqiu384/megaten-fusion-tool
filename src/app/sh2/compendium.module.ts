@@ -42,7 +42,7 @@ let elemCount = 0;
 for (const skill of SKILL_DATA_JSON) {
   if (currElem != skill.elem) {
     currElem = skill.elem;
-    elemCount = 0;
+    elemCount = 9;
   }
 
   elemCount += 1;
@@ -52,7 +52,7 @@ for (const skill of SKILL_DATA_JSON) {
     cost: skill.cost || 0,
     effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
     target: skill.target || 'Self',
-    rank: skill.rank || elemCount
+    rank: skill.rank || elemCount / 10
   }
 }
 

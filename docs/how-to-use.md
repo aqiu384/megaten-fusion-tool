@@ -114,6 +114,9 @@
 * https://www.youtube.com/user/atlustube
 * https://hyperwiki.jp/smt5/
 
+### Formulas
+* Recovery skill heal amount: \[(Skill base dmg) + (Skill boost %) * (Target max HP)\] * (Recovery skill potential heal boost) * (Heal pleroma boost) * (Bowl of Hygieia boost)
+
 ### Skill Potentials
 | Rank | Attack              | Ailment             | Recovery             | Support   |
 | ---- | ------------------- | ------------------- | -------------------- | --------- |
@@ -299,6 +302,7 @@
 * https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404
 
 ### Skill List
+* Rank ends in 0.5: Skill can mutate upon level up
 * (Fs): Fusion Spell
 
 ## <a name="p4"></a>[Persona 4](https://aqiu384.github.io/megaten-fusion-tool/p4)
@@ -313,6 +317,7 @@
 * http://h1g.jp/p4g/
 
 ### Skill List
+* Rank ends in 0.5: Skill can upgrade through Magician Card from Shuffle Time
 * (S?): Learned at Social Link Lv. ?
 * (Sx): Learned at Social Link Lv. 10
 * (Sy): Learned at Social Link Lv. 11
