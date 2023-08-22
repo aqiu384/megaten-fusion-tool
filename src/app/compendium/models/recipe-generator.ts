@@ -295,7 +295,7 @@ function createFusionChain(ingreds: string[], inheritChain: number[], comp: Comp
     for (const pairA of pairsA) {
       if (lookupD[pairA.name2] && 
         (inheritA & comp.getDemon(pairA.name2).inherits) === inheritA &&
-        (inheritD & comp.getDemon(pairA.name2).inherits) === inheritD
+        (inheritD & comp.getDemon(lookupD[pairA.name2]).inherits) === inheritD
       ) {
         chain.push(pairA.name1);
         chain.push(pairA.name2);
