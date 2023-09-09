@@ -89,6 +89,7 @@ export const SkillElements = ResistanceElements.concat(
   'rec',
   'alm',
   'sup',
+  'spe',
   'pas'
 );
 
