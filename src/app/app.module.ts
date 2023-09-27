@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { SharedModule } from './shared/shared.module';
@@ -9,7 +9,6 @@ import { HomeComponent } from './home.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 
 @NgModule({
   imports: [
@@ -18,8 +17,8 @@ import { environment } from '../environments/environment';
     SharedCompendiumModule.forRoot(),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-      // Register the ServiceWorker as soon as the app is stable
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     })

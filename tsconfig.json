@@ -14,17 +14,20 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
-    "module": "es2020",
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
     "lib": [
-      "es2018",
+      "ES2022",
       "dom"
     ],
     "strictPropertyInitialization": false,
     "strictNullChecks": false,
     "noImplicitAny": false,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
