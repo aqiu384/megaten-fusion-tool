@@ -176,6 +176,11 @@ const appRoutes: Routes = [
     data: { appName: 'Persona 5 Strikers' }
   },
   {
+    path: 'p5t',
+    loadChildren: () => import('./p5t/compendium.module').then(m => m.CompendiumModule),
+    data: { appName: 'Persona 5 Tactica' }
+  },
+  {
     path: 'pq2',
     loadChildren: () => import('./pq2/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Persona Q2: New Cinema Labyrinth' }

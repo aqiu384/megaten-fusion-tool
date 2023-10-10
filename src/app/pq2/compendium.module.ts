@@ -31,19 +31,22 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
   return result;
 }
 
-const resistElems = COMP_CONFIG_JSON['resistElems'];
-const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
+const resistElems = COMP_CONFIG_JSON.resistElems;
+const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
 const races = [];
 const enemyData = {};
+const inheritTypes: { [elem: string]: number } = {};
 
-for(const race of COMP_CONFIG_JSON['races']) {
+for(const race of COMP_CONFIG_JSON.races) {
   races.push(race);
   races.push(race + ' P');
 }
 
 for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
   entry.race = entry.race + ' P';
+  entry.stats = entry.stats.slice(0, 2);
   entry['fusion'] = 'party';
+  entry['inherit'] = 'mag';
   DEMON_DATA_JSON[demon] = entry;
 }
 
@@ -79,6 +82,10 @@ for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name]['prereq'] = prereq;
 }
 
+for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
+  inheritTypes[elem] = parseInt(inherits, 2);
+}
+
 export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona Q2: New Cinema Labyrinth',
   races,
@@ -87,9 +94,11 @@ export const PQ2_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   skillData: SKILL_DATA_JSON,
   skillElems,
-  ailmentElems: COMP_CONFIG_JSON['ailments'],
+  ailmentElems: COMP_CONFIG_JSON.ailments,
   elemOrder: getEnumOrder(skillElems),
-  resistCodes: COMP_CONFIG_JSON['resistCodes'],
+  resistCodes: COMP_CONFIG_JSON.resistCodes,
+  inheritTypes,
+  inheritElems: COMP_CONFIG_JSON.inheritElems,
 
   demonData: DEMON_DATA_JSON,
   dlcData: DLC_DATA_JSON,

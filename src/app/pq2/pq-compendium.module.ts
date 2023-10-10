@@ -15,6 +15,7 @@ import { DemonEntryComponent, DemonEntryContainerComponent } from './components/
 import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from './components/password-generator.component';
 import { EnemyEntryComponent } from './components/enemy-entry.component';
 import { QrcodeComponent } from './components/qrcode-component';
+import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { QrcodeComponent } from './components/qrcode-component';
     EnemyEntryComponent,
     DemonDlcSettingsContainerComponent,
     PasswordGeneratorComponent,
-    PasswordGeneratorContainerComponent
+    PasswordGeneratorContainerComponent,
+    RecipeGeneratorContainerComponent
   ],
   exports: [
     QrcodeComponent,
@@ -46,7 +48,8 @@ import { QrcodeComponent } from './components/qrcode-component';
     EnemyEntryComponent,
     DemonDlcSettingsContainerComponent,
     PasswordGeneratorComponent,
-    PasswordGeneratorContainerComponent
+    PasswordGeneratorContainerComponent,
+    RecipeGeneratorContainerComponent
   ],
 })
 export class PQCompendiumModule {

@@ -7,6 +7,7 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { PasswordGeneratorContainerComponent } from './components/password-generator.component';
 import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
+import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
@@ -79,6 +80,10 @@ const compendiumRoutes: Routes = [
       {
         path: 'qrcodes',
         component: PasswordGeneratorContainerComponent
+      },
+      {
+        path: 'recipes',
+        component: RecipeGeneratorContainerComponent
       },
       {
         path: 'settings',

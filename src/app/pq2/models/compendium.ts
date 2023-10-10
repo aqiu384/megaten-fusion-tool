@@ -45,8 +45,8 @@ export class Compendium implements ICompendium {
         lvl:      json['lvl'],
         currLvl:  json['lvl'],
         price,
-        inherits: 0,
-        stats:    json['stats'].slice(0, 2),
+        inherits: this.compConfig.inheritTypes[json['inherit']],
+        stats:    json['stats'],
         skills:   json['skills'],
         resists:  [],
         ailments: [],
@@ -227,6 +227,10 @@ export class Compendium implements ICompendium {
 
   getSpecialNamePairs(name: string): NamePair[] {
     return [];
+  }
+
+  getInheritElems(inherits: number): number[] {
+    return inherits.toString(2).padStart(this.compConfig.inheritElems.length, '0').split('').map(i => parseInt(i) * 100);
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

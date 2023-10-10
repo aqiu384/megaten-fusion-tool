@@ -3,12 +3,12 @@
     "Sleep",
     "Panic",
     "Poison",
-    "Hex",
+    "Curse",
     "Para",
     "SBind",
     "MBind",
     "ABind",
-    "Stone",
+    "Down",
     "KO"
   ],
   "inheritElems": [
@@ -20,40 +20,29 @@
     "psy",
     "nuk",
     "ble",
-    "cur",
-    "alm",
-    "rec",
-    "pas"
+    "cur"
   ],
   "inheritTypes": {
-    "phy": "100000011111",
-    "nav": "011111111111",
-    "def": "111111111000",
-    "mag": "111111111111"
+    "phy": "100000011",
+    "fir": "110111111",
+    "ice": "101111111",
+    "ele": "111101111",
+    "win": "111011111",
+    "psy": "111111011",
+    "nuk": "111110111",
+    "ble": "111111110",
+    "cur": "111111101"
   },
   "races": [
-    "Fool",
-    "Magician",
-    "Priestess",
-    "Empress",
-    "Emperor",
-    "Hierophant",
-    "Lovers",
-    "Chariot",
-    "Justice",
-    "Hermit",
-    "Fortune",
-    "Strength",
-    "Hanged",
-    "Death",
-    "Temperance",
-    "Devil",
-    "Tower",
-    "Star",
-    "Moon",
-    "Sun",
-    "Judgement",
-    "FOE"
+    "Phys",
+    "Fire",
+    "Ice",
+    "Elec",
+    "Wind",
+    "Psy",
+    "Nuke",
+    "Bless",
+    "Curse"
   ],
   "resistCodes": {
     "w": 1125,
@@ -79,7 +68,6 @@
     "ail",
     "rec",
     "sup",
-    "def",
     "nav",
     "pas"
   ]

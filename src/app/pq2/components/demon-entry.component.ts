@@ -19,8 +19,13 @@ import { FusionDataService } from '../fusion-data.service';
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
-        [stats]="demon.stats">
+        [stats]="demon.stats"
+        [inherits]="demon.inherits">
       </app-demon-stats>
+      <app-demon-inherits
+        [inheritHeaders]="compConfig.inheritElems"
+        [inherits]="compendium.getInheritElems(demon.inherits)">
+      </app-demon-inherits>
       <app-demon-skills
         [hasTarget]="true"
         [elemOrder]="compConfig.elemOrder"
@@ -28,7 +33,7 @@ import { FusionDataService } from '../fusion-data.service';
         [skillLevels]="demon.skills">
       </app-demon-skills>
       <app-smt-fusions
-        [hasTripleFusion]="true"
+        [hasTripleFusion]="compConfig.hasTripleFusion"
         [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
     </ng-container>

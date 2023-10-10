@@ -30,6 +30,8 @@ export interface CompendiumConfig extends BaseComp {
   ailmentElems: string[];
   elemOrder: { [elem: string]: number };
   resistCodes: { [code: string]: number };
+  inheritTypes: { [elem: string]: number };
+  inheritElems: string[];
 
   demonData;
   dlcData?;

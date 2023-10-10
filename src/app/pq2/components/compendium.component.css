@@ -5,7 +5,8 @@
   background-position: center;
   color: transparent;
 }
-  
+
+.pq2 div.element-icon.i2079,
 .pq2 div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
 .pq2 div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
 .pq2 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
@@ -18,9 +19,12 @@
 .pq2 div.element-icon.mag { background-image: url('/assets/images/p5/almighty.png'); }
 .pq2 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
 .pq2 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.pq2 div.element-icon.i4095,
 .pq2 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
 .pq2 div.element-icon.def { background-image: url('/assets/images/p5/support.png'); }
+.pq2 div.element-icon.i4088,
 .pq2 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
+.pq2 div.element-icon.i2047,
 .pq2 div.element-icon.nav { background-image: url('/assets/images/p5/trait.png'); }
 .pq2 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
 
@@ -38,16 +42,46 @@
 }
   
 .pq div.element-icon.cut { background-image: url('/assets/images/p5/sword.png'); }
+.pq div.element-icon.i3584,
+.pq div.element-icon.i3591,
 .pq div.element-icon.bas { background-image: url('/assets/images/p5/phys.png'); }
 .pq div.element-icon.sta { background-image: url('/assets/images/p5/gun.png'); }
+.pq div.element-icon.i376,
+.pq div.element-icon.i383,
+.pq div.element-icon.i3960,
+.pq div.element-icon.i3967,
 .pq div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.pq div.element-icon.i248,
+.pq div.element-icon.i255,
+.pq div.element-icon.i3832,
+.pq div.element-icon.i3839,
 .pq div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.pq div.element-icon.i472,
+.pq div.element-icon.i479,
+.pq div.element-icon.i4056,
+.pq div.element-icon.i4063,
 .pq div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.pq div.element-icon.i440,
+.pq div.element-icon.i447,
+.pq div.element-icon.i4024,
+.pq div.element-icon.i4031,
 .pq div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.pq div.element-icon.i496,
+.pq div.element-icon.i503,
+.pq div.element-icon.i4080,
+.pq div.element-icon.i4087,
 .pq div.element-icon.lig { background-image: url('/assets/images/p5/bless.png'); }
+.pq div.element-icon.i488,
+.pq div.element-icon.i495,
+.pq div.element-icon.i4072,
+.pq div.element-icon.i4079,
 .pq div.element-icon.dar { background-image: url('/assets/images/p5/curse.png'); }
 .pq div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
 .pq div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.pq div.element-icon.i504,
+.pq div.element-icon.i511,
+.pq div.element-icon.i4088,
+.pq div.element-icon.i4095,
 .pq div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
 .pq div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
 .pq div.element-icon.nav { background-image: url('/assets/images/p5/trait.png'); }
@@ -56,4 +90,37 @@
 .pq th.title, .pq th.nav.active, .pq th.nav.active a {
   color: black;
   background-color: #AA1CA9;
+}
+
+.p5t div.element-icon {
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+  
+.p5t div.element-icon.i259,
+.p5t div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
+.p5t div.element-icon.i447,
+.p5t div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.p5t div.element-icon.i383,
+.p5t div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p5t div.element-icon.i495,
+.p5t div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.p5t div.element-icon.i479,
+.p5t div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.p5t div.element-icon.i507,
+.p5t div.element-icon.psy { background-image: url('/assets/images/p5/psy.png'); }
+.p5t div.element-icon.i503,
+.p5t div.element-icon.nuk { background-image: url('/assets/images/p5/nuke.png'); }
+.p5t div.element-icon.i510,
+.p5t div.element-icon.ble { background-image: url('/assets/images/p5/bless.png'); }
+.p5t div.element-icon.i509,
+.p5t div.element-icon.cur { background-image: url('/assets/images/p5/curse.png'); }
+.p5t div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+
+.p5t th.title, .p5t th.nav.active, .p5t th.nav.active a {
+  color: white;
+  background-color: #f41000;
 }
