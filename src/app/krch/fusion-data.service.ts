@@ -7,7 +7,7 @@ import { FusionChart } from './models/fusion-chart';
 import { COMPENDIUM_CONFIG } from '../compendium/constants';
 import { FusionDataService as IFusionDataService, FusionCalculator } from '../compendium/models';
 
-import { CompendiumConfig } from './models'
+import { CompendiumConfig, CompendiumConfigSet } from './models'
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
@@ -19,17 +19,17 @@ export class FusionDataService implements IFusionDataService {
   compendium: Observable<Compendium>;
   fusionChart: Observable<FusionChart>
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, router: Router) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, router: Router) {
     const gameCand = router.url.split('/')[1];
-    const game = compConfig.demonData[gameCand] ? gameCand : 'krch';
+    const gameAbbr = compConfigSet.configs[gameCand] ? gameCand : 'krch';
 
-    this.appName = compConfig.gameTitles[game] + ' Fusion Calculator';
-    this.fissionCalculator = compConfig.fissionCalculator;
-    this.fusionCalculator = compConfig.fusionCalculator;
-    this.compConfig = compConfig;
+    this.compConfig = compConfigSet.configs[gameAbbr];
+    this.appName = this.compConfig.appTitle + ' Fusion Calculator';
+    this.fissionCalculator = this.compConfig.fissionCalculator;
+    this.fusionCalculator = this.compConfig.fusionCalculator;
 
-    this.compendium = new BehaviorSubject(new Compendium(compConfig, game)).asObservable();
-    this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
+    this.compendium = new BehaviorSubject(new Compendium(this.compConfig)).asObservable();
+    this.fusionChart = new BehaviorSubject(new FusionChart(this.compConfig)).asObservable();
   }
 
   nextDlcDemons(dlcDemons: { [name: string]: boolean }) { return {}; }

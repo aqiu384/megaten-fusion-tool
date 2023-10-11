@@ -2,13 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumConfig } from '../krch/models';
-import {
-  COMPENDIUM_CONFIG,
-  FUSION_DATA_SERVICE,
-  SMT_NORMAL_FISSION_CALCULATOR,
-  SMT_NORMAL_FUSION_CALCULATOR
-} from '../compendium/constants';
+import { CompendiumConfig, CompendiumConfigSet } from '../krch/models';
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -40,6 +35,7 @@ const enrskillLookup = {}
 const races = COMP_CONFIG_JSON.races;
 const resistElems = COMP_CONFIG_JSON.resistElems;
 const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+const compConfigs: { [game: string]: CompendiumConfig } = {};
 const MITAMA_TABLE = [
   ['Nigi', 'Ara ', 'Kusi'],
   ['Kusi', 'Ara '],
@@ -95,29 +91,42 @@ for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
   REC_SPECIAL_RECIPES_JSON[name] = entry;
 }
 
-export const SMT_COMP_CONFIG: CompendiumConfig = {
-  appTitle: 'Devil Survivor',
-  gameTitles: { ds2: 'Devil Survivor 2', ds2br: 'Devil Survivor 2 Record Breaker' },
+for (const game of ['ds2', 'ds2br']) {
+  compConfigs[game] = {
+    appTitle: 'Devil Survivor 2',
+    appCssClasses: ['kuzu', 'ds2'],
 
-  appCssClasses: ['kuzu', 'ds2'],
-  races,
-  resistElems,
-  skillElems,
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  fusionLvlMod: 0.5,
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
+    races,
+    resistElems,
+    skillElems,
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    fusionLvlMod: 0.5,
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
 
+    raceOrder: getEnumOrder(races),
+    elemOrder: getEnumOrder(skillElems),
+    fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
+    fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+
+    demonData: [VAN_DEMON_DATA_JSON],
+    skillData: [VAN_SKILL_DATA_JSON],
+    normalTable: FUSION_CHART_JSON,
+    elementTable: ELEMENT_CHART_JSON,
+    mitamaTable: MITAMA_TABLE,
+    specialRecipes: SPECIAL_RECIPES_JSON,
+    isDesu: true
+  }
+}
+
+compConfigs.ds2br.appTitle = 'Devil Survivor 2 Record Breaker';
+compConfigs.ds2br.demonData = [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON];
+compConfigs.ds2br.skillData = [VAN_SKILL_DATA_JSON, REC_SKILL_DATA_JSON];
+compConfigs.ds2br.specialRecipes = REC_SPECIAL_RECIPES_JSON;
+
+export const SMT_COMP_CONFIG: CompendiumConfigSet = {
+  appTitle: 'Devil Survivor 2',
   raceOrder: getEnumOrder(races),
-  elemOrder: getEnumOrder(skillElems),
-  fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
-  fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
-
-  demonData: { ds2: [VAN_DEMON_DATA_JSON], ds2br: [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON] },
-  skillData: { ds2: [VAN_SKILL_DATA_JSON], ds2br: [VAN_SKILL_DATA_JSON, REC_SKILL_DATA_JSON] },
-  normalTable: FUSION_CHART_JSON,
-  elementTable: ELEMENT_CHART_JSON,
-  mitamaTable: MITAMA_TABLE,
-  specialRecipes: { ds2: SPECIAL_RECIPES_JSON, ds2br: REC_SPECIAL_RECIPES_JSON }
+  configs: compConfigs
 };
 
 @NgModule({

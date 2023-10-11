@@ -9,7 +9,6 @@ export interface Skill extends BaseSkill {
 }
 
 export interface CompendiumConfig extends BaseComp {
-  gameTitles: { [game: string]: string };
   appCssClasses: string[];
 
   races: string[];
@@ -23,10 +22,15 @@ export interface CompendiumConfig extends BaseComp {
   fissionCalculator: FusionCalculator;
   fusionCalculator: FusionCalculator;
 
-  demonData: { [game: string]: any[] };
-  skillData: { [game: string]: any[] };
+  demonData: any[];
+  skillData: any[];
   normalTable: { races: string[]; table: string[][]; };
   elementTable: { elems: string[]; races: string[]; table: number[][] };
   mitamaTable: string[][];
-  specialRecipes: { [game: string]: any };
+  specialRecipes: any;
+  isDesu: boolean;
+}
+
+export interface CompendiumConfigSet extends BaseComp {
+  configs: { [game: string]: CompendiumConfig };
 }

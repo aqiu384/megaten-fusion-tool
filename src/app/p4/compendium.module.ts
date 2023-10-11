@@ -7,7 +7,7 @@ import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { P4CompendiumModule } from './p4-compendium.module';
-import { CompendiumConfig } from './models';
+import { CompendiumConfig, CompendiumConfigSet } from './models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -34,6 +34,7 @@ const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillEle
 const inheritTypes: { [elem: string]: number[] } = {};
 const races = [];
 const skillData = {};
+const compConfigs: { [game: string]: CompendiumConfig } = {};
 
 for(const race of COMP_CONFIG_JSON['races']) {
   races.push(race);
@@ -70,31 +71,46 @@ for (const skill of SKILL_DATA_JSON) {
   }
 }
 
-export const P4_COMPENDIUM_CONFIG: CompendiumConfig = {
+for (const game of ['p4', 'p4g']) {
+  compConfigs[game] = {
+    appTitle: 'Persona 4',
+    appCssClasses: ['p4'],
+
+    races,
+    raceOrder: getEnumOrder(races),
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    skillElems,
+    resistElems: COMP_CONFIG_JSON.resistElems,
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+    elemOrder: getEnumOrder(skillElems),
+    inheritTypes,
+    inheritElems: INHERIT_TYPES_JSON.elems,
+
+    enemyStats: ['HP', 'MP'],
+    enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
+
+    demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
+    skillData: [skillData],
+    enemyData: [ENEMY_DATA_JSON],
+
+    normalTable: FUSION_CHART_JSON,
+    specialRecipes: SPECIAL_RECIPES_JSON,
+    hasSkillCards: false,
+    hasManualInheritance: false
+  }
+}
+
+compConfigs.p4g.appTitle = 'Persona 4 Golden';
+compConfigs.p4g.demonData = [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON];
+compConfigs.p4g.enemyData = [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON];
+compConfigs.p4g.normalTable = GOLDEN_FUSION_CHART_JSON;
+compConfigs.p4g.hasSkillCards = true;
+compConfigs.p4g.hasManualInheritance = true;
+
+export const P4_COMPENDIUM_CONFIG: CompendiumConfigSet = {
   appTitle: 'Persona 4',
-  gameTitles: { p4: 'Persona 4', p4g: 'Persona 4 Golden' },
-  appCssClasses: ['p4'],
-
-  races,
   raceOrder: getEnumOrder(races),
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  skillElems,
-  resistElems: COMP_CONFIG_JSON.resistElems,
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-  elemOrder: getEnumOrder(skillElems),
-  inheritTypes,
-  inheritElems: INHERIT_TYPES_JSON.elems,
-
-  enemyStats: ['HP', 'MP'],
-  enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
-
-  demonData: { p4: [DEMON_DATA_JSON, PARTY_DATA_JSON], p4g: [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON] },
-  skillData: { p4: [skillData], p4g: [skillData] },
-  enemyData: { p4: [ENEMY_DATA_JSON], p4g: [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON] },
-
-  normalTable: { p4: FUSION_CHART_JSON, p4g: GOLDEN_FUSION_CHART_JSON },
-  specialRecipes: { p4: SPECIAL_RECIPES_JSON, p4g: SPECIAL_RECIPES_JSON },
-  hasSkillCards: { p4: false, p4g: true }
+  configs: compConfigs
 };
 
 @NgModule({

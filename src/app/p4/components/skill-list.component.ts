@@ -30,7 +30,7 @@ export class SkillListContainerComponent extends SLCC {
     super(title, changeDetectorRef, fusionDataService);
     this.compConfig = fusionDataService.compConfig;
     this.appName = `List of Skills - ${fusionDataService.appName}`;
-    this.transferTitle = this.compConfig.hasSkillCards[fusionDataService.gameAbbr] ? 'Skill Card' : '';
+    this.transferTitle = this.compConfig.hasSkillCards ? 'Skill Card' : '';
 
     this.defaultSortFun = (a, b) => (
       this.compConfig.elemOrder[a.element] -

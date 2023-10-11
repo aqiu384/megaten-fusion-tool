@@ -12,7 +12,7 @@ import {
   P3_TRIPLE_FISSION_CALCULATOR,
   P3_TRIPLE_FUSION_CALCULATOR 
 } from '../compendium/constants';
-import { CompendiumConfig } from './models';
+import { CompendiumConfig, CompendiumConfigSet } from './models';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -22,7 +22,6 @@ export class FusionDataService implements IFusionTrioService {
   triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
 
   compConfig: CompendiumConfig;
-  gameAbbr: string;
   appName: string;
 
   private _compendium: Compendium;
@@ -37,27 +36,26 @@ export class FusionDataService implements IFusionTrioService {
   private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
   squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig, router: Router) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, router: Router) {
     const gameCand = router.url.split('/')[1];
-    const game = compConfig.demonData[gameCand] ? gameCand : 'p4';
+    const gameAbbr = compConfigSet.configs[gameCand] ? gameCand : 'p4';
 
-    this.appName = compConfig.gameTitles[game] + ' Fusion Calculator';
-    this.compConfig = compConfig;
-    this.gameAbbr = game;
+    this.compConfig = compConfigSet.configs[gameAbbr];
+    this.appName = this.compConfig.appTitle + ' Fusion Calculator';
 
-    this._compendium = new Compendium(compConfig, game);
+    this._compendium = new Compendium(this.compConfig);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
 
-    this._fusionChart = new PersonaFusionChart(compConfig.normalTable[game], compConfig.races);
+    this._fusionChart = new PersonaFusionChart(this.compConfig.normalTable, this.compConfig.races);
     this._fusionChart$ = new BehaviorSubject(this._fusionChart);
     this.fusionChart = this._fusionChart$.asObservable();
 
-    this._tripleChart = new PersonaFusionChart(compConfig.normalTable[game], compConfig.races, true);
+    this._tripleChart = new PersonaFusionChart(this.compConfig.normalTable, this.compConfig.races, true);
     this._squareChart$ = new BehaviorSubject({
       normalChart: this._fusionChart,
       tripleChart: this._tripleChart,
-      raceOrder: compConfig.raceOrder
+      raceOrder: this.compConfig.raceOrder
     });
     this.squareChart = this._squareChart$.asObservable();
   }

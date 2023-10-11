@@ -17,7 +17,7 @@ export class Compendium implements ICompendium {
 
   dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(private compConfig: CompendiumConfig, private gameAbbr: string) {
+  constructor(private compConfig: CompendiumConfig) {
     this.initImportedData();
     this.updateDerivedData();
   }
@@ -39,7 +39,7 @@ export class Compendium implements ICompendium {
       inheritTypes[code] = ratios;
     }
 
-    for (const demonDataJson of this.compConfig.demonData[this.gameAbbr]) {
+    for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
@@ -58,7 +58,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const enemyDataJson of this.compConfig.enemyData[this.gameAbbr]) {
+    for (const enemyDataJson of this.compConfig.enemyData) {
       for (const [name, enemy] of Object.entries(enemyDataJson)) {
         let drops = []
         
@@ -91,7 +91,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const skillData of this.compConfig.skillData[this.gameAbbr]) {
+    for (const skillData of this.compConfig.skillData) {
       for (const [name, json] of Object.entries(skillData)) {
         skills[name] = {
           name,
@@ -111,7 +111,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(this.compConfig.specialRecipes[this.gameAbbr])) {
+    for (const [name, json] of Object.entries(this.compConfig.specialRecipes)) {
       const ingreds = <string[]>json;
       specials[name] = ingreds;
       demons[name].fusion = 'special';
@@ -236,7 +236,9 @@ export class Compendium implements ICompendium {
   }
 
   getInheritElems(inheritType: number): number[] {
-    return this._inheritTypes[inheritType];
+    return this.compConfig.hasManualInheritance ?
+     inheritType.toString(2).padStart(this.compConfig.inheritElems.length, '0').split('').map(i => parseInt(i)) :
+     this._inheritTypes[inheritType];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

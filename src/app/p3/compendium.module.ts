@@ -7,7 +7,7 @@ import { FusionDataService } from '../p4/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { P4CompendiumModule } from '../p4/p4-compendium.module';
-import { CompendiumConfig } from '../p4/models';
+import { CompendiumConfig, CompendiumConfigSet } from '../p4/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
@@ -48,6 +48,7 @@ function getEnumOrder(target: string[]): { [key: string]: number } {
 const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
 const inheritTypes: { [elem: string]: number[] } = {};
 const races = [];
+const compConfigs: { [game: string]: CompendiumConfig } = {};
 
 for(const race of COMP_CONFIG_JSON['races']) {
   races.push(race);
@@ -88,66 +89,57 @@ for(const [name, prereq] of Object.entries(FES_FUSION_PREREQS_JSON)) {
   FES_DEMON_DATA_JSON[name]['prereq'] = prereq;
 }
 
-export const P3_COMPENDIUM_CONFIG: CompendiumConfig = {
-  appTitle: 'Persona 3',
-  gameTitles: {
-    p3: 'Persona 3',
-    p3fes: 'Persona 3 FES',
-    p3aeg: 'Persona 3 FES: The Answer',
-    p3p: 'Persona 3 Portable'
-  },
-  appCssClasses: ['p3'],
+for (const game of ['p3', 'p3fes', 'p3aeg', 'p3p']) {
+  compConfigs[game] = {
+    appTitle: 'Persona 3',
+    appCssClasses: ['p3'],
 
-  races,
-  raceOrder: getEnumOrder(races),
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  skillElems,
-  resistElems: COMP_CONFIG_JSON.resistElems,
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-  elemOrder: getEnumOrder(skillElems),
-  inheritTypes,
-  inheritElems: INHERIT_TYPES_JSON.elems,
+    races,
+    raceOrder: getEnumOrder(races),
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    skillElems,
+    resistElems: COMP_CONFIG_JSON.resistElems,
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+    elemOrder: getEnumOrder(skillElems),
+    inheritTypes,
+    inheritElems: INHERIT_TYPES_JSON.elems,
 
-  enemyStats: ['HP', 'MP'],
-  enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
+    enemyStats: ['HP', 'MP'],
+    enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
 
-  demonData: {
-    p3: [VAN_DEMON_DATA_JSON],
-    p3fes: [FES_PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON],
-    p3aeg: [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON, PSYCHE_JSON],
-    p3p: [P3P_PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON, P3P_DEMON_DATA_JSON]
-  },
-  skillData: {
-    p3: [VAN_SKILL_DATA_JSON],
-    p3fes: [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON],
-    p3aeg: [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON],
-    p3p: [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON, P3P_SKILL_DATA_JSON]
-  },
-  enemyData: {
-    p3: [VAN_ENEMY_DATA_JSON],
-    p3fes: [VAN_ENEMY_DATA_JSON],
-    p3aeg: [ANS_ENEMY_DATA_JSON],
-    p3p: [VAN_ENEMY_DATA_JSON]
-  },
+    demonData: [VAN_DEMON_DATA_JSON],
+    skillData: [VAN_SKILL_DATA_JSON],
+    enemyData: [VAN_ENEMY_DATA_JSON],
 
-  normalTable: {
-    p3: VAN_FUSION_CHART_JSON,
-    p3fes: FES_FUSION_CHART_JSON,
-    p3aeg: FES_FUSION_CHART_JSON,
-    p3p: FES_FUSION_CHART_JSON
-  },
-  specialRecipes: {
-    p3: VAN_SPECIAL_RECIPES_JSON,
-    p3fes: FES_SPECIAL_RECIPES_JSON,
-    p3aeg: PAIR_SPECIAL_RECIPES_JSON,
-    p3p: FES_SPECIAL_RECIPES_JSON
-  },
-  hasSkillCards: {
-    p3: false,
-    p3fes: false,
-    p3aeg: false,
-    p3p: true,
+    normalTable: FES_FUSION_CHART_JSON,
+    specialRecipes: FES_SPECIAL_RECIPES_JSON,
+    hasSkillCards: false,
+    hasManualInheritance: false
   }
+}
+
+compConfigs.p3.normalTable = VAN_FUSION_CHART_JSON;
+compConfigs.p3.specialRecipes = VAN_SPECIAL_RECIPES_JSON;
+
+compConfigs.p3fes.appTitle = 'Persona 3 FES';
+compConfigs.p3fes.demonData = [FES_PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON];
+compConfigs.p3fes.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
+
+compConfigs.p3aeg.appTitle = 'Persona 3 FES: The Answer';
+compConfigs.p3aeg.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON, PSYCHE_JSON];
+compConfigs.p3aeg.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
+compConfigs.p3aeg.enemyData = [ANS_ENEMY_DATA_JSON];
+compConfigs.p3aeg.specialRecipes = PAIR_SPECIAL_RECIPES_JSON;
+
+compConfigs.p3p.appTitle = 'Persona 3 Portable';
+compConfigs.p3p.demonData = [P3P_PARTY_DATA_JSON, VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ORPHEUS_TELOS_JSON, P3P_DEMON_DATA_JSON];
+compConfigs.p3p.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON, P3P_SKILL_DATA_JSON];
+compConfigs.p3p.hasSkillCards = true;
+
+export const P3_COMPENDIUM_CONFIG: CompendiumConfigSet = {
+  appTitle: 'Persona 3',
+  raceOrder: getEnumOrder(races),
+  configs: compConfigs
 };
 
 @NgModule({

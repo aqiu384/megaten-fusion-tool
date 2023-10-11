@@ -15,7 +15,7 @@ export class Compendium implements ICompendium {
 
   dlcDemons: { [name: string]: boolean } = {};
 
-  constructor(private compConfig: CompendiumConfig, private gameAbbr: string) {
+  constructor(private compConfig: CompendiumConfig) {
     this.initImportedData();
     this.updateDerivedData();
   }
@@ -35,9 +35,9 @@ export class Compendium implements ICompendium {
     const pairRecipes: { [name: string]: NamePair[] } = {};
     const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const isDesu = this.gameAbbr.startsWith('ds');
+    const isDesu = this.compConfig.isDesu;
 
-    for (const dataJson of this.compConfig.demonData[this.gameAbbr]) {
+    for (const dataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(dataJson)) {
         demons[name] = {
           name: name,
@@ -56,7 +56,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const dataJson of this.compConfig.skillData[this.gameAbbr]) {
+    for (const dataJson of this.compConfig.skillData) {
       for (const [name, json] of Object.entries(dataJson)) {
         skills[name] = {
           name: name,
@@ -83,7 +83,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes[this.gameAbbr])) {
+    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes)) {
       const recipeList = <string[]>recipe;
       const entryList: string[] = [];
       const pairList: NamePair[] = [];

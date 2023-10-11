@@ -2,13 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumConfig } from '../krch/models';
-import {
-  COMPENDIUM_CONFIG,
-  FUSION_DATA_SERVICE,
-  SMT_NORMAL_FISSION_CALCULATOR,
-  SMT_NORMAL_FUSION_CALCULATOR
-} from '../compendium/constants';
+import { CompendiumConfigSet } from '../krch/models';
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -74,29 +69,35 @@ for(const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name]['prereq'] = prereq;
 }
 
-export const SMT_COMP_CONFIG: CompendiumConfig = {
+export const SMT_COMP_CONFIG: CompendiumConfigSet = {
   appTitle: 'Raidou Kuzunoha vs. King Abaddon',
-  gameTitles: { krao: 'Raidou Kuzunoha vs. King Abaddon' },
-
-  appCssClasses: ['kuzu', 'krao'],
-  races,
-  resistElems,
-  skillElems,
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  fusionLvlMod: 2.5,
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-
   raceOrder: getEnumOrder(races),
-  elemOrder: getEnumOrder(skillElems),
-  fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
-  fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+  configs: {
+    krao: {
+      appTitle: 'Raidou Kuzunoha vs. King Abaddon',
+      appCssClasses: ['kuzu', 'krao'],
 
-  demonData: { krao: [DEMON_DATA_JSON] },
-  skillData: { krao: [SKILL_DATA_JSON] },
-  normalTable: FUSION_CHART_JSON,
-  elementTable: ELEMENT_CHART_JSON,
-  mitamaTable: MITAMA_TABLE,
-  specialRecipes: { krao: SPECIAL_RECIPES_JSON }
+      races,
+      resistElems,
+      skillElems,
+      baseStats: COMP_CONFIG_JSON.baseStats,
+      fusionLvlMod: 2.5,
+      resistCodes: COMP_CONFIG_JSON.resistCodes,
+
+      raceOrder: getEnumOrder(races),
+      elemOrder: getEnumOrder(skillElems),
+      fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
+      fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+
+      demonData: [DEMON_DATA_JSON],
+      skillData: [SKILL_DATA_JSON],
+      normalTable: FUSION_CHART_JSON,
+      elementTable: ELEMENT_CHART_JSON,
+      mitamaTable: MITAMA_TABLE,
+      specialRecipes: SPECIAL_RECIPES_JSON,
+      isDesu: false
+    }
+  }
 };
 
 @NgModule({

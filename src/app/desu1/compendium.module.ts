@@ -2,13 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumConfig } from '../krch/models';
-import {
-  COMPENDIUM_CONFIG,
-  FUSION_DATA_SERVICE,
-  SMT_NORMAL_FISSION_CALCULATOR,
-  SMT_NORMAL_FUSION_CALCULATOR
-} from '../compendium/constants';
+import { CompendiumConfig, CompendiumConfigSet } from '../krch/models';
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -38,6 +33,7 @@ const rskillLookup = {}
 const races = COMP_CONFIG_JSON.races;
 const resistElems = COMP_CONFIG_JSON.resistElems;
 const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+const compConfigs: { [game: string]: CompendiumConfig } = {};
 const MITAMA_TABLE = [
   ['Nigi', 'Ara ', 'Kusi'],
   ['Kusi', 'Ara '],
@@ -78,29 +74,41 @@ for (const dataJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
   }
 }
 
-export const SMT_COMP_CONFIG: CompendiumConfig = {
+for (const game of ['ds1', 'dso']) {
+  compConfigs[game] = {
+    appTitle: 'Devil Survivor',
+    appCssClasses: ['kuzu', 'ds1'],
+
+    races,
+    resistElems,
+    skillElems,
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    fusionLvlMod: 0.5,
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+
+    raceOrder: getEnumOrder(races),
+    elemOrder: getEnumOrder(skillElems),
+    fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
+    fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+
+    demonData: [VAN_DEMON_DATA_JSON],
+    skillData: [VAN_SKILL_DATA_JSON],
+    normalTable: FUSION_CHART_JSON,
+    elementTable: ELEMENT_CHART_JSON,
+    mitamaTable: MITAMA_TABLE,
+    specialRecipes: SPECIAL_RECIPES_JSON,
+    isDesu: true
+  }
+}
+
+compConfigs.dso.appTitle = 'Devil Survivor Overclocked';
+compConfigs.dso.demonData = [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON];
+compConfigs.dso.skillData = [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON];
+
+export const SMT_COMP_CONFIG: CompendiumConfigSet = {
   appTitle: 'Devil Survivor',
-  gameTitles: { ds1: 'Devil Survivor', dso: 'Devil Survivor Overclocked' },
-
-  appCssClasses: ['kuzu', 'ds1'],
-  races,
-  resistElems,
-  skillElems,
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  fusionLvlMod: 0.5,
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-
   raceOrder: getEnumOrder(races),
-  elemOrder: getEnumOrder(skillElems),
-  fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
-  fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
-
-  demonData: { ds1: [VAN_DEMON_DATA_JSON], dso: [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON] },
-  skillData: { ds1: [VAN_SKILL_DATA_JSON], dso: [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON] },
-  normalTable: FUSION_CHART_JSON,
-  elementTable: ELEMENT_CHART_JSON,
-  mitamaTable: MITAMA_TABLE,
-  specialRecipes: { ds1: SPECIAL_RECIPES_JSON, dso: SPECIAL_RECIPES_JSON }
+  configs: compConfigs
 };
 
 @NgModule({

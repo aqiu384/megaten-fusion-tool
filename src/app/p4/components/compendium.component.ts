@@ -23,7 +23,7 @@ export class CompendiumComponent {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
     this.otherLinks = [{ title: 'Shadow List', link: 'shadows' }];
 
-    if (fusionDataService.appName.includes('Golden')) {
+    if (fusionDataService.compConfig.hasManualInheritance) {
       this.otherLinks.push({ title: 'Recipe Generator', link: 'recipes' });
     }
   }
