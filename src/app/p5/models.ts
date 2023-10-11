@@ -11,14 +11,6 @@ export interface Skill extends BaseSkill {
   transfer: { demon: string, level: number }[];
 }
 
-export interface MultiFusionPair {
-  price: number;
-  names1: string[];
-  lvl1: number;
-  names2: string[];
-  lvl2: number;
-}
-
 export interface CompendiumConfig extends BaseComp {
   races: string[];
   baseStats: string[];

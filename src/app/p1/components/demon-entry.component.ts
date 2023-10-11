@@ -3,8 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { FusionEntry } from '../../compendium/models';
+import { FusionChart, FusionEntry, MultiFusionPair } from '../../compendium/models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
+import { splitWithGem } from 'src/app/compendium/fusions/per-nonelem-fissions';
 
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
@@ -82,6 +83,12 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
+      <app-fusion-multi-pair-table *ngIf="elemRecipes.length"
+        [resultName]="name"
+        [leftHeader]="'Recipe'"
+        [rightHeader]="'Gem'"
+        [rowData]="elemRecipes">
+      </app-fusion-multi-pair-table>
       <app-p1-fission-table *ngIf="compConfig.appCssClasses[0] === 'p1'">
       </app-p1-fission-table>
     </ng-container>
@@ -92,6 +99,7 @@ import { FusionDataService } from '../fusion-data.service';
 export class DemonEntryComponent implements OnChanges {
   @Input() name: string;
   @Input() demon: Demon;
+  @Input() elemRecipes: MultiFusionPair[];
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
 
@@ -126,6 +134,7 @@ export class DemonEntryComponent implements OnChanges {
     <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [elemRecipes]="elemRecipes"
       [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
@@ -142,7 +151,9 @@ export class DemonEntryContainerComponent {
   name: string;
   demon: Demon;
   compendium: Compendium;
+  fusionChart: FusionChart;
   compConfig: CompendiumConfig;
+  elemRecipes: MultiFusionPair[];
   appName = 'Test App';
 
   constructor(
@@ -174,6 +185,12 @@ export class DemonEntryContainerComponent {
       }));
 
     this.subscriptions.push(
+      this.fusionDataService.fusionChart.subscribe(fusionChart => {
+        this.fusionChart = fusionChart;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
       this.currentDemonService.currentDemon.subscribe(name => {
         this.name = name;
         this.getDemonEntry();
@@ -188,6 +205,7 @@ export class DemonEntryContainerComponent {
     if (this.compendium && this.name) {
       this.title.setTitle(`${this.name} - ${this.appName}`);
       this.demon = this.compendium.getDemon(this.name);
+      this.elemRecipes = this.demon ? splitWithGem(this.name, this.compendium, this.fusionChart) : [];
       this.changeDetectorRef.markForCheck();
     }
   }

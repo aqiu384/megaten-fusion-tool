@@ -1,4 +1,4 @@
-import { NamePair, Compendium, FusionChart } from '../models';
+import { NamePair, MultiFusionPair, Compendium, FusionChart } from '../models';
 
 export function splitWithSameRace(name: string, compendium: Compendium, fusionChart: FusionChart): NamePair[] {
   const { race: targetRace, lvl: targetLvl } = compendium.getDemon(name);
@@ -44,4 +44,77 @@ export function splitWithSameRace(name: string, compendium: Compendium, fusionCh
   }
 
   return recipes;
+}
+
+export function splitWithGem(name: string, compendium: Compendium, fusionChart: FusionChart): MultiFusionPair[] {
+  const recipes: MultiFusionPair[] = [];
+
+  const { race: raceR, lvl: lvlR } = compendium.getDemon(name);
+  const elookup = fusionChart.getElemModifiers(raceR);
+
+  const rlvls = compendium.getResultDemonLvls(raceR);
+  const li = rlvls.indexOf(lvlR);
+  const elementOffsets = Object.keys(elookup).map(x => parseInt(x, 10));
+  elementOffsets.sort();
+
+  if (li === -1) { return recipes; }
+
+  for (const offset of elementOffsets) {
+    if (0 <= li + offset && li + offset < rlvls.length) {
+      const lvl1 = rlvls[li + offset];
+      recipes.push({
+        price: lvl1,
+        names1: [compendium.reverseLookupDemon(raceR, lvl1)],
+        lvl1,
+        names2: elookup[offset],
+        lvl2: lvl1
+      })
+    }
+  }
+
+  return recipes;
+}
+
+export function splitWithTreasure(name: string, compendium: Compendium, fusionChart: FusionChart): MultiFusionPair[] {
+  const recipes: MultiFusionPair[] = [];
+
+  const { race: raceR, lvl: lvlR } = compendium.getDemon(name);
+  const elookup = fusionChart.getElemModifiers(raceR);
+
+  const rlvls = compendium.getResultDemonLvls(raceR).concat([99]);
+  const li = rlvls.indexOf(lvlR);
+  const nextRanks = [lvlR];
+
+  if (li === -1) { return recipes; }
+
+  if (li > 1 && elookup[2]) {
+    recipes.push({ price: 0, names1: [], lvl1: rlvls[li - 2], names2: elookup[2], lvl2: rlvls[li - 1] - 1 });
+  } if (li > 0 && elookup[1]) {
+    recipes.push({ price: 0, names1: [], lvl1: rlvls[li - 1], names2: elookup[1], lvl2: lvlR - 1 });
+  } if (elookup[-1]) {
+    recipes.push({ price: 0, names1: [], lvl1: lvlR + 1, names2: elookup[-1], lvl2: rlvls[li + 1] });
+  } if (li < rlvls.length - 2 && elookup[-1]) {
+    nextRanks.push(rlvls[li + 1])
+    recipes.push({ price: 0, names1: [compendium.reverseLookupDemon(raceR, rlvls[li + 1])], lvl1: rlvls[li + 1], names2: elookup[-1], lvl2: rlvls[li + 2] });
+  } if (li < rlvls.length - 2 && elookup[-2]) {
+    recipes.push({ price: 0, names2: elookup[-2], lvl1: rlvls[li + 1] + 1, lvl2: rlvls[li + 2], names1: [] });
+  } if (li < rlvls.length - 3 && elookup[-2]) {
+    nextRanks.push(rlvls[li + 2]);
+    recipes.push({ price: 0, names1: [compendium.reverseLookupDemon(raceR, rlvls[li + 2])], lvl1: rlvls[li + 2], names2: elookup[-2], lvl2: rlvls[li + 3] });
+    recipes.push({ price: 0, names1: [compendium.reverseLookupDemon(raceR, rlvls[li + 1])], lvl1: rlvls[li + 2] + 1, names2: elookup[-2], lvl2: rlvls[li + 3] });
+  }
+
+  for (const row of recipes.filter(r => r.names1.length === 0)) {
+    for (const lvl1 of compendium.getIngredientDemonLvls(raceR).filter(i => !nextRanks.includes(i))) {
+      if (lvl1 <= row.lvl2) {
+        row.names1.push(compendium.reverseLookupDemon(raceR, lvl1))
+      }
+    }
+  }
+
+  for (const row of recipes) {
+    row.price = Math.pow(row.lvl1 * 3 + 7, 2) + 2000;
+  }
+
+  return recipes.filter(r => r.names1.length > 0);
 }

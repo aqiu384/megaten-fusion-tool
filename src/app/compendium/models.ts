@@ -143,6 +143,14 @@ export interface FusionPair extends FusionEntry {
   notes?: string;
 }
 
+export interface MultiFusionPair {
+  price: number;
+  names1: string[];
+  lvl1: number;
+  names2: string[];
+  lvl2: number;
+}
+
 export interface FissionTable { [race: string]: FissionRow; }
 export interface FusionTable  { [race: string]: FusionRow; }
 export interface ElementTable { [race: string]: ElementRow; }

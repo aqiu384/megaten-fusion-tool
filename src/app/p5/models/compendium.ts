@@ -1,6 +1,6 @@
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
-import { MultiFusionPair, CompendiumConfig } from '../models';
+import { CompendiumConfig } from '../models';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -327,62 +327,5 @@ export class Compendium implements ICompendium {
   isExcludedDemon(name: string) {
     const { race, lvl } = this.getDemon(name);
     return this.allIngredients[race].indexOf(lvl) === -1;
-  }
-
-  splitMultiFusion(name: string): MultiFusionPair[] {
-    const recipes: MultiFusionPair[] = [];
-    const elookup: { [elem: string]: string[] } = {};
-
-    const { race: raceR, lvl: lvlR } = this.getDemon(name);
-    const elemTable = this.compConfig.elementTable;
-    const ei = elemTable.races.indexOf(raceR);
-    const rlvls = this.getResultDemonLvls(raceR).concat([99]);
-    const li = rlvls.indexOf(lvlR);
-    const nextRanks = [lvlR];
-
-    if (ei === -1 || li === -1) {
-      return [];
-    }
-
-    for (let i = 0; i < elemTable.table[ei].length; i++) {
-      const emod = elemTable.table[ei][i];
-
-      if (!elookup[emod]) {
-        elookup[emod] = [];
-      }
-
-      elookup[emod].push(elemTable.elems[i]);
-    }
-
-    if (li > 1 && elookup[2]) {
-      recipes.push({ price: 0, names1: [], lvl1: rlvls[li - 2], names2: elookup[2], lvl2: rlvls[li - 1] - 1 });
-    } if (li > 0 && elookup[1]) {
-      recipes.push({ price: 0, names1: [], lvl1: rlvls[li - 1], names2: elookup[1], lvl2: lvlR - 1 });
-    } if (elookup[-1]) {
-      recipes.push({ price: 0, names1: [], lvl1: lvlR + 1, names2: elookup[-1], lvl2: rlvls[li + 1] });
-    } if (li < rlvls.length - 2 && elookup[-1]) {
-      nextRanks.push(rlvls[li + 1])
-      recipes.push({ price: 0, names1: [this.reverseLookupDemon(raceR, rlvls[li + 1])], lvl1: rlvls[li + 1], names2: elookup[-1], lvl2: rlvls[li + 2] });
-    } if (li < rlvls.length - 2 && elookup[-2]) {
-      recipes.push({ price: 0, names2: elookup[-2], lvl1: rlvls[li + 1] + 1, lvl2: rlvls[li + 2], names1: [] });
-    } if (li < rlvls.length - 3 && elookup[-2]) {
-      nextRanks.push(rlvls[li + 2]);
-      recipes.push({ price: 0, names1: [this.reverseLookupDemon(raceR, rlvls[li + 2])], lvl1: rlvls[li + 2], names2: elookup[-2], lvl2: rlvls[li + 3] });
-      recipes.push({ price: 0, names1: [this.reverseLookupDemon(raceR, rlvls[li + 1])], lvl1: rlvls[li + 2] + 1, names2: elookup[-2], lvl2: rlvls[li + 3] });
-    }
-
-    for (const row of recipes.filter(r => r.names1.length === 0)) {
-      for (const lvl1 of this.getIngredientDemonLvls(raceR).filter(i => !nextRanks.includes(i))) {
-        if (lvl1 <= row.lvl2) {
-          row.names1.push(this.reverseLookupDemon(raceR, lvl1))
-        }
-      }
-    }
-
-    for (const row of recipes) {
-      row.price = Math.pow(row.lvl1 * 3 + 7, 2) + 2000;
-    }
-
-    return recipes.filter(r => r.names1.length > 0);
   }
 }

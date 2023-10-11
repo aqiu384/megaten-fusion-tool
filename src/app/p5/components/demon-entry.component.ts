@@ -3,11 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { CompendiumConfig } from '../models';
-import { Demon } from '../models';
-import { Compendium } from '../models/compendium';
+import { Demon, CompendiumConfig } from '../models';
+import { Compendium, } from '../models/compendium';
 
+import { FusionChart, MultiFusionPair } from '../../compendium/models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
+import { splitWithTreasure } from 'src/app/compendium/fusions/per-nonelem-fissions';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
@@ -38,32 +39,10 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <ng-container *ngIf="compendium.splitMultiFusion(name) as rows">
-        <table *ngIf="rows.length" class="entry-table">
-          <thead>
-            <tr><th colspan=5 class="title">Ingredient 1 x Treasure Demon 2 = {{ demon.name }}</th></tr>
-            <tr><th rowspan=2>Price</th><th colspan=3>Ingredient 1</th><th>Treasure Demon 2</th></tr>
-            <tr><th>Names</th><th>MinLvl</th><th>MaxLvl</th><th>Names</th></tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let row of rows">
-              <td>{{ row.price }}</td>
-              <td>
-                <ul class="comma-list">
-                  <li *ngFor="let name of row.names1"><a routerLink="../{{ name }}">{{ name }} </a></li>
-                </ul>
-              </td>
-              <td>{{ row.lvl1 }}</td>
-              <td>{{ row.lvl2 }}</td>
-              <td>
-                <ul class="comma-list">
-                  <li *ngFor="let name of row.names2"><a routerLink="../{{ name }}">{{ name }} </a></li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </ng-container>
+      <app-fusion-multi-pair-table *ngIf="elemRecipes.length"
+        [resultName]="name"
+        [rowData]="elemRecipes">
+      </app-fusion-multi-pair-table>
       <app-smt-fusions [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
     </ng-container>
@@ -74,6 +53,7 @@ import { FusionDataService } from '../fusion-data.service';
 export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
+  @Input() elemRecipes: MultiFusionPair[];
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
 }
@@ -85,6 +65,7 @@ export class DemonEntryComponent {
     <app-demon-entry *ngIf="!demon || !demon.isEnemy"
       [name]="name"
       [demon]="demon"
+      [elemRecipes]="elemRecipes"
       [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
@@ -101,7 +82,9 @@ export class DemonEntryContainerComponent {
   name: string;
   demon: Demon;
   compendium: Compendium;
+  fusionChart: FusionChart;
   compConfig: CompendiumConfig;
+  elemRecipes: MultiFusionPair[];
   appName = 'Test App';
 
   constructor(
@@ -132,6 +115,12 @@ export class DemonEntryContainerComponent {
       }));
 
     this.subscriptions.push(
+      this.fusionDataService.fusionChart.subscribe(fusionChart => {
+        this.fusionChart = fusionChart;
+        this.getDemonEntry();
+      }));
+
+    this.subscriptions.push(
       this.currentDemonService.currentDemon.subscribe(name => {
         this.name = name;
         this.getDemonEntry();
@@ -143,9 +132,10 @@ export class DemonEntryContainerComponent {
   }
 
   getDemonEntry() {
-    if (this.compendium && this.name) {
+    if (this.compendium && this.fusionChart && this.name) {
       this.title.setTitle(`${this.name} - ${this.appName}`);
       this.demon = this.compendium.getDemon(this.name);
+      this.elemRecipes = this.demon ? splitWithTreasure(this.name, this.compendium, this.fusionChart) : [];
     }
   }
 }
