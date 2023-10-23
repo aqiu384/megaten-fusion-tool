@@ -81,7 +81,8 @@ export const SMT4F_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'smt4f-fusion-tool-settings',
-  settingsVersion: 1709211400
+  settingsVersion: 1709211400,
+  defaultRecipeDemon: 'Pixie'
 }
 
 @NgModule({

@@ -16,7 +16,7 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
-import JAP_NAMES_JSON from '../smt4/data/jap-names.json';
+import JAP_NAMES_JSON from './data/jap-names.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
   return target.reduce((acc, t, i) => { acc[t] = i; return acc }, {});
@@ -88,7 +88,8 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'sh2-fusion-tool-settings',
-  settingsVersion: 2208280745
+  settingsVersion: 2208280745,
+  defaultRecipeDemon: 'Pixie'
 }
 
 @NgModule({

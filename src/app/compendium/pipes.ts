@@ -64,7 +64,7 @@ export class ReslvlToStringJaPipe implements PipeTransform {
     if (value < -1000) { return '吸'; }
     if (value < 0) { return '反'; }
     if (value === 0) { return '無'; }
-    if (value < 100) { return '強'; }
+    if (value < 100) { return '耐'; }
     if (value < 1000) { return 'ー'; }
     if (value < 2000) { return '弱'; }
     return '?';

@@ -21,6 +21,6 @@ export class CompendiumComponent {
   constructor(fusionDataService: FusionDataService) {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
     this.langEn = fusionDataService.compConfig.lang !== 'ja';
-    this.otherLinks = this.langEn ? [{ title: 'Recipe Generator', link: 'recipes' }] : [];
+    this.otherLinks = [{ title: this.langEn ? 'Recipe Generator' : '合体レシピ', link: 'recipes' }];
   }
 }

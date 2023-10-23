@@ -9,12 +9,12 @@ import { createSkillsRecipe } from '../models/recipe-generator';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form [formGroup]="form">
-      <h2>Recipe Generator</h2>
+      <h2>{{ langEn ? 'Recipe Generator' : '合体レシピ' }}</h2>
       <table class="entry-table">
-        <tr><th colspan="2" class="title">Target</th></tr>
+        <tr><th colspan="2" class="title">{{ langEn ? 'Target' : '悪魔' }}</th></tr>
         <tr>
-          <th style="width: 40%;">Race</th>
-          <th style="width: 60%;">Name</th>
+          <th style="width: 40%;">{{ langEn ? 'Race' : '種族' }}</th>
+          <th style="width: 60%;">{{ langEn ? 'Name' : '悪魔名' }}</th>
         </tr>
         <tr>
           <td>
@@ -30,18 +30,18 @@ import { createSkillsRecipe } from '../models/recipe-generator';
         </tr>
       </table>
       <table formArrayName="ingreds" class="entry-table">
-        <tr><th colspan="5" class="title">Include Ingredients</th></tr>
+        <tr><th colspan="5" class="title">{{ langEn ? 'Include Ingredients' : '素材悪魔' }}</th></tr>
         <tr>
-          <th style="width: 20%">Search</th>
-          <th style="width: 10%">Elem</th>
-          <th style="width: 25%">Skill</th>
-          <th style="width: 20%">Race</th>
-          <th style="width: 25%">Ingredient</th>
+          <th style="width: 20%">{{ langEn ? 'Search' : 'スキル検索' }}</th>
+          <th style="width: 10%">{{ langEn ? 'Elem' : '属性' }}</th>
+          <th style="width: 25%">{{ langEn ? 'Skill' : 'スキル名' }}</th>
+          <th style="width: 20%">{{ langEn ? 'Race' : '種族' }}</th>
+          <th style="width: 25%">{{ langEn ? 'Ingredient' : '悪魔名' }}</th>
         </tr>
         <ng-container *ngFor="let ingred of form.controls.ingreds['controls']; let i = index" [formGroupName]="i">
           <tr *ngIf="i < maxSkills">
             <td>
-              <label>Search Skill
+              <label>{{ langEn ? 'Search Skill' : 'スキル検索' }}
                 <input formControlName="searchSkill" type="checkbox"
                 (change)="setIngredDemon(ingred)">
               </label>
@@ -81,35 +81,38 @@ import { createSkillsRecipe } from '../models/recipe-generator';
         </ng-container>
       </table>
       <table *ngIf="recipe" class="entry-table">
-        <tr><th colspan="2" class="title">Fusion Recipe</th></tr>
-        <tr><th>Left Chain</th><th>Right Chain</th></tr>
+        <tr><th colspan="2" class="title">{{ langEn ? 'Fusion Recipe' : '合体レシピ' }}</th></tr>
+        <tr>
+          <th>{{ langEn ? 'Left Chain' : '左レシピ' }}</th>
+          <th>{{ langEn ? 'Right Chain' : '右レシピ' }}</th>
+        </tr>
         <tr>
           <td style="width: 50%" *ngIf="recipeLeft.length"><ul><li *ngFor="let step of recipeLeft">{{ step }}</li></ul></td>
-          <td style="width: 50%" *ngIf="!recipeLeft.length" style="padding: 1em; text-align: center;">No chains found</td>
+          <td style="width: 50%" *ngIf="!recipeLeft.length" style="padding: 1em; text-align: center;">{{ langEn ? 'No chains found' : '合体なし' }}</td>
           <td style="width: 50%" *ngIf="recipeRight.length"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
-          <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">No chains found</td>
+          <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">{{ langEn ? 'No chains found' : '合体なし' }}</td>
         </tr>
         <tr><td colspan="2" style="padding: 1em; text-align: center;">
           <ng-container *ngIf="recipe.stepR.length">
             {{ recipeResult.join(' x ') }} = {{ recipe.result }}<br>
             [{{ resultSkills.join(', ') }}]
           </ng-container>
-          <ng-container *ngIf="!recipe.stepR.length">No recipes found</ng-container>
+          <ng-container *ngIf="!recipe.stepR.length">{{ langEn ? 'No recipes found' : '合体なし' }}</ng-container>
         </td></tr>
       </table>
     </form>
   `,
   styles: [`
     ul { padding: 0 1em; list-style: none; }
-    td select { width: 100%; }
+    td select { min-height: 25px; width: 100%; }
   `]
 })
 export class RecipeGeneratorComponent implements OnChanges {
-  @Input() defaultDemon = 'Pixie';
   @Input() maxSkills = 8;
   @Input() compendium: Compendium;
   @Input() squareChart: SquareChart;
   @Input() recipeConfig: RecipeGeneratorConfig;
+  @Input() langEn = true;
 
   internalMaxSkills = 9;
   range99 = Array(99);
@@ -250,7 +253,8 @@ export class RecipeGeneratorComponent implements OnChanges {
 
     this.races = this.recipeConfig.races.filter(r => this.demons[r]);
     this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e]);
-    this.setDemon(this.compendium.getDemon(this.defaultDemon));
+    console.log(this.recipeConfig.defaultDemon);
+    this.setDemon(this.compendium.getDemon(this.recipeConfig.defaultDemon));
   }
 
   setDemon(demon: Demon) {

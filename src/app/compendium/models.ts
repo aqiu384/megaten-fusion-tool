@@ -190,6 +190,7 @@ export interface RecipeGeneratorConfig {
   triExclusiveRaces: string[];
   triFissionCalculator: TripleCalculator;
   triFusionCalculator: TripleCalculator;
+  defaultDemon: string;
 }
 
 export interface FusionRecipe {

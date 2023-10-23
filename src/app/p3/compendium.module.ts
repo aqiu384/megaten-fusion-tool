@@ -105,7 +105,7 @@ for (const game of ['p3', 'p3fes', 'p3aeg', 'p3p']) {
     inheritElems: INHERIT_TYPES_JSON.elems,
 
     enemyStats: ['HP', 'MP'],
-    enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
+    enemyResists: COMP_CONFIG_JSON.resistElems.concat(['alm']),
 
     demonData: [VAN_DEMON_DATA_JSON],
     skillData: [VAN_SKILL_DATA_JSON],

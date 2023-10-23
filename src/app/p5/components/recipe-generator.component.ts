@@ -11,7 +11,6 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-recipe-generator
-      [defaultDemon]="defaultDemon"
       [maxSkills]="maxSkills"
       [compendium]="compendium"
       [squareChart]="squareChart"
@@ -24,7 +23,6 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   squareChart: SquareChart;
   recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
-  defaultDemon = 'Pixie';
   maxSkills = 8;
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
@@ -39,7 +37,8 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       restrictInherits: true,
       triExclusiveRaces: [],
       triFissionCalculator: null,
-      triFusionCalculator: null
+      triFusionCalculator: null,
+      defaultDemon: 'Pixie'
     };
   }
 

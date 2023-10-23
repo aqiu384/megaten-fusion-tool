@@ -81,7 +81,8 @@ export const SMT5_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'smt5-fusion-tool-settings',
-  settingsVersion: 2111141400
+  settingsVersion: 2111141400,
+  defaultRecipeDemon: 'Pixie'
 }
 
 @NgModule({

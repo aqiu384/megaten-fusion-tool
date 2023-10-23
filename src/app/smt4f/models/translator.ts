@@ -32,7 +32,8 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, engNames),
 
     settingsKey: compConfig.settingsKey.replace('-ja', '') + '-ja',
-    settingsVersion: compConfig.settingsVersion
+    settingsVersion: compConfig.settingsVersion,
+    defaultRecipeDemon: engNames[compConfig.defaultRecipeDemon] || compConfig.defaultRecipeDemon
   }
 }
 

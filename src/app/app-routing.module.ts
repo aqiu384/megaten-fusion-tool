@@ -27,6 +27,11 @@ const appRoutes: Routes = [
         loadChildren: () => import('./smt5/compendium.module').then(m => m.CompendiumModule),
         data: { appName: '真・女神転生V' }
       },
+      {
+        path: 'sh2',
+        loadChildren: () => import('./sh2/compendium.module').then(m => m.CompendiumModule),
+        data: { appName: 'ソウルハッカーズ2' }
+      },
       { path: '**', redirectTo: 'home', pathMatch: 'full' }
     ]
   },

@@ -11,11 +11,11 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-recipe-generator
-      [defaultDemon]="defaultDemon"
       [maxSkills]="maxSkills"
       [compendium]="compendium"
       [squareChart]="squareChart"
-      [recipeConfig]="recipeConfig">
+      [recipeConfig]="recipeConfig"
+      [langEn]="langEn">
     </app-recipe-generator>
   `
 })
@@ -24,12 +24,13 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   squareChart: SquareChart;
   recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
-  defaultDemon = 'Pixie';
   maxSkills = 8;
+  langEn = true;
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
     const isSh2 = compConfig.appCssClasses.includes('sh2');
+    this.langEn = compConfig.lang === 'en';
     this.maxSkills = isSh2 ? 6 : 8;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
@@ -40,7 +41,8 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       restrictInherits: isSh2,
       triExclusiveRaces: [],
       triFissionCalculator: null,
-      triFusionCalculator: null
+      triFusionCalculator: null,
+      defaultDemon: compConfig.defaultRecipeDemon
     };
   }
 

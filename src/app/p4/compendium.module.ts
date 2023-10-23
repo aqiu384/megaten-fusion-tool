@@ -87,7 +87,7 @@ for (const game of ['p4', 'p4g']) {
     inheritElems: INHERIT_TYPES_JSON.elems,
 
     enemyStats: ['HP', 'MP'],
-    enemyResists: COMP_CONFIG_JSON.resistElems.concat(['almighty']),
+    enemyResists: COMP_CONFIG_JSON.resistElems.concat(['alm']),
 
     demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
     skillData: [skillData],
