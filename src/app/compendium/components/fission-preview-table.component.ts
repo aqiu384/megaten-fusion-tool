@@ -43,8 +43,13 @@ export class FissionPreviewTableComponent implements OnChanges {
         const fusionPairs = this.pairCalculator
           .getFusions(demon.name, this.compendium, this.pairChart)
           .map(p => toFusionPair(p, this.compendium));
+        const fusionPairsValid = fusionPairs.length > 0 && (
+          fusionPairs.filter(p => p.race1 !== demon.race).length > 0 || 
+          !this.trioCalculator ||
+          this.trioCalculator.getFusions(demon.name, this.compendium, this.trioChart).length === 0
+        );
         
-        if (fusionPairs.length > 0) {
+        if (fusionPairsValid) {
           fusionPairs.sort((a, b) => a.price - b.price);
           const previewPairs = fusionPairs.slice(0, 3).map(p => `${p.name1} x ${p.name2}`).join(', ');
           previews.push(`${demon.name} = ${previewPairs}` + (fusionPairs.length > 3 ? `, ${fusionPairs.length - 3} more...` : ''));
@@ -54,7 +59,8 @@ export class FissionPreviewTableComponent implements OnChanges {
         if (this.trioCalculator) {
           const fusionTrios = this.trioCalculator
             .getFusions(demon.name, this.compendium, this.trioChart)
-            .map(t => toDemonTrio(t, this.compendium));
+            .map(t => toDemonTrio(t, this.compendium))
+            .filter(t => t.d1.race !== demon.race);
           
           if (fusionTrios.length > 0) {
             fusionTrios.sort((a, b) => a.price - b.price);

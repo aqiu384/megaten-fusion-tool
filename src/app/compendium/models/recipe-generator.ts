@@ -22,7 +22,7 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: str
       .map(p => toDemonTrio(p, comp))
       .sort((a, b) => a.price - b.price)
       .find(t =>
-        (canInheritI & (t.d1.inherits | t.d2.inherits | t.d3.inherits)) === canInheritI &&
+        (canInheritI & (t.d1.inherits | t.d2.inherits)) === canInheritI &&
         (t.d1.fusion === 'special' || !triExclusiveRaces.includes(t.d1.race)) &&
         (t.d2.fusion === 'special' || !triExclusiveRaces.includes(t.d2.race)) &&
         (t.d3.fusion === 'special' || !triExclusiveRaces.includes(t.d3.race))

@@ -223,10 +223,12 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.learnedBy = { '-': [this.blankDemon] };
 
     for (const demon of this.compendium.allDemons) {
-      if (!demon.isEnemy) {
+      if (!demon.isEnemy && (demon.fusion === 'normal' || demon.fusion === 'special')) {
         if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
         this.demons[demon.race].push(demon);
+      }
 
+      if (!demon.isEnemy && demon.fusion !== 'party') {
         for (const sname of Object.keys(demon.skills)) {
           if (!this.learnedBy[sname]) { this.learnedBy[sname] = []; }
           this.learnedBy[sname].push(demon);
