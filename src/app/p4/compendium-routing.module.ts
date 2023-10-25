@@ -7,6 +7,7 @@ import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
+import { TrioFissionPreviewComponent } from '../compendium/components/fission-preview-table.component';
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
@@ -78,6 +79,10 @@ const compendiumRoutes: Routes = [
       {
         path: 'recipes',
         component: RecipeGeneratorContainerComponent
+      },
+      {
+        path: 'previews',
+        component: TrioFissionPreviewComponent
       }
     ]
   },

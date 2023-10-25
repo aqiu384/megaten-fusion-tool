@@ -9,6 +9,7 @@ import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-setti
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
+import { SmtFissionPreviewComponent } from '../compendium/components/fission-preview-table.component';
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
@@ -72,6 +73,10 @@ const compendiumRoutes: Routes = [
       {
         path: 'settings',
         component: DemonDlcSettingsContainerComponent
+      },
+      {
+        path: 'previews',
+        component: SmtFissionPreviewComponent
       }
     ]
   },

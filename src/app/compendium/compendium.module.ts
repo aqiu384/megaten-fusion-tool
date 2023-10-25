@@ -26,6 +26,11 @@ import { SmtFusionsComponent } from './components/smt-fusions.component';
 
 import { CurrentDemonService } from './current-demon.service';
 
+import { 
+  FissionPreviewTableComponent,
+  SmtFissionPreviewComponent,
+  TrioFissionPreviewComponent
+} from './components/fission-preview-table.component';
 import { SmtFissionTableComponent } from './components/smt-fission-table.component';
 import { SmtFusionTableComponent } from './components/smt-fusion-table.component';
 import { FusionMultiPairTableComponent } from './components/fusion-multi-pair-table.component';
@@ -85,6 +90,9 @@ import {
     FusionPairTableRowComponent,
     FusionPairTableComponent,
     FusionMultiPairTableComponent,
+    FissionPreviewTableComponent,
+    SmtFissionPreviewComponent,
+    TrioFissionPreviewComponent,
     SmtFissionTableComponent,
     SmtFusionTableComponent,
     FusionTrioTableHeaderComponent,
@@ -123,6 +131,9 @@ import {
     SmtFusionsComponent,
     FusionPairTableComponent,
     FusionMultiPairTableComponent,
+    FissionPreviewTableComponent,
+    SmtFissionPreviewComponent,
+    TrioFissionPreviewComponent,
     SmtFissionTableComponent,
     SmtFusionTableComponent,
     FusionTrioTableComponent,
