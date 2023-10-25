@@ -33,7 +33,8 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
 
     settingsKey: compConfig.settingsKey.replace('-ja', '') + '-ja',
     settingsVersion: compConfig.settingsVersion,
-    defaultRecipeDemon: engNames[compConfig.defaultRecipeDemon] || compConfig.defaultRecipeDemon
+    defaultRecipeDemon: engNames[compConfig.defaultRecipeDemon] || compConfig.defaultRecipeDemon,
+    elementRace: engNames[compConfig.elementRace] || compConfig.elementRace
   }
 }
 
@@ -73,7 +74,7 @@ function translateSpecialRecipes(oldRecipes: { [name: string]: string[] }, engNa
   const newRecipes = {};
 
   for (const [dname, recipe] of Object.entries(oldRecipes)) {
-    newRecipes[engNames[dname] || dname] = recipe.map(ingred => engNames[ingred] || ingred);
+    newRecipes[engNames[dname] || dname] = recipe.map(ingreds => ingreds.split(' x ').map(ingred => engNames[ingred] || ingred).join(' x '));
   }
 
   return newRecipes;

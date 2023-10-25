@@ -89,7 +89,8 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   settingsKey: 'sh2-fusion-tool-settings',
   settingsVersion: 2208280745,
-  defaultRecipeDemon: 'Pixie'
+  defaultRecipeDemon: 'Pixie',
+  elementRace: 'Element'
 }
 
 @NgModule({

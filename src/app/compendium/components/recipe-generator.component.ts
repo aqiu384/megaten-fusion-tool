@@ -253,7 +253,6 @@ export class RecipeGeneratorComponent implements OnChanges {
 
     this.races = this.recipeConfig.races.filter(r => this.demons[r]);
     this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e]);
-    console.log(this.recipeConfig.defaultDemon);
     this.setDemon(this.compendium.getDemon(this.recipeConfig.defaultDemon));
   }
 

@@ -40,4 +40,5 @@ export interface CompendiumConfig extends BaseComp {
   settingsKey: string;
   settingsVersion: number;
   defaultRecipeDemon: string;
+  elementRace: string;
 }

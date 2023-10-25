@@ -10,7 +10,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
     <td *ngIf="!hasCurrLvl">{{ data.lvl | lvlToNumber }}</td>
     <td *ngIf="hasCurrLvl" style="text-align: center;">
-      <button *ngIf="!currOffset" (click)="updateCurrRange()">{{ data.currLvl }}</button>
+      <button *ngIf="!currOffset" (click)="updateCurrRange()">{{ data.currLvl }} &#9998;</button>
       <select *ngIf="currOffset" (change)="emitValidLvl($event)">
         <option [value]="data.currLvl">{{ data.currLvl }}</option>
         <option *ngFor="let _ of currRange; let i = index" [value]="i + currOffset">{{ i + currOffset }}</option>

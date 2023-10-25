@@ -42,7 +42,7 @@ export class SmtFusionsComponent implements OnInit, OnChanges {
 
   static readonly NORMAL_FUSIONS_JA = [
     { title: '逆引き合体', link: 'fissions' },
-    { title: '2体合体', link: 'fusions' }
+    { title: '2身合体', link: 'fusions' }
   ];
 
   static readonly TRIPLE_FUSIONS = [
