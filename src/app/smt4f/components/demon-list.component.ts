@@ -21,7 +21,7 @@ import { CompendiumConfig } from '../models';
 })
 export class DemonListContainerComponent extends DLCC {
   compConfig: CompendiumConfig;
-  langEn: boolean;
+  langEn = true;
 
   constructor(
     title: Title,
@@ -31,7 +31,7 @@ export class DemonListContainerComponent extends DLCC {
     super(title, changeDetectorRef, fusionDataService);
 
     this.compConfig = fusionDataService.compConfig;
-    this.langEn = this.compConfig.lang !== 'ja';
+    this.langEn = this.compConfig.lang === 'en';
     this.appName = (this.langEn ? 'List of Demons - ' : '悪魔一覧 ') + fusionDataService.appName;
 
     this.defaultSortFun = (d1, d2) => (

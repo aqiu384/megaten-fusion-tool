@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
   constructor(private title: Title, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.langEn = this.route.snapshot.data.lang !== 'ja';
+    this.langEn = !this.route.snapshot.data.lang;
     this.fusionTools = this.langEn ? HomeComponent.FUSION_TOOLS_EN : HomeComponent.FUSION_TOOLS_JP;
     this.title.setTitle(this.langEn ? 'Megami Tensei Fusion Tools' : '女神転生合体アプリ');
   }

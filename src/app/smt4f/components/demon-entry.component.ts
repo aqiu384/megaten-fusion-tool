@@ -137,7 +137,7 @@ export class DemonEntryComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-entry
-      [langEn]="compConfig.lang !== 'ja'"
+      [langEn]="langEn"
       [name]="name"
       [demon]="demon"
       [compConfig]="compConfig"
@@ -151,7 +151,8 @@ export class DemonEntryContainerComponent {
   demon: Demon;
   compendium: Compendium;
   compConfig: CompendiumConfig;
-  appName = 'Test App';
+  appName: string;
+  langEn = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -161,6 +162,7 @@ export class DemonEntryContainerComponent {
   ) {
     this.appName = fusionDataService.appName;
     this.compConfig = fusionDataService.compConfig;
+    this.langEn = this.compConfig.lang === 'en';
   }
 
   ngOnInit() {
@@ -193,7 +195,7 @@ export class DemonEntryContainerComponent {
 
   getDemonEntry() {
     if (this.compendium && this.name) {
-      this.title.setTitle(this.name + (this.compConfig.lang !== 'ja' ? ' - ' : ' ') + this.appName);
+      this.title.setTitle(this.name + (this.langEn ? ' - ' : ' ') + this.appName);
       this.demon = this.compendium.getDemon(this.name);
     }
   }

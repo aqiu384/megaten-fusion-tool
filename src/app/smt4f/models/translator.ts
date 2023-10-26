@@ -1,108 +1,53 @@
 import { CompendiumConfig } from '../models';
+import { translateDemonData, translateSkillData, translateSpecialRecipes, translateFusionChart } from '../../compendium/models/translator';
 
 export function translateCompConfig(compConfig: CompendiumConfig): CompendiumConfig {
-  const engNames = compConfig.engNames;
-  const races = compConfig.races.map(r => engNames[r] || r);
+  const enNames = Object.entries(compConfig.jaNames).reduce((acc, [ja, en]) => { acc[en] = ja; return acc; }, {});
+  const races = compConfig.races.map(r => enNames[r] || r);
 
   return {
-    appTitle: engNames[compConfig.appTitle] || compConfig.appTitle,
+    appTitle: enNames[compConfig.appTitle] || compConfig.appTitle,
     races,
-    raceOrder: compConfig.raceOrder,
+    raceOrder: races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     appCssClasses: compConfig.appCssClasses,
 
     lang: 'ja',
-    engNames: compConfig.engNames,
+    jaNames: compConfig.jaNames,
     affinityElems: compConfig.affinityElems,
-    skillData: translateSkillData(compConfig.skillData, engNames),
+    skillData: translateSkillData(compConfig.skillData, enNames),
     skillElems: compConfig.skillElems,
     elemOrder: compConfig.elemOrder,
     resistCodes: compConfig.resistCodes,
     affinityBonuses: compConfig.affinityBonuses,
     lvlModifier: compConfig.lvlModifier,
 
-    demonData: translateDemonData(compConfig.demonData, engNames),
-    evolveData: translateEvolutions(compConfig.evolveData, engNames),
-    dlcDemons: compConfig.dlcDemons.map(dlist => dlist.split(',').map(d => engNames[d] || d).join(',')),
-    baseStats: compConfig.baseStats.map(s => engNames[s] || s),
+    demonData: translateDemonData(compConfig.demonData, enNames),
+    evolveData: translateEvolutions(compConfig.evolveData, enNames),
+    dlcDemons: compConfig.dlcDemons.map(dlist => dlist.split(',').map(d => enNames[d] || d).join(',')),
+    baseStats: compConfig.baseStats.map(s => enNames[s] || s),
     resistElems: compConfig.resistElems,
-    ailmentElems: compConfig.ailmentElems.map(a => engNames[a] || a),
+    ailmentElems: compConfig.ailmentElems.map(a => enNames[a] || a),
 
-    normalTable: translateFusionChart(compConfig.normalTable, engNames),
-    elementTable: translateFusionChart(compConfig.elementTable, engNames),
-    specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, engNames),
+    normalTable: translateFusionChart(compConfig.normalTable, enNames),
+    elementTable: translateFusionChart(compConfig.elementTable, enNames),
+    specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, enNames),
 
     settingsKey: compConfig.settingsKey.replace('-ja', '') + '-ja',
     settingsVersion: compConfig.settingsVersion,
-    defaultRecipeDemon: engNames[compConfig.defaultRecipeDemon] || compConfig.defaultRecipeDemon,
-    elementRace: engNames[compConfig.elementRace] || compConfig.elementRace
+    defaultRecipeDemon: enNames[compConfig.defaultRecipeDemon] || compConfig.defaultRecipeDemon,
+    elementRace: enNames[compConfig.elementRace] || compConfig.elementRace
   }
 }
 
-function translateDemonData(oldDemons: any, engNames: { [name: string]: string }): any {
-  const newDemons = {};
-
-  for (const [dname, entry] of Object.entries(oldDemons)) {
-    const newEntry = Object.assign({}, entry);
-    const newSkills = {};
-
-    for (const [sname, lvl] of Object.entries(entry['skills'])) {
-      newSkills[engNames[sname] || sname] = lvl;
-    }
-
-    newEntry['race'] = engNames[newEntry['race']] || newEntry['race'];
-    newEntry['skills'] = newSkills;
-    newDemons[engNames[dname] || dname] = newEntry;
-  }
-
-  return newDemons;
-}
-
-function translateSkillData(oldSkills: any, engNames: { [name: string]: string }): any {
-  const newSkills = {};
-
-  for (const [sname, entry] of Object.entries(oldSkills)) {
-    const newEntry = Object.assign({}, entry);
-    const target = newEntry['target'] || 'Self';
-    newEntry['target'] = engNames[target] || target;
-    newSkills[engNames[sname] || sname] = newEntry;
-  }
-
-  return newSkills;
-}
-
-function translateSpecialRecipes(oldRecipes: { [name: string]: string[] }, engNames: { [name: string]: string }): any {
-  const newRecipes = {};
-
-  for (const [dname, recipe] of Object.entries(oldRecipes)) {
-    newRecipes[engNames[dname] || dname] = recipe.map(ingreds => ingreds.split(' x ').map(ingred => engNames[ingred] || ingred).join(' x '));
-  }
-
-  return newRecipes;
-}
-
-function translateEvolutions(oldEvolves: any, engNames: { [name: string]: string }): any {
+function translateEvolutions(oldEvolves: any, enNames: { [name: string]: string }): any {
   const newEvolves = {};
 
   for (const [dname, recipe] of Object.entries(oldEvolves)) {
-    newEvolves[engNames[dname] || dname] = {
+    newEvolves[enNames[dname] || dname] = {
       lvl: recipe['lvl'],
-      result: engNames[recipe['result']] || recipe['result']
+      result: enNames[recipe['result']] || recipe['result']
     };
   }
 
   return newEvolves;
-}
-
-function translateFusionChart(oldChart: any, engNames: { [name: string]: string }): any {
-  const newChart = {
-    races: oldChart['races'].map(race => engNames[race] || race),
-    table: oldChart['table'].map(row => row.map(race => engNames[race] || race))
-  };
-
-  if (oldChart['elems']) {
-    newChart['elems'] = oldChart['elems'].map(race => engNames[race] || race);
-    newChart['table'] = oldChart['table'];
-  }
-
-  return newChart;
 }

@@ -18,19 +18,10 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
-import JAP_NAMES_JSON from '../smt4/data/jap-names.json';
-
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  return target.reduce((acc, t, i) => { acc[t] = i; return acc }, {});
-}
+import JA_NAMES_JSON from '../smt4/data/ja-names.json';
 
 const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-const engNames: { [ename: string]: string } = {};
 const skillData = {};
-
-for (const [jname, ename] of Object.entries(JAP_NAMES_JSON)) {
-  engNames[ename] = jname;
-}
 
 for (const [demon, entry] of Object.entries(ENEMY_DATA_JSON)) {
   entry['skills'] = entry['eskills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {});
@@ -55,18 +46,18 @@ for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
   DEMON_DATA_JSON[name].fusion = prereq.includes('Fusion Accident') ? 'accident' : 'normal';
 }
 
-export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
+const compendiumConfig: CompendiumConfig = {
   appTitle: 'Shin Megami Tensei IV',
   races: COMP_CONFIG_JSON.races,
-  raceOrder: getEnumOrder(COMP_CONFIG_JSON.races),
+  raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
   appCssClasses: ['smt4', 'smt4f'],
 
   lang: 'en',
-  engNames,
+  jaNames: JA_NAMES_JSON,
   affinityElems: [],
   skillData,
   skillElems,
-  elemOrder: getEnumOrder(skillElems),
+  elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
   affinityBonuses: { costs: [], upgrades: [] },
   lvlModifier: 1,
@@ -98,7 +89,7 @@ export const SMT4_COMPENDIUM_CONFIG: CompendiumConfig = {
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: SMT4_COMPENDIUM_CONFIG }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
   ]
 })
 export class CompendiumModule { }

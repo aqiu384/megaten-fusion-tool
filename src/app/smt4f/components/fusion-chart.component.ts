@@ -26,8 +26,8 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   title: string;
   subscriptions: Subscription[] = [];
   normChart: FusionChart;
-  langEn: boolean;
   hasLightDark: boolean;
+  langEn = true;
 
   constructor(
     private changeDetectorRef: ChangeDetectorRef,
@@ -35,7 +35,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.langEn = this.fusionDataService.compConfig.lang !== 'ja';
+    this.langEn = this.fusionDataService.compConfig.lang === 'en';
     this.hasLightDark = !this.fusionDataService.compConfig.appCssClasses.includes('sh2');
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(fusionChart => {

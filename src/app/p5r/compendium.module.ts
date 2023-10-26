@@ -24,14 +24,6 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
-  }
-  return result;
-}
-
 const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
 const inheritTypes: { [elem: string]: number } = {};
 const races = [];
@@ -73,16 +65,16 @@ for (const skills of [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON]) {
   }
 }
 
-export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
+const compendiumConfig: CompendiumConfig = {
   appTitle: 'Persona 5 Royal',
 
   races,
-  raceOrder: getEnumOrder(races),
+  raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
   baseStats: COMP_CONFIG_JSON.baseStats,
   skillElems,
   resistElems: COMP_CONFIG_JSON.resistElems,
   resistCodes: COMP_CONFIG_JSON.resistCodes,
-  elemOrder: getEnumOrder(skillElems),
+  elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
   inheritTypes,
   inheritElems: INHERIT_TYPES_JSON.elems,
 
@@ -113,7 +105,7 @@ export const P5R_COMPENDIUM_CONFIG: CompendiumConfig = {
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: P5R_COMPENDIUM_CONFIG }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
   ]
 })
 export class CompendiumModule { }

@@ -15,12 +15,12 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class CompendiumComponent {
   appCssClasses = ['smt4', 'smt4f'];
-  langEn: boolean;
   otherLinks: { title: string, link: string }[];
+  langEn = true;
 
   constructor(fusionDataService: FusionDataService) {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
-    this.langEn = fusionDataService.compConfig.lang !== 'ja';
+    this.langEn = fusionDataService.compConfig.lang === 'en';
     this.otherLinks = [{ title: this.langEn ? 'Recipe Generator' : '合体レシピ', link: 'recipes' }];
   }
 }

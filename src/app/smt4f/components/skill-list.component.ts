@@ -19,7 +19,7 @@ import { CompendiumConfig } from '../models';
 })
 export class SkillListContainerComponent extends SLCC {
   compConfig: CompendiumConfig;
-  langEn: boolean;
+  langEn = true;
 
   constructor(
     title: Title,
@@ -30,7 +30,7 @@ export class SkillListContainerComponent extends SLCC {
     this.appName = `List of Skills - ${fusionDataService.appName}`;
 
     this.compConfig = fusionDataService.compConfig;
-    this.langEn = this.compConfig.lang !== 'ja';
+    this.langEn = this.compConfig.lang === 'en';
     this.appName = (this.langEn ? 'List of Skills - ' : ' スキル一覧 ') + fusionDataService.appName;
 
     this.compConfig = fusionDataService.compConfig;

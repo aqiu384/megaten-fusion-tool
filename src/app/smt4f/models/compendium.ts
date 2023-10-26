@@ -32,7 +32,7 @@ export class Compendium implements ICompendium {
 
     const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(100);
     const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
-    const langEn = this.compConfig.lang !== 'ja';
+    const langEn = this.compConfig.lang === 'en';
     const ailEffect = langEn ? 'Innate resistance' : '';
     const ailTarget = langEn ? 'Self' : '自身';
     const ailLvls = langEn ? { 1125: 'Weak ', 50: 'Resist ', 0: 'Null ' } : { 1125: '弱', 50: '強', 0: '無' };

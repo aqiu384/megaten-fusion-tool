@@ -31,7 +31,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
     const isSh2 = compConfig.appCssClasses.includes('sh2');
-    this.langEn = compConfig.lang !== 'ja';
+    this.langEn = compConfig.lang === 'en';
     this.appName = (this.langEn ? 'Recipe Generator - ' : '合体レシピ ') + fusionDataService.appName;
     this.maxSkills = isSh2 ? 6 : 8;
     this.recipeConfig = {

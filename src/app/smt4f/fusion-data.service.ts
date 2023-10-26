@@ -26,7 +26,7 @@ export class FusionDataService implements IFusionDataService {
 
   constructor(@Inject(COMPENDIUM_CONFIG) config: CompendiumConfig, router: Router) {
     this.compConfig = !router.url.includes('/ja/') ? config : translateCompConfig(config);
-    this.appName =  this.compConfig.appTitle + (this.compConfig.lang !== 'ja' ? ' Fusion Calculator' : ' 合体アプリ');
+    this.appName =  this.compConfig.appTitle + (this.compConfig.lang === 'en' ? ' Fusion Calculator' : ' 合体アプリ');
 
     this._compendium = new Compendium(this.compConfig);
     this._compendium$ = new BehaviorSubject(this._compendium);

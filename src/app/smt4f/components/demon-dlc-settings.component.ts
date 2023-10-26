@@ -26,6 +26,6 @@ export class DemonDlcSettingsContainerComponent extends DDSCC {
   ) {
     super(changeDetector, fusionDataService);
     this.appTitle = fusionDataService.appName;
-    this.langEn = fusionDataService.compConfig.lang !== 'ja';
+    this.langEn = fusionDataService.compConfig.lang === 'en';
   }
 }

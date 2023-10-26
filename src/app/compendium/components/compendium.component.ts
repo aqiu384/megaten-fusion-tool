@@ -107,7 +107,7 @@ export class CompendiumComponent implements OnInit, OnDestroy {
       this.route.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
         this.isChart = data.fusionTool === 'chart';
-        this.langEn = data.lang !== 'ja';
+        this.langEn = !data.lang;
       }));
 
     setTimeout(() => this.stickyTable.nextEdges());
