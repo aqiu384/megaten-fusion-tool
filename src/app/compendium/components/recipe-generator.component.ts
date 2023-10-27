@@ -223,12 +223,10 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.learnedBy = { '-': [this.blankDemon] };
 
     for (const demon of this.compendium.allDemons) {
-      if (!demon.isEnemy && (demon.fusion === 'normal' || demon.fusion === 'special')) {
+      if (!demon.isEnemy && demon.fusion !== 'party' && demon.fusion !== 'enemy') {
         if (!this.demons[demon.race]) { this.demons[demon.race] = []; }
         this.demons[demon.race].push(demon);
-      }
 
-      if (!demon.isEnemy && demon.fusion !== 'party') {
         for (const sname of Object.keys(demon.skills)) {
           if (!this.learnedBy[sname]) { this.learnedBy[sname] = []; }
           this.learnedBy[sname].push(demon);
@@ -262,6 +260,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     const excludeElems: string[] = [];
     const { inheritElems } = this.recipeConfig;
     const innateSkills = Object.entries(demon.skills)
+      .slice(0, this.internalMaxSkills)
       .filter(s => s[1] === 0)
       .map(s => this.compendium.getSkill(s[0]));
 
