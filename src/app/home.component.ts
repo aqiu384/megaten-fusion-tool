@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
     <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
       <tr *ngFor="let tool of fusionTools">
         <th [routerLink]="'../' + tool.abbr" class="nav" routerLinkActive="active">
-          <a [routerLink]="'../' + tool.abbr">{{ tool.game }}</a>
+          <a [routerLink]="'../' + tool.abbr + (tool.game.includes('Persona') ? '/personas' : '/demons')">{{ tool.game }}</a>
         </th>
       </tr>
     </table>

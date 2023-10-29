@@ -10,14 +10,15 @@ CONFIG = {
 }
 
 HTML_FILES = {
-    'fissions.html': None
+    '.html': 'demon-index.html',
+    '/fissions.html': 'demon-fissions.html'
 }
 
 BASE_PATH = '../gh-pages/{}/{}s'.format(CONFIG['GABBR'], CONFIG['DTYPE'])
 DEMON_DIRS = sorted(os.listdir(BASE_PATH))
 
-for fname in HTML_FILES:
-    with open('demon-{}'.format(fname)) as htmlfile:
+for fname, template in HTML_FILES.items():
+    with open(template) as htmlfile:
         template = htmlfile.read()
         template = re.sub('\n\s*', '', template)
 
@@ -29,7 +30,7 @@ for fname in HTML_FILES:
 with open('recipes.txt') as txtfile:
     for recipes in txtfile:
         demon, _  = recipes.split(' = ')
-        demon_path = '{}/{}/'.format(BASE_PATH, demon)
+        demon_path = '{}/{}'.format(BASE_PATH, demon)
         config = { 'DEMON': demon, 'RECIPES': recipes.strip() }
 
         print(demon)
