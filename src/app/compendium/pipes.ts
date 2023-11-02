@@ -16,7 +16,7 @@ export class SkillCostToStringPipe implements PipeTransform {
 @Pipe({ name: 'skillLevelToString' })
 export class SkillLevelToStringPipe implements PipeTransform {
   transform(value: number): string {
-    if (value <= 0) { return 'Innate'; }
+    if (value < 2) { return 'Innate'; }
     if (value < 120) { return value.toString(); }
     return String.fromCharCode(Math.floor(value / 100) + 32) + String.fromCharCode(value % 100 + 32);
   }
@@ -25,7 +25,7 @@ export class SkillLevelToStringPipe implements PipeTransform {
 @Pipe({ name: 'skillLevelToShortString' })
 export class SkillLevelToShortStringPipe implements PipeTransform {
   transform(value: number): string {
-    if (value <= 0) { return ''; }
+    if (value < 2) { return ''; }
     if (value < 120) { return `(${value.toString()})`; }
     return '(' + String.fromCharCode(Math.floor(value / 100) + 32) + String.fromCharCode(value % 100 + 32) + ')';
   }

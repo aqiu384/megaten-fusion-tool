@@ -81,7 +81,7 @@ export class DemonSkillsComponent implements OnInit, OnChanges {
 
     if (this.elemOrder) {
       this.skills.sort((a, b) =>
-        (a.level - b.level) * 20 +
+        (a.level - b.level) * 200 +
         this.elemOrder[a.element] - this.elemOrder[b.element]
       );
     }
