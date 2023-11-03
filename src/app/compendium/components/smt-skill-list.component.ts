@@ -51,6 +51,7 @@ export class SmtSkillListRowComponent {
   @Input() isPersona = false;
   @Input() hasTransferTitle = false;
   @Input() hasSkillCards = false;
+  @Input() skillLvl = -1;
   @Input() data: Skill;
 }
 

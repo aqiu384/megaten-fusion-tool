@@ -44,6 +44,8 @@
 
 ## <a name="smt3"></a>[Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3)
 ### Data Sources
+* *Shin Megami Tensei III: Nocturne Maniax Ally Demon Compendium* (ISBN-13: 9784797326789)
+* *Shin Megami Tensei III: Nocturne HD Remaster Official Perfect Guide* (ISBN-13: 9784047335141)
 * http://www.phpsimplicity.com/heretic/
 * https://pathshower.wordpress.com/smt/nocturne/
 * http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/shin_dds3/
@@ -83,7 +85,6 @@
 
 ### Data Sources
 * http://gamers-high.com/megami4-final/
-* https://megamitensei.fandom.com/wiki/List_of_Shin_Megami_Tensei_IV_Apocalypse_Skills
 
 ### Skill Affinities
 | Rank | Attack              | Ailment             | Recovery             | Support   |
@@ -266,12 +267,10 @@
 ## <a name="krch"></a>[Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch)
 ### Data Sources
 * https://kaerukyo.net/dds_database/devil.php?title=22
-* https://megamitensei.fandom.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._The_Soulless_Army_Skills
 
 ## <a name="krao"></a>[Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao)
 ### Data Sources
 * https://www31.atwiki.jp/abaddon/pages/37.html
-* https://megamitensei.fandom.com/wiki/List_of_Devil_Summoner:_Raidou_Kuzunoha_vs._King_Abaddon_Skills
 
 ## <a name="p1"></a>[Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/p1)
 ### Data Sources
@@ -298,7 +297,10 @@
 * Skill cards added
 
 ### Data Sources
-* https://megamitensei.fandom.com/wiki/List_of_Persona_3_FES_Personas
+* *Persona 3 FES Perfect Guide* (ISBN-13: 9784757735767)
+* *Persona 3 Portable Official Perfect Guide* (ISBN-13: 9784047262935)
+* http://gamekouryaku.com/peru3/
+* http://game.daihouko.com/persona/3fes/
 * https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404
 
 ### Skill List
@@ -311,6 +313,8 @@
 * Skill cards added
 
 ### Data Sources
+* *Persona 4 The Golden The Complete Guide* (ISBN-13: 9784048866637)
+* https://p4g.gamekouryaku-no-ki.com/
 * https://gamefaqs.gamespot.com/ps2/945498-shin-megami-tensei-persona-4/faqs/53550
 * https://gamefaqs.gamespot.com/ps2/945498-shin-megami-tensei-persona-4/faqs/55266
 * https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/64587
@@ -331,6 +335,7 @@
 * [Max Confidant Walkthrough](https://aqiu384.github.io/p5r-walkthrough/introduction)
 
 ### Data Sources
+* *Persona 5 Official Complete Guide* (ISBN-13: 9784048924160)
 * http://spwiki.net/persona5/
 * http://bozumemo.blogspot.com/p/5.html
 * https://wikiwiki.jp/persona5r/
@@ -373,7 +378,6 @@
 ## <a name="mjn1"></a>[Majin Tensei](https://aqiu384.github.io/megaten-fusion-tool/mjn1)
 ### Data Sources
 * http://ifs.nog.cc/fool-est.hp.infoseek.co.jp/majin/majin1/index.html
-* https://megamitensei.fandom.com/wiki/List_of_Majin_Tensei_Demons
 
 ## <a name="mjn2"></a>[Majin Tensei II: Spiral Nemesis](https://aqiu384.github.io/megaten-fusion-tool/mjn2)
 ### Data Sources

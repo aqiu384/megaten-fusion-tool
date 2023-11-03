@@ -182,7 +182,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     for (const [skill, demon] of Object.entries(recipe.skills)) {
       if (!skillRef[demon]) { skillRef[demon] = []; }
       const slvl = this.compendium.getDemon(demon).skills[skill];
-      skillRef[demon].push(skill + (slvl ? ` (${slvl})` : ''));
+      skillRef[demon].push(skill + (slvl >= 2 ? ` (${slvl})` : ''));
     }
 
     this.recipe = recipe;
@@ -199,7 +199,7 @@ export class RecipeGeneratorComponent implements OnChanges {
       .filter(s => s[1] < 2000)
       .sort((a, b) => a[1] - b[1])
     ) {
-      this.resultSkills.push(skill + (slvl ? ` (${slvl})` : ''));
+      this.resultSkills.push(skill + (slvl >= 2 ? ` (${slvl})` : ''));
     }
   }
 

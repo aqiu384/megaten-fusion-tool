@@ -29,6 +29,7 @@ import { Compendium, Skill } from '../models';
           [hasInherit]="hasInherit"
           [hasLearned]="false"
           [hasLvl]="hasLvl"
+          [skillLvl]="data.level"
           [data]="data"
           [ngClass]="{
             extra: data.rank > 70 && data.rank < 90,

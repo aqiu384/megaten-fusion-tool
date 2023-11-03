@@ -7,13 +7,13 @@
     "race": "Devil",
     "resists": "---nw--wn",
     "skills": {
-      "Absorb Strike": 76,
-      "Evil Smile": 0,
-      "High Counter": 0,
-      "Null Pierce": 75,
-      "Null Slash": 74,
+      "Evil Smile": 0.1,
+      "Weary Thrust": 0.2,
+      "High Counter": 0.3,
       "Null Strike": 73,
-      "Weary Thrust": 0
+      "Null Slash": 74,
+      "Null Pierce": 75,
+      "Absorb Strike": 76
     },
     "stats": [49, 53, 50, 35, 47]
   },
@@ -24,12 +24,12 @@
     "race": "Death",
     "resists": "-------wr",
     "skills": {
+      "Evil Touch": 0.1,
+      "Spirit Drain": 0.2,
       "Die for Me!": 59,
-      "Evil Touch": 0,
       "Marakunda": 60,
-      "Mudo Boost": 62,
       "Repel Dark": 61,
-      "Spirit Drain": 0
+      "Mudo Boost": 62
     },
     "stats": [31, 50, 27, 42, 39]
   },
@@ -41,14 +41,14 @@
     "race": "Empress",
     "resists": "sss-----w",
     "skills": {
-      "Mabufudyne": 0,
-      "Makarakarn": 0,
-      "Regenerate 3": 0,
-      "Repel Pierce": 90,
+      "Regenerate 3": 0.1,
+      "Makarakarn": 0.2,
+      "Mabufudyne": 0.3,
       "Repel Slash": 88,
-      "Repel Strike": 89
+      "Repel Strike": 89,
+      "Repel Pierce": 90
     },
-    "stats": [64, 61, 52, 60, 53]
+    "stats": [53, 64, 61, 52, 60]
   },
   "Ananta": {
     "cardlvl": 83,
@@ -57,13 +57,13 @@
     "race": "Hierophant",
     "resists": "----s-wn-",
     "skills": {
-      "Counterstrike": 44,
-      "Dekunda": 0,
+      "Hamaon": 0.1,
+      "Dekunda": 0.2,
       "Diarahan": 43,
+      "Counterstrike": 44,
       "Evade Pierce": 45,
-      "Hamaon": 0,
-      "Infinity": 3883,
-      "Invigorate 1": 46
+      "Invigorate 1": 46,
+      "Infinity": 3883
     },
     "stats": [27, 31, 32, 16, 24]
   },
@@ -74,12 +74,12 @@
     "race": "Justice",
     "resists": "-------sw",
     "skills": {
-      "Charmdi": 8,
-      "Garu": 0,
+      "Garu": 0.1,
+      "Patra": 0.2,
+      "Sukukaja": 5,
       "Hama": 7,
-      "Justice": 3883,
-      "Patra": 0,
-      "Sukukaja": 5
+      "Charmdi": 8,
+      "Justice": 3883
     },
     "stats": [4, 5, 3, 4, 3]
   },
@@ -90,26 +90,26 @@
     "race": "Judgement",
     "resists": "-------ss",
     "skills": {
-      "Mahamaon": 0,
+      "Mahamaon": 0.1,
+      "Mamudoon": 0.2,
       "Makarakarn": 61,
-      "Mamudoon": 0,
-      "Null Elec": 64,
       "Null Ice": 62,
+      "Null Elec": 64,
       "Regenerate 3": 66
     },
     "stats": [41, 50, 38, 37, 36]
   },
   "Apsaras": {
-    "cardlvl": 3,
+    "cardlvl": 4,
     "inherits": "ice",
     "lvl": 3,
     "race": "Priestess",
     "resists": "w---s----",
     "skills": {
-      "Bufu": 0,
-      "Cadenza": 3883,
+      "Bufu": 0.1,
       "Posumudi": 4,
-      "Sukunda": 5
+      "Sukunda": 5,
+      "Cadenza": 3883
     },
     "stats": [3, 4, 3, 2, 4]
   },
@@ -120,12 +120,12 @@
     "race": "Chariot",
     "resists": "-s----w--",
     "skills": {
-      "Agi": 0,
-      "Bash": 0,
-      "Rakukaja": 0,
+      "Bash": 0.1,
+      "Rakukaja": 0.2,
+      "Agi": 0.3,
       "Rakunda": 7,
-      "Sharp Student": 12,
-      "Sukukaja": 8
+      "Sukukaja": 8,
+      "Sharp Student": 12
     },
     "stats": [6, 4, 6, 4, 5]
   },
@@ -136,13 +136,13 @@
     "race": "Hermit",
     "resists": "-w-n-s-ns",
     "skills": {
+      "Virus Breath": 0.1,
+      "Heat Wave": 0.2,
+      "Auto-Maraku": 0.3,
       "Alertness": 56,
-      "Auto-Maraku": 0,
-      "Heat Wave": 0,
-      "Null Strike": 61,
-      "Repel Ice": 60,
       "Tetrakarn": 58,
-      "Virus Breath": 0
+      "Repel Ice": 60,
+      "Null Strike": 61
     },
     "stats": [38, 46, 47, 28, 30]
   },
@@ -153,14 +153,14 @@
     "race": "Justice",
     "resists": "s-----wsw",
     "skills": {
-      "Cleave": 0,
-      "Hama": 0,
-      "Holy Arrow": 12,
-      "Justice": 3883,
-      "Mazio": 13,
+      "Hama": 0.1,
+      "Sukukaja": 0.2,
+      "Cleave": 0.3,
       "Patra": 11,
+      "Holy Arrow": 12,
+      "Mazio": 13,
       "Sharp Student": 14,
-      "Sukukaja": 0
+      "Justice": 3883
     },
     "stats": [8, 8, 8, 7, 6]
   },
@@ -171,12 +171,12 @@
     "race": "Chariot",
     "resists": "s--s--w--",
     "skills": {
+      "Zan-ei": 0.1,
+      "Rakunda": 0.2,
       "Counter": 21,
-      "Getsu-ei": 24,
-      "Rakunda": 0,
       "Rebellion": 22,
-      "Scarlet Havoc": 3883,
-      "Zan-ei": 0
+      "Getsu-ei": 24,
+      "Scarlet Havoc": 3883
     },
     "stats": [17, 10, 15, 9, 13]
   },
@@ -187,12 +187,12 @@
     "race": "Sun",
     "resists": "---d---rw",
     "skills": {
-      "Agidyne": 0,
-      "Akasha Arts": 0,
-      "Megidolaon": 88,
-      "Spell Master": 91,
+      "Agidyne": 0.1,
+      "Akasha Arts": 0.2,
+      "Unshaken Will": 0.3,
       "Tetrakarn": 87,
-      "Unshaken Will": 0
+      "Megidolaon": 88,
+      "Spell Master": 91
     },
     "stats": [62, 60, 58, 56, 57]
   },
@@ -203,12 +203,12 @@
     "race": "Fortune",
     "resists": "-----wn--",
     "skills": {
-      "Garudyne": 58,
-      "Magarula": 0,
+      "Magarula": 0.1,
+      "Wind Boost": 0.2,
       "Mind Charge": 57,
+      "Garudyne": 58,
       "Resist Elec": 59,
-      "Wind Amp": 60,
-      "Wind Boost": 0
+      "Wind Amp": 60
     },
     "stats": [26, 45, 27, 31, 40]
   },
@@ -219,12 +219,12 @@
     "race": "Hanged",
     "resists": "sss----w-",
     "skills": {
-      "Enduring Soul": 66,
-      "Ghastly Wail": 0,
-      "Megidola": 0,
-      "Recarmdra": 0,
+      "Recarmdra": 0.1,
+      "Ghastly Wail": 0.2,
+      "Megidola": 0.3,
+      "Samarecarm": 61,
       "Repel Light": 62,
-      "Samarecarm": 61
+      "Enduring Soul": 66
     },
     "stats": [40, 48, 50, 38, 26]
   },
@@ -235,13 +235,13 @@
     "race": "Emperor",
     "resists": "---w-n-nw",
     "skills": {
-      "Auto-Maraku": 56,
-      "Counterstrike": 0,
-      "Endure Dark": 57,
-      "Heat Wave": 0,
+      "Heat Wave": 0.1,
+      "Counterstrike": 0.2,
+      "Null Poison": 0.3,
+      "Virus Breath": 54,
       "Invigorate 2": 55,
-      "Null Poison": 0,
-      "Virus Breath": 54
+      "Auto-Maraku": 56,
+      "Endure Dark": 57
     },
     "stats": [40, 36, 30, 28, 29]
   },
@@ -252,11 +252,11 @@
     "race": "Devil",
     "resists": "-n-w-nnwr",
     "skills": {
-      "High Counter": 85,
-      "Magarudyne": 0,
-      "Makarakarn": 0,
-      "Maziodyne": 84,
+      "Magarudyne": 0.1,
+      "Makarakarn": 0.2,
       "Primal Force": 83,
+      "Maziodyne": 84,
+      "High Counter": 85,
       "Victory Cry": 87
     },
     "stats": [53, 62, 56, 55, 54]
@@ -268,12 +268,12 @@
     "race": "Hierophant",
     "resists": "---s-w---",
     "skills": {
-      "Agi": 0,
+      "Agi": 0.1,
+      "Tarukaja": 0.2,
+      "Double Fangs": 0.3,
       "Auto-Tarukaja": 15,
-      "Double Fangs": 0,
       "Maragi": 16,
-      "Rebellion": 17,
-      "Tarukaja": 0
+      "Rebellion": 17
     },
     "stats": [11, 10, 9, 7, 9]
   },
@@ -284,12 +284,12 @@
     "race": "Tower",
     "resists": "--nnw--s-",
     "skills": {
-      "Akasha Arts": 65,
-      "Arms Master": 67,
-      "Diarahan": 64,
-      "Endure": 0,
+      "Maragidyne": 0.1,
+      "Endure": 0.2,
       "Fire Amp": 62,
-      "Maragidyne": 0
+      "Diarahan": 64,
+      "Akasha Arts": 65,
+      "Arms Master": 67
     },
     "stats": [47, 44, 41, 34, 39]
   },
@@ -300,12 +300,12 @@
     "race": "Fool",
     "resists": "---sn--ws",
     "skills": {
-      "Agilao": 0,
-      "Bufula": 0,
+      "Mudo": 0.1,
+      "Agilao": 0.2,
+      "Bufula": 0.3,
       "Marakunda": 35,
-      "Matarukaja": 40,
-      "Mudo": 0,
-      "Trafuri": 37
+      "Trafuri": 37,
+      "Matarukaja": 40
     },
     "stats": [23, 25, 22, 22, 25]
   },
@@ -316,12 +316,12 @@
     "race": "Temperance",
     "resists": "----d---w",
     "skills": {
-      "Deathbound": 0,
+      "Deathbound": 0.1,
+      "Mabufudyne": 0.2,
+      "High Counter": 0.3,
       "Endure": 59,
-      "Fist Master": 62,
-      "High Counter": 0,
       "Ice Amp": 60,
-      "Mabufudyne": 0
+      "Fist Master": 63
     },
     "stats": [50, 36, 33, 47, 30]
   },
@@ -333,12 +333,12 @@
     "race": "Moon",
     "resists": "n-----w-n",
     "skills": {
-      "Blade of Fury": 0,
+      "Blade of Fury": 0.1,
+      "Null Slash": 0.2,
       "Deathbound": 60,
-      "Invigorate 2": 64,
+      "Repel Wind": 62,
       "Megidola": 63,
-      "Null Slash": 0,
-      "Repel Wind": 62
+      "Invigorate 2": 64
     },
     "stats": [46, 47, 32, 36, 34]
   },
@@ -350,11 +350,11 @@
     "race": "Tower",
     "resists": "s-s--w---",
     "skills": {
-      "Absorb Strike": 91,
-      "Arms Master": 92,
-      "Invigorate 3": 0,
+      "Vorpal Blade": 0.1,
+      "Invigorate 3": 0.2,
       "Primal Force": 89,
-      "Vorpal Blade": 0
+      "Absorb Strike": 91,
+      "Arms Master": 92
     },
     "stats": [65, 56, 62, 54, 59]
   },
@@ -365,12 +365,12 @@
     "race": "Chariot",
     "resists": "-s-sw----",
     "skills": {
-      "Agi": 0,
-      "Auto-Tarukaja": 14,
-      "Bewilder": 0,
-      "Cleave": 0,
+      "Cleave": 0.1,
+      "Agi": 0.2,
+      "Bewilder": 0.3,
+      "Sonic Punch": 11,
       "Rakunda": 12,
-      "Sonic Punch": 11
+      "Auto-Tarukaja": 14
     },
     "stats": [8, 4, 9, 8, 5]
   },
@@ -381,11 +381,11 @@
     "race": "Fortune",
     "resists": "---w--n--",
     "skills": {
-      "Charmdi": 0,
-      "Garula": 0,
-      "Magaru": 0,
-      "Me Patra": 36,
+      "Magaru": 0.1,
+      "Garula": 0.2,
+      "Charmdi": 0.3,
       "Null Distress": 35,
+      "Me Patra": 36,
       "Wind Boost": 38
     },
     "stats": [17, 26, 19, 18, 26]
@@ -397,13 +397,13 @@
     "race": "Tower",
     "resists": "--s--s--w",
     "skills": {
-      "Matarukaja": 0,
+      "Torrent Shot": 0.1,
+      "Matarukaja": 0.2,
       "Mazionga": 41,
       "Power Charge": 43,
-      "Shadow Hound": 3883,
       "Survive Dark": 44,
-      "Torrent Shot": 0,
-      "Vile Assault": 45
+      "Vile Assault": 45,
+      "Shadow Hound": 3883
     },
     "stats": [33, 28, 30, 23, 25]
   },
@@ -414,11 +414,11 @@
     "race": "Lovers",
     "resists": "---s-s--n",
     "skills": {
-      "Auto-Maraku": 0,
-      "Bow Master": 73,
+      "Samarecarm": 0.1,
+      "Auto-Maraku": 0.2,
+      "Myriad Arrows": 0.3,
       "Megidola": 70,
-      "Myriad Arrows": 0,
-      "Samarecarm": 0,
+      "Bow Master": 73,
       "Spell Master": 75
     },
     "stats": [49, 55, 40, 42, 50]
@@ -430,12 +430,12 @@
     "race": "Hierophant",
     "resists": "-s-----nw",
     "skills": {
-      "Diarahan": 0,
-      "Growth 3": 0,
-      "Hama Boost": 59,
-      "Hamaon": 0,
+      "Hamaon": 0.1,
+      "Diarahan": 0.2,
+      "Growth 3": 0.3,
+      "Samsara": 56,
       "Null Dark": 58,
-      "Samsara": 56
+      "Hama Boost": 59
     },
     "stats": [32, 44, 36, 29, 38]
   },
@@ -446,13 +446,13 @@
     "race": "Fool",
     "resists": "---nw----",
     "skills": {
-      "Best Friends": 3883,
+      "Stagnant Air": 0.1,
+      "Matarunda": 0.2,
+      "Megido": 0.3,
       "Evade Ice": 46,
       "Marakukaja": 48,
-      "Matarunda": 0,
-      "Megido": 0,
       "Resist Ice": 50,
-      "Stagnant Air": 0
+      "Best Friends": 3883
     },
     "stats": [25, 35, 25, 26, 28]
   },
@@ -463,12 +463,12 @@
     "race": "Moon",
     "resists": "ss---sw--",
     "skills": {
+      "Mazionga": 0.1,
+      "Mind Charge": 0.2,
+      "Ziodyne": 50,
       "Heat Wave": 51,
-      "Mazionga": 0,
-      "Mind Charge": 0,
-      "Regenerate 2": 53,
       "Resist Wind": 52,
-      "Ziodyne": 50
+      "Regenerate 2": 53
     },
     "stats": [30, 41, 26, 30, 36]
   },
@@ -479,10 +479,10 @@
     "race": "Justice",
     "resists": "-----s-nw",
     "skills": {
+      "Hamaon": 0.1,
+      "Infuriate": 0.2,
       "Endure Dark": 45,
       "Hama Boost": 46,
-      "Hamaon": 0,
-      "Infuriate": 0,
       "Mazionga": 47,
       "Resist Dark": 49
     },
@@ -495,12 +495,12 @@
     "race": "Tower",
     "resists": "--snw--w-",
     "skills": {
-      "Cool Breeze": 37,
-      "Cruel Attack": 34,
-      "Dodge Ice": 33,
+      "Twin Shot": 0.1,
+      "Revolution": 0.2,
       "Maragion": 32,
-      "Revolution": 0,
-      "Twin Shot": 0
+      "Dodge Ice": 33,
+      "Cruel Attack": 34,
+      "Cool Breeze": 37
     },
     "stats": [28, 19, 23, 22, 18]
   },
@@ -512,12 +512,12 @@
     "race": "Hierophant",
     "resists": "---n--w--",
     "skills": {
+      "Maragi": 0.1,
+      "Double Fangs": 0.2,
       "Auto-Sukukaja": 24,
-      "Dodge Wind": 28,
-      "Double Fangs": 0,
+      "Sharp Student": 25,
       "Getsu-ei": 27,
-      "Maragi": 0,
-      "Sharp Student": 25
+      "Dodge Wind": 28
     },
     "stats": [18, 18, 15, 12, 13]
   },
@@ -528,13 +528,13 @@
     "race": "Emperor",
     "resists": "---ws----",
     "skills": {
+      "Bufu": 0.1,
+      "Bash": 0.2,
+      "Tarukaja": 0.3,
       "Auto-Sukukaja": 9,
-      "Bash": 0,
-      "Best Friends": 3883,
-      "Bufu": 0,
       "Poisma": 10,
       "Posumudi": 11,
-      "Tarukaja": 0
+      "Best Friends": 3883
     },
     "stats": [5, 5, 8, 6, 4]
   },
@@ -546,9 +546,9 @@
     "race": "Fortune",
     "resists": "---w--s--",
     "skills": {
-      "Bufu": 0,
-      "Dodge Wind": 0,
-      "Garu": 0,
+      "Garu": 0.1,
+      "Bufu": 0.2,
+      "Dodge Wind": 0.3,
       "Magaru": 18,
       "Rakukaja": 19,
       "Wind Boost": 22
@@ -563,12 +563,12 @@
     "race": "Empress",
     "resists": "----r--rw",
     "skills": {
-      "Bufudyne": 0,
-      "Hama Boost": 0,
+      "Bufudyne": 0.1,
+      "Mahamaon": 0.2,
+      "Hama Boost": 0.3,
       "Mabufudyne": 64,
-      "Mahamaon": 0,
-      "Myriad Arrows": 68,
-      "Repel Dark": 66
+      "Repel Dark": 66,
+      "Myriad Arrows": 68
     },
     "stats": [39, 45, 31, 40, 38]
   },
@@ -579,13 +579,13 @@
     "race": "Star",
     "resists": "------d-w",
     "skills": {
-      "Alertness": 0,
-      "Deathbound": 0,
-      "Endure": 64,
-      "High Counter": 62,
+      "Deathbound": 0.1,
+      "Power Charge": 0.2,
+      "Alertness": 0.3,
       "Magarudyne": 61,
-      "Power Charge": 0,
-      "Wind Amp": 63
+      "High Counter": 62,
+      "Wind Amp": 63,
+      "Endure": 64
     },
     "stats": [49, 35, 39, 32, 40]
   },
@@ -596,13 +596,13 @@
     "race": "Priestess",
     "resists": "---wn----",
     "skills": {
+      "Mabufu": 0.1,
+      "Charmdi": 0.2,
+      "Media": 0.3,
       "Bufula": 27,
-      "Charmdi": 0,
+      "Tentarafoo": 28,
       "Diarama": 30,
-      "Mabufu": 0,
-      "Media": 0,
-      "Panic Boost": 31,
-      "Tentarafoo": 28
+      "Panic Boost": 31
     },
     "stats": [12, 22, 16, 17, 18]
   },
@@ -613,13 +613,13 @@
     "race": "Star",
     "resists": "ss---wsrw",
     "skills": {
+      "Magarudyne": 0.1,
+      "Mediarama": 0.2,
+      "Arrow Rain": 0.3,
       "Amrita": 68,
-      "Arrow Rain": 0,
       "High Counter": 69,
-      "Magarudyne": 0,
-      "Mediarama": 0,
-      "Raktapaksha": 3883,
-      "Repel Wind": 70
+      "Repel Wind": 70,
+      "Raktapaksha": 3883
     },
     "stats": [47, 42, 35, 53, 41]
   },
@@ -630,28 +630,28 @@
     "race": "Temperance",
     "resists": "-s--sw---",
     "skills": {
-      "Auto-Rakukaja": 0,
-      "Bufula": 0,
-      "Dekunda": 32,
+      "Bufula": 0.1,
+      "Auto-Rakukaja": 0.2,
+      "Swift Strike": 30,
       "Me Patra": 31,
-      "Resist Strike": 34,
-      "Swift Strike": 30
+      "Dekunda": 32,
+      "Resist Strike": 34
     },
     "stats": [19, 22, 26, 12, 22]
   },
   "Girimehkala": {
-    "cardlvl": 47,
+    "cardlvl": 49,
     "inherits": "slash",
     "lvl": 42,
     "race": "Moon",
     "resists": "r-----ww-",
     "skills": {
-      "Endure Light": 48,
+      "Mighty Swing": 0.1,
+      "Marakunda": 0.2,
+      "Virus Breath": 43,
       "Mamudoon": 45,
-      "Marakunda": 0,
-      "Mighty Swing": 0,
       "Survive Light": 46,
-      "Virus Breath": 43
+      "Endure Light": 48
     },
     "stats": [32, 30, 24, 28, 29]
   },
@@ -662,12 +662,12 @@
     "race": "Moon",
     "resists": "------sws",
     "skills": {
-      "Auto-Tarukaja": 0,
-      "Dodge Strike": 19,
-      "Getsu-ei": 0,
+      "Getsu-ei": 0.1,
+      "Auto-Tarukaja": 0.2,
       "Growth 1": 17,
-      "Poison Mist": 20,
       "Raging Tiger": 18,
+      "Dodge Strike": 19,
+      "Poison Mist": 20,
       "Raktapaksha": 3883
     },
     "stats": [13, 9, 12, 13, 9]
@@ -679,12 +679,12 @@
     "race": "Strength",
     "resists": "-----sws-",
     "skills": {
-      "Blade of Fury": 43,
-      "Counter": 0,
-      "Evade Slash": 41,
+      "Getsu-ei": 0.1,
+      "Counter": 0.2,
+      "Recarm": 0.3,
       "Fatal End": 38,
-      "Getsu-ei": 0,
-      "Recarm": 0,
+      "Evade Slash": 41,
+      "Blade of Fury": 43,
       "Resist Slash": 44
     },
     "stats": [26, 23, 20, 22, 27]
@@ -696,13 +696,13 @@
     "race": "Empress",
     "resists": "----r---s",
     "skills": {
-      "Arrow Rain": 60,
-      "Auto-Masuku": 62,
-      "Bufudyne": 0,
-      "Diarahan": 0,
-      "Marakukaja": 0,
+      "Diarahan": 0.1,
+      "Bufudyne": 0.2,
+      "Marakukaja": 0.3,
       "Mediarahan": 59,
-      "Samarecarm": 61
+      "Arrow Rain": 60,
+      "Samarecarm": 61,
+      "Auto-Masuku": 62
     },
     "stats": [35, 41, 31, 35, 36]
   },
@@ -713,13 +713,13 @@
     "race": "Hierophant",
     "resists": "-----sws-",
     "skills": {
-      "Apt Pupil": 37,
-      "Dodge Slash": 0,
-      "Elec Boost": 34,
-      "Elec Break": 36,
+      "Zionga": 0.1,
+      "Dodge Slash": 0.2,
       "Fatal End": 33,
+      "Elec Boost": 34,
       "Null Shock": 35,
-      "Zionga": 0
+      "Elec Break": 36,
+      "Apt Pupil": 37
     },
     "stats": [19, 26, 26, 13, 16]
   },
@@ -728,13 +728,13 @@
     "inherits": "light",
     "lvl": 63,
     "race": "Sun",
-    "resists": "----w--nw",
+    "resists": "----n--nw",
     "skills": {
+      "Mahamaon": 0.1,
+      "Mediarahan": 0.2,
+      "Growth 3": 0.3,
       "Auto-Masuku": 65,
       "Bufudyne": 67,
-      "Growth 3": 0,
-      "Mahamaon": 0,
-      "Mediarahan": 0,
       "Repel Dark": 68
     },
     "stats": [49, 50, 33, 44, 39]
@@ -746,14 +746,14 @@
     "race": "Devil",
     "resists": "---nw--wn",
     "skills": {
-      "Agilao": 0,
-      "Dreamfest": 3883,
-      "Evil Smile": 0,
-      "Fire Break": 38,
-      "Life Drain": 0,
+      "Life Drain": 0.1,
+      "Evil Smile": 0.2,
+      "Agilao": 0.3,
       "Maragion": 35,
+      "Stagnant Air": 36,
       "Spirit Drain": 37,
-      "Stagnant Air": 36
+      "Fire Break": 38,
+      "Dreamfest": 3883
     },
     "stats": [21, 30, 20, 21, 25]
   },
@@ -764,12 +764,12 @@
     "race": "Hanged",
     "resists": "-----s--w",
     "skills": {
-      "Assault Dive": 0,
-      "Foul Breath": 14,
-      "Media": 13,
-      "Poisma": 0,
+      "Poisma": 0.1,
+      "Assault Dive": 0.2,
+      "Zio": 0.3,
       "Poison Boost": 11,
-      "Zio": 0
+      "Media": 13,
+      "Foul Breath": 14
     },
     "stats": [6, 11, 10, 6, 4]
   },
@@ -781,14 +781,14 @@
     "race": "Magician",
     "resists": "---wn----",
     "skills": {
-      "Bufu": 0,
+      "Bufu": 0.1,
+      "Pulinpa": 0.2,
+      "Re Patra": 0.3,
+      "Sonic Punch": 10,
       "Ice Boost": 11,
-      "Jack Brothers": 3883,
-      "King and I": 3883,
       "Mabufu": 13,
-      "Pulinpa": 0,
-      "Re Patra": 0,
-      "Sonic Punch": 10
+      "Jack Brothers": 3883,
+      "King and I": 3883
     },
     "stats": [5, 8, 8, 4, 6]
   },
@@ -800,12 +800,12 @@
     "race": "Sun",
     "resists": "---s-wdnw",
     "skills": {
+      "Garudyne": 0.1,
+      "Growth 3": 0.2,
+      "Null Panic": 0.3,
       "Amrita": 57,
-      "Garudyne": 0,
-      "Growth 3": 0,
-      "Magarudyne": 60,
-      "Null Panic": 0,
-      "Repel Elec": 59
+      "Repel Elec": 59,
+      "Magarudyne": 60
     },
     "stats": [35, 40, 31, 44, 39]
   },
@@ -816,13 +816,13 @@
     "race": "Strength",
     "resists": "s-----s-w",
     "skills": {
-      "Auto-Sukukaja": 0,
-      "Endure Dark": 36,
-      "Evade Slash": 34,
+      "Zan-ei": 0.1,
+      "Sukunda": 0.2,
+      "Auto-Sukukaja": 0.3,
       "Revolution": 31,
-      "Sukunda": 0,
       "Survive Dark": 32,
-      "Zan-ei": 0
+      "Evade Slash": 34,
+      "Endure Dark": 36
     },
     "stats": [24, 19, 19, 14, 18]
   },
@@ -833,13 +833,13 @@
     "race": "Star",
     "resists": "---ssw-w-",
     "skills": {
-      "Ailment Boost": 55,
-      "Evade Pierce": 0,
+      "Virus Breath": 0.1,
+      "Spirit Drain": 0.2,
+      "Evade Pierce": 0.3,
       "Invigorate 2": 51,
-      "Null Light": 54,
-      "Spirit Drain": 0,
       "Vile Assault": 53,
-      "Virus Breath": 0
+      "Null Light": 54,
+      "Ailment Boost": 55
     },
     "stats": [35, 39, 33, 26, 33]
   },
@@ -850,14 +850,14 @@
     "race": "Strength",
     "resists": "n-----w--",
     "skills": {
-      "Apt Pupil": 0,
+      "Mighty Swing": 0.1,
+      "Apt Pupil": 0.2,
+      "Marakunda": 0.3,
       "Blade of Fury": 51,
-      "High Counter": 54,
-      "Marakunda": 0,
-      "Mighty Swing": 0,
-      "Revolution": 53
+      "Revolution": 53,
+      "High Counter": 54
     },
-    "stats": [38, 27, 30, 31, 28]
+    "stats": [38, 27, 30, 31, 38]
   },
   "Kikuri-Hime": {
     "cardlvl": 57,
@@ -866,12 +866,12 @@
     "race": "Priestess",
     "resists": "---s-----",
     "skills": {
+      "Mediarama": 0.1,
+      "Invigorate 1": 0.2,
+      "Maragion": 0.3,
       "Cool Breeze": 50,
-      "Fire Amp": 53,
-      "Invigorate 1": 0,
-      "Maragion": 0,
-      "Mediarama": 0,
-      "Resist Ice": 52
+      "Resist Ice": 52,
+      "Fire Amp": 53
     },
     "stats": [26, 41, 25, 26, 30]
   },
@@ -882,13 +882,13 @@
     "race": "Emperor",
     "resists": "---wn----",
     "skills": {
-      "Bufula": 0,
-      "Dodge Fire": 0,
-      "Growth 1": 33,
+      "Mabufu": 0.1,
+      "Bufula": 0.2,
+      "Dodge Fire": 0.3,
       "Ice Break": 32,
-      "King and I": 3883,
-      "Mabufu": 0,
-      "Mabufula": 36
+      "Growth 1": 33,
+      "Mabufula": 36,
+      "King and I": 3883
     },
     "stats": [20, 23, 22, 15, 24]
   },
@@ -899,12 +899,12 @@
     "race": "Emperor",
     "resists": "---w-s--s",
     "skills": {
-      "Endure": 52,
-      "Evade Fire": 0,
-      "Heat Wave": 50,
-      "Mediarama": 0,
+      "Mediarama": 0.1,
+      "Evade Fire": 0.2,
+      "Virus Breath": 48,
       "Null Poison": 49,
-      "Virus Breath": 48
+      "Heat Wave": 50,
+      "Endure": 52
     },
     "stats": [31, 37, 30, 23, 24]
   },
@@ -916,13 +916,13 @@
     "race": "Hierophant",
     "resists": "-------n-",
     "skills": {
-      "Maragidyne": 0,
+      "Samarecarm": 0.1,
+      "Maragidyne": 0.2,
+      "Weary Thrust": 0.3,
       "Mediarahan": 63,
-      "Null Pierce": 68,
-      "Null Strike": 66,
       "Null Wind": 65,
-      "Samarecarm": 0,
-      "Weary Thrust": 0
+      "Null Strike": 66,
+      "Null Pierce": 68
     },
     "stats": [46, 48, 53, 27, 38]
   },
@@ -933,12 +933,12 @@
     "race": "Chariot",
     "resists": "-s-w-s---",
     "skills": {
+      "Swift Strike": 0.1,
+      "Kill Rush": 0.2,
+      "Dekaja": 0.3,
       "Counterstrike": 46,
-      "Cruel Attack": 0,
-      "Dekaja": 0,
-      "Gigantic Fist": 47,
-      "Regenerate 1": 48,
-      "Swift Strike": 0
+      "Cruel Attack": 47,
+      "Regenerate 1": 48
     },
     "stats": [35, 24, 31, 21, 25]
   },
@@ -949,12 +949,12 @@
     "race": "Hermit",
     "resists": "-----wn-s",
     "skills": {
-      "Cruel Attack": 45,
-      "Growth 1": 0,
+      "Tentarafoo": 0.1,
+      "Masukunda": 0.2,
+      "Growth 1": 0.3,
       "Growth 2": 43,
-      "Masukunda": 0,
-      "Resist Elec": 47,
-      "Tentarafoo": 0
+      "Cruel Attack": 45,
+      "Resist Elec": 47
     },
     "stats": [26, 27, 29, 30, 18]
   },
@@ -965,11 +965,11 @@
     "race": "Fortune",
     "resists": "-----sn-w",
     "skills": {
-      "Auto-Rakukaja": 27,
-      "Garu": 0,
+      "Garu": 0.1,
+      "Magaru": 0.2,
+      "Re Patra": 0.3,
       "Garula": 26,
-      "Magaru": 0,
-      "Re Patra": 0,
+      "Auto-Rakukaja": 27,
       "Wind Boost": 28
     },
     "stats": [13, 20, 11, 14, 18]
@@ -981,12 +981,12 @@
     "race": "Fortune",
     "resists": "-----wn--",
     "skills": {
+      "Recarm": 0.1,
+      "Garula": 0.2,
+      "Masukukaja": 0.3,
       "Dodge Elec": 47,
-      "Evade Elec": 51,
-      "Garula": 0,
       "Magarula": 50,
-      "Masukukaja": 0,
-      "Recarm": 0
+      "Evade Elec": 51
     },
     "stats": [26, 36, 19, 31, 30]
   },
@@ -997,13 +997,13 @@
     "race": "Empress",
     "resists": "---wn--s-",
     "skills": {
-      "Amrita": 54,
-      "Bufudyne": 51,
-      "Diarahan": 0,
+      "Mabufula": 0.1,
+      "Diarahan": 0.2,
       "Ice Break": 49,
-      "Mabufula": 0,
+      "Bufudyne": 51,
       "Null Dark": 52,
-      "Resist Fire": 53
+      "Resist Fire": 53,
+      "Amrita": 54
     },
     "stats": [25, 39, 24, 28, 32]
   },
@@ -1014,11 +1014,11 @@
     "race": "Hermit",
     "resists": "-w-ns-s-n",
     "skills": {
-      "Agilao": 0,
-      "Bewilder": 0,
+      "Bewilder": 0.1,
+      "Agilao": 0.2,
+      "Raging Tiger": 0.3,
       "Mamudo": 26,
       "Poison Mist": 28,
-      "Raging Tiger": 0,
       "Stagnant Air": 29
     },
     "stats": [15, 20, 12, 18, 17]
@@ -1030,12 +1030,12 @@
     "race": "Empress",
     "resists": "-----s---",
     "skills": {
+      "Media": 0.1,
+      "Me Patra": 0.2,
+      "Diarama": 0.3,
+      "Sexy Dance": 34,
       "Charm Boost": 35,
-      "Diarama": 0,
-      "Me Patra": 0,
-      "Media": 0,
-      "Mediarama": 38,
-      "Sexy Dance": 34
+      "Mediarama": 38
     },
     "stats": [19, 29, 20, 24, 22]
   },
@@ -1047,12 +1047,12 @@
     "race": "Fool",
     "resists": "----s--wn",
     "skills": {
-      "Assault Dive": 0,
-      "Bewilder": 17,
+      "Assault Dive": 0.1,
+      "Pulinpa": 0.2,
+      "Rebellion": 0.3,
+      "Sexy Dance": 14,
       "Panic Boost": 15,
-      "Pulinpa": 0,
-      "Rebellion": 0,
-      "Sexy Dance": 14
+      "Bewilder": 17
     },
     "stats": [11, 9, 11, 4, 8]
   },
@@ -1063,12 +1063,12 @@
     "race": "Devil",
     "resists": "-----s-ws",
     "skills": {
-      "Agi": 0,
-      "Marin Karin": 0,
-      "Mazio": 12,
-      "Mudo": 11,
+      "Marin Karin": 0.1,
+      "Agi": 0.2,
+      "Zio": 0.3,
       "Rakukaja": 9,
-      "Zio": 0
+      "Mudo": 11,
+      "Mazio": 12
     },
     "stats": [4, 10, 6, 6, 7]
   },
@@ -1079,13 +1079,13 @@
     "race": "Devil",
     "resists": "-----dwwr",
     "skills": {
-      "Absorb Wind": 67,
-      "Elec Break": 65,
-      "Fast Retreat": 64,
-      "Makarakarn": 0,
-      "Maziodyne": 0,
+      "Sexy Dance": 0.1,
+      "Maziodyne": 0.2,
+      "Makarakarn": 0.3,
       "Megidola": 63,
-      "Sexy Dance": 0
+      "Fast Retreat": 64,
+      "Elec Break": 65,
+      "Absorb Wind": 67
     },
     "stats": [39, 52, 38, 40, 36]
   },
@@ -1096,12 +1096,12 @@
     "race": "Death",
     "resists": "-------ws",
     "skills": {
-      "Evil Touch": 0,
-      "Fear Boost": 23,
+      "Evil Touch": 0.1,
+      "Sukukaja": 0.2,
+      "Mudo": 0.3,
       "Life Drain": 22,
-      "Mamudo": 24,
-      "Mudo": 0,
-      "Sukukaja": 0
+      "Fear Boost": 23,
+      "Mamudo": 24
     },
     "stats": [12, 20, 14, 12, 11]
   },
@@ -1112,12 +1112,12 @@
     "race": "Fool",
     "resists": "---ws-d-s",
     "skills": {
-      "Apt Pupil": 0,
-      "Bufudyne": 0,
-      "Garudyne": 0,
+      "Apt Pupil": 0.1,
+      "Garudyne": 0.2,
+      "Bufudyne": 0.3,
+      "Stagnant Air": 58,
       "Null Fire": 60,
       "Repel Fire": 62,
-      "Stagnant Air": 58,
       "Trickster": 3883
     },
     "stats": [40, 42, 29, 41, 20]
@@ -1129,13 +1129,13 @@
     "race": "Star",
     "resists": "nnn-w---n",
     "skills": {
-      "Absorb Slash": 93,
-      "Armageddon": 3883,
-      "God's Hand": 0,
-      "Maragidyne": 0,
+      "God's Hand": 0.1,
+      "Maragidyne": 0.2,
       "Morning Star": 91,
       "Salvation": 92,
-      "Victory Cry": 94
+      "Absorb Slash": 93,
+      "Victory Cry": 94,
+      "Armageddon": 3883
     },
     "stats": [64, 63, 61, 57, 58]
   },
@@ -1147,11 +1147,11 @@
     "race": "Tower",
     "resists": "n-------r",
     "skills": {
-      "Enduring Soul": 81,
-      "Mamudoon": 0,
-      "Mudo Boost": 77,
+      "Mamudoon": 0.1,
+      "Tempest Slash": 0.2,
       "Myriad Arrows": 76,
-      "Tempest Slash": 0
+      "Mudo Boost": 77,
+      "Enduring Soul": 81
     },
     "stats": [56, 46, 52, 49, 45]
   },
@@ -1163,13 +1163,13 @@
     "race": "Justice",
     "resists": "-------rw",
     "skills": {
+      "Mahamaon": 0.1,
+      "Mediarahan": 0.2,
+      "Gigantic Fist": 0.3,
       "Auto-Mataru": 60,
-      "Gigantic Fist": 0,
-      "God's Hand": 69,
-      "Mahamaon": 0,
-      "Mediarahan": 0,
+      "Weary Thrust": 64,
       "Repel Dark": 65,
-      "Weary Thrust": 64
+      "God's Hand": 69
     },
     "stats": [50, 46, 43, 36, 31]
   },
@@ -1181,11 +1181,11 @@
     "race": "Judgement",
     "resists": "-------rw",
     "skills": {
-      "Absorb Pierce": 95,
+      "Megidolaon": 0.1,
+      "Regenerate 3": 0.2,
+      "Salvation": 93,
       "Invigorate 3": 94,
-      "Megidolaon": 0,
-      "Regenerate 3": 0,
-      "Salvation": 93
+      "Absorb Pierce": 95
     },
     "stats": [63, 62, 60, 62, 63]
   },
@@ -1197,13 +1197,13 @@
     "race": "Sun",
     "resists": "-s-----rw",
     "skills": {
-      "Auto-Mataru": 0,
-      "Last Judge": 3883,
-      "Mahamaon": 0,
+      "Mahamaon": 0.1,
+      "Auto-Mataru": 0.2,
       "Megidolaon": 78,
+      "Repel Ice": 79,
       "Repel Elec": 80,
       "Repel Fire": 81,
-      "Repel Ice": 79
+      "Last Judge": 3883
     },
     "stats": [51, 57, 50, 51, 50]
   },
@@ -1214,11 +1214,11 @@
     "race": "Judgement",
     "resists": "-----ssrw",
     "skills": {
-      "Heaven's Blade": 77,
+      "Maziodyne": 0.1,
+      "Mediarahan": 0.2,
       "Magarudyne": 74,
-      "Maziodyne": 0,
-      "Mediarahan": 0,
-      "Repel Dark": 75
+      "Repel Dark": 75,
+      "Heaven's Blade": 77
     },
     "stats": [51, 47, 46, 50, 51]
   },
@@ -1229,13 +1229,13 @@
     "race": "Temperance",
     "resists": "----nw-n-",
     "skills": {
-      "Counter": 28,
-      "Dodge Elec": 25,
-      "Double Fangs": 0,
+      "Hama": 0.1,
+      "Double Fangs": 0.2,
+      "Mabufu": 0.3,
       "Eerie Sound": 24,
-      "Hama": 0,
-      "Last Judge": 3883,
-      "Mabufu": 0
+      "Dodge Elec": 25,
+      "Counter": 28,
+      "Last Judge": 3883
     },
     "stats": [17, 20, 17, 11, 13]
   },
@@ -1246,12 +1246,12 @@
     "race": "Death",
     "resists": "------swr",
     "skills": {
-      "Evil Smile": 0,
-      "Ghastly Wail": 48,
+      "Mudoon": 0.1,
+      "Evil Smile": 0.2,
+      "Null Fear": 0.3,
       "Mamudoon": 46,
+      "Ghastly Wail": 48,
       "Mudo Boost": 49,
-      "Mudoon": 0,
-      "Null Fear": 0,
       "Resist Light": 51
     },
     "stats": [31, 37, 34, 22, 29]
@@ -1263,12 +1263,12 @@
     "race": "Empress",
     "resists": "---w-r--r",
     "skills": {
-      "Ailment Boost": 73,
-      "Mamudoon": 0,
+      "Mamudoon": 0.1,
+      "Ziodyne": 0.2,
       "Mudo Boost": 71,
-      "Null Fire": 75,
       "Sexy Dance": 72,
-      "Ziodyne": 0
+      "Ailment Boost": 73,
+      "Null Fire": 75
     },
     "stats": [45, 52, 47, 39, 48]
   },
@@ -1279,14 +1279,14 @@
     "race": "Hermit",
     "resists": "-----s-ws",
     "skills": {
-      "Bewilder": 0,
-      "Dodge Pierce": 21,
-      "Double Fangs": 0,
-      "Eerie Sound": 22,
+      "Double Fangs": 0.1,
+      "Rakukaja": 0.2,
+      "Bewilder": 0.3,
       "Mazio": 19,
-      "Rakukaja": 0
+      "Dodge Pierce": 21,
+      "Eerie Sound": 22
     },
-    "stats": [16, 10, 12, 14, 8]
+    "stats": [14, 10, 12, 14, 8]
   },
   "Nandi": {
     "cardlvl": 43,
@@ -1295,12 +1295,12 @@
     "race": "Star",
     "resists": "---w--ns-",
     "skills": {
+      "Magarula": 0.1,
+      "Marin Karin": 0.2,
+      "Marakukaja": 0.3,
       "Cool Breeze": 41,
-      "Dodge Fire": 44,
       "Garudyne": 43,
-      "Magarula": 0,
-      "Marakukaja": 0,
-      "Marin Karin": 0
+      "Dodge Fire": 44
     },
     "stats": [29, 26, 29, 17, 32]
   },
@@ -1311,11 +1311,11 @@
     "race": "Strength",
     "resists": "n-----ws-",
     "skills": {
-      "Blade of Fury": 51,
+      "Fatal End": 0.1,
+      "Evade Wind": 0.2,
+      "Power Charge": 48,
       "Counterstrike": 49,
-      "Evade Wind": 0,
-      "Fatal End": 0,
-      "Power Charge": 48
+      "Blade of Fury": 51
     },
     "stats": [36, 27, 28, 28, 26]
   },
@@ -1327,13 +1327,13 @@
     "race": "Lovers",
     "resists": "w---sss--",
     "skills": {
-      "Charm Boost": 0,
+      "Marin Karin": 0.1,
+      "Charm Boost": 0.2,
+      "Magaru": 0.3,
+      "Sexy Dance": 21,
       "Charmdi": 22,
       "Dekunda": 24,
-      "Frolic": 3883,
-      "Magaru": 0,
-      "Marin Karin": 0,
-      "Sexy Dance": 21
+      "Frolic": 3883
     },
     "stats": [12, 18, 9, 13, 20]
   },
@@ -1344,12 +1344,12 @@
     "race": "Chariot",
     "resists": "-s--w-s--",
     "skills": {
-      "Counterstrike": 40,
-      "Endure Dark": 43,
-      "Gigantic Fist": 41,
-      "Masukukaja": 0,
+      "Swift Strike": 0.1,
+      "Masukukaja": 0.2,
       "Regenerate 1": 38,
-      "Swift Strike": 0
+      "Counterstrike": 40,
+      "Gigantic Fist": 41,
+      "Endure Dark": 43
     },
     "stats": [29, 19, 24, 29, 26]
   },
@@ -1360,11 +1360,11 @@
     "race": "Hermit",
     "resists": "-------wn",
     "skills": {
-      "Evil Smile": 0,
-      "Fear Boost": 54,
+      "Evil Smile": 0.1,
+      "Megido": 0.2,
       "Ghastly Wail": 52,
-      "Megido": 0,
       "Mudoon": 53,
+      "Fear Boost": 54,
       "Stagnant Air": 55
     },
     "stats": [31, 42, 32, 34, 30]
@@ -1376,11 +1376,11 @@
     "race": "Magician",
     "resists": "---s-----",
     "skills": {
-      "Agi": 0,
-      "Cleave": 0,
-      "Maragi": 10,
+      "Agi": 0.1,
+      "Cleave": 0.2,
       "Provoke": 6,
-      "Re Patra": 7
+      "Re Patra": 7,
+      "Maragi": 10
     },
     "stats": [4, 6, 5, 3, 4]
   },
@@ -1391,11 +1391,11 @@
     "race": "Temperance",
     "resists": "-----w-ss",
     "skills": {
-      "Garu": 0,
-      "Magaru": 16,
+      "Garu": 0.1,
+      "Patra": 0.2,
+      "Posumudi": 0.3,
       "Media": 14,
-      "Patra": 0,
-      "Posumudi": 0,
+      "Magaru": 16,
       "Recarm": 18
     },
     "stats": [9, 8, 10, 9, 10]
@@ -1407,12 +1407,12 @@
     "race": "Fortune",
     "resists": "-----wd--",
     "skills": {
-      "Absorb Elec": 69,
-      "Invigorate 3": 67,
-      "Magarudyne": 0,
-      "Panta Rhei": 0,
+      "Magarudyne": 0.1,
+      "Wind Amp": 0.2,
+      "Panta Rhei": 0.3,
       "Regenerate 3": 66,
-      "Wind Amp": 0
+      "Invigorate 3": 67,
+      "Absorb Elec": 69
     },
     "stats": [40, 54, 32, 46, 44]
   },
@@ -1423,12 +1423,12 @@
     "race": "Emperor",
     "resists": "----wn-ss",
     "skills": {
+      "Zio": 0.1,
+      "Media": 0.2,
       "Mazio": 17,
-      "Media": 0,
-      "Summer Dream": 3883,
       "Zan-ei": 18,
-      "Zio": 0,
-      "Zionga": 20
+      "Zionga": 20,
+      "Summer Dream": 3883
     },
     "stats": [12, 15, 9, 8, 8]
   },
@@ -1440,13 +1440,13 @@
     "race": "Emperor",
     "resists": "-----dw--",
     "skills": {
+      "Ziodyne": 0.1,
+      "Vile Assault": 0.2,
+      "Maziodyne": 0.3,
       "Elec Amp": 60,
-      "Maziodyne": 0,
-      "Spell Master": 65,
       "Thunder Reign": 63,
-      "Valhalla": 3883,
-      "Vile Assault": 0,
-      "Ziodyne": 0
+      "Spell Master": 65,
+      "Valhalla": 3883
     },
     "stats": [39, 52, 33, 36, 39]
   },
@@ -1457,14 +1457,14 @@
     "race": "Temperance",
     "resists": "---sw--s-",
     "skills": {
+      "Maragion": 0.1,
+      "Mighty Swing": 0.2,
       "Agidyne": 46,
-      "Apt Pupil": 49,
       "Fire Boost": 47,
       "Fire Break": 48,
-      "Maragion": 0,
-      "Mighty Swing": 0
+      "Apt Pupil": 49
     },
-    "stats": [33, 37, 27, 26, 29]
+    "stats": [33, 37, 27, 26, 27]
   },
   "Omoikane": {
     "cardlvl": 11,
@@ -1473,11 +1473,11 @@
     "race": "Hierophant",
     "resists": "-----s--w",
     "skills": {
-      "Auto-Rakukaja": 12,
-      "Dia": 0,
+      "Zio": 0.1,
+      "Dia": 0.2,
       "Enradi": 8,
-      "Me Patra": 13,
-      "Zio": 0
+      "Auto-Rakukaja": 12,
+      "Me Patra": 13
     },
     "stats": [4, 7, 6, 4, 7]
   },
@@ -1488,11 +1488,11 @@
     "race": "Magician",
     "resists": "----w-n-s",
     "skills": {
-      "Garula": 0,
-      "Sharp Student": 0,
+      "Garula": 0.1,
+      "Sharp Student": 0.2,
+      "Wind Break": 30,
       "Trafuri": 31,
-      "Wind Boost": 2,
-      "Wind Break": 30
+      "Wind Boost": 32
     },
     "stats": [18, 22, 17, 19, 15]
   },
@@ -1503,10 +1503,10 @@
     "race": "Fool",
     "resists": "-----w--w",
     "skills": {
+      "Bash": 0.1,
       "Agi": 2,
-      "Bash": 0,
-      "Cadenza": 3883,
-      "Tarunda": 6
+      "Tarunda": 6,
+      "Cadenza": 3883
     },
     "stats": [2, 2, 2, 2, 2]
   },
@@ -1517,11 +1517,11 @@
     "race": "Hanged",
     "resists": "---nw----",
     "skills": {
-      "Agilao": 0,
-      "Counter": 0,
+      "Agilao": 0.1,
+      "Getsu-ei": 0.2,
+      "Counter": 0.3,
       "Dodge Ice": 30,
       "Fire Boost": 31,
-      "Getsu-ei": 0,
       "Mighty Swing": 33
     },
     "stats": [22, 14, 20, 21, 14]
@@ -1533,11 +1533,11 @@
     "race": "Fool",
     "resists": "---s-w--n",
     "skills": {
-      "Agilao": 0,
+      "Evil Touch": 0.1,
+      "Agilao": 0.2,
+      "Poison Mist": 23,
       "Dodge Slash": 24,
-      "Evil Touch": 0,
-      "Poison Boost": 25,
-      "Poison Mist": 23
+      "Poison Boost": 26
     },
     "stats": [20, 13, 15, 14, 11]
   },
@@ -1548,10 +1548,10 @@
     "race": "Chariot",
     "resists": "-s----w--",
     "skills": {
+      "Kill Rush": 0.1,
+      "Dodge Pierce": 0.2,
       "Auto-Tarukaja": 31,
       "Counter": 34,
-      "Dodge Pierce": 0,
-      "Kill Rush": 0,
       "Null Rage": 35,
       "Resist Pierce": 36
     },
@@ -1564,12 +1564,12 @@
     "race": "Death",
     "resists": "------sws",
     "skills": {
-      "Counter": 27,
+      "Mudo": 0.1,
+      "Zan-ei": 0.2,
+      "Mamudo": 0.3,
       "Garula": 25,
-      "Mamudo": 0,
-      "Mudo": 0,
-      "Survive Light": 29,
-      "Zan-ei": 0
+      "Counter": 27,
+      "Survive Light": 29
     },
     "stats": [20, 19, 15, 19, 12]
   },
@@ -1580,13 +1580,13 @@
     "race": "Priestess",
     "resists": "---wn----",
     "skills": {
-      "Ardhanari": 3883,
-      "Charmdi": 0,
-      "Diarahan": 40,
-      "Diarama": 0,
-      "Dodge Fire": 41,
+      "Charmdi": 0.1,
+      "Diarama": 0.2,
+      "Marakukaja": 36,
       "Mabufula": 38,
-      "Marakukaja": 36
+      "Diarahan": 40,
+      "Dodge Fire": 41,
+      "Ardhanari": 3883
     },
     "stats": [17, 29, 18, 20, 28]
   },
@@ -1597,11 +1597,11 @@
     "race": "Lovers",
     "resists": "-----s---",
     "skills": {
-      "Dia": 0,
-      "Frolic": 3883,
-      "Pulinpa": 4,
+      "Dia": 0.1,
       "Rakunda": 3,
-      "Trafuri": 8
+      "Pulinpa": 4,
+      "Trafuri": 8,
+      "Frolic": 3883
     },
     "stats": [2, 3, 2, 3, 3]
   },
@@ -1612,12 +1612,12 @@
     "race": "Justice",
     "resists": "------snw",
     "skills": {
-      "Hama": 0,
-      "Magaru": 0,
-      "Mahama": 0,
+      "Hama": 0.1,
+      "Magaru": 0.2,
+      "Mahama": 0.3,
+      "Zan-ei": 27,
       "Me Patra": 28,
-      "Revolution": 30,
-      "Zan-ei": 27
+      "Revolution": 30
     },
     "stats": [20, 19, 15, 16, 12]
   },
@@ -1628,12 +1628,12 @@
     "race": "Justice",
     "resists": "---s---nw",
     "skills": {
-      "Dodge Elec": 0,
-      "Hama": 0,
-      "Holy Arrow": 0,
-      "Mahama": 21,
+      "Hama": 0.1,
+      "Dodge Elec": 0.2,
+      "Holy Arrow": 0.3,
       "Media": 18,
-      "Recarm": 20
+      "Recarm": 20,
+      "Mahama": 21
     },
     "stats": [12, 13, 7, 11, 12]
   },
@@ -1645,13 +1645,13 @@
     "race": "Magician",
     "resists": "---nw----",
     "skills": {
-      "Agi": 0,
-      "Agilao": 19,
-      "Jack Brothers": 3883,
-      "Maragi": 0,
+      "Agi": 0.1,
+      "Sukunda": 0.2,
+      "Maragi": 0.3,
       "Provoke": 15,
       "Rage Boost": 17,
-      "Sukunda": 0
+      "Agilao": 19,
+      "Jack Brothers": 3883
     },
     "stats": [7, 14, 9, 8, 11]
   },
@@ -1662,12 +1662,12 @@
     "race": "Lovers",
     "resists": "w--ssn---",
     "skills": {
-      "Dodge Ice": 0,
-      "Dodge Pierce": 32,
+      "Posumudi": 0.1,
+      "Dodge Wind": 0.2,
+      "Dodge Ice": 0.3,
+      "Recarm": 28,
       "Dodge Strike": 29,
-      "Dodge Wind": 0,
-      "Posumudi": 0,
-      "Recarm": 28
+      "Dodge Pierce": 32
     },
     "stats": [16, 21, 16, 12, 23]
   },
@@ -1678,12 +1678,12 @@
     "race": "Sun",
     "resists": "------snw",
     "skills": {
+      "Magarula": 0.1,
+      "Marakukaja": 0.2,
+      "Growth 2": 0.3,
       "Garudyne": 44,
-      "Growth 2": 0,
       "Heat Wave": 46,
-      "Magarula": 0,
       "Mahamaon": 47,
-      "Marakukaja": 0,
       "Wind Boost": 48
     },
     "stats": [28, 29, 30, 32, 30]
@@ -1695,13 +1695,13 @@
     "race": "Emperor",
     "resists": "--sw-n---",
     "skills": {
+      "Twin Shot": 0.1,
+      "Tentarafoo": 0.2,
       "Matarukaja": 37,
-      "Mazionga": 41,
-      "Null Panic": 40,
-      "Panic Boost": 42,
-      "Tentarafoo": 0,
       "Torrent Shot": 39,
-      "Twin Shot": 0
+      "Null Panic": 40,
+      "Mazionga": 41,
+      "Panic Boost": 42
     },
     "stats": [24, 26, 23, 21, 21]
   },
@@ -1712,11 +1712,11 @@
     "race": "Magician",
     "resists": "-r-sww--s",
     "skills": {
-      "Agidyne": 46,
-      "Agilao": 0,
-      "Dodge Ice": 44,
+      "Agilao": 0.1,
+      "Zan-ei": 0.2,
       "Matarunda": 42,
-      "Zan-ei": 0
+      "Dodge Ice": 44,
+      "Agidyne": 46
     },
     "stats": [25, 35, 24, 22, 21]
   },
@@ -1727,11 +1727,11 @@
     "race": "Lovers",
     "resists": "----s--rw",
     "skills": {
-      "Auto-Maraku": 0,
-      "Deathbound": 0,
-      "Matarukaja": 64,
+      "Deathbound": 0.1,
+      "Auto-Maraku": 0.2,
+      "Null Charm": 0.3,
       "Mediarahan": 63,
-      "Null Charm": 0,
+      "Matarukaja": 64,
       "Tempest Slash": 67
     },
     "stats": [44, 42, 31, 31, 42]
@@ -1743,13 +1743,12 @@
     "race": "Lovers",
     "resists": "-w-sss---",
     "skills": {
-      "Dekunda": 43,
-      "Diarama": 0,
-      "Divine Grace": 45,
-      "Growth 2": 40,
+      "Diarama": 0.1,
+      "Zionga": 0.2,
       "Mediarama": 42,
+      "Dekunda": 43,
       "Null Charm": 44,
-      "Zionga": 0
+      "Divine Grace": 45
     },
     "stats": [20, 32, 20, 22, 30]
   },
@@ -1760,12 +1759,12 @@
     "race": "Death",
     "resists": "-------wn",
     "skills": {
-      "Dekunda": 39,
-      "Ghastly Wail": 41,
-      "Mamudo": 0,
-      "Masukunda": 0,
+      "Mamudo": 0.1,
+      "Masukunda": 0.2,
       "Megido": 38,
-      "Mudoon": 40
+      "Dekunda": 39,
+      "Mudoon": 40,
+      "Ghastly Wail": 41
     },
     "stats": [25, 29, 25, 19, 22]
   },
@@ -1776,9 +1775,9 @@
     "race": "Moon",
     "resists": "-------r-",
     "skills": {
-      "Hama Boost": 0,
-      "Mahamaon": 0,
-      "Makarakarn": 0,
+      "Mahamaon": 0.1,
+      "Hama Boost": 0.2,
+      "Makarakarn": 0.3,
       "Regenerate 3": 75,
       "Salvation": 80
     },
@@ -1791,12 +1790,12 @@
     "race": "Priestess",
     "resists": "---wn----",
     "skills": {
-      "Bufula": 22,
-      "Charmdi": 0,
+      "Mabufu": 0.1,
+      "Posumudi": 0.2,
+      "Charmdi": 0.3,
       "Ice Boost": 20,
-      "Mabufu": 0,
-      "Me Patra": 23,
-      "Posumudi": 0
+      "Bufula": 22,
+      "Me Patra": 23
     },
     "stats": [9, 17, 9, 12, 14]
   },
@@ -1807,13 +1806,13 @@
     "race": "Judgement",
     "resists": "---r--w-r",
     "skills": {
-      "Armageddon": 3883,
-      "Black Viper": 86,
-      "Invigorate 3": 82,
-      "Maragidyne": 0,
-      "Megidola": 0,
+      "Megidola": 0.1,
+      "Maragidyne": 0.2,
       "Regenerate 3": 81,
-      "Repel Light": 83
+      "Invigorate 3": 82,
+      "Repel Light": 83,
+      "Black Viper": 86,
+      "Armageddon": 3883
     },
     "stats": [51, 60, 52, 47, 58]
   },
@@ -1824,10 +1823,10 @@
     "race": "Magician",
     "resists": "---nw----",
     "skills": {
+      "Maragi": 0.1,
+      "Media": 0.2,
       "Agilao": 23,
       "Enradi": 24,
-      "Maragi": 0,
-      "Media": 0,
       "Trafuri": 25
     },
     "stats": [10, 19, 10, 13, 15]
@@ -1839,11 +1838,11 @@
     "race": "Star",
     "resists": "---dw--n-",
     "skills": {
-      "Absorb Ice": 79,
+      "Maragidyne": 0.1,
+      "Fire Amp": 0.2,
       "Evade Ice": 76,
-      "Fire Amp": 0,
       "Growth 3": 78,
-      "Maragidyne": 0
+      "Absorb Ice": 79
     },
     "stats": [50, 56, 42, 49, 50]
   },
@@ -1854,12 +1853,12 @@
     "race": "Priestess",
     "resists": "--sws-ss-",
     "skills": {
+      "Arrow Rain": 0.1,
+      "Mabufudyne": 0.2,
       "Amrita": 62,
-      "Arrow Rain": 0,
-      "Invigorate 3": 68,
-      "Mabufudyne": 0,
       "Magarudyne": 63,
       "Power Charge": 65,
+      "Invigorate 3": 68,
       "Shadow Hound": 3883
     },
     "stats": [49, 50, 26, 46, 38]
@@ -1871,12 +1870,12 @@
     "race": "Temperance",
     "resists": "---wn--s-",
     "skills": {
-      "Bufula": 0,
-      "Ice Boost": 39,
+      "Bufula": 0.1,
+      "Poison Mist": 0.2,
+      "Null Freeze": 0.3,
       "Mabufula": 37,
       "Matarunda": 38,
-      "Null Freeze": 0,
-      "Poison Mist": 0,
+      "Ice Boost": 39,
       "Virus Breath": 40
     },
     "stats": [26, 24, 27, 22, 25]
@@ -1889,12 +1888,12 @@
     "race": "Tower",
     "resists": "--nw--s--",
     "skills": {
-      "Apt Pupil": 0,
-      "Arrow Rain": 0,
-      "Fast Retreat": 0,
-      "Regenerate 3": 73,
+      "Arrow Rain": 0.1,
+      "Apt Pupil": 0.2,
+      "Fast Retreat": 0.3,
+      "Weary Thrust": 70,
       "Spear Master": 71,
-      "Weary Thrust": 70
+      "Regenerate 3": 73
     },
     "stats": [51, 38, 43, 51, 45]
   },
@@ -1905,10 +1904,10 @@
     "race": "Moon",
     "resists": "---r---ws",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Maragidyne": 0.2,
       "Fire Amp": 68,
       "Fire Break": 69,
-      "Maragidyne": 0,
       "Repel Light": 71
     },
     "stats": [48, 53, 46, 34, 40]
@@ -1921,13 +1920,13 @@
     "race": "Tower",
     "resists": "--n-wd-ns",
     "skills": {
-      "Ardhanari": 3883,
-      "Enduring Soul": 0,
-      "Invigorate 3": 86,
-      "Maziodyne": 0,
+      "Maziodyne": 0.1,
+      "Enduring Soul": 0.2,
+      "Sexy Dance": 0.3,
       "Pralaya": 85,
-      "Sexy Dance": 0,
-      "Victory Cry": 88
+      "Invigorate 3": 86,
+      "Victory Cry": 88,
+      "Ardhanari": 3883
     },
     "stats": [60, 55, 48, 59, 56]
   },
@@ -1938,12 +1937,12 @@
     "race": "Strength",
     "resists": "n------nw",
     "skills": {
-      "2hSwd Master": 62,
-      "Auto-Masuku": 0,
-      "Deathbound": 0,
+      "Deathbound": 0.1,
+      "Power Charge": 0.2,
+      "Auto-Masuku": 0.3,
       "High Counter": 58,
-      "Power Charge": 0,
       "Regenerate 3": 61,
+      "2hSwd Master": 62,
       "Scarlet Havoc": 3883
     },
     "stats": [46, 39, 38, 37, 32]
@@ -1955,12 +1954,12 @@
     "race": "Empress",
     "resists": "---wd----",
     "skills": {
-      "Absorb Fire": 79,
+      "Mabufudyne": 0.1,
+      "Tetrakarn": 0.2,
+      "Ice Amp": 0.3,
       "Akasha Arts": 78,
-      "Ice Amp": 0,
-      "Mabufudyne": 0,
-      "Niflheim": 81,
-      "Tetrakarn": 0
+      "Absorb Fire": 79,
+      "Niflheim": 81
     },
     "stats": [48, 48, 45, 45, 46]
   },
@@ -1969,15 +1968,15 @@
     "inherits": "ailment",
     "lvl": 52,
     "race": "Devil",
-    "resists": "---n---wn",
+    "resists": "---s---wn",
     "skills": {
-      "Agidyne": 0,
-      "Ailment Boost": 55,
-      "Dreamfest": 3883,
-      "Fire Break": 0,
+      "Sexy Dance": 0.1,
+      "Agidyne": 0.2,
+      "Fire Break": 0.3,
       "Mudoon": 54,
+      "Ailment Boost": 55,
       "Null Light": 57,
-      "Sexy Dance": 0
+      "Dreamfest": 3883
     },
     "stats": [26, 46, 29, 42, 33]
   },
@@ -1989,12 +1988,12 @@
     "race": "Magician",
     "resists": "---dw----",
     "skills": {
-      "Agidyne": 0,
-      "Deathbound": 0,
-      "Fire Amp": 57,
-      "Fire Boost": 0,
+      "Agidyne": 0.1,
+      "Deathbound": 0.2,
+      "Fire Boost": 0.3,
       "Maragidyne": 52,
-      "Ragnarok": 56
+      "Ragnarok": 56,
+      "Fire Amp": 57
     },
     "stats": [39, 48, 33, 25, 30]
   },
@@ -2005,13 +2004,13 @@
     "race": "Fool",
     "resists": "-----ssw-",
     "skills": {
-      "Enduring Soul": 83,
-      "Fast Retreat": 0,
-      "God's Hand": 0,
+      "God's Hand": 0.1,
+      "Tetrakarn": 0.2,
+      "Fast Retreat": 0.3,
+      "Vorpal Blade": 79,
       "Regenerate 3": 81,
-      "Tetrakarn": 0,
-      "Trickster": 3883,
-      "Vorpal Blade": 79
+      "Enduring Soul": 83,
+      "Trickster": 3883
     },
     "stats": [57, 51, 53, 49, 53]
   },
@@ -2022,12 +2021,12 @@
     "race": "Temperance",
     "resists": "---s-nw--",
     "skills": {
-      "Elec Boost": 0,
-      "Masukukaja": 0,
-      "Maziodyne": 57,
-      "Mazionga": 0,
+      "Mazionga": 0.1,
+      "Elec Boost": 0.2,
+      "Masukukaja": 0.3,
+      "Ziodyne": 52,
       "Resist Wind": 55,
-      "Ziodyne": 52
+      "Maziodyne": 57
     },
     "stats": [32, 39, 32, 40, 29]
   },
@@ -2039,14 +2038,14 @@
     "race": "Emperor",
     "resists": "s---wn---",
     "skills": {
-      "Auto-Tarukaja": 0,
-      "Elec Boost": 30,
-      "Elec Break": 29,
+      "Mazio": 0.1,
+      "Pulinpa": 0.2,
+      "Auto-Tarukaja": 0.3,
+      "Zionga": 26,
       "Getsu-ei": 27,
-      "Mazio": 0,
-      "Pulinpa": 0,
-      "Thunder Call": 3883,
-      "Zionga": 26
+      "Elec Break": 29,
+      "Elec Boost": 30,
+      "Thunder Call": 3883
     },
     "stats": [19, 18, 13, 15, 14]
   },
@@ -2058,12 +2057,12 @@
     "race": "Hanged",
     "resists": "-s---s-ww",
     "skills": {
+      "Zio": 0.1,
+      "Mazio": 0.2,
+      "Tarunda": 0.3,
       "Auto-Rakukaja": 22,
-      "Dekaja": 26,
       "Dodge Strike": 24,
-      "Mazio": 0,
-      "Tarunda": 0,
-      "Zio": 0
+      "Dekaja": 26
     },
     "stats": [16, 16, 19, 10, 9]
   },
@@ -2074,12 +2073,12 @@
     "race": "Hermit",
     "resists": "------s--",
     "skills": {
-      "Distress Boost": 36,
-      "Eerie Sound": 0,
-      "Fatal End": 37,
-      "Getsu-ei": 0,
+      "Getsu-ei": 0.1,
+      "Eerie Sound": 0.2,
+      "Tarukaja": 0.3,
       "Mighty Swing": 35,
-      "Tarukaja": 0
+      "Distress Boost": 36,
+      "Fatal End": 37
     },
     "stats": [23, 21, 18, 25, 16]
   },
@@ -2091,12 +2090,12 @@
     "race": "Death",
     "resists": "-------wr",
     "skills": {
-      "1hSwd Master": 71,
-      "Evil Smile": 0,
+      "Evil Smile": 0.1,
+      "Tempest Slash": 0.2,
+      "Megidola": 0.3,
       "Ghastly Wail": 67,
-      "Megidola": 0,
-      "Tempest Slash": 0,
-      "Virus Breath": 69
+      "Virus Breath": 69,
+      "1hSwd Master": 71
     },
     "stats": [48, 51, 44, 39, 40]
   },
@@ -2108,13 +2107,13 @@
     "race": "Chariot",
     "resists": "-n---nw--",
     "skills": {
+      "Ziodyne": 0.1,
+      "Gigantic Fist": 0.2,
+      "High Counter": 0.3,
       "Auto-Mataru": 55,
       "Elec Amp": 59,
-      "Gigantic Fist": 0,
       "Heavy Master": 60,
-      "High Counter": 0,
-      "Thunder Call": 3883,
-      "Ziodyne": 0
+      "Thunder Call": 3883
     },
     "stats": [42, 45, 34, 30, 34]
   },
@@ -2125,11 +2124,11 @@
     "race": "Justice",
     "resists": "---s---nw",
     "skills": {
-      "Hama Boost": 0,
-      "Hamaon": 0,
-      "Mahamaon": 0,
-      "Mediarahan": 55,
+      "Hamaon": 0.1,
+      "Hama Boost": 0.2,
+      "Mahamaon": 0.3,
       "Recarmdra": 53,
+      "Mediarahan": 55,
       "Resist Dark": 57
     },
     "stats": [35, 32, 26, 34, 33]
@@ -2142,12 +2141,12 @@
     "race": "Strength",
     "resists": "s--w----s",
     "skills": {
-      "Dodge Slash": 24,
+      "Zan-ei": 0.1,
+      "Rebellion": 0.2,
+      "Mudo": 0.3,
       "Kill Rush": 23,
-      "Mudo": 0,
-      "Rebellion": 0,
-      "Swift Strike": 27,
-      "Zan-ei": 0
+      "Dodge Slash": 24,
+      "Swift Strike": 27
     },
     "stats": [19, 10, 16, 11, 14]
   },
@@ -2158,12 +2157,12 @@
     "race": "Lovers",
     "resists": "----sws--",
     "skills": {
+      "Mediarama": 0.1,
+      "Mind Charge": 0.2,
+      "Magarula": 0.3,
       "Bufudyne": 52,
       "Divine Grace": 54,
       "Ice Amp": 56,
-      "Magarula": 0,
-      "Mediarama": 0,
-      "Mind Charge": 0,
       "Summer Dream": 3883
     },
     "stats": [22, 39, 26, 31, 39]
@@ -2175,11 +2174,11 @@
     "race": "Judgement",
     "resists": "---wss-ns",
     "skills": {
-      "Garudyne": 0,
-      "Hamaon": 0,
-      "Ice Break": 68,
+      "Hamaon": 0.1,
+      "Mudoon": 0.2,
+      "Garudyne": 0.3,
       "Mabufudyne": 67,
-      "Mudoon": 0,
+      "Ice Break": 68,
       "Tetrakarn": 70
     },
     "stats": [43, 47, 43, 46, 43]
@@ -2191,13 +2190,13 @@
     "race": "Hanged",
     "resists": "-s---sw--",
     "skills": {
-      "Diarahan": 54,
-      "Evade Strike": 52,
+      "Kill Rush": 0.1,
+      "Recarmdra": 0.2,
+      "Null Distress": 0.3,
       "Gigantic Fist": 50,
-      "Kill Rush": 0,
-      "Null Distress": 0,
+      "Evade Strike": 52,
       "Raging Tiger": 53,
-      "Recarmdra": 0
+      "Diarahan": 54
     },
     "stats": [32, 29, 40, 24, 26]
   },
@@ -2207,14 +2206,14 @@
     "inherits": "recovery",
     "lvl": 11,
     "race": "Priestess",
-    "resists": "----wn-s-",
+    "resists": "---wn--s-",
     "skills": {
-      "Auto-Rakukaja": 15,
-      "Dia": 0,
+      "Dia": 0.1,
+      "Hama": 0.2,
+      "Poisma": 0.3,
       "Dodge Pierce": 12,
       "Enradi": 13,
-      "Hama": 0,
-      "Poisma": 0
+      "Auto-Rakukaja": 15
     },
     "stats": [7, 10, 8, 9, 6]
   },
@@ -2225,13 +2224,13 @@
     "race": "Tower",
     "resists": "---dw--nw",
     "skills": {
-      "Agidyne": 0,
-      "Blade of Fury": 57,
-      "Fire Amp": 59,
-      "High Counter": 58,
-      "Mahamaon": 0,
+      "Mahamaon": 0.1,
+      "Agidyne": 0.2,
+      "Null Rage": 0.3,
       "Maragidyne": 56,
-      "Null Rage": 0
+      "Blade of Fury": 57,
+      "High Counter": 58,
+      "Fire Amp": 59
     },
     "stats": [38, 43, 35, 37, 32]
   },
@@ -2242,11 +2241,11 @@
     "race": "Strength",
     "resists": "s--w-----",
     "skills": {
-      "Auto-Sukukaja": 16,
-      "Cleave": 0,
-      "Dodge Slash": 0,
-      "Getsu-ei": 17,
+      "Cleave": 0.1,
+      "Dodge Slash": 0.2,
       "Mabufu": 15,
+      "Auto-Sukukaja": 16,
+      "Getsu-ei": 17,
       "Valhalla": 3883
     },
     "stats": [11, 8, 9, 10, 8]
@@ -2258,12 +2257,12 @@
     "race": "Hanged",
     "resists": "------wn-",
     "skills": {
-      "Counterstrike": 42,
-      "Dodge Wind": 41,
-      "Mahama": 0,
+      "Mahama": 0.1,
+      "Twin Shot": 0.2,
       "Recarmdra": 40,
-      "Resist Light": 43,
-      "Twin Shot": 0
+      "Dodge Wind": 41,
+      "Counterstrike": 42,
+      "Resist Light": 43
     },
     "stats": [27, 27, 30, 19, 18]
   },
@@ -2274,12 +2273,12 @@
     "race": "Devil",
     "resists": "---s--wwn",
     "skills": {
+      "Tentarafoo": 0.1,
+      "Rebellion": 0.2,
+      "Kill Rush": 0.3,
       "Dekaja": 26,
-      "Evil Smile": 28,
       "Foul Breath": 27,
-      "Kill Rush": 0,
-      "Rebellion": 0,
-      "Tentarafoo": 0
+      "Evil Smile": 28
     },
     "stats": [21, 16, 21, 10, 17]
   },
@@ -2290,12 +2289,12 @@
     "race": "Justice",
     "resists": "-------nw",
     "skills": {
-      "Endure Dark": 39,
+      "Mahama": 0.1,
+      "Infuriate": 0.2,
+      "Survive Dark": 34,
       "Hamaon": 36,
-      "Infuriate": 0,
-      "Mahama": 0,
       "Rage Boost": 37,
-      "Survive Dark": 34
+      "Endure Dark": 39
     },
     "stats": [22, 23, 15, 20, 23]
   },
@@ -2307,13 +2306,13 @@
     "race": "Sun",
     "resists": "----nn-rw",
     "skills": {
-      "Akasha Arts": 0,
-      "Bufudyne": 0,
-      "God's Hand": 82,
-      "Infinity": 3883,
+      "Akasha Arts": 0.1,
+      "Ziodyne": 0.2,
+      "Bufudyne": 0.3,
       "Mind Charge": 80,
-      "Salvation": 86,
-      "Ziodyne": 0
+      "God's Hand": 82,
+      "Salvation": 84,
+      "Infinity": 3883
     },
     "stats": [53, 58, 47, 56, 51]
   },
@@ -2325,12 +2324,12 @@
     "race": "Moon",
     "resists": "w---n-n--",
     "skills": {
-      "Auto-Rakukaja": 0,
+      "Kill Rush": 0.1,
+      "Auto-Rakukaja": 0.2,
+      "Mabufu": 0.3,
       "Dekaja": 28,
-      "Ice Boost": 31,
-      "Kill Rush": 0,
-      "Mabufu": 0,
-      "Swift Strike": 30
+      "Swift Strike": 30,
+      "Ice Boost": 31
     },
     "stats": [21, 17, 21, 13, 19]
   },
@@ -2341,12 +2340,12 @@
     "race": "Sun",
     "resists": "------snw",
     "skills": {
-      "Diarama": 0,
-      "Growth 2": 37,
+      "Diarama": 0.1,
+      "Zan-ei": 0.2,
+      "Masukunda": 31,
       "Infuriate": 32,
       "Invigorate 1": 34,
-      "Masukunda": 31,
-      "Zan-ei": 0
+      "Growth 2": 37
     },
     "stats": [22, 23, 18, 24, 19]
   },
@@ -2357,12 +2356,12 @@
     "race": "Hermit",
     "resists": "--------s",
     "skills": {
+      "Evil Touch": 0.1,
+      "Tarunda": 0.2,
+      "Bufu": 0.3,
       "Auto-Tarukaja": 11,
-      "Bufu": 0,
-      "Evil Touch": 0,
-      "Magaru": 14,
       "Mudo": 13,
-      "Tarunda": 0
+      "Magaru": 14
     },
     "stats": [3, 8, 9, 10, 4]
   },
@@ -2373,13 +2372,13 @@
     "race": "Chariot",
     "resists": "-s-s--w--",
     "skills": {
+      "Bash": 0.1,
+      "Zio": 0.2,
+      "Tarukaja": 0.3,
       "Assault Dive": 16,
-      "Auto-Sukukaja": 19,
-      "Bash": 0,
       "Sharp Student": 18,
-      "Tarukaja": 0,
-      "Zio": 0
+      "Auto-Sukukaja": 19
     },
-    "stats": [16, 4, 13, 7, 9]
+    "stats": [14, 6, 13, 7, 9]
   }
 }

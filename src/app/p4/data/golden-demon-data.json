@@ -5,12 +5,12 @@
     "race": "Aeon",
     "resists": "---wnn-",
     "skills": {
-      "Auto-Rakukaja": 23,
-      "Hama": 0,
+      "Media": 0.1,
+      "Magaru": 0.2,
+      "Hama": 0.3,
       "Invigorate 1": 20,
-      "Magaru": 0,
-      "Media": 0,
       "Re Patra": 21,
+      "Auto-Rakukaja": 23,
       "Trafuri": 24
     },
     "stats": [9, 15, 12, 10, 15]
@@ -21,12 +21,12 @@
     "race": "Jester",
     "resists": "-----wn",
     "skills": {
+      "Evil Smile": 0.1,
+      "Maragion": 0.2,
+      "Ghastly Wail": 0.3,
       "Ailment Boost": 49,
       "Dodge Physical": 50,
-      "Evil Smile": 0,
-      "Ghastly Wail": 0,
       "Mamudoon": 52,
-      "Maragion": 0,
       "Mudo Boost": 53
     },
     "stats": [25, 35, 35, 26, 27]
@@ -37,13 +37,13 @@
     "race": "Jester",
     "resists": "s---w-n",
     "skills": {
-      "Invigorate 3": 69,
-      "Mamudoon": 0,
-      "Megidola": 68,
+      "Mamudoon": 0.1,
+      "Rainy Death": 0.2,
+      "Tetra Break": 0.3,
       "Myriad Arrows": 64,
-      "Rainy Death": 0,
       "Resist Wind": 66,
-      "Tetra Break": 0
+      "Megidola": 68,
+      "Invigorate 3": 69
     },
     "stats": [46, 47, 32, 35, 33]
   },
@@ -53,13 +53,13 @@
     "race": "Jester",
     "resists": "----sws",
     "skills": {
-      "Auto-Tarukaja": 0,
+      "Muzzle Shot": 0.1,
+      "Auto-Tarukaja": 0.2,
       "Growth 1": 21,
-      "Muzzle Shot": 0,
-      "Poison Boost": 25,
+      "Swift Strike": 22,
       "Poison Mist": 23,
-      "Resist Physical": 27,
-      "Swift Strike": 22
+      "Poison Boost": 25,
+      "Resist Physical": 27
     },
     "stats": [16, 11, 14, 15, 11]
   },
@@ -70,13 +70,13 @@
     "race": "Aeon",
     "resists": "-w--snn",
     "skills": {
-      "Fast Heal": 0,
-      "Hama Boost": 78,
-      "Hamaon": 0,
+      "Hamaon": 0.1,
+      "Mediarahan": 0.2,
+      "Fast Heal": 0.3,
+      "Tetraja": 75,
       "Mahamaon": 77,
-      "Mediarahan": 0,
-      "Spell Master": 80,
-      "Tetraja": 75
+      "Hama Boost": 78,
+      "Spell Master": 80
     },
     "stats": [37, 65, 36, 44, 47]
   },
@@ -86,13 +86,13 @@
     "race": "Aeon",
     "resists": "-w-s--s",
     "skills": {
-      "Auto-Masuku": 0,
-      "Endure": 63,
-      "Evade Fire": 0,
-      "Mediarama": 0,
+      "Mediarama": 0.1,
+      "Evade Fire": 0.2,
+      "Auto-Masuku": 0.3,
       "Null Confuse": 59,
       "Null Poison": 60,
-      "Vicious Strike": 62
+      "Vicious Strike": 62,
+      "Endure": 63
     },
     "stats": [38, 44, 38, 30, 31]
   },
@@ -102,13 +102,13 @@
     "race": "Jester",
     "resists": "-d--w--",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Auto-Masuku": 0.2,
       "Alertness": 56,
-      "Auto-Masuku": 0,
-      "Deathbound": 60,
       "Fire Amp": 58,
-      "Regenerate 2": 61,
-      "Resist Elec": 59
+      "Resist Elec": 59,
+      "Deathbound": 60,
+      "Regenerate 2": 61
     },
     "stats": [37, 36, 35, 44, 20]
   },
@@ -118,12 +118,12 @@
     "race": "Aeon",
     "resists": "-----nw",
     "skills": {
-      "Makarakarn": 50,
+      "Matarukaja": 0.1,
+      "Mediarama": 0.2,
+      "Red Wall": 0.3,
       "Maragion": 46,
-      "Matarukaja": 0,
-      "Mediarama": 0,
       "Null Fire": 48,
-      "Red Wall": 0
+      "Makarakarn": 50
     },
     "stats": [25, 32, 27, 24, 31]
   },
@@ -133,12 +133,12 @@
     "race": "Aeon",
     "resists": "-wn--n-",
     "skills": {
-      "Amrita": 71,
-      "Bufudyne": 0,
+      "Bufudyne": 0.1,
+      "Mabufudyne": 0.2,
       "Ice Break": 66,
-      "Mabufudyne": 0,
       "Null Dark": 68,
-      "Resist Fire": 70
+      "Resist Fire": 70,
+      "Amrita": 71
     },
     "stats": [36, 50, 37, 38, 41]
   },
@@ -148,13 +148,13 @@
     "race": "Jester",
     "resists": "----sws",
     "skills": {
-      "Life Drain": 0,
-      "Matarunda": 0,
-      "Mudo Boost": 45,
-      "Mudoon": 0,
+      "Mudoon": 0.1,
+      "Life Drain": 0.2,
+      "Matarunda": 0.3,
       "Survive Light": 42,
-      "Tetraja": 47,
-      "Ziodyne": 43
+      "Ziodyne": 43,
+      "Mudo Boost": 45,
+      "Tetraja": 46
     },
     "stats": [25, 30, 28, 23, 21]
   },
@@ -165,13 +165,13 @@
     "race": "Jester",
     "resists": "-----nn",
     "skills": {
-      "Atom Smasher": 0,
-      "Ghastly Wail": 0,
-      "Heat Riser": 84,
+      "Atom Smasher": 0.1,
+      "Maziodyne": 0.2,
+      "Ghastly Wail": 0.3,
       "Magarudyne": 78,
-      "Maziodyne": 0,
       "Megidolaon": 80,
       "Power Charge": 82,
+      "Heat Riser": 84,
       "Vorpal Blade": 86
     },
     "stats": [60, 58, 55, 50, 20]
@@ -182,13 +182,13 @@
     "race": "Aeon",
     "resists": "w-sss--",
     "skills": {
-      "Ailment Boost": 30,
-      "Anima Freeze": 27,
-      "Foolish Whisper": 0,
-      "Magaru": 0,
+      "Foolish Whisper": 0.1,
+      "Tentarafoo": 0.2,
+      "Magaru": 0.3,
       "Old One": 25,
       "Resist Fire": 26,
-      "Tentarafoo": 0
+      "Anima Freeze": 27,
+      "Ailment Boost": 30
     },
     "stats": [13, 18, 11, 16, 21]
   },
@@ -198,10 +198,10 @@
     "race": "Jester",
     "resists": "----swn",
     "skills": {
+      "Mamudo": 0.1,
+      "Mind Slice": 0.2,
+      "Garula": 0.3,
       "Counterstrike": 35,
-      "Garula": 0,
-      "Mamudo": 0,
-      "Mind Slice": 0,
       "Mudoon": 37,
       "Survive Light": 39
     },
@@ -213,12 +213,12 @@
     "race": "Aeon",
     "resists": "----snw",
     "skills": {
+      "Magarula": 0.1,
+      "Masukukaja": 0.2,
+      "Growth 2": 0.3,
       "Garudyne": 52,
-      "Growth 2": 0,
       "Heat Wave": 53,
-      "Magarula": 0,
       "Mahamaon": 55,
-      "Masukukaja": 0,
       "Wind Amp": 57
     },
     "stats": [30, 31, 31, 35, 33]
@@ -229,13 +229,13 @@
     "race": "Aeon",
     "resists": "sw-n---",
     "skills": {
-      "Confuse Boost": 43,
-      "Fatal End": 0,
+      "Fatal End": 0.1,
+      "Tentarafoo": 0.2,
       "Matarukaja": 38,
-      "Mazionga": 42,
+      "Torrent Shot": 39,
       "Null Confuse": 40,
-      "Tentarafoo": 0,
-      "Torrent Shot": 39
+      "Mazionga": 42,
+      "Confuse Boost": 43
     },
     "stats": [25, 26, 24, 22, 21]
   },
@@ -245,12 +245,12 @@
     "race": "Aeon",
     "resists": "-nw----",
     "skills": {
-      "Agilao": 0,
+      "Maragi": 0.1,
+      "Agilao": 0.2,
+      "Energy Shower": 0.3,
       "Diarama": 33,
-      "Energy Shower": 0,
-      "Maragi": 0,
-      "Maragion": 36,
-      "Trafuri": 34
+      "Trafuri": 34,
+      "Maragion": 36
     },
     "stats": [19, 27, 20, 17, 17]
   },
@@ -260,11 +260,11 @@
     "race": "Jester",
     "resists": "sw--s--",
     "skills": {
-      "Arms Master": 71,
-      "Brave Blade": 0,
-      "Evade Elec": 0,
+      "Brave Blade": 0.1,
+      "Rebellion": 0.2,
+      "Evade Elec": 0.3,
       "High Counter": 69,
-      "Rebellion": 0,
+      "Arms Master": 71,
       "Regenerate 3": 74,
       "Vorpal Blade": 76
     },
@@ -276,12 +276,12 @@
     "race": "Jester",
     "resists": "s--s-ww",
     "skills": {
+      "Mazio": 0.1,
+      "Zionga": 0.2,
+      "Survive Light": 29,
       "Auto-Rakukaja": 30,
       "Dekaja": 31,
-      "Dodge Physical": 33,
-      "Mazio": 0,
-      "Survive Light": 29,
-      "Zionga": 0
+      "Dodge Physical": 33
     },
     "stats": [20, 20, 22, 14, 12]
   }
