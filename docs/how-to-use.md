@@ -300,7 +300,9 @@
 * *Persona 3 FES Perfect Guide* (ISBN-13: 9784757735767)
 * *Persona 3 Portable Official Perfect Guide* (ISBN-13: 9784047262935)
 * http://gamekouryaku.com/peru3/
+* https://w.atwiki.jp/wiki10_persona3/
 * http://game.daihouko.com/persona/3fes/
+* https://plaza.rakuten.co.jp/personasite/
 * https://gamefaqs.gamespot.com/ps2/937269-shin-megami-tensei-persona-3-fes/faqs/53404
 
 ### Skill List
@@ -336,10 +338,13 @@
 
 ### Data Sources
 * *Persona 5 Official Complete Guide* (ISBN-13: 9784048924160)
-* http://spwiki.net/persona5/
-* http://bozumemo.blogspot.com/p/5.html
-* https://wikiwiki.jp/persona5r/
+* *Persona 5 The Royal Official Complete Guide* (ISBN-13: 9784049128871)
 * https://h1g.jp/p5r/
+* http://spwiki.net/persona5/
+* https://wikiwiki.jp/persona5r/
+* https://omoteura.com/persona5/
+* https://p5r.gamekouryaku-no-ki.com/
+* http://bozumemo.blogspot.com/p/5.html
 * https://docs.google.com/spreadsheets/d/1kPsA9fwhOyqyh7qLNfW2Xprc7wDK6RQ5d3Re4f7cTKk
 
 ### Skill List
