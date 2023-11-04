@@ -126,7 +126,7 @@ export class DemonEntryComponent {
     }
 
     this.skillLvls.sort((a, b) =>
-      (a.skill.level - b.skill.level) * 20 +
+      (a.skill.level - b.skill.level) * 200 +
       this.compConfig.elemOrder[a.skill.element] - this.compConfig.elemOrder[b.skill.element]
     );
   }

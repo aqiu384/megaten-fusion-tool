@@ -112,8 +112,9 @@
 
 ## <a name="smt5"></a>[Shin Megami Tensei V](https://aqiu384.github.io/megaten-fusion-tool/smt5)
 ### Data Sources
-* https://www.youtube.com/user/atlustube
+* *Shin Megami Tensei V Official Perfect Guide* (ISBN-13: 9784047335806)
 * https://hyperwiki.jp/smt5/
+* https://dswiipspwikips3.jp/shin-megami-tensei-5/
 
 ### Formulas
 * Recovery skill heal amount: \[(Skill base dmg) + (Skill boost %) * (Target max HP)\] * (Recovery skill potential heal boost) * (Heal pleroma boost) * (Bowl of Hygieia boost)
@@ -366,9 +367,9 @@
 
 ## <a name="pq"></a>[Persona Q: Shadow of the Labyrinth](https://aqiu384.github.io/megaten-fusion-tool/pq)
 ### Data Sources
-* https://gamefaqs.gamespot.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70858
-* https://gamefaqs.gamespot.com/3ds/739685-persona-q-shadow-of-the-labyrinth/faqs/70843
+* *Persona Q: Shadow of the Labyrinth Official Perfect Guide* (ISBN-13: 9784047298224)
 * https://wikiwiki.jp/personaqr/
+* https://gamers-high.com/persona-q/
 
 ### QR Code Unique Skills
 * Unlike Strange Journey passwords, QR codes are valid even with unique skills
