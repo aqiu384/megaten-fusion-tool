@@ -273,6 +273,11 @@
 ### Data Sources
 * https://www31.atwiki.jp/abaddon/pages/37.html
 
+## <a name="sh2"></a>[Soul Hackers 2](https://aqiu384.github.io/megaten-fusion-tool/sh2)
+### Data Sources
+* *Soul Hackers 2 The Complete Guide* (ISBN-13: 9784047336254)
+* https://kamigame.jp/soul-hackers2/index.html
+
 ## <a name="p1"></a>[Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/p1)
 ### Data Sources
 * http://persona1.wikidot.com

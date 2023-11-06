@@ -59,14 +59,6 @@ for (const [race, entry] of Object.entries(RACIAL_SKILLS_JSON)) {
 }
 
 for (const dataJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
-  for (const entry of Object.values(dataJson)) {
-    entry['skills'] = Object.assign({}, entry['command'] || {}, entry['passive'] || {});
-
-    if (rskillLookup[entry.race]) {
-      entry['skills'][rskillLookup[entry.race]] = 0;
-    }
-  }
-
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
     if (dataJson[name]) {
       dataJson[name]['prereq'] = prereq

@@ -1,424 +1,845 @@
 {
   "Agares": {
-    "command": {"Gigajama": 58, "Mazandyne": 3317, "Tetrakarn": 59},
+    "auctions": {
+      "6322202": 6000,
+      "6722322": 6300
+    },
+    "cycle": "2223423423452345",
+    "growths": [6.2, 2.4, 2],
     "lvl": 57,
-    "passive": {"Fire Amp": 3321, "Force Amp": 3319, "Phys Drain": 0},
+    "price": 6100,
     "race": "Fallen",
     "resists": "ss--sw",
-    "stats": [458, 177, 21, 17, 17, 18]
+    "skills": {
+      "Phys Drain": 0.1,
+      "Sacrifice": 0.2,
+      "Gigajama": 58,
+      "Tetrakarn": 59,
+      "Mazandyne": 3317.1921,
+      "Force Amp": 3319.21,
+      "Fire Amp": 3321.0
+    },
+    "stats": [0, 458, 177, 21, 17, 17, 18]
   },
   "Amaterasu": {
-    "command": {"Prayer": 0, "Recarmloss": 74},
+    "cycle": "3333234523452345",
+    "growths": [5.0, 3.0, 3],
     "lvl": 73,
     "race": "Megami",
     "resists": "-n--n-",
-    "stats": [465, 306, 21, 29, 20, 19],
-    "unique": true
+    "skills": {
+      "Prayer": 0.1,
+      "Affection": 0.2,
+      "Recarmloss": 74
+    },
+    "stats": [1, 465, 306, 21, 29, 20, 19]
   },
   "Ananta": {
-    "command": {"Makarakarn": 0},
+    "cycle": "2242423423452345",
+    "growths": [7.0, 2.0, 2],
     "lvl": 71,
-    "passive": {"Attack All": 72},
     "race": "Snake",
     "resists": "-sss-w",
-    "stats": [665, 180, 30, 19, 24, 13],
-    "unique": true
+    "skills": {
+      "Makarakarn": 0.1,
+      "Constrict": 0.2,
+      "Attack All": 72
+    },
+    "stats": [1, 665, 180, 30, 19, 24, 13]
   },
   "Arioch": {
-    "command": {"Deathbound": 0, "Tetrakarn": 0},
+    "cycle": "2245234523452345",
+    "growths": [7.5, 1.0, 2],
     "lvl": 56,
     "race": "Vile",
     "resists": "nws-sw",
-    "stats": [555, 70, 23, 14, 18, 17],
-    "unique": true
+    "skills": {
+      "Deathbound": 0.1,
+      "Tetrakarn": 0.2,
+      "Chaos Wave": 0.3
+    },
+    "stats": [1, 555, 70, 23, 14, 18, 17]
   },
   "Astaroth": {
-    "command": {"Deathbound": 54},
+    "cycle": "2235234523452345",
+    "growths": [6.0, 2.0, 2],
     "lvl": 51,
-    "passive": {"Null Curse": 0},
     "race": "Tyrant",
     "resists": "-wsss-",
-    "stats": [372, 136, 27, 17, 11, 13],
-    "unique": true
+    "skills": {
+      "Null Curse": 0.1,
+      "Tyranny": 0.2,
+      "Deathbound": 54
+    },
+    "stats": [1, 372, 136, 27, 17, 11, 13]
   },
   "Asura": {
-    "command": {"Megidolaon": 0},
+    "cycle": "2234234523452345",
+    "growths": [8.0, 2.0, 2],
     "lvl": 80,
     "race": "Deity",
     "resists": "-d-s--",
-    "stats": [824, 206, 28, 23, 23, 22],
-    "unique": true
+    "skills": {
+      "Megidolaon": 0.1,
+      "Awakening": 0.2
+    },
+    "stats": [1, 824, 206, 28, 23, 23, 22]
   },
   "Baphomet": {
-    "command": {"Holy Dance": 0},
+    "cycle": "2225234523452345",
+    "growths": [6.0, 2.0, 2],
     "lvl": 69,
-    "passive": {"Avenge": 71},
     "race": "Vile",
     "resists": "-ddsss",
-    "stats": [522, 176, 26, 19, 18, 22],
-    "unique": true
+    "skills": {
+      "Holy Dance": 0.1,
+      "Chaos Wave": 0.2,
+      "Avenge": 71
+    },
+    "stats": [1, 522, 176, 26, 19, 18, 22]
   },
   "Barong": {
-    "command": {"Maziodyne": 3319},
+    "auctions": {
+      "6321122": 6500,
+      "6744422": 6800
+    },
+    "cycle": "2323234523452345",
+    "growths": [6.0, 2.0, 23],
     "lvl": 63,
-    "passive": {"Elec Amp": 3321, "Mana Aid": 0},
+    "price": 6600,
     "race": "Avatar",
     "resists": "-s-dw-",
-    "stats": [486, 170, 23, 22, 18, 17]
+    "skills": {
+      "Mana Aid": 0.1,
+      "Switch": 0.2,
+      "Maziodyne": 3319.21,
+      "Elec Amp": 3321.0
+    },
+    "stats": [0, 486, 170, 23, 22, 18, 17]
   },
   "Behemoth": {
+    "auctions": {
+      "6422221": 7300,
+      "6642234": 7600
+    },
+    "cycle": "2424242423452345",
+    "growths": [8.0, 0.8, 24],
     "lvl": 70,
-    "passive": {"Dual Shadow": 3319, "Extra Savings": 0},
+    "price": 7500,
     "race": "Wilder",
     "resists": "-wss--",
-    "stats": [808, 64, 37, 10, 31, 8]
+    "skills": {
+      "Extra Savings": 0.1,
+      "Devil Speed": 0.2,
+      "Dual Shadow": 3319.2
+    },
+    "stats": [0, 808, 64, 37, 10, 31, 8]
   },
   "Black Maria": {
-    "command": {"Diarahan": 0, "Mabufudyne": 3319},
+    "auctions": {
+      "6322112": 6500,
+      "6742422": 6800
+    },
+    "cycle": "3333234523452345",
+    "growths": [5.0, 3.2, 3],
     "lvl": 66,
-    "passive": {"Critical Heal": 3317, "Ice Drain": 67},
+    "price": 6600,
     "race": "Megami",
     "resists": "---ws-",
-    "stats": [415, 294, 20, 26, 17, 19]
+    "skills": {
+      "Diarahan": 0.1,
+      "Affection": 0.2,
+      "Ice Drain": 67,
+      "Critical Heal": 3317.0,
+      "Mabufudyne": 3319.21
+    },
+    "stats": [0, 415, 294, 20, 26, 17, 19]
   },
   "Cabracan": {
-    "command": {"Multi-Strike": 0},
+    "auctions": {
+      "6322122": 6800,
+      "6724224": 7200
+    },
+    "cycle": "2424524523452345",
+    "growths": [7.0, 2.0, 2],
     "lvl": 68,
-    "passive": {"Avenge": 69, "Phys Amp": 3317},
+    "price": 7000,
     "race": "Beast",
     "resists": "-s--wr",
-    "stats": [686, 156, 25, 10, 30, 19]
+    "skills": {
+      "Multi-Strike": 0.1,
+      "Animal Leg": 0.2,
+      "Avenge": 69,
+      "Phys Amp": 3317.1921
+    },
+    "stats": [0, 686, 156, 25, 10, 30, 19]
   },
   "Catoblepas": {
-    "command": {"Deathbound": 0},
+    "auctions": {
+      "6322221": 5200,
+      "6732242": 5800
+    },
+    "cycle": "2234234523452345",
+    "growths": [6.0, 2.0, 2],
     "lvl": 54,
-    "passive": {"+Stone": 3319, "Attack All": 55},
+    "price": 5600,
     "race": "Wilder",
     "resists": "-wsr-w",
-    "stats": [426, 144, 22, 18, 17, 13]
+    "skills": {
+      "Deathbound": 0.1,
+      "Devil Speed": 0.2,
+      "Attack All": 55,
+      "+Stone": 3319.21
+    },
+    "stats": [0, 426, 144, 22, 18, 17, 13]
   },
   "Culebre": {
-    "command": {"Bufudyne": 0, "Cursed Dance": 48, "Might Call": 3318},
+    "auctions": {
+      "5422122": 2500,
+      "5733422": 2800
+    },
+    "cycle": "2323234523452345",
+    "growths": [6.0, 2.0, 23],
     "lvl": 47,
-    "passive": {"Ice Repel": 49, "Life Surge": 3321},
+    "price": 2600,
     "race": "Dragon",
     "resists": "-wrss-",
-    "stats": [360, 130, 16, 18, 13, 13]
+    "skills": {
+      "Bufudyne": 0.1,
+      "Evil Wave": 0.2,
+      "Cursed Dance": 48,
+      "Ice Repel": 49,
+      "Might Call": 3318.0,
+      "Life Surge": 3321.0
+    },
+    "stats": [0, 360, 130, 16, 18, 13, 13]
   },
   "Fafnir": {
-    "command": {"Deathbound": 3319, "Final Strike": 3317},
+    "auctions": {
+      "6321202": 6500,
+      "6743223": 6800
+    },
+    "cycle": "2245234523452345",
+    "growths": [6.5, 2.0, 2],
     "lvl": 64,
-    "passive": {"Force Drain": 0},
+    "price": 6600,
     "race": "Dragon",
     "resists": "swnwd-",
-    "stats": [552, 162, 24, 17, 21, 18]
+    "skills": {
+      "Force Drain": 0.1,
+      "Evil Wave": 0.2,
+      "Final Strike": 3317.0,
+      "Deathbound": 3319.21
+    },
+    "stats": [0, 552, 162, 24, 17, 21, 18]
   },
   "Ganesha": {
-    "command": {"Mazandyne": 3320, "Megido": 0},
+    "auctions": {
+      "6322220": 6800,
+      "6633332": 7200
+    },
+    "cycle": "2345234523452345",
+    "growths": [6.0, 2.0, 2345],
     "lvl": 68,
-    "passive": {"Drain Hit": 3319, "Force Drain": 0},
+    "price": 7000,
     "race": "Genma",
     "resists": "--dwss",
-    "stats": [564, 182, 28, 23, 26, 7]
+    "skills": {
+      "Megido": 0.1,
+      "Force Drain": 0.2,
+      "Phantasma": 0.3,
+      "Drain Hit": 3319.2,
+      "Mazandyne": 3320.0
+    },
+    "stats": [0, 564, 182, 28, 23, 26, 7]
   },
   "Garuda": {
-    "command": {"Megidolaon": 0},
+    "cycle": "2525234523452345",
+    "growths": [6.0, 2.0, 25],
     "lvl": 71,
     "race": "Avian",
     "resists": "-s-swn",
-    "stats": [534, 178, 22, 18, 18, 28]
+    "skills": {
+      "Megidolaon": 0.1,
+      "Flight": 0.2
+    },
+    "stats": [0, 534, 178, 22, 18, 18, 28]
   },
   "Huoniao": {
-    "command": {"Makarakarn": 3317, "Maragidyne": 0, "Megido": 57},
+    "auctions": {
+      "6322022": 5700,
+      "6722232": 6100
+    },
+    "cycle": "3235234523452345",
+    "growths": [6.0, 2.0, 3],
     "lvl": 56,
-    "passive": {"Anti-Elec": 3321, "Fire Amp": 3319},
+    "price": 5900,
     "race": "Avian",
     "resists": "-nw---",
-    "stats": [420, 158, 14, 23, 14, 21]
+    "skills": {
+      "Maragidyne": 0.1,
+      "Flight": 0.2,
+      "Megido": 57,
+      "Makarakarn": 3317.1921,
+      "Fire Amp": 3319.21,
+      "Anti-Elec": 3321.0
+    },
+    "stats": [0, 420, 158, 14, 23, 14, 21]
   },
   "Ishtar": {
-    "command": {"Diarahan": 30, "Recarm": 0},
+    "cycle": "3323234523452345",
+    "growths": [5.0, 3.3, 3],
     "lvl": 29,
     "race": "Megami",
     "resists": "---s-n",
-    "stats": [190, 151, 9, 17, 9, 10]
+    "skills": {
+      "Recarm": 0.1,
+      "Affection": 0.2,
+      "Diarahan": 30
+    },
+    "stats": [0, 190, 151, 9, 17, 9, 10]
   },
   "Jahi": {
-    "command": {"Maziodyne": 3319, "Recarmloss": 0},
+    "auctions": {
+      "6322202": 6700,
+      "6742322": 7900
+    },
+    "cycle": "3323234523452345",
+    "growths": [5.1, 3.1, 3],
     "lvl": 67,
-    "passive": {"Elec Amp": 3317},
+    "price": 7100,
     "race": "Femme",
     "resists": "-swss-",
-    "stats": [428, 288, 21, 26, 17, 19]
+    "skills": {
+      "Recarmloss": 0.1,
+      "Devotion": 0.2,
+      "Elec Amp": 3317.1921,
+      "Maziodyne": 3319.21
+    },
+    "stats": [0, 428, 288, 21, 26, 17, 19]
   },
   "Kabuso": {
-    "command": {"Agi": 0, "Zan": 4},
+    "auctions": {
+      "3422221": 60,
+      "3733223": 75
+    },
+    "cycle": "2345234523452345",
+    "growths": [5.5, 2.7, 2345],
     "lvl": 2,
+    "price": 65,
     "race": "Beast",
     "resists": "-s-w-s",
-    "stats": [33, 21, 4, 6, 4, 4]
+    "skills": {
+      "Agi": 0.1,
+      "Animal Leg": 0.2,
+      "Zan": 4
+    },
+    "stats": [0, 33, 21, 4, 6, 4, 4]
   },
   "Kazfiel": {
-    "command": {"Judgement": 0},
+    "cycle": "2234234523452345",
+    "growths": [6.2, 2.0, 2],
     "lvl": 58,
-    "passive": {"Ice Repel": 0},
     "race": "Divine",
     "resists": "s-r---",
-    "stats": [483, 152, 23, 18, 20, 13]
+    "skills": {
+      "Judgement": 0.1,
+      "Ice Repel": 0.2,
+      "Blood Wine": 0.3
+    },
+    "stats": [0, 483, 152, 23, 18, 20, 13]
   },
   "Laksmi": {
-    "command": {"Mediarahan": 50, "Samarecarm": 52},
+    "cycle": "3333234523452345",
+    "growths": [4.5, 3.3, 3],
     "lvl": 48,
-    "passive": {"Mana Surge": 0},
     "race": "Megami",
     "resists": "----wr",
-    "stats": [279, 304, 14, 23, 14, 13]
+    "skills": {
+      "Mana Surge": 0.1,
+      "Affection": 0.2,
+      "Mediarahan": 50,
+      "Samarecarm": 52
+    },
+    "stats": [0, 279, 304, 14, 23, 14, 13]
   },
   "Loki": {
-    "command": {"Megido": 65},
+    "cycle": "3423423423452345",
+    "growths": [6.0, 2.0, 34],
     "lvl": 64,
-    "passive": {"Anti-All": 0},
     "race": "Tyrant",
     "resists": "ssssss",
-    "stats": [522, 174, 19, 23, 23, 15],
-    "unique": true
+    "skills": {
+      "Anti-All": 0.1,
+      "Tyranny": 0.2,
+      "Megido": 65
+    },
+    "stats": [1, 522, 174, 19, 23, 23, 15]
   },
   "Lorelei": {
-    "command": {"Amrita": 3318, "Diarahan": 0, "Makajamaon": 35},
+    "auctions": {
+      "5422122": 1300,
+      "5632323": 1600
+    },
+    "cycle": "3353534523452345",
+    "growths": [5.0, 3.0, 3],
     "lvl": 33,
-    "passive": {"Mana Surge": 3319, "Vigilant": 0},
+    "price": 1400,
     "race": "Fairy",
     "resists": "---ssw",
-    "stats": [200, 153, 8, 18, 7, 16]
+    "skills": {
+      "Diarahan": 0.1,
+      "Vigilant": 0.2,
+      "Charm/Glamour": 0.3,
+      "Makajamaon": 35,
+      "Amrita": 3318.0,
+      "Mana Surge": 3319.0
+    },
+    "stats": [0, 200, 153, 8, 18, 7, 16]
   },
   "Lucifuge": {
-    "command": {"Agidyne": 35},
+    "cycle": "3235234523452345",
+    "growths": [5.2, 2.8, 3],
     "lvl": 34,
-    "passive": {"Anti-Phys": 0},
     "race": "Tyrant",
     "resists": "sw-sss",
-    "stats": [233, 131, 12, 13, 11, 14],
-    "unique": true
+    "skills": {
+      "Anti-Phys": 0.1,
+      "Tyranny": 0.2,
+      "Agidyne": 35
+    },
+    "stats": [1, 233, 131, 12, 13, 11, 14]
   },
   "Macabre": {
-    "command": {"Final Strike": 66},
+    "auctions": {
+      "6320222": 6600,
+      "6743232": 7000
+    },
+    "cycle": "2245234523452345",
+    "growths": [6.0, 2.5, 2],
     "lvl": 65,
-    "passive": {"Fire Drain": 0, "Pierce": 3319},
+    "price": 6800,
     "race": "Jaki",
     "resists": "-d--ww",
-    "stats": [510, 200, 27, 15, 20, 19]
+    "skills": {
+      "Fire Drain": 0.1,
+      "Bind": 0.2,
+      "Final Strike": 66,
+      "Pierce": 3319.21
+    },
+    "stats": [0, 510, 200, 27, 15, 20, 19]
   },
   "Mahakala": {
-    "command": {"Might Call": 27},
+    "cycle": "4524524523452345",
+    "growths": [5.7, 2.2, 45],
     "lvl": 26,
-    "passive": {"Ares Aid": 0},
     "race": "Deity",
     "resists": "-sws-s",
-    "stats": [210, 83, 12, 12, 11, 7]
+    "skills": {
+      "Ares Aid": 0.1,
+      "Awakening": 0.2,
+      "Might Call": 27
+    },
+    "stats": [0, 210, 83, 12, 12, 11, 7]
   },
   "Metatron": {
+    "cycle": "232323423452",
+    "growths": [8.0, 2.0, 23],
     "lvl": 89,
-    "passive": {"Victory Cry": 0},
     "race": "Divine",
     "resists": "nnwwnr",
-    "stats": [904, 242, 29, 32, 24, 20],
-    "unique": true
+    "skills": {
+      "Victory Cry": 0.1,
+      "Blood Wine": 0.2
+    },
+    "stats": [1, 904, 242, 29, 32, 24, 20]
   },
   "Mithras": {
-    "command": {"Death Call": 63, "Tetrakarn": 64},
+    "auctions": {
+      "6321222": 6550,
+      "6734322": 6750
+    },
+    "cycle": "2323234523452345",
+    "growths": [6.2, 2.0, 23],
     "lvl": 62,
-    "passive": {"+Mute": 3317, "Pierce": 3319},
+    "price": 6650,
     "race": "Fallen",
     "resists": "-wwrrw",
-    "stats": [489, 166, 22, 21, 17, 18]
+    "skills": {
+      "Sacrifice": 0.1,
+      "Death Call": 63,
+      "Tetrakarn": 64,
+      "+Mute": 3317.0,
+      "Pierce": 3319.21
+    },
+    "stats": [0, 489, 166, 22, 21, 17, 18]
   },
   "Murmur": {
-    "command": {"Death Call": 0, "Holy Strike": 74},
+    "auctions": {
+      "6421222": 7500,
+      "6734322": 7800
+    },
+    "cycle": "2323234523452345",
+    "growths": [6.2, 2.0, 23],
     "lvl": 73,
-    "passive": {"Life Lift": 3321, "Phys Repel": 3319},
+    "price": 7600,
     "race": "Fallen",
     "resists": "-wrwrw",
-    "stats": [570, 196, 25, 25, 19, 19]
+    "skills": {
+      "Death Call": 0.1,
+      "Sacrifice": 0.2,
+      "Holy Strike": 74,
+      "Phys Repel": 3319.21,
+      "Life Lift": 3321.0
+    },
+    "stats": [0, 570, 196, 25, 25, 19, 19]
   },
   "Norn": {
-    "command": {"Prayer": 56},
+    "cycle": "3235234523452345",
+    "growths": [5.0, 3.0, 3],
     "lvl": 55,
-    "passive": {"Mana Aid": 57},
     "race": "Megami",
     "resists": "-s--rs",
-    "stats": [345, 231, 17, 22, 14, 18],
-    "unique": true
+    "skills": {
+      "Affection": 0.1,
+      "Prayer": 56,
+      "Mana Aid": 57
+    },
+    "stats": [1, 345, 231, 17, 22, 14, 18]
   },
   "Nyarlathotep": {
+    "cycle": "2222234523452345",
+    "growths": [5.0, 3.0, 2],
     "lvl": 78,
-    "passive": {"Mana Aid": 0},
     "race": "Vile",
     "resists": "-sssss",
-    "stats": [485, 300, 30, 22, 19, 23],
-    "unique": true
+    "skills": {
+      "Mana Aid": 0.1,
+      "Chaos Wave": 0.2
+    },
+    "stats": [1, 485, 300, 30, 22, 19, 23]
   },
   "Odin": {
-    "command": {"Shield All": 40},
+    "cycle": "3323234523452345",
+    "growths": [5.7, 2.5, 3],
     "lvl": 38,
-    "passive": {"Null Elec": 0},
     "race": "Deity",
     "resists": "--snws",
-    "stats": [296, 142, 11, 19, 14, 10],
-    "unique": true
+    "skills": {
+      "Null Elec": 0.1,
+      "Awakening": 0.2,
+      "Shield All": 40
+    },
+    "stats": [1, 296, 142, 11, 19, 14, 10]
   },
   "Okuninushi": {
-    "command": {"Holy Strike": 0},
+    "cycle": "2323234523452345",
+    "growths": [8.0, 2.0, 23],
     "lvl": 87,
-    "passive": {"Anti-All": 89},
     "race": "Kishin",
     "resists": "-r--sw",
-    "stats": [912, 218, 31, 22, 27, 23],
-    "unique": true
+    "skills": {
+      "Holy Strike": 0.1,
+      "Double Up": 0.2,
+      "Anti-All": 89
+    },
+    "stats": [1, 912, 218, 31, 22, 27, 23]
   },
   "Ongyo-ki": {
-    "command": {"Hassohappa": 0, "Piercing Hit": 85},
+    "cycle": "2222234523452345",
+    "growths": [7.0, 1.0, 2],
     "lvl": 83,
-    "passive": {"Null Elec": 0},
     "race": "Touki",
     "resists": "-w-n--",
-    "stats": [749, 104, 31, 21, 24, 23],
-    "unique": true
+    "skills": {
+      "Hassohappa": 0.1,
+      "Null Elec": 0.2,
+      "Aggravate": 0.3,
+      "Piercing Hit": 85
+    },
+    "stats": [1, 749, 104, 31, 21, 24, 23]
   },
   "Orochi": {
-    "command": {"Deathbound": 3321, "Hassohappa": 61},
+    "auctions": {
+      "6421222": 6000,
+      "6734232": 6400
+    },
+    "cycle": "2424242423452345",
+    "growths": [7.0, 1.0, 24],
     "lvl": 59,
-    "passive": {"Ares Aid": 3318, "Crisis Might": 60},
+    "price": 6200,
     "race": "Snake",
     "resists": "-dw--s",
-    "stats": [560, 73, 26, 14, 21, 14]
+    "skills": {
+      "Constrict": 0.1,
+      "Crisis Might": 60,
+      "Hassohappa": 61,
+      "Ares Aid": 3318.1921,
+      "Deathbound": 3321.0
+    },
+    "stats": [0, 560, 73, 26, 14, 21, 14]
   },
   "Rangda": {
-    "command": {"Diajama": 51, "Maragi": 3317},
+    "auctions": {
+      "5322022": 2600,
+      "5632224": 3000
+    },
+    "cycle": "2245234523452345",
+    "growths": [5.0, 3.0, 2],
     "lvl": 49,
-    "passive": {"Fire Amp": 3320, "Phys Repel": 52, "Retaliate": 3319},
+    "price": 2800,
     "race": "Femme",
     "resists": "r--wss",
-    "stats": [330, 183, 20, 12, 17, 16]
+    "skills": {
+      "Devotion": 0.1,
+      "Diajama": 51,
+      "Phys Repel": 52,
+      "Maragi": 3317.0,
+      "Retaliate": 3319.2,
+      "Fire Amp": 3320.0
+    },
+    "stats": [0, 330, 183, 20, 12, 17, 16]
   },
   "Remiel": {
-    "command": {"Samarecarm": 0},
+    "cycle": "2223234523452345",
+    "growths": [6.8, 2.8, 2],
     "lvl": 75,
-    "passive": {"Phys Drain": 0},
     "race": "Divine",
     "resists": "ns-s--",
-    "stats": [639, 282, 27, 26, 19, 19],
-    "unique": true
+    "skills": {
+      "Samarecarm": 0.1,
+      "Phys Drain": 0.2,
+      "Blood Wine": 0.3
+    },
+    "stats": [1, 639, 282, 27, 26, 19, 19]
   },
   "Rukh": {
-    "command": {"Mabufudyne": 47},
+    "cycle": "4424234523452345",
+    "growths": [6.0, 2.0, 4],
     "lvl": 43,
-    "passive": {"Dual Shadow": 0},
     "race": "Avian",
     "resists": "-w-ss-",
-    "stats": [366, 110, 19, 12, 18, 12]
+    "skills": {
+      "Dual Shadow": 0.1,
+      "Flight": 0.2,
+      "Mabufudyne": 47
+    },
+    "stats": [0, 366, 110, 19, 12, 18, 12]
   },
   "Seiryuu": {
-    "command": {"Mazio": 48, "Maziodyne": 3321},
+    "auctions": {
+      "5320222": 2800,
+      "5732432": 3200
+    },
+    "cycle": "2524524523452345",
+    "growths": [6.0, 2.0, 25],
     "lvl": 46,
-    "passive": {"Elec Amp": 49, "Elec Repel": 50},
+    "price": 3000,
     "race": "Snake",
     "resists": "-sssws",
-    "stats": [360, 116, 19, 12, 14, 17]
+    "skills": {
+      "Constrict": 0.1,
+      "Mazio": 48,
+      "Elec Amp": 49,
+      "Elec Repel": 50,
+      "Maziodyne": 3321.0
+    },
+    "stats": [0, 360, 116, 19, 12, 14, 17]
   },
   "Shiva": {
-    "command": {"Hassohappa": 0},
+    "cycle": "2424234523452345",
+    "growths": [6.0, 2.0, 24],
     "lvl": 61,
     "race": "Deity",
     "resists": "sssssn",
-    "stats": [504, 162, 23, 20, 23, 18],
-    "unique": true
+    "skills": {
+      "Hassohappa": 0.1,
+      "Awakening": 0.2
+    },
+    "stats": [1, 504, 162, 23, 20, 23, 18]
   },
   "Spriggan": {
+    "auctions": {
+      "6322220": 5300,
+      "6722232": 5800
+    },
+    "cycle": "3334234523452345",
+    "growths": [6.0, 2.0, 3],
     "lvl": 54,
-    "passive": {"Dual Shadow": 55, "Life Surge": 3319},
+    "price": 5600,
     "race": "Fairy",
     "resists": "s--nnw",
-    "stats": [432, 156, 12, 24, 18, 16]
+    "skills": {
+      "Charm/Glamour": 0.1,
+      "Dual Shadow": 55,
+      "Life Surge": 3319.21
+    },
+    "stats": [0, 432, 156, 12, 24, 18, 16]
   },
   "Sraosha": {
-    "command": {"Mazandyne": 3319, "Maziodyne": 0, "Prayer": 66},
+    "auctions": {
+      "6321222": 6600,
+      "6722522": 7000
+    },
+    "cycle": "3335234523452345",
+    "growths": [6.5, 2.2, 3],
     "lvl": 65,
-    "passive": {"Elec Amp": 3317, "Elec Drain": 0},
+    "price": 6800,
     "race": "Divine",
     "resists": "--wd--",
-    "stats": [520, 204, 15, 28, 15, 23]
+    "skills": {
+      "Maziodyne": 0.1,
+      "Elec Drain": 0.2,
+      "Blood Wine": 0.3,
+      "Prayer": 66,
+      "Elec Amp": 3317.1921,
+      "Mazandyne": 3319.0
+    },
+    "stats": [0, 520, 204, 15, 28, 15, 23]
   },
   "Susano-o": {
-    "command": {"Mazandyne": 0, "Piercing Hit": 0},
+    "cycle": "2323423423452345",
+    "growths": [6.0, 2.0, 23],
     "lvl": 72,
     "race": "Deity",
     "resists": "r-wsd-",
-    "stats": [552, 194, 29, 25, 20, 12],
-    "unique": true
+    "skills": {
+      "Piercing Hit": 0.1,
+      "Mazandyne": 0.2,
+      "Awakening": 0.3
+    },
+    "stats": [1, 552, 194, 29, 25, 20, 12]
   },
   "Tao Tie": {
-    "command": {"Makajamaon": 0, "Megido": 48},
+    "cycle": "3234234523452345",
+    "growths": [5.5, 3.0, 3],
     "lvl": 47,
     "race": "Vile",
     "resists": "--ss-w",
-    "stats": [352, 195, 15, 18, 17, 12],
-    "unique": true
+    "skills": {
+      "Makajamaon": 0.1,
+      "Chaos Wave": 0.2,
+      "Megido": 48
+    },
+    "stats": [1, 352, 195, 15, 18, 17, 12]
   },
   "Tokebi": {
-    "command": {"Mow Down": 27},
+    "cycle": "2345234523452345",
+    "growths": [4.5, 2.5, 2345],
     "lvl": 26,
-    "passive": {"Anti-Fire": 0},
     "race": "Touki",
     "resists": "-sss-w",
-    "stats": [162, 92, 11, 11, 10, 10]
+    "skills": {
+      "Anti-Fire": 0.1,
+      "Aggravate": 0.2,
+      "Mow Down": 27
+    },
+    "stats": [0, 162, 92, 11, 11, 10, 10]
   },
   "Troll": {
-    "command": {"Mabufudyne": 3317, "Piercing Hit": 0},
+    "auctions": {
+      "6322121": 7000,
+      "6732522": 7300
+    },
+    "cycle": "2232323423452345",
+    "growths": [6.0, 2.2, 2],
     "lvl": 69,
-    "passive": {"Ice Amp": 3319},
+    "price": 7100,
     "race": "Fairy",
     "resists": "-wdw--",
-    "stats": [528, 202, 30, 23, 19, 13]
+    "skills": {
+      "Piercing Hit": 0.1,
+      "Charm/Glamour": 0.2,
+      "Mabufudyne": 3317.1921,
+      "Ice Amp": 3319.21
+    },
+    "stats": [0, 528, 202, 30, 23, 19, 13]
   },
   "Tschaggatta": {
-    "command": {"Judgement": 62, "Tetrakarn": 3319},
+    "auctions": {
+      "6321222": 6200,
+      "6732322": 6500
+    },
+    "cycle": "5345234523452345",
+    "growths": [6.3, 1.7, 5],
     "lvl": 60,
-    "passive": {"Fire Amp": 3317},
+    "price": 6400,
     "race": "Genma",
     "resists": "--dwrs",
-    "stats": [504, 135, 12, 20, 20, 24]
+    "skills": {
+      "Phantasma": 0.1,
+      "Judgement": 62,
+      "Fire Amp": 3317.1921,
+      "Tetrakarn": 3319.21
+    },
+    "stats": [0, 504, 135, 12, 20, 20, 24]
   },
   "Vivian": {
-    "command": {"Diarahan": 3319, "Drain": 0, "Ziodyne": 46},
+    "auctions": {
+      "5422122": 2300,
+      "5632233": 2500
+    },
+    "cycle": "333534523452345",
+    "growths": [4.5, 3.0, 3],
     "lvl": 45,
-    "passive": {"+Paralyze": 3318, "Elec Repel": 47, "Mana Surge": 0},
+    "price": 2400,
     "race": "Fairy",
     "resists": "-s-ds-",
-    "stats": [261, 261, 10, 22, 13, 13]
+    "skills": {
+      "Drain": 0.1,
+      "Mana Surge": 0.2,
+      "Charm/Glamour": 0.3,
+      "Ziodyne": 46,
+      "Elec Repel": 47,
+      "+Paralyze": 3318.2,
+      "Diarahan": 3319.2
+    },
+    "stats": [0, 261, 261, 10, 22, 13, 13]
   },
   "Yaksa": {
-    "command": {"Deathbound": 53, "Diarahan": 0},
+    "auctions": {
+      "6421222": 5000,
+      "6732342": 5300
+    },
+    "cycle": "2252524523452345",
+    "growths": [7.0, 1.0, 2],
     "lvl": 52,
-    "passive": {"Null Fire": 54, "Pierce": 3321},
+    "price": 5100,
     "race": "Touki",
     "resists": "-n-sws",
-    "stats": [462, 63, 25, 11, 14, 18]
+    "skills": {
+      "Diarahan": 0.1,
+      "Aggravate": 0.2,
+      "Deathbound": 53,
+      "Null Fire": 54,
+      "Pierce": 3321.0
+    },
+    "stats": [0, 462, 63, 25, 11, 14, 18]
   },
   "Yurlungur": {
-    "command": {"Dream Feast": 0, "Holy Dance": 86},
+    "cycle": "2424234523452345",
+    "growths": [7.0, 2.1, 24],
     "lvl": 85,
-    "passive": {"Anti-Most": 0},
     "race": "Snake",
     "resists": "-sd--s",
-    "stats": [791, 224, 35, 22, 28, 16],
-    "unique": true
+    "skills": {
+      "Dream Feast": 0.1,
+      "Anti-Most": 0.2,
+      "Constrict": 0.3,
+      "Holy Dance": 86
+    },
+    "stats": [1, 791, 224, 35, 22, 28, 16]
   },
   "Zouchou": {
-    "command": {"Agidyne": 51},
+    "cycle": "2223423423452345",
+    "growths": [8.0, 2.0, 2],
     "lvl": 50,
     "race": "Kishin",
     "resists": "----wn",
-    "stats": [536, 130, 21, 15, 17, 12],
-    "unique": true
+    "skills": {
+      "Double Up": 0.1,
+      "Agidyne": 51
+    },
+    "stats": [1, 536, 130, 21, 15, 17, 12]
   }
 }

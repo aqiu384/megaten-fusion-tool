@@ -25,7 +25,7 @@ export class Compendium implements ICompendium {
   }
 
   estimateDesuPrice(stats: number[]): number {
-    const x = stats.slice(2).reduce((acc, stat) => stat + acc, 0);
+    const x = stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0);
     return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
   }
 
