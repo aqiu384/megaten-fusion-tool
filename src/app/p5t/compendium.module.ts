@@ -35,7 +35,7 @@ for(const race of COMP_CONFIG_JSON.races) {
 
 for (const demon of Object.values(DEMON_DATA_JSON)) {
   demon['code'] = 1;
-  demon['inherit'] = demon['race'].substring(0, 3).toLowerCase();
+  demon['inherit'] = demon['race']
 }
 
 for (const skill of Object.values(SKILL_DATA_JSON)) {
@@ -44,7 +44,7 @@ for (const skill of Object.values(SKILL_DATA_JSON)) {
 }
 
 for (const demon of Object.values(DLC_DATA_JSON)) {
-  demon['inherit'] = demon['race'].substring(0, 3).toLowerCase();
+  demon['inherit'] = demon['race']
 }
 
 for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
@@ -65,7 +65,7 @@ export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   demonData: DEMON_DATA_JSON,
   dlcData: DLC_DATA_JSON,
-  baseStats: ['HP', 'MP', 'At', 'Bt'],
+  baseStats: ['HP', 'MP', 'MD', 'GD'],
   resistElems: [],
   inheritTypes,
   inheritElems: COMP_CONFIG_JSON.inheritElems,

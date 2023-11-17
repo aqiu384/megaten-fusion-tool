@@ -43,6 +43,7 @@ export class HomeComponent implements OnInit {
     { game: 'Persona 5', abbr: 'p5' },
     { game: 'Persona 5 Royal', abbr: 'p5r' },
     { game: 'Persona 5 Strikers', abbr: 'p5s' },
+    { game: 'Persona 5 Tactica', abbr: 'p5t' },
     { game: 'Persona Q: Shadow of the Labyrinth', abbr: 'pq' },
     { game: 'Persona Q2: New Cinema Labyrinth', abbr: 'pq2' },
     { game: 'Majin Tensei', abbr: 'mjn1' },
