@@ -1,17 +1,689 @@
 {
+  "Agi": {
+    "cost": 1014,
+    "effect": "Deals light damage in a small area. Inflicts Burn.",
+    "elem": "fir",
+    "power": 45
+  },
+  "Agidyne": {
+    "cost": 1050,
+    "effect": "Deals heavy damage in a small area. Inflicts Burn.",
+    "elem": "fir",
+    "power": 125
+  },
+  "Agilao": {
+    "cost": 1032,
+    "effect": "Deals medium damage in a small area. Inflicts Burn.",
+    "elem": "fir",
+    "power": 85
+  },
+  "Ailment Shield": {
+    "cost": 1012,
+    "effect": "Automatically cures ailment on adjacent ally. Activates 1 time.",
+    "elem": "sup"
+  },
+  "Ailment Shield+": {
+    "cost": 1022,
+    "effect": "Automatically cures ailment on adjacent ally. Activates 2 times.",
+    "elem": "sup"
+  },
+  "Ambush": {
+    "cost": 1012,
+    "effect": "Shoots targets that enter area and stops action of any non-unique enemies. Activates 1 time.",
+    "elem": "sup"
+  },
+  "Ambush+": {
+    "cost": 1022,
+    "effect": "Shoots targets that enter area and stops action of any non-unique enemies. Activates 2 times.",
+    "elem": "sup"
+  },
+  "Angelic Instincts": {
+    "effect": "User recovers 30% HP when target is defeated.",
+    "elem": "pas"
+  },
+  "Attack Master": {
+    "effect": "Automatic Tarukaja at start of battle.",
+    "elem": "pas"
+  },
+  "Auto-Maraku": {
+    "effect": "Automatic Marakukaja at start of battle.",
+    "elem": "pas"
+  },
+  "Auto-Masuku": {
+    "effect": "Automatic Masukukaja at start of battle.",
+    "elem": "pas"
+  },
+  "Auto-Mataru": {
+    "effect": "Automatic Matarukaja at start of battle.",
+    "elem": "pas"
+  },
+  "Auto-Riser": {
+    "effect": "Automatic Heat Riser at start of battle.",
+    "elem": "pas"
+  },
+  "Berserker": {
+    "effect": "Increases damage dealt with each subsequent melee attack.",
+    "elem": "pas"
+  },
+  "Blessing of Yggdrasil": {
+    "effect": "Reduces SP cost of One More actions by 40%.",
+    "elem": "pas"
+  },
+  "Brightening Star": {
+    "effect": "Increases the amount of Voltage gained.",
+    "elem": "pas"
+  },
+  "Bufu": {
+    "cost": 1014,
+    "effect": "Deals light damage in a small area. Inflicts Freeze.",
+    "elem": "ice",
+    "power": 35
+  },
+  "Bufudyne": {
+    "cost": 1050,
+    "effect": "Deals heavy damage in a small area. Inflicts Freeze.",
+    "elem": "ice",
+    "power": 105
+  },
   "Bufula": {
     "cost": 1032,
+    "effect": "Deals medium damage in a small area. Inflicts Freeze.",
     "elem": "ice",
     "power": 70
   },
+  "Bullet Break": {
+    "effect": "When Charge is active, knocks down targets with Ranged Attack.",
+    "elem": "pas"
+  },
+  "Champion's Pulse": {
+    "effect": "User recovers 12% HP when target is defeated.",
+    "elem": "pas"
+  },
+  "Daredevil": {
+    "effect": "Increases knock back distance by 2 squares.",
+    "elem": "pas"
+  },
+  "Deceptive Haze": {
+    "effect": "Decreases damage received from targets 4 or more squares away.",
+    "elem": "pas"
+  },
+  "Defense Master": {
+    "effect": "Automatic Rakukaja at start of battle.",
+    "elem": "pas"
+  },
+  "Dia": {
+    "cost": 1010,
+    "effect": "Moderately recovers HP of target ally.",
+    "elem": "rec",
+    "power": 65
+  },
+  "Diamrita": {
+    "cost": 1016,
+    "effect": "Moderately recovers HP of target ally and cures ailments.",
+    "elem": "rec",
+    "power": 65
+  },
+  "Diarahan": {
+    "cost": 1052,
+    "effect": "Fully recovers HP of 1 ally.",
+    "elem": "rec",
+    "power": 999
+  },
   "Diarama": {
     "cost": 1026,
+    "effect": "Greatly recovers HP of target ally.",
     "elem": "rec",
     "power": 155
   },
+  "Diaramrita": {
+    "cost": 1032,
+    "effect": "Moderately recovers HP of target ally and cures ailments.",
+    "elem": "rec",
+    "power": 155
+  },
+  "Divine Mind": {
+    "effect": "User restores 30% SP when target is defeated.",
+    "elem": "pas"
+  },
+  "Eagle Eyes": {
+    "effect": "Increases Ranged Attack by 2 squares.",
+    "elem": "pas"
+  },
+  "Easy Money": {
+    "effect": "Greatly increases money gained at end of battle.",
+    "elem": "pas"
+  },
+  "Efficiency Aficionado": {
+    "effect": "Increases EXP gained in battle.",
+    "elem": "pas"
+  },
+  "Eiga": {
+    "cost": 1028,
+    "effect": "Deals medium damage in a small area. Inflicts Despair.",
+    "elem": "cur",
+    "power": 70
+  },
+  "Eigaon": {
+    "cost": 1045,
+    "effect": "Deals heavy damage in a small area. Inflicts Despair.",
+    "elem": "cur",
+    "power": 105
+  },
+  "Eiha": {
+    "cost": 1012,
+    "effect": "Deals light damage in a small area. Inflicts Despair.",
+    "elem": "cur",
+    "power": 35
+  },
+  "Endless Fighting Spirit": {
+    "effect": "Increases damage dealt when HP is above 50%.",
+    "elem": "pas"
+  },
+  "Energized Spirit": {
+    "effect": "User restores 7% SP when target is defeated.",
+    "elem": "pas"
+  },
+  "Finishing Blow": {
+    "effect": "Increases damage dealt to Downed targets.",
+    "elem": "pas"
+  },
+  "First Aid": {
+    "cost": 1019,
+    "effect": "HP automatically recovers when a nearby ally takes damage. Activates 1 time.",
+    "elem": "sup"
+  },
+  "First Aid+": {
+    "cost": 1034,
+    "effect": "HP automatically recovers when a nearby ally takes damage. Activates 2 times.",
+    "elem": "sup"
+  },
+  "Flourish in Hardship": {
+    "effect": "Decreases damage received when inflicted with an ailment.",
+    "elem": "pas"
+  },
+  "Fool's Reckoning": {
+    "effect": "Greatly increases damage dealt to targets not in Cover.",
+    "elem": "pas"
+  },
+  "Frei": {
+    "cost": 1014,
+    "effect": "Deals light damage in a medium area. Creates a Vortex.",
+    "elem": "nuk",
+    "power": 25
+  },
+  "Freidyne": {
+    "cost": 1050,
+    "effect": "Deals heavy damage in a medium area. Creates a Vortex.",
+    "elem": "nuk",
+    "power": 85
+  },
+  "Freila": {
+    "cost": 1032,
+    "effect": "Deals medium damage in a medium area. Creates a Vortex.",
+    "elem": "nuk",
+    "power": 55
+  },
+  "Garu": {
+    "cost": 1008,
+    "effect": "Deals light damage. Sweeps away target.",
+    "elem": "win",
+    "power": 25
+  },
+  "Garudyne": {
+    "cost": 1040,
+    "effect": "Deals heavy damage. Sweeps away target.",
+    "elem": "win",
+    "power": 85
+  },
   "Garula": {
     "cost": 1024,
+    "effect": "Deals medium damage. Sweeps away target.",
     "elem": "win",
     "power": 55
+  },
+  "God-Like Speed": {
+    "effect": "Increases Movement by 1 square.",
+    "elem": "pas"
+  },
+  "Goddess's Embrace": {
+    "effect": "Greatly restores HP and SP at end of each turn.",
+    "elem": "pas"
+  },
+  "Hawkeye": {
+    "effect": "Increases Ranged Attack by 1 square.",
+    "elem": "pas"
+  },
+  "Hazy Mirage": {
+    "effect": "Greatly decreases damage received from targets 4 or more squares away.",
+    "elem": "pas"
+  },
+  "Heat Riser": {
+    "cost": 1060,
+    "effect": "Increases Attack, Defense, and Movement for 1 ally for 3 turns.",
+    "elem": "sup"
+  },
+  "Heavenly Gift": {
+    "effect": "Greatly increases the amount of Voltage gained.",
+    "elem": "pas"
+  },
+  "Immunity": {
+    "effect": "Prevents infliction of any ailment.",
+    "elem": "pas"
+  },
+  "Impenetrable Fortress": {
+    "effect": "Greatly decreases damage received when ally is in an adjacent square.",
+    "elem": "pas"
+  },
+  "Indomitable Perseverance": {
+    "effect": "Decreases damage received when HP is less than 50%.",
+    "elem": "pas"
+  },
+  "Indomitable Spirit": {
+    "effect": "Greatly decreases damage received when inflicted with an ailment.",
+    "elem": "pas"
+  },
+  "Invigorate 1": {
+    "effect": "Slightly restores SP at end of each turn.",
+    "elem": "pas"
+  },
+  "Invigorate 2": {
+    "effect": "Moderately restores SP at end of each turn.",
+    "elem": "pas"
+  },
+  "Invigorate 3": {
+    "effect": "Greatly restores SP at end of each turn.",
+    "elem": "pas"
+  },
+  "Invigorated Soul": {
+    "effect": "User restores 12% SP when target is defeated.",
+    "elem": "pas"
+  },
+  "Iron Body": {
+    "effect": "Decreases damage received for rest of turn if attacked twice.",
+    "elem": "pas"
+  },
+  "Keen Eye": {
+    "effect": "Increases drop rate of rare Personas.",
+    "elem": "pas"
+  },
+  "Knack for Conflict": {
+    "effect": "Greatly increases EXP gained in battle.",
+    "elem": "pas"
+  },
+  "Kouga": {
+    "cost": 1028,
+    "effect": "Deals medium damage in a small area. Inflicts Dizzy.",
+    "elem": "ble",
+    "power": 76
+  },
+  "Kougaon": {
+    "cost": 1045,
+    "effect": "Deals heavy damage in a small area. Inflicts Dizzy.",
+    "elem": "ble",
+    "power": 112
+  },
+  "Kouha": {
+    "cost": 1012,
+    "effect": "Deals light damage in a small area. Inflicts Dizzy.",
+    "elem": "ble",
+    "power": 40
+  },
+  "Mabufu": {
+    "cost": 1024,
+    "effect": "Deals light damage in a medium area. Inflicts Freeze.",
+    "elem": "ice",
+    "power": 35
+  },
+  "Mabufudyne": {
+    "cost": 1062,
+    "effect": "Deals heavy damage in a medium area. Inflicts Freeze.",
+    "elem": "ice",
+    "power": 105
+  },
+  "Mabufula": {
+    "cost": 1042,
+    "effect": "Deals medium damage in a medium area. Inflicts Freeze.",
+    "elem": "ice",
+    "power": 70
+  },
+  "Maeiga": {
+    "cost": 1036,
+    "effect": "Deals medium damage in a medium area. Inflicts Despair.",
+    "elem": "cur",
+    "power": 70
+  },
+  "Maeigaon": {
+    "cost": 1054,
+    "effect": "Deals heavy damage in a medium area. Inflicts Despair.",
+    "elem": "cur",
+    "power": 105
+  },
+  "Maeiha": {
+    "cost": 1018,
+    "effect": "Deals light damage in a medium area. Inflicts Despair.",
+    "elem": "cur",
+    "power": 35
+  },
+  "Mafrei": {
+    "cost": 1024,
+    "effect": "Deals light damage in a large area. Creates a Vortex.",
+    "elem": "nuk",
+    "power": 25
+  },
+  "Mafreidyne": {
+    "cost": 1062,
+    "effect": "Deals heavy damage in a large area. Creates a Vortex.",
+    "elem": "nuk",
+    "power": 85
+  },
+  "Mafreila": {
+    "cost": 1042,
+    "effect": "Deals medium damage in a large area. Creates a Vortex.",
+    "elem": "nuk",
+    "power": 55
+  },
+  "Magaru": {
+    "cost": 1012,
+    "effect": "Deals light damage in a small area. Sweeps away target.",
+    "elem": "win",
+    "power": 25
+  },
+  "Magarudyne": {
+    "cost": 1048,
+    "effect": "Deals heavy damage in a small area. Sweeps away target.",
+    "elem": "win",
+    "power": 85
+  },
+  "Magarula": {
+    "cost": 1030,
+    "effect": "Deals medium damage in a small area. Sweeps away target.",
+    "elem": "win",
+    "power": 55
+  },
+  "Magic Bullet": {
+    "effect": "Greatly increases damage dealt to targets in Cover.",
+    "elem": "pas"
+  },
+  "Makouga": {
+    "cost": 1036,
+    "effect": "Deals medium damage in a medium area. Inflicts Dizzy.",
+    "elem": "ble",
+    "power": 76
+  },
+  "Makougaon": {
+    "cost": 1054,
+    "effect": "Deals heavy damage in a medium area. Inflicts Dizzy.",
+    "elem": "ble",
+    "power": 112
+  },
+  "Makouha": {
+    "cost": 1018,
+    "effect": "Deals light damage in a medium area. Inflicts Dizzy.",
+    "elem": "ble",
+    "power": 40
+  },
+  "Mapsi": {
+    "cost": 1018,
+    "effect": "Deals light damage in a small area. Hypnotizes target.",
+    "elem": "psy",
+    "power": 25
+  },
+  "Mapsio": {
+    "cost": 1036,
+    "effect": "Deals medium damage in a small area. Hypnotizes target.",
+    "elem": "psy",
+    "power": 55
+  },
+  "Mapsiodyne": {
+    "cost": 1054,
+    "effect": "Deals heavy damage in a small area. Hypnotizes target.",
+    "elem": "psy",
+    "power": 85
+  },
+  "Maragi": {
+    "cost": 1024,
+    "effect": "Deals light damage in a medium area. Inflicts Burn.",
+    "elem": "fir",
+    "power": 45
+  },
+  "Maragidyne": {
+    "cost": 1062,
+    "effect": "Deals heavy damage in a medium area. Inflicts Burn.",
+    "elem": "fir",
+    "power": 125
+  },
+  "Maragion": {
+    "cost": 1042,
+    "effect": "Deals medium damage in a medium area. Inflicts Burn.",
+    "elem": "fir",
+    "power": 85
+  },
+  "Marakukaja": {
+    "cost": 1060,
+    "effect": "Raises Defense of all allies for 3 turns.",
+    "elem": "sup"
+  },
+  "Masukukaja": {
+    "cost": 1060,
+    "effect": "Raises Movement of all allies for 3 turns.",
+    "elem": "sup"
+  },
+  "Matarukaja": {
+    "cost": 1060,
+    "effect": "Raises Attack of all allies for 3 turns.",
+    "elem": "sup"
+  },
+  "Mazio": {
+    "cost": 1018,
+    "effect": "Deals light damage in a small area. Inflicts Shock.",
+    "elem": "ele",
+    "power": 45
+  },
+  "Maziodyne": {
+    "cost": 1054,
+    "effect": "Deals heavy damage in a small area. Inflicts Shock.",
+    "elem": "ele",
+    "power": 135
+  },
+  "Mazionga": {
+    "cost": 1036,
+    "effect": "Deals medium damage in a small area. Inflicts Shock.",
+    "elem": "ele",
+    "power": 90
+  },
+  "Media": {
+    "cost": 1034,
+    "effect": "Moderately recovers HP of all allies.",
+    "elem": "rec",
+    "power": 65
+  },
+  "Mediarahan": {
+    "cost": 1100,
+    "effect": "Fully recovers HP of all allies.",
+    "elem": "rec",
+    "power": 999
+  },
+  "Mediarama": {
+    "cost": 1068,
+    "effect": "Greatly recovers HP of all allies.",
+    "elem": "rec",
+    "power": 155
+  },
+  "Megido": {
+    "cost": 1035,
+    "effect": "Deals light damage in a large area.",
+    "elem": "alm",
+    "power": 75
+  },
+  "Megidola": {
+    "cost": 1055,
+    "effect": "Deals medium damage in a large area.",
+    "elem": "alm",
+    "power": 125
+  },
+  "Megidolaon": {
+    "cost": 1080,
+    "effect": "Deals heavy damage in a large area.",
+    "elem": "alm",
+    "power": 175
+  },
+  "Merciless Deliverance": {
+    "effect": "Greatly increases damage dealt to Downed targets.",
+    "elem": "pas"
+  },
+  "Mighty Cleave": {
+    "effect": "Melee attacks will also hit units 1 square to the left and right of target.",
+    "elem": "pas"
+  },
+  "Mighty Warrior": {
+    "effect": "Increases Attack when targeting 2 or more enemy units simultaneously.",
+    "elem": "pas"
+  },
+  "Minthe's Blessing": {
+    "effect": "Reduces SP cost of One More actions by 20%.",
+    "elem": "pas"
+  },
+  "One Man Army": {
+    "effect": "Greatly increases Attack when targeting 3 or more enemy units simultaneously.",
+    "elem": "pas"
+  },
+  "Psi": {
+    "cost": 1012,
+    "effect": "Deals light damage. Hypnotizes target.",
+    "elem": "psy",
+    "power": 25
+  },
+  "Psio": {
+    "cost": 1028,
+    "effect": "Deals medium damage. Hypnotizes target.",
+    "elem": "psy",
+    "power": 55
+  },
+  "Psiodyne": {
+    "cost": 1045,
+    "effect": "Deals heavy damage. Hypnotizes target.",
+    "elem": "psy",
+    "power": 85
+  },
+  "Punisher of the Reckless": {
+    "effect": "Increases damage dealt to targets not in Cover.",
+    "elem": "pas"
+  },
+  "Rakukaja": {
+    "cost": 1012,
+    "effect": "Raises Defense of target ally for 3 turns.",
+    "elem": "sup"
+  },
+  "Regenerate 1": {
+    "effect": "Slightly recovers HP at end of each turn.",
+    "elem": "pas"
+  },
+  "Regenerate 2": {
+    "effect": "Moderately recovers HP at end of each turn.",
+    "elem": "pas"
+  },
+  "Regenerate 3": {
+    "effect": "Greatly recovers HP at end of each turn.",
+    "elem": "pas"
+  },
+  "Rising Vigor": {
+    "effect": "Greatly increases damage dealt when HP is above 80%.",
+    "elem": "pas"
+  },
+  "Salt in the Wound": {
+    "effect": "Increases damage dealt to targets inflicted with an ailment.",
+    "elem": "pas"
+  },
+  "Sharp-Eyed Wildcat": {
+    "effect": "Increases damage dealt to targets in Cover.",
+    "elem": "pas"
+  },
+  "Slap to the Face": {
+    "effect": "Greatly increases damage dealt to targets inflicted with an ailment.",
+    "elem": "pas"
+  },
+  "Speed Master": {
+    "effect": "Automatic Sukukaja at start of Battle.",
+    "elem": "pas"
+  },
+  "Stalking Hunter": {
+    "effect": "Increases damage dealt when target is attacked from behind.",
+    "elem": "pas"
+  },
+  "Staunch Battle Formation": {
+    "effect": "Decreases damage received when ally is in an adjacent square.",
+    "elem": "pas"
+  },
+  "Steel Physique": {
+    "effect": "Greatly decreases damage received for rest of turn if attacked twice.",
+    "elem": "pas"
+  },
+  "Sukukaja": {
+    "cost": 1012,
+    "effect": "Raises Movement of target ally for 3 turns.",
+    "elem": "sup"
+  },
+  "Sustaining Relief": {
+    "effect": "Increases duration of support skills cast on allies by 2 turns.",
+    "elem": "pas"
+  },
+  "Tarukaja": {
+    "cost": 1012,
+    "effect": "Raises Attack of target ally for 3 turns.",
+    "elem": "sup"
+  },
+  "Torrent of Magic": {
+    "effect": "Increases damage dealt with each subsequent skill attack.",
+    "elem": "pas"
+  },
+  "Treasure Hunter": {
+    "effect": "Increases money gained at end of battle.",
+    "elem": "pas"
+  },
+  "Trigger Happy": {
+    "effect": "Increases damage dealt with each subsequent Ranged Attack.",
+    "elem": "pas"
+  },
+  "Triumphant Cheer": {
+    "effect": "Recovers 20% of HP/SP after defeating target.",
+    "elem": "pas"
+  },
+  "Unparalleled Strength": {
+    "effect": "Increases knock back distance by 5 squares.",
+    "elem": "pas"
+  },
+  "Unseen Messenger": {
+    "effect": "Greatly increases damage dealt when target is attacked from behind.",
+    "elem": "pas"
+  },
+  "Unyielding Will": {
+    "effect": "Greatly decreases damage received when HP is less than 50%.",
+    "elem": "pas"
+  },
+  "Warrior's Breath": {
+    "effect": "User recovers 7% HP when target is defeated.",
+    "elem": "pas"
+  },
+  "Warrior's Comradery": {
+    "effect": "Increases damage dealt when ally is in an adjacent square.",
+    "elem": "pas"
+  },
+  "Zio": {
+    "cost": 1012,
+    "effect": "Deals light damage. Inflicts Shock.",
+    "elem": "ele",
+    "power": 45
+  },
+  "Ziodyne": {
+    "cost": 1045,
+    "effect": "Deals heavy damage. Inflicts Shock.",
+    "elem": "ele",
+    "power": 135
+  },
+  "Zionga": {
+    "cost": 1028,
+    "effect": "Deals medium damage. Inflicts Shock.",
+    "elem": "ele",
+    "power": 90
   }
 }

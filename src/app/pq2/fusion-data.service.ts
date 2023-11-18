@@ -13,6 +13,10 @@ import {
 } from '../compendium/constants';
 import { CompendiumConfig } from './models';
 
+import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
+import { fuseWithDiffRace } from '../compendium/fusions/smt-nonelem-fusions';
+import { splitWithDiffRace } from '../compendium/fusions/smt-nonelem-fissions';
+
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
   fissionCalculator = P3_NORMAL_FISSION_CALCULATOR;
@@ -54,6 +58,11 @@ export class FusionDataService implements IFusionTrioService {
       raceOrder: compConfig.raceOrder
     });
     this.squareChart = this._squareChart$.asObservable();
+
+    if (compConfig.appCssClasses.includes('p5t')) {
+      this.fissionCalculator = new NormalFusionCalculator([splitWithDiffRace], []);
+      this.fusionCalculator = new NormalFusionCalculator([fuseWithDiffRace], []);
+    }
 
     const settings = JSON.parse(localStorage.getItem(compConfig.settingsKey));
 

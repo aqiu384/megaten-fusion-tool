@@ -261,7 +261,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     const { inheritElems } = this.recipeConfig;
     const innateSkills = Object.entries(demon.skills)
       .slice(0, this.internalMaxSkills)
-      .filter(s => s[1] === 0)
+      .filter(s => s[1] < 2)
       .map(s => this.compendium.getSkill(s[0]));
 
     for (let i = 0; i < inheritElems.length; i++) {
