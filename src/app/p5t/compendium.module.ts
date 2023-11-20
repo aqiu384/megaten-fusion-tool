@@ -13,6 +13,8 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 
 function getEnumOrder(target: string[]): { [key: string]: number } {
@@ -38,6 +40,10 @@ for (const demon of Object.values(DEMON_DATA_JSON)) {
   demon['inherit'] = 'alm';
   demon['skills'] = {};
   demon['skills'][demon.skill] = 0.1;
+}
+
+for (const [dname, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+  DEMON_DATA_JSON[dname]['prereq'] = prereq;
 }
 
 for (const skill of Object.values(SKILL_DATA_JSON)) {
@@ -79,7 +85,7 @@ export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
 
   normalTable: FUSION_CHART_JSON,
   hasTripleFusion: false,
-  specialRecipes: {},
+  specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'p5t-fusion-tool-settings',
   settingsVersion: 1709211400
