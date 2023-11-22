@@ -17,12 +17,10 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
-  }
-  return result;
+function estimatePrice(stats: number[]) {
+  const statSum = 1.5*stats[0] + 1*stats[1] + 0.75*stats[2] + 0.75*stats[3];
+  const price = 1164 + -2.29*statSum + 0.075*statSum**2;
+  return Math.floor(price);
 }
 
 const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -40,6 +38,14 @@ for (const demon of Object.values(DEMON_DATA_JSON)) {
   demon['inherit'] = 'alm';
   demon['skills'] = {};
   demon['skills'][demon.skill] = 0.1;
+  demon['price'] = estimatePrice(demon.stats);
+}
+
+for (const demon of Object.values(DLC_DATA_JSON)) {
+  demon['inherit'] = 'alm';
+  demon['skills'] = {};
+  demon['skills'][demon.skill] = 0.1;
+  demon['price'] = estimatePrice(demon.stats);
 }
 
 for (const [dname, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
@@ -50,12 +56,6 @@ for (const skill of Object.values(SKILL_DATA_JSON)) {
   skill['code'] = 1;
 }
 
-for (const demon of Object.values(DLC_DATA_JSON)) {
-  demon['inherit'] = 'alm';
-  demon['skills'] = {};
-  demon['skills'][demon.skill] = 0.1;
-}
-
 for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
   inheritTypes[elem] = parseInt(inherits, 2);
 }
@@ -63,13 +63,13 @@ for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
 export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
   appTitle: 'Persona 5 Tactica',
   races,
-  raceOrder: getEnumOrder(races),
+  raceOrder: races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
   appCssClasses: ['p5t'],
 
   skillData: SKILL_DATA_JSON,
   skillElems,
   ailmentElems: COMP_CONFIG_JSON.ailments,
-  elemOrder: getEnumOrder(skillElems),
+  elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
   resistCodes: COMP_CONFIG_JSON.resistCodes,
 
   demonData: DEMON_DATA_JSON,
@@ -88,7 +88,7 @@ export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
   specialRecipes: SPECIAL_RECIPES_JSON,
 
   settingsKey: 'p5t-fusion-tool-settings',
-  settingsVersion: 1709211400
+  settingsVersion: 2311211523
 };
 
 @NgModule({

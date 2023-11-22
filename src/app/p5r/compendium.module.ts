@@ -59,9 +59,21 @@ for (const entry of Object.values(ENEMY_DATA_JSON)) {
 
 for (const skills of [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON]) {
   for (const entry of Object.values(skills)) {
-    if (entry['effect'].includes('power') && !entry['effect'].includes('√')) {
-      entry['effect'] = '√' + entry['effect'];
+    const effect = [];
+    if (entry['power']) { effect.push(`${Math.sqrt(entry['power'] * 10).toFixed(0)} dmg`); }
+    if (entry['min']) { effect.push(`${entry['min']}${entry['max'] ? '-' + entry['max'] : ''} hits`); }
+    if (entry['hit'] && entry['hit'] < 80) { effect.push(`${entry['hit']}% hit`); }
+    if (entry['crit'] && entry['crit'] != 5) { effect.push(`${entry['crit']}% crit`); }
+
+    if (entry['mod']) {
+      const mod = entry['mod'];
+      const add = entry['add'];
+      effect.push(mod < 1000 ? `${mod}% ${add}` : `x${(mod / 100 - 10).toFixed(2)} ${add}`);
+    } else if (entry['add']) {
+      effect.push(entry['add']);
     }
+
+    entry['effect'] = effect.join(', ');
   }
 }
 

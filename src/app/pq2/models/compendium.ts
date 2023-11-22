@@ -44,7 +44,7 @@ export class Compendium implements ICompendium {
         race:     json['race'],
         lvl:      json['lvl'],
         currLvl:  json['lvl'],
-        price,
+        price:    json['price'] || price,
         inherits: this.compConfig.inheritTypes[json['inherit']],
         stats:    json['stats'],
         skills:   json['skills'],
