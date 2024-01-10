@@ -32,64 +32,67 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from '../p5/data/fusion-chart.json';
 import INHERIT_TYPES_JSON from '../p5/data/inheritance-types.json';
 
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
+function createCompConfig(): CompendiumConfig {
+  const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const inheritTypes: { [elem: string]: number } = {};
+  const races = [];
+
+  for(const race of COMP_CONFIG_JSON['races']) {
+    races.push(race);
+    races.push(race + ' P');
   }
-  return result;
-}
 
-const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-const inheritTypes: { [elem: string]: number } = {};
-const races = [];
-
-for(const race of COMP_CONFIG_JSON['races']) {
-  races.push(race);
-  races.push(race + ' P');
-}
-
-for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
-  inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = parseInt(INHERIT_TYPES_JSON.ratios[i], 2);
-}
-
-for (const entry of Object.values(PARTY_DATA_JSON)) {
-  entry.race = entry.race + ' P';
-  entry['fusion'] = 'party';
-}
-
-for (const entry of Object.values(SKILL_DATA_JSON)) {
-  if (entry['rank'] < 21) {
-    entry['transfer'] = COMP_CONFIG_JSON.skillCardRanks[entry['rank'] - 1];
+  for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
+    inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = parseInt(INHERIT_TYPES_JSON.ratios[i], 2);
   }
+
+  for (const entry of Object.values(PARTY_DATA_JSON)) {
+    entry.race = entry.race + ' P';
+    entry['fusion'] = 'party';
+  }
+
+  const COST_HP = 2 << 24;
+  const COST_MP = 3 << 24;
+
+  for (const entry of Object.values(SKILL_DATA_JSON)) {
+    const cost = entry['cost'];
+    const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
+    entry['cost'] = cost ? cost + costType: 0;
+
+    if (entry['rank'] < 21) {
+      entry['transfer'] = COMP_CONFIG_JSON.skillCardRanks[entry['rank'] - 1];
+    }
+  }
+
+  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    DEMON_DATA_JSON[name]['prereq'] = prereq;
+    DEMON_DATA_JSON[name]['fusion'] = 'enemy';
+  }
+
+  return {
+    appTitle: 'Persona 5 Strikers',
+    appCssClasses: ['p5'],
+
+    races,
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    skillElems,
+    resistElems: COMP_CONFIG_JSON.resistElems,
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+    elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    inheritTypes,
+    inheritElems: INHERIT_TYPES_JSON.elems,
+
+    demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
+    skillData: [SKILL_DATA_JSON],
+    normalTable: FUSION_CHART_JSON,
+    specialRecipes: SPECIAL_RECIPES_JSON,
+    pairRecipes: PAIR_RECIPES_JSON,
+    downRecipes: DOWN_RECIPES_JSON
+  };
 }
 
-for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-  DEMON_DATA_JSON[name]['prereq'] = prereq;
-  DEMON_DATA_JSON[name]['fusion'] = 'enemy';
-}
-
-export const P5S_COMPENDIUM_CONFIG: CompendiumConfig = {
-  appTitle: 'Persona 5 Strikers',
-  appCssClasses: ['p5'],
-
-  races,
-  raceOrder: getEnumOrder(races),
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  skillElems,
-  resistElems: COMP_CONFIG_JSON.resistElems,
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-  elemOrder: getEnumOrder(skillElems),
-  inheritTypes,
-  inheritElems: INHERIT_TYPES_JSON.elems,
-
-  demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
-  skillData: [SKILL_DATA_JSON],
-  normalTable: FUSION_CHART_JSON,
-  specialRecipes: SPECIAL_RECIPES_JSON,
-  pairRecipes: PAIR_RECIPES_JSON,
-  downRecipes: DOWN_RECIPES_JSON
-};
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [
@@ -114,7 +117,7 @@ export const P5S_COMPENDIUM_CONFIG: CompendiumConfig = {
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
     [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: P5S_COMPENDIUM_CONFIG }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
   ]
 })
 export class CompendiumModule { }

@@ -18,71 +18,76 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import JA_NAMES_JSON from './data/ja-names.json';
 
-const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
-const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
-const skillData = {};
+function createCompConfig(): CompendiumConfig {
+  const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
+  const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
+  const skillData = {};
 
-for (const demon of Object.values(DEMON_DATA_JSON)) {
-  demon['price'] = Math.floor(demon['price'] / 2);
-  demon['affinities'] = demon['inherits'].split('').map(char => char === 'o' ? 0 : -9);
-}
-
-let currElem = '';
-let elemCount = 0;
-
-for (const skill of SKILL_DATA_JSON) {
-  if (currElem != skill.elem) {
-    currElem = skill.elem;
-    elemCount = 9;
+  for (const demon of Object.values(DEMON_DATA_JSON)) {
+    demon['price'] = Math.floor(demon['price'] / 2);
+    demon['affinities'] = demon['inherits'].split('').map(char => char === 'o' ? 0 : -9);
   }
 
-  elemCount += 1;
+  const COST_MP = 3 << 24;
+  let currElem = '';
+  let elemCount = 0;
 
-  skillData[skill.name] = {
-    element: skill.elem,
-    cost: skill.cost || 0,
-    effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
-    target: skill.target || 'Self',
-    rank: skill.rank || elemCount / 10
+  for (const skill of SKILL_DATA_JSON) {
+    if (currElem != skill.elem) {
+      currElem = skill.elem;
+      elemCount = 9;
+    }
+
+    elemCount += 1;
+
+    skillData[skill.name] = {
+      element: skill.elem,
+      cost: skill.cost ? skill.cost + COST_MP - 1000 : 0,
+      effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
+      target: skill.target || 'Self',
+      rank: skill.rank || elemCount / 10
+    }
+  }
+
+  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    DEMON_DATA_JSON[name].prereq = prereq;
+  }
+
+  return {
+    appTitle: 'Soul Hackers 2',
+    races: COMP_CONFIG_JSON.races,
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    appCssClasses: ['smt4', 'sh2'],
+
+    lang: 'en',
+    jaNames: JA_NAMES_JSON,
+    affinityElems: affinityElems,
+    skillData,
+    skillElems,
+    elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+    affinityBonuses: { costs: [], upgrades: [] },
+    lvlModifier: 0.5,
+
+    demonData: DEMON_DATA_JSON,
+    evolveData: {},
+    dlcDemons: COMP_CONFIG_JSON.dlcDemons,
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    resistElems: COMP_CONFIG_JSON.resistElems,
+    ailmentElems: [],
+
+    normalTable: FUSION_CHART_JSON,
+    elementTable: ELEMENT_CHART_JSON,
+    specialRecipes: SPECIAL_RECIPES_JSON,
+
+    settingsKey: 'sh2-fusion-tool-settings',
+    settingsVersion: 2208280745,
+    defaultRecipeDemon: 'Pixie',
+    elementRace: 'Element'
   }
 }
 
-for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-  DEMON_DATA_JSON[name].prereq = prereq;
-}
-
-const compendiumConfig: CompendiumConfig = {
-  appTitle: 'Soul Hackers 2',
-  races: COMP_CONFIG_JSON.races,
-  raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-  appCssClasses: ['smt4', 'sh2'],
-
-  lang: 'en',
-  jaNames: JA_NAMES_JSON,
-  affinityElems: affinityElems,
-  skillData,
-  skillElems,
-  elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-  affinityBonuses: { costs: [], upgrades: [] },
-  lvlModifier: 0.5,
-
-  demonData: DEMON_DATA_JSON,
-  evolveData: {},
-  dlcDemons: COMP_CONFIG_JSON.dlcDemons,
-  baseStats: COMP_CONFIG_JSON.baseStats,
-  resistElems: COMP_CONFIG_JSON.resistElems,
-  ailmentElems: [],
-
-  normalTable: FUSION_CHART_JSON,
-  elementTable: ELEMENT_CHART_JSON,
-  specialRecipes: SPECIAL_RECIPES_JSON,
-
-  settingsKey: 'sh2-fusion-tool-settings',
-  settingsVersion: 2208280745,
-  defaultRecipeDemon: 'Pixie',
-  elementRace: 'Element'
-}
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [
@@ -94,7 +99,7 @@ const compendiumConfig: CompendiumConfig = {
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
   ]
 })
 export class CompendiumModule { }

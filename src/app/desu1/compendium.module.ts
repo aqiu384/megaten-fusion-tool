@@ -21,87 +21,89 @@ import { FusionDataService } from '../krch/fusion-data.service';
 import { SmtKuzuCompendiumModule } from '../krch/smt-kuzu-compendium.module';
 import { CompendiumRoutingModule } from '../krch/compendium-routing.module';
 
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
-  }
-  return result;
-}
+function createCompConfig(): CompendiumConfigSet {
+  const rskillLookup = {}
+  const races = COMP_CONFIG_JSON.races;
+  const resistElems = COMP_CONFIG_JSON.resistElems;
+  const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const compConfigs: { [game: string]: CompendiumConfig } = {};
+  const MITAMA_TABLE = [
+    ['Nigi', 'Ara ', 'Kusi'],
+    ['Kusi', 'Ara '],
+    ['Saki'],
+    []
+  ];
 
-const rskillLookup = {}
-const races = COMP_CONFIG_JSON.races;
-const resistElems = COMP_CONFIG_JSON.resistElems;
-const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
-const compConfigs: { [game: string]: CompendiumConfig } = {};
-const MITAMA_TABLE = [
-  ['Nigi', 'Ara ', 'Kusi'],
-  ['Kusi', 'Ara '],
-  ['Saki'],
-  []
-];
+  const COST_HP = 2 << 24;
+  const COST_MP = 3 << 24;
 
-for (const dataJson of [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON]) {
-  for (const entry of Object.values(dataJson)) {
-    entry['elem'] = entry.element;
-    entry['rank'] = entry['rank'] || (entry['elem'] === 'auto' ? 1 : 99)
-  }
-}
-
-for (const [race, entry] of Object.entries(RACIAL_SKILLS_JSON)) {
-  if (races.includes(race)) {
-    rskillLookup[race] = entry['skill'];
-    VAN_SKILL_DATA_JSON[entry['skill']] = {
-      elem: 'racial',
-      effect: entry.effect
-    };
-  }
-}
-
-for (const dataJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
-  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    if (dataJson[name]) {
-      dataJson[name]['prereq'] = prereq
+  for (const dataJson of [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON]) {
+    for (const entry of Object.values(dataJson)) {
+      const cost = entry['cost']
+      const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
+      entry['cost'] = cost ? cost + costType : 0;
+      entry['elem'] = entry.element;
+      entry['rank'] = entry['rank'] || (entry['elem'] === 'auto' ? 1 : 99);
     }
   }
-}
 
-for (const game of ['ds1', 'dso']) {
-  compConfigs[game] = {
-    appTitle: 'Devil Survivor',
-    appCssClasses: ['kuzu', 'ds1'],
-
-    races,
-    resistElems,
-    skillElems,
-    baseStats: COMP_CONFIG_JSON.baseStats,
-    fusionLvlMod: 0.5,
-    resistCodes: COMP_CONFIG_JSON.resistCodes,
-
-    raceOrder: getEnumOrder(races),
-    elemOrder: getEnumOrder(skillElems),
-    fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
-    fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
-
-    demonData: [VAN_DEMON_DATA_JSON],
-    skillData: [VAN_SKILL_DATA_JSON],
-    normalTable: FUSION_CHART_JSON,
-    elementTable: ELEMENT_CHART_JSON,
-    mitamaTable: MITAMA_TABLE,
-    specialRecipes: SPECIAL_RECIPES_JSON,
-    isDesu: true
+  for (const [race, entry] of Object.entries(RACIAL_SKILLS_JSON)) {
+    if (races.includes(race)) {
+      rskillLookup[race] = entry['skill'];
+      VAN_SKILL_DATA_JSON[entry['skill']] = {
+        elem: 'racial',
+        effect: entry.effect
+      };
+    }
   }
+
+  for (const dataJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
+    for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+      if (dataJson[name]) {
+        dataJson[name]['prereq'] = prereq
+      }
+    }
+  }
+
+  for (const game of ['ds1', 'dso']) {
+    compConfigs[game] = {
+      appTitle: 'Devil Survivor',
+      appCssClasses: ['kuzu', 'ds1'],
+
+      races,
+      resistElems,
+      skillElems,
+      baseStats: COMP_CONFIG_JSON.baseStats,
+      fusionLvlMod: 0.5,
+      resistCodes: COMP_CONFIG_JSON.resistCodes,
+
+      raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+      elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+      fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
+      fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+
+      demonData: [VAN_DEMON_DATA_JSON],
+      skillData: [VAN_SKILL_DATA_JSON],
+      normalTable: FUSION_CHART_JSON,
+      elementTable: ELEMENT_CHART_JSON,
+      mitamaTable: MITAMA_TABLE,
+      specialRecipes: SPECIAL_RECIPES_JSON,
+      isDesu: true
+    }
+  }
+
+  compConfigs.dso.appTitle = 'Devil Survivor Overclocked';
+  compConfigs.dso.demonData = [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON];
+  compConfigs.dso.skillData = [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON];
+
+  return {
+    appTitle: 'Devil Survivor',
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    configs: compConfigs
+  };
 }
 
-compConfigs.dso.appTitle = 'Devil Survivor Overclocked';
-compConfigs.dso.demonData = [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON];
-compConfigs.dso.skillData = [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON];
-
-export const SMT_COMP_CONFIG: CompendiumConfigSet = {
-  appTitle: 'Devil Survivor',
-  raceOrder: getEnumOrder(races),
-  configs: compConfigs
-};
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [

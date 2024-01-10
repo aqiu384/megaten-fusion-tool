@@ -98,7 +98,7 @@ export class Compendium implements ICompendium {
           element:   json['element'],
           cost:      json['cost'] || 0,
           rank:      json['rank'] || 99,
-          effect:    json['power'] ? json['power'] + ' power' + (json['effect'] ? ', ' + json['effect'] : '') : json['effect'],
+          effect:    json['power'] ? '√' + json['power'] + ' power' + (json['effect'] ? ', ' + json['effect'] : '') : json['effect'],
           target:    json['target'] || 'Self',
           learnedBy: [],
           transfer:  [],

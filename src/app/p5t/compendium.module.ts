@@ -23,73 +23,80 @@ function estimatePrice(stats: number[]) {
   return Math.floor(price);
 }
 
-const resistElems = COMP_CONFIG_JSON.resistElems;
-const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
-const races = [];
-const inheritTypes: { [elem: string]: number } = {};
+function createCompConfig(): CompendiumConfig {
+  const resistElems = COMP_CONFIG_JSON.resistElems;
+  const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const races = [];
+  const inheritTypes: { [elem: string]: number } = {};
 
-for(const race of COMP_CONFIG_JSON.races) {
-  races.push(race);
-  races.push(race + ' P');
+  for(const race of COMP_CONFIG_JSON.races) {
+    races.push(race);
+    races.push(race + ' P');
+  }
+
+  for (const demon of Object.values(DEMON_DATA_JSON)) {
+    demon['code'] = 1;
+    demon['inherit'] = 'alm';
+    demon['skills'] = {};
+    demon['skills'][demon.skill] = 0.1;
+    demon['price'] = estimatePrice(demon.stats);
+  }
+
+  for (const demon of Object.values(DLC_DATA_JSON)) {
+    demon['inherit'] = 'alm';
+    demon['skills'] = {};
+    demon['skills'][demon.skill] = 0.1;
+    demon['price'] = estimatePrice(demon.stats);
+  }
+
+  for (const [dname, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    DEMON_DATA_JSON[dname]['prereq'] = prereq;
+  }
+
+  const COST_MP = 3 << 24;
+
+  for (const skill of Object.values(SKILL_DATA_JSON)) {
+    skill['cost'] = skill['cost'] ? skill['cost'] + COST_MP - 1000 : 0,
+    skill['code'] = 1;
+  }
+
+  for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
+    inheritTypes[elem] = parseInt(inherits, 2);
+  }
+
+  return {
+    appTitle: 'Persona 5 Tactica',
+    races,
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    appCssClasses: ['p5t'],
+
+    skillData: SKILL_DATA_JSON,
+    skillElems,
+    ailmentElems: COMP_CONFIG_JSON.ailments,
+    elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+
+    demonData: DEMON_DATA_JSON,
+    dlcData: DLC_DATA_JSON,
+    baseStats: ['HP', 'MP', 'MD', 'GD'],
+    resistElems: [],
+    inheritTypes,
+    inheritElems: COMP_CONFIG_JSON.inheritElems,
+
+    enemyData: [],
+    enemyStats: ['HP', 'Atk', 'Def'],
+    enemyResists: resistElems,
+
+    normalTable: FUSION_CHART_JSON,
+    hasTripleFusion: false,
+    specialRecipes: SPECIAL_RECIPES_JSON,
+
+    settingsKey: 'p5t-fusion-tool-settings',
+    settingsVersion: 2311211523
+  };
 }
 
-for (const demon of Object.values(DEMON_DATA_JSON)) {
-  demon['code'] = 1;
-  demon['inherit'] = 'alm';
-  demon['skills'] = {};
-  demon['skills'][demon.skill] = 0.1;
-  demon['price'] = estimatePrice(demon.stats);
-}
-
-for (const demon of Object.values(DLC_DATA_JSON)) {
-  demon['inherit'] = 'alm';
-  demon['skills'] = {};
-  demon['skills'][demon.skill] = 0.1;
-  demon['price'] = estimatePrice(demon.stats);
-}
-
-for (const [dname, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-  DEMON_DATA_JSON[dname]['prereq'] = prereq;
-}
-
-for (const skill of Object.values(SKILL_DATA_JSON)) {
-  skill['code'] = 1;
-}
-
-for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
-  inheritTypes[elem] = parseInt(inherits, 2);
-}
-
-export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
-  appTitle: 'Persona 5 Tactica',
-  races,
-  raceOrder: races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-  appCssClasses: ['p5t'],
-
-  skillData: SKILL_DATA_JSON,
-  skillElems,
-  ailmentElems: COMP_CONFIG_JSON.ailments,
-  elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-  resistCodes: COMP_CONFIG_JSON.resistCodes,
-
-  demonData: DEMON_DATA_JSON,
-  dlcData: DLC_DATA_JSON,
-  baseStats: ['HP', 'MP', 'MD', 'GD'],
-  resistElems: [],
-  inheritTypes,
-  inheritElems: COMP_CONFIG_JSON.inheritElems,
-
-  enemyData: [],
-  enemyStats: ['HP', 'Atk', 'Def'],
-  enemyResists: resistElems,
-
-  normalTable: FUSION_CHART_JSON,
-  hasTripleFusion: false,
-  specialRecipes: SPECIAL_RECIPES_JSON,
-
-  settingsKey: 'p5t-fusion-tool-settings',
-  settingsVersion: 2311211523
-};
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [
@@ -102,7 +109,7 @@ export const PQ_COMPENDIUM_CONFIG: CompendiumConfig = {
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
     [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: PQ_COMPENDIUM_CONFIG }],
+    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }],
   ]
 })
 export class CompendiumModule { }

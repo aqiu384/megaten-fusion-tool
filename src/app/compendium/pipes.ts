@@ -1,15 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+const SKILL_COST_TYPES = [
+  'Auto', ' HP',  '% HP', ' MP',  '% MP', ' SP',  '% SP', ' Ex',  '% Ex', ' MG',  '% MG', '0x0B', '0x0C', '0x0D', '0x0E', '0x0F',
+  'Extra', 'Varies', 'Fusion', 'Magatsuhi', 'Sabbath'
+];
+
 @Pipe({ name: 'skillCostToString' })
 export class SkillCostToStringPipe implements PipeTransform {
   transform(value: number): string {
-    if (value === 0) { return 'Auto'; }
-    if (value <= 100) { return `${value}% HP`; }
-    if (value <= 200) { return `${value - 100}% MP`; }
-    if (value <= 1000) { return `${value - 200} HP`; }
-    if (value <= 2000) { return `${value - 1000} MP`; }
-    if (value <= 2005) { return `${value - 2000} CC`; }
-    return `${value - 2000} MG`;
+    const costType = SKILL_COST_TYPES[value >> 24];
+    const cost = (value & 0xFFFFFF);
+    return cost === 0 ? costType : (cost.toString() + costType);
   }
 }
 

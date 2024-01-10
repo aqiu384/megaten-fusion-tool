@@ -60,6 +60,8 @@ export class Compendium implements ICompendium {
       };
     }
 
+    const COST_MP = 3 << 24;
+
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
       let effect = json['effect'];
 
@@ -78,7 +80,7 @@ export class Compendium implements ICompendium {
         name,
         element: json.elem,
         power:   json['power'] || 0,
-        cost:    json['cost'] + 1000 || 0,
+        cost:    json['cost'] ? json['cost'] + COST_MP : 0,
         rank:    json['points'] || 99,
         effect,
         target:  json['target'],

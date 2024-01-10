@@ -73,13 +73,19 @@ export class Compendium implements ICompendium {
       };
     }
 
+    const COST_HP = 2 << 24;
+    const COST_MP = 3 << 24;
+
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
+      const cost = json['cost'];
+      const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
+
       skills[name] = {
         name,
         rank:    json['rank'],
         element: json['element'],
         effect:  json['effect'],
-        cost:    json['cost'] || 0,
+        cost:    cost ? cost + costType : 0,
         damage:  json['damage'] || '',
         target:  json['target'] || '',
         requires: json['requires'] || '',

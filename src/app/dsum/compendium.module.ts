@@ -19,125 +19,129 @@ import DARK_TRIPLE_CHART_JSON from './data/dark-triple-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
+function createCompConfig(): CompendiumConfig {
+  const resistElems = COMP_CONFIG_JSON['resistElems'];
+  const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
+
+  const races = [];
+  const raceAligns = {};
+  const species = {};
+  const speciesLookup = {};
+  const DEITIES = [];
+  const BEASTS = [];
+  const COST_HP = 2 << 24;
+  const COST_MP = 3 << 24;
+
+  for (const entry of Object.values(SKILL_DATA_JSON)) {
+    const cost = entry['cost'];
+    const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
+    entry['cost'] = cost ? cost + costType: 0;
   }
-  return result;
-}
 
-const resistElems = COMP_CONFIG_JSON['resistElems'];
-const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
-
-const races = [];
-const raceAligns = {};
-const species = {};
-const speciesLookup = {};
-const DEITIES = [];
-const BEASTS = [];
-
-const normalTable = {
-  races: FUSION_CHART_JSON['races'].concat(['Mitama']),
-  table: FUSION_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
-}
-
-const tripleTable = {
-  races: TRIPLE_CHART_JSON['races'].concat(['Mitama']),
-  table: TRIPLE_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
-}
-
-const normalElemChart = {
-  elems: ELEMENT_CHART_JSON['elems'].slice(0, 4),
-  races: ELEMENT_CHART_JSON['races'],
-  table: ELEMENT_CHART_JSON['table'].map(row => row.slice(0, 4))
-}
-
-const tripleElemChart = {
-  elems: ELEMENT_CHART_JSON['elems'].slice(4, 10),
-  races: ELEMENT_CHART_JSON['races'],
-  table: ELEMENT_CHART_JSON['table'].map(row => row.slice(4, 10))
-};
-
-for (const rs of COMP_CONFIG_JSON['species']) {
-  const spec = rs[0];
-  species[spec] = [];
-
-  for (const pair of rs.slice(1)) {
-    const [race, align] = pair.split('|');
-    races.push(race);
-    raceAligns[race] = align;
-    species[spec].push(race);
-    speciesLookup[race] = spec;
+  const normalTable = {
+    races: FUSION_CHART_JSON['races'].concat(['Mitama']),
+    table: FUSION_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
   }
-}
 
-for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
-  demon['resists'] = demon['resists'].slice(4, 8).concat(demon['resists'].slice(9));
-
-  switch (demon.race) {
-    case 'Deity':
-    case 'Megami':
-      DEITIES.push(name);
-      break;
-    case 'Avatar':
-    case 'Holy':
-    case 'Beast':
-    case 'Wilder':
-      BEASTS.push(name);
-      break;
-    case 'Enigma':
-      SPECIAL_RECIPES_JSON[name] = {
-        fusion: 'accident',
-        prereq: 'Trigger fusion accident using one of the following ingredients during new moon',
-        special: DEITIES
-      }
-      break;
-    case 'UMA':
-      SPECIAL_RECIPES_JSON[name] = {
-        fusion: 'accident',
-        prereq: 'Trigger fusion accident using one of the following ingredients during full moon',
-        special: BEASTS
-      };
-      break;
-    default:
-      break;
+  const tripleTable = {
+    races: TRIPLE_CHART_JSON['races'].concat(['Mitama']),
+    table: TRIPLE_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
   }
+
+  const normalElemChart = {
+    elems: ELEMENT_CHART_JSON['elems'].slice(0, 4),
+    races: ELEMENT_CHART_JSON['races'],
+    table: ELEMENT_CHART_JSON['table'].map(row => row.slice(0, 4))
+  }
+
+  const tripleElemChart = {
+    elems: ELEMENT_CHART_JSON['elems'].slice(4, 10),
+    races: ELEMENT_CHART_JSON['races'],
+    table: ELEMENT_CHART_JSON['table'].map(row => row.slice(4, 10))
+  };
+
+  for (const rs of COMP_CONFIG_JSON['species']) {
+    const spec = rs[0];
+    species[spec] = [];
+
+    for (const pair of rs.slice(1)) {
+      const [race, align] = pair.split('|');
+      races.push(race);
+      raceAligns[race] = align;
+      species[spec].push(race);
+      speciesLookup[race] = spec;
+    }
+  }
+
+  for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
+    demon['resists'] = demon['resists'].slice(4, 8).concat(demon['resists'].slice(9));
+
+    switch (demon.race) {
+      case 'Deity':
+      case 'Megami':
+        DEITIES.push(name);
+        break;
+      case 'Avatar':
+      case 'Holy':
+      case 'Beast':
+      case 'Wilder':
+        BEASTS.push(name);
+        break;
+      case 'Enigma':
+        SPECIAL_RECIPES_JSON[name] = {
+          fusion: 'accident',
+          prereq: 'Trigger fusion accident using one of the following ingredients during new moon',
+          special: DEITIES
+        }
+        break;
+      case 'UMA':
+        SPECIAL_RECIPES_JSON[name] = {
+          fusion: 'accident',
+          prereq: 'Trigger fusion accident using one of the following ingredients during full moon',
+          special: BEASTS
+        };
+        break;
+      default:
+        break;
+    }
+  }
+
+  return {
+    appTitle: 'Shin Megami Tensei: Devil Summoner',
+    appCssClasses: ['smtnes', 'dsum'],
+    races,
+    resistElems,
+    skillElems,
+    baseStats: COMP_CONFIG_JSON['baseStats'],
+    baseAtks: COMP_CONFIG_JSON['baseAtks'],
+
+    speciesLookup,
+    species,
+    resistCodes: COMP_CONFIG_JSON['resistCodes'],
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    useSpeciesFusion: false,
+
+    normalLvlModifier: 2.5,
+    tripleLvlModifier: 3.25,
+    demonData: DEMON_DATA_JSON,
+    skillData: SKILL_DATA_JSON,
+    alignData: { races: raceAligns },
+    specialRecipes: SPECIAL_RECIPES_JSON,
+
+    normalTable,
+    darkTable: DARK_CHART_JSON,
+    elementTable: normalElemChart,
+    mitamaTable: ELEMENT_CHART_JSON['pairs'],
+
+    tripleTable,
+    tripleDarkTable: DARK_TRIPLE_CHART_JSON,
+    tripleElementTable: tripleElemChart,
+    tripleMitamaTable: ELEMENT_CHART_JSON['triples']
+  };
 }
 
-export const SMT_COMP_CONFIG: CompendiumConfig = {
-  appTitle: 'Shin Megami Tensei: Devil Summoner',
-  appCssClasses: ['smtnes', 'dsum'],
-  races,
-  resistElems,
-  skillElems,
-  baseStats: COMP_CONFIG_JSON['baseStats'],
-  baseAtks: COMP_CONFIG_JSON['baseAtks'],
-
-  speciesLookup,
-  species,
-  resistCodes: COMP_CONFIG_JSON['resistCodes'],
-  raceOrder: getEnumOrder(races),
-  elemOrder: getEnumOrder(skillElems),
-  useSpeciesFusion: false,
-
-  normalLvlModifier: 2.5,
-  tripleLvlModifier: 3.25,
-  demonData: DEMON_DATA_JSON,
-  skillData: SKILL_DATA_JSON,
-  alignData: { races: raceAligns },
-  specialRecipes: SPECIAL_RECIPES_JSON,
-
-  normalTable,
-  darkTable: DARK_CHART_JSON,
-  elementTable: normalElemChart,
-  mitamaTable: ELEMENT_CHART_JSON['pairs'],
-
-  tripleTable,
-  tripleDarkTable: DARK_TRIPLE_CHART_JSON,
-  tripleElementTable: tripleElemChart,
-  tripleMitamaTable: ELEMENT_CHART_JSON['triples']
-};
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [

@@ -137,6 +137,8 @@ export class Compendium implements ICompendium {
       }
     }
 
+    const COST_MP = 3 << 24;
+
     for (const json of SKILL_DATA_JSON) {
       skills[json.name] = {
         name:      json.name,
@@ -146,7 +148,7 @@ export class Compendium implements ICompendium {
         target:    json.target || 'Self',
         power:     0,
         accuracy:  0,
-        cost:      json.cost || 0,
+        cost:      json.cost ? json.cost + COST_MP - 1000 : 0,
         inherit:   json.rank == 99 ? 'non' : json.inherit || json.elem,
         rank:      json.rank,
         learnedBy: [],

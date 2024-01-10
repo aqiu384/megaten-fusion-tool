@@ -60,7 +60,7 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(dataJson)) {
         skills[name] = {
           name: name,
-          rank: json['rank'] || json['cost'] / 100 || 0,
+          rank: json['rank'] || (json['cost'] & 0xFFFFFF) / 10 || 0,
           cost: json['cost'] || 0,
           effect: json['effect'] || '',
           target: json['prereq'] || json['target'] || 'Self',

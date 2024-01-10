@@ -11,18 +11,12 @@ import { Demon, Skill, CompendiumConfig } from './models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
-import ELEMENT_CHART_JSON from './data/element-chart.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
-import FUSION_CHART_JSON from './data/fusion-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import GROWTH_TYPES_JSON from './data/growth-types.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import PARTY_AFFINITY_JSON from './data/party-affinity.json';
-
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  return target.reduce((acc, s, i) => { acc[s] = i; return acc; }, {});
-}
 
 function summarizeResists(presists: number[], mresists: number[]): number[] {
   return [
@@ -43,16 +37,18 @@ function summarizeResists(presists: number[], mresists: number[]): number[] {
   ];
 }
 
-const resistCodes = COMP_CONFIG_JSON.resistCodes;
-const skillElems = COMP_CONFIG_JSON.presistElems.concat(COMP_CONFIG_JSON.mresistElems, COMP_CONFIG_JSON.skillElems);
-const elemOrder = getEnumOrder(skillElems);
-
-for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-  FUSION_PREREQS_JSON[name] = `Requires ${prereq} totem`;
-}
-
-function loadDemons(): { [name: string]: Demon } {
+function createCompConfig(): CompendiumConfig {
+  const resistCodes = COMP_CONFIG_JSON.resistCodes;
+  const skillElems = COMP_CONFIG_JSON.presistElems.concat(COMP_CONFIG_JSON.mresistElems, COMP_CONFIG_JSON.skillElems);
+  const elemOrder = skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {});
   const demons: { [name: string]: Demon } = {};
+  const enemies: { [name: string]: Demon } = {};
+  const skills: { [name: string]: Skill } = {};
+
+  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    FUSION_PREREQS_JSON[name] = `Requires ${prereq} totem`;
+  }
+
   for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
     const presists = json.presists.split('').map(r => resistCodes[r]);
     const mresists = json.mresists.split('').map(r => resistCodes[r]);
@@ -80,11 +76,7 @@ function loadDemons(): { [name: string]: Demon } {
       area:       '-'
     };
   }
-  return demons;
-}
 
-function loadEnemies(): { [name: string]: Demon } {
-  const enemies: { [name: string]: Demon } = {};
   for (const [name, json] of Object.entries(ENEMY_DATA_JSON)) {
     const presists = json.presists.split('').map(r => resistCodes[r]);
     const mresists = json.mresists.split('').map(r => resistCodes[r]);
@@ -112,16 +104,15 @@ function loadEnemies(): { [name: string]: Demon } {
       area:       json.areas.length > 0 ? json.areas[0] : '-'
     };
   }
-  return enemies;
-}
 
-function loadSkills(): { [name: string]: Skill } {
-  const skills: { [name: string]: Skill } = {};
+  const COST_SP = 5 << 24;
+  const COST_VARI = 17 << 24;
+
   for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
     skills[name] = {
       name,
       element: json.element,
-      cost:    json['cost'] + 1000 || 0,
+      cost:    json['cost'] ? json['cost'] + COST_SP : COST_VARI,
       rank:    (json['cost'] || 0) + (json['power'] / 100 || 0),
       effect:  json['power'] ? json['power'] + ' dmg' + (json['effect'] ? ', ' + json['effect'] : '') : json['effect'],
       target:  json.target.toString(),
@@ -131,36 +122,37 @@ function loadSkills(): { [name: string]: Skill } {
       transfer: []
     };
   }
-  return skills;
+
+  return {
+    appTitle: 'Megami Ibunroku Persona',
+    appCssClasses: ['p1', 'mib'],
+
+    races:           COMP_CONFIG_JSON.races,
+    resistElems:     COMP_CONFIG_JSON.resistElems,
+    presistElems:    COMP_CONFIG_JSON.presistElems,
+    mresistElems:    COMP_CONFIG_JSON.mresistElems,
+    resistCodes:     COMP_CONFIG_JSON.resistCodes,
+    skillElems,
+    inheritElems:    COMP_CONFIG_JSON.inheritElems,
+    baseStats:       COMP_CONFIG_JSON.baseStats,
+    baseAtks:        COMP_CONFIG_JSON.baseAtks,
+    enemyStats:      COMP_CONFIG_JSON.enemyStats,
+    party:           PARTY_AFFINITY_JSON.party,
+    fusionPrereqs:   FUSION_PREREQS_JSON,
+    specialRecipes:  SPECIAL_RECIPES_JSON,
+    growthTypes:     GROWTH_TYPES_JSON,
+    mutations:       {},
+
+    demons,
+    enemies,
+    skills,
+
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    elemOrder,
+  }
 }
 
-const compendiumConfig: CompendiumConfig = {
-  appTitle: 'Megami Ibunroku Persona',
-  appCssClasses: ['p1', 'mib'],
-
-  races:           COMP_CONFIG_JSON.races,
-  resistElems:     COMP_CONFIG_JSON.resistElems,
-  presistElems:    COMP_CONFIG_JSON.presistElems,
-  mresistElems:    COMP_CONFIG_JSON.mresistElems,
-  resistCodes:     COMP_CONFIG_JSON.resistCodes,
-  skillElems,
-  inheritElems:    COMP_CONFIG_JSON.inheritElems,
-  baseStats:       COMP_CONFIG_JSON.baseStats,
-  baseAtks:        COMP_CONFIG_JSON.baseAtks,
-  enemyStats:      COMP_CONFIG_JSON.enemyStats,
-  party:           PARTY_AFFINITY_JSON.party,
-  fusionPrereqs:   FUSION_PREREQS_JSON,
-  specialRecipes:  SPECIAL_RECIPES_JSON,
-  growthTypes:     GROWTH_TYPES_JSON,
-  mutations:       {},
-
-  demons:    loadDemons(),
-  enemies:   loadEnemies(),
-  skills:    loadSkills(),
-
-  raceOrder: getEnumOrder(COMP_CONFIG_JSON.races),
-  elemOrder,
-};
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [
@@ -172,7 +164,7 @@ const compendiumConfig: CompendiumConfig = {
     Title,
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: compendiumConfig }]
+    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
   ]
 })
 export class CompendiumModule { }

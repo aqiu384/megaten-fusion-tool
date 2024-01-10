@@ -20,144 +20,148 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import INHERIT_SKILLS_JSON from './data/inherit-skills.json';
 
-function getEnumOrder(target: string[]): { [key: string]: number } {
-  const result = {};
-  for (let i = 0; i < target.length; i++) {
-    result[target[i]] = i;
+function createCompConfig(): CompendiumConfig {
+  const resistElems = COMP_CONFIG_JSON['resistElems'];
+  const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
+
+  const races = [];
+  const raceAligns = {};
+  const species = {};
+  const speciesLookup = {};
+  const inheritSkills = {};
+  const DEITIES = [];
+  const BEASTS = [];
+  const COST_HP = 2 << 24;
+  const COST_MP = 3 << 24;
+
+  for (const entry of Object.values(SKILL_DATA_JSON)) {
+    const cost = entry['cost'];
+    const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
+    entry['cost'] = cost ? cost + costType: 0;
   }
-  return result;
-}
 
-const resistElems = COMP_CONFIG_JSON['resistElems'];
-const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
-
-const races = [];
-const raceAligns = {};
-const species = {};
-const speciesLookup = {};
-const inheritSkills = {};
-const DEITIES = [];
-const BEASTS = [];
-
-const normalElemChart = {
-  elems: ELEMENT_CHART_JSON['elems'].slice(0, 4),
-  races: ELEMENT_CHART_JSON['races'],
-  table: ELEMENT_CHART_JSON['table'].map(row => row.slice(0, 4))
-}
-
-const tripleElemChart = {
-  elems: ELEMENT_CHART_JSON['elems'].slice(4, 10),
-  races: ELEMENT_CHART_JSON['races'],
-  table: ELEMENT_CHART_JSON['table'].map(row => row.slice(4, 10))
-};
-
-for (const rs of COMP_CONFIG_JSON['species']) {
-  const spec = rs[0];
-  species[spec] = [];
-
-  for (const pair of rs.slice(1)) {
-    const [race, align] = pair.split('|');
-    races.push(race);
-    raceAligns[race] = align;
-    species[spec].push(race);
-    speciesLookup[race] = spec;
+  const normalElemChart = {
+    elems: ELEMENT_CHART_JSON['elems'].slice(0, 4),
+    races: ELEMENT_CHART_JSON['races'],
+    table: ELEMENT_CHART_JSON['table'].map(row => row.slice(0, 4))
   }
-}
 
-for (const [name, demon] of Object.entries(NEMECHI_DATA_JSON)) {
-  DEMON_DATA_JSON[name] = demon;
-}
+  const tripleElemChart = {
+    elems: ELEMENT_CHART_JSON['elems'].slice(4, 10),
+    races: ELEMENT_CHART_JSON['races'],
+    table: ELEMENT_CHART_JSON['table'].map(row => row.slice(4, 10))
+  };
 
-for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
-  switch (demon.race) {
-    case 'Deity':
-    case 'Megami':
-      DEITIES.push(name);
-      break;
-    case 'Avatar':
-    case 'Holy':
-    case 'Beast':
-    case 'Wilder':
-      BEASTS.push(name);
-      break;
-    case 'Entity':
-      SPECIAL_RECIPES_JSON[name] = { fusion: 'normal', prereq: 'Perform fusion during new moon' };
-      break;
-    case 'Zealot':
-      SPECIAL_RECIPES_JSON[name] = { fusion: 'normal', prereq: 'Perform fusion during full moon' };
-      break;
-    case 'Enigma':
-      SPECIAL_RECIPES_JSON[name] = {
-        fusion: 'accident',
-        prereq: 'Trigger fusion accident using one of the following ingredients during new moon',
-        special: DEITIES
-      }
-      break;
-    case 'UMA':
-      SPECIAL_RECIPES_JSON[name] = {
-        fusion: 'accident',
-        prereq: 'Trigger fusion accident using one of the following ingredients during full moon',
-        special: BEASTS
-      };
-      break;
-    case 'Rumor':
-    case 'Ranger':
-      if (!SPECIAL_RECIPES_JSON[name]) {
-        SPECIAL_RECIPES_JSON[name] = { fusion: 'recruit', prereq: 'Recruitment only' };
-      }
-      break;
-    default:
-      break;
+  for (const rs of COMP_CONFIG_JSON['species']) {
+    const spec = rs[0];
+    species[spec] = [];
+
+    for (const pair of rs.slice(1)) {
+      const [race, align] = pair.split('|');
+      races.push(race);
+      raceAligns[race] = align;
+      species[spec].push(race);
+      speciesLookup[race] = spec;
+    }
   }
-}
 
-for (const [name, skill] of Object.entries(SKILL_DATA_JSON)) {
-  skill['element'] = skill.elem;
-
-  if (skill['unique']) {
-    skill['enemy'] = true;
+  for (const [name, demon] of Object.entries(NEMECHI_DATA_JSON)) {
+    DEMON_DATA_JSON[name] = demon;
   }
+
+  for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
+    switch (demon.race) {
+      case 'Deity':
+      case 'Megami':
+        DEITIES.push(name);
+        break;
+      case 'Avatar':
+      case 'Holy':
+      case 'Beast':
+      case 'Wilder':
+        BEASTS.push(name);
+        break;
+      case 'Entity':
+        SPECIAL_RECIPES_JSON[name] = { fusion: 'normal', prereq: 'Perform fusion during new moon' };
+        break;
+      case 'Zealot':
+        SPECIAL_RECIPES_JSON[name] = { fusion: 'normal', prereq: 'Perform fusion during full moon' };
+        break;
+      case 'Enigma':
+        SPECIAL_RECIPES_JSON[name] = {
+          fusion: 'accident',
+          prereq: 'Trigger fusion accident using one of the following ingredients during new moon',
+          special: DEITIES
+        }
+        break;
+      case 'UMA':
+        SPECIAL_RECIPES_JSON[name] = {
+          fusion: 'accident',
+          prereq: 'Trigger fusion accident using one of the following ingredients during full moon',
+          special: BEASTS
+        };
+        break;
+      case 'Rumor':
+      case 'Ranger':
+        if (!SPECIAL_RECIPES_JSON[name]) {
+          SPECIAL_RECIPES_JSON[name] = { fusion: 'recruit', prereq: 'Recruitment only' };
+        }
+        break;
+      default:
+        break;
+    }
+  }
+
+  for (const [name, skill] of Object.entries(SKILL_DATA_JSON)) {
+    skill['element'] = skill.elem;
+
+    if (skill['unique']) {
+      skill['enemy'] = true;
+    }
+  }
+
+  for (let i = 0; i < skillElems.length; i++) {
+    const skills = INHERIT_SKILLS_JSON[skillElems[i]] || [];
+    inheritSkills[i] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
+  }
+
+  return {
+    appTitle: 'Devil Summoner: Soul Hackers',
+    appCssClasses: ['smtnes', 'dssh'],
+    races,
+    resistElems,
+    skillElems,
+    baseStats: COMP_CONFIG_JSON['baseStats'],
+    baseAtks: COMP_CONFIG_JSON['baseAtks'],
+
+    speciesLookup,
+    species,
+    resistCodes: COMP_CONFIG_JSON['resistCodes'],
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    useSpeciesFusion: false,
+    inheritSkills,
+
+    normalLvlModifier: 2.5,
+    tripleLvlModifier: 3.25,
+    demonData: DEMON_DATA_JSON,
+    skillData: SKILL_DATA_JSON,
+    alignData: { races: raceAligns },
+    specialRecipes: SPECIAL_RECIPES_JSON,
+
+    normalTable: FUSION_CHART_JSON,
+    darkTable: DARK_CHART_JSON,
+    elementTable: normalElemChart,
+    mitamaTable: ELEMENT_CHART_JSON['pairs'],
+
+    tripleTable: TRIPLE_CHART_JSON,
+    tripleDarkTable: DARK_CHART_JSON,
+    tripleElementTable: tripleElemChart,
+    tripleMitamaTable: ELEMENT_CHART_JSON['triples']
+  };
 }
 
-for (let i = 0; i < skillElems.length; i++) {
-  const skills = INHERIT_SKILLS_JSON[skillElems[i]] || [];
-  inheritSkills[i] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
-}
-
-export const SMT_COMP_CONFIG: CompendiumConfig = {
-  appTitle: 'Devil Summoner: Soul Hackers',
-  appCssClasses: ['smtnes', 'dssh'],
-  races,
-  resistElems,
-  skillElems,
-  baseStats: COMP_CONFIG_JSON['baseStats'],
-  baseAtks: COMP_CONFIG_JSON['baseAtks'],
-
-  speciesLookup,
-  species,
-  resistCodes: COMP_CONFIG_JSON['resistCodes'],
-  raceOrder: getEnumOrder(races),
-  elemOrder: getEnumOrder(skillElems),
-  useSpeciesFusion: false,
-  inheritSkills,
-
-  normalLvlModifier: 2.5,
-  tripleLvlModifier: 3.25,
-  demonData: DEMON_DATA_JSON,
-  skillData: SKILL_DATA_JSON,
-  alignData: { races: raceAligns },
-  specialRecipes: SPECIAL_RECIPES_JSON,
-
-  normalTable: FUSION_CHART_JSON,
-  darkTable: DARK_CHART_JSON,
-  elementTable: normalElemChart,
-  mitamaTable: ELEMENT_CHART_JSON['pairs'],
-
-  tripleTable: TRIPLE_CHART_JSON,
-  tripleDarkTable: DARK_CHART_JSON,
-  tripleElementTable: tripleElemChart,
-  tripleMitamaTable: ELEMENT_CHART_JSON['triples']
-};
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [
