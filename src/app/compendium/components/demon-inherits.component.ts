@@ -26,8 +26,8 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
           </td>
         </tr>
         <tr *ngIf="hasChance">
-          <td *ngFor="let affinity of inherits" class="affinity{{ affinity * 100 | roundInheritPercent }}">
-            {{ affinity * 100 }}%
+          <td *ngFor="let affinity of inherits" class="affinity{{ affinity | roundInheritPercent }}">
+            {{ affinity }}%
           </td>
         </tr>
         <tr *ngIf="hasLvls">

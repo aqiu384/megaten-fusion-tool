@@ -31,8 +31,8 @@ function createCompConfig(): CompendiumConfig {
     affinityBonuses.upgrades.push(AFFINITIES_JSON['upgrades'][bonusElem]);
   }
 
-  const COST_MP = 3 << 24;
-  const COST_MAG = 19 << 24;
+  const COST_MP = 3 << 10;
+  const COST_MAG = 19 << 10;
 
   for (const skill of SKILL_DATA_JSON) {
     skillData[skill.name] = {

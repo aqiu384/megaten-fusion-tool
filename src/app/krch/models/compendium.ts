@@ -36,6 +36,11 @@ export class Compendium implements ICompendium {
     const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const isDesu = this.compConfig.isDesu;
+    const resistCodes: { [code: string]: number } = {};
+
+    for (let [i, code] of 'drns-wf'.split('').entries()) {
+      resistCodes[code] = (i + 1 << 12) + (this.compConfig.resistCodes[code] / 5 << 4);
+    }
 
     for (const dataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(dataJson)) {
@@ -47,7 +52,7 @@ export class Compendium implements ICompendium {
           price: isDesu ? this.estimateDesuPrice(json['stats']) : 100 * (this.estimateKuzuPrice(json['stats']) + json['lvl']),
           inherits: 0,
           stats: json['stats'],
-          resists: (json['nresists'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
+          resists: (json['nresists'] || json['resists']).split('').map(x => resistCodes[x]),
           skills: json['nskills'] || json['skills'],
           person: json['person'] || '',
           fusion: 'normal',
@@ -60,7 +65,7 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(dataJson)) {
         skills[name] = {
           name: name,
-          rank: json['rank'] || (json['cost'] & 0xFFFFFF) / 10 || 0,
+          rank: json['rank'] || (json['cost'] & 0x3FF) / 10 || 0,
           cost: json['cost'] || 0,
           effect: json['effect'] || '',
           target: json['prereq'] || json['target'] || 'Self',

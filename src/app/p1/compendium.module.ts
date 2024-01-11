@@ -105,8 +105,8 @@ function createCompConfig(): CompendiumConfig {
     };
   }
 
-  const COST_SP = 5 << 24;
-  const COST_VARI = 17 << 24;
+  const COST_SP = 5 << 10;
+  const COST_VARI = 17 << 10;
 
   for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
     skills[name] = {

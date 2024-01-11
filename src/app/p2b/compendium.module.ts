@@ -83,8 +83,8 @@ function createCompConfig(): CompendiumConfig {
     };
   }
 
-  const COST_VARIES = 17 << 24;
-  const COST_FUSION = 18 << 24;
+  const COST_VARIES = 17 << 10;
+  const COST_FUSION = 18 << 10;
 
   for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
     skills[name] = {

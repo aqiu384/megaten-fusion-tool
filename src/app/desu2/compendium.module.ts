@@ -36,8 +36,8 @@ function createCompConfig(): CompendiumConfigSet {
     []
   ];
 
-  const COST_HP = 2 << 24;
-  const COST_MP = 3 << 24;
+  const COST_HP = 2 << 10;
+  const COST_MP = 3 << 10;
 
   for (const dataJson of [VAN_SKILL_DATA_JSON, REC_SKILL_DATA_JSON]) {
     for (const entry of Object.values(dataJson)) {

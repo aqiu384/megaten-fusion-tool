@@ -45,12 +45,13 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[name]['code'] = parseInt(code, 10);
   }
 
-  const COST_HP = 1 << 24;
-  const COST_MP = 3 << 24;
+  const COST_HP = 1 << 10;
+  const COST_MP = 3 << 10;
+  const COST_CC = 15 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];
-    const costType = cost > 1000 ? COST_MP - 1000 : COST_HP - 200;
+    const costType = cost > 1000 ? (cost > 2000 ? COST_CC - 2000 : COST_MP - 1000) : COST_HP - 200;
     entry['cost'] = cost ? cost + costType: 0;
   }
 

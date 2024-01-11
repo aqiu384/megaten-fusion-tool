@@ -137,7 +137,7 @@ export class Compendium implements ICompendium {
       }
     }
 
-    const COST_MP = 3 << 24;
+    const COST_MP = 3 << 10;
 
     for (const json of SKILL_DATA_JSON) {
       skills[json.name] = {

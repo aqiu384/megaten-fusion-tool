@@ -97,28 +97,22 @@ export class DemonEntryComponent {
     this.skillLvls = [];
 
     for (const sname of Object.keys(this.demon.skills)) {
+      const COST_MP = 3 << 10;
       const skill = this.compendium.getSkill(sname);
-      let alvl = 0;
-      let acost = skill.cost;
-      let aupgrade = 0;
+      const elemIndex = this.compConfig.affinityElems.indexOf(skill.element);
+      const bonuses = this.compConfig.affinityBonuses;
+      const lvl = (this.demon.affinities || [])[elemIndex];
 
-      if (this.demon.affinities && acost < 2000) {
-        const elemIndex = this.compConfig.affinityElems.indexOf(skill.element);
-        alvl = elemIndex > -1 ? this.demon.affinities[elemIndex] : 0;
-        aupgrade = alvl > 0 ? this.compConfig.affinityBonuses.upgrades[elemIndex][alvl - 1] : 0;
-        
-        if (alvl > 0 && acost > 0) {
-          const bonusCost = this.compConfig.affinityBonuses.costs[elemIndex][alvl - 1];
-          acost = 1000 + Math.floor((100 - bonusCost) / 100 * (skill.cost - 1000));
-        }
+      if (lvl && bonuses.costs[elemIndex] && (skill.cost & 0xFC00) <= COST_MP) {
+        this.skillLvls.push({
+          skill,
+          cost: (skill.cost & 0xFC00) + Math.floor((100 - bonuses.costs[elemIndex][lvl - 1]) / 100 * (skill.cost & 0x3FF)),
+          lvl,
+          upgrade: bonuses.upgrades[elemIndex][lvl - 1],
+        })
+      } else {
+        this.skillLvls.push({ skill, cost: skill.cost, lvl: 0, upgrade: 0 });
       }
-
-      this.skillLvls.push({
-        skill,
-        cost: acost,
-        lvl: alvl,
-        upgrade: aupgrade
-      });
     }
 
     for (const skill of this.skillLvls) {

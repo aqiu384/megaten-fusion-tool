@@ -30,8 +30,9 @@ import { FusionDataService } from '../fusion-data.service';
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-inherits
-        [inheritHeaders]="compConfig.inheritElems"
-        [inherits]="compendium.getInheritElems(demon.inherits)">
+        [hasLvls]="true"
+        [inheritHeaders]="compConfig.affinityElems"
+        [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="compConfig.elemOrder"

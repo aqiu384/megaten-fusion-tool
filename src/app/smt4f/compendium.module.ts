@@ -25,7 +25,7 @@ function createCompConfig(): CompendiumConfig {
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
-  const COST_MP = 3 << 24;
+  const COST_MP = 3 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     entry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;

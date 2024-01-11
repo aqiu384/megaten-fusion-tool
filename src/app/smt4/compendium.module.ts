@@ -32,7 +32,7 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[demon] = entry;
   }
 
-  const COST_MP = 3 << 24;
+  const COST_MP = 3 << 10;
 
   for (const skill of SKILL_DATA_JSON) {
     skillData[skill.name] = {

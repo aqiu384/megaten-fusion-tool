@@ -29,25 +29,31 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const dlcDemons: { [name: string]: boolean } = {};
     const normalExceptions: { [name: string]: string } = {};
+    const resistCodes: { [code: string]: number } = {};
+
+    for (let [i, code] of 'drns-w'.split('').entries()) {
+      resistCodes[code] = (i + 1 << 12) + (this.compConfig.resistCodes[code] / 5 << 4);
+    }
 
     for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          item:     json['item'] || '',
-          race:     json['race'],
-          lvl:      json['lvl'],
-          currLvl:  json['lvl'],
-          skills:   json['skills'],
-          price:    Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
-          stats:    json['stats'],
-          resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
-          fusion:   json['fusion'] || 'normal',
-          inherits: this.compConfig.inheritTypes[json['inherits']],
-          prereq:   json['prereq'] || '',
-          persona:  name,
-          trait:    '',
-          exp:      0
+          item:       json['item'] || '',
+          race:       json['race'],
+          lvl:        json['lvl'],
+          currLvl:    json['lvl'],
+          skills:     json['skills'],
+          price:      Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
+          stats:      json['stats'],
+          resists:    json['resists'].split('').map(x => resistCodes[x]),
+          fusion:     json['fusion'] || 'normal',
+          inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
+          affinities: json['affinities'],
+          prereq:     json['prereq'] || '',
+          persona:    name,
+          trait:      '',
+          exp:        0
         };
 
         if (json['itemr']) {
@@ -72,7 +78,7 @@ export class Compendium implements ICompendium {
           inherits: 0,
           stats:    enemy['stats'].slice(0, 2),
           estats:   enemy['stats'].slice(2),
-          resists:  enemy['resists'].split('').map(char => this.compConfig.resistCodes[char]),
+          resists:  enemy['resists'].split('').map(x => resistCodes[x]),
           fusion:   'normal',
           skills:   (enemy['skills'] || []).reduce((acc, s) => { acc[s] = 0; return acc }, {}),
           area:     enemy['area'].join(', '),
@@ -89,7 +95,7 @@ export class Compendium implements ICompendium {
           element: json['element'],
           effect:  json['effect'],
           target:  json['target'] || 'Self',
-          rank:    (json['normCost'] & 0xFFFFFF) / 100 || 0,
+          rank:    (json['normCost'] & 0x3FF) / 100 || 0,
           cost:    json['normCost'] || 0,
           transfer:  [],
           learnedBy: [],
@@ -305,7 +311,7 @@ export class Compendium implements ICompendium {
   }
 
   getInheritElems(inherits: number): number[] {
-    return inherits.toString(2).padStart(this.compConfig.inheritElems.length, '0').split('').map(i => parseInt(i) * 100);
+    return [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

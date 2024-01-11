@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
-import { ResistanceLevels } from '../constants';
 
 @Component({
   selector: 'app-demon-resists',
@@ -15,7 +14,7 @@ import { ResistanceLevels } from '../constants';
         <tr>
           <th *ngFor="let element of resistHeaders"
             [style.width.%]="(ailmentHeaders.length ? 50 : 100) / resistHeaders.length">
-            <div class="element-icon {{ element }}">{{ element }}</div>
+            <div [ngClass]="['element-icon', element]">{{ element }}</div>
           </th>
           <th *ngFor="let ailment of ailmentHeaders"
             [style.width.%]="50 / ailmentHeaders.length">
@@ -26,21 +25,29 @@ import { ResistanceLevels } from '../constants';
       <tbody>
         <tr>
           <ng-container *ngIf="langEn">
-            <td *ngFor="let resist of resists" class="resists {{ resist | reslvlToString }}">
+            <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToString]">
               {{ resist | reslvlToString }}
             </td>
-            <td *ngFor="let resist of ailments" class="resists {{ resist | reslvlToString }}">
+            <td *ngFor="let resist of ailments" [ngClass]="['resists', resist | reslvlToString]">
               {{ resist | reslvlToString }}
             </td>
           </ng-container>
           <ng-container *ngIf="!langEn">
-            <td *ngFor="let resist of resists" class="resists {{ resist | reslvlToString }}">
+            <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToString]">
               {{ resist | reslvlToStringJa }}
             </td>
-            <td *ngFor="let resist of ailments" class="resists {{ resist | reslvlToString }}">
+            <td *ngFor="let resist of ailments" [ngClass]="['resists', resist | reslvlToString]">
               {{ resist | reslvlToStringJa }}
             </td>
           </ng-container>
+        </tr>
+        <tr>
+          <td *ngFor="let resist of resists" [ngClass]="['resists', resist % 4080 === 400 ? 'no' : '']">
+            {{ resist | resmodToString }}
+          </td>
+          <td *ngFor="let resist of ailments" [ngClass]="['resists', resist % 4080 === 400 ? 'no' : '']">
+            {{ resist | resmodToString }}
+          </td>
         </tr>
       </tbody>
     </table>

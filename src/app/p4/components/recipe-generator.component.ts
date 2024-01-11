@@ -32,7 +32,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       fusionCalculator: this.fusionDataService.fusionCalculator,
       races: compConfig.races,
       skillElems: compConfig.skillElems,
-      inheritElems: compConfig.inheritElems,
+      inheritElems: compConfig.affinityElems,
       restrictInherits: true,
       triExclusiveRaces: ['Fool', 'Fortune', 'Tower', 'Judgement', 'Aeon', 'Jester'],
       triFissionCalculator: this.fusionDataService.triFissionCalculator,

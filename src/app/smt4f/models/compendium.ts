@@ -29,8 +29,13 @@ export class Compendium implements ICompendium {
     const specialRecipes: { [name: string]: string[] } = {};
     const specialPairRecipes: { [name: string]: NamePair[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
+    const resistCodes: { [code: string]: number } = {};
 
-    const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(100);
+    for (let [i, code] of 'drns-w'.split('').entries()) {
+      resistCodes[code] = (i + 1 << 12) + (this.compConfig.resistCodes[code] / 5 << 4);
+    }
+
+    const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(resistCodes['-']);
     const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
     const langEn = this.compConfig.lang === 'en';
     const ailEffect = langEn ? 'Innate resistance' : '';
@@ -60,11 +65,11 @@ export class Compendium implements ICompendium {
         currLvl:    json['currLvl'] || json['lvl'],
         skills:     json['skills'],
         price:      json['price'] * 2,
-        inherits:   parseInt(((json['affinities'] || [-9]).map(a => a <= -9 ? '0' : '1')).join(''), 2),
         stats:      json['stats'],
-        resists:    json['resists'].split('').map(e => this.compConfig.resistCodes[e]),
+        resists:    json['resists'].split('').map(e => resistCodes[e]),
+        inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
         affinities: json['affinities'],
-        ailments:   json['ailments'] ? json['ailments'].split('').map(e => this.compConfig.resistCodes[e]) : blankAils,
+        ailments:   json['ailments'] ? json['ailments'].split('').map(e => resistCodes[e]) : blankAils,
         fusion:     json['fusion'] || 'normal',
         prereq:     json['prereq'] || ''
       }

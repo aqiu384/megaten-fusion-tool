@@ -45,9 +45,9 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
-  const COST_MP = 3 << 24;
-  const COST_EX_HP = 8 << 24;
-  const COST_EXTRA = 16 << 24;
+  const COST_MP = 3 << 10;
+  const COST_EX_HP = 8 << 10;
+  const COST_EXTRA = 16 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];

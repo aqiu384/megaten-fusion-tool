@@ -31,24 +31,30 @@ export class Compendium implements ICompendium {
     const specialNameEntries: { [name: string]: string[] } = {};
     const specialNamePairs: { [name: string]: NamePair[] } = {};
     const invertedSpecials: { [ingred: string]: string[] } = {};
+    const resistCodes: { [code: string]: number } = {};
+
+    for (let [i, code] of 'drns-w'.split('').entries()) {
+      resistCodes[code] = (i + 1 << 12) + (this.compConfig.resistCodes[code] / 5 << 4);
+    }
 
     for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
         demons[name] = {
           name,
-          race:     json['race'],
-          lvl:      json['lvl'],
-          currLvl:  json['lvl'],
-          price:    Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
-          inherits: this.compConfig.inheritTypes[json['inherits']],
-          stats:    json['stats'],
-          resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
-          eresists: (json['riskyrs'] || json['resists']).split('').map(char => this.compConfig.resistCodes[char]),
-          area:     json['location'] || '',
-          combos:   json['combos'],
-          skills:   json['skills'],
-          fusion:   json['fusion'] || 'normal',
-          prereq:   json['prereq'] || ''
+          race:       json['race'],
+          lvl:        json['lvl'],
+          currLvl:    json['lvl'],
+          price:      Math.pow(json['stats'].reduce((acc, stat) => stat + acc, 0), 2) + 2000,
+          inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
+          affinities: json['affinities'],
+          stats:      json['stats'],
+          resists:    json['resists'].split('').map(x => resistCodes[x]),
+          eresists:   (json['riskyrs'] || json['resists']).split('').map(x => resistCodes[x]),
+          area:       json['location'] || '',
+          combos:     json['combos'],
+          skills:     json['skills'],
+          fusion:     json['fusion'] || 'normal',
+          prereq:     json['prereq'] || ''
         };
 
         specialNameEntries[name] = [];
@@ -178,10 +184,6 @@ export class Compendium implements ICompendium {
     return Object.keys(this.specialRecipes).map(name => this.demons[name]);
   }
 
-  get inheritHeaders(): string[] {
-    return this.compConfig.inheritElems;
-  }
-
   getDemon(name: string): Demon {
     return this.demons[name];
   }
@@ -211,10 +213,6 @@ export class Compendium implements ICompendium {
 
   getSpecialNamePairs(name: string): NamePair[] {
     return this.specialNamePairs[name] || [];
-  }
-
-  getInheritElems(inherits: number): number[] {
-    return inherits.toString(2).padStart(this.compConfig.inheritElems.length, '0').split('').map(i => parseInt(i) * 100);
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

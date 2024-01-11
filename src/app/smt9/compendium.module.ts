@@ -43,9 +43,9 @@ function createCompConfig(): CompendiumConfig {
     demon['resists'] = demon['resists'].slice(0, 9).concat(demon['resists'].slice(11));
   }
 
-  const COST_HP = 2 << 24;
-  const COST_MP = 3 << 24;
-  const COST_MG = 9 << 24;
+  const COST_HP = 2 << 10;
+  const COST_MP = 3 << 10;
+  const COST_MG = 9 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];

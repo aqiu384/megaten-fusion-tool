@@ -60,7 +60,7 @@ export class Compendium implements ICompendium {
       };
     }
 
-    const COST_MP = 3 << 24;
+    const COST_MP = 3 << 10;
 
     for (const [name, json] of Object.entries(SKILL_DATA_JSON)) {
       let effect = json['effect'];

@@ -37,12 +37,13 @@ function createCompConfig(): CompendiumConfigSet {
     entry['resists'] = '';
   }
 
-  const COST_MP = 3 << 24;
+  const COST_MP = 3 << 10;
 
-  for (const [skill, entry] of Object.entries(SKILL_DATA_JSON)) {
+  for (const entry of Object.values(SKILL_DATA_JSON)) {
     entry['elem'] = entry.element;
     entry['target'] = (entry['target'] || 'Self') + (entry['range'] ? ' ' + entry['range'] : '');
     entry['effect'] = entry['effect'] || entry['power'] + ' dmg';
+    entry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;
   }
 
   return {

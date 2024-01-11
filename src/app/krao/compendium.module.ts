@@ -50,7 +50,7 @@ function createCompConfig(): CompendiumConfigSet {
     entry['nskills'] = nskills;
   }
 
-  const COST_MG = 9 << 24;
+  const COST_MG = 9 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     if (entry['power']) {
@@ -58,7 +58,7 @@ function createCompConfig(): CompendiumConfigSet {
     }
 
     entry['cost'] = entry['cost'] ? entry['cost'] + COST_MG - 2000 : 0;
-    entry['rank'] = entry['unique'] ? 99 : (entry['cost'] & 0xFFFFFF) / 10 || 0;
+    entry['rank'] = entry['unique'] ? 99 : (entry['cost'] & 0x3FF) / 10 || 0;
   }
 
   for(const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {

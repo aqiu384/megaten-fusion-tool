@@ -29,8 +29,8 @@ function createCompConfig(): CompendiumConfig {
   const speciesLookup = {};
   const DEITIES = [];
   const BEASTS = [];
-  const COST_HP = 2 << 24;
-  const COST_MP = 3 << 24;
+  const COST_HP = 2 << 10;
+  const COST_MP = 3 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];

@@ -53,7 +53,7 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[dname]['prereq'] = prereq;
   }
 
-  const COST_MP = 3 << 24;
+  const COST_MP = 3 << 10;
 
   for (const skill of Object.values(SKILL_DATA_JSON)) {
     skill['cost'] = skill['cost'] ? skill['cost'] + COST_MP - 1000 : 0,

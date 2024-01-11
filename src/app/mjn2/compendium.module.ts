@@ -82,7 +82,7 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
-  const COST_MP = 3 << 24;
+  const COST_MP = 3 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     entry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;

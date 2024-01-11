@@ -25,7 +25,7 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 
 function createCompConfig(): CompendiumConfig {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-  const inheritTypes: { [elem: string]: number } = {};
+  const affinityTypes: { [elem: string]: number[] } = {};
   const races = [];
 
   for(const race of COMP_CONFIG_JSON.races) {
@@ -33,16 +33,22 @@ function createCompConfig(): CompendiumConfig {
     races.push(race + ' P');
   }
 
-  for (let i = 0; i < INHERIT_TYPES_JSON.inherits.length; i++) {
-    inheritTypes[INHERIT_TYPES_JSON.inherits[i]] = parseInt(INHERIT_TYPES_JSON.ratios[i], 2);
+  for (let [i, ratio] of INHERIT_TYPES_JSON.ratios.entries()) {
+    affinityTypes[INHERIT_TYPES_JSON.inherits[i]] = ratio.split('').map(x => x === 'o' ? 10 : -10);
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
     DEMON_DATA_JSON[name].prereq = prereq;
   }
 
-  const COST_HP = 2 << 24;
-  const COST_MP = 3 << 24;
+  for (const json of [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON]) {
+    for (const entry of Object.values(json)) {
+      entry['affinities'] = affinityTypes[entry['inherits']].slice();
+    }
+  }
+
+  const COST_HP = 2 << 10;
+  const COST_MP = 3 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];
@@ -74,10 +80,9 @@ function createCompConfig(): CompendiumConfig {
     baseStats: COMP_CONFIG_JSON.baseStats,
     skillElems,
     resistElems: COMP_CONFIG_JSON.resistElems,
+    affinityElems: INHERIT_TYPES_JSON.elems,
     resistCodes: COMP_CONFIG_JSON.resistCodes,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    inheritTypes,
-    inheritElems: INHERIT_TYPES_JSON.elems,
 
     enemyStats: ['HP', 'MP'],
     enemyResists: COMP_CONFIG_JSON.resistElems,
