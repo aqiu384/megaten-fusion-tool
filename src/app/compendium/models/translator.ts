@@ -1,3 +1,8 @@
+import { Demon } from '../models';
+import { DemonUnlock } from '../models/fusion-settings';
+
+type StringDict = { [name: string]: string };
+
 export function translateDemonData(oldDemons: any, enNames: { [name: string]: string }): any {
   const newDemons = {};
 
@@ -52,4 +57,25 @@ export function translateFusionChart(oldChart: any, enNames: { [name: string]: s
   }
 
   return newChart;
+}
+
+export function translateDemonUnlocks(oldUnlocks: DemonUnlock[], enNames: { [name: string]: string }): DemonUnlock[] {
+  const newUnlocks: DemonUnlock[] = []
+
+  for (const { category, unlocked, conditions } of oldUnlocks) {
+    const newConditions = {};
+    
+    for (const [name, cond] of Object.entries(conditions)) {
+      const enName = name.split(',').map(x => enNames[x] || x).join(',');
+      newConditions[enName] = cond;
+    }
+
+    newUnlocks.push({
+      category: enNames[category] || category,
+      unlocked,
+      conditions: newConditions
+    });
+  }
+
+  return newUnlocks;
 }

@@ -2,6 +2,10 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Toggles } from '../../compendium/models/fusion-settings';
 
+type NumDict = { [name: string]: number };
+type StringDict = { [name: string]: string };
+type SkillListDict = { [name: string]: Skill[] };
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
@@ -30,18 +34,24 @@ export class Compendium implements ICompendium {
     const specialRecipes: { [name: string]: string[] } = {};
     const specialPairRecipes: { [name: string]: NamePair[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const resistCodes: { [code: string]: number } = {};
+    const resistCodes: NumDict = {};
 
     for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
       resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
     }
 
     const blankAils = Array<number>(this.compConfig.ailmentElems.length).fill(resistCodes['-']);
-    const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
     const langEn = this.compConfig.lang === 'en';
     const ailEffect = langEn ? 'Innate resistance' : '';
     const ailTarget = langEn ? 'Self' : '自身';
-    const ailLvls = langEn ? { 1125: 'Weak ', 50: 'Resist ', 0: 'Null ' } : { 1125: '弱', 50: '強', 0: '無' };
+    const ailPrefixes = langEn ? ['Weak ', 'Resist ', 'Null '] : ['弱', '強', '無'];
+    const ailmentResists: SkillListDict = {};
+    const ailLvls: StringDict = {};
+
+    for (const [i, res] of 'wsn'.split('').entries()) {
+      ailmentResists[resistCodes[res]] = [];
+      ailLvls[resistCodes[res]] = ailPrefixes[i];
+    }
 
     for (const [lvl, prefix]  of Object.entries(ailLvls)) {
       for (const ail of this.compConfig.ailmentElems) {

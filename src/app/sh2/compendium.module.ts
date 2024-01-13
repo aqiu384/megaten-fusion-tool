@@ -83,7 +83,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'sh2-fusion-tool-settings',
-    settingsVersion: 2208280745,
+    settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }

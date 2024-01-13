@@ -78,7 +78,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'smt5-fusion-tool-settings',
-    settingsVersion: 2111141400,
+    settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }

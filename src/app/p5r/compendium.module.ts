@@ -114,7 +114,7 @@ function createCompConfig(): CompendiumConfig {
     dlcDemons: COMP_CONFIG_JSON.dlcDemons,
     downloadedDemons: COMP_CONFIG_JSON.downloadedDemons,
     settingsKey: 'p5r-fusion-tool-settings',
-    settingsVersion: 2211092300
+    settingsVersion: 2401131500
   };
 }
 

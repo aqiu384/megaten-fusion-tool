@@ -1,5 +1,5 @@
 import { CompendiumConfig } from '../models';
-import { translateDemonData, translateSkillData, translateSpecialRecipes, translateFusionChart } from '../../compendium/models/translator';
+import { translateDemonData, translateSkillData, translateSpecialRecipes, translateFusionChart, translateDemonUnlocks } from '../../compendium/models/translator';
 
 export function translateCompConfig(compConfig: CompendiumConfig): CompendiumConfig {
   const enNames = Object.entries(compConfig.jaNames).reduce((acc, [ja, en]) => { acc[en] = ja; return acc; }, {});
@@ -28,7 +28,7 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     resistElems: compConfig.resistElems,
     ailmentElems: compConfig.ailmentElems.map(a => enNames[a] || a),
 
-    demonUnlocks: compConfig.demonUnlocks,
+    demonUnlocks: translateDemonUnlocks(compConfig.demonUnlocks, enNames),
     normalTable: translateFusionChart(compConfig.normalTable, enNames),
     elementTable: translateFusionChart(compConfig.elementTable, enNames),
     specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, enNames),

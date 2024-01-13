@@ -80,7 +80,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'smt4f-fusion-tool-settings',
-    settingsVersion: 1709211400,
+    settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }

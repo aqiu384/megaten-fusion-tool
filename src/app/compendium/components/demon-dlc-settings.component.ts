@@ -10,7 +10,7 @@ import { FusionSettings } from '../models/fusion-settings';
       <h2>{{ dlcTitle }}</h2>
       <table class="entry-table">
         <thead>
-          <tr><th class="title">DLC</th></tr>
+          <tr><th class="title">Unlock Conditions</th></tr>
         </thead>
         <tbody>
           <ng-container *ngFor="let cat of fusionSettings.displayHeaders">

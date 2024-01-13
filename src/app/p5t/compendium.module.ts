@@ -94,7 +94,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'p5t-fusion-tool-settings',
-    settingsVersion: 2311211523
+    settingsVersion: 2401131500
   };
 }
 

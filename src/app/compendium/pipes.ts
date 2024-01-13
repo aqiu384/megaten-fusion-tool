@@ -78,7 +78,7 @@ const JA_RESIST_LVLS = [
 @Pipe({ name: 'reslvlToStringJa' })
 export class ReslvlToStringJaPipe implements PipeTransform {
   transform(value: number): string {
-    return JA_RESIST_LVLS[value >> 12];
+    return JA_RESIST_LVLS[value >> 10];
   }
 }
 

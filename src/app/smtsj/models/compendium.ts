@@ -17,6 +17,8 @@ import SKILL_CODES_JSON from '../data/skill-codes.json';
 import ALIGNMENTS_JSON from '../data/alignments.json';
 
 type NumDict = { [name: string]: number };
+type StringDict = { [name: string]: string };
+type SkillListDict = { [name: string]: Skill[] };
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -50,22 +52,28 @@ export class Compendium implements ICompendium {
     const pairRecipes: { [name: string]: NamePair[] } = {};
     const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-
-    const demonDataJsons: any = [DEMON_DATA_JSON];
-    const specialRecipesJsons: any = [SPECIAL_RECIPES_JSON];
-    const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
-
-    const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
     const resistCodes: NumDict = {};
 
     for (const [res, code] of Object.entries(ResistCodes)) {
       resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
     }
 
-    for (const [lvl, prefix]  of Object.entries({ 1125: 'Weak', 50: 'Resist', 0: 'Null' })) {
+    const demonDataJsons: any = [DEMON_DATA_JSON];
+    const specialRecipesJsons: any = [SPECIAL_RECIPES_JSON];
+    const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
+    const ailPrefixes = ['Weak ', 'Resist ', 'Null ']
+    const ailmentResists: SkillListDict = {};
+    const ailLvls: StringDict = {};
+
+    for (const [i, res] of 'wsn'.split('').entries()) {
+      ailmentResists[resistCodes[res]] = [];
+      ailLvls[resistCodes[res]] = ailPrefixes[i];
+    }
+
+    for (const [lvl, prefix] of Object.entries(ailLvls)) {
       for (const ail of Ailments) {
         ailmentResists[lvl].push({
-          name:     prefix + ' ' + ail,
+          name:     prefix + ail,
           code:     -1,
           element:  'pas',
           effect:   'Innate resistance',

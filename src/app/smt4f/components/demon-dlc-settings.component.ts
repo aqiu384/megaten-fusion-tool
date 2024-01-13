@@ -11,7 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
       [langEn]="langEn"
       [dlcDemons]="dlcDemons"
       [appTitle]="appTitle"
-      [dlcTitle]="langEn ? 'Included DLC Demons' : 'DLC'"
+      [dlcTitle]="langEn ? 'Fusion Settings' : 'DLC'"
       [fusionSettings]="fusionSettings"
       (toggledName)="toggleName($event)">
     </app-demon-dlc-settings>

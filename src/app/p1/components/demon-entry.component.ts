@@ -107,7 +107,7 @@ export class DemonEntryComponent implements OnChanges {
   partyAffines: string[];
   mutatesTo: FusionEntry[];
   mutatesFrom: FusionEntry[];
-  affinityLookup = { 0: 'Great', 50: 'Good', 100: 'Norm', 1150: 'Bad', 1200: 'Worst' };
+  affinityLookup = { 11264: 'Great', 12308: 'Good', 13352: 'Norm', 14396: 'Bad', 14416: 'Worst' };
 
   ngOnChanges() {
     const statGrowths = [this.demon.stats];
