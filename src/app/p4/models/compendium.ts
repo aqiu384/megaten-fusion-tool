@@ -237,4 +237,6 @@ export class Compendium implements ICompendium {
   isElementDemon(name: string): boolean {
     return false;
   }
+
+  updateFusionSettings(config: { [setting: string]: boolean; }) { }
 }

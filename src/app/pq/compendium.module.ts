@@ -20,6 +20,7 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -99,6 +100,7 @@ function createCompConfig(): CompendiumConfig {
     inheritTypes,
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
+    demonUnlocks: DEMON_UNLOCKS_JSON,
     enemyData: ENEMY_DATA_JSON,
     enemyStats: ['HP', 'Atk', 'Def'],
     enemyResists: resistElems,

@@ -35,6 +35,8 @@ import {
   fuseWithElementPair
 } from '../compendium/fusions/per-triple-fusions';
 
+import { FusionSettings } from '../compendium/models/fusion-settings';
+
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
@@ -44,6 +46,7 @@ export class FusionDataService implements IFusionTrioService {
 
   compConfig: CompendiumConfig;
   appName: string;
+  fusionSettings: Observable<FusionSettings>;
 
   compendium: Observable<Compendium>;
   fusionChart: Observable<FusionChart>
@@ -105,5 +108,5 @@ export class FusionDataService implements IFusionTrioService {
     }
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { return {}; }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { return {}; }
 }

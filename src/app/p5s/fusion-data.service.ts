@@ -9,6 +9,7 @@ import { FusionTrioService as IFusionTrioService } from '../compendium/models';
 import { splitWithSameRace, fuseWithSameRace, splitWithDiffRace, fuseWithDiffRace } from '../compendium/fusions/p5s-nonelem-fusions';
 import { COMPENDIUM_CONFIG } from '../compendium/constants';
 import { CompendiumConfig } from './models';
+import { FusionSettings } from '../compendium/models/fusion-settings';
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -19,6 +20,7 @@ export class FusionDataService implements IFusionTrioService {
 
   compConfig: CompendiumConfig;
   appName: string;
+  fusionSettings: Observable<FusionSettings>;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -53,5 +55,5 @@ export class FusionDataService implements IFusionTrioService {
     this.squareChart = this._squareChart$.asObservable();
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { }
 }

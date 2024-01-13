@@ -16,6 +16,7 @@ import DLC_DATA_JSON from './data/dlc-data.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function estimatePrice(stats: number[]) {
   const statSum = 1.5*stats[0] + 1*stats[1] + 0.75*stats[2] + 0.75*stats[3];
@@ -87,6 +88,7 @@ function createCompConfig(): CompendiumConfig {
     enemyStats: ['HP', 'Atk', 'Def'],
     enemyResists: resistElems,
 
+    demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: false,
     specialRecipes: SPECIAL_RECIPES_JSON,

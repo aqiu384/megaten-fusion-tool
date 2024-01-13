@@ -7,6 +7,7 @@ import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { FusionSettings } from '../compendium/models/fusion-settings';
 import {
   VAN_FUSION_SETTINGS_KEY,
   DSJ_FUSION_SETTINGS_KEY,
@@ -20,6 +21,7 @@ export class FusionDataService implements IFusionDataService {
   settingsKey = VAN_FUSION_SETTINGS_KEY;
   appName = 'Shin Megami Tensei: Strange Journey Fusion Calculator';
   isRedux = false;
+  fusionSettings: Observable<FusionSettings>;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -51,7 +53,7 @@ export class FusionDataService implements IFusionDataService {
     window.addEventListener('storage', this.onStorageUpdated.bind(this));
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { }
 
   nextIncludedSubapps(subapps: { [name: string]: boolean }) {
     localStorage.setItem(this.settingsKey, JSON.stringify({ version: FUSION_SETTINGS_VERSION, subapps }));

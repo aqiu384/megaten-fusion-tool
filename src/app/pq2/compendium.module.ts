@@ -22,6 +22,7 @@ import PARTY_SKILLS_JSON from './data/party-skills.json';
 import BOSS_SKILLS_JSON from './data/boss-skills.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -112,6 +113,7 @@ function createCompConfig(): CompendiumConfig {
     enemyStats: ['HP', 'Atk', 'Def'],
     enemyResists: resistElems,
 
+    demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: true,
     specialRecipes: SPECIAL_RECIPES_JSON,

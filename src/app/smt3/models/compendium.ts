@@ -255,4 +255,6 @@ export class Compendium implements ICompendium {
   isOverlappingResult(name: string) {
     return false;
   }
+
+  updateFusionSettings(config: { [setting: string]: boolean; }) { }
 }

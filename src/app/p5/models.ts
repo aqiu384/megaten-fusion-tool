@@ -1,4 +1,5 @@
 import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
+import { DemonUnlock } from '../compendium/models/fusion-settings';
 
 export interface Demon extends BaseDemon {
   item: string;
@@ -30,6 +31,7 @@ export interface CompendiumConfig extends BaseComp {
   normalTable: { races: string[], table: string[][] };
   elementTable: { elems: string[], races: string[], table: number[][] };
   specialRecipes: { [name: string]: string[] };
+  demonUnlocks: DemonUnlock[];
 
   dlcDemons: string[];
   downloadedDemons: string[];

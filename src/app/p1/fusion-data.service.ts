@@ -6,6 +6,7 @@ import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { FusionSettings } from '../compendium/models/fusion-settings';
 import { CompendiumConfig } from './models';
 
 @Injectable()
@@ -15,6 +16,7 @@ export class FusionDataService implements IFusionDataService {
   settingsKey = 'p1-fusion-tool-settings';
   compConfig: CompendiumConfig;
   appName: string;
+  fusionSettings: Observable<FusionSettings>;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -33,5 +35,5 @@ export class FusionDataService implements IFusionDataService {
     this.appName = compConfig.appTitle + ' Fusion Calculator';
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { }
 }

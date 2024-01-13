@@ -2,6 +2,7 @@ import { ChangeDetectorRef, OnInit, OnDestroy, Directive } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Compendium, FusionDataService } from '../models';
+import { FusionSettings } from '../models/fusion-settings';
 
 @Directive()
 export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
@@ -9,6 +10,7 @@ export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
   dlcDemons: { name: string, included: boolean }[];
   subscriptions: Subscription[] = [];
   compendium: Compendium;
+  fusionSettings: FusionSettings;
 
   constructor(
     private changeDetector2: ChangeDetectorRef,
@@ -22,6 +24,10 @@ export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
       this._dlcDemons = Object.assign({}, this.compendium.dlcDemons);
       this.dlcDemons = Object.entries(this._dlcDemons).map(([ name, included ]) => ({ name, included }));
     }));
+
+    this.subscriptions.push(this.fusionDataService2.fusionSettings.subscribe(settings => {
+      this.fusionSettings = settings;
+    }));
   }
 
   ngOnDestroy() {
@@ -31,7 +37,8 @@ export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
   }
 
   toggleName(name: string) {
-    this._dlcDemons[name] = !this._dlcDemons[name];
-    this.fusionDataService2.nextDlcDemons(this._dlcDemons);
+    const toggles = {};
+    toggles[name] = !this.fusionSettings.isEnabled(name);
+    this.fusionDataService2.updateFusionSettings(toggles);
   }
 }

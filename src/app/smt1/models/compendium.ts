@@ -225,4 +225,6 @@ export class Compendium implements ICompendium {
   isElementDemon(name: string) {
     return this.elementDemons.indexOf(name) !== -1;
   }
+
+  updateFusionSettings(config: { [setting: string]: boolean; }) { }
 }

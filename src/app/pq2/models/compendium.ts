@@ -1,5 +1,6 @@
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
+import { Toggles } from '../../compendium/models/fusion-settings';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -14,9 +15,9 @@ export class Compendium implements ICompendium {
   private _allSkills: Skill[];
   private _dlcDemons: { [name: string]: boolean };
 
-  constructor(private compConfig: CompendiumConfig) {
+  constructor(private compConfig: CompendiumConfig, demonToggles: Toggles) {
     this.initImportedData();
-    this.updateDerivedData();
+    this.updateDerivedData(demonToggles);
   }
 
   initImportedData() {
@@ -121,7 +122,7 @@ export class Compendium implements ICompendium {
     this.invertedDemons = inverses;
   }
 
-  updateDerivedData() {
+  updateDerivedData(demonToggles: Toggles) {
     const demonEntries = Object.assign({}, this.demons);
     const skills:        Skill[] = [];
     const ingredients:   { [race: string]: number[] } = {};
@@ -155,17 +156,13 @@ export class Compendium implements ICompendium {
       results[race].sort((a, b) => a - b);
     }
 
-    for (const [names, included] of Object.entries(this._dlcDemons)) {
-      for (const name of names.split(',')) {
-        if (!included) {
-          const { race, lvl } = this.demons[name];
-          delete demonEntries[name];
+    for (const [name, included] of Object.entries(demonToggles)) {
+      if (!included) {
+        const { race, lvl } = this.demons[name];
+        delete demonEntries[name];
 
-          ingredients[race] = ingredients[race].filter(l => l !== lvl);
-          results[race] = results[race].filter(l => l !== lvl);
-        }
-
-        this.demons[name].fusion = included ? 'normal' : 'excluded';
+        ingredients[race] = ingredients[race].filter(l => l !== lvl);
+        results[race] = results[race].filter(l => l !== lvl);
       }
     }
 
@@ -183,7 +180,6 @@ export class Compendium implements ICompendium {
 
   set dlcDemons(dlcDemons: { [name: string]: boolean }) {
     this._dlcDemons = dlcDemons;
-    this.updateDerivedData();
   }
 
   get allDemons(): Demon[] {
@@ -243,5 +239,9 @@ export class Compendium implements ICompendium {
 
   isElementDemon(name: string): boolean {
     return false;
+  }
+
+  updateFusionSettings(demonToggles: Toggles) {
+    this.updateDerivedData(demonToggles);
   }
 }

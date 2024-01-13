@@ -8,6 +8,7 @@ import { COMPENDIUM_CONFIG } from '../compendium/constants';
 import { FusionDataService as IFusionDataService, FusionCalculator } from '../compendium/models';
 
 import { CompendiumConfig, CompendiumConfigSet } from './models'
+import { FusionSettings } from '../compendium/models/fusion-settings';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
@@ -18,6 +19,7 @@ export class FusionDataService implements IFusionDataService {
 
   compendium: Observable<Compendium>;
   fusionChart: Observable<FusionChart>
+  fusionSettings: Observable<FusionSettings>;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, router: Router) {
     const gameCand = router.url.split('/')[1];
@@ -32,5 +34,5 @@ export class FusionDataService implements IFusionDataService {
     this.fusionChart = new BehaviorSubject(new FusionChart(this.compConfig)).asObservable();
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { return {}; }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { return {}; }
 }

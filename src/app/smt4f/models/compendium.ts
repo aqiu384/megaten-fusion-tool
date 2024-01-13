@@ -1,5 +1,6 @@
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
+import { Toggles } from '../../compendium/models/fusion-settings';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -18,9 +19,9 @@ export class Compendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
-  constructor(private compConfig: CompendiumConfig) {
+  constructor(private compConfig: CompendiumConfig, demonToggles: Toggles) {
     this.initImportedData();
-    this.updateDerivedData();
+    this.updateDerivedData(demonToggles);
   }
 
   initImportedData() {
@@ -175,7 +176,7 @@ export class Compendium implements ICompendium {
     this.invertedDemons = inversions;
   }
 
-  updateDerivedData() {
+  updateDerivedData(demontToggles: Toggles) {
     const demonEntries = Object.assign({}, this.demons);
     const skills = Object.keys(this.skills).map(name => this.skills[name]);
     const ingredients: { [race: string]: number[] } = {};
@@ -212,19 +213,13 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [names, included] of Object.entries(this._dlcDemons)) {
-      for (const ename of names.split(',')) {
-        if (!this.demons[ename]) { continue; }
+    for (const [name, included] of Object.entries(demontToggles)) {
+      if (!included) {
+        const { race, lvl } = this.demons[name];
+        delete demonEntries[name];
 
-        if (!included) {
-          const { race, lvl } = this.demons[ename];
-          delete demonEntries[ename];
-
-          ingredients[race] = ingredients[race].filter(l => l !== lvl);
-          results[race] = results[race].filter(l => l !== lvl);
-        }
-
-        this.demons[ename].fusion = included ? 'special' : 'excluded';
+        ingredients[race] = ingredients[race].filter(l => l !== lvl);
+        results[race] = results[race].filter(l => l !== lvl);
       }
     }
 
@@ -240,7 +235,6 @@ export class Compendium implements ICompendium {
 
   set dlcDemons(dlcDemons: { [name: string]: boolean }) {
     this._dlcDemons = dlcDemons;
-    this.updateDerivedData();
   }
 
   get allDemons(): Demon[] {
@@ -300,5 +294,9 @@ export class Compendium implements ICompendium {
 
   isOverlappingResult(name: string) {
     return false;
+  }
+
+  updateFusionSettings(demonToggles: Toggles) {
+    this.updateDerivedData(demonToggles);
   }
 }

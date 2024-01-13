@@ -326,4 +326,6 @@ export class Compendium implements ICompendium {
   isElementDemon(name: string) {
     return this.demons[name] && this.demons[name].race === 'Prime';
   }
+
+  updateFusionSettings(config: { [setting: string]: boolean; }) { }
 }

@@ -16,9 +16,11 @@ import { CompendiumConfig } from './models';
 import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
 import { fuseWithDiffRace } from '../compendium/fusions/smt-nonelem-fusions';
 import { splitWithDiffRace } from '../compendium/fusions/smt-nonelem-fissions';
+import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
+import { FusionSettings } from '../compendium/models/fusion-settings';
 
 @Injectable()
-export class FusionDataService implements IFusionTrioService {
+export class FusionDataService extends ConfigurableFusionDataService<Compendium, PersonaFusionChart> implements IFusionTrioService {
   fissionCalculator = P3_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = P3_NORMAL_FUSION_CALCULATOR;
   triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
@@ -27,33 +29,28 @@ export class FusionDataService implements IFusionTrioService {
   compConfig: CompendiumConfig;
   appName: string;
 
-  private _compendium: Compendium;
-  private _compendium$: BehaviorSubject<Compendium>;
-  compendium: Observable<Compendium>;
-
-  private _fusionChart: PersonaFusionChart;
-  private _fusionChart$: BehaviorSubject<PersonaFusionChart>;
-  fusionChart: Observable<PersonaFusionChart>;
-
   private _tripleChart: PersonaFusionChart;
   private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
   squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
+    const fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races);
+    const fusionSettings = new FusionSettings(compConfig.demonUnlocks, []);
+
+    super(
+      new Compendium(compConfig, fusionSettings.demonToggles),
+      fusionChart,
+      fusionSettings,
+      compConfig.settingsKey,
+      compConfig.settingsVersion
+    );
+
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle + ' Fusion Calculator';
 
-    this._compendium = new Compendium(this.compConfig);
-    this._compendium$ = new BehaviorSubject(this._compendium);
-    this.compendium = this._compendium$.asObservable();
-
-    this._fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races);
-    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
-    this.fusionChart = this._fusionChart$.asObservable();
-
     this._tripleChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races, true);
     this._squareChart$ = new BehaviorSubject({
-      normalChart: this._fusionChart,
+      normalChart: fusionChart,
       tripleChart: this._tripleChart,
       raceOrder: compConfig.raceOrder
     });
@@ -62,31 +59,6 @@ export class FusionDataService implements IFusionTrioService {
     if (compConfig.appCssClasses.includes('p5t')) {
       this.fissionCalculator = new NormalFusionCalculator([splitWithDiffRace], []);
       this.fusionCalculator = new NormalFusionCalculator([fuseWithDiffRace], []);
-    }
-
-    const settings = JSON.parse(localStorage.getItem(compConfig.settingsKey));
-
-    if (settings && settings.version && settings.version >= compConfig.settingsVersion) {
-      this.nextDlcDemons(settings.dlcDemons);
-    }
-
-    window.addEventListener('storage', this.onStorageUpdated.bind(this));
-  }
-
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) {
-    localStorage.setItem(this.compConfig.settingsKey, JSON.stringify({ version: this.compConfig.settingsVersion, dlcDemons }));
-    this._compendium.dlcDemons = dlcDemons;
-    this._compendium$.next(this._compendium);
-  }
-
-  onStorageUpdated(e) {
-    switch (e.key) {
-      case this.compConfig.settingsKey:
-        this._compendium.dlcDemons = JSON.parse(e.newValue).dlcDemons;
-        this._compendium$.next(this._compendium);
-        break;
-      default:
-        break;
     }
   }
 }

@@ -19,6 +19,7 @@ import ENEMY_DATA_JSON from './data/enemy-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
 
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -108,6 +109,7 @@ function createCompConfig(): CompendiumConfig {
     normalTable: FUSION_CHART_JSON,
     elementTable: ELEMENT_CHART_JSON,
     specialRecipes: SPECIAL_RECIPES_JSON,
+    demonUnlocks: DEMON_UNLOCKS_JSON,
 
     dlcDemons: COMP_CONFIG_JSON.dlcDemons,
     downloadedDemons: COMP_CONFIG_JSON.downloadedDemons,

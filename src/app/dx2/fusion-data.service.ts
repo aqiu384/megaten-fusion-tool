@@ -8,6 +8,7 @@ import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 import { APP_TITLE, VAN_FUSION_SETTINGS_KEY } from './constants';
+import { FusionSettings } from '../compendium/models/fusion-settings';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
@@ -15,6 +16,8 @@ export class FusionDataService implements IFusionDataService {
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   settingsKey = VAN_FUSION_SETTINGS_KEY;
   appName = APP_TITLE + ' Fusion Calculator';
+
+  fusionSettings: Observable<FusionSettings>;
 
   private _compendium: Compendium;
   private _compendium$: BehaviorSubject<Compendium>;
@@ -30,5 +33,5 @@ export class FusionDataService implements IFusionDataService {
     this.compendium = this._compendium$.asObservable();
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { }
 }

@@ -230,4 +230,6 @@ export class Compendium implements ICompendium {
   splitSpecialFusion(name: string): FusionEntry[] {
     return this.specialRecipes[name] || [];
   }
+
+  updateFusionSettings(config: { [setting: string]: boolean; }) { }
 }

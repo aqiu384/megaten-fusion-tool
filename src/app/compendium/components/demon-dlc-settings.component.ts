@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { FusionSettings } from '../models/fusion-settings';
 
 @Component({
   selector: 'app-demon-dlc-settings',
@@ -12,15 +13,18 @@ import { Title } from '@angular/platform-browser';
           <tr><th class="title">DLC</th></tr>
         </thead>
         <tbody>
-          <tr *ngFor="let demon of dlcDemons">
-            <td>
-              <label>{{ demon.name.split(',').join(', ') }}
-                <input type="checkbox"
-                  [checked]="demon.included"
-                  (change)="toggledName.emit(demon.name)">
-              </label>
-            </td>
-          </tr>
+          <ng-container *ngFor="let cat of fusionSettings.displayHeaders">
+            <tr><th>{{ cat.category }}</th></tr>
+            <tr *ngFor="let setting of cat.settings">
+              <td>
+                <label>{{ setting.caption }}
+                  <input type="checkbox"
+                    [checked]="setting.enabled"
+                    (change)="toggledName.emit(setting.name)">
+                </label>
+              </td>
+            </tr>
+          </ng-container>
         </tbody>
       </table>
     </ng-container>
@@ -30,6 +34,7 @@ export class DemonDlcSettingsComponent {
   @Input() dlcDemons: { name: string, included: boolean }[];
   @Input() dlcTitle = 'Included DLC Demons';
   @Input() langEn = true;
+  @Input() fusionSettings: FusionSettings;
   @Output() toggledName = new EventEmitter<string>();
 
   constructor(private title: Title) { }

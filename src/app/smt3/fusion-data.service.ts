@@ -1,17 +1,19 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 import { FUSION_SETTINGS_KEY, FUSION_SETTINGS_VERSION } from './models/constants';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { FusionDataService as IFusionDataService } from '../compendium/models';
 import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { FusionSettings } from '../compendium/models/fusion-settings';
 
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   appName = 'Shin Megami Tensei III: Nocturne Fusion Calculator';
+  fusionSettings: Observable<FusionSettings>;
 
   private _compendium = new Compendium();
   private _compendium$ = new BehaviorSubject(this._compendium);
@@ -31,7 +33,7 @@ export class FusionDataService implements IFusionDataService {
     window.addEventListener('storage', this.onStorageUpdated.bind(this));
   }
 
-  nextDlcDemons(dlcDemons: { [name: string]: boolean }) { }
+  updateFusionSettings(dlcDemons: { [name: string]: boolean }) { }
 
   nextChartSettings(chartSettings: { [name: string]: boolean }) {
     localStorage.setItem(FUSION_SETTINGS_KEY, JSON.stringify({ version: FUSION_SETTINGS_VERSION, chartSettings }));

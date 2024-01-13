@@ -28,6 +28,7 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     resistElems: compConfig.resistElems,
     ailmentElems: compConfig.ailmentElems.map(a => enNames[a] || a),
 
+    demonUnlocks: compConfig.demonUnlocks,
     normalTable: translateFusionChart(compConfig.normalTable, enNames),
     elementTable: translateFusionChart(compConfig.elementTable, enNames),
     specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, enNames),

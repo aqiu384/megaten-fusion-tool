@@ -1,4 +1,5 @@
 import { Observable } from 'rxjs';
+import { Toggles, FusionSettings } from './models/fusion-settings';
 
 export interface CompendiumConfig {
   appTitle: string;
@@ -63,6 +64,7 @@ export interface Compendium {
   reverseLookupSpecial(ingredient: string): string[];
   reverseLookupDemon(race: string, lvl: number): string;
   isElementDemon(name: string): boolean;
+  updateFusionSettings(settings: Toggles);
 }
 
 export interface FusionDataService {
@@ -70,7 +72,8 @@ export interface FusionDataService {
   fusionCalculator: FusionCalculator;
   compendium: Observable<Compendium>;
   fusionChart: Observable<FusionChart>;
-  nextDlcDemons(dlcDemons: { [name: string]: boolean });
+  fusionSettings: Observable<FusionSettings>;
+  updateFusionSettings(settings: Toggles);
 }
 
 export interface FusionTrioService extends FusionDataService {

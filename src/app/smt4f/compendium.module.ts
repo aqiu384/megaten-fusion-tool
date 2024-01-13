@@ -20,6 +20,7 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
 import JA_NAMES_JSON from '../smt4/data/ja-names.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
@@ -73,6 +74,7 @@ function createCompConfig(): CompendiumConfig {
     resistElems: COMP_CONFIG_JSON.resistElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,
 
+    demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     elementTable: ELEMENT_CHART_JSON,
     specialRecipes: SPECIAL_RECIPES_JSON,
