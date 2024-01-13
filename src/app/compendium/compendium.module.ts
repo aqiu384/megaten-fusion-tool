@@ -57,6 +57,7 @@ import {
   LvlToNumberPipe,
   ReslvlToStringPipe,
   ReslvlToStringJaPipe,
+  ReslvlToColorPipe,
   ResmodToStringPipe,
   RoundInheritPercentPipe
 } from './pipes';
@@ -109,6 +110,7 @@ import {
     LvlToNumberPipe,
     ReslvlToStringPipe,
     ReslvlToStringJaPipe,
+    ReslvlToColorPipe,
     ResmodToStringPipe,
     RoundInheritPercentPipe
   ],
@@ -149,6 +151,7 @@ import {
     LvlToNumberPipe,
     ReslvlToStringPipe,
     ReslvlToStringJaPipe,
+    ReslvlToColorPipe,
     ResmodToStringPipe,
     RoundInheritPercentPipe
   ]

@@ -10,6 +10,8 @@ import SKILL_UPGRADES_JSON from '../data/skill-upgrades.json';
 import UPGRADE_TYPES_JSON from '../data/upgrade-types.json';
 import DEMON_PANELS_JSON from '../data/demon-panels.json';
 
+type NumDict = { [name: string]: number };
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
@@ -36,6 +38,11 @@ export class Compendium implements ICompendium {
 
     const archCodes = [3367, 3365, 3380, 3389, 3369];
     const gachCodes = [3965, 3980, 3989, 3969, 4478];
+    const resistCodes: NumDict = {};
+
+    for (const [res, code] of Object.entries(ResistCodes)) {
+      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+    }
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       const stars = Math.floor(json.grade / 20) + 1;
@@ -50,7 +57,7 @@ export class Compendium implements ICompendium {
         price:    Math.pow(json.grade, 3),
         inherits: 0,
         stats:    [stars].concat(json.stats, [json.cnum, (DEMON_PANELS_JSON[name] || []).length / 2]),
-        resists:  json.resists.split('').map(char => ResistCodes[char]),
+        resists:  json.resists.split('').map(x => resistCodes[x]),
         skills:   {},
         baseSkills: [].concat(
           json.base.map((skill) => ({ skill, source: 0 })),

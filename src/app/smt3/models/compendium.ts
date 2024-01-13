@@ -1,4 +1,4 @@
-import { Races, ElementOrder, ResistCodes } from '../models/constants';
+import { Races, ElementOrder } from '../models/constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
@@ -8,6 +8,9 @@ import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
 import MAGATAMA_DATA_JSON from '../data/magatama-data.json';
 import EVOLUTIONS_JSON from '../data/evolutions.json';
+import COMP_CONFIG_JSON from '../data/comp-config.json';
+
+type NumDict = { [name: string]: number };
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -38,6 +41,13 @@ export class Compendium implements ICompendium {
     const pairRecipes: { [name: string]: NamePair[] } = {};
     const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
+    const resistCodes: NumDict = {};
+    const resistLvls: NumDict = {};
+
+    for (const [res, code] of Object.entries(COMP_CONFIG_JSON.resistCodes)) {
+      resistCodes[res] = (code / 1000 | 0) << 10;
+      resistLvls[res] = code % 1000 / 2.5 | 0;
+    }
 
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = {
@@ -48,7 +58,9 @@ export class Compendium implements ICompendium {
         price: Compendium.estimateBasePrice(json.stats),
         inherits: 0,
         stats: json.stats,
-        resists: json.resists.split('').map(char => ResistCodes[char]),
+        resists: json.resists.split('').map((x, i) => resistCodes[x] +
+          (json['reslvls'] ? json['reslvls'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
+        ),
         affinities: json.inherits.split('').map(char => char === 'o' ? 1 : 0),
         skills: json.skills,
         fusion: 'normal',
@@ -65,7 +77,7 @@ export class Compendium implements ICompendium {
         price: Compendium.estimateBasePrice(json.stats),
         inherits: 0,
         stats: [0, 0].concat(json.stats),
-        resists: json.resists.split('').map(char => ResistCodes[char]),
+        resists: json.resists.split('').map(char => resistCodes[char]),
         affinities: 'oo-oo-oo-'.split('').map(char => char === 'o' ? 1 : 0),
         skills: json.skills,
         fusion: 'magatama',

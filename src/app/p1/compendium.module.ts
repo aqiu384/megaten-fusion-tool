@@ -18,11 +18,13 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import PARTY_AFFINITY_JSON from './data/party-affinity.json';
 
+type NumDict = { [name: string]: number };
+
 function summarizeResists(presists: number[], mresists: number[]): number[] {
   return [
-    presists.slice(0, 7).reduce((acc, r) => acc + r, 0) / 7,
+    presists[0],
     presists[7],
-    presists.slice(8, 11).reduce((acc, r) => acc + r, 0) / 3,
+    presists[8],
     presists[11],
     presists[12],
     presists[13],
@@ -30,20 +32,24 @@ function summarizeResists(presists: number[], mresists: number[]): number[] {
     mresists[1],
     mresists[2],
     mresists[3],
-    mresists.slice(4, 8).reduce((acc, r) => acc + r, 0) / 4,
-    (mresists[8] + mresists[9]) / 2,
-    (mresists[10] + mresists[11]) / 2,
+    mresists[4],
+    mresists[8],
+    mresists[10],
     mresists[12]
   ];
 }
 
 function createCompConfig(): CompendiumConfig {
-  const resistCodes = COMP_CONFIG_JSON.resistCodes;
   const skillElems = COMP_CONFIG_JSON.presistElems.concat(COMP_CONFIG_JSON.mresistElems, COMP_CONFIG_JSON.skillElems);
   const elemOrder = skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {});
   const demons: { [name: string]: Demon } = {};
   const enemies: { [name: string]: Demon } = {};
   const skills: { [name: string]: Skill } = {};
+  const resistCodes: NumDict = {};
+
+  for (const [res, code] of Object.entries(COMP_CONFIG_JSON.resistCodes)) {
+    resistCodes[res] = ((code / 1000 | 0 + 8) << 10) + (code % 1000 / 2.5 | 0);
+  }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
     FUSION_PREREQS_JSON[name] = `Requires ${prereq} totem`;

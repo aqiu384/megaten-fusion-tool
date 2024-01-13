@@ -2,6 +2,8 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Toggles } from '../../compendium/models/fusion-settings';
 
+type NumDict = { [name: string]: number };
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private enemies: { [name: string]: Demon };
@@ -26,6 +28,11 @@ export class Compendium implements ICompendium {
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
+    const resistCodes: NumDict = {};
+
+    for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
+      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+    }
 
     this._dlcDemons = {}
 
@@ -66,8 +73,8 @@ export class Compendium implements ICompendium {
         price:    0,
         inherits: 0,
         stats:    json['stats'],
-        resists:  json['resists'].split('').map(char => this.compConfig.resistCodes[char]),
-        ailments: json['ailments'].split('').map(char => this.compConfig.resistCodes[char]),
+        resists:  json['resists'].split('').map(x => resistCodes[x]),
+        ailments: json['ailments'].split('').map(x => resistCodes[x]),
         skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
         area:     json['area'],
         drop:     json['drops'].join(', '),

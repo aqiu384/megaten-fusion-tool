@@ -33,8 +33,8 @@ export class Compendium implements ICompendium {
     const invertedSpecials: { [ingred: string]: string[] } = {};
     const resistCodes: { [code: string]: number } = {};
 
-    for (let [i, code] of 'drns-w'.split('').entries()) {
-      resistCodes[code] = (i + 1 << 12) + (this.compConfig.resistCodes[code] / 5 << 4);
+    for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
+      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
     }
 
     for (const demonDataJson of this.compConfig.demonData) {

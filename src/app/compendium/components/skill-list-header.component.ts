@@ -18,7 +18,7 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
     <tr>
       <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)"><span>{{ langEn ? 'Elem' : '属性' }}</span></th>
       <th class="sortable" [ngClass]="sortDirClass(2)" (click)="nextSortFunIndex(2)"><span>{{ langEn ? 'Name' : 'スキル名' }}</span></th>
-      <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)"><span>{{ langEn ? 'Cost' : '消費' }}</span></th>
+      <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)"><span class="cost">{{ langEn ? 'Cost' : '消費' }}</span></th>
       <th>{{ langEn ? 'Effect' : '説明' }}</th>
       <th *ngIf="hasTarget">{{ langEn ? 'Target' : '範囲' }}</th>
       <th *ngIf="hasRank" class="sortable" [ngClass]="sortDirClass(4)" (click)="nextSortFunIndex(4)"><span>{{ langEn ? 'Rank' : 'ランク' }}</span></th>
@@ -29,7 +29,8 @@ import { SortedTableHeaderComponent } from '../../shared/sorted-table.component'
   `,
   styles: [`
     th { white-space: nowrap; }
-    span { padding: 1.2em; }
+    span { padding: 0.6em; }
+    span.cost { padding: 1.2em; }
   `]
 })
 export class SkillListHeaderComponent extends SortedTableHeaderComponent implements OnInit {

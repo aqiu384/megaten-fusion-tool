@@ -25,7 +25,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       <tbody>
         <tr>
           <ng-container *ngIf="langEn">
-            <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToString]">
+            <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToColor]">
               {{ resist | reslvlToString }}
             </td>
             <td *ngFor="let resist of ailments" [ngClass]="['resists', resist | reslvlToString]">
@@ -33,7 +33,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
             </td>
           </ng-container>
           <ng-container *ngIf="!langEn">
-            <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToString]">
+            <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToColor]">
               {{ resist | reslvlToStringJa }}
             </td>
             <td *ngFor="let resist of ailments" [ngClass]="['resists', resist | reslvlToString]">
@@ -42,10 +42,10 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
           </ng-container>
         </tr>
         <tr>
-          <td *ngFor="let resist of resists" [ngClass]="['resists', resist % 4080 === 400 ? 'no' : '']">
+          <td *ngFor="let resist of resists" [ngClass]="['resists', resist % 1024 === 40 ? 'no' : '']">
             {{ resist | resmodToString }}
           </td>
-          <td *ngFor="let resist of ailments" [ngClass]="['resists', resist % 4080 === 400 ? 'no' : '']">
+          <td *ngFor="let resist of ailments" [ngClass]="['resists', resist % 1024 === 40 ? 'no' : '']">
             {{ resist | resmodToString }}
           </td>
         </tr>

@@ -1,6 +1,8 @@
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
+type NumDict = { [name: string]: number };
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
@@ -30,6 +32,11 @@ export class Compendium implements ICompendium {
 
     const statLen = compConfig.baseStats.length;
     const resLen = compConfig.resistElems.length;
+    const resistCodes: NumDict = {};
+
+    for (const [res, code] of Object.entries(compConfig.resistCodes)) {
+      resistCodes[res] = ((code / 1000 | 0 + 8) << 10) + (code % 1000 / 2.5 | 0);
+    }
 
     for (const [name, json] of Object.entries(compConfig.demonData)) {
       const skills = compConfig.appTitle !== 'Shin Megami Tensei IMAGINE' ?
@@ -48,7 +55,7 @@ export class Compendium implements ICompendium {
         price:    Math.pow(Math.floor(json['lvl']), 3),
         stats:    json['stats'].slice(0, statLen),
         atks:     json['atks'] || [],
-        resists:  json['resists'].substring(0, resLen).split('').map(char => compConfig.resistCodes[char]),
+        resists:  json['resists'].substring(0, resLen).split('').map(x => resistCodes[x]),
         align:    json['align'] || compConfig.alignData.races[json['race']],
         skills
       };

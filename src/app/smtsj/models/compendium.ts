@@ -16,6 +16,8 @@ import DEMON_CODES_JSON from '../data/demon-codes.json';
 import SKILL_CODES_JSON from '../data/skill-codes.json';
 import ALIGNMENTS_JSON from '../data/alignments.json';
 
+type NumDict = { [name: string]: number };
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private bosses: { [name: string]: Demon };
@@ -54,6 +56,11 @@ export class Compendium implements ICompendium {
     const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
 
     const ailmentResists: { [lvl: string]: Skill[] } = { 1125: [], 50: [], 0: [] };
+    const resistCodes: NumDict = {};
+
+    for (const [res, code] of Object.entries(ResistCodes)) {
+      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+    }
 
     for (const [lvl, prefix]  of Object.entries({ 1125: 'Weak', 50: 'Resist', 0: 'Null' })) {
       for (const ail of Ailments) {
@@ -99,8 +106,8 @@ export class Compendium implements ICompendium {
           stats:    json['stats'],
           price:    Compendium.estimateBasePrice(json['stats'], json['pcoeff']),
           inherits: 0,
-          resists:  json['resists'].split('').map(char => ResistCodes[char]),
-          ailments: (json['ailments'] || '---------').split('').map(char => ResistCodes[char]),
+          resists:  json['resists'].split('').map(x => resistCodes[x]),
+          ailments: (json['ailments'] || '---------').split('').map(x => resistCodes[x]),
           affinities: json['inherits'].split('').map(char => char === 'o' ? 1 : 0),
           skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),

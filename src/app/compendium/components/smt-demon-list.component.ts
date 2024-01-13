@@ -16,21 +16,21 @@ import { DemonListComponent } from '../bases/demon-list.component';
         <option *ngFor="let _ of currRange; let i = index" [value]="i + currOffset">{{ i + currOffset }}</option>
       </select>
     </td>
-    <td><a routerLink="{{ data.name }}">{{ data.name }}</a></td>
-    <td *ngIf="hasInherits"><div class="element-icon i{{ data.inherits }}">{{ data.inherits }}</div></td>
+    <td><a [routerLink]="data.name">{{ data.name }}</a></td>
+    <td *ngIf="hasInherits"><div [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <ng-container *ngIf="langEn">
-      <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">
+      <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
         {{ resist | reslvlToString }}
       </td>
     </ng-container>
     <ng-container *ngIf="!langEn">
-      <td *ngFor="let resist of data.resists" class="resists {{ resist | reslvlToString }}">
+      <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
         {{ resist | reslvlToStringJa }}
       </td>
     </ng-container>
     <ng-container *ngIf="hasAffinity">
-      <td *ngFor="let affinity of data.affinities" class="affinity{{ affinity }}">
+      <td *ngFor="let affinity of data.affinities" [ngClass]="'affinity' + affinity">
         {{ affinity | affinityToString }}
       </td>
     </ng-container>

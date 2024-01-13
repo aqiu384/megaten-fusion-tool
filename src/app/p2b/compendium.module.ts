@@ -18,13 +18,19 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import PARTY_AFFINITY_JSON from './data/party-affinities.json';
 import MUTATIONS_JSON from './data/mutations.json';
 
+type NumDict = { [name: string]: number };
+
 function createCompConfig(): CompendiumConfig {
-  const resistCodes = COMP_CONFIG_JSON.resistCodes;
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const elemOrder = skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {});
   const demons: { [name: string]: Demon } = {};
   const enemies: { [name: string]: Demon } = {};
   const skills: { [name: string]: Skill } = {};
+  const resistCodes: NumDict = {};
+
+  for (const [res, code] of Object.entries(COMP_CONFIG_JSON.resistCodes)) {
+    resistCodes[res] = ((code / 1000 | 0 + 8) << 10) + (code % 1000 / 2.5 | 0);
+  }
 
   for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
     const resists = json.resists.split('').map(r => resistCodes[r]);

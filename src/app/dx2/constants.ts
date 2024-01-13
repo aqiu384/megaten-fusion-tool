@@ -80,12 +80,12 @@ export const BaseStats = [
 ];
 
 export const ResistCodes = {
-  w: 1125,
-  '-': 100,
-  s: 50,
-  n: 0,
-  r: -100,
-  d: -1100
+  w: 6125,
+  '-': 5100,
+  s: 4050,
+  n: 3000,
+  r: 2100,
+  d: 1100
 };
 
 export const RaceOrder = getEnumOrder(Races);

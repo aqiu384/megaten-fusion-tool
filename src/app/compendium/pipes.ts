@@ -35,7 +35,7 @@ export class SkillLevelToShortStringPipe implements PipeTransform {
 const AFFINITY_LVLS = [
   '-', '-9', '-8', '-7', '-6', '-5', '-4', '-3', '-2', '-1',
   '0', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', 'O'
-]
+];
 
 @Pipe({ name: 'affinityToString' })
 export class ElementAffinityToStringPipe implements PipeTransform {
@@ -51,28 +51,53 @@ export class LvlToNumberPipe implements PipeTransform {
   }
 }
 
-const RESIST_LVLS = ['??', 'ab', 'rp', 'nu', 'rs', 'no', 'wk', 'fr']
+const RESIST_LVLS = [
+  '??', 'ab', 'rp', 'nu', 'rs', 'no', 'wk', 'fr',
+  '??', 'ab', 'rp', 'nu'
+];
+
+const RESIST_NUMS = [
+  { 4: '0.1', 5: '⅛', 8: '0.2', 10: '¼', 15: '⅜', 20: '½', 25: '⅝', 28: '0.7', 30: '¾', 32: '0.8', 35: '⅞' },
+  { 40: 'no' },
+  { 50: '1.2', 60: '1.5', 70: '1.7', 80: '2.0', 100: '2.5', 120: '3.0' },
+];
 
 @Pipe({ name: 'reslvlToString' })
 export class ReslvlToStringPipe implements PipeTransform {
   transform(value: number): string {
-    return RESIST_LVLS[value >> 12];
+    const resLvl = value >> 10;
+    return resLvl < 12 ? RESIST_LVLS[resLvl] : RESIST_NUMS[resLvl - 12][value & 0x3FF];
+  }
+}
+
+const JA_RESIST_LVLS = [
+  '??', '吸', '反', '無', '耐', 'ー', '弱', '??',
+  '??', '吸', '反', '無', '耐', 'ー', '弱'
+];
+
+@Pipe({ name: 'reslvlToStringJa' })
+export class ReslvlToStringJaPipe implements PipeTransform {
+  transform(value: number): string {
+    return JA_RESIST_LVLS[value >> 12];
+  }
+}
+
+const RESIST_COLORS = [
+  '??', 'ab', 'rp', 'nu', 'rs', 'no', 'wk', 'fr',
+  '??', 'ab', 'rp', 'nu', 'rs', 'no', 'wk', 'fr'
+];
+
+@Pipe({ name: 'reslvlToColor' })
+export class ReslvlToColorPipe implements PipeTransform {
+  transform(value: number): string {
+    return RESIST_COLORS[value >> 10];
   }
 }
 
 @Pipe({ name: 'resmodToString' })
 export class ResmodToStringPipe implements PipeTransform {
   transform(value: number): string {
-    return ((value >> 4) & 0xFF) * 5 + '%';
-  }
-}
-
-const JA_RESIST_LVLS = ['??', '吸', '反', '無', '耐', 'ー', '弱']
-
-@Pipe({ name: 'reslvlToStringJa' })
-export class ReslvlToStringJaPipe implements PipeTransform {
-  transform(value: number): string {
-    return JA_RESIST_LVLS[value >> 12];
+    return (value & 0x3FF) * 2.5 + '%';
   }
 }
 
