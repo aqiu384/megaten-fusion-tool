@@ -8,7 +8,6 @@ export class Compendium implements ICompendium {
   private enemies: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] };
-  private _dlcDemons: { [name: string]: boolean };
   private normalExceptions: { [name: string]: string };
 
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
@@ -28,7 +27,6 @@ export class Compendium implements ICompendium {
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string [] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
-    const dlcDemons: { [name: string]: boolean } = {};
     const normalExceptions: { [name: string]: string } = {};
     const resistCodes: { [code: string]: number } = {};
 
@@ -171,18 +169,11 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const dlcDemon of this.compConfig.downloadedDemons) {
-      dlcDemons[dlcDemon] = true;
-    } for (const dlcDemon of this.compConfig.dlcDemons) {
-      dlcDemons[dlcDemon] = false;
-    }
-
     this.demons = demons;
     this.enemies = enemies;
     this.skills = skills;
     this.specialRecipes = specialRecipes;
     this.invertedDemons = inversions;
-    this._dlcDemons = dlcDemons;
     this.normalExceptions = normalExceptions;
   }
 
@@ -233,14 +224,6 @@ export class Compendium implements ICompendium {
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
-  }
-
-  get dlcDemons(): { [name: string]: boolean } {
-    return this._dlcDemons;
-  }
-
-  set dlcDemons(dlcDemons: { [name: string]: boolean }) {
-    this._dlcDemons = dlcDemons;
   }
 
   get allDemons(): Demon[] {

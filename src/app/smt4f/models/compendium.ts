@@ -13,11 +13,6 @@ export class Compendium implements ICompendium {
   private specialPairRecipes: { [name: string]: NamePair[] };
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
-  private _dlcDemons: { [name: string]: boolean } = {
-    'Cleopatra': false,
-    'Mephisto': false
-  };
-
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
   private _allDemons: Demon[];
@@ -178,7 +173,6 @@ export class Compendium implements ICompendium {
       }
     }
 
-    this._dlcDemons = this.compConfig.dlcDemons.reduce((acc, d) => { acc[d] = false; return acc }, {});
     this.demons = demons;
     this.skills = skills;
     this.specialRecipes = specialRecipes;
@@ -237,14 +231,6 @@ export class Compendium implements ICompendium {
     this._allSkills = skills.filter(skill => skill.rank < 99 || skill.learnedBy.length > 0);
     this.allIngredients = ingredients;
     this.allResults = results;
-  }
-
-  get dlcDemons(): { [name: string]: boolean } {
-    return this._dlcDemons;
-  }
-
-  set dlcDemons(dlcDemons: { [name: string]: boolean }) {
-    this._dlcDemons = dlcDemons;
   }
 
   get allDemons(): Demon[] {

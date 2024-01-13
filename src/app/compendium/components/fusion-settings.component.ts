@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { FusionSettings } from '../models/fusion-settings';
 
 @Component({
-  selector: 'app-demon-dlc-settings',
+  selector: 'app-fusion-settings',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container>
@@ -30,7 +30,7 @@ import { FusionSettings } from '../models/fusion-settings';
     </ng-container>
   `
 })
-export class DemonDlcSettingsComponent {
+export class FusionSettingsComponent {
   @Input() dlcDemons: { name: string, included: boolean }[];
   @Input() dlcTitle = 'Included DLC Demons';
   @Input() langEn = true;

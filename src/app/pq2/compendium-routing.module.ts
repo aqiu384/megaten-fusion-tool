@@ -6,7 +6,7 @@ import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { PasswordGeneratorContainerComponent } from './components/password-generator.component';
-import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
+import { FusionSettingsContainerComponent } from './components/fusion-settings.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
@@ -87,7 +87,7 @@ const compendiumRoutes: Routes = [
       },
       {
         path: 'settings',
-        component: DemonDlcSettingsContainerComponent
+        component: FusionSettingsContainerComponent
       }
     ]
   },

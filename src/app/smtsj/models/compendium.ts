@@ -33,8 +33,6 @@ export class Compendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
-  dlcDemons: { [name: string]: boolean } = {};
-
   static estimateBasePrice(stats: number[], pcoeff: number): number {
     const x = stats.slice(2).reduce((acc, stat) => stat + acc, 0);
     return Math.floor((Math.floor(pcoeff * Math.pow(x, 3) / 1000) + 1300) * 0.75);

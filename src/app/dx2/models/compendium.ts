@@ -23,8 +23,6 @@ export class Compendium implements ICompendium {
   private _allDemons: Demon[];
   private _allSkills: Skill[];
 
-  dlcDemons: { [name: string]: boolean } = {};
-
   constructor() {
     this.initImportedData();
     this.updateDerivedData();

@@ -1,22 +1,21 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
-import { DemonDlcSettingsContainerComponent as DDSCC } from '../../compendium/containers/demon-dlc-settings.component';
+import { FusionSettingsContainerComponent as FSCC } from '../../compendium/containers/fusion-settings.component';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
-  selector: 'app-demon-dlc-settings-container',
+  selector: 'app-fusion-settings-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <app-demon-dlc-settings
-      [dlcDemons]="dlcDemons"
+    <app-fusion-settings
       [appTitle]="appTitle"
       [dlcTitle]="'Fusion Settings'"
       [fusionSettings]="fusionSettings"
       (toggledName)="toggleName($event)">
-    </app-demon-dlc-settings>
+    </app-fusion-settings>
   `
 })
-export class DemonDlcSettingsContainerComponent extends DDSCC {
+export class FusionSettingsContainerComponent extends FSCC {
   appTitle: string;
 
   constructor(

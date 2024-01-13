@@ -15,7 +15,6 @@ export class Compendium implements ICompendium {
   private allResults: { [race: string]: number[] };
   private _allDemons: Demon[];
   private _allSkills: Skill[];
-  private _dlcDemons: { [name: string]: boolean };
 
   constructor(private compConfig: CompendiumConfig, demonToggles: Toggles) {
     this.initImportedData();
@@ -34,13 +33,8 @@ export class Compendium implements ICompendium {
       resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
     }
 
-    this._dlcDemons = {}
-
     if (this.compConfig.dlcData) {
       Object.assign(this.compConfig.demonData, this.compConfig.dlcData);
-      for (const name of Object.keys(this.compConfig.dlcData)) {
-        this._dlcDemons[name] = false;
-      }
     }
 
     for (const [name, json] of Object.entries(this.compConfig.demonData)) {
@@ -179,14 +173,6 @@ export class Compendium implements ICompendium {
     this._allSkills = skills;
     this.allIngredients = ingredients;
     this.allResults = results;
-  }
-
-  get dlcDemons(): { [name: string]: boolean } {
-    return this._dlcDemons;
-  }
-
-  set dlcDemons(dlcDemons: { [name: string]: boolean }) {
-    this._dlcDemons = dlcDemons;
   }
 
   get allDemons(): Demon[] {

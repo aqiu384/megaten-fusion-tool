@@ -9,7 +9,7 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
-import { DemonDlcSettingsContainerComponent } from './components/demon-dlc-settings.component';
+import { FusionSettingsContainerComponent } from './components/fusion-settings.component';
 
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from './components/password-generator.component';
@@ -33,7 +33,7 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
-    DemonDlcSettingsContainerComponent,
+    FusionSettingsContainerComponent,
     PasswordGeneratorComponent,
     PasswordGeneratorContainerComponent,
     RecipeGeneratorContainerComponent
@@ -46,7 +46,7 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
-    DemonDlcSettingsContainerComponent,
+    FusionSettingsContainerComponent,
     PasswordGeneratorComponent,
     PasswordGeneratorContainerComponent,
     RecipeGeneratorContainerComponent

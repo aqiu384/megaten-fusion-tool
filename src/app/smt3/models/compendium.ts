@@ -19,8 +19,6 @@ export class Compendium implements ICompendium {
   private entryRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
 
-  dlcDemons: { [name: string]: boolean } = {};
-
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
   private _allDemons: Demon[];

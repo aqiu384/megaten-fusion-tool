@@ -5,9 +5,7 @@ import { Compendium, FusionDataService } from '../models';
 import { FusionSettings } from '../models/fusion-settings';
 
 @Directive()
-export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
-  private _dlcDemons: { [name: string]: boolean };
-  dlcDemons: { name: string, included: boolean }[];
+export class FusionSettingsContainerComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   compendium: Compendium;
   fusionSettings: FusionSettings;
@@ -21,8 +19,6 @@ export class DemonDlcSettingsContainerComponent implements OnInit, OnDestroy {
     this.subscriptions.push(this.fusionDataService2.compendium.subscribe(comp => {
       this.changeDetector2.markForCheck();
       this.compendium = comp;
-      this._dlcDemons = Object.assign({}, this.compendium.dlcDemons);
-      this.dlcDemons = Object.entries(this._dlcDemons).map(([ name, included ]) => ({ name, included }));
     }));
 
     this.subscriptions.push(this.fusionDataService2.fusionSettings.subscribe(settings => {

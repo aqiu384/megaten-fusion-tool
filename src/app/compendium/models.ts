@@ -49,7 +49,6 @@ export interface Skill {
 }
 
 export interface Compendium {
-  dlcDemons: { [name: string]: boolean };
   allDemons: Demon[];
   allSkills: Skill[];
   specialDemons: Demon[];
