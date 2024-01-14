@@ -23,7 +23,6 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
 
     demonData: translateDemonData(compConfig.demonData, enNames),
     evolveData: translateEvolutions(compConfig.evolveData, enNames),
-    dlcDemons: compConfig.dlcDemons.map(dlist => dlist.split(',').map(d => enNames[d] || d).join(',')),
     baseStats: compConfig.baseStats.map(s => enNames[s] || s),
     resistElems: compConfig.resistElems,
     ailmentElems: compConfig.ailmentElems.map(a => enNames[a] || a),

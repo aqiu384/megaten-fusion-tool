@@ -97,8 +97,6 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
     demonUnlocks: DEMON_UNLOCKS_JSON,
 
-    dlcDemons: COMP_CONFIG_JSON.dlcDemons,
-    downloadedDemons: [],
     settingsKey: 'p5-fusion-tool-settings',
     settingsVersion: 2401131500
   };

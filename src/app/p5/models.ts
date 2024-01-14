@@ -33,8 +33,6 @@ export interface CompendiumConfig extends BaseComp {
   specialRecipes: { [name: string]: string[] };
   demonUnlocks: DemonUnlock[];
 
-  dlcDemons: string[];
-  downloadedDemons: string[];
   settingsKey: string;
   settingsVersion: number;
 }

@@ -93,8 +93,7 @@ function createCompConfig(): CompendiumConfig {
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-    demonData: DEMON_DATA_JSON,
-    dlcData: DLC_DATA_JSON,
+    demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
     baseStats: ['HP', 'MP'],
     resistElems: [],
     inheritTypes,

@@ -7,10 +7,10 @@
     "race": "Tyrant",
     "resists": "--r-w---",
     "skills": {
-      "Eat Whole": 66,
-      "Hades Blast": 0,
+      "Hades Blast": 0.1,
+      "War Cry": 0.2,
       "Retaliate": 65,
-      "War Cry": 0
+      "Eat Whole": 66
     },
     "stats": [605, 184, 96, 60, 43, 63, 73]
   },
@@ -21,11 +21,11 @@
     "race": "Fallen",
     "resists": "--dw---s",
     "skills": {
-      "Bloody Glee": 71,
+      "Hellish Brand": 0.1,
+      "Madness Nails": 0.2,
       "Eat Whole": 69,
       "Fire Pleroma": 70,
-      "Hellish Brand": 0,
-      "Madness Nails": 0
+      "Bloody Glee": 71
     },
     "stats": [592, 386, 86, 60, 113, 67, 82]
   },
@@ -36,9 +36,9 @@
     "race": "Element",
     "resists": "----ws--",
     "skills": {
-      "Force Pleroma": 0,
-      "Mana Bonus": 16,
-      "Shibaboo": 13
+      "Force Pleroma": 0.1,
+      "Shibaboo": 13,
+      "Mana Bonus": 16
     },
     "stats": [150, 86, 17, 22, 15, 28, 21]
   },
@@ -49,10 +49,10 @@
     "race": "Yoma",
     "resists": "-wsws--w",
     "skills": {
-      "Dream Fist": 0,
-      "Mazio": 15,
-      "Pulinpa": 0,
-      "Zionga": 14
+      "Pulinpa": 0.1,
+      "Dream Fist": 0.2,
+      "Zionga": 14,
+      "Mazio": 15
     },
     "stats": [118, 101, 12, 19, 22, 17, 20]
   },
@@ -64,8 +64,8 @@
     "race": "Holy",
     "resists": "-nwss-sw",
     "skills": {
+      "Earthquake": 0.1,
       "Chakra Walk": 45,
-      "Earthquake": 0,
       "Life Surge": 46
     },
     "stats": [446, 136, 69, 43, 32, 46, 53]
@@ -78,9 +78,9 @@
     "race": "Vile",
     "resists": "wwnnnnwd",
     "skills": {
-      "Magaon": 68,
-      "Poison Breath": 0,
-      "Tetrakarn": 0
+      "Poison Breath": 0.1,
+      "Tetrakarn": 0.2,
+      "Magaon": 68
     },
     "stats": [472, 262, 65, 58, 86, 69, 76]
   },
@@ -92,10 +92,10 @@
     "race": "Undead",
     "resists": "-n----wr",
     "skills": {
+      "Die For Me!": 0.1,
+      "Dream Needle": 0.2,
+      "Energy Drain": 0.3,
       "Dekunda": 50,
-      "Die For Me!": 0,
-      "Dream Needle": 0,
-      "Energy Drain": 0,
       "High Dark Pleroma": 53
     },
     "stats": [385, 339, 41, 51, 82, 56, 67]
@@ -108,10 +108,10 @@
     "race": "Entity",
     "resists": "------ss",
     "skills": {
+      "Diarahan": 0.1,
+      "Megidolaon": 0.2,
       "Concentrate": 85,
-      "Diarahan": 0,
       "Makarabreak": 86,
-      "Megidolaon": 0,
       "Null Phys": 87
     },
     "stats": [621, 440, 64, 63, 135, 78, 108]
@@ -124,10 +124,10 @@
     "race": "Wood",
     "resists": "-sw-----",
     "skills": {
+      "Madness Needle": 0.1,
+      "Sexy Dance": 0.2,
       "Blast Arrow": 49,
-      "Madness Needle": 0,
-      "Mana Gain": 51,
-      "Sexy Dance": 0
+      "Mana Gain": 51
     },
     "stats": [499, 204, 47, 75, 39, 51, 62]
   },
@@ -138,11 +138,11 @@
     "race": "Amatsu",
     "resists": "--r-w-s-",
     "skills": {
+      "Trisagion": 0.1,
+      "Will of Flame": 0.2,
       "Mana Surge": 80,
       "Mediarahan": 81,
-      "Null Light": 82,
-      "Trisagion": 0,
-      "Will of Flame": 0
+      "Null Light": 82
     },
     "stats": [493, 406, 53, 69, 118, 77, 94]
   },
@@ -153,10 +153,10 @@
     "race": "Amatsu",
     "resists": "-w--wss-",
     "skills": {
-      "Light Mana Aid": 0,
+      "Sabbatma": 0.1,
+      "Light Mana Aid": 0.2,
+      "Scratch Dance": 0.3,
       "Media": 24,
-      "Sabbatma": 0,
-      "Scratch Dance": 0,
       "Spring of Life": 25
     },
     "stats": [174, 195, 18, 23, 41, 29, 31]
@@ -169,10 +169,10 @@
     "race": "Beast",
     "resists": "-s-wn---",
     "skills": {
-      "Energy Drain": 0,
+      "Energy Drain": 0.1,
+      "War Cry": 0.2,
       "Nihil Claw": 65,
-      "Null Fire": 66,
-      "War Cry": 0
+      "Null Fire": 66
     },
     "stats": [614, 187, 97, 60, 44, 64, 74]
   },
@@ -183,11 +183,11 @@
     "race": "Megami",
     "resists": "s--w--n-",
     "skills": {
-      "Ally Retaliate": 65,
+      "Mortal Jihad": 0.1,
+      "Tarukaja": 0.2,
       "Hades Blast": 64,
-      "Mortal Jihad": 0,
-      "Phys Pleroma": 66,
-      "Tarukaja": 0
+      "Ally Retaliate": 65,
+      "Phys Pleroma": 66
     },
     "stats": [635, 234, 99, 59, 48, 70, 78]
   },
@@ -199,10 +199,10 @@
     "race": "Divine",
     "resists": "----w-nw",
     "skills": {
-      "Dia": 0,
-      "Hama": 0,
-      "Magaon": 12,
+      "Dia": 0.1,
+      "Hama": 0.2,
       "Patra": 11,
+      "Magaon": 12,
       "Rakukaja": 14
     },
     "stats": [112, 112, 11, 14, 23, 17, 18]
@@ -215,10 +215,10 @@
     "race": "Divine",
     "resists": "--s-wsnw",
     "skills": {
-      "High Light Pleroma": 84,
-      "Judgement Light": 0,
-      "Luster Candy": 0,
-      "Mediarahan": 83
+      "Judgement Light": 0.1,
+      "Luster Candy": 0.2,
+      "Mediarahan": 83,
+      "High Light Pleroma": 84
     },
     "stats": [510, 420, 54, 71, 122, 80, 97]
   },
@@ -229,11 +229,11 @@
     "race": "Herald",
     "resists": "----rwd-",
     "skills": {
+      "Thunder Reign": 0.1,
+      "Makajamaon": 0.2,
       "Dekunda": 91,
       "Judgement Light": 92,
-      "Makajamaon": 0,
-      "Thunder Gods": 93,
-      "Thunder Reign": 0
+      "Thunder Gods": 93
     },
     "stats": [743, 335, 93, 98, 103, 94, 101]
   },
@@ -245,11 +245,11 @@
     "race": "Avatar",
     "resists": "------ns",
     "skills": {
-      "Dark Pleroma": 63,
+      "Judgement Light": 0.1,
+      "Mamudoon": 0.2,
       "Dekunda": 61,
-      "Judgement Light": 0,
       "Light Pleroma": 62,
-      "Mamudoon": 0
+      "Dark Pleroma": 63
     },
     "stats": [487, 379, 44, 54, 104, 62, 70]
   },
@@ -261,10 +261,10 @@
     "race": "Raptor",
     "resists": "-w--nw--",
     "skills": {
-      "Critical Eye": 51,
+      "Shock": 0.1,
+      "Nihil Claw": 0.2,
       "Me Patra": 50,
-      "Nihil Claw": 0,
-      "Shock": 0
+      "Critical Eye": 51
     },
     "stats": [548, 228, 71, 43, 63, 50, 54]
   },
@@ -276,10 +276,10 @@
     "race": "Holy",
     "resists": "------sw",
     "skills": {
-      "Critical Wave": 0,
-      "Hama": 0,
-      "Media": 20,
-      "Tetraja": 19
+      "Hama": 0.1,
+      "Critical Wave": 0.2,
+      "Tetraja": 19,
+      "Media": 20
     },
     "stats": [227, 71, 33, 21, 16, 20, 28]
   },
@@ -291,10 +291,10 @@
     "race": "Nymph",
     "resists": "--ws----",
     "skills": {
-      "Diarama": 0,
-      "Mabufu": 17,
-      "Marin Karin": 0,
-      "Posumudi": 16
+      "Diarama": 0.1,
+      "Marin Karin": 0.2,
+      "Posumudi": 16,
+      "Mabufu": 17
     },
     "stats": [150, 114, 14, 18, 27, 20, 23]
   },
@@ -305,11 +305,11 @@
     "race": "Deity",
     "resists": "---rw--s",
     "skills": {
-      "Ice Age": 0,
-      "Repel Fire": 85,
-      "Smile Charge": 84,
+      "Ice Age": 0.1,
+      "Victory Cry": 0.2,
       "Titanomachia": 83,
-      "Victory Cry": 0
+      "Smile Charge": 84,
+      "Repel Fire": 85
     },
     "stats": [510, 420, 54, 71, 122, 80, 97]
   },
@@ -320,9 +320,9 @@
     "race": "Element",
     "resists": "--ws----",
     "skills": {
-      "Ice Pleroma": 0,
-      "Life Bonus": 20,
-      "Poisma": 17
+      "Ice Pleroma": 0.1,
+      "Poisma": 17,
+      "Life Bonus": 20
     },
     "stats": [150, 128, 15, 24, 30, 26, 24]
   },
@@ -334,8 +334,8 @@
     "race": "Vermin",
     "resists": "-n-wn-w-",
     "skills": {
-      "Blast Arrow": 0,
-      "Stun Needles": 0,
+      "Stun Needles": 0.1,
+      "Blast Arrow": 0.2,
       "Sukunda": 45
     },
     "stats": [409, 153, 43, 69, 36, 73, 46]
@@ -347,11 +347,11 @@
     "race": "Kunitsu",
     "resists": "sswwwwss",
     "skills": {
+      "Sea of Chaos": 0.1,
+      "Makarakarn": 0.2,
       "Concentrate": 58,
       "Energy Drain": 61,
-      "Makarakarn": 0,
-      "Null Ice": 62,
-      "Sea of Chaos": 0
+      "Null Ice": 62
     },
     "stats": [430, 376, 45, 57, 93, 63, 75]
   },
@@ -364,10 +364,10 @@
     "race": "Zealot",
     "resists": "------sw",
     "skills": {
-      "Blood Ritual": 61,
-      "Bufudyne": 0,
-      "Magaon": 0,
-      "Sea of Chaos": 60
+      "Bufudyne": 0.1,
+      "Magaon": 0.2,
+      "Sea of Chaos": 60,
+      "Blood Ritual": 61
     },
     "stats": [451, 365, 42, 56, 94, 84, 73]
   },
@@ -378,9 +378,9 @@
     "race": "Divine",
     "resists": "------nw",
     "skills": {
+      "Hama": 0.1,
+      "Heat Wave": 0.2,
       "Agilao": 19,
-      "Hama": 0,
-      "Heat Wave": 0,
       "Tarukaja": 20
     },
     "stats": [227, 121, 33, 21, 28, 22, 26]
@@ -393,10 +393,10 @@
     "race": "Fury",
     "resists": "------sw",
     "skills": {
+      "Power Punch": 0.1,
+      "Counter": 0.2,
       "Charge": 33,
-      "Counter": 0,
-      "Javelin Rain": 34,
-      "Power Punch": 0
+      "Javelin Rain": 34
     },
     "stats": [375, 106, 57, 40, 24, 35, 40]
   },
@@ -407,10 +407,10 @@
     "race": "Lady",
     "resists": "--nw-n-w",
     "skills": {
+      "Maragion": 0.1,
+      "Grand Tack": 0.2,
       "Diarama": 52,
-      "Grand Tack": 0,
       "Judgement": 53,
-      "Maragion": 0,
       "Samarecarm": 54
     },
     "stats": [462, 293, 50, 85, 75, 45, 57]
@@ -423,10 +423,10 @@
     "race": "Fury",
     "resists": "s-nw--s-",
     "skills": {
+      "Titanomachia": 0.1,
+      "Maragion": 0.2,
       "Critical Eye": 44,
-      "Maragion": 0,
-      "Resist Gun": 45,
-      "Titanomachia": 0
+      "Resist Gun": 45
     },
     "stats": [557, 113, 73, 43, 31, 45, 63]
   },
@@ -437,9 +437,9 @@
     "race": "Femme",
     "resists": "--wn----",
     "skills": {
+      "Eternal Rest": 0.1,
+      "Hamaon": 0.2,
       "Bufudyne": 47,
-      "Eternal Rest": 0,
-      "Hamaon": 0,
       "Ziodyne": 48
     },
     "stats": [358, 256, 32, 43, 73, 41, 57]
@@ -453,10 +453,10 @@
     "race": "Zealot",
     "resists": "sw------",
     "skills": {
-      "Blood Ritual": 0,
-      "Enduring Soul": 0,
+      "Blood Ritual": 0.1,
+      "Enduring Soul": 0.2,
+      "Recarmdra": 0.3,
       "Mabufudyne": 75,
-      "Recarmdra": 0,
       "Victory Cry": 76
     },
     "stats": [698, 212, 111, 69, 50, 73, 84]
@@ -468,10 +468,10 @@
     "race": "Tyrant",
     "resists": "-rs-wnws",
     "skills": {
+      "Maragidyne": 0.1,
+      "Grand Tack": 0.2,
       "Fire Pleroma": 70,
-      "Grand Tack": 0,
       "Gun Pleroma": 71,
-      "Maragidyne": 0,
       "Samarecarm": 72
     },
     "stats": [687, 345, 64, 54, 113, 76, 85]
@@ -483,11 +483,11 @@
     "race": "Herald",
     "resists": "s-sw--rs",
     "skills": {
-      "Agidyne": 0,
-      "Blink of Death": 0,
+      "Agidyne": 0.1,
+      "Blink of Death": 0.2,
       "Makarakarn": 78,
-      "Null Dark": 80,
-      "Tetrakarn": 79
+      "Tetrakarn": 79,
+      "Null Dark": 80
     },
     "stats": [482, 398, 51, 67, 115, 75, 91]
   },
@@ -498,9 +498,9 @@
     "race": "Brute",
     "resists": "---sw---",
     "skills": {
-      "Ice Breath": 0,
-      "Mabufu": 21,
-      "Posumudi": 20
+      "Ice Breath": 0.1,
+      "Posumudi": 20,
+      "Mabufu": 21
     },
     "stats": [152, 101, 23, 23, 26, 32, 29]
   },
@@ -511,11 +511,11 @@
     "race": "Deity",
     "resists": "---wd-s-",
     "skills": {
+      "Maragidyne": 0.1,
+      "Mist Rush": 0.2,
       "Ally Retaliate": 80,
-      "Maragidyne": 0,
-      "Mist Rush": 0,
-      "Null Fire": 82,
-      "Vengeful Thunder": 81
+      "Vengeful Thunder": 81,
+      "Null Fire": 82
     },
     "stats": [616, 280, 90, 90, 84, 79, 82]
   },
@@ -527,10 +527,10 @@
     "race": "Drake",
     "resists": "--ws--w-",
     "skills": {
-      "Bufula": 0,
+      "Bufula": 0.1,
+      "Media": 0.2,
       "Makakaja": 22,
-      "Me Patra": 23,
-      "Media": 0
+      "Me Patra": 23
     },
     "stats": [168, 141, 18, 23, 37, 25, 30]
   },
@@ -541,10 +541,10 @@
     "race": "Holy",
     "resists": "----nw--",
     "skills": {
-      "High Elec Pleroma": 65,
+      "Ziodyne": 0.1,
+      "War Cry": 0.2,
       "Madness Nails": 63,
-      "War Cry": 0,
-      "Ziodyne": 0
+      "High Elec Pleroma": 65
     },
     "stats": [627, 251, 100, 54, 55, 75, 69]
   },
@@ -555,11 +555,11 @@
     "race": "Genma",
     "resists": "sw--s--w",
     "skills": {
-      "Ally Counter": 32,
-      "Hamaon": 0,
-      "Head Crush": 0,
+      "Hamaon": 0.1,
+      "Head Crush": 0.2,
+      "Resist Light": 30,
       "Light Pleroma": 31,
-      "Resist Light": 30
+      "Ally Counter": 32
     },
     "stats": [311, 96, 44, 30, 22, 31, 39]
   },
@@ -571,10 +571,10 @@
     "race": "Tyrant",
     "resists": "-snw-s--",
     "skills": {
-      "Agidyne": 40,
-      "Agilao": 0,
+      "Agilao": 0.1,
+      "Megaton Press": 0.2,
       "Mamudo": 37,
-      "Megaton Press": 0
+      "Agidyne": 40
     },
     "stats": [408, 116, 58, 37, 32, 34, 44]
   },
@@ -585,10 +585,10 @@
     "race": "Vile",
     "resists": "------wn",
     "skills": {
+      "Mamudo": 0.1,
+      "Spirit Drain": 0.2,
       "Dark Pleroma": 26,
-      "Mamudo": 0,
-      "Sabbatma": 27,
-      "Spirit Drain": 0
+      "Sabbatma": 27
     },
     "stats": [291, 125, 20, 26, 43, 24, 32]
   },
@@ -599,11 +599,11 @@
     "race": "Fallen",
     "resists": "-rw--n-s",
     "skills": {
-      "Heaven's Bow": 0,
+      "Stun Needles": 0.1,
+      "Heaven's Bow": 0.2,
       "Hellish Mask": 70,
-      "Myriad Arrows": 72,
-      "Stun Needles": 0,
-      "Zandyne": 71
+      "Zandyne": 71,
+      "Myriad Arrows": 72
     },
     "stats": [601, 224, 65, 104, 54, 79, 68]
   },
@@ -615,10 +615,10 @@
     "race": "Avatar",
     "resists": "s---nwnw",
     "skills": {
-      "Endure": 70,
+      "Tetrakarn": 0.1,
+      "Ziodyne": 0.2,
       "Nihil Claw": 69,
-      "Tetrakarn": 0,
-      "Ziodyne": 0
+      "Endure": 70
     },
     "stats": [533, 320, 80, 80, 59, 87, 85]
   },
@@ -630,9 +630,9 @@
     "race": "Drake",
     "resists": "-----wws",
     "skills": {
-      "Bind Voice": 0,
+      "Bind Voice": 0.1,
+      "Poison Breath": 0.2,
       "Me Patra": 29,
-      "Poison Breath": 0,
       "Resist Ice": 30
     },
     "stats": [247, 151, 31, 31, 29, 44, 35]
@@ -644,11 +644,11 @@
     "race": "Tyrant",
     "resists": "-d----ss",
     "skills": {
+      "Mamudoon": 0.1,
+      "Riot Gun": 0.2,
       "High Dark Pleroma": 80,
-      "Mamudoon": 0,
-      "Null Force": 82,
-      "Riot Gun": 0,
-      "Thunder Gods": 81
+      "Thunder Gods": 81,
+      "Null Force": 82
     },
     "stats": [616, 280, 91, 89, 85, 84, 76]
   },
@@ -659,9 +659,9 @@
     "race": "Fury",
     "resists": "--wn--s-",
     "skills": {
+      "Glacial Blast": 0.1,
+      "Recarm": 0.2,
       "Cold World": 67,
-      "Glacial Blast": 0,
-      "Recarm": 0,
       "Workaholic": 68
     },
     "stats": [490, 377, 45, 73, 95, 81, 79]
@@ -673,9 +673,9 @@
     "race": "Tyrant",
     "resists": "--nw---n",
     "skills": {
-      "Fire of Lethargy": 0,
+      "Fire of Lethargy": 0.1,
+      "Mortal Jihad": 0.2,
       "Mana Surge": 71,
-      "Mortal Jihad": 0,
       "Will of Flame": 72
     },
     "stats": [633, 272, 82, 84, 88, 75, 67]
@@ -688,10 +688,10 @@
     "race": "Brute",
     "resists": "n----w--",
     "skills": {
-      "Charge": 0,
+      "Charge": 0.1,
+      "Hades Blast": 0.2,
       "Dark Sword": 65,
-      "Enduring Soul": 66,
-      "Hades Blast": 0
+      "Enduring Soul": 66
     },
     "stats": [514, 237, 107, 60, 44, 64, 74]
   },
@@ -702,9 +702,9 @@
     "race": "Fallen",
     "resists": "--s--ww-",
     "skills": {
-      "Agilao": 0,
+      "Agilao": 0.1,
+      "Posumudi": 0.2,
       "Healing Knowhow": 21,
-      "Posumudi": 0,
       "Resist Dark": 22
     },
     "stats": [163, 137, 17, 22, 36, 24, 29]
@@ -717,9 +717,9 @@
     "race": "Brute",
     "resists": "-w----ws",
     "skills": {
-      "Bufu": 10,
-      "Dia": 0,
-      "Poison Claw": 0
+      "Poison Claw": 0.1,
+      "Dia": 0.2,
+      "Bufu": 10
     },
     "stats": [126, 59, 16, 17, 13, 13, 17]
   },
@@ -730,10 +730,10 @@
     "race": "Kishin",
     "resists": "--wn--s-",
     "skills": {
-      "Bufudyne": 0,
+      "War Cry": 0.1,
+      "Bufudyne": 0.2,
       "Hades Blast": 71,
-      "Luster Candy": 73,
-      "War Cry": 0
+      "Luster Candy": 73
     },
     "stats": [704, 222, 111, 78, 37, 64, 74]
   },
@@ -745,11 +745,11 @@
     "race": "Jaki",
     "resists": "s-sn--ws",
     "skills": {
-      "Dark Pleroma": 0,
-      "Endure": 42,
-      "Ice Breath": 0,
+      "Ice Breath": 0.1,
+      "Taunt": 0.2,
+      "Dark Pleroma": 0.3,
       "Mamudo": 41,
-      "Taunt": 0
+      "Endure": 42
     },
     "stats": [482, 126, 64, 40, 44, 39, 44]
   },
@@ -761,11 +761,11 @@
     "race": "Lady",
     "resists": "----nwss",
     "skills": {
-      "Bufudyne": 0,
-      "Dekaja": 68,
-      "Mediarama": 0,
+      "Mediarama": 0.1,
+      "Bufudyne": 0.2,
+      "Ziodyne": 0.3,
       "Megidola": 67,
-      "Ziodyne": 0
+      "Dekaja": 68
     },
     "stats": [580, 387, 40, 64, 113, 70, 84]
   },
@@ -776,11 +776,11 @@
     "race": "Fiend",
     "resists": "--wd--ss",
     "skills": {
+      "Soul Divide": 0.1,
+      "Soul Drain": 0.2,
       "Glacial Blast": 94,
-      "Ice Pierce": 96,
       "Megidolaon": 95,
-      "Soul Divide": 0,
-      "Soul Drain": 0
+      "Ice Pierce": 96
     },
     "stats": [687, 319, 129, 105, 122, 132, 108]
   },
@@ -792,11 +792,11 @@
     "race": "Fallen",
     "resists": "----rw-s",
     "skills": {
-      "Dark Sword": 0,
-      "Maziodyne": 0,
+      "Maziodyne": 0.1,
+      "Dark Sword": 0.2,
       "Mist Rush": 84,
-      "Null Gun": 86,
-      "Will of Thunder": 85
+      "Will of Thunder": 85,
+      "Null Gun": 86
     },
     "stats": [536, 439, 53, 67, 123, 85, 111]
   },
@@ -807,10 +807,10 @@
     "race": "Megami",
     "resists": "--nw----",
     "skills": {
-      "Agilao": 0,
+      "Media": 0.1,
+      "Agilao": 0.2,
       "Makakaja": 34,
-      "Mana Gain": 35,
-      "Media": 0
+      "Mana Gain": 35
     },
     "stats": [256, 226, 25, 32, 59, 36, 45]
   },
@@ -822,10 +822,10 @@
     "race": "Wilder",
     "resists": "--n-nw-w",
     "skills": {
-      "Acid Breath": 61,
+      "Mediarama": 0.1,
+      "Pandemic Bomb": 0.2,
       "Earthquake": 60,
-      "Mediarama": 0,
-      "Pandemic Bomb": 0
+      "Acid Breath": 61
     },
     "stats": [672, 134, 90, 51, 36, 29, 66]
   },
@@ -838,7 +838,7 @@
     "race": "Flight",
     "resists": "-w-----w",
     "skills": {
-      "Dia": 0,
+      "Dia": 0.1,
       "Posumudi": 6
     },
     "stats": [71, 59, 8, 10, 11, 13, 12]
@@ -851,10 +851,10 @@
     "race": "Raptor",
     "resists": "-w--w-w-",
     "skills": {
-      "Axel Claw": 27,
+      "Tetanus Cut": 0.1,
+      "Life Drain": 0.2,
       "Frenzied Chomp": 26,
-      "Life Drain": 0,
-      "Tetanus Cut": 0
+      "Axel Claw": 27
     },
     "stats": [227, 121, 29, 29, 27, 40, 33]
   },
@@ -866,10 +866,10 @@
     "race": "Wilder",
     "resists": "s-----w-",
     "skills": {
-      "Eat Whole": 54,
+      "Titanomachia": 0.1,
+      "Ziodyne": 0.2,
       "Life Surge": 53,
-      "Titanomachia": 0,
-      "Ziodyne": 0
+      "Eat Whole": 54
     },
     "stats": [583, 196, 80, 45, 64, 53, 64]
   },
@@ -881,7 +881,7 @@
     "race": "Yoma",
     "resists": "-ss-ww-w",
     "skills": {
-      "Bufu": 0,
+      "Bufu": 0.1,
       "Needle Shot": 5
     },
     "stats": [111, 50, 9, 13, 10, 16, 9]
@@ -894,9 +894,9 @@
     "race": "Beast",
     "resists": "--rw----",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Madness Nails": 0.2,
       "Beastly Reaction": 70,
-      "Madness Nails": 0,
       "War Cry": 71
     },
     "stats": [726, 179, 94, 50, 85, 82, 77]
@@ -909,10 +909,10 @@
     "race": "Reaper",
     "resists": "s---nw-r",
     "skills": {
-      "Cough": 0,
-      "Death's Door": 0,
-      "Mamudoon": 73,
-      "Megidola": 72
+      "Cough": 0.1,
+      "Death's Door": 0.2,
+      "Megidola": 72,
+      "Mamudoon": 73
     },
     "stats": [583, 390, 68, 58, 107, 70, 85]
   },
@@ -924,10 +924,10 @@
     "race": "Wilder",
     "resists": "--w-s---",
     "skills": {
+      "Zio": 0.1,
+      "Toxic Sting": 0.2,
       "Stun Needle": 12,
-      "Sukukaja": 14,
-      "Toxic Sting": 0,
-      "Zio": 0
+      "Sukukaja": 14
     },
     "stats": [154, 60, 14, 23, 13, 20, 15]
   },
@@ -939,10 +939,10 @@
     "race": "Fury",
     "resists": "------ws",
     "skills": {
-      "Blight": 0,
-      "Critical Eye": 54,
+      "Sea of Chaos": 0.1,
+      "Blight": 0.2,
       "Dark Sword": 53,
-      "Sea of Chaos": 0
+      "Critical Eye": 54
     },
     "stats": [463, 259, 71, 56, 71, 61, 51]
   },
@@ -954,10 +954,10 @@
     "race": "Divine",
     "resists": "-d--wdnw",
     "skills": {
-      "Gun Pleroma": 73,
-      "Heaven's Bow": 0,
+      "Heaven's Bow": 0.1,
+      "Megidola": 0.2,
       "Makajamaon": 72,
-      "Megidola": 0
+      "Gun Pleroma": 73
     },
     "stats": [666, 290, 66, 105, 80, 75, 75]
   },
@@ -969,12 +969,12 @@
     "race": "Tyrant",
     "resists": "--wr-r--",
     "skills": {
+      "Mabufudyne": 0.1,
+      "Hades Blast": 0.2,
+      "Will of Frost": 0.3,
       "Debilitate": 88,
-      "Drain Gun": 90,
-      "Hades Blast": 0,
-      "Mabufudyne": 0,
       "Mist Rush": 89,
-      "Will of Frost": 0
+      "Drain Gun": 90
     },
     "stats": [857, 194, 131, 75, 74, 94, 100]
   },
@@ -987,10 +987,10 @@
     "race": "Avatar",
     "resists": "--s-sw--",
     "skills": {
-      "Elec Pleroma": 0,
-      "Madness Nails": 50,
+      "Ziodyne": 0.1,
+      "Elec Pleroma": 0.2,
       "War Cry": 49,
-      "Ziodyne": 0
+      "Madness Nails": 50
     },
     "stats": [512, 211, 75, 52, 33, 63, 55]
   },
@@ -1001,7 +1001,7 @@
     "race": "Holy",
     "resists": "--wn--n-",
     "skills": {
-      "Enduring Cheer": 0,
+      "Enduring Cheer": 0.1,
       "Recarmdra": 27,
       "Warding Shout": 28
     },
@@ -1014,10 +1014,10 @@
     "race": "Food",
     "resists": "-w--w---",
     "skills": {
+      "Sukukaja": 0.1,
+      "Life Drain": 0.2,
       "Dormina": 22,
-      "Frenzied Chomp": 23,
-      "Life Drain": 0,
-      "Sukukaja": 0
+      "Frenzied Chomp": 23
     },
     "stats": [200, 107, 25, 25, 21, 35, 31]
   },
@@ -1028,10 +1028,10 @@
     "race": "Ghost",
     "resists": "------wn",
     "skills": {
-      "Dark Pleroma": 34,
-      "Marin Karin": 0,
+      "Marin Karin": 0.1,
+      "Shibaboo": 0.2,
       "Mudoon": 33,
-      "Shibaboo": 0
+      "Dark Pleroma": 34
     },
     "stats": [230, 192, 24, 31, 52, 40, 42]
   },
@@ -1043,13 +1043,13 @@
     "race": "Megami",
     "resists": "--ssssdw",
     "skills": {
-      "Adaptive Tactics": 0,
-      "Alluring Banter": 0,
-      "Dazzle Ray": 0,
-      "Deadly Wind": 0,
-      "Ice Age": 0,
-      "Light Pierce": 0,
-      "Mediarahan": 0
+      "Dazzle Ray": 0.1,
+      "Deadly Wind": 0.2,
+      "Ice Age": 0.3,
+      "Mediarahan": 0.4,
+      "Adaptive Tactics": 0.5,
+      "Alluring Banter": 0.6,
+      "Light Pierce": 0.7
     },
     "stats": [616, 788, 60, 83, 176, 125, 126]
   },
@@ -1061,11 +1061,11 @@
     "race": "Femme",
     "resists": "--nw----",
     "skills": {
-      "Diarahan": 38,
-      "Diarama": 0,
-      "Lullaby": 0,
+      "Lullaby": 0.1,
+      "Diarama": 0.2,
       "Recarm": 36,
-      "Workaholic": 37
+      "Workaholic": 37,
+      "Diarahan": 38
     },
     "stats": [333, 156, 38, 34, 32, 58, 43]
   },
@@ -1077,8 +1077,8 @@
     "race": "Undead",
     "resists": "-swsw-wn",
     "skills": {
-      "Binding Claw": 0,
-      "Life Drain": 0,
+      "Life Drain": 0.1,
+      "Binding Claw": 0.2,
       "Mamudo": 36
     },
     "stats": [470, 113, 57, 36, 26, 33, 38]
@@ -1092,12 +1092,12 @@
     "race": "Genma",
     "resists": "s----n--",
     "skills": {
-      "Critical Eye": 54,
-      "Dark Sword": 52,
-      "Floral Gust": 0,
+      "Floral Gust": 0.1,
+      "Mana Aid": 0.2,
+      "Javelin Rain": 0.3,
       "Force Pleroma": 51,
-      "Javelin Rain": 0,
-      "Mana Aid": 0
+      "Dark Sword": 52,
+      "Critical Eye": 54
     },
     "stats": [533, 239, 81, 51, 76, 46, 41]
   },
@@ -1109,10 +1109,10 @@
     "race": "Flight",
     "resists": "-w---n-w",
     "skills": {
-      "Mazandyne": 58,
-      "Panic Voice": 0,
+      "Zandyne": 0.1,
+      "Panic Voice": 0.2,
       "Rakukaja": 57,
-      "Zandyne": 0
+      "Mazandyne": 58
     },
     "stats": [508, 208, 70, 47, 73, 80, 64]
   },
@@ -1125,11 +1125,11 @@
     "race": "Femme",
     "resists": "s-dw----",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Titanomachia": 0.2,
       "Chakra Walk": 64,
-      "Dark Sword": 66,
       "Pandemic Bomb": 65,
-      "Titanomachia": 0
+      "Dark Sword": 66
     },
     "stats": [605, 224, 96, 60, 43, 63, 73]
   },
@@ -1141,11 +1141,11 @@
     "race": "Fallen",
     "resists": "--sswnws",
     "skills": {
-      "Makajam": 0,
-      "Makajamaon": 56,
-      "Makakaja": 0,
-      "Makarakarn": 0,
-      "Sabbatma": 55
+      "Makakaja": 0.1,
+      "Makajam": 0.2,
+      "Makarakarn": 0.3,
+      "Sabbatma": 55,
+      "Makajamaon": 56
     },
     "stats": [348, 288, 37, 48, 82, 54, 65]
   },
@@ -1157,10 +1157,10 @@
     "race": "Tree",
     "resists": "-sw--s--",
     "skills": {
+      "Dia": 0.1,
+      "Rakukaja": 0.2,
       "Attack Knowhow": 17,
-      "Dia": 0,
-      "Makakaja": 18,
-      "Rakukaja": 0
+      "Makakaja": 18
     },
     "stats": [140, 168, 15, 19, 30, 21, 24]
   },
@@ -1172,10 +1172,10 @@
     "race": "Fiend",
     "resists": "--ssw-ss",
     "skills": {
-      "Haunting Rhapsody": 0,
-      "Mamudoon": 84,
+      "Haunting Rhapsody": 0.1,
+      "Soul Drain": 0.2,
       "Smile Charge": 83,
-      "Soul Drain": 0
+      "Mamudoon": 84
     },
     "stats": [604, 455, 65, 77, 143, 115, 87]
   },
@@ -1186,8 +1186,8 @@
     "race": "Fallen",
     "resists": "-w----ws",
     "skills": {
-      "Agi": 6,
-      "Bufu": 0
+      "Bufu": 0.1,
+      "Agi": 6
     },
     "stats": [79, 69, 8, 10, 15, 11, 12]
   },
@@ -1198,11 +1198,11 @@
     "race": "Vile",
     "resists": "--ssss-d",
     "skills": {
-      "Antichthon": 0,
+      "Antichthon": 0.1,
+      "Concentrate": 0.2,
       "Chakra Walk": 96,
-      "Concentrate": 0,
-      "Drain Light": 98,
-      "Null Mind": 97
+      "Null Mind": 97,
+      "Drain Light": 98
     },
     "stats": [748, 320, 116, 98, 116, 110, 82]
   },
@@ -1214,11 +1214,11 @@
     "race": "Fairy",
     "resists": "sss-----",
     "skills": {
-      "Blank Bullet": 0,
-      "Breath": 78,
+      "Iron Judgement": 0.1,
+      "Blank Bullet": 0.2,
+      "Smile Charge": 0.3,
       "Desperate Hit": 77,
-      "Iron Judgement": 0,
-      "Smile Charge": 0
+      "Breath": 78
     },
     "stats": [714, 216, 114, 71, 51, 75, 86]
   },
@@ -1230,10 +1230,10 @@
     "race": "Lady",
     "resists": "-n---w--",
     "skills": {
-      "Blast Arrow": 0,
-      "Grand Tack": 43,
+      "Madness Needle": 0.1,
+      "Blast Arrow": 0.2,
       "Gun Pleroma": 42,
-      "Madness Needle": 0
+      "Grand Tack": 43
     },
     "stats": [455, 174, 42, 72, 47, 52, 42]
   },
@@ -1246,10 +1246,10 @@
     "race": "Zealot",
     "resists": "--nwn---",
     "skills": {
-      "Concentrate": 43,
-      "Megidola": 0,
+      "Purple Smoke": 0.1,
+      "Megidola": 0.2,
       "Null Mind": 42,
-      "Purple Smoke": 0
+      "Concentrate": 43
     },
     "stats": [383, 226, 50, 44, 39, 68, 61]
   },
@@ -1261,11 +1261,11 @@
     "race": "Yoma",
     "resists": "-w-ss--w",
     "skills": {
-      "Chakra Walk": 32,
-      "Lullaby": 0,
-      "Makajam": 0,
+      "Lullaby": 0.1,
+      "Makajam": 0.2,
+      "Posumudi": 30,
       "Media": 31,
-      "Posumudi": 30
+      "Chakra Walk": 32
     },
     "stats": [193, 177, 20, 29, 48, 37, 39]
   },
@@ -1276,10 +1276,10 @@
     "race": "Divine",
     "resists": "----swnw",
     "skills": {
-      "Dekunda": 53,
-      "Maziodyne": 0,
-      "Megido": 0,
-      "Samarecarm": 52
+      "Maziodyne": 0.1,
+      "Megido": 0.2,
+      "Samarecarm": 52,
+      "Dekunda": 53
     },
     "stats": [376, 299, 36, 47, 85, 61, 72]
   },
@@ -1292,10 +1292,10 @@
     "race": "Beast",
     "resists": "-----w-s",
     "skills": {
-      "Bind Voice": 0,
-      "Frenzied Chomp": 0,
-      "Sukukaja": 59,
-      "Trafuri": 0
+      "Bind Voice": 0.1,
+      "Trafuri": 0.2,
+      "Frenzied Chomp": 0.3,
+      "Sukukaja": 59
     },
     "stats": [376, 341, 40, 52, 94, 68, 76]
   },
@@ -1306,9 +1306,9 @@
     "race": "Jirae",
     "resists": "----sw--",
     "skills": {
-      "Head Crush": 10,
+      "Lunge": 0.1,
       "Life Bonus": 9,
-      "Lunge": 0
+      "Head Crush": 10
     },
     "stats": [143, 45, 19, 13, 10, 13, 15]
   },
@@ -1319,8 +1319,8 @@
     "race": "Spirit",
     "resists": "---w--ws",
     "skills": {
+      "Mudo": 0.1,
       "Hard Worker": 11,
-      "Mudo": 0,
       "Patra": 12
     },
     "stats": [107, 92, 11, 14, 22, 15, 18]
@@ -1332,10 +1332,10 @@
     "race": "Lady",
     "resists": "--sw----",
     "skills": {
-      "Agilao": 0,
-      "Hard Worker": 0,
-      "Mana Bonus": 21,
-      "Maragi": 20
+      "Agilao": 0.1,
+      "Hard Worker": 0.2,
+      "Maragi": 20,
+      "Mana Bonus": 21
     },
     "stats": [167, 152, 16, 16, 39, 23, 31]
   },
@@ -1346,8 +1346,8 @@
     "race": "Ghost",
     "resists": "--nw-wwn",
     "skills": {
-      "Damascus Claw": 0,
-      "Fire Breath": 0,
+      "Fire Breath": 0.1,
+      "Damascus Claw": 0.2,
       "Maragion": 39
     },
     "stats": [264, 219, 28, 36, 61, 40, 49]
@@ -1360,11 +1360,11 @@
     "race": "Wood",
     "resists": "-rw-sw-n",
     "skills": {
+      "Maziodyne": 0.1,
+      "Stun Needles": 0.2,
       "Endure": 71,
-      "Maziodyne": 0,
-      "Myriad Arrows": 73,
       "Null Elec": 72,
-      "Stun Needles": 0
+      "Myriad Arrows": 73
     },
     "stats": [659, 227, 66, 106, 55, 80, 69]
   },
@@ -1375,8 +1375,8 @@
     "race": "Element",
     "resists": "----sw--",
     "skills": {
+      "Elec Pleroma": 0.1,
       "Dormina": 9,
-      "Elec Pleroma": 0,
       "Life Bonus": 12
     },
     "stats": [136, 61, 13, 19, 14, 15, 13]
@@ -1389,10 +1389,10 @@
     "race": "Drake",
     "resists": "d--ww---",
     "skills": {
-      "Draconic Reaction": 77,
-      "Earthquake": 0,
-      "Poison Breath": 0,
-      "War Cry": 76
+      "Poison Breath": 0.1,
+      "Earthquake": 0.2,
+      "War Cry": 76,
+      "Draconic Reaction": 77
     },
     "stats": [786, 214, 113, 70, 44, 74, 83]
   },
@@ -1403,9 +1403,9 @@
     "race": "Avian",
     "resists": "-wnw----",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Dekunda": 0.2,
       "Bind Voice": 64,
-      "Dekunda": 0,
       "High Fire Pleroma": 66
     },
     "stats": [524, 333, 63, 51, 86, 78, 78]
@@ -1418,10 +1418,10 @@
     "race": "Wilder",
     "resists": "--wdsw--",
     "skills": {
-      "Critical Eye": 71,
-      "Eat Whole": 0,
-      "Nihil Claw": 0,
-      "Phys Pleroma": 70
+      "Nihil Claw": 0.1,
+      "Eat Whole": 0.2,
+      "Phys Pleroma": 70,
+      "Critical Eye": 71
     },
     "stats": [679, 253, 83, 43, 77, 97, 86]
   },
@@ -1432,9 +1432,9 @@
     "race": "Element",
     "resists": "--sw----",
     "skills": {
-      "Fire Pleroma": 0,
-      "Mana Bonus": 24,
-      "Pulinpa": 21
+      "Fire Pleroma": 0.1,
+      "Pulinpa": 21,
+      "Mana Bonus": 24
     },
     "stats": [254, 86, 36, 28, 17, 29, 28]
   },
@@ -1446,7 +1446,7 @@
     "race": "Night",
     "resists": "--ws----",
     "skills": {
-      "Head Crush": 0,
+      "Head Crush": 0.1,
       "Needle Shot": 7
     },
     "stats": [181, 30, 19, 11, 8, 9, 13]
@@ -1458,10 +1458,10 @@
     "race": "Megami",
     "resists": "---w-s--",
     "skills": {
-      "Dia": 0,
+      "Zan": 0.1,
+      "Dia": 0.2,
       "Makakaja": 13,
-      "Mazan": 14,
-      "Zan": 0
+      "Mazan": 14
     },
     "stats": [133, 89, 16, 17, 17, 24, 20]
   },
@@ -1472,11 +1472,11 @@
     "race": "Genma",
     "resists": "--sn--nw",
     "skills": {
-      "Bufudyne": 44,
+      "Mabufula": 0.1,
+      "Purple Smoke": 0.2,
+      "Ice Pleroma": 0.3,
       "Hamaon": 43,
-      "Ice Pleroma": 0,
-      "Mabufula": 0,
-      "Purple Smoke": 0
+      "Bufudyne": 44
     },
     "stats": [390, 230, 52, 37, 52, 62, 52]
   },
@@ -1488,11 +1488,11 @@
     "race": "Enigma",
     "resists": "-----wss",
     "skills": {
-      "Attack Knowhow": 0,
-      "Healing Knowhow": 0,
-      "Makarakarn": 53,
+      "Healing Knowhow": 0.1,
+      "Attack Knowhow": 0.2,
+      "Workaholic": 51,
       "Sabbatma": 52,
-      "Workaholic": 51
+      "Makarakarn": 53
     },
     "stats": [381, 325, 35, 46, 83, 61, 67]
   },
@@ -1503,10 +1503,10 @@
     "race": "Brute",
     "resists": "----wn--",
     "skills": {
+      "Zandyne": 0.1,
+      "Fog Breath": 0.2,
       "Dark Sword": 50,
-      "Fog Breath": 0,
-      "Force Pleroma": 51,
-      "Zandyne": 0
+      "Force Pleroma": 51
     },
     "stats": [386, 204, 50, 50, 42, 71, 63]
   },
@@ -1518,10 +1518,10 @@
     "race": "Raptor",
     "resists": "-w--w---",
     "skills": {
+      "Zan": 0.1,
+      "Shibaboo": 0.2,
       "Bouncing Claw": 7,
-      "Patra": 8,
-      "Shibaboo": 0,
-      "Zan": 0
+      "Patra": 8
     },
     "stats": [116, 45, 11, 16, 10, 13, 12]
   },
@@ -1534,10 +1534,10 @@
     "race": "Yoma",
     "resists": "ss--wn-w",
     "skills": {
+      "Rakukaja": 0.1,
+      "Earthquake": 0.2,
       "Charge": 73,
-      "Earthquake": 0,
-      "Grand Tack": 74,
-      "Rakukaja": 0
+      "Grand Tack": 74
     },
     "stats": [731, 257, 108, 67, 78, 61, 82]
   },
@@ -1549,10 +1549,10 @@
     "race": "Spirit",
     "resists": "-sw---ws",
     "skills": {
-      "Binding Claw": 9,
-      "Cough": 0,
-      "Dormina": 0,
-      "Poisma": 8
+      "Cough": 0.1,
+      "Dormina": 0.2,
+      "Poisma": 8,
+      "Binding Claw": 9
     },
     "stats": [107, 59, 12, 12, 11, 16, 15]
   },
@@ -1564,10 +1564,10 @@
     "race": "Avian",
     "resists": "-wrw-ns-",
     "skills": {
-      "Amrita": 0,
-      "Floral Gust": 74,
+      "Zandyne": 0.1,
+      "Amrita": 0.2,
       "Madness Nails": 73,
-      "Zandyne": 0
+      "Floral Gust": 74
     },
     "stats": [539, 284, 71, 71, 60, 101, 90]
   },
@@ -1579,10 +1579,10 @@
     "race": "Fallen",
     "resists": "--nw--ws",
     "skills": {
+      "Sexy Dance": 0.1,
+      "Maragidyne": 0.2,
       "Mana Surge": 59,
-      "Maragidyne": 0,
-      "Mediarama": 60,
-      "Sexy Dance": 0
+      "Mediarama": 60
     },
     "stats": [386, 311, 40, 52, 89, 54, 71]
   },
@@ -1595,10 +1595,10 @@
     "race": "Ghost",
     "resists": "--w---wn",
     "skills": {
-      "Acid Breath": 51,
+      "Frenzied Chomp": 0.1,
+      "Tetanus Cut": 0.2,
       "Damascus Claw": 50,
-      "Frenzied Chomp": 0,
-      "Tetanus Cut": 0
+      "Acid Breath": 51
     },
     "stats": [356, 204, 66, 42, 57, 62, 63]
   },
@@ -1610,10 +1610,10 @@
     "race": "Jaki",
     "resists": "r---wwws",
     "skills": {
-      "Bind Voice": 0,
+      "Bind Voice": 0.1,
+      "Titanomachia": 0.2,
       "Critical Eye": 63,
-      "Earthquake": 64,
-      "Titanomachia": 0
+      "Earthquake": 64
     },
     "stats": [797, 186, 99, 59, 42, 62, 72]
   },
@@ -1624,9 +1624,9 @@
     "race": "Element",
     "resists": "----sw--",
     "skills": {
-      "High Elec Pleroma": 0,
-      "Life Gain": 28,
-      "Lullaby": 25
+      "High Elec Pleroma": 0.1,
+      "Lullaby": 25,
+      "Life Gain": 28
     },
     "stats": [308, 116, 41, 26, 20, 33, 37]
   },
@@ -1638,7 +1638,7 @@
     "race": "Fairy",
     "resists": "-w--w---",
     "skills": {
-      "Gram Slice": 0,
+      "Gram Slice": 0.1,
       "Lunge": 4
     },
     "stats": [101, 24, 15, 6, 7, 9, 10]
@@ -1651,9 +1651,9 @@
     "race": "Jirae",
     "resists": "s-wrnw-w",
     "skills": {
+      "Shock": 0.1,
+      "Earthquake": 0.2,
       "Ally Counter": 62,
-      "Earthquake": 0,
-      "Shock": 0,
       "Titanomachia": 63
     },
     "stats": [788, 179, 93, 58, 42, 56, 71]
@@ -1667,7 +1667,7 @@
     "race": "Jaki",
     "resists": "--wssw--",
     "skills": {
-      "Bufu": 0,
+      "Bufu": 0.1,
       "Dream Fist": 9,
       "Zio": 10
     },
@@ -1681,10 +1681,10 @@
     "race": "Jaki",
     "resists": "-s---ww-",
     "skills": {
-      "Head Crush": 0,
-      "Life Surge": 53,
-      "Mortal Jihad": 0,
-      "Purple Smoke": 52
+      "Mortal Jihad": 0.1,
+      "Head Crush": 0.2,
+      "Purple Smoke": 52,
+      "Life Surge": 53
     },
     "stats": [596, 152, 86, 49, 35, 42, 44]
   },
@@ -1696,9 +1696,9 @@
     "race": "Beast",
     "resists": "-w--ws--",
     "skills": {
-      "Damascus Claw": 41,
-      "Oni-Kagura": 0,
-      "Power Punch": 0
+      "Oni-Kagura": 0.1,
+      "Power Punch": 0.2,
+      "Damascus Claw": 41
     },
     "stats": [442, 126, 61, 40, 29, 42, 51]
   },
@@ -1710,7 +1710,7 @@
     "race": "Flight",
     "resists": "-wsw-s-w",
     "skills": {
-      "Agilao": 0,
+      "Agilao": 0.1,
       "Makakaja": 17,
       "Maragi": 18
     },
@@ -1723,11 +1723,11 @@
     "race": "Dragon",
     "resists": "--ws-s-w",
     "skills": {
-      "Heat Wave": 0,
+      "Rakunda": 0.1,
+      "Heat Wave": 0.2,
+      "Wind Breath": 28,
       "Ice Breath": 29,
-      "Media": 30,
-      "Rakunda": 0,
-      "Wind Breath": 28
+      "Media": 30
     },
     "stats": [240, 128, 30, 30, 26, 42, 38]
   },
@@ -1739,11 +1739,11 @@
     "race": "Reaper",
     "resists": "-------r",
     "skills": {
-      "Amrita": 0,
-      "Dark Pleroma": 65,
-      "Mudoon": 0,
+      "Mudoon": 0.1,
+      "Smile Charge": 0.2,
+      "Amrita": 0.3,
       "Samarecarm": 64,
-      "Smile Charge": 0
+      "Dark Pleroma": 65
     },
     "stats": [404, 373, 43, 56, 96, 63, 76]
   },
@@ -1755,10 +1755,10 @@
     "race": "Snake",
     "resists": "--wn----",
     "skills": {
-      "Bufudyne": 0,
-      "Fang Breaker": 0,
-      "High Ice Pleroma": 63,
-      "Rakukaja": 61
+      "Fang Breaker": 0.1,
+      "Bufudyne": 0.2,
+      "Rakukaja": 61,
+      "High Ice Pleroma": 63
     },
     "stats": [650, 236, 95, 49, 63, 57, 72]
   },
@@ -1770,10 +1770,10 @@
     "race": "Raptor",
     "resists": "-w---nw-",
     "skills": {
-      "Axel Claw": 0,
+      "Wind Breath": 0.1,
+      "Axel Claw": 0.2,
       "Mazanma": 43,
-      "Nihil Claw": 44,
-      "Wind Breath": 0
+      "Nihil Claw": 44
     },
     "stats": [340, 180, 44, 44, 37, 62, 55]
   },
@@ -1784,11 +1784,11 @@
     "race": "Deity",
     "resists": "--r-sws-",
     "skills": {
+      "Maziodyne": 0.1,
+      "Tetrakarn": 0.2,
+      "Holy Wrath": 0.3,
       "Berserker God": 76,
-      "Holy Wrath": 0,
-      "Life Surge": 77,
-      "Maziodyne": 0,
-      "Tetrakarn": 0
+      "Life Surge": 77
     },
     "stats": [726, 244, 111, 70, 50, 74, 97]
   },
@@ -1801,11 +1801,11 @@
     "race": "Famed",
     "resists": "--------",
     "skills": {
-      "Bloody Glee": 58,
+      "Loyalty Slash": 0.1,
+      "Hades Blast": 0.2,
+      "Hellish Mask": 0.3,
       "Grand Tack": 57,
-      "Hades Blast": 0,
-      "Hellish Mask": 0,
-      "Loyalty Slash": 0
+      "Bloody Glee": 58
     },
     "stats": [596, 216, 86, 54, 39, 67, 90]
   },
@@ -1817,10 +1817,10 @@
     "race": "Beast",
     "resists": "------ws",
     "skills": {
+      "Sukunda": 0.1,
+      "Frenzied Chomp": 0.2,
       "Axel Claw": 31,
-      "Frenzied Chomp": 0,
-      "Retaliate": 32,
-      "Sukunda": 0
+      "Retaliate": 32
     },
     "stats": [328, 81, 50, 32, 23, 38, 38]
   },
@@ -1831,10 +1831,10 @@
     "race": "Fallen",
     "resists": "-w---wws",
     "skills": {
-      "Fatal Sword": 26,
-      "Heat Wave": 0,
+      "Tarukaja": 0.1,
+      "Heat Wave": 0.2,
       "Rakukaja": 25,
-      "Tarukaja": 0
+      "Fatal Sword": 26
     },
     "stats": [256, 118, 33, 28, 26, 37, 30]
   },
@@ -1847,10 +1847,10 @@
     "race": "Avian",
     "resists": "-w--s--w",
     "skills": {
-      "Attack Knowhow": 0,
+      "Zio": 0.1,
+      "Attack Knowhow": 0.2,
       "Dia": 11,
-      "Hama": 12,
-      "Zio": 0
+      "Hama": 12
     },
     "stats": [137, 75, 15, 15, 13, 20, 18]
   },
@@ -1862,10 +1862,10 @@
     "race": "Genma",
     "resists": "s---wn--",
     "skills": {
-      "Ally Retaliate": 68,
-      "Mazandyne": 0,
-      "Power Punch": 0,
-      "Rakunda": 67
+      "Mazandyne": 0.1,
+      "Power Punch": 0.2,
+      "Rakunda": 67,
+      "Ally Retaliate": 68
     },
     "stats": [630, 212, 100, 62, 45, 66, 76]
   },
@@ -1876,9 +1876,9 @@
     "race": "Tree",
     "resists": "-nw---s-",
     "skills": {
-      "Amrita": 0,
+      "Amrita": 0.1,
+      "Fog Breath": 0.2,
       "Blast Arrow": 55,
-      "Fog Breath": 0,
       "Tetraja": 56
     },
     "stats": [486, 251, 42, 81, 68, 60, 55]
@@ -1891,11 +1891,11 @@
     "race": "Food",
     "resists": "-ww-----",
     "skills": {
-      "Diarama": 0,
+      "Diarama": 0.1,
+      "Sukukaja": 0.2,
+      "Trafuri": 39,
       "Media": 40,
-      "Recarm": 41,
-      "Sukukaja": 0,
-      "Trafuri": 39
+      "Recarm": 41
     },
     "stats": [313, 167, 40, 40, 34, 57, 51]
   },
@@ -1907,10 +1907,10 @@
     "race": "Lady",
     "resists": "-------s",
     "skills": {
-      "Diarama": 0,
-      "Energy Drain": 39,
-      "Lullaby": 0,
-      "Recarm": 37
+      "Diarama": 0.1,
+      "Lullaby": 0.2,
+      "Recarm": 37,
+      "Energy Drain": 39
     },
     "stats": [252, 259, 27, 35, 68, 44, 46]
   },
@@ -1922,11 +1922,11 @@
     "race": "Flight",
     "resists": "-w--ws-w",
     "skills": {
-      "Bind Voice": 0,
+      "Bind Voice": 0.1,
+      "Zanma": 0.2,
+      "Posumudi": 0.3,
       "Force Pleroma": 36,
-      "Posumudi": 0,
-      "Sukunda": 37,
-      "Zanma": 0
+      "Sukunda": 37
     },
     "stats": [293, 156, 38, 38, 32, 53, 47]
   },
@@ -1937,11 +1937,11 @@
     "race": "Megami",
     "resists": "ww-s-ss-",
     "skills": {
-      "Patra": 0,
+      "Spring of Life": 0.1,
+      "Patra": 0.2,
+      "Zionga": 0.3,
       "Posumudi": 19,
-      "Rakunda": 20,
-      "Spring of Life": 0,
-      "Zionga": 0
+      "Rakunda": 20
     },
     "stats": [200, 127, 22, 22, 26, 35, 28]
   },
@@ -1953,11 +1953,11 @@
     "race": "Genma",
     "resists": "--ws-n--",
     "skills": {
-      "Dekunda": 0,
-      "High Force Pleroma": 76,
+      "Dekunda": 0.1,
+      "Zandyne": 0.2,
       "Life Aid": 74,
       "Mana Aid": 75,
-      "Zandyne": 0
+      "High Force Pleroma": 76
     },
     "stats": [574, 301, 74, 74, 94, 79, 82]
   },
@@ -1970,10 +1970,10 @@
     "race": "Jaki",
     "resists": "ss---w--",
     "skills": {
-      "Bloody Glee": 72,
-      "Hades Blast": 0,
+      "Panic Voice": 0.1,
+      "Hades Blast": 0.2,
       "Life Surge": 71,
-      "Panic Voice": 0
+      "Bloody Glee": 72
     },
     "stats": [647, 196, 103, 64, 46, 67, 78]
   },
@@ -1984,11 +1984,11 @@
     "race": "Reaper",
     "resists": "--wn---n",
     "skills": {
-      "Bufudyne": 45,
-      "Bufula": 0,
-      "Mabufula": 0,
-      "Mamudo": 0,
-      "Sabbatma": 44
+      "Mamudo": 0.1,
+      "Mabufula": 0.2,
+      "Bufula": 0.3,
+      "Sabbatma": 44,
+      "Bufudyne": 45
     },
     "stats": [352, 214, 31, 40, 68, 45, 54]
   },
@@ -2000,10 +2000,10 @@
     "race": "Holy",
     "resists": "----sw--",
     "skills": {
-      "Healing Knowhow": 0,
-      "Mazio": 15,
+      "Healing Knowhow": 0.1,
+      "Zio": 0.2,
       "Posumudi": 14,
-      "Zio": 0
+      "Mazio": 15
     },
     "stats": [154, 72, 20, 18, 19, 21, 17]
   },
@@ -2015,10 +2015,10 @@
     "race": "Fairy",
     "resists": "-----s--",
     "skills": {
-      "Elec Pleroma": 31,
+      "Mazionga": 0.1,
+      "Makajam": 0.2,
       "Healing Knowhow": 30,
-      "Makajam": 0,
-      "Mazionga": 0
+      "Elec Pleroma": 31
     },
     "stats": [213, 207, 23, 32, 48, 36, 39]
   },
@@ -2029,8 +2029,8 @@
     "race": "Kunitsu",
     "resists": "--w-n--w",
     "skills": {
-      "Dekunda": 0,
-      "Mahamaon": 0,
+      "Mahamaon": 0.1,
+      "Dekunda": 0.2,
       "Purple Smoke": 50,
       "Tetraja": 51
     },
@@ -2044,9 +2044,9 @@
     "race": "Foul",
     "resists": "-s-wsw--",
     "skills": {
-      "Attack Knowhow": 12,
-      "Madness Needle": 0,
-      "Toxic Sting": 11
+      "Madness Needle": 0.1,
+      "Toxic Sting": 11,
+      "Attack Knowhow": 12
     },
     "stats": [180, 57, 15, 22, 13, 17, 15]
   },
@@ -2058,7 +2058,7 @@
     "race": "Tyrant",
     "resists": "s-w---w-",
     "skills": {
-      "Critical Wave": 0,
+      "Critical Wave": 0.1,
       "Megaton Press": 28
     },
     "stats": [364, 91, 44, 26, 19, 27, 34]
@@ -2070,10 +2070,10 @@
     "race": "Raptor",
     "resists": "-wwn-d--",
     "skills": {
-      "Mazandyne": 73,
+      "Wind Breath": 0.1,
+      "Pandemic Bomb": 0.2,
       "Nihil Claw": 71,
-      "Pandemic Bomb": 0,
-      "Wind Breath": 0
+      "Mazandyne": 73
     },
     "stats": [526, 278, 59, 69, 83, 98, 87]
   },
@@ -2085,11 +2085,11 @@
     "race": "Beast",
     "resists": "--s-sw--",
     "skills": {
-      "Attack Knowhow": 0,
-      "Beastly Reaction": 50,
-      "Binding Claw": 0,
-      "Sukukaja": 0,
-      "Taunt": 49
+      "Binding Claw": 0.1,
+      "Attack Knowhow": 0.2,
+      "Sukukaja": 0.3,
+      "Taunt": 49,
+      "Beastly Reaction": 50
     },
     "stats": [360, 171, 72, 44, 32, 70, 62]
   },
@@ -2100,10 +2100,10 @@
     "race": "Jirae",
     "resists": "--s-w---",
     "skills": {
-      "Agi": 0,
-      "Maragi": 15,
+      "Agi": 0.1,
       "Patra": 13,
-      "Posumudi": 14
+      "Posumudi": 14,
+      "Maragi": 15
     },
     "stats": [143, 101, 12, 17, 27, 20, 18]
   },
@@ -2115,12 +2115,12 @@
     "race": "Famed",
     "resists": "--ssss--",
     "skills": {
+      "Hades Blast": 0.1,
+      "Riot Gun": 0.2,
+      "Salvation": 0.3,
       "Great Logos": 87,
-      "Hades Blast": 0,
-      "Repel Light": 89,
-      "Riot Gun": 0,
-      "Salvation": 0,
-      "Victory Cry": 88
+      "Victory Cry": 88,
+      "Repel Light": 89
     },
     "stats": [695, 322, 84, 84, 107, 94, 99]
   },
@@ -2133,10 +2133,10 @@
     "race": "Dragon",
     "resists": "--ssssn-",
     "skills": {
-      "Luster Candy": 80,
-      "Megidolaon": 0,
+      "Victory Cry": 0.1,
+      "Megidolaon": 0.2,
       "Samarecarm": 79,
-      "Victory Cry": 0
+      "Luster Candy": 80
     },
     "stats": [609, 277, 85, 79, 83, 93, 80]
   },
@@ -2148,10 +2148,10 @@
     "race": "Raptor",
     "resists": "-wrw----",
     "skills": {
+      "Fire Breath": 0.1,
+      "Sukukaja": 0.2,
       "Agidyne": 66,
-      "Concentrate": 67,
-      "Fire Breath": 0,
-      "Sukukaja": 0
+      "Concentrate": 67
     },
     "stats": [415, 343, 44, 58, 99, 65, 78]
   },
@@ -2163,10 +2163,10 @@
     "race": "Genma",
     "resists": "sw-w----",
     "skills": {
-      "Damascus Claw": 0,
-      "Fang Breaker": 0,
-      "Resist Force": 20,
-      "Scratch Dance": 19
+      "Damascus Claw": 0.1,
+      "Fang Breaker": 0.2,
+      "Scratch Dance": 19,
+      "Resist Force": 20
     },
     "stats": [247, 71, 31, 24, 14, 24, 24]
   },
@@ -2178,10 +2178,10 @@
     "race": "Dragon",
     "resists": "---s-s--",
     "skills": {
-      "Bufudyne": 0,
-      "Draconic Reaction": 49,
+      "Bufudyne": 0.1,
+      "Megaton Press": 0.2,
       "Mazanma": 48,
-      "Megaton Press": 0
+      "Draconic Reaction": 49
     },
     "stats": [592, 179, 60, 53, 64, 40, 64]
   },
@@ -2192,12 +2192,12 @@
     "race": "Lady",
     "resists": "--ssssss",
     "skills": {
+      "Raging Hellfire": 0.1,
+      "Raging Blizzard": 0.2,
+      "Raging Lightning": 0.3,
+      "Raging Tempest": 0.4,
       "Concentrate": 92,
-      "Debilitate": 93,
-      "Raging Blizzard": 0,
-      "Raging Hellfire": 0,
-      "Raging Lightning": 0,
-      "Raging Tempest": 0
+      "Debilitate": 93
     },
     "stats": [570, 562, 68, 88, 150, 98, 121]
   },
@@ -2209,10 +2209,10 @@
     "race": "Night",
     "resists": "-w--ws--",
     "skills": {
-      "Dream Needle": 0,
-      "Force Pleroma": 25,
-      "Marin Karin": 0,
-      "Zanma": 24
+      "Marin Karin": 0.1,
+      "Dream Needle": 0.2,
+      "Zanma": 24,
+      "Force Pleroma": 25
     },
     "stats": [247, 93, 26, 40, 22, 31, 27]
   },
@@ -2223,9 +2223,9 @@
     "race": "Spirit",
     "resists": "--nw--w-",
     "skills": {
+      "Fire Breath": 0.1,
+      "Heat Wave": 0.2,
       "Agilao": 32,
-      "Fire Breath": 0,
-      "Heat Wave": 0,
       "Maragion": 34
     },
     "stats": [324, 188, 24, 28, 46, 34, 39]
@@ -2237,10 +2237,10 @@
     "race": "Deity",
     "resists": "--ssww--",
     "skills": {
-      "Fire Pleroma": 0,
-      "Ice Pleroma": 36,
+      "Maragion": 0.1,
+      "Fire Pleroma": 0.2,
       "Mabufula": 35,
-      "Maragion": 0
+      "Ice Pleroma": 36
     },
     "stats": [261, 231, 26, 33, 55, 44, 51]
   },
@@ -2251,10 +2251,10 @@
     "race": "Beast",
     "resists": "--sw--ws",
     "skills": {
-      "Fire Breath": 0,
+      "Fire Breath": 0.1,
+      "Rakunda": 0.2,
       "Maragi": 21,
-      "Panic Voice": 22,
-      "Rakunda": 0
+      "Panic Voice": 22
     },
     "stats": [193, 104, 24, 24, 21, 33, 30]
   },
@@ -2267,9 +2267,9 @@
     "race": "Jaki",
     "resists": "--s---w-",
     "skills": {
-      "Mudo": 0,
-      "Oni-Kagura": 17,
-      "Power Punch": 0
+      "Power Punch": 0.1,
+      "Mudo": 0.2,
+      "Oni-Kagura": 17
     },
     "stats": [230, 55, 33, 20, 15, 21, 23]
   },
@@ -2281,9 +2281,9 @@
     "race": "Megami",
     "resists": "----nwnw",
     "skills": {
+      "Judgement": 0.1,
+      "Hamaon": 0.2,
       "Concentrate": 46,
-      "Hamaon": 0,
-      "Judgement": 0,
       "Samarecarm": 47
     },
     "stats": [337, 317, 29, 40, 90, 46, 57]
@@ -2295,10 +2295,10 @@
     "race": "Lady",
     "resists": "--s-n---",
     "skills": {
-      "Mana Surge": 61,
+      "Zandyne": 0.1,
+      "Samarecarm": 0.2,
       "Mazandyne": 60,
-      "Samarecarm": 0,
-      "Zandyne": 0
+      "Mana Surge": 61
     },
     "stats": [493, 309, 56, 57, 80, 87, 79]
   },
@@ -2310,11 +2310,11 @@
     "race": "Herald",
     "resists": "--wn--dw",
     "skills": {
-      "Ally Retaliate": 71,
-      "Bufudyne": 0,
-      "Judgement": 70,
+      "Bufudyne": 0.1,
+      "Panic Voice": 0.2,
       "Mahamaon": 69,
-      "Panic Voice": 0
+      "Judgement": 70,
+      "Ally Retaliate": 71
     },
     "stats": [532, 356, 46, 60, 108, 83, 85]
   },
@@ -2325,8 +2325,8 @@
     "race": "Raptor",
     "resists": "-w-w-sw-",
     "skills": {
-      "Makakaja": 0,
-      "Mazan": 0,
+      "Makakaja": 0.1,
+      "Mazan": 0.2,
       "Mudo": 20,
       "Rakunda": 21
     },
@@ -2340,10 +2340,10 @@
     "race": "Reaper",
     "resists": "------wr",
     "skills": {
-      "Eternal Rest": 0,
-      "Lullaby": 0,
-      "Null Force": 78,
-      "Samarecarm": 77
+      "Lullaby": 0.1,
+      "Eternal Rest": 0.2,
+      "Samarecarm": 77,
+      "Null Force": 78
     },
     "stats": [545, 320, 72, 80, 90, 78, 82]
   },
@@ -2355,11 +2355,11 @@
     "race": "Megami",
     "resists": "--wn--sd",
     "skills": {
-      "Concentrate": 0,
-      "Dark Grudge": 0,
-      "Repel Ice": 85,
+      "Thunder Gods": 0.1,
+      "Dark Grudge": 0.2,
+      "Concentrate": 0.3,
       "Spring of Life": 83,
-      "Thunder Gods": 0
+      "Repel Ice": 85
     },
     "stats": [448, 463, 50, 60, 140, 80, 100]
   },
@@ -2370,10 +2370,10 @@
     "race": "Fairy",
     "resists": "--ws----",
     "skills": {
-      "Bufula": 0,
+      "Bufula": 0.1,
+      "Mabufu": 0.2,
       "Hama": 21,
-      "Ice Pleroma": 24,
-      "Mabufu": 0
+      "Ice Pleroma": 24
     },
     "stats": [163, 137, 17, 22, 36, 24, 29]
   },
@@ -2385,9 +2385,9 @@
     "race": "Foul",
     "resists": "--w---ws",
     "skills": {
-      "Light Life Aid": 10,
+      "Tetanus Cut": 0.1,
       "Mudo": 9,
-      "Tetanus Cut": 0
+      "Light Life Aid": 10
     },
     "stats": [107, 59, 12, 12, 11, 16, 15]
   },
@@ -2399,10 +2399,10 @@
     "race": "Genma",
     "resists": "-n--w---",
     "skills": {
-      "Diarahan": 0,
-      "Grand Tack": 0,
-      "Heaven's Bow": 63,
-      "Trafuri": 62
+      "Diarahan": 0.1,
+      "Grand Tack": 0.2,
+      "Trafuri": 62,
+      "Heaven's Bow": 63
     },
     "stats": [559, 201, 78, 93, 48, 71, 61]
   },
@@ -2414,11 +2414,11 @@
     "race": "Famed",
     "resists": "--wsss--",
     "skills": {
-      "High Heal Pleroma": 0,
+      "High Heal Pleroma": 0.1,
+      "Mediarama": 0.2,
+      "Silent Prayer": 0.3,
       "Holy Wrath": 44,
-      "Mediarama": 0,
-      "Samarecarm": 45,
-      "Silent Prayer": 0
+      "Samarecarm": 45
     },
     "stats": [361, 282, 50, 39, 66, 54, 53]
   },
@@ -2429,10 +2429,10 @@
     "race": "Kishin",
     "resists": "----wns-",
     "skills": {
-      "Endure": 67,
-      "Fog Breath": 0,
+      "Zandyne": 0.1,
+      "Fog Breath": 0.2,
       "Hades Blast": 66,
-      "Zandyne": 0
+      "Endure": 67
     },
     "stats": [628, 276, 84, 79, 62, 71, 68]
   },
@@ -2444,8 +2444,8 @@
     "race": "Wilder",
     "resists": "--s--w--",
     "skills": {
-      "Agilao": 0,
-      "Poison Claw": 0,
+      "Poison Claw": 0.1,
+      "Agilao": 0.2,
       "Posumudi": 27
     },
     "stats": [245, 113, 34, 34, 29, 34, 29]
@@ -2458,9 +2458,9 @@
     "race": "Beast",
     "resists": "---sw---",
     "skills": {
-      "Bouncing Claw": 0,
-      "Dia": 8,
-      "Poison Claw": 7
+      "Bouncing Claw": 0.1,
+      "Poison Claw": 7,
+      "Dia": 8
     },
     "stats": [84, 73, 9, 11, 16, 12, 13]
   },
@@ -2472,9 +2472,9 @@
     "race": "Avatar",
     "resists": "------nw",
     "skills": {
-      "Dekaja": 0,
+      "Dekaja": 0.1,
+      "Mortal Jihad": 0.2,
       "Magaon": 41,
-      "Mortal Jihad": 0,
       "Resist Phys": 42
     },
     "stats": [462, 176, 66, 38, 27, 52, 59]
@@ -2487,9 +2487,9 @@
     "race": "Night",
     "resists": "---w--wn",
     "skills": {
-      "Dark Pleroma": 42,
-      "Mudoon": 0,
-      "Sukukaja": 0
+      "Mudoon": 0.1,
+      "Sukukaja": 0.2,
+      "Dark Pleroma": 42
     },
     "stats": [350, 170, 41, 41, 35, 58, 52]
   },
@@ -2502,9 +2502,9 @@
     "race": "Femme",
     "resists": "-w---d--",
     "skills": {
-      "Dark Sword": 0,
+      "Dark Sword": 0.1,
+      "Mist Rush": 0.2,
       "Life Surge": 76,
-      "Mist Rush": 0,
       "Phys Pleroma": 77
     },
     "stats": [706, 214, 113, 70, 50, 74, 85]
@@ -2517,10 +2517,10 @@
     "race": "Enigma",
     "resists": "sdw---s-",
     "skills": {
-      "Dekaja": 74,
+      "Heaven's Bow": 0.1,
+      "Madness Needle": 0.2,
       "Dekunda": 73,
-      "Heaven's Bow": 0,
-      "Madness Needle": 0
+      "Dekaja": 74
     },
     "stats": [539, 284, 71, 71, 60, 101, 90]
   },
@@ -2532,8 +2532,8 @@
     "race": "Avatar",
     "resists": "swswsw--",
     "skills": {
-      "Media": 0,
-      "Oni-Kagura": 0,
+      "Oni-Kagura": 0.1,
+      "Media": 0.2,
       "Posumudi": 24,
       "Tarunda": 25
     },
@@ -2547,10 +2547,10 @@
     "race": "Enigma",
     "resists": "ws----sw",
     "skills": {
-      "Chakra Walk": 29,
+      "Pandemic Bomb": 0.1,
+      "Megaton Press": 0.2,
       "Hamaon": 28,
-      "Megaton Press": 0,
-      "Pandemic Bomb": 0
+      "Chakra Walk": 29
     },
     "stats": [278, 105, 29, 50, 24, 35, 35]
   },
@@ -2562,10 +2562,10 @@
     "race": "Enigma",
     "resists": "------ss",
     "skills": {
-      "Invitation": 0,
-      "Null Ice": 82,
+      "Invitation": 0.1,
+      "Samarecarm": 0.2,
       "Riot Gun": 81,
-      "Samarecarm": 0
+      "Null Ice": 82
     },
     "stats": [499, 411, 53, 70, 120, 78, 95]
   },
@@ -2578,10 +2578,10 @@
     "race": "Famed",
     "resists": "ss------",
     "skills": {
+      "Berserker God": 0.1,
+      "Estoma": 0.2,
+      "Critical Eye": 0.3,
       "Ally Retaliate": 68,
-      "Berserker God": 0,
-      "Critical Eye": 0,
-      "Estoma": 0,
       "Phys Pleroma": 69
     },
     "stats": [669, 241, 107, 67, 59, 81, 84]
@@ -2594,11 +2594,11 @@
     "race": "Yoma",
     "resists": "-ws-ws--",
     "skills": {
-      "Agilao": 0,
-      "Mahama": 27,
+      "Pandemic Bomb": 0.1,
+      "Agilao": 0.2,
       "Maragi": 25,
-      "Pandemic Bomb": 0,
-      "Sukukaja": 26
+      "Sukukaja": 26,
+      "Mahama": 27
     },
     "stats": [220, 118, 28, 28, 24, 39, 35]
   },
@@ -2610,9 +2610,9 @@
     "race": "Fury",
     "resists": "-n----ss",
     "skills": {
+      "Heaven's Bow": 0.1,
+      "Debilitate": 0.2,
       "Charge": 79,
-      "Debilitate": 0,
-      "Heaven's Bow": 0,
       "High Gun Pleroma": 81
     },
     "stats": [629, 325, 66, 81, 54, 109, 97]
@@ -2624,9 +2624,9 @@
     "race": "Beast",
     "resists": "--sw----",
     "skills": {
-      "Agi": 0,
-      "Beastly Reaction": 13,
-      "Sukukaja": 12
+      "Agi": 0.1,
+      "Sukukaja": 12,
+      "Beastly Reaction": 13
     },
     "stats": [107, 92, 11, 14, 19, 22, 13]
   },
@@ -2638,24 +2638,24 @@
     "race": "Food",
     "resists": "w-wwwww-",
     "skills": {
-      "Bouncing Claw": 0,
-      "Counter": 3,
-      "Lunge": 2
+      "Bouncing Claw": 0.1,
+      "Lunge": 2,
+      "Counter": 3
     },
     "stats": [70, 34, 7, 6, 6, 9, 7]
   },
   "Kazfiel": {
-    "affinities": [3, 0, -5, 2, -5, 5, 3, 0, 0, 0, 0, 0],
+    "affinities": [3, 0, -5, 2, -5, 5, 3, 0, 0, 0, 0, 1],
     "lvl": 82,
     "price": 26250,
     "race": "Herald",
     "resists": "--wnwnr-",
     "skills": {
-      "Dark Sword": 0,
-      "Deadly Wind": 84,
-      "Null Elec": 85,
+      "Dark Sword": 0.1,
+      "Zandyne": 0.2,
       "Will of Wind": 83,
-      "Zandyne": 0
+      "Deadly Wind": 84,
+      "Null Elec": 85
     },
     "stats": [586, 268, 105, 65, 87, 114, 96]
   },
@@ -2667,8 +2667,8 @@
     "race": "Fairy",
     "resists": "---s-w--",
     "skills": {
-      "Diarama": 0,
-      "Tarunda": 0,
+      "Tarunda": 0.1,
+      "Diarama": 0.2,
       "Trafuri": 32
     },
     "stats": [236, 172, 34, 34, 39, 50, 43]
@@ -2681,10 +2681,10 @@
     "race": "Night",
     "resists": "--ws----",
     "skills": {
-      "Axel Claw": 0,
+      "Rakunda": 0.1,
+      "Axel Claw": 0.2,
       "Diarama": 30,
-      "Heal Pleroma": 31,
-      "Rakunda": 0
+      "Heal Pleroma": 31
     },
     "stats": [208, 173, 22, 28, 47, 31, 38]
   },
@@ -2696,10 +2696,10 @@
     "race": "Nymph",
     "resists": "----wn-w",
     "skills": {
-      "Diarama": 0,
+      "Sexy Dance": 0.1,
+      "Diarama": 0.2,
       "Me Patra": 37,
       "Recarm": 38,
-      "Sexy Dance": 0,
       "Tetraja": 39
     },
     "stats": [252, 239, 27, 35, 58, 39, 43]
@@ -2711,9 +2711,9 @@
     "race": "Brute",
     "resists": "s---nw--",
     "skills": {
+      "Power Punch": 0.1,
+      "Mortal Jihad": 0.2,
       "Charge": 44,
-      "Mortal Jihad": 0,
-      "Power Punch": 0,
       "Retaliate": 46
     },
     "stats": [537, 133, 76, 38, 28, 45, 52]
@@ -2725,12 +2725,12 @@
     "race": "Tyrant",
     "resists": "--wn--s-",
     "skills": {
-      "Bufula": 0,
-      "Critical Eye": 34,
+      "King Bufula": 0.1,
+      "Bufula": 0.2,
+      "Ice Pleroma": 0.3,
       "Ice Breath": 31,
-      "Ice Pleroma": 0,
-      "King Bufula": 0,
-      "Megaton Press": 32
+      "Megaton Press": 32,
+      "Critical Eye": 34
     },
     "stats": [319, 233, 23, 30, 58, 33, 48]
   },
@@ -2741,10 +2741,10 @@
     "race": "Drake",
     "resists": "-ww-snw-",
     "skills": {
-      "Panic Voice": 41,
+      "Zanma": 0.1,
+      "Shock": 0.2,
       "Recarmdra": 40,
-      "Shock": 0,
-      "Zanma": 0
+      "Panic Voice": 41
     },
     "stats": [320, 170, 41, 41, 35, 58, 52]
   },
@@ -2755,8 +2755,8 @@
     "race": "Enigma",
     "resists": "--nw--ss",
     "skills": {
-      "Mediarama": 0,
-      "Megido": 0,
+      "Mediarama": 0.1,
+      "Megido": 0.2,
       "Megidola": 61
     },
     "stats": [603, 220, 41, 51, 73, 91, 79]
@@ -2768,9 +2768,9 @@
     "race": "Jirae",
     "resists": "----ws--",
     "skills": {
-      "Magaon": 18,
-      "Rakukaja": 0,
-      "Zanma": 0
+      "Rakukaja": 0.1,
+      "Zanma": 0.2,
+      "Magaon": 18
     },
     "stats": [182, 85, 23, 23, 23, 23, 23]
   },
@@ -2782,9 +2782,9 @@
     "race": "Yoma",
     "resists": "-w--ws--",
     "skills": {
-      "Bad Company": 17,
-      "Sukukaja": 0,
-      "Zanma": 0
+      "Sukukaja": 0.1,
+      "Zanma": 0.2,
+      "Bad Company": 17
     },
     "stats": [171, 133, 20, 30, 17, 23, 21]
   },
@@ -2795,10 +2795,10 @@
     "race": "Kishin",
     "resists": "----nws-",
     "skills": {
-      "Mortal Jihad": 0,
+      "Ziodyne": 0.1,
+      "Mortal Jihad": 0.2,
       "Sukukaja": 61,
-      "Titanomachia": 62,
-      "Ziodyne": 0
+      "Titanomachia": 62
     },
     "stats": [710, 176, 105, 58, 64, 55, 65]
   },
@@ -2810,12 +2810,12 @@
     "race": "Genma",
     "resists": "-n---wn-",
     "skills": {
-      "Grand Tack": 0,
-      "Gun Pleroma": 59,
-      "Hamaon": 0,
+      "Hamaon": 0.1,
+      "Mana Aid": 0.2,
+      "Grand Tack": 0.3,
+      "Sukunda": 57,
       "Heaven's Bow": 58,
-      "Mana Aid": 0,
-      "Sukunda": 57
+      "Gun Pleroma": 59
     },
     "stats": [601, 167, 54, 83, 65, 65, 54]
   },
@@ -2827,13 +2827,13 @@
     "race": "Deity",
     "resists": "------sw",
     "skills": {
-      "Combat Tara": 89,
+      "Venomous Raga": 0.1,
+      "Dream Raga": 0.2,
+      "Ziodyne": 0.3,
       "Deadly Wind": 88,
-      "Drain Dark": 91,
-      "Dream Raga": 0,
+      "Combat Tara": 89,
       "Salvation": 90,
-      "Venomous Raga": 0,
-      "Ziodyne": 0
+      "Drain Dark": 91
     },
     "stats": [632, 495, 88, 89, 133, 113, 123]
   },
@@ -2844,10 +2844,10 @@
     "race": "Food",
     "resists": "-w-s-w--",
     "skills": {
+      "Sukukaja": 0.1,
+      "Tetanus Cut": 0.2,
       "Blight": 28,
-      "Mabufula": 30,
-      "Sukukaja": 0,
-      "Tetanus Cut": 0
+      "Mabufula": 30
     },
     "stats": [240, 128, 30, 30, 26, 42, 38]
   },
@@ -2859,10 +2859,10 @@
     "race": "Ghost",
     "resists": "-ws---wn",
     "skills": {
-      "Death's Door": 68,
-      "Energy Drain": 0,
+      "Energy Drain": 0.1,
+      "Tarukaja": 0.2,
       "Pandemic Bomb": 67,
-      "Tarukaja": 0
+      "Death's Door": 68
     },
     "stats": [605, 239, 75, 72, 81, 73, 66]
   },
@@ -2874,9 +2874,9 @@
     "race": "Tree",
     "resists": "-nw---s-",
     "skills": {
-      "Energy Drain": 45,
-      "Makakaja": 0,
-      "Tetrakarn": 0
+      "Tetrakarn": 0.1,
+      "Makakaja": 0.2,
+      "Energy Drain": 45
     },
     "stats": [347, 297, 35, 42, 69, 51, 68]
   },
@@ -2888,8 +2888,8 @@
     "race": "Genma",
     "resists": "-w--wn--",
     "skills": {
-      "Mahama": 0,
-      "Mazanma": 0,
+      "Mazanma": 0.1,
+      "Mahama": 0.2,
       "Trafuri": 44,
       "Zandyne": 45
     },
@@ -2903,10 +2903,10 @@
     "race": "Kunitsu",
     "resists": "------sw",
     "skills": {
-      "Heal Pleroma": 42,
+      "Media": 0.1,
+      "Mahama": 0.2,
       "Light Pleroma": 41,
-      "Mahama": 0,
-      "Media": 0,
+      "Heal Pleroma": 42,
       "Silent Prayer": 43
     },
     "stats": [275, 328, 30, 39, 68, 57, 50]
@@ -2919,10 +2919,10 @@
     "race": "Jirae",
     "resists": "-----w--",
     "skills": {
-      "Bind Voice": 0,
-      "Mahama": 24,
+      "Poison Claw": 0.1,
+      "Bind Voice": 0.2,
       "Pandemic Bomb": 23,
-      "Poison Claw": 0
+      "Mahama": 24
     },
     "stats": [174, 145, 18, 23, 38, 26, 31]
   },
@@ -2934,9 +2934,10 @@
     "race": "Femme",
     "resists": "----nw--",
     "skills": {
-      "Concentrate": 42,
-      "Makajam": 0,
-      "Rakukaja": 0
+      "Makajam": 0.1,
+      "Rakukaja": 0.2,
+      "Sukukaja": 41,
+      "Concentrate": 42
     },
     "stats": [350, 200, 50, 45, 44, 52, 42]
   },
@@ -2947,10 +2948,10 @@
     "race": "Herald",
     "resists": "----wsnw",
     "skills": {
-      "Light Pleroma": 0,
-      "Mahamaon": 0,
+      "Mahamaon": 0.1,
+      "Mediarama": 0.2,
+      "Light Pleroma": 0.3,
       "Makakaja": 55,
-      "Mediarama": 0,
       "Samarecarm": 56
     },
     "stats": [353, 342, 38, 49, 93, 55, 66]
@@ -2963,10 +2964,10 @@
     "race": "Megami",
     "resists": "----wsn-",
     "skills": {
-      "Floral Gust": 0,
-      "Mana Surge": 79,
-      "Mediarahan": 0,
-      "Sexy Dance": 78
+      "Mediarahan": 0.1,
+      "Floral Gust": 0.2,
+      "Sexy Dance": 78,
+      "Mana Surge": 79
     },
     "stats": [482, 398, 51, 67, 115, 75, 91]
   },
@@ -2980,9 +2981,9 @@
     "race": "Famed",
     "resists": "-n--s---",
     "skills": {
+      "Javelin Rain": 0.1,
+      "Marin Karin": 0.2,
       "Ally Counter": 50,
-      "Javelin Rain": 0,
-      "Marin Karin": 0,
       "Mortal Jihad": 52
     },
     "stats": [538, 198, 79, 50, 35, 61, 58]
@@ -2995,9 +2996,9 @@
     "race": "Femme",
     "resists": "-----w--",
     "skills": {
-      "Dia": 0,
-      "Heal Pleroma": 14,
+      "Dia": 0.1,
       "Life Bonus": 10,
+      "Heal Pleroma": 14,
       "Media": 21
     },
     "stats": [101, 86, 11, 13, 20, 14, 17]
@@ -3009,8 +3010,8 @@
     "race": "Spirit",
     "resists": "----w-ws",
     "skills": {
-      "Dream Needle": 0,
-      "Lunge": 0,
+      "Dream Needle": 0.1,
+      "Lunge": 0.2,
       "Zan": 6
     },
     "stats": [101, 40, 9, 13, 8, 11, 10]
@@ -3024,9 +3025,9 @@
     "race": "Jaki",
     "resists": "sw-w----",
     "skills": {
-      "Critical Wave": 0,
-      "Light Life Aid": 24,
-      "Power Punch": 0
+      "Power Punch": 0.1,
+      "Critical Wave": 0.2,
+      "Light Life Aid": 24
     },
     "stats": [261, 80, 38, 25, 18, 26, 30]
   },
@@ -3038,10 +3039,10 @@
     "race": "Night",
     "resists": "---w-n--",
     "skills": {
+      "Spirit Drain": 0.1,
+      "Sexy Dance": 0.2,
       "Lullaby": 34,
-      "Mazanma": 36,
-      "Sexy Dance": 0,
-      "Spirit Drain": 0
+      "Mazanma": 36
     },
     "stats": [236, 196, 25, 32, 54, 36, 43]
   },
@@ -3054,12 +3055,12 @@
     "race": "Tyrant",
     "resists": "---n-sws",
     "skills": {
+      "Pulinpa": 0.1,
+      "Bufudyne": 0.2,
       "Agidyne": 59,
-      "Bufudyne": 0,
-      "Cold World": 62,
-      "Pulinpa": 0,
+      "Ziodyne": 60,
       "Zandyne": 61,
-      "Ziodyne": 60
+      "Cold World": 62
     },
     "stats": [416, 401, 43, 53, 103, 63, 83]
   },
@@ -3070,10 +3071,10 @@
     "race": "Dragon",
     "resists": "---swn--",
     "skills": {
-      "Acid Breath": 0,
+      "Zandyne": 0.1,
+      "Acid Breath": 0.2,
       "Draconic Reaction": 62,
-      "High Force Pleroma": 64,
-      "Zandyne": 0
+      "High Force Pleroma": 64
     },
     "stats": [536, 296, 70, 61, 73, 89, 73]
   },
@@ -3084,9 +3085,9 @@
     "race": "Deity",
     "resists": "--nw--s-",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Fang Breaker": 0.2,
       "Berserker God": 49,
-      "Fang Breaker": 0,
       "Samarecarm": 50
     },
     "stats": [529, 196, 75, 47, 49, 54, 60]
@@ -3099,10 +3100,10 @@
     "race": "Fairy",
     "resists": "----wn--",
     "skills": {
-      "Lullaby": 0,
-      "Mabufudyne": 0,
-      "Makarakarn": 60,
-      "Marin Karin": 59
+      "Mabufudyne": 0.1,
+      "Lullaby": 0.2,
+      "Marin Karin": 59,
+      "Makarakarn": 60
     },
     "stats": [366, 341, 40, 52, 94, 53, 71]
   },
@@ -3115,10 +3116,10 @@
     "race": "Tyrant",
     "resists": "------wd",
     "skills": {
-      "Evil Shine": 0,
-      "Glacial Blast": 0,
-      "Hades Blast": 0,
-      "Myriad Arrows": 0
+      "Evil Shine": 0.1,
+      "Myriad Arrows": 0.2,
+      "Hades Blast": 0.3,
+      "Glacial Blast": 0.4
     },
     "stats": [886, 423, 150, 145, 111, 110, 116]
   },
@@ -3129,11 +3130,11 @@
     "race": "Tyrant",
     "resists": "-r--wr-s",
     "skills": {
+      "Light Devourer": 0.1,
+      "Luster Candy": 0.2,
       "Grand Tack": 74,
-      "High Dark Pleroma": 76,
-      "Light Devourer": 0,
-      "Luster Candy": 0,
-      "Mazandyne": 75
+      "Mazandyne": 75,
+      "High Dark Pleroma": 76
     },
     "stats": [460, 379, 49, 64, 110, 72, 87]
   },
@@ -3146,10 +3147,10 @@
     "race": "Spirit",
     "resists": "-w----ws",
     "skills": {
-      "Blight": 0,
-      "Hellish Mask": 47,
+      "Blight": 0.1,
+      "Pandemic Bomb": 0.2,
       "Magaon": 46,
-      "Pandemic Bomb": 0
+      "Hellish Mask": 47
     },
     "stats": [374, 289, 71, 44, 32, 77, 64]
   },
@@ -3161,10 +3162,10 @@
     "race": "Foul",
     "resists": "------ws",
     "skills": {
-      "Bind Voice": 0,
-      "Hellish Mask": 39,
+      "Bind Voice": 0.1,
+      "Poison Breath": 0.2,
       "Pandemic Bomb": 38,
-      "Poison Breath": 0
+      "Hellish Mask": 39
     },
     "stats": [306, 163, 39, 39, 33, 55, 49]
   },
@@ -3176,10 +3177,10 @@
     "race": "Deity",
     "resists": "--s-wns-",
     "skills": {
-      "Diarahan": 0,
-      "Doping": 70,
+      "Zandyne": 0.1,
+      "Diarahan": 0.2,
       "Null Nerve": 68,
-      "Zandyne": 0
+      "Doping": 70
     },
     "stats": [506, 381, 51, 79, 98, 63, 80]
   },
@@ -3190,26 +3191,27 @@
     "race": "Deity",
     "resists": "swws--ns",
     "skills": {
+      "Enlightenment": 0.1,
+      "Hades Blast": 0.2,
+      "Makajamaon": 0.3,
       "5.67 Billion Hands": 84,
-      "Doping": 86,
       "Drain Ice": 85,
-      "Enlightenment": 0,
-      "Hades Blast": 0,
-      "Makajamaon": 0
+      "Doping": 86
     },
     "stats": [844, 272, 95, 94, 119, 94, 95]
   },
   "Makami": {
     "affinities": [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -1, 0],
+    "ailments": "----w---",
     "lvl": 33,
     "price": 10669,
     "race": "Avatar",
     "resists": "------sw",
     "skills": {
-      "Diarama": 0,
-      "Heal Pleroma": 0,
+      "Diarama": 0.1,
+      "Recarm": 0.2,
+      "Heal Pleroma": 0.3,
       "Posumudi": 34,
-      "Recarm": 0,
       "Workaholic": 35
     },
     "stats": [320, 169, 36, 41, 35, 50, 45]
@@ -3221,7 +3223,7 @@
     "race": "Dragon",
     "resists": "--ws----",
     "skills": {
-      "Bufu": 0,
+      "Bufu": 0.1,
       "Mabufu": 14,
       "Tarunda": 17
     },
@@ -3235,9 +3237,9 @@
     "race": "Food",
     "resists": "-wss----",
     "skills": {
-      "Frenzied Chomp": 11,
-      "Lunge": 0,
-      "Pulinpa": 0
+      "Pulinpa": 0.1,
+      "Lunge": 0.2,
+      "Frenzied Chomp": 11
     },
     "stats": [120, 65, 14, 14, 12, 19, 17]
   },
@@ -3249,9 +3251,9 @@
     "race": "Wood",
     "resists": "--w-----",
     "skills": {
-      "Patra": 6,
+      "Shibaboo": 0.1,
       "Poisma": 5,
-      "Shibaboo": 0
+      "Patra": 6
     },
     "stats": [92, 49, 9, 8, 8, 13, 16]
   },
@@ -3263,10 +3265,10 @@
     "race": "Wilder",
     "resists": "-w--nw--",
     "skills": {
-      "Acid Breath": 47,
-      "Axel Claw": 0,
+      "Toxic Sting": 0.1,
+      "Axel Claw": 0.2,
       "Frenzied Chomp": 46,
-      "Toxic Sting": 0
+      "Acid Breath": 47
     },
     "stats": [360, 191, 67, 47, 39, 73, 59]
   },
@@ -3278,14 +3280,14 @@
     "race": "Tyrant",
     "resists": "-d-wd-ss",
     "skills": {
-      "Charge": 0,
-      "Dance of Mara": 0,
+      "Charge": 0.1,
+      "Hell Thrust": 0.2,
+      "Dance of Mara": 0.3,
       "Doping": 93,
-      "Hell Thrust": 0,
       "Null Nerve": 94,
       "Repel Phys": 95
     },
-    "stats": [899, 215, 155, 70, 55, 90, 110]
+    "stats": [899, 215, 155, 70, 50, 90, 110]
   },
   "Marishiten": {
     "affinities": [2, 4, -5, 2, 0, 0, 0, 0, 2, -3, 0, 2],
@@ -3296,10 +3298,10 @@
     "race": "Kishin",
     "resists": "--n---s-",
     "skills": {
-      "Berserker God": 0,
+      "Berserker God": 0.1,
+      "Myriad Arrows": 0.2,
       "Makarakarn": 76,
-      "Megidolaon": 77,
-      "Myriad Arrows": 0
+      "Megidolaon": 77
     },
     "stats": [588, 267, 84, 82, 80, 81, 78]
   },
@@ -3311,12 +3313,12 @@
     "race": "Herald",
     "resists": "--wrwrr-",
     "skills": {
-      "Ice Age": 95,
+      "Megidolaon": 0.1,
+      "Panic Voice": 0.2,
+      "Smile Charge": 0.3,
       "Judgement Light": 94,
-      "Megidolaon": 0,
-      "Panic Voice": 0,
-      "Repel Gun": 96,
-      "Smile Charge": 0
+      "Ice Age": 95,
+      "Repel Gun": 96
     },
     "stats": [802, 470, 61, 80, 138, 90, 109]
   },
@@ -3328,10 +3330,10 @@
     "race": "Yoma",
     "resists": "-wnn--wn",
     "skills": {
-      "Agidyne": 0,
+      "Makajamaon": 0.1,
+      "Agidyne": 0.2,
       "Concentrate": 62,
-      "Mabufudyne": 63,
-      "Makajamaon": 0
+      "Mabufudyne": 63
     },
     "stats": [490, 223, 64, 68, 71, 65, 67]
   },
@@ -3343,11 +3345,11 @@
     "race": "Fiend",
     "resists": "ss-w--ss",
     "skills": {
-      "Andalusia": 0,
+      "Andalusia": 0.1,
+      "Soul Drain": 0.2,
       "Dark Sword": 88,
       "Hades Blast": 89,
-      "Phys Pierce": 90,
-      "Soul Drain": 0
+      "Phys Pierce": 90
     },
     "stats": [814, 334, 133, 89, 81, 107, 109]
   },
@@ -3359,11 +3361,11 @@
     "race": "Night",
     "resists": "-w--n--s",
     "skills": {
-      "Makarakarn": 0,
+      "Megidolaon": 0.1,
+      "Makarakarn": 0.2,
+      "Sexy Dance": 78,
       "Mana Surge": 79,
-      "Megidolaon": 0,
-      "Null Mind": 80,
-      "Sexy Dance": 78
+      "Null Mind": 80
     },
     "stats": [722, 398, 51, 67, 115, 75, 91]
   },
@@ -3375,10 +3377,10 @@
     "race": "Tree",
     "resists": "-nw-----",
     "skills": {
-      "High Heal Pleroma": 36,
+      "Media": 0.1,
+      "Me Patra": 0.2,
       "Mahamaon": 35,
-      "Me Patra": 0,
-      "Media": 0
+      "High Heal Pleroma": 36
     },
     "stats": [261, 231, 28, 36, 55, 39, 47]
   },
@@ -3390,11 +3392,11 @@
     "race": "Femme",
     "resists": "-s--nw--",
     "skills": {
-      "Grand Tack": 41,
+      "Snake's Fangs": 0.1,
+      "Marin Karin": 0.2,
+      "Mazionga": 0.3,
       "Gun Pleroma": 40,
-      "Marin Karin": 0,
-      "Mazionga": 0,
-      "Snake's Fangs": 0,
+      "Grand Tack": 41,
       "Ziodyne": 43
     },
     "stats": [420, 189, 39, 69, 57, 54, 46]
@@ -3407,8 +3409,8 @@
     "race": "Fallen",
     "resists": "--sw-wws",
     "skills": {
-      "Agi": 0,
-      "Dia": 0,
+      "Agi": 0.1,
+      "Dia": 0.2,
       "Maragi": 14,
       "Tarukaja": 15
     },
@@ -3421,11 +3423,11 @@
     "race": "Tyrant",
     "resists": "nn----wd",
     "skills": {
-      "Dark Pierce": 0,
-      "Fear Darkness": 0,
-      "Growing Hate": 0,
-      "Hades Blast": 0,
-      "Mamudoon": 0
+      "Dark Pierce": 0.1,
+      "Growing Hate": 0.2,
+      "Hades Blast": 0.3,
+      "Fear Darkness": 0.4,
+      "Mamudoon": 0.5
     },
     "stats": [968, 435, 150, 105, 155, 113, 116]
   },
@@ -3437,10 +3439,10 @@
     "race": "Herald",
     "resists": "------dw",
     "skills": {
-      "Chariot": 0,
-      "Deadly Wind": 0,
-      "Riot Gun": 0,
-      "Thunder Reign": 0
+      "Chariot": 0.1,
+      "Riot Gun": 0.2,
+      "Thunder Reign": 0.3,
+      "Deadly Wind": 0.4
     },
     "stats": [926, 403, 117, 155, 140, 115, 111]
   },
@@ -3452,11 +3454,11 @@
     "race": "Femme",
     "resists": "---sws--",
     "skills": {
-      "Bufula": 0,
-      "Lullaby": 0,
+      "Bufula": 0.1,
+      "Lullaby": 0.2,
       "Mazan": 16,
-      "Media": 20,
-      "Rakukaja": 17
+      "Rakukaja": 17,
+      "Media": 20
     },
     "stats": [135, 114, 14, 18, 29, 20, 23]
   },
@@ -3467,11 +3469,11 @@
     "race": "Herald",
     "resists": "sssswsrs",
     "skills": {
-      "Almighty Pleroma": 99,
-      "Dekaja": 0,
-      "Fire of Sinai": 0,
-      "Judgement Light": 0,
-      "Megidolaon": 0
+      "Fire of Sinai": 0.1,
+      "Judgement Light": 0.2,
+      "Dekaja": 0.3,
+      "Megidolaon": 0.4,
+      "Almighty Pleroma": 99
     },
     "stats": [1149, 390, 128, 128, 143, 93, 93]
   },
@@ -3483,10 +3485,10 @@
     "race": "Vile",
     "resists": "----nwwn",
     "skills": {
-      "Elec Pleroma": 39,
+      "Rakunda": 0.1,
+      "Mazionga": 0.2,
       "Madness Needle": 38,
-      "Mazionga": 0,
-      "Rakunda": 0
+      "Elec Pleroma": 39
     },
     "stats": [355, 134, 37, 63, 31, 44, 36]
   },
@@ -3497,10 +3499,10 @@
     "race": "Tyrant",
     "resists": "--sw--s-",
     "skills": {
-      "Fatal Sword": 23,
-      "Heat Wave": 0,
-      "Mahama": 0,
-      "Rakunda": 22
+      "Mahama": 0.1,
+      "Heat Wave": 0.2,
+      "Rakunda": 22,
+      "Fatal Sword": 23
     },
     "stats": [272, 108, 37, 24, 24, 25, 29]
   },
@@ -3512,12 +3514,12 @@
     "race": "Fury",
     "resists": "s-ws-wnn",
     "skills": {
-      "Berserker God": 0,
+      "Severe Judgement": 0.1,
+      "Berserker God": 0.2,
+      "Smile Charge": 0.3,
+      "Tetrabreak": 0.4,
       "Glacial Blast": 97,
-      "Self-Righteous Vow": 98,
-      "Severe Judgement": 0,
-      "Smile Charge": 0,
-      "Tetrabreak": 0
+      "Self-Righteous Vow": 98
     },
     "stats": [955, 333, 108, 107, 132, 107, 108]
   },
@@ -3528,10 +3530,10 @@
     "race": "Raptor",
     "resists": "-ww--s--",
     "skills": {
-      "Dia": 0,
+      "Dia": 0.1,
+      "Zan": 0.2,
       "Makakaja": 13,
-      "Mazan": 15,
-      "Zan": 0
+      "Mazan": 15
     },
     "stats": [110, 126, 10, 15, 30, 17, 23]
   },
@@ -3543,10 +3545,10 @@
     "race": "Night",
     "resists": "----sw--",
     "skills": {
+      "Zionga": 0.1,
+      "Head Crush": 0.2,
       "Dream Fist": 19,
-      "Head Crush": 0,
-      "Mazio": 20,
-      "Zionga": 0
+      "Mazio": 20
     },
     "stats": [180, 97, 22, 20, 22, 31, 27]
   },
@@ -3558,10 +3560,10 @@
     "race": "Brute",
     "resists": "ss---w--",
     "skills": {
-      "Charge": 0,
+      "Charge": 0.1,
+      "Oni-Kagura": 0.2,
       "Heat Wave": 26,
-      "Light Life Aid": 27,
-      "Oni-Kagura": 0
+      "Light Life Aid": 27
     },
     "stats": [286, 88, 43, 27, 20, 29, 33]
   },
@@ -3573,10 +3575,10 @@
     "race": "Tyrant",
     "resists": "--sw--ws",
     "skills": {
-      "Counter": 0,
-      "Life Bonus": 16,
+      "Oni-Kagura": 0.1,
+      "Counter": 0.2,
       "Maragi": 15,
-      "Oni-Kagura": 0
+      "Life Bonus": 16
     },
     "stats": [214, 60, 29, 20, 16, 19, 21]
   },
@@ -3587,9 +3589,9 @@
     "race": "Reaper",
     "resists": "--s-wr-r",
     "skills": {
-      "Makakaja": 0,
+      "Makakaja": 0.1,
+      "Megidolaon": 0.2,
       "Mamudoon": 90,
-      "Megidolaon": 0,
       "Null Phys": 91
     },
     "stats": [701, 466, 57, 64, 138, 83, 118]
@@ -3603,10 +3605,10 @@
     "race": "Fiend",
     "resists": "n---dwss",
     "skills": {
-      "Babylon Goblet": 0,
-      "Death Lust": 0,
-      "Invitation": 0,
-      "Soul Drain": 0
+      "Babylon Goblet": 0.1,
+      "Soul Drain": 0.2,
+      "Invitation": 0.3,
+      "Death Lust": 0.4
     },
     "stats": [805, 523, 82, 88, 164, 109, 134]
   },
@@ -3618,9 +3620,9 @@
     "race": "Vermin",
     "resists": "-w--sw--",
     "skills": {
+      "Shibaboo": 0.1,
       "Mana Bonus": 12,
-      "Rakukaja": 14,
-      "Shibaboo": 0
+      "Rakukaja": 14
     },
     "stats": [133, 73, 16, 16, 14, 22, 20]
   },
@@ -3631,10 +3633,10 @@
     "race": "Ghost",
     "resists": "------wn",
     "skills": {
-      "Mudo": 0,
+      "Mudo": 0.1,
+      "Spirit Drain": 0.2,
       "Pulinpa": 25,
-      "Resist Elec": 26,
-      "Spirit Drain": 0
+      "Resist Elec": 26
     },
     "stats": [180, 150, 19, 24, 40, 27, 32]
   },
@@ -3646,9 +3648,9 @@
     "race": "Fallen",
     "resists": "--w-rsws",
     "skills": {
-      "Madness Nails": 0,
-      "Maziodyne": 64,
-      "Mudoon": 0
+      "Madness Nails": 0.1,
+      "Mudoon": 0.2,
+      "Maziodyne": 64
     },
     "stats": [554, 215, 84, 69, 69, 79, 64]
   },
@@ -3660,10 +3662,10 @@
     "race": "Drake",
     "resists": "----nww-",
     "skills": {
+      "Ziodyne": 0.1,
+      "Posumudi": 0.2,
       "Axel Claw": 48,
-      "Elec Pleroma": 49,
-      "Posumudi": 0,
-      "Ziodyne": 0
+      "Elec Pleroma": 49
     },
     "stats": [373, 197, 48, 40, 59, 68, 56]
   },
@@ -3675,9 +3677,9 @@
     "race": "Vermin",
     "resists": "-w--ws--",
     "skills": {
-      "Frenzied Chomp": 0,
+      "Tarunda": 0.1,
+      "Frenzied Chomp": 0.2,
       "Patra": 30,
-      "Tarunda": 0,
       "Wind Breath": 31
     },
     "stats": [293, 110, 31, 48, 26, 37, 32]
@@ -3689,9 +3691,9 @@
     "race": "Fairy",
     "resists": "---w-s--",
     "skills": {
+      "Zan": 0.1,
       "Dia": 7,
-      "Posumudi": 9,
-      "Zan": 0
+      "Posumudi": 9
     },
     "stats": [97, 63, 9, 15, 15, 9, 12]
   },
@@ -3703,10 +3705,10 @@
     "race": "Snake",
     "resists": "--wssw-w",
     "skills": {
-      "Bufula": 0,
-      "Fatal Sword": 21,
-      "Head Crush": 0,
-      "Tarukaja": 20
+      "Head Crush": 0.1,
+      "Bufula": 0.2,
+      "Tarukaja": 20,
+      "Fatal Sword": 21
     },
     "stats": [206, 73, 34, 22, 17, 26, 27]
   },
@@ -3718,10 +3720,10 @@
     "race": "Fairy",
     "resists": "---w-s--",
     "skills": {
-      "Agi": 14,
-      "Marin Karin": 0,
+      "Marin Karin": 0.1,
+      "Zan": 0.2,
       "Resist Ice": 13,
-      "Zan": 0,
+      "Agi": 14,
       "Zanma": 15
     },
     "stats": [130, 113, 14, 11, 24, 25, 20]
@@ -3734,10 +3736,11 @@
     "race": "Tree",
     "resists": "-sw--n--",
     "skills": {
-      "Chakra Walk": 31,
-      "Sexy Dance": 0,
+      "Wind Breath": 0.1,
+      "Sexy Dance": 0.2,
+      "Bufula": 29,
       "Spring of Life": 30,
-      "Wind Breath": 0
+      "Chakra Walk": 31
     },
     "stats": [213, 227, 23, 29, 51, 32, 45]
   },
@@ -3749,10 +3752,10 @@
     "race": "Genma",
     "resists": "-s------",
     "skills": {
-      "Charge": 25,
-      "Fang Breaker": 0,
+      "Fang Breaker": 0.1,
+      "Power Punch": 0.2,
       "Oni-Kagura": 24,
-      "Power Punch": 0
+      "Charge": 25
     },
     "stats": [239, 83, 40, 21, 19, 32, 34]
   },
@@ -3764,10 +3767,10 @@
     "race": "Fallen",
     "resists": "nw---wws",
     "skills": {
+      "Mudoon": 0.1,
+      "Sabbatma": 0.2,
       "Dark Pleroma": 47,
-      "Megido": 48,
-      "Mudoon": 0,
-      "Sabbatma": 0
+      "Megido": 48
     },
     "stats": [308, 256, 33, 43, 72, 48, 57]
   },
@@ -3780,10 +3783,10 @@
     "race": "Beast",
     "resists": "--swwn--",
     "skills": {
-      "Axel Claw": 0,
+      "Axel Claw": 0.1,
+      "Pulinpa": 0.2,
       "Beastly Reaction": 36,
-      "Mazanma": 37,
-      "Pulinpa": 0
+      "Mazanma": 37
     },
     "stats": [293, 156, 38, 38, 32, 53, 47]
   },
@@ -3792,12 +3795,12 @@
     "lvl": 81,
     "price": 21973,
     "race": "Reaper",
-    "resists": "--sw-nsr",
+    "resists": "--sw--sr",
     "skills": {
+      "Pandemic Bomb": 0.1,
+      "Hades Blast": 0.2,
       "Berserker God": 83,
-      "Hades Blast": 0,
-      "Null Light": 84,
-      "Pandemic Bomb": 0
+      "Null Light": 84
     },
     "stats": [786, 246, 123, 83, 51, 76, 97]
   },
@@ -3810,10 +3813,10 @@
     "race": "Drake",
     "resists": "ss-rw-w-",
     "skills": {
-      "Eat Whole": 63,
-      "Grand Tack": 0,
+      "Grand Tack": 0.1,
+      "Poison Breath": 0.2,
       "Madness Nails": 61,
-      "Poison Breath": 0
+      "Eat Whole": 63
     },
     "stats": [682, 198, 69, 92, 63, 66, 52]
   },
@@ -3825,9 +3828,9 @@
     "race": "Foul",
     "resists": "------w-",
     "skills": {
-      "Attack Knowhow": 23,
-      "Damascus Claw": 0,
-      "Dormina": 0
+      "Damascus Claw": 0.1,
+      "Dormina": 0.2,
+      "Attack Knowhow": 23
     },
     "stats": [207, 110, 26, 26, 22, 36, 32]
   },
@@ -3839,11 +3842,11 @@
     "race": "Megami",
     "resists": "------nn",
     "skills": {
+      "Luster Candy": 0.1,
+      "Dekaja": 0.2,
+      "Samarecarm": 70,
       "Chakra Walk": 71,
-      "Dekaja": 0,
-      "Luster Candy": 0,
-      "Mediarahan": 72,
-      "Samarecarm": 70
+      "Mediarahan": 72
     },
     "stats": [522, 345, 75, 48, 96, 68, 83]
   },
@@ -3855,10 +3858,10 @@
     "race": "Snake",
     "resists": "s-wssw-w",
     "skills": {
-      "Critical Wave": 25,
-      "Mazio": 0,
-      "Rakukaja": 0,
-      "Resist Fire": 24
+      "Rakukaja": 0.1,
+      "Mazio": 0.2,
+      "Resist Fire": 24,
+      "Critical Wave": 25
     },
     "stats": [369, 103, 25, 26, 23, 26, 26]
   },
@@ -3869,10 +3872,10 @@
     "race": "Wilder",
     "resists": "-w--sw--",
     "skills": {
-      "Axel Claw": 0,
-      "Mazionga": 41,
+      "Axel Claw": 0.1,
+      "Zionga": 0.2,
       "Shock": 40,
-      "Zionga": 0
+      "Mazionga": 41
     },
     "stats": [404, 124, 62, 34, 36, 39, 48]
   },
@@ -3884,8 +3887,8 @@
     "race": "Ghost",
     "resists": "---ws-wn",
     "skills": {
-      "Binding Claw": 0,
-      "Patra": 0,
+      "Binding Claw": 0.1,
+      "Patra": 0.2,
       "Sukunda": 19
     },
     "stats": [180, 97, 22, 22, 19, 31, 28]
@@ -3898,10 +3901,10 @@
     "race": "Fairy",
     "resists": "----wd--",
     "skills": {
+      "Mazandyne": 0.1,
+      "Sexy Dance": 0.2,
       "Diarahan": 65,
-      "Makarakarn": 66,
-      "Mazandyne": 0,
-      "Sexy Dance": 0
+      "Makarakarn": 66
     },
     "stats": [439, 428, 51, 59, 85, 79, 85]
   },
@@ -3912,12 +3915,12 @@
     "race": "Deity",
     "resists": "-r--rwss",
     "skills": {
-      "Concentrate": 0,
-      "Drain Force": 88,
-      "Gungnir": 0,
+      "Thunder Reign": 0.1,
+      "Gungnir": 0.2,
+      "Concentrate": 0.3,
+      "Will of Thunder": 86,
       "Phys Pleroma": 87,
-      "Thunder Reign": 0,
-      "Will of Thunder": 86
+      "Drain Force": 88
     },
     "stats": [728, 312, 130, 81, 126, 96, 89]
   },
@@ -3929,9 +3932,9 @@
     "race": "Jaki",
     "resists": "s---ws--",
     "skills": {
-      "Bloody Glee": 47,
+      "Mortal Jihad": 0.1,
       "Life Gain": 46,
-      "Mortal Jihad": 0
+      "Bloody Glee": 47
     },
     "stats": [524, 99, 71, 44, 32, 47, 54]
   },
@@ -3943,10 +3946,10 @@
     "race": "Zealot",
     "resists": "--s-----",
     "skills": {
-      "Blight": 0,
-      "Null Nerve": 26,
+      "Blight": 0.1,
+      "Tathlum Shot": 0.2,
       "Posumudi": 25,
-      "Tathlum Shot": 0
+      "Null Nerve": 26
     },
     "stats": [255, 97, 36, 46, 17, 32, 28]
   },
@@ -3957,10 +3960,10 @@
     "race": "Vermin",
     "resists": "-s-wnww-",
     "skills": {
-      "Mudoon": 36,
+      "Rakunda": 0.1,
+      "Tathlum Shot": 0.2,
       "Poisma": 35,
-      "Rakunda": 0,
-      "Tathlum Shot": 0
+      "Mudoon": 36
     },
     "stats": [332, 155, 35, 58, 29, 37, 37]
   },
@@ -3972,11 +3975,11 @@
     "race": "Kunitsu",
     "resists": "---w--ss",
     "skills": {
-      "Diarama": 0,
-      "Estoma": 33,
-      "Fatal Sword": 0,
+      "Fatal Sword": 0.1,
+      "Diarama": 0.2,
       "Me Patra": 31,
-      "Media": 32
+      "Media": 32,
+      "Estoma": 33
     },
     "stats": [378, 101, 50, 42, 23, 38, 38]
   },
@@ -3988,10 +3991,10 @@
     "race": "Deity",
     "resists": "--ss----",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Recarmdra": 0.2,
       "Bufudyne": 60,
-      "Judgement": 61,
-      "Recarmdra": 0
+      "Judgement": 61
     },
     "stats": [493, 319, 49, 51, 83, 93, 75]
   },
@@ -4002,12 +4005,12 @@
     "race": "Brute",
     "resists": "ss-s-sw-",
     "skills": {
-      "Dark Sword": 0,
-      "Death's Door": 81,
+      "Sabbatma": 0.1,
+      "Tetanus Cut": 0.2,
+      "Dark Sword": 0.3,
       "Mist Rush": 80,
-      "Null Gun": 83,
-      "Sabbatma": 0,
-      "Tetanus Cut": 0
+      "Death's Door": 81,
+      "Null Gun": 83
     },
     "stats": [731, 222, 117, 72, 52, 76, 89]
   },
@@ -4019,8 +4022,8 @@
     "race": "Brute",
     "resists": "----w---",
     "skills": {
-      "Critical Wave": 15,
-      "Head Crush": 0
+      "Head Crush": 0.1,
+      "Critical Wave": 15
     },
     "stats": [245, 58, 30, 17, 10, 15, 20]
   },
@@ -4031,7 +4034,7 @@
     "race": "Food",
     "resists": "-w-w----",
     "skills": {
-      "Agi": 0,
+      "Agi": 0.1,
       "Mana Bonus": 6
     },
     "stats": [98, 53, 9, 15, 10, 12, 11]
@@ -4043,9 +4046,9 @@
     "race": "Reaper",
     "resists": "s-wswn-n",
     "skills": {
-      "Mamudoon": 0,
-      "Tetrakarn": 52,
-      "War Cry": 51
+      "Mamudoon": 0.1,
+      "War Cry": 51,
+      "Tetrakarn": 52
     },
     "stats": [501, 275, 70, 46, 78, 31, 62]
   },
@@ -4058,10 +4061,10 @@
     "race": "Fallen",
     "resists": "--sw--ws",
     "skills": {
-      "Attack Knowhow": 41,
-      "Maragion": 0,
+      "Pandemic Bomb": 0.1,
+      "Maragion": 0.2,
       "Me Patra": 40,
-      "Pandemic Bomb": 0
+      "Attack Knowhow": 41
     },
     "stats": [329, 121, 47, 44, 46, 49, 39]
   },
@@ -4074,9 +4077,9 @@
     "race": "Snake",
     "resists": "--nnw---",
     "skills": {
-      "Agidyne": 0,
-      "Bufudyne": 0,
-      "Estoma": 0,
+      "Bufudyne": 0.1,
+      "Agidyne": 0.2,
+      "Estoma": 0.3,
       "Megaton Press": 52,
       "Recarmdra": 53
     },
@@ -4090,10 +4093,10 @@
     "race": "Beast",
     "resists": "--nw---s",
     "skills": {
+      "Fire Breath": 0.1,
+      "Nihil Claw": 0.2,
       "Eat Whole": 53,
-      "Fire Breath": 0,
-      "Madness Nails": 54,
-      "Nihil Claw": 0
+      "Madness Nails": 54
     },
     "stats": [553, 156, 80, 42, 62, 71, 46]
   },
@@ -4106,9 +4109,9 @@
     "race": "Fallen",
     "resists": "-------s",
     "skills": {
+      "Blight": 0.1,
+      "Critical Wave": 0.2,
       "Beastly Reaction": 33,
-      "Blight": 0,
-      "Critical Wave": 0,
       "Javelin Rain": 34,
       "Retaliate": 35
     },
@@ -4121,10 +4124,10 @@
     "race": "Deity",
     "resists": "s------s",
     "skills": {
-      "Dark Pleroma": 0,
-      "Dekaja": 0,
-      "Mamudoon": 54,
-      "Mudoon": 0
+      "Mudoon": 0.1,
+      "Dekaja": 0.2,
+      "Dark Pleroma": 0.3,
+      "Mamudoon": 54
     },
     "stats": [494, 258, 64, 56, 72, 67, 61]
   },
@@ -4135,8 +4138,8 @@
     "race": "Kunitsu",
     "resists": "----dw--",
     "skills": {
-      "Berserker God": 0,
-      "Life Surge": 0,
+      "Berserker God": 0.1,
+      "Life Surge": 0.2,
       "Tarukaja": 66,
       "Titanomachia": 67
     },
@@ -4150,10 +4153,10 @@
     "race": "Snake",
     "resists": "--ssssww",
     "skills": {
-      "Makakaja": 50,
-      "Megido": 0,
+      "Megido": 0.1,
+      "Spring of Life": 0.2,
       "Recarm": 48,
-      "Spring of Life": 0
+      "Makakaja": 50
     },
     "stats": [392, 179, 57, 53, 52, 55, 48]
   },
@@ -4165,9 +4168,9 @@
     "race": "Holy",
     "resists": "-s--ws-w",
     "skills": {
-      "Rapid Needle": 25,
-      "Tathlum Shot": 0,
-      "Toxic Sting": 0
+      "Tathlum Shot": 0.1,
+      "Toxic Sting": 0.2,
+      "Rapid Needle": 25
     },
     "stats": [255, 97, 26, 41, 22, 32, 28]
   },
@@ -4179,9 +4182,9 @@
     "race": "Vile",
     "resists": "-w--wn-n",
     "skills": {
-      "Mamudoon": 48,
-      "Mazanma": 0,
-      "Tetrakarn": 0
+      "Mazanma": 0.1,
+      "Tetrakarn": 0.2,
+      "Mamudoon": 48
     },
     "stats": [314, 260, 28, 43, 73, 44, 65]
   },
@@ -4193,11 +4196,11 @@
     "race": "Fiend",
     "resists": "---swrss",
     "skills": {
+      "Pestilence": 0.1,
+      "Soul Drain": 0.2,
       "Deadly Wind": 96,
       "Debilitate": 97,
-      "Force Pierce": 98,
-      "Pestilence": 0,
-      "Soul Drain": 0
+      "Force Pierce": 98
     },
     "stats": [773, 355, 118, 108, 141, 115, 112]
   },
@@ -4209,10 +4212,10 @@
     "race": "Vile",
     "resists": "--wn--sd",
     "skills": {
+      "Mamudoon": 0.1,
+      "Pandemic Bomb": 0.2,
       "Beastly Reaction": 74,
-      "Berserker God": 75,
-      "Mamudoon": 0,
-      "Pandemic Bomb": 0
+      "Berserker God": 75
     },
     "stats": [646, 288, 107, 65, 60, 102, 91]
   },
@@ -4224,10 +4227,10 @@
     "race": "Megami",
     "resists": "-n----nw",
     "skills": {
-      "Chakra Walk": 53,
+      "Makarakarn": 0.1,
+      "Mortal Jihad": 0.2,
       "Holy Wrath": 52,
-      "Makarakarn": 0,
-      "Mortal Jihad": 0
+      "Chakra Walk": 53
     },
     "stats": [544, 224, 79, 49, 36, 67, 75]
   },
@@ -4238,10 +4241,10 @@
     "race": "Megami",
     "resists": "--ws--ss",
     "skills": {
+      "Media": 0.1,
+      "Rakukaja": 0.2,
       "Chakra Walk": 26,
-      "Mahama": 27,
-      "Media": 0,
-      "Rakukaja": 0
+      "Mahama": 27
     },
     "stats": [191, 210, 20, 26, 43, 33, 34]
   },
@@ -4253,10 +4256,10 @@
     "race": "Dragon",
     "resists": "--ws-s-w",
     "skills": {
-      "Diarama": 0,
-      "Recarm": 22,
+      "Diarama": 0.1,
+      "Wind Breath": 0.2,
       "Tetraja": 21,
-      "Wind Breath": 0
+      "Recarm": 22
     },
     "stats": [163, 137, 17, 22, 36, 29, 24]
   },
@@ -4268,11 +4271,11 @@
     "race": "Undead",
     "resists": "-sw----n",
     "skills": {
-      "Cough": 0,
+      "Taunt": 0.1,
+      "Cough": 0.2,
+      "Tathlum Shot": 0.3,
       "Madness Needle": 46,
-      "Resist Phys": 47,
-      "Tathlum Shot": 0,
-      "Taunt": 0
+      "Resist Phys": 47
     },
     "stats": [416, 156, 44, 71, 37, 54, 47]
   },
@@ -4284,10 +4287,10 @@
     "race": "Wilder",
     "resists": "--ws--w-",
     "skills": {
-      "Hellish Mask": 20,
+      "Poison Breath": 0.1,
+      "Pulinpa": 0.2,
       "Mudo": 18,
-      "Poison Breath": 0,
-      "Pulinpa": 0
+      "Hellish Mask": 20
     },
     "stats": [206, 114, 15, 19, 31, 21, 25]
   },
@@ -4298,10 +4301,10 @@
     "race": "Lady",
     "resists": "--sw----",
     "skills": {
-      "Agi": 0,
+      "Agi": 0.1,
+      "Posumudi": 0.2,
       "Hard Worker": 8,
-      "Healing Knowhow": 9,
-      "Posumudi": 0
+      "Healing Knowhow": 9
     },
     "stats": [105, 82, 10, 11, 20, 11, 15]
   },
@@ -4312,10 +4315,10 @@
     "race": "Snake",
     "resists": "-w-rn--w",
     "skills": {
-      "Acid Breath": 0,
+      "Titanomachia": 0.1,
+      "Acid Breath": 0.2,
       "Charge": 67,
-      "Draconic Reaction": 69,
-      "Titanomachia": 0
+      "Draconic Reaction": 69
     },
     "stats": [710, 192, 100, 62, 45, 66, 76]
   },
@@ -4327,9 +4330,9 @@
     "race": "Nymph",
     "resists": "--nw--nw",
     "skills": {
+      "Diarahan": 0.1,
+      "Me Patra": 0.2,
       "Chakra Walk": 63,
-      "Diarahan": 0,
-      "Me Patra": 0,
       "Mediarama": 64
     },
     "stats": [517, 261, 63, 65, 81, 66, 77]
@@ -4341,8 +4344,8 @@
     "race": "Reaper",
     "resists": "---nw--n",
     "skills": {
-      "Bufudyne": 0,
-      "Death's Door": 0,
+      "Bufudyne": 0.1,
+      "Death's Door": 0.2,
       "Mamudoon": 58
     },
     "stats": [370, 306, 39, 51, 87, 53, 69]
@@ -4354,10 +4357,10 @@
     "race": "Avian",
     "resists": "-wsw--s-",
     "skills": {
-      "Fire Breath": 0,
-      "Fire Pleroma": 26,
+      "Fire Breath": 0.1,
+      "Recarm": 0.2,
       "Light Mana Aid": 25,
-      "Recarm": 0
+      "Fire Pleroma": 26
     },
     "stats": [250, 138, 28, 28, 24, 39, 40]
   },
@@ -4369,11 +4372,11 @@
     "race": "Spirit",
     "resists": "--w--nws",
     "skills": {
-      "Acid Breath": 57,
-      "Bind Voice": 0,
-      "Life Drain": 0,
+      "Bind Voice": 0.1,
+      "Life Drain": 0.2,
       "Mudoon": 55,
-      "Tarukaja": 56
+      "Tarukaja": 56,
+      "Acid Breath": 57
     },
     "stats": [459, 222, 70, 55, 46, 78, 69]
   },
@@ -4385,10 +4388,10 @@
     "race": "Fairy",
     "resists": "----s--w",
     "skills": {
-      "Dia": 0,
-      "Dormina": 12,
+      "Dia": 0.1,
+      "Zio": 0.2,
       "Healing Knowhow": 11,
-      "Zio": 0
+      "Dormina": 12
     },
     "stats": [101, 86, 11, 13, 19, 22, 15]
   },
@@ -4401,10 +4404,10 @@
     "race": "Spirit",
     "resists": "-----ww-",
     "skills": {
-      "Healing Knowhow": 21,
+      "Sukunda": 0.1,
+      "Tathlum Shot": 0.2,
       "Rapid Needle": 20,
-      "Sukunda": 0,
-      "Tathlum Shot": 0
+      "Healing Knowhow": 21
     },
     "stats": [157, 132, 15, 23, 32, 25, 28]
   },
@@ -4415,7 +4418,7 @@
     "race": "Wilder",
     "resists": "--sw----",
     "skills": {
-      "Agi": 0,
+      "Agi": 0.1,
       "Lunge": 8
     },
     "stats": [112, 53, 15, 14, 11, 14, 11]
@@ -4428,8 +4431,8 @@
     "race": "Divine",
     "resists": "----swnw",
     "skills": {
-      "Diarama": 0,
-      "Javelin Rain": 0,
+      "Javelin Rain": 0.1,
+      "Diarama": 0.2,
       "Life Aid": 34,
       "Megido": 35
     },
@@ -4442,10 +4445,10 @@
     "race": "Ghost",
     "resists": "--ws-wwn",
     "skills": {
-      "Bad Company": 0,
-      "Life Drain": 0,
-      "Mabufu": 14,
-      "Mudo": 13
+      "Life Drain": 0.1,
+      "Bad Company": 0.2,
+      "Mudo": 13,
+      "Mabufu": 14
     },
     "stats": [140, 66, 17, 17, 17, 17, 17]
   },
@@ -4456,11 +4459,11 @@
     "race": "Divine",
     "resists": "-w----nw",
     "skills": {
-      "Light Pleroma": 29,
-      "Mahama": 0,
-      "Media": 0,
+      "Mahama": 0.1,
+      "Media": 0.2,
+      "Tarunda": 27,
       "Recarm": 28,
-      "Tarunda": 27
+      "Light Pleroma": 29
     },
     "stats": [226, 184, 21, 27, 54, 30, 38]
   },
@@ -4472,10 +4475,10 @@
     "race": "Deity",
     "resists": "--nw--s-",
     "skills": {
-      "Fire Breath": 0,
+      "Maragion": 0.1,
+      "Recarmdra": 0.2,
+      "Fire Breath": 0.3,
       "Fire Pleroma": 41,
-      "Maragion": 0,
-      "Recarmdra": 0,
       "Workaholic": 43
     },
     "stats": [425, 228, 54, 38, 66, 27, 51]
@@ -4487,10 +4490,10 @@
     "race": "Fairy",
     "resists": "--sw----",
     "skills": {
-      "Agilao": 0,
-      "Fire Pleroma": 27,
+      "Agilao": 0.1,
+      "Maragi": 0.2,
       "Mana Gain": 26,
-      "Maragi": 0
+      "Fire Pleroma": 27
     },
     "stats": [191, 160, 20, 26, 43, 29, 34]
   },
@@ -4502,10 +4505,10 @@
     "race": "Drake",
     "resists": "---nnww-",
     "skills": {
-      "Fog Breath": 0,
-      "Mamudoon": 0,
-      "Maziodyne": 72,
-      "Pandemic Bomb": 71
+      "Mamudoon": 0.1,
+      "Fog Breath": 0.2,
+      "Pandemic Bomb": 71,
+      "Maziodyne": 72
     },
     "stats": [566, 288, 59, 59, 85, 98, 79]
   },
@@ -4517,9 +4520,9 @@
     "race": "Holy",
     "resists": "s---sw-w",
     "skills": {
+      "Rakukaja": 0.1,
+      "Megaton Press": 0.2,
       "Life Gain": 30,
-      "Megaton Press": 0,
-      "Rakukaja": 0,
       "Silent Prayer": 32
     },
     "stats": [390, 98, 48, 29, 21, 29, 37]
@@ -4532,10 +4535,10 @@
     "race": "Night",
     "resists": "--ssws--",
     "skills": {
+      "Diarahan": 0.1,
+      "Sexy Dance": 0.2,
       "Amrita": 62,
-      "Diarahan": 0,
-      "Mazandyne": 64,
-      "Sexy Dance": 0
+      "Mazandyne": 64
     },
     "stats": [596, 246, 61, 56, 76, 87, 77]
   },
@@ -4546,11 +4549,11 @@
     "race": "Dragon",
     "resists": "s-s--ssw",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
+      "Zandyne": 0.2,
+      "Smile Charge": 0.3,
       "Maragidyne": 68,
-      "Mazandyne": 69,
-      "Smile Charge": 0,
-      "Zandyne": 0
+      "Mazandyne": 69
     },
     "stats": [622, 282, 79, 68, 85, 76, 69]
   },
@@ -4563,7 +4566,7 @@
     "race": "Spirit",
     "resists": "-s--sww-",
     "skills": {
-      "Mazio": 0,
+      "Mazio": 0.1,
       "Shock": 26
     },
     "stats": [227, 121, 29, 29, 24, 40, 36]
@@ -4575,10 +4578,10 @@
     "race": "Wilder",
     "resists": "-s--sw--",
     "skills": {
-      "Binding Claw": 0,
-      "Endure": 35,
-      "Shock": 0,
-      "Tarukaja": 34
+      "Shock": 0.1,
+      "Binding Claw": 0.2,
+      "Tarukaja": 34,
+      "Endure": 35
     },
     "stats": [280, 149, 36, 36, 30, 50, 45]
   },
@@ -4591,11 +4594,11 @@
     "race": "Jaki",
     "resists": "-s----w-",
     "skills": {
+      "Head Crush": 0.1,
+      "Fatal Sword": 0.2,
+      "Counter": 0.3,
       "Charge": 39,
-      "Counter": 0,
-      "Endure": 40,
-      "Fatal Sword": 0,
-      "Head Crush": 0
+      "Endure": 40
     },
     "stats": [355, 121, 59, 38, 28, 45, 50]
   },
@@ -4607,9 +4610,9 @@
     "race": "Famed",
     "resists": "--n-----",
     "skills": {
+      "Luster Candy": 0.1,
+      "Hades Blast": 0.2,
       "Cold World": 75,
-      "Hades Blast": 0,
-      "Luster Candy": 0,
       "Megidolaon": 76
     },
     "stats": [698, 212, 111, 69, 50, 73, 84]
@@ -4622,9 +4625,9 @@
     "race": "Femme",
     "resists": "r---w---",
     "skills": {
-      "Binding Claw": 0,
+      "Binding Claw": 0.1,
+      "Mazandyne": 0.2,
       "Madness Nails": 69,
-      "Mazandyne": 0,
       "Recarmdra": 70
     },
     "stats": [562, 356, 64, 45, 89, 77, 82]
@@ -4637,11 +4640,11 @@
     "race": "Fiend",
     "resists": "-srw--ss",
     "skills": {
-      "Blade of Terror": 0,
-      "Fire Pierce": 94,
+      "Blade of Terror": 0.1,
+      "Soul Drain": 0.2,
+      "Trisagion": 92,
       "Ruinous Brand": 93,
-      "Soul Drain": 0,
-      "Trisagion": 92
+      "Fire Pierce": 94
     },
     "stats": [870, 263, 152, 90, 103, 98, 116]
   },
@@ -4652,10 +4655,10 @@
     "race": "Flight",
     "resists": "-sw--s-w",
     "skills": {
-      "Charge": 0,
-      "Grand Tack": 0,
-      "Nihil Claw": 48,
-      "Zandyne": 0
+      "Grand Tack": 0.1,
+      "Zandyne": 0.2,
+      "Charge": 0.3,
+      "Nihil Claw": 48
     },
     "stats": [532, 162, 46, 85, 38, 56, 48]
   },
@@ -4666,9 +4669,9 @@
     "race": "Element",
     "resists": "--nw----",
     "skills": {
-      "High Fire Pleroma": 0,
-      "Life Gain": 40,
-      "Panic Voice": 37
+      "High Fire Pleroma": 0.1,
+      "Panic Voice": 37,
+      "Life Gain": 40
     },
     "stats": [345, 164, 49, 42, 49, 42, 42]
   },
@@ -4680,11 +4683,11 @@
     "race": "Fallen",
     "resists": "------ws",
     "skills": {
+      "Great Logos": 0.1,
+      "Shivering Taboo": 0.2,
       "Doping": 91,
-      "Great Logos": 0,
-      "Repel Dark": 93,
       "Salvation": 92,
-      "Shivering Taboo": 0
+      "Repel Dark": 93
     },
     "stats": [704, 446, 64, 72, 137, 94, 110]
   },
@@ -4696,11 +4699,11 @@
     "race": "Tyrant",
     "resists": "--wwnn-n",
     "skills": {
+      "True Ziodyne": 0.1,
+      "True Zandyne": 0.2,
       "Elec Pleroma": 77,
       "Force Pleroma": 78,
-      "Magic Torrent": 79,
-      "True Zandyne": 0,
-      "True Ziodyne": 0
+      "Magic Torrent": 79
     },
     "stats": [476, 392, 51, 67, 114, 75, 90]
   },
@@ -4713,9 +4716,9 @@
     "race": "Night",
     "resists": "----ws--",
     "skills": {
-      "Dream Needle": 0,
-      "Stun Needle": 11,
-      "Zan": 0
+      "Dream Needle": 0.1,
+      "Zan": 0.2,
+      "Stun Needle": 11
     },
     "stats": [127, 70, 15, 15, 13, 20, 18]
   },
@@ -4727,10 +4730,10 @@
     "race": "Nymph",
     "resists": "--wn---w",
     "skills": {
-      "Bufudyne": 0,
-      "Ice Pleroma": 50,
+      "Bufudyne": 0.1,
+      "Rakunda": 0.2,
       "Mabufula": 49,
-      "Rakunda": 0
+      "Ice Pleroma": 50
     },
     "stats": [320, 264, 34, 44, 75, 49, 60]
   },
@@ -4743,11 +4746,11 @@
     "race": "Primal",
     "resists": "ssd---dd",
     "skills": {
-      "Akasha Arts": 0,
-      "Almighty Pleroma": 0,
-      "Luster Candy": 0,
-      "Megiddo Ark": 0,
-      "Trisagion": 0
+      "Akasha Arts": 0.1,
+      "Megiddo Ark": 0.2,
+      "Trisagion": 0.3,
+      "Almighty Pleroma": 0.4,
+      "Luster Candy": 0.5
     },
     "stats": [1253, 722, 178, 116, 191, 138, 123]
   },
@@ -4759,10 +4762,10 @@
     "race": "Megami",
     "resists": "-s--wns-",
     "skills": {
-      "Grand Tack": 42,
+      "Mazanma": 0.1,
+      "Oni-Kagura": 0.2,
       "Life Gain": 40,
-      "Mazanma": 0,
-      "Oni-Kagura": 0
+      "Grand Tack": 42
     },
     "stats": [404, 154, 62, 49, 34, 46, 48]
   },
@@ -4773,10 +4776,10 @@
     "race": "Lady",
     "resists": "--ws--ws",
     "skills": {
-      "Diarama": 29,
-      "Mabufula": 0,
-      "Mamudo": 0,
-      "Posumudi": 28
+      "Mabufula": 0.1,
+      "Mamudo": 0.2,
+      "Posumudi": 28,
+      "Diarama": 29
     },
     "stats": [353, 93, 45, 29, 21, 30, 45]
   },
@@ -4788,10 +4791,10 @@
     "race": "Nymph",
     "resists": "----ws-w",
     "skills": {
+      "Makakaja": 0.1,
+      "Zanma": 0.2,
       "Force Pleroma": 27,
-      "Makakaja": 0,
-      "Recarm": 28,
-      "Zanma": 0
+      "Recarm": 28
     },
     "stats": [196, 164, 21, 27, 44, 30, 35]
   },
@@ -4803,11 +4806,11 @@
     "race": "Herald",
     "resists": "ssdw--ds",
     "skills": {
-      "High Gun Pleroma": 97,
+      "Riot Gun": 0.1,
+      "Trisagion": 0.2,
       "Repel Elec": 95,
-      "Riot Gun": 0,
       "Salvation": 96,
-      "Trisagion": 0
+      "High Gun Pleroma": 97
     },
     "stats": [827, 475, 62, 111, 139, 91, 110]
   },
@@ -4820,8 +4823,8 @@
     "race": "Fairy",
     "resists": "----wn-w",
     "skills": {
-      "Charge": 0,
-      "Javelin Rain": 0,
+      "Charge": 0.1,
+      "Javelin Rain": 0.2,
       "Life Gain": 36,
       "Purple Smoke": 37
     },
@@ -4834,12 +4837,12 @@
     "race": "Vile",
     "resists": "--w-nn-d",
     "skills": {
-      "Draconic Reaction": 88,
-      "Madness Nails": 87,
-      "Panic Voice": 0,
-      "Rending Claws": 0,
+      "Rending Claws": 0.1,
+      "Panic Voice": 0.2,
+      "Zandyne": 0.3,
       "War Cry": 86,
-      "Zandyne": 0
+      "Madness Nails": 87,
+      "Draconic Reaction": 88
     },
     "stats": [798, 307, 122, 79, 51, 75, 94]
   },
@@ -4851,7 +4854,7 @@
     "race": "Wood",
     "resists": "--ws----",
     "skills": {
-      "Binding Claw": 0,
+      "Binding Claw": 0.1,
       "Bouncing Claw": 12,
       "Poison Claw": 13
     },
@@ -4864,9 +4867,9 @@
     "race": "Fallen",
     "resists": "-w-nwr-s",
     "skills": {
-      "Bufudyne": 0,
+      "Bufudyne": 0.1,
+      "Mazandyne": 0.2,
       "Makajamaon": 75,
-      "Mazandyne": 0,
       "Will of Wind": 77
     },
     "stats": [515, 395, 71, 65, 97, 85, 86]
@@ -4878,9 +4881,9 @@
     "race": "Avatar",
     "resists": "--s--s-w",
     "skills": {
-      "Frenzied Chomp": 16,
-      "Mazan": 0,
-      "Shibaboo": 15
+      "Mazan": 0.1,
+      "Shibaboo": 15,
+      "Frenzied Chomp": 16
     },
     "stats": [173, 83, 22, 22, 15, 25, 23]
   },
@@ -4892,8 +4895,8 @@
     "race": "Femme",
     "resists": "-sw---ws",
     "skills": {
+      "Stun Needles": 0.1,
       "Rapid Needle": 24,
-      "Stun Needles": 0,
       "Tarunda": 25
     },
     "stats": [247, 93, 26, 40, 22, 31, 27]
@@ -4907,14 +4910,14 @@
     "race": "Fury",
     "resists": "s-d-d---",
     "skills": {
-      "Akasha Arts": 99,
-      "Berserker God": 0,
+      "Berserker God": 0.1,
+      "Hades Blast": 0.2,
+      "Victory Cry": 96,
       "Drain Phys": 97,
-      "Hades Blast": 0,
       "High Phys Pleroma": 98,
-      "Victory Cry": 96
+      "Akasha Arts": 99
     },
-    "stats": [887, 358, 155, 92, 68, 100, 96]
+    "stats": [887, 358, 155, 92, 68, 100, 112]
   },
   "Shiwanna": {
     "affinities": [0, 0, -5, 2, 0, 0, 0, 0, 0, 0, 2, 0],
@@ -4924,9 +4927,9 @@
     "race": "Yoma",
     "resists": "-swn---w",
     "skills": {
+      "Pandemic Bomb": 0.1,
+      "Purple Smoke": 0.2,
       "Fog Breath": 39,
-      "Pandemic Bomb": 0,
-      "Purple Smoke": 0,
       "Spring of Life": 40
     },
     "stats": [329, 131, 44, 42, 47, 48, 43]
@@ -4939,11 +4942,11 @@
     "race": "Famed",
     "resists": "dw------",
     "skills": {
+      "Hades Blast": 0.1,
+      "Life Aid": 0.2,
+      "Critical Eye": 0.3,
       "Blood Ritual": 63,
-      "Critical Eye": 0,
-      "Enduring Soul": 64,
-      "Hades Blast": 0,
-      "Life Aid": 0
+      "Enduring Soul": 64
     },
     "stats": [747, 161, 105, 64, 44, 70, 82]
   },
@@ -4955,10 +4958,10 @@
     "race": "Fairy",
     "resists": "--wn----",
     "skills": {
-      "Bufudyne": 46,
-      "Diarahan": 0,
-      "Panic Voice": 0,
-      "Posumudi": 45
+      "Panic Voice": 0.1,
+      "Diarahan": 0.2,
+      "Posumudi": 45,
+      "Bufudyne": 46
     },
     "stats": [317, 267, 27, 44, 73, 51, 61]
   },
@@ -4970,10 +4973,10 @@
     "race": "Lady",
     "resists": "--wd----",
     "skills": {
-      "Cold World": 0,
-      "High Ice Pleroma": 76,
-      "Makajamaon": 0,
-      "Mamudoon": 74
+      "Cold World": 0.1,
+      "Makajamaon": 0.2,
+      "Mamudoon": 74,
+      "High Ice Pleroma": 76
     },
     "stats": [480, 409, 52, 68, 115, 79, 93]
   },
@@ -4984,9 +4987,9 @@
     "race": "Wood",
     "resists": "-sw--s--",
     "skills": {
-      "Rakunda": 0,
-      "Scratch Dance": 32,
-      "Wind Breath": 0
+      "Rakunda": 0.1,
+      "Wind Breath": 0.2,
+      "Scratch Dance": 32
     },
     "stats": [224, 188, 24, 29, 51, 39, 38]
   },
@@ -4998,10 +5001,10 @@
     "race": "Holy",
     "resists": "-ww---s-",
     "skills": {
-      "Dekunda": 58,
-      "Mahamaon": 0,
-      "Me Patra": 0,
-      "Samarecarm": 56
+      "Me Patra": 0.1,
+      "Mahamaon": 0.2,
+      "Samarecarm": 56,
+      "Dekunda": 58
     },
     "stats": [506, 285, 51, 54, 75, 79, 83]
   },
@@ -5013,9 +5016,9 @@
     "race": "Foul",
     "resists": "w-wwwww-",
     "skills": {
-      "Life Bonus": 6,
-      "Life Drain": 0,
-      "Lunge": 4
+      "Life Drain": 0.1,
+      "Lunge": 4,
+      "Life Bonus": 6
     },
     "stats": [35, 37, 8, 8, 7, 9, 8]
   },
@@ -5027,10 +5030,10 @@
     "race": "Holy",
     "resists": "-dnw--rw",
     "skills": {
+      "Mediarama": 0.1,
+      "Mahamaon": 0.2,
       "Grand Tack": 72,
-      "Mahamaon": 0,
-      "Mediarahan": 73,
-      "Mediarama": 0
+      "Mediarahan": 73
     },
     "stats": [548, 400, 48, 63, 107, 70, 85]
   },
@@ -5042,10 +5045,10 @@
     "race": "Fairy",
     "resists": "s---s-ww",
     "skills": {
-      "Dormina": 0,
-      "Light Life Aid": 16,
+      "Dormina": 0.1,
+      "Oni-Kagura": 0.2,
       "Magaon": 15,
-      "Oni-Kagura": 0,
+      "Light Life Aid": 16,
       "Resist Light": 17
     },
     "stats": [304, 50, 29, 17, 8, 15, 21]
@@ -5057,12 +5060,12 @@
     "race": "Herald",
     "resists": "---sswd-",
     "skills": {
+      "Holy Wrath": 0.1,
+      "Diarahan": 0.2,
+      "Judgement Light": 0.3,
       "Concentrate": 87,
-      "Diarahan": 0,
-      "Drain Elec": 89,
       "High Light Pleroma": 88,
-      "Holy Wrath": 0,
-      "Judgement Light": 0
+      "Drain Elec": 89
     },
     "stats": [532, 498, 62, 100, 113, 92, 101]
   },
@@ -5074,10 +5077,10 @@
     "race": "Beast",
     "resists": "-w--sw--",
     "skills": {
-      "Counter": 28,
+      "Tarunda": 0.1,
+      "Zionga": 0.2,
       "Oni-Kagura": 27,
-      "Tarunda": 0,
-      "Zionga": 0
+      "Counter": 28
     },
     "stats": [233, 125, 30, 30, 25, 41, 37]
   },
@@ -5088,9 +5091,9 @@
     "race": "Ghost",
     "resists": "-w----ws",
     "skills": {
-      "Life Drain": 0,
-      "Mudo": 8,
-      "Poison Claw": 0
+      "Life Drain": 0.1,
+      "Poison Claw": 0.2,
+      "Mudo": 8
     },
     "stats": [81, 55, 12, 12, 10, 15, 14]
   },
@@ -5102,9 +5105,9 @@
     "race": "Femme",
     "resists": "-w-sw--s",
     "skills": {
+      "Life Drain": 0.1,
+      "Mabufu": 0.2,
       "Bouncing Claw": 18,
-      "Life Drain": 0,
-      "Mabufu": 0,
       "Tarunda": 19
     },
     "stats": [182, 85, 27, 28, 25, 22, 13]
@@ -5117,10 +5120,10 @@
     "race": "Night",
     "resists": "-wsn--w-",
     "skills": {
+      "Sexy Dance": 0.1,
+      "Sukunda": 0.2,
       "Me Patra": 46,
-      "Sexy Dance": 0,
-      "Spirit Drain": 47,
-      "Sukunda": 0
+      "Spirit Drain": 47
     },
     "stats": [303, 251, 32, 42, 71, 47, 56]
   },
@@ -5132,8 +5135,8 @@
     "race": "Jirae",
     "resists": "--wws---",
     "skills": {
-      "Pulinpa": 6,
-      "Zio": 0
+      "Zio": 0.1,
+      "Pulinpa": 6
     },
     "stats": [84, 40, 8, 8, 10, 10, 9]
   },
@@ -5144,10 +5147,10 @@
     "race": "Brute",
     "resists": "--wn----",
     "skills": {
-      "Bufudyne": 0,
-      "Mabufudyne": 56,
+      "Bufudyne": 0.1,
+      "Rakukaja": 0.2,
       "Mana Surge": 55,
-      "Rakukaja": 0
+      "Mabufudyne": 56
     },
     "stats": [333, 322, 30, 49, 83, 55, 71]
   },
@@ -5159,10 +5162,10 @@
     "race": "Kunitsu",
     "resists": "---sw-ss",
     "skills": {
-      "Concentrate": 36,
-      "Infernal Hail": 0,
+      "Infernal Hail": 0.1,
+      "Needlestorm": 0.2,
       "Makajam": 35,
-      "Needlestorm": 0,
+      "Concentrate": 36,
       "Null Mind": 38
     },
     "stats": [351, 188, 52, 44, 55, 46, 56]
@@ -5175,9 +5178,9 @@
     "race": "Avian",
     "resists": "-w--s-sw",
     "skills": {
-      "Diarama": 0,
+      "Rakukaja": 0.1,
+      "Diarama": 0.2,
       "Mazio": 16,
-      "Rakukaja": 0,
       "Spirit Drain": 17
     },
     "stats": [170, 96, 22, 24, 17, 27, 24]
@@ -5189,11 +5192,11 @@
     "race": "Tyrant",
     "resists": "--dw----",
     "skills": {
-      "Berserker God": 0,
+      "Maragidyne": 0.1,
+      "Berserker God": 0.2,
+      "Ragnarok": 82,
       "High Fire Pleroma": 83,
-      "Maragidyne": 0,
-      "Null Dark": 84,
-      "Ragnarok": 82
+      "Null Dark": 84
     },
     "stats": [756, 309, 120, 79, 94, 61, 91]
   },
@@ -5205,11 +5208,11 @@
     "race": "Fury",
     "resists": "s-w--d--",
     "skills": {
+      "Deadly Wind": 0.1,
+      "Mist Rush": 0.2,
       "Critical Eye": 85,
-      "Deadly Wind": 0,
-      "Drain Fire": 87,
       "High Phys Pleroma": 86,
-      "Mist Rush": 0
+      "Drain Fire": 87
     },
     "stats": [870, 200, 132, 82, 69, 79, 96]
   },
@@ -5220,8 +5223,8 @@
     "race": "Element",
     "resists": "----n---",
     "skills": {
+      "High Force Pleroma": 0.1,
       "Bind Voice": 29,
-      "High Force Pleroma": 0,
       "Mana Gain": 32
     },
     "stats": [267, 161, 31, 38, 27, 44, 46]
@@ -5233,10 +5236,10 @@
     "race": "Amatsu",
     "resists": "----nws-",
     "skills": {
-      "Berserker God": 57,
-      "Estoma": 0,
+      "Estoma": 0.1,
+      "Ziodyne": 0.2,
       "Retaliate": 56,
-      "Ziodyne": 0
+      "Berserker God": 57
     },
     "stats": [608, 214, 97, 53, 38, 74, 64]
   },
@@ -5248,10 +5251,10 @@
     "race": "Kunitsu",
     "resists": "--w-s---",
     "skills": {
-      "Counter": 0,
-      "Elec Pleroma": 24,
+      "Counter": 0.1,
+      "Zionga": 0.2,
       "Fang Breaker": 22,
-      "Zionga": 0
+      "Elec Pleroma": 24
     },
     "stats": [282, 78, 41, 24, 18, 29, 29]
   },
@@ -5264,9 +5267,9 @@
     "race": "Genma",
     "resists": "------sw",
     "skills": {
+      "Hama": 0.1,
+      "Gram Slice": 0.2,
       "Estoma": 14,
-      "Gram Slice": 0,
-      "Hama": 0,
       "Heat Wave": 16
     },
     "stats": [185, 58, 26, 17, 13, 18, 20]
@@ -5279,10 +5282,10 @@
     "race": "Flight",
     "resists": "-w--ws-w",
     "skills": {
-      "Dream Needle": 0,
-      "Force Pleroma": 24,
-      "Makakaja": 0,
-      "Mazan": 23
+      "Makakaja": 0.1,
+      "Dream Needle": 0.2,
+      "Mazan": 23,
+      "Force Pleroma": 24
     },
     "stats": [239, 90, 25, 37, 19, 36, 23]
   },
@@ -5293,10 +5296,10 @@
     "race": "Vile",
     "resists": "-nwwww-s",
     "skills": {
-      "Endure": 62,
+      "Spirit Drain": 0.1,
+      "Purple Smoke": 0.2,
       "Healing Knowhow": 59,
-      "Purple Smoke": 0,
-      "Spirit Drain": 0
+      "Endure": 62
     },
     "stats": [469, 214, 64, 68, 64, 63, 61]
   },
@@ -5308,10 +5311,10 @@
     "race": "Wilder",
     "resists": "----rw--",
     "skills": {
-      "Beastly Reaction": 66,
-      "Eat Whole": 0,
+      "Ziodyne": 0.1,
+      "Eat Whole": 0.2,
       "Sukunda": 65,
-      "Ziodyne": 0
+      "Beastly Reaction": 66
     },
     "stats": [572, 257, 79, 64, 77, 91, 81]
   },
@@ -5322,10 +5325,10 @@
     "race": "Femme",
     "resists": "-w--n---",
     "skills": {
-      "Dark Sword": 0,
-      "Hades Blast": 58,
+      "Tetanus Cut": 0.1,
+      "Dark Sword": 0.2,
       "Tarukaja": 57,
-      "Tetanus Cut": 0
+      "Hades Blast": 58
     },
     "stats": [586, 166, 83, 54, 39, 63, 69]
   },
@@ -5336,10 +5339,10 @@
     "race": "Foul",
     "resists": "-w-----w",
     "skills": {
-      "Counter": 29,
-      "Fatal Sword": 0,
+      "Taunt": 0.1,
+      "Fatal Sword": 0.2,
       "Heat Wave": 28,
-      "Taunt": 0
+      "Counter": 29
     },
     "stats": [303, 93, 45, 29, 21, 25, 40]
   },
@@ -5350,11 +5353,11 @@
     "race": "Famed",
     "resists": "sw------",
     "skills": {
+      "Mahamaon": 0.1,
+      "Berserker God": 0.2,
+      "Blood Ritual": 0.3,
       "Ally Retaliate": 78,
-      "Berserker God": 0,
-      "Blood Ritual": 0,
-      "Imposing Stance": 79,
-      "Mahamaon": 0
+      "Imposing Stance": 79
     },
     "stats": [482, 398, 51, 67, 115, 75, 91]
   },
@@ -5367,10 +5370,10 @@
     "race": "Zealot",
     "resists": "--swsn--",
     "skills": {
-      "Madness Nails": 84,
-      "Mazandyne": 0,
+      "Trisagion": 0.1,
+      "Mazandyne": 0.2,
       "Repel Force": 83,
-      "Trisagion": 0
+      "Madness Nails": 84
     },
     "stats": [460, 410, 49, 73, 124, 115, 90]
   },
@@ -5382,11 +5385,11 @@
     "race": "Kishin",
     "resists": "s-n-dws-",
     "skills": {
+      "Charge": 0.1,
+      "Ziodyne": 0.2,
+      "Hades Blast": 0.3,
       "Berserker God": 81,
-      "Charge": 0,
-      "Hades Blast": 0,
-      "High Elec Pleroma": 82,
-      "Ziodyne": 0
+      "High Elec Pleroma": 82
     },
     "stats": [748, 227, 120, 74, 53, 78, 91]
   },
@@ -5397,11 +5400,11 @@
     "race": "Deity",
     "resists": "-wss---w",
     "skills": {
-      "Hamaon": 0,
+      "Hamaon": 0.1,
+      "Mana Gain": 0.2,
+      "Resist Gun": 31,
       "Light Pleroma": 32,
-      "Mana Gain": 0,
-      "Megido": 33,
-      "Resist Gun": 31
+      "Megido": 33
     },
     "stats": [249, 203, 28, 30, 57, 33, 40]
   },
@@ -5412,10 +5415,10 @@
     "race": "Divine",
     "resists": "--nw--nw",
     "skills": {
-      "Agidyne": 0,
-      "Mahamaon": 0,
-      "Maragidyne": 65,
-      "Mediarama": 64
+      "Agidyne": 0.1,
+      "Mahamaon": 0.2,
+      "Mediarama": 64,
+      "Maragidyne": 65
     },
     "stats": [517, 256, 60, 68, 65, 74, 68]
   },
@@ -5427,8 +5430,8 @@
     "race": "Avian",
     "resists": "-w--n---",
     "skills": {
-      "Elec Pleroma": 0,
-      "Mazionga": 0,
+      "Mazionga": 0.1,
+      "Elec Pleroma": 0.2,
       "Taunt": 43,
       "Ziodyne": 45
     },
@@ -5441,9 +5444,9 @@
     "race": "Drake",
     "resists": "--nnw-ws",
     "skills": {
+      "Ice Breath": 0.1,
+      "Megidola": 0.2,
       "Chakra Walk": 56,
-      "Ice Breath": 0,
-      "Megidola": 0,
       "Silent Prayer": 57
     },
     "stats": [359, 296, 38, 50, 85, 56, 67]
@@ -5456,8 +5459,8 @@
     "race": "Jirae",
     "resists": "s-------",
     "skills": {
-      "Critical Eye": 0,
-      "Oni-Kagura": 0,
+      "Critical Eye": 0.1,
+      "Oni-Kagura": 0.2,
       "Power Punch": 39,
       "Retaliate": 40
     },
@@ -5471,11 +5474,11 @@
     "race": "Fairy",
     "resists": "-wssss--",
     "skills": {
+      "Maziodyne": 0.1,
+      "Mediarahan": 0.2,
       "Dekunda": 72,
-      "Makajamaon": 74,
       "Mana Surge": 73,
-      "Maziodyne": 0,
-      "Mediarahan": 0
+      "Makajamaon": 74
     },
     "stats": [473, 426, 42, 45, 119, 66, 93]
   },
@@ -5486,10 +5489,10 @@
     "race": "Genma",
     "resists": "--wsnw--",
     "skills": {
-      "Bufula": 0,
-      "Mana Gain": 41,
+      "Bufula": 0.1,
+      "Zionga": 0.2,
       "Resist Fire": 40,
-      "Zionga": 0
+      "Mana Gain": 41
     },
     "stats": [269, 224, 29, 37, 62, 41, 50]
   },
@@ -5501,10 +5504,10 @@
     "race": "Jirae",
     "resists": "s--wn---",
     "skills": {
-      "Agidyne": 48,
-      "Mazionga": 0,
-      "Megido": 0,
-      "Rakukaja": 47
+      "Megido": 0.1,
+      "Mazionga": 0.2,
+      "Rakukaja": 47,
+      "Agidyne": 48
     },
     "stats": [408, 276, 35, 46, 83, 52, 58]
   },
@@ -5516,9 +5519,9 @@
     "race": "Megami",
     "resists": "--wn--n-",
     "skills": {
-      "Mabufudyne": 0,
+      "Mabufudyne": 0.1,
+      "Posumudi": 0.2,
       "Makakaja": 58,
-      "Posumudi": 0,
       "Recarmdra": 59
     },
     "stats": [390, 356, 42, 54, 92, 72, 72]
@@ -5531,10 +5534,10 @@
     "race": "Famed",
     "resists": "-w--ss--",
     "skills": {
-      "Debilitate": 0,
-      "High Light Pleroma": 82,
-      "Judgement Light": 0,
-      "Smile Charge": 81
+      "Judgement Light": 0.1,
+      "Debilitate": 0.2,
+      "Smile Charge": 81,
+      "High Light Pleroma": 82
     },
     "stats": [499, 411, 53, 70, 120, 78, 95]
   },
@@ -5545,10 +5548,10 @@
     "race": "Fury",
     "resists": "--sw---s",
     "skills": {
-      "Charge": 39,
-      "Fatal Sword": 0,
+      "Megido": 0.1,
+      "Fatal Sword": 0.2,
       "Javelin Rain": 38,
-      "Megido": 0
+      "Charge": 39
     },
     "stats": [372, 148, 50, 48, 43, 45, 43]
   },
@@ -5561,10 +5564,10 @@
     "race": "Drake",
     "resists": "---w--w-",
     "skills": {
-      "Attack Knowhow": 16,
-      "Hard Worker": 0,
+      "Zionga": 0.1,
+      "Hard Worker": 0.2,
       "Pandemic Bomb": 15,
-      "Zionga": 0
+      "Attack Knowhow": 16
     },
     "stats": [161, 75, 21, 22, 20, 19, 18]
   },
@@ -5576,10 +5579,10 @@
     "race": "Fiend",
     "resists": "-wssssss",
     "skills": {
-      "Evil Melody": 0,
-      "Great Logos": 99,
-      "Smile Charge": 0,
-      "Soul Drain": 0
+      "Evil Melody": 0.1,
+      "Soul Drain": 0.2,
+      "Smile Charge": 0.3,
+      "Great Logos": 99
     },
     "stats": [624, 549, 73, 103, 158, 116, 115]
   },
@@ -5591,10 +5594,10 @@
     "race": "Jirae",
     "resists": "---ws---",
     "skills": {
-      "Mazionga": 33,
+      "Poison Claw": 0.1,
+      "Zionga": 0.2,
       "Me Patra": 32,
-      "Poison Claw": 0,
-      "Zionga": 0
+      "Mazionga": 33
     },
     "stats": [280, 129, 38, 37, 38, 35, 37]
   },
@@ -5606,10 +5609,10 @@
     "race": "Flight",
     "resists": "-w--s--w",
     "skills": {
-      "Ice Breath": 0,
-      "Magaon": 32,
+      "Media": 0.1,
+      "Ice Breath": 0.2,
       "Me Patra": 31,
-      "Media": 0
+      "Magaon": 32
     },
     "stats": [260, 169, 33, 33, 28, 46, 41]
   },
@@ -5621,9 +5624,9 @@
     "race": "Tyrant",
     "resists": "------ss",
     "skills": {
-      "Bufudyne": 0,
+      "Bufudyne": 0.1,
+      "Makajamaon": 0.2,
       "Dekaja": 76,
-      "Makajamaon": 0,
       "Will of Frost": 77
     },
     "stats": [647, 372, 50, 66, 113, 74, 89]
@@ -5637,10 +5640,10 @@
     "race": "Vermin",
     "resists": "-s---ww-",
     "skills": {
-      "Rapid Needle": 23,
+      "Toxic Sting": 0.1,
+      "Tetanus Cut": 0.2,
       "Stun Needle": 22,
-      "Tetanus Cut": 0,
-      "Toxic Sting": 0
+      "Rapid Needle": 23
     },
     "stats": [201, 88, 24, 40, 20, 29, 25]
   },
@@ -5652,9 +5655,9 @@
     "race": "Avatar",
     "resists": "---wn-nw",
     "skills": {
-      "Healing Knowhow": 0,
+      "Mediarama": 0.1,
+      "Healing Knowhow": 0.2,
       "High Heal Pleroma": 54,
-      "Mediarama": 0,
       "Tetrakarn": 55
     },
     "stats": [615, 350, 34, 34, 24, 83, 73]
@@ -5666,9 +5669,9 @@
     "race": "Element",
     "resists": "--wn----",
     "skills": {
-      "High Ice Pleroma": 0,
-      "Mana Gain": 35,
-      "Poison Breath": 33
+      "High Ice Pleroma": 0.1,
+      "Poison Breath": 33,
+      "Mana Gain": 35
     },
     "stats": [300, 192, 24, 31, 52, 41, 37]
   },
@@ -5681,10 +5684,10 @@
     "race": "Yoma",
     "resists": "ss--ws--",
     "skills": {
-      "Blast Arrow": 0,
-      "Blood Ritual": 46,
-      "Javelin Rain": 0,
-      "Mortal Jihad": 45
+      "Javelin Rain": 0.1,
+      "Blast Arrow": 0.2,
+      "Mortal Jihad": 45,
+      "Blood Ritual": 46
     },
     "stats": [367, 133, 68, 53, 31, 45, 52]
   },
@@ -5695,10 +5698,10 @@
     "race": "Drake",
     "resists": "--wd---s",
     "skills": {
-      "Glacial Blast": 0,
+      "Poison Breath": 0.1,
+      "Glacial Blast": 0.2,
       "Ice Age": 89,
       "Life Surge": 90,
-      "Poison Breath": 0,
       "Shivering Taboo": 91
     },
     "stats": [619, 318, 102, 92, 118, 109, 82]
@@ -5711,8 +5714,8 @@
     "race": "Ghost",
     "resists": "--w---wn",
     "skills": {
-      "Acid Breath": 0,
-      "Eat Whole": 0,
+      "Eat Whole": 0.1,
+      "Acid Breath": 0.2,
       "Fog Breath": 75,
       "Life Surge": 76
     },
@@ -5726,10 +5729,10 @@
     "race": "Herald",
     "resists": "-n--wsnw",
     "skills": {
-      "Hamaon": 0,
-      "Heaven's Bow": 0,
-      "Light Pleroma": 64,
-      "Makarakarn": 62
+      "Hamaon": 0.1,
+      "Heaven's Bow": 0.2,
+      "Makarakarn": 62,
+      "Light Pleroma": 64
     },
     "stats": [559, 231, 58, 93, 55, 74, 64]
   },
@@ -5741,10 +5744,10 @@
     "race": "Avian",
     "resists": "-w----sw",
     "skills": {
+      "Damascus Claw": 0.1,
+      "Zionga": 0.2,
       "Ally Counter": 35,
-      "Damascus Claw": 0,
-      "Mazionga": 36,
-      "Zionga": 0
+      "Mazionga": 36
     },
     "stats": [261, 231, 26, 38, 55, 47, 44]
   },
@@ -5755,10 +5758,10 @@
     "race": "Divine",
     "resists": "----wnnw",
     "skills": {
-      "Hamaon": 0,
-      "Sabbatma": 0,
-      "Silent Prayer": 43,
-      "Tetraja": 42
+      "Sabbatma": 0.1,
+      "Hamaon": 0.2,
+      "Tetraja": 42,
+      "Silent Prayer": 43
     },
     "stats": [310, 262, 30, 39, 69, 53, 62]
   },
@@ -5770,11 +5773,11 @@
     "race": "Fairy",
     "resists": "--wn--nw",
     "skills": {
-      "Dark Sword": 0,
-      "Lullaby": 0,
-      "Mabufudyne": 54,
+      "Lullaby": 0.1,
+      "Sukukaja": 0.2,
+      "Dark Sword": 0.3,
       "Mana Surge": 53,
-      "Sukukaja": 0
+      "Mabufudyne": 54
     },
     "stats": [382, 303, 36, 47, 82, 49, 64]
   },
@@ -5785,9 +5788,9 @@
     "race": "Yoma",
     "resists": "----sw--",
     "skills": {
+      "Zio": 0.1,
       "Bouncing Claw": 9,
-      "Mana Bonus": 10,
-      "Zio": 0
+      "Mana Bonus": 10
     },
     "stats": [96, 82, 10, 12, 19, 13, 16]
   },
@@ -5799,10 +5802,10 @@
     "race": "Snake",
     "resists": "-w-ws---",
     "skills": {
-      "Blight": 0,
-      "Marin Karin": 30,
+      "Blight": 0.1,
+      "Zionga": 0.2,
       "Shibaboo": 29,
-      "Zionga": 0
+      "Marin Karin": 30
     },
     "stats": [247, 111, 38, 26, 27, 44, 39]
   },
@@ -5814,10 +5817,10 @@
     "race": "Jaki",
     "resists": "--ws----",
     "skills": {
-      "Mabufula": 0,
-      "Oni-Kagura": 0,
+      "Mabufula": 0.1,
+      "Oni-Kagura": 0.2,
       "Poison Breath": 31,
-      "Power Punch": 31
+      "Power Punch": 31.1
     },
     "stats": [328, 61, 45, 27, 38, 33, 33]
   },
@@ -5829,12 +5832,12 @@
     "race": "Fiend",
     "resists": "----dwss",
     "skills": {
-      "Elec Pierce": 93,
-      "God's Bow": 0,
-      "Gun Pierce": 92,
+      "God's Bow": 0.1,
+      "Soul Drain": 0.2,
+      "Thunder Reign": 90,
       "Heaven's Bow": 91,
-      "Soul Drain": 0,
-      "Thunder Reign": 90
+      "Gun Pierce": 92,
+      "Elec Pierce": 93
     },
     "stats": [770, 302, 93, 145, 86, 116, 104]
   },
@@ -5846,9 +5849,9 @@
     "race": "Spirit",
     "resists": "--w-w-ws",
     "skills": {
+      "Makajam": 0.1,
+      "Mazanma": 0.2,
       "Magaon": 39,
-      "Makajam": 0,
-      "Mazanma": 0,
       "Resist Elec": 40
     },
     "stats": [329, 151, 47, 44, 43, 44, 42]
@@ -5860,10 +5863,10 @@
     "race": "Night",
     "resists": "------ws",
     "skills": {
-      "Blast Arrow": 0,
-      "Dream Fist": 0,
-      "Grand Tack": 56,
-      "Mana Surge": 54
+      "Blast Arrow": 0.1,
+      "Dream Fist": 0.2,
+      "Mana Surge": 54,
+      "Grand Tack": 56
     },
     "stats": [478, 209, 51, 82, 43, 58, 54]
   },
@@ -5875,11 +5878,11 @@
     "race": "Fury",
     "resists": "s-s-wssw",
     "skills": {
-      "Charge": 0,
+      "Mortal Jihad": 0.1,
+      "Taunt": 0.2,
+      "Charge": 0.3,
       "Critical Eye": 58,
-      "Mortal Jihad": 0,
-      "Phys Pleroma": 60,
-      "Taunt": 0
+      "Phys Pleroma": 60
     },
     "stats": [675, 179, 103, 64, 41, 59, 69]
   },
@@ -5891,11 +5894,11 @@
     "race": "Lady",
     "resists": "-n----s-",
     "skills": {
-      "Doping": 81,
-      "Invitation": 82,
+      "Makarakarn": 0.1,
+      "Myriad Arrows": 0.2,
       "Lullaby": 80,
-      "Makarakarn": 0,
-      "Myriad Arrows": 0
+      "Doping": 81,
+      "Invitation": 82
     },
     "stats": [543, 436, 48, 65, 123, 77, 102]
   },
@@ -5907,7 +5910,7 @@
     "race": "Yoma",
     "resists": "-nnw----",
     "skills": {
-      "Agidyne": 0,
+      "Agidyne": 0.1,
       "Fire Pleroma": 49,
       "Grand Tack": 50
     },
@@ -5921,10 +5924,10 @@
     "race": "Brute",
     "resists": "s--r-w--",
     "skills": {
-      "Magaon": 0,
-      "Makajamaon": 73,
+      "Magaon": 0.1,
+      "Tetrakarn": 0.2,
       "Me Patra": 72,
-      "Tetrakarn": 0
+      "Makajamaon": 73
     },
     "stats": [560, 255, 78, 74, 89, 80, 73]
   },
@@ -5936,10 +5939,10 @@
     "race": "Brute",
     "resists": "s--s--ww",
     "skills": {
-      "Attack Knowhow": 34,
+      "Megaton Press": 0.1,
+      "Tarukaja": 0.2,
       "Life Gain": 33,
-      "Megaton Press": 0,
-      "Tarukaja": 0
+      "Attack Knowhow": 34
     },
     "stats": [415, 106, 52, 31, 22, 32, 40]
   },
@@ -5950,10 +5953,10 @@
     "race": "Avian",
     "resists": "-wnw--s-",
     "skills": {
+      "Maragion": 0.1,
+      "Gun Pleroma": 0.2,
       "Grand Tack": 53,
-      "Gun Pleroma": 0,
-      "Maragidyne": 54,
-      "Maragion": 0
+      "Maragidyne": 54
     },
     "stats": [510, 236, 46, 93, 63, 71, 40]
   },
@@ -5966,8 +5969,8 @@
     "race": "Tree",
     "resists": "-nw-----",
     "skills": {
-      "Dekaja": 0,
-      "Grand Tack": 0,
+      "Grand Tack": 0.1,
+      "Dekaja": 0.2,
       "Healing Knowhow": 66,
       "Tetrakarn": 67
     },
@@ -5981,10 +5984,10 @@
     "race": "Drake",
     "resists": "---dw--s",
     "skills": {
-      "Concentrate": 0,
-      "Energy Drain": 68,
-      "Mabufudyne": 0,
-      "Sea of Chaos": 67
+      "Mabufudyne": 0.1,
+      "Concentrate": 0.2,
+      "Sea of Chaos": 67,
+      "Energy Drain": 68
     },
     "stats": [515, 343, 44, 58, 99, 65, 78]
   },
@@ -5996,10 +5999,10 @@
     "race": "Brute",
     "resists": "-----wws",
     "skills": {
+      "Fang Breaker": 0.1,
+      "Tathlum Shot": 0.2,
       "Blast Arrow": 38,
-      "Bloody Glee": 40,
-      "Fang Breaker": 0,
-      "Tathlum Shot": 0
+      "Bloody Glee": 40
     },
     "stats": [325, 164, 37, 62, 31, 45, 39]
   },
@@ -6012,13 +6015,13 @@
     "race": "Famed",
     "resists": "s-------",
     "skills": {
-      "Bad Company": 0,
-      "Endure": 41,
-      "Javelin Rain": 0,
+      "Javelin Rain": 0.1,
+      "Bad Company": 0.2,
+      "Light Mana Aid": 37,
       "Life Surge": 40,
-      "Light Mana Aid": 37
+      "Endure": 41
     },
-    "stats": [435, 85, 52, 46, 37, 42, 35]
+    "stats": [435, 85, 58, 37, 27, 39, 44]
   },
   "Yuki Jyorou": {
     "affinities": [-2, 0, -5, 4, 0, 0, 0, 2, 0, 0, 0, 0],
@@ -6027,10 +6030,10 @@
     "race": "Femme",
     "resists": "--ws----",
     "skills": {
-      "Bufula": 0,
+      "Bufula": 0.1,
+      "Mamudo": 0.2,
       "Ice Pleroma": 31,
-      "Mabufula": 32,
-      "Mamudo": 0
+      "Mabufula": 32
     },
     "stats": [199, 183, 23, 30, 53, 33, 40]
   },
@@ -6042,9 +6045,9 @@
     "race": "Snake",
     "resists": "--wns--w",
     "skills": {
+      "Rapid Needle": 0.1,
+      "Ice Breath": 0.2,
       "Diarama": 30,
-      "Ice Breath": 0,
-      "Rapid Needle": 0,
       "Resist Force": 31
     },
     "stats": [293, 110, 31, 48, 26, 37, 32]
@@ -6058,10 +6061,10 @@
     "race": "Wood",
     "resists": "---n-wws",
     "skills": {
-      "Acid Breath": 0,
-      "Bloody Glee": 43,
+      "Poison Breath": 0.1,
+      "Acid Breath": 0.2,
       "Pandemic Bomb": 42,
-      "Poison Breath": 0
+      "Bloody Glee": 43
     },
     "stats": [280, 232, 30, 39, 65, 47, 52]
   },
@@ -6074,10 +6077,10 @@
     "race": "Raptor",
     "resists": "-w---s--",
     "skills": {
-      "Pandemic Bomb": 0,
-      "Poison Breath": 0,
-      "Resist Dark": 33,
-      "Sukunda": 32
+      "Poison Breath": 0.1,
+      "Pandemic Bomb": 0.2,
+      "Sukunda": 32,
+      "Resist Dark": 33
     },
     "stats": [266, 142, 34, 34, 29, 48, 43]
   },
@@ -6089,11 +6092,11 @@
     "race": "Kishin",
     "resists": "--s--ws-",
     "skills": {
+      "Imposing Stance": 0.1,
+      "Javelin Rain": 0.2,
+      "Rakunda": 51,
       "Berserker God": 52,
-      "Imposing Stance": 0,
-      "Javelin Rain": 0,
-      "Null Nerve": 53,
-      "Rakunda": 51
+      "Null Nerve": 53
     },
     "stats": [596, 182, 85, 50, 38, 52, 74]
   },
@@ -6104,8 +6107,8 @@
     "race": "Drake",
     "resists": "-s-sw-w-",
     "skills": {
-      "Bufu": 9,
-      "Lunge": 0
+      "Lunge": 0.1,
+      "Bufu": 9
     },
     "stats": [143, 45, 20, 12, 8, 16, 14]
   },
@@ -6116,10 +6119,10 @@
     "race": "Dragon",
     "resists": "---n-n--",
     "skills": {
-      "Dekaja": 57,
-      "Fog Breath": 0,
-      "Posumudi": 0,
-      "Rakukaja": 0
+      "Rakukaja": 0.1,
+      "Fog Breath": 0.2,
+      "Posumudi": 0.3,
+      "Dekaja": 57
     },
     "stats": [628, 196, 79, 38, 58, 43, 70]
   },
@@ -6132,9 +6135,9 @@
     "race": "Undead",
     "resists": "--w---wn",
     "skills": {
-      "Cough": 0,
-      "Panic Voice": 18,
-      "Rapid Needle": 0
+      "Cough": 0.1,
+      "Rapid Needle": 0.2,
+      "Panic Voice": 18
     },
     "stats": [201, 77, 20, 31, 17, 24, 21]
   },
@@ -6145,10 +6148,10 @@
     "race": "Kishin",
     "resists": "--nw--s-",
     "skills": {
-      "Agidyne": 0,
-      "Dream Fist": 0,
-      "Grand Tack": 57,
-      "Sukunda": 56
+      "Agidyne": 0.1,
+      "Dream Fist": 0.2,
+      "Sukunda": 56,
+      "Grand Tack": 57
     },
     "stats": [429, 336, 78, 35, 95, 56, 52]
   }

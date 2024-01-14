@@ -33,10 +33,6 @@ export class Compendium implements ICompendium {
       resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
     }
 
-    if (this.compConfig.dlcData) {
-      Object.assign(this.compConfig.demonData, this.compConfig.dlcData);
-    }
-
     for (const [name, json] of Object.entries(this.compConfig.demonData)) {
       const baseSkills = Object.values(json['skills']).reduce<number>((acc, lvl) => lvl === 0 ? acc + 1 : acc, 0);
       const price = Math.floor((800 + 120 * json['lvl']) * (1 + 0.25 * baseSkills) / 10) * 10;

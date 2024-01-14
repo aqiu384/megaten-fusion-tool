@@ -30,7 +30,6 @@ export interface CompendiumConfig extends BaseComp {
 
   demonData;
   evolveData;
-  dlcDemons: string[];
   baseStats: string[];
   resistElems: string[];
 

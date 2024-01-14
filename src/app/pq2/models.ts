@@ -35,7 +35,6 @@ export interface CompendiumConfig extends BaseComp {
   inheritElems: string[];
 
   demonData;
-  dlcData?;
   baseStats: string[];
   resistElems: string[];
 

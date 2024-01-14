@@ -104,8 +104,7 @@ function createCompConfig(): CompendiumConfig {
     inheritTypes,
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
-    demonData: DEMON_DATA_JSON,
-    dlcData: DLC_DATA_JSON,
+    demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
     baseStats: ['HP', 'MP'],
     resistElems: [],
 

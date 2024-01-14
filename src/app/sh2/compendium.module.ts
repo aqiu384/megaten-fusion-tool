@@ -72,7 +72,6 @@ function createCompConfig(): CompendiumConfig {
 
     demonData: DEMON_DATA_JSON,
     evolveData: {},
-    dlcDemons: COMP_CONFIG_JSON.dlcDemons,
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems: COMP_CONFIG_JSON.resistElems,
     ailmentElems: [],
