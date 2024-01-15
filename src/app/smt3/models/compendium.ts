@@ -57,7 +57,7 @@ export class Compendium implements ICompendium {
         inherits: 0,
         stats: json.stats,
         resists: json.resists.split('').map((x, i) => resistCodes[x] +
-          (json['reslvls'] ? json['reslvls'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
+          (json['resmods'] ? json['resmods'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
         ),
         affinities: json.inherits.split('').map(char => char === 'o' ? 1 : 0),
         skills: json.skills,
