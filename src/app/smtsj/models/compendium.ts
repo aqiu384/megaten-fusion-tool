@@ -51,11 +51,14 @@ export class Compendium implements ICompendium {
     const entryRecipes: { [name: string]: string[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const resistCodes: NumDict = {};
+    const resistLvls: NumDict = {};
 
     for (const [res, code] of Object.entries(ResistCodes)) {
-      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+      resistCodes[res] = (code / 1000 | 0) << 10;
+      resistLvls[res] = code % 1000 / 2.5 | 0;
     }
 
+    const blankAils = Array(Ailments.length).fill('-').join('');
     const demonDataJsons: any = [DEMON_DATA_JSON];
     const specialRecipesJsons: any = [SPECIAL_RECIPES_JSON];
     const fusionReqsJsons: { [name: string]: string }[] = [FUSION_PREREQS_JSON];
@@ -64,8 +67,8 @@ export class Compendium implements ICompendium {
     const ailLvls: StringDict = {};
 
     for (const [i, res] of 'wsn'.split('').entries()) {
-      ailmentResists[resistCodes[res]] = [];
-      ailLvls[resistCodes[res]] = ailPrefixes[i];
+      ailmentResists[resistCodes[res] >> 10] = [];
+      ailLvls[resistCodes[res] >> 10] = ailPrefixes[i];
     }
 
     for (const [lvl, prefix] of Object.entries(ailLvls)) {
@@ -112,8 +115,12 @@ export class Compendium implements ICompendium {
           stats:    json['stats'],
           price:    Compendium.estimateBasePrice(json['stats'], json['pcoeff']),
           inherits: 0,
-          resists:  json['resists'].split('').map(x => resistCodes[x]),
-          ailments: (json['ailments'] || '---------').split('').map(x => resistCodes[x]),
+          resists:    json['resists'].split('').map((x, i) => resistCodes[x] +
+            (json['resmods'] ? json['resmods'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
+          ),
+          ailments:   (json['ailments'] || blankAils).split('').map((x, i) => resistCodes[x] +
+            (json['ailmods'] ? json['ailmods'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
+          ),
           affinities: json['inherits'].split('').map(char => char === 'o' ? 1 : 0),
           skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
@@ -137,7 +144,7 @@ export class Compendium implements ICompendium {
       price:    Compendium.estimateBasePrice(defaultStats, 96),
       inherits: 0,
       resists:  '--------'.split('').map(char => ResistCodes[char]),
-      ailments: '---------'.split('').map(char => ResistCodes[char]),
+      ailments: blankAils.split('').map(char => ResistCodes[char]),
       affinities: '---------------'.split('').map(char => char === 'o' ? 1 : 0),
       skills:   {},
       source:   {},
@@ -232,8 +239,8 @@ export class Compendium implements ICompendium {
       }
 
       for (let i = 0; i < demon.ailments.length; i++) {
-        if (ailmentResists[demon.ailments[i]]) {
-          ailmentResists[demon.ailments[i]][i].learnedBy.push({ demon: demon.name, level: 0 });
+        if (ailmentResists[demon.ailments[i] >> 10]) {
+          ailmentResists[demon.ailments[i] >> 10][i].learnedBy.push({ demon: demon.name, level: 0 });
         }
       }
     }

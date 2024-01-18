@@ -120,7 +120,8 @@ export const Ailments = [
   'Charm',
   'Mute',
   'Fear',
-  'Bomb'
+  'Bomb',
+  'Rage'
 ];
 
 export const BaseStats = [
@@ -132,22 +133,17 @@ export const ResistanceLevels = [
 ];
 
 export const ResistCodes = {
-  F: 6300,
-  C: 6150,
+  X: 6300,
+  W: 6200,
   w: 6125,
-  B: 6100,
-  A: 6050,
-  2: 5200,
-  1: 5125,
   '-': 5100,
-  5: 4100,
-  7: 4075,
+  5: 4050,
   s: 4050,
-  n: 3000,
+  n: 3100,
+  N: 3000,
   r: 2100,
-  R: 2125,
   d: 1100,
-  D: 1125
+  D: 1200
 };
 
 export const PasswordEncodings = {
