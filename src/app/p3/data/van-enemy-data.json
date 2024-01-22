@@ -1,6 +1,8 @@
 {
   "Acheron Seeker": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 2900,
     "gem": "-",
     "lvl": 96,
     "race": "Hermit",
@@ -10,6 +12,7 @@
   },
   "Adamant Beetle": {
     "area": "Arqa II 41-63",
+    "exp": 236,
     "gem": "Aquamarine",
     "lvl": 19,
     "race": "Emperor",
@@ -19,15 +22,17 @@
   },
   "Almighty Hand": {
     "area": "Yabbashah II 99-113",
+    "exp": 206,
     "gem": "Onyx",
     "lvl": 34,
     "race": "Magician",
     "resists": "----d--nw-",
-    "skills": ["Strike Attack", "Mabufula", "Bufula", "Hama", "Mahama"],
+    "skills": ["Strike Attack", "Mabufula", "Bufula", "Mahama"],
     "stats": [238, 136, 16, 38, 19, 19, 17]
   },
   "Amenti Raven": {
     "area": "Adamah 215-227",
+    "exp": 595,
     "gem": "Ruby",
     "lvl": 65,
     "race": "Hermit",
@@ -36,25 +41,30 @@
     "stats": [356, 203, 30, 39, 31, 65, 37]
   },
   "Amorous Snake": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 1950,
     "gem": "-",
     "lvl": 93,
     "race": "Lovers",
     "resists": "sssdw--rw-",
-    "skills": ["Pierce Attack", "Agidyne", "Mahama", "Sexy Dance", "Virus Breath", "Re Patra", "Mediarahan"],
+    "skills": ["Pierce Attack", "Agidyne", "Mahama", "Sexy Dance", "Mahamaon", "Re Patra", "Mediarahan", "Diarama", "Maragidyne"],
     "stats": [470, 230, 60, 71, 49, 47, 59]
   },
   "Angry Table": {
+    "ailments": "---T---",
     "area": "Harabah 191-200",
+    "exp": 777,
     "gem": "Amethyst",
     "lvl": 61,
     "race": "Magician",
     "resists": "w---n-w---",
     "skills": ["Strike Attack", "Bufudyne", "Mabufula", "Tentarafoo", "Tetrakarn"],
-    "stats": [238, 136, 13, 33, 22, 22, 21]
+    "stats": [238, 136, 14, 33, 22, 22, 21]
   },
   "Apostate Tower": {
     "area": "Harabah 165-179",
+    "exp": 720,
     "gem": "Onyx",
     "lvl": 56,
     "race": "Hierophant",
@@ -64,6 +74,7 @@
   },
   "Arcane Turret": {
     "area": "Tziah I 115-138",
+    "exp": 1180,
     "gem": "Diamond",
     "lvl": 46,
     "race": "Chariot",
@@ -71,26 +82,41 @@
     "skills": ["Strike Attack", "Vile Assault", "Tarukaja"],
     "stats": [1008, 426, 54, 9, 43, 11, 13]
   },
+  "Arcane Turret B": {
+    "ailments": "nn--n--",
+    "area": "Tziah I 122",
+    "exp": 1057,
+    "gem": "-",
+    "lvl": 41,
+    "race": "Chariot P",
+    "resists": "SSSnwn-nn-",
+    "resmods": [0, 0, 0, 0, 50, 0, 150, 0, 0, 0],
+    "skills": ["Strike Attack"],
+    "stats": [1000, 132, 45, 20, 33, 20, 13]
+  },
   "Ardent Dancer": {
     "area": "Yabbashah I 73-89",
+    "exp": 146,
     "gem": "Amethyst",
     "lvl": 30,
     "race": "Lovers",
     "resists": "-s------w-",
-    "skills": ["Pierce Attack", "Double Fangs", "Sexy Dance", "Marin Karin"],
+    "skills": ["Pierce Attack", "Double Fangs", "Marin Karin"],
     "stats": [219, 108, 22, 22, 16, 14, 23]
   },
   "Avenger Knight": {
     "area": "Yabbashah I 65-89",
+    "exp": 292,
     "gem": "Emerald",
     "lvl": 30,
     "race": "Emperor",
     "resists": "n------w--",
-    "skills": ["Pierce Attack", "Mazio", "Gigantic Fist", "Provoke", "Cleave", "Tarukaja"],
+    "skills": ["Pierce Attack", "Mazio", "Gigantic Fist", "Provoke"],
     "stats": [765, 375, 24, 22, 23, 17, 11]
   },
   "Battle Wheel": {
     "area": "Harabah 181-189",
+    "exp": 720,
     "gem": "Topaz",
     "lvl": 59,
     "race": "Chariot",
@@ -100,6 +126,7 @@
   },
   "Bestial Wheel": {
     "area": "Arqa I 17-39",
+    "exp": 108,
     "gem": "Amethyst",
     "lvl": 15,
     "race": "Chariot",
@@ -109,6 +136,7 @@
   },
   "Bigoted Maya": {
     "area": "Adamah 215-227",
+    "exp": 595,
     "gem": "Topaz",
     "lvl": 65,
     "race": "Justice",
@@ -118,6 +146,7 @@
   },
   "Black Raven": {
     "area": "Arqa I 17-24",
+    "exp": 33,
     "gem": "Aquamarine",
     "lvl": 9,
     "race": "Hermit",
@@ -127,15 +156,17 @@
   },
   "Blue Sigil": {
     "area": "Tziah I 115-138",
+    "exp": 767,
     "gem": "Topaz",
     "lvl": 40,
     "race": "Hierophant",
     "resists": "----d---w-",
-    "skills": ["Slash Attack", "Bufudyne", "Mabufula", "Bewilder"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufula", "Bewilder", "Zionga"],
     "stats": [260, 148, 25, 33, 28, 20, 18]
   },
   "Brave Wheel": {
     "area": "Tziah I 123-138",
+    "exp": 590,
     "gem": "Sapphire",
     "lvl": 45,
     "race": "Chariot",
@@ -145,6 +176,7 @@
   },
   "Bronze Dice": {
     "area": "Arqa II 41-46",
+    "exp": 71,
     "gem": "Turquoise",
     "lvl": 18,
     "race": "Fortune",
@@ -154,6 +186,7 @@
   },
   "Carnal Snake": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Topaz",
     "lvl": 75,
     "race": "Lovers",
@@ -161,8 +194,21 @@
     "skills": ["Pierce Attack", "Evil Touch", "Infuriate", "Mahamaon", "Garudyne", "Life Drain", "Spirit Drain", "Mediarama", "Eerie Sound"],
     "stats": [361, 177, 49, 60, 39, 36, 48]
   },
+  "Carnal Snake B": {
+    "ailments": "nnnnnn-",
+    "area": "Adamah 228",
+    "exp": 1902,
+    "gem": "-",
+    "lvl": 67,
+    "race": "Lovers P",
+    "resists": "---S-SSnn-",
+    "resmods": [0, 0, 0, 10, 0, 10, 10, 0, 0, 0],
+    "skills": ["Pierce Attack"],
+    "stats": [2200, 177, 46, 57, 36, 33, 45]
+  },
   "Champion Knight": {
     "area": "Tziah I 115-138",
+    "exp": 590,
     "gem": "Garnet",
     "lvl": 40,
     "race": "Emperor",
@@ -170,17 +216,32 @@
     "skills": ["Pierce Attack", "Heat Wave", "Sukunda", "Zionga"],
     "stats": [269, 132, 28, 28, 27, 22, 16]
   },
+  "Change Relic": {
+    "ailments": "nnnnnn-",
+    "area": "Arqa I 36",
+    "exp": 788,
+    "gem": "-",
+    "lvl": 17,
+    "race": "Empress P",
+    "resists": "------nnn-",
+    "skills": ["Pierce Attack", "Poison Boost", "Garula", "Magarula", "Poison Mist", "Rakukaja", "Dekunda", "Dia"],
+    "stats": [850, 500, 14, 22, 20, 12, 10]
+  },
   "Chaos Cyclops": {
+    "ailments": "SSS-SS-",
+    "ailmods": [0, 0, 0, 200, 0, 0, 0],
     "area": "Monad Depths 996-999",
+    "exp": 3500,
     "gem": "-",
     "lvl": 98,
     "race": "Hanged",
     "resists": "----d--nn-",
-    "skills": ["Slash Attack", "Bufudyne", "Megidolaon", "Marakukaja", "God's Hand", "Primal Force", "Diarahan", "Infuriate"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "God's Hand", "Primal Force", "Megidolaon", "Marakukaja", "Diarahan", "Infuriate"],
     "stats": [487, 239, 98, 81, 66, 28, 31]
   },
   "Constancy Relic": {
     "area": "Tziah I 115-138",
+    "exp": 590,
     "gem": "Turquoise",
     "lvl": 39,
     "race": "Empress",
@@ -190,6 +251,7 @@
   },
   "Conviction Sword": {
     "area": "Tziah II 151-163",
+    "exp": 700,
     "gem": "Diamond",
     "lvl": 51,
     "race": "Justice",
@@ -199,6 +261,7 @@
   },
   "Cowardly Maya": {
     "area": "Thebel 1-15",
+    "exp": 17,
     "gem": "-",
     "lvl": 2,
     "race": "Magician",
@@ -208,6 +271,7 @@
   },
   "Crazy Twins": {
     "area": "Harabah 165-179",
+    "exp": 432,
     "gem": "Aquamarine",
     "lvl": 56,
     "race": "Hierophant",
@@ -217,15 +281,17 @@
   },
   "Creation Relic": {
     "area": "Yabbashah I 65-89",
+    "exp": 146,
     "gem": "Amethyst",
     "lvl": 26,
     "race": "Empress",
     "resists": "------rnw-",
-    "skills": ["Pierce Attack", "Magarula", "Garula", "Diarama", "Last Resort", "Hama"],
+    "skills": ["Pierce Attack", "Magarula", "Garula", "Diarama", "Last Resort", "Hama", "Tarukaja"],
     "stats": [181, 103, 15, 24, 25, 9, 12]
   },
   "Crying Table": {
     "area": "Arqa II 48-63",
+    "exp": 118,
     "gem": "Aquamarine",
     "lvl": 21,
     "race": "Magician",
@@ -233,8 +299,21 @@
     "skills": ["Strike Attack", "Maragi", "Agilao", "Dekaja"],
     "stats": [170, 97, 15, 18, 14, 13, 10]
   },
+  "Crying Table B": {
+    "ailments": "nnnnn--",
+    "area": "Arqa I 25",
+    "exp": 99,
+    "gem": "-",
+    "lvl": 14,
+    "race": "Magician P",
+    "resists": "SnSdw--nn-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
+    "skills": ["Strike Attack"],
+    "stats": [260, 97, 13, 16, 16, 11, 9]
+  },
   "Curse Dice": {
     "area": "Harabah 191-200",
+    "exp": 1011,
     "gem": "Topaz",
     "lvl": 62,
     "race": "Fortune",
@@ -244,6 +323,7 @@
   },
   "Dancing Hand": {
     "area": "Arqa I 26-39",
+    "exp": 33,
     "gem": "Onyx",
     "lvl": 13,
     "race": "Magician",
@@ -251,8 +331,22 @@
     "skills": ["Strike Attack", "Mabufu", "Bufula"],
     "stats": [88, 46, 7, 15, 5, 9, 10]
   },
+  "Dancing Hand B": {
+    "ailments": "----n--",
+    "ailmods": [150, 150, 150, 150, 0, 150, 0],
+    "area": "Thebel 10",
+    "exp": 70,
+    "gem": "-",
+    "lvl": 7,
+    "race": "Magician P",
+    "resists": "-w-SSSSnn-",
+    "resmods": [0, 0, 0, 10, 10, 10, 10, 0, 0, 0],
+    "skills": ["Strike Attack"],
+    "stats": [220, 120, 3, 6, 10, 4, 5]
+  },
   "Daring Gigas": {
     "area": "Adamah 229-235",
+    "exp": 991,
     "gem": "Diamond",
     "lvl": 70,
     "race": "Strength",
@@ -262,15 +356,17 @@
   },
   "Dark Eagle": {
     "area": "Arqa II 48-63",
+    "exp": 118,
     "gem": "Turquoise",
     "lvl": 23,
     "race": "Empress",
     "resists": "-----wn---",
-    "skills": ["Slash Attack", "Garula", "Magaru", "Dia", "Dodge Pierce"],
+    "skills": ["Slash Attack", "Garula", "Sukukaja", "Dodge Pierce"],
     "stats": [132, 65, 16, 13, 12, 23, 12]
   },
   "Death Castle": {
     "area": "Adamah 215-227",
+    "exp": 1982,
     "gem": "Emerald",
     "lvl": 68,
     "race": "Emperor",
@@ -280,15 +376,17 @@
   },
   "Death Dice": {
     "area": "Adamah 215-227",
+    "exp": 1289,
     "gem": "Garnet",
     "lvl": 66,
     "race": "Fortune",
     "resists": "---nw-rss-",
     "skills": ["Slash Attack", "Hamaon", "Mudoon", "Mahamaon", "Mamudoon"],
-    "stats": [379, 186, 26, 53, 31, 45, 30]
+    "stats": [379, 186, 26, 53, 31, 45, 50]
   },
   "Death Seeker": {
     "area": "Tziah II 140-163",
+    "exp": 700,
     "gem": "Topaz",
     "lvl": 49,
     "race": "Hermit",
@@ -298,6 +396,7 @@
   },
   "Death Twins": {
     "area": "Tziah I 123-138",
+    "exp": 354,
     "gem": "Opal",
     "lvl": 42,
     "race": "Hierophant",
@@ -307,15 +406,17 @@
   },
   "Desirous Maya": {
     "area": "Harabah 191-200",
+    "exp": 467,
     "gem": "Emerald",
     "lvl": 61,
     "race": "Hermit",
     "resists": "---w------",
     "skills": ["Slash Attack", "Spirit Drain", "Poisma", "Matarukaja"],
-    "stats": [334, 164, 22, 49, 21, 55, 30]
+    "stats": [334, 164, 20, 40, 21, 55, 30]
   },
   "Devious Maya": {
     "area": "Adamah 237-261",
+    "exp": 680,
     "gem": "Sapphire",
     "lvl": 70,
     "race": "Hanged",
@@ -325,24 +426,28 @@
   },
   "Devoted Cupid": {
     "area": "Yabbashah I 73-89",
+    "exp": 88,
     "gem": "Onyx",
     "lvl": 28,
     "race": "Lovers",
     "resists": "----w-n---",
-    "skills": ["Pierce Attack", "Holy Arrow", "Pulinpa", "Dia"],
+    "skills": ["Pierce Attack", "Dia", "Holy Arrow", "Pulinpa"],
     "stats": [203, 116, 15, 20, 15, 22, 19]
   },
   "Divine Mother": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 1800,
     "gem": "-",
     "lvl": 90,
     "race": "Empress",
     "resists": "----wn-rw-",
-    "skills": ["Strike Attack", "Mahama", "Mahamaon", "Matarunda", "Infuriate"],
+    "skills": ["Strike Attack", "Mahama", "Mahamaon", "Matarunda", "Infuriate", "Ghastly Wail"],
     "stats": [438, 249, 61, 67, 53, 46, 50]
   },
   "Dogmatic Tower": {
     "area": "Yabbashah I 65-71",
+    "exp": 146,
     "gem": "Topaz",
     "lvl": 27,
     "race": "Hierophant",
@@ -352,6 +457,7 @@
   },
   "Doom Sword": {
     "area": "Adamah 229-235",
+    "exp": 991,
     "gem": "Sapphire",
     "lvl": 69,
     "race": "Justice",
@@ -361,6 +467,7 @@
   },
   "Elegant Mother": {
     "area": "Tziah I 126-138",
+    "exp": 590,
     "gem": "Emerald",
     "lvl": 43,
     "race": "Empress",
@@ -370,6 +477,7 @@
   },
   "Emperor Beetle": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Opal",
     "lvl": 73,
     "race": "Emperor",
@@ -379,6 +487,7 @@
   },
   "Enslaved Beast": {
     "area": "Arqa II 48-63",
+    "exp": 118,
     "gem": "Onyx",
     "lvl": 23,
     "race": "Strength",
@@ -388,6 +497,7 @@
   },
   "Eternal Eagle": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Garnet",
     "lvl": 74,
     "race": "Empress",
@@ -397,6 +507,7 @@
   },
   "Eternal Sand": {
     "area": "Monad Depths 991-999",
+    "exp": 2250,
     "gem": "-",
     "lvl": 97,
     "race": "Fortune",
@@ -404,8 +515,21 @@
     "skills": ["Slash Attack", "Magarudyne", "Garudyne", "Masukunda", "Wind Break", "Eerie Sound", "Tentarafoo"],
     "stats": [481, 236, 54, 78, 62, 53, 51]
   },
+  "Fanatic Tower": {
+    "ailments": "nnnnnn-",
+    "area": "Yabbashah I 85",
+    "exp": 2096,
+    "gem": "-",
+    "lvl": 34,
+    "race": "Hierophant P",
+    "resists": "S-Srrr-nn-",
+    "resmods": [0, 150, 0, 0, 0, 0, 150, 0, 0, 0],
+    "skills": ["Pierce Attack", "Zionga", "Mazionga", "Mind Charge", "Poison Mist", "Elec Break", "Sharp Student", "Poison Boost", "Dodge Strike"],
+    "stats": [2000, 500, 24, 25, 25, 25, 20]
+  },
   "Fate Seeker": {
     "area": "Harabah 191-200",
+    "exp": 777,
     "gem": "Garnet",
     "lvl": 62,
     "race": "Hermit",
@@ -415,6 +539,7 @@
   },
   "Fierce Cyclops": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Pearl",
     "lvl": 78,
     "race": "Hanged",
@@ -422,8 +547,21 @@
     "skills": ["Slash Attack", "Last Resort", "Foul Breath", "Agidyne", "Infuriate", "Dekaja", "God's Hand"],
     "stats": [397, 195, 66, 48, 57, 36, 34]
   },
+  "Fierce Cyclops B": {
+    "ailments": "nnnnnn-",
+    "area": "Adamah 244",
+    "exp": 2320,
+    "gem": "-",
+    "lvl": 71,
+    "race": "Hanged P",
+    "resists": "SS-S-n-nn-",
+    "resmods": [10, 10, 0, 10, 0, 0, 0, 0, 0, 0],
+    "skills": ["Slash Attack"],
+    "stats": [1700, 195, 64, 46, 55, 34, 33]
+  },
   "Flowing Sand": {
     "area": "Tziah II 140-150",
+    "exp": 700,
     "gem": "Sapphire",
     "lvl": 48,
     "race": "Fortune",
@@ -433,15 +571,17 @@
   },
   "Frivolous Maya": {
     "area": "Arqa I 17-24",
+    "exp": 33,
     "gem": "Aquamarine",
     "lvl": 11,
     "race": "Empress",
     "resists": "-----sw---",
     "skills": ["Slash Attack", "Zio", "Mazio"],
-    "stats": [125, 62, 8, 7, 7, 12, 7]
+    "stats": [125, 62, 8, 7, 6, 12, 7]
   },
   "Furious Gigas": {
     "area": "Yabbashah II 99-113",
+    "exp": 343,
     "gem": "Emerald",
     "lvl": 36,
     "race": "Strength",
@@ -449,17 +589,32 @@
     "skills": ["Strike Attack", "Kill Rush", "Gigantic Fist", "Power Charge"],
     "stats": [246, 105, 23, 16, 31, 24, 21]
   },
-  "Glorious Hand": {
-    "area": "Adamah 215-254",
+  "Furious Gigas B": {
+    "ailments": "-nn-n--",
+    "area": "Yabbashah I 72",
+    "exp": 262,
     "gem": "-",
+    "lvl": 29,
+    "race": "Strength P",
+    "resists": "---n-Swnn-",
+    "resmods": [0, 0, 0, 0, 0, 10, 25, 0, 0, 0],
+    "skills": ["Strike Attack"],
+    "stats": [500, 105, 25, 12, 25, 20, 17]
+  },
+  "Glorious Hand": {
+    "ailments": "nnnnnn-",
+    "area": "Adamah 215-254",
+    "exp": 0,
+    "gem": "Glorious Coin",
     "lvl": 1,
     "race": "Magician",
-    "resists": "----------",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
     "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Golden Beetle": {
     "area": "Yabbashah I 73-89",
+    "exp": 146,
     "gem": "Turquoise",
     "lvl": 29,
     "race": "Emperor",
@@ -467,8 +622,21 @@
     "skills": ["Pierce Attack", "Sonic Punch", "Zionga"],
     "stats": [217, 92, 18, 16, 27, 18, 15]
   },
+  "Golden Beetle B": {
+    "ailments": "nn--n--",
+    "area": "Arqa II 47",
+    "exp": 212,
+    "gem": "-",
+    "lvl": 19,
+    "race": "Emperor P",
+    "resists": "SSS-nw-nn-",
+    "resmods": [10, 10, 10, 125, 0, 25, 125, 0, 0, 0],
+    "skills": ["Pierce Attack"],
+    "stats": [580, 92, 15, 11, 22, 13, 10]
+  },
   "Gracious Cupid": {
     "area": "Harabah 181-189",
+    "exp": 432,
     "gem": "Garnet",
     "lvl": 58,
     "race": "Lovers",
@@ -477,7 +645,9 @@
     "stats": [306, 174, 31, 41, 30, 42, 37]
   },
   "Grand Magus": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 1500,
     "gem": "-",
     "lvl": 88,
     "race": "Magician",
@@ -487,6 +657,7 @@
   },
   "Grave Beetle": {
     "area": "Thebel 6-15",
+    "exp": 42,
     "gem": "-",
     "lvl": 7,
     "race": "Emperor",
@@ -496,24 +667,27 @@
   },
   "Green Sigil": {
     "area": "Adamah 215-227",
+    "exp": 1289,
     "gem": "Garnet",
     "lvl": 67,
     "race": "Hierophant",
     "resists": "---w-d-r--",
-    "skills": ["Slash Attack", "Sexy Dance", "Maragion", "Myriad Arrows", "Tentarafoo"],
+    "skills": ["Slash Attack", "Myriad Arrows", "Sexy Dance", "Tentarafoo", "Maragion"],
     "stats": [343, 195, 41, 57, 44, 36, 30]
   },
   "Grieving Tiara": {
     "area": "Arqa I 17-24",
+    "exp": 33,
     "gem": "Amethyst",
     "lvl": 9,
     "race": "Priestess",
     "resists": "---nw-----",
-    "skills": ["Strike Attack", "Agi", "Maragi", "Re Patra"],
+    "skills": ["Strike Attack", "Agi", "Maragi", "Agilao", "Re Patra"],
     "stats": [111, 64, 5, 11, 2, 9, 7]
   },
   "Growth Relic": {
     "area": "Tziah II 151-163",
+    "exp": 700,
     "gem": "Amethyst",
     "lvl": 50,
     "race": "Empress",
@@ -523,6 +697,7 @@
   },
   "Hakurou Musha": {
     "area": "Tziah II 151-163",
+    "exp": 700,
     "gem": "Opal",
     "lvl": 54,
     "race": "Strength",
@@ -531,7 +706,9 @@
     "stats": [317, 134, 42, 22, 38, 43, 24]
   },
   "Hallowed Turret": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 2025,
     "gem": "-",
     "lvl": 94,
     "race": "Chariot",
@@ -541,15 +718,17 @@
   },
   "Harmony Giant": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Topaz",
     "lvl": 77,
     "race": "Justice",
     "resists": "-nr-wrr---",
     "skills": ["Slash Attack", "Magarudyne", "Tempest Slash", "Megido"],
-    "stats": [390, 191, 69, 59, 55, 26, 33]
+    "stats": [390, 191, 65, 59, 55, 26, 33]
   },
   "Haughty Maya": {
     "area": "Arqa II 41-46",
+    "exp": 71,
     "gem": "Onyx",
     "lvl": 20,
     "race": "Emperor",
@@ -559,6 +738,7 @@
   },
   "Heat Balance": {
     "area": "Arqa I 17-24",
+    "exp": 33,
     "gem": "Onyx",
     "lvl": 10,
     "race": "Justice",
@@ -568,15 +748,28 @@
   },
   "Hell Knight": {
     "area": "Harabah 181-189",
+    "exp": 720,
     "gem": "Amethyst",
     "lvl": 60,
     "race": "Emperor",
     "resists": "n-n--rw---",
-    "skills": ["Pierce Attack", "Vile Assault", "Maziodyne", "Power Charge", "Rakunda"],
+    "skills": ["Pierce Attack", "Vile Assault", "Infuriate"],
     "stats": [314, 154, 40, 44, 39, 33, 31]
+  },
+  "Hell Knight B": {
+    "ailments": "--nnnn-",
+    "area": "Tziah II 146",
+    "exp": 1252,
+    "gem": "-",
+    "lvl": 48,
+    "race": "Emperor P",
+    "resists": "---SSdSnn-",
+    "skills": ["Pierce Attack"],
+    "stats": [1000, 154, 25, 20, 32, 26, 18]
   },
   "Ice Raven": {
     "area": "Yabbashah II 90-97",
+    "exp": 206,
     "gem": "Garnet",
     "lvl": 33,
     "race": "Hermit",
@@ -586,6 +779,7 @@
   },
   "Ill-fated Maya": {
     "area": "Tziah I 115-138",
+    "exp": 354,
     "gem": "Emerald",
     "lvl": 39,
     "race": "Chariot",
@@ -594,7 +788,9 @@
     "stats": [279, 137, 30, 16, 31, 19, 22]
   },
   "Immoral Snake": {
+    "ailments": "T------",
     "area": "Harabah 181-189",
+    "exp": 720,
     "gem": "Opal",
     "lvl": 59,
     "race": "Lovers",
@@ -604,6 +800,7 @@
   },
   "Imprudent Maya": {
     "area": "Harabah 165-179",
+    "exp": 432,
     "gem": "Pearl",
     "lvl": 55,
     "race": "Fortune",
@@ -613,6 +810,7 @@
   },
   "Indolent Maya": {
     "area": "Yabbashah I 65-89",
+    "exp": 88,
     "gem": "Garnet",
     "lvl": 26,
     "race": "Hierophant",
@@ -622,6 +820,7 @@
   },
   "Infinite Sand": {
     "area": "Adamah 229-235",
+    "exp": 991,
     "gem": "Opal",
     "lvl": 71,
     "race": "Fortune",
@@ -631,33 +830,49 @@
   },
   "Insidious Maya": {
     "area": "Yabbashah II 90-113",
+    "exp": 206,
     "gem": "Amethyst",
     "lvl": 32,
     "race": "Lovers",
     "resists": "----w-s---",
-    "skills": ["Slash Attack", "Eerie Sound", "Life Drain", "Diarama"],
+    "skills": ["Slash Attack", "Eerie Sound", "Life Drain", "Diarama", "Pulinpa"],
     "stats": [208, 102, 18, 22, 19, 19, 25]
+  },
+  "Intrepid Knight": {
+    "ailments": "SnSSn--",
+    "area": "Arqua II 59",
+    "exp": 1696,
+    "gem": "-",
+    "lvl": 26,
+    "race": "Emperor P",
+    "resists": "SSS---dnn-",
+    "skills": ["Pierce Attack", "Dia", "Magarula", "Garudyne", "Wind Break", "Kill Rush", "Mind Charge", "Counterstrike", "Sharp Student"],
+    "stats": [1000, 102, 14, 16, 20, 20, 12]
   },
   "Iron Dice": {
     "area": "Harabah 202-213",
+    "exp": 467,
     "gem": "Opal",
     "lvl": 64,
     "race": "Fortune",
     "resists": "sss--w----",
-    "skills": ["Strike Attack", "Swift Strike", "Kill Rush", "Deathbound"],
+    "skills": ["Strike Attack", "Swift Strike", "Twin Shot", "Deathbound"],
     "stats": [259, 110, 24, 10, 23, 17, 26]
   },
   "Jealous Cupid": {
+    "ailments": "T--T---",
     "area": "Arqa II 41-46",
+    "exp": 71,
     "gem": "Amethyst",
     "lvl": 20,
     "race": "Lovers",
     "resists": "----w-n---",
-    "skills": ["Pierce Attack", "Rakukaja", "Pulinpa", "Holy Arrow", "Dia", "Marin Karin"],
+    "skills": ["Pierce Attack", "Dia", "Holy Arrow", "Rakukaja", "Pulinpa", "Marin Karin"],
     "stats": [139, 79, 10, 15, 11, 16, 15]
   },
   "Jotun of Blood": {
     "area": "Harabah 191-200",
+    "exp": 777,
     "gem": "Ruby",
     "lvl": 66,
     "race": "Hanged",
@@ -666,7 +881,9 @@
     "stats": [910, 564, 65, 26, 54, 18, 15]
   },
   "Jotun of Evil": {
+    "ailments": "TTTTTT-",
     "area": "Adamah 237-261",
+    "exp": 2266,
     "gem": "Ruby",
     "lvl": 77,
     "race": "Hanged",
@@ -674,35 +891,62 @@
     "skills": ["Strike Attack", "Hamaon", "Bufudyne", "Mabufudyne", "Provoke", "Infuriate", "Evade Slash", "Evade Strike", "Evade Pierce"],
     "stats": [1260, 618, 65, 80, 49, 23, 21]
   },
+  "Jotun of Grief": {
+    "ailments": "nnnnnn-",
+    "area": "Adamah 252",
+    "exp": 15003,
+    "gem": "-",
+    "lvl": 73,
+    "race": "Hanged P",
+    "resists": "dd-ddddnn-",
+    "skills": ["Strike Attack", "Sharp Student", "Infuriate", "Stagnant Air", "Primal Force", "Marakunda", "Masukunda", "Matarunda", "Megidolaon"],
+    "stats": [4000, 500, 77, 77, 48, 39, 16]
+  },
   "Jotun of Power": {
     "area": "Yabbashah II 99-113",
+    "exp": 686,
     "gem": "Sapphire",
     "lvl": 38,
     "race": "Hanged",
     "resists": "----d--s--",
-    "skills": ["Strike Attack", "Bufudyne", "Diarama", "Bufula", "Hama", "Last Resort"],
+    "skills": ["Strike Attack", "Bufudyne", "Diarama", "Bufula"],
     "stats": [807, 396, 40, 19, 34, 13, 15]
   },
   "Judgement Sword": {
     "area": "Harabah 202-213",
+    "exp": 777,
     "gem": "Topaz",
     "lvl": 64,
     "race": "Justice",
     "resists": "s------nw-",
-    "skills": ["Slash Attack", "Heat Wave", "Marakunda", "Tarukaja"],
+    "skills": ["Slash Attack", "Kill Rush", "Heat Wave", "Tarukaja", "Marakunda"],
     "stats": [346, 169, 49, 32, 28, 26, 34]
+  },
+  "Judgement Sword B": {
+    "ailments": "nnn-nn-",
+    "area": "Harabah 171",
+    "exp": 1079,
+    "gem": "-",
+    "lvl": 54,
+    "race": "Justice P",
+    "resists": "SSSS-d-nn-",
+    "resmods": [0, 0, 0, 0, 150, 0, 125, 0, 0, 0],
+    "skills": ["Slash Attack"],
+    "stats": [1700, 169, 49, 36, 28, 32, 34]
   },
   "Jupiter Eagle": {
     "area": "Yabbashah I 73-89",
+    "exp": 146,
     "gem": "Aquamarine",
     "lvl": 29,
     "race": "Empress",
     "resists": "-----wd---",
     "skills": ["Slash Attack", "Garula", "Masukunda", "Sukukaja", "Magarula", "Media"],
-    "stats": [191, 94, 19, 16, 15, 26, 16]
+    "stats": [191, 94, 19, 16, 15, 28, 16]
   },
   "Justice Sword": {
     "area": "Yabbashah II 90-113",
+    "exp": 343,
     "gem": "Onyx",
     "lvl": 32,
     "race": "Justice",
@@ -712,6 +956,7 @@
   },
   "Kaiden Musha": {
     "area": "Harabah 165-179",
+    "exp": 720,
     "gem": "Diamond",
     "lvl": 57,
     "race": "Strength",
@@ -721,6 +966,7 @@
   },
   "Killer Drive": {
     "area": "Tziah I 115-138",
+    "exp": 590,
     "gem": "Opal",
     "lvl": 41,
     "race": "Chariot",
@@ -730,6 +976,7 @@
   },
   "Killer Twins": {
     "area": "Yabbashah I 65-89",
+    "exp": 88,
     "gem": "Opal",
     "lvl": 26,
     "race": "Hierophant",
@@ -739,6 +986,7 @@
   },
   "Killing Hand": {
     "area": "Arqa II 48-63",
+    "exp": 71,
     "gem": "Onyx",
     "lvl": 22,
     "race": "Magician",
@@ -747,7 +995,9 @@
     "stats": [185, 91, 12, 23, 11, 14, 13]
   },
   "King Castle": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 1800,
     "gem": "-",
     "lvl": 92,
     "race": "Emperor",
@@ -757,6 +1007,7 @@
   },
   "Laughing Table": {
     "area": "Arqa I 26-39",
+    "exp": 54,
     "gem": "Aquamarine",
     "lvl": 11,
     "race": "Magician",
@@ -766,6 +1017,7 @@
   },
   "Liberating Idol": {
     "area": "Tziah II 140-163",
+    "exp": 700,
     "gem": "Aquamarine",
     "lvl": 47,
     "race": "Priestess",
@@ -775,6 +1027,7 @@
   },
   "Light Balance": {
     "area": "Adamah 229-235",
+    "exp": 595,
     "gem": "Diamond",
     "lvl": 68,
     "race": "Justice",
@@ -784,6 +1037,7 @@
   },
   "Lustful Snake": {
     "area": "Yabbashah I 65-89",
+    "exp": 146,
     "gem": "Aquamarine",
     "lvl": 27,
     "race": "Lovers",
@@ -792,16 +1046,19 @@
     "stats": [214, 105, 19, 24, 12, 10, 23]
   },
   "Luxury Hand": {
+    "ailments": "nnnnnn-",
     "area": "Harabah 165-214",
-    "gem": "-",
+    "exp": 0,
+    "gem": "Luxury Coin",
     "lvl": 1,
     "race": "Magician",
-    "resists": "----------",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
     "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Mach Wheel": {
     "area": "Yabbashah I 65-89",
+    "exp": 146,
     "gem": "Turquoise",
     "lvl": 28,
     "race": "Chariot",
@@ -811,15 +1068,17 @@
   },
   "Mad Cyclops": {
     "area": "Harabah 202-213",
+    "exp": 777,
     "gem": "Pearl",
     "lvl": 66,
     "race": "Hanged",
     "resists": "---sn--w--",
     "skills": ["Slash Attack", "Agidyne", "Bufudyne", "Fire Boost", "Ice Boost"],
-    "stats": [349, 172, 59, 36, 44, 24, 25]
+    "stats": [349, 172, 55, 36, 44, 24, 25]
   },
   "Magic Hand": {
     "area": "Thebel 6-15",
+    "exp": 17,
     "gem": "-",
     "lvl": 4,
     "race": "Magician",
@@ -829,6 +1088,7 @@
   },
   "Magical Magus": {
     "area": "Tziah I 123-138",
+    "exp": 590,
     "gem": "Onyx",
     "lvl": 43,
     "race": "Magician",
@@ -836,8 +1096,22 @@
     "skills": ["Strike Attack", "Mabufula", "Bufudyne"],
     "stats": [242, 138, 27, 45, 22, 20, 22]
   },
+  "Magical Magus B": {
+    "ailments": "nn--nn-",
+    "ailmods": [0, 0, 0, 200, 0, 0, 0],
+    "area": "Yabbashah II 98",
+    "exp": 614,
+    "gem": "-",
+    "lvl": 38,
+    "race": "Magician P",
+    "resists": "SSSwd--nn-",
+    "resmods": [75, 75, 75, 50, 0, 0, 0, 0, 0, 0],
+    "skills": ["Strike Attack"],
+    "stats": [700, 138, 22, 35, 17, 15, 18]
+  },
   "Maniacal Book": {
     "area": "Arqa II 48-63",
+    "exp": 71,
     "gem": "Amethyst",
     "lvl": 21,
     "race": "Priestess",
@@ -845,8 +1119,9 @@
     "skills": ["Pierce Attack", "Bufula", "Marin Karin", "Spirit Drain"],
     "stats": [119, 68, 11, 18, 13, 12, 16]
   },
-  "Merciless Maya": {
+  "Merciful Maya": {
     "area": "Thebel 1-15",
+    "exp": 17,
     "gem": "-",
     "lvl": 3,
     "race": "Priestess",
@@ -856,6 +1131,7 @@
   },
   "Mighty Beast": {
     "area": "Harabah 165-179",
+    "exp": 720,
     "gem": "Ruby",
     "lvl": 57,
     "race": "Strength",
@@ -865,6 +1141,7 @@
   },
   "Mighty Cyclops": {
     "area": "Tziah II 151-163",
+    "exp": 700,
     "gem": "Opal",
     "lvl": 56,
     "race": "Hanged",
@@ -873,7 +1150,9 @@
     "stats": [301, 148, 51, 34, 40, 24, 26]
   },
   "Mind Dice": {
+    "ailments": "n----n-",
     "area": "Yabbashah II 90-113",
+    "exp": 446,
     "gem": "Topaz",
     "lvl": 33,
     "race": "Fortune",
@@ -882,7 +1161,9 @@
     "stats": [223, 127, 7, 33, 11, 26, 29]
   },
   "Minotaur I": {
+    "ailments": "TTTTTT-",
     "area": "Adamah 245-261",
+    "exp": 2266,
     "gem": "Diamond",
     "lvl": 74,
     "race": "Hanged",
@@ -892,15 +1173,17 @@
   },
   "Minotaur II": {
     "area": "Adamah 229-235",
+    "exp": 1982,
     "gem": "Ruby",
     "lvl": 71,
     "race": "Hanged",
     "resists": "sss-n---w-",
-    "skills": ["Pierce Attack", "Myriad Arrows", "Last Resort", "Mediarama", "Bufudyne", "Matarukaja"],
+    "skills": ["Pierce Attack", "Myriad Arrows", "Bufudyne", "Matarukaja", "Mediarahan", "Rakukaja", "Last Resort"],
     "stats": [1200, 588, 56, 61, 50, 34, 19]
   },
   "Minotaur III": {
     "area": "Tziah II 151-163",
+    "exp": 1400,
     "gem": "Sapphire",
     "lvl": 55,
     "race": "Hanged",
@@ -910,6 +1193,7 @@
   },
   "Minotaur IV": {
     "area": "Yabbashah II 99-113",
+    "exp": 686,
     "gem": "Diamond",
     "lvl": 37,
     "race": "Hanged",
@@ -919,6 +1203,7 @@
   },
   "Muttering Tiara": {
     "area": "Thebel 1-15",
+    "exp": 17,
     "gem": "-",
     "lvl": 3,
     "race": "Priestess",
@@ -926,26 +1211,64 @@
     "skills": ["Strike Attack", "Agi", "Dia"],
     "stats": [46, 24, 3, 5, 3, 2, 3]
   },
+  "Mythical Gigas": {
+    "ailments": "nn-nn--",
+    "ailmods": [0, 0, 0, 0, 0, 150, 0],
+    "area": "Tziah II 160",
+    "exp": 10012,
+    "gem": "-",
+    "lvl": 50,
+    "race": "Strength P",
+    "resists": "Srnd---nn-",
+    "skills": ["Strike Attack", "High Counter", "Sharp Student", "Vile Assault", "Deathbound", "Power Charge", "Marakunda", "Maragidyne"],
+    "stats": [2100, 500, 35, 14, 60, 30, 35]
+  },
+  "Natural Dancer": {
+    "ailments": "nn-nnn-",
+    "area": "Yabbashah II 110",
+    "exp": 4912,
+    "gem": "-",
+    "lvl": 40,
+    "race": "Lovers P",
+    "resists": "---S-Snnn-",
+    "resmods": [0, 0, 0, 10, 0, 10, 0, 0, 0, 0],
+    "skills": ["Pierce Attack", "Garudyne", "Magarudyne", "Hamaon", "Tetrakarn", "Sexy Dance", "Sharp Student", "Charm Boost"],
+    "stats": [1700, 500, 22, 27, 25, 30, 30]
+  },
   "Nemean Beast": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Diamond",
     "lvl": 76,
     "race": "Strength",
     "resists": "---w----w-",
-    "skills": ["Strike Attack", "God's Hand", "Power Charge", "Provoke"],
+    "skills": ["Strike Attack", "God's Hand", "Tarukaja", "Provoke"],
     "stats": [409, 174, 60, 41, 57, 40, 37]
   },
   "Noble Seeker": {
     "area": "Adamah 245-261",
+    "exp": 1133,
     "gem": "Ruby",
     "lvl": 76,
     "race": "Hermit",
     "resists": "---r--wrr-",
-    "skills": ["Strike Attack", "Mudoon", "Agidyne", "Provoke", "Maragidyne"],
+    "skills": ["Strike Attack", "Provoke", "Agidyne", "Maragidyne"],
     "stats": [375, 184, 32, 67, 34, 70, 32]
+  },
+  "Noble Seeker B": {
+    "ailments": "nnnnnn-",
+    "area": "Adamah 220",
+    "exp": 1772,
+    "gem": "-",
+    "lvl": 63,
+    "race": "Hermit P",
+    "resists": "---SSSSnn-",
+    "skills": ["Strike Attack"],
+    "stats": [1900, 184, 24, 55, 45, 66, 27]
   },
   "Obsessed Cupid": {
     "area": "Thebel 6-15",
+    "exp": 17,
     "gem": "-",
     "lvl": 5,
     "race": "Lovers",
@@ -955,6 +1278,7 @@
   },
   "Onnen Musha": {
     "area": "Adamah 215-227",
+    "exp": 991,
     "gem": "Sapphire",
     "lvl": 70,
     "race": "Strength",
@@ -963,25 +1287,29 @@
     "stats": [405, 172, 56, 32, 48, 55, 26]
   },
   "Opulent Hand": {
+    "ailments": "nnnnnn-",
     "area": "Tziah 115-164",
-    "gem": "-",
+    "exp": 0,
+    "gem": "Opulent Coin",
     "lvl": 1,
     "race": "Magician",
-    "resists": "----------",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
     "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Order Giant": {
     "area": "Tziah II 140-163",
+    "exp": 700,
     "gem": "Emerald",
     "lvl": 48,
     "race": "Justice",
     "resists": "sss-wr----",
-    "skills": ["Slash Attack", "Heat Wave", "Tarukaja"],
+    "skills": ["Slash Attack", "Garula", "Blade of Fury", "Mazio", "Sukunda"],
     "stats": [296, 146, 45, 43, 39, 9, 15]
   },
   "Perpetual Sand": {
     "area": "Harabah 202-213",
+    "exp": 777,
     "gem": "Sapphire",
     "lvl": 65,
     "race": "Fortune",
@@ -989,8 +1317,21 @@
     "skills": ["Slash Attack", "Magarula", "Maragion", "Makarakarn"],
     "stats": [342, 185, 28, 50, 37, 27, 30]
   },
+  "Phantom King": {
+    "ailments": "nnn-nn-",
+    "area": "Harabah 190",
+    "exp": 9288,
+    "gem": "-",
+    "lvl": 57,
+    "race": "Hermit P",
+    "resists": "-SSSSSSrn-",
+    "resmods": [125, 75, 75, 75, 75, 75, 75, 0, 0, 0],
+    "skills": ["Slash Attack", "Sharp Student", "Megido", "Evil Touch", "Evil Smile", "Mind Charge", "Hamaon", "Mahamaon"],
+    "stats": [4500, 500, 25, 77, 36, 35, 25]
+  },
   "Phantom Lord": {
     "area": "Yabbashah II 99-113",
+    "exp": 343,
     "gem": "Opal",
     "lvl": 36,
     "race": "Hermit",
@@ -1000,6 +1341,7 @@
   },
   "Phantom Mage": {
     "area": "Arqa I 17-24",
+    "exp": 54,
     "gem": "Amethyst",
     "lvl": 12,
     "race": "Hermit",
@@ -1009,6 +1351,7 @@
   },
   "Phantom Master": {
     "area": "Arqa II 41-46",
+    "exp": 118,
     "gem": "Amethyst",
     "lvl": 17,
     "race": "Hermit",
@@ -1018,6 +1361,7 @@
   },
   "Pistil Mother": {
     "area": "Harabah 191-200",
+    "exp": 777,
     "gem": "Onyx",
     "lvl": 63,
     "race": "Empress",
@@ -1027,6 +1371,7 @@
   },
   "Platinum Dice": {
     "area": "Adamah 237-261",
+    "exp": 1133,
     "gem": "Pearl",
     "lvl": 73,
     "race": "Fortune",
@@ -1036,15 +1381,17 @@
   },
   "Power Castle": {
     "area": "Harabah 181-189",
+    "exp": 936,
     "gem": "Turquoise",
     "lvl": 61,
     "race": "Emperor",
     "resists": "---s-nw---",
     "skills": ["Strike Attack", "Maragion", "Ziodyne", "Deathbound"],
-    "stats": [314, 15, 41, 51, 57, 18, 23]
+    "stats": [314, 350, 41, 51, 57, 18, 23]
   },
   "Prime Magus": {
     "area": "Harabah 202-213",
+    "exp": 777,
     "gem": "Turquoise",
     "lvl": 65,
     "race": "Magician",
@@ -1052,8 +1399,32 @@
     "skills": ["Strike Attack", "Megido", "Bufudyne", "Mind Charge", "Mamudo"],
     "stats": [335, 191, 35, 64, 25, 22, 35]
   },
+  "Rampage Drive": {
+    "ailments": "nnn-nn-",
+    "area": "Thebel 14",
+    "exp": 300,
+    "gem": "-",
+    "lvl": 8,
+    "race": "Chariot P",
+    "resists": "nrnS---nn-",
+    "resmods": [0, 0, 0, 75, 0, 150, 0, 0, 0, 0],
+    "skills": ["Slash Attack", "Assault Dive", "Tarukaja", "Mazio"],
+    "stats": [450, 450, 9, 7, 10, 1, 1]
+  },
+  "Reckoning Dice": {
+    "ailments": "nnnnnn-",
+    "area": "Harabah 211",
+    "exp": 11120,
+    "gem": "-",
+    "lvl": 62,
+    "race": "Fortune P",
+    "resists": "---nnnnrn-",
+    "skills": ["Slash Attack", "Sharp Student", "Rage Boost", "Tetrakarn", "Provoke", "Megidola", "Megidolaon"],
+    "stats": [3900, 500, 40, 50, 40, 40, 33]
+  },
   "Red Sigil": {
     "area": "Harabah 181-189",
+    "exp": 936,
     "gem": "Emerald",
     "lvl": 61,
     "race": "Hierophant",
@@ -1063,24 +1434,38 @@
   },
   "Regal Mother": {
     "area": "Tziah II 151-163",
+    "exp": 700,
     "gem": "Turquoise",
     "lvl": 53,
     "race": "Empress",
     "resists": "----nwdnw-",
     "skills": ["Strike Attack", "Mediarama", "Magarula", "Mabufula", "Rakukaja", "Wind Boost"],
-    "stats": [294, 167, 30, 34, 24, 18, 21]
+    "stats": [294, 167, 39, 43, 32, 24, 28]
   },
   "Royal Dancer": {
     "area": "Adamah 229-235",
+    "exp": 991,
     "gem": "Opal",
     "lvl": 69,
     "race": "Lovers",
     "resists": "------rnn-",
-    "skills": ["Pierce Attack", "Myriad Arrows", "Sexy Dance", "Tentarafoo", "Maragion"],
+    "skills": ["Pierce Attack", "Myriad Arrows", "Sexy Dance", "Tentarafoo", "Maragion", "Agilao"],
     "stats": [364, 179, 45, 47, 39, 35, 48]
+  },
+  "Royal Dancer B": {
+    "ailments": "----nn-",
+    "area": "Harabah 201",
+    "exp": 1390,
+    "gem": "-",
+    "lvl": 61,
+    "race": "Lovers P",
+    "resists": "-------nn-",
+    "skills": ["Pierce Attack"],
+    "stats": [2100, 179, 60, 42, 34, 30, 44]
   },
   "Ruinous Idol": {
     "area": "Harabah 165-189",
+    "exp": 777,
     "gem": "Aquamarine",
     "lvl": 63,
     "race": "Priestess",
@@ -1090,6 +1475,7 @@
   },
   "Scarlet Turret": {
     "area": "Harabah 165-179",
+    "exp": 1440,
     "gem": "Sapphire",
     "lvl": 58,
     "race": "Chariot",
@@ -1099,24 +1485,27 @@
   },
   "Shouting Tiara": {
     "area": "Yabbashah II 102-113",
+    "exp": 206,
     "gem": "Aquamarine",
     "lvl": 35,
     "race": "Priestess",
     "resists": "---dw--nw-",
-    "skills": ["Strike Attack", "Maragi", "Agilao", "Mahama", "Maragion", "Media"],
+    "skills": ["Strike Attack", "Maragi", "Agilao", "Mahama", "Media"],
     "stats": [242, 138, 19, 31, 19, 22, 21]
   },
   "Silent Book": {
     "area": "Yabbashah I 65-89",
+    "exp": 88,
     "gem": "Onyx",
     "lvl": 27,
     "race": "Priestess",
     "resists": "---wd-s---",
-    "skills": ["Pierce Attack", "Mamudo", "Poisma", "Foul Breath"],
+    "skills": ["Pierce Attack", "Mamudo", "Evil Touch", "Foul Breath"],
     "stats": [176, 100, 14, 22, 15, 16, 21]
   },
   "Silver Dice": {
     "area": "Adamah 229-235",
+    "exp": 991,
     "gem": "Pearl",
     "lvl": 67,
     "race": "Fortune",
@@ -1126,6 +1515,7 @@
   },
   "Sky Balance": {
     "area": "Arqa II 41-46",
+    "exp": 71,
     "gem": "Onyx",
     "lvl": 17,
     "race": "Justice",
@@ -1135,6 +1525,7 @@
   },
   "Slaughter Drive": {
     "area": "Adamah 215-227",
+    "exp": 991,
     "gem": "Topaz",
     "lvl": 66,
     "race": "Chariot",
@@ -1142,8 +1533,21 @@
     "skills": ["Slash Attack", "Deathbound", "Power Charge", "Matarukaja", "Tetrakarn"],
     "stats": [400, 170, 52, 24, 50, 54, 25]
   },
+  "Sleeping Table": {
+    "ailments": "nnnnnn-",
+    "area": "Tziah I 135",
+    "exp": 8452,
+    "gem": "-",
+    "lvl": 50,
+    "race": "Magician P",
+    "resists": "SnSS---nn-",
+    "resmods": [0, 0, 0, 25, 0, 0, 0, 0, 0, 0],
+    "skills": ["Strike Attack", "Evil Touch", "Ghastly Wail", "Hamaon", "Maragidyne", "Megidola"],
+    "stats": [1500, 500, 24, 40, 20, 40, 32]
+  },
   "Solid Castle": {
     "area": "Tziah II 140-150",
+    "exp": 910,
     "gem": "Emerald",
     "lvl": 49,
     "race": "Emperor",
@@ -1153,6 +1557,7 @@
   },
   "Soul Dancer": {
     "area": "Arqa I 17-39",
+    "exp": 54,
     "gem": "Aquamarine",
     "lvl": 11,
     "race": "Lovers",
@@ -1162,6 +1567,7 @@
   },
   "Spurious Book": {
     "area": "Arqa I 26-39",
+    "exp": 33,
     "gem": "Onyx",
     "lvl": 15,
     "race": "Priestess",
@@ -1171,6 +1577,7 @@
   },
   "Stasis Giant": {
     "area": "Harabah 202-213",
+    "exp": 777,
     "gem": "Garnet",
     "lvl": 66,
     "race": "Justice",
@@ -1178,26 +1585,44 @@
     "skills": ["Slash Attack", "Gigantic Fist", "Rakukaja", "High Counter"],
     "stats": [346, 169, 50, 47, 43, 14, 21]
   },
+  "Stasis Giant B": {
+    "ailments": "S-S-nS-",
+    "ailmods": [0, 150, 0, 20, 0, 0, 0],
+    "area": "Harabah 180",
+    "exp": 1161,
+    "gem": "-",
+    "lvl": 58,
+    "race": "Justice P",
+    "resists": "nSSS--Snn-",
+    "resmods": [0, 0, 0, 10, 0, 0, 10, 0, 0, 0],
+    "skills": ["Slash Attack"],
+    "stats": [1100, 169, 27, 47, 43, 40, 21]
+  },
   "Steel Gigas": {
     "area": "Arqa II 41-46",
+    "exp": 118,
     "gem": "Turquoise",
     "lvl": 19,
     "race": "Strength",
     "resists": "-s---w-w--",
-    "skills": ["Strike Attack", "Sonic Punch", "Provoke", "Revolution", "Counter"],
+    "skills": ["Strike Attack", "Sonic Punch", "Revolution", "Counter"],
     "stats": [202, 81, 14, 7, 16, 16, 11]
   },
   "Supreme Hand": {
+    "ailments": "nnnnnn-",
     "area": "Yabbashah 65-114",
-    "gem": "-",
+    "exp": 0,
+    "gem": "Supreme Coin",
     "lvl": 1,
     "race": "Magician",
-    "resists": "----------",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
     "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Tenjin Musha": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 2100,
     "gem": "-",
     "lvl": 95,
     "race": "Strength",
@@ -1207,6 +1632,7 @@
   },
   "Trance Twins": {
     "area": "Thebel 11-15",
+    "exp": 17,
     "gem": "-",
     "lvl": 6,
     "race": "Hierophant",
@@ -1216,24 +1642,29 @@
   },
   "Tranquil Idol": {
     "area": "Tziah I 115-138",
+    "exp": 590,
     "gem": "Amethyst",
     "lvl": 41,
     "race": "Priestess",
     "resists": "---n---rw-",
-    "skills": ["Pierce Attack", "Twin Shot", "Marakukaja", "Hamaon"],
+    "skills": ["Pierce Attack", "Twin Shot", "Marakukaja", "Hama", "Hamaon"],
     "stats": [247, 140, 19, 37, 17, 18, 24]
   },
   "Treasure Hand": {
+    "ailments": "nnnnnn-",
     "area": "Arqa 17-64",
-    "gem": "-",
+    "exp": 0,
+    "gem": "Treasure Coin",
     "lvl": 1,
     "race": "Magician",
-    "resists": "----------",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
     "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Vehement Idol": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 1650,
     "gem": "-",
     "lvl": 89,
     "race": "Priestess",
@@ -1243,6 +1674,7 @@
   },
   "Venus Eagle": {
     "area": "Arqa I 26-39",
+    "exp": 54,
     "gem": "Amethyst",
     "lvl": 14,
     "race": "Empress",
@@ -1250,8 +1682,20 @@
     "skills": ["Slash Attack", "Magaru", "Sukukaja", "Garula"],
     "stats": [100, 46, 12, 8, 7, 15, 7]
   },
+  "Venus Eagle B": {
+    "ailments": "nn-nn--",
+    "area": "Thebel 5",
+    "exp": 40,
+    "gem": "-",
+    "lvl": 5,
+    "race": "Empress P",
+    "resists": "--wd--nnn-",
+    "skills": ["Slash Attack"],
+    "stats": [150, 100, 8, 5, 12, 12, 5]
+  },
   "Vicious Raven": {
     "area": "Arqa I 26-39",
+    "exp": 71,
     "gem": "Aquamarine",
     "lvl": 18,
     "race": "Hermit",
@@ -1261,6 +1705,7 @@
   },
   "Visceral Maya": {
     "area": "Tziah II 140-163",
+    "exp": 420,
     "gem": "Garnet",
     "lvl": 47,
     "race": "Strength",
@@ -1269,7 +1714,9 @@
     "stats": [288, 141, 36, 19, 34, 23, 36]
   },
   "Void Giant": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 2400,
     "gem": "-",
     "lvl": 98,
     "race": "Justice",
@@ -1278,16 +1725,20 @@
     "stats": [484, 237, 90, 76, 72, 28, 35]
   },
   "Wealth Hand": {
+    "ailments": "nnnnnn-",
     "area": "Thebel 2-16",
-    "gem": "-",
+    "exp": 0,
+    "gem": "Wealth Coin",
     "lvl": 1,
     "race": "Magician",
-    "resists": "----------",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
     "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "White Sigil": {
+    "ailments": "SSSSSS-",
     "area": "Monad Depths 991-999",
+    "exp": 1875,
     "gem": "-",
     "lvl": 92,
     "race": "Hierophant",
@@ -1297,6 +1748,7 @@
   },
   "Wicked Turret": {
     "area": "Adamah 236-243",
+    "exp": 1473,
     "gem": "Sapphire",
     "lvl": 75,
     "race": "Chariot",
@@ -1305,7 +1757,9 @@
     "stats": [405, 172, 85, 25, 71, 23, 28]
   },
   "Wild Beast": {
+    "ailmods": [200, 200, 200, 200, 200, 200, 0],
     "area": "Arqa I 17-24",
+    "exp": 54,
     "gem": "Onyx",
     "lvl": 10,
     "race": "Strength",
@@ -1315,6 +1769,7 @@
   },
   "Wild Drive": {
     "area": "Yabbashah I 65-89",
+    "exp": 343,
     "gem": "Turquoise",
     "lvl": 34,
     "race": "Chariot",
@@ -1324,6 +1779,7 @@
   },
   "Wondrous Magus": {
     "area": "Tziah II 151-163",
+    "exp": 700,
     "gem": "Onyx",
     "lvl": 52,
     "race": "Magician",
@@ -1331,8 +1787,20 @@
     "skills": ["Strike Attack", "Bufula", "Mabufula", "Bufudyne", "Matarukaja", "Mahama", "Ice Boost"],
     "stats": [290, 165, 33, 57, 25, 20, 28]
   },
+  "World Balance": {
+    "ailments": "nnnnnn-",
+    "area": "Adamah 236",
+    "exp": 14176,
+    "gem": "-",
+    "lvl": 72,
+    "race": "Justice P",
+    "resists": "SSS----nn-",
+    "skills": ["Pierce Attack", "Megidola", "Agidyne", "Bufudyne", "Ziodyne", "Garudyne", "Sharp Student", "Mamudoon", "Spirit Drain"],
+    "stats": [3600, 500, 30, 75, 42, 65, 42]
+  },
   "Wrathful Book": {
     "area": "Adamah 237-261",
+    "exp": 680,
     "gem": "Emerald",
     "lvl": 72,
     "race": "Priestess",
@@ -1342,6 +1810,7 @@
   },
   "Writhing Tiara": {
     "area": "Tziah I 123-138",
+    "exp": 354,
     "gem": "Aquamarine",
     "lvl": 42,
     "race": "Priestess",
