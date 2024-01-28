@@ -1,22 +1,28 @@
 {
   "Acheron Seeker B": {
+    "ailments": "NNNNNN",
     "area": "Empyrean 9",
+    "exp": 0,
     "lvl": 70,
     "race": "Hermit",
-    "resists": "ssswrwrnn-",
+    "resists": "---wrwrnn-",
+    "resmods": [25, 25, 25, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Garudyne", "Magarudyne", "Hamaon", "Mudoon", "Megidola", "Tentarafoo", "Evil Smile", "Mind Charge", "Hama Boost", "Mudo Boost", "Evade Fire", "Evade Elec"],
-    "stats": [2000, 0, 37, 73, 39, 63, 36]
+    "stats": [2000, 100, 37, 73, 39, 65, 36]
   },
   "Adamant Beetle": {
     "area": "Ptolomea 1",
+    "exp": 3000,
     "lvl": 50,
     "race": "Emperor",
     "resists": "s-n--w----",
-    "skills": ["Pierce Attack", "Heat Wave", "Power Charge", "Rakukaja"],
+    "skills": ["Pierce Attack", "Heat Wave", "Rakukaja", "Power Charge"],
     "stats": [322, 158, 41, 26, 39, 26, 25]
   },
   "Affection Relic": {
+    "ailments": "SSSSSS",
     "area": "Antenora 1B",
+    "exp": 1080,
     "lvl": 49,
     "race": "Empress",
     "resists": "--d----nn-",
@@ -25,6 +31,7 @@
   },
   "Almighty Hand": {
     "area": "Ptolomea 2",
+    "exp": 681,
     "lvl": 53,
     "race": "Magician",
     "resists": "----d--nw-",
@@ -33,6 +40,7 @@
   },
   "Amenti Raven": {
     "area": "Empyrean 1",
+    "exp": 1096,
     "lvl": 62,
     "race": "Hermit",
     "resists": "---r-ws---",
@@ -40,7 +48,9 @@
     "stats": [368, 181, 28, 37, 29, 63, 36]
   },
   "Amorous Snake": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1",
+    "exp": 1311,
     "lvl": 63,
     "race": "Lovers",
     "resists": "sssdw--rw-",
@@ -48,23 +58,28 @@
     "stats": [372, 183, 42, 53, 31, 29, 41]
   },
   "Angry Table": {
+    "ailments": "---T--",
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 59,
     "race": "Magician",
     "resists": "w---n-w---",
-    "skills": ["Strike Attack", "Agidyne", "Bewilder", "Bufudyne", "Makarakarn"],
+    "skills": ["Strike Attack", "Agidyne", "Bufudyne", "Bewilder", "Makarakarn"],
     "stats": [339, 193, 32, 31, 40, 42, 39]
   },
   "Apostate Tower": {
     "area": "Ptolomea 1",
+    "exp": 852,
     "lvl": 51,
     "race": "Hierophant",
-    "resists": "---wrd----",
-    "skills": ["Pierce Attack", "Mazionga", "Poison Mist", "Zionga"],
+    "resists": "---wsd----",
+    "skills": ["Pierce Attack", "Zionga", "Mazionga", "Poison Mist"],
     "stats": [326, 160, 32, 41, 27, 31, 29]
   },
   "Arcane Turret": {
+    "ailmods": [0, 0, 0, 150, 0, 0],
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 43,
     "race": "Chariot",
     "resists": "-nn---n---",
@@ -73,6 +88,7 @@
   },
   "Ardent Dancer": {
     "area": "Ptolomea 1",
+    "exp": 1020,
     "lvl": 50,
     "race": "Lovers",
     "resists": "-s------w-",
@@ -80,7 +96,9 @@
     "stats": [322, 158, 34, 34, 28, 26, 35]
   },
   "Avenger Knight": {
+    "ailments": "NN--N-",
     "area": "Cocytus 1B",
+    "exp": 2000,
     "lvl": 35,
     "race": "Emperor",
     "resists": "--r--d-nr-",
@@ -89,22 +107,27 @@
   },
   "Battle Wheel": {
     "area": "Empyrean 1",
+    "exp": 1370,
     "lvl": 64,
     "race": "Chariot",
     "resists": "-------n--",
     "skills": ["Strike Attack", "Vicious Strike", "God's Hand", "Marakunda", "Power Charge", "Eerie Sound"],
-    "stats": [413, 175, 52, 39, 45, 41, 32]
+    "stats": [413, 175, 52, 29, 45, 41, 32]
   },
   "Berserk Turret": {
+    "ailments": "SSSSSS",
     "area": "Antenora 2B",
+    "exp": 781,
     "lvl": 52,
     "race": "Chariot",
-    "resists": "nnndswsnn-",
+    "resists": "nnndSwSnn-",
+    "resmods": [0, 0, 0, 0, 0, 50, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Agidyne", "Heat Wave"],
     "stats": [430, 162, 25, 21, 46, 47, 19]
   },
   "Bestial Wheel": {
     "area": "Ptolomea 2",
+    "exp": 3406,
     "lvl": 57,
     "race": "Chariot",
     "resists": "s-s--ww---",
@@ -113,6 +136,7 @@
   },
   "Bigoted Maya": {
     "area": "Caina 1",
+    "exp": 649,
     "lvl": 36,
     "race": "Justice",
     "resists": "---w-s----",
@@ -121,6 +145,7 @@
   },
   "Black Raven": {
     "area": "Antenora 1",
+    "exp": 529,
     "lvl": 43,
     "race": "Hermit",
     "resists": "---dw-s---",
@@ -128,7 +153,9 @@
     "stats": [292, 144, 28, 26, 25, 33, 24]
   },
   "Blue Sigil": {
+    "ailments": "NN-N-N",
     "area": "Cocytus 2",
+    "exp": 1933,
     "lvl": 38,
     "race": "Hierophant",
     "resists": "-w--d-d-r-",
@@ -136,23 +163,29 @@
     "stats": [872, 246, 24, 32, 27, 26, 18]
   },
   "Brave Wheel B": {
+    "ailments": "nnnnnn",
     "area": "Antenora 10",
+    "exp": 0,
     "lvl": 47,
     "race": "Chariot",
-    "resists": "srsdw--nn-",
+    "resists": "SrSdw--nn-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Fatal End", "Agilao", "Maragion", "Mind Charge", "Matarunda", "Fire Break", "Elec Break", "Wind Break", "Fire Amp", "Evade Ice"],
-    "stats": [1500, 0, 38, 28, 35, 26, 22]
+    "stats": [1500, 100, 38, 28, 35, 26, 22]
   },
   "Brilliant Cyclops B": {
+    "ailments": "NNNNNN",
     "area": "Cocytus 9",
+    "exp": 0,
     "lvl": 37,
     "race": "Hanged",
-    "resists": "s---dddnn-",
+    "resists": "S---dddnn-",
     "skills": ["Slash Attack", "Kill Rush", "Bufula", "Mabufula", "Bufudyne", "Ice Amp", "Sharp Student"],
-    "stats": [1200, 0, 41, 24, 30, 24, 26]
+    "stats": [1200, 125, 41, 24, 30, 24, 26]
   },
   "Bronze Dice": {
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 39,
     "race": "Fortune",
     "resists": "-n-w------",
@@ -160,23 +193,28 @@
     "stats": [301, 128, 30, 17, 27, 21, 29]
   },
   "Burning Beetle": {
+    "ailments": "SSSSSS",
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 44,
     "race": "Emperor",
     "resists": "-rrdw--nn-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Pierce Attack", "Agidyne", "Maragion", "Mind Charge"],
     "stats": [396, 146, 34, 24, 35, 30, 20]
   },
   "Carnal Snake": {
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 62,
     "race": "Lovers",
     "resists": "----w-n---",
-    "skills": ["Pierce Attack", "Hamaon", "Mediarama", "Poison Arrow", "Spirit Drain"],
+    "skills": ["Pierce Attack", "Hamaon", "Poison Arrow", "Spirit Drain", "Mediarama"],
     "stats": [368, 181, 42, 52, 31, 28, 40]
   },
   "Champion Knight": {
     "area": "Caina 1",
+    "exp": 649,
     "lvl": 39,
     "race": "Emperor",
     "resists": "ssr--drwr-",
@@ -184,15 +222,19 @@
     "stats": [301, 128, 29, 29, 28, 22, 16]
   },
   "Change Relic": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 1",
-    "lvl": 67,
+    "exp": 6553,
+    "lvl": 68,
     "race": "Empress",
     "resists": "------nnn-",
-    "skills": ["Pierce Attack", "Myriad Arrows", "Garudyne", "Magarudyne", "Mind Charge", "Diarahan"],
+    "skills": ["Pierce Attack", "Garudyne", "Magarudyne", "Myriad Arrows", "Diarahan", "Mind Charge"],
     "stats": [1390, 191, 38, 42, 53, 38, 40]
   },
   "Chaos Cyclops": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 2B",
+    "exp": 2184,
     "lvl": 75,
     "race": "Hanged",
     "resists": "---ddddnn-",
@@ -200,15 +242,18 @@
     "stats": [1500, 600, 53, 91, 56, 42, 31]
   },
   "Conceited Maya B": {
+    "ailments": "nnnnnn",
     "area": "Judecca 17",
+    "exp": 0,
     "lvl": 63,
     "race": "Empress",
     "resists": "ddd----nn-",
     "skills": ["Slash Attack", "Cruel Attack", "Agi", "Maragion", "Bufu", "Mabufula", "Zio", "Mazionga", "Garu", "Magarula", "Matarunda", "Marakunda", "Masukunda", "Matarukaja", "Marakukaja", "Masukukaja"],
-    "stats": [2000, 0, 39, 39, 57, 54, 24]
+    "stats": [2000, 100, 39, 39, 57, 54, 24]
   },
   "Constancy Relic": {
     "area": "Caina 1",
+    "exp": 649,
     "lvl": 38,
     "race": "Empress",
     "resists": "---w--n---",
@@ -217,14 +262,16 @@
   },
   "Conviction Sword": {
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 40,
     "race": "Justice",
-    "resists": "r-s--dw-s-",
+    "resists": "r-s--dw-S-",
     "skills": ["Slash Attack", "Zionga", "Mazionga", "Poison Mist", "Poison Boost"],
     "stats": [279, 137, 22, 41, 20, 18, 25]
   },
   "Corrupt Tower": {
     "area": "Malebolge 1",
+    "exp": 450,
     "lvl": 26,
     "race": "Hierophant",
     "resists": "s-s--sdw--",
@@ -232,23 +279,27 @@
     "stats": [222, 116, 13, 22, 18, 17, 12]
   },
   "Cowardly Maya B": {
+    "ailments": "NNNNNN",
     "area": "Ptolomea 8",
-    "lvl": 49,
+    "exp": 0,
+    "lvl": 55,
     "race": "Magician",
-    "resists": "ssswdssnns",
+    "resists": "SSSwdSSNNS",
     "skills": ["Slash Attack", "Twin Shot", "Bufula", "Evil Smile", "Ghastly Wail", "Rakunda", "Dekaja", "Patra", "Re Patra", "Ice Amp", "Dodge Fire", "Sharp Student"],
-    "stats": [1000, 0, 34, 29, 33, 33, 33]
+    "stats": [1000, 100, 34, 29, 33, 33, 33]
   },
   "Crazy Twins": {
     "area": "Empyrean 2",
+    "exp": 1638,
     "lvl": 67,
     "race": "Hierophant",
     "resists": "---w-r-nw-",
-    "skills": ["Strike Attack", "Mind Charge", "Gigantic Fist", "Maziodyne", "Ziodyne"],
+    "skills": ["Strike Attack", "Gigantic Fist", "Maziodyne", "Mind Charge", "Ziodyne"],
     "stats": [367, 209, 39, 50, 40, 39, 40]
   },
   "Creation Relic": {
     "area": "Malebolge 2",
+    "exp": 500,
     "lvl": 31,
     "race": "Empress",
     "resists": "-r-n--rnw-",
@@ -256,15 +307,19 @@
     "stats": [235, 108, 17, 24, 21, 10, 19]
   },
   "Crying Table B": {
+    "ailments": "NN--NN",
+    "ailmods": [0, 0, 200, 200, 0, 0],
     "area": "Ptolomea 8",
-    "lvl": 48,
+    "exp": 0,
+    "lvl": 55,
     "race": "Magician",
     "resists": "-d-dwr-nn-",
     "skills": ["Strike Attack", "Agidyne", "Maragion", "Life Drain", "Spirit Drain", "Makarakarn", "Evil Smile", "Fire Amp", "Dodge Ice"],
-    "stats": [1300, 0, 35, 38, 34, 33, 30]
+    "stats": [1300, 100, 35, 38, 34, 33, 30]
   },
   "Curse Dice": {
     "area": "Cocytus 1",
+    "exp": 644,
     "lvl": 33,
     "race": "Fortune",
     "resists": "sss---w-n-",
@@ -273,6 +328,7 @@
   },
   "Dancing Hand": {
     "area": "Cocytus 2",
+    "exp": 644,
     "lvl": 35,
     "race": "Magician",
     "resists": "---wn-s---",
@@ -281,14 +337,16 @@
   },
   "Daring Gigas": {
     "area": "Judecca 1",
+    "exp": 1370,
     "lvl": 59,
     "race": "Strength",
     "resists": "sss---w---",
-    "skills": ["Strike Attack", "Gigantic Fist", "Makarakarn", "Matarukaja", "Sexy Dance"],
+    "skills": ["Strike Attack", "Gigantic Fist", "Matarukaja", "Sexy Dance", "Makarakarn"],
     "stats": [393, 166, 39, 32, 46, 35, 32]
   },
   "Dark Eagle": {
     "area": "Antenora 2",
+    "exp": 881,
     "lvl": 47,
     "race": "Empress",
     "resists": "-----wn---",
@@ -296,15 +354,18 @@
     "stats": [309, 152, 31, 27, 26, 38, 26]
   },
   "Death Castle B": {
+    "ailments": "nn-nn-",
     "area": "Caina 7",
+    "exp": 0,
     "lvl": 38,
     "race": "Emperor",
     "resists": "---dd-nnn-",
     "skills": ["Strike Attack", "Zionga", "Mazionga", "Pulinpa", "Tentarafoo", "Masukukaja", "Mediarama", "Patra", "Re Patra", "Fire Break", "Panic Boost"],
-    "stats": [1000, 0, 31, 27, 36, 38, 26]
+    "stats": [1000, 100, 31, 27, 26, 38, 26]
   },
   "Death Dice": {
     "area": "Antenora 2",
+    "exp": 881,
     "lvl": 49,
     "race": "Fortune",
     "resists": "---nw-rss-",
@@ -313,6 +374,7 @@
   },
   "Death Seeker": {
     "area": "Antenora 2",
+    "exp": 881,
     "lvl": 48,
     "race": "Hermit",
     "resists": "---n---wr-",
@@ -321,6 +383,7 @@
   },
   "Death Twins": {
     "area": "Ptolomea 1",
+    "exp": 1050,
     "lvl": 49,
     "race": "Hierophant",
     "resists": "-w---d-r--",
@@ -329,6 +392,7 @@
   },
   "Desirous Maya": {
     "area": "Antenora 2",
+    "exp": 661,
     "lvl": 46,
     "race": "Hermit",
     "resists": "---wd--nn-",
@@ -337,30 +401,36 @@
   },
   "Devious Maya": {
     "area": "Judecca 2",
+    "exp": 980,
     "lvl": 64,
     "race": "Hanged",
     "resists": "ww--dw----",
-    "skills": ["Slash Attack", "Bufudyne", "Dodge Slash", "Dodge Strike", "Life Drain", "Mediarama", "Spirit Drain", "Tentarafoo"],
+    "resmods": [0, 0, 0, 0, 0, 100, 0, 0, 0, 0],
+    "skills": ["Slash Attack", "Bufudyne", "Tentarafoo", "Mediarama", "Life Drain", "Spirit Drain", "Dodge Slash", "Dodge Strike"],
     "stats": [375, 190, 47, 50, 42, 36, 24]
   },
   "Devoted Cupid": {
     "area": "Ptolomea 1",
+    "exp": 681,
     "lvl": 49,
     "race": "Lovers",
     "resists": "----w-n---",
-    "skills": ["Pierce Attack", "Holy Arrow", "Marakunda", "Pulinpa", "Re Patra"],
+    "skills": ["Pierce Attack", "Holy Arrow", "Pulinpa", "Marakunda", "Re Patra"],
     "stats": [318, 156, 28, 33, 28, 34, 31]
   },
   "Divine Mother": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 2",
+    "exp": 1638,
     "lvl": 68,
     "race": "Empress",
     "resists": "----wn-rw-",
-    "skills": ["Strike Attack", "Ghastly Wail", "Infuriate", "Mahama", "Mahamaon", "Matarunda"],
+    "skills": ["Strike Attack", "Mahama", "Mahamaon", "Infuriate", "Matarunda", "Ghastly Wail"],
     "stats": [390, 191, 47, 54, 40, 33, 37]
   },
   "Dogmatic Tower": {
     "area": "Cocytus 2",
+    "exp": 644,
     "lvl": 37,
     "race": "Hierophant",
     "resists": "s--n-nwn--",
@@ -369,22 +439,28 @@
   },
   "Doom Sword": {
     "area": "Empyrean 2",
+    "exp": 1638,
     "lvl": 68,
     "race": "Justice",
     "resists": "s---wr----",
-    "skills": ["Slash Attack", "Masukunda", "Mazionga", "Spirit Drain", "Tempest Slash"],
+    "skills": ["Slash Attack", "Maziodyne", "Tempest Slash", "Masukunda", "Spirit Drain"],
     "stats": [390, 191, 57, 39, 35, 34, 46]
   },
   "El Dorado Beast B": {
+    "ailments": "N---N-",
+    "ailmods": [0, 0, 0, 150, 0, 0],
     "area": "Caina 7",
+    "exp": 0,
     "lvl": 40,
     "race": "Strength",
     "resists": "---nw--nn-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Kill Rush", "Swift Strike", "Agilao", "Dodge Ice"],
-    "stats": [1350, 0, 28, 17, 27, 21, 29]
+    "stats": [1350, 100, 28, 17, 27, 21, 29]
   },
   "Elegant Mother": {
     "area": "Cocytus 1",
+    "exp": 1833,
     "lvl": 33,
     "race": "Empress",
     "resists": "--d-ssn-w-",
@@ -393,62 +469,75 @@
   },
   "Emperor Beetle": {
     "area": "Empyrean 2",
+    "exp": 1638,
     "lvl": 70,
     "race": "Emperor",
     "resists": "nwn-------",
-    "skills": ["Pierce Attack", "Akasha Arts", "Mabufudyne", "Poison Mist", "Ziodyne"],
+    "skills": ["Pierce Attack", "Ziodyne", "Akasha Arts", "Poison Mist", "Marakunda"],
     "stats": [437, 185, 51, 37, 50, 40, 39]
   },
   "Enslaved Beast": {
+    "ailments": "N---N-",
+    "ailmods": [0, 0, 0, 175, 0, 0],
     "area": "Antenora 1",
+    "exp": 661,
     "lvl": 40,
     "race": "Strength",
     "resists": "-d-nw-----",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Swift Strike", "Maragion", "Tarukaja", "Dodge Ice"],
     "stats": [340, 144, 39, 26, 35, 28, 20]
   },
   "Eternal Eagle": {
     "area": "Empyrean 2",
+    "exp": 1538,
     "lvl": 69,
     "race": "Empress",
     "resists": "-----ddrw-",
-    "skills": ["Slash Attack", "Garudyne", "Magarudyne", "Magarula", "Masukukaja"],
+    "skills": ["Slash Attack", "Garudyne", "Magarula", "Magarudyne", "Masukukaja"],
     "stats": [393, 193, 42, 39, 38, 55, 40]
   },
   "Eternal Sand": {
     "area": "Empyrean 2",
+    "exp": 2184,
     "lvl": 70,
     "race": "Fortune",
     "resists": "ww-nnnd---",
-    "skills": ["Slash Attack", "Eerie Sound", "Garudyne", "Magarudyne", "Masukunda", "Tentarafoo", "Wind Break"],
+    "skills": ["Slash Attack", "Garudyne", "Magarudyne", "Eerie Sound", "Tentarafoo", "Masukunda", "Wind Break"],
     "stats": [397, 195, 38, 62, 46, 37, 34]
   },
   "Fanatic Tower": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 1",
+    "exp": 6553,
     "lvl": 67,
     "race": "Hierophant",
-    "resists": "sWsrrrWnn-",
-    "skills": ["Pierce Attack", "Maziodyne", "Mind Charge", "Evil Smile", "Ghastly Wail", "Elec Break", "Fear Boost"],
+    "resists": "S-Srrr-nn-",
+    "resmods": [0, 150, 0, 0, 0, 0, 150, 0, 0, 0],
+    "skills": ["Pierce Attack", "Maziodyne", "Evil Smile", "Ghastly Wail", "Mind Charge", "Elec Break", "Fear Boost"],
     "stats": [1386, 190, 44, 45, 45, 37, 37]
   },
   "Fate Seeker": {
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 60,
     "race": "Hermit",
     "resists": "--wnnnnwr-",
-    "skills": ["Strike Attack", "Mazionga", "Mudoon", "Poisma", "Pulinpa", "Stagnant Air"],
+    "skills": ["Strike Attack", "Mazionga", "Mudoon", "Pulinpa", "Poisma", "Stagnant Air"],
     "stats": [361, 171, 25, 51, 27, 61, 23]
   },
   "Fierce Cyclops": {
     "area": "Judecca 1",
+    "exp": 1827,
     "lvl": 57,
     "race": "Hanged",
     "resists": "d--d------",
-    "skills": ["Slash Attack", "Last Resort", "Magarudyne", "Mazionga", "Myriad Arrows", "Power Charge"],
+    "skills": ["Slash Attack", "Mazionga", "Magarudyne", "Myriad Arrows", "Power Charge", "Last Resort"],
     "stats": [349, 172, 53, 35, 44, 24, 22]
   },
   "Flowing Sand": {
     "area": "Antenora 1",
+    "exp": 881,
     "lvl": 46,
     "race": "Fortune",
     "resists": "wwwrrrr---",
@@ -457,6 +546,7 @@
   },
   "Furious Gigas": {
     "area": "Caina 1",
+    "exp": 649,
     "lvl": 37,
     "race": "Strength",
     "resists": "-r-swsnw--",
@@ -464,23 +554,27 @@
     "stats": [265, 130, 24, 17, 32, 24, 21]
   },
   "Glorious Hand": {
+    "ailments": "nnnnnn",
     "area": "Empyrean A",
-    "lvl": 0,
+    "exp": 0,
+    "lvl": 1,
     "race": "Magician",
-    "resists": "---nnnnnn-",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
-    "stats": [0, 0, 1, 1, 1, 99, 99]
+    "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Golden Beetle": {
     "area": "Judecca 2",
+    "exp": 1370,
     "lvl": 60,
     "race": "Emperor",
     "resists": "----n-w---",
-    "skills": ["Pierce Attack", "Rakukaja", "Tarukaja", "Vicious Strike", "Ziodyne"],
+    "skills": ["Pierce Attack", "Ziodyne", "Vicious Strike", "Tarukaja", "Rakukaja"],
     "stats": [397, 168, 32, 40, 54, 32, 29]
   },
   "Gracious Cupid": {
     "area": "Empyrean 1",
+    "exp": 1311,
     "lvl": 62,
     "race": "Lovers",
     "resists": "-w--n-----",
@@ -488,7 +582,9 @@
     "stats": [350, 199, 33, 44, 32, 44, 40]
   },
   "Grand Magus": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1",
+    "exp": 6553,
     "lvl": 65,
     "race": "Magician",
     "resists": "-n-wr--rr-",
@@ -497,6 +593,7 @@
   },
   "Grave Beetle": {
     "area": "Caina 2",
+    "exp": 1946,
     "lvl": 44,
     "race": "Emperor",
     "resists": "-----sw---",
@@ -505,14 +602,16 @@
   },
   "Green Sigil": {
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 63,
     "race": "Hierophant",
     "resists": "---w-d-r--",
-    "skills": ["Slash Attack", "Mazionga", "Megidola", "Sexy Dance", "Ziodyne"],
+    "skills": ["Slash Attack", "Ziodyne", "Mazionga", "Megidola", "Sexy Dance"],
     "stats": [353, 201, 38, 54, 42, 34, 28]
   },
   "Grieving Tiara": {
     "area": "Antenora 2",
+    "exp": 661,
     "lvl": 46,
     "race": "Priestess",
     "resists": "---nw-----",
@@ -521,14 +620,17 @@
   },
   "Growth Relic": {
     "area": "Judecca 1",
+    "exp": 1827,
     "lvl": 58,
     "race": "Empress",
     "resists": "-w----d---",
-    "skills": ["Pierce Attack", "Diarama", "Garudyne", "Magarudyne"],
+    "skills": ["Pierce Attack", "Garudyne", "Magarudyne", "Diarama"],
     "stats": [353, 174, 34, 44, 45, 28, 30]
   },
   "Grudge Tower": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1B",
+    "exp": 2184,
     "lvl": 70,
     "race": "Hierophant",
     "resists": "s-sd-r-nr-",
@@ -537,14 +639,17 @@
   },
   "Hakurou Musha": {
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 61,
     "race": "Strength",
     "resists": "-------ww-",
-    "skills": ["Slash Attack", "Power Charge", "Tempest Slash"],
+    "skills": ["Slash Attack", "Tempest Slash", "Power Charge"],
     "stats": [400, 170, 47, 26, 42, 47, 28]
   },
   "Hallowed Turret": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1",
+    "exp": 1827,
     "lvl": 68,
     "race": "Chariot",
     "resists": "rrr--w-ss-",
@@ -552,31 +657,36 @@
     "stats": [429, 182, 70, 20, 69, 24, 28]
   },
   "Harem Dancer B": {
+    "ailments": "n-N-nn",
     "area": "Caina 7",
+    "exp": 0,
     "lvl": 44,
     "race": "Lovers",
     "resists": "r-n-d-dnn-",
     "skills": ["Pierce Attack", "Heat Wave", "Maragion", "Agidyne", "Marin Karin", "Poison Mist", "Dodge Fire", "Poison Boost", "Charm Boost", "Sharp Student"],
-    "stats": [1700, 0, 24, 38, 23, 26, 25]
+    "stats": [1700, 179, 24, 38, 23, 26, 25]
   },
   "Harmony Giant": {
     "area": "Judecca 1",
+    "exp": 1827,
     "lvl": 59,
     "race": "Justice",
     "resists": "-nr-wrr---",
-    "skills": ["Slash Attack", "Bufudyne", "Megidola", "Tempest Slash"],
+    "skills": ["Slash Attack", "Mabufudyne", "Megidola", "Tempest Slash"],
     "stats": [357, 175, 54, 48, 44, 16, 22]
   },
   "Haughty Maya": {
     "area": "Judecca 1",
+    "exp": 1370,
     "lvl": 55,
     "race": "Emperor",
     "resists": "-----sw---",
-    "skills": ["Slash Attack", "Bufudyne", "Zionga"],
+    "skills": ["Slash Attack", "Zionga", "Bufudyne"],
     "stats": [342, 168, 42, 30, 39, 33, 28]
   },
   "Heat Balance": {
     "area": "Cocytus 2",
+    "exp": 483,
     "lvl": 36,
     "race": "Justice",
     "resists": "s--ddww---",
@@ -585,6 +695,7 @@
   },
   "Hell Knight": {
     "area": "Antenora 1",
+    "exp": 881,
     "lvl": 45,
     "race": "Emperor",
     "resists": "n-n--rw---",
@@ -592,15 +703,19 @@
     "stats": [301, 148, 37, 35, 30, 24, 16]
   },
   "Ice Raven B": {
+    "ailments": "NNNNNN",
     "area": "Antenora 10",
+    "exp": 0,
     "lvl": 49,
     "race": "Hermit",
-    "resists": "ssrwd-snn-",
+    "resists": "SSrwd-snn-",
+    "resmods": [0, 0, 0, 100, 0, 0, 0, 0, 0, 0],
     "skills": ["Pierce Attack", "Gale Slash", "Bufula", "Mabufula", "Tentarafoo", "Power Charge", "Masukunda", "Fire Break", "Ice Break", "Elec Break", "Ice Amp", "Panic Boost", "Dodge Fire"],
-    "stats": [1280, 0, 28, 30, 29, 43, 26]
+    "stats": [1280, 100, 28, 30, 29, 43, 26]
   },
   "Ill-fated Maya": {
     "area": "Caina 2",
+    "exp": 487,
     "lvl": 38,
     "race": "Chariot",
     "resists": "-d----w---",
@@ -608,23 +723,29 @@
     "stats": [269, 132, 31, 16, 32, 19, 23]
   },
   "Immoral Snake": {
+    "ailments": "T-----",
     "area": "Ptolomea 1",
+    "exp": 1045,
     "lvl": 51,
     "race": "Lovers",
     "resists": "--w---nww-",
-    "skills": ["Pierce Attack", "Agidyne", "Life Drain", "Megidola", "Spirit Drain"],
+    "skills": ["Pierce Attack", "Agidyne", "Life Drain", "Spirit Drain", "Mediarama"],
     "stats": [326, 160, 38, 45, 24, 20, 33]
   },
   "Immortal Gigas B": {
+    "ailmods": [200, 0, 0, 0, 0, 0],
     "area": "Malebolge 8",
+    "exp": 0,
     "lvl": 30,
     "race": "Strength",
-    "resists": "s-sr-nwnn-",
+    "resists": "---r-nwnn-",
+    "resmods": [25, 0, 25, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Strike Attack", "Fatal End", "Gale Slash", "Dodge Wind"],
-    "stats": [800, 0, 29, 9, 24, 21, 9]
+    "stats": [800, 300, 29, 9, 24, 21, 9]
   },
   "Imprudent Maya": {
     "area": "Cocytus 2B",
+    "exp": 700,
     "lvl": 34,
     "race": "Fortune",
     "resists": "---n------",
@@ -633,30 +754,37 @@
   },
   "Indolent Maya": {
     "area": "Ptolomea 2",
+    "exp": 852,
     "lvl": 52,
     "race": "Hierophant",
-    "resists": "--n--s----",
-    "skills": ["Slash Attack", "Marakunda", "Masukunda", "Matarunda"],
+    "resists": "--w--s----",
+    "skills": ["Slash Attack", "Matarunda", "Marakunda", "Masukunda"],
     "stats": [330, 162, 31, 39, 32, 30, 31]
   },
   "Indolent Maya A": {
+    "ailments": "----N-",
+    "ailmods": [15, 15, 15, 15, 0, 15],
     "area": "Empyrean 2B",
+    "exp": 5184,
     "lvl": 99,
     "race": "Hierophant",
-    "resists": "sssssssnnW",
+    "resists": "sssssssnn-",
+    "resmods": [15, 15, 15, 15, 15, 15, 15, 0, 0, 150],
     "skills": ["Slash Attack", "Black Viper", "Sharp Student"],
     "stats": [515, 400, 92, 99, 99, 71, 76]
   },
   "Infinite Sand": {
     "area": "Judecca 1",
+    "exp": 1270,
     "lvl": 55,
     "race": "Fortune",
     "resists": "s-dnw-r---",
-    "skills": ["Slash Attack", "Deathbound", "Distress Boost", "Eerie Sound", "Garudyne", "Masukukaja"],
+    "skills": ["Slash Attack", "Garudyne", "Masukukaja", "Deathbound", "Eerie Sound", "Distress Boost"],
     "stats": [342, 168, 27, 51, 35, 26, 33]
   },
   "Insidious Maya": {
     "area": "Malebolge 1",
+    "exp": 338,
     "lvl": 26,
     "race": "Lovers",
     "resists": "---rw-----",
@@ -664,23 +792,29 @@
     "stats": [197, 112, 7, 20, 16, 16, 20]
   },
   "Intrepid Knight": {
+    "ailments": "SnSSn-",
     "area": "Empyrean 1",
+    "exp": 2553,
     "lvl": 68,
     "race": "Emperor",
     "resists": "s-s--wdnn-",
+    "resmods": [50, 0, 50, 0, 0, 100, 0, 0, 0, 0],
     "skills": ["Pierce Attack", "Magarudyne", "Vicious Strike", "Poison Mist", "Power Charge", "Evade Elec"],
     "stats": [990, 291, 51, 49, 45, 39, 37]
   },
   "Iron Dice": {
     "area": "Ptolomea 2",
+    "exp": 1136,
     "lvl": 55,
     "race": "Fortune",
     "resists": "sss--w----",
-    "skills": ["Strike Attack", "Single Shot", "Torrent Shot", "Vicious Strike", "Vile Assault"],
+    "skills": ["Strike Attack", "Single Shot", "Torrent Shot", "Vile Assault", "Vicious Strike"],
     "stats": [376, 160, 43, 19, 36, 31, 43]
   },
   "Jealous Cupid": {
+    "ailments": "T--T--",
     "area": "Caina 1",
+    "exp": 389,
     "lvl": 36,
     "race": "Lovers",
     "resists": "----w-n---",
@@ -688,31 +822,39 @@
     "stats": [260, 127, 20, 25, 21, 25, 24]
   },
   "Jotun of Blood B": {
+    "ailments": "N--NNN",
+    "ailmods": [0, 150, 150, 0, 0, 0],
     "area": "Judecca 17",
+    "exp": 0,
     "lvl": 63,
     "race": "Hanged",
     "resists": "---nnnnnn-",
     "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Ziodyne", "Maziodyne", "Garudyne", "Magarudyne", "Mind Charge", "Megidola"],
-    "stats": [1500, 0, 31, 72, 29, 34, 37]
+    "stats": [1500, 125, 31, 72, 29, 34, 37]
   },
   "Jotun of Evil": {
+    "ailments": "TTTTTT",
     "area": "Ptolomea 1",
+    "exp": 1050,
     "lvl": 50,
     "race": "Hanged",
     "resists": "wwwrrrrrr-",
     "skills": ["Strike Attack", "Bufudyne", "Poison Arrow", "Gigantic Fist", "Last Resort"],
-    "stats": [322, 158, 36, 18, 34, 22, 20]
+    "stats": [322, 158, 33, 48, 36, 21, 19]
   },
   "Jotun of Grief": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 2",
+    "exp": 6553,
     "lvl": 74,
     "race": "Hanged",
     "resists": "dd-ddddnn-",
-    "skills": ["Slash Attack", "God's Hand", "Infuriate", "Mabufudyne", "Stagnant Air"],
+    "skills": ["Slash Attack", "Mabufudyne", "God's Hand", "Infuriate", "Stagnant Air"],
     "stats": [1410, 202, 60, 57, 51, 42, 19]
   },
   "Jotun of Power": {
     "area": "Caina 1",
+    "exp": 1946,
     "lvl": 40,
     "race": "Hanged",
     "resists": "----d--s--",
@@ -720,23 +862,28 @@
     "stats": [779, 137, 46, 20, 38, 14, 9]
   },
   "Judgement Sword B": {
+    "ailments": "NNNNNN",
     "area": "Antenora 10",
+    "exp": 0,
     "lvl": 48,
     "race": "Justice",
-    "resists": "rss--dwnn-",
+    "resists": "rSS--dwnn-",
+    "resmods": [0, 0, 0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Slash Attack", "Mighty Swing", "Zionga", "Mazionga", "Mind Charge", "Marakunda", "Fire Break", "Ice Break", "Elec Break", "Elec Amp", "Evade Wind"],
-    "stats": [1200, 0, 49, 32, 28, 26, 34]
+    "stats": [1200, 100, 49, 32, 28, 26, 34]
   },
   "Jupiter Eagle": {
     "area": "Ptolomea 2",
+    "exp": 1136,
     "lvl": 54,
     "race": "Empress",
     "resists": "-----wd---",
-    "skills": ["Slash Attack", "Garudyne", "Magarula", "Masukunda", "Sukunda"],
+    "skills": ["Slash Attack", "Garudyne", "Magarula", "Sukunda", "Masukunda"],
     "stats": [338, 166, 34, 31, 30, 43, 31]
   },
   "Justice Sword": {
     "area": "Malebolge 1",
+    "exp": 450,
     "lvl": 28,
     "race": "Justice",
     "resists": "n--s-sw---",
@@ -744,15 +891,18 @@
     "stats": [214, 118, 22, 19, 18, 14, 15]
   },
   "Kaiden Musha B": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 19",
+    "exp": 0,
     "lvl": 76,
     "race": "Strength",
     "resists": "-------nn-",
     "skills": ["Slash Attack", "Tempest Slash", "Vorpal Blade", "Mahamaon", "High Counter", "Hama Boost"],
-    "stats": [1800, 0, 47, 49, 57, 57, 34]
+    "stats": [1800, 100, 47, 49, 57, 57, 34]
   },
   "Killer Drive": {
     "area": "Antenora 1",
+    "exp": 881,
     "lvl": 45,
     "race": "Chariot",
     "resists": "-r-----w--",
@@ -761,6 +911,7 @@
   },
   "Killer Twins": {
     "area": "Antenora 1",
+    "exp": 661,
     "lvl": 44,
     "race": "Hierophant",
     "resists": "---w-n----",
@@ -769,6 +920,7 @@
   },
   "Killing Hand": {
     "area": "Antenora 1",
+    "exp": 661,
     "lvl": 43,
     "race": "Magician",
     "resists": "---wn---s-",
@@ -776,7 +928,9 @@
     "stats": [292, 144, 24, 38, 23, 26, 25]
   },
   "King Castle": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1",
+    "exp": 1827,
     "lvl": 65,
     "race": "Emperor",
     "resists": "-r---dwss-",
@@ -785,6 +939,7 @@
   },
   "Laughing Table": {
     "area": "Cocytus 1",
+    "exp": 444,
     "lvl": 32,
     "race": "Magician",
     "resists": "r--wn-----",
@@ -793,6 +948,7 @@
   },
   "Liberating Idol": {
     "area": "Antenora 1",
+    "exp": 881,
     "lvl": 46,
     "race": "Priestess",
     "resists": "---nw-r---",
@@ -801,6 +957,7 @@
   },
   "Light Balance": {
     "area": "Antenora 1",
+    "exp": 661,
     "lvl": 44,
     "race": "Justice",
     "resists": "s----wsnn-",
@@ -808,15 +965,18 @@
     "stats": [296, 146, 26, 36, 25, 26, 26]
   },
   "Loss Giant": {
+    "ailments": "SSSSSS",
     "area": "Judecca 2B",
+    "exp": 1827,
     "lvl": 67,
     "race": "Justice",
-    "resists": "ns----nnn-",
-    "skills": ["Slash Attack", "Blade of Fury", "Power Charge", "Vile Assault"],
+    "resists": "nd----nnn-",
+    "skills": ["Slash Attack", "Blade of Fury", "Vile Assault", "Power Charge"],
     "stats": [486, 190, 46, 47, 52, 27, 36]
   },
   "Lustful Snake": {
     "area": "Judecca 1",
+    "exp": 1827,
     "lvl": 58,
     "race": "Lovers",
     "resists": "----w-d---",
@@ -824,31 +984,38 @@
     "stats": [353, 174, 37, 44, 31, 28, 41]
   },
   "Luxury Hand": {
+    "ailments": "nnnnnn",
     "area": "Judecca A",
-    "lvl": 0,
+    "exp": 0,
+    "lvl": 1,
     "race": "Magician",
-    "resists": "---nnnnnn-",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
-    "stats": [0, 0, 1, 1, 1, 99, 99]
+    "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Mach Wheel": {
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 41,
     "race": "Chariot",
     "resists": "n-ns-nw---",
     "skills": ["Strike Attack", "Twin Shot", "Last Resort", "Dodge Wind"],
-    "stats": [283, 139, 54, 21, 43, 13, 15]
+    "stats": [283, 139, 36, 18, 34, 22, 20]
   },
   "Mad Cyclops": {
+    "ailmods": [75, 75, 75, 75, 75, 75],
     "area": "Empyrean 2B",
+    "exp": 2184,
     "lvl": 73,
     "race": "Hanged",
-    "resists": "sssssssSS-",
+    "resists": "sssssss---",
+    "resmods": [0, 0, 0, 0, 0, 0, 0, 75, 75, 0],
     "skills": ["Slash Attack", "God's Hand", "Primal Force", "Power Charge"],
     "stats": [1700, 600, 79, 65, 63, 73, 34]
   },
   "Magic Hand": {
     "area": "Malebolge 2",
+    "exp": 450,
     "lvl": 28,
     "race": "Magician",
     "resists": "---wn--r--",
@@ -857,6 +1024,7 @@
   },
   "Magical Magus": {
     "area": "Ptolomea 1",
+    "exp": 1136,
     "lvl": 52,
     "race": "Magician",
     "resists": "---wn-----",
@@ -865,6 +1033,7 @@
   },
   "Maniacal Book": {
     "area": "Cocytus 2",
+    "exp": 644,
     "lvl": 35,
     "race": "Priestess",
     "resists": "---d--rnw-",
@@ -872,23 +1041,29 @@
     "stats": [242, 138, 20, 27, 21, 20, 24]
   },
   "Merciless Maya B": {
+    "ailments": "NNNNN-",
     "area": "Caina 14",
+    "exp": 0,
     "lvl": 40,
     "race": "Priestess",
-    "resists": "sssd--wss-",
+    "resists": "SSSd--wNN-",
+    "resmods": [0, 0, 0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Slash Attack", "Agilao", "Virus Breath", "Eerie Sound", "Dodge Wind", "Makarakarn", "Fire Amp"],
-    "stats": [1050, 0, 19, 28, 17, 18, 24]
+    "stats": [1050, 100, 19, 28, 17, 18, 24]
   },
   "Mighty Beast": {
     "area": "Judecca 1",
+    "exp": 1370,
     "lvl": 56,
     "race": "Strength",
     "resists": "-------wr-",
-    "skills": ["Strike Attack", "Gigantic Fist", "Mudoon", "Tarukaja"],
+    "skills": ["Strike Attack", "Mudoon", "Gigantic Fist", "Tarukaja"],
     "stats": [381, 161, 44, 30, 40, 33, 28]
   },
   "Mighty Cyclops": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 2B",
+    "exp": 2184,
     "lvl": 75,
     "race": "Hanged",
     "resists": "ddd----nn-",
@@ -896,15 +1071,19 @@
     "stats": [1800, 600, 66, 64, 60, 35, 36]
   },
   "Mind Dice": {
+    "ailments": "n----n",
     "area": "Ptolomea 2",
+    "exp": 1136,
     "lvl": 55,
     "race": "Fortune",
     "resists": "---ssws---",
-    "skills": ["Slash Attack", "Eerie Sound", "Evil Smile", "Infuriate", "Tentarafoo"],
+    "skills": ["Slash Attack", "Tentarafoo", "Eerie Sound", "Evil Smile", "Infuriate"],
     "stats": [342, 168, 21, 46, 24, 39, 42]
   },
   "Minotaur I": {
+    "ailments": "TTTTTT",
     "area": "Empyrean 2",
+    "exp": 6553,
     "lvl": 70,
     "race": "Hanged",
     "resists": "sssw---rw-",
@@ -913,22 +1092,26 @@
   },
   "Minotaur II": {
     "area": "Judecca 1",
+    "exp": 5408,
     "lvl": 60,
     "race": "Hanged",
     "resists": "sss-n---w-",
-    "skills": ["Pierce Attack", "Deathbound", "Primal Force", "Sukukaja", "Tarukaja"],
+    "skills": ["Pierce Attack", "Deathbound", "Primal Force", "Tarukaja", "Sukukaja"],
     "stats": [1361, 177, 47, 55, 44, 28, 13]
   },
   "Minotaur III": {
+    "ailments": "SSSSSS",
     "area": "Ptolomea 2B",
+    "exp": 1136,
     "lvl": 61,
     "race": "Hanged",
     "resists": "sns-r--rr-",
-    "skills": ["Pierce Attack", "Deathbound", "Life Drain", "Matarunda"],
+    "skills": ["Pierce Attack", "Deathbound", "Matarunda", "Life Drain"],
     "stats": [1400, 100, 94, 85, 53, 23, 24]
   },
   "Minotaur IV": {
     "area": "Antenora 1",
+    "exp": 2643,
     "lvl": 46,
     "race": "Hanged",
     "resists": "---ws-----",
@@ -937,6 +1120,7 @@
   },
   "Muttering Tiara": {
     "area": "Cocytus 1",
+    "exp": 387,
     "lvl": 31,
     "race": "Priestess",
     "resists": "---dw-s---",
@@ -944,47 +1128,61 @@
     "stats": [223, 127, 19, 21, 19, 18, 19]
   },
   "Mythical Gigas": {
+    "ailments": "nn-nn-",
+    "ailmods": [0, 0, 0, 0, 0, 150],
     "area": "Judecca 2",
+    "exp": 5480,
     "lvl": 65,
     "race": "Strength",
-    "resists": "srnd---nn-",
-    "skills": ["Strike Attack", "Akasha Arts", "Maragidyne", "Rakukaja", "Revolution", "Vile Assault"],
+    "resists": "Srnd---nn-",
+    "skills": ["Strike Attack", "Maragidyne", "Akasha Arts", "Vile Assault", "Rakukaja", "Revolution"],
     "stats": [1417, 177, 48, 22, 53, 37, 42]
   },
   "Natural Dancer": {
+    "ailments": "nn-nnn",
     "area": "Empyrean 1",
+    "exp": 2153,
     "lvl": 67,
     "race": "Lovers",
-    "resists": "---s-snnn-",
+    "resists": "------nnn-",
+    "resmods": [0, 0, 0, 10, 0, 10, 0, 0, 0, 0],
     "skills": ["Pierce Attack", "Deathbound", "Myriad Arrows", "Primal Force", "Sexy Dance", "Tentarafoo"],
     "stats": [486, 290, 38, 44, 41, 39, 41]
   },
   "Nemean Beast": {
     "area": "Empyrean 2",
+    "exp": 2184,
     "lvl": 71,
     "race": "Strength",
     "resists": "---w----w-",
-    "skills": ["Strike Attack", "Akasha Arts", "God's Hand", "Power Charge", "Provoke"],
+    "skills": ["Strike Attack", "Akasha Arts", "God's Hand", "Provoke", "Power Charge"],
     "stats": [440, 186, 57, 38, 54, 37, 34]
   },
   "Neo Minotaur B": {
+    "ailments": "nnnnn-",
+    "ailmods": [0, 0, 0, 0, 0, 150],
     "area": "Ptolomea 17",
+    "exp": 0,
     "lvl": 58,
     "race": "Hanged",
-    "resists": "sssnn-dnn-",
+    "resists": "SSSdn-dnn-",
     "skills": ["Pierce Attack", "Vicious Strike", "Akasha Arts", "Magarudyne", "Life Drain", "Spirit Drain", "Revolution", "Marakunda", "Wind Break", "Power Charge", "Mind Charge", "Wind Amp"],
-    "stats": [2500, 0, 64, 65, 43, 23, 34]
+    "stats": [2500, 100, 64, 65, 43, 23, 34]
   },
   "Noble Seeker": {
     "area": "Judecca 1",
+    "exp": 1827,
     "lvl": 56,
     "race": "Hermit",
     "resists": "---r--wrr-",
-    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Mudoon", "Provoke", "Ziodyne"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Ziodyne", "Mudoon", "Provoke"],
     "stats": [346, 169, 20, 55, 22, 58, 20]
   },
   "Obsessed Cupid": {
+    "ailments": "N-----",
+    "ailmods": [0, 0, 0, 200, 0, 0],
     "area": "Cocytus 1",
+    "exp": 483,
     "lvl": 31,
     "race": "Lovers",
     "resists": "----w-sn--",
@@ -992,23 +1190,28 @@
     "stats": [223, 127, 18, 21, 19, 22, 20]
   },
   "Onnen Musha B": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 19",
+    "exp": 0,
     "lvl": 76,
     "race": "Strength",
     "resists": "---ddddnn-",
     "skills": ["Slash Attack", "Tempest Slash", "Poison Arrow", "Mamudoon", "Life Drain", "Power Charge", "Mudo Boost", "Poison Boost"],
-    "stats": [600, 0, 44, 56, 52, 49, 30]
+    "stats": [600, 100, 44, 56, 52, 49, 30]
   },
   "Opulent Hand": {
+    "ailments": "nnnnnn",
     "area": "Ptolomea A",
-    "lvl": 0,
+    "exp": 0,
+    "lvl": 1,
     "race": "Magician",
-    "resists": "---nnnnnn-",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
-    "stats": [0, 0, 1, 1, 1, 99, 99]
+    "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Order Giant": {
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 43,
     "race": "Justice",
     "resists": "sss-wr-nn-",
@@ -1017,14 +1220,17 @@
   },
   "Perpetual Sand": {
     "area": "Ptolomea 2",
+    "exp": 1136,
     "lvl": 56,
     "race": "Fortune",
     "resists": "w-wnnnn---",
-    "skills": ["Slash Attack", "Garudyne", "Heat Wave", "Tentarafoo"],
+    "skills": ["Slash Attack", "Garudyne", "Heat Wave", "Tetrakarn"],
     "stats": [346, 169, 29, 51, 38, 27, 30]
   },
   "Phantom Hero": {
+    "ailments": "SSSSSS",
     "area": "Judecca 1",
+    "exp": 1827,
     "lvl": 64,
     "race": "Hermit",
     "resists": "---d---rr-",
@@ -1032,31 +1238,37 @@
     "stats": [475, 184, 32, 52, 34, 56, 28]
   },
   "Phantom King": {
+    "ailments": "nnn-nn",
     "area": "Empyrean 2",
+    "exp": 6553,
     "lvl": 72,
     "race": "Hermit",
-    "resists": "WSSSSSSrn-",
-    "skills": ["Slash Attack", "Mamudoon", "Maragidyne", "Tentarafoo"],
+    "resists": "-------rn-",
+    "resmods": [125, 75, 75, 75, 75, 75, 75, 0, 0, 0],
+    "skills": ["Slash Attack", "Maragidyne", "Mamudoon", "Tentarafoo"],
     "stats": [1383, 218, 17, 17, 16, 16, 16]
   },
   "Phantom Lord": {
     "area": "Ptolomea 2",
+    "exp": 1136,
     "lvl": 54,
     "race": "Hermit",
     "resists": "---n---wr-",
-    "skills": ["Slash Attack", "Agidyne", "Makarakarn", "Mudoon"],
+    "skills": ["Slash Attack", "Agidyne", "Mudoon", "Makarakarn"],
     "stats": [338, 166, 35, 40, 32, 35, 27]
   },
   "Phantom Mage": {
     "area": "Judecca 2",
+    "exp": 1096,
     "lvl": 62,
     "race": "Hermit",
     "resists": "---s---wn-",
-    "skills": ["Slash Attack", "Agidyne", "Maragion", "Mind Charge", "Mudoon", "Re Patra"],
+    "skills": ["Slash Attack", "Agidyne", "Maragion", "Mudoon", "Mind Charge", "Re Patra"],
     "stats": [368, 201, 39, 44, 38, 37, 35]
   },
   "Phantom Master": {
     "area": "Antenora 2",
+    "exp": 661,
     "lvl": 47,
     "race": "Hermit",
     "resists": "-----rw---",
@@ -1065,6 +1277,7 @@
   },
   "Pistil Mother": {
     "area": "Ptolomea 1",
+    "exp": 3406,
     "lvl": 53,
     "race": "Empress",
     "resists": "----wdr---",
@@ -1073,22 +1286,25 @@
   },
   "Platinum Dice": {
     "area": "Empyrean 2",
+    "exp": 1638,
     "lvl": 69,
     "race": "Fortune",
     "resists": "sssnnwn---",
-    "skills": ["Strike Attack", "Akasha Arts", "Deathbound", "Vorpal Blade"],
+    "skills": ["Strike Attack", "Deathbound", "Vorpal Blade", "Akasha Arts"],
     "stats": [432, 184, 56, 25, 46, 38, 49]
   },
   "Power Castle": {
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 64,
     "race": "Emperor",
     "resists": "---swnn---",
-    "skills": ["Strike Attack", "Agidyne", "Deathbound", "Maragidyne", "Maziodyne", "Ziodyne"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Ziodyne", "Maziodyne", "Deathbound"],
     "stats": [375, 184, 43, 53, 59, 20, 24]
   },
   "Prime Magus": {
     "area": "Antenora 2",
+    "exp": 881,
     "lvl": 48,
     "race": "Magician",
     "resists": "---wd-----",
@@ -1096,47 +1312,61 @@
     "stats": [314, 154, 29, 50, 19, 18, 35]
   },
   "Primitive Idol B": {
+    "ailments": "N-NNN-",
     "area": "Antenora 20",
+    "exp": 0,
     "lvl": 50,
     "race": "Priestess",
-    "resists": "---dnw-nn-",
+    "resists": "---dnw-nr-",
+    "resmods": [0, 0, 0, 0, 0, 100, 0, 0, 0, 0],
     "skills": ["Pierce Attack", "Mabufula", "Bufudyne", "Mabufudyne", "Mind Charge", "Megido", "Hamaon", "Evade Elec"],
-    "stats": [1250, 0, 28, 55, 25, 26, 35]
+    "stats": [1250, 100, 28, 55, 25, 26, 35]
   },
   "Rampage Drive": {
+    "ailments": "nnn-nn",
     "area": "Empyrean 2",
+    "exp": 6553,
     "lvl": 75,
     "race": "Chariot",
-    "resists": "nrnS-W-nn-",
-    "skills": ["Slash Attack", "Megidolaon", "Power Charge", "Tarukaja", "Vorpal Blade"],
+    "resists": "nrn----nn-",
+    "resmods": [0, 0, 0, 75, 0, 150, 0, 0, 0, 0],
+    "skills": ["Slash Attack", "Megidolaon", "Vorpal Blade", "Power Charge", "Tarukaja"],
     "stats": [1454, 193, 59, 41, 50, 39, 43]
   },
   "Rebellious Cyclops B": {
+    "ailments": "NNNNNN",
     "area": "Empyrean 9",
+    "exp": 0,
     "lvl": 70,
     "race": "Hanged",
-    "resists": "----dWdnn-",
+    "resists": "----d-dnn-",
+    "resmods": [0, 0, 0, 0, 0, 125, 0, 0, 0, 0],
     "skills": ["Slash Attack", "Brave Blade", "Vorpal Blade", "God's Hand", "Arrow Rain", "Poison Arrow", "Primal Force", "Power Charge", "High Counter", "Evade Slash", "Evade Strike", "Evade Pierce", "Apt Pupil"],
-    "stats": [3700, 0, 78, 61, 46, 18, 31]
+    "stats": [3700, 100, 78, 61, 46, 18, 31]
   },
   "Reckoning Dice": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 2",
+    "exp": 6553,
     "lvl": 73,
     "race": "Fortune",
-    "resists": "---nnnnnn-",
-    "skills": ["Slash Attack", "Mabufudyne", "Mahamaon", "Maragidyne", "Megidolaon"],
+    "resists": "---nnnnrn-",
+    "skills": ["Slash Attack", "Maragidyne", "Mabufudyne", "Mahamaon", "Megidolaon"],
     "stats": [1387, 219, 45, 45, 45, 45, 45]
   },
   "Red Sigil": {
     "area": "Antenora 2",
+    "exp": 2643,
     "lvl": 50,
     "race": "Hierophant",
     "resists": "---dwd-n--",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Slash Attack", "Agidyne", "Maragion", "Deathbound", "Mind Charge", "Evade Ice"],
     "stats": [822, 158, 31, 42, 34, 26, 24]
   },
   "Regal Mother": {
     "area": "Antenora 2",
+    "exp": 881,
     "lvl": 50,
     "race": "Empress",
     "resists": "----n-dnw-",
@@ -1144,7 +1374,9 @@
     "stats": [322, 158, 37, 41, 30, 22, 27]
   },
   "Royal Dancer": {
+    "ailments": "SSSSSS",
     "area": "Caina 1B",
+    "exp": 649,
     "lvl": 41,
     "race": "Lovers",
     "resists": "s-----rnn-",
@@ -1152,47 +1384,58 @@
     "stats": [330, 206, 25, 37, 29, 25, 28]
   },
   "Ruinous Idol": {
+    "ailments": "N-NNN-",
     "area": "Caina 2",
+    "exp": 777,
     "lvl": 45,
     "race": "Priestess",
-    "resists": "-----nwnr-",
+    "resists": "---d-nwnr-",
+    "resmods": [0, 0, 0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Pierce Attack", "Agilao", "Mazionga", "Elec Boost", "Dodge Wind"],
     "stats": [301, 195, 25, 40, 20, 27, 30]
   },
   "Scarlet Turret": {
+    "ailments": "SSSSSS",
     "area": "Ptolomea 1B",
+    "exp": 1136,
     "lvl": 55,
     "race": "Chariot",
     "resists": "rn-s---nn-",
-    "skills": ["Strike Attack", "Arrow Rain", "Marakunda", "Poison Arrow", "Power Charge"],
+    "skills": ["Strike Attack", "Arrow Rain", "Poison Arrow", "Marakunda", "Power Charge"],
     "stats": [476, 100, 45, 19, 59, 24, 47]
   },
   "Shouting Tiara B": {
+    "ailments": "NNN-N-",
     "area": "Antenora 20",
+    "exp": 0,
     "lvl": 50,
     "race": "Priestess",
     "resists": "---dwd-nn-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Ice Break", "Masukukaja", "Tetrakarn", "Media"],
-    "stats": [1150, 0, 29, 41, 29, 32, 31]
+    "stats": [1150, 100, 29, 41, 29, 32, 31]
   },
   "Silent Book": {
     "area": "Ptolomea 2",
+    "exp": 852,
     "lvl": 52,
     "race": "Priestess",
     "resists": "---wd-s---",
-    "skills": ["Strike Attack", "Life Drain", "Tentarafoo", "Virus Breath", "Wind Break"],
+    "skills": ["Strike Attack", "Virus Breath", "Tentarafoo", "Life Drain", "Wind Break"],
     "stats": [330, 162, 29, 37, 30, 31, 36]
   },
   "Silver Dice": {
     "area": "Judecca 2",
+    "exp": 1827,
     "lvl": 61,
     "race": "Fortune",
     "resists": "nnn----ww-",
-    "skills": ["Strike Attack", "Akasha Arts", "Arrow Rain", "Gigantic Fist"],
+    "skills": ["Strike Attack", "Akasha Arts", "Gigantic Fist", "Arrow Rain"],
     "stats": [400, 170, 43, 28, 41, 34, 44]
   },
   "Sky Balance": {
     "area": "Malebolge 2",
+    "exp": 450,
     "lvl": 30,
     "race": "Justice",
     "resists": "---wwrr---",
@@ -1200,23 +1443,30 @@
     "stats": [253, 105, 10, 22, 16, 19, 21]
   },
   "Slaughter Drive B": {
+    "ailments": "NNNNNN",
     "area": "Judecca 8",
+    "exp": 200,
     "lvl": 62,
     "race": "Chariot",
-    "resists": "sssddw-nn-",
+    "resists": "SSSddw-nn-",
+    "resmods": [0, 0, 0, 0, 0, 100, 0, 0, 0, 0],
     "skills": ["Slash Attack", "Deathbound", "Torrent Shot", "Makarakarn", "Evade Elec", "Last Resort"],
-    "stats": [900, 0, 50, 32, 58, 22, 35]
+    "stats": [900, 100, 50, 32, 58, 22, 35]
   },
   "Sleeping Table": {
+    "ailments": "n-n-nn",
+    "ailmods": [0, 0, 0, 150, 0, 0],
     "area": "Empyrean 1",
+    "exp": 2553,
     "lvl": 63,
     "race": "Magician",
     "resists": "snss---nn-",
-    "skills": ["Strike Attack", "Vicious Strike", "God's Hand", "Megidola", "Megidolaon", "Life Drain"],
+    "skills": ["Strike Attack", "Megidola", "Megidolaon", "God's Hand", "Vicious Strike", "Life Drain"],
     "stats": [553, 201, 36, 57, 32, 34, 37]
   },
   "Solid Castle": {
     "area": "Caina 1",
+    "exp": 649,
     "lvl": 38,
     "race": "Emperor",
     "resists": "-n---nw---",
@@ -1224,7 +1474,9 @@
     "stats": [269, 132, 29, 27, 40, 15, 10]
   },
   "Soul Dancer": {
+    "ailments": "N--N--",
     "area": "Caina 1",
+    "exp": 649,
     "lvl": 37,
     "race": "Lovers",
     "resists": "----d-n---",
@@ -1232,23 +1484,29 @@
     "stats": [265, 130, 28, 27, 20, 18, 25]
   },
   "Soul Dancer B": {
+    "ailments": "N-----",
     "area": "Cocytus 9",
+    "exp": 54,
     "lvl": 35,
     "race": "Lovers",
-    "resists": "---dw--nr-",
+    "resists": "---dw--nn-",
     "skills": ["Pierce Attack", "Agidyne", "Diarama"],
     "stats": [800, 120, 16, 20, 16, 24, 21]
   },
   "Spastic Turret B": {
+    "ailments": "NNNNNN",
     "area": "Judecca 8",
+    "exp": 0,
     "lvl": 62,
     "race": "Chariot",
-    "resists": "sssdw--nn-",
+    "resists": "SSSdw--nn-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Vile Assault", "Agidyne", "Maragidyne", "Mind Charge", "Dodge Ice"],
-    "stats": [4000, 0, 70, 39, 59, 24, 27]
+    "stats": [4000, 100, 70, 39, 59, 24, 27]
   },
   "Spurious Book": {
     "area": "Malebolge 1",
+    "exp": 338,
     "lvl": 25,
     "race": "Priestess",
     "resists": "---d-wn---",
@@ -1257,6 +1515,7 @@
   },
   "Stasis Giant": {
     "area": "Antenora 2",
+    "exp": 860,
     "lvl": 50,
     "race": "Justice",
     "resists": "wd--wnn---",
@@ -1264,15 +1523,20 @@
     "stats": [322, 158, 45, 37, 43, 14, 21]
   },
   "Steel Gigas": {
+    "ailmods": [200, 0, 0, 0, 0, 0],
     "area": "Cocytus 2",
+    "exp": 644,
     "lvl": 35,
     "race": "Strength",
-    "resists": "s-sd-nw---",
+    "resists": "---d-nw---",
+    "resmods": [25, 0, 25, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Strike Attack", "Kill Rush", "Swift Strike", "Dodge Wind"],
     "stats": [300, 114, 31, 15, 29, 18, 19]
   },
   "Stoic Snake": {
+    "ailmods": [0, 0, 0, 200, 0, 0],
     "area": "Malebolge 1B",
+    "exp": 520,
     "lvl": 30,
     "race": "Lovers",
     "resists": "----dr-w--",
@@ -1280,23 +1544,28 @@
     "stats": [235, 146, 18, 25, 20, 24, 13]
   },
   "Supreme Hand": {
+    "ailments": "nnnnnn",
     "area": "Antenora A",
-    "lvl": 0,
+    "exp": 0,
+    "lvl": 1,
     "race": "Magician",
-    "resists": "---nnnnnn-",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
-    "stats": [0, 0, 1, 1, 1, 99, 99]
+    "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Tenjin Musha B": {
+    "ailments": "nnnnnn",
     "area": "Empyrean 19",
+    "exp": 0,
     "lvl": 77,
     "race": "Strength",
     "resists": "-------nn-",
     "skills": ["Slash Attack", "Vorpal Blade", "Mahamaon", "Matarukaja", "Marakunda", "Revolution", "Makarakarn", "Mediarama", "Premonition"],
-    "stats": [2000, 0, 60, 49, 52, 55, 43]
+    "stats": [2000, 100, 60, 49, 52, 55, 43]
   },
   "Trance Twins": {
     "area": "Cocytus 1",
+    "exp": 644,
     "lvl": 32,
     "race": "Hierophant",
     "resists": "---w-n-nw-",
@@ -1305,6 +1574,7 @@
   },
   "Tranquil Idol": {
     "area": "Cocytus 1",
+    "exp": 644,
     "lvl": 33,
     "race": "Priestess",
     "resists": "---d-wnwr-",
@@ -1312,23 +1582,28 @@
     "stats": [245, 120, 19, 28, 17, 18, 24]
   },
   "Treasure Hand": {
+    "ailments": "nnnnnn",
     "area": "Caina A",
-    "lvl": 0,
+    "exp": 0,
+    "lvl": 1,
     "race": "Magician",
-    "resists": "---nnnnnn-",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
-    "stats": [0, 0, 1, 1, 1, 99, 99]
+    "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "Vehement Idol": {
+    "ailments": "SSSSSS",
     "area": "Ptolomea 2",
+    "exp": 852,
     "lvl": 56,
     "race": "Priestess",
     "resists": "--rr--nwr-",
-    "skills": ["Pierce Attack", "Hamaon", "Megido", "Mind Charge"],
+    "skills": ["Pierce Attack", "Megido", "Hamaon", "Mind Charge"],
     "stats": [346, 169, 32, 63, 25, 24, 31]
   },
   "Venus Eagle": {
     "area": "Cocytus 1",
+    "exp": 644,
     "lvl": 32,
     "race": "Empress",
     "resists": "---sw-r---",
@@ -1337,6 +1612,7 @@
   },
   "Vicious Raven": {
     "area": "Malebolge 2",
+    "exp": 450,
     "lvl": 29,
     "race": "Hermit",
     "resists": "--dnw-s---",
@@ -1345,14 +1621,18 @@
   },
   "Visceral Maya B": {
     "area": "Malebolge 8",
+    "exp": 0,
     "lvl": 29,
     "race": "Strength",
-    "resists": "rr-wSd-nn-",
+    "resists": "rr-w-d-nn-",
+    "resmods": [0, 0, 0, 100, 75, 0, 0, 0, 0, 0],
     "skills": ["Slash Attack", "Cleave", "Bash", "Double Fangs", "Tarukaja", "Rakukaja", "Sukukaja", "Dekunda", "Dekaja", "Re Patra", "Dodge Fire", "Sharp Student"],
-    "stats": [600, 0, 14, 21, 19, 27, 13]
+    "stats": [600, 120, 14, 21, 19, 27, 13]
   },
   "Void Giant": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1",
+    "exp": 1827,
     "lvl": 66,
     "race": "Justice",
     "resists": "ddd----rr-",
@@ -1360,15 +1640,19 @@
     "stats": [383, 188, 65, 50, 47, 23, 20]
   },
   "Wealth Hand": {
+    "ailments": "nnnnnn",
     "area": "Malebolge A",
-    "lvl": 0,
+    "exp": 0,
+    "lvl": 1,
     "race": "Magician",
-    "resists": "---nnnnnn-",
+    "resists": "TTTTTTTnnT",
     "skills": ["Strike Attack"],
-    "stats": [0, 0, 1, 1, 1, 99, 99]
+    "stats": [100, 100, 1, 1, 1, 99, 99]
   },
   "White Sigil": {
+    "ailments": "SSSSSS",
     "area": "Empyrean 1",
+    "exp": 1827,
     "lvl": 66,
     "race": "Hierophant",
     "resists": "r--wd--r--",
@@ -1376,7 +1660,9 @@
     "stats": [364, 206, 41, 73, 42, 16, 33]
   },
   "Wicked Turret": {
+    "ailmods": [0, 0, 0, 150, 0, 0],
     "area": "Antenora 2",
+    "exp": 1081,
     "lvl": 49,
     "race": "Chariot",
     "resists": "rrrs-w-w--",
@@ -1384,8 +1670,10 @@
     "stats": [318, 156, 50, 22, 39, 18, 25]
   },
   "Wild Beast": {
+    "ailmods": [200, 200, 200, 200, 200, 200],
     "area": "Malebolge 1",
-    "lvl": 28,
+    "exp": 450,
+    "lvl": 29,
     "race": "Strength",
     "resists": "-ssw--nww-",
     "skills": ["Strike Attack", "Kill Rush", "Tarukaja"],
@@ -1393,42 +1681,52 @@
   },
   "Wild Drive": {
     "area": "Caina 2",
+    "exp": 649,
     "lvl": 42,
     "race": "Chariot",
     "resists": "sss--w----",
     "skills": ["Slash Attack", "Herculean Strike", "Gale Slash", "Rakukaja"],
     "stats": [288, 141, 40, 12, 38, 31, 12]
   },
-  "Wonderous Magus B": {
+  "Wondrous Magus B": {
+    "ailments": "NN--NN",
+    "ailmods": [0, 0, 0, 200, 0, 0],
     "area": "Ptolomea 8",
-    "lvl": 47,
+    "exp": 200,
+    "lvl": 55,
     "race": "Magician",
-    "resists": "sn-wr-dnn-",
+    "resists": "Sn-wr-dnn-",
     "skills": ["Strike Attack", "Agidyne", "Bufudyne", "Mabufudyne", "Maziodyne", "Garudyne", "Magarudyne", "Tentarafoo", "Mind Charge", "Marakunda", "Ice Boost", "Dodge Fire", "Sharp Student"],
-    "stats": [1650, 0, 34, 50, 25, 26, 28]
+    "stats": [1650, 100, 34, 50, 25, 26, 28]
   },
   "World Balance": {
+    "ailments": "nnnnnn",
     "area": "Judecca 1",
+    "exp": 4480,
     "lvl": 57,
-    "race": "Fortune",
-    "resists": "sss----nn-",
-    "skills": ["Pierce Attack", "Maragidyne", "Mabufudyne", "Maziodyne", "Magarudyne", "Mahamaon", "Mamudoon", "Megidola"],
+    "race": "Justice",
+    "resists": "SSS----nn-",
+    "skills": ["Pierce Attack", "Maragidyne", "Mabufudyne", "Maziodyne", "Magarudyne", "Mamudoon", "Mahamaon", "Megidola"],
     "stats": [1384, 163, 25, 57, 27, 31, 38]
   },
   "Wrathful Book B": {
+    "ailments": "NNNNN-",
     "area": "Antenora 20",
+    "exp": 200,
     "lvl": 50,
     "race": "Priestess",
     "resists": "---wr-dnn-",
+    "resmods": [0, 0, 0, 100, 0, 0, 0, 0, 0, 0],
     "skills": ["Strike Attack", "Stagnant Air", "Infuriate", "Matarunda", "Marakunda", "Masukunda", "Evade Fire"],
-    "stats": [1150, 0, 29, 42, 32, 33, 37]
+    "stats": [1150, 100, 29, 42, 32, 33, 37]
   },
   "Writhing Tiara": {
     "area": "Ptolomea 2",
+    "exp": 1136,
     "lvl": 53,
     "race": "Priestess",
     "resists": "---nw-----",
-    "skills": ["Strike Attack", "Agidyne", "Diarama", "Mahama", "Spirit Drain"],
+    "skills": ["Strike Attack", "Agidyne", "Mahama", "Spirit Drain", "Diarama"],
     "stats": [334, 164, 31, 41, 30, 31, 36]
   }
 }
