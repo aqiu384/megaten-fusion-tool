@@ -90,7 +90,7 @@ function createCompConfig(): CompendiumConfigSet {
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
 
       enemyStats: ['HP', 'MP'],
-      enemyResists: COMP_CONFIG_JSON.resistElems.concat(['alm']),
+      enemyResists: COMP_CONFIG_JSON.resistElems,
 
       demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
       skillData: [skillData],

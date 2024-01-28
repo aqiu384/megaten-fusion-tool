@@ -1,16 +1,18 @@
 {
   "Acheron Seeker": {
+    "ailments": "9--9---9",
     "area": "Yomotsu Hirasaka 7",
     "exp": 2630,
     "lvl": 79,
     "material": "Mysterious Eye",
     "price": 500,
     "race": "Hermit",
-    "resists": "-ddddw--",
-    "skills": ["Maragidyne", "Mabufudyne", "Maziodyne", "Magarudyne", "Null Dizzy"],
+    "resists": "-ddddZ--",
+    "skills": ["Maragidyne", "Magarudyne", "Mabufudyne", "Maziodyne", "Null Dizzy"],
     "stats": [223, 208, 43, 22, 62, 54, 44]
   },
   "Adamant Beetle": {
+    "ailmods": [250, 0, 0, 0, 0, 0, 0, 0],
     "area": "Marukyu Striptease 7,8",
     "exp": 520,
     "lvl": 33,
@@ -33,13 +35,14 @@
     "stats": [238, 280, 46, 52, 25, 43, 37]
   },
   "Almighty Hand": {
+    "ailmods": [125, 0, 0, 125, 0, 0, 0, 125],
     "area": "Void Quest 5,6",
     "exp": 1100,
     "lvl": 40,
     "material": "Electric Rock",
     "price": 320,
     "race": "Magician",
-    "resists": "s---w--s",
+    "resists": "s---w--S",
     "skills": ["Diarama", "Patra", "Posumudi", "Mutudi", "Nervundi", "Re Patra"],
     "stats": [284, 238, 13, 29, 32, 20, 23]
   },
@@ -61,9 +64,22 @@
     "material": "Scaly Lump",
     "price": 430,
     "race": "Lovers",
-    "resists": "--w--rw-",
+    "resists": "--w--rZ-",
     "skills": ["Poison Mist", "Stagnant Air", "Life Leech"],
     "stats": [268, 183, 48, 45, 26, 48, 39]
+  },
+  "Amorous Snake B": {
+    "ailments": "NNNNNNNN",
+    "area": "Marukyu Striptease 7",
+    "exp": 6300,
+    "lvl": 33,
+    "material": "-",
+    "price": 260,
+    "race": "Lovers P",
+    "resists": "-w---nn-",
+    "resmods": [0, 100, 0, 0, 0, 0, 0, 0],
+    "skills": ["Stagnant Air", "Virus Wave", "Mind Slice", "Life Drain", "Sharp Student"],
+    "stats": [1012, 148, 19, 21, 38, 26, 15]
   },
   "Angry Table": {
     "area": "Heaven 5-7",
@@ -73,6 +89,7 @@
     "price": 400,
     "race": "Magician",
     "resists": "rrrrw---",
+    "resmods": [0, 0, 0, 0, 50, 0, 0, 0],
     "skills": ["Maragion", "Mabufula", "Auto-Mataru"],
     "stats": [345, 270, 18, 32, 42, 40, 41]
   },
@@ -84,10 +101,12 @@
     "price": 320,
     "race": "Lovers",
     "resists": "s---w---",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": [],
     "stats": [122, 19, 38, 12, 31, 11, 23]
   },
   "Apostate Tower": {
+    "ailments": "---9---9",
     "area": "Heaven 3,4",
     "exp": 3420,
     "lvl": 59,
@@ -95,10 +114,12 @@
     "price": 390,
     "race": "Hierophant",
     "resists": "---dw---",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Mazionga", "Ziodyne"],
     "stats": [286, 327, 25, 38, 35, 38, 35]
   },
   "Arcane Turret": {
+    "ailments": "9999-999",
     "area": "Marukyu Striptease 9,10",
     "exp": 2270,
     "lvl": 35,
@@ -128,6 +149,7 @@
     "price": 220,
     "race": "Priestess",
     "resists": "s---w---",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": [],
     "stats": [161, 13, 25, 10, 8, 2, 4]
   },
@@ -149,18 +171,32 @@
     "material": "Bronze Reins",
     "price": 220,
     "race": "Emperor",
-    "resists": "s----w--",
+    "resists": "s----Z--",
     "skills": ["Power Charge"],
     "stats": [180, 87, 12, 8, 11, 6, 7]
   },
+  "Avenger Knight B": {
+    "ailments": "NNNNNNNN",
+    "area": "Yukiko's Castle 5",
+    "exp": 900,
+    "lvl": 11,
+    "material": "-",
+    "price": 200,
+    "race": "Emperor P",
+    "resists": "s----nn3",
+    "resmods": [25, 125, 125, 125, 125, 0, 0, 0],
+    "skills": ["Skewer", "Poison Skewer"],
+    "stats": [430, 87, 16, 7, 8, 6, 10]
+  },
   "Battle Wheel": {
+    "ailments": "-9------",
     "area": "Magatsu Mandala 2,3",
     "exp": 3940,
     "lvl": 72,
     "material": "Brilliant Armor",
     "price": 440,
     "race": "Chariot",
-    "resists": "s----nw-",
+    "resists": "s----nZ-",
     "skills": ["Deathbound", "Brave Blade"],
     "stats": [278, 194, 54, 42, 38, 47, 39]
   },
@@ -176,6 +212,7 @@
     "stats": [234, 94, 26, 20, 30, 29, 25]
   },
   "Berserk Turret": {
+    "ailments": "9--9----",
     "area": "Yomotsu Hirasaka 6",
     "exp": 1680,
     "lvl": 80,
@@ -223,7 +260,7 @@
     "area": "Heaven 6,7",
     "exp": 2770,
     "lvl": 63,
-    "material": "Ayanashiki",
+    "material": "Ayanishiki",
     "price": 410,
     "race": "Strength",
     "resists": "--wr----",
@@ -242,13 +279,14 @@
     "stats": [339, 329, 17, 29, 29, 25, 25]
   },
   "Brave Wheel": {
+    "ailmods": [0, 0, 0, 0, 0, 0, 0, 125],
     "area": "Heaven 2",
     "exp": 3750,
     "lvl": 57,
     "material": "Flame Steel",
     "price": 390,
     "race": "Chariot",
-    "resists": "Wd----w-",
+    "resists": "2d----Z-",
     "skills": ["Matarukaja", "Gigantic Fist", "Heat Wave"],
     "stats": [368, 173, 32, 34, 39, 40, 28]
   },
@@ -259,7 +297,7 @@
     "material": "Tough Hide",
     "price": 220,
     "race": "Hierophant",
-    "resists": "------w-",
+    "resists": "------Z-",
     "skills": ["Single Shot"],
     "stats": [152, 88, 20, 6, 15, 10, 4]
   },
@@ -275,6 +313,7 @@
     "stats": [324, 285, 60, 40, 45, 46, 32]
   },
   "Brilliant King": {
+    "ailments": "9------9",
     "area": "Yomotsu Hirasaka 7,8",
     "exp": 2230,
     "lvl": 81,
@@ -282,7 +321,7 @@
     "price": 510,
     "race": "Emperor",
     "resists": "s----nn-",
-    "skills": ["Judgement"],
+    "skills": ["Judgement", "Summon"],
     "stats": [246, 256, 54, 51, 61, 54, 48]
   },
   "Bronze Dice": {
@@ -303,7 +342,7 @@
     "material": "Hard Horn",
     "price": 210,
     "race": "Emperor",
-    "resists": "r-w--WWW",
+    "resists": "r-w--222",
     "skills": ["Bash"],
     "stats": [132, 51, 11, 6, 9, 6, 9]
   },
@@ -326,10 +365,12 @@
     "price": 390,
     "race": "Lovers",
     "resists": "--w-----",
+    "resmods": [0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Stagnant Air", "Poison Mist", "Life Leech"],
     "stats": [234, 137, 37, 32, 30, 43, 34]
   },
   "Champion Knight": {
+    "ailments": "9999-999",
     "area": "Marukyu Striptease 9,10",
     "exp": 2170,
     "lvl": 34,
@@ -338,7 +379,7 @@
     "race": "Emperor",
     "resists": "s-------",
     "skills": ["Power Charge"],
-    "stats": [265, 116, 28, 22, 25, 25, 16]
+    "stats": [265, 116, 28, 22, 22, 25, 16]
   },
   "Change Relic": {
     "area": "Magatsu Mandala 4,5",
@@ -358,11 +399,12 @@
     "material": "Blade Thorn",
     "price": 410,
     "race": "Hanged",
-    "resists": "-W-r-nn-",
+    "resists": "-3-r-nn-",
     "skills": ["Ziodyne", "Maziodyne"],
     "stats": [587, 318, 32, 42, 39, 42, 34]
   },
   "Chaos Fuzz": {
+    "ailments": "--9-9---",
     "area": "Secret Lab 5,6",
     "exp": 1490,
     "lvl": 51,
@@ -371,7 +413,19 @@
     "race": "Hierophant",
     "resists": "-rrrrrr-",
     "skills": ["Foolish Whisper", "Rampage"],
-    "stats": [341, 133, 33, 30, 17, 30, 29]
+    "stats": [341, 133, 33, 30, 10, 30, 29]
+  },
+  "Chaos Fuzz B": {
+    "ailments": "NNNNNNNN",
+    "area": "Magatsu Mandala 3",
+    "exp": 1820,
+    "lvl": 70,
+    "material": "-",
+    "price": 44,
+    "race": "Magician P",
+    "resists": "-----nn-",
+    "skills": ["Summon"],
+    "stats": [600, 124, 47, 34, 53, 45, 44]
   },
   "Cloudgirl Pot": {
     "area": "Steamy Bathhouse (Rain) 3,4",
@@ -391,7 +445,8 @@
     "material": "Golden Barrel",
     "price": 460,
     "race": "Chariot",
-    "resists": "nWW-----",
+    "resists": "n-------",
+    "resmods": [0, 150, 150, 0, 0, 0, 0, 0],
     "skills": ["Ziodyne", "Maziodyne", "Blue Wall"],
     "stats": [270, 254, 52, 49, 50, 49, 52]
   },
@@ -406,7 +461,21 @@
     "skills": ["Garudyne", "Anima Freeze", "Re Patra"],
     "stats": [240, 246, 27, 29, 17, 31, 30]
   },
+  "Contrarian King B": {
+    "ailments": "NNNNSNNN",
+    "area": "Yukiko's Castle 8",
+    "exp": 1800,
+    "lvl": 17,
+    "material": "-",
+    "price": 1000,
+    "race": "Emperor P",
+    "resists": "Sd--nnnS",
+    "resmods": [0, 0, 150, 150, 0, 0, 0, 0],
+    "skills": ["Hysterical Slap", "Kill Rush", "Rampage", "Red Wall", "Marakunda"],
+    "stats": [1600, 500, 24, 8, 12, 18, 8]
+  },
   "Conviction Sword": {
+    "ailmods": [125, 0, 0, 0, 0, 0, 0, 0],
     "area": "Heaven 8,9",
     "exp": 3220,
     "lvl": 64,
@@ -414,10 +483,12 @@
     "price": 410,
     "race": "Justice",
     "resists": "---sw---",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Rainy Death", "Matarukaja"],
     "stats": [320, 125, 40, 36, 40, 45, 36]
   },
   "Corrupt Tower": {
+    "ailments": "9-99-999",
     "area": "Void Quest 1-4",
     "exp": 680,
     "lvl": 36,
@@ -425,17 +496,19 @@
     "price": 300,
     "race": "Hierophant",
     "resists": "-w-s----",
-    "skills": ["Balzac", "Diarama", "Mazionga"],
+    "skills": ["Balzac", "Diarama", "Mazionga", "Summon"],
     "stats": [325, 209, 15, 21, 23, 26, 18]
   },
   "Crazy Twins": {
+    "ailments": "-NN--NN5",
     "area": "Yomotsu Hirasaka 1,2",
     "exp": 2400,
     "lvl": 76,
     "material": "Ill Will Claw",
     "price": 460,
     "race": "Hierophant",
-    "resists": "dw---wnW",
+    "resists": "dw---Zn2",
+    "resmods": [0, 200, 0, 0, 0, 0, 0, 0],
     "skills": ["Heat Wave", "Seal Bomb", "Crazy Chain", "Null Dizzy"],
     "stats": [444, 169, 29, 38, 55, 49, 44]
   },
@@ -468,7 +541,7 @@
     "material": "Cursed Stone",
     "price": 400,
     "race": "Fortune",
-    "resists": "srrrrww-",
+    "resists": "srrrrZZ-",
     "skills": ["Last Resort"],
     "stats": [400, 271, 25, 64, 41, 25, 25]
   },
@@ -484,6 +557,7 @@
     "stats": [135, 121, 12, 13, 8, 17, 15]
   },
   "Daring Gigas": {
+    "ailments": "9-99-999",
     "area": "Steamy Bathhouse 3-8",
     "exp": 250,
     "lvl": 19,
@@ -494,7 +568,21 @@
     "skills": ["Sonic Punch"],
     "stats": [225, 46, 23, 6, 15, 15, 4]
   },
+  "Daring Gigas B": {
+    "ailments": "NNNNNNNN",
+    "area": "Steamy Bathhouse 7",
+    "exp": 2800,
+    "lvl": 24,
+    "material": "-",
+    "price": 250,
+    "race": "Strength P",
+    "resists": "-----nn-",
+    "skills": ["Single Shot", "Power Charge", "Tarukaja", "Rebellion", "Counter", "Sharp Student"],
+    "stats": [928, 100, 21, 11, 17, 18, 12]
+  },
   "Dark Eagle": {
+    "ailments": "9-------",
+    "ailmods": [0, 0, 0, 125, 0, 0, 0, 125],
     "area": "Heaven 2",
     "exp": 2520,
     "lvl": 57,
@@ -506,6 +594,7 @@
     "stats": [312, 197, 36, 34, 26, 43, 36]
   },
   "Death Dice": {
+    "ailments": "9--9----",
     "area": "Magatsu Mandala 4,5",
     "exp": 4220,
     "lvl": 73,
@@ -517,6 +606,7 @@
     "stats": [322, 215, 55, 55, 40, 50, 38]
   },
   "Death Seeker": {
+    "ailments": "9--99--9",
     "area": "Marukyu Striptease 1-4",
     "exp": 660,
     "lvl": 28,
@@ -534,7 +624,8 @@
     "material": "Dependent Iron",
     "price": 300,
     "race": "Hierophant",
-    "resists": "s----ww-",
+    "resists": "s----ZZ-",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": [],
     "stats": [162, 23, 35, 14, 26, 10, 21]
   },
@@ -546,7 +637,7 @@
     "price": 400,
     "race": "Lovers",
     "resists": "--n-w---",
-    "skills": ["Agidyne", "Vile Assault", "Red Wall", "Blue Wall", "Green Wall"],
+    "skills": ["Vile Assault", "Agidyne", "Red Wall", "Blue Wall", "Green Wall"],
     "stats": [297, 274, 35, 49, 27, 47, 29]
   },
   "Dismayed Panzer": {
@@ -558,9 +649,10 @@
     "race": "Chariot",
     "resists": "s--wr---",
     "skills": ["Power Charge", "Aeon Rain", "Torrent Shot"],
-    "stats": [320, 164, 38, 24, 24, 26, 25]
+    "stats": [320, 164, 38, 24, 25, 26, 25]
   },
   "Divine Mother": {
+    "ailments": "5--5---5",
     "area": "Yomotsu Hirasaka 1",
     "exp": 1980,
     "lvl": 76,
@@ -568,6 +660,7 @@
     "price": 460,
     "race": "Empress",
     "resists": "-wddw---",
+    "resmods": [0, 200, 0, 0, 200, 0, 0, 0],
     "skills": ["Mabufudyne", "Maziodyne", "Media", "Null Dizzy"],
     "stats": [415, 400, 22, 48, 55, 51, 42]
   },
@@ -583,15 +676,29 @@
     "stats": [259, 339, 29, 37, 20, 35, 30]
   },
   "Dominating Machine": {
+    "ailments": "99----9-",
     "area": "Secret Lab 7,8",
-    "exp": 5109,
+    "exp": 5190,
     "lvl": 57,
     "material": "Damascus",
-    "price": 350,
+    "price": 380,
     "race": "Justice",
     "resists": "-----nn-",
-    "skills": ["Cruel Attack", "Power Charge"],
-    "stats": [3500, 112, 43, 31, 1, 40, 34]
+    "skills": ["Power Charge", "Cruel Attack"],
+    "stats": [3500, 112, 43, 31, 0, 40, 34]
+  },
+  "Dominating Machine B": {
+    "ailments": "NNNNNNNN",
+    "area": "Secret Lab 4",
+    "exp": 12400,
+    "lvl": 53,
+    "material": "-",
+    "price": 370,
+    "race": "Justice P",
+    "resists": "-----nn-",
+    "resmods": [75, 90, 110, 90, 95, 0, 0, 75],
+    "skills": ["Herculean Strike", "Power Charge", "Last Resort"],
+    "stats": [3070, 300, 39, 32, 44, 30, 31]
   },
   "Doom Sword": {
     "area": "Yomotsu Hirasaka 4,5",
@@ -600,11 +707,12 @@
     "material": "Holy Gold Lump",
     "price": 480,
     "race": "Justice",
-    "resists": "-WwWWnw-",
+    "resists": "--w--nZ-",
+    "resmods": [0, 250, 300, 250, 250, 0, 0, 0],
     "skills": ["Tempest Slash", "Blade of Fury", "Counter", "Power Charge"],
     "stats": [437, 149, 65, 47, 39, 52, 48]
   },
-  "Dry Dixie": {
+  "Dry Dexy": {
     "area": "Heaven 5",
     "exp": 2850,
     "lvl": 61,
@@ -612,17 +720,19 @@
     "price": 400,
     "race": "Hanged",
     "resists": "Sw--dss-",
+    "resmods": [75, 0, 0, 0, 0, 0, 0, 100],
     "skills": ["Tetrakarn", "Makarakarn", "Hamaon", "Mudoon"],
     "stats": [265, 439, 21, 45, 44, 45, 28]
   },
-  "Earnest Carothy": {
+  "Earnest Calocy": {
+    "ailments": "-------9",
     "area": "Magatsu Mandala 6",
     "exp": 3830,
     "lvl": 74,
     "material": "Activated Felt",
     "price": 450,
     "race": "Hanged",
-    "resists": "-----ww-",
+    "resists": "-----ZZ-",
     "skills": ["Evil Smile", "Megido", "Ghastly Wail", "Foolish Whisper"],
     "stats": [420, 629, 20, 54, 19, 52, 70]
   },
@@ -634,10 +744,11 @@
     "price": 250,
     "race": "Emperor",
     "resists": "---dwrr-",
-    "skills": ["Mazio", "Twin Shot"],
+    "skills": ["Mazio", "Twin Shot", "Summon"],
     "stats": [206, 105, 14, 16, 18, 15, 11]
   },
   "El Dorado Beast": {
+    "ailments": "9--9---5",
     "area": "Yomotsu Hirasaka 7,8",
     "exp": 2080,
     "lvl": 82,
@@ -649,17 +760,19 @@
     "stats": [408, 94, 65, 25, 61, 49, 63]
   },
   "Elegant Mother": {
+    "ailments": "---9----",
     "area": "Secret Lab 7,8",
     "exp": 1830,
     "lvl": 54,
     "material": "Fur Clasp",
     "price": 370,
     "race": "Empress",
-    "resists": "--s-n-w-",
+    "resists": "--s-n-Z-",
     "skills": ["Magarula", "Mabufula", "Garula", "Evil Smile"],
     "stats": [250, 455, 34, 47, 19, 36, 31]
   },
   "Emperor Beetle": {
+    "ailments": "9--9---5",
     "area": "Yomotsu Hirasaka 2,3",
     "exp": 2190,
     "lvl": 77,
@@ -671,6 +784,7 @@
     "stats": [274, 231, 52, 45, 52, 53, 44]
   },
   "Enslaved Beast": {
+    "ailmods": [250, 250, 250, 250, 250, 250, 250, 250],
     "area": "Marukyu Striptease 5-8",
     "exp": 620,
     "lvl": 32,
@@ -681,6 +795,31 @@
     "skills": ["Assault Dive", "Swift Strike"],
     "stats": [228, 91, 26, 17, 14, 19, 22]
   },
+  "Envious Giant B": {
+    "ailments": "NNNNNNNN",
+    "area": "Magatsu Mandala 6",
+    "exp": 52370,
+    "lvl": 75,
+    "material": "-",
+    "price": 460,
+    "race": "Magician P",
+    "resists": "2ssdsnn-",
+    "skills": ["Megidolaon", "Tentarafoo", "High Counter"],
+    "stats": [3333, 3333, 26, 78, 55, 40, 42]
+  },
+  "Escapist Soldier B": {
+    "ailments": "NNNNNNNN",
+    "area": "Void Quest 10",
+    "exp": 10500,
+    "lvl": 47,
+    "material": "-",
+    "price": 1000,
+    "race": "Justice P",
+    "resists": "s----nn-",
+    "resmods": [100, 0, 125, 0, 125, 0, 0, 75],
+    "skills": ["Arm Chopper", "Mind Slice", "Crazy Chain", "Blade of Fury", "Mudoon", "Foul Breath", "Stagnant Air"],
+    "stats": [3800, 1000, 48, 30, 20, 28, 18]
+  },
   "Eternal Eagle": {
     "area": "Yomotsu Hirasaka 5,6",
     "exp": 1500,
@@ -688,11 +827,13 @@
     "material": "Death Sentence",
     "price": 490,
     "race": "Empress",
-    "resists": "Wsw-----",
+    "resists": "-sw-----",
+    "resmods": [250, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Megidola", "Counterstrike"],
     "stats": [395, 262, 52, 51, 44, 56, 47]
   },
   "Eternal Sand": {
+    "ailments": "NNNN-NNN",
     "area": "Yomotsu Hirasaka 1,2",
     "exp": 2200,
     "lvl": 77,
@@ -702,6 +843,19 @@
     "resists": "---w--n-",
     "skills": ["Stagnant Air", "Anima Freeze"],
     "stats": [342, 243, 52, 42, 43, 50, 47]
+  },
+  "Extreme Vessel B": {
+    "ailments": "NNNNNNNN",
+    "area": "Secret Lab 9",
+    "exp": 15000,
+    "lvl": 57,
+    "material": "-",
+    "price": 1000,
+    "race": "Chariot P",
+    "resists": "----wnn-",
+    "resmods": [75, 125, 125, 125, 75, 0, 0, 75],
+    "skills": ["Rampage", "Cruel Attack", "Virus Wave", "God's Hand", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Ziodyne", "Maziodyne", "Garudyne", "Magarudyne", "Power Charge", "Mind Charge", "Rebellion"],
+    "stats": [4800, 3000, 50, 45, 35, 56, 10]
   },
   "Fail Gene": {
     "area": "Secret Lab 5,6",
@@ -726,6 +880,7 @@
     "stats": [325, 422, 45, 52, 24, 49, 41]
   },
   "Fate Seeker": {
+    "ailments": "9-99-999",
     "area": "Void Quest 2-4",
     "exp": 920,
     "lvl": 40,
@@ -748,6 +903,7 @@
     "stats": [280, 100, 36, 45, 26, 48, 47]
   },
   "Fierce Cyclops": {
+    "ailments": "9----9-9",
     "area": "Secret Lab 7,8",
     "exp": 2670,
     "lvl": 53,
@@ -814,6 +970,7 @@
     "stats": [254, 170, 30, 28, 27, 46, 26]
   },
   "Furious Gigas": {
+    "ailments": "999-----",
     "area": "Secret Lab 3,4",
     "exp": 1990,
     "lvl": 50,
@@ -825,10 +982,11 @@
     "stats": [318, 117, 35, 26, 19, 35, 28]
   },
   "Glorious Hand": {
+    "ailments": "NNNNNNNN",
     "area": "Magatsu Inaba 1,2,1-6",
     "exp": 1,
     "lvl": 70,
-    "material": "-",
+    "material": "Chest Key",
     "price": 18000,
     "race": "Magician",
     "resists": "s-------",
@@ -847,17 +1005,19 @@
     "stats": [262, 252, 46, 49, 38, 59, 56]
   },
   "Grand Magus": {
+    "ailments": "9--9---9",
     "area": "Yomotsu Hirasaka 3,4",
     "exp": 2390,
     "lvl": 79,
     "material": "Living Metal",
     "price": 480,
     "race": "Magician",
-    "resists": "sswsw-w-",
+    "resists": "sswsw-Z-",
     "skills": ["Agidyne", "Maragidyne", "Ziodyne", "Maziodyne", "Mind Charge"],
     "stats": [401, 644, 40, 67, 41, 55, 49]
   },
   "Grave Beetle": {
+    "ailments": "---9---9",
     "area": "Steamy Bathhouse 9,10",
     "exp": 350,
     "lvl": 26,
@@ -876,21 +1036,23 @@
     "price": 430,
     "race": "Emperor",
     "resists": "s---wrr-",
-    "skills": ["Valiant Dance"],
+    "skills": ["Valiant Dance", "Summon"],
     "stats": [359, 199, 44, 37, 31, 46, 39]
   },
   "Green Sigil": {
+    "ailmods": [125, 0, 125, 125, 0, 125, 125, 125],
     "area": "Heaven 6,7",
     "exp": 3990,
     "lvl": 63,
     "material": "Black Signature",
     "price": 410,
     "race": "Hierophant",
-    "resists": "---d-ww-",
+    "resists": "---d-ZZ-",
     "skills": ["Megidolaon"],
     "stats": [444, 424, 25, 44, 40, 43, 37]
   },
   "Growth Relic": {
+    "ailments": "-------9",
     "area": "Heaven 2",
     "exp": 2650,
     "lvl": 56,
@@ -902,6 +1064,7 @@
     "stats": [126, 282, 33, 36, 33, 40, 33]
   },
   "Grudge Tower": {
+    "ailments": "5------9",
     "area": "Yomotsu Hirasaka 3,4",
     "exp": 2480,
     "lvl": 78,
@@ -919,7 +1082,8 @@
     "material": "Judgement Shot",
     "price": 420,
     "race": "Chariot",
-    "resists": "r-w--wss",
+    "resists": "r-w--ZsS",
+    "resmods": [0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Auto-Mataru", "Seal Bomb", "Null Dizzy"],
     "stats": [776, 146, 60, 20, 54, 29, 27]
   },
@@ -930,7 +1094,7 @@
     "material": "Unthinkable Metal",
     "price": 450,
     "race": "Fortune",
-    "resists": "-----ww-",
+    "resists": "-----ZZ-",
     "skills": ["Galgalim Eyes", "Valiant Dance", "Amrita", "Rage Boost"],
     "stats": [193, 354, 45, 45, 31, 50, 46]
   },
@@ -946,6 +1110,7 @@
     "stats": [368, 294, 62, 50, 27, 47, 40]
   },
   "Harmony Giant": {
+    "ailments": "99------",
     "area": "Magatsu Mandala 6",
     "exp": 4920,
     "lvl": 77,
@@ -957,24 +1122,27 @@
     "stats": [305, 128, 57, 50, 31, 37, 43]
   },
   "Heartless Machine": {
+    "ailments": "-------9",
     "area": "Yomotsu Hirasaka 7,8",
     "exp": 8200,
     "lvl": 83,
     "material": "Pyroxene Fiber",
     "price": 520,
     "race": "Justice",
-    "resists": "sssss--W",
+    "resists": "sssss--2",
+    "resmods": [10, 10, 10, 10, 10, 0, 0, 0],
     "skills": ["Power Charge", "Primal Force", "Auto-Tarukaja", "Auto-Rakukaja", "Sharp Student"],
     "stats": [100, 130, 71, 42, 54, 54, 39]
   },
   "Heat Balance": {
+    "ailments": "9-999999",
     "area": "Yukiko's Castle 6,7",
     "exp": 377,
     "lvl": 15,
     "material": "Golden Dish",
     "price": 220,
     "race": "Justice",
-    "resists": "-rrrr--W",
+    "resists": "-rrrr--2",
     "skills": ["Agi", "Bufu"],
     "stats": [140, 136, 9, 9, 7, 2, 14]
   },
@@ -997,6 +1165,7 @@
     "price": 270,
     "race": "Empress",
     "resists": "s-ws----",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": [],
     "stats": [195, 27, 22, 15, 12, 14, 19]
   },
@@ -1007,7 +1176,7 @@
     "material": "Venomous Fang",
     "price": 360,
     "race": "Lovers",
-    "resists": "----nww-",
+    "resists": "----nZZ-",
     "skills": ["Life Leech", "Spirit Drain", "Poison Mist", "Stagnant Air"],
     "stats": [269, 148, 38, 33, 15, 33, 32]
   },
@@ -1018,7 +1187,7 @@
     "material": "Formidable Proof",
     "price": 440,
     "race": "Strength",
-    "resists": "sr---nw-",
+    "resists": "sr---nZ-",
     "skills": ["Akasha Arts", "God's Hand", "Revolution"],
     "stats": [333, 129, 55, 33, 40, 47, 33]
   },
@@ -1030,10 +1199,12 @@
     "price": 420,
     "race": "Fortune",
     "resists": "---w----",
+    "resmods": [0, 0, 0, 100, 0, 0, 0, 0],
     "skills": ["Valiant Dance", "Rage Boost"],
     "stats": [196, 197, 38, 32, 35, 47, 47]
   },
   "Insolent Basalt": {
+    "ailments": "-9------",
     "area": "Secret Lab 1,2",
     "exp": 1300,
     "lvl": 45,
@@ -1041,8 +1212,22 @@
     "price": 340,
     "race": "Chariot",
     "resists": "s--w----",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Last Resort"],
     "stats": [190, 25, 40, 16, 20, 20, 20]
+  },
+  "Intolerant Officer B": {
+    "ailments": "NNNNNNNN",
+    "area": "Steamy Bathhouse 11",
+    "exp": 4650,
+    "lvl": 27,
+    "material": "-",
+    "price": 1000,
+    "race": "Hierophant P",
+    "resists": "---w-nnS",
+    "resmods": [0, 0, 125, 75, 125, 0, 0, 0],
+    "skills": ["Single Shot", "Poison Arrow", "Bufula", "Garula"],
+    "stats": [3000, 1000, 35, 28, 15, 12, 18]
   },
   "Intrepid Knight": {
     "area": "Heaven 8,9",
@@ -1052,6 +1237,7 @@
     "price": 420,
     "race": "Emperor",
     "resists": "s--w-nns",
+    "resmods": [0, 0, 0, 25, 0, 0, 0, 15],
     "skills": ["Gigantic Fist", "Virus Wave", "Power Charge", "Null Dizzy"],
     "stats": [562, 140, 48, 34, 40, 46, 31]
   },
@@ -1070,7 +1256,7 @@
     "area": "Steamy Bathhouse 5-7",
     "exp": 300,
     "lvl": 21,
-    "material": "Silver Lump",
+    "material": "Pure Iron Lump",
     "price": 240,
     "race": "Fortune",
     "resists": "---w----",
@@ -1084,18 +1270,20 @@
     "material": "Bloody Hide",
     "price": 420,
     "race": "Hanged",
-    "resists": "-d-w--w-",
+    "resists": "-d-w--Z-",
+    "resmods": [0, 0, 0, 100, 0, 0, 0, 0],
     "skills": ["Maragion", "Megidola", "Blue Wall", "Green Wall"],
     "stats": [394, 158, 40, 29, 49, 44, 29]
   },
   "Jotun of Evil": {
     "area": "Magatsu Mandala 4,5",
-    "exp": 4520,
+    "exp": 4320,
     "lvl": 73,
     "material": "Thunder Bead",
     "price": 440,
     "race": "Hanged",
-    "resists": "Wnrrnnn-",
+    "resists": "-nrrnnn-",
+    "resmods": [150, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Bufudyne", "Mabufudyne", "Ice Boost"],
     "stats": [560, 344, 47, 66, 32, 40, 34]
   },
@@ -1106,11 +1294,13 @@
     "material": "Ripper Horse",
     "price": 490,
     "race": "Hanged",
-    "resists": "s---wwn-",
+    "resists": "s---wZn-",
+    "resmods": [0, 0, 0, 0, 300, 0, 0, 0],
     "skills": ["Garudyne", "Magarudyne", "Life Leech"],
     "stats": [505, 298, 53, 59, 53, 54, 52]
   },
   "Jotun of Power": {
+    "ailments": "9--99---",
     "area": "Secret Lab 7,8",
     "exp": 2150,
     "lvl": 54,
@@ -1122,13 +1312,15 @@
     "stats": [321, 203, 42, 34, 25, 33, 27]
   },
   "Judgement Sword": {
+    "ailments": "--9-9-9-",
     "area": "Magatsu Mandala 4-6",
     "exp": 4370,
     "lvl": 72,
     "material": "Spark Ornament",
     "price": 440,
     "race": "Justice",
-    "resists": "swnWW---",
+    "resists": "swn-----",
+    "resmods": [0, 50, 0, 150, 150, 0, 0, 0],
     "skills": ["Matarukaja"],
     "stats": [388, 139, 51, 42, 51, 47, 38]
   },
@@ -1161,7 +1353,7 @@
     "material": "Fixing Bolt",
     "price": 390,
     "race": "Chariot",
-    "resists": "---W----",
+    "resists": "---3----",
     "skills": ["Matarukaja", "Vile Assault"],
     "stats": [389, 95, 40, 22, 40, 39, 31]
   },
@@ -1177,24 +1369,39 @@
     "stats": [160, 48, 13, 16, 13, 17, 16]
   },
   "Killing Hand": {
+    "ailments": "---2----",
     "area": "Marukyu Striptease 5-10",
-    "exp": 620,
+    "exp": 510,
     "lvl": 32,
     "material": "Glossy Clasp",
-    "price": 280,
+    "price": 290,
     "race": "Magician",
-    "resists": "----wws-",
+    "resists": "----wZs-",
     "skills": ["Rebellion", "Red Wall", "Tetrakarn", "Balzac", "Recarmdra"],
-    "stats": [208, 179, 26, 17, 14, 19, 22]
+    "stats": [208, 179, 14, 20, 13, 27, 21]
+  },
+  "Killing Hand B": {
+    "ailments": "NNNNNNNN",
+    "area": "Void Quest 7",
+    "exp": 8060,
+    "lvl": 42,
+    "material": "-",
+    "price": 320,
+    "race": "Magician P",
+    "resists": "-----nn-",
+    "skills": ["Summon", "Deathbound"],
+    "stats": [885, 100, 32, 27, 32, 30, 21]
   },
   "King Castle": {
+    "ailments": "9-9--9-9",
     "area": "Magatsu Mandala 1",
     "exp": 4940,
     "lvl": 69,
     "material": "Snow Stone",
     "price": 430,
     "race": "Emperor",
-    "resists": "nWWWWww-",
+    "resists": "n----ZZ-",
+    "resmods": [0, 150, 150, 150, 150, 0, 0, 0],
     "skills": ["Rainy Death", "Myriad Arrows"],
     "stats": [350, 243, 50, 30, 40, 47, 41]
   },
@@ -1206,10 +1413,12 @@
     "price": 290,
     "race": "Emperor",
     "resists": "sw------",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Foul Breath"],
     "stats": [200, 29, 25, 17, 10, 15, 20]
   },
   "Laughing Table": {
+    "ailments": "NNNNNNNN",
     "area": "Yukiko's Castle 6,7",
     "exp": 305,
     "lvl": 10,
@@ -1227,8 +1436,9 @@
     "material": "Trial Obsidian",
     "price": 330,
     "race": "Priestess",
-    "resists": "---w---s",
-    "skills": [],
+    "resists": "---w----",
+    "resmods": [0, 0, 0, 0, 0, 0, 0, 5],
+    "skills": ["Summon"],
     "stats": [327, 322, 24, 29, 25, 28, 25]
   },
   "Liberating Idol": {
@@ -1253,6 +1463,19 @@
     "skills": ["Hamaon", "Mudoon", "Tetrakarn"],
     "stats": [333, 363, 33, 37, 38, 41, 40]
   },
+  "Lost Okina B": {
+    "ailments": "NNNNNNNN",
+    "area": "Heaven 10",
+    "exp": 23000,
+    "lvl": 67,
+    "material": "-",
+    "price": 1000,
+    "race": "Hermit P",
+    "resists": "n-d--nn-",
+    "resmods": [0, 125, 0, 125, 125, 0, 0, 125],
+    "skills": ["Seal Bomb", "Mustard Bomb", "Navas Nebula", "Agidyne", "Bufudyne", "Ziodyne", "Garudyne", "Megidola", "Makarakarn", "Matarunda", "Masukunda", "Dekunda", "Spirit Leech", "Stagnant Air"],
+    "stats": [4000, 500, 48, 78, 32, 50, 30]
+  },
   "Lustful Snake": {
     "area": "Void Quest 1-4",
     "exp": 700,
@@ -1265,13 +1488,15 @@
     "stats": [255, 157, 16, 31, 20, 28, 18]
   },
   "Luxury Hand": {
+    "ailments": "NNNNNNNN",
     "area": "Heaven (Rare) 1-9",
     "exp": 1,
     "lvl": 60,
-    "material": "-",
+    "material": "Chest Key",
     "price": 15000,
     "race": "Magician",
-    "resists": "nnnnnnnW",
+    "resists": "nnnnnnn-",
+    "resmods": [0, 0, 0, 0, 0, 0, 0, 150],
     "skills": [],
     "stats": [200, 200, 40, 40, 40, 40, 40]
   },
@@ -1287,6 +1512,7 @@
     "stats": [73, 51, 5, 5, 3, 3, 3]
   },
   "Mach Wheel": {
+    "ailments": "99--9---",
     "area": "Secret Lab 5,6",
     "exp": 2490,
     "lvl": 52,
@@ -1320,8 +1546,9 @@
     "stats": [130, 10, 1, 8, 4, 2, 7]
   },
   "Magical Magus": {
+    "ailments": "9-99-999",
     "area": "Yukiko's Castle 6,7",
-    "exp": 250,
+    "exp": 256,
     "lvl": 14,
     "material": "Supple Metal",
     "price": 210,
@@ -1337,27 +1564,29 @@
     "material": "Crimson Cover",
     "price": 390,
     "race": "Priestess",
-    "resists": "W-w-d---",
-    "skills": ["Tetrakarn", "Makarakarn", "Garudyne", "Magarudyne"],
+    "resists": "2-w-d---",
+    "resmods": [0, 0, 100, 0, 0, 0, 0, 0],
+    "skills": ["Tetrakarn", "Makarakarn", "Magarudyne", "Garudyne"],
     "stats": [383, 411, 24, 48, 36, 41, 30]
   },
   "Mighty Beast": {
+    "ailments": "9---9---",
     "area": "Secret Lab 5,6",
     "exp": 2260,
     "lvl": 50,
     "material": "Demon Collar",
     "price": 360,
     "race": "Strength",
-    "resists": "r-w--wr-",
+    "resists": "r-w--Zr-",
     "skills": ["Crazy Chain", "Fatal End"],
     "stats": [364, 127, 40, 28, 20, 26, 26]
   },
   "Mighty Cyclops": {
     "area": "Marukyu Striptease 9,10",
-    "exp": 870,
+    "exp": 675,
     "lvl": 35,
     "material": "Sharp Thorn",
-    "price": 260,
+    "price": 300,
     "race": "Hanged",
     "resists": "-wd-----",
     "skills": ["Maragion"],
@@ -1370,11 +1599,12 @@
     "material": "Mental Thread",
     "price": 370,
     "race": "Fortune",
-    "resists": "-ssssww-",
-    "skills": ["Agidyne", "Bufudyne", "Ziodyne", "Garudyne", "Last Resort"],
+    "resists": "-ssssZZ-",
+    "skills": ["Agidyne", "Garudyne", "Ziodyne", "Bufudyne", "Last Resort"],
     "stats": [312, 155, 25, 35, 25, 40, 40]
   },
   "Minotaur I": {
+    "ailments": "9-------",
     "area": "Magatsu Mandala 6",
     "exp": 4760,
     "lvl": 77,
@@ -1386,6 +1616,7 @@
     "stats": [357, 310, 70, 40, 38, 48, 24]
   },
   "Minotaur II": {
+    "ailments": "-----9-9",
     "area": "Magatsu Mandala 6",
     "exp": 4460,
     "lvl": 76,
@@ -1393,10 +1624,11 @@
     "price": 460,
     "race": "Hanged",
     "resists": "rd-wd---",
-    "skills": ["Agidyne", "Bufudyne", "Ziodyne", "Garudyne", "Mind Charge"],
+    "skills": ["Agidyne", "Mind Charge", "Garudyne", "Bufudyne", "Ziodyne"],
     "stats": [451, 583, 52, 76, 18, 50, 26]
   },
   "Minotaur III": {
+    "ailments": "----9---",
     "area": "Magatsu Mandala 6",
     "exp": 4260,
     "lvl": 75,
@@ -1408,13 +1640,15 @@
     "stats": [290, 234, 54, 30, 35, 52, 29]
   },
   "Minotaur IV": {
+    "ailmods": [125, 0, 0, 125, 0, 125, 125, 125],
     "area": "Heaven 8,9",
     "exp": 4690,
     "lvl": 66,
     "material": "Heavy Chains",
     "price": 420,
     "race": "Hanged",
-    "resists": "SWWWW---",
+    "resists": "S2222---",
+    "resmods": [90, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Mabufudyne", "Mind Charge"],
     "stats": [424, 143, 56, 18, 49, 46, 29]
   },
@@ -1437,8 +1671,22 @@
     "price": 480,
     "race": "Priestess",
     "resists": "rwwwwrr-",
+    "resmods": [0, 200, 200, 200, 200, 0, 0, 0],
     "skills": ["Life Leech", "Spirit Leech"],
     "stats": [385, 218, 45, 43, 43, 57, 43]
+  },
+  "Momentary Child B": {
+    "ailments": "NNNNNNNN",
+    "area": "Marukyu Striptease 11",
+    "exp": 8200,
+    "lvl": 37,
+    "material": "-",
+    "price": 1000,
+    "race": "Empress P",
+    "resists": "--w--nn-",
+    "resmods": [75, 125, 0, 0, 0, 0, 0, 0],
+    "skills": ["Assault Dive", "Rampage", "Herculean Strike", "Deathbound", "Tarukaja", "Rebellion"],
+    "stats": [4500, 1000, 46, 15, 30, 38, 18]
   },
   "Monomaniac Fuzz": {
     "area": "Void Quest 7-9",
@@ -1463,6 +1711,7 @@
     "stats": [100, 88, 8, 11, 8, 19, 10]
   },
   "Moon Okina": {
+    "ailments": "-----NN-",
     "area": "Yomotsu Hirasaka 5,6",
     "exp": 1700,
     "lvl": 80,
@@ -1474,13 +1723,14 @@
     "stats": [345, 383, 43, 55, 42, 53, 46]
   },
   "Mythical Gigas": {
+    "ailmods": [125, 0, 0, 125, 0, 0, 0, 125],
     "area": "Heaven 2",
     "exp": 2920,
     "lvl": 57,
     "material": "Claw of Myth",
     "price": 390,
     "race": "Strength",
-    "resists": "-W-WWnn-",
+    "resists": "-2-22nn-",
     "skills": ["Gigantic Fist", "Counter"],
     "stats": [344, 94, 48, 22, 48, 40, 23]
   },
@@ -1507,17 +1757,33 @@
     "stats": [362, 155, 51, 39, 30, 47, 41]
   },
   "Neo Minotaur": {
+    "ailments": "9--9----",
     "area": "Yomotsu Hirasaka 8",
     "exp": 3120,
     "lvl": 82,
     "material": "Tyrannical Hide",
     "price": 520,
     "race": "Hanged",
-    "resists": "SwWWW--W",
+    "resists": "sw------",
+    "resmods": [750, 1000, 1000, 1000, 1000, 0, 0, 1000],
     "skills": ["Akasha Arts", "Vile Assault", "Null Dizzy"],
     "stats": [5100, 379, 63, 50, 59, 54, 31]
   },
+  "Neo Minotaur B": {
+    "ailments": "NNNNNNNN",
+    "area": "Yomotsu Hirasaka 3",
+    "exp": 23220,
+    "lvl": 78,
+    "material": "-",
+    "price": 520,
+    "race": "Magician P",
+    "resists": "2----nn-",
+    "resmods": [0, 450, 450, 450, 450, 0, 0, 0],
+    "skills": ["Rampage"],
+    "stats": [4240, 100, 69, 44, 63, 50, 51]
+  },
   "Next Gene": {
+    "ailments": "9--5----",
     "area": "Yomotsu Hirasaka 5,6",
     "exp": 1720,
     "lvl": 80,
@@ -1529,6 +1795,7 @@
     "stats": [625, 339, 45, 45, 43, 56, 44]
   },
   "Nizam Beast": {
+    "ailments": "9-99-999",
     "area": "Steamy Bathhouse 3-6",
     "exp": 400,
     "lvl": 18,
@@ -1540,28 +1807,32 @@
     "stats": [288, 57, 14, 12, 12, 14, 8]
   },
   "Noble Seeker": {
+    "ailments": "99999999",
     "area": "Magatsu Mandala 6",
     "exp": 4200,
     "lvl": 74,
     "material": "Golden Film",
     "price": 450,
     "race": "Hermit",
-    "resists": "nrWWw--W",
+    "resists": "nr--w---",
+    "resmods": [0, 0, 150, 150, 0, 0, 0, 150],
     "skills": ["Agidyne", "Maziodyne", "Evil Smile", "Elec Boost"],
     "stats": [238, 634, 50, 64, 38, 46, 36]
   },
   "Opulent Hand": {
+    "ailments": "99999999",
     "area": "Secret Lab (Rare) 1-8",
     "exp": 1,
     "lvl": 50,
-    "material": "-",
+    "material": "Chest Key",
     "price": 12000,
     "race": "Magician",
-    "resists": "--------",
-    "skills": ["Agidyne", "Bufudyne", "Ziodyne", "Garudyne"],
+    "resists": "-----nn-",
+    "skills": ["Agidyne", "Garudyne", "Bufudyne", "Ziodyne"],
     "stats": [430, 236, 19, 41, 21, 20, 31]
   },
   "Order Giant": {
+    "ailments": "-9------",
     "area": "Secret Lab 7,8",
     "exp": 4120,
     "lvl": 53,
@@ -1595,24 +1866,26 @@
     "stats": [239, 100, 21, 18, 12, 19, 15]
   },
   "Phantom Hero": {
+    "ailments": "----9---",
     "area": "Yomotsu Hirasaka 3,4",
     "exp": 1960,
     "lvl": 78,
     "material": "Demon Cloth",
     "price": 480,
     "race": "Hermit",
-    "resists": "-w---rw-",
+    "resists": "-w---rZ-",
     "skills": ["Hamaon", "Mahamaon", "Mudoon", "Mamudoon"],
     "stats": [325, 438, 35, 49, 52, 50, 58]
   },
   "Phantom King": {
+    "ailments": "-----9-9",
     "area": "Magatsu Mandala 4-6",
     "exp": 4980,
     "lvl": 75,
     "material": "Prime Hide",
     "price": 450,
     "race": "Hermit",
-    "resists": "-----wn-",
+    "resists": "-----Zn-",
     "skills": ["Maragidyne", "Agidyne", "Mudoon", "Megidolaon"],
     "stats": [600, 122, 43, 70, 20, 48, 40]
   },
@@ -1623,7 +1896,7 @@
     "material": "Treasure Cloth",
     "price": 400,
     "race": "Hermit",
-    "resists": "--dwdwn-",
+    "resists": "--dwdZn-",
     "skills": ["Mabufula", "Mudoon"],
     "stats": [279, 469, 16, 48, 24, 44, 46]
   },
@@ -1639,13 +1912,14 @@
     "stats": [120, 152, 7, 10, 9, 8, 9]
   },
   "Phantom Master": {
+    "ailments": "---9---9",
     "area": "Steamy Bathhouse 3,4",
     "exp": 370,
     "lvl": 20,
     "material": "Magic Cloth",
     "price": 240,
     "race": "Hermit",
-    "resists": "----wwn-",
+    "resists": "----wZn-",
     "skills": ["Ghastly Wail"],
     "stats": [162, 189, 7, 16, 12, 10, 14]
   },
@@ -1675,14 +1949,15 @@
     "area": "Yukiko's Castle 4,5",
     "exp": 142,
     "lvl": 11,
-    "material": "Mustache Fiber",
+    "material": "Moustache Fiber",
     "price": 200,
     "race": "Emperor",
     "resists": "sw-r----",
-    "skills": [],
+    "skills": ["Summon"],
     "stats": [160, 43, 6, 5, 6, 5, 8]
   },
   "Power Castle": {
+    "ailments": "---9----",
     "area": "Secret Lab 7,8",
     "exp": 1830,
     "lvl": 54,
@@ -1690,10 +1965,11 @@
     "price": 370,
     "race": "Emperor",
     "resists": "rs-nw---",
-    "skills": ["Agilao", "Bufula", "Zionga", "Garula", "Mind Charge"],
+    "skills": ["Zionga", "Agilao", "Bufula", "Mind Charge", "Garula"],
     "stats": [299, 385, 29, 43, 26, 34, 24]
   },
   "Prime Magus": {
+    "ailmods": [125, 0, 125, 125, 0, 125, 125, 125],
     "area": "Heaven 1,2",
     "exp": 2980,
     "lvl": 56,
@@ -1705,6 +1981,7 @@
     "stats": [364, 472, 24, 44, 35, 38, 28]
   },
   "Primitive Idol": {
+    "ailments": "5--5---9",
     "area": "Yomotsu Hirasaka 2,3",
     "exp": 1950,
     "lvl": 77,
@@ -1715,7 +1992,7 @@
     "skills": ["Megido", "Megidola", "Megidolaon"],
     "stats": [338, 523, 31, 58, 55, 46, 42]
   },
-  "Protective Rexy": {
+  "Protective Lexy": {
     "area": "Void Quest 9",
     "exp": 975,
     "lvl": 46,
@@ -1733,11 +2010,13 @@
     "material": "Unknown Barrel",
     "price": 500,
     "race": "Chariot",
-    "resists": "-WW-----",
+    "resists": "--------",
+    "resmods": [0, 450, 450, 0, 0, 0, 0, 0],
     "skills": ["Vicious Strike", "Vile Assault", "Counterstrike", "Null Dizzy"],
     "stats": [521, 120, 64, 24, 56, 54, 53]
   },
   "Pure Papillon": {
+    "ailments": "9--5---5",
     "area": "Yomotsu Hirasaka 1-3",
     "exp": 2070,
     "lvl": 76,
@@ -1755,7 +2034,7 @@
     "material": "Gold Signature",
     "price": 440,
     "race": "Hierophant",
-    "resists": "-n-w-rw-",
+    "resists": "-n-w-rZ-",
     "skills": ["Mudoon", "Maragidyne"],
     "stats": [328, 523, 49, 57, 30, 47, 32]
   },
@@ -1766,8 +2045,8 @@
     "material": "Firm Cloth",
     "price": 230,
     "race": "Priestess",
-    "resists": "--r--w--",
-    "skills": ["Evil Touch"],
+    "resists": "--r--Z--",
+    "skills": ["Evil Touch", "Summon"],
     "stats": [125, 85, 14, 12, 10, 13, 12]
   },
   "Rain End Musha": {
@@ -1775,13 +2054,15 @@
     "exp": 3230,
     "lvl": 42,
     "material": "Rain Steel",
-    "price": 280,
+    "price": 320,
     "race": "Strength",
-    "resists": "SrrrrWW-",
+    "resists": "Srrrr33-",
+    "resmods": [90, 0, 0, 0, 0, 0, 0, 75],
     "skills": ["Vicious Strike", "Power Charge", "Sharp Student", "Null Dizzy"],
     "stats": [566, 73, 32, 18, 31, 30, 21]
   },
   "Rain Leg Musha": {
+    "ailmods": [250, 0, 250, 0, 0, 0, 0, 0],
     "area": "Marukyu Striptease (Rain) 7-9",
     "exp": 1470,
     "lvl": 34,
@@ -1789,6 +2070,7 @@
     "price": 290,
     "race": "Strength",
     "resists": "dddwdnn-",
+    "resmods": [0, 0, 0, 500, 0, 0, 0, 0],
     "skills": ["Rebellion"],
     "stats": [265, 79, 30, 18, 23, 22, 16]
   },
@@ -1800,6 +2082,7 @@
     "price": 280,
     "race": "Chariot",
     "resists": "dddwdnn-",
+    "resmods": [0, 0, 0, 300, 0, 0, 0, 0],
     "skills": [],
     "stats": [50, 56, 34, 9, 17, 19, 16]
   },
@@ -1810,11 +2093,13 @@
     "material": "Cascade Metal",
     "price": 420,
     "race": "Strength",
-    "resists": "SrdrdWWS",
+    "resists": "Srdrd33-",
+    "resmods": [90, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Power Charge", "Dodge Physical", "Null Dizzy"],
     "stats": [694, 126, 44, 37, 37, 46, 33]
   },
   "Rainbow Twins": {
+    "ailments": "---9---9",
     "area": "Secret Lab (Rain) 3,4",
     "exp": 1530,
     "lvl": 48,
@@ -1826,6 +2111,8 @@
     "stats": [250, 149, 37, 28, 23, 36, 27]
   },
   "Raindrop Castle": {
+    "ailments": "---9----",
+    "ailmods": [0, 0, 125, 0, 0, 0, 0, 125],
     "area": "Heaven (Rain) 2-4",
     "exp": 3300,
     "lvl": 58,
@@ -1833,10 +2120,12 @@
     "price": 390,
     "race": "Emperor",
     "resists": "ddddw-n-",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Agidyne", "Maragidyne", "Mind Charge"],
     "stats": [399, 309, 34, 36, 51, 29, 31]
   },
   "Raindrop Musha": {
+    "ailments": "---9----",
     "area": "Secret Lab (Rain) 5,6",
     "exp": 2050,
     "lvl": 51,
@@ -1844,6 +2133,7 @@
     "price": 360,
     "race": "Strength",
     "resists": "-wdddnn-",
+    "resmods": [0, 300, 0, 0, 0, 0, 0, 0],
     "skills": ["Balzac", "Dodge Physical"],
     "stats": [1050, 119, 39, 32, 16, 37, 29]
   },
@@ -1855,10 +2145,12 @@
     "price": 330,
     "race": "Strength",
     "resists": "dddwdnn-",
+    "resmods": [0, 0, 0, 500, 0, 0, 0, 0],
     "skills": ["Garudyne", "Re Patra"],
     "stats": [110, 193, 27, 30, 24, 30, 26]
   },
   "Rainy Brother 2": {
+    "ailments": "--99-999",
     "area": "Void Quest (Rain) 7,8",
     "exp": 805,
     "lvl": 43,
@@ -1877,6 +2169,7 @@
     "price": 280,
     "race": "Emperor",
     "resists": "ddddwnn-",
+    "resmods": [0, 0, 0, 0, 300, 0, 0, 0],
     "skills": ["Zionga"],
     "stats": [99, 20, 17, 18, 16, 17, 20]
   },
@@ -1888,10 +2181,12 @@
     "price": 220,
     "race": "Priestess",
     "resists": "nnwnnnn-",
+    "resmods": [0, 0, 300, 0, 0, 0, 0, 0],
     "skills": ["Maragi"],
     "stats": [92, 131, 2, 16, 12, 10, 12]
   },
   "Rainy Castle": {
+    "ailments": "--99---9",
     "area": "Void Quest (Rain) 1,2",
     "exp": 1040,
     "lvl": 37,
@@ -1903,6 +2198,7 @@
     "stats": [220, 296, 19, 29, 17, 25, 22]
   },
   "Rainy Pot": {
+    "ailments": "--99---9",
     "area": "Void Quest (Rain) 5,6",
     "exp": 900,
     "lvl": 41,
@@ -1921,10 +2217,12 @@
     "price": 330,
     "race": "Chariot",
     "resists": "dwdddnn-",
+    "resmods": [0, 500, 0, 0, 0, 0, 0, 0],
     "skills": ["Bufudyne"],
     "stats": [110, 193, 27, 30, 28, 27, 27]
   },
   "Rainy Sister 2": {
+    "ailments": "--99-999",
     "area": "Void Quest (Rain) 3,4",
     "exp": 640,
     "lvl": 40,
@@ -1937,12 +2235,13 @@
   },
   "Rainy Sister 3": {
     "area": "Marukyu Striptease (Rain) 1-4",
-    "exp": 203,
+    "exp": 600,
     "lvl": 28,
     "material": "3rd Girl's Talc",
-    "price": 600,
+    "price": 270,
     "race": "Empress",
     "resists": "ddwddnn-",
+    "resmods": [0, 0, 400, 0, 0, 0, 0, 0],
     "skills": ["Magaru", "Bash"],
     "stats": [80, 203, 18, 28, 13, 14, 16]
   },
@@ -1954,6 +2253,7 @@
     "price": 240,
     "race": "Magician",
     "resists": "nnwnnnn-",
+    "resmods": [0, 0, 300, 0, 0, 0, 0, 0],
     "skills": ["Agilao"],
     "stats": [80, 136, 12, 6, 10, 14, 14]
   },
@@ -1964,7 +2264,8 @@
     "material": "Platinum Gear",
     "price": 500,
     "race": "Chariot",
-    "resists": "W--ws--s",
+    "resists": "3--ws---",
+    "resmods": [0, 0, 0, 100, 0, 0, 0, 5],
     "skills": ["Mind Slice", "High Counter"],
     "stats": [385, 169, 57, 45, 57, 54, 41]
   },
@@ -1991,24 +2292,27 @@
     "stats": [308, 428, 48, 62, 49, 54, 39]
   },
   "Reckless Okina": {
+    "ailmods": [0, 0, 0, 0, 125, 0, 0, 125],
     "area": "Heaven 5",
     "exp": 3010,
     "lvl": 61,
     "material": "Practical Cloth",
     "price": 400,
     "race": "Hermit",
-    "resists": "-----wn-",
+    "resists": "-----Zn-",
     "skills": ["Garudyne", "Magarula", "Garula", "Old One"],
     "stats": [322, 354, 27, 46, 36, 42, 34]
   },
   "Reckoning Dice": {
+    "ailments": "9--9---9",
     "area": "Yomotsu Hirasaka 7,8",
     "exp": 2660,
     "lvl": 82,
     "material": "Vengeance Steel",
     "price": 510,
     "race": "Fortune",
-    "resists": "Wrrrr--W",
+    "resists": "-rrrr---",
+    "resmods": [150, 0, 0, 0, 0, 0, 0, 600],
     "skills": ["Last Resort"],
     "stats": [500, 189, 50, 50, 50, 50, 50]
   },
@@ -2020,6 +2324,7 @@
     "price": 350,
     "race": "Hierophant",
     "resists": "sdwssn--",
+    "resmods": [0, 0, 500, 0, 0, 0, 0, 0],
     "skills": ["Agilao", "Maragion", "Dodge Ice", "Balzac"],
     "stats": [247, 405, 33, 38, 21, 32, 27]
   },
@@ -2031,10 +2336,12 @@
     "price": 450,
     "race": "Hermit",
     "resists": "-wr-r---",
+    "resmods": [0, 50, 0, 0, 0, 0, 0, 0],
     "skills": ["Ziodyne", "Maziodyne", "Mind Charge", "Old One", "Enervate Boost"],
     "stats": [472, 519, 33, 72, 38, 48, 45]
   },
   "Regal Mother": {
+    "ailmods": [125, 0, 125, 125, 0, 125, 125, 125],
     "area": "Heaven 3-5",
     "exp": 2900,
     "lvl": 60,
@@ -2052,11 +2359,12 @@
     "material": "Oracle Textile",
     "price": 400,
     "race": "Priestess",
-    "resists": "--s--w--",
+    "resists": "--s--Z--",
     "skills": ["Diarama", "Mind Slice"],
     "stats": [256, 149, 33, 31, 31, 44, 44]
   },
   "Royal Dancer": {
+    "ailments": "-9------",
     "area": "Secret Lab 1,2",
     "exp": 1410,
     "lvl": 47,
@@ -2096,7 +2404,8 @@
     "material": "Selfish Ornament",
     "price": 240,
     "race": "Magician",
-    "resists": "-wwwwwws",
+    "resists": "-wwwwZZs",
+    "resmods": [0, 0, 0, 0, 0, 0, 0, 5],
     "skills": ["Zionga", "Null Dizzy"],
     "stats": [168, 80, 13, 12, 16, 8, 12]
   },
@@ -2109,7 +2418,7 @@
     "race": "Hermit",
     "resists": "---w-rn-",
     "skills": ["Garula", "Magarula", "Old One"],
-    "stats": [267, 322, 27, 28, 20, 32, 32]
+    "stats": [267, 322, 27, 38, 20, 32, 32]
   },
   "Silent Book": {
     "area": "Magatsu Mandala 2-5",
@@ -2129,7 +2438,7 @@
     "material": "Red-Gold Cord",
     "price": 470,
     "race": "Strength",
-    "resists": "-WWWW---",
+    "resists": "-3333---",
     "skills": ["Vicious Strike"],
     "stats": [430, 179, 46, 35, 54, 53, 55]
   },
@@ -2156,6 +2465,7 @@
     "stats": [245, 440, 15, 35, 18, 24, 17]
   },
   "Slaughter Drive": {
+    "ailments": "-9------",
     "area": "Magatsu Mandala 6",
     "exp": 4460,
     "lvl": 74,
@@ -2163,6 +2473,7 @@
     "price": 450,
     "race": "Chariot",
     "resists": "---w----",
+    "resmods": [0, 0, 0, 50, 0, 0, 0, 0],
     "skills": ["Deathbound"],
     "stats": [311, 150, 53, 38, 36, 47, 41]
   },
@@ -2177,7 +2488,20 @@
     "skills": ["Megidola", "Anima Freeze"],
     "stats": [255, 60, 34, 56, 30, 50, 42]
   },
+  "Sleeping Table B": {
+    "ailments": "NNNNNNNN",
+    "area": "Yomotsu Hirasaka 6",
+    "exp": 24570,
+    "lvl": 82,
+    "material": "-",
+    "price": 520,
+    "race": "Magician P",
+    "resists": "-----nn-",
+    "skills": ["Maragidyne", "Mahamaon", "Megidolaon", "Evil Smile", "Ghastly Wail"],
+    "stats": [2000, 2000, 42, 54, 67, 55, 75]
+  },
   "Solemn Machine": {
+    "ailments": "-9------",
     "area": "Magatsu Mandala 6",
     "exp": 13290,
     "lvl": 78,
@@ -2217,11 +2541,13 @@
     "material": "Source Lump",
     "price": 340,
     "race": "Strength",
-    "resists": "s----w--",
+    "resists": "s----Z--",
+    "resmods": [5, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Valiant Dance"],
     "stats": [170, 44, 40, 28, 20, 29, 25]
   },
   "Spastic Turret": {
+    "ailments": "9999-999",
     "area": "Magatsu Mandala 6",
     "exp": 4660,
     "lvl": 75,
@@ -2244,6 +2570,7 @@
     "stats": [142, 242, 13, 24, 25, 25, 28]
   },
   "Stasis Giant": {
+    "ailmods": [0, 0, 0, 0, 0, 0, 0, 125],
     "area": "Heaven 6,7",
     "exp": 2940,
     "lvl": 63,
@@ -2251,6 +2578,7 @@
     "price": 410,
     "race": "Justice",
     "resists": "s---w---",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Vicious Strike", "Counter", "Null Dizzy"],
     "stats": [456, 96, 55, 35, 48, 35, 22]
   },
@@ -2261,7 +2589,8 @@
     "material": "Tungsten",
     "price": 340,
     "race": "Justice",
-    "resists": "sssss--s",
+    "resists": "sssss---",
+    "resmods": [10, 10, 10, 10, 10, 0, 0, 5],
     "skills": ["Navas Nebula", "Null Dizzy"],
     "stats": [65, 55, 41, 14, 34, 30, 22]
   },
@@ -2277,13 +2606,14 @@
     "stats": [345, 259, 44, 69, 51, 56, 42]
   },
   "Strength Beetle": {
+    "ailments": "9--9---9",
     "area": "Void Quest 5,6",
     "exp": 815,
     "lvl": 40,
     "material": "Golden Horn",
     "price": 320,
     "race": "Emperor",
-    "resists": "-rrrrrw-",
+    "resists": "-rrrrrZ-",
     "skills": ["Garudyne"],
     "stats": [180, 164, 31, 25, 28, 27, 16]
   },
@@ -2294,33 +2624,39 @@
     "material": "Invincible Felt",
     "price": 510,
     "race": "Hanged",
-    "resists": "sddww--s",
+    "resists": "sddww---",
+    "resmods": [0, 0, 0, 200, 200, 0, 0, 5],
     "skills": ["Tetrakarn", "Makarakarn", "Matarukaja", "Marakukaja", "Skull Cracker", "Null Dizzy"],
     "stats": [307, 300, 33, 34, 72, 60, 52]
   },
   "Supreme Hand": {
+    "ailments": "NNNNNNNN",
     "area": "Void Quest (Rare) 1-9",
     "exp": 1,
     "lvl": 40,
-    "material": "-",
+    "material": "Chest Key",
     "price": 9000,
     "race": "Magician",
-    "resists": "snnnnnnW",
+    "resists": "snnnnnn-",
+    "resmods": [50, 0, 0, 0, 0, 0, 0, 300],
     "skills": [],
     "stats": [500, 200, 20, 30, 30, 30, 20]
   },
   "Trance Twins": {
+    "ailments": "NNNNNNNN",
     "area": "Yukiko's Castle 3-5",
-    "exp": 61,
+    "exp": 146,
     "lvl": 7,
     "material": "Wonder Cloth",
-    "price": 200,
+    "price": 180,
     "race": "Hierophant",
     "resists": "swnnnnn-",
+    "resmods": [50, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Mabufu"],
     "stats": [70, 22, 5, 5, 3, 6, 6]
   },
   "Tranquil Idol": {
+    "ailments": "---9---9",
     "area": "Steamy Bathhouse 7,8",
     "exp": 400,
     "lvl": 22,
@@ -2328,14 +2664,16 @@
     "price": 240,
     "race": "Priestess",
     "resists": "-SSSS-w-",
+    "resmods": [0, 90, 90, 90, 90, 0, 200, 0],
     "skills": ["Marakunda", "Bufu", "Mabufu"],
     "stats": [185, 165, 10, 15, 11, 15, 15]
   },
   "Treasure Hand": {
+    "ailments": "99999999",
     "area": "Marukyu Striptease (Rare) 1-10",
     "exp": 1,
     "lvl": 30,
-    "material": "-",
+    "material": "Chest Key",
     "price": 6000,
     "race": "Magician",
     "resists": "--------",
@@ -2349,7 +2687,7 @@
     "material": "Guard Stationery",
     "price": 370,
     "race": "Priestess",
-    "resists": "-wd--wn-",
+    "resists": "-wd--Zn-",
     "skills": ["Fatal End"],
     "stats": [212, 138, 39, 27, 24, 41, 36]
   },
@@ -2365,13 +2703,14 @@
     "stats": [288, 206, 46, 39, 30, 48, 41]
   },
   "Vehement Idol": {
+    "ailments": "-------9",
     "area": "Magatsu Inaba 1,2",
     "exp": 3430,
     "lvl": 68,
     "material": "Calm Marble",
     "price": 420,
     "race": "Priestess",
-    "resists": "-w---nw-",
+    "resists": "-w---nZ-",
     "skills": ["Bufudyne", "Mabufudyne", "Diarama"],
     "stats": [301, 487, 40, 52, 26, 43, 42]
   },
@@ -2382,11 +2721,12 @@
     "material": "Haori Iron",
     "price": 280,
     "race": "Empress",
-    "resists": "--w---w-",
+    "resists": "--w---Z-",
     "skills": ["Hama"],
     "stats": [216, 140, 18, 20, 16, 22, 16]
   },
   "Vicious Raven": {
+    "ailments": "-9-9-999",
     "area": "Steamy Bathhouse 5,6",
     "exp": 240,
     "lvl": 20,
@@ -2398,6 +2738,7 @@
     "stats": [105, 98, 8, 12, 12, 16, 12]
   },
   "Void Giant": {
+    "ailments": "---9----",
     "area": "Yomotsu Hirasaka 8",
     "exp": 2670,
     "lvl": 82,
@@ -2409,13 +2750,15 @@
     "stats": [822, 133, 75, 53, 54, 34, 49]
   },
   "Wealth Hand": {
+    "ailments": "NNNNNNNN",
     "area": "Steamy Bathhouse (Rare) 1-10",
     "exp": 1,
     "lvl": 20,
-    "material": "-",
+    "material": "Chest Key",
     "price": 3000,
     "race": "Magician",
-    "resists": "ssswsnnW",
+    "resists": "ssswsnn-",
+    "resmods": [50, 50, 50, 200, 50, 0, 0, 200],
     "skills": ["Agilao", "Maragi", "Garula", "Magaru"],
     "stats": [300, 130, 15, 10, 15, 10, 10]
   },
@@ -2431,6 +2774,7 @@
     "stats": [254, 334, 18, 29, 17, 30, 24]
   },
   "Wicked Turret": {
+    "ailments": "9999-999",
     "area": "Secret Lab 7,8",
     "exp": 3480,
     "lvl": 53,
@@ -2442,6 +2786,7 @@
     "stats": [455, 201, 42, 25, 29, 35, 23]
   },
   "Wild Drive": {
+    "ailments": "99--9---",
     "area": "Secret Lab 5,6",
     "exp": 1680,
     "lvl": 51,
@@ -2449,10 +2794,12 @@
     "price": 360,
     "race": "Chariot",
     "resists": "n-rw----",
+    "resmods": [0, 0, 0, 250, 0, 0, 0, 0],
     "skills": ["Matarukaja", "Kill Rush", "Poison Skewer"],
     "stats": [270, 120, 38, 27, 21, 37, 27]
   },
   "Wondrous Magus": {
+    "ailments": "9--9---9",
     "area": "Steamy Bathhouse 7-10",
     "exp": 440,
     "lvl": 25,
@@ -2464,17 +2811,31 @@
     "stats": [165, 269, 1, 19, 10, 16, 15]
   },
   "World Balance": {
+    "ailments": "99999999",
     "area": "Secret Lab 5,6",
     "exp": 2450,
     "lvl": 52,
     "material": "Shining Dish",
     "price": 360,
-    "race": "Fortune",
-    "resists": "sssssww-",
+    "race": "Justice",
+    "resists": "sssssZZ-",
     "skills": ["Ziodyne"],
     "stats": [210, 576, 11, 55, 21, 35, 34]
   },
+  "World Balance B": {
+    "ailments": "NNNNNNNN",
+    "area": "Heaven 7",
+    "exp": 22980,
+    "lvl": 63,
+    "material": "-",
+    "price": 410,
+    "race": "Justice P",
+    "resists": "-----nn-",
+    "skills": ["Agidyne", "Bufudyne", "Ziodyne", "Garudyne", "Mind Charge"],
+    "stats": [1200, 1000, 45, 45, 45, 45, 45]
+  },
   "Wrathful Book": {
+    "ailments": "9--9---9",
     "area": "Yomotsu Hirasaka 1",
     "exp": 2080,
     "lvl": 76,
@@ -2492,7 +2853,7 @@
     "material": "Orb of Love",
     "price": 430,
     "race": "Priestess",
-    "resists": "-d---wr-",
+    "resists": "-d---Zr-",
     "skills": ["Atom Smasher", "Ghastly Wail", "Fear Boost"],
     "stats": [298, 230, 47, 43, 34, 43, 37]
   }

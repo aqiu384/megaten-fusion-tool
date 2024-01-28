@@ -75,7 +75,7 @@ export class Compendium implements ICompendium {
           inherits: 0,
           stats:    enemy['stats'].slice(0, 2),
           estats:   enemy['stats'].slice(2),
-          resists:  enemy['resists'].toLowerCase().split('').map(x => resistCodes[x]),
+          resists:  enemy['resists'].split('').map(x => resistCodes[x]),
           skills:   enemy['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
           fusion:   'normal',
           area:     enemy['area'],
