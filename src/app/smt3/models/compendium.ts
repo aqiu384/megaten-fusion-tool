@@ -47,6 +47,10 @@ export class Compendium implements ICompendium {
       resistLvls[res] = code % 1000 / 2.5 | 0;
     }
 
+    const codifyResists = (resCode: string, resLvls: number) =>
+      resCode.split('').map((x, i) =>
+        resistCodes[x] + (resLvls?.[i] / 2.5 | 0 || resistLvls[x]));
+
     for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
       demons[name] = {
         name: name,
@@ -56,9 +60,7 @@ export class Compendium implements ICompendium {
         price: Compendium.estimateBasePrice(json.stats),
         inherits: 0,
         stats: json.stats,
-        resists: json.resists.split('').map((x, i) => resistCodes[x] +
-          (json['resmods'] ? json['resmods'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
-        ),
+        resists: codifyResists(json.resists, json['resmods']),
         affinities: json.inherits.split('').map(char => char === 'o' ? 1 : 0),
         skills: json.skills,
         fusion: 'normal',

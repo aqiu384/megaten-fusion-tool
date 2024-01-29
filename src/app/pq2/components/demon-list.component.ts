@@ -45,13 +45,13 @@ export class DemonListContainerComponent extends DLCC {
 
     this.appName = `List of Personas - ${fusionDataService.appName}`;
     this.statHeaders = this.compConfig.baseStats;
-    this.resistHeaders = this.compConfig.resistElems;
+    this.resistHeaders = this.compConfig.hasDemonResists ? this.compConfig.resistElems : [];
     this.inheritOrder = this.compConfig.elemOrder;
 
     if (this.showEnemies) {
       this.appName = `List of Shadows - ${fusionDataService.appName}`;
       this.statHeaders = this.compConfig.enemyStats;
-      this.resistHeaders = this.compConfig.enemyResists;
+      this.resistHeaders = this.compConfig.resistElems;
       this.inheritOrder = null;
     }
 

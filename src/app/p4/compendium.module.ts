@@ -85,6 +85,7 @@ function createCompConfig(): CompendiumConfigSet {
       baseStats: COMP_CONFIG_JSON.baseStats,
       skillElems,
       resistElems: COMP_CONFIG_JSON.resistElems,
+      ailmentElems: COMP_CONFIG_JSON.ailments.map(x => x.slice(0, 3)),
       affinityElems: INHERIT_TYPES_JSON.elems,
       resistCodes: COMP_CONFIG_JSON.resistCodes,
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),

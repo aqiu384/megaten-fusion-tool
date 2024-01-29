@@ -1,8 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
-import { Demon } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
-import { CompendiumConfig } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-enemy-entry',
@@ -31,10 +30,14 @@ import { CompendiumConfig } from '../models';
       </tbody>
     </table>
     <app-demon-resists
-      [resistHeaders]="compConfig.enemyResists"
-      [resists]="demon.resists">
+      [resistHeaders]="compConfig.resistElems"
+      [resists]="demon.resists"
+      [ailmentHeaders]="compConfig.ailmentElems"
+      [ailments]="demon.ailments">
     </app-demon-resists>
     <app-demon-skills
+      [hasRank]="true"
+      [hasTarget]="true"
       [elemOrder]="compConfig.elemOrder"
       [compendium]="compendium"
       [skillLevels]="demon.skills">

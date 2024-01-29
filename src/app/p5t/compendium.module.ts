@@ -79,17 +79,19 @@ function createCompConfig(): CompendiumConfig {
 
     demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
     baseStats: ['HP', 'MP', 'MD', 'GD'],
-    resistElems: [],
+    resistElems,
     inheritTypes,
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
     enemyData: [],
     enemyStats: ['HP', 'Atk', 'Def'],
-    enemyResists: resistElems,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: false,
+    hasDemonResists: false,
+    hasEnemies: false,
+    hasQrcodes: false,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'p5t-fusion-tool-settings',

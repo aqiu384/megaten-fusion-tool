@@ -1,9 +1,11 @@
-import { Demon as BaseDemon, Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
+
+type NumDict = { [name: string]: number };
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
-  private enemies: { [name: string]: BaseDemon };
+  private enemies: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
   private specialRecipes: { [name: string]: string[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
@@ -11,7 +13,7 @@ export class Compendium implements ICompendium {
 
   private allIngredients: { [race: string]: number[] };
   private allResults: { [race: string]: number[] };
-  private _allDemons: BaseDemon[];
+  private _allDemons: Demon[];
   private _allSkills: Skill[];
 
   constructor(private compConfig: CompendiumConfig) {
@@ -21,16 +23,23 @@ export class Compendium implements ICompendium {
 
   initImportedData() {
     const demons:   { [name: string]: Demon } = {};
-    const enemies:  { [name: string]: BaseDemon } = {};
+    const enemies:  { [name: string]: Demon } = {};
     const skills:   { [name: string]: Skill } = {};
     const specials: { [name: string]: string[] } = {};
     const inverses: { [race: string]: { [lvl: number]: string } } = {};
     const invertedSpecials: { [ingred: string]: string[] } = {};
-    const resistCodes: { [code: string]: number } = {};
+    const resistCodes: NumDict = {};
+    const resistLvls: NumDict = {};
+    const blankAilments = '-'.repeat(this.compConfig.ailmentElems.length);
 
     for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
-      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+      resistCodes[res] = (code / 10000 | 0) << 10;
+      resistLvls[res] = code % 10000 / 2.5 | 0;
     }
+
+    const codifyResists = (resCode: string, blankCode: string, resLvls: number) =>
+      (resCode || blankCode).split('').map((x, i) =>
+        resistCodes[x] + (resLvls?.[i] / 2.5 | 0 || resistLvls[x]));
 
     for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
@@ -44,7 +53,8 @@ export class Compendium implements ICompendium {
           inherits:   parseInt(((json['affinities'] || [0]).map(a => a > 0 ? 1 : 0)).join(''), 2),
           affinities: json['affinities'],
           stats:      json['stats'],
-          resists:    json['resists'].split('').map(x => resistCodes[x]),
+          resists:    codifyResists(json['resists'], json['resists'], json['resmods']),
+          ailments:   codifyResists(json['ailments'], blankAilments, json['ailmods']),
           skills:     json['skills'],
           fusion:     json['fusion'] || 'normal',
           prereq:     json['prereq'] || ''
@@ -71,11 +81,13 @@ export class Compendium implements ICompendium {
           race:     enemy['race'],
           lvl:      enemy['lvl'],
           currLvl:  enemy['lvl'],
+          cardLvl:  0,
           price:    0,
           inherits: 0,
           stats:    enemy['stats'].slice(0, 2),
           estats:   enemy['stats'].slice(2),
-          resists:  enemy['resists'].split('').map(x => resistCodes[x]),
+          resists:  codifyResists(enemy['resists'], enemy['resists'], enemy['resmods']),
+          ailments: codifyResists(enemy['ailments'], blankAilments, enemy['ailmods']),
           skills:   enemy['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
           fusion:   'normal',
           area:     enemy['area'],
@@ -181,7 +193,7 @@ export class Compendium implements ICompendium {
     this.allResults = results;
   }
 
-  get allDemons(): BaseDemon[] {
+  get allDemons(): Demon[] {
     return this._allDemons;
   }
 
@@ -193,7 +205,7 @@ export class Compendium implements ICompendium {
     return Object.keys(this.specialRecipes).map(name => this.demons[name]);
   }
 
-  getDemon(name: string): BaseDemon {
+  getDemon(name: string): Demon {
     return this.demons[name] || this.enemies[name];
   }
 

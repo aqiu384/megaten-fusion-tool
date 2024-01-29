@@ -65,7 +65,6 @@ function createCompConfig(): CompendiumConfig {
 
   for (const [name, enemy] of Object.entries(ENEMY_DATA_JSON)) {
     enemy['stats'] = enemy['stats'].slice(0, 3);
-    enemy['ailments'] = enemy['ailments'] || '----------';
     enemy['skills'] = enemy['skills'] || [];
     enemy['drops'] = enemy['drops'] || [];
 
@@ -106,15 +105,17 @@ function createCompConfig(): CompendiumConfig {
 
     demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
     baseStats: ['HP', 'MP'],
-    resistElems: [],
+    resistElems,
 
     enemyData,
     enemyStats: ['HP', 'Atk', 'Def'],
-    enemyResists: resistElems,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: true,
+    hasDemonResists: false,
+    hasEnemies: true,
+    hasQrcodes: true,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq2-fusion-tool-settings',

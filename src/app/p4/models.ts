@@ -1,6 +1,7 @@
 import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
+  ailments: number[];
   card?: string;
   cardLvl: number;
 }
@@ -16,6 +17,7 @@ export interface CompendiumConfig extends BaseComp {
   baseStats: string[];
   skillElems: string[];
   resistElems: string[];
+  ailmentElems: string[];
   affinityElems: string[];
   resistCodes: { [code: string]: number };
   elemOrder: { [elem: string]: number };

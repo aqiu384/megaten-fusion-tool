@@ -16,16 +16,18 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class CompendiumComponent {
   appCssClasses: string[];
-  otherLinks: { title: string, link: string }[] = [
-    { title: 'Shadow List', link: 'shadows' },
-    { title: 'QR Code Generator', link: 'qrcodes' }
-  ];
+  otherLinks: { title: string, link: string }[];
 
   constructor(fusionDataService: FusionDataService) {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
+    const compConfig = fusionDataService.compConfig;
+    this.otherLinks = [compConfig.hasQrcodes ? 
+      { title: 'QR Code Generator', link: 'qrcodes', } :
+      { title: 'Recipe Generator', link: 'recipes' }
+    ];
 
-    if (!fusionDataService.compConfig.hasTripleFusion) {
-      this.otherLinks = [{ title: 'Recipe Generator', link: 'recipes' }]
+    if (compConfig.hasEnemies) {
+      this.otherLinks.unshift({ title: 'Shadow List', link: 'shadows' });
     }
   }
 }

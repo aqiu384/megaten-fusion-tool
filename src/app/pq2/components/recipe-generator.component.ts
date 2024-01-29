@@ -27,7 +27,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
-    this.maxSkills = compConfig.hasTripleFusion ? 6 : 2;
+    this.maxSkills = compConfig.hasDemonResists ? 8 : 2;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
       fusionCalculator: this.fusionDataService.fusionCalculator,

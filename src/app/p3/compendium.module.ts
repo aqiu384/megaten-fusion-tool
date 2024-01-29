@@ -46,7 +46,6 @@ function createCompConfig(): CompendiumConfigSet {
     races.push(race + ' P');
   }
 
-
   for (let [i, ratio] of INHERIT_TYPES_JSON.ratios.entries()) {
     affinityTypes[INHERIT_TYPES_JSON.inherits[i]] = ratio.map(x => x > 1 ? x : 0);
   }
@@ -57,9 +56,11 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const skillSet of [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON, P3P_SKILL_DATA_JSON]) {
     for (const entry of Object.values(skillSet)) {
-      const cost = entry['cost'];
-      const costType = cost > 100 ? (cost > 1000 ? COST_MP - 1000 : COST_MP_PER - 100) : COST_HP;
-      entry['cost'] = cost ? cost + costType: 0;
+      if (entry['cost'] < 2000) {
+        const cost = entry['cost'];
+        const costType = cost > 100 ? (cost > 1000 ? COST_MP - 1000 : COST_MP_PER - 100) : COST_HP;
+        entry['cost'] = cost ? cost + costType: 0;
+      }
     }
   }
 
@@ -99,7 +100,7 @@ function createCompConfig(): CompendiumConfigSet {
     FES_DEMON_DATA_JSON[name]['prereq'] = prereq;
   }
 
-  for (const game of ['p3', 'p3fes', 'p3aeg', 'p3p']) {
+  for (const game of ['p3', 'p3f', 'p3a', 'p3p']) {
     compConfigs[game] = {
       appTitle: 'Persona 3',
       appCssClasses: ['p3'],
@@ -109,6 +110,7 @@ function createCompConfig(): CompendiumConfigSet {
       baseStats: COMP_CONFIG_JSON.baseStats,
       skillElems,
       resistElems: COMP_CONFIG_JSON.resistElems,
+      ailmentElems: COMP_CONFIG_JSON.ailments.map(x => x.slice(0, 3)),
       affinityElems: INHERIT_TYPES_JSON.elems,
       resistCodes: COMP_CONFIG_JSON.resistCodes,
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
@@ -130,15 +132,15 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p3.normalTable = VAN_FUSION_CHART_JSON;
   compConfigs.p3.specialRecipes = VAN_SPECIAL_RECIPES_JSON;
 
-  compConfigs.p3fes.appTitle = 'Persona 3 FES';
-  compConfigs.p3fes.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, FES_PARTY_DATA_JSON];
-  compConfigs.p3fes.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
+  compConfigs.p3f.appTitle = 'Persona 3 FES';
+  compConfigs.p3f.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, FES_PARTY_DATA_JSON];
+  compConfigs.p3f.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
 
-  compConfigs.p3aeg.appTitle = 'Persona 3 FES: The Answer';
-  compConfigs.p3aeg.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON];
-  compConfigs.p3aeg.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
-  compConfigs.p3aeg.enemyData = [ANS_ENEMY_DATA_JSON];
-  compConfigs.p3aeg.specialRecipes = PAIR_SPECIAL_RECIPES_JSON;
+  compConfigs.p3a.appTitle = 'Persona 3 FES: The Answer';
+  compConfigs.p3a.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON];
+  compConfigs.p3a.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
+  compConfigs.p3a.enemyData = [ANS_ENEMY_DATA_JSON];
+  compConfigs.p3a.specialRecipes = PAIR_SPECIAL_RECIPES_JSON;
 
   compConfigs.p3p.appTitle = 'Persona 3 Portable';
   compConfigs.p3p.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, P3P_DEMON_DATA_JSON, P3P_PARTY_DATA_JSON];

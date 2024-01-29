@@ -52,11 +52,16 @@ export class Compendium implements ICompendium {
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const resistCodes: NumDict = {};
     const resistLvls: NumDict = {};
+    const blankAilments = '-'.repeat(Ailments.length);
 
     for (const [res, code] of Object.entries(ResistCodes)) {
       resistCodes[res] = (code / 1000 | 0) << 10;
       resistLvls[res] = code % 1000 / 2.5 | 0;
     }
+
+    const codifyResists = (resCode: string, blankCode: string, resLvls: number) =>
+      (resCode || blankCode).split('').map((x, i) =>
+        resistCodes[x] + (resLvls?.[i] / 2.5 | 0 || resistLvls[x]));
 
     const blankAils = Array(Ailments.length).fill('-').join('');
     const demonDataJsons: any = [DEMON_DATA_JSON];
@@ -115,12 +120,8 @@ export class Compendium implements ICompendium {
           stats:    json['stats'],
           price:    Compendium.estimateBasePrice(json['stats'], json['pcoeff']),
           inherits: 0,
-          resists:    json['resists'].split('').map((x, i) => resistCodes[x] +
-            (json['resmods'] ? json['resmods'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
-          ),
-          ailments:   (json['ailments'] || blankAils).split('').map((x, i) => resistCodes[x] +
-            (json['ailmods'] ? json['ailmods'][i] / 2.5 | 0 || resistLvls[x] : resistLvls[x])
-          ),
+          resists:  codifyResists(json['resists'], json['resists'], json['resmods']),
+          ailments: codifyResists(json['ailments'], blankAilments, json['ailmods']),
           affinities: json['inherits'].split('').map(char => char === 'o' ? 1 : 0),
           skills:   json['skills'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),
           source:   json['source'].reduce((acc, skill, i) => { acc[skill] = i - 3; return acc; }, {}),

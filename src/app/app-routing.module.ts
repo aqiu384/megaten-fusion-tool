@@ -136,12 +136,12 @@ const appRoutes: Routes = [
     data: { appName: 'Persona 3' }
   },
   {
-    path: 'p3fes',
+    path: 'p3f',
     loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Persona 3 FES' }
   },
   {
-    path: 'p3aeg',
+    path: 'p3a',
     loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Persona 3 FES: The Answer' }
   },
@@ -149,6 +149,11 @@ const appRoutes: Routes = [
     path: 'p3p',
     loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Persona 3 Portable' }
+  },
+  {
+    path: 'p3r',
+    loadChildren: () => import('./p3r/compendium.module').then(m => m.CompendiumModule),
+    data: { appName: 'Persona 3 Reload' }
   },
   {
     path: 'p4',

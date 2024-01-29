@@ -40,11 +40,13 @@ export interface CompendiumConfig extends BaseComp {
 
   enemyData;
   enemyStats: string[];
-  enemyResists: string[];
 
   demonUnlocks: DemonUnlock[];
   normalTable;
   hasTripleFusion: boolean;
+  hasDemonResists: boolean;
+  hasEnemies: boolean;
+  hasQrcodes: boolean;
   specialRecipes?;
 
   settingsKey: string;

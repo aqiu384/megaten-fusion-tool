@@ -30,7 +30,7 @@ import { Demon, CompendiumConfig } from '../models';
       </tbody>
     </table>
     <app-demon-resists
-      [resistHeaders]="compConfig.enemyResists"
+      [resistHeaders]="compConfig.resistElems"
       [resists]="demon.resists"
       [ailmentHeaders]="compConfig.ailmentElems"
       [ailments]="demon.ailments">

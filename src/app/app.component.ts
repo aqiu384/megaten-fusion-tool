@@ -51,7 +51,7 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
 export class AppComponent implements OnInit {
   static readonly GAME_PREFIXES: { [game: string]: string } = {
     smtdsj: 'smtsj',
-    p3fes: 'p3', p3aeg: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5',
+    p3f: 'p3', p3a: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5',
     dso: 'ds1', ds2br: 'ds2'
   };
 

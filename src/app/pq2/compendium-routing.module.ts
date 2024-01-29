@@ -9,6 +9,7 @@ import { PasswordGeneratorContainerComponent } from './components/password-gener
 import { FusionSettingsContainerComponent } from './components/fusion-settings.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
+import { SmtFissionPreviewComponent } from '../compendium/components/fission-preview-table.component';
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
@@ -88,6 +89,10 @@ const compendiumRoutes: Routes = [
       {
         path: 'settings',
         component: FusionSettingsContainerComponent
+      },
+      {
+        path: 'previews',
+        component: SmtFissionPreviewComponent
       }
     ]
   },

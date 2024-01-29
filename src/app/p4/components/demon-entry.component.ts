@@ -3,8 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { Demon } from '../../compendium/models';
-import { CompendiumConfig } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';

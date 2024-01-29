@@ -22,6 +22,10 @@ import { FusionDataService } from '../fusion-data.service';
         [stats]="demon.stats"
         [inherits]="demon.inherits">
       </app-demon-stats>
+      <app-demon-resists *ngIf="compConfig.hasDemonResists"
+        [resistHeaders]="compConfig.resistElems"
+        [resists]="demon.resists">
+      </app-demon-resists>
       <app-demon-inherits
         [inheritHeaders]="compConfig.inheritElems"
         [inherits]="compendium.getInheritElems(demon.inherits)">
