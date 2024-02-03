@@ -32,7 +32,7 @@ import { createSkillsRecipe } from '../models/recipe-generator';
       <table formArrayName="ingreds" class="entry-table">
         <tr><th colspan="5" class="title">{{ langEn ? 'Include Ingredients' : '素材悪魔' }}</th></tr>
         <tr>
-          <th style="width: 20%">{{ langEn ? 'Search' : 'スキル検索' }}</th>
+          <th style="width: 20%">{{ langEn ? 'Filter By' : 'スキル検索' }}</th>
           <th style="width: 10%">{{ langEn ? 'Elem' : '属性' }}</th>
           <th style="width: 25%">{{ langEn ? 'Skill' : 'スキル名' }}</th>
           <th style="width: 20%">{{ langEn ? 'Race' : '種族' }}</th>
@@ -41,7 +41,7 @@ import { createSkillsRecipe } from '../models/recipe-generator';
         <ng-container *ngFor="let ingred of form.controls.ingreds['controls']; let i = index" [formGroupName]="i">
           <tr *ngIf="i < maxSkills">
             <td>
-              <label>{{ langEn ? 'Search Skill' : 'スキル検索' }}
+              <label>{{ langEn ? 'Learns skill #' + (i + 1) : 'スキル検索' }}
                 <input formControlName="searchSkill" type="checkbox"
                 (change)="setIngredDemon(ingred)">
               </label>
