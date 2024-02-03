@@ -33,7 +33,6 @@ function createCompConfig(): CompendiumConfig {
 
   for (const demon of Object.values(DEMON_DATA_JSON)) {
     demon['code'] = 1;
-    demon['inherit'] = 'alm';
     demon['price'] = demon['lvl']**2 * 100;
   }
 

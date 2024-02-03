@@ -15,7 +15,7 @@ Fusion tool framework for Megami Tensei games.
 * Enemy Table (Persona Series)
 * Password Generator (Strange Journey and Redux)
 * QR Code Generator (Persona Q and Q2)
-* Recipe Generator (IV, Apocalypse, V, SH2, P4G, P5, and P5R)
+* Recipe Generator (IV, Apocalypse, V, SH2, Persona)
 * DLC Demon/Persona Settings
 
 ## Supported Megami Tensei Games
@@ -43,6 +43,7 @@ Fusion tool framework for Megami Tensei games.
 * [Persona 3 FES](https://aqiu384.github.io/megaten-fusion-tool/p3f/personas)
 * [Persona 3 FES: The Answer](https://aqiu384.github.io/megaten-fusion-tool/p3a/personas)
 * [Persona 3 Portable](https://aqiu384.github.io/megaten-fusion-tool/p3p/personas)
+* [Persona 3 Reload](https://aqiu384.github.io/megaten-fusion-tool/p3r/personas)
 * [Persona 4](https://aqiu384.github.io/megaten-fusion-tool/p4/personas)
 * [Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g/personas)
 * [Persona 5](https://aqiu384.github.io/megaten-fusion-tool/p5/personas)
