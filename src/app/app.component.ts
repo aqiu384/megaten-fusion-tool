@@ -15,10 +15,10 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
               <a routerLink="ja/home">ゲーム一覧 (日本語)</a>
             </th>
             <th class="nav external" style="width: 20%;">
-              <div><a href="https://aqiu384.github.io/docs-megaten/how-to-use#save-offline">{{ langEn ? 'Save Offline' : 'オフラインセーブ' }}</a></div>
+              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use#save-offline">{{ langEn ? 'Save Offline' : 'オフラインセーブ' }}</a></div>
             </th>
             <th class="nav external" style="width: 20%;">
-              <div><a [href]="'https://aqiu384.github.io/docs-megaten/how-to-use#' + currentGame">{{ langEn ? 'Help' : 'ヘルプ' }}</a></div>
+              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use">{{ langEn ? 'Help' : 'ヘルプ' }}</a></div>
             </th>
             <th class="nav external" style="width: 20%;">
               <div><a href="https://github.com/aqiu384/megaten-fusion-tool/issues">

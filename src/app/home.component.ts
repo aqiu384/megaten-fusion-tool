@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
     { game: 'Persona 3 FES', abbr: 'p3f' },
     { game: 'Persona 3 FES: The Answer', abbr: 'p3a' },
     { game: 'Persona 3 Portable', abbr: 'p3p' },
+    { game: 'Persona 3 Reload (WIP)', abbr: 'p3r' },
     { game: 'Persona 4', abbr: 'p4' },
     { game: 'Persona 4 Golden', abbr: 'p4g' },
     { game: 'Persona 5', abbr: 'p5' },

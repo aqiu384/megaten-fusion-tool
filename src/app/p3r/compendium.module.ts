@@ -11,12 +11,12 @@ import { CompendiumConfig } from '../pq2/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
-import DEMON_DATA_JSON from '../p3/data/van-demon-data.json';
-import SKILL_DATA_JSON from '../p3/data/van-skill-data.json';
-import ENEMY_DATA_JSON from '../p3/data/van-enemy-data.json';
-import FUSION_CHART_JSON from '../p3/data/van-fusion-chart.json';
-import SPECIAL_RECIPES_JSON from '../p3/data/van-special-recipes.json';
-import FUSION_PREREQS_JSON from '../p3/data/van-fusion-prereqs.json';
+import DEMON_DATA_JSON from './data/demon-data.json';
+import PARTY_DATA_JSON from './data/party-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -29,14 +29,24 @@ function createCompConfig(): CompendiumConfig {
     races.push(race + ' P');
   }
 
+  Object.assign(DEMON_DATA_JSON, PARTY_DATA_JSON);
+
+  for (const demon of Object.values(DEMON_DATA_JSON)) {
+    demon['code'] = 1;
+    demon['inherit'] = 'alm';
+    demon['price'] = demon['lvl']**2 * 100;
+  }
+
   const COST_HP = 2 << 10;
   const COST_MP = 3 << 10;
-  const COST_MP_PER = 4 << 10;
+  const COST_THEURGY = 19 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
-    if (entry['cost'] < 2000) {
+    if (entry['cost'] == 2001) {
+      entry['cost'] = COST_THEURGY
+    } else if (entry['cost'] < 2000) {
       const cost = entry['cost'];
-      const costType = cost > 100 ? (cost > 1000 ? COST_MP - 1000 : COST_MP_PER - 100) : COST_HP;
+      const costType = cost > 100 ? COST_MP - 1000 : COST_HP;
       entry['cost'] = cost ? cost + costType: 0;
     }
   }
@@ -68,13 +78,13 @@ function createCompConfig(): CompendiumConfig {
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
-    enemyData: ENEMY_DATA_JSON,
+    enemyData: {},
     enemyStats: ['HP', 'MP'].concat(COMP_CONFIG_JSON.baseStats),
 
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: false,
     hasDemonResists: true,
-    hasEnemies: true,
+    hasEnemies: false,
     hasQrcodes: false,
     specialRecipes: SPECIAL_RECIPES_JSON,
 

@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 const SKILL_COST_TYPES = [
   'Auto', ' HP',  '% HP', ' MP',  '% MP', ' SP',  '% SP', ' Ex',  '% Ex', ' MG',  '% MG', '0x0B', '0x0C', '0x0D', '0x0E', ' CC',
-  'Extra', 'Varies', 'Fusion', 'Magatsuhi', 'Sabbath'
+  'Extra', 'Varies', 'Fusion', 'Gauge', 'Sabbath'
 ];
 
 @Pipe({ name: 'skillCostToString' })
