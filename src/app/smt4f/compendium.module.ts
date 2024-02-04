@@ -29,6 +29,11 @@ function createCompConfig(): CompendiumConfig {
   const COST_MP = 3 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
+    const effect = [];
+    if (entry['power']) { effect.push(`${entry['power']} dmg`); }
+    if (entry['effect']) { effect.push(entry['effect']); }
+
+    entry['effect'] = effect.join(', ')
     entry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;
   }
 
