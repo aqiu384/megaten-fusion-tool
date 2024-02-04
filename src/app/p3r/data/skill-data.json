@@ -2,1816 +2,2764 @@
   "Agi": {
     "cost": 1003,
     "effect": "Deals weak Fire damage to 1 foe.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 99,
+    "power": 40,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Agidyne": {
     "cost": 1012,
     "effect": "Deals heavy Fire damage to 1 foe.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 99,
+    "power": 220,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Agilao": {
     "cost": 1006,
     "effect": "Deals medium Fire damage to 1 foe.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 99,
+    "power": 100,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Ailment Boost": {
     "effect": "Increase chances of inflicting ailments.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Ailment Burst": {
     "effect": "Increases critical rate on foes with ailments (with Mitsuru in battle).",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Ailment Surge": {
     "effect": "Greatly increases critical rate on foes with ailments (with Mitsuru in battle).",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Akasha Arts": {
     "cost": 22,
+    "crit": 12,
     "effect": "Deals heavy Strike damage to all foes (1-2 hits).",
-    "elem": "str"
+    "elem": "str",
+    "hit": 88,
+    "max": 2,
+    "min": 1,
+    "power": 300,
+    "rank": 8,
+    "target": "All foes"
   },
   "Ali Dance": {
     "effect": "Greatly reduces the hit rate of incoming attacks.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Almighty Amp": {
     "effect": "Automatically strengthen Almighty skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Almighty Boost": {
     "effect": "Automatically strengthen Almighty skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Amrita Drop": {
     "cost": 1014,
     "effect": "Cures all ailments besides KO for 1 ally.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 5,
+    "target": "1 ally"
   },
   "Amrita Shower": {
     "cost": 1025,
     "effect": "Cures all ailments besides KO for all allies.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 6,
+    "target": "All allies"
   },
   "Angelic Grace": {
     "effect": "Increases Evasion against Fire/Ice/Wind/Electric/Light/Dark skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Anti-Electric Master": {
     "effect": "Resists Electric for 3 turns at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Anti-Fire Master": {
     "effect": "Resists Fire for 3 turns at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Anti-Ice Master": {
     "effect": "Resists Ice for 3 turns at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Anti-Wind Master": {
     "effect": "Resists Wind for 3 turns at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Apt Pupil": {
     "effect": "Doubles the chance of dealing a critical hit.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Armageddon": {
+    "add": "HP and SP reduced to 1",
     "cost": 2001,
     "effect": "Ultimate Almighty damage to all foes, but reduces user's HP and SP to 1.",
     "elem": "alm",
+    "power": 9999,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Arms Master": {
     "effect": "Reduces the HP cost of physical skills by half.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Arrow Rain": {
     "cost": 16,
+    "crit": 5,
     "effect": "Deals weak Pierce damage to all foes (1-4 hits).",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 85,
+    "max": 4,
+    "min": 1,
+    "power": 27,
+    "rank": 3,
+    "target": "All foes"
   },
   "Assault Dive": {
     "cost": 11,
+    "crit": 13,
     "effect": "Deals medium Strike damage to 1 foe.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 88,
+    "power": 120,
+    "rank": 3,
+    "target": "1 foe"
   },
   "Auto Bolster": {
     "effect": "Temporarily increases Attack and Defense of self at the start of battle.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Auto Heat Riser": {
     "effect": "Temporarily increases all stats of self at the start of battle.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Auto Maraku": {
-    "effect": "Temporarily increases party's Attack at the start of battle.",
-    "elem": "pas"
+    "effect": "Temporarily increases party's Defense at the start of battle.",
+    "elem": "pas",
+    "rank": 6
   },
   "Auto Masuku": {
     "effect": "Temporarily increases party's Accuracy/Evasion at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Auto Masukunda": {
     "effect": "Lowers Accuracy/Evasion of all foes for 3 turns when a battle starts.",
     "elem": "pas",
+    "rank": 4,
+    "target": "All foes",
     "unique": true
   },
   "Auto Mataru": {
-    "effect": "Temporarily increases party's Defense at the start of battle.",
-    "elem": "pas"
+    "effect": "Temporarily increases party's Attack at the start of battle.",
+    "elem": "pas",
+    "rank": 6
   },
   "Auto Rakukaja": {
     "effect": "Temporarily increases user's Defense at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Auto Rebellion": {
     "effect": "Temporarily increases user's critical rate at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Auto Sukukaja": {
     "effect": "Temporarily increases user's Accuracy/Evasion at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Auto Sukunda": {
     "effect": "Lowers Accuracy/Evasion of 1 random foe for 3 turns when a battle starts.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Auto Tarukaja": {
     "effect": "Temporarily increases user's Attack at the start of battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Baisudi": {
     "cost": 1004,
     "effect": "Cures Freeze/Shock/Poison/Down/Dizzy for 1 ally.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 2,
+    "target": "1 ally"
   },
   "Bash": {
     "cost": 7,
+    "crit": 8,
     "effect": "Deals weak Strike damage to 1 foe.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 90,
+    "power": 50,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Best Friends": {
     "cost": 2001,
     "effect": "Next physical/magic attack will deal more than double damage for 1 ally.",
     "elem": "sup",
+    "rank": 3,
+    "target": "1 ally",
     "unique": true
   },
   "Bewilder": {
+    "add": "Distress",
     "cost": 1005,
     "effect": "High chance of Distress to 1 foe.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 70,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Black Viper": {
     "cost": 1070,
     "effect": "Deals massive Almighty damage to 1 foe.",
     "elem": "alm",
+    "hit": 97,
+    "power": 1000,
+    "rank": 8,
+    "target": "1 foe",
     "unique": true
   },
   "Blade of Execution": {
     "cost": 2001,
     "effect": "Massive Almighty damage to 1 foe and decreases all of their stats.",
     "elem": "alm",
+    "power": 350,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Blade of Fury": {
     "cost": 17,
+    "crit": 10,
     "effect": "Deals weak Slash damage to all foes (2-4 hits).",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 80,
+    "max": 4,
+    "min": 2,
+    "power": 42,
+    "rank": 6,
+    "target": "All foes"
   },
   "Blaze of Life": {
     "cost": 2001,
     "effect": "Massive Fire damage to 1 foe, ignoring resistances. Fully restores user's HP.",
     "elem": "fir",
+    "power": 450,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Blazing Hell": {
     "cost": 1044,
     "effect": "Deals severe Fire damage to all foes.",
     "elem": "fir",
+    "hit": 95,
+    "power": 500,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Bleeding Fury": {
     "cost": 2001,
+    "crit": 30,
     "effect": "Deals severe Strike damage to 1 foe, ignoring resistances.",
     "elem": "str",
+    "power": 280,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Blizzard Edge": {
     "cost": 2001,
     "effect": "Deals severe Ice damage to 1 foe, ignoring resistances.",
     "elem": "ice",
+    "power": 180,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Bloody Charge": {
     "cost": 40,
     "effect": "Consumes HP to increase critical rate and next physical attack damage.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 6
   },
   "Brave Blade": {
     "cost": 20,
+    "crit": 20,
     "effect": "Deals severe Slash damage to 1 foe.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 90,
+    "power": 650,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Buff Amp": {
-    "effect": "Greatly increases the effects of buffs on self.",
+    "effect": "Greatly increases the descs of buffs on self.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Buff Boost": {
-    "effect": "Increases the effects of buffs on self.",
+    "effect": "Increases the descs of buffs on self.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Bufu": {
+    "add": "Freeze",
     "cost": 1004,
     "effect": "Deals weak Ice damage to 1 foe. Low chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 99,
+    "mod": 15,
+    "power": 40,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Bufudyne": {
+    "add": "Freeze",
     "cost": 1014,
     "effect": "Deals heavy Ice damage to 1 foe. Low chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 99,
+    "mod": 15,
+    "power": 220,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Bufula": {
+    "add": "Freeze",
     "cost": 1008,
     "effect": "Deals medium Ice damage to 1 foe. Low chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 99,
+    "mod": 15,
+    "power": 100,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Cadenza": {
     "cost": 2001,
     "effect": "Restores 50% HP and increases Accuracy/Evasion for all allies.",
     "elem": "rec",
+    "rank": 3,
+    "target": "All allies",
     "unique": true
   },
   "Charge": {
     "cost": 1030,
     "effect": "Next physical attack will deal more than double the damage.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 6
   },
   "Charm Boost": {
     "effect": "Increase chances of inflicting Charm.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Concentrate": {
     "cost": 1030,
     "effect": "Next magic attack will deal more than double the damage.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 6
   },
   "Confuse Boost": {
     "effect": "Increase chances of inflicting Confuse.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Cosmic Flare": {
     "cost": 1040,
     "effect": "Deals severe Almighty damage to all foes.",
     "elem": "alm",
+    "hit": 95,
+    "power": 550,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Counter": {
     "effect": "10% chance of reflecting physical skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Counterstrike": {
     "effect": "15% chance of reflecting physical skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Crit Rate Amp": {
     "effect": "Greatly increases critical rate.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Crit Rate Boost": {
     "effect": "Increases critical rate.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Critical Amp": {
     "effect": "Greatly increases critical rate and greatly increases critical hit strength.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Critical Boost": {
     "effect": "Increases critical rate and increases critical hit strength.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Cross Slash": {
     "cost": 18,
+    "crit": 13,
     "effect": "Deals medium Slash damage to 1 foe (2 hits).",
     "elem": "sla",
+    "hit": 99,
+    "max": 2,
+    "min": 2,
+    "power": 150,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Cruel Attack": {
     "cost": 13,
+    "crit": 3,
     "effect": "Deals medium Pierce damage to 1 foe. More damage to downed foe.",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 95,
+    "power": 200,
+    "rank": 5,
+    "target": "1 foe"
   },
   "Cyclone Arrow": {
     "cost": 2001,
     "effect": "Deals severe Wind damage to 1 foe, ignoring resistances.",
     "elem": "win",
+    "power": 220,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Dark Amp": {
     "effect": "Automatically strengthen Dark skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Dark Boost": {
     "effect": "Automatically strengthen Dark skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Dark Driver": {
     "effect": "Automatically strengthen Dark skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Deathbound": {
     "cost": 19,
+    "crit": 17,
     "effect": "Deals heavy Slash damage to all foes.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 85,
+    "power": 350,
+    "rank": 7,
+    "target": "All foes"
   },
   "Debilitate": {
     "cost": 1036,
     "effect": "Decreases 1 foe's Attack, Defense, and Accuracy/Evasion for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 8,
+    "target": "1 foe"
   },
   "Dekaja": {
     "cost": 1010,
     "effect": "Nullify stat buffs for all foes.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 3,
+    "target": "All foes"
   },
   "Dekunda": {
     "cost": 1010,
     "effect": "Nullify stat debuffs for all allies.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 3,
+    "target": "All allies"
   },
   "Demonic Decree": {
     "cost": 1038,
     "effect": "Dark attack that reduces HP of 1 foe by 50%.",
-    "elem": "dar"
+    "elem": "dar",
+    "power": 50,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Dia": {
+    "add": "HP restore",
     "cost": 1003,
     "effect": "Slightly restores 1 ally's HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "power": 50,
+    "rank": 2,
+    "target": "1 ally"
   },
   "Diamond Dust": {
+    "add": "Freeze",
     "cost": 1046,
     "effect": "Deals severe Ice damage to 1 foe. Medium chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 97,
+    "mod": 60,
+    "power": 600,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Diarahan": {
     "cost": 1020,
     "effect": "Fully restores 1 ally's HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 6,
+    "target": "1 ally"
   },
   "Diarama": {
+    "add": "HP restore",
     "cost": 1008,
     "effect": "Moderately restores 1 ally's HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "power": 150,
+    "rank": 4,
+    "target": "1 ally"
   },
   "Die For Me!": {
+    "add": "instakill",
     "cost": 1040,
     "effect": "High chance of Dark instakill to all foes.",
     "elem": "dar",
+    "mod": 70,
+    "rank": 7,
+    "target": "All foes",
     "unique": true
   },
   "Distress Boost": {
     "effect": "Increase chances of inflicting Distress.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Divine Grace": {
-    "effect": "Greatly increases the effect of healing skills.",
-    "elem": "pas"
+    "effect": "Greatly increases the desc of healing skills.",
+    "elem": "pas",
+    "rank": 5
   },
   "Divine Intervention": {
     "cost": 2001,
     "effect": "Revives party, fully restores allies' HP, and will reflect 1 attack.",
     "elem": "rec",
+    "rank": 3,
     "unique": true
   },
   "Divine Judgment": {
     "cost": 1038,
     "effect": "Light attack that reduces HP of 1 foe by 50%.",
-    "elem": "lig"
+    "elem": "lig",
+    "power": 50,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Divine Retribution": {
     "cost": 2001,
     "effect": "Deals severe Light damage to 1 foe, ignoring resistances.",
     "elem": "lig",
+    "power": 230,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Dizzy Boost": {
     "effect": "Increase chances of inflicting Dizzy.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Dark": {
     "effect": "Increase Evasion against non-instakill Dark skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Elec": {
     "effect": "Increase Evasion against Electric skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Fire": {
     "effect": "Increase Evasion against Fire skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Ice": {
     "effect": "Increase Evasion against Ice skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Light": {
     "effect": "Increase Evasion against non-instakill Light skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Pierce": {
     "effect": "Increase Evasion against Pierce skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Slash": {
     "effect": "Increase Evasion against Slash skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Strike": {
     "effect": "Increase Evasion against Strike skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Dodge Wind": {
     "effect": "Increase Evasion against Wind skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Drain Ability": {
-    "effect": "Doubles the effect of Life Drain and Spirit Drain.",
-    "elem": "pas"
+    "effect": "Doubles the desc of Life Drain and Spirit Drain.",
+    "elem": "pas",
+    "rank": 4
   },
   "Drain Dark": {
     "effect": "Absorb incoming Dark damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Elec": {
     "effect": "Absorb incoming Electric damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Fire": {
     "effect": "Absorb incoming Fire damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Ice": {
     "effect": "Absorb incoming Ice damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Light": {
     "effect": "Absorb incoming Light damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Pierce": {
     "effect": "Absorb incoming Pierce damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Slash": {
     "effect": "Absorb incoming Slash damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Strike": {
     "effect": "Absorb incoming Strike damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Drain Wind": {
     "effect": "Absorb incoming Wind damage so that it heals instead of harms.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Eerie Sound": {
+    "add": "Distress",
     "cost": 1010,
     "effect": "Medium chance of Distress to all foes.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 50,
+    "rank": 3,
+    "target": "All foes"
   },
   "Eiga": {
     "cost": 1008,
     "effect": "Deals medium Dark damage to 1 foe.",
-    "elem": "dar"
+    "elem": "dar",
+    "hit": 99,
+    "power": 140,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Eigaon": {
     "cost": 1015,
     "effect": "Deals heavy Dark damage to 1 foe.",
-    "elem": "dar"
+    "elem": "dar",
+    "hit": 99,
+    "power": 350,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Eiha": {
     "cost": 1004,
     "effect": "Deals weak Dark damage to 1 foe.",
-    "elem": "dar"
+    "elem": "dar",
+    "hit": 99,
+    "power": 60,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Elec Amp": {
     "effect": "Automatically strengthen Electric skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Elec Boost": {
     "effect": "Automatically strengthen Electric skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Elec Break": {
     "cost": 1012,
     "effect": "Negate Electric resistance of all foes for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 3,
+    "target": "All foes"
   },
   "Elec Driver": {
     "effect": "Automatically strengthen Electric skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Electric Onslaught": {
+    "add": "Shock",
     "cost": 2001,
     "effect": "Severe Elec damage to 1 foe, ignoring resistances. High chance of Shock.",
     "elem": "ele",
+    "mod": 80,
+    "power": 200,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Endure": {
     "effect": "Survive a fatal blow with 1 HP remaining.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Endure Dark": {
     "effect": "Automatically survive 1 Dark instakill attack with 1 HP remaining.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Endure Light": {
     "effect": "Automatically survive 1 Light instakill attack with 1 HP remaining.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Enduring Soul": {
     "effect": "Survive a fatal blow with HP fully recovered.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Escape Route": {
     "cost": 1024,
     "effect": "Return to the entrance of Tartarus.",
     "elem": "spe",
+    "rank": 3,
     "unique": true
   },
   "Evade Dark": {
     "effect": "Greatly increase Evasion against non-instakill Dark skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Elec": {
     "effect": "Greatly increase Evasion against Electric skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Fire": {
     "effect": "Greatly increase Evasion against Fire skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Ice": {
     "effect": "Greatly increase Evasion against Ice skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Light": {
     "effect": "Greatly increase Evasion against non-instakill Light skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Pierce": {
     "effect": "Greatly increase Evasion against Pierce skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Slash": {
     "effect": "Greatly increase Evasion against Slash skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Strike": {
     "effect": "Greatly increase Evasion against Strike skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evade Wind": {
     "effect": "Greatly increase Evasion against Wind skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Evil Smile": {
+    "add": "Fear",
     "cost": 1010,
     "effect": "Medium chance of Fear to all foes.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 45,
+    "rank": 3,
+    "target": "All foes"
   },
   "Evil Touch": {
+    "add": "Fear",
     "cost": 1005,
     "effect": "High chance of Fear to 1 foe.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 60,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Fast Heal": {
     "effect": "Halves the time needed to recover from ailments.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Fatal End": {
+    "add": "Fear",
     "cost": 10,
+    "crit": 5,
     "effect": "Deals medium Slash damage to 1 foe. Low chance of inflicting Fear.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 95,
+    "mod": 35,
+    "power": 110,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Fear Boost": {
     "effect": "Increase chances of inflicting Fear.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Fire Amp": {
     "effect": "Automatically strengthen Fire skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Fire Boost": {
     "effect": "Automatically strengthen Fire skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Fire Break": {
     "cost": 1012,
     "effect": "Negate Fire resistance of all foes for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 3,
+    "target": "All foes"
   },
   "Fire Driver": {
     "effect": "Automatically strengthen Fire skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Firm Stance": {
     "effect": "Reduces incoming damage by half, but cannot dodge any attacks.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Foul Breath": {
     "cost": 1008,
     "effect": "Increase chance of inflicting ailments to 1 foe.",
-    "elem": "alm"
+    "elem": "alm",
+    "power": 850,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Freeze Boost": {
     "effect": "Increase chances of inflicting Freeze.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Full Analysis": {
     "cost": 1035,
     "effect": "Fully reveal the affinities of 1 foe.",
     "elem": "spe",
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Garu": {
     "cost": 1003,
     "effect": "Deals weak Wind damage to 1 foe.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 99,
+    "power": 40,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Garudyne": {
     "cost": 1012,
     "effect": "Deals heavy Wind damage to 1 foe.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 99,
+    "power": 220,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Garula": {
     "cost": 1006,
     "effect": "Deals medium Wind damage to 1 foe.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 99,
+    "power": 100,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Getsu-ei": {
+    "add": "More dmg when closer to a full moon",
     "cost": 13,
+    "crit": 15,
     "effect": "Medium Slash damage to 1 foe. More damage when closer to a full moon.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 90,
+    "power": 180,
+    "rank": 5,
+    "target": "1 foe"
   },
   "Ghastly Wail": {
     "cost": 1028,
     "effect": "Instakill all foes afflicted with Fear.",
-    "elem": "alm"
+    "elem": "alm",
+    "power": 850,
+    "rank": 7,
+    "target": "All foes"
   },
   "Gigantic Fist": {
     "cost": 14,
+    "crit": 15,
     "effect": "Deals heavy Strike damage to 1 foe.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 85,
+    "power": 380,
+    "rank": 6,
+    "target": "1 foe"
   },
   "God's Hand": {
     "cost": 25,
+    "crit": 13,
     "effect": "Deals massive Strike damage to 1 foe.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 88,
+    "power": 800,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Great Seal": {
     "cost": 100,
     "effect": "Unleashes the power within to seal Nyx.",
     "elem": "alm",
+    "rank": 3,
     "unique": true
   },
   "Growth 1": {
     "effect": "Earn 25% EXP, even when not participating in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Growth 2": {
     "effect": "Earn 50% EXP, even when not participating in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Growth 3": {
     "effect": "Earn 100% EXP, even when not participating in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Hack n' Blast": {
     "cost": 2001,
+    "crit": 20,
     "effect": "Deals severe Slash damage to 1 foe, ignoring resistances.",
     "elem": "sla",
+    "power": 250,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Hama": {
+    "add": "instakill",
     "cost": 1006,
     "effect": "Low chance of Light instakill to 1 foe.",
-    "elem": "lig"
+    "elem": "lig",
+    "mod": 30,
+    "rank": 3,
+    "target": "1 foe"
   },
   "Hama Boost": {
     "effect": "Increase chances of instakill with Hama skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Hamaon": {
-    "cost": 1012,
-    "effect": "Low chance of Light instakill to all foes.",
-    "elem": "lig"
+    "add": "instakill",
+    "cost": 1014,
+    "effect": "Medium chance of Light instakill to 1 foe.",
+    "elem": "lig",
+    "mod": 50,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Healing Apex": {
     "effect": "Reduces the SP cost of recovery skills to 25% of their normal SP cost.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Healing Master": {
     "effect": "Reduces the SP cost of recovery skills to 50% of their normal SP cost.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Heat Riser": {
     "cost": 1036,
     "effect": "Increases 1 ally's Attack, Defense, and Accuracy/Evasion for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 8,
+    "target": "1 ally"
   },
   "Heat Wave": {
     "cost": 20,
+    "crit": 10,
     "effect": "Deals heavy Strike damage to all foes.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 90,
+    "power": 400,
+    "rank": 6,
+    "target": "All foes"
   },
   "Heaven's Blade": {
     "cost": 18,
+    "crit": 30,
     "effect": "Deals severe Slash damage to 1 foe. High chance of critical.",
     "elem": "sla",
+    "hit": 90,
+    "power": 500,
+    "rank": 8,
+    "target": "1 foe",
     "unique": true
   },
   "Herculean Strike": {
     "cost": 17,
+    "crit": 10,
     "effect": "Deals heavy Strike damage to all foes.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 85,
+    "power": 230,
+    "rank": 5,
+    "target": "All foes"
   },
   "High Counter": {
     "effect": "20% chance of reflecting physical skills. Does not stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Holy Arrow": {
+    "add": "Charm",
     "cost": 8,
+    "crit": 5,
     "effect": "Deals weak Pierce damage to 1 foe. Low chance of Charm.",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 92,
+    "mod": 35,
+    "power": 65,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Hound of Hades": {
     "cost": 2001,
     "effect": "Deals severe Dark damage to 1 foe, ignoring resistances.",
     "elem": "dar",
+    "power": 220,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Ice Age": {
+    "add": "Freeze",
     "cost": 1048,
     "effect": "Deals severe Ice damage to all foes. Low chance of inflicting Freeze.",
     "elem": "ice",
+    "hit": 95,
+    "mod": 35,
+    "power": 450,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Ice Amp": {
     "effect": "Automatically strengthen Ice skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Ice Boost": {
     "effect": "Automatically strengthen Ice skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Ice Break": {
     "cost": 1012,
     "effect": "Negate Ice resistance of all foes for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 3,
+    "target": "All foes"
   },
   "Ice Driver": {
     "effect": "Automatically strengthen Ice skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Inferno": {
     "cost": 1040,
     "effect": "Deals severe Fire damage to 1 foe.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 97,
+    "power": 600,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Infuriate": {
+    "add": "Rage",
     "cost": 1010,
     "effect": "Medium chance of Rage to all foes.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 50,
+    "rank": 3,
+    "target": "All foes"
   },
   "Insta-Heal": {
     "effect": "Recover from ailments in 1 turn.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Invigorate 1": {
     "effect": "Automatically recover 3 SP each turn in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Invigorate 2": {
     "effect": "Automatically recover 5 SP each turn in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Invigorate 3": {
     "effect": "Automatically recover 7 SP each turn in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Jack Brothers": {
+    "add": "Down",
     "cost": 2001,
     "effect": "Deals medium Almighty damage to all foes. High chance of inflicting Down.",
     "elem": "alm",
+    "mod": 80,
+    "power": 80,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Jamming": {
     "cost": 1020,
     "effect": "Prevents detection by enemies until entering battle or changing floors.",
     "elem": "spe",
+    "rank": 3,
     "unique": true
   },
   "King and I": {
+    "add": "Freeze",
     "cost": 2001,
     "effect": "Heavy Ice damage to all foes, ignoring resistances. Medium chance of Freeze.",
     "elem": "ice",
+    "mod": 50,
+    "power": 180,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Kouga": {
     "cost": 1008,
     "effect": "Deals medium Light damage to 1 foe.",
-    "elem": "lig"
+    "elem": "lig",
+    "hit": 99,
+    "power": 140,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Kougaon": {
     "cost": 1015,
     "effect": "Deals heavy Light damage to 1 foe.",
-    "elem": "lig"
+    "elem": "lig",
+    "hit": 99,
+    "power": 350,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Kouha": {
     "cost": 1004,
     "effect": "Deals weak Light damage to 1 foe.",
-    "elem": "lig"
+    "elem": "lig",
+    "hit": 99,
+    "power": 60,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Life Aid": {
     "effect": "Recover 8% of max HP and SP after winning a battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Life Drain": {
     "cost": 1003,
     "effect": "Drain some HP from 1 foe, restoring the user's HP.",
-    "elem": "alm"
+    "elem": "alm",
+    "power": 35,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Light Amp": {
     "effect": "Automatically strengthen Light skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Light Boost": {
     "effect": "Automatically strengthen Light skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Light Driver": {
     "effect": "Automatically strengthen Light skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Lightning Spike": {
     "cost": 2001,
     "effect": "Deals heavy Electric damage to all foes, ignoring resistances.",
     "elem": "ele",
+    "power": 100,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Mabaisudi": {
     "cost": 1010,
     "effect": "Cures Freeze/Shock/Poison/Down/Dizzy for all allies.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 4,
+    "target": "All allies"
   },
   "Mabufu": {
+    "add": "Freeze",
     "cost": 1010,
     "effect": "Deals weak Ice damage to all foes. Low chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 95,
+    "mod": 10,
+    "power": 40,
+    "rank": 3,
+    "target": "All foes"
   },
   "Mabufudyne": {
+    "add": "Freeze",
     "cost": 1024,
     "effect": "Deals heavy Ice damage to all foes. Low chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 95,
+    "mod": 10,
+    "power": 220,
+    "rank": 7,
+    "target": "All foes"
   },
   "Mabufula": {
+    "add": "Freeze",
     "cost": 1016,
     "effect": "Deals medium Ice damage to all foes. Low chance of inflicting Freeze.",
-    "elem": "ice"
+    "elem": "ice",
+    "hit": 95,
+    "mod": 10,
+    "power": 100,
+    "rank": 5,
+    "target": "All foes"
   },
   "Maeiga": {
     "cost": 1016,
     "effect": "Deals medium Dark damage to all foes.",
-    "elem": "dar"
+    "elem": "dar",
+    "hit": 95,
+    "power": 140,
+    "rank": 5,
+    "target": "All foes"
   },
   "Maeigaon": {
     "cost": 1025,
     "effect": "Deals heavy Dark damage to all foes.",
-    "elem": "dar"
+    "elem": "dar",
+    "hit": 95,
+    "power": 350,
+    "rank": 7,
+    "target": "All foes"
   },
   "Maeiha": {
     "cost": 1010,
     "effect": "Deals weak Dark damage to all foes.",
-    "elem": "dar"
+    "elem": "dar",
+    "hit": 95,
+    "power": 60,
+    "rank": 3,
+    "target": "All foes"
   },
   "Magaru": {
     "cost": 1008,
     "effect": "Deals weak Wind damage to all foes.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 95,
+    "power": 40,
+    "rank": 3,
+    "target": "All foes"
   },
   "Magarudyne": {
     "cost": 1024,
     "effect": "Deals heavy Wind damage to all foes.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 95,
+    "power": 220,
+    "rank": 7,
+    "target": "All foes"
   },
   "Magarula": {
     "cost": 1014,
     "effect": "Deals medium Wind damage to all foes.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 95,
+    "power": 100,
+    "rank": 5,
+    "target": "All foes"
   },
   "Magatsu Mandala": {
+    "add": "Fear, Confuse",
     "cost": 1038,
     "effect": "Heavy Dark damage with medium chance of Fear or Confuse to all foes.",
     "elem": "dar",
+    "hit": 95,
+    "mod": 50,
+    "power": 300,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Magic Ability": {
     "effect": "Automatically strengthen non-Almighty magic skills by 25%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 9
   },
   "Magic Mastery": {
     "effect": "Automatically strengthen non-Almighty magic skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 9
   },
   "Mahama": {
-    "cost": 1014,
-    "effect": "Medium chance of Light instakill to 1 foe.",
-    "elem": "lig"
+    "add": "instakill",
+    "cost": 1012,
+    "effect": "Low chance of Light instakill to all foes.",
+    "elem": "lig",
+    "mod": 30,
+    "rank": 4,
+    "target": "All foes"
   },
   "Mahamaon": {
+    "add": "instakill",
     "cost": 1026,
     "effect": "Medium chance of Light instakill to all foes.",
-    "elem": "lig"
+    "elem": "lig",
+    "mod": 50,
+    "rank": 7,
+    "target": "All foes"
   },
   "Makarakarn": {
     "cost": 1024,
     "effect": "Erect a barrier for 1 ally that repels 1 (non-Almighty) magic attack.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "1 ally"
   },
   "Makouga": {
     "cost": 1016,
     "effect": "Deals medium Light damage to all foes.",
-    "elem": "lig"
+    "elem": "lig",
+    "hit": 95,
+    "power": 140,
+    "rank": 5,
+    "target": "All foes"
   },
   "Makougaon": {
     "cost": 1025,
     "effect": "Deals heavy Light damage to all foes.",
-    "elem": "lig"
+    "elem": "lig",
+    "hit": 95,
+    "power": 350,
+    "rank": 7,
+    "target": "All foes"
   },
   "Makouha": {
     "cost": 1010,
     "effect": "Deals weak Light damage to all foes.",
-    "elem": "lig"
+    "elem": "lig",
+    "hit": 95,
+    "power": 60,
+    "rank": 3,
+    "target": "All foes"
   },
   "Mamudo": {
-    "cost": 1014,
-    "effect": "Medium chance of Dark instakill to 1 foe.",
-    "elem": "dar"
+    "add": "instakill",
+    "cost": 1012,
+    "effect": "Low chance of Dark instakill to all foes.",
+    "elem": "dar",
+    "mod": 30,
+    "rank": 4,
+    "target": "All foes"
   },
   "Mamudoon": {
+    "add": "instakill",
     "cost": 1026,
     "effect": "Medium chance of Dark instakill to all foes.",
-    "elem": "dar"
+    "elem": "dar",
+    "mod": 50,
+    "rank": 7,
+    "target": "All foes"
   },
   "Maragi": {
     "cost": 1008,
     "effect": "Deals weak Fire damage to all foes.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 95,
+    "power": 40,
+    "rank": 3,
+    "target": "All foes"
   },
   "Maragidyne": {
     "cost": 1024,
     "effect": "Deals heavy Fire damage to all foes.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 95,
+    "power": 220,
+    "rank": 7,
+    "target": "All foes"
   },
   "Maragion": {
     "cost": 1014,
     "effect": "Deals medium Fire damage to all foes.",
-    "elem": "fir"
+    "elem": "fir",
+    "hit": 95,
+    "power": 100,
+    "rank": 5,
+    "target": "All foes"
   },
   "Marakukaja": {
     "cost": 1024,
     "effect": "Increases party's Defense for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "All allies"
   },
   "Marakunda": {
     "cost": 1024,
     "effect": "Decreases all foes' Defense for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "All foes"
   },
   "Maralagidyne": {
+    "add": "Charm",
     "cost": 1024,
     "effect": "Deals heavy Fire damage to all foes. Low chance of inflicting Charm.",
     "elem": "fir",
+    "hit": 95,
+    "mod": 35,
+    "power": 220,
+    "rank": 8,
+    "target": "All foes",
     "unique": true
   },
   "Marin Karin": {
+    "add": "Charm",
     "cost": 1005,
     "effect": "High chance of Charm to 1 foe.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 60,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Masquerade": {
     "cost": 24,
+    "crit": 30,
     "effect": "Medium Slash damage to all foes (2 hits). High chance of critical.",
     "elem": "sla",
+    "hit": 90,
+    "max": 2,
+    "min": 2,
+    "power": 200,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Masukukaja": {
     "cost": 1024,
     "effect": "Increases party's Accuracy/Evasion for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "All allies"
   },
   "Masukunda": {
     "cost": 1024,
     "effect": "Decreases all foes' Accuracy/Evasion for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "All foes"
   },
   "Matarukaja": {
     "cost": 1024,
     "effect": "Increases party's Attack for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "All allies"
   },
   "Matarunda": {
     "cost": 1024,
     "effect": "Decreases all foes' Attack for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "All foes"
   },
   "Maximum Firepower": {
     "cost": 2001,
+    "crit": 15,
     "effect": "Deals severe Pierce damage to 1 foe, ignoring resistances.",
     "elem": "pie",
+    "power": 250,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Mazio": {
+    "add": "Shock",
     "cost": 1010,
     "effect": "Deals weak Electric damage to all foes. Low chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 95,
+    "mod": 10,
+    "power": 40,
+    "rank": 3,
+    "target": "All foes"
   },
   "Maziodyne": {
+    "add": "Shock",
     "cost": 1024,
     "effect": "Deals heavy Electric damage to all foes. Low chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 95,
+    "mod": 10,
+    "power": 220,
+    "rank": 7,
+    "target": "All foes"
   },
   "Mazionga": {
+    "add": "Shock",
     "cost": 1016,
     "effect": "Deals medium Electric damage to all foes. Low chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 95,
+    "mod": 10,
+    "power": 100,
+    "rank": 5,
+    "target": "All foes"
   },
   "Me Patra": {
     "cost": 1010,
     "effect": "Cures Distress/Confuse/Charm/Rage/Fear for all allies.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 4,
+    "target": "All allies"
   },
   "Media": {
+    "add": "HP restore",
     "cost": 1007,
     "effect": "Slightly restores party's HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "power": 50,
+    "rank": 3,
+    "target": "All allies"
   },
   "Mediarahan": {
     "cost": 1044,
     "effect": "Fully restores party's HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 7,
+    "target": "All allies"
   },
   "Mediarama": {
+    "add": "HP restore",
     "cost": 1016,
     "effect": "Moderately restores party's HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "power": 150,
+    "rank": 5,
+    "target": "All allies"
   },
   "Megido": {
     "cost": 1020,
     "effect": "Deals medium Almighty damage to all foes.",
-    "elem": "alm"
+    "elem": "alm",
+    "hit": 95,
+    "power": 170,
+    "rank": 5,
+    "target": "All foes"
   },
   "Megidola": {
     "cost": 1032,
     "effect": "Deals heavy Almighty damage to all foes.",
-    "elem": "alm"
+    "elem": "alm",
+    "hit": 95,
+    "power": 380,
+    "rank": 7,
+    "target": "All foes"
   },
   "Megidolaon": {
     "cost": 1050,
     "effect": "Deals severe Almighty damage to all foes.",
-    "elem": "alm"
+    "elem": "alm",
+    "hit": 95,
+    "power": 690,
+    "rank": 8,
+    "target": "All foes"
   },
   "Morning Star": {
     "cost": 1064,
     "effect": "Deals massive Almighty damage to all foes.",
-    "elem": "alm"
+    "elem": "alm",
+    "hit": 95,
+    "power": 850,
+    "rank": 9,
+    "target": "All foes"
   },
   "Mudo": {
+    "add": "instakill",
     "cost": 1006,
     "effect": "Low chance of Dark instakill to 1 foe.",
-    "elem": "dar"
+    "elem": "dar",
+    "mod": 30,
+    "rank": 3,
+    "target": "1 foe"
   },
   "Mudo Boost": {
     "effect": "Increase chances of instakill with Mudo skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Mudoon": {
-    "cost": 1012,
-    "effect": "Low chance of Dark instakill to all foes.",
-    "elem": "dar"
+    "add": "instakill",
+    "cost": 1014,
+    "effect": "Medium chance of Dark instakill to 1 foe.",
+    "elem": "dar",
+    "mod": 50,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Multi-Target Boost": {
     "effect": "Increases power of attacks that target all foes by 15%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Myriad Arrows": {
     "cost": 19,
+    "crit": 5,
     "effect": "Deals weak Pierce damage to all foes (2-5 hits).",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 88,
+    "max": 5,
+    "min": 2,
+    "power": 40,
+    "rank": 7,
+    "target": "All foes"
   },
   "Neuro Slash": {
+    "add": "Confuse",
     "cost": 16,
+    "crit": 3,
     "effect": "Deals medium Slash damage to all foes. Low chance of Confuse.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 95,
+    "mod": 50,
+    "power": 180,
+    "rank": 5,
+    "target": "All foes"
   },
   "Null Charm": {
     "effect": "Protects completely from being afflicted with Charm.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Confuse": {
     "effect": "Protects completely from being afflicted with Confuse.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Dark": {
     "effect": "Nullify Dark damage and instakills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Distress": {
     "effect": "Protects completely from being afflicted with Distress.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Dizzy": {
     "effect": "Protects completely from being afflicted with Dizzy.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Elec": {
     "effect": "Nullify Electric damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Fear": {
     "effect": "Protects completely from being afflicted with Fear.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Fire": {
     "effect": "Nullify Fire damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Freeze": {
     "effect": "Protects completely from being afflicted with Freeze.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Ice": {
     "effect": "Nullify Ice damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Light": {
     "effect": "Nullify Light damage and instakills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Phys": {
     "effect": "Nullify physical damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 9
   },
   "Null Pierce": {
     "effect": "Nullify Pierce damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Poison": {
     "effect": "Protects completely from being afflicted with Poison.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Rage": {
     "effect": "Protects completely from being afflicted with Rage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Shock": {
     "effect": "Protects completely from being afflicted with Shock.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Null Slash": {
     "effect": "Nullify Slash damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Strike": {
     "effect": "Nullify Strike damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Null Wind": {
     "effect": "Nullify Wind damage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "One-shot Kill": {
     "cost": 17,
+    "crit": 30,
     "effect": "Deals severe Pierce damage to 1 foe. High chance of critical.",
     "elem": "pie",
+    "hit": 90,
+    "power": 250,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Oracle": {
     "cost": 2001,
-    "effect": "Grants 1 random positive effect to all allies.",
+    "effect": "Grants 1 random positive desc to all allies.",
     "elem": "sup",
+    "rank": 3,
+    "target": "All allies",
     "unique": true
   },
   "Orgia Mode": {
     "cost": 2001,
+    "crit": 10,
     "effect": "Heavy Pierce dmg to all foes, ignoring resistances. Ignores orders for a time.",
     "elem": "pie",
+    "power": 100,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Panta Rhei": {
     "cost": 1040,
     "effect": "Deals severe Wind damage to 1 foe.",
-    "elem": "win"
+    "elem": "win",
+    "hit": 97,
+    "power": 600,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Patra": {
     "cost": 1004,
     "effect": "Cures Distress/Confuse/Charm/Rage/Fear for 1 ally.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 2,
+    "target": "1 ally"
   },
   "Phys Amp": {
     "effect": "Greatly strengthens physical skills.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Phys Boost": {
     "effect": "Strengthens physical skills.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Pierce Amp": {
     "effect": "Automatically strengthen Pierce skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Pierce Boost": {
     "effect": "Automatically strengthen Pierce skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Pierce Driver": {
     "effect": "Automatically strengthen Pierce skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Poisma": {
+    "add": "Poison",
     "cost": 1005,
     "effect": "High chance of Poison to 1 foe.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 70,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Poison Arrow": {
+    "add": "Poison",
     "cost": 13,
+    "crit": 5,
     "effect": "Deals heavy Pierce damage to 1 foe. Medium chance of Poison.",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 92,
+    "mod": 50,
+    "power": 300,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Poison Boost": {
     "effect": "Increase chances of inflicting Poison.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Poison Mist": {
+    "add": "Poison",
     "cost": 1010,
     "effect": "Medium chance of Poison to all foes.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 50,
+    "rank": 3,
+    "target": "All foes"
   },
   "Power Howling": {
     "cost": 2001,
     "effect": "Next physical attack will deal more than double the damage for all allies.",
     "elem": "sup",
+    "rank": 3,
+    "target": "All allies",
     "unique": true
   },
   "Power Slash": {
     "cost": 7,
+    "crit": 5,
     "effect": "Deals weak Slash damage to 1 foe.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 92,
+    "power": 50,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Pralaya": {
+    "add": "Fear",
     "cost": 23,
+    "crit": 20,
     "effect": "Deals severe Pierce damage to all foes. Medium chance of Fear.",
     "elem": "pie",
+    "hit": 95,
+    "mod": 50,
+    "power": 600,
+    "rank": 8,
+    "target": "All foes",
     "unique": true
   },
   "Primal Force": {
     "cost": 21,
+    "crit": 10,
     "effect": "Deals severe Pierce damage to 1 foe.",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 92,
+    "power": 580,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Provoke": {
+    "add": "Rage",
     "cost": 1005,
     "effect": "High chance of Rage to 1 foe.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 70,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Pulinpa": {
+    "add": "Confuse",
     "cost": 1005,
     "effect": "High chance of Confuse to 1 foe.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 60,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Rage Boost": {
     "effect": "Increase chances of inflicting Rage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Raging Tiger": {
     "effect": "Increases Attack while afflicted by Rage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 1
   },
   "Rakukaja": {
     "cost": 1008,
     "effect": "Increases 1 ally's Defense for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Rakunda": {
     "cost": 1008,
     "effect": "Decreases 1 foe's Defense for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 1,
+    "target": "1 foe"
   },
   "Rebellion": {
     "cost": 1007,
     "effect": "Increases 1 ally's critical rate for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 2,
+    "target": "1 ally"
   },
   "Rebellion Blade": {
     "cost": 1080,
     "effect": "Deals massive Almighty damage to 1 foe. More damage to downed foe.",
     "elem": "alm",
+    "hit": 90,
+    "power": 700,
+    "rank": 3,
+    "target": "1 foe",
     "unique": true
   },
   "Recarm": {
     "cost": 1012,
     "effect": "Revives 1 fallen ally with 50% HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 3,
+    "target": "1 ally"
   },
   "Recarmdra": {
     "cost": 1005,
     "effect": "Fully restores party's HP. User's HP is reduced to 1.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 5,
+    "target": "All allies"
   },
   "Regenerate 1": {
     "effect": "Automatically recover 2% of max HP each turn in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Regenerate 2": {
     "effect": "Automatically recover 4% of max HP each turn in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Regenerate 3": {
     "effect": "Automatically recover 6% of max HP each turn in battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Repel Dark": {
     "effect": "Reflect Dark damage and instakills back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Elec": {
     "effect": "Reflect Electric damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Fire": {
     "effect": "Reflect Fire damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Ice": {
     "effect": "Reflect Ice damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Light": {
     "effect": "Reflect Light damage and instakills back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Pierce": {
     "effect": "Reflect Pierce damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Slash": {
     "effect": "Reflect Slash damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Strike": {
     "effect": "Reflect Strike damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Repel Wind": {
     "effect": "Reflect Wind damage back to the foe.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Resist Ailments": {
     "effect": "Decrease chances of being afflicted with any ailment except Dizzy.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Resist Charm": {
     "effect": "Decrease chances of being afflicted with Charm.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Confuse": {
     "effect": "Decrease chances of being afflicted with Confuse.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Dark": {
     "effect": "Increase resistance to Dark damage. Negates Dark weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Distress": {
     "effect": "Decrease chances of being afflicted with Distress.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Dizzy": {
     "effect": "Decrease chances of being afflicted with Dizzy.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Elec": {
     "effect": "Increase resistance to Electric damage. Negates Electric weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Fear": {
     "effect": "Decrease chances of being afflicted with Fear.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Fire": {
     "effect": "Increase resistance to Fire damage. Negates Fire weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Freeze": {
     "effect": "Decrease chances of being afflicted with Freeze.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Ice": {
     "effect": "Increase resistance to Ice damage. Negates Ice weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Light": {
     "effect": "Increase resistance to Light damage. Negates Light weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Phys": {
     "effect": "Increase resistance to physical damage. Negates physical weaknesses.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Resist Pierce": {
     "effect": "Increase resistance to Pierce damage. Negates Pierce weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Poison": {
     "effect": "Decrease chances of being afflicted with Poison.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Rage": {
     "effect": "Decrease chances of being afflicted with Rage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Shock": {
     "effect": "Decrease chances of being afflicted with Shock.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Resist Slash": {
     "effect": "Increase resistance to Slash damage. Negates Slash weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Strike": {
     "effect": "Increase resistance to Strike damage. Negates Strike weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Resist Wind": {
     "effect": "Increase resistance to Wind damage. Negates Wind weakness.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 5
   },
   "Revelation": {
     "cost": 2001,
-    "effect": "Grants 1 random enhanced positive effect to all allies.",
+    "effect": "Grants 1 random enhanced positive desc to all allies.",
     "elem": "sup",
+    "rank": 3,
+    "target": "All allies",
     "unique": true
   },
   "Revolution": {
     "cost": 1014,
     "effect": "Greatly increases all allies and foes' critical rate for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 4,
+    "target": "All allies"
   },
   "Salvation": {
     "cost": 1060,
     "effect": "Fully restores party's HP and cures all ailments besides KO.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 8,
+    "target": "All allies"
   },
   "Samarecarm": {
     "cost": 1035,
     "effect": "Revives 1 fallen ally with full HP.",
-    "elem": "rec"
+    "elem": "rec",
+    "rank": 6,
+    "target": "1 ally"
   },
   "Samsara": {
+    "add": "instakill",
     "cost": 1040,
     "effect": "High chance of Light instakill to all foes.",
     "elem": "lig",
+    "mod": 70,
+    "rank": 7,
+    "target": "All foes",
     "unique": true
   },
   "Scarlet Havoc": {
     "cost": 2001,
+    "crit": 20,
     "effect": "Deals severe Slash damage to all foes, ignoring resistances.",
     "elem": "sla",
+    "power": 250,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Sexy Dance": {
+    "add": "Charm",
     "cost": 1010,
     "effect": "Medium chance of Charm to all foes.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 45,
+    "rank": 3,
+    "target": "All foes"
   },
   "Sharp Student": {
     "effect": "Halves the chance of taking a critical hit.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 1
   },
   "Shift Amp": {
     "effect": "Attack up by 20% until end of turn when on the receiving end of a Shift.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Shift Boost": {
     "effect": "Attack up by 10% until end of turn when on the receiving end of a Shift.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Shining Arrows": {
     "cost": 1024,
     "effect": "Deals weak Light damage to all foes (4-8 hits).",
     "elem": "lig",
+    "hit": 95,
+    "max": 8,
+    "min": 4,
+    "power": 15,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Shock Boost": {
     "effect": "Increase chances of inflicting Shock.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 2
   },
   "Shock Noise": {
     "cost": 1030,
     "effect": "Inflicts Distress on all foes on the current floor.",
     "elem": "spe",
+    "rank": 3,
     "unique": true
   },
   "Sinful Shell": {
+    "add": "Dark instakill",
     "cost": 1066,
     "effect": "Massive Almighty damage and medium chance of Dark instakill to all foes.",
     "elem": "alm",
+    "hit": 95,
+    "mod": 50,
+    "power": 700,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Single Shot": {
     "cost": 6,
+    "crit": 3,
     "effect": "Deals weak Pierce damage to 1 foe.",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 95,
+    "power": 45,
+    "rank": 1,
+    "target": "1 foe"
   },
   "Single-Target Boost": {
     "effect": "Increases power of attacks that target 1 foe by 15%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Slash Amp": {
     "effect": "Automatically strengthen Slash skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Slash Boost": {
     "effect": "Automatically strengthen Slash skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Slash Driver": {
     "effect": "Automatically strengthen Slash skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Sonic Punch": {
+    "add": "Distress",
     "cost": 9,
+    "crit": 10,
     "effect": "Deals weak Strike damage to 1 foe. Low chance of inflicting Distress.",
-    "elem": "str"
+    "elem": "str",
+    "hit": 92,
+    "mod": 35,
+    "power": 70,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Soul Chain": {
     "effect": "Recover 5 SP when on the receiving end of a Shift.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Soul Link": {
     "effect": "Recover 8 SP when on the receiving end of a Shift.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Soul Shift": {
     "effect": "When Shifting to an ally, that ally recovers 5 SP.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Spell Master": {
     "effect": "Reduces the SP cost of magic skills by half.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Spirit Drain": {
     "cost": 1003,
     "effect": "Drain some SP from 1 foe, restoring the user's SP.",
-    "elem": "alm"
+    "elem": "alm",
+    "power": 35,
+    "rank": 3,
+    "target": "1 foe"
   },
   "Spirit Refresh": {
     "effect": "Automatically recover 5 SP each turn in battle.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Spirit Restore": {
     "effect": "Automatically recover 10 SP each turn in battle.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Stagnant Air": {
     "cost": 1012,
     "effect": "Increase chance of inflicting ailments to all combatants.",
-    "elem": "alm"
+    "elem": "alm",
+    "power": 850,
+    "rank": 4,
+    "target": "Universal"
   },
   "Strike Amp": {
     "effect": "Automatically strengthen Strike skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Strike Boost": {
     "effect": "Automatically strengthen Strike skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Strike Driver": {
     "effect": "Automatically strengthen Strike skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Sukukaja": {
     "cost": 1008,
     "effect": "Increases 1 ally's Accuracy/Evasion for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Sukunda": {
     "cost": 1008,
     "effect": "Decreases 1 foe's Accuracy/Evasion for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 1,
+    "target": "1 foe"
   },
   "Survival Trick": {
     "effect": "Automatically survive 1 magic instakill attack with 1 HP remaining.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Survive Dark": {
     "effect": "Medium chance to survive 1 Dark instakill attack with 1 HP remaining.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Survive Light": {
     "effect": "Medium chance to survive 1 Light instakill attack with 1 HP remaining.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 4
   },
   "Swift Strike": {
     "cost": 15,
+    "crit": 5,
     "effect": "Deals weak Strike damage to all foes (1-2 hits).",
-    "elem": "str"
+    "elem": "str",
+    "hit": 80,
+    "max": 2,
+    "min": 1,
+    "power": 60,
+    "rank": 4,
+    "target": "All foes"
   },
   "Sylphid Aura": {
     "cost": 1024,
     "effect": "Increases party's Attack, Defense, and Accuracy/Evasion in the next battle.",
     "elem": "spe",
+    "rank": 3,
     "unique": true
   },
   "Tartarus Search": {
     "cost": 1050,
     "effect": "Fully reveals the current floor and provides a shortcut to the next floor.",
     "elem": "spe",
+    "rank": 3,
     "unique": true
   },
   "Tarukaja": {
     "cost": 1008,
     "effect": "Increases 1 ally's Attack for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 1,
+    "target": "1 ally"
   },
   "Tarunda": {
     "cost": 1008,
     "effect": "Decreases 1 foe's Attack for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 1,
+    "target": "1 foe"
   },
   "Tempest Slash": {
     "cost": 14,
+    "crit": 8,
     "effect": "Deals weak Slash damage to 1 foe (1-4 hits).",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 95,
+    "max": 4,
+    "min": 1,
+    "power": 50,
+    "rank": 7,
+    "target": "1 foe"
   },
   "Tentarafoo": {
+    "add": "Confuse",
     "cost": 1010,
     "effect": "Medium chance of Confuse to all foes.",
-    "elem": "ail"
+    "elem": "ail",
+    "mod": 45,
+    "rank": 3,
+    "target": "All foes"
   },
   "Tetrakarn": {
     "cost": 1024,
     "effect": "Erect a barrier for 1 ally that repels 1 physical attack.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 5,
+    "target": "1 ally"
   },
   "Thunder Reign": {
+    "add": "Shock",
     "cost": 1046,
     "effect": "Deals severe Electric damage to 1 foe. Medium chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 97,
+    "mod": 60,
+    "power": 600,
+    "rank": 8,
+    "target": "1 foe"
   },
   "Torrent Shot": {
     "cost": 11,
+    "crit": 10,
     "effect": "Deals weak Pierce damage to 1 foe (2-4 hits).",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 85,
+    "max": 4,
+    "min": 2,
+    "power": 30,
+    "rank": 4,
+    "target": "1 foe"
   },
   "Tranquility": {
     "cost": 2001,
     "effect": "Next magic attack will deal more than double the damage for all allies.",
     "elem": "sup",
+    "rank": 3,
+    "target": "All allies",
     "unique": true
   },
   "Trickster": {
+    "acc": "random ailment",
     "cost": 2001,
     "effect": "Massive Almighty damage to all foes. High chance of inflicting an ailment.",
     "elem": "alm",
+    "mod": 80,
+    "power": 300,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Unshaken Will": {
     "effect": "Protects completely from Confuse/Fear/Charm/Distress/Rage.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 8
   },
   "Vacuum Slash": {
     "cost": 14,
+    "crit": 5,
     "effect": "Deals weak Slash damage to all foes.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 90,
+    "power": 85,
+    "rank": 3,
+    "target": "All foes"
   },
   "Vacuum Wave": {
     "cost": 1044,
     "effect": "Deals severe Wind damage to all foes.",
     "elem": "win",
+    "hit": 95,
+    "power": 500,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Victory Cry": {
     "effect": "Fully recover HP and SP after winning a battle.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 9
   },
   "Vidyaraja's Blessing": {
     "effect": "Increases Evasion against Slash/Strike/Pierce skills.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 7
   },
   "Vile Assault": {
     "cost": 15,
+    "crit": 3,
     "effect": "Deals heavy Pierce damage to 1 foe. More damage to downed foe.",
-    "elem": "pie"
+    "elem": "pie",
+    "hit": 95,
+    "power": 400,
+    "rank": 7,
+    "target": "1 foe"
   },
   "Virus Breath": {
+    "add": "Poison",
     "cost": 1025,
     "effect": "Medium Almighty damage with medium chance of Poison to all foes.",
-    "elem": "alm"
+    "elem": "alm",
+    "hit": 95,
+    "mod": 40,
+    "power": 200,
+    "rank": 5,
+    "target": "All foes"
   },
   "Vorpal Blade": {
     "cost": 22,
+    "crit": 13,
     "effect": "Deals severe Slash damage to all foes.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 92,
+    "power": 580,
+    "rank": 8,
+    "target": "All foes"
   },
   "Weakness Amp": {
     "effect": "Greatly increases damage when striking a foe's weakness.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Weakness Boost": {
     "effect": "Increases damage when striking a foe's weakness.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Weakness Buffer": {
     "effect": "Reduces damage taken when an ally's weakness is struck.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Weakness Mitigator": {
     "effect": "Greatly reduces damage taken when an ally's weakness is struck.",
     "elem": "pas",
+    "rank": 4,
     "unique": true
   },
   "Wild Thunder": {
+    "add": "Shock",
     "cost": 1048,
     "effect": "Deals severe Electric damage to all foes. Low chance of inflicting Shock.",
     "elem": "ele",
+    "hit": 95,
+    "mod": 35,
+    "power": 450,
+    "rank": 3,
+    "target": "All foes",
     "unique": true
   },
   "Wind Amp": {
     "effect": "Automatically strengthen Wind skills by 50%. Can stack.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 6
   },
   "Wind Boost": {
     "effect": "Automatically strengthen Wind skills by 25%.",
-    "elem": "pas"
+    "elem": "pas",
+    "rank": 3
   },
   "Wind Break": {
     "cost": 1012,
     "effect": "Negate Wind resistance of all foes for 3 turns.",
-    "elem": "sup"
+    "elem": "sup",
+    "rank": 3,
+    "target": "All foes"
   },
   "Wind Driver": {
     "effect": "Automatically strengthen Wind skills by 75%. Can stack.",
     "elem": "pas",
+    "rank": 9,
     "unique": true
   },
   "Zan-ei": {
+    "add": "More dmg when closer to a new moon",
     "cost": 10,
+    "crit": 10,
     "effect": "Medium Slash damage to 1 foe. More damage when closer to a new moon.",
-    "elem": "sla"
+    "elem": "sla",
+    "hit": 88,
+    "power": 100,
+    "rank": 3,
+    "target": "1 foe"
   },
   "Zio": {
+    "add": "Shock",
     "cost": 1004,
     "effect": "Deals weak Electric damage to 1 foe. Low chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 99,
+    "mod": 15,
+    "power": 40,
+    "rank": 2,
+    "target": "1 foe"
   },
   "Ziodyne": {
+    "add": "Shock",
     "cost": 1014,
     "effect": "Deals heavy Electric damage to 1 foe. Low chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 99,
+    "mod": 15,
+    "power": 220,
+    "rank": 6,
+    "target": "1 foe"
   },
   "Zionga": {
+    "add": "Shock",
     "cost": 1008,
     "effect": "Deals medium Electric damage to 1 foe. Low chance of inflicting Shock.",
-    "elem": "ele"
+    "elem": "ele",
+    "hit": 99,
+    "mod": 15,
+    "power": 100,
+    "rank": 4,
+    "target": "1 foe"
   }
 }

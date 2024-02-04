@@ -41,13 +41,25 @@ function createCompConfig(): CompendiumConfig {
   const COST_THEURGY = 19 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
-    if (entry['cost'] == 2001) {
-      entry['cost'] = COST_THEURGY
-    } else if (entry['cost'] < 2000) {
-      const cost = entry['cost'];
-      const costType = cost > 100 ? COST_MP - 1000 : COST_HP;
-      entry['cost'] = cost ? cost + costType: 0;
+    const cost = entry['cost'];
+    const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
+    entry['cost'] = cost ? (cost > 2000 ? COST_THEURGY : cost + costType) : 0;
+
+    const effect = [];
+    if (entry['power']) { effect.push(`√${entry['power']} power`); }
+    if (entry['min']) { effect.push(`${entry['min']}${entry['max'] ? '-' + entry['max'] : ''} hits`); }
+    if (entry['hit'] && entry['hit'] < 90) { effect.push(`${entry['hit']}% hit`); }
+    if (entry['crit'] && entry['crit'] > 10) { effect.push(`${entry['crit']}% crit`); }
+
+    if (entry['mod']) {
+      const mod = entry['mod'];
+      const add = entry['add'];
+      effect.push(mod < 1000 ? `${mod}% ${add}` : `x${(mod / 100 - 10).toFixed(2)} ${add}`);
+    } else if (entry['add']) {
+      effect.push(entry['add']);
     }
+
+    entry['effect'] = effect.length > 0 ? effect.join(', ') : entry['effect'];
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
