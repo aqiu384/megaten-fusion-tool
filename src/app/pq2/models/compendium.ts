@@ -30,7 +30,7 @@ export class Compendium implements ICompendium {
     const resistCodes: NumDict = {};
 
     for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
-      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+      resistCodes[res] = ((code / 10000 | 0) << 10) + (code % 10000 / 2.5 | 0);
     }
 
     const blankResists = '-'.repeat(this.compConfig.resistElems.length);
@@ -73,7 +73,7 @@ export class Compendium implements ICompendium {
         ailments: codifyAilments(json['ailments']),
         skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
         area:     json['area'],
-        drop:     json['drops']?.join(', ') || ['-'],
+        drop:     json['drops']?.join(', ') || '-',
         code:     0,
         fusion:   'normal',
         isEnemy:  true
@@ -100,7 +100,7 @@ export class Compendium implements ICompendium {
       };
 
       if (json['card']) {
-        skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: 0 }));
+        skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: -100 }));
       }
     }
 

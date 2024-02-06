@@ -13,6 +13,7 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
+import ENEMY_DATA_JSON from './data/enemy-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -33,7 +34,15 @@ function createCompConfig(): CompendiumConfig {
 
   for (const demon of Object.values(DEMON_DATA_JSON)) {
     demon['code'] = 1;
-    demon['price'] = demon['lvl']**2 * 100;
+  }
+
+  for (const demon of Object.values(PARTY_DATA_JSON)) {
+    demon['fusion'] = 'party';
+  }
+
+  for (const enemy of Object.values(ENEMY_DATA_JSON)) {
+    enemy['area'] = '-';
+    enemy['stats'] = enemy['stats'].slice(0, 2);
   }
 
   const COST_HP = 2 << 10;
@@ -44,6 +53,7 @@ function createCompConfig(): CompendiumConfig {
     const cost = entry['cost'];
     const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
     entry['cost'] = cost ? (cost > 2000 ? COST_THEURGY : cost + costType) : 0;
+    if (entry['card']) { entry['card'] = 'Sword ' + entry['card']; }
 
     const effect = [];
     if (entry['power']) { effect.push(`√${entry['power']} power`); }
@@ -89,13 +99,13 @@ function createCompConfig(): CompendiumConfig {
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
-    enemyData: {},
-    enemyStats: ['HP', 'MP'].concat(COMP_CONFIG_JSON.baseStats),
+    enemyData: ENEMY_DATA_JSON,
+    enemyStats: ['HP', 'MP'],
 
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: false,
     hasDemonResists: true,
-    hasEnemies: false,
+    hasEnemies: true,
     hasQrcodes: false,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
