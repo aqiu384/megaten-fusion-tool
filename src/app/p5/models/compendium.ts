@@ -31,7 +31,7 @@ export class Compendium implements ICompendium {
     const resistCodes: { [code: string]: number } = {};
 
     for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
-      resistCodes[res] = ((code / 1000 | 0) << 10) + (code % 1000 / 2.5 | 0);
+      resistCodes[res] = ((code / 10000 | 0) << 10) + (code % 10000 / 2.5 | 0);
     }
 
     for (const demonDataJson of this.compConfig.demonData) {
