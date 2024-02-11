@@ -68,6 +68,7 @@
   "Almighty Amp": {
     "effect": "Automatically strengthen Almighty skills by 50%. Can stack.",
     "elem": "pas",
+    "mutate": true,
     "rank": 8
   },
   "Almighty Boost": {
@@ -359,13 +360,13 @@
     "target": "1 foe"
   },
   "Buff Amp": {
-    "effect": "Greatly increases the descs of buffs on self.",
+    "effect": "Greatly increases the effects of buffs on self.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Buff Boost": {
-    "effect": "Increases the descs of buffs on self.",
+    "effect": "Increases the effects of buffs on self.",
     "elem": "pas",
     "rank": 4,
     "unique": true
@@ -632,7 +633,7 @@
   },
   "Divine Grace": {
     "card": 7,
-    "effect": "Greatly increases the desc of healing skills.",
+    "effect": "Greatly increases the effect of healing skills.",
     "elem": "pas",
     "rank": 5
   },
@@ -722,7 +723,7 @@
   },
   "Drain Ability": {
     "card": 3,
-    "effect": "Doubles the desc of Life Drain and Spirit Drain.",
+    "effect": "Doubles the effect of Life Drain and Spirit Drain.",
     "elem": "pas",
     "rank": 4
   },
@@ -2033,7 +2034,7 @@
   },
   "Oracle": {
     "cost": 2001,
-    "effect": "Grants 1 random positive desc to all allies.",
+    "effect": "Grants 1 random positive effect to all allies.",
     "elem": "sup",
     "rank": 3,
     "target": "All allies",
@@ -2447,7 +2448,7 @@
   },
   "Revelation": {
     "cost": 2001,
-    "effect": "Grants 1 random enhanced positive desc to all allies.",
+    "effect": "Grants 1 random enhanced positive effect to all allies.",
     "elem": "sup",
     "rank": 3,
     "target": "All allies",

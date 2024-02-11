@@ -54,6 +54,7 @@ function createCompConfig(): CompendiumConfig {
     const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
     entry['cost'] = cost ? (cost > 2000 ? COST_THEURGY : cost + costType) : 0;
     if (entry['card']) { entry['card'] = 'Sword ' + entry['card']; }
+    if (entry['mutate']) { entry['card'] = 'Skill Mutation'; }
 
     const effect = [];
     if (entry['power']) { effect.push(`√${entry['power']} power`); }

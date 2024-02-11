@@ -132,7 +132,7 @@ export class Compendium implements ICompendium {
     const results:       { [race: string]: number[] } = {};
 
     for (const skill of Object.values(this.skills)) {
-      if (skill.learnedBy.length < 1) {
+      if (skill.learnedBy.length < 1 && skill.transfer.length < 1) {
         skill.rank = 99;
       } else {
         skills.push(skill);
