@@ -264,13 +264,18 @@ export class RecipeGeneratorComponent implements OnChanges {
       .filter(s => s[1] < 2)
       .map(s => this.compendium.getSkill(s[0]));
 
+    const learnedSkills = Object.entries(demon.skills)
+      .slice(0, this.internalMaxSkills)
+      .filter(s => s[1] < 100)
+      .map(s => this.compendium.getSkill(s[0]));
+
     for (let i = 0; i < inheritElems.length; i++) {
       if (!(demon.inherits & (1 << i))) {
         excludeElems.push(inheritElems[inheritElems.length - i - 1]);
       }
     }
     
-    this.skills[this.blankSkill.element] = [this.blankSkill].concat(innateSkills);
+    this.skills[this.blankSkill.element] = [this.blankSkill].concat(learnedSkills);
     this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e] && !excludeElems.includes(e));
     this.form.patchValue({
       race: demon.race,
