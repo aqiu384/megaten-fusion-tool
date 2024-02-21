@@ -90,7 +90,7 @@ export class Compendium implements ICompendium {
         name,
         element:   json['elem'] || json['element'],
         cost:      json['cost'] || 0,
-        rank:      json['unique'] ? 91 : (json['cost'] & 0x3FF) / 100 || 1,
+        rank:      json['unique'] ? 99 : json['rank'] || (json['cost'] & 0x3FF) / 100 || 1,
         effect:    json['effect'],
         target:    json['target'] || 'Self',
         learnedBy: [],

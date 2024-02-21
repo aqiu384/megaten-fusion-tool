@@ -11,7 +11,7 @@ import { CompendiumConfig } from '../models';
   template: `
     <app-smt-skill-list
       [elemOrder]="compConfig.elemOrder"
-      [hasRank]="false"
+      [hasRank]="compConfig.hasSkillRanks"
       [hasTarget]="true"
       [isPersona]="true"
       [transferTitle]="'Skill Card'"

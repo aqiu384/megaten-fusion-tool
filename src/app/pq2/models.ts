@@ -45,6 +45,7 @@ export interface CompendiumConfig extends BaseComp {
   normalTable;
   hasTripleFusion: boolean;
   hasDemonResists: boolean;
+  hasSkillRanks: boolean;
   hasEnemies: boolean;
   hasQrcodes: boolean;
   specialRecipes?;

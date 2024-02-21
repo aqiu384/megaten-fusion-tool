@@ -106,6 +106,7 @@ function createCompConfig(): CompendiumConfig {
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: true,
     hasDemonResists: false,
+    hasSkillRanks: false,
     hasEnemies: true,
     hasQrcodes: true,
     specialRecipes: SPECIAL_RECIPES_JSON,

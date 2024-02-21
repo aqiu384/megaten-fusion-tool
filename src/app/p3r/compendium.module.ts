@@ -31,13 +31,16 @@ function createCompConfig(): CompendiumConfig {
   }
 
   Object.assign(DEMON_DATA_JSON, PARTY_DATA_JSON);
+  const estimatePrice = (stats: number[]) => 2000 + stats.reduce((acc, x) => acc + x, 0) ** 2;
 
   for (const demon of Object.values(DEMON_DATA_JSON)) {
     demon['code'] = 1;
+    demon['price'] = estimatePrice(demon['stats']);
   }
 
   for (const demon of Object.values(PARTY_DATA_JSON)) {
     demon['fusion'] = 'party';
+    demon['price'] = estimatePrice(demon['stats']);
   }
 
   for (const enemy of Object.values(ENEMY_DATA_JSON)) {
@@ -58,7 +61,7 @@ function createCompConfig(): CompendiumConfig {
 
     const effect = [];
     if (entry['power']) { effect.push(`√${entry['power']} power`); }
-    if (entry['min']) { effect.push(`${entry['min']}${entry['max'] ? '-' + entry['max'] : ''} hits`); }
+    if (entry['min']) { effect.push(`${entry['min']}${entry['max'] && entry['max'] != entry['min'] ? '-' + entry['max'] : ''} hits`); }
     if (entry['hit'] && entry['hit'] < 90) { effect.push(`${entry['hit']}% hit`); }
     if (entry['crit'] && entry['crit'] > 10) { effect.push(`${entry['crit']}% crit`); }
 
@@ -106,6 +109,7 @@ function createCompConfig(): CompendiumConfig {
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: false,
     hasDemonResists: true,
+    hasSkillRanks: true,
     hasEnemies: true,
     hasQrcodes: false,
     specialRecipes: SPECIAL_RECIPES_JSON,

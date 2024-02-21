@@ -283,6 +283,7 @@
     "unique": true
   },
   "Blade of Execution": {
+    "add": "Decreases all stats",
     "cost": 2001,
     "effect": "Massive Almighty damage to 1 foe and decreases all of their stats.",
     "elem": "alm",
@@ -305,6 +306,7 @@
     "target": "All foes"
   },
   "Blaze of Life": {
+    "add": "Ignores resistances, Fully restores user's HP",
     "cost": 2001,
     "effect": "Massive Fire damage to 1 foe, ignoring resistances. Fully restores user's HP.",
     "elem": "fir",
@@ -324,6 +326,7 @@
     "unique": true
   },
   "Bleeding Fury": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "crit": 30,
     "effect": "Deals severe Strike damage to 1 foe, ignoring resistances.",
@@ -334,9 +337,11 @@
     "unique": true
   },
   "Blizzard Edge": {
+    "add": "Freeze, Ignores resistances",
     "cost": 2001,
     "effect": "Deals severe Ice damage to 1 foe, ignoring resistances.",
     "elem": "ice",
+    "mod": 80,
     "power": 180,
     "rank": 3,
     "target": "1 foe",
@@ -509,6 +514,7 @@
     "target": "1 foe"
   },
   "Cyclone Arrow": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "effect": "Deals severe Wind damage to 1 foe, ignoring resistances.",
     "elem": "win",
@@ -655,6 +661,7 @@
     "target": "1 foe"
   },
   "Divine Retribution": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "effect": "Deals severe Light damage to 1 foe, ignoring resistances.",
     "elem": "lig",
@@ -844,7 +851,7 @@
     "unique": true
   },
   "Electric Onslaught": {
-    "add": "Shock",
+    "add": "Shock, Ignores resistances",
     "cost": 2001,
     "effect": "Severe Elec damage to 1 foe, ignoring resistances. High chance of Shock.",
     "elem": "ele",
@@ -1131,6 +1138,7 @@
     "rank": 6
   },
   "Hack n' Blast": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "crit": 20,
     "effect": "Deals severe Slash damage to 1 foe, ignoring resistances.",
@@ -1202,6 +1210,7 @@
     "effect": "Deals severe Slash damage to 1 foe. High chance of critical.",
     "elem": "sla",
     "hit": 90,
+    "mutate": true,
     "power": 500,
     "rank": 8,
     "target": "1 foe",
@@ -1238,6 +1247,7 @@
     "target": "1 foe"
   },
   "Hound of Hades": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "effect": "Deals severe Dark damage to 1 foe, ignoring resistances.",
     "elem": "dar",
@@ -1346,7 +1356,7 @@
     "unique": true
   },
   "King and I": {
-    "add": "Freeze",
+    "add": "Freeze, Ignores resistances",
     "cost": 2001,
     "effect": "Heavy Ice damage to all foes, ignoring resistances. Medium chance of Freeze.",
     "elem": "ice",
@@ -1419,9 +1429,11 @@
     "unique": true
   },
   "Lightning Spike": {
+    "add": "Shock, Ignores resistances",
     "cost": 2001,
     "effect": "Deals heavy Electric damage to all foes, ignoring resistances.",
     "elem": "ele",
+    "mod": 20,
     "power": 100,
     "rank": 3,
     "target": "All foes",
@@ -1551,7 +1563,9 @@
   "Magic Mastery": {
     "effect": "Automatically strengthen non-Almighty magic skills by 50%. Can stack.",
     "elem": "pas",
-    "rank": 9
+    "mutate": true,
+    "rank": 9,
+    "unique": true
   },
   "Mahama": {
     "add": "instakill",
@@ -1745,6 +1759,7 @@
     "target": "All foes"
   },
   "Maximum Firepower": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "crit": 15,
     "effect": "Deals severe Pierce damage to 1 foe, ignoring resistances.",
@@ -2040,6 +2055,7 @@
     "unique": true
   },
   "Orgia Mode": {
+    "add": "Ignores resistances, Ignores orders for a time",
     "cost": 2001,
     "crit": 10,
     "effect": "Heavy Pierce dmg to all foes, ignoring resistances. Ignores orders for a time.",
@@ -2487,6 +2503,7 @@
     "unique": true
   },
   "Scarlet Havoc": {
+    "add": "Ignores resistances",
     "cost": 2001,
     "crit": 20,
     "effect": "Deals severe Slash damage to all foes, ignoring resistances.",
@@ -2824,7 +2841,7 @@
     "unique": true
   },
   "Trickster": {
-    "acc": "random ailment",
+    "add": "random ailment",
     "cost": 2001,
     "effect": "Massive Almighty damage to all foes. High chance of inflicting an ailment.",
     "elem": "alm",
