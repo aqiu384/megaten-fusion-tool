@@ -1,19 +1,23 @@
 import { Demon, FusionRecipe, Compendium, FusionChart, SquareChart, RecipeGeneratorConfig } from '../models';
 import { toFusionPair, toFusionPairResult, toDemonTrio } from './conversions';
 
-export function createSkillsRecipe(demon: string, ingreds: string[], skills: string[], comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
+type SkillRef = { [skill: string]: string };
+
+export function createSkillsRecipe(demon: string, ingreds: string[], skills: SkillRef, comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
   const { fissionCalculator, inheritElems, restrictInherits, triExclusiveRaces, triFissionCalculator } = recipeConfig;
   const { normalChart } = squareChart;
   const demonR = comp.getDemon(demon);
-  const skillsI = skills.map(s => comp.getSkill(s)).filter((s, i, a) =>
-    s.rank < 50 &&
-    s.learnedBy.length > 0 &&
-    !demonR.skills.hasOwnProperty(s.name) &&
-    a.indexOf(s) === i
-  );
 
+  const skillRef: SkillRef = {};
+
+  for (const [sname, dname] of Object.entries(skills)) {
+    if (dname !== '-' && dname !== demonR.name)  {
+      skillRef[sname] = dname;
+    }
+  }
+
+  const skillsI = Object.keys(skills).map(s => comp.getSkill(s));
   const canInheritI = canInheritCode(skillsI.map(s => s.element), inheritElems);
-
   let stepR = comp.getSpecialNameEntries(demon);
 
   if (stepR.length < 2 && triExclusiveRaces.includes(demonR.race)) {
@@ -44,27 +48,6 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: str
   }
 
   const ingredsR = stepR.map(i => comp.getDemon(i)).sort((a, b) => b.price - a.price);
-  const ingredsA = ingreds.map(i => comp.getDemon(i)).sort((a, b) => b.price - a.price);
-
-  const skillInit: { [skill: string]: string } = {};
-  const skillRef: { [skill: string]: string } = {};
-
-  for (const skill of skillsI) {
-    for (const ingred of ingredsR) {
-      if (ingred.skills.hasOwnProperty(skill.name)) {
-        skillInit[skill.name] = ingred.name;
-      }
-    }
-
-    if (!skillInit[skill.name]) {
-      for (const ingred of ingredsA) {
-        if (ingred.skills.hasOwnProperty(skill.name)) {
-          skillRef[skill.name] = ingred.name;
-        }
-      }
-    }
-  }
-
   const skillsR = Object.keys(skillRef).map(s => comp.getSkill(s));
   const canInheritR = canInheritCode(skillsR.map(s => s.element), inheritElems);
   const skillInheritsR = skillsR.map(s => canInheritCode([s.element], inheritElems));
@@ -87,7 +70,7 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: str
     }
   }
 
-  const recipe = { chain1: [], chain2: [], stepR, skills: Object.assign(skillRef, skillInit), result: demon };
+  const recipe = { chain1: [], chain2: [], stepR, skills: skillRef, result: demon };
   if (!leftIngredR) { return recipe; }
 
   const skillIngreds = Object.values(skillRef).filter((d, i, a) => a.indexOf(d) === i);

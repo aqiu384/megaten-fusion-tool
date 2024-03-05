@@ -21,7 +21,7 @@ import { CurrentDemonService } from '../current-demon.service';
       [rowData]="fusionEntries"
       [isFusion]="true">
     </app-fusion-entry-table>
-    <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionPrereq && !fusionEntries.length"
+    <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionEntries.length"
       [langEn]="langEn"
       [title]="(langEn ? 'Ingredient 1 x Ingredient 2 = ' : '悪魔1 x 悪魔2 = ') + currentDemon"
       [leftHeader]="langEn ? 'Ingredient 1' : '悪魔1'"

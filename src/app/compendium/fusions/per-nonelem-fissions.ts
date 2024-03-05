@@ -11,6 +11,10 @@ export function splitWithSameRace(name: string, compendium: Compendium, fusionCh
   const resultLvls = compendium.getResultDemonLvls(targetRace);
   const targetLvlIndex = resultLvls.indexOf(targetLvl);
 
+  if (targetLvlIndex < 0) {
+    return recipes;
+  }
+
   const lvlModifier = 1;
   const minResultLvl = 2 * (targetLvl - lvlModifier);
   const maxResultLvl = resultLvls[targetLvlIndex + 1] ? 2 * (resultLvls[targetLvlIndex + 1] - lvlModifier) : 200;

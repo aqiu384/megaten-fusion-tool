@@ -71,10 +71,10 @@ import { createSkillsRecipe } from '../models/recipe-generator';
             </td>
             <td>
               <select *ngIf="ingred.controls.searchSkill.value" formControlName="demon">
-                <option *ngFor="let demon of learnedBy[ingred.controls.skill.value.name]" [ngValue]="demon">{{ demon.name }} {{ demon.lvl ? '(' + demon.lvl + ')' : '' }}</option>
+                <option *ngFor="let demon of learnedBy[ingred.controls.skill.value.name]" [ngValue]="demon">{{ demon.name }}</option>
               </select>
               <select *ngIf="!ingred.controls.searchSkill.value" formControlName="demon">
-                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }} {{ demon.lvl ? '(' + demon.lvl + ')' : '' }}</option>
+                <option *ngFor="let demon of demons[ingred.controls.race.value]" [ngValue]="demon">{{ demon.name }}</option>
               </select>
             </td>
           </tr>
@@ -159,7 +159,14 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.form.valueChanges.subscribe(form => {
       if (this.form.valid) {
         const ingreds = form.ingreds.filter(i => i.demon.name !== '-' && i.demon.name !== form.demon.name).map(i => i.demon.name);
-        const skills = form.ingreds.filter(i => i.searchSkill && i.skill.name !== '-').map(i => i.skill.name);
+        const skills: { [skill: string]: string } = {};
+
+        for (const ingred of form.ingreds) {
+          if (ingred.searchSkill && ingred.skill.name !== '-') {
+            skills[ingred.skill.name] = ingred.demon.name;
+          }
+        }
+
         this.updateRecipe(createSkillsRecipe(form.demon.name, ingreds, skills, this.compendium, this.squareChart, this.recipeConfig));
       }
     });
