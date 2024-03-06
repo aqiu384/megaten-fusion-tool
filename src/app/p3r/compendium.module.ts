@@ -44,7 +44,6 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const enemy of Object.values(ENEMY_DATA_JSON)) {
-    enemy['area'] = '-';
     enemy['stats'] = enemy['stats'].slice(0, 2);
   }
 
