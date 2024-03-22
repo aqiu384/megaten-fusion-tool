@@ -45,6 +45,7 @@ function createCompConfig(): CompendiumConfig {
 
   for (const enemy of Object.values(ENEMY_DATA_JSON)) {
     enemy['stats'] = enemy['stats'].slice(0, 2);
+    enemy['drops'] = Object.keys(enemy['drops'] || {});
   }
 
   const COST_HP = 2 << 10;

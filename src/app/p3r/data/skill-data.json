@@ -31,18 +31,18 @@
   },
   "Ailment Boost": {
     "card": 5,
-    "effect": "Increase chances of inflicting ailments.",
+    "effect": "Increase chances of inflicting ailments by 50%.",
     "elem": "pas",
     "rank": 6
   },
   "Ailment Burst": {
-    "effect": "Increases critical rate on foes with ailments (with Mitsuru in battle).",
+    "effect": "Increases critical rate on foes with ailments (with Mitsuru in battle) by 7%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Ailment Surge": {
-    "effect": "Greatly increases critical rate on foes with ailments (with Mitsuru in battle).",
+    "effect": "Greatly increases critical rate on foes with ailments (with Mitsuru in battle) by 15%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
@@ -365,13 +365,13 @@
     "target": "1 foe"
   },
   "Buff Amp": {
-    "effect": "Greatly increases the effects of buffs on self.",
+    "effect": "Greatly increases the effects of buffs on self by 30%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Buff Boost": {
-    "effect": "Increases the effects of buffs on self.",
+    "effect": "Increases the effects of buffs on self by 10%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
@@ -423,24 +423,24 @@
   "Charge": {
     "card": 12,
     "cost": 1030,
-    "effect": "Next physical attack will deal more than double the damage.",
+    "effect": "Next physical attack will deal more than double the damage (230%).",
     "elem": "sup",
     "rank": 6
   },
   "Charm Boost": {
-    "effect": "Increase chances of inflicting Charm.",
+    "effect": "Increase chances of inflicting Charm by 50%.",
     "elem": "pas",
     "rank": 2
   },
   "Concentrate": {
     "card": 12,
     "cost": 1030,
-    "effect": "Next magic attack will deal more than double the damage.",
+    "effect": "Next magic attack will deal more than double the damage (230%).",
     "elem": "sup",
     "rank": 6
   },
   "Confuse Boost": {
-    "effect": "Increase chances of inflicting Confuse.",
+    "effect": "Increase chances of inflicting Confuse by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -467,23 +467,23 @@
     "rank": 4
   },
   "Crit Rate Amp": {
-    "effect": "Greatly increases critical rate.",
+    "effect": "Greatly increases critical rate 15%.",
     "elem": "pas",
     "rank": 4
   },
   "Crit Rate Boost": {
-    "effect": "Increases critical rate.",
+    "effect": "Increases critical rate by 5%.",
     "elem": "pas",
     "rank": 3
   },
   "Critical Amp": {
-    "effect": "Greatly increases critical rate and greatly increases critical hit strength.",
+    "effect": "Greatly increases critical rate by 10% and greatly increases critical hit strength by 40%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Critical Boost": {
-    "effect": "Increases critical rate and increases critical hit strength.",
+    "effect": "Increases critical rate by 5% and increases critical hit strength by 20%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
@@ -634,7 +634,7 @@
     "unique": true
   },
   "Distress Boost": {
-    "effect": "Increase chances of inflicting Distress.",
+    "effect": "Increase chances of inflicting Distress by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -649,6 +649,7 @@
     "effect": "Revives party, fully restores allies' HP, and will reflect 1 attack.",
     "elem": "rec",
     "rank": 3,
+    "target": "All allies",
     "unique": true
   },
   "Divine Judgment": {
@@ -671,61 +672,61 @@
     "unique": true
   },
   "Dizzy Boost": {
-    "effect": "Increase chances of inflicting Dizzy.",
+    "effect": "Increase chances of inflicting Dizzy by 50%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Dark": {
     "card": 4,
-    "effect": "Increase Evasion against non-instakill Dark skills.",
+    "effect": "Increase Evasion against non-instakill Dark skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Elec": {
     "card": 4,
-    "effect": "Increase Evasion against Electric skills.",
+    "effect": "Increase Evasion against Electric skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Fire": {
     "card": 4,
-    "effect": "Increase Evasion against Fire skills.",
+    "effect": "Increase Evasion against Fire skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Ice": {
     "card": 4,
-    "effect": "Increase Evasion against Ice skills.",
+    "effect": "Increase Evasion against Ice skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Light": {
     "card": 4,
-    "effect": "Increase Evasion against non-instakill Light skills.",
+    "effect": "Increase Evasion against non-instakill Light skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Pierce": {
     "card": 4,
-    "effect": "Increase Evasion against Pierce skills.",
+    "effect": "Increase Evasion against Pierce skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Slash": {
     "card": 4,
-    "effect": "Increase Evasion against Slash skills.",
+    "effect": "Increase Evasion against Slash skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Strike": {
     "card": 4,
-    "effect": "Increase Evasion against Strike skills.",
+    "effect": "Increase Evasion against Strike skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
   "Dodge Wind": {
     "card": 4,
-    "effect": "Increase Evasion against Wind skills.",
+    "effect": "Increase Evasion against Wind skills by 15%.",
     "elem": "pas",
     "rank": 2
   },
@@ -892,55 +893,55 @@
   },
   "Evade Dark": {
     "card": 7,
-    "effect": "Greatly increase Evasion against non-instakill Dark skills. Does not stack.",
+    "effect": "Greatly increase Evasion against non-instakill Dark skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Elec": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Electric skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Electric skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Fire": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Fire skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Fire skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Ice": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Ice skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Ice skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Light": {
     "card": 7,
-    "effect": "Greatly increase Evasion against non-instakill Light skills. Does not stack.",
+    "effect": "Greatly increase Evasion against non-instakill Light skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Pierce": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Pierce skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Pierce skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Slash": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Slash skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Slash skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Strike": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Strike skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Strike skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
   "Evade Wind": {
     "card": 7,
-    "effect": "Greatly increase Evasion against Wind skills. Does not stack.",
+    "effect": "Greatly increase Evasion against Wind skills by 40%. Does not stack.",
     "elem": "pas",
     "rank": 5
   },
@@ -984,7 +985,7 @@
     "target": "1 foe"
   },
   "Fear Boost": {
-    "effect": "Increase chances of inflicting Fear.",
+    "effect": "Increase chances of inflicting Fear by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -1022,13 +1023,13 @@
   "Foul Breath": {
     "card": 3,
     "cost": 1008,
-    "effect": "Increase chance of inflicting ailments to 1 foe.",
+    "effect": "Increase chance of inflicting ailments to 1 foe by 50%.",
     "elem": "alm",
     "rank": 2,
     "target": "1 foe"
   },
   "Freeze Boost": {
-    "effect": "Increase chances of inflicting Freeze.",
+    "effect": "Increase chances of inflicting Freeze by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -1111,13 +1112,6 @@
     "power": 800,
     "rank": 8,
     "target": "1 foe"
-  },
-  "Great Seal": {
-    "cost": 100,
-    "effect": "Unleashes the power within to seal Nyx.",
-    "elem": "alm",
-    "rank": 3,
-    "unique": true
   },
   "Growth 1": {
     "card": 3,
@@ -1404,9 +1398,8 @@
   "Life Drain": {
     "card": 3,
     "cost": 1003,
-    "effect": "Drain some HP from 1 foe, restoring the user's HP.",
+    "effect": "Drain 35 HP from 1 foe, restoring the user's HP.",
     "elem": "alm",
-    "power": 35,
     "rank": 2,
     "target": "1 foe"
   },
@@ -2083,19 +2076,20 @@
     "target": "1 ally"
   },
   "Phys Amp": {
-    "effect": "Greatly strengthens physical skills.",
+    "effect": "Greatly strengthens physical skills by 20%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Phys Attack": {
     "effect": "Normal attack using the Phys attribute",
-    "element": "sla",
+    "elem": "sla",
     "rank": 99,
+    "target": "1 foe",
     "unique": true
   },
   "Phys Boost": {
-    "effect": "Strengthens physical skills.",
+    "effect": "Strengthens physical skills by 10%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
@@ -2108,8 +2102,9 @@
   },
   "Pierce Attack": {
     "effect": "Normal attack using the Pierce attribute",
-    "element": "pie",
+    "elem": "pie",
     "rank": 99,
+    "target": "1 foe",
     "unique": true
   },
   "Pierce Boost": {
@@ -2148,7 +2143,7 @@
     "target": "1 foe"
   },
   "Poison Boost": {
-    "effect": "Increase chances of inflicting Poison.",
+    "effect": "Increase chances of inflicting Poison by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -2226,7 +2221,7 @@
     "target": "1 foe"
   },
   "Rage Boost": {
-    "effect": "Increase chances of inflicting Rage.",
+    "effect": "Increase chances of inflicting Rage by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -2552,7 +2547,7 @@
     "unique": true
   },
   "Shock Boost": {
-    "effect": "Increase chances of inflicting Shock.",
+    "effect": "Increase chances of inflicting Shock by 50%.",
     "elem": "pas",
     "rank": 2
   },
@@ -2600,8 +2595,9 @@
   },
   "Slash Attack": {
     "effect": "Normal attack using the Slash attribute",
-    "element": "sla",
+    "elem": "sla",
     "rank": 99,
+    "target": "1 foe",
     "unique": true
   },
   "Slash Boost": {
@@ -2652,9 +2648,8 @@
   "Spirit Drain": {
     "card": 3,
     "cost": 1003,
-    "effect": "Drain some SP from 1 foe, restoring the user's SP.",
+    "effect": "Drain 20 SP from 1 foe, restoring the user's SP.",
     "elem": "alm",
-    "power": 35,
     "rank": 3,
     "target": "1 foe"
   },
@@ -2673,7 +2668,7 @@
   "Stagnant Air": {
     "card": 3,
     "cost": 1012,
-    "effect": "Increase chance of inflicting ailments to all combatants.",
+    "effect": "Increase chance of inflicting ailments to all combatants by 50%.",
     "elem": "alm",
     "rank": 4,
     "target": "Universal"
@@ -2686,8 +2681,9 @@
   },
   "Strike Attack": {
     "effect": "Normal attack using the Strike attribute",
-    "element": "str",
+    "elem": "str",
     "rank": 99,
+    "target": "1 foe",
     "unique": true
   },
   "Strike Boost": {
@@ -2924,25 +2920,25 @@
     "target": "All foes"
   },
   "Weakness Amp": {
-    "effect": "Greatly increases damage when striking a foe's weakness.",
+    "effect": "Greatly increases damage when striking a foe's weakness by 20%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Weakness Boost": {
-    "effect": "Increases damage when striking a foe's weakness.",
+    "effect": "Increases damage when striking a foe's weakness by 10%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Weakness Buffer": {
-    "effect": "Reduces damage taken when an ally's weakness is struck.",
+    "effect": "Reduces damage taken when an ally's weakness is struck by 10%.",
     "elem": "pas",
     "rank": 4,
     "unique": true
   },
   "Weakness Mitigator": {
-    "effect": "Greatly reduces damage taken when an ally's weakness is struck.",
+    "effect": "Greatly reduces damage taken when an ally's weakness is struck by 15%.",
     "elem": "pas",
     "rank": 4,
     "unique": true

@@ -2,7 +2,7 @@
   "Adamant Beetle": {
     "ailments": "444444",
     "area": "Arqa II 57-65",
-    "drops": ["Shogun's Horn", "Amethyst"],
+    "drops": {"Shogun's Horn": 30, "Amethyst": 15},
     "exp": 202,
     "lvl": 21,
     "race": "Emperor",
@@ -13,7 +13,7 @@
   "Almighty Hand": {
     "ailments": "444444",
     "area": "Yabbashah II 103-117",
-    "drops": ["Divine Adornment", "Amethyst"],
+    "drops": {"Divine Adornment": 35, "Amethyst": 10},
     "exp": 381,
     "lvl": 36,
     "race": "Magician",
@@ -23,8 +23,8 @@
   },
   "Amenti Raven": {
     "ailments": "444444",
-    "area": "Adamah 227-244",
-    "drops": ["Black Hole Lantern", "Onyx", "Garnet"],
+    "area": "Adamah I 227-244",
+    "drops": {"Black Hole Lantern": 35, "Onyx": 5, "Garnet": 5},
     "exp": 1739,
     "lvl": 64,
     "race": "Hermit",
@@ -34,8 +34,8 @@
   },
   "Amorous Snake B": {
     "ailments": "NNNNNN",
-    "area": "Harabah I 197.1",
-    "drops": ["Necklace of Fixation"],
+    "area": "Harabah I P1",
+    "drops": {"Necklace of Fixation": 100},
     "exp": 3729,
     "lvl": 64,
     "race": "Lovers P",
@@ -56,7 +56,7 @@
   "Angry Table": {
     "ailments": "444444",
     "area": "Harabah II 200-223",
-    "drops": ["Silver Cutlery", "Onyx", "Emerald"],
+    "drops": {"Silver Cutlery": 30, "Onyx": 5, "Emerald": 5},
     "exp": 1268,
     "lvl": 59,
     "race": "Magician",
@@ -67,7 +67,7 @@
   "Apostate Tower": {
     "ailments": "4-----",
     "area": "Harabah I 175-196",
-    "drops": ["Crown of Egoism", "Turquoise", "Garnet"],
+    "drops": {"Crown of Egoism": 30, "Turquoise": 5, "Garnet": 5},
     "exp": 1264,
     "lvl": 53,
     "race": "Hierophant",
@@ -77,7 +77,7 @@
   },
   "Appropriating Noble": {
     "ailments": "NNNNNN",
-    "area": "Adamah 246",
+    "area": "Adamah I 246",
     "exp": 97906,
     "lvl": 74,
     "race": "Hermit P",
@@ -88,7 +88,7 @@
   "Arcane Turret": {
     "ailments": "-1-4--",
     "area": "Tziah I 139-142",
-    "drops": ["Kill Shot Turret", "Emerald"],
+    "drops": {"Kill Shot Turret": 30, "Emerald": 5},
     "exp": 988,
     "lvl": 42,
     "race": "Chariot",
@@ -109,7 +109,7 @@
   "Ardent Checkmate": {
     "ailments": "----N-",
     "area": "Arqa II 44-68",
-    "drops": ["Steel Medal"],
+    "drops": {"Steel Medal": 100},
     "exp": 4022,
     "lvl": 20,
     "race": "Fool",
@@ -120,7 +120,7 @@
   "Ardent Dancer": {
     "ailments": "N-4-4-",
     "area": "Yabbashah I 72-89",
-    "drops": ["Balloon of Feuds", "Amethyst", "Onyx"],
+    "drops": {"Balloon of Feuds": 30, "Amethyst": 10, "Onyx": 5},
     "exp": 238,
     "lvl": 24,
     "race": "Lovers",
@@ -131,7 +131,7 @@
   "Avenger Knight": {
     "ailments": "4----4",
     "area": "Yabbashah I 85-89",
-    "drops": ["Saddle of Aggression", "Onyx"],
+    "drops": {"Saddle of Aggression": 30, "Onyx": 15},
     "exp": 415,
     "lvl": 29,
     "race": "Emperor",
@@ -152,7 +152,7 @@
   "Battle Wheel": {
     "ailments": "4-4444",
     "area": "Harabah I 186-197",
-    "drops": ["War Wheel", "Garnet"],
+    "drops": {"War Wheel": 30, "Garnet": 15},
     "exp": 1399,
     "lvl": 56,
     "race": "Chariot",
@@ -160,21 +160,10 @@
     "skills": ["Strike Attack", "Heat Wave", "Bufudyne", "Mabufudyne", "Freeze Boost"],
     "stats": [590, 120, 38, 35, 33, 34, 28]
   },
-  "Bestial Wheel": {
-    "ailments": "-1-4--",
-    "area": "Arqa II 68-68",
-    "drops": ["Steel Wheel"],
-    "exp": 121,
-    "lvl": 15,
-    "race": "Chariot",
-    "resists": "s-s---w---",
-    "skills": ["Strike Attack"],
-    "stats": [283, 20, 17, 3, 16, 11, 7]
-  },
   "Bestial Wheel B": {
     "ailments": "4--4N1",
     "area": "Arqa II 44-53",
-    "drops": ["Steel Wheel", "Onyx"],
+    "drops": {"Steel Wheel": 50, "Onyx": 50},
     "exp": 838,
     "lvl": 21,
     "race": "Chariot",
@@ -184,8 +173,8 @@
   },
   "Bigoted Maya": {
     "ailments": "444444",
-    "area": "Adamah 227-235",
-    "drops": ["Mask of Prejudice", "Turquoise", "Opal"],
+    "area": "Adamah I 227-235",
+    "drops": {"Mask of Prejudice": 35, "Turquoise": 5, "Opal": 5},
     "exp": 2102,
     "lvl": 64,
     "race": "Justice",
@@ -195,8 +184,8 @@
   },
   "Black Hand": {
     "ailments": "-NNNNN",
-    "area": "Harabah II 225.2",
-    "drops": ["Assailant's Choker"],
+    "area": "Harabah II P2",
+    "drops": {"Assailant's Choker": 100},
     "exp": 0,
     "lvl": 69,
     "race": "Magician P",
@@ -207,7 +196,7 @@
   "Black Raven": {
     "ailments": "444444",
     "area": "Arqa I 25-37",
-    "drops": ["Dusk Lantern", "Amethyst"],
+    "drops": {"Dusk Lantern": 40, "Amethyst": 5},
     "exp": 50,
     "lvl": 11,
     "race": "Hermit",
@@ -228,7 +217,7 @@
   "Bloody Maria": {
     "ailments": "N1-NNN",
     "area": "Yabbashah II 105",
-    "drops": ["AS Generic Material"],
+    "drops": {"AS Generic Material": 100},
     "exp": 25909,
     "lvl": 37,
     "race": "Priestess P",
@@ -239,7 +228,7 @@
   "Blue Sigil": {
     "ailments": "4-----",
     "area": "Tziah I 119-142",
-    "drops": ["Hail Charm", "Onyx"],
+    "drops": {"Hail Charm": 35, "Onyx": 10},
     "exp": 646,
     "lvl": 36,
     "race": "Hierophant",
@@ -250,7 +239,7 @@
   "Bold Checkmate": {
     "ailments": "----N-",
     "area": "Tziah I 119-142",
-    "drops": ["Silver Medal"],
+    "drops": {"Silver Medal": 100},
     "exp": 16441,
     "lvl": 43,
     "race": "Fool",
@@ -261,7 +250,7 @@
   "Brave Wheel": {
     "ailments": "-1-4--",
     "area": "Tziah I 134-142",
-    "drops": ["Surmounting Wheel", "Topaz", "Amethyst"],
+    "drops": {"Surmounting Wheel": 25, "Topaz": 10, "Amethyst": 5},
     "exp": 806,
     "lvl": 41,
     "race": "Chariot",
@@ -271,7 +260,7 @@
   },
   "Bronze Dice": {
     "area": "Arqa II 44-63",
-    "drops": ["Copper Dice", "Turquoise", "Malachite"],
+    "drops": {"Copper Dice": 35, "Turquoise": 5, "Malachite": 5},
     "exp": 82,
     "lvl": 16,
     "race": "Fortune",
@@ -281,8 +270,8 @@
   },
   "Bronze Dice B": {
     "ailments": "NNNNNN",
-    "area": "Yabbashah II 117.1",
-    "drops": ["Copper Dice"],
+    "area": "Yabbashah II P1",
+    "drops": {"Copper Dice": 100},
     "exp": 1252,
     "lvl": 40,
     "race": "Fortune P",
@@ -292,8 +281,8 @@
   },
   "Carnal Snake": {
     "ailments": "N-4-4-",
-    "area": "Adamah 231-242",
-    "drops": ["Necklace of Impulse", "Diamond"],
+    "area": "Adamah I 231-242",
+    "drops": {"Necklace of Impulse": 35, "Diamond": 10},
     "exp": 1887,
     "lvl": 65,
     "race": "Lovers",
@@ -304,7 +293,7 @@
   "Champion Knight": {
     "ailments": "4----4",
     "area": "Tziah I 127-141",
-    "drops": ["Saddle of Merit", "Topaz"],
+    "drops": {"Saddle of Merit": 30, "Topaz": 10},
     "exp": 719,
     "lvl": 39,
     "race": "Emperor",
@@ -315,7 +304,7 @@
   "Champion Knight B": {
     "ailments": "-NNNNN",
     "area": "Yabbashah II 93-104",
-    "drops": ["Saddle of Merit", "Black Quartz"],
+    "drops": {"Saddle of Merit": 50, "Black Quartz": 50},
     "exp": 2525,
     "lvl": 36,
     "race": "Emperor",
@@ -325,8 +314,8 @@
   },
   "Change Relic B": {
     "ailments": "NNNNNN",
-    "area": "Tziah II 171.3",
-    "drops": ["Orb of Flux"],
+    "area": "Tziah II P3",
+    "drops": {"Orb of Flux": 100},
     "exp": 2596,
     "lvl": 55,
     "race": "Empress P",
@@ -336,8 +325,8 @@
   },
   "Chaos Cyclops B": {
     "ailments": "1N-1NN",
-    "area": "Yabbashah II 93-117.3",
-    "drops": ["Cross of Order"],
+    "area": "Yabbashah II D3",
+    "drops": {"Cross of Order": 30},
     "exp": 1592,
     "lvl": 38,
     "race": "Hanged P",
@@ -348,7 +337,7 @@
   "Chaos Panzer": {
     "ailments": "NNN1NN",
     "area": "Harabah I 188",
-    "drops": ["Prime Nihil Blade"],
+    "drops": {"Prime Nihil Blade": 100},
     "exp": 59186,
     "lvl": 60,
     "race": "Chariot P",
@@ -359,7 +348,7 @@
   "Clairvoyant Relic": {
     "ailments": "N14NNN",
     "area": "Arqa I 42",
-    "drops": ["Amethyst"],
+    "drops": {"Amethyst": 100},
     "exp": 4500,
     "lvl": 17,
     "race": "Empress P",
@@ -369,8 +358,8 @@
   },
   "Comeback Castle": {
     "ailments": "NN-NNN",
-    "area": "Adamah 236",
-    "drops": ["Nihil Black Model"],
+    "area": "Adamah I 236",
+    "drops": {"Nihil Black Model": 100},
     "exp": 93403,
     "lvl": 70,
     "race": "Emperor P",
@@ -381,7 +370,7 @@
   "Constancy Relic": {
     "ailments": "141111",
     "area": "Tziah I 121-142",
-    "drops": ["Orb of Continuity", "Malachite", "Onyx"],
+    "drops": {"Orb of Continuity": 30, "Malachite": 5, "Onyx": 5},
     "exp": 678,
     "lvl": 38,
     "race": "Empress",
@@ -392,7 +381,7 @@
   "Controlling Partner": {
     "ailments": "NN-NNN",
     "area": "Yabbashah I 91",
-    "drops": ["Nihil Ore"],
+    "drops": {"Nihil Ore": 100},
     "exp": 9075,
     "lvl": 33,
     "race": "Lovers P",
@@ -403,7 +392,7 @@
   "Conviction Sword": {
     "ailments": "141111",
     "area": "Tziah II 159-168",
-    "drops": ["Bronze Blade", "Topaz", "Garnet"],
+    "drops": {"Bronze Blade": 25, "Topaz": 5, "Garnet": 5},
     "exp": 1083,
     "lvl": 48,
     "race": "Justice",
@@ -414,7 +403,7 @@
   "Corrupt Tower": {
     "ailments": "4-----",
     "area": "Arqa I 31-41",
-    "drops": ["Crown of Vice", "Malachite"],
+    "drops": {"Crown of Vice": 35, "Malachite": 10},
     "exp": 70,
     "lvl": 12,
     "race": "Hierophant",
@@ -425,7 +414,7 @@
   "Cowardly Maya": {
     "ailments": "444444",
     "area": "Thebel 2-19",
-    "drops": ["Mask of Cowardice", "Malachite"],
+    "drops": {"Mask of Cowardice": 40, "Malachite": 5},
     "exp": 15,
     "lvl": 2,
     "race": "Magician",
@@ -464,8 +453,8 @@
   },
   "Cowardly Maya E": {
     "ailments": "11--NN",
-    "area": "Yabbashah I 91.1",
-    "drops": ["Mask of Cowardice"],
+    "area": "Yabbashah I P1",
+    "drops": {"Mask of Cowardice": 100},
     "exp": 1377,
     "lvl": 33,
     "race": "Magician P",
@@ -476,7 +465,7 @@
   "Crazy Twins": {
     "ailments": "444444",
     "area": "Harabah I 174-192",
-    "drops": ["Shackles of Madness", "Topaz"],
+    "drops": {"Shackles of Madness": 30, "Topaz": 10},
     "exp": 1222,
     "lvl": 52,
     "race": "Hierophant",
@@ -486,8 +475,8 @@
   },
   "Crazy Twins B": {
     "ailments": "-NNNN1",
-    "area": "Tziah II 145-168.1",
-    "drops": ["Shackles of Madness"],
+    "area": "Tziah II D1",
+    "drops": {"Shackles of Madness": 30},
     "exp": 2642,
     "lvl": 50,
     "race": "Hierophant P",
@@ -498,7 +487,7 @@
   "Creation Relic": {
     "ailments": "141111",
     "area": "Yabbashah I 70-89",
-    "drops": ["Orb of Creation", "Turquoise"],
+    "drops": {"Orb of Creation": 30, "Turquoise": 10},
     "exp": 195,
     "lvl": 23,
     "race": "Empress",
@@ -519,7 +508,7 @@
   "Crying Table": {
     "ailments": "444444",
     "area": "Arqa II 52-68",
-    "drops": ["Bronze Cutlery", "Malachite", "Turquoise"],
+    "drops": {"Bronze Cutlery": 35, "Malachite": 5, "Turquoise": 5},
     "exp": 120,
     "lvl": 18,
     "race": "Magician",
@@ -529,7 +518,7 @@
   },
   "Cultist of Death": {
     "ailments": "NN1NNN",
-    "area": "Adamah 253",
+    "area": "Adamah I 253",
     "exp": 76664,
     "lvl": 77,
     "race": "Hierophant P",
@@ -549,7 +538,7 @@
   },
   "Curse Dice": {
     "area": "Harabah II 204-222",
-    "drops": ["Ring of Resentment", "Topaz", "Turquoise"],
+    "drops": {"Ring of Resentment": 25, "Topaz": 10, "Turquoise": 5},
     "exp": 1480,
     "lvl": 60,
     "race": "Fortune",
@@ -560,7 +549,7 @@
   "Curse Dice B": {
     "ailments": "NNNNNN",
     "area": "Harabah I 173-183",
-    "drops": ["Ring of Resentment", "Silver Quartz"],
+    "drops": {"Ring of Resentment": 50, "Silver Quartz": 50},
     "exp": 5845,
     "lvl": 60,
     "race": "Fortune",
@@ -581,7 +570,7 @@
   "Dancing Hand": {
     "ailments": "444444",
     "area": "Arqa I 37-41",
-    "drops": ["Dancer's Necklace", "Turquoise"],
+    "drops": {"Dancer's Necklace": 35, "Turquoise": 10},
     "exp": 75,
     "lvl": 13,
     "race": "Magician",
@@ -602,7 +591,7 @@
   "Daring Gigas B": {
     "ailments": "1NNNNN",
     "area": "Harabah II 199-211",
-    "drops": ["Fighter's Pants", "Opal", "Gold Quartz"],
+    "drops": {"Fighter's Pants": 30, "Opal": 50, "Gold Quartz": 20},
     "exp": 6753,
     "lvl": 66,
     "race": "Strength",
@@ -613,7 +602,7 @@
   "Dark Eagle": {
     "ailments": "444444",
     "area": "Arqa II 55-68",
-    "drops": ["Jet-Black Plume", "Malachite"],
+    "drops": {"Jet-Black Plume": 40, "Malachite": 5},
     "exp": 111,
     "lvl": 20,
     "race": "Empress",
@@ -633,8 +622,8 @@
   },
   "Death Castle": {
     "ailments": "141111",
-    "area": "Adamah 242-251",
-    "drops": ["Red Wall Fragment", "Diamond"],
+    "area": "Adamah I 242-251",
+    "drops": {"Red Wall Fragment": 30, "Diamond": 10},
     "exp": 2201,
     "lvl": 68,
     "race": "Emperor",
@@ -644,8 +633,8 @@
   },
   "Death Castle B": {
     "ailments": "N1NNNN",
-    "area": "Tziah II 145-168.3",
-    "drops": ["Red Wall Fragment"],
+    "area": "Tziah II D3",
+    "drops": {"Red Wall Fragment": 30},
     "exp": 2712,
     "lvl": 52,
     "race": "Emperor P",
@@ -654,8 +643,8 @@
     "stats": [1858, 999, 34, 43, 33, 29, 25]
   },
   "Death Dice": {
-    "area": "Adamah 231-239",
-    "drops": ["Ring of Asphyxiation", "Diamond", "Ruby"],
+    "area": "Adamah I 231-239",
+    "drops": {"Ring of Asphyxiation": 35, "Diamond": 5, "Ruby": 5},
     "exp": 1899,
     "lvl": 65,
     "race": "Fortune",
@@ -666,7 +655,7 @@
   "Death Seeker": {
     "ailments": "--4---",
     "area": "Tziah II 145-168",
-    "drops": ["Murky Eyeball", "Topaz"],
+    "drops": {"Murky Eyeball": 30, "Topaz": 10},
     "exp": 918,
     "lvl": 42,
     "race": "Hermit",
@@ -677,7 +666,7 @@
   "Death Twins": {
     "ailments": "444444",
     "area": "Tziah I 120-142",
-    "drops": ["Shackles of Morbidity", "Amethyst"],
+    "drops": {"Shackles of Morbidity": 30, "Amethyst": 10},
     "exp": 661,
     "lvl": 37,
     "race": "Hierophant",
@@ -688,7 +677,7 @@
   "Demented Knight": {
     "ailments": "NNNNNN",
     "area": "Tziah II 161",
-    "drops": ["Silver Quartz"],
+    "drops": {"Silver Quartz": 100},
     "exp": 19495,
     "lvl": 52,
     "race": "Emperor P",
@@ -709,7 +698,7 @@
   "Desirous Maya": {
     "ailments": "444444",
     "area": "Harabah II 199-224",
-    "drops": ["Mask of Greed", "Garnet", "Malachite"],
+    "drops": {"Mask of Greed": 30, "Garnet": 5, "Malachite": 5},
     "exp": 1203,
     "lvl": 58,
     "race": "Hermit",
@@ -720,7 +709,7 @@
   "Deviant Convict": {
     "ailments": "N44NNN",
     "area": "Yabbashah I 90",
-    "drops": ["Nihil Cloth"],
+    "drops": {"Nihil Cloth": 100},
     "exp": 17051,
     "lvl": 32,
     "race": "Hanged P",
@@ -730,8 +719,8 @@
   },
   "Devious Maya": {
     "ailments": "444444",
-    "area": "Adamah 237-250",
-    "drops": ["Mask of Sacrifice", "Malachite", "Diamond"],
+    "area": "Adamah I 237-250",
+    "drops": {"Mask of Sacrifice": 35, "Malachite": 5, "Diamond": 5},
     "exp": 1653,
     "lvl": 67,
     "race": "Hanged",
@@ -741,8 +730,8 @@
   },
   "Devious Maya B": {
     "ailments": "NN-NNN",
-    "area": "Harabah I 197.1",
-    "drops": ["Mask of Sacrifice"],
+    "area": "Harabah I P1",
+    "drops": {"Mask of Sacrifice": 100},
     "exp": 0,
     "lvl": 62,
     "race": "Hanged P",
@@ -753,7 +742,7 @@
   "Devoted Cupid": {
     "ailments": "N-4-4-",
     "area": "Yabbashah I 78-89",
-    "drops": ["Arrowhead of Control", "Amethyst"],
+    "drops": {"Arrowhead of Control": 30, "Amethyst": 15},
     "exp": 289,
     "lvl": 26,
     "race": "Lovers",
@@ -764,7 +753,7 @@
   "Dignified Checkmate": {
     "ailments": "----N-",
     "area": "Yabbashah II 93-117",
-    "drops": ["Bronze Medal"],
+    "drops": {"Bronze Medal": 100},
     "exp": 12119,
     "lvl": 36,
     "race": "Fool",
@@ -784,8 +773,8 @@
   },
   "Divine Mother B": {
     "ailments": "NN1NNN",
-    "area": "Adamah 227-244",
-    "drops": ["Saint's Stool", "Gold Quartz", "Ruby"],
+    "area": "Adamah I 227-244",
+    "drops": {"Saint's Stool": 30, "Gold Quartz": 60, "Ruby": 10},
     "exp": 7684,
     "lvl": 72,
     "race": "Empress",
@@ -796,7 +785,7 @@
   "Dogmatic Tower": {
     "ailments": "4-----",
     "area": "Yabbashah I 83-89",
-    "drops": ["Crown of Obstinacy", "Malachite", "Amethyst"],
+    "drops": {"Crown of Obstinacy": 25, "Malachite": 10, "Amethyst": 10},
     "exp": 382,
     "lvl": 28,
     "race": "Hierophant",
@@ -806,8 +795,8 @@
   },
   "Dogmatic Tower B": {
     "ailments": "N-NNNN",
-    "area": "Tziah I 143.1",
-    "drops": ["Crown of Obstinacy"],
+    "area": "Tziah I P1",
+    "drops": {"Crown of Obstinacy": 100},
     "exp": 1615,
     "lvl": 48,
     "race": "Hierophant P",
@@ -817,8 +806,8 @@
   },
   "Doom Sword": {
     "ailments": "141111",
-    "area": "Adamah 228-242",
-    "drops": ["Tamahagane Blade", "Opal", "Garnet"],
+    "area": "Adamah I 228-242",
+    "drops": {"Tamahagane Blade": 30, "Opal": 10, "Garnet": 5},
     "exp": 1931,
     "lvl": 64,
     "race": "Justice",
@@ -829,7 +818,7 @@
   "Dutiful Checkmate": {
     "ailments": "----N-",
     "area": "Harabah II 199-224",
-    "drops": ["Gold Medal"],
+    "drops": {"Gold Medal": 100},
     "exp": 32413,
     "lvl": 65,
     "race": "Fool",
@@ -840,7 +829,7 @@
   "Elegant Mother": {
     "ailments": "--4---",
     "area": "Tziah I 133-142",
-    "drops": ["Lady's Stool", "Topaz"],
+    "drops": {"Lady's Stool": 30, "Topaz": 10},
     "exp": 792,
     "lvl": 41,
     "race": "Empress",
@@ -851,7 +840,7 @@
   "Elegant Mother B": {
     "ailments": "N11NN-",
     "area": "Yabbashah II 106-117",
-    "drops": ["Lady's Stool", "Black Quartz", "Topaz"],
+    "drops": {"Lady's Stool": 50, "Black Quartz": 30, "Topaz": 20},
     "exp": 3144,
     "lvl": 40,
     "race": "Empress",
@@ -861,8 +850,8 @@
   },
   "Elegant Mother C": {
     "ailments": "N1-NNN",
-    "area": "Yabbashah I 70-89.1",
-    "drops": ["Lady's Stool"],
+    "area": "Yabbashah I D1",
+    "drops": {"Lady's Stool": 30},
     "exp": 958,
     "lvl": 28,
     "race": "Empress P",
@@ -872,8 +861,8 @@
   },
   "Emperor Beetle": {
     "ailments": "444444",
-    "area": "Adamah 239-244",
-    "drops": ["Emperor's Horn", "Ruby"],
+    "area": "Adamah I 239-244",
+    "drops": {"Emperor's Horn": 35, "Ruby": 10},
     "exp": 2149,
     "lvl": 68,
     "race": "Emperor",
@@ -883,8 +872,8 @@
   },
   "Emperor Beetle B": {
     "ailments": "NNNNNN",
-    "area": "Tziah II 145-168.2",
-    "drops": ["Emperor's Horn"],
+    "area": "Tziah II D2",
+    "drops": {"Emperor's Horn": 30},
     "exp": 2686,
     "lvl": 51,
     "race": "Emperor P",
@@ -895,7 +884,7 @@
   "Enslaved Beast": {
     "ailments": "444444",
     "area": "Arqa II 65-68",
-    "drops": ["Servant's Fur", "Onyx"],
+    "drops": {"Servant's Fur": 30, "Onyx": 15},
     "exp": 222,
     "lvl": 23,
     "race": "Strength",
@@ -906,7 +895,7 @@
   "Enslaved Beast B": {
     "ailments": "--44N1",
     "area": "Arqa I 37-41",
-    "drops": ["Servant's Fur", "Amethyst"],
+    "drops": {"Servant's Fur": 80, "Amethyst": 20},
     "exp": 510,
     "lvl": 16,
     "race": "Strength",
@@ -926,8 +915,8 @@
   },
   "Eternal Eagle": {
     "ailments": "444444",
-    "area": "Adamah 242-244",
-    "drops": ["Immortal Plume", "Garnet", "Ruby"],
+    "area": "Adamah I 242-244",
+    "drops": {"Immortal Plume": 30, "Garnet": 5, "Ruby": 5},
     "exp": 2065,
     "lvl": 68,
     "race": "Empress",
@@ -937,8 +926,8 @@
   },
   "Eternal Eagle B": {
     "ailments": "NN1NN1",
-    "area": "Yabbashah II 93-117.2",
-    "drops": ["Immortal Plume"],
+    "area": "Yabbashah II D2",
+    "drops": {"Immortal Plume": 30},
     "exp": 1568,
     "lvl": 37,
     "race": "Empress P",
@@ -948,8 +937,8 @@
   },
   "Eternal Sand B": {
     "ailments": "NNNNNN",
-    "area": "Harabah I 173-197.2",
-    "drops": ["White Sand"],
+    "area": "Harabah I D3",
+    "drops": {"White Sand": 30},
     "exp": 3578,
     "lvl": 60,
     "race": "Fortune P",
@@ -960,7 +949,7 @@
   "Ethereal Hand": {
     "ailments": "NNNNN-",
     "area": "Tziah II 145-168",
-    "drops": ["Sumptuous Coin"],
+    "drops": {"Sumptuous Coin": 100},
     "exp": 10567,
     "lvl": 49,
     "race": "Fool",
@@ -990,8 +979,8 @@
   },
   "Fanatic Tower B": {
     "ailments": "1NNNNN",
-    "area": "Adamah 227-261.1",
-    "drops": ["Crown of Servility"],
+    "area": "Adamah I D1",
+    "drops": {"Crown of Servility": 30},
     "exp": 4611,
     "lvl": 71,
     "race": "Hierophant P",
@@ -1002,7 +991,7 @@
   "Fate Seeker": {
     "ailments": "--4---",
     "area": "Harabah II 201-222",
-    "drops": ["Decaying Eyeball", "Garnet"],
+    "drops": {"Decaying Eyeball": 30, "Garnet": 10},
     "exp": 1341,
     "lvl": 59,
     "race": "Hermit",
@@ -1013,7 +1002,7 @@
   "Feral Beast": {
     "ailments": "NN-NN4",
     "area": "Unknown",
-    "drops": ["Wicked Fur"],
+    "drops": {"Wicked Fur": 100},
     "exp": 0,
     "lvl": 63,
     "race": "Strength P",
@@ -1022,8 +1011,8 @@
     "stats": [1596, 999, 55, 30, 39, 42, 28]
   },
   "Fierce Cyclops": {
-    "area": "Adamah 250-251",
-    "drops": ["Cross of Resignation", "Diamond", "Ruby"],
+    "area": "Adamah I 250-251",
+    "drops": {"Cross of Resignation": 25, "Diamond": 10, "Ruby": 10},
     "exp": 2379,
     "lvl": 71,
     "race": "Hanged",
@@ -1033,8 +1022,8 @@
   },
   "Final Checkmate": {
     "ailments": "----N-",
-    "area": "Adamah 227-261",
-    "drops": ["Platinum Medal"],
+    "area": "Adamah I 227-261",
+    "drops": {"Platinum Medal": 100},
     "exp": 36885,
     "lvl": 72,
     "race": "Fool",
@@ -1045,7 +1034,7 @@
   "Five Fingers of Blight": {
     "ailments": "1N1NNN",
     "area": "Yabbashah II 99",
-    "drops": ["Black Quartz"],
+    "drops": {"Black Quartz": 100},
     "exp": 0,
     "lvl": 33,
     "race": "Magician P",
@@ -1056,7 +1045,7 @@
   "Fleetfooted Cavalry": {
     "ailments": "11-1NN",
     "area": "Arqa II 60",
-    "drops": ["Black Quartz"],
+    "drops": {"Black Quartz": 100},
     "exp": 7735,
     "lvl": 23,
     "race": "Emperor P",
@@ -1067,7 +1056,7 @@
   "Flowing Sand": {
     "ailments": "111111",
     "area": "Tziah II 152-168",
-    "drops": ["Red Sand", "Onyx", "Topaz"],
+    "drops": {"Red Sand": 25, "Onyx": 10, "Topaz": 5},
     "exp": 958,
     "lvl": 45,
     "race": "Fortune",
@@ -1078,7 +1067,7 @@
   "Flowing Sand B": {
     "ailments": "N1-NN1",
     "area": "Unknown",
-    "drops": ["Red Sand"],
+    "drops": {"Red Sand": 30},
     "exp": 503,
     "lvl": 21,
     "race": "Fortune P",
@@ -1088,7 +1077,7 @@
   },
   "Foot Soldier": {
     "ailments": "1NNNN1",
-    "area": "Adamah 236",
+    "area": "Adamah I 236",
     "exp": 0,
     "lvl": 68,
     "race": "Magician P",
@@ -1099,7 +1088,7 @@
   "Frivolous Maya": {
     "ailments": "444444",
     "area": "Arqa I 23-37",
-    "drops": ["Mask of Vanity", "Amethyst"],
+    "drops": {"Mask of Vanity": 40, "Amethyst": 5},
     "exp": 28,
     "lvl": 9,
     "race": "Empress",
@@ -1110,7 +1099,7 @@
   "Furious Gigas": {
     "ailments": "4----4",
     "area": "Yabbashah II 97-114",
-    "drops": ["Hero's Pants", "Onyx", "Amethyst"],
+    "drops": {"Hero's Pants": 35, "Onyx": 5, "Amethyst": 5},
     "exp": 521,
     "lvl": 35,
     "race": "Strength",
@@ -1120,8 +1109,8 @@
   },
   "Genocidal Mercenary": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255",
-    "drops": ["Dead Moon's Husk"],
+    "area": "Adamah I 255",
+    "drops": {"Dead Moon's Husk": 100},
     "exp": 129050,
     "lvl": 79,
     "race": "Hanged P",
@@ -1131,8 +1120,8 @@
   },
   "Glorious Hand": {
     "ailments": "NNNNN-",
-    "area": "Adamah 227-261",
-    "drops": ["Melancholic Coin"],
+    "area": "Adamah I 227-261",
+    "drops": {"Melancholic Coin": 100},
     "exp": 18443,
     "lvl": 70,
     "race": "Fool",
@@ -1142,8 +1131,8 @@
   },
   "Gold Hand": {
     "ailments": "NNNNNN",
-    "area": "Harabah II 225.2",
-    "drops": ["AS Refined Material"],
+    "area": "Harabah II P2",
+    "drops": {"AS Refined Material": 100},
     "exp": 9900,
     "lvl": 70,
     "race": "Magician P",
@@ -1154,7 +1143,7 @@
   "Golden Beetle": {
     "ailments": "444444",
     "area": "Yabbashah I 74-89",
-    "drops": ["Champion's Horn", "Turquoise", "Malachite"],
+    "drops": {"Champion's Horn": 30, "Turquoise": 5, "Malachite": 5},
     "exp": 276,
     "lvl": 25,
     "race": "Emperor",
@@ -1165,7 +1154,7 @@
   "Gracious Cupid": {
     "ailments": "N-4-4-",
     "area": "Harabah I 182-197",
-    "drops": ["Arrowhead of Heart", "Emerald", "Onyx"],
+    "drops": {"Arrowhead of Heart": 25, "Emerald": 10, "Onyx": 5},
     "exp": 1239,
     "lvl": 55,
     "race": "Lovers",
@@ -1175,8 +1164,8 @@
   },
   "Grand Magus": {
     "ailments": "444444",
-    "area": "Adamah 257-261",
-    "drops": ["Cap of Eminence", "Diamond", "Ruby"],
+    "area": "Adamah II 257-261",
+    "drops": {"Cap of Eminence": 25, "Diamond": 10, "Ruby": 10},
     "exp": 2388,
     "lvl": 73,
     "race": "Magician",
@@ -1186,8 +1175,8 @@
   },
   "Grand Magus B": {
     "ailments": "NN-NNN",
-    "area": "Tziah I 119-142.3",
-    "drops": ["Cap of Eminence"],
+    "area": "Tziah I D3",
+    "drops": {"Cap of Eminence": 30},
     "exp": 2104,
     "lvl": 45,
     "race": "Magician P",
@@ -1198,7 +1187,7 @@
   "Grave Beetle": {
     "ailments": "444444",
     "area": "Thebel 14-21",
-    "drops": ["Vanguard's Horn", "Amethyst"],
+    "drops": {"Vanguard's Horn": 25, "Amethyst": 5},
     "exp": 35,
     "lvl": 7,
     "race": "Emperor",
@@ -1208,8 +1197,8 @@
   },
   "Green Sigil": {
     "ailments": "4-----",
-    "area": "Adamah 237-244",
-    "drops": ["Whirlwind Charm", "Opal", "Turquoise"],
+    "area": "Adamah I 237-244",
+    "drops": {"Whirlwind Charm": 30, "Opal": 10, "Turquoise": 5},
     "exp": 2011,
     "lvl": 67,
     "race": "Hierophant",
@@ -1220,7 +1209,7 @@
   "Grieving Tiara": {
     "ailments": "--4---",
     "area": "Arqa I 24-41",
-    "drops": ["Lamenting Tiara", "Malachite", "Turquoise"],
+    "drops": {"Lamenting Tiara": 35, "Malachite": 5, "Turquoise": 5},
     "exp": 40,
     "lvl": 10,
     "race": "Priestess",
@@ -1241,7 +1230,7 @@
   "Growth Relic": {
     "ailments": "141111",
     "area": "Tziah II 146-168",
-    "drops": ["Orb of Growth", "Amethyst"],
+    "drops": {"Orb of Growth": 30, "Amethyst": 10},
     "exp": 935,
     "lvl": 43,
     "race": "Empress",
@@ -1252,7 +1241,7 @@
   "Hakurou Musha": {
     "ailments": "4----4",
     "area": "Tziah II 149-168",
-    "drops": ["Samurai Helmet", "Emerald", "Topaz"],
+    "drops": {"Samurai Helmet": 25, "Emerald": 10, "Topaz": 5},
     "exp": 738,
     "lvl": 45,
     "race": "Strength",
@@ -1263,7 +1252,7 @@
   "Hakurou Musha B": {
     "ailments": "-NNNNN",
     "area": "Tziah I 119-131",
-    "drops": ["Samurai Helmet", "Emerald"],
+    "drops": {"Samurai Helmet": 50, "Emerald": 50},
     "exp": 3425,
     "lvl": 44,
     "race": "Strength",
@@ -1273,8 +1262,8 @@
   },
   "Hakurou Musha C": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255.2",
-    "drops": ["Samurai Helmet"],
+    "area": "Adamah I P2",
+    "drops": {"Samurai Helmet": 100},
     "exp": 1357,
     "lvl": 79,
     "race": "Strength P",
@@ -1284,8 +1273,8 @@
   },
   "Hallowed Turret B": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255.1",
-    "drops": ["Nihil Black Model"],
+    "area": "Adamah I P1",
+    "drops": {"Nihil Black Model": 100},
     "exp": 3619,
     "lvl": 80,
     "race": "Chariot P",
@@ -1295,8 +1284,8 @@
   },
   "Harmony Giant": {
     "ailments": "-4----",
-    "area": "Adamah 260-261",
-    "drops": ["Immovable Balance", "Opal", "Ruby"],
+    "area": "Adamah II 260-261",
+    "drops": {"Immovable Balance": 25, "Opal": 10, "Ruby": 10},
     "exp": 2722,
     "lvl": 74,
     "race": "Justice",
@@ -1307,7 +1296,7 @@
   "Haughty Belle": {
     "ailments": "NNNNNN",
     "area": "Unknown",
-    "drops": ["Saint's Stool"],
+    "drops": {"Saint's Stool": 100},
     "exp": 0,
     "lvl": 64,
     "race": "Priestess P",
@@ -1318,7 +1307,7 @@
   "Haughty Maya": {
     "ailments": "444444",
     "area": "Arqa II 44-67",
-    "drops": ["Mask of Pride", "Malachite"],
+    "drops": {"Mask of Pride": 40, "Malachite": 5},
     "exp": 59,
     "lvl": 16,
     "race": "Emperor",
@@ -1328,8 +1317,8 @@
   },
   "Haunted Castle": {
     "ailments": "1441N-",
-    "area": "Tziah II 171.2",
-    "drops": ["Ashen Wall Fragment"],
+    "area": "Tziah II P2",
+    "drops": {"Ashen Wall Fragment": 100},
     "exp": 1556,
     "lvl": 55,
     "race": "Emperor P",
@@ -1350,7 +1339,7 @@
   "Heat Balance": {
     "ailments": "444444",
     "area": "Arqa I 23-34",
-    "drops": ["Red-Blue Plates", "Turquoise", "Amethyst"],
+    "drops": {"Red-Blue Plates": 35, "Turquoise": 5, "Amethyst": 5},
     "exp": 35,
     "lvl": 10,
     "race": "Justice",
@@ -1370,8 +1359,8 @@
   },
   "Heat Balance C": {
     "ailments": "NNNNNN",
-    "area": "Harabah I 197.2",
-    "drops": ["Red-Blue Plates"],
+    "area": "Harabah I P2",
+    "drops": {"Red-Blue Plates": 100},
     "exp": 2175,
     "lvl": 62,
     "race": "Justice P",
@@ -1382,7 +1371,7 @@
   "Heat Overseer": {
     "ailments": "NNNNNN",
     "area": "Yabbashah I 82",
-    "drops": ["Nihil Blade"],
+    "drops": {"Nihil Blade": 100},
     "exp": 0,
     "lvl": 28,
     "race": "Justice P",
@@ -1392,8 +1381,8 @@
   },
   "Hedonistic Sinner": {
     "ailments": "NNNNNN",
-    "area": "Adamah 254",
-    "drops": ["Ruby"],
+    "area": "Adamah I 254",
+    "drops": {"Ruby": 100},
     "exp": 43443,
     "lvl": 78,
     "race": "Hanged P",
@@ -1404,7 +1393,7 @@
   "Hell Knight": {
     "ailments": "4----4",
     "area": "Harabah I 191-197",
-    "drops": ["Saddle of Vengeance", "Garnet", "Opal"],
+    "drops": {"Saddle of Vengeance": 25, "Garnet": 10, "Opal": 5},
     "exp": 1414,
     "lvl": 57,
     "race": "Emperor",
@@ -1415,7 +1404,7 @@
   "Heretic Magus": {
     "ailments": "NN1NN-",
     "area": "Arqa I 35",
-    "drops": ["Malachite"],
+    "drops": {"Malachite": 100},
     "exp": 1200,
     "lvl": 14,
     "race": "Magician P",
@@ -1425,8 +1414,8 @@
   },
   "High Judge of Hell": {
     "ailments": "N1NNNN",
-    "area": "Adamah 247",
-    "drops": ["Nihil White Model"],
+    "area": "Adamah I 247",
+    "drops": {"Nihil White Model": 100},
     "exp": 108932,
     "lvl": 75,
     "race": "Justice P",
@@ -1437,7 +1426,7 @@
   "Ice Raven": {
     "ailments": "444444",
     "area": "Yabbashah II 94-117",
-    "drops": ["Chilling Lantern", "Amethyst"],
+    "drops": {"Chilling Lantern": 35, "Amethyst": 10},
     "exp": 328,
     "lvl": 32,
     "race": "Hermit",
@@ -1448,7 +1437,7 @@
   "Icebreaker Lion": {
     "ailments": "NNNNNN",
     "area": "Harabah II 203",
-    "drops": ["Prime Nihil Ore"],
+    "drops": {"Prime Nihil Ore": 100},
     "exp": 50808,
     "lvl": 63,
     "race": "Strength P",
@@ -1459,7 +1448,7 @@
   "Ill-Fated Maya": {
     "ailments": "444444",
     "area": "Tziah I 119-141",
-    "drops": ["Mask of Concession", "Malachite", "Turquoise"],
+    "drops": {"Mask of Concession": 35, "Malachite": 5, "Turquoise": 5},
     "exp": 628,
     "lvl": 36,
     "race": "Chariot",
@@ -1470,7 +1459,7 @@
   "Immoral Snake": {
     "ailments": "N-4-4-",
     "area": "Harabah I 189-197",
-    "drops": ["Necklace of Craving", "Emerald", "Opal"],
+    "drops": {"Necklace of Craving": 25, "Emerald": 10, "Opal": 5},
     "exp": 1342,
     "lvl": 57,
     "race": "Lovers",
@@ -1480,8 +1469,8 @@
   },
   "Immoral Snake B": {
     "ailments": "N-NNNN",
-    "area": "Tziah I 143.1",
-    "drops": ["Necklace of Craving"],
+    "area": "Tziah I P1",
+    "drops": {"Necklace of Craving": 100},
     "exp": 0,
     "lvl": 47,
     "race": "Lovers P",
@@ -1492,7 +1481,7 @@
   "Imposing Skyscraper": {
     "ailments": "NN1NNN",
     "area": "Yabbashah II 112",
-    "drops": ["Ergotite Shard"],
+    "drops": {"Ergotite Shard": 100},
     "exp": 27272,
     "lvl": 40,
     "race": "Hierophant P",
@@ -1503,7 +1492,7 @@
   "Imprudent Maya": {
     "ailments": "444444",
     "area": "Harabah I 173-194",
-    "drops": ["Mask of Folly", "Garnet", "Malachite"],
+    "drops": {"Mask of Folly": 30, "Garnet": 5, "Malachite": 5},
     "exp": 1121,
     "lvl": 52,
     "race": "Fortune",
@@ -1514,7 +1503,7 @@
   "Indolent Maya": {
     "ailments": "444444",
     "area": "Yabbashah I 70-89",
-    "drops": ["Mask of Sloth", "Malachite"],
+    "drops": {"Mask of Sloth": 40, "Malachite": 5},
     "exp": 178,
     "lvl": 23,
     "race": "Hierophant",
@@ -1524,8 +1513,8 @@
   },
   "Infinite Sand": {
     "ailments": "111111",
-    "area": "Adamah 237-244",
-    "drops": ["Blue Sand", "Diamond", "Opal"],
+    "area": "Adamah I 237-244",
+    "drops": {"Blue Sand": 25, "Diamond": 10, "Opal": 10},
     "exp": 1931,
     "lvl": 67,
     "race": "Fortune",
@@ -1536,7 +1525,7 @@
   "Insidious Maya": {
     "ailments": "444444",
     "area": "Yabbashah II 93-117",
-    "drops": ["Mask of Betrayal", "Malachite"],
+    "drops": {"Mask of Betrayal": 35, "Malachite": 10},
     "exp": 280,
     "lvl": 31,
     "race": "Lovers",
@@ -1546,8 +1535,8 @@
   },
   "Intrepid Knight B": {
     "ailments": "NNNNNN",
-    "area": "Tziah II 171.3",
-    "drops": ["Ergotite Chunk"],
+    "area": "Tziah II P3",
+    "drops": {"Ergotite Chunk": 100},
     "exp": 2594,
     "lvl": 55,
     "race": "Emperor P",
@@ -1557,8 +1546,8 @@
   },
   "Intrepid Knight C": {
     "ailments": "NNNNNN",
-    "area": "Adamah 227-261.3",
-    "drops": ["Saddle of Fortitude"],
+    "area": "Adamah I D3",
+    "drops": {"Saddle of Fortitude": 30},
     "exp": 4682,
     "lvl": 77,
     "race": "Emperor P",
@@ -1569,7 +1558,7 @@
   "Invaluable Hand": {
     "ailments": "NNNNN-",
     "area": "Yabbashah II 93-117",
-    "drops": ["Rustic Coin"],
+    "drops": {"Rustic Coin": 100},
     "exp": 6059,
     "lvl": 35,
     "race": "Fool",
@@ -1579,8 +1568,8 @@
   },
   "Invasive Serpent": {
     "ailments": "NN11NN",
-    "area": "Adamah 246",
-    "drops": ["Gold Quartz"],
+    "area": "Adamah I 246",
+    "drops": {"Gold Quartz": 100},
     "exp": 0,
     "lvl": 72,
     "race": "Lovers P",
@@ -1591,7 +1580,7 @@
   "Invigorated Gigas": {
     "ailments": "NNNNNN",
     "area": "Tziah II 171",
-    "drops": ["Ergotite Chunk"],
+    "drops": {"Ergotite Chunk": 100},
     "exp": 49900,
     "lvl": 55,
     "race": "Strength P",
@@ -1601,7 +1590,7 @@
   },
   "Iron Dice": {
     "area": "Harabah II 213-224",
-    "drops": ["Steel Dice", "Topaz", "Emerald"],
+    "drops": {"Steel Dice": 25, "Topaz": 10, "Emerald": 5},
     "exp": 1535,
     "lvl": 63,
     "race": "Fortune",
@@ -1611,8 +1600,8 @@
   },
   "Iron Dice B": {
     "ailments": "NNNNNN",
-    "area": "Yabbashah II 117.2",
-    "drops": ["Steel Dice"],
+    "area": "Yabbashah II P2",
+    "drops": {"Steel Dice": 100},
     "exp": 1878,
     "lvl": 40,
     "race": "Fortune P",
@@ -1623,6 +1612,7 @@
   "Isolated Castle": {
     "ailments": "NN1NNN",
     "area": "Tziah I 143",
+    "drops": {"Pentagram Stone": 100},
     "exp": 34058,
     "lvl": 47,
     "race": "Emperor P",
@@ -1633,7 +1623,7 @@
   "Jealous Cupid": {
     "ailments": "1-4-4-",
     "area": "Arqa II 55-66",
-    "drops": ["Arrowhead of Envy", "Turquoise"],
+    "drops": {"Arrowhead of Envy": 35, "Turquoise": 10},
     "exp": 126,
     "lvl": 20,
     "race": "Lovers",
@@ -1644,7 +1634,7 @@
   "Jealous Cupid B": {
     "ailments": "4N-NNN",
     "area": "Unknown",
-    "drops": ["Arrowhead of Envy"],
+    "drops": {"Arrowhead of Envy": 100},
     "exp": 0,
     "lvl": 23,
     "race": "Lovers P",
@@ -1655,7 +1645,7 @@
   "Jotun of Authority": {
     "ailments": "NNNNNN",
     "area": "Tziah I 136",
-    "drops": ["Quality Nihil Cloth"],
+    "drops": {"Quality Nihil Cloth": 100},
     "exp": 24951,
     "lvl": 44,
     "race": "Hanged P",
@@ -1666,7 +1656,7 @@
   "Jotun of Blood": {
     "ailments": "-4----",
     "area": "Harabah II 209-224",
-    "drops": ["Bloody Wood Horse", "Garnet"],
+    "drops": {"Bloody Wood Horse": 30, "Garnet": 10},
     "exp": 1602,
     "lvl": 62,
     "race": "Hanged",
@@ -1677,7 +1667,7 @@
   "Jotun of Blood B": {
     "ailments": "1-NNNN",
     "area": "Harabah I 185-197",
-    "drops": ["Bloody Wood Horse", "Silver Quartz", "Opal"],
+    "drops": {"Bloody Wood Horse": 50, "Silver Quartz": 35, "Opal": 15},
     "exp": 6470,
     "lvl": 63,
     "race": "Hanged",
@@ -1687,8 +1677,8 @@
   },
   "Jotun of Evil": {
     "ailments": "-4----",
-    "area": "Adamah 248-251",
-    "drops": ["Infernal Wood Horse", "Ruby"],
+    "area": "Adamah I 248-251",
+    "drops": {"Infernal Wood Horse": 30, "Ruby": 10},
     "exp": 2313,
     "lvl": 70,
     "race": "Hanged",
@@ -1699,7 +1689,7 @@
   "Jotun of Evil B": {
     "ailments": "N-NNN-",
     "area": "Harabah II 213-224",
-    "drops": ["Infernal Wood Horse", "Gold Quartz"],
+    "drops": {"Infernal Wood Horse": 50, "Gold Quartz": 50},
     "exp": 7406,
     "lvl": 69,
     "race": "Hanged",
@@ -1710,7 +1700,7 @@
   "Jotun of Power": {
     "ailments": "-4----",
     "area": "Yabbashah II 113-117",
-    "drops": ["Sadistic Wood Horse", "Topaz"],
+    "drops": {"Sadistic Wood Horse": 35, "Topaz": 10},
     "exp": 504,
     "lvl": 39,
     "race": "Hanged",
@@ -1721,7 +1711,7 @@
   "Jotun of Power B": {
     "ailments": "-411N1",
     "area": "Yabbashah I 83-89",
-    "drops": ["Sadistic Wood Horse", "Black Quartz"],
+    "drops": {"Sadistic Wood Horse": 50, "Black Quartz": 50},
     "exp": 2114,
     "lvl": 32,
     "race": "Hanged",
@@ -1732,7 +1722,7 @@
   "Judgment Sword": {
     "ailments": "141111",
     "area": "Harabah II 206-224",
-    "drops": ["Steel Blade", "Garnet", "Malachite"],
+    "drops": {"Steel Blade": 25, "Garnet": 10, "Malachite": 5},
     "exp": 1525,
     "lvl": 61,
     "race": "Justice",
@@ -1742,8 +1732,8 @@
   },
   "Judgment Sword B": {
     "ailments": "N-NNNN",
-    "area": "Tziah I 119-142.1",
-    "drops": ["Steel Blade"],
+    "area": "Tziah I D1",
+    "drops": {"Steel Blade": 30},
     "exp": 2055,
     "lvl": 43,
     "race": "Justice P",
@@ -1754,7 +1744,7 @@
   "Jupiter Eagle": {
     "ailments": "444444",
     "area": "Yabbashah I 83-89",
-    "drops": ["Airy Plume", "Onyx"],
+    "drops": {"Airy Plume": 30, "Onyx": 15},
     "exp": 263,
     "lvl": 28,
     "race": "Empress",
@@ -1765,7 +1755,7 @@
   "Justice Sword": {
     "ailments": "141111",
     "area": "Yabbashah II 93-116",
-    "drops": ["Rusty Blade", "Onyx"],
+    "drops": {"Rusty Blade": 35, "Onyx": 10},
     "exp": 307,
     "lvl": 31,
     "race": "Justice",
@@ -1776,7 +1766,7 @@
   "Kaiden Musha": {
     "ailments": "4----4",
     "area": "Harabah I 173-196",
-    "drops": ["Warlord Helmet", "Turquoise", "Emerald"],
+    "drops": {"Warlord Helmet": 30, "Turquoise": 5, "Emerald": 5},
     "exp": 1243,
     "lvl": 52,
     "race": "Strength",
@@ -1786,8 +1776,8 @@
   },
   "Kaiden Musha B": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255.2",
-    "drops": ["Warlord Helmet"],
+    "area": "Adamah I P2",
+    "drops": {"Warlord Helmet": 100},
     "exp": 1357,
     "lvl": 79,
     "race": "Strength P",
@@ -1798,7 +1788,7 @@
   "Killer Drive": {
     "ailments": "-1-4--",
     "area": "Tziah I 130-141",
-    "drops": ["Ruthless Rotary Leg", "Amethyst", "Topaz"],
+    "drops": {"Ruthless Rotary Leg": 30, "Amethyst": 10, "Topaz": 5},
     "exp": 728,
     "lvl": 40,
     "race": "Chariot",
@@ -1809,7 +1799,7 @@
   "Killer Twins": {
     "ailments": "444444",
     "area": "Yabbashah I 71-88",
-    "drops": ["Shackles of Depravity", "Amethyst", "Onyx"],
+    "drops": {"Shackles of Depravity": 30, "Amethyst": 10, "Onyx": 5},
     "exp": 208,
     "lvl": 23,
     "race": "Hierophant",
@@ -1820,7 +1810,7 @@
   "Killing Hand": {
     "ailments": "444444",
     "area": "Arqa II 63-68",
-    "drops": ["Assailant's Choker", "Amethyst"],
+    "drops": {"Assailant's Choker": 35, "Amethyst": 10},
     "exp": 148,
     "lvl": 22,
     "race": "Magician",
@@ -1841,7 +1831,7 @@
   "Laughing Table": {
     "ailments": "444444",
     "area": "Arqa I 24-34",
-    "drops": ["Iron Cutlery", "Malachite"],
+    "drops": {"Iron Cutlery": 40, "Malachite": 5},
     "exp": 35,
     "lvl": 9,
     "race": "Magician",
@@ -1862,7 +1852,7 @@
   "Liberating Idol": {
     "ailments": "--4---",
     "area": "Tziah II 147-168",
-    "drops": ["Throne of Freedom", "Emerald"],
+    "drops": {"Throne of Freedom": 30, "Emerald": 10},
     "exp": 927,
     "lvl": 44,
     "race": "Priestess",
@@ -1872,8 +1862,8 @@
   },
   "Light Balance": {
     "ailments": "444444",
-    "area": "Adamah 233-239",
-    "drops": ["Platinum Plates", "Topaz", "Emerald"],
+    "area": "Adamah I 233-239",
+    "drops": {"Platinum Plates": 30, "Topaz": 10, "Emerald": 5},
     "exp": 1833,
     "lvl": 65,
     "race": "Justice",
@@ -1883,8 +1873,8 @@
   },
   "Light Balance B": {
     "ailments": "NNNNNN",
-    "area": "Harabah I 197.2",
-    "drops": ["Prime Nihil Ore"],
+    "area": "Harabah I P2",
+    "drops": {"Prime Nihil Ore": 100},
     "exp": 2175,
     "lvl": 63,
     "race": "Justice P",
@@ -1914,8 +1904,8 @@
   },
   "Lustful Snake": {
     "ailments": "N-4-4-",
-    "area": "Arqa II 68-89",
-    "drops": ["Necklace of Fantasy", "Malachite", "Onyx"],
+    "area": "Yabbashah I 70-89",
+    "drops": {"Necklace of Fantasy": 20, "Malachite": 10, "Onyx": 10},
     "exp": 215,
     "lvl": 24,
     "race": "Lovers",
@@ -1926,7 +1916,7 @@
   "Lustful Snake B": {
     "ailments": "N-4NN-",
     "area": "Arqa II 55-68",
-    "drops": ["Necklace of Fantasy", "Black Quartz"],
+    "drops": {"Necklace of Fantasy": 50, "Black Quartz": 50},
     "exp": 1132,
     "lvl": 24,
     "race": "Lovers",
@@ -1937,7 +1927,7 @@
   "Luxury Hand": {
     "ailments": "NNNNN-",
     "area": "Harabah I 173-197",
-    "drops": ["Scintillating Coin"],
+    "drops": {"Scintillating Coin": 100},
     "exp": 14027,
     "lvl": 58,
     "race": "Fool",
@@ -1948,7 +1938,7 @@
   "Mach Wheel": {
     "ailments": "-1-4--",
     "area": "Yabbashah I 78-89",
-    "drops": ["Rapid Wheel", "Onyx"],
+    "drops": {"Rapid Wheel": 30, "Onyx": 10},
     "exp": 305,
     "lvl": 26,
     "race": "Chariot",
@@ -1958,7 +1948,7 @@
   },
   "Mad Cyclops": {
     "area": "Harabah II 221-224",
-    "drops": ["Cross of Sanity", "Opal"],
+    "drops": {"Cross of Sanity": 25, "Opal": 10},
     "exp": 1801,
     "lvl": 64,
     "race": "Hanged",
@@ -1968,7 +1958,7 @@
   },
   "Mage Soldier": {
     "ailments": "NNN1N1",
-    "area": "Adamah 236",
+    "area": "Adamah I 236",
     "exp": 0,
     "lvl": 68,
     "race": "Priestess P",
@@ -1979,7 +1969,7 @@
   "Magic Hand": {
     "ailments": "444444",
     "area": "Thebel 7-21",
-    "drops": ["Hellish Bowtie", "Turquoise"],
+    "drops": {"Hellish Bowtie": 35, "Turquoise": 10},
     "exp": 25,
     "lvl": 4,
     "race": "Magician",
@@ -2000,7 +1990,7 @@
   "Magical Magus": {
     "ailments": "444444",
     "area": "Tziah I 137-142",
-    "drops": ["Cap of Wizardry", "Topaz", "Emerald"],
+    "drops": {"Cap of Wizardry": 25, "Topaz": 10, "Emerald": 5},
     "exp": 856,
     "lvl": 42,
     "race": "Magician",
@@ -2011,7 +2001,7 @@
   "Magical Magus B": {
     "ailments": "NNNNNN",
     "area": "Unknown",
-    "drops": ["Cap of Wizardry"],
+    "drops": {"Cap of Wizardry": 100},
     "exp": 0,
     "lvl": 25,
     "race": "Priestess P",
@@ -2021,8 +2011,8 @@
   },
   "Magical Magus C": {
     "ailments": "NNNNNN",
-    "area": "Yabbashah I 91.2",
-    "drops": ["Cap of Wizardry"],
+    "area": "Yabbashah I P2",
+    "drops": {"Cap of Wizardry": 100},
     "exp": 0,
     "lvl": 34,
     "race": "Magician P",
@@ -2033,7 +2023,7 @@
   "Majestic Checkmate": {
     "ailments": "----N-",
     "area": "Yabbashah I 70-89",
-    "drops": ["Bronze Medal"],
+    "drops": {"Bronze Medal": 100},
     "exp": 7662,
     "lvl": 28,
     "race": "Fool",
@@ -2044,7 +2034,7 @@
   "Maniacal Book": {
     "ailments": "--4---",
     "area": "Arqa II 50-68",
-    "drops": ["Book of Fanaticism", "Malachite", "Turquoise"],
+    "drops": {"Book of Fanaticism": 35, "Malachite": 5, "Turquoise": 5},
     "exp": 103,
     "lvl": 18,
     "race": "Priestess",
@@ -2055,7 +2045,7 @@
   "Merciless Judge": {
     "ailments": "N4NNNN",
     "area": "Harabah I 184",
-    "drops": ["Prime Nihil Cloth"],
+    "drops": {"Prime Nihil Cloth": 100},
     "exp": 52042,
     "lvl": 59,
     "race": "Justice P",
@@ -2066,7 +2056,7 @@
   "Merciless Maya": {
     "ailments": "--4---",
     "area": "Thebel 3-9",
-    "drops": ["Mask of Cruelty", "Turquoise"],
+    "drops": {"Mask of Cruelty": 40, "Turquoise": 5},
     "exp": 18,
     "lvl": 2,
     "race": "Priestess",
@@ -2077,7 +2067,7 @@
   "Merciless Maya B": {
     "ailments": "NNNNNN",
     "area": "Tutorial",
-    "drops": ["Mask of Cruelty"],
+    "drops": {"Mask of Cruelty": 100},
     "exp": 29,
     "lvl": 2,
     "race": "Priestess",
@@ -2088,7 +2078,7 @@
   "Mighty Beast": {
     "ailments": "444444",
     "area": "Harabah I 180-197",
-    "drops": ["Wicked Fur", "Garnet", "Amethyst"],
+    "drops": {"Wicked Fur": 25, "Garnet": 10, "Amethyst": 5},
     "exp": 1310,
     "lvl": 54,
     "race": "Strength",
@@ -2099,7 +2089,7 @@
   "Mighty Cyclops": {
     "ailments": "444444",
     "area": "Tziah II 164-168",
-    "drops": ["Cross of Ineptitude", "Garnet"],
+    "drops": {"Cross of Ineptitude": 25, "Garnet": 10},
     "exp": 1159,
     "lvl": 50,
     "race": "Hanged",
@@ -2109,7 +2099,7 @@
   },
   "Mind Dice": {
     "area": "Yabbashah II 96-117",
-    "drops": ["Ring of Anxiety", "Turquoise", "Onyx"],
+    "drops": {"Ring of Anxiety": 30, "Turquoise": 10, "Onyx": 5},
     "exp": 335,
     "lvl": 33,
     "race": "Fortune",
@@ -2119,8 +2109,8 @@
   },
   "Minotaur I": {
     "ailments": "4----4",
-    "area": "Adamah 248-251",
-    "drops": ["Ver. I Restraints", "Opal", "Ruby"],
+    "area": "Adamah I 248-251",
+    "drops": {"Ver. I Restraints": 30, "Opal": 5, "Ruby": 5},
     "exp": 2144,
     "lvl": 69,
     "race": "Hanged",
@@ -2131,7 +2121,7 @@
   "Minotaur II": {
     "ailments": "4----4",
     "area": "Harabah II 215-224",
-    "drops": ["Ver. II Restraints", "Garnet"],
+    "drops": {"Ver. II Restraints": 30, "Garnet": 5},
     "exp": 1644,
     "lvl": 63,
     "race": "Hanged",
@@ -2141,8 +2131,8 @@
   },
   "Minotaur II B": {
     "ailments": "N4NNNN",
-    "area": "Tziah II 171.1",
-    "drops": ["Ver. II Restraints"],
+    "area": "Tziah II P1",
+    "drops": {"Ver. II Restraints": 100},
     "exp": 2073,
     "lvl": 55,
     "race": "Hanged P",
@@ -2153,7 +2143,7 @@
   "Minotaur III": {
     "ailments": "4----4",
     "area": "Tziah II 162-168",
-    "drops": ["Ver. III Restraints", "Emerald"],
+    "drops": {"Ver. III Restraints": 25, "Emerald": 10},
     "exp": 1119,
     "lvl": 49,
     "race": "Hanged",
@@ -2163,8 +2153,8 @@
   },
   "Minotaur III B": {
     "ailments": "-NNNNN",
-    "area": "Tziah I 119-142.2",
-    "drops": ["Ver. III Restraints"],
+    "area": "Tziah I D2",
+    "drops": {"Ver. III Restraints": 30},
     "exp": 2087,
     "lvl": 44,
     "race": "Hanged P",
@@ -2175,7 +2165,7 @@
   "Minotaur IV": {
     "ailments": "4----4",
     "area": "Yabbashah II 106-117",
-    "drops": ["Ver. IV Restraints", "Onyx"],
+    "drops": {"Ver. IV Restraints": 30, "Onyx": 15},
     "exp": 463,
     "lvl": 37,
     "race": "Hanged",
@@ -2186,6 +2176,7 @@
   "Minotaur Nulla": {
     "ailments": "NNNNNN",
     "area": "Harabah II 225",
+    "drops": {"Phoenix Tail": 100},
     "exp": 76861,
     "lvl": 69,
     "race": "Hanged P",
@@ -2196,7 +2187,7 @@
   "Miracle Hand": {
     "ailments": "NNNNN-",
     "area": "Harabah II 199-224",
-    "drops": ["Scintillating Coin"],
+    "drops": {"Scintillating Coin": 100},
     "exp": 16207,
     "lvl": 64,
     "race": "Fool",
@@ -2206,7 +2197,7 @@
   },
   "Morbid Book": {
     "ailments": "N-NNNN",
-    "area": "Harabah II 225.1",
+    "area": "Harabah II P1",
     "exp": 4243,
     "lvl": 70,
     "race": "Priestess P",
@@ -2217,7 +2208,7 @@
   "Muttering Tiara": {
     "ailments": "--4---",
     "area": "Thebel 2-21",
-    "drops": ["Hushing Tiara", "Malachite"],
+    "drops": {"Hushing Tiara": 35, "Malachite": 10},
     "exp": 23,
     "lvl": 3,
     "race": "Priestess",
@@ -2246,8 +2237,8 @@
   },
   "Muttering Tiara D": {
     "ailments": "NN-NNN",
-    "area": "Yabbashah II 117.1",
-    "drops": ["Hushing Tiara"],
+    "area": "Yabbashah II P1",
+    "drops": {"Hushing Tiara": 100},
     "exp": 0,
     "lvl": 39,
     "race": "Priestess P",
@@ -2257,8 +2248,8 @@
   },
   "Muttering Tiara E": {
     "ailments": "NN-NNN",
-    "area": "Yabbashah II 117.3",
-    "drops": ["Hushing Tiara"],
+    "area": "Yabbashah II P3",
+    "drops": {"Hushing Tiara": 100},
     "exp": 0,
     "lvl": 39,
     "race": "Priestess P",
@@ -2268,8 +2259,8 @@
   },
   "Natural Dancer B": {
     "ailments": "N--1NN",
-    "area": "Tziah I 143.2",
-    "drops": ["Balloon of Unity"],
+    "area": "Tziah I P2",
+    "drops": {"Balloon of Unity": 100},
     "exp": 1211,
     "lvl": 48,
     "race": "Lovers P",
@@ -2280,6 +2271,7 @@
   "Necromachinery": {
     "ailments": "NNNNNN",
     "area": "Harabah I 193",
+    "drops": {"Lily Petal": 100},
     "exp": 68089,
     "lvl": 63,
     "race": "Hermit P",
@@ -2289,8 +2281,8 @@
   },
   "Nemean Beast B": {
     "ailments": "N1-NN-",
-    "area": "Yabbashah II 93-117.1",
-    "drops": ["Divine Fur"],
+    "area": "Yabbashah II D1",
+    "drops": {"Divine Fur": 30},
     "exp": 1515,
     "lvl": 36,
     "race": "Strength P",
@@ -2300,8 +2292,8 @@
   },
   "Noble Seeker": {
     "ailments": "--4---",
-    "area": "Adamah 248-251",
-    "drops": ["Coruscant Eyeball", "Emerald", "Garnet"],
+    "area": "Adamah I 248-251",
+    "drops": {"Coruscant Eyeball": 30, "Emerald": 5, "Garnet": 5},
     "exp": 2185,
     "lvl": 69,
     "race": "Hermit",
@@ -2312,7 +2304,7 @@
   "Obsessed Cupid": {
     "ailments": "1-4-4-",
     "area": "Thebel 9-21",
-    "drops": ["Arrowhead of Desire", "Malachite"],
+    "drops": {"Arrowhead of Desire": 35, "Malachite": 10},
     "exp": 27,
     "lvl": 5,
     "race": "Lovers",
@@ -2322,8 +2314,8 @@
   },
   "Obsessive Sand": {
     "ailments": "N-1NNN",
-    "area": "Adamah 230",
-    "drops": ["AS Refined Material"],
+    "area": "Adamah I 230",
+    "drops": {"AS Refined Material": 100},
     "exp": 65933,
     "lvl": 69,
     "race": "Fortune P",
@@ -2343,8 +2335,8 @@
   },
   "Omnipotent Balance": {
     "ailments": "NNNNNN",
-    "area": "Harabah I 197.2",
-    "drops": ["Golden Plates"],
+    "area": "Harabah I P2",
+    "drops": {"Golden Plates": 100},
     "exp": 2175,
     "lvl": 64,
     "race": "Justice P",
@@ -2354,8 +2346,8 @@
   },
   "Onnen Musha": {
     "ailments": "4----4",
-    "area": "Adamah 233-239",
-    "drops": ["Vengeful Helmet", "Emerald", "Garnet"],
+    "area": "Adamah I 233-239",
+    "drops": {"Vengeful Helmet": 30, "Emerald": 10, "Garnet": 5},
     "exp": 2001,
     "lvl": 66,
     "race": "Strength",
@@ -2365,8 +2357,8 @@
   },
   "Onnen Musha B": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255.2",
-    "drops": ["Vengeful Helmet"],
+    "area": "Adamah I P2",
+    "drops": {"Vengeful Helmet": 100},
     "exp": 1357,
     "lvl": 79,
     "race": "Strength P",
@@ -2377,7 +2369,7 @@
   "Opulent Hand": {
     "ailments": "NNNNN-",
     "area": "Tziah I 119-142",
-    "drops": ["Sumptuous Coin"],
+    "drops": {"Sumptuous Coin": 100},
     "exp": 8220,
     "lvl": 42,
     "race": "Fool",
@@ -2388,7 +2380,7 @@
   "Order Giant": {
     "ailments": "141111",
     "area": "Tziah II 153-168",
-    "drops": ["Warped Balance", "Emerald"],
+    "drops": {"Warped Balance": 30, "Emerald": 10},
     "exp": 1022,
     "lvl": 46,
     "race": "Justice",
@@ -2399,7 +2391,7 @@
   "Order Giant B": {
     "ailments": "N-NNNN",
     "area": "Tziah I 133-142",
-    "drops": ["Warped Balance", "Silver Quartz"],
+    "drops": {"Warped Balance": 50, "Silver Quartz": 50},
     "exp": 3938,
     "lvl": 47,
     "race": "Justice",
@@ -2409,8 +2401,8 @@
   },
   "Overseer of Creation": {
     "ailments": "NNNNNN",
-    "area": "Adamah 241",
-    "drops": ["Diamond"],
+    "area": "Adamah I 241",
+    "drops": {"Diamond": 100},
     "exp": 42498,
     "lvl": 72,
     "race": "Justice P",
@@ -2421,7 +2413,7 @@
   "Pagoda of Disaster": {
     "ailments": "NNNNNN",
     "area": "Tziah II 151",
-    "drops": ["Quality Nihil Ore"],
+    "drops": {"Quality Nihil Ore": 100},
     "exp": 30873,
     "lvl": 49,
     "race": "Hierophant P",
@@ -2432,7 +2424,7 @@
   "Perpetual Sand": {
     "ailments": "111111",
     "area": "Harabah II 208-224",
-    "drops": ["Orange Sand", "Opal", "Garnet"],
+    "drops": {"Orange Sand": 30, "Opal": 5, "Garnet": 5},
     "exp": 1400,
     "lvl": 61,
     "race": "Fortune",
@@ -2442,8 +2434,8 @@
   },
   "Phantom King B": {
     "ailments": "NNNNNN",
-    "area": "Harabah II 199-224.3",
-    "drops": ["Divine Candlestick"],
+    "area": "Harabah II D3",
+    "drops": {"Divine Candlestick": 30},
     "exp": 4124,
     "lvl": 67,
     "race": "Hermit P",
@@ -2454,7 +2446,7 @@
   "Phantom Lord": {
     "ailments": "----1-",
     "area": "Yabbashah II 109-117",
-    "drops": ["Leader's Candlestick", "Onyx", "Topaz"],
+    "drops": {"Leader's Candlestick": 30, "Onyx": 10, "Topaz": 5},
     "exp": 437,
     "lvl": 38,
     "race": "Hermit",
@@ -2465,7 +2457,7 @@
   "Phantom Mage": {
     "ailments": "----1-",
     "area": "Arqa I 37-41",
-    "drops": ["Wizard's Candlestick", "Turquoise"],
+    "drops": {"Wizard's Candlestick": 35, "Turquoise": 10},
     "exp": 78,
     "lvl": 13,
     "race": "Hermit",
@@ -2475,8 +2467,8 @@
   },
   "Phantom Mage B": {
     "ailments": "NN1NNN",
-    "area": "Yabbashah I 70-89.2",
-    "drops": ["Wizard's Candlestick"],
+    "area": "Yabbashah I D2",
+    "drops": {"Wizard's Candlestick": 30},
     "exp": 1012,
     "lvl": 29,
     "race": "Hermit P",
@@ -2487,7 +2479,7 @@
   "Phantom Master": {
     "ailments": "----1-",
     "area": "Arqa II 61-68",
-    "drops": ["Lord's Candlestick", "Onyx"],
+    "drops": {"Lord's Candlestick": 35, "Onyx": 10},
     "exp": 176,
     "lvl": 22,
     "race": "Hermit",
@@ -2497,8 +2489,8 @@
   },
   "Phantom Master B": {
     "ailments": "N-NNNN",
-    "area": "Harabah II 225.1",
-    "drops": ["Lord's Candlestick"],
+    "area": "Harabah II P1",
+    "drops": {"Lord's Candlestick": 100},
     "exp": 0,
     "lvl": 69,
     "race": "Hermit P",
@@ -2508,8 +2500,8 @@
   },
   "Pink Hand": {
     "ailments": "NNNNNN",
-    "area": "Harabah II 225.2",
-    "drops": ["Dancer's Necklace"],
+    "area": "Harabah II P2",
+    "drops": {"Dancer's Necklace": 100},
     "exp": 0,
     "lvl": 69,
     "race": "Magician P",
@@ -2520,7 +2512,7 @@
   "Pistil Mother": {
     "ailments": "--4---",
     "area": "Harabah II 204-224",
-    "drops": ["Leopardess Stool", "Emerald", "Amethyst"],
+    "drops": {"Leopardess Stool": 25, "Emerald": 10, "Amethyst": 5},
     "exp": 1379,
     "lvl": 60,
     "race": "Empress",
@@ -2529,8 +2521,8 @@
     "stats": [700, 200, 34, 49, 36, 34, 41]
   },
   "Platinum Dice": {
-    "area": "Adamah 249-251",
-    "drops": ["Platinum Dice", "Diamond", "Opal"],
+    "area": "Adamah I 249-251",
+    "drops": {"Platinum Dice": 25, "Diamond": 10, "Opal": 10},
     "exp": 2211,
     "lvl": 70,
     "race": "Fortune",
@@ -2540,8 +2532,8 @@
   },
   "Platinum Dice B": {
     "ailments": "NNNNNN",
-    "area": "Yabbashah II 117.3",
-    "drops": ["Platinum Dice"],
+    "area": "Yabbashah II P3",
+    "drops": {"Platinum Dice": 100},
     "exp": 3131,
     "lvl": 41,
     "race": "Fortune P",
@@ -2552,7 +2544,7 @@
   "Power Castle": {
     "ailments": "141111",
     "area": "Harabah I 194-197",
-    "drops": ["Green Wall Fragment", "Garnet"],
+    "drops": {"Green Wall Fragment": 25, "Garnet": 15},
     "exp": 1475,
     "lvl": 58,
     "race": "Emperor",
@@ -2563,7 +2555,7 @@
   "Precious Hand": {
     "ailments": "NNNNN-",
     "area": "Arqa II 44-68",
-    "drops": ["Odd Coin"],
+    "drops": {"Odd Coin": 100},
     "exp": 2011,
     "lvl": 19,
     "race": "Fool",
@@ -2574,7 +2566,7 @@
   "Prime Magus": {
     "ailments": "444444",
     "area": "Harabah II 219-224",
-    "drops": ["Cap of Knowledge", "Garnet", "Diamond"],
+    "drops": {"Cap of Knowledge": 25, "Garnet": 5, "Diamond": 5},
     "exp": 1698,
     "lvl": 63,
     "race": "Magician",
@@ -2585,7 +2577,7 @@
   "Principled Checkmate": {
     "ailments": "----N-",
     "area": "Harabah I 173-197",
-    "drops": ["Gold Medal"],
+    "drops": {"Gold Medal": 100},
     "exp": 28055,
     "lvl": 59,
     "race": "Fool",
@@ -2616,7 +2608,7 @@
   "Raging Turret": {
     "ailments": "NNNNNN",
     "area": "Tziah I 126",
-    "drops": ["Quality Nihil Blade"],
+    "drops": {"Quality Nihil Blade": 100},
     "exp": 18588,
     "lvl": 42,
     "race": "Chariot P",
@@ -2626,8 +2618,8 @@
   },
   "Rampage Drive B": {
     "ailments": "NNNNNN",
-    "area": "Yabbashah I 91.2",
-    "drops": ["Ruinous Rotary Leg"],
+    "area": "Yabbashah I P2",
+    "drops": {"Ruinous Rotary Leg": 100},
     "exp": 3214,
     "lvl": 34,
     "race": "Chariot P",
@@ -2637,8 +2629,8 @@
   },
   "Rampage Drive C": {
     "ailments": "N-1NNN",
-    "area": "Harabah II 199-224.1",
-    "drops": ["Ruinous Rotary Leg"],
+    "area": "Harabah II D1",
+    "drops": {"Ruinous Rotary Leg": 30},
     "exp": 4052,
     "lvl": 65,
     "race": "Chariot P",
@@ -2658,8 +2650,8 @@
   },
   "Reckoning Dice B": {
     "ailments": "-4NNNN",
-    "area": "Adamah 227-261.2",
-    "drops": ["Ring of Retribution"],
+    "area": "Adamah I D2",
+    "drops": {"Ring of Retribution": 30},
     "exp": 4658,
     "lvl": 74,
     "race": "Fortune P",
@@ -2670,7 +2662,7 @@
   "Red Sigil": {
     "ailments": "4-----",
     "area": "Harabah II 199-217",
-    "drops": ["Inferno Charm", "Topaz", "Turquoise"],
+    "drops": {"Inferno Charm": 30, "Topaz": 5, "Turquoise": 5},
     "exp": 1331,
     "lvl": 58,
     "race": "Hierophant",
@@ -2680,8 +2672,8 @@
   },
   "Red Sigil B": {
     "ailments": "-NNNNN",
-    "area": "Yabbashah I 70-89.3",
-    "drops": ["Inferno Charm"],
+    "area": "Yabbashah I D3",
+    "drops": {"Inferno Charm": 30},
     "exp": 1045,
     "lvl": 30,
     "race": "Hierophant P",
@@ -2692,7 +2684,7 @@
   "Regal Mother": {
     "ailments": "--4---",
     "area": "Tziah II 157-168",
-    "drops": ["Opulent Stool", "Turquoise", "Emerald"],
+    "drops": {"Opulent Stool": 30, "Turquoise": 5, "Emerald": 5},
     "exp": 1007,
     "lvl": 47,
     "race": "Empress",
@@ -2723,7 +2715,7 @@
   "Resolved Checkmate": {
     "ailments": "----N-",
     "area": "Thebel 12-21",
-    "drops": ["Lead Medal"],
+    "drops": {"Lead Medal": 100},
     "exp": 588,
     "lvl": 10,
     "race": "Fool",
@@ -2734,7 +2726,7 @@
   "Reticent Checkmate": {
     "ailments": "----N-",
     "area": "Tziah II 145-168",
-    "drops": ["Silver Medal"],
+    "drops": {"Silver Medal": 100},
     "exp": 21134,
     "lvl": 51,
     "race": "Fool",
@@ -2744,8 +2736,8 @@
   },
   "Royal Dancer": {
     "ailments": "N-4-4-",
-    "area": "Adamah 227-244",
-    "drops": ["Balloon of Harmony", "Opal", "Amethyst"],
+    "area": "Adamah I 227-244",
+    "drops": {"Balloon of Harmony": 30, "Opal": 10, "Amethyst": 5},
     "exp": 1825,
     "lvl": 64,
     "race": "Lovers",
@@ -2756,7 +2748,7 @@
   "Ruinous Idol": {
     "ailments": "--4---",
     "area": "Harabah I 185-197",
-    "drops": ["Throne of Ruin", "Topaz"],
+    "drops": {"Throne of Ruin": 30, "Topaz": 10},
     "exp": 1359,
     "lvl": 53,
     "race": "Priestess",
@@ -2767,7 +2759,7 @@
   "Ruinous Idol B": {
     "ailments": "NN1NNN",
     "area": "Tziah II 156-168",
-    "drops": ["Throne of Ruin", "Silver Quartz", "Garnet"],
+    "drops": {"Throne of Ruin": 50, "Silver Quartz": 30, "Garnet": 20},
     "exp": 4964,
     "lvl": 54,
     "race": "Priestess",
@@ -2788,7 +2780,7 @@
   "Scarlet Turret": {
     "ailments": "-1-4--",
     "area": "Harabah I 177-196",
-    "drops": ["Bloodstained Turret", "Garnet", "Topaz"],
+    "drops": {"Bloodstained Turret": 25, "Garnet": 15, "Topaz": 5},
     "exp": 1341,
     "lvl": 54,
     "race": "Chariot",
@@ -2799,7 +2791,7 @@
   "Scarlet Turret B": {
     "ailments": "NNN1NN",
     "area": "Tziah II 145-154",
-    "drops": ["Bloodstained Turret", "Silver Quartz"],
+    "drops": {"Bloodstained Turret": 50, "Silver Quartz": 50},
     "exp": 4403,
     "lvl": 51,
     "race": "Chariot",
@@ -2810,7 +2802,7 @@
   "Scornful Dice": {
     "ailments": "-4NNNN",
     "area": "Harabah II 218",
-    "drops": ["Opal"],
+    "drops": {"Opal": 100},
     "exp": 65938,
     "lvl": 66,
     "race": "Fortune P",
@@ -2850,8 +2842,8 @@
   },
   "Shadow of the Void": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255.3",
-    "drops": ["Dead Moon's Husk"],
+    "area": "Adamah I P3",
+    "drops": {"Dead Moon's Husk": 100},
     "exp": 9049,
     "lvl": 81,
     "race": "Strength P",
@@ -2862,7 +2854,7 @@
   "Shouting Tiara": {
     "ailments": "--4---",
     "area": "Yabbashah II 102-117",
-    "drops": ["Shrieking Tiara", "Turquoise"],
+    "drops": {"Shrieking Tiara": 35, "Turquoise": 10},
     "exp": 388,
     "lvl": 35,
     "race": "Priestess",
@@ -2872,8 +2864,8 @@
   },
   "Shouting Tiara B": {
     "ailments": "-N-NNN",
-    "area": "Yabbashah I 91.2",
-    "drops": ["Shrieking Tiara"],
+    "area": "Yabbashah I P2",
+    "drops": {"Shrieking Tiara": 100},
     "exp": 0,
     "lvl": 33,
     "race": "Priestess P",
@@ -2884,7 +2876,7 @@
   "Silent Book": {
     "ailments": "--4---",
     "area": "Yabbashah I 80-89",
-    "drops": ["Book of Secrets", "Turquoise"],
+    "drops": {"Book of Secrets": 35, "Turquoise": 10},
     "exp": 256,
     "lvl": 27,
     "race": "Priestess",
@@ -2894,8 +2886,8 @@
   },
   "Silent Book B": {
     "ailments": "NN-NNN",
-    "area": "Yabbashah II 117.2",
-    "drops": ["Book of Secrets"],
+    "area": "Yabbashah II P2",
+    "drops": {"Book of Secrets": 100},
     "exp": 0,
     "lvl": 39,
     "race": "Priestess P",
@@ -2905,8 +2897,8 @@
   },
   "Silent Book C": {
     "ailments": "NN-NNN",
-    "area": "Yabbashah II 117.3",
-    "drops": ["Book of Secrets"],
+    "area": "Yabbashah II P3",
+    "drops": {"Book of Secrets": 100},
     "exp": 0,
     "lvl": 39,
     "race": "Priestess P",
@@ -2916,8 +2908,8 @@
   },
   "Silver Hand": {
     "ailments": "-NNNNN",
-    "area": "Harabah II 225.2",
-    "drops": ["Divine Adornment"],
+    "area": "Harabah II P2",
+    "drops": {"Divine Adornment": 100},
     "exp": 0,
     "lvl": 69,
     "race": "Magician P",
@@ -2928,7 +2920,7 @@
   "Sky Balance": {
     "ailments": "444444",
     "area": "Arqa II 45-68",
-    "drops": ["Purple-Green Plates", "Amethyst", "Turquoise"],
+    "drops": {"Purple-Green Plates": 35, "Amethyst": 5, "Turquoise": 5},
     "exp": 97,
     "lvl": 17,
     "race": "Justice",
@@ -2938,8 +2930,8 @@
   },
   "Sky Balance B": {
     "ailments": "NNNNNN",
-    "area": "Harabah I 197.2",
-    "drops": ["Purple-Green Plates"],
+    "area": "Harabah I P2",
+    "drops": {"Purple-Green Plates": 100},
     "exp": 2175,
     "lvl": 62,
     "race": "Justice P",
@@ -2950,6 +2942,7 @@
   "Sky Overseer": {
     "ailments": "NNNNNN",
     "area": "Yabbashah I 82",
+    "drops": {"Vibrant Feather": 100},
     "exp": 0,
     "lvl": 28,
     "race": "Justice P",
@@ -2960,7 +2953,7 @@
   "Slaughter Drive": {
     "ailments": "-1-4--",
     "area": "Harabah II 219-224",
-    "drops": ["Cruel Rotary Leg", "Opal", "Diamond"],
+    "drops": {"Cruel Rotary Leg": 25, "Opal": 5, "Diamond": 5},
     "exp": 1797,
     "lvl": 64,
     "race": "Chariot",
@@ -2971,7 +2964,7 @@
   "Slaughter Twins": {
     "ailments": "1141N1",
     "area": "Arqa I 36",
-    "drops": ["Turquoise"],
+    "drops": {"Turquoise": 100},
     "exp": 0,
     "lvl": 13,
     "race": "Hierophant P",
@@ -2982,7 +2975,7 @@
   "Solid Castle": {
     "ailments": "141111",
     "area": "Tziah II 156-168",
-    "drops": ["Ashen Wall Fragment", "Topaz"],
+    "drops": {"Ashen Wall Fragment": 30, "Topaz": 10},
     "exp": 1073,
     "lvl": 47,
     "race": "Emperor",
@@ -2993,7 +2986,7 @@
   "Soul Dancer": {
     "ailments": "1-4-4-",
     "area": "Arqa I 39-41",
-    "drops": ["Balloon of Amity", "Malachite"],
+    "drops": {"Balloon of Amity": 30, "Malachite": 15},
     "exp": 90,
     "lvl": 14,
     "race": "Lovers",
@@ -3003,8 +2996,8 @@
   },
   "Spiritual Castle": {
     "ailments": "1441N-",
-    "area": "Tziah II 171.2",
-    "drops": ["White Wall Fragment"],
+    "area": "Tziah II P2",
+    "drops": {"White Wall Fragment": 100},
     "exp": 1556,
     "lvl": 55,
     "race": "Emperor P",
@@ -3015,7 +3008,7 @@
   "Spurious Book": {
     "ailments": "--4---",
     "area": "Arqa I 29-41",
-    "drops": ["Book of Fabrication", "Turquoise"],
+    "drops": {"Book of Fabrication": 40, "Turquoise": 5},
     "exp": 55,
     "lvl": 12,
     "race": "Priestess",
@@ -3036,7 +3029,7 @@
   "Stasis Giant": {
     "ailments": "141111",
     "area": "Harabah II 213-224",
-    "drops": ["Wavering Balance", "Garnet"],
+    "drops": {"Wavering Balance": 30, "Garnet": 10},
     "exp": 1711,
     "lvl": 63,
     "race": "Justice",
@@ -3047,7 +3040,7 @@
   "Steel Gigas": {
     "ailments": "4----4",
     "area": "Arqa II 48-68",
-    "drops": ["Iron-Lined Pants", "Turquoise", "Amethyst"],
+    "drops": {"Iron-Lined Pants": 35, "Turquoise": 5, "Amethyst": 5},
     "exp": 144,
     "lvl": 19,
     "race": "Strength",
@@ -3058,7 +3051,7 @@
   "Steel Gigas B": {
     "ailments": "4--4N1",
     "area": "Arqa I 29-34",
-    "drops": ["Iron-Lined Pants", "Amethyst"],
+    "drops": {"Iron-Lined Pants": 80, "Amethyst": 20},
     "exp": 281,
     "lvl": 14,
     "race": "Strength",
@@ -3079,7 +3072,7 @@
   "Supreme Hand": {
     "ailments": "NNNNN-",
     "area": "Yabbashah I 70-89",
-    "drops": ["Rustic Coin"],
+    "drops": {"Rustic Coin": 100},
     "exp": 3831,
     "lvl": 27,
     "race": "Fool",
@@ -3090,7 +3083,7 @@
   "Swift Axle": {
     "ailments": "N--NNN",
     "area": "Thebel 17",
-    "drops": ["Shaft Fragment"],
+    "drops": {"Shaft Fragment": 100},
     "exp": 1260,
     "lvl": 9,
     "race": "Chariot P",
@@ -3100,8 +3093,8 @@
   },
   "Tenjin Musha B": {
     "ailments": "NNNNNN",
-    "area": "Adamah 255.2",
-    "drops": ["Nihil White Model"],
+    "area": "Adamah I P2",
+    "drops": {"Nihil White Model": 100},
     "exp": 1357,
     "lvl": 80,
     "race": "Strength P",
@@ -3111,8 +3104,8 @@
   },
   "Tenjin Musha C": {
     "ailments": "NNNNNN",
-    "area": "Adamah 248-261",
-    "drops": ["Ruling Helmet", "Gold Quartz", "Ruby"],
+    "area": "Adamah I 248-261",
+    "drops": {"Ruling Helmet": 30, "Gold Quartz": 50, "Ruby": 20},
     "exp": 9311,
     "lvl": 79,
     "race": "Strength",
@@ -3123,7 +3116,7 @@
   "Terminal Table": {
     "ailments": "NNNNN1",
     "area": "Tziah I 132",
-    "drops": ["Emerald"],
+    "drops": {"Emerald": 100},
     "exp": 21460,
     "lvl": 43,
     "race": "Magician P",
@@ -3134,7 +3127,7 @@
   "Terror Dice": {
     "ailments": "NNN-N1",
     "area": "Unknown",
-    "drops": ["Ring of Anxiety"],
+    "drops": {"Ring of Anxiety": 30},
     "exp": 503,
     "lvl": 22,
     "race": "Fortune P",
@@ -3165,7 +3158,7 @@
   "Trance Twins": {
     "ailments": "444444",
     "area": "Thebel 12-21",
-    "drops": ["Shackles of Ecstasy", "Turquoise"],
+    "drops": {"Shackles of Ecstasy": 20, "Turquoise": 10},
     "exp": 30,
     "lvl": 6,
     "race": "Hierophant",
@@ -3176,7 +3169,7 @@
   "Tranquil Idol": {
     "ailments": "--4---",
     "area": "Tziah I 123-142",
-    "drops": ["Throne of Serenity", "Onyx", "Topaz"],
+    "drops": {"Throne of Serenity": 30, "Onyx": 10, "Topaz": 5},
     "exp": 703,
     "lvl": 39,
     "race": "Priestess",
@@ -3187,7 +3180,7 @@
   "Tranquil Idol B": {
     "ailments": "N--NN-",
     "area": "Unknown",
-    "drops": ["Throne of Serenity"],
+    "drops": {"Throne of Serenity": 30},
     "exp": 503,
     "lvl": 20,
     "race": "Priestess P",
@@ -3198,7 +3191,7 @@
   "Treasure Hand": {
     "ailments": "NNNNN-",
     "area": "Arqa I 23-41",
-    "drops": ["Odd Coin"],
+    "drops": {"Odd Coin": 100},
     "exp": 842,
     "lvl": 12,
     "race": "Fool",
@@ -3217,8 +3210,8 @@
   },
   "Vehement Idol": {
     "ailments": "--4---",
-    "area": "Adamah 260-261",
-    "drops": ["Throne of Mania", "Diamond", "Ruby"],
+    "area": "Adamah II 260-261",
+    "drops": {"Throne of Mania": 25, "Diamond": 10, "Ruby": 10},
     "exp": 2463,
     "lvl": 73,
     "race": "Priestess",
@@ -3228,8 +3221,8 @@
   },
   "Vehement Idol B": {
     "ailments": "NN-NNN",
-    "area": "Tziah I 143.3",
-    "drops": ["Throne of Mania"],
+    "area": "Tziah I P3",
+    "drops": {"Throne of Mania": 100},
     "exp": 4038,
     "lvl": 48,
     "race": "Priestess P",
@@ -3239,8 +3232,8 @@
   },
   "Vehement Idol C": {
     "ailments": "NNN1N1",
-    "area": "Harabah II 199-224.2",
-    "drops": ["Throne of Mania"],
+    "area": "Harabah II D2",
+    "drops": {"Throne of Mania": 30},
     "exp": 4088,
     "lvl": 66,
     "race": "Priestess P",
@@ -3261,7 +3254,7 @@
   "Venus Eagle": {
     "ailments": "444444",
     "area": "Arqa I 39-41",
-    "drops": ["Ostentatious Plume", "Amethyst"],
+    "drops": {"Ostentatious Plume": 30, "Amethyst": 15},
     "exp": 100,
     "lvl": 14,
     "race": "Empress",
@@ -3272,7 +3265,7 @@
   "Vicious Raven": {
     "ailments": "444444",
     "area": "Arqa II 44-63",
-    "drops": ["Incandescent Lantern", "Amethyst"],
+    "drops": {"Incandescent Lantern": 35, "Amethyst": 10},
     "exp": 77,
     "lvl": 16,
     "race": "Hermit",
@@ -3283,7 +3276,7 @@
   "Visceral Maya": {
     "ailments": "444444",
     "area": "Tziah II 145-166",
-    "drops": ["Mask of Reality", "Malachite"],
+    "drops": {"Mask of Reality": 35, "Malachite": 5},
     "exp": 885,
     "lvl": 42,
     "race": "Strength",
@@ -3293,8 +3286,8 @@
   },
   "Void Giant B": {
     "ailments": "N4NNNN",
-    "area": "Harabah I 173-197.3",
-    "drops": ["Equal Balance"],
+    "area": "Harabah I D1",
+    "drops": {"Equal Balance": 30},
     "exp": 3606,
     "lvl": 61,
     "race": "Justice P",
@@ -3315,7 +3308,7 @@
   "Wealth Hand": {
     "ailments": "NNNNN-",
     "area": "Thebel 12-21",
-    "drops": ["Worldly Coin"],
+    "drops": {"Worldly Coin": 100},
     "exp": 294,
     "lvl": 7,
     "race": "Fool",
@@ -3325,8 +3318,8 @@
   },
   "White Hand": {
     "ailments": "-NNNNN",
-    "area": "Harabah II 225.2",
-    "drops": ["Hellish Bowtie"],
+    "area": "Harabah II P2",
+    "drops": {"Hellish Bowtie": 100},
     "exp": 0,
     "lvl": 69,
     "race": "Magician P",
@@ -3336,8 +3329,8 @@
   },
   "Wicked Turret": {
     "ailments": "-1-4--",
-    "area": "Adamah 257-261",
-    "drops": ["Ominous Turret", "Opal", "Ruby"],
+    "area": "Adamah II 257-261",
+    "drops": {"Ominous Turret": 25, "Opal": 10, "Ruby": 10},
     "exp": 2445,
     "lvl": 73,
     "race": "Chariot",
@@ -3348,7 +3341,7 @@
   "Wicked Turret B": {
     "ailments": "NNNNNN",
     "area": "Unknown",
-    "drops": ["Ominous Turret"],
+    "drops": {"Ominous Turret": 100},
     "exp": 0,
     "lvl": 25,
     "race": "Chariot P",
@@ -3359,7 +3352,7 @@
   "Wild Beast": {
     "ailments": "444444",
     "area": "Arqa I 33-41",
-    "drops": ["Beastly Fur", "Malachite", "Amethyst"],
+    "drops": {"Beastly Fur": 30, "Malachite": 10, "Amethyst": 5},
     "exp": 80,
     "lvl": 12,
     "race": "Strength",
@@ -3370,7 +3363,7 @@
   "Wild Drive": {
     "ailments": "-1-4--",
     "area": "Yabbashah II 100-117",
-    "drops": ["Brutish Rotary Leg", "Onyx", "Amethyst"],
+    "drops": {"Brutish Rotary Leg": 35, "Onyx": 5, "Amethyst": 5},
     "exp": 381,
     "lvl": 34,
     "race": "Chariot",
@@ -3381,7 +3374,7 @@
   "Wild Drive B": {
     "ailments": "1N-4NN",
     "area": "Yabbashah I 70-81",
-    "drops": ["Brutish Rotary Leg", "Black Quartz"],
+    "drops": {"Brutish Rotary Leg": 50, "Black Quartz": 50},
     "exp": 1596,
     "lvl": 28,
     "race": "Chariot",
@@ -3402,7 +3395,7 @@
   "Wondrous Magus": {
     "ailments": "444444",
     "area": "Tziah II 159-168",
-    "drops": ["Cap of Admiration", "Onyx"],
+    "drops": {"Cap of Admiration": 25, "Onyx": 10},
     "exp": 1038,
     "lvl": 48,
     "race": "Magician",
@@ -3412,8 +3405,8 @@
   },
   "World Balance B": {
     "ailments": "N1-NN1",
-    "area": "Harabah I 173-197.1",
-    "drops": ["Golden Plates"],
+    "area": "Harabah I D2",
+    "drops": {"Golden Plates": 30},
     "exp": 3507,
     "lvl": 59,
     "race": "Justice P",
@@ -3424,7 +3417,7 @@
   "Wrathful Book": {
     "ailments": "--4---",
     "area": "Harabah II 206-223",
-    "drops": ["Book of Indignation", "Amethyst", "Onyx"],
+    "drops": {"Book of Indignation": 30, "Amethyst": 5, "Onyx": 5},
     "exp": 1363,
     "lvl": 61,
     "race": "Priestess",
@@ -3435,7 +3428,7 @@
   "Writhing Tiara": {
     "ailments": "--4---",
     "area": "Tziah I 128-142",
-    "drops": ["Silencing Tiara", "Turquoise", "Topaz"],
+    "drops": {"Silencing Tiara": 30, "Turquoise": 5, "Topaz": 5},
     "exp": 710,
     "lvl": 40,
     "race": "Priestess",
@@ -3446,7 +3439,7 @@
   "Yearning Checkmate": {
     "ailments": "----N-",
     "area": "Arqa I 23-41",
-    "drops": ["Steel Medal"],
+    "drops": {"Steel Medal": 100},
     "exp": 1685,
     "lvl": 14,
     "race": "Fool",
