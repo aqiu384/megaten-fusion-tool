@@ -24,6 +24,7 @@ function createCompConfig(): CompendiumConfig {
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
   const inheritTypes: { [elem: string]: number } = {};
+  const enemyData = {}
 
   for(const race of COMP_CONFIG_JSON.races) {
     races.push(race);
@@ -43,9 +44,10 @@ function createCompConfig(): CompendiumConfig {
     demon['price'] = estimatePrice(demon['stats']);
   }
 
-  for (const enemy of Object.values(ENEMY_DATA_JSON)) {
+  for (const [name, enemy] of Object.entries(ENEMY_DATA_JSON)) {
     enemy['stats'] = enemy['stats'].slice(0, 2);
     enemy['drops'] = Object.keys(enemy['drops'] || {});
+    if (!enemy['boss']) { enemyData[name] = enemy; }
   }
 
   const COST_HP = 2 << 10;
@@ -103,7 +105,7 @@ function createCompConfig(): CompendiumConfig {
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
-    enemyData: ENEMY_DATA_JSON,
+    enemyData,
     enemyStats: ['HP', 'MP'],
 
     normalTable: FUSION_CHART_JSON,
