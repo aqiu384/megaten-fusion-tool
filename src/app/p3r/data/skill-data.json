@@ -7,7 +7,8 @@
     "hit": 99,
     "power": 40,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maragi"
   },
   "Agidyne": {
     "card": 10,
@@ -17,7 +18,9 @@
     "hit": 99,
     "power": 220,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maragidyne",
+    "uplvl": 20
   },
   "Agilao": {
     "card": 6,
@@ -27,7 +30,8 @@
     "hit": 99,
     "power": 100,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maragion"
   },
   "Ailment Boost": {
     "card": 5,
@@ -74,7 +78,9 @@
   "Almighty Boost": {
     "effect": "Automatically strengthen Almighty skills by 25%.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Almighty Amp",
+    "uplvl": 40
   },
   "Amrita Drop": {
     "card": 6,
@@ -82,7 +88,9 @@
     "effect": "Cures all ailments besides KO for 1 ally.",
     "elem": "rec",
     "rank": 5,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Amrita Shower",
+    "uplvl": 40
   },
   "Amrita Shower": {
     "card": 12,
@@ -155,7 +163,9 @@
     "min": 1,
     "power": 27,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Myriad Arrows",
+    "uplvl": 50
   },
   "Assault Dive": {
     "card": 6,
@@ -166,7 +176,9 @@
     "hit": 88,
     "power": 120,
     "rank": 3,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Gigantic Fist",
+    "uplvl": 30
   },
   "Auto Bolster": {
     "effect": "Temporarily increases Attack and Defense of self at the start of battle.",
@@ -209,7 +221,9 @@
     "card": 7,
     "effect": "Temporarily increases user's Defense at the start of battle.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Auto Maraku",
+    "uplvl": 30
   },
   "Auto Rebellion": {
     "card": 7,
@@ -221,7 +235,9 @@
     "card": 7,
     "effect": "Temporarily increases user's Accuracy/Evasion at the start of battle.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Auto Masuku",
+    "uplvl": 30
   },
   "Auto Sukunda": {
     "effect": "Lowers Accuracy/Evasion of 1 random foe for 3 turns when a battle starts.",
@@ -233,7 +249,9 @@
     "card": 7,
     "effect": "Temporarily increases user's Attack at the start of battle.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Auto Mataru",
+    "uplvl": 30
   },
   "Baisudi": {
     "card": 1,
@@ -241,7 +259,8 @@
     "effect": "Cures Freeze/Shock/Poison/Down/Dizzy for 1 ally.",
     "elem": "rec",
     "rank": 2,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Mabaisudi"
   },
   "Bash": {
     "card": 1,
@@ -252,7 +271,8 @@
     "hit": 90,
     "power": 50,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Sonic Punch"
   },
   "Best Friends": {
     "cost": 2001,
@@ -270,7 +290,8 @@
     "elem": "ail",
     "mod": 70,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Eerie Sound"
   },
   "Black Viper": {
     "cost": 1070,
@@ -303,7 +324,9 @@
     "min": 2,
     "power": 42,
     "rank": 6,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Deathbound",
+    "uplvl": 30
   },
   "Blaze of Life": {
     "add": "Ignores resistances, Fully restores user's HP",
@@ -386,7 +409,8 @@
     "mod": 15,
     "power": 40,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mabufu"
   },
   "Bufudyne": {
     "add": "Freeze",
@@ -398,7 +422,9 @@
     "mod": 15,
     "power": 220,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mabufudyne",
+    "uplvl": 20
   },
   "Bufula": {
     "add": "Freeze",
@@ -410,7 +436,8 @@
     "mod": 15,
     "power": 100,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mabufula"
   },
   "Cadenza": {
     "cost": 2001,
@@ -458,13 +485,15 @@
     "card": 3,
     "effect": "10% chance of reflecting physical skills.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Counterstrike"
   },
   "Counterstrike": {
     "card": 6,
     "effect": "15% chance of reflecting physical skills. Does not stack.",
     "elem": "pas",
-    "rank": 4
+    "rank": 4,
+    "upgrade": "High Counter"
   },
   "Crit Rate Amp": {
     "effect": "Greatly increases critical rate 15%.",
@@ -474,7 +503,9 @@
   "Crit Rate Boost": {
     "effect": "Increases critical rate by 5%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Crit Rate Amp",
+    "uplvl": 30
   },
   "Critical Amp": {
     "effect": "Greatly increases critical rate by 10% and greatly increases critical hit strength by 40%.",
@@ -511,7 +542,9 @@
     "hit": 95,
     "power": 200,
     "rank": 5,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Vile Assault",
+    "uplvl": 30
   },
   "Cyclone Arrow": {
     "add": "Ignores resistances",
@@ -533,7 +566,9 @@
     "card": 5,
     "effect": "Automatically strengthen Dark skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Dark Amp",
+    "uplvl": 20
   },
   "Dark Driver": {
     "effect": "Automatically strengthen Dark skills by 75%. Can stack.",
@@ -550,7 +585,9 @@
     "hit": 85,
     "power": 350,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Vorpal Blade",
+    "uplvl": 50
   },
   "Debilitate": {
     "cost": 1036,
@@ -592,7 +629,8 @@
     "elem": "rec",
     "power": 50,
     "rank": 2,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Media"
   },
   "Diamond Dust": {
     "add": "Freeze",
@@ -611,7 +649,9 @@
     "effect": "Fully restores 1 ally's HP.",
     "elem": "rec",
     "rank": 6,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Mediarahan",
+    "uplvl": 50
   },
   "Diarama": {
     "add": "HP restore",
@@ -621,7 +661,8 @@
     "elem": "rec",
     "power": 150,
     "rank": 4,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Mediarama"
   },
   "Die For Me!": {
     "add": "instakill",
@@ -680,55 +721,64 @@
     "card": 4,
     "effect": "Increase Evasion against non-instakill Dark skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Dark"
   },
   "Dodge Elec": {
     "card": 4,
     "effect": "Increase Evasion against Electric skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Elec"
   },
   "Dodge Fire": {
     "card": 4,
     "effect": "Increase Evasion against Fire skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Fire"
   },
   "Dodge Ice": {
     "card": 4,
     "effect": "Increase Evasion against Ice skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Ice"
   },
   "Dodge Light": {
     "card": 4,
     "effect": "Increase Evasion against non-instakill Light skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Light"
   },
   "Dodge Pierce": {
     "card": 4,
     "effect": "Increase Evasion against Pierce skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Pierce"
   },
   "Dodge Slash": {
     "card": 4,
     "effect": "Increase Evasion against Slash skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Slash"
   },
   "Dodge Strike": {
     "card": 4,
     "effect": "Increase Evasion against Strike skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Strike"
   },
   "Dodge Wind": {
     "card": 4,
     "effect": "Increase Evasion against Wind skills by 15%.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Evade Wind"
   },
   "Drain Ability": {
     "card": 3,
@@ -803,7 +853,8 @@
     "hit": 99,
     "power": 140,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maeiga"
   },
   "Eigaon": {
     "card": 10,
@@ -813,7 +864,9 @@
     "hit": 99,
     "power": 350,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maeigaon",
+    "uplvl": 20
   },
   "Eiha": {
     "card": 2,
@@ -823,7 +876,8 @@
     "hit": 99,
     "power": 60,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maeiha"
   },
   "Elec Amp": {
     "card": 12,
@@ -835,7 +889,9 @@
     "card": 5,
     "effect": "Automatically strengthen Electric skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Elec Amp",
+    "uplvl": 20
   },
   "Elec Break": {
     "card": 4,
@@ -866,17 +922,20 @@
     "card": 9,
     "effect": "Survive a fatal blow with 1 HP remaining.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Enduring Soul"
   },
   "Endure Dark": {
     "effect": "Automatically survive 1 Dark instakill attack with 1 HP remaining.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Survival Trick"
   },
   "Endure Light": {
     "effect": "Automatically survive 1 Light instakill attack with 1 HP remaining.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Survival Trick"
   },
   "Enduring Soul": {
     "card": 13,
@@ -963,13 +1022,16 @@
     "elem": "ail",
     "mod": 60,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Evil Smile"
   },
   "Fast Heal": {
     "card": 6,
     "effect": "Halves the time needed to recover from ailments.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Insta-Heal",
+    "uplvl": 50
   },
   "Fatal End": {
     "add": "Fear",
@@ -982,7 +1044,9 @@
     "mod": 35,
     "power": 110,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Tempest Slash",
+    "uplvl": 30
   },
   "Fear Boost": {
     "effect": "Increase chances of inflicting Fear by 50%.",
@@ -999,7 +1063,9 @@
     "card": 5,
     "effect": "Automatically strengthen Fire skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Fire Amp",
+    "uplvl": 20
   },
   "Fire Break": {
     "card": 4,
@@ -1026,7 +1092,8 @@
     "effect": "Increase chance of inflicting ailments to 1 foe by 50%.",
     "elem": "alm",
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Stagnant Air"
   },
   "Freeze Boost": {
     "effect": "Increase chances of inflicting Freeze by 50%.",
@@ -1049,7 +1116,8 @@
     "hit": 99,
     "power": 40,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Magaru"
   },
   "Garudyne": {
     "card": 10,
@@ -1059,7 +1127,9 @@
     "hit": 99,
     "power": 220,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Magarudyne",
+    "uplvl": 20
   },
   "Garula": {
     "card": 6,
@@ -1069,7 +1139,8 @@
     "hit": 99,
     "power": 100,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Magarula"
   },
   "Getsu-ei": {
     "add": "More dmg when closer to a full moon",
@@ -1100,7 +1171,9 @@
     "hit": 85,
     "power": 380,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "God's Hand",
+    "uplvl": 50
   },
   "God's Hand": {
     "card": 12,
@@ -1117,13 +1190,15 @@
     "card": 3,
     "effect": "Earn 25% EXP, even when not participating in battle.",
     "elem": "pas",
-    "rank": 2
+    "rank": 2,
+    "upgrade": "Growth 2"
   },
   "Growth 2": {
     "card": 6,
     "effect": "Earn 50% EXP, even when not participating in battle.",
     "elem": "pas",
-    "rank": 4
+    "rank": 4,
+    "upgrade": "Growth 3"
   },
   "Growth 3": {
     "card": 9,
@@ -1150,7 +1225,8 @@
     "elem": "lig",
     "mod": 30,
     "rank": 3,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mahama"
   },
   "Hama Boost": {
     "card": 4,
@@ -1166,7 +1242,9 @@
     "elem": "lig",
     "mod": 50,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mahamaon",
+    "uplvl": 20
   },
   "Healing Apex": {
     "effect": "Reduces the SP cost of recovery skills to 25% of their normal SP cost.",
@@ -1196,7 +1274,9 @@
     "hit": 90,
     "power": 400,
     "rank": 6,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Akasha Arts",
+    "uplvl": 50
   },
   "Heaven's Blade": {
     "cost": 18,
@@ -1219,7 +1299,9 @@
     "hit": 85,
     "power": 230,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Heat Wave",
+    "uplvl": 30
   },
   "High Counter": {
     "card": 9,
@@ -1238,7 +1320,8 @@
     "mod": 35,
     "power": 65,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Torrent Shot"
   },
   "Hound of Hades": {
     "add": "Ignores resistances",
@@ -1272,7 +1355,9 @@
     "card": 5,
     "effect": "Automatically strengthen Ice skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Ice Amp",
+    "uplvl": 20
   },
   "Ice Break": {
     "card": 4,
@@ -1317,13 +1402,15 @@
     "card": 4,
     "effect": "Automatically recover 3 SP each turn in battle.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Invigorate 2"
   },
   "Invigorate 2": {
     "card": 7,
     "effect": "Automatically recover 5 SP each turn in battle.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Invigorate 3"
   },
   "Invigorate 3": {
     "card": 9,
@@ -1368,7 +1455,8 @@
     "hit": 99,
     "power": 140,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Makouga"
   },
   "Kougaon": {
     "card": 10,
@@ -1378,7 +1466,9 @@
     "hit": 99,
     "power": 350,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Makougaon",
+    "uplvl": 20
   },
   "Kouha": {
     "card": 2,
@@ -1388,7 +1478,8 @@
     "hit": 99,
     "power": 60,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Makouha"
   },
   "Life Aid": {
     "effect": "Recover 8% of max HP and SP after winning a battle.",
@@ -1413,7 +1504,9 @@
     "card": 5,
     "effect": "Automatically strengthen Light skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Light Amp",
+    "uplvl": 20
   },
   "Light Driver": {
     "effect": "Automatically strengthen Light skills by 75%. Can stack.",
@@ -1438,7 +1531,9 @@
     "effect": "Cures Freeze/Shock/Poison/Down/Dizzy for all allies.",
     "elem": "rec",
     "rank": 4,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Amrita Drop",
+    "uplvl": 20
   },
   "Mabufu": {
     "add": "Freeze",
@@ -1450,7 +1545,8 @@
     "mod": 10,
     "power": 40,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Bufula"
   },
   "Mabufudyne": {
     "add": "Freeze",
@@ -1462,7 +1558,9 @@
     "mod": 10,
     "power": 220,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Diamond Dust",
+    "uplvl": 60
   },
   "Mabufula": {
     "add": "Freeze",
@@ -1474,7 +1572,9 @@
     "mod": 10,
     "power": 100,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Bufudyne",
+    "uplvl": 20
   },
   "Maeiga": {
     "card": 8,
@@ -1484,7 +1584,9 @@
     "hit": 95,
     "power": 140,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Eigaon",
+    "uplvl": 20
   },
   "Maeigaon": {
     "card": 11,
@@ -1494,7 +1596,9 @@
     "hit": 95,
     "power": 350,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Demonic Decree",
+    "uplvl": 60
   },
   "Maeiha": {
     "card": 5,
@@ -1504,7 +1608,8 @@
     "hit": 95,
     "power": 60,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Eiga"
   },
   "Magaru": {
     "card": 5,
@@ -1514,7 +1619,8 @@
     "hit": 95,
     "power": 40,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Garula"
   },
   "Magarudyne": {
     "card": 11,
@@ -1524,7 +1630,9 @@
     "hit": 95,
     "power": 220,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Panta Rhei",
+    "uplvl": 60
   },
   "Magarula": {
     "card": 8,
@@ -1534,7 +1642,9 @@
     "hit": 95,
     "power": 100,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Garudyne",
+    "uplvl": 20
   },
   "Magatsu Mandala": {
     "add": "Fear, Confuse",
@@ -1568,7 +1678,8 @@
     "elem": "lig",
     "mod": 30,
     "rank": 4,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Hamaon"
   },
   "Mahamaon": {
     "add": "instakill",
@@ -1578,7 +1689,9 @@
     "elem": "lig",
     "mod": 50,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Divine Judgment",
+    "uplvl": 60
   },
   "Makarakarn": {
     "card": 10,
@@ -1596,7 +1709,9 @@
     "hit": 95,
     "power": 140,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Kougaon",
+    "uplvl": 20
   },
   "Makougaon": {
     "card": 11,
@@ -1606,7 +1721,9 @@
     "hit": 95,
     "power": 350,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Divine Judgment",
+    "uplvl": 60
   },
   "Makouha": {
     "card": 5,
@@ -1616,7 +1733,8 @@
     "hit": 95,
     "power": 60,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Kouga"
   },
   "Mamudo": {
     "add": "instakill",
@@ -1626,7 +1744,8 @@
     "elem": "dar",
     "mod": 30,
     "rank": 4,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Mudoon"
   },
   "Mamudoon": {
     "add": "instakill",
@@ -1636,7 +1755,9 @@
     "elem": "dar",
     "mod": 50,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Demonic Decree",
+    "uplvl": 60
   },
   "Maragi": {
     "card": 5,
@@ -1646,7 +1767,8 @@
     "hit": 95,
     "power": 40,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Agilao"
   },
   "Maragidyne": {
     "card": 11,
@@ -1656,7 +1778,9 @@
     "hit": 95,
     "power": 220,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Inferno",
+    "uplvl": 60
   },
   "Maragion": {
     "card": 8,
@@ -1666,7 +1790,9 @@
     "hit": 95,
     "power": 100,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Agidyne",
+    "uplvl": 20
   },
   "Marakukaja": {
     "card": 9,
@@ -1674,7 +1800,9 @@
     "effect": "Increases party's Defense for 3 turns.",
     "elem": "sup",
     "rank": 5,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Heat Riser",
+    "uplvl": 65
   },
   "Marakunda": {
     "card": 9,
@@ -1682,7 +1810,9 @@
     "effect": "Decreases all foes' Defense for 3 turns.",
     "elem": "sup",
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Debilitate",
+    "uplvl": 65
   },
   "Maralagidyne": {
     "add": "Charm",
@@ -1704,7 +1834,8 @@
     "elem": "ail",
     "mod": 60,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Sexy Dance"
   },
   "Masquerade": {
     "cost": 24,
@@ -1725,7 +1856,9 @@
     "effect": "Increases party's Accuracy/Evasion for 3 turns.",
     "elem": "sup",
     "rank": 5,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Heat Riser",
+    "uplvl": 65
   },
   "Masukunda": {
     "card": 9,
@@ -1733,7 +1866,9 @@
     "effect": "Decreases all foes' Accuracy/Evasion for 3 turns.",
     "elem": "sup",
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Debilitate",
+    "uplvl": 65
   },
   "Matarukaja": {
     "card": 9,
@@ -1741,7 +1876,9 @@
     "effect": "Increases party's Attack for 3 turns.",
     "elem": "sup",
     "rank": 5,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Heat Riser",
+    "uplvl": 65
   },
   "Matarunda": {
     "card": 9,
@@ -1749,7 +1886,9 @@
     "effect": "Decreases all foes' Attack for 3 turns.",
     "elem": "sup",
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Debilitate",
+    "uplvl": 65
   },
   "Maximum Firepower": {
     "add": "Ignores resistances",
@@ -1772,7 +1911,8 @@
     "mod": 10,
     "power": 40,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Zionga"
   },
   "Maziodyne": {
     "add": "Shock",
@@ -1784,7 +1924,9 @@
     "mod": 10,
     "power": 220,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Thunder Reign",
+    "uplvl": 60
   },
   "Mazionga": {
     "add": "Shock",
@@ -1796,7 +1938,9 @@
     "mod": 10,
     "power": 100,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Ziodyne",
+    "uplvl": 20
   },
   "Me Patra": {
     "card": 9,
@@ -1804,7 +1948,9 @@
     "effect": "Cures Distress/Confuse/Charm/Rage/Fear for all allies.",
     "elem": "rec",
     "rank": 4,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Amrita Drop",
+    "uplvl": 20
   },
   "Media": {
     "add": "HP restore",
@@ -1814,7 +1960,8 @@
     "elem": "rec",
     "power": 50,
     "rank": 3,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Diarama"
   },
   "Mediarahan": {
     "card": 12,
@@ -1822,7 +1969,9 @@
     "effect": "Fully restores party's HP.",
     "elem": "rec",
     "rank": 7,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Salvation",
+    "uplvl": 65
   },
   "Mediarama": {
     "add": "HP restore",
@@ -1832,7 +1981,8 @@
     "elem": "rec",
     "power": 150,
     "rank": 5,
-    "target": "All allies"
+    "target": "All allies",
+    "upgrade": "Diarahan"
   },
   "Megido": {
     "card": 5,
@@ -1842,7 +1992,9 @@
     "hit": 95,
     "power": 170,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Megidola",
+    "uplvl": 30
   },
   "Megidola": {
     "card": 8,
@@ -1852,7 +2004,9 @@
     "hit": 95,
     "power": 380,
     "rank": 7,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Megidolaon",
+    "uplvl": 50
   },
   "Megidolaon": {
     "card": 12,
@@ -1881,7 +2035,8 @@
     "elem": "dar",
     "mod": 30,
     "rank": 3,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mamudo"
   },
   "Mudo Boost": {
     "card": 4,
@@ -1897,7 +2052,9 @@
     "elem": "dar",
     "mod": 50,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mamudoon",
+    "uplvl": 20
   },
   "Multi-Target Boost": {
     "card": 7,
@@ -1929,7 +2086,8 @@
     "mod": 50,
     "power": 180,
     "rank": 5,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Blade of Fury"
   },
   "Null Charm": {
     "effect": "Protects completely from being afflicted with Charm.",
@@ -1945,7 +2103,8 @@
     "card": 11,
     "effect": "Nullify Dark damage and instakills.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Dark"
   },
   "Null Distress": {
     "effect": "Protects completely from being afflicted with Distress.",
@@ -1960,7 +2119,8 @@
   "Null Elec": {
     "effect": "Nullify Electric damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Elec"
   },
   "Null Fear": {
     "effect": "Protects completely from being afflicted with Fear.",
@@ -1970,7 +2130,8 @@
   "Null Fire": {
     "effect": "Nullify Fire damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Fire"
   },
   "Null Freeze": {
     "effect": "Protects completely from being afflicted with Freeze.",
@@ -1980,13 +2141,15 @@
   "Null Ice": {
     "effect": "Nullify Ice damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Ice"
   },
   "Null Light": {
     "card": 11,
     "effect": "Nullify Light damage and instakills.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Light"
   },
   "Null Phys": {
     "effect": "Nullify physical damage.",
@@ -1996,7 +2159,8 @@
   "Null Pierce": {
     "effect": "Nullify Pierce damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Pierce"
   },
   "Null Poison": {
     "effect": "Protects completely from being afflicted with Poison.",
@@ -2016,17 +2180,20 @@
   "Null Slash": {
     "effect": "Nullify Slash damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Slash"
   },
   "Null Strike": {
     "effect": "Nullify Strike damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Strike"
   },
   "Null Wind": {
     "effect": "Nullify Wind damage.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Repel Wind"
   },
   "One-shot Kill": {
     "cost": 17,
@@ -2073,7 +2240,8 @@
     "effect": "Cures Distress/Confuse/Charm/Rage/Fear for 1 ally.",
     "elem": "rec",
     "rank": 2,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Me Patra"
   },
   "Phys Amp": {
     "effect": "Greatly strengthens physical skills by 20%.",
@@ -2111,7 +2279,9 @@
     "card": 5,
     "effect": "Automatically strengthen Pierce skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Pierce Amp",
+    "uplvl": 20
   },
   "Pierce Driver": {
     "effect": "Automatically strengthen Pierce skills by 75%. Can stack.",
@@ -2127,7 +2297,8 @@
     "elem": "ail",
     "mod": 70,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Poison Mist"
   },
   "Poison Arrow": {
     "add": "Poison",
@@ -2174,7 +2345,8 @@
     "hit": 92,
     "power": 50,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Fatal End"
   },
   "Pralaya": {
     "add": "Fear",
@@ -2208,7 +2380,8 @@
     "elem": "ail",
     "mod": 70,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Infuriate"
   },
   "Pulinpa": {
     "add": "Confuse",
@@ -2218,7 +2391,8 @@
     "elem": "ail",
     "mod": 60,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Tentarafoo"
   },
   "Rage Boost": {
     "effect": "Increase chances of inflicting Rage by 50%.",
@@ -2236,7 +2410,9 @@
     "effect": "Increases 1 ally's Defense for 3 turns.",
     "elem": "sup",
     "rank": 1,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Marakukaja",
+    "uplvl": 20
   },
   "Rakunda": {
     "card": 3,
@@ -2244,7 +2420,9 @@
     "effect": "Decreases 1 foe's Defense for 3 turns.",
     "elem": "sup",
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Marakunda",
+    "uplvl": 20
   },
   "Rebellion": {
     "card": 3,
@@ -2252,7 +2430,8 @@
     "effect": "Increases 1 ally's critical rate for 3 turns.",
     "elem": "sup",
     "rank": 2,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Revolution"
   },
   "Rebellion Blade": {
     "add": "More dmg to downed foe",
@@ -2271,7 +2450,9 @@
     "effect": "Revives 1 fallen ally with 50% HP.",
     "elem": "rec",
     "rank": 3,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Samarecarm",
+    "uplvl": 30
   },
   "Recarmdra": {
     "cost": 1005,
@@ -2284,13 +2465,15 @@
     "card": 4,
     "effect": "Automatically recover 2% of max HP each turn in battle.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Regenerate 2"
   },
   "Regenerate 2": {
     "card": 7,
     "effect": "Automatically recover 4% of max HP each turn in battle.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Regenerate 3"
   },
   "Regenerate 3": {
     "card": 9,
@@ -2301,50 +2484,59 @@
   "Repel Dark": {
     "effect": "Reflect Dark damage and instakills back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Dark"
   },
   "Repel Elec": {
     "effect": "Reflect Electric damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Elec"
   },
   "Repel Fire": {
     "effect": "Reflect Fire damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Fire"
   },
   "Repel Ice": {
     "effect": "Reflect Ice damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Ice"
   },
   "Repel Light": {
     "effect": "Reflect Light damage and instakills back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Light"
   },
   "Repel Pierce": {
     "card": 12,
     "effect": "Reflect Pierce damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Pierce"
   },
   "Repel Slash": {
     "card": 12,
     "effect": "Reflect Slash damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Slash"
   },
   "Repel Strike": {
     "card": 12,
     "effect": "Reflect Strike damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Strike"
   },
   "Repel Wind": {
     "effect": "Reflect Wind damage back to the foe.",
     "elem": "pas",
-    "rank": 7
+    "rank": 7,
+    "upgrade": "Drain Wind"
   },
   "Resist Ailments": {
     "card": 11,
@@ -2355,62 +2547,73 @@
   "Resist Charm": {
     "effect": "Decrease chances of being afflicted with Charm.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Charm"
   },
   "Resist Confuse": {
     "effect": "Decrease chances of being afflicted with Confuse.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Confuse"
   },
   "Resist Dark": {
     "card": 8,
     "effect": "Increase resistance to Dark damage. Negates Dark weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Dark"
   },
   "Resist Distress": {
     "effect": "Decrease chances of being afflicted with Distress.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Distress"
   },
   "Resist Dizzy": {
     "effect": "Decrease chances of being afflicted with Dizzy.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Dizzy"
   },
   "Resist Elec": {
     "card": 8,
     "effect": "Increase resistance to Electric damage. Negates Electric weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Elec"
   },
   "Resist Fear": {
     "effect": "Decrease chances of being afflicted with Fear.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Fear"
   },
   "Resist Fire": {
     "card": 8,
     "effect": "Increase resistance to Fire damage. Negates Fire weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Fire"
   },
   "Resist Freeze": {
     "effect": "Decrease chances of being afflicted with Freeze.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Freeze"
   },
   "Resist Ice": {
     "card": 8,
     "effect": "Increase resistance to Ice damage. Negates Ice weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Ice"
   },
   "Resist Light": {
     "card": 8,
     "effect": "Increase resistance to Light damage. Negates Light weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Light"
   },
   "Resist Phys": {
     "effect": "Increase resistance to physical damage. Negates physical weaknesses.",
@@ -2421,40 +2624,47 @@
     "card": 8,
     "effect": "Increase resistance to Pierce damage. Negates Pierce weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Pierce"
   },
   "Resist Poison": {
     "effect": "Decrease chances of being afflicted with Poison.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Poison"
   },
   "Resist Rage": {
     "effect": "Decrease chances of being afflicted with Rage.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Rage"
   },
   "Resist Shock": {
     "effect": "Decrease chances of being afflicted with Shock.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Null Shock"
   },
   "Resist Slash": {
     "card": 8,
     "effect": "Increase resistance to Slash damage. Negates Slash weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Slash"
   },
   "Resist Strike": {
     "card": 8,
     "effect": "Increase resistance to Strike damage. Negates Strike weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Strike"
   },
   "Resist Wind": {
     "card": 8,
     "effect": "Increase resistance to Wind damage. Negates Wind weakness.",
     "elem": "pas",
-    "rank": 5
+    "rank": 5,
+    "upgrade": "Null Wind"
   },
   "Revelation": {
     "cost": 2001,
@@ -2532,7 +2742,9 @@
   "Shift Boost": {
     "effect": "Attack up by 10% until end of turn when on the receiving end of a Shift.",
     "elem": "pas",
-    "rank": 4
+    "rank": 4,
+    "upgrade": "Shift Amp",
+    "uplvl": 30
   },
   "Shining Arrows": {
     "cost": 1024,
@@ -2579,7 +2791,8 @@
     "hit": 95,
     "power": 45,
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Holy Arrow"
   },
   "Single-Target Boost": {
     "card": 7,
@@ -2604,7 +2817,9 @@
     "card": 5,
     "effect": "Automatically strengthen Slash skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Slash Amp",
+    "uplvl": 20
   },
   "Slash Driver": {
     "effect": "Automatically strengthen Slash skills by 75%. Can stack.",
@@ -2622,12 +2837,15 @@
     "mod": 35,
     "power": 70,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Assault Dive"
   },
   "Soul Chain": {
     "effect": "Recover 5 SP when on the receiving end of a Shift.",
     "elem": "pas",
-    "rank": 6
+    "rank": 6,
+    "upgrade": "Soul Link",
+    "uplvl": 30
   },
   "Soul Link": {
     "effect": "Recover 8 SP when on the receiving end of a Shift.",
@@ -2690,7 +2908,9 @@
     "card": 5,
     "effect": "Automatically strengthen Strike skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Strike Amp",
+    "uplvl": 20
   },
   "Strike Driver": {
     "effect": "Automatically strengthen Strike skills by 75%. Can stack.",
@@ -2704,7 +2924,9 @@
     "effect": "Increases 1 ally's Accuracy/Evasion for 3 turns.",
     "elem": "sup",
     "rank": 1,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Masukukaja",
+    "uplvl": 20
   },
   "Sukunda": {
     "card": 3,
@@ -2712,7 +2934,9 @@
     "effect": "Decreases 1 foe's Accuracy/Evasion for 3 turns.",
     "elem": "sup",
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Masukunda",
+    "uplvl": 20
   },
   "Survival Trick": {
     "card": 9,
@@ -2723,12 +2947,14 @@
   "Survive Dark": {
     "effect": "Medium chance to survive 1 Dark instakill attack with 1 HP remaining.",
     "elem": "pas",
-    "rank": 4
+    "rank": 4,
+    "upgrade": "Endure Dark"
   },
   "Survive Light": {
     "effect": "Medium chance to survive 1 Light instakill attack with 1 HP remaining.",
     "elem": "pas",
-    "rank": 4
+    "rank": 4,
+    "upgrade": "Endure Light"
   },
   "Swift Strike": {
     "card": 4,
@@ -2741,7 +2967,8 @@
     "min": 1,
     "power": 60,
     "rank": 4,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Herculean Strike"
   },
   "Sylphid Aura": {
     "cost": 1024,
@@ -2763,7 +2990,9 @@
     "effect": "Increases 1 ally's Attack for 3 turns.",
     "elem": "sup",
     "rank": 1,
-    "target": "1 ally"
+    "target": "1 ally",
+    "upgrade": "Matarukaja",
+    "uplvl": 20
   },
   "Tarunda": {
     "card": 3,
@@ -2771,7 +3000,9 @@
     "effect": "Decreases 1 foe's Attack for 3 turns.",
     "elem": "sup",
     "rank": 1,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Matarunda",
+    "uplvl": 20
   },
   "Tempest Slash": {
     "card": 10,
@@ -2784,7 +3015,9 @@
     "min": 1,
     "power": 50,
     "rank": 7,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Brave Blade",
+    "uplvl": 50
   },
   "Tentarafoo": {
     "add": "Confuse",
@@ -2826,7 +3059,8 @@
     "min": 2,
     "power": 30,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Cruel Attack"
   },
   "Tranquility": {
     "cost": 2001,
@@ -2861,7 +3095,8 @@
     "hit": 90,
     "power": 85,
     "rank": 3,
-    "target": "All foes"
+    "target": "All foes",
+    "upgrade": "Neuro Slash"
   },
   "Vacuum Wave": {
     "cost": 1044,
@@ -2894,7 +3129,9 @@
     "hit": 95,
     "power": 400,
     "rank": 7,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Primal Force",
+    "uplvl": 50
   },
   "Virus Breath": {
     "add": "Poison",
@@ -2965,7 +3202,9 @@
     "card": 5,
     "effect": "Automatically strengthen Wind skills by 25%.",
     "elem": "pas",
-    "rank": 3
+    "rank": 3,
+    "upgrade": "Wind Amp",
+    "uplvl": 20
   },
   "Wind Break": {
     "card": 4,
@@ -2991,7 +3230,8 @@
     "hit": 88,
     "power": 100,
     "rank": 3,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Getsu-ei"
   },
   "Zio": {
     "add": "Shock",
@@ -3003,7 +3243,8 @@
     "mod": 15,
     "power": 40,
     "rank": 2,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mazio"
   },
   "Ziodyne": {
     "add": "Shock",
@@ -3015,7 +3256,9 @@
     "mod": 15,
     "power": 220,
     "rank": 6,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Maziodyne",
+    "uplvl": 20
   },
   "Zionga": {
     "add": "Shock",
@@ -3027,6 +3270,7 @@
     "mod": 15,
     "power": 100,
     "rank": 4,
-    "target": "1 foe"
+    "target": "1 foe",
+    "upgrade": "Mazionga"
   }
 }
