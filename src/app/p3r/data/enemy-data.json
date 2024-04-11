@@ -18,7 +18,7 @@
     "lvl": 36,
     "race": "Magician",
     "resists": "---d--wn--",
-    "skills": ["Strike Attack", "God's Hand", "Agilao", "Maragion"],
+    "skills": ["Strike Attack", "Agi", "Agilao", "Maragion", "God's Hand"],
     "stats": [364, 50, 27, 21, 22, 24, 21]
   },
   "Amenti Raven": {
@@ -40,7 +40,7 @@
     "lvl": 64,
     "race": "Lovers P",
     "resists": "---dw--r_-",
-    "skills": ["Strike Attack", "Fire Amp", "Light Amp", "Poison Boost", "Charm Boost", "Null Dizzy", "Null Freeze", "Null Shock"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Kougaon", "Makougaon", "Poison Mist", "Marakunda", "Sexy Dance", "Life Drain", "Null Dizzy", "Null Freeze", "Null Shock", "Fire Amp", "Light Amp", "Poison Boost", "Charm Boost"],
     "stats": [2075, 999, 38, 55, 39, 42, 37]
   },
   "Ancient Castle": {
@@ -82,7 +82,7 @@
     "lvl": 74,
     "race": "Hermit P",
     "resists": "-s--w--n_-",
-    "skills": ["Strike Attack", "Null Dizzy", "Light Boost", "Drain Ability"],
+    "skills": ["Strike Attack", "Kougaon", "Makougaon", "Tetrakarn", "Life Drain", "Spirit Drain", "Null Dizzy", "Light Boost", "Drain Ability"],
     "stats": [2349, 999, 46, 46, 46, 46, 42]
   },
   "Arcane Turret": {
@@ -103,7 +103,7 @@
     "lvl": 29,
     "race": "Hermit P",
     "resists": "----n-n__-",
-    "skills": ["Strike Attack", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agilao", "Maragion", "Bufula", "Mabufula", "Garula", "Magarula", "Zionga", "Mazionga", "Tarukaja", "Heat Riser", "Concentrate", "Null Dizzy", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp"],
     "stats": [1200, 999, 12, 30, 24, 22, 17]
   },
   "Ardent Checkmate": {
@@ -190,7 +190,7 @@
     "lvl": 69,
     "race": "Magician P",
     "resists": "---dddw_d-",
-    "skills": ["Strike Attack", "Magic Mastery", "Freeze Boost", "Shock Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Ziodyne", "Maziodyne", "Kougaon", "Makougaon", "Eigaon", "Maeigaon", "Concentrate", "Resist Dizzy", "Freeze Boost", "Shock Boost", "Magic Mastery"],
     "stats": [2140, 999, 39, 55, 46, 43, 40]
   },
   "Black Raven": {
@@ -211,7 +211,7 @@
     "lvl": 64,
     "race": "Strength P",
     "resists": "---rw--__-",
-    "skills": ["Slash Attack", "Slash Boost", "Fire Boost", "Resist Dizzy"],
+    "skills": ["Slash Attack", "Agidyne", "Maragidyne", "Tempest Slash", "Matarukaja", "Revolution", "Resist Dizzy", "Slash Boost", "Fire Boost"],
     "stats": [1490, 999, 43, 53, 37, 37, 37]
   },
   "Bloody Maria": {
@@ -222,7 +222,7 @@
     "lvl": 37,
     "race": "Priestess P",
     "resists": "--wnnnnnn-",
-    "skills": ["Strike Attack", "Dark Boost", "Null Dizzy", "Fear Boost", "Ailment Boost"],
+    "skills": ["Strike Attack", "Eigaon", "Maeiga", "Evil Touch", "Evil Smile", "Gigantic Fist", "Null Dizzy", "Dark Boost", "Fear Boost", "Ailment Boost"],
     "stats": [1530, 999, 21, 28, 28, 22, 44]
   },
   "Blue Sigil": {
@@ -276,7 +276,7 @@
     "lvl": 40,
     "race": "Fortune P",
     "resists": "n----w-_n-",
-    "skills": ["Strike Attack", "Fire Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Maragion", "Mamudoon", "Megidola", "Null Dizzy", "Fire Boost"],
     "stats": [1492, 999, 37, 40, 38, 28, 2]
   },
   "Carnal Snake": {
@@ -320,7 +320,7 @@
     "lvl": 55,
     "race": "Empress P",
     "resists": "-------nn-",
-    "skills": ["Strike Attack", "Magic Ability", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Bufudyne", "Garudyne", "Ziodyne", "Kougaon", "Eigaon", "Matarukaja", "Marakunda", "Null Dizzy", "Magic Ability"],
     "stats": [1690, 999, 31, 47, 37, 35, 27]
   },
   "Chaos Cyclops B": {
@@ -331,7 +331,7 @@
     "lvl": 38,
     "race": "Hanged P",
     "resists": "--n----n_-",
-    "skills": ["Strike Attack", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
+    "skills": ["Strike Attack", "Maragion", "Mabufula", "Magarula", "Mazionga", "Tarukaja", "Rakukaja", "Sukukaja", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
     "stats": [1201, 999, 24, 35, 24, 24, 19]
   },
   "Chaos Panzer": {
@@ -342,7 +342,7 @@
     "lvl": 60,
     "race": "Chariot P",
     "resists": "---n--nr_-",
-    "skills": ["Pierce Attack", "Cruel Attack", "Primal Force", "Poison Arrow", "Charge", "Matarukaja", "Null Dizzy", "Pierce Boost"],
+    "skills": ["Pierce Attack", "Vile Assault", "Cruel Attack", "Primal Force", "Poison Arrow", "Matarukaja", "Charge", "Myriad Arrows", "Null Dizzy", "Pierce Boost"],
     "stats": [2003, 999, 51, 34, 43, 41, 31]
   },
   "Chariot": {
@@ -354,7 +354,7 @@
     "lvl": 34,
     "race": "Chariot B",
     "resists": "ttt----__-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Assault Dive", "Herculean Strike", "Unite", "Restore", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [2100, 999, 15, 5, 17, 10, 15]
   },
   "Chidori": {
@@ -365,7 +365,7 @@
     "lvl": 63,
     "race": "Hanged B",
     "resists": "---d__-__-",
-    "skills": ["Slash Attack", "Null Dizzy", "Fire Boost", "Fire Amp", "Slash Boost", "Slash Amp", "Confuse Boost", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Maragidyne", "Neuro Slash", "Spring of Life", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Fire Boost", "Fire Amp", "Confuse Boost"],
     "stats": [2800, 999, 53, 65, 42, 46, 30]
   },
   "Clairvoyant Relic": {
@@ -376,7 +376,7 @@
     "lvl": 17,
     "race": "Empress P",
     "resists": "-------nn-",
-    "skills": ["Pierce Attack", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Agilao", "Bufula", "Garula", "Zionga", "Marakunda", "Null Dizzy", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
     "stats": [1090, 999, 10, 20, 16, 12, 9]
   },
   "Comeback Castle": {
@@ -387,7 +387,7 @@
     "lvl": 70,
     "race": "Emperor P",
     "resists": "r---SS-__-",
-    "skills": ["Pierce Attack", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Poison Mist", "Matarukaja", "Marakukaja", "Masukukaja", "Matarunda", "Marakunda", "Masukunda", "Null Dizzy"],
     "stats": [2400, 999, 42, 44, 66, 37, 42]
   },
   "Constancy Relic": {
@@ -409,7 +409,7 @@
     "lvl": 33,
     "race": "Lovers P",
     "resists": "nn-----nn-",
-    "skills": ["Pierce Attack", "Wind Boost", "Ice Boost", "Null Dizzy", "Freeze Boost"],
+    "skills": ["Pierce Attack", "Bufula", "Mabufula", "Garula", "Magarula", "Diarama", "Tarukaja", "Rebellion", "Null Dizzy", "Ice Boost", "Wind Boost", "Freeze Boost"],
     "stats": [1392, 999, 19, 27, 21, 24, 24]
   },
   "Conviction Sword": {
@@ -482,7 +482,7 @@
     "lvl": 33,
     "race": "Magician P",
     "resists": "-------__-",
-    "skills": ["Strike Attack", "Null Dizzy", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost", "Almighty Boost"],
+    "skills": ["Strike Attack", "Agilao", "Maragion", "Bufula", "Mabufula", "Garula", "Magarula", "Zionga", "Mazionga", "Megido", "Marakunda", "Concentrate", "Null Dizzy", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost", "Almighty Boost"],
     "stats": [1685, 999, 18, 30, 26, 25, 5]
   },
   "Crazy Twins": {
@@ -504,7 +504,7 @@
     "lvl": 50,
     "race": "Hierophant P",
     "resists": "w-sn--nS_-",
-    "skills": ["Strike Attack", "Fire Boost", "Wind Boost", "Pierce Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Maragion", "Garudyne", "Magarula", "Torrent Shot", "Myriad Arrows", "Tarukaja", "Sukukaja", "Resist Dizzy", "Pierce Boost", "Fire Boost", "Wind Boost"],
     "stats": [1722, 999, 36, 35, 31, 31, 31]
   },
   "Creation Relic": {
@@ -525,7 +525,7 @@
     "lvl": 54,
     "race": "Justice P",
     "resists": "n------wn-",
-    "skills": ["Slash Attack", "Slash Boost", "Null Dizzy"],
+    "skills": ["Slash Attack", "Fatal End", "Tempest Slash", "Matarukaja", "Charge", "Neuro Slash", "Null Dizzy", "Slash Boost"],
     "stats": [1578, 999, 37, 32, 38, 35, 34]
   },
   "Crying Table": {
@@ -546,7 +546,7 @@
     "lvl": 77,
     "race": "Hierophant P",
     "resists": "----sswdd-",
-    "skills": ["Slash Attack", "Null Dizzy", "Hama Boost", "Mudo Boost", "Almighty Boost", "Null Shock", "Null Freeze"],
+    "skills": ["Slash Attack", "Hamaon", "Mahamaon", "Kougaon", "Makougaon", "Mudoon", "Mamudoon", "Eigaon", "Maeigaon", "Megidola", "Megidolaon", "Marakunda", "Null Dizzy", "Null Freeze", "Null Shock", "Hama Boost", "Mudo Boost", "Almighty Boost"],
     "stats": [2473, 999, 46, 70, 45, 53, 99]
   },
   "Cultist of the Storm": {
@@ -556,7 +556,7 @@
     "lvl": 58,
     "race": "Hierophant P",
     "resists": "-n-s---_w-",
-    "skills": ["Slash Attack", "Garudyne", "Magarudyne", "Deathbound", "Concentrate", "Sukukaja", "Null Dizzy", "Wind Boost", "Wind Amp"],
+    "skills": ["Slash Attack", "Garudyne", "Magarudyne", "Deathbound", "Sukukaja", "Masukunda", "Concentrate", "Null Dizzy", "Wind Boost", "Wind Amp"],
     "stats": [1950, 999, 39, 55, 42, 38, 30]
   },
   "Curse Dice": {
@@ -587,7 +587,7 @@
     "lvl": 50,
     "race": "Chariot P",
     "resists": "----n--S_-",
-    "skills": ["Strike Attack", "Slash Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Tempest Slash", "Blade of Fury", "Deathbound", "Herculean Strike", "Heat Riser", "Null Dizzy", "Slash Amp"],
     "stats": [2066, 999, 38, 27, 37, 34, 15]
   },
   "Dancing Hand": {
@@ -640,7 +640,7 @@
     "lvl": 65,
     "race": "Strength P",
     "resists": "----d-d_r-",
-    "skills": ["Slash Attack", "Slash Boost", "Dark Amp", "Fear Boost", "Null Dizzy", "Resist Shock", "Resist Freeze"],
+    "skills": ["Slash Attack", "Eigaon", "Evil Touch", "Ghastly Wail", "Vorpal Blade", "Charge", "Evil Smile", "Null Dizzy", "Resist Freeze", "Resist Shock", "Slash Boost", "Dark Amp", "Fear Boost"],
     "stats": [1722, 999, 49, 34, 43, 34, 66]
   },
   "Death Castle": {
@@ -662,7 +662,7 @@
     "lvl": 52,
     "race": "Emperor P",
     "resists": "s-n-w--_r-",
-    "skills": ["Pierce Attack", "Dark Boost", "Fire Boost", "Resist Dizzy"],
+    "skills": ["Pierce Attack", "Agidyne", "Maragion", "Mudoon", "Mamudo", "Eigaon", "Maeiga", "Resist Dizzy", "Fire Boost", "Dark Boost"],
     "stats": [1858, 999, 34, 43, 33, 29, 25]
   },
   "Death Dice": {
@@ -705,7 +705,7 @@
     "lvl": 52,
     "race": "Emperor P",
     "resists": "--nn--w__-",
-    "skills": ["Pierce Attack", "Elec Amp", "Dark Amp", "Resist Dizzy", "Null Shock"],
+    "skills": ["Pierce Attack", "Ziodyne", "Mazionga", "Eigaon", "Maeiga", "Matarukaja", "Marakunda", "Concentrate", "Resist Dizzy", "Null Shock", "Elec Amp", "Dark Amp"],
     "stats": [1835, 999, 27, 37, 35, 36, 34]
   },
   "Dependent Partner": {
@@ -715,7 +715,7 @@
     "lvl": 33,
     "race": "Lovers P",
     "resists": "--wnnnnnn-",
-    "skills": ["Pierce Attack", "Pierce Boost", "Charm Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Holy Arrow", "Torrent Shot", "Arrow Rain", "Diarama", "Rakukaja", "Makarakarn", "Null Dizzy", "Pierce Boost", "Charm Boost"],
     "stats": [1488, 999, 24, 19, 24, 24, 27]
   },
   "Desirous Maya": {
@@ -748,7 +748,7 @@
     "lvl": 32,
     "race": "Hanged P",
     "resists": "----__-__-",
-    "skills": ["Strike Attack", "Herculean Strike", "Null Dizzy", "Strike Boost", "Strike Amp"],
+    "skills": ["Strike Attack", "Herculean Strike", "Tarukaja", "Charge", "Rebellion", "Null Dizzy", "Strike Boost", "Strike Amp"],
     "stats": [1454, 999, 24, 11, 25, 19, 5]
   },
   "Devious Maya": {
@@ -770,7 +770,7 @@
     "lvl": 62,
     "race": "Hanged P",
     "resists": "tttttttTT-",
-    "skills": ["Strike Attack", "Dark Boost", "Sharp Student"],
+    "skills": ["Strike Attack", "Eigaon", "Maeiga", "Tetrakarn", "Makarakarn", "Dark Boost", "Sharp Student"],
     "stats": [1000, 999, 34, 48, 99, 40, 29]
   },
   "Devoted Cupid": {
@@ -781,7 +781,7 @@
     "lvl": 26,
     "race": "Lovers",
     "resists": "--sww-n-n-",
-    "skills": ["Pierce Attack", "Diarama", "Holy Arrow", "Pulinpa", "Foul Breath"],
+    "skills": ["Pierce Attack", "Eiga", "Pulinpa", "Foul Breath", "Holy Arrow", "Diarama"],
     "stats": [293, 40, 14, 20, 16, 15, 20]
   },
   "Dignified Checkmate": {
@@ -802,7 +802,7 @@
     "lvl": 14,
     "race": "Fortune P",
     "resists": "---s-v-__-",
-    "skills": ["Strike Attack", "Distress Boost", "Strike Boost", "Eerie Sound", "Revolution"],
+    "skills": ["Strike Attack", "Bewilder", "Eerie Sound", "Bash", "Revolution", "Strike Boost", "Distress Boost"],
     "stats": [690, 999, 18, 10, 12, 12, 2]
   },
   "Divine Mother B": {
@@ -835,7 +835,7 @@
     "lvl": 48,
     "race": "Hierophant P",
     "resists": "--n--w-n_-",
-    "skills": ["Strike Attack", "Light Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Kouga", "Makouga", "Divine Judgment", "Tetrakarn", "Makarakarn", "Null Dizzy", "Light Amp"],
     "stats": [1408, 999, 23, 38, 39, 29, 30]
   },
   "Doom Sword": {
@@ -890,7 +890,7 @@
     "lvl": 28,
     "race": "Empress P",
     "resists": "---w--s_n-",
-    "skills": ["Strike Attack", "Dark Boost", "Poison Boost"],
+    "skills": ["Strike Attack", "Eiga", "Maeiha", "Maeiga", "Demonic Decree", "Poisma", "Marakunda", "Poison Mist", "Dark Boost", "Poison Boost"],
     "stats": [1130, 999, 15, 25, 20, 16, 21]
   },
   "Elizabeth A": {
@@ -912,7 +912,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "-n-dv--nn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Fire Boost", "Slash Boost"],
+    "skills": ["Slash Attack", "Inferno", "Brave Blade", "Tarukaja", "Heat Riser", "Debilitate", "Concentrate", "Strike Attack", "Pierce Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Fire Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth C": {
@@ -923,7 +923,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "--nvd--nn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Ice Boost", "Freeze Boost"],
+    "skills": ["Slash Attack", "Diamond Dust", "Rakukaja", "Heat Riser", "Debilitate", "Concentrate", "Strike Attack", "Pierce Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Ice Boost", "Freeze Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth D": {
@@ -934,7 +934,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "n--__dvnn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Elec Boost", "Strike Boost", "Shock Boost"],
+    "skills": ["Slash Attack", "Thunder Reign", "God's Hand", "Tarukaja", "Heat Riser", "Tarunda", "Debilitate", "Charge", "Concentrate", "Strike Attack", "Pierce Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Strike Boost", "Elec Boost", "Shock Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth E": {
@@ -945,7 +945,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "--n__vdnn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Wind Boost", "Pierce Boost"],
+    "skills": ["Slash Attack", "Panta Rhei", "Primal Force", "Sukukaja", "Heat Riser", "Debilitate", "Charge", "Strike Attack", "Pierce Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Pierce Boost", "Wind Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth F": {
@@ -956,7 +956,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "---nnnndV-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Light Boost", "Hama Boost"],
+    "skills": ["Slash Attack", "Kougaon", "Divine Judgment", "Heat Riser", "Sukunda", "Debilitate", "Strike Attack", "Pierce Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Light Boost", "Hama Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth G": {
@@ -967,7 +967,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "---nnnnVd-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Dark Boost", "Mudo Boost"],
+    "skills": ["Slash Attack", "Die For Me!", "Eigaon", "Heat Riser", "Debilitate", "Strike Attack", "Pierce Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Dark Boost", "Mudo Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth H": {
@@ -978,7 +978,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "sssSSssnn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock", "Ailment Boost", "Charm Boost", "Confuse Boost", "Fear Boost"],
+    "skills": ["Slash Attack", "Poison Mist", "Sexy Dance", "Eerie Sound", "Tentarafoo", "Evil Smile", "Infuriate", "Virus Breath", "Rakunda", "Debilitate", "Concentrate", "Null Dizzy", "Null Freeze", "Null Shock", "Charm Boost", "Confuse Boost", "Fear Boost", "Ailment Boost"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth I": {
@@ -989,7 +989,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "nnnnnnnnn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Megidolaon", "Heat Riser", "Concentrate", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Elizabeth J": {
@@ -1000,7 +1000,7 @@
     "lvl": 99,
     "race": "Fool B",
     "resists": "nnnnnnnnn-",
-    "skills": ["Slash Attack", "Null Dizzy", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Diarahan", "Heat Riser", "Charge", "Concentrate", "Megidolaon", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [20000, 999, 99, 99, 99, 99, 99]
   },
   "Emperor A": {
@@ -1012,7 +1012,7 @@
     "lvl": 18,
     "race": "Emperor B",
     "resists": "Tnnnnwnnn-",
-    "skills": ["Slash Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Tempest Slash", "Getsu-ei", "Paradigm Shift", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 10, 5, 15, 3, 3]
   },
   "Emperor B": {
@@ -1023,7 +1023,7 @@
     "lvl": 18,
     "race": "Emperor B",
     "resists": "Tnnnwnnnn-",
-    "skills": ["Slash Attack", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Getsu-ei", "Zan-ei", "Paradigm Shift", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 1, 1, 1, 1, 1]
   },
   "Emperor Beetle": {
@@ -1045,7 +1045,7 @@
     "lvl": 51,
     "race": "Emperor P",
     "resists": "nn-w---__-",
-    "skills": ["Strike Attack", "Slash Boost", "Strike Boost", "Dizzy Boost", "Ailment Boost", "Apt Pupil", "Null Dizzy"],
+    "skills": ["Strike Attack", "Deathbound", "Gigantic Fist", "Tarukaja", "Revolution", "Null Dizzy", "Slash Boost", "Strike Boost", "Dizzy Boost", "Ailment Boost", "Apt Pupil"],
     "stats": [1595, 999, 40, 32, 36, 30, 77]
   },
   "Emperor C": {
@@ -1056,7 +1056,7 @@
     "lvl": 18,
     "race": "Emperor B",
     "resists": "Tnnwnnnnn-",
-    "skills": ["Slash Attack", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Tempest Slash", "Getsu-ei", "Paradigm Shift", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 1, 1, 1, 1, 1]
   },
   "Emperor D": {
@@ -1067,7 +1067,7 @@
     "lvl": 18,
     "race": "Emperor B",
     "resists": "Tnnnnnwnn-",
-    "skills": ["Slash Attack", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Getsu-ei", "Paradigm Shift", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 1, 1, 1, 1, 1]
   },
   "Empress A": {
@@ -1079,7 +1079,7 @@
     "lvl": 18,
     "race": "Empress B",
     "resists": "nnwnnnnnn-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agilao", "Zionga", "Bewilder", "Fire Break", "Paradigm Shift", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 5, 18, 15, 3, 3]
   },
   "Empress B": {
@@ -1090,7 +1090,7 @@
     "lvl": 18,
     "race": "Empress B",
     "resists": "nwnnnnnnn-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock"],
+    "skills": ["Strike Attack", "Agilao", "Bufula", "Garula", "Kouga", "Bewilder", "Tarukaja", "Fire Break", "Paradigm Shift", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 1, 1, 1, 1, 1]
   },
   "Empress C": {
@@ -1101,7 +1101,7 @@
     "lvl": 18,
     "race": "Empress B",
     "resists": "wnnnnnnnn-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock"],
+    "skills": ["Strike Attack", "Agilao", "Eiga", "Bewilder", "Fire Break", "Paradigm Shift", "Null Freeze", "Null Shock"],
     "stats": [700, 999, 1, 1, 1, 1, 1]
   },
   "Enslaved Beast": {
@@ -1133,7 +1133,7 @@
     "lvl": 17,
     "race": "Lovers P",
     "resists": "-----w-__-",
-    "skills": ["Pierce Attack", "Holy Arrow", "Dia", "Provoke", "Pulinpa"],
+    "skills": ["Pierce Attack", "Garula", "Pulinpa", "Provoke", "Holy Arrow", "Dia", "Tarukaja", "Sukukaja"],
     "stats": [240, 999, 6, 9, 10, 7, 8]
   },
   "Eternal Eagle": {
@@ -1155,7 +1155,7 @@
     "lvl": 37,
     "race": "Empress P",
     "resists": "nnw----__-",
-    "skills": ["Slash Attack", "Wind Boost", "Light Boost"],
+    "skills": ["Slash Attack", "Garula", "Magarula", "Kouga", "Makouga", "Blade of Fury", "Heat Riser", "Masukunda", "Wind Boost", "Light Boost"],
     "stats": [1198, 999, 20, 24, 21, 36, 24]
   },
   "Eternal Sand B": {
@@ -1166,7 +1166,7 @@
     "lvl": 60,
     "race": "Fortune P",
     "resists": "ww--rr-_n-",
-    "skills": ["Slash Attack", "Ice Boost", "Elec Boost", "Poison Boost", "Freeze Boost", "Shock Boost", "Ailment Boost"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "Ziodyne", "Maziodyne", "Poison Mist", "Diarahan", "Life Drain", "Ice Boost", "Elec Boost", "Poison Boost", "Freeze Boost", "Shock Boost", "Ailment Boost"],
     "stats": [2000, 999, 30, 30, 33, 40, 55]
   },
   "Ethereal Hand": {
@@ -1177,7 +1177,7 @@
     "lvl": 49,
     "race": "Fool",
     "resists": "-----w----",
-    "skills": ["Strike Attack", "Sukukaja", "Makarakarn"],
+    "skills": ["Strike Attack", "Sukukaja", "Tetrakarn", "Makarakarn"],
     "stats": [620, 120, 1, 1, 30, 99, 99]
   },
   "Executioner's Crown": {
@@ -1187,7 +1187,7 @@
     "lvl": 36,
     "race": "Priestess P",
     "resists": "---w--dn_-",
-    "skills": ["Strike Attack", "Tarukaja", "Rakukaja", "Sukukaja", "Wind Boost", "Ghastly Wail"],
+    "skills": ["Strike Attack", "Garula", "Magarula", "Ghastly Wail", "Foul Breath", "Stagnant Air", "Tarukaja", "Rakukaja", "Sukukaja", "Wind Boost"],
     "stats": [1045, 999, 18, 27, 24, 24, 21]
   },
   "Executive Greatsword": {
@@ -1197,7 +1197,7 @@
     "lvl": 58,
     "race": "Justice P",
     "resists": "---w-d-r_-",
-    "skills": ["Slash Attack", "Elec Boost", "Shock Boost", "Ailment Boost", "Resist Dizzy"],
+    "skills": ["Slash Attack", "Ziodyne", "Maziodyne", "Divine Judgment", "Marakukaja", "Resist Dizzy", "Elec Boost", "Shock Boost", "Ailment Boost"],
     "stats": [1119, 999, 45, 31, 41, 39, 71]
   },
   "Fanatic Tower B": {
@@ -1208,7 +1208,7 @@
     "lvl": 71,
     "race": "Hierophant P",
     "resists": "--w--dn__-",
-    "skills": ["Strike Attack", "Elec Boost", "Elec Amp", "Shock Boost", "Ailment Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Ziodyne", "Maziodyne", "Gigantic Fist", "Heat Wave", "Heat Riser", "Concentrate", "Null Dizzy", "Elec Boost", "Elec Amp", "Shock Boost", "Ailment Boost"],
     "stats": [2345, 999, 44, 49, 31, 40, 99]
   },
   "Fate Seeker": {
@@ -1230,7 +1230,7 @@
     "lvl": 63,
     "race": "Strength P",
     "resists": "s-----s_n-",
-    "skills": ["Strike Attack", "Strike Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Assault Dive", "Gigantic Fist", "Herculean Strike", "Heat Wave", "Null Dizzy", "Strike Boost"],
     "stats": [1596, 999, 55, 30, 39, 42, 28]
   },
   "Fierce Cyclops": {
@@ -1262,7 +1262,7 @@
     "lvl": 33,
     "race": "Magician P",
     "resists": "----n--_w-",
-    "skills": ["Strike Attack", "Ice Boost", "Tarukaja"],
+    "skills": ["Strike Attack", "Bufula", "Tarukaja", "Rakukaja", "Matarunda", "Marakunda", "Ice Boost"],
     "stats": [900, 999, 15, 26, 22, 25, 26]
   },
   "Fleetfooted Cavalry": {
@@ -1273,7 +1273,7 @@
     "lvl": 23,
     "race": "Emperor P",
     "resists": "------dnn-",
-    "skills": ["Pierce Attack", "Myriad Arrows", "Null Dizzy", "Pierce Amp"],
+    "skills": ["Pierce Attack", "Bash", "Assault Dive", "Single Shot", "Torrent Shot", "Arrow Rain", "Myriad Arrows", "Tarukaja", "Masukunda", "Null Dizzy", "Pierce Amp"],
     "stats": [1400, 999, 25, 18, 24, 17, 8]
   },
   "Flowing Sand": {
@@ -1295,7 +1295,7 @@
     "lvl": 21,
     "race": "Fortune P",
     "resists": "-w--ss-S_-",
-    "skills": ["Slash Attack", "Wind Boost", "Confuse Boost"],
+    "skills": ["Slash Attack", "Garula", "Magaru", "Power Slash", "Vacuum Slash", "Sukukaja", "Neuro Slash", "Wind Boost", "Confuse Boost"],
     "stats": [820, 999, 18, 12, 14, 15, 13]
   },
   "Foot Soldier": {
@@ -1305,7 +1305,7 @@
     "lvl": 68,
     "race": "Magician P",
     "resists": "-srwn-sd_-",
-    "skills": ["Strike Attack"],
+    "skills": ["Strike Attack", "Brave Blade", "God's Hand", "Primal Force"],
     "stats": [740, 999, 39, 31, 42, 39, 45]
   },
   "Fortune": {
@@ -1317,7 +1317,7 @@
     "lvl": 48,
     "race": "Fortune B",
     "resists": "-w-ddwdd_-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Garudyne", "Magarudyne", "Wheel of Fortune", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [2500, 999, 5, 20, 10, 15, 50]
   },
   "Frivolous Maya": {
@@ -1350,7 +1350,7 @@
     "lvl": 79,
     "race": "Hanged P",
     "resists": "sr--dr-_r-",
-    "skills": ["Strike Attack", "Null Dizzy", "Confuse Boost", "Almighty Amp", "Apt Pupil", "Null Shock", "Resist Freeze", "Ailment Boost"],
+    "skills": ["Strike Attack", "Megidolaon", "Tentarafoo", "Akasha Arts", "Primal Force", "Heat Riser", "Marakunda", "Charge", "Concentrate", "Null Dizzy", "Resist Freeze", "Null Shock", "Confuse Boost", "Ailment Boost", "Apt Pupil", "Almighty Amp"],
     "stats": [3333, 999, 85, 80, 60, 50, 75]
   },
   "Glorious Hand": {
@@ -1372,7 +1372,7 @@
     "lvl": 70,
     "race": "Magician P",
     "resists": "rr---_-nn-",
-    "skills": ["Strike Attack", "Strike Amp", "Null Dizzy", "Sharp Student", "Almighty Boost"],
+    "skills": ["Strike Attack", "Megidolaon", "God's Hand", "Akasha Arts", "Charge", "Null Dizzy", "Strike Amp", "Sharp Student", "Almighty Boost"],
     "stats": [3500, 999, 60, 55, 50, 50, 45]
   },
   "Golden Beetle": {
@@ -1416,7 +1416,7 @@
     "lvl": 45,
     "race": "Magician P",
     "resists": "-w-sn-sn_-",
-    "skills": ["Strike Attack"],
+    "skills": ["Strike Attack", "Kougaon", "Megido", "Megidola", "Matarunda", "Concentrate"],
     "stats": [1612, 999, 28, 36, 25, 28, 31]
   },
   "Grave Beetle": {
@@ -1449,7 +1449,7 @@
     "lvl": 10,
     "race": "Priestess",
     "resists": "---wn-----",
-    "skills": ["Strike Attack", "Bufu", "Sukunda"],
+    "skills": ["Strike Attack", "Bufu", "Mabufu", "Sukunda"],
     "stats": [176, 50, 5, 10, 8, 8, 6]
   },
   "Grievous Table": {
@@ -1459,7 +1459,7 @@
     "lvl": 13,
     "race": "Magician P",
     "resists": "---nw--__-",
-    "skills": ["Slash Attack", "Agi", "Poison Boost"],
+    "skills": ["Slash Attack", "Agi", "Poisma", "Pulinpa", "Foul Breath", "Poison Boost"],
     "stats": [320, 999, 6, 11, 10, 7, 14]
   },
   "Growth Relic": {
@@ -1503,7 +1503,7 @@
     "lvl": 79,
     "race": "Strength P",
     "resists": "r----rw__-",
-    "skills": ["Slash Attack", "Slash Boost", "Apt Pupil", "Divine Grace"],
+    "skills": ["Slash Attack", "Tempest Slash", "Deathbound", "Brave Blade", "Mediarama", "Matarukaja", "Marakukaja", "Heat Riser", "Marakunda", "Revolution", "Slash Boost", "Apt Pupil", "Divine Grace"],
     "stats": [2400, 999, 58, 48, 45, 50, 42]
   },
   "Hallowed Turret B": {
@@ -1514,7 +1514,7 @@
     "lvl": 80,
     "race": "Chariot P",
     "resists": "n--tT_-__-",
-    "skills": ["Pierce Attack", "Null Dizzy", "Sharp Student", "Pierce Amp"],
+    "skills": ["Pierce Attack", "Makougaon", "Maeigaon", "Heat Wave", "Akasha Arts", "Myriad Arrows", "Primal Force", "Poison Arrow", "Heat Riser", "Marakunda", "Dekaja", "Charge", "Null Dizzy", "Pierce Amp", "Sharp Student"],
     "stats": [4320, 999, 58, 55, 59, 46, 41]
   },
   "Hanged Man": {
@@ -1526,7 +1526,7 @@
     "lvl": 57,
     "race": "Hanged B",
     "resists": "-T-n__-_r-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy", "Poison Boost", "Rage Boost"],
+    "skills": ["Strike Attack", "Mudo", "Mudoon", "Maeigaon", "Megido", "Megidola", "Provoke", "Virus Breath", "Gigantic Fist", "Herculean Strike", "Heat Wave", "God's Hand", "Akasha Arts", "Heat Riser", "Marakunda", "Debilitate", "Dekaja", "Dekunda", "Charge", "Concentrate", "Revolution", "Tetrakarn", "Makarakarn", "Grim Transcendence", "Megidolaon", "Null Dizzy", "Null Freeze", "Null Shock", "Poison Boost", "Rage Boost"],
     "stats": [8000, 999, 27, 25, 23, 20, 15]
   },
   "Harmony Giant": {
@@ -1548,7 +1548,7 @@
     "lvl": 64,
     "race": "Priestess P",
     "resists": "---w-n-n_-",
-    "skills": ["Strike Attack", "Ailment Boost", "Distress Boost", "Confuse Boost", "Rage Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Ziodyne", "Maziodyne", "Kougaon", "Makougaon", "Eerie Sound", "Tentarafoo", "Provoke", "Heat Riser", "Marakunda", "Null Dizzy", "Distress Boost", "Confuse Boost", "Rage Boost", "Ailment Boost"],
     "stats": [1736, 999, 31, 54, 45, 38, 47]
   },
   "Haughty Maya": {
@@ -1570,7 +1570,7 @@
     "lvl": 55,
     "race": "Emperor P",
     "resists": "tt-t--tzn-",
-    "skills": ["Pierce Attack", "Mudoon", "Eigaon", "Maeigaon", "Marakunda", "Dark Amp", "Mudo Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Mudoon", "Mamudoon", "Eigaon", "Maeigaon", "Marakunda", "Null Dizzy", "Dark Amp", "Mudo Boost"],
     "stats": [9999, 999, 30, 60, 10, 35, 1]
   },
   "Heartless Relic": {
@@ -1580,7 +1580,7 @@
     "lvl": 42,
     "race": "Empress P",
     "resists": "-----w-SS-",
-    "skills": ["Pierce Attack", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Megido", "Megidola", "Matarukaja", "Marakukaja", "Null Dizzy"],
     "stats": [1105, 999, 25, 22, 31, 32, 24]
   },
   "Heat Balance": {
@@ -1612,7 +1612,7 @@
     "lvl": 62,
     "race": "Justice P",
     "resists": "---rrww---",
-    "skills": ["Strike Attack", "Fire Amp", "Ice Amp", "Freeze Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Matarunda", "Marakunda", "Masukunda", "Resist Dizzy", "Fire Amp", "Ice Amp", "Freeze Boost"],
     "stats": [800, 999, 40, 50, 35, 37, 28]
   },
   "Heat Overseer": {
@@ -1623,7 +1623,7 @@
     "lvl": 28,
     "race": "Justice P",
     "resists": "---ddww__-",
-    "skills": ["Strike Attack", "Fire Amp", "Ice Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agilao", "Maragi", "Bufula", "Mabufu", "Fire Break", "Ice Break", "Null Dizzy", "Fire Amp", "Ice Amp"],
     "stats": [815, 999, 10, 26, 21, 21, 15]
   },
   "Hedonistic Sinner": {
@@ -1634,7 +1634,7 @@
     "lvl": 78,
     "race": "Hanged P",
     "resists": "r-rn-d-__-",
-    "skills": ["Strike Attack", "Null Dizzy", "Elec Amp", "Shock Boost", "Fear Boost", "Ailment Boost", "Null Shock", "Slash Boost"],
+    "skills": ["Strike Attack", "Ziodyne", "Maziodyne", "Evil Touch", "Ghastly Wail", "Stagnant Air", "Brave Blade", "Vorpal Blade", "Evil Smile", "Null Dizzy", "Null Shock", "Slash Boost", "Elec Amp", "Fear Boost", "Shock Boost", "Ailment Boost"],
     "stats": [2739, 999, 57, 66, 53, 46, 88]
   },
   "Hell Knight": {
@@ -1668,7 +1668,7 @@
     "lvl": 41,
     "race": "Hermit B",
     "resists": "-----nn_n-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Zio", "Mazio", "Gigantic Fist", "Swift Strike", "Dekaja", "Tetrakarn", "Charging Complete", "Accelerated Charging", "High-Volt Current", "Mega Spark", "Giga Spark", "Tera Spark", "Initiate Charging", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [8000, 999, 55, 90, 25, 10, 30]
   },
   "Hierophant": {
@@ -1680,7 +1680,7 @@
     "lvl": 25,
     "race": "Hierophant B",
     "resists": "-------nn-",
-    "skills": ["Strike Attack", "Fear Boost", "Null Dizzy", "Insta-Heal", "Null Freeze", "Null Shock", "Apt Pupil", "Crit Rate Amp"],
+    "skills": ["Strike Attack", "Makouga", "Assault Dive", "Doomsday Doctrine", "Null Dizzy", "Null Freeze", "Null Shock", "Fear Boost", "Apt Pupil", "Insta-Heal", "Crit Rate Amp"],
     "stats": [2200, 999, 20, 25, 15, 10, 50]
   },
   "High Judge of Hell": {
@@ -1691,7 +1691,7 @@
     "lvl": 75,
     "race": "Justice P",
     "resists": "sns-n-n_S-",
-    "skills": ["Slash Attack", "Null Dizzy", "Slash Boost", "Ice Amp", "Elec Amp", "Freeze Boost", "Ailment Boost", "Shock Boost"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "Ziodyne", "Maziodyne", "Brave Blade", "Vorpal Blade", "Heat Riser", "Dekaja", "Null Dizzy", "Slash Boost", "Ice Amp", "Elec Amp", "Freeze Boost", "Shock Boost", "Ailment Boost"],
     "stats": [1913, 999, 61, 59, 99, 43, 66]
   },
   "Ice Raven": {
@@ -1713,7 +1713,7 @@
     "lvl": 63,
     "race": "Strength P",
     "resists": "-n-wn--_S-",
-    "skills": ["Strike Attack", "Ice Amp", "Freeze Boost", "Ailment Boost", "Null Dizzy", "Resist Shock"],
+    "skills": ["Strike Attack", "Bufudyne", "Mabufudyne", "Gigantic Fist", "Heat Wave", "Heat Riser", "Null Dizzy", "Resist Shock", "Ice Amp", "Freeze Boost", "Ailment Boost"],
     "stats": [2185, 999, 47, 39, 42, 36, 41]
   },
   "Ill-Fated Maya": {
@@ -1735,7 +1735,7 @@
     "lvl": 57,
     "race": "Lovers",
     "resists": "w-w---n---",
-    "skills": ["Strike Attack", "Marin Karin", "Pulinpa", "Stagnant Air", "Agidyne"],
+    "skills": ["Strike Attack", "Agidyne", "Marin Karin", "Sexy Dance", "Pulinpa", "Stagnant Air", "Tentarafoo"],
     "stats": [600, 110, 30, 30, 34, 36, 32]
   },
   "Immoral Snake B": {
@@ -1746,7 +1746,7 @@
     "lvl": 47,
     "race": "Lovers P",
     "resists": "---dw---s-",
-    "skills": ["Strike Attack", "Fire Amp", "Poison Boost", "Almighty Boost"],
+    "skills": ["Strike Attack", "Agilao", "Maragion", "Poison Mist", "Virus Breath", "Fire Amp", "Poison Boost", "Almighty Boost"],
     "stats": [1200, 999, 20, 36, 30, 32, 35]
   },
   "Imposing Skyscraper": {
@@ -1757,7 +1757,7 @@
     "lvl": 40,
     "race": "Hierophant P",
     "resists": "--s--ds__-",
-    "skills": ["Strike Attack", "Mazionga", "Shock Boost", "Ailment Boost", "Null Dizzy", "Null Freeze", "Null Shock", "Elec Amp"],
+    "skills": ["Strike Attack", "Ziodyne", "Mazionga", "Stagnant Air", "Herculean Strike", "Rakukaja", "Marakunda", "Dekaja", "Null Dizzy", "Null Freeze", "Null Shock", "Elec Amp", "Shock Boost", "Ailment Boost"],
     "stats": [1970, 999, 25, 32, 30, 26, 99]
   },
   "Imprudent Maya": {
@@ -1812,7 +1812,7 @@
     "lvl": 55,
     "race": "Emperor P",
     "resists": "------nnn-",
-    "skills": ["Pierce Attack", "Pierce Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Tempest Slash", "Blade of Fury", "Torrent Shot", "Vile Assault", "Myriad Arrows", "Heat Riser", "Masukunda", "Null Dizzy", "Pierce Boost"],
     "stats": [1930, 999, 42, 34, 41, 38, 31]
   },
   "Intrepid Knight C": {
@@ -1823,7 +1823,7 @@
     "lvl": 77,
     "race": "Emperor P",
     "resists": "--n-r--rr-",
-    "skills": ["Pierce Attack", "Ice Amp", "Freeze Boost", "Pierce Amp", "Apt Pupil", "Ailment Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Bufudyne", "Mabufudyne", "Vile Assault", "Primal Force", "Heat Riser", "Marakunda", "Masukunda", "Myriad Arrows", "Null Dizzy", "Pierce Amp", "Ice Amp", "Freeze Boost", "Ailment Boost", "Apt Pupil"],
     "stats": [2311, 999, 51, 43, 42, 48, 77]
   },
   "Invaluable Hand": {
@@ -1834,7 +1834,7 @@
     "lvl": 35,
     "race": "Fool",
     "resists": "--------z-",
-    "skills": ["Strike Attack", "Sukukaja"],
+    "skills": ["Strike Attack", "Sukukaja", "Tetrakarn", "Makarakarn"],
     "stats": [600, 80, 1, 1, 25, 99, 99]
   },
   "Invasive Serpent": {
@@ -1845,7 +1845,7 @@
     "lvl": 72,
     "race": "Lovers P",
     "resists": "-w-d--s__-",
-    "skills": ["Strike Attack", "Poison Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Poison Mist", "Stagnant Air", "Matarunda", "Marakunda", "Spirit Drain", "Resist Dizzy", "Poison Boost"],
     "stats": [1831, 999, 39, 45, 42, 39, 99]
   },
   "Invigorated Gigas": {
@@ -1856,7 +1856,7 @@
     "lvl": 55,
     "race": "Strength P",
     "resists": "----s--nn-",
-    "skills": ["Strike Attack", "Strike Boost", "Apt Pupil", "Null Dizzy", "Resist Freeze", "Resist Shock"],
+    "skills": ["Strike Attack", "Gigantic Fist", "Herculean Strike", "Heat Wave", "Heat Riser", "Charge", "Rebellion", "Revolution", "Null Dizzy", "Resist Freeze", "Resist Shock", "Strike Boost", "Apt Pupil"],
     "stats": [2600, 999, 42, 29, 41, 36, 39]
   },
   "Iron Dice": {
@@ -1877,7 +1877,7 @@
     "lvl": 40,
     "race": "Fortune P",
     "resists": "----wn-n_-",
-    "skills": ["Strike Attack", "Distress Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Eerie Sound", "Gigantic Fist", "Herculean Strike", "Null Dizzy", "Distress Boost"],
     "stats": [1492, 999, 40, 37, 40, 30, 2]
   },
   "Isolated Castle": {
@@ -1888,7 +1888,7 @@
     "lvl": 47,
     "race": "Emperor P",
     "resists": "---nnnnnn-",
-    "skills": ["Pierce Attack", "Null Dizzy", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
+    "skills": ["Pierce Attack", "Maragion", "Mabufula", "Magarula", "Mazionga", "Vile Assault", "Tarukaja", "Rakukaja", "Marakunda", "Concentrate", "Null Dizzy", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
     "stats": [1995, 999, 37, 45, 40, 33, 30]
   },
   "Jealous Cupid": {
@@ -1921,7 +1921,7 @@
     "lvl": 56,
     "race": "Hermit B",
     "resists": "---r__-_r-",
-    "skills": ["Phys Attack", "Null Dizzy", "Null Freeze", "Null Shock"],
+    "skills": ["Phys Attack", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Kougaon", "Makougaon", "Eigaon", "Maeigaon", "Tempest Slash", "Gigantic Fist", "Herculean Strike", "Heat Wave", "Vile Assault", "Heat Riser", "Matarunda", "Marakunda", "Frag Grenade", "Lightning Grenade", "Flash Grenade", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [2300, 999, 46, 50, 42, 45, 35]
   },
   "Jin B": {
@@ -1932,7 +1932,7 @@
     "lvl": 80,
     "race": "Hermit B",
     "resists": "---r__-_r-",
-    "skills": ["Phys Attack", "Null Dizzy", "Magic Ability", "Null Freeze", "Null Shock", "Resist Poison"],
+    "skills": ["Phys Attack", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Kougaon", "Makougaon", "Eigaon", "Maeigaon", "Brave Blade", "Heat Wave", "God's Hand", "Primal Force", "Heat Riser", "Marakunda", "Dekaja", "Dekunda", "Charge", "Concentrate", "Flame Grenade", "Shock Grenade", "EX Flash Grenade", "Weakness Scan", "Potent Stim Injection", "Megidolaon", "Null Dizzy", "Resist Poison", "Null Freeze", "Null Shock", "Magic Ability"],
     "stats": [8000, 999, 70, 75, 60, 50, 55]
   },
   "Jotun of Authority": {
@@ -1943,7 +1943,7 @@
     "lvl": 44,
     "race": "Hanged P",
     "resists": "d--nw--__-",
-    "skills": ["Strike Attack", "Null Dizzy", "Null Freeze", "Null Shock"],
+    "skills": ["Strike Attack", "Gigantic Fist", "Swift Strike", "Herculean Strike", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [2150, 999, 99, 20, 31, 29, 23]
   },
   "Jotun of Blood": {
@@ -2031,7 +2031,7 @@
     "lvl": 43,
     "race": "Justice P",
     "resists": "--n--dw__-",
-    "skills": ["Slash Attack", "Elec Boost", "Shock Boost", "Ailment Boost"],
+    "skills": ["Slash Attack", "Ziodyne", "Mazionga", "Tempest Slash", "Blade of Fury", "Elec Boost", "Shock Boost", "Ailment Boost"],
     "stats": [1445, 999, 36, 25, 27, 23, 75]
   },
   "Jupiter Eagle": {
@@ -2054,7 +2054,7 @@
     "lvl": 34,
     "race": "Justice B",
     "resists": "---tTTtTT-",
-    "skills": ["Pierce Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Hamaon", "Kougaon", "Torrent Shot", "Unite", "Restore", "Mahama", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [900, 999, 2, 25, 12, 15, 35]
   },
   "Justice Sword": {
@@ -2087,7 +2087,7 @@
     "lvl": 79,
     "race": "Strength P",
     "resists": "r--rw--__-",
-    "skills": ["Slash Attack", "Slash Boost", "Ice Amp", "Elec Amp", "Ailment Boost", "Shock Boost", "Freeze Boost", "Apt Pupil"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "Ziodyne", "Maziodyne", "Tempest Slash", "Brave Blade", "Slash Boost", "Ice Amp", "Elec Amp", "Freeze Boost", "Shock Boost", "Ailment Boost", "Apt Pupil"],
     "stats": [2620, 999, 55, 62, 46, 43, 45]
   },
   "Killer Drive": {
@@ -2130,7 +2130,7 @@
     "lvl": 20,
     "race": "Empress P",
     "resists": "-v-nnnnnn-",
-    "skills": ["Strike Attack", "Null Dizzy", "Confuse Boost", "Charm Boost", "Distress Boost"],
+    "skills": ["Strike Attack", "Marin Karin", "Eerie Sound", "Pulinpa", "Stagnant Air", "Null Dizzy", "Charm Boost", "Distress Boost", "Confuse Boost"],
     "stats": [950, 999, 19, 20, 15, 12, 12]
   },
   "Laughing Table": {
@@ -2184,7 +2184,7 @@
     "lvl": 63,
     "race": "Justice P",
     "resists": "----__-rr-",
-    "skills": ["Strike Attack", "Light Amp", "Dark Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Kougaon", "Makougaon", "Eigaon", "Maeigaon", "Concentrate", "Null Dizzy", "Light Amp", "Dark Amp"],
     "stats": [1800, 999, 50, 55, 41, 40, 32]
   },
   "Lightning Eagle": {
@@ -2194,7 +2194,7 @@
     "lvl": 11,
     "race": "Empress P",
     "resists": "--w-s-w__-",
-    "skills": ["Slash Attack", "Zio", "Mazio"],
+    "skills": ["Slash Attack", "Zio", "Mazio", "Power Slash"],
     "stats": [384, 999, 7, 9, 9, 10, 3]
   },
   "Loathsome Tiara": {
@@ -2217,7 +2217,7 @@
     "lvl": 26,
     "race": "Lovers B",
     "resists": "-_tn_t-__-",
-    "skills": ["Strike Attack", "Null Dizzy", "Insta-Heal", "Null Freeze", "Null Shock", "Charm Boost"],
+    "skills": ["Strike Attack", "Agidyne", "Marin Karin", "Heartbreaker", "Seductive Breath", "Holy Arrow", "Sexy Dance", "Diarama", "Null Dizzy", "Null Freeze", "Null Shock", "Charm Boost", "Insta-Heal"],
     "stats": [4500, 999, 25, 37, 8, 20, 70]
   },
   "Luckless Cupid": {
@@ -2227,7 +2227,7 @@
     "lvl": 61,
     "race": "Lovers P",
     "resists": "---d-w-r_-",
-    "skills": ["Pierce Attack", "Light Amp", "Charm Boost"],
+    "skills": ["Pierce Attack", "Kougaon", "Makougaon", "Marin Karin", "Holy Arrow", "Revolution", "Light Amp", "Charm Boost"],
     "stats": [1453, 999, 38, 43, 35, 53, 29]
   },
   "Lustful Snake": {
@@ -2260,7 +2260,7 @@
     "lvl": 58,
     "race": "Fool",
     "resists": "sssnnnnnn-",
-    "skills": ["Strike Attack"],
+    "skills": ["Strike Attack", "Sukukaja", "Tetrakarn", "Makarakarn"],
     "stats": [290, 130, 1, 1, 35, 99, 99]
   },
   "Mach Wheel": {
@@ -2291,7 +2291,7 @@
     "lvl": 68,
     "race": "Priestess P",
     "resists": "--wr-n-_d-",
-    "skills": ["Strike Attack", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Ziodyne", "Maziodyne", "Fire Boost", "Ice Boost", "Wind Boost", "Elec Boost"],
     "stats": [630, 999, 42, 51, 38, 42, 37]
   },
   "Magic Hand": {
@@ -2302,7 +2302,7 @@
     "lvl": 4,
     "race": "Magician",
     "resists": "---w-s----",
-    "skills": ["Strike Attack", "Bewilder"],
+    "skills": ["Strike Attack", "Zio", "Bewilder"],
     "stats": [97, 25, 4, 4, 4, 3, 4]
   },
   "Magic Hand B": {
@@ -2312,7 +2312,7 @@
     "lvl": 5,
     "race": "Magician",
     "resists": "---w-s----",
-    "skills": ["Strike Attack", "Agi", "Dia", "Bewilder"],
+    "skills": ["Strike Attack", "Agi", "Bewilder", "Dia", "Rakunda"],
     "stats": [140, 120, 4, 6, 5, 4, 3]
   },
   "Magical Magus": {
@@ -2334,7 +2334,7 @@
     "lvl": 25,
     "race": "Priestess P",
     "resists": "sssw---__-",
-    "skills": ["Strike Attack", "Null Dizzy", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp"],
+    "skills": ["Strike Attack", "Agilao", "Maragi", "Bufula", "Mabufu", "Garula", "Magaru", "Zionga", "Mazio", "Null Dizzy", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp"],
     "stats": [1080, 999, 12, 32, 24, 23, 10]
   },
   "Magical Magus C": {
@@ -2345,7 +2345,7 @@
     "lvl": 34,
     "race": "Magician P",
     "resists": "---tTTtTT-",
-    "skills": ["Strike Attack", "Null Dizzy", "Null Shock"],
+    "skills": ["Strike Attack", "Ziodyne", "Mazionga", "Kougaon", "Makouga", "Null Dizzy", "Null Shock"],
     "stats": [420, 999, 27, 35, 29, 20, 22]
   },
   "Majestic Checkmate": {
@@ -2378,7 +2378,7 @@
     "lvl": 59,
     "race": "Justice P",
     "resists": "nn--ns-__-",
-    "skills": ["Slash Attack", "Ice Boost", "Slash Boost", "Freeze Boost", "Ailment Boost", "Null Dizzy"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "Tempest Slash", "Vorpal Blade", "Null Dizzy", "Slash Boost", "Ice Boost", "Freeze Boost", "Ailment Boost"],
     "stats": [1200, 999, 42, 42, 99, 33, 37]
   },
   "Merciless Maya": {
@@ -2432,7 +2432,7 @@
     "lvl": 33,
     "race": "Fortune",
     "resists": "---ssws---",
-    "skills": ["Strike Attack", "Poisma", "Marin Karin", "Bewilder", "Pulinpa", "Evil Touch", "Provoke"],
+    "skills": ["Strike Attack", "Poisma", "Marin Karin", "Bewilder", "Pulinpa", "Evil Touch", "Provoke", "Stagnant Air"],
     "stats": [338, 60, 20, 17, 21, 21, 27]
   },
   "Minotaur I": {
@@ -2465,7 +2465,7 @@
     "lvl": 55,
     "race": "Hanged P",
     "resists": "rrr----__-",
-    "skills": ["Strike Attack", "Fire Amp", "Strike Boost", "Ailment Boost", "Rage Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Megidolaon", "Provoke", "Gigantic Fist", "Herculean Strike", "Infuriate", "Null Dizzy", "Strike Boost", "Fire Amp", "Rage Boost", "Ailment Boost"],
     "stats": [2190, 999, 43, 30, 39, 36, 38]
   },
   "Minotaur III": {
@@ -2487,7 +2487,7 @@
     "lvl": 44,
     "race": "Hanged P",
     "resists": "srrw---__-",
-    "skills": ["Strike Attack", "Strike Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Eigaon", "Maeiga", "Gigantic Fist", "Herculean Strike", "Heat Riser", "Marakunda", "Charge", "Resist Dizzy", "Strike Boost"],
     "stats": [1797, 999, 32, 28, 28, 28, 28]
   },
   "Minotaur IV": {
@@ -2509,7 +2509,7 @@
     "lvl": 69,
     "race": "Hanged P",
     "resists": "-r---n-S_-",
-    "skills": ["Strike Attack", "Null Dizzy", "Null Shock", "Elec Boost", "Light Boost", "Strike Boost"],
+    "skills": ["Strike Attack", "Ziodyne", "Maziodyne", "Kougaon", "Makougaon", "Gigantic Fist", "Heat Wave", "Heat Riser", "Charge", "Concentrate", "Null Dizzy", "Null Shock", "Strike Boost", "Elec Boost", "Light Boost"],
     "stats": [2739, 999, 99, 99, 45, 40, 50]
   },
   "Miracle Hand": {
@@ -2530,7 +2530,7 @@
     "lvl": 70,
     "race": "Priestess P",
     "resists": "----__-r_-",
-    "skills": ["Strike Attack", "Light Boost", "Hama Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Hamaon", "Mahamaon", "Kougaon", "Makougaon", "Megidolaon", "Marakukaja", "Matarunda", "Null Dizzy", "Light Boost", "Hama Boost"],
     "stats": [2700, 999, 36, 60, 45, 46, 48]
   },
   "Muttering Tiara": {
@@ -2560,7 +2560,7 @@
     "lvl": 4,
     "race": "Priestess",
     "resists": "------w---",
-    "skills": ["Strike Attack", "Agi"],
+    "skills": ["Strike Attack", "Agi", "Rakunda"],
     "stats": [100, 300, 2, 5, 4, 2, 2]
   },
   "Muttering Tiara D": {
@@ -2571,7 +2571,7 @@
     "lvl": 39,
     "race": "Priestess P",
     "resists": "------n-w-",
-    "skills": ["Strike Attack", "Wind Boost"],
+    "skills": ["Strike Attack", "Garula", "Magarula", "Matarunda", "Marakunda", "Masukunda", "Wind Boost"],
     "stats": [620, 999, 28, 36, 32, 24, 19]
   },
   "Muttering Tiara E": {
@@ -2582,7 +2582,7 @@
     "lvl": 39,
     "race": "Priestess P",
     "resists": "------n-w-",
-    "skills": ["Strike Attack", "Wind Boost"],
+    "skills": ["Strike Attack", "Garula", "Magarula", "Matarunda", "Marakunda", "Masukunda", "Wind Boost"],
     "stats": [620, 999, 28, 36, 32, 24, 19]
   },
   "Natural Dancer B": {
@@ -2593,7 +2593,7 @@
     "lvl": 48,
     "race": "Lovers P",
     "resists": "---s-sn__-",
-    "skills": ["Pierce Attack", "Wind Amp", "Pierce Boost", "Charm Boost", "Ailment Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Garudyne", "Magarula", "Sexy Dance", "Torrent Shot", "Myriad Arrows", "Spirit Drain", "Null Dizzy", "Pierce Boost", "Wind Amp", "Charm Boost", "Ailment Boost"],
     "stats": [1300, 999, 30, 40, 35, 33, 25]
   },
   "Necromachinery": {
@@ -2604,7 +2604,7 @@
     "lvl": 63,
     "race": "Hermit P",
     "resists": "n----n-r_-",
-    "skills": ["Strike Attack", "Kougaon", "Makougaon", "Hama Boost", "Null Shock", "Light Boost", "Light Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Kougaon", "Makougaon", "Megidola", "Megidolaon", "Concentrate", "Null Dizzy", "Null Shock", "Light Boost", "Light Amp", "Hama Boost"],
     "stats": [2397, 999, 39, 65, 43, 39, 45]
   },
   "Nemean Beast B": {
@@ -2615,7 +2615,7 @@
     "lvl": 36,
     "race": "Strength P",
     "resists": "-----swS_-",
-    "skills": ["Strike Attack", "Strike Boost", "Distress Boost"],
+    "skills": ["Strike Attack", "Eerie Sound", "Herculean Strike", "Sonic Punch", "Tarukaja", "Rebellion", "Strike Boost", "Distress Boost"],
     "stats": [1443, 999, 27, 23, 23, 23, 26]
   },
   "Noble Seeker": {
@@ -2637,7 +2637,7 @@
     "lvl": 81,
     "race": "Fool B",
     "resists": "----__-__-",
-    "skills": ["Slash Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Arcana Shift", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [300, 999, 50, 50, 50, 50, 50]
   },
   "Nyx Avatar B": {
@@ -2648,7 +2648,7 @@
     "lvl": 81,
     "race": "Magician B",
     "resists": "---n__-__-",
-    "skills": ["Slash Attack", "Fire Boost", "Fire Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Agidyne", "Maragidyne", "Arcana Shift", "Null Dizzy", "Null Freeze", "Null Shock", "Fire Boost", "Fire Amp"],
     "stats": [1500, 999, 50, 90, 50, 50, 50]
   },
   "Nyx Avatar C": {
@@ -2659,7 +2659,7 @@
     "lvl": 81,
     "race": "Priestess B",
     "resists": "----n_-__-",
-    "skills": ["Slash Attack", "Ice Boost", "Ice Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "Arcana Shift", "Ice Storm", "Null Dizzy", "Null Freeze", "Null Shock", "Ice Boost", "Ice Amp"],
     "stats": [1500, 999, 50, 90, 50, 50, 50]
   },
   "Nyx Avatar D": {
@@ -2670,7 +2670,7 @@
     "lvl": 81,
     "race": "Empress B",
     "resists": "---TTTTTT-",
-    "skills": ["Slash Attack", "Wind Boost", "Wind Amp", "Elec Boost", "Elec Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Garudyne", "Magarudyne", "Eerie Sound", "Arcana Shift", "Null Dizzy", "Null Freeze", "Null Shock", "Wind Boost", "Wind Amp", "Elec Boost", "Elec Amp"],
     "stats": [1500, 999, 50, 90, 50, 50, 50]
   },
   "Nyx Avatar E": {
@@ -2681,7 +2681,7 @@
     "lvl": 81,
     "race": "Emperor B",
     "resists": "TTT-__-__-",
-    "skills": ["Slash Attack", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Arcana Shift", "Sweep", "Sunder", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 50]
   },
   "Nyx Avatar F": {
@@ -2692,7 +2692,7 @@
     "lvl": 81,
     "race": "Hierophant B",
     "resists": "-------rn-",
-    "skills": ["Slash Attack", "Dark Boost", "Dark Amp", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Mudoon", "Maeigaon", "Arcana Shift", "Sweep", "Sunder", "Doomsday Doctrine", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Dark Boost", "Dark Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar G": {
@@ -2703,7 +2703,7 @@
     "lvl": 81,
     "race": "Lovers B",
     "resists": "-_tn_t-__-",
-    "skills": ["Slash Attack", "Fire Boost", "Fire Amp", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Agidyne", "Maragidyne", "Arcana Shift", "Sweep", "Sunder", "Heartbreaker", "Sexy Dance", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Fire Boost", "Fire Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar H": {
@@ -2714,7 +2714,7 @@
     "lvl": 81,
     "race": "Chariot B",
     "resists": "nnn-__-__-",
-    "skills": ["Slash Attack", "Slash Boost", "Pierce Amp", "Null Freeze", "Null Shock", "Null Dizzy", "Slash Amp", "Strike Amp"],
+    "skills": ["Slash Attack", "Deathbound", "Heat Wave", "Myriad Arrows", "Arcana Shift", "Sweep", "Sunder", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Strike Amp", "Pierce Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar I": {
@@ -2725,7 +2725,7 @@
     "lvl": 81,
     "race": "Justice B",
     "resists": "---nnnnnn-",
-    "skills": ["Slash Attack", "Light Boost", "Light Amp", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Hamaon", "Makougaon", "Divine Judgment", "Arcana Shift", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Light Boost", "Light Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar J": {
@@ -2736,7 +2736,7 @@
     "lvl": 81,
     "race": "Hermit B",
     "resists": "--T--nn_n-",
-    "skills": ["Slash Attack", "Elec Boost", "Elec Amp", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Arcana Shift", "Sweep", "Sunder", "Tera Spark", "High-Volt Current", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Elec Boost", "Elec Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar K": {
@@ -2747,7 +2747,7 @@
     "lvl": 81,
     "race": "Fortune B",
     "resists": "---dd_dd_-",
-    "skills": ["Slash Attack", "Slash Driver", "Fire Driver", "Ice Driver", "Elec Driver", "Wind Driver", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Inferno", "Diamond Dust", "Panta Rhei", "Thunder Reign", "Arcana Shift", "Sunder", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Driver", "Fire Driver", "Ice Driver", "Elec Driver", "Wind Driver"],
     "stats": [800, 999, 80, 90, 30, 50, 80]
   },
   "Nyx Avatar L": {
@@ -2758,7 +2758,7 @@
     "lvl": 81,
     "race": "Strength B",
     "resists": "TrT-__-__-",
-    "skills": ["Slash Attack", "Strike Boost", "Strike Amp", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Tarukaja", "Arcana Shift", "Sunder", "Mobius Rondo", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Strike Boost", "Strike Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar M": {
@@ -2769,7 +2769,7 @@
     "lvl": 81,
     "race": "Hanged B",
     "resists": "-T-n__-_r-",
-    "skills": ["Slash Attack", "Strike Boost", "Strike Amp", "Slash Boost", "Slash Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Slash Attack", "Megidolaon", "God's Hand", "Dekunda", "Charge", "Concentrate", "Arcana Shift", "Sweep", "Sunder", "Grim Transcendence", "Null Dizzy", "Null Freeze", "Null Shock", "Slash Boost", "Slash Amp", "Strike Boost", "Strike Amp"],
     "stats": [1500, 999, 80, 90, 50, 50, 80]
   },
   "Nyx Avatar N": {
@@ -2780,7 +2780,7 @@
     "lvl": 81,
     "race": "Death B",
     "resists": "----__-__-",
-    "skills": ["Slash Attack", "Slash Amp", "Fire Amp", "Ice Amp", "Elec Amp", "Wind Amp", "Strike Boost", "Null Dizzy"],
+    "skills": ["Slash Attack", "Megidolaon", "Heat Riser", "Dekaja", "Dekunda", "Concentrate", "Tetrakarn", "Makarakarn", "Sweep", "Sunder", "Night Queen", "Apocalypse", "Ice Storm", "Tera Spark", "Grim Transcendence", "Mobius Rondo", "Null Dizzy", "Slash Amp", "Strike Boost", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp"],
     "stats": [7000, 999, 99, 99, 80, 50, 80]
   },
   "Obsessed Cupid": {
@@ -2802,7 +2802,7 @@
     "lvl": 69,
     "race": "Fortune P",
     "resists": "---sSSsSS-",
-    "skills": ["Slash Attack", "Null Dizzy", "Light Amp", "Distress Boost", "Ailment Boost"],
+    "skills": ["Slash Attack", "Kouga", "Kougaon", "Makougaon", "Divine Judgment", "Bewilder", "Eerie Sound", "Tempest Slash", "Vorpal Blade", "Diarahan", "Null Dizzy", "Light Amp", "Distress Boost", "Ailment Boost"],
     "stats": [2000, 999, 41, 51, 43, 49, 70]
   },
   "Ochlocratic Sand": {
@@ -2812,7 +2812,7 @@
     "lvl": 28,
     "race": "Fortune P",
     "resists": "---rwnnSS-",
-    "skills": ["Slash Attack", "Slash Boost", "Fire Boost", "Null Dizzy"],
+    "skills": ["Slash Attack", "Agilao", "Maragion", "Pulinpa", "Power Slash", "Fatal End", "Vacuum Slash", "Neuro Slash", "Null Dizzy", "Slash Boost", "Fire Boost"],
     "stats": [924, 999, 17, 19, 20, 17, 20]
   },
   "Omnipotent Balance": {
@@ -2823,7 +2823,7 @@
     "lvl": 64,
     "race": "Justice P",
     "resists": "---nnnn__-",
-    "skills": ["Strike Attack", "Magic Mastery", "Almighty Boost", "Ailment Boost", "Freeze Boost", "Shock Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Maragidyne", "Mabufudyne", "Magarudyne", "Maziodyne", "Makougaon", "Maeigaon", "Megidola", "Megidolaon", "Heat Riser", "Debilitate", "Concentrate", "Null Dizzy", "Freeze Boost", "Shock Boost", "Ailment Boost", "Almighty Boost", "Magic Mastery"],
     "stats": [3000, 999, 46, 60, 45, 43, 36]
   },
   "Onnen Musha": {
@@ -2845,7 +2845,7 @@
     "lvl": 79,
     "race": "Strength P",
     "resists": "r---d_d_r-",
-    "skills": ["Slash Attack", "Slash Boost", "Fear Boost", "Ailment Boost", "Mudo Boost", "Apt Pupil"],
+    "skills": ["Slash Attack", "Mudoon", "Eigaon", "Maeigaon", "Evil Touch", "Evil Smile", "Tempest Slash", "Brave Blade", "Vorpal Blade", "Slash Boost", "Fear Boost", "Ailment Boost", "Mudo Boost", "Apt Pupil"],
     "stats": [2700, 999, 60, 51, 48, 45, 51]
   },
   "Opulent Hand": {
@@ -2856,7 +2856,7 @@
     "lvl": 42,
     "race": "Fool",
     "resists": "-w--------",
-    "skills": ["Strike Attack", "Sukukaja", "Tetrakarn"],
+    "skills": ["Strike Attack", "Sukukaja", "Tetrakarn", "Makarakarn"],
     "stats": [700, 100, 1, 1, 25, 99, 99]
   },
   "Order Giant": {
@@ -2867,7 +2867,7 @@
     "lvl": 46,
     "race": "Justice",
     "resists": "sss-wrr---",
-    "skills": ["Slash Attack", "Neuro Slash", "Ziodyne", "Garudyne", "Mazionga", "Magarula", "Shock Boost"],
+    "skills": ["Slash Attack", "Garudyne", "Magarula", "Ziodyne", "Mazionga", "Neuro Slash", "Matarunda", "Shock Boost"],
     "stats": [483, 80, 30, 31, 30, 29, 25]
   },
   "Order Giant B": {
@@ -2889,7 +2889,7 @@
     "lvl": 72,
     "race": "Justice P",
     "resists": "-------rr-",
-    "skills": ["Strike Attack", "Null Dizzy", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp", "Resist Freeze", "Resist Shock"],
+    "skills": ["Strike Attack", "Maragidyne", "Mabufudyne", "Magarudyne", "Maziodyne", "Makougaon", "Divine Judgment", "Maeigaon", "Demonic Decree", "Primal Force", "Matarukaja", "Marakukaja", "Null Dizzy", "Resist Freeze", "Resist Shock", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp"],
     "stats": [2098, 999, 42, 65, 43, 42, 43]
   },
   "Pagoda of Disaster": {
@@ -2900,7 +2900,7 @@
     "lvl": 49,
     "race": "Hierophant P",
     "resists": "-w---dd__-",
-    "skills": ["Strike Attack", "Elec Boost", "Wind Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Garudyne", "Magarula", "Ziodyne", "Mazionga", "Concentrate", "Null Dizzy", "Wind Boost", "Elec Boost"],
     "stats": [1838, 999, 30, 40, 35, 28, 31]
   },
   "Perpetual Sand": {
@@ -2922,7 +2922,7 @@
     "lvl": 67,
     "race": "Hermit P",
     "resists": "---w---rr-",
-    "skills": ["Strike Attack", "Light Boost", "Light Amp", "Dark Boost", "Dark Amp", "Hama Boost", "Mudo Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Hamaon", "Mahamaon", "Kougaon", "Makougaon", "Mudoon", "Mamudoon", "Eigaon", "Maeigaon", "Resist Dizzy", "Light Boost", "Light Amp", "Dark Boost", "Dark Amp", "Hama Boost", "Mudo Boost"],
     "stats": [2422, 999, 42, 42, 38, 37, 87]
   },
   "Phantom Lord": {
@@ -2955,7 +2955,7 @@
     "lvl": 29,
     "race": "Hermit P",
     "resists": "-----swr_-",
-    "skills": ["Strike Attack", "Light Boost", "Hama Boost"],
+    "skills": ["Strike Attack", "Hama", "Hamaon", "Mahama", "Kouga", "Makouha", "Light Boost", "Hama Boost"],
     "stats": [1213, 999, 14, 21, 19, 17, 49]
   },
   "Phantom Master": {
@@ -2977,7 +2977,7 @@
     "lvl": 69,
     "race": "Hermit P",
     "resists": "n-w-ds-_n-",
-    "skills": ["Strike Attack", "Mudo Boost"],
+    "skills": ["Strike Attack", "Mudoon", "Mamudoon", "Eigaon", "Maeiga", "Tarukaja", "Marakunda", "Mudo Boost"],
     "stats": [1200, 999, 40, 55, 47, 42, 43]
   },
   "Pink Hand": {
@@ -2988,7 +2988,7 @@
     "lvl": 69,
     "race": "Magician P",
     "resists": "---dwdd__-",
-    "skills": ["Strike Attack", "Ailment Boost", "Confuse Boost", "Distress Boost", "Charm Boost", "Resist Dizzy", "Divine Grace"],
+    "skills": ["Strike Attack", "Marin Karin", "Bewilder", "Eerie Sound", "Pulinpa", "Tentarafoo", "Diarama", "Sexy Dance", "Resist Dizzy", "Charm Boost", "Distress Boost", "Confuse Boost", "Ailment Boost", "Divine Grace"],
     "stats": [1800, 999, 30, 43, 45, 46, 52]
   },
   "Pistil Mother": {
@@ -3020,7 +3020,7 @@
     "lvl": 41,
     "race": "Fortune P",
     "resists": "n----n-nn-",
-    "skills": ["Strike Attack", "Fire Boost", "Distress Boost", "Null Dizzy", "Sharp Student"],
+    "skills": ["Strike Attack", "Maragion", "Mamudoon", "Megidola", "Eerie Sound", "Gigantic Fist", "Herculean Strike", "Null Dizzy", "Fire Boost", "Distress Boost", "Sharp Student"],
     "stats": [1600, 999, 45, 45, 40, 30, 2]
   },
   "Power Castle": {
@@ -3054,7 +3054,7 @@
     "lvl": 11,
     "race": "Priestess B",
     "resists": "---vn_-__-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Bufula", "Eerie Sound", "Assault Dive", "Ice Storm", "Invitation to Chaos", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [700, 500, 8, 11, 13, 11, 10]
   },
   "Prime Magus": {
@@ -3086,7 +3086,7 @@
     "lvl": 19,
     "race": "Strength P",
     "resists": "-v----w__-",
-    "skills": ["Strike Attack", "Null Dizzy", "Strike Boost"],
+    "skills": ["Strike Attack", "Bash", "Assault Dive", "Tarukaja", "Null Dizzy", "Strike Boost"],
     "stats": [450, 999, 26, 8, 18, 16, 3]
   },
   "Purging Right Hand": {
@@ -3096,7 +3096,7 @@
     "lvl": 42,
     "race": "Magician P",
     "resists": "-d---w-_r-",
-    "skills": ["Strike Attack", "Resist Dizzy", "Poison Boost", "Distress Boost"],
+    "skills": ["Strike Attack", "Poisma", "Bewilder", "Eerie Sound", "Resist Dizzy", "Poison Boost", "Distress Boost"],
     "stats": [1550, 999, 21, 32, 27, 32, 33]
   },
   "Raging Turret": {
@@ -3107,7 +3107,7 @@
     "lvl": 42,
     "race": "Chariot P",
     "resists": "n---__w__-",
-    "skills": ["Pierce Attack", "Pierce Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Heat Wave", "Vile Assault", "Tarukaja", "Rakukaja", "Sukukaja", "Charge", "Null Dizzy", "Pierce Boost"],
     "stats": [1550, 999, 40, 15, 88, 25, 23]
   },
   "Rampage Drive B": {
@@ -3118,7 +3118,7 @@
     "lvl": 34,
     "race": "Chariot P",
     "resists": "ttt-__-__-",
-    "skills": ["Pierce Attack", "Pierce Boost", "Freeze Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Bufudyne", "Mabufula", "Torrent Shot", "Cruel Attack", "Null Dizzy", "Pierce Boost", "Freeze Boost"],
     "stats": [420, 999, 32, 29, 31, 21, 18]
   },
   "Rampage Drive C": {
@@ -3129,7 +3129,7 @@
     "lvl": 65,
     "race": "Chariot P",
     "resists": "ttt----__-",
-    "skills": ["Strike Attack", "Slash Amp", "Apt Pupil"],
+    "skills": ["Strike Attack", "Vorpal Blade", "Gigantic Fist", "Heat Wave", "Heat Riser", "Slash Amp", "Apt Pupil"],
     "stats": [2400, 999, 55, 30, 40, 35, 42]
   },
   "Rampaging Sand": {
@@ -3139,7 +3139,7 @@
     "lvl": 39,
     "race": "Fortune P",
     "resists": "-w-ssss__-",
-    "skills": ["Slash Attack", "Null Dizzy", "Slash Boost", "Fear Boost"],
+    "skills": ["Slash Attack", "Fatal End", "Neuro Slash", "Null Dizzy", "Slash Boost", "Fear Boost"],
     "stats": [1213, 999, 32, 20, 26, 29, 25]
   },
   "Reckoning Dice B": {
@@ -3150,7 +3150,7 @@
     "lvl": 74,
     "race": "Fortune P",
     "resists": "ddd----__-",
-    "skills": ["Strike Attack", "Slash Boost", "Rage Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Megidola", "Megidolaon", "Provoke", "Brave Blade", "Infuriate", "Null Dizzy", "Slash Boost", "Rage Boost"],
     "stats": [1745, 999, 46, 46, 33, 43, 61]
   },
   "Red Sigil": {
@@ -3172,7 +3172,7 @@
     "lvl": 30,
     "race": "Hierophant P",
     "resists": "---dw--__-",
-    "skills": ["Slash Attack", "Fire Boost", "Rage Boost"],
+    "skills": ["Slash Attack", "Agidyne", "Maragion", "Provoke", "Matarunda", "Infuriate", "Fire Boost", "Rage Boost"],
     "stats": [1374, 999, 19, 23, 19, 18, 25]
   },
   "Regal Mother": {
@@ -3193,7 +3193,7 @@
     "lvl": 40,
     "race": "Empress P",
     "resists": "---n-wnwn-",
-    "skills": ["Strike Attack", "Fire Boost"],
+    "skills": ["Strike Attack", "Agidyne", "Diarama", "Tarukaja", "Rakukaja", "Sukukaja", "Marakunda", "Fire Boost"],
     "stats": [766, 999, 23, 33, 28, 28, 24]
   },
   "Resentful Surveillant": {
@@ -3203,7 +3203,7 @@
     "lvl": 58,
     "race": "Hermit P",
     "resists": "w----s-_n-",
-    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Eigaon", "Maeigaon", "Marakunda", "Matarukaja", "Fire Boost", "Dark Boost"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Eigaon", "Maeigaon", "Matarukaja", "Marakunda", "Rebellion", "Fire Boost", "Dark Boost"],
     "stats": [1001, 999, 33, 43, 37, 36, 34]
   },
   "Resolved Checkmate": {
@@ -3301,7 +3301,7 @@
     "lvl": 66,
     "race": "Fortune P",
     "resists": "ddd----__-",
-    "skills": ["Strike Attack", "Rage Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Megidola", "Megidolaon", "Provoke", "Tempest Slash", "Infuriate", "Null Dizzy", "Rage Boost"],
     "stats": [1444, 999, 39, 51, 39, 39, 99]
   },
   "Serpent of Absurdity": {
@@ -3311,7 +3311,7 @@
     "lvl": 52,
     "race": "Lovers P",
     "resists": "---dw--__-",
-    "skills": ["Strike Attack", "Fire Boost", "Ailment Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Maragion", "Poisma", "Marin Karin", "Spirit Drain", "Tentarafoo", "Resist Dizzy", "Fire Boost", "Ailment Boost"],
     "stats": [951, 999, 25, 30, 33, 36, 39]
   },
   "Servant Tower": {
@@ -3321,7 +3321,7 @@
     "lvl": 18,
     "race": "Hierophant P",
     "resists": "---nsrsnw-",
-    "skills": ["Strike Attack", "Swift Strike", "Kouga", "Makouga", "Null Dizzy"],
+    "skills": ["Strike Attack", "Kouga", "Makouga", "Assault Dive", "Swift Strike", "Null Dizzy"],
     "stats": [1032, 999, 10, 10, 9, 5, 7]
   },
   "Shadow of the Void": {
@@ -3332,7 +3332,7 @@
     "lvl": 81,
     "race": "Strength P",
     "resists": "----__-__-",
-    "skills": ["Strike Attack", "Regenerate 3", "Magic Mastery", "Ailment Boost", "Sharp Student", "Apt Pupil", "Null Dizzy", "Almighty Boost", "Magic Ability"],
+    "skills": ["Strike Attack", "Maragidyne", "Mabufudyne", "Magarudyne", "Maziodyne", "Makougaon", "Eigaon", "Maeigaon", "Megidolaon", "Virus Breath", "Akasha Arts", "Diarahan", "Heat Riser", "Marakunda", "Dekaja", "Dekunda", "Charge", "Concentrate", "Poison Mist", "Null Dizzy", "Regenerate 3", "Ailment Boost", "Sharp Student", "Apt Pupil", "Almighty Boost", "Magic Ability", "Magic Mastery"],
     "stats": [5000, 999, 80, 80, 65, 50, 50]
   },
   "Shouting Tiara": {
@@ -3354,7 +3354,7 @@
     "lvl": 33,
     "race": "Priestess P",
     "resists": "-w-n-S-__-",
-    "skills": ["Strike Attack", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agilao", "Garula", "Tarukaja", "Sukukaja", "Marakunda", "Tetrakarn", "Makarakarn", "Null Dizzy"],
     "stats": [957, 999, 23, 25, 24, 23, 5]
   },
   "Silent Book": {
@@ -3376,7 +3376,7 @@
     "lvl": 39,
     "race": "Priestess P",
     "resists": "----n-w---",
-    "skills": ["Strike Attack", "Ice Boost"],
+    "skills": ["Strike Attack", "Bufula", "Mabufula", "Tarukaja", "Rakukaja", "Sukukaja", "Ice Boost"],
     "stats": [620, 999, 28, 36, 32, 24, 19]
   },
   "Silent Book C": {
@@ -3387,7 +3387,7 @@
     "lvl": 39,
     "race": "Priestess P",
     "resists": "----n-w---",
-    "skills": ["Strike Attack", "Ice Boost"],
+    "skills": ["Strike Attack", "Bufula", "Mabufula", "Tarukaja", "Rakukaja", "Sukukaja", "Ice Boost"],
     "stats": [620, 999, 28, 36, 32, 24, 19]
   },
   "Silver Hand": {
@@ -3398,7 +3398,7 @@
     "lvl": 69,
     "race": "Magician P",
     "resists": "-n-ddwdd_-",
-    "skills": ["Strike Attack", "Strike Amp", "Resist Dizzy"],
+    "skills": ["Strike Attack", "God's Hand", "Resist Dizzy", "Strike Amp"],
     "stats": [1980, 999, 60, 28, 47, 43, 40]
   },
   "Skeptical Tiara": {
@@ -3409,7 +3409,7 @@
     "lvl": 8,
     "race": "Priestess B",
     "resists": "---swws__-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Kouha", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [100, 100, 5, 5, 5, 5, 5]
   },
   "Sky Balance": {
@@ -3431,7 +3431,7 @@
     "lvl": 62,
     "race": "Justice P",
     "resists": "---wwrr---",
-    "skills": ["Strike Attack", "Elec Amp", "Wind Amp", "Shock Boost", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Garudyne", "Magarudyne", "Ziodyne", "Maziodyne", "Matarukaja", "Marakukaja", "Masukukaja", "Resist Dizzy", "Wind Amp", "Elec Amp", "Shock Boost"],
     "stats": [1000, 999, 40, 50, 37, 35, 34]
   },
   "Sky Overseer": {
@@ -3442,7 +3442,7 @@
     "lvl": 28,
     "race": "Justice P",
     "resists": "---wwdd__-",
-    "skills": ["Strike Attack", "Wind Amp", "Elec Amp", "Null Dizzy"],
+    "skills": ["Strike Attack", "Garula", "Magaru", "Zionga", "Mazio", "Wind Break", "Elec Break", "Null Dizzy", "Wind Amp", "Elec Amp"],
     "stats": [815, 999, 10, 26, 21, 21, 15]
   },
   "Slaughter Drive": {
@@ -3464,7 +3464,7 @@
     "lvl": 13,
     "race": "Hierophant P",
     "resists": "-----z-wS-",
-    "skills": ["Strike Attack", "Maeiha", "Dark Boost", "Pierce Boost", "Torrent Shot", "Single Shot"],
+    "skills": ["Strike Attack", "Eiha", "Maeiha", "Single Shot", "Torrent Shot", "Pierce Boost", "Dark Boost"],
     "stats": [370, 999, 14, 12, 11, 9, 2]
   },
   "Solid Castle": {
@@ -3497,7 +3497,7 @@
     "lvl": 55,
     "race": "Emperor P",
     "resists": "tt--tt-nz-",
-    "skills": ["Pierce Attack", "Hamaon", "Kougaon", "Makougaon", "Matarukaja", "Light Amp", "Hama Boost", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Hamaon", "Mahamaon", "Kougaon", "Makougaon", "Matarukaja", "Null Dizzy", "Light Amp", "Hama Boost"],
     "stats": [9999, 999, 30, 60, 10, 35, 1]
   },
   "Spurious Book": {
@@ -3508,7 +3508,7 @@
     "lvl": 12,
     "race": "Priestess",
     "resists": "-----w-n--",
-    "skills": ["Strike Attack", "Tarukaja", "Rakukaja", "Kouha"],
+    "skills": ["Strike Attack", "Kouha", "Makouha", "Tarukaja", "Rakukaja"],
     "stats": [160, 40, 6, 12, 9, 8, 7]
   },
   "Spurious Book B": {
@@ -3540,7 +3540,7 @@
     "lvl": 55,
     "race": "Hanged B",
     "resists": "wTTwTTTTTu",
-    "skills": ["Strike Attack", "Freeze Boost", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Bufudyne", "Heaven's Blade", "Null Dizzy", "Null Freeze", "Null Shock", "Freeze Boost"],
     "stats": [800, 999, 10, 60, 20, 15, 15]
   },
   "Statue B": {
@@ -3551,7 +3551,7 @@
     "lvl": 55,
     "race": "Hanged B",
     "resists": "TwTTwTTTTu",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Maragion", "Tarukaja", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [800, 999, 10, 60, 20, 15, 15]
   },
   "Statue C": {
@@ -3562,7 +3562,7 @@
     "lvl": 55,
     "race": "Hanged B",
     "resists": "wTTTTwTTTu",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Garudyne", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [800, 999, 10, 60, 20, 15, 15]
   },
   "Statue D": {
@@ -3573,7 +3573,7 @@
     "lvl": 55,
     "race": "Hanged B",
     "resists": "TwTTTTwTTu",
-    "skills": ["Strike Attack", "Shock Boost", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Ziodyne", "Mazionga", "Elec Break", "Null Dizzy", "Null Freeze", "Null Shock", "Shock Boost"],
     "stats": [800, 999, 10, 60, 20, 15, 15]
   },
   "Statue E": {
@@ -3584,7 +3584,7 @@
     "lvl": 55,
     "race": "Hanged B",
     "resists": "TTwTTTTwTu",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Eigaon", "Eerie Sound", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [800, 999, 10, 60, 20, 15, 15]
   },
   "Statue F": {
@@ -3595,7 +3595,7 @@
     "lvl": 55,
     "race": "Hanged B",
     "resists": "TTwTTTTTwu",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Kougaon", "Mediarahan", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [800, 999, 10, 60, 20, 15, 15]
   },
   "Statue G": {
@@ -3606,7 +3606,7 @@
     "lvl": 56,
     "race": "Hanged B",
     "resists": "TTTTTTTTTv",
-    "skills": ["Strike Attack", "Almighty Amp", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Megido", "Megidola", "Null Dizzy", "Null Freeze", "Null Shock", "Almighty Amp"],
     "stats": [500, 999, 10, 70, 30, 12, 12]
   },
   "Steel Gigas": {
@@ -3640,7 +3640,7 @@
     "lvl": 48,
     "race": "Strength B",
     "resists": "TrT-__-__-",
-    "skills": ["Strike Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Strike Attack", "Gigantic Fist", "Heat Wave", "Rebellion", "Mobius Rondo", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [5500, 999, 25, 5, 42, 5, 6]
   },
   "Subservient Left Hand": {
@@ -3650,7 +3650,7 @@
     "lvl": 42,
     "race": "Magician P",
     "resists": "--dw---r_-",
-    "skills": ["Strike Attack", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Matarukaja", "Marakukaja", "Matarunda", "Marakunda", "Resist Dizzy"],
     "stats": [1550, 999, 21, 32, 27, 32, 33]
   },
   "Supreme Hand": {
@@ -3683,7 +3683,7 @@
     "lvl": 56,
     "race": "Fortune B",
     "resists": "----__-rd-",
-    "skills": ["Pierce Attack", "Null Dizzy", "Hama Boost", "Mudo Boost", "Null Freeze", "Null Shock", "Fear Boost"],
+    "skills": ["Pierce Attack", "Agidyne", "Bufudyne", "Garudyne", "Ziodyne", "Hamaon", "Kougaon", "Mudoon", "Eigaon", "Maeigaon", "Megidola", "Tempest Slash", "Gigantic Fist", "Vile Assault", "Concentrate", "Evil Smile", "Null Dizzy", "Null Freeze", "Null Shock", "Fear Boost", "Hama Boost", "Mudo Boost"],
     "stats": [2500, 999, 50, 55, 45, 40, 30]
   },
   "Takaya B": {
@@ -3694,7 +3694,7 @@
     "lvl": 81,
     "race": "Fortune B",
     "resists": "----__-rd-",
-    "skills": ["Pierce Attack", "Null Dizzy", "Magic Mastery", "Almighty Amp", "Null Shock", "Hama Boost", "Mudo Boost", "Almighty Boost", "Ailment Boost"],
+    "skills": ["Pierce Attack", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Ziodyne", "Maziodyne", "Hamaon", "Kougaon", "Makougaon", "Mudoon", "Eigaon", "Maeigaon", "Megidola", "Megidolaon", "Ghastly Wail", "Brave Blade", "Vorpal Blade", "God's Hand", "Akasha Arts", "Primal Force", "Heat Riser", "Dekaja", "Dekunda", "Paradise of Quietus", "Evil Smile", "Infuriate", "Soul Drain", "Mahamaon", "Mamudoon", "Null Dizzy", "Null Shock", "Ailment Boost", "Hama Boost", "Mudo Boost", "Almighty Boost", "Almighty Amp", "Magic Mastery"],
     "stats": [8000, 999, 70, 85, 60, 55, 70]
   },
   "Tank-Form Shadow": {
@@ -3705,7 +3705,7 @@
     "lvl": 34,
     "race": "Unknown B",
     "resists": "ttttTTtTT-",
-    "skills": ["Pierce Attack", "Null Freeze", "Null Shock", "Null Dizzy"],
+    "skills": ["Pierce Attack", "Separate", "Armor-Piercing Shell", "High-Explosive Shell", "Null Dizzy", "Null Freeze", "Null Shock"],
     "stats": [3000, 999, 40, 30, 70, 25, 35]
   },
   "Tenjin Musha B": {
@@ -3716,7 +3716,7 @@
     "lvl": 80,
     "race": "Strength P",
     "resists": "rrt-__-d_-",
-    "skills": ["Slash Attack", "Slash Boost", "Apt Pupil", "Null Dizzy"],
+    "skills": ["Slash Attack", "Megidolaon", "Tempest Slash", "Deathbound", "Brave Blade", "Vorpal Blade", "Charge", "Null Dizzy", "Slash Boost", "Apt Pupil"],
     "stats": [3600, 999, 64, 55, 51, 48, 47]
   },
   "Tenjin Musha C": {
@@ -3738,7 +3738,7 @@
     "lvl": 43,
     "race": "Magician P",
     "resists": "-n-----d_-",
-    "skills": ["Slash Attack", "Hama Boost", "Null Dizzy", "Null Freeze", "Null Shock"],
+    "skills": ["Slash Attack", "Hamaon", "Mahama", "Foul Breath", "Masukunda", "Null Dizzy", "Null Freeze", "Null Shock", "Hama Boost"],
     "stats": [1638, 999, 22, 25, 36, 30, 44]
   },
   "Terror Dice": {
@@ -3749,7 +3749,7 @@
     "lvl": 22,
     "race": "Fortune P",
     "resists": "-n-----wn-",
-    "skills": ["Strike Attack", "Dark Boost", "Fear Boost"],
+    "skills": ["Strike Attack", "Eiga", "Maeiga", "Evil Touch", "Fatal End", "Evil Smile", "Dark Boost", "Fear Boost"],
     "stats": [812, 999, 15, 20, 17, 13, 15]
   },
   "The Reaper": {
@@ -3761,7 +3761,7 @@
     "lvl": 90,
     "race": "Death B",
     "resists": "----__-__-",
-    "skills": ["Pierce Attack", "Magic Mastery", "Null Dizzy", "Apt Pupil", "Ailment Boost", "Confuse Boost", "Mudo Boost", "Hama Boost"],
+    "skills": ["Pierce Attack", "Agidyne", "Maragidyne", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Ziodyne", "Maziodyne", "Hamaon", "Mahamaon", "Kougaon", "Makougaon", "Mudoon", "Mamudoon", "Eigaon", "Maeigaon", "Megidolaon", "Tentarafoo", "Virus Breath", "Brave Blade", "Vorpal Blade", "God's Hand", "Akasha Arts", "Vile Assault", "Primal Force", "Heat Riser", "Debilitate", "Dekaja", "Charge", "Concentrate", "Evil Smile", "Null Dizzy", "Confuse Boost", "Ailment Boost", "Hama Boost", "Mudo Boost", "Apt Pupil", "Magic Mastery"],
     "stats": [8000, 999, 99, 99, 66, 99, 66]
   },
   "Tome of Atrophy": {
@@ -3771,7 +3771,7 @@
     "lvl": 31,
     "race": "Priestess P",
     "resists": "---w-n-__-",
-    "skills": ["Strike Attack", "Kouha", "Makouha", "Tarukaja", "Rakukaja", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Bufula", "Kouha", "Makouha", "Tarukaja", "Rakukaja", "Sukukaja", "Matarunda", "Marakunda", "Masukunda", "Resist Dizzy"],
     "stats": [696, 999, 10, 21, 19, 21, 12]
   },
   "Tome of Persecution": {
@@ -3781,7 +3781,7 @@
     "lvl": 47,
     "race": "Priestess P",
     "resists": "----d--_w-",
-    "skills": ["Strike Attack"],
+    "skills": ["Strike Attack", "Bufudyne", "Matarukaja", "Marakukaja", "Masukukaja"],
     "stats": [1225, 999, 22, 30, 31, 30, 29]
   },
   "Trance Twins": {
@@ -3814,7 +3814,7 @@
     "lvl": 20,
     "race": "Priestess P",
     "resists": "---nw--__-",
-    "skills": ["Strike Attack", "Fire Boost", "Fire Amp"],
+    "skills": ["Strike Attack", "Agilao", "Agidyne", "Assault Dive", "Swift Strike", "Tarukaja", "Fire Boost", "Fire Amp"],
     "stats": [715, 999, 14, 20, 16, 14, 11]
   },
   "Treasure Hand": {
@@ -3856,7 +3856,7 @@
     "lvl": 48,
     "race": "Priestess P",
     "resists": "----s--_n-",
-    "skills": ["Strike Attack", "Magic Ability", "Magic Mastery", "Null Dizzy", "Almighty Boost"],
+    "skills": ["Strike Attack", "Agidyne", "Maragion", "Bufudyne", "Mabufula", "Garudyne", "Magarula", "Ziodyne", "Mazionga", "Kougaon", "Makouga", "Eigaon", "Maeiga", "Megidola", "Tarukaja", "Null Dizzy", "Almighty Boost", "Magic Ability", "Magic Mastery"],
     "stats": [2215, 999, 28, 45, 30, 35, 27]
   },
   "Vehement Idol C": {
@@ -3867,7 +3867,7 @@
     "lvl": 66,
     "race": "Priestess P",
     "resists": "--rrw-n_r-",
-    "skills": ["Strike Attack", "Fire Boost", "Fire Amp", "Resist Shock", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Maragidyne", "Heat Wave", "Heat Riser", "Concentrate", "Fire Break", "Resist Dizzy", "Resist Shock", "Fire Boost", "Fire Amp"],
     "stats": [1999, 999, 38, 66, 37, 39, 39]
   },
   "Venomous Magus": {
@@ -3877,7 +3877,7 @@
     "lvl": 35,
     "race": "Magician P",
     "resists": "---n-wn__-",
-    "skills": ["Strike Attack", "Poison Boost", "Ailment Boost", "Fire Boost", "Null Dizzy"],
+    "skills": ["Strike Attack", "Agidyne", "Maragion", "Poisma", "Poison Mist", "Null Dizzy", "Fire Boost", "Poison Boost", "Ailment Boost"],
     "stats": [1390, 999, 15, 30, 24, 22, 34]
   },
   "Venus Eagle": {
@@ -3921,7 +3921,7 @@
     "lvl": 61,
     "race": "Justice P",
     "resists": "ns-wr-r__-",
-    "skills": ["Slash Attack", "Slash Boost", "Ice Amp", "Wind Amp", "Null Dizzy"],
+    "skills": ["Slash Attack", "Bufudyne", "Mabufudyne", "Garudyne", "Magarudyne", "Deathbound", "Brave Blade", "Charge", "Concentrate", "Null Dizzy", "Slash Boost", "Ice Amp", "Wind Amp"],
     "stats": [1721, 999, 47, 41, 45, 33, 38]
   },
   "Voltaic Youngest Sibling": {
@@ -3931,7 +3931,7 @@
     "lvl": 64,
     "race": "Strength P",
     "resists": "-----rw__-",
-    "skills": ["Slash Attack", "Elec Boost", "Shock Boost", "Resist Dizzy"],
+    "skills": ["Slash Attack", "Ziodyne", "Maziodyne", "Getsu-ei", "Elec Break", "Resist Dizzy", "Elec Boost", "Shock Boost"],
     "stats": [1641, 999, 43, 43, 34, 43, 49]
   },
   "Wealth Hand": {
@@ -3953,7 +3953,7 @@
     "lvl": 69,
     "race": "Magician P",
     "resists": "s--wddd---",
-    "skills": ["Strike Attack", "Resist Dizzy"],
+    "skills": ["Strike Attack", "Matarukaja", "Marakukaja", "Heat Riser", "Matarunda", "Marakunda", "Resist Dizzy"],
     "stats": [1470, 999, 35, 37, 43, 48, 38]
   },
   "Wicked Turret": {
@@ -4018,7 +4018,7 @@
     "lvl": 12,
     "race": "Hermit P",
     "resists": "---dw-s__-",
-    "skills": ["Slash Attack", "Agilao", "Maragi", "Power Slash", "Fire Boost", "Resist Dizzy", "Slash Boost"],
+    "skills": ["Slash Attack", "Agi", "Agilao", "Maragi", "Power Slash", "Sukukaja", "Resist Dizzy", "Slash Boost", "Fire Boost"],
     "stats": [677, 999, 11, 13, 10, 12, 6]
   },
   "Wondrous Magus": {
@@ -4040,7 +4040,7 @@
     "lvl": 59,
     "race": "Justice P",
     "resists": "-------__-",
-    "skills": ["Strike Attack", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp", "Resist Freeze", "Resist Shock"],
+    "skills": ["Strike Attack", "Maragidyne", "Mabufudyne", "Magarudyne", "Maziodyne", "Makougaon", "Maeigaon", "Vile Assault", "Tarukaja", "Marakunda", "Resist Freeze", "Resist Shock", "Fire Amp", "Ice Amp", "Wind Amp", "Elec Amp"],
     "stats": [1753, 999, 28, 45, 35, 37, 47]
   },
   "Wrathful Book": {
