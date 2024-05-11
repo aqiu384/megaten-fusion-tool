@@ -69,7 +69,9 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const enemy of Object.values(ENEMY_DATA_JSON)) {
-    enemy['stats'] = enemy['stats'].slice(0, 3);
+    const stats = enemy['stats'];
+    enemy['stats'] = [stats[0], stats[1] * 3, stats[3] * 3];
+    enemy['drops'] = Object.keys(enemy['dodds']);
     enemy['resists'] = enemy['resists'].slice(0, 9);
   }
 

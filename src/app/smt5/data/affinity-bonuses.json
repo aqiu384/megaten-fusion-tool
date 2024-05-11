@@ -8,16 +8,18 @@
     "lig": "attack",
     "dar": "attack",
     "alm": "attack",
-    "ail": "attack",
+    "ail": "ailment",
     "rec": "support",
     "sup": "support"
   },
   "costs": {
     "attack": [10, 13, 16, 19, 25, 28, 31, 34, 40],
+    "ailment": [10, 13, 16, 19, 25, 28, 31, 34, 40],
     "support": [15, 20, 25, 30, 40]
   },
   "upgrades": {
-    "attack": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "attack": [10, 15, 20, 25, 35, 39, 43, 47, 55],
+    "ailment": [10, 15, 20, 25, 35, 40, 45, 50, 60],
     "support": [0, 0, 0, 0, 0]
   }
 }

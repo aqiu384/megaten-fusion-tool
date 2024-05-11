@@ -442,9 +442,19 @@
     "elem": "ail",
     "target": "1 enemy"
   },
+  "Double Action": {
+    "effect": "Low chance to act again each turn.",
+    "elem": "pas",
+    "unique": true
+  },
+  "Double Action II": {
+    "effect": "Medium chance to act again each turn.",
+    "elem": "pas",
+    "unique": true
+  },
   "Double Link": {
     "card": "Turdak",
-    "effect": "Raise damage dealt with first hit and number of Links. ",
+    "effect": "Raise damage dealt with first hit and number of Links.",
     "elem": "pas"
   },
   "Double Shot": {
@@ -835,7 +845,7 @@
   },
   "Healing Hand": {
     "card": "Gabriel",
-    "effect": "Raise HP restored by recovery skills. ",
+    "effect": "Raise HP restored by recovery skills.",
     "elem": "pas",
     "unique": true
   },
@@ -978,7 +988,7 @@
   },
   "Impure Reach": {
     "card": "Incubus",
-    "effect": "Raise chance of inflicting ailments. ",
+    "effect": "Raise chance of inflicting ailments.",
     "elem": "pas"
   },
   "Inferno Boost": {
@@ -988,7 +998,7 @@
   },
   "Infinite Link": {
     "card": "Chi You, Thanatos",
-    "effect": "Raise damage dealt with first hit and number of Links. ",
+    "effect": "Raise damage dealt with first hit and number of Links.",
     "elem": "pas",
     "unique": true
   },
@@ -1160,6 +1170,16 @@
     "effect": "A medium Wind attack.",
     "elem": "win",
     "target": "All enemies"
+  },
+  "Magic Boost": {
+    "effect": "Raise magic attack strength",
+    "elem": "pas",
+    "unique": true
+  },
+  "Magic Boost II": {
+    "effect": "Greatly raise magic attack strength",
+    "elem": "pas",
+    "unique": true
   },
   "Magic Mallet": {
     "effect": "Higher rate of rare materials from Power Spots",
@@ -1546,6 +1566,11 @@
     "melee": true,
     "target": "1 enemy"
   },
+  "Phys Boost": {
+    "effect": "Raise phys attack strength",
+    "elem": "pas",
+    "unique": true
+  },
   "Platinum Coin": {
     "effect": "Medium chance to prevent all Binds and ailments against the user's row",
     "elem": "pas",
@@ -1647,7 +1672,7 @@
   },
   "Quadruple Link": {
     "card": "Ongyo-Ki",
-    "effect": "Raise damage dealt with first hit and number of Links. ",
+    "effect": "Raise damage dealt with first hit and number of Links.",
     "elem": "pas"
   },
   "Rabbit's Foot": {
@@ -1916,7 +1941,7 @@
   "Shura Tensei": {
     "card": "Rakshasa",
     "cost": 1024,
-    "effect": "Greatly lowers HP each turn but greatly raises attack while active. ",
+    "effect": "Greatly lowers HP each turn but greatly raises attack while active.",
     "elem": "sup"
   },
   "Silence Circle": {
@@ -1969,7 +1994,7 @@
   },
   "Snake Glare": {
     "card": "Nozuchi",
-    "effect": "High chance of preventing preemptive attacks. ",
+    "effect": "High chance of preventing preemptive attacks.",
     "elem": "nav"
   },
   "Sonic Punch": {
@@ -2266,7 +2291,7 @@
   },
   "Triple Link": {
     "card": "Pale Rider",
-    "effect": "Raise damage dealt with first hit and number of Links. ",
+    "effect": "Raise damage dealt with first hit and number of Links.",
     "elem": "pas"
   },
   "Twin Slash": {
@@ -2309,6 +2334,21 @@
   },
   "Whirlwind Swing": {
     "effect": "Medium chance to add splash effect on single-target attack skills. Evolved Castor exclusive",
+    "elem": "pas",
+    "unique": true
+  },
+  "Wide Effect": {
+    "effect": "Low chance to add splash effect to single-target attack skills.",
+    "elem": "pas",
+    "unique": true
+  },
+  "Wide Effect II": {
+    "effect": "Medium chance to add splash effect to single-target attack skills.",
+    "elem": "pas",
+    "unique": true
+  },
+  "Wide Effect III": {
+    "effect": "High chance to add splash effect to single-target attack skills.",
     "elem": "pas",
     "unique": true
   },
