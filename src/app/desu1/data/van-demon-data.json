@@ -723,7 +723,7 @@
     "lvl": 2,
     "price": 65,
     "race": "Beast",
-    "resists": "--sw-s",
+    "resists": "-s-w-s",
     "skills": {
       "Agi": 0.1,
       "Animal Leg": 0.2,
@@ -932,7 +932,7 @@
     "resists": "--wn--",
     "skills": {
       "Mana Bonus": 0.1,
-      "Anti-Elec": 0.2,
+      "Anti-Elec": 16,
       "Devotion": 0.3,
       "Elec Dance": 16,
       "Mute Eyes": 17,
@@ -996,7 +996,7 @@
   },
   "Lucifer": {
     "cycle": "2345234523452345",
-    "growths": [5.5, 2.7, 2345],
+    "growths": [8.0, 4.0, 2345],
     "lvl": 99,
     "race": "Tyrant",
     "resists": "sssssn",
@@ -1010,7 +1010,7 @@
     "growths": [5.7, 2.2, 45],
     "lvl": 26,
     "race": "Deity",
-    "resists": "-s-s-s",
+    "resists": "-sws-s",
     "skills": {
       "Ares Aid": 0.1,
       "Awakening": 0.2,
@@ -1143,7 +1143,7 @@
   },
   "Nalagiri": {
     "cycle": "2224234523452345",
-    "growths": [6.8, 1, 2],
+    "growths": [6.8, 1.0, 2],
     "lvl": 26,
     "race": "Kishin",
     "resists": "s----s",
@@ -1243,7 +1243,7 @@
     "growths": [5.7, 2.5, 3],
     "lvl": 38,
     "race": "Deity",
-    "resists": "-wsn-s",
+    "resists": "--snws",
     "skills": {
       "Null Elec": 0.1,
       "Awakening": 0.2,
@@ -1441,9 +1441,9 @@
     "race": "Divine",
     "resists": "---s-w",
     "skills": {
-      "Recarm": 0.1,
-      "Blood Wine": 0.2,
-      "Mighty Hit": 27
+      "Blood Wine": 0.1,
+      "Mighty Hit": 27,
+      "Recarm": 28
     },
     "stats": [0, 240, 52, 15, 7, 14, 6]
   },
@@ -1578,8 +1578,8 @@
     "race": "Snake",
     "resists": "-sssws",
     "skills": {
-      "Constrict": 0.1,
-      "Elec Amp": 0.2,
+      "Elec Amp": 0.1,
+      "Constrict": 0.2,
       "Maziodyne": 47,
       "Elec Repel": 48
     },
@@ -1796,7 +1796,7 @@
       "Drain": 0.1,
       "Mana Surge": 0.2,
       "Charm/Glamour": 0.3,
-      "Maziodyne": 46,
+      "Ziodyne": 46,
       "Elec Repel": 47,
       "+Paralyze": 3318.2,
       "Diarahan": 3319.2
@@ -1852,7 +1852,7 @@
     "lvl": 52,
     "price": 5100,
     "race": "Touki",
-    "resists": "-n--ws",
+    "resists": "-n-sws",
     "skills": {
       "Diarahan": 0.1,
       "Aggravate": 0.2,

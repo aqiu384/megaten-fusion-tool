@@ -1,3154 +1,3609 @@
 {
   "Abaddon": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 47,
     "race": "Tower",
     "skills": {
-      "Kidney Smash": 0,
-      "All Guard": 0,
+      "Kidney Smash": 0.1,
+      "All Guard": 0.2,
       "Endure": 48,
       "Endure Talent": 49,
       "Vengeful Melee": 50
     },
-    "stats": [105, 17],
-    "inherit": "def"
+    "stats": [1050, 170]
   },
   "Agathion": {
+    "combat": "def",
+    "inherit": "firpp",
     "lvl": 3,
     "race": "Magician",
     "skills": {
-      "Rakukaja": 0,
-      "Endure Knack": 0,
+      "Rakukaja": 0.1,
+      "Endure Knack": 0.2,
       "Agi": 4,
       "Line Guard": 5,
       "Hunting Prayer": 6
     },
-    "stats": [12, 3],
-    "inherit": "def"
+    "stats": [120, 30]
   },
   "Alice": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 52,
     "race": "Death",
     "skills": {
-      "Eigaon": 0,
-      "Salome's Kiss": 0,
-      "Die For Me!": 0,
+      "Eigaon": 0.1,
+      "Salome's Kiss": 0.2,
+      "Die For Me!": 0.3,
       "Curse Boost": 53,
       "Maeiga": 54,
       "Dekunda": 56,
       "Curse Amp": 57
     },
-    "stats": [74, 24],
-    "inherit": "mag"
+    "stats": [740, 240]
   },
   "Alilat": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 82,
     "race": "Empress",
     "skills": {
-      "Mafreidyne": 0,
-      "Confusion Circle": 0,
-      "Circle Recovery": 0,
+      "Mafreidyne": 0.1,
+      "Confusion Circle": 0.2,
+      "Circle Recovery": 0.3,
       "Silence Circle": 83,
       "Decay Circle": 84,
       "Lethargy Circle": 85,
       "Spirit Summon": 86
     },
-    "stats": [138, 45],
-    "inherit": "mag"
+    "stats": [1380, 450]
   },
   "Alp": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 8,
     "race": "Devil",
     "skills": {
-      "Bufu": 0,
-      "Evil Touch": 0,
+      "Bufu": 0.1,
+      "Evil Touch": 0.2,
       "Sukunda": 9,
       "Magic Knack": 10,
       "Patra": 11
     },
-    "stats": [15, 6],
-    "inherit": "mag"
+    "stats": [150, 60]
   },
   "Alraune": {
+    "combat": "mag",
+    "inherit": "winpp",
     "lvl": 38,
     "race": "Moon",
     "skills": {
-      "Reppu Strike": 0,
-      "Garula": 0,
+      "Reppu Strike": 0.1,
+      "Garula": 0.2,
       "Wind Boost": 39,
       "Wind Screen": 40,
       "Magarula": 41
     },
-    "stats": [58, 20],
-    "inherit": "mag"
+    "stats": [580, 200]
   },
   "Ame-no-Uzume": {
+    "combat": "nav",
+    "inherit": "elepp",
     "lvl": 6,
     "race": "Empress",
     "skills": {
-      "Zio": 0,
-      "Dia": 0,
-      "Luck Knack": 0,
+      "Zio": 0.1,
+      "Dia": 0.2,
+      "Luck Knack": 0.3,
       "Pulinpa": 7,
       "Renewal Ray": 8,
       "Healing Finger": 9
     },
-    "stats": [13, 5],
-    "inherit": "nav"
+    "stats": [130, 50]
   },
   "Ammut": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 20,
     "race": "Tower",
     "skills": {
-      "Assault Dive": 0,
-      "Mazio": 0,
-      "Colossal Swing": 0,
+      "Assault Dive": 0.1,
+      "Mazio": 0.2,
+      "Colossal Swing": 0.3,
       "Regenerate 2": 21,
       "Bound Arts": 22,
       "Marakunda": 23,
       "Challenger Arts": 25
     },
-    "stats": [40, 8],
-    "inherit": "phy"
+    "stats": [400, 80]
   },
   "Ananta": {
+    "combat": "nav",
+    "inherit": "nukpp",
     "lvl": 61,
     "race": "Fortune",
     "skills": {
-      "Blade of Fury": 0,
-      "Mediarama": 0,
+      "Blade of Fury": 0.1,
+      "Mediarama": 0.2,
       "Death Needle": 62,
       "Pure Memento": 63,
       "Amrita": 64
     },
-    "stats": [110, 26],
-    "inherit": "nav"
+    "stats": [1100, 260]
   },
   "Andras": {
+    "combat": "mag",
+    "inherit": "psypp",
     "lvl": 14,
     "race": "Moon",
     "skills": {
-      "Poison Skewer": 0,
-      "Psi": 0,
+      "Poison Skewer": 0.1,
+      "Psi": 0.2,
       "Scarecrow": 15,
-      "Ambush Arts": 16,
+      "Ailment Arts": 16,
       "Psy Screen": 17
     },
-    "stats": [20, 9],
-    "inherit": "mag"
+    "stats": [200, 90]
   },
   "Angel": {
+    "combat": "nav",
+    "inherit": "ligpp",
     "lvl": 8,
     "race": "Justice",
     "skills": {
-      "Dia": 0,
-      "Luck Knack": 0,
+      "Dia": 0.1,
+      "Luck Knack": 0.2,
       "Kouha": 9,
       "Resist Bless": 10,
       "Hama": 11
     },
-    "stats": [16, 6],
-    "inherit": "nav"
+    "stats": [160, 60]
   },
   "Anubis": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 42,
     "race": "Judgement",
     "skills": {
-      "Makouga": 0,
-      "Maeiga": 0,
-      "Guillotine Slice": 0,
+      "Makouga": 0.1,
+      "Maeiga": 0.2,
+      "Guillotine Slice": 0.3,
       "Mamudo": 44,
       "Samarecarm": 45,
       "Resist Curse": 46,
       "Mahama": 48
     },
-    "stats": [62, 21],
-    "inherit": "mag"
+    "stats": [620, 210]
   },
   "Anzu": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 4,
     "race": "Emperor",
     "skills": {
-      "Fang Smash": 0,
-      "Sukukaja": 0,
+      "Fang Smash": 0.1,
+      "Sukukaja": 0.2,
       "Garu": 6,
       "Agility Knack": 7,
       "Twin Slash": 8
     },
-    "stats": [11, 3],
-    "inherit": "phy"
+    "stats": [110, 30]
   },
   "Apsaras": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 4,
     "race": "Temperance",
     "skills": {
-      "Dia": 0,
-      "Bufu": 0,
-      "Magic Knack": 0,
+      "Dia": 0.1,
+      "Bufu": 0.2,
+      "Magic Knack": 0.3,
       "Rakunda": 5,
       "Safety Prayer": 6,
       "Critical Eye": 7
     },
-    "stats": [12, 5],
-    "inherit": "nav"
+    "stats": [120, 50]
   },
   "Ara Mitama": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 61,
     "race": "Strength",
     "skills": {
-      "Orb of Power": 0,
-      "Orb of Resolve": 0,
+      "Orb of Power": 0.1,
+      "Orb of Resolve": 0.2,
       "Snake Glare": 63,
       "Yomi Return": 64
     },
-    "stats": [100, 31],
-    "inherit": "nav"
+    "stats": [1000, 310]
   },
   "Arahabaki": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 64,
     "race": "Hermit",
     "skills": {
-      "Eternal Melody": 0,
-      "Snake Glare": 0,
+      "Eternal Melody": 0.1,
+      "Snake Glare": 0.2,
       "Farsight": 65,
       "Purifying Rain": 66
     },
-    "stats": [109, 32],
-    "inherit": "nav"
+    "stats": [1090, 320]
   },
   "Archangel": {
+    "combat": "phy",
+    "inherit": "nukpp",
     "lvl": 14,
     "race": "Justice",
     "skills": {
-      "Twin Slash": 0,
-      "Fang Smash": 0,
-      "Frei": 0,
+      "Twin Slash": 0.1,
+      "Fang Smash": 0.2,
+      "Frei": 0.3,
       "Resist Bless": 15,
       "Kouha": 16,
       "Endure": 17,
       "Mafrei": 18
     },
-    "stats": [31, 6],
-    "inherit": "phy"
+    "stats": [310, 60]
   },
   "Ardha": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 74,
     "race": "Fool",
     "skills": {
-      "Saint's Touch": 0,
-      "Freidyne": 0,
-      "Regenerate 2": 0,
+      "Saint's Touch": 0.1,
+      "Freidyne": 0.2,
+      "Regenerate 2": 0.3,
       "Prana": 75,
       "Mafreidyne": 76,
       "Myriad Arrows": 77,
-      "Invigorate 3": 78
+      "Invigorate 3": 79
     },
-    "stats": [121, 41],
-    "inherit": "mag"
+    "stats": [1210, 410]
   },
   "Ares": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 30,
     "race": "Tower",
     "skills": {
-      "Mighty Swing": 0,
-      "Line Guard": 0,
-      "Endure Knack": 0,
+      "Mighty Swing": 0.1,
+      "Line Guard": 0.2,
+      "Endure Knack": 0.3,
       "Raimeizan": 31,
       "Endure Talent": 32,
       "Bound Arts": 33,
       "Vengeful Smash": 34
     },
-    "stats": [61, 11],
-    "inherit": "def"
+    "stats": [610, 110]
+  },
+  "Ariadne": {
+    "combat": "def",
+    "inherit": "almpp",
+    "lvl": 15,
+    "race": "Fortune",
+    "skills": {
+      "Ariadne Chain": 0.1,
+      "Punishment": 0.2,
+      "Debilitate": 0.3,
+      "Power Charge": 16,
+      "Absorb Fire": 17,
+      "Absorb Elec": 18
+    },
+    "stats": [280, 140]
+  },
+  "Ariadne Picaro": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 30,
+    "race": "Fortune",
+    "skills": {
+      "Ariadne Chain": 0.1,
+      "Danse Macabre": 0.2,
+      "Heat Riser": 0.3,
+      "Mind Charge": 31,
+      "Absorb Ice": 32,
+      "Absorb Wind": 33
+    },
+    "stats": [400, 200]
   },
   "Astaroth": {
+    "combat": "nav",
+    "inherit": "darpp",
     "lvl": 74,
     "race": "Devil",
     "skills": {
-      "Eigaon": 0,
-      "Debilitate": 0,
+      "Eigaon": 0.1,
+      "Debilitate": 0.2,
       "Dragon Cry": 75,
       "Free Memento": 76,
       "Maeigaon": 77
     },
-    "stats": [128, 43],
-    "inherit": "nav"
+    "stats": [1280, 430]
+  },
+  "Asterius": {
+    "combat": "phy",
+    "inherit": "almpp",
+    "lvl": 80,
+    "race": "Fortune",
+    "skills": {
+      "Brutal Arm": 0.1,
+      "God's Hand": 0.2,
+      "Regenerate 3": 0.3,
+      "Immunity Buffer": 81,
+      "Endure": 82,
+      "Fury Order": 83
+    },
+    "stats": [1950, 320]
+  },
+  "Asterius Picaro": {
+    "combat": "phy",
+    "inherit": "almpp",
+    "lvl": 82,
+    "race": "Fortune",
+    "skills": {
+      "Brutal Arm": 0.1,
+      "Primal Force": 0.2,
+      "Myriad Arrows": 0.3,
+      "Shura Instincts": 83,
+      "Power Genius": 84,
+      "Fury Order": 85
+    },
+    "stats": [2000, 280]
   },
   "Asura": {
+    "combat": "phy",
+    "inherit": "nukpp",
     "lvl": 87,
     "race": "Sun",
     "skills": {
-      "Primal Force": 0,
-      "Light Wave": 0,
-      "Nucleostrike Link": 0,
+      "Primal Force": 0.1,
+      "Light Wave": 0.2,
+      "Nucleostrike Link": 0.3,
       "Golden Link": 89,
       "Shura Instincts": 90,
       "Infinite Link": 91,
       "Shura Revert": 92
     },
-    "stats": [212, 30],
-    "inherit": "phy"
+    "stats": [2120, 300]
   },
   "Atavaka": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 73,
     "race": "Chariot",
     "skills": {
-      "Hailstorm": 0,
-      "Death Counter": 0,
+      "Hailstorm": 0.1,
+      "Death Counter": 0.2,
       "Bound Arts+": 74,
       "Whirlwind Swing": 75,
       "Hamaon": 76
     },
-    "stats": [162, 31],
-    "inherit": "phy"
+    "stats": [1620, 310]
   },
   "Atropos": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 54,
     "race": "Fortune",
     "skills": {
-      "Calming Lull": 0,
-      "Harvest Prayer": 0,
+      "Calming Lull": 0.1,
+      "Harvest Prayer": 0.2,
       "Renewal Ray": 55,
       "Paths of Light": 57
     },
-    "stats": [88, 29],
-    "inherit": "nav"
+    "stats": [880, 290]
   },
   "Attis": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 80,
     "race": "Hanged",
     "skills": {
-      "Maragidyne": 0,
-      "Masukukaja": 0,
-      "Challenger Arts+": 0,
+      "Maragidyne": 0.1,
+      "Masukukaja": 0.2,
+      "Challenger Arts+": 0.3,
       "Absorb Fire": 82,
       "Magic Genius": 83,
       "Matarunda": 84,
       "Aeon Rain": 85
     },
-    "stats": [135, 43],
-    "inherit": "mag"
+    "stats": [1350, 430]
   },
   "Azumi": {
+    "combat": "def",
+    "inherit": "icepp",
     "lvl": 3,
     "race": "Hermit",
     "skills": {
-      "Lunge": 0,
-      "Sukunda": 0,
+      "Lunge": 0.1,
+      "Sukunda": 0.2,
       "Bufu": 5,
       "Agility Knack": 6,
       "Single Shot": 7
     },
-    "stats": [13, 3],
-    "inherit": "def"
+    "stats": [130, 30]
   },
   "Baal": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 65,
     "race": "Emperor",
     "skills": {
-      "Windstrike Link": 0,
-      "Magarula": 0,
+      "Windstrike Link": 0.1,
+      "Magarula": 0.2,
       "Quadruple Link": 66,
       "Dekaja": 67,
       "Infinite Link": 69
     },
-    "stats": [128, 23],
-    "inherit": "phy"
+    "stats": [1280, 230]
   },
   "Baal Zebul": {
+    "combat": "nav",
+    "inherit": "elepp",
     "lvl": 76,
     "race": "Hierophant",
     "skills": {
-      "Maziodyne": 0,
-      "Stun Circle": 0,
-      "Ailment Arts+": 0,
+      "Maziodyne": 0.1,
+      "Stun Circle": 0.2,
+      "Ailment Arts+": 0.3,
       "Elec Turbo": 78,
       "Samarecarm": 79,
       "Binding Aura": 80,
       "Immunity Buffer": 81
     },
-    "stats": [127, 42],
-    "inherit": "nav"
+    "stats": [1270, 420]
   },
   "Bai Suzhen": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 40,
     "race": "Fool",
     "skills": {
-      "Glacial Edge": 0,
-      "Icestrike Link": 0,
-      "Me Patra": 0,
+      "Glacial Edge": 0.1,
+      "Icestrike Link": 0.2,
+      "Me Patra": 0.3,
       "Mediarama": 42,
       "Ice Screen": 43,
       "Marakunda": 44,
       "Paths of Light": 46
     },
-    "stats": [61, 21],
-    "inherit": "mag"
+    "stats": [610, 210]
   },
   "Balor": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 68,
     "race": "Death",
     "skills": {
-      "Black Spot": 0,
-      "All Guard": 0,
+      "Black Spot": 0.1,
+      "All Guard": 0.2,
       "Colossal Swing": 70,
       "Endure": 71,
       "God's Hand": 73
     },
-    "stats": [169, 23],
-    "inherit": "def"
+    "stats": [1690, 230]
   },
   "Baphomet": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 59,
     "race": "Devil",
     "skills": {
-      "Mafreila": 0,
-      "Lethargy Circle": 0,
+      "Mafreila": 0.1,
+      "Lethargy Circle": 0.2,
       "Beast Summon": 60,
       "Freidyne": 61,
       "Null Hex": 62
     },
-    "stats": [85, 29],
-    "inherit": "mag"
+    "stats": [850, 290]
   },
   "Barong": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 58,
     "race": "Emperor",
     "skills": {
-      "Mazionga": 0,
-      "Weapon Crusher": 0,
+      "Mazionga": 0.1,
+      "Weapon Crusher": 0.2,
       "Ziodyne": 60,
       "Sleep Strike": 61,
       "Null Sleep": 62
     },
-    "stats": [93, 24],
-    "inherit": "mag"
+    "stats": [930, 240]
   },
   "Basilisk": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 31,
     "race": "Sun",
     "skills": {
-      "Kidney Smash": 0,
-      "Poison Skewer": 0,
+      "Kidney Smash": 0.1,
+      "Poison Skewer": 0.2,
       "Mazio": 32,
       "Bind Arts": 33,
       "Restoring Touch": 34
     },
-    "stats": [54, 12],
-    "inherit": "phy"
+    "stats": [540, 120]
   },
   "Beelzebub": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 86,
     "race": "Devil",
     "skills": {
-      "Maeigaon": 0,
-      "Lethargy Circle": 0,
-      "Debilitate": 0,
+      "Maeigaon": 0.1,
+      "Lethargy Circle": 0.2,
+      "Debilitate": 0.3,
       "Curse Turbo": 88,
       "Heat Riser": 89,
       "Heroic Gemini": 90,
       "Invigorate 3": 91
     },
-    "stats": [145, 48],
-    "inherit": "mag"
+    "stats": [1450, 480]
   },
   "Belial": {
+    "combat": "nav",
+    "inherit": "firpp",
     "lvl": 51,
     "race": "Devil",
     "skills": {
-      "Death Needle": 0,
-      "Poison Breath": 0,
+      "Death Needle": 0.1,
+      "Poison Breath": 0.2,
       "Ailment Arts+": 53,
       "Sleep Circle": 54,
       "Agidyne": 56
     },
-    "stats": [90, 23],
-    "inherit": "nav"
+    "stats": [900, 230]
   },
   "Belphegor": {
+    "combat": "phy",
+    "inherit": "icepp",
     "lvl": 44,
     "race": "Devil",
     "skills": {
-      "Triple Down": 0,
-      "Icestrike Link": 0,
+      "Triple Down": 0.1,
+      "Icestrike Link": 0.2,
       "Stun Circle": 45,
       "Tousatsujin": 46,
       "Mabufula": 47
     },
-    "stats": [81, 15],
-    "inherit": "phy"
+    "stats": [810, 150]
   },
   "Berith": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 13,
     "race": "Hanged",
     "skills": {
-      "Single Shot": 0,
-      "Zio": 0,
+      "Single Shot": 0.1,
+      "Zio": 0.2,
       "Rakukaja": 14,
       "Disarm": 15,
       "Bind Arts": 16
     },
-    "stats": [29, 5],
-    "inherit": "phy"
+    "stats": [290, 50]
   },
   "Berserker": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 35,
     "race": "Judgement",
     "skills": {
-      "Mighty Swing": 0,
-      "Shura Tensei": 0,
-      "Endure": 0,
+      "Mighty Swing": 0.1,
+      "Shura Tensei": 0.2,
+      "Endure": 0.3,
       "Herculean Strike": 37,
       "Challenger Arts": 38,
       "Shura Revert": 39,
       "Regenerate 2": 40
     },
-    "stats": [52, 18],
-    "inherit": "phy"
+    "stats": [520, 180]
   },
   "Bicorn": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 17,
     "race": "Temperance",
     "skills": {
-      "Treasure Hunter": 0,
-      "Orb of Haste": 0,
+      "Treasure Hunter": 0.1,
+      "Orb of Haste": 0.2,
       "Orb of Power": 18,
       "Snake Glare": 19
     },
-    "stats": [26, 11],
-    "inherit": "nav"
+    "stats": [260, 110]
   },
   "Bifrons": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 12,
     "race": "Fool",
     "skills": {
-      "Eiha": 0,
-      "Kouha": 0,
+      "Eiha": 0.1,
+      "Kouha": 0.2,
       "Tarunda": 13,
       "Resist Bless": 14,
       "Recarm": 15
     },
-    "stats": [18, 7],
-    "inherit": "mag"
+    "stats": [180, 70]
   },
   "Black Frost": {
+    "combat": "phy",
+    "inherit": "icepp",
     "lvl": 37,
     "race": "Fool",
     "skills": {
-      "Silent Thrust": 0,
-      "Lucky Punch": 0,
-      "Combo Arts+": 0,
+      "Silent Thrust": 0.1,
+      "Lucky Punch": 0.2,
+      "Combo Arts+": 0.3,
       "Icy Paradise": 38,
       "Critical Eye": 39,
       "Masukunda": 40,
       "Black Spot": 41
     },
-    "stats": [72, 13],
-    "inherit": "phy"
+    "stats": [720, 130]
   },
   "Black Maria": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 83,
     "race": "Priestess",
     "skills": {
-      "Mabufudyne": 0,
-      "Runic Shield": 0,
-      "Mind Charge": 0,
+      "Mabufudyne": 0.1,
+      "Runic Shield": 0.2,
+      "Mind Charge": 0.3,
       "Salome's Kiss": 85,
       "Ice Turbo": 86,
       "Null M-Bind": 87,
       "Mahamaon": 88
     },
-    "stats": [140, 47],
-    "inherit": "mag"
+    "stats": [1400, 470]
   },
   "Black Rider": {
+    "combat": "phy",
+    "inherit": "darpp",
     "lvl": 50,
     "race": "Judgement",
     "skills": {
-      "Strike Link": 0,
-      "Calm Blade": 0,
-      "Quadruple Link": 0,
+      "Strike Link": 0.1,
+      "Calm Blade": 0.2,
+      "Quadruple Link": 0.3,
       "Maeiga": 51,
       "Curse Screen": 52,
       "Mamudo": 53,
       "Eigaon": 55
     },
-    "stats": [92, 18],
-    "inherit": "phy"
+    "stats": [920, 180]
   },
   "Bugs": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 58,
     "race": "Death",
     "skills": {
-      "Deathbound": 0,
-      "Scarecrow": 0,
-      "Bound Arts+": 0,
+      "Deathbound": 0.1,
+      "Scarecrow": 0.2,
+      "Bound Arts+": 0.3,
       "Invigorate 1": 59,
       "Heroic Wind": 60,
       "Null Poison": 61,
       "Debilitate": 62
     },
-    "stats": [112, 22],
-    "inherit": "phy"
+    "stats": [1120, 220]
   },
   "Byakko": {
+    "combat": "def",
+    "inherit": "icepp",
     "lvl": 56,
     "race": "Temperance",
     "skills": {
-      "Tousatsujin": 0,
-      "Diarama": 0,
+      "Tousatsujin": 0.1,
+      "Diarama": 0.2,
       "Bufudyne": 58,
       "Critical Eye": 59,
       "Quadruple Link": 60
     },
-    "stats": [110, 21],
-    "inherit": "def"
+    "stats": [1100, 210]
   },
   "Caladrius": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 26,
     "race": "Hermit",
     "skills": {
-      "Elecstrike Link": 0,
-      "Raikouzan": 0,
-      "Resist Elec": 0,
+      "Elecstrike Link": 0.1,
+      "Raikouzan": 0.2,
+      "Resist Elec": 0.3,
       "Double Link": 27,
       "Media": 28,
       "Null A-Bind": 29,
       "Triple Link": 31
     },
-    "stats": [35, 15],
-    "inherit": "phy"
+    "stats": [350, 150]
   },
   "Chernobog": {
+    "combat": "phy",
+    "inherit": "darpp",
     "lvl": 63,
     "race": "Moon",
     "skills": {
-      "Black Spot": 0,
-      "Curse Screen": 0,
+      "Black Spot": 0.1,
+      "Curse Screen": 0.2,
       "Poison Breath": 64,
       "Poison Circle": 65,
       "Deathbound": 66
     },
-    "stats": [142, 20],
-    "inherit": "phy"
+    "stats": [1420, 200]
   },
   "Cherub": {
+    "combat": "def",
+    "inherit": "elepp",
     "lvl": 43,
     "race": "Hierophant",
     "skills": {
-      "Zionga": 0,
-      "Line Guard": 0,
-      "Mediarama": 0,
+      "Zionga": 0.1,
+      "Line Guard": 0.2,
+      "Mediarama": 0.3,
       "Raijinzan": 44,
       "Healing Hand": 45,
       "Bless Screen": 46,
       "Heat Riser": 48
     },
-    "stats": [84, 16],
-    "inherit": "def"
+    "stats": [840, 160]
   },
   "Chi You": {
+    "combat": "phy",
+    "inherit": "psypp",
     "lvl": 86,
     "race": "Tower",
     "skills": {
-      "Agneyastra": 0,
-      "Psycho Force": 0,
-      "Power Charge": 0,
+      "Agneyastra": 0.1,
+      "Psycho Force": 0.2,
+      "Power Charge": 0.3,
       "Shura Instincts": 87,
       "True Critical Eye": 88,
       "Agility Genius": 89,
       "Ambush Arts+": 90
     },
-    "stats": [185, 35],
-    "inherit": "phy"
+    "stats": [1850, 350]
   },
   "Chimera": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 12,
     "race": "Chariot",
     "skills": {
-      "Agi": 0,
-      "Twin Slash": 0,
-      "Poisma": 0,
+      "Agi": 0.1,
+      "Twin Slash": 0.2,
+      "Poisma": 0.3,
       "Snake Glare": 14,
       "Resist Fire": 15,
       "Dodge Arts": 16,
       "Leg Reaper": 17
     },
-    "stats": [27, 5],
-    "inherit": "phy"
+    "stats": [270, 50]
   },
   "Clotho": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 32,
     "race": "Fortune",
     "skills": {
-      "Orb of Power": 0,
-      "Harvest Prayer": 0,
+      "Orb of Power": 0.1,
+      "Harvest Prayer": 0.2,
       "Life Aid": 34,
       "Fortune Hunter": 35
     },
-    "stats": [50, 17],
-    "inherit": "nav"
+    "stats": [500, 170]
   },
   "Cu Chulainn": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 39,
     "race": "Tower",
     "skills": {
-      "Reppu Strike": 0,
-      "Heat Wave": 0,
-      "Resist Wind": 0,
+      "Reppu Strike": 0.1,
+      "Heat Wave": 0.2,
+      "Resist Wind": 0.3,
       "Dodge Arts": 41,
       "Agility Talent": 42,
       "Brutal Slash": 43,
       "Power Charge": 45
     },
-    "stats": [80, 15],
-    "inherit": "phy"
+    "stats": [800, 150]
   },
   "Cu Sith": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 10,
     "race": "Sun",
     "skills": {
-      "Safety Prayer": 0,
-      "Treasure Hunter": 0,
+      "Safety Prayer": 0.1,
+      "Treasure Hunter": 0.2,
       "Orb of Resolve": 12,
       "Renewal Ray": 14
     },
-    "stats": [19, 6],
-    "inherit": "nav"
+    "stats": [190, 60]
   },
   "Cybele": {
+    "combat": "nav",
+    "inherit": "winpp",
     "lvl": 48,
     "race": "Lovers",
     "skills": {
-      "Garula": 0,
-      "Diarama": 0,
+      "Garula": 0.1,
+      "Diarama": 0.2,
       "Idol Hands": 50,
       "Wind Screen": 51,
       "Magarula": 52
     },
-    "stats": [73, 24],
-    "inherit": "nav"
+    "stats": [730, 240]
   },
   "Daisoujou": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 60,
     "race": "Hierophant",
     "skills": {
-      "Kougaon": 0,
-      "Luck Talent": 0,
-      "Samsara": 0,
+      "Kougaon": 0.1,
+      "Luck Talent": 0.2,
+      "Samsara": 0.3,
       "Diarahan": 61,
       "Restoring Touch": 62,
       "Silence Circle": 63,
       "Bless Amp": 65
     },
-    "stats": [86, 29],
-    "inherit": "mag"
+    "stats": [860, 290]
   },
   "Dantalian": {
+    "combat": "nav",
+    "inherit": "nukpp",
     "lvl": 36,
     "race": "Hierophant",
     "skills": {
-      "Scorching Blast": 0,
-      "Makajam": 0,
-      "Bind Arts": 0,
+      "Scorching Blast": 0.1,
+      "Makajam": 0.2,
+      "Bind Arts": 0.3,
       "Resist Nuke": 37,
       "Null M-Bind": 38,
-      "Nuke Screen": 39,
+      "Nuclear Screen": 39,
       "Mafreila": 41
     },
-    "stats": [54, 18],
-    "inherit": "nav"
+    "stats": [540, 180]
   },
   "Decarabia": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 52,
     "race": "Fool",
     "skills": {
-      "Nuclear Blast": 0,
-      "Mutudi": 0,
+      "Nuclear Blast": 0.1,
+      "Mutudi": 0.2,
       "Megidola": 54,
       "Confusion Circle": 55,
       "Mafreila": 56
     },
-    "stats": [74, 24],
-    "inherit": "mag"
+    "stats": [740, 240]
   },
   "Dis": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 39,
     "race": "Magician",
     "skills": {
-      "Yomi Return": 0,
-      "Orb of Resolve": 0,
+      "Yomi Return": 0.1,
+      "Orb of Resolve": 0.2,
       "Eternal Melody": 41,
       "Purifying Rain": 42
     },
-    "stats": [67, 21],
-    "inherit": "nav"
+    "stats": [670, 210]
   },
   "Dominion": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 39,
     "race": "Justice",
     "skills": {
-      "Kouga": 0,
-      "Bless Boost": 0,
+      "Kouga": 0.1,
+      "Bless Boost": 0.2,
       "Mediarama": 40,
       "Resist Bless": 41,
       "Samarecarm": 42
     },
-    "stats": [63, 20],
-    "inherit": "mag"
+    "stats": [630, 200]
   },
   "Dzelarhons": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 41,
     "race": "Priestess",
     "skills": {
-      "Gokuentou": 0,
-      "Poison Circle": 0,
-      "Fire Boost": 0,
+      "Gokuentou": 0.1,
+      "Poison Circle": 0.2,
+      "Fire Boost": 0.3,
       "Danse Macabre": 42,
       "Stun Circle": 43,
       "Beast Summon": 44,
       "Maragion": 45
     },
-    "stats": [71, 19],
-    "inherit": "mag"
+    "stats": [710, 190]
   },
   "Eligor": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 19,
     "race": "Chariot",
     "skills": {
-      "Gurentou": 0,
-      "Guillotine": 0,
+      "Gurentou": 0.1,
+      "Guillotine": 0.2,
       "Giant Slice": 20,
       "Resist Fire": 21,
       "Mighty Swing": 22
     },
-    "stats": [39, 7],
-    "inherit": "phy"
+    "stats": [390, 70]
   },
   "Empusa": {
+    "combat": "nav",
+    "inherit": "darpp",
     "lvl": 4,
     "race": "Death",
     "skills": {
-      "Evil Touch": 0,
-      "Patra": 0,
+      "Evil Touch": 0.1,
+      "Patra": 0.2,
       "Poisma": 5,
       "Eiha": 6,
       "Mudo": 8
     },
-    "stats": [13, 5],
-    "inherit": "nav"
-  },
-  "Phoenix": {
-    "lvl": 18,
-    "race": "Sun",
-    "skills": {
-      "Firestrike Link": 0,
-      "Recarm": 0,
-      "Maragi": 20,
-      "Fire Screen": 21,
-      "Free Memento": 22
-    },
-    "stats": [25, 10],
-    "inherit": "nav"
+    "stats": [130, 50]
   },
   "Fenrir": {
+    "combat": "phy",
+    "inherit": "icepp",
     "lvl": 43,
     "race": "Moon",
     "skills": {
-      "Deathbound": 0,
-      "Shura Tensei": 0,
-      "Bestial Roar": 0,
+      "Deathbound": 0.1,
+      "Shura Tensei": 0.2,
+      "Bestial Roar": 0.3,
       "Shura Revert": 44,
       "Regenerate 2": 45,
       "Agility Talent": 46,
       "Shura Instincts": 47
     },
-    "stats": [94, 14],
-    "inherit": "phy"
+    "stats": [940, 140]
   },
   "Flauros": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 40,
     "race": "Death",
     "skills": {
-      "Raimeizan": 0,
-      "Zionga": 0,
-      "Punishing Bite": 0,
+      "Raimeizan": 0.1,
+      "Zionga": 0.2,
+      "Punishing Bite": 0.3,
       "Arrow Rain": 42,
       "Resist Elec": 43,
       "Elec Screen": 44,
       "Mazionga": 46
     },
-    "stats": [91, 14],
-    "inherit": "phy"
+    "stats": [910, 140]
   },
   "Fortuna": {
+    "combat": "mag",
+    "inherit": "winpp",
     "lvl": 26,
     "race": "Fortune",
     "skills": {
-      "Jinpugeki": 0,
-      "Magaru": 0,
+      "Jinpugeki": 0.1,
+      "Magaru": 0.2,
       "Sleeper Punch": 27,
       "Masukunda": 28,
       "Resist Wind": 29
     },
-    "stats": [33, 14],
-    "inherit": "mag"
+    "stats": [330, 140]
   },
   "Futsunushi": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 85,
     "race": "Chariot",
     "skills": {
-      "Brave Blade": 0,
-      "Magarudyne": 0,
-      "Matarukaja": 0,
+      "Brave Blade": 0.1,
+      "Magarudyne": 0.2,
+      "Matarukaja": 0.3,
       "Tornado Boost": 87,
       "Power Genius": 88,
       "Whirlwind Swing": 89,
       "Dragon Cry": 90
     },
-    "stats": [184, 34],
-    "inherit": "phy"
+    "stats": [1840, 340]
   },
   "Gabriel": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 47,
     "race": "Priestess",
     "skills": {
-      "Raijinzan": 0,
-      "Elecstrike Link": 0,
-      "Mahama": 0,
+      "Raijinzan": 0.1,
+      "Elecstrike Link": 0.2,
+      "Mahama": 0.3,
       "Mazionga": 48,
       "Elec Screen": 49,
       "Elec Boost": 50,
       "Ziodyne": 51
     },
-    "stats": [98, 20],
-    "inherit": "phy"
+    "stats": [980, 200]
   },
   "Ganesha": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 51,
     "race": "Emperor",
     "skills": {
-      "Brain Shake": 0,
-      "All Guard": 0,
+      "Brain Shake": 0.1,
+      "All Guard": 0.2,
       "Matarunda": 52,
       "Calm Blade": 53,
       "Pure Memento": 54
     },
-    "stats": [114, 18],
-    "inherit": "def"
+    "stats": [1140, 180]
   },
   "Ganga": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 28,
     "race": "Priestess",
     "skills": {
-      "Mabufu": 0,
-      "Guillotine Slice": 0,
+      "Mabufu": 0.1,
+      "Guillotine Slice": 0.2,
       "Ailment Arts": 29,
       "Resist Ice": 30,
       "Masukunda": 31
     },
-    "stats": [40, 12],
-    "inherit": "mag"
+    "stats": [400, 120]
   },
   "Garuda": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 50,
     "race": "Star",
     "skills": {
-      "Windstrike Link": 0,
-      "Achilles Reaper": 0,
+      "Windstrike Link": 0.1,
+      "Achilles Reaper": 0.2,
       "Magarula": 51,
       "Hailstorm": 52,
       "Kamikaze Strike": 53
     },
-    "stats": [80, 21],
-    "inherit": "phy"
+    "stats": [800, 210]
   },
   "Gemori": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 16,
     "race": "Star",
     "skills": {
-      "Frei": 0,
-      "Psi": 0,
-      "Dia": 0,
+      "Frei": 0.1,
+      "Psi": 0.2,
+      "Dia": 0.3,
       "Life Aid": 18,
       "Healing Finger": 19,
       "Psy Boost": 20,
-      "Nuke Boost": 21
+      "Nuclear Boost": 21
     },
-    "stats": [23, 9],
-    "inherit": "mag"
+    "stats": [230, 90]
   },
   "Genbu": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 32,
     "race": "Temperance",
     "skills": {
-      "Orb of Haste": 0,
-      "Magic Mallet": 0,
+      "Orb of Haste": 0.1,
+      "Magic Mallet": 0.2,
       "Renewal Ray": 33,
       "Clairvoyance": 34
     },
-    "stats": [50, 17],
-    "inherit": "nav"
+    "stats": [500, 170]
   },
   "Girimehkala": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 46,
     "race": "Moon",
     "skills": {
-      "Death Counter": 0,
-      "Guillotine Slice": 0,
+      "Death Counter": 0.1,
+      "Guillotine Slice": 0.2,
       "Eiga": 47,
       "Dekaja": 48,
       "Mamudo": 49
     },
-    "stats": [86, 16],
-    "inherit": "phy"
+    "stats": [860, 160]
   },
   "Gorgon": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 29,
     "race": "Hanged",
     "skills": {
-      "Orb of Resolve": 0,
-      "Clairvoyance": 0,
+      "Orb of Resolve": 0.1,
+      "Clairvoyance": 0.2,
       "Calming Lull": 31,
       "Purifying Rain": 32
     },
-    "stats": [42, 16],
-    "inherit": "nav"
+    "stats": [420, 160]
   },
   "Gozuki": {
+    "combat": "def",
+    "inherit": "winpp",
     "lvl": 31,
     "race": "Strength",
     "skills": {
-      "Magaru": 0,
-      "All Guard": 0,
+      "Magaru": 0.1,
+      "All Guard": 0.2,
       "Armor Breaker": 32,
       "Vengeful Smash": 33,
       "Null S-Bind": 34
     },
-    "stats": [66, 12],
-    "inherit": "def"
+    "stats": [660, 120]
   },
   "Hachiman": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 79,
     "race": "Sun",
     "skills": {
-      "Orb of Power": 0,
-      "Purifying Rain": 0,
-      "Victory Cry": 0,
+      "Orb of Power": 0.1,
+      "Purifying Rain": 0.2,
+      "Victory Cry": 0.3,
       "Eternal Melody": 81
     },
-    "stats": [148, 46],
-    "inherit": "nav"
+    "stats": [1480, 460]
   },
   "Halphas": {
+    "combat": "mag",
+    "inherit": "winpp",
     "lvl": 5,
     "race": "Hierophant",
     "skills": {
-      "Twin Slash": 0,
-      "Garu": 0,
-      "Tarukaja": 0,
+      "Twin Slash": 0.1,
+      "Garu": 0.2,
+      "Tarukaja": 0.3,
       "First Star": 6,
       "Resist Wind": 7,
       "Agility Knack": 8
     },
-    "stats": [12, 3],
-    "inherit": "mag"
+    "stats": [120, 30]
   },
   "Hanuman": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 45,
     "race": "Strength",
     "skills": {
-      "Heat Wave": 0,
-      "Armor Breaker": 0,
+      "Heat Wave": 0.1,
+      "Armor Breaker": 0.2,
       "Black Spot": 47,
       "Ambush Arts+": 48,
       "Sleep Strike": 49
     },
-    "stats": [96, 15],
-    "inherit": "phy"
+    "stats": [960, 150]
   },
   "Hare of Inaba": {
+    "combat": "phy",
+    "inherit": "ligpp",
     "lvl": 25,
     "race": "Moon",
     "skills": {
-      "Arrow Rain": 0,
-      "Lucky Punch": 0,
-      "Makouha": 0,
+      "Arrow Rain": 0.1,
+      "Lucky Punch": 0.2,
+      "Makouha": 0.3,
       "Luck Talent": 26,
       "Mahama": 28,
       "Restoring Touch": 29,
       "Mediarama": 30
     },
-    "stats": [43, 10],
-    "inherit": "phy"
+    "stats": [430, 100]
   },
   "Hariti": {
+    "combat": "mag",
+    "inherit": "psypp",
     "lvl": 54,
     "race": "Priestess",
     "skills": {
-      "Mapsio": 0,
-      "Mediarama": 0,
+      "Mapsio": 0.1,
+      "Mediarama": 0.2,
       "Samarecarm": 55,
       "Psy Screen": 56,
       "Psy Boost": 57
     },
-    "stats": [79, 27],
-    "inherit": "mag"
+    "stats": [790, 270]
   },
   "Hathor": {
+    "combat": "mag",
+    "inherit": "psypp",
     "lvl": 48,
     "race": "Sun",
     "skills": {
-      "Mapsio": 0,
-      "Mind Charge": 0,
-      "Immunity Buffer": 0,
+      "Mapsio": 0.1,
+      "Mind Charge": 0.2,
+      "Immunity Buffer": 0.3,
       "Invigorate 1": 50,
       "Psycho Smash": 51,
       "Lullaby Song": 52,
       "Psy Amp": 53
     },
-    "stats": [69, 23],
-    "inherit": "mag"
+    "stats": [690, 230]
   },
   "Helel": {
+    "combat": "nav",
+    "inherit": "almnp",
     "lvl": 72,
     "race": "Star",
     "skills": {
-      "Primal Force": 0,
-      "Mediarahan": 0,
-      "Mind Charge": 0,
+      "Primal Force": 0.1,
+      "Mediarahan": 0.2,
+      "Mind Charge": 0.3,
       "Morning Star": 74,
       "Debilitate": 75,
       "Oneshot Kill": 76,
       "Mahamaon": 77
     },
-    "stats": [119, 38],
-    "inherit": "nav"
+    "stats": [1190, 380]
   },
   "Hell Biker": {
+    "combat": "nav",
+    "inherit": "firpp",
     "lvl": 53,
     "race": "Hanged",
     "skills": {
-      "Hientou": 0,
-      "Disarm": 0,
-      "Bind Arts+": 0,
+      "Hientou": 0.1,
+      "Disarm": 0.2,
+      "Bind Arts+": 0.3,
       "Vorpal Blade": 55,
       "Punishing End": 56,
       "Binding Aura": 57,
       "Agidyne": 58
     },
-    "stats": [100, 21],
-    "inherit": "nav"
+    "stats": [1000, 210]
   },
   "Heqet": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 7,
     "race": "Lovers",
     "skills": {
-      "Renewal Ray": 0,
-      "Hunting Prayer": 0,
-      "Orb of Haste": 0,
+      "Renewal Ray": 0.1,
+      "Hunting Prayer": 0.2,
+      "Orb of Haste": 0.3,
       "Snake Glare": 10
     },
-    "stats": [16, 6],
-    "inherit": "nav"
+    "stats": [160, 60]
   },
   "High Pixie": {
+    "combat": "nav",
+    "inherit": "winpp",
     "lvl": 15,
     "race": "Lovers",
     "skills": {
-      "Garu": 0,
-      "Patra": 0,
+      "Garu": 0.1,
+      "Patra": 0.2,
       "Diarama": 16,
       "Wind Screen": 17,
       "Magaru": 18
     },
-    "stats": [22, 9],
-    "inherit": "nav"
+    "stats": [220, 90]
   },
-  "Hitokotonushi": {
+  "Hitokotonusi": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 34,
     "race": "Hermit",
     "skills": {
-      "Orb of Haste": 0,
-      "Yomi Return": 0,
+      "Orb of Haste": 0.1,
+      "Yomi Return": 0.2,
       "Harvest Prayer": 35,
       "Snake Glare": 36
     },
-    "stats": [56, 17],
-    "inherit": "nav"
+    "stats": [560, 170]
   },
   "Hua Po": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 25,
     "race": "Magician",
     "skills": {
-      "Faerie's Vigil": 0,
-      "Treasure Hunter": 0,
+      "Faerie's Vigil": 0.1,
+      "Treasure Hunter": 0.2,
       "Eternal Melody": 26,
       "Clairvoyance": 27
     },
-    "stats": [36, 15],
-    "inherit": "nav"
+    "stats": [360, 150]
   },
   "Huang Di": {
+    "combat": "mag",
+    "inherit": "almnp",
     "lvl": 89,
     "race": "Emperor",
     "skills": {
-      "Empyrean Storm": 0,
-      "Fury Order": 0,
-      "Focus Order": 0,
+      "Empyrean Storm": 0.1,
+      "Fury Order": 0.2,
+      "Focus Order": 0.3,
       "Regenerate 3": 90,
       "God's Hand": 91,
       "Invigorate 3": 92,
       "Megidolaon": 93
     },
-    "stats": [167, 42],
-    "inherit": "mag"
+    "stats": [1670, 420]
   },
-  "Kohryu": {
-    "lvl": 68,
-    "race": "Hierophant",
+  "Ikusa": {
+    "combat": "phy",
+    "inherit": "psypp",
+    "lvl": 22,
+    "race": "Hanged",
     "skills": {
-      "Renewal Ray": 0,
-      "Victory Cry": 0,
-      "Heroic Wind": 0,
-      "Roads of Light": 71
+      "Mind Strike": 0.1,
+      "Dodge Arts": 0.2,
+      "Psystrike Link": 23,
+      "Assault Shot": 24,
+      "Resist Psy": 25
     },
-    "stats": [121, 35],
-    "inherit": "nav"
+    "stats": [360, 80]
   },
   "Incubus": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 15,
     "race": "Devil",
     "skills": {
-      "Eiha": 0,
-      "Evil Touch": 0,
+      "Eiha": 0.1,
+      "Evil Touch": 0.2,
       "Makajam": 16,
       "Sukunda": 17,
       "Maeiha": 18
     },
-    "stats": [21, 9],
-    "inherit": "mag"
+    "stats": [210, 90]
   },
   "Ippon-Datara": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 11,
     "race": "Hermit",
     "skills": {
-      "Lunge": 0,
-      "Armor Splitter": 0,
-      "Ambush Arts": 0,
+      "Lunge": 0.1,
+      "Armor Splitter": 0.2,
+      "Ambush Arts": 0.3,
       "Line Guard": 12,
       "Power Knack": 13,
       "Giant Slice": 14,
       "Critical Eye": 15
     },
-    "stats": [27, 5],
-    "inherit": "phy"
+    "stats": [270, 50]
   },
   "Ishtar": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 74,
     "race": "Lovers",
     "skills": {
-      "Ziodyne": 0,
-      "Maziodyne": 0,
-      "Heat Riser": 0,
+      "Ziodyne": 0.1,
+      "Maziodyne": 0.2,
+      "Heat Riser": 0.3,
       "Immunity Buffer": 75,
       "Megidolaon": 76,
       "Magic Genius": 77,
       "Absorb Elec": 79
     },
-    "stats": [121, 41],
-    "inherit": "mag"
+    "stats": [1210, 410]
+  },
+  "Izanagi Picaro": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 23,
+    "race": "Fool",
+    "skills": {
+      "Cross Slash": 0.1,
+      "Mazio": 0.2,
+      "Regenerate 2": 0.3,
+      "Elec Amp": 24,
+      "Combo Arts+": 25,
+      "Dragon Cry": 26
+    },
+    "stats": [600, 200]
   },
   "Jack Frost": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 16,
     "race": "Magician",
     "skills": {
-      "Bufu": 0,
-      "Resist Ice": 0,
+      "Bufu": 0.1,
+      "Resist Ice": 0.2,
       "Mabufu": 18,
       "Ice Screen": 19,
       "Bufula": 20
     },
-    "stats": [25, 8],
-    "inherit": "mag"
+    "stats": [250, 80]
   },
   "Jatayu": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 62,
     "race": "Sun",
     "skills": {
-      "Hailstorm": 0,
-      "Sleep Strike": 0,
+      "Hailstorm": 0.1,
+      "Sleep Strike": 0.2,
       "Masukukaja": 63,
       "Restoring Touch": 64,
       "Marakunda": 65
     },
-    "stats": [123, 22],
-    "inherit": "phy"
+    "stats": [1230, 220]
   },
-  "Jeanne D'Arc": {
+  "Jeanne d'Arc": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 60,
     "race": "Justice",
     "skills": {
-      "Blade of Fury": 0,
-      "Hailstorm": 0,
-      "Freidyne": 0,
+      "Blade of Fury": 0.1,
+      "Hailstorm": 0.2,
+      "Freidyne": 0.3,
       "Amrita": 61,
       "Immunity Buffer": 62,
       "Dodge Arts+": 63,
       "True Critical Eye": 64
     },
-    "stats": [115, 22],
-    "inherit": "phy"
+    "stats": [1150, 220]
   },
   "Jinn": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 53,
     "race": "Magician",
     "skills": {
-      "Orb of Resolve": 0,
-      "Yomi Return": 0,
+      "Orb of Resolve": 0.1,
+      "Yomi Return": 0.2,
       "Orb of Haste": 55,
       "Purifying Rain": 56
     },
-    "stats": [84, 29],
-    "inherit": "nav"
+    "stats": [840, 290]
+  },
+  "Kaguya": {
+    "combat": "def",
+    "inherit": "almpp",
+    "lvl": 16,
+    "race": "Moon",
+    "skills": {
+      "Lunar Blessing": 0.1,
+      "Media": 0.2,
+      "Me Patra": 0.3,
+      "Healing Finger": 17,
+      "Invigorate 1": 18,
+      "Mediarama": 19
+    },
+    "stats": [280, 120]
+  },
+  "Kaguya Picaro": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 25,
+    "race": "Moon",
+    "skills": {
+      "Lunar Blessing": 0.1,
+      "Makouha": 0.2,
+      "Invigorate 2": 0.3,
+      "Samarecarm": 26,
+      "Heroic Wind": 27,
+      "Bless Amp": 28
+    },
+    "stats": [500, 200]
   },
   "Kaiwan": {
+    "combat": "nav",
+    "inherit": "almnp",
     "lvl": 27,
     "race": "Star",
     "skills": {
-      "Megido": 0,
-      "Sukukaja": 0,
+      "Megido": 0.1,
+      "Sukukaja": 0.2,
       "Fusion Blast": 28,
       "Snake Glare": 29,
       "Null Sleep": 30
     },
-    "stats": [38, 16],
-    "inherit": "nav"
+    "stats": [380, 160]
   },
   "Kali": {
+    "combat": "def",
+    "inherit": "psypp",
     "lvl": 75,
     "race": "Empress",
     "skills": {
-      "Achilles Reaper": 0,
-      "Mapsiodyne": 0,
-      "Marakukaja": 0,
+      "Achilles Reaper": 0.1,
+      "Mapsiodyne": 0.2,
+      "Marakukaja": 0.3,
       "Agneyastra": 77,
       "Death Counter": 78,
       "Endure": 79,
       "True Critical Eye": 80
     },
-    "stats": [175, 35],
-    "inherit": "def"
+    "stats": [1750, 350]
   },
   "Kartikeya": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 52,
     "race": "Chariot",
     "skills": {
-      "Nucleostrike Link": 0,
-      "Armor Destroyer": 0,
+      "Nucleostrike Link": 0.1,
+      "Armor Destroyer": 0.2,
       "Triple Link": 53,
       "Free Memento": 54,
       "Agility Talent": 55
     },
-    "stats": [91, 23],
-    "inherit": "phy"
+    "stats": [910, 230]
   },
   "Kelpie": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 11,
     "race": "Fortune",
     "skills": {
-      "Spotter": 0,
-      "Orb of Resolve": 0,
+      "Spotter": 0.1,
+      "Orb of Resolve": 0.2,
       "Orb of Power": 14,
       "Clairvoyance": 16
     },
-    "stats": [20, 7],
-    "inherit": "nav"
+    "stats": [200, 70]
   },
   "Kikuri-Hime": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 33,
     "race": "Empress",
     "skills": {
-      "Freila": 0,
-      "Recarm": 0,
+      "Freila": 0.1,
+      "Recarm": 0.2,
       "Media": 34,
-      "Nuke Boost": 35,
+      "Nuclear Boost": 35,
       "Paths of Light": 37
     },
-    "stats": [46, 18],
-    "inherit": "mag"
+    "stats": [460, 180]
   },
   "King Frost": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 34,
     "race": "Emperor",
     "skills": {
-      "Glacial Edge": 0,
-      "Bufula": 0,
-      "Scarecrow": 0,
+      "Glacial Edge": 0.1,
+      "Bufula": 0.2,
+      "Scarecrow": 0.3,
       "Life Aid": 36,
       "Endure Talent": 37,
       "Colossal Swing": 38,
       "Immunity Buffer": 39
     },
-    "stats": [69, 14],
-    "inherit": "mag"
+    "stats": [690, 140]
   },
   "Kingu": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 59,
     "race": "Chariot",
     "skills": {
-      "Snake Glare": 0,
-      "Tengu's Vigil": 0,
+      "Snake Glare": 0.1,
+      "Tengu's Vigil": 0.2,
       "Eternal Melody": 60,
       "Yomi Return": 61
     },
-    "stats": [95, 31],
-    "inherit": "nav"
+    "stats": [950, 310]
+  },
+  "Kohryu": {
+    "combat": "nav",
+    "inherit": "almpp",
+    "lvl": 68,
+    "race": "Hierophant",
+    "skills": {
+      "Renewal Ray": 0.1,
+      "Victory Cry": 0.2,
+      "Heroic Wind": 0.3,
+      "Roads of Light": 71
+    },
+    "stats": [1210, 350]
   },
   "Koppa Tengu": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 21,
     "race": "Hierophant",
     "skills": {
-      "Safety Prayer": 0,
-      "Renewal Ray": 0,
+      "Safety Prayer": 0.1,
+      "Renewal Ray": 0.2,
       "Yomi Return": 23,
       "Tengu's Vigil": 25
     },
-    "stats": [31, 12],
-    "inherit": "nav"
+    "stats": [310, 120]
   },
   "Koropokkur": {
+    "combat": "nav",
+    "inherit": "icepp",
     "lvl": 2,
     "race": "Star",
     "skills": {
-      "Patra": 0,
-      "Tarunda": 0,
+      "Patra": 0.1,
+      "Tarunda": 0.2,
       "Luck Knack": 3,
       "Rakukaja": 4,
       "Tarukaja": 5
     },
-    "stats": [10, 3],
-    "inherit": "nav"
+    "stats": [100, 30]
   },
   "Kresnik": {
+    "combat": "phy",
+    "inherit": "icepp",
     "lvl": 72,
     "race": "Hierophant",
     "skills": {
-      "Icestrike Link": 0,
-      "Niflheim": 0,
-      "Infinite Link": 0,
+      "Icestrike Link": 0.1,
+      "Niflheim": 0.2,
+      "Infinite Link": 0.3,
       "Agneyastra": 74,
       "Regenerate 3": 75,
       "Golden Link": 76,
       "Absorb Ice": 77
     },
-    "stats": [152, 28],
-    "inherit": "phy"
+    "stats": [1520, 280]
   },
   "Kudlak": {
+    "combat": "mag",
+    "inherit": "psypp",
     "lvl": 72,
     "race": "Magician",
     "skills": {
-      "Shadow Run": 0,
-      "Psiodyne": 0,
-      "Tentarafoo": 0,
+      "Shadow Run": 0.1,
+      "Psiodyne": 0.2,
+      "Tentarafoo": 0.3,
       "Invigorate 2": 73,
       "Mapsiodyne": 74,
       "Matarunda": 75,
       "Mudoon": 77
     },
-    "stats": [119, 38],
-    "inherit": "mag"
+    "stats": [1190, 380]
   },
   "Kurama Tengu": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 42,
     "race": "Hermit",
     "skills": {
-      "Magic Mallet": 0,
-      "Tengu's Vigil": 0,
+      "Magic Mallet": 0.1,
+      "Tengu's Vigil": 0.2,
       "Eternal Melody": 43,
       "Orb of Power": 44
     },
-    "stats": [69, 22],
-    "inherit": "nav"
+    "stats": [690, 220]
   },
   "Kusi Mitama": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 41,
     "race": "Star",
     "skills": {
-      "Calming Lull": 0,
-      "Tengu's Vigil": 0,
+      "Calming Lull": 0.1,
+      "Tengu's Vigil": 0.2,
       "Snake Glare": 42,
       "Eternal Melody": 44
     },
-    "stats": [68, 22],
-    "inherit": "nav"
+    "stats": [680, 220]
   },
   "Lachesis": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 46,
     "race": "Fortune",
     "skills": {
-      "Harvest Prayer": 0,
-      "Magic Mallet": 0,
+      "Harvest Prayer": 0.1,
+      "Magic Mallet": 0.2,
       "Renewal Ray": 47,
       "Farsight": 49
     },
-    "stats": [75, 24],
-    "inherit": "nav"
+    "stats": [750, 240]
   },
-  "Lakshmi": {
+  "Laksmi": {
+    "combat": "nav",
+    "inherit": "icepp",
     "lvl": 49,
     "race": "Empress",
     "skills": {
-      "Bufula": 0,
-      "Diarama": 0,
-      "Dodge Arts+": 0,
+      "Bufula": 0.1,
+      "Diarama": 0.2,
+      "Dodge Arts+": 0.3,
       "Mabufula": 50,
       "Paths of Light": 51,
       "Ice Screen": 52,
       "Ice Boost": 54
     },
-    "stats": [76, 25],
-    "inherit": "nav"
+    "stats": [760, 250]
   },
   "Leanan Sidhe": {
+    "combat": "nav",
+    "inherit": "psypp",
     "lvl": 38,
     "race": "Lovers",
     "skills": {
-      "Psio": 0,
-      "Scarecrow": 0,
-      "Media": 0,
+      "Psio": 0.1,
+      "Scarecrow": 0.2,
+      "Media": 0.3,
       "Healing Hand": 40,
       "Mutudi": 41,
       "Heroic Wind": 42,
       "Diarahan": 44
     },
-    "stats": [61, 20],
-    "inherit": "nav"
+    "stats": [610, 200]
   },
   "Legion": {
+    "combat": "def",
+    "inherit": "darpp",
     "lvl": 22,
     "race": "Devil",
     "skills": {
-      "Eiha": 0,
-      "Ailment Arts": 0,
+      "Eiha": 0.1,
+      "Ailment Arts": 0.2,
       "Curse Boost": 23,
       "Binding Aura": 24,
       "Maeiha": 25
     },
-    "stats": [44, 8],
-    "inherit": "def"
+    "stats": [440, 80]
   },
   "Lilith": {
+    "combat": "phy",
+    "inherit": "icepp",
     "lvl": 67,
     "race": "Devil",
     "skills": {
-      "Tousatsujin": 0,
-      "Salome's Kiss": 0,
+      "Tousatsujin": 0.1,
+      "Salome's Kiss": 0.2,
       "Bind Arts+": 68,
       "Bufudyne": 69,
       "Decay Circle": 70
     },
-    "stats": [141, 25],
-    "inherit": "phy"
+    "stats": [1410, 250]
   },
   "Longinus": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 55,
     "race": "Tower",
     "skills": {
-      "Broadshot": 0,
-      "Vorpal Blade": 0,
-      "Mazionga": 0,
+      "Broadshot": 0.1,
+      "Vorpal Blade": 0.2,
+      "Mazionga": 0.3,
       "Power Charge": 56,
       "Null S-Bind": 57,
       "Marakunda": 58,
       "Regenerate 3": 60
     },
-    "stats": [101, 20],
-    "inherit": "phy"
+    "stats": [1010, 200]
   },
   "Lorelei": {
+    "combat": "phy",
+    "inherit": "psypp",
     "lvl": 66,
     "race": "Lovers",
     "skills": {
-      "Mapsio": 0,
-      "Broadshot": 0,
+      "Mapsio": 0.1,
+      "Broadshot": 0.2,
       "Psiodyne": 67,
       "Dekunda": 68,
       "Sleep Circle": 69
     },
-    "stats": [132, 23],
-    "inherit": "phy"
+    "stats": [1320, 230]
   },
   "Lucifer": {
+    "combat": "mag",
+    "inherit": "almnp",
     "lvl": 88,
     "race": "Judgement",
     "skills": {
-      "God's Hand": 0,
-      "Cosmic Flare": 0,
-      "Whirlwind Swing": 0,
+      "God's Hand": 0.1,
+      "Cosmic Flare": 0.2,
+      "Whirlwind Swing": 0.3,
       "World's End": 90,
       "Heroic Gemini": 91,
       "Nuke Turbo": 92,
       "Megidolaon": 93
     },
-    "stats": [165, 42],
-    "inherit": "mag"
+    "stats": [1650, 420]
   },
   "Lugh": {
+    "combat": "phy",
+    "inherit": "nukpp",
     "lvl": 46,
     "race": "Sun",
     "skills": {
-      "Mighty Swing": 0,
-      "Weapon Crusher": 0,
-      "Mafreila": 0,
-      "Nuke Boost": 47,
+      "Mighty Swing": 0.1,
+      "Weapon Crusher": 0.2,
+      "Mafreila": 0.3,
+      "Nuclear Boost": 47,
       "Life Aid": 48,
       "Nuclear Blast": 49,
-      "Nuke Screen": 50
+      "Nuclear Screen": 50
     },
-    "stats": [101, 15],
-    "inherit": "phy"
+    "stats": [1010, 150]
+  },
+  "M. Izanagi Picaro": {
+    "combat": "phy",
+    "inherit": "almpp",
+    "lvl": 40,
+    "race": "Tower",
+    "skills": {
+      "Calamity Seed": 0.1,
+      "Vorpal Blade": 0.2,
+      "Shura Tensei": 0.3,
+      "Shura Revert": 41,
+      "Power Charge": 42,
+      "Oneshot Kill": 43
+    },
+    "stats": [990, 240]
   },
   "Mada": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 69,
     "race": "Magician",
     "skills": {
-      "Agidyne": 0,
-      "Brain Shake": 0,
+      "Agidyne": 0.1,
+      "Brain Shake": 0.2,
       "Deathbound": 71,
       "Ambush Arts+": 72,
       "Endure Genius": 74
     },
-    "stats": [123, 29],
-    "inherit": "mag"
+    "stats": [1230, 290]
+  },
+  "Magatsu-Izanagi": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 25,
+    "race": "Tower",
+    "skills": {
+      "Calamity Seed": 0.1,
+      "Eiga": 0.2,
+      "Curse Amp": 0.3,
+      "Maeiga": 26,
+      "Mamudo": 27,
+      "Curse Turbo": 28
+    },
+    "stats": [440, 180]
   },
   "Mahakala": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 77,
     "race": "Death",
     "skills": {
-      "Tempest Slash": 0,
-      "Arm Crusher": 0,
-      "Bound Arts+": 0,
+      "Tempest Slash": 0.1,
+      "Arm Crusher": 0.2,
+      "Bound Arts+": 0.3,
       "Masukunda": 78,
       "Endure Genius": 79,
       "Absorb Wind": 81,
       "Aeon Rain": 82
     },
-    "stats": [172, 33],
-    "inherit": "phy"
+    "stats": [1720, 330]
   },
   "Mandrake": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 2,
     "race": "Fortune",
     "skills": {
-      "Spotter": 0,
-      "Faerie's Vigil": 0,
+      "Spotter": 0.1,
+      "Faerie's Vigil": 0.2,
       "Safety Prayer": 4,
       "Orb of Haste": 6
     },
-    "stats": [9, 3],
-    "inherit": "nav"
+    "stats": [90, 30]
   },
   "Mara": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 60,
     "race": "Tower",
     "skills": {
-      "Miracle Punch": 0,
-      "Maragion": 0,
-      "Matarukaja": 0,
+      "Miracle Punch": 0.1,
+      "Maragion": 0.2,
+      "Matarukaja": 0.3,
       "Fire Boost": 61,
       "Death Needle": 62,
       "Maragidyne": 63,
       "Fire Amp": 65
     },
-    "stats": [95, 24],
-    "inherit": "mag"
+    "stats": [950, 240]
   },
   "Masakado": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 69,
     "race": "Tower",
     "skills": {
-      "Hientou": 0,
-      "Tousatsujin": 0,
-      "Raijinzan": 0,
+      "Hientou": 0.1,
+      "Tousatsujin": 0.2,
+      "Raijinzan": 0.3,
       "Kamikaze Strike": 70,
       "Nuclear Blast": 71,
       "Psycho Smash": 72,
       "Power Charge": 73
     },
-    "stats": [141, 25],
-    "inherit": "phy"
+    "stats": [1410, 250]
   },
   "Matador": {
+    "combat": "def",
+    "inherit": "psypp",
     "lvl": 21,
     "race": "Death",
     "skills": {
-      "Frost Edge": 0,
-      "Line Guard": 0,
-      "Dodge Arts": 0,
+      "Frost Edge": 0.1,
+      "Line Guard": 0.2,
+      "Dodge Arts": 0.3,
       "Mapsi": 23,
       "Double Link": 24,
       "Matarunda": 25,
       "Triple Link": 26
     },
-    "stats": [44, 8],
-    "inherit": "def"
+    "stats": [440, 80]
   },
   "Mayahuel": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 29,
     "race": "Empress",
     "skills": {
-      "Nucleostrike Link": 0,
-      "Freila": 0,
-      "Megidola": 0,
+      "Nucleostrike Link": 0.1,
+      "Freila": 0.2,
+      "Megidola": 0.3,
       "Regenerate 2": 31,
       "Scorching Blast": 32,
       "Confusion Circle": 33,
       "Psy Screen": 34
     },
-    "stats": [41, 13],
-    "inherit": "mag"
+    "stats": [410, 130]
   },
   "Melchizedek": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 65,
     "race": "Justice",
     "skills": {
-      "Megidola": 0,
-      "Me Patra": 0,
+      "Megidola": 0.1,
+      "Me Patra": 0.2,
       "Vorpal Blade": 66,
       "Stun Circle": 67,
       "Agility Genius": 69
     },
-    "stats": [116, 28],
-    "inherit": "mag"
+    "stats": [1160, 280]
+  },
+  "Messiah Picaro": {
+    "combat": "phy",
+    "inherit": "almpp",
+    "lvl": 60,
+    "race": "Judgement",
+    "skills": {
+      "Oratorio": 0.1,
+      "Strike Link": 0.2,
+      "Infinite Link": 0.3,
+      "Golden Link": 61,
+      "Dodge Arts+": 62,
+      "Victory Cry": 63
+    },
+    "stats": [1200, 280]
   },
   "Metatron": {
+    "combat": "def",
+    "inherit": "ligpp",
     "lvl": 80,
     "race": "Justice",
     "skills": {
-      "Makougaon": 0,
-      "Vengeful Melee": 0,
-      "All Guard": 0,
+      "Makougaon": 0.1,
+      "Vengeful Melee": 0.2,
+      "All Guard": 0.3,
       "Atomic Flare": 81,
-      "Absorb Nuke": 83,
+      "Nuclear Drain": 83,
       "Mahamaon": 84,
       "Bless Turbo": 85
     },
-    "stats": [187, 36],
-    "inherit": "def"
+    "stats": [1870, 360]
   },
   "Mezuki": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 27,
     "race": "Chariot",
     "skills": {
-      "Mighty Swing": 0,
-      "Line Guard": 0,
+      "Mighty Swing": 0.1,
+      "Line Guard": 0.2,
       "Bestial Roar": 28,
       "Rakukaja": 29,
       "Triple Down": 31
     },
-    "stats": [52, 11],
-    "inherit": "def"
+    "stats": [520, 110]
   },
   "Michael": {
+    "combat": "phy",
+    "inherit": "ligpp",
     "lvl": 68,
     "race": "Judgement",
     "skills": {
-      "Blade of Fury": 0,
-      "Line Guard": 0,
-      "Mediarahan": 0,
+      "Blade of Fury": 0.1,
+      "Line Guard": 0.2,
+      "Mediarahan": 0.3,
       "God's Hand": 69,
       "Regenerate 3": 71,
       "Hamaon": 72,
       "Heat Riser": 73
     },
-    "stats": [157, 28],
-    "inherit": "phy"
+    "stats": [1570, 280]
   },
   "Mishaguji": {
+    "combat": "phy",
+    "inherit": "ligpp",
     "lvl": 52,
     "race": "Hierophant",
     "skills": {
-      "Black Spot": 0,
-      "Makouga": 0,
-      "Heroic Gemini": 0,
+      "Black Spot": 0.1,
+      "Makouga": 0.2,
+      "Heroic Gemini": 0.3,
       "Bless Boost": 53,
       "Heat Riser": 54,
       "Null Confusion": 55,
       "Kougaon": 57
     },
-    "stats": [94, 18],
-    "inherit": "phy"
-  },
-  "Mithras": {
-    "lvl": 64,
-    "race": "Temperance",
-    "skills": {
-      "Nuclear Blast": 0,
-      "Nuke Screen": 0,
-      "Mafreila": 65,
-      "Marakukaja": 66,
-      "Nuke Amp": 67
-    },
-    "stats": [146, 20],
-    "inherit": "phy"
+    "stats": [940, 180]
   },
   "Mithra": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 24,
     "race": "Temperance",
     "skills": {
-      "Makouha": 0,
-      "Holy Touch": 0,
-      "Bless Screen": 0,
+      "Makouha": 0.1,
+      "Holy Touch": 0.2,
+      "Bless Screen": 0.3,
       "Kouga": 26,
       "Makajam": 27,
       "Bless Boost": 28,
       "Null M-Bind": 29
     },
-    "stats": [36, 12],
-    "inherit": "mag"
+    "stats": [360, 120]
+  },
+  "Mithras": {
+    "combat": "phy",
+    "inherit": "nukpp",
+    "lvl": 64,
+    "race": "Temperance",
+    "skills": {
+      "Nuclear Blast": 0.1,
+      "Nuclear Screen": 0.2,
+      "Mafreila": 65,
+      "Marakukaja": 66,
+      "Nuclear Amp": 67
+    },
+    "stats": [1460, 200]
   },
   "Moh Shuvuu": {
+    "combat": "mag",
+    "inherit": "nukpp",
     "lvl": 16,
     "race": "Priestess",
     "skills": {
-      "Frei": 0,
-      "Mutudi": 0,
+      "Frei": 0.1,
+      "Mutudi": 0.2,
       "Mafrei": 18,
       "Pure Memento": 19,
       "Mudo": 20
     },
-    "stats": [22, 9],
-    "inherit": "mag"
+    "stats": [220, 90]
   },
   "Mokoi": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 3,
     "race": "Strength",
     "skills": {
-      "Guillotine": 0,
-      "Line Guard": 0,
+      "Guillotine": 0.1,
+      "Line Guard": 0.2,
       "Armor Splitter": 4,
       "Power Knack": 5,
       "Giant Slice": 6
     },
-    "stats": [13, 2],
-    "inherit": "def"
+    "stats": [130, 20]
   },
   "Moloch": {
+    "combat": "phy",
+    "inherit": "psypp",
     "lvl": 60,
     "race": "Hanged",
     "skills": {
-      "Psycho Smash": 0,
-      "Marakukaja": 0,
+      "Psycho Smash": 0.1,
+      "Marakukaja": 0.2,
       "Psiodyne": 61,
       "Regenerate 2": 62,
       "Challenger Arts+": 63
     },
-    "stats": [129, 19],
-    "inherit": "phy"
+    "stats": [1290, 190]
   },
   "Mot": {
+    "combat": "def",
+    "inherit": "almnp",
     "lvl": 49,
     "race": "Death",
     "skills": {
-      "Shinkuuha": 0,
-      "Line Guard": 0,
+      "Shinkuuha": 0.1,
+      "Line Guard": 0.2,
       "Megidola": 51,
       "Marakukaja": 52,
       "Saint's Touch": 53
     },
-    "stats": [100, 20],
-    "inherit": "def"
+    "stats": [1000, 200]
   },
   "Mother Harlot": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 57,
     "race": "Empress",
     "skills": {
-      "Mabufula": 0,
-      "Evil Smile": 0,
-      "Mind Charge": 0,
+      "Mabufula": 0.1,
+      "Evil Smile": 0.2,
+      "Mind Charge": 0.3,
       "Mediarama": 58,
       "Bufudyne": 59,
       "Idol Hands": 60,
       "Ice Amp": 62
     },
-    "stats": [83, 28],
-    "inherit": "mag"
+    "stats": [830, 280]
   },
   "Mothman": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 20,
     "race": "Fool",
     "skills": {
-      "Faerie's Vigil": 0,
-      "Spotter": 0,
+      "Faerie's Vigil": 0.1,
+      "Spotter": 0.2,
       "Hunting Prayer": 21,
       "Renewal Ray": 22
     },
-    "stats": [30, 12],
-    "inherit": "nav"
+    "stats": [300, 120]
   },
   "Narasimha": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 38,
     "race": "Sun",
     "skills": {
-      "Herculean Strike": 0,
-      "Matarunda": 0,
+      "Herculean Strike": 0.1,
+      "Matarunda": 0.2,
       "Ambush Arts": 39,
       "Death Counter": 40,
       "Arrow Rain": 41
     },
-    "stats": [90, 14],
-    "inherit": "phy"
+    "stats": [900, 140]
   },
   "Narcissus": {
+    "combat": "phy",
+    "inherit": "psypp",
     "lvl": 30,
     "race": "Lovers",
     "skills": {
-      "Psystrike Link": 0,
-      "Rakukaja": 0,
+      "Psystrike Link": 0.1,
+      "Rakukaja": 0.2,
       "Psio": 31,
       "Resist Psy": 32,
       "Mapsio": 33
     },
-    "stats": [50, 15],
-    "inherit": "phy"
+    "stats": [500, 150]
   },
   "Nata Taishi": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 6,
     "race": "Chariot",
     "skills": {
-      "Revenge Blow": 0,
-      "Line Guard": 0,
+      "Revenge Blow": 0.1,
+      "Line Guard": 0.2,
       "Power Knack": 7,
       "Giant Slice": 8,
       "Restoring Touch": 9
     },
-    "stats": [18, 3],
-    "inherit": "def"
+    "stats": [180, 30]
   },
   "Nebiros": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 55,
     "race": "Hermit",
     "skills": {
-      "Maeiga": 0,
-      "Makajam": 0,
+      "Maeiga": 0.1,
+      "Makajam": 0.2,
       "Magic Talent": 56,
       "Masukunda": 57,
       "Poison Circle": 58
     },
-    "stats": [80, 28],
-    "inherit": "mag"
+    "stats": [800, 280]
   },
   "Neko Shogun": {
+    "combat": "phy",
+    "inherit": "psypp",
     "lvl": 19,
     "race": "Star",
     "skills": {
-      "Twin Slash": 0,
-      "Psi": 0,
-      "Agility Knack": 0,
+      "Twin Slash": 0.1,
+      "Psi": 0.2,
+      "Agility Knack": 0.3,
       "Mapsi": 21,
       "Ambush Arts": 22,
       "Critical Eye": 23,
       "Arrow Rain": 24
     },
-    "stats": [32, 7],
-    "inherit": "phy"
+    "stats": [320, 70]
   },
-  "Nidhoggr": {
+  "Niddhoggr": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 49,
     "race": "Hermit",
     "skills": {
-      "Orb of Power": 0,
-      "Magic Mallet": 0,
+      "Orb of Power": 0.1,
+      "Magic Mallet": 0.2,
       "Snake Glare": 50,
       "Heroic Wind": 51
     },
-    "stats": [80, 26],
-    "inherit": "nav"
+    "stats": [800, 260]
   },
   "Nigi Mitama": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 23,
     "race": "Tower",
     "skills": {
-      "Orb of Power": 0,
-      "Orb of Resolve": 0,
+      "Orb of Power": 0.1,
+      "Orb of Resolve": 0.2,
       "Clairvoyance": 25,
       "Hunting Prayer": 26
     },
-    "stats": [34, 14],
-    "inherit": "nav"
+    "stats": [340, 140]
   },
   "Norn": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 58,
     "race": "Fortune",
     "skills": {
-      "Purifying Rain": 0,
-      "Heroic Wind": 0,
+      "Purifying Rain": 0.1,
+      "Heroic Wind": 0.2,
       "Paths of Light": 59,
       "Life Aid": 60
     },
-    "stats": [94, 31],
-    "inherit": "nav"
+    "stats": [940, 310]
   },
   "Nozuchi": {
+    "combat": "nav",
+    "inherit": "psypp",
     "lvl": 21,
     "race": "Moon",
     "skills": {
-      "Headbutt": 0,
-      "Rakunda": 0,
+      "Headbutt": 0.1,
+      "Rakunda": 0.2,
       "Mapsi": 22,
       "Revenge Blow": 23,
       "Null S-Bind": 24
     },
-    "stats": [40, 10],
-    "inherit": "nav"
+    "stats": [400, 100]
   },
   "Nue": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 19,
     "race": "Hermit",
     "skills": {
-      "Mazio": 0,
-      "Curse Screen": 0,
+      "Mazio": 0.1,
+      "Curse Screen": 0.2,
       "Assault Dive": 21,
       "Power Knack": 22,
       "Resist Curse": 23
     },
-    "stats": [30, 9],
-    "inherit": "mag"
+    "stats": [300, 90]
   },
   "Oberon": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 10,
     "race": "Emperor",
     "skills": {
-      "Zio": 0,
-      "Pulinpa": 0,
-      "Faerie's Vigil": 0,
+      "Zio": 0.1,
+      "Pulinpa": 0.2,
+      "Faerie's Vigil": 0.3,
       "Ailment Arts": 11,
       "Magic Knack": 12,
       "Clairvoyance": 13,
       "Holy Touch": 14
     },
-    "stats": [17, 6],
-    "inherit": "mag"
+    "stats": [170, 60]
   },
   "Odin": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 71,
     "race": "Emperor",
     "skills": {
-      "Raijinzan": 0,
-      "Elecstrike Link": 0,
-      "Infinite Link": 0,
+      "Raijinzan": 0.1,
+      "Elecstrike Link": 0.2,
+      "Infinite Link": 0.3,
       "Thunder Reign": 73,
       "Makajam": 74,
       "Invigorate 2": 75,
       "Elec Amp": 76
     },
-    "stats": [149, 27],
-    "inherit": "phy"
+    "stats": [1490, 270]
   },
-  "Oukuninushi": {
-    "lvl": 25,
-    "race": "Emperor",
-    "skills": {
-      "Psi": 0,
-      "Tarunda": 0,
-      "Mapsi": 27,
-      "First Star": 28,
-      "Luck Knack": 29
-    },
-    "stats": [48, 9],
-    "inherit": "mag"
-  },
-  "Ongyo-Ki": {
+  "Ongyo-ki": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 73,
     "race": "Hermit",
     "skills": {
-      "Tempest Slash": 0,
-      "Shura Instincts": 0,
+      "Tempest Slash": 0.1,
+      "Shura Instincts": 0.2,
       "Brave Blade": 75,
       "Mudoon": 76,
       "Power Genius": 77
     },
-    "stats": [155, 30],
-    "inherit": "phy"
+    "stats": [1550, 300]
   },
   "Oni": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 17,
     "race": "Strength",
     "skills": {
-      "Rampage": 0,
-      "Punishment": 0,
-      "Power Knack": 0,
+      "Rampage": 0.1,
+      "Punishment": 0.2,
+      "Power Knack": 0.3,
       "Leg Reaper": 18,
       "Tarukaja": 19,
       "Power Talent": 21,
       "Endure": 22
     },
-    "stats": [34, 7],
-    "inherit": "phy"
+    "stats": [340, 70]
   },
   "Onmoraki": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 5,
     "race": "Hanged",
     "skills": {
-      "Armor Splitter": 0,
-      "Rakunda": 0,
+      "Armor Splitter": 0.1,
+      "Rakunda": 0.2,
       "Garu": 6,
       "Endure Knack": 7,
       "Single Shot": 9
     },
-    "stats": [16, 3],
-    "inherit": "phy"
+    "stats": [160, 30]
   },
   "Ophanim": {
+    "combat": "mag",
+    "inherit": "winpp",
     "lvl": 57,
     "race": "Judgement",
     "skills": {
-      "Magarula": 0,
-      "Dekaja": 0,
+      "Magarula": 0.1,
+      "Dekaja": 0.2,
       "Garudyne": 59,
       "Brain Shake": 60,
       "Magic Talent": 61
     },
-    "stats": [83, 28],
-    "inherit": "mag"
+    "stats": [830, 280]
   },
   "Orobas": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 9,
     "race": "Magician",
     "skills": {
-      "Fang Smash": 0,
-      "Agi": 0,
+      "Fang Smash": 0.1,
+      "Agi": 0.2,
       "Tarunda": 10,
       "Revenge Blow": 11,
       "Orb of Power": 12
     },
-    "stats": [20, 4],
-    "inherit": "phy"
+    "stats": [200, 40]
+  },
+  "Orochi": {
+    "combat": "phy",
+    "inherit": "almpn",
+    "lvl": 30,
+    "race": "Moon",
+    "skills": {
+      "Rampage": 0.1,
+      "Combo Arts": 0.2,
+      "All Guard": 31,
+      "Heat Wave": 32,
+      "Endure": 33
+    },
+    "stats": [580, 100]
+  },
+  "Orpheus Picaro": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 35,
+    "race": "Fool",
+    "skills": {
+      "Healing Harp": 0.1,
+      "Maragion": 0.2,
+      "Invigorate 2": 0.3,
+      "Fire Amp": 36,
+      "Agidyne": 37,
+      "True Critical Eye": 38
+    },
+    "stats": [600, 250]
   },
   "Orthrus": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 37,
     "race": "Hanged",
     "skills": {
-      "Firestrike Link": 0,
-      "Bestial Roar": 0,
+      "Firestrike Link": 0.1,
+      "Bestial Roar": 0.2,
       "Resist Fire": 38,
       "Agilao": 39,
       "Assault Dive": 40
     },
-    "stats": [72, 13],
-    "inherit": "phy"
+    "stats": [720, 130]
   },
   "Ose": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 31,
     "race": "Fool",
     "skills": {
-      "Strike Link": 0,
-      "Punishing Bite": 0,
-      "Regenerate 1": 0,
+      "Strike Link": 0.1,
+      "Punishing Bite": 0.2,
+      "Regenerate 1": 0.3,
       "Bestial Roar": 32,
       "Tarukaja": 33,
       "Null Confusion": 34,
       "Triple Link": 36
     },
-    "stats": [57, 12],
-    "inherit": "phy"
+    "stats": [570, 120]
+  },
+  "Oukuninushi": {
+    "combat": "mag",
+    "inherit": "psypp",
+    "lvl": 25,
+    "race": "Emperor",
+    "skills": {
+      "Psi": 0.1,
+      "Tarunda": 0.2,
+      "Mapsi": 27,
+      "First Star": 28,
+      "Luck Knack": 29
+    },
+    "stats": [480, 90]
   },
   "Oumitsunu": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 35,
     "race": "Chariot",
     "skills": {
-      "Assault Shot": 0,
-      "Headbutt": 0,
+      "Assault Shot": 0.1,
+      "Headbutt": 0.2,
       "Kouga": 36,
       "Challenger Arts": 37,
       "Power Talent": 38
     },
-    "stats": [66, 13],
-    "inherit": "phy"
+    "stats": [660, 130]
   },
   "Ouroboros": {
+    "combat": "nav",
+    "inherit": "nukpp",
     "lvl": 71,
     "race": "Fortune",
     "skills": {
-      "Freidyne": 0,
-      "Diarahan": 0,
+      "Freidyne": 0.1,
+      "Diarahan": 0.2,
       "Dragon Cry": 72,
       "Combo Arts+": 73,
       "Luck Genius": 74
     },
-    "stats": [123, 38],
-    "inherit": "nav"
+    "stats": [1230, 380]
   },
   "Ouyamatsumi": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 53,
     "race": "Strength",
     "skills": {
-      "Herculean Strike": 0,
-      "All Guard": 0,
+      "Herculean Strike": 0.1,
+      "All Guard": 0.2,
       "Tempest Slash": 54,
       "Power Talent": 55,
       "Colossal Swing": 56
     },
-    "stats": [117, 19],
-    "inherit": "def"
+    "stats": [1170, 190]
   },
   "Pabilsag": {
+    "combat": "def",
+    "inherit": "psypp",
     "lvl": 40,
     "race": "Fortune",
     "skills": {
-      "Mental Smash": 0,
-      "Line Guard": 0,
+      "Mental Smash": 0.1,
+      "Line Guard": 0.2,
       "Poison Breath": 41,
       "Null Poison": 42,
       "Dekunda": 43
     },
-    "stats": [94, 15],
-    "inherit": "def"
+    "stats": [940, 150]
   },
   "Pale Rider": {
+    "combat": "phy",
+    "inherit": "nukpp",
     "lvl": 63,
     "race": "Chariot",
     "skills": {
-      "Broadshot": 0,
-      "Armor Destroyer": 0,
-      "Death Chaser": 0,
+      "Broadshot": 0.1,
+      "Armor Destroyer": 0.2,
+      "Death Chaser": 0.3,
       "Shura Tensei": 64,
       "Myriad Arrows": 66,
       "Evil Smile": 67,
       "Mamudoon": 68
     },
-    "stats": [142, 20],
-    "inherit": "phy"
+    "stats": [1420, 200]
   },
   "Parvati": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 36,
     "race": "Priestess",
     "skills": {
-      "Renewal Ray": 0,
-      "Tengu's Vigil": 0,
+      "Renewal Ray": 0.1,
+      "Tengu's Vigil": 0.2,
       "Fortune Hunter": 37,
       "Yomi Return": 38
     },
-    "stats": [60, 20],
-    "inherit": "nav"
+    "stats": [600, 200]
   },
   "Pazuzu": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 36,
     "race": "Devil",
     "skills": {
-      "Eiga": 0,
-      "Binding Aura": 0,
+      "Eiga": 0.1,
+      "Binding Aura": 0.2,
       "Matarunda": 37,
       "Null Hex": 38,
       "Curse Boost": 39
     },
-    "stats": [63, 16],
-    "inherit": "mag"
+    "stats": [630, 160]
   },
   "Pele": {
+    "combat": "nav",
+    "inherit": "firpp",
     "lvl": 26,
     "race": "Sun",
     "skills": {
-      "Agilao": 0,
-      "Scarecrow": 0,
-      "Bind Arts": 0,
+      "Agilao": 0.1,
+      "Scarecrow": 0.2,
+      "Bind Arts": 0.3,
       "Magic Knack": 27,
       "Silent Thrust": 28,
       "Dekunda": 29,
       "Heat Wave": 30
     },
-    "stats": [33, 14],
-    "inherit": "nav"
+    "stats": [330, 140]
+  },
+  "Phoenix": {
+    "combat": "nav",
+    "inherit": "firpp",
+    "lvl": 18,
+    "race": "Sun",
+    "skills": {
+      "Firestrike Link": 0.1,
+      "Recarm": 0.2,
+      "Maragi": 20,
+      "Fire Screen": 21,
+      "Free Memento": 22
+    },
+    "stats": [250, 100]
   },
   "Pixie": {
+    "combat": "nav",
+    "inherit": "elepp",
     "lvl": 1,
     "race": "Lovers",
     "skills": {
-      "Dormina": 0,
-      "Magic Knack": 0,
+      "Dormina": 0.1,
+      "Magic Knack": 0.2,
       "Dia": 2,
       "Patra": 3,
       "Zio": 4
     },
-    "stats": [7, 3],
-    "inherit": "nav"
+    "stats": [70, 30]
   },
   "Power": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 18,
     "race": "Emperor",
     "skills": {
-      "Armor Splitter": 0,
-      "Line Guard": 0,
+      "Armor Splitter": 0.1,
+      "Line Guard": 0.2,
       "Arm Chopper": 19,
       "Windstrike Link": 20,
       "Assault Dive": 21
     },
-    "stats": [37, 7],
-    "inherit": "def"
+    "stats": [370, 70]
   },
   "Principality": {
+    "combat": "nav",
+    "inherit": "ligpp",
     "lvl": 20,
     "race": "Justice",
     "skills": {
-      "Kouha": 0,
-      "Pulinpa": 0,
+      "Kouha": 0.1,
+      "Pulinpa": 0.2,
       "Media": 22,
       "Hama": 23,
       "Mutudi": 24
     },
-    "stats": [28, 11],
-    "inherit": "nav"
+    "stats": [280, 110]
   },
   "Pyro Jack": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 32,
     "race": "Magician",
     "skills": {
-      "Maragi": 0,
-      "Makajam": 0,
-      "Luck Talent": 0,
+      "Maragi": 0.1,
+      "Makajam": 0.2,
+      "Luck Talent": 0.3,
       "Agilao": 34,
       "Gokuentou": 35,
       "Fire Screen": 36,
       "Ambush Arts": 37
     },
-    "stats": [52, 15],
-    "inherit": "mag"
+    "stats": [520, 150]
   },
   "Queen Mab": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 23,
     "race": "Lovers",
     "skills": {
-      "Mazio": 0,
-      "Diarama": 0,
-      "Null Confusion": 0,
+      "Mazio": 0.1,
+      "Diarama": 0.2,
+      "Null Confusion": 0.3,
       "Arrow Rain": 25,
       "Elec Screen": 26,
       "Megido": 27,
       "Zionga": 28
     },
-    "stats": [30, 13],
-    "inherit": "mag"
+    "stats": [300, 130]
   },
-  "Raijuu": {
+  "Raiju": {
+    "combat": "phy",
+    "inherit": "elepp",
     "lvl": 12,
     "race": "Tower",
     "skills": {
-      "Guillotine": 0,
-      "Sukukaja": 0,
+      "Guillotine": 0.1,
+      "Sukukaja": 0.2,
       "Zanshinken": 13,
       "Fang Smash": 14,
       "Combo Arts": 15
     },
-    "stats": [23, 5],
-    "inherit": "phy"
+    "stats": [230, 50]
   },
   "Rakshasa": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 37,
     "race": "Strength",
     "skills": {
-      "Triple Down": 0,
-      "Strike Link": 0,
-      "Bound Arts": 0,
+      "Triple Down": 0.1,
+      "Strike Link": 0.2,
+      "Bound Arts": 0.3,
       "Triple Link": 38,
       "Disarm": 39,
       "Armor Breaker": 41,
       "First Star": 43
     },
-    "stats": [85, 12],
-    "inherit": "phy"
+    "stats": [850, 120]
   },
   "Rangda": {
+    "combat": "mag",
+    "inherit": "psypp",
     "lvl": 45,
     "race": "Magician",
     "skills": {
-      "Brutal Slash": 0,
-      "Psystrike Link": 0,
-      "Psio": 0,
+      "Brutal Slash": 0.1,
+      "Psystrike Link": 0.2,
+      "Psio": 0.3,
       "Debilitate": 47,
       "Mapsio": 48,
       "Immunity Buffer": 49,
       "Psiodyne": 50
     },
-    "stats": [64, 22],
-    "inherit": "mag"
+    "stats": [640, 220]
   },
   "Raphael": {
+    "combat": "nav",
+    "inherit": "almpn",
     "lvl": 56,
     "race": "Lovers",
     "skills": {
-      "Heaven's Blade": 0,
-      "Samarecarm": 0,
-      "Power Charge": 0,
+      "Heaven's Blade": 0.1,
+      "Samarecarm": 0.2,
+      "Power Charge": 0.3,
       "Tempest Slash": 57,
       "Arm Crusher": 58,
       "Decay Circle": 59,
       "Beast Summon": 60
     },
-    "stats": [110, 21],
-    "inherit": "nav"
+    "stats": [1100, 210]
   },
   "Red Rider": {
+    "combat": "phy",
+    "inherit": "darpp",
     "lvl": 28,
     "race": "Death",
     "skills": {
-      "Assault Dive": 0,
-      "Triple Down": 0,
-      "Mamudo": 0,
+      "Assault Dive": 0.1,
+      "Triple Down": 0.2,
+      "Mamudo": 0.3,
       "Dekaja": 29,
       "Eiga": 30,
       "Sukukaja": 31,
       "Curse Screen": 32
     },
-    "stats": [46, 10],
-    "inherit": "phy"
+    "stats": [460, 100]
   },
   "Saki Mitama": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 55,
     "race": "Moon",
     "skills": {
-      "Orb of Power": 0,
-      "Orb of Resolve": 0,
-      "Orb of Haste": 0,
+      "Orb of Power": 0.1,
+      "Orb of Resolve": 0.2,
+      "Orb of Haste": 0.3,
       "Eternal Melody": 57
     },
-    "stats": [89, 30],
-    "inherit": "nav"
+    "stats": [890, 300]
   },
   "Sandalphon": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 77,
     "race": "Moon",
     "skills": {
-      "Harvest Prayer": 0,
-      "Farsight": 0,
-      "Roads of Light": 0,
+      "Harvest Prayer": 0.1,
+      "Farsight": 0.2,
+      "Roads of Light": 0.3,
       "Snake Glare": 79
     },
-    "stats": [144, 46],
-    "inherit": "nav"
+    "stats": [1440, 460]
   },
   "Sandman": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 2,
     "race": "Devil",
     "skills": {
-      "Single Shot": 0,
-      "Garu": 0,
-      "Rakunda": 0,
+      "Single Shot": 0.1,
+      "Garu": 0.2,
+      "Rakunda": 0.3,
       "Guillotine": 3,
       "Twin Slash": 4,
       "Dodge Arts": 5
     },
-    "stats": [11, 2],
-    "inherit": "phy"
+    "stats": [110, 20]
   },
   "Sarasvati": {
+    "combat": "nav",
+    "inherit": "ligpp",
     "lvl": 6,
     "race": "Priestess",
     "skills": {
-      "Kouha": 0,
-      "Dormina": 0,
-      "Ailment Arts": 0,
+      "Kouha": 0.1,
+      "Dormina": 0.2,
+      "Ailment Arts": 0.3,
       "Orb of Power": 7,
       "Pulinpa": 8,
       "Recarm": 9
     },
-    "stats": [12, 4],
-    "inherit": "nav"
+    "stats": [120, 40]
   },
   "Satan": {
+    "combat": "mag",
+    "inherit": "almnp",
     "lvl": 81,
     "race": "Judgement",
     "skills": {
-      "Guillotine Blade": 0,
-      "Black Viper": 0,
-      "Bind Arts+": 0,
+      "Guillotine Blade": 0.1,
+      "Black Viper": 0.2,
+      "Bind Arts+": 0.3,
       "Mamudoon": 82,
       "Regenerate 3": 83,
       "Death Chaser": 84,
       "Megidolaon": 85
     },
-    "stats": [136, 45],
-    "inherit": "mag"
+    "stats": [1360, 450]
   },
   "Scathach": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 72,
     "race": "Priestess",
     "skills": {
-      "Primal Force": 0,
-      "Garudyne": 0,
+      "Primal Force": 0.1,
+      "Garudyne": 0.2,
       "Magarudyne": 74,
       "Silence Circle": 75,
       "Circle Recovery": 76
     },
-    "stats": [152, 28],
-    "inherit": "phy"
+    "stats": [1520, 280]
   },
   "Seiryu": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 41,
     "race": "Temperance",
     "skills": {
-      "Garula": 0,
-      "Pure Memento": 0,
+      "Garula": 0.1,
+      "Pure Memento": 0.2,
       "Dekunda": 42,
       "Windstrike Link": 43,
       "Matarukaja": 44
     },
-    "stats": [67, 18],
-    "inherit": "mag"
+    "stats": [670, 180]
   },
   "Seraph": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 85,
     "race": "Justice",
     "skills": {
-      "Agidyne": 0,
-      "Bufudyne": 0,
-      "Invigorate 3": 0,
+      "Agidyne": 0.1,
+      "Bufudyne": 0.2,
+      "Invigorate 3": 0.3,
       "Garudyne": 86,
       "Ziodyne": 87,
       "Eigaon": 88,
       "Kougaon": 89
     },
-    "stats": [136, 45],
-    "inherit": "mag"
+    "stats": [1360, 450]
   },
   "Setanta": {
+    "combat": "phy",
+    "inherit": "nukpp",
     "lvl": 27,
     "race": "Justice",
     "skills": {
-      "Nucleostrike Link": 0,
-      "Mafrei": 0,
-      "Tarukaja": 0,
+      "Nucleostrike Link": 0.1,
+      "Mafrei": 0.2,
+      "Tarukaja": 0.3,
       "Resseiha": 28,
       "Heat Wave": 29,
       "Assault Shot": 31,
       "Regenerate 1": 32
     },
-    "stats": [43, 11],
-    "inherit": "phy"
+    "stats": [430, 110]
   },
   "Seth": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 70,
     "race": "Moon",
     "skills": {
-      "Orb of Resolve": 0,
-      "Orb of Haste": 0,
+      "Orb of Resolve": 0.1,
+      "Orb of Haste": 0.2,
       "Paths of Light": 71,
       "Victory Cry": 72
     },
-    "stats": [127, 39],
-    "inherit": "nav"
+    "stats": [1270, 390]
   },
   "Shiisaa": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 13,
     "race": "Hierophant",
     "skills": {
-      "Orb of Resolve": 0,
-      "Safety Prayer": 0,
+      "Orb of Resolve": 0.1,
+      "Safety Prayer": 0.2,
       "Spotter": 14,
       "Orb of Haste": 15
     },
-    "stats": [22, 7],
-    "inherit": "nav"
+    "stats": [220, 70]
   },
   "Shiki-Ouji": {
+    "combat": "phy",
+    "inherit": "psypp",
     "lvl": 63,
     "race": "Fool",
     "skills": {
-      "Psycho Smash": 0,
-      "Psystrike Link": 0,
+      "Psycho Smash": 0.1,
+      "Psystrike Link": 0.2,
       "Miracle Punch": 64,
       "Quadruple Link": 65,
       "Psy Screen": 66
     },
-    "stats": [121, 22],
-    "inherit": "phy"
+    "stats": [1210, 220]
   },
   "Shiva": {
+    "combat": "mag",
+    "inherit": "psypp",
     "lvl": 83,
     "race": "Tower",
     "skills": {
-      "Oneshot Kill": 0,
-      "Psycho Blast": 0,
-      "Pralaya": 0,
+      "Oneshot Kill": 0.1,
+      "Psycho Blast": 0.2,
+      "Pralaya": 0.3,
       "Psy Turbo": 85,
       "Marakunda": 86,
       "Amrita": 87,
-      "Absorb Psy": 88
+      "Psy Drain": 88
     },
-    "stats": [155, 40],
-    "inherit": "mag"
+    "stats": [1550, 400]
   },
   "Siegfried": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 70,
     "race": "Strength",
     "skills": {
-      "Aeon Rain": 0,
-      "Heaven's Blade": 0,
-      "Line Guard": 0,
+      "Aeon Rain": 0.1,
+      "Heaven's Blade": 0.2,
+      "Line Guard": 0.3,
       "Power Charge": 71,
       "Brave Blade": 72,
       "Matarukaja": 73,
       "Challenger Arts+": 74
     },
-    "stats": [177, 25],
-    "inherit": "def"
+    "stats": [1770, 250]
   },
   "Silky": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 10,
     "race": "Temperance",
     "skills": {
-      "Bufu": 0,
-      "Resist Ice": 0,
+      "Bufu": 0.1,
+      "Resist Ice": 0.2,
       "Sukunda": 11,
       "Media": 12
     },
-    "stats": [18, 6],
-    "inherit": "mag"
+    "stats": [180, 60]
   },
   "Skadi": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 42,
     "race": "Empress",
     "skills": {
-      "Assault Shot": 0,
-      "Mabufula": 0,
-      "Tentarafoo": 0,
+      "Assault Shot": 0.1,
+      "Mabufula": 0.2,
+      "Tentarafoo": 0.3,
       "Magic Talent": 44,
       "Farsight": 45,
       "Masukukaja": 46,
       "Megido": 48
     },
-    "stats": [62, 21],
-    "inherit": "mag"
+    "stats": [620, 210]
   },
   "Sleipnir": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 34,
     "race": "Star",
     "skills": {
-      "Elecstrike Link": 0,
-      "Zionga": 0,
-      "Agility Talent": 0,
+      "Elecstrike Link": 0.1,
+      "Zionga": 0.2,
+      "Agility Talent": 0.3,
       "Double Link": 36,
       "Null A-Bind": 37,
       "Elec Boost": 38,
       "Triple Link": 39
     },
-    "stats": [53, 17],
-    "inherit": "mag"
+    "stats": [530, 170]
   },
   "Slime": {
+    "combat": "def",
+    "inherit": "almpn",
     "lvl": 1,
     "race": "Fool",
     "skills": {
-      "Lunge": 0,
-      "Endure Knack": 0,
-      "Restoring Touch": 0,
+      "Lunge": 0.1,
+      "Endure Knack": 0.2,
+      "Restoring Touch": 0.3,
       "Poisma": 2,
       "Endure": 4,
       "Snake Glare": 6
     },
-    "stats": [10, 3],
-    "inherit": "def"
+    "stats": [100, 30]
   },
   "Sraosha": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 58,
     "race": "Star",
     "skills": {
-      "Photon Edge": 0,
-      "Armor Destroyer": 0,
+      "Photon Edge": 0.1,
+      "Armor Destroyer": 0.2,
       "Makouga": 59,
       "Null A-Bind": 60,
       "Diarahan": 61
     },
-    "stats": [98, 26],
-    "inherit": "mag"
+    "stats": [980, 260]
   },
   "Succubus": {
+    "combat": "nav",
+    "inherit": "darpp",
     "lvl": 29,
     "race": "Devil",
     "skills": {
-      "Maeiha": 0,
-      "Sleeper Punch": 0,
+      "Maeiha": 0.1,
+      "Sleeper Punch": 0.2,
       "Eiga": 31,
       "Mutudi": 32,
       "Free Memento": 34
     },
-    "stats": [46, 14],
-    "inherit": "nav"
+    "stats": [460, 140]
   },
   "Sudama": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 7,
     "race": "Moon",
     "skills": {
-      "Hunting Prayer": 0,
-      "Treasure Hunter": 0,
+      "Hunting Prayer": 0.1,
+      "Treasure Hunter": 0.2,
       "Spotter": 9,
       "Orb of Resolve": 11
     },
-    "stats": [16, 6],
-    "inherit": "nav"
+    "stats": [160, 60]
   },
   "Suparna": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 67,
     "race": "Star",
     "skills": {
-      "Kamikaze Strike": 0,
-      "Vorpal Blade": 0,
+      "Kamikaze Strike": 0.1,
+      "Vorpal Blade": 0.2,
       "Garudyne": 68,
       "Wind Screen": 69,
       "Masukunda": 70
     },
-    "stats": [135, 24],
-    "inherit": "phy"
+    "stats": [1350, 240]
   },
   "Surt": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 62,
     "race": "Magician",
     "skills": {
-      "Hientou": 0,
-      "Maragion": 0,
-      "Fire Screen": 0,
+      "Hientou": 0.1,
+      "Maragion": 0.2,
+      "Fire Screen": 0.3,
       "Ragnarok": 64,
       "Disarm": 65,
       "Punishing End": 66,
       "Maragidyne": 67
     },
-    "stats": [102, 24],
-    "inherit": "mag"
+    "stats": [1020, 240]
   },
   "Suzaku": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 48,
     "race": "Temperance",
     "skills": {
-      "Herculean Strike": 0,
-      "Agilao": 0,
+      "Herculean Strike": 0.1,
+      "Agilao": 0.2,
       "Maragion": 50,
       "Fire Screen": 51,
       "Matarukaja": 52
     },
-    "stats": [80, 21],
-    "inherit": "mag"
+    "stats": [800, 210]
   },
   "Tam Lin": {
+    "combat": "phy",
+    "inherit": "winpp",
     "lvl": 54,
     "race": "Sun",
     "skills": {
-      "Heaven's Blade": 0,
-      "Kamikaze Strike": 0,
-      "Line Guard": 0,
+      "Heaven's Blade": 0.1,
+      "Kamikaze Strike": 0.2,
+      "Line Guard": 0.3,
       "Wind Boost": 56,
       "Me Patra": 57,
       "Endure Talent": 58,
       "Garudyne": 59
     },
-    "stats": [105, 21],
-    "inherit": "phy"
+    "stats": [1050, 210]
+  },
+  "Thanatos": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 36,
+    "race": "Death",
+    "skills": {
+      "Door of Hades": 0.1,
+      "Megido": 0.2,
+      "All Guard": 0.3,
+      "Dodge Arts": 37,
+      "Endure Talent": 38,
+      "Endure Genius": 39
+    },
+    "stats": [720, 260]
+  },
+  "Thanatos Picaro": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 48,
+    "race": "Death",
+    "skills": {
+      "Door of Hades": 0.1,
+      "Megidola": 0.2,
+      "Death Counter": 0.3,
+      "Runic Shield": 49,
+      "Broadshot": 50,
+      "Megidolaon": 51
+    },
+    "stats": [1000, 350]
   },
   "Thor": {
+    "combat": "def",
+    "inherit": "elepp",
     "lvl": 66,
     "race": "Chariot",
     "skills": {
-      "Vengeful Melee": 0,
-      "Mazionga": 0,
-      "All Guard": 0,
+      "Vengeful Melee": 0.1,
+      "Mazionga": 0.2,
+      "All Guard": 0.3,
       "Ziodyne": 67,
       "Power Charge": 68,
       "Elec Screen": 69,
       "True Critical Eye": 70
     },
-    "stats": [143, 26],
-    "inherit": "def"
+    "stats": [1430, 260]
   },
   "Thoth": {
+    "combat": "nav",
+    "inherit": "almpp",
     "lvl": 44,
     "race": "Emperor",
     "skills": {
-      "Fortune Hunter": 0,
-      "Calming Lull": 0,
+      "Fortune Hunter": 0.1,
+      "Calming Lull": 0.2,
       "Life Aid": 46,
       "Purifying Rain": 47
     },
-    "stats": [71, 22],
-    "inherit": "nav"
+    "stats": [710, 220]
   },
   "Throne": {
+    "combat": "mag",
+    "inherit": "firpp",
     "lvl": 55,
     "race": "Justice",
     "skills": {
-      "Maragion": 0,
-      "Dekunda": 0,
+      "Maragion": 0.1,
+      "Dekunda": 0.2,
       "Tentarafoo": 56,
       "Guillotine Blade": 57,
       "Null M-Bind": 58
     },
-    "stats": [80, 28],
-    "inherit": "mag"
+    "stats": [800, 280]
   },
   "Titania": {
+    "combat": "nav",
+    "inherit": "nukpp",
     "lvl": 22,
     "race": "Empress",
     "skills": {
-      "Media": 0,
-      "Magic Knack": 0,
-      "Resist Nuke": 0,
+      "Media": 0.1,
+      "Magic Knack": 0.2,
+      "Resist Nuke": 0.3,
       "Mafrei": 23,
       "Healing Hand": 25,
-      "Nuke Screen": 26,
+      "Nuclear Screen": 26,
       "Freila": 27
     },
-    "stats": [30, 11],
-    "inherit": "nav"
+    "stats": [300, 110]
   },
   "Triglav": {
+    "combat": "phy",
+    "inherit": "nukpp",
     "lvl": 43,
     "race": "Chariot",
     "skills": {
-      "Assault Shot": 0,
-      "Freila": 0,
+      "Assault Shot": 0.1,
+      "Freila": 0.2,
       "Masukukaja": 44,
       "First Star": 45,
       "Death Chaser": 46
     },
-    "stats": [80, 15],
-    "inherit": "phy"
+    "stats": [800, 150]
   },
   "Trumpeter": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 64,
     "race": "Judgement",
     "skills": {
-      "Makouga": 0,
-      "Hamaon": 0,
-      "Lullaby Song": 0,
+      "Makouga": 0.1,
+      "Hamaon": 0.2,
+      "Lullaby Song": 0.3,
       "Angelic Trumpet": 66,
       "Bless Screen": 67,
       "Mutudi": 68,
       "Kougaon": 69
     },
-    "stats": [98, 30],
-    "inherit": "mag"
+    "stats": [980, 300]
   },
   "Tsuchigumo": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 24,
     "race": "Strength",
     "skills": {
-      "Punishment": 0,
-      "Combo Arts": 0,
+      "Punishment": 0.1,
+      "Combo Arts": 0.2,
       "Rampage": 25,
       "Poisma": 26,
       "Null Poison": 27
     },
-    "stats": [47, 9],
-    "inherit": "phy"
+    "stats": [470, 90]
+  },
+  "Tsukiyomi": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 72,
+    "race": "Moon",
+    "skills": {
+      "Infernal Wings": 0.1,
+      "Psycho Force": 0.2,
+      "Psycho Blast": 0.3,
+      "Invigorate 3": 73,
+      "Psy Drain": 74,
+      "Focus Order": 75
+    },
+    "stats": [1250, 480]
+  },
+  "Tsukiyomi Picaro": {
+    "combat": "mag",
+    "inherit": "almpp",
+    "lvl": 76,
+    "race": "Moon",
+    "skills": {
+      "Infernal Wings": 0.1,
+      "Atomic Flare": 0.2,
+      "Cosmic Flare": 0.3,
+      "Mind Charge": 77,
+      "Nuclear Drain": 78,
+      "Focus Order": 79
+    },
+    "stats": [1360, 450]
   },
   "Turdak": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 29,
     "race": "Judgement",
     "skills": {
-      "Brutal Slash": 0,
-      "Arm Chopper": 0,
+      "Brutal Slash": 0.1,
+      "Arm Chopper": 0.2,
       "Death Chaser": 30,
       "Power Talent": 31,
       "Leg Reaper": 32
     },
-    "stats": [56, 10],
-    "inherit": "phy"
+    "stats": [560, 100]
   },
   "Tzitzimitl": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 62,
     "race": "Priestess",
     "skills": {
-      "Maeiga": 0,
-      "Mudoon": 0,
-      "Invigorate 2": 0,
+      "Maeiga": 0.1,
+      "Mudoon": 0.2,
+      "Invigorate 2": 0.3,
       "Eigaon": 63,
       "Debilitate": 64,
       "Scarecrow": 65,
       "Mind Charge": 67
     },
-    "stats": [92, 29],
-    "inherit": "mag"
+    "stats": [920, 290]
   },
   "Ukobach": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 5,
     "race": "Tower",
     "skills": {
-      "Guillotine": 0,
-      "Armor Splitter": 0,
+      "Guillotine": 0.1,
+      "Armor Splitter": 0.2,
       "Agi": 6,
       "Ambush Arts": 7,
       "Lunge": 8
     },
-    "stats": [14, 3],
-    "inherit": "phy"
+    "stats": [140, 30]
   },
   "Unicorn": {
+    "combat": "nav",
+    "inherit": "ligpp",
     "lvl": 28,
     "race": "Hierophant",
     "skills": {
-      "Makouha": 0,
-      "Me Patra": 0,
+      "Makouha": 0.1,
+      "Me Patra": 0.2,
       "Kouga": 30,
       "Null Sleep": 31,
       "Diarama": 32
     },
-    "stats": [44, 13],
-    "inherit": "nav"
+    "stats": [440, 130]
   },
   "Uriel": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 48,
     "race": "Justice",
     "skills": {
-      "Arrow Rain": 0,
-      "Kouga": 0,
-      "Combo Arts+": 0,
+      "Arrow Rain": 0.1,
+      "Kouga": 0.2,
+      "Combo Arts+": 0.3,
       "Masukukaja": 49,
       "Blade of Fury": 50,
       "Makouga": 51,
       "Mahama": 52
     },
-    "stats": [88, 17],
-    "inherit": "phy"
+    "stats": [880, 170]
   },
   "Valkyrie": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 9,
     "race": "Strength",
     "skills": {
-      "Giant Slice": 0,
-      "Zanshinken": 0,
-      "Endure Knack": 0,
+      "Giant Slice": 0.1,
+      "Zanshinken": 0.2,
+      "Endure Knack": 0.3,
       "Combo Arts": 11,
       "First Star": 12,
       "Endure": 13,
       "Arm Chopper": 14
     },
-    "stats": [24, 4],
-    "inherit": "phy"
+    "stats": [240, 40]
   },
   "Vasuki": {
+    "combat": "mag",
+    "inherit": "ligpp",
     "lvl": 69,
     "race": "Hanged",
     "skills": {
-      "Kougaon": 0,
-      "Calm Blade": 0,
+      "Kougaon": 0.1,
+      "Calm Blade": 0.2,
       "Ailment Arts+": 70,
       "Confusion Circle": 71,
       "Makougaon": 72
     },
-    "stats": [111, 34],
-    "inherit": "mag"
+    "stats": [1110, 340]
   },
   "Virtue": {
+    "combat": "nav",
+    "inherit": "psypp",
     "lvl": 33,
     "race": "Justice",
     "skills": {
-      "Mental Smash": 0,
-      "Disarm": 0,
+      "Mental Smash": 0.1,
+      "Disarm": 0.2,
       "Diarama": 34,
       "Psy Boost": 35,
       "Dodge Arts": 36
     },
-    "stats": [49, 19],
-    "inherit": "nav"
+    "stats": [490, 190]
   },
   "Vishnu": {
+    "combat": "mag",
+    "inherit": "winpp",
     "lvl": 72,
     "race": "Temperance",
     "skills": {
-      "Panta Rhei": 0,
-      "Amrita": 0,
-      "Dodge Arts+": 0,
+      "Panta Rhei": 0.1,
+      "Amrita": 0.2,
+      "Dodge Arts+": 0.3,
       "Salome's Kiss": 73,
       "Weapon Crusher": 74,
       "Wind Amp": 75,
       "Megidolaon": 76
     },
-    "stats": [119, 38],
-    "inherit": "mag"
+    "stats": [1190, 380]
   },
   "Vivian": {
+    "combat": "nav",
+    "inherit": "icepp",
     "lvl": 34,
     "race": "Lovers",
     "skills": {
-      "Bufula": 0,
-      "Lullaby Song": 0,
-      "Salome's Kiss": 0,
+      "Bufula": 0.1,
+      "Lullaby Song": 0.2,
+      "Salome's Kiss": 0.3,
       "Ice Boost": 35,
       "Marakukaja": 36,
       "Sleep Circle": 37,
       "Marakunda": 38
     },
-    "stats": [77, 12],
-    "inherit": "nav"
+    "stats": [770, 120]
   },
   "Vouivre": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 62,
     "race": "Devil",
     "skills": {
-      "Decay Circle": 0,
-      "Circle Recovery": 0,
-      "Diarahan": 0,
+      "Decay Circle": 0.1,
+      "Circle Recovery": 0.2,
+      "Diarahan": 0.3,
       "Bind Arts+": 63,
       "Silence Circle": 64,
       "Lethargy Circle": 65,
       "Spirit Summon": 66
     },
-    "stats": [97, 30],
-    "inherit": "mag"
+    "stats": [970, 300]
   },
   "White Rider": {
+    "combat": "mag",
+    "inherit": "darpp",
     "lvl": 33,
     "race": "Death",
     "skills": {
-      "Resseiha": 0,
-      "Evil Smile": 0,
-      "Bless Screen": 0,
+      "Resseiha": 0.1,
+      "Evil Smile": 0.2,
+      "Bless Screen": 0.3,
       "Ailment Arts": 34,
       "Holy Touch": 35,
       "Dekaja": 36,
       "Samarecarm": 38
     },
-    "stats": [51, 15],
-    "inherit": "mag"
+    "stats": [510, 150]
   },
   "Xi Wangmu": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 67,
     "race": "Empress",
     "skills": {
-      "Bufudyne": 0,
-      "Mabufula": 0,
-      "Mediarahan": 0,
+      "Bufudyne": 0.1,
+      "Mabufula": 0.2,
+      "Mediarahan": 0.3,
       "Samarecarm": 68,
       "Mind Charge": 70,
       "Ice Screen": 71,
       "Mabufudyne": 72
     },
-    "stats": [106, 33],
-    "inherit": "mag"
+    "stats": [1060, 330]
   },
   "Xiezhai": {
+    "combat": "mag",
+    "inherit": "elepp",
     "lvl": 11,
     "race": "Star",
     "skills": {
-      "Zio": 0,
-      "Dormina": 0,
+      "Zio": 0.1,
+      "Dormina": 0.2,
       "Fang Smash": 12,
       "Single Shot": 13,
       "Resist Elec": 14
     },
-    "stats": [20, 6],
-    "inherit": "mag"
+    "stats": [200, 60]
   },
   "Yaksini": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 14,
     "race": "Empress",
     "skills": {
-      "Giant Slice": 0,
-      "Disarm": 0,
+      "Giant Slice": 0.1,
+      "Disarm": 0.2,
       "Frei": 15,
       "Endure Knack": 16,
       "First Star": 17
     },
-    "stats": [30, 6],
-    "inherit": "phy"
-  },
-  "Orochi": {
-    "lvl": 30,
-    "race": "Moon",
-    "skills": {
-      "Rampage": 0,
-      "Combo Arts": 0,
-      "All Guard": 31,
-      "Heat Wave": 32,
-      "Endure": 33
-    },
-    "stats": [58, 10],
-    "inherit": "phy"
+    "stats": [300, 60]
   },
   "Yatagarasu": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 13,
     "race": "Death",
     "skills": {
-      "Zanshinken": 0,
-      "Single Shot": 0,
-      "Agi": 0,
+      "Zanshinken": 0.1,
+      "Single Shot": 0.2,
+      "Agi": 0.3,
       "Maragi": 14,
       "Diarama": 15,
       "Null Hex": 16,
       "Triple Down": 17
     },
-    "stats": [21, 6],
-    "inherit": "phy"
+    "stats": [210, 60]
   },
   "Yatsufusa": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 45,
     "race": "Hanged",
     "skills": {
-      "Assault Dive": 0,
-      "Firestrike Link": 0,
-      "Triple Link": 0,
+      "Assault Dive": 0.1,
+      "Firestrike Link": 0.2,
+      "Triple Link": 0.3,
       "Hientou": 47,
       "Luck Talent": 48,
       "Quadruple Link": 49,
       "Broadshot": 50
     },
-    "stats": [86, 17],
-    "inherit": "phy"
-  },
-  "Ikusa": {
-    "lvl": 22,
-    "race": "Hanged",
-    "skills": {
-      "Mind Strike": 0,
-      "Dodge Arts": 0,
-      "Psystrike Link": 23,
-      "Assault Shot": 24,
-      "Resist Psy": 25
-    },
-    "stats": [36, 8],
-    "inherit": "phy"
+    "stats": [860, 170]
   },
   "Yoshitsune": {
+    "combat": "phy",
+    "inherit": "almpn",
     "lvl": 78,
     "race": "Tower",
     "skills": {
-      "Oneshot Kill": 0,
-      "Combo Arts+": 0,
-      "Dodge Arts+": 0,
+      "Oneshot Kill": 0.1,
+      "Combo Arts+": 0.2,
+      "Dodge Arts+": 0.3,
       "Hassou Tobi": 80,
       "Null A-Bind": 81,
       "Power Charge": 82,
       "Heat Riser": 83
     },
-    "stats": [189, 27],
-    "inherit": "phy"
+    "stats": [1890, 270]
   },
   "Yuki Jyorou": {
+    "combat": "mag",
+    "inherit": "icepp",
     "lvl": 18,
     "race": "Fortune",
     "skills": {
-      "Icestrike Link": 0,
-      "Mabufu": 0,
-      "Dormina": 0,
+      "Icestrike Link": 0.1,
+      "Mabufu": 0.2,
+      "Dormina": 0.3,
       "Mutudi": 19,
       "Double Link": 20,
       "Recarm": 21,
       "Regenerate 1": 22
     },
-    "stats": [24, 10],
-    "inherit": "mag"
+    "stats": [240, 100]
   },
   "Zaou-Gongen": {
+    "combat": "phy",
+    "inherit": "firpp",
     "lvl": 84,
     "race": "Strength",
     "skills": {
-      "Myriad Arrows": 0,
-      "Firestrike Link": 0,
-      "Infinite Link": 0,
+      "Myriad Arrows": 0.1,
+      "Firestrike Link": 0.2,
+      "Infinite Link": 0.3,
       "Inferno Boost": 86,
       "Null S-Bind": 87,
       "Golden Link": 88,
       "Heroic Gemini": 89
     },
-    "stats": [181, 34],
-    "inherit": "phy"
+    "stats": [1810, 340]
   }
 }

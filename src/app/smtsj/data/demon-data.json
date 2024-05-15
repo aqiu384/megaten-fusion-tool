@@ -1,6 +1,6 @@
 {
   "Abaddon": {
-    "ailments": "--n---X---",
+    "ailments": "------X---",
     "inherits": "o------oo-ooo--",
     "lvl": 60,
     "pcoeff": 20,
@@ -35,7 +35,6 @@
     "stats": [126, 71, 7, 10, 9, 11, 9]
   },
   "Airavata": {
-    "ailments": "------n---",
     "hpmod": 1.1,
     "inherits": "--------oo-o--o",
     "lvl": 41,
@@ -81,7 +80,7 @@
     "stats": [736, 383, 54, 54, 63, 47, 54]
   },
   "Alraune": {
-    "ailments": "XXn-nnn---",
+    "ailments": "-----X----",
     "inherits": "----------o-ooo",
     "lvl": 51,
     "pcoeff": 14,
@@ -104,7 +103,6 @@
     "stats": [667, 364, 48, 52, 51, 50, 56]
   },
   "Ame no Uzume": {
-    "ailments": "-----XX---",
     "inherits": "o------------o-",
     "lvl": 24,
     "pcoeff": 12,
@@ -115,7 +113,6 @@
     "stats": [214, 117, 13, 16, 15, 16, 22]
   },
   "Ammut": {
-    "ailments": "555-------",
     "inherits": "--------o----o-",
     "lvl": 56,
     "pcoeff": 12,
@@ -126,7 +123,6 @@
     "stats": [472, 257, 40, 38, 37, 31, 32]
   },
   "Ananta": {
-    "ailments": "--5-n-----",
     "attack": "1-3 hits",
     "inherits": "----------o---o",
     "lvl": 65,
@@ -260,14 +256,14 @@
     "stats": [94, 53, 9, 8, 7, 5, 5]
   },
   "Ares": {
-    "ailments": "XXXXXXXXXX",
+    "ailmods": [300, 300, 300, 300, 300, 300, 300, 300, 300, 300],
     "hpmod": 1.1,
     "inherits": "o-------oo-ooo-",
     "lvl": 36,
     "pcoeff": 21,
     "race": "Fury",
     "resists": "ss----n-",
-    "skills": ["Berserker God", "Resist Phys", "Counter"],
+    "skills": ["True Lobotomy", "Resist Phys", "Counter"],
     "source": ["Berserker God", "Sukukaja", "Phys Boost"],
     "stats": [336, 169, 29, 22, 29, 21, 22]
   },
@@ -293,7 +289,7 @@
     "stats": [370, 197, 28, 29, 31, 27, 26]
   },
   "Atropos": {
-    "ailments": "----n5----",
+    "ailments": "----n-----",
     "inherits": "-----oo--------",
     "lvl": 49,
     "pcoeff": 12,
@@ -350,7 +346,7 @@
     "stats": [187, 107, 13, 17, 14, 15, 16]
   },
   "Bai Suzhen": {
-    "ailments": "-X--nX----",
+    "ailments": "-X---X----",
     "inherits": "--o------o-o--o",
     "lvl": 27,
     "pcoeff": 15,
@@ -372,7 +368,7 @@
     "stats": [408, 216, 33, 27, 29, 39, 31]
   },
   "Balor": {
-    "ailments": "--5--5X---",
+    "ailments": "------X---",
     "inherits": "-o-----oo-ooo--",
     "lvl": 44,
     "pcoeff": 20,
@@ -405,7 +401,6 @@
     "stats": [587, 305, 50, 39, 45, 44, 44]
   },
   "Basilisk": {
-    "ailments": "-5n-------",
     "attack": "3% Stone",
     "inherits": "--------oooo---",
     "lvl": 35,
@@ -417,7 +412,6 @@
     "stats": [289, 174, 25, 28, 18, 22, 22]
   },
   "Berserker": {
-    "ailments": "----55----",
     "inherits": "--------o----o-",
     "lvl": 53,
     "pcoeff": 12,
@@ -459,7 +453,6 @@
     "stats": [265, 149, 22, 23, 20, 23, 17]
   },
   "Black Maria": {
-    "ailments": "----n-----",
     "hpmod": 1.1,
     "inherits": "---o------o-o-o",
     "lvl": 64,
@@ -477,6 +470,7 @@
     "pcoeff": 21,
     "race": "Fiend",
     "resists": "--wd--nn",
+    "resmods": [0, 0, 100, 0, 0, 0, 0, 0],
     "skills": ["Glacial Blast", "Megidola", "Debilitate"],
     "source": ["Glacial Blast", "Ice Boost", "Mana Surge"],
     "stats": [559, 316, 43, 48, 40, 48, 43]
@@ -506,7 +500,7 @@
     "stats": [197, 101, 17, 13, 16, 15, 14]
   },
   "Cabracan": {
-    "ailments": "XX--n-X---",
+    "ailments": "XX----X---",
     "inherits": "--------oo-o--o",
     "lvl": 64,
     "pcoeff": 15,
@@ -539,7 +533,7 @@
     "stats": [277, 140, 18, 17, 22, 27, 19]
   },
   "Catoblepas": {
-    "ailments": "XXnXWXXnX-",
+    "ailments": "XXXXWXXXX-",
     "attack": "3% Stone",
     "inherits": "---------ooo-o-",
     "lvl": 52,
@@ -551,8 +545,8 @@
     "stats": [436, 245, 35, 38, 33, 27, 33]
   },
   "Cerberus": {
-    "ailments": "--5-wX----",
-    "ailmods": [0, 0, 25, 0, 150, 0, 0, 0, 0, 0],
+    "ailments": "----wX----",
+    "ailmods": [0, 0, 0, 0, 150, 0, 0, 0, 0, 0],
     "attack": "10% Poison",
     "inherits": "-o------o------",
     "lvl": 66,
@@ -564,7 +558,6 @@
     "stats": [541, 285, 45, 37, 40, 44, 42]
   },
   "Cherub": {
-    "ailments": "--5--5X---",
     "inherits": "-------o-o-----",
     "lvl": 61,
     "pcoeff": 12,
@@ -597,7 +590,6 @@
     "stats": [187, 88, 17, 9, 16, 15, 15]
   },
   "Churel": {
-    "ailments": "-----n----",
     "inherits": "------o---oo--o",
     "lvl": 24,
     "pcoeff": 15,
@@ -608,7 +600,7 @@
     "stats": [214, 125, 17, 20, 15, 14, 16]
   },
   "Clotho": {
-    "ailments": "----n5----",
+    "ailments": "----n-----",
     "inherits": "----------o---o",
     "lvl": 37,
     "pcoeff": 12,
@@ -619,7 +611,6 @@
     "stats": [316, 180, 21, 28, 23, 25, 24]
   },
   "Cu Chulainn": {
-    "ailments": "------n---",
     "hpmod": 1.1,
     "inherits": "----o---oo-ooo-",
     "lvl": 48,
@@ -641,7 +632,6 @@
     "stats": [403, 225, 34, 31, 26, 39, 30]
   },
   "Dakini": {
-    "ailments": "----5n----",
     "inherits": "-o--------o----",
     "lvl": 63,
     "pcoeff": 12,
@@ -683,12 +673,12 @@
     "pcoeff": 20,
     "race": "Fiend",
     "resists": "--ssw-sn",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Mamudo", "Staredown", "Blight"],
     "source": ["Blight", "Life Bonus", "Mana Bonus"],
     "stats": [199, 111, 16, 16, 14, 16, 19]
   },
   "Decarabia": {
-    "ailments": "-55-5X5---",
     "inherits": "-------o-----o-",
     "lvl": 50,
     "pcoeff": 12,
@@ -759,7 +749,6 @@
     "stats": [44, 24, 4, 4, 4, 4, 4]
   },
   "Diana": {
-    "ailments": "-----n----",
     "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "---------o--ooo",
@@ -772,7 +761,6 @@
     "stats": [464, 249, 33, 34, 35, 40, 35]
   },
   "Dionysus": {
-    "ailments": "--n----n--",
     "inherits": "o------o--ooo-o",
     "lvl": 41,
     "pcoeff": 20,
@@ -783,18 +771,17 @@
     "stats": [352, 202, 26, 33, 27, 25, 27]
   },
   "Dis": {
-    "ailments": "------5---",
     "inherits": "----o-----o----",
     "lvl": 27,
     "pcoeff": 12,
     "race": "Yoma",
-    "resists": "ww--ss--",
+    "resists": "-w--ss--",
+    "resmods": [125, 125, 0, 0, 0, 0, 0, 0],
     "skills": ["Magarula", "Makajama"],
     "source": ["Garudyne", "Resist Elec"],
     "stats": [235, 140, 16, 23, 16, 18, 18]
   },
   "Dominion": {
-    "ailments": "--5--5----",
     "inherits": "-----o-o-------",
     "lvl": 38,
     "pcoeff": 11,
@@ -848,7 +835,6 @@
     "stats": [210, 106, 13, 14, 18, 15, 18]
   },
   "Erlkonig": {
-    "ailments": "nnn-------",
     "inherits": "---o-----o--oo-",
     "lvl": 61,
     "pcoeff": 15,
@@ -864,14 +850,14 @@
     "lvl": 8,
     "pcoeff": 47,
     "race": "Prime",
-    "resists": "-s---wnn",
-    "resmods": [0, 75, 0, 0, 0, 0, 0, 0],
+    "resists": "-s----nn",
+    "resmods": [0, 75, 0, 0, 0, 125, 0, 0],
     "skills": ["Zio"],
     "source": ["Zionga", "Mazio"],
     "stats": [92, 56, 7, 9, 6, 5, 7]
   },
   "Fafnir": {
-    "ailments": "--5---X---",
+    "ailments": "------X---",
     "inherits": "--------oo-o-o-",
     "lvl": 72,
     "pcoeff": 14,
@@ -917,8 +903,6 @@
     "stats": [191, 103, 15, 14, 14, 13, 14]
   },
   "Fomorian": {
-    "ailments": "w---5-----",
-    "ailmods": [150, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "inherits": "---o----o------",
     "lvl": 16,
     "pcoeff": 12,
@@ -947,11 +931,10 @@
     "race": "Genma",
     "resists": "--rr--n-",
     "skills": ["Bufudyne", "Explosive Fist", "Ice Boost"],
-    "source": ["Mahamaon", "Bufudyne", "Life Gain"],
+    "source": ["Hamaon", "Bufudyne", "Life Bonus"],
     "stats": [311, 170, 27, 25, 25, 25, 22]
   },
   "Futotama": {
-    "ailments": "--n-------",
     "attack": "All foes",
     "hpmod": 1.1,
     "inherits": "-----o-o---oooo",
@@ -964,7 +947,6 @@
     "stats": [376, 211, 27, 33, 30, 26, 30]
   },
   "Fuu-Ki": {
-    "ailments": "----n-----",
     "inherits": "----o---o------",
     "lvl": 36,
     "pcoeff": 12,
@@ -985,7 +967,6 @@
     "stats": [562, 296, 47, 41, 45, 37, 41]
   },
   "Garuda": {
-    "ailments": "--n-------",
     "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "o---o---o--o---",
@@ -1021,7 +1002,6 @@
     "stats": [268, 135, 26, 16, 21, 19, 18]
   },
   "Girimehkala": {
-    "ailments": "n55-------",
     "inherits": "--------o-oo-o-",
     "lvl": 57,
     "pcoeff": 13,
@@ -1053,7 +1033,7 @@
     "stats": [88, 40, 8, 3, 7, 4, 9]
   },
   "Gogmagog": {
-    "ailments": "--5---X---",
+    "ailments": "------X---",
     "inherits": "o--o-----------",
     "lvl": 55,
     "pcoeff": 12,
@@ -1128,7 +1108,6 @@
     "stats": [511, 273, 37, 37, 38, 45, 39]
   },
   "Gui Xian": {
-    "ailments": "----X-----",
     "inherits": "--o------o-----",
     "lvl": 42,
     "pcoeff": 12,
@@ -1139,7 +1118,6 @@
     "stats": [376, 189, 30, 25, 33, 22, 26]
   },
   "Gurr": {
-    "ailments": "-----n----",
     "attack": "Gun dmg, 15% Poison",
     "inherits": "o---o-o----o---",
     "lvl": 40,
@@ -1187,7 +1165,6 @@
     "stats": [108, 59, 6, 9, 9, 10, 8]
   },
   "Hanuman": {
-    "ailments": "--5--n----",
     "hpmod": 1.1,
     "inherits": "o-------o--ooo-",
     "lvl": 62,
@@ -1210,12 +1187,15 @@
     "stats": [470, 268, 36, 41, 35, 30, 38]
   },
   "Hare of Inaba": {
+    "ailments": "w---------",
+    "ailmods": [100, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "attack": "1-2 hits",
     "inherits": "o---------ooo-o",
     "lvl": 37,
     "pcoeff": 14,
     "race": "UMA",
     "resists": "-wwwwwss",
+    "resmods": [0, 100, 100, 100, 100, 100, 0, 0],
     "skills": ["Mediarama", "Sukukaja", "Vigilant"],
     "source": ["Vigilant", "Recovery Amp"],
     "stats": [313, 170, 24, 23, 22, 33, 24]
@@ -1233,7 +1213,6 @@
     "stats": [384, 206, 33, 28, 29, 27, 30]
   },
   "Harpy": {
-    "ailments": "-----5----",
     "attack": "Gun dmg, 5% Charm",
     "inherits": "----o---------o",
     "lvl": 9,
@@ -1257,7 +1236,6 @@
     "stats": [117, 72, 9, 12, 8, 9, 10]
   },
   "Hecatoncheir": {
-    "ailments": "----5X5---",
     "attack": "1-3 hits",
     "inherits": "--------oo-o-o-",
     "lvl": 70,
@@ -1269,7 +1247,7 @@
     "stats": [595, 297, 52, 37, 50, 37, 44]
   },
   "Heimdall": {
-    "ailments": "--5-n-----",
+    "ailments": "----n-----",
     "hpmod": 1.1,
     "inherits": "-----o-o---ooo-",
     "lvl": 72,
@@ -1281,7 +1259,6 @@
     "stats": [598, 341, 41, 51, 43, 51, 45]
   },
   "Hel": {
-    "ailments": "----5-----",
     "inherits": "o-o---o---ooo--",
     "lvl": 47,
     "pcoeff": 19,
@@ -1336,7 +1313,6 @@
     "stats": [574, 315, 38, 46, 43, 51, 42]
   },
   "Hsing-Hsing": {
-    "ailments": "-5--X-----",
     "inherits": "o-------o------",
     "lvl": 30,
     "pcoeff": 12,
@@ -1379,7 +1355,6 @@
     "stats": [523, 295, 37, 45, 38, 44, 38]
   },
   "Incubus": {
-    "ailments": "----n-----",
     "attack": "10% Sleep",
     "inherits": "----o----o-----",
     "lvl": 23,
@@ -1435,7 +1410,6 @@
     "stats": [112, 57, 11, 7, 9, 6, 7]
   },
   "Ishtar": {
-    "ailments": "-----n----",
     "hpmod": 1.1,
     "inherits": "----oo--o-ooooo",
     "lvl": 51,
@@ -1523,7 +1497,6 @@
     "stats": [286, 173, 20, 29, 19, 22, 22]
   },
   "Kama": {
-    "ailments": "--n--n----",
     "attack": "Gun dmg",
     "hpmod": 1.1,
     "inherits": "-------o-o-oooo",
@@ -1548,19 +1521,18 @@
     "stats": [225, 124, 21, 18, 17, 14, 17]
   },
   "Kanbari": {
-    "ailments": "--5-------",
     "hpmod": 1.1,
     "inherits": "-------o--ooooo",
     "lvl": 27,
     "pcoeff": 26,
     "race": "Enigma",
     "resists": "ws----n-",
+    "resmods": [100, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Mahama", "Tetrakarn", "Needle Assault"],
     "source": ["Mahama", "Life Gain"],
     "stats": [262, 131, 21, 17, 23, 20, 20]
   },
   "Kangiten": {
-    "ailments": "--5--5----",
     "hpmod": 1.1,
     "inherits": "-----o-o-o-oo-o",
     "lvl": 80,
@@ -1625,7 +1597,6 @@
     "stats": [572, 299, 42, 40, 46, 41, 44]
   },
   "Kin-Ki": {
-    "ailments": "--n-------",
     "inherits": "---o----o------",
     "lvl": 32,
     "pcoeff": 12,
@@ -1636,12 +1607,11 @@
     "stats": [298, 145, 22, 18, 27, 19, 20]
   },
   "King Frost": {
-    "ailments": "--5---5---",
     "inherits": "o-o---o-o-ooooo",
     "lvl": 40,
     "pcoeff": 41,
     "race": "Tyrant",
-    "resists": "--wd--nn",
+    "resists": "--wd--n-",
     "skills": ["Cold World", "Mediarahan", "Explosive Fist"],
     "source": ["Ice Amp", "Resist Ice"],
     "stats": [352, 197, 26, 32, 29, 25, 28]
@@ -1658,7 +1628,6 @@
     "stats": [376, 221, 30, 35, 25, 29, 29]
   },
   "Kinmamon": {
-    "ailments": "--5-------",
     "hpmod": 1.1,
     "inherits": "-----o-o--ooo-o",
     "lvl": 58,
@@ -1675,6 +1644,7 @@
     "pcoeff": 12,
     "race": "Jirae",
     "resists": "--ws----",
+    "resmods": [0, 0, 110, 0, 0, 0, 0, 0],
     "skills": ["Bufu"],
     "source": ["Mabufu"],
     "stats": [45, 23, 2, 3, 3, 1, 4]
@@ -1776,7 +1746,7 @@
     "stats": [226, 122, 17, 17, 17, 17, 17]
   },
   "Lachesis": {
-    "ailments": "----n-n---",
+    "ailments": "----n-----",
     "inherits": "----------o--o-",
     "lvl": 43,
     "pcoeff": 12,
@@ -1799,7 +1769,7 @@
     "stats": [604, 339, 40, 49, 43, 47, 55]
   },
   "Leanan Sidhe": {
-    "ailments": "----55----",
+    "ailments": "----5-----",
     "inherits": "----------o---o",
     "lvl": 14,
     "pcoeff": 12,
@@ -1822,8 +1792,6 @@
     "stats": [322, 159, 30, 19, 27, 20, 22]
   },
   "Lilim": {
-    "ailments": "-----5----",
-    "ailmods": [0, 0, 0, 0, 0, 25, 0, 0, 0, 0],
     "attack": "10% Sleep",
     "inherits": "---o-----o-----",
     "lvl": 9,
@@ -1846,7 +1814,7 @@
     "stats": [538, 303, 38, 46, 39, 42, 43]
   },
   "Loki": {
-    "ailments": "--5-X-n---",
+    "ailments": "------n---",
     "attack": "1-2 hits",
     "inherits": "--o-----o-oooo-",
     "lvl": 52,
@@ -1869,7 +1837,6 @@
     "stats": [400, 200, 33, 24, 32, 31, 30]
   },
   "Lorelei": {
-    "ailments": "-----n----",
     "inherits": "------o---ooo-o",
     "lvl": 31,
     "pcoeff": 15,
@@ -1880,8 +1847,6 @@
     "stats": [268, 162, 19, 28, 19, 22, 20]
   },
   "Macabre": {
-    "ailments": "5----X----",
-    "ailmods": [0, 0, 0, 0, 0, 150, 0, 0, 0, 0],
     "inherits": "------o-o-o-o--",
     "lvl": 18,
     "pcoeff": 15,
@@ -1989,6 +1954,7 @@
     "pcoeff": 20,
     "race": "Fiend",
     "resists": "ss--w-sn",
+    "resmods": [0, 0, 0, 0, 100, 0, 0, 0],
     "skills": ["Taunt", "Deathbound", "Chakra Walk"],
     "source": ["Taunt", "Life Gain", "Mana Gain"],
     "stats": [256, 145, 21, 21, 17, 27, 19]
@@ -1998,8 +1964,8 @@
     "lvl": 70,
     "pcoeff": 31,
     "race": "Night",
-    "resists": "-w----sn",
-    "resmods": [0, 0, 0, 0, 0, 0, 0, 50],
+    "resists": "-w----ss",
+    "resmods": [0, 100, 200, 200, 200, 200, 0, 0],
     "skills": ["Megidola", "Concentrate"],
     "source": ["Megidolaon", "Concentrate", "Void Mind"],
     "stats": [565, 323, 44, 50, 40, 45, 46]
@@ -2010,7 +1976,8 @@
     "lvl": 35,
     "pcoeff": 16,
     "race": "Tree",
-    "resists": "-sw-----",
+    "resists": "wsw-----",
+    "resmods": [50, 0, 0, 0, 0, 0, 0, 0],
     "skills": ["Me Patra", "Recarm", "Mana Aid"],
     "source": ["Recarm", "Mana Aid", "Mana Bonus"],
     "stats": [301, 179, 22, 28, 20, 26, 24]
@@ -2038,7 +2005,6 @@
     "stats": [710, 383, 57, 54, 55, 48, 53]
   },
   "Mishaguji": {
-    "ailments": "----W5----",
     "attack": "10% Fear",
     "inherits": "---o---o--oooo-",
     "lvl": 39,
@@ -2081,7 +2047,6 @@
     "stats": [157, 90, 11, 13, 10, 16, 11]
   },
   "Moloch": {
-    "ailments": "-------N--",
     "inherits": "oo-----oo-oooo-",
     "lvl": 50,
     "pcoeff": 29,
@@ -2105,7 +2070,6 @@
     "stats": [193, 90, 15, 10, 18, 11, 13]
   },
   "Morax": {
-    "ailments": "-------N--",
     "inherits": "oo------oooooo-",
     "lvl": 15,
     "pcoeff": 27,
@@ -2117,7 +2081,6 @@
     "stats": [151, 88, 13, 15, 12, 11, 9]
   },
   "Mot": {
-    "ailments": "--n---n---",
     "attack": "10% Mute",
     "inherits": "----o-ooo-ooo--",
     "lvl": 87,
@@ -2129,19 +2092,17 @@
     "stats": [697, 398, 48, 62, 50, 55, 56]
   },
   "Mother Harlot": {
-    "ailments": "nnnnnnnnn-",
     "inherits": "-oooooo----oo--",
     "lvl": 90,
     "pcoeff": 50,
     "race": "Fiend",
     "resists": "n---dwnn",
+    "resmods": [0, 0, 0, 0, 0, 100, 0, 0],
     "skills": ["Maziodyne", "Babylon Goblet", "Mamudoon"],
     "source": ["Babylon Goblet", "Life Surge", "Mana Surge"],
     "stats": [739, 407, 60, 62, 58, 53, 57]
   },
   "Mothman": {
-    "ailments": "--5-X5----",
-    "ailmods": [0, 0, 25, 0, 0, 25, 0, 0, 0, 0],
     "inherits": "------o--oo-o--",
     "lvl": 29,
     "pcoeff": 14,
@@ -2163,7 +2124,6 @@
     "stats": [166, 86, 17, 11, 13, 10, 10]
   },
   "Mushussu": {
-    "ailments": "--n-------",
     "inherits": "---o-----ooo---",
     "lvl": 61,
     "pcoeff": 15,
@@ -2208,7 +2168,7 @@
     "stats": [205, 99, 17, 10, 16, 19, 14]
   },
   "Nergal": {
-    "ailments": "nnn-------",
+    "ailments": "nn--------",
     "inherits": "-----oo--oooo--",
     "lvl": 76,
     "pcoeff": 20,
@@ -2219,7 +2179,6 @@
     "stats": [610, 335, 50, 47, 43, 50, 48]
   },
   "Nidhoggr": {
-    "ailments": "--5---55--",
     "inherits": "--------oooo---",
     "lvl": 65,
     "pcoeff": 15,
@@ -2274,7 +2233,6 @@
     "stats": [241, 130, 21, 18, 18, 18, 16]
   },
   "Oberon": {
-    "ailments": "--5--5-n--",
     "inherits": "----o---------o",
     "lvl": 50,
     "pcoeff": 12,
@@ -2296,7 +2254,7 @@
     "stats": [606, 338, 47, 51, 47, 42, 41]
   },
   "Ogun": {
-    "ailments": "--55555---",
+    "ailments": "--wwwww---",
     "ailmods": [0, 0, 25, 25, 25, 25, 25, 0, 0, 0],
     "inherits": "oo-----o-o-oo--",
     "lvl": 24,
@@ -2371,7 +2329,6 @@
     "stats": [472, 244, 38, 33, 39, 34, 36]
   },
   "Orias": {
-    "ailments": "-n--------",
     "inherits": "----o----o-----",
     "lvl": 27,
     "pcoeff": 12,
@@ -2382,7 +2339,7 @@
     "stats": [241, 130, 16, 18, 18, 21, 18]
   },
   "Orochi": {
-    "ailments": "n-n-wX----",
+    "ailments": "n---wX----",
     "ailmods": [0, 0, 0, 0, 150, 0, 0, 0, 0, 0],
     "attack": "All foes",
     "inherits": "--o----------o-",
@@ -2395,7 +2352,6 @@
     "stats": [493, 271, 42, 39, 36, 37, 36]
   },
   "Orthrus": {
-    "ailments": "--5-------",
     "inherits": "-o------o------",
     "lvl": 36,
     "pcoeff": 12,
@@ -2459,6 +2415,7 @@
     "pcoeff": 21,
     "race": "Fiend",
     "resists": "---swrnn",
+    "resmods": [0, 0, 0, 0, 50, 0, 0, 0],
     "skills": ["Killing Wind", "Mamudoon", "Blight"],
     "source": ["Killing Wind", "Wind Boost", "Mana Surge"],
     "stats": [640, 337, 51, 45, 49, 54, 50]
@@ -2507,7 +2464,6 @@
     "stats": [225, 133, 16, 22, 17, 18, 14]
   },
   "Pele": {
-    "ailments": "-----5----",
     "hpmod": 1.1,
     "inherits": "-o--------o-o-o",
     "lvl": 10,
@@ -2519,7 +2475,6 @@
     "stats": [111, 71, 7, 13, 8, 7, 10]
   },
   "Pellaidh": {
-    "ailments": "55--5-----",
     "inherits": "--------oo-o--o",
     "lvl": 40,
     "pcoeff": 14,
@@ -2540,7 +2495,7 @@
     "stats": [481, 278, 35, 44, 34, 34, 40]
   },
   "Persephone": {
-    "ailments": "-n---n----",
+    "ailments": "-----n----",
     "inherits": "----o-o---ooo-o",
     "lvl": 58,
     "pcoeff": 20,
@@ -2595,8 +2550,6 @@
     "stats": [94, 42, 7, 4, 9, 7, 4]
   },
   "Power": {
-    "ailments": "w---------",
-    "ailmods": [150, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "inherits": "-----o---o-----",
     "lvl": 19,
     "pcoeff": 12,
@@ -2683,8 +2636,6 @@
     "stats": [166, 90, 11, 13, 13, 14, 10]
   },
   "Rakshasa": {
-    "ailments": "-----5----",
-    "ailmods": [0, 0, 0, 0, 0, 25, 0, 0, 0, 0],
     "attack": "30% Poison",
     "inherits": "-o------o--o-o-",
     "lvl": 35,
@@ -2696,7 +2647,6 @@
     "stats": [304, 164, 28, 23, 23, 20, 21]
   },
   "Rangda": {
-    "ailments": "-n--55X---",
     "inherits": "----o--------o-",
     "lvl": 68,
     "pcoeff": 12,
@@ -2713,12 +2663,13 @@
     "pcoeff": 20,
     "race": "Fiend",
     "resists": "--nw--nn",
+    "resmods": [0, 0, 0, 100, 0, 0, 0, 0],
     "skills": ["Maragidyne", "True Lobotomy", "Retaliate"],
     "source": ["Trisagion", "Fire Boost", "Mana Surge"],
     "stats": [490, 268, 36, 39, 37, 44, 36]
   },
   "Rukh": {
-    "ailments": "--5---X---",
+    "ailments": "------X---",
     "inherits": "--o-----------o",
     "lvl": 42,
     "pcoeff": 12,
@@ -2751,7 +2702,6 @@
     "stats": [283, 153, 23, 20, 20, 22, 21]
   },
   "Samael": {
-    "ailments": "nn5-------",
     "inherits": "-----o-o--ooo-o",
     "lvl": 75,
     "pcoeff": 20,
@@ -2831,7 +2781,6 @@
     "stats": [747, 420, 52, 64, 57, 55, 59]
   },
   "Seth": {
-    "ailments": "55n5555n--",
     "attack": "5% Stone",
     "inherits": "-----o-oo-oooo-",
     "lvl": 85,
@@ -2907,7 +2856,6 @@
     "stats": [614, 322, 52, 41, 46, 51, 44]
   },
   "Skogsra": {
-    "ailments": "------5---",
     "inherits": "---------o--ooo",
     "lvl": 29,
     "pcoeff": 15,
@@ -2952,8 +2900,6 @@
     "stats": [593, 328, 40, 48, 45, 48, 44]
   },
   "Spriggan": {
-    "ailments": "--5-------",
-    "ailmods": [0, 0, 25, 0, 0, 0, 0, 0, 0, 0],
     "inherits": "---o----o------",
     "lvl": 34,
     "pcoeff": 11,
@@ -2975,7 +2921,6 @@
     "stats": [610, 331, 50, 44, 43, 53, 47]
   },
   "Strigoii": {
-    "ailments": "n---------",
     "inherits": "o-----o---oo---",
     "lvl": 45,
     "pcoeff": 14,
@@ -2986,7 +2931,6 @@
     "stats": [385, 198, 34, 25, 30, 30, 26]
   },
   "Succubus": {
-    "ailments": "----nn----",
     "attack": "10% Sleep",
     "inherits": "o---------o----",
     "lvl": 47,
@@ -2998,7 +2942,6 @@
     "stats": [385, 222, 24, 34, 26, 35, 32]
   },
   "Sudama": {
-    "ailments": "------5---",
     "inherits": "--o-------o----",
     "lvl": 15,
     "pcoeff": 12,
@@ -3009,7 +2952,6 @@
     "stats": [142, 74, 8, 8, 9, 15, 15]
   },
   "Sui-Ki": {
-    "ailments": "-----n----",
     "inherits": "--o-----o------",
     "lvl": 41,
     "pcoeff": 12,
@@ -3064,7 +3006,6 @@
     "stats": [221, 123, 17, 16, 14, 20, 18]
   },
   "Takeminakata": {
-    "ailments": "--5--5----",
     "hpmod": 1.1,
     "inherits": "----o---o--ooo-",
     "lvl": 27,
@@ -3076,7 +3017,7 @@
     "stats": [253, 138, 23, 20, 20, 15, 18]
   },
   "Tam Lin": {
-    "ailments": "-X5--n----",
+    "ailments": "-X---n----",
     "hpmod": 1.1,
     "inherits": "---------o-oooo",
     "lvl": 29,
@@ -3104,6 +3045,7 @@
     "pcoeff": 16,
     "race": "Vile",
     "resists": "nnwwww-n",
+    "resmods": [0, 0, 100, 100, 100, 100, 0, 0],
     "skills": ["Tyranny", "Void Nerve"],
     "source": ["Megido", "Tricky Dance", "Void Nerve"],
     "stats": [433, 238, 39, 33, 30, 35, 32]
@@ -3119,7 +3061,7 @@
     "stats": [673, 362, 53, 53, 54, 52, 46]
   },
   "Thor": {
-    "ailments": "XX--nn----",
+    "ailmods": [300, 300, 0, 0, 0, 0, 0, 0, 0, 0],
     "attack": "1-2 hits",
     "hpmod": 1.1,
     "inherits": "---o----o--ooo-",
@@ -3145,7 +3087,6 @@
     "stats": [350, 202, 23, 30, 24, 32, 29]
   },
   "Throne": {
-    "ailments": "-----5----",
     "inherits": "-o------------o",
     "lvl": 47,
     "pcoeff": 12,
@@ -3170,7 +3111,7 @@
   "Tiamat": {
     "inherits": "-oooo----oooo-o",
     "lvl": 63,
-    "pcoeff": 38,
+    "pcoeff": 36,
     "race": "Drake",
     "resists": "--nDw--s",
     "skills": ["Mabufudyne", "Silent Prayer", "Fang Breaker"],
@@ -3189,7 +3130,7 @@
     "stats": [325, 156, 24, 19, 30, 19, 23]
   },
   "Titania": {
-    "ailments": "--5-nX5---",
+    "ailments": "-----X----",
     "attack": "10% Charm",
     "inherits": "---o----------o",
     "lvl": 60,
@@ -3201,7 +3142,7 @@
     "stats": [475, 287, 32, 47, 30, 40, 41]
   },
   "Tlaloc": {
-    "ailments": "--5-------",
+    "ailments": "----------",
     "hpmod": 1.1,
     "inherits": "-o-o-------ooo-",
     "lvl": 40,
@@ -3213,7 +3154,6 @@
     "stats": [340, 203, 25, 32, 23, 28, 27]
   },
   "Tlaltecuhtli": {
-    "ailments": "--5-5-----",
     "inherits": "-o------o------",
     "lvl": 45,
     "pcoeff": 12,
@@ -3247,7 +3187,6 @@
     "stats": [394, 205, 35, 26, 30, 28, 31]
   },
   "Toufei": {
-    "ailments": "--5--5----",
     "attack": "Gun dmg",
     "inherits": "--o------o-----",
     "lvl": 31,
@@ -3270,7 +3209,6 @@
     "stats": [679, 368, 52, 53, 52, 49, 58]
   },
   "Tzitzimitl": {
-    "ailments": "----nn-n--",
     "inherits": "o------oo-ooo--",
     "lvl": 71,
     "pcoeff": 21,
@@ -3312,7 +3250,6 @@
     "stats": [385, 200, 33, 26, 30, 30, 26]
   },
   "Vetala": {
-    "ailments": "nn--n-----",
     "attack": "30% Poison",
     "inherits": "------o-o--o-o-",
     "lvl": 67,
@@ -3357,7 +3294,6 @@
     "stats": [715, 403, 51, 60, 53, 54, 55]
   },
   "Vivian": {
-    "ailments": "--X--n----",
     "inherits": "--o-------o----",
     "lvl": 40,
     "pcoeff": 12,
@@ -3378,7 +3314,7 @@
     "stats": [133, 78, 9, 13, 10, 9, 8]
   },
   "Vouivre": {
-    "ailments": "n-5--5----",
+    "ailments": "n---------",
     "inherits": "-o--------o----",
     "lvl": 33,
     "pcoeff": 12,
@@ -3389,7 +3325,7 @@
     "stats": [283, 154, 19, 21, 20, 26, 23]
   },
   "Wendigo": {
-    "ailments": "------X5--",
+    "ailments": "------X---",
     "inherits": "--o-----o-oo---",
     "lvl": 23,
     "pcoeff": 14,
@@ -3407,12 +3343,12 @@
     "pcoeff": 20,
     "race": "Fiend",
     "resists": "----nwnn",
+    "resmods": [0, 0, 0, 0, 0, 100, 0, 0],
     "skills": ["Maziodyne", "Arrow Rain", "Life Aid"],
     "source": ["Thunder Reign", "Elec Boost", "Mana Surge"],
     "stats": [412, 218, 35, 29, 31, 36, 31]
   },
   "Wild Hunt": {
-    "ailments": "--n-n--n--",
     "inherits": "o-----o--------",
     "lvl": 55,
     "pcoeff": 12,
@@ -3457,7 +3393,7 @@
     "stats": [454, 243, 34, 34, 35, 38, 31]
   },
   "Yamawaro": {
-    "ailments": "------X5--",
+    "ailments": "------X---",
     "inherits": "----o-----o----",
     "lvl": 24,
     "pcoeff": 11,
