@@ -12,7 +12,6 @@ import { CompendiumConfig } from './models';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
-import DLC_DATA_JSON from './data/dlc-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -28,7 +27,6 @@ function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
-  const enemyData = {};
   const inheritTypes: { [elem: string]: number } = {};
 
   for(const race of COMP_CONFIG_JSON.races) {
@@ -39,8 +37,9 @@ function createCompConfig(): CompendiumConfig {
   for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
     entry.race = entry.race + ' P';
     entry.stats = entry.stats.slice(0, 2);
+    entry['lvl'] = 1;
     entry['fusion'] = 'party';
-    entry['inherit'] = 'mag';
+    entry['inherit'] = 'almpp';
     DEMON_DATA_JSON[demon] = entry;
   }
 
@@ -63,22 +62,23 @@ function createCompConfig(): CompendiumConfig {
     entry['cost'] = cost ? cost + costType: 0;
   }
 
-  for (const [name, enemy] of Object.entries(ENEMY_DATA_JSON)) {
-    enemy['stats'] = enemy['stats'].slice(0, 3);
-    enemy['skills'] = enemy['skills'] || [];
-    enemy['drops'] = enemy['drops'] || [];
-
-    if (enemy.race !== 'Boss') {
-      enemyData[name] = enemy;
-    }
-  }
-
   for (const [code, name] of Object.entries(DEMON_CODES_JSON)) {
     DEMON_DATA_JSON[name]['code'] = parseInt(code, 10);
   }
 
   for (const [code, name] of Object.entries(SKILL_CODES_JSON)) {
     SKILL_DATA_JSON[name]['code'] = parseInt(code, 10);
+  }
+
+  for (const demon of Object.values(DEMON_DATA_JSON)) {
+    demon.stats = demon.stats.map(s => Math.floor(s / 10));
+  }
+
+  for (const enemy of Object.values(ENEMY_DATA_JSON)) {
+    const stats = enemy['stats'];
+    enemy['stats'] = [stats[0], stats[1] * 3, stats[3] * 3];
+    enemy['drops'] = Object.keys(enemy['dodds']);
+    enemy['resists'] = enemy['resists'].slice(0, 9);
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
@@ -100,17 +100,17 @@ function createCompConfig(): CompendiumConfig {
     ailmentElems: COMP_CONFIG_JSON.ailments,
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
+
+    demonData: DEMON_DATA_JSON,
+    baseStats: ['HP', 'MP'],
+    resistElems,
     inheritTypes,
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
-    demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
-    baseStats: ['HP', 'MP'],
-    resistElems,
-
-    enemyData,
+    demonUnlocks: DEMON_UNLOCKS_JSON,
+    enemyData: ENEMY_DATA_JSON,
     enemyStats: ['HP', 'Atk', 'Def'],
 
-    demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     hasTripleFusion: true,
     hasDemonResists: false,
@@ -120,7 +120,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq2-fusion-tool-settings',
-    settingsVersion: 2401131500
+    settingsVersion: 2405151000
   };
 }
 

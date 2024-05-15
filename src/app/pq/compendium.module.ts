@@ -12,7 +12,6 @@ import { CompendiumConfig } from '../pq2/models';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
-import DLC_DATA_JSON from './data/dlc-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -64,10 +63,6 @@ function createCompConfig(): CompendiumConfig {
     demon.stats = demon.stats.map(s => Math.floor(s / 10));
   }
 
-  for (const demon of Object.values(DLC_DATA_JSON)) {
-    demon.stats = demon.stats.map(s => Math.floor(s / 10));
-  }
-
   for (const enemy of Object.values(ENEMY_DATA_JSON)) {
     const stats = enemy['stats'];
     enemy['stats'] = [stats[0], stats[1] * 3, stats[3] * 3];
@@ -95,7 +90,7 @@ function createCompConfig(): CompendiumConfig {
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-    demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
+    demonData: DEMON_DATA_JSON,
     baseStats: ['HP', 'MP'],
     resistElems,
     inheritTypes,
@@ -114,7 +109,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq-fusion-tool-settings',
-    settingsVersion: 2401131500
+    settingsVersion: 2405151000
   };
 }
 
