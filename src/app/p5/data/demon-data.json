@@ -598,7 +598,7 @@
     "stats": [16, 19, 19, 18, 19]
   },
   "Clotho": {
-    "inherits": "healing",
+    "inherits": "bless",
     "item": "Invigorate 1",
     "lvl": 26,
     "race": "Fortune",
@@ -1763,6 +1763,7 @@
     "lvl": 87,
     "race": "Judgement",
     "resists": "-s------rn",
+    "resmods": [0, 0, 0, 0, 125, 0, 0, 125, 0, 0, 0],
     "skills": {
       "Divine Judgement": 0.1,
       "Mabufudyne": 0.2,
@@ -2462,6 +2463,7 @@
     "lvl": 41,
     "race": "Tower",
     "resists": "--------wn",
+    "resmods": [0, 125, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "skills": {
       "Rising Slash": 0.1,
       "Psy Break": 0.2,
@@ -2482,8 +2484,8 @@
     "skills": {
       "Maragi": 0.1,
       "Mabufu": 0.2,
-      "Mazio": 0.3,
-      "Magaru": 0.4,
+      "Magaru": 0.3,
+      "Mazio": 0.4,
       "Mapsi": 0.5,
       "Mafrei": 0.6,
       "Makouha": 0.7,
