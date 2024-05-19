@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
+import { PageTranslationUtil } from './page-translations/page-translation-util';
+import PAGE_TRANSLATION_JSON from './page-translations/data/translations.json';
 
 @Component({
   selector: 'app-root',
@@ -8,31 +10,34 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
           <tr>
-            <th routerLink="home" class="nav" routerLinkActive="active" style="width: 20%;">
+            <th routerLink="home" class="nav" routerLinkActive="active" style="width: 16.7%;">
               <a routerLink="home">Game List (EN)</a>
             </th>
-            <th routerLink="ja/home" class="nav" routerLinkActive="active" style="width: 20%;">
+            <th routerLink="ja/home" class="nav" routerLinkActive="active" style="width: 16.7%;">
               <a routerLink="ja/home">ゲーム一覧 (日本語)</a>
             </th>
-            <th class="nav external" style="width: 20%;">
-              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use#save-offline">{{ langEn ? 'Save Offline' : 'オフラインセーブ' }}</a></div>
+            <th routerLink="zh-cn/home" class="nav" routerLinkActive="active" style="width: 16.7%;">
+              <a routerLink="zh-cn/home">游戏一览 (简体中文)</a>
             </th>
-            <th class="nav external" style="width: 20%;">
-              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use">{{ langEn ? 'Help' : 'ヘルプ' }}</a></div>
+            <th class="nav external" style="width: 16.7%;">
+              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use#save-offline">{{ translations['save-offline'][lang] || translations['save-offline']['en'] }}</a></div>
             </th>
-            <th class="nav external" style="width: 20%;">
+            <th class="nav external" style="width: 16.7%;">
+              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use">{{ translations['help'][lang] || translations['help']['en'] }}</a></div>
+            </th>
+            <th class="nav external" style="width: 16.7%;">
               <div><a href="https://github.com/aqiu384/megaten-fusion-tool/issues">
-                {{ langEn ? 'Report Issue' : 'バグレポート' }}
+                {{ translations['report-issues'][lang] || translations['report-issues']['en'] }}
               </a></div>
             </th>
           </tr>
           <tr>
-            <th colspan="5" class="title">{{ langEn ? 'Megami Tensei Fusion Tools' : '女神転生合体アプリ' }}</th>
+            <th colspan="6" class="title">{{ translations['fusion-tool-title'][lang] || translations['fusion-tool-title']['en'] }}</th>
           </tr>
         </thead>
       </table>
       <h4 *ngIf="loading" style="text-align: center;">
-        {{ langEn ? 'Loading fusion tool... Reopen in a private session if tool does not load.' : 'Now Loading...' }}
+        {{ translations['loading'][lang] || translations['loading']['en'] }}
       </h4>
       <ng-container *ngIf="!loading">
         <router-outlet></router-outlet>
@@ -45,7 +50,7 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
       </div>
     </div>
   `,
-  styleUrls: [ './app.component.css' ],
+  styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
@@ -55,11 +60,12 @@ export class AppComponent implements OnInit {
     dso: 'ds1', ds2br: 'ds2'
   };
 
-  langEn = true;
+  lang = 'en';
   currentGame = 'none';
   loading = false;
+  translations = PAGE_TRANSLATION_JSON;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.router.events.subscribe(v => this.interceptNavigation(v));
@@ -70,9 +76,9 @@ export class AppComponent implements OnInit {
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
       this.loading = false;
-      const currentGame = event.url.replace('/ja/', '/').split('/')[1];
+      const currentGame = event.url.replace(/\/ja\/|\/zh-cn\//, '/').split('/')[1];
       this.currentGame = AppComponent.GAME_PREFIXES[currentGame] || currentGame;
-      this.langEn = !event.url.includes('/ja/');
+      this.lang = PageTranslationUtil.getLanguage(event.url);
       window.scrollTo(0, 0);
     } else if (
       event instanceof NavigationCancel ||

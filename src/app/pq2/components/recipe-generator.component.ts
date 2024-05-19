@@ -1,10 +1,13 @@
 import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
+import { PageTranslationUtil } from 'src/app/page-translations/page-translation-util';
+import PAGE_TRANSLATION_JSON from '../../page-translations/data/translations.json';
 
 @Component({
   selector: 'app-recipe-generator-container',
@@ -24,8 +27,10 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
   maxSkills: number;
+  lang = 'en';
+  titleString: string;
 
-  constructor(private fusionDataService: FusionDataService, private title: Title) {
+  constructor(private fusionDataService: FusionDataService, private title: Title, private router: Router) {
     const compConfig = this.fusionDataService.compConfig;
     this.maxSkills = compConfig.hasDemonResists ? 8 : 2;
     this.recipeConfig = {
@@ -38,15 +43,17 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       triExclusiveRaces: compConfig.hasTripleFusion ? ['Fool', 'Tower', 'Moon', 'Sun', 'Judgement'] : [],
       triFissionCalculator: this.fusionDataService.triFissionCalculator,
       triFusionCalculator: this.fusionDataService.triFusionCalculator,
-      defaultDemon: 'Pixie'
+      defaultDemon: compConfig.defaultDemon
     };
+    this.lang = PageTranslationUtil.getLanguage(router.url);
+    this.titleString = PAGE_TRANSLATION_JSON['recipe-generator'][this.lang];
   }
 
-  ngOnInit()    { this.setTitle(); this.subscribeAll(); }
+  ngOnInit() { this.setTitle(); this.subscribeAll(); }
   ngOnDestroy() { this.unsubscribeAll(); }
 
   setTitle() {
-    this.title.setTitle(`Recipe Generator - ${this.fusionDataService.appName}`);
+    this.title.setTitle(`${this.titleString} - ${this.fusionDataService.appName}`);
   }
 
   subscribeAll() {

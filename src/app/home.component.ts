@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
+import PAGE_TRANSLATION_JSON from './page-translations/data/translations.json'
 
 @Component({
   template: `
@@ -63,14 +64,26 @@ export class HomeComponent implements OnInit {
     { game: 'ソウルハッカーズ2', abbr: 'sh2' }
   ]
 
-  langEn = true;
+  static readonly FUSION_TOOLS_ZH_CN = [
+    { game: '女神异闻录3 Reload', abbr: 'p3r' }
+  ]
+
+  static readonly LANGUAGE_MAP = {
+    'en': HomeComponent.FUSION_TOOLS_EN,
+    'ja': HomeComponent.FUSION_TOOLS_JP,
+    'zh-cn': HomeComponent.FUSION_TOOLS_ZH_CN
+  }
+
+  lang = 'en';
   fusionTools = HomeComponent.FUSION_TOOLS_EN;
 
   constructor(private title: Title, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.langEn = !this.route.snapshot.data.lang;
-    this.fusionTools = this.langEn ? HomeComponent.FUSION_TOOLS_EN : HomeComponent.FUSION_TOOLS_JP;
-    this.title.setTitle(this.langEn ? 'Megami Tensei Fusion Tools' : '女神転生合体アプリ');
+    if (this.route.snapshot.data.lang) {
+      this.lang = this.route.snapshot.data.lang
+    }
+    this.fusionTools = HomeComponent.LANGUAGE_MAP[this.lang];
+    this.title.setTitle(PAGE_TRANSLATION_JSON['fusion-tool-title'][this.lang]);
   }
 }

@@ -39,7 +39,7 @@ function createCompConfig(): CompendiumConfig {
   const skillData = {};
   const inheritTypes: { [elem: string]: number } = {};
 
-  for(const race of COMP_CONFIG_JSON.races) {
+  for (const race of COMP_CONFIG_JSON.races) {
     races.push(race);
     races.push(race + ' P');
   }
@@ -126,7 +126,9 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq-fusion-tool-settings',
-    settingsVersion: 2405151000
+    settingsVersion: 2405151000,
+
+    defaultDemon: 'Pixie'
   };
 }
 
