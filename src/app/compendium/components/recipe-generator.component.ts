@@ -147,7 +147,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     const ingreds = [];
 
     for (let i = 0; i < this.internalMaxSkills; i++) {
-      ingreds.push(this.fb.group({ searchSkill: true, elem: '-', skill: this.blankSkill, race: '-', demon: this.blankDemon }));
+      ingreds.push(this.fb.group({ searchSkill: true, elem: '-', skill: this.blankSkill, race: { value: '-', disabled: true }, demon: this.blankDemon }));
     }
 
     this.form = this.fb.group({
@@ -281,7 +281,7 @@ export class RecipeGeneratorComponent implements OnChanges {
         excludeElems.push(inheritElems[inheritElems.length - i - 1]);
       }
     }
-    
+
     this.skills[this.blankSkill.element] = [this.blankSkill].concat(learnedSkills);
     this.elems = this.recipeConfig.skillElems.filter(e => this.skills[e] && !excludeElems.includes(e));
     this.form.patchValue({
