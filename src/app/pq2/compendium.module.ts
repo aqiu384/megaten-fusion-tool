@@ -29,7 +29,7 @@ function createCompConfig(): CompendiumConfig {
   const races = [];
   const inheritTypes: { [elem: string]: number } = {};
 
-  for(const race of COMP_CONFIG_JSON.races) {
+  for (const race of COMP_CONFIG_JSON.races) {
     races.push(race);
     races.push(race + ' P');
   }
@@ -59,7 +59,7 @@ function createCompConfig(): CompendiumConfig {
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];
     const costType = cost > 1000 ? (cost > 2000 ? COST_CC - 2000 : COST_MP - 1000) : COST_HP - 200;
-    entry['cost'] = cost ? cost + costType: 0;
+    entry['cost'] = cost ? cost + costType : 0;
   }
 
   for (const [code, name] of Object.entries(DEMON_CODES_JSON)) {
@@ -120,7 +120,9 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq2-fusion-tool-settings',
-    settingsVersion: 2405151000
+    settingsVersion: 2405151000,
+
+    defaultDemon: 'Pixie'
   };
 }
 

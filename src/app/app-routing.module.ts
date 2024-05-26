@@ -36,6 +36,20 @@ const appRoutes: Routes = [
     ]
   },
   {
+    path: 'zh-cn',
+    data: { lang: 'zh-cn' },
+    children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      {
+        path: 'p3r',
+        loadChildren: () => import('./p3r/compendium.module').then(m => m.CompendiumModule),
+        data: { appName: '女神异闻录3 Reload' }
+      },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' }
+    ]
+  },
+  {
     path: 'smt1',
     loadChildren: () => import('./smt1/compendium.module').then(m => m.CompendiumModule),
     data: { appName: 'Shin Megami Tensei' }
@@ -234,7 +248,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(appRoutes) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

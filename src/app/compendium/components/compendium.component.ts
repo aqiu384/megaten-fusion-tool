@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { PositionStickyDirective } from '../../shared/position-sticky.directive';
 
+import PAGE_TRANSLATION_JSON from '../../page-translations/data/translations.json';
 @Component({
   selector: 'app-demon-compendium-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -18,17 +19,17 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
             [routerLinkActiveOptions]="{ exact: true }"
             [style.width.%]="1 / hlength">
             <a [routerLink]="mainList + 's'">
-              {{ langEn ? mainList.charAt(0).toUpperCase() + mainList.slice(1) + ' List' : '悪魔一覧' }}
+              {{ (this.translations[mainList][lang] || this.translations[mainList]['en']) + (this.translations['list'][lang] || this.translations['list']['en']) }}
             </a>
           </th>
           <th class="nav" routerLink="skills" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="skills">
-              {{ langEn ? 'Skill List' : 'スキル一覧' }}
+              {{ this.translations["skills"][lang] || this.translations["skills"]['en'] }}
             </a>
           </th>
           <th class="nav" routerLink="chart" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="chart">
-              {{ langEn ? 'Fusion Chart' : '合体表' }}
+              {{ this.translations["fusion-chart"][lang] || this.translations["fusion-chart"]['en'] }}
             </a>
           </th>
           <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active"
@@ -41,12 +42,12 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
           </th>
           <th *ngIf="hasSettings" class="nav" routerLink="settings" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="settings">
-              {{ langEn ? 'Fusion Settings' : 'DLC' }}
+              {{ this.translations["fusion-settings"][lang] || this.translations["fusion-settings"]['en'] }}
             </a>
           </th>
         </tr>
         <tr>
-          <th [attr.colspan]="hlength" class="title">{{ appName + (langEn ? ' Fusion Calculator' : ' 合体アプリ') }}</th>
+          <th [attr.colspan]="hlength" class="title">{{ appName + (this.translations["fusion-calculator"][lang] || this.translations["fusion-calculator"]['en']) }}</th>
         </tr>
       </thead>
     </table>
@@ -57,13 +58,16 @@ export class CompendiumHeaderComponent {
   @Input() mainList = 'demon';
   @Input() hasSettings = true;
   @Input() langEn = true;
+  @Input() lang = 'en';
   @Input() otherLinks: { title: string; link: string }[] = [];
+
+  translations = PAGE_TRANSLATION_JSON;
 }
 
 
 @Component({
   selector: 'app-demon-compendium',
-  providers: [ PositionEdgesService ],
+  providers: [PositionEdgesService],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: isChart ? 'auto' : '1080px' }">
@@ -73,6 +77,7 @@ export class CompendiumHeaderComponent {
           [mainList]="mainList"
           [hasSettings]="hasSettings"
           [langEn]="langEn"
+          [lang]="lang"
           [otherLinks]="otherLinks">
         </app-demon-compendium-header>
       </div>
@@ -82,6 +87,7 @@ export class CompendiumHeaderComponent {
           [mainList]="mainList"
           [hasSettings]="hasSettings"
           [langEn]="langEn"
+          [lang]="lang"
           [otherLinks]="otherLinks">
         </app-demon-compendium-header>
       </div>
@@ -93,6 +99,7 @@ export class CompendiumComponent implements OnInit, OnDestroy {
   appName: string;
   isChart: boolean;
   langEn: boolean;
+  lang: string;
   subscriptions: Subscription[] = [];
 
   @ViewChild(PositionStickyDirective) stickyTable: PositionStickyDirective;
@@ -107,7 +114,8 @@ export class CompendiumComponent implements OnInit, OnDestroy {
       this.route.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
         this.isChart = data.fusionTool === 'chart';
-        this.langEn = !data.lang;
+        this.langEn = !data.lang || data.lang == 'en';
+        this.lang = data.lang;
       }));
 
     setTimeout(() => this.stickyTable.nextEdges());

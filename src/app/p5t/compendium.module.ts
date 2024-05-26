@@ -19,8 +19,8 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function estimatePrice(stats: number[]) {
-  const statSum = 1.5*stats[0] + 1*stats[1] + 0.75*stats[2] + 0.75*stats[3];
-  const price = 1164 + -2.29*statSum + 0.075*statSum**2;
+  const statSum = 1.5 * stats[0] + 1 * stats[1] + 0.75 * stats[2] + 0.75 * stats[3];
+  const price = 1164 + -2.29 * statSum + 0.075 * statSum ** 2;
   return Math.floor(price);
 }
 
@@ -30,7 +30,7 @@ function createCompConfig(): CompendiumConfig {
   const races = [];
   const inheritTypes: { [elem: string]: number } = {};
 
-  for(const race of COMP_CONFIG_JSON.races) {
+  for (const race of COMP_CONFIG_JSON.races) {
     races.push(race);
     races.push(race + ' P');
   }
@@ -58,7 +58,7 @@ function createCompConfig(): CompendiumConfig {
 
   for (const skill of Object.values(SKILL_DATA_JSON)) {
     skill['cost'] = skill['cost'] ? skill['cost'] + COST_MP - 1000 : 0,
-    skill['code'] = 1;
+      skill['code'] = 1;
   }
 
   for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
@@ -96,7 +96,9 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'p5t-fusion-tool-settings',
-    settingsVersion: 2401131500
+    settingsVersion: 2401131500,
+
+    defaultDemon: 'Pixie'
   };
 }
 
