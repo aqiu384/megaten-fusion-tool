@@ -1,2433 +1,519 @@
-{
-  "Absorb Elec": {
-    "card": "Ishtar",
-    "effect": "Absorb Elec damage",
-    "elem": "pas"
-  },
-  "Absorb Fire": {
-    "card": "Attis",
-    "effect": "Absorb Fire damage",
-    "elem": "pas"
-  },
-  "Absorb Ice": {
-    "card": "Kresnik",
-    "effect": "Absorb Ice damage",
-    "elem": "pas"
-  },
-  "Nuclear Drain": {
-    "card": "Metatron, Tsukiyomi Picaro",
-    "effect": "Nuclear Drain damage",
-    "elem": "pas"
-  },
-  "Psy Drain": {
-    "card": "Shiva, Tsukiyomi",
-    "effect": "Psy Drain damage",
-    "elem": "pas"
-  },
-  "Absorb Wind": {
-    "card": "Mahakala",
-    "effect": "Absorb Wind damage",
-    "elem": "pas"
-  },
-  "Achilles Reaper": {
-    "cost": 236,
-    "effect": "Heavy damage, medium chance of Agility Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Aeon Rain": {
-    "card": "Siegfried",
-    "cost": 289,
-    "effect": "Severe damage, 3-10 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Agi": {
-    "card": "Orobas",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "fir",
-    "target": "1 Foe"
-  },
-  "Agidyne": {
-    "card": "Hell Biker",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "fir",
-    "target": "1 Foe"
-  },
-  "Agilao": {
-    "card": "Orthrus",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "fir",
-    "target": "1 Foe"
-  },
-  "Agility Genius": {
-    "effect": "Agility +4",
-    "elem": "pas"
-  },
-  "Agility Knack": {
-    "effect": "Agility +2",
-    "elem": "pas"
-  },
-  "Agility Talent": {
-    "effect": "Agility +3",
-    "elem": "pas"
-  },
-  "Agneyastra": {
-    "card": "Chi You",
-    "cost": 298,
-    "effect": "Heavy damage, power scales with Boost",
-    "elem": "phy",
-    "target": "All Foes"
-  },
-  "Ailment Arts": {
-    "effect": "Increase success rate for ailments",
-    "elem": "pas"
-  },
-  "Ailment Arts+": {
-    "card": "Belial",
-    "effect": "Greatly increase success rate for ailments",
-    "elem": "pas"
-  },
-  "All Guard": {
-    "card": "Ouyamatsumi",
-    "cost": 1009,
-    "effect": "Raise defense and take attacks in place of all allies with reduced damage",
-    "elem": "sup"
-  },
-  "Ambush Arts": {
-    "effect": "Increase damage against enemies with ailments",
-    "elem": "pas"
-  },
-  "Ambush Arts+": {
-    "card": "Mada",
-    "effect": "Greatly increase damage against enemies with ailments",
-    "elem": "pas"
-  },
-  "Amrita": {
-    "cost": 1045,
-    "effect": "Full HP restore, removes all binds and ailments",
-    "elem": "rec",
-    "target": "1 Ally"
-  },
-  "Angelic Trumpet": {
-    "cost": 265,
-    "effect": "Heavy damage, 3 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes",
-    "unique": true
-  },
-  "Ariadne Chain": {
-    "cost": 1016,
-    "effect": "Medium chance of Strength, Magic, and Agility Binds",
-    "elem": "ail",
-    "target": "Fow Row",
-    "unique": true
-  },
-  "Arm Chopper": {
-    "card": "Valkyrie",
-    "cost": 219,
-    "effect": "Medium damage, medium chance of Strength Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Arm Crusher": {
-    "cost": 236,
-    "effect": "Heavy damage, medium chance of Strength Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Armor Breaker": {
-    "card": "Gozuki",
-    "cost": 232,
-    "effect": "Medium damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Armor Destroyer": {
-    "card": "Kartikeya",
-    "cost": 252,
-    "effect": "Heavy damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Armor Splitter": {
-    "card": "Mokoi",
-    "cost": 216,
-    "effect": "Light damage, lowers target's defense for 1 turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Arrow Rain": {
-    "card": "Hare of Inaba",
-    "cost": 230,
-    "effect": "Medium damage, 3-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Assault Dive": {
-    "card": "Power",
-    "cost": 225,
-    "effect": "Medium damage, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Assault Shot": {
-    "card": "Triglav",
-    "cost": 228,
-    "effect": "Medium damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Col"
-  },
-  "Atomic Flare": {
-    "cost": 1048,
-    "effect": "Severe damage",
-    "elem": "nuk",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Bane Slice": {
-    "effect": "Medium damage, medium chance of Hex",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Beast Summon": {
-    "cost": 1058,
-    "effect": "Medium damage, requires circles",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Berserk Frenzy": {
-    "effect": "Light damage, 3-6 hits",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Bestial Roar": {
-    "cost": 1008,
-    "effect": "Raise attack and act first for 3 turns",
-    "elem": "sup"
-  },
-  "Bind Arts": {
-    "effect": "Increase success rate for binds",
-    "elem": "pas"
-  },
-  "Bind Arts+": {
-    "card": "Vouivre",
-    "effect": "Greatly increase success rate for binds",
-    "elem": "pas"
-  },
-  "Binding Aura": {
-    "cost": 1018,
-    "effect": "Extend timers on binds and ailments, does not stack",
-    "elem": "sup",
-    "target": "All Foes"
-  },
-  "Black Spot": {
-    "card": "Hanuman",
-    "cost": 262,
-    "effect": "Heavy damage, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Black Viper": {
-    "cost": 1052,
-    "effect": "Extreme damage",
-    "elem": "alm",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Blade of Fury": {
-    "card": "Uriel",
-    "cost": 268,
-    "effect": "Heavy damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
-  "Bless Amp": {
-    "card": "Daisoujou",
-    "effect": "Moderately increase Bless damage",
-    "elem": "pas"
-  },
-  "Bless Boost": {
-    "card": "Dominion",
-    "effect": "Increase Bless damage",
-    "elem": "pas"
-  },
-  "Bless Screen": {
-    "cost": 1016,
-    "effect": "Raise Bless resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Bless Turbo": {
-    "effect": "Greatly increase Bless damage",
-    "elem": "pas"
-  },
-  "Bolt Dance": {
-    "effect": "Medium damage",
-    "elem": "ele",
-    "target": "Foe Row"
-  },
-  "Bound Arts": {
-    "effect": "Increase crit rate against enemies with binds",
-    "elem": "pas"
-  },
-  "Bound Arts+": {
-    "card": "Atavaka",
-    "effect": "Greatly increase crit rate against enemies with binds",
-    "elem": "pas"
-  },
-  "Brain Shake": {
-    "card": "Ophanim",
-    "cost": 232,
-    "effect": "Heavy damage, high chance of Confusion",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Brave Blade": {
-    "card": "Ongyo-ki",
-    "cost": 291,
-    "effect": "Severe damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
-  "Broadshot": {
-    "card": "Longinus",
-    "cost": 268,
-    "effect": "Heavy damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Col"
-  },
-  "Brutal Arm": {
-    "effect": "High chance to add splash effect on single-target attack skills",
-    "elem": "pas",
-    "unique": true
-  },
-  "Brutal Slash": {
-    "cost": 242,
-    "effect": "Medium damage, hits again if user takes no damage that turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Buchikamashi": {
-    "effect": "Light damage",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Bufu": {
-    "card": "Apsaras",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "ice",
-    "target": "1 Foe"
-  },
-  "Bufudyne": {
-    "card": "Lilith",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "ice",
-    "target": "1 Foe"
-  },
-  "Bufula": {
-    "card": "Jack Frost",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "ice",
-    "target": "1 Foe"
-  },
-  "Calamity Seed": {
-    "cost": 1100,
-    "effect": "Heavy damage each turn for 3 turns",
-    "elem": "phy",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Calm Blade": {
-    "card": "Ganesha",
-    "cost": 232,
-    "effect": "Heavy damage, high chance of Hex",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Calming Lull": {
-    "card": "Kusi Mitama",
-    "effect": "Gather safely from Treasure Spots",
-    "elem": "nav"
-  },
-  "Challenger Arts": {
-    "effect": "Increase damage against enemies with more HP",
-    "elem": "pas"
-  },
-  "Challenger Arts+": {
-    "card": "Moloch",
-    "effect": "Greatly increase damage against enemies with more HP",
-    "elem": "pas"
-  },
-  "Charge Shot": {
-    "effect": "Medium damage",
-    "elem": "phy",
-    "target": "Foe Col"
-  },
-  "Circle Recovery": {
-    "card": "Alilat",
-    "effect": "Allies recover some HP every turn, requires circles",
-    "elem": "pas"
-  },
-  "Clairvoyance": {
-    "card": "Hua Po, Genbu",
-    "effect": "Reveal nearby treasure boxes, FOEs, and shortcuts",
-    "elem": "nav"
-  },
-  "Colossal Swing": {
-    "card": "Balor",
-    "effect": "Low chance to add splash effect to single-target attack skills",
-    "elem": "pas"
-  },
-  "Combo Arts": {
-    "effect": "Low chance of basic attack executing twice",
-    "elem": "pas"
-  },
-  "Combo Arts+": {
-    "card": "Black Frost",
-    "effect": "High chance of basic attack executing twice",
-    "elem": "pas"
-  },
-  "Confusion Circle": {
-    "cost": 1018,
-    "effect": "Medium chance of Confusion each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Cosmic Flare": {
-    "cost": 1064,
-    "effect": "Severe damage",
-    "elem": "nuk",
-    "target": "All Foes"
-  },
-  "Critical Eye": {
-    "card": "Ippon-Datara",
-    "cost": 1012,
-    "effect": "Raise critical rate for 3 turns",
-    "elem": "sup"
-  },
-  "Cross Slash": {
-    "cost": 212,
-    "effect": "Medium damage",
-    "elem": "phy",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Curse Amp": {
-    "card": "Alice",
-    "effect": "Moderately increase Curse damage",
-    "elem": "pas"
-  },
-  "Curse Boost": {
-    "card": "Pazuzu",
-    "effect": "Increase Curse damage",
-    "elem": "pas"
-  },
-  "Curse Screen": {
-    "cost": 1016,
-    "effect": "Raise Curse resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Curse Turbo": {
-    "card": "Magatsu-Izanagi",
-    "effect": "Greatly increase Curse damage",
-    "elem": "pas"
-  },
-  "Danse Macabre": {
-    "cost": 240,
-    "effect": "Medium damage, 5-7 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes",
-    "unique": true
-  },
-  "Death Chaser": {
-    "card": "Turdak",
-    "cost": 324,
-    "effect": "Follow-up user's row's attacks for 3 turns",
-    "elem": "sup"
-  },
-  "Death Counter": {
-    "card": "Girimehkala",
-    "cost": 232,
-    "effect": "Counter-attack whenever user's row is attacked for 3 turns",
-    "elem": "sup"
-  },
-  "Death Needle": {
-    "card": "Ananta",
-    "cost": 232,
-    "effect": "Heavy damage, high chance of Poison",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Deathbound": {
-    "card": "Chernobog",
-    "cost": 273,
-    "effect": "Heavy damage, power scales with Boost",
-    "elem": "phy",
-    "target": "All Foes"
-  },
-  "Debilitate": {
-    "card": "Rangda",
-    "cost": 1042,
-    "effect": "Lower attack, defense, and hit/evade for 3 turns",
-    "elem": "sup",
-    "target": "1 Foe"
-  },
-  "Decay Circle": {
-    "cost": 1024,
-    "effect": "Medium chance of Strength Bind each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Dekaja": {
-    "cost": 1018,
-    "effect": "Remove all -kaja effects",
-    "elem": "sup",
-    "target": "All Foes"
-  },
-  "Dekunda": {
-    "cost": 1018,
-    "effect": "Remove all -kunda effects",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Dia": {
-    "card": "Gemori",
-    "cost": 1005,
-    "effect": "Light HP restore",
-    "elem": "rec",
-    "target": "1 Ally"
-  },
-  "Diarahan": {
-    "card": "Leanan Sidhe",
-    "cost": 1028,
-    "effect": "Full HP restore",
-    "elem": "rec",
-    "target": "1 Ally"
-  },
-  "Diarama": {
-    "card": "Yatagarasu",
-    "cost": 1010,
-    "effect": "Medium HP restore",
-    "elem": "rec",
-    "target": "1 Ally"
-  },
-  "Die For Me!": {
-    "cost": 1050,
-    "effect": "High chance of insta-death",
-    "elem": "cur",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Disarm": {
-    "cost": 1008,
-    "effect": "Medium chance of Strength Bind",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Dodge Arts": {
-    "effect": "Increase evasion against all attacks",
-    "elem": "pas"
-  },
-  "Dodge Arts+": {
-    "card": "Laksmi",
-    "effect": "Greatly increase evasion against all attacks",
-    "elem": "pas"
-  },
-  "Door of Hades": {
-    "cost": 1078,
-    "effect": "Heavy damage each turn for 3 turns",
-    "elem": "alm",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Dormina": {
-    "card": "Pixie",
-    "cost": 1006,
-    "effect": "Medium chance of Sleep",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Double Link": {
-    "card": "Yuki Jyorou",
-    "effect": "Link chains last up to 2 hits",
-    "elem": "pas"
-  },
-  "Dragon Cry": {
-    "card": "Ouroboros",
-    "cost": 1016,
-    "effect": "Greatly raise attack and act first for 3 turns",
-    "elem": "sup"
-  },
-  "Drain Touch": {
-    "effect": "Medium damage, drain damage dealt",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Dream Slice": {
-    "effect": "Medium damage, medium chance of Sleep",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Eiga": {
-    "card": "Red Rider",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "cur",
-    "target": "1 Foe"
-  },
-  "Eigaon": {
-    "card": "Black Rider",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "cur",
-    "target": "1 Foe"
-  },
-  "Eiha": {
-    "card": "Incubus",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "cur",
-    "target": "1 Foe"
-  },
-  "Elec Amp": {
-    "card": "Odin, Izanagi Picaro",
-    "effect": "Moderately increase Elec damage",
-    "elem": "pas"
-  },
-  "Elec Boost": {
-    "card": "Sleipnir",
-    "effect": "Increase Elec damage",
-    "elem": "pas"
-  },
-  "Elec Dance": {
-    "effect": "Light damage",
-    "elem": "ele",
-    "target": "Foe Row"
-  },
-  "Elec Screen": {
-    "cost": 1016,
-    "effect": "Raise Elec resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Elec Turbo": {
-    "effect": "Greatly increase Elec damage",
-    "elem": "pas"
-  },
-  "Elecstrike Link": {
-    "cost": 248,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "ele",
-    "target": "1 Foe"
-  },
-  "Empyrean Storm": {
-    "cost": 1065,
-    "effect": "Reduce remaining HP by 20%",
-    "elem": "ele",
-    "target": "All Foes",
-    "unique": true
-  },
-  "End Shot": {
-    "effect": "Medium damage, takes longer to execute",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Endure": {
-    "card": "Slime",
-    "effect": "Withstand damage that brings HP down to 0 with 1 HP",
-    "elem": "pas"
-  },
-  "Endure Genius": {
-    "card": "Thanatos",
-    "effect": "Endurance +4",
-    "elem": "pas"
-  },
-  "Endure Knack": {
-    "effect": "Endurance +2",
-    "elem": "pas"
-  },
-  "Endure Talent": {
-    "effect": "Endurance +3",
-    "elem": "pas"
-  },
-  "Eternal Melody": {
-    "card": "Kingu",
-    "cost": 2003,
-    "effect": "Extend timers on -kaja effects for 3 turns, does not stack",
-    "elem": "nav",
-    "target": "All Allies"
-  },
-  "Evil Smile": {
-    "cost": 1012,
-    "effect": "Medium chance of Hex",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Evil Touch": {
-    "card": "Alp",
-    "cost": 1006,
-    "effect": "Medium chance of Hex",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Faerie's Vigil": {
-    "card": "Mothman, Mandrake",
-    "effect": "Reveal nearby shortcuts",
-    "elem": "nav"
-  },
-  "Fang Smash": {
-    "card": "Xiezhai",
-    "cost": 216,
-    "effect": "Light damage, lowers target's attack for 3 turns",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Farsight": {
-    "card": "Arahabaki",
-    "effect": "Reveal treasure boxes, FOEs, and shortcuts in a wide area",
-    "elem": "nav"
-  },
-  "Fire Amp": {
-    "card": "Mara, Orpheus Picaro",
-    "effect": "Moderately increase Fire damage",
-    "elem": "pas"
-  },
-  "Fire Boost": {
-    "card": "Dzelarhons",
-    "effect": "Increase Fire damage",
-    "elem": "pas"
-  },
-  "Fire Dance": {
-    "effect": "Light damage, splash effect",
-    "elem": "fir",
-    "target": "1 Foe"
-  },
-  "Fire Screen": {
-    "cost": 1016,
-    "effect": "Raise Fire resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Firestrike Link": {
-    "cost": 248,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "fir",
-    "target": "1 Foe"
-  },
-  "First Star": {
-    "card": "Halphas",
-    "effect": "Raise damage when attacking before all enemies act",
-    "elem": "pas"
-  },
-  "Flame Dance": {
-    "effect": "Medium damage, splash effect",
-    "elem": "fir",
-    "target": "1 Foe"
-  },
-  "Focus Order": {
-    "cost": 1044,
-    "effect": "Triple magic attack for next hit, lasts 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Fortune Hunter": {
-    "card": "Thoth",
-    "effect": "Reveal treasure boxes in a wide area",
-    "elem": "nav"
-  },
-  "Free Memento": {
-    "cost": 1018,
-    "effect": "Remove all binds at end of turn for 3 turns",
-    "elem": "rec",
-    "target": "User Row"
-  },
-  "Frei": {
-    "card": "Archangel",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "nuk",
-    "target": "1 Foe"
-  },
-  "Freidyne": {
-    "card": "Baphomet",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "nuk",
-    "target": "1 Foe"
-  },
-  "Freila": {
-    "card": "Titania",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "nuk",
-    "target": "1 Foe"
-  },
-  "Frigid Dance": {
-    "effect": "Heavy damage",
-    "elem": "ice",
-    "target": "Foe Col"
-  },
-  "Frost Dance": {
-    "effect": "Medium damage",
-    "elem": "ice",
-    "target": "Foe Col"
-  },
-  "Frost Edge": {
-    "card": "Matador",
-    "cost": 232,
-    "effect": "Light damage",
-    "elem": "ice",
-    "target": "Foe Row"
-  },
-  "Fury Order": {
-    "cost": 1044,
-    "effect": "Triple physical attack for next hit, lasts 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Fusion Blast": {
-    "card": "Kaiwan",
-    "cost": 232,
-    "effect": "Light damage",
-    "elem": "nuk",
-    "target": "Foe Row"
-  },
-  "Garu": {
-    "card": "Anzu",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "win",
-    "target": "1 Foe"
-  },
-  "Garudyne": {
-    "card": "Suparna",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "win",
-    "target": "1 Foe"
-  },
-  "Garula": {
-    "card": "Seiryu",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "win",
-    "target": "1 Foe"
-  },
-  "Giant Slice": {
-    "card": "Yaksini",
-    "cost": 216,
-    "effect": "Light damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
-  "Glacial Edge": {
-    "card": "King Frost",
-    "cost": 256,
-    "effect": "Medium damage",
-    "elem": "ice",
-    "target": "Foe Row"
-  },
-  "God's Hand": {
-    "card": "Michael, Asterius",
-    "cost": 285,
-    "effect": "Severe damage, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Gokuentou": {
-    "card": "Pyro Jack",
-    "cost": 256,
-    "effect": "Medium damage",
-    "elem": "fir",
-    "target": "Foe Row"
-  },
-  "Golden Link": {
-    "card": "Zaou-Gongen",
-    "effect": "Link damage raises with link number",
-    "elem": "pas"
-  },
-  "Guillotine": {
-    "cost": 216,
-    "effect": "Light damage, higher damage against ailments",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Guillotine Blade": {
-    "cost": 263,
-    "effect": "Heavy damage, higher damage against ailments",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Guillotine Slice": {
-    "cost": 240,
-    "effect": "Medium damage, higher damage against ailments",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Gurentou": {
-    "card": "Eligor",
-    "cost": 232,
-    "effect": "Light damage",
-    "elem": "fir",
-    "target": "Foe Row"
-  },
-  "Gust Dance": {
-    "effect": "Medium damage, 2-3 hits",
-    "elem": "win",
-    "target": "Rand Foes"
-  },
-  "Hailstorm": {
-    "card": "Jeanne d'Arc",
-    "cost": 273,
-    "effect": "Heavy damage, 3-8 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Hama": {
-    "cost": 1010,
-    "effect": "Low chance of insta-death",
-    "elem": "ble",
-    "target": "1 Foe"
-  },
-  "Hamaon": {
-    "cost": 1020,
-    "effect": "Medium chance of insta-death",
-    "elem": "ble",
-    "target": "1 Foe"
-  },
-  "Hard Slash": {
-    "effect": "Heavy damage",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Harvest Prayer": {
-    "card": "Lachesis",
-    "effect": "Rare chance to gather multiple times from Treasure Spots",
-    "elem": "nav"
-  },
-  "Hassou Tobi": {
-    "cost": 331,
-    "effect": "Medium damage, 8 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes",
-    "unique": true
-  },
-  "Headbutt": {
-    "card": "Nozuchi",
-    "cost": 219,
-    "effect": "Light damage, medium chance of Confusion",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Healing Finger": {
-    "effect": "HP recovery skills +50%",
-    "elem": "pas"
-  },
-  "Healing Hand": {
-    "effect": "HP recovery skills +100%",
-    "elem": "pas"
-  },
-  "Healing Harp": {
-    "cost": 1068,
-    "effect": "Restore HP and remove binds/ailments each turn for 3 turns",
-    "elem": "rec",
-    "target": "All Allies",
-    "unique": true
-  },
-  "Heat Riser": {
-    "card": "Mishaguji",
-    "cost": 1035,
-    "effect": "Raise attack, defense, and hit/evade for 3 turns",
-    "elem": "sup",
-    "target": "1 Ally"
-  },
-  "Heat Wave": {
-    "card": "Orochi",
-    "cost": 224,
-    "effect": "Medium damage, power scales with Boost",
-    "elem": "phy",
-    "target": "All Foes"
-  },
-  "Heaven's Blade": {
-    "card": "Tam Lin",
-    "cost": 268,
-    "effect": "Heavy damage, hits again if user takes no damage that turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Herculean Strike": {
-    "cost": 244,
-    "effect": "Medium damage, 3-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Heroic Gemini": {
-    "card": "Beelzebub",
-    "effect": "Low chance of attack skills executing twice",
-    "elem": "pas"
-  },
-  "Heroic Wind": {
-    "card": "Kohryu",
-    "effect": "Recover 5% HP each turn",
-    "elem": "nav"
-  },
-  "Hientou": {
-    "card": "Yatsufusa",
-    "cost": 282,
-    "effect": "Heavy damage",
-    "elem": "fir",
-    "target": "Foe Row"
-  },
-  "Holy Touch": {
-    "card": "Mithra",
-    "cost": 219,
-    "effect": "Medium damage, medium chance of Magic Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Hunting Prayer": {
-    "card": "Nigi Mitama, Heqet",
-    "effect": "Slightly higher rate of material drops from enemies",
-    "elem": "nav"
-  },
-  "Hurricane Dance": {
-    "effect": "Heavy damage, 2-3 hits",
-    "elem": "win",
-    "target": "Rand Foes"
-  },
-  "Ice Amp": {
-    "card": "Mother Harlot",
-    "effect": "Moderately increase Ice damage",
-    "elem": "pas"
-  },
-  "Ice Boost": {
-    "card": "Vivian",
-    "effect": "Increase Ice damage",
-    "elem": "pas"
-  },
-  "Ice Dance": {
-    "effect": "Light damage",
-    "elem": "ice",
-    "target": "Foe Col"
-  },
-  "Ice Screen": {
-    "cost": 1016,
-    "effect": "Raise Ice resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Ice Turbo": {
-    "effect": "Greatly increase Ice damage",
-    "elem": "pas"
-  },
-  "Icestrike Link": {
-    "cost": 248,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "ice",
-    "target": "1 Foe"
-  },
-  "Icy Paradise": {
-    "cost": 1024,
-    "effect": "Medium damage, 2-4 hits",
-    "elem": "ice",
-    "target": "Rand Foes",
-    "unique": true
-  },
-  "Idol Hands": {
-    "effect": "HP recovery skills +150%",
-    "elem": "pas"
-  },
-  "Immunity Buffer": {
-    "effect": "High chance to nullify phys attack",
-    "elem": "pas"
-  },
-  "Infernal Wings": {
-    "effect": "High chance of attack skills executing twice",
-    "elem": "pas",
-    "unique": true
-  },
-  "Inferno Boost": {
-    "effect": "Greatly increase Fire damage",
-    "elem": "pas"
-  },
-  "Infinite Link": {
-    "card": "Messiah Picaro",
-    "effect": "Link chains last up to 8 hits",
-    "elem": "pas"
-  },
-  "Invigorate 1": {
-    "card": "Bugs",
-    "effect": "Recover 3 MP per turn",
-    "elem": "pas"
-  },
-  "Invigorate 2": {
-    "card": "Tzitzimitl",
-    "effect": "Recover 5 MP per turn",
-    "elem": "pas"
-  },
-  "Invigorate 3": {
-    "card": "Seraph",
-    "effect": "Recover 7 MP per turn",
-    "elem": "pas"
-  },
-  "Jinpugeki": {
-    "card": "Fortuna",
-    "cost": 232,
-    "effect": "Light damage",
-    "elem": "win",
-    "target": "Foe Row"
-  },
-  "Kamikaze Strike": {
-    "card": "Garuda",
-    "cost": 282,
-    "effect": "Heavy damage",
-    "elem": "win",
-    "target": "Foe Row"
-  },
-  "Kidney Smash": {
-    "card": "Basilisk",
-    "cost": 232,
-    "effect": "Medium damage, lowers target's attack for 3 turns",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Kouga": {
-    "card": "Oumitsunu",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "ble",
-    "target": "1 Foe"
-  },
-  "Kougaon": {
-    "card": "Trumpeter",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "ble",
-    "target": "1 Foe"
-  },
-  "Kouha": {
-    "card": "Angel",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "ble",
-    "target": "1 Foe"
-  },
-  "Leg Reaper": {
-    "card": "Chimera",
-    "cost": 219,
-    "effect": "Medium damage, medium chance of Agility Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Lethargy Circle": {
-    "cost": 1024,
-    "effect": "Medium chance of Agility Bind each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Life Aid": {
-    "card": "Norn",
-    "effect": "Recover 20% HP after battle",
-    "elem": "nav"
-  },
-  "Light Wave": {
-    "cost": 299,
-    "effect": "Severe damage, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Line Guard": {
-    "card": "Nata Taishi",
-    "cost": 1003,
-    "effect": "Raise defense and take attacks in place of same-row allies with reduced damage",
-    "elem": "sup"
-  },
-  "Luck Genius": {
-    "effect": "Luck +4",
-    "elem": "pas"
-  },
-  "Luck Knack": {
-    "effect": "Luck +2",
-    "elem": "pas"
-  },
-  "Luck Talent": {
-    "effect": "Luck +3",
-    "elem": "pas"
-  },
-  "Lucky Punch": {
-    "cost": 212,
-    "effect": "Light damage, high crit + low hit",
-    "elem": "phy",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Lullaby Song": {
-    "cost": 1012,
-    "effect": "Medium chance of Sleep",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Lunar Blessing": {
-    "cost": 1087,
-    "effect": "Nullifies 1 attack per turn for 3 turns",
-    "elem": "sup",
-    "target": "All Allies",
-    "unique": true
-  },
-  "Lunge": {
-    "card": "Ukobach",
-    "cost": 214,
-    "effect": "Light damage, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Mabufu": {
-    "card": "Ganga",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "ice",
-    "target": "All Foes"
-  },
-  "Mabufudyne": {
-    "card": "Xi Wangmu",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "ice",
-    "target": "All Foes"
-  },
-  "Mabufula": {
-    "card": "Belphegor",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "ice",
-    "target": "All Foes"
-  },
-  "Maeiga": {
-    "card": "Anubis",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "cur",
-    "target": "All Foes"
-  },
-  "Maeigaon": {
-    "card": "Astaroth",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "cur",
-    "target": "All Foes"
-  },
-  "Maeiha": {
-    "card": "Legion",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "cur",
-    "target": "All Foes"
-  },
-  "Mafrei": {
-    "card": "Moh Shuvuu",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "nuk",
-    "target": "All Foes"
-  },
-  "Mafreidyne": {
-    "card": "Ardha",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "nuk",
-    "target": "All Foes"
-  },
-  "Mafreila": {
-    "card": "Dantalian",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "nuk",
-    "target": "All Foes"
-  },
-  "Magaru": {
-    "card": "High Pixie",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "win",
-    "target": "All Foes"
-  },
-  "Magarudyne": {
-    "card": "Scathach",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "win",
-    "target": "All Foes"
-  },
-  "Magarula": {
-    "card": "Cybele",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "win",
-    "target": "All Foes"
-  },
-  "Magic Genius": {
-    "effect": "Magic +4",
-    "elem": "pas"
-  },
-  "Magic Knack": {
-    "effect": "Magic +2",
-    "elem": "pas"
-  },
-  "Magic Mallet": {
-    "card": "Kurama Tengu",
-    "effect": "Higher rate of rare materials from Treasure Spots",
-    "elem": "nav"
-  },
-  "Magic Talent": {
-    "effect": "Magic +3",
-    "elem": "pas"
-  },
-  "Mahama": {
-    "cost": 1022,
-    "effect": "Low chance of insta-death",
-    "elem": "ble",
-    "target": "All Foes"
-  },
-  "Mahamaon": {
-    "cost": 1044,
-    "effect": "Medium chance of insta-death",
-    "elem": "ble",
-    "target": "All Foes"
-  },
-  "Makajam": {
-    "cost": 1008,
-    "effect": "Medium chance of Magic Bind",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Makouga": {
-    "card": "Sraosha",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "ble",
-    "target": "All Foes"
-  },
-  "Makougaon": {
-    "card": "Vasuki",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "ble",
-    "target": "All Foes"
-  },
-  "Makouha": {
-    "card": "Unicorn",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "ble",
-    "target": "All Foes"
-  },
-  "Mamudo": {
-    "cost": 1022,
-    "effect": "Low chance of insta-death",
-    "elem": "cur",
-    "target": "All Foes"
-  },
-  "Mamudoon": {
-    "cost": 1044,
-    "effect": "Medium chance of insta-death",
-    "elem": "cur",
-    "target": "All Foes"
-  },
-  "Mapsi": {
-    "card": "Oukuninushi",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "psy",
-    "target": "All Foes"
-  },
-  "Mapsio": {
-    "card": "Hariti",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "psy",
-    "target": "All Foes"
-  },
-  "Mapsiodyne": {
-    "card": "Kudlak",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "psy",
-    "target": "All Foes"
-  },
-  "Maragi": {
-    "card": "Phoenix",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "fir",
-    "target": "All Foes"
-  },
-  "Maragidyne": {
-    "card": "Surt",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "fir",
-    "target": "All Foes"
-  },
-  "Maragion": {
-    "card": "Throne",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "fir",
-    "target": "All Foes"
-  },
-  "Marakukaja": {
-    "card": "Mot",
-    "cost": 1018,
-    "effect": "Raise defense for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Marakunda": {
-    "card": "Ammut",
-    "cost": 1018,
-    "effect": "Lower defense for 3 turns",
-    "elem": "sup",
-    "target": "All Foes"
-  },
-  "Masukukaja": {
-    "card": "Skadi",
-    "cost": 1018,
-    "effect": "Raise hit/evade for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Masukunda": {
-    "card": "Nebiros",
-    "cost": 1018,
-    "effect": "Lower hit/evade for 3 turns",
-    "elem": "sup",
-    "target": "All Foes"
-  },
-  "Matarukaja": {
-    "card": "Suzaku",
-    "cost": 1018,
-    "effect": "Raise attack for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Matarunda": {
-    "card": "Narasimha",
-    "cost": 1018,
-    "effect": "Lower attack for 3 turns",
-    "elem": "sup",
-    "target": "All Foes"
-  },
-  "Mazio": {
-    "card": "Nue",
-    "cost": 1018,
-    "effect": "Light damage",
-    "elem": "ele",
-    "target": "All Foes"
-  },
-  "Maziodyne": {
-    "card": "Baal Zebul",
-    "cost": 1052,
-    "effect": "Heavy damage",
-    "elem": "ele",
-    "target": "All Foes"
-  },
-  "Mazionga": {
-    "card": "Gabriel",
-    "cost": 1036,
-    "effect": "Medium damage",
-    "elem": "ele",
-    "target": "All Foes"
-  },
-  "Me Patra": {
-    "cost": 1012,
-    "effect": "Remove all ailments",
-    "elem": "rec",
-    "target": "All Allies"
-  },
-  "Media": {
-    "card": "Silky, Kaguya",
-    "cost": 1012,
-    "effect": "Light HP restore",
-    "elem": "rec",
-    "target": "All Allies"
-  },
-  "Mediarahan": {
-    "card": "Helel",
-    "cost": 1056,
-    "effect": "Full HP restore",
-    "elem": "rec",
-    "target": "All Allies"
-  },
-  "Mediarama": {
-    "card": "Bai Suzhen",
-    "cost": 1030,
-    "effect": "Medium HP restore",
-    "elem": "rec",
-    "target": "All Allies"
-  },
-  "Megaton Press": {
-    "effect": "Heavy damage",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Megido": {
-    "card": "Queen Mab",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Megidola": {
-    "card": "Decarabia",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Megidolaon": {
-    "card": "Lucifer, Huang Di",
-    "cost": 1048,
-    "effect": "Severe damage",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Mental Smash": {
-    "card": "Pabilsag",
-    "cost": 256,
-    "effect": "Medium damage",
-    "elem": "psy",
-    "target": "Foe Row"
-  },
-  "Mighty Swing": {
-    "card": "Mezuki",
-    "cost": 228,
-    "effect": "Medium damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
-  "Mind Charge": {
-    "card": "Ariadne Picaro",
-    "cost": 1022,
-    "effect": "Triple magic attack for next hit, lasts 3 turns",
-    "elem": "sup"
-  },
-  "Mind Strike": {
-    "card": "Ikusa",
-    "cost": 232,
-    "effect": "Light damage",
-    "elem": "psy",
-    "target": "Foe Row"
-  },
-  "Miracle Punch": {
-    "cost": 249,
-    "effect": "Medium damage, high crit + low hit",
-    "elem": "phy",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Morning Star": {
-    "cost": 1068,
-    "effect": "Extreme damage",
-    "elem": "alm",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Mow Down": {
-    "effect": "Light damage",
-    "elem": "phy",
-    "target": "Foe Row"
-  },
-  "Mudo": {
-    "cost": 1010,
-    "effect": "Low chance of insta-death",
-    "elem": "cur",
-    "target": "1 Foe"
-  },
-  "Mudoon": {
-    "cost": 1020,
-    "effect": "Medium chance of insta-death",
-    "elem": "cur",
-    "target": "1 Foe"
-  },
-  "Muscle Down": {
-    "effect": "Medium chance of Strength Bind",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Mutudi": {
-    "card": "Principality",
-    "cost": 1004,
-    "effect": "Remove all binds",
-    "elem": "rec",
-    "target": "Ally Row"
-  },
-  "Myriad Arrows": {
-    "card": "Pale Rider",
-    "cost": 285,
-    "effect": "Heavy damage, 6-8 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Niflheim": {
-    "cost": 1064,
-    "effect": "Severe damage",
-    "elem": "ice",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Nuclear Blast": {
-    "card": "Lugh",
-    "cost": 282,
-    "effect": "Heavy damage",
-    "elem": "nuk",
-    "target": "Foe Row"
-  },
-  "Nucleostrike Link": {
-    "cost": 248,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "nuk",
-    "target": "1 Foe"
-  },
-  "Nuclear Amp": {
-    "card": "Mithras",
-    "effect": "Moderately increase Nuke damage",
-    "elem": "pas"
-  },
-  "Nuclear Boost": {
-    "card": "Kikuri-Hime",
-    "effect": "Increase Nuke damage",
-    "elem": "pas"
-  },
-  "Nuclear Screen": {
-    "cost": 1016,
-    "effect": "Raise Nuke resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Nuke Turbo": {
-    "effect": "Greatly increase Nuke damage",
-    "elem": "pas"
-  },
-  "Null A-Bind": {
-    "effect": "Immune to Agility Bind",
-    "elem": "pas"
-  },
-  "Null Confusion": {
-    "effect": "Immune to Confusion",
-    "elem": "pas"
-  },
-  "Null Hex": {
-    "effect": "Immune to Hex",
-    "elem": "pas"
-  },
-  "Null M-Bind": {
-    "effect": "Immune to Magic Bind",
-    "elem": "pas"
-  },
-  "Null Poison": {
-    "effect": "Immune to Poison",
-    "elem": "pas"
-  },
-  "Null S-Bind": {
-    "effect": "Immune to Strength Bind",
-    "elem": "pas"
-  },
-  "Null Sleep": {
-    "effect": "Immune to Sleep",
-    "elem": "pas"
-  },
-  "Oneshot Kill": {
-    "card": "Yoshitsune, M. Izanagi Picaro",
-    "cost": 292,
-    "effect": "Severe damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Col"
-  },
-  "Oratorio": {
-    "cost": 1024,
-    "effect": "Restore HP and remove binds/ailments",
-    "elem": "rec",
-    "target": "All Allies",
-    "unique": true
-  },
-  "Orb of Haste": {
-    "card": "Saki Mitama, Hitokotonusi",
-    "cost": 2002,
-    "effect": "Raise hit/evade for 3 turns",
-    "elem": "nav",
-    "target": "All Allies"
-  },
-  "Orb of Power": {
-    "card": "Clotho, Niddhoggr",
-    "cost": 2002,
-    "effect": "Raise attack for 3 turns",
-    "elem": "nav",
-    "target": "All Allies"
-  },
-  "Orb of Resolve": {
-    "card": "Gorgon, Dis",
-    "cost": 2002,
-    "effect": "Raise defense for 3 turns",
-    "elem": "nav",
-    "target": "All Allies"
-  },
-  "Panta Rhei": {
-    "cost": 1064,
-    "effect": "Severe damage",
-    "elem": "win",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Paths of Light": {
-    "card": "Seth",
-    "effect": "HP restore for each step taken in a labyrinth",
-    "elem": "nav"
-  },
-  "Patra": {
-    "card": "Koropokkur",
-    "cost": 1006,
-    "effect": "Remove all ailments",
-    "elem": "rec",
-    "target": "Ally Row"
-  },
-  "Perplex Flash": {
-    "effect": "Medium chance of Confusion",
-    "elem": "ail",
-    "target": "1 Foe"
-  },
-  "Photon Edge": {
-    "cost": 263,
-    "effect": "Heavy damage",
-    "elem": "alm",
-    "target": "1 Foe"
-  },
-  "Poisma": {
-    "card": "Empusa",
-    "cost": 1006,
-    "effect": "Medium chance of Poison",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Poison Breath": {
-    "cost": 1012,
-    "effect": "Medium chance of Poison",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Poison Circle": {
-    "cost": 1018,
-    "effect": "Medium chance of Poison each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Poison Skewer": {
-    "card": "Andras",
-    "cost": 219,
-    "effect": "Light damage, medium chance of Poison",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Power Charge": {
-    "card": "Masakado, Ariadne",
-    "cost": 1022,
-    "effect": "Triple physical attack for next hit, lasts 3 turns",
-    "elem": "sup"
-  },
-  "Power Genius": {
-    "effect": "Strength +4",
-    "elem": "pas"
-  },
-  "Power Knack": {
-    "effect": "Strength +2",
-    "elem": "pas"
-  },
-  "Power Talent": {
-    "effect": "Strength +3",
-    "elem": "pas"
-  },
-  "Pralaya": {
-    "cost": 299,
-    "effect": "Severe damage, medium chance of insta-death",
-    "elem": "alm",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Prana": {
-    "cost": 322,
-    "effect": "Severe damage",
-    "elem": "alm",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Primal Force": {
-    "card": "Asura, Asterius Picaro",
-    "cost": 266,
-    "effect": "Heavy damage, 2 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Psi": {
-    "card": "Neko Shogun",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "psy",
-    "target": "1 Foe"
-  },
-  "Psio": {
-    "card": "Narcissus",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "psy",
-    "target": "1 Foe"
-  },
-  "Psiodyne": {
-    "card": "Lorelei",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "psy",
-    "target": "1 Foe"
-  },
-  "Psy Amp": {
-    "card": "Hathor",
-    "effect": "Moderately increase Psy damage",
-    "elem": "pas"
-  },
-  "Psy Boost": {
-    "card": "Virtue",
-    "effect": "Increase Psy damage",
-    "elem": "pas"
-  },
-  "Psy Screen": {
-    "cost": 1016,
-    "effect": "Raise Psy resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Psy Turbo": {
-    "effect": "Greatly increase Psy damage",
-    "elem": "pas"
-  },
-  "Psycho Blast": {
-    "cost": 1064,
-    "effect": "Severe damage",
-    "elem": "psy",
-    "target": "All Foes"
-  },
-  "Psycho Force": {
-    "cost": 1048,
-    "effect": "Severe damage",
-    "elem": "psy",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Psycho Smash": {
-    "card": "Shiki-Ouji",
-    "cost": 282,
-    "effect": "Heavy damage",
-    "elem": "psy",
-    "target": "Foe Row"
-  },
-  "Psystrike Link": {
-    "cost": 248,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "psy",
-    "target": "1 Foe"
-  },
-  "Pulinpa": {
-    "card": "Ame-no-Uzume",
-    "cost": 1006,
-    "effect": "Medium chance of Confusion",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Punishing Bite": {
-    "cost": 240,
-    "effect": "Medium damage, higher damage against binds, but will remove binds",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Punishing End": {
-    "cost": 256,
-    "effect": "Heavy damage, higher damage against binds, but will remove binds",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Punishment": {
-    "cost": 216,
-    "effect": "Light damage, higher damage against binds, but will remove binds",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Pure Memento": {
-    "cost": 1018,
-    "effect": "Remove all ailments at end of turn for 3 turns",
-    "elem": "rec",
-    "target": "User Row"
-  },
-  "Purifying Rain": {
-    "card": "Jinn",
-    "cost": 2002,
-    "effect": "Remove all binds and ailments",
-    "elem": "nav",
-    "target": "All Allies"
-  },
-  "Quadruple Link": {
-    "card": "Baal",
-    "effect": "Link chains last up to 4 hits",
-    "elem": "pas"
-  },
-  "Ragnarok": {
-    "cost": 1064,
-    "effect": "Severe damage",
-    "elem": "fir",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Raijinzan": {
-    "card": "Cherub",
-    "cost": 282,
-    "effect": "Heavy damage",
-    "elem": "ele",
-    "target": "Foe Row"
-  },
-  "Raikouzan": {
-    "card": "Caladrius",
-    "cost": 232,
-    "effect": "Light damage",
-    "elem": "ele",
-    "target": "Foe Row"
-  },
-  "Raimeizan": {
-    "card": "Ares",
-    "cost": 256,
-    "effect": "Medium damage",
-    "elem": "ele",
-    "target": "Foe Row"
-  },
-  "Rakukaja": {
-    "card": "Agathion",
-    "cost": 1008,
-    "effect": "Raise defense for 3 turns",
-    "elem": "sup",
-    "target": "1 Ally"
-  },
-  "Rakunda": {
-    "card": "Onmoraki",
-    "cost": 1008,
-    "effect": "Lower defense for 3 turns",
-    "elem": "sup",
-    "target": "1 Foe"
-  },
-  "Rampage": {
-    "card": "Tsuchigumo",
-    "cost": 224,
-    "effect": "Light damage, 2-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Recarm": {
-    "card": "Sarasvati",
-    "cost": 1012,
-    "effect": "Revive with 50% HP",
-    "elem": "rec",
-    "target": "1 Ally"
-  },
-  "Regenerate 1": {
-    "card": "Setanta",
-    "effect": "Recover HP per turn",
-    "elem": "pas"
-  },
-  "Regenerate 2": {
-    "card": "Berserker",
-    "effect": "Moderately recover HP per turn",
-    "elem": "pas"
-  },
-  "Regenerate 3": {
-    "card": "Satan",
-    "effect": "Greatly recover HP per turn",
-    "elem": "pas"
-  },
-  "Renewal Ray": {
-    "card": "Atropos",
-    "cost": 2002,
-    "effect": "Light HP restore",
-    "elem": "nav",
-    "target": "All Allies"
-  },
-  "Reppu Strike": {
-    "card": "Cu Chulainn",
-    "cost": 256,
-    "effect": "Medium damage",
-    "elem": "win",
-    "target": "Foe Row"
-  },
-  "Resist Bless": {
-    "effect": "Resist Bless damage",
-    "elem": "pas"
-  },
-  "Resist Curse": {
-    "effect": "Resist Curse damage",
-    "elem": "pas"
-  },
-  "Resist Elec": {
-    "effect": "Resist Elec damage",
-    "elem": "pas"
-  },
-  "Resist Fire": {
-    "effect": "Resist Fire damage",
-    "elem": "pas"
-  },
-  "Resist Ice": {
-    "effect": "Resist Ice damage",
-    "elem": "pas"
-  },
-  "Resist Nuke": {
-    "effect": "Resist Nuke damage",
-    "elem": "pas"
-  },
-  "Resist Psy": {
-    "effect": "Resist Psy damage",
-    "elem": "pas"
-  },
-  "Resist Wind": {
-    "effect": "Resist Wind damage",
-    "elem": "pas"
-  },
-  "Resseiha": {
-    "cost": 282,
-    "effect": "Medium damage, 2-5 hits",
-    "elem": "alm",
-    "target": "Rand Foes"
-  },
-  "Restoring Touch": {
-    "effect": "Increase bind and ailment resistance",
-    "elem": "pas"
-  },
-  "Revenge Blow": {
-    "cost": 216,
-    "effect": "Light damage, power scales with damage taken during same turn",
-    "elem": "phy"
-  },
-  "Roads of Light": {
-    "card": "Sandalphon",
-    "effect": "Slight MP restore for each step taken in a labyrinth",
-    "elem": "nav"
-  },
-  "Runic Shield": {
-    "card": "Thanatos Picaro",
-    "effect": "High chance to nullify Fire, Ice, Elec, Wind, Psy, and Nuke damage against the user's row",
-    "elem": "pas"
-  },
-  "Sabaton Slice": {
-    "effect": "Heavy damage, medium change of Agility Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Safeguard": {
-    "effect": "Raise defense and take attacks in place of 1 ally with reduced damage",
-    "elem": "sup"
-  },
-  "Safety Prayer": {
-    "card": "Cu Sith",
-    "effect": "Gather somewhat safely from Treasure Spots",
-    "elem": "nav"
-  },
-  "Saint's Touch": {
-    "cost": 236,
-    "effect": "Heavy damage, medium chance of Magic Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Salome's Kiss": {
-    "card": "Black Maria",
-    "cost": 1042,
-    "effect": "High chance of Strength, Magic, and Agility Binds",
-    "elem": "ail",
-    "target": "1 Foe"
-  },
-  "Samarecarm": {
-    "card": "White Rider, Kaguya Picaro",
-    "cost": 1036,
-    "effect": "Revive with 100% HP",
-    "elem": "rec",
-    "target": "1 Ally"
-  },
-  "Samsara": {
-    "cost": 1050,
-    "effect": "High chance of insta-death",
-    "elem": "ble",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Scarecrow": {
-    "cost": 1008,
-    "effect": "Medium chance of Agility Bind",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Scepter Strike": {
-    "effect": "Halve HP",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Scorching Blast": {
-    "card": "Mayahuel",
-    "cost": 256,
-    "effect": "Medium damage",
-    "elem": "nuk",
-    "target": "Foe Row"
-  },
-  "Self-Destruct": {
-    "effect": "Heavy damage, user dies",
-    "elem": "alm",
-    "target": "Universal"
-  },
-  "Shadow Run": {
-    "cost": 264,
-    "effect": "Heavy damage",
-    "elem": "alm",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Shibaboo": {
-    "effect": "Medium chance of Paralysis",
-    "elem": "ail",
-    "target": "1 Foe"
-  },
-  "Shinkuuha": {
-    "cost": 256,
-    "effect": "Medium damage, 2 hits",
-    "elem": "alm",
-    "target": "1 Foe"
-  },
-  "Shura Instincts": {
-    "card": "Fenrir",
-    "effect": "High chance of Shura Tensei when battle starts",
-    "elem": "pas"
-  },
-  "Shura Revert": {
-    "cost": 1008,
-    "effect": "Ends Shura Tensei, restoring moderate HP",
-    "elem": "sup"
-  },
-  "Shura Tensei": {
-    "cost": 1024,
-    "effect": "Greatly lowers HP each turn but greatly raises attack while active",
-    "elem": "sup"
-  },
-  "Silence Circle": {
-    "cost": 1024,
-    "effect": "Medium chance of Magic Bind each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Silent Song": {
-    "effect": "Medium chance of Magic Bind",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Silent Thrust": {
-    "card": "Pele",
-    "cost": 219,
-    "effect": "Light damage, medium chance of Hex",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Single Shot": {
-    "card": "Berith",
-    "cost": 216,
-    "effect": "Light damage, power scales with Boost",
-    "elem": "phy",
-    "target": "Foe Col"
-  },
-  "Sleep Circle": {
-    "cost": 1018,
-    "effect": "Medium chance of Sleep each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Sleep Strike": {
-    "card": "Jatayu",
-    "cost": 232,
-    "effect": "Heavy damage, high chance of Sleep",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Sleeper Punch": {
-    "card": "Succubus",
-    "cost": 219,
-    "effect": "Light damage, medium chance of Sleep",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Snake Glare": {
-    "card": "Ara Mitama",
-    "effect": "High chance of preventing preemptive attacks",
-    "elem": "nav"
-  },
-  "Spirit Summon": {
-    "cost": 1072,
-    "effect": "Heavy damage, requires circles",
-    "elem": "alm",
-    "target": "All Foes"
-  },
-  "Spotter": {
-    "card": "Shiisaa, Kelpie",
-    "effect": "Slightly higher rate of rare materials from Treasure Spots",
-    "elem": "nav"
-  },
-  "Stab Shower": {
-    "effect": "Light damage, 3 hits",
-    "elem": "phy",
-    "target": "Rand Foes"
-  },
-  "Stona": {
-    "effect": "Medium chance of Petrification",
-    "elem": "ail",
-    "target": "1 Foe"
-  },
-  "Stone Mist": {
-    "effect": "Medium chance of Petrification",
-    "elem": "ail",
-    "target": "Foe Row"
-  },
-  "Strike Link": {
-    "cost": 220,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Stun Circle": {
-    "cost": 1018,
-    "effect": "Medium chance of Paralysis each turn for 3 turns",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Stunning Slice": {
-    "effect": "Light damage, medium chance of Paralysis",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Sukukaja": {
-    "card": "Raiju",
-    "cost": 1008,
-    "effect": "Raise hit/evade for 3 turns",
-    "elem": "sup",
-    "target": "1 Ally"
-  },
-  "Sukunda": {
-    "card": "Azumi",
-    "cost": 1008,
-    "effect": "Lower hit/evade for 3 turns",
-    "elem": "sup",
-    "target": "1 Foe"
-  },
-  "Tarukaja": {
-    "card": "Oni",
-    "cost": 1008,
-    "effect": "Raise attack for 3 turns",
-    "elem": "sup",
-    "target": "1 Ally"
-  },
-  "Tarunda": {
-    "card": "Bifrons",
-    "cost": 1008,
-    "effect": "Lower attack for 3 turns",
-    "elem": "sup",
-    "target": "1 Foe"
-  },
-  "Tempest Slash": {
-    "card": "Raphael",
-    "cost": 263,
-    "effect": "Medium damage, 2-6 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Tengu's Vigil": {
-    "card": "Koppa Tengu",
-    "effect": "Reveal shortcuts in a wide area",
-    "elem": "nav"
-  },
-  "Tentarafoo": {
-    "cost": 1012,
-    "effect": "Medium chance of Confusion",
-    "elem": "ail",
-    "target": "All Foes"
-  },
-  "Thorn Chains": {
-    "effect": "Light damage, medium change of Magic Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Thorn Cuffs": {
-    "effect": "Light damage, medium change of Strength Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Thorn Shackles": {
-    "effect": "Light damage, medium change of Agility Bind",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Thunder Reign": {
-    "cost": 1064,
-    "effect": "Severe damage",
-    "elem": "ele",
-    "target": "1 Foe",
-    "unique": true
-  },
-  "Tornado Boost": {
-    "effect": "Greatly increase Wind damage",
-    "elem": "pas"
-  },
-  "Tousatsujin": {
-    "card": "Byakko",
-    "cost": 282,
-    "effect": "Heavy damage",
-    "elem": "ice",
-    "target": "Foe Row"
-  },
-  "Treasure Hunter": {
-    "card": "Bicorn, Sudama",
-    "effect": "Reveal nearby treasure boxes",
-    "elem": "nav"
-  },
-  "Triple Down": {
-    "card": "Rakshasa",
-    "cost": 225,
-    "effect": "Medium damage, 3 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Triple Link": {
-    "card": "Ose",
-    "effect": "Link chains last up to 3 hits",
-    "elem": "pas"
-  },
-  "True Critical Eye": {
-    "card": "Kali",
-    "cost": 1026,
-    "effect": "Raise critical rate for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Twin Slash": {
-    "card": "Sandman",
-    "cost": 214,
-    "effect": "Light damage, 2 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Vengeful Melee": {
-    "card": "Abaddon",
-    "cost": 267,
-    "effect": "Heavy damage, power scales with damage taken during same turn",
-    "elem": "phy"
-  },
-  "Vengeful Smash": {
-    "cost": 246,
-    "effect": "Medium damage, power scales with damage taken during same turn",
-    "elem": "phy"
-  },
-  "Victory Cry": {
-    "card": "Hachiman",
-    "effect": "Recover 100% HP after battle",
-    "elem": "nav"
-  },
-  "Vorpal Blade": {
-    "card": "Melchizedek",
-    "cost": 267,
-    "effect": "Heavy damage, 4 hits, power scales with Boost",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Weapon Crusher": {
-    "card": "Barong",
-    "cost": 252,
-    "effect": "Heavy damage, lowers target's attack for 3 turns",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Whirlwind Swing": {
-    "card": "Futsunushi",
-    "effect": "Moderate chance to add splash effect to single-target attack skills",
-    "elem": "pas"
-  },
-  "Wind Amp": {
-    "card": "Vishnu",
-    "effect": "Moderately increase Wind damage",
-    "elem": "pas"
-  },
-  "Wind Boost": {
-    "card": "Alraune",
-    "effect": "Increase Wind damage",
-    "elem": "pas"
-  },
-  "Wind Dance": {
-    "effect": "Light damage, 2-3 hits",
-    "elem": "win",
-    "target": "Rand Foes"
-  },
-  "Wind Screen": {
-    "cost": 1016,
-    "effect": "Raise Wind resistance for 3 turns",
-    "elem": "sup",
-    "target": "All Allies"
-  },
-  "Windstrike Link": {
-    "cost": 248,
-    "effect": "Light damage, links once with ally attack",
-    "elem": "win",
-    "target": "1 Foe"
-  },
-  "World's End": {
-    "cost": 311,
-    "effect": "Severe damage",
-    "elem": "alm",
-    "target": "All Foes",
-    "unique": true
-  },
-  "Yomi Return": {
-    "card": "Parvati",
-    "cost": 2003,
-    "effect": "Revive with 50% HP",
-    "elem": "nav",
-    "target": "1 Ally"
-  },
-  "Zanshinken": {
-    "cost": 216,
-    "effect": "Light damage, hits again if user takes no damage that turn",
-    "elem": "phy",
-    "target": "1 Foe"
-  },
-  "Zio": {
-    "card": "Oberon",
-    "cost": 1006,
-    "effect": "Light damage",
-    "elem": "ele",
-    "target": "1 Foe"
-  },
-  "Ziodyne": {
-    "card": "Thor",
-    "cost": 1032,
-    "effect": "Heavy damage",
-    "elem": "ele",
-    "target": "1 Foe"
-  },
-  "Zionga": {
-    "card": "Flauros",
-    "cost": 1014,
-    "effect": "Medium damage",
-    "elem": "ele",
-    "target": "1 Foe"
-  }
+{  
+  "2": { "a": ["Agi", "fir", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Orobas"] },
+  "3": { "a": ["Agilao", "fir", "1 foe"], "b": [0, 1014, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Orthrus"] },
+  "4": { "a": ["Agidyne", "fir", "1 foe"], "b": [0, 1032, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Hell Biker"] },
+  "5": { "a": ["Maragi", "fir", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Phoenix"] },
+  "6": { "a": ["Maragion", "fir", "All foes"], "b": [0, 1036, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Throne"] },
+  "7": { "a": ["Maragidyne", "fir", "All foes"], "b": [0, 1052, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Surt"] },
+  "9": { "a": ["Ragnarok", "fir", "1 foe"], "b": [90, 1064, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "14": { "a": ["Garu", "win", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Anzu"] },
+  "15": { "a": ["Garula", "win", "1 foe"], "b": [0, 1014, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Seiryu"] },
+  "16": { "a": ["Garudyne", "win", "1 foe"], "b": [0, 1032, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Suparna"] },
+  "17": { "a": ["Magaru", "win", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "High Pixie"] },
+  "18": { "a": ["Magarula", "win", "All foes"], "b": [0, 1036, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Cybele"] },
+  "19": { "a": ["Magarudyne", "win", "All foes"], "b": [0, 1052, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Scathach"] },
+  "21": { "a": ["Panta Rhei", "win", "Foe row"], "b": [90, 1064, 325, 0, 0, 110, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "26": { "a": ["Bufu", "ice", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Apsaras"] },
+  "27": { "a": ["Bufula", "ice", "1 foe"], "b": [0, 1014, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Jack Frost"] },
+  "28": { "a": ["Bufudyne", "ice", "1 foe"], "b": [0, 1032, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Lilith"] },
+  "29": { "a": ["Mabufu", "ice", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Ganga"] },
+  "30": { "a": ["Mabufula", "ice", "All foes"], "b": [0, 1036, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Belphegor"] },
+  "31": { "a": ["Mabufudyne", "ice", "All foes"], "b": [0, 1052, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Xi Wangmu"] },
+  "32": { "a": ["Icy Paradise", "ice", "Rand foes"], "b": [90, 1024, 75, 2, 4, 110, 0, 0], "c": ["-", "-", "-"] },
+  "33": { "a": ["Niflheim", "ice", "1 foe"], "b": [90, 1064, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "39": { "a": ["Zio", "ele", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Oberon"] },
+  "40": { "a": ["Zionga", "ele", "1 foe"], "b": [0, 1014, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Flauros"] },
+  "41": { "a": ["Ziodyne", "ele", "1 foe"], "b": [0, 1032, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Thor"] },
+  "42": { "a": ["Mazio", "ele", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Nue"] },
+  "43": { "a": ["Mazionga", "ele", "All foes"], "b": [0, 1036, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Gabriel"] },
+  "44": { "a": ["Maziodyne", "ele", "All foes"], "b": [0, 1052, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Baal Zebul"] },
+  "46": { "a": ["Thunder Reign", "ele", "1 foe"], "b": [90, 1064, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "49": { "a": ["Empyrean Storm", "ele", "All foes"], "b": [90, 1070, 0, 0, 0, 110, 0, 20], "c": ["of remaining HP reduced", "-", "-"] },
+  "51": { "a": ["Megido", "alm", "All foes"], "b": [0, 1014, 125, 0, 0, 110, 0, 0], "c": ["-", "-", "Queen Mab"] },
+  "52": { "a": ["Megidola", "alm", "All foes"], "b": [0, 1032, 215, 0, 0, 110, 0, 0], "c": ["-", "-", "Decarabia"] },
+  "53": { "a": ["Megidolaon", "alm", "All foes"], "b": [0, 1048, 290, 0, 0, 110, 0, 0], "c": ["-", "-", "Lucifer, Huang Di"] },
+  "55": { "a": ["Black Viper", "alm", "1 foe"], "b": [90, 1052, 420, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "56": { "a": ["Morning Star", "alm", "All foes"], "b": [90, 1068, 420, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "61": { "a": ["Hama", "ble", "1 foe"], "b": [0, 1010, 0, 0, 0, 110, 0, 40], "c": ["-", "instakill", "-"] },
+  "62": { "a": ["Hamaon", "ble", "1 foe"], "b": [0, 1020, 0, 0, 0, 110, 0, 60], "c": ["-", "instakill", "-"] },
+  "63": { "a": ["Mahama", "ble", "All foes"], "b": [0, 1022, 0, 0, 0, 110, 0, 30], "c": ["-", "instakill", "-"] },
+  "64": { "a": ["Mahamaon", "ble", "All foes"], "b": [0, 1044, 0, 0, 0, 110, 0, 50], "c": ["-", "instakill", "-"] },
+  "67": { "a": ["Samsara", "ble", "All foes"], "b": [90, 1050, 0, 0, 0, 110, 0, 55], "c": ["-", "instakill", "-"] },
+  "72": { "a": ["Mudo", "cur", "1 foe"], "b": [0, 1010, 0, 0, 0, 110, 0, 40], "c": ["-", "instakill", "-"] },
+  "73": { "a": ["Mudoon", "cur", "1 foe"], "b": [0, 1020, 0, 0, 0, 110, 0, 60], "c": ["-", "instakill", "-"] },
+  "74": { "a": ["Mamudo", "cur", "All foes"], "b": [0, 1022, 0, 0, 0, 110, 0, 30], "c": ["-", "instakill", "-"] },
+  "75": { "a": ["Mamudoon", "cur", "All foes"], "b": [0, 1044, 0, 0, 0, 110, 0, 50], "c": ["-", "instakill", "-"] },
+  "78": { "a": ["Die For Me!", "cur", "All foes"], "b": [90, 1050, 0, 0, 0, 110, 0, 55], "c": ["-", "instakill", "-"] },
+  "83": { "a": ["Pulinpa", "ail", "Foe row"], "b": [0, 1006, 0, 0, 0, 0, 0, 35], "c": ["-", "Confusion", "Ame-no-Uzume"] },
+  "84": { "a": ["Tentarafoo", "ail", "All foes"], "b": [0, 1012, 0, 0, 0, 0, 0, 35], "c": ["-", "Confusion", "-"] },
+  "85": { "a": ["Poisma", "ail", "Foe row"], "b": [0, 1006, 0, 0, 0, 0, 0, 35], "c": ["-", "Poison", "Empusa"] },
+  "86": { "a": ["Poison Breath", "ail", "All foes"], "b": [0, 1012, 0, 0, 0, 0, 0, 35], "c": ["-", "Poison", "-"] },
+  "89": { "a": ["Dormina", "ail", "Foe row"], "b": [0, 1006, 0, 0, 0, 0, 0, 35], "c": ["-", "Sleep", "Pixie"] },
+  "90": { "a": ["Lullaby Song", "ail", "All foes"], "b": [0, 1012, 0, 0, 0, 0, 0, 35], "c": ["-", "Sleep", "-"] },
+  "91": { "a": ["Evil Touch", "ail", "Foe row"], "b": [0, 1006, 0, 0, 0, 0, 0, 35], "c": ["-", "Hex", "Alp"] },
+  "92": { "a": ["Evil Smile", "ail", "All foes"], "b": [0, 1012, 0, 0, 0, 0, 0, 35], "c": ["-", "Hex", "-"] },
+  "129": { "a": ["Fang Smash", "phy", "1 foe"], "b": [0, 16, 50, 0, 0, 90, 0, 1070], "c": ["dmg dealt", "by target for 3 turns", "Xiezhai"] },
+  "130": { "a": ["Kidney Smash", "phy", "1 foe"], "b": [0, 32, 115, 0, 0, 90, 0, 1070], "c": ["dmg dealt", "by target for 3 turns", "Basilisk"] },
+  "131": { "a": ["Giant Slice", "phy", "Foe row"], "b": [0, 16, 70, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted, x0.5 splash dmg", "Yaksini"] },
+  "132": { "a": ["Twin Slash", "phy", "1 foe"], "b": [0, 14, 60, 2, 2, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Sandman"] },
+  "133": { "a": ["Leg Reaper", "phy", "1 foe"], "b": [0, 19, 80, 0, 0, 90, 0, 60], "c": ["-", "Agility Bind", "Chimera"] },
+  "134": { "a": ["Triple Down", "phy", "1 foe"], "b": [0, 25, 50, 3, 3, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Rakshasa"] },
+  "135": { "a": ["Mighty Swing", "phy", "Foe row"], "b": [0, 28, 90, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted, x0.5 splash dmg", "Mezuki"] },
+  "136": { "a": ["Achilles Reaper", "phy", "1 foe"], "b": [0, 36, 140, 0, 0, 90, 0, 60], "c": ["-", "Agility Bind", "-"] },
+  "137": { "a": ["Silent Thrust", "phy", "1 foe"], "b": [0, 19, 80, 0, 0, 90, 0, 60], "c": ["-", "Hex", "Pele"] },
+  "138": { "a": ["Rampage", "phy", "Rand foes"], "b": [0, 24, 25, 2, 4, 50, 0, 1200], "c": ["dmg dealt", "when Boosted", "Tsuchigumo"] },
+  "139": { "a": ["Frost Edge", "ice", "Foe row"], "b": [0, 32, 64, 0, 0, 90, 0, 1030], "c": ["-", "splash dmg", "Matador"] },
+  "140": { "a": ["Zanshinken", "phy", "1 foe"], "b": [0, 16, 55, 0, 0, 90, 0, 0], "c": ["activates again", "at end of turn when user takes no dmg", "-"] },
+  "142": { "a": ["Death Needle", "phy", "1 foe"], "b": [0, 36, 140, 0, 0, 90, 0, 80], "c": ["-", "Poison", "Ananta"] },
+  "143": { "a": ["Guillotine", "phy", "1 foe"], "b": [0, 14, 160, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "against foes with ailments", "-"] },
+  "144": { "a": ["Tempest Slash", "phy", "1 foe"], "b": [0, 63, 70, 2, 6, 45, 0, 1200], "c": ["dmg dealt", "when Boosted", "Raphael"] },
+  "145": { "a": ["Mind Strike", "psy", "Foe row"], "b": [0, 32, 70, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Ikusa"] },
+  "146": { "a": ["Holy Touch", "phy", "1 foe"], "b": [0, 19, 80, 0, 0, 90, 0, 60], "c": ["-", "Magic Bind", "Mithra"] },
+  "147": { "a": ["Revenge Blow", "phy", "-"], "b": [0, 16, 100, 0, 0, 0, 0, 1200], "c": ["dmg dealt", "when user takes dmg, activates at end of turn", "-"] },
+  "149": { "a": ["Arm Chopper", "phy", "1 foe"], "b": [0, 19, 130, 0, 0, 90, 0, 60], "c": ["-", "Strength Bind", "Valkyrie"] },
+  "150": { "a": ["Single Shot", "phy", "Foe col"], "b": [0, 15, 25, 0, 0, 95, 0, 1200], "c": ["dmg dealt", "when Boosted", "Berith"] },
+  "151": { "a": ["Scarecrow", "ail", "Foe row"], "b": [0, 1008, 0, 0, 0, 0, 0, 35], "c": ["-", "Agility Bind", "-"] },
+  "152": { "a": ["Disarm", "ail", "Foe row"], "b": [0, 1008, 0, 0, 0, 0, 0, 35], "c": ["-", "Strength Bind", "-"] },
+  "153": { "a": ["Makajam", "ail", "Foe row"], "b": [0, 1008, 0, 0, 0, 0, 0, 35], "c": ["-", "Magic Bind", "-"] },
+  "154": { "a": ["Assault Shot", "phy", "Foe col"], "b": [0, 28, 75, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Triglav"] },
+  "155": { "a": ["Primal Force", "phy", "1 foe"], "b": [0, 66, 140, 2, 2, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Asura, Asterius Picaro"] },
+  "156": { "a": ["Weapon Crusher", "phy", "1 foe"], "b": [0, 52, 190, 0, 0, 90, 0, 1070], "c": ["dmg dealt", "by target for 3 turns", "Barong"] },
+  "157": { "a": ["Broadshot", "phy", "Foe col"], "b": [0, 68, 160, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Longinus"] },
+  "158": { "a": ["Myriad Arrows", "phy", "1 foe"], "b": [0, 85, 110, 6, 10, 50, 0, 1200], "c": ["dmg dealt", "when Boosted", "Pale Rider"] },
+  "159": { "a": ["Punishment", "phy", "1 foe"], "b": [0, 14, 85, 0, 0, 90, 0, 1170], "c": ["dmg dealt + Mutudi", "against foes with binds", "-"] },
+  "160": { "a": ["Assault Dive", "phy", "1 foe"], "b": [0, 25, 140, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Power"] },
+  "161": { "a": ["Sleeper Punch", "phy", "1 foe"], "b": [0, 19, 80, 0, 0, 90, 0, 60], "c": ["-", "Sleep", "Succubus"] },
+  "162": { "a": ["Armor Splitter", "phy", "1 foe"], "b": [0, 16, 60, 0, 0, 90, 0, 1130], "c": ["dmg dealt by allies", "against target for 1 turn", "Mokoi"] },
+  "163": { "a": ["Lunge", "phy", "1 foe"], "b": [0, 14, 145, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Ukobach"] },
+  "164": { "a": ["Deathbound", "phy", "All foes"], "b": [0, 73, 125, 0, 0, 80, 0, 1125], "c": ["dmg dealt", "when Boosted", "Chernobog"] },
+  "165": { "a": ["Blade of Fury", "phy", "Foe row"], "b": [0, 68, 145, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted, x0.5 splash dmg", "Uriel"] },
+  "166": { "a": ["Glacial Edge", "ice", "Foe row"], "b": [0, 56, 140, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "King Frost"] },
+  "167": { "a": ["Vorpal Blade", "phy", "1 foe"], "b": [0, 67, 110, 4, 4, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Melchizedek"] },
+  "168": { "a": ["Danse Macabre", "phy", "Rand foes"], "b": [90, 40, 50, 5, 7, 70, 0, 1200], "c": ["dmg dealt", "when Boosted", "-"] },
+  "169": { "a": ["Headbutt", "phy", "1 foe"], "b": [0, 19, 82, 0, 0, 90, 0, 70], "c": ["-", "Confusion", "Nozuchi"] },
+  "170": { "a": ["Fusion Blast", "nuk", "Foe row"], "b": [0, 32, 70, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Kaiwan"] },
+  "171": { "a": ["Heat Wave", "phy", "All foes"], "b": [0, 24, 45, 0, 0, 75, 0, 1125], "c": ["dmg dealt", "when Boosted", "Orochi"] },
+  "172": { "a": ["Light Wave", "phy", "1 foe"], "b": [90, 135, 380, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "-"] },
+  "174": { "a": ["Brutal Slash", "phy", "1 foe"], "b": [0, 42, 130, 0, 0, 90, 0, 0], "c": ["activates again", "at end of turn when user takes no dmg", "-"] },
+  "175": { "a": ["Photon Edge", "alm", "1 foe"], "b": [0, 63, 240, 0, 0, 90, 0, 0], "c": ["-", "-", "-"] },
+  "176": { "a": ["Prana", "alm", "All foes"], "b": [90, 122, 280, 0, 0, 70, 0, 0], "c": ["-", "-", "-"] },
+  "177": { "a": ["Heaven's Blade", "phy", "1 foe"], "b": [0, 68, 170, 0, 0, 90, 0, 0], "c": ["activates again", "at end of turn when user takes no dmg", "Tam Lin"] },
+  "178": { "a": ["God's Hand", "phy", "1 foe"], "b": [0, 85, 350, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Michael, Asterius"] },
+  "179": { "a": ["Angelic Trumpet", "phy", "Rand foes"], "b": [90, 65, 105, 3, 3, 70, 0, 1200], "c": ["dmg dealt", "when Boosted", "-"] },
+  "180": { "a": ["Hassou Tobi", "phy", "Rand foes"], "b": [90, 131, 150, 8, 8, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "-"] },
+  "181": { "a": ["Hailstorm", "phy", "Rand foes"], "b": [0, 73, 60, 3, 8, 70, 0, 1200], "c": ["dmg dealt", "when Boosted", "Jeanne d'Arc"] },
+  "182": { "a": ["Arrow Rain", "phy", "Rand foes"], "b": [0, 30, 50, 3, 6, 60, 0, 1200], "c": ["dmg dealt", "when Boosted", "Hare of Inaba"] },
+  "183": { "a": ["Aeon Rain", "phy", "Rand foes"], "b": [0, 89, 65, 3, 10, 70, 0, 1200], "c": ["dmg dealt", "when Boosted", "Siegfried"] },
+  "188": { "a": ["Poison Skewer", "phy", "1 foe"], "b": [0, 19, 80, 0, 0, 90, 0, 60], "c": ["-", "Poison", "Andras"] },
+  "189": { "a": ["Gurentou", "fir", "Foe row"], "b": [0, 32, 70, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Eligor"] },
+  "190": { "a": ["Tousatsujin", "ice", "Foe row"], "b": [0, 82, 150, 0, 0, 90, 0, 1030], "c": ["-", "splash dmg", "Byakko"] },
+  "191": { "a": ["Raikouzan", "ele", "Foe row"], "b": [0, 32, 70, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Caladrius"] },
+  "192": { "a": ["Jinpugeki", "win", "Foe row"], "b": [0, 32, 70, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Fortuna"] },
+  "193": { "a": ["Shinkuuha", "alm", "1 foe"], "b": [0, 56, 100, 2, 2, 90, 0, 0], "c": ["-", "-", "-"] },
+  "194": { "a": ["Resseiha", "alm", "Rand foes"], "b": [0, 60, 80, 2, 5, 70, 0, 0], "c": ["-", "-", "-"] },
+  "195": { "a": ["Pralaya", "alm", "All foes"], "b": [90, 122, 220, 0, 0, 70, 0, 40], "c": ["-", "instakill", "-"] },
+  "196": { "a": ["Shadow Run", "alm", "All foes"], "b": [90, 64, 165, 0, 0, 70, 0, 0], "c": ["-", "-", "-"] },
+  "197": { "a": ["World's End", "alm", "All foes"], "b": [90, 111, 290, 0, 0, 70, 0, 0], "c": ["-", "-", "-"] },
+  "198": { "a": ["Raimeizan", "ele", "Foe row"], "b": [0, 56, 140, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Ares"] },
+  "199": { "a": ["Raijinzan", "ele", "Foe row"], "b": [0, 82, 190, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Cherub"] },
+  "200": { "a": ["Gokuentou", "fir", "Foe row"], "b": [0, 56, 140, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Pyro Jack"] },
+  "201": { "a": ["Hientou", "fir", "Foe row"], "b": [0, 82, 190, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Yatsufusa"] },
+  "202": { "a": ["Reppu Strike", "win", "Foe row"], "b": [0, 56, 140, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Cu Chulainn"] },
+  "203": { "a": ["Kamikaze Strike", "win", "Foe row"], "b": [0, 82, 190, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Garuda"] },
+  "209": { "a": ["Dia", "rec", "1 ally"], "b": [0, 1005, 40, 0, 0, 0, 0, 0], "c": ["HP restore", "-", "Gemori"] },
+  "210": { "a": ["Diarama", "rec", "1 ally"], "b": [0, 1010, 90, 0, 0, 0, 0, 0], "c": ["HP restore", "-", "Yatagarasu"] },
+  "211": { "a": ["Diarahan", "rec", "1 ally"], "b": [0, 1028, 100, 0, 0, 0, 0, 100], "c": ["HP restore", "-", "Leanan Sidhe"] },
+  "214": { "a": ["Media", "rec", "All allies"], "b": [0, 1012, 65, 0, 0, 0, 0, 0], "c": ["HP restore", "-", "Silky, Kaguya"] },
+  "215": { "a": ["Mediarama", "rec", "All allies"], "b": [0, 1030, 150, 0, 0, 0, 0, 0], "c": ["HP restore", "-", "Bai Suzhen"] },
+  "216": { "a": ["Mediarahan", "rec", "All allies"], "b": [0, 1056, 0, 0, 0, 0, 0, 100], "c": ["HP restore", "-", "Helel"] },
+  "217": { "a": ["Recarm", "rec", "1 ally"], "b": [0, 1012, 0, 0, 0, 0, 0, 50], "c": ["HP restore after reviving", "-", "Sarasvati"] },
+  "218": { "a": ["Samarecarm", "rec", "1 ally"], "b": [0, 1036, 999, 0, 0, 0, 0, 100], "c": ["HP restore after reviving", "-", "White Rider, Kaguya Picaro"] },
+  "221": { "a": ["Patra", "rec", "Ally row"], "b": [0, 1006, 0, 0, 0, 0, 0, 0], "c": ["removes ailments", "-", "Koropokkur"] },
+  "222": { "a": ["Refresh", "rec", "Ally row"], "b": [99, 1008, 26, 0, 0, 0, 0, 0], "c": ["HP Restore + Patra", "-", "-"] },
+  "223": { "a": ["Me Patra", "rec", "All allies"], "b": [0, 1012, 0, 0, 0, 0, 0, 0], "c": ["Patra", "-", "-"] },
+  "224": { "a": ["Mutudi", "rec", "Ally row"], "b": [0, 1004, 0, 0, 0, 0, 0, 0], "c": ["removes binds", "-", "Principality"] },
+  "226": { "a": ["Mamutudi", "rec", "All allies"], "b": [99, 1015, 0, 0, 0, 0, 0, 0], "c": ["Mutudi", "-", "-"] },
+  "227": { "a": ["Amrita", "rec", "1 ally"], "b": [0, 1045, 0, 0, 0, 0, 0, 0], "c": ["Diarahan + Patra + Mutudi", "-", "-"] },
+  "230": { "a": ["Bestial Roar", "sup", "-"], "b": [0, 1008, 0, 0, 0, 0, 0, 1130], "c": ["dmg dealt + acts first", "for 3 turns", "-"] },
+  "231": { "a": ["Dragon Cry", "sup", "-"], "b": [0, 1016, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt + acts first", "for 3 turns", "Ouroboros"] },
+  "237": { "a": ["Safeguard", "sup", "1 ally"], "b": [0, 1001, 0, 0, 0, 0, 0, 1060], "c": ["dmg received when taking dmg in place of target", "for 3 turns", "-"] },
+  "238": { "a": ["Line Guard", "sup", "Ally row"], "b": [0, 1003, 0, 0, 0, 0, 0, 1060], "c": ["dmg received when taking dmg in place of target", "for 3 turns", "Nata Taishi"] },
+  "239": { "a": ["All Guard", "sup", "All allies"], "b": [0, 1009, 0, 0, 0, 0, 0, 1060], "c": ["dmg received when taking dmg in place of target", "for 3 turns", "Ouyamatsumi"] },
+  "244": { "a": ["Rebel Vanguard", "sup", "Ally row"], "b": [99, 1003, 0, 0, 0, 0, 0, 2040], "c": ["to crit rate", "for 1 turn", "-"] },
+  "245": { "a": ["Critical Eye", "sup", "-"], "b": [0, 1012, 0, 0, 0, 0, 0, 2030], "c": ["to crit rate", "for 3 turns", "Ippon-Datara"] },
+  "246": { "a": ["Revolt Vanguard", "sup", "Ally row"], "b": [99, 1003, 0, 0, 0, 0, 0, 2060], "c": ["to crit rate", "for 2 turns", "-"] },
+  "247": { "a": ["Matarukaja", "sup", "All allies"], "b": [0, 1024, 0, 0, 0, 0, 0, 0], "c": ["Tarukaja", "-", "Suzaku"] },
+  "248": { "a": ["Marakukaja", "sup", "All allies"], "b": [0, 1024, 0, 0, 0, 0, 0, 0], "c": ["Rakukaja", "-", "Mot"] },
+  "249": { "a": ["Masukukaja", "sup", "All allies"], "b": [0, 1024, 0, 0, 0, 0, 0, 0], "c": ["Sukukaja", "-", "Skadi"] },
+  "250": { "a": ["Power Charge", "sup", "-"], "b": [0, 1022, 0, 0, 0, 0, 0, 1280], "c": ["dmg dealt", "by next phys attack within 3 turns", "Masakado, Ariadne"] },
+  "251": { "a": ["Mind Charge", "sup", "-"], "b": [0, 1022, 0, 0, 0, 0, 0, 1280], "c": ["dmg dealt", "by next magic attack within 3 turns", "Ariadne Picaro"] },
+  "261": { "a": ["Matarunda", "sup", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["Tarunda", "-", "Narasimha"] },
+  "262": { "a": ["Marakunda", "sup", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["Rakunda", "-", "Ammut"] },
+  "263": { "a": ["Masukunda", "sup", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["Sukunda", "-", "Nebiros"] },
+  "265": { "a": ["Fury Order", "sup", "All allies"], "b": [0, 1042, 0, 0, 0, 0, 0, 0], "c": ["Power Charge", "-", "-"] },
+  "266": { "a": ["Focus Order", "sup", "All allies"], "b": [0, 1042, 0, 0, 0, 0, 0, 0], "c": ["Mind Charge", "-", "-"] },
+  "268": { "a": ["Binding Aura", "sup", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 3001], "c": ["turns to binds and ailments", "-", "-"] },
+  "269": { "a": ["Salome's Kiss", "ail", "1 foe"], "b": [0, 1042, 0, 0, 0, 0, 0, 60], "c": ["-", "Strength + Magic + Agility Bind", "Black Maria"] },
+  "273": { "a": ["Dekaja", "sup", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["removes -kaja buffs", "-", "-"] },
+  "274": { "a": ["Dekunda", "sup", "All allies"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["removes -kunda debuffs", "-", "-"] },
+  "276": { "a": ["Psy Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Psy", "-"] },
+  "277": { "a": ["Nuclear Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Nuke", "-"] },
+  "278": { "a": ["Fire Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Fire", "-"] },
+  "279": { "a": ["Wind Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Wind", "-"] },
+  "280": { "a": ["Ice Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Ice", "-"] },
+  "281": { "a": ["Elec Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Elec", "-"] },
+  "282": { "a": ["Bless Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Bless", "-"] },
+  "283": { "a": ["Curse Screen", "sup", "All allies"], "b": [0, 1016, 0, 0, 0, 0, 0, 0], "c": ["raises resistance for 3 turns", "against Curse", "-"] },
+  "284": { "a": ["Tarukaja", "sup", "1 ally"], "b": [0, 1008, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "for 3 turns", "Oni"] },
+  "285": { "a": ["Rakukaja", "sup", "1 ally"], "b": [0, 1008, 0, 0, 0, 0, 0, 1080], "c": ["dmg received", "for 3 turns", "Agathion"] },
+  "286": { "a": ["Sukukaja", "sup", "1 ally"], "b": [0, 1008, 0, 0, 0, 0, 0, 1120], "c": ["accuracy + evasion", "for 3 turns", "Raiju"] },
+  "287": { "a": ["Tarunda", "sup", "1 foe"], "b": [0, 1008, 0, 0, 0, 0, 0, 1080], "c": ["dmg dealt", "for 3 turns", "Bifrons"] },
+  "288": { "a": ["Rakunda", "sup", "1 foe"], "b": [0, 1008, 0, 0, 0, 0, 0, 1120], "c": ["dmg received", "for 3 turns", "Onmoraki"] },
+  "289": { "a": ["Sukunda", "sup", "1 foe"], "b": [0, 1008, 0, 0, 0, 0, 0, 1080], "c": ["accuracy + evasion", "for 3 turns", "Azumi"] },
+  "290": { "a": ["Debilitate", "sup", "1 foe"], "b": [0, 1042, 0, 0, 0, 0, 0, 1060], "c": ["dmg dealt + dmg received + accuracy + evasion", "for 3 turns", "Rangda"] },
+  "291": { "a": ["Heat Riser", "sup", "1 ally"], "b": [0, 1035, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt + dmg received + accuracy + evasion", "for 3 turns", "Mishaguji"] },
+  "292": { "a": ["True Critical Eye", "sup", "All allies"], "b": [0, 1026, 0, 0, 0, 0, 0, 2030], "c": ["to crit rate", "for 3 turns", "Kali"] },
+  "293": { "a": ["Door of Hades", "alm", "All foes"], "b": [99, 1078, 100, 0, 0, 70, 0, 0], "c": ["-", "each turn for 3 turns", "-"] },
+  "295": { "a": ["Calamity Seed", "phy", "All foes"], "b": [99, 1100, 75, 3, 6, 70, 0, 0], "c": ["-", "each turn for 3 turns", "-"] },
+  "297": { "a": ["Lunar Blessing", "sup", "All allies"], "b": [99, 1025, 0, 0, 0, 0, 0, 0], "c": ["nullifies one attack", "each turn for 3 turns", "-"] },
+  "299": { "a": ["Healing Harp", "rec", "All allies"], "b": [99, 1028, 100, 0, 0, 0, 0, 0], "c": ["HP restore + Patra + Mutudi", "at end of turn for 3 turns", "-"] },
+  "301": { "a": ["Mental Smash", "psy", "Foe row"], "b": [0, 56, 150, 0, 0, 90, 0, 1030], "c": ["-", "splash dmg", "Pabilsag"] },
+  "302": { "a": ["Psycho Smash", "psy", "Foe row"], "b": [0, 82, 190, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Shiki-Ouji"] },
+  "303": { "a": ["Scorching Blast", "nuk", "Foe row"], "b": [0, 56, 150, 0, 0, 90, 0, 1030], "c": ["-", "splash dmg", "Mayahuel"] },
+  "304": { "a": ["Nuclear Blast", "nuk", "Foe row"], "b": [0, 82, 190, 0, 0, 80, 0, 1030], "c": ["-", "splash dmg", "Lugh"] },
+  "305": { "a": ["Sleep Strike", "phy", "1 foe"], "b": [0, 36, 140, 0, 0, 90, 0, 80], "c": ["-", "Sleep", "Jatayu"] },
+  "306": { "a": ["Brain Shake", "phy", "1 foe"], "b": [0, 32, 160, 0, 0, 90, 0, 90], "c": ["-", "Confusion", "Ophanim"] },
+  "307": { "a": ["Armor Breaker", "phy", "1 foe"], "b": [0, 32, 140, 0, 0, 90, 0, 1135], "c": ["dmg dealt by allies", "against target for 1 turn", "Gozuki"] },
+  "308": { "a": ["Armor Destroyer", "phy", "1 foe"], "b": [0, 52, 180, 0, 0, 90, 0, 1140], "c": ["dmg dealt by allies", "against target for 1 turn", "Kartikeya"] },
+  "313": { "a": ["True Analysis", "nav", "1 foe"], "b": [99, 2500, 0, 0, 0, 0, 0, 0], "c": ["reveals all info", "-", "-"] },
+  "315": { "a": ["Zero Shift", "nav", "1 ally"], "b": [99, 2300, 0, 0, 0, 0, 0, 100], "c": ["reduction to skill costs", "for 1 turn", "-"] },
+  "317": { "a": ["Encore", "nav", "All allies"], "b": [99, 2300, 0, 0, 0, 0, 0, 3003], "c": ["turns to -kaja buffs", "-", "-"] },
+  "320": { "a": ["Oracle", "nav", "All allies"], "b": [99, 2400, 0, 0, 0, 0, 0, 0], "c": ["random -kaja buff", "-", "-"] },
+  "325": { "a": ["Snake Glare", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 70], "c": ["chance of preventing preemptive attack", "-", "Ara Mitama"] },
+  "326": { "a": ["Heroic Wind", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2005], "c": ["HP restore", "each turn", "Kohryu"] },
+  "330": { "a": ["Healing Tide", "nav", "All allies"], "b": [99, 2200, 70, 0, 0, 0, 0, 0], "c": ["HP restore", "each turn for 3 turns", "-"] },
+  "331": { "a": ["Harvest Prayer", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2015], "c": ["chance of gathering multiple times", "from Treasure Spots", "Lachesis"] },
+  "335": { "a": ["Renewal Ray", "nav", "All allies"], "b": [0, 2200, 52, 0, 0, 0, 0, 0], "c": ["HP restore", "-", "Atropos"] },
+  "337": { "a": ["Mini Recovery", "nav", "All allies"], "b": [99, 2200, 35, 0, 0, 0, 0, 0], "c": ["HP restore", "each turn for 3 turns", "-"] },
+  "338": { "a": ["Spotlight", "nav", "1 ally"], "b": [99, 2100, 0, 0, 0, 0, 0, 0], "c": ["acts first", "for 1 turn", "-"] },
+  "339": { "a": ["Yomi Return", "nav", "1 ally"], "b": [0, 2300, 0, 0, 0, 0, 0, 50], "c": ["HP restore after reviving", "-", "Parvati"] },
+  "341": { "a": ["Orb of Resolve", "nav", "All allies"], "b": [0, 2200, 0, 0, 0, 0, 0, 0], "c": ["Rakukaja", "-", "Gorgon, Dis"] },
+  "342": { "a": ["Orb of Power", "nav", "All allies"], "b": [0, 2200, 0, 0, 0, 0, 0, 0], "c": ["Tarukaja", "-", "Clotho, Niddhoggr"] },
+  "343": { "a": ["Orb of Haste", "nav", "All allies"], "b": [0, 2200, 0, 0, 0, 0, 0, 0], "c": ["Sukukaja", "-", "Saki Mitama, Hitokotonusi"] },
+  "344": { "a": ["Life Aid", "nav", "-"], "b": [0, 0, 20, 0, 0, 0, 0, 20], "c": ["HP restore", "at end of battle", "Norn"] },
+  "345": { "a": ["Victory Cry", "nav", "-"], "b": [0, 0, 100, 0, 0, 0, 0, 100], "c": ["HP restore", "at end of battle", "Hachiman"] },
+  "346": { "a": ["Safety Prayer", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2050], "c": ["chance of safely gathering", "from Treasure Spots", "Cu Sith"] },
+  "347": { "a": ["Calming Lull", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 100], "c": ["chance of safely gathering", "from Treasure Spots", "Kusi Mitama"] },
+  "348": { "a": ["Spotter", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2020], "c": ["chance of rare material", "from Treasure Spots", "Shiisaa, Kelpie"] },
+  "349": { "a": ["Magic Mallet", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2040], "c": ["chance of rare material", "from Treasure Spots", "Kurama Tengu"] },
+  "350": { "a": ["Final Guard", "nav", "All allies"], "b": [99, 2400, 0, 0, 0, 0, 0, 0], "c": ["nullifies all dmg", "for 1 turn", "-"] },
+  "362": { "a": ["Sneak Guide", "nav", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2020], "c": ["chance to ambush foes", "-", "-"] },
+  "363": { "a": ["Treasure Hunter", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals nearby chests", "-", "Bicorn, Sudama"] },
+  "364": { "a": ["Fortune Hunter", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals faraway chests", "-", "Thoth"] },
+  "365": { "a": ["Faerie's Vigil", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals nearby shortcuts", "-", "Mothman, Mandrake"] },
+  "366": { "a": ["Tengu's Vigil", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals faraway shortcuts", "-", "Koppa Tengu"] },
+  "367": { "a": ["Clairvoyance", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals nearby chests, FOEs, and shortcuts", "-", "Hua Po, Genbu"] },
+  "368": { "a": ["Farsight", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals faraway chests, FOEs, and shortcuts", "-", "Arahabaki"] },
+  "369": { "a": ["Purifying Rain", "nav", "All allies"], "b": [0, 2200, 0, 0, 0, 0, 0, 0], "c": ["Patra + Mutudi", "-", "Jinn"] },
+  "370": { "a": ["Treasure Skimmer", "nav", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2025], "c": ["chance of more materials", "from Treasure Spots", "-"] },
+  "372": { "a": ["Eternal Melody", "nav", "All allies"], "b": [0, 2300, 0, 0, 0, 0, 0, 3003], "c": ["turns to -kaja buffs", "-", "Kingu"] },
+  "373": { "a": ["On Stage", "nav", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2050], "c": ["chance of safely gathering", "from Treasure Spots", "-"] },
+  "374": { "a": ["Escape Route", "nav", "-"], "b": [99, 2100, 0, 0, 0, 0, 0, 0], "c": ["escapes battle + teleports to floor entrance", "-", "-"] },
+  "376": { "a": ["Risk Management", "nav", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 70], "c": ["chance of preventing preemptive attack", "-", "-"] },
+  "377": { "a": ["Hunting Prayer", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2020], "c": ["chance of rare material", "from foes", "Nigi Mitama, Heqet"] },
+  "379": { "a": ["Third Eye", "nav", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["reveals nearby chests, FOEs, and shortcuts", "-", "-"] },
+  "380": { "a": ["Cheer March", "nav", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2001], "c": ["HP restore", "each step on map", "-"] },
+  "381": { "a": ["Paths of Light", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2002], "c": ["HP restore", "each step on map", "Seth"] },
+  "382": { "a": ["Roads of Light", "nav", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3001], "c": ["SP restore", "each step on map", "Sandalphon"] },
+  "385": { "a": ["Stun Circle", "ail", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Paralysis", "-"] },
+  "387": { "a": ["Sleep Circle", "ail", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Sleep", "-"] },
+  "389": { "a": ["Poison Circle", "ail", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Poison", "-"] },
+  "391": { "a": ["Confusion Circle", "ail", "All foes"], "b": [0, 1018, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Confusion", "-"] },
+  "393": { "a": ["Silence Circle", "ail", "All foes"], "b": [0, 1024, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Magic Bind", "-"] },
+  "395": { "a": ["Decay Circle", "ail", "All foes"], "b": [0, 1024, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Strength Bind", "-"] },
+  "397": { "a": ["Lethargy Circle", "ail", "All foes"], "b": [0, 1024, 0, 0, 0, 0, 0, 30], "c": ["chance each turn for 3 turns of", "Agility Bind", "-"] },
+  "399": { "a": ["Beast Summon", "alm", "All foes"], "b": [0, 1058, 150, 0, 0, 110, 0, 0], "c": ["only usable", "when a Circle skill is active", "-"] },
+  "400": { "a": ["Spirit Summon", "alm", "All foes"], "b": [0, 1072, 210, 0, 0, 110, 0, 0], "c": ["only usable", "when a Circle skill is active", "-"] },
+  "401": { "a": ["Shura Tensei", "sup", "-"], "b": [0, 1024, 0, 0, 0, 0, 0, 1300], "c": ["dmg dealt + 50% HP lost", "each turn", "-"] },
+  "402": { "a": ["Shura Revert", "sup", "-"], "b": [0, 1008, 0, 0, 0, 0, 0, 50], "c": ["HP restore + ends Shura Tensei", "-", "-"] },
+  "403": { "a": ["Shura Instincts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 50], "c": ["chance of Shura Tensei", "at start of battle", "Fenrir"] },
+  "408": { "a": ["Free Memento", "rec", "User row"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["Mutudi", "at end of turn for 3 turns", "-"] },
+  "410": { "a": ["Pure Memento", "rec", "User row"], "b": [0, 1018, 0, 0, 0, 0, 0, 0], "c": ["Patra", "at end of turn for 3 turns", "-"] },
+  "413": { "a": ["Death Counter", "sup", "-"], "b": [0, 32, 170, 0, 0, 90, 0, 0], "c": ["normal attack", "when user's row is attacked for 3 turns", "Girimehkala"] },
+  "415": { "a": ["Death Chaser", "sup", "-"], "b": [0, 38, 55, 0, 0, 80, 0, 0], "c": ["normal attack", "when user's row attacks for 3 turns", "Turdak"] },
+  "425": { "a": ["Firestrike Link", "fir", "1 foe"], "b": [0, 48, 40, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "427": { "a": ["Icestrike Link", "ice", "1 foe"], "b": [0, 48, 40, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "429": { "a": ["Elecstrike Link", "ele", "1 foe"], "b": [0, 48, 40, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "431": { "a": ["Windstrike Link", "win", "1 foe"], "b": [0, 48, 175, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "434": { "a": ["Strike Link", "phy", "1 foe"], "b": [0, 20, 40, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "436": { "a": ["Psystrike Link", "psy", "1 foe"], "b": [0, 48, 40, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "438": { "a": ["Nucleostrike Link", "nuk", "1 foe"], "b": [0, 48, 40, 0, 0, 90, 0, 0], "c": ["activates again", "when attacking same foe", "-"] },
+  "477": { "a": ["Fool Card", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by elemental magic", "-"] },
+  "497": { "a": ["Heroic Gemini", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 30], "c": ["chance of attack skill activating twice", "-", "Beelzebub"] },
+  "499": { "a": ["Runic Shield", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 30], "c": ["chance to nullify dmg", "from elemental attack against user's row", "Thanatos Picaro"] },
+  "500": { "a": ["Aegis Shield", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 10], "c": ["chance to nullify dmg", "from elemental attack against user's row", "-"] },
+  "501": { "a": ["Swordbreaker", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 20], "c": ["chance to halve dmg", "from Phys against user's row", "-"] },
+  "502": { "a": ["Bind Arts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2025], "c": ["to bind affliction rate", "-", "-"] },
+  "503": { "a": ["Bind Arts+", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2050], "c": ["to bind affliction rate", "-", "Vouivre"] },
+  "504": { "a": ["First Star", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1125], "c": ["dmg dealt", "when attacking before all foes act", "Halphas"] },
+  "505": { "a": ["Challenger Arts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "against foes with higher HP", "-"] },
+  "506": { "a": ["Challenger Arts+", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "against foes with higher HP", "Moloch"] },
+  "508": { "a": ["Restoring Touch", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2070], "c": ["to bind and ailment recovery rate", "-", "-"] },
+  "511": { "a": ["Healing Finger", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["to HP restore", "by Recovery skills", "-"] },
+  "514": { "a": ["Colossal Swing", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 30], "c": ["chance of splash dmg", "for single-target skills", "Balor"] },
+  "515": { "a": ["Whirlwind Swing", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 50], "c": ["chance of splash dmg", "for single-target skills", "Futsunushi"] },
+  "516": { "a": ["Golden Link", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2020], "c": ["dmg dealt", "by Link skill for each time activated", "Zaou-Gongen"] },
+  "517": { "a": ["Combo Arts", "pas", "-"], "b": [0, 0, 0, 2, 2, 0, 0, 20], "c": ["chance of normal attack activating twice", "-", "-"] },
+  "518": { "a": ["Combo Arts+", "pas", "-"], "b": [0, 0, 0, 2, 2, 0, 0, 50], "c": ["chance of normal attack activating twice", "-", "Black Frost"] },
+  "519": { "a": ["Dodge Arts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2010], "c": ["evasion", "-", "-"] },
+  "520": { "a": ["Dodge Arts+", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2020], "c": ["evasion", "-", "Laksmi"] },
+  "521": { "a": ["Trick Step", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2035], "c": ["evasion", "-", "-"] },
+  "522": { "a": ["Immunity Buffer", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 50], "c": ["chance to nullify dmg", "from Phys", "-"] },
+  "525": { "a": ["Absorb Fire", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg absorbed", "from Fire", "Attis"] },
+  "526": { "a": ["Absorb Wind", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg absorbed", "from Wind", "Mahakala"] },
+  "527": { "a": ["Absorb Ice", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg absorbed", "from Ice", "Kresnik"] },
+  "528": { "a": ["Absorb Elec", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg absorbed", "from Elec", "Ishtar"] },
+  "529": { "a": ["Healing Hand", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1200], "c": ["to HP restore", "by Recovery skills", "-"] },
+  "530": { "a": ["Fire Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Fire", "Dzelarhons"] },
+  "531": { "a": ["Ice Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Ice", "Vivian"] },
+  "532": { "a": ["Elec Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Elec", "Sleipnir"] },
+  "533": { "a": ["Wind Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Wind", "Alraune"] },
+  "534": { "a": ["Fire Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Fire", "Mara, Orpheus Picaro"] },
+  "535": { "a": ["Ice Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Ice", "Mother Harlot"] },
+  "536": { "a": ["Elec Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Elec", "Odin, Izanagi Picaro"] },
+  "537": { "a": ["Wind Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Wind", "Vishnu"] },
+  "540": { "a": ["Idol Hands", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1250], "c": ["to HP restore", "by Recovery skills", "-"] },
+  "541": { "a": ["Ambush Arts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1130], "c": ["dmg dealt", "against foes with ailments", "-"] },
+  "542": { "a": ["Ambush Arts+", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1160], "c": ["dmg dealt", "against foes with ailments", "Mada"] },
+  "543": { "a": ["Ailment Arts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2015], "c": ["to ailment affliction rate", "-", "-"] },
+  "544": { "a": ["Ailment Arts+", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2030], "c": ["to ailment affliction rate", "-", "Belial"] },
+  "545": { "a": ["Circle Recovery", "pas", "-"], "b": [0, 0, 12, 0, 0, 0, 0, 0], "c": ["HP restore", "when a Circle skill is active", "Alilat"] },
+  "546": { "a": ["Judgment Card", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1185], "c": ["dmg dealt", "by elemental magic", "-"] },
+  "547": { "a": ["Inferno Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Fire", "-"] },
+  "548": { "a": ["Tornado Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Wind", "-"] },
+  "552": { "a": ["Queen's Pierce", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "when striking a foe weakness", "-"] },
+  "562": { "a": ["Serene Stroll", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 3001], "c": ["SP restore", "each step on map", "-"] },
+  "565": { "a": ["Double Link", "pas", "-"], "b": [0, 0, 58, 0, 0, 0, 0, 3001], "c": ["max Links possible", "after using a Link skill", "Yuki Jyorou"] },
+  "578": { "a": ["Resist Fire", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Fire", "-"] },
+  "579": { "a": ["Resist Ice", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Ice", "-"] },
+  "580": { "a": ["Resist Elec", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Elec", "-"] },
+  "581": { "a": ["Resist Wind", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Wind", "-"] },
+  "582": { "a": ["Resist Bless", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Bless", "-"] },
+  "583": { "a": ["Resist Curse", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Curse", "-"] },
+  "585": { "a": ["Resist Psy", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Psy", "-"] },
+  "586": { "a": ["Resist Nuke", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg received", "from Nuke", "-"] },
+  "588": { "a": ["Null Sleep", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Sleep", "-"] },
+  "589": { "a": ["Null Confusion", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Confusion", "-"] },
+  "590": { "a": ["Null Poison", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Poison", "-"] },
+  "591": { "a": ["Endure", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["survive with 1 HP once per battle", "after a fatal attack", "Slime"] },
+  "592": { "a": ["Null Hex", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Hex", "-"] },
+  "595": { "a": ["Masochist Lash", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["normal attack", "when a foe is inflicted with a bind", "-"] },
+  "597": { "a": ["Null M-Bind", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Magic Bind", "-"] },
+  "598": { "a": ["Null S-Bind", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Strength Bind", "-"] },
+  "599": { "a": ["Null A-Bind", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["prevents", "Agility Bind", "-"] },
+  "725": { "a": ["Return from Yomi", "pas", "-"], "b": [99, 0, 140, 0, 0, 0, 0, 50], "c": ["chance of HP restore", "when user's HP drops below 30%", "-"] },
+  "726": { "a": ["Triple Link", "pas", "-"], "b": [0, 0, 68, 0, 0, 0, 0, 3002], "c": ["max Links possible", "after using a Link skill", "Ose"] },
+  "727": { "a": ["Quadruple Link", "pas", "-"], "b": [0, 0, 78, 0, 0, 0, 0, 3003], "c": ["max Links possible", "after using a Link skill", "Baal"] },
+  "728": { "a": ["Infinite Link", "pas", "-"], "b": [0, 0, 88, 0, 0, 0, 0, 3007], "c": ["max Links possible", "after using a Link skill", "Messiah Picaro"] },
+  "739": { "a": ["Nuclear Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Nuke", "Kikuri-Hime"] },
+  "740": { "a": ["Psy Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Psy", "Virtue"] },
+  "741": { "a": ["Bless Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Bless", "Dominion"] },
+  "742": { "a": ["Curse Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["dmg dealt", "by Curse", "Pazuzu"] },
+  "743": { "a": ["Nuclear Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Nuke", "Mithras"] },
+  "744": { "a": ["Psy Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Psy", "Hathor"] },
+  "745": { "a": ["Bless Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Bless", "Daisoujou"] },
+  "746": { "a": ["Curse Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["dmg dealt", "by Curse", "Alice"] },
+  "747": { "a": ["Kunai Dance", "sup", "-"], "b": [99, 1004, 80, 0, 0, 95, 0, 0], "c": ["normal attack", "when user's row attacks for 3 turns", "-"] },
+  "749": { "a": ["Intercept Fire", "sup", "Ally row"], "b": [99, 1003, 0, 0, 0, 0, 0, 50], "c": ["chance to nullify dmg", "from Phys for 3 turns", "-"] },
+  "751": { "a": ["Called Shot", "sup", "-"], "b": [99, 1004, 0, 0, 0, 0, 0, 0], "c": ["normal attack", "when user's row is attacked for 3 turns", "-"] },
+  "753": { "a": ["Sonic Rush", "sup", "-"], "b": [99, 1003, 0, 0, 0, 0, 0, 100], "c": ["chance of attack skill activating twice", "for 3 turns", "-"] },
+  "760": { "a": ["Bound Arts", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2030], "c": ["to crit rate", "against foes with binds", "-"] },
+  "761": { "a": ["Bound Arts+", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2060], "c": ["to crit rate", "against foes with binds", "Atavaka"] },
+  "762": { "a": ["Mistress Lash", "pas", "-"], "b": [99, 0, 250, 0, 0, 100, 0, 0], "c": ["normal attack", "when a foe is inflicted with a bind", "-"] },
+  "764": { "a": ["Protecting Sword", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 40], "c": ["chance to halve dmg", "from Phys against user's row", "-"] },
+  "775": { "a": ["Fire Dance", "fir", "Foe row"], "b": [0, 0, 50, 0, 0, 110, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "776": { "a": ["Flame Dance", "fir", "Foe row"], "b": [0, 0, 125, 0, 0, 110, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "777": { "a": ["Inferno Dance", "fir", "Foe row"], "b": [0, 0, 215, 0, 0, 110, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "785": { "a": ["Wind Dance", "win", "Rand foes"], "b": [0, 0, 35, 2, 3, 110, 0, 0], "c": ["-", "-", "-"] },
+  "786": { "a": ["Gust Dance", "win", "Rand foes"], "b": [0, 0, 86, 2, 3, 110, 0, 0], "c": ["-", "-", "-"] },
+  "787": { "a": ["Hurricane Dance", "win", "Rand foes"], "b": [0, 0, 150, 2, 3, 110, 0, 0], "c": ["-", "-", "-"] },
+  "796": { "a": ["Ice Dance", "ice", "Foe col"], "b": [0, 0, 43, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "797": { "a": ["Frost Dance", "ice", "Foe col"], "b": [0, 0, 109, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "798": { "a": ["Frigid Dance", "ice", "Foe col"], "b": [0, 0, 188, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "807": { "a": ["Elec Dance", "ele", "Foe row"], "b": [0, 0, 35, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "808": { "a": ["Bolt Dance", "ele", "Foe row"], "b": [0, 0, 87, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "809": { "a": ["Storm Dance", "win", "Foe row"], "b": [0, 0, 150, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "833": { "a": ["Stona", "ail", "1 foe"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Petrification", "-"] },
+  "834": { "a": ["Stone Mist", "ail", "Foe row"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Petrification", "-"] },
+  "839": { "a": ["Perplex Flash", "ail", "1 foe"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Confusion", "-"] },
+  "843": { "a": ["Shibaboo", "ail", "1 foe"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Paralysis", "-"] },
+  "844": { "a": ["Binding Cry", "ail", "All foes"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Paralysis", "-"] },
+  "846": { "a": ["Silent Song", "ail", "All foes"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Magic Bind", "-"] },
+  "848": { "a": ["Muscle Down", "ail", "All foes"], "b": [0, 0, 0, 0, 0, 0, 0, 35], "c": ["-", "Strength Bind", "-"] },
+  "851": { "a": ["Self-Destruct", "alm", "Universal"], "b": [0, 0, 122, 0, 0, 80, 0, 0], "c": ["kills user", "-", "-"] },
+  "852": { "a": ["Bunny Slumber", "ail", "1 foe"], "b": [0, 0, 0, 0, 0, 0, 0, 70], "c": ["-", "Sleep", "-"] },
+  "853": { "a": ["Kouha", "ble", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Angel"] },
+  "854": { "a": ["Kouga", "ble", "1 foe"], "b": [0, 1014, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Oumitsunu"] },
+  "855": { "a": ["Kougaon", "ble", "1 foe"], "b": [0, 1032, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Trumpeter"] },
+  "859": { "a": ["Eiha", "cur", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Incubus"] },
+  "860": { "a": ["Eiga", "cur", "1 foe"], "b": [0, 1014, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Red Rider"] },
+  "861": { "a": ["Eigaon", "cur", "1 foe"], "b": [0, 1032, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Black Rider"] },
+  "865": { "a": ["Frei", "nuk", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Archangel"] },
+  "866": { "a": ["Freila", "nuk", "1 foe"], "b": [0, 1014, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Titania"] },
+  "867": { "a": ["Freidyne", "nuk", "1 foe"], "b": [0, 1032, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Baphomet"] },
+  "868": { "a": ["Atomic Flare", "nuk", "1 foe"], "b": [90, 1048, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "869": { "a": ["Mafrei", "nuk", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Moh Shuvuu"] },
+  "871": { "a": ["Psi", "psy", "1 foe"], "b": [0, 1006, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Neko Shogun"] },
+  "872": { "a": ["Psio", "psy", "1 foe"], "b": [0, 1014, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Narcissus"] },
+  "873": { "a": ["Psiodyne", "psy", "1 foe"], "b": [0, 1032, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Lorelei"] },
+  "874": { "a": ["Psycho Force", "psy", "1 foe"], "b": [90, 1048, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "875": { "a": ["Mapsi", "psy", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Oukuninushi"] },
+  "904": { "a": ["Hard Slash", "phy", "1 foe"], "b": [0, 0, 170, 0, 0, 90, 0, 0], "c": ["-", "-", "-"] },
+  "905": { "a": ["Charge Shot", "phy", "Foe col"], "b": [0, 0, 120, 0, 0, 90, 0, 0], "c": ["-", "-", "-"] },
+  "906": { "a": ["Stab Shower", "phy", "Rand foes"], "b": [0, 0, 45, 3, 3, 70, 0, 0], "c": ["-", "-", "-"] },
+  "911": { "a": ["Drain Touch", "phy", "1 foe"], "b": [0, 0, 190, 0, 0, 90, 0, 100], "c": ["dmg dealt restored to HP", "-", "-"] },
+  "914": { "a": ["Thorn Shackles", "phy", "1 foe"], "b": [0, 0, 98, 0, 0, 90, 0, 70], "c": ["-", "Agility Bind", "-"] },
+  "915": { "a": ["Thorn Cuffs", "phy", "1 foe"], "b": [0, 0, 150, 0, 0, 90, 0, 70], "c": ["-", "Strength Bind", "-"] },
+  "916": { "a": ["Thorn Chains", "phy", "1 foe"], "b": [0, 0, 190, 0, 0, 90, 0, 70], "c": ["-", "Magic Bind", "-"] },
+  "922": { "a": ["Megaton Press", "phy", "Foe row"], "b": [0, 0, 120, 0, 0, 90, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "925": { "a": ["Buchikamashi", "phy", "1 foe"], "b": [0, 0, 38, 0, 0, 200, 0, 0], "c": ["-", "-", "-"] },
+  "930": { "a": ["Crazed Slash", "phy", "All foes"], "b": [0, 0, 100, 4, 7, 70, 0, 0], "c": ["-", "-", "-"] },
+  "938": { "a": ["Dream Slice", "phy", "1 foe"], "b": [0, 0, 190, 0, 0, 90, 0, 70], "c": ["-", "Sleep", "-"] },
+  "939": { "a": ["Stunning Slice", "phy", "1 foe"], "b": [0, 0, 80, 0, 0, 90, 0, 70], "c": ["-", "Paralysis", "-"] },
+  "940": { "a": ["Bane Slice", "phy", "1 foe"], "b": [0, 0, 130, 0, 0, 90, 0, 70], "c": ["-", "Hex", "-"] },
+  "941": { "a": ["Mow Down", "phy", "Foe row"], "b": [0, 0, 120, 2, 3, 100, 0, 0], "c": ["-", "-", "-"] },
+  "946": { "a": ["Egg Bomb", "phy", "Foe row"], "b": [0, 0, 85, 0, 0, 90, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "947": { "a": ["Burst Arm", "phy", "Rand foes"], "b": [0, 0, 50, 4, 8, 50, 0, 0], "c": ["-", "-", "-"] },
+  "948": { "a": ["Supersonic Hero", "phy", "All foes"], "b": [0, 0, 200, 0, 0, 90, 0, 0], "c": ["-", "-", "-"] },
+  "949": { "a": ["Kamoshida Kick", "phy", "1 foe"], "b": [0, 0, 104, 0, 0, 120, 0, 1050], "c": ["dmg dealt", "by target for 3 turns", "-"] },
+  "950": { "a": ["Carrot Gun", "phy", "Foe row"], "b": [0, 0, 50, 0, 0, 90, 0, 1060], "c": ["-", "splash dmg", "-"] },
+  "951": { "a": ["Carrot Bomb", "fir", "1 foe"], "b": [0, 0, 85, 0, 0, 100, 0, 0], "c": ["-", "-", "-"] },
+  "954": { "a": ["Scepter Strike", "phy", "1 foe"], "b": [0, 0, 0, 0, 0, 100, 0, 50], "c": ["of remaining HP reduced", "-", "-"] },
+  "955": { "a": ["End Shot", "phy", "1 foe"], "b": [0, 0, 105, 0, 0, 90, 0, 0], "c": ["activates", "at end of turn", "-"] },
+  "956": { "a": ["Scarlet Laser", "phy", "All foes"], "b": [0, 0, 100, 4, 8, 90, 0, 0], "c": ["-", "-", "-"] },
+  "957": { "a": ["Barrage", "phy", "Rand foes"], "b": [0, 0, 100, 10, 10, 60, 0, 0], "c": ["-", "-", "-"] },
+  "958": { "a": ["Berserk Frenzy", "phy", "Rand foes"], "b": [0, 0, 110, 3, 6, 75, 0, 0], "c": ["-", "-", "-"] },
+  "959": { "a": ["Sabaton Slice", "phy", "1 foe"], "b": [0, 0, 200, 0, 0, 90, 0, 70], "c": ["-", "Agility Bind", "-"] },
+  "960": { "a": ["Crushing Strike", "phy", "1 foe"], "b": [0, 0, 200, 0, 0, 90, 0, 60], "c": ["-", "Strength + Magic + Agility Bind", "-"] },
+  "964": { "a": ["Leg Eraser", "phy", "1 foe"], "b": [0, 0, 145, 0, 0, 90, 0, 95], "c": ["-", "Agility Bind", "-"] },
+  "965": { "a": ["Power Eraser", "phy", "1 foe"], "b": [0, 0, 145, 0, 0, 90, 0, 95], "c": ["-", "Strength Bind", "-"] },
+  "966": { "a": ["Head Eraser", "phy", "1 foe"], "b": [0, 0, 145, 0, 0, 90, 0, 95], "c": ["-", "Magic Bind", "-"] },
+  "967": { "a": ["Weapon Breaker", "phy", "1 foe"], "b": [0, 0, 160, 0, 0, 90, 0, 1070], "c": ["dmg dealt", "by target for 3 turns", "-"] },
+  "968": { "a": ["Tail Whip", "phy", "Foe row"], "b": [0, 0, 110, 0, 0, 80, 0, 0], "c": ["-", "-", "-"] },
+  "998": { "a": ["Nasty Taunt", "sup", "1 ally"], "b": [0, 0, 0, 0, 0, 0, 0, 1110], "c": ["dmg dealt", "for 1 turn", "-"] },
+  "1038": { "a": ["Hypercharge", "sup", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1240], "c": ["dmg dealt", "by next phys attack within 3 turns", "-"] },
+  "1039": { "a": ["Absolute Power", "ail", "All foes"], "b": [0, 0, 0, 0, 0, 0, 0, 60], "c": ["-", "Strength + Magic + Agility Bind", "-"] },
+  "1041": { "a": ["Psych Up", "sup", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1240], "c": ["dmg dealt", "by next phys attack within 3 turns", "-"] },
+  "1043": { "a": ["Wild Rush", "phy", "Rand foes"], "b": [0, 0, 135, 4, 4, 100, 0, 0], "c": ["-", "-", "-"] },
+  "1044": { "a": ["Riot Run", "alm", "All foes"], "b": [0, 0, 0, 0, 0, 100, 0, 95], "c": ["of remaining HP reduced", "-", "-"] },
+  "1091": { "a": ["Oratorio", "rec", "All allies"], "b": [99, 1024, 100, 0, 0, 0, 0, 0], "c": ["HP Restore + Patra + Mutudi", "-", "-"] },
+  "1092": { "a": ["Brutal Arm", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 80], "c": ["chance of splash dmg", "for single-target skills", "-"] },
+  "1093": { "a": ["Ariadne Chain", "ail", "Foe row"], "b": [99, 1016, 0, 0, 0, 0, 0, 60], "c": ["-", "Strength + Magic + Agility Bind", "-"] },
+  "1094": { "a": ["Infernal Wings", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 60], "c": ["chance of attack skill activating twice", "-", "-"] },
+  "1095": { "a": ["Cross Slash", "phy", "Foe row"], "b": [99, 25, 150, 0, 0, 120, 0, 1200], "c": ["dmg dealt", "when Boosted, x0.5 splash dmg", "-"] },
+  "1097": { "a": ["Elec Turbo", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Elec", "-"] },
+  "1098": { "a": ["Ice Turbo", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Ice", "-"] },
+  "1099": { "a": ["Psy Turbo", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Psy", "-"] },
+  "1100": { "a": ["Nuke Turbo", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Nuke", "-"] },
+  "1101": { "a": ["Bless Turbo", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Bless", "-"] },
+  "1102": { "a": ["Curse Turbo", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "by Curse", "Magatsu-Izanagi"] },
+  "1104": { "a": ["Resonance", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2015], "c": ["dmg dealt", "by Link skill for each time activated", "-"] },
+  "1105": { "a": ["Telepathic Bond", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2025], "c": ["dmg dealt", "by Link skill for each time activated", "-"] },
+  "1106": { "a": ["Aspiring Heart", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2015], "c": ["dmg dealt", "by Link skill for each time activated", "-"] },
+  "1107": { "a": ["Great Unity Link", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2025], "c": ["dmg dealt", "by Link skill for each time activated", "-"] },
+  "1108": { "a": ["Ironfist Style", "sup", "-"], "b": [99, 1004, 0, 0, 0, 0, 0, 80], "c": ["chance of splash dmg", "for single-target skills for 3 turns", "-"] },
+  "1110": { "a": ["Effortless Style", "sup", "-"], "b": [99, 1002, 0, 0, 0, 0, 0, 100], "c": ["chance of splash dmg", "for single-target skills for 3 turns", "-"] },
+  "1113": { "a": ["Psy Drain", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg absorbed", "from Psy", "Shiva, Tsukiyomi"] },
+  "1114": { "a": ["Nuclear Drain", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg absorbed", "from Nuke", "Metatron, Tsukiyomi Picaro"] },
+  "1190": { "a": ["Piercing Rapier", "phy", "Foe col"], "b": [0, 0, 170, 0, 0, 0, 0, 0], "c": ["-", "-", "-"] },
+  "1193": { "a": ["Wind Fang", "win", "1 foe"], "b": [0, 0, 58, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1194": { "a": ["Swift Fang", "win", "Foe col"], "b": [0, 0, 58, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1195": { "a": ["Gale Fang", "win", "1 foe"], "b": [0, 0, 58, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1196": { "a": ["Tempest Fang", "win", "1 foe"], "b": [0, 0, 58, 4, 4, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1231": { "a": ["Flame Tempest", "fir", "Foe row"], "b": [0, 0, 230, 0, 0, 110, 0, 1060], "c": ["-", "splash dmg", "-"] },
+  "1232": { "a": ["Frost Tempest", "ice", "Rand foes"], "b": [0, 0, 220, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1233": { "a": ["Saint Tempest", "ble", "Rand foes"], "b": [0, 0, 200, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1234": { "a": ["Umbral Tempest", "cur", "Rand foes"], "b": [0, 0, 90, 3, 6, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1248": { "a": ["Rage", "sup", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["increase turn couunt", "-", "-"] },
+  "1249": { "a": ["Origin Strike", "phy", "Foe row"], "b": [0, 0, 800, 0, 0, 100, 0, 1050], "c": ["-", "splash dmg", "-"] },
+  "1251": { "a": ["Retake", "sup", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["rewind time", "-", "-"] },
+  "1252": { "a": ["Time Accelerate", "sup", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["fast-forward time", "-", "-"] },
+  "1379": { "a": ["Makouha", "ble", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Unicorn"] },
+  "1380": { "a": ["Makouga", "ble", "All foes"], "b": [0, 1036, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Sraosha"] },
+  "1381": { "a": ["Makougaon", "ble", "All foes"], "b": [0, 1052, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Vasuki"] },
+  "1389": { "a": ["Maeiha", "cur", "All foes"], "b": [0, 1018, 50, 0, 0, 110, 0, 0], "c": ["-", "-", "Legion"] },
+  "1390": { "a": ["Maeiga", "cur", "All foes"], "b": [0, 1036, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Anubis"] },
+  "1391": { "a": ["Maeigaon", "cur", "All foes"], "b": [0, 1052, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Astaroth"] },
+  "1400": { "a": ["Mafreila", "nuk", "All foes"], "b": [0, 1036, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Dantalian"] },
+  "1401": { "a": ["Mafreidyne", "nuk", "All foes"], "b": [0, 1052, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Ardha"] },
+  "1404": { "a": ["Cosmic Flare", "nuk", "All foes"], "b": [0, 1064, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1410": { "a": ["Mapsio", "psy", "All foes"], "b": [0, 1036, 135, 0, 0, 110, 0, 0], "c": ["-", "-", "Hariti"] },
+  "1411": { "a": ["Mapsiodyne", "psy", "All foes"], "b": [0, 1052, 235, 0, 0, 110, 0, 0], "c": ["-", "-", "Kudlak"] },
+  "1414": { "a": ["Psycho Blast", "psy", "All foes"], "b": [0, 1064, 300, 0, 0, 110, 0, 0], "c": ["-", "-", "-"] },
+  "1415": { "a": ["Black Spot", "phy", "1 foe"], "b": [0, 62, 220, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Hanuman"] },
+  "1416": { "a": ["Herculean Strike", "phy", "Rand foes"], "b": [0, 44, 58, 3, 6, 70, 0, 1200], "c": ["dmg dealt", "when Boosted", "-"] },
+  "1417": { "a": ["Agneyastra", "phy", "All foes"], "b": [0, 98, 180, 0, 0, 70, 0, 1125], "c": ["dmg dealt", "when Boosted", "Chi You"] },
+  "1419": { "a": ["Brave Blade", "phy", "Foe row"], "b": [0, 91, 275, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted, x0.5 splash dmg", "Ongyo-ki"] },
+  "1420": { "a": ["Oneshot Kill", "phy", "Foe col"], "b": [0, 92, 230, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "when Boosted", "Yoshitsune, M. Izanagi Picaro"] },
+  "1421": { "a": ["Calm Blade", "phy", "1 foe"], "b": [0, 36, 140, 0, 0, 90, 0, 80], "c": ["-", "Hex", "Ganesha"] },
+  "1423": { "a": ["Vengeful Smash", "phy", "-"], "b": [0, 46, 125, 0, 0, 0, 0, 1200], "c": ["dmg dealt", "when user takes dmg, activates at end of turn", "-"] },
+  "1425": { "a": ["Vengeful Melee", "phy", "-"], "b": [0, 67, 150, 0, 0, 0, 0, 1200], "c": ["dmg dealt", "when user takes dmg, activates at end of turn", "Abaddon"] },
+  "1429": { "a": ["Dream Needle", "phy", "1 foe"], "b": [99, 6, 35, 0, 0, 90, 0, 70], "c": ["-", "Sleep", "-"] },
+  "1430": { "a": ["Machismo Wall", "sup", "-"], "b": [99, 1002, 0, 0, 0, 0, 0, 1060], "c": ["dmg received when taking dmg in place of target", "for 3 turns", "-"] },
+  "1431": { "a": ["Cost Cutter", "sup", "-"], "b": [99, 1002, 0, 0, 0, 0, 0, 33], "c": ["reduction to skill costs", "for 3 turns", "-"] },
+  "1433": { "a": ["Called Homerun", "sup", "-"], "b": [99, 1004, 90, 0, 0, 90, 0, 0], "c": ["normal attack", "when user's row is attacked for 3 turns", "-"] },
+  "1435": { "a": ["Kunai Backup", "sup", "-"], "b": [99, 1004, 0, 0, 0, 0, 0, 0], "c": ["normal attack", "when user's row attacks for 3 turns", "-"] },
+  "1438": { "a": ["Deflector Shot", "sup", "Ally row"], "b": [99, 1003, 0, 0, 0, 0, 0, 25], "c": ["chance to nullify dmg", "from Phys for 3 turns", "-"] },
+  "1440": { "a": ["Sleuth Insight", "ail", "1 foe"], "b": [99, 1002, 0, 0, 0, 0, 0, 30], "c": ["-", "Strength + Magic + Agility Bind", "-"] },
+  "1441": { "a": ["Counter Stance", "sup", "-"], "b": [99, 1004, 0, 0, 0, 0, 0, 0], "c": ["normal attack", "when user's row is attacked for 3 turns", "-"] },
+  "1443": { "a": ["Machismo Barrier", "sup", "-"], "b": [99, 1002, 0, 0, 0, 0, 0, 1040], "c": ["dmg received when taking dmg in place of target", "for 3 turns", "-"] },
+  "1444": { "a": ["Rush Stance", "sup", "-"], "b": [99, 1003, 0, 0, 0, 0, 0, 80], "c": ["chance of attack skill activating twice", "for 2 turns", "-"] },
+  "1446": { "a": ["Counter Bash", "sup", "-"], "b": [99, 1004, 234, 0, 0, 90, 0, 0], "c": ["normal attack", "when user's row is attacked for 3 turns", "-"] },
+  "1449": { "a": ["Empress Pierce", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1200], "c": ["dmg dealt", "when striking a foe weakness", "-"] },
+  "1450": { "a": ["Unlimiter", "sup", "-"], "b": [99, 1003, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt + acts first", "for 3 turns", "-"] },
+  "1451": { "a": ["Full Throttle", "sup", "-"], "b": [99, 1003, 0, 0, 0, 0, 0, 1110], "c": ["dmg dealt + acts first", "for 3 turns", "-"] },
+  "1452": { "a": ["Lucky Punch", "phy", "1 foe"], "b": [90, 12, 35, 0, 0, 50, 100, 0], "c": ["-", "-", "-"] },
+  "1453": { "a": ["Miracle Punch", "phy", "1 foe"], "b": [90, 49, 140, 0, 0, 75, 100, 0], "c": ["-", "-", "-"] },
+  "1456": { "a": ["Counter Style", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 20], "c": ["chance of Death Counter", "at start of battle", "-"] },
+  "1457": { "a": ["Revenge Style", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 50], "c": ["chance of Death Counter", "at start of battle", "-"] },
+  "1458": { "a": ["Snacking Art", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2005], "c": ["HP restore", "each turn", "-"] },
+  "1459": { "a": ["Snack Expertise", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2015], "c": ["HP restore", "each turn", "-"] },
+  "1460": { "a": ["Detective's Ban", "ail", "Foe row"], "b": [99, 1002, 0, 0, 0, 0, 0, 50], "c": ["-", "Strength + Magic + Agility Bind", "-"] },
+  "1461": { "a": ["Kitty Step", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2020], "c": ["evasion", "-", "-"] },
+  "1462": { "a": ["Axe Guard", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 25], "c": ["chance to nullify dmg", "from Phys", "-"] },
+  "1463": { "a": ["Illusive Dance", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2020], "c": ["evasion", "-", "-"] },
+  "1464": { "a": ["Mirage Dance", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 2035], "c": ["evasion", "-", "-"] },
+  "1465": { "a": ["Immunity Bod", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 25], "c": ["chance to nullify dmg", "from Phys", "-"] },
+  "1467": { "a": ["Paradise Stroll", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 3003], "c": ["SP restore", "each step on map", "-"] },
+  "1469": { "a": ["Aegis Shielding", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 30], "c": ["chance to nullify dmg", "from elemental attack against user's row", "-"] },
+  "1470": { "a": ["Regenerate 1", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2005], "c": ["HP restore", "each turn", "Setanta"] },
+  "1471": { "a": ["Regenerate 2", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2010], "c": ["HP restore", "each turn", "Berserker"] },
+  "1472": { "a": ["Regenerate 3", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 2015], "c": ["HP restore", "each turn", "Satan"] },
+  "1473": { "a": ["Invigorate 1", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3003], "c": ["SP restore", "each turn", "Bugs"] },
+  "1474": { "a": ["Invigorate 2", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3005], "c": ["SP restore", "each turn", "Tzitzimitl"] },
+  "1475": { "a": ["Invigorate 3", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3007], "c": ["SP restore", "each turn", "Seraph"] },
+  "1476": { "a": ["Guillotine Slice", "phy", "1 foe"], "b": [0, 40, 160, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "against foes with ailments", "-"] },
+  "1477": { "a": ["Guillotine Blade", "phy", "1 foe"], "b": [0, 62, 220, 0, 0, 90, 0, 1200], "c": ["dmg dealt", "against foes with ailments", "-"] },
+  "1478": { "a": ["Punishing Bite", "phy", "1 foe"], "b": [0, 40, 160, 0, 0, 90, 0, 1170], "c": ["dmg dealt + Mutudi", "against foes with binds", "-"] },
+  "1479": { "a": ["Punishing End", "phy", "1 foe"], "b": [0, 62, 220, 0, 0, 90, 0, 1170], "c": ["dmg dealt + Mutudi", "against foes with binds", "-"] },
+  "1480": { "a": ["Saint's Touch", "phy", "1 foe"], "b": [0, 36, 140, 0, 0, 90, 0, 60], "c": ["-", "Magic Bind", "-"] },
+  "1481": { "a": ["Arm Crusher", "phy", "1 foe"], "b": [0, 36, 140, 0, 0, 90, 0, 60], "c": ["-", "Strength Bind", "-"] },
+  "1482": { "a": ["Axe Bulwark", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 45], "c": ["chance to nullify dmg", "from Phys", "-"] },
+  "1483": { "a": ["Cost Reduction", "sup", "-"], "b": [99, 1002, 0, 0, 0, 0, 0, 50], "c": ["reduction to skill costs", "for 3 turns", "-"] },
+  "1485": { "a": ["Invincible Bod", "pas", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 45], "c": ["chance to nullify dmg", "from Phys", "-"] },
+  "1486": { "a": ["Power Knack", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3002], "c": ["-", "Strength", "-"] },
+  "1487": { "a": ["Power Talent", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3003], "c": ["-", "Strength", "-"] },
+  "1488": { "a": ["Power Genius", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3004], "c": ["-", "Strength", "-"] },
+  "1489": { "a": ["Magic Knack", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3002], "c": ["-", "Magic", "-"] },
+  "1490": { "a": ["Magic Talent", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3003], "c": ["-", "Magic", "-"] },
+  "1491": { "a": ["Magic Genius", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3004], "c": ["-", "Magic", "-"] },
+  "1492": { "a": ["Endure Knack", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3002], "c": ["-", "Endurance", "-"] },
+  "1493": { "a": ["Endure Talent", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3003], "c": ["-", "Endurance", "-"] },
+  "1494": { "a": ["Endure Genius", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3004], "c": ["-", "Endurance", "Thanatos"] },
+  "1495": { "a": ["Agility Knack", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3002], "c": ["-", "Agility", "-"] },
+  "1496": { "a": ["Agility Talent", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3003], "c": ["-", "Agility", "-"] },
+  "1497": { "a": ["Agility Genius", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3004], "c": ["-", "Agility", "-"] },
+  "1498": { "a": ["Luck Knack", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3002], "c": ["-", "Luck", "-"] },
+  "1499": { "a": ["Luck Talent", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3003], "c": ["-", "Luck", "-"] },
+  "1500": { "a": ["Luck Genius", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 3004], "c": ["-", "Luck", "-"] }
 }

@@ -8,6 +8,7 @@ import { FusionDataService } from './fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from './pq-compendium.module';
 import { CompendiumConfig } from './models';
+import { importSkillRow } from './models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -17,8 +18,6 @@ import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import PARTY_DATA_JSON from './data/party-data.json';
-import PARTY_SKILLS_JSON from './data/party-skills.json';
-import BOSS_SKILLS_JSON from './data/boss-skills.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
@@ -27,6 +26,7 @@ function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
+  const skillData = {};
   const inheritTypes: { [elem: string]: number } = {};
 
   for (const race of COMP_CONFIG_JSON.races) {
@@ -43,23 +43,8 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[demon] = entry;
   }
 
-  for (const [skill, entry] of Object.entries(PARTY_SKILLS_JSON)) {
-    entry['unique'] = true;
-    SKILL_DATA_JSON[skill] = entry;
-  }
-
-  for (const [skill, entry] of Object.entries(BOSS_SKILLS_JSON)) {
-    SKILL_DATA_JSON[skill] = entry;
-  }
-
-  const COST_HP = 1 << 10;
-  const COST_MP = 3 << 10;
-  const COST_CC = 15 << 10;
-
-  for (const entry of Object.values(SKILL_DATA_JSON)) {
-    const cost = entry['cost'];
-    const costType = cost > 1000 ? (cost > 2000 ? COST_CC - 2000 : COST_MP - 1000) : COST_HP - 200;
-    entry['cost'] = cost ? cost + costType : 0;
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    skillData[row.a[0]] = importSkillRow(row);
   }
 
   for (const [code, name] of Object.entries(DEMON_CODES_JSON)) {
@@ -67,7 +52,7 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const [code, name] of Object.entries(SKILL_CODES_JSON)) {
-    SKILL_DATA_JSON[name]['code'] = parseInt(code, 10);
+    skillData[name]['code'] = parseInt(code, 10);
   }
 
   for (const demon of Object.values(DEMON_DATA_JSON)) {
@@ -95,7 +80,7 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['pq2'],
 
-    skillData: SKILL_DATA_JSON,
+    skillData,
     skillElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),

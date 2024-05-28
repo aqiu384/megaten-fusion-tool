@@ -8,6 +8,7 @@ import { FusionDataService } from '../pq2/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from '../pq2/pq-compendium.module';
 import { CompendiumConfig } from '../pq2/models';
+import { importSkillRow } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -20,17 +21,6 @@ import PARTY_DATA_JSON from './data/party-data.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
-
-function skillRowToString(row: (string | number)[]): string {
-  const [power, minHits, maxHits, accuracy, mod, effect, cond] = row.slice(5);
-  const baseMod = parseInt(mod.toString());
-  const powerStr = power === 0 ? '' : `${power} pwr`;
-  const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits === 0 ? '' : `${maxHits} hits`;
-  const modStr = baseMod === 0 ? '' : baseMod < 1000 ? `${mod}%` : baseMod < 2000 ? `x${(baseMod - 1000) / 100}` : baseMod < 3000 ? `+${baseMod - 2000}%` : `+${baseMod - 3000}`;
-  const effectStr = `${modStr} ${effect === '-' ? '' : effect} ${cond === '-' ? '' : cond}`.trim();
-  const fullStr = [powerStr, hitStr, effectStr].filter(s => s !== '').join(', ');
-  return fullStr.substring(0, 1) === 'x' ? fullStr : fullStr.substring(0, 1).toUpperCase() + fullStr.substring(1);
-}
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -57,23 +47,8 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[name]['code'] = parseInt(code, 10);
   }
 
-  const COST_HP = 1 << 10;
-  const COST_MP = (3 << 10) - 1000;
-  const COST_CC = (15 << 10) - 2000;
-
   for (const row of Object.values(SKILL_DATA_JSON)) {
-    const [sname, elem, target, rank, baseCost, power, minHits, maxHits, accuracy, mod, effect, cond, card] = row;
-    const cost = parseInt(baseCost.toString())
-    skillData[sname] = {
-      elem,
-      target: target === '-' ? 'Self' : target,
-      cost: cost ? cost + (cost > 1000 ? (cost > 2000 ? COST_CC : COST_MP) : COST_HP) : 0,
-      effect: skillRowToString(row),
-    }
-
-    if (card !== '-') {
-      skillData[sname]['card'] = card
-    }
+    skillData[row.a[0]] = importSkillRow(row);
   }
 
   for (const [code, name] of Object.entries(SKILL_CODES_JSON)) {
