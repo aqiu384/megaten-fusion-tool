@@ -1,13 +1,15 @@
 import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { FusionSettings } from '../models/fusion-settings';
+import { translateComp } from '../pipes';
+import Translations from  '../data/translations.json';
 
 @Component({
   selector: 'app-fusion-settings',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-container>
-      <h2>{{ dlcTitle }}</h2>
+      <h2>{{ msgs.DlcTitle | translateComp:lang }}</h2>
       <table class="entry-table">
         <thead>
           <tr><th class="title">Unlock Conditions</th></tr>
@@ -32,14 +34,14 @@ import { FusionSettings } from '../models/fusion-settings';
 })
 export class FusionSettingsComponent {
   @Input() dlcDemons: { name: string, included: boolean }[];
-  @Input() dlcTitle = 'Included DLC Demons';
-  @Input() langEn = true;
+  @Input() lang = 'en';
   @Input() fusionSettings: FusionSettings;
   @Output() toggledName = new EventEmitter<string>();
+  msgs = Translations.FusionSettingsComponent;
 
   constructor(private title: Title) { }
 
   @Input() set appTitle(appTitle: string) {
-    this.title.setTitle((this.langEn ? 'Fusion Settings - ' : '合体設定 ') + appTitle);
+    this.title.setTitle(translateComp(this.msgs.AppTitle, this.lang) + appTitle);
   }
 }

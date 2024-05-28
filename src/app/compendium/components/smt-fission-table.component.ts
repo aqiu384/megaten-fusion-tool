@@ -4,28 +4,28 @@ import { Subscription } from 'rxjs';
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, FusionEntry, NamePair, FusionPair } from '../models';
 import { toFusionEntry, toFusionPair } from '../models/conversions';
-
 import { CurrentDemonService } from '../current-demon.service';
+import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-smt-fission-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table *ngIf="fusionPrereq" class="list-table">
-      <thead><tr><th class="title">{{ langEn ? 'Special Fusion Condition' : '合体条件' }}</th></tr></thead>
+      <thead><tr><th class="title">{{ msgs.SpecialFusionCondition | translateComp:lang }}</th></tr></thead>
       <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
     </table>
     <app-fusion-entry-table *ngIf="fusionEntries.length"
-      [langEn]="langEn"
-      [title]="(langEn ? 'Special Fusion Ingredients for ' : '特殊合体 ') + currentDemon"
+      [lang]="lang"
+      [title]="(msgs.SpecialFusionIngredients | translateComp:lang) + currentDemon"
       [rowData]="fusionEntries"
       [isFusion]="true">
     </app-fusion-entry-table>
     <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionEntries.length"
-      [langEn]="langEn"
-      [title]="(langEn ? 'Ingredient 1 x Ingredient 2 = ' : '悪魔1 x 悪魔2 = ') + currentDemon"
-      [leftHeader]="langEn ? 'Ingredient 1' : '悪魔1'"
-      [rightHeader]="langEn ? 'Ingredient 2' : '悪魔2'"
+      [lang]="lang"
+      [title]="(msgs.Title | translateComp:lang) + currentDemon"
+      [leftHeader]="msgs.LeftHeader | translateComp:lang"
+      [rightHeader]="msgs.RightHeader | translateComp:lang"
       [rowData]="fusionPairs">
     </app-fusion-pair-table>
   `
@@ -36,9 +36,10 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
   fusionChart: FusionChart;
   currentDemon: string;
   fusionPrereq = '';
-  langEn = true;
+  lang = 'en';
   fusionEntries: FusionEntry[] = [];
   fusionPairs: FusionPair[] = [];
+  msgs = Translations.SmtFissionTableComponent;
 
   subscriptions: Subscription[] = [];
   toFusionEntry = (currentDemon: string) => (name: string) => toFusionEntry(name, this.compendium);
@@ -82,7 +83,7 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
     if (this.compendium && this.fusionChart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
 
-      this.langEn = this.currentDemon.charCodeAt(0) < 256;
+      this.lang = this.currentDemon.charCodeAt(0) < 256 ? 'en' : 'ja';
       this.fusionPrereq = this.compendium
         .getDemon(this.currentDemon).prereq;
       this.fusionEntries = this.compendium

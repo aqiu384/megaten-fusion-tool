@@ -39,7 +39,7 @@ function createCompConfig(): CompendiumConfig {
   const skillData = {};
   const inheritTypes: { [elem: string]: number } = {};
 
-  for (const race of COMP_CONFIG_JSON.races) {
+  for(const race of COMP_CONFIG_JSON.races) {
     races.push(race);
     races.push(race + ' P');
   }
@@ -62,13 +62,17 @@ function createCompConfig(): CompendiumConfig {
   const COST_CC = (15 << 10) - 2000;
 
   for (const row of Object.values(SKILL_DATA_JSON)) {
-    const [sname, elem, target, rank, baseCost, power, minHits, maxHits, accuracy, mod, effect, cond] = row;
+    const [sname, elem, target, rank, baseCost, power, minHits, maxHits, accuracy, mod, effect, cond, card] = row;
     const cost = parseInt(baseCost.toString())
     skillData[sname] = {
       elem,
       target: target === '-' ? 'Self' : target,
       cost: cost ? cost + (cost > 1000 ? (cost > 2000 ? COST_CC : COST_MP) : COST_HP) : 0,
-      effect: skillRowToString(row)
+      effect: skillRowToString(row),
+    }
+
+    if (card !== '-') {
+      skillData[sname]['card'] = card
     }
   }
 
@@ -126,9 +130,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq-fusion-tool-settings',
-    settingsVersion: 2405151000,
-
-    defaultDemon: 'Pixie'
+    settingsVersion: 2405151000
   };
 }
 

@@ -1,24 +1,21 @@
 import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
 
 import { Demon, Skill, FusionRecipe, Compendium, SquareChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { createSkillsRecipe } from '../models/recipe-generator';
-import PAGE_TRANSLATION_JSON from '../../page-translations/data/translations.json';
-import ELEM_TRANSLATION_JSON from '../../page-translations/data/elem-translations.json';
-import { PageTranslationUtil } from 'src/app/page-translations/page-translation-util';
+import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-recipe-generator',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form [formGroup]="form">
-      <h2>{{ translation['recipe-generator'][lang] || translation['recipe-generator']['en'] }}</h2>
+      <h2>{{ msgs.RecipeGenerator | translateComp:lang }}</h2>
       <table class="entry-table">
-        <tr><th colspan="2" class="title">{{ translation['target'][lang] || translation['target']['en'] }}</th></tr>
+        <tr><th colspan="2" class="title">{{ msgs.Target | translateComp:lang }}</th></tr>
         <tr>
-          <th style="width: 40%;">{{ translation['race'][lang] || translation['race']['en'] }}</th>
-          <th style="width: 60%;">{{ translation['name'][lang] || translation['name']['en'] }}</th>
+          <th style="width: 40%;">{{ msgs.Race | translateComp:lang }}</th>
+          <th style="width: 60%;">{{ msgs.Name | translateComp:lang }}</th>
         </tr>
         <tr>
           <td>
@@ -34,18 +31,18 @@ import { PageTranslationUtil } from 'src/app/page-translations/page-translation-
         </tr>
       </table>
       <table formArrayName="ingreds" class="entry-table">
-        <tr><th colspan="5" class="title">{{ translation['include-ingredients'][lang] || translation['include-ingredients']['en'] }}</th></tr>
+        <tr><th colspan="5" class="title">{{ msgs.IncludeIngredients | translateComp:lang }}</th></tr>
         <tr>
-          <th style="width: 20%">{{ translation['filter-by'][lang] || translation['filter-by']['en'] }}</th>
-          <th style="width: 10%">{{ translation['elem'][lang] || translation['elem']['en'] }}</th>
-          <th style="width: 25%">{{ translation['skill'][lang] || translation['skill']['en'] }}</th>
-          <th style="width: 20%">{{ translation['race'][lang] || translation['race']['en'] }}</th>
-          <th style="width: 25%">{{ translation['ingredient'][lang] || translation['ingredient']['en'] }}</th>
+          <th style="width: 20%">{{ msgs.FilterBy | translateComp:lang }}</th>
+          <th style="width: 10%">{{ msgs.Elem | translateComp:lang }}</th>
+          <th style="width: 25%">{{ msgs.Skill | translateComp:lang }}</th>
+          <th style="width: 20%">{{ msgs.Race | translateComp:lang }}</th>
+          <th style="width: 25%">{{ msgs.Ingredient | translateComp:lang }}</th>
         </tr>
         <ng-container *ngFor="let ingred of form.controls.ingreds['controls']; let i = index" [formGroupName]="i">
           <tr *ngIf="i < maxSkills">
             <td>
-              <label>{{ lang == 'ja' ? 'スキル検索' : (translation['learns-skill'][lang] || translation['learns-skill']['en']) + (i + 1) }}
+              <label>{{ msgs.LearnsSkill | translateComp:lang }}{{ i + 1 }}
                 <input formControlName="searchSkill" type="checkbox"
                 (change)="setIngredDemon(ingred)">
               </label>
@@ -55,7 +52,7 @@ import { PageTranslationUtil } from 'src/app/page-translations/page-translation-
                 [attr.disabled]="!ingred.controls.searchSkill.value || null"
                 (change)="setIngredElem(ingred)">
                 <option value="-">-</option>
-                <option *ngFor="let elem of elems" [value]="elem">{{ (elemTranslation[elem] && elemTranslation[elem][lang]) || elem }}</option>
+                <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
               </select>
             </td>
             <td>
@@ -85,23 +82,23 @@ import { PageTranslationUtil } from 'src/app/page-translations/page-translation-
         </ng-container>
       </table>
       <table *ngIf="recipe" class="entry-table">
-        <tr><th colspan="2" class="title">{{ translation['fusion-recipe'][lang] || translation['fusion-recipe']['en'] }}</th></tr>
+        <tr><th colspan="2" class="title">{{ msgs.FusionRecipe | translateComp:lang }}</th></tr>
         <tr>
-          <th>{{ translation['left-chain'][lang] || translation['left-chain']['en'] }}</th>
-          <th>{{ translation['right-chain'][lang] || translation['right-chain']['en'] }}</th>
+          <th>{{ msgs.LeftChain | translateComp:lang }}</th>
+          <th>{{ msgs.RightChain | translateComp:lang }}</th>
         </tr>
         <tr>
           <td style="width: 50%" *ngIf="recipeLeft.length"><ul><li *ngFor="let step of recipeLeft">{{ step }}</li></ul></td>
-          <td style="width: 50%" *ngIf="!recipeLeft.length" style="padding: 1em; text-align: center;">{{ langEn ? 'No chains found' : '合体なし' }}</td>
+          <td style="width: 50%" *ngIf="!recipeLeft.length" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
           <td style="width: 50%" *ngIf="recipeRight.length"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
-          <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">{{ langEn ? 'No chains found' : '合体なし' }}</td>
+          <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
         </tr>
         <tr><td colspan="2" style="padding: 1em; text-align: center;">
           <ng-container *ngIf="recipe.stepR.length">
             {{ recipeResult.join(' x ') }} = {{ recipe.result }}<br>
             [{{ resultSkills.join(', ') }}]
           </ng-container>
-          <ng-container *ngIf="!recipe.stepR.length">{{ translation['no-recipes'][lang] || translation['no-recipes']['en'] }}</ng-container>
+          <ng-container *ngIf="!recipe.stepR.length">{{ msgs.NoRecipesFound | translateComp:lang }}</ng-container>
         </td></tr>
       </table>
     </form>
@@ -116,7 +113,6 @@ export class RecipeGeneratorComponent implements OnChanges {
   @Input() compendium: Compendium;
   @Input() squareChart: SquareChart;
   @Input() recipeConfig: RecipeGeneratorConfig;
-  @Input() langEn = true;
   @Input() lang = 'en';
 
   internalMaxSkills = 9;
@@ -132,8 +128,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   recipeRight: string[];
   recipeResult: string[];
   resultSkills: string[];
-  translation = PAGE_TRANSLATION_JSON;
-  elemTranslation = ELEM_TRANSLATION_JSON;
+  msgs = Translations.RecipeGeneratorComponent;
 
   blankDemon: Demon = {
     name: '-', race: '-', lvl: 0, currLvl: 0, price: 0, inherits: 0,
@@ -146,10 +141,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     effect: '', target: '', level: 0, learnedBy: [{ demon: '-', level: 0 }]
   };
 
-  constructor(private fb: FormBuilder, private router: Router) {
-    this.lang = PageTranslationUtil.getLanguage(router.url);
-    this.createForm();
-  }
+  constructor(private fb: FormBuilder) { this.createForm(); }
 
   ngOnChanges() { this.initDropdowns(); }
 

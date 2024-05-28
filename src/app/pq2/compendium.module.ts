@@ -120,9 +120,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'pq2-fusion-tool-settings',
-    settingsVersion: 2405151000,
-
-    defaultDemon: 'Pixie'
+    settingsVersion: 2405151000
   };
 }
 

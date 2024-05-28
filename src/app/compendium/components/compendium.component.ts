@@ -4,8 +4,8 @@ import { Subscription } from 'rxjs';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { PositionStickyDirective } from '../../shared/position-sticky.directive';
+import Translations from '../data/translations.json';
 
-import PAGE_TRANSLATION_JSON from '../../page-translations/data/translations.json';
 @Component({
   selector: 'app-demon-compendium-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -19,17 +19,17 @@ import PAGE_TRANSLATION_JSON from '../../page-translations/data/translations.jso
             [routerLinkActiveOptions]="{ exact: true }"
             [style.width.%]="1 / hlength">
             <a [routerLink]="mainList + 's'">
-              {{ (this.translations[mainList][lang] || this.translations[mainList]['en']) + (this.translations['list'][lang] || this.translations['list']['en']) }}
+              {{ (mainList === 'demon' ? msgs.DemonList : msgs.PersonaList) | translateComp:lang }}
             </a>
           </th>
           <th class="nav" routerLink="skills" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="skills">
-              {{ this.translations["skills"][lang] || this.translations["skills"]['en'] }}
+              {{ msgs.SkillList | translateComp:lang }}
             </a>
           </th>
           <th class="nav" routerLink="chart" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="chart">
-              {{ this.translations["fusion-chart"][lang] || this.translations["fusion-chart"]['en'] }}
+              {{ msgs.FusionChart | translateComp:lang }}
             </a>
           </th>
           <th *ngFor="let l of otherLinks" class="nav" routerLinkActive="active"
@@ -42,12 +42,12 @@ import PAGE_TRANSLATION_JSON from '../../page-translations/data/translations.jso
           </th>
           <th *ngIf="hasSettings" class="nav" routerLink="settings" routerLinkActive="active" [style.width.%]="1 / hlength">
             <a routerLink="settings">
-              {{ this.translations["fusion-settings"][lang] || this.translations["fusion-settings"]['en'] }}
+              {{ msgs.FusionSettings | translateComp:lang }}
             </a>
           </th>
         </tr>
         <tr>
-          <th [attr.colspan]="hlength" class="title">{{ appName + (this.translations["fusion-calculator"][lang] || this.translations["fusion-calculator"]['en']) }}</th>
+          <th [attr.colspan]="hlength" class="title">{{ appName }}{{ msgs.FusionCalculator | translateComp:lang }}</th>
         </tr>
       </thead>
     </table>
@@ -57,13 +57,10 @@ export class CompendiumHeaderComponent {
   @Input() appName = 'Shin Megami Tensei';
   @Input() mainList = 'demon';
   @Input() hasSettings = true;
-  @Input() langEn = true;
   @Input() lang = 'en';
   @Input() otherLinks: { title: string; link: string }[] = [];
-
-  translations = PAGE_TRANSLATION_JSON;
+  msgs = Translations.CompendiumComponent;
 }
-
 
 @Component({
   selector: 'app-demon-compendium',
@@ -76,7 +73,6 @@ export class CompendiumHeaderComponent {
           [appName]="appName"
           [mainList]="mainList"
           [hasSettings]="hasSettings"
-          [langEn]="langEn"
           [lang]="lang"
           [otherLinks]="otherLinks">
         </app-demon-compendium-header>
@@ -86,7 +82,6 @@ export class CompendiumHeaderComponent {
           [appName]="appName"
           [mainList]="mainList"
           [hasSettings]="hasSettings"
-          [langEn]="langEn"
           [lang]="lang"
           [otherLinks]="otherLinks">
         </app-demon-compendium-header>
@@ -98,7 +93,6 @@ export class CompendiumHeaderComponent {
 export class CompendiumComponent implements OnInit, OnDestroy {
   appName: string;
   isChart: boolean;
-  langEn: boolean;
   lang: string;
   subscriptions: Subscription[] = [];
 
@@ -114,7 +108,6 @@ export class CompendiumComponent implements OnInit, OnDestroy {
       this.route.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
         this.isChart = data.fusionTool === 'chart';
-        this.langEn = !data.lang || data.lang == 'en';
         this.lang = data.lang;
       }));
 

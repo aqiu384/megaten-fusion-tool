@@ -5,6 +5,8 @@ import { Subscription } from 'rxjs';
 import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
+import { translateComp } from '../../compendium/pipes';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-recipe-generator-container',
@@ -15,7 +17,7 @@ import { FusionDataService } from '../fusion-data.service';
       [compendium]="compendium"
       [squareChart]="squareChart"
       [recipeConfig]="recipeConfig"
-      [langEn]="langEn">
+      [lang]="lang">
     </app-recipe-generator>
   `
 })
@@ -26,13 +28,13 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   appName: string;
   subscriptions: Subscription[] = [];
   maxSkills = 8;
-  langEn = true;
+  lang = 'en';
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
     const isSh2 = compConfig.appCssClasses.includes('sh2');
-    this.langEn = compConfig.lang === 'en';
-    this.appName = (this.langEn ? 'Recipe Generator - ' : '合体レシピ ') + fusionDataService.appName;
+    this.lang = compConfig.lang;
+    this.appName = translateComp(Translations.RecipeGeneratorComponent.AppTitle, this.lang) + fusionDataService.appName;
     this.maxSkills = isSh2 ? 6 : 8;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,

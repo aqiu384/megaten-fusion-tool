@@ -9,7 +9,6 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <app-fusion-settings
       [appTitle]="appTitle"
-      [dlcTitle]="'Fusion Settings'"
       [fusionSettings]="fusionSettings"
       (toggledName)="toggleName($event)">
     </app-fusion-settings>

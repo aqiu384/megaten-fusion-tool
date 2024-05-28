@@ -8,6 +8,8 @@ import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CAL
 import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
 import { CompendiumConfig } from './models';
 import { FusionSettings } from '../compendium/models/fusion-settings';
+import { translateComp } from '../compendium/pipes';
+import Translations from  '../compendium/data/translations.json';
 
 @Injectable()
 export class FusionDataService extends ConfigurableFusionDataService<Compendium, FusionChart> {
@@ -29,6 +31,6 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
     );
     
     this.compConfig = compConfig;
-    this.appName =  this.compConfig.appTitle + (this.compConfig.lang === 'en' ? ' Fusion Calculator' : ' 合体アプリ');
+    this.appName =  this.compConfig.appTitle + translateComp(Translations.CompendiumComponent.FusionCalculator, compConfig.lang);
   }
 }

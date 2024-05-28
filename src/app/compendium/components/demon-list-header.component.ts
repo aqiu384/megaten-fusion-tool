@@ -1,21 +1,22 @@
 import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
 import { SortedTableHeaderComponent } from '../../shared/sorted-table.component';
+import Translations from '../data/translations.json';
 
 @Component({
   selector: 'tfoot.app-demon-list-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ langEn ? (isPersona ? 'Persona' : 'Demon') : '悪魔' }}</th>
-      <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">{{ langEn ? 'Stats' : 'ステータス' }}</th>
-      <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">{{ langEn ? 'Resistances' : '耐性' }}</th>
-      <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">{{ langEn ? 'Affinities' : 'スキル適正' }}</th>
+      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ (isPersona ? msgs.Persona : msgs.Demon) | translateComp:lang }}</th>
+      <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">{{ msgs.Stats | translateComp:lang }}</th>
+      <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">{{ msgs.Resistances | translateComp:lang }}</th>
+      <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">{{ msgs.Affinities | translateComp:lang }}</th>
       <th *ngIf="isEnemy" colspan="2">Enemy</th>
     </tr>
     <tr>
-      <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)"><span>{{ langEn ? 'Race' : '種族' }}</span></th>
+      <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)"><span>{{ msgs.Race | translateComp:lang }}</span></th>
       <th class="sortable" [ngClass]="sortDirClass(2)" (click)="nextSortFunIndex(2)"><span>Lvl</span></th>
-      <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)"><span>{{ langEn ? 'Name' : '悪魔名' }}</span></th>
+      <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)"><span>{{ msgs.Name | translateComp:lang }}</span></th>
       <th *ngIf="hasInherits" class="sortable" [ngClass]="sortDirClass(4)" (click)="nextSortFunIndex(4)">Inherits</th>
       <th *ngFor="let pair of statColIndices" class="sortable" (click)="nextSortFunIndex(pair.index)">
         {{ pair.stat }}
@@ -43,7 +44,7 @@ export class DemonListHeaderComponent extends SortedTableHeaderComponent impleme
   @Input() isEnemy = false;
   @Input() isPersona = false;
   @Input() hasInherits = false;
-  @Input() langEn = true;
+  @Input() lang = 'en';
   @Input() statHeaders: string[] = [];
   @Input() resistHeaders: string[] = [];
   @Input() affinityHeaders: string[] = [];
@@ -51,6 +52,7 @@ export class DemonListHeaderComponent extends SortedTableHeaderComponent impleme
   resistColIndices: { elem: string, index: number }[] = [];
   reslvlColIndices: { elem: string, index: number }[] = [];
   affinityColIndices: { elem: string, index: number }[] = [];
+  msgs = Translations.DemonListComponent;
 
   ngOnInit() {
     this.nextColIndices();

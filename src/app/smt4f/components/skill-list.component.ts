@@ -4,13 +4,15 @@ import { Title } from '@angular/platform-browser';
 import { SkillListContainerComponent as SLCC } from '../../compendium/containers/skill-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
+import { translateComp } from '../../compendium/pipes';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-skill-list-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-skill-list
-      [langEn]="langEn"
+      [lang]="compConfig.lang"
       [elemOrder]="compConfig.elemOrder"
       [hasTarget]="true"
       [rowData]="skills | async">
@@ -19,7 +21,6 @@ import { CompendiumConfig } from '../models';
 })
 export class SkillListContainerComponent extends SLCC {
   compConfig: CompendiumConfig;
-  langEn = true;
 
   constructor(
     title: Title,
@@ -30,8 +31,7 @@ export class SkillListContainerComponent extends SLCC {
     this.appName = `List of Skills - ${fusionDataService.appName}`;
 
     this.compConfig = fusionDataService.compConfig;
-    this.langEn = this.compConfig.lang === 'en';
-    this.appName = (this.langEn ? 'List of Skills - ' : ' スキル一覧 ') + fusionDataService.appName;
+    this.appName = translateComp(Translations.SkillListComponent.AppTitle, this.compConfig.lang) + fusionDataService.appName;
 
     this.compConfig = fusionDataService.compConfig;
     this.defaultSortFun = (a, b) => (

@@ -4,13 +4,15 @@ import { Title } from '@angular/platform-browser';
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
+import { translateComp } from '../../compendium/pipes';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-demon-list-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
-      [langEn]="langEn"
+      [lang]="compConfig.lang"
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="compConfig.baseStats"
       [resistHeaders]="compConfig.resistElems"
@@ -21,7 +23,6 @@ import { CompendiumConfig } from '../models';
 })
 export class DemonListContainerComponent extends DLCC {
   compConfig: CompendiumConfig;
-  langEn = true;
 
   constructor(
     title: Title,
@@ -31,8 +32,7 @@ export class DemonListContainerComponent extends DLCC {
     super(title, changeDetectorRef, fusionDataService);
 
     this.compConfig = fusionDataService.compConfig;
-    this.langEn = this.compConfig.lang === 'en';
-    this.appName = (this.langEn ? 'List of Demons - ' : '悪魔一覧 ') + fusionDataService.appName;
+    this.appName = translateComp(Translations.DemonListComponent.AppTitle, this.compConfig.lang) + fusionDataService.appName;
 
     this.defaultSortFun = (d1, d2) => (
       this.compConfig.raceOrder[d1.race] -

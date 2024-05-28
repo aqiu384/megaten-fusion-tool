@@ -1,0 +1,116 @@
+{
+  "Languages": {
+    "Languages": ["en", "ja", "zh-cn"]
+  },
+  "AppComponent": {
+    "AppTitle": ["Megami Tensei Fusion Tools", "女神転生合体アプリ", "女神转生合体计算工具"],
+    "Home": ["Game List (EN)", "ゲーム一覧 (日本語)", "游戏一览 (简体中文)"],
+    "HomeLink": ["home", "ja/home", "zh-cn/home"],
+    "SaveOffline": ["Save Offline", "オフラインセーブ", "保存到本地"],
+    "Help": ["Help", "ヘルプ", "帮助"],
+    "ReportIssue": ["Report Issue", "バグレポート", "问题反馈"],
+    "NowLoading": ["Loading fusion tool... Reopen in a private session if tool does not load.", "Now Loading...", "加载中...若加载卡住请尝试以隐身模式打开此网页"]
+  },
+  "CompendiumComponent": {
+    "DemonList": ["Demon List", "悪魔一覧", "恶魔列表"],
+    "PersonaList": ["Persona List", "悪魔一覧", "人格面具列表"],
+    "ShadowList": ["Shadow List", "悪魔一覧", "敌人列表"],
+    "SkillList": ["Skill List", "スキル一覧", "技能列表"],
+    "FusionChart": ["Fusion Chart", "合体表", "合体表"],
+    "RecipGenerator": ["Recipe Generator", "合体レシピ"],
+    "FusionSettings": ["Fusion Settings", "DLC", "合成设置"],
+    "FusionCalculator": [" Fusion Calculator", " 合体アプリ", " 合体计算工具"]
+  },
+  "DemonInheritsComponent": {
+    "SkillAffinities": ["Skill Affinities", "スキル適正"]
+  },
+  "DemonListComponent": {
+    "AppTitle": ["List of Demons - ", "悪魔一覧 "],
+    "Demon": ["Demon", "悪魔一覧"],
+    "Persona": ["Persona", "悪魔一覧"],
+    "Stats": ["Stats", "ステータス"],
+    "Resistances": ["Resistances", "耐性"],
+    "Affinities": ["Affinities", "スキル適正"],
+    "Race": ["Race", "種族"],
+    "Name": ["Name", "悪魔名"]
+  },
+  "DemonResistsComponent": {
+    "Resistances": ["Resistances", "耐性"],
+    "Element": ["Element", "属性"],
+    "Ailment": ["Ailment", "状態異常"]
+  },
+  "DemonStatsComponent": {
+    "Stats": ["Stats", "ステータス"],
+    "Price": ["Price", "価格"],
+    "EvolvesFrom": ["Evolves From", "変異から"],
+    "EvolvesTo": ["Evolves To", "変異"]
+  },
+  "FusionChartComponent": {
+    "AppTitle": ["Fusion Chart - $APP Fusion Calculator", "合体表 $APP 合体アプリ"],
+    "NameCut": ["4", "2"],
+    "LightNormalFusions": ["Light and Neutral Normal Fusions", "LIGHT合体"],
+    "DarkNormalFusions": ["Dark Normal Fusions", "DARK合体"]
+  },
+  "FusionPairTableComponent": {
+    "Price": ["Price", "価格"],
+    "Race": ["Race", "種族"],
+    "Name": ["Name", "悪魔名"],
+    "NoFusionsFound": ["No fusions found!", "合体なし"]
+  },
+  "FusionSettingsComponent": {
+    "AppTitle": ["Fusion Settings - ", "合体設定 "],
+    "DlcTitle": ["Fusion Settings", "DLC"]
+  },
+  "RecipeGeneratorComponent": {
+    "AppTitle": ["Recipe Generator - ", "合体レシピ "],
+    "RecipeGenerator": ["Recipe Generator", "合体レシピ","合体配方生成"],
+    "Target": ["Target", "悪魔", "合成目标"],
+    "Race": ["Race", "種族", "种类"],
+    "Name": ["Name", "悪魔名", "名称"],
+    "IncludeIngredients": ["Include Ingredients", "素材悪魔", "所用原料"],
+    "FilterBy": ["Filter By", "スキル検索", "按技能检索"],
+    "Elem": ["Elem", "属性", "属性"],
+    "Skill": ["Skill", "スキル名", "技能"],
+    "Ingredient": ["Ingredient", "悪魔名", "原料"],
+    "LearnsSkill": ["Learns skill #", "スキル検索", "技能"],
+    "FusionRecipe": ["Fusion Recipe", "合体レシピ", "合体配方"],
+    "LeftChain": ["Left Chain", "左レシピ", "左侧合成"],
+    "RightChain": ["Right Chain", "右レシピ", "右侧合成"],
+    "NoRecipesFound": ["No recipes found", "合体なし", "无"]
+  },
+  "SkillListComponent": {
+    "AppTitle": ["List of Skills - ", "スキル一覧 "],
+    "Skill": ["Skill", "スキル"],
+    "HowToAcquire": ["How To Acquire", "悪魔"],
+    "Elem": ["Elem", "属性"],
+    "Name": ["Name", "スキル名"],
+    "Cost": ["Cost", "消費"],
+    "Effect": ["Effect", "説明"],
+    "Target": ["Target", "範囲"],
+    "Rank": ["Rank", "ランク"],
+    "LearnedBy": ["Learned By", "習得"],
+    "LearnedSkills": ["Learned Skills", "習得スキル"],
+    "NoLearnedSkills": ["No Learned Skills Found", "スキルなし"]
+  },
+  "SmtFissionTableComponent": {
+    "SpecialFusionCondition": ["Special Fusion Condition", "合体条件"],
+    "SpecialFusionIngredients": ["Special Fusion Ingredients for ", "特殊合体 "],
+    "Title": ["Ingredient 1 x Ingredient 2 = ", "悪魔1 x 悪魔2 = "],
+    "LeftHeader": ["Ingredient 1", "悪魔1"],
+    "RightHeader": ["Ingredient 2", "悪魔2"]
+  },
+  "SmtFusionTableComponent": {
+    "Title": [" x Ingredient 2 = Result", " x 悪魔2 = 悪魔R"],
+    "LeftHeader": ["Ingredient 2", "悪魔2"],
+    "RightHeader": ["Result", "悪魔R"]
+  },
+  "SmtFusionsComponent": {
+    "NormalFissions": ["Reverse Fusions", "逆引き合体"],
+    "NormalFusions": ["Forward Fusions", "2身合体"],
+    "DoubleFissions": ["Normal Reverse Fusions"],
+    "TripleFissions": ["Triple Reverse Fusions"],
+    "TripleFusions": ["Triple Forward Fusions"],
+    "DoubleFusions": ["Normal Forward Fusions"],
+    "DlcExcluded": ["DLC marked as excluded in fusion settings, results may be inaccurate!", "DLCなし"]
+  }
+}

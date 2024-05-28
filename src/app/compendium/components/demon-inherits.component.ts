@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-demon-inherits',
@@ -9,7 +10,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
         <tr>
           <th *ngIf="!hasLvls" [attr.colspan]="inheritHeaders.length" class="title">Inheritable Skills</th>
           <th *ngIf="hasLvls && inheritHeaders.length" [attr.colspan]="inheritHeaders.length" class="title">
-            {{ langEn ? 'Skill Affinities' : 'スキル適正' }}
+            {{ msgs.SkillAffinities | translateComp:lang }}
           </th>
         </tr>
         <tr>
@@ -45,5 +46,6 @@ export class DemonInheritsComponent {
   @Input() hasChance = false;
   @Input() hasIcons = true;
   @Input() hasLvls = false;
-  @Input() langEn = true;
+  @Input() lang = 'en';
+  msgs = Translations.DemonInheritsComponent;
 }

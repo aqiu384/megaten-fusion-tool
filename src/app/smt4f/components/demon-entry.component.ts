@@ -8,6 +8,7 @@ import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
+import Translations from '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-demon-entry',
@@ -15,35 +16,36 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <ng-container *ngIf="demon">
       <app-demon-stats
-        [langEn]="langEn"
+        [lang]="compConfig.lang"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats">
       </app-demon-stats>
       <app-demon-resists
-        [langEn]="langEn"
+        [lang]="compConfig.lang"
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists"
         [ailmentHeaders]="compConfig.ailmentElems"
         [ailments]="demon.ailments">
       </app-demon-resists>
       <app-demon-inherits *ngIf="demon.affinities"
-        [langEn]="langEn"
+        [lang]="compConfig.lang"
         [hasLvls]="true"
         [inheritHeaders]="compConfig.affinityElems"
         [inherits]="demon.affinities">
       </app-demon-inherits>
       <table class="entry-table">
         <thead>
-          <tr><th colSpan="7" class="title">{{ langEn ? 'Learned Skills' : '習得スキル' }}</th></tr>
-          <tr *ngIf="langEn">
-            <th>Elem</th><th>Name</th><th>Cost</th><th>Effect</th>
-            <th>Target</th><th>Rank</th><th>Level</th>
-          </tr>
-          <tr *ngIf="!langEn">
-            <th>属性</th><th>スキル名</th><th>消費</th><th>説明</th>
-            <th>範囲</th><th>ランク</th><th>Lvl</th>
+          <tr><th colSpan="7" class="title">{{ skillMsgs.LearnedSkills | translateComp:lang }}</th></tr>
+          <tr>
+            <th>{{ skillMsgs.Elem | translateComp:lang }}</th>
+            <th>{{ skillMsgs.Name | translateComp:lang }}</th>
+            <th>{{ skillMsgs.Cost | translateComp:lang }}</th>
+            <th>{{ skillMsgs.Effect | translateComp:lang }}</th>
+            <th>{{ skillMsgs.Target| translateComp:lang }}</th>
+            <th>{{ skillMsgs.Rank | translateComp:lang }}</th>
+            <th>Lvl</th>
           </tr>
         </thead>
         <tbody>
@@ -57,23 +59,23 @@ import { FusionDataService } from '../fusion-data.service';
             <td>{{ data.skill.level | skillLevelToString }}</td>
           </tr>
           <tr *ngIf="!skillLvls.length">
-            <td colSpan="7">{{ langEn ? 'No Learned Skills Found' : 'スキルなし' }}</td>
+            <td colSpan="7">{{ skillMsgs.NoLearnedSkills | translateComp:lang }}</td>
           <tr>
         </tbody>
       </table>
       <app-fusion-entry-table *ngIf="demon.evolvesFrom"
-        [title]="langEn ? 'Evolves From' : '変異から'"
-        [langEn]="langEn"
+        [title]="statMsgs.EvolvesFrom | translateComp:lang"
+        [lang]="compConfig.lang"
         [baseUrl]="'..'"
         [rowData]="[demon.evolvesFrom]">
       </app-fusion-entry-table>
       <app-fusion-entry-table *ngIf="demon.evolvesTo"
-        [title]="langEn ? 'Evolves To' : '変異'"
-        [langEn]="langEn"
+        [title]="statMsgs.EvolvesTo | translateComp:lang"
+        [lang]="compConfig.lang"
         [baseUrl]="'..'"
         [rowData]="[demon.evolvesTo]">
       </app-fusion-entry-table>
-      <app-smt-fusions [langEn]="langEn" [excludedDlc]="demon.fusion === 'excluded'">
+      <app-smt-fusions [lang]="compConfig.lang" [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">
@@ -85,8 +87,9 @@ export class DemonEntryComponent {
   @Input() demon: Demon;
   @Input() compConfig: CompendiumConfig;
   @Input() compendium: Compendium;
-  @Input() langEn = true;
-
+  @Input() lang = 'en';
+  statMsgs = Translations.DemonStatsComponent;
+  skillMsgs = Translations.SkillListComponent;
   skillLvls: { skill: Skill; cost: number; lvl: number, upgrade: number; }[] = [];
 
   ngOnChanges() {
@@ -131,7 +134,7 @@ export class DemonEntryComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-entry
-      [langEn]="langEn"
+      [lang]="compConfig.lang"
       [name]="name"
       [demon]="demon"
       [compConfig]="compConfig"
@@ -146,7 +149,6 @@ export class DemonEntryContainerComponent {
   compendium: Compendium;
   compConfig: CompendiumConfig;
   appName: string;
-  langEn = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -156,7 +158,6 @@ export class DemonEntryContainerComponent {
   ) {
     this.appName = fusionDataService.appName;
     this.compConfig = fusionDataService.compConfig;
-    this.langEn = this.compConfig.lang === 'en';
   }
 
   ngOnInit() {
@@ -189,9 +190,8 @@ export class DemonEntryContainerComponent {
 
   getDemonEntry() {
     if (this.compendium && this.name) {
-      this.title.setTitle(this.name + (this.langEn ? ' - ' : ' ') + this.appName);
+      this.title.setTitle(`${this.name} - ${this.appName}`);
       this.demon = this.compendium.getDemon(this.name);
     }
   }
 }
-

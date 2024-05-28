@@ -2,7 +2,10 @@ import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, OnDestroy
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
+
 import { FusionChart } from '../models';
+import { translateComp } from '../pipes';
+import Translations from '../data/translations.json'
 
 @Component({
   selector: 'app-fusion-chart',
@@ -42,8 +45,9 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   @Input() tripTitle = '';
   @Input() isPersona = false;
   @Input() filterDarks = true;
-  @Input() langEn = true;
+  @Input() lang = 'en';
   @Input() counter: number;
+  msgs = Translations.FusionChartComponent;
 
   static readonly RESULT_COLORS = Object.entries({
     'oran': ['-2', 'Erthys', 'Gnome', 'Saki', 'Saki Mitama', 'Random', 'アーシーズ', 'ノーム', 'サキミタマ'],
@@ -66,8 +70,8 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     this.subscriptions.push(
       this.route.parent.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
-        this.nameCut = this.langEn ? 4 : 2;
-        this.title2.setTitle(this.langEn ? `Fusion Chart - ${this.appName} Fusion Calculator` : `合体表 ${this.appName} 合体アプリ`);
+        this.nameCut = parseInt(translateComp(this.msgs.NameCut, this.lang));
+        this.title2.setTitle(translateComp(this.msgs.AppTitle, this.lang).replace('$APP', this.appName));
       }));
   }
 

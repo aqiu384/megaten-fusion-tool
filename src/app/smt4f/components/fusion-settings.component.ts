@@ -8,9 +8,8 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-fusion-settings
-      [langEn]="langEn"
+      [lang]="lang"
       [appTitle]="appTitle"
-      [dlcTitle]="langEn ? 'Fusion Settings' : 'DLC'"
       [fusionSettings]="fusionSettings"
       (toggledName)="toggleName($event)">
     </app-fusion-settings>
@@ -18,7 +17,7 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class FusionSettingsContainerComponent extends FSCC {
   appTitle: string;
-  langEn = true;
+  lang: string;
 
   constructor(
     private changeDetector: ChangeDetectorRef,
@@ -26,6 +25,6 @@ export class FusionSettingsContainerComponent extends FSCC {
   ) {
     super(changeDetector, fusionDataService);
     this.appTitle = fusionDataService.appName;
-    this.langEn = fusionDataService.compConfig.lang === 'en';
+    this.lang = fusionDataService.compConfig.lang;
   }
 }

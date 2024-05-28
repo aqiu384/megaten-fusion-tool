@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 
 import { FusionEntryTableComponent } from './components/fusion-entry-table.component';
@@ -50,6 +51,7 @@ import {
 } from './components/fusion-trio-table.component';
 
 import {
+  TranslateCompPipe,
   SkillCostToStringPipe,
   SkillLevelToStringPipe,
   SkillLevelToShortStringPipe,
@@ -103,6 +105,7 @@ import {
     TripleFissionTableComponent,
     TripleFusionTableComponent,
     TripleFusionChartComponent,
+    TranslateCompPipe,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     SkillLevelToShortStringPipe,
@@ -144,6 +147,7 @@ import {
     TripleFissionTableComponent,
     TripleFusionTableComponent,
     TripleFusionChartComponent,
+    TranslateCompPipe,
     SkillCostToStringPipe,
     SkillLevelToStringPipe,
     SkillLevelToShortStringPipe,
@@ -160,7 +164,7 @@ export class SharedCompendiumModule {
   static forRoot(): ModuleWithProviders<SharedCompendiumModule> {
     return {
       ngModule: SharedCompendiumModule,
-      providers: [ CurrentDemonService ]
+      providers: [CurrentDemonService]
     };
   }
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
-import { PageTranslationUtil } from './page-translations/page-translation-util';
-import PAGE_TRANSLATION_JSON from './page-translations/data/translations.json';
+import Translations from './compendium/data/translations.json';
 
 @Component({
   selector: 'app-root',
@@ -10,35 +9,19 @@ import PAGE_TRANSLATION_JSON from './page-translations/data/translations.json';
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
           <tr>
-            <th routerLink="home" class="nav" routerLinkActive="active" style="width: 16.7%;">
-              <a routerLink="home">Game List (EN)</a>
+            <th *ngFor="let link of msgs.HomeLink; index as i" [routerLink]="link" class="nav" routerLinkActive="active" [style.width]="navWidth">
+              <a [routerLink]="link">{{ msgs.Home[i] }}</a>
             </th>
-            <th routerLink="ja/home" class="nav" routerLinkActive="active" style="width: 16.7%;">
-              <a routerLink="ja/home">ゲーム一覧 (日本語)</a>
-            </th>
-            <th routerLink="zh-cn/home" class="nav" routerLinkActive="active" style="width: 16.7%;">
-              <a routerLink="zh-cn/home">游戏一览 (简体中文)</a>
-            </th>
-            <th class="nav external" style="width: 16.7%;">
-              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use#save-offline">{{ translations['save-offline'][lang] || translations['save-offline']['en'] }}</a></div>
-            </th>
-            <th class="nav external" style="width: 16.7%;">
-              <div><a href="https://aqiu384.github.io/megaten-database/how-to-use">{{ translations['help'][lang] || translations['help']['en'] }}</a></div>
-            </th>
-            <th class="nav external" style="width: 16.7%;">
-              <div><a href="https://github.com/aqiu384/megaten-fusion-tool/issues">
-                {{ translations['report-issues'][lang] || translations['report-issues']['en'] }}
-              </a></div>
+            <th *ngFor="let link of otherLinks" class="nav external" [style.width]="navWidth">
+              <div><a [attr.href]="link.link">{{ link.title | translateComp:lang }}</a></div>
             </th>
           </tr>
           <tr>
-            <th colspan="6" class="title">{{ translations['fusion-tool-title'][lang] || translations['fusion-tool-title']['en'] }}</th>
+            <th [attr.colspan]="msgs.HomeLink.length + otherLinks.length" class="title">{{ msgs.AppTitle | translateComp:lang }}</th>
           </tr>
         </thead>
       </table>
-      <h4 *ngIf="loading" style="text-align: center;">
-        {{ translations['loading'][lang] || translations['loading']['en'] }}
-      </h4>
+      <h4 *ngIf="loading" style="text-align: center;">{{ msgs.NowLoading | translateComp:lang }}</h4>
       <ng-container *ngIf="!loading">
         <router-outlet></router-outlet>
       </ng-container>
@@ -60,10 +43,17 @@ export class AppComponent implements OnInit {
     dso: 'ds1', ds2br: 'ds2'
   };
 
+  msgs = Translations.AppComponent;
+  otherLinks = [
+    { title: this.msgs.SaveOffline, link: 'https://aqiu384.github.io/megaten-database/how-to-use#save-offline' },
+    { title: this.msgs.Help, link: 'https://aqiu384.github.io/megaten-database/how-to-use' },
+    { title: this.msgs.ReportIssue, link: 'https://github.com/aqiu384/megaten-fusion-tool/issues' }
+  ];
+  navWidth = Math.round(1000 / (this.msgs.HomeLink.length + this.otherLinks.length)) / 10 + '%';
+
   lang = 'en';
-  currentGame = 'none';
+  currentGame = 'home';
   loading = false;
-  translations = PAGE_TRANSLATION_JSON;
 
   constructor(private router: Router) { }
 
@@ -76,9 +66,10 @@ export class AppComponent implements OnInit {
       this.loading = true;
     } else if (event instanceof NavigationEnd) {
       this.loading = false;
-      const currentGame = event.url.replace(/\/ja\/|\/zh-cn\//, '/').split('/')[1];
+      const parts = event.url.split('/');
+      this.lang = Translations.Languages.Languages.includes(parts[1]) ? parts[1] : 'en';
+      const currentGame = this.lang === 'en' ? parts[1] : parts[2];
       this.currentGame = AppComponent.GAME_PREFIXES[currentGame] || currentGame;
-      this.lang = PageTranslationUtil.getLanguage(event.url);
       window.scrollTo(0, 0);
     } else if (
       event instanceof NavigationCancel ||

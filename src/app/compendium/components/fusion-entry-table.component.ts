@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
-
 import { FusionEntry } from '../models';
+import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-fusion-entry-table',
@@ -9,8 +9,12 @@ import { FusionEntry } from '../models';
     <table [ngClass]="isFusion ? 'list-table' : 'entry-table'">
       <thead>
         <tr><th colspan="4" class="title">{{ title }}</th></tr>
-        <tr *ngIf="langEn"><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
-        <tr *ngIf="!langEn"><th>価格</th><th>種族</th><th>Lvl</th><th>悪魔名</th></tr>
+        <tr>
+          <th>{{ msgs.Price | translateComp:lang }}</th>
+          <th>{{ msgs.Race | translateComp:lang }}</th>
+          <th>Lvl</th>
+          <th>{{ msgs.Name | translateComp:lang }}</th>
+        </tr>
       </thead>
       <tbody>
         <tr *ngFor="let data of rowData">
@@ -28,5 +32,6 @@ export class FusionEntryTableComponent {
   @Input() baseUrl = '../..';
   @Input() rowData: FusionEntry[];
   @Input() isFusion = false;
-  @Input() langEn = true;
+  @Input() lang = 'en';
+  msgs = Translations.FusionPairTableComponent;
 }

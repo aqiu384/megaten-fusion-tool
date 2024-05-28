@@ -52,6 +52,4 @@ export interface CompendiumConfig extends BaseComp {
 
   settingsKey: string;
   settingsVersion: number;
-
-  defaultDemon: string;
 }

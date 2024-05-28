@@ -1,4 +1,17 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import Translations from './data/translations.json';
+
+export function translateComp(dict: string[], lang: string): string {
+  const i = Translations.Languages.Languages.indexOf(lang);
+  return dict[-1 < i && i < dict.length ? i : 0];
+}
+
+@Pipe({ name: 'translateComp' })
+export class TranslateCompPipe implements PipeTransform {
+  transform(dict: string[], lang: string): string {
+    return translateComp(dict, lang);
+  }
+}
 
 const SKILL_COST_TYPES = [
   'Auto', ' HP',  '% HP', ' MP',  '% MP', ' SP',  '% SP', ' Ex',  '% Ex', ' MG',  '% MG', '0x0B', '0x0C', '0x0D', '0x0E', ' CC',
@@ -77,8 +90,9 @@ const JA_RESIST_LVLS = [
 
 @Pipe({ name: 'reslvlToStringJa' })
 export class ReslvlToStringJaPipe implements PipeTransform {
-  transform(value: number): string {
-    return JA_RESIST_LVLS[value >> 10];
+  transform(value: number, lang: string): string {
+    const resLvl = value >> 10;
+    return lang === 'ja' ? JA_RESIST_LVLS[resLvl] : resLvl < 12 ? RESIST_LVLS[resLvl] : RESIST_NUMS[resLvl - 12][value & 0x3FF];
   }
 }
 

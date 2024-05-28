@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 import { CompendiumRoutingModule } from '../pq2/compendium-routing.module';
 import { FusionDataService } from '../pq2/fusion-data.service';
@@ -19,27 +18,15 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
-import ZHCN_NAMES from './data/zhcn-names.json';
-import { translateDemonData, translateDemonUnlocks, translateFusionChart, translateSkillData, translateSpecialRecipes } from '../compendium/models/translator';
-import { PageTranslationUtil } from '../page-translations/page-translation-util';
 
-function createCompConfig(url: string): CompendiumConfig {
-  let lang = PageTranslationUtil.getLanguage(url);
-  var foreignNames: { [foreignName: string]: string };
-  if (lang == 'zh-cn') {
-    foreignNames = ZHCN_NAMES;
-  }
-
+function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
   const inheritTypes: { [elem: string]: number } = {};
   const enemyData = {}
 
-  for (var race of COMP_CONFIG_JSON.races) {
-    if (foreignNames && race in foreignNames) {
-      race = foreignNames[race]
-    }
+  for(const race of COMP_CONFIG_JSON.races) {
     races.push(race);
     races.push(race + ' P');
   }
@@ -105,36 +92,36 @@ function createCompConfig(url: string): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['p3r'],
 
-    skillData: lang == 'en' ? SKILL_DATA_JSON : translateSkillData(SKILL_DATA_JSON, foreignNames),
+    skillData: SKILL_DATA_JSON,
     skillElems,
     ailmentElems: COMP_CONFIG_JSON.ailments.map(x => x.slice(0, 3)),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-    demonData: lang == 'en' ? DEMON_DATA_JSON : translateDemonData(DEMON_DATA_JSON, foreignNames),
+    demonData: DEMON_DATA_JSON,
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems,
     inheritTypes,
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
-    demonUnlocks: lang == 'en' ? DEMON_UNLOCKS_JSON : translateDemonUnlocks(DEMON_UNLOCKS_JSON, foreignNames),
+    demonUnlocks: DEMON_UNLOCKS_JSON,
     enemyData,
     enemyStats: ['HP', 'MP'],
 
-    normalTable: lang == 'en' ? FUSION_CHART_JSON : translateFusionChart(FUSION_CHART_JSON, foreignNames),
+    normalTable: FUSION_CHART_JSON,
     hasTripleFusion: false,
     hasDemonResists: true,
     hasSkillRanks: true,
     hasEnemies: true,
     hasQrcodes: false,
-    specialRecipes: lang == 'en' ? SPECIAL_RECIPES_JSON : translateSpecialRecipes(SPECIAL_RECIPES_JSON, foreignNames),
+    specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'p3r-fusion-tool-settings',
-    settingsVersion: 2401131500,
-
-    defaultDemon: foreignNames == null ? 'Pixie' : foreignNames['Pixie']
+    settingsVersion: 2401131500
   };
 }
+
+const SMT_COMP_CONFIG = createCompConfig();
 
 @NgModule({
   imports: [
@@ -147,13 +134,7 @@ function createCompConfig(url: string): CompendiumConfig {
     FusionDataService,
     [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
     [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{
-      provide: COMPENDIUM_CONFIG,
-      useFactory: (router: Router) => {
-        return createCompConfig(router.url)
-      },
-      deps: [Router]
-    }],
+    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }],
   ]
 })
 export class CompendiumModule { }

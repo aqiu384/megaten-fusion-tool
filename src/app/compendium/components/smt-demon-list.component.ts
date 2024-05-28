@@ -19,16 +19,9 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td><a [routerLink]="data.name">{{ data.name }}</a></td>
     <td *ngIf="hasInherits"><div [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
-    <ng-container *ngIf="langEn">
-      <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
-        {{ resist | reslvlToString }}
-      </td>
-    </ng-container>
-    <ng-container *ngIf="!langEn">
-      <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
-        {{ resist | reslvlToStringJa }}
-      </td>
-    </ng-container>
+    <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
+      {{ resist | reslvlToStringJa:lang }}
+    </td>
     <ng-container *ngIf="hasAffinity">
       <td *ngFor="let affinity of data.affinities" [ngClass]="'affinity' + affinity">
         {{ affinity | affinityToString }}
@@ -43,7 +36,7 @@ export class SmtDemonListRowComponent {
   @Input() hasCurrLvl = false;
   @Input() hasInherits = false;
   @Input() hasAffinity = false;
-  @Input() langEn = true;
+  @Input() lang = 'en';
   @Input() data: Demon;
   @Output() currLvl = new EventEmitter<number>();
 
@@ -76,7 +69,7 @@ export class SmtDemonListRowComponent {
         class="app-demon-list-header sticky-header"
         [isPersona]="isPersona"
         [isEnemy]="isEnemy"
-        [langEn]="langEn"
+        [lang]="lang"
         [hasInherits]="!!inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
@@ -90,7 +83,7 @@ export class SmtDemonListRowComponent {
         class="app-demon-list-header"
         [isPersona]="isPersona"
         [isEnemy]="isEnemy"
-        [langEn]="langEn"
+        [lang]="lang"
         [hasInherits]="!!inheritOrder"
         [statHeaders]="statHeaders"
         [resistHeaders]="resistHeaders"
@@ -104,7 +97,7 @@ export class SmtDemonListRowComponent {
           [hasCurrLvl]="hasCurrLvl"
           [hasInherits]="!!inheritOrder"
           [hasAffinity]="!!affinityHeaders"
-          [langEn]="langEn"
+          [lang]="lang"
           [ngClass]="{
             special: data.fusion === 'special',
             exception: data.fusion !== 'special' && data.fusion !== 'normal'
@@ -120,6 +113,6 @@ export class SmtDemonListComponent extends DemonListComponent<Demon> {
   @Input() isPersona = false;
   @Input() isEnemy = false;
   @Input() hasCurrLvl = false;
-  @Input() langEn = true;
+  @Input() lang = 'en';
   @Output() lvlChanged = new EventEmitter<{ demon: string, currLvl: number }>();
 }

@@ -1,5 +1,7 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { FusionDataService } from '../fusion-data.service';
+import { translateComp } from '../../compendium/pipes';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-smt4f-compendium',
@@ -16,11 +18,12 @@ import { FusionDataService } from '../fusion-data.service';
 export class CompendiumComponent {
   appCssClasses = ['smt4', 'smt4f'];
   otherLinks: { title: string, link: string }[];
-  langEn = true;
 
   constructor(fusionDataService: FusionDataService) {
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
-    this.langEn = fusionDataService.compConfig.lang === 'en';
-    this.otherLinks = [{ title: this.langEn ? 'Recipe Generator' : '合体レシピ', link: 'recipes' }];
+    this.otherLinks = [{ title: translateComp(
+      Translations.CompendiumComponent.RecipGenerator,
+      fusionDataService.compConfig.lang
+    ), link: 'recipes' }];
   }
 }
