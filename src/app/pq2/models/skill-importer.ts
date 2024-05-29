@@ -1,9 +1,9 @@
-function skillRowToEffect(nums: number[], descs: string[]): string {
+export function skillRowToEffect(nums: number[], descs: string[]): string {
   const [rank, cost, power, minHits, maxHits, accuracy, crit, mod] = nums;
   const [effect, cond, card] = descs;
   const baseMod = parseInt(mod.toString());
   const powerStr = power === 0 ? '' : `${power} pwr`;
-  const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits === 0 ? '' : `${maxHits} hits`;
+  const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits < 2 ? '' : `${maxHits} hits`;
   const modStr = baseMod === 0 ? '' : baseMod < 1000 ? `${mod}%` : baseMod < 2000 ? `x${(baseMod - 1000) / 100}` : baseMod < 3000 ? `+${baseMod - 2000}%` : `+${baseMod - 3000}`;
   const effectStr = `${modStr} ${effect === '-' ? '' : effect} ${cond === '-' ? '' : cond}`.trim();
   const fullStr = [powerStr, hitStr, effectStr].filter(s => s !== '').join(', ');
