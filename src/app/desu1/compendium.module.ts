@@ -15,6 +15,7 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
 import OVE_DEMON_DATA_JSON from './data/ove-demon-data.json';
+import OVE_SKILL_DATA_JSON from './data/ove-skill-data.json';
 
 import { FusionDataService } from '../krch/fusion-data.service';
 import { SmtKuzuCompendiumModule } from '../krch/smt-kuzu-compendium.module';
@@ -24,9 +25,8 @@ function createCompConfig(): CompendiumConfigSet {
   const races = COMP_CONFIG_JSON.races;
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
-  console.log(skillElems)
   const compConfigs: { [game: string]: CompendiumConfig } = {};
-  const skillData = {};
+  const skillData = [];
   const MITAMA_TABLE = [
     ['Nigi', 'Ara ', 'Kusi'],
     ['Kusi', 'Ara '],
@@ -37,21 +37,22 @@ function createCompConfig(): CompendiumConfigSet {
   const COST_HP = 2 << 10;
   const COST_MP = (3 << 10) - 1000;
 
-  for (const row of Object.values(VAN_SKILL_DATA_JSON)) {
-    const { a: [sname, elem, target], b: nums, c: descs } = row;
-    const [rank, cost] = nums.slice(0, 2);
-    const card = descs[2];
+  for (const skillJson of [VAN_SKILL_DATA_JSON, OVE_SKILL_DATA_JSON]) {
+    const gameSkills = {};
+    skillData.push(gameSkills);
 
-    if (!skillElems.includes(elem)) {
-      console.log(elem)
-    }
+    for (const row of Object.values(skillJson)) {
+      const { a: [sname, elem, target], b: nums, c: descs } = row;
+      const [rank, cost] = nums.slice(0, 2);
+      const card = descs[2];
 
-    skillData[sname] = {
-      elem,
-      rank,
-      target: card === '-' ? 'Self' : card,
-      cost: cost ? cost + (cost > 1000 ? COST_MP : COST_HP) : 0,
-      effect: skillRowToEffect(nums, descs),
+      gameSkills[sname] = {
+        elem,
+        rank,
+        target: target === '-' ? 'Self' : target,
+        cost: cost ? cost + (cost > 1000 ? COST_MP : COST_HP) : 0,
+        effect: skillRowToEffect(nums, descs),
+      }
     }
   }
 
@@ -81,7 +82,7 @@ function createCompConfig(): CompendiumConfigSet {
       fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
 
       demonData: [VAN_DEMON_DATA_JSON],
-      skillData: [skillData],
+      skillData: skillData.slice(0, 1),
       normalTable: FUSION_CHART_JSON,
       elementTable: ELEMENT_CHART_JSON,
       mitamaTable: MITAMA_TABLE,
@@ -92,7 +93,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   compConfigs.dso.appTitle = 'Devil Survivor Overclocked';
   compConfigs.dso.demonData = [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON];
-  compConfigs.dso.skillData = [skillData];
+  compConfigs.dso.skillData = skillData;
 
   return {
     appTitle: 'Devil Survivor',

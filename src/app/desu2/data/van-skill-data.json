@@ -1,1129 +1,226 @@
 {
-  "+Forget": {
-    "effect": "Physical attacks may inflict the Forget ailment",
-    "element": "passive",
-    "prereq": "Ma9",
-    "rank": 7
-  },
-  "+Paralyze": {
-    "effect": "Physical attacks may inflict the Paralyze ailment",
-    "element": "passive",
-    "prereq": "Ag9",
-    "rank": 7
-  },
-  "+Poison": {
-    "effect": "Physical attacks may inflict the Poison ailment",
-    "element": "passive",
-    "prereq": "Ag6",
-    "rank": 4
-  },
-  "+Stone": {
-    "effect": "Physical attacks may inflict the Petrify ailment",
-    "element": "passive",
-    "prereq": "Ag12",
-    "rank": 10
-  },
-  "Agi": {
-    "cost": 1004,
-    "effect": "Inflicts light Fire damage on one enemy",
-    "element": "fire",
-    "rank": 1
-  },
-  "Agidyne": {
-    "cost": 1013,
-    "effect": "Inflicts heavy Fire damage on one enemy",
-    "element": "fire",
-    "prereq": "Ma14",
-    "rank": 12
-  },
-  "Alter Pain": {
-    "effect": "Team members regenerate a small amount of MP relative to the damage they have taken",
-    "element": "auto",
-    "prereq": "Vi10"
-  },
-  "Amrita": {
-    "cost": 1009,
-    "effect": "Cures all ailments on all team members",
-    "element": "recovery",
-    "prereq": "Ma5",
-    "rank": 3
-  },
-  "Anger Hit": {
-    "cost": 5,
-    "effect": "Guaranteed critical hit on one enemy, but 50% accuracy",
-    "element": "phys",
-    "prereq": "St5",
-    "rank": 3
-  },
-  "Anti-Ailment": {
-    "effect": "Reduces chances of suffering from any ailment",
-    "element": "passive",
-    "prereq": "Vi7",
-    "rank": 5
-  },
-  "Anti-All": {
-    "effect": "Resists damage from all attacks and Curse-based ailments except Almighty attacks",
-    "element": "passive",
-    "prereq": "Ma18",
-    "rank": 16
-  },
-  "Anti-Almighty": {
-    "effect": "Reduces damage taken from Almighty attacks",
-    "element": "passive",
-    "prereq": "Vi19",
-    "rank": 17
-  },
-  "Anti-Curse": {
-    "effect": "Resists damage from Curse attacks, reduces chance of suffering from Curse-based ailments",
-    "element": "passive",
-    "prereq": "Ma5",
-    "rank": 3
-  },
-  "Anti-Elec": {
-    "effect": "Resists damage from Electric attacks",
-    "element": "passive",
-    "prereq": "Ag5",
-    "rank": 3
-  },
-  "Anti-Fire": {
-    "effect": "Resists damage from Fire attacks",
-    "element": "passive",
-    "prereq": "Vi5",
-    "rank": 3
-  },
-  "Anti-Force": {
-    "effect": "Resists damage from Force attacks",
-    "element": "passive",
-    "prereq": "Ag5",
-    "rank": 3
-  },
-  "Anti-Ice": {
-    "effect": "Resists damage from Ice attacks",
-    "element": "passive",
-    "prereq": "Ma5",
-    "rank": 3
-  },
-  "Anti-Most": {
-    "effect": "Resists damage from all attacks and Curse-based ailments except for Physical and Almighty attacks",
-    "element": "passive",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Anti-Phys": {
-    "effect": "Resists damage from Physical attacks",
-    "element": "passive",
-    "prereq": "Vi5",
-    "rank": 3
-  },
-  "Ares Aid": {
-    "effect": "Critical rate +50%",
-    "element": "passive",
-    "prereq": "Ag10",
-    "rank": 8
-  },
-  "Assassinate": {
-    "cost": 8,
-    "effect": "Inflicts heavy Physical damage on enemy team leader and ignores defense modifiers from presence of team members",
-    "element": "phys",
-    "prereq": "Ag9",
-    "rank": 7
-  },
-  "Attack All": {
-    "effect": "Regular attack hits all enemies. Compatible with Double Strike and Ultimate Hit",
-    "element": "passive",
-    "prereq": "Vi14",
-    "rank": 12
-  },
-  "Avenge": {
-    "effect": "High chance of retaliating when struck with a physical attack",
-    "element": "passive",
-    "prereq": "Vi13",
-    "rank": 11
-  },
-  "Ban Curse": {
-    "cost": 1006,
-    "effect": "Cancels the first Curse attack during the skirmish",
-    "element": "auto",
-    "prereq": "Ma10"
-  },
-  "Ban Elec": {
-    "cost": 1008,
-    "effect": "Cancels the first Elec attack during the skirmish",
-    "element": "auto",
-    "prereq": "Ma10"
-  },
-  "Ban Fire": {
-    "cost": 1008,
-    "effect": "Cancels the first Fire attack during the skirmish",
-    "element": "auto",
-    "prereq": "St10"
-  },
-  "Ban Force": {
-    "cost": 1008,
-    "effect": "Cancels the first Force attack during the skirmish",
-    "element": "auto",
-    "prereq": "Vi10"
-  },
-  "Ban Ice": {
-    "cost": 1008,
-    "effect": "Cancels the first Ice attack during the skirmish",
-    "element": "auto",
-    "prereq": "Ma10"
-  },
-  "Ban Phys": {
-    "cost": 1015,
-    "effect": "Cancels the first Physical attack during the skirmish",
-    "element": "auto",
-    "prereq": "St10"
-  },
-  "Barrier": {
-    "cost": 1016,
-    "effect": "Casts Makarakarn at the start of the skirmish",
-    "element": "auto",
-    "prereq": "Ma16"
-  },
-  "Battle Aura": {
-    "cost": 1010,
-    "effect": "Blocks all attacks that do 50 damage or less per hit",
-    "element": "auto",
-    "prereq": "Vi12"
-  },
-  "Berserk": {
-    "cost": 13,
-    "effect": "Inflicts HP-dependent Physical damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "phys",
-    "prereq": "St10",
-    "rank": 8
-  },
-  "Blitzkrieg": {
-    "cost": 1004,
-    "effect": "Offense +25%",
-    "element": "auto",
-    "prereq": "St8"
-  },
-  "Brutal Hit": {
-    "cost": 10,
-    "effect": "Inflicts HP-dependent Physical damage on one enemy",
-    "element": "phys",
-    "prereq": "Vi9",
-    "rank": 7
-  },
-  "Bufu": {
-    "cost": 1004,
-    "effect": "Inflicts light Ice damage on one enemy",
-    "element": "ice",
-    "rank": 1
-  },
-  "Bufudyne": {
-    "cost": 1013,
-    "effect": "Inflicts heavy Ice damage on one enemy",
-    "element": "ice",
-    "prereq": "Ma14",
-    "rank": 12
-  },
-  "Counter": {
-    "effect": "Low chance of retaliating when struck with a physical attack",
-    "element": "passive",
-    "prereq": "Vi7",
-    "rank": 5
-  },
-  "Crit Up": {
-    "effect": "Increases damage dealt by critical hits",
-    "element": "passive",
-    "prereq": "St5",
-    "rank": 3
-  },
-  "Death Call": {
-    "cost": 1026,
-    "effect": "Instantly kills all enemies suffering from Poison, Paralyze, Stone, or Charm ailment",
-    "element": "curse",
-    "prereq": "Ag12",
-    "rank": 10
-  },
-  "Deathbound": {
-    "cost": 20,
-    "effect": "Inflicts HP/Level/Vitality-dependent Physical damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "phys",
-    "prereq": "St18",
-    "rank": 16
-  },
-  "Debilitate": {
-    "cost": 1012,
-    "effect": "Enemy hit rate, evasion, and defense -25%",
-    "element": "auto",
-    "prereq": "Ag14"
-  },
-  "Desperation": {
-    "cost": 100,
-    "effect": "Kills self to inflict Almighty damage to all enemies. The lower the user's HP, the more damage the attack will inflict",
-    "element": "almighty",
-    "rank": 1
-  },
-  "Desperation (A)": {
-    "effect": "Team gains speed bonus in battle, but loses all initial Extra Turns",
-    "element": "auto",
-    "prereq": "Ag11"
-  },
-  "Dia": {
-    "cost": 1008,
-    "effect": "Restores a small amount of HP to one team member",
-    "element": "recovery",
-    "rank": 1
-  },
-  "Diarahan": {
-    "cost": 1020,
-    "effect": "Restores all HP to one team member",
-    "element": "recovery",
-    "prereq": "Ma15",
-    "rank": 13
-  },
-  "Diarama": {
-    "cost": 1012,
-    "effect": "Restores a moderate amount of HP to one team member",
-    "element": "recovery",
-    "prereq": "Ma8",
-    "rank": 6
-  },
-  "Dodge": {
-    "effect": "Increases evasion against Physical attacks",
-    "element": "passive",
-    "prereq": "Ag6",
-    "rank": 4
-  },
-  "Double Strike": {
-    "effect": "Converts regular attack into Double Strike, which hits its target(s) twice, though with reduced power. If combined with Ultimate Hit, the attack becomes Twin Ultimate. Compatible with Attack All and Ultimate Hit",
-    "element": "passive",
-    "prereq": "St10",
-    "rank": 8
-  },
-  "Drain": {
-    "cost": 1002,
-    "effect": "Steals HP and MP from one enemy",
-    "element": "almighty",
-    "prereq": "Ma11",
-    "rank": 9
-  },
-  "Drain Hit": {
-    "effect": "Physical hits restore HP equal to 25% of damage done",
-    "element": "passive",
-    "prereq": "Vi12",
-    "rank": 10
-  },
-  "Dual Shadow": {
-    "effect": "25% chance of the character repeating the attack they just performed",
-    "element": "passive",
-    "prereq": "Ag15",
-    "rank": 13
-  },
-  "Elec Amp": {
-    "effect": "Elec damage +50%",
-    "element": "passive",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Elec Boost": {
-    "effect": "Elec damage +20%",
-    "element": "passive",
-    "prereq": "Ma9",
-    "rank": 7
-  },
-  "Elec Dance": {
-    "cost": 1023,
-    "effect": "Inflicts Magic-relative Electric damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "elec",
-    "prereq": "Ma8",
-    "rank": 6
-  },
-  "Elec Drain": {
-    "effect": "Absorbs Electric attacks",
-    "element": "passive",
-    "prereq": "Ag15",
-    "rank": 13
-  },
-  "Elec Repel": {
-    "effect": "Reflects Electric attacks",
-    "element": "passive",
-    "prereq": "Ag12",
-    "rank": 10
-  },
-  "Endure": {
-    "effect": "Withstand one mortal blow once per skirmish with 1 HP remaining",
-    "element": "passive",
-    "prereq": "Vi9",
-    "rank": 7
-  },
-  "Endure +": {
-    "cost": 1010,
-    "effect": "Team members gain Endure",
-    "element": "auto",
-    "prereq": "Vi20"
-  },
-  "Extra Bonus": {
-    "effect": "Increases chance of removing Extra Turns. Neutral-hitting attacks by the user may randomly gain or remove Extra Turns",
-    "element": "passive",
-    "prereq": "Ag5",
-    "rank": 3
-  },
-  "Extra Cancel": {
-    "cost": 8,
-    "effect": "Inflicts light Physical damage on one enemy, removes its Extra Turn, and bestows an Extra Turn to the user if the target had an Extra Turn",
-    "element": "support",
-    "prereq": "Ag4",
-    "rank": 2
-  },
-  "Extra One": {
-    "effect": "The character always has an Extra Turn in battle",
-    "element": "passive",
-    "prereq": "Ag13",
-    "rank": 11
-  },
-  "Fatal Strike": {
-    "cost": 8,
-    "effect": "Inflicts heavy unavoidable Physical damage on one enemy, but cannot kill it unless it has 1 HP",
-    "element": "phys",
-    "prereq": "Ag6",
-    "rank": 4
-  },
-  "Fire Amp": {
-    "effect": "Fire damage +50%",
-    "element": "passive",
-    "prereq": "St12",
-    "rank": 10
-  },
-  "Fire Boost": {
-    "effect": "Fire damage +20%",
-    "element": "passive",
-    "prereq": "St9",
-    "rank": 7
-  },
-  "Fire Dance": {
-    "cost": 1023,
-    "effect": "Inflicts Magic-relative Fire damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "fire",
-    "prereq": "Ma8",
-    "rank": 6
-  },
-  "Fire Drain": {
-    "effect": "Absorbs Fire attacks",
-    "element": "passive",
-    "prereq": "Vi15",
-    "rank": 13
-  },
-  "Fire Repel": {
-    "effect": "Reflects Fire attacks",
-    "element": "passive",
-    "prereq": "Vi12",
-    "rank": 10
-  },
-  "Force Amp": {
-    "effect": "Force damage +50%",
-    "element": "passive",
-    "prereq": "Vi12",
-    "rank": 10
-  },
-  "Force Boost": {
-    "effect": "Force damage +20%",
-    "element": "passive",
-    "prereq": "Vi9",
-    "rank": 7
-  },
-  "Force Dance": {
-    "cost": 1023,
-    "effect": "Inflicts Magic-relative Force damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "force",
-    "prereq": "Ma8",
-    "rank": 6
-  },
-  "Force Drain": {
-    "effect": "Absorbs Force attacks",
-    "element": "passive",
-    "prereq": "Ag15",
-    "rank": 13
-  },
-  "Force Repel": {
-    "effect": "Reflects Force attacks",
-    "element": "passive",
-    "prereq": "Ag12",
-    "rank": 10
-  },
-  "Fortify": {
-    "cost": 1005,
-    "effect": "Defense +25%",
-    "element": "auto",
-    "prereq": "Vi7"
-  },
-  "Full Might": {
-    "cost": 1010,
-    "effect": "Casts Might Call at the start of the skirmish",
-    "element": "auto",
-    "prereq": "Ag15"
-  },
-  "Gigajama": {
-    "cost": 1020,
-    "effect": "High chance of inflicting Forget ailment to one enemy",
-    "element": "almighty",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Grace": {
-    "cost": 1025,
-    "effect": "Casts Prayer at the start of the skirmish if any team members are heavily injured or suffering from an ailment",
-    "element": "auto",
-    "prereq": "Ma20"
-  },
-  "Grimoire": {
-    "effect": "Greatly increases chance of inflicting status ailments",
-    "element": "passive",
-    "prereq": "Ag11",
-    "rank": 9
-  },
-  "Grimoire +": {
-    "effect": "Team members gain Grimoire",
-    "element": "auto",
-    "prereq": "Ag11"
-  },
-  "Hassohappa": {
-    "cost": 15,
-    "effect": "Inflicts HP-dependent Physical damage on all enemies",
-    "element": "phys",
-    "prereq": "Vi11",
-    "rank": 9
-  },
-  "Healing": {
-    "cost": 1012,
-    "effect": "Casts Media at the start of the skirmish if any team members are injured",
-    "element": "auto",
-    "prereq": "Ma12"
-  },
-  "Health Save": {
-    "effect": "HP costs for both teams reduced by 75%",
-    "element": "auto",
-    "prereq": "Ag11"
-  },
-  "Hero Aid": {
-    "effect": "Critical rate +25%",
-    "element": "passive",
-    "prereq": "Ag5",
-    "rank": 3
-  },
-  "Hero Soul": {
-    "effect": "User takes a hit for the leader if they have better resistance to that attack",
-    "element": "passive",
-    "rank": 1
-  },
-  "Holy Dance": {
-    "cost": 1045,
-    "effect": "Inflicts Magic-relative Almighty damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "almighty",
-    "prereq": "Ma13",
-    "rank": 11
-  },
-  "Holy Strike": {
-    "cost": 25,
-    "effect": "Inflicts Strength-relative Almighty damage on one enemy",
-    "element": "almighty",
-    "prereq": "St22",
-    "rank": 20
-  },
-  "Hustle": {
-    "cost": 1003,
-    "effect": "Hit rate and evasion +25%",
-    "element": "auto",
-    "prereq": "Ag8"
-  },
-  "Ice Amp": {
-    "effect": "Ice damage +50%",
-    "element": "passive",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Ice Boost": {
-    "effect": "Ice damage +20%",
-    "element": "passive",
-    "prereq": "Ma9",
-    "rank": 7
-  },
-  "Ice Dance": {
-    "cost": 1023,
-    "effect": "Inflicts Magic-relative Ice damage on random targets. Hits 2-5 times total, max 3 times on one enemy",
-    "element": "ice",
-    "prereq": "Ma8",
-    "rank": 6
-  },
-  "Ice Drain": {
-    "effect": "Absorbs Ice attacks",
-    "element": "passive",
-    "prereq": "Ma15",
-    "rank": 13
-  },
-  "Ice Repel": {
-    "effect": "Reflects Ice attacks",
-    "element": "passive",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Inferno": {
-    "cost": 1020,
-    "effect": "Inflicts heavy Fire damage on self, allies and enemies",
-    "element": "fire",
-    "prereq": "Ma20",
-    "rank": 18
-  },
-  "Judgement": {
-    "cost": 1035,
-    "effect": "Inflicts Curse damage on all enemies equal to about half their current HP",
-    "element": "curse",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Knight Soul": {
-    "effect": "User takes a lethal hit for the leader",
-    "element": "passive",
-    "rank": 1
-  },
-  "Leader Soul": {
-    "effect": "If a team member would take a mortal blow, and the damage is less than the leader's current HP, the equipping leader will take the hit instead. Cannot be set onto demons",
-    "element": "passive",
-    "rank": 0
-  },
-  "Life Aid": {
-    "effect": "10% max HP is restored at the end of every skirmish",
-    "element": "passive",
-    "prereq": "Vi12",
-    "rank": 10
-  },
-  "Life Bonus": {
-    "effect": "Max HP +10%",
-    "element": "passive",
-    "prereq": "Vi4",
-    "rank": 2
-  },
-  "Life Drain": {
-    "cost": 1003,
-    "effect": "Steals HP from one enemy. Power increases at lower HP",
-    "element": "almighty",
-    "prereq": "Vi13",
-    "rank": 11
-  },
-  "Life Lift": {
-    "effect": "20% max HP is restored at the end of every skirmish",
-    "element": "passive",
-    "prereq": "Vi16",
-    "rank": 14
-  },
-  "Life Stream": {
-    "effect": "Max HP +50%",
-    "element": "passive",
-    "prereq": "Vi10",
-    "rank": 8
-  },
-  "Life Surge": {
-    "effect": "Max HP +30%",
-    "element": "passive",
-    "prereq": "Vi7",
-    "rank": 5
-  },
-  "Mabufu": {
-    "cost": 1020,
-    "effect": "Inflicts light Ice damage on all enemies",
-    "element": "ice",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Mabufudyne": {
-    "cost": 1040,
-    "effect": "Inflicts heavy Ice damage on all enemies",
-    "element": "ice",
-    "prereq": "Ma17",
-    "rank": 15
-  },
-  "Magic Yang": {
-    "effect": "MP costs for both teams halved",
-    "element": "auto",
-    "prereq": "Ma14"
-  },
-  "Magic Yin": {
-    "cost": 1016,
-    "effect": "Magic damage by team +50%, but MP costs are doubled and Physical attacks cannot be made",
-    "element": "auto",
-    "prereq": "Ma20"
-  },
-  "Makarakarn": {
-    "cost": 1023,
-    "effect": "Reflects one non-Almighty magic attack for each team member",
-    "element": "support",
-    "prereq": "Ma13",
-    "rank": 11
-  },
-  "Mana Aid": {
-    "effect": "10% max MP is restored at the end of every skirmish",
-    "element": "passive",
-    "prereq": "Ma18",
-    "rank": 16
-  },
-  "Mana Bonus": {
-    "effect": "Max MP +10%",
-    "element": "passive",
-    "prereq": "Ma4",
-    "rank": 2
-  },
-  "Mana Stream": {
-    "effect": "Max MP +50%",
-    "element": "passive",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Mana Surge": {
-    "effect": "Max MP +30%",
-    "element": "passive",
-    "prereq": "Ma7",
-    "rank": 5
-  },
-  "Maragi": {
-    "cost": 1020,
-    "effect": "Inflicts light Fire damage on all enemies",
-    "element": "fire",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Maragidyne": {
-    "cost": 1040,
-    "effect": "Inflicts heavy Fire damage on all enemies",
-    "element": "fire",
-    "prereq": "Ma17",
-    "rank": 15
-  },
-  "Marin Karin": {
-    "cost": 1022,
-    "effect": "High chance of inflicting Charm ailment to one enemy",
-    "element": "curse",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Marksman": {
-    "effect": "Physical attacks cannot miss",
-    "element": "auto",
-    "prereq": "Ag7"
-  },
-  "Mazan": {
-    "cost": 1020,
-    "effect": "Inflicts light Force damage on all enemies",
-    "element": "force",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Mazandyne": {
-    "cost": 1040,
-    "effect": "Inflicts heavy Force damage on all enemies",
-    "element": "force",
-    "prereq": "Ma17",
-    "rank": 15
-  },
-  "Mazio": {
-    "cost": 1020,
-    "effect": "Inflicts light Electric damage on all enemies",
-    "element": "elec",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Maziodyne": {
-    "cost": 1040,
-    "effect": "Inflicts heavy Electric damage on all enemies",
-    "element": "elec",
-    "prereq": "Ma17",
-    "rank": 15
-  },
-  "Media": {
-    "cost": 1020,
-    "effect": "Restores some HP to all team members",
-    "element": "recovery",
-    "prereq": "Ma12",
-    "rank": 10
-  },
-  "Mediarahan": {
-    "cost": 1045,
-    "effect": "Restores all HP to all team members",
-    "element": "recovery",
-    "prereq": "Ma18",
-    "rank": 16
-  },
-  "Megido": {
-    "cost": 1050,
-    "effect": "Inflicts moderate Almighty damage on all enemies",
-    "element": "almighty",
-    "prereq": "Ma18",
-    "rank": 16
-  },
-  "Megidolaon": {
-    "cost": 1075,
-    "effect": "Inflicts heavy Almighty damage on all enemies",
-    "element": "almighty",
-    "prereq": "Ma24",
-    "rank": 21
-  },
-  "Might Call": {
-    "cost": 1008,
-    "effect": "Guarantees a critical hit for the next Physical attack done by each team member",
-    "element": "support",
-    "prereq": "Ag11",
-    "rank": 9
-  },
-  "Mighty Hit": {
-    "cost": 15,
-    "effect": "Guaranteed critical hit on one enemy",
-    "element": "phys",
-    "prereq": "Ag11",
-    "rank": 9
-  },
-  "Moneybags": {
-    "effect": "Team gains 20% more Macca after each skirmish",
-    "element": "passive",
-    "rank": 1
-  },
-  "Mow Down": {
-    "cost": 12,
-    "effect": "Inflicts moderate Physical damage on all enemies",
-    "element": "phys",
-    "prereq": "St9",
-    "rank": 7
-  },
-  "Multi-Hit": {
-    "cost": 13,
-    "effect": "Inflicts light Physical damage to one enemy 2-7 times. Number of hits depends on how much more Agility the user has than the target",
-    "element": "phys",
-    "prereq": "Ag9",
-    "rank": 7
-  },
-  "Multi-Strike": {
-    "cost": 13,
-    "effect": "Inflicts light Physical damage to all enemies 2-7 times. Number of hits depends on how much more Agility the user has than the target",
-    "element": "phys",
-    "prereq": "Ag13",
-    "rank": 11
-  },
-  "Nigayomogi": {
-    "cost": 1015,
-    "effect": "Moderate chance of inflicting Poison ailment to all enemies",
-    "element": "curse",
-    "prereq": "Ag7",
-    "rank": 5
-  },
-  "Null Auto": {
-    "effect": "Prevents enemy Auto Skills from activating",
-    "element": "auto",
-    "prereq": "Ag15"
-  },
-  "Null Curse": {
-    "effect": "Provides immunity to Curse attacks and Curse-based ailments",
-    "element": "passive",
-    "prereq": "Ma8",
-    "rank": 6
-  },
-  "Null Elec": {
-    "effect": "Provides immunity to Electric attacks",
-    "element": "passive",
-    "prereq": "Ag10",
-    "rank": 8
-  },
-  "Null Fire": {
-    "effect": "Provides immunity to Fire attacks",
-    "element": "passive",
-    "prereq": "Vi10",
-    "rank": 8
-  },
-  "Null Force": {
-    "effect": "Provides immunity to Force attacks",
-    "element": "passive",
-    "prereq": "Ag10",
-    "rank": 8
-  },
-  "Null Ice": {
-    "effect": "Provides immunity to Ice attacks",
-    "element": "passive",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Null Phys": {
-    "effect": "Provides immunity to Physical attacks",
-    "element": "passive",
-    "prereq": "Vi10",
-    "rank": 8
-  },
-  "Paladin Soul": {
-    "effect": "User takes a hit for the leader while also suffering half damage",
-    "element": "passive",
-    "rank": 1
-  },
-  "Paral Eyes": {
-    "cost": 1015,
-    "effect": "Moderate chance of inflicting Paralyze ailment to all enemies",
-    "element": "curse",
-    "prereq": "Ag7",
-    "rank": 5
-  },
-  "Petra Eyes": {
-    "cost": 1022,
-    "effect": "Moderate chance of inflicting Petrify ailment to all enemies",
-    "element": "curse",
-    "prereq": "Ag10",
-    "rank": 8
-  },
-  "Phys Amp": {
-    "effect": "Physical damage +50%",
-    "element": "passive",
-    "prereq": "St15",
-    "rank": 13
-  },
-  "Phys Boost": {
-    "effect": "Physical damage +20%",
-    "element": "passive",
-    "prereq": "St8",
-    "rank": 6
-  },
-  "Phys Drain": {
-    "effect": "Absorbs Physical attacks",
-    "element": "passive",
-    "prereq": "Vi15",
-    "rank": 13
-  },
-  "Phys Repel": {
-    "effect": "Reflects Physical attacks",
-    "element": "passive",
-    "prereq": "Vi12",
-    "rank": 10
-  },
-  "Phys Up": {
-    "effect": "Physical damage +10%",
-    "element": "passive",
-    "prereq": "St5",
-    "rank": 3
-  },
-  "Pierce": {
-    "effect": "Physical attacks cannot be resisted, nullified, or absorbed",
-    "element": "passive",
-    "prereq": "St15",
-    "rank": 13
-  },
-  "Pierce +": {
-    "cost": 1006,
-    "effect": "Team members gain Pierce",
-    "element": "auto",
-    "prereq": "St21"
-  },
-  "Piercing Hit": {
-    "cost": 10,
-    "effect": "Inflicts moderate Physical damage on one enemy. Cannot be resisted, nulled, or absorbed",
-    "element": "phys",
-    "prereq": "St18",
-    "rank": 16
-  },
-  "Power Charge": {
-    "cost": 1008,
-    "effect": "Increases the damage done by the user's next attack. Wears off once skirmish ends",
-    "element": "support",
-    "prereq": "Vi11",
-    "rank": 9
-  },
-  "Power Hit": {
-    "cost": 8,
-    "effect": "Inflicts heavy Physical damage on one enemy",
-    "element": "phys",
-    "prereq": "St12",
-    "rank": 10
-  },
-  "Prayer": {
-    "cost": 1055,
-    "effect": "Restores all HP and cures all ailments on all team members",
-    "element": "recovery",
-    "prereq": "Ma22",
-    "rank": 20
-  },
-  "Preserve Extra": {
-    "effect": "Reduces chance of character's Extra Turns being removed. Neutral-hitting attacks by the user may randomly gain or remove Extra Turns",
-    "element": "passive",
-    "prereq": "Ag7",
-    "rank": 5
-  },
-  "Quick Move": {
-    "effect": "Increases speed during a skirmish",
-    "element": "passive",
-    "prereq": "Ag8",
-    "rank": 6
-  },
-  "Race-D": {
-    "effect": "Damage taken from an opponent of the same race as the character -50%",
-    "element": "passive",
-    "prereq": "Vi6",
-    "rank": 4
-  },
-  "Race-O": {
-    "effect": "Damage done to an opponent of the same race as the character +50%",
-    "element": "passive",
-    "prereq": "St6",
-    "rank": 4
-  },
-  "Rage Soul": {
-    "cost": 1006,
-    "effect": "Doubles damage output, but normal attack can only be selected",
-    "element": "auto",
-    "prereq": "St17"
-  },
-  "Recarm": {
-    "cost": 1020,
-    "effect": "Revives one fallen ally with about 170 HP",
-    "element": "recovery",
-    "prereq": "Ma13",
-    "rank": 11
-  },
-  "Recarmloss": {
-    "cost": 1030,
-    "effect": "Revives fallen team members, fully restores team's HP, and cures all ailments, but reduces caster's HP to 1",
-    "element": "recovery",
-    "prereq": "Ma16",
-    "rank": 14
-  },
-  "Rejuvenate": {
-    "cost": 1012,
-    "effect": "Casts Diarahan on a heavily injured team member at the start of the skirmish",
-    "element": "auto",
-    "prereq": "Ma13"
-  },
-  "Retaliate": {
-    "effect": "Moderate chance of retaliating when struck with a physical attack",
-    "element": "passive",
-    "prereq": "Vi9",
-    "rank": 7
-  },
-  "Revive": {
-    "cost": 1025,
-    "effect": "Casts Recarm on any fallen team members at the start of the skirmish",
-    "element": "auto",
-    "prereq": "Ma18"
-  },
-  "Samarecarm": {
-    "cost": 1035,
-    "effect": "Revives one fallen ally with full HP",
-    "element": "recovery",
-    "prereq": "Ma21",
-    "rank": 19
-  },
-  "Sexy Gaze": {
-    "cost": 1022,
-    "effect": "Moderate chance of inflicting Charm ailment to all enemies",
-    "element": "curse",
-    "prereq": "Ma9",
-    "rank": 7
-  },
-  "Shield All": {
-    "cost": 1025,
-    "effect": "Blocks one non-Almighty attack for each team member, including Pierce-enhanced attacks",
-    "element": "support",
-    "prereq": "Ma10",
-    "rank": 8
-  },
-  "Snipe": {
-    "cost": 3,
-    "effect": "Inflicts light unavoidable Physical damage on one enemy",
-    "element": "phys",
-    "prereq": "Ag5",
-    "rank": 3
-  },
-  "Strengthen": {
-    "cost": 1010,
-    "effect": "Neutralizes all elemental weaknesses within the team",
-    "element": "auto",
-    "prereq": "Vi10"
-  },
-  "Swift Step": {
-    "effect": "Greatly increases speed during a skirmish",
-    "element": "passive",
-    "prereq": "Ag11",
-    "rank": 9
-  },
-  "Tailwind": {
-    "effect": "Agility +5",
-    "element": "auto",
-    "prereq": "Ag6"
-  },
-  "Taunt": {
-    "cost": 1010,
-    "effect": "Enemies will target user, but user will receive less damage",
-    "element": "support",
-    "prereq": "Vi7",
-    "rank": 5
-  },
-  "Tetrakarn": {
-    "cost": 1023,
-    "effect": "Reflects one Physical attack for each team member",
-    "element": "support",
-    "prereq": "Ma13",
-    "rank": 11
-  },
-  "Ultimate Hit": {
-    "effect": "Converts regular attack to Ultimate Hit, which is Almighty-attributed. If combined with Double Strike, the attack becomes Twin Ultimate. Compatible with Double Strike and Attack All",
-    "element": "passive",
-    "prereq": "St22",
-    "rank": 20
-  },
-  "Victory Cry": {
-    "effect": "25% max HP and 13% max MP is restored at the end of every skirmish",
-    "element": "passive",
-    "prereq": "Ma20",
-    "rank": 18
-  },
-  "Vigilant": {
-    "effect": "Character gains 96% (Demons gain 80%) of EXP earned by the main character when not assigned to a team; Character gains 120% EXP when deployed in combat",
-    "element": "passive",
-    "rank": 1
-  },
-  "Wall": {
-    "cost": 1015,
-    "effect": "Casts Tetrakarn at the start of the skirmish",
-    "element": "auto",
-    "prereq": "Ma15"
-  },
-  "Watchful": {
-    "effect": "Character gains a small additional portion of EXP earned by the main character while not assigned to a team",
-    "element": "passive",
-    "rank": 1
-  },
-  "Weak Kill": {
-    "cost": 10,
-    "effect": "Inflicts moderate Physical damage on one enemy with increased power if the target is suffering from an ailment",
-    "element": "phys",
-    "prereq": "St9",
-    "rank": 7
-  },
-  "Weaken": {
-    "cost": 1005,
-    "effect": "Enemy defense -25%",
-    "element": "auto",
-    "prereq": "Ag12"
-  },
-  "Zan": {
-    "cost": 1004,
-    "effect": "Inflicts light Force damage on one enemy",
-    "element": "force",
-    "rank": 1
-  },
-  "Zandyne": {
-    "cost": 1013,
-    "effect": "Inflicts heavy Force damage on one enemy",
-    "element": "force",
-    "prereq": "Ma14",
-    "rank": 12
-  },
-  "Zio": {
-    "cost": 1004,
-    "effect": "Inflicts light Electric damage on one enemy",
-    "element": "elec",
-    "rank": 1
-  },
-  "Ziodyne": {
-    "cost": 1013,
-    "effect": "Inflicts heavy Electric damage on one enemy",
-    "element": "elec",
-    "prereq": "Ma14",
-    "rank": 12
-  }
+  "2": { "a": ["Agi", "fir", "1 foe"], "b": [1, 1004, 17, 1, 1, 100, 0, 0], "c": ["-", "-", "-"] },
+  "3": { "a": ["Agidyne", "fir", "1 foe"], "b": [12, 1013, 108, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma14"] },
+  "4": { "a": ["Maragi", "fir", "All foes"], "b": [8, 1020, 26, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma10"] },
+  "5": { "a": ["Maragidyne", "fir", "All foes"], "b": [15, 1040, 60, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma17"] },
+  "6": { "a": ["Bufu", "ice", "1 foe"], "b": [1, 1004, 14, 1, 1, 100, 0, 20], "c": ["Freeze", "$1% $2", "-"] },
+  "7": { "a": ["Bufudyne", "ice", "1 foe"], "b": [12, 1013, 102, 1, 1, 100, 0, 20], "c": ["Freeze", "$1% $2", "Ma14"] },
+  "8": { "a": ["Mabufu", "ice", "All foes"], "b": [8, 1020, 22, 1, 1, 100, 0, 15], "c": ["Freeze", "$1% $2", "Ma10"] },
+  "9": { "a": ["Mabufudyne", "ice", "All foes"], "b": [15, 1040, 56, 1, 1, 100, 0, 15], "c": ["Freeze", "$1% $2", "Ma17"] },
+  "10": { "a": ["Zio", "ele", "1 foe"], "b": [1, 1004, 14, 1, 1, 100, 0, 20], "c": ["Shock", "$1% $2", "-"] },
+  "11": { "a": ["Ziodyne", "ele", "1 foe"], "b": [12, 1013, 102, 1, 1, 100, 0, 20], "c": ["Shock", "$1% $2", "Ma14"] },
+  "12": { "a": ["Mazio", "ele", "All foes"], "b": [8, 1020, 22, 1, 1, 100, 0, 15], "c": ["Shock", "$1% $2", "Ma10"] },
+  "13": { "a": ["Maziodyne", "ele", "All foes"], "b": [15, 1040, 56, 1, 1, 100, 0, 15], "c": ["Shock", "$1% $2", "Ma17"] },
+  "14": { "a": ["Zan", "for", "1 foe"], "b": [1, 1004, 17, 1, 1, 100, 0, 0], "c": ["-", "-", "-"] },
+  "15": { "a": ["Zandyne", "for", "1 foe"], "b": [12, 1013, 108, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma14"] },
+  "16": { "a": ["Mazan", "for", "All foes"], "b": [8, 1020, 26, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma10"] },
+  "17": { "a": ["Mazandyne", "for", "All foes"], "b": [15, 1040, 60, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma17"] },
+  "18": { "a": ["Megido", "alm", "All foes"], "b": [16, 1050, 65, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma18"] },
+  "19": { "a": ["Megidolaon", "alm", "All foes"], "b": [21, 1075, 105, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma24"] },
+  "20": { "a": ["Fire Dance", "fir", "Rand foes"], "b": [6, 1023, 10, 2, 5, 100, 0, 0], "c": ["3 hits", "$2 max per foe", "Ma8"] },
+  "21": { "a": ["Ice Dance", "ice", "Rand foes"], "b": [6, 1023, 10, 2, 5, 100, 0, 18], "c": ["Freeze", "$1% $2, 3 hits max per foe", "Ma8"] },
+  "22": { "a": ["Elec Dance", "ele", "Rand foes"], "b": [6, 1023, 10, 2, 5, 100, 0, 18], "c": ["Shock", "$1% $2, 3 hits max per foe", "Ma8"] },
+  "23": { "a": ["Force Dance", "for", "Rand foes"], "b": [6, 1023, 10, 2, 5, 100, 0, 0], "c": ["3 hits", "$2 max per foe", "Ma8"] },
+  "24": { "a": ["Holy Dance", "alm", "Rand foes"], "b": [11, 1045, 5, 2, 5, 100, 0, 0], "c": ["3 hits", "$2 max per foe", "Ma13"] },
+  "25": { "a": ["Drain", "alm", "1 foe"], "b": [9, 1002, 3, 1, 1, 100, 0, 10], "c": ["MP pwr", "$1 $2, steals HP + MP", "Ma11"] },
+  "26": { "a": ["Judgement", "mys", "All foes"], "b": [10, 1035, 0, 1, 1, 100, 0, 50], "c": ["remaining HP", "reduces $2 by $1%", "Ma12"] },
+  "27": { "a": ["Petra Eyes", "mys", "All foes"], "b": [8, 1022, 0, 1, 1, 100, 0, 25], "c": ["Petrify", "$1% $2", "Ag10"] },
+  "29": { "a": ["Paral Eyes", "mys", "All foes"], "b": [5, 1015, 0, 1, 1, 100, 0, 35], "c": ["Paralyze", "$1% $2", "Ag7"] },
+  "30": { "a": ["Death Call", "mys", "All foes"], "b": [10, 1026, 0, 1, 1, 100, 0, 100], "c": ["instakill", "$1% $2 if Poison, Paralyze, Petrify, or Charm", "Ag12"] },
+  "31": { "a": ["Power Hit", "phy", "1 foe"], "b": [10, 8, 70, 1, 1, 70, 0, 0], "c": ["-", "-", "St12"] },
+  "32": { "a": ["Berserk", "phy", "Rand foes"], "b": [8, 13, 30, 2, 5, 75, 0, 0], "c": ["Vi-based", "$2, 3 hits max per foe", "St10"] },
+  "33": { "a": ["Mighty Hit", "phy", "1 foe"], "b": [9, 15, 17, 1, 1, 95, 100, 0], "c": ["-", "-", "Ag11"] },
+  "34": { "a": ["Anger Hit", "phy", "1 foe"], "b": [3, 5, 22, 1, 1, 55, 100, 0], "c": ["-", "-", "St5"] },
+  "35": { "a": ["Brutal Hit", "phy", "1 foe"], "b": [7, 10, 99, 1, 1, 75, 0, 0], "c": ["Vi-based", "$2", "Vi9"] },
+  "36": { "a": ["Hassohappa", "phy", "All foes"], "b": [9, 15, 69, 1, 1, 70, 0, 0], "c": ["Vi-based", "$2", "Vi11"] },
+  "37": { "a": ["Deathbound", "phy", "Rand foes"], "b": [16, 20, 50, 2, 5, 80, 0, 0], "c": ["Vi-based", "$2, 3 hits max per foe", "St18"] },
+  "38": { "a": ["Weak Kill", "phy", "1 foe"], "b": [7, 10, 10, 1, 1, 75, 0, 1250], "c": ["dmg dealt", "$2 x$1 against foes with ailments", "St9"] },
+  "39": { "a": ["Desperation", "alm", "All foes"], "b": [1, 1, 150, 1, 1, 100, 0, 0], "c": ["kills user", "$2, scales with lower HP", "-"] },
+  "41": { "a": ["Gigajama", "alm", "1 foe"], "b": [8, 1020, 0, 1, 1, 100, 0, 40], "c": ["Forget", "$1% $2", "Ma10"] },
+  "43": { "a": ["Makarakarn", "sup", "All allies"], "b": [11, 1023, 0, 1, 1, 100, 0, 0], "c": ["non-Almighty magic", "repels one $2 attack", "Ma13"] },
+  "44": { "a": ["Tetrakarn", "sup", "All allies"], "b": [11, 1023, 0, 1, 1, 100, 0, 0], "c": ["Phys", "repels one $2 attack", "Ma13"] },
+  "45": { "a": ["Might Call", "sup", "All allies"], "b": [9, 1008, 0, 1, 1, 100, 0, 100], "c": ["Phys", "$1% crit for next $2 attack", "Ag11"] },
+  "46": { "a": ["Shield All", "sup", "All allies"], "b": [8, 1025, 0, 1, 1, 100, 0, 0], "c": ["non-Almighty", "blocks one $2 attack", "Ma10"] },
+  "47": { "a": ["Taunt", "sup", "-"], "b": [5, 1010, 0, 1, 1, 100, 0, 0], "c": ["dmg taken", "draws foe attacks but less $2", "Vi7"] },
+  "48": { "a": ["Dia", "rec", "1 ally"], "b": [1, 1008, 0, 1, 1, 100, 0, 25], "c": ["HP restore", "$1 pwr $2", "-"] },
+  "49": { "a": ["Diarahan", "rec", "1 ally"], "b": [13, 1020, 0, 1, 1, 100, 0, 100], "c": ["HP restore", "$1% $2", "Ma15"] },
+  "50": { "a": ["Media", "rec", "All allies"], "b": [10, 1020, 0, 1, 1, 100, 0, 25], "c": ["HP restore", "$1 pwr $2", "Ma12"] },
+  "51": { "a": ["Mediarahan", "rec", "All allies"], "b": [16, 1045, 0, 1, 1, 100, 0, 100], "c": ["HP restore", "$1% $2", "Ma18"] },
+  "52": { "a": ["Amrita", "rec", "All allies"], "b": [3, 1009, 0, 1, 1, 100, 0, 0], "c": ["ailments", "removes $2", "Ma5"] },
+  "53": { "a": ["Prayer", "rec", "All allies"], "b": [20, 1055, 0, 1, 1, 100, 0, 100], "c": ["Diarahan + Amrita", "$2", "Ma22"] },
+  "54": { "a": ["Recarm", "rec", "1 ally"], "b": [11, 1020, 0, 1, 1, 100, 0, 30], "c": ["HP restore", "$1% $2 after reviving", "Ma13"] },
+  "55": { "a": ["Samarecarm", "rec", "1 ally"], "b": [19, 1035, 0, 1, 1, 100, 0, 100], "c": ["HP restore", "$1% $2 after reviving", "Ma21"] },
+  "66": { "a": ["Piercing Hit", "phy", "1 foe"], "b": [16, 10, 60, 1, 1, 70, 0, 0], "c": ["Pierce", "$2", "St18"] },
+  "67": { "a": ["Multi-Hit", "phy", "1 foe"], "b": [7, 13, 4, 2, 7, 65, 0, 0], "c": ["Ag-based", "$2", "Ag9"] },
+  "68": { "a": ["Holy Strike", "alm", "1 foe"], "b": [20, 25, 75, 1, 1, 100, 0, 0], "c": ["St-based", "$2", "St22"] },
+  "69": { "a": ["Power Charge", "sup", "-"], "b": [9, 1008, 0, 1, 1, 100, 0, 0], "c": ["dmg dealt", "raises $2 by next attack", "Vi11"] },
+  "70": { "a": ["Sexy Gaze", "mys", "All foes"], "b": [7, 1022, 0, 1, 1, 100, 0, 25], "c": ["Charm", "$1% $2", "Ma9"] },
+  "71": { "a": ["Marin Karin", "mys", "1 foe"], "b": [10, 1022, 0, 1, 1, 100, 0, 60], "c": ["Charm", "$1% $2", "Ma12"] },
+  "72": { "a": ["Extra Cancel", "phy", "1 foe"], "b": [2, 8, 8, 1, 1, 75, 0, 0], "c": ["Extra Turn", "steals $2 from target", "Ag4"] },
+  "73": { "a": ["Assassinate", "phy", "1 foe"], "b": [7, 8, 40, 1, 1, 70, 0, 0], "c": ["defense", "ignores leader's bonus $2 from team members", "Ag9"] },
+  "74": { "a": ["Fatal Strike", "phy", "1 foe"], "b": [4, 8, 45, 1, 1, 255, 0, 0], "c": ["kill", "cannot $2 unless target has 1 HP", "Ag6"] },
+  "75": { "a": ["Diarama", "rec", "1 ally"], "b": [6, 1012, 0, 1, 1, 100, 0, 100], "c": ["HP restore", "$1 pwr $2", "Ma8"] },
+  "76": { "a": ["Nigayomogi", "mys", "All foes"], "b": [5, 1015, 0, 1, 1, 100, 0, 35], "c": ["Poison", "$1% $2", "Ag7"] },
+  "77": { "a": ["Recarmloss", "rec", "All allies"], "b": [14, 1030, 0, 1, 1, 100, 0, 100], "c": ["Recarm + Diarahan + Amrita", "$2, reduces user's HP to 1", "Ma16"] },
+  "78": { "a": ["Mow Down", "phy", "All foes"], "b": [7, 12, 25, 1, 1, 70, 0, 0], "c": ["-", "-", "St9"] },
+  "79": { "a": ["Snipe", "phy", "1 foe"], "b": [3, 3, 11, 1, 1, 255, 0, 0], "c": ["-", "-", "Ag5"] },
+  "80": { "a": ["Life Drain", "alm", "1 foe"], "b": [11, 1012, 120, 1, 1, 100, 0, 0], "c": ["steals HP", "$2, scales with lower HP", "Vi13"] },
+  "81": { "a": ["Multi-Strike", "phy", "All foes"], "b": [11, 13, 4, 2, 7, 70, 0, 0], "c": ["Ag-based", "$2", "Ag13"] },
+  "82": { "a": ["Inferno", "fir", "Universal"], "b": [18, 1020, 28, 1, 1, 100, 0, 0], "c": ["-", "-", "Ma20"] },
+  "175": { "a": ["+Poison", "pas", "-"], "b": [4, 0, 0, 1, 1, 100, 0, 25], "c": ["Poison", "adds $1% $2 to Phys attacks", "Ag6"] },
+  "176": { "a": ["+Paralyze", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 25], "c": ["Paralyze", "adds $1% $2 to Phys attacks", "Ag9"] },
+  "177": { "a": ["+Stone", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 25], "c": ["Petrify", "adds $1% $2 to Phys attacks", "Ag12"] },
+  "178": { "a": ["Life Bonus", "pas", "-"], "b": [2, 0, 0, 1, 1, 100, 0, 10], "c": ["max HP", "$2 +$1%", "Vi4"] },
+  "179": { "a": ["Mana Bonus", "pas", "-"], "b": [2, 0, 0, 1, 1, 100, 0, 10], "c": ["max MP", "$2 +$1%", "Ma4"] },
+  "180": { "a": ["Life Surge", "pas", "-"], "b": [5, 0, 0, 1, 1, 100, 0, 30], "c": ["max HP", "$2 +$1%", "Vi7"] },
+  "181": { "a": ["Mana Surge", "pas", "-"], "b": [5, 0, 0, 1, 1, 100, 0, 30], "c": ["max MP", "$2 +$1%", "Ma7"] },
+  "182": { "a": ["Hero Aid", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 25], "c": ["crit rate", "$2 +$1%", "Ag5"] },
+  "183": { "a": ["Ares Aid", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 50], "c": ["crit rate", "$2 +$1%", "Ag10"] },
+  "184": { "a": ["Drain Hit", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 25], "c": ["restored as HP", "$1% Phys dmg dealt $2", "Vi12"] },
+  "185": { "a": ["Attack All", "pas", "-"], "b": [12, 0, 0, 1, 1, 100, 0, 0], "c": ["normal attack", "$2 hits all foes", "Vi14"] },
+  "186": { "a": ["Counter", "pas", "-"], "b": [5, 0, 0, 1, 1, 100, 0, 12], "c": ["normal attack", "$1% chance to counter Phys dmg with $2", "Vi7"] },
+  "187": { "a": ["Retaliate", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 25], "c": ["normal attack", "$1% chance to counter Phys dmg with $2", "Vi9"] },
+  "188": { "a": ["Avenge", "pas", "-"], "b": [11, 0, 0, 1, 1, 100, 0, 50], "c": ["normal attack", "$1% chance to counter Phys dmg with $2", "Vi13"] },
+  "189": { "a": ["Phys Boost", "pas", "-"], "b": [6, 0, 0, 1, 1, 100, 0, 1120], "c": ["Phys", "$2 dmg dealt x$1", "St8"] },
+  "190": { "a": ["Phys Amp", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 1150], "c": ["Phys", "$2 dmg dealt x$1", "St15"] },
+  "191": { "a": ["Fire Boost", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 1120], "c": ["Fire", "$2 dmg dealt x$1", "St9"] },
+  "192": { "a": ["Fire Amp", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 1150], "c": ["Fire", "$2 dmg dealt x$1", "St12"] },
+  "193": { "a": ["Ice Boost", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 1120], "c": ["Ice", "$2 dmg dealt x$1", "Ma9"] },
+  "194": { "a": ["Ice Amp", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 1150], "c": ["Ice", "$2 dmg dealt x$1", "Ma12"] },
+  "195": { "a": ["Elec Boost", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 1120], "c": ["Elec", "$2 dmg dealt x$1", "Ma9"] },
+  "196": { "a": ["Elec Amp", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 1150], "c": ["Elec", "$2 dmg dealt x$1", "Ma12"] },
+  "197": { "a": ["Force Boost", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 1120], "c": ["Force", "$2 dmg dealt x$1", "Vi9"] },
+  "198": { "a": ["Force Amp", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 1150], "c": ["Force", "$2 dmg dealt x$1", "Vi12"] },
+  "199": { "a": ["Anti-Phys", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1050], "c": ["Phys", "$2 dmg taken x$1", "Vi5"] },
+  "200": { "a": ["Anti-Fire", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1050], "c": ["Fire", "$2 dmg taken x$1", "Vi5"] },
+  "201": { "a": ["Anti-Ice", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1050], "c": ["Ice", "$2 dmg taken x$1", "Ma5"] },
+  "202": { "a": ["Anti-Elec", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1050], "c": ["Elec", "$2 dmg taken x$1", "Ag5"] },
+  "203": { "a": ["Anti-Force", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1050], "c": ["Force", "$2 dmg taken x$1", "Ag5"] },
+  "204": { "a": ["Anti-Curse", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1050], "c": ["Mystic", "$2 dmg taken x$1", "Ma5"] },
+  "205": { "a": ["Anti-Most", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 1050], "c": ["all but Phys + Almighty", "$2 dmg taken x$1", "Ma12"] },
+  "206": { "a": ["Anti-All", "pas", "-"], "b": [16, 0, 0, 1, 1, 100, 0, 1050], "c": ["all but Almighty", "$2 dmg taken x$1", "Ma18"] },
+  "207": { "a": ["Null Phys", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 0], "c": ["Phys", "nullifies $2 dmg", "Vi10"] },
+  "208": { "a": ["Null Fire", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 0], "c": ["Fire", "nullifies $2 dmg", "Vi10"] },
+  "209": { "a": ["Null Ice", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 0], "c": ["Ice", "nullifies $2 dmg", "Ma10"] },
+  "210": { "a": ["Null Elec", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 0], "c": ["Elec", "nullifies $2 dmg", "Ag10"] },
+  "211": { "a": ["Null Force", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 0], "c": ["Force", "nullifies $2 dmg", "Ag10"] },
+  "212": { "a": ["Null Curse", "pas", "-"], "b": [6, 0, 0, 1, 1, 100, 0, 0], "c": ["Mystic", "nullifies $2 dmg", "Ma8"] },
+  "213": { "a": ["Phys Drain", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 25], "c": ["Phys", "drains $1% $2 dmg", "Vi15"] },
+  "214": { "a": ["Fire Drain", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 25], "c": ["Fire", "drains $1% $2 dmg", "Vi15"] },
+  "215": { "a": ["Ice Drain", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 25], "c": ["Ice", "drains $1% $2 dmg", "Ma15"] },
+  "216": { "a": ["Elec Drain", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 25], "c": ["Elec", "drains $1% $2 dmg", "Ag15"] },
+  "217": { "a": ["Force Drain", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 25], "c": ["Force", "drains $1% $2 dmg", "Ag15"] },
+  "218": { "a": ["Phys Repel", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 0], "c": ["Phys", "repels $2 dmg", "Vi12"] },
+  "219": { "a": ["Fire Repel", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 0], "c": ["Fire", "repels $2 dmg", "Vi12"] },
+  "220": { "a": ["Ice Repel", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 0], "c": ["Ice", "repels $2 dmg", "Ma12"] },
+  "221": { "a": ["Elec Repel", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 0], "c": ["Elec", "repels $2 dmg", "Ag12"] },
+  "222": { "a": ["Force Repel", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 0], "c": ["Force", "repels $2 dmg", "Ag12"] },
+  "223": { "a": ["Watchful", "pas", "-"], "b": [1, 0, 0, 1, 1, 100, 0, 80], "c": ["protag's exp", "gains $1% $2 when not on team", "-"] },
+  "224": { "a": ["Endure", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 1], "c": ["survive", "$2 with $1 HP once per battle after a mortal blow", "Vi9"] },
+  "225": { "a": ["Life Aid", "pas", "-"], "b": [10, 0, 0, 1, 1, 100, 0, 10], "c": ["HP restore", "$1% $2 at end of battle", "Vi12"] },
+  "226": { "a": ["Life Lift", "pas", "-"], "b": [14, 0, 0, 1, 1, 100, 0, 20], "c": ["HP restore", "$1% $2 at end of battle", "Vi16"] },
+  "227": { "a": ["Mana Aid", "pas", "-"], "b": [16, 0, 0, 1, 1, 100, 0, 10], "c": ["MP restore", "$1% $2 at end of battle", "Ma18"] },
+  "228": { "a": ["Victory Cry", "pas", "-"], "b": [18, 0, 0, 1, 1, 100, 0, 25], "c": ["HP restore", "$1% $2 + 13% MP restore at end of battle", "Ma20"] },
+  "229": { "a": ["Pierce", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 0], "c": ["Phys", "$2 attacks cannot be resisted, repelled, or nullified", "St15"] },
+  "230": { "a": ["Race-O", "pas", "-"], "b": [4, 0, 0, 1, 1, 100, 0, 1150], "c": ["dmg dealt", "$2 to same race x$1", "St6"] },
+  "231": { "a": ["Race-D", "pas", "-"], "b": [4, 0, 0, 1, 1, 100, 0, 1050], "c": ["dmg taken", "$2 from same race x$1", "Vi6"] },
+  "232": { "a": ["Dual Shadow", "pas", "-"], "b": [13, 0, 0, 1, 1, 100, 0, 25], "c": ["previous action", "$1% chance of $2 activating twice", "Ag15"] },
+  "233": { "a": ["Extra One", "pas", "-"], "b": [11, 0, 0, 1, 1, 100, 0, 100], "c": ["Extra Turn", "$1% chance of $2 at start of battle", "Ag13"] },
+  "234": { "a": ["Leader Soul", "pas", "-"], "b": [99, 0, 0, 1, 1, 100, 0, 0], "c": ["fatal dmg", "takes $2 for team member if user can survive it", "-"] },
+  "235": { "a": ["Knight Soul", "pas", "-"], "b": [1, 0, 0, 1, 1, 100, 0, 0], "c": ["fatal dmg", "takes $2 for leader and endures it", "-"] },
+  "236": { "a": ["Paladin Soul", "pas", "-"], "b": [1, 0, 0, 1, 1, 100, 0, 0], "c": ["fatal dmg", "takes $2 for leader x0.5 and endures it", "-"] },
+  "237": { "a": ["Hero Soul", "pas", "-"], "b": [1, 0, 0, 1, 1, 100, 0, 0], "c": ["dmg", "takes $2 for leader if own resistance is equal or better", "-"] },
+  "240": { "a": ["Crit Up", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1175], "c": ["dmg dealt", "$2 by crits x$1", "St5"] },
+  "241": { "a": ["Dodge", "pas", "-"], "b": [4, 0, 0, 1, 1, 100, 0, 35], "c": ["Phys", "$2 evasion +$1%", "Ag6"] },
+  "242": { "a": ["Moneybags", "pas", "-"], "b": [1, 0, 0, 1, 1, 100, 0, 20], "c": ["money", "$2 earned from battle +$1%", "-"] },
+  "243": { "a": ["Quick Move", "pas", "-"], "b": [6, 0, 0, 1, 1, 100, 0, 8], "c": ["battle speed", "$2 +$1", "Ag8"] },
+  "244": { "a": ["Vigilant", "pas", "-"], "b": [1, 0, 0, 1, 1, 100, 0, 96], "c": ["protag's exp", "gains $1% $2 when not on team, 120% exp when on team", "-"] },
+  "245": { "a": ["Grimoire", "pas", "-"], "b": [9, 0, 0, 1, 1, 100, 0, 1150], "c": ["ailment affliction rate", "$2 x$1", "Ag11"] },
+  "246": { "a": ["Double Strike", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 1050], "c": ["normal attack", "$2 hits again with x$1 dmg", "St10"] },
+  "247": { "a": ["Preserve Extra", "pas", "-"], "b": [5, 0, 0, 1, 1, 100, 0, 0], "c": ["Extra Turn", "lowers chances of losing $2", "Ag7"] },
+  "248": { "a": ["Anti-Ailment", "pas", "-"], "b": [5, 0, 0, 1, 1, 100, 0, 1050], "c": ["ailment susceptibility", "$2 x$1", "Vi7"] },
+  "249": { "a": ["+Forget", "pas", "-"], "b": [7, 0, 0, 1, 1, 100, 0, 25], "c": ["Forget", "adds $1% $2 to Phys attacks", "Ma9"] },
+  "250": { "a": ["Extra Bonus", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 0], "c": ["Extra Turn", "raises chances of gaining $2", "Ag5"] },
+  "251": { "a": ["Swift Step", "pas", "-"], "b": [9, 0, 0, 1, 1, 100, 0, 16], "c": ["battle speed", "$2 +$1", "Ag11"] },
+  "252": { "a": ["Life Stream", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 50], "c": ["max HP", "$2 +$1%", "Vi10"] },
+  "253": { "a": ["Mana Stream", "pas", "-"], "b": [8, 0, 0, 1, 1, 100, 0, 50], "c": ["max MP", "$2 +$1%", "Ma10"] },
+  "254": { "a": ["Ultimate Hit", "pas", "-"], "b": [20, 0, 0, 1, 1, 100, 0, 0], "c": ["normal attack", "converts $2 to Almighty affinity", "St22"] },
+  "255": { "a": ["Anti-Almighty", "pas", "-"], "b": [17, 0, 0, 1, 1, 100, 0, 1050], "c": ["Almighty", "$2 dmg taken x$1", "Vi19"] },
+  "256": { "a": ["Phys Up", "pas", "-"], "b": [3, 0, 0, 1, 1, 100, 0, 1110], "c": ["Phys", "$2 dmg dealt x$1", "St5"] },
+  "282": { "a": ["Blitzkrieg", "aut", "All allies"], "b": [0, 1004, 0, 1, 1, 100, 0, 25], "c": ["attack", "$2 +$1%", "St8"] },
+  "283": { "a": ["Hustle", "aut", "All allies"], "b": [0, 1003, 0, 1, 1, 100, 0, 25], "c": ["evasion + accuracy", "$2 +$1%", "Ag8"] },
+  "284": { "a": ["Fortify", "aut", "All allies"], "b": [0, 1005, 0, 1, 1, 100, 0, 25], "c": ["defense", "$2 +$1%", "Vi7"] },
+  "285": { "a": ["Barrier", "aut", "All allies"], "b": [0, 1016, 0, 1, 1, 100, 0, 0], "c": ["Makarakarn", "casts $2 at start of battle", "Ma15"] },
+  "286": { "a": ["Wall", "aut", "All allies"], "b": [0, 1015, 0, 1, 1, 100, 0, 0], "c": ["Tetrakarn", "casts $2 at start of battle", "Ma15"] },
+  "287": { "a": ["Full Might", "aut", "All allies"], "b": [0, 1010, 0, 1, 1, 100, 0, 0], "c": ["Might Call", "casts $2 at start of battle", "Ag15"] },
+  "288": { "a": ["Ban Phys", "aut", "Universal"], "b": [0, 1015, 0, 1, 1, 100, 0, 0], "c": ["Phys", "cancels first $2 attack in battle", "St10"] },
+  "289": { "a": ["Ban Fire", "aut", "Universal"], "b": [0, 1008, 0, 1, 1, 100, 0, 0], "c": ["Fire", "cancels first $2 attack in battle", "St10"] },
+  "290": { "a": ["Ban Ice", "aut", "Universal"], "b": [0, 1008, 0, 1, 1, 100, 0, 0], "c": ["Ice", "cancels first $2 attack in battle", "Ma10"] },
+  "291": { "a": ["Ban Elec", "aut", "Universal"], "b": [0, 1008, 0, 1, 1, 100, 0, 0], "c": ["Elec", "cancels first $2 attack in battle", "Ma10"] },
+  "292": { "a": ["Ban Force", "aut", "Universal"], "b": [0, 1008, 0, 1, 1, 100, 0, 0], "c": ["Force", "cancels first $2 attack in battle", "Vi10"] },
+  "293": { "a": ["Ban Curse", "aut", "Universal"], "b": [0, 1006, 0, 1, 1, 100, 0, 0], "c": ["Mystic", "cancels first $2 attack in battle", "Ma10"] },
+  "294": { "a": ["Rage Soul", "aut", "All allies"], "b": [0, 1006, 0, 1, 1, 100, 0, 1200], "c": ["dmg dealt", "$2 x$1, can only normal attack", "St17"] },
+  "295": { "a": ["Grace", "aut", "All allies"], "b": [0, 1025, 0, 1, 1, 100, 0, 0], "c": ["Prayer", "casts $2 at start of battle if applicable", "Ma21"] },
+  "296": { "a": ["Marksman", "aut", "All foes"], "b": [0, 0, 0, 1, 1, 100, 0, 0], "c": ["Phys", "$2 attacks cannot miss", "Ag7"] },
+  "297": { "a": ["Tailwind", "aut", "All allies"], "b": [0, 0, 0, 1, 1, 100, 0, 5], "c": ["Agility", "$2 +$1", "Ag6"] },
+  "298": { "a": ["Magic Yin", "aut", "All allies"], "b": [0, 1016, 0, 1, 1, 100, 0, 1150], "c": ["dmg dealt", "$2 x$1, skill costs x2, can only magic attack", "Ma20"] },
+  "299": { "a": ["Battle Aura", "aut", "All allies"], "b": [0, 1010, 0, 1, 1, 100, 0, 50], "c": ["dmg taken", "nullifies $2 if less than $1", "Vi12"] },
+  "300": { "a": ["Revive", "aut", "All allies"], "b": [0, 1025, 0, 1, 1, 100, 0, 30], "c": ["Recarm", "casts $2 at start of battle if applicable", "Ma18"] },
+  "301": { "a": ["Magic Yang", "aut", "Universal"], "b": [0, 0, 0, 1, 1, 100, 0, 50], "c": ["MP skill costs", "$2 -$1%", "Ma14"] },
+  "302": { "a": ["Healing", "aut", "All allies"], "b": [0, 1012, 0, 1, 1, 100, 0, 20], "c": ["Media", "casts $2 at start of battle if applicable", "Ma12"] },
+  "303": { "a": ["Alter Pain", "aut", "All allies"], "b": [0, 0, 0, 1, 1, 100, 0, 15], "c": ["restored as MP", "$1% dmg taken $2", "Vi10"] },
+  "304": { "a": ["Weaken", "aut", "All foes"], "b": [0, 1005, 0, 1, 1, 100, 0, 25], "c": ["defense", "$2 -$1%", "Ag12"] },
+  "305": { "a": ["Debilitate", "aut", "All foes"], "b": [0, 1012, 0, 1, 1, 100, 0, 25], "c": ["defense + accuracy + evasion", "$2 -$1%", "Ag14"] },
+  "306": { "a": ["Health Save", "aut", "Universal"], "b": [0, 0, 0, 1, 1, 100, 0, 75], "c": ["HP skill costs", "$2 -$1%", "Ag11"] },
+  "307": { "a": ["Strengthen", "aut", "All allies"], "b": [0, 1010, 0, 1, 1, 100, 0, 0], "c": ["ally weaknesses", "removes $2", "Vi10"] },
+  "308": { "a": ["Grimoire+", "aut", "All allies"], "b": [0, 0, 0, 1, 1, 100, 0, 0], "c": ["Grimoire", "grants $2 in battle", "Ag11"] },
+  "309": { "a": ["Desperation A", "aut", "All allies"], "b": [0, 0, 0, 1, 1, 100, 0, 0], "c": ["speed bonus", "gains $2, loses initial Extra Turns", "Ag11"] },
+  "310": { "a": ["Rejuvenate", "aut", "1 ally"], "b": [0, 1012, 0, 1, 1, 100, 0, 0], "c": ["Diarahan", "casts $2 at start of battle if applicable", "Ma13"] },
+  "311": { "a": ["Null Auto", "aut", "All foes"], "b": [0, 0, 0, 1, 1, 100, 0, 0], "c": ["Auto skills", "cancels $2 in battle", "Ag15"] },
+  "312": { "a": ["Pierce+", "aut", "All allies"], "b": [0, 1006, 0, 1, 1, 100, 0, 0], "c": ["Pierce", "grants $2 in battle", "St21"] },
+  "313": { "a": ["Endure+", "aut", "All allies"], "b": [0, 1010, 0, 1, 1, 100, 0, 0], "c": ["Endure", "grants $2 in battle", "Vi20"] },
+  "401": { "a": ["Switch", "rac", "Range 6"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["ally team", "switch positions with $2", "Avatar"] },
+  "402": { "a": ["Warp Step", "rac", "Range 8"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["ally team", "switch positions with $2", "Avatar"] },
+  "403": { "a": ["Flight", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1], "c": ["move range", "$2 +$1 + ignore obstacles", "Avian"] },
+  "404": { "a": ["Winged Flight", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 2], "c": ["move range", "$2 +$1 + ignore obstacles", "Avian"] },
+  "405": { "a": ["Animal Leg", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["move a second time", "can $2 after attacking", "Beast"] },
+  "406": { "a": ["Free Leap", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["move a second time", "can $2 after attacking + escape during Extra Turn", "Beast"] },
+  "407": { "a": ["Awakening", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "$2 by MP skills x$1", "Deity"] },
+  "408": { "a": ["Enlightenment", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1150], "c": ["dmg dealt", "$2 by MP skills x$1 + MP costs -25%", "Deity"] },
+  "409": { "a": ["Blood Wine", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["MP restore", "$2 based on own level", "Divine"] },
+  "410": { "a": ["Angel Stigma", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["MP restore", "greater $2 based on own level", "Divine"] },
+  "411": { "a": ["Evil Wave", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1], "c": ["attack range", "$2 +$1 + move cost x2 + no Extra Turns", "Dragon"] },
+  "412": { "a": ["Evil Flow", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 4], "c": ["attack range", "$2 when cast +$1 + move cost x2 + no Extra Turns", "Dragon"] },
+  "413": { "a": ["Glamour", "rac", "Range 3"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["HP restore", "$2 + bonus effect", "Fairy"] },
+  "414": { "a": ["Fairy Dust", "rac", "Area 3"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["HP restore", "$2 + bonus effect", "Fairy"] },
+  "415": { "a": ["Sacrifice", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 100], "c": ["HP restore", "$1% $2 + 50% MP restore based on defeated foe level", "Fallen"] },
+  "416": { "a": ["Fallen's Mark", "rac", "Range 3"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Mystic", "steals MP when cast, $2 affinity", "Fallen"] },
+  "417": { "a": ["Devotion", "rac", "Range 2"], "b": [0, 0, 0, 0, 0, 0, 0, 50], "c": ["HP restore", "$2 based on own HP", "Femme"] },
+  "418": { "a": ["Mother's Love", "rac", "Range 2"], "b": [0, 0, 0, 0, 0, 0, 0, 100], "c": ["HP restore", "$2 based on own HP + turn delay -1", "Femme"] },
+  "419": { "a": ["Uncanny Form", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["act a second time", "can $2 when cast", "Fiend"] },
+  "420": { "a": ["Unearthly Form", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["act a second time", "can $2 when cast with less MP", "Fiend"] },
+  "421": { "a": ["Phantasma", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["move cost", "$2 x$1 + ignore obstacles", "Genma"] },
+  "422": { "a": ["True Phantasm", "rac", "Range 5"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["ally team", "teleport next to $2", "Genma"] },
+  "423": { "a": ["Ghost Wounds", "rac", "Range 3"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["move range", "$2 x$1 + action range reduce to 1", "Ghost"] },
+  "424": { "a": ["Possession", "rac", "Range 3"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["move range", "$2 x$1 + action range reduce to 1 + 100% Curse", "Ghost"] },
+  "425": { "a": ["Hero's Mark", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1070], "c": ["dmg taken", "$2 x$1 for 1 turn", "Hero"] },
+  "426": { "a": ["Hero's Proof", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg taken", "$2 x$1 for 1 turn", "Hero"] },
+  "427": { "a": ["Bind", "rac", "Range 3"], "b": [0, 0, 0, 0, 0, 0, 0, 1], "c": ["move range", "$2 decreased to $1", "Jaki"] },
+  "428": { "a": ["Evil Bind", "rac", "Range 3"], "b": [0, 0, 0, 0, 0, 0, 0, 1], "c": ["move range", "$2 decreased to $1 + turn delay +1", "Jaki"] },
+  "429": { "a": ["Double Up", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["attack a second time", "can $2 after attacking", "Kishin"] },
+  "430": { "a": ["Matchless", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["attack a second time", "can $2 + use field skills after attacking", "Kishin"] },
+  "431": { "a": ["Affection", "rac", "Range 4"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["HP restore", "$2 + Amrita", "Megami"] },
+  "432": { "a": ["Goddess Grace", "rac", "Range 6"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["HP restore", "$2 + Amrita", "Megami"] },
+  "433": { "a": ["Asura Karma", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Double Extra", "can gain $2 during Extra Turn", "Omega"] },
+  "434": { "a": ["Asura Destiny", "rac", "Own Team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Double Extra", "can gain $2 during Extra Turn + may start with Extra Turn", "Omega"] },
+  "435": { "a": ["Constrict", "rac", "Range 1"], "b": [0, 0, 0, 0, 0, 0, 0, 1], "c": ["move range", "foe $2 decreased to $1 + combat initiative when attacked", "Snake"] },
+  "436": { "a": ["Dragon Bind", "rac", "Range 1"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Extra Turn", "foe may lose $2 + turn not delayed when attacked", "Snake"] },
+  "437": { "a": ["Aggravate", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 100], "c": ["Phys", "$1% crit for next $2 attack", "Touki"] },
+  "438": { "a": ["Agitate", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 100], "c": ["Phys", "$1% crit for next $2 attack + crit rate slowly returns to normal", "Touki"] },
+  "439": { "a": ["Tyranny", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["restored as MP", "dmg dealt $2 + reduce foe combat initiative", "Tyrant"] },
+  "440": { "a": ["Blood Treaty", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 1300], "c": ["Drain skills", "$2 dmg x$1 for 1 turn when cast", "Tyrant"] },
+  "441": { "a": ["Chaos Wave", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 2], "c": ["attack range", "$2 +$1 + move range -1 + move cost x2 + no Extra Turns", "Vile"] },
+  "442": { "a": ["Chaos Breath", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 3], "c": ["attack range", "$2 +$1 + move range -1 + move cost x2 + no Extra Turns", "Vile"] },
+  "443": { "a": ["Devil Speed", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 7], "c": ["move range", "$2 increased to $1 + combat initiative", "Wilder"] },
+  "444": { "a": ["Devil Flash", "rac", "Own team"], "b": [0, 0, 0, 0, 0, 0, 0, 8], "c": ["move range", "$2 increased to $1 + combat initiative", "Wilder"] }
 }

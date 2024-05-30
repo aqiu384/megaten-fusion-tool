@@ -1,12 +1,14 @@
 export function skillRowToEffect(nums: number[], descs: string[]): string {
-  const [rank, cost, power, minHits, maxHits, accuracy, crit, mod] = nums;
+  const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
   const [effect, cond, card] = descs;
   const baseMod = parseInt(mod.toString());
   const powerStr = power === 0 ? '' : `${power} pwr`;
   const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits < 2 ? '' : `${maxHits} hits`;
-  const modStr = baseMod === 0 ? '' : baseMod < 1000 ? `${mod}%` : baseMod < 2000 ? `x${(baseMod - 1000) / 100}` : baseMod < 3000 ? `+${baseMod - 2000}%` : `+${baseMod - 3000}`;
-  const effectStr = `${modStr} ${effect === '-' ? '' : effect} ${cond === '-' ? '' : cond}`.trim();
-  const fullStr = [powerStr, hitStr, effectStr].filter(s => s !== '').join(', ');
+  const critStr = crit === 0 ? '' : `${crit}% crit`;
+  const accStr = acc === 0 || 90 <= acc && acc <= 110 ? '' : `${Math.min(acc, 200)}% acc`;
+  const modStr = `${baseMod < 1000 ? mod : (baseMod - 1000) / 100}`
+  const effectStr = cond === '-' ? '' : cond.replace('$1', modStr).replace('$2', effect);
+  const fullStr = [powerStr, hitStr, accStr, critStr, effectStr].filter(s => s !== '').join(', ');
   return fullStr.substring(0, 1) === 'x' ? fullStr : fullStr.substring(0, 1).toUpperCase() + fullStr.substring(1);
 }
 
