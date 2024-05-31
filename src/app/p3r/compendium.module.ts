@@ -10,6 +10,7 @@ import { PQCompendiumModule } from '../pq2/pq-compendium.module';
 import { CompendiumConfig } from '../pq2/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
+import TRANSLATIONS_JSON from './data/translations.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
@@ -23,12 +24,22 @@ function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
+  const allRaces = [];
   const inheritTypes: { [elem: string]: number } = {};
   const enemyData = {}
 
-  for(const race of COMP_CONFIG_JSON.races) {
-    races.push(race);
-    races.push(race + ' P');
+  for (const enRace of COMP_CONFIG_JSON.races) {
+    const penRace = enRace + ' P';
+    races.push(enRace);
+    races.push(penRace);
+    allRaces.push(enRace);
+    allRaces.push(penRace);
+    TRANSLATIONS_JSON[penRace] = [];
+    for (const langRace of TRANSLATIONS_JSON[enRace]) {
+      allRaces.push(langRace);
+      allRaces.push(langRace + 'P');
+      TRANSLATIONS_JSON[penRace].push(langRace + 'P');
+    }
   }
 
   Object.assign(DEMON_DATA_JSON, PARTY_DATA_JSON);
@@ -88,8 +99,10 @@ function createCompConfig(): CompendiumConfig {
 
   return {
     appTitle: 'Persona 3 Reload',
+    translations: TRANSLATIONS_JSON,
+    lang: 'en',
     races,
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    raceOrder: allRaces.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['p3r'],
 
     skillData: SKILL_DATA_JSON,
@@ -116,6 +129,7 @@ function createCompConfig(): CompendiumConfig {
     hasQrcodes: false,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
+    defaultDemon: 'Pixie',
     settingsKey: 'p3r-fusion-tool-settings',
     settingsVersion: 2401131500
   };

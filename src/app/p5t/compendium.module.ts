@@ -67,6 +67,8 @@ function createCompConfig(): CompendiumConfig {
 
   return {
     appTitle: 'Persona 5 Tactica',
+    translations: { en: [] },
+    lang: 'en',
     races,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['p5t'],
@@ -95,6 +97,7 @@ function createCompConfig(): CompendiumConfig {
     hasQrcodes: false,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
+    defaultDemon: 'Pixie',
     settingsKey: 'p5t-fusion-tool-settings',
     settingsVersion: 2401131500
   };

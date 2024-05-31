@@ -76,6 +76,8 @@ function createCompConfig(): CompendiumConfig {
 
   return {
     appTitle: 'Persona Q: Shadow of the Labyrinth',
+    translations: { en: [] },
+    lang: 'en',
     races,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['pq1'],
@@ -104,6 +106,7 @@ function createCompConfig(): CompendiumConfig {
     hasQrcodes: true,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
+    defaultDemon: 'Pixie',
     settingsKey: 'pq-fusion-tool-settings',
     settingsVersion: 2405151000
   };

@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { FusionSettings } from '../models/fusion-settings';
-import { translateComp } from '../pipes';
+import { translateComp } from '../models/translator';
 import Translations from  '../data/translations.json';
 
 @Component({

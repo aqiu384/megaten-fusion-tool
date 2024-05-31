@@ -16,6 +16,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <ng-container *ngIf="demon">
       <app-demon-stats
+        [lang]="lang"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
@@ -23,20 +24,24 @@ import { FusionDataService } from '../fusion-data.service';
         [inherits]="demon.inherits">
       </app-demon-stats>
       <app-demon-resists *ngIf="compConfig.hasDemonResists"
+        [lang]="lang"
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-inherits
+        [lang]="lang"
         [inheritHeaders]="compConfig.inheritElems"
         [inherits]="compendium.getInheritElems(demon.inherits)">
       </app-demon-inherits>
       <app-demon-skills
+        [lang]="lang"
         [hasTarget]="true"
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
       <app-smt-fusions
+        [lang]="lang"
         [hasTripleFusion]="compConfig.hasTripleFusion"
         [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
@@ -50,6 +55,7 @@ export class DemonEntryComponent {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
+  @Input() lang = 'en';
 }
 
 @Component({
@@ -57,12 +63,14 @@ export class DemonEntryComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-demon-entry *ngIf="!demon || !demon.isEnemy"
+      [lang]="compConfig.lang"
       [name]="name"
       [demon]="demon"
       [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
     <app-enemy-entry *ngIf="demon && demon.isEnemy"
+      [lang]="compConfig.lang"
       [name]="name"
       [demon]="demon"
       [compConfig]="compConfig"

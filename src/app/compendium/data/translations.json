@@ -17,7 +17,7 @@
     "ShadowList": ["Shadow List", "悪魔一覧", "敌人列表"],
     "SkillList": ["Skill List", "スキル一覧", "技能列表"],
     "FusionChart": ["Fusion Chart", "合体表", "合体表"],
-    "RecipGenerator": ["Recipe Generator", "合体レシピ"],
+    "RecipGenerator": ["Recipe Generator", "合体レシピ", "合体配方生成"],
     "FusionSettings": ["Fusion Settings", "DLC", "合成设置"],
     "FusionCalculator": [" Fusion Calculator", " 合体アプリ", " 合体计算工具"]
   },
@@ -26,6 +26,8 @@
   },
   "DemonListComponent": {
     "AppTitle": ["List of Demons - ", "悪魔一覧 "],
+    "AppPersonas": ["List of Personas - ", "悪魔一覧 ", "人格面具列表 "],
+    "AppShadows": ["List of Shadows - ", "悪魔一覧 ", "敌人列表 "],
     "Demon": ["Demon", "悪魔一覧"],
     "Persona": ["Persona", "悪魔一覧"],
     "Stats": ["Stats", "ステータス"],
@@ -46,8 +48,8 @@
     "EvolvesTo": ["Evolves To", "変異"]
   },
   "FusionChartComponent": {
-    "AppTitle": ["Fusion Chart - $APP Fusion Calculator", "合体表 $APP 合体アプリ"],
-    "NameCut": ["4", "2"],
+    "AppTitle": ["Fusion Chart - $APP Fusion Calculator", "合体表 $APP 合体アプリ", " 合体表 $APP 合体计算工具"],
+    "NameCut": ["4", "2", "2"],
     "LightNormalFusions": ["Light and Neutral Normal Fusions", "LIGHT合体"],
     "DarkNormalFusions": ["Dark Normal Fusions", "DARK合体"]
   },
@@ -58,11 +60,11 @@
     "NoFusionsFound": ["No fusions found!", "合体なし"]
   },
   "FusionSettingsComponent": {
-    "AppTitle": ["Fusion Settings - ", "合体設定 "],
-    "DlcTitle": ["Fusion Settings", "DLC"]
+    "AppTitle": ["Fusion Settings - ", "合体設定 ", "合成设置 "],
+    "DlcTitle": ["Fusion Settings", "合体設定", "合成设置"]
   },
   "RecipeGeneratorComponent": {
-    "AppTitle": ["Recipe Generator - ", "合体レシピ "],
+    "AppTitle": ["Recipe Generator - ", "合体レシピ ", "合体配方生成 "],
     "RecipeGenerator": ["Recipe Generator", "合体レシピ","合体配方生成"],
     "Target": ["Target", "悪魔", "合成目标"],
     "Race": ["Race", "種族", "种类"],
@@ -79,7 +81,7 @@
     "NoRecipesFound": ["No recipes found", "合体なし", "无"]
   },
   "SkillListComponent": {
-    "AppTitle": ["List of Skills - ", "スキル一覧 "],
+    "AppTitle": ["List of Skills - ", "スキル一覧 ", "技能列表 "],
     "Skill": ["Skill", "スキル"],
     "HowToAcquire": ["How To Acquire", "悪魔"],
     "Elem": ["Elem", "属性"],

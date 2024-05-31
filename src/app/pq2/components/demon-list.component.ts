@@ -5,12 +5,15 @@ import { Title } from '@angular/platform-browser';
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
+import { translateComp } from '../../compendium/models/translator';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-demon-list-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [lang]="compConfig.lang"
       [isEnemy]="showEnemies"
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="statHeaders"
@@ -43,13 +46,13 @@ export class DemonListContainerComponent extends DLCC {
       this.compConfig.raceOrder[d2.race]
     ) * 200 + d2.lvl - d1.lvl;
 
-    this.appName = `List of Personas - ${fusionDataService.appName}`;
+    this.appName = translateComp(Translations.DemonListComponent.AppPersonas, this.compConfig.lang) + fusionDataService.appName;
     this.statHeaders = this.compConfig.baseStats;
     this.resistHeaders = this.compConfig.hasDemonResists ? this.compConfig.resistElems : [];
     this.inheritOrder = this.compConfig.elemOrder;
 
     if (this.showEnemies) {
-      this.appName = `List of Shadows - ${fusionDataService.appName}`;
+      this.appName = translateComp(Translations.DemonListComponent.AppShadows, this.compConfig.lang) + fusionDataService.appName;
       this.statHeaders = this.compConfig.enemyStats;
       this.resistHeaders = this.compConfig.resistElems;
       this.inheritOrder = null;

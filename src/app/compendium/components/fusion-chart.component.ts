@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
 import { FusionChart } from '../models';
-import { translateComp } from '../pipes';
+import { translateComp } from '../models/translator';
 import Translations from '../data/translations.json'
 
 @Component({
@@ -70,8 +70,8 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
     this.subscriptions.push(
       this.route.parent.data.subscribe(data => {
         this.appName = data.appName || 'Shin Megami Tensei';
-        this.nameCut = parseInt(translateComp(this.msgs.NameCut, this.lang));
-        this.title2.setTitle(translateComp(this.msgs.AppTitle, this.lang).replace('$APP', this.appName));
+        this.nameCut = parseInt(translateComp(this.msgs.NameCut, data.lang));
+        this.title2.setTitle(translateComp(this.msgs.AppTitle, data.lang).replace('$APP', this.appName));
       }));
   }
 

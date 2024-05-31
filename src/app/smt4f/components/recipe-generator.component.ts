@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
-import { translateComp } from '../../compendium/pipes';
+import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
 @Component({

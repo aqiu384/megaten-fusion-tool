@@ -1,28 +1,36 @@
-import { Demon } from '../models';
 import { DemonUnlock } from '../models/fusion-settings';
+import Translations from '../data/translations.json';
 
 type StringDict = { [name: string]: string };
 
-export function translateDemonData(oldDemons: any, enNames: { [name: string]: string }): any {
+export function translateComp(dict: string[], lang: string): string {
+  const i = Translations.Languages.Languages.indexOf(lang);
+  return dict[-1 < i && i < dict.length ? i : 0];
+}
+
+export function translateDemonData(oldDemons: any, enNames: StringDict): any {
   const newDemons = {};
 
   for (const [dname, entry] of Object.entries(oldDemons)) {
     const newEntry = Object.assign({}, entry);
-    const newSkills = {};
 
-    for (const [sname, lvl] of Object.entries(entry['skills'])) {
-      newSkills[enNames[sname] || sname] = lvl;
+    if (entry['skills'] instanceof Array) {
+      newEntry['skills'] = entry['skills'].map(s => enNames[s] || s)
+    } else {
+      newEntry['skills'] = {};
+      for (const [sname, lvl] of Object.entries(entry['skills'])) {
+        newEntry['skills'][enNames[sname] || sname] = lvl;
+      }
     }
 
     newEntry['race'] = enNames[newEntry['race']] || newEntry['race'];
-    newEntry['skills'] = newSkills;
     newDemons[enNames[dname] || dname] = newEntry;
   }
 
   return newDemons;
 }
 
-export function translateSkillData(oldSkills: any, enNames: { [name: string]: string }): any {
+export function translateSkillData(oldSkills: any, enNames: StringDict): any {
   const newSkills = {};
 
   for (const [sname, entry] of Object.entries(oldSkills)) {
@@ -35,7 +43,7 @@ export function translateSkillData(oldSkills: any, enNames: { [name: string]: st
   return newSkills;
 }
 
-export function translateSpecialRecipes(oldRecipes: { [name: string]: string[] }, enNames: { [name: string]: string }): any {
+export function translateSpecialRecipes(oldRecipes: { [name: string]: string[] }, enNames: StringDict): any {
   const newRecipes = {};
 
   for (const [dname, recipe] of Object.entries(oldRecipes)) {
@@ -45,7 +53,7 @@ export function translateSpecialRecipes(oldRecipes: { [name: string]: string[] }
   return newRecipes;
 }
 
-export function translateFusionChart(oldChart: any, enNames: { [name: string]: string }): any {
+export function translateFusionChart(oldChart: any, enNames: StringDict): any {
   const newChart = {
     races: oldChart['races'].map(race => enNames[race] || race),
     table: oldChart['table'].map(row => row.map(race => enNames[race] || race))
@@ -59,7 +67,7 @@ export function translateFusionChart(oldChart: any, enNames: { [name: string]: s
   return newChart;
 }
 
-export function translateDemonUnlocks(oldUnlocks: DemonUnlock[], enNames: { [name: string]: string }): DemonUnlock[] {
+export function translateDemonUnlocks(oldUnlocks: DemonUnlock[], enNames: StringDict): DemonUnlock[] {
   const newUnlocks: DemonUnlock[] = []
 
   for (const { category, unlocked, conditions } of oldUnlocks) {

@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { FusionDataService } from '../fusion-data.service';
-import { translateComp } from '../../compendium/pipes';
+import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
 @Component({

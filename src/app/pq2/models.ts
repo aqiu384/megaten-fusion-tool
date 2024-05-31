@@ -24,6 +24,8 @@ export interface DecodedDemon {
 
 export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
+  translations: { [en: string]: string[] };
+  lang: string;
   races: string[];
 
   skillData;
@@ -50,6 +52,7 @@ export interface CompendiumConfig extends BaseComp {
   hasQrcodes: boolean;
   specialRecipes?;
 
+  defaultDemon: string;
   settingsKey: string;
   settingsVersion: number;
 }

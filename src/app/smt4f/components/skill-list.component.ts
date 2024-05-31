@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { SkillListContainerComponent as SLCC } from '../../compendium/containers/skill-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
-import { translateComp } from '../../compendium/pipes';
+import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
 @Component({

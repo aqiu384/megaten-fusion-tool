@@ -76,6 +76,8 @@ function createCompConfig(): CompendiumConfig {
 
   return {
     appTitle: 'Persona Q2: New Cinema Labyrinth',
+    translations: { en: [] },
+    lang: 'en',
     races,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['pq2'],
@@ -104,6 +106,7 @@ function createCompConfig(): CompendiumConfig {
     hasQrcodes: true,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
+    defaultDemon: 'Pixie',
     settingsKey: 'pq2-fusion-tool-settings',
     settingsVersion: 2405151000
   };

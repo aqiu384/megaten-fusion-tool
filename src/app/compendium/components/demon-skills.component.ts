@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges } from '@angular/core';
 import { Compendium, Skill } from '../models';
+import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-demon-skills',
@@ -11,14 +12,14 @@ import { Compendium, Skill } from '../models';
           <th [attr.colSpan]="skillHeaderLen" class="title">{{ title }}</th>
         </tr>
         <tr>
-          <th>Elem</th>
-          <th>Name</th>
-          <th>Cost</th>
-          <th>Effect</th>
-          <th *ngIf="hasTarget">Target</th>
-          <th *ngIf="hasRank">Rank</th>
+          <th>{{ msgs.Elem | translateComp:lang }}</th>
+          <th>{{ msgs.Name | translateComp:lang }}</th>
+          <th>{{ msgs.Cost | translateComp:lang }}</th>
+          <th>{{ msgs.Effect | translateComp:lang }}</th>
+          <th *ngIf="hasTarget">{{ msgs.Target| translateComp:lang }}</th>
+          <th *ngIf="hasRank">{{ msgs.Rank | translateComp:lang }}</th>
           <th *ngIf="hasInherit">Inherit</th>
-          <th *ngIf="hasLvl">Level</th>
+          <th *ngIf="hasLvl">Lvl</th>
         </tr>
       </thead>
       <tbody>
@@ -52,8 +53,10 @@ export class DemonSkillsComponent implements OnInit, OnChanges {
   @Input() compendium: Compendium;
   @Input() elemOrder: { [elem: string]: number };
   @Input() skillLevels: { [id: string]: number };
+  @Input() lang = 'en';
   skills: Skill[];
   skillHeaderLen = 5;
+  msgs = Translations.SkillListComponent;
 
   ngOnInit() {
     this.nextColIndices();

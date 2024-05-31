@@ -1,5 +1,7 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { FusionDataService } from '../fusion-data.service';
+import { translateComp } from '../../compendium/models/translator';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-pq2-compendium',
@@ -23,11 +25,17 @@ export class CompendiumComponent {
     const compConfig = fusionDataService.compConfig;
     this.otherLinks = [compConfig.hasQrcodes ? 
       { title: 'QR Code Generator', link: 'qrcodes', } :
-      { title: 'Recipe Generator', link: 'recipes' }
+      { title: translateComp(
+        Translations.CompendiumComponent.RecipGenerator,
+        fusionDataService.compConfig.lang
+      ), link: 'recipes' }
     ];
 
     if (compConfig.hasEnemies) {
-      this.otherLinks.unshift({ title: 'Shadow List', link: 'shadows' });
+      this.otherLinks.unshift({ title: translateComp(
+        Translations.CompendiumComponent.ShadowList,
+        fusionDataService.compConfig.lang
+      ), link: 'shadows' });
     }
   }
 }

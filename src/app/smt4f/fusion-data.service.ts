@@ -8,7 +8,7 @@ import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CAL
 import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
 import { CompendiumConfig } from './models';
 import { FusionSettings } from '../compendium/models/fusion-settings';
-import { translateComp } from '../compendium/pipes';
+import { translateComp } from '../compendium/models/translator';
 import Translations from  '../compendium/data/translations.json';
 
 @Injectable()

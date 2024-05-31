@@ -1,5 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
+import { Router } from '@angular/router';
 
 import { Compendium } from './models/compendium';
 import { PersonaFusionChart } from '../compendium/models/per-fusion-chart';
@@ -18,6 +19,7 @@ import { fuseWithDiffRace } from '../compendium/fusions/smt-nonelem-fusions';
 import { splitWithDiffRace } from '../compendium/fusions/smt-nonelem-fissions';
 import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
 import { FusionSettings } from '../compendium/models/fusion-settings';
+import { translateCompConfig } from './models/translator';
 
 @Injectable()
 export class FusionDataService extends ConfigurableFusionDataService<Compendium, PersonaFusionChart> implements IFusionTrioService {
@@ -33,7 +35,11 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
   squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
+  constructor(@Inject(COMPENDIUM_CONFIG) config: CompendiumConfig, router: Router) {
+    const parts = router.url.split('/');
+    const lang = config.translations.en.includes(parts[1]) ? parts[1] : 'en';
+    const compConfig = lang === 'en' ? config : translateCompConfig(config, lang);
+
     const fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races);
     const fusionSettings = new FusionSettings(compConfig.demonUnlocks, []);
 

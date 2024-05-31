@@ -49,4 +49,5 @@ export class EnemyEntryComponent {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
+  @Input() lang = 'en';
 }

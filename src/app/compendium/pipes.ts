@@ -1,10 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import Translations from './data/translations.json';
-
-export function translateComp(dict: string[], lang: string): string {
-  const i = Translations.Languages.Languages.indexOf(lang);
-  return dict[-1 < i && i < dict.length ? i : 0];
-}
+import { translateComp } from './models/translator';
 
 @Pipe({ name: 'translateComp' })
 export class TranslateCompPipe implements PipeTransform {

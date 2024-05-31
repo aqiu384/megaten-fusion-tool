@@ -5,12 +5,15 @@ import { Subscription } from 'rxjs';
 import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
+import { translateComp } from '../../compendium/models/translator';
+import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-recipe-generator-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-recipe-generator
+      [lang]="lang"
       [maxSkills]="maxSkills"
       [compendium]="compendium"
       [squareChart]="squareChart"
@@ -24,10 +27,12 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   recipeConfig: RecipeGeneratorConfig;
   subscriptions: Subscription[] = [];
   maxSkills: number;
+  lang = 'en';
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
     this.maxSkills = compConfig.hasDemonResists ? 8 : 2;
+    this.lang = compConfig.lang;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
       fusionCalculator: this.fusionDataService.fusionCalculator,
@@ -38,7 +43,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       triExclusiveRaces: compConfig.hasTripleFusion ? ['Fool', 'Tower', 'Moon', 'Sun', 'Judgement'] : [],
       triFissionCalculator: this.fusionDataService.triFissionCalculator,
       triFusionCalculator: this.fusionDataService.triFusionCalculator,
-      defaultDemon: 'Pixie'
+      defaultDemon: compConfig.defaultDemon
     };
   }
 
@@ -46,7 +51,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
   ngOnDestroy() { this.unsubscribeAll(); }
 
   setTitle() {
-    this.title.setTitle(`Recipe Generator - ${this.fusionDataService.appName}`);
+    this.title.setTitle(translateComp(Translations.RecipeGeneratorComponent.AppTitle, this.lang) + this.fusionDataService.appName);
   }
 
   subscribeAll() {
