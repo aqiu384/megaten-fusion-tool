@@ -1,1403 +1,227 @@
 {
-  "Drain Elec": {
-    "add": "Absorbs Elec dmg",
-    "card": "Foggy Day ???",
-    "element": "pas"
-  },
-  "Drain Fire": {
-    "add": "Absorbs Fire dmg",
-    "card": "Full Moon ???",
-    "element": "pas"
-  },
-  "Abysmal Surge": {
-    "add": "Despair",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Abyssal Eye": {
-    "cost": 1050,
-    "element": "alm",
-    "hit": 95,
-    "power": 220,
-    "target": "All foes",
-    "unique": "Hastur"
-  },
-  "Ailment Boost": {
-    "add": "ailment affliction rate",
-    "card": "Fusion Accident (36)",
-    "element": "pas",
-    "mod": 1125
-  },
-  "Ailment Hunter": {
-    "add": "dmg for each foe afflicted with an ailment",
-    "element": "tra",
-    "mod": 1125
-  },
-  "Akasha Arts": {
-    "cost": 20,
-    "crit": 30,
-    "element": "phy",
-    "hit": 80,
-    "max": 2,
-    "min": 1,
-    "power": 300,
-    "target": "All foe",
-    "unique": "Athena"
-  },
-  "Ali Dance": {
-    "add": "incoming attack accuracy",
-    "card": "Jazz 1/15 Foggy Day 50",
-    "element": "pas",
-    "mod": 1050
-  },
-  "All-out Attack Boost": {
-    "add": "Raises dmg from All-out Attacks",
-    "element": "pas"
-  },
-  "Allure of Wisdom": {
-    "add": "SP skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Almighty Amp": {
-    "add": "Almighty dmg",
-    "card": "Network Fusion",
-    "element": "pas",
-    "mod": 1150
-  },
-  "Almighty Boost": {
-    "add": "Almighty dmg",
-    "card": "Network Fusion",
-    "element": "pas",
-    "mod": 1125
-  },
-  "Amrita Shower": {
-    "add": "Patra + Energy Drop + Baisudi",
-    "card": "Fusion Accident (56)",
-    "cost": 1012,
-    "element": "rec",
-    "target": "All allies"
-  },
-  "Angelic Grace": {
-    "add": "non-Almighty evasion rate",
-    "card": "Fusion Accident (56)",
-    "element": "pas",
-    "mod": 1200
-  },
-  "Apt Pupil": {
-    "add": "crit rate",
-    "card": "CJ Gym Trickster 50",
-    "element": "pas",
-    "mod": 1200
-  },
-  "Arms Master": {
-    "add": "HP skill costs",
-    "card": "Jazz 1/22",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Atomic Bloodline": {
-    "add": "Nuke skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Atomic Hellscape": {
-    "add": "Nuke skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Ave Maria": {
-    "add": "Support skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Bargain Bolts": {
-    "add": "Elec skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Black Viper": {
-    "cost": 1048,
-    "element": "alm",
-    "hit": 98,
-    "power": 230,
-    "target": "1 foe",
-    "unique": "Satan"
-  },
-  "Bleeding Dry Brush": {
-    "add": "Drains next non-Almighty attack, Removes innate weaknesses for self",
-    "card": "Ring of Vanity",
-    "cost": 1022,
-    "element": "sup",
-    "target": "1 ally",
-    "unique": "Ring of Vanity"
-  },
-  "Blessed Bloodline": {
-    "add": "Bless skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Bloodstained Eyes": {
-    "add": "Raises evasion rate against foes afflicted with ailments",
-    "element": "tra"
-  },
-  "Bolstering Force": {
-    "add": "attack during 1 More",
-    "element": "tra",
-    "mod": 1150,
-    "unique": "Tsukiyomi"
-  },
-  "Brain Jack": {
-    "add": "Brainwash",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Brave Step": {
-    "add": "Rebellion",
-    "cost": 1016,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Cendrillon"
-  },
-  "Champion's Cup": {
-    "add": "Diarama + Tarukaja",
-    "card": "Ring of Lust",
-    "cost": 1010,
-    "element": "rec",
-    "target": "1 ally",
-    "unique": "Ring of Lust"
-  },
-  "Charge": {
-    "add": "dmg for next Phys or Gun attack",
-    "card": "Jazz 9/4",
-    "cost": 1015,
-    "element": "sup",
-    "mod": 1250,
-    "target": "Self"
-  },
-  "Checkmate": {
-    "add": "Debilitate",
-    "cost": 1090,
-    "element": "sup",
-    "target": "All foes",
-    "unique": "Agnes"
-  },
-  "Chi You's Blessing": {
-    "add": "Psy skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Circle of Sadness": {
-    "add": "Activates endure up to 4 times",
-    "element": "tra",
-    "unique": "Orpheus"
-  },
-  "Cocytus": {
-    "add": "Ice skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Cold-Blooded": {
-    "add": "Raises Freeze affliction rate during 1 More",
-    "element": "tra"
-  },
-  "Concealment": {
-    "add": "Lowers chances of being targeted for 3 turns",
-    "card": "Fusion Mutation",
-    "cost": 1004,
-    "element": "sup"
-  },
-  "Concentrate": {
-    "add": "dmg for next magic attack",
-    "card": "Jazz 9/25",
-    "cost": 1015,
-    "element": "sup",
-    "mod": 1250,
-    "target": "Self"
-  },
-  "Cool Customer": {
-    "add": "ailment susceptibility rate for all allies",
-    "element": "tra",
-    "mod": 1050,
-    "unique": "Lucy"
-  },
-  "Country Maker": {
-    "add": "x(1 + compendium completion %) attack and defense",
-    "element": "tra",
-    "unique": "Izanagi-no-Okami"
-  },
-  "Crisis Control": {
-    "add": "Reduces dmg taken when weakness struck",
-    "element": "tra"
-  },
-  "Cursed Bloodline": {
-    "add": "Curse skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Dazzler": {
-    "add": "Dizzy",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Death Scythe": {
-    "add": "Fear",
-    "cost": 20,
-    "crit": 5,
-    "element": "phy",
-    "hit": 90,
-    "mod": 55,
-    "power": 300,
-    "target": "1 foe"
-  },
-  "Deathly Illness": {
-    "add": "Raises success rate of instakill skills",
-    "element": "tra"
-  },
-  "Debilitate": {
-    "add": "Tarunda + Rakunda + Sukunda",
-    "card": "Jazz 12/11",
-    "cost": 1030,
-    "element": "sup",
-    "target": "1 foe"
-  },
-  "Dekaja": {
-    "add": "Removes -kaja effects",
-    "card": "CJ Maid Cafe",
-    "cost": 1010,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Dekunda": {
-    "add": "Removes -kunda effects",
-    "card": "CJ Maid Cafe",
-    "cost": 1010,
-    "element": "sup",
-    "target": "All allies"
-  },
-  "Demon's Bite": {
-    "add": "HP recovery for self",
-    "element": "tra",
-    "mod": 1200
-  },
-  "Demonic Decree": {
-    "add": "Halves remaining HP",
-    "cost": 1038,
-    "element": "dar",
-    "hit": 95,
-    "target": "1 foe"
-  },
-  "Diarama": {
-    "add": "HP recovery",
-    "card": "Chain 20",
-    "cost": 1006,
-    "element": "rec",
-    "power": 160,
-    "target": "1 ally"
-  },
-  "Divine Grace": {
-    "add": "Recovery skill power",
-    "card": "Fusion Accident",
-    "element": "pas",
-    "mod": 1150
-  },
-  "Divine Judgement": {
-    "add": "Halves remaining HP",
-    "cost": 1038,
-    "element": "lig",
-    "hit": 95,
-    "target": "1 foe"
-  },
-  "Dodge Ice": {
-    "add": "Ice evasion rate",
-    "card": "Trial 20",
-    "element": "pas",
-    "mod": 1200
-  },
-  "Dormina": {
-    "add": "Sleep",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Double Shot": {
-    "cost": 12,
-    "crit": 5,
-    "element": "gun",
-    "hit": 90,
-    "min": 2,
-    "power": 50,
-    "target": "1 foe"
-  },
-  "Draining Mouth": {
-    "add": "absorption skill dmg",
-    "element": "tra",
-    "mod": 1200
-  },
-  "Dream Needle": {
-    "add": "Sleep",
-    "cost": 8,
-    "crit": 5,
-    "element": "gun",
-    "hit": 90,
-    "mod": 35,
-    "power": 70,
-    "target": "1 foe"
-  },
-  "Drunken Passion": {
-    "add": "Fire skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "EXP Boost": {
-    "add": "raise to EXP earned",
-    "element": "pas",
-    "mod": 15
-  },
-  "Eccentric Temper": {
-    "add": "Phys dmg for all allies, Low chance",
-    "element": "tra",
-    "mod": 1180,
-    "unique": "William"
-  },
-  "Elec Break": {
-    "add": "Sets Elec resistance to neutral",
-    "cost": 1006,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Electric Bloodline": {
-    "add": "Elec skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Endure": {
-    "add": "Survive fatal attack with 1 HP once per battle",
-    "card": "Full Moon 50",
-    "element": "pas"
-  },
-  "Enduring Soul": {
-    "add": "Survive fatal attack with 100% HP once per battle",
-    "card": "L Leblanc",
-    "element": "pas"
-  },
-  "Evil Smile": {
-    "add": "Fear",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Evil Touch": {
-    "add": "Fear",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Explosive Scheme": {
-    "add": "HP restored to all allies after Futaba's All-Out Attack",
-    "element": "tra",
-    "mod": 25,
-    "unique": "Necronomicon"
-  },
-  "Fighting Spirit": {
-    "add": "Charge",
-    "cost": 1080,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "William"
-  },
-  "Fire Break": {
-    "add": "Sets Fire resistance to neutral",
-    "cost": 1006,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Fortify Spirit": {
-    "add": "ailment susceptibility rate",
-    "card": "Fusion Accident (56)",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Foul Odor": {
-    "add": "Raises ailment affliction rate after Baton Pass",
-    "element": "tra"
-  },
-  "Foul Stench": {
-    "add": "Raises ailment affliction rate",
-    "element": "tra"
-  },
-  "Frei": {
-    "card": "CJ Theater",
-    "cost": 1004,
-    "element": "nuk",
-    "hit": 99,
-    "power": 40,
-    "target": "1 foe"
-  },
-  "Frenzied Bull": {
-    "add": "x(1 + HP lost under 50%) attack",
-    "element": "tra",
-    "unique": "Asterius"
-  },
-  "Frigid Bloodline": {
-    "add": "Ice skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Gaia Blessing": {
-    "add": "Burn, Freeze, Shock affliction rate for all allies",
-    "element": "tra",
-    "mod": 1150,
-    "unique": "Agnes"
-  },
-  "Gaia Pact": {
-    "add": "Burn, Freeze, Shock affliction rate for all allies",
-    "element": "tra",
-    "mod": 1125,
-    "unique": "Johanna"
-  },
-  "Gambler's Foresight": {
-    "add": "Masukukaja, Begins battle with Concentrate for self",
-    "card": "Ring of Envy",
-    "cost": 1020,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Ring of Envy"
-  },
-  "Gattling Blows": {
-    "cost": 16,
-    "crit": 5,
-    "element": "phy",
-    "hit": 90,
-    "max": 4,
-    "min": 3,
-    "power": 30,
-    "target": "1 foe"
-  },
-  "Ghost Nest": {
-    "add": "Raises ailment affliction rate against downed foes",
-    "element": "tra"
-  },
-  "Gloomy Child": {
-    "add": "Activates all weather event passives",
-    "element": "tra"
-  },
-  "Gluttonmouth": {
-    "add": "HP recovery for self",
-    "element": "tra",
-    "mod": 1150
-  },
-  "God Maker": {
-    "add": "Raises ally trait activation rate",
-    "element": "tra",
-    "unique": "Izanagi"
-  },
-  "Grace of Mother": {
-    "add": "Recovery skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Grace of the Olive": {
-    "add": "x0.0 skill costs during 1 More",
-    "element": "tra",
-    "unique": "Athena"
-  },
-  "Great Aim": {
-    "add": "raise to Gun acc",
-    "element": "pas",
-    "mod": 5
-  },
-  "Growth 2": {
-    "add": "EXP gained when not equipped",
-    "card": "CJ Beach",
-    "element": "pas",
-    "mod": 50
-  },
-  "Guiding Tendril": {
-    "add": "Downs all foes, Ambush only, Life Aid for self",
-    "card": "Ring of Sorrow",
-    "cost": 1020,
-    "element": "alm",
-    "target": "All foes",
-    "unique": "Ring of Sorrow"
-  },
-  "Gun Amp": {
-    "add": "Gun dmg",
-    "element": "pas",
-    "mod": 1150
-  },
-  "Gun Boost": {
-    "add": "Gun dmg",
-    "element": "pas",
-    "mod": 1125
-  },
-  "Hallowed Spirit": {
-    "add": "HP and SP recovery for self",
-    "element": "tra",
-    "mod": 1200,
-    "unique": "Messiah"
-  },
-  "Hazy Presence": {
-    "add": "Raises ally follow-up attack rate",
-    "element": "tra",
-    "unique": "Raoul"
-  },
-  "Heat Riser": {
-    "add": "Tarukaja + Rakukaja + Sukukaja",
-    "card": "Jazz 12/4 CJ Underground Mall",
-    "cost": 1030,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Heat Up": {
-    "add": "HP and 10 SP restored each turn, Ambush only",
-    "card": "Trial 50, Fusion Accident (36)",
-    "element": "pas",
-    "mod": 5
-  },
-  "Heated Bloodline": {
-    "add": "Fire skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "High Counter": {
-    "add": "chance to repel Phys dmg",
-    "card": "CJ Leblanc",
-    "element": "pas",
-    "mod": 20
-  },
-  "High Energy": {
-    "add": "Concentrate",
-    "cost": 1080,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Celestine"
-  },
-  "Hollow Jester": {
-    "add": "attack for each foe afflicted with an ailment",
-    "element": "tra",
-    "mod": 1140,
-    "unique": "Magatsu-Izanagi"
-  },
-  "Holy Benevolence": {
-    "add": "Samarecarm",
-    "cost": 1026,
-    "element": "rec",
-    "target": "All allies",
-    "unique": "Maria"
-  },
-  "Holy Embrace": {
-    "add": "HP restored each turn",
-    "element": "pas",
-    "mod": 25,
-    "unique": "Maria"
-  },
-  "Holy Whisper": {
-    "add": "HP and 15 SP restored each turn",
-    "element": "pas",
-    "mod": 15,
-    "unique": "Maria"
-  },
-  "Hyakka Ryouran": {
-    "add": "Heat Riser",
-    "cost": 1090,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Gorokichi"
-  },
-  "Ice Break": {
-    "add": "Sets Ice resistance to neutral",
-    "cost": 1006,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Icy Glare": {
-    "add": "ailment susceptibility rate for all allies",
-    "element": "tra",
-    "mod": 1075,
-    "unique": "Milady"
-  },
-  "Immunity": {
-    "add": "Nullifies ailments",
-    "element": "tra"
-  },
-  "Infinite Scheme": {
-    "add": "HP restored to all allies after Futaba's All-Out Attack",
-    "element": "tra",
-    "mod": 100,
-    "unique": "Al Azif"
-  },
-  "Ingenious Spirit": {
-    "add": "Support and Almighty skill costs for all allies, Medium chance",
-    "element": "tra",
-    "mod": 1050,
-    "unique": "Hereward"
-  },
-  "Intense Focus": {
-    "add": "single-target attack magic dmg",
-    "element": "tra",
-    "mod": 1120
-  },
-  "Internal Hypnosis": {
-    "add": "Extends buffs received by 1 turn",
-    "element": "tra"
-  },
-  "Invigorate 1": {
-    "add": "3 SP restored each turn",
-    "card": "Technician 30",
-    "element": "pas"
-  },
-  "Inviolable Beauty": {
-    "add": "repelled dmg",
-    "element": "tra",
-    "mod": 1300,
-    "unique": "Kaguya"
-  },
-  "Iron Heart": {
-    "add": "SP skill costs after Baton Pass",
-    "element": "tra",
-    "mod": 1050,
-    "unique": "Thanatos"
-  },
-  "Just Die": {
-    "add": "x0.0 instakill skill costs",
-    "element": "tra"
-  },
-  "Kill Rush": {
-    "cost": 14,
-    "crit": 5,
-    "element": "phy",
-    "hit": 90,
-    "max": 3,
-    "min": 1,
-    "power": 40,
-    "target": "1 foe"
-  },
-  "Kuzunoha's Order": {
-    "add": "Reduces skill costs by 25%",
-    "element": "pas"
-  },
-  "Laevateinn": {
-    "cost": 25,
-    "crit": 0,
-    "element": "phy",
-    "hit": 98,
-    "power": 800,
-    "target": "1 foe",
-    "unique": "Loki"
-  },
-  "Last Stand": {
-    "add": "incoming non-almighty attack accuracy, Surrounded only",
-    "element": "pas",
-    "mod": 1033
-  },
-  "Life Aid": {
-    "add": "HP and SP restored after battle",
-    "card": "Trial 80, Fusion Accident (56)",
-    "element": "pas",
-    "mod": 8
-  },
-  "Life Boost": {
-    "add": "20 more SP, All Stats +3",
-    "element": "pas"
-  },
-  "Life Surge": {
-    "add": "more HP",
-    "element": "pas",
-    "mod": 30
-  },
-  "Life Wall": {
-    "add": "Nullifies next non-Almighty attack",
-    "cost": 1095,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Lucy"
-  },
-  "Linked Bloodline": {
-    "add": "Greatly raises attack after Baton Pass",
-    "element": "tra"
-  },
-  "Lullaby": {
-    "add": "Sleep",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Mabufu": {
-    "add": "Freeze",
-    "card": "CJ BBB",
-    "cost": 1010,
-    "element": "ice",
-    "hit": 95,
-    "mod": 20,
-    "power": 40,
-    "target": "All foes"
-  },
-  "Magic Ability": {
-    "add": "magic dmg",
-    "card": "Network Fusion",
-    "element": "pas",
-    "mod": 1125
-  },
-  "Majestic Presence": {
-    "add": "Recovery skill power and lowers costs for all allies",
-    "element": "tra",
-    "mod": 1200,
-    "unique": "Zorro"
-  },
-  "Makajam": {
-    "add": "Forget",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Makajamaon": {
-    "add": "Forget",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Makara Break": {
-    "add": "Removes Makarakarn",
-    "cost": 1009,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Makarakarn": {
-    "add": "Repels next non-Almighty magic attack",
-    "card": "Jazz 10/30",
-    "cost": 1024,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Mana Bonus": {
-    "add": "SP +10%",
-    "element": "pas"
-  },
-  "Mana Surge": {
-    "add": "SP +30%",
-    "element": "pas"
-  },
-  "Maragi": {
-    "add": "Burn",
-    "card": "CJ BBB",
-    "cost": 1010,
-    "element": "fir",
-    "hit": 95,
-    "mod": 20,
-    "power": 40,
-    "target": "All foes"
-  },
-  "Marakukaja": {
-    "add": "Raises defense for 3 turns",
-    "card": "Jazz 7/17 10/16",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All allies"
-  },
-  "Marakunda": {
-    "add": "Lowers defense for 3 turns",
-    "card": "Jazz 8/14 11/13",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Marin Karin": {
-    "add": "Brainwash",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Martyr's Gift": {
-    "add": "Bless skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Masquerade": {
-    "cost": 25,
-    "crit": 30,
-    "element": "phy",
-    "hit": 90,
-    "min": 2,
-    "power": 300,
-    "target": "1 foe",
-    "unique": "Ella"
-  },
-  "Mastery of Magic": {
-    "add": "SP skill costs for all allies, Low chance",
-    "element": "tra",
-    "mod": 1075,
-    "unique": "Celestine"
-  },
-  "Masukukaja": {
-    "add": "Raises accuracy + evasion for 3 turns",
-    "card": "Jazz 7/31 10/23 CJ Aquarium",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All allies"
-  },
-  "Masukunda": {
-    "add": "Lowers accuracy + evasion for 3 turns",
-    "card": "Jazz 8/28 11/27 CJ Aquarium",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Matarukaja": {
-    "add": "Raises attack for 3 turns",
-    "card": "Jazz 7/10 10/9",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All allies"
-  },
-  "Matarunda": {
-    "add": "Lowers attack for 3 turns",
-    "card": "Jazz 8/7 11/6",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Mazionga": {
-    "add": "Shock",
-    "card": "Trial 30",
-    "cost": 1016,
-    "element": "ele",
-    "hit": 95,
-    "mod": 20,
-    "power": 100,
-    "target": "All foes"
-  },
-  "Megido": {
-    "card": "Fusion Accident",
-    "cost": 1015,
-    "element": "alm",
-    "hit": 95,
-    "power": 120,
-    "target": "All foes"
-  },
-  "Mighty Gaze": {
-    "add": "all-target attack magic dmg",
-    "element": "tra",
-    "mod": 1120
-  },
-  "Miracle Rush": {
-    "cost": 16,
-    "crit": 40,
-    "element": "phy",
-    "hit": 55,
-    "power": 80,
-    "target": "All foes",
-    "unique": "Diego"
-  },
-  "Money Boost": {
-    "add": "money earned after battle",
-    "element": "pas",
-    "mod": 1200
-  },
-  "Mother's Lament": {
-    "add": "Curse skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Mouth of Savoring": {
-    "add": "SP recovery for self",
-    "element": "tra",
-    "mod": 1150
-  },
-  "Myriad Truths": {
-    "cost": 1040,
-    "element": "alm",
-    "hit": 95,
-    "min": 3,
-    "power": 120,
-    "target": "All foes",
-    "unique": "Izanagi-no-Okami"
-  },
-  "Naranari": {
-    "add": "SP recovery for self",
-    "element": "tra",
-    "mod": 1200
-  },
-  "Neo Cadenza": {
-    "add": "HP recovery, Heat Riser",
-    "cost": 1024,
-    "element": "rec",
-    "mod": 50,
-    "target": "All allies",
-    "unique": "Orpheus F"
-  },
-  "Nocturnal Flash": {
-    "add": "Dizzy",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Nuke Break": {
-    "add": "Sets Nuke resistance to neutral",
-    "cost": 1006,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Nuke Wall": {
-    "add": "Sets Nuke resistance to resists",
-    "card": "Fusion Mutation",
-    "cost": 1018,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Null Burn": {
-    "add": "Nullifies Burn",
-    "element": "pas"
-  },
-  "Null Freeze": {
-    "add": "Nullifies Freeze",
-    "element": "pas"
-  },
-  "Null Hunger": {
-    "add": "Nullifies Hunger",
-    "element": "pas"
-  },
-  "Null Mortal": {
-    "add": "Null Bless + Null Curse",
-    "element": "pas"
-  },
-  "Null Shock": {
-    "add": "Nullifies Shock",
-    "element": "pas"
-  },
-  "Omen": {
-    "add": "Greatly raises success rate of instakill skills",
-    "element": "tra"
-  },
-  "Ominous Words": {
-    "add": "Despair",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Pagan Allure": {
-    "add": "magic dmg, Cannot exceed x2.0 passive cap",
-    "element": "tra",
-    "mod": 1150
-  },
-  "Phantom Show": {
-    "add": "Sleep",
-    "cost": 1004,
-    "element": "ail",
-    "mod": 90,
-    "target": "All foes",
-    "unique": "Raoul"
-  },
-  "Pinch Anchor": {
-    "add": "Allows use of surrounded-only skills after Baton Pass",
-    "element": "tra"
-  },
-  "Pinnacle of Magic": {
-    "add": "SP skill costs for all allies, Low chance",
-    "element": "tra",
-    "mod": 1050,
-    "unique": "Celestine"
-  },
-  "Positive Thoughts": {
-    "add": "Extends buffs received by 2 turns",
-    "element": "tra"
-  },
-  "Potent Hypnosis": {
-    "add": "Extends buffs cast by 1 turn",
-    "element": "tra"
-  },
-  "Power Slash": {
-    "cost": 10,
-    "crit": 20,
-    "element": "phy",
-    "hit": 85,
-    "power": 100,
-    "target": "1 foe"
-  },
-  "President's Insight": {
-    "add": "Concentrate, Attack Master for self",
-    "card": "Ring of Greed",
-    "cost": 1015,
-    "element": "sup",
-    "target": "1 ally",
-    "unique": "Ring of Greed"
-  },
-  "Proud Presence": {
-    "add": "Recovery skill power for all allies",
-    "element": "tra",
-    "mod": 1200,
-    "unique": "Zorro"
-  },
-  "Psi": {
-    "card": "CJ Theater",
-    "cost": 1004,
-    "element": "psy",
-    "hit": 99,
-    "power": 40,
-    "target": "1 foe"
-  },
-  "Psy Break": {
-    "add": "Sets Psy resistance to neutral",
-    "cost": 1006,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Psychic Bloodline": {
-    "add": "Psy skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Pulinpa": {
-    "add": "Confuse",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Raging Temper": {
-    "add": "Phys dmg for all allies, Low chance",
-    "element": "tra",
-    "mod": 1140,
-    "unique": "Captain Kidd"
-  },
-  "Rakukaja": {
-    "add": "Raises defense for 3 turns",
-    "card": "CJ Sky Tree",
-    "cost": 1008,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Rare Antibody": {
-    "add": "Reduces susceptibility to ailments",
-    "element": "tra"
-  },
-  "Rebellion Blade": {
-    "add": "down bonus instead",
-    "cost": 1099,
-    "element": "alm",
-    "hit": 90,
-    "mod": 1250,
-    "power": 900,
-    "target": "1 foe",
-    "unique": "Hereward"
-  },
-  "Regenerate 3": {
-    "add": "HP restored each turn",
-    "card": "CJ Art Museum",
-    "element": "pas",
-    "mod": 6
-  },
-  "Relentless": {
-    "add": "Single-target dmg that strikes foe weaknesses",
-    "element": "tra",
-    "mod": 1150
-  },
-  "Relief Bloodline": {
-    "add": "Support skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Resist Burn": {
-    "add": "Burn susceptibility rate",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Resist Freeze": {
-    "add": "Freeze susceptibility rate",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Resist Hunger": {
-    "add": "Hunger susceptibility rate",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Resist Shock": {
-    "add": "Shock susceptibility rate",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Retaliating Body": {
-    "add": "repelled dmg",
-    "element": "tra",
-    "mod": 1200
-  },
-  "Samarecarm": {
-    "add": "Revives with 100% HP",
-    "card": "CJ Church",
-    "cost": 1018,
-    "element": "rec",
-    "target": "1 ally"
-  },
-  "Samurai's Ruling": {
-    "add": "Raises crit rate and magic evasion rate",
-    "element": "pas"
-  },
-  "Savior Bloodline": {
-    "add": "Recovery skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Scoundrel Eyes": {
-    "add": "Raises Phys evasion rate for all allies",
-    "element": "tra",
-    "unique": "Goemon"
-  },
-  "Sharp Student": {
-    "add": "incoming crit rate",
-    "card": "Slime Mara (Tk) CJ Gym",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Skillful Combo": {
-    "add": "Raises attack after Baton Pass",
-    "element": "tra"
-  },
-  "Skillful Technique": {
-    "add": "Technical dmg",
-    "element": "tra",
-    "mod": 1125
-  },
-  "Soul Chain": {
-    "add": "20 SP restored after Baton Pass",
-    "card": "Network Fusion",
-    "element": "pas"
-  },
-  "Soul Touch": {
-    "add": "5 SP restored after Baton Pass",
-    "element": "pas"
-  },
-  "Spell Master": {
-    "add": "SP skill costs",
-    "card": "Jazz 1/29",
-    "element": "pas",
-    "mod": 1050
-  },
-  "Static Electricity": {
-    "add": "Raises Shock affliction rate against downed foes",
-    "element": "tra"
-  },
-  "Stealth": {
-    "add": "Lowers chances of being targeted",
-    "element": "pas"
-  },
-  "Striking Weight": {
-    "add": "Phys dmg",
-    "element": "tra",
-    "mod": 1120
-  },
-  "Sukukaja": {
-    "add": "Raises accuracy + evasion for 3 turns",
-    "card": "CJ Sky Tree",
-    "cost": 1008,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Support Plus 1": {
-    "add": "Adds Masukunda to Moral Support pool",
-    "card": "Jazz 1",
-    "element": "pas",
-    "unique": "Necronomicon"
-  },
-  "Support Plus 2": {
-    "add": "Adds Masukunda and Marakunda to Moral Support pool",
-    "card": "Jazz 2",
-    "element": "pas",
-    "unique": "Necronomicon"
-  },
-  "Support Plus 3": {
-    "add": "Adds Masukunda, Marakunda, and Matarunda to Moral Support pool",
-    "card": "Jazz 3",
-    "element": "pas",
-    "unique": "Necronomicon"
-  },
-  "Support Rate Up": {
-    "add": "Raises chances of Moral Support activating",
-    "card": "Jazz 4",
-    "element": "pas",
-    "unique": "Necronomicon"
-  },
-  "Tactical Spirit": {
-    "add": "Support skill costs for all allies, Medium chance",
-    "element": "tra",
-    "mod": 1050,
-    "unique": "Robin Hood"
-  },
-  "Tag Team": {
-    "add": "Allows use of consumables without expending them after Baton Pass",
-    "element": "tra",
-    "unique": "Ariadne"
-  },
-  "Tarukaja": {
-    "add": "Raises attack for 3 turns",
-    "card": "CJ Sky Tree",
-    "cost": 1008,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Taunt": {
-    "add": "Rage",
-    "cost": 1003,
-    "element": "ail",
-    "mod": 70,
-    "target": "1 foe"
-  },
-  "Taunting Aura": {
-    "add": "Raises chances of being targeted for 3 turns",
-    "card": "Fusion Mutation",
-    "cost": 1004,
-    "element": "sup"
-  },
-  "Tentarafoo": {
-    "add": "Confuse",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Tetra Break": {
-    "add": "Removes Tetrakarn",
-    "cost": 1009,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Tetraja": {
-    "add": "Nullifies next instakill attack",
-    "card": "CJ Maid Cafe",
-    "cost": 1024,
-    "element": "sup",
-    "target": "All allies"
-  },
-  "Tetrakarn": {
-    "add": "Repels next Phys or Gun attack",
-    "card": "Jazz 10/2 CJ Destiny Land",
-    "cost": 1024,
-    "element": "sup",
-    "target": "1 ally"
-  },
-  "Thermal Conduct": {
-    "add": "Raises Burn affliction rate after Baton Pass",
-    "element": "tra"
-  },
-  "Tyrant's Mind": {
-    "add": "attack, Can exceed x2.0 passive cap",
-    "element": "pas",
-    "mod": 1125,
-    "unique": "Satanel"
-  },
-  "Tyrant's Will": {
-    "add": "Charge, Defense Master for self",
-    "card": "Ring of Pride",
-    "cost": 1015,
-    "element": "sup",
-    "target": "1 ally",
-    "unique": "Ring of Pride"
-  },
-  "Ultimate Support": {
-    "add": "Moral Support may now fully recover and buff all allies",
-    "element": "pas",
-    "unique": "Al Azif"
-  },
-  "Ultimate Vessel": {
-    "add": "Carries multiple traits to pass down during fusion",
-    "element": "tra",
-    "unique": "Regent"
-  },
-  "Undying Fury": {
-    "add": "Phys dmg",
-    "element": "tra",
-    "mod": 1130
-  },
-  "Universal Law": {
-    "add": "Technical dmg",
-    "element": "tra",
-    "mod": 1150
-  },
-  "Unparalleled Eyes": {
-    "add": "Greatly raises Phys evasion rate for all allies",
-    "element": "tra",
-    "unique": "Gorokichi"
-  },
-  "Unshaken Will": {
-    "add": "Nullifies Confuse, Fear, Rage, Despair",
-    "element": "pas",
-    "unique": "Asura"
-  },
-  "Vahana's Wings": {
-    "add": "Wind skill costs",
-    "element": "tra",
-    "mod": 1025
-  },
-  "Vault Guardian": {
-    "add": "Marakukaja, Begins battle with Tetrakarn + Makarakarn for self",
-    "card": "Ring of Gluttony",
-    "cost": 1020,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Ring of Gluttony"
-  },
-  "Veil of Midnight": {
-    "add": "Chance to prevent down when weakness struck for all allies",
-    "element": "tra",
-    "unique": "Cendrillon"
-  },
-  "Veil of Sunrise": {
-    "add": "High chance to prevent down when weakness struck for all allies",
-    "element": "tra",
-    "unique": "Ella"
-  },
-  "Vitality of the Tree": {
-    "add": "Allows use of surrounded-only skills under normal conditions",
-    "element": "tra"
-  },
-  "Wage War": {
-    "add": "Rage",
-    "cost": 1008,
-    "element": "ail",
-    "mod": 50,
-    "target": "All foes"
-  },
-  "Wealth of Lotus": {
-    "add": "Extends buffs cast by 2 turns",
-    "element": "tra"
-  },
-  "Will of the Sword": {
-    "add": "dmg from Charge and Concentrate instead, Begins battle with Concentrate",
-    "element": "tra",
-    "mod": 1300
-  },
-  "Wind Bloodline": {
-    "add": "Wind skill costs",
-    "element": "tra",
-    "mod": 1050
-  },
-  "Wind Break": {
-    "add": "Sets Wind resistance to neutral",
-    "cost": 1006,
-    "element": "sup",
-    "target": "All foes"
-  },
-  "Wings of Wisdom": {
-    "add": "Amrita Shower, Speed Master for self",
-    "card": "Ring of Wrath",
-    "cost": 1010,
-    "element": "sup",
-    "target": "All allies",
-    "unique": "Ring of Wrath"
-  }
+  "10": { "a": ["Agi", "fir", "1 foe"], "b": [1, 1004, 40, 1, 1, 99, 0, 25], "c": ["Burn", "$1% $2", "-"] },
+  "11": { "a": ["Agilao", "fir", "1 foe"], "b": [3, 1008, 100, 1, 1, 99, 0, 25], "c": ["Burn", "$1% $2", "-"] },
+  "12": { "a": ["Agidyne", "fir", "1 foe"], "b": [5, 1012, 160, 1, 1, 99, 0, 25], "c": ["Burn", "$1% $2", "-"] },
+  "13": { "a": ["Maragi", "fir", "All foes"], "b": [2, 1010, 40, 1, 1, 95, 0, 20], "c": ["Burn", "$1% $2", "CJ BBB"] },
+  "14": { "a": ["Maragion", "fir", "All foes"], "b": [4, 1016, 100, 1, 1, 95, 0, 20], "c": ["Burn", "$1% $2", "-"] },
+  "20": { "a": ["Bufu", "ice", "1 foe"], "b": [1, 1004, 40, 1, 1, 99, 0, 25], "c": ["Freeze", "$1% $2", "-"] },
+  "21": { "a": ["Bufula", "ice", "1 foe"], "b": [3, 1008, 100, 1, 1, 99, 0, 25], "c": ["Freeze", "$1% $2", "-"] },
+  "22": { "a": ["Bufudyne", "ice", "1 foe"], "b": [5, 1012, 160, 1, 1, 99, 0, 25], "c": ["Freeze", "$1% $2", "-"] },
+  "23": { "a": ["Mabufu", "ice", "All foes"], "b": [2, 1010, 40, 1, 1, 95, 0, 20], "c": ["Freeze", "$1% $2", "CJ BBB"] },
+  "24": { "a": ["Mabufula", "ice", "All foes"], "b": [4, 1016, 100, 1, 1, 95, 0, 20], "c": ["Freeze", "$1% $2", "-"] },
+  "40": { "a": ["Zio", "ele", "1 foe"], "b": [1, 1004, 40, 1, 1, 99, 0, 25], "c": ["Shock", "$1% $2", "-"] },
+  "41": { "a": ["Zionga", "ele", "1 foe"], "b": [3, 1008, 100, 1, 1, 99, 0, 25], "c": ["Shock", "$1% $2", "-"] },
+  "42": { "a": ["Ziodyne", "ele", "1 foe"], "b": [5, 1012, 160, 1, 1, 99, 0, 25], "c": ["Shock", "$1% $2", "-"] },
+  "43": { "a": ["Mazio", "ele", "All foes"], "b": [2, 1010, 40, 1, 1, 95, 0, 20], "c": ["Shock", "$1% $2", "-"] },
+  "44": { "a": ["Mazionga", "ele", "All foes"], "b": [4, 1016, 100, 1, 1, 95, 0, 20], "c": ["Shock", "$1% $2", "Trial 30"] },
+  "50": { "a": ["Hama", "ble", "1 foe"], "b": [2, 1006, 0, 1, 1, 100, 0, 25], "c": ["instakill", "$1% $2", "-"] },
+  "51": { "a": ["Hamaon", "ble", "1 foe"], "b": [5, 1012, 0, 1, 1, 100, 0, 50], "c": ["instakill", "$1% $2", "-"] },
+  "52": { "a": ["Mahama", "ble", "All foes"], "b": [3, 1014, 0, 1, 1, 100, 0, 30], "c": ["instakill", "$1% $2", "-"] },
+  "53": { "a": ["Mahamaon", "ble", "All foes"], "b": [6, 1026, 0, 1, 1, 100, 0, 50], "c": ["instakill", "$1% $2", "-"] },
+  "60": { "a": ["Mudo", "cur", "1 foe"], "b": [2, 1006, 0, 1, 1, 100, 0, 25], "c": ["instakill", "$1% $2", "-"] },
+  "61": { "a": ["Mudoon", "cur", "1 foe"], "b": [5, 1012, 0, 1, 1, 100, 0, 50], "c": ["instakill", "$1% $2", "-"] },
+  "62": { "a": ["Mamudo", "cur", "All foes"], "b": [3, 1014, 0, 1, 1, 100, 0, 30], "c": ["instakill", "$1% $2", "-"] },
+  "63": { "a": ["Mamudoon", "cur", "All foes"], "b": [6, 1026, 0, 1, 1, 100, 0, 50], "c": ["instakill", "$1% $2", "-"] },
+  "80": { "a": ["Dazzler", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Dizzy", "$1% $2", "-"] },
+  "81": { "a": ["Nocturnal Flash", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 50], "c": ["Dizzy", "$1% $2", "-"] },
+  "82": { "a": ["Pulinpa", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Confuse", "$1% $2", "-"] },
+  "83": { "a": ["Tentarafoo", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 40], "c": ["Confuse", "$1% $2", "-"] },
+  "84": { "a": ["Evil Touch", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Fear", "$1% $2", "-"] },
+  "85": { "a": ["Evil Smile", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 40], "c": ["Fear", "$1% $2", "-"] },
+  "86": { "a": ["Makajam", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Forget", "$1% $2", "-"] },
+  "87": { "a": ["Makajamaon", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 40], "c": ["Forget", "$1% $2", "-"] },
+  "89": { "a": ["Famine's Scream", "ail", "All foes"], "b": [99, 1008, 0, 1, 1, 100, 0, 50], "c": ["Hunger", "$1% $2", "-"] },
+  "90": { "a": ["Dormina", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Sleep", "$1% $2", "-"] },
+  "91": { "a": ["Lullaby", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 50], "c": ["Sleep", "$1% $2", "-"] },
+  "92": { "a": ["Taunt", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Rage", "$1% $2", "-"] },
+  "93": { "a": ["Wage War", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 50], "c": ["Rage", "$1% $2", "-"] },
+  "94": { "a": ["Ominous Words", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Despair", "$1% $2", "-"] },
+  "95": { "a": ["Abysmal Surge", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 50], "c": ["Despair", "$1% $2", "-"] },
+  "96": { "a": ["Marin Karin", "ail", "1 foe"], "b": [1, 1003, 0, 1, 1, 100, 0, 70], "c": ["Brainwash", "$1% $2", "-"] },
+  "97": { "a": ["Brain Jack", "ail", "All foes"], "b": [3, 1008, 0, 1, 1, 100, 0, 50], "c": ["Brainwash", "$1% $2", "-"] },
+  "160": { "a": ["Divine Judgement", "ble", "1 foe"], "b": [7, 1038, 0, 1, 1, 100, 0, 50], "c": ["current HP", "reduces $2 by $1%", "-"] },
+  "161": { "a": ["Samsara", "ble", "All foes"], "b": [99, 1040, 0, 1, 1, 100, 0, 70], "c": ["instakill", "$1% $2", "-"] },
+  "170": { "a": ["Demonic Decree", "cur", "1 foe"], "b": [7, 1038, 0, 1, 1, 100, 0, 50], "c": ["current HP", "reduces $2 by $1%", "-"] },
+  "171": { "a": ["Die For Me!", "cur", "All foes"], "b": [99, 1040, 0, 1, 1, 100, 0, 70], "c": ["instakill", "$1% $2", "-"] },
+  "172": { "a": ["Support Plus 3", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Masukunda, Marakunda, or Matarunda", "adds $2 to Moral Support pool", "-"] },
+  "173": { "a": ["Support Plus 2", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Masukunda or Marakunda", "adds $2 to Moral Support pool", "-"] },
+  "174": { "a": ["Support Plus 1", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Masukunda", "adds $2 to Moral Support pool", "-"] },
+  "175": { "a": ["Support Rate Up", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Moral Support", "raises chance of $2 activating", "-"] },
+  "182": { "a": ["Abyssal Eye", "alm", "All foes"], "b": [99, 1050, 220, 1, 1, 95, 0, 0], "c": ["-", "-", "-"] },
+  "183": { "a": ["Champion's Cup", "rec", "1 ally"], "b": [99, 1010, 0, 1, 1, 100, 0, 0], "c": ["Diarama", "$2 + Tarukaja", "-"] },
+  "184": { "a": ["Bleeding Dry Brush", "sup", "1 ally"], "b": [99, 1022, 0, 1, 1, 100, 0, 0], "c": ["non-Almighty", "drains next $2 attack, removes innate weaknesses", "-"] },
+  "185": { "a": ["Vault Guardian", "sup", "All allies"], "b": [99, 1020, 0, 1, 1, 100, 0, 0], "c": ["Rakukaja", "$2, begins battle with Tetrakarn + Makarakarn", "-"] },
+  "186": { "a": ["Wings of Wisdom", "sup", "All allies"], "b": [99, 1010, 0, 1, 1, 100, 0, 0], "c": ["Amrita", "$2, Speed Master", "-"] },
+  "187": { "a": ["President's Insight", "sup", "1 ally"], "b": [99, 1015, 0, 1, 1, 100, 0, 0], "c": ["Concentrate", "$2, Attack Master", "-"] },
+  "188": { "a": ["Gambler's Foresight", "sup", "All allies"], "b": [99, 1020, 0, 1, 1, 100, 0, 0], "c": ["Sukukaja", "$2, begins battle with Concentrate", "-"] },
+  "189": { "a": ["Tyrant's Will", "sup", "1 ally"], "b": [99, 1015, 0, 1, 1, 100, 0, 0], "c": ["Charge", "$2, Defense Master", "-"] },
+  "201": { "a": ["Assault Dive", "phy", "1 foe"], "b": [5, 13, 130, 1, 1, 90, 20, 0], "c": ["-", "-", "-"] },
+  "202": { "a": ["Megaton Raid", "phy", "1 foe"], "b": [7, 16, 300, 1, 1, 85, 25, 0], "c": ["-", "-", "-"] },
+  "205": { "a": ["Lucky Punch", "phy", "1 foe"], "b": [1, 3, 25, 1, 1, 75, 45, 0], "c": ["-", "-", "-"] },
+  "206": { "a": ["Miracle Punch", "phy", "1 foe"], "b": [4, 8, 80, 1, 1, 75, 45, 0], "c": ["-", "-", "-"] },
+  "207": { "a": ["Kill Rush", "phy", "1 foe"], "b": [5, 14, 40, 1, 3, 90, 5, 0], "c": ["-", "-", "-"] },
+  "208": { "a": ["Gattling Blows", "phy", "1 foe"], "b": [6, 16, 30, 3, 4, 90, 5, 0], "c": ["-", "-", "-"] },
+  "214": { "a": ["Holy Benevolence", "rec", "All allies"], "b": [99, 1027, 0, 1, 1, 100, 0, 0], "c": ["Samarecarm", "$2", "-"] },
+  "217": { "a": ["Death Scythe", "phy", "1 foe"], "b": [7, 20, 300, 1, 1, 90, 5, 55], "c": ["Fear", "$1% $2", "-"] },
+  "224": { "a": ["Snap", "gun", "1 foe"], "b": [2, 9, 80, 1, 1, 90, 30, 0], "c": ["-", "-", "-"] },
+  "228": { "a": ["Double Shot", "gun", "1 foe"], "b": [4, 12, 50, 2, 2, 90, 5, 0], "c": ["-", "-", "-"] },
+  "242": { "a": ["Swift Strike", "phy", "All foes"], "b": [5, 17, 20, 2, 4, 70, 10, 0], "c": ["-", "-", "-"] },
+  "243": { "a": ["Deathbound", "phy", "All foes"], "b": [7, 22, 100, 1, 2, 80, 10, 0], "c": ["-", "-", "-"] },
+  "251": { "a": ["Power Slash", "phy", "1 foe"], "b": [3, 10, 100, 1, 1, 85, 20, 0], "c": ["-", "-", "-"] },
+  "265": { "a": ["Dream Needle", "gun", "1 foe"], "b": [2, 8, 70, 1, 1, 90, 5, 35], "c": ["Sleep", "$1% $2", "-"] },
+  "279": { "a": ["Laevateinn", "phy", "1 foe"], "b": [99, 25, 800, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "290": { "a": ["Fighting Spirit", "sup", "All allies"], "b": [99, 1080, 0, 1, 1, 100, 0, 0], "c": ["Charge", "$2", "-"] },
+  "291": { "a": ["Miracle Rush", "phy", "All foes"], "b": [99, 16, 80, 1, 1, 55, 40, 0], "c": ["-", "-", "-"] },
+  "292": { "a": ["Checkmate", "sup", "All foes"], "b": [99, 1090, 0, 1, 1, 100, 0, 0], "c": ["Debilitate", "$2", "-"] },
+  "293": { "a": ["Hyakka Ryouran", "sup", "All allies"], "b": [99, 1090, 0, 1, 1, 100, 0, 0], "c": ["Heat Riser", "$2", "-"] },
+  "294": { "a": ["High Energy", "sup", "All allies"], "b": [99, 1080, 0, 1, 1, 100, 0, 0], "c": ["Concentrate", "$2", "-"] },
+  "295": { "a": ["Ultimate Support", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Mediarahan + Themopylae", "adds $2 to Moral Support pool", "-"] },
+  "296": { "a": ["Life Wall", "sup", "All allies"], "b": [99, 1095, 0, 1, 1, 100, 0, 0], "c": ["non-Almighty", "nullifies next $2 attack", "-"] },
+  "297": { "a": ["Rebellion Blade", "alm", "1 foe"], "b": [99, 1099, 900, 1, 1, 90, 0, 1250], "c": ["Down", "$2 bonus set to x$1", "-"] },
+  "298": { "a": ["Masquerade", "phy", "1 foe"], "b": [99, 25, 300, 2, 2, 90, 30, 0], "c": ["-", "-", "-"] },
+  "299": { "a": ["Guiding Tendril", "alm", "All foes"], "b": [99, 1020, 0, 3, 3, 100, 90, 100], "c": ["Down", "$1% $2, Life Aid", "-"] },
+  "303": { "a": ["Brave Step", "sup", "All allies"], "b": [99, 1016, 0, 1, 1, 100, 0, 0], "c": ["crit rate", "raises $2 for 3 turns", "-"] },
+  "321": { "a": ["Taunting Aura", "sup", "-"], "b": [2, 1004, 0, 1, 1, 100, 0, 0], "c": ["being targeted", "raises chance of $2 for 3 turns", "-"] },
+  "323": { "a": ["Concealment", "sup", "-"], "b": [2, 1004, 0, 1, 1, 100, 0, 0], "c": ["being targeted", "lowers chance of $2 for 3 turns", "-"] },
+  "370": { "a": ["Tetrakarn", "sup", "1 ally"], "b": [7, 1024, 0, 1, 1, 100, 0, 0], "c": ["Phys or Gun", "repels next $2 attack", "-"] },
+  "371": { "a": ["Makarakarn", "sup", "1 ally"], "b": [7, 1024, 0, 1, 1, 100, 0, 0], "c": ["non-Almighty magic", "repels next $2 attack", "-"] },
+  "375": { "a": ["Tetra Break", "sup", "All foes"], "b": [7, 1009, 0, 1, 1, 100, 0, 0], "c": ["Tetrakarn", "removes $2", "-"] },
+  "376": { "a": ["Makara Break", "sup", "All foes"], "b": [7, 1009, 0, 1, 1, 100, 0, 0], "c": ["Makarakarn", "removes $2", "-"] },
+  "385": { "a": ["Fire Break", "sup", "All foes"], "b": [3, 1006, 0, 1, 1, 100, 0, 0], "c": ["Fire", "removes $2 resistance for 3 turns", "-"] },
+  "386": { "a": ["Ice Break", "sup", "All foes"], "b": [3, 1006, 0, 1, 1, 100, 0, 0], "c": ["Ice", "removes $2 resistance for 3 turns", "-"] },
+  "387": { "a": ["Wind Break", "sup", "All foes"], "b": [3, 1006, 0, 1, 1, 100, 0, 0], "c": ["Wind", "removes $2 resistance for 3 turns", "-"] },
+  "388": { "a": ["Elec Break", "sup", "All foes"], "b": [3, 1006, 0, 1, 1, 100, 0, 0], "c": ["Elec", "removes $2 resistance for 3 turns", "-"] },
+  "395": { "a": ["Nuke Break", "sup", "All foes"], "b": [3, 1006, 0, 1, 1, 100, 0, 0], "c": ["Nuke", "removes $2 resistance for 3 turns", "-"] },
+  "396": { "a": ["Psy Break", "sup", "All foes"], "b": [3, 1006, 0, 1, 1, 100, 0, 0], "c": ["Psy", "removes $2 resistance for 3 turns", "-"] },
+  "713": { "a": ["Myriad Truths", "alm", "All foes"], "b": [99, 1040, 120, 3, 3, 95, 0, 0], "c": ["-", "-", "-"] },
+  "714": { "a": ["Neo Cadenza", "rec", "All allies"], "b": [99, 1024, 0, 1, 1, 100, 0, 50], "c": ["HP restore", "$1% $2 + Heat Riser", "-"] },
+  "715": { "a": ["Akashic Arts", "phy", "All foes"], "b": [99, 20, 300, 1, 2, 80, 30, 0], "c": ["-", "-", "-"] },
+  "716": { "a": ["Phantom Show", "ail", "All foes"], "b": [99, 1004, 0, 1, 1, 100, 0, 90], "c": ["Sleep", "$1% $2", "-"] },
+  "803": { "a": ["Resist Burn", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Burn", "$2 susceptibility x$1", "-"] },
+  "804": { "a": ["Null Burn", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Burn", "prevents $2", "-"] },
+  "807": { "a": ["Resist Freeze", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Freeze", "$2 susceptibility x$1", "-"] },
+  "808": { "a": ["Null Freeze", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Freeze", "prevents $2", "-"] },
+  "842": { "a": ["Resist Shock", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Shock", "$2 susceptibility x$1", "-"] },
+  "845": { "a": ["Null Shock", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Shock", "prevents $2", "-"] },
+  "848": { "a": ["Resist Hunger", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Hunger", "$2 susceptibility x$1", "-"] },
+  "849": { "a": ["Null Hunger", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Hunger", "prevents $2", "-"] },
+  "879": { "a": ["+15% EXP", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 15], "c": ["exp", "$2 earned +$1%", "-"] },
+  "884": { "a": ["All-Out Attack Boost", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["All-out Attack", "raises dmg dealt by $2", "-"] },
+  "889": { "a": ["Money Boost", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 15], "c": ["money", "$2 earned after battle +$1%", "-"] },
+  "894": { "a": ["Hide", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["being targeted", "lowers chance of $2", "-"] },
+  "899": { "a": ["Life Boost", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 20], "c": ["max SP", "$2 +$1", "-"] },
+  "904": { "a": ["Null Bless/Curse", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Bless + Curse", "prevents $2", "-"] },
+  "908": { "a": ["Gun Accuracy +5%", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 5], "c": ["Gun", "$2 acc +$1%", "-"] },
+  "909": { "a": ["Samurai Spirit", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["evasion", "raises $2 against crit hits and magic", "-"] },
+  "917": { "a": ["Kuzunoha Emblem", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1075], "c": ["skill costs", "$2 x$1", "-"] },
+  "929": { "a": ["Tyrant's Mind", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1125], "c": ["dmg dealt", "$2 x$1, can exceed dmg cap", "-"] },
+  "937": { "a": ["Holy Whisper", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 15], "c": ["HP restore", "$1% $2 + 15 SP restore each turn", "-"] },
+  "939": { "a": ["Holy Embrace", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 25], "c": ["HP restore", "$1% $2 each turn", "-"] },
+  "946": { "a": ["Last Stand", "pas", "-"], "b": [6, 0, 0, 0, 0, 0, 0, 1033], "c": ["foe accuracy", "$2 x$1 when Surrounded", "-"] },
+  "953": { "a": ["Gun Boost", "pas", "-"], "b": [3, 0, 0, 0, 0, 0, 0, 1125], "c": ["Gun", "$2 dmg dealt x$1", "-"] },
+  "954": { "a": ["Gun Amp", "pas", "-"], "b": [6, 0, 0, 0, 0, 0, 0, 1150], "c": ["Gun", "$2 dmg dealt x$1", "-"] },
+  "996": { "a": ["Soul Touch", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 5], "c": ["SP restore", "$1 $2 after Baton Pass", "-"] },
+  "1035": { "a": ["Life Surge", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 30], "c": ["max HP", "$2 +$1%", "-"] },
+  "1036": { "a": ["Mana Bonus", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 10], "c": ["max SP", "$2 +$1%", "-"] },
+  "1038": { "a": ["Mana Surge", "pas", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 30], "c": ["max SP", "$2 +$1%", "-"] },
+  "1206": { "a": ["Relentless", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1150], "c": ["single-target", "$2 dmg dealt x$1 when striking foe weakness", "-"] },
+  "1209": { "a": ["Savior Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Recovery", "$2 skill costs x$1", "-"] },
+  "1210": { "a": ["Grace of Mother", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Recovery", "$2 skill costs x$1", "-"] },
+  "1214": { "a": ["Relief Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Support", "$2 skill costs x$1", "-"] },
+  "1215": { "a": ["Ave Maria", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Support", "$2 skill costs x$1", "-"] },
+  "1217": { "a": ["Foul Stench", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["ailment", "raises $2 affliction rate", "-"] },
+  "1222": { "a": ["Static Electricity", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Shock", "raises $2 affliction rate against Downed Foes", "-"] },
+  "1223": { "a": ["Ghost Nest", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["ailment", "raises $2 affliction rate against Downed Foes", "-"] },
+  "1224": { "a": ["Cold-Blooded", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Freeze", "raises $2 affliction rate during 1 More", "-"] },
+  "1230": { "a": ["Allure of Wisdom", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["magic", "$2 skill costs x$1", "-"] },
+  "1238": { "a": ["Frenzied Bull", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg dealt", "$2 x(1 + HP lost under 50%)", "-"] },
+  "1246": { "a": ["Intense Focus", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1120], "c": ["single-target magic", "$2 dmg dealt x$1", "-"] },
+  "1254": { "a": ["Mighty Gaze", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1120], "c": ["multi-target magic", "$2 dmg dealt x$1", "-"] },
+  "1257": { "a": ["Striking Weight", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1120], "c": ["Phys", "$2 dmg dealt x$1", "-"] },
+  "1258": { "a": ["Undying Fury", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1130], "c": ["Phys", "$2 dmg dealt x$1", "-"] },
+  "1262": { "a": ["Retaliating Body", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1200], "c": ["repelled", "$2 dmg dealt x$1", "-"] },
+  "1263": { "a": ["Inviolable Beauty", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1300], "c": ["repelled", "$2 dmg dealt x$1", "-"] },
+  "1265": { "a": ["Pagan Allure", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1150], "c": ["magic", "$2 dmg dealt x$1, cannot exceed dmg cap", "-"] },
+  "1270": { "a": ["Rare Antibody", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["ailment", "lowers $2 susceptibility", "-"] },
+  "1271": { "a": ["Immunity", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["ailments", "prevents $2", "-"] },
+  "1273": { "a": ["Skillful Combo", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg dealt", "raises $2 after Baton Pass", "-"] },
+  "1274": { "a": ["Linked Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg dealt", "raises $2 after Baton Pass", "-"] },
+  "1278": { "a": ["Foul Odor", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["ailment", "raises $2 affliction rate after Baton Pass", "-"] },
+  "1279": { "a": ["Thermal Conduct", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Burn", "raises $2 affliction rate after Baton Pass", "-"] },
+  "1286": { "a": ["Pinch Anchor", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Surrounded skills", "allows use of $2 after Baton Pass", "-"] },
+  "1287": { "a": ["Vitality of the Tree", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["Surrounded skills", "allows use of $2 normally", "-"] },
+  "1288": { "a": ["Gloomy Child", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["special weather skills", "activates $2", "-"] },
+  "1294": { "a": ["Skillful Technique", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1125], "c": ["Technical", "$2 dmg dealt x$1", "-"] },
+  "1295": { "a": ["Universal Law", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1150], "c": ["Technical", "$2 dmg dealt x$1", "-"] },
+  "1297": { "a": ["Ailment Hunter", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 25], "c": ["dmg dealt", "$2 +$1% per ailment-inflicted foe", "-"] },
+  "1298": { "a": ["Hollow Jester", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 40], "c": ["dmg dealt", "$2 +$1% per ailment-inflicted foe", "-"] },
+  "1302": { "a": ["Deathly Illness", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["instakill", "raises $2 affliction rate", "-"] },
+  "1303": { "a": ["Omen", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["instakill", "greatly raises $2 affliction rate", "-"] },
+  "1329": { "a": ["Explosive Scheme", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 25], "c": ["HP restore", "All-Out Attacks may defeat all foes + $1% $2 to all allies", "-"] },
+  "1331": { "a": ["Infinite Scheme", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 100], "c": ["HP restore", "All-Out Attacks may defeat all foes + $1% $2 to all allies", "-"] },
+  "1332": { "a": ["Raging Temper", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1140], "c": ["Phys", "chance of ally $2 dmg dealt x$1", "-"] },
+  "1333": { "a": ["Eccentric Temper", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1180], "c": ["Phys", "chance of ally $2 dmg dealt x$1", "-"] },
+  "1335": { "a": ["Proud Presence", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["Recovery", "raises ally $2 skill pwr", "-"] },
+  "1336": { "a": ["Majestic Presence", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["Recovery", "raises ally $2 skill pwr and chance to lower costs", "-"] },
+  "1338": { "a": ["Mastery of Magic", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1075], "c": ["magic", "chance of ally $2 SP costs x$1", "-"] },
+  "1339": { "a": ["Pinnacle of Magic", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["magic", "chance of ally $2 SP costs x$1", "-"] },
+  "1341": { "a": ["Scoundrel Eyes", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["Phys", "low chance of allies evading $2 attack", "-"] },
+  "1342": { "a": ["Unparalleled Eyes", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["Phys", "chance of allies evading $2 attack", "-"] },
+  "1344": { "a": ["Gaia Pact", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 25], "c": ["Burn + Freeze + Shock", "ally $2 affliction rate +$1%", "-"] },
+  "1345": { "a": ["Gaia Blessing", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 25], "c": ["Burn + Freeze + Shock", "ally $2 affliction rate +$1%", "-"] },
+  "1347": { "a": ["Icy Glare", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1075], "c": ["ailment", "$2 susceptibility x$1", "-"] },
+  "1348": { "a": ["Cool Customer", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["ailment", "$2 susceptibility x$1", "-"] },
+  "1350": { "a": ["Tactical Spirit", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["Support", "chance of ally $2 SP costs x$1", "-"] },
+  "1351": { "a": ["Ingenious Spirit", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["Support + Almighty", "chance of ally $2 SP costs x$1", "-"] },
+  "1352": { "a": ["Flawless Spirit", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["Support + Almighty", "$2 skill costs x$1", "-"] },
+  "1353": { "a": ["Veil of Midnight", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["not being Downed", "chance of ally $2 when weakness struck", "-"] },
+  "1354": { "a": ["Veil of Sunrise", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["not being Downed", "high chance of ally $2 when weakness struck", "-"] },
+  "1356": { "a": ["Heated Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Fire", "$2 skill costs x$1", "-"] },
+  "1357": { "a": ["Drunken Passion", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Fire", "$2 skill costs x$1", "-"] },
+  "1358": { "a": ["Frigid Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Ice", "$2 skill costs x$1", "-"] },
+  "1359": { "a": ["Cocytus", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Ice", "$2 skill costs x$1", "-"] },
+  "1360": { "a": ["Electric Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Elec", "$2 skill costs x$1", "-"] },
+  "1361": { "a": ["Bargain Bolts", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Elec", "$2 skill costs x$1", "-"] },
+  "1362": { "a": ["Wind Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Wind", "$2 skill costs x$1", "-"] },
+  "1363": { "a": ["Vahana's Wings", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Wind", "$2 skill costs x$1", "-"] },
+  "1364": { "a": ["Psychic Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Psy", "$2 skill costs x$1", "-"] },
+  "1365": { "a": ["Chi You's Blessing", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Psy", "$2 skill costs x$1", "-"] },
+  "1366": { "a": ["Atomic Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Nuke", "$2 skill costs x$1", "-"] },
+  "1367": { "a": ["Atomic Hellscape", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Nuke", "$2 skill costs x$1", "-"] },
+  "1368": { "a": ["Blessed Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Bless", "$2 skill costs x$1", "-"] },
+  "1369": { "a": ["Martyr's Gift", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Bless", "$2 skill costs x$1", "-"] },
+  "1370": { "a": ["Cursed Bloodline", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1050], "c": ["Curse", "$2 skill costs x$1", "-"] },
+  "1371": { "a": ["Mother's Lament", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1025], "c": ["Curse", "$2 skill costs x$1", "-"] },
+  "1373": { "a": ["Gluttonmouth", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1150], "c": ["HP restore", "$2 x$1", "-"] },
+  "1374": { "a": ["Demon's Bite", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1200], "c": ["HP restore", "$2 x$1", "-"] },
+  "1375": { "a": ["Mouth of Savoring", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1150], "c": ["SP restore", "$2 x$1", "-"] },
+  "1376": { "a": ["Naranari", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1200], "c": ["HP restore", "$2 x$1", "-"] },
+  "1377": { "a": ["Hallowed Spirit", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1200], "c": ["HP + SP restore", "$2 x$1", "-"] },
+  "1378": { "a": ["Potent Hypnosis", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1], "c": ["-kaja skill", "$2 cast by user +$1 turn", "-"] },
+  "1379": { "a": ["Wealth of Lotus", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 2], "c": ["-kaja skill", "$2 cast by user +$1 turns", "-"] },
+  "1380": { "a": ["Internal Hypnosis", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1], "c": ["-kaja skill", "$2 cast on user +$1 turn", "-"] },
+  "1381": { "a": ["Positive Thoughts", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 2], "c": ["-kaja skill", "$2 cast on user +$1 turns", "-"] },
+  "1382": { "a": ["Draining Mouth", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1200], "c": ["Drain skill dmg", "$2 x$1", "-"] },
+  "1384": { "a": ["Tag Team", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["items", "allows use of $2 without consuming them after Baton Pass", "-"] },
+  "1385": { "a": ["Iron Heart", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["SP costs", "$2 x$1 after Baton Pass", "-"] },
+  "1386": { "a": ["Crisis Control", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg taken", "lowers $2 when weakness struck", "-"] },
+  "1387": { "a": ["Bloodstained Eyes", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 0], "c": ["ally evasion", "greatly raises $2 against ailment-inflicted foes", "-"] },
+  "1388": { "a": ["Will of the Sword", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1300], "c": ["Charge + Concentrate", "$2 bonus set to x$1, begins battle with Concentrate", "-"] },
+  "1390": { "a": ["Circle of Sadness", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 4], "c": ["Endure", "$2 x$1 uses", "-"] },
+  "1391": { "a": ["Bolstering Force", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 1050], "c": ["dmg dealt", "$2 x$1 during 1 More", "-"] },
+  "1392": { "a": ["God Maker", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["ally Trait", "raises chance of $2 activating", "-"] },
+  "1393": { "a": ["Hazy Presence", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["ally Follow-Up attack", "raises chance of $2 activating", "-"] },
+  "1394": { "a": ["Country Maker", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["dmg dealt + taken", "$2 x(1 + compendium completion%)", "-"] },
+  "1395": { "a": ["Grace of the Olive", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 100], "c": ["skill costs", "$2 -$1% during 1 More", "-"] },
+  "1396": { "a": ["Just Die", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 100], "c": ["instakill costs", "$2 -$1%", "-"] },
+  "1397": { "a": ["Blessed Spirit", "tra", "-"], "b": [9, 0, 0, 0, 0, 0, 0, 1200], "c": ["HP + SP restore", "$2 x$1", "-"] },
+  "1481": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1482": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1483": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1484": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1485": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1486": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1487": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1488": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] },
+  "1489": { "a": ["Ultimate Vessel", "tra", "-"], "b": [99, 0, 0, 0, 0, 0, 0, 0], "c": ["bonus Traits", "adds 3 $2 to fusion skill pool", "-"] }
 }

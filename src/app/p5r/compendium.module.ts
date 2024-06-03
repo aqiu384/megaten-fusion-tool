@@ -24,10 +24,13 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
+import { importSkillRow } from '../pq2/models/skill-importer';
 
 function createCompConfig(): CompendiumConfig {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const costTypes = [2 << 10, (5 << 10) - 1000, (15 << 10) - 2000];
   const affinityTypes: { [elem: string]: number[] } = {};
+  const skillData = {};
   const races = [];
 
   for(const race of COMP_CONFIG_JSON.races) {
@@ -58,27 +61,9 @@ function createCompConfig(): CompendiumConfig {
   const COST_HP = 2 << 10;
   const COST_MP = 3 << 10;
 
-  for (const skills of [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON]) {
-    for (const entry of Object.values(skills)) {
-      const cost = entry['cost'];
-      const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
-      entry['normCost'] = cost ? cost + costType: 0;
-
-      const effect = [];
-      if (entry['power']) { effect.push(`√${entry['power']} power`); }
-      if (entry['min']) { effect.push(`${entry['min']}${entry['max'] ? '-' + entry['max'] : ''} hits`); }
-      if (entry['hit'] && entry['hit'] < 80) { effect.push(`${entry['hit']}% hit`); }
-      if (entry['crit'] && entry['crit'] != 5) { effect.push(`${entry['crit']}% crit`); }
-
-      if (entry['mod']) {
-        const mod = entry['mod'];
-        const add = entry['add'];
-        effect.push(mod < 1000 ? `${mod}% ${add}` : `x${(mod / 100 - 10).toFixed(2)} ${add}`);
-      } else if (entry['add']) {
-        effect.push(entry['add']);
-      }
-
-      entry['effect'] = effect.join(', ');
+  for (const skillJson of [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON]) {
+    for (const row of Object.values(skillJson)) {
+      skillData[row.a[0]] = importSkillRow(row, costTypes);
     }
   }
 
@@ -98,7 +83,7 @@ function createCompConfig(): CompendiumConfig {
     enemyResists: COMP_CONFIG_JSON.resistElems,
 
     demonData: [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON],
-    skillData: [VAN_SKILL_DATA_JSON, ROY_SKILL_DATA_JSON],
+    skillData: [skillData],
     enemyData: [ENEMY_DATA_JSON],
 
     normalTable: FUSION_CHART_JSON,

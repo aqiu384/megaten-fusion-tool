@@ -25,6 +25,7 @@ import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const costTypes = [1 << 10, (5 << 10) - 1000, (15 << 10) - 2000];
   const races = [];
   const skillData = {};
   const inheritTypes: { [elem: string]: number } = {};
@@ -48,7 +49,7 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const row of Object.values(SKILL_DATA_JSON)) {
-    skillData[row.a[0]] = importSkillRow(row);
+    skillData[row.a[0]] = importSkillRow(row, costTypes);
   }
 
   for (const [code, name] of Object.entries(SKILL_CODES_JSON)) {

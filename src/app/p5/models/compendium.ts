@@ -91,11 +91,11 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(skillDataJson)) {
         skills[name] = {
           name,
-          element: json['element'],
+          element: json['elem'],
           effect:  json['effect'],
           target:  json['target'] || 'Self',
-          rank:    (json['normCost'] & 0x3FF) / 100 || 0,
-          cost:    json['normCost'] || 0,
+          rank:    json['rank'],
+          cost:    json['cost'] || 0,
           transfer:  [],
           learnedBy: [],
           level: 0
