@@ -8,6 +8,7 @@ import { FusionDataService } from './fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from './smt4-compendium.module';
 import { CompendiumConfig } from './models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -26,15 +27,23 @@ function createCompConfig(): CompendiumConfig {
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
-  const COST_MP = 3 << 10;
+  const skillData = {};
 
-  for (const entry of Object.values(SKILL_DATA_JSON)) {
-    const effect = [];
-    if (entry['power']) { effect.push(`${entry['power']} dmg`); }
-    if (entry['effect']) { effect.push(entry['effect']); }
+  const COST_MP = (3 << 10) - 1000;
 
-    entry['effect'] = effect.join(', ')
-    entry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+    nums[2] = Math.round(2 * power / (minHits + maxHits));
+    nums[5] = acc === 120 ? 110 : acc;
+
+    skillData[sname] = {
+      element: elem,
+      rank: Math.min(rank, 99),
+      target: target === '-' ? 'Self' : target,
+      cost: cost + COST_MP,
+      effect: skillRowToEffect(nums, descs, false),
+    }
   }
 
   for (const [demon, entry] of Object.entries(ENEMY_DATA_JSON)) {
@@ -65,7 +74,7 @@ function createCompConfig(): CompendiumConfig {
     lang: 'en',
     jaNames: JA_NAMES_JSON,
     affinityElems,
-    skillData: SKILL_DATA_JSON,
+    skillData,
     skillElems,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,

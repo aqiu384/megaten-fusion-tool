@@ -54,7 +54,7 @@ function createCompConfig(): CompendiumConfigSet {
         rank,
         target: target === '-' ? 'Self' : target,
         cost: cost ? cost + (cost > 1000 ? COST_MP : COST_HP) : 0,
-        effect: skillRowToEffect(nums, descs),
+        effect: skillRowToEffect(nums, descs, false),
       }
     }
   }

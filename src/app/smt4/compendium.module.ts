@@ -8,6 +8,7 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -33,15 +34,20 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[demon] = entry;
   }
 
-  const COST_MP = 3 << 10;
+  const COST_MP = (3 << 10) - 1000;
 
-  for (const skill of SKILL_DATA_JSON) {
-    skillData[skill.name] = {
-      element: skill.elem,
-      cost: skill.cost ? skill.cost + COST_MP - 1000 : 0,
-      effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
-      target: skill.target || 'Self',
-      rank: skill.rank < 99 ? skill.rank : 99
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+    nums[2] = Math.round(2 * power / (minHits + maxHits));
+    nums[5] = acc === 120 ? 110 : acc;
+
+    skillData[sname] = {
+      element: elem,
+      rank: Math.min(rank, 99),
+      target: target === '-' ? 'Self' : target,
+      cost: cost + COST_MP,
+      effect: skillRowToEffect(nums, descs, false),
     }
   }
 

@@ -1,8 +1,8 @@
-export function skillRowToEffect(nums: number[], descs: string[]): string {
+export function skillRowToEffect(nums: number[], descs: string[], sqrtPwr: boolean): string {
   const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
   const [effect, cond, card] = descs;
   const baseMod = parseInt(mod.toString());
-  const powerStr = power === 0 ? '' : `√${power} pwr`;
+  const powerStr = power === 0 ? '' : `${sqrtPwr ? '√' : ''}${power} pwr`;
   const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits < 2 ? '' : `${maxHits} hits`;
   const critStr = crit <= 5 ? '' : `${crit}% crit`;
   const accStr = acc === 0 || 90 <= acc && acc <= 110 ? '' : `${Math.min(acc, 200)}% acc`;
@@ -22,7 +22,7 @@ export function importSkillRow(row: { a: string[]; b: number[]; c: string[]; }, 
     rank,
     target: target === '-' ? 'Self' : target,
     cost: cost ? cost + (cost > 1000 ? (cost > 2000 ? costTypes[2] : costTypes[1]) : costTypes[0]) : 0,
-    effect: skillRowToEffect(nums, descs),
+    effect: skillRowToEffect(nums, descs, costTypes[0] !== 1 << 10),
   }
 
   if (card !== '-') { entry['card'] = card; }
