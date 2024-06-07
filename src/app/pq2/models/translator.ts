@@ -7,6 +7,7 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
   const langNames = Object.entries(compConfig.translations).reduce((acc, [en, langs]) => { acc[en] = langs[langInd]; return acc; }, {});
   const translate = (x: string) => langNames[x] || x;
   const races = compConfig.races.map(translate);
+  const skillElems = compConfig.skillElems.map(translate)
 
   return {
     appTitle: translate(compConfig.appTitle),
@@ -17,7 +18,7 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     appCssClasses: compConfig.appCssClasses,
 
     skillData: translateSkillData(compConfig.skillData, langNames),
-    skillElems: compConfig.skillElems,
+    skillElems,
     ailmentElems: compConfig.ailmentElems,
     elemOrder: compConfig.elemOrder,
     resistCodes: compConfig.resistCodes,
