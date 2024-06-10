@@ -69,40 +69,44 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, json] of Object.entries(this.compConfig.demonData)) {
-      demons[name] = {
-        name,
-        race:       json['race'],
-        lvl:        json['lvl'],
-        currLvl:    json['currLvl'] || json['lvl'],
-        skills:     json['skills'],
-        price:      json['price'] * 2,
-        stats:      json['stats'],
-        resists:    codifyResists(json['resists'], json['resists'], json['resmods']),
-        ailments:   codifyResists(json['ailments'], blankAilments, json['ailmods']),
-        inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
-        affinities: json['affinities'],
-        fusion:     json['fusion'] || 'normal',
-        prereq:     json['prereq'] || ''
+    for (const demonJson of this.compConfig.demonData) {
+      for (const [name, json] of Object.entries(demonJson)) {
+        demons[name] = {
+          name,
+          race:       json['race'],
+          lvl:        json['lvl'],
+          currLvl:    json['currLvl'] || json['lvl'],
+          skills:     json['skills'],
+          price:      json['price'] * 2,
+          stats:      json['stats'],
+          resists:    codifyResists(json['resists'], json['resists'], json['resmods']),
+          ailments:   codifyResists(json['ailments'], blankAilments, json['ailmods']),
+          inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
+          affinities: json['affinities'],
+          fusion:     json['fusion'] || 'normal',
+          prereq:     json['prereq'] || ''
+        }
       }
     }
 
-    for (const [name, json] of Object.entries(this.compConfig.skillData)) {
-      skills[name] = {
-        name,
-        element: json['element'],
-        rank:    json['rank'],
-        effect:  json['effect'],
-        damage:  json['damage'] || '',
-        target:  json['target'] || 'Self',
-        hits:    json['hits'] || '',
-        cost:    json['cost'] || 0,
-        learnedBy: [],
-        level: 0
-      };
+    for (const skillJson of this.compConfig.skillData) {
+      for (const [name, json] of Object.entries(skillJson)) {
+        skills[name] = {
+          name,
+          element: json['element'],
+          rank:    json['rank'],
+          effect:  json['effect'],
+          damage:  json['damage'] || '',
+          target:  json['target'] || 'Self',
+          hits:    json['hits'] || '',
+          cost:    json['cost'] || 0,
+          learnedBy: [],
+          level: 0
+        };
 
-      if (!skills[name].rank) {
-        skills[name].rank = 99;
+        if (!skills[name].rank) {
+          skills[name].rank = 99;
+        }
       }
     }
 

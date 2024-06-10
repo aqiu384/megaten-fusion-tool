@@ -18,7 +18,7 @@ export interface CompendiumConfig extends BaseComp {
   jaNames: { [jname: string]: string };
   lang: string;
 
-  skillData;
+  skillData: any[];
   ailmentElems: string[];
   affinityElems: string[];
   skillElems: string[];
@@ -28,7 +28,7 @@ export interface CompendiumConfig extends BaseComp {
   affinityBonuses: { costs: number[][], upgrades: number[][] };
   lvlModifier: number;
 
-  demonData;
+  demonData: any[];
   evolveData;
   baseStats: string[];
   resistElems: string[];

@@ -188,6 +188,7 @@ export interface RecipeGeneratorConfig {
   races: string[];
   skillElems: string[];
   inheritElems: string[];
+  displayElems: { [elem: string]: string };
   restrictInherits: boolean;
   triExclusiveRaces: string[];
   triFissionCalculator: TripleCalculator;

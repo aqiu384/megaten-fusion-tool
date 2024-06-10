@@ -37,8 +37,6 @@ export function translateSkillData(oldSkills: any, enNames: StringDict): any {
     const newEntry = Object.assign({}, entry);
     const target = newEntry['target'] || 'Self';
     newEntry['target'] = enNames[target] || target;
-    const elem = newEntry['elem'];
-    newEntry['elem'] = enNames[elem] || elem;
     newSkills[enNames[sname] || sname] = newEntry;
   }
 
@@ -74,7 +72,7 @@ export function translateDemonUnlocks(oldUnlocks: DemonUnlock[], enNames: String
 
   for (const { category, unlocked, conditions } of oldUnlocks) {
     const newConditions = {};
-
+    
     for (const [name, cond] of Object.entries(conditions)) {
       const enName = name.split(',').map(x => enNames[x] || x).join(',');
       newConditions[enName] = cond;

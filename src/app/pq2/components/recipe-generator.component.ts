@@ -31,6 +31,8 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
+    const langInd = compConfig.translations.en.indexOf(compConfig.lang);
+    const translateElemFun = (e: string) => langInd === -1 ? e : (compConfig.translations[e] || [])[langInd] || e;
     this.maxSkills = compConfig.hasDemonResists ? 8 : 2;
     this.lang = compConfig.lang;
     this.recipeConfig = {
@@ -39,6 +41,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       races: compConfig.races,
       skillElems: compConfig.skillElems,
       inheritElems: compConfig.inheritElems,
+      displayElems: compConfig.skillElems.reduce((acc, e) => { acc[e] = translateElemFun(e); return acc }, {}),
       restrictInherits: true,
       triExclusiveRaces: compConfig.hasTripleFusion ? ['Fool', 'Tower', 'Moon', 'Sun', 'Judgement'] : [],
       triFissionCalculator: this.fusionDataService.triFissionCalculator,

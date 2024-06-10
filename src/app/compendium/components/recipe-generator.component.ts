@@ -52,7 +52,7 @@ import Translations from '../data/translations.json';
                 [attr.disabled]="!ingred.controls.searchSkill.value || null"
                 (change)="setIngredElem(ingred)">
                 <option value="-">-</option>
-                <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
+                <option *ngFor="let elem of elems" [value]="elem">{{ recipeConfig.displayElems[elem] || elem }}</option>
               </select>
             </td>
             <td>

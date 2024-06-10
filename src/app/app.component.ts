@@ -38,7 +38,7 @@ import Translations from './compendium/data/translations.json';
 })
 export class AppComponent implements OnInit {
   static readonly GAME_PREFIXES: { [game: string]: string } = {
-    smtdsj: 'smtsj',
+    smtdsj: 'smtsj', smt5v: 'smt5',
     p3f: 'p3', p3a: 'p3', p3p: 'p3', p4g: 'p4', p5r: 'p5',
     dso: 'ds1', ds2br: 'ds2'
   };

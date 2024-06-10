@@ -42,6 +42,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       races: compConfig.races,
       skillElems: compConfig.skillElems,
       inheritElems: compConfig.affinityElems,
+      displayElems: {},
       restrictInherits: isSh2,
       triExclusiveRaces: [],
       triFissionCalculator: null,

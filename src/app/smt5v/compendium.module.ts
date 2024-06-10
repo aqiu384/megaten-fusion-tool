@@ -9,44 +9,40 @@ import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants'
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
 
-import DEMON_DATA_JSON from './data/demon-data.json';
-import SKILL_DATA_JSON from './data/skill-data.json';
-import FUSION_CHART_JSON from './data/fusion-chart.json';
-import ELEMENT_CHART_JSON from './data/element-chart.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
-import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
-import JA_NAMES_JSON from './data/ja-names.json';
-import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
+import DEMON_DATA_JSON from '../smt5/data/demon-data.json';
+import VEN_DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from '../smt5/data/skill-data.json';
+import FUSION_CHART_JSON from '../smt5/data/fusion-chart.json';
+import ELEMENT_CHART_JSON from '../smt5/data/element-chart.json';
+import FUSION_PREREQS_JSON from '../smt5/data/fusion-prereqs.json';
+import SPECIAL_RECIPES_JSON from '../smt5/data/special-recipes.json';
+import AFFINITIES_JSON from '../smt5/data/affinity-bonuses.json';
+import JA_NAMES_JSON from '../smt5/data/ja-names.json';
+import DEMON_UNLOCKS_JSON from '../smt5/data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
+  const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
   const skillData = {};
 
-  for (const demon of Object.values(DEMON_DATA_JSON)) {
-    demon['price'] = Math.floor(demon['price'] / 2);
-    demon['affinities'] = demon['inherits'].split('').map(char => char === 'o' ? 10 : -10);
+  for (const elem of affinityElems) {
+    const bonusElem = AFFINITIES_JSON['elements'][elem];
+    affinityBonuses.costs.push(AFFINITIES_JSON['costs'][bonusElem]);
+    affinityBonuses.upgrades.push(AFFINITIES_JSON['upgrades'][bonusElem]);
   }
 
   const COST_MP = 3 << 10;
-  let currElem = '';
-  let elemCount = 0;
+  const COST_MAG = 19 << 10;
 
   for (const skill of SKILL_DATA_JSON) {
-    if (currElem != skill.elem) {
-      currElem = skill.elem;
-      elemCount = 9;
-    }
-
-    elemCount += 1;
-
     skillData[skill.name] = {
       element: skill.elem,
-      cost: skill.cost ? skill.cost + COST_MP - 1000 : 0,
+      cost: skill.cost ? (skill.cost < 2000 ? skill.cost + COST_MP - 1000 : COST_MAG) : 0,
       effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
       target: skill.target || 'Self',
-      rank: skill.rank || elemCount / 10
+      rank: skill.rank
     }
   }
 
@@ -54,34 +50,44 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[name].prereq = prereq;
   }
 
+  for (const entry of Object.values(VEN_DEMON_DATA_JSON)) {
+    Object.assign(entry, {
+      "affinities": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "price": entry.lvl ** 3,
+      "resists": '-------',
+      "skills": {},
+      "stats": Array(7).fill(entry.lvl)
+    });
+  }
+
   return {
-    appTitle: 'Soul Hackers 2',
+    appTitle: 'Shin Megami Tensei V Vengeance',
     races: COMP_CONFIG_JSON.races,
     raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    appCssClasses: ['smt4', 'sh2'],
+    appCssClasses: ['smt4', 'smt5'],
 
     lang: 'en',
     jaNames: JA_NAMES_JSON,
-    affinityElems: affinityElems,
+    affinityElems,
     skillData: [skillData],
     skillElems,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
-    affinityBonuses: { costs: [], upgrades: [] },
-    lvlModifier: 0.5,
+    affinityBonuses,
+    lvlModifier: 1,
 
-    demonData: [DEMON_DATA_JSON],
+    demonData: [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON],
     evolveData: {},
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems: COMP_CONFIG_JSON.resistElems,
-    ailmentElems: [],
+    ailmentElems: COMP_CONFIG_JSON.ailments,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     elementTable: ELEMENT_CHART_JSON,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
-    settingsKey: 'sh2-fusion-tool-settings',
+    settingsKey: 'smt5v-fusion-tool-settings',
     settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
