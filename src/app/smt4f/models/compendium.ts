@@ -48,6 +48,7 @@ export class Compendium implements ICompendium {
     const ailPrefixes = langEn ? ['Weak ', 'Resist ', 'Null '] : ['弱', '強', '無'];
     const ailmentResists: SkillListDict = {};
     const ailLvls: StringDict = {};
+    const hasInnate = this.compConfig.appCssClasses.includes('smt5v')
 
     for (const [i, res] of 'wsn'.split('').entries()) {
       ailmentResists[resistCodes[res] >> 10] = [];
@@ -85,6 +86,11 @@ export class Compendium implements ICompendium {
           affinities: json['affinities'],
           fusion:     json['fusion'] || 'normal',
           prereq:     json['prereq'] || ''
+        }
+
+        if (hasInnate && json['innate'] !== '-') {
+          demons[name].skills = Object.assign({}, json['skills']);
+          demons[name].skills[json['innate']] = 0;
         }
       }
     }

@@ -8,18 +8,20 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig } from '../smt4f/models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from '../smt5/data/demon-data.json';
 import VEN_DEMON_DATA_JSON from './data/demon-data.json';
-import SKILL_DATA_JSON from '../smt5/data/skill-data.json';
-import FUSION_CHART_JSON from '../smt5/data/fusion-chart.json';
+import INNATE_SKILLS from './data/innate-skills.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
+import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../smt5/data/element-chart.json';
 import FUSION_PREREQS_JSON from '../smt5/data/fusion-prereqs.json';
-import SPECIAL_RECIPES_JSON from '../smt5/data/special-recipes.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import AFFINITIES_JSON from '../smt5/data/affinity-bonuses.json';
 import JA_NAMES_JSON from '../smt5/data/ja-names.json';
-import DEMON_UNLOCKS_JSON from '../smt5/data/demon-unlocks.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
@@ -34,15 +36,19 @@ function createCompConfig(): CompendiumConfig {
   }
 
   const COST_MP = 3 << 10;
-  const COST_MAG = 19 << 10;
+  const COST_MAG = (19 << 10) + 1;
 
-  for (const skill of SKILL_DATA_JSON) {
-    skillData[skill.name] = {
-      element: skill.elem,
-      cost: skill.cost ? (skill.cost < 2000 ? skill.cost + COST_MP - 1000 : COST_MAG) : 0,
-      effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
-      target: skill.target || 'Self',
-      rank: skill.rank
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+    nums[5] = acc < 200 ? acc : 100;
+
+    skillData[sname] = {
+      element: elem,
+      rank: Math.min(rank, 99),
+      target: target === '-' ? 'Self' : target,
+      cost: cost < 1000 ? COST_MP + cost : COST_MAG,
+      effect: skillRowToEffect(nums, descs, false),
     }
   }
 
@@ -50,21 +56,17 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[name].prereq = prereq;
   }
 
-  for (const entry of Object.values(VEN_DEMON_DATA_JSON)) {
-    Object.assign(entry, {
-      "affinities": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "price": entry.lvl ** 3,
-      "resists": '-------',
-      "skills": {},
-      "stats": Array(7).fill(entry.lvl)
-    });
+  for (const demonJson of [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON]) {
+    for (const [dname, entry] of Object.entries(demonJson)) {
+      entry.innate = INNATE_SKILLS[dname] || '-';
+    }
   }
 
   return {
     appTitle: 'Shin Megami Tensei V Vengeance',
     races: COMP_CONFIG_JSON.races,
     raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    appCssClasses: ['smt4', 'smt5'],
+    appCssClasses: ['smt4', 'smt5', 'smt5v'],
 
     lang: 'en',
     jaNames: JA_NAMES_JSON,
@@ -88,7 +90,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'smt5v-fusion-tool-settings',
-    settingsVersion: 2401131500,
+    settingsVersion: 2406140620,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }
