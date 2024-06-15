@@ -18,6 +18,7 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../smt5/data/element-chart.json';
 import FUSION_PREREQS_JSON from '../smt5/data/fusion-prereqs.json';
+import VEN_FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import AFFINITIES_JSON from '../smt5/data/affinity-bonuses.json';
 import JA_NAMES_JSON from '../smt5/data/ja-names.json';
@@ -36,7 +37,7 @@ function createCompConfig(): CompendiumConfig {
   }
 
   const COST_MP = 3 << 10;
-  const COST_MAG = (19 << 10) + 1;
+  const COST_MAG = 19 << 10;
 
   for (const row of Object.values(SKILL_DATA_JSON)) {
     const { a: [sname, elem, target], b: nums, c: descs } = row;
@@ -47,13 +48,17 @@ function createCompConfig(): CompendiumConfig {
       element: elem,
       rank: Math.min(rank, 99),
       target: target === '-' ? 'Self' : target,
-      cost: cost < 1000 ? COST_MP + cost : COST_MAG,
+      cost: cost === 0 ? 0 : cost < 1000 ? COST_MP + cost : COST_MAG,
       effect: skillRowToEffect(nums, descs, false),
     }
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
     DEMON_DATA_JSON[name].prereq = prereq;
+  }
+
+  for (const [name, prereq] of Object.entries(VEN_FUSION_PREREQS_JSON)) {
+    VEN_DEMON_DATA_JSON[name].prereq = prereq;
   }
 
   for (const demonJson of [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON]) {
@@ -90,7 +95,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'smt5v-fusion-tool-settings',
-    settingsVersion: 2406140620,
+    settingsVersion: 2406141810,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }
