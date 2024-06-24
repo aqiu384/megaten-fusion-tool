@@ -95,6 +95,14 @@ export class Compendium implements ICompendium {
       }
     }
 
+    for (const unlockSet of this.compConfig.demonUnlocks) {
+      for (const [dnames, unlockCond] of Object.entries(unlockSet.conditions)) {
+        for (const dname of dnames.split(',')) {
+          demons[dname].prereq = unlockCond;
+        }
+      }
+    }
+
     for (const skillJson of this.compConfig.skillData) {
       for (const [name, json] of Object.entries(skillJson)) {
         skills[name] = {

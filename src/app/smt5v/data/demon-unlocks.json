@@ -1,32 +1,37 @@
 [
   {
-    "category": "Canon of Creation",
+    "category": "Story Progression",
     "unlocked": true,
     "conditions": {
       "Hydra": "Story locked",
       "Lahmu": "Story locked",
-      "Surt": "Story locked",
-      "Ishtar": "Story locked",
-      "Chernobog": "Story locked",
-      "Arioch": "Story locked",
+      "Surt": "Story locked or (CoC) Clear \"Special Training: Army of Chaos\" (CoV)",
+      "Ishtar": "Story locked (CoC) or Clear \"Special Training: Army of Chaos\" (CoV)",
+      "Chernobog": "Story locked (CoC) or Clear \"Special Training: Army of Chaos\" (CoV)",
+      "Arioch": "Story locked (CoC) or Clear \"Special Training: Army of Chaos\" (CoV)",
       "Vasuki": "Story locked",
       "Odin": "Story locked",
       "Metatron": "Story locked",
-      "Hayataro": "Chaos Route story locked",
-      "Lucifer": "True Neutral Route story locked",
-      "Nuwa,Nuwa A,Abdiel,Abdiel A": "New Game+"
+      "Hayataro": "Chaos Route (CoC) or Story Locked (CoV)",
+      "Nuwa,Nuwa A": "New Game+ (CoC) or Follow up on Bethel's investigation of Yakumo (CoV)",
+      "Abdiel,Abdiel A": "New Game+",
+      "Lucifer": "Story locked"
     }
   },
   {
-    "category": "Canon of Creation Quests",
+    "category": "Side Quests",
     "unlocked": true,
     "conditions": {
+      "Tzitzimitl": "Clear \"She Who Rules the Night\"",
       "Anahita": "Clear \"The Demon of the Spring\"",
+      "Turbo Granny": "Clear \"Supersonic Racing\"",
       "King Frost": "Clear \"A Wish for a Fish\"",
       "Idun": "Clear \"A Goddess Stolen\"",
+      "Anansi,Onyankopon": "Clear \"Reclaim the Golden Stool\" or \"Liberate the Golden Stool\"",
       "Camael": "Clear \"The Angel of Destruction\"",
-      "Oyamatsumi": "Clear \"The Search for Oyamatsumi\"",
-      "Okuninushi": "Clear \"Clash with the Kunitsukami\"",
+      "Oyamatsumi": "Clear \"The Search for Oyamatsumi\" (CoC) or \"Special Training: The Kunitsukami\" (CoV)",
+      "Okuninushi": "Clear \"Clash with the Kunitsukami\" (CoC) or \"Special Training: The Kunitsukami\" (CoV)",
+      "Nahobeeho": "Clear \"Wannabee-ho Nahobino\"",
       "Fionn mac Cumhaill": "Clear \"Fionn's Resolve\"",
       "Huang Long": "Clear \"The Benevolent One\"",
       "Amanozako,Zaou-Gongen": "Clear \"The Destined Leader\"",
@@ -35,15 +40,15 @@
       "Moloch": "Clear \"Roar of Hatred\"",
       "Baal": "Clear \"The Bull God's Lineage\"",
       "Mithras,Asura,Amon": "Clear \"The Winged Sun\"",
-      "Khonsu,Khonsu Ra": "Clear \"The Succession of Ra\"",
+      "Khonsu,Khonsu Ra": "Clear \"The Succession of Ra\" (CoC) or \"Rite of Resurrection\" (CoV)",
       "Shiva": "Clear \"A Universe in Peril\"",
       "Demeter,Zeus": "Clear \"A Plot Revealed\"",
       "Maria": "Clear \"The Compassionate Queen\" (Law Route)",
       "Michael": "Clear \"The Seraph's Return\" (Law Route)",
-      "Danu": "Clear \"The Noble Queen\" (Neutral Route)",
+      "Danu": "Clear \"The Noble Queen\" (CoC Neutral Route)",
       "Inanna": "Clear \"The Wrathful Queen\" (Chaos Route)",
       "Belial": "Clear \"The Red Dragon's Invitation\" (Chaos Route)",
-      "Masakado": "Clear corresponding quest"
+      "Masakado": "Clear \"Guardian of Tokyo\" (CoC)"
     }
   },
   {
@@ -51,46 +56,39 @@
     "unlocked": true,
     "conditions": {
       "Glasya-Labolas": "Story locked",
-      "Naamah": "Story locked",
-      "Eisheth": "Story locked",
-      "Agrat": "Story locked",
-      "Lilith": "Story locked",
+      "Armaiti": "Clear \"Devotion to Order\"",
+      "Naamah,Eisheth,Agrat,Lilith": "Story locked",
+      "Saturnus": "Clear \"God of Old, Devourer of Kin\"",
       "Mastema": "Story locked",
-      "Samael": "Story locked"
-    }
-  },
-  {
-    "category": "Canon of Vengeance Quests",
-    "unlocked": true,
-    "conditions": {
-      "Tzitzimitl": "Clear corresponding quest",
-      "Turbo Granny": "Clear corresponding quest",
-      "Armaiti": "Clear corresponding quest",
-      "Anansi": "Clear corresponding quest",
-      "Onyankopon": "Clear corresponding quest",
-      "Nahobeeho": "Clear corresponding quest",
-      "Saturnus": "Clear corresponding quest",
-      "Satan": "Clear corresponding quest"
+      "Samael": "Clear \"The Serpent King\"",
+      "Satan": "Clear \"The Great Adversary\""
     }
   },
   {
     "category": "Legacy DLC",
     "unlocked": true,
     "conditions": {
-      "Artemis": "A Goddess in Training",
-      "Cleopatra": "The Rage of a Queen",
-      "Mephisto": "The Doctor's Last Wish",
-      "Matador,Daisoujou,Hell Biker": "Return of the True Demon",
-      "White Rider,Red Rider,Black Rider,Pale Rider": "Return of the True Demon",
-      "Mother Harlot,Trumpeter,Demi-fiend": "Return of the True Demon"
+      "Artemis": "Clear \"A Goddess in Training\"",
+      "Cleopatra": "Clear \"The Rage of a Queen\"",
+      "Mephisto": "Clear \"The Doctor's Last Wish\"",
+      "Matador": "Defeat in Minato",
+      "Daisoujou": "Defeat in Shinagawa",
+      "Hell Biker": "Defeat in Shinagawa",
+      "White Rider": "Defeat in Chiyoda or Shinjuku",
+      "Red Rider": "Defeat in Chiyoda or Shinjuku",
+      "Black Rider": "Defeat in Chiyoda or Shinjuku",
+      "Pale Rider": "Defeat in Chiyoda or Shinuku",
+      "Mother Harlot": "Defeat in Taito",
+      "Trumpeter": "Defeat in Taito",
+      "Demi-fiend": "Clear \"Return of the True Demon\""
     }
   },
   {
     "category": "Vengeance DLC",
     "unlocked": false,
     "conditions": {
-      "Konohana Sakuya": "Clear corresponding DLC quest",
-      "Dagda": "Clear corresponding DLC quest"
+      "Konohana Sakuya": "Clear \"Sakura Cinders of the East\"",
+      "Dagda": "Clear \"Holy Will and Profane Dissent\""
     }
   }
 ]

@@ -17,8 +17,7 @@ import INNATE_SKILLS from './data/innate-skills.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../smt5/data/element-chart.json';
-import FUSION_PREREQS_JSON from '../smt5/data/fusion-prereqs.json';
-import VEN_FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import AFFINITIES_JSON from '../smt5/data/affinity-bonuses.json';
 import JA_NAMES_JSON from '../smt5/data/ja-names.json';
@@ -54,11 +53,8 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    DEMON_DATA_JSON[name].prereq = prereq;
-  }
-
-  for (const [name, prereq] of Object.entries(VEN_FUSION_PREREQS_JSON)) {
     VEN_DEMON_DATA_JSON[name].prereq = prereq;
+    VEN_DEMON_DATA_JSON[name].fusion = 'accident';
   }
 
   for (const demonJson of [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON]) {
