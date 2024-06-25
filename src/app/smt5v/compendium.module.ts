@@ -14,7 +14,8 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from '../smt5/data/demon-data.json';
 import VEN_DEMON_DATA_JSON from './data/demon-data.json';
 import INNATE_SKILLS_JSON from './data/innate-skills.json';
-import SKILL_DATA_JSON from './data/skill-data.json';
+import SKILL_DATA_JSON from '../smt5/data/skill-data.json';
+import VEN_SKILL_DATA_JSON from './data/skill-data.json';
 import TALISMAN_SKILLS_JSON from '../smt5/data/talisman-skills.json';
 import PERIAPT_SKILLS_JSON from './data/periapt-skills.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -40,17 +41,19 @@ function createCompConfig(): CompendiumConfig {
   const COST_MP = 3 << 10;
   const COST_MAG = 19 << 10;
 
-  for (const row of Object.values(SKILL_DATA_JSON)) {
-    const { a: [sname, elem, target], b: nums, c: descs } = row;
-    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
-    nums[5] = acc < 200 ? acc : 100;
+  for (const skillJson of [SKILL_DATA_JSON, VEN_SKILL_DATA_JSON]) {
+    for (const row of Object.values(skillJson)) {
+      const { a: [sname, elem, target], b: nums, c: descs } = row;
+      const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+      nums[5] = acc < 200 ? acc : 100;
 
-    skillData[sname] = {
-      element: elem,
-      rank: Math.min(rank, 99),
-      target: target === '-' ? 'Self' : target,
-      cost: cost === 0 ? 0 : cost < 1000 ? COST_MP + cost : COST_MAG,
-      effect: skillRowToEffect(nums, descs, false),
+      skillData[sname] = {
+        element: elem,
+        rank: Math.min(rank, 99),
+        target: target === '-' ? 'Self' : target,
+        cost: cost === 0 ? 0 : cost < 1000 ? COST_MP + cost : COST_MAG,
+        effect: skillRowToEffect(nums, descs, false),
+      }
     }
   }
 

@@ -1,2891 +1,446 @@
-[
-  {
-    "cost": 1005,
-    "elem": "phy",
-    "name": "Lunge",
-    "power": 145,
-    "rank": 1,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "elem": "phy",
-    "name": "Berserker God",
-    "power": 180,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1030,
-    "elem": "phy",
-    "name": "Mortal Jihad",
-    "power": 250,
-    "rank": 20,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "350 dmg when crit",
-    "elem": "phy",
-    "name": "Akashic Arts",
-    "power": 275,
-    "rank": 29,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "elem": "phy",
-    "name": "Heat Wave",
-    "power": 100,
-    "rank": 7,
-    "target": "All foes"
-  },
-  {
-    "cost": 1035,
-    "elem": "phy",
-    "name": "Deathbound",
-    "power": 150,
-    "rank": 17,
-    "target": "All foes"
-  },
-  {
-    "cost": 1060,
-    "elem": "phy",
-    "name": "Hades Blast",
-    "power": 190,
-    "rank": 23,
-    "target": "All foes"
-  },
-  {
-    "cost": 1045,
-    "effect": "30% crit",
-    "elem": "phy",
-    "name": "Brave Blade",
-    "power": 220,
-    "rank": 22,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "240 dmg when crit",
-    "elem": "phy",
-    "name": "Heavy Blow",
-    "power": 160,
-    "rank": 10,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1045,
-    "effect": "Pierce",
-    "elem": "phy",
-    "name": "Hell Thrust",
-    "power": 235,
-    "rank": 23,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "20% crit",
-    "elem": "phy",
-    "name": "Critical Wave",
-    "power": 70,
-    "rank": 8,
-    "target": "All foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "20% crit",
-    "elem": "phy",
-    "name": "Titanomachia",
-    "power": 150,
-    "rank": 22,
-    "target": "All foes"
-  },
-  {
-    "cost": 1015,
-    "effect": "Dmg scales with current HP",
-    "elem": "phy",
-    "name": "Beatdown",
-    "power": 120,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1040,
-    "effect": "Dmg scales with current HP",
-    "elem": "phy",
-    "name": "Power Punch",
-    "power": 155,
-    "rank": 22,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "Tarunda",
-    "elem": "phy",
-    "name": "Fang Breaker",
-    "power": 130,
-    "rank": 10,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "Pierce",
-    "elem": "phy",
-    "name": "Puncture Punch",
-    "power": 150,
-    "rank": 12,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "Rakunda",
-    "elem": "phy",
-    "name": "Pierce Armor",
-    "power": 130,
-    "rank": 10,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "Sukunda",
-    "elem": "phy",
-    "name": "Blinding Strike",
-    "power": 130,
-    "rank": 10,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "450 dmg against Sleep",
-    "elem": "phy",
-    "name": "Dream Fist",
-    "power": 140,
-    "rank": 11,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "3 hits, 120 dmg against Panic",
-    "elem": "phy",
-    "name": "Purple Smoke",
-    "power": 75,
-    "rank": 16,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "2 hits, 170 dmg against Charm",
-    "elem": "phy",
-    "name": "Hysterical Slap",
-    "power": 90,
-    "rank": 14,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "effect": "30% crit",
-    "elem": "phy",
-    "name": "Gram Slice",
-    "power": 115,
-    "rank": 5,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "30% crit",
-    "elem": "phy",
-    "name": "Fatal Sword",
-    "power": 160,
-    "rank": 14,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1055,
-    "effect": "5 hits, 50% hit",
-    "elem": "phy",
-    "name": "Myriad Slashes",
-    "power": 80,
-    "rank": 29,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "2-4 hits, 35% Poison",
-    "elem": "phy",
-    "name": "Blight",
-    "power": 100,
-    "rank": 14,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "2 hits, 30% Seal",
-    "elem": "phy",
-    "name": "Dark Sword",
-    "power": 90,
-    "rank": 14,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "effect": "2-4 hits, 35% Mirage",
-    "elem": "phy",
-    "name": "Mist Rush",
-    "power": 120,
-    "rank": 20,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1075,
-    "elem": "phy",
-    "name": "Catastrophe",
-    "power": 290,
-    "rank": 25,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "50% hit, 100% crit",
-    "elem": "phy",
-    "name": "Figment Slash",
-    "power": 300,
-    "rank": 25,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1012,
-    "effect": "2-3 hits",
-    "elem": "phy",
-    "name": "Bouncing Claw",
-    "power": 65,
-    "rank": 2,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1024,
-    "effect": "2-3 hits",
-    "elem": "phy",
-    "name": "Damascus Claw",
-    "power": 90,
-    "rank": 13,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1036,
-    "effect": "2-3 hits",
-    "elem": "phy",
-    "name": "Nihil Claw",
-    "power": 125,
-    "rank": 25,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1012,
-    "effect": "2-4 hits",
-    "elem": "phy",
-    "name": "Scratch Dance",
-    "power": 85,
-    "rank": 2,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1024,
-    "effect": "2-4 hits",
-    "elem": "phy",
-    "name": "Axel Claw",
-    "power": 120,
-    "rank": 13,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1036,
-    "effect": "2-4 hits",
-    "elem": "phy",
-    "name": "Madness Nails",
-    "power": 165,
-    "rank": 25,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1015,
-    "effect": "320 dmg against Poison",
-    "elem": "phy",
-    "name": "Venom Chaser",
-    "power": 160,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1005,
-    "effect": "200 dmg when crit",
-    "elem": "phy",
-    "name": "Bestial Bite",
-    "power": 130,
-    "rank": 3,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "300 dmg when crit",
-    "elem": "phy",
-    "name": "Severing Bite",
-    "power": 190,
-    "rank": 19,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "25% Poison, Panic, Charm",
-    "elem": "phy",
-    "name": "Frenzied Chomp",
-    "power": 165,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "Absorbs HP",
-    "elem": "phy",
-    "name": "Eat Whole",
-    "power": 150,
-    "rank": 16,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "effect": "55% Sleep",
-    "elem": "phy",
-    "name": "Dream Needle",
-    "power": 110,
-    "rank": 2,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "effect": "65% Poison",
-    "elem": "phy",
-    "name": "Toxic Sting",
-    "power": 110,
-    "rank": 2,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "1-4 hits, 20% crit",
-    "elem": "phy",
-    "name": "Needle Spray",
-    "power": 70,
-    "rank": 6,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "effect": "45% Panic",
-    "elem": "phy",
-    "name": "Madness Needle",
-    "power": 110,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "Pierce, 100% crit",
-    "elem": "phy",
-    "name": "Yabusame Shot",
-    "power": 60,
-    "rank": 22,
-    "target": "All foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "1-4 hits, 20% crit",
-    "elem": "phy",
-    "name": "Steel Needle",
-    "power": 75,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "50% hit",
-    "elem": "phy",
-    "name": "Crusher Onslaught",
-    "power": 170,
-    "rank": 10,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "50% hit",
-    "elem": "phy",
-    "name": "Megaton Press",
-    "power": 260,
-    "rank": 25,
-    "target": "All foes"
-  },
-  {
-    "cost": 1035,
-    "effect": "2-5 hits, 50% hit",
-    "elem": "phy",
-    "name": "Rampage",
-    "power": 180,
-    "rank": 19,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "50% hit, 100% crit",
-    "elem": "phy",
-    "name": "Critical Slash",
-    "power": 160,
-    "rank": 6,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "50% hit, 100% crit",
-    "elem": "phy",
-    "name": "Mighty Cleave",
-    "power": 240,
-    "rank": 19,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "100% crit",
-    "elem": "phy",
-    "name": "Acrobat Kick",
-    "power": 80,
-    "rank": 14,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "effect": "8 hits",
-    "elem": "phy",
-    "name": "Aramasa",
-    "power": 20,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "effect": "8 hits, 40 dmg when crit",
-    "elem": "phy",
-    "name": "Wrath Tempest",
-    "power": 30,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "340 dmg when crit",
-    "elem": "phy",
-    "name": "Mac an Luin",
-    "power": 270,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "Pierce",
-    "elem": "phy",
-    "name": "Gungnir",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1060,
-    "effect": "8 hits, 100% crit",
-    "elem": "phy",
-    "name": "Hassou Tobi",
-    "power": 30,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1005,
-    "effect": "4 hits, 50% hit",
-    "elem": "phy",
-    "name": "Hellish Slash",
-    "power": 50,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "350 dmg when crit",
-    "elem": "phy",
-    "name": "Carnage Fang",
-    "power": 260,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1065,
-    "effect": "Tarunda + Rakunda",
-    "elem": "phy",
-    "name": "Panta Spane",
-    "power": 180,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1070,
-    "effect": "Rakunda",
-    "elem": "phy",
-    "name": "Pandemonic Crush",
-    "power": 170,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "30% crit",
-    "elem": "phy",
-    "name": "Karnak",
-    "power": 150,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "3 hits, 30% crit",
-    "elem": "phy",
-    "name": "Dancing Strike",
-    "power": 80,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1090,
-    "effect": "40% Seal",
-    "elem": "phy",
-    "name": "Javelin Rain",
-    "power": 260,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "100% crit",
-    "elem": "phy",
-    "name": "Deadly Fury",
-    "power": 200,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1170,
-    "effect": "Pierce",
-    "elem": "phy",
-    "name": "Gaea Rage",
-    "power": 270,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1020,
-    "effect": "70% Panic",
-    "elem": "phy",
-    "name": "Headcrush",
-    "power": 200,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "effect": "Rakunda x2",
-    "elem": "phy",
-    "name": "Somersault",
-    "power": 160,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1040,
-    "effect": "15 hits",
-    "elem": "phy",
-    "name": "Astral Saintstrike",
-    "power": 20,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1020,
-    "effect": "3-6 hits",
-    "elem": "phy",
-    "name": "Andalucia",
-    "power": 85,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1035,
-    "effect": "1-3 hits, Pierce, 50% Panic",
-    "elem": "phy",
-    "name": "Terrorblade",
-    "power": 250,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "240 dmg against ailment",
-    "elem": "phy",
-    "name": "Pestilence",
-    "power": 170,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "elem": "phy",
-    "name": "Hell Spin",
-    "power": 150,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "elem": "fir",
-    "name": "Agi",
-    "power": 130,
-    "rank": 1,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "elem": "fir",
-    "name": "Agilao",
-    "power": 160,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "elem": "fir",
-    "name": "Agidyne",
-    "power": 215,
-    "rank": 18,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "elem": "fir",
-    "name": "Agibarion",
-    "power": 265,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1065,
-    "effect": "Pierce",
-    "elem": "fir",
-    "name": "Trisagion",
-    "power": 230,
-    "rank": 28,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "elem": "fir",
-    "name": "Maragi",
-    "power": 95,
-    "rank": 6,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "elem": "fir",
-    "name": "Maragion",
-    "power": 120,
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "elem": "fir",
-    "name": "Maragidyne",
-    "power": 155,
-    "rank": 21,
-    "target": "All foes"
-  },
-  {
-    "cost": 1075,
-    "elem": "fir",
-    "name": "Maragibarion",
-    "power": 185,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "2-5 hits",
-    "elem": "fir",
-    "name": "Fire Breath",
-    "power": 90,
-    "rank": 9,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "2-5 hits",
-    "elem": "fir",
-    "name": "Ragnarok",
-    "power": 150,
-    "rank": 27,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "St-based",
-    "elem": "fir",
-    "name": "Fire Dracostrike",
-    "power": 190,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1070,
-    "effect": "Dekaja",
-    "elem": "fir",
-    "name": "Hellish Brand",
-    "power": 160,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "elem": "fir",
-    "name": "Raging Hellfire",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1030,
-    "elem": "fir",
-    "name": "Ghastfire Rain",
-    "power": 150,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1015,
-    "effect": "75% Mirage",
-    "elem": "fir",
-    "name": "Mirage Shot",
-    "power": 160,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1130,
-    "effect": "Pierce",
-    "elem": "fir",
-    "name": "Megido Flame",
-    "power": 250,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "elem": "fir",
-    "name": "Hell Burner",
-    "power": 150,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "elem": "ice",
-    "name": "Bufu",
-    "power": 130,
-    "rank": 1,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "elem": "ice",
-    "name": "Bufula",
-    "power": 160,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "elem": "ice",
-    "name": "Bufudyne",
-    "power": 215,
-    "rank": 18,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "elem": "ice",
-    "name": "Bufubarion",
-    "power": 265,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1065,
-    "effect": "Pierce",
-    "elem": "ice",
-    "name": "Ice Age",
-    "power": 230,
-    "rank": 28,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "elem": "ice",
-    "name": "Mabufu",
-    "power": 95,
-    "rank": 6,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "elem": "ice",
-    "name": "Mabufula",
-    "power": 120,
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "elem": "ice",
-    "name": "Mabufudyne",
-    "power": 155,
-    "rank": 21,
-    "target": "All foes"
-  },
-  {
-    "cost": 1075,
-    "elem": "ice",
-    "name": "Mabufubarion",
-    "power": 185,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "2-5 hits",
-    "elem": "ice",
-    "name": "Ice Breath",
-    "power": 90,
-    "rank": 9,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "2-5 hits",
-    "elem": "ice",
-    "name": "Glacial Blast",
-    "power": 150,
-    "rank": 27,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "St-based",
-    "elem": "ice",
-    "name": "Ice Dracostrike",
-    "power": 190,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1045,
-    "effect": "3-7 hits",
-    "elem": "ice",
-    "name": "Thalassic Calamity",
-    "power": 95,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1035,
-    "effect": "Rakunda",
-    "elem": "ice",
-    "name": "King Bufula",
-    "power": 110,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "3-6 hits",
-    "elem": "ice",
-    "name": "Eternal Blizzard",
-    "power": 90,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1020,
-    "effect": "Rakunda",
-    "elem": "ice",
-    "name": "Jack Bufula",
-    "power": 160,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1040,
-    "elem": "ice",
-    "name": "Raging Blizzard",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1018,
-    "effect": "3-6 hits",
-    "elem": "ice",
-    "name": "Stormcaller Song",
-    "power": 60,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1025,
-    "elem": "ice",
-    "name": "Hellish Spurt",
-    "power": 130,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "elem": "ele",
-    "name": "Zio",
-    "power": 130,
-    "rank": 1,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "elem": "ele",
-    "name": "Zionga",
-    "power": 160,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "elem": "ele",
-    "name": "Ziodyne",
-    "power": 215,
-    "rank": 18,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "elem": "ele",
-    "name": "Ziobarion",
-    "power": 265,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1065,
-    "effect": "Pierce",
-    "elem": "ele",
-    "name": "Narukami",
-    "power": 230,
-    "rank": 28,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "elem": "ele",
-    "name": "Mazio",
-    "power": 95,
-    "rank": 6,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "elem": "ele",
-    "name": "Mazionga",
-    "power": 120,
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "elem": "ele",
-    "name": "Maziodyne",
-    "power": 155,
-    "rank": 21,
-    "target": "All foes"
-  },
-  {
-    "cost": 1075,
-    "elem": "ele",
-    "name": "Maziobarion",
-    "power": 185,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "2-5 hits",
-    "elem": "ele",
-    "name": "Shockbound",
-    "power": 90,
-    "rank": 9,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "2-5 hits",
-    "elem": "ele",
-    "name": "Thunder Reign",
-    "power": 150,
-    "rank": 27,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "St-based",
-    "elem": "ele",
-    "name": "Storm Dracostrike",
-    "power": 190,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "elem": "ele",
-    "name": "Ruinous Thunder",
-    "power": 200,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1040,
-    "elem": "ele",
-    "name": "Raging Lightning",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1055,
-    "elem": "ele",
-    "name": "Souffle D'eclair",
-    "power": 330,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "St-based, Pierce",
-    "elem": "ele",
-    "name": "Keraunos",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "elem": "for",
-    "name": "Zan",
-    "power": 130,
-    "rank": 1,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "elem": "for",
-    "name": "Zanma",
-    "power": 160,
-    "rank": 8,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "elem": "for",
-    "name": "Zandyne",
-    "power": 215,
-    "rank": 18,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "elem": "for",
-    "name": "Zanbarion",
-    "power": 265,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1065,
-    "effect": "Pierce",
-    "elem": "for",
-    "name": "Killing Wind",
-    "power": 230,
-    "rank": 28,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "elem": "for",
-    "name": "Mazan",
-    "power": 95,
-    "rank": 6,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "elem": "for",
-    "name": "Mazanma",
-    "power": 120,
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "elem": "for",
-    "name": "Mazandyne",
-    "power": 155,
-    "rank": 21,
-    "target": "All foes"
-  },
-  {
-    "cost": 1075,
-    "elem": "for",
-    "name": "Mazanbarion",
-    "power": 185,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "2-5 hits",
-    "elem": "for",
-    "name": "Wind Breath",
-    "power": 90,
-    "rank": 9,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "2-5 hits",
-    "elem": "for",
-    "name": "Floral Gust",
-    "power": 150,
-    "rank": 27,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1025,
-    "effect": "St-based",
-    "elem": "for",
-    "name": "Wind Dracostrike",
-    "power": 190,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1040,
-    "elem": "for",
-    "name": "Raging Tempest",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "Tarunda + Rakunda",
-    "elem": "for",
-    "name": "Sacrifice of Clay",
-    "power": 140,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "effect": "Dekaja",
-    "elem": "for",
-    "name": "Hell Exhaust",
-    "power": 120,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1015,
-    "effect": "40% instakill when weak to light",
-    "elem": "lig",
-    "name": "Hama",
-    "power": 140,
-    "rank": 4,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "40% instakill when weak to light",
-    "elem": "lig",
-    "name": "Hamaon",
-    "power": 175,
-    "rank": 12,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1055,
-    "effect": "40% instakill when weak to light",
-    "elem": "lig",
-    "name": "Hamabarion",
-    "power": 265,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "30% instakill when weak to light",
-    "elem": "lig",
-    "name": "Mahama",
-    "power": 105,
-    "rank": 8,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "effect": "30% instakill when weak to light",
-    "elem": "lig",
-    "name": "Mahamaon",
-    "power": 135,
-    "rank": 17,
-    "target": "All foes"
-  },
-  {
-    "cost": 1080,
-    "effect": "30% instakill when weak to light",
-    "elem": "lig",
-    "name": "Mahamabarion",
-    "power": 185,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "effect": "St-based, 40% instakill when weak to light",
-    "elem": "lig",
-    "name": "White Dracostrike",
-    "power": 200,
-    "rank": 17,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1060,
-    "effect": "40% instakill when weak to light",
-    "elem": "lig",
-    "name": "Light's Descent",
-    "power": 220,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "150% instakill",
-    "elem": "lig",
-    "name": "God's Bow",
-    "power": 100,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "40% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Mudo",
-    "power": 140,
-    "rank": 4,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "40% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Mudoon",
-    "power": 175,
-    "rank": 12,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1055,
-    "effect": "40% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Mudobarion",
-    "power": 265,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "30% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Mamudo",
-    "power": 105,
-    "rank": 8,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "effect": "30% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Mamudoon",
-    "power": 135,
-    "rank": 17,
-    "target": "All foes"
-  },
-  {
-    "cost": 1080,
-    "effect": "30% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Mamudobarion",
-    "power": 185,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1030,
-    "effect": "St-based, 40% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Black Dracostrike",
-    "power": 200,
-    "rank": 17,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "effect": "100% Poison",
-    "elem": "dar",
-    "name": "Profaned Land",
-    "power": 240,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "effect": "2-5 hits, 50% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Die For Me!",
-    "power": 120,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1120,
-    "effect": "60% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Death Flies",
-    "power": 320,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1070,
-    "effect": "50% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Fallen Destroyer",
-    "power": 250,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "effect": "100% instakill when weak to dark",
-    "elem": "dar",
-    "name": "Walpurgisnacht",
-    "power": 300,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1040,
-    "elem": "alm",
-    "name": "Megido",
-    "power": 125,
-    "rank": 12,
-    "target": "All foes"
-  },
-  {
-    "cost": 1070,
-    "elem": "alm",
-    "name": "Megidola",
-    "power": 160,
-    "rank": 20,
-    "target": "All foes"
-  },
-  {
-    "cost": 1120,
-    "elem": "alm",
-    "name": "Megidolaon",
-    "power": 190,
-    "rank": 26,
-    "target": "All foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "St-based, 20% crit",
-    "elem": "alm",
-    "name": "Freikugel",
-    "power": 230,
-    "rank": 29,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1010,
-    "effect": "Absorbs HP",
-    "elem": "alm",
-    "name": "Life Drain",
-    "power": 120,
-    "rank": 1,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1005,
-    "effect": "Absorbs MP",
-    "elem": "alm",
-    "name": "Spirit Drain",
-    "power": 100,
-    "rank": 15,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1015,
-    "effect": "Absorbs HP and MP",
-    "elem": "alm",
-    "name": "Energy Drain",
-    "power": 80,
-    "rank": 24,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1020,
-    "effect": "St-based",
-    "elem": "alm",
-    "name": "Sakanagi",
-    "power": 230,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1035,
-    "elem": "alm",
-    "name": "Divine Arrowfall",
-    "power": 170,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "St-based, 330 dmg when crit",
-    "elem": "alm",
-    "name": "Murakumo",
-    "power": 275,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "2-5 hits, 40% Panic, Seal",
-    "elem": "alm",
-    "name": "Madness Glint",
-    "power": 150,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1060,
-    "effect": "40% Seal",
-    "elem": "alm",
-    "name": "Violent Rage",
-    "power": 150,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1045,
-    "effect": "Sukunda",
-    "elem": "alm",
-    "name": "Silt of Ruin",
-    "power": 140,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1080,
-    "effect": "3-7 hits",
-    "elem": "alm",
-    "name": "Fire of Sinai",
-    "power": 105,
-    "rank": 99,
-    "target": "Rand foes"
-  },
-  {
-    "cost": 1160,
-    "effect": "Rakunda x4",
-    "elem": "alm",
-    "name": "Tandava",
-    "power": 230,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1015,
-    "effect": "Absorbs HP, Tarunda",
-    "elem": "alm",
-    "name": "Sanguine Drain",
-    "power": 120,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1070,
-    "effect": "45% Charm",
-    "elem": "alm",
-    "name": "Death Lust",
-    "power": 160,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1005,
-    "effect": "Absorbs HP and MP",
-    "elem": "alm",
-    "name": "Meditation",
-    "power": 120,
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1050,
-    "effect": "50% hit, 100% Seal",
-    "elem": "alm",
-    "name": "Soul Divide",
-    "power": 230,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1080,
-    "effect": "45% Panic",
-    "elem": "alm",
-    "name": "Babylon Goblet",
-    "power": 180,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "80% Sleep",
-    "elem": "ail",
-    "name": "Dormina",
-    "rank": 2,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "55% Sleep",
-    "elem": "ail",
-    "name": "Lullaby",
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "85% Poison",
-    "elem": "ail",
-    "name": "Poisma",
-    "rank": 2,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "60% Poison",
-    "elem": "ail",
-    "name": "Toxic Cloud",
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "70% Panic",
-    "elem": "ail",
-    "name": "Pulinpa",
-    "rank": 4,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "45% Panic",
-    "elem": "ail",
-    "name": "Tentarafoo",
-    "rank": 15,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "70% Charm",
-    "elem": "ail",
-    "name": "Marin Karin",
-    "rank": 4,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "45% Charm",
-    "elem": "ail",
-    "name": "Sexy Dance",
-    "rank": 15,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "65% Seal",
-    "elem": "ail",
-    "name": "Makajama",
-    "rank": 6,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "40% Seal",
-    "elem": "ail",
-    "name": "Makajamaon",
-    "rank": 15,
-    "target": "All foes"
-  },
-  {
-    "cost": 1010,
-    "effect": "75% Mirage",
-    "elem": "ail",
-    "name": "Dustoma",
-    "rank": 2,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1025,
-    "effect": "50% Mirage",
-    "elem": "ail",
-    "name": "Fogna",
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1035,
-    "effect": "40% Sleep, Mirage",
-    "elem": "ail",
-    "name": "Slumber Vortex",
-    "rank": 21,
-    "target": "All foes"
-  },
-  {
-    "cost": 1015,
-    "effect": "Poisma + Rakunda",
-    "elem": "ail",
-    "name": "Toxic Spray",
-    "rank": 9,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1030,
-    "effect": "50% Poison",
-    "elem": "dar",
-    "name": "Toxic Breath",
-    "power": 120,
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1150,
-    "effect": "30% instakill, Halve next enemy turn count",
-    "elem": "ail",
-    "name": "Chaotic Will",
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1050,
-    "effect": "80% Mirage, Rakunda + Sukunda",
-    "elem": "ail",
-    "name": "Stagnant Air",
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1035,
-    "effect": "50% Panic, Charm, Sleep",
-    "elem": "ail",
-    "name": "Preach",
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1080,
-    "effect": "40% Charm, Tarunda x2 + Rakunda x2",
-    "elem": "ail",
-    "name": "Frolic",
-    "rank": 99,
-    "target": "All foes"
-  },
-  {
-    "cost": 1100,
-    "effect": "150% instakill",
-    "elem": "ail",
-    "name": "Evil Melody",
-    "rank": 99,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1008,
-    "effect": "Recover 35 HP + 15% max HP",
-    "elem": "rec",
-    "name": "Dia",
-    "rank": 1,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1015,
-    "effect": "Recover 80 HP + 25% max HP",
-    "elem": "rec",
-    "name": "Diarama",
-    "rank": 12,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1035,
-    "effect": "Fully recover HP",
-    "elem": "rec",
-    "name": "Diarahan",
-    "rank": 19,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Recover 30 HP + 13% max HP",
-    "elem": "rec",
-    "name": "Media",
-    "rank": 8,
-    "target": "All allies"
-  },
-  {
-    "cost": 1060,
-    "effect": "Recover 65 HP + 22% max HP",
-    "elem": "rec",
-    "name": "Mediarama",
-    "rank": 18,
-    "target": "All allies"
-  },
-  {
-    "cost": 1150,
-    "effect": "Fully recover HP",
-    "elem": "rec",
-    "name": "Mediarahan",
-    "rank": 26,
-    "target": "All allies"
-  },
-  {
-    "cost": 1008,
-    "effect": "Cure ailments",
-    "elem": "rec",
-    "name": "Patra",
-    "rank": 1,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Cure ailments",
-    "elem": "rec",
-    "name": "Me Patra",
-    "rank": 14,
-    "target": "All allies"
-  },
-  {
-    "cost": 1020,
-    "effect": "Revive with half HP",
-    "elem": "rec",
-    "name": "Recarm",
-    "rank": 6,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1060,
-    "effect": "Revive with full HP",
-    "elem": "rec",
-    "name": "Samarecarm",
-    "rank": 16,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Recover 60 HP + 21% max HP, Patra",
-    "elem": "rec",
-    "name": "Diamrita",
-    "rank": 15,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1020,
-    "effect": "Recover 15 HP + 20% max HP",
-    "elem": "rec",
-    "name": "Miracle Water",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1100,
-    "effect": "Revive and summon with full HP",
-    "elem": "rec",
-    "name": "Revival Chant",
-    "rank": 99,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Recover 50 HP + 15% max HP, Rakukaja x2",
-    "elem": "rec",
-    "name": "Harvest Dance",
-    "rank": 99,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1012,
-    "effect": "Recover 100 HP + 30% max HP, Patra",
-    "elem": "rec",
-    "name": "Sun's Radiance",
-    "rank": 99,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1180,
-    "effect": "Recover 80 HP + 30% max HP, Luster Candy",
-    "elem": "rec",
-    "name": "Golden Apple",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1140,
-    "effect": "Recover 60 HP + 18% max HP, Me Patra + Dekunda",
-    "elem": "rec",
-    "name": "Matriarch's Love",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1015,
-    "effect": "Recover 20 HP + 10% max HP",
-    "elem": "rec",
-    "name": "Humble Blessing",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1150,
-    "effect": "Fully recover HP 30% past max",
-    "elem": "rec",
-    "name": "Eleusinian Harvest",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1200,
-    "effect": "Recover 60 HP + 17% max HP, Dekunda + Luster Candy",
-    "elem": "rec",
-    "name": "Light of Order",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1008,
-    "effect": "Raise attack 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Tarukaja",
-    "rank": 5,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Raise attack 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Matarukaja",
-    "rank": 14,
-    "target": "All allies"
-  },
-  {
-    "cost": 1008,
-    "effect": "Raise hit/evade 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Sukukaja",
-    "rank": 5,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Raise hit/evade 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Masukukaja",
-    "rank": 14,
-    "target": "All allies"
-  },
-  {
-    "cost": 1008,
-    "effect": "Raise defense 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Rakukaja",
-    "rank": 5,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1030,
-    "effect": "Raise defense 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Marakukaja",
-    "rank": 14,
-    "target": "All allies"
-  },
-  {
-    "cost": 1150,
-    "effect": "Tarukaja + Rakukaja + Sukukaja",
-    "elem": "sup",
-    "name": "Luster Candy",
-    "rank": 23,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Remove -kaja effects",
-    "elem": "sup",
-    "name": "Dekaja",
-    "rank": 16,
-    "target": "All foes"
-  },
-  {
-    "cost": 1008,
-    "effect": "Lower attack 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Tarunda",
-    "rank": 5,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1030,
-    "effect": "Lower attack 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Matarunda",
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1008,
-    "effect": "Lower hit/evade 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Sukunda",
-    "rank": 5,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1030,
-    "effect": "Lower hit/evade 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Masukunda",
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1008,
-    "effect": "Lower defense 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Rakunda",
-    "rank": 5,
-    "target": "1 foe"
-  },
-  {
-    "cost": 1030,
-    "effect": "Lower defense 1 level for 3 turns",
-    "elem": "sup",
-    "name": "Marakunda",
-    "rank": 14,
-    "target": "All foes"
-  },
-  {
-    "cost": 1150,
-    "effect": "Tarunda + Rakunda + Sukunda",
-    "elem": "sup",
-    "name": "Debilitate",
-    "rank": 23,
-    "target": "All foes"
-  },
-  {
-    "cost": 1040,
-    "effect": "Remove -kunda effects",
-    "elem": "sup",
-    "name": "Dekunda",
-    "rank": 16,
-    "target": "All allies"
-  },
-  {
-    "cost": 1050,
-    "effect": "Repel next phys attack",
-    "elem": "sup",
-    "name": "Tetrakarn",
-    "rank": 16,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1050,
-    "effect": "Repel next magic attack",
-    "elem": "sup",
-    "name": "Makarakarn",
-    "rank": 16,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1070,
-    "effect": "Nullify next phys attack",
-    "elem": "sup",
-    "name": "Phys Block",
-    "rank": 18,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Nullify next fire attack",
-    "elem": "sup",
-    "name": "Fire Block",
-    "rank": 12,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Nullify next ice attack",
-    "elem": "sup",
-    "name": "Ice Block",
-    "rank": 12,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Nullify next elec attack",
-    "elem": "sup",
-    "name": "Elec Block",
-    "rank": 12,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Nullify next force attack",
-    "elem": "sup",
-    "name": "Force Block",
-    "rank": 12,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Nullify next light attack",
-    "elem": "sup",
-    "name": "Light Block",
-    "rank": 12,
-    "target": "All allies"
-  },
-  {
-    "cost": 1040,
-    "effect": "Nullify next dark attack",
-    "elem": "sup",
-    "name": "Dark Block",
-    "rank": 12,
-    "target": "All allies"
-  },
-  {
-    "cost": 1010,
-    "effect": "Next St-based attack x1.8",
-    "elem": "sup",
-    "name": "Charge",
-    "rank": 6
-  },
-  {
-    "cost": 1010,
-    "effect": "Next Ma-based attack x1.8",
-    "elem": "sup",
-    "name": "Concentrate",
-    "rank": 7
-  },
-  {
-    "cost": 1025,
-    "effect": "Guaranteed crit for next St-based attack",
-    "elem": "sup",
-    "name": "Critical Aura",
-    "rank": 11
-  },
-  {
-    "cost": 1050,
-    "effect": "Next attack x1.8 with pierce",
-    "elem": "sup",
-    "name": "Impaler's Animus",
-    "rank": 22
-  },
-  {
-    "cost": 1020,
-    "effect": "Next recovery spell x1.5, 30% past max possible",
-    "elem": "sup",
-    "name": "Bowl of Hygieia",
-    "rank": 14
-  },
-  {
-    "cost": 1010,
-    "effect": "Raise chance of being targeted",
-    "elem": "sup",
-    "name": "Taunt",
-    "rank": 7
-  },
-  {
-    "cost": 1030,
-    "effect": "Taunt + Rakukaja",
-    "elem": "sup",
-    "name": "Fierce Roar",
-    "rank": 16
-  },
-  {
-    "cost": 1040,
-    "effect": "Next St-based attack x1.5",
-    "elem": "sup",
-    "name": "Donum Gladi",
-    "rank": 15,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1040,
-    "effect": "Next Ma-based attack x1.5",
-    "elem": "sup",
-    "name": "Donum Magici",
-    "rank": 15,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1035,
-    "effect": "Prevent encounters until the next new moon",
-    "elem": "sup",
-    "name": "Estoma",
-    "rank": 11
-  },
-  {
-    "cost": 1015,
-    "effect": "Reduce dmg received by 30% until next turn",
-    "elem": "sup",
-    "name": "Kannabi Veil",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1005,
-    "effect": "Taunt + Sukukaja x2",
-    "elem": "sup",
-    "name": "Witness Me",
-    "rank": 99
-  },
-  {
-    "cost": 1050,
-    "effect": "Rakukaja + Sukukaja",
-    "elem": "sup",
-    "name": "Cautious Cheer",
-    "rank": 99,
-    "target": "All allies"
-  },
-  {
-    "cost": 1008,
-    "effect": "Sukukaja x2",
-    "elem": "sup",
-    "name": "Red Capote",
-    "rank": 99,
-    "target": "1 ally"
-  },
-  {
-    "cost": 1006,
-    "effect": "Guaranteed escape from normal battle",
-    "elem": "oth",
-    "name": "Trafuri",
-    "rank": 9
-  },
-  {
-    "effect": "Halves phys dmg",
-    "elem": "pas",
-    "name": "Resist Phys",
-    "rank": 21
-  },
-  {
-    "effect": "Nullifies phys dmg",
-    "elem": "pas",
-    "name": "Null Phys",
-    "rank": 27
-  },
-  {
-    "effect": "Drains phys dmg",
-    "elem": "pas",
-    "name": "Drain Phys",
-    "rank": 31
-  },
-  {
-    "effect": "Repels phys dmg",
-    "elem": "pas",
-    "name": "Repel Phys",
-    "rank": 31
-  },
-  {
-    "effect": "Halves fire dmg",
-    "elem": "pas",
-    "name": "Resist Fire",
-    "rank": 13
-  },
-  {
-    "effect": "Nullifies fire dmg",
-    "elem": "pas",
-    "name": "Null Fire",
-    "rank": 23
-  },
-  {
-    "effect": "Drains fire dmg",
-    "elem": "pas",
-    "name": "Drain Fire",
-    "rank": 30
-  },
-  {
-    "effect": "Repels fire dmg",
-    "elem": "pas",
-    "name": "Repel Fire",
-    "rank": 30
-  },
-  {
-    "effect": "Halves ice dmg",
-    "elem": "pas",
-    "name": "Resist Ice",
-    "rank": 13
-  },
-  {
-    "effect": "Nullifies ice dmg",
-    "elem": "pas",
-    "name": "Null Ice",
-    "rank": 23
-  },
-  {
-    "effect": "Drains ice dmg",
-    "elem": "pas",
-    "name": "Drain Ice",
-    "rank": 30
-  },
-  {
-    "effect": "Repels ice dmg",
-    "elem": "pas",
-    "name": "Repel Ice",
-    "rank": 30
-  },
-  {
-    "effect": "Halves elec dmg",
-    "elem": "pas",
-    "name": "Resist Elec",
-    "rank": 13
-  },
-  {
-    "effect": "Nullifies elec dmg",
-    "elem": "pas",
-    "name": "Null Elec",
-    "rank": 23
-  },
-  {
-    "effect": "Drains elec dmg",
-    "elem": "pas",
-    "name": "Drain Elec",
-    "rank": 30
-  },
-  {
-    "effect": "Repels elec dmg",
-    "elem": "pas",
-    "name": "Repel Elec",
-    "rank": 30
-  },
-  {
-    "effect": "Halves force dmg",
-    "elem": "pas",
-    "name": "Resist Force",
-    "rank": 13
-  },
-  {
-    "effect": "Nullifies force dmg",
-    "elem": "pas",
-    "name": "Null Force",
-    "rank": 23
-  },
-  {
-    "effect": "Drains force dmg",
-    "elem": "pas",
-    "name": "Drain Force",
-    "rank": 30
-  },
-  {
-    "effect": "Repels force dmg",
-    "elem": "pas",
-    "name": "Repel Force",
-    "rank": 30
-  },
-  {
-    "effect": "Halves light dmg",
-    "elem": "pas",
-    "name": "Resist Light",
-    "rank": 13
-  },
-  {
-    "effect": "Nullifies light dmg",
-    "elem": "pas",
-    "name": "Null Light",
-    "rank": 23
-  },
-  {
-    "effect": "Drains light dmg",
-    "elem": "pas",
-    "name": "Drain Light",
-    "rank": 30
-  },
-  {
-    "effect": "Repels light dmg",
-    "elem": "pas",
-    "name": "Repel Light",
-    "rank": 30
-  },
-  {
-    "effect": "Halves dark dmg",
-    "elem": "pas",
-    "name": "Resist Dark",
-    "rank": 13
-  },
-  {
-    "effect": "Nullifies dark dmg",
-    "elem": "pas",
-    "name": "Null Dark",
-    "rank": 23
-  },
-  {
-    "effect": "Drains dark dmg",
-    "elem": "pas",
-    "name": "Drain Dark",
-    "rank": 30
-  },
-  {
-    "effect": "Repels dark dmg",
-    "elem": "pas",
-    "name": "Repel Dark",
-    "rank": 30
-  },
-  {
-    "effect": "Recover 25% HP after victory",
-    "elem": "pas",
-    "name": "Light Life Aid",
-    "rank": 9
-  },
-  {
-    "effect": "Recover 50% HP after victory",
-    "elem": "pas",
-    "name": "Life Aid",
-    "rank": 16
-  },
-  {
-    "effect": "Recover 7% MP after victory",
-    "elem": "pas",
-    "name": "Light Mana Aid",
-    "rank": 12
-  },
-  {
-    "effect": "Recover 15% MP after victory",
-    "elem": "pas",
-    "name": "Mana Aid",
-    "rank": 22
-  },
-  {
-    "effect": "50% chance to counter St-based attack",
-    "elem": "phy",
-    "name": "Counter",
-    "power": 100,
-    "rank": 8
-  },
-  {
-    "effect": "50% chance to counter St-based attack",
-    "elem": "phy",
-    "name": "Retaliate",
-    "power": 150,
-    "rank": 18
-  },
-  {
-    "effect": "Max HP +15%",
-    "elem": "pas",
-    "name": "Life Spring",
-    "rank": 7
-  },
-  {
-    "effect": "Max HP +30%",
-    "elem": "pas",
-    "name": "Great Life Spring",
-    "rank": 15
-  },
-  {
-    "effect": "Max MP +15%",
-    "elem": "pas",
-    "name": "Mana Spring",
-    "rank": 8
-  },
-  {
-    "effect": "Max MP +30%",
-    "elem": "pas",
-    "name": "Great Mana Spring",
-    "rank": 16
-  },
-  {
-    "effect": "Recover 10 MP when inflicting an ailment",
-    "elem": "pas",
-    "name": "Curse Siphon",
-    "rank": 7
-  },
-  {
-    "effect": "Recover 20 MP when inflicting an ailment",
-    "elem": "pas",
-    "name": "Great Curse Siphon",
-    "rank": 16
-  },
-  {
-    "effect": "Survive fatal attack with 1 HP once per battle",
-    "elem": "pas",
-    "name": "Endure",
-    "rank": 13
-  },
-  {
-    "effect": "Survive fatal attack with full HP once per battle",
-    "elem": "pas",
-    "name": "Enduring Soul",
-    "rank": 22
-  },
-  {
-    "effect": "Normal dmg x0.9, Crit dmg x1.45",
-    "elem": "pas",
-    "name": "Critical Zealot",
-    "rank": 21
-  },
-  {
-    "effect": "Recover 10 MP when striking weakness or crit",
-    "elem": "pas",
-    "name": "Restore",
-    "rank": 10
-  },
-  {
-    "effect": "Recover 20 MP when striking weakness or crit",
-    "elem": "pas",
-    "name": "High Restore",
-    "rank": 20
-  },
-  {
-    "effect": "Extends buffs and debuffs cast by 1 turn",
-    "elem": "pas",
-    "name": "Boon Boost",
-    "rank": 12
-  },
-  {
-    "effect": "Extends buffs and debuffs cast by 2 turns",
-    "elem": "pas",
-    "name": "Boon Boost EX",
-    "rank": 22
-  },
-  {
-    "effect": "Poison effects +100%",
-    "elem": "pas",
-    "name": "Poison Adept",
-    "rank": 14
-  },
-  {
-    "effect": "Poison effects +200%",
-    "elem": "pas",
-    "name": "Poison Master",
-    "rank": 23
-  },
-  {
-    "effect": "Nullifies turn penalties when attack is dodged or resisted",
-    "elem": "pas",
-    "name": "Safeguard",
-    "rank": 15
-  },
-  {
-    "effect": "Chance of receiving ailment or instakill x0.7",
-    "elem": "pas",
-    "name": "Hellish Mask",
-    "rank": 12
-  },
-  {
-    "effect": "Chance of receiving ailment or instakill x0.4",
-    "elem": "pas",
-    "name": "Abyssal Mask",
-    "rank": 21
-  },
-  {
-    "effect": "Accuracy +15%",
-    "elem": "pas",
-    "name": "Beast Eye",
-    "rank": 7
-  },
-  {
-    "effect": "Accuracy +30%",
-    "elem": "pas",
-    "name": "Dragon Eye",
-    "rank": 19
-  },
-  {
-    "effect": "Crit +80%",
-    "elem": "pas",
-    "name": "Bloody Glee",
-    "rank": 8
-  },
-  {
-    "effect": "Crit +150%",
-    "elem": "pas",
-    "name": "Murderous Glee",
-    "rank": 21
-  },
-  {
-    "effect": "Phys dmg +20%",
-    "elem": "pas",
-    "name": "Phys Pleroma",
-    "rank": 20
-  },
-  {
-    "effect": "Phys dmg +35%",
-    "elem": "pas",
-    "name": "High Phys Pleroma",
-    "rank": 29
-  },
-  {
-    "effect": "Fire dmg +20%",
-    "elem": "pas",
-    "name": "Fire Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Fire dmg +35%",
-    "elem": "pas",
-    "name": "High Fire Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Ice dmg +20%",
-    "elem": "pas",
-    "name": "Ice Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Ice dmg +35%",
-    "elem": "pas",
-    "name": "High Ice Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Elec dmg +20%",
-    "elem": "pas",
-    "name": "Elec Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Elec dmg +35%",
-    "elem": "pas",
-    "name": "High Elec Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Force dmg +20%",
-    "elem": "pas",
-    "name": "Force Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Force dmg +35%",
-    "elem": "pas",
-    "name": "High Force Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Recovery skills +20%",
-    "elem": "pas",
-    "name": "Heal Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Recovery skills +35%",
-    "elem": "pas",
-    "name": "High Heal Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Light dmg +20%",
-    "elem": "pas",
-    "name": "Light Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Light dmg +35%",
-    "elem": "pas",
-    "name": "High Light Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Dark dmg +20%",
-    "elem": "pas",
-    "name": "Dark Pleroma",
-    "rank": 14
-  },
-  {
-    "effect": "Dark dmg +35%",
-    "elem": "pas",
-    "name": "High Dark Pleroma",
-    "rank": 26
-  },
-  {
-    "effect": "Almighty dmg +20%",
-    "elem": "pas",
-    "name": "Almighty Pleroma",
-    "rank": 24
-  },
-  {
-    "effect": "Almighty dmg +35%",
-    "elem": "pas",
-    "name": "High Almighty Pleroma",
-    "rank": 31
-  },
-  {
-    "effect": "Exp x2 when lower level than protag",
-    "elem": "pas",
-    "name": "Inspiring Leader",
-    "rank": 8
-  },
-  {
-    "effect": "65% chance to counter St-based, Tarunda",
-    "elem": "dar",
-    "name": "Heavenly Counter",
-    "power": 100,
-    "rank": 99
-  },
-  {
-    "cost": 2001,
-    "effect": "175 lvl-dependent dmg, 100% Sleep",
-    "elem": "phy",
-    "name": "Twilight Wave",
-    "rank": 50,
-    "target": "All foes"
-  },
-  {
-    "cost": 2001,
-    "effect": "350 lvl-dependent dmg",
-    "elem": "alm",
-    "name": "Big Bang",
-    "rank": 50,
-    "target": "All foes"
-  },
-  {
-    "cost": 2001,
-    "effect": "550 lvl-dependent dmg",
-    "elem": "alm",
-    "name": "Freikugel EX",
-    "rank": 50,
-    "target": "1 foe"
-  },
-  {
-    "cost": 2001,
-    "effect": "175 lvl-dependent dmg, Absorbs HP and MP",
-    "elem": "alm",
-    "name": "Soul Drain",
-    "rank": 50,
-    "target": "1 foe"
-  },
-  {
-    "cost": 2001,
-    "effect": "Random ailment + Debilitate",
-    "elem": "ail",
-    "name": "Accursed Poison",
-    "rank": 50,
-    "target": "All foes"
-  },
-  {
-    "cost": 2001,
-    "effect": "Salvation + Samarecarm",
-    "elem": "rec",
-    "name": "Eternal Prayer",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Moderate MP recovery",
-    "elem": "rec",
-    "name": "Sea of Stars",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Fully recover HP and MP",
-    "elem": "rec",
-    "name": "Waters of Youth",
-    "rank": 50
-  },
-  {
-    "cost": 2001,
-    "effect": "Remove all buff effects",
-    "elem": "sup",
-    "name": "Dekajaon",
-    "rank": 50,
-    "target": "All foes"
-  },
-  {
-    "cost": 2001,
-    "effect": "Guaranteed crit for next St-based attack",
-    "elem": "sup",
-    "name": "Expand: Critical Aura",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Raise dmg of next attack with pierce",
-    "elem": "sup",
-    "name": "Expand: Piercing Aura",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Maxes buffs for 3 turns",
-    "elem": "sup",
-    "name": "Fairy Banquet",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Greatly raise dmg of next attack with pierce",
-    "elem": "sup",
-    "name": "Impaler's Glory",
-    "rank": 50
-  },
-  {
-    "cost": 2001,
-    "effect": "All attacks and recovery scaled by lost HP for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Adversity",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "All charge effects extended until the next turn",
-    "elem": "sup",
-    "name": "Omagatoki: Charge",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "All multi-hits will deal their max number of hits for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Dance",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "All attacks will crit for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Critical",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Doubles the effect of buffs and debuffs cast during same turn",
-    "elem": "sup",
-    "name": "Omagatoki: Doubler",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "All skills will cost 1 MP for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Free",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Greatly raises accuracy and ailment hit for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Hit",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Greatly increases exp and money if battle ends in same turn",
-    "elem": "sup",
-    "name": "Omagatoki: Luck",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "All attacks will pierce for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Pierce",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Maxes out skill potentials for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Potential",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "All skill dmg and costs doubled for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Savage",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Forgives 2 failures during negotiation for 1 turn",
-    "elem": "sup",
-    "name": "Omagatoki: Sincerity",
-    "rank": 50,
-    "target": "All allies"
-  },
-  {
-    "cost": 2001,
-    "effect": "Maxes debuffs for 3 turns",
-    "elem": "sup",
-    "name": "Rasetsu Feast",
-    "rank": 50,
-    "target": "All foes"
-  },
-  {
-    "cost": 2001,
-    "effect": "Greatly decreases dmg receive until next turn",
-    "elem": "sup",
-    "name": "Shield of God",
-    "rank": 50,
-    "target": "All allies"
-  }
-]
+{
+  "1": { "a": ["Agi", "fir", "1 foe"], "b": [1, 10, 130, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "3": { "a": ["Agilao", "fir", "1 foe"], "b": [8, 20, 160, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "5": { "a": ["Agidyne", "fir", "1 foe"], "b": [18, 35, 215, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "7": { "a": ["Agibarion", "fir", "1 foe"], "b": [24, 50, 265, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "8": { "a": ["Trisagion", "fir", "1 foe"], "b": [28, 65, 230, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "9": { "a": ["Maragi", "fir", "All foes"], "b": [6, 15, 95, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "10": { "a": ["Maragion", "fir", "All foes"], "b": [14, 30, 120, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "11": { "a": ["Maragidyne", "fir", "All foes"], "b": [21, 50, 155, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "12": { "a": ["Maragibarion", "fir", "All foes"], "b": [26, 75, 185, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "13": { "a": ["Ragnarok", "fir", "Rand foes"], "b": [27, 60, 150, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "14": { "a": ["Fire Breath", "fir", "Rand foes"], "b": [9, 25, 90, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "16": { "a": ["Bufu", "ice", "1 foe"], "b": [1, 10, 130, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "18": { "a": ["Bufula", "ice", "1 foe"], "b": [8, 20, 160, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "20": { "a": ["Bufudyne", "ice", "1 foe"], "b": [18, 35, 215, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "22": { "a": ["Bufubarion", "ice", "1 foe"], "b": [24, 50, 265, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "23": { "a": ["Ice Age", "ice", "1 foe"], "b": [28, 65, 230, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "24": { "a": ["Mabufu", "ice", "All foes"], "b": [6, 15, 95, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "25": { "a": ["Mabufula", "ice", "All foes"], "b": [14, 30, 120, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "26": { "a": ["Mabufudyne", "ice", "All foes"], "b": [21, 50, 155, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "27": { "a": ["Mabufubarion", "ice", "All foes"], "b": [26, 75, 185, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "28": { "a": ["Glacial Blast", "ice", "Rand foes"], "b": [27, 60, 150, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "29": { "a": ["Ice Breath", "ice", "Rand foes"], "b": [9, 25, 90, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "31": { "a": ["Zio", "ele", "1 foe"], "b": [1, 10, 130, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "33": { "a": ["Zionga", "ele", "1 foe"], "b": [8, 20, 160, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "35": { "a": ["Ziodyne", "ele", "1 foe"], "b": [18, 35, 215, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "37": { "a": ["Ziobarion", "ele", "1 foe"], "b": [24, 50, 265, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "38": { "a": ["Narukami", "ele", "1 foe"], "b": [28, 65, 230, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "39": { "a": ["Mazio", "ele", "All foes"], "b": [6, 15, 95, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "40": { "a": ["Mazionga", "ele", "All foes"], "b": [14, 30, 120, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "41": { "a": ["Maziodyne", "ele", "All foes"], "b": [21, 50, 155, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "42": { "a": ["Maziobarion", "ele", "All foes"], "b": [26, 75, 185, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "43": { "a": ["Thunder Reign", "ele", "Rand foes"], "b": [27, 60, 150, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "44": { "a": ["Shockbound", "ele", "Rand foes"], "b": [9, 25, 90, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "46": { "a": ["Zan", "for", "1 foe"], "b": [1, 10, 130, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "48": { "a": ["Zanma", "for", "1 foe"], "b": [8, 20, 160, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "50": { "a": ["Zandyne", "for", "1 foe"], "b": [18, 35, 215, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "52": { "a": ["Zanbarion", "for", "1 foe"], "b": [24, 50, 265, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "53": { "a": ["Killing Wind", "for", "1 foe"], "b": [28, 65, 230, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "54": { "a": ["Mazan", "for", "All foes"], "b": [6, 15, 95, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "55": { "a": ["Mazanma", "for", "All foes"], "b": [14, 30, 120, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "56": { "a": ["Mazandyne", "for", "All foes"], "b": [21, 50, 155, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "57": { "a": ["Mazanbarion", "for", "All foes"], "b": [26, 75, 185, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "58": { "a": ["Floral Gust", "for", "Rand foes"], "b": [27, 60, 150, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "59": { "a": ["Wind Breath", "for", "Rand foes"], "b": [9, 25, 90, 2, 5, 98, 0, 0], "c": ["-", "-", "-"] },
+  "60": { "a": ["Omagatoki: Critical", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "All attacks, including Magic attacks, will become Critical hits for 1 turn", "-"] },
+  "61": { "a": ["Mudo", "dar", "1 foe"], "b": [4, 15, 140, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "62": { "a": ["Mudoon", "dar", "1 foe"], "b": [12, 25, 175, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "63": { "a": ["Mudobarion", "dar", "1 foe"], "b": [24, 55, 265, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "64": { "a": ["Mamudo", "dar", "All foes"], "b": [8, 25, 105, 1, 1, 98, 0, 30], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "65": { "a": ["Mamudoon", "dar", "All foes"], "b": [17, 40, 135, 1, 1, 98, 0, 30], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "66": { "a": ["Mamudobarion", "dar", "All foes"], "b": [26, 80, 185, 1, 1, 98, 0, 30], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "67": { "a": ["Hama", "lig", "1 foe"], "b": [4, 15, 140, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "68": { "a": ["Hamaon", "lig", "1 foe"], "b": [12, 25, 175, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "69": { "a": ["Hamabarion", "lig", "1 foe"], "b": [24, 55, 265, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "70": { "a": ["Mahama", "lig", "All foes"], "b": [8, 25, 105, 1, 1, 98, 0, 30], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "71": { "a": ["Mahamaon", "lig", "All foes"], "b": [17, 40, 135, 1, 1, 98, 0, 30], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "72": { "a": ["Mahamabarion", "lig", "All foes"], "b": [26, 80, 185, 1, 1, 98, 0, 30], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "73": { "a": ["Megido", "alm", "All foes"], "b": [12, 40, 125, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "74": { "a": ["Megidola", "alm", "All foes"], "b": [20, 70, 160, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "75": { "a": ["Megidolaon", "alm", "All foes"], "b": [26, 120, 190, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "76": { "a": ["Big Bang", "alm", "All foes"], "b": [50, 0, 350, 1, 1, 255, 0, 0], "c": ["lvl-dependent dmg", "$2", "-"] },
+  "77": { "a": ["Freikugel", "alm", "1 foe"], "b": [29, 60, 230, 1, 1, 98, 20, 0], "c": ["St-based", "$2", "-"] },
+  "78": { "a": ["Freikugel EX", "alm", "1 foe"], "b": [50, 0, 550, 1, 1, 255, 0, 0], "c": ["lvl-dependent dmg", "$2", "-"] },
+  "79": { "a": ["Life Drain", "alm", "1 foe"], "b": [1, 10, 120, 1, 1, 98, 0, 100], "c": ["HP restore", "$1% dmg dealt $2", "-"] },
+  "80": { "a": ["Spirit Drain", "alm", "1 foe"], "b": [15, 5, 100, 1, 1, 98, 0, 100], "c": ["MP restore", "$1% dmg dealt $2", "-"] },
+  "81": { "a": ["Energy Drain", "alm", "1 foe"], "b": [24, 15, 80, 1, 1, 98, 0, 100], "c": ["HP and MP restore", "$1% dmg dealt $2", "-"] },
+  "82": { "a": ["Slumber Vortex", "ail", "All foes"], "b": [21, 35, 0, 1, 1, 255, 0, 40], "c": ["Mirage, Sleep", "$1% $2", "-"] },
+  "83": { "a": ["Dormina", "ail", "1 foe"], "b": [2, 10, 0, 1, 1, 255, 0, 80], "c": ["Sleep", "$1% $2", "-"] },
+  "84": { "a": ["Lullaby", "ail", "All foes"], "b": [14, 25, 0, 1, 1, 255, 0, 55], "c": ["Sleep", "$1% $2", "-"] },
+  "85": { "a": ["Poisma", "ail", "1 foe"], "b": [2, 10, 0, 1, 1, 255, 0, 85], "c": ["Poison", "$1% $2", "-"] },
+  "86": { "a": ["Toxic Cloud", "ail", "All foes"], "b": [14, 25, 0, 1, 1, 255, 0, 60], "c": ["Poison", "$1% $2", "-"] },
+  "87": { "a": ["Soul Drain", "alm", "1 foe"], "b": [50, 0, 175, 1, 1, 255, 0, 0], "c": ["HP and MP restore", "$1% dmg dealt $2, lvl-dependent dmg", "-"] },
+  "88": { "a": ["Lightning Pulse", "ele", "All foes"], "b": [900, 25, 90, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "89": { "a": ["Pulinpa", "ail", "1 foe"], "b": [4, 10, 0, 1, 1, 255, 0, 70], "c": ["Panic", "$1% $2", "-"] },
+  "90": { "a": ["Tentarafoo", "ail", "All foes"], "b": [15, 25, 0, 1, 1, 255, 0, 45], "c": ["Panic", "$1% $2", "-"] },
+  "91": { "a": ["Marin Karin", "ail", "1 foe"], "b": [4, 10, 0, 1, 1, 255, 0, 70], "c": ["Charm", "$1% $2", "-"] },
+  "92": { "a": ["Sexy Dance", "ail", "All foes"], "b": [15, 25, 0, 1, 1, 255, 0, 45], "c": ["Charm", "$1% $2", "-"] },
+  "93": { "a": ["Makajama", "ail", "1 foe"], "b": [6, 10, 0, 1, 1, 255, 0, 65], "c": ["Seal", "$1% $2", "-"] },
+  "94": { "a": ["Makajamaon", "ail", "All foes"], "b": [15, 25, 0, 1, 1, 255, 0, 40], "c": ["Seal", "$1% $2", "-"] },
+  "95": { "a": ["Dustoma", "ail", "1 foe"], "b": [2, 10, 0, 1, 1, 255, 0, 75], "c": ["Mirage", "$1% $2", "-"] },
+  "96": { "a": ["Fogna", "ail", "All foes"], "b": [14, 25, 0, 1, 1, 255, 0, 50], "c": ["Mirage", "$1% $2", "-"] },
+  "97": { "a": ["Dia", "rec", "1 ally"], "b": [1, 8, 35, 1, 1, 255, 0, 15], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "98": { "a": ["Diarama", "rec", "1 ally"], "b": [12, 15, 80, 1, 1, 255, 0, 25], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "99": { "a": ["Diarahan", "rec", "1 ally"], "b": [19, 35, 0, 1, 1, 255, 0, 100], "c": ["HP restore", "$1% max $2", "-"] },
+  "100": { "a": ["Media", "rec", "All allies"], "b": [8, 30, 30, 1, 1, 255, 0, 13], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "101": { "a": ["Mediarama", "rec", "All allies"], "b": [18, 60, 65, 1, 1, 255, 0, 22], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "102": { "a": ["Mediarahan", "rec", "All allies"], "b": [26, 150, 0, 1, 1, 255, 0, 100], "c": ["HP restore", "$1% max $2", "-"] },
+  "103": { "a": ["Dia A", "rec", "1 ally"], "b": [900, 8, 60, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "104": { "a": ["Diarama A", "rec", "1 ally"], "b": [900, 15, 180, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "105": { "a": ["Media A", "rec", "All allies"], "b": [900, 30, 40, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "106": { "a": ["Mediarama A", "rec", "All allies"], "b": [900, 60, 120, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "107": { "a": ["Patra", "rec", "1 ally"], "b": [1, 8, 0, 1, 1, 255, 0, 0], "c": ["ailments", "removes $2", "-"] },
+  "108": { "a": ["Me Patra", "rec", "All allies"], "b": [14, 30, 0, 1, 1, 255, 0, 0], "c": ["Patra", "$2", "-"] },
+  "109": { "a": ["Twilight Wave", "phy", "All foes"], "b": [50, 0, 175, 1, 1, 255, 0, 200], "c": ["Sleep", "$1% $2, lvl-dependent dmg", "-"] },
+  "110": { "a": ["Eternal Prayer", "rec", "All stock"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["Recarm + Patra + Diarahan", "$2", "-"] },
+  "111": { "a": ["Sea of Stars", "rec", "All allies"], "b": [50, 1001, 10, 1, 1, 255, 0, 30], "c": ["MP restore", "base + $1% max $2", "-"] },
+  "112": { "a": ["Waters of Youth", "rec", "Self"], "b": [50, 1001, 0, 1, 1, 255, 0, 100], "c": ["HP and MP restore", "$1% max $2", "-"] },
+  "113": { "a": ["Accursed Poison", "ail", "All foes"], "b": [50, 0, 0, 1, 1, 255, 0, 255], "c": ["Seal, Charm, Panic, Poison, Mirage, Sleep", "$1% $2, Debilitate", "-"] },
+  "114": { "a": ["Rasetsu Feast", "sup", "All foes"], "b": [50, 1001, 0, 1, 1, 255, 0, 4], "c": ["Debilitate", "$2 x$1", "-"] },
+  "115": { "a": ["Recarm", "rec", "1 stock"], "b": [6, 20, 0, 1, 1, 255, 0, 50], "c": ["HP restore", "$1% $2 after reviving", "-"] },
+  "116": { "a": ["Samarecarm", "rec", "1 stock"], "b": [16, 60, 0, 1, 1, 255, 0, 100], "c": ["HP restore", "$1% $2 after reviving", "-"] },
+  "117": { "a": ["Heavenly Counter A", "dar", "1 foe"], "b": [900, 0, 100, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "118": { "a": ["Tarukaja", "sup", "1 ally"], "b": [5, 8, 0, 1, 1, 255, 0, 3], "c": ["attack", "raises $2 1 rank for $1 turns", "-"] },
+  "119": { "a": ["Matarukaja", "sup", "All allies"], "b": [14, 30, 0, 1, 1, 255, 0, 3], "c": ["attack", "raises $2 1 rank for $1 turns", "-"] },
+  "120": { "a": ["Fairy Banquet", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 4], "c": ["Luster Candy", "$2 x$1", "-"] },
+  "121": { "a": ["Expand: Critical Aura", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["Critical Aura", "$2", "-"] },
+  "122": { "a": ["Sukukaja", "sup", "1 ally"], "b": [5, 8, 0, 1, 1, 255, 0, 3], "c": ["accuracy + evasion", "raises $2 1 rank for $1 turns", "-"] },
+  "123": { "a": ["Masukukaja", "sup", "All allies"], "b": [14, 30, 0, 1, 1, 255, 0, 3], "c": ["accuracy + evasion", "raises $2 1 rank for $1 turns", "-"] },
+  "124": { "a": ["Rakukaja", "sup", "1 ally"], "b": [5, 8, 0, 1, 1, 255, 0, 3], "c": ["defense", "raises $2 1 rank for $1 turns", "-"] },
+  "125": { "a": ["Marakukaja", "sup", "All allies"], "b": [14, 30, 0, 1, 1, 255, 0, 3], "c": ["defense", "raises $2 1 rank for $1 turns", "-"] },
+  "126": { "a": ["Luster Candy", "sup", "All allies"], "b": [23, 150, 0, 1, 1, 255, 0, 0], "c": ["Tarukaja + Rakukaja + Sukukaja", "$2", "-"] },
+  "127": { "a": ["Dekaja", "sup", "All foes"], "b": [16, 40, 0, 1, 1, 255, 0, 0], "c": ["-kaja effects", "removes $2", "-"] },
+  "128": { "a": ["Tarunda", "sup", "1 foe"], "b": [5, 8, 0, 1, 1, 255, 0, 3], "c": ["attack", "lowers $2 1 rank for $1 turns", "-"] },
+  "129": { "a": ["Matarunda", "sup", "All foes"], "b": [14, 30, 0, 1, 1, 255, 0, 3], "c": ["attack", "lowers $2 1 rank for $1 turns", "-"] },
+  "130": { "a": ["Expand: Piercing Aura", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["Impaler's Animus", "$2", "-"] },
+  "131": { "a": ["Shield of God", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Greatly decreases dmg taken until the next turn", "-"] },
+  "132": { "a": ["Sukunda", "sup", "1 foe"], "b": [5, 8, 0, 1, 1, 255, 0, 3], "c": ["accuracy + evasion", "lowers $2 1 rank for $1 turns", "-"] },
+  "133": { "a": ["Masukunda", "sup", "All foes"], "b": [14, 30, 0, 1, 1, 255, 0, 3], "c": ["accuracy + evasion", "lowers $2 1 rank for $1 turns", "-"] },
+  "134": { "a": ["Rakunda", "sup", "1 foe"], "b": [5, 8, 0, 1, 1, 255, 0, 3], "c": ["defense", "lowers $2 1 rank for $1 turns", "-"] },
+  "135": { "a": ["Marakunda", "sup", "All foes"], "b": [14, 30, 0, 1, 1, 255, 0, 3], "c": ["defense", "lowers $2 1 rank for $1 turns", "-"] },
+  "136": { "a": ["Debilitate", "sup", "All foes"], "b": [23, 150, 0, 1, 1, 255, 0, 0], "c": ["Tarunda + Rakunda + Sukunda", "$2", "-"] },
+  "137": { "a": ["Dekunda", "sup", "All allies"], "b": [16, 40, 0, 1, 1, 255, 0, 0], "c": ["-kunda effects", "removes $2", "-"] },
+  "138": { "a": ["Impaler's Glory", "sup", "Self"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Greatly increases the damage of the next attack and adds Pierce effect", "-"] },
+  "139": { "a": ["Tetrakarn", "sup", "1 ally"], "b": [16, 50, 0, 1, 1, 255, 0, 1], "c": ["Phys", "repels next $2 attack for $1 turn", "-"] },
+  "140": { "a": ["Makarakarn", "sup", "1 ally"], "b": [16, 50, 0, 1, 1, 255, 0, 1], "c": ["magic", "repels next $2 attack for $1 turn", "-"] },
+  "142": { "a": ["Charge", "sup", "Self"], "b": [6, 10, 0, 1, 1, 255, 0, 0], "c": ["St", "Greatly increases the damage of the next $2-based attack", "-"] },
+  "143": { "a": ["Concentrate", "sup", "Self"], "b": [7, 10, 0, 1, 1, 255, 0, 0], "c": ["Ma", "Greatly increases the damage of the next $2-based attack", "-"] },
+  "144": { "a": ["Critical Aura", "sup", "Self"], "b": [11, 25, 0, 1, 1, 255, 0, 0], "c": ["St", "Next $2-based attack will be 100% accurate and guaranteed Critical", "-"] },
+  "145": { "a": ["Dekajaon", "sup", "All foes"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Removes a -kaja effects, charges, and barriers", "-"] },
+  "146": { "a": ["Omagatoki: Pierce", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "147": { "a": ["Omagatoki: Hit", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Greatly raises Accuracy and ailment efficacy for 1 turn", "-"] },
+  "148": { "a": ["Impaler's Animus", "sup", "Self"], "b": [22, 50, 0, 1, 1, 255, 0, 0], "c": ["-", "Increases the damage of the next attack and adds Pierce effect", "-"] },
+  "149": { "a": ["Bowl of Hygieia", "sup", "Self"], "b": [14, 20, 0, 1, 1, 255, 0, 0], "c": ["-", "Greatly increases the effect of the next healing skill cast and allows it to heal above MAX HP", "-"] },
+  "150": { "a": ["Diamrita", "rec", "1 ally"], "b": [15, 30, 60, 1, 1, 255, 0, 21], "c": ["HP restore", "base + $1% max $2, Patra", "-"] },
+  "151": { "a": ["Do nothing", "spe", "Self"], "b": [900, 0, 0, 1, 1, 255, 0, 0], "c": ["-", "-", "-"] },
+  "152": { "a": ["Called an ally", "spe", "Self"], "b": [900, 0, 0, 1, 1, 255, 0, 0], "c": ["-", "-", "-"] },
+  "153": { "a": ["Wait and see", "spe", "Self"], "b": [900, 0, 0, 1, 1, 255, 0, 0], "c": ["-", "-", "-"] },
+  "154": { "a": ["Trafuri", "spe", "All allies"], "b": [9, 6, 0, 1, 1, 255, 0, 0], "c": ["-", "Guarantees escape from escapable battles", "-"] },
+  "155": { "a": ["Estoma", "sup", "All allies"], "b": [11, 35, 0, 1, 1, 255, 0, 0], "c": ["-", "Prevents any enemy encounters until next new moon", "-"] },
+  "156": { "a": ["Escape", "spe", "Self"], "b": [900, 0, 0, 1, 1, 255, 0, 0], "c": ["-", "Escape from this battle", "-"] },
+  "157": { "a": ["Lunge", "phy", "1 foe"], "b": [1, 5, 145, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "158": { "a": ["Berserker God", "phy", "1 foe"], "b": [8, 15, 180, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "159": { "a": ["Mortal Jihad", "phy", "1 foe"], "b": [20, 30, 250, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "160": { "a": ["Akashic Arts", "phy", "1 foe"], "b": [29, 50, 275, 1, 1, 98, 0, 350], "c": ["crit", "$1 pwr when $2", "-"] },
+  "161": { "a": ["Heat Wave", "phy", "All foes"], "b": [7, 15, 100, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "162": { "a": ["Deathbound", "phy", "All foes"], "b": [17, 35, 150, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "163": { "a": ["Hades Blast", "phy", "All foes"], "b": [23, 60, 190, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "164": { "a": ["Brave Blade", "phy", "1 foe"], "b": [22, 45, 220, 1, 1, 98, 30, 0], "c": ["-", "-", "-"] },
+  "165": { "a": ["Heavy Blow", "phy", "1 foe"], "b": [10, 15, 160, 1, 1, 98, 0, 240], "c": ["crit", "$1 pwr when $2", "-"] },
+  "166": { "a": ["Hell Thrust", "phy", "1 foe"], "b": [23, 45, 235, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "167": { "a": ["Critical Wave", "phy", "All foes"], "b": [8, 25, 90, 1, 1, 98, 20, 0], "c": ["-", "-", "-"] },
+  "168": { "a": ["Titanomachia", "phy", "All foes"], "b": [22, 60, 150, 1, 1, 98, 20, 0], "c": ["-", "-", "-"] },
+  "169": { "a": ["Beatdown", "phy", "1 foe"], "b": [8, 15, 110, 1, 1, 98, 0, 0], "c": ["dmg dealt", "$2 scales with curr HP", "-"] },
+  "170": { "a": ["Power Punch", "phy", "1 foe"], "b": [22, 40, 155, 1, 1, 98, 0, 0], "c": ["dmg dealt", "$2 scales with curr HP", "-"] },
+  "171": { "a": ["Fang Breaker", "phy", "1 foe"], "b": [10, 15, 130, 1, 1, 98, 0, 0], "c": ["Tarunda", "$2", "-"] },
+  "172": { "a": ["Puncture Punch", "phy", "1 foe"], "b": [12, 15, 150, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "173": { "a": ["Pierce Armor", "phy", "1 foe"], "b": [10, 15, 130, 1, 1, 98, 0, 0], "c": ["Rakunda", "$2", "-"] },
+  "174": { "a": ["Blinding Strike", "phy", "1 foe"], "b": [10, 15, 130, 1, 1, 98, 0, 0], "c": ["Sukunda", "$2", "-"] },
+  "175": { "a": ["Dream Fist", "phy", "1 foe"], "b": [11, 20, 140, 1, 1, 98, 0, 450], "c": ["Sleep", "$1 pwr against foes with $2", "-"] },
+  "176": { "a": ["Purple Smoke", "phy", "1 foe"], "b": [16, 25, 75, 3, 3, 98, 0, 120], "c": ["Panic", "$1 pwr against foes with $2", "-"] },
+  "177": { "a": ["Omagatoki: Adversity", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "The lower the HP, the more damage and HP recovered through skills for 1 turn", "-"] },
+  "178": { "a": ["Fire Dracostrike", "fir", "1 foe"], "b": [15, 25, 200, 1, 1, 98, 0, 0], "c": ["St", "$2-based", "-"] },
+  "179": { "a": ["Ice Dracostrike", "ice", "1 foe"], "b": [15, 25, 200, 1, 1, 98, 0, 0], "c": ["St", "$2-based", "-"] },
+  "180": { "a": ["Storm Dracostrike", "ele", "1 foe"], "b": [15, 25, 200, 1, 1, 98, 0, 0], "c": ["St", "$2-based", "-"] },
+  "181": { "a": ["Wind Dracostrike", "for", "1 foe"], "b": [15, 25, 200, 1, 1, 98, 0, 0], "c": ["St", "$2-based", "-"] },
+  "182": { "a": ["Hysterical Slap", "phy", "1 foe"], "b": [14, 20, 90, 2, 2, 98, 0, 170], "c": ["Charm", "$1 pwr against foes with $2", "-"] },
+  "183": { "a": ["Gram Slice", "phy", "1 foe"], "b": [5, 10, 140, 1, 1, 98, 30, 0], "c": ["-", "-", "-"] },
+  "184": { "a": ["Fatal Sword", "phy", "1 foe"], "b": [14, 25, 180, 1, 1, 98, 30, 0], "c": ["-", "-", "-"] },
+  "185": { "a": ["Myriad Slashes", "phy", "1 foe"], "b": [29, 55, 80, 5, 5, 50, 0, 0], "c": ["-", "-", "-"] },
+  "186": { "a": ["Blight", "phy", "Rand foes"], "b": [14, 20, 100, 2, 4, 98, 0, 35], "c": ["Poison", "$1% $2", "-"] },
+  "187": { "a": ["Omagatoki: Free", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "All skills will cost 1 MP for 1 turn", "-"] },
+  "188": { "a": ["Dark Sword", "phy", "1 foe"], "b": [14, 25, 90, 2, 2, 98, 0, 30], "c": ["Seal", "$1% $2", "-"] },
+  "189": { "a": ["Mist Rush", "phy", "Rand foes"], "b": [20, 35, 120, 2, 4, 98, 0, 35], "c": ["Mirage", "$1% $2", "-"] },
+  "190": { "a": ["Counter A", "phy", "1 foe"], "b": [900, 0, 100, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "191": { "a": ["Retaliate A", "phy", "1 foe"], "b": [900, 0, 150, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "192": { "a": ["Catastrophe", "phy", "1 foe"], "b": [25, 75, 290, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "193": { "a": ["Omagatoki: Doubler", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Makes buffs and debuffs twice as effective for 1 turn", "-"] },
+  "194": { "a": ["Figment Slash", "phy", "1 foe"], "b": [25, 50, 300, 1, 1, 50, 200, 0], "c": ["-", "-", "-"] },
+  "195": { "a": ["Bouncing Claw", "phy", "1 foe"], "b": [2, 12, 65, 2, 3, 98, 0, 0], "c": ["-", "-", "-"] },
+  "196": { "a": ["Damascus Claw", "phy", "1 foe"], "b": [13, 24, 90, 2, 3, 98, 0, 0], "c": ["-", "-", "-"] },
+  "197": { "a": ["Nihil Claw", "phy", "1 foe"], "b": [25, 36, 125, 2, 3, 98, 0, 0], "c": ["-", "-", "-"] },
+  "198": { "a": ["Scratch Dance", "phy", "Rand foes"], "b": [2, 12, 85, 2, 4, 98, 0, 0], "c": ["-", "-", "-"] },
+  "199": { "a": ["Axel Claw", "phy", "Rand foes"], "b": [13, 24, 120, 2, 4, 98, 0, 0], "c": ["-", "-", "-"] },
+  "200": { "a": ["Madness Nails", "phy", "Rand foes"], "b": [25, 36, 165, 2, 4, 98, 0, 0], "c": ["-", "-", "-"] },
+  "201": { "a": ["Omagatoki: Dance", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "All multi-hit moves will deal the max amount of hits for 1 turn", "-"] },
+  "202": { "a": ["Venom Chaser", "phy", "1 foe"], "b": [8, 15, 160, 1, 1, 98, 0, 320], "c": ["Poison", "$1 pwr against foes with $2", "-"] },
+  "203": { "a": ["Bestial Bite", "phy", "1 foe"], "b": [3, 5, 130, 1, 1, 98, 0, 200], "c": ["crit", "$1 pwr when $2", "-"] },
+  "204": { "a": ["Severing Bite", "phy", "1 foe"], "b": [19, 25, 190, 1, 1, 98, 0, 300], "c": ["crit", "$1 pwr when $2", "-"] },
+  "205": { "a": ["Frenzied Chomp", "phy", "1 foe"], "b": [15, 25, 165, 1, 1, 98, 0, 25], "c": ["Charm, Panic, Poison", "$1% $2", "-"] },
+  "206": { "a": ["Eat Whole", "phy", "1 foe"], "b": [16, 20, 150, 1, 1, 98, 0, 30], "c": ["HP restore", "$1% dmg dealt $2", "-"] },
+  "207": { "a": ["Dream Needle", "phy", "1 foe"], "b": [2, 10, 110, 1, 1, 98, 0, 55], "c": ["Sleep", "$1% $2", "-"] },
+  "208": { "a": ["Toxic Sting", "phy", "1 foe"], "b": [2, 10, 110, 1, 1, 98, 0, 60], "c": ["Poison", "$1% $2", "-"] },
+  "209": { "a": ["Needle Spray", "phy", "1 foe"], "b": [6, 15, 70, 1, 4, 98, 20, 0], "c": ["-", "-", "-"] },
+  "210": { "a": ["Madness Needle", "phy", "1 foe"], "b": [8, 10, 110, 1, 1, 98, 0, 45], "c": ["Panic", "$1% $2", "-"] },
+  "211": { "a": ["Yabusame Shot", "phy", "All foes"], "b": [22, 50, 60, 1, 1, 98, 200, 0], "c": ["Pierce", "$2", "-"] },
+  "212": { "a": ["Steel Needle", "phy", "1 foe"], "b": [15, 25, 75, 1, 4, 98, 20, 0], "c": ["-", "-", "-"] },
+  "213": { "a": ["Crusher Onslaught", "phy", "All foes"], "b": [10, 20, 170, 1, 1, 50, 0, 0], "c": ["-", "-", "-"] },
+  "214": { "a": ["Megaton Press", "phy", "All foes"], "b": [25, 50, 260, 1, 1, 50, 0, 0], "c": ["-", "-", "-"] },
+  "215": { "a": ["Omagatoki: Sincerity", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Forgives up to 2 failures in a demon negotiation for 1 turn", "-"] },
+  "216": { "a": ["Rampage", "phy", "Rand foes"], "b": [19, 35, 180, 2, 5, 50, 0, 0], "c": ["-", "-", "-"] },
+  "217": { "a": ["Die For Me!", "dar", "Rand foes"], "b": [915, 35, 120, 2, 5, 98, 0, 50], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "218": { "a": ["King Bufula", "ice", "All foes"], "b": [913, 35, 110, 1, 1, 98, 0, 0], "c": ["Rakunda", "$2", "-"] },
+  "219": { "a": ["Eternal Blizzard", "ice", "Rand foes"], "b": [915, 50, 90, 3, 6, 98, 0, 0], "c": ["-", "-", "-"] },
+  "220": { "a": ["Jack Bufula", "ice", "1 foe"], "b": [908, 20, 160, 1, 1, 98, 0, 0], "c": ["Rakunda", "$2", "-"] },
+  "221": { "a": ["Hellish Brand", "fir", "All foes"], "b": [924, 70, 160, 1, 1, 98, 0, 0], "c": ["Dekaja", "$2", "-"] },
+  "222": { "a": ["Raging Hellfire", "fir", "1 foe"], "b": [925, 40, 300, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "223": { "a": ["Raging Blizzard", "ice", "1 foe"], "b": [925, 40, 300, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "224": { "a": ["Raging Lightning", "ele", "1 foe"], "b": [925, 40, 300, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "225": { "a": ["Raging Tempest", "for", "1 foe"], "b": [925, 40, 300, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "226": { "a": ["Fire of Sinai", "alm", "Rand foes"], "b": [926, 80, 105, 3, 7, 108, 0, 0], "c": ["-", "-", "-"] },
+  "227": { "a": ["Mac an Luin", "phy", "1 foe"], "b": [924, 50, 270, 1, 1, 108, 0, 340], "c": ["crit", "$1 pwr when $2", "-"] },
+  "228": { "a": ["Babylon Goblet", "alm", "All foes"], "b": [925, 80, 180, 1, 1, 98, 0, 45], "c": ["Panic", "$1% $2", "-"] },
+  "229": { "a": ["Frolic", "ail", "All foes"], "b": [924, 80, 0, 1, 1, 255, 0, 40], "c": ["Charm", "$1% $2, Tarunda + Rakunda x2", "-"] },
+  "230": { "a": ["Cautious Cheer", "sup", "All allies"], "b": [909, 50, 0, 1, 1, 255, 0, 0], "c": ["Rakukaja + Sukukaja", "$2", "-"] },
+  "231": { "a": ["Ghastfire Rain", "fir", "All foes"], "b": [909, 30, 150, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "232": { "a": ["Gungnir", "phy", "1 foe"], "b": [925, 50, 300, 1, 1, 118, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "233": { "a": ["Hassou Tobi", "phy", "Rand foes"], "b": [917, 60, 30, 8, 8, 98, 200, 0], "c": ["-", "-", "-"] },
+  "234": { "a": ["Andalucia", "phy", "Rand foes"], "b": [906, 20, 85, 3, 6, 108, 0, 0], "c": ["-", "-", "-"] },
+  "235": { "a": ["Terrorblade", "phy", "Rand foes"], "b": [920, 35, 250, 1, 3, 108, 0, 50], "c": ["Panic", "$1% $2, Pierce", "-"] },
+  "236": { "a": ["Pestilence", "phy", "All foes"], "b": [920, 50, 170, 1, 1, 108, 0, 240], "c": ["ailments", "$1 pwr against foes with $2", "-"] },
+  "237": { "a": ["God's Bow", "lig", "1 foe"], "b": [920, 60, 100, 1, 1, 108, 0, 150], "c": ["instakill", "$1% $2", "-"] },
+  "238": { "a": ["Soul Divide", "alm", "All foes"], "b": [920, 50, 230, 1, 1, 50, 0, 100], "c": ["Seal", "$1% $2", "-"] },
+  "239": { "a": ["Evil Melody", "ail", "1 foe"], "b": [924, 100, 0, 1, 1, 255, 0, 150], "c": ["instakill", "$1% $2", "-"] },
+  "240": { "a": ["Mesektet's Path", "spe", "Self"], "b": [900, 45, 0, 1, 1, 255, 0, 100], "c": ["Shroud", "$1% $2 when countering", "-"] },
+  "242": { "a": ["Critical Slash", "phy", "1 foe"], "b": [6, 10, 160, 1, 1, 50, 200, 0], "c": ["-", "-", "-"] },
+  "243": { "a": ["Mighty Cleave", "phy", "1 foe"], "b": [19, 25, 240, 1, 1, 50, 200, 0], "c": ["-", "-", "-"] },
+  "244": { "a": ["Black Dracostrike", "dar", "1 foe"], "b": [17, 30, 200, 1, 1, 98, 0, 40], "c": ["instakill", "St-based, $1% $2 when striking weakness", "-"] },
+  "245": { "a": ["White Dracostrike", "lig", "1 foe"], "b": [17, 30, 200, 1, 1, 98, 0, 40], "c": ["instakill", "St-based, $1% $2 when striking weakness", "-"] },
+  "246": { "a": ["Donum Gladi", "sup", "1 ally"], "b": [15, 40, 0, 1, 1, 255, 0, 0], "c": ["St", "Greatly increases damage of the next $2-based attack", "-"] },
+  "247": { "a": ["Donum Magici", "sup", "1 ally"], "b": [15, 40, 0, 1, 1, 255, 0, 0], "c": ["Ma", "Greatly increases damage of the next $2-based attack", "-"] },
+  "248": { "a": ["Taunt", "sup", "Self"], "b": [7, 10, 0, 1, 1, 255, 0, 0], "c": ["-", "Draws enemy hostility for 3 turns", "-"] },
+  "249": { "a": ["Omagatoki: Savage", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "All skills will cost twice the MP but deal double the damage for 1 turn", "-"] },
+  "250": { "a": ["Toxic Spray", "ail", "1 foe"], "b": [9, 15, 0, 1, 1, 255, 0, 85], "c": ["Poison", "$1% $2, Rakunda", "-"] },
+  "251": { "a": ["Souffle D'eclair", "ele", "1 foe"], "b": [918, 55, 330, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "252": { "a": ["Hellish Slash", "phy", "1 foe"], "b": [902, 5, 55, 4, 4, 50, 0, 0], "c": ["-", "-", "-"] },
+  "253": { "a": ["Harvest Dance", "rec", "1 ally"], "b": [908, 30, 50, 1, 1, 255, 0, 15], "c": ["HP restore", "base + $1% max $2, Rakukaja x2", "-"] },
+  "254": { "a": ["Mirage Shot", "fir", "1 foe"], "b": [906, 15, 160, 1, 1, 98, 0, 75], "c": ["Mirage", "$1% $2", "-"] },
+  "255": { "a": ["Moonlight Frost A", "ice", "All foes"], "b": [900, 120, 450, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "256": { "a": ["Stormcaller Song", "ice", "Rand foes"], "b": [905, 18, 60, 3, 6, 98, 0, 0], "c": ["-", "-", "-"] },
+  "257": { "a": ["Karnak", "phy", "All foes"], "b": [924, 50, 150, 1, 1, 98, 30, 0], "c": ["-", "-", "-"] },
+  "258": { "a": ["Acrobat Kick", "phy", "1 foe"], "b": [14, 25, 80, 1, 1, 98, 200, 0], "c": ["-", "-", "-"] },
+  "259": { "a": ["Heliopolis Dawn A", "fir", "All foes"], "b": [928, 180, 600, 1, 1, 108, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "260": { "a": ["Fierce Roar", "sup", "Self"], "b": [16, 30, 0, 1, 1, 255, 0, 0], "c": ["Taunt + Rakukaja", "$2", "-"] },
+  "261": { "a": ["Tandava", "alm", "All foes"], "b": [930, 160, 230, 1, 1, 108, 0, 4], "c": ["Rakunda", "$2 x$1", "-"] },
+  "262": { "a": ["Hellish Spurt", "ice", "All foes"], "b": [913, 25, 130, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "263": { "a": ["Megido Flame", "fir", "All foes"], "b": [925, 130, 250, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "264": { "a": ["Walpurgisnacht", "dar", "1 foe"], "b": [925, 40, 300, 1, 1, 98, 0, 100], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "265": { "a": ["Carnage Fang", "phy", "1 foe"], "b": [914, 20, 260, 1, 1, 98, 0, 350], "c": ["crit", "$1 pwr when $2", "-"] },
+  "266": { "a": ["Sun's Radiance", "rec", "1 ally"], "b": [914, 12, 100, 1, 1, 255, 0, 30], "c": ["HP restore", "base + $1% max $2, Patra", "-"] },
+  "267": { "a": ["Witness Me", "sup", "Self"], "b": [914, 5, 0, 1, 1, 255, 0, 2], "c": ["Taunt + Sukukaja", "$2 x$1", "-"] },
+  "268": { "a": ["Hell Spin", "phy", "All foes"], "b": [913, 30, 150, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "269": { "a": ["Light's Descent", "lig", "All foes"], "b": [923, 60, 220, 1, 1, 98, 0, 40], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "270": { "a": ["Fallen Destroyer", "dar", "All foes"], "b": [924, 70, 250, 1, 1, 108, 0, 50], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "271": { "a": ["Sanguine Drain", "alm", "1 foe"], "b": [909, 15, 120, 1, 1, 98, 0, 100], "c": ["HP restore", "$1% dmg dealt $2, Tarunda", "-"] },
+  "272": { "a": ["Dancing Strike", "phy", "1 foe"], "b": [923, 25, 80, 3, 3, 98, 30, 0], "c": ["-", "-", "-"] },
+  "273": { "a": ["Sacrifice of Clay", "for", "All foes"], "b": [924, 50, 140, 1, 1, 98, 0, 0], "c": ["Tarunda + Rakunda", "$2", "-"] },
+  "274": { "a": ["Omagatoki: Luck", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "EXP and Macca earned greatly increased if the battle ends on this turn", "-"] },
+  "275": { "a": ["Preach", "ail", "All foes"], "b": [912, 35, 0, 1, 1, 255, 0, 50], "c": ["Charm, Panic, Sleep", "$1% $2", "-"] },
+  "276": { "a": ["Golden Apple", "rec", "All allies"], "b": [920, 180, 80, 1, 1, 255, 0, 30], "c": ["HP restore", "base + $1% max $2, Luster Candy", "-"] },
+  "277": { "a": ["Matriarch's Love A", "rec", "All allies"], "b": [900, 140, 900, 1, 1, 255, 0, 2], "c": ["HP restore", "base + $1% max $2, Patra + Dekunda", "-"] },
+  "278": { "a": ["Red Capote", "sup", "1 ally"], "b": [906, 8, 0, 1, 1, 255, 0, 2], "c": ["Sukukaja", "$2 x$1", "-"] },
+  "279": { "a": ["Matriarch's Love", "rec", "All allies"], "b": [925, 140, 60, 1, 1, 255, 0, 18], "c": ["HP restore", "base + $1% max $2, Patra + Dekunda", "-"] },
+  "280": { "a": ["Humble Blessing", "rec", "All allies"], "b": [904, 15, 20, 1, 1, 255, 0, 10], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "281": { "a": ["Eleusinian Harvest", "rec", "All allies"], "b": [924, 150, 0, 1, 1, 255, 0, 130], "c": ["HP restore", "$1% max $2", "-"] },
+  "282": { "a": ["Keraunos", "ele", "1 foe"], "b": [925, 50, 300, 1, 1, 118, 0, 0], "c": ["Pierce", "St-based, $2", "-"] },
+  "283": { "a": ["Frenzy", "phy", "All foes"], "b": [900, 30, 80, 1, 1, 88, 0, 0], "c": ["-", "-", "-"] },
+  "284": { "a": ["Galvanic Slash", "ele", "1 foe"], "b": [900, 50, 200, 1, 1, 108, 0, 0], "c": ["St-based", "$2", "-"] },
+  "285": { "a": ["Electrify", "spe", "All allies"], "b": [900, 30, 0, 1, 1, 255, 0, 0], "c": ["-", "Greatly increases the damage of the next Rising Storm Dragon", "-"] },
+  "286": { "a": ["Rising Storm Dragon", "ele", "All foes"], "b": [900, 120, 1000, 1, 1, 118, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "287": { "a": ["Attack", "phy", "All foes"], "b": [900, 0, 120, 1, 1, 98, 0, 0], "c": ["normal attack", "$2", "-"] },
+  "288": { "a": ["Charge A", "sup", "All allies"], "b": [900, 20, 0, 1, 1, 255, 0, 0], "c": ["Charge", "$2", "-"] },
+  "289": { "a": ["Babylon Curse", "alm", "1 foe"], "b": [917, 40, 100, 1, 1, 98, 0, 100], "c": ["Mud", "$1% $2", "-"] },
+  "291": { "a": ["Silt of Ruin", "alm", "All foes"], "b": [917, 45, 140, 1, 1, 98, 0, 0], "c": ["Sukunda", "$2", "-"] },
+  "292": { "a": ["Sakanagi", "alm", "1 foe"], "b": [900, 20, 230, 1, 1, 98, 0, 0], "c": ["St", "$2-based", "-"] },
+  "293": { "a": ["Divine Arrowfall", "alm", "All foes"], "b": [900, 35, 170, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "294": { "a": ["Murakumo", "alm", "1 foe"], "b": [900, 50, 275, 1, 1, 98, 0, 330], "c": ["crit", "$1 pwr when $2, St-based", "-"] },
+  "295": { "a": ["Red Capote A", "sup", "1 ally"], "b": [900, 8, 0, 1, 1, 255, 0, 2], "c": ["Sukukaja", "$2 x$1", "-"] },
+  "296": { "a": ["Meditation", "alm", "1 foe"], "b": [912, 5, 120, 1, 1, 98, 0, 100], "c": ["HP and MP restore", "$1% dmg dealt $2", "-"] },
+  "297": { "a": ["Hell Burner", "fir", "All foes"], "b": [913, 40, 150, 1, 1, 108, 0, 0], "c": ["St", "$2-based", "-"] },
+  "298": { "a": ["Aramasa", "phy", "1 foe"], "b": [900, 10, 20, 8, 8, 98, 0, 0], "c": ["-", "-", "-"] },
+  "299": { "a": ["Wrath Tempest", "phy", "Rand foes"], "b": [900, 35, 30, 8, 8, 98, 0, 40], "c": ["crit", "$1 pwr when $2", "-"] },
+  "300": { "a": ["Ruinous Thunder", "ele", "1 foe"], "b": [900, 20, 200, 1, 1, 98, 0, 0], "c": ["-", "-", "-"] },
+  "301": { "a": ["Thalassic Calamity", "ice", "Rand foes"], "b": [900, 45, 95, 3, 7, 98, 0, 0], "c": ["-", "-", "-"] },
+  "302": { "a": ["Hell Exhaust", "for", "All foes"], "b": [913, 40, 120, 1, 1, 108, 0, 0], "c": ["Dekaja", "$2", "-"] },
+  "303": { "a": ["Death Lust", "alm", "All foes"], "b": [924, 70, 160, 1, 1, 108, 0, 45], "c": ["Charm", "$1% $2", "-"] },
+  "304": { "a": ["Headcrush", "phy", "1 foe"], "b": [915, 20, 200, 1, 1, 108, 0, 70], "c": ["Panic", "$1% $2", "-"] },
+  "305": { "a": ["Somersault", "phy", "1 foe"], "b": [915, 35, 160, 1, 1, 98, 0, 2], "c": ["Rakunda", "$2 x$1", "-"] },
+  "306": { "a": ["Kannabi Veil", "sup", "All allies"], "b": [900, 15, 0, 1, 1, 255, 0, 0], "c": ["-", "Decreases dmg taken until the next turn", "-"] },
+  "307": { "a": ["Profaned Land", "dar", "1 foe"], "b": [900, 35, 240, 1, 1, 98, 0, 100], "c": ["Poison", "$1% $2", "-"] },
+  "308": { "a": ["Stagnant Air", "ail", "All foes"], "b": [924, 50, 0, 1, 1, 255, 0, 80], "c": ["Mirage", "$1% $2, Rakunda + Sukunda", "-"] },
+  "309": { "a": ["Omagatoki: Potential", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "Increases all potentials to the max for 1 turn", "-"] },
+  "310": { "a": ["Miracle Water", "rec", "All allies"], "b": [900, 20, 15, 1, 1, 255, 0, 20], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "311": { "a": ["Revival Chant", "rec", "1 stock"], "b": [900, 100, 0, 1, 1, 255, 0, 0], "c": ["Samarecarm + Summon", "$2", "-"] },
+  "312": { "a": ["Dreadful Gleam", "ele", "All foes"], "b": [918, 60, 150, 1, 1, 108, 0, 40], "c": ["Seal", "$1% $2, Pierce", "-"] },
+  "313": { "a": ["Dreadful Gleam A", "ele", "Self"], "b": [918, 60, 0, 1, 1, 255, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "314": { "a": ["Harvest Dance A", "rec", "1 ally"], "b": [900, 14, 120, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2, Rakukaja x2", "-"] },
+  "315": { "a": ["Toxic Breath", "dar", "All foes"], "b": [900, 30, 120, 1, 1, 98, 0, 50], "c": ["Poison", "$1% $2", "-"] },
+  "316": { "a": ["Call Angel", "spe", "Self"], "b": [900, 66, 0, 1, 1, 255, 0, 0], "c": ["-", "summons a demon", "-"] },
+  "317": { "a": ["Call Soldiers", "spe", "Self"], "b": [900, 66, 0, 1, 1, 255, 0, 0], "c": ["-", "summons a demon", "-"] },
+  "318": { "a": ["Call Souls", "spe", "Self"], "b": [900, 66, 0, 1, 1, 255, 0, 0], "c": ["-", "summons a demon", "-"] },
+  "319": { "a": ["Call Evil", "spe", "Self"], "b": [900, 66, 0, 1, 1, 255, 0, 0], "c": ["-", "summons a demon", "-"] },
+  "320": { "a": ["Purgatorium", "fir", "All foes"], "b": [900, 50, 210, 1, 1, 108, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "321": { "a": ["Impetus", "phy", "All foes"], "b": [900, 50, 220, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "322": { "a": ["Mesektet's Path A", "alm", "1 foe"], "b": [900, 45, 50, 1, 1, 255, 0, 1255], "c": ["Shroud", "$1% $2 when countering", "-"] },
+  "325": { "a": ["Death Flies", "dar", "All foes"], "b": [928, 120, 320, 1, 1, 98, 0, 60], "c": ["instakill", "$1% $2 when striking weakness", "-"] },
+  "326": { "a": ["Light of Order", "rec", "All allies"], "b": [920, 200, 60, 1, 1, 255, 0, 17], "c": ["HP restore", "base + $1% max $2, Dekunda + Luster Candy", "-"] },
+  "328": { "a": ["Astral Saintstrike", "phy", "Rand foes"], "b": [915, 40, 20, 15, 15, 108, 0, 0], "c": ["-", "-", "-"] },
+  "329": { "a": ["Inferno of God", "fir", "All foes"], "b": [900, 90, 220, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "330": { "a": ["Hailstorm of God", "ice", "All foes"], "b": [900, 90, 220, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "331": { "a": ["Lightning of God", "ele", "All foes"], "b": [900, 90, 220, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "332": { "a": ["Tornado of God", "for", "All foes"], "b": [900, 90, 220, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "333": { "a": ["Cold Dark Matter", "sup", "Self"], "b": [900, 50, 0, 1, 1, 255, 0, 4], "c": ["Rakukaja", "$2 x$1", "-"] },
+  "334": { "a": ["Hot Dark Matter", "sup", "Self"], "b": [900, 50, 0, 1, 1, 255, 0, 4], "c": ["Tarukaja", "$2 x$1", "-"] },
+  "335": { "a": ["Freikugel A", "alm", "1 foe"], "b": [900, 80, 270, 1, 1, 118, 20, 0], "c": ["St", "$2-based", "-"] },
+  "336": { "a": ["Gaea Rage B", "phy", "All foes"], "b": [900, 170, 220, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "337": { "a": ["Magma Axis", "fir", "Rand foes"], "b": [900, 75, 110, 3, 8, 108, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "338": { "a": ["Javelin Rain A", "phy", "All foes"], "b": [900, 90, 160, 1, 1, 108, 0, 40], "c": ["Seal", "$1% $2", "-"] },
+  "339": { "a": ["Xeros Beat", "phy", "All foes"], "b": [900, 90, 160, 1, 1, 108, 0, 50], "c": ["Mirage", "$1% $2", "-"] },
+  "340": { "a": ["Deadly Fury A", "phy", "1 foe"], "b": [900, 50, 350, 1, 1, 118, 0, 0], "c": ["-", "-", "-"] },
+  "341": { "a": ["Wild Dance", "ail", "All foes"], "b": [900, 45, 0, 1, 1, 255, 0, 80], "c": ["Panic", "$1% $2", "-"] },
+  "342": { "a": ["Contempt of God", "spe", "Self"], "b": [900, 250, 0, 1, 1, 255, 0, 2], "c": ["Press Turns", "adds $1 $2 during next turn", "-"] },
+  "343": { "a": ["Holy Crucifixion", "sup", "1 foe"], "b": [900, 80, 0, 1, 1, 255, 0, 4], "c": ["Debilitate", "$2 x$1", "-"] },
+  "345": { "a": ["Omagatoki: Charge", "sup", "All allies"], "b": [50, 1001, 0, 1, 1, 255, 0, 0], "c": ["-", "All charge effects will remain until the next turn", "-"] },
+  "347": { "a": ["Falling Star", "fir", "1 foe"], "b": [900, 150, 1000, 1, 1, 178, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "348": { "a": ["Falling Star A", "ice", "1 foe"], "b": [900, 150, 1000, 1, 1, 178, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "349": { "a": ["Morning Star", "alm", "All foes"], "b": [900, 200, 1000, 1, 1, 178, 0, 0], "c": ["-", "-", "-"] },
+  "350": { "a": ["Attack A", "phy", "1 foe"], "b": [900, 0, 150, 1, 1, 98, 0, 0], "c": ["normal attack", "$2", "-"] },
+  "352": { "a": ["Dia B", "rec", "1 ally"], "b": [900, 8, 200, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "353": { "a": ["Diarama B", "rec", "1 ally"], "b": [900, 15, 400, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "354": { "a": ["Media B", "rec", "All allies"], "b": [900, 30, 200, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "355": { "a": ["Mediarama B", "rec", "All allies"], "b": [900, 60, 400, 1, 1, 255, 0, 0], "c": ["HP restore", "base $2", "-"] },
+  "356": { "a": ["Electrify A", "spe", "1 ally"], "b": [900, 30, 0, 1, 1, 255, 0, 0], "c": ["-", "Greatly increases the damage of the next Rising Storm Dragon", "-"] },
+  "357": { "a": ["True Replication", "spe", "Self"], "b": [900, 30, 0, 1, 1, 255, 0, 0], "c": ["-", "Creates a replica", "-"] },
+  "358": { "a": ["False Replication", "spe", "Self"], "b": [900, 30, 0, 1, 1, 255, 0, 0], "c": ["-", "Creates a replica", "-"] },
+  "359": { "a": ["Rising Storm Dragon A", "ele", "All foes"], "b": [900, 120, 500, 1, 1, 118, 0, 0], "c": ["-", "-", "-"] },
+  "360": { "a": ["Rising Storm Dragon B", "ele", "All foes"], "b": [900, 120, 250, 1, 1, 118, 0, 0], "c": ["-", "-", "-"] },
+  "361": { "a": ["Rising Storm Dragon C", "ele", "All foes"], "b": [900, 120, 125, 1, 1, 118, 0, 0], "c": ["-", "-", "-"] },
+  "362": { "a": ["Rising Storm Dragon D", "ele", "All foes"], "b": [900, 120, 31, 1, 1, 118, 0, 0], "c": ["-", "-", "-"] },
+  "363": { "a": ["Phys Block", "sup", "All allies"], "b": [18, 70, 0, 1, 1, 255, 0, 0], "c": ["Phys", "nullifies next $2 attack for 1 turn", "-"] },
+  "364": { "a": ["Fire Block", "sup", "All allies"], "b": [12, 40, 0, 1, 1, 255, 0, 0], "c": ["Fire", "nullifies next $2 attack for 1 turn", "-"] },
+  "365": { "a": ["Ice Block", "sup", "All allies"], "b": [12, 40, 0, 1, 1, 255, 0, 0], "c": ["Ice", "nullifies next $2 attack for 1 turn", "-"] },
+  "366": { "a": ["Elec Block", "sup", "All allies"], "b": [12, 40, 0, 1, 1, 255, 0, 0], "c": ["Elec", "nullifies next $2 attack for 1 turn", "-"] },
+  "367": { "a": ["Force Block", "sup", "All allies"], "b": [12, 40, 0, 1, 1, 255, 0, 0], "c": ["Force", "nullifies next $2 attack for 1 turn", "-"] },
+  "368": { "a": ["Light Block", "sup", "All allies"], "b": [12, 40, 0, 1, 1, 255, 0, 0], "c": ["Light", "nullifies next $2 attack for 1 turn", "-"] },
+  "369": { "a": ["Dark Block", "sup", "All allies"], "b": [12, 40, 0, 1, 1, 255, 0, 0], "c": ["Dark", "nullifies next $2 attack for 1 turn", "-"] },
+  "370": { "a": ["Freikugel B", "alm", "1 foe"], "b": [929, 80, 230, 1, 1, 108, 30, 0], "c": ["St", "$2-based", "-"] },
+  "371": { "a": ["Gaea Rage A", "phy", "All foes"], "b": [900, 170, 9999, 1, 1, 108, 0, 0], "c": ["Pierce", "$2-based", "-"] },
+  "372": { "a": ["Javelin Rain", "phy", "All foes"], "b": [900, 90, 260, 1, 1, 108, 0, 40], "c": ["Seal", "$1% $2", "-"] },
+  "373": { "a": ["Deadly Fury", "phy", "1 foe"], "b": [900, 50, 200, 1, 1, 108, 200, 0], "c": ["-", "-", "-"] },
+  "374": { "a": ["Chaotic Will A", "ail", "All foes"], "b": [900, 150, 0, 1, 1, 255, 0, 30], "c": ["instakill", "$1% $2, halves foe Press Turns next turn", "-"] },
+  "378": { "a": ["Madness Glint", "alm", "Rand foes"], "b": [925, 50, 150, 2, 5, 108, 0, 40], "c": ["Seal, Panic", "$1% $2", "-"] },
+  "379": { "a": ["Panta Spane", "phy", "All foes"], "b": [925, 65, 180, 1, 1, 108, 0, 0], "c": ["Tarunda + Rakunda", "$2", "-"] },
+  "380": { "a": ["Magatsuhi Harvest", "spe", "All allies"], "b": [900, 0, 0, 1, 1, 255, 0, 0], "c": ["-", "-", "-"] },
+  "381": { "a": ["Dia C", "rec", "1 ally"], "b": [900, 8, 40, 1, 1, 255, 0, 30], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "382": { "a": ["Diarama C", "rec", "1 ally"], "b": [900, 15, 100, 1, 1, 255, 0, 45], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "383": { "a": ["Media C", "rec", "All allies"], "b": [900, 30, 40, 1, 1, 255, 0, 25], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "384": { "a": ["Mediarama C", "rec", "All allies"], "b": [900, 60, 100, 1, 1, 255, 0, 35], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "385": { "a": ["Dia D", "rec", "1 ally"], "b": [900, 8, 350, 1, 1, 255, 0, 13], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "386": { "a": ["Diarama D", "rec", "1 ally"], "b": [900, 15, 600, 1, 1, 255, 0, 17], "c": ["HP restore", "base + $1% max $2", "-"] },
+  "388": { "a": ["Violent Rage", "alm", "All foes"], "b": [927, 60, 150, 1, 1, 108, 0, 40], "c": ["Seal", "$1% $2", "-"] },
+  "389": { "a": ["Pandemonic Crush", "phy", "All foes"], "b": [927, 70, 170, 1, 1, 108, 0, 0], "c": ["Rakunda", "$2", "-"] },
+  "390": { "a": ["Evil Gleam", "ail", "All foes"], "b": [900, 40, 0, 1, 1, 255, 0, 65], "c": ["Charm", "$1% $2", "-"] },
+  "392": { "a": ["Sonic Boom", "for", "All foes"], "b": [900, 35, 145, 1, 1, 108, 0, 0], "c": ["-", "-", "-"] },
+  "394": { "a": ["Gaea Rage", "phy", "All foes"], "b": [900, 170, 270, 1, 1, 98, 0, 0], "c": ["Pierce", "$2", "-"] },
+  "395": { "a": ["Chaotic Will", "ail", "All foes"], "b": [900, 150, 0, 1, 1, 255, 0, 30], "c": ["instakill", "$1% $2, halves foe Press Turns next turn", "-"] },
+  "397": { "a": ["Javelin Rain B", "phy", "All foes"], "b": [900, 90, 260, 1, 1, 108, 0, 40], "c": ["Seal", "$1% $2", "-"] },
+  "398": { "a": ["Deadly Fury B", "phy", "1 foe"], "b": [900, 50, 200, 1, 1, 108, 200, 0], "c": ["-", "-", "-"] },
+  "401": { "a": ["Resist Phys", "pas", "-"], "b": [21, 0, 0, 1, 1, 0, 0, 0], "c": ["Phys", "resists $2 dmg taken", "-"] },
+  "402": { "a": ["Null Phys", "pas", "-"], "b": [27, 0, 0, 1, 1, 0, 0, 0], "c": ["Phys", "nullifies $2 dmg taken", "-"] },
+  "403": { "a": ["Drain Phys", "pas", "-"], "b": [31, 0, 0, 1, 1, 0, 0, 0], "c": ["Phys", "drains $2 dmg taken", "-"] },
+  "404": { "a": ["Repel Phys", "pas", "-"], "b": [31, 0, 0, 1, 1, 0, 0, 0], "c": ["Phys", "repels $2 dmg taken", "-"] },
+  "405": { "a": ["Resist Fire", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 0], "c": ["Fire", "resists $2 dmg taken", "-"] },
+  "406": { "a": ["Null Fire", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 0], "c": ["Fire", "nullifies $2 dmg taken", "-"] },
+  "407": { "a": ["Drain Fire", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Fire", "drains $2 dmg taken", "-"] },
+  "408": { "a": ["Repel Fire", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Fire", "repels $2 dmg taken", "-"] },
+  "409": { "a": ["Resist Ice", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 0], "c": ["Ice", "resists $2 dmg taken", "-"] },
+  "410": { "a": ["Null Ice", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 0], "c": ["Ice", "nullifies $2 dmg taken", "-"] },
+  "411": { "a": ["Drain Ice", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Ice", "drains $2 dmg taken", "-"] },
+  "412": { "a": ["Repel Ice", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Ice", "repels $2 dmg taken", "-"] },
+  "413": { "a": ["Resist Elec", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 0], "c": ["Elec", "resists $2 dmg taken", "-"] },
+  "414": { "a": ["Null Elec", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 0], "c": ["Elec", "nullifies $2 dmg taken", "-"] },
+  "415": { "a": ["Drain Elec", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Elec", "drains $2 dmg taken", "-"] },
+  "416": { "a": ["Repel Elec", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Elec", "repels $2 dmg taken", "-"] },
+  "417": { "a": ["Resist Force", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 0], "c": ["Force", "resists $2 dmg taken", "-"] },
+  "418": { "a": ["Null Force", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 0], "c": ["Force", "nullifies $2 dmg taken", "-"] },
+  "419": { "a": ["Drain Force", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Force", "drains $2 dmg taken", "-"] },
+  "420": { "a": ["Repel Force", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Force", "repels $2 dmg taken", "-"] },
+  "421": { "a": ["Resist Dark", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 0], "c": ["Dark", "resists $2 dmg taken", "-"] },
+  "422": { "a": ["Null Dark", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 0], "c": ["Dark", "nullifies $2 dmg taken", "-"] },
+  "423": { "a": ["Drain Dark", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Dark", "drains $2 dmg taken", "-"] },
+  "424": { "a": ["Repel Dark", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Dark", "repels $2 dmg taken", "-"] },
+  "425": { "a": ["Resist Light", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 0], "c": ["Light", "resists $2 dmg taken", "-"] },
+  "426": { "a": ["Null Light", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 0], "c": ["Light", "nullifies $2 dmg taken", "-"] },
+  "427": { "a": ["Drain Light", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Light", "drains $2 dmg taken", "-"] },
+  "428": { "a": ["Repel Light", "pas", "-"], "b": [30, 0, 0, 1, 1, 0, 0, 0], "c": ["Light", "repels $2 dmg taken", "-"] },
+  "429": { "a": ["Light Life Aid", "pas", "-"], "b": [9, 0, 0, 1, 1, 0, 0, 25], "c": ["HP restore", "$1% max $2 after battle", "-"] },
+  "430": { "a": ["Life Aid", "pas", "-"], "b": [16, 0, 0, 1, 1, 0, 0, 50], "c": ["HP restore", "$1% max $2 after battle", "-"] },
+  "431": { "a": ["Light Mana Aid", "pas", "-"], "b": [12, 0, 0, 1, 1, 0, 0, 7], "c": ["MP restore", "$1% max $2 after battle", "-"] },
+  "432": { "a": ["Mana Aid", "pas", "-"], "b": [22, 0, 0, 1, 1, 0, 0, 15], "c": ["MP restore", "$1% max $2 after battle", "-"] },
+  "434": { "a": ["Counter", "pas", "-"], "b": [8, 0, 100, 1, 1, 0, 0, 50], "c": ["Phys", "$1% chance to counter St-based attack with $2 dmg", "-"] },
+  "435": { "a": ["Retaliate", "pas", "-"], "b": [18, 0, 150, 1, 1, 0, 0, 50], "c": ["Phys", "$1% chance to counter St-based attack with $2 dmg", "-"] },
+  "436": { "a": ["Heavenly Counter", "pas", "-"], "b": [900, 0, 100, 1, 1, 0, 0, 65], "c": ["Dark", "$1% chance to counter St-based attack with $2 dmg + Tarunda", "-"] },
+  "437": { "a": ["Life Spring", "pas", "-"], "b": [7, 0, 0, 1, 1, 0, 0, 15], "c": ["max HP", "$2 +$1%", "-"] },
+  "438": { "a": ["Great Life Spring", "pas", "-"], "b": [15, 0, 0, 1, 1, 0, 0, 30], "c": ["max HP", "$2 +$1%", "-"] },
+  "439": { "a": ["Mana Spring", "pas", "-"], "b": [8, 0, 0, 1, 1, 0, 0, 15], "c": ["max MP", "$2 +$1%", "-"] },
+  "440": { "a": ["Great Mana Spring", "pas", "-"], "b": [16, 0, 0, 1, 1, 0, 0, 30], "c": ["max MP", "$2 +$1%", "-"] },
+  "441": { "a": ["Curse Siphon", "pas", "-"], "b": [7, 0, 0, 1, 1, 0, 0, 10], "c": ["MP restore", "$1 $2 when inflicting ailment", "-"] },
+  "442": { "a": ["Great Curse Siphon", "pas", "-"], "b": [16, 0, 0, 1, 1, 0, 0, 20], "c": ["MP restore", "$1 $2 when inflicting ailment", "-"] },
+  "443": { "a": ["Endure", "pas", "-"], "b": [13, 0, 0, 1, 1, 0, 0, 1], "c": ["survives", "$2 one mortal blow with $1 HP once per battle", "-"] },
+  "444": { "a": ["Enduring Soul", "pas", "-"], "b": [22, 0, 0, 1, 1, 0, 0, 100], "c": ["survives", "$2 one mortal blow with $1% HP once per battle", "-"] },
+  "447": { "a": ["Critical Zealot", "pas", "-"], "b": [21, 0, 0, 1, 1, 0, 0, 1145], "c": ["crit", "$2 dmg dealt x$1, normal dmg dealt x0.9", "-"] },
+  "464": { "a": ["Restore", "pas", "-"], "b": [10, 0, 0, 1, 1, 0, 0, 10], "c": ["MP restore", "$1 $2 when landing crit or weakness", "-"] },
+  "465": { "a": ["High Restore", "pas", "-"], "b": [20, 0, 0, 1, 1, 0, 0, 20], "c": ["MP restore", "$1 $2 when landing crit or weakness", "-"] },
+  "468": { "a": ["Boon Boost", "pas", "-"], "b": [12, 0, 0, 1, 1, 0, 0, 1], "c": ["-kaja and -kunda effects", "extends $2 cast by $1 turn", "-"] },
+  "469": { "a": ["Boon Boost EX", "pas", "-"], "b": [22, 0, 0, 1, 1, 0, 0, 2], "c": ["-kaja and -kunda effects", "extends $2 cast by $1 turns", "-"] },
+  "470": { "a": ["Poison Adept", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 2], "c": ["Poison", "$2 dmg dealt x$1", "-"] },
+  "471": { "a": ["Poison Master", "pas", "-"], "b": [23, 0, 0, 1, 1, 0, 0, 3], "c": ["Poison", "$2 dmg dealt x$1", "-"] },
+  "472": { "a": ["Safeguard", "pas", "-"], "b": [15, 0, 0, 1, 1, 0, 0, 0], "c": ["Press Turns", "resisted dmg dealt does not consume additional $2", "-"] },
+  "474": { "a": ["Hellish Mask", "pas", "-"], "b": [12, 0, 0, 1, 1, 0, 0, 1070], "c": ["ailment", "$2 susceptibility x$1", "-"] },
+  "475": { "a": ["Abyssal Mask", "pas", "-"], "b": [21, 0, 0, 1, 1, 0, 0, 1040], "c": ["ailment", "$2 susceptibility x$1", "-"] },
+  "477": { "a": ["Inspiring Leader", "pas", "-"], "b": [8, 0, 0, 1, 1, 0, 0, 1200], "c": ["exp", "$2 x$1, when lower lvl than protag", "-"] },
+  "478": { "a": ["Beast Eye", "pas", "-"], "b": [7, 0, 0, 1, 1, 0, 0, 1115], "c": ["accuracy", "$2 x$1", "-"] },
+  "479": { "a": ["Dragon Eye", "pas", "-"], "b": [19, 0, 0, 1, 1, 0, 0, 1130], "c": ["accuracy", "$2 x$1", "-"] },
+  "480": { "a": ["Bloody Glee", "pas", "-"], "b": [8, 0, 0, 1, 1, 0, 0, 1180], "c": ["crit rate", "$2 x$1", "-"] },
+  "481": { "a": ["Murderous Glee", "pas", "-"], "b": [21, 0, 0, 1, 1, 0, 0, 1250], "c": ["crit rate", "$2 x$1", "-"] },
+  "489": { "a": ["Phys Pleroma", "pas", "-"], "b": [20, 0, 0, 1, 1, 0, 0, 1120], "c": ["Phys", "$2 dmg dealt x$1", "-"] },
+  "490": { "a": ["High Phys Pleroma", "pas", "-"], "b": [29, 0, 0, 1, 1, 0, 0, 1135], "c": ["Phys", "$2 dmg dealt x$1", "-"] },
+  "491": { "a": ["Fire Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Fire", "$2 dmg dealt x$1", "-"] },
+  "492": { "a": ["High Fire Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Fire", "$2 dmg dealt x$1", "-"] },
+  "493": { "a": ["Ice Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Ice", "$2 dmg dealt x$1", "-"] },
+  "494": { "a": ["High Ice Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Ice", "$2 dmg dealt x$1", "-"] },
+  "495": { "a": ["Elec Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Elec", "$2 dmg dealt x$1", "-"] },
+  "496": { "a": ["High Elec Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Elec", "$2 dmg dealt x$1", "-"] },
+  "497": { "a": ["Force Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Force", "$2 dmg dealt x$1", "-"] },
+  "498": { "a": ["High Force Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Force", "$2 dmg dealt x$1", "-"] },
+  "499": { "a": ["Heal Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Recovery", "$2 dmg dealt x$1", "-"] },
+  "500": { "a": ["High Heal Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Recovery", "$2 dmg dealt x$1", "-"] },
+  "501": { "a": ["Dark Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Dark", "$2 dmg dealt x$1", "-"] },
+  "502": { "a": ["High Dark Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Dark", "$2 dmg dealt x$1", "-"] },
+  "503": { "a": ["Light Pleroma", "pas", "-"], "b": [14, 0, 0, 1, 1, 0, 0, 1120], "c": ["Light", "$2 dmg dealt x$1", "-"] },
+  "504": { "a": ["High Light Pleroma", "pas", "-"], "b": [26, 0, 0, 1, 1, 0, 0, 1135], "c": ["Light", "$2 dmg dealt x$1", "-"] },
+  "505": { "a": ["Almighty Pleroma", "pas", "-"], "b": [24, 0, 0, 1, 1, 0, 0, 1120], "c": ["Almighty", "$2 dmg dealt x$1", "-"] },
+  "506": { "a": ["High Almighty Pleroma", "pas", "-"], "b": [31, 0, 0, 1, 1, 0, 0, 1135], "c": ["Almighty", "$2 dmg dealt x$1", "-"] },
+  "511": { "a": ["Lightning Pulse A", "pas", "-"], "b": [900, 0, 0, 1, 1, 0, 0, 88], "c": ["-", "Counter with a weak Electric attack when a Thunder Bit is defeated.", "-"] }
+}

@@ -97,12 +97,11 @@ export class Compendium implements ICompendium {
           prereq:     json['prereq'] || ''
         }
 
-        if (fusionSpells[name]) { demons[name].skills[fusionSpells[name]] = 4884; }
         if (fusionSpells[race]) { demons[name].skills[fusionSpells[race]] = 5278; }
-
         if (hasInnate && json['innate'] !== '-') {
           demons[name].skills = Object.assign({}, json['skills']);
           demons[name].skills[json['innate']] = 0;
+          if (fusionSpells[name]) { demons[name].skills[fusionSpells[name]] = 4884; }
         }
       }
     }
