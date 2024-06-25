@@ -26,12 +26,19 @@ export class Compendium implements ICompendium {
   initImportedData() {
     const demons: { [name: string]: Demon } = {};
     const skills: { [name: string]: Skill } = {};
+    const fusionSpells: { [name: string]: string } = {};
     const specialRecipes: { [name: string]: string[] } = {};
     const specialPairRecipes: { [name: string]: NamePair[] } = {};
     const inversions: { [race: string]: { [lvl: number]: string } } = {};
     const resistCodes: NumDict = {};
     const resistLvls: NumDict = {};
     const blankAilments = '-'.repeat(this.compConfig.ailmentElems.length);
+
+    for (const [sname, dnames] of Object.entries(this.compConfig.fusionSpells)) {
+      for (const dname of dnames) {
+        fusionSpells[dname] = sname;
+      }
+    }
 
     for (const [res, code] of Object.entries(this.compConfig.resistCodes)) {
       resistCodes[res] = (code / 1000 | 0) << 10;
@@ -72,9 +79,11 @@ export class Compendium implements ICompendium {
 
     for (const demonJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonJson)) {
+        const race = json['race'];
+
         demons[name] = {
           name,
-          race:       json['race'],
+          race,
           lvl:        json['lvl'],
           currLvl:    json['currLvl'] || json['lvl'],
           skills:     json['skills'],
@@ -87,6 +96,9 @@ export class Compendium implements ICompendium {
           fusion:     json['fusion'] || 'normal',
           prereq:     json['prereq'] || ''
         }
+
+        if (fusionSpells[name]) { demons[name].skills[fusionSpells[name]] = 4884; }
+        if (fusionSpells[race]) { demons[name].skills[fusionSpells[race]] = 5278; }
 
         if (hasInnate && json['innate'] !== '-') {
           demons[name].skills = Object.assign({}, json['skills']);

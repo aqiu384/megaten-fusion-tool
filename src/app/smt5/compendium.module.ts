@@ -12,6 +12,7 @@ import { CompendiumConfig } from '../smt4f/models';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
+import TALISMAN_SKILLS_JSON from './data/talisman-skills.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
@@ -59,6 +60,7 @@ function createCompConfig(): CompendiumConfig {
     jaNames: JA_NAMES_JSON,
     affinityElems,
     skillData: [skillData],
+    fusionSpells: TALISMAN_SKILLS_JSON,
     skillElems,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,

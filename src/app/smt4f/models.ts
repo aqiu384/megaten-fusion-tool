@@ -19,6 +19,7 @@ export interface CompendiumConfig extends BaseComp {
   lang: string;
 
   skillData: any[];
+  fusionSpells: { [spell: string]: string[] };
   ailmentElems: string[];
   affinityElems: string[];
   skillElems: string[];

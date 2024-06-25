@@ -75,6 +75,7 @@ function createCompConfig(): CompendiumConfig {
     jaNames: JA_NAMES_JSON,
     affinityElems,
     skillData: [skillData],
+    fusionSpells: {},
     skillElems,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,

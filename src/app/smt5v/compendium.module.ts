@@ -13,8 +13,10 @@ import { skillRowToEffect } from '../pq2/models/skill-importer';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from '../smt5/data/demon-data.json';
 import VEN_DEMON_DATA_JSON from './data/demon-data.json';
-import INNATE_SKILLS from './data/innate-skills.json';
+import INNATE_SKILLS_JSON from './data/innate-skills.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
+import TALISMAN_SKILLS_JSON from '../smt5/data/talisman-skills.json';
+import PERIAPT_SKILLS_JSON from './data/periapt-skills.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../smt5/data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
@@ -59,7 +61,7 @@ function createCompConfig(): CompendiumConfig {
 
   for (const demonJson of [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON]) {
     for (const [dname, entry] of Object.entries(demonJson)) {
-      entry.innate = INNATE_SKILLS[dname] || '-';
+      entry.innate = INNATE_SKILLS_JSON[dname] || '-';
     }
   }
 
@@ -73,6 +75,7 @@ function createCompConfig(): CompendiumConfig {
     jaNames: JA_NAMES_JSON,
     affinityElems,
     skillData: [skillData],
+    fusionSpells: Object.assign(PERIAPT_SKILLS_JSON, TALISMAN_SKILLS_JSON),
     skillElems,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
@@ -91,7 +94,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'smt5v-fusion-tool-settings',
-    settingsVersion: 2406141810,
+    settingsVersion: 2406242350,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }
