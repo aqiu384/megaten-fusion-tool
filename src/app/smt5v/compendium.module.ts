@@ -14,6 +14,7 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from '../smt5/data/demon-data.json';
 import VEN_DEMON_DATA_JSON from './data/demon-data.json';
 import INNATE_SKILLS_JSON from './data/innate-skills.json';
+import COMP_COSTS_JSON from './data/comp-costs.json';
 import SKILL_DATA_JSON from '../smt5/data/skill-data.json';
 import VEN_SKILL_DATA_JSON from './data/skill-data.json';
 import TALISMAN_SKILLS_JSON from '../smt5/data/talisman-skills.json';
@@ -65,6 +66,7 @@ function createCompConfig(): CompendiumConfig {
   for (const demonJson of [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON]) {
     for (const [dname, entry] of Object.entries(demonJson)) {
       entry.innate = INNATE_SKILLS_JSON[dname] || '-';
+      entry.innatePrice = COMP_COSTS_JSON[dname] || 0;
     }
   }
 

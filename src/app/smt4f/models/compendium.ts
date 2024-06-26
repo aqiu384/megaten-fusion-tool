@@ -99,6 +99,7 @@ export class Compendium implements ICompendium {
 
         if (fusionSpells[race]) { demons[name].skills[fusionSpells[race]] = 5278; }
         if (hasInnate && json['innate'] !== '-') {
+          demons[name].price = json['innatePrice'] * 2,
           demons[name].skills = Object.assign({}, json['skills']);
           demons[name].skills[json['innate']] = 0;
           if (fusionSpells[name]) { demons[name].skills[fusionSpells[name]] = 4884; }
