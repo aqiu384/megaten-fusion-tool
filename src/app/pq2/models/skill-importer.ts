@@ -5,7 +5,7 @@ export function skillRowToEffect(nums: number[], descs: string[], sqrtPwr: boole
   const powerStr = power === 0 ? '' : `${sqrtPwr ? '√' : ''}${power} pwr`;
   const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits < 2 ? '' : `${maxHits} hits`;
   const critStr = crit <= 5 ? '' : `${crit}% crit`;
-  const accStr = acc === 0 || 90 <= acc && acc <= 110 ? '' : `${Math.min(acc, 200)}% acc`;
+  const accStr = acc === 0 || 90 <= acc && acc <= 110 ? '' : `${acc}% acc`;
   const modStr = `${baseMod < 1000 ? mod : (baseMod - 1000) / 100}`
   const effectStr = cond === '-' ? '' : cond.replace('$1', modStr).replace('$2', effect);
   const fullStr = [powerStr, hitStr, accStr, critStr, effectStr].filter(s => s !== '').join(', ');

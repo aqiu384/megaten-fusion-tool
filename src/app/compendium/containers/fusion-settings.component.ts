@@ -32,6 +32,18 @@ export class FusionSettingsContainerComponent implements OnInit, OnDestroy {
     }
   }
 
+  toggleAll(enable: boolean) {
+    const toggles = {};
+
+    for (const cat of this.fusionSettings.displayHeaders) {
+      for (const setting of cat.settings) {
+        toggles[setting.name] = enable
+      }
+    }
+
+    this.fusionDataService2.updateFusionSettings(toggles);
+  }
+
   toggleName(name: string) {
     const toggles = {};
     toggles[name] = !this.fusionSettings.isEnabled(name);

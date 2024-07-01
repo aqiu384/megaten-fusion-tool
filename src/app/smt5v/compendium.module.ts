@@ -46,7 +46,7 @@ function createCompConfig(): CompendiumConfig {
     for (const row of Object.values(skillJson)) {
       const { a: [sname, elem, target], b: nums, c: descs } = row;
       const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
-      nums[5] = acc < 200 ? acc : 100;
+      nums[5] = acc < 200 || (0 < power && elem !== 'rec') ? acc : 100;
 
       skillData[sname] = {
         element: elem,

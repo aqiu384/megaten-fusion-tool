@@ -15,6 +15,15 @@ import Translations from  '../data/translations.json';
           <tr><th class="title">Unlock Conditions</th></tr>
         </thead>
         <tbody>
+          <ng-container *ngIf="showEnableAll">
+            <tr><th>All Demons</th></tr>
+            <tr>
+              <td>
+                <button (click)="toggledAll.emit(true)" style="width: 50%;">Enable All</button>
+                <button (click)="toggledAll.emit(false)" style="width: 50%;">Disable All</button>
+              </td>
+            </tr>
+          </ng-container>
           <ng-container *ngFor="let cat of fusionSettings.displayHeaders">
             <tr><th>{{ cat.category }}</th></tr>
             <tr *ngFor="let setting of cat.settings">
@@ -36,6 +45,8 @@ export class FusionSettingsComponent {
   @Input() dlcDemons: { name: string, included: boolean }[];
   @Input() lang = 'en';
   @Input() fusionSettings: FusionSettings;
+  @Input() showEnableAll = false;
+  @Output() toggledAll = new EventEmitter<boolean>();
   @Output() toggledName = new EventEmitter<string>();
   msgs = Translations.FusionSettingsComponent;
 

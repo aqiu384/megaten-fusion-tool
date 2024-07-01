@@ -11,6 +11,8 @@ import { FusionDataService } from '../fusion-data.service';
       [lang]="lang"
       [appTitle]="appTitle"
       [fusionSettings]="fusionSettings"
+      [showEnableAll]="true"
+      (toggledAll)="toggleAll($event)"
       (toggledName)="toggleName($event)">
     </app-fusion-settings>
   `
