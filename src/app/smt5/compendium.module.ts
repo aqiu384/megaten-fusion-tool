@@ -53,6 +53,7 @@ function createCompConfig(): CompendiumConfig {
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
     DEMON_DATA_JSON[name].prereq = prereq;
+    DEMON_DATA_JSON[name].fusion = 'accident';
   }
 
   return {
