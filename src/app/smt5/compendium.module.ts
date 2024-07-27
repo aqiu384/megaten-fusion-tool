@@ -18,6 +18,7 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import ALIGNMENTS_JSON from './data/alignments.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
 import JA_NAMES_JSON from './data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
@@ -75,6 +76,7 @@ function createCompConfig(): CompendiumConfig {
 
     demonData: [DEMON_DATA_JSON],
     evolveData: {},
+    alignments: ALIGNMENTS_JSON,
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems: COMP_CONFIG_JSON.resistElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,

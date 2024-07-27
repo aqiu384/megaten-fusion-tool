@@ -56,6 +56,7 @@ export class Compendium implements ICompendium {
     const ailmentResists: SkillListDict = {};
     const ailLvls: StringDict = {};
     const hasInnate = this.compConfig.appCssClasses.includes('smt5v')
+    const aligns = this.compConfig.alignments;
 
     for (const [i, res] of 'wsn'.split('').entries()) {
       ailmentResists[resistCodes[res] >> 10] = [];
@@ -80,10 +81,12 @@ export class Compendium implements ICompendium {
     for (const demonJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonJson)) {
         const race = json['race'];
+        const align = aligns[name] || aligns[race] || 'None-None';
 
         demons[name] = {
           name,
           race,
+          align,
           lvl:        json['lvl'],
           currLvl:    json['currLvl'] || json['lvl'],
           skills:     json['skills'],
@@ -102,6 +105,7 @@ export class Compendium implements ICompendium {
           demons[name].price = json['innatePrice'] * 2,
           demons[name].skills = Object.assign({}, json['skills']);
           demons[name].skills[json['innate']] = 0;
+          if (fusionSpells[align]) { demons[name].skills[fusionSpells[align]] = 4884; }
           if (fusionSpells[name]) { demons[name].skills[fusionSpells[name]] = 4884; }
         }
       }

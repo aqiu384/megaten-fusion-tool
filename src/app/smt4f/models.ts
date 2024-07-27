@@ -25,6 +25,7 @@ export interface CompendiumConfig extends BaseComp {
   skillElems: string[];
   elemOrder: { [elem: string]: number };
   resistCodes: { [code: string]: number };
+  alignments: { [align: string]: string };
 
   affinityBonuses: { costs: number[][], upgrades: number[][] };
   lvlModifier: number;

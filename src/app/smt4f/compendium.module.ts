@@ -19,6 +19,7 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
+import ALIGNMENTS_JSON from '../smt4/data/alignments.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
 import JA_NAMES_JSON from '../smt4/data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
@@ -27,8 +28,18 @@ function createCompConfig(): CompendiumConfig {
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
+  const mpGrows = [0, 0, 0, 0, 1, 0, 0, 3, 0, 0, 0, 4, 5]
   const skillData = {};
 
+  for (const entry of Object.values(DEMON_DATA_JSON)) {
+    const stats = entry.stats;
+    const lvl = Math.floor(entry.lvl) - 1;
+    const hp = stats[0] + lvl * stats[2];
+    const mp = stats[1] + lvl * mpGrows[stats[3]]
+    entry.stats = [hp, mp].concat(stats.slice(4));
+  }
+
+  DEMON_DATA_JSON['Satan'].stats = [1253, 722].concat(DEMON_DATA_JSON['Satan'].stats.slice(2));
   const COST_MP = (3 << 10) - 1000;
 
   for (const row of Object.values(SKILL_DATA_JSON)) {
@@ -84,6 +95,7 @@ function createCompConfig(): CompendiumConfig {
 
     demonData: [DEMON_DATA_JSON],
     evolveData: EVOLUTIONS_JSON,
+    alignments: ALIGNMENTS_JSON,
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems: COMP_CONFIG_JSON.resistElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,

@@ -24,6 +24,7 @@ export function translateCompConfig(compConfig: CompendiumConfig): CompendiumCon
     demonData: compConfig.demonData.map(d => translateDemonData(d, enNames)),
     fusionSpells: translateSpecialRecipes(compConfig.fusionSpells, enNames),
     evolveData: translateEvolutions(compConfig.evolveData, enNames),
+    alignments: compConfig.alignments,
     baseStats: compConfig.baseStats.map(s => enNames[s] || s),
     resistElems: compConfig.resistElems,
     ailmentElems: compConfig.ailmentElems.map(a => enNames[a] || a),
