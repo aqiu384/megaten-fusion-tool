@@ -52,7 +52,7 @@ function createCompConfig(): CompendiumConfig {
       element: elem,
       rank: Math.min(rank, 99),
       target: target === '-' ? 'Self' : target,
-      cost: cost + COST_MP,
+      cost: cost === 0 ? 0 : cost + COST_MP,
       effect: skillRowToEffect(nums, descs, false),
     }
   }
