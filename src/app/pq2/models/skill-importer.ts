@@ -1,13 +1,16 @@
+import SKILL_EFFECTS_JSON from '../../compendium/data/skill-effects.json';
+
 export function skillRowToEffect(nums: number[], descs: string[], sqrtPwr: boolean): string {
   const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
   const [effect, cond, card] = descs;
+  const condStr = cond.startsWith('FMT') ? SKILL_EFFECTS_JSON[cond.substring(3)] : cond;
   const baseMod = parseInt(mod.toString());
   const powerStr = power === 0 ? '' : `${sqrtPwr ? '√' : ''}${power} pwr`;
   const hitStr = minHits !== maxHits ? `${minHits}-${maxHits} hits` : maxHits < 2 ? '' : `${maxHits} hits`;
   const critStr = crit <= 5 ? '' : `${crit}% crit`;
   const accStr = acc === 0 || 90 <= acc && acc <= 110 ? '' : `${acc}% acc`;
   const modStr = `${baseMod < 1000 ? mod : (baseMod - 1000) / 100}`
-  const effectStr = cond === '-' ? '' : cond.replace('$1', modStr).replace('$2', effect);
+  const effectStr = cond === '-' ? '' : condStr.replace('$1', modStr).replace('$2', effect);
   const fullStr = [powerStr, hitStr, accStr, critStr, effectStr].filter(s => s !== '').join(', ');
   return fullStr.substring(0, 1) === 'x' ? fullStr : fullStr.substring(0, 1).toUpperCase() + fullStr.substring(1);
 }
