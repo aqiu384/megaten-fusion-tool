@@ -34,11 +34,14 @@ import PAIR_SPECIAL_RECIPES_JSON from './data/pair-special-recipes.json';
 import INHERIT_TYPES_JSON from './data/inheritance-types.json';
 import FES_PARTY_DATA_JSON from './data/fes-party-data.json';
 import P3P_PARTY_DATA_JSON from './data/p3p-party-data.json';
+import { importSkillRow } from '../pq2/models/skill-importer';
 
 function createCompConfig(): CompendiumConfigSet {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const costTypes = [2 << 10, (3 << 10) - 1000, (4 << 10) - 2000];
   const affinityTypes: { [elem: string]: number[] } = {};
   const races = [];
+  const skillDatas = [];
   const compConfigs: { [game: string]: CompendiumConfig } = {};
 
   for(const race of COMP_CONFIG_JSON['races']) {
@@ -50,17 +53,14 @@ function createCompConfig(): CompendiumConfigSet {
     affinityTypes[INHERIT_TYPES_JSON.inherits[i]] = ratio.map(x => x > 1 ? x : 0);
   }
 
-  const COST_HP = 2 << 10;
-  const COST_MP = 3 << 10;
-  const COST_MP_PER = 4 << 10;
+  for (const skills of [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON, P3P_SKILL_DATA_JSON]) {
+    const skillData = {};
+    skillDatas.push(skillData);
 
-  for (const skillSet of [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON, P3P_SKILL_DATA_JSON]) {
-    for (const entry of Object.values(skillSet)) {
-      if (entry['cost'] < 2000) {
-        const cost = entry['cost'];
-        const costType = cost > 100 ? (cost > 1000 ? COST_MP - 1000 : COST_MP_PER - 100) : COST_HP;
-        entry['cost'] = cost ? cost + costType: 0;
-      }
+    for (const row of Object.values(skills)) {
+      const sname = row.a[0];
+      skillData[sname] = importSkillRow(row, costTypes);
+      skillData[sname].element = skillData[sname].elem;
     }
   }
 
@@ -119,7 +119,7 @@ function createCompConfig(): CompendiumConfigSet {
       enemyResists: COMP_CONFIG_JSON.resistElems,
 
       demonData: [VAN_DEMON_DATA_JSON],
-      skillData: [VAN_SKILL_DATA_JSON],
+      skillData: skillDatas.slice(0, 1),
       enemyData: [VAN_ENEMY_DATA_JSON],
 
       normalTable: FES_FUSION_CHART_JSON,
@@ -134,17 +134,17 @@ function createCompConfig(): CompendiumConfigSet {
 
   compConfigs.p3f.appTitle = 'Persona 3 FES';
   compConfigs.p3f.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, FES_PARTY_DATA_JSON];
-  compConfigs.p3f.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
+  compConfigs.p3f.skillData = skillDatas.slice(0, 2);
 
   compConfigs.p3a.appTitle = 'Persona 3 FES: The Answer';
   compConfigs.p3a.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON];
-  compConfigs.p3a.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON];
+  compConfigs.p3a.skillData = skillDatas.slice(0, 2);
   compConfigs.p3a.enemyData = [ANS_ENEMY_DATA_JSON];
   compConfigs.p3a.specialRecipes = PAIR_SPECIAL_RECIPES_JSON;
 
   compConfigs.p3p.appTitle = 'Persona 3 Portable';
   compConfigs.p3p.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, P3P_DEMON_DATA_JSON, P3P_PARTY_DATA_JSON];
-  compConfigs.p3p.skillData = [VAN_SKILL_DATA_JSON, FES_SKILL_DATA_JSON, P3P_SKILL_DATA_JSON];
+  compConfigs.p3p.skillData = skillDatas;
   compConfigs.p3p.hasSkillCards = true;
 
   return {
