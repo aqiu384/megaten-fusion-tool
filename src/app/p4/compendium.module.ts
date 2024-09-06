@@ -15,6 +15,7 @@ import GOLDEN_DEMON_DATA_JSON from './data/golden-demon-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import GOLDEN_ENEMY_DATA_JSON from './data/golden-enemy-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
+import GOLDEN_SKILL_DATA_JSON from './data/golden-skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import GOLDEN_FUSION_CHART_JSON from './data/golden-fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
@@ -28,7 +29,7 @@ function createCompConfig(): CompendiumConfigSet {
   const costTypes = [2 << 10, (5 << 10) - 1000, (4 << 10) - 2000];
   const affinityTypes: { [elem: string]: number[] } = {};
   const races = [];
-  const skillData = {};
+  const skillDatas = [];
   const compConfigs: { [game: string]: CompendiumConfig } = {};
 
   for(const race of COMP_CONFIG_JSON['races']) {
@@ -56,10 +57,15 @@ function createCompConfig(): CompendiumConfigSet {
     }
   }
 
-  for (const row of Object.values(SKILL_DATA_JSON)) {
-    const sname = row.a[0];
-    skillData[sname] = importSkillRow(row, costTypes);
-    skillData[sname].element = skillData[sname].elem;
+  for (const skills of [SKILL_DATA_JSON, GOLDEN_SKILL_DATA_JSON]) {
+    const skillData = {};
+    skillDatas.push(skillData);
+
+    for (const row of Object.values(skills)) {
+      const sname = row.a[0];
+      skillData[sname] = importSkillRow(row, costTypes);
+      skillData[sname].element = skillData[sname].elem;
+    }
   }
 
   for (const game of ['p4', 'p4g']) {
@@ -81,7 +87,7 @@ function createCompConfig(): CompendiumConfigSet {
       enemyResists: COMP_CONFIG_JSON.resistElems,
 
       demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
-      skillData: [skillData],
+      skillData: skillDatas.slice(0, 1),
       enemyData: [ENEMY_DATA_JSON],
 
       normalTable: FUSION_CHART_JSON,
@@ -94,6 +100,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p4g.appTitle = 'Persona 4 Golden';
   compConfigs.p4g.demonData = [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON];
   compConfigs.p4g.enemyData = [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON];
+  compConfigs.p4g.skillData = skillDatas;
   compConfigs.p4g.normalTable = GOLDEN_FUSION_CHART_JSON;
   compConfigs.p4g.hasSkillCards = true;
   compConfigs.p4g.hasManualInheritance = true;
