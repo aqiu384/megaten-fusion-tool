@@ -38,7 +38,7 @@ import { importSkillRow } from '../pq2/models/skill-importer';
 
 function createCompConfig(): CompendiumConfigSet {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-  const costTypes = [2 << 10, (3 << 10) - 1000, (4 << 10) - 2000];
+  const costTypes = [2 << 10, (5 << 10) - 1000, (4 << 10) - 2000];
   const affinityTypes: { [elem: string]: number[] } = {};
   const races = [];
   const skillDatas = [];

@@ -21,9 +21,11 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import INHERIT_TYPES_JSON from './data/inheritance-types.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import GOLDEN_PARTY_DATA_JSON from './data/golden-party-data.json';
+import { importSkillRow } from '../pq2/models/skill-importer';
 
 function createCompConfig(): CompendiumConfigSet {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const costTypes = [2 << 10, (5 << 10) - 1000, (4 << 10) - 2000];
   const affinityTypes: { [elem: string]: number[] } = {};
   const races = [];
   const skillData = {};
@@ -54,25 +56,10 @@ function createCompConfig(): CompendiumConfigSet {
     }
   }
 
-  const COST_HP = 2 << 10;
-  const COST_MP = 3 << 10;
-
-  for (const skill of SKILL_DATA_JSON) {
-    const costType = skill.cost > 1000 ? COST_MP - 1000 : COST_HP;
-
-    skillData[skill.name] = {
-      element: skill.elem,
-      cost: skill.cost ? skill.cost + costType : 0,
-      effect: skill.power ? '√' + skill.power + ' power' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
-      target: skill.target || 'Self',
-      rank: skill.rank + (skill.mutate ? 0.5 : 0),
-    }
-
-    if (skill.hasOwnProperty('card')) {
-      skillData[skill.name].card = skill.card;
-    } else if (skill.hasOwnProperty('shuffle')) {
-      skillData[skill.name].card = 'Shuffle ' + skill.shuffle;
-    }
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const sname = row.a[0];
+    skillData[sname] = importSkillRow(row, costTypes);
+    skillData[sname].element = skillData[sname].elem;
   }
 
   for (const game of ['p4', 'p4g']) {
