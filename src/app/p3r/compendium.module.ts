@@ -8,6 +8,7 @@ import { FusionDataService } from '../pq2/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from '../pq2/pq-compendium.module';
 import { CompendiumConfig } from '../pq2/models';
+import { importSkillRow } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import TRANSLATIONS_JSON from './data/translations.json';
@@ -23,10 +24,12 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
+  const costTypes = [2 << 10, (5 << 10) - 1000, (19 << 10) - 2001];
   const races = [];
   const allRaces = [];
   const inheritTypes: { [elem: string]: number } = {};
-  const enemyData = {}
+  const enemyData = {};
+  const skillData = {};
 
   for (const enRace of COMP_CONFIG_JSON.races) {
     const penRace = enRace + ' P';
@@ -61,32 +64,9 @@ function createCompConfig(): CompendiumConfig {
     if (!enemy['boss']) { enemyData[name] = enemy; }
   }
 
-  const COST_HP = 2 << 10;
-  const COST_MP = 3 << 10;
-  const COST_THEURGY = 19 << 10;
-
-  for (const entry of Object.values(SKILL_DATA_JSON)) {
-    const cost = entry['cost'];
-    const costType = cost > 1000 ? COST_MP - 1000 : COST_HP;
-    entry['cost'] = cost ? (cost > 2000 ? COST_THEURGY : cost + costType) : 0;
-    if (entry['card']) { entry['card'] = 'Sword ' + entry['card']; }
-    if (entry['mutate']) { entry['card'] = 'Skill Mutation'; }
-
-    const effect = [];
-    if (entry['power']) { effect.push(`√${entry['power']} power`); }
-    if (entry['min']) { effect.push(`${entry['min']}${entry['max'] && entry['max'] != entry['min'] ? '-' + entry['max'] : ''} hits`); }
-    if (entry['hit'] && entry['hit'] < 90) { effect.push(`${entry['hit']}% hit`); }
-    if (entry['crit'] && entry['crit'] > 10) { effect.push(`${entry['crit']}% crit`); }
-
-    if (entry['mod']) {
-      const mod = entry['mod'];
-      const add = entry['add'];
-      effect.push(mod < 1000 ? `${mod}% ${add}` : `x${(mod / 100 - 10).toFixed(2)} ${add}`);
-    } else if (entry['add']) {
-      effect.push(entry['add']);
-    }
-
-    entry['effect'] = effect.length > 0 ? effect.join(', ') : entry['effect'];
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    row.b[0] = row.b[0] || 99;
+    skillData[row.a[0]] = importSkillRow(row, costTypes);
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
@@ -105,7 +85,7 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: allRaces.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['p3r'],
 
-    skillData: SKILL_DATA_JSON,
+    skillData,
     skillElems,
     ailmentElems: COMP_CONFIG_JSON.ailments.map(x => x.slice(0, 3)),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
