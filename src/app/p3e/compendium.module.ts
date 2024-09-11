@@ -10,16 +10,16 @@ import { PQCompendiumModule } from '../pq2/pq-compendium.module';
 import { CompendiumConfig } from '../pq2/models';
 import { importSkillRow } from '../pq2/models/skill-importer';
 
-import COMP_CONFIG_JSON from './data/comp-config.json';
-import TRANSLATIONS_JSON from './data/translations.json';
+import COMP_CONFIG_JSON from '../p3r/data/comp-config.json';
+import TRANSLATIONS_JSON from '../p3r/data/translations.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
-import DEMON_DATA_JSON from './data/demon-data.json';
-import PARTY_DATA_JSON from './data/party-data.json';
-import ENEMY_DATA_JSON from './data/enemy-data.json';
-import SKILL_DATA_JSON from './data/skill-data.json';
-import FUSION_CHART_JSON from './data/fusion-chart.json';
-import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
+import DEMON_DATA_JSON from '../p3r/data/demon-data.json';
+import PARTY_DATA_JSON from '../p3r/data/party-data.json';
+import ENEMY_DATA_JSON from '../p3r/data/enemy-data.json';
+import SKILL_DATA_JSON from '../p3r/data/skill-data.json';
+import FUSION_CHART_JSON from '../p3r/data/fusion-chart.json';
+import SPECIAL_RECIPES_JSON from '../p3r/data/special-recipes.json';
+import FUSION_PREREQS_JSON from '../p3r/data/fusion-prereqs.json';
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -78,7 +78,7 @@ function createCompConfig(): CompendiumConfig {
   }
 
   return {
-    appTitle: 'Persona 3 Reload',
+    appTitle: 'Persona 3 Reload: Episode Aigis',
     translations: TRANSLATIONS_JSON,
     lang: 'en',
     races,
@@ -110,7 +110,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     defaultDemon: 'Pixie',
-    settingsKey: 'p3r-fusion-tool-settings',
+    settingsKey: 'p3e-fusion-tool-settings',
     settingsVersion: 2401131500
   };
 }

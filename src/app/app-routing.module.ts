@@ -34,6 +34,7 @@ const appRoutes: Routes = [
   { path: 'p3a',    loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p3p',    loadChildren: () => import('./p3/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p3r',    loadChildren: () => import('./p3r/compendium.module').then(m => m.CompendiumModule) },
+  { path: 'p3e',    loadChildren: () => import('./p3e/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p4',     loadChildren: () => import('./p4/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p4g',    loadChildren: () => import('./p4/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p5',     loadChildren: () => import('./p5/compendium.module').then(m => m.CompendiumModule) },
