@@ -15,11 +15,10 @@ import TRANSLATIONS_JSON from '../p3r/data/translations.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
-import ENEMY_DATA_JSON from '../p3r/data/enemy-data.json';
+import ENEMY_DATA_JSON from './data/enemy-data.json';
 import SKILL_DATA_JSON from '../p3r/data/skill-data.json';
 import FUSION_CHART_JSON from '../p3r/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from '../p3r/data/special-recipes.json';
-import FUSION_PREREQS_JSON from '../p3r/data/fusion-prereqs.json';
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -67,10 +66,6 @@ function createCompConfig(): CompendiumConfig {
   for (const row of Object.values(SKILL_DATA_JSON)) {
     row.b[0] = row.b[0] || 99;
     skillData[row.a[0]] = importSkillRow(row, costTypes);
-  }
-
-  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    DEMON_DATA_JSON[name]['prereq'] = prereq;
   }
 
   for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
