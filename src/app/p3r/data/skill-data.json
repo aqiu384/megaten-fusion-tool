@@ -175,6 +175,9 @@
   "264": { "a": ["Scarlet Havoc", "sla", "All foes"], "b": [0, 2001, 250, 1, 1, 100, 20, 0], "c": ["-", "ignores resistances", "-"] },
   "265": { "a": ["Trickster", "alm", "All foes"], "b": [0, 2001, 300, 1, 1, 100, 0, 80], "c": ["ailment", "FMTExact", "-"] },
   "266": { "a": ["Armageddon", "alm", "All foes"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["dmg dealt", "9999 $2, reduces user's HP and SP to 1", "-"] },
+  "267": { "a": ["Justice", "pie", "All foes"], "b": [0, 2001, 80, 1, 1, 100, 50, 0], "c": ["-", "ignores resistances", "-"] },
+  "268": { "a": ["Dreamfest", "dar", "All foes"], "b": [0, 2001, 200, 1, 1, 100, 0, 80], "c": ["Charm", "$1% $2, ignores resistances", "-"] },
+  "269": { "a": ["Shadow Hound", "pie", "1 foe"], "b": [0, 2001, 300, 1, 1, 100, 20, 80], "c": ["Fear", "$1% $2, ignores resistances", "-"] },
   "270": { "a": ["Oracle", "rec", "All allies"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["-", "Grants 1 random positive effect to all allies.", "-"] },
   "271": { "a": ["Oracle B", "rec", "All allies"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["-", "-", "-"] },
   "272": { "a": ["Oracle C", "sup", "All allies"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["-", "-", "-"] },
@@ -192,6 +195,7 @@
   "286": { "a": ["Divine Retribution", "lig", "1 foe"], "b": [0, 2001, 230, 1, 1, 100, 0, 0], "c": ["-", "ignores resistances", "-"] },
   "287": { "a": ["Hound of Hades", "dar", "1 foe"], "b": [0, 2001, 220, 1, 1, 100, 0, 0], "c": ["-", "ignores resistances", "-"] },
   "288": { "a": ["Bleeding Fury", "str", "1 foe"], "b": [0, 2001, 280, 1, 1, 100, 30, 0], "c": ["-", "ignores resistances", "-"] },
+  "289": { "a": ["Orgia Mode B", "str", "All foes"], "b": [0, 2001, 100, 1, 1, 100, 10, 0], "c": ["-", "ignores resistances, ignores orders for a time", "-"] },
   "292": { "a": ["Tranquility", "sup", "All allies"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["Concentrate", "FMTBase", "-"] },
   "293": { "a": ["Blaze of Life", "fir", "1 foe"], "b": [0, 2001, 450, 1, 1, 100, 0, 0], "c": ["Diarahan", "$2 to self, ignores resistances", "-"] },
   "294": { "a": ["Electric Onslaught", "ele", "1 foe"], "b": [0, 2001, 200, 1, 1, 100, 0, 80], "c": ["Shock", "$1% $2, ignores resistances", "-"] },
@@ -200,6 +204,7 @@
   "297": { "a": ["Maximum Firepower", "pie", "1 foe"], "b": [0, 2001, 250, 1, 1, 100, 15, 0], "c": ["-", "ignores resistances", "-"] },
   "298": { "a": ["Divine Intervention", "rec", "All allies"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["Samarecarm + Diarahan + Tetrakarn + Makarakarn", "FMTBase", "-"] },
   "299": { "a": ["Power Howling", "sup", "All allies"], "b": [0, 2001, 0, 1, 1, 100, 0, 0], "c": ["Charge", "FMTBase", "-"] },
+  "300": { "a": ["Charging Blitz", "str", "1 foe"], "b": [0, 2001, 250, 1, 1, 100, 15, 0], "c": ["-", "ignores resistances", "-"] },
   "310": { "a": ["All-Out Attack", "alm", "All foes"], "b": [0, 0, 15, 1, 1, 100, 0, 50], "c": ["-", "-", "-"] },
   "311": { "a": ["Slash Attack", "sla", "1 foe"], "b": [0, 0, 40, 1, 1, 80, 0, 0], "c": ["-", "-", "-"] },
   "312": { "a": ["Strike Attack", "str", "1 foe"], "b": [0, 0, 40, 1, 1, 80, 0, 0], "c": ["-", "-", "-"] },
@@ -593,5 +598,7 @@
   "917": { "a": ["Auto Sukunda", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Sukunda", "FMTAutoSkill", "-"] },
   "918": { "a": ["Auto Masukunda", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Masukunda", "FMTAutoSkill", "-"] },
   "919": { "a": ["Auto Bolster", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Tarukaja + Rakukaja + Sukukaja", "FMTAutoSkill", "-"] },
-  "920": { "a": ["Auto Heat Riser", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Tarukaja + Rakukaja + Sukukaja", "FMTAutoSkill", "-"] }
+  "920": { "a": ["Auto Heat Riser", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 0], "c": ["Tarukaja + Rakukaja + Sukukaja", "FMTAutoSkill", "-"] },
+  "921": { "a": ["Sister Boost", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1120], "c": ["when receiving Shift from Aigis", "dmg dealt x$1 $2", "-"] },
+  "922": { "a": ["Sister Amp", "pas", "-"], "b": [0, 0, 0, 0, 0, 0, 0, 1140], "c": ["when receiving Shift from Aigis", "dmg dealt x$1 $2", "-"] }
 }
