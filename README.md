@@ -45,6 +45,7 @@ Fusion tool framework for Megami Tensei games.
 * [Persona 3 FES: The Answer](https://aqiu384.github.io/megaten-fusion-tool/p3a/personas)
 * [Persona 3 Portable](https://aqiu384.github.io/megaten-fusion-tool/p3p/personas)
 * [Persona 3 Reload](https://aqiu384.github.io/megaten-fusion-tool/p3r/personas)
+* [Persona 3 Reload: Episode Aigis](https://aqiu384.github.io/megaten-fusion-tool/p3e/personas)
 * [Persona 4](https://aqiu384.github.io/megaten-fusion-tool/p4/personas)
 * [Persona 4 Golden](https://aqiu384.github.io/megaten-fusion-tool/p4g/personas)
 * [Persona 5](https://aqiu384.github.io/megaten-fusion-tool/p5/personas)
