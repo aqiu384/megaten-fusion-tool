@@ -23,6 +23,12 @@ export function translateDemonData(oldDemons: any, enNames: StringDict): any {
       }
     }
 
+    for (const extraSkill of ['innate', 'trait']) {
+      if (newEntry[extraSkill]) {
+        newEntry[extraSkill] = enNames[newEntry[extraSkill]] || newEntry[extraSkill];
+      }
+    }
+
     newEntry['race'] = enNames[newEntry['race']] || newEntry['race'];
     newDemons[enNames[dname] || dname] = newEntry;
   }

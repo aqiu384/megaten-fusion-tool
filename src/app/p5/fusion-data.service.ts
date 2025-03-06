@@ -21,7 +21,7 @@ import { FusionSettings } from '../compendium/models/fusion-settings';
 @Injectable()
 export class FusionDataService extends ConfigurableFusionDataService<Compendium, FusionChart> {
   fissionCalculator = new NormalFusionCalculator(
-    [ splitWithDiffRace, splitWithSameRace, splitWithElement ],
+    [ splitWithDiffRace, splitWithSameRace ],
     [ ]
   );
 

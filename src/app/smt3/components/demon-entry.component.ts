@@ -49,7 +49,7 @@ import { FusionDataService } from '../fusion-data.service';
         [rowData]="[demon.evolvesTo]">
       </app-fusion-entry-table>
       <app-smt-fusions [showFusionAlert]="isCursed">
-        Cursed fusion enabled (More reverse fusions for Vile, Wilder, Night, and Haunt demons)
+        Cursed fusion enabled (More reverse fissions for Vile, Wilder, Night, and Haunt demons)
       </app-smt-fusions>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">

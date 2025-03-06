@@ -25,6 +25,7 @@ import JA_NAMES_JSON from '../smt4/data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
+  const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
@@ -83,7 +84,7 @@ function createCompConfig(): CompendiumConfig {
     appCssClasses: ['smt4', 'smt4f'],
 
     lang: 'en',
-    jaNames: JA_NAMES_JSON,
+    translations,
     affinityElems,
     skillData: [skillData],
     fusionSpells: {},
@@ -106,7 +107,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'smt4f-fusion-tool-settings',
-    settingsVersion: 2401131500,
+    settingsVersion: 2503061400,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   }

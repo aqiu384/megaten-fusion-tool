@@ -7,18 +7,22 @@ import { toFusionPairResult } from '../models/conversions';
 import { CurrentDemonService } from '../current-demon.service';
 import Translations from '../data/translations.json';
 
+export const SmtFusionTableComponentTemplate = `
+  <app-fusion-pair-table
+    [lang]="lang"
+    [title]="currentDemon + (msgs.Title | translateComp:lang)"
+    [leftHeader]="msgs.LeftHeader | translateComp:lang"
+    [rightHeader]="msgs.RightHeader | translateComp:lang"
+    [leftBaseUrl]="'..'"
+    [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
+    [rowData]="fusionPairs">
+  </app-fusion-pair-table>
+`
+
 @Component({
   selector: 'app-smt-fusion-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <app-fusion-pair-table
-      [lang]="lang"
-      [title]="currentDemon + (msgs.Title | translateComp:lang)"
-      [leftHeader]="msgs.LeftHeader | translateComp:lang"
-      [rightHeader]="msgs.RightHeader | translateComp:lang"
-      [rowData]="fusionPairs">
-    </app-fusion-pair-table>
-  `
+  template: SmtFusionTableComponentTemplate
 })
 export class SmtFusionTableComponent implements OnInit, OnDestroy {
   calculator: FusionCalculator;
@@ -26,6 +30,7 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
   fusionChart: FusionChart;
   currentDemon: string;
   lang = 'en';
+  hasFusionToPersonas = false;
   fusionPairs: FusionPair[] = [];
   msgs = Translations.SmtFusionTableComponent;
 

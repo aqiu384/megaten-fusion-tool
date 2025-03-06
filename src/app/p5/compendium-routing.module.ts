@@ -10,7 +10,7 @@ import { FusionChartContainerComponent } from './components/fusion-chart.compone
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 
 import { SmtFissionPreviewComponent } from '../compendium/components/fission-preview-table.component';
-import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
+import { P5FissionTableComponent } from './components/p5-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
 const compendiumRoutes: Routes = [
@@ -40,7 +40,7 @@ const compendiumRoutes: Routes = [
         children: [
           {
             path: 'fissions',
-            component: SmtFissionTableComponent
+            component: P5FissionTableComponent
           },
           {
             path: 'fusions',

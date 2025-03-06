@@ -51,9 +51,9 @@ import Translations from '../../compendium/data/translations.json';
         <tbody>
           <tr *ngFor="let data of skillLvls" [ngClass]="{ unique: data.skill.rank > 90 }">
             <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
-            <td>{{ data.skill.name + (data.lvl ? ' +' + data.lvl : '') }}</td>
+            <td>{{ data.skill.name }} {{ data.lvl > 0 ? '+' + data.lvl : data.lvl || '' }}</td>
             <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
-            <td>{{ data.skill.effect + (data.upgrade ? ' (+' + data.upgrade + '%)' : '') }}</td>
+            <td>{{ data.skill.effect }} {{ data.upgrade === 0 ? '' : '(' + (data.upgrade > 0 ? '+' : '') + data.upgrade + '%)' }}</td>
             <td>{{ data.skill.target || 'Self' }}</td>
             <td [style.color]="data.skill.rank !== 99 ? null: 'transparent'">{{ data.skill.rank }}</td>
             <td>{{ data.skill.level | skillLevelToString }}</td>
@@ -109,9 +109,9 @@ export class DemonEntryComponent {
       if (lvl && bonuses.costs[elemIndex] && (skill.cost & 0xFC00) <= COST_MP) {
         this.skillLvls.push({
           skill,
-          cost: (skill.cost & 0xFC00) + Math.floor((100 - bonuses.costs[elemIndex][lvl - 1]) / 100 * (skill.cost & 0x3FF)),
+          cost: (skill.cost & 0xFC00) + Math.floor((100 - bonuses.costs[elemIndex][lvl + 10]) / 100 * (skill.cost & 0x3FF)),
           lvl,
-          upgrade: bonuses.upgrades[elemIndex][lvl - 1],
+          upgrade: bonuses.upgrades[elemIndex][lvl + 10],
         })
       } else {
         this.skillLvls.push({ skill, cost: skill.cost, lvl: 0, upgrade: 0 });

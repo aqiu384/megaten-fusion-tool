@@ -19,7 +19,9 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   appName: string;
 
   constructor(@Inject(COMPENDIUM_CONFIG) config: CompendiumConfig, router: Router) {
-    const compConfig = !router.url.includes('/ja/') ? config : translateCompConfig(config);
+    const parts = router.url.split('/');
+    const lang = config.translations.en.includes(parts[1]) ? parts[1] : 'en';
+    const compConfig = lang === 'en' ? config : translateCompConfig(config, lang);
     const fusionSettings = new FusionSettings(compConfig.demonUnlocks, []);
 
     super(

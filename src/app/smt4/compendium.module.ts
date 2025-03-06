@@ -24,6 +24,7 @@ import JA_NAMES_JSON from '../smt4/data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
+  const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const skillData = {};
 
@@ -72,7 +73,7 @@ function createCompConfig(): CompendiumConfig {
     appCssClasses: ['smt4', 'smt4f'],
 
     lang: 'en',
-    jaNames: JA_NAMES_JSON,
+    translations,
     affinityElems: [],
     skillData: [skillData],
     fusionSpells: {},

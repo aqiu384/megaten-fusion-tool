@@ -14,9 +14,9 @@ export interface Skill extends BaseSkill {
 
 export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
-  races: string[];
-  jaNames: { [jname: string]: string };
+  translations: { [en: string]: string[] };
   lang: string;
+  races: string[];
 
   skillData: any[];
   fusionSpells: { [spell: string]: string[] };

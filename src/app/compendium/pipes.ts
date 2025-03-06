@@ -54,8 +54,9 @@ export class ElementAffinityToStringPipe implements PipeTransform {
 
 @Pipe({ name: 'lvlToNumber' })
 export class LvlToNumberPipe implements PipeTransform {
-  transform(value: number): number {
-    return Math.floor(value);
+  transform(value: number): string {
+    const lvl = Math.floor(value);
+    return lvl <= 0x3FF ? lvl.toString() : `${lvl >> 10}-${lvl & 0x3FF}`;
   }
 }
 

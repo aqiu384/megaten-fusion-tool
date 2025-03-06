@@ -13,6 +13,7 @@ import { FusionSettingsContainerComponent } from './components/fusion-settings.c
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { EnemyEntryComponent } from './components/enemy-entry.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
+import { P5FissionTableComponent } from './components/p5-fission-table.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    P5FissionTableComponent,
     RecipeGeneratorContainerComponent
   ],
   exports: [
@@ -41,6 +43,7 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    P5FissionTableComponent,
     RecipeGeneratorContainerComponent
   ],
 })

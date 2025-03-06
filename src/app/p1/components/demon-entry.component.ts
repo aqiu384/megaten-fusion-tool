@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 
 import { FusionChart, FusionEntry, MultiFusionPair } from '../../compendium/models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
-import { splitWithGem } from 'src/app/compendium/fusions/per-nonelem-fissions';
+import { splitWithGem } from '../../compendium/fusions/per-nonelem-fissions';
 
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';

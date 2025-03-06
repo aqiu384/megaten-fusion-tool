@@ -20,14 +20,23 @@ import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import ALIGNMENTS_JSON from './data/alignments.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
-import JA_NAMES_JSON from './data/ja-names.json';
+import RACE_NAMES_JSON from './data/race-names.json';
+import DEMON_NAMES_JSON from './data/demon-names.json';
+import SKILL_NAMES_JSON from './data/skill-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfig {
+  const translations = { en: ['ja', 'zh-cn'] };
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
   const skillData = {};
+
+  for (const namesets of [RACE_NAMES_JSON, DEMON_NAMES_JSON, SKILL_NAMES_JSON]) {
+    for (const [en, ja, zhcn] of Object.values(namesets)) {
+      translations[en] = [ja, zhcn];
+    }
+  }
 
   for (const elem of affinityElems) {
     const bonusElem = AFFINITIES_JSON['elements'][elem];
@@ -64,7 +73,7 @@ function createCompConfig(): CompendiumConfig {
     appCssClasses: ['smt4', 'smt5'],
 
     lang: 'en',
-    jaNames: JA_NAMES_JSON,
+    translations,
     affinityElems,
     skillData: [skillData],
     fusionSpells: TALISMAN_SKILLS_JSON,
