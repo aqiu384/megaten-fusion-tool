@@ -1,17 +1,17 @@
-FROM busybox:1.28.3 as config-writer
+FROM busybox:1.28.3 AS config-writer
 WORKDIR /usr/src/config
 COPY docker/base-package-json.sh package.json ./
 RUN ./base-package-json.sh > docker-base-package.json
 
-FROM node:11.6.0-alpine as builder
+FROM node:16.14.2-alpine AS builder
 WORKDIR /usr/src/build
 COPY --from=config-writer /usr/src/config/docker-base-package.json package.json
 RUN npm install
 COPY src ./src/
-COPY angular.json tsconfig.json tslint.json ./
-RUN ./node_modules/.bin/ng build --prod --aot --base-href /megaten-fusion-tool/
+COPY angular.json tsconfig.json tsconfig.app.json tsconfig.spec.json ngsw-config.json ./
+RUN ./node_modules/.bin/ng build --configuration "production" --aot --base-href /megaten-fusion-tool/
 
-FROM nginx:1.17.6-alpine
+FROM nginx:1.17.10-alpine
 RUN sed -i -e '/listen/!b' -e '/80;/!b' -e 's/80;/8080;/' /etc/nginx/conf.d/default.conf \
     && sed -i -e '/user/!b' -e '/nginx/!b' -e '/nginx/d' /etc/nginx/nginx.conf \
     && sed -i 's!/var/run/nginx.pid!/tmp/nginx.pid!g' /etc/nginx/nginx.conf \
