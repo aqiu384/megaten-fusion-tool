@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "prebuild": "node src/update-version.js",
+    "build": "ng build --aot --base-href /megaten-fusion-tool/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

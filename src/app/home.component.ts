@@ -27,6 +27,9 @@ export class HomeComponent implements OnInit {
   constructor(private title: Title, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    const loadErrorMsg = document.getElementById('loadErrorMsg');
+    if (loadErrorMsg) { loadErrorMsg.style.display = 'none'; }
+
     const lang = this.route.snapshot.data.lang;
     this.lang = this.langs.includes(lang) ? lang : 'en';
     this.langInd = this.langs.indexOf(this.lang);
