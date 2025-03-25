@@ -58,6 +58,8 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    const loadErrorMsg = document.getElementById('loadErrorMsg');
+    if (loadErrorMsg) { loadErrorMsg.style.display = 'none'; }
     this.router.events.subscribe(v => this.interceptNavigation(v));
   }
 
