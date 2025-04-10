@@ -16,20 +16,20 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     raceOrder: compConfig.raceOrder,
     appCssClasses: compConfig.appCssClasses,
 
-    skillData: translateSkillData(compConfig.skillData, langNames),
+    skillData: compConfig.skillData.map(d => translateSkillData(d, langNames)),
     skillElems: compConfig.skillElems,
     ailmentElems: compConfig.ailmentElems,
     elemOrder: compConfig.elemOrder,
     resistCodes: compConfig.resistCodes,
 
-    demonData: translateDemonData(compConfig.demonData, langNames),
+    demonData: compConfig.demonData.map(d => translateDemonData(d, langNames)),
     baseStats: compConfig.baseStats.map(translate),
     resistElems: compConfig.resistElems,
     inheritTypes: compConfig.inheritTypes,
     inheritElems: compConfig.inheritElems,
 
     demonUnlocks: translateDemonUnlocks(compConfig.demonUnlocks, langNames),
-    enemyData: translateDemonData(compConfig.enemyData, langNames),
+    enemyData: compConfig.enemyData.map(d => translateDemonData(d, langNames)),
     enemyStats: compConfig.enemyStats.map(translate),
 
     normalTable: translateFusionChart(compConfig.normalTable, langNames),

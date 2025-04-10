@@ -39,44 +39,48 @@ export class Compendium implements ICompendium {
     const codifyAilments = (x: string) => (x || blankAilments).split('').map(y => resistCodes[y]);
     const hasDemonResists = this.compConfig.hasDemonResists;
 
-    for (const [name, json] of Object.entries(this.compConfig.demonData)) {
-      const baseSkills = Object.values(json['skills']).reduce<number>((acc, lvl) => lvl === 0 ? acc + 1 : acc, 0);
-      const price = Math.floor((800 + 120 * json['lvl']) * (1 + 0.25 * baseSkills) / 10) * 10;
+    for (const demonDataJson of this.compConfig.demonData) {
+      for (const [name, json] of Object.entries(demonDataJson)) {
+        const baseSkills = Object.values(json['skills']).reduce<number>((acc, lvl) => lvl === 0 ? acc + 1 : acc, 0);
+        const price = Math.floor((800 + 120 * json['lvl']) * (1 + 0.25 * baseSkills) / 10) * 10;
 
-      demons[name] = {
-        name,
-        race:     json['race'],
-        lvl:      json['lvl'],
-        currLvl:  json['lvl'],
-        price:    json['price'] || price,
-        inherits: this.compConfig.inheritTypes[json['inherit'] || json['inherits']],
-        stats:    json['stats'],
-        skills:   json['skills'],
-        resists:  hasDemonResists ? codifyResists(json['resists']) : [],
-        ailments: hasDemonResists ? codifyAilments(json['ailments']) : [],
-        code:     json['code'] || 0,
-        fusion:   json['fusion'] || 'normal',
-        prereq:   json['prereq'] || ''
-      };
+        demons[name] = {
+          name,
+          race:     json['race'],
+          lvl:      json['lvl'],
+          currLvl:  json['lvl'],
+          price:    json['price'] || price,
+          inherits: this.compConfig.inheritTypes[json['inherit'] || json['inherits']],
+          stats:    json['stats'],
+          skills:   json['skills'],
+          resists:  hasDemonResists ? codifyResists(json['resists']) : [],
+          ailments: hasDemonResists ? codifyAilments(json['ailments']) : [],
+          code:     json['code'] || 0,
+          fusion:   json['fusion'] || 'normal',
+          prereq:   json['prereq'] || ''
+        };
+      }
     }
 
-    for (const [name, json] of Object.entries(this.compConfig.enemyData)) {
-      enemies[name] = {
-        name,
-        race:     json['race'],
-        lvl:      json['lvl'],
-        currLvl:  json['lvl'],
-        price:    0,
-        inherits: 0,
-        stats:    json['stats'],
-        resists:  codifyResists(json['resists']),
-        ailments: codifyAilments(json['ailments']),
-        skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
-        area:     json['area'],
-        drop:     json['drops']?.join(', ') || '-',
-        code:     0,
-        fusion:   'normal',
-        isEnemy:  true
+    for (const enemyDataJson of this.compConfig.enemyData) {
+      for (const [name, json] of Object.entries(enemyDataJson)) {
+        enemies[name] = {
+          name,
+          race:     json['race'],
+          lvl:      json['lvl'],
+          currLvl:  json['lvl'],
+          price:    0,
+          inherits: 0,
+          stats:    json['stats'],
+          resists:  codifyResists(json['resists']),
+          ailments: codifyAilments(json['ailments']),
+          skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+          area:     json['area'],
+          drop:     json['drops']?.join(', ') || '-',
+          code:     0,
+          fusion:   'normal',
+          isEnemy:  true
+        }
       }
     }
 
@@ -85,22 +89,24 @@ export class Compendium implements ICompendium {
       demons[name].fusion = 'special';
     }
 
-    for (const [name, json] of Object.entries(this.compConfig.skillData)) {
-      skills[name] = {
-        name,
-        element:   json['elem'] || json['element'],
-        cost:      json['cost'] || 0,
-        rank:      json['unique'] ? 99 : json['rank'] || (json['cost'] & 0x3FF) / 100 || 1,
-        effect:    json['effect'],
-        target:    json['target'] || 'Self',
-        learnedBy: [],
-        transfer:  [],
-        code:      json['code'] || 0,
-        level:     0
-      };
+    for (const skillDataJson of this.compConfig.skillData) {
+      for (const [name, json] of Object.entries(skillDataJson)) {
+        skills[name] = {
+          name,
+          element:   json['elem'] || json['element'],
+          cost:      json['cost'] || 0,
+          rank:      json['unique'] ? 99 : json['rank'] || (json['cost'] & 0x3FF) / 100 || 1,
+          effect:    json['effect'],
+          target:    json['target'] || 'Self',
+          learnedBy: [],
+          transfer:  [],
+          code:      json['code'] || 0,
+          level:     0
+        };
 
-      if (json['card']) {
-        skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: -100 }));
+        if (json['card']) {
+          skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: -100 }));
+        }
       }
     }
 

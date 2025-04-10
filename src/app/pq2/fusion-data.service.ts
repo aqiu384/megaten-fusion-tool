@@ -12,7 +12,7 @@ import {
   P3_TRIPLE_FISSION_CALCULATOR,
   P3_TRIPLE_FUSION_CALCULATOR 
 } from '../compendium/constants';
-import { CompendiumConfig } from './models';
+import { CompendiumConfig, CompendiumConfigSet } from './models';
 
 import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
 import { fuseWithDiffRace } from '../compendium/fusions/smt-nonelem-fusions';
@@ -35,11 +35,16 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
   squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) config: CompendiumConfig, router: Router) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, router: Router) {
     const parts = router.url.split('/');
-    const lang = config.translations.en.includes(parts[1]) ? parts[1] : 'en';
-    const compConfig = lang === 'en' ? config : translateCompConfig(config, lang);
+    const defaultGame = Object.keys(compConfigSet.configs)[0];
+    const enCompConfig =
+      compConfigSet.configs[parts[2] || parts[1]] ||
+      compConfigSet.configs[parts[1]] ||
+      compConfigSet.configs[defaultGame];
+    const lang = enCompConfig.translations.en.includes(parts[1]) ? parts[1] : 'en';
 
+    const compConfig = lang === 'en' ? enCompConfig : translateCompConfig(enCompConfig, lang);
     const fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races);
     const fusionSettings = new FusionSettings(compConfig.demonUnlocks, []);
 

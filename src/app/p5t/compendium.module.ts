@@ -7,7 +7,7 @@ import { FusionDataService } from '../pq2/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from '../pq2/pq-compendium.module';
-import { CompendiumConfig } from '../pq2/models';
+import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -24,7 +24,7 @@ function estimatePrice(stats: number[]) {
   return Math.floor(price);
 }
 
-function createCompConfig(): CompendiumConfig {
+function createCompConfig(): CompendiumConfigSet {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
@@ -65,7 +65,7 @@ function createCompConfig(): CompendiumConfig {
     inheritTypes[elem] = parseInt(inherits, 2);
   }
 
-  return {
+  const compConfig: CompendiumConfig = {
     appTitle: 'Persona 5 Tactica',
     translations: { en: [] },
     lang: 'en',
@@ -73,13 +73,13 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['p5t'],
 
-    skillData: SKILL_DATA_JSON,
+    skillData: [SKILL_DATA_JSON],
     skillElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-    demonData: Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON),
+    demonData: [Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON)],
     baseStats: ['HP', 'MP', 'MD', 'GD'],
     resistElems,
     inheritTypes,
@@ -100,6 +100,12 @@ function createCompConfig(): CompendiumConfig {
     defaultDemon: 'Pixie',
     settingsKey: 'p5t-fusion-tool-settings',
     settingsVersion: 2401131500
+  };
+
+  return {
+    appTitle: 'Persona 5 Tactica',
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    configs: { 'p5t': compConfig }
   };
 }
 

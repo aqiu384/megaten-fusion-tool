@@ -28,7 +28,7 @@ export interface CompendiumConfig extends BaseComp {
   lang: string;
   races: string[];
 
-  skillData;
+  skillData: any[];
   skillElems: string[];
   ailmentElems: string[];
   elemOrder: { [elem: string]: number };
@@ -36,11 +36,11 @@ export interface CompendiumConfig extends BaseComp {
   inheritTypes: { [elem: string]: number };
   inheritElems: string[];
 
-  demonData;
+  demonData: any[];
   baseStats: string[];
   resistElems: string[];
 
-  enemyData;
+  enemyData: any[];
   enemyStats: string[];
 
   demonUnlocks: DemonUnlock[];
@@ -55,4 +55,8 @@ export interface CompendiumConfig extends BaseComp {
   defaultDemon: string;
   settingsKey: string;
   settingsVersion: number;
+}
+
+export interface CompendiumConfigSet extends BaseComp {
+  configs: { [game: string]: CompendiumConfig };
 }

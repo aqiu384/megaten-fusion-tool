@@ -7,7 +7,7 @@ import { FusionDataService } from './fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from './pq-compendium.module';
-import { CompendiumConfig } from './models';
+import { CompendiumConfig, CompendiumConfigSet } from './models';
 import { importSkillRow } from './models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -22,7 +22,7 @@ import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
-function createCompConfig(): CompendiumConfig {
+function createCompConfig(): CompendiumConfigSet {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const costTypes = [1 << 10, (5 << 10) - 1000, (15 << 10) - 2000];
@@ -75,7 +75,7 @@ function createCompConfig(): CompendiumConfig {
     inheritTypes[elem] = parseInt(inherits, 2);
   }
 
-  return {
+  const compConfig: CompendiumConfig = {
     appTitle: 'Persona Q2: New Cinema Labyrinth',
     translations: { en: [] },
     lang: 'en',
@@ -83,20 +83,20 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['pq2'],
 
-    skillData,
+    skillData: [skillData],
     skillElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-    demonData: DEMON_DATA_JSON,
+    demonData: [DEMON_DATA_JSON],
     baseStats: ['HP', 'MP'],
     resistElems,
     inheritTypes,
     inheritElems: COMP_CONFIG_JSON.inheritElems,
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
-    enemyData: ENEMY_DATA_JSON,
+    enemyData: [ENEMY_DATA_JSON],
     enemyStats: ['HP', 'Atk', 'Def'],
 
     normalTable: FUSION_CHART_JSON,
@@ -110,6 +110,12 @@ function createCompConfig(): CompendiumConfig {
     defaultDemon: 'Pixie',
     settingsKey: 'pq2-fusion-tool-settings',
     settingsVersion: 2405151000
+  };
+
+  return {
+    appTitle: 'Persona Q2: New Cinema Labyrinth',
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    configs: { 'pq2': compConfig }
   };
 }
 
