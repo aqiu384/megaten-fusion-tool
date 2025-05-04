@@ -93,6 +93,9 @@ import Translations from '../data/translations.json';
           <td style="width: 50%" *ngIf="recipeRight.length"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
           <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
         </tr>
+        <tr *ngIf="fusionPrereq"><td colspan="2" style="padding: 1em; text-align: center;">
+          {{ msgs.SpecialFusionCondition | translateComp:lang }}: {{ fusionPrereq }}
+        </td></tr>
         <tr><td colspan="2" style="padding: 1em; text-align: center;">
           <ng-container *ngIf="recipe.stepR.length">
             {{ recipeResult.join(' x ') }} = {{ recipe.result }}<br>
@@ -122,6 +125,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   demons: { [race: string]: Demon[] } = {};
   skills: { [elem: string]: Skill[] } = {};
   learnedBy: { [skill: string]: Demon[] } = {};
+  fusionPrereq = '';
   form: FormGroup;
   recipe: FusionRecipe;
   recipeLeft: string[];
@@ -199,6 +203,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     this.recipeRight = this.decodeRecipechain(recipe.chain2, skillRef);
     this.resultSkills = [];
     this.recipeResult = [];
+    this.fusionPrereq = this.compendium.getDemon(recipe.result).prereq || '';
 
     for (const result of recipe.stepR) {
       this.recipeResult.push(skillRef[result] ? `${result} [${skillRef[result].join(', ')}]` : result);
