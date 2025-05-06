@@ -24,20 +24,39 @@ import AFFINITIES_JSON from './data/affinity-bonuses.json';
 import JA_NAMES_JSON from '../smt4/data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
+function updateComputedDemon(entry, skillPrices, compConfig) {
+  const stats = entry.stats;
+  const lvl = Math.floor(entry.lvl);
+  const hp = stats[0] + (lvl - 1) * stats[2];
+  const mp = stats[1] + (lvl - 1) * COMP_CONFIG_JSON.mpGrows[stats[3]]
+  entry.stats = [hp, mp].concat(stats.slice(4));
+
+  const hpPrice = Math.floor((hp / 2) ** 1.5);
+  const mpPrice = Math.floor((mp / 2) ** 1.5);
+  const statPrice = Math.floor((entry.stats.slice(2).reduce((acc, i) => acc + i, 0)) ** 1.5);
+  const baseSkills = Object.keys(entry.skills).filter(s => entry.skills[s] < 2);
+  const skillPrice = baseSkills.reduce((acc, i) => acc + skillPrices[i], 0);
+  const baseResists = entry.resists.split('').map(r => Math.floor(compConfig.resistCodes[r] / 1000));
+  const resistPrice = lvl * baseResists.reduce((acc, i) => acc + compConfig.resistRankPrices[i], 0) ** 2;
+  entry.price = hpPrice + mpPrice + statPrice + skillPrice + resistPrice;
+  entry.price = Math.floor(entry.price / 2);
+}
+
 function createCompConfig(): CompendiumConfig {
   const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
-  const mpGrows = [0, 0, 0, 0, 1, 0, 0, 3, 0, 0, 0, 4, 5]
   const skillData = {};
+  const skillPrices = {};
+
+  for (const { a, b } of Object.values(SKILL_DATA_JSON)) {
+    const rank = b[0] > 900 ? b[0] - 900 : b[0] === 99 ? 0 : b[0];
+    skillPrices[a[0]] = COMP_CONFIG_JSON.skillRankPrices[rank];
+  }
 
   for (const entry of Object.values(DEMON_DATA_JSON)) {
-    const stats = entry.stats;
-    const lvl = Math.floor(entry.lvl) - 1;
-    const hp = stats[0] + lvl * stats[2];
-    const mp = stats[1] + lvl * mpGrows[stats[3]]
-    entry.stats = [hp, mp].concat(stats.slice(4));
+    updateComputedDemon(entry, skillPrices, COMP_CONFIG_JSON);
   }
 
   DEMON_DATA_JSON['Satan'].stats = [1253, 722].concat(DEMON_DATA_JSON['Satan'].stats.slice(2));
