@@ -27,9 +27,9 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
       .sort((a, b) => a.price - b.price)
       .find(t =>
         (canInheritI & (t.d1.inherits | t.d2.inherits)) === canInheritI &&
-        (t.d1.fusion === 'special' || !triExclusiveRaces.includes(t.d1.race)) &&
-        (t.d2.fusion === 'special' || !triExclusiveRaces.includes(t.d2.race)) &&
-        (t.d3.fusion === 'special' || !triExclusiveRaces.includes(t.d3.race))
+        !triExclusiveRaces.includes(t.d1.race) &&
+        !triExclusiveRaces.includes(t.d2.race) &&
+        !triExclusiveRaces.includes(t.d3.race)
       );
     if (trioR) { stepR = [trioR.d1.name, trioR.d2.name, trioR.d3.name]; }
   }
@@ -41,8 +41,10 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
       .sort((a, b) => a.price - b.price)
       .find(p =>
         (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
-        (comp.getDemon(p.name1).fusion === 'normal' || comp.getDemon(p.name1).fusion === 'special') &&
-        (comp.getDemon(p.name2).fusion === 'normal' || comp.getDemon(p.name2).fusion === 'special')
+        comp.getDemon(p.name1).fusion === 'normal' &&
+        comp.getDemon(p.name2).fusion === 'normal' &&
+        !triExclusiveRaces.includes(comp.getDemon(p.name1).race) &&
+        !triExclusiveRaces.includes(comp.getDemon(p.name2).race)
       );
     if (pairR) { stepR = [pairR.name1, pairR.name2]; }
   }
