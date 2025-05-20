@@ -13,7 +13,7 @@ export const SmtFusionTableComponentTemplate = `
     [title]="currentDemon + (msgs.Title | translateComp:lang)"
     [leftHeader]="msgs.LeftHeader | translateComp:lang"
     [rightHeader]="msgs.RightHeader | translateComp:lang"
-    [leftBaseUrl]="'..'"
+    [leftBaseUrl]="'../..'"
     [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
     [rowData]="fusionPairs">
   </app-fusion-pair-table>
