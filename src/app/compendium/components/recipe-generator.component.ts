@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
+import { skillLevelToShortString } from '../pipes';
 import { Demon, Skill, FusionRecipe, Compendium, SquareChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { createSkillsRecipe } from '../models/recipe-generator';
 import Translations from '../data/translations.json';
@@ -195,7 +196,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     for (const [skill, demon] of Object.entries(recipe.skills)) {
       if (!skillRef[demon]) { skillRef[demon] = []; }
       const slvl = this.compendium.getDemon(demon).skills[skill];
-      skillRef[demon].push(skill + (slvl >= 2 ? ` (${slvl})` : ''));
+      skillRef[demon].push(`${skill} ${skillLevelToShortString(slvl)}`.trim());
     }
 
     this.recipe = recipe;
@@ -213,7 +214,7 @@ export class RecipeGeneratorComponent implements OnChanges {
       .filter(s => s[1] < 2000)
       .sort((a, b) => a[1] - b[1])
     ) {
-      this.resultSkills.push(skill + (slvl >= 2 ? ` (${slvl})` : ''));
+      this.resultSkills.push(`${skill} ${skillLevelToShortString(slvl)}`.trim());
     }
   }
 

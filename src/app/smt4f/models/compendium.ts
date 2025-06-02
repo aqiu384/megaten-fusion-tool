@@ -146,27 +146,21 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, ojson] of Object.entries(this.compConfig.specialRecipes)) {
-      const nameEntries: string[] = [];
-      const namePairs: NamePair[] = [];
+    for (const [name, ingreds] of Object.entries(this.compConfig.specialRecipes)) {
+      specialRecipes[name] = [];
+      specialPairRecipes[name] = [];
 
-      for (const ingred of <string[]>ojson) {
+      for (const ingred of ingreds) {
         if (ingred.includes(' x' )) {
           const [name1, name2] = ingred.split(' x ');
-          namePairs.push({ name1, name2 });
+          specialPairRecipes[name].push({ name1, name2 });
         } else {
-          nameEntries.push(ingred);
+          specialRecipes[name].push(ingred);
         }
       }
 
-      if (nameEntries.length > 0) {
-        specialRecipes[name] = nameEntries;
-      } if (namePairs.length > 0) {
-        specialPairRecipes[name] = namePairs;
-      }
-
       if (demons[name].fusion === 'normal') {
-        demons[name].fusion = 'special';
+        demons[name].fusion = ingreds.length > 0 ? 'special' : 'accident';
       }
     }
 

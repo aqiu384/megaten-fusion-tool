@@ -13,7 +13,6 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import JA_NAMES_JSON from './data/ja-names.json';
@@ -51,10 +50,6 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
-  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    DEMON_DATA_JSON[name].prereq = prereq;
-  }
-
   return {
     appTitle: 'Soul Hackers 2',
     races: COMP_CONFIG_JSON.races,
@@ -71,6 +66,7 @@ function createCompConfig(): CompendiumConfig {
     resistCodes: COMP_CONFIG_JSON.resistCodes,
     affinityBonuses: { costs: [], upgrades: [] },
     lvlModifier: 0.5,
+    hasLightDark: false,
 
     demonData: [DEMON_DATA_JSON],
     evolveData: {},

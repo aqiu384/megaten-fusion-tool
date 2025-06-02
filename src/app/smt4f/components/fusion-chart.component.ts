@@ -36,7 +36,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.lang = this.fusionDataService.compConfig.lang;
-    this.hasLightDark = !this.fusionDataService.compConfig.appCssClasses.includes('sh2');
+    this.hasLightDark = this.fusionDataService.compConfig.hasLightDark;
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(fusionChart => {
         this.changeDetectorRef.markForCheck();

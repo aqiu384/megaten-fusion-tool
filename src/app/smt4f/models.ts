@@ -29,6 +29,7 @@ export interface CompendiumConfig extends BaseComp {
 
   affinityBonuses: { costs: number[][], upgrades: number[][] };
   lvlModifier: number;
+  hasLightDark: boolean;
 
   demonData: any[];
   evolveData;
@@ -38,7 +39,7 @@ export interface CompendiumConfig extends BaseComp {
   demonUnlocks: DemonUnlock[];
   normalTable;
   elementTable;
-  specialRecipes;
+  specialRecipes: { [demon: string]: string[] };
 
   settingsKey: string;
   settingsVersion: number;

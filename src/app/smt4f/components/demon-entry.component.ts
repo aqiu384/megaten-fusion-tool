@@ -29,7 +29,7 @@ import Translations from '../../compendium/data/translations.json';
         [ailmentHeaders]="compConfig.ailmentElems"
         [ailments]="demon.ailments">
       </app-demon-resists>
-      <app-demon-inherits *ngIf="demon.affinities"
+      <app-demon-inherits *ngIf="demon.affinities && demon.affinities.length"
         [lang]="compConfig.lang"
         [hasLvls]="true"
         [inheritHeaders]="compConfig.affinityElems"
@@ -44,7 +44,7 @@ import Translations from '../../compendium/data/translations.json';
             <th>{{ skillMsgs.Cost | translateComp:lang }}</th>
             <th>{{ skillMsgs.Effect | translateComp:lang }}</th>
             <th>{{ skillMsgs.Target| translateComp:lang }}</th>
-            <th>{{ skillMsgs.Rank | translateComp:lang }}</th>
+            <th *ngIf="compConfig.hasLightDark">{{ skillMsgs.Rank | translateComp:lang }}</th>
             <th>Lvl</th>
           </tr>
         </thead>
@@ -55,7 +55,7 @@ import Translations from '../../compendium/data/translations.json';
             <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
             <td>{{ data.skill.effect }} {{ data.upgrade === 0 ? '' : '(' + (data.upgrade > 0 ? '+' : '') + data.upgrade + '%)' }}</td>
             <td>{{ data.skill.target || 'Self' }}</td>
-            <td [style.color]="data.skill.rank !== 99 ? null: 'transparent'">{{ data.skill.rank }}</td>
+            <td *ngIf="compConfig.hasLightDark" [style.color]="data.skill.rank !== 99 ? null: 'transparent'">{{ data.skill.rank }}</td>
             <td>{{ data.skill.level | skillLevelToString }}</td>
           </tr>
           <tr *ngIf="!skillLvls.length">

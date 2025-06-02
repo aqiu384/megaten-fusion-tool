@@ -38,8 +38,8 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
     entry.race = entry.race + ' P';
-    entry.stats = entry.stats.slice(0, 2);
-    entry['lvl'] = 1;
+    entry.stats = entry.stats.slice(0, 2).map(s => s * 10);
+    entry['lvl'] = entry.lvl;
     entry['fusion'] = 'party';
     entry['inherit'] = 'almpp';
     DEMON_DATA_JSON[demon] = entry;

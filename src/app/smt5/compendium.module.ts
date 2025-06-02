@@ -82,6 +82,7 @@ function createCompConfig(): CompendiumConfig {
     resistCodes: COMP_CONFIG_JSON.resistCodes,
     affinityBonuses,
     lvlModifier: 1,
+    hasLightDark: true,
 
     demonData: [DEMON_DATA_JSON],
     evolveData: {},
