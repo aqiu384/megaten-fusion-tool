@@ -1,5 +1,6 @@
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { toMitamaNamePairs } from '../../compendium/models/conversions';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -86,25 +87,15 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, recipe] of Object.entries(this.compConfig.specialRecipes)) {
-      const recipeList = <string[]>recipe;
-      const entryList: string[] = [];
-      const pairList: NamePair[] = [];
-      const entry = demons[name];
+    const elemChart = this.compConfig.elementTable;
+    for (const [mitama, namePairs] of Object.entries(toMitamaNamePairs(elemChart.elems, elemChart.pairs))) {
+      pairRecipes[mitama] = namePairs;
+      demons[mitama].fusion = 'special';
+    }
 
-      entry.fusion = recipeList.length > 1 ? 'special' : 'accident';
-      entryRecipes[name] = entryList;
-      pairRecipes[name] = pairList;
-
-      for (const ingred of recipeList) {
-        if (ingred.includes(' x ')) {
-          const [name1, name2] = ingred.split(' x ');
-          pairList.push({ name1, name2 });
-          entry.fusion = 'special';
-        } else {
-          entryList.push(ingred);
-        }
-      }
+    for (const [name, ingreds] of Object.entries(this.compConfig.specialRecipes)) {
+      entryRecipes[name] = ingreds;
+      demons[name].fusion = ingreds.length > 0 ? 'special' : 'accident';
     }
 
     this.demons = demons;

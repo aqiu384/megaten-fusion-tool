@@ -12,10 +12,10 @@
     "Sylph x Gnome"
   ],
   "pairs": [
-    ["Nigi", "Nigi", "Ara "],
-    ["Nigi", "Ara "],
-    ["Ara "],
-    []
+    ["-"],
+    ["Nigi Mitama", "-"],
+    ["Nigi Mitama", "Nigi Mitama", "-"],
+    ["Ara Mitama",  "Ara Mitama",  "Ara Mitama", "-"]
   ],
   "races": [
     "Deity",
@@ -90,11 +90,11 @@
     [-1,  1,  1,  1,  1,  1,  1,  2,  2,  2]
   ],
   "triples": [
-    ["Saki", "Saki", "Saki", "Saki", "None"],
-    ["Kusi", "Saki", "None", "Kusi"],
-    ["None", "Saki", "Kusi"],
-    ["Kusi", "Kusi"],
-    ["Kusi"],
-    []
+    ["-"],
+    ["Saki Mitama", "-"],
+    ["Saki Mitama", "Kusi Mitama", "-"],
+    ["Saki Mitama", "Saki Mitama", "-",           "-"],
+    ["Saki Mitama", "-",           "Saki Mitama", "Kusi Mitama", "-"],
+    ["-",           "Kusi Mitama", "Kusi Mitama", "Kusi Mitama", "Kusi Mitama", "-"]
   ]
 }

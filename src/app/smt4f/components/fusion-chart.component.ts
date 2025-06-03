@@ -18,7 +18,8 @@ import { FusionDataService } from '../fusion-data.service';
     <app-fusion-chart *ngIf="!hasLightDark"
       [lang]="lang"
       [filterDarks]="false"
-      [normChart]="normChart">
+      [normChart]="normChart"
+      [mitaTable]="mitamaTable">
     </app-fusion-chart>
   `
 })
@@ -27,6 +28,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   normChart: FusionChart;
   hasLightDark: boolean;
+  mitamaTable: string[][];
   lang = 'en';
 
   constructor(
@@ -35,8 +37,10 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.lang = this.fusionDataService.compConfig.lang;
-    this.hasLightDark = this.fusionDataService.compConfig.hasLightDark;
+    const compConfig = this.fusionDataService.compConfig;
+    this.lang = compConfig.lang;
+    this.mitamaTable = compConfig.elementTable.pairs || null;
+    this.hasLightDark = compConfig.hasLightDark;
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(fusionChart => {
         this.changeDetectorRef.markForCheck();

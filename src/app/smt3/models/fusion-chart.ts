@@ -13,6 +13,7 @@ export class FusionChart extends SmtFusionChart {
 
   lvlModifier = 1;
   races: string[];
+  mitamaTable: string[][];
   elementDemons = ElementDemons;
   chartSettings: { [name: string]: boolean } = Object.assign({}, FusionChart.CHART_SETTINGS);
 
@@ -56,6 +57,7 @@ export class FusionChart extends SmtFusionChart {
     const elemTable: number[][] = ELEMENT_CHART_JSON['table'];
 
     this.races = normRaces;
+    this.mitamaTable = ELEMENT_CHART_JSON.pairs;
 
     this.normalFusionChart = SmtFusionChart.loadFusionTableJson(normRaces, normTable);
     this.normalFissionChart = SmtFusionChart.loadFissionTableJson(normRaces, elems, normTable);

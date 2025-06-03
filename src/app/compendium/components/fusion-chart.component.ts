@@ -139,7 +139,7 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
         if (isElemT && isElemR) {
           const indexR = elems.indexOf(raceR);
           const indexT = elems.indexOf(raceT);
-          const result = this.mitaTable[indexR][indexT - indexR - 1];
+          const result = this.mitaTable[indexT][indexR].replace('-', '');
           row[c + 1] = result ? (colorLook[result] || 'norm') + result : noResult;
         } else if (isElemT && raceR) {
           const result = this.normChart.getElemFusions(raceT)[raceR];

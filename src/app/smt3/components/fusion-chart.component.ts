@@ -17,12 +17,7 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class FusionChartContainerComponent implements OnInit, OnDestroy {
   isCursed = false;
-  mitaTable = [
-    ['Nigi', 'Ara ', 'Kusi'],
-            ['Kusi', 'Ara '],
-                    ['Saki'],
-                          []
-  ];
+  mitaTable: string[][];
 
   subscriptions: Subscription[] = [];
   normChart: FusionChart;
@@ -39,6 +34,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
         this.changeDetectorRef.markForCheck();
         this.isCursed = fusionChart.isCursed;
         this.normChart = fusionChart;
+        this.mitaTable = fusionChart.mitamaTable;
       }));
   }
 

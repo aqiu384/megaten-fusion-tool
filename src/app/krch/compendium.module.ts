@@ -79,7 +79,6 @@ function createCompConfig(): CompendiumConfigSet {
         skillData: [SKILL_DATA_JSON],
         normalTable: FUSION_CHART_JSON,
         elementTable: { elems: [], races: [], table: [] },
-        mitamaTable: [],
         specialRecipes: SPECIAL_RECIPES_JSON,
         isDesu: false
       }

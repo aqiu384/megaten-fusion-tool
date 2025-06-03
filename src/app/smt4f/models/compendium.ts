@@ -1,6 +1,7 @@
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Toggles } from '../../compendium/models/fusion-settings';
+import { toMitamaNamePairs } from '../../compendium/models/conversions';
 
 type NumDict = { [name: string]: number };
 type StringDict = { [name: string]: string };
@@ -146,18 +147,14 @@ export class Compendium implements ICompendium {
       }
     }
 
-    for (const [name, ingreds] of Object.entries(this.compConfig.specialRecipes)) {
-      specialRecipes[name] = [];
-      specialPairRecipes[name] = [];
+    const elemChart = this.compConfig.elementTable;
+    for (const [mitama, namePairs] of Object.entries(toMitamaNamePairs(elemChart.elems, elemChart.pairs))) {
+      specialPairRecipes[mitama] = namePairs;
+      demons[mitama].fusion = 'special';
+    }
 
-      for (const ingred of ingreds) {
-        if (ingred.includes(' x' )) {
-          const [name1, name2] = ingred.split(' x ');
-          specialPairRecipes[name].push({ name1, name2 });
-        } else {
-          specialRecipes[name].push(ingred);
-        }
-      }
+    for (const [name, ingreds] of Object.entries(this.compConfig.specialRecipes)) {
+      specialRecipes[name] = ingreds;
 
       if (demons[name].fusion === 'normal') {
         demons[name].fusion = ingreds.length > 0 ? 'special' : 'accident';

@@ -10,14 +10,14 @@
     "Erthys"
   ],
   "pairs": [
-    ["Herald", "Fury", "Avatar", "Fallen", "Divine", "Fallen", "Holy"],
-    ["Megami", "Lady", "Divine", "Femme", "Yoma", "Snake"],
-    ["Dragon", "Fallen", "Yoma", "Avian", "Night"],
-    ["Brute", "Femme", "Night", "Jirae"],
-    ["Divine", "Yoma", "Beast"],
-    ["Fairy", "Jirae"],
-    ["Fairy"],
-    []
+    ["-"],
+    ["Herald", "-"],
+    ["Fury",   "Megami", "-"],
+    ["Avatar", "Lady",   "Dragon", "-"],
+    ["Fallen", "Divine", "Fallen", "Brute",  "-"],
+    ["Divine", "Femme",  "Yoma",   "Femme",  "Divine", "-"],
+    ["Fallen", "Yoma",   "Avian",  "Night",  "Yoma",   "Fairy",  "-"],
+    ["Holy",   "Snake",  "Night",  "Jirae",  "Beast",  "Jirae",  "Fairy",  "-"]
   ],
   "races": [
     "Deity",

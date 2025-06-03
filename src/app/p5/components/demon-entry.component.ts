@@ -6,9 +6,8 @@ import { Subscription } from 'rxjs';
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium, } from '../models/compendium';
 
-import { FusionChart, MultiFusionPair } from '../../compendium/models';
+import { FusionChart } from '../../compendium/models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
-import { splitWithTreasure } from 'src/app/compendium/fusions/per-nonelem-fissions';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({

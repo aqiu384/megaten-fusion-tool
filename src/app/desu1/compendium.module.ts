@@ -27,12 +27,6 @@ function createCompConfig(): CompendiumConfigSet {
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const compConfigs: { [game: string]: CompendiumConfig } = {};
   const skillData = [];
-  const MITAMA_TABLE = [
-    ['Nigi', 'Ara ', 'Kusi'],
-    ['Kusi', 'Ara '],
-    ['Saki'],
-    []
-  ];
 
   const COST_HP = 2 << 10;
   const COST_MP = (3 << 10) - 1000;
@@ -85,7 +79,6 @@ function createCompConfig(): CompendiumConfigSet {
       skillData: skillData.slice(0, 1),
       normalTable: FUSION_CHART_JSON,
       elementTable: ELEMENT_CHART_JSON,
-      mitamaTable: MITAMA_TABLE,
       specialRecipes: SPECIAL_RECIPES_JSON,
       isDesu: true
     }

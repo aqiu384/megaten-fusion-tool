@@ -60,7 +60,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
 
     for (let i = 0; i < elemRaces.length; i++) {
       const raceA = elemRaces[i];
-      table.push(elemRaces.slice(i + 1, elemRaces.length).map(raceB => this.normChart.getRaceFusion(raceA, raceB)));
+      table.push(elemRaces.slice(0, i + 1).map(raceB => this.normChart.getRaceFusion(raceA, raceB)));
     }
 
     this.mitaTable = table;

@@ -1,4 +1,7 @@
-import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp, FusionCalculator } from '../compendium/models';
+import {
+  Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp,
+  FusionCalculator, NormalFusionTable, ElementFusionTable
+} from '../compendium/models';
 
 export interface Demon extends BaseDemon {
   person: string;
@@ -24,10 +27,9 @@ export interface CompendiumConfig extends BaseComp {
 
   demonData: any[];
   skillData: any[];
-  normalTable: { races: string[]; table: string[][]; };
-  elementTable: { elems: string[]; races: string[]; table: number[][] };
-  mitamaTable: string[][];
-  specialRecipes: any;
+  normalTable: NormalFusionTable;
+  elementTable: ElementFusionTable;
+  specialRecipes: { [demon: string]: string[] };
   isDesu: boolean;
 }
 

@@ -25,7 +25,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   ngOnInit() {
     const compConfig = this.fusionDataService.compConfig;
     this.appName = compConfig.appTitle;
-    this.mitamaTable = compConfig.mitamaTable;
+    this.mitamaTable = compConfig.elementTable.pairs || null;
 
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(chart => {

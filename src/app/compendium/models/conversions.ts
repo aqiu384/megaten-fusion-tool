@@ -62,3 +62,18 @@ export function toDemonTrioResult(names: NameTrio, compendium: Compendium): Demo
     d1, d2, d3
   };
 }
+
+export function toMitamaNamePairs(elemDemons: string[], mitamaTable: string[][]): { [mitama: string]: NamePair[] } {
+  const namePairs: { [mitama: string]: NamePair[] } = {};
+  if (!mitamaTable) { return namePairs; }
+
+  for (let i = 0; i < mitamaTable.length; i++) {
+    for (let j = 0; j < mitamaTable[i].length - 1; j++) {
+      const nameR = mitamaTable[i][j];
+      if (!namePairs[nameR]) { namePairs[nameR] = []; }
+      namePairs[nameR].push({ name1: elemDemons[j], name2: elemDemons[i] });
+    }
+  }
+
+  return namePairs;
+}

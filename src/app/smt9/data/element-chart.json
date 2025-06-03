@@ -12,10 +12,10 @@
     "Aeros x Erthys"
   ],
   "pairs": [
-    ["Angel", "Apsaras", "Cu Sith"],
-    ["Jack Frost", "Sudama"],
-    ["Nozuchi"],
-    []
+    ["-"],
+    ["Angel", "-"],
+    ["Apsaras", "Jack Frost", "-"],
+    ["Cu Sith", "Sudama", "Nozuchi", "-"]
   ],
   "races": [
     "Deity",
@@ -78,11 +78,11 @@
     [ 1,  1, -1, -1,  2,  1,  1,  1,  1, -1]
   ],
   "triples": [
-    ["Genbu", "Byakko", "Genbu", "Byakko", "None"],
-    ["Seiryu", "Genbu", "None", "Seiryu"],
-    ["None", "Byakko", "Seiryu"],
-    ["Suzaku", "Suzaku"],
-    ["Suzaku"],
-    []
+    ["-"],
+    ["Genbu",  "-"],
+    ["Byakko", "Seiryu", "-"],
+    ["Genbu",  "Genbu",  "-",      "-"],
+    ["Byakko", "-",      "Byakko", "Suzaku", "-"],
+    ["-",      "Seiryu", "Seiryu", "Suzaku", "Suzaku", "-"]
   ]
 }

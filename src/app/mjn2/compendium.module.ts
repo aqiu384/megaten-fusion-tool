@@ -59,7 +59,12 @@ function createCompConfig(): CompendiumConfig {
   }
 
   const ELEMENTS = ['Salamander', 'Undine', 'Sylph', 'Gnome'];
-  const ELEM_PAIRS = [ ['Mou-Ryo', 'Black Ooze', 'Slime'], ['Mou-Ryo', 'Black Ooze'], ['Mou-Ryo'], [] ];
+  const ELEM_PAIRS = [
+    ['-'],
+    ['Mou-Ryo', '-'],
+    ['Black Ooze', 'Mou-Ryo', '-'],
+    ['Slime', 'Black Ooze', 'Mou-Ryo', '-']
+  ];
   const ELEM_TABLE = [];
 
   for (const row of FUSION_CHART_JSON.table) {

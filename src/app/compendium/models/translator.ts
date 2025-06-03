@@ -70,6 +70,10 @@ export function translateFusionChart(oldChart: any, enNames: StringDict): any {
     newChart['table'] = oldChart['table'];
   }
 
+  if (oldChart['pairs']) {
+    newChart['pairs'] = oldChart['pairs'].map(row => row.map(race => enNames[race] || race))
+  }
+
   return newChart;
 }
 

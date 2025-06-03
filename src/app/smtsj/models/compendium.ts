@@ -1,12 +1,14 @@
 import { Races, SkillElementOrder, ResistCodes, Ailments } from './constants';
 import { Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { toMitamaNamePairs } from '../../compendium/models/conversions';
 
 import DEMON_DATA_JSON from '../data/demon-data.json';
 import SKILL_DATA_JSON from '../data/skill-data.json';
 import BOSS_DATA_JSON from '../data/boss-data.json';
 import FUSION_PREREQS_JSON from '../data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from '../data/special-recipes.json';
+import ELEMENT_CHART_JSON from '../data/element-chart.json';
 
 import REDUX_DEMON_DATA_JSON from '../data/redux-demon-data.json';
 import REDUX_FUSION_PREREQS_JSON from '../data/redux-fusion-prereqs.json';
@@ -202,25 +204,16 @@ export class Compendium implements ICompendium {
       }
     }
 
+    for (const [mitama, namePairs] of Object.entries(toMitamaNamePairs(ELEMENT_CHART_JSON.elems, ELEMENT_CHART_JSON.pairs))) {
+      pairRecipes[mitama] = namePairs;
+      demons[mitama].fusion = 'special';
+    }
+
     for (const specialRecipesJson of specialRecipesJsons) {
       for (const [name, recipe] of Object.entries(specialRecipesJson)) {
         const recipeList = <string[]>recipe;
-        const entryList: string[] = [];
-        const pairList: NamePair[] = [];
-        const entry = demons[name];
-
-        entry.fusion = recipeList.length > 1 ? 'special' : 'accident';
-        entryRecipes[name] = entryList;
-        pairRecipes[name] = pairList;
-
-        for (const ingred of recipeList) {
-          if (ingred.includes(' x ')) {
-            const [name1, name2] = ingred.split(' x ');
-            pairList.push({ name1, name2 });
-          } else {
-            entryList.push(ingred);
-          }
-        }
+        demons[name].fusion = recipeList.length > 1 ? 'special' : 'accident';
+        entryRecipes[name] = recipeList;
       }
     }
 
