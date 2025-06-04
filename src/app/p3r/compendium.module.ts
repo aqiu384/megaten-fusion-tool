@@ -19,7 +19,6 @@ import ENEMY_DATA_JSON from './data/enemy-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 
 import AEG_DEMON_DATA_JSON from './data/aeg-demon-data.json';
 import AEG_PARTY_DATA_JSON from './data/aeg-party-data.json'
@@ -33,8 +32,7 @@ function createCompConfig(): CompendiumConfigSet {
   const costTypes = [2 << 10, (5 << 10) - 1000, (19 << 10) - 2001];
   const races = [];
   const allRaces = [];
-  const inheritTypes: { [elem: string]: number } = {};
-  const demonDatas = [];
+  const inheritTypes: { [elem: string]: number[] } = {};
   const enemyDatas = [];
   const skillDatas = [];
   const compConfigs: { [game: string]: CompendiumConfig } = {};
@@ -54,11 +52,11 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   const gameDataSets = [
-    [DEMON_DATA_JSON, PARTY_DATA_JSON, FUSION_PREREQS_JSON],
-    [AEG_DEMON_DATA_JSON, AEG_PARTY_DATA_JSON, {}]
+    [DEMON_DATA_JSON, PARTY_DATA_JSON],
+    [AEG_DEMON_DATA_JSON, AEG_PARTY_DATA_JSON]
   ]
 
-  for (const [demons, parties, prereqs] of gameDataSets) {
+  for (const [demons, parties] of gameDataSets) {
     Object.assign(demons, parties);
     const estimatePrice = (stats: number[]) => 2000 + stats.reduce((acc, x) => acc + x, 0) ** 2;
 
@@ -71,12 +69,6 @@ function createCompConfig(): CompendiumConfigSet {
       demon['fusion'] = 'party';
       demon['price'] = estimatePrice(demon['stats']);
     }
-
-    for (const [name, prereq] of Object.entries(prereqs)) {
-      demons[name]['prereq'] = prereq;
-    }
-
-    demonDatas.push(demons);
   }
 
   for (const enemies of [ENEMY_DATA_JSON, AEG_ENEMY_DATA_JSON]) {
@@ -99,7 +91,7 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
-    inheritTypes[elem] = parseInt(inherits, 2);
+    inheritTypes[elem] = inherits.split('').map(n => n === '1' ? 1 : 0);
   }
 
   for (const game of ['p3r', 'p3e']) {
@@ -117,7 +109,7 @@ function createCompConfig(): CompendiumConfigSet {
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-      demonData: demonDatas.slice(0, 1),
+      demonData: [DEMON_DATA_JSON],
       baseStats: COMP_CONFIG_JSON.baseStats,
       resistElems,
       inheritTypes,
@@ -133,6 +125,8 @@ function createCompConfig(): CompendiumConfigSet {
       hasSkillRanks: true,
       hasEnemies: true,
       hasQrcodes: false,
+      hasSkillCards: true,
+      hasManualInheritance: true,
       specialRecipes: SPECIAL_RECIPES_JSON,
 
       defaultDemon: 'Pixie',
@@ -143,7 +137,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   compConfigs.p3e.appTitle = 'Persona 3 Reload: Episode Aigis';
   compConfigs.p3e.settingsKey = 'p3e-fusion-tool-settings';
-  compConfigs.p3e.demonData = demonDatas.slice(1, 2);
+  compConfigs.p3e.demonData = [AEG_DEMON_DATA_JSON];
   compConfigs.p3e.skillData = skillDatas.slice(0, 2);
   compConfigs.p3e.enemyData = enemyDatas.slice(1, 2);
   compConfigs.p3e.demonUnlocks = AEG_DEMON_UNLOCKS_JSON;

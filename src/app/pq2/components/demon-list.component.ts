@@ -15,6 +15,7 @@ import Translations from  '../../compendium/data/translations.json';
     <app-smt-demon-list
       [lang]="compConfig.lang"
       [isEnemy]="showEnemies"
+      [hasCurrLvl]="!showEnemies && compConfig.hasTripleFusion"
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"

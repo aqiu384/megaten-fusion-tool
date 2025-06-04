@@ -14,7 +14,6 @@ import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
@@ -28,7 +27,7 @@ function createCompConfig(): CompendiumConfigSet {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
-  const inheritTypes: { [elem: string]: number } = {};
+  const inheritTypes: { [elem: string]: number[] } = {};
 
   for(const race of COMP_CONFIG_JSON.races) {
     races.push(race);
@@ -50,10 +49,6 @@ function createCompConfig(): CompendiumConfigSet {
     demon['price'] = estimatePrice(demon.stats);
   }
 
-  for (const [dname, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    DEMON_DATA_JSON[dname]['prereq'] = prereq;
-  }
-
   const COST_MP = 3 << 10;
 
   for (const skill of Object.values(SKILL_DATA_JSON)) {
@@ -62,7 +57,7 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
-    inheritTypes[elem] = parseInt(inherits, 2);
+    inheritTypes[elem] = inherits.split('').map(n => n === '1' ? 1 : 0);
   }
 
   const compConfig: CompendiumConfig = {
@@ -95,6 +90,8 @@ function createCompConfig(): CompendiumConfigSet {
     hasSkillRanks: false,
     hasEnemies: false,
     hasQrcodes: false,
+    hasSkillCards: false,
+    hasManualInheritance: true,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     defaultDemon: 'Pixie',

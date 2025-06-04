@@ -3,8 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
-import { Demon } from '../models';
-import { CompendiumConfig } from '../models';
+import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
@@ -29,12 +28,13 @@ import { FusionDataService } from '../fusion-data.service';
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-inherits
-        [lang]="lang"
+        [hasChance]="!compConfig.hasManualInheritance"
         [inheritHeaders]="compConfig.inheritElems"
-        [inherits]="compendium.getInheritElems(demon.inherits)">
+        [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-skills
         [lang]="lang"
+        [hasRank]="compConfig.hasSkillRanks"
         [hasTarget]="true"
         [elemOrder]="compConfig.elemOrder"
         [compendium]="compendium"

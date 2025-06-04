@@ -38,6 +38,8 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     hasSkillRanks: compConfig.hasSkillRanks,
     hasEnemies: compConfig.hasEnemies,
     hasQrcodes: compConfig.hasQrcodes,
+    hasSkillCards: compConfig.hasSkillCards,
+    hasManualInheritance: compConfig.hasManualInheritance,
     specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, langNames),
 
     defaultDemon: translate(compConfig.defaultDemon),

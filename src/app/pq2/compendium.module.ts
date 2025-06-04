@@ -16,7 +16,6 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import FUSION_CHART_JSON from '../pq/data/fusion-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import PARTY_DATA_JSON from './data/party-data.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
@@ -29,7 +28,7 @@ function createCompConfig(): CompendiumConfigSet {
   const races = [];
   const skillData = {};
   const enemyData = {};
-  const inheritTypes: { [elem: string]: number } = {};
+  const inheritTypes: { [elem: string]: number[] } = {};
 
   for (const race of COMP_CONFIG_JSON.races) {
     races.push(race);
@@ -69,12 +68,8 @@ function createCompConfig(): CompendiumConfigSet {
     if (enemy['race'] !== 'Boss') { enemyData[name] = enemy; }
   }
 
-  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    DEMON_DATA_JSON[name]['prereq'] = prereq;
-  }
-
   for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
-    inheritTypes[elem] = parseInt(inherits, 2);
+    inheritTypes[elem] = inherits.split('').map(n => n === '1' ? 1 : 0);
   }
 
   const compConfig: CompendiumConfig = {
@@ -107,6 +102,8 @@ function createCompConfig(): CompendiumConfigSet {
     hasSkillRanks: false,
     hasEnemies: true,
     hasQrcodes: true,
+    hasSkillCards: true,
+    hasManualInheritance: true,
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     defaultDemon: 'Pixie',

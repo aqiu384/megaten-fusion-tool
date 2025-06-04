@@ -33,7 +33,7 @@ export interface CompendiumConfig extends BaseComp {
   ailmentElems: string[];
   elemOrder: { [elem: string]: number };
   resistCodes: { [code: string]: number };
-  inheritTypes: { [elem: string]: number };
+  inheritTypes: { [elem: string]: number[] };
   inheritElems: string[];
 
   demonData: any[];
@@ -50,6 +50,8 @@ export interface CompendiumConfig extends BaseComp {
   hasSkillRanks: boolean;
   hasEnemies: boolean;
   hasQrcodes: boolean;
+  hasSkillCards: boolean;
+  hasManualInheritance: boolean;
   specialRecipes?;
 
   defaultDemon: string;
