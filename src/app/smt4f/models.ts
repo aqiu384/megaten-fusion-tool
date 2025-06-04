@@ -49,3 +49,7 @@ export interface CompendiumConfig extends BaseComp {
   defaultRecipeDemon: string;
   elementRace: string;
 }
+
+export interface CompendiumConfigSet extends BaseComp {
+  configs: { [game: string]: CompendiumConfig };
+}

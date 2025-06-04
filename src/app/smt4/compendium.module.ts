@@ -7,7 +7,7 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
-import { CompendiumConfig } from '../smt4f/models';
+import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
 import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -41,7 +41,7 @@ function updateComputedDemon(entry, skillPrices, compConfig) {
   entry.price = Math.floor(entry.price / 2);
 }
 
-function createCompConfig(): CompendiumConfig {
+function createCompConfig(): CompendiumConfigSet {
   const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const skillData = {};
@@ -86,7 +86,7 @@ function createCompConfig(): CompendiumConfig {
     DEMON_DATA_JSON[name].fusion = prereq.includes('Fusion Accident') ? 'accident' : 'normal';
   }
 
-  return {
+  const compConfig: CompendiumConfig = {
     appTitle: 'Shin Megami Tensei IV',
     races: COMP_CONFIG_JSON.races,
     raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
@@ -120,7 +120,13 @@ function createCompConfig(): CompendiumConfig {
     settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
-  }
+  };
+
+  return {
+    appTitle: 'Shin Megami Tensei IV',
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    configs: { 'smt4': compConfig }
+  };
 }
 
 const SMT_COMP_CONFIG = createCompConfig();

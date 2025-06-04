@@ -6,7 +6,7 @@ import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
-import { CompendiumConfig } from './models';
+import { CompendiumConfig, CompendiumConfigSet } from './models';
 import { FusionSettings } from '../compendium/models/fusion-settings';
 import { translateComp } from '../compendium/models/translator';
 import Translations from  '../compendium/data/translations.json';
@@ -18,10 +18,16 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   compConfig: CompendiumConfig;
   appName: string;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) config: CompendiumConfig, router: Router) {
+  constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, router: Router) {
     const parts = router.url.split('/');
-    const lang = config.translations.en.includes(parts[1]) ? parts[1] : 'en';
-    const compConfig = lang === 'en' ? config : translateCompConfig(config, lang);
+    const defaultGame = Object.keys(compConfigSet.configs)[0];
+    const enCompConfig =
+      compConfigSet.configs[parts[2] || parts[1]] ||
+      compConfigSet.configs[parts[1]] ||
+      compConfigSet.configs[defaultGame];
+    const lang = enCompConfig.translations.en.includes(parts[1]) ? parts[1] : 'en';
+
+    const compConfig = lang === 'en' ? enCompConfig : translateCompConfig(enCompConfig, lang);
     const fusionSettings = new FusionSettings(compConfig.demonUnlocks, []);
 
     super(

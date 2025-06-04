@@ -7,7 +7,7 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
-import { CompendiumConfig } from '../smt4f/models';
+import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
@@ -18,7 +18,7 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import JA_NAMES_JSON from './data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
-function createCompConfig(): CompendiumConfig {
+function createCompConfig(): CompendiumConfigSet {
   const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
@@ -50,7 +50,7 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
-  return {
+  const compConfig: CompendiumConfig = {
     appTitle: 'Soul Hackers 2',
     races: COMP_CONFIG_JSON.races,
     raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
@@ -84,7 +84,13 @@ function createCompConfig(): CompendiumConfig {
     settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
-  }
+  };
+
+  return {
+    appTitle: 'Soul Hackers 2',
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    configs: { 'sh2': compConfig }
+  };
 }
 
 const SMT_COMP_CONFIG = createCompConfig();

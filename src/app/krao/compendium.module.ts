@@ -7,7 +7,7 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
-import { CompendiumConfig } from '../smt4f/models';
+import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
@@ -22,7 +22,7 @@ function estimateKuzuPrice(stats: number[]): number {
   return Math.floor(Math.pow(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0), 2) / 20);
 }
 
-function createCompConfig(): CompendiumConfig {
+function createCompConfig(): CompendiumConfigSet {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const demonData = {};
 
@@ -67,7 +67,7 @@ function createCompConfig(): CompendiumConfig {
     demonData[name].fusion = 'accident';
   }
 
-  return {
+  const compConfig: CompendiumConfig = {
     appTitle: 'Raidou Kuzunoha vs. King Abaddon',
     races: COMP_CONFIG_JSON.races,
     raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
@@ -101,7 +101,13 @@ function createCompConfig(): CompendiumConfig {
     settingsVersion: 2401131500,
     defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
-  }
+  };
+
+  return {
+    appTitle: 'Raidou Kuzunoha vs. King Abaddon',
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    configs: { 'krao': compConfig }
+  };
 }
 
 const SMT_COMP_CONFIG = createCompConfig();

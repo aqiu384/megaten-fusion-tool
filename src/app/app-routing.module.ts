@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   { path: 'smt4',   loadChildren: () => import('./smt4/compendium.module').then(m => m.CompendiumModule) },
   { path: 'smt4f',  loadChildren: () => import('./smt4f/compendium.module').then(m => m.CompendiumModule) },
   { path: 'smt5',   loadChildren: () => import('./smt5/compendium.module').then(m => m.CompendiumModule) },
-  { path: 'smt5v',  loadChildren: () => import('./smt5v/compendium.module').then(m => m.CompendiumModule) },
+  { path: 'smt5v',  loadChildren: () => import('./smt5/compendium.module').then(m => m.CompendiumModule) },
   { path: 'dsum',   loadChildren: () => import('./dsum/compendium.module').then(m => m.CompendiumModule) },
   { path: 'dssh',   loadChildren: () => import('./dssh/compendium.module').then(m => m.CompendiumModule) },
   { path: 'krch',   loadChildren: () => import('./krch/compendium.module').then(m => m.CompendiumModule) },

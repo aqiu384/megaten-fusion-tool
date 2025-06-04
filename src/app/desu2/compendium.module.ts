@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumConfig, CompendiumConfigSet } from '../krch/models';
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { CompendiumRoutingModule } from '../smt4f/compendium-routing.module';
+import { FusionDataService } from '../smt4f/fusion-data.service';
+
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
+import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
+import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
 import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -11,16 +15,18 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from '../desu1/data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/van-special-recipes.json';
 import REC_SPECIAL_RECIPES_JSON from './data/rec-special-recipes.json';
-import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 
 import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
+import VAN_DEMON_UNLOCKS_JSON from './data/van-demon-unlocks.json';
 import REC_DEMON_DATA_JSON from './data/rec-demon-data.json';
 import REC_SKILL_DATA_JSON from './data/rec-skill-data.json';
+import REC_DEMON_UNLOCKS_JSON from './data/rec-demon-unlocks.json';
 
-import { FusionDataService } from '../krch/fusion-data.service';
-import { SmtKuzuCompendiumModule } from '../krch/smt-kuzu-compendium.module';
-import { CompendiumRoutingModule } from '../krch/compendium-routing.module';
+function estimateDesuPrice(stats: number[]): number {
+  const x = stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0);
+  return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
+}
 
 function createCompConfig(): CompendiumConfigSet {
   const races = COMP_CONFIG_JSON.races;
@@ -38,13 +44,13 @@ function createCompConfig(): CompendiumConfigSet {
     skillData.push(gameSkills);
 
     for (const row of Object.values(skillJson)) {
-      const { a: [sname, elem, target], b: nums, c: descs } = row;
+      const { a: [sname, element, target], b: nums, c: descs } = row;
       const [rank, cost] = nums.slice(0, 2);
       const card = descs[2];
 
       if (rskillLookup[card]) { rskillLookup[card].push(sname); }
       gameSkills[sname] = {
-        elem,
+        element,
         rank,
         target: target === '-' ? 'Self' : target,
         cost: cost ? cost + (cost > 1000 ? COST_MP : COST_HP) : 0,
@@ -55,6 +61,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const dataJson of [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON]) {
     for (const entry of Object.values(dataJson)) {
+      entry['price'] = estimateDesuPrice(entry['stats']) / 2;
       entry['skills'] = Object.assign({}, entry['command'] || {}, entry['passive'] || {});
 
       if (rskillLookup[entry.race]?.length === 2) {
@@ -67,12 +74,6 @@ function createCompConfig(): CompendiumConfigSet {
         }
       }
     }
-
-    for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-      if (dataJson[name]) {
-        dataJson[name]['prereq'] = prereq
-      }
-    }
   }
 
   for (const [name, entry] of Object.entries(SPECIAL_RECIPES_JSON)) {
@@ -82,33 +83,47 @@ function createCompConfig(): CompendiumConfigSet {
   for (const game of ['ds2', 'ds2br']) {
     compConfigs[game] = {
       appTitle: 'Devil Survivor 2',
-      appCssClasses: ['kuzu', 'ds2'],
+      races: COMP_CONFIG_JSON.races,
+      raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+      appCssClasses: ['smt4', 'ds2'],
 
-      races,
-      resistElems,
+      lang: 'en',
+      translations: { en: ['ja'] },
+      affinityElems: [],
+      skillData: skillData.slice(0, 1),
+      fusionSpells: {},
       skillElems,
-      baseStats: COMP_CONFIG_JSON.baseStats,
-      fusionLvlMod: 0.5,
+      elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
       resistCodes: COMP_CONFIG_JSON.resistCodes,
-
-      raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-      elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-      fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
-      fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
+      affinityBonuses: { costs: [], upgrades: [] },
+      lvlModifier: 0.5,
+      hasLightDark: false,
 
       demonData: [VAN_DEMON_DATA_JSON],
-      skillData: skillData.slice(0, 1),
+      evolveData: {},
+      alignments: {},
+      baseStats: COMP_CONFIG_JSON.baseStats,
+      resistElems: COMP_CONFIG_JSON.resistElems,
+      ailmentElems: [],
+
+      demonUnlocks: VAN_DEMON_UNLOCKS_JSON,
       normalTable: FUSION_CHART_JSON,
       elementTable: ELEMENT_CHART_JSON,
       specialRecipes: SPECIAL_RECIPES_JSON,
-      isDesu: true
-    }
+
+      settingsKey: 'ds2-fusion-tool-settings',
+      settingsVersion: 2401131500,
+      defaultRecipeDemon: 'Pixie',
+      elementRace: 'Element'
+    };
   }
 
   compConfigs.ds2br.appTitle = 'Devil Survivor 2 Record Breaker';
+  compConfigs.ds2br.settingsKey = 'ds2br-fusion-tool-settings';
   compConfigs.ds2br.demonData = [VAN_DEMON_DATA_JSON, REC_DEMON_DATA_JSON];
   compConfigs.ds2br.skillData = skillData;
   compConfigs.ds2br.specialRecipes = REC_SPECIAL_RECIPES_JSON;
+  compConfigs.ds2br.demonUnlocks = VAN_DEMON_UNLOCKS_JSON.concat(<[]>REC_DEMON_UNLOCKS_JSON);
 
   return {
     appTitle: 'Devil Survivor 2',
@@ -122,7 +137,7 @@ const SMT_COMP_CONFIG = createCompConfig();
 @NgModule({
   imports: [
     CommonModule,
-    SmtKuzuCompendiumModule,
+    Smt4CompendiumModule,
     CompendiumRoutingModule
   ],
   providers: [
