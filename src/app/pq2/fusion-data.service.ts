@@ -14,9 +14,14 @@ import {
 } from '../compendium/constants';
 import { CompendiumConfig, CompendiumConfigSet } from './models';
 
-import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
-import { fuseWithDiffRace } from '../compendium/fusions/smt-nonelem-fusions';
+import { fuseWithDiffRace, fuseWithElement } from '../compendium/fusions/smt-nonelem-fusions';
+import { fuseWithSameRace } from '../compendium/fusions/per-nonelem-fusions';
+import { fuseWithNormResult, fuseWithSpecResult } from '../compendium/fusions/smt-element-fusions';
+import { fuseTwoElements } from '../compendium/fusions/per-element-fusions';
 import { splitWithDiffRace } from '../compendium/fusions/smt-nonelem-fissions';
+import { splitWithSameRace } from '../compendium/fusions/per-nonelem-fissions';
+
+import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
 import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
 import { FusionSettings } from '../compendium/models/fusion-settings';
 import { translateCompConfig } from './models/translator';
@@ -45,7 +50,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
     const lang = enCompConfig.translations.en.includes(parts[1]) ? parts[1] : 'en';
 
     const compConfig = lang === 'en' ? enCompConfig : translateCompConfig(enCompConfig, lang);
-    const fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races);
+    const fusionChart = new PersonaFusionChart(compConfig.normalTable, compConfig.elementTable);
     const fusionSettings = new FusionSettings(compConfig.demonUnlocks, []);
 
     super(
@@ -59,7 +64,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle + ' Fusion Calculator';
 
-    this._tripleChart = new PersonaFusionChart(compConfig.normalTable, compConfig.races, true);
+    this._tripleChart = new PersonaFusionChart(compConfig.normalTable, compConfig.elementTable, true);
     this._squareChart$ = new BehaviorSubject({
       normalChart: fusionChart,
       tripleChart: this._tripleChart,
@@ -70,6 +75,14 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
     if (compConfig.appCssClasses.includes('p5t')) {
       this.fissionCalculator = new NormalFusionCalculator([splitWithDiffRace], []);
       this.fusionCalculator = new NormalFusionCalculator([fuseWithDiffRace], []);
+    }
+
+    if (compConfig.appCssClasses.includes('p5')) {
+      this.fissionCalculator = new NormalFusionCalculator([splitWithDiffRace, splitWithSameRace], []);
+      this.fusionCalculator = new NormalFusionCalculator(
+        [fuseWithDiffRace, fuseWithSameRace, fuseWithElement],
+        [fuseWithNormResult, fuseWithSpecResult, fuseTwoElements]
+      );
     }
   }
 }

@@ -14,13 +14,15 @@ export class P5FissionTableComponent extends SmtFissionTableComponent {
       .getFusions(this.currentDemon, this.compendium, this.fusionChart)
       .map(this.toFusionPair(this.currentDemon));
 
-    for (const multiPair of splitWithTreasure(this.currentDemon, this.compendium, this.fusionChart)) {
-      const lvl1 = (Math.floor(multiPair.lvl1) << 10) + multiPair.lvl2;
-      for (const name1 of multiPair.names1) {
-        const { race: race1, lvl: baseLvl } = this.compendium.getDemon(name1);
-        for (const name2 of multiPair.names2) {
-          const { race: race2, lvl: lvl2, price: price2 } = this.compendium.getDemon(name2);
-          fusionPairs.push({ price: multiPair.price + price2 - baseLvl, race1, lvl1, name1, race2, lvl2, name2 });
+    if (this.fusionChart.elementDemons.length > 0) {
+      for (const multiPair of splitWithTreasure(this.currentDemon, this.compendium, this.fusionChart)) {
+        const lvl1 = (Math.floor(multiPair.lvl1) << 10) + multiPair.lvl2;
+        for (const name1 of multiPair.names1) {
+          const { race: race1, lvl: baseLvl } = this.compendium.getDemon(name1);
+          for (const name2 of multiPair.names2) {
+            const { race: race2, lvl: lvl2, price: price2 } = this.compendium.getDemon(name2);
+            fusionPairs.push({ price: multiPair.price + price2 - baseLvl, race1, lvl1, name1, race2, lvl2, name2 });
+          }
         }
       }
     }

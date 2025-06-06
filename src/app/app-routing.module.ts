@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Route, Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import Translations from './compendium/data/translations.json';
 import FusionTools from './compendium/data/fusion-tools.json';
 
 const LANGS = Translations.Languages.Languages;
+const appRoutesLookup: { [path: string]: Route } = {};
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -38,7 +39,7 @@ const appRoutes: Routes = [
   { path: 'p4',     loadChildren: () => import('./p4/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p4g',    loadChildren: () => import('./p4/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p5',     loadChildren: () => import('./p5/compendium.module').then(m => m.CompendiumModule) },
-  { path: 'p5r',    loadChildren: () => import('./p5r/compendium.module').then(m => m.CompendiumModule) },
+  { path: 'p5r',    loadChildren: () => import('./p5/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p5s',    loadChildren: () => import('./p5s/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p5t',    loadChildren: () => import('./p5t/compendium.module').then(m => m.CompendiumModule) },
   { path: 'pq',     loadChildren: () => import('./pq/compendium.module').then(m => m.CompendiumModule) },
@@ -53,8 +54,14 @@ const appRoutes: Routes = [
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
-for (let i = 0; i < FusionTools.length; i++) {
-  appRoutes[i + 2].data = { appName: FusionTools[i].titles[0], lang: LANGS[0] };
+for (const route of appRoutes) {
+  if (route.loadChildren) {
+    appRoutesLookup[route.path] = route;
+  }
+}
+
+for (const [tool, appNames] of Object.entries(FusionTools)) {
+  appRoutesLookup[tool].data = { appName: appNames[0], lang: LANGS[0] };
 }
 
 for (let i = 1; i < LANGS.length; i++) {
@@ -64,12 +71,12 @@ for (let i = 1; i < LANGS.length; i++) {
     { path: 'home', component: HomeComponent },
   ];
 
-  for (const tool of FusionTools) {
-    if (tool.titles[i] && tool.titles[i] !== '-') {
+  for (const [tool, appNames] of Object.entries(FusionTools)) {
+    if (appNames[i] && appNames[i] !== '-') {
       routes.push({
-        path: tool.game,
-        loadChildren: () => import(`./${tool.module}/compendium.module`).then(m => m.CompendiumModule),
-        data: { appName: tool.titles[i], lang }
+        path: tool,
+        loadChildren: appRoutesLookup[tool].loadChildren,
+        data: { appName: appNames[i], lang }
       });
     }
   }

@@ -95,6 +95,8 @@ function createCompConfig(): CompendiumConfigSet {
     enemyStats: ['HP', 'Atk', 'Def'],
 
     normalTable: FUSION_CHART_JSON,
+    elementTable: { elems: [], races: [], table: [] },
+    specialRecipes: SPECIAL_RECIPES_JSON,
     hasTripleFusion: true,
     hasDemonResists: false,
     hasSkillRanks: false,
@@ -102,7 +104,6 @@ function createCompConfig(): CompendiumConfigSet {
     hasQrcodes: true,
     hasSkillCards: true,
     hasManualInheritance: true,
-    specialRecipes: SPECIAL_RECIPES_JSON,
 
     defaultDemon: 'Pixie',
     settingsKey: 'pq-fusion-tool-settings',

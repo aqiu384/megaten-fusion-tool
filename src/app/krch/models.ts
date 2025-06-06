@@ -1,6 +1,6 @@
 import {
   Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp,
-  FusionCalculator, NormalFusionTable, ElementFusionTable
+  FusionCalculator, FusionTableData, ElementTableData
 } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
@@ -27,8 +27,8 @@ export interface CompendiumConfig extends BaseComp {
 
   demonData: any[];
   skillData: any[];
-  normalTable: NormalFusionTable;
-  elementTable: ElementFusionTable;
+  normalTable: FusionTableData;
+  elementTable: ElementTableData;
   specialRecipes: { [demon: string]: string[] };
   isDesu: boolean;
 }

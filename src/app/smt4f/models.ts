@@ -1,6 +1,6 @@
 import {
   Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp,
-  FusionEntry, NormalFusionTable, ElementFusionTable
+  FusionEntry, FusionTableData, ElementTableData
 } from '../compendium/models';
 import { DemonUnlock } from '../compendium/models/fusion-settings';
 
@@ -40,8 +40,8 @@ export interface CompendiumConfig extends BaseComp {
   resistElems: string[];
 
   demonUnlocks: DemonUnlock[];
-  normalTable: NormalFusionTable;
-  elementTable: ElementFusionTable;
+  normalTable: FusionTableData;
+  elementTable: ElementTableData;
   specialRecipes: { [demon: string]: string[] };
 
   settingsKey: string;

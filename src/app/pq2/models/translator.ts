@@ -33,6 +33,8 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     enemyStats: compConfig.enemyStats.map(translate),
 
     normalTable: translateFusionChart(compConfig.normalTable, langNames),
+    elementTable: translateFusionChart(compConfig.elementTable, langNames),
+    specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, langNames),
     hasTripleFusion: compConfig.hasTripleFusion,
     hasDemonResists: compConfig.hasDemonResists,
     hasSkillRanks: compConfig.hasSkillRanks,
@@ -40,7 +42,6 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     hasQrcodes: compConfig.hasQrcodes,
     hasSkillCards: compConfig.hasSkillCards,
     hasManualInheritance: compConfig.hasManualInheritance,
-    specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, langNames),
 
     defaultDemon: translate(compConfig.defaultDemon),
     settingsKey: `${compConfig.settingsKey}-${lang}`,

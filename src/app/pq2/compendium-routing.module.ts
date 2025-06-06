@@ -5,17 +5,17 @@ import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
+import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { PasswordGeneratorContainerComponent } from './components/password-generator.component';
 import { FusionSettingsContainerComponent } from './components/fusion-settings.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
+import { P5FissionTableComponent } from './components/p5-fission-table.component';
 
 import { SmtFissionPreviewComponent } from '../compendium/components/fission-preview-table.component';
-import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
 
 import { TripleFissionTableComponent } from '../compendium/components/tri-fission-table.component';
 import { TripleFusionTableComponent } from '../compendium/components/tri-fusion-table.component';
-import { TripleFusionChartComponent } from '../compendium/components/tri-fusion-chart.component';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },
@@ -26,7 +26,7 @@ const compendiumRoutes: Routes = [
     children: [
       {
         path: 'chart',
-        component: TripleFusionChartComponent,
+        component: FusionChartContainerComponent,
       }
     ]
   },
@@ -48,7 +48,7 @@ const compendiumRoutes: Routes = [
           },
           {
             path: 'fissions',
-            component: SmtFissionTableComponent
+            component: P5FissionTableComponent
           },
           {
             path: 'fusions',

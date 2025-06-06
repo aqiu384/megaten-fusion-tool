@@ -6,16 +6,36 @@
     "Ag",
     "Lu"
   ],
-  "elementDemons": [
-    "Crystal Skull",
-    "Koh-i-Noor",
-    "Queen's Necklace",
-    "Regent",
-    "Stone of Scone",
-    "Orlov",
-    "Emperor's Amulet",
-    "Hope Diamond"
+  "inheritElems": [
+    "phy",
+    "gun",
+    "fir",
+    "ice",
+    "ele",
+    "win",
+    "psy",
+    "nuk",
+    "ble",
+    "cur",
+    "ail",
+    "rec"
   ],
+  "inheritTypes": {
+    "phys":     "110000000011",
+    "fire":     "111011111111",
+    "ice":      "110111111111",
+    "elec":     "111110111111",
+    "wind":     "111101111111",
+    "psy":      "111111101111",
+    "nuke":     "111111011111",
+    "bless":    "001111111001",
+    "curse":    "001111110110",
+    "ailment":  "111111110110",
+    "healing":  "001111111011",
+    "support":  "111111111111",
+    "almighty": "111111111111",
+    "none":     "000000000000"
+  },
   "races": [
     "Fool",
     "Magician",
@@ -45,7 +65,11 @@
     "Star",
     "Moon",
     "Sun",
-    "Judgement"
+    "Judgement",
+    "Faith",
+    "Faith P",
+    "Councillor",
+    "World"
   ],
   "resistCodes": {
     "w": 60125,
@@ -53,7 +77,16 @@
     "s": 40050,
     "n": 30100,
     "r": 20100,
-    "d": 10100
+    "d": 10100,
+    "W": 60125,
+    "A": 50100,
+    "S": 40050,
+    "N": 30100,
+    "R": 20100,
+    "D": 10100,
+    "x": 60125,
+    "a": 50100,
+    "z": 60125
   },
   "resistElems": [
     "phy",
@@ -72,6 +105,7 @@
     "ail",
     "rec",
     "sup",
-    "pas"
+    "pas",
+    "tra"
   ]
 }

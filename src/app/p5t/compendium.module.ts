@@ -85,6 +85,8 @@ function createCompConfig(): CompendiumConfigSet {
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
+    elementTable: { elems: [], races: [], table: [] },
+    specialRecipes: SPECIAL_RECIPES_JSON,
     hasTripleFusion: false,
     hasDemonResists: false,
     hasSkillRanks: false,
@@ -92,7 +94,6 @@ function createCompConfig(): CompendiumConfigSet {
     hasQrcodes: false,
     hasSkillCards: false,
     hasManualInheritance: true,
-    specialRecipes: SPECIAL_RECIPES_JSON,
 
     defaultDemon: 'Pixie',
     settingsKey: 'p5t-fusion-tool-settings',

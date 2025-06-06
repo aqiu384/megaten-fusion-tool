@@ -56,7 +56,7 @@ export class Compendium implements ICompendium {
     const ailPrefixes = langEn ? ['Weak ', 'Resist ', 'Null '] : ['弱', '強', '無'];
     const ailmentResists: SkillListDict = {};
     const ailLvls: StringDict = {};
-    const hasInnate = this.compConfig.appCssClasses.includes('smt5v')
+    const hasInnate = this.compConfig.appCssClasses.includes('smt5v');
     const aligns = this.compConfig.alignments;
 
     for (const [i, res] of 'wsn'.split('').entries()) {

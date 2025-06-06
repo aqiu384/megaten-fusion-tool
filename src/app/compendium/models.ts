@@ -162,16 +162,17 @@ export interface FusionRow     { [race: string]: string; }
 export interface ElementRow    { [race: string]: number; }
 export interface ElemModifiers { [modifier: number]: string[]; }
 
-export interface NormalFusionTable {
+export interface FusionTableData {
   races: string[];
   table: string[][];
 }
 
-export interface ElementFusionTable {
+export interface ElementTableData {
   elems: string[];
   races: string[];
   table: number[][];
   pairs?: string[][];
+  triples?: string[][];
 }
 
 export interface FusionChart {

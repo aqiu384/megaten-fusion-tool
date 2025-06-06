@@ -1,4 +1,4 @@
-import { FissionTable, FusionTable, ElementTable } from '../models';
+import { FissionTable, FusionTable, ElementTable, FusionTableData, ElementTableData } from '../models';
 import { SmtFusionChart } from '../models/smt-fusion-chart';
 
 export class PersonaFusionChart extends SmtFusionChart {
@@ -6,18 +6,21 @@ export class PersonaFusionChart extends SmtFusionChart {
   protected fusionChart: FusionTable;
   protected elementChart: ElementTable;
 
-  elementDemons = [];
+  elementDemons: string[];
   lvlModifier = 0.5;
   races: string[];
 
-  constructor(fusionTableJson: any, races: string[], isTripleChart?: boolean) {
+  constructor(fusionTableJson: FusionTableData, elementTableData: ElementTableData, isTripleChart?: boolean) {
     super();
-    this.initCharts(fusionTableJson, isTripleChart);
+    this.initCharts(fusionTableJson, elementTableData, isTripleChart);
   }
 
-  initCharts(fusionTableJson: any, isTripleChart?: boolean) {
-    const races: string[] = fusionTableJson['races'];
-    const fullTable: string[][] = fusionTableJson['table'];
+  initCharts(fusionTableJson: FusionTableData, elementTableData: ElementTableData, isTripleChart: boolean) {
+    const races = fusionTableJson.races
+    const fullTable = fusionTableJson.table;
+    const elems = elementTableData?.elems || [];
+    const elemRaces = elementTableData?.races || [];
+    const elemTable = elementTableData?.table || [];
     const table: string[][] = [];
 
     for (let i = 0; i < races.length; i++) {
@@ -32,9 +35,10 @@ export class PersonaFusionChart extends SmtFusionChart {
     }
 
     this.races = races;
+    this.elementDemons = elems;
     this.lvlModifier = isTripleChart ? 4.25 : 0.5;
-    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, this.elementDemons, table);
-    this.fusionChart = SmtFusionChart.loadFusionTableJson(races, table);
-    this.elementChart = {};
+    this.fusionChart = SmtFusionChart.loadFusionTableJson(races, fullTable[0].length === 1 ? fullTable : table);
+    this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, fullTable[0].length === 1 ? fullTable : table);
+    this.elementChart = elems.length ? SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable) : {};
   }
 }

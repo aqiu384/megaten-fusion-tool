@@ -9,6 +9,7 @@ import { CompendiumRoutingModule } from './compendium-routing.module';
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
+import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { FusionSettingsContainerComponent } from './components/fusion-settings.component';
 
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
@@ -16,6 +17,7 @@ import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from 
 import { EnemyEntryComponent } from './components/enemy-entry.component';
 import { QrcodeComponent } from './components/qrcode-component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
+import { P5FissionTableComponent } from './components/p5-fission-table.component';
 
 @NgModule({
   imports: [
@@ -33,9 +35,11 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    FusionChartContainerComponent,
     FusionSettingsContainerComponent,
     PasswordGeneratorComponent,
     PasswordGeneratorContainerComponent,
+    P5FissionTableComponent,
     RecipeGeneratorContainerComponent
   ],
   exports: [
@@ -46,9 +50,11 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryComponent,
     DemonEntryContainerComponent,
     EnemyEntryComponent,
+    FusionChartContainerComponent,
     FusionSettingsContainerComponent,
     PasswordGeneratorComponent,
     PasswordGeneratorContainerComponent,
+    P5FissionTableComponent,
     RecipeGeneratorContainerComponent
   ],
 })

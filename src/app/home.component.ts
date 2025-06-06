@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   fusionTools = FusionTools;
   langs = Translations.Languages.Languages;
   msgs = Translations.AppComponent;
-  listTools = FusionTools;
+  listTools: { game: string, titles: string[] }[];
   langInd = 0;
   lang = 'en';
 
@@ -28,9 +28,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     const lang = this.route.snapshot.data.lang;
+    const fusionTools = Object.entries(this.fusionTools).map(t => ({ game: t[0], titles: t[1]}));
     this.lang = this.langs.includes(lang) ? lang : 'en';
     this.langInd = this.langs.indexOf(this.lang);
-    this.listTools = this.fusionTools.filter(t => t.titles[this.langInd] && t.titles[this.langInd] !== '-')
+    this.listTools = fusionTools.filter(t => t.titles[this.langInd] && t.titles[this.langInd] !== '-')
     this.title.setTitle(this.msgs.AppTitle[this.langInd]);
   }
 }
