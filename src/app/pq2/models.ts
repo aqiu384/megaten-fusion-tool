@@ -50,6 +50,7 @@ export interface CompendiumConfig extends BaseComp {
   normalTable: FusionTableData;
   elementTable: ElementTableData;
   specialRecipes: { [demon: string]: string[] };
+  maxSkillSlots: number;
   hasTripleFusion: boolean;
   hasDemonResists: boolean;
   hasSkillRanks: boolean;

@@ -14,6 +14,7 @@ import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import PRICE_PBOX_JSON from './data/price-pbox.json';
 
 import VAN_DEMON_DATA_JSON from './data/van-demon-data.json';
 import VAN_SKILL_DATA_JSON from './data/van-skill-data.json';
@@ -22,9 +23,12 @@ import OVE_DEMON_DATA_JSON from './data/ove-demon-data.json';
 import OVE_SKILL_DATA_JSON from './data/ove-skill-data.json';
 import OVE_DEMON_UNLOCKS_JSON from './data/ove-demon-unlocks.json';
 
-function estimateDesuPrice(stats: number[]): number {
-  const x = stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0);
-  return Math.floor(((-0.01171 * x + 5.0625) * x - 129) * x) + 1115;
+function estimateDesuPrice(demon, statPrices: number[], skillPrices: { [skill: string]: number }): number {
+  const stats = <number[]>demon.stats;
+  const statPrice = statPrices[stats.slice(stats.length - 4).reduce((acc, s) => acc + s, 0)];
+  const skills = <{ [skill: string]: number }>demon.skills;
+  const skillPrice = Object.entries(skills).reduce((acc, [sname, slvl]) => acc + (slvl < 2 ? skillPrices[sname] : 0), 0);
+  return statPrice + skillPrice + (demon.race === 'Element' ? 1000 : demon.race === 'Mitama' ? 3000 : 0) / 2;
 }
 
 function createCompConfig(): CompendiumConfigSet {
@@ -34,10 +38,20 @@ function createCompConfig(): CompendiumConfigSet {
   const compConfigs: { [game: string]: CompendiumConfig } = {};
   const skillData = [];
 
-  for (const demonJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
-    for (const entry of Object.values(demonJson)) {
-      entry['price'] = estimateDesuPrice(entry['stats']) / 2;
-    }
+  const statPrices = Array<number>(PRICE_PBOX_JSON.statTable.length + 1).fill(0);
+  const skillRanks = Array<number>(PRICE_PBOX_JSON.skillTable.length + 1).fill(0);
+  const skillPrices = {}
+
+  statPrices[0] = PRICE_PBOX_JSON.statBase;
+  let statStep = PRICE_PBOX_JSON.statStep;
+
+  for (let i = 1; i < statPrices.length; i++) {
+    statStep += PRICE_PBOX_JSON.statTable[i - 1];
+    statPrices[i] = statPrices[i - 1] + statStep;
+  }
+
+  for (let i = 1; i < skillRanks.length; i++) {
+    skillRanks[i] = skillRanks[i - 1] + PRICE_PBOX_JSON.skillTable[i - 1] / 2;
   }
 
   const COST_HP = 2 << 10;
@@ -52,6 +66,7 @@ function createCompConfig(): CompendiumConfigSet {
       const [rank, cost] = nums.slice(0, 2);
       const card = descs[2];
 
+      skillPrices[sname] = skillRanks[rank];
       gameSkills[sname] = {
         element,
         rank,
@@ -59,6 +74,12 @@ function createCompConfig(): CompendiumConfigSet {
         cost: cost ? cost + (cost > 1000 ? COST_MP : COST_HP) : 0,
         effect: skillRowToEffect(nums, descs, false),
       }
+    }
+  }
+
+  for (const demonJson of [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON]) {
+    for (const entry of Object.values(demonJson)) {
+      entry['price'] = estimateDesuPrice(entry, statPrices, skillPrices);
     }
   }
 
@@ -79,6 +100,7 @@ function createCompConfig(): CompendiumConfigSet {
       resistCodes: COMP_CONFIG_JSON.resistCodes,
       affinityBonuses: { costs: [], upgrades: [] },
       lvlModifier: 0.5,
+      maxSkillSlots: 7,
       hasLightDark: false,
 
       demonData: [VAN_DEMON_DATA_JSON],
@@ -101,6 +123,7 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   compConfigs.dso.appTitle = 'Devil Survivor Overclocked';
+  compConfigs.dso.appCssClasses = ['smt4', 'dso'];
   compConfigs.dso.settingsKey = 'dso-fusion-tool-settings';
   compConfigs.dso.demonData = [VAN_DEMON_DATA_JSON, OVE_DEMON_DATA_JSON];
   compConfigs.dso.skillData = skillData;

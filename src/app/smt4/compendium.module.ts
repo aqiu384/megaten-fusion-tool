@@ -102,6 +102,7 @@ function createCompConfig(): CompendiumConfigSet {
     resistCodes: COMP_CONFIG_JSON.resistCodes,
     affinityBonuses: { costs: [], upgrades: [] },
     lvlModifier: 1,
+    maxSkillSlots: 8,
     hasLightDark: true,
 
     demonData: [DEMON_DATA_JSON],

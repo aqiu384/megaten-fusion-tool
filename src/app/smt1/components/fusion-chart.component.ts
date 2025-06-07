@@ -31,7 +31,7 @@ import { FusionDataService } from '../fusion-data.service';
         [filterDarks]="false"
         [normTitle]="'Normal Fusions'">
       </app-fusion-chart>
-      <app-species-triple-chart
+      <app-species-triple-chart *ngIf="hasTripleFusion"
         [speciesChart]="tripChart"
         [title]="appName + ' - Triple Fusions'">
       </app-species-triple-chart>
@@ -58,6 +58,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
   fullChart: FusionChart;
   appName: string;
   hasDarkRanks: boolean;
+  hasTripleFusion: boolean;
 
   tripleMitamaTable: string[][];
   mitamaTable: string[][];
@@ -70,6 +71,7 @@ export class FusionChartContainerComponent implements OnInit, OnDestroy {
     this.mitamaTable = compConfig.mitamaTable;
     this.tripleMitamaTable = compConfig.tripleMitamaTable;
     this.hasDarkRanks = compConfig.darknessRecipes;
+    this.hasTripleFusion = !compConfig.appCssClasses.includes('mjn1');
 
     if (this.fusionDataService.compConfig.useSpeciesFusion) {
       this.subscriptions.push(

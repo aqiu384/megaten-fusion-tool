@@ -110,6 +110,7 @@ function createCompConfig(): CompendiumConfigSet {
       resistCodes: COMP_CONFIG_JSON.resistCodes,
       affinityBonuses,
       lvlModifier: 1,
+      maxSkillSlots: 8,
       hasLightDark: true,
 
       demonData: [DEMON_DATA_JSON],
@@ -134,6 +135,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.smt5v.appTitle = 'Shin Megami Tensei V Vengeance';
   compConfigs.smt5v.appCssClasses = ['smt4', 'smt5', 'smt5v'];
   compConfigs.smt5v.settingsKey = 'smt5v-fusion-tool-settings';
+  compConfigs.smt5v.maxSkillSlots = 9;
   compConfigs.smt5v.skillData = skillData;
   compConfigs.smt5v.fusionSpells = Object.assign(PERIAPT_SKILLS_JSON, TALISMAN_SKILLS_JSON);
   compConfigs.smt5v.demonData = [DEMON_DATA_JSON, VEN_DEMON_DATA_JSON];

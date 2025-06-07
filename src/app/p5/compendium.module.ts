@@ -142,6 +142,7 @@ function createCompConfig(): CompendiumConfigSet {
       normalTable: FUSION_CHART_JSON,
       elementTable: ELEMENT_CHART_JSON,
       specialRecipes: SPECIAL_RECIPES_JSON,
+      maxSkillSlots: 8,
       hasTripleFusion: false,
       hasDemonResists: true,
       hasSkillRanks: true,
@@ -166,6 +167,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p5r.demonUnlocks = ROY_DEMON_UNLOCKS_JSON;
   compConfigs.p5r.normalTable = ROY_FUSION_CHART_JSON;
   compConfigs.p5r.elementTable = ROY_ELEMENT_CHART_JSON;
+  compConfigs.p5r.maxSkillSlots = 9;
 
   return {
     appTitle: 'Persona 5',

@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumConfigSet } from './models';
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { CompendiumRoutingModule } from '../smt4f/compendium-routing.module';
+import { FusionDataService } from '../smt4f/fusion-data.service';
+
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
+import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
+import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -11,17 +15,18 @@ import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
-import { FusionDataService } from './fusion-data.service';
-import { SmtKuzuCompendiumModule } from './smt-kuzu-compendium.module';
-import { CompendiumRoutingModule } from './compendium-routing.module';
+function estimateKuzuPrice(stats: number[]): number {
+  return Math.floor(Math.pow(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0), 2) / 20);
+}
 
 function createCompConfig(): CompendiumConfigSet {
-  const races = COMP_CONFIG_JSON.races;
   const resistElems = COMP_CONFIG_JSON.resistElems.map(e => e.slice(0, 3));
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems.map(e => e.slice(0, 3)));
+  const demonData = {};
 
-  for (const entry of Object.values(DEMON_DATA_JSON)) {
+  for (const [dname, entry] of Object.entries(DEMON_DATA_JSON)) {
     const lvl = Math.floor(entry.lvl);
     const skills = entry.skills;
     const nskills = {};
@@ -37,7 +42,10 @@ function createCompConfig(): CompendiumConfigSet {
       nskills[entry['skilli']] = 0;
     }
 
-    entry['nskills'] = nskills;
+    entry['price'] = 50 * (estimateKuzuPrice(entry.stats) + entry.lvl);
+    entry['affinities'] = [];
+    demonData[dname] = Object.assign({}, entry);
+    demonData[dname].skills = nskills;
   }
 
   const COST_HP = 2 << 10;
@@ -45,44 +53,61 @@ function createCompConfig(): CompendiumConfigSet {
   const COST_MG = 9 << 10;
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
-    entry.elem = entry.elem.slice(0, 3);
+    entry['element'] = entry.elem.slice(0, 3);
     const cost = entry['cost'];
     const costType = cost > 1000 ? (cost > 2000 ? COST_MG - 2000 : COST_MP - 1000) : COST_HP;
+
     entry['cost'] = cost ? cost + costType: 0;
+    entry['rank'] = entry['unique'] ? 99 : entry['element'] === 'pas' ? 1 : (entry['cost'] & 0x3FF) / 10 || 0;
   }
 
-  for(const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
-    DEMON_DATA_JSON[name]['prereq'] = prereq;
+  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    demonData[name].prereq = prereq;
+    demonData[name].fusion = 'accident';
   }
+
+  const compConfig: CompendiumConfig = {
+    appTitle: 'Raidou Kuzunoha vs. The Soulless Army',
+    races: COMP_CONFIG_JSON.races,
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    appCssClasses: ['smt4', 'krch'],
+
+    lang: 'en',
+    translations: { en: ['ja'] },
+    affinityElems: [],
+    skillData: [SKILL_DATA_JSON],
+    fusionSpells: {},
+    skillElems,
+    elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
+    affinityBonuses: { costs: [], upgrades: [] },
+    lvlModifier: 2.5,
+    maxSkillSlots: 7,
+    hasLightDark: false,
+
+    demonData: [demonData],
+    evolveData: {},
+    alignments: {},
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    resistElems: COMP_CONFIG_JSON.resistElems,
+    ailmentElems: [],
+
+    demonUnlocks: DEMON_UNLOCKS_JSON,
+    normalTable: FUSION_CHART_JSON,
+    elementTable: { elems: [], races: [], table: [] },
+    specialRecipes: SPECIAL_RECIPES_JSON,
+
+    settingsKey: 'krao-fusion-tool-settings',
+    settingsVersion: 2401131500,
+    defaultRecipeDemon: 'Scathach',
+    elementRace: 'Element'
+  };
+
 
   return {
     appTitle: 'Raidou Kuzunoha vs. The Soulless Army',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: {
-      krch: {
-        appTitle: 'Raidou Kuzunoha vs. The Soulless Army',
-        appCssClasses: ['kuzu', 'krch'],
-
-        races,
-        resistElems,
-        skillElems,
-        baseStats: COMP_CONFIG_JSON.baseStats,
-        fusionLvlMod: 2.5,
-        resistCodes: COMP_CONFIG_JSON.resistCodes,
-
-        raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-        elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-        fissionCalculator: SMT_NORMAL_FISSION_CALCULATOR,
-        fusionCalculator: SMT_NORMAL_FUSION_CALCULATOR,
-
-        demonData: [DEMON_DATA_JSON],
-        skillData: [SKILL_DATA_JSON],
-        normalTable: FUSION_CHART_JSON,
-        elementTable: { elems: [], races: [], table: [] },
-        specialRecipes: SPECIAL_RECIPES_JSON,
-        isDesu: false
-      }
-    }
+    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    configs: { 'krch': compConfig }
   };
 }
 
@@ -91,7 +116,7 @@ const SMT_COMP_CONFIG = createCompConfig();
 @NgModule({
   imports: [
     CommonModule,
-    SmtKuzuCompendiumModule,
+    Smt4CompendiumModule,
     CompendiumRoutingModule
   ],
   providers: [

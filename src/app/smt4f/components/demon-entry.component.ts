@@ -18,7 +18,7 @@ import Translations from '../../compendium/data/translations.json';
       <app-demon-stats
         [lang]="compConfig.lang"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
-        [price]="demon.price"
+        [price]="compConfig.appCssClasses.includes('ds1') ? 0 : demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats">
       </app-demon-stats>

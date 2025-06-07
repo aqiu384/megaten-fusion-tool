@@ -23,6 +23,7 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     resistCodes: compConfig.resistCodes,
     affinityBonuses: compConfig.affinityBonuses,
     lvlModifier: compConfig.lvlModifier,
+    maxSkillSlots: compConfig.maxSkillSlots,
     hasLightDark: compConfig.hasLightDark,
 
     demonData: compConfig.demonData.map(d => translateDemonData(d, langNames)),

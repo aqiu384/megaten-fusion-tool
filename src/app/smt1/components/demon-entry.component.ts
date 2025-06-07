@@ -16,7 +16,6 @@ import { FusionDataService } from '../fusion-data.service';
     <ng-container *ngIf="demon">
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
-        [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
         [fusionHeaders]="['Drop']"
         [stats]="demon.stats"
@@ -49,7 +48,7 @@ import { FusionDataService } from '../fusion-data.service';
         [skillLevels]="compConfig.inheritSkills[demon.inherits]">
       </app-demon-skills>
       <app-smt-fusions
-        [hasTripleFusion]="true">
+        [hasTripleFusion]="!compConfig.appCssClasses.includes('mjn1')">
       </app-smt-fusions>
     </ng-container>
     <app-demon-missing *ngIf="!demon" [name]="name">

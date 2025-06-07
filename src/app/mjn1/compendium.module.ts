@@ -2,27 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 
-import { CompendiumConfigSet } from '../krch/models';
-import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
-import { splitMajinByRank, fuseMajinByRank } from '../compendium/fusions/mjn-rank-fusions';
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
+import { CompendiumRoutingModule } from '../smt1/compendium-routing.module';
+import { FusionDataService } from '../smt1/fusion-data.service';
+
+import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
+import { SmtSnesCompendiumModule } from '../smt1/smt-snes-compendium.module';
+import { CompendiumConfig } from '../smt1/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 
-import { FusionDataService } from '../krch/fusion-data.service';
-import { SmtKuzuCompendiumModule } from '../krch/smt-kuzu-compendium.module';
-import { CompendiumRoutingModule } from '../krch/compendium-routing.module';
-
-function createCompConfig(): CompendiumConfigSet {
-  const MJN1_FUSION_CALCULATOR = new NormalFusionCalculator([ fuseMajinByRank ], [ ]);
-  const MJN1_FISSION_CALCULATOR = new NormalFusionCalculator([ splitMajinByRank ], [ ]);
-
+function createCompConfig(): CompendiumConfig {
   const races = [];
   const resistElems = races.map(r => r.slice(0, 3)).slice(0, 23);
   const skillElems = COMP_CONFIG_JSON.skillElems.map(r => r.slice(0, 3));
+  const demonData = {};
+  const skillData = {};
 
   for (const rs of COMP_CONFIG_JSON['species']) {
     for (const race of rs) {
@@ -30,50 +27,49 @@ function createCompConfig(): CompendiumConfigSet {
     }
   }
 
-  for (const [demon, entry] of Object.entries(DEMON_DATA_JSON)) {
-    entry.stats = entry.stats.slice(0, 8);
-    entry['person'] = entry.race;
-    entry['nskills'] = (entry['skills'] || []).reduce((acc, s) => { acc[s] = 0; return acc; }, {});
-    entry['resists'] = '';
+  for (const [dname, entry] of Object.entries(DEMON_DATA_JSON)) {
+    const nentry = Object.assign({}, entry);
+    nentry['person'] = entry.race;
+    nentry['stats'] = entry.stats.slice(0, 8);
+    nentry['resists'] = '';
+    nentry['skills'] = entry['skills'] || [];
+    demonData[dname] = nentry;
   }
 
   const COST_MP = 3 << 10;
 
-  for (const entry of Object.values(SKILL_DATA_JSON)) {
-    entry['elem'] = entry.element;
-    entry['target'] = (entry['target'] || 'Self') + (entry['range'] ? ' ' + entry['range'] : '');
-    entry['effect'] = entry['effect'] || entry['power'] + ' dmg';
-    entry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;
+  for (const [sname, entry] of Object.entries(SKILL_DATA_JSON)) {
+    const nentry = Object.assign({}, entry);
+    nentry['elem'] = entry.element;
+    nentry['cost'] = entry['cost'] ? entry['cost'] + COST_MP - 1000 : 0;
+    skillData[sname] = nentry;
   }
 
   return {
     appTitle: 'Majin Tensei',
+    appCssClasses: ['smtnes', 'mjn1'],
+    races,
+    resistElems,
+    skillElems,
+    baseStats: COMP_CONFIG_JSON.baseStats,
+    baseAtks: [],
+
+    speciesLookup: {},
+    species: {},
+    resistCodes: COMP_CONFIG_JSON.resistCodes,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: {
-      mjn1: {
-        appTitle: 'Majin Tensei',
-        appCssClasses: ['kuzu', 'mjn1'],
+    elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    specialRecipes: {},
+    useSpeciesFusion: true,
 
-        races,
-        resistElems: [],
-        skillElems,
-        baseStats: COMP_CONFIG_JSON.baseStats,
-        fusionLvlMod: 2.5,
-        resistCodes: {},
-
-        raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-        elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-        fissionCalculator: MJN1_FISSION_CALCULATOR,
-        fusionCalculator: MJN1_FUSION_CALCULATOR,
-
-        demonData: [DEMON_DATA_JSON],
-        skillData: [SKILL_DATA_JSON],
-        normalTable: FUSION_CHART_JSON,
-        elementTable: { elems: [], races: [], table: [] },
-        specialRecipes: {},
-        isDesu: false
-      }
-    }
+    normalLvlModifier: 1.5,
+    tripleLvlModifier: 2.25,
+    demonData: demonData,
+    skillData: skillData,
+    alignData: { races: races.reduce((acc, r) => { acc[r] = 'nn'; return acc; }, {}) },
+    normalTable: FUSION_CHART_JSON,
+    tripleTable: { races: ['DEITIES'], table: ['-'] },
+    elementTable: { elems: [], races: [], table: [] }
   };
 }
 
@@ -82,14 +78,15 @@ const SMT_COMP_CONFIG = createCompConfig();
 @NgModule({
   imports: [
     CommonModule,
-    SmtKuzuCompendiumModule,
+    SmtSnesCompendiumModule,
     CompendiumRoutingModule
   ],
   providers: [
     Title,
     FusionDataService,
-    [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
+    { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
+    { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService },
+    { provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }
   ]
 })
 export class CompendiumModule { }

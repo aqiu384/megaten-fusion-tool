@@ -17,6 +17,7 @@ import {
   SMT_NES_NORMAL_FISSION_CALCULATOR
 } from '../compendium/constants';
 
+import { splitMajinByRank, fuseMajinByRank } from '../compendium/fusions/mjn-rank-fusions';
 import { splitWithDiffRace, splitWithSpecies, splitWithElement } from '../compendium/fusions/smt-nonelem-fissions';
 import { splitWithDarkRace } from '../compendium/fusions/snes-dark-fusions';
 import { splitElement } from '../compendium/fusions/smt-element-fissions';
@@ -105,6 +106,11 @@ export class FusionDataService implements IFusionTrioService {
         [ splitWithDiffRace, splitWithSpecies, splitWithDarkRace, splitWithElement ],
         [ splitElement ]
       );
+    }
+
+    if (compConfig.appCssClasses.includes('mjn1')) {
+      this.fissionCalculator = new NormalFusionCalculator([ splitMajinByRank ], [ ]);
+      this.fusionCalculator= new NormalFusionCalculator([ fuseMajinByRank ], [ ]);
     }
   }
 

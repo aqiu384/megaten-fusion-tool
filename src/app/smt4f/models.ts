@@ -32,6 +32,7 @@ export interface CompendiumConfig extends BaseComp {
 
   affinityBonuses: { costs: number[][], upgrades: number[][] };
   lvlModifier: number;
+  maxSkillSlots: number;
   hasLightDark: boolean;
 
   demonData: any[];

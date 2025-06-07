@@ -35,6 +35,7 @@ export function translateCompConfig(compConfig: CompendiumConfig, lang: string):
     normalTable: translateFusionChart(compConfig.normalTable, langNames),
     elementTable: translateFusionChart(compConfig.elementTable, langNames),
     specialRecipes: translateSpecialRecipes(compConfig.specialRecipes, langNames),
+    maxSkillSlots: compConfig.maxSkillSlots,
     hasTripleFusion: compConfig.hasTripleFusion,
     hasDemonResists: compConfig.hasDemonResists,
     hasSkillRanks: compConfig.hasSkillRanks,

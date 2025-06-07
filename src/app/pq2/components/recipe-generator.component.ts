@@ -33,7 +33,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
     const compConfig = this.fusionDataService.compConfig;
     const langInd = compConfig.translations.en.indexOf(compConfig.lang);
     const translateElemFun = (e: string) => langInd === -1 ? e : (compConfig.translations[e] || [])[langInd] || e;
-    this.maxSkills = compConfig.hasDemonResists ? 8 : 2;
+    this.maxSkills = compConfig.maxSkillSlots;
     this.lang = compConfig.lang;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,

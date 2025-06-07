@@ -87,6 +87,7 @@ function createCompConfig(): CompendiumConfigSet {
     normalTable: FUSION_CHART_JSON,
     elementTable: { elems: [], races: [], table: [] },
     specialRecipes: SPECIAL_RECIPES_JSON,
+    maxSkillSlots: 2,
     hasTripleFusion: false,
     hasDemonResists: false,
     hasSkillRanks: false,

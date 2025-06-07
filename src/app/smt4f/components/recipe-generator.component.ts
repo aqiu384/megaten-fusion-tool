@@ -35,7 +35,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
     const isSh2 = compConfig.appCssClasses.includes('sh2');
     this.lang = compConfig.lang;
     this.appName = translateComp(Translations.RecipeGeneratorComponent.AppTitle, this.lang) + fusionDataService.appName;
-    this.maxSkills = isSh2 ? 6 : 8;
+    this.maxSkills = compConfig.maxSkillSlots;
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
       fusionCalculator: this.fusionDataService.fusionCalculator,
