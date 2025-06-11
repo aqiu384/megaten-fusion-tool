@@ -32,6 +32,7 @@ export abstract class SmtFusionChart implements FusionChart {
   abstract races: string[];
   abstract lvlModifier: number;
   abstract elementDemons: string[];
+  abstract raceOrder: { [race: string]: number };
 
   static loadFusionTableJson(races: string[], table: string[][]): FusionTable {
     const fusionTable: FusionTable = {};

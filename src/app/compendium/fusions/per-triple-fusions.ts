@@ -18,7 +18,8 @@ function findBin(n: number, bins: number[]): number {
 }
 
 export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
-  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
+  const { normalChart: normChart, tripleChart: trioChart } = chart;
+  const { raceOrder } = normChart;
   const { race: raceT1, lvl: lvlT1, currLvl: clvlT1 } = comp.getDemon(nameT1);
   const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];
@@ -95,7 +96,8 @@ export function fuseT1WithDiffRace(nameT1: string, comp: Compendium, chart: Squa
 }
 
 export function fuseN1WithDiffRace(nameN1: string, comp: Compendium, chart: SquareChart): NameTrio[] {
-  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
+  const { normalChart: normChart, tripleChart: trioChart } = chart;
+  const { raceOrder } = normChart;
   const { race: raceN1, lvl: lvlN1, currLvl: clvlN1 } = comp.getDemon(nameN1);
   const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];

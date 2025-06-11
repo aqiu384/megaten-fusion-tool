@@ -22,14 +22,18 @@ export class FusionDataService implements IFusionDataService {
   private _compendium$: BehaviorSubject<Compendium>;
   compendium: Observable<Compendium>;
 
-  private _fusionChart = new FusionChart();
-  private _fusionChart$ = new BehaviorSubject(this._fusionChart);
-  fusionChart = this._fusionChart$.asObservable();
+  private _fusionChart: FusionChart;
+  private _fusionChart$: BehaviorSubject<FusionChart>;
+  fusionChart: Observable<FusionChart>;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this._compendium = new Compendium(compConfig);
     this._compendium$ = new BehaviorSubject(this._compendium);
     this.compendium = this._compendium$.asObservable();
+
+    this._fusionChart = new FusionChart(compConfig);
+    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
+    this.fusionChart = this._fusionChart$.asObservable();
 
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle + ' Fusion Calculator';

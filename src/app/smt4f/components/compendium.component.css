@@ -11,18 +11,23 @@
 .smt4 div.element-icon.fir { background-image: url('/assets/images/smtsj/fir.png'); }
 .smt4 div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
 .smt4 div.element-icon.ele { background-image: url('/assets/images/smtsj/ele.png'); }
+.smt4 div.element-icon.win,
 .smt4 div.element-icon.for { background-image: url('/assets/images/smt4f/force.png'); }
 .smt4 div.element-icon.mys { background-image: url('/assets/images/smt4f/curse.png'); }
+.smt4 div.element-icon.exp,
 .smt4 div.element-icon.lig { background-image: url('/assets/images/smtsj/exp.png'); }
+.smt4 div.element-icon.cur,
 .smt4 div.element-icon.dea,
 .smt4 div.element-icon.dar { background-image: url('/assets/images/smtsj/cur.png'); }
 .smt4 div.element-icon.ail { background-image: url('/assets/images/smtsj/ail.png'); }
 .smt4 div.element-icon.min { background-image: url('/assets/images/smt4f/panic.png'); }
+.smt4 div.element-icon.ner { background-image: url('/assets/images/smt4f/bind.png'); }
 .smt4 div.element-icon.rec { background-image: url('/assets/images/smtsj/rec.png'); }
 .smt4 div.element-icon.alm { background-image: url('/assets/images/smtsj/alm.png'); }
 .smt4 div.element-icon.com,
 .smt4 div.element-icon.sup { background-image: url('/assets/images/smtsj/sup.png'); }
 .smt4 div.element-icon.pas { background-image: url('/assets/images/smtsj/pas.png'); }
+.smt4 div.element-icon.tal,
 .smt4 div.element-icon.oth,
 .smt4 div.element-icon.inn,
 .smt4 div.element-icon.sab,
@@ -31,6 +36,9 @@
 .smt4 div.element-icon.rac,
 .smt4 div.element-icon.non,
 .smt4 div.element-icon.spe { background-image: url('/assets/images/smtsj/spe.png'); }
+.smt4 div.element-icon.lif { background-image: url('/assets/images/smtsj/lif.png'); }
+.smt4 div.element-icon.man { background-image: url('/assets/images/smtsj/man.png'); }
+.smt4 div.element-icon.non { background-image: none }
 
 .smt4 td.affinity-9 { color: red; }
 .smt4 td.affinity-8 { color: red; }
@@ -52,6 +60,8 @@
 .smt4 td.affinity8 { color: forestgreen; }
 .smt4 td.affinity9 { color: forestgreen; }
 
+.smt3 th.title, .smt3 th.nav.active, .smt3 th.nav.active a { color: white; background-color: #3b3a62; }
+.smtsj th.title, .smtsj th.nav.active, .smtsj th.nav.active a { color: white; background-color: #200470; }
 .smt4f th.title, .smt4f th.nav.active, .smt4f th.nav.active a { background-color: white; color: black; }
 .smt5 th.title, .smt5 th.nav.active, .smt5 th.nav.active a { background-color: #363361; color: white; }
 .sh2 th.title, .sh2 th.nav.active, .sh2 th.nav.active a { background-color: #693cbe; color: white; }

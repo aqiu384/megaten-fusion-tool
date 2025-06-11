@@ -16,12 +16,14 @@ import Translations from  '../../compendium/data/translations.json';
       [elemOrder]="compConfig.elemOrder"
       [hasTarget]="true"
       [hasRank]="compConfig.hasLightDark"
+      [transferTitle]="transferTitle"
       [rowData]="skills | async">
     </app-smt-skill-list>
   `
 })
 export class SkillListContainerComponent extends SLCC {
   compConfig: CompendiumConfig;
+  transferTitle: string;
 
   constructor(
     title: Title,
@@ -29,12 +31,9 @@ export class SkillListContainerComponent extends SLCC {
     fusionDataService: FusionDataService
   ) {
     super(title, changeDetectorRef, fusionDataService);
-    this.appName = `List of Skills - ${fusionDataService.appName}`;
-
     this.compConfig = fusionDataService.compConfig;
     this.appName = translateComp(Translations.SkillListComponent.AppTitle, this.compConfig.lang) + fusionDataService.appName;
-
-    this.compConfig = fusionDataService.compConfig;
+    this.transferTitle = this.compConfig.appCssClasses.includes('smtsj') ? 'D-Source' : '';
     this.defaultSortFun = (a, b) => (
       this.compConfig.elemOrder[a.element] -
       this.compConfig.elemOrder[b.element]

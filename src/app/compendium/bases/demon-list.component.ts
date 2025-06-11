@@ -13,7 +13,7 @@ export class DemonListComponent<TDemon extends Demon> extends SortedTableCompone
   protected sortFuns: ((a: TDemon, b: TDemon) => number)[] = [];
 
   ngOnInit() {
-      this.nextSortFuns();
+    this.nextSortFuns();
   }
 
   ngAfterViewChecked() {

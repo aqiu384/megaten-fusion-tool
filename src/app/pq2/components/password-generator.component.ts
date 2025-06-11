@@ -21,10 +21,9 @@ import { encodeDemon } from '../models/password-generator';
         </tr>
       </table>
       <table class="entry-table">
-        <tr><th colspan="7" class="title">Persona Entry</th></tr>
+        <tr><th colspan="6" class="title">Persona Entry</th></tr>
         <tr>
           <th>Price</th>
-          <th>Language</th>
           <th>Level</th>
           <th>HP</th>
           <th>MP</th>
@@ -33,12 +32,6 @@ import { encodeDemon } from '../models/password-generator';
         </tr>
         <tr>
           <td>{{ price }}</td>
-          <td>
-            <select formControlName="language">
-              <option value="jpn">Japanese</option>
-              <option value="eng">English</option>
-            </select>
-          </td>
           <td>
             <select formControlName="lvl">
               <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
@@ -66,40 +59,30 @@ import { encodeDemon } from '../models/password-generator';
           </td>
         </tr>
       </table>
-      <table formArrayName="skills" class="list-table">
-        <tr><th colspan="5" class="title">Learned Skills</th></tr>
-        <tr>
-          <th>Element</th>
-          <th>Name</th>
-          <th>Cost</th>
-          <th>Effect</th>
-          <th>Target</th>
-        </tr>
-        <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
-          <tr [ngClass]="{ unique: (compendium.getSkill(skill.controls.name.value) || blankSkill).rank > 90 }">
-            <td>
-              <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                <option value="-">-</option>
-                <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
-              </select>
-            </td>
-            <td>
-              <select formControlName="name">
-                <option *ngFor="let entry of skills[skill.controls.elem.value]" [value]="entry.name">{{ entry.name }}</option>
-              </select>
-            </td>
-            <ng-container *ngIf="compendium.getSkill(skill.controls.name.value); let entry; else noEntry">
-              <td [style.color]="entry.cost ? null: 'transparent'">{{ entry.cost | skillCostToString }}</td>
-              <td>{{ entry.effect }}</td>
-              <td>{{ entry.target }}</td>
-            </ng-container>
-            <ng-template #noEntry>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </ng-template>
+      <table class="entry-table">
+        <thead>
+          <tr><th colspan="2" class="title">Learned Skills</th></tr>
+          <tr>
+            <th style="width: 25%">Element</th>
+            <th style="width: 75%">Name</th>
           </tr>
-        </ng-container>
+        </thead>
+        <tbody formArrayName="skills">
+          <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
+            <tr>
+              <td>
+                <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
+                  <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
+                </select>
+              </td>
+              <td>
+                <select formControlName="name">
+                  <option *ngFor="let entry of skills[skill.controls.elem.value]" [value]="entry.name">{{ entry.name }}</option>
+                </select>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
       </table>
     </form>
   `,
@@ -111,8 +94,6 @@ import { encodeDemon } from '../models/password-generator';
   `]
 })
 export class PasswordGeneratorComponent implements OnChanges {
-  @Input() defaultRace = 'Fool';
-  @Input() defaultDemon = 'Slime';
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
 
@@ -149,12 +130,11 @@ export class PasswordGeneratorComponent implements OnChanges {
     }
 
     this.form = this.fb.group({
-      language: 'eng',
       lvl: 1,
       hp: 1,
       mp: 1,
-      race: this.defaultRace,
-      demon: this.defaultDemon,
+      race: '-',
+      demon: '-',
       skills: this.fb.array(skills)
     });
 
@@ -164,7 +144,7 @@ export class PasswordGeneratorComponent implements OnChanges {
         const dskills = form.skills.map(s => this.compendium.getSkill(s.name) || this.blankSkill);
 
         const decoded: DecodedDemon = {
-          language: form.language,
+          isEnglish: this.compConfig.lang === 'en',
           demonCode: demon.code,
           lvl: parseInt(form.lvl, 10),
           exp: -1,
@@ -175,7 +155,7 @@ export class PasswordGeneratorComponent implements OnChanges {
 
         const baseSkills = decoded.skillCodes.reduce<number>((acc, lvl) => lvl !== 0 ? acc + 1 : acc, 0);
         this.price = Math.floor((800 + 120 * decoded.lvl) * (1 + 0.25 * baseSkills) / 10) * 10;
-        this.passBytes = encodeDemon(decoded, this.compConfig.appTitle);
+        this.passBytes = encodeDemon(decoded, this.compConfig.appCssClasses.includes('pq2'));
       }
     });
   }
@@ -214,8 +194,8 @@ export class PasswordGeneratorComponent implements OnChanges {
       }
 
       this.races = this.compConfig.races.filter(r => this.demons[r]);
-      this.elems = this.compConfig.skillElems.filter(e => this.skills[e]);
-      this.setDefaultValues(this.defaultDemon);
+      this.elems = ['-'].concat(this.compConfig.skillElems.filter(e => this.skills[e]));
+      this.setDefaultValues(this.compConfig.defaultDemon);
     }
   }
 

@@ -19,7 +19,8 @@ function findBin(n: number, bins: number[]): number {
 }
 
 export function splitWithDiffRace(nameR: string, comp: Compendium, chart: SquareChart): NameTrio[] {
-  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
+  const { normalChart: normChart, tripleChart: trioChart } = chart;
+  const { raceOrder } = normChart;
   const { race: raceR, lvl: lvlR } = comp.getDemon(nameR);
   const lvlMod = 3 * trioChart.lvlModifier;
   const recipes: NameTrio[] = [];

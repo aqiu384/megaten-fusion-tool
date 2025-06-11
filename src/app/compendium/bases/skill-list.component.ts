@@ -10,7 +10,7 @@ export class SkillListComponent<TSkill extends Skill> extends SortedTableCompone
   protected sortFuns: ((a: TSkill, b: TSkill) => number)[] = [];
 
   ngOnInit() {
-      this.nextSortFuns();
+    this.nextSortFuns();
   }
 
   ngAfterViewChecked() {

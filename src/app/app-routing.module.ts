@@ -50,7 +50,6 @@ const appRoutes: Routes = [
   { path: 'dso',    loadChildren: () => import('./desu1/compendium.module').then(m => m.CompendiumModule) },
   { path: 'ds2',    loadChildren: () => import('./desu2/compendium.module').then(m => m.CompendiumModule) },
   { path: 'ds2br',  loadChildren: () => import('./desu2/compendium.module').then(m => m.CompendiumModule) },
-  { path: 'dx2',    loadChildren: () => import('./dx2/compendium.module').then(m => m.CompendiumModule) },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 

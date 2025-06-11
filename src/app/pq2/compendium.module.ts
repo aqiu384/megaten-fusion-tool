@@ -74,7 +74,6 @@ function createCompConfig(): CompendiumConfigSet {
 
   const compConfig: CompendiumConfig = {
     appTitle: 'Persona Q2: New Cinema Labyrinth',
-    translations: { en: [] },
     lang: 'en',
     races,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),

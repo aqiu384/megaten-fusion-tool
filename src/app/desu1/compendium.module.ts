@@ -91,7 +91,6 @@ function createCompConfig(): CompendiumConfigSet {
       appCssClasses: ['smt4', 'ds1'],
 
       lang: 'en',
-      translations: { en: ['ja'] },
       affinityElems: [],
       skillData: skillData.slice(0, 1),
       fusionSpells: {},

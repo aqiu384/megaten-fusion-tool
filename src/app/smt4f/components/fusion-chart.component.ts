@@ -13,7 +13,8 @@ import { FusionDataService } from '../fusion-data.service';
       [normChart]="normChart"
       [tripChart]="normChart"
       [normTitle]="'Light and Neutral Normal Fusions'"
-      [tripTitle]="'Dark Normal Fusions'">
+      [tripTitle]="'Dark Normal Fusions'"
+      [mitaTable]="mitamaTable">
     </app-fusion-chart>
     <app-fusion-chart *ngIf="!hasLightDark"
       [lang]="lang"

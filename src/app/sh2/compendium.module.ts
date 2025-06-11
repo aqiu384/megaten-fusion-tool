@@ -15,11 +15,9 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
-import JA_NAMES_JSON from './data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function createCompConfig(): CompendiumConfigSet {
-  const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const skillData = {};
@@ -57,7 +55,6 @@ function createCompConfig(): CompendiumConfigSet {
     appCssClasses: ['smt4', 'sh2'],
 
     lang: 'en',
-    translations,
     affinityElems: affinityElems,
     skillData: [skillData],
     fusionSpells: {},

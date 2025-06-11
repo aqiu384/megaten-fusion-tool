@@ -8,6 +8,7 @@ import { FusionSettingsContainerComponent } from './components/fusion-settings.c
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
+import { PasswordGeneratorContainerComponent } from './components/password-generator.component';
 
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
@@ -59,6 +60,10 @@ const compendiumRoutes: Routes = [
       {
         path: 'recipes',
         component: RecipeGeneratorContainerComponent
+      },
+      {
+        path: 'passwords',
+        component: PasswordGeneratorContainerComponent
       },
       {
         path: 'settings',

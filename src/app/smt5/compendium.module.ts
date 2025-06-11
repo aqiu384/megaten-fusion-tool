@@ -19,10 +19,6 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import ALIGNMENTS_JSON from './data/alignments.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
 
-import RACE_NAMES_JSON from './data/race-names.json';
-import DEMON_NAMES_JSON from './data/demon-names.json';
-import SKILL_NAMES_JSON from './data/skill-names.json';
-
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
@@ -38,18 +34,11 @@ import VEN_DEMON_UNLOCKS_JSON from './data/ven-demon-unlocks.json';
 import VEN_FUSION_PREREQS_JSON from './data/ven-fusion-prereqs.json';
 
 function createCompConfig(): CompendiumConfigSet {
-  const translations = { en: ['ja', 'zh-cn'] };
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
   const compConfigs: { [game: string]: CompendiumConfig } = {};
   const skillData = [];
-
-  for (const namesets of [RACE_NAMES_JSON, DEMON_NAMES_JSON, SKILL_NAMES_JSON]) {
-    for (const [en, ja, zhcn] of Object.values(namesets)) {
-      translations[en] = [ja, zhcn];
-    }
-  }
 
   for (const elem of affinityElems) {
     const bonusElem = AFFINITIES_JSON['elements'][elem];
@@ -101,7 +90,6 @@ function createCompConfig(): CompendiumConfigSet {
       appCssClasses: ['smt4', 'smt5'],
 
       lang: 'en',
-      translations,
       affinityElems,
       skillData: skillData.slice(0, 1),
       fusionSpells: TALISMAN_SKILLS_JSON,

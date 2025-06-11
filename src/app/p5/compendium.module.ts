@@ -11,8 +11,6 @@ import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
 import { importSkillRow } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
-import JA_NAMES_JSON from './data/ja-names.json';
-
 import DEMON_DATA_JSON from './data/demon-data.json';
 import DLC_DATA_JSON from './data/dlc-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
@@ -34,31 +32,14 @@ import ROY_SPECIAL_RECIPES_JSON from './data/roy-special-recipes.json';
 import ROY_FUSION_PREREQS_JSON from './data/roy-fusion-prereqs.json';
 import ROY_FUSION_CHART_JSON from './data/roy-fusion-chart.json';
 import ROY_ELEMENT_CHART_JSON from './data/roy-element-chart.json';
-import ROY_DEMON_UPDATES_JSON from './data/roy-demon-updates.json';
 
 function createCompConfig(): CompendiumConfigSet {
-  const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const costTypes = [2 << 10, (5 << 10) - 1000, (15 << 10) - 2000];
   const races = [];
-  const allRaces = [];
   const skillDatas = [];
   const inheritTypes: { [elem: string]: number[] } = {};
   const compConfigs: { [game: string]: CompendiumConfig } = {};
-
-  for (const enRace of COMP_CONFIG_JSON.races) {
-    const penRace = enRace + ' P';
-    races.push(enRace);
-    races.push(penRace);
-    allRaces.push(enRace);
-    allRaces.push(penRace);
-    translations[penRace] = [];
-    for (const langRace of translations[enRace]) {
-      allRaces.push(langRace);
-      allRaces.push(langRace + 'P');
-      translations[penRace].push(langRace + 'P');
-    }
-  }
 
   for(const race of COMP_CONFIG_JSON.races) {
     races.push(race);
@@ -117,10 +98,9 @@ function createCompConfig(): CompendiumConfigSet {
   for (const game of ['p5', 'p5r']) {
     compConfigs[game] = {
       appTitle: 'Persona 5',
-      translations,
       lang: 'en',
       races,
-      raceOrder: allRaces.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+      raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       appCssClasses: ['p5'],
 
       skillData: skillDatas.slice(0, 1),
@@ -171,7 +151,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   return {
     appTitle: 'Persona 5',
-    raceOrder: allRaces.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     configs: compConfigs
   };
 }

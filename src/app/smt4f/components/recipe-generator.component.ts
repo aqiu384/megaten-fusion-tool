@@ -62,11 +62,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
 
     this.subscriptions.push(
       this.fusionDataService.fusionChart.subscribe(chart => {
-        this.squareChart = {
-          normalChart: chart,
-          tripleChart: chart,
-          raceOrder: this.fusionDataService.compConfig.raceOrder
-        }
+        this.squareChart = { normalChart: chart, tripleChart: chart };
       }));
   }
 

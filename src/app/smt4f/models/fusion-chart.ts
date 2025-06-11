@@ -6,13 +6,14 @@ export class FusionChart extends SmtFusionChart {
   lvlModifier: number;
   elementDemons: string[];
   races: string[];
+  raceOrder: { [race: string]: number; };
 
   static readonly LIGHT_RACES = [
     'Herald', 'Megami', 'Avian', 'Tree',
     'Deity', 'Avatar', 'Holy', 'Genma',
     'Fury', 'Lady', 'Dragon', 'Kishin',
     'Enigma', 'Entity', 'Wargod',
-    'Amatsu', 'Kunitsu', 'Godly', 'Chaos',
+    'Amatsu', 'Kunitsu', 'Godly', 'Chaos', 'Geist',
     '大天使', '女神', '霊鳥', '神樹',
     '魔神', '神獣', '聖獣', '幻魔',
     '破壊神', '地母神', '龍神', '鬼神',
@@ -53,6 +54,13 @@ export class FusionChart extends SmtFusionChart {
     this.fissionChart = SmtFusionChart.loadFissionTableJson(races, elems, table);
     this.elementChart = SmtFusionChart.loadElementTableJson(elemRaces, elems, elemTable);
     this.races = races;
+    this.raceOrder = compConfig.raceOrder;
+
+    if (compConfig.appCssClasses.includes('smtsj')) {
+      for (const [raceR, raceQ] of Object.entries({ Beast: 'UMA', Genma: 'Fiend', Deity: 'Enigma' })) {
+        this.fissionChart[raceQ] = this.fissionChart[raceR];
+      }
+    }
   }
 
   getLightDark(race: string): number {

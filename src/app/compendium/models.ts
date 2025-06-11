@@ -179,6 +179,7 @@ export interface FusionChart {
   lvlModifier: number;
   elementDemons: string[];
   races: string[];
+  raceOrder: { [race: string]: number };
 
   getLightDark(race: string): number;
   getRaceFissions(race: string): FissionRow;
@@ -192,7 +193,6 @@ export interface FusionChart {
 export interface SquareChart {
   normalChart: FusionChart;
   tripleChart: FusionChart;
-  raceOrder?: { [race: string]: number };
 }
 
 export interface RecipeGeneratorConfig {

@@ -1,4 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
@@ -12,11 +13,13 @@ import { FusionSettingsContainerComponent } from './components/fusion-settings.c
 import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
+import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from './components/password-generator.component';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     SharedCompendiumModule,
     CompendiumRoutingModule
   ],
@@ -28,7 +31,9 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryContainerComponent,
     FusionSettingsContainerComponent,
     FusionChartContainerComponent,
-    RecipeGeneratorContainerComponent
+    RecipeGeneratorContainerComponent,
+    PasswordGeneratorComponent,
+    PasswordGeneratorContainerComponent
   ],
   exports: [
     CompendiumComponent,
@@ -38,7 +43,9 @@ import { RecipeGeneratorContainerComponent } from './components/recipe-generator
     DemonEntryContainerComponent,
     FusionSettingsContainerComponent,
     FusionChartContainerComponent,
-    RecipeGeneratorContainerComponent
+    RecipeGeneratorContainerComponent,
+    PasswordGeneratorComponent,
+    PasswordGeneratorContainerComponent
   ],
 })
 export class Smt4CompendiumModule {

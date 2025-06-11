@@ -74,7 +74,6 @@ function createCompConfig(): CompendiumConfigSet {
     appCssClasses: ['smt4', 'krao'],
 
     lang: 'en',
-    translations: { en: ['ja'] },
     affinityElems: [],
     skillData: [SKILL_DATA_JSON],
     fusionSpells: {},

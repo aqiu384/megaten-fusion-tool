@@ -53,7 +53,7 @@ export class Compendium implements ICompendium {
     const langEn = this.compConfig.lang === 'en';
     const ailEffect = langEn ? 'Innate resistance' : '';
     const ailTarget = langEn ? 'Self' : '自身';
-    const ailPrefixes = langEn ? ['Weak ', 'Resist ', 'Null '] : ['弱', '強', '無'];
+    const ailPrefixes = langEn ? ['Weak ', 'Resist ', 'Null '] : ['弱', '耐', '無'];
     const ailmentResists: SkillListDict = {};
     const ailLvls: StringDict = {};
     const hasInnate = this.compConfig.appCssClasses.includes('smt5v');
@@ -68,6 +68,7 @@ export class Compendium implements ICompendium {
       for (const ail of this.compConfig.ailmentElems) {
         ailmentResists[lvl].push({
           name:     prefix + ail,
+          code:     0,
           element:  'pas',
           effect:   ailEffect,
           target:   ailTarget,
@@ -88,9 +89,11 @@ export class Compendium implements ICompendium {
           name,
           race,
           align,
+          code:       json['code'] || 0,
           lvl:        json['lvl'],
           currLvl:    json['currLvl'] || json['lvl'],
           skills:     json['skills'],
+          skillCards: json['skillCards'] || {},
           price:      json['price'] * 2,
           stats:      json['stats'],
           resists:    codifyResists(json['resists'], json['resists'], json['resmods']),
@@ -124,6 +127,7 @@ export class Compendium implements ICompendium {
       for (const [name, json] of Object.entries(skillJson)) {
         skills[name] = {
           name,
+          code:    json['code'] || 0,
           element: json['element'],
           rank:    json['rank'],
           effect:  json['effect'],
@@ -132,6 +136,7 @@ export class Compendium implements ICompendium {
           hits:    json['hits'] || '',
           cost:    json['cost'] || 0,
           learnedBy: [],
+          transfer: [],
           level: 0
         };
 
@@ -154,10 +159,11 @@ export class Compendium implements ICompendium {
     }
 
     for (const [name, ingreds] of Object.entries(this.compConfig.specialRecipes)) {
-      specialRecipes[name] = ingreds;
+      demons[name].fusion = ingreds.length > 0 ? 'special' : 'accident';
+      specialRecipes[name] = ingreds.filter(i => !i.includes(' x '));
 
-      if (demons[name].fusion === 'normal') {
-        demons[name].fusion = ingreds.length > 0 ? 'special' : 'accident';
+      if (ingreds.length > 0 && this.compConfig.appCssClasses.includes('smt3')) {
+        specialPairRecipes[name] = ingreds.map(p => ({ name1: p.split(' x ')[0], name2: p.split(' x ')[1] }));
       }
     }
 
@@ -189,11 +195,12 @@ export class Compendium implements ICompendium {
 
     for (const demon of Object.values(demons).sort((a, b) => a.currLvl - b.currLvl)) {
       if (demon.fusion !== 'enemy') {
-        for (const name of Object.keys(demon.skills)) {
-          skills[name].learnedBy.push({
-            demon: demon.name,
-            level: demon.skills[name]
-          });
+        for (const [name, level] of Object.entries(demon.skills)) {
+          skills[name].learnedBy.push({ demon: demon.name, level });
+        }
+
+        for (const [name, level] of Object.entries(demon.skillCards)) {
+          skills[name].transfer.push({ demon: demon.name, level });
         }
 
         for (let i = 0; i < demon.ailments.length; i++) {
@@ -211,11 +218,12 @@ export class Compendium implements ICompendium {
     this.invertedDemons = inversions;
   }
 
-  updateDerivedData(demontToggles: Toggles) {
+  updateDerivedData(demonToggles: Toggles) {
     const demonEntries = Object.assign({}, this.demons);
     const skills = Object.keys(this.skills).map(name => this.skills[name]);
     const ingredients: { [race: string]: number[] } = {};
     const results: { [race: string]: number[] } = {};
+    const hasElemOverflow = this.compConfig.appCssClasses.includes('smt4f');
 
     for (const race of this.compConfig.races) {
       ingredients[race] = [];
@@ -243,12 +251,12 @@ export class Compendium implements ICompendium {
       const ingredsLen = currIngreds.length;
       const resultsLen = currResults.length;
 
-      if (ingredsLen && resultsLen && currIngreds[ingredsLen - 1] !== currResults[resultsLen - 1]) {
+      if (hasElemOverflow && ingredsLen && resultsLen && currIngreds[ingredsLen - 1] !== currResults[resultsLen - 1]) {
         currResults.push(100);
       }
     }
 
-    for (const [name, included] of Object.entries(demontToggles)) {
+    for (const [name, included] of Object.entries(demonToggles)) {
       if (!included) {
         const { race, lvl } = this.demons[name];
         delete demonEntries[name];

@@ -170,6 +170,7 @@ function createFusionFull(ingreds: string[], inheritChain: number[], result: str
     if (chain2.length === 0) {
       const demonR = comp.getDemon(ingredR);
       const sameRaceR = comp.getResultDemonLvls(demonR.race)
+        .filter(l => l < 100)
         .map(l => comp.reverseLookupDemon(demonR.race, l))
         .filter(i => i !== ingredR);
 

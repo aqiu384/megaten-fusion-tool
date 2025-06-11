@@ -9,6 +9,7 @@ export class SpeciesFusionChart implements FusionChart {
   fissionChart: FissionTable;
   fusionChart: FusionTable;
   races: string[];
+  raceOrder: { [race: string]: number; };
 
   constructor(compConfig: CompendiumConfig) {
     this.initCharts(compConfig);
@@ -19,6 +20,7 @@ export class SpeciesFusionChart implements FusionChart {
     const table: string[][] = compConfig.tripleTable['table'];
     const triRaces = races.map(race => '3' + race);
 
+    this.raceOrder = compConfig.raceOrder;
     this.speciesLookup = compConfig.speciesLookup;
     this.fissionChart = {};
     this.fusionChart = {};

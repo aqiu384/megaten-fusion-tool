@@ -34,7 +34,6 @@ export interface CompendiumConfig extends BaseComp {
 
   demonData: any[];
   skillData: any[];
-  normalTable: any;
   specialRecipes: { [result: string]: string[] };
   pairRecipes: { [result: string]: string[] };
   downRecipes: { [result: string]: string[] };

@@ -16,7 +16,7 @@ export interface Skill extends BaseSkill {
 }
 
 export interface DecodedDemon {
-  language: string;
+  isEnglish: boolean;
   demonCode: number;
   lvl: number;
   exp: number;
@@ -27,7 +27,6 @@ export interface DecodedDemon {
 
 export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
-  translations: { [en: string]: string[] };
   lang: string;
   races: string[];
 

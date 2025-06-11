@@ -1,9 +1,8 @@
-import { Component, ChangeDetectionStrategy, Input, Inject } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { SortedTableHeaderComponent, SortedTableComponent } from '../../shared/sorted-table.component';
-import { COMPENDIUM_CONFIG } from '../constants';
-import { CompendiumConfig, FusionPair } from '../models';
+import { FusionPair } from '../models';
 import Translations from '../data/translations.json';
 
 @Component({
@@ -104,9 +103,10 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
     </div>
   `
 })
-export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
+export class FusionPairTableComponent extends SortedTableComponent<FusionPair> implements OnInit {
   private _title = 'Ingredient 1 x Ingredient 2 = Result';
 
+  @Input() raceOrder: { [race: string]: number };
   @Input() leftHeader = 'Ingredient 1';
   @Input() rightHeader = 'Ingredient 2';
   @Input() leftBaseUrl = '../..';
@@ -119,21 +119,6 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
   sortFuns: ((f1: FusionPair, f2: FusionPair) => number)[] = [];
   currRow = this.initRow;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) private config: CompendiumConfig) {
-    super();
-    const { raceOrder } = config;
-    this.sortFuns = [
-      (f1, f2) => f1.price - f2.price,
-      (f1, f2) => f1.price - f2.price,
-      (f1, f2) => (raceOrder[f1.race1] - raceOrder[f2.race1]) * 100 + f2.lvl1 - f1.lvl1,
-      (f1, f2) => f1.lvl1 - f2.lvl1,
-      (f1, f2) => f1.name1.localeCompare(f2.name1),
-      (f1, f2) => (raceOrder[f1.race2] - raceOrder[f2.race2]) * 100 + f2.lvl2 - f1.lvl2,
-      (f1, f2) => f1.lvl2 - f2.lvl2,
-      (f1, f2) => f1.name2.localeCompare(f2.name2)
-    ];
-  }
-
   @Input() set title(title: string) {
     this._title = title;
     this.currRow = this.initRow;
@@ -143,6 +128,28 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> {
     return this._title;
   }
 
+  ngOnInit() {
+    this.nextSortFuns();
+  }
+
+  nextSortFuns() {
+    this.sortFuns = [];
+
+    if (this.raceOrder) {
+      this.sortFuns.push(
+        (f1, f2) => f1.price - f2.price,
+        (f1, f2) => f1.price - f2.price,
+        (f1, f2) => (this.raceOrder[f1.race1] - this.raceOrder[f2.race1]) * 200 + f2.lvl1 - f1.lvl1,
+        (f1, f2) => f1.lvl1 - f2.lvl1,
+        (f1, f2) => f1.name1.localeCompare(f2.name1),
+        (f1, f2) => (this.raceOrder[f1.race2] - this.raceOrder[f2.race2]) * 200 + f2.lvl2 - f1.lvl2,
+        (f1, f2) => f1.lvl2 - f2.lvl2,
+        (f1, f2) => f1.name2.localeCompare(f2.name2)
+      );
+
+      this.sort();
+    }
+  }
 
   getSortFun(sortFunIndex: number): (a: FusionPair, b: FusionPair) => number {
     return this.sortFuns[sortFunIndex];

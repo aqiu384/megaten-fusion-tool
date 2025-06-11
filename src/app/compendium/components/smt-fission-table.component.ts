@@ -26,6 +26,7 @@ export const SmtFissionTableComponentTemplate = `
     [rightHeader]="msgs.RightHeader | translateComp:lang"
     [leftBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
     [rightBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
+    [raceOrder]="fusionChart.raceOrder"
     [rowData]="fusionPairs">
   </app-fusion-pair-table>
 `;

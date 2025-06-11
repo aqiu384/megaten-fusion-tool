@@ -32,12 +32,12 @@ const PQ2J_NAME_BYTES = [].concat(strToBytes(P3_NAME, 17), strToBytes(P4_NAME, 1
 const PQ1_TEAM_BYTES = [].concat([34, 50], Array(36).fill(31), [31, 0, 31, 0, 0, 0, 1, 128]);
 const PQ2_TEAM_BYTES = [].concat([34, 50], Array(54).fill(31), [31, 0, 1, 0]);
 
-export function encodeDemon(demon: DecodedDemon, game?: string): number[] {
-  return (game && game.includes('2')) ? encodePq2Demon(demon) : encodePqDemon(demon);
+export function encodeDemon(demon: DecodedDemon, isQ2: boolean): number[] {
+  return isQ2 ? encodePq2Demon(demon) : encodePqDemon(demon);
 }
 
 function encodePqDemon(demon: DecodedDemon): number[] {
-  const nameBytes = demon.language === 'jpn' ? PQ1J_NAME_BYTES : PQ1E_NAME_BYTES;
+  const nameBytes = demon.isEnglish ? PQ1E_NAME_BYTES : PQ1J_NAME_BYTES;
   const passBytes = Array(30).fill(0);
 
   const xl = demon.lvl;
@@ -72,7 +72,7 @@ function encodePq2Demon(demon: DecodedDemon): number[] {
   const xe = Math.floor((((-0.0479755766 * xl + 9.28700353) * xl + 71.9694228) * xl + -81.1026214) * xl + 0.120783542);
   const exp = demon.exp < 0 ? xe : demon.exp;
 
-  if (demon.language !== 'jpn') {
+  if (demon.isEnglish) {
     playBytes[6] = 256 - playBytes[6];
   }
 

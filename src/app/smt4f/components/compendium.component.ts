@@ -20,10 +20,11 @@ export class CompendiumComponent {
   otherLinks: { title: string, link: string }[];
 
   constructor(fusionDataService: FusionDataService) {
+    const lang = fusionDataService.compConfig.lang;
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
-    this.otherLinks = [{ title: translateComp(
-      Translations.CompendiumComponent.RecipGenerator,
-      fusionDataService.compConfig.lang
-    ), link: 'recipes' }];
+    this.otherLinks = [this.appCssClasses.includes('smtsj') ?
+      { title: 'Passwords', link: 'passwords' } :
+      { title: translateComp(Translations.CompendiumComponent.RecipGenerator, lang), link: 'recipes' }
+    ];
   }
 }

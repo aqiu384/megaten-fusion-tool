@@ -63,6 +63,15 @@ import Translations from '../../compendium/data/translations.json';
           <tr>
         </tbody>
       </table>
+      <app-demon-skills *ngIf="compConfig.appCssClasses.includes('smtsj')"
+        [title]="'D-Source Skills'"
+        [hasRank]="true"
+        [hasTarget]="true"
+        [hasLvl]="false"
+        [elemOrder]="compConfig.elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="demon.skillCards">
+      </app-demon-skills>
       <app-fusion-entry-table *ngIf="demon.evolvesFrom"
         [title]="statMsgs.EvolvesFrom | translateComp:lang"
         [lang]="compConfig.lang"

@@ -5,19 +5,31 @@ import {
 import { DemonUnlock } from '../compendium/models/fusion-settings';
 
 export interface Demon extends BaseDemon {
+  code: number;
   ailments?: number[];
   evolvesTo?: FusionEntry;
   evolvesFrom?: FusionEntry;
+  skillCards: { [skill: string]: number };
 }
 
 export interface Skill extends BaseSkill {
+  code: number;
   damage?: string;
   target?: string;
 }
 
+export interface DecodedDemon {
+  demonCode: number;
+  lvl: number;
+  exp: number;
+  stats: number[];
+  baseStats: number[];
+  skillCodes: number[];
+  maskByte: number;
+}
+
 export interface CompendiumConfig extends BaseComp {
   appCssClasses: string[];
-  translations: { [en: string]: string[] };
   lang: string;
   races: string[];
 

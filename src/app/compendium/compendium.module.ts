@@ -2,7 +2,6 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { Title } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 
 import { FusionEntryTableComponent } from './components/fusion-entry-table.component';
@@ -26,6 +25,7 @@ import { CompendiumComponent, CompendiumHeaderComponent } from './components/com
 import { SmtFusionsComponent } from './components/smt-fusions.component';
 
 import { CurrentDemonService } from './current-demon.service';
+import { CompendiumTranslator } from './models/compendium-translator';
 
 import { 
   FissionPreviewTableComponent,
@@ -164,7 +164,7 @@ export class SharedCompendiumModule {
   static forRoot(): ModuleWithProviders<SharedCompendiumModule> {
     return {
       ngModule: SharedCompendiumModule,
-      providers: [CurrentDemonService]
+      providers: [CurrentDemonService, CompendiumTranslator]
     };
   }
 }

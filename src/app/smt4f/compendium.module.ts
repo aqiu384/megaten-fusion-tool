@@ -21,7 +21,6 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import EVOLUTIONS_JSON from './data/evolutions.json';
 import ALIGNMENTS_JSON from '../smt4/data/alignments.json';
 import AFFINITIES_JSON from './data/affinity-bonuses.json';
-import JA_NAMES_JSON from '../smt4/data/ja-names.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
 function updateComputedDemon(entry, skillPrices, compConfig) {
@@ -43,7 +42,6 @@ function updateComputedDemon(entry, skillPrices, compConfig) {
 }
 
 function createCompConfig(): CompendiumConfigSet {
-  const translations = Object.entries(JA_NAMES_JSON).reduce((acc, [ja, en]) => { acc[en] = [ja]; return acc }, { en: ['ja'] });
   const affinityElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.affinityElems);
   const skillElems = affinityElems.concat(COMP_CONFIG_JSON.skillElems);
   const affinityBonuses: { costs: number[][], upgrades: number[][] } = { costs: [], upgrades: [] };
@@ -103,7 +101,6 @@ function createCompConfig(): CompendiumConfigSet {
     appCssClasses: ['smt4', 'smt4f'],
 
     lang: 'en',
-    translations,
     affinityElems,
     skillData: [skillData],
     fusionSpells: {},

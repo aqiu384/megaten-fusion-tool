@@ -110,7 +110,6 @@ function createCompConfig(): CompendiumConfigSet {
   for (const game of ['p3', 'p3f', 'p3a', 'p3p']) {
     compConfigs[game] = {
       appTitle: 'Persona 3',
-      translations: { en: ['ja'] },
       lang: 'en',
       races,
       raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),

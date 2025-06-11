@@ -1,7 +1,8 @@
 import { Compendium, SquareChart, NameTrio } from '../models';
 
 export function splitWithDiffRace(elem: string, comp: Compendium, chart: SquareChart): NameTrio[] {
-  const { normalChart: normChart, tripleChart: trioChart, raceOrder } = chart;
+  const { normalChart: normChart, tripleChart: trioChart } = chart;
+  const { raceOrder } = normChart;
   const recipes: NameTrio[] = [];
 
   for (const raceT1 of Object.keys(trioChart.getRaceFissions(elem))) {

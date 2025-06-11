@@ -11,7 +11,6 @@ import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
 import { importSkillRow } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
-import TRANSLATIONS_JSON from './data/translations.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
@@ -31,24 +30,14 @@ function createCompConfig(): CompendiumConfigSet {
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const costTypes = [2 << 10, (5 << 10) - 1000, (19 << 10) - 2001];
   const races = [];
-  const allRaces = [];
   const inheritTypes: { [elem: string]: number[] } = {};
   const enemyDatas = [];
   const skillDatas = [];
   const compConfigs: { [game: string]: CompendiumConfig } = {};
 
-  for (const enRace of COMP_CONFIG_JSON.races) {
-    const penRace = enRace + ' P';
-    races.push(enRace);
-    races.push(penRace);
-    allRaces.push(enRace);
-    allRaces.push(penRace);
-    TRANSLATIONS_JSON[penRace] = [];
-    for (const langRace of TRANSLATIONS_JSON[enRace]) {
-      allRaces.push(langRace);
-      allRaces.push(langRace + 'P');
-      TRANSLATIONS_JSON[penRace].push(langRace + 'P');
-    }
+  for(const race of COMP_CONFIG_JSON.races) {
+    races.push(race);
+    races.push(race + ' P');
   }
 
   const gameDataSets = [
@@ -97,10 +86,9 @@ function createCompConfig(): CompendiumConfigSet {
   for (const game of ['p3r', 'p3e']) {
     compConfigs[game] = {
       appTitle: 'Persona 3 Reload',
-      translations: TRANSLATIONS_JSON,
       lang: 'en',
       races,
-      raceOrder: allRaces.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+      raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       appCssClasses: ['p3r'],
 
       skillData: skillDatas.slice(0, 1),
@@ -146,7 +134,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   return {
     appTitle: 'Persona 3 Reload',
-    raceOrder: allRaces.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     configs: compConfigs
   };
 }

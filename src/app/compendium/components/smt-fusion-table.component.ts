@@ -15,6 +15,7 @@ export const SmtFusionTableComponentTemplate = `
     [rightHeader]="msgs.RightHeader | translateComp:lang"
     [leftBaseUrl]="'../..'"
     [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
+    [raceOrder]="fusionChart.raceOrder"
     [rowData]="fusionPairs">
   </app-fusion-pair-table>
 `

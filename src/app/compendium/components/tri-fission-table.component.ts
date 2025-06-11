@@ -14,7 +14,7 @@ import { CurrentDemonService } from '../../compendium/current-demon.service';
   template: `
     <app-fusion-trio-table
       [title]="'Ingredient 1 x Ingredient 2 x Ingredient 3 = ' + currentDemon"
-      [raceOrder]="chart.raceOrder"
+      [raceOrder]="chart.normalChart.raceOrder"
       [rowData]="fissionTrios">
     </app-fusion-trio-table>
   `

@@ -28,8 +28,6 @@ import PARTY_DATA_JSON from './data/party-data.json';
 import PAIR_RECIPES_JSON from './data/pair-recipes.json';
 import DOWN_RECIPES_JSON from './data/down-recipes.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
-
-import FUSION_CHART_JSON from '../p5/data/fusion-chart.json';
 import INHERIT_TYPES_JSON from '../p5/data/inheritance-types.json';
 
 function createCompConfig(): CompendiumConfig {
@@ -90,7 +88,6 @@ function createCompConfig(): CompendiumConfig {
 
     demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
     skillData: [SKILL_DATA_JSON],
-    normalTable: FUSION_CHART_JSON,
     specialRecipes: SPECIAL_RECIPES_JSON,
     pairRecipes: PAIR_RECIPES_JSON,
     downRecipes: DOWN_RECIPES_JSON

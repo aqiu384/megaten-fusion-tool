@@ -7,6 +7,7 @@ export class FusionChart extends SmtFusionChart {
   elementDemons = [];
   lvlModifier = 1.5;
   speciesLookup: { [race: string]: string };
+  raceOrder: { [race: string]: number; };
   hasDarkTable = false;
 
   protected fissionChart: FissionTable;
@@ -21,6 +22,7 @@ export class FusionChart extends SmtFusionChart {
   }
 
   initCharts(compConfig: CompendiumConfig, isTripleChart?: boolean) {
+    this.raceOrder = compConfig.raceOrder;
     this.alignments = compConfig.alignData['races'];
     this.speciesLookup = compConfig.speciesLookup;
     this.elementDemons = isTripleChart ?
