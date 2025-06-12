@@ -46,6 +46,8 @@ export interface CompendiumConfig extends BaseComp {
   lvlModifier: number;
   maxSkillSlots: number;
   hasLightDark: boolean;
+  hasSkillRanks: boolean;
+  hasNonelemInheritance: boolean;
 
   demonData: any[];
   evolveData;

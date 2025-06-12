@@ -45,6 +45,8 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
       lvlModifier: compConfig.lvlModifier,
       maxSkillSlots: compConfig.maxSkillSlots,
       hasLightDark: compConfig.hasLightDark,
+      hasSkillRanks: compConfig.hasSkillRanks,
+      hasNonelemInheritance: compConfig.hasNonelemInheritance,
 
       demonData: compConfig.demonData.map(d => translator.translateDemonData(d, lang)),
       fusionSpells: translator.translateFusionSpells(compConfig.fusionSpells, lang),

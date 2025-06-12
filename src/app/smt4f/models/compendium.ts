@@ -83,12 +83,13 @@ export class Compendium implements ICompendium {
     for (const demonJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonJson)) {
         const race = json['race'];
-        const align = aligns[name] || aligns[race] || 'None-None';
+        const align = aligns[name] || aligns[race] || 'Neutral-Neutral';
+        const [lidark, lawchaos] = align.split('-');
 
         demons[name] = {
           name,
           race,
-          align,
+          align:      `align-${lidark[0].toLocaleLowerCase()}${lawchaos[0].toLocaleLowerCase()}`,
           code:       json['code'] || 0,
           lvl:        json['lvl'],
           currLvl:    json['currLvl'] || json['lvl'],

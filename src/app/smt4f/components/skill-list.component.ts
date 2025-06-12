@@ -15,7 +15,7 @@ import Translations from  '../../compendium/data/translations.json';
       [lang]="compConfig.lang"
       [elemOrder]="compConfig.elemOrder"
       [hasTarget]="true"
-      [hasRank]="compConfig.hasLightDark"
+      [hasRank]="compConfig.hasSkillRanks"
       [transferTitle]="transferTitle"
       [rowData]="skills | async">
     </app-smt-skill-list>

@@ -22,9 +22,13 @@ export class CompendiumComponent {
   constructor(fusionDataService: FusionDataService) {
     const lang = fusionDataService.compConfig.lang;
     this.appCssClasses = fusionDataService.compConfig.appCssClasses;
-    this.otherLinks = [this.appCssClasses.includes('smtsj') ?
-      { title: 'Passwords', link: 'passwords' } :
-      { title: translateComp(Translations.CompendiumComponent.RecipGenerator, lang), link: 'recipes' }
-    ];
+    this.otherLinks = [];
+
+    if (fusionDataService.compConfig.maxSkillSlots > 0) {
+      this.otherLinks = [this.appCssClasses.includes('smtsj') ?
+        { title: 'Passwords', link: 'passwords' } :
+        { title: translateComp(Translations.CompendiumComponent.RecipGenerator, lang), link: 'recipes' }
+      ];
+    }
   }
 }

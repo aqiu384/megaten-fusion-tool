@@ -20,11 +20,23 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import INHERIT_SKILLS_JSON from './data/inherit-skills.json';
 
+function dsshAttacks(stats: number[], lvl: number, matkUps: number[]) {
+    const [St, In, Ma, En, Ag, Lu] = stats.slice(2);
+    return [
+      2*lvl + 2*St,
+      1.5*lvl + 1.2*Ag + 0.6*Lu,
+      1.875*In + matkUps[Ma],
+      2*In + Ma,
+      2*lvl + 2*En + 16,
+      1.5*lvl + Ag + 0.5*Lu
+    ].map(a => Math.floor(a));
+}
+
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON['resistElems'];
   const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
 
-  const races = [];
+  const matkUps = Array<number>(41).fill(0);
   const raceAligns = {};
   const species = {};
   const speciesLookup = {};
@@ -33,6 +45,10 @@ function createCompConfig(): CompendiumConfig {
   const BEASTS = [];
   const COST_HP = 2 << 10;
   const COST_MP = 3 << 10;
+
+  for (let i = 1; i < matkUps.length; i++) {
+    matkUps[i] = matkUps[i - 1] + COMP_CONFIG_JSON.matkUps[i - 1];
+  }
 
   for (const entry of Object.values(SKILL_DATA_JSON)) {
     const cost = entry['cost'];
@@ -58,7 +74,6 @@ function createCompConfig(): CompendiumConfig {
 
     for (const pair of rs.slice(1)) {
       const [race, align] = pair.split('|');
-      races.push(race);
       raceAligns[race] = align;
       species[spec].push(race);
       speciesLookup[race] = spec;
@@ -70,6 +85,8 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
+    demon.atks = demon.atks.slice(0, 2).concat(dsshAttacks(demon.stats, Math.floor(demon.lvl), matkUps));
+
     switch (demon.race) {
       case 'Deity':
       case 'Megami':
@@ -128,7 +145,7 @@ function createCompConfig(): CompendiumConfig {
   return {
     appTitle: 'Devil Summoner: Soul Hackers',
     appCssClasses: ['smtnes', 'dssh'],
-    races,
+    races: COMP_CONFIG_JSON['races'],
     resistElems,
     skillElems,
     baseStats: COMP_CONFIG_JSON['baseStats'],
@@ -137,7 +154,7 @@ function createCompConfig(): CompendiumConfig {
     speciesLookup,
     species,
     resistCodes: COMP_CONFIG_JSON['resistCodes'],
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    raceOrder: COMP_CONFIG_JSON['races'].reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: false,
     inheritSkills,

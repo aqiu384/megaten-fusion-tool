@@ -65,6 +65,8 @@ function createCompConfig(): CompendiumConfigSet {
     lvlModifier: 0.5,
     maxSkillSlots: 6,
     hasLightDark: false,
+    hasSkillRanks: false,
+    hasNonelemInheritance: false,
 
     demonData: [DEMON_DATA_JSON],
     evolveData: {},

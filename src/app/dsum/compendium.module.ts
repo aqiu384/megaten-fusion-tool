@@ -23,7 +23,6 @@ function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON['resistElems'];
   const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
 
-  const races = [];
   const raceAligns = {};
   const species = {};
   const speciesLookup = {};
@@ -40,12 +39,12 @@ function createCompConfig(): CompendiumConfig {
 
   const normalTable = {
     races: FUSION_CHART_JSON['races'].concat(['Mitama']),
-    table: FUSION_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
+    table: FUSION_CHART_JSON['table'].concat(['-']),
   }
 
   const tripleTable = {
     races: TRIPLE_CHART_JSON['races'].concat(['Mitama']),
-    table: TRIPLE_CHART_JSON['table'].concat(Array(races.length + 1).fill('-')),
+    table: TRIPLE_CHART_JSON['table'].concat(['-']),
   }
 
   const normalElemChart = {
@@ -66,7 +65,6 @@ function createCompConfig(): CompendiumConfig {
 
     for (const pair of rs.slice(1)) {
       const [race, align] = pair.split('|');
-      races.push(race);
       raceAligns[race] = align;
       species[spec].push(race);
       speciesLookup[race] = spec;
@@ -109,7 +107,7 @@ function createCompConfig(): CompendiumConfig {
   return {
     appTitle: 'Shin Megami Tensei: Devil Summoner',
     appCssClasses: ['smtnes', 'dsum'],
-    races,
+    races: COMP_CONFIG_JSON['races'],
     resistElems,
     skillElems,
     baseStats: COMP_CONFIG_JSON['baseStats'],
@@ -118,7 +116,7 @@ function createCompConfig(): CompendiumConfig {
     speciesLookup,
     species,
     resistCodes: COMP_CONFIG_JSON['resistCodes'],
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
+    raceOrder: COMP_CONFIG_JSON['races'].reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: false,
 

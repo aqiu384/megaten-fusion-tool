@@ -19,6 +19,7 @@ import { FusionDataService } from '../fusion-data.service';
         [statHeaders]="compConfig.baseStats"
         [fusionHeaders]="['Drop']"
         [stats]="demon.stats"
+        [price]="showPrice ? demon.price : 0"
         [inherits]="demon.inherits">
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
@@ -58,6 +59,7 @@ import { FusionDataService } from '../fusion-data.service';
 export class DemonEntryComponent {
   @Input() name: string;
   @Input() demon: Demon;
+  @Input() showPrice: boolean;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
 }
@@ -69,6 +71,7 @@ export class DemonEntryComponent {
     <app-demon-entry
       [name]="name"
       [demon]="demon"
+      [showPrice]="showPrice"
       [compConfig]="compConfig"
       [compendium]="compendium">
     </app-demon-entry>
@@ -80,6 +83,7 @@ export class DemonEntryContainerComponent {
   demon: Demon;
   compendium: Compendium;
   compConfig: CompendiumConfig;
+  showPrice: boolean;
   appName = 'Test App';
 
   constructor(
@@ -90,6 +94,8 @@ export class DemonEntryContainerComponent {
   ) {
     this.appName = fusionDataService.appName;
     this.compConfig = fusionDataService.compConfig;
+    this.showPrice = this.compConfig.appCssClasses.includes('dsum') ||
+      this.compConfig.appCssClasses.includes('dssh');
   }
 
   ngOnInit() {

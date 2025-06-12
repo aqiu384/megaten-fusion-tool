@@ -67,6 +67,8 @@ function createCompConfig(): CompendiumConfigSet {
     lvlModifier: 1,
     maxSkillSlots: 8,
     hasLightDark: false,
+    hasSkillRanks: true,
+    hasNonelemInheritance: true,
 
     demonData: [DEMON_DATA_JSON, MAGATAMA_DATA_JSON],
     evolveData: EVOLUTIONS_JSON,

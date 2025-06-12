@@ -60,6 +60,11 @@
 .smt4 td.affinity8 { color: forestgreen; }
 .smt4 td.affinity9 { color: forestgreen; }
 
+.smt4 .align-ll, .align-nl, .align-dl { color: cyan; }
+.smt4 .align-lc, .align-nc, .align-dc { color: tomato; }
+.smt4 .align-ll:after, .align-ln:after, .align-lc:after { content: "↑"; }
+.smt4 .align-dl:after, .align-dn:after, .align-dc:after { content: "↓"; }
+
 .smt3 th.title, .smt3 th.nav.active, .smt3 th.nav.active a { color: white; background-color: #3b3a62; }
 .smtsj th.title, .smtsj th.nav.active, .smtsj th.nav.active a { color: white; background-color: #200470; }
 .smt4f th.title, .smt4f th.nav.active, .smt4f th.nav.active a { background-color: white; color: black; }

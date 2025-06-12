@@ -29,7 +29,7 @@ function estimateDesuPrice(demon, statPrices: number[], skillPrices: { [skill: s
   const statPrice = statPrices[stats.slice(stats.length - 4).reduce((acc, s) => acc + s, 0)];
   const skills = <{ [skill: string]: number }>demon.skills;
   const skillPrice = Object.entries(skills).reduce((acc, [sname, slvl]) => acc + (slvl < 2 ? skillPrices[sname] : 0), 0);
-  return statPrice + skillPrice + (demon.race === 'Element' ? 1000 : demon.race === 'Mitama' ? 3000 : 0) / 2;
+  return statPrice + skillPrice + (demon.race === 'Element' ? 1000 : demon.race === 'Mitama' ? 3000 : 0);
 }
 
 function createCompConfig(): CompendiumConfigSet {
@@ -53,7 +53,7 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   for (let i = 1; i < skillRanks.length; i++) {
-    skillRanks[i] = skillRanks[i - 1] + PRICE_PBOX_JSON.skillTable[i - 1] / 2;
+    skillRanks[i] = skillRanks[i - 1] + PRICE_PBOX_JSON.skillTable[i - 1];
   }
 
   const COST_HP = 2 << 10;
@@ -85,7 +85,7 @@ function createCompConfig(): CompendiumConfigSet {
     for (const entry of Object.values(dataJson)) {
       entry['stats'] = [entry['unique'] ? 1 : 0].concat(entry['stats'])
       entry['skills'] = Object.assign({}, entry['command'] || {}, entry['passive'] || {});
-      entry['price'] = estimateDesuPrice(entry, statPrices, skillPrices);
+      entry['price'] = estimateDesuPrice(entry, statPrices, skillPrices) / 2;
 
       if (rskillLookup[entry.race]?.length === 2) {
         const [sname1, sname2] = rskillLookup[entry.race];
@@ -121,6 +121,8 @@ function createCompConfig(): CompendiumConfigSet {
       lvlModifier: 0.5,
       maxSkillSlots: 7,
       hasLightDark: false,
+      hasSkillRanks: true,
+      hasNonelemInheritance: false,
 
       demonData: [VAN_DEMON_DATA_JSON],
       evolveData: {},

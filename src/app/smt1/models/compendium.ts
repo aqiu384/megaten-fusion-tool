@@ -3,6 +3,19 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 
 type NumDict = { [name: string]: number };
 
+function dsumPrice(stats: number[], lvl: number) {
+  const statTotal = stats.slice(2, 8).reduce((acc, i) => acc + i, 0);
+  return 10 * statTotal * Math.floor(lvl / 10 + 1);
+}
+
+function dsshPrice(stats: number[], race: string) {
+  const statTotal = stats.slice(2, 8).reduce((acc, i) => acc + i, -7);
+  const a = Math.floor(statTotal / 10) + 1;
+  const b = statTotal % 10;
+  const price = b*a*(a+1)/2 + (10-b)*(a-1)*a/2 + a*2 + (b<8?0:1);
+  return 70 * price / (race === 'Element' || race === 'Mitama' ? 0.35 : 1);
+}
+
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
@@ -32,6 +45,8 @@ export class Compendium implements ICompendium {
     const statLen = compConfig.baseStats.length;
     const resLen = compConfig.resistElems.length;
     const resistCodes: NumDict = {};
+    const isDsum = compConfig.appCssClasses.includes('dsum');
+    const isDssh = compConfig.appCssClasses.includes('dssh');
 
     for (const [res, code] of Object.entries(compConfig.resistCodes)) {
       resistCodes[res] = ((code / 1000 | 0 + 8) << 10) + (code % 1000 / 2.5 | 0);
@@ -42,16 +57,19 @@ export class Compendium implements ICompendium {
         json['skills'].reduce((acc, skill, i) => { if (skill) {
           acc[skill.replace('*', '')] = i - 8; 
         } return acc; }, {}) : json['skills'];
+      const price = isDsum ? dsumPrice(json['stats'], json['lvl']) :
+        isDssh ? dsshPrice(json['stats'], json['race']) :
+        Math.pow(Math.floor(json['lvl']), 3);
 
       demons[name] = {
         name,
+        price,
         race:     json['race'],
         lvl:      json['lvl'],
         currLvl:  json['lvl'],
         fusion:   'normal',
         inherits: compConfig.inheritSkills ? compConfig.skillElems.indexOf(json['inherit']) : 24,
         drop:     json['drop'] || '-',
-        price:    Math.pow(Math.floor(json['lvl']), 3),
         stats:    json['stats'].slice(0, statLen),
         atks:     json['atks'] || [],
         resists:  json['resists'].substring(0, resLen).split('').map(x => resistCodes[x]),
