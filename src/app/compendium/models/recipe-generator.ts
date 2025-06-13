@@ -17,7 +17,7 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
   }
 
   const skillsI = Object.keys(skills).map(s => comp.getSkill(s));
-  const canInheritI = canInheritCode(skillsI.map(s => s.element), inheritElems);
+  const canInheritI = canInheritCode(skillsI.map(s => s.inherit), inheritElems);
   let stepR = comp.getSpecialNameEntries(demon);
 
   if (stepR.length < 2 && triExclusiveRaces.includes(demonR.race)) {
@@ -51,8 +51,8 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
 
   const ingredsR = stepR.map(i => comp.getDemon(i)).sort((a, b) => b.price - a.price);
   const skillsR = Object.keys(skillRef).map(s => comp.getSkill(s));
-  const canInheritR = canInheritCode(skillsR.map(s => s.element), inheritElems);
-  const skillInheritsR = skillsR.map(s => canInheritCode([s.element], inheritElems));
+  const canInheritR = canInheritCode(skillsR.map(s => s.inherit), inheritElems);
+  const skillInheritsR = skillsR.map(s => canInheritCode([s.inherit], inheritElems));
   let leftIngredR: Demon, rightIngredR: Demon, inheritScore = 0;
 
   for (let i = 0; i < ingredsR.length; i++) {
@@ -88,9 +88,9 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
   if (restrictInherits) {
     const { left: leftSkills, right: rightSkills } = divideInheritSkills(leftIngredR.inherits, rightIngredR.inherits, skillInheritsR, skillsR.map(s => s.name));
     leftIngreds = leftSkills.map(s => skillRef[s]);
-    leftInherits = canInheritChain(leftSkills.map(s => comp.getSkill(s).element), inheritElems);
+    leftInherits = canInheritChain(leftSkills.map(s => comp.getSkill(s).inherit), inheritElems);
     rightIngreds = rightSkills.map(s => skillRef[s]);
-    rightInherits = canInheritChain(rightSkills.map(s => comp.getSkill(s).element), inheritElems);
+    rightInherits = canInheritChain(rightSkills.map(s => comp.getSkill(s).inherit), inheritElems);
   }
 
   halfPoint = Math.ceil(blankIngreds.length / 2);

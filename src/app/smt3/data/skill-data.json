@@ -913,7 +913,8 @@
   "Maiden's Plea": {
     "effect": "Soothes an enraged demon. Effective when user is young female",
     "element": "pas",
-    "rank": 6
+    "rank": 6,
+    "requires": "Maiden"
   },
   "Makajam": {
     "cost": 1004,
@@ -1468,7 +1469,7 @@
     "effect": "Recruit Enemy. Effective when male target",
     "element": "tal",
     "rank": 4,
-    "requires": "Valkyrie",
+    "success": "Valkyrie",
     "target": "Single"
   },
   "Spiral Viper": {
@@ -1818,7 +1819,7 @@
     "effect": "Solves all kinds of conversation troubles",
     "element": "pas",
     "rank": 6,
-    "requires": "Dionysus"
+    "success": "Dionysus"
   },
   "Wing Buffet": {
     "cost": 1009,

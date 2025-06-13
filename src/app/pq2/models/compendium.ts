@@ -80,6 +80,7 @@ export class Compendium implements ICompendium {
         skills[name] = {
           name,
           element:   json['elem'] || json['element'],
+          inherit:   json['elem'] || json['element'],
           cost:      json['cost'] || 0,
           rank:      json['unique'] ? 99 : json['rank'] || (json['cost'] & 0x3FF) / 100 || 1,
           effect:    json['effect'],

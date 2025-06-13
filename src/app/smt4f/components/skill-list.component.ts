@@ -14,6 +14,7 @@ import Translations from  '../../compendium/data/translations.json';
     <app-smt-skill-list
       [lang]="compConfig.lang"
       [elemOrder]="compConfig.elemOrder"
+      [inheritOrder]="compConfig.hasNonelemInheritance ? compConfig.elemOrder : null"
       [hasTarget]="true"
       [hasRank]="compConfig.hasSkillRanks"
       [transferTitle]="transferTitle"

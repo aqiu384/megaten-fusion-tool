@@ -19,7 +19,7 @@ import { Skill } from '../models';
     <td *ngIf="!data.damage">{{ data.effect }}</td>
     <td *ngIf="hasTarget"><div class="target-icon a{{ data.target || 'Self' }}">{{ data.target || 'Self' }}</div></td>
     <td *ngIf="hasRank" [style.color]="data.rank !== 99 ? null: 'transparent'">{{ data.rank }}</td>
-    <td *ngIf="data.inherit"><div class="element-icon {{ data.inherit.toLowerCase() }}">{{ data.inherit }}</div></td>
+    <td *ngIf="hasInherit"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
     <td *ngIf="hasLvl" [ngClass]="'lvl' + data.level.toString()">{{ data.level | skillLevelToString }}</td>
     <td *ngIf="hasLearned">
       <ul class="comma-list">

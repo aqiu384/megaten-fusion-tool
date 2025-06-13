@@ -25,14 +25,13 @@ function estimateBasePrice(stats: number[]): number {
 }
 
 function createCompConfig(): CompendiumConfigSet {
-  const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-
   for (const entry of Object.values(DEMON_DATA_JSON)) {
     entry['price'] = estimateBasePrice(entry.stats) / 2;
+    entry['affinities'] = entry.inherits.split('').map(i => i === 'o' ? 10 : -10);
   }
 
   for (const entry of Object.values(MAGATAMA_DATA_JSON)) {
-    entry['fusion'] = 'accident';
+    entry['fusion'] = 'party';
     entry['stats'] = [0, 0].concat(entry['stats']);
     entry['race'] = 'Magatama';
   }
@@ -43,6 +42,7 @@ function createCompConfig(): CompendiumConfigSet {
   for (const row of Object.values(SKILL_DATA_JSON)) {
     const cost = row['cost'];
     if (cost) { row['cost'] = cost + (cost < 1000 ? COST_HP : COST_MP); }
+    row['inherit'] = row['requires'] ? row['requires'].toLocaleLowerCase().slice(0, 3) : '';
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
@@ -57,11 +57,11 @@ function createCompConfig(): CompendiumConfigSet {
     appCssClasses: ['smt4', 'smt3'],
 
     lang: 'en',
-    affinityElems: [],
+    affinityElems: COMP_CONFIG_JSON.inheritElems.map(e => e.toLocaleLowerCase().slice(0, 3)),
     skillData: [SKILL_DATA_JSON],
     fusionSpells: {},
-    skillElems,
-    elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
+    skillElems: COMP_CONFIG_JSON.skillElems,
+    elemOrder: COMP_CONFIG_JSON.skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
     affinityBonuses: { costs: [], upgrades: [] },
     lvlModifier: 1,
@@ -91,7 +91,7 @@ function createCompConfig(): CompendiumConfigSet {
   return {
     appTitle: 'Shin Megami Tensei III: Nocturne',
     raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'smt4': compConfig }
+    configs: { 'smt3': compConfig }
   };
 }
 

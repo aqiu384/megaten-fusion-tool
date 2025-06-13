@@ -32,7 +32,6 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
 
   constructor(private fusionDataService: FusionDataService, private title: Title) {
     const compConfig = this.fusionDataService.compConfig;
-    const isSh2 = compConfig.appCssClasses.includes('sh2');
     this.lang = compConfig.lang;
     this.appName = translateComp(Translations.RecipeGeneratorComponent.AppTitle, this.lang) + fusionDataService.appName;
     this.maxSkills = compConfig.maxSkillSlots;
@@ -43,7 +42,7 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       skillElems: compConfig.skillElems,
       inheritElems: compConfig.affinityElems,
       displayElems: {},
-      restrictInherits: isSh2,
+      restrictInherits: compConfig.appCssClasses.includes('sh2') || compConfig.appCssClasses.includes('smt3'),
       triExclusiveRaces: [],
       triFissionCalculator: null,
       triFusionCalculator: null,

@@ -77,6 +77,7 @@ function createCompConfig(): CompendiumConfigSet {
     skillData[name] = {
       code: skillCodes[name],
       element: elem,
+      inherit: row.inherit || row.elem,
       rank: Math.min(rank, 99),
       target: target || 'Self',
       cost: cost === 0 ? 0 : cost + COST_MP,

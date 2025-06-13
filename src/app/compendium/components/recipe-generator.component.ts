@@ -143,7 +143,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   };
 
   blankSkill: Skill = {
-    name: '-', element: '-', rank: 99, cost: 0,
+    name: '-', element: '-', inherit: '-', rank: 99, cost: 0,
     effect: '', target: '', level: 0, learnedBy: [{ demon: '-', level: 0 }]
   };
 
@@ -251,8 +251,8 @@ export class RecipeGeneratorComponent implements OnChanges {
     }
 
     for (const skill of this.compendium.allSkills.filter(s => s.rank < 50 && s.learnedBy.length > 0)) {
-      if (!this.skills[skill.element]) { this.skills[skill.element] = []; }
-      this.skills[skill.element].push(skill);
+      if (!this.skills[skill.inherit]) { this.skills[skill.inherit] = []; }
+      this.skills[skill.inherit].push(skill);
     }
 
     for (const demonList of Object.values(this.demons)) {
