@@ -25,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'dsum',   loadChildren: () => import('./dsum/compendium.module').then(m => m.CompendiumModule) },
   { path: 'dssh',   loadChildren: () => import('./dssh/compendium.module').then(m => m.CompendiumModule) },
   { path: 'krch',   loadChildren: () => import('./krch/compendium.module').then(m => m.CompendiumModule) },
+  { path: 'rrch',   loadChildren: () => import('./rrch/compendium.module').then(m => m.CompendiumModule) },
   { path: 'krao',   loadChildren: () => import('./krao/compendium.module').then(m => m.CompendiumModule) },
   { path: 'sh2',    loadChildren: () => import('./sh2/compendium.module').then(m => m.CompendiumModule) },
   { path: 'p1',     loadChildren: () => import('./p1/compendium.module').then(m => m.CompendiumModule) },

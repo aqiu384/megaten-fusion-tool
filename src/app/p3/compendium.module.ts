@@ -76,7 +76,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const [demons, parties] of gameDataSets) {
     Object.assign(demons, parties);
-    const estimatePrice = (stats: number[]) => 2000 + stats.reduce((acc, x) => acc + x, 0) ** 2;
+    const estimatePrice = (stats: number[]) => 2000 + 3 * stats.reduce((acc, x) => acc + x, 0) ** 2;
 
     for (const demon of Object.values(demons)) {
       demon['code'] = 1;

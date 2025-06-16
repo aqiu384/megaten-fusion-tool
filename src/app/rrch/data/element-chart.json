@@ -1,0 +1,36 @@
+{
+  "elems": [
+    "Erthys",
+    "Aeros",
+    "Aquans",
+    "Flaemis",
+    "Sylph",
+    "Undine"
+  ],
+  "pairs": [
+    ["-"],
+    ["Nigi Mitama", "-"],
+    ["Undine",      "Ara Mitama",  "-"],
+    ["Nigi Mitama", "Sylph",       "Ara Mitama",  "-"],
+    ["Ara Mitama",  "Kusi Mitama", "Nigi Mitama", "Kusi Mitama", "-"],
+    ["Kusi Mitama", "Nigi Mitama", "Kusi Mitama", "Ara Mitama",  "Saki Mitama", "-"]
+  ],
+  "races": [
+    "Pyro",
+    "Frost",
+    "Volt",
+    "Wind",
+    "Fury",
+    "Pagan",
+    "Skill"
+  ],
+  "table": [
+    [-1,  1, -1,  1,  1,  1],
+    [ 1, -1,  1, -1,  1,  2],
+    [-1,  1,  1, -1,  1,  1],
+    [ 1,  1, -1,  1,  2, -1],
+    [ 1, -1,  1,  1, -1,  2],
+    [ 1,  1, -1, -1,  2,  1],
+    [-1, -1,  1,  1,  1,  1]
+  ]
+}

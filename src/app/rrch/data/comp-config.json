@@ -1,0 +1,67 @@
+{
+  "baseStats": [
+    "HP",
+    "LP",
+    "St",
+    "Ma",
+    "Vi",
+    "Lu"
+  ],
+  "inheritTypes": {
+    "dash": ["Rush", "Mad Rush"],
+    "melee": ["Combo", "Venomstrike", "Frenzy", "Mighty Blow"],
+    "weapon": ["Winged Fury"],
+    "breath": ["Fire Breath", "Glacial Blast", "Shock Wave", "Wind Cutter"],
+    "pyro": ["Bufu"],
+    "frost": ["Agi"]
+  },
+  "races": [
+    "Pyro",
+    "Frost",
+    "Volt",
+    "Wind",
+    "Fury",
+    "Pagan",
+    "Skill",
+    "Element",
+    "Spirit",
+    "Fiend",
+    "Evil"
+  ],
+  "raceSkills": {
+    "Pyro": "Ignite",
+    "Frost": "Cool Down",
+    "Volt": "Light Up",
+    "Wind": "Kamikaze",
+    "Fury": "Use Force",
+    "Pagan": "Read Mind",
+    "Skill": "Transform"
+  },
+  "resistCodes": {
+    "f": 7125,
+    "w": 6125,
+    "-": 5100,
+    "s": 4050,
+    "n": 3100,
+    "r": 2100,
+    "d": 1100
+  },
+  "resistElems": [
+    "phy",
+    "gun",
+    "fir",
+    "ice",
+    "ele",
+    "for",
+    "dea",
+    "min"
+  ],
+  "skillElems": [
+    "alm",
+    "rec",
+    "sup",
+    "pas",
+    "inv",
+    "bos"
+  ]
+}

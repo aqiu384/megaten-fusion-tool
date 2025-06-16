@@ -121,7 +121,7 @@ function createCompConfig(): CompendiumConfigSet {
 
       defaultDemon: 'Pixie',
       settingsKey: 'p3r-fusion-tool-settings',
-      settingsVersion: 2401131500
+      settingsVersion: 2506161000
     };
   }
 
