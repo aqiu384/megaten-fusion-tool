@@ -145,6 +145,8 @@ export class Compendium implements ICompendium {
 
         if (!skills[name].rank) {
           skills[name].rank = 99;
+        } if (json['card']) {
+          skills[name].transfer = json['card'].split(', ').map(d => ({ demon: d, level: demons[d] ? 0 : -100 }));
         }
       }
     }

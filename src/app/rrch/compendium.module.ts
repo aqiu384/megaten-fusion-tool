@@ -67,6 +67,8 @@ function createCompConfig(): CompendiumConfigSet {
       cost: cost === 0 ? 0 : cost + COST_MAG,
       effect: skillRowToEffect(nums, descs, false),
     }
+
+    if (descs[2] !== '-') { skillData[sname].card = descs[2]; }
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
