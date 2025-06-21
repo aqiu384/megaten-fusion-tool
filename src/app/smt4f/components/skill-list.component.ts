@@ -34,7 +34,8 @@ export class SkillListContainerComponent extends SLCC {
     super(title, changeDetectorRef, fusionDataService);
     this.compConfig = fusionDataService.compConfig;
     this.appName = translateComp(Translations.SkillListComponent.AppTitle, this.compConfig.lang) + fusionDataService.appName;
-    this.transferTitle = this.compConfig.appCssClasses.includes('smtsj') ? 'D-Source' : '';
+    const appCssClasses = this.compConfig.appCssClasses;
+    this.transferTitle = appCssClasses.includes('smtsj') ? 'D-Source' : appCssClasses.includes('rrch') ? 'Skill Book' : '';
     this.defaultSortFun = (a, b) => (
       this.compConfig.elemOrder[a.element] -
       this.compConfig.elemOrder[b.element]

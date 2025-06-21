@@ -17,6 +17,7 @@ import ELEMENT_CHART_JSON from './data/element-chart.json';
 import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
+import CONFINE_DROPS_JSON from './data/confine-drops.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 
 function estimateKuzuPrice(stats: number[]): number {
@@ -43,8 +44,14 @@ function createCompConfig(): CompendiumConfigSet {
 
     entry['price'] = estimateKuzuPrice(entry.stats) / 2;
     entry['affinities'] = [];
+    entry['skillCards'] = [];
     demonData[dname] = Object.assign({}, entry);
     demonData[dname].skills = nskills;
+  }
+
+  for (const [dname, entry] of Object.entries(CONFINE_DROPS_JSON)) {
+    const cards = entry.items.filter(s => s.startsWith('Book of ')).map(x => x.slice(8));
+    demonData[dname].skillCards = cards.reduce((acc, s) => { acc[s] = 3570; return acc; }, {});
   }
 
   const COST_MAG = 9 << 10;
