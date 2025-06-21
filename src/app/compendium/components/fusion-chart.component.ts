@@ -50,10 +50,10 @@ export class FusionChartComponent implements OnInit, OnChanges, OnDestroy {
   msgs = Translations.FusionChartComponent;
 
   static readonly RESULT_COLORS = Object.entries({
-    'oran': ['-2', 'Erthys', 'Gnome', 'Saki', 'Saki Mitama', 'Random', 'アーシーズ', 'ノーム', 'サキミタマ'],
-    'redd': ['-1', 'Flaemis', 'Salamander', 'Ara ', 'Ara Mitama', 'Fiend', 'フレイミーズ', 'サラマンダー', 'アラミタマ'],
-    'gree': ['1', 'Aeros', 'Sylph', 'Kusi', 'Kusi Mitama', 'UMA', 'エアロス', 'シルキー', 'クシミタマ'],
-    'blue': ['2', 'Aquans', 'Undine', 'Nigi', 'Nigi Mitama', 'Enigma', 'アクアンズ', 'ウンディーネ', 'ニギミタマ']
+    'oran': ['-2', 'Erthys', 'Gnome', 'Saki Mitama', 'Random', 'アーシーズ', 'ノーム', 'サキミタマ'],
+    'redd': ['-1', 'Flaemis', 'Salamander', 'Ara Mitama', 'Fiend', 'フレイミーズ', 'サラマンダー', 'アラミタマ'],
+    'gree': ['1', 'Aeros', 'Sylph', 'Kushi Mitama', 'Kusi Mitama', 'UMA', 'エアロス', 'シルキー', 'クシミタマ'],
+    'blue': ['2', 'Aquans', 'Undine', 'Nigi Mitama', 'Enigma', 'アクアンズ', 'ウンディーネ', 'ニギミタマ']
   });
 
   appName: string;

@@ -1,92 +1,1001 @@
 {
+  "Abihiko": {
+    "lvl": 44,
+    "race": "Skill",
+    "resists": "-wsfs-n-",
+    "skills": ["Blaze", "Mighty Blow", "Tetra Aura", "Unrelenting Focus"],
+    "stats": [570, 17, 23, 14, 10]
+  },
   "Aeros": {
-    "inherit": "-o-o",
     "lvl": 17,
-    "person": "Gentleman",
     "race": "Element",
     "resists": "--f--nn-",
-    "skills": [],
-    "stats": [251, 6, 14, 5, 11, 5]
+    "skills": ["Zanrati", "Resist Force"],
+    "stats": [251, 6, 14, 5, 11]
+  },
+  "Agathion": {
+    "lvl": 6,
+    "race": "Volt",
+    "resists": "-wf-ss--",
+    "skilli": "Sneak",
+    "skills": ["Zio", "Zan", "Patra", "Elec Boost"],
+    "stats": [132, 5, 9, 4, 7]
+  },
+  "Alice": {
+    "lvl": 33,
+    "race": "Pagan",
+    "resists": "fwssssd-",
+    "skills": ["Mudo", "Petra", "Mamudoon", "Skill Extension"],
+    "stats": [451, 10, 22, 6, 15]
+  },
+  "Alp": {
+    "lvl": 3,
+    "race": "Pagan",
+    "resists": "-wff----",
+    "skilli": "Sneak",
+    "skills": ["Dia", "Pulinpa", "Mudo", "Fast Escape"],
+    "stats": [92, 5, 7, 5, 5]
+  },
+  "Angel": {
+    "lvl": 8,
+    "race": "Wind",
+    "resists": "-wf--dE-",
+    "skilli": "Fly",
+    "skills": ["Dia", "Zan", "Marin Karin", "Halve Mind"],
+    "stats": [171, 4, 11, 6, 7]
+  },
+  "Anzu": {
+    "lvl": 26,
+    "race": "Wind",
+    "resists": "-w--fn--",
+    "skilli": "Fly",
+    "skills": ["Tetra Aura", "Mazan", "Zanrati", "Money Find"],
+    "stats": [363, 17, 13, 8, 7]
   },
   "Aquans": {
-    "inherit": "-o-o",
     "lvl": 19,
-    "person": "Gentleman",
     "race": "Element",
     "resists": "---nf-n-",
-    "skills": [],
-    "stats": [295, 7, 15, 8, 8, 5]
+    "skills": ["Bufurati", "Resist Ice"],
+    "stats": [295, 7, 15, 8, 8]
   },
   "Ara Mitama": {
-    "inherit": "-o-o",
     "lvl": 22,
-    "person": "Foreigner",
-    "race": "Spirit",
-    "resists": "-w----nn",
-    "skills": [],
-    "stats": [325, 17, 8, 8, 8, 4]
+    "race": "Mitama",
+    "resists": "-w-f--nn",
+    "skills": ["Marin Karin", "Rakukaja", "Mind Boost"],
+    "stats": [325, 17, 8, 8, 8]
+  },
+  "Arachne": {
+    "lvl": 29,
+    "race": "Pagan",
+    "resists": "-nnf--dn",
+    "skills": ["Ziorati", "Mudo", "Venomstrike", "Halve Death"],
+    "stats": [415, 14, 11, 15, 9]
+  },
+  "Arahabaki": {
+    "lvl": 53,
+    "race": "Frost",
+    "resists": "fwnnnnnW",
+    "skills": ["Petra", "Mad Rush", "Frostbite", "Whimsical Aid"],
+    "stats": [662, 16, 25, 20, 11]
+  },
+  "Archangel": {
+    "lvl": 23,
+    "race": "Wind",
+    "resists": "swf--dE-",
+    "skilli": "Fly",
+    "skills": ["Zanrati", "Dia Aura", "Mazan", "Life Bonus"],
+    "stats": [335, 18, 7, 12, 6]
+  },
+  "Arioch": {
+    "lvl": 72,
+    "race": "Frost",
+    "resists": "sn-dfsn-",
+    "skills": ["Cocytus", "Glacial Blast", "Rakukajaon", "Mabufudyne", "Vengeance Seal"],
+    "stats": [804, 36, 17, 27, 12]
+  },
+  "Artemis": {
+    "lvl": 40,
+    "race": "Frost",
+    "resists": "--fdn-s-",
+    "skilli": "Fly",
+    "skills": ["Frenzy", "Diarama", "Glacial Blast", "Tarukajaon", "Ice Boost"],
+    "stats": [618, 21, 16, 14, 13]
+  },
+  "Asura": {
+    "lvl": 75,
+    "race": "Pyro",
+    "resists": "sndfs1n-",
+    "skills": ["Mighty Blow", "Tetrakarn", "Maragidyne", "Fire Breath", "Agni's Blessing"],
+    "stats": [774, 26, 31, 22, 16]
+  },
+  "Azumi": {
+    "lvl": 7,
+    "race": "Frost",
+    "resists": "-wfn----",
+    "skilli": "Fly",
+    "skills": ["Bufu", "Patra", "Mabufu", "Spirit Drain"],
+    "stats": [141, 6, 9, 5, 6]
+  },
+  "Barong": {
+    "lvl": 66,
+    "race": "Volt",
+    "resists": "----dsEn",
+    "skills": ["Bolt Storm", "Makakaja", "Shock Wave", "Maziodyne", "Elec Boost"],
+    "stats": [675, 24, 28, 19, 15]
+  },
+  "Basilisk": {
+    "lvl": 58,
+    "race": "Frost",
+    "resists": "--nnfs-w",
+    "skills": ["Glacial Blast", "Petra", "Bufudyne", "Mabufudyne", "Null Mortal"],
+    "stats": [714, 30, 11, 24, 13]
+  },
+  "Beelzebub": {
+    "lvl": 80,
+    "race": "Pagan",
+    "resists": "sws11fdn",
+    "skilli": "Intimidate",
+    "skills": ["Mamudoon", "Maziodyne", "Glacial Blast", "Shock Wave", "Retribution"],
+    "stats": [827, 26, 32, 28, 14]
+  },
+  "Belial": {
+    "lvl": 66,
+    "race": "Pyro",
+    "resists": "-snfs-ds",
+    "skilli": "Allure",
+    "skills": ["Maragidyne", "Blaze", "Hellfire", "Diarahan", "Life Surge"],
+    "stats": [742, 32, 18, 22, 14]
+  },
+  "Belphegor": {
+    "lvl": 71,
+    "race": "Skill",
+    "resists": "-sfn-1-n",
+    "skilli": "Fly",
+    "skills": ["Mad Rush", "Tetrakarn", "Zandyne", "Rakukajaon", "Life Surge"],
+    "stats": [777, 22, 27, 25, 17]
+  },
+  "Black Frost": {
+    "lvl": 40,
+    "race": "Pagan",
+    "resists": "-_nd-fn_",
+    "skills": ["Mudo", "Tetra Aura", "Cocytus", "Exp Boost"],
+    "stats": [586, 16, 19, 12, 13]
+  },
+  "Camael": {
+    "lvl": 67,
+    "race": "Wind",
+    "resists": "snn-snE-",
+    "skilli": "Fly",
+    "skills": ["Mazandyne", "State of Bliss", "Tempest", "Wind Cutter", "Vengeance Seal"],
+    "stats": [786, 30, 15, 25, 17]
+  },
+  "Cerberus": {
+    "lvl": 44,
+    "race": "Pyro",
+    "resists": "--df----",
+    "skilli": "Provoke",
+    "skills": ["Agidyne", "Maragidyne", "Mighty Blow", "Life Gain"],
+    "stats": [582, 27, 9, 17, 10]
+  },
+  "Chernobog": {
+    "lvl": 33,
+    "race": "Fury",
+    "resists": "--fs--n-",
+    "skills": ["Frostbite", "Pulinpa", "Venomstrike", "Mind Boost"],
+    "stats": [473, 17, 15, 14, 7]
+  },
+  "Cybele": {
+    "lvl": 37,
+    "race": "Volt",
+    "resists": "--nnnf-w",
+    "skilli": "Allure",
+    "skills": ["Dekaja", "Ziodyne", "Dia Aura", "Resist Elec"],
+    "stats": [476, 11, 20, 17, 8]
+  },
+  "Decarabia": {
+    "lvl": 55,
+    "race": "Wind",
+    "resists": "-nfssdn-",
+    "skilli": "Fly",
+    "skills": ["Tempest", "Dekaja", "Makakaja", "Magic Chakra"],
+    "stats": [658, 19, 25, 18, 13]
+  },
+  "Dominion": {
+    "lvl": 30,
+    "race": "Wind",
+    "resists": "-wf--dEs",
+    "skilli": "Fly",
+    "skills": ["Zanrati", "Rakukaja", "Dia Aura", "Vitality Chakra"],
+    "stats": [408, 9, 18, 11, 11]
+  },
+  "Enku": {
+    "lvl": 21,
+    "race": "Pyro",
+    "resists": "--df-fn-",
+    "skills": ["Tarukaja", "Agirati", "Maragi", "Money Find"],
+    "stats": [333, 10, 15, 9, 7]
   },
   "Erthys": {
-    "inherit": "-o-o",
     "lvl": 14,
-    "person": "Gentleman",
     "race": "Element",
     "resists": "----sfn-",
-    "skills": [],
-    "stats": [275, 11, 5, 12, 5, 5]
+    "skills": ["Ziorati", "Resist Elec"],
+    "stats": [275, 11, 5, 12, 5]
+  },
+  "Feng Huang": {
+    "lvl": 34,
+    "race": "Wind",
+    "resists": "-wssssE-",
+    "skilli": "Fly",
+    "skills": ["Mazan", "Recarm", "Zanrati", "Luck Chakra"],
+    "stats": [439, 14, 16, 10, 13]
+  },
+  "Fenrir": {
+    "lvl": 55,
+    "race": "Fury",
+    "resists": "n-111fn-",
+    "skills": ["Frenzy", "Agidyne", "Makara Aura", "Retribution"],
+    "stats": [651, 26, 24, 14, 10]
+  },
+  "Fionn mac Cumhaill": {
+    "lvl": 52,
+    "race": "Pyro",
+    "resists": "s-d-f--n",
+    "skills": ["Fire Breath", "Maragidyne", "State of Bliss", "Rakukajaon", "Agni's Blessing"],
+    "stats": [693, 23, 24, 16, 12]
   },
   "Flaemis": {
-    "inherit": "-o-o",
     "lvl": 21,
-    "person": "Gentleman",
     "race": "Element",
     "resists": "--nf--n-",
-    "skills": [],
-    "stats": [315, 13, 13, 8, 6, 5]
+    "skills": ["Agirati", "Resist Fire"],
+    "stats": [315, 13, 13, 8, 6]
   },
-  "Kusi Mitama": {
-    "inherit": "-o-o",
+  "Futsunushi": {
+    "lvl": 56,
+    "race": "Skill",
+    "resists": "-w----Es",
+    "skilli": "Fly",
+    "skills": ["Mighty Blow", "Tarukaja", "Rakukajaon", "Resist Phys"],
+    "stats": [663, 25, 17, 18, 15]
+  },
+  "Gashadokuro": {
+    "lvl": 47,
+    "race": "Pagan",
+    "resists": "-xfd-fn-",
+    "skilli": "Provoke",
+    "skills": ["Mamudo", "Makajam", "Petra", "Halve Mortal"],
+    "stats": [641, 17, 14, 23, 12]
+  },
+  "Gdon": {
+    "lvl": 34,
+    "race": "Pyro",
+    "resists": "-nsf---s",
+    "skills": ["Venomstrike", "Agi", "Agidyne", "Life Gain"],
+    "stats": [469, 24, 8, 13, 8]
+  },
+  "Ghoul": {
+    "lvl": 25,
+    "race": "Pagan",
+    "resists": "--f-----",
+    "skills": ["Combo", "War Cry", "Mudo", "Life Gain"],
+    "stats": [343, 14, 9, 6, 15]
+  },
+  "Gozuki": {
+    "lvl": 20,
+    "race": "Fury",
+    "resists": "s-----Es",
+    "skills": ["Mad Rush", "War Cry", "Mighty Blow", "Vengeance Seal"],
+    "stats": [379, 15, 5, 13, 6]
+  },
+  "Hayataro": {
+    "lvl": 34,
+    "race": "Volt",
+    "resists": "s---nf-s",
+    "skills": ["Spark", "Tarukaja", "Diarama", "Ziodyne", "Resist Phys"],
+    "stats": [502, 15, 18, 12, 10]
+  },
+  "Hi-no-Kagutsuchi": {
+    "lvl": 58,
+    "race": "Pyro",
+    "resists": "--dfn---",
+    "skills": ["Hellfire", "Mamudo", "Fire Breath", "Fire Boost"],
+    "stats": [695, 26, 24, 15, 13]
+  },
+  "Hitokotonushi": {
+    "lvl": 45,
+    "race": "Wind",
+    "resists": "-nf--dn-",
+    "skilli": "Fly",
+    "skills": ["Zandyne", "Tempest", "Media", "Whimsical Aid"],
+    "stats": [572, 17, 21, 15, 12]
+  },
+  "Huang Long": {
+    "lvl": 58,
+    "race": "Wind",
+    "resists": "--ssfdnn",
+    "skilli": "Fly",
+    "skills": ["Wind Cutter", "Dekaja", "Samarecarm", "Diarahan", "Force Boost"],
+    "stats": [783, 20, 24, 24, 14]
+  },
+  "Ichimokuren": {
+    "lvl": 38,
+    "race": "Wind",
+    "resists": "-wn-f---",
+    "skilli": "Fly",
+    "skills": ["Flurry", "Frenzy", "Zandyne", "Devotion"],
+    "stats": [529, 17, 18, 16, 7]
+  },
+  "Idun": {
+    "lvl": 34,
+    "race": "Skill",
+    "resists": "----fd-n",
+    "skilli": "Intimidate",
+    "skills": ["Media", "Dekaja", "Flurry", "Spark", "Growth"],
+    "stats": [488, 8, 23, 9, 15]
+  },
+  "Incubus": {
+    "lvl": 51,
+    "race": "Pagan",
+    "resists": "-w--f-dw",
+    "skilli": "Allure",
+    "skills": ["Marin Karin", "Flurry", "Mamudoon", "Spirit Drain"],
+    "stats": [595, 17, 25, 13, 15]
+  },
+  "Inugami": {
+    "lvl": 8,
+    "race": "Pagan",
+    "resists": "---f--ns",
+    "skilli": "Fly",
+    "skills": ["Combo", "Makajam", "Mamudo", "Scavenger"],
+    "stats": [143, 9, 8, 6, 4]
+  },
+  "Ippon-Datara": {
+    "lvl": 12,
+    "race": "Skill",
+    "resists": "-w--f-ds",
+    "skills": ["Maragi", "Rakukaja", "Combo", "Life Bonus"],
+    "stats": [229, 9, 8, 9, 5]
+  },
+  "Jack Frost": {
+    "lvl": 16,
+    "race": "Frost",
+    "resists": "--fd----",
+    "skills": ["Mabufu", "Dormina", "Bufurati", "Ice Boost"],
+    "stats": [245, 7, 13, 8, 7]
+  },
+  "Jack-o'-Lantern": {
+    "lvl": 12,
+    "race": "Pyro",
+    "resists": "-wdf----",
+    "skilli": "Fly",
+    "skills": ["Agi", "Pulinpa", "Agirati", "Resist Fire"],
+    "stats": [209, 5, 12, 7, 7]
+  },
+  "Jubokko": {
+    "lvl": 28,
+    "race": "Frost",
+    "resists": "--fs--ns",
+    "skills": ["Venomstrike", "Bufurati", "Dormina", "Luck Chakra"],
+    "stats": [390, 11, 17, 9, 10]
+  },
+  "Koropokkur": {
+    "lvl": 11,
+    "race": "Volt",
+    "resists": "Ws--nf--",
+    "skilli": "Sneak",
+    "skills": ["Mazio", "Zio", "Combo", "Fast Escape"],
+    "stats": [194, 6, 8, 6, 11]
+  },
+  "Kudan": {
+    "lvl": 51,
+    "race": "Skill",
+    "resists": "fd-----n",
+    "skilli": "Fly",
+    "skills": ["Diarahan", "State of Bliss", "Tarukajaon", "Endure"],
+    "stats": [627, 5, 18, 17, 30]
+  },
+  "Kurama Tengu": {
+    "lvl": 41,
+    "race": "Wind",
+    "resists": "-w--fd--",
+    "skilli": "Fly",
+    "skills": ["Flurry", "Zandyne", "Patra", "Resist Force"],
+    "stats": [534, 15, 21, 15, 9]
+  },
+  "Kushi Mitama": {
     "lvl": 30,
-    "person": "Foreigner",
-    "race": "Spirit",
-    "resists": "-w----nn",
-    "skills": [],
-    "stats": [415, 10, 19, 10, 10, 4]
+    "race": "Mitama",
+    "resists": "-w--f-nn",
+    "skills": ["Combo", "Tarukaja", "Halve Mind"],
+    "stats": [415, 10, 19, 10, 10]
+  },
+  "Lamia": {
+    "lvl": 28,
+    "race": "Fury",
+    "resists": "-----f-s",
+    "skilli": "Allure",
+    "skills": ["Marin Karin", "Makakaja", "Venomstrike", "Spirit Drain"],
+    "stats": [430, 18, 8, 14, 7]
+  },
+  "Leanan Sidhe": {
+    "lvl": 25,
+    "race": "Skill",
+    "resists": "-wfn---s",
+    "skilli": "Allure",
+    "skills": ["Dormina", "Diarama", "Rakukaja", "Mind Boost"],
+    "stats": [362, 10, 16, 9, 9]
+  },
+  "Legion A": {
+    "lvl": 5,
+    "race": "Skill",
+    "resists": "wwwwww-w",
+    "skills": ["Combo", "Loose Change"],
+    "stats": [116, 7, 7, 5, 7]
+  },
+  "Legion B": {
+    "lvl": 20,
+    "race": "Skill",
+    "resists": "dwwnww-w",
+    "skilli": "Provoke",
+    "skills": ["Venomstrike", "War Cry", "Skill Extension"],
+    "stats": [306, 20, 6, 8, 5]
+  },
+  "Legion C": {
+    "lvl": 20.1,
+    "race": "Skill",
+    "resists": "wwwwnw-d",
+    "skilli": "Allure",
+    "skills": ["Media", "Samarecarm", "Heal Boost"],
+    "stats": [306, 6, 20, 8, 5]
+  },
+  "Legion D": {
+    "lvl": 20.2,
+    "race": "Skill",
+    "resists": "wwwwwndw",
+    "skilli": "Intimidate",
+    "skills": ["Mudo", "Petra", "Magic Boost"],
+    "stats": [306, 5, 6, 8, 20]
+  },
+  "Legion E": {
+    "lvl": 4,
+    "race": "Skill",
+    "resists": "--n-----",
+    "skills": ["Combo", "Retribution"],
+    "stats": [112, 5, 6, 6, 6]
+  },
+  "Lilim": {
+    "lvl": 18,
+    "race": "Pagan",
+    "resists": "--sf-sdn",
+    "skilli": "Allure",
+    "skills": ["Dormina", "Dia Aura", "Marin Karin", "Vitality Chakra"],
+    "stats": [311, 6, 14, 10, 8]
+  },
+  "Lilith": {
+    "lvl": 58,
+    "race": "Pagan",
+    "resists": "Sx-f----",
+    "skilli": "Allure",
+    "skills": ["Dormina", "Mamudo", "Petra", "Mind Boost"],
+    "stats": [626, 17, 32, 12, 16]
+  },
+  "Mada": {
+    "lvl": 61,
+    "race": "Pyro",
+    "resists": "S-nf---w",
+    "skills": ["Blaze", "Fire Breath", "Maragidyne", "Frenzy", "Agni's Blessing"],
+    "stats": [742, 29, 16, 22, 13]
+  },
+  "Makami": {
+    "lvl": 24,
+    "race": "Volt",
+    "resists": "-wn-nf--",
+    "skilli": "Fly",
+    "skills": ["Ziorati", "Dia", "Mazio", "Spirit Drain"],
+    "stats": [353, 9, 15, 13, 7]
+  },
+  "Mara": {
+    "lvl": 70,
+    "race": "Pagan",
+    "resists": "snf---dn",
+    "skills": ["Mad Rush", "State of Bliss", "Mamudoon", "Wind Cutter", "Null Mortal"],
+    "stats": [749, 31, 21, 28, 10]
+  },
+  "Mermaid": {
+    "lvl": 12,
+    "race": "Frost",
+    "resists": "--fn-s--",
+    "skilli": "Allure",
+    "skills": ["Dia", "Bufurati", "Rakukaja", "Heal Boost"],
+    "stats": [218, 6, 13, 5, 7]
+  },
+  "Mezuki": {
+    "lvl": 25,
+    "race": "Fury",
+    "resists": "--ssssE-",
+    "skills": ["Berserker", "Recarm", "Media", "Heal Boost"],
+    "stats": [450, 14, 10, 16, 8]
+  },
+  "Mishaguji": {
+    "lvl": 50,
+    "race": "Volt",
+    "resists": "s--fn-ns",
+    "skilli": "Allure",
+    "skills": ["Frenzy", "Samarecarm", "Bolt Storm", "Item Find"],
+    "stats": [629, 19, 21, 18, 12]
+  },
+  "Mokoi": {
+    "lvl": 13,
+    "race": "Pagan",
+    "resists": "--fn----",
+    "skills": ["Winged Fury", "Zan", "Pulinpa", "Loose Change"],
+    "stats": [204, 11, 9, 5, 7]
+  },
+  "Mot": {
+    "lvl": 55,
+    "race": "Pagan",
+    "resists": "---sfsnn",
+    "skills": ["Mamudoon", "Mad Rush", "Makajam", "Resist Phys"],
+    "stats": [641, 17, 26, 20, 12]
+  },
+  "Muspell": {
+    "lvl": 54,
+    "race": "Pyro",
+    "resists": "--df----",
+    "skills": ["Agidyne", "Frenzy", "Hellfire", "Retribution"],
+    "stats": [628, 34, 15, 15, 9]
+  },
+  "Muu Shuwuu": {
+    "lvl": 15,
+    "race": "Wind",
+    "resists": "-wf-dnE-",
+    "skilli": "Fly",
+    "skills": ["Dia", "Zanrati", "Mazan", "Force Boost"],
+    "stats": [238, 7, 13, 6, 8]
+  },
+  "Naga Raja": {
+    "lvl": 37,
+    "race": "Frost",
+    "resists": "--fns---",
+    "skills": ["Berserker", "Bufurati", "Bufudyne", "Unrelenting Focus"],
+    "stats": [489, 21, 16, 10, 9]
+  },
+  "Nagasunehiko": {
+    "lvl": 41,
+    "race": "Skill",
+    "resists": "-wfss-n-",
+    "skills": ["Frostbite", "Frenzy", "Makara Aura", "Resist Ice"],
+    "stats": [544, 21, 16, 15, 9]
+  },
+  "Nandi": {
+    "lvl": 30,
+    "race": "Volt",
+    "resists": "--wfnd--",
+    "skilli": "Fly",
+    "skills": ["Zio", "Patra", "Ziorati", "Life Bonus"],
+    "stats": [433, 14, 17, 11, 7]
+  },
+  "Nebiros": {
+    "lvl": 43,
+    "race": "Pagan",
+    "resists": "Sxwwwfn-",
+    "skills": ["Mamudo", "Makara Aura", "Pulinpa", "Whimsical Aid"],
+    "stats": [535, 23, 21, 10, 8]
+  },
+  "Neko Shogun": {
+    "lvl": 9,
+    "race": "Fury",
+    "resists": "----nf--",
+    "skills": ["Rakukaja", "Patra", "Combo", "Halve Mind"],
+    "stats": [187, 10, 4, 11, 4]
+  },
+  "Nekomata": {
+    "lvl": 29,
+    "race": "Skill",
+    "resists": "----fd-s",
+    "skilli": "Allure",
+    "skills": ["Marin Karin", "Dormina", "Rakukaja", "Devotion"],
+    "stats": [399, 14, 13, 9, 12]
+  },
+  "Nezha": {
+    "lvl": 14,
+    "race": "Fury",
+    "resists": "s--ww-E-",
+    "skills": ["Berserker", "War Cry", "Frenzy", "Sink or Swim"],
+    "stats": [259, 15, 4, 10, 5]
   },
   "Nigi Mitama": {
-    "inherit": "-o-o",
     "lvl": 25,
-    "person": "Foreigner",
-    "race": "Spirit",
-    "resists": "-w----nn",
-    "skills": [],
-    "stats": [426, 9, 9, 17, 9, 4]
+    "race": "Mitama",
+    "resists": "-wf---nn",
+    "skills": ["Diarama", "Makakaja", "Spirit Drain"],
+    "stats": [426, 9, 9, 17, 9]
+  },
+  "Nue": {
+    "lvl": 41,
+    "race": "Volt",
+    "resists": "--f-ns-w",
+    "skilli": "Allure",
+    "skills": ["Ziodyne", "Venomstrike", "Berserker", "Money Find"],
+    "stats": [523, 22, 17, 12, 9]
+  },
+  "Obariyon": {
+    "lvl": 4,
+    "race": "Fury",
+    "resists": "---f-fnw",
+    "skilli": "Sneak",
+    "skills": ["Combo", "Berserker", "Frenzy", "Strength Chakra"],
+    "stats": [129, 10, 3, 6, 4]
+  },
+  "Oboroguruma": {
+    "lvl": 27,
+    "race": "Volt",
+    "resists": "-n-fd--w",
+    "skilli": "Allure",
+    "skills": ["War Cry", "Mazio", "Mad Rush", "Elec Boost"],
+    "stats": [421, 19, 10, 14, 3]
+  },
+  "Okiku-Mushi": {
+    "lvl": 22,
+    "race": "Pagan",
+    "resists": "--f-d-n-",
+    "skilli": "Provoke",
+    "skills": ["Marin Karin", "Makakaja", "Mudo", "Item Find"],
+    "stats": [338, 12, 12, 9, 8]
+  },
+  "Okuninushi": {
+    "lvl": 32,
+    "race": "Frost",
+    "resists": "-nfs--n-",
+    "skilli": "Intimidate",
+    "skills": ["Mabufu", "Bufudyne", "Diarama", "Endure"],
+    "stats": [457, 18, 16, 13, 5]
+  },
+  "Omitsunu": {
+    "lvl": 54,
+    "race": "Volt",
+    "resists": "sw--df--",
+    "skills": ["Berserker", "Maziodyne", "Spark", "Vitality Chakra"],
+    "stats": [710, 20, 14, 26, 13]
+  },
+  "Oni": {
+    "lvl": 22,
+    "race": "Fury",
+    "resists": "s---f--w",
+    "skilli": "Provoke",
+    "skills": ["Berserker", "Tetra Aura", "Frenzy", "Sink or Swim"],
+    "stats": [373, 15, 6, 14, 6]
+  },
+  "Onmoraki": {
+    "lvl": 9,
+    "race": "Pyro",
+    "resists": "-wnff---",
+    "skilli": "Sneak",
+    "skills": ["Combo", "Maragi", "Dormina", "Fast Escape"],
+    "stats": [178, 6, 9, 8, 6]
+  },
+  "Ophanim": {
+    "lvl": 61,
+    "race": "Wind",
+    "resists": "fnsssnE-",
+    "skilli": "Fly",
+    "skills": ["Zandyne", "Diarama", "Tetrakarn", "Tempest", "Null Mortal"],
+    "stats": [718, 21, 24, 20, 15]
+  },
+  "Orthrus": {
+    "lvl": 16,
+    "race": "Pyro",
+    "resists": "--nf---w",
+    "skills": ["Maragi", "Combo", "Berserker", "Fire Boost"],
+    "stats": [252, 15, 6, 9, 5]
+  },
+  "Oshichi": {
+    "lvl": 24,
+    "race": "Pyro",
+    "resists": "-nsf--nn",
+    "skilli": "Allure",
+    "skills": ["Agi", "Patra", "Agirati", "Fire Boost"],
+    "stats": [319, 10, 16, 6, 11]
+  },
+  "Oyamatsumi": {
+    "lvl": 50,
+    "race": "Frost",
+    "resists": "swfs-fn-",
+    "skills": ["Mabufudyne", "Tarukaja", "Frenzy", "Life Gain"],
+    "stats": [701, 24, 10, 27, 8]
+  },
+  "Pabilsag": {
+    "lvl": 22,
+    "race": "Frost",
+    "resists": "--snffn-",
+    "skills": ["Venomstrike", "Bufu", "Mabufu", "Resist Ice"],
+    "stats": [345, 10, 14, 13, 4]
+  },
+  "Parvati": {
+    "lvl": 46,
+    "race": "Volt",
+    "resists": "sw--sfEw",
+    "skilli": "Allure",
+    "skills": ["Spark", "Media", "Ziodyne", "Magic Chakra"],
+    "stats": [571, 12, 26, 14, 13]
+  },
+  "Pixie": {
+    "lvl": 6,
+    "race": "Skill",
+    "resists": "-wff-n--",
+    "skilli": "Sneak",
+    "skills": ["Dia", "Patra", "Makakaja", "Magic Chakra"],
+    "stats": [121, 5, 9, 4, 7]
+  },
+  "Poltergeist": {
+    "lvl": 10,
+    "race": "Wind",
+    "resists": "--f-fsnn",
+    "skilli": "Sneak",
+    "skills": ["Zan", "Mazan", "Pulinpa", "Resist Force"],
+    "stats": [183, 6, 10, 6, 7]
+  },
+  "Power": {
+    "lvl": 50,
+    "race": "Wind",
+    "resists": "-w1111E-",
+    "skilli": "Fly",
+    "skills": ["Mazandyne", "Samarecarm", "Tempest", "Item Find"],
+    "stats": [602, 23, 20, 15, 11]
+  },
+  "Preta": {
+    "lvl": 4,
+    "race": "Frost",
+    "resists": "--fnfwn-",
+    "skills": ["Bufu", "Combo", "Makajam", "Scavenger"],
+    "stats": [104, 7, 6, 5, 5]
+  },
+  "Qing Long": {
+    "lvl": 42,
+    "race": "Frost",
+    "resists": "s--df-nn",
+    "skilli": "Fly",
+    "skills": ["Diarama", "Mazan", "Cocytus", "Growth"],
+    "stats": [559, 17, 14, 21, 10]
+  },
+  "Raiho": {
+    "lvl": 26,
+    "race": "Frost",
+    "resists": "s--df--n",
+    "skilli": "Allure",
+    "skills": ["Bufu", "Mabufudyne", "Cocytus", "Resist Fire"],
+    "stats": [343, 8, 16, 10, 11]
+  },
+  "Raiju": {
+    "lvl": 15,
+    "race": "Volt",
+    "resists": "-w--dfnw",
+    "skilli": "Sneak",
+    "skills": ["Combo", "Zio", "Mazio", "Resist Elec"],
+    "stats": [241, 14, 5, 10, 5]
+  },
+  "Rakshasa": {
+    "lvl": 44,
+    "race": "Fury",
+    "resists": "-w---f-w",
+    "skilli": "Provoke",
+    "skills": ["Combo", "Frenzy", "Mighty Blow", "Sink or Swim"],
+    "stats": [565, 23, 13, 15, 12]
+  },
+  "Rangda": {
+    "lvl": 64,
+    "race": "Pagan",
+    "resists": "nw--f-d-",
+    "skilli": "Fly",
+    "skills": ["Pulinpa", "Mamudoon", "Makakajaon", "Blaze", "Strength Chakra"],
+    "stats": [758, 19, 28, 23, 14]
   },
   "Saki Mitama": {
-    "inherit": "-o-o",
     "lvl": 32,
-    "person": "Foreigner",
-    "race": "Spirit",
-    "resists": "-w----nn",
-    "skills": [],
-    "stats": [433, 10, 10, 10, 21, 4]
+    "race": "Mitama",
+    "resists": "-w---fnn",
+    "skills": ["Recarm", "Diarama", "Heal Boost"],
+    "stats": [433, 15, 15, 15, 6]
+  },
+  "Sandalphon": {
+    "lvl": 74,
+    "race": "Wind",
+    "resists": "-w--nnE-",
+    "skilli": "Fly",
+    "skills": ["Tetrakarn", "Wind Cutter", "Diarahan", "Mazandyne", "Force Boost"],
+    "stats": [779, 24, 30, 23, 16]
+  },
+  "Sati": {
+    "lvl": 29,
+    "race": "Pyro",
+    "resists": "-sdf--E-",
+    "skilli": "Fly",
+    "skills": ["Agirati", "Recarm", "Maragi", "Devotion"],
+    "stats": [423, 7, 20, 12, 9]
+  },
+  "Scathach": {
+    "lvl": 47,
+    "race": "Skill",
+    "resists": "-w--fn-s",
+    "skilli": "Fly",
+    "skills": ["Flurry", "Makara Aura", "Diarama", "Luck Chakra"],
+    "stats": [593, 19, 23, 13, 11]
+  },
+  "Shiva": {
+    "lvl": 75,
+    "race": "Fury",
+    "resists": "d-1f11n-",
+    "skills": ["Mighty Blow", "Makakajaon", "Shock Wave", "Diarahan", "Vengeance Seal"],
+    "stats": [815, 29, 30, 21, 15]
+  },
+  "Shouten": {
+    "lvl": 49,
+    "race": "Fury",
+    "resists": "s--s-sEw",
+    "skills": ["Mighty Blow", "Mad Rush", "Berserker", "Loose Change"],
+    "stats": [645, 26, 8, 23, 11]
+  },
+  "Siegfried": {
+    "lvl": 61,
+    "race": "Fury",
+    "resists": "s---f-nn",
+    "skilli": "Intimidate",
+    "skills": ["War Cry", "Mazandyne", "Mighty Blow", "Wind Cutter", "Endure"],
+    "stats": [728, 27, 14, 23, 16]
+  },
+  "Susano-o": {
+    "lvl": 70,
+    "race": "Fury",
+    "resists": "swdf--nw",
+    "skilli": "Fly",
+    "skills": ["Berserker", "Winged Fury", "Tarukajaon", "Fire Breath", "Life Surge"],
+    "stats": [782, 35, 17, 25, 12]
   },
   "Sylph": {
-    "inherit": "-o-o",
     "lvl": 29,
-    "person": "Lady",
     "race": "Element",
-    "resists": "--nwwdn-",
-    "skills": [],
-    "stats": [399, 9, 17, 9, 13, 4]
+    "resists": "--nwfdn-",
+    "skills": ["Zanrati", "Agirati", "Halve Death"],
+    "stats": [399, 9, 17, 9, 13]
+  },
+  "Tam Lin": {
+    "lvl": 18,
+    "race": "Skill",
+    "resists": "s---ssEW",
+    "skills": ["Winged Fury", "Tarukaja", "Berserker", "Endure"],
+    "stats": [321, 16, 6, 10, 6]
+  },
+  "Taotie": {
+    "lvl": 62,
+    "race": "Skill",
+    "resists": "s---fn-n",
+    "skills": ["State of Bliss", "Samarecarm", "Dekaja", "Makakajaon", "Magic Boost"],
+    "stats": [741, 18, 26, 24, 14]
+  },
+  "Tarrasque": {
+    "lvl": 46,
+    "race": "Frost",
+    "resists": "s-fss---",
+    "skills": ["Frenzy", "Frostbite", "Bufudyne", "Ice Boost"],
+    "stats": [622, 19, 12, 24, 10]
+  },
+  "Thor": {
+    "lvl": 60,
+    "race": "Volt",
+    "resists": "----df-w",
+    "skilli": "Allure",
+    "skills": ["Mighty Blow", "Maziodyne", "Bolt Storm", "Spark", "Agni's Blessing"],
+    "stats": [704, 30, 15, 20, 14]
+  },
+  "Thoth": {
+    "lvl": 38,
+    "race": "Skill",
+    "resists": "f-ddddEd",
+    "skills": ["Makakaja", "Dia Aura", "Recarm", "Skill Extension"],
+    "stats": [449, 11, 25, 6, 15]
+  },
+  "Throne": {
+    "lvl": 39,
+    "race": "Pyro",
+    "resists": "wwdfnnnW",
+    "skilli": "Fly",
+    "skills": ["Blaze", "Agidyne", "Makajam", "Halve Mortal"],
+    "stats": [481, 14, 23, 11, 10]
+  },
+  "Triglav": {
+    "lvl": 41,
+    "race": "Fury",
+    "resists": "sn-d-f--",
+    "skills": ["Winged Fury", "Tarukaja", "Mad Rush", "Unrelenting Focus"],
+    "stats": [528, 22, 14, 13, 11]
+  },
+  "Tsuchigumo": {
+    "lvl": 19,
+    "race": "Volt",
+    "resists": "s--fsf--",
+    "skills": ["Venomstrike", "Mazio", "Ziorati", "Strength Chakra"],
+    "stats": [317, 16, 6, 11, 5]
+  },
+  "Turbo Granny": {
+    "lvl": 19,
+    "race": "Wind",
+    "resists": "----fn--",
+    "skills": ["Combo", "Zan", "Mazan", "Fast Escape"],
+    "stats": [298, 16, 5, 11, 6]
+  },
+  "Turdak": {
+    "lvl": 17,
+    "race": "Fury",
+    "resists": "s-f--f--",
+    "skills": ["Makajam", "Venomstrike", "Berserker", "Life Bonus"],
+    "stats": [299, 14, 5, 11, 6]
+  },
+  "Ukobach": {
+    "lvl": 2,
+    "race": "Pyro",
+    "resists": "--nf----",
+    "skills": ["Agi", "Combo", "Maragi", "Scavenger"],
+    "stats": [80, 5, 6, 5, 5]
   },
   "Undine": {
-    "inherit": "-o-o",
     "lvl": 31,
-    "person": "Lady",
     "race": "Element",
-    "resists": "--wdnwn-",
-    "skills": [],
-    "stats": [440, 10, 19, 12, 9, 4]
+    "resists": "--fdnwn-",
+    "skills": ["Bufurati", "Ziorati", "Halve Mortal"],
+    "stats": [440, 10, 19, 12, 9]
+  },
+  "Utai-Gaikotsu": {
+    "lvl": 35,
+    "race": "Pagan",
+    "resists": "fWd--fnw",
+    "skilli": "Fly",
+    "skills": ["Petra", "Mamudo", "Makajam", "Halve Death"],
+    "stats": [466, 10, 19, 11, 14]
+  },
+  "Vishnu": {
+    "lvl": 74,
+    "race": "Volt",
+    "resists": "s-1sdfns",
+    "skills": ["Tarukajaon", "Bolt Storm", "Shock Wave", "Mamudoon", "Magic Boost"],
+    "stats": [779, 25, 30, 23, 15]
+  },
+  "Vritra": {
+    "lvl": 49,
+    "race": "Pyro",
+    "resists": "--dfssnn",
+    "skilli": "Fly",
+    "skills": ["War Cry", "Hellfire", "Mad Rush", "Exp Boost"],
+    "stats": [660, 20, 23, 17, 9]
+  },
+  "Yamata-no-Orochi": {
+    "lvl": 63,
+    "race": "Frost",
+    "resists": "-d-df---",
+    "skills": ["Mighty Blow", "Frostbite", "Bufudyne", "Glacial Blast", "Resist Phys"],
+    "stats": [745, 17, 27, 24, 14]
+  },
+  "Yomotsu-Ikusa": {
+    "lvl": 38,
+    "race": "Fury",
+    "resists": "----f-d-",
+    "skills": ["Winged Fury", "Rakukaja", "Venomstrike", "Life Gain"],
+    "stats": [489, 22, 10, 11, 14]
+  },
+  "Yoshitsune": {
+    "lvl": 36,
+    "race": "Fury",
+    "resists": "-ssfs-nw",
+    "skills": ["Mighty Blow", "War Cry", "Frenzy", "Resist Phys"],
+    "stats": [490, 21, 14, 13, 8]
+  },
+  "Zeus": {
+    "lvl": 63,
+    "race": "Volt",
+    "resists": "s---dfns",
+    "skills": ["Ziodyne", "Shock Wave", "Mighty Blow", "Makakajaon", "Life Surge"],
+    "stats": [823, 24, 26, 22, 15]
   }
 }

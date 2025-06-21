@@ -8,29 +8,63 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
+import SKILL_DATA_JSON from './data/skill-data.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
+import FUSION_PREREQS_JSON from './data/fusion-prereqs.json';
+import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 
 function estimateKuzuPrice(stats: number[]): number {
-  return Math.floor(Math.pow(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0), 2) / 20);
+  return Math.floor(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0) ** 2 * 0.06) * 10;
 }
 
 function createCompConfig(): CompendiumConfigSet {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const demonData = {};
+  const skillData = {};
 
   for (const [dname, entry] of Object.entries(DEMON_DATA_JSON)) {
+    const lvl = Math.floor(entry.lvl);
     const stats = entry.stats;
-    const nskills = {};
+    const nskills = entry.skills.reduce((acc, x, i) => { acc[x] = i + lvl; return acc; }, {});
+    nskills[entry.skills[0]] = 0;
+    nskills[entry.skills[entry.skills.length - 1]] = 4488;
 
-    entry.stats = [stats[0], stats[5]].concat(stats.slice(1, 5));
-    entry['price'] = 50 * (estimateKuzuPrice(entry.stats) + entry.lvl);
+    if (COMP_CONFIG_JSON.raceSkills[entry.race]) {
+      nskills[COMP_CONFIG_JSON.raceSkills[entry.race]] = 0.1;
+    } if (entry['skilli']) {
+      nskills[entry['skilli']] = 0.2;
+    }
+
+    entry['price'] = estimateKuzuPrice(entry.stats) / 2;
     entry['affinities'] = [];
     demonData[dname] = Object.assign({}, entry);
     demonData[dname].skills = nskills;
+  }
+
+  const COST_MAG = 9 << 10;
+
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+
+    skillData[sname] = {
+      element: elem,
+      rank: rank || 1,
+      target: target === '-' ? 'Self' : target,
+      cost: cost === 0 ? 0 : cost + COST_MAG,
+      effect: skillRowToEffect(nums, descs, false),
+    }
+  }
+
+  for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
+    demonData[name].prereq = prereq;
+    demonData[name].fusion = 'accident';
   }
 
   const compConfig: CompendiumConfig = {
@@ -41,7 +75,7 @@ function createCompConfig(): CompendiumConfigSet {
 
     lang: 'en',
     affinityElems: [],
-    skillData: [],
+    skillData: [skillData],
     fusionSpells: {},
     skillElems,
     elemOrder: skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
@@ -51,7 +85,7 @@ function createCompConfig(): CompendiumConfigSet {
     maxSkillSlots: 8,
     hasLightDark: false,
     hasSkillRanks: false,
-    hasNonelemInheritance: true,
+    hasNonelemInheritance: false,
 
     demonData: [demonData],
     evolveData: {},
@@ -60,14 +94,14 @@ function createCompConfig(): CompendiumConfigSet {
     resistElems: COMP_CONFIG_JSON.resistElems,
     ailmentElems: [],
 
-    demonUnlocks: [],
+    demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,
     elementTable: ELEMENT_CHART_JSON,
-    specialRecipes: {},
+    specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'rrch-fusion-tool-settings',
-    settingsVersion: 2401131500,
-    defaultRecipeDemon: 'Undine',
+    settingsVersion: 2506201800,
+    defaultRecipeDemon: 'Pixie',
     elementRace: 'Element'
   };
 

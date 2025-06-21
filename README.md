@@ -35,6 +35,7 @@ Fusion tool framework for Megami Tensei games.
 * [Shin Megami Tensei: Devil Summoner](https://aqiu384.github.io/megaten-fusion-tool/dsum/demons)
 * [Devil Summoner: Soul Hackers](https://aqiu384.github.io/megaten-fusion-tool/dssh/demons)
 * [Devil Summoner: Raidou Kuzunoha vs. The Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/krch/demons)
+* [Raidou Remastered: The Mystery of the Soulless Army](https://aqiu384.github.io/megaten-fusion-tool/rrch/demons)
 * [Devil Summoner: Raidou Kuzunoha vs. King Abaddon](https://aqiu384.github.io/megaten-fusion-tool/krao/demons)
 * [Soul Hackers 2](https://aqiu384.github.io/megaten-fusion-tool/sh2/demons)
 * [Megami Ibunroku Persona](https://aqiu384.github.io/megaten-fusion-tool/p1/personas)
@@ -60,4 +61,3 @@ Fusion tool framework for Megami Tensei games.
 * [Devil Survivor Overclocked](https://aqiu384.github.io/megaten-fusion-tool/dso/demons)
 * [Devil Survivor 2](https://aqiu384.github.io/megaten-fusion-tool/ds2/demons)
 * [Devil Survivor 2 Record Breaker](https://aqiu384.github.io/megaten-fusion-tool/ds2br/demons)
-* [Shin Megami Tensei: Dx2 Liberation](https://aqiu384.github.io/megaten-fusion-tool/dx2/demons)

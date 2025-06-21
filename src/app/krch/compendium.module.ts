@@ -84,7 +84,7 @@ function createCompConfig(): CompendiumConfigSet {
     maxSkillSlots: 0,
     hasLightDark: false,
     hasSkillRanks: false,
-    hasNonelemInheritance: true,
+    hasNonelemInheritance: false,
 
     demonData: [demonData],
     evolveData: {},
@@ -99,7 +99,7 @@ function createCompConfig(): CompendiumConfigSet {
     specialRecipes: SPECIAL_RECIPES_JSON,
 
     settingsKey: 'krao-fusion-tool-settings',
-    settingsVersion: 2401131500,
+    settingsVersion: 2506201800,
     defaultRecipeDemon: 'Scathach',
     elementRace: 'Element'
   };

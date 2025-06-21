@@ -1,7 +1,6 @@
 {
   "baseStats": [
     "HP",
-    "LP",
     "St",
     "Ma",
     "Vi",
@@ -24,26 +23,29 @@
     "Pagan",
     "Skill",
     "Element",
-    "Spirit",
-    "Fiend",
-    "Evil"
+    "Mitama"
   ],
   "raceSkills": {
     "Pyro": "Ignite",
     "Frost": "Cool Down",
-    "Volt": "Light Up",
-    "Wind": "Kamikaze",
+    "Volt": "Inspect",
+    "Wind": "Scout",
     "Fury": "Use Force",
     "Pagan": "Read Mind",
-    "Skill": "Transform"
+    "Skill": "Demonstrate"
   },
   "resistCodes": {
-    "f": 7125,
-    "w": 6125,
+    "f": 7150,
+    "E": 7100,
+    "x": 6300,
+    "W": 6200,
+    "w": 6150,
     "-": 5100,
+    "_": 5100,
     "s": 4050,
+    "S": 4050,
+    "1": 4010,
     "n": 3100,
-    "r": 2100,
     "d": 1100
   },
   "resistElems": [
@@ -58,10 +60,11 @@
   ],
   "skillElems": [
     "alm",
+    "swo",
     "rec",
     "sup",
     "pas",
-    "inv",
-    "bos"
+    "spe",
+    "inv"
   ]
 }
