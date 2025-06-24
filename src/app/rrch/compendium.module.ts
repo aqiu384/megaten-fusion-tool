@@ -20,8 +20,9 @@ import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import CONFINE_DROPS_JSON from './data/confine-drops.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 
-function estimateKuzuPrice(stats: number[]): number {
-  return Math.floor(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0) ** 2 * 0.06) * 10;
+function estimateCompCost(entry: any): number {
+  const statPrice = Math.floor(entry.stats.slice(entry.stats.length - 4).reduce((acc, stat) => stat + acc, 0) ** 2 / 20);
+  return 10 * (statPrice + entry.lvl) + (entry.race === 'Element' ? 2000 : entry.race === 'Mitama' ? 8000 : 0) / 20;
 }
 
 function createCompConfig(): CompendiumConfigSet {
@@ -42,7 +43,7 @@ function createCompConfig(): CompendiumConfigSet {
       nskills[entry['skilli']] = 0.2;
     }
 
-    entry['price'] = estimateKuzuPrice(entry.stats) / 2;
+    entry['price'] = estimateCompCost(entry) / 2;
     entry['affinities'] = [];
     entry['skillCards'] = [];
     demonData[dname] = Object.assign({}, entry);

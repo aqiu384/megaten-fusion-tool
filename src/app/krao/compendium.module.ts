@@ -18,8 +18,9 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 
-function estimateKuzuPrice(stats: number[]): number {
-  return Math.floor(Math.pow(stats.slice(stats.length - 4).reduce((acc, stat) => stat + acc, 0), 2) / 20);
+function estimateCompCost(entry: any): number {
+  const statPrice = Math.floor(entry.stats.slice(entry.stats.length - 4).reduce((acc, stat) => stat + acc, 0) ** 2 / 20);
+  return 100 * (statPrice + entry.lvl) + (entry.race === 'Element' ? 2000 : entry.race === 'Spirit' ? 8000 : 0);
 }
 
 function createCompConfig(): CompendiumConfigSet {
@@ -43,7 +44,7 @@ function createCompConfig(): CompendiumConfigSet {
     }
 
     entry.stats = [stats[0], stats[5]].concat(stats.slice(1, 5));
-    entry['price'] = 50 * (estimateKuzuPrice(entry.stats) + entry.lvl);
+    entry['price'] = estimateCompCost(entry) / 2;
     entry['affinities'] = [];
     demonData[dname] = Object.assign({}, entry);
     demonData[dname].skills = nskills;
