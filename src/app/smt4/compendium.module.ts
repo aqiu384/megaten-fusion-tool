@@ -67,7 +67,6 @@ function createCompConfig(): CompendiumConfigSet {
   for (const row of Object.values(SKILL_DATA_JSON)) {
     const { a: [sname, elem, target], b: nums, c: descs } = row;
     const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
-    nums[2] = Math.round(2 * power / (minHits + maxHits));
     nums[5] = acc === 120 ? 110 : acc;
 
     skillData[sname] = {

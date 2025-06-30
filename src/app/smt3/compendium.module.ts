@@ -24,6 +24,14 @@ function estimateBasePrice(stats: number[]): number {
   return 100 * Math.floor(Math.pow(stats.slice(2).reduce((acc, stat) => stat + acc, 0), 2) / 20);
 }
 
+function skillToEffect(skill: any) {
+  return skill.damage ? [
+    skill.damage ? skill.damage + ' pwr' : '',
+    skill.hits ? ' x' + skill.hits : '',
+    skill.effect ? ', ' + skill.effect : ''
+  ].join('') : skill.effect;
+}
+
 function createCompConfig(): CompendiumConfigSet {
   for (const entry of Object.values(DEMON_DATA_JSON)) {
     entry['price'] = estimateBasePrice(entry.stats) / 2;
@@ -42,6 +50,9 @@ function createCompConfig(): CompendiumConfigSet {
   for (const row of Object.values(SKILL_DATA_JSON)) {
     const cost = row['cost'];
     if (cost) { row['cost'] = cost + (cost < 1000 ? COST_HP : COST_MP); }
+    row['effect'] = skillToEffect(row);
+    row['damage'] = '';
+    row['hits'] = '';
     row['inherit'] = row['requires'] ? row['requires'].toLocaleLowerCase().slice(0, 3) : '';
   }
 

@@ -74,8 +74,19 @@ function createCompConfig(): CompendiumConfigSet {
     }
   }
 
+  const ailmendInds = [2, 3, 4, 8, 9, 10, 12, 17, 18, 19];
+  const ailmentElems = [
+    'Burn', 'Freeze', 'Shock', 'Hama', 'Mudo',
+    'Dizzy', 'Fear', 'Despair', 'Brainwash', 'Other'
+  ].map(x => x.slice(0, 4));
+
   for (const enemies of [ENEMY_DATA_JSON, ROY_ENEMY_DATA_JSON]) {
     for (const enemy of Object.values(enemies)) {
+      const baseAilments = enemy['ailments'] || '---------';
+      const allAilments = enemy['resists'] + baseAilments + (baseAilments === 'AAAAAAAAA' ? 'A' : '-');
+      enemy['ailments'] = ailmendInds
+        .map(x => 64 < allAilments.charCodeAt(x) && allAilments.charCodeAt(x) < 96 ? '_' : '-')
+        .join('');
       enemy['area'] = enemy['area'] || [enemy['areas']];
       enemy['stats'] = enemy['stats'].slice(0, 2);
       enemy['drops'] = [enemy['material'] || '-', enemy['armor'] || '-', enemy['card'] || '-'].filter(d => d !== '-');
@@ -105,7 +116,7 @@ function createCompConfig(): CompendiumConfigSet {
 
       skillData: skillDatas.slice(0, 1),
       skillElems,
-      ailmentElems: [],
+      ailmentElems,
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       resistCodes: COMP_CONFIG_JSON.resistCodes,
 
