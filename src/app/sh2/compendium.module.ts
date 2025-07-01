@@ -8,6 +8,7 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
@@ -27,24 +28,18 @@ function createCompConfig(): CompendiumConfigSet {
     demon['affinities'] = demon['inherits'].split('').map(char => char === 'o' ? 10 : -10);
   }
 
-  const COST_MP = 3 << 10;
-  let currElem = '';
-  let elemCount = 0;
+  const COST_MP = (3 << 10);
 
-  for (const skill of SKILL_DATA_JSON) {
-    if (currElem != skill.elem) {
-      currElem = skill.elem;
-      elemCount = 9;
-    }
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
 
-    elemCount += 1;
-
-    skillData[skill.name] = {
-      element: skill.elem,
-      cost: skill.cost ? skill.cost + COST_MP - 1000 : 0,
-      effect: skill.power ? skill.power + ' dmg' + (skill.effect ? ', ' + skill.effect : '') : skill.effect,
-      target: skill.target || 'Self',
-      rank: skill.rank || elemCount / 10
+    skillData[sname] = {
+      element: elem,
+      rank: Math.min(Math.floor(rank / 5) + 1, 99),
+      target: target === '-' ? 'Self' : target,
+      cost: cost === 0 ? 0 : cost + COST_MP,
+      effect: skillRowToEffect(nums, descs, false),
     }
   }
 
@@ -65,7 +60,7 @@ function createCompConfig(): CompendiumConfigSet {
     lvlModifier: 0.5,
     maxSkillSlots: 6,
     hasLightDark: false,
-    hasSkillRanks: false,
+    hasSkillRanks: true,
     hasNonelemInheritance: false,
 
     demonData: [DEMON_DATA_JSON],

@@ -8,6 +8,7 @@ import { FusionDataService } from '../smt4f/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
 import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
 import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -33,6 +34,8 @@ function skillToEffect(skill: any) {
 }
 
 function createCompConfig(): CompendiumConfigSet {
+  const skillData = {};
+
   for (const entry of Object.values(DEMON_DATA_JSON)) {
     entry['price'] = estimateBasePrice(entry.stats) / 2;
     entry['affinities'] = entry.inherits.split('').map(i => i === 'o' ? 10 : -10);
@@ -48,12 +51,17 @@ function createCompConfig(): CompendiumConfigSet {
   const COST_MP = (3 << 10) - 1000;
 
   for (const row of Object.values(SKILL_DATA_JSON)) {
-    const cost = row['cost'];
-    if (cost) { row['cost'] = cost + (cost < 1000 ? COST_HP : COST_MP); }
-    row['effect'] = skillToEffect(row);
-    row['damage'] = '';
-    row['hits'] = '';
-    row['inherit'] = row['requires'] ? row['requires'].toLocaleLowerCase().slice(0, 3) : '';
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+
+    skillData[sname] = {
+      element: elem,
+      inherit: descs[2] !== '-' ? descs[2] : '',
+      rank,
+      target: target === '-' ? 'Self' : target,
+      cost: cost === 0 ? 0 : cost + (cost < 1000 ? COST_HP : COST_MP),
+      effect: skillRowToEffect(nums, descs, false),
+    }
   }
 
   for (const [name, prereq] of Object.entries(FUSION_PREREQS_JSON)) {
@@ -69,7 +77,7 @@ function createCompConfig(): CompendiumConfigSet {
 
     lang: 'en',
     affinityElems: COMP_CONFIG_JSON.inheritElems.map(e => e.toLocaleLowerCase().slice(0, 3)),
-    skillData: [SKILL_DATA_JSON],
+    skillData: [skillData],
     fusionSpells: {},
     skillElems: COMP_CONFIG_JSON.skillElems,
     elemOrder: COMP_CONFIG_JSON.skillElems.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
