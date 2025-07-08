@@ -8,6 +8,7 @@ import { FusionDataService } from '../pq2/fusion-data.service';
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from '../pq2/pq-compendium.module';
 import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
+import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -27,6 +28,7 @@ function createCompConfig(): CompendiumConfigSet {
   const resistElems = COMP_CONFIG_JSON.resistElems;
   const skillElems = resistElems.concat(COMP_CONFIG_JSON.skillElems);
   const races = [];
+  const skillData = {};
   const inheritTypes: { [elem: string]: number[] } = {};
 
   for(const race of COMP_CONFIG_JSON.races) {
@@ -49,11 +51,21 @@ function createCompConfig(): CompendiumConfigSet {
     demon['price'] = estimatePrice(demon.stats);
   }
 
-  const COST_MP = 3 << 10;
+  const COST_MP = 5 << 10;
+  const COST_MAG = 19 << 10;
 
-  for (const skill of Object.values(SKILL_DATA_JSON)) {
-    skill['cost'] = skill['cost'] ? skill['cost'] + COST_MP - 1000 : 0,
-    skill['code'] = 1;
+  for (const row of Object.values(SKILL_DATA_JSON)) {
+    const { a: [sname, elem, target], b: nums, c: descs } = row;
+    const [rank, cost, power, minHits, maxHits, acc, crit, mod] = nums;
+
+    skillData[sname] = {
+      element: elem,
+      rank: Math.min(Math.floor(rank / 5) + 1, 99),
+      target: target === '-' ? 'Self' : target,
+      cost: cost === 0 ? 0 : cost < 1000 ? cost + COST_MP : COST_MAG,
+      effect: skillRowToEffect(nums, descs, false),
+      code: 1
+    };
   }
 
   for (const [elem, inherits] of Object.entries(COMP_CONFIG_JSON.inheritTypes)) {
@@ -67,7 +79,7 @@ function createCompConfig(): CompendiumConfigSet {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     appCssClasses: ['p5t'],
 
-    skillData: [SKILL_DATA_JSON],
+    skillData: [skillData],
     skillElems,
     ailmentElems: COMP_CONFIG_JSON.ailments,
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
@@ -77,7 +89,7 @@ function createCompConfig(): CompendiumConfigSet {
     baseStats: ['HP', 'MP', 'MD', 'GD'],
     resistElems,
     inheritTypes,
-    inheritElems: COMP_CONFIG_JSON.inheritElems,
+    inheritElems: [],
 
     enemyData: [],
     enemyStats: ['HP', 'Atk', 'Def'],

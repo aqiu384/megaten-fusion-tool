@@ -41,8 +41,8 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
       .sort((a, b) => a.price - b.price)
       .find(p =>
         (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
-        comp.getDemon(p.name1).fusion === 'normal' &&
-        comp.getDemon(p.name2).fusion === 'normal' &&
+        comp.getDemon(p.name1).fusion !== 'accident' &&
+        comp.getDemon(p.name2).fusion !== 'accident' &&
         !triExclusiveRaces.includes(comp.getDemon(p.name1).race) &&
         !triExclusiveRaces.includes(comp.getDemon(p.name2).race)
       );
