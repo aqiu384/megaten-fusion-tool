@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 
 import { FusionEntryTableComponent } from './components/fusion-entry-table.component';
@@ -27,7 +27,7 @@ import { SmtFusionsComponent } from './components/smt-fusions.component';
 import { CurrentDemonService } from './current-demon.service';
 import { CompendiumTranslator } from './models/compendium-translator';
 
-import { 
+import {
   FissionPreviewTableComponent,
   SmtFissionPreviewComponent,
   TrioFissionPreviewComponent
@@ -65,12 +65,13 @@ import {
 } from './pipes';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule,
-    ReactiveFormsModule,
-    SharedModule
-  ],
+    imports: [
+        CommonModule,
+        RouterModule,
+        ReactiveFormsModule,
+        SharedModule,
+        FormsModule
+    ],
   declarations: [
     DemonMissingComponent,
     DemonStatsComponent,

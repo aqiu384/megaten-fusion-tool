@@ -7,7 +7,7 @@ import Translations from '../data/translations.json';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ (isPersona ? msgs.Persona : msgs.Demon) | translateComp:lang }}</th>
+      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ (isEnemy ? msgs.Shadow: isPersona ? msgs.Persona : msgs.Demon) | translateComp:lang }}</th>
       <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">{{ msgs.Stats | translateComp:lang }}</th>
       <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">{{ msgs.Resistances | translateComp:lang }}</th>
       <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">{{ msgs.Affinities | translateComp:lang }}</th>

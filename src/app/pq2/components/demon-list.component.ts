@@ -13,6 +13,7 @@ import Translations from  '../../compendium/data/translations.json';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [isPersona]="true"
       [lang]="compConfig.lang"
       [isEnemy]="showEnemies"
       [hasCurrLvl]="!showEnemies && compConfig.hasTripleFusion"
