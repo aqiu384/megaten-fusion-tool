@@ -29,6 +29,7 @@ export interface Demon {
   drop?: string;
   isEnemy?: boolean;
   align?: string;
+  searchTags: string;
 }
 
 export interface Skill {

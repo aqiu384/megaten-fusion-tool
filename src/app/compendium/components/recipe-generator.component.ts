@@ -139,7 +139,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   blankDemon: Demon = {
     name: '-', race: '-', lvl: 0, currLvl: 0, price: 0, inherits: 0,
     skills: {}, stats: [], resists: [], affinities: [],
-    fusion: 'normal', prereq: ''
+    fusion: 'normal', prereq: '', searchTags: '-'
   };
 
   blankSkill: Skill = {

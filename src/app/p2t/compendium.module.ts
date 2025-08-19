@@ -55,7 +55,8 @@ function createCompConfig(): CompendiumConfig {
       affinities: (json['inherits'] || 'oooo').split('').map(i => i === 'o'),
       trait:      json.traits.join(', '),
       transfers:  {},
-      area:       '-'
+      area:       '-',
+      searchTags: [name, json.race, json.drop].join(',').toLocaleLowerCase()
     };
   }
 
@@ -84,7 +85,8 @@ function createCompConfig(): CompendiumConfig {
       affinities: [],
       trait:      json.traits.join(', '),
       transfers:  {},
-      area:       '-'
+      area:       '-',
+      searchTags: [name, json.race, json.drop].join(',').toLocaleLowerCase()
     };
   }
 

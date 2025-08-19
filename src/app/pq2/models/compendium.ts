@@ -66,7 +66,8 @@ export class Compendium implements ICompendium {
           drop:     json['item'] || '',
           code:     json['code'] || 0,
           fusion:   json['fusion'] || 'normal',
-          prereq:   json['prereq'] || ''
+          prereq:   json['prereq'] || '',
+          searchTags: [name, json['race']].join(',').toLocaleLowerCase()
         };
 
         if (hasDemonTrait) {
@@ -99,6 +100,8 @@ export class Compendium implements ICompendium {
 
     for (const enemyDataJson of this.compConfig.enemyData) {
       for (const [name, json] of Object.entries(enemyDataJson)) {
+        const drop = json['drops']?.join(', ') || '-';
+
         enemies[name] = {
           name,
           race:     json['race'],
@@ -111,10 +114,11 @@ export class Compendium implements ICompendium {
           ailments: codifyResists(json['ailments'], blankAilments, json['ailmods']),
           skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
           area:     json['area'],
-          drop:     json['drops']?.join(', ') || '-',
+          drop,
           code:     0,
           fusion:   'normal',
-          isEnemy:  true
+          isEnemy:  true,
+          searchTags: [name, json['race'], json['area'], drop].join(',').toLocaleLowerCase()
         }
 
         if (enemies[name].drop) {

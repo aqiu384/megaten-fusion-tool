@@ -79,13 +79,15 @@ function createCompConfig(): CompendiumConfig {
       affinities: (json['inherits'] || 'ooooooooo').split('').map(i => i === 'o'),
       trait:      '-',
       transfers:  {},
-      area:       '-'
+      area:       '-',
+      searchTags: [name, json.race, json.drop].join(',').toLocaleLowerCase()
     };
   }
 
   for (const [name, json] of Object.entries(ENEMY_DATA_JSON)) {
     const presists = json.presists.split('').map(r => resistCodes[r]);
     const mresists = json.mresists.split('').map(r => resistCodes[r]);
+    const area = json.areas.length > 0 ? json.areas[0] : '-';
     enemies[name] = {
       race:       json.race,
       lvl:        json.lvl,
@@ -107,7 +109,8 @@ function createCompConfig(): CompendiumConfig {
       affinities: [],
       trait:      json.traits.join(', '),
       transfers:  (json['transfers'] || []).reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
-      area:       json.areas.length > 0 ? json.areas[0] : '-'
+      area,
+      searchTags: [name, json.race, area, json.drop].join(',').toLocaleLowerCase()
     };
   }
 

@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { SortedTableHeaderComponent } from '../../shared/sorted-table.component';
 import Translations from '../data/translations.json';
 
@@ -7,7 +7,12 @@ import Translations from '../data/translations.json';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <tr>
-      <th [attr.colSpan]="hasInherits ? 4 : 3">{{ (isEnemy ? msgs.Shadow: isPersona ? msgs.Persona : msgs.Demon) | translateComp:lang }}</th>
+      <th class="nav" [style.height.em]="1" [attr.colSpan]="hasInherits ? 4 : 3" (click)="showFilter = true">
+        <ng-container *ngIf="!showFilter">Show {{ (isPersona ? msgs.Persona : msgs.Demon) | translateComp:lang }} Filter</ng-container>
+        <input *ngIf="showFilter" type="text"
+          placeholder="name, race, etc."
+          (input)="searchTagsChanged.emit($any($event.target).value.toLocaleLowerCase())"/>
+      </th>
       <th *ngIf="statColIndices.length" [attr.colSpan]="statColIndices.length">{{ msgs.Stats | translateComp:lang }}</th>
       <th *ngIf="resistColIndices.length" [attr.colSpan]="resistColIndices.length">{{ msgs.Resistances | translateComp:lang }}</th>
       <th *ngIf="affinityColIndices.length" [attr.colSpan]="affinityColIndices.length">{{ msgs.Affinities | translateComp:lang }}</th>
@@ -37,6 +42,7 @@ import Translations from '../data/translations.json';
   `,
   styles: [`
     th { white-space: nowrap; }
+    th input { width: 80%; }
     span { padding-right: 0.6em; }
   `]
 })
@@ -48,11 +54,13 @@ export class DemonListHeaderComponent extends SortedTableHeaderComponent impleme
   @Input() statHeaders: string[] = [];
   @Input() resistHeaders: string[] = [];
   @Input() affinityHeaders: string[] = [];
+  @Output() searchTagsChanged = new EventEmitter<string>();
   statColIndices: { stat: string, index: number }[] = [];
   resistColIndices: { elem: string, index: number }[] = [];
   reslvlColIndices: { elem: string, index: number }[] = [];
   affinityColIndices: { elem: string, index: number }[] = [];
   msgs = Translations.DemonListComponent;
+  showFilter = false;
 
   ngOnInit() {
     this.nextColIndices();

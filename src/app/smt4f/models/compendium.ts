@@ -103,7 +103,8 @@ export class Compendium implements ICompendium {
           inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
           affinities: json['affinities'],
           fusion:     json['fusion'] || 'normal',
-          prereq:     json['prereq'] || ''
+          prereq:     json['prereq'] || '',
+          searchTags: [name, race].join(',').toLocaleLowerCase()
         }
 
         if (fusionSpells[race]) { demons[name].skills[fusionSpells[race]] = 5278; }

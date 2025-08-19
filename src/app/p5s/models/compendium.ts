@@ -52,7 +52,8 @@ export class Compendium implements ICompendium {
           combos:     json['combos'],
           skills:     json['skills'],
           fusion:     json['fusion'] || 'normal',
-          prereq:     json['prereq'] || ''
+          prereq:     json['prereq'] || '',
+          searchTags: [name, json['race']].join(',').toLocaleLowerCase()
         };
 
         specialNameEntries[name] = [];

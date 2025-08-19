@@ -55,7 +55,8 @@ function createCompConfig(): CompendiumConfig {
       affinities: (json['inherits'] || 'oooo').split('').map(i => i === 'o'),
       trait:      json.traits.join(', '),
       transfers:  {},
-      area:       '-'
+      area:       '-',
+      searchTags: [name, json.race, json.drop].join(',').toLocaleLowerCase()
     };
     demons[name].skills[COMP_CONFIG_JSON.unknownPowers[json.unknown]] = 5375;
   }
@@ -85,7 +86,8 @@ function createCompConfig(): CompendiumConfig {
       affinities: [],
       trait:      json.traits.join(', '),
       transfers:  {},
-      area:       '-'
+      area:       '-',
+      searchTags: [name, json.race, json.drop].join(',').toLocaleLowerCase()
     };
   }
 

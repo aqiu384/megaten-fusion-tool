@@ -143,7 +143,7 @@ export class PasswordGeneratorComponent implements OnChanges {
     name: '???', race: '-', align: '', code: 0,
     lvl: 0, currLvl: 0, skills: {}, skillCards: {},
     price: 0, stats: [0, 0, 0, 0, 0], resists: [], ailments: [],
-    inherits: 0, affinities: [], fusion: 'normal', prereq: ''
+    inherits: 0, affinities: [], fusion: 'normal', prereq: '', searchTags: '-'
   };
   blankSkill: Skill = {
     name: '-', code: 0, element: '-', rank: 0,
