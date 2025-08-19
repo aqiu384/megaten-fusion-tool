@@ -1,7 +1,17 @@
-import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  Input,
+  Output,
+  EventEmitter,
+  OnInit,
+  SimpleChanges,
+  OnChanges
+} from '@angular/core';
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
 import { DemonListComponent } from '../bases/demon-list.component';
+import Translations from "../data/translations.json";
 
 @Component({
   selector: 'tr.app-smt-demon-list-row',
@@ -64,34 +74,39 @@ export class SmtDemonListRowComponent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ PositionEdgesService ],
   template: `
+    <div class="filter-container">
+      <input type="text"
+             [placeholder]="isEnemy ? msgs.Placeholder.Shadow : isPersona ? msgs.Placeholder.Persona : msgs.Placeholder.Demon | translateComp:lang"
+             [(ngModel)]="filterText" (input)="applyFilter()">
+    </div>
     <table appPositionSticky class="list-table">
       <tfoot #stickyHeader appColumnWidths
-        class="app-demon-list-header sticky-header"
-        [isPersona]="isPersona"
-        [isEnemy]="isEnemy"
-        [lang]="lang"
-        [hasInherits]="!!inheritOrder"
-        [statHeaders]="statHeaders"
-        [resistHeaders]="resistHeaders"
-        [affinityHeaders]="affinityHeaders"
-        [sortFunIndex]="sortFunIndex"
-        (sortFunIndexChanged)="sortFunIndex = $event">
+             class="app-demon-list-header sticky-header"
+             [isPersona]="isPersona"
+             [isEnemy]="isEnemy"
+             [lang]="lang"
+             [hasInherits]="!!inheritOrder"
+             [statHeaders]="statHeaders"
+             [resistHeaders]="resistHeaders"
+             [affinityHeaders]="affinityHeaders"
+             [sortFunIndex]="sortFunIndex"
+             (sortFunIndexChanged)="sortFunIndex = $event">
       </tfoot>
     </table>
     <table class="list-table">
       <tfoot #hiddenHeader appColumnWidths
-        class="app-demon-list-header"
-        [isPersona]="isPersona"
-        [isEnemy]="isEnemy"
-        [lang]="lang"
-        [hasInherits]="!!inheritOrder"
-        [statHeaders]="statHeaders"
-        [resistHeaders]="resistHeaders"
-        [affinityHeaders]="affinityHeaders"
-        [style.visibility]="'collapse'">
+             class="app-demon-list-header"
+             [isPersona]="isPersona"
+             [isEnemy]="isEnemy"
+             [lang]="lang"
+             [hasInherits]="!!inheritOrder"
+             [statHeaders]="statHeaders"
+             [resistHeaders]="resistHeaders"
+             [affinityHeaders]="affinityHeaders"
+             [style.visibility]="'collapse'">
       </tfoot>
       <tbody>
-        <tr *ngFor="let data of rowData"
+      <tr *ngFor="let data of filteredRowData"
           class="app-smt-demon-list-row"
           [isEnemy]="isEnemy"
           [hasCurrLvl]="hasCurrLvl"
@@ -104,15 +119,53 @@ export class SmtDemonListRowComponent {
           }"
           [data]="data"
           (currLvl)="lvlChanged.emit({ demon: data.name, currLvl: $event })">
-        </tr>
+      </tr>
       </tbody>
     </table>
   `
 })
-export class SmtDemonListComponent extends DemonListComponent<Demon> {
+export class SmtDemonListComponent extends DemonListComponent<Demon> implements OnInit, OnChanges {
   @Input() isPersona = false;
   @Input() isEnemy = false;
   @Input() hasCurrLvl = false;
   @Input() lang = 'en';
   @Output() lvlChanged = new EventEmitter<{ demon: string, currLvl: number }>();
+  msgs = Translations.DemonListComponent;
+  filterText = '';
+  filteredRowData: Demon[] = [];
+
+  ngOnInit() {
+    super.ngOnInit();
+    this.filteredRowData = this.rowData;
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['rowData']) {
+      this.applyFilter();
+    }
+  }
+
+  applyFilter() {
+    if (!this.filterText.trim()) {
+      this.filteredRowData = this.rowData;
+      return;
+    }
+
+    const filterTextLower = this.filterText.toLowerCase();
+
+    this.filteredRowData = this.rowData.filter(demon => {
+      // Create a single string with all searchable fields
+      const searchString = [
+        demon.race || '',
+        demon.lvl?.toString() || '',
+        demon.name || '',
+        demon.stats?.join(' ') || '',
+        this.isEnemy ? (demon.drop || '') : '',
+        this.isEnemy ? (demon.area || '') : ''
+      ].join(' ').toLowerCase();
+
+      // Check if the filter text is contained in the search string
+      return searchString.includes(filterTextLower);
+    });
+  }
 }
