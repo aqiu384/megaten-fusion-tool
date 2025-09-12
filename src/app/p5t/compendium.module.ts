@@ -13,7 +13,6 @@ import { skillRowToEffect } from '../pq2/models/skill-importer';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
-import DLC_DATA_JSON from './data/dlc-data.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
@@ -38,13 +37,6 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const demon of Object.values(DEMON_DATA_JSON)) {
     demon['code'] = 1;
-    demon['inherit'] = 'alm';
-    demon['skills'] = {};
-    demon['skills'][demon.skill] = 0.1;
-    demon['price'] = estimatePrice(demon.stats);
-  }
-
-  for (const demon of Object.values(DLC_DATA_JSON)) {
     demon['inherit'] = 'alm';
     demon['skills'] = {};
     demon['skills'][demon.skill] = 0.1;
@@ -85,7 +77,7 @@ function createCompConfig(): CompendiumConfigSet {
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-    demonData: [Object.assign(DEMON_DATA_JSON, DLC_DATA_JSON)],
+    demonData: [DEMON_DATA_JSON],
     baseStats: ['HP', 'MP', 'MD', 'GD'],
     resistElems,
     inheritTypes,
