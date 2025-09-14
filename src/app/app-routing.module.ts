@@ -10,6 +10,7 @@ const appRoutesLookup: { [path: string]: Route } = {};
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'kmt1',   loadChildren: () => import('./kmt1/compendium.module').then(m => m.CompendiumModule) },
   { path: 'smt1',   loadChildren: () => import('./smt1/compendium.module').then(m => m.CompendiumModule) },
   { path: 'smt2',   loadChildren: () => import('./smt2/compendium.module').then(m => m.CompendiumModule) },
   { path: 'smtif',  loadChildren: () => import('./smtif/compendium.module').then(m => m.CompendiumModule) },

@@ -1,0 +1,37 @@
+/* Kyūyaku Megami Tensei */
+.devilsum div.element-icon, .kmt div.element-icon {
+  height: 12px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.kmt div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
+.kmt div.element-icon.sword { background-image: url('/assets/images/smt4f/sword.png'); }
+.kmt div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
+.kmt div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
+.kmt div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
+.kmt div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
+.kmt div.element-icon.force { background-image: url('/assets/images/smt4f/force.png'); }
+.kmt div.element-icon.bind { background-image: url('/assets/images/smt4f/bind.png'); }
+.kmt div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
+.kmt div.element-icon.nerve { background-image: url('/assets/images/smtsj/ail.png'); }
+.kmt div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
+.kmt div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+
+.kmt div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
+.kmt div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
+.kmt div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
+
+.kmt div.element-icon.i24 { background-image: url('/assets/images/smtsj/spe.png'); }
+
+/* Alignments */
+.kmt td.align.g { color: cyan; }
+.kmt td.align.e { color: tomato; }
+
+/* Fusion Chart */
+td.elem, td.oran, td.redd, td.gree, td.blue { color: white !important; }
+
+/* Kyūyaku Megami Tensei: Megami Tensei I */
+.kmt1 th.title, .kmt1 th.nav.active, .kmt1 th.nav.active a { background-color: #008751; color: white; }
