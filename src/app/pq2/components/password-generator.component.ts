@@ -153,8 +153,7 @@ export class PasswordGeneratorComponent implements OnChanges {
           skillCodes: dskills.map(s => s.code),
         };
 
-        const baseSkills = decoded.skillCodes.reduce<number>((acc, lvl) => lvl !== 0 ? acc + 1 : acc, 0);
-        this.price = Math.floor((800 + 120 * decoded.lvl) * (1 + 0.25 * baseSkills) / 10) * 10;
+        this.price = this.compConfig.computePrice(demon, decoded);
         this.passBytes = encodeDemon(decoded, this.compConfig.appCssClasses.includes('pq2'));
       }
     });
@@ -211,7 +210,7 @@ export class PasswordGeneratorComponent implements OnChanges {
     let i = 0;
 
     for (const [sname, sentry] of Object.entries(demon.skills)) {
-      if (sentry === 0) {
+      if (sentry < 2) {
         skills[i++] = this.compendium.getSkill(sname);
       }
     }

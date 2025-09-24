@@ -7,7 +7,7 @@ import { FusionDataService } from '../pq2/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from '../pq2/pq-compendium.module';
-import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
+import { Demon, DecodedDemon, CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
 import { skillRowToEffect } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -17,7 +17,8 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import FUSION_CHART_JSON from './data/fusion-chart.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
 
-function estimatePrice(stats: number[]) {
+function computePrice(base: Demon, decoded: DecodedDemon): number {
+  const stats = base.stats;
   const statSum = 1.5*stats[0] + 1*stats[1] + 0.75*stats[2] + 0.75*stats[3];
   const price = 1164 + -2.29*statSum + 0.075*statSum**2;
   return Math.floor(price);
@@ -40,7 +41,6 @@ function createCompConfig(): CompendiumConfigSet {
     demon['inherit'] = 'alm';
     demon['skills'] = {};
     demon['skills'][demon.skill] = 0.1;
-    demon['price'] = estimatePrice(demon.stats);
   }
 
   const COST_MP = 5 << 10;
@@ -98,6 +98,7 @@ function createCompConfig(): CompendiumConfigSet {
     hasQrcodes: false,
     hasSkillCards: false,
     hasManualInheritance: true,
+    computePrice,
 
     defaultDemon: 'Pixie',
     settingsKey: 'p5t-fusion-tool-settings',

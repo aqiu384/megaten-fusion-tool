@@ -53,11 +53,9 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const [demons, dlc, parties, prereqs] of gameDataSets) {
     Object.assign(demons, dlc, parties);
-    const estimatePrice = (stats: number[]) => 2000 + stats.reduce((acc, x) => acc + x, 0) ** 2;
 
     for (const [name, demon] of Object.entries(demons)) {
       demon['code'] = 1;
-      demon['price'] = estimatePrice(demon['stats']);
 
       if (demon['itemr']) {
         demon['item'] = `${demon['item']}, ${demon['itemr']}`;
@@ -70,7 +68,6 @@ function createCompConfig(): CompendiumConfigSet {
 
     for (const demon of Object.values(parties)) {
       demon['fusion'] = 'party';
-      demon['price'] = estimatePrice(demon['stats']);
     }
   }
 
@@ -141,6 +138,7 @@ function createCompConfig(): CompendiumConfigSet {
       hasQrcodes: false,
       hasSkillCards: true,
       hasManualInheritance: true,
+      computePrice: (b, d) => 2000 + b.stats.reduce((acc, x) => acc + x, 0) ** 2,
 
       defaultDemon: 'Pixie',
       settingsKey: 'p5-fusion-tool-settings',

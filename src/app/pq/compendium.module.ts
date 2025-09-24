@@ -7,7 +7,7 @@ import { FusionDataService } from '../pq2/fusion-data.service';
 
 import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
 import { PQCompendiumModule } from '../pq2/pq-compendium.module';
-import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
+import { Demon, DecodedDemon, CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
 import { importSkillRow } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -20,6 +20,12 @@ import PARTY_DATA_JSON from './data/party-data.json';
 import DEMON_CODES_JSON from './data/demon-codes.json';
 import SKILL_CODES_JSON from './data/skill-codes.json';
 import DEMON_UNLOCKS_JSON from './data/demon-unlocks.json';
+
+function computePrice(base: Demon, decoded: DecodedDemon): number {
+  const baseSkills = decoded.skillCodes.reduce<number>((acc, lvl) => lvl !== 0 ? acc + 1 : acc, 0);
+  const price = Math.floor(1200 + (decoded.hp + 2 * decoded.mp) ** 2 / 2.5) * (1 + 0.5 * baseSkills);
+  return Math.floor(price);
+}
 
 function createCompConfig(): CompendiumConfigSet {
   const resistElems = COMP_CONFIG_JSON.resistElems;
@@ -104,6 +110,7 @@ function createCompConfig(): CompendiumConfigSet {
     hasQrcodes: true,
     hasSkillCards: true,
     hasManualInheritance: true,
+    computePrice,
 
     defaultDemon: 'Pixie',
     settingsKey: 'pq-fusion-tool-settings',

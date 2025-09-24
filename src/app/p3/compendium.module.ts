@@ -76,17 +76,14 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const [demons, parties] of gameDataSets) {
     Object.assign(demons, parties);
-    const estimatePrice = (stats: number[]) => 2000 + 3 * stats.reduce((acc, x) => acc + x, 0) ** 2;
 
     for (const demon of Object.values(demons)) {
       demon['code'] = 1;
-      demon['price'] = estimatePrice(demon['stats']);
     }
 
     for (const demon of Object.values(parties)) {
       demon['race'] += ' P';
       demon['fusion'] = 'party';
-      demon['price'] = estimatePrice(demon['stats']);
     }
   }
 
@@ -142,6 +139,7 @@ function createCompConfig(): CompendiumConfigSet {
       hasQrcodes: false,
       hasSkillCards: false,
       hasManualInheritance: false,
+      computePrice: (b, d) => 2000 + 3 * b.stats.reduce((acc, x) => acc + x, 0) ** 2,
 
       defaultDemon: 'Pixie',
       settingsKey: 'p3-fusion-tool-settings',

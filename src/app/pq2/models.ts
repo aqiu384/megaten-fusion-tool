@@ -57,6 +57,7 @@ export interface CompendiumConfig extends BaseComp {
   hasQrcodes: boolean;
   hasSkillCards: boolean;
   hasManualInheritance: boolean;
+  computePrice(base: Demon, decoded: DecodedDemon): number;
 
   defaultDemon: string;
   settingsKey: string;

@@ -87,6 +87,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
       hasQrcodes: compConfig.hasQrcodes,
       hasSkillCards: compConfig.hasSkillCards,
       hasManualInheritance: compConfig.hasManualInheritance,
+      computePrice: compConfig.computePrice,
 
       defaultDemon: translator.translateSpecialRecipes(dummyRecipe, lang)['-'][0],
       settingsKey: translator.translateSettingsKey(compConfig.settingsKey, lang),

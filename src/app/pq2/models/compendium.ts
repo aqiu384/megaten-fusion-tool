@@ -1,5 +1,5 @@
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
-import { Demon, Skill, CompendiumConfig } from '../models';
+import { Demon, DecodedDemon, Skill, CompendiumConfig } from '../models';
 import { Toggles } from '../../compendium/models/fusion-settings';
 
 type NumDict = { [name: string]: number };
@@ -45,10 +45,18 @@ export class Compendium implements ICompendium {
       (resCode || blankCode).split('').map((x, i) =>
         resistCodes[x] + (resLvls?.[i] / 2.5 | 0 || resistLvls[x]));
 
+    const decoded: DecodedDemon = {
+      isEnglish: true,
+      demonCode: 1,
+      lvl: 1,
+      exp: 0,
+      hp: 1,
+      mp: 1,
+      skillCodes: [0, 0, 0, 0, 0, 0]
+    }
+
     for (const demonDataJson of this.compConfig.demonData) {
       for (const [name, json] of Object.entries(demonDataJson)) {
-        const baseSkills = Object.values(json['skills']).reduce<number>((acc, lvl) => lvl === 0 ? acc + 1 : acc, 0);
-        const price = Math.floor((800 + 120 * json['lvl']) * (1 + 0.25 * baseSkills) / 10) * 10;
         const affinities = this.compConfig.inheritTypes[json['inherit'] || json['inherits']];
 
         demons[name] = {
@@ -56,7 +64,7 @@ export class Compendium implements ICompendium {
           race:     json['race'],
           lvl:      json['lvl'],
           currLvl:  json['lvl'],
-          price:    json['price'] || price,
+          price:    0,
           inherits: affinities.reduce((acc, n) => 2 * acc + (n > 0 ? 1 : 0), 0),
           affinities,
           stats:    json['stats'],
@@ -69,6 +77,12 @@ export class Compendium implements ICompendium {
           prereq:   json['prereq'] || '',
           searchTags: [name, json['race']].join(',').toLocaleLowerCase()
         };
+
+        decoded.lvl = demons[name].lvl;
+        decoded.hp = demons[name].stats[0];
+        decoded.mp = demons[name].stats[1];
+        decoded.skillCodes = Object.values(demons[name].skills).map(lvl => lvl < 2 ? 1 : 0);
+        demons[name].price = this.compConfig.computePrice(demons[name], decoded);
 
         if (hasDemonTrait) {
           demons[name].skills[json['trait'] || 'Agi'] = 0;
