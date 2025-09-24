@@ -1,0 +1,413 @@
+{
+  "Agi": {
+    "cost": 1002,
+    "effect": "x1-2 hits",
+    "element": "fire",
+    "power": 3,
+    "target": "Random Foes"
+  },
+  "Agirama": {
+    "cost": 1004,
+    "effect": "x1-3 hits",
+    "element": "fire",
+    "power": 10,
+    "target": "Random Foes"
+  },
+  "Agilaon": {
+    "cost": 1006,
+    "effect": "x2-3 hits",
+    "element": "fire",
+    "power": 24,
+    "target": "Random Foes"
+  },
+  "Maragima": {
+    "cost": 1004,
+    "element": "fire",
+    "power": 6,
+    "target": "All Foes"
+  },
+  "Maragidyne": {
+    "cost": 1010,
+    "element": "fire",
+    "power": 32,
+    "target": "All Foes"
+  },
+  "Blaze (1)": {
+    "element": "fire",
+    "power": 2,
+    "target": "All Foes"
+  },
+  "Blaze (2)": {
+    "element": "fire",
+    "enemy": true,
+    "power": 6,
+    "target": "All Foes"
+  },
+  "Blaze (3)": {
+    "element": "fire",
+    "power": 18,
+    "target": "All Foes"
+  },
+  "Bufu": {
+    "cost": 1003,
+    "effect": "x1-2 hits, Freeze",
+    "element": "ice",
+    "enemy": true,
+    "power": 3,
+    "target": "Random Foes"
+  },
+  "Bufurama": {
+    "cost": 1006,
+    "effect": "x1-2 hits, Freeze",
+    "element": "ice",
+    "power": 8,
+    "target": "Random Foes"
+  },
+  "Bufudyne": {
+    "cost": 1015,
+    "effect": "x2-4 hits, Freeze",
+    "element": "ice",
+    "power": 32,
+    "target": "Random Foes"
+  },
+  "Zio": {
+    "cost": 1003,
+    "effect": "x1-3 hits",
+    "element": "elec",
+    "power": 4,
+    "target": "Random Foes"
+  },
+  "Ziolaon": {
+    "cost": 1009,
+    "effect": "x1-3 hits",
+    "element": "elec",
+    "enemy": true,
+    "power": 26,
+    "target": "Random Foes"
+  },
+  "Maziolaon": {
+    "cost": 1009,
+    "element": "elec",
+    "power": 24,
+    "target": "All Foes"
+  },
+  "Hama": {
+    "cost": 1003,
+    "element": "expel",
+    "power": 10,
+    "target": "1 Foe"
+  },
+  "Hamahan": {
+    "cost": 1009,
+    "effect": "x2 hits",
+    "element": "expel",
+    "power": 30,
+    "target": "Random Foes"
+  },
+  "Hamadyne": {
+    "cost": 1015,
+    "effect": "x2-3 hits",
+    "element": "expel",
+    "power": 50,
+    "target": "Random Foes"
+  },
+  "Zan": {
+    "cost": 1002,
+    "effect": "x0-2 hits",
+    "element": "force",
+    "power": 8,
+    "target": "Random Foes"
+  },
+  "Zanma": {
+    "cost": 1004,
+    "effect": "x0-2 hits",
+    "element": "force",
+    "power": 18,
+    "target": "Random Foes"
+  },
+  "Zanmaon": {
+    "cost": 1006,
+    "effect": "x0-2 hits",
+    "element": "force",
+    "power": 38,
+    "target": "Random Foes"
+  },
+  "Zandyne": {
+    "cost": 1010,
+    "effect": "x0-2 hits",
+    "element": "force",
+    "power": 78,
+    "target": "Random Foes"
+  },
+  "Tentarafoo": {
+    "cost": 1006,
+    "effect": "x1-8 hits, Panic",
+    "element": "force",
+    "power": 12,
+    "target": "Random Foes"
+  },
+  "Roar (1)": {
+    "effect": "Bind",
+    "element": "force",
+    "power": 2,
+    "target": "All Foes"
+  },
+  "Roar (2)": {
+    "effect": "Bind",
+    "element": "force",
+    "power": 4,
+    "target": "All Foes"
+  },
+  "Roar (3)": {
+    "effect": "Bind",
+    "element": "force",
+    "power": 8,
+    "target": "All Foes"
+  },
+  "Shibaboo": {
+    "cost": 1002,
+    "effect": "x1-2 hits, Bind",
+    "element": "bind",
+    "enemy": true,
+    "target": "Random Foes"
+  },
+  "Makajama": {
+    "cost": 1003,
+    "effect": "Mute",
+    "element": "death",
+    "target": "All Foes"
+  },
+  "Pulinpa": {
+    "cost": 1003,
+    "effect": "x2 hits, Panic",
+    "element": "nerve",
+    "target": "Random Foes"
+  },
+  "Dorminar": {
+    "cost": 1005,
+    "effect": "Sleep",
+    "element": "nerve",
+    "target": "All Foes"
+  },
+  "Marin Karin": {
+    "cost": 1006,
+    "effect": "x2-3 hits, Happy/Panic",
+    "element": "mind",
+    "target": "Random Foes"
+  },
+  "Makaranda": {
+    "cost": 1002,
+    "effect": "1 MP Dmg",
+    "element": "almighty",
+    "enemy": true,
+    "target": "All Foes"
+  },
+  "Poison Bite (1)": {
+    "effect": "Poison",
+    "element": "almighty",
+    "enemy": true,
+    "power": 2,
+    "target": "1 Foe"
+  },
+  "Poison Bite (2)": {
+    "effect": "Poison",
+    "element": "almighty",
+    "enemy": true,
+    "power": 4,
+    "target": "1 Foe"
+  },
+  "Poison Bite (3)": {
+    "effect": "Poison",
+    "element": "almighty",
+    "power": 6,
+    "target": "1 Foe"
+  },
+  "Toxic Sting (1)": {
+    "effect": "Poison",
+    "element": "almighty",
+    "enemy": true,
+    "power": 3,
+    "target": "1 Foe"
+  },
+  "Stun Bite (1)": {
+    "effect": "Paralyze",
+    "element": "almighty",
+    "enemy": true,
+    "power": 2,
+    "target": "1 Foe"
+  },
+  "Stun Bite (2)": {
+    "effect": "Paralyze",
+    "element": "almighty",
+    "power": 6,
+    "target": "1 Foe"
+  },
+  "Stun Bite (3)": {
+    "effect": "Paralyze",
+    "element": "almighty",
+    "enemy": true,
+    "power": 18,
+    "target": "1 Foe"
+  },
+  "Stone Bite (1)": {
+    "effect": "Stone",
+    "element": "almighty",
+    "enemy": true,
+    "power": 4,
+    "target": "1 Foe"
+  },
+  "Stone Bite (2)": {
+    "effect": "Stone",
+    "element": "almighty",
+    "power": 8,
+    "target": "1 Foe"
+  },
+  "Stone Bite (3)": {
+    "effect": "Stone",
+    "element": "almighty",
+    "enemy": true,
+    "power": 16,
+    "target": "1 Foe"
+  },
+  "Stone Bite (4)": {
+    "effect": "Stone",
+    "element": "almighty",
+    "enemy": true,
+    "power": 32,
+    "target": "1 Foe"
+  },
+  "Petra Eyes (2)": {
+    "effect": "Stone",
+    "element": "almighty",
+    "enemy": true,
+    "power": 32,
+    "target": "1 Foe"
+  },
+  "Poison Gas (2)": {
+    "effect": "Poison",
+    "element": "almighty",
+    "enemy": true,
+    "power": 6,
+    "target": "All Foes"
+  },
+  "Curse (2)": {
+    "effect": "Insta Death",
+    "element": "almighty",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Curse (3)": {
+    "effect": "Insta Death",
+    "element": "almighty",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Curse (4)": {
+    "effect": "Insta Death",
+    "element": "almighty",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Energy Drain (2)": {
+    "effect": "-1 Lvl to humans",
+    "element": "almighty",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Energy Drain (3)": {
+    "effect": "-1 Lvl to humans",
+    "element": "almighty",
+    "enemy": true,
+    "target": "1 Foe"
+  },
+  "Dia": {
+    "cost": 1002,
+    "effect": "Recover small HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Diarahan": {
+    "cost": 1010,
+    "effect": "Recover full HP",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Mediama": {
+    "cost": 1006,
+    "effect": "Recover some HP",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Posumudi": {
+    "cost": 1004,
+    "effect": "Remove Poison",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Paraladi": {
+    "cost": 1006,
+    "effect": "Remove Paralyze",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Petradi": {
+    "cost": 1008,
+    "effect": "Remove Stone",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Patra": {
+    "cost": 1002,
+    "effect": "Remove Happy, Panic, Mute, Bind, Sleep",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Penpatra": {
+    "cost": 1004,
+    "effect": "Remove Happy, Panic, Mute, Bind, Sleep",
+    "element": "recovery",
+    "target": "All Allies"
+  },
+  "Recarm": {
+    "cost": 1008,
+    "effect": "Chance to revive",
+    "element": "recovery",
+    "target": "1 Ally"
+  },
+  "Tarukaja": {
+    "cost": 1004,
+    "effect": "Increase attack power",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Tetraja": {
+    "cost": 1006,
+    "effect": "Nullify Level decrease for 1 battle",
+    "element": "support",
+    "target": "All Allies"
+  },
+  "Sabbatma": {
+    "cost": 1010,
+    "effect": "Summon demon from stock",
+    "element": "special",
+    "target": "1 Ally"
+  },
+  "Mappara": {
+    "cost": 1002,
+    "effect": "Show minimap until next New Moon",
+    "element": "special",
+    "target": "Self"
+  },
+  "Trastart": {
+    "cost": 1006,
+    "effect": "Teleport to last elder/terminal at which progress was saved",
+    "element": "special",
+    "target": "Self"
+  },
+  "Call Ally": {
+    "effect": "Summon same-enemy reinforcements",
+    "element": "special",
+    "enemy": true,
+    "target": "1 Ally"
+  }
+}
