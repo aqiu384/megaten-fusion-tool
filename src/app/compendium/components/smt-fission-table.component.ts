@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, FusionEntry, NamePair, FusionPair } from '../models';
@@ -55,6 +56,7 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
   constructor(
     private currentDemonService: CurrentDemonService,
     private changeDetectorRef: ChangeDetectorRef,
+    private route: ActivatedRoute,
     @Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService
   ) { }
 
@@ -78,6 +80,11 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
         this.currentDemon = name;
         this.getReverseFissions();
       }));
+
+    this.subscriptions.push(
+      this.route.parent.parent.data.subscribe(data => {
+        this.lang = data.lang;
+      }));
   }
 
   ngOnDestroy() {
@@ -95,8 +102,6 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
   getReverseFissions() {
     if (this.compendium && this.fusionChart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
-
-      this.lang = this.currentDemon.charCodeAt(0) < 256 ? 'en' : 'ja';
       this.fusionPrereq = this.compendium
         .getDemon(this.currentDemon).prereq;
       this.fusionEntries = this.compendium

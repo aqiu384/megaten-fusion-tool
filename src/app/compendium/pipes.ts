@@ -84,11 +84,18 @@ const JA_RESIST_LVLS = [
   '??', '吸', '反', '無', '耐', 'ー', '弱'
 ];
 
-@Pipe({ name: 'reslvlToStringJa' })
-export class ReslvlToStringJaPipe implements PipeTransform {
+const KO_RESIST_LVLS = [
+  '??', '흡', '반', '무', '내', '-', '약', '??',
+  '??', '흡', '반', '무', '내', '-', '약'
+];
+
+@Pipe({ name: 'reslvlToStringLocale' })
+export class ReslvlToStringLocalePipe implements PipeTransform {
   transform(value: number, lang: string): string {
     const resLvl = value >> 10;
-    return lang === 'ja' ? JA_RESIST_LVLS[resLvl] : resLvl < 12 ? RESIST_LVLS[resLvl] : RESIST_NUMS[resLvl - 12][value & 0x3FF];
+    if (lang === 'ja') { return JA_RESIST_LVLS[resLvl]; }
+    if (lang === 'ko') { return KO_RESIST_LVLS[resLvl]; }
+    return resLvl < 12 ? RESIST_LVLS[resLvl] : RESIST_NUMS[resLvl - 12][value & 0x3FF];
   }
 }
 

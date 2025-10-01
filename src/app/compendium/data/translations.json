@@ -30,20 +30,20 @@
     "AppShadows": ["List of Shadows - ", "悪魔一覧 ", "敌人列表 ", "섀도 목록 - "],
     "Demon": ["Demon", "悪魔一覧"],
     "Persona": ["Persona", "悪魔一覧"],
-    "Stats": ["Stats", "ステータス"],
-    "Resistances": ["Resistances", "耐性"],
-    "Affinities": ["Affinities", "スキル適正"],
-    "Race": ["Race", "種族"],
-    "Name": ["Name", "悪魔名"]
+    "Stats": ["Stats", "ステータス", "Stats", "스테이터스"],
+    "Resistances": ["Resistances", "耐性", "Resistances", "내성"],
+    "Affinities": ["Affinities", "スキル適正", "Affinities", "스킬 적성"],
+    "Race": ["Race", "種族", "Race", "유형"],
+    "Name": ["Name", "悪魔名", "Name", "이름"]
   },
   "DemonResistsComponent": {
-    "Resistances": ["Resistances", "耐性"],
-    "Element": ["Element", "属性"],
-    "Ailment": ["Ailment", "状態異常"]
+    "Resistances": ["Resistances", "耐性", "Resistances", "내성"],
+    "Element": ["Element", "属性", "Element", "속성"],
+    "Ailment": ["Ailment", "状態異常", "Ailment", "상태이상"]
   },
   "DemonStatsComponent": {
-    "Stats": ["Stats", "ステータス"],
-    "Price": ["Price", "価格"],
+    "Stats": ["Stats", "ステータス", "Stats", "스테이터스"],
+    "Price": ["Price", "価格", "Price", "가격"],
     "EvolvesFrom": ["Evolves From", "変異から"],
     "EvolvesTo": ["Evolves To", "変異"]
   },
@@ -54,10 +54,10 @@
     "DarkNormalFusions": ["Dark Normal Fusions", "DARK合体"]
   },
   "FusionPairTableComponent": {
-    "Price": ["Price", "価格"],
-    "Race": ["Race", "種族"],
-    "Name": ["Name", "悪魔名"],
-    "NoFusionsFound": ["No fusions found!", "合体なし"]
+    "Price": ["Price", "価格", "Price", "가격"],
+    "Race": ["Race", "種族", "Race", "유형"],
+    "Name": ["Name", "悪魔名", "Name", "이름"],
+    "NoFusionsFound": ["No fusions found!", "合体なし", "No fusions found!", "합체 없음"]
   },
   "FusionSettingsComponent": {
     "AppTitle": ["Fusion Settings - ", "合体設定 ", "合成设置 ", "합체 설정 - "],
@@ -67,14 +67,14 @@
     "AppTitle": ["Recipe Generator - ", "合体レシピ ", "合体配方生成 ", "레시피 생성기 - "],
     "RecipeGenerator": ["Recipe Generator", "合体レシピ","合体配方生成", "레시피 생성기"],
     "Target": ["Target", "悪魔", "合成目标", "목표"],
-    "Race": ["Race", "種族", "种类", "종족"],
+    "Race": ["Race", "種族", "种类", "유형"],
     "Name": ["Name", "悪魔名", "名称", "이름"],
     "IncludeIngredients": ["Include Ingredients", "素材悪魔", "所用原料", "합체 소재"],
-    "FilterBy": ["Filter By", "スキル検索", "按技能检索"],
+    "FilterBy": ["Filter By", "スキル検索", "按技能检索", "스킬 검색"],
     "Elem": ["Elem", "属性", "属性", "속성"],
     "Skill": ["Skill", "スキル名", "技能", "스킬"],
     "Ingredient": ["Ingredient", "悪魔名", "原料", "재료"],
-    "LearnsSkill": ["Learns skill #", "スキル検索", "技能"],
+    "LearnsSkill": ["Learns skill #", "スキル検索", "技能", "스킬 "],
     "FusionRecipe": ["Fusion Recipe", "合体レシピ", "合体配方", "합체 레시피"],
     "LeftChain": ["Left Chain", "左レシピ", "左侧合成", "왼쪽"],
     "RightChain": ["Right Chain", "右レシピ", "右侧合成", "오른쪽"],
@@ -96,20 +96,20 @@
     "NoLearnedSkills": ["No Learned Skills Found", "スキルなし"]
   },
   "SmtFissionTableComponent": {
-    "SpecialFusionCondition": ["Special Fusion Condition", "合体条件"],
-    "SpecialFusionIngredients": ["Special Fusion Ingredients for ", "特殊合体 "],
-    "Title": ["Ingredient 1 x Ingredient 2 = ", "悪魔1 x 悪魔2 = "],
-    "LeftHeader": ["Ingredient 1", "悪魔1"],
-    "RightHeader": ["Ingredient 2", "悪魔2"]
+    "SpecialFusionCondition": ["Special Fusion Condition", "合体条件", "Special Fusion Condition", "특수 합체 조건"],
+    "SpecialFusionIngredients": ["Special Fusion Ingredients for ", "特殊合体 ", "Special Fusion Ingredients for ", "특수 합체 재료 "],
+    "Title": ["Ingredient 1 x Ingredient 2 = ", "悪魔1 x 悪魔2 = ", "Ingredient 1 x Ingredient 2 = ", "재료 1 x 재료 2 = "],
+    "LeftHeader": ["Ingredient 1", "悪魔1", "Ingredient 1", "재료 1"],
+    "RightHeader": ["Ingredient 2", "悪魔2", "Ingredient 2", "재료 2"]
   },
   "SmtFusionTableComponent": {
-    "Title": [" x Ingredient 2 = Result", " x 悪魔2 = 悪魔R"],
-    "LeftHeader": ["Ingredient 2", "悪魔2"],
-    "RightHeader": ["Result", "悪魔R"]
+    "Title": [" x Ingredient 2 = Result", " x 悪魔2 = 悪魔R", " x Ingredient 2 = Result", " x 재료 2 = 결과"],
+    "LeftHeader": ["Ingredient 2", "悪魔2", "Ingredient 2", "재료 2"],
+    "RightHeader": ["Result", "悪魔R", "Result", "결과"]
   },
   "SmtFusionsComponent": {
-    "NormalFissions": ["Reverse Fissions", "逆引き合体"],
-    "NormalFusions": ["Forward Fusions", "2身合体"],
+    "NormalFissions": ["Reverse Fissions", "逆引き合体", "Reverse Fissions", "역방향 합체"],
+    "NormalFusions": ["Forward Fusions", "2身合体", "Forward Fusions", "2신 합체"],
     "DoubleFissions": ["Normal Reverse Fissions"],
     "TripleFissions": ["Triple Reverse Fissions"],
     "TripleFusions": ["Triple Forward Fusions"],

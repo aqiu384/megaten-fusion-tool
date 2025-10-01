@@ -20,7 +20,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
     <td *ngIf="hasInherits"><div [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
-      {{ resist | reslvlToStringJa:lang }}
+      {{ resist | reslvlToStringLocale:lang }}
     </td>
     <ng-container *ngIf="hasAffinity">
       <td *ngFor="let affinity of data.affinities" [ngClass]="'affinity' + affinity">
