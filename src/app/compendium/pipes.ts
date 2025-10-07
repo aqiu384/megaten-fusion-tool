@@ -33,9 +33,17 @@ export class SkillLevelToStringPipe implements PipeTransform {
 
 @Pipe({ name: 'skillLevelToShortString' })
 export class SkillLevelToShortStringPipe implements PipeTransform {
-  transform(value: number): string {
+  transform(value: number, lang: string = 'en'): string {
     if (value < 2) { return ''; }
     if (value < 120) { return `(${value.toString()})`; }
+
+    if (value === 3865) {
+      return lang === 'ko' ? '(경보)' : '(Fa)';
+    }
+    if (value === 5275) {
+      return lang === 'ko' ? '(협상)' : '(Tk)';
+    }
+
     return '(' + String.fromCharCode(Math.floor(value / 100) + 32) + String.fromCharCode(value % 100 + 32) + ')';
   }
 }
