@@ -58,7 +58,7 @@ import {
   ElementAffinityToStringPipe,
   LvlToNumberPipe,
   ReslvlToStringPipe,
-  ReslvlToStringJaPipe,
+  ReslvlToStringLocalePipe,
   ReslvlToColorPipe,
   ResmodToStringPipe,
   RoundInheritPercentPipe
@@ -112,7 +112,7 @@ import {
     ElementAffinityToStringPipe,
     LvlToNumberPipe,
     ReslvlToStringPipe,
-    ReslvlToStringJaPipe,
+    ReslvlToStringLocalePipe,
     ReslvlToColorPipe,
     ResmodToStringPipe,
     RoundInheritPercentPipe
@@ -154,7 +154,7 @@ import {
     ElementAffinityToStringPipe,
     LvlToNumberPipe,
     ReslvlToStringPipe,
-    ReslvlToStringJaPipe,
+    ReslvlToStringLocalePipe,
     ReslvlToColorPipe,
     ResmodToStringPipe,
     RoundInheritPercentPipe

@@ -33,9 +33,17 @@ export class SkillLevelToStringPipe implements PipeTransform {
 
 @Pipe({ name: 'skillLevelToShortString' })
 export class SkillLevelToShortStringPipe implements PipeTransform {
-  transform(value: number): string {
+  transform(value: number, lang: string = 'en'): string {
     if (value < 2) { return ''; }
     if (value < 120) { return `(${value.toString()})`; }
+
+    if (value === 3865) {
+      return lang === 'ko' ? '(경보)' : '(Fa)';
+    }
+    if (value === 5275) {
+      return lang === 'ko' ? '(협상)' : '(Tk)';
+    }
+
     return '(' + String.fromCharCode(Math.floor(value / 100) + 32) + String.fromCharCode(value % 100 + 32) + ')';
   }
 }
@@ -84,11 +92,18 @@ const JA_RESIST_LVLS = [
   '??', '吸', '反', '無', '耐', 'ー', '弱'
 ];
 
-@Pipe({ name: 'reslvlToStringJa' })
-export class ReslvlToStringJaPipe implements PipeTransform {
+const KO_RESIST_LVLS = [
+  '??', '흡', '반', '무', '내', '-', '약', '??',
+  '??', '흡', '반', '무', '내', '-', '약'
+];
+
+@Pipe({ name: 'reslvlToStringLocale' })
+export class ReslvlToStringLocalePipe implements PipeTransform {
   transform(value: number, lang: string): string {
     const resLvl = value >> 10;
-    return lang === 'ja' ? JA_RESIST_LVLS[resLvl] : resLvl < 12 ? RESIST_LVLS[resLvl] : RESIST_NUMS[resLvl - 12][value & 0x3FF];
+    if (lang === 'ja') { return JA_RESIST_LVLS[resLvl]; }
+    if (lang === 'ko') { return KO_RESIST_LVLS[resLvl]; }
+    return resLvl < 12 ? RESIST_LVLS[resLvl] : RESIST_NUMS[resLvl - 12][value & 0x3FF];
   }
 }
 

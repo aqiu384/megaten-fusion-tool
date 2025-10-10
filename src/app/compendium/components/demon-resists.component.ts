@@ -26,10 +26,10 @@ import Translations from '../data/translations.json';
       <tbody>
         <tr>
           <td *ngFor="let resist of resists" [ngClass]="['resists', resist | reslvlToColor]">
-            {{ resist | reslvlToStringJa:lang }}
+            {{ resist | reslvlToStringLocale:lang }}
           </td>
           <td *ngFor="let resist of ailments" [ngClass]="['resists', resist | reslvlToString]">
-            {{ resist | reslvlToStringJa:lang }}
+            {{ resist | reslvlToStringLocale:lang }}
           </td>
         </tr>
         <tr>

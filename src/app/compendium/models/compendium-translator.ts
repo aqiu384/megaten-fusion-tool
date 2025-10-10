@@ -66,6 +66,11 @@ export class CompendiumTranslator {
       }
 
       newEntry['race'] = this.translate(entry['race'], langCode, RACE_NAMES_JSON);
+
+      if (entry['item']) {
+        newEntry['item'] = entry['item'].split(', ').map(i => this.translate(i, langCode, SKILL_NAMES_JSON)).join(', ');
+      }
+
       newDemons[this.translate(dname, langCode, DEMON_NAMES_JSON)] = newEntry;
     }
 
@@ -84,6 +89,14 @@ export class CompendiumTranslator {
         newEntry['skills'] = entry['skills'].map(s => this.translate(s, langCode, SKILL_NAMES_JSON));
       }
 
+      if (entry['persona']) {
+        newEntry['persona'] = this.translate(entry['persona'], langCode, DEMON_NAMES_JSON);
+      }
+
+      if (entry['drops']) {
+        newEntry['drops'] = entry['drops'].map(d => this.translate(d, langCode, SKILL_NAMES_JSON));
+      }
+
       newEntry['race'] = this.translate(entry['race'], langCode, RACE_NAMES_JSON);
       newEnemies[this.translate(dname, langCode, ENEMY_NAMES_JSON)] = newEntry;
     }
@@ -100,6 +113,11 @@ export class CompendiumTranslator {
       const newEntry = Object.assign({}, entry);
       const target = newEntry['target'] || 'Self';
       newEntry['target'] = this.translate(newEntry['target'] || 'Self', langCode, ELEM_NAMES_JSON);
+
+      if (newEntry['card']) {
+        newEntry['card'] = newEntry['card'].split(', ').map(d => this.translate(d, langCode, DEMON_NAMES_JSON)).join(', ');
+      }
+
       newSkills[this.translate(sname, langCode, SKILL_NAMES_JSON)] = newEntry;
     }
 
