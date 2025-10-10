@@ -53,6 +53,7 @@ export class FusionDataService implements IFusionDataService {
       [ kmtSplitWithDiffRace ],
       []
     );
+  lang = 'en';
 
   compConfig: CompendiumConfig;
   appName: string;

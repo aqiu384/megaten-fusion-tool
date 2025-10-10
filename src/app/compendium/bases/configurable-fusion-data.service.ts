@@ -5,6 +5,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
 export abstract class ConfigurableFusionDataService<TCompendium extends Compendium, TFusionChart extends FusionChart> implements IFusionDataService {
   abstract fissionCalculator: FusionCalculator;
   abstract fusionCalculator: FusionCalculator;
+  abstract lang: string;
   
   private _compendium: TCompendium;
   private _compendium$: BehaviorSubject<TCompendium>;

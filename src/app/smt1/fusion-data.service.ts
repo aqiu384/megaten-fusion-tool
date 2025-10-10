@@ -44,6 +44,7 @@ export class FusionDataService implements IFusionTrioService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   triFusionCalculator = new TripleFusionCalculator([fuseN1WithDiffRace, fuseT1WithDiffRace], []);
   triFissionCalculator = new TripleFusionCalculator([splitTripleDR], []);
+  lang = 'en';
 
   compConfig: CompendiumConfig;
   appName: string;

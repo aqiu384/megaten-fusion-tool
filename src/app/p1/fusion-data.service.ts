@@ -14,6 +14,8 @@ export class FusionDataService implements IFusionDataService {
   fissionCalculator = SMT_NORMAL_FISSION_CALCULATOR;
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   settingsKey = 'p1-fusion-tool-settings';
+  lang = 'en';
+
   compConfig: CompendiumConfig;
   appName: string;
   fusionSettings: Observable<FusionSettings>;

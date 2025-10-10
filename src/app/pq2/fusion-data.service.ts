@@ -34,6 +34,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   fusionCalculator = P3_NORMAL_FUSION_CALCULATOR;
   triFissionCalculator = P3_TRIPLE_FISSION_CALCULATOR;
   triFusionCalculator = P3_TRIPLE_FUSION_CALCULATOR;
+  lang: string;
 
   compConfig: CompendiumConfig;
   appName: string;
@@ -105,6 +106,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
       newCompConfig.settingsVersion
     );
 
+    this.lang = lang;
     this.compConfig = newCompConfig;
     this.appName =  newCompConfig.appTitle + translateComp(Translations.CompendiumComponent.FusionCalculator, newCompConfig.lang);
 

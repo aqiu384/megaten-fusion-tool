@@ -14,6 +14,7 @@ import { DemonEntryComponent, DemonEntryContainerComponent } from './components/
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from './components/password-generator.component';
+import { DemonPasswordComponent } from './components/demon-password-component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from 
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
+    DemonPasswordComponent,
     FusionSettingsContainerComponent,
     FusionChartContainerComponent,
     RecipeGeneratorContainerComponent,
@@ -41,6 +43,7 @@ import { PasswordGeneratorComponent, PasswordGeneratorContainerComponent } from 
     SkillListContainerComponent,
     DemonEntryComponent,
     DemonEntryContainerComponent,
+    DemonPasswordComponent,
     FusionSettingsContainerComponent,
     FusionChartContainerComponent,
     RecipeGeneratorContainerComponent,

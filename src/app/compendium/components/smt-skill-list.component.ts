@@ -25,7 +25,7 @@ import { Skill } from '../models';
       <ul class="comma-list">
         <li *ngFor="let entry of data.learnedBy">
           <a routerLink="../{{ isPersona ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
-          {{ entry.level | skillLevelToShortString }}
+          {{ entry.level | skillLevelToShortStringLocale:lang }}
         </li>
       </ul>
     </td>
@@ -34,7 +34,7 @@ import { Skill } from '../models';
         <li *ngFor="let entry of data.transfer">
           <ng-container *ngIf="entry.level >= -99">
             <a routerLink="../{{ hasSkillCards ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
-            {{ entry.level | skillLevelToShortString }}
+            {{ entry.level | skillLevelToShortStringLocale:lang }}
           </ng-container>
           <ng-container *ngIf="entry.level < -99">{{ entry.demon }} </ng-container>
         </li>
@@ -52,6 +52,7 @@ export class SmtSkillListRowComponent {
   @Input() hasTransferTitle = false;
   @Input() hasSkillCards = false;
   @Input() skillLvl = -1;
+  @Input() lang = 'en';
   @Input() data: Skill;
 }
 
@@ -91,6 +92,7 @@ export class SmtSkillListRowComponent {
           [isPersona]="isPersona"
           [hasTransferTitle]="!!transferTitle"
           [hasSkillCards]="transferTitle.includes('Card')"
+          [lang]="lang"
           [data]="data"
           [ngClass]="{
             extra: data.rank > 70 && data.rank < 90,

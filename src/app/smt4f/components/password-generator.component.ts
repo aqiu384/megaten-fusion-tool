@@ -14,22 +14,12 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
   template: `
     <form [formGroup]="form">
       <h2>Password Generator</h2>
-      <table class="entry-table">
-        <thead>
-          <tr><th colspan="2" class="title">Passwords</th></tr>
-          <tr>
-            <th>Password</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div><code>{{ engPassword.slice(0, 16) }}</code></div>
-              <div><code>{{ engPassword.slice(16) }}</code></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <app-demon-password
+        [encoding]="encoding"
+        [inverseEncoding]="inverseEncoding"
+        [encodeBytes]="encodeBytes"
+        (decodedBytes)="setPasswordValues($event)">
+      </app-demon-password>
       <table class="entry-table">
         <thead>
           <tr><th colspan="4" class="title">Demon Entry</th></tr>
@@ -116,7 +106,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
 export class PasswordGeneratorComponent implements OnChanges {
   @Input() defaultDemon: string;
   @Input() encoding: string;
-  @Input() encodingRegex: string;
+  @Input() inverseEncoding: { [letter: string]: number };
   @Input() compendium: Compendium;
   @Input() races: string[]
   @Input() elems: string[]
@@ -130,11 +120,10 @@ export class PasswordGeneratorComponent implements OnChanges {
   allRaces: string[];
   allElems: string[];
   form: FormGroup;
+  encodeBytes: number[];
 
   range99 = Array(99);
   range256 = Array(256);
-  japPassword = '';
-  engPassword = '';
   currHP = 0;
   currMP = 0;
   price = 0;
@@ -201,8 +190,7 @@ export class PasswordGeneratorComponent implements OnChanges {
       // const overflowPrice = this.isRedux ? statsPrice : statsPrice % Math.pow(2, 32);
       // this.price = Math.floor((Math.floor(overflowPrice / 1000) + SkillCosts[maxRank] + 1300) * 0.75);
 
-      const passBytes = encodeDemon(decoded);
-      this.engPassword = passBytes.map(b => this.encoding[b]).join('');
+      this.encodeBytes = encodeDemon(decoded);
 
       // this.currHP = decoded.lvl * 6 + Math.floor(decoded.stats[2] * 3 * demon.hpmod) + (demon.name === 'Knocker' ? 30 : 25);
       // this.currMP = decoded.lvl * 3 + Math.floor(decoded.stats[1] * 2 * demon.hpmod) + (demon.name === 'Knocker' ? 14 : 13);
@@ -309,8 +297,8 @@ export class PasswordGeneratorComponent implements OnChanges {
       [races]="compConfig.races"
       [elems]="compConfig.skillElems"
       [defaultDemon]="compConfig.defaultRecipeDemon"
-      [encoding]="encodings[encodingIndex]"
-      [encodingRegex]="encodingRegexes[encodingIndex]"
+      [encoding]="encoding"
+      [inverseEncoding]="inverseEncoding"
       [compendium]="compendium">
     </app-password-generator>
   `
@@ -318,18 +306,9 @@ export class PasswordGeneratorComponent implements OnChanges {
 export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
   compendium: Compendium;
   compConfig: CompendiumConfig;
+  encoding: string;
+  inverseEncoding: { [letter: string]: number };
   subscriptions: Subscription[] = [];
-  encodingIndex = 0;
-  encodings = [
-    "$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+",
-    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?&",
-    "しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ",
-  ]
-  encodingRegexes = [
-    "$2-90A-H%J-Za-k#m-z+-",
-    "0-9A-Za-z&?",
-    "しんいくみBやるYけひKFとHむAちにZきWよLをのたれNえSふわJそりすCめPへQGRDこMTまつせかはEUてさなあもゆおうろ",
-  ]
 
   constructor(
     private fusionDataService: FusionDataService,
@@ -344,9 +323,23 @@ export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
   }
 
   subscribeAll() {
+    const encodings = [
+      "$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+",
+      "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?&",
+      "しんいくみBやるYけひKFとHむAちにZきWよLをのたれNえSふわJそりすCめPへQGRDこMTまつせかはEUてさなあもゆおうろ",
+      "しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ"
+    ];
+
     this.compConfig = this.fusionDataService.compConfig;
-    this.encodingIndex = this.compConfig.lang !== 'en' ? 2 :
+    const encodingIndex = this.compConfig.lang !== 'en' ? 3 :
       this.compConfig.appCssClasses.includes('smtdsj') ? 1 : 0;
+    this.encoding = encodings[encodingIndex];
+    this.inverseEncoding = {};
+
+    for (const encoding of encodings.concat([encodings[encodingIndex]])) {
+      this.inverseEncoding = encoding.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, this.inverseEncoding);
+    }
+
     this.subscriptions.push(
       this.fusionDataService.compendium.subscribe(comp => {
         this.compendium = comp;

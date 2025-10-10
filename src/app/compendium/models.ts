@@ -70,6 +70,7 @@ export interface Compendium {
 export interface FusionDataService {
   fissionCalculator: FusionCalculator;
   fusionCalculator: FusionCalculator;
+  lang: string;
   compendium: Observable<Compendium>;
   fusionChart: Observable<FusionChart>;
   fusionSettings: Observable<FusionSettings>;

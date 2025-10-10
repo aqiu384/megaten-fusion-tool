@@ -17,6 +17,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
   compConfig: CompendiumConfig;
   appName: string;
+  lang: string;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, translator: CompendiumTranslator, router: Router) {
     const parts = router.url.split('/');
@@ -77,6 +78,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
       newCompConfig.settingsVersion
     );
     
+    this.lang = lang;
     this.compConfig = newCompConfig;
     this.appName =  newCompConfig.appTitle + translateComp(Translations.CompendiumComponent.FusionCalculator, newCompConfig.lang);
   }

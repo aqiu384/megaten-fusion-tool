@@ -17,6 +17,7 @@ export class FusionDataService implements IFusionTrioService {
   fusionCalculator = new NormalFusionCalculator([fuseWithSameRace], [ ]);
   triFissionCalculator = new TripleFusionCalculator([splitWithDiffRace], [ ]);
   triFusionCalculator = new TripleFusionCalculator([fuseWithDiffRace], [ ]);
+  lang = 'en';
 
   compConfig: CompendiumConfig;
   appName: string;

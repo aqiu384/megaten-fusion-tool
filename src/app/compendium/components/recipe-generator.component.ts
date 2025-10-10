@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
-import { SkillLevelToShortStringPipe } from '../pipes';
+import { SkillLevelToShortStringPipeLocale } from '../pipes';
 import { Demon, Skill, FusionRecipe, Compendium, SquareChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { createSkillsRecipe } from '../models/recipe-generator';
 import Translations from '../data/translations.json';
@@ -134,7 +134,7 @@ export class RecipeGeneratorComponent implements OnChanges {
   recipeResult: string[];
   resultSkills: string[];
   msgs = Translations.RecipeGeneratorComponent;
-  skillLevelPipe = new SkillLevelToShortStringPipe();
+  skillLevelPipe = new SkillLevelToShortStringPipeLocale();
 
   blankDemon: Demon = {
     name: '-', race: '-', lvl: 0, currLvl: 0, price: 0, inherits: 0,
@@ -197,7 +197,7 @@ export class RecipeGeneratorComponent implements OnChanges {
     for (const [skill, demon] of Object.entries(recipe.skills)) {
       if (!skillRef[demon]) { skillRef[demon] = []; }
       const slvl = this.compendium.getDemon(demon).skills[skill];
-      skillRef[demon].push(`${skill} ${this.skillLevelPipe.transform(slvl)}`.trim());
+      skillRef[demon].push(`${skill} ${this.skillLevelPipe.transform(slvl, this.lang)}`.trim());
     }
 
     this.recipe = recipe;
@@ -215,7 +215,7 @@ export class RecipeGeneratorComponent implements OnChanges {
       .filter(s => s[1] < 2000)
       .sort((a, b) => a[1] - b[1])
     ) {
-      this.resultSkills.push(`${skill} ${this.skillLevelPipe.transform(slvl)}`.trim());
+      this.resultSkills.push(`${skill} ${this.skillLevelPipe.transform(slvl, this.lang)}`.trim());
     }
   }
 

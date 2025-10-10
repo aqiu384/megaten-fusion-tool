@@ -1,6 +1,5 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
 
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, NamePair, FusionPair } from '../models';
@@ -42,12 +41,12 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
   constructor(
     private currentDemonService: CurrentDemonService,
     private changeDetectorRef: ChangeDetectorRef,
-    private route: ActivatedRoute,
     @Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService
   ) { }
 
   ngOnInit() {
     this.calculator = this.fusionDataService.fusionCalculator;
+    this.lang = this.fusionDataService.lang;
 
     this.subscriptions.push(
       this.fusionDataService.compendium.subscribe(compendium => {
@@ -66,11 +65,6 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
         this.currentDemon = name;
         this.getForwardFusions();
       }));
-
-    this.subscriptions.push(
-      this.route.parent.parent.data.subscribe(data => {
-        this.lang = data.lang;
-      }));
   }
 
   ngOnDestroy() {
@@ -82,7 +76,6 @@ export class SmtFusionTableComponent implements OnInit, OnDestroy {
   getForwardFusions() {
     if (this.compendium && this.fusionChart && this.currentDemon) {
       this.changeDetectorRef.markForCheck();
-
       this.fusionPairs = this.calculator
         .getFusions(this.currentDemon, this.compendium, this.fusionChart)
         .map(this.toFusionPair(this.currentDemon));

@@ -1,6 +1,5 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
 
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, FusionEntry, NamePair, FusionPair } from '../models';
@@ -56,12 +55,12 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
   constructor(
     private currentDemonService: CurrentDemonService,
     private changeDetectorRef: ChangeDetectorRef,
-    private route: ActivatedRoute,
     @Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService
   ) { }
 
   ngOnInit() {
     this.calculator = this.fusionDataService.fissionCalculator;
+    this.lang = this.fusionDataService.lang;
 
     this.subscriptions.push(
       this.fusionDataService.compendium.subscribe(compendium => {
@@ -79,11 +78,6 @@ export class SmtFissionTableComponent implements OnInit, OnDestroy {
       this.currentDemonService.currentDemon.subscribe(name => {
         this.currentDemon = name;
         this.getReverseFissions();
-      }));
-
-    this.subscriptions.push(
-      this.route.parent.parent.data.subscribe(data => {
-        this.lang = data.lang;
       }));
   }
 
