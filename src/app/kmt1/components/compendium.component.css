@@ -1,30 +1,22 @@
 /* Kyūyaku Megami Tensei */
-.devilsum div.element-icon, .kmt div.element-icon {
-  height: 12px;
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
+.kmt div.element-icon.gun { background-image: url('/assets/images/elem-sprites.svg#gun'); }
+.kmt div.element-icon.sword { background-image: url('/assets/images/elem-sprites.svg#swo'); }
+.kmt div.element-icon.fire { background-image: url('/assets/images/elem-sprites.svg#fir'); }
+.kmt div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
+.kmt div.element-icon.elec { background-image: url('/assets/images/elem-sprites.svg#ele'); }
+.kmt div.element-icon.expel { background-image: url('/assets/images/elem-sprites.svg#lig'); }
+.kmt div.element-icon.force { background-image: url('/assets/images/elem-sprites.svg#for'); }
+.kmt div.element-icon.bind { background-image: url('/assets/images/elem-sprites.svg#paralyze'); }
+.kmt div.element-icon.death { background-image: url('/assets/images/elem-sprites.svg#smt-dar'); }
+.kmt div.element-icon.nerve { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
+.kmt div.element-icon.mind { background-image: url('/assets/images/elem-sprites.svg#panic'); }
+.kmt div.element-icon.almighty { background-image: url('/assets/images/elem-sprites.svg#smt-alm'); }
 
-.kmt div.element-icon.gun { background-image: url('/assets/images/smtsj/gun.png'); }
-.kmt div.element-icon.sword { background-image: url('/assets/images/smt4f/sword.png'); }
-.kmt div.element-icon.fire { background-image: url('/assets/images/smtsj/fir.png'); }
-.kmt div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
-.kmt div.element-icon.elec { background-image: url('/assets/images/smtsj/ele.png'); }
-.kmt div.element-icon.expel { background-image: url('/assets/images/smtsj/exp.png'); }
-.kmt div.element-icon.force { background-image: url('/assets/images/smt4f/force.png'); }
-.kmt div.element-icon.bind { background-image: url('/assets/images/smt4f/bind.png'); }
-.kmt div.element-icon.death { background-image: url('/assets/images/smtsj/cur.png'); }
-.kmt div.element-icon.nerve { background-image: url('/assets/images/smtsj/ail.png'); }
-.kmt div.element-icon.mind { background-image: url('/assets/images/smt4f/panic.png'); }
-.kmt div.element-icon.almighty { background-image: url('/assets/images/smtsj/alm.png'); }
+.kmt div.element-icon.recovery { background-image: url('/assets/images/elem-sprites.svg#smt-rec'); }
+.kmt div.element-icon.support { background-image: url('/assets/images/elem-sprites.svg#smt-sup'); }
+.kmt div.element-icon.special { background-image: url('/assets/images/elem-sprites.svg#smt-spe'); }
 
-.kmt div.element-icon.recovery { background-image: url('/assets/images/smtsj/rec.png'); }
-.kmt div.element-icon.support { background-image: url('/assets/images/smtsj/sup.png'); }
-.kmt div.element-icon.special { background-image: url('/assets/images/smtsj/spe.png'); }
-
-.kmt div.element-icon.i24 { background-image: url('/assets/images/smtsj/spe.png'); }
+.kmt div.element-icon.i24 { background-image: url('/assets/images/elem-sprites.svg#smt-spe'); }
 
 /* Alignments */
 .kmt td.align.g { color: cyan; }

@@ -56,7 +56,7 @@ function createCompConfig(): CompendiumConfigSet {
 
     skillData[sname] = {
       element: elem,
-      inherit: descs[2] !== '-' ? descs[2] : '',
+      inherit: descs[2] !== '-' ? descs[2] : 'non',
       rank,
       target: target === '-' ? 'Self' : target,
       cost: cost === 0 ? 0 : cost + (cost < 1000 ? COST_HP : COST_MP),

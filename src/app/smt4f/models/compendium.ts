@@ -70,7 +70,7 @@ export class Compendium implements ICompendium {
           name:     prefix + ail,
           code:     0,
           element:  'pas',
-          inherit:  'pas',
+          inherit:  'non',
           effect:   ailEffect,
           target:   ailTarget,
           cost:     0,

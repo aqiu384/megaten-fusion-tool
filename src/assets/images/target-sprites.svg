@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="26px">
+  <rect fill="black" width="100%" height="100%"/>
+  <symbol id="cell"><rect fill="white" width="4" height="4" x="1" y="1"/></symbol>
+  <symbol id="col23"><use href="#cell" y="10"/></symbol>
+  <symbol id="col14"><use href="#cell" y="5"/><use href="#cell" y="10"/><use href="#cell" y="15"/></symbol>
+  <symbol id="col135"><use href="#cell"/><use href="#cell" y="10"/><use href="#cell" y="20"/></symbol>
+  <symbol id="col05"><use href="#cell"/><use href="#cell" y="5"/><use href="#cell" y="10"/><use href="#cell" y="15"/><use href="#cell" y="20"/></symbol>
+  <style>
+    g { display: none; }
+    g:target { display: inline; }
+  </style>
+  <g id="a101000"><use href="#col14"/></g>
+  <g id="a101010"><use href="#col05"/></g>
+  <g id="a201020"><use href="#col05"/><use href="#col135" x="5"/></g>
+  <g id="a202010"><use href="#col05"/><use href="#col14" x="5"/></g>
+  <g id="a202020"><use href="#col05"/><use href="#col05" x="5"/></g>
+  <g id="a303030"><use href="#col05"/><use href="#col05" x="5"/><use href="#col05" x="10"/></g>
+  <g id="a303132"><use href="#col23"/><use href="#col14" x="5"/><use href="#col05" x="10"/></g>
+  <g id="a505050"><use href="#col05"/><use href="#col05" x="5"/><use href="#col05" x="10"/><use href="#col05" x="15"/><use href="#col05" x="20"/></g>
+  <g id="a540000"><use href="#col23" x="20"/></g>
+  <g id="a606060"><use href="#col05"/><use href="#col05" x="5"/><use href="#col05" x="10"/><use href="#col05" x="15"/><use href="#col05" x="20"/><use href="#col05" x="25"/></g>
+  <g id="a636363"><use href="#col05" x="15"/><use href="#col05" x="20"/><use href="#col05" x="25"/></g>
+  <g id="a727272"><use href="#col05" x="10"/><use href="#col05" x="15"/><use href="#col05" x="20"/><use href="#col05" x="25"/><use href="#col05" x="30"/></g>
+  <g id="a904010"><use href="#col05"/><use href="#col14" x="5"/><use href="#col14" x="10"/><use href="#col14" x="15"/><use href="#col23" x="20"/><use href="#col23" x="25"/><use href="#col23" x="30"/><use href="#col23" x="35"/><use href="#col23" x="40"/></g>
+  <g id="a909000"><use href="#col14"/><use href="#col14" x="5"/><use href="#col14" x="10"/><use href="#col14" x="15"/><use href="#col14" x="20"/><use href="#col14" x="25"/><use href="#col14" x="30"/><use href="#col14" x="35"/><use href="#col14" x="40"/></g>
+  <g id="a909090"><use href="#col05"/><use href="#col05" x="5"/><use href="#col05" x="10"/><use href="#col05" x="15"/><use href="#col05" x="20"/><use href="#col05" x="25"/><use href="#col05" x="30"/><use href="#col05" x="35"/><use href="#col05" x="40"/></g>
+  <g id="a949494"><use href="#col05" x="20"/><use href="#col05" x="25"/><use href="#col05" x="30"/><use href="#col05" x="35"/><use href="#col05" x="40"/></g>
+</svg>

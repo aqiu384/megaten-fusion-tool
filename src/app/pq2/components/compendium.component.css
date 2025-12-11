@@ -1,311 +1,255 @@
-.p3 div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
-  
 .p3 div.element-icon.i28716,
-.p3 div.element-icon.sla { background-image: url('/assets/images/p5/sword.png'); }
+.p3 div.element-icon.sla { background-image: url('/assets/images/elem-sprites.svg#swo'); }
 .p3 div.element-icon.i28717,
-.p3 div.element-icon.str { background-image: url('/assets/images/p5/phys.png'); }
+.p3 div.element-icon.str { background-image: url('/assets/images/elem-sprites.svg#phy'); }
 .p3 div.element-icon.i28718,
-.p3 div.element-icon.pie { background-image: url('/assets/images/p5/gun.png'); }
+.p3 div.element-icon.pie { background-image: url('/assets/images/elem-sprites.svg#gun'); }
 .p3 div.element-icon.i30972,
-.p3 div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.p3 div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
 .p3 div.element-icon.i29948,
-.p3 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p3 div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
 .p3 div.element-icon.i29436,
-.p3 div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.p3 div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
 .p3 div.element-icon.i29180,
-.p3 div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.p3 div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
 .p3 div.element-icon.i4012,
-.p3 div.element-icon.lig { background-image: url('/assets/images/p5/bless.png'); }
+.p3 div.element-icon.lig { background-image: url('/assets/images/elem-sprites.svg#lig'); }
 .p3 div.element-icon.i32624,
-.p3 div.element-icon.dar { background-image: url('/assets/images/p5/curse.png'); }
+.p3 div.element-icon.dar { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
 .p3 div.element-icon.i3956,
-.p3 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
+.p3 div.element-icon.ail { background-image: url('/assets/images/elem-sprites.svg#per-ail'); }
 .p3 div.element-icon.i4093,
-.p3 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.p3 div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
 .p3 div.element-icon.i32764,
-.p3 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
-.p3 div.element-icon.i4092,
+.p3 div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
+.p3 div.element-icon.i4092 { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
 .p3 div.element-icon.spa,
 .p3 div.element-icon.spb,
-.p3 div.element-icon.spe { background-image: url('/assets/images/p5/trait.png'); }
-.p3 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.p3 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+.p3 div.element-icon.spe { background-image: url('/assets/images/elem-sprites.svg#per-tra'); }
+.p3 div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.p3 div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
 
 .p3 th.title, .p3 th.nav.active, .p3 th.nav.active a {
   color: black;
   background-color: #4372AA;
 }
-
-.p4 div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
   
 .p4 div.element-icon.i2166,
-.p4 div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
+.p4 div.element-icon.phy { background-image: url('/assets/images/elem-sprites.svg#phy'); }
 .p4 div.element-icon.i3582,
-.p4 div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.p4 div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
 .p4 div.element-icon.i3070,
-.p4 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p4 div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
 .p4 div.element-icon.i3966,
-.p4 div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.p4 div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
 .p4 div.element-icon.i3838,
-.p4 div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.p4 div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
 .p4 div.element-icon.i2006,
-.p4 div.element-icon.lig { background-image: url('/assets/images/p5/bless.png'); }
+.p4 div.element-icon.lig { background-image: url('/assets/images/elem-sprites.svg#lig'); }
 .p4 div.element-icon.i1978,
-.p4 div.element-icon.dar { background-image: url('/assets/images/p5/curse.png'); }
+.p4 div.element-icon.dar { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
 .p4 div.element-icon.i1979,
-.p4 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
+.p4 div.element-icon.ail { background-image: url('/assets/images/elem-sprites.svg#per-ail'); }
 .p4 div.element-icon.i2014,
-.p4 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.p4 div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
 .p4 div.element-icon.i4094,
-.p4 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
+.p4 div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
 .p4 div.element-icon.spa,
-.p4 div.element-icon.spe { background-image: url('/assets/images/p5/trait.png'); }
+.p4 div.element-icon.spe { background-image: url('/assets/images/elem-sprites.svg#per-tra'); }
 .p4 div.element-icon.i4095,
-.p4 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.p4 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+.p4 div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.p4 div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
 
 .p4 th.title, .p4 th.nav.active, .p4 th.nav.active a {
   color: black;
   background-color: #ffe600;
 }
-
-.p5 div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
   
-.p5 div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
-.p5 div.element-icon.i3075 { background-image: url('/assets/images/p5/phys.png'); }
-.p5 div.element-icon.gun { background-image: url('/assets/images/p5/gun.png'); }
-.p5 div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
-.p5 div.element-icon.i3839 { background-image: url('/assets/images/p5/fire.png'); }
-.p5 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
-.p5 div.element-icon.i3583 { background-image: url('/assets/images/p5/ice.png'); }
-.p5 div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
-.p5 div.element-icon.i4031 { background-image: url('/assets/images/p5/elec.png'); }
-.p5 div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
-.p5 div.element-icon.i3967 { background-image: url('/assets/images/p5/wind.png'); }
-.p5 div.element-icon.psy { background-image: url('/assets/images/p5/psy.png'); }
-.p5 div.element-icon.i4079 { background-image: url('/assets/images/p5/psy.png'); }
-.p5 div.element-icon.nuk { background-image: url('/assets/images/p5/nuke.png'); }
-.p5 div.element-icon.i4063 { background-image: url('/assets/images/p5/nuke.png'); }
-.p5 div.element-icon.ble { background-image: url('/assets/images/p5/bless.png'); }
-.p5 div.element-icon.i1017 { background-image: url('/assets/images/p5/bless.png'); }
-.p5 div.element-icon.cur { background-image: url('/assets/images/p5/curse.png'); }
-.p5 div.element-icon.i1014 { background-image: url('/assets/images/p5/curse.png'); }
-.p5 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
-.p5 div.element-icon.i4086 { background-image: url('/assets/images/p5/ailment.png'); }
-.p5 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
-.p5 div.element-icon.i1019 { background-image: url('/assets/images/p5/healing.png'); }
-.p5 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
-.p5 div.element-icon.i4095 { background-image: url('/assets/images/p5/almighty.png'); }
-.p5 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.p5 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
-.p5 div.element-icon.i0 { background-image: url('/assets/images/p5/passive.png'); }
-.p5 div.element-icon.tra { background-image: url('/assets/images/p5/trait.png'); }
+.p5 div.element-icon.phy,
+.p5 div.element-icon.i3075 { background-image: url('/assets/images/elem-sprites.svg#phy'); }
+.p5 div.element-icon.gun { background-image: url('/assets/images/elem-sprites.svg#gun'); }
+.p5 div.element-icon.fir,
+.p5 div.element-icon.i3839 { background-image: url('/assets/images/elem-sprites.svg#fir'); }
+.p5 div.element-icon.ice,
+.p5 div.element-icon.i3583 { background-image: url('/assets/images/elem-sprites.svg#ice'); }
+.p5 div.element-icon.ele,
+.p5 div.element-icon.i4031 { background-image: url('/assets/images/elem-sprites.svg#ele'); }
+.p5 div.element-icon.win,
+.p5 div.element-icon.i3967 { background-image: url('/assets/images/elem-sprites.svg#win'); }
+.p5 div.element-icon.psy,
+.p5 div.element-icon.i4079 { background-image: url('/assets/images/elem-sprites.svg#psy'); }
+.p5 div.element-icon.nuk,
+.p5 div.element-icon.i4063 { background-image: url('/assets/images/elem-sprites.svg#nuk'); }
+.p5 div.element-icon.ble,
+.p5 div.element-icon.i1017 { background-image: url('/assets/images/elem-sprites.svg#lig'); }
+.p5 div.element-icon.cur,
+.p5 div.element-icon.i1014 { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
+.p5 div.element-icon.ail,
+.p5 div.element-icon.i4086 { background-image: url('/assets/images/elem-sprites.svg#per-ail'); }
+.p5 div.element-icon.rec,
+.p5 div.element-icon.i1019 { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
+.p5 div.element-icon.alm,
+.p5 div.element-icon.i4095 { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
+.p5 div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.p5 div.element-icon.pas,
+.p5 div.element-icon.i0 { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
+.p5 div.element-icon.tra { background-image: url('/assets/images/elem-sprites.svg#per-tra'); }
 
 .p5 th.title, .p5 th.nav.active, .p5 th.nav.active a {
   color: white;
   background-color: #f41000;
 }
-
-.pq div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
   
-.pq div.element-icon.cut { background-image: url('/assets/images/p5/sword.png'); }
+.pq div.element-icon.cut { background-image: url('/assets/images/elem-sprites.svg#swo'); }
 .pq div.element-icon.i3584,
 .pq div.element-icon.i3591,
-.pq div.element-icon.bas { background-image: url('/assets/images/p5/phys.png'); }
-.pq div.element-icon.sta { background-image: url('/assets/images/p5/gun.png'); }
+.pq div.element-icon.bas { background-image: url('/assets/images/elem-sprites.svg#phy'); }
+.pq div.element-icon.sta { background-image: url('/assets/images/elem-sprites.svg#gun'); }
 .pq div.element-icon.i376,
 .pq div.element-icon.i383,
 .pq div.element-icon.i3960,
 .pq div.element-icon.i3967,
-.pq div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.pq div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
 .pq div.element-icon.i248,
 .pq div.element-icon.i255,
 .pq div.element-icon.i3832,
 .pq div.element-icon.i3839,
-.pq div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.pq div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
 .pq div.element-icon.i472,
 .pq div.element-icon.i479,
 .pq div.element-icon.i4056,
 .pq div.element-icon.i4063,
-.pq div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.pq div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
 .pq div.element-icon.i440,
 .pq div.element-icon.i447,
 .pq div.element-icon.i4024,
 .pq div.element-icon.i4031,
-.pq div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.pq div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
 .pq div.element-icon.i496,
 .pq div.element-icon.i503,
 .pq div.element-icon.i4080,
 .pq div.element-icon.i4087,
-.pq div.element-icon.lig { background-image: url('/assets/images/p5/bless.png'); }
+.pq div.element-icon.lig { background-image: url('/assets/images/elem-sprites.svg#lig'); }
 .pq div.element-icon.i488,
 .pq div.element-icon.i495,
 .pq div.element-icon.i4072,
 .pq div.element-icon.i4079,
-.pq div.element-icon.dar { background-image: url('/assets/images/p5/curse.png'); }
-.pq div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
-.pq div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.pq div.element-icon.dar { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
+.pq div.element-icon.ail { background-image: url('/assets/images/elem-sprites.svg#per-ail'); }
+.pq div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
 .pq div.element-icon.i504,
 .pq div.element-icon.i511,
 .pq div.element-icon.i4088,
 .pq div.element-icon.i4095,
-.pq div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
-.pq div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.pq div.element-icon.nav { background-image: url('/assets/images/p5/trait.png'); }
-.pq div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+.pq div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
+.pq div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.pq div.element-icon.nav { background-image: url('/assets/images/elem-sprites.svg#per-tra'); }
+.pq div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
 
 .pq th.title, .pq th.nav.active, .pq th.nav.active a {
   color: black;
   background-color: #AA1CA9;
 }
 
-.pq2 div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
-
 .pq2 div.element-icon.i2055,
-.pq2 div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
+.pq2 div.element-icon.phy { background-image: url('/assets/images/elem-sprites.svg#phy'); }
 .pq2 div.element-icon.i3583,
-.pq2 div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.pq2 div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
 .pq2 div.element-icon.i3071,
-.pq2 div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.pq2 div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
 .pq2 div.element-icon.i3967,
-.pq2 div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.pq2 div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
 .pq2 div.element-icon.i3839,
-.pq2 div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.pq2 div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
 .pq2 div.element-icon.i4063,
-.pq2 div.element-icon.psy { background-image: url('/assets/images/p5/psy.png'); }
+.pq2 div.element-icon.psy { background-image: url('/assets/images/elem-sprites.svg#psy'); }
 .pq2 div.element-icon.i4031,
-.pq2 div.element-icon.nuk { background-image: url('/assets/images/p5/nuke.png'); }
+.pq2 div.element-icon.nuk { background-image: url('/assets/images/elem-sprites.svg#nuk'); }
 .pq2 div.element-icon.i4087,
-.pq2 div.element-icon.ble { background-image: url('/assets/images/p5/bless.png'); }
+.pq2 div.element-icon.ble { background-image: url('/assets/images/elem-sprites.svg#lig'); }
 .pq2 div.element-icon.i4079,
-.pq2 div.element-icon.cur { background-image: url('/assets/images/p5/curse.png'); }
-.pq2 div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
-.pq2 div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.pq2 div.element-icon.cur { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
+.pq2 div.element-icon.ail { background-image: url('/assets/images/elem-sprites.svg#per-ail'); }
+.pq2 div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
 .pq2 div.element-icon.i4095,
-.pq2 div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
+.pq2 div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
 .pq2 div.element-icon.i2047,
-.pq2 div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.pq2 div.element-icon.nav { background-image: url('/assets/images/p5/trait.png'); }
-.pq2 div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+.pq2 div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.pq2 div.element-icon.nav { background-image: url('/assets/images/elem-sprites.svg#per-tra'); }
+.pq2 div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
 
 .pq2 th.title, .pq2 th.nav.active, .pq2 th.nav.active a {
   color: white;
   background-color: #ff4800;
 }
-
-.p5t div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
   
-.p5t div.element-icon.phy { background-image: url('/assets/images/p5/phys.png'); }
-.p5t div.element-icon.gun { background-image: url('/assets/images/p5/gun.png'); }
-.p5t div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
-.p5t div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
-.p5t div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
-.p5t div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
-.p5t div.element-icon.psy { background-image: url('/assets/images/p5/psy.png'); }
-.p5t div.element-icon.nuk { background-image: url('/assets/images/p5/nuke.png'); }
-.p5t div.element-icon.ble { background-image: url('/assets/images/p5/bless.png'); }
-.p5t div.element-icon.cur { background-image: url('/assets/images/p5/curse.png'); }
+.p5t div.element-icon.phy { background-image: url('/assets/images/elem-sprites.svg#phy'); }
+.p5t div.element-icon.gun { background-image: url('/assets/images/elem-sprites.svg#gun'); }
+.p5t div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
+.p5t div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
+.p5t div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
+.p5t div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
+.p5t div.element-icon.psy { background-image: url('/assets/images/elem-sprites.svg#psy'); }
+.p5t div.element-icon.nuk { background-image: url('/assets/images/elem-sprites.svg#nuk'); }
+.p5t div.element-icon.ble { background-image: url('/assets/images/elem-sprites.svg#lig'); }
+.p5t div.element-icon.cur { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
 .p5t div.element-icon.i1023,
-.p5t div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
-.p5t div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
-.p5t div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.p5t div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+.p5t div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
+.p5t div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
+.p5t div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.p5t div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
 
 .p5t th.title, .p5t th.nav.active, .p5t th.nav.active a {
   color: white;
   background-color: #f41000;
 }
 
-.p3r div.element-icon {
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
-
 .p3r div.element-icon.i3583,
 .p3r div.element-icon.i3585,
-.p3r div.element-icon.sla { background-image: url('/assets/images/p5/sword.png'); }
+.p3r div.element-icon.sla { background-image: url('/assets/images/elem-sprites.svg#swo'); }
 .p3r div.element-icon.i2047,
 .p3r div.element-icon.i3615,
-.p3r div.element-icon.str { background-image: url('/assets/images/p5/phys.png'); }
+.p3r div.element-icon.str { background-image: url('/assets/images/elem-sprites.svg#phy'); }
 .p3r div.element-icon.i3071,
 .p3r div.element-icon.i4065,
-.p3r div.element-icon.pie { background-image: url('/assets/images/p5/gun.png'); }
+.p3r div.element-icon.pie { background-image: url('/assets/images/elem-sprites.svg#gun'); }
 .p3r div.element-icon.i3967,
 .p3r div.element-icon.i3843,
 .p3r div.element-icon.i3955,
 .p3r div.element-icon.i3949,
-.p3r div.element-icon.fir { background-image: url('/assets/images/p5/fire.png'); }
+.p3r div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
 .p3r div.element-icon.i3839,
 .p3r div.element-icon.i3715,
 .p3r div.element-icon.i3827,
 .p3r div.element-icon.i3821,
-.p3r div.element-icon.ice { background-image: url('/assets/images/p5/ice.png'); }
+.p3r div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
 .p3r div.element-icon.i4063,
 .p3r div.element-icon.i3651,
 .p3r div.element-icon.i4051,
 .p3r div.element-icon.i4045,
-.p3r div.element-icon.ele { background-image: url('/assets/images/p5/elec.png'); }
+.p3r div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
 .p3r div.element-icon.i4031,
 .p3r div.element-icon.i3619,
 .p3r div.element-icon.i4019,
 .p3r div.element-icon.i4013,
-.p3r div.element-icon.win { background-image: url('/assets/images/p5/wind.png'); }
+.p3r div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
 .p3r div.element-icon.i4083,
 .p3r div.element-icon.i3603,
-.p3r div.element-icon.lig { background-image: url('/assets/images/p5/bless.png'); }
+.p3r div.element-icon.lig { background-image: url('/assets/images/elem-sprites.svg#lig'); }
 .p3r div.element-icon.i4077,
 .p3r div.element-icon.i3597,
-.p3r div.element-icon.dar { background-image: url('/assets/images/p5/curse.png'); }
+.p3r div.element-icon.dar { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
 .p3r div.element-icon.i493,
-.p3r div.element-icon.ail { background-image: url('/assets/images/p5/ailment.png'); }
+.p3r div.element-icon.ail { background-image: url('/assets/images/elem-sprites.svg#per-ail'); }
 .p3r div.element-icon.i499,
-.p3r div.element-icon.rec { background-image: url('/assets/images/p5/healing.png'); }
+.p3r div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#per-rec'); }
 .p3r div.element-icon.i4095,
-.p3r div.element-icon.alm { background-image: url('/assets/images/p5/almighty.png'); }
+.p3r div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#per-alm'); }
 .p3r div.element-icon.i511,
 .p3r div.element-icon.i4088,
-.p3r div.element-icon.spe { background-image: url('/assets/images/p5/trait.png'); }
-.p3r div.element-icon.sup { background-image: url('/assets/images/p5/support.png'); }
-.p3r div.element-icon.pas { background-image: url('/assets/images/p5/passive.png'); }
+.p3r div.element-icon.spe { background-image: url('/assets/images/elem-sprites.svg#per-tra'); }
+.p3r div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#per-sup'); }
+.p3r div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#per-pas'); }
 
 .p3r th.title, .p3r th.nav.active, .p3r th.nav.active a {
   color: black;

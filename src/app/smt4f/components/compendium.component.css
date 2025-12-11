@@ -1,52 +1,44 @@
-.smt4 div.element-icon {
-  height: 12px;
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-}
-
-.smt4 div.element-icon.phy { background-image: url('/assets/images/smtsj/phy.png'); }
-.smt4 div.element-icon.thr { background-image: url('/assets/images/p1/havoc.png'); }
-.smt4 div.element-icon.cla { background-image: url('/assets/images/p1/strike.png'); }
-.smt4 div.element-icon.bit { background-image: url('/assets/images/p1/earth.png'); }
-.smt4 div.element-icon.wea { background-image: url('/assets/images/p1/sword1h.png'); }
-.smt4 div.element-icon.mou { background-image: url('/assets/images/p1/rush.png'); }
-.smt4 div.element-icon.gun { background-image: url('/assets/images/smt4f/gun.png'); }
-.smt4 div.element-icon.fir { background-image: url('/assets/images/smtsj/fir.png'); }
-.smt4 div.element-icon.ice { background-image: url('/assets/images/smtsj/ice.png'); }
-.smt4 div.element-icon.ele { background-image: url('/assets/images/smtsj/ele.png'); }
-.smt4 div.element-icon.for { background-image: url('/assets/images/smt4f/force.png'); }
-.smt4 div.element-icon.win { background-image: url('/assets/images/p1/wind.png'); }
-.smt4 div.element-icon.eye { background-image: url('/assets/images/p1/curse.png'); }
-.smt4 div.element-icon.mys { background-image: url('/assets/images/smt4f/curse.png'); }
+.smt4 div.element-icon.thr,
+.smt4 div.element-icon.phy { background-image: url('/assets/images/elem-sprites.svg#phy'); }
+.smt4 div.element-icon.cla { background-image: url('/assets/images/elem-sprites.svg#gun'); }
+.smt4 div.element-icon.bit { background-image: url('/assets/images/elem-sprites.svg#ear'); }
+.smt4 div.element-icon.wea { background-image: url('/assets/images/elem-sprites.svg#swo'); }
+.smt4 div.element-icon.mou { background-image: url('/assets/images/elem-sprites.svg#rus'); }
+.smt4 div.element-icon.gun { background-image: url('/assets/images/elem-sprites.svg#gun'); }
+.smt4 div.element-icon.fir { background-image: url('/assets/images/elem-sprites.svg#fir'); }
+.smt4 div.element-icon.ice { background-image: url('/assets/images/elem-sprites.svg#ice'); }
+.smt4 div.element-icon.ele { background-image: url('/assets/images/elem-sprites.svg#ele'); }
+.smt4 div.element-icon.for { background-image: url('/assets/images/elem-sprites.svg#for'); }
+.smt4 div.element-icon.win { background-image: url('/assets/images/elem-sprites.svg#win'); }
+.smt4 div.element-icon.eye { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
 .smt4 div.element-icon.exp,
-.smt4 div.element-icon.lig { background-image: url('/assets/images/smtsj/exp.png'); }
+.smt4 div.element-icon.lig { background-image: url('/assets/images/elem-sprites.svg#lig'); }
 .smt4 div.element-icon.dea,
+.smt4 div.element-icon.mys,
 .smt4 div.element-icon.rui,
-.smt4 div.element-icon.dar { background-image: url('/assets/images/smtsj/cur.png'); }
-.smt4 div.element-icon.ail { background-image: url('/assets/images/smtsj/ail.png'); }
-.smt4 div.element-icon.cur { background-image: url('/assets/images/smt4f/poison.png'); }
-.smt4 div.element-icon.min { background-image: url('/assets/images/smt4f/panic.png'); }
-.smt4 div.element-icon.ner { background-image: url('/assets/images/smt4f/bind.png'); }
-.smt4 div.element-icon.rec { background-image: url('/assets/images/smtsj/rec.png'); }
+.smt4 div.element-icon.dar { background-image: url('/assets/images/elem-sprites.svg#smt-dar'); }
+.smt4 div.element-icon.ail,
+.smt4 div.element-icon.min { background-image: url('/assets/images/elem-sprites.svg#per-dar'); }
+.smt4 div.element-icon.cur { background-image: url('/assets/images/elem-sprites.svg#poison'); }
+.smt4 div.element-icon.ner { background-image: url('/assets/images/elem-sprites.svg#paralyze'); }
+.smt4 div.element-icon.rec { background-image: url('/assets/images/elem-sprites.svg#smt-rec'); }
 .smt4 div.element-icon.alp,
-.smt4 div.element-icon.alm { background-image: url('/assets/images/smtsj/alm.png'); }
+.smt4 div.element-icon.alm { background-image: url('/assets/images/elem-sprites.svg#smt-alm'); }
 .smt4 div.element-icon.com,
-.smt4 div.element-icon.sup { background-image: url('/assets/images/smtsj/sup.png'); }
-.smt4 div.element-icon.pas { background-image: url('/assets/images/smtsj/pas.png'); }
-.smt4 div.element-icon.oth,
-.smt4 div.element-icon.inn,
-.smt4 div.element-icon.sab,
-.smt4 div.element-icon.inv,
+.smt4 div.element-icon.sup { background-image: url('/assets/images/elem-sprites.svg#smt-sup'); }
+.smt4 div.element-icon.pas { background-image: url('/assets/images/elem-sprites.svg#smt-pas'); }
+.smt4 div.element-icon.sab { background-image: url('/assets/images/elem-sprites.svg#smt-sab'); }
 .smt4 div.element-icon.aut,
 .smt4 div.element-icon.rac,
+.smt4 div.element-icon.inv,
+.smt4 div.element-icon.tal,
+.smt4 div.element-icon.inn { background-image: url('/assets/images/elem-sprites.svg#smt-inn'); }
+.smt4 div.element-icon.oth,
 .smt4 div.element-icon.non,
-.smt4 div.element-icon.spe { background-image: url('/assets/images/smtsj/spe.png'); }
-.smt4 div.element-icon.lif { background-image: url('/assets/images/smtsj/lif.png'); }
-.smt4 div.element-icon.man { background-image: url('/assets/images/smtsj/man.png'); }
-.smt4 div.element-icon.tal { background-image: url('/assets/images/p1/gravity.png'); }
-.smt4 div.element-icon.mai { background-image: url('/assets/images/p1/whip.png'); }
+.smt4 div.element-icon.spe { background-image: url('/assets/images/elem-sprites.svg#smt-spe'); }
+.smt4 div.element-icon.lif { background-image: url('/assets/images/elem-sprites.svg#lif'); }
+.smt4 div.element-icon.man { background-image: url('/assets/images/elem-sprites.svg#man'); }
+.smt4 div.element-icon.mai { background-image: url('/assets/images/elem-sprites.svg#whi'); }
 .smt4 div.element-icon.non { background-image: none }
 
 .smt4 td.affinity-9 { color: red; }
