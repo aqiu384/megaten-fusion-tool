@@ -121,7 +121,7 @@ function createCompConfig(): CompendiumConfigSet {
       settingsKey: 'smtsj-fusion-tool-settings',
       settingsVersion: 2401131500,
       defaultRecipeDemon: 'Pixie',
-      elementRace: 'Element'
+      elementRace: 'Prime'
     };
   }
 

@@ -36,8 +36,8 @@
 .smt4 div.element-icon.oth,
 .smt4 div.element-icon.non,
 .smt4 div.element-icon.spe { background-image: url('/assets/images/elem-sprites.svg#smt-spe'); }
-.smt4 div.element-icon.lif { background-image: url('/assets/images/elem-sprites.svg#lif'); }
-.smt4 div.element-icon.man { background-image: url('/assets/images/elem-sprites.svg#man'); }
+.smt4 div.element-icon.lif { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ctext fill='violet' x='12' y='18' text-anchor='middle'%3EHP%3C/text%3E%3C/svg%3E"); }
+.smt4 div.element-icon.man { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ctext fill='cyan' x='12' y='18' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E"); }
 .smt4 div.element-icon.mai { background-image: url('/assets/images/elem-sprites.svg#whi'); }
 .smt4 div.element-icon.non { background-image: none }
 
