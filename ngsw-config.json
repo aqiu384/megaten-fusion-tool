@@ -10,6 +10,7 @@
           "/favicon.ico",
           "/index.html",
           "/manifest.webmanifest",
+          "/*.svg",
           "/*.css",
           "/*.js"
         ]
@@ -21,7 +22,6 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/*.js",
           "/assets/**",
           "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
