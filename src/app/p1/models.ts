@@ -4,7 +4,7 @@ export interface Demon extends BaseDemon {
   atks: number[],
   presists: number[],
   mresists: number[],
-  party: number[],
+  elemAffins: number[];
   growth: string,
   trait: string;
   area: string;
@@ -23,10 +23,12 @@ export interface CompendiumConfig extends BaseCompendiumConfig {
   mresistElems: string[];
   skillElems: string[];
   inheritElems: string[];
+  affinityUsers: string[];
   baseStats: string[];
   baseAtks: string[];
   enemyStats: string[];
   party: string[];
+  hasFusion: boolean;
 
   demons: { [name: string]: Demon };
   enemies: { [name: string]: Demon };

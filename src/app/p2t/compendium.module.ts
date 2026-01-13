@@ -27,6 +27,7 @@ function createCompConfig(): CompendiumConfig {
   const enemies: { [name: string]: Demon } = {};
   const skills: { [name: string]: Skill } = {};
   const resistCodes: NumDict = {};
+  const affinityCodes: NumDict = { x: -10, w: 11, '-': 12, s: 13, n: 14 };
 
   for (const [res, code] of Object.entries(COMP_CONFIG_JSON.resistCodes)) {
     resistCodes[res] = ((code / 1000 | 0 + 8) << 10) + (code % 1000 / 2.5 | 0);
@@ -51,8 +52,8 @@ function createCompConfig(): CompendiumConfig {
       skills:     json.skills.reduce((acc, s, i) => { if (s.length > 1) { acc[s] = COMP_CONFIG_JSON.learnRanks[i]; } return acc; }, {}),
       drop:       json.drop,
       isEnemy:    false,
-      party:      (json['party'] || PARTY_AFFINITY_JSON.table[json.race]).split('').map(p => resistCodes[p]),
-      affinities: (json['inherits'] || 'oooo').split('').map(i => i === 'o'),
+      affinities: (json['party'] || PARTY_AFFINITY_JSON.table[json.race]).split('').map(p => affinityCodes[p]),
+      elemAffins: [],
       trait:      json.traits.join(', '),
       transfers:  {},
       area:       '-',
@@ -81,8 +82,8 @@ function createCompConfig(): CompendiumConfig {
       skills:     json.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
       drop:       json.drop,
       isEnemy:    true,
-      party:      [],
       affinities: [],
+      elemAffins: [],
       trait:      json.traits.join(', '),
       transfers:  {},
       area:       '-',
@@ -118,7 +119,8 @@ function createCompConfig(): CompendiumConfig {
     mresistElems:    COMP_CONFIG_JSON.resistElems,
     resistCodes:     COMP_CONFIG_JSON.resistCodes,
     skillElems,
-    inheritElems:    COMP_CONFIG_JSON.inheritElems,
+    inheritElems:    [],
+    affinityUsers:   PARTY_AFFINITY_JSON.party.map(p => p.toLocaleLowerCase()),
     baseStats:       COMP_CONFIG_JSON.baseStats,
     baseAtks:        COMP_CONFIG_JSON.baseAtks,
     enemyStats:      COMP_CONFIG_JSON.enemyStats,
@@ -127,6 +129,7 @@ function createCompConfig(): CompendiumConfig {
     specialRecipes:  {},
     growthTypes:     GROWTH_TYPES_JSON,
     mutations:       MUTATIONS_JSON,
+    hasFusion:       false,
 
     demons,
     enemies,

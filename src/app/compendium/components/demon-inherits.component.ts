@@ -13,7 +13,7 @@ import Translations from '../data/translations.json';
             {{ msgs.SkillAffinities | translateComp:lang }}
           </th>
         </tr>
-        <tr>
+        <tr [ngClass]="{ capitalize: !hasIcons }">
           <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">
             <ng-container *ngIf="!hasIcons">{{ element }}</ng-container>
             <div *ngIf="hasIcons" class="element-icon {{ element }}">{{ element }}</div>
@@ -38,7 +38,10 @@ import Translations from '../data/translations.json';
         </tr>
       </tbody>
     </table>
-  `
+  `,
+  styles: [`
+    .capitalize { text-transform: capitalize; }
+  `]
 })
 export class DemonInheritsComponent {
   @Input() inheritHeaders: string[] = [];

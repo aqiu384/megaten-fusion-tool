@@ -56,15 +56,13 @@ import { FusionDataService } from '../fusion-data.service';
           </tr>
         </tbody>
       </table>
-      <table class="entry-table">
-        <thead>
-          <tr><th [attr.colSpan]="compConfig.party.length" class="title">Party Affinities</th></tr>
-          <tr><th *ngFor="let member of compConfig.party">{{ member }}</th></tr>
-        </thead>
-        <tbody>
-          <tr><td *ngFor="let affine of partyAffines;">{{ affine }}</td></tr>
-        </tbody>
-      </table>
+      <app-demon-inherits
+        [lang]="'en'"
+        [hasLvls]="true"
+        [hasIcons]="false"
+        [inheritHeaders]="compConfig.affinityUsers"
+        [inherits]="demon.affinities">
+      </app-demon-inherits>
       <app-demon-resists *ngIf="compConfig.presistElems.length"
         [resistHeaders]="compConfig.presistElems"
         [resists]="demon.presists">
@@ -73,9 +71,9 @@ import { FusionDataService } from '../fusion-data.service';
         [resistHeaders]="compConfig.mresistElems"
         [resists]="demon.mresists">
       </app-demon-resists>
-      <app-demon-inherits
+      <app-demon-inherits *ngIf="compConfig.inheritElems.length"
         [inheritHeaders]="compConfig.inheritElems"
-        [inherits]="demon.affinities">
+        [inherits]="demon.elemAffins">
       </app-demon-inherits>
       <app-demon-skills
         [elemOrder]="compConfig.elemOrder"
@@ -104,10 +102,8 @@ export class DemonEntryComponent implements OnChanges {
   @Input() compConfig: CompendiumConfig;
 
   statGrowths: number[][];
-  partyAffines: string[];
   mutatesTo: FusionEntry[];
   mutatesFrom: FusionEntry[];
-  affinityLookup = { 11264: 'Great', 12308: 'Good', 13352: 'Norm', 14396: 'Bad', 14416: 'Worst' };
 
   ngOnChanges() {
     const statGrowths = [this.demon.stats];
@@ -117,7 +113,6 @@ export class DemonEntryComponent implements OnChanges {
     }
 
     this.statGrowths = statGrowths;
-    this.partyAffines = this.demon.party.map(p => this.affinityLookup[p]);
     this.mutatesTo = this.compendium.reverseLookupSpecial(this.demon.name)
       .map(n => this.compendium.getDemon(n))
       .map(d => ({ price: d.atks[0], race1: d.race, lvl1: d.lvl, name1: d.name }));
@@ -205,7 +200,7 @@ export class DemonEntryContainerComponent {
     if (this.compendium && this.name) {
       this.title.setTitle(`${this.name} - ${this.appName}`);
       this.demon = this.compendium.getDemon(this.name);
-      this.elemRecipes = this.demon ? splitWithGem(this.name, this.compendium, this.fusionChart) : [];
+      this.elemRecipes = this.compConfig.hasFusion && this.demon ? splitWithGem(this.name, this.compendium, this.fusionChart) : [];
       this.changeDetectorRef.markForCheck();
     }
   }

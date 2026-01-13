@@ -16,6 +16,7 @@ import { FusionDataService } from '../fusion-data.service';
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
       [inheritOrder]="inheritOrder"
+      [affinityHeaders]="showEnemies ? [] : compConfig.affinityUsers"
       [rowData]="demons | async">
     </app-smt-demon-list>
   `

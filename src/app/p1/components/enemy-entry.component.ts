@@ -29,7 +29,7 @@ import { Compendium } from '../models/compendium';
       [resistHeaders]="compConfig.mresistElems"
       [resists]="demon.mresists">
     </app-demon-resists>
-    <app-demon-skills
+    <app-demon-skills *ngIf="compConfig.hasFusion"
       [title]="'Transferable Skills'"
       [hasLvl]="false"
       [hasTarget]="true"
