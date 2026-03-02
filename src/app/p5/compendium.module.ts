@@ -35,7 +35,7 @@ import ROY_ELEMENT_CHART_JSON from './data/roy-element-chart.json';
 
 function createCompConfig(): CompendiumConfigSet {
   const skillElems = COMP_CONFIG_JSON.resistElems.concat(COMP_CONFIG_JSON.skillElems);
-  const costTypes = [2 << 10, (5 << 10) - 1000, (15 << 10) - 2000];
+  const costTypes = [2 << 10, (5 << 10) - 1000, (19 << 10) - 2001];
   const races = [];
   const skillDatas = [];
   const inheritTypes: { [elem: string]: number[] } = {};
