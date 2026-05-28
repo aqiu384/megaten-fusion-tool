@@ -7,6 +7,7 @@ import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { encodeDemon } from '../models/password-generator';
+import { CompendiumTranslator } from '../../compendium/models/compendium-translator';
 
 @Component({
   selector: 'app-password-generator',
@@ -72,7 +73,7 @@ import { encodeDemon } from '../models/password-generator';
             <tr>
               <td>
                 <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                  <option *ngFor="let elem of elems" [value]="elem">{{ elem }}</option>
+                  <option *ngFor="let elem of elems" [value]="elem">{{ compendiumTranslator.getTranslatedElementLabel(elem, compConfig.lang) }}</option>
                 </select>
               </td>
               <td>
@@ -115,6 +116,7 @@ export class PasswordGeneratorComponent implements OnChanges {
     name: '-', element: '-', inherit: '-', effect: '-',
     learnedBy: [], transfer: []
   };
+  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 
   constructor(private fb: FormBuilder) {
     this.createForm();

@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { SortedTableHeaderComponent } from '../../shared/sorted-table.component';
 import Translations from '../data/translations.json';
+import { CompendiumTranslator } from '../models/compendium-translator';
 
 @Component({
   selector: 'tfoot.app-demon-list-header',
@@ -29,12 +30,12 @@ import Translations from '../data/translations.json';
       <th *ngFor="let pair of resistColIndices"
         class="sortable"
         (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.elem }}"></div>
+        <div [title]='compendiumTranslator.getTranslatedElementLabel(pair.elem, lang)' class="element-icon {{ pair.elem }}"></div>
       </th>
       <th *ngFor="let pair of affinityColIndices"
         class="sortable"
         (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.elem }}"></div>
+        <div [title]='compendiumTranslator.getTranslatedElementLabel(pair.elem, lang)' class="element-icon {{ pair.elem }}"></div>
       </th>
       <th *ngIf="isEnemy">Drops</th>
       <th *ngIf="isEnemy">Appears</th>
@@ -61,6 +62,7 @@ export class DemonListHeaderComponent extends SortedTableHeaderComponent impleme
   affinityColIndices: { elem: string, index: number }[] = [];
   msgs = Translations.DemonListComponent;
   showFilter = false;
+  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 
   ngOnInit() {
     this.nextColIndices();
