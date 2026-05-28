@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import Translations from '../data/translations.json';
+import { CompendiumTranslator } from '../models/compendium-translator';
 
 @Component({
   selector: 'app-demon-stats',
@@ -25,7 +26,7 @@ import Translations from '../data/translations.json';
           <tr>
             <td *ngIf="price">{{ price }}</td>
             <td *ngFor="let stat of stats">{{ stat }}</td>
-            <td *ngIf="inherits"><div class="element-icon i{{ inherits }}">{{ inherits }}</div></td>
+            <td *ngIf="inherits"><div [title]="compendiumTranslator.getTranslatedElementLabel(inheritType, lang)" class="element-icon i{{ inherits }}">{{ inherits }}</div></td>
             <ng-content></ng-content>
           </tr>
         </tbody>
@@ -39,7 +40,9 @@ export class DemonStatsComponent {
   @Input() stats: number[] = [];
   @Input() fusionHeaders: string[] = [];
   @Input() inherits: number;
+  @Input() inheritType: string = '';
   @Input() price = 0;
   @Input() lang = 'en';
   msgs = Translations.DemonStatsComponent;
+  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 }

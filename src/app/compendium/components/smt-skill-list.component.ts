@@ -3,12 +3,13 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { SkillListComponent } from '../../compendium/bases/skill-list.component';
 import { Skill } from '../models';
+import { CompendiumTranslator } from '../models/compendium-translator';
 
 @Component({
   selector: 'tr.app-smt-skill-list-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <td><div class="element-icon {{ data.element }}">{{ data.element }}</div></td>
+    <td><div [title]='compendiumTranslator.getTranslatedElementLabel(data.element, lang)' class="element-icon {{ data.element }}">{{ data.element }}</div></td>
     <td>{{ data.name }}</td>
     <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
     <td *ngIf="data.damage">
@@ -54,6 +55,7 @@ export class SmtSkillListRowComponent {
   @Input() skillLvl = -1;
   @Input() lang = 'en';
   @Input() data: Skill;
+  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 }
 
 @Component({

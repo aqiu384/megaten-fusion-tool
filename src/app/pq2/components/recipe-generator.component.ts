@@ -7,6 +7,7 @@ import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
+import { CompendiumTranslator } from '../../compendium/models/compendium-translator';
 
 @Component({
   selector: 'app-recipe-generator-container',
@@ -33,13 +34,14 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
     const compConfig = this.fusionDataService.compConfig;
     this.maxSkills = compConfig.maxSkillSlots;
     this.lang = compConfig.lang;
+    const compendiumTranslator = new CompendiumTranslator();
     this.recipeConfig = {
       fissionCalculator: this.fusionDataService.fissionCalculator,
       fusionCalculator: this.fusionDataService.fusionCalculator,
       races: compConfig.races,
       skillElems: compConfig.skillElems,
       inheritElems: compConfig.inheritElems,
-      displayElems: compConfig.skillElems.reduce((acc, e) => { acc[e] = e; return acc }, {}),
+      displayElems: compConfig.skillElems.reduce((acc, e) => { acc[e] = compendiumTranslator.getTranslatedElementLabel(e, compConfig.lang); return acc }, {}),
       restrictInherits: true,
       triExclusiveRaces: compConfig.hasTripleFusion ? ['Fool', 'Tower', 'Moon', 'Sun', 'Judgement'] : [],
       triFissionCalculator: this.fusionDataService.triFissionCalculator,

@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import Translations from '../data/translations.json';
+import { CompendiumTranslator } from '../models/compendium-translator';
 
 @Component({
   selector: 'app-demon-inherits',
@@ -16,7 +17,7 @@ import Translations from '../data/translations.json';
         <tr [ngClass]="{ capitalize: !hasIcons }">
           <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">
             <ng-container *ngIf="!hasIcons">{{ element }}</ng-container>
-            <div *ngIf="hasIcons" class="element-icon {{ element }}">{{ element }}</div>
+            <div *ngIf="hasIcons" [title]="compendiumTranslator.getTranslatedElementLabel(element, lang)" class="element-icon {{ element }}">{{ element }}</div>
           </th>
         </tr>
       </thead>
@@ -51,4 +52,5 @@ export class DemonInheritsComponent {
   @Input() hasLvls = false;
   @Input() lang = 'en';
   msgs = Translations.DemonInheritsComponent;
+  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 }

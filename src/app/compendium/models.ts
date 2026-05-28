@@ -18,6 +18,7 @@ export interface Demon {
   name: string;
   price: number;
   inherits: number;
+  inheritType?: string;
   stats: number[];
   resists: number[];
   fusion: string;
