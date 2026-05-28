@@ -6,6 +6,7 @@ import { DemonUnlock } from '../compendium/models/fusion-settings';
 
 export interface Demon extends BaseDemon {
   code: number;
+  growths: number[];
   ailments?: number[];
   evolvesTo?: FusionEntry;
   evolvesFrom?: FusionEntry;

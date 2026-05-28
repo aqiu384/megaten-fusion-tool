@@ -2,7 +2,6 @@ import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
 import { DemonListComponent } from '../bases/demon-list.component';
-import { CompendiumTranslator } from '../models/compendium-translator';
 
 @Component({
   selector: 'tr.app-smt-demon-list-row',
@@ -18,7 +17,7 @@ import { CompendiumTranslator } from '../models/compendium-translator';
       </select>
     </td>
     <td><a [routerLink]="data.name">{{ data.name }}</a></td>
-    <td *ngIf="hasInherits"><div [title]="compendiumTranslator.getTranslatedElementLabel(data.inheritType, lang)" [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
+    <td *ngIf="hasInherits"><div [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
       {{ resist | reslvlToStringLocale:lang }}
@@ -40,7 +39,6 @@ export class SmtDemonListRowComponent {
   @Input() lang = 'en';
   @Input() data: Demon;
   @Output() currLvl = new EventEmitter<number>();
-  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 
   currOffset = 0;
   currRange = Array(0);

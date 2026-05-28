@@ -5,7 +5,6 @@ import ENEMY_NAMES_JSON from '../data/enemy-names.json';
 import SKILL_NAMES_JSON from '../data/skill-names.json';
 import RACE_NAMES_JSON from '../data/race-names.json';
 import ELEM_NAMES_JSON from '../data/elem-names.json';
-import ENGLISH_OVERRIDE_LABELS from '../data/english-elem-labels.json';
 
 import { DemonUnlock } from './fusion-settings';
 type ListLookup = { [name: string]: string[] };
@@ -215,11 +214,5 @@ export class CompendiumTranslator {
     }
 
     return newEvolves;
-  }
-
-  getTranslatedElementLabel(label: string, language: string): string {
-    if (language === 'en') { return ENGLISH_OVERRIDE_LABELS[label] || label; }
-    const langCode = this.langToCode(language);
-    return langCode === -1 ? label : this.translate(label, langCode, ELEM_NAMES_JSON);
   }
 }

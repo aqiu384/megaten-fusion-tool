@@ -7,7 +7,8 @@ import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { encodeDemon } from '../models/password-generator';
-import { CompendiumTranslator } from '../../compendium/models/compendium-translator';
+import { translateCompSet } from '../../compendium/models/translator';
+import Translations from '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-password-generator',
@@ -22,14 +23,14 @@ import { CompendiumTranslator } from '../../compendium/models/compendium-transla
         </tr>
       </table>
       <table class="entry-table">
-        <tr><th colspan="6" class="title">Persona Entry</th></tr>
+        <tr><th colspan="6" class="title">{{ demonMsgs.Demon | translateComp:lang }}</th></tr>
         <tr>
-          <th>Price</th>
-          <th>Level</th>
+          <th>{{ demonMsgs.Price | translateComp:lang }}</th>
+          <th>Lvl</th>
           <th>HP</th>
           <th>MP</th>
-          <th>Race</th>
-          <th>Demon</th>
+          <th>{{ demonMsgs.Race | translateComp:lang }}</th>
+          <th>{{ demonMsgs.Name | translateComp:lang }}</th>
         </tr>
         <tr>
           <td>{{ price }}</td>
@@ -62,10 +63,10 @@ import { CompendiumTranslator } from '../../compendium/models/compendium-transla
       </table>
       <table class="entry-table">
         <thead>
-          <tr><th colspan="2" class="title">Learned Skills</th></tr>
+          <tr><th colspan="2" class="title">{{ skillMsgs.LearnedSkills | translateComp:lang }}</th></tr>
           <tr>
-            <th style="width: 25%">Element</th>
-            <th style="width: 75%">Name</th>
+            <th style="width: 25%">{{ skillMsgs.Elem | translateComp:lang }}</th>
+            <th style="width: 75%">{{ skillMsgs.Name | translateComp:lang }}</th>
           </tr>
         </thead>
         <tbody formArrayName="skills">
@@ -73,7 +74,7 @@ import { CompendiumTranslator } from '../../compendium/models/compendium-transla
             <tr>
               <td>
                 <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                  <option *ngFor="let elem of elems" [value]="elem">{{ compendiumTranslator.getTranslatedElementLabel(elem, compConfig.lang) }}</option>
+                  <option *ngFor="let elem of elems" [value]="elem">{{ displayElems[elem] || elem }}</option>
                 </select>
               </td>
               <td>
@@ -104,7 +105,11 @@ export class PasswordGeneratorComponent implements OnChanges {
   skills: { [elem: string]: Skill[] } = {};
   dcodes: { [code: number]: Demon } = {};
   scodes: { [code: number]: Skill } = {};
+  displayElems: { [elem: string]: string };
   form: FormGroup;
+  lang = 'en';
+  demonMsgs = Translations.DemonListComponent;
+  skillMsgs = Translations.SkillListComponent;
 
   range99 = Array(99);
   range299 = Array(299);
@@ -116,7 +121,6 @@ export class PasswordGeneratorComponent implements OnChanges {
     name: '-', element: '-', inherit: '-', effect: '-',
     learnedBy: [], transfer: []
   };
-  compendiumTranslator : CompendiumTranslator = new CompendiumTranslator();
 
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -166,6 +170,8 @@ export class PasswordGeneratorComponent implements OnChanges {
     this.skills = { '-': [this.blankSkill] };
     this.dcodes = {};
     this.scodes = { 0: this.blankSkill };
+    this.lang = this.compConfig.lang;
+    this.displayElems = translateCompSet(Translations.ElementIcon, this.lang);
 
     if (this.compConfig && this.compendium) {
       for (const demon of this.compendium.allDemons.filter(d => d.code)) {

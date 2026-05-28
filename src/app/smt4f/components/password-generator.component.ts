@@ -7,13 +7,14 @@ import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { decodeDemon, encodeDemon } from '../models/password-generator';
+import { translateCompSet } from '../../compendium/models/translator';
+import Translations from '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-password-generator',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form [formGroup]="form">
-      <h2>Password Generator</h2>
       <app-demon-password
         [encoding]="encoding"
         [inverseEncoding]="inverseEncoding"
@@ -22,12 +23,12 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </app-demon-password>
       <table class="entry-table">
         <thead>
-          <tr><th colspan="4" class="title">Demon Entry</th></tr>
+          <tr><th colspan="4" class="title">{{ demonMsgs.Demon | translateComp:lang }}</th></tr>
           <tr>
             <th>Mask Byte</th>
-            <th>Level</th>
-            <th>Race</th>
-            <th>Demon</th>
+            <th>Lvl</th>
+            <th>{{ demonMsgs.Race | translateComp:lang }}</th>
+            <th>{{ demonMsgs.Name | translateComp:lang }}</th>
           </tr>
         </thead>
         <tbody>
@@ -57,7 +58,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </table>
       <table class="entry-table">
         <thead>
-          <tr><th [attr.colspan]="stats.length" class="title">Stats</th></tr>
+          <tr><th [attr.colspan]="stats.length" class="title">{{ demonMsgs.Stats | translateComp:lang }}</th></tr>
           <tr>
             <th *ngFor="let stat of stats">{{ stat }}</th>
           </tr>
@@ -74,10 +75,10 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
       </table>
       <table class="entry-table">
         <thead>
-          <tr><th colspan="2" class="title">Learned Skills</th></tr>
+          <tr><th colspan="2" class="title">{{ skillMsgs.LearnedSkills | translateComp:lang }}</th></tr>
           <tr>
-            <th style="width: 25%">Element</th>
-            <th style="width: 75%">Name</th>
+            <th style="width: 25%">{{ skillMsgs.Elem | translateComp:lang }}</th>
+            <th style="width: 75%">{{ skillMsgs.Name | translateComp:lang }}</th>
           </tr>
         </thead>
         <tbody formArrayName="skills">
@@ -85,7 +86,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
             <tr>
               <td>
                 <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                  <option *ngFor="let elem of allElems" [value]="elem">{{ elem }}</option>
+                  <option *ngFor="let elem of allElems" [value]="elem">{{ displayElems[elem] || elem }}</option>
                 </select>
               </td>
               <td>
@@ -104,6 +105,7 @@ import { decodeDemon, encodeDemon } from '../models/password-generator';
   `]
 })
 export class PasswordGeneratorComponent implements OnChanges {
+  @Input() lang: string;
   @Input() defaultDemon: string;
   @Input() encoding: string;
   @Input() inverseEncoding: { [letter: string]: number };
@@ -119,8 +121,11 @@ export class PasswordGeneratorComponent implements OnChanges {
   internalMaxSkills = 6;
   allRaces: string[];
   allElems: string[];
+  displayElems: { [elem: string]: string };
   form: FormGroup;
   encodeBytes: number[];
+  demonMsgs = Translations.DemonListComponent;
+  skillMsgs = Translations.SkillListComponent;
 
   range99 = Array(99);
   range256 = Array(256);
@@ -131,7 +136,7 @@ export class PasswordGeneratorComponent implements OnChanges {
   unknownDemon: Demon = {
     name: '???', race: '-', align: '', code: 0,
     lvl: 0, currLvl: 0, skills: {}, skillCards: {},
-    price: 0, stats: [0, 0, 0, 0, 0], resists: [], ailments: [],
+    price: 0, stats: [0, 0, 0, 0, 0], growths:[], resists: [], ailments: [],
     inherits: 0, affinities: [], fusion: 'normal', prereq: '', searchTags: '-'
   };
   blankSkill: Skill = {
@@ -202,6 +207,7 @@ export class PasswordGeneratorComponent implements OnChanges {
     this.skills = { '-': [this.blankSkill], '???': [this.unknownSkill] };
     this.dcodes = {};
     this.scodes = { 0: this.blankSkill };
+    this.displayElems = translateCompSet(Translations.ElementIcon, this.lang);
 
     if (this.compendium) {
       for (const demon of this.compendium.allDemons) {
@@ -294,6 +300,7 @@ export class PasswordGeneratorComponent implements OnChanges {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-password-generator
+      [lang]="compConfig.lang"
       [races]="compConfig.races"
       [elems]="compConfig.skillElems"
       [defaultDemon]="compConfig.defaultRecipeDemon"

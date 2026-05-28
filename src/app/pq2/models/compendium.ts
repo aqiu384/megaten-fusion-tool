@@ -66,7 +66,6 @@ export class Compendium implements ICompendium {
           currLvl:  json['lvl'],
           price:    0,
           inherits: affinities.reduce((acc, n) => 2 * acc + (n > 0 ? 1 : 0), 0),
-          inheritType: json['inherit'] || json['inherits'],
           affinities,
           stats:    json['stats'],
           resists:  hasDemonResists ? codifyResists(json['resists'], blankResists, json['resmods']) : [],
@@ -84,6 +83,7 @@ export class Compendium implements ICompendium {
         decoded.mp = demons[name].stats[1];
         decoded.skillCodes = Object.values(demons[name].skills).map(lvl => lvl < 2 ? 1 : 0);
         demons[name].price = this.compConfig.computePrice(demons[name], decoded);
+
         if (hasDemonTrait) {
           demons[name].skills[json['trait'] || 'Agi'] = 0;
         }

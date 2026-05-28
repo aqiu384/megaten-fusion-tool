@@ -20,7 +20,8 @@ import Translations from '../../compendium/data/translations.json';
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [price]="compConfig.appCssClasses.includes('ds1') ? 0 : demon.price"
         [statHeaders]="compConfig.baseStats"
-        [stats]="demon.stats">
+        [stats]="demon.stats"
+        [growths]="demon.growths">
       </app-demon-stats>
       <app-demon-resists
         [lang]="compConfig.lang"
