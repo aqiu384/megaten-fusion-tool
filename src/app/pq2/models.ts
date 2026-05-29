@@ -5,6 +5,7 @@ import {
 } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
+  growths: number[];
   ailments: number[];
   code: number;
 }

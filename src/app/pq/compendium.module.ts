@@ -43,6 +43,7 @@ function createCompConfig(): CompendiumConfigSet {
   for (const [demon, entry] of Object.entries(PARTY_DATA_JSON)) {
     entry.race = entry.race + ' P';
     entry.stats = entry.stats.slice(0, 2).map(s => s * 10);
+    entry['steps'] = [];
     entry['lvl'] = 1;
     entry['fusion'] = 'party';
     entry['inherit'] = 'almpp';
@@ -63,6 +64,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const demon of Object.values(DEMON_DATA_JSON)) {
     demon.stats = demon.stats.map(s => Math.floor(s / 10));
+    demon.steps = demon.steps.map(s => s * 10);
   }
 
   for (const enemy of Object.values(ENEMY_DATA_JSON)) {
@@ -85,7 +87,7 @@ function createCompConfig(): CompendiumConfigSet {
 
     skillData: [skillData],
     skillElems,
-    ailmentElems: COMP_CONFIG_JSON.ailments,
+    ailmentElems: COMP_CONFIG_JSON.ailments.map(a => a.slice(0, 3).toLocaleLowerCase()),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     resistCodes: COMP_CONFIG_JSON.resistCodes,
 

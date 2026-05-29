@@ -20,6 +20,7 @@ import { FusionDataService } from '../fusion-data.service';
         [price]="demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
+        [growths]="demon.growths"
         [inherits]="demon.inherits">
       </app-demon-stats>
       <app-demon-resists *ngIf="compConfig.hasDemonResists"

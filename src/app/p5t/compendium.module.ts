@@ -41,6 +41,7 @@ function createCompConfig(): CompendiumConfigSet {
     demon['inherit'] = 'alm';
     demon['skills'] = {};
     demon['skills'][demon.skill] = 0.1;
+    demon.steps = demon.steps.map(s => s * 100);
   }
 
   const COST_MP = 5 << 10;

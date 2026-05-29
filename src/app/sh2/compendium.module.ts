@@ -26,6 +26,7 @@ function createCompConfig(): CompendiumConfigSet {
   for (const demon of Object.values(DEMON_DATA_JSON)) {
     demon['price'] = Math.floor(demon['price'] / 2);
     demon['affinities'] = demon['inherits'].split('').map(char => char === 'o' ? 10 : -10);
+    demon.steps = demon.steps.map(s => s * 100);
   }
 
   const COST_MP = (3 << 10);

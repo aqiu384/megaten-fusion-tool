@@ -29,6 +29,13 @@
 .p3 div.element-icon.sup { background-image: url('../../../assets/images/elem-sprites.svg#per-sup'); }
 .p3 div.element-icon.pas { background-image: url('../../../assets/images/elem-sprites.svg#per-pas'); }
 
+.p3 div.ailment-icon.cha { background-image: url('../../../assets/images/ailment-sprites.svg#charm'); }
+.p3 div.ailment-icon.poi { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
+.p3 div.ailment-icon.dis { background-image: url('../../../assets/images/ailment-sprites.svg#distress'); }
+.p3 div.ailment-icon.pan { background-image: url('../../../assets/images/elem-sprites.svg#panic'); }
+.p3 div.ailment-icon.fea { background-image: url('../../../assets/images/ailment-sprites.svg#fear'); }
+.p3 div.ailment-icon.rag { background-image: url('../../../assets/images/ailment-sprites.svg#rage'); }
+
 .p3 th.title, .p3 th.nav.active, .p3 th.nav.active a {
   color: black;
   background-color: #4372AA;
@@ -59,6 +66,15 @@
 .p4 div.element-icon.i4095,
 .p4 div.element-icon.sup { background-image: url('../../../assets/images/elem-sprites.svg#per-sup'); }
 .p4 div.element-icon.pas { background-image: url('../../../assets/images/elem-sprites.svg#per-pas'); }
+
+.p4 div.ailment-icon.pan { background-image: url('../../../assets/images/elem-sprites.svg#panic'); }
+.p4 div.ailment-icon.poi { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
+.p4 div.ailment-icon.fea { background-image: url('../../../assets/images/ailment-sprites.svg#fear'); }
+.p4 div.ailment-icon.rag { background-image: url('../../../assets/images/ailment-sprites.svg#rage'); }
+.p4 div.ailment-icon.diz { background-image: url('../../../assets/images/ailment-sprites.svg#down'); }
+.p4 div.ailment-icon.exh { background-image: url('../../../assets/images/ailment-sprites.svg#exhaustion'); }
+.p4 div.ailment-icon.ene { background-image: url('../../../assets/images/ailment-sprites.svg#enervation'); }
+.p4 div.ailment-icon.mut { background-image: url('../../../assets/images/ailment-sprites.svg#mute'); }
 
 .p4 th.title, .p4 th.nav.active, .p4 th.nav.active a {
   color: black;
@@ -94,6 +110,17 @@
 .p5 div.element-icon.pas,
 .p5 div.element-icon.i0 { background-image: url('../../../assets/images/elem-sprites.svg#per-pas'); }
 .p5 div.element-icon.tra { background-image: url('../../../assets/images/elem-sprites.svg#per-tra'); }
+
+.p5 div.ailment-icon.bur { background-image: url('../../../assets/images/elem-sprites.svg#fir'); }
+.p5 div.ailment-icon.fre { background-image: url('../../../assets/images/elem-sprites.svg#ice'); }
+.p5 div.ailment-icon.sho { background-image: url('../../../assets/images/elem-sprites.svg#ele'); }
+.p5 div.ailment-icon.ham { background-image: url('../../../assets/images/elem-sprites.svg#lig'); }
+.p5 div.ailment-icon.mud { background-image: url('../../../assets/images/elem-sprites.svg#per-dar'); }
+.p5 div.ailment-icon.diz { background-image: url('../../../assets/images/ailment-sprites.svg#dizzy'); }
+.p5 div.ailment-icon.fea { background-image: url('../../../assets/images/ailment-sprites.svg#fear'); }
+.p5 div.ailment-icon.des { background-image: url('../../../assets/images/ailment-sprites.svg#exhaustion'); }
+.p5 div.ailment-icon.bra { background-image: url('../../../assets/images/ailment-sprites.svg#brainwash'); }
+.p5 div.ailment-icon.oth { background-image: url('../../../assets/images/elem-sprites.svg#smt-spe'); }
 
 .p5 th.title, .p5 th.nav.active, .p5 th.nav.active a {
   color: white;
@@ -146,6 +173,17 @@
 .pq div.element-icon.nav { background-image: url('../../../assets/images/elem-sprites.svg#per-tra'); }
 .pq div.element-icon.pas { background-image: url('../../../assets/images/elem-sprites.svg#per-pas'); }
 
+.pq div.ailment-icon.sle { background-image: url('../../../assets/images/ailment-sprites.svg#sleep'); }
+.pq div.ailment-icon.pan { background-image: url('../../../assets/images/elem-sprites.svg#panic'); }
+.pq div.ailment-icon.poi { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
+.pq div.ailment-icon.cur { background-image: url('../../../assets/images/elem-sprites.svg#hex'); }
+.pq div.ailment-icon.par { background-image: url('../../../assets/images/elem-sprites.svg#paralyze'); }
+.pq div.ailment-icon.sbi { background-image: url('../../../assets/images/elem-sprites.svg#s-bind'); }
+.pq div.ailment-icon.mbi { background-image: url('../../../assets/images/elem-sprites.svg#m-bind'); }
+.pq div.ailment-icon.abi { background-image: url('../../../assets/images/elem-sprites.svg#a-bind'); }
+.pq div.ailment-icon.dow { background-image: url('../../../assets/images/ailment-sprites.svg#down'); }
+.pq div.ailment-icon.ko { background-image: url('../../../assets/images/elem-sprites.svg#lig'); }
+
 .pq th.title, .pq th.nav.active, .pq th.nav.active a {
   color: black;
   background-color: #AA1CA9;
@@ -177,6 +215,17 @@
 .pq2 div.element-icon.sup { background-image: url('../../../assets/images/elem-sprites.svg#per-sup'); }
 .pq2 div.element-icon.nav { background-image: url('../../../assets/images/elem-sprites.svg#per-tra'); }
 .pq2 div.element-icon.pas { background-image: url('../../../assets/images/elem-sprites.svg#per-pas'); }
+
+.pq2 div.ailment-icon.sle { background-image: url('../../../assets/images/ailment-sprites.svg#sleep'); }
+.pq2 div.ailment-icon.pan { background-image: url('../../../assets/images/elem-sprites.svg#panic'); }
+.pq2 div.ailment-icon.poi { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
+.pq2 div.ailment-icon.hex { background-image: url('../../../assets/images/elem-sprites.svg#hex'); }
+.pq2 div.ailment-icon.par { background-image: url('../../../assets/images/elem-sprites.svg#paralyze'); }
+.pq2 div.ailment-icon.sbi { background-image: url('../../../assets/images/elem-sprites.svg#s-bind'); }
+.pq2 div.ailment-icon.mbi { background-image: url('../../../assets/images/elem-sprites.svg#m-bind'); }
+.pq2 div.ailment-icon.abi { background-image: url('../../../assets/images/elem-sprites.svg#a-bind'); }
+.pq2 div.ailment-icon.sto { background-image: url('../../../assets/images/ailment-sprites.svg#stone'); }
+.pq2 div.ailment-icon.ko { background-image: url('../../../assets/images/elem-sprites.svg#lig'); }
 
 .pq2 th.title, .pq2 th.nav.active, .pq2 th.nav.active a {
   color: white;
@@ -250,6 +299,13 @@
 .p3r div.element-icon.spe { background-image: url('../../../assets/images/elem-sprites.svg#per-tra'); }
 .p3r div.element-icon.sup { background-image: url('../../../assets/images/elem-sprites.svg#per-sup'); }
 .p3r div.element-icon.pas { background-image: url('../../../assets/images/elem-sprites.svg#per-pas'); }
+
+.p3r div.ailment-icon.cha { background-image: url('../../../assets/images/ailment-sprites.svg#charm'); }
+.p3r div.ailment-icon.poi { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
+.p3r div.ailment-icon.dis { background-image: url('../../../assets/images/ailment-sprites.svg#distress'); }
+.p3r div.ailment-icon.con { background-image: url('../../../assets/images/elem-sprites.svg#panic'); }
+.p3r div.ailment-icon.fea { background-image: url('../../../assets/images/ailment-sprites.svg#fear'); }
+.p3r div.ailment-icon.rag { background-image: url('../../../assets/images/ailment-sprites.svg#rage'); }
 
 .p3r th.title, .p3r th.nav.active, .p3r th.nav.active a {
   color: black;

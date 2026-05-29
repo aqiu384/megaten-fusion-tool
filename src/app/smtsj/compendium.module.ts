@@ -60,6 +60,7 @@ function createCompConfig(): CompendiumConfigSet {
       demonData[name].skillCards = entry.source.reduce((acc, s, i) => { acc[s] = i - 3; return acc; }, {});
       demonData[name].price = estimateBasePrice(entry.stats, entry.pcoeff) / 2;
       demonData[name].affinities = entry.inherits.split('').map(i => i === 'o' ? 10 : -10);
+      demonData[name].steps = [0, 0].concat(entry.steps);
     }
 
     for (const [name, prereq] of Object.entries(prereqs)) {
@@ -111,7 +112,7 @@ function createCompConfig(): CompendiumConfigSet {
       alignments: ALIGNMENTS_JSON,
       baseStats: COMP_CONFIG_JSON.baseStats,
       resistElems: COMP_CONFIG_JSON.resistElems,
-      ailmentElems: COMP_CONFIG_JSON.ailments,
+      ailmentElems: COMP_CONFIG_JSON.ailments.map(a => a.slice(0, 3).toLocaleLowerCase()),
 
       demonUnlocks: DEMON_UNLOCKS_JSON,
       normalTable: FUSION_CHART_JSON,

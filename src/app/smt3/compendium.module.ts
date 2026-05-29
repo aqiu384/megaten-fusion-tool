@@ -94,7 +94,7 @@ function createCompConfig(): CompendiumConfigSet {
     alignments: {},
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems: COMP_CONFIG_JSON.resistElems,
-    ailmentElems: COMP_CONFIG_JSON.ailments,
+    ailmentElems: COMP_CONFIG_JSON.ailments.map(a => a.slice(0, 3).toLocaleLowerCase()),
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,

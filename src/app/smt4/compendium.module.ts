@@ -28,6 +28,7 @@ function updateComputedDemon(entry, skillPrices, compConfig) {
   const hp = stats[0] + lvl * stats[2];
   const mp = Math.floor(0.45 * (stats[1] + lvl * stats[3]));
   entry.stats = [hp, mp].concat(stats.slice(4));
+  entry.steps = [stats[2] * 100, stats[3] * 100].concat(entry.steps);
 
   const hpPrice = Math.floor((hp / 2) ** 1.5);
   const mpPrice = Math.floor((mp / 2) ** 1.5);
@@ -108,7 +109,7 @@ function createCompConfig(): CompendiumConfigSet {
     alignments: ALIGNMENTS_JSON,
     baseStats: COMP_CONFIG_JSON.baseStats,
     resistElems: COMP_CONFIG_JSON.resistElems,
-    ailmentElems: COMP_CONFIG_JSON.ailments,
+    ailmentElems: COMP_CONFIG_JSON.ailments.map(a => a.slice(0, 3).toLocaleLowerCase()),
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,

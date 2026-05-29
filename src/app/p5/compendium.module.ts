@@ -75,7 +75,7 @@ function createCompConfig(): CompendiumConfigSet {
   const ailmentElems = [
     'Burn', 'Freeze', 'Shock', 'Hama', 'Mudo',
     'Dizzy', 'Fear', 'Despair', 'Brainwash', 'Other'
-  ].map(x => x.slice(0, 4));
+  ].map(x => x.slice(0, 3).toLocaleLowerCase());
 
   for (const enemies of [ENEMY_DATA_JSON, ROY_ENEMY_DATA_JSON]) {
     for (const enemy of Object.values(enemies)) {

@@ -114,7 +114,7 @@ function createCompConfig(): CompendiumConfigSet {
 
       skillData: skillDatas.slice(0, 1),
       skillElems,
-      ailmentElems: COMP_CONFIG_JSON.ailments.map(x => x.slice(0, 3)),
+      ailmentElems: COMP_CONFIG_JSON.ailments.map(x => x.slice(0, 3).toLocaleLowerCase()),
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       resistCodes: COMP_CONFIG_JSON.resistCodes,
 

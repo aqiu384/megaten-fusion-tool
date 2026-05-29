@@ -19,7 +19,7 @@ import Translations from '../data/translations.json';
           </th>
           <th *ngFor="let ailment of ailmentHeaders"
             [style.width.%]="50 / ailmentHeaders.length">
-            <div>{{ ailment }}</div>
+            <div [ngClass]="['ailment-icon', ailment]">{{ ailment }}</div>
           </th>
         </tr>
       </thead>

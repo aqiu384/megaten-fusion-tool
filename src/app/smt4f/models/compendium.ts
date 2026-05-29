@@ -98,7 +98,7 @@ export class Compendium implements ICompendium {
           skillCards: json['skillCards'] || {},
           price:      json['price'] * 2,
           stats:      json['stats'],
-          growths:    json['strow'] || [],
+          growths:    json['steps'] || [],
           resists:    codifyResists(json['resists'], json['resists'], json['resmods']),
           ailments:   codifyResists(json['ailments'], blankAilments, json['ailmods']),
           inherits:   parseInt(((json['affinities'] || [-10]).map(a => a > -10 ? '1' : '0')).join(''), 2),
