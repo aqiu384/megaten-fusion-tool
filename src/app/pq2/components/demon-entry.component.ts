@@ -21,7 +21,9 @@ import { FusionDataService } from '../fusion-data.service';
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
         [growths]="demon.growths"
-        [inherits]="demon.inherits">
+        [inherits]="demon.inherits"
+        [inheritanceLabelMap]="inheritanceLabelMap">
+        
       </app-demon-stats>
       <app-demon-resists *ngIf="compConfig.hasDemonResists"
         [lang]="lang"
@@ -57,6 +59,7 @@ export class DemonEntryComponent {
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
   @Input() lang = 'en';
+  @Input() inheritanceLabelMap = {};
 }
 
 @Component({
@@ -68,7 +71,8 @@ export class DemonEntryComponent {
       [name]="name"
       [demon]="demon"
       [compConfig]="compConfig"
-      [compendium]="compendium">
+      [compendium]="compendium"
+      [inheritanceLabelMap]="inheritanceLabelMap">
     </app-demon-entry>
     <app-enemy-entry *ngIf="demon && demon.isEnemy"
       [lang]="compConfig.lang"
@@ -86,6 +90,7 @@ export class DemonEntryContainerComponent {
   compendium: Compendium;
   compConfig: CompendiumConfig;
   appName = 'Test App';
+  inheritanceLabelMap = {};
 
   constructor(
     private route: ActivatedRoute,
@@ -95,6 +100,11 @@ export class DemonEntryContainerComponent {
   ) {
     this.appName = fusionDataService.appName;
     this.compConfig = fusionDataService.compConfig;
+
+    Object.keys(this.compConfig.inheritTypes).forEach((type) => {
+      const valueKey = this.compConfig.inheritTypes[type].reverse().reduce((accumulator, currentValue, index)=> accumulator + ( currentValue > 0 ? (2 ** index) : 0),0);
+      this.inheritanceLabelMap[ valueKey ] = type;
+    });
   }
 
   ngOnInit() {

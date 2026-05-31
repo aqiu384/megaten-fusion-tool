@@ -17,6 +17,7 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <ng-container *ngIf="demon">
       <app-demon-stats
+        [lang]="lang"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [statHeaders]="compConfig.baseAtks"
         [stats]="demon.atks"
@@ -57,25 +58,29 @@ import { FusionDataService } from '../fusion-data.service';
         </tbody>
       </table>
       <app-demon-inherits
-        [lang]="'en'"
+        [lang]="lang"
         [hasLvls]="true"
         [hasIcons]="false"
         [inheritHeaders]="compConfig.affinityUsers"
         [inherits]="demon.affinities">
       </app-demon-inherits>
       <app-demon-resists *ngIf="compConfig.presistElems.length"
+        [lang]="lang"
         [resistHeaders]="compConfig.presistElems"
         [resists]="demon.presists">
       </app-demon-resists>
       <app-demon-resists
+        [lang]="lang"
         [resistHeaders]="compConfig.mresistElems"
         [resists]="demon.mresists">
       </app-demon-resists>
       <app-demon-inherits *ngIf="compConfig.inheritElems.length"
+        [lang]="lang"
         [inheritHeaders]="compConfig.inheritElems"
         [inherits]="demon.elemAffins">
       </app-demon-inherits>
       <app-demon-skills
+        [lang]="lang"
         [elemOrder]="compConfig.elemOrder"
         [hasTarget]="true"
         [compendium]="compendium"
@@ -100,6 +105,7 @@ export class DemonEntryComponent implements OnChanges {
   @Input() elemRecipes: MultiFusionPair[];
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
+  @Input() lang : string = 'en';
 
   statGrowths: number[][];
   mutatesTo: FusionEntry[];

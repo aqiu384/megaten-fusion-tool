@@ -15,11 +15,11 @@ import Translations from '../data/translations.json';
         <tr>
           <th *ngFor="let element of resistHeaders"
             [style.width.%]="(ailmentHeaders.length ? 50 : 100) / resistHeaders.length">
-            <div [ngClass]="['element-icon', element]">{{ element }}</div>
+            <div [title]="(effectLabels[ element ] ?? [] | translateComp:lang) ?? element " [ngClass]="['element-icon', element]">{{ element }}</div>
           </th>
           <th *ngFor="let ailment of ailmentHeaders"
             [style.width.%]="50 / ailmentHeaders.length">
-            <div [ngClass]="['ailment-icon', ailment]">{{ ailment }}</div>
+            <div [title]="(effectLabels[ailment] ?? [] | translateComp:lang) ?? ailment" [ngClass]="['ailment-icon', ailment]">{{ ailment }}</div>
           </th>
         </tr>
       </thead>
@@ -52,4 +52,5 @@ export class DemonResistsComponent {
   @Input() ailments: number[] = [];
   @Input() lang = 'en';
   msgs = Translations.DemonResistsComponent;
+  effectLabels = Translations.ElementIcon;
 }

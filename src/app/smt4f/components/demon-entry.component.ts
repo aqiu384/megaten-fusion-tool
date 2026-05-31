@@ -51,7 +51,7 @@ import Translations from '../../compendium/data/translations.json';
         </thead>
         <tbody>
           <tr *ngFor="let data of skillLvls" [ngClass]="{ unique: data.skill.rank > 90 }">
-            <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
+            <td><div [title]="(elementIconLabels[data.skill.element] ?? [] | translateComp:lang) ?? data.skill.element" class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
             <td>{{ data.skill.name }} {{ data.lvl > 0 ? '+' + data.lvl : data.lvl || '' }}</td>
             <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
             <td>{{ data.skill.effect }} {{ data.upgrade === 0 ? '' : '(' + (data.upgrade > 0 ? '+' : '') + data.upgrade + '%)' }}</td>
@@ -100,7 +100,9 @@ export class DemonEntryComponent {
   @Input() lang = 'en';
   statMsgs = Translations.DemonStatsComponent;
   skillMsgs = Translations.SkillListComponent;
+  elementIconLabels = Translations.ElementIcon;
   skillLvls: { skill: Skill; cost: number; lvl: number, upgrade: number; }[] = [];
+
 
   ngOnChanges() {
     if (!this.demon) {

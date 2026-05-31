@@ -23,7 +23,7 @@ import { FusionTrio } from '../models';
         (click)="toggleShowing.emit(showIndex)">
         Show
       </th>
-      <td>{{ trio.minPrice }}</td>
+      <td>{{ trio.minPrice.toLocaleString() }}</td>
       <td>{{ trio.demon.race }}</td>
       <td>{{ trio.demon.currLvl }}</td>
       <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
@@ -39,7 +39,7 @@ import { FusionTrio } from '../models';
         </th>
       </tr>
       <tr *ngFor="let recipe of trio.fusions">
-        <td>{{ recipe.price }}</td>
+        <td>{{ recipe.price.toLocaleString() }}</td>
         <td>{{ trio.demon.race }}</td>
         <td>{{ trio.demon.currLvl }}</td>
         <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>

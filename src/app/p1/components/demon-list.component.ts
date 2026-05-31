@@ -11,13 +11,15 @@ import { FusionDataService } from '../fusion-data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-smt-demon-list
+      [lang]="lang"
       [isEnemy]="showEnemies"
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
       [inheritOrder]="inheritOrder"
       [affinityHeaders]="showEnemies ? [] : compConfig.affinityUsers"
-      [rowData]="demons | async">
+      [rowData]="demons | async"
+      [inheritanceLabelMap]="inheritanceLabelMap">
     </app-smt-demon-list>
   `
 })
@@ -27,6 +29,8 @@ export class DemonListContainerComponent extends DLCC {
   resistHeaders: string[];
   inheritOrder: { [elem: string]: number };
   compConfig: CompendiumConfig;
+  lang : string = 'en';
+  inheritanceLabelMap = {};
 
   constructor(
     title: Title,
@@ -53,5 +57,8 @@ export class DemonListContainerComponent extends DLCC {
       this.appName = `List of Demons - ${fusionDataService.appName}`;
       this.statHeaders = this.compConfig.enemyStats;
     }
+    Object.keys(this.compConfig.elemOrder).forEach((type) => {
+      this.inheritanceLabelMap[ this.compConfig.elemOrder[type] ] = type;
+    })
   }
 }

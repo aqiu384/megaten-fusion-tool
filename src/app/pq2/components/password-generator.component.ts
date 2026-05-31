@@ -33,7 +33,7 @@ import Translations from '../../compendium/data/translations.json';
           <th>{{ demonMsgs.Name | translateComp:lang }}</th>
         </tr>
         <tr>
-          <td>{{ price }}</td>
+          <td>{{ price.toLocaleString() }}</td>
           <td>
             <select formControlName="lvl">
               <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>

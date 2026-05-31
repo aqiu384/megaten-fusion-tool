@@ -23,9 +23,9 @@ import Translations from '../data/translations.json';
         </thead>
         <tbody>
           <tr>
-            <td *ngIf="price" [attr.rowSpan]="growths.length">{{ price }}</td>
+            <td *ngIf="price" [attr.rowSpan]="growths.length">{{ price.toLocaleString() }}</td>
             <td *ngFor="let stat of stats">{{ stat }}</td>
-            <td *ngIf="inherits" [attr.rowSpan]="growths.length"><div class="element-icon i{{ inherits }}">{{ inherits }}</div></td>
+            <td *ngIf="inherits" [attr.rowSpan]="growths.length"><div [title]="((inheritLabels[inheritanceLabelMap[inherits]] ?? []) | translateComp: lang)|| inheritanceLabelMap[inherits]" class="element-icon i{{ inherits }}">{{ inherits }}</div></td>
             <ng-content></ng-content>
           </tr>
           <tr *ngIf="growths.length">
@@ -43,7 +43,10 @@ export class DemonStatsComponent {
   @Input() growths: number[] = [];
   @Input() fusionHeaders: string[] = [];
   @Input() inherits: number;
-  @Input() price = 0;
+  @Input() inheritanceLabelMap: {} = {};
+  @Input() price : Number= 0;
   @Input() lang = 'en';
   msgs = Translations.DemonStatsComponent;
+  inheritLabels = Translations.InheritanceTypeLabels;
+
 }
