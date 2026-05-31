@@ -9,7 +9,7 @@ import Translations from '../data/translations.json';
   selector: 'tr.app-fusion-pair-table-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <td class="price">{{ data.price }}</td>
+    <td class="price">{{ data.price.toLocaleString() }}</td>
     <td>{{ data.race1 }}</td>
     <td>{{ data.lvl1 | lvlToNumber }}</td>
     <td><a routerLink="{{ leftBaseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>

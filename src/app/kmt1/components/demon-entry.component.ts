@@ -15,21 +15,25 @@ import { FusionDataService } from '../fusion-data.service';
   template: `
     <ng-container *ngIf="demon">
       <app-demon-stats
+        [lang]="lang"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
         [inherits]="demon.inherits">
       </app-demon-stats>
       <app-demon-stats *ngIf="compConfig.baseAtks.length"
+        [lang]="lang"
         [title]="'Attacks'"
         [statHeaders]="compConfig.baseAtks"
         [stats]="demon.atks">
       </app-demon-stats>
       <app-demon-resists
+        [lang]="lang"
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
       </app-demon-resists>
       <app-demon-skills
+        [lang]="lang"
         [title]="'Innate Skills'"
         [hasTarget]="true"
         [hasLvl]="false"
@@ -51,6 +55,7 @@ export class DemonEntryComponent {
   @Input() showPrice: boolean;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
+  @Input() lang : string = 'en';
 }
 
 @Component({

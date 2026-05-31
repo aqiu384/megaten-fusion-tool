@@ -18,7 +18,7 @@ import Translations from '../data/translations.json';
       </thead>
       <tbody>
         <tr *ngFor="let data of rowData">
-          <td>{{ data.price }}</td>
+          <td>{{ data.price.toLocaleString() }}</td>
           <td>{{ data.race1 }}</td>
           <td>{{ data.lvl1 | lvlToNumber }}</td>
           <td><a routerLink="{{ baseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>

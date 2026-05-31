@@ -61,7 +61,7 @@ import { FusionDataService } from '../fusion-data.service';
           <tr><th colspan=4 class="title">Special Fusion Ingredients for {{ name }}</th></tr>
           <tr><th>Price</th><th>Race</th><th>Lvl</th><th>Name</th></tr>
           <tr *ngFor="let row of rows">
-            <td>{{ row.price }}</td>
+            <td>{{ row.price.toLocaleString() }}</td>
             <td>{{ row.race1 }}</td>
             <td>{{ row.lvl1 }}</td>
             <td><a routerLink="../{{ row.name1 }}">{{ row.name1 }}</a></td>

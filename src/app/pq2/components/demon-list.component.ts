@@ -21,7 +21,8 @@ import Translations from  '../../compendium/data/translations.json';
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
       [inheritOrder]="inheritOrder"
-      [rowData]="demons | async">
+      [rowData]="demons | async"
+      [inheritanceLabelMap]="inheritanceLabelMap">
     </app-smt-demon-list>
   `
 })
@@ -31,6 +32,8 @@ export class DemonListContainerComponent extends DLCC {
   resistHeaders: string[];
   inheritOrder: { [elem: string]: number };
   compConfig: CompendiumConfig;
+  inheritanceLabelMap = {};
+
 
   constructor(
     title: Title,
@@ -59,6 +62,13 @@ export class DemonListContainerComponent extends DLCC {
       this.resistHeaders = this.compConfig.resistElems;
       this.inheritOrder = null;
     }
+
+      Object.keys(this.compConfig.inheritTypes).forEach((type) => {
+      const valueKey = this.compConfig.inheritTypes[type].reverse().reduce((accumulator, currentValue, index)=> accumulator + ( currentValue > 0 ? (2 ** index) : 0),0);
+      this.inheritanceLabelMap[ valueKey ] = type;
+    });
+
+
 
   }
 }

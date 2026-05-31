@@ -25,6 +25,7 @@ import Translations from '../data/translations.json';
       <tbody>
         <tr *ngFor="let data of skills"
           class="app-smt-skill-list-row"
+          [lang]="lang"
           [hasTarget]="hasTarget"
           [hasRank]="hasRank"
           [hasInherit]="hasInherit"

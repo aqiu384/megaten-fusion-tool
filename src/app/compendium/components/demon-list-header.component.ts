@@ -29,12 +29,12 @@ import Translations from '../data/translations.json';
       <th *ngFor="let pair of resistColIndices"
         class="sortable"
         (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.elem }}"></div>
+        <div [title]="( translatedElementNames[ pair.elem ] ?? [] | translateComp:lang ) || pair.elem" class="element-icon {{ pair.elem }}"></div>
       </th>
       <th *ngFor="let pair of affinityColIndices"
         class="sortable"
         (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.elem }}"></div>
+        <div [title]="( translatedElementNames[ pair.elem ] ?? [] | translateComp:lang ) || pair.elem" class="element-icon {{ pair.elem }}"></div>
       </th>
       <th *ngIf="isEnemy">Drops</th>
       <th *ngIf="isEnemy">Appears</th>
@@ -60,6 +60,7 @@ export class DemonListHeaderComponent extends SortedTableHeaderComponent impleme
   reslvlColIndices: { elem: string, index: number }[] = [];
   affinityColIndices: { elem: string, index: number }[] = [];
   msgs = Translations.DemonListComponent;
+  translatedElementNames = Translations.ElementIcon;
   showFilter = false;
 
   ngOnInit() {

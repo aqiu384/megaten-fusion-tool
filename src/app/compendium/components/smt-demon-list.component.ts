@@ -2,6 +2,7 @@ import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
 import { DemonListComponent } from '../bases/demon-list.component';
+import  Translations from '../data/translations.json';
 
 @Component({
   selector: 'tr.app-smt-demon-list-row',
@@ -17,7 +18,7 @@ import { DemonListComponent } from '../bases/demon-list.component';
       </select>
     </td>
     <td><a [routerLink]="data.name">{{ data.name }}</a></td>
-    <td *ngIf="hasInherits"><div [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
+    <td *ngIf="hasInherits"><div [title]="((inheritLabels[inheritanceLabelMap[data.inherits]] ?? []) | translateComp: lang)|| inheritanceLabelMap[data.inherits]" [ngClass]="['element-icon',  'i' + data.inherits]">{{ data.inherits }}</div></td>
     <td *ngFor="let stat of data.stats">{{ stat }}</td>
     <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
       {{ resist | reslvlToStringLocale:lang }}
@@ -38,10 +39,22 @@ export class SmtDemonListRowComponent {
   @Input() hasAffinity = false;
   @Input() lang = 'en';
   @Input() data: Demon;
+  @Input() inheritanceLabelMap = {};
   @Output() currLvl = new EventEmitter<number>();
+  inheritLabels;
+
 
   currOffset = 0;
   currRange = Array(0);
+
+  constructor(){
+    this.inheritLabels = Translations.InheritanceTypeLabels;
+    Object.keys(Translations.ElementIcon).forEach((type) => {
+      this.inheritLabels[ type ] = Translations.ElementIcon[ type ];
+    });
+
+  }
+
 
   updateCurrRange() {
     if (this.currOffset !== 0) { return; }
@@ -57,6 +70,7 @@ export class SmtDemonListRowComponent {
       this.currLvl.emit(lvl);
     }
   }
+
 }
 
 @Component({
@@ -105,7 +119,8 @@ export class SmtDemonListRowComponent {
             hidden: !data.searchTags.includes(searchTags)
           }"
           [data]="data"
-          (currLvl)="lvlChanged.emit({ demon: data.name, currLvl: $event })">
+          (currLvl)="lvlChanged.emit({ demon: data.name, currLvl: $event })"
+          [inheritanceLabelMap]="inheritanceLabelMap">
         </tr>
       </tbody>
     </table>
@@ -116,6 +131,7 @@ export class SmtDemonListComponent extends DemonListComponent<Demon> {
   @Input() isEnemy = false;
   @Input() hasCurrLvl = false;
   @Input() lang = 'en';
+  @Input() inheritanceLabelMap = {};
   @Output() lvlChanged = new EventEmitter<{ demon: string, currLvl: number }>();
   searchTags = '';
 }
