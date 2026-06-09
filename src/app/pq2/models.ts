@@ -8,6 +8,7 @@ export interface Demon extends BaseDemon {
   growths: number[];
   ailments: number[];
   code: number;
+  dropOdds: { [drop: string]: number };
 }
 
 export interface Skill extends BaseSkill {
@@ -45,6 +46,7 @@ export interface CompendiumConfig extends BaseComp {
 
   enemyData: any[];
   enemyStats: string[];
+  enemyGrowths: string[];
 
   demonUnlocks: DemonUnlock[];
   normalTable: FusionTableData;

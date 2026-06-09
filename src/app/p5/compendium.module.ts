@@ -12,7 +12,6 @@ import { importSkillRow } from '../pq2/models/skill-importer';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
-import DLC_DATA_JSON from './data/dlc-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import ENEMY_DATA_JSON from './data/enemy-data.json';
 import PARTY_DATA_JSON from './data/party-data.json';
@@ -23,7 +22,6 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 
 import ROY_DEMON_DATA_JSON from './data/roy-demon-data.json';
-import ROY_DLC_DATA_JSON from './data/roy-dlc-data.json';
 import ROY_SKILL_DATA_JSON from './data/roy-skill-data.json';
 import ROY_ENEMY_DATA_JSON from './data/roy-enemy-data.json';
 import ROY_PARTY_DATA_JSON from './data/roy-party-data.json';
@@ -47,12 +45,12 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   const gameDataSets = [
-    [DEMON_DATA_JSON, DLC_DATA_JSON, PARTY_DATA_JSON, FUSION_PREREQS_JSON],
-    [ROY_DEMON_DATA_JSON, ROY_DLC_DATA_JSON, ROY_PARTY_DATA_JSON, ROY_FUSION_PREREQS_JSON]
+    [DEMON_DATA_JSON, PARTY_DATA_JSON, FUSION_PREREQS_JSON],
+    [ROY_DEMON_DATA_JSON, ROY_PARTY_DATA_JSON, ROY_FUSION_PREREQS_JSON]
   ]
 
-  for (const [demons, dlc, parties, prereqs] of gameDataSets) {
-    Object.assign(demons, dlc, parties);
+  for (const [demons, parties, prereqs] of gameDataSets) {
+    Object.assign(demons, parties);
 
     for (const [name, demon] of Object.entries(demons)) {
       demon['code'] = 1;
@@ -85,8 +83,11 @@ function createCompConfig(): CompendiumConfigSet {
         .map(x => 64 < allAilments.charCodeAt(x) && allAilments.charCodeAt(x) < 96 ? '_' : '-')
         .join('');
       enemy['area'] = enemy['area'] || [enemy['areas']];
-      enemy['stats'] = enemy['stats'].slice(0, 2);
-      enemy['drops'] = [enemy['material'] || '-', enemy['armor'] || '-', enemy['card'] || '-'].filter(d => d !== '-');
+      enemy['steps'] = enemy.stats.slice(2);
+      enemy['stats'] = [enemy.exp, enemy.yen || enemy.price, enemy.stats[0], enemy.stats[1]];
+      enemy['drops'] = ['material', 'armor', 'card'].reduce((acc, k) => {
+        if (enemy[k] && enemy[k] !== '-') { acc[enemy[k]] = 0; } return acc;
+      }, {});
     }
   }
 
@@ -109,7 +110,7 @@ function createCompConfig(): CompendiumConfigSet {
       lang: 'en',
       races,
       raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-      appCssClasses: ['p5'],
+      appCssClasses: ['perps2', 'p5'],
 
       skillData: skillDatas.slice(0, 1),
       skillElems,
@@ -125,7 +126,8 @@ function createCompConfig(): CompendiumConfigSet {
 
       demonUnlocks: DEMON_UNLOCKS_JSON,
       enemyData: [ENEMY_DATA_JSON],
-      enemyStats: ['HP', 'MP'],
+      enemyStats: ['EXP', 'Yen', 'HP', 'MP'],
+      enemyGrowths: COMP_CONFIG_JSON.baseStats,
 
       normalTable: FUSION_CHART_JSON,
       elementTable: ELEMENT_CHART_JSON,
@@ -147,7 +149,6 @@ function createCompConfig(): CompendiumConfigSet {
   }
 
   compConfigs.p5r.appTitle = 'Persona 5 Royal';
-  compConfigs.p5r.appCssClasses = ['p5', 'p5r'];
   compConfigs.p5r.settingsKey = 'p5r-fusion-tool-settings';
   compConfigs.p5r.demonData = [ROY_DEMON_DATA_JSON];
   compConfigs.p5r.enemyData = [ROY_ENEMY_DATA_JSON];

@@ -25,7 +25,7 @@ import Translations from '../data/translations.json';
           <tr>
             <td *ngIf="price" [attr.rowSpan]="growths.length">{{ price }}</td>
             <td *ngFor="let stat of stats">{{ stat }}</td>
-            <td *ngIf="inherits" [attr.rowSpan]="growths.length"><div class="element-icon i{{ inherits }}">{{ inherits }}</div></td>
+            <td *ngIf="inherits" [attr.rowSpan]="growths.length"><div class="element-icon inherit-icon i{{ inherits }}">{{ inherits }}</div></td>
             <ng-content></ng-content>
           </tr>
           <tr *ngIf="growths.length">

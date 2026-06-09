@@ -21,7 +21,7 @@ import { FusionDataService } from '../fusion-data.service';
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
         [growths]="demon.growths"
-        [inherits]="demon.inherits">
+        [inherits]="compConfig.inheritElems.length ? demon.inherits : 0">
       </app-demon-stats>
       <app-demon-resists *ngIf="compConfig.hasDemonResists"
         [lang]="lang"

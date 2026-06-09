@@ -1,66 +1,66 @@
 .smt4 div.element-icon.thr,
-.smt4 div.element-icon.phy { background-image: url('../../../assets/images/elem-sprites.svg#phy'); }
-.smt4 div.element-icon.cla { background-image: url('../../../assets/images/elem-sprites.svg#gun'); }
-.smt4 div.element-icon.bit { background-image: url('../../../assets/images/elem-sprites.svg#ear'); }
-.smt4 div.element-icon.wea { background-image: url('../../../assets/images/elem-sprites.svg#swo'); }
-.smt4 div.element-icon.mou { background-image: url('../../../assets/images/weapon-sprites.svg#rus'); }
-.smt4 div.element-icon.gun { background-image: url('../../../assets/images/elem-sprites.svg#gun'); }
-.smt4 div.element-icon.fir { background-image: url('../../../assets/images/elem-sprites.svg#fir'); }
-.smt4 div.element-icon.ice { background-image: url('../../../assets/images/elem-sprites.svg#ice'); }
-.smt4 div.element-icon.ele { background-image: url('../../../assets/images/elem-sprites.svg#ele'); }
-.smt4 div.element-icon.for { background-image: url('../../../assets/images/elem-sprites.svg#for'); }
-.smt4 div.element-icon.win { background-image: url('../../../assets/images/elem-sprites.svg#win'); }
-.smt4 div.element-icon.eye { background-image: url('../../../assets/images/elem-sprites.svg#per-alm'); }
+.smt4 div.element-icon.phy { background-image: var(--icon-elem-phy); }
+.smt4 div.element-icon.cla { background-image: var(--icon-elem-gun); }
+.smt4 div.element-icon.bit { background-image: var(--icon-elem-ear); }
+.smt4 div.element-icon.wea { background-image: var(--icon-elem-swo); }
+.smt4 div.element-icon.mou { background-image: var(--icon-weapon-rus); }
+.smt4 div.element-icon.gun { background-image: var(--icon-elem-gun); }
+.smt4 div.element-icon.fir { background-image: var(--icon-elem-fir); }
+.smt4 div.element-icon.ice { background-image: var(--icon-elem-ice); }
+.smt4 div.element-icon.ele { background-image: var(--icon-elem-ele); }
+.smt4 div.element-icon.for { background-image: var(--icon-elem-for); }
+.smt4 div.element-icon.win { background-image: var(--icon-elem-win); }
+.smt4 div.element-icon.eye { background-image: var(--icon-elem-per-alm); }
 .smt4 div.element-icon.exp,
-.smt4 div.element-icon.lig { background-image: url('../../../assets/images/elem-sprites.svg#lig'); }
+.smt4 div.element-icon.lig { background-image: var(--icon-elem-lig); }
 .smt4 div.element-icon.dea,
 .smt4 div.element-icon.mys,
 .smt4 div.element-icon.rui,
-.smt4 div.element-icon.dar { background-image: url('../../../assets/images/elem-sprites.svg#smt-dar'); }
+.smt4 div.element-icon.dar { background-image: var(--icon-elem-smt-dar); }
 .smt4 div.element-icon.ail,
-.smt4 div.element-icon.min { background-image: url('../../../assets/images/elem-sprites.svg#per-dar'); }
-.smt4 div.element-icon.cur { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
-.smt4 div.element-icon.ner { background-image: url('../../../assets/images/elem-sprites.svg#paralyze'); }
-.smt4 div.element-icon.rec { background-image: url('../../../assets/images/elem-sprites.svg#smt-rec'); }
+.smt4 div.element-icon.min { background-image: var(--icon-elem-per-dar); }
+.smt4 div.element-icon.cur { background-image: var(--icon-elem-poison); }
+.smt4 div.element-icon.ner { background-image: var(--icon-elem-paralyze); }
+.smt4 div.element-icon.rec { background-image: var(--icon-elem-smt-rec); }
 .smt4 div.element-icon.alp,
-.smt4 div.element-icon.alm { background-image: url('../../../assets/images/elem-sprites.svg#smt-alm'); }
+.smt4 div.element-icon.alm { background-image: var(--icon-elem-smt-alm); }
 .smt4 div.element-icon.com,
-.smt4 div.element-icon.sup { background-image: url('../../../assets/images/elem-sprites.svg#smt-sup'); }
-.smt4 div.element-icon.pas { background-image: url('../../../assets/images/elem-sprites.svg#smt-pas'); }
-.smt4 div.element-icon.sab { background-image: url('../../../assets/images/elem-sprites.svg#smt-sab'); }
+.smt4 div.element-icon.sup { background-image: var(--icon-elem-smt-sup); }
+.smt4 div.element-icon.pas { background-image: var(--icon-elem-smt-pas); }
+.smt4 div.element-icon.sab { background-image: var(--icon-elem-smt-sab); }
 .smt4 div.element-icon.aut,
 .smt4 div.element-icon.rac,
 .smt4 div.element-icon.inv,
 .smt4 div.element-icon.tal,
-.smt4 div.element-icon.inn { background-image: url('../../../assets/images/elem-sprites.svg#smt-inn'); }
+.smt4 div.element-icon.inn { background-image: var(--icon-elem-smt-inn); }
 .smt4 div.element-icon.oth,
 .smt4 div.element-icon.non,
-.smt4 div.element-icon.spe { background-image: url('../../../assets/images/elem-sprites.svg#smt-spe'); }
+.smt4 div.element-icon.spe { background-image: var(--icon-elem-smt-spe); }
 .smt4 div.element-icon.lif { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ctext fill='violet' x='12' y='18' text-anchor='middle'%3EHP%3C/text%3E%3C/svg%3E"); }
 .smt4 div.element-icon.man { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ctext fill='cyan' x='12' y='18' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E"); }
-.smt4 div.element-icon.mai { background-image: url('../../../assets/images/weapon-sprites.svg#whi'); }
+.smt4 div.element-icon.mai { background-image: var(--icon-weapon-whi); }
 .smt4 div.element-icon.non { background-image: none }
 
-.smt4 div.ailment-icon.fre { background-image: url('../../../assets/images/elem-sprites.svg#ice'); }
-.smt4 div.ailment-icon.sho { background-image: url('../../../assets/images/elem-sprites.svg#ele'); }
-.smt4 div.ailment-icon.ham { background-image: url('../../../assets/images/elem-sprites.svg#lig'); }
-.smt4 div.ailment-icon.mud { background-image: url('../../../assets/images/elem-sprites.svg#smt-dar'); }
-.smt4 div.ailment-icon.poi { background-image: url('../../../assets/images/elem-sprites.svg#poison'); }
+.smt4 div.ailment-icon.fre { background-image: var(--icon-elem-ice); }
+.smt4 div.ailment-icon.sho { background-image: var(--icon-elem-ele); }
+.smt4 div.ailment-icon.ham { background-image: var(--icon-elem-lig); }
+.smt4 div.ailment-icon.mud { background-image: var(--icon-elem-smt-dar); }
+.smt4 div.ailment-icon.poi { background-image: var(--icon-elem-poison); }
 .smt4 div.ailment-icon.bin,
-.smt4 div.ailment-icon.par { background-image: url('../../../assets/images/elem-sprites.svg#paralyze'); }
-.smt4 div.ailment-icon.sto { background-image: url('../../../assets/images/ailment-sprites.svg#stone'); }
-.smt4 div.ailment-icon.str { background-image: url('../../../assets/images/elem-sprites.svg#smt-spe'); }
-.smt4 div.ailment-icon.sle { background-image: url('../../../assets/images/ailment-sprites.svg#sleep'); }
-.smt4 div.ailment-icon.cha { background-image: url('../../../assets/images/ailment-sprites.svg#charm'); }
-.smt4 div.ailment-icon.mut { background-image: url('../../../assets/images/ailment-sprites.svg#mute'); }
-.smt4 div.ailment-icon.bom { background-image: url('../../../assets/images/elem-sprites.svg#nuk'); }
+.smt4 div.ailment-icon.par { background-image: var(--icon-elem-paralyze); }
+.smt4 div.ailment-icon.sto { background-image: var(--icon-ailment-stone); }
+.smt4 div.ailment-icon.str { background-image: var(--icon-elem-smt-spe); }
+.smt4 div.ailment-icon.sle { background-image: var(--icon-ailment-sleep); }
+.smt4 div.ailment-icon.cha { background-image: var(--icon-ailment-charm); }
+.smt4 div.ailment-icon.mut { background-image: var(--icon-ailment-mute); }
+.smt4 div.ailment-icon.bom { background-image: var(--icon-elem-nuk); }
 .smt4 div.ailment-icon.sic,
-.smt4 div.ailment-icon.fea { background-image: url('../../../assets/images/ailment-sprites.svg#sick'); }
-.smt4 div.ailment-icon.rag { background-image: url('../../../assets/images/ailment-sprites.svg#rage'); }
-.smt4 div.ailment-icon.pan { background-image: url('../../../assets/images/elem-sprites.svg#panic'); }
-.smt4 div.ailment-icon.daz { background-image: url('../../../assets/images/ailment-sprites.svg#enervation'); }
-.smt4 div.ailment-icon.sea { background-image: url('../../../assets/images/elem-sprites.svg#bind'); }
-.smt4 div.ailment-icon.mir { background-image: url('../../../assets/images/ailment-sprites.svg#mirage'); }
+.smt4 div.ailment-icon.fea { background-image: var(--icon-ailment-sick); }
+.smt4 div.ailment-icon.rag { background-image: var(--icon-ailment-rage); }
+.smt4 div.ailment-icon.pan { background-image: var(--icon-elem-panic); }
+.smt4 div.ailment-icon.daz { background-image: var(--icon-ailment-enervation); }
+.smt4 div.ailment-icon.sea { background-image: var(--icon-elem-bind); }
+.smt4 div.ailment-icon.mir { background-image: var(--icon-ailment-mirage); }
 
 .smt4 td.affinity-9 { color: red; }
 .smt4 td.affinity-8 { color: red; }

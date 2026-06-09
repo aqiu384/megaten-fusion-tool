@@ -75,7 +75,7 @@ function createCompConfig(): CompendiumConfig {
 
   return {
     appTitle: 'Persona 5 Strikers',
-    appCssClasses: ['p5'],
+    appCssClasses: ['p5s'],
 
     races,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),

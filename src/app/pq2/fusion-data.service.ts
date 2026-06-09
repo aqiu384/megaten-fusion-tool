@@ -76,6 +76,7 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
       demonUnlocks: translator.translateDemonUnlocks(compConfig.demonUnlocks, lang),
       enemyData: compConfig.enemyData.map(d => translator.translateEnemyData(d, lang)),
       enemyStats: compConfig.enemyStats,
+      enemyGrowths: translator.translateElems(compConfig.enemyGrowths, lang),
 
       normalTable: translator.translateFusionChart(compConfig.normalTable, lang),
       elementTable: translator.translateFusionChart(compConfig.elementTable, lang),

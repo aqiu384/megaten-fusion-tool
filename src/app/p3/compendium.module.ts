@@ -89,8 +89,10 @@ function createCompConfig(): CompendiumConfigSet {
 
   for (const enemies of [VAN_ENEMY_DATA_JSON, ANS_ENEMY_DATA_JSON]) {
     for (const [name, enemy] of Object.entries(enemies)) {
-      enemy['stats'] = enemy['stats'].slice(0, 2);
-      enemy['drops'] = enemy['gem'] ? [enemy['gem']] : [];
+      enemy['steps'] = enemy.stats.slice(2);
+      enemy['stats'] = [enemy.exp, enemy.stats[0], enemy.stats[1]];
+      enemy['drops'] = {};
+      if (enemy['gem']) { enemy['drops'][enemy['gem']] = 0 };
     }
   }
 
@@ -110,7 +112,7 @@ function createCompConfig(): CompendiumConfigSet {
       lang: 'en',
       races,
       raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-      appCssClasses: ['p3'],
+      appCssClasses: ['perps2', 'p3'],
 
       skillData: skillDatas.slice(0, 1),
       skillElems,
@@ -126,7 +128,8 @@ function createCompConfig(): CompendiumConfigSet {
 
       demonUnlocks: FES_DEMON_UNLOCKS_JSON,
       enemyData: [VAN_ENEMY_DATA_JSON],
-      enemyStats: ['HP', 'MP'],
+      enemyStats: ['EXP', 'HP', 'MP'],
+      enemyGrowths: COMP_CONFIG_JSON.baseStats,
 
       normalTable: FES_FUSION_CHART_JSON,
       elementTable: { elems: [], races: [], table: [] },

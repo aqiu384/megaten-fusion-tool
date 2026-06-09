@@ -13,7 +13,7 @@ import { CompendiumConfig } from '../models';
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="compConfig.baseStats"
       [resistHeaders]="compConfig.resistElems"
-      [inheritOrder]="compConfig.elemOrder"
+      [inheritOrder]="compConfig.inheritSkills ? compConfig.elemOrder : null"
       [rowData]="demons | async">
     </app-smt-demon-list>
   `

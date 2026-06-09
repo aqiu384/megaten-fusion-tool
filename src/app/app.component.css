@@ -169,3 +169,72 @@ tbody tr.exception td, tbody tr.unique td {
 tbody tr.hidden {
   display: none;
 }
+
+/* Shared skill element icons */
+:root {
+  --icon-elem-swo: url('../assets/images/elem-sprites.svg#swo');
+  --icon-elem-phy: url('../assets/images/elem-sprites.svg#phy');
+  --icon-elem-gun: url('../assets/images/elem-sprites.svg#gun');
+  --icon-elem-fir: url('../assets/images/elem-sprites.svg#fir');
+  --icon-elem-wat: url('../assets/images/elem-sprites.svg#wat');
+  --icon-elem-ice: url('../assets/images/elem-sprites.svg#ice');
+  --icon-elem-ele: url('../assets/images/elem-sprites.svg#ele');
+  --icon-elem-for: url('../assets/images/elem-sprites.svg#for');
+  --icon-elem-win: url('../assets/images/elem-sprites.svg#win');
+  --icon-elem-ear: url('../assets/images/elem-sprites.svg#ear');
+  --icon-elem-psy: url('../assets/images/elem-sprites.svg#psy');
+  --icon-elem-nuk: url('../assets/images/elem-sprites.svg#nuk');
+  --icon-elem-lig: url('../assets/images/elem-sprites.svg#lig');
+  --icon-elem-smt-dar: url('../assets/images/elem-sprites.svg#smt-dar');
+  --icon-elem-per-dar: url('../assets/images/elem-sprites.svg#per-dar');
+  --icon-elem-smt-alm: url('../assets/images/elem-sprites.svg#smt-alm');
+  --icon-elem-per-alm: url('../assets/images/elem-sprites.svg#per-alm');
+  --icon-elem-per-ail: url('../assets/images/elem-sprites.svg#per-ail');
+  --icon-elem-smt-rec: url('../assets/images/elem-sprites.svg#smt-rec');
+  --icon-elem-per-rec: url('../assets/images/elem-sprites.svg#per-rec');
+  --icon-elem-smt-sup: url('../assets/images/elem-sprites.svg#smt-sup');
+  --icon-elem-per-sup: url('../assets/images/elem-sprites.svg#per-sup');
+  --icon-elem-smt-spe: url('../assets/images/elem-sprites.svg#smt-spe');
+  --icon-elem-smt-sab: url('../assets/images/elem-sprites.svg#smt-sab');
+  --icon-elem-per-tra: url('../assets/images/elem-sprites.svg#per-tra');
+  --icon-elem-smt-pas: url('../assets/images/elem-sprites.svg#smt-pas');
+  --icon-elem-smt-inn: url('../assets/images/elem-sprites.svg#smt-inn');
+  --icon-elem-per-pas: url('../assets/images/elem-sprites.svg#per-pas');
+  --icon-elem-poison: url('../assets/images/elem-sprites.svg#poison');
+  --icon-elem-paralyze: url('../assets/images/elem-sprites.svg#paralyze');
+  --icon-elem-panic: url('../assets/images/elem-sprites.svg#panic');
+  --icon-elem-bind: url('../assets/images/elem-sprites.svg#bind');
+  --icon-elem-hex: url('../assets/images/elem-sprites.svg#hex');
+  --icon-elem-s-bind: url('../assets/images/elem-sprites.svg#s-bind');
+  --icon-elem-m-bind: url('../assets/images/elem-sprites.svg#m-bind');
+  --icon-elem-a-bind: url('../assets/images/elem-sprites.svg#a-bind');
+
+  --icon-ailment-brainwash: url('../assets/images/ailment-sprites.svg#brainwash');
+  --icon-ailment-charm: url('../assets/images/ailment-sprites.svg#charm');
+  --icon-ailment-distress: url('../assets/images/ailment-sprites.svg#distress');
+  --icon-ailment-dizzy: url('../assets/images/ailment-sprites.svg#dizzy');
+  --icon-ailment-down: url('../assets/images/ailment-sprites.svg#down');
+  --icon-ailment-enervation: url('../assets/images/ailment-sprites.svg#enervation');
+  --icon-ailment-exhaustion: url('../assets/images/ailment-sprites.svg#exhaustion');
+  --icon-ailment-fear: url('../assets/images/ailment-sprites.svg#fear');
+  --icon-ailment-hieroglyphein: url('../assets/images/ailment-sprites.svg#hieroglyphein');
+  --icon-ailment-mirage: url('../assets/images/ailment-sprites.svg#mirage');
+  --icon-ailment-mute: url('../assets/images/ailment-sprites.svg#mute');
+  --icon-ailment-rage: url('../assets/images/ailment-sprites.svg#rage');
+  --icon-ailment-sick: url('../assets/images/ailment-sprites.svg#sick');
+  --icon-ailment-sleep: url('../assets/images/ailment-sprites.svg#sleep');
+  --icon-ailment-stone: url('../assets/images/ailment-sprites.svg#stone');
+
+  --icon-weapon-s2h: url('../assets/images/weapon-sprites.svg#s2h');
+  --icon-weapon-spr: url('../assets/images/weapon-sprites.svg#spr');
+  --icon-weapon-axe: url('../assets/images/weapon-sprites.svg#axe');
+  --icon-weapon-whi: url('../assets/images/weapon-sprites.svg#whi');
+  --icon-weapon-thr: url('../assets/images/weapon-sprites.svg#thr');
+  --icon-weapon-arr: url('../assets/images/weapon-sprites.svg#arr');
+  --icon-weapon-fis: url('../assets/images/weapon-sprites.svg#fis');
+  --icon-weapon-rus: url('../assets/images/weapon-sprites.svg#rus');
+  --icon-weapon-han: url('../assets/images/weapon-sprites.svg#han');
+  --icon-weapon-aut: url('../assets/images/weapon-sprites.svg#aut');
+  --icon-weapon-sho: url('../assets/images/weapon-sprites.svg#sho');
+  --icon-weapon-rif: url('../assets/images/weapon-sprites.svg#rif');
+}

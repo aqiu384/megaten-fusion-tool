@@ -9,23 +9,24 @@ import { Demon, CompendiumConfig } from '../models';
   template: `
     <app-demon-stats
       [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
-      [statHeaders]="compConfig.enemyStats"
-      [stats]="demon.stats">
+      [statHeaders]="compConfig.enemyStats.concat(compConfig.enemyGrowths)"
+      [fusionHeaders]="['Location']"
+      [stats]="demon.stats.concat(demon.growths)">
+      <td>{{ demon.area }}</td>
     </app-demon-stats>
-    <table class="entry-table">
+    <table class="entry-table" *ngIf="demon.drop !== '-'">
       <thead>
         <tr>
-          <th colspan="2" class="title">Appearances</th>
+          <th colspan="2" class="title">Drops</th>
         </tr>
         <tr>
-          <th>Areas</th>
-          <th>Drops</th>
+          <th colspan="2">Item</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>{{ demon.area }}</td>
-          <td>{{ demon.drop }}</td>
+        <tr *ngFor="let drop of demon.dropOdds | keyvalue">
+          <td>{{ drop.key }}</td>
+          <td *ngIf="drop.value">{{ drop.value % 1000 < 100 ? drop.value % 1000 : 100 }}%{{ drop.value <= 100 ? '' : '*' }}</td>
         </tr>
       </tbody>
     </table>

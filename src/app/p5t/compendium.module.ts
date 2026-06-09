@@ -41,7 +41,7 @@ function createCompConfig(): CompendiumConfigSet {
     demon['inherit'] = 'alm';
     demon['skills'] = {};
     demon['skills'][demon.skill] = 0.1;
-    demon.steps = demon.steps.map(s => s * 100);
+    demon.steps = demon.steps.map(s => Math.round(s * 100));
   }
 
   const COST_MP = 5 << 10;
@@ -70,7 +70,7 @@ function createCompConfig(): CompendiumConfigSet {
     lang: 'en',
     races,
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    appCssClasses: ['p5t'],
+    appCssClasses: ['perps2', 'p5t'],
 
     skillData: [skillData],
     skillElems,
@@ -86,6 +86,7 @@ function createCompConfig(): CompendiumConfigSet {
 
     enemyData: [],
     enemyStats: ['HP', 'Atk', 'Def'],
+    enemyGrowths: [],
 
     demonUnlocks: DEMON_UNLOCKS_JSON,
     normalTable: FUSION_CHART_JSON,

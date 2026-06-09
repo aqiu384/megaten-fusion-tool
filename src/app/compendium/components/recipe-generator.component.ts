@@ -67,13 +67,11 @@ type SkillLookup = { [key: string]: Skill[]; }
         </tr>
       </table>
       <table class="entry-table" style="width: 70%;">
+        <tr><th colspan="7" class="title">{{ msgs.IncludeIngredients | translateComp:lang }}</th></tr>
         <tr>
-          <th colspan="7" class="title">Ingredients</th>
-        </tr>
-        <tr>
-          <th colspan="3">Left Chain Target</th>
+          <th colspan="3">{{ msgs.LeftChain | translateComp:lang }}</th>
           <th></th>
-          <th colspan="3">Right Chain Target</th>
+          <th colspan="3">{{ msgs.RightChain | translateComp:lang }}</th>
         </tr>
         <tr>
           <td colspan="3">
@@ -198,9 +196,9 @@ export class RecipeGeneratorComponent implements OnChanges, OnDestroy {
     }
 
     this.form = this.fb.group({
-      demonT: '-',
-      demonL: '-',
-      demonR: '-',
+      demonT: this.blankDemon,
+      demonL: this.blankDemon,
+      demonR: this.blankDemon,
       ingreds: this.fb.array(ingreds),
     });
   }

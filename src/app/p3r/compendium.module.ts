@@ -60,8 +60,9 @@ function createCompConfig(): CompendiumConfigSet {
   for (const enemies of [ENEMY_DATA_JSON, AEG_ENEMY_DATA_JSON]) {
     const enemyData = {};
     for (const [name, enemy] of Object.entries(enemies)) {
-      enemy['stats'] = enemy['stats'].slice(0, 2);
-      enemy['drops'] = Object.keys(enemy['dodds'] || {});
+      enemy['steps'] = enemy.stats.slice(2);
+      enemy['stats'] = [enemy.exp, enemy.stats[0], enemy.stats[1]];
+      enemy['drops'] = enemy['dodds'] || {};
       if (!enemy['boss']) { enemyData[name] = enemy; }
     }
     enemyDatas.push(enemyData);
@@ -86,7 +87,7 @@ function createCompConfig(): CompendiumConfigSet {
       lang: 'en',
       races,
       raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-      appCssClasses: ['p3r'],
+      appCssClasses: ['perps2', 'p3r'],
 
       skillData: skillDatas.slice(0, 1),
       skillElems,
@@ -102,7 +103,8 @@ function createCompConfig(): CompendiumConfigSet {
 
       demonUnlocks: DEMON_UNLOCKS_JSON,
       enemyData: enemyDatas.slice(0, 1),
-      enemyStats: ['HP', 'MP'],
+      enemyStats: ['EXP', 'HP', 'MP'],
+      enemyGrowths: COMP_CONFIG_JSON.baseStats,
 
       normalTable: FUSION_CHART_JSON,
       elementTable: { elems: [], races: [], table: [] },

@@ -73,6 +73,7 @@ export class Compendium implements ICompendium {
           ailments: hasDemonResists ? codifyResists(json['ailments'], blankAilments, json['ailmods']) : [],
           skills:   json['skills'],
           drop:     json['item'] || '',
+          dropOdds: {},
           code:     json['code'] || 0,
           fusion:   json['fusion'] || 'normal',
           prereq:   json['prereq'] || '',
@@ -115,7 +116,8 @@ export class Compendium implements ICompendium {
 
     for (const enemyDataJson of this.compConfig.enemyData) {
       for (const [name, json] of Object.entries(enemyDataJson)) {
-        const drop = json['drops']?.join(', ') || '-';
+        const dropOdds = json['drops'] || {};
+        const drop = Object.keys(dropOdds).join(', ') || '-';
 
         enemies[name] = {
           name,
@@ -125,22 +127,20 @@ export class Compendium implements ICompendium {
           price:    0,
           inherits: 0,
           stats:    json['stats'],
-          growths:  [],
+          growths:  json['steps'] || [],
           resists:  codifyResists(json['resists'], blankResists, json['resmods']),
           ailments: codifyResists(json['ailments'], blankAilments, json['ailmods']),
           skills:   json['skills'].reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
           area:     json['area'],
           drop,
+          dropOdds,
           code:     0,
           fusion:   'normal',
           isEnemy:  true,
           searchTags: [name, json['race'], json['area'], drop].join(',').toLocaleLowerCase()
         }
 
-        if (enemies[name].drop) {
-          const drops = enemies[name].drop.split(', ');
-          const drop = drops[drops.length - 1];
-
+        for (const drop of Object.keys(dropOdds)) {
           if (skills[drop]) {
             skills[drop].transfer.unshift({ demon: json['persona'], level: 5275 });
           }

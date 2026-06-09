@@ -20,7 +20,7 @@ import Translations from  '../../compendium/data/translations.json';
       [raceOrder]="compConfig.raceOrder"
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
-      [inheritOrder]="inheritOrder"
+      [inheritOrder]="compConfig.inheritElems.length > 0 ? inheritOrder : null"
       [rowData]="demons | async">
     </app-smt-demon-list>
   `
