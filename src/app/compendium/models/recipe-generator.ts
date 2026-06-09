@@ -2,11 +2,95 @@ import { Demon, FusionRecipe, Compendium, FusionChart, SquareChart, RecipeGenera
 import { toFusionPair, toFusionPairResult, toDemonTrio } from './conversions';
 
 type SkillRef = { [skill: string]: string };
+type LeftRightRef = { [left: string]: string[] };
+type LeftRightConfig = { result: string; targetL: string, targetR: string; ingredLs: SkillRef, ingredRs: SkillRef }
+
+export function createLeftRightCombos(demon: string, comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): LeftRightRef {
+  const { fissionCalculator, triFissionCalculator } = recipeConfig;
+  const { normalChart } = squareChart;
+  const triExclusiveRaces = normalChart.races
+    .filter(r => Object.keys(normalChart.getRaceFissions(r)).length === 0)
+    .reduce((acc, i) => { acc[i] = 1; return acc; }, {});
+
+  const stepR = comp.getSpecialNameEntries(demon);
+  if (stepR.length > 1) {
+    return stepR.reduce((acc, name1) => { acc[name1] = stepR.filter(n => n !== name1); return acc; }, {});
+  }
+
+  if (triExclusiveRaces[comp.getDemon(demon).race] && triFissionCalculator) {
+    const trios: { [name1: string]: { [name2: string]: number } } = {};
+    for (const { d1, d2, d3 } of triFissionCalculator.getFusions(demon, comp, squareChart).map(p => toDemonTrio(p, comp))) {
+      const fusable = [d1, d2, d3].filter(d => !triExclusiveRaces[d.race]);
+      if (fusable.length < 2) { continue; }
+      const name1 = fusable[0].name;
+      const name2 = fusable[1].name;
+      if (!trios[name1]) { trios[name1] = {}; }
+      if (!trios[name2]) { trios[name2] = {}; }
+      trios[name1][name2] = 1;
+      trios[name2][name1] = 1;
+    }
+
+    return Object.entries(trios).reduce((acc, [k, v]) => { acc[k] = Object.keys(v); return acc; }, {});
+  }
+
+  const combos: LeftRightRef = {};
+  for (const { name1, race1, name2, race2 } of fissionCalculator.getFusions(demon, comp, normalChart).map(p => toFusionPair(p, comp))) {
+    if (triExclusiveRaces[race1] && comp.getSpecialNameEntries(name1).length < 2 ||
+        triExclusiveRaces[race2] && comp.getSpecialNameEntries(name2).length < 2) { continue; }
+    if (!combos[name1]) { combos[name1] = []; }
+    if (!combos[name2]) { combos[name2] = []; }
+    combos[name1].push(name2);
+    combos[name2].push(name1);
+  }
+
+  return combos;
+}
+
+export function createLeftRightRecipe(lrConfig: LeftRightConfig, comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
+  const { fissionCalculator, inheritElems, triFissionCalculator } = recipeConfig;
+  const { normalChart } = squareChart;
+  const { result, targetL, targetR, ingredLs, ingredRs } = lrConfig;
+  const newIngredLs = Object.entries(ingredLs).reduce((acc, [skill, demon]) => { if (demon != targetL) { acc[skill] = demon; } return acc; }, {});
+  const newIngredRs = Object.entries(ingredRs).reduce((acc, [skill, demon]) => { if (demon != targetR) { acc[skill] = demon; } return acc; }, {});
+
+  const inheritLs = canInheritIngreds(newIngredLs, comp, inheritElems);
+  const inheritRs = canInheritIngreds(newIngredRs, comp, inheritElems);
+  const ingredLookup = [targetL, targetR].reduce((acc, s) => { acc[s] = 1; return acc; }, {});
+
+  const chain1 = createFusionFull(inheritLs.map(i => i.demon), inheritLs.map(i => i.inherit), targetL, comp, squareChart.normalChart, recipeConfig);
+  const chain2 = createFusionFull(inheritRs.map(i => i.demon), inheritRs.map(i => i.inherit), targetR, comp, squareChart.normalChart, recipeConfig);
+  let stepR = comp.getSpecialNameEntries(result);
+
+  if (stepR.length < 2) {
+    const pairR = fissionCalculator
+      .getFusions(result, comp, normalChart)
+      .find(p => ingredLookup[p.name1] && ingredLookup[p.name2]);
+    if (pairR) { stepR = [pairR.name1, pairR.name2]; }
+  }
+
+  if (stepR.length < 2 && triFissionCalculator) {
+    const pairR = triFissionCalculator
+      .getFusions(result, comp, squareChart)
+      .find(({ name1, name2, name3 }) => 1 < [name1, name2, name3].reduce((acc, n) => acc + (ingredLookup[n] || 0), 0))
+    if (pairR) { stepR = [pairR.name1, pairR.name2, pairR.name3]; }
+  }
+
+  return {
+    skills: Object.assign({}, ingredLs, ingredRs),
+    chain1,
+    chain2,
+    stepR,
+    result
+  }
+}
 
 export function createSkillsRecipe(demon: string, ingreds: string[], skills: SkillRef, comp: Compendium, squareChart: SquareChart, recipeConfig: RecipeGeneratorConfig): FusionRecipe {
-  const { fissionCalculator, inheritElems, restrictInherits, triExclusiveRaces, triFissionCalculator } = recipeConfig;
+  const { fissionCalculator, inheritElems, restrictInherits, triFissionCalculator } = recipeConfig;
   const { normalChart } = squareChart;
   const demonR = comp.getDemon(demon);
+  const triExclusiveRaces = normalChart.races
+    .filter(r => Object.keys(normalChart.getRaceFissions(r)).length === 0)
+    .reduce((acc, i) => { acc[i] = 1; return acc; }, {});
 
   const skillRef: SkillRef = {};
 
@@ -20,16 +104,16 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
   const canInheritI = canInheritCode(skillsI.map(s => s.inherit), inheritElems);
   let stepR = comp.getSpecialNameEntries(demon);
 
-  if (stepR.length < 2 && triExclusiveRaces.includes(demonR.race)) {
+  if (stepR.length < 2 && triExclusiveRaces[demonR.race]) {
     const trioR = triFissionCalculator
       .getFusions(demon, comp, squareChart)
       .map(p => toDemonTrio(p, comp))
       .sort((a, b) => a.price - b.price)
       .find(t =>
         (canInheritI & (t.d1.inherits | t.d2.inherits)) === canInheritI &&
-        !triExclusiveRaces.includes(t.d1.race) &&
-        !triExclusiveRaces.includes(t.d2.race) &&
-        !triExclusiveRaces.includes(t.d3.race)
+        !triExclusiveRaces[t.d1.race] &&
+        !triExclusiveRaces[t.d2.race] &&
+        !triExclusiveRaces[t.d3.race]
       );
     if (trioR) { stepR = [trioR.d1.name, trioR.d2.name, trioR.d3.name]; }
   }
@@ -43,8 +127,8 @@ export function createSkillsRecipe(demon: string, ingreds: string[], skills: Ski
         (canInheritI & (comp.getDemon(p.name1).inherits | comp.getDemon(p.name2).inherits)) === canInheritI &&
         comp.getDemon(p.name1).fusion !== 'accident' &&
         comp.getDemon(p.name2).fusion !== 'accident' &&
-        !triExclusiveRaces.includes(comp.getDemon(p.name1).race) &&
-        !triExclusiveRaces.includes(comp.getDemon(p.name2).race)
+        !triExclusiveRaces[comp.getDemon(p.name1).race] &&
+        !triExclusiveRaces[comp.getDemon(p.name2).race]
       );
     if (pairR) { stepR = [pairR.name1, pairR.name2]; }
   }
@@ -113,6 +197,26 @@ function canInheritChain(includeElems: string[], inheritElems: string[]): number
   return includeElems.map((e, i, a) => canInheritCode(a.slice(0, i + 1), inheritElems));
 }
 
+function canInheritIngreds(skillRef: SkillRef, comp: Compendium, inheritElems: string[]): { demon: string, inherit: number }[] {
+  const ingredInherits: { demon: string, inherit: number }[] = [];
+  const demonLookup: { [demon: string]: string[] } = {};
+
+  for (const [skill, demon] of Object.entries(skillRef)) {
+    if (!demonLookup[demon]) { demonLookup[demon] = []; }
+    demonLookup[demon].push(skill);
+  }
+
+  for (const [i, [demon, snames]] of Object.entries(demonLookup).sort((a, b) => a[1].length - b[1].length).entries()) {
+    const prevCode = i > 0 ? ingredInherits[i - 1].inherit : 0;
+    ingredInherits.push({
+      demon,
+      inherit: prevCode | canInheritCode(snames.map(s => comp.getSkill(s).element), inheritElems)
+    });
+  }
+
+  return ingredInherits;
+}
+
 function divideInheritSkills(leftInherit: number, rightInherit: number, skillInherits: number[], skills: string[]): { left: string[], right: string[] } {
   let left: string[] = [], right: string[] = [];
   const leftElems: number[] = [], rightElems: number[] = [];
@@ -155,6 +259,7 @@ function createFusionFull(ingreds: string[], inheritChain: number[], result: str
 
   if (specIngreds.length !== 0) {
     ingredR = specIngreds.find(d => comp.getSpecialNameEntries(d).length === 0);
+    if (!ingredR) { return []; } // All ingreds are also special fusions
     chain.unshift(specIngreds.filter(d => d !== ingredR).join(' x '));
     chain.unshift(ingredR);
   }

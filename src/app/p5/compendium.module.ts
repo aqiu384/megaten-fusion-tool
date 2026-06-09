@@ -156,7 +156,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p5r.demonUnlocks = ROY_DEMON_UNLOCKS_JSON;
   compConfigs.p5r.normalTable = ROY_FUSION_CHART_JSON;
   compConfigs.p5r.elementTable = ROY_ELEMENT_CHART_JSON;
-  compConfigs.p5r.maxSkillSlots = 9;
+  compConfigs.p5r.maxSkillSlots = 10;
 
   return {
     appTitle: 'Persona 5',

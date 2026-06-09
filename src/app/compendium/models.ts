@@ -205,7 +205,6 @@ export interface RecipeGeneratorConfig {
   inheritElems: string[];
   displayElems: { [elem: string]: string };
   restrictInherits: boolean;
-  triExclusiveRaces: string[];
   triFissionCalculator: TripleCalculator;
   triFusionCalculator: TripleCalculator;
   defaultDemon: string;

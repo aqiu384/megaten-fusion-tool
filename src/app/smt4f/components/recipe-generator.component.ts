@@ -43,7 +43,6 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       inheritElems: compConfig.affinityElems,
       displayElems: translateCompSet(Translations.ElementIcon, this.lang),
       restrictInherits: compConfig.appCssClasses.includes('sh2') || compConfig.appCssClasses.includes('smt3'),
-      triExclusiveRaces: [],
       triFissionCalculator: null,
       triFusionCalculator: null,
       defaultDemon: compConfig.defaultRecipeDemon

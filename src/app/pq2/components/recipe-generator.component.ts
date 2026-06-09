@@ -41,7 +41,6 @@ export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
       inheritElems: compConfig.inheritElems,
       displayElems: translateCompSet(Translations.ElementIcon, this.lang),
       restrictInherits: true,
-      triExclusiveRaces: compConfig.hasTripleFusion ? ['Fool', 'Tower', 'Moon', 'Sun', 'Judgement'] : [],
       triFissionCalculator: this.fusionDataService.triFissionCalculator,
       triFusionCalculator: this.fusionDataService.triFusionCalculator,
       defaultDemon: compConfig.defaultDemon
