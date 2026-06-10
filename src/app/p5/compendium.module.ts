@@ -52,12 +52,10 @@ function createCompConfig(): CompendiumConfigSet {
   for (const [demons, parties, prereqs] of gameDataSets) {
     Object.assign(demons, parties);
 
-    for (const [name, demon] of Object.entries(demons)) {
+    for (const demon of Object.values(demons)) {
       demon['code'] = 1;
-
-      if (demon['itemr']) {
-        demon['item'] = `${demon['item']}, ${demon['itemr']}`;
-      }
+      if (demon['itemr']) { demon['item'] = `${demon['item']}, ${demon['itemr']}`; }
+      if (demon['trait']) { demon['skills'][demon['trait']] = 0; }
     }
 
     for (const [name, prereq] of Object.entries(prereqs)) {
@@ -66,6 +64,7 @@ function createCompConfig(): CompendiumConfigSet {
 
     for (const demon of Object.values(parties)) {
       demon['fusion'] = 'party';
+      if (demon['trait']) { demon['skills'][demon['trait']] = 0; }
     }
   }
 
