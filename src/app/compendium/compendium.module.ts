@@ -61,7 +61,8 @@ import {
   ReslvlToStringLocalePipe,
   ReslvlToColorPipe,
   ResmodToStringPipe,
-  RoundInheritPercentPipe
+  RoundInheritPercentPipe,
+  TranslateElementLabelPipe
 } from './pipes';
 
 @NgModule({
@@ -115,7 +116,8 @@ import {
     ReslvlToStringLocalePipe,
     ReslvlToColorPipe,
     ResmodToStringPipe,
-    RoundInheritPercentPipe
+    RoundInheritPercentPipe,
+    TranslateElementLabelPipe
   ],
   exports: [
     DemonMissingComponent,
@@ -157,7 +159,9 @@ import {
     ReslvlToStringLocalePipe,
     ReslvlToColorPipe,
     ResmodToStringPipe,
-    RoundInheritPercentPipe
+    RoundInheritPercentPipe,
+    TranslateElementLabelPipe
+
   ]
 })
 export class SharedCompendiumModule {

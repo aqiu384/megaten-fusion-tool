@@ -1,10 +1,18 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { translateComp } from './models/translator';
+import { translateComp, translateElementLabel } from './models/translator';
+import { pipe } from 'rxjs';
 
 @Pipe({ name: 'translateComp' })
 export class TranslateCompPipe implements PipeTransform {
   transform(dict: string[], lang: string): string {
     return translateComp(dict, lang);
+  }
+}
+
+@Pipe({ name: 'translateElementLabel' })
+export class TranslateElementLabelPipe implements PipeTransform {
+  transform(element: string, lang: string): string {
+    return translateElementLabel(element, lang);
   }
 }
 

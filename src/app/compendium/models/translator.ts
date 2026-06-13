@@ -8,3 +8,10 @@ export function translateComp(dict: string[], lang: string): string {
 export function translateCompSet(dict: { [word: string]: string[] }, lang: string): { [word: string]: string } {
   return Object.entries(dict).reduce((acc, [k, v]) => { acc[k] = translateComp(v, lang) || k; return acc; }, {});
 }
+
+export function translateElementLabel(element: string, lang: string): string {
+  if ( !Translations.ElementIcon.hasOwnProperty(element) || !Array.isArray(Translations.ElementIcon[element]) ) {
+    return element;
+  }
+  return translateComp(Translations.ElementIcon[element], lang) ?? element;
+}
