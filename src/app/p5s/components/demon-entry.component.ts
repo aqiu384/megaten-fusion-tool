@@ -38,7 +38,7 @@ import { FusionDataService } from '../fusion-data.service';
         </thead>
         <tbody>
           <tr *ngFor="let data of comboSkills">
-            <td><div class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
+            <td><div [title]="data.skill.element | translateElementLabel:lang" class="element-icon {{ data.skill.element }}">{{ data.skill.element }}</div></td>
             <td>{{ data.skill.name }}</td>
             <td>{{ data.skill.effect }}</td>
             <td>{{ data.skill.target }}</td>
@@ -80,6 +80,7 @@ export class DemonEntryComponent implements OnChanges {
   @Input() demon: Demon;
   @Input() compendium: Compendium;
   @Input() compConfig: CompendiumConfig;
+  @Input() lang = 'en';
   comboSkills: { skill: Skill, combo: string }[];
 
   ngOnChanges() {
