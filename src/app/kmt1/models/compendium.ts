@@ -1,5 +1,6 @@
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { GameCurrency } from '../../compendium/constants';
 
 type NumDict = { [name: string]: number };
 
@@ -148,6 +149,8 @@ export class Compendium implements ICompendium {
   get allSkills(): Skill[] {
     return this._allSkills;
   }
+
+  get inGameCurrencySymbol(){ return GameCurrency.MACCA; }
 
   get specialDemons(): Demon[] {
     return Object.keys(this.specialRecipes).map(name => this.demons[name]);

@@ -16,7 +16,8 @@ import { CurrentDemonService } from '../../compendium/current-demon.service';
       [title]="'Result = Lvl ' + compendium.getDemon(currentDemon).currLvl + ' ' + currentDemon +  ' x Ingredient 2 x Ingredient 3'"
       [raceOrder]="chart.normalChart.raceOrder"
       [leftHeader]="'Result'"
-      [rowData]="fusionTrios">
+      [rowData]="fusionTrios"
+      [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
     </app-fusion-trio-table>
   `
 })

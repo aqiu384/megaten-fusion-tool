@@ -15,7 +15,8 @@ import { CurrentDemonService } from '../../compendium/current-demon.service';
     <app-fusion-trio-table
       [title]="'Ingredient 1 x Ingredient 2 x Ingredient 3 = ' + currentDemon"
       [raceOrder]="chart.normalChart.raceOrder"
-      [rowData]="fissionTrios">
+      [rowData]="fissionTrios"
+      [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
     </app-fusion-trio-table>
   `
 })
