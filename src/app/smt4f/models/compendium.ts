@@ -2,6 +2,7 @@ import { Compendium as ICompendium, NamePair } from '../../compendium/models';
 import { Demon, Skill, CompendiumConfig } from '../models';
 import { Toggles } from '../../compendium/models/fusion-settings';
 import { toMitamaNamePairs } from '../../compendium/models/conversions';
+import { GameCurrency } from '../../compendium/constants';
 
 type NumDict = { [name: string]: number };
 type StringDict = { [name: string]: string };
@@ -286,6 +287,8 @@ export class Compendium implements ICompendium {
   get allSkills(): Skill[] {
     return this._allSkills;
   }
+
+  get inGameCurrencySymbol() { return GameCurrency.MACCA; }
 
   get specialDemons(): Demon[] {
     return Object.keys(this.specialRecipes).map(name => this.demons[name]);

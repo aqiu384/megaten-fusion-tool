@@ -18,7 +18,7 @@ import Translations from '../data/translations.json';
       </thead>
       <tbody>
         <tr *ngFor="let data of rowData">
-          <td>{{ data.price }}</td>
+          <td>{{ inGameCurrencySymbol + (data.price | number:'1.0-0') }}</td>
           <td>{{ data.race1 }}</td>
           <td>{{ data.lvl1 | lvlToNumber }}</td>
           <td><a routerLink="{{ baseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
@@ -33,5 +33,6 @@ export class FusionEntryTableComponent {
   @Input() rowData: FusionEntry[];
   @Input() isFusion = false;
   @Input() lang = 'en';
+  @Input() inGameCurrencySymbol: string;
   msgs = Translations.FusionPairTableComponent;
 }

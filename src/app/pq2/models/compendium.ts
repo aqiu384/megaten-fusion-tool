@@ -1,4 +1,5 @@
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { GameCurrency } from '../../compendium/constants';
 import { Demon, DecodedDemon, Skill, CompendiumConfig } from '../models';
 import { Toggles } from '../../compendium/models/fusion-settings';
 
@@ -262,6 +263,8 @@ export class Compendium implements ICompendium {
   get allSkills(): Skill[] {
     return this._allSkills;
   }
+
+  get inGameCurrencySymbol() { return GameCurrency.YEN; }
 
   get specialDemons(): Demon[] {
     return Object.keys(this.specialRecipes)

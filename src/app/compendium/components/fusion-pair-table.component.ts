@@ -9,7 +9,7 @@ import Translations from '../data/translations.json';
   selector: 'tr.app-fusion-pair-table-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <td class="price">{{ data.price }}</td>
+    <td class="price">{{ inGameCurrencySymbol+(data.price | number:'1.0-0') }}</td>
     <td>{{ data.race1 }}</td>
     <td>{{ data.lvl1 | lvlToNumber }}</td>
     <td><a routerLink="{{ leftBaseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
@@ -22,6 +22,7 @@ export class FusionPairTableRowComponent {
   @Input() data: FusionPair;
   @Input() leftBaseUrl: string;
   @Input() rightBaseUrl: string;
+  @Input() inGameCurrencySymbol: string;
 }
 
 @Component({
@@ -89,7 +90,8 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
             [ngClass]="data.notes"
             [data]="data"
             [leftBaseUrl]="leftBaseUrl"
-            [rightBaseUrl]="rightBaseUrl">
+            [rightBaseUrl]="rightBaseUrl"
+            [inGameCurrencySymbol]="inGameCurrencySymbol">
           </tr>
           <tr *ngIf="currRow < rowData.length">
             <th class="nav" colspan="7"
@@ -114,6 +116,7 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> i
   @Input() initRow = 500;
   @Input() incrRow = 500;
   @Input() lang = 'en';
+  @Input() inGameCurrencySymbol: string;
   msgs = Translations.FusionPairTableComponent;
 
   sortFuns: ((f1: FusionPair, f2: FusionPair) => number)[] = [];

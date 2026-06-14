@@ -23,7 +23,7 @@ import Translations from '../data/translations.json';
         </thead>
         <tbody>
           <tr>
-            <td *ngIf="price" [attr.rowSpan]="growths.length">{{ price }}</td>
+            <td *ngIf="price" [attr.rowSpan]="growths.length">{{ inGameCurrencySymbol + (price | number:'1.0-0') }}</td>
             <td *ngFor="let stat of stats">{{ stat }}</td>
             <td *ngIf="inherits" [attr.rowSpan]="growths.length"><div class="element-icon inherit-icon i{{ inherits }}">{{ inherits }}</div></td>
             <ng-content></ng-content>
@@ -45,5 +45,6 @@ export class DemonStatsComponent {
   @Input() inherits: number;
   @Input() price = 0;
   @Input() lang = 'en';
+  @Input() inGameCurrencySymbol: string;
   msgs = Translations.DemonStatsComponent;
 }
