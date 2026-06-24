@@ -15,11 +15,11 @@ import Translations from '../data/translations.json';
         <tr>
           <th *ngFor="let element of resistHeaders"
             [style.width.%]="(ailmentHeaders.length ? 50 : 100) / resistHeaders.length">
-            <div [ngClass]="['element-icon', element]">{{ element }}</div>
+            <div [title]="element | translateElementLabel:lang" [ngClass]="['element-icon', element]">{{ element }}</div>
           </th>
           <th *ngFor="let ailment of ailmentHeaders"
             [style.width.%]="50 / ailmentHeaders.length">
-            <div [ngClass]="['ailment-icon', ailment]">{{ ailment }}</div>
+            <div [title]="ailment | translateElementLabel:lang" [ngClass]="['ailment-icon', ailment]">{{ ailment }}</div>
           </th>
         </tr>
       </thead>

@@ -29,12 +29,12 @@ import Translations from '../data/translations.json';
       <th *ngFor="let pair of resistColIndices"
         class="sortable"
         (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.elem }}"></div>
+        <div [title]="pair.elem | translateElementLabel:lang" class="element-icon {{ pair.elem }}"></div>
       </th>
       <th *ngFor="let pair of affinityColIndices"
         class="sortable"
         (click)="nextSortFunIndex(pair.index)">
-        <div class="element-icon {{ pair.elem }}"></div>
+        <div [title]="pair.elem | translateElementLabel:lang" class="element-icon {{ pair.elem }}"></div>
       </th>
       <th *ngIf="isEnemy">Drops</th>
       <th *ngIf="isEnemy">Appears</th>

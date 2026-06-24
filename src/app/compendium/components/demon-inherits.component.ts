@@ -16,7 +16,7 @@ import Translations from '../data/translations.json';
         <tr [ngClass]="{ capitalize: !hasIcons }">
           <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">
             <ng-container *ngIf="!hasIcons">{{ element }}</ng-container>
-            <div *ngIf="hasIcons" class="element-icon {{ element }}">{{ element }}</div>
+            <div *ngIf="hasIcons" [title]="element | translateElementLabel:lang" class="element-icon {{ element }}">{{ element }}</div>
           </th>
         </tr>
       </thead>

@@ -8,7 +8,7 @@ import { Skill } from '../models';
   selector: 'tr.app-smt-skill-list-row',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <td><div class="element-icon {{ data.element }}">{{ data.element }}</div></td>
+    <td><div [title]="data.element | translateElementLabel:lang" class="element-icon {{ data.element }}">{{ data.element }}</div></td>
     <td>{{ data.name }}</td>
     <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
     <td *ngIf="data.damage">
