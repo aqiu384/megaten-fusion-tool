@@ -21,7 +21,8 @@ import Translations from '../../compendium/data/translations.json';
         [price]="compConfig.appCssClasses.includes('ds1') ? 0 : demon.price"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
-        [growths]="demon.growths">
+        [growths]="demon.growths"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-demon-stats>
       <app-demon-resists
         [lang]="compConfig.lang"
@@ -77,13 +78,15 @@ import Translations from '../../compendium/data/translations.json';
         [title]="statMsgs.EvolvesFrom | translateComp:lang"
         [lang]="compConfig.lang"
         [baseUrl]="'..'"
-        [rowData]="[demon.evolvesFrom]">
+        [rowData]="[demon.evolvesFrom]"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-fusion-entry-table>
       <app-fusion-entry-table *ngIf="demon.evolvesTo"
         [title]="statMsgs.EvolvesTo | translateComp:lang"
         [lang]="compConfig.lang"
         [baseUrl]="'..'"
-        [rowData]="[demon.evolvesTo]">
+        [rowData]="[demon.evolvesTo]"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-fusion-entry-table>
       <app-smt-fusions [lang]="compConfig.lang" [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>

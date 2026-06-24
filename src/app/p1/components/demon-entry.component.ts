@@ -32,12 +32,14 @@ import { FusionDataService } from '../fusion-data.service';
       <app-fusion-entry-table *ngIf="mutatesFrom.length"
         [title]="'Mutates From'"
         [baseUrl]="'..'"
-        [rowData]="mutatesFrom">
+        [rowData]="mutatesFrom"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-fusion-entry-table>
       <app-fusion-entry-table *ngIf="mutatesTo.length"
         [title]="'Mutates To'"
         [baseUrl]="'..'"
-        [rowData]="mutatesTo">
+        [rowData]="mutatesTo"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-fusion-entry-table>
       <table class="entry-table">
         <thead>

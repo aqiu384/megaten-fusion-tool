@@ -16,7 +16,8 @@ export const SmtFusionTableComponentTemplate = `
     [leftBaseUrl]="'../..'"
     [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
     [raceOrder]="fusionChart.raceOrder"
-    [rowData]="fusionPairs">
+    [rowData]="fusionPairs"
+    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
   </app-fusion-pair-table>
 `
 

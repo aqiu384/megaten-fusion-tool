@@ -1,5 +1,6 @@
 import { CompendiumConfig, Demon, Skill } from '../models';
 import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { GameCurrency } from '../../compendium/constants';
 
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
@@ -130,6 +131,8 @@ export class Compendium implements ICompendium {
   get allSkills(): Skill[] {
     return this._allSkills;
   }
+
+  get inGameCurrencySymbol() { return GameCurrency.YEN; }
 
   get specialDemons(): Demon[] {
     return this._allDemons.filter(d => d.fusion === 'special');

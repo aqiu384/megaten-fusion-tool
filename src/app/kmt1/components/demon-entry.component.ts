@@ -18,7 +18,8 @@ import { FusionDataService } from '../fusion-data.service';
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [statHeaders]="compConfig.baseStats"
         [stats]="demon.stats"
-        [inherits]="demon.inherits">
+        [inherits]="demon.inherits"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-demon-stats>
       <app-demon-stats *ngIf="compConfig.baseAtks.length"
         [title]="'Attacks'"

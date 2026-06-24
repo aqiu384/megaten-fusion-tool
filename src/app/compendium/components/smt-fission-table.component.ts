@@ -17,7 +17,8 @@ export const SmtFissionTableComponentTemplate = `
     [title]="(msgs.SpecialFusionIngredients | translateComp:lang) + currentDemon"
     [baseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
     [rowData]="fusionEntries"
-    [isFusion]="true">
+    [isFusion]="true"
+    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
   </app-fusion-entry-table>
   <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionEntries.length"
     [lang]="lang"
@@ -27,7 +28,8 @@ export const SmtFissionTableComponentTemplate = `
     [leftBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
     [rightBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
     [raceOrder]="fusionChart.raceOrder"
-    [rowData]="fusionPairs">
+    [rowData]="fusionPairs"
+    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
   </app-fusion-pair-table>
 `;
 

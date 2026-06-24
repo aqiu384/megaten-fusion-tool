@@ -20,7 +20,8 @@ import { FusionDataService } from '../fusion-data.service';
         [fusionHeaders]="['Drop']"
         [stats]="demon.stats"
         [price]="showPrice ? demon.price : 0"
-        [inherits]="demon.inherits">
+        [inherits]="demon.inherits"
+        [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
       <app-demon-stats *ngIf="compConfig.baseAtks.length"

@@ -52,6 +52,7 @@ export interface Skill {
 export interface Compendium {
   allDemons: Demon[];
   allSkills: Skill[];
+  inGameCurrencySymbol: string;
   specialDemons: Demon[];
 
   getDemon(name: string): Demon;

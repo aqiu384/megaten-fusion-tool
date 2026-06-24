@@ -81,3 +81,5 @@ export const ResistanceLevels = [
 ];
 
 export const ResistOrder = getEnumOrder(ResistanceLevels);
+
+export const GameCurrency = { 'MACCA': '♄', 'YEN':'￥'};

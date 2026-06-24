@@ -23,7 +23,7 @@ import { FusionTrio } from '../models';
         (click)="toggleShowing.emit(showIndex)">
         Show
       </th>
-      <td>{{ trio.minPrice }}</td>
+      <td>{{ inGameCurrencySymbol +( trio.minPrice | number:'1.0-0' ) }}</td>
       <td>{{ trio.demon.race }}</td>
       <td>{{ trio.demon.currLvl }}</td>
       <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
@@ -39,7 +39,7 @@ import { FusionTrio } from '../models';
         </th>
       </tr>
       <tr *ngFor="let recipe of trio.fusions">
-        <td>{{ recipe.price }}</td>
+        <td>{{ inGameCurrencySymbol + ( recipe.price | number:'1.0-0' ) }}</td>
         <td>{{ trio.demon.race }}</td>
         <td>{{ trio.demon.currLvl }}</td>
         <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
@@ -59,6 +59,7 @@ export class FusionTrioTableRowComponent {
   @Input() showing: boolean;
   @Input() showIndex: number;
   @Input() baseUrl = '../../..';
+  @Input() inGameCurrencySymbol: string;
   @Output() toggleShowing = new EventEmitter<number>();
 }
 
@@ -135,6 +136,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
           [trio]="data"
           [showing]="showing[i]"
           [showIndex]="i"
+          [inGameCurrencySymbol]="inGameCurrencySymbol"
           (toggleShowing)="toggleShowing($event)">
         </tbody>
       </table>
@@ -145,6 +147,7 @@ export class FusionTrioTableComponent extends SortedTableComponent<FusionTrio> i
   @Input() title = 'Fusion Trio Table';
   @Input() leftHeader = 'Ingredient 1';
   @Input() raceOrder: { [race: string]: number };
+  @Input() inGameCurrencySymbol: string;
   showing: boolean[] = [];
 
   protected sortFuns: ((a: FusionTrio, b: FusionTrio) => number)[] = [];

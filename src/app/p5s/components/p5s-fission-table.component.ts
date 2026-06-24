@@ -21,7 +21,7 @@ import { MultiFusionTrio } from '../models';
         <th>Names</th><th>Lvl</th>
       </tr>
       <tr *ngFor="let row of multiFissionTrios">
-        <td>{{ row.price }}</td>
+        <td>{{ compendium.inGameCurrencySymbol + (row.price | number:'1.0-0') }}</td>
         <td>
           <ul class="comma-list">
             <li *ngFor="let name of row.names1"><a routerLink="../../{{ name }}">{{ name }} </a></li>
