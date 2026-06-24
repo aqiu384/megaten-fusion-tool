@@ -27,6 +27,12 @@ export class CompendiumTranslator {
     return langCode === -1 ? oldList : oldList.map(w => this.translate(w, langCode, lookup));
   }
 
+  private translateDictKeys(oldDict: { [key: string]: any }, language: string, lookup: ListLookup): { [key: string]: any } {
+    const langCode = this.langToCode(language);
+    if (langCode === -1) { return oldDict; }
+    return Object.entries(oldDict).reduce((acc, [k, v]) => { acc[this.translate(k, langCode, lookup)] = v; return acc; }, {});
+  }
+
   get supportedLanguages(): string[] { return TRANSLATIONS_JSON.Languages.Languages.slice(1); }
 
   translateRaces(oldRaces: string[], language: string): string[] { return this.translateList(oldRaces, language, RACE_NAMES_JSON); }
@@ -52,10 +58,7 @@ export class CompendiumTranslator {
 
       for (const skillSet of ['skills', 'skillCards']) {
         if (entry[skillSet]) {
-          newEntry[skillSet] = {};
-          for (const [sname, lvl] of Object.entries(entry[skillSet])) {
-            newEntry[skillSet][this.translate(sname, langCode, SKILL_NAMES_JSON)] = lvl;
-          }
+          newEntry[skillSet] = this.translateDictKeys(entry[skillSet], language, SKILL_NAMES_JSON);
         }
       }
 
@@ -85,16 +88,12 @@ export class CompendiumTranslator {
     for (const [dname, entry] of Object.entries(oldEnemies)) {
       const newEntry = Object.assign({}, entry);
 
-      if (entry['skills']) {
-        newEntry['skills'] = entry['skills'].map(s => this.translate(s, langCode, SKILL_NAMES_JSON));
-      }
-
-      if (entry['persona']) {
-        newEntry['persona'] = this.translate(entry['persona'], langCode, DEMON_NAMES_JSON);
-      }
-
+      if (entry['skills']) { newEntry['skills'] = this.translateList(entry['skills'], language, SKILL_NAMES_JSON); }
+      if (entry['persona']) { newEntry['persona'] = this.translate(entry['persona'], langCode, DEMON_NAMES_JSON); }
       if (entry['drops']) {
-        newEntry['drops'] = entry['drops'].map(d => this.translate(d, langCode, SKILL_NAMES_JSON));
+        newEntry['drops'] = Array.isArray(entry['drops']) ?
+          this.translateList(entry['drops'], language, SKILL_NAMES_JSON) :
+          this.translateDictKeys(entry['drops'], language, SKILL_NAMES_JSON);
       }
 
       newEntry['race'] = this.translate(entry['race'], langCode, RACE_NAMES_JSON);
@@ -111,7 +110,6 @@ export class CompendiumTranslator {
 
     for (const [sname, entry] of Object.entries(oldSkills)) {
       const newEntry = Object.assign({}, entry);
-      const target = newEntry['target'] || 'Self';
       newEntry['target'] = this.translate(newEntry['target'] || 'Self', langCode, ELEM_NAMES_JSON);
 
       if (newEntry['card']) {
