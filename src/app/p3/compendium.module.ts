@@ -91,8 +91,6 @@ function createCompConfig(): CompendiumConfigSet {
     for (const [name, enemy] of Object.entries(enemies)) {
       enemy['steps'] = enemy.stats.slice(2);
       enemy['stats'] = [enemy.exp, enemy.stats[0], enemy.stats[1]];
-      enemy['drops'] = {};
-      if (enemy['gem']) { enemy['drops'][enemy['gem']] = 0 };
     }
   }
 
