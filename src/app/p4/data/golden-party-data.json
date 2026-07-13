@@ -1,13 +1,14 @@
 {
   "Himiko": {
+    "fusion": "party",
     "inherits": "almighty",
     "lvl": 34,
-    "race": "Lovers",
+    "race": "Lovers P",
     "resists": "--------",
     "sesists": "--------",
     "sfsists": "--------",
     "skills": {
-      "Analyze": 0,
+      "Analyze": 0.1,
       "Treasure Radar": 43,
       "Enemy Radar": 52,
       "Relaxing Wave": 61,
@@ -25,19 +26,21 @@
       "AoA Level 5": 3421,
       "Complete Analysis": 5189
     },
-    "stats": [15, 25, 20, 21, 24]
+    "stats": [15, 25, 20, 21, 24],
+    "statsm": [15, 25, 20, 21, 24]
   },
   "Jiraiya": {
+    "fusion": "party",
     "inherits": "wind",
-    "lvl": 4,
-    "race": "Magician",
+    "lvl": 3,
+    "race": "Magician P",
     "resists": "---ws---",
     "sesists": "-s-wn---",
     "sfsists": "-n-wd---",
     "skills": {
-      "Garu": 0,
-      "Bash": 0,
-      "Dia": 0,
+      "Garu": 0.1,
+      "Bash": 0.2,
+      "Dia": 0.3,
       "Sukukaja": 6,
       "Makajam": 10,
       "Sonic Punch": 14,
@@ -65,21 +68,23 @@
       "Diarahan": 3421,
       "Youthful Wind": 5189
     },
-    "stats": [5, 3, 3, 5, 4]
+    "stats": [4, 3, 2, 4, 4],
+    "statsm": [69, 68, 67, 68, 33]
   },
   "Kintoki-Douji": {
+    "fusion": "party",
     "inherits": "ice",
     "lvl": 35,
-    "race": "Star",
+    "race": "Star P",
     "resists": "--sw----",
     "sesists": "--nws-s-",
     "sfsists": "--dwn-n-",
     "skills": {
-      "Mediarama": 0,
-      "Bufula": 0,
-      "Energy Shower": 0,
-      "Poison Skewer": 0,
-      "Re Patra": 0,
+      "Mediarama": 0.1,
+      "Bufula": 0.2,
+      "Energy Shower": 0.3,
+      "Poison Skewer": 0.4,
+      "Re Patra": 0.5,
       "Traesto": 36,
       "Mabufula": 38,
       "Ice Boost": 40,
@@ -105,20 +110,22 @@
       "Evade Physical": 3421,
       "Kamui Miracle": 5189
     },
-    "stats": [24, 25, 20, 22, 16]
+    "stats": [24, 25, 20, 22, 16],
+    "statsm": [60, 74, 54, 62, 49]
   },
   "Konohana Sakuya": {
+    "fusion": "party",
     "inherits": "fire",
     "lvl": 15,
-    "race": "Priestess",
+    "race": "Priestess P",
     "resists": "-sw-----",
     "sesists": "-nws----",
     "sfsists": "-dwn----",
     "skills": {
-      "Dia": 0,
-      "Agi": 0,
-      "Me Patra": 0,
-      "Maragi": 0,
+      "Dia": 0.1,
+      "Agi": 0.2,
+      "Me Patra": 0.3,
+      "Maragi": 0.4,
       "Media": 16,
       "Agilao": 21,
       "Recarm": 26,
@@ -146,23 +153,25 @@
       "Mind Charge": 3421,
       "Burning Petals": 5189
     },
-    "stats": [8, 15, 11, 8, 10]
+    "stats": [8, 15, 11, 8, 10],
+    "statsm": [38, 89, 60, 58, 59]
   },
   "Sukuna-Hikona": {
+    "fusion": "party",
     "inherits": "almighty",
     "lvl": 55,
-    "race": "Fortune",
+    "race": "Fortune P",
     "resists": "-----ss-",
     "sesists": "-s---nn-",
     "sfsists": "-n---rr-",
     "skills": {
-      "Tempest Slash": 0,
-      "Agidyne": 0,
-      "Garudyne": 0,
-      "Mudoon": 0,
-      "Hamaon": 0,
-      "Megidola": 0,
-      "Deathbound": 0,
+      "Tempest Slash": 0.1,
+      "Agidyne": 0.2,
+      "Garudyne": 0.3,
+      "Mudoon": 0.4,
+      "Hamaon": 0.5,
+      "Megidola": 0.6,
+      "Deathbound": 0.7,
       "Tetrakarn": 56,
       "Blight": 58,
       "Mudo Boost": 60,
@@ -184,21 +193,23 @@
       "Angelic Grace": 3421,
       "Shield of Justice": 5189
     },
-    "stats": [32, 38, 32, 40, 31]
+    "stats": [32, 38, 32, 40, 31],
+    "statsm": [66, 70, 46, 72, 51]
   },
   "Take-Mikazuchi": {
+    "fusion": "party",
     "inherits": "elec",
     "lvl": 25,
-    "race": "Emperor",
+    "race": "Emperor P",
     "resists": "---sw---",
     "sesists": "---nw---",
     "sfsists": "s--dw---",
     "skills": {
-      "Mazio": 0,
-      "Zionga": 0,
-      "Rakukaja": 0,
-      "Kill Rush": 0,
-      "Regenerate 1": 0,
+      "Mazio": 0.1,
+      "Zionga": 0.2,
+      "Rakukaja": 0.3,
+      "Kill Rush": 0.4,
+      "Regenerate 1": 0.5,
       "Elec Boost": 27,
       "Fatal End": 34,
       "Cruel Attack": 38,
@@ -223,18 +234,20 @@
       "Mediarama": 3421,
       "The Man's Way": 5189
     },
-    "stats": [20, 11, 17, 15, 14]
+    "stats": [20, 11, 17, 15, 14],
+    "statsm": [93, 33, 80, 58, 35]
   },
   "Tomoe": {
+    "fusion": "party",
     "inherits": "phys",
     "lvl": 4,
-    "race": "Chariot",
+    "race": "Chariot P",
     "resists": "-ws-----",
     "sesists": "-wn--s--",
     "sfsists": "-wd--n--",
     "skills": {
-      "Skewer": 0,
-      "Tarukaja": 0,
+      "Skewer": 0.1,
+      "Tarukaja": 0.2,
       "Bufu": 6,
       "Skull Cracker": 11,
       "Mabufu": 14,
@@ -264,6 +277,7 @@
       "Bufudyne": 3421,
       "Dragon Hustle": 5189
     },
-    "stats": [4, 4, 4, 2, 3]
+    "stats": [4, 4, 4, 2, 3],
+    "statsm": [71, 57, 51, 69, 53]
   }
 }

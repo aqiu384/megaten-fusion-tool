@@ -15,6 +15,11 @@ import FES_DEMON_DATA_JSON from './data/fes-demon-data.json';
 import ANS_DEMON_DATA_JSON from './data/ans-demon-data.json';
 import P3P_DEMON_DATA_JSON from './data/p3p-demon-data.json';
 
+import VAN_PARTY_DATA_JSON from './data/van-party-data.json';
+import FES_PARTY_DATA_JSON from './data/fes-party-data.json';
+import ANS_PARTY_DATA_JSON from './data/ans-party-data.json';
+import P3P_PARTY_DATA_JSON from './data/p3p-party-data.json';
+
 import VAN_ENEMY_DATA_JSON from './data/van-enemy-data.json';
 import ANS_ENEMY_DATA_JSON from './data/ans-enemy-data.json';
 
@@ -34,8 +39,6 @@ import VAN_DEMON_UNLOCKS_JSON from './data/van-demon-unlocks.json';
 import FES_DEMON_UNLOCKS_JSON from './data/fes-demon-unlocks.json';
 
 import INHERIT_TYPES_JSON from './data/inheritance-types.json';
-import FES_PARTY_DATA_JSON from './data/fes-party-data.json';
-import P3P_PARTY_DATA_JSON from './data/p3p-party-data.json';
 import { importSkillRow } from '../pq2/models/skill-importer';
 
 function createCompConfig(): CompendiumConfigSet {
@@ -67,28 +70,14 @@ function createCompConfig(): CompendiumConfigSet {
     }
   }
 
-  const gameDataSets = [
-    [VAN_DEMON_DATA_JSON, {}],
-    [FES_DEMON_DATA_JSON, FES_PARTY_DATA_JSON],
-    [ANS_DEMON_DATA_JSON, {}],
-    [P3P_DEMON_DATA_JSON, P3P_PARTY_DATA_JSON]
-  ]
-
-  for (const [demons, parties] of gameDataSets) {
-    Object.assign(demons, parties);
-
+  for (const demons of [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON, P3P_DEMON_DATA_JSON]) {
     for (const demon of Object.values(demons)) {
       demon['code'] = 1;
-    }
-
-    for (const demon of Object.values(parties)) {
-      demon['race'] += ' P';
-      demon['fusion'] = 'party';
     }
   }
 
   for (const enemies of [VAN_ENEMY_DATA_JSON, ANS_ENEMY_DATA_JSON]) {
-    for (const [name, enemy] of Object.entries(enemies)) {
+    for (const enemy of Object.values(enemies)) {
       enemy['steps'] = enemy.stats.slice(2);
       enemy['stats'] = [enemy.exp, enemy.stats[0], enemy.stats[1]];
     }
@@ -118,7 +107,7 @@ function createCompConfig(): CompendiumConfigSet {
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-      demonData: [VAN_DEMON_DATA_JSON],
+      demonData: [VAN_DEMON_DATA_JSON, VAN_PARTY_DATA_JSON],
       baseStats: COMP_CONFIG_JSON.baseStats,
       resistElems: COMP_CONFIG_JSON.resistElems,
       inheritTypes,
@@ -154,12 +143,12 @@ function createCompConfig(): CompendiumConfigSet {
 
   compConfigs.p3f.appTitle = 'Persona 3 FES';
   compConfigs.p3f.settingsKey = 'p3f-fusion-tool-settings';
-  compConfigs.p3f.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON];
+  compConfigs.p3f.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, VAN_PARTY_DATA_JSON, FES_PARTY_DATA_JSON];
   compConfigs.p3f.skillData = skillDatas.slice(0, 2);
 
   compConfigs.p3a.appTitle = 'Persona 3 FES: The Answer';
   compConfigs.p3a.settingsKey = 'p3a-fusion-tool-settings';
-  compConfigs.p3a.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON];
+  compConfigs.p3a.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, ANS_DEMON_DATA_JSON, ANS_PARTY_DATA_JSON];
   compConfigs.p3a.skillData = skillDatas.slice(0, 3);
   compConfigs.p3a.enemyData = [ANS_ENEMY_DATA_JSON];
   compConfigs.p3a.specialRecipes = PAIR_SPECIAL_RECIPES_JSON;
@@ -171,7 +160,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   compConfigs.p3p.appTitle = 'Persona 3 Portable';
   compConfigs.p3p.settingsKey = 'p3p-fusion-tool-settings';
-  compConfigs.p3p.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, P3P_DEMON_DATA_JSON];
+  compConfigs.p3p.demonData = [VAN_DEMON_DATA_JSON, FES_DEMON_DATA_JSON, P3P_DEMON_DATA_JSON, VAN_PARTY_DATA_JSON, P3P_PARTY_DATA_JSON];
   compConfigs.p3p.skillData = [skillDatas[0], skillDatas[1], skillDatas[3]];
   compConfigs.p3p.hasSkillCards = true;
 

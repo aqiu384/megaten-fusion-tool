@@ -55,26 +55,14 @@ function createCompConfig(): CompendiumConfigSet {
     }
   }
 
-  const gameDataSets = [
-    [DEMON_DATA_JSON, PARTY_DATA_JSON],
-    [GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON]
-  ]
-
-  for (const [demons, parties] of gameDataSets) {
-    Object.assign(demons, parties);
-
+  for (const demons of [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON]) {
     for (const demon of Object.values(demons)) {
       demon['code'] = 1;
-    }
-
-    for (const demon of Object.values(parties)) {
-      demon['race'] += ' P';
-      demon['fusion'] = 'party';
     }
   }
 
   for (const enemies of [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON]) {
-    for (const [name, enemy] of Object.entries(enemies)) {
+    for (const enemy of Object.values(enemies)) {
       enemy['steps'] = enemy.stats.slice(2);
       enemy['stats'] = [enemy.exp, enemy.price, enemy.stats[0], enemy.stats[1]];
     }
@@ -94,7 +82,7 @@ function createCompConfig(): CompendiumConfigSet {
       elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
       resistCodes: COMP_CONFIG_JSON.resistCodes,
 
-      demonData: [DEMON_DATA_JSON],
+      demonData: [DEMON_DATA_JSON, PARTY_DATA_JSON],
       baseStats: COMP_CONFIG_JSON.baseStats,
       resistElems: COMP_CONFIG_JSON.resistElems,
       inheritTypes,
@@ -126,7 +114,7 @@ function createCompConfig(): CompendiumConfigSet {
 
   compConfigs.p4g.appTitle = 'Persona 4 Golden';
   compConfigs.p4g.settingsKey = 'p4g-fusion-tool-settings';
-  compConfigs.p4g.demonData = [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON];
+  compConfigs.p4g.demonData = [DEMON_DATA_JSON, GOLDEN_DEMON_DATA_JSON, GOLDEN_PARTY_DATA_JSON];
   compConfigs.p4g.enemyData = [ENEMY_DATA_JSON, GOLDEN_ENEMY_DATA_JSON];
   compConfigs.p4g.demonUnlocks = GOLDEN_DEMON_UNLOCKS_JSON;
   compConfigs.p4g.skillData = skillDatas;
