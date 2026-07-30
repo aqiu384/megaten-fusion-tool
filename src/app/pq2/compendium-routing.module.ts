@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
@@ -13,9 +12,10 @@ import { P5FissionTableComponent } from './components/p5-fission-table.component
 
 import { SmtFissionPreviewComponent } from '../compendium/components/fission-preview-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
-
 import { TripleFissionTableComponent } from '../compendium/components/tri-fission-table.component';
 import { TripleFusionTableComponent } from '../compendium/components/tri-fusion-table.component';
+import { COMPENDIUM_CONFIG } from '../compendium/constants';
+import { CompendiumConfigSet } from './models';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },
@@ -103,8 +103,10 @@ const compendiumRoutes: Routes = [
   },
 ];
 
-@NgModule({
-  imports: [ RouterModule.forChild(compendiumRoutes) ],
-  exports: [ RouterModule ]
-})
-export class CompendiumRoutingModule { }
+export function createCompendiumRoutes(compConfig: CompendiumConfigSet): Routes {
+  return [{
+    path: '',
+    providers: [{ provide: COMPENDIUM_CONFIG, useValue: compConfig }],
+    children: compendiumRoutes
+  }];
+}

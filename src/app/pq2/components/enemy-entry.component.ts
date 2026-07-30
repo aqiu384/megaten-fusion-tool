@@ -1,11 +1,15 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
+import { DemonStatsComponent } from '../../compendium/components/demon-stats.component';
+import { DemonResistsComponent } from '../../compendium/components/demon-resists.component';
+import { DemonSkillsComponent } from '../../compendium/components/demon-skills.component';
 import { Compendium } from '../models/compendium';
 import { Demon, CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-enemy-entry',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, DemonStatsComponent, DemonResistsComponent, DemonSkillsComponent],
   template: `
     <app-demon-stats
       [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
@@ -14,22 +18,28 @@ import { Demon, CompendiumConfig } from '../models';
       [stats]="demon.stats.concat(demon.growths)">
       <td>{{ demon.area }}</td>
     </app-demon-stats>
-    <table class="entry-table" *ngIf="demon.drop !== '-'">
-      <thead>
-        <tr>
-          <th colspan="2" class="title">Drops</th>
-        </tr>
-        <tr>
-          <th colspan="2">Item</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let drop of demon.dropOdds | keyvalue">
-          <td>{{ drop.key }}</td>
-          <td *ngIf="drop.value">{{ drop.value % 1000 < 100 ? drop.value % 1000 : 100 }}%{{ drop.value <= 100 ? '' : '*' }}</td>
-        </tr>
-      </tbody>
-    </table>
+    @if (demon.drop !== '-') {
+      <table class="entry-table">
+        <thead>
+          <tr>
+            <th colspan="2" class="title">Drops</th>
+          </tr>
+          <tr>
+            <th colspan="2">Item</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (drop of demon.dropOdds | keyvalue; track drop) {
+            <tr>
+              <td>{{ drop.key }}</td>
+              @if (drop.value) {
+                <td>{{ drop.value % 1000 < 100 ? drop.value % 1000 : 100 }}%{{ drop.value <= 100 ? '' : '*' }}</td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
     <app-demon-resists
       [resistHeaders]="compConfig.resistElems"
       [resists]="demon.resists"

@@ -1,11 +1,20 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { CompendiumComponent as BaseCompendiumComponent } from '../../compendium/components/compendium.component';
+import { FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../../compendium/constants';
 import { FusionDataService } from '../fusion-data.service';
 import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-pq2-compendium',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, BaseCompendiumComponent],
+  providers: [
+    FusionDataService,
+    { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
+    { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }
+  ],
   template: `
     <app-demon-compendium
       [ngClass]="appCssClasses"

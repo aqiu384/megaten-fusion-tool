@@ -1,7 +1,9 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
+import { SmtDemonListComponent } from '../../compendium/components/smt-demon-list.component';
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
@@ -10,7 +12,7 @@ import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-demon-list-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, SmtDemonListComponent],
   template: `
     <app-smt-demon-list
       [lang]="compConfig.lang"
@@ -59,6 +61,5 @@ export class DemonListContainerComponent extends DLCC {
       this.resistHeaders = this.compConfig.resistElems;
       this.inheritOrder = null;
     }
-
   }
 }

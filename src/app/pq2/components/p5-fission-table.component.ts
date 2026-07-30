@@ -1,12 +1,16 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { SmtFissionTableComponent, SmtFissionTableComponentTemplate } from '../../compendium/components/smt-fission-table.component';
+import { Component } from '@angular/core';
+import { SmtFissionTableComponent } from '../../compendium/components/smt-fission-table.component';
 import { splitWithTreasure } from '../../compendium/fusions/per-nonelem-fissions';
 import { FusionPair } from '../../compendium/models';
 
+import { FusionEntryTableComponent } from '../../compendium/components/fusion-entry-table.component';
+import { FusionPairTableComponent } from '../../compendium/components/fusion-pair-table.component';
+import { TranslateCompPipe } from '../../compendium/pipes';
+
 @Component({
   selector: 'app-p5-fission-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: SmtFissionTableComponentTemplate
+  imports: [FusionEntryTableComponent, FusionPairTableComponent, TranslateCompPipe],
+  templateUrl: '../../compendium/components/smt-fission-table.component.html'
 })
 export class P5FissionTableComponent extends SmtFissionTableComponent {
   getFusionPairs(): FusionPair[] {

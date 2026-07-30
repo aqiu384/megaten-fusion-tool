@@ -1,13 +1,14 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
+import { FusionChartComponent } from '../../compendium/components/fusion-chart.component';
 import { FusionChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
   selector: 'app-fusion-chart-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FusionChartComponent],
   template: `
     <app-fusion-chart
       [normChart]="normChart"

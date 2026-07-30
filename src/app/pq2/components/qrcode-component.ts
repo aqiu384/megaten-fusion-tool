@@ -1,10 +1,9 @@
-import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 declare var qrcode: any;
 
 @Component({
   selector: 'app-qrcode',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div [innerHtml]="qrImg"></div>
   `

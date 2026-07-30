@@ -1,5 +1,6 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
@@ -8,11 +9,14 @@ import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { encodeDemon } from '../models/password-generator';
 import { translateCompSet } from '../../compendium/models/translator';
+import { TranslateCompPipe } from '../../compendium/pipes';
+import { QrcodeComponent } from './qrcode-component';
 import Translations from '../../compendium/data/translations.json';
+
 
 @Component({
   selector: 'app-password-generator',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, ReactiveFormsModule, QrcodeComponent, TranslateCompPipe],
   template: `
     <form [formGroup]="form">
       <h2>QR Code Generator</h2>
@@ -36,27 +40,37 @@ import Translations from '../../compendium/data/translations.json';
           <td>{{ compendium.inGameCurrencySymbol + (price | number:'1.0-0') }}</td>
           <td>
             <select formControlName="lvl">
-              <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+              @for (_ of range99; track $index; let i = $index) {
+                <option [value]="i + 1">{{ i + 1 }}</option>
+              }
             </select>
           </td>
           <td>
             <select formControlName="hp">
-              <option *ngFor="let _ of range299; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+              @for (_ of range299; track $index; let i = $index) {
+                <option [value]="i + 1">{{ i + 1 }}</option>
+              }
             </select>
           </td>
           <td>
             <select formControlName="mp">
-              <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+              @for (_ of range99; track $index; let i = $index) {
+                <option [value]="i + 1">{{ i + 1 }}</option>
+              }
             </select>
           </td>
           <td>
             <select formControlName="race" (change)="changeRace(form.controls.race.value)">
-              <option *ngFor="let race of races" [value]="race">{{ race }}</option>
+              @for (race of races; track $index) {
+                <option [value]="race">{{ race }}</option>
+              }
             </select>
           </td>
           <td>
             <select formControlName="demon" (change)="setDefaultValues(form.controls.demon.value)">
-              <option *ngFor="let demon of demons[form.controls.race.value]" [value]="demon.name">{{ demon.name }}</option>
+              @for (demon of demons[form.controls.race.value]; track $index) {
+                <option [value]="demon.name">{{ demon.name }}</option>
+              }
             </select>
           </td>
         </tr>
@@ -70,20 +84,26 @@ import Translations from '../../compendium/data/translations.json';
           </tr>
         </thead>
         <tbody formArrayName="skills">
-          <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
-            <tr>
-              <td>
-                <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                  <option *ngFor="let elem of elems" [value]="elem">{{ displayElems[elem] || elem }}</option>
-                </select>
-              </td>
-              <td>
-                <select formControlName="name">
-                  <option *ngFor="let entry of skills[skill.controls.elem.value]" [value]="entry.name">{{ entry.name }}</option>
-                </select>
-              </td>
-            </tr>
-          </ng-container>
+          @for (skill of form.controls.skills['controls']; track $index; let i = $index) {
+            <ng-container [formGroupName]="i">
+              <tr>
+                <td>
+                  <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
+                    @for (elem of elems; track $index) {
+                      <option [value]="elem">{{ displayElems[elem] || elem }}</option>
+                    }
+                  </select>
+                </td>
+                <td>
+                  <select formControlName="name">
+                    @for (entry of skills[skill.controls.elem.value]; track $index) {
+                      <option [value]="entry.name">{{ entry.name }}</option>
+                    }
+                  </select>
+                </td>
+              </tr>
+            </ng-container>
+          }
         </tbody>
       </table>
     </form>
@@ -236,7 +256,7 @@ export class PasswordGeneratorComponent implements OnChanges {
 
 @Component({
   selector: 'app-password-generator-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [PasswordGeneratorComponent],
   template: `
     <app-password-generator
       [compendium]="compendium"

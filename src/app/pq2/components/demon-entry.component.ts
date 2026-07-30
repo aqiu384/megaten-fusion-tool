@@ -1,19 +1,29 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
+import { DemonStatsComponent } from '../../compendium/components/demon-stats.component';
+import { DemonResistsComponent } from '../../compendium/components/demon-resists.component';
+import { DemonInheritsComponent } from '../../compendium/components/demon-inherits.component';
+import { DemonSkillsComponent } from '../../compendium/components/demon-skills.component';
+import { SmtFusionsComponent } from '../../compendium/components/smt-fusions.component';
+import { DemonMissingComponent } from '../../compendium/components/demon-missing.component';
+import { CurrentDemonService } from '../../compendium/current-demon.service';
+
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
-
-import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
+import { EnemyEntryComponent } from './enemy-entry.component';
 
 @Component({
   selector: 'app-demon-entry',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    DemonStatsComponent, DemonResistsComponent, DemonInheritsComponent,
+    DemonSkillsComponent, SmtFusionsComponent, DemonMissingComponent
+  ],
   template: `
-    <ng-container *ngIf="demon">
+    @if (demon) {
       <app-demon-stats
         [lang]="lang"
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
@@ -24,16 +34,20 @@ import { FusionDataService } from '../fusion-data.service';
         [inherits]="compConfig.inheritElems.length ? demon.inherits : 0"
         [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
       </app-demon-stats>
-      <app-demon-resists *ngIf="compConfig.hasDemonResists"
-        [lang]="lang"
-        [resistHeaders]="compConfig.resistElems"
-        [resists]="demon.resists">
-      </app-demon-resists>
-      <app-demon-inherits *ngIf="compConfig.inheritElems.length"
-        [hasChance]="!compConfig.hasManualInheritance"
-        [inheritHeaders]="compConfig.inheritElems"
-        [inherits]="demon.affinities">
-      </app-demon-inherits>
+      @if (compConfig.hasDemonResists) {
+        <app-demon-resists
+          [lang]="lang"
+          [resistHeaders]="compConfig.resistElems"
+          [resists]="demon.resists">
+        </app-demon-resists>
+      }
+      @if (compConfig.inheritElems.length) {
+        <app-demon-inherits
+          [hasChance]="!compConfig.hasManualInheritance"
+          [inheritHeaders]="compConfig.inheritElems"
+          [inherits]="demon.affinities">
+        </app-demon-inherits>
+      }
       <app-demon-skills
         [lang]="lang"
         [hasRank]="compConfig.hasSkillRanks"
@@ -47,9 +61,11 @@ import { FusionDataService } from '../fusion-data.service';
         [hasTripleFusion]="compConfig.hasTripleFusion"
         [excludedDlc]="demon.fusion === 'excluded'">
       </app-smt-fusions>
-    </ng-container>
-    <app-demon-missing *ngIf="!demon" [name]="name">
-    </app-demon-missing>
+    }
+    @if (!demon) {
+      <app-demon-missing [name]="name">
+      </app-demon-missing>
+    }
   `
 })
 export class DemonEntryComponent {
@@ -62,22 +78,26 @@ export class DemonEntryComponent {
 
 @Component({
   selector: 'app-demon-entry-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [DemonEntryComponent, EnemyEntryComponent],
   template: `
-    <app-demon-entry *ngIf="!demon || !demon.isEnemy"
-      [lang]="compConfig.lang"
-      [name]="name"
-      [demon]="demon"
-      [compConfig]="compConfig"
-      [compendium]="compendium">
-    </app-demon-entry>
-    <app-enemy-entry *ngIf="demon && demon.isEnemy"
-      [lang]="compConfig.lang"
-      [name]="name"
-      [demon]="demon"
-      [compConfig]="compConfig"
-      [compendium]="compendium">
-    </app-enemy-entry>
+    @if (!demon || !demon.isEnemy) {
+      <app-demon-entry
+        [lang]="compConfig.lang"
+        [name]="name"
+        [demon]="demon"
+        [compConfig]="compConfig"
+        [compendium]="compendium">
+      </app-demon-entry>
+    }
+    @if (demon && demon.isEnemy) {
+      <app-enemy-entry
+        [lang]="compConfig.lang"
+        [name]="name"
+        [demon]="demon"
+        [compConfig]="compConfig"
+        [compendium]="compendium">
+      </app-enemy-entry>
+    }
   `
 })
 export class DemonEntryContainerComponent {
