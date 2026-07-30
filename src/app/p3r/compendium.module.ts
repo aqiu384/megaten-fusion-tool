@@ -1,12 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Title } from '@angular/platform-browser';
-
-import { CompendiumRoutingModule } from '../pq2/compendium-routing.module';
-import { FusionDataService } from '../pq2/fusion-data.service';
-
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
-import { PQCompendiumModule } from '../pq2/pq-compendium.module';
+import { createCompendiumRoutes } from '../pq2/compendium-routing.module';
 import { CompendiumConfig, CompendiumConfigSet } from '../pq2/models';
 import { importSkillRow } from '../pq2/models/skill-importer';
 
@@ -139,20 +131,4 @@ function createCompConfig(): CompendiumConfigSet {
   };
 }
 
-const SMT_COMP_CONFIG = createCompConfig();
-
-@NgModule({
-  imports: [
-    CommonModule,
-    PQCompendiumModule,
-    CompendiumRoutingModule
-  ],
-  providers: [
-    Title,
-    FusionDataService,
-    [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }],
-  ]
-})
-export class CompendiumModule { }
+export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

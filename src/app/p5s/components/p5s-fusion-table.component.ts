@@ -1,11 +1,13 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
 import { TripleFusionTableComponent } from '../../compendium/components/tri-fusion-table.component';
 import { getLowerIngredients, getHigherIngredients } from '../models/conversions';
 import { MultiFusionTrio } from '../models';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-p5s-fission-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, RouterModule],
   template: `
     <table class="list-table">
       <tr><th colspan=8 class="title">Result = Min Lvl {{ currentDemon }} x Ingredient 2 x Ingredient 3</th></tr>
@@ -21,31 +23,41 @@ import { MultiFusionTrio } from '../models';
         <th>Names</th><th>Lvl</th>
         <th>Names</th><th>Lvl</th>
       </tr>
-      <tr *ngFor="let row of multiFusionTrios">
-        <td>{{ compendium.inGameCurrencySymbol + (row.price | number:'1.0-0') }}</td>
-        <td>{{ row.lvl0 }}</td>
-        <td>
-          <ul class="comma-list">
-            <li *ngFor="let name of row.names1"><a routerLink="../../{{ name }}">{{ name }} </a></li>
-          </ul>
-        </td>
-        <td>{{ row.lvl1 }}</td>
-        <td>
-          <ul class="comma-list">
-            <li *ngFor="let name of row.names2"><a routerLink="../../{{ name }}">{{ name }} </a></li>
-          </ul>
-        </td>
-        <td>{{ row.lvl2 }}</td>
-        <td>
-          <ul class="comma-list">
-            <li *ngFor="let name of row.names3"><a routerLink="../../{{ name }}">{{ name }} </a></li>
-          </ul>
-        </td>
-        <td>{{ row.lvl3 }}</td>
-      </tr>
-      <tr *ngIf="!multiFusionTrios.length">
-        <td colspan="8">No fusions found!</td>
-      </tr>
+      @for (row of multiFusionTrios; track $index) {
+        <tr>
+          <td>{{ compendium.inGameCurrencySymbol + (row.price | number:'1.0-0') }}</td>
+          <td>{{ row.lvl0 }}</td>
+          <td>
+            <ul class="comma-list">
+              @for (name of row.names1; track $index) {
+                <li><a routerLink="../../{{ name }}">{{ name }} </a></li>
+              }
+            </ul>
+          </td>
+          <td>{{ row.lvl1 }}</td>
+          <td>
+            <ul class="comma-list">
+              @for (name of row.names2; track $index) {
+                <li><a routerLink="../../{{ name }}">{{ name }} </a></li>
+              }
+            </ul>
+          </td>
+          <td>{{ row.lvl2 }}</td>
+          <td>
+            <ul class="comma-list">
+              @for (name of row.names3; track $index) {
+                <li><a routerLink="../../{{ name }}">{{ name }} </a></li>
+              }
+            </ul>
+          </td>
+          <td>{{ row.lvl3 }}</td>
+        </tr>
+      }
+      @if (!multiFusionTrios.length) {
+        <tr>
+          <td colspan="8">No fusions found!</td>
+        </tr>
+      }
     </table>
   `
 })

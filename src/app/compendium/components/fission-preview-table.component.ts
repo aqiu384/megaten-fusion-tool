@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, OnChanges, Inject, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges, Inject, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../constants';
@@ -7,14 +7,15 @@ import { toFusionPair, toDemonTrio } from '../models/conversions';
 
 @Component({
   selector: 'app-fission-preview-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table class="entry-table">
       <tbody>
         <tr><th class="title">Fission Previews</th></tr>
-        <tr *ngFor="let preview of fissionPreviews">
-          <th>{{ preview }}</th>
-        </tr>
+        @for (preview of fissionPreviews; track preview) {
+          <tr>
+            <th>{{ preview }}</th>
+          </tr>
+        }
       </tbody>
     </table>
   `
@@ -85,7 +86,7 @@ export class FissionPreviewTableComponent implements OnChanges {
 
 @Component({
   selector: 'app-smt-fission-preview',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FissionPreviewTableComponent],
   template: `
     <app-fission-preview-table
       [pairCalculator]="calculator"
@@ -125,7 +126,7 @@ export class SmtFissionPreviewComponent implements OnInit, OnDestroy {
 
 @Component({
   selector: 'app-trio-fission-preview',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FissionPreviewTableComponent],
   template: `
     <app-fission-preview-table
       [pairCalculator]="pairCalculator"

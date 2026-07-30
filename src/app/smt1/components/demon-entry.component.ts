@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
@@ -8,12 +8,20 @@ import { Compendium } from '../models/compendium';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
+import { DemonStatsComponent } from '../../compendium/components/demon-stats.component';
+import { DemonResistsComponent } from '../../compendium/components/demon-resists.component';
+import { DemonSkillsComponent } from '../../compendium/components/demon-skills.component';
+import { SmtFusionsComponent } from '../../compendium/components/smt-fusions.component';
+import { DemonMissingComponent } from '../../compendium/components/demon-missing.component';
 
 @Component({
-  selector: 'app-demon-entry',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <ng-container *ngIf="demon">
+    selector: 'app-demon-entry',
+    imports: [
+      DemonStatsComponent, DemonResistsComponent, DemonSkillsComponent,
+      SmtFusionsComponent, DemonMissingComponent
+    ],
+      template: `
+    @if (demon) {
       <app-demon-stats
         [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
         [statHeaders]="compConfig.baseStats"
@@ -24,11 +32,13 @@ import { FusionDataService } from '../fusion-data.service';
         [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
         <td>{{ demon.drop }}</td>
       </app-demon-stats>
-      <app-demon-stats *ngIf="compConfig.baseAtks.length"
-        [title]="'Attacks'"
-        [statHeaders]="compConfig.baseAtks"
-        [stats]="demon.atks">
-      </app-demon-stats>
+      @if (compConfig.baseAtks.length) {
+        <app-demon-stats
+          [title]="'Attacks'"
+          [statHeaders]="compConfig.baseAtks"
+          [stats]="demon.atks">
+        </app-demon-stats>
+      }
       <app-demon-resists
         [resistHeaders]="compConfig.resistElems"
         [resists]="demon.resists">
@@ -41,20 +51,24 @@ import { FusionDataService } from '../fusion-data.service';
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      <app-demon-skills *ngIf="compConfig.inheritSkills"
-        [title]="'Inheritable Skills'"
-        [hasTarget]="true"
-        [hasLvl]="false"
-        [elemOrder]="compConfig.elemOrder"
-        [compendium]="compendium"
-        [skillLevels]="compConfig.inheritSkills[demon.inherits]">
-      </app-demon-skills>
+      @if (compConfig.inheritSkills) {
+        <app-demon-skills
+          [title]="'Inheritable Skills'"
+          [hasTarget]="true"
+          [hasLvl]="false"
+          [elemOrder]="compConfig.elemOrder"
+          [compendium]="compendium"
+          [skillLevels]="compConfig.inheritSkills[demon.inherits]">
+        </app-demon-skills>
+      }
       <app-smt-fusions
         [hasTripleFusion]="!compConfig.appCssClasses.includes('mjn1')">
       </app-smt-fusions>
-    </ng-container>
-    <app-demon-missing *ngIf="!demon" [name]="name">
-    </app-demon-missing>
+    }
+    @if (!demon) {
+      <app-demon-missing [name]="name">
+      </app-demon-missing>
+    }
   `
 })
 export class DemonEntryComponent {
@@ -67,7 +81,7 @@ export class DemonEntryComponent {
 
 @Component({
   selector: 'app-demon-entry-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [DemonEntryComponent],
   template: `
     <app-demon-entry
       [name]="name"

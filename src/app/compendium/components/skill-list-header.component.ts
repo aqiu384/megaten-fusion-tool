@@ -1,11 +1,13 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { SortedTableHeaderComponent } from '../../shared/sorted-table.component';
+import { TranslateCompPipe } from '../pipes';
 import Translations from '../data/translations.json';
 
 @Component({
   selector: 'tfoot.app-skill-list-header',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, TranslateCompPipe],
   template: `
     <tr>
       <th [attr.colSpan]="skillHeaderLen">{{ msgs.Skill | translateComp:lang }}</th>
@@ -15,12 +17,12 @@ import Translations from '../data/translations.json';
       <th class="sortable" [ngClass]="sortDirClass(1)" (click)="nextSortFunIndex(1)"><span>{{ msgs.Elem | translateComp:lang }}</span></th>
       <th class="sortable" [ngClass]="sortDirClass(2)" (click)="nextSortFunIndex(2)"><span>{{ msgs.Name | translateComp:lang }}</span></th>
       <th class="sortable" [ngClass]="sortDirClass(3)" (click)="nextSortFunIndex(3)"><span class="cost">{{ msgs.Cost | translateComp:lang }}</span></th>
-      <th>{{ msgs.Effect |  translateComp:lang }}</th>
-      <th *ngIf="hasTarget">{{ msgs.Target | translateComp:lang }}</th>
-      <th *ngIf="hasRank" class="sortable" [ngClass]="sortDirClass(4)" (click)="nextSortFunIndex(4)"><span>{{ msgs.Rank | translateComp:lang }}</span></th>
-      <th *ngIf="hasInherit" class="sortable" [ngClass]="sortDirClass(5)" (click)="nextSortFunIndex(5)"><span>Inherit</span></th>
+      <th>{{ msgs.Effect | translateComp:lang }}</th>
+      @if (hasTarget)     { <th>{{ msgs.Target | translateComp:lang }}</th> }
+      @if (hasRank)       { <th class="sortable" [ngClass]="sortDirClass(4)" (click)="nextSortFunIndex(4)"><span>{{ msgs.Rank | translateComp:lang }}</span></th> }
+      @if (hasInherit)    { <th class="sortable" [ngClass]="sortDirClass(5)" (click)="nextSortFunIndex(5)"><span>Inherit</span></th> }
       <th>{{ msgs.LearnedBy | translateComp:lang }}</th>
-      <th *ngIf="transferTitle">{{ transferTitle }}</th>
+      @if (transferTitle) { <th>{{ transferTitle }}</th> }
     </tr>
   `,
   styles: [`

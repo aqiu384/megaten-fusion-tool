@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnChanges, OnDestroy, Input } from '@angular/core';
+import { Component, OnInit, OnChanges, OnDestroy, Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
@@ -7,15 +7,16 @@ import { CompendiumConfig } from '../models';
 
 @Component({
   selector: 'app-p5s-fusion-chart',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table class="entry-table">
       <tbody>
         <tr><th class="title" colspan="2">{{ normTitle }}</th></tr>
-        <tr *ngFor="let row of table">
-          <th>{{ row.result }}</th>
-          <td>{{ row.recipes }}</td>
-        </tr>
+        @for (row of table; track $index) {
+          <tr>
+            <th>{{ row.result }}</th>
+            <td>{{ row.recipes }}</td>
+          </tr>
+        }
       </tbody>
     </table>
   `
@@ -43,7 +44,7 @@ export class P5SFusionChartComponent implements OnChanges {
 
 @Component({
   selector: 'app-fusion-chart-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [P5SFusionChartComponent],
   template: `
     <app-p5s-fusion-chart
       [compConfig]="compConfig"

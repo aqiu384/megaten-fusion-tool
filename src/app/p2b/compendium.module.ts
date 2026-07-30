@@ -1,13 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Title } from '@angular/platform-browser';
-
-import { CompendiumRoutingModule } from '../p1/compendium-routing.module';
-import { FusionDataService } from '../p1/fusion-data.service';
-
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
-import { P1CompendiumModule } from '../p1/p1-compendium.module';
 import { Demon, Skill, CompendiumConfig } from '../p1/models';
+import { createCompendiumRoutes } from '../p1/compendium-routing.module';
 
 import GROWTH_TYPES_JSON from '../p2t/data/growth-types.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -141,19 +133,4 @@ function createCompConfig(): CompendiumConfig {
   };
 }
 
-const SMT_COMP_CONFIG = createCompConfig();
-
-@NgModule({
-  imports: [
-    CommonModule,
-    P1CompendiumModule,
-    CompendiumRoutingModule
-  ],
-  providers: [
-    Title,
-    FusionDataService,
-    [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
-  ]
-})
-export class CompendiumModule { }
+export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

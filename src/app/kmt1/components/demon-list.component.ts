@@ -1,13 +1,16 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 import { Title } from '@angular/platform-browser'
 
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
 
+import { CommonModule } from '@angular/common';
+import { SmtDemonListComponent } from '../../compendium/components/smt-demon-list.component';
+
 @Component({
   selector: 'app-demon-list-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, SmtDemonListComponent],
   template: `
     <app-smt-demon-list
       [raceOrder]="compConfig.raceOrder"

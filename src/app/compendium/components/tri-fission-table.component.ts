@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -7,10 +7,11 @@ import { Compendium, FusionTrioService, FusionCalculator, TripleCalculator, Name
 import { toDemonTrio } from '../models/conversions';
 
 import { CurrentDemonService } from '../../compendium/current-demon.service';
+import { FusionTrioTableComponent } from './fusion-trio-table.component';
 
 @Component({
   selector: 'app-triple-fission-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FusionTrioTableComponent],
   template: `
     <app-fusion-trio-table
       [title]="'Ingredient 1 x Ingredient 2 x Ingredient 3 = ' + currentDemon"

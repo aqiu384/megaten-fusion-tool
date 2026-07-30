@@ -1,9 +1,9 @@
-import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Component, Input, output, OnChanges } from '@angular/core';
+import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-demon-password',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [ReactiveFormsModule],
   template: `
     <form [formGroup]="form">
       <h2>Password Generator</h2>
@@ -34,7 +34,7 @@ export class DemonPasswordComponent implements OnChanges {
   @Input() encoding: string;
   @Input() inverseEncoding: { [letter: string]: number };
   @Input() encodeBytes: number[];
-  @Output() decodedBytes = new EventEmitter<number[]>();
+  decodedBytes = output<number[]>();
 
   form: FormGroup;
 

@@ -1,12 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Title } from '@angular/platform-browser';
-
-import { CompendiumRoutingModule } from './compendium-routing.module';
-import { FusionDataService } from './fusion-data.service';
-
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
-import { Kmt1CompendiumModule } from './kmt1-compendium.module';
+import { createCompendiumRoutes } from './compendium-routing.module';
 import { CompendiumConfig } from './models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -62,19 +54,4 @@ function createCompConfig(): CompendiumConfig {
   }
 }
 
-const SMT_COMP_CONFIG = createCompConfig();
-
-@NgModule({
-  imports: [
-    CommonModule,
-    Kmt1CompendiumModule,
-    CompendiumRoutingModule
-  ],
-  providers: [
-    Title,
-    FusionDataService,
-    { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
-    { provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }
-  ]
-})
-export class CompendiumModule { }
+export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

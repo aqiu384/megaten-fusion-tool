@@ -1,34 +1,54 @@
-import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { Demon } from '../models';
 import { DemonListComponent } from '../bases/demon-list.component';
+import { ElementAffinityToStringPipe, LvlToNumberPipe, ReslvlToColorPipe, ReslvlToStringLocalePipe } from '../pipes';
+import { ColumnWidthsDirective } from '../../shared/column-widths.directive';
+import { PositionStickyDirective } from '../../shared/position-sticky.directive';
+import { DemonListHeaderComponent } from './demon-list-header.component';
 
 @Component({
   selector: 'tr.app-smt-demon-list-row',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    CommonModule, RouterModule,
+    ElementAffinityToStringPipe, LvlToNumberPipe, ReslvlToColorPipe, ReslvlToStringLocalePipe
+  ],
   template: `
     <td [ngClass]="['align', data.align ? data.align : 'none']">{{ data.race }}</td>
-    <td *ngIf="!hasCurrLvl">{{ data.lvl | lvlToNumber }}</td>
-    <td *ngIf="hasCurrLvl" style="text-align: center;">
-      <button *ngIf="!currOffset" (click)="updateCurrRange()">{{ data.currLvl }} &#9998;</button>
-      <select *ngIf="currOffset" (change)="emitValidLvl($event)">
-        <option [value]="data.currLvl">{{ data.currLvl }}</option>
-        <option *ngFor="let _ of currRange; let i = index" [value]="i + currOffset">{{ i + currOffset }}</option>
-      </select>
-    </td>
-    <td><a [routerLink]="data.name">{{ data.name }}</a></td>
-    <td *ngIf="hasInherits"><div [ngClass]="['element-icon', 'inherit-icon', 'i' + data.inherits]">{{ data.inherits }}</div></td>
-    <td *ngFor="let stat of data.stats">{{ stat }}</td>
-    <td *ngFor="let resist of data.resists" [ngClass]="['resists', resist | reslvlToColor]">
-      {{ resist | reslvlToStringLocale:lang }}
-    </td>
-    <ng-container *ngIf="hasAffinity">
-      <td *ngFor="let affinity of data.affinities" [ngClass]="'affinity' + affinity">
-        {{ affinity | affinityToString }}
+    @if (!hasCurrLvl) { <td>{{ data.lvl | lvlToNumber }}</td> }
+    @if (hasCurrLvl) {
+      <td style="text-align: center;">
+        @if (!currOffset) {
+          <button (click)="updateCurrRange()">{{ data.currLvl }} &#9998;</button>
+        }
+        @if (currOffset) {
+          <select (change)="emitValidLvl($event)">
+            <option [value]="data.currLvl">{{ data.currLvl }}</option>
+            @for (_ of currRange; track _; let i = $index) {
+              <option [value]="i + currOffset">{{ i + currOffset }}</option>
+            }
+          </select>
+        }
       </td>
-    </ng-container>
-    <td *ngIf="isEnemy">{{ data.drop }}</td>
-    <td *ngIf="isEnemy">{{ data.area }}</td>
+    }
+    <td><a [routerLink]="data.name">{{ data.name }}</a></td>
+    @if (hasInherits) { <td><div [ngClass]="['element-icon', 'inherit-icon', 'i' + data.inherits]">{{ data.inherits }}</div></td> }
+    @for (stat of data.stats; track stat) {
+      <td>{{ stat }}</td>
+    }
+    @for (resist of data.resists; track resist) {
+      <td [ngClass]="['resists', resist | reslvlToColor]">{{ resist | reslvlToStringLocale:lang }}</td>
+    }
+    @if (hasAffinity) {
+      @for (affinity of data.affinities; track affinity) {
+        <td [ngClass]="'affinity' + affinity">{{ affinity | affinityToString }}</td>
+      }
+    }
+    @if (isEnemy) { <td>{{ data.drop }}</td> }
+    @if (isEnemy) { <td>{{ data.area }}</td> }
   `
 })
 export class SmtDemonListRowComponent {
@@ -38,7 +58,7 @@ export class SmtDemonListRowComponent {
   @Input() hasAffinity = false;
   @Input() lang = 'en';
   @Input() data: Demon;
-  @Output() currLvl = new EventEmitter<number>();
+  currLvl = output<number>();
 
   currOffset = 0;
   currRange = Array(0);
@@ -61,8 +81,12 @@ export class SmtDemonListRowComponent {
 
 @Component({
   selector: 'app-smt-demon-list',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ PositionEdgesService ],
+  imports: [
+    CommonModule,
+    ColumnWidthsDirective, PositionStickyDirective,
+    DemonListHeaderComponent, SmtDemonListRowComponent 
+  ],
+  providers: [PositionEdgesService],
   template: `
     <table appPositionSticky class="list-table">
       <tfoot #stickyHeader appColumnWidths
@@ -92,21 +116,23 @@ export class SmtDemonListRowComponent {
         [style.visibility]="'collapse'">
       </tfoot>
       <tbody>
-        <tr *ngFor="let data of rowData"
-          class="app-smt-demon-list-row"
-          [isEnemy]="isEnemy"
-          [hasCurrLvl]="hasCurrLvl"
-          [hasInherits]="!!inheritOrder"
-          [hasAffinity]="!!affinityHeaders"
-          [lang]="lang"
-          [ngClass]="{
-            special: data.fusion === 'special',
-            exception: data.fusion !== 'special' && data.fusion !== 'normal',
-            hidden: !data.searchTags.includes(searchTags)
-          }"
-          [data]="data"
-          (currLvl)="lvlChanged.emit({ demon: data.name, currLvl: $event })">
-        </tr>
+        @for (data of rowData; track data) {
+          <tr
+            class="app-smt-demon-list-row"
+            [isEnemy]="isEnemy"
+            [hasCurrLvl]="hasCurrLvl"
+            [hasInherits]="!!inheritOrder"
+            [hasAffinity]="!!affinityHeaders"
+            [lang]="lang"
+            [ngClass]="{
+              special: data.fusion === 'special',
+              exception: data.fusion !== 'special' && data.fusion !== 'normal',
+              hidden: !data.searchTags.includes(searchTags)
+            }"
+            [data]="data"
+            (currLvl)="lvlChanged.emit({ demon: data.name, currLvl: $event })">
+          </tr>
+        }
       </tbody>
     </table>
   `
@@ -116,6 +142,6 @@ export class SmtDemonListComponent extends DemonListComponent<Demon> {
   @Input() isEnemy = false;
   @Input() hasCurrLvl = false;
   @Input() lang = 'en';
-  @Output() lvlChanged = new EventEmitter<{ demon: string, currLvl: number }>();
+  lvlChanged = output<{ demon: string, currLvl: number }>();
   searchTags = '';
 }

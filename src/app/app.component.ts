@@ -1,30 +1,42 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError, RouterModule } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
+import { TranslateCompPipe } from './compendium/pipes';
+import { CurrentDemonService } from './compendium/current-demon.service';
+import { CompendiumTranslator } from './compendium/models/compendium-translator';
 import Translations from './compendium/data/translations.json';
 
 @Component({
   selector: 'app-root',
+  imports: [CommonModule, RouterModule, TranslateCompPipe],
+  providers: [Title, CompendiumTranslator, CurrentDemonService],
   template: `
     <div [ngClass]="currentGame">
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">
         <thead>
           <tr>
-            <th *ngFor="let link of msgs.HomeLink; index as i" [routerLink]="link" class="nav" routerLinkActive="active" [style.width]="navWidth">
-              <a [routerLink]="link">{{ msgs.Home[i] }}</a>
-            </th>
-            <th *ngFor="let link of otherLinks" class="nav external" [style.width]="navWidth">
-              <div><a [attr.href]="link.link">{{ link.title | translateComp:lang }}</a></div>
-            </th>
+            @for (link of msgs.HomeLink; track link; let i = $index) {
+              <th [routerLink]="link" class="nav" routerLinkActive="active" [style.width]="navWidth">
+                <a [routerLink]="link">{{ msgs.Home[i] }}</a>
+              </th>
+            }
+            @for (link of otherLinks; track link) {
+              <th class="nav external" [style.width]="navWidth">
+                <div><a [attr.href]="link.link">{{ link.title | translateComp:lang }}</a></div>
+              </th>
+            }
           </tr>
           <tr>
             <th [attr.colspan]="msgs.HomeLink.length + otherLinks.length" class="title">{{ msgs.AppTitle | translateComp:lang }}</th>
           </tr>
         </thead>
       </table>
-      <h4 *ngIf="loading" style="text-align: center;">{{ msgs.NowLoading | translateComp:lang }}</h4>
-      <ng-container *ngIf="!loading">
-        <router-outlet></router-outlet>
-      </ng-container>
+      @switch (loading) {
+        @case (true) { <h4 style="text-align: center;">{{ msgs.NowLoading | translateComp:lang }}</h4> }
+        @default     { <router-outlet></router-outlet> }
+      }
       <div style="text-align: center;">
         <br>
         <a href="https://www.youtube.com/watch?v=b1KfNEPKncQ">

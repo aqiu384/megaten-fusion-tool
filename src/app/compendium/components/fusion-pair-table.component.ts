@@ -1,13 +1,19 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
+import { PositionStickyDirective } from '../../shared/position-sticky.directive';
+import { ColumnWidthsDirective } from '../../shared/column-widths.directive';
+
 import { SortedTableHeaderComponent, SortedTableComponent } from '../../shared/sorted-table.component';
 import { FusionPair } from '../models';
+import { LvlToNumberPipe, TranslateCompPipe } from '../pipes';
 import Translations from '../data/translations.json';
 
 @Component({
   selector: 'tr.app-fusion-pair-table-row',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, RouterModule, LvlToNumberPipe],
   template: `
     <td class="price">{{ inGameCurrencySymbol+(data.price | number:'1.0-0') }}</td>
     <td>{{ data.race1 }}</td>
@@ -27,7 +33,7 @@ export class FusionPairTableRowComponent {
 
 @Component({
   selector: 'tfoot.app-fusion-pair-table-header',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, RouterModule, TranslateCompPipe],
   template: `
     <tr>
       <th colspan="7" class="title">{{ title }}</th>
@@ -57,8 +63,13 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
 
 @Component({
   selector: 'app-fusion-pair-table',
-  providers: [ PositionEdgesService ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    CommonModule,
+    ColumnWidthsDirective, PositionStickyDirective,
+    FusionPairTableHeaderComponent, FusionPairTableRowComponent,
+    TranslateCompPipe
+  ],
+  providers: [PositionEdgesService],
   template: `
     <div>
       <table appPositionSticky class="list-table">
@@ -82,28 +93,34 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           [style.visibility]="'collapse'">
         </tfoot>
         <tbody>
-          <tr *ngIf="!rowData.length">
-            <td colspan="7">{{ msgs.NoFusionsFound | translateComp:lang }}</td>
-          </tr>
-          <tr *ngFor="let data of rowData.slice(0, currRow)"
-            class="app-fusion-pair-table-row"
-            [ngClass]="data.notes"
-            [data]="data"
-            [leftBaseUrl]="leftBaseUrl"
-            [rightBaseUrl]="rightBaseUrl"
-            [inGameCurrencySymbol]="inGameCurrencySymbol">
-          </tr>
-          <tr *ngIf="currRow < rowData.length">
-            <th class="nav" colspan="7"
-              [style.height.em]="2"
-              (click)="currRow = currRow + incrRow">
-              Show next {{ incrRow }} out of {{ rowData.length - currRow }}
-            </th>
-          </tr>
+          @if (!rowData.length) {
+            <tr>
+              <td colspan="7">{{ msgs.NoFusionsFound | translateComp:lang }}</td>
+            </tr>
+          }
+          @for (data of rowData.slice(0, currRow); track data) {
+            <tr
+              class="app-fusion-pair-table-row"
+              [ngClass]="data.notes"
+              [data]="data"
+              [leftBaseUrl]="leftBaseUrl"
+              [rightBaseUrl]="rightBaseUrl"
+              [inGameCurrencySymbol]="inGameCurrencySymbol">
+            </tr>
+          }
+          @if (currRow < rowData.length) {
+            <tr>
+              <th class="nav" colspan="7"
+                [style.height.em]="2"
+                (click)="currRow = currRow + incrRow">
+                Show next {{ incrRow }} out of {{ rowData.length - currRow }}
+              </th>
+            </tr>
+          }
         </tbody>
       </table>
     </div>
-  `
+  `,
 })
 export class FusionPairTableComponent extends SortedTableComponent<FusionPair> implements OnInit {
   private _title = 'Ingredient 1 x Ingredient 2 = Result';

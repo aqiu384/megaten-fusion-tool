@@ -1,42 +1,19 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, FusionEntry, NamePair, FusionPair } from '../models';
 import { toFusionEntry, toFusionPair } from '../models/conversions';
 import { CurrentDemonService } from '../current-demon.service';
+import { FusionEntryTableComponent } from './fusion-entry-table.component';
+import { FusionPairTableComponent } from './fusion-pair-table.component';
+import { TranslateCompPipe } from '../pipes';
 import Translations from '../data/translations.json';
-
-export const SmtFissionTableComponentTemplate = `
-  <table *ngIf="fusionPrereq" class="list-table">
-    <thead><tr><th class="title">{{ msgs.SpecialFusionCondition | translateComp:lang }}</th></tr></thead>
-    <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
-  </table>
-  <app-fusion-entry-table *ngIf="fusionEntries.length"
-    [lang]="lang"
-    [title]="(msgs.SpecialFusionIngredients | translateComp:lang) + currentDemon"
-    [baseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
-    [rowData]="fusionEntries"
-    [isFusion]="true"
-    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
-  </app-fusion-entry-table>
-  <app-fusion-pair-table *ngIf="fusionPairs.length || !fusionEntries.length"
-    [lang]="lang"
-    [title]="(msgs.Title | translateComp:lang) + currentDemon"
-    [leftHeader]="msgs.LeftHeader | translateComp:lang"
-    [rightHeader]="msgs.RightHeader | translateComp:lang"
-    [leftBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
-    [rightBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
-    [raceOrder]="fusionChart.raceOrder"
-    [rowData]="fusionPairs"
-    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
-  </app-fusion-pair-table>
-`;
 
 @Component({
   selector: 'app-smt-fission-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: SmtFissionTableComponentTemplate
+  imports: [FusionEntryTableComponent, FusionPairTableComponent, TranslateCompPipe],
+  templateUrl: './smt-fission-table.component.html'
 })
 export class SmtFissionTableComponent implements OnInit, OnDestroy {
   calculator: FusionCalculator;

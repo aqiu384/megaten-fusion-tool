@@ -1,45 +1,66 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { SkillListComponent } from '../../compendium/bases/skill-list.component';
 import { Skill } from '../models';
+import { SkillCostToStringPipe, SkillLevelToShortStringPipeLocale, SkillLevelToStringPipe, TranslateElementLabelPipe } from '../pipes';
+import { SkillListHeaderComponent } from './skill-list-header.component';
+import { PositionStickyDirective } from '../../shared/position-sticky.directive';
+import { ColumnWidthsDirective } from '../../shared/column-widths.directive';
 
 @Component({
   selector: 'tr.app-smt-skill-list-row',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    CommonModule, RouterModule,
+    SkillCostToStringPipe, SkillLevelToShortStringPipeLocale, SkillLevelToStringPipe, TranslateElementLabelPipe
+  ],
   template: `
     <td><div [title]="data.element | translateElementLabel:lang" class="element-icon {{ data.element }}">{{ data.element }}</div></td>
     <td>{{ data.name }}</td>
     <td [style.color]="data.cost ? null: 'transparent'">{{ data.cost | skillCostToString }}</td>
-    <td *ngIf="data.damage">
-      {{ data.damage }}
-      {{ data.element }}
-      damage{{ data.hits ? ' x' + data.hits : '' }}{{ data.effect ? ', ' + data.effect : '' }}
-    </td>
-    <td *ngIf="!data.damage">{{ data.effect }}</td>
-    <td *ngIf="hasTarget"><div class="target-icon a{{ data.target || 'Self' }}">{{ data.target || 'Self' }}</div></td>
-    <td *ngIf="hasRank" [style.color]="data.rank !== 99 ? null: 'transparent'">{{ data.rank }}</td>
-    <td *ngIf="hasInherit"><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td>
-    <td *ngIf="hasLvl" [ngClass]="'lvl' + data.level.toString()">{{ data.level | skillLevelToString }}</td>
-    <td *ngIf="hasLearned">
-      <ul class="comma-list">
-        <li *ngFor="let entry of data.learnedBy">
-          <a routerLink="../{{ isPersona ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
-          {{ entry.level | skillLevelToShortStringLocale:lang }}
-        </li>
-      </ul>
-    </td>
-    <td *ngIf="hasTransferTitle">
-      <ul class="comma-list">
-        <li *ngFor="let entry of data.transfer">
-          <ng-container *ngIf="entry.level >= -99">
-            <a routerLink="../{{ hasSkillCards ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
-            {{ entry.level | skillLevelToShortStringLocale:lang }}
-          </ng-container>
-          <ng-container *ngIf="entry.level < -99">{{ entry.demon }} </ng-container>
-        </li>
-      </ul>
-    </td>
+    @if (data.damage) {
+      <td>
+        {{ data.damage }}
+        {{ data.element }}
+        damage{{ data.hits ? ' x' + data.hits : '' }}{{ data.effect ? ', ' + data.effect : '' }}
+      </td>
+    }
+    @if (!data.damage) { <td>{{ data.effect }}</td> }
+    @if (hasTarget)    { <td><div class="target-icon a{{ data.target || 'Self' }}">{{ data.target || 'Self' }}</div></td> }
+    @if (hasRank)      { <td [style.color]="data.rank !== 99 ? null: 'transparent'">{{ data.rank }}</td> }
+    @if (hasInherit)   { <td><div class="element-icon {{ data.inherit }}">{{ data.inherit }}</div></td> }
+    @if (hasLvl)       { <td [ngClass]="'lvl' + data.level.toString()">{{ data.level | skillLevelToString }}</td> }
+    @if (hasLearned) {
+      <td>
+        <ul class="comma-list">
+          @for (entry of data.learnedBy; track entry) {
+            <li>
+              <a routerLink="../{{ isPersona ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
+              {{ entry.level | skillLevelToShortStringLocale:lang }}
+            </li>
+          }
+        </ul>
+      </td>
+    }
+    @if (hasTransferTitle) {
+      <td>
+        <ul class="comma-list">
+          @for (entry of data.transfer; track entry) {
+            <li>
+              @if (entry.level >= -99) {
+                <a routerLink="../{{ hasSkillCards ? 'personas' : 'demons' }}/{{ entry.demon }}">{{ entry.demon }}</a>
+                {{ entry.level | skillLevelToShortStringLocale:lang }}
+              }
+              @if (entry.level < -99) {
+                {{ entry.demon }}
+              }
+            </li>
+          }
+        </ul>
+      </td>
+    }
   `
 })
 export class SmtSkillListRowComponent {
@@ -58,8 +79,12 @@ export class SmtSkillListRowComponent {
 
 @Component({
   selector: 'app-smt-skill-list',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ PositionEdgesService ],
+  imports: [
+    CommonModule,
+    ColumnWidthsDirective, PositionStickyDirective,
+    SkillListHeaderComponent, SmtSkillListRowComponent
+  ],
+  providers: [PositionEdgesService],
   template: `
     <table appPositionSticky class="list-table">
       <tfoot #stickyHeader appColumnWidths
@@ -84,21 +109,22 @@ export class SmtSkillListRowComponent {
         [style.visibility]="'collapse'">
       </tfoot>
       <tbody>
-        <tr *ngFor="let data of rowData"
-          class="app-smt-skill-list-row"
-          [hasInherit]="!!inheritOrder"
-          [hasTarget]="hasTarget"
-          [hasRank]="hasRank"
-          [isPersona]="isPersona"
-          [hasTransferTitle]="!!transferTitle"
-          [hasSkillCards]="transferTitle.includes('Card')"
-          [lang]="lang"
-          [data]="data"
-          [ngClass]="{
-            extra: data.rank > 70 && data.rank < 90,
-            unique: data.rank > 90
-          }">
-        </tr>
+        @for (data of rowData; track data) {
+          <tr class="app-smt-skill-list-row"
+            [hasInherit]="!!inheritOrder"
+            [hasTarget]="hasTarget"
+            [hasRank]="hasRank"
+            [isPersona]="isPersona"
+            [hasTransferTitle]="!!transferTitle"
+            [hasSkillCards]="transferTitle.includes('Card')"
+            [lang]="lang"
+            [data]="data"
+            [ngClass]="{
+              extra: data.rank > 70 && data.rank < 90,
+              unique: data.rank > 90
+            }">
+          </tr>
+        }
       </tbody>
     </table>
   `

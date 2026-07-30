@@ -1,20 +1,21 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FusionChart } from '../../compendium/models';
 import { FusionDataService } from '../fusion-data.service';
 
+import { CommonModule } from '@angular/common';
+import { FusionChartComponent } from '../../compendium/components/fusion-chart.component';
+
 @Component({
   selector: 'app-fusion-chart-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, FusionChartComponent],
   template: `
-    <ng-container>
-      <app-fusion-chart
-        [normChart]="normChart"
-        [filterDarks]="false"
-        [normTitle]="'Normal Fusions'">
-      </app-fusion-chart>
-    </ng-container>
+    <app-fusion-chart
+      [normChart]="normChart"
+      [filterDarks]="false"
+      [normTitle]="'Normal Fusions'">
+    </app-fusion-chart>
   `
 })
 export class FusionChartContainerComponent implements OnInit, OnDestroy {

@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
+import { COMPENDIUM_CONFIG } from '../compendium/constants';
+import { CompendiumConfig } from './models';
 
 const compendiumRoutes: Routes = [
   { path: '', redirectTo: 'personas', pathMatch: 'full' },
@@ -54,8 +55,10 @@ const compendiumRoutes: Routes = [
   },
 ];
 
-@NgModule({
-  imports: [ RouterModule.forChild(compendiumRoutes) ],
-  exports: [ RouterModule ]
-})
-export class CompendiumRoutingModule { }
+export function createCompendiumRoutes(compConfig: CompendiumConfig): Routes {
+  return [{
+    path: '',
+    providers: [{ provide: COMPENDIUM_CONFIG, useValue: compConfig }],
+    children: compendiumRoutes
+  }];
+}

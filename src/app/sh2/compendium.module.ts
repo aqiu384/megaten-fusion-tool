@@ -1,12 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Title } from '@angular/platform-browser';
-
-import { CompendiumRoutingModule } from '../smt4f/compendium-routing.module';
-import { FusionDataService } from '../smt4f/fusion-data.service';
-
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE } from '../compendium/constants';
-import { Smt4CompendiumModule } from '../smt4f/smt4-compendium.module';
+import { createCompendiumRoutes } from '../smt4f/compendium-routing.module';
 import { CompendiumConfig, CompendiumConfigSet } from '../smt4f/models';
 import { skillRowToEffect } from '../pq2/models/skill-importer';
 
@@ -89,19 +81,4 @@ function createCompConfig(): CompendiumConfigSet {
   };
 }
 
-const SMT_COMP_CONFIG = createCompConfig();
-
-@NgModule({
-  imports: [
-    CommonModule,
-    Smt4CompendiumModule,
-    CompendiumRoutingModule
-  ],
-  providers: [
-    Title,
-    FusionDataService,
-    [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
-  ]
-})
-export class CompendiumModule { }
+export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

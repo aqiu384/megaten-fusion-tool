@@ -1,30 +1,18 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FUSION_DATA_SERVICE } from '../constants';
 import { Compendium, FusionChart, FusionDataService, FusionCalculator, NamePair, FusionPair } from '../models';
 import { toFusionPairResult } from '../models/conversions';
 import { CurrentDemonService } from '../current-demon.service';
+import { FusionPairTableComponent } from './fusion-pair-table.component';
+import { TranslateCompPipe } from '../pipes';
 import Translations from '../data/translations.json';
-
-export const SmtFusionTableComponentTemplate = `
-  <app-fusion-pair-table
-    [lang]="lang"
-    [title]="currentDemon + (msgs.Title | translateComp:lang)"
-    [leftHeader]="msgs.LeftHeader | translateComp:lang"
-    [rightHeader]="msgs.RightHeader | translateComp:lang"
-    [leftBaseUrl]="'../..'"
-    [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
-    [raceOrder]="fusionChart.raceOrder"
-    [rowData]="fusionPairs"
-    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
-  </app-fusion-pair-table>
-`
 
 @Component({
   selector: 'app-smt-fusion-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: SmtFusionTableComponentTemplate
+  imports: [FusionPairTableComponent, TranslateCompPipe],
+  templateUrl: './smt-fusion-table.component.html'
 })
 export class SmtFusionTableComponent implements OnInit, OnDestroy {
   calculator: FusionCalculator;

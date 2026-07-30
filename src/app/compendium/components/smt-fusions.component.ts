@@ -1,34 +1,42 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { PositionStickyDirective } from '../../shared/position-sticky.directive';
+import { TranslateCompPipe } from '../pipes';
 import Tranlations from '../data/translations.json';
 
 @Component({
   selector: 'app-smt-fusions',
-  providers: [ PositionEdgesService ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterModule, PositionStickyDirective, TranslateCompPipe],
+  providers: [PositionEdgesService],
   template: `
     <div>
       <table #stickyTable appPositionSticky class="list-table">
         <thead>
           <tr>
-            <th *ngFor="let option of fusionOptions"
-              class="nav"
-              routerLinkActive="active"
-              [routerLink]="option.link"
-              [style.width.%]="100 / fusionOptions.length"
-              [routerLinkActiveOptions]="{ exact: true }">
-              <a [routerLink]="option.link">{{ option.title | translateComp:lang }}</a>
-            </th>
+            @for (option of fusionOptions; track option) {
+              <th class="nav"
+                routerLinkActive="active"
+                [routerLink]="option.link"
+                [style.width.%]="100 / fusionOptions.length"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <a [routerLink]="option.link">{{ option.title | translateComp:lang }}</a>
+              </th>
+            }
           </tr>
-          <tr *ngIf="excludedDlc">
-            <th [attr.colspan]="fusionOptions.length" class="title">
-              {{ msgs.DlcExcluded | translateComp:lang }}
-            </th>
-          <tr>
-          <tr *ngIf="showFusionAlert">
-            <th [attr.colspan]="fusionOptions.length" class="title"><ng-content></ng-content></th>
-          <tr>
+          @if (excludedDlc) {
+            <tr>
+              <th [attr.colspan]="fusionOptions.length" class="title">
+                {{ msgs.DlcExcluded | translateComp:lang }}
+              </th>
+            <tr>
+          }
+          @if (showFusionAlert) {
+            <tr>
+              <th [attr.colspan]="fusionOptions.length" class="title"><ng-content></ng-content></th>
+            <tr>
+          }
         </thead>
       </table>
       <router-outlet></router-outlet>

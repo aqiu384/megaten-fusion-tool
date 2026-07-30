@@ -1,8 +1,9 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-demon-missing',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterModule],
   template: `
     <table class="entry-table">
       <thead>
@@ -10,11 +11,15 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       </thead>
       <tbody>
         <tr>
-          <td *ngIf="name && name.includes('%20')">
-            Error: Could not find entry in compendium for {{ name }}. Did you mean: 
-            <a routerLink="../{{ name.split('%20').join(' ') }}">{{ name.split('%20').join(' ') }}</a>
-          </td>
-          <td *ngIf="!name || !name.includes('%20')">Error: Could not find entry in compendium for {{ name }}</td>
+          @if (name && name.includes('%20')) {
+            <td>
+              Error: Could not find entry in compendium for {{ name }}. Did you mean:
+              <a routerLink="../{{ name.split('%20').join(' ') }}">{{ name.split('%20').join(' ') }}</a>
+            </td>
+          }
+          @if (!name || !name.includes('%20')) {
+            <td>Error: Could not find entry in compendium for {{ name }}</td>
+          }
         </tr>
       </tbody>
     </table>

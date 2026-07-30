@@ -1,5 +1,5 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
@@ -7,12 +7,14 @@ import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { decodeDemon, encodeDemon } from '../models/password-generator';
+import { DemonPasswordComponent } from './demon-password-component';
 import { translateCompSet } from '../../compendium/models/translator';
+import { TranslateCompPipe } from '../../compendium/pipes';
 import Translations from '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-password-generator',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [ReactiveFormsModule, DemonPasswordComponent, TranslateCompPipe],
   template: `
     <form [formGroup]="form">
       <app-demon-password
@@ -35,22 +37,30 @@ import Translations from '../../compendium/data/translations.json';
           <tr>
             <td>
               <select formControlName="maskByte">
-                <option *ngFor="let _ of range256; let i = index" [value]="i">{{ i }}</option>
+                @for (_ of range256; track $index; let i = $index) {
+                  <option [value]="i">{{ i }}</option>
+                }
               </select>
             </td>
             <td>
               <select formControlName="lvl">
-                <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
+                @for (_ of range99; track $index; let i = $index) {
+                  <option [value]="i + 1">{{ i + 1 }}</option>
+                }
               </select>
             </td>
             <td>
               <select formControlName="race" (change)="changeRace(form.controls.race.value)">
-                <option *ngFor="let race of allRaces" [value]="race">{{ race }}</option>
+                @for (race of allRaces; track $index) {
+                  <option [value]="race">{{ race }}</option>
+                }
               </select>
             </td>
             <td>
               <select formControlName="demon" (change)="setDefaultValues(form.controls.demon.value)">
-                <option *ngFor="let demon of demons[form.controls.race.value]" [value]="demon.name">{{ demon.name }}</option>
+                @for (demon of demons[form.controls.race.value]; track $index) {
+                  <option [value]="demon.name">{{ demon.name }}</option>
+                }
               </select>
             </td>
           </tr>
@@ -60,16 +70,22 @@ import Translations from '../../compendium/data/translations.json';
         <thead>
           <tr><th [attr.colspan]="stats.length" class="title">{{ demonMsgs.Stats | translateComp:lang }}</th></tr>
           <tr>
-            <th *ngFor="let stat of stats">{{ stat }}</th>
+            @for (stat of stats; track $index) {
+              <th>{{ stat }}</th>
+            }
           </tr>
         </thead>
         <tbody>
           <tr formArrayName="stats">
-            <td *ngFor="let stat of form.controls.stats['controls']; let i = index">
-              <select [formControlName]="i">
-                <option *ngFor="let _ of range99; let i = index" [value]="i + 1">{{ i + 1 }}</option>
-              </select>
-            </td>
+            @for (stat of form.controls.stats['controls']; track $index; let i = $index) {
+              <td>
+                <select [formControlName]="i">
+                  @for (_ of range99; track $index; let i = $index) {
+                    <option [value]="i + 1">{{ i + 1 }}</option>
+                  }
+                </select>
+              </td>
+            }
           </tr>
         </tbody>
       </table>
@@ -82,20 +98,26 @@ import Translations from '../../compendium/data/translations.json';
           </tr>
         </thead>
         <tbody formArrayName="skills">
-          <ng-container *ngFor="let skill of form.controls.skills['controls']; let i = index" [formGroupName]="i">
-            <tr>
-              <td>
-                <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                  <option *ngFor="let elem of allElems" [value]="elem">{{ displayElems[elem] || elem }}</option>
-                </select>
-              </td>
-              <td>
-                <select formControlName="name">
-                  <option *ngFor="let entry of skills[skill.controls.elem.value]" [value]="entry.name">{{ entry.name }}</option>
-                </select>
-              </td>
-            </tr>
-          </ng-container>
+          @for (skill of form.controls.skills['controls']; track $index; let i = $index) {
+            <ng-container [formGroupName]="i">
+              <tr>
+                <td>
+                  <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
+                    @for (elem of allElems; track $index) {
+                      <option [value]="elem">{{ displayElems[elem] || elem }}</option>
+                    }
+                  </select>
+                </td>
+                <td>
+                  <select formControlName="name">
+                    @for (entry of skills[skill.controls.elem.value]; track $index) {
+                      <option [value]="entry.name">{{ entry.name }}</option>
+                    }
+                  </select>
+                </td>
+              </tr>
+            </ng-container>
+          }
         </tbody>
       </table>
     </form>
@@ -297,7 +319,7 @@ export class PasswordGeneratorComponent implements OnChanges {
 
 @Component({
   selector: 'app-password-generator-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [PasswordGeneratorComponent],
   template: `
     <app-password-generator
       [lang]="compConfig.lang"

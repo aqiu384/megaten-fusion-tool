@@ -1,27 +1,32 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FusionChart } from '../models/fusion-chart';
 import { FusionDataService } from '../fusion-data.service';
+import { FusionChartComponent } from '../../compendium/components/fusion-chart.component';
 
 @Component({
   selector: 'app-fusion-chart-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FusionChartComponent],
   template: `
-    <app-fusion-chart *ngIf="hasLightDark"
-      [lang]="lang"
-      [normChart]="normChart"
-      [tripChart]="normChart"
-      [normTitle]="'Light and Neutral Normal Fusions'"
-      [tripTitle]="'Dark Normal Fusions'"
-      [mitaTable]="mitamaTable">
-    </app-fusion-chart>
-    <app-fusion-chart *ngIf="!hasLightDark"
-      [lang]="lang"
-      [filterDarks]="false"
-      [normChart]="normChart"
-      [mitaTable]="mitamaTable">
-    </app-fusion-chart>
+    @if (hasLightDark) {
+      <app-fusion-chart
+        [lang]="lang"
+        [normChart]="normChart"
+        [tripChart]="normChart"
+        [normTitle]="'Light and Neutral Normal Fusions'"
+        [tripTitle]="'Dark Normal Fusions'"
+        [mitaTable]="mitamaTable">
+      </app-fusion-chart>
+    }
+    @if (!hasLightDark) {
+      <app-fusion-chart
+        [lang]="lang"
+        [filterDarks]="false"
+        [normChart]="normChart"
+        [mitaTable]="mitamaTable">
+      </app-fusion-chart>
+    }
   `
 })
 export class FusionChartContainerComponent implements OnInit, OnDestroy {

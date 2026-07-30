@@ -1,12 +1,13 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FusionChart, FusionTrioService } from '../models';
 import { FUSION_TRIO_SERVICE } from '../constants';
+import { FusionChartComponent } from './fusion-chart.component';
 
 @Component({
   selector: 'app-triple-fusion-chart',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FusionChartComponent],
   template: `
     <app-fusion-chart
       [normChart]="normChart"

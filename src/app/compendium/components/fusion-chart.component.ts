@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
@@ -9,19 +10,27 @@ import Translations from '../data/translations.json'
 
 @Component({
   selector: 'app-fusion-chart',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule],
   template: `
-    <table>
-      <tbody>
-        <tr><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ normTitle }}</th></tr>
-        <tr><th *ngFor="let race of table[0]">{{ race.slice(0, nameCut) }}</th></tr>
-        <tr *ngFor="let row of table.slice(1, table.length - 1)">
+  <table>
+    <tbody>
+      <tr><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ normTitle }}</th></tr>
+      <tr>
+        @for (race of table[0]; track race) { <th>{{ race.slice(0, nameCut) }}</th> }
+      </tr>
+      @for (row of table.slice(1, table.length - 1); track row) {
+        <tr>
           <th>{{ row[0] }}</th>
-          <td *ngFor="let race of row.slice(1, row.length - 1)" [ngClass]="race.slice(0, 4)">{{ race.slice(4, nameCut + 4) }}</td>
+          @for (race of row.slice(1, row.length - 1); track race) {
+            <td [ngClass]="race.slice(0, 4)">{{ race.slice(4, nameCut + 4) }}</td>
+          }
           <th>{{ row[row.length - 1] }}</th>
         </tr>
-        <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, nameCut) }}</th></tr>
-        <tr *ngIf="tripTitle"><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ tripTitle }}</th></tr>
+      }
+      <tr>
+        @for (race of table[table.length - 1]; track race) { <th>{{ race.slice(0, nameCut) }}</th> }
+      </tr>
+      @if (tripTitle) { <tr><th class="title" [attr.colspan]="table[0].length">{{ appName }} {{ tripTitle }}</th></tr> }
       <tbody>
     </table>
   `,

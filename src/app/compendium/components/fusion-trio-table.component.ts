@@ -1,35 +1,32 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Input,
-  Output,
-  EventEmitter,
-  OnInit,
-  AfterViewChecked
-} from '@angular/core';
+import { Component, ChangeDetectorRef, Input, output, OnInit, AfterViewChecked } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { PositionEdgesService } from '../../shared/position-edges.service';
 import { SortedTableComponent, SortedTableHeaderComponent } from '../../shared/sorted-table.component';
 import { FusionTrio } from '../models';
+import { ColumnWidthsDirective } from '../../shared/column-widths.directive';
+import { PositionStickyDirective } from '../../shared/position-sticky.directive';
 
 @Component({
   selector: 'tbody.app-fusion-trio-table-row',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, RouterModule],
   template: `
-    <tr *ngIf="!showing">
-      <th class="nav"
-        [style.height.em]="1"
-        (click)="toggleShowing.emit(showIndex)">
-        Show
-      </th>
-      <td>{{ inGameCurrencySymbol +( trio.minPrice | number:'1.0-0' ) }}</td>
-      <td>{{ trio.demon.race }}</td>
-      <td>{{ trio.demon.currLvl }}</td>
-      <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
-      <td colspan="6" [style.color]="'#666'">{{ trio.fusions.length }} recipes hidden</td>
-    </tr>
-    <ng-container *ngIf="showing">
+    @if (!showing) {
+      <tr>
+        <th class="nav"
+          [style.height.em]="1"
+          (click)="toggleShowing.emit(showIndex)">
+          Show
+        </th>
+        <td>{{ inGameCurrencySymbol +( trio.minPrice | number:'1.0-0' ) }}</td>
+        <td>{{ trio.demon.race }}</td>
+        <td>{{ trio.demon.currLvl }}</td>
+        <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
+        <td colspan="6" [style.color]="'#666'">{{ trio.fusions.length }} recipes hidden</td>
+      </tr>
+    }
+    @if (showing) {
       <tr>
         <th class="nav active"
           [style.height.em]="1"
@@ -38,20 +35,22 @@ import { FusionTrio } from '../models';
           Hide
         </th>
       </tr>
-      <tr *ngFor="let recipe of trio.fusions">
-        <td>{{ inGameCurrencySymbol + ( recipe.price | number:'1.0-0' ) }}</td>
-        <td>{{ trio.demon.race }}</td>
-        <td>{{ trio.demon.currLvl }}</td>
-        <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
-        <ng-container *ngFor="let demon of [ recipe.d1, recipe.d2, recipe.d3 ]">
-          <ng-container *ngIf="trio.demon !== demon">
-            <td>{{ demon.race }}</td>
-            <td>{{ demon.currLvl }}</td>
-            <td><a routerLink="{{ baseUrl }}/{{ demon.name }}">{{ demon.name }}</a></td>
-          </ng-container>
-        </ng-container>
-      </tr>
-    </ng-container>
+      @for (recipe of trio.fusions; track recipe) {
+        <tr>
+          <td>{{ inGameCurrencySymbol + ( recipe.price | number:'1.0-0' ) }}</td>
+          <td>{{ trio.demon.race }}</td>
+          <td>{{ trio.demon.currLvl }}</td>
+          <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
+          @for (demon of [ recipe.d1, recipe.d2, recipe.d3 ]; track demon) {
+            @if (trio.demon !== demon) {
+              <td>{{ demon.race }}</td>
+              <td>{{ demon.currLvl }}</td>
+              <td><a routerLink="{{ baseUrl }}/{{ demon.name }}">{{ demon.name }}</a></td>
+            }
+          }
+        </tr>
+      }
+    }
   `
 })
 export class FusionTrioTableRowComponent {
@@ -60,12 +59,12 @@ export class FusionTrioTableRowComponent {
   @Input() showIndex: number;
   @Input() baseUrl = '../../..';
   @Input() inGameCurrencySymbol: string;
-  @Output() toggleShowing = new EventEmitter<number>();
+  toggleShowing = output<number>();
 }
 
 @Component({
   selector: 'tfoot.app-fusion-trio-table-header',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule],
   template: `
     <tr>
       <th colspan="11" class="title">{{ title }}</th>
@@ -98,7 +97,7 @@ export class FusionTrioTableRowComponent {
 export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
   @Input() title;
   @Input() leftHeader;
-  @Output() hideAll = new EventEmitter<boolean>();
+  hideAll = output<boolean>();
 
   toggleHideAll() {
     this.hideAll.emit(true);
@@ -107,8 +106,12 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
 
 @Component({
   selector: 'app-fusion-trio-table',
-  providers: [ PositionEdgesService ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    CommonModule,
+    ColumnWidthsDirective, PositionStickyDirective,
+    FusionTrioTableHeaderComponent, FusionTrioTableRowComponent
+  ],
+  providers: [PositionEdgesService],
   template: `
     <div>
       <table appPositionSticky class="list-table">
@@ -128,17 +131,21 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
           [leftHeader]="leftHeader"
           [style.visibility]="'collapse'">
         </tfoot>
-        <tbody *ngIf="!rowData.length">
-          <tr><td colspan="11">No fusions found!</td></tr>
-        </tbody>
-        <tbody *ngFor="let data of rowData; let i = index"
-          class="app-fusion-trio-table-row"
-          [trio]="data"
-          [showing]="showing[i]"
-          [showIndex]="i"
-          [inGameCurrencySymbol]="inGameCurrencySymbol"
-          (toggleShowing)="toggleShowing($event)">
-        </tbody>
+        @if (!rowData.length) {
+          <tbody>
+            <tr><td colspan="11">No fusions found!</td></tr>
+          </tbody>
+        }
+        @for (data of rowData; track data; let i = $index) {
+          <tbody
+            class="app-fusion-trio-table-row"
+            [trio]="data"
+            [showing]="showing[i]"
+            [showIndex]="i"
+            [inGameCurrencySymbol]="inGameCurrencySymbol"
+            (toggleShowing)="toggleShowing($event)">
+          </tbody>
+        }
       </table>
     </div>
   `

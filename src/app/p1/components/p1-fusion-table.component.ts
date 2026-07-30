@@ -1,12 +1,15 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { SmtFusionTableComponent, SmtFusionTableComponentTemplate } from '../../compendium/components/smt-fusion-table.component';
+import { Component } from '@angular/core';
+import { SmtFusionTableComponent } from '../../compendium/components/smt-fusion-table.component';
 import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPairResult } from '../models/conversions';
 
+import { FusionPairTableComponent } from '../../compendium/components/fusion-pair-table.component';
+import { TranslateCompPipe } from '../../compendium/pipes';
+
 @Component({
   selector: 'app-p1-fusion-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: SmtFusionTableComponentTemplate
+  imports: [FusionPairTableComponent, TranslateCompPipe],
+  templateUrl: '../../compendium/components/smt-fusion-table.component.html'
 })
 export class P1FusionTableComponent extends SmtFusionTableComponent {
   hasFusionToPersonas = true;

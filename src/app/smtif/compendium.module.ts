@@ -1,12 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Title } from '@angular/platform-browser';
-
-import { CompendiumRoutingModule } from '../smt1/compendium-routing.module';
-import { FusionDataService } from '../smt1/fusion-data.service';
-
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
-import { SmtSnesCompendiumModule } from '../smt1/smt-snes-compendium.module';
+import { createCompendiumRoutes } from '../smt1/compendium-routing.module';
 import { CompendiumConfig } from '../smt1/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -88,20 +80,4 @@ function createCompConfig(): CompendiumConfig {
   };
 }
 
-const SMT_COMP_CONFIG = createCompConfig();
-
-@NgModule({
-  imports: [
-    CommonModule,
-    SmtSnesCompendiumModule,
-    CompendiumRoutingModule
-  ],
-  providers: [
-    Title,
-    FusionDataService,
-    { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
-    { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService },
-    { provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }
-  ]
-})
-export class CompendiumModule { }
+export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

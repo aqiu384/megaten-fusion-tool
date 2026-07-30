@@ -1,4 +1,4 @@
-import { Input, Output, EventEmitter, ViewChild, Directive } from '@angular/core';
+import { Input, output, ViewChild, Directive } from '@angular/core';
 import { ColumnWidthsDirective } from './column-widths.directive';
 import { PositionStickyDirective } from '../shared/position-sticky.directive';
 
@@ -7,7 +7,7 @@ export abstract class SortedTableHeaderComponent {
   private sortAsc = true;
   private sortAscIndex = 1;
 
-  @Output() sortFunIndexChanged = new EventEmitter<number>();
+  sortFunIndexChanged = output<number>();
 
   get sortFunIndex(): number {
     return (this.sortAsc ? 1 : -1) * this.sortAscIndex;

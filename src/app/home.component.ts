@@ -1,18 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 import Translations from './compendium/data/translations.json';
 import FusionTools from './compendium/data/fusion-tools.json';
 
 @Component({
+  imports: [CommonModule, RouterModule],
   template: `
     <table [ngStyle]="{ marginLeft: 'auto', marginRight: 'auto', width: '1080px' }">
-      <tr *ngFor="let tool of listTools">
-        <th [routerLink]="'../' + tool.game" class="nav" routerLinkActive="active">
-          <a [routerLink]="'../' + tool.game + (tool.game[0] === 'p' ? '/personas' : '/demons')">{{ tool.titles[langInd] }}</a>
-        </th>
-      </tr>
+      @for (tool of listTools; track tool) {
+        <tr>
+          <th [routerLink]="'../' + tool.game" class="nav" routerLinkActive="active">
+            <a [routerLink]="'../' + tool.game + (tool.game[0] === 'p' ? '/personas' : '/demons')">{{ tool.titles[langInd] }}</a>
+          </th>
+        </tr>
+      }
     </table>
   `
 })

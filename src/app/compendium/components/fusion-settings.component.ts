@@ -1,12 +1,14 @@
-import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, output } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { FusionSettings } from '../models/fusion-settings';
+
 import { translateComp } from '../models/translator';
+import { TranslateCompPipe } from '../pipes';
 import Translations from  '../data/translations.json';
 
 @Component({
   selector: 'app-fusion-settings',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [TranslateCompPipe],
   template: `
     <ng-container>
       <h2>{{ msgs.DlcTitle | translateComp:lang }}</h2>
@@ -15,7 +17,7 @@ import Translations from  '../data/translations.json';
           <tr><th class="title">Unlock Conditions</th></tr>
         </thead>
         <tbody>
-          <ng-container *ngIf="showEnableAll">
+          @if (showEnableAll) {
             <tr><th>All Demons</th></tr>
             <tr>
               <td>
@@ -23,19 +25,21 @@ import Translations from  '../data/translations.json';
                 <button (click)="toggledAll.emit(false)" style="width: 50%;">Disable All</button>
               </td>
             </tr>
-          </ng-container>
-          <ng-container *ngFor="let cat of fusionSettings.displayHeaders">
+          }
+          @for (cat of fusionSettings.displayHeaders; track cat) {
             <tr><th>{{ cat.category }}</th></tr>
-            <tr *ngFor="let setting of cat.settings">
-              <td>
-                <label>{{ setting.caption }}
-                  <input type="checkbox"
-                    [checked]="setting.enabled"
-                    (change)="toggledName.emit(setting.name)">
-                </label>
-              </td>
-            </tr>
-          </ng-container>
+            @for (setting of cat.settings; track setting) {
+              <tr>
+                <td>
+                  <label>{{ setting.caption }}
+                    <input type="checkbox"
+                      [checked]="setting.enabled"
+                      (change)="toggledName.emit(setting.name)">
+                  </label>
+                </td>
+              </tr>
+            }
+          }
         </tbody>
       </table>
     </ng-container>
@@ -46,8 +50,8 @@ export class FusionSettingsComponent {
   @Input() lang = 'en';
   @Input() fusionSettings: FusionSettings;
   @Input() showEnableAll = false;
-  @Output() toggledAll = new EventEmitter<boolean>();
-  @Output() toggledName = new EventEmitter<string>();
+  toggledAll = output<boolean>();
+  toggledName = output<string>();
   msgs = Translations.FusionSettingsComponent;
 
   constructor(private title: Title) { }

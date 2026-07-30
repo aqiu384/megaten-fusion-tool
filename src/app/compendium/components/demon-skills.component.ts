@@ -1,10 +1,14 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import { Compendium, Skill } from '../models';
+import { SmtSkillListRowComponent } from './smt-skill-list.component';
+import { TranslateCompPipe } from '../pipes';
 import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-demon-skills',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, SmtSkillListRowComponent, TranslateCompPipe],
   template: `
     <table class="entry-table">
       <thead>
@@ -16,30 +20,33 @@ import Translations from '../data/translations.json';
           <th>{{ msgs.Name | translateComp:lang }}</th>
           <th>{{ msgs.Cost | translateComp:lang }}</th>
           <th>{{ msgs.Effect | translateComp:lang }}</th>
-          <th *ngIf="hasTarget">{{ msgs.Target| translateComp:lang }}</th>
-          <th *ngIf="hasRank">{{ msgs.Rank | translateComp:lang }}</th>
-          <th *ngIf="hasInherit">Inherit</th>
-          <th *ngIf="hasLvl">Lvl</th>
+          @if (hasTarget)  { <th>{{ msgs.Target| translateComp:lang }}</th> }
+          @if (hasRank)    { <th>{{ msgs.Rank | translateComp:lang }}</th> }
+          @if (hasInherit) { <th>Inherit</th> }
+          @if (hasLvl)     { <th>Lvl</th> }
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let data of skills"
-          class="app-smt-skill-list-row"
-          [hasTarget]="hasTarget"
-          [hasRank]="hasRank"
-          [hasInherit]="hasInherit"
-          [hasLearned]="false"
-          [hasLvl]="hasLvl"
-          [skillLvl]="data.level"
-          [data]="data"
-          [ngClass]="{
-            extra: data.rank > 70 && data.rank < 90,
-            unique: data.rank > 90
-          }">
-        </tr>
-        <tr *ngIf="!skills.length">
-          <td [attr.colspan]="skillHeaderLen">No {{ title }} Found</td>
-        <tr>
+        @for (data of skills; track $index) {
+          <tr class="app-smt-skill-list-row"
+            [hasTarget]="hasTarget"
+            [hasRank]="hasRank"
+            [hasInherit]="hasInherit"
+            [hasLearned]="false"
+            [hasLvl]="hasLvl"
+            [skillLvl]="data.level"
+            [data]="data"
+            [ngClass]="{
+              extra: data.rank > 70 && data.rank < 90,
+              unique: data.rank > 90
+            }">
+          </tr>
+        }
+        @if (!skills.length) {
+          <tr>
+            <td [attr.colspan]="skillHeaderLen">No {{ title }} Found</td>
+          <tr>
+        }
       </tbody>
     </table>
   `

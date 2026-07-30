@@ -1,45 +1,22 @@
-import {
-  Directive,
-  HostBinding,
-  Input,
-  ElementRef,
-  Renderer2,
-  OnInit,
-  OnDestroy
-} from '@angular/core';
-
-import { Subscription } from 'rxjs';
-
+import { Directive, HostBinding, Input, ElementRef, Renderer2, effect } from '@angular/core';
 import { PositionEdges } from './position-edges';
 import { PositionEdgesService } from './position-edges.service';
 
 @Directive({
   selector: '[appPositionSticky]'
 })
-export class PositionStickyDirective implements OnInit, OnDestroy {
+export class PositionStickyDirective {
   @HostBinding('class.position-sticky') cPositionSticky = true;
   @HostBinding('style.zIndex') sZIndex = 0;
 
-  private subscriptions: Subscription[] = [];
   private _edges: PositionEdges = { top: 0, bottom: 0, left: 0, right: 0, zIndex: 10 };
 
   constructor(
     private elementRef: ElementRef,
     private renderer: Renderer2,
     private edgesService: PositionEdgesService,
-  ) { }
-
-  ngOnInit() {
-    this.subscriptions.push(
-      this.edgesService.parentEdges.subscribe(edges => {
-        this.edges = edges;
-      }));
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
+  ) { 
+    effect(() => { this.edges = edgesService.parentEdges(); });
   }
 
   nextEdges() {

@@ -1,10 +1,14 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
+import { DemonStatsComponent } from '../../compendium/components/demon-stats.component';
+import { DemonResistsComponent } from '../../compendium/components/demon-resists.component';
+import { DemonSkillsComponent } from '../../compendium/components/demon-skills.component';
+import { P1FusionTableComponent } from './p1-fusion-table.component';
 
 @Component({
   selector: 'app-enemy-entry',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [DemonStatsComponent, DemonResistsComponent, DemonSkillsComponent, P1FusionTableComponent],
   template: `
     <app-demon-stats
       [title]="'Lvl ' + demon.lvl + ' ' + demon.race + ' ' + demon.name"
@@ -21,22 +25,26 @@ import { Compendium } from '../models/compendium';
       [statHeaders]="compConfig.baseStats"
       [stats]="demon.atks">
     </app-demon-stats>
-    <app-demon-resists *ngIf="compConfig.presistElems.length"
-      [resistHeaders]="compConfig.presistElems"
-      [resists]="demon.presists">
-    </app-demon-resists>
+    @if (compConfig.presistElems.length) {
+      <app-demon-resists
+        [resistHeaders]="compConfig.presistElems"
+        [resists]="demon.presists">
+      </app-demon-resists>
+    }
     <app-demon-resists
       [resistHeaders]="compConfig.mresistElems"
       [resists]="demon.mresists">
     </app-demon-resists>
-    <app-demon-skills *ngIf="compConfig.hasFusion"
-      [title]="'Transferable Skills'"
-      [hasLvl]="false"
-      [hasTarget]="true"
-      [elemOrder]="compConfig.elemOrder"
-      [compendium]="compendium"
-      [skillLevels]="demon.transfers">
-    </app-demon-skills>
+    @if (compConfig.hasFusion) {
+      <app-demon-skills
+        [title]="'Transferable Skills'"
+        [hasLvl]="false"
+        [hasTarget]="true"
+        [elemOrder]="compConfig.elemOrder"
+        [compendium]="compendium"
+        [skillLevels]="demon.transfers">
+      </app-demon-skills>
+    }
     <app-demon-skills
       [title]="'Nontransferable Skills'"
       [hasLvl]="false"
@@ -45,8 +53,10 @@ import { Compendium } from '../models/compendium';
       [compendium]="compendium"
       [skillLevels]="demon.skills">
     </app-demon-skills>
-    <app-p1-fusion-table *ngIf="compConfig.appCssClasses[0] === 'p1'">
-    </app-p1-fusion-table>
+    @if (compConfig.appCssClasses[0] === 'p1') {
+      <app-p1-fusion-table>
+      </app-p1-fusion-table>
+    }
   `
 })
 export class EnemyEntryComponent {

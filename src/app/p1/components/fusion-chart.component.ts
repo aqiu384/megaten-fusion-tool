@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, OnChanges, OnDestroy, Input } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, OnChanges, OnDestroy, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
@@ -8,30 +9,46 @@ import { Arcanas } from '../constants';
 
 @Component({
   selector: 'app-p1-fusion-chart',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule],
   template: `
     <table class="p1-fusion-table">
       <tbody>
         <tr><th class="title" [attr.colspan]="table[0].length">{{ normTitle }}</th></tr>
-        <tr><th *ngFor="let race of table[0]">{{ race.slice(0, 4) }}</th></tr>
-        <tr *ngFor="let row of table.slice(1, table.length - 1)">
-          <th>{{ row[0] }}</th>
-          <td *ngFor="let race of row.slice(1, row.length - 1)" [ngClass]="[race.slice(0, 8)]">{{ race.slice(8, 12) }}</td>
-          <th>{{ row[row.length - 1] }}</th>
+        <tr>
+          @for (race of table[0]; track $index) { <th>{{ race.slice(0, 4) }}</th> }
         </tr>
-        <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, 4) }}</th></tr>
+        @for (row of table.slice(1, table.length - 1); track $index) {
+          <tr>
+            <th>{{ row[0] }}</th>
+            @for (race of row.slice(1, row.length - 1); track $index) {
+              <td [ngClass]="[race.slice(0, 8)]">{{ race.slice(8, 12) }}</td>
+            }
+            <th>{{ row[row.length - 1] }}</th>
+          </tr>
+        }
+        <tr>
+          @for (race of table[table.length - 1]; track $index) { <th>{{ race.slice(0, 4) }}</th> }
+        </tr>
       </tbody>
     </table>
     <table class="p1-fusion-table">
       <tbody>
         <tr><th class="title" [attr.colspan]="elemTable[0].length">{{ elemTitle }}</th></tr>
-        <tr><th *ngFor="let race of elemTable[0]">{{ race.slice(0, 4) }}</th></tr>
-        <tr *ngFor="let row of elemTable.slice(1, elemTable.length - 1)">
-          <th>{{ row[0] }}</th>
-          <td *ngFor="let race of row.slice(1, row.length - 1)" [ngClass]="[race.slice(0, 4)]">{{ race.slice(4) }}</td>
-          <th>{{ row[row.length - 1] }}</th>
+        <tr>
+          @for (race of elemTable[0]; track $index) { <th>{{ race.slice(0, 4) }}</th> }
         </tr>
-        <tr><th *ngFor="let race of elemTable[elemTable.length - 1]">{{ race.slice(0, 4) }}</th></tr>
+        @for (row of elemTable.slice(1, elemTable.length - 1); track $index) {
+          <tr>
+            <th>{{ row[0] }}</th>
+            @for (race of row.slice(1, row.length - 1); track $index) {
+              <td [ngClass]="[race.slice(0, 4)]">{{ race.slice(4) }}</td>
+            }
+            <th>{{ row[row.length - 1] }}</th>
+          </tr>
+        }
+        <tr>
+          @for (race of elemTable[elemTable.length - 1]; track $index) { <th>{{ race.slice(0, 4) }}</th> }
+        </tr>
       </tbody>
     </table>
   `,
@@ -139,8 +156,8 @@ export class P1FusionChartComponent implements OnChanges {
 
 @Component({
   selector: 'app-fusion-chart-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+  imports: [P1FusionChartComponent],
+    template: `
     <app-p1-fusion-chart
       [normChart]="normChart"
       [normTitle]="appName + ' - Normal Fusions'"

@@ -1,10 +1,14 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 import { FusionEntry } from '../models';
+import { LvlToNumberPipe, TranslateCompPipe } from '../pipes';
 import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-fusion-entry-table',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, RouterModule, LvlToNumberPipe, TranslateCompPipe],
   template: `
     <table [ngClass]="isFusion ? 'list-table' : 'entry-table'">
       <thead>
@@ -17,12 +21,14 @@ import Translations from '../data/translations.json';
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let data of rowData">
-          <td>{{ inGameCurrencySymbol + (data.price | number:'1.0-0') }}</td>
-          <td>{{ data.race1 }}</td>
-          <td>{{ data.lvl1 | lvlToNumber }}</td>
-          <td><a routerLink="{{ baseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
-        </tr>
+        @for (data of rowData; track data) {
+          <tr>
+            <td>{{ inGameCurrencySymbol + (data.price | number:'1.0-0') }}</td>
+            <td>{{ data.race1 }}</td>
+            <td>{{ data.lvl1 | lvlToNumber }}</td>
+            <td><a routerLink="{{ baseUrl }}/{{ data.name1 }}">{{ data.name1 }}</a></td>
+          </tr>
+        }
       </tbody>
     </table>
   `

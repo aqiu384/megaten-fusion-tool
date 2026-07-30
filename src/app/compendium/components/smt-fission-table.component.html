@@ -1,0 +1,29 @@
+@if (fusionPrereq) {
+  <table class="list-table">
+    <thead><tr><th class="title">{{ msgs.SpecialFusionCondition | translateComp:lang }}</th></tr></thead>
+    <tbody><tr><td>{{ fusionPrereq }}</td></tr></tbody>
+  </table>
+}
+@if (fusionEntries.length) {
+  <app-fusion-entry-table
+    [lang]="lang"
+    [title]="(msgs.SpecialFusionIngredients | translateComp:lang) + currentDemon"
+    [baseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
+    [rowData]="fusionEntries"
+    [isFusion]="true"
+    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
+  </app-fusion-entry-table>
+}
+@if (fusionPairs.length || !fusionEntries.length) {
+  <app-fusion-pair-table
+    [lang]="lang"
+    [title]="(msgs.Title | translateComp:lang) + currentDemon"
+    [leftHeader]="msgs.LeftHeader | translateComp:lang"
+    [rightHeader]="msgs.RightHeader | translateComp:lang"
+    [leftBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
+    [rightBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
+    [raceOrder]="fusionChart.raceOrder"
+    [rowData]="fusionPairs"
+    [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
+  </app-fusion-pair-table>
+}

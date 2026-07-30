@@ -1,24 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Title } from '@angular/platform-browser';
-
-import { CompendiumRoutingModule } from './compendium-routing.module';
-import { FusionDataService } from './fusion-data.service';
-
-import { COMPENDIUM_CONFIG, FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
+import { createCompendiumRoutes } from './compendium-routing.module';
 import { CompendiumConfig } from './models';
-
-import { SharedModule } from '../shared/shared.module';
-import { SharedCompendiumModule } from '../compendium/compendium.module';
-
-import { CompendiumComponent } from './components/compendium.component';
-import { DemonListContainerComponent } from './components/demon-list.component';
-import { SkillListContainerComponent } from './components/skill-list.component';
-
-import { DemonEntryComponent, DemonEntryContainerComponent } from './components/demon-entry.component';
-import { P5SFusionChartComponent, FusionChartContainerComponent } from './components/fusion-chart.component';
-import { P5SFissionTableComponent } from './components/p5s-fission-table.component';
-import { P5SFusionTableComponent } from './components/p5s-fusion-table.component';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import DEMON_DATA_JSON from './data/demon-data.json';
@@ -94,32 +75,4 @@ function createCompConfig(): CompendiumConfig {
   };
 }
 
-const SMT_COMP_CONFIG = createCompConfig();
-
-@NgModule({
-  imports: [
-    CommonModule,
-    SharedModule,
-    SharedCompendiumModule,
-    CompendiumRoutingModule
-  ],
-  declarations: [
-    CompendiumComponent,
-    DemonListContainerComponent,
-    SkillListContainerComponent,
-    DemonEntryComponent,
-    DemonEntryContainerComponent,
-    P5SFissionTableComponent,
-    P5SFusionTableComponent,
-    P5SFusionChartComponent,
-    FusionChartContainerComponent
-  ],
-  providers: [
-    Title,
-    FusionDataService,
-    [{ provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
-    [{ provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }],
-    [{ provide: COMPENDIUM_CONFIG, useValue: SMT_COMP_CONFIG }]
-  ]
-})
-export class CompendiumModule { }
+export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

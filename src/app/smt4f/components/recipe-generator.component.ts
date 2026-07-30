@@ -1,7 +1,8 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
+import { RecipeGeneratorComponent } from '../../compendium/components/recipe-generator.component';
 import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
@@ -10,7 +11,7 @@ import Translations from  '../../compendium/data/translations.json';
 
 @Component({
   selector: 'app-recipe-generator-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RecipeGeneratorComponent],
   template: `
     <app-recipe-generator
       [maxSkills]="maxSkills"

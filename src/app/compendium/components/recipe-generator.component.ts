@@ -1,9 +1,10 @@
-import { Component, ChangeDetectionStrategy, Input, OnChanges, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { Component, Input, OnChanges, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormGroup, FormBuilder } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { auditTime } from 'rxjs/operators';
 
-import { SkillLevelToShortStringPipeLocale } from '../pipes';
+import { SkillLevelToShortStringPipeLocale, TranslateCompPipe } from '../pipes';
 import { Demon, Skill, FusionRecipe, Compendium, SquareChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { createLeftRightCombos, createLeftRightRecipe } from '../models/recipe-generator';
 import Translations from '../data/translations.json';
@@ -13,44 +14,52 @@ type SkillLookup = { [key: string]: Skill[]; }
 
 @Component({
   selector: 'app-recipe-generator',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, ReactiveFormsModule, TranslateCompPipe],
   template: `
     <form [formGroup]="form">
       <ng-template #inheritElems let-skillLookup="skillLookup">
         <td colspan="3" style="text-align: center;">
-          <ng-container *ngFor="let elem of recipeConfig.inheritElems; let i = index">
-            <div *ngIf="skillLookup[elem]" [ngClass]="['element-icon', elem]">{{ elem }}</div>
-          </ng-container>
+          @for (elem of recipeConfig.inheritElems; track elem; let i = $index) {
+            @if (skillLookup[elem]) {
+              <div [ngClass]="['element-icon', elem]">{{ elem }}</div>
+            }
+          }
         </td>
       </ng-template>
-
+    
       <ng-template #skillPickerHeader>
         <th style="width: 10%;">{{ msgs.Elem | translateComp:lang }}</th>
         <th style="width: 15%;">{{ msgs.Skill | translateComp:lang }}</th>
         <th style="width: 20%;">{{ msgs.Ingredient | translateComp:lang }}</th>
       </ng-template>
-
+    
       <ng-template #skillPicker let-ingred="ingredControl" let-skillLookup="skillLookup">
         <td>
           <select [formControl]="ingred.controls.elem">
             <option value="-">-</option>
-            <ng-container *ngFor="let elem of recipeConfig.skillElems">
-              <option *ngIf="skillLookup[elem]" [value]="elem">{{ recipeConfig.displayElems[elem] || elem }}</option>
-            </ng-container>
+            @for (elem of recipeConfig.skillElems; track elem) {
+              @if (skillLookup[elem]) {
+                <option [value]="elem">{{ recipeConfig.displayElems[elem] || elem }}</option>
+              }
+            }
           </select>
         </td>
         <td>
           <select [formControl]="ingred.controls.skill">
-            <option *ngFor="let skill of skillLookup[ingred.controls.elem.value]" [ngValue]="skill">{{ skill.name }}</option>
+            @for (skill of skillLookup[ingred.controls.elem.value]; track skill) {
+              <option [ngValue]="skill">{{ skill.name }}</option>
+            }
           </select>
         </td>
         <td>
           <select [formControl]="ingred.controls.demon">
-            <option *ngFor="let demon of learnedBy[ingred.controls.skill.value.name]" [ngValue]="demon">{{ demon.name }}</option>
+            @for (demon of learnedBy[ingred.controls.skill.value.name]; track demon) {
+              <option [ngValue]="demon">{{ demon.name }}</option>
+            }
           </select>
         </td>
       </ng-template>
-
+    
       <h2>{{ msgs.RecipeGenerator | translateComp:lang }}</h2>
       <table class="entry-table" style="width: 40%;">
         <tr><th colspan="3" class="title">{{ msgs.Target | translateComp:lang }}</th></tr>
@@ -58,7 +67,9 @@ type SkillLookup = { [key: string]: Skill[]; }
         <tr>
           <td colspan="3">
             <select formControlName="demonT">
-              <option *ngFor="let demon of demonTs" [ngValue]="demon">{{ demon.name }}</option>
+              @for (demon of demonTs; track demon) {
+                <option [ngValue]="demon">{{ demon.name }}</option>
+              }
             </select>
           </td>
         </tr>
@@ -76,16 +87,20 @@ type SkillLookup = { [key: string]: Skill[]; }
         <tr>
           <td colspan="3">
             <select formControlName="demonL">
-              <option *ngFor="let demon of demonLs" [ngValue]="demon">{{ demon.name }} ({{ demonRs[demon.name].length }})</option>
+              @for (demon of demonLs; track demon) {
+                <option [ngValue]="demon">{{ demon.name }} ({{ demonRs[demon.name].length }})</option>
+              }
             </select>
           </td>
           <td></td>
           <td colspan="3">
             <select formControlName="demonR">
-              <option *ngFor="let demon of demonRs[form.controls.demonL.value.name]" [ngValue]="demon">{{ demon.name }}</option>
+              @for (demon of demonRs[form.controls.demonL.value.name]; track demon) {
+                <option [ngValue]="demon">{{ demon.name }}</option>
+              }
             </select>
           </td>
-        <tr>
+        </tr>
         <tr>
           <ng-container *ngTemplateOutlet="inheritElems; context: { skillLookup: skillLs }"></ng-container>
           <td style=></td>
@@ -97,44 +112,65 @@ type SkillLookup = { [key: string]: Skill[]; }
           <ng-container *ngTemplateOutlet="skillPickerHeader"></ng-container>
         </tr>
         <ng-container formArrayName="ingreds">
-          <ng-container *ngFor="let ingred of form.controls.ingreds['controls']; let i = index">
-            <tr *ngIf="i < maxSkills && i % 2 === 0">
-              <ng-container [formGroupName]="i" *ngTemplateOutlet="skillPicker; context: {
-                ingredControl: form.controls.ingreds['controls'][i],
-                skillLookup: skillLs
-              }"></ng-container>
-              <td></td>
-              <ng-container [formGroupName]="i + 1" *ngTemplateOutlet="skillPicker; context: {
-                ingredControl: form.controls.ingreds['controls'][i + 1],
-                skillLookup: skillRs
-              }"></ng-container>
-            </tr>
-          </ng-container>
+          @for (ingred of form.controls.ingreds['controls']; track ingred; let i = $index) {
+            @if (i < maxSkills && i % 2 === 0) {
+              <tr>
+                <ng-container [formGroupName]="i" *ngTemplateOutlet="skillPicker; context: {
+                  ingredControl: form.controls.ingreds['controls'][i],
+                  skillLookup: skillLs
+                }"></ng-container>
+                <td></td>
+                <ng-container [formGroupName]="i + 1" *ngTemplateOutlet="skillPicker; context: {
+                  ingredControl: form.controls.ingreds['controls'][i + 1],
+                  skillLookup: skillRs
+                }"></ng-container>
+              </tr>
+            }
+          }
         </ng-container>
       </table>
-      <table *ngIf="recipe" class="entry-table">
-        <tr><th colspan="2" class="title">{{ msgs.FusionRecipe | translateComp:lang }}</th></tr>
-        <tr>
-          <th>{{ msgs.LeftChain | translateComp:lang }}</th>
-          <th>{{ msgs.RightChain | translateComp:lang }}</th>
-        </tr>
-        <tr>
-          <td style="width: 50%" *ngIf="recipeLeft.length"><ul><li *ngFor="let step of recipeLeft">{{ step }}</li></ul></td>
-          <td style="width: 50%" *ngIf="!recipeLeft.length" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
-          <td style="width: 50%" *ngIf="recipeRight.length"><ul><li *ngFor="let step of recipeRight">{{ step }}</li></ul></td>
-          <td style="width: 50%" *ngIf="!recipeRight.length" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
-        </tr>
-        <tr *ngIf="fusionPrereq"><td colspan="2" style="padding: 1em; text-align: center;">
-          {{ msgs.SpecialFusionCondition | translateComp:lang }}: {{ fusionPrereq }}
-        </td></tr>
-        <tr><td colspan="2" style="padding: 1em; text-align: center;">
-          <ng-container *ngIf="recipe.stepR.length">
-            {{ recipeResult.join(' x ') }} = {{ recipe.result }}<br>
-            [{{ resultSkills.join(', ') }}]
-          </ng-container>
-          <ng-container *ngIf="!recipe.stepR.length">{{ msgs.NoRecipesFound | translateComp:lang }}</ng-container>
-        </td></tr>
-      </table>
+
+      @if (recipe) {
+        <table class="entry-table">
+          <tr><th colspan="2" class="title">{{ msgs.FusionRecipe | translateComp:lang }}</th></tr>
+          <tr>
+            <th>{{ msgs.LeftChain | translateComp:lang }}</th>
+            <th>{{ msgs.RightChain | translateComp:lang }}</th>
+          </tr>
+          <tr>
+            @if (recipeLeft.length) {
+              <td style="width: 50%"><ul>
+                @for (step of recipeLeft; track step) { <li>{{ step }}</li> }
+              </ul></td>
+            }
+            @if (!recipeLeft.length) {
+              <td style="width: 50%" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
+            }
+            @if (recipeRight.length) {
+              <td style="width: 50%"><ul>
+                @for (step of recipeRight; track step) { <li>{{ step }}</li> }
+              </ul></td>
+            }
+            @if (!recipeRight.length) {
+              <td style="width: 50%" style="padding: 1em; text-align: center;">{{ msgs.NoRecipesFound | translateComp:lang }}</td>
+            }
+          </tr>
+          @if (fusionPrereq) {
+            <tr><td colspan="2" style="padding: 1em; text-align: center;">
+              {{ msgs.SpecialFusionCondition | translateComp:lang }}: {{ fusionPrereq }}
+            </td></tr>
+          }
+          <tr><td colspan="2" style="padding: 1em; text-align: center;">
+            @if (recipe.stepR.length) {
+              {{ recipeResult.join(' x ') }} = {{ recipe.result }}<br>
+              [{{ resultSkills.join(', ') }}]
+            }
+            @if (!recipe.stepR.length) {
+              {{ msgs.NoRecipesFound | translateComp:lang }}
+            }
+          </td></tr>
+        </table>
+      }
     </form>
   `,
   styles: [`

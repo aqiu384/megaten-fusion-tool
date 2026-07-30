@@ -1,19 +1,26 @@
-import { Component, ChangeDetectionStrategy, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { FusionChart } from '../../compendium/models';
 
 @Component({
   selector: 'app-species-triple-chart',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <table>
       <tr><th class="title" [attr.colspan]="table[0].length">{{ title }}</th></tr>
-      <tr><th *ngFor="let race of table[0]">{{ race.slice(0, 4) }}</th></tr>
-      <tr *ngFor="let row of table.slice(1, table.length - 1)">
-        <th>{{ row[0] }}</th>
-        <td *ngFor="let col of row.slice(1, row.length -1)">{{ col.slice(0, 4) }}</td>
-        <th>{{ row[row.length - 1] }}</th>
+      <tr>
+        @for (race of table[0]; track $index) { <th>{{ race.slice(0, 4) }}</th> }
       </tr>
-      <tr><th *ngFor="let race of table[table.length - 1]">{{ race.slice(0, 4) }}</th></tr>
+      @for (row of table.slice(1, table.length - 1); track $index) {
+        <tr>
+          <th>{{ row[0] }}</th>
+          @for (col of row.slice(1, row.length -1); track $index) {
+            <td>{{ col.slice(0, 4) }}</td>
+          }
+          <th>{{ row[row.length - 1] }}</th>
+        </tr>
+      }
+      <tr>
+        @for (race of table[table.length - 1]; track $index) { <th>{{ race.slice(0, 4) }}</th> }
+      </tr>
     </table>
   `,
   styles: [`

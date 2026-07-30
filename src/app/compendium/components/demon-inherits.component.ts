@@ -1,47 +1,71 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateCompPipe, TranslateElementLabelPipe, RoundInheritPercentPipe, ElementAffinityToStringPipe } from '../pipes';
 import Translations from '../data/translations.json';
 
 @Component({
   selector: 'app-demon-inherits',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, TranslateCompPipe, TranslateElementLabelPipe, RoundInheritPercentPipe, ElementAffinityToStringPipe],
   template: `
     <table class="entry-table">
       <thead>
         <tr>
-          <th *ngIf="!hasLvls" [attr.colspan]="inheritHeaders.length" class="title">Inheritable Skills</th>
-          <th *ngIf="hasLvls && inheritHeaders.length" [attr.colspan]="inheritHeaders.length" class="title">
-            {{ msgs.SkillAffinities | translateComp:lang }}
-          </th>
+          @if (!hasLvls) {
+            <th [attr.colspan]="inheritHeaders.length" class="title">Inheritable Skills</th>
+          }
+          @if (hasLvls && inheritHeaders.length) {
+            <th [attr.colspan]="inheritHeaders.length" class="title">
+              {{ msgs.SkillAffinities | translateComp:lang }}
+            </th>
+          }
         </tr>
         <tr [ngClass]="{ capitalize: !hasIcons }">
-          <th *ngFor="let element of inheritHeaders" [style.width.%]="100 / inheritHeaders.length">
-            <ng-container *ngIf="!hasIcons">{{ element }}</ng-container>
-            <div *ngIf="hasIcons" [title]="element | translateElementLabel:lang" class="element-icon {{ element }}">{{ element }}</div>
-          </th>
+          @for (element of inheritHeaders; track $index) {
+            <th [style.width.%]="100 / inheritHeaders.length">
+              @if (!hasIcons) {
+                {{ element }}
+              }
+              @if (hasIcons) {
+                <div [title]="element | translateElementLabel:lang" class="element-icon {{ element }}">{{ element }}</div>
+              }
+            </th>
+          }
         </tr>
       </thead>
       <tbody>
-        <tr *ngIf="!hasLvls && !hasChance">
-          <td *ngFor="let inherit of inherits" [style.color]="inherit ? null : 'transparent'">
-            {{ inherit ? 'yes' : 'no' }}
-          </td>
-        </tr>
-        <tr *ngIf="hasChance">
-          <td *ngFor="let affinity of inherits" class="affinity{{ affinity | roundInheritPercent }}">
-            {{ affinity }}%
-          </td>
-        </tr>
-        <tr *ngIf="hasLvls">
-          <td *ngFor="let affinity of inherits" class="affinity{{ affinity }}">
-            {{ affinity | affinityToString }}
-          </td>
-        </tr>
+        @if (!hasLvls && !hasChance) {
+          <tr>
+            @for (inherit of inherits; track $index) {
+              <td [style.color]="inherit ? null : 'transparent'">
+                {{ inherit ? 'yes' : 'no' }}
+              </td>
+            }
+          </tr>
+        }
+        @if (hasChance) {
+          <tr>
+            @for (affinity of inherits; track $index) {
+              <td class="affinity{{ affinity | roundInheritPercent }}">
+                {{ affinity }}%
+              </td>
+            }
+          </tr>
+        }
+        @if (hasLvls) {
+          <tr>
+            @for (affinity of inherits; track $index) {
+              <td class="affinity{{ affinity }}">
+                {{ affinity | affinityToString }}
+              </td>
+            }
+          </tr>
+        }
       </tbody>
     </table>
   `,
   styles: [`
     .capitalize { text-transform: capitalize; }
-  `]
+  `],
 })
 export class DemonInheritsComponent {
   @Input() inheritHeaders: string[] = [];

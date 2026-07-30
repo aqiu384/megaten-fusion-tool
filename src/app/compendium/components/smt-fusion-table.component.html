@@ -1,0 +1,11 @@
+<app-fusion-pair-table
+  [lang]="lang"
+  [title]="currentDemon + (msgs.Title | translateComp:lang)"
+  [leftHeader]="msgs.LeftHeader | translateComp:lang"
+  [rightHeader]="msgs.RightHeader | translateComp:lang"
+  [leftBaseUrl]="'../..'"
+  [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
+  [raceOrder]="fusionChart.raceOrder"
+  [rowData]="fusionPairs"
+  [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">
+</app-fusion-pair-table>

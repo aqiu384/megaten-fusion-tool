@@ -1,12 +1,15 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import Translations from '../data/translations.json';
+import { TranslateCompPipe } from '../pipes';
 
 @Component({
   selector: 'app-demon-stats',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, TranslateCompPipe],
   template: `
     <ng-container>
-      <h2 *ngIf="title.includes('Lvl')">{{ title }}</h2>
+      @if (title.includes('Lvl')) { <h2>{{ title }}</h2> }
       <table class="entry-table">
         <thead>
           <tr>
@@ -15,26 +18,28 @@ import Translations from '../data/translations.json';
             </th>
           </tr>
           <tr>
-            <th *ngIf="price">{{ msgs.Price | translateComp:lang }}</th>
-            <th *ngFor="let stat of statHeaders">{{ stat }}</th>
-            <th *ngIf="inherits">Inherits</th>
-            <th *ngFor="let fusion of fusionHeaders">{{ fusion }}</th>
+            @if (price) { <th>{{ msgs.Price | translateComp:lang }}</th> }
+            @for (stat of statHeaders; track $index) { <th>{{ stat }}</th> }
+            @if (inherits) { <th>Inherits</th> }
+            @for (fusion of fusionHeaders; track $index) { <th>{{ fusion }}</th> }
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td *ngIf="price" [attr.rowSpan]="growths.length">{{ inGameCurrencySymbol + (price | number:'1.0-0') }}</td>
-            <td *ngFor="let stat of stats">{{ stat }}</td>
-            <td *ngIf="inherits" [attr.rowSpan]="growths.length"><div class="element-icon inherit-icon i{{ inherits }}">{{ inherits }}</div></td>
+            @if (price) { <td [attr.rowSpan]="growths.length">{{ inGameCurrencySymbol + (price | number:'1.0-0') }}</td> }
+            @for (stat of stats; track $index) { <td>{{ stat }}</td> }
+            @if (inherits) { <td [attr.rowSpan]="growths.length"><div class="element-icon inherit-icon i{{ inherits }}">{{ inherits }}</div></td> }
             <ng-content></ng-content>
           </tr>
-          <tr *ngIf="growths.length">
-            <td *ngFor="let growth of growths">{{ growth }}%</td>
-          </tr>
+          @if (growths.length) {
+            <tr>
+              @for (growth of growths; track $index) { <td>{{ growth }}%</td> }
+            </tr>
+          }
         </tbody>
       </table>
-    <ng-container>
-  `
+    </ng-container>
+  `,
 })
 export class DemonStatsComponent {
   @Input() title = 'Demon Entry';

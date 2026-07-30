@@ -1,14 +1,16 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FusionChart } from '../../compendium/models';
 import { FusionDataService } from '../fusion-data.service';
+import { FusionChartComponent } from '../../compendium/components/fusion-chart.component';
+import { SpeciesTripleChartComponent } from './species-triple-chart.component';
 
 @Component({
   selector: 'app-fusion-chart-container',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FusionChartComponent, SpeciesTripleChartComponent],
   template: `
-    <ng-container *ngIf="!fullChart">
+    @if (!fullChart) {
       <app-fusion-chart
         [normChart]="normChart"
         [tripChart]="normChart"
@@ -23,20 +25,22 @@ import { FusionDataService } from '../fusion-data.service';
         [normTitle]="'Light and Neutral Triple Fusions'"
         [tripTitle]="'Dark Triple Fusions'">
       </app-fusion-chart>
-    </ng-container>
-    <ng-container *ngIf="fullChart && !hasDarkRanks">
+    }
+    @if (fullChart && !hasDarkRanks) {
       <app-fusion-chart
         [normChart]="fullChart"
         [mitaTable]="mitamaTable"
         [filterDarks]="false"
         [normTitle]="'Normal Fusions'">
       </app-fusion-chart>
-      <app-species-triple-chart *ngIf="hasTripleFusion"
-        [speciesChart]="tripChart"
-        [title]="appName + ' - Triple Fusions'">
-      </app-species-triple-chart>
-    </ng-container>
-    <ng-container *ngIf="fullChart && hasDarkRanks">
+      @if (hasTripleFusion) {
+        <app-species-triple-chart
+          [speciesChart]="tripChart"
+          [title]="appName + ' - Triple Fusions'">
+        </app-species-triple-chart>
+      }
+    }
+    @if (fullChart && hasDarkRanks) {
       <app-fusion-chart
         [normChart]="fullChart"
         [tripChart]="fullChart"
@@ -48,8 +52,8 @@ import { FusionDataService } from '../fusion-data.service';
         [speciesChart]="tripChart"
         [title]="appName + ' - Triple Fusions'">
       </app-species-triple-chart>
-    </ng-container>
-  `
+    }
+  `,
 })
 export class FusionChartContainerComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
