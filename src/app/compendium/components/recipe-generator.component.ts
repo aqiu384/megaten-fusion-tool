@@ -1,6 +1,6 @@
-import { Component, input, computed, linkedSignal } from '@angular/core';
+import { Component, input, computed, effect, linkedSignal, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { form } from '@angular/forms/signals';
+import { FieldTree, form } from '@angular/forms/signals';
 import { FormsModule } from '@angular/forms';
 
 import { SkillLevelToShortStringPipeLocale, TranslateCompPipe } from '../pipes';
@@ -22,61 +22,122 @@ const BLANK_SKILL: Skill = {
   effect: '', target: '', level: 0, learnedBy: [{ demon: '-', level: 0 }]
 };
 
+interface SkillPickModel {
+  disabled: boolean;
+  elem: string;
+  skill: Skill;
+  demon: Demon;
+};
+
+function createSkillPickList(length: number): SkillPickModel[] {
+  return Array.from({ length }, (): SkillPickModel => ({
+    disabled: false,
+    elem: '-',
+    skill: BLANK_SKILL,
+    demon: BLANK_DEMON
+  }));
+}
+
+@Component({
+  selector: 'td[app-recipe-inherit-elems]',
+  imports: [CommonModule],
+  template: `
+    @for (elem of inheritElems(); track elem) {
+      @if (skillLookup()[elem]) {
+        <div [ngClass]="['element-icon', elem]">{{ elem }}</div>
+      }
+    }
+  `
+})
+export class RecipeInheritElemsComponent {
+  inheritElems = input.required<string[]>();
+  skillLookup = input.required<SkillLookup>();
+}
+
+@Component({
+  selector: 'app-recipe-skill-picker',
+  imports: [FormsModule],
+  template: `
+    <td>
+      <select [(ngModel)]="elem" [disabled]="disabled()">
+        <option value="-">-</option>
+        @for (elem of recipeConfig().skillElems; track elem) {
+          @if (skillIs()[elem]) {
+            <option [ngValue]="elem">{{ recipeConfig().displayElems[elem] || elem }}</option>
+          }
+        }
+      </select>
+    </td>
+    <td>
+      <select [(ngModel)]="skill" [disabled]="disabled()">
+        @for (skill of skillIs()[elem()]; track skill.name) {
+          <option [ngValue]="skill">{{ skill.name }}</option>
+        }
+      </select>
+    </td>
+    <td>
+      <select [(ngModel)]="demon" [disabled]="disabled()">
+        @for (demon of learnedBy()[skill().name]; track demon.name) {
+          <option [ngValue]="demon">{{ demon.name }}</option>
+        }
+      </select>
+    </td>
+  `,
+  host: {
+    style: 'display: contents;'
+  }
+})
+export class RecipeSkillPickerComponent {
+  form = input.required<FieldTree<SkillPickModel>>({ alias: 'skillPickForm' });
+  recipeConfig = input.required<RecipeGeneratorConfig>();
+  demonT = input.required<Demon>();
+  skillIs = input.required<SkillLookup>();
+  learnedBy = input.required<DemonLookup>();
+  innateCount = input.required<number>();
+  index = input.required<number>();
+
+  constructor() {
+    effect(() => this.form().disabled().value.set(this.disabled()));
+    effect(() => this.form().elem().value.set(this.elem()));
+    effect(() => this.form().skill().value.set(this.skill()));
+    effect(() => this.form().demon().value.set(this.demon()));
+  }
+
+  disabled = linkedSignal(() => this.index() < this.innateCount());
+
+  elem = linkedSignal<{ demonT: Demon, skillIs: SkillLookup }, string>({
+    source: () => ({ demonT: this.demonT(), skillIs: this.skillIs() }),
+    computation: ({ demonT, skillIs }, prev) =>
+      !prev || demonT !== prev.source.demonT || !skillIs[prev.value] ? '-' : prev.value
+  });
+
+  skill = linkedSignal<{ elem: string, skillIs: SkillLookup }, Skill>({
+    source: () => ({ elem: this.elem(), skillIs: this.skillIs() }),
+    computation: ({ elem, skillIs }, prev) =>
+      !prev || !skillIs[elem].includes(prev.value) ? skillIs[elem][0] : prev.value
+  });
+
+  demon = linkedSignal(() => this.learnedBy()[this.skill().name][0]);
+}
+
 @Component({
   selector: 'app-recipe-generator',
-  imports: [CommonModule, FormsModule, TranslateCompPipe],
+  imports: [CommonModule, FormsModule, TranslateCompPipe, RecipeSkillPickerComponent, RecipeInheritElemsComponent],
   template: `
-    <div>
-      <ng-template #inheritElems let-skillLookup="skillLookup">
-        <td colspan="3" style="text-align: center;">
-          @for (elem of recipeConfig().inheritElems; track elem) {
-            @if (skillLookup()[elem]) {
-              <div [ngClass]="['element-icon', elem]">{{ elem }}</div>
-            }
-          }
-        </td>
-      </ng-template>
-    
+    <form>
       <ng-template #skillPickerHeader>
         <th style="width: 10%;">{{ msgs.Elem | translateComp:lang() }}</th>
         <th style="width: 15%;">{{ msgs.Skill | translateComp:lang() }}</th>
         <th style="width: 20%;">{{ msgs.Ingredient | translateComp:lang() }}</th>
       </ng-template>
 
-      <ng-template #skillPicker let-ingred="ingred" let-skillLookup="skillLookup">
-        <td>
-          <select [(ngModel)]="ingred.elem" [disabled]="ingred.disabled()">
-            <option value="-">-</option>
-            @for (elem of recipeConfig().skillElems; track elem) {
-              @if (skillLookup()[elem]) {
-                <option [ngValue]="elem">{{ recipeConfig().displayElems[elem] || elem }}</option>
-              }
-            }
-          </select>
-        </td>
-        <td>
-          <select [(ngModel)]="ingred.skill" [disabled]="ingred.disabled()">
-            @for (skill of skillLookup()[ingred.elem()]; track skill.name) {
-              <option [ngValue]="skill">{{ skill.name }}</option>
-            }
-          </select>
-        </td>
-        <td>
-          <select [(ngModel)]="ingred.demon" [disabled]="ingred.disabled()">
-            @for (demon of learnedBy()[ingred.skill().name]; track demon.name) {
-              <option [ngValue]="demon">{{ demon.name }}</option>
-            }
-          </select>
-        </td>
-      </ng-template>
-    
       <h2>{{ msgs.RecipeGenerator | translateComp:lang() }}</h2>
       <table class="entry-table" style="width: 40%;">
         <tr><th colspan="3" class="title">{{ msgs.Target | translateComp:lang() }}</th></tr>
         <tr><th colspan="3">{{ msgs.Target | translateComp:lang() }}</th></tr>
         <tr>
-          <td colspan="3">
-            <select [(ngModel)]="demonT">
+          <td>
+            <select [(ngModel)]="demonT" name="demonT">
               @for (demon of demonTs(); track demon.name) {
                 <option [ngValue]="demon">{{ demon.name }}</option>
               }
@@ -84,7 +145,7 @@ const BLANK_SKILL: Skill = {
           </td>
         </tr>
         <tr>
-          <ng-container *ngTemplateOutlet="inheritElems; context: { skillLookup: skillTs }"></ng-container>
+          <td app-recipe-inherit-elems [inheritElems]="recipeConfig().inheritElems" [skillLookup]="skillTs()"></td>
         </tr>
       </table>
       <table class="entry-table" style="width: 70%;">
@@ -96,7 +157,7 @@ const BLANK_SKILL: Skill = {
         </tr>
         <tr>
           <td colspan="3">
-            <select [(ngModel)]="demonL">
+            <select [(ngModel)]="demonL" name="demonL">
               @for (demon of demonLs(); track demon.name) {
                 <option [ngValue]="demon">{{ demon.name }} ({{ demonRs()[demon.name].length }})</option>
               }
@@ -104,7 +165,7 @@ const BLANK_SKILL: Skill = {
           </td>
           <td></td>
           <td colspan="3">
-            <select [(ngModel)]="demonR">
+            <select [(ngModel)]="demonR" name="demonR">
               @for (demon of demonRs()[demonL().name]; track demon.name) {
                 <option [ngValue]="demon">{{ demon.name }}</option>
               }
@@ -112,9 +173,9 @@ const BLANK_SKILL: Skill = {
           </td>
         </tr>
         <tr>
-          <ng-container *ngTemplateOutlet="inheritElems; context: { skillLookup: skillLs }"></ng-container>
-          <td style=></td>
-          <ng-container *ngTemplateOutlet="inheritElems; context: { skillLookup: skillRs }"></ng-container>
+          <td colspan="3" app-recipe-inherit-elems [inheritElems]="recipeConfig().inheritElems" [skillLookup]="skillLs()"></td>
+          <td></td>
+          <td colspan="3" app-recipe-inherit-elems [inheritElems]="recipeConfig().inheritElems" [skillLookup]="skillRs()"></td>
         </tr>
         <tr>
           <ng-container *ngTemplateOutlet="skillPickerHeader"></ng-container>
@@ -122,11 +183,27 @@ const BLANK_SKILL: Skill = {
           <ng-container *ngTemplateOutlet="skillPickerHeader"></ng-container>
         </tr>
         <ng-container formArrayName="ingreds">
-          @for (_ of ingredLs; track $index; let i = $index) {
+          @for (_ of recipeInputForm.ingredLs; track $index) {
             <tr>
-              <ng-container *ngTemplateOutlet="skillPicker; context: { ingred: ingredLs[i], skillLookup: skillLs }"></ng-container>
+              <app-recipe-skill-picker
+                [skillPickForm]="recipeInputForm.ingredLs[$index]"
+                [recipeConfig]="recipeConfig()"
+                [demonT]="demonT()"
+                [skillIs]="skillLs()"
+                [learnedBy]="learnedBy()"
+                [innateCount]="innateCount()"
+                [index]="2 * $index">
+              </app-recipe-skill-picker>
               <td></td>
-              <ng-container *ngTemplateOutlet="skillPicker; context: { ingred: ingredRs[i], skillLookup: skillRs }"></ng-container>
+              <app-recipe-skill-picker
+                [skillPickForm]="recipeInputForm.ingredRs[$index]"
+                [recipeConfig]="recipeConfig()"
+                [demonT]="demonT()"
+                [skillIs]="skillRs()"
+                [learnedBy]="learnedBy()"
+                [innateCount]="innateCount()"
+                [index]="2 * $index + 1">
+              </app-recipe-skill-picker>
             </tr>
           }
         </ng-container>
@@ -142,7 +219,7 @@ const BLANK_SKILL: Skill = {
           <tr>
             @if (recipeLeft().length) {
               <td style="width: 50%"><ul>
-                @for (step of recipeLeft(); track step) { <li>{{ step }}</li> }
+                @for (step of recipeLeft(); track $index) { <li>{{ step }}</li> }
               </ul></td>
             }
             @if (!recipeLeft().length) {
@@ -150,7 +227,7 @@ const BLANK_SKILL: Skill = {
             }
             @if (recipeRight().length) {
               <td style="width: 50%"><ul>
-                @for (step of recipeRight(); track step) { <li>{{ step }}</li> }
+                @for (step of recipeRight(); track $index) { <li>{{ step }}</li> }
               </ul></td>
             }
             @if (!recipeRight().length) {
@@ -173,48 +250,58 @@ const BLANK_SKILL: Skill = {
           </td></tr>
         </table>
       }
-    </div>
+    </form>
   `,
   styles: [`
     ul { padding: 0 1em; list-style: none; }
-    td select { min-height: 25px; width: 100%; }
+    select { min-height: 25px; width: 100%; }
+    td[app-recipe-inherit-elems] { text-align: center; }
     div.element-icon { display: inline-block; }
-  `]
+  `],
+  encapsulation: ViewEncapsulation.None
 })
 export class RecipeGeneratorComponent {
-  json = JSON;
-  maxSkills = input(8);
   compendium = input.required<Compendium>();
   squareChart = input.required<SquareChart>();
   recipeConfig = input.required<RecipeGeneratorConfig>();
+  maxSkills = input(8);
   lang = input('en');
-  msgs = Translations.RecipeGeneratorComponent;
+
   internalMaxSkills = 10;
+  msgs = Translations.RecipeGeneratorComponent;
   skillLevelPipe = new SkillLevelToShortStringPipeLocale();
+
+  createSkillPicks = () => Array.from({ length: this.internalMaxSkills / 2 }, (): SkillPickModel => ({
+    disabled: false,
+    elem: '-',
+    skill: BLANK_SKILL,
+    demon: BLANK_DEMON
+  }));
+
+  recipeInputModel = linkedSignal(() => ({
+    demonT: BLANK_DEMON,
+    demonL: BLANK_DEMON,
+    demonR: BLANK_DEMON,
+    ingredLs: createSkillPickList(this.internalMaxSkills / 2),
+    ingredRs: createSkillPickList(this.internalMaxSkills / 2)
+  }));
+
+  recipeInputForm = form(this.recipeInputModel);
+
+  constructor() {
+    effect(() => this.recipeInputForm.demonT().value.set(this.demonT()));
+    effect(() => this.recipeInputForm.demonL().value.set(this.demonL()));
+    effect(() => this.recipeInputForm.demonR().value.set(this.demonR()));
+  }
 
   demonT = linkedSignal(() => this.demonTs()[0]);
   demonL = linkedSignal(() => this.demonLs()[0]);
   demonR = linkedSignal(() => this.demonRs()[this.demonL().name][0]);
 
-  recipeInputModel = linkedSignal(() => ({
-    demonT: this.demonT(),
-    demonL: this.demonL(),
-    demonR: this.demonR(),
-    ingredLs: this.ingredLs.map(({ disabled, elem, skill, demon }) => ({
-      disabled: disabled(),
-      elem: elem(),
-      skill: skill(),
-      demon: demon()
-    })),
-    ingredRs: this.ingredRs.map(({ disabled, elem, skill, demon }) => ({
-      disabled: disabled(),
-      elem: elem(),
-      skill: skill(),
-      demon: demon()
-    }))
-  }));
-
-  recipeInputForm = form(this.recipeInputModel);
+  skillTs = computed(() => this.createSkillLookup(this.demonT()));
+  skillLs = computed(() => this.createSkillLookup(this.demonL()));
+  skillRs = computed(() => this.createSkillLookup(this.demonR()));
+  innateCount = computed(() => Object.values(this.demonT().skills).reduce((acc, l) => acc + (l < 2 ? 1 : 0), 0));
 
   demonTs = computed(() => {
     const demonTs = this.compendium().allDemons.filter(d => !d.isEnemy && d.fusion !== 'party' && d.fusion !== 'enemy');
@@ -267,61 +354,7 @@ export class RecipeGeneratorComponent {
     return demonLs;
   });
 
-  skillTs = computed(() => this.createSkillLookup(this.demonT()));
-  skillLs = computed(() => this.createSkillLookup(this.demonL()));
-  skillRs = computed(() => this.createSkillLookup(this.demonR()));
-  innateCount = computed(() => Object.values(this.demonT().skills).reduce((acc, l) => acc + (l < 2 ? 1 : 0), 0));
-
-  allIngreds = Array.from({ length: 2 }, (_, col) =>
-    Array.from({ length: this.internalMaxSkills / 2 }, (_, row) =>  {
-      const skillIs = col === 0 ? this.skillLs : this.skillRs;
-      const disabled = linkedSignal(() => 2 * row + col < this.innateCount());
-
-      const elem = linkedSignal<{ demonT: Demon, skillIs: SkillLookup }, string>({
-        source: () => ({ demonT: this.demonT(), skillIs: skillIs() }),
-        computation: ({ demonT, skillIs }, prev) =>
-          !prev || demonT !== prev.source.demonT || !skillIs[prev.value] ? '-' : prev.value
-      });
-
-      const skill = linkedSignal<{ elem: string, skillIs: SkillLookup }, Skill>({
-        source: () => ({ elem: elem(), skillIs: skillIs() }),
-        computation: ({ elem, skillIs }, prev) =>
-          !prev || !skillIs[elem].includes(prev.value) ? skillIs[elem][0] : prev.value
-      });
-
-      const demon = linkedSignal(() => this.learnedBy()[skill().name][0]);
-
-      return { disabled, elem, skill, demon };
-    })
-  );
-
-  ingredLs = this.allIngreds[0];
-  ingredRs = this.allIngreds[1];
-
-  createSkillLookup(demon: Demon): SkillLookup {
-    const excludeElems: string[] = [];
-    const { inheritElems } = this.recipeConfig();
-
-    for (let i = 0; i < inheritElems.length; i++) {
-      if (!(demon.inherits & this.demonT().inherits & (1 << i))) {
-        excludeElems.push(inheritElems[inheritElems.length - i - 1]);
-      }
-    }
-
-    const elems = this.recipeConfig().skillElems.filter(e => !excludeElems.includes(e));
-    const learnedSkills = Object.keys(demon.skills)
-      .filter(s => demon.skills[s] < 99)
-      .map(s => this.compendium().getSkill(s))
-      .filter(s => elems.includes(s.element) && s.rank < 50);
-
-    return elems.reduce((acc, e) =>
-      { acc[e] = this.elemTyped()[e]; return acc; },
-      { '-': [BLANK_SKILL].concat(learnedSkills) }
-    );
-  }
-
   fullRecipe = computed(() => {
-    console.log('wat')
     const { demonT, demonL, demonR, ingredLs: inputLs, ingredRs: inputRs } = this.recipeInputModel()
     const [ingredLs, ingredRs] = [inputLs, inputRs].map(inputIs => inputIs
       .filter(i => !i.disabled && i.demon.name !== '-')
@@ -382,5 +415,27 @@ export class RecipeGeneratorComponent {
     }
 
     return steps;
+  }
+
+  createSkillLookup(demon: Demon): SkillLookup {
+    const excludeElems: string[] = [];
+    const { inheritElems } = this.recipeConfig();
+
+    for (let i = 0; i < inheritElems.length; i++) {
+      if (!(demon.inherits & this.demonT().inherits & (1 << i))) {
+        excludeElems.push(inheritElems[inheritElems.length - i - 1]);
+      }
+    }
+
+    const elems = this.recipeConfig().skillElems.filter(e => !excludeElems.includes(e));
+    const learnedSkills = Object.keys(demon.skills)
+      .filter(s => demon.skills[s] < 99)
+      .map(s => this.compendium().getSkill(s))
+      .filter(s => elems.includes(s.element) && s.rank < 50);
+
+    return elems.reduce((acc, e) =>
+      { acc[e] = this.elemTyped()[e]; return acc; },
+      { '-': [BLANK_SKILL].concat(learnedSkills) }
+    );
   }
 }
