@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { TripleFissionTableComponent } from '../../compendium/components/tri-fission-table.component';
 import { getLowerIngredients } from '../models/conversions';
 import { MultiFusionTrio } from '../models';
@@ -6,9 +6,11 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-p5s-fission-table',
   imports: [CommonModule, RouterModule],
   template: `
+    @let compendium = compendium$();
+    @let currentDemon = currentDemon$();
+    @let multiFissionTrios = multiFissionTrios$();
     <table class="list-table">
       <tr><th colspan=7 class="title">Ingredient 1 x Ingredient 2 x Ingredient 3 = {{ currentDemon }}</th></tr>
       <tr>
@@ -60,16 +62,18 @@ import { CommonModule } from '@angular/common';
   `
 })
 export class P5SFissionTableComponent extends TripleFissionTableComponent {
-  multiFissionTrios: MultiFusionTrio[] = [];
+  multiFissionTrios$ = computed(() => {
+    const currentDemon = this.currentDemon$();
+    const compendium = this.compendium$();
+    const chart = this.chart$();
 
-  getFissions() {
     const fissions: MultiFusionTrio[] = [];
-    const pairs = this.pairCalculator.getFusions(this.currentDemon, this.compendium, this.chart.normalChart);
-    const trios = this.calculator.getFusions(this.currentDemon, this.compendium, this.chart);
+    const pairs = this.pairCalculator.getFusions(currentDemon, compendium, chart.normalChart);
+    const trios = this.calculator.getFusions(currentDemon, compendium, chart);
 
     for (const pair of pairs) {
-      const { lvl: lvl1, price: price1, } = this.compendium.getDemon(pair.name1);
-      const { lvl: lvl2, price: price2, } = this.compendium.getDemon(pair.name2);
+      const { lvl: lvl1, price: price1, } = compendium.getDemon(pair.name1);
+      const { lvl: lvl2, price: price2, } = compendium.getDemon(pair.name2);
 
       fissions.push({
         lvl0: 0,
@@ -84,13 +88,13 @@ export class P5SFissionTableComponent extends TripleFissionTableComponent {
     }
 
     for (const trio of trios) {
-      const names1 = getLowerIngredients(trio.name1, this.compendium);
-      const names2 = getLowerIngredients(trio.name2, this.compendium);
-      const names3 = getLowerIngredients(trio.name3, this.compendium);
-      const { lvl: lvl1, price: price1, } = this.compendium.getDemon(trio.name1);
-      const { lvl: lvl2, price: price2, } = this.compendium.getDemon(trio.name2);
-      const lvl3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).lvl : 0;
-      const price3 = names3.length ? this.compendium.getDemon(names3[names3.length - 1]).price : 0;
+      const names1 = getLowerIngredients(trio.name1, compendium);
+      const names2 = getLowerIngredients(trio.name2, compendium);
+      const names3 = getLowerIngredients(trio.name3, compendium);
+      const { lvl: lvl1, price: price1, } = compendium.getDemon(trio.name1);
+      const { lvl: lvl2, price: price2, } = compendium.getDemon(trio.name2);
+      const lvl3 = names3.length ? compendium.getDemon(names3[names3.length - 1]).lvl : 0;
+      const price3 = names3.length ? compendium.getDemon(names3[names3.length - 1]).price : 0;
 
       fissions.push({
         lvl0: 0,
@@ -104,6 +108,6 @@ export class P5SFissionTableComponent extends TripleFissionTableComponent {
       });
     }
 
-    this.multiFissionTrios = fissions;
-  }
+    return fissions;
+  });
 }

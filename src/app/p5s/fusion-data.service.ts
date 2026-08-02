@@ -1,15 +1,14 @@
-import { Injectable, Inject } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
-
+import { Injectable, Inject, InjectionToken, Signal, WritableSignal, signal } from '@angular/core';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
 import { FusionTrioService as IFusionTrioService } from '../compendium/models';
 import { splitWithSameRace, fuseWithSameRace, splitWithDiffRace, fuseWithDiffRace } from '../compendium/fusions/p5s-nonelem-fusions';
-import { COMPENDIUM_CONFIG } from '../compendium/constants';
 import { CompendiumConfig } from './models';
 import { FusionSettings } from '../compendium/models/fusion-settings';
+
+export const COMPENDIUM_CONFIG = new InjectionToken<CompendiumConfig>('compendium.config');
 
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
@@ -21,36 +20,36 @@ export class FusionDataService implements IFusionTrioService {
 
   compConfig: CompendiumConfig;
   appName: string;
-  fusionSettings: Observable<FusionSettings>;
+  fusionSettings$: Signal<FusionSettings>;
 
   private _compendium: Compendium;
-  private _compendium$: BehaviorSubject<Compendium>;
-  compendium: Observable<Compendium>;
+  private _compendium$: WritableSignal<Compendium>;
+  compendium$: Signal<Compendium>;
 
   private _fusionChart: FusionChart;
-  private _fusionChart$: BehaviorSubject<FusionChart>;
-  fusionChart: Observable<FusionChart>;
+  private _fusionChart$: WritableSignal<FusionChart>;
+  fusionChart$: Signal<FusionChart>;
 
-  private _squareChart$: BehaviorSubject<{ normalChart: FusionChart, tripleChart: FusionChart }>;
-  squareChart: Observable<{ normalChart: FusionChart, tripleChart: FusionChart }>;
+  private _squareChart$: WritableSignal<{ normalChart: FusionChart, tripleChart: FusionChart }>;
+  squareChart$: Signal<{ normalChart: FusionChart, tripleChart: FusionChart }>;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.appName = compConfig.appTitle + ' Fusion Calculator';
     this.compConfig = compConfig;
 
     this._compendium = new Compendium(compConfig);
-    this._compendium$ = new BehaviorSubject(this._compendium);
-    this.compendium = this._compendium$.asObservable();
+    this._compendium$ = signal(this._compendium);
+    this.compendium$ = this._compendium$.asReadonly();
 
     this._fusionChart = new FusionChart(this.compConfig.races);
-    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
-    this.fusionChart = this._fusionChart$.asObservable();
+    this._fusionChart$ = signal(this._fusionChart);
+    this.fusionChart$ = this._fusionChart$.asReadonly();
 
-    this._squareChart$ = new BehaviorSubject({
+    this._squareChart$ = signal({
       normalChart: this._fusionChart,
       tripleChart: this._fusionChart,
     });
-    this.squareChart = this._squareChart$.asObservable();
+    this.squareChart$ = this._squareChart$.asReadonly();
   }
 
   updateFusionSettings(dlcDemons: { [name: string]: boolean }) { }

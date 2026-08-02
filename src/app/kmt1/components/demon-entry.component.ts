@@ -1,15 +1,10 @@
-import { Component, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, computed, Input, input, effect, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
-
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { FusionDataService } from '../fusion-data.service';
-
-import { CommonModule } from '@angular/common';
 import { DemonStatsComponent } from '../../compendium/components/demon-stats.component';
 import { DemonResistsComponent } from '../../compendium/components/demon-resists.component';
 import { DemonSkillsComponent } from '../../compendium/components/demon-skills.component';
@@ -70,67 +65,28 @@ export class DemonEntryComponent {
 }
 
 @Component({
-  selector: 'app-demon-entry-container',
   imports: [DemonEntryComponent],
   template: `
     <app-demon-entry
-      [name]="name"
-      [demon]="demon"
+      [name]="demonName$()"
+      [demon]="demon$()"
       [compConfig]="compConfig"
-      [compendium]="compendium">
+      [compendium]="compendium$()">
     </app-demon-entry>
   `
 })
 export class DemonEntryContainerComponent {
-  protected subscriptions: Subscription[] = [];
-  name: string;
-  demon: Demon;
-  compendium: Compendium;
-  compConfig: CompendiumConfig;
-  appName = 'Test App';
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
+  currentDemonService = inject(CurrentDemonService);
+  compConfig = this.fusionDataService.compConfig;
 
-  constructor(
-    private route: ActivatedRoute,
-    private title: Title,
-    private currentDemonService: CurrentDemonService,
-    private fusionDataService: FusionDataService
-  ) {
-    this.appName = fusionDataService.appName;
-    this.compConfig = fusionDataService.compConfig;
-  }
+  demonName$ = input.required<string>({ alias: 'demonName' });
+  compendium$ = this.fusionDataService.compendium$;
+  demon$ = computed(() => this.compendium$().getDemon(this.demonName$()) || null);
 
-  ngOnInit() {
-    this.subscribeAll();
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
-
-  subscribeAll() {
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-        this.getDemonEntry();
-      }));
-
-    this.subscriptions.push(
-      this.currentDemonService.currentDemon.subscribe(name => {
-        this.name = name;
-        this.getDemonEntry();
-      }));
-
-    this.route.params.subscribe(params => {
-      this.currentDemonService.nextCurrentDemon(params['demonName']);
-    });
-  }
-
-  getDemonEntry() {
-    if (this.compendium && this.name) {
-      this.title.setTitle(`${this.name} - ${this.appName}`);
-      this.demon = this.compendium.getDemon(this.name);
-    }
+  constructor() {
+    effect(() => this.title.setTitle(`${this.demonName$()} - ${this.fusionDataService.appName}`));
+    effect(() => this.currentDemonService.nextCurrentDemon(this.demonName$()));
   }
 }

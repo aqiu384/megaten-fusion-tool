@@ -114,11 +114,7 @@ function createCompConfig(): CompendiumConfigSet {
     elementRace: 'Element'
   };
 
-  return {
-    appTitle: 'Shin Megami Tensei IV',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'smt4': compConfig }
-  };
+  return { smt4: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

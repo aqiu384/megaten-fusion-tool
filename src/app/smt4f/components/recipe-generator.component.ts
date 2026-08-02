@@ -1,71 +1,47 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
 import { RecipeGeneratorComponent } from '../../compendium/components/recipe-generator.component';
-import { RecipeGeneratorConfig, SquareChart } from '../../compendium/models';
-import { Compendium } from '../models/compendium';
+import { SquareChart } from '../../compendium/models';
 import { FusionDataService } from '../fusion-data.service';
 import { translateComp, translateCompSet } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
 @Component({
-  selector: 'app-recipe-generator-container',
   imports: [RecipeGeneratorComponent],
   template: `
     <app-recipe-generator
-      [maxSkills]="maxSkills"
-      [compendium]="compendium"
-      [squareChart]="squareChart"
-      [recipeConfig]="recipeConfig"
-      [lang]="lang">
+      [lang]="lang"
+      [maxSkills]="compConfig.maxSkillSlots"
+      [compendium]="fusionDataService.compendium$()"
+      [squareChart]="squareChart$()"
+      [recipeConfig]="recipeConfig">
     </app-recipe-generator>
   `
 })
-export class RecipeGeneratorContainerComponent implements OnInit, OnDestroy {
-  compendium: Compendium;
-  squareChart: SquareChart;
-  recipeConfig: RecipeGeneratorConfig;
-  appName: string;
-  subscriptions: Subscription[] = [];
-  maxSkills = 8;
-  lang = 'en';
+export class RecipeGeneratorContainerComponent {
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  lang = this.compConfig.lang;
+  recipeConfig = {
+    fissionCalculator: this.fusionDataService.fissionCalculator,
+    fusionCalculator: this.fusionDataService.fusionCalculator,
+    races: this.compConfig.races,
+    skillElems: this.compConfig.skillElems,
+    inheritElems: this.compConfig.affinityElems,
+    displayElems: translateCompSet(Translations.ElementIcon, this.lang),
+    restrictInherits: this.compConfig.appCssClasses.includes('sh2') || this.compConfig.appCssClasses.includes('smt3'),
+    triFissionCalculator: null,
+    triFusionCalculator: null,
+    defaultDemon: this.compConfig.defaultRecipeDemon
+  };
 
-  constructor(private fusionDataService: FusionDataService, private title: Title) {
-    const compConfig = this.fusionDataService.compConfig;
-    this.lang = compConfig.lang;
-    this.appName = translateComp(Translations.RecipeGeneratorComponent.AppTitle, this.lang) + fusionDataService.appName;
-    this.maxSkills = compConfig.maxSkillSlots;
-    this.recipeConfig = {
-      fissionCalculator: this.fusionDataService.fissionCalculator,
-      fusionCalculator: this.fusionDataService.fusionCalculator,
-      races: compConfig.races,
-      skillElems: compConfig.skillElems,
-      inheritElems: compConfig.affinityElems,
-      displayElems: translateCompSet(Translations.ElementIcon, this.lang),
-      restrictInherits: compConfig.appCssClasses.includes('sh2') || compConfig.appCssClasses.includes('smt3'),
-      triFissionCalculator: null,
-      triFusionCalculator: null,
-      defaultDemon: compConfig.defaultRecipeDemon
-    };
-  }
+  squareChart$ = computed<SquareChart>(() => ({
+    normalChart: this.fusionDataService.fusionChart$(),
+    tripleChart: this.fusionDataService.fusionChart$()
+  }));
 
-  ngOnInit()    { this.title.setTitle(this.appName); this.subscribeAll(); }
-  ngOnDestroy() { this.unsubscribeAll(); }
-
-  subscribeAll() {
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-      }));
-
-    this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(chart => {
-        this.squareChart = { normalChart: chart, tripleChart: chart };
-      }));
-  }
-
-  unsubscribeAll() {
-    for (const subscription of this.subscriptions) { subscription.unsubscribe(); }
+  constructor() {
+    this.title.setTitle(translateComp(Translations.RecipeGeneratorComponent.AppTitle, this.lang) + this.fusionDataService.appName);
   }
 }

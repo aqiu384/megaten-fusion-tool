@@ -74,11 +74,7 @@ function createCompConfig(): CompendiumConfigSet {
     elementRace: 'Element'
   };
 
-  return {
-    appTitle: 'Soul Hackers 2',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'sh2': compConfig }
-  };
+  return { sh2: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

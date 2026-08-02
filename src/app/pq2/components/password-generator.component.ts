@@ -1,9 +1,7 @@
-import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { Component, Input, OnChanges, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
 import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
@@ -12,7 +10,6 @@ import { translateCompSet } from '../../compendium/models/translator';
 import { TranslateCompPipe } from '../../compendium/pipes';
 import { QrcodeComponent } from './qrcode-component';
 import Translations from '../../compendium/data/translations.json';
-
 
 @Component({
   selector: 'app-password-generator',
@@ -255,44 +252,19 @@ export class PasswordGeneratorComponent implements OnChanges {
 }
 
 @Component({
-  selector: 'app-password-generator-container',
   imports: [PasswordGeneratorComponent],
   template: `
     <app-password-generator
-      [compendium]="compendium"
-      [compConfig]="compConfig">
+      [compendium]="fusionDataService.compendium$()"
+      [compConfig]="fusionDataService.compConfig">
     </app-password-generator>
   `
 })
-export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
-  compendium: Compendium;
-  compConfig: CompendiumConfig;
-  subscriptions: Subscription[] = [];
+export class PasswordGeneratorContainerComponent {
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
 
-  constructor(
-    private fusionDataService: FusionDataService,
-    private title: Title
-  ) {
-    this.compConfig = this.fusionDataService.compConfig;
-  }
-
-  ngOnInit()    { this.setTitle(); this.subscribeAll(); }
-  ngOnDestroy() { this.unsubscribeAll(); }
-
-  setTitle() {
+  constructor() {
     this.title.setTitle(`QR Code Generator - ${this.fusionDataService.appName}`);
-  }
-
-  subscribeAll() {
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-      }));
-  }
-
-  unsubscribeAll() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
   }
 }

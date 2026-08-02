@@ -1,19 +1,23 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CompendiumComponent as BaseCompendiumComponent } from '../../compendium/components/compendium.component';
-import { FUSION_DATA_SERVICE } from '../../compendium/constants';
+import { CompendiumConfig } from '../models';
 import { FusionDataService } from '../fusion-data.service';
 import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
+function makeOtherLinks(compConfig: CompendiumConfig): { title: string, link: string }[] {
+  return compConfig.maxSkillSlots === 0 ? [] : compConfig.appCssClasses.includes('smtsj') ?
+    [{ title: 'Passwords', link: 'passwords' }] :
+    [{ title: translateComp(Translations.CompendiumComponent.RecipGenerator, compConfig.lang), link: 'recipes' }];
+}
+
 @Component({
   selector: 'app-smt4f-compendium',
   imports: [CommonModule, BaseCompendiumComponent],
-  providers: [FusionDataService, { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }],
   template: `
     <app-demon-compendium
-      [ngClass]="appCssClasses"
+      [ngClass]="fusionDataService.compConfig.appCssClasses"
       [otherLinks]="otherLinks">
     </app-demon-compendium>
   `,
@@ -21,19 +25,6 @@ import Translations from  '../../compendium/data/translations.json';
   encapsulation: ViewEncapsulation.None
 })
 export class CompendiumComponent {
-  appCssClasses = ['smt4', 'smt4f'];
-  otherLinks: { title: string, link: string }[];
-
-  constructor(fusionDataService: FusionDataService) {
-    const lang = fusionDataService.compConfig.lang;
-    this.appCssClasses = fusionDataService.compConfig.appCssClasses;
-    this.otherLinks = [];
-
-    if (fusionDataService.compConfig.maxSkillSlots > 0) {
-      this.otherLinks = [this.appCssClasses.includes('smtsj') ?
-        { title: 'Passwords', link: 'passwords' } :
-        { title: translateComp(Translations.CompendiumComponent.RecipGenerator, lang), link: 'recipes' }
-      ];
-    }
-  }
+  fusionDataService = inject(FusionDataService);
+  otherLinks = makeOtherLinks(this.fusionDataService.compConfig);
 }

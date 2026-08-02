@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
@@ -8,10 +7,10 @@ import { DemonEntryContainerComponent } from './components/demon-entry.component
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
 import { RecipeGeneratorContainerComponent } from './components/recipe-generator.component';
 import { PasswordGeneratorContainerComponent } from './components/password-generator.component';
-
 import { SmtFissionTableComponent } from '../compendium/components/smt-fission-table.component';
 import { SmtFusionTableComponent } from '../compendium/components/smt-fusion-table.component';
-import { COMPENDIUM_CONFIG } from '../compendium/constants';
+import { FUSION_DATA_SERVICE } from '../compendium/constants';
+import { COMPENDIUM_CONFIG_SET, FusionDataService } from './fusion-data.service';
 import { CompendiumConfigSet } from './models';
 
 const compendiumRoutes: Routes = [
@@ -82,7 +81,11 @@ const compendiumRoutes: Routes = [
 export function createCompendiumRoutes(compConfig: CompendiumConfigSet): Routes {
   return [{
     path: '',
-    providers: [{ provide: COMPENDIUM_CONFIG, useValue: compConfig }],
+    providers: [
+      { provide: COMPENDIUM_CONFIG_SET, useValue: compConfig },
+      FusionDataService,
+      { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService }
+    ],
     children: compendiumRoutes
   }];
 }

@@ -1,4 +1,4 @@
-import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
+import { Demon as BaseDemon, Skill as BaseSkill } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
   atks: number[];
@@ -12,7 +12,11 @@ export interface Skill extends BaseSkill {
   target?: string;
 }
 
-export interface CompendiumConfig extends BaseComp {
+export interface CompendiumConfig {
+  appTitle: string;
+  raceOrder: { [race: string]: number };
+  elemOrder: { [elem: string]: number };
+
   appCssClasses: string[];
   races: string[];
   resistElems: string[];
@@ -23,7 +27,6 @@ export interface CompendiumConfig extends BaseComp {
   species: { [spec: string]: string[] };
   speciesLookup: { [race: string]: string };
   resistCodes: { [code: string]: number };
-  elemOrder: { [elem: string]: number };
   useSpeciesFusion: boolean;
   inheritSkills?: { [code: number]: { [skill: string]: number } };
 

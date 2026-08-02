@@ -1,12 +1,11 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable()
 export class CurrentDemonService {
-  private _currentDemon$ = new BehaviorSubject<string>('none');
-  currentDemon = this._currentDemon$.asObservable();
+  private _currentDemon$ = signal('none');
+  currentDemon = this._currentDemon$.asReadonly();
 
   nextCurrentDemon(name: string) {
-    this._currentDemon$.next(name);
+    this._currentDemon$.set(name);
   }
 }

@@ -1,4 +1,4 @@
-import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseCompendiumConfig } from '../compendium/models';
+import { Demon as BaseDemon, Skill as BaseSkill } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
   atks: number[],
@@ -15,7 +15,11 @@ export interface Skill extends BaseSkill {
   card:  string;
 }
 
-export interface CompendiumConfig extends BaseCompendiumConfig {
+export interface CompendiumConfig {
+  appTitle: string;
+  raceOrder: { [race: string]: number };
+  elemOrder: { [elem: string]: number };
+
   appCssClasses: string[];
   races: string[];
   resistElems: string[];
@@ -39,5 +43,4 @@ export interface CompendiumConfig extends BaseCompendiumConfig {
   mutations: { [name: string]: string[] };
 
   resistCodes: { [code: string]: number };
-  elemOrder: { [elem: string]: number };
 }

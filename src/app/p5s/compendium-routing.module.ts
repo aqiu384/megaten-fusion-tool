@@ -1,14 +1,13 @@
 import { Routes } from '@angular/router';
-
 import { CompendiumComponent } from './components/compendium.component';
 import { DemonListContainerComponent } from './components/demon-list.component';
 import { SkillListContainerComponent } from './components/skill-list.component';
 import { DemonEntryContainerComponent } from './components/demon-entry.component';
 import { FusionChartContainerComponent } from './components/fusion-chart.component';
-
 import { P5SFissionTableComponent } from './components/p5s-fission-table.component';
 import { P5SFusionTableComponent } from './components/p5s-fusion-table.component';
-import { COMPENDIUM_CONFIG } from '../compendium/constants';
+import { FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../compendium/constants';
+import { COMPENDIUM_CONFIG, FusionDataService } from './fusion-data.service';
 import { CompendiumConfig } from './models';
 
 const compendiumRoutes: Routes = [
@@ -60,7 +59,12 @@ const compendiumRoutes: Routes = [
 export function createCompendiumRoutes(compConfig: CompendiumConfig): Routes {
   return [{
     path: '',
-    providers: [{ provide: COMPENDIUM_CONFIG, useValue: compConfig }],
+    providers: [
+      { provide: COMPENDIUM_CONFIG, useValue: compConfig },
+      FusionDataService,
+      { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
+      { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }
+    ],
     children: compendiumRoutes
   }];
 }

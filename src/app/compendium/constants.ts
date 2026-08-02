@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { CompendiumConfig, FusionDataService, FusionTrioService } from './models';
+import { Demon, FusionDataService, FusionTrioService, Skill } from './models';
 
 import { NormalFusionCalculator } from './models/normal-fusion-calculator';
 import { fuseWithDiffRace, fuseWithSameRace, fuseWithElement } from './fusions/smt-nonelem-fusions';
@@ -24,7 +24,6 @@ import {
   splitWithPrevLvl as split3PL
 } from './fusions/per-triple-fissions';
 
-export const COMPENDIUM_CONFIG = new InjectionToken<CompendiumConfig>('compendium.config');
 export const FUSION_DATA_SERVICE = new InjectionToken<FusionDataService>('fusion.data.service');
 export const FUSION_TRIO_SERVICE = new InjectionToken<FusionTrioService>('fusion.trio.service');
 
@@ -83,3 +82,11 @@ export const ResistanceLevels = [
 export const ResistOrder = getEnumOrder(ResistanceLevels);
 
 export const GameCurrency = { 'MACCA': '♄', 'YEN':'￥'};
+
+export function makeDefaultDemonSort<TDemon extends Demon>(raceOrder: { [race: string]: number }): (a: TDemon, b: TDemon) => number {
+  return (a, b) => (raceOrder[a.race] - raceOrder[b.race]) * 200 + b.lvl - a.lvl;
+}
+
+export function makeDefaultSkillSort<TSkill extends Skill>(elemOrder: { [elem: string]: number }): (a: TSkill, b: TSkill) => number {
+  return (a, b) => (elemOrder[a.element] - elemOrder[b.element]) * 10000 + a.rank - b.rank;
+}

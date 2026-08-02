@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { SmtFusionTableComponent } from '../../compendium/components/smt-fusion-table.component';
 import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPairResult } from '../models/conversions';
-
 import { FusionPairTableComponent } from '../../compendium/components/fusion-pair-table.component';
 import { TranslateCompPipe } from '../../compendium/pipes';
 
@@ -13,5 +12,7 @@ import { TranslateCompPipe } from '../../compendium/pipes';
 })
 export class P1FusionTableComponent extends SmtFusionTableComponent {
   hasFusionToPersonas = true;
-  toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPairResult(currentDemon, names, this.compendium);
+  toFusionPair$ = computed(() => (currentDemon: string) => 
+    (names: NamePair): FusionPair => toFusionPairResult(currentDemon, names, this.compendium$())
+  );
 }

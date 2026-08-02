@@ -1,4 +1,4 @@
-import { Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp } from '../compendium/models';
+import { Demon as BaseDemon, Skill as BaseSkill } from '../compendium/models';
 
 export interface Demon extends BaseDemon {
   eresists: number[];
@@ -21,16 +21,18 @@ export interface MultiFusionTrio {
   lvl3: number;
 }
 
-export interface CompendiumConfig extends BaseComp {
-  appCssClasses: string[];
+export interface CompendiumConfig {
+  appTitle: string;
+  raceOrder: { [race: string]: number };
+  elemOrder: { [elem: string]: number };
 
+  appCssClasses: string[];
   races: string[];
   baseStats: string[];
   skillElems: string[];
   resistElems: string[];
   affinityElems: string[];
   resistCodes: { [code: string]: number };
-  elemOrder: { [elem: string]: number };
 
   demonData: any[];
   skillData: any[];

@@ -1,5 +1,4 @@
-import { Injectable, Inject } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Injectable, InjectionToken, Inject, Signal, signal } from '@angular/core';
 
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
@@ -10,7 +9,6 @@ import { FusionTrioService as IFusionTrioService, SquareChart } from '../compend
 import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
 import { TripleFusionCalculator } from '../compendium/models/triple-fusion-calculator';
 import {
-  COMPENDIUM_CONFIG,
   SMT_NORMAL_FUSION_CALCULATOR,
   SMT_NES_NORMAL_FUSION_CALCULATOR,
   SMT_NORMAL_FISSION_CALCULATOR,
@@ -38,6 +36,8 @@ import {
 
 import { FusionSettings } from '../compendium/models/fusion-settings';
 
+export const COMPENDIUM_CONFIG = new InjectionToken<CompendiumConfig>('compendium.config');
+
 @Injectable()
 export class FusionDataService implements IFusionTrioService {
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
@@ -48,17 +48,17 @@ export class FusionDataService implements IFusionTrioService {
 
   compConfig: CompendiumConfig;
   appName: string;
-  fusionSettings: Observable<FusionSettings>;
+  fusionSettings$: Signal<FusionSettings>;
 
-  compendium: Observable<Compendium>;
-  fusionChart: Observable<FusionChart>
-  squareChart: Observable<SquareChart>;
+  compendium$: Signal<Compendium>;
+  fusionChart$: Signal<FusionChart>
+  squareChart$: Signal<SquareChart>;
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle + ' Fusion Calculator';
 
-    this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
+    this.compendium$ = signal(new Compendium(compConfig)).asReadonly();
 
     const normalChart = new FusionChart(compConfig);
     let doubleChart, tripleChart;
@@ -71,12 +71,12 @@ export class FusionDataService implements IFusionTrioService {
       tripleChart = new FusionChart(compConfig, true);
     }
 
-    this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
-    this.squareChart = new BehaviorSubject({ 
+    this.fusionChart$ = signal(new FusionChart(compConfig)).asReadonly();
+    this.squareChart$ = signal({ 
       normalChart: doubleChart,
       tripleChart,
       raceOrder: compConfig.raceOrder
-    }).asObservable();
+    }).asReadonly();
 
     if (compConfig.darknessRecipes) {
       this.fusionCalculator = SMT_NES_NORMAL_FUSION_CALCULATOR;

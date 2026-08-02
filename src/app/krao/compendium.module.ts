@@ -98,11 +98,7 @@ function createCompConfig(): CompendiumConfigSet {
     elementRace: 'Element'
   };
 
-  return {
-    appTitle: 'Raidou Kuzunoha vs. King Abaddon',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'krao': compConfig }
-  };
+  return { krao: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

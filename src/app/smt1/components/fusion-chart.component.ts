@@ -1,7 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
-
-import { FusionChart } from '../../compendium/models';
+import { Component, inject, computed } from '@angular/core';
 import { FusionDataService } from '../fusion-data.service';
 import { FusionChartComponent } from '../../compendium/components/fusion-chart.component';
 import { SpeciesTripleChartComponent } from './species-triple-chart.component';
@@ -10,6 +7,9 @@ import { SpeciesTripleChartComponent } from './species-triple-chart.component';
   selector: 'app-fusion-chart-container',
   imports: [FusionChartComponent, SpeciesTripleChartComponent],
   template: `
+    @let normChart = normChart$();
+    @let tripChart = tripChart$();
+    @let fullChart = fullChart$();
     @if (!fullChart) {
       <app-fusion-chart
         [normChart]="normChart"
@@ -55,45 +55,18 @@ import { SpeciesTripleChartComponent } from './species-triple-chart.component';
     }
   `,
 })
-export class FusionChartContainerComponent implements OnInit, OnDestroy {
-  subscriptions: Subscription[] = [];
-  normChart: FusionChart;
-  tripChart: FusionChart;
-  fullChart: FusionChart;
-  appName: string;
-  hasDarkRanks: boolean;
-  hasTripleFusion: boolean;
+export class FusionChartContainerComponent {
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  appName = this.compConfig.appTitle;
+  mitamaTable = this.compConfig.mitamaTable;
+  tripleMitamaTable = this.compConfig.tripleMitamaTable;
+  hasDarkRanks = this.compConfig.darknessRecipes;
+  hasTripleFusion = !this.compConfig.appCssClasses.includes('mjn1');
 
-  tripleMitamaTable: string[][];
-  mitamaTable: string[][];
-
-  constructor(private fusionDataService: FusionDataService) { }
-
-  ngOnInit() {
-    const compConfig = this.fusionDataService.compConfig;
-    this.appName = compConfig.appTitle;
-    this.mitamaTable = compConfig.mitamaTable;
-    this.tripleMitamaTable = compConfig.tripleMitamaTable;
-    this.hasDarkRanks = compConfig.darknessRecipes;
-    this.hasTripleFusion = !compConfig.appCssClasses.includes('mjn1');
-
-    if (this.fusionDataService.compConfig.useSpeciesFusion) {
-      this.subscriptions.push(
-        this.fusionDataService.fusionChart.subscribe(chart => {
-          this.fullChart = chart;
-        }));
-    }
-
-    this.subscriptions.push(
-      this.fusionDataService.squareChart.subscribe(chart => {
-        this.normChart = chart.normalChart;
-        this.tripChart = chart.tripleChart;
-      }));
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
+  normChart$ = computed(() => this.fusionDataService.squareChart$().normalChart);
+  tripChart$ = computed(() => this.fusionDataService.squareChart$().tripleChart);
+  fullChart$ = computed(() => this.fusionDataService.compConfig.useSpeciesFusion ?
+    this.fusionDataService.fusionChart$() : null
+  );
 }

@@ -124,11 +124,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p3e.enemyData = enemyDatas.slice(1, 2);
   compConfigs.p3e.demonUnlocks = AEG_DEMON_UNLOCKS_JSON;
 
-  return {
-    appTitle: 'Persona 3 Reload',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

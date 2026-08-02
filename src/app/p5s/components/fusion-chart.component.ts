@@ -1,7 +1,5 @@
-import { Component, OnInit, OnChanges, OnDestroy, Input } from '@angular/core';
+import { Component, OnChanges, Input, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
 import { FusionDataService } from '../fusion-data.service';
 import { CompendiumConfig } from '../models';
 
@@ -43,35 +41,21 @@ export class P5SFusionChartComponent implements OnChanges {
 }
 
 @Component({
-  selector: 'app-fusion-chart-container',
   imports: [P5SFusionChartComponent],
   template: `
     <app-p5s-fusion-chart
       [compConfig]="compConfig"
-      [normTitle]="appName + ' - Normal Fusions'">
+      [normTitle]="fusionDataService.appName + ' - Normal Fusions'">
     </app-p5s-fusion-chart>
   `
 })
-export class FusionChartContainerComponent implements OnInit, OnDestroy {
-  subscriptions: Subscription[] = [];
-  compConfig: CompendiumConfig;
-  appName: string;
+export class FusionChartContainerComponent {
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  appName = `Fusion Chart - ${this.fusionDataService.appName} Fusion Calculator`;
 
-  constructor(
-    private title2: Title,
-    private fusionDataService: FusionDataService
-  ) {
-    this.compConfig = this.fusionDataService.compConfig;
-  }
-
-  ngOnInit() {
-    this.appName = this.compConfig.appTitle;
-    this.title2.setTitle(`Fusion Chart - ${this.compConfig.appTitle} Fusion Calculator`);
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
+  constructor() {
+    this.title.setTitle(this.appName);
   }
 }

@@ -1,8 +1,6 @@
-import { Component, ChangeDetectorRef, OnInit, OnChanges, OnDestroy, Input } from '@angular/core';
+import { Component, OnChanges, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
 import { FusionChart } from '../models/fusion-chart';
 import { FusionDataService } from '../fusion-data.service';
 import { Arcanas } from '../constants';
@@ -155,42 +153,21 @@ export class P1FusionChartComponent implements OnChanges {
 }
 
 @Component({
-  selector: 'app-fusion-chart-container',
   imports: [P1FusionChartComponent],
     template: `
     <app-p1-fusion-chart
-      [normChart]="normChart"
+      [normChart]="this.fusionDataService.fusionChart$()"
       [normTitle]="appName + ' - Normal Fusions'"
       [elemTitle]="appName + ' - Gem Fusions'">
     </app-p1-fusion-chart>
   `
 })
-export class FusionChartContainerComponent implements OnInit, OnDestroy {
-  subscriptions: Subscription[] = [];
-  normChart: FusionChart;
-  appName: string;
+export class FusionChartContainerComponent {
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
+  appName = this.fusionDataService.compConfig.appTitle;
 
-  constructor(
-    private title2: Title,
-    private changeDetectorRef: ChangeDetectorRef,
-    private fusionDataService: FusionDataService
-  ) { }
-
-  ngOnInit() {
-    const appName = this.fusionDataService.compConfig.appTitle;
-    this.appName = appName;
-    this.title2.setTitle(`Fusion Chart - ${appName} Fusion Calculator`);
-
-    this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(fusionChart => {
-        this.changeDetectorRef.markForCheck();
-        this.normChart = fusionChart;
-      }));
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
+  constructor() {
+    this.title.setTitle(`Fusion Chart - ${this.fusionDataService.appName}`);
   }
 }

@@ -156,11 +156,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p3p.skillData = [skillDatas[0], skillDatas[1], skillDatas[3]];
   compConfigs.p3p.hasSkillCards = true;
 
-  return {
-    appTitle: 'Persona 3',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

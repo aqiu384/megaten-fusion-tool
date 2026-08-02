@@ -1,12 +1,10 @@
-import { Injectable, Inject } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Injectable, Inject, InjectionToken, Signal, WritableSignal, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Compendium } from './models/compendium';
 import { PersonaFusionChart } from './models/per-fusion-chart';
 import { FusionTrioService as IFusionTrioService } from '../compendium/models';
 import { 
-  COMPENDIUM_CONFIG,
   P3_NORMAL_FISSION_CALCULATOR,
   P3_NORMAL_FUSION_CALCULATOR,
   P3_TRIPLE_FISSION_CALCULATOR,
@@ -28,6 +26,8 @@ import { CompendiumTranslator } from '../compendium/models/compendium-translator
 import { translateComp } from '../compendium/models/translator';
 import Translations from  '../compendium/data/translations.json';
 
+export const COMPENDIUM_CONFIG_SET = new InjectionToken<CompendiumConfigSet>('compendium.config.set');
+
 @Injectable()
 export class FusionDataService extends ConfigurableFusionDataService<Compendium, PersonaFusionChart> implements IFusionTrioService {
   fissionCalculator = P3_NORMAL_FISSION_CALCULATOR;
@@ -40,16 +40,16 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   appName: string;
 
   private _tripleChart: PersonaFusionChart;
-  private _squareChart$: BehaviorSubject<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
-  squareChart: Observable<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
+  private _squareChart$: WritableSignal<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
+  squareChart$: Signal<{ normalChart: PersonaFusionChart, tripleChart: PersonaFusionChart, raceOrder }>;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, translator: CompendiumTranslator, router: Router) {
+  constructor(@Inject(COMPENDIUM_CONFIG_SET) compConfigSet: CompendiumConfigSet, translator: CompendiumTranslator, router: Router) {
     const parts = router.url.split('/');
-    const defaultGame = Object.keys(compConfigSet.configs)[0];
+    const defaultGame = Object.keys(compConfigSet)[0];
     const compConfig =
-      compConfigSet.configs[parts[2] || parts[1]] ||
-      compConfigSet.configs[parts[1]] ||
-      compConfigSet.configs[defaultGame];
+      compConfigSet[parts[2] || parts[1]] ||
+      compConfigSet[parts[1]] ||
+      compConfigSet[defaultGame];
     const lang = translator.supportedLanguages.includes(parts[1]) ? parts[1] : 'en';
     const dummyRecipe = { '-': [compConfig.defaultDemon] };
     const races = translator.translateRaces(compConfig.races, lang);
@@ -112,12 +112,12 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
     this.appName =  newCompConfig.appTitle + translateComp(Translations.CompendiumComponent.FusionCalculator, newCompConfig.lang);
 
     this._tripleChart = new PersonaFusionChart(newCompConfig, true);
-    this._squareChart$ = new BehaviorSubject({
+    this._squareChart$ = signal({
       normalChart: fusionChart,
       tripleChart: this._tripleChart,
       raceOrder: newCompConfig.raceOrder
     });
-    this.squareChart = this._squareChart$.asObservable();
+    this.squareChart$ = this._squareChart$.asReadonly();
 
     if (newCompConfig.appCssClasses.includes('p5t')) {
       this.fissionCalculator = new NormalFusionCalculator([splitWithDiffRace], []);

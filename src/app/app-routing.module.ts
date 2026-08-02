@@ -61,7 +61,9 @@ for (const route of appRoutes) {
 }
 
 for (const [tool, appNames] of Object.entries(FusionTools)) {
-  appRoutesLookup[tool].data = { appName: appNames[0], lang: LANGS[0] };
+  if (appRoutesLookup[tool]) {
+    appRoutesLookup[tool].data = { appName: appNames[0], lang: LANGS[0] };
+  }
 }
 
 for (let i = 1; i < LANGS.length; i++) {
@@ -72,7 +74,7 @@ for (let i = 1; i < LANGS.length; i++) {
   ];
 
   for (const [tool, appNames] of Object.entries(FusionTools)) {
-    if (appNames[i] && appNames[i] !== '-') {
+    if (appRoutesLookup[tool] && appNames[i] && appNames[i] !== '-') {
       routes.push({
         path: tool,
         loadChildren: appRoutesLookup[tool].loadChildren,

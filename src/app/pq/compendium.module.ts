@@ -112,11 +112,7 @@ function createCompConfig(): CompendiumConfigSet {
     settingsVersion: 2405151000
   };
 
-  return {
-    appTitle: 'Persona Q: Shadow of the Labyrinth',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: { 'pq': compConfig }
-  };
+  return { pq2: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

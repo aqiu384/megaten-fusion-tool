@@ -1,77 +1,40 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
-
+import { Component, computed, inject } from '@angular/core';
 import { FusionChartComponent } from '../../compendium/components/fusion-chart.component';
-import { FusionChart } from '../../compendium/models';
-import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 
 @Component({
-  selector: 'app-fusion-chart-container',
   imports: [FusionChartComponent],
   template: `
     <app-fusion-chart
-      [normChart]="normChart"
-      [tripChart]="hasTripleFusion ? tripChart : null"
+      [normChart]="squareChart$().normalChart"
+      [tripChart]="hasTripleFusion ? squareChart$().tripleChart : null"
       [normTitle]="'Normal Fusions'"
       [tripTitle]="hasTripleFusion ? 'Triple Fusions' : null"
-      [mitaTable]="hasMitamaFusion ? mitaTable : null"
+      [mitaTable]="this.mitaTable$()"
       [isPersona]="true">
     </app-fusion-chart>
   `
 })
-export class FusionChartContainerComponent implements OnInit, OnDestroy {
-  hasTripleFusion: boolean;
-  hasMitamaFusion: boolean;
-  subscriptions: Subscription[] = [];
-  compendium: Compendium;
-  normChart: FusionChart;
-  tripChart: FusionChart;
-  mitaTable = [];
+export class FusionChartContainerComponent {
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  hasTripleFusion = this.compConfig.hasTripleFusion;
 
-  constructor(
-    private fusionDataService: FusionDataService
-  ) { }
+  compendium$ = this.fusionDataService.compendium$;
+  squareChart$ = this.fusionDataService.squareChart$;
+  mitaTable$ = computed(() => {
+    const compendium = this.compendium$();
+    const normChart = this.squareChart$().normalChart;
+    const elemRaces = normChart.elementDemons.map(dname => compendium.getDemon(dname).race);
+    const table: string[][] = [];
 
-  ngOnInit() {
-    const compConfig = this.fusionDataService.compConfig;
-    this.hasTripleFusion = compConfig.hasTripleFusion;
-    this.hasMitamaFusion = compConfig.elementTable.elems.length > 0;
-    this.subscriptions.push(
-      this.fusionDataService.squareChart.subscribe(chart => {
-        this.normChart = chart.normalChart;
-        this.tripChart = chart.tripleChart;
-        this.updateMitamas();
-      }));
-
-    if (this.hasMitamaFusion) {
-      this.subscriptions.push(
-        this.fusionDataService.compendium.subscribe(compendium => {
-          this.compendium = compendium;
-          this.updateMitamas();
-        }));
-    }
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
-
-  updateMitamas() {
-    if (!this.hasMitamaFusion || !this.compendium || !this.normChart) {
-      return
+    if (this.compConfig.elementTable.elems.length > 0) {
+      for (let i = 0; i < elemRaces.length; i++) {
+        const raceA = elemRaces[i];
+        table.push(elemRaces.slice(0, i + 1).map(raceB => normChart.getRaceFusion(raceA, raceB)));
+      }
     }
 
-    const elemRaces = this.normChart.elementDemons.map(dname => this.compendium.getDemon(dname).race);
-    const table = [];
-
-    for (let i = 0; i < elemRaces.length; i++) {
-      const raceA = elemRaces[i];
-      table.push(elemRaces.slice(0, i + 1).map(raceB => this.normChart.getRaceFusion(raceA, raceB)));
-    }
-
-    this.mitaTable = table;
-  }
+    return table;
+  });
 }

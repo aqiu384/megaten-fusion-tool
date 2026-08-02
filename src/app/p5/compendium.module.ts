@@ -150,11 +150,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p5r.elementTable = ROY_ELEMENT_CHART_JSON;
   compConfigs.p5r.maxSkillSlots = 10;
 
-  return {
-    appTitle: 'Persona 5',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

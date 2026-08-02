@@ -107,11 +107,7 @@ function createCompConfig(): CompendiumConfigSet {
     elementRace: 'Element'
   };
 
-  return {
-    appTitle: 'Raidou Remastered: The Mystery of the Soulless Army',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'rrch': compConfig }
-  };
+  return { rrch: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

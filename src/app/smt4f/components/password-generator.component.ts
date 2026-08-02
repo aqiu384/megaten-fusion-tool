@@ -1,9 +1,7 @@
-import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { Component, Input, OnChanges, inject, effect } from '@angular/core';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
-import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
+import { Demon, Skill, DecodedDemon } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { decodeDemon, encodeDemon } from '../models/password-generator';
@@ -317,8 +315,22 @@ export class PasswordGeneratorComponent implements OnChanges {
   }
 }
 
+const PASSWORD_ENCODINGS = [
+  "$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+",
+  "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?&",
+  "しんいくみBやるYけひKFとHむAちにZきWよLをのたれNえSふわJそりすCめPへQGRDこMTまつせかはEUてさなあもゆおうろ",
+  "しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ"
+];
+
+function createInverseEncoding(encoding: string): { [letter: string]: number } {
+  const inverseEncoding: { [letter: string]: number; } = {};
+  for (const encode of PASSWORD_ENCODINGS.concat(encoding)) {
+    encode.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, inverseEncoding);
+  }
+  return inverseEncoding;
+}
+
 @Component({
-  selector: 'app-password-generator-container',
   imports: [PasswordGeneratorComponent],
   template: `
     <app-password-generator
@@ -328,56 +340,22 @@ export class PasswordGeneratorComponent implements OnChanges {
       [defaultDemon]="compConfig.defaultRecipeDemon"
       [encoding]="encoding"
       [inverseEncoding]="inverseEncoding"
-      [compendium]="compendium">
+      [compendium]="compendium$()">
     </app-password-generator>
   `
 })
-export class PasswordGeneratorContainerComponent implements OnInit, OnDestroy {
-  compendium: Compendium;
-  compConfig: CompendiumConfig;
-  encoding: string;
-  inverseEncoding: { [letter: string]: number };
-  subscriptions: Subscription[] = [];
+export class PasswordGeneratorContainerComponent {
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  encoding = PASSWORD_ENCODINGS[
+    this.compConfig.lang !== 'en' ? 3 :
+    this.compConfig.appCssClasses.includes('smtdsj') ? 1 : 0
+  ];
+  inverseEncoding = createInverseEncoding(this.encoding)
+  compendium$ = this.fusionDataService.compendium$;
 
-  constructor(
-    private fusionDataService: FusionDataService,
-    private title: Title
-  ) { }
-
-  ngOnInit()    { this.setTitle(); this.subscribeAll(); }
-  ngOnDestroy() { this.unsubscribeAll(); }
-
-  setTitle() {
+  constructor() {
     this.title.setTitle(`Password Generator - ${this.fusionDataService.appName}`);
-  }
-
-  subscribeAll() {
-    const encodings = [
-      "$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+",
-      "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?&",
-      "しんいくみBやるYけひKFとHむAちにZきWよLをのたれNえSふわJそりすCめPへQGRDこMTまつせかはEUてさなあもゆおうろ",
-      "しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ"
-    ];
-
-    this.compConfig = this.fusionDataService.compConfig;
-    const encodingIndex = this.compConfig.lang !== 'en' ? 3 :
-      this.compConfig.appCssClasses.includes('smtdsj') ? 1 : 0;
-    this.encoding = encodings[encodingIndex];
-    this.inverseEncoding = {};
-
-    for (const encoding of encodings.concat([encodings[encodingIndex]])) {
-      this.inverseEncoding = encoding.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, this.inverseEncoding);
-    }
-
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-      }));
-  }
-
-  unsubscribeAll() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
   }
 }

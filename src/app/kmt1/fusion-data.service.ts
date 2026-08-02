@@ -1,6 +1,4 @@
-import { Injectable, Inject } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-
+import { Injectable, Inject, InjectionToken, Signal, signal } from '@angular/core';
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
 import { CompendiumConfig } from './models';
@@ -12,10 +10,7 @@ import {
   FusionChart as IFusionChart
 } from '../compendium/models';
 import { NormalFusionCalculator } from '../compendium/models/normal-fusion-calculator';
-import {
-  COMPENDIUM_CONFIG,
-  SMT_NORMAL_FUSION_CALCULATOR
-} from '../compendium/constants';
+import { SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 
 import { FusionSettings } from '../compendium/models/fusion-settings';
 
@@ -46,6 +41,8 @@ function kmtSplitWithDiffRace(name: string, compendium: ICompendium, fusionChart
   return recipes;
 }
 
+export const COMPENDIUM_CONFIG = new InjectionToken<CompendiumConfig>('compendium.config');
+
 @Injectable()
 export class FusionDataService implements IFusionDataService {
   fusionCalculator = SMT_NORMAL_FUSION_CALCULATOR;
@@ -54,20 +51,18 @@ export class FusionDataService implements IFusionDataService {
       []
     );
   lang = 'en';
-
   compConfig: CompendiumConfig;
   appName: string;
-  fusionSettings: Observable<FusionSettings>;
 
-  compendium: Observable<Compendium>;
-  fusionChart: Observable<FusionChart>
+  fusionSettings$: Signal<FusionSettings>;
+  compendium$: Signal<Compendium>;
+  fusionChart$: Signal<FusionChart>
 
   constructor(@Inject(COMPENDIUM_CONFIG) compConfig: CompendiumConfig) {
     this.compConfig = compConfig;
     this.appName = compConfig.appTitle + ' Fusion Calculator';
-
-    this.compendium = new BehaviorSubject(new Compendium(compConfig)).asObservable();
-    this.fusionChart = new BehaviorSubject(new FusionChart(compConfig)).asObservable();
+    this.compendium$ = signal(new Compendium(compConfig)).asReadonly();
+    this.fusionChart$ = signal(new FusionChart(compConfig)).asReadonly();
   }
 
   updateFusionSettings(dlcDemons: { [name: string]: boolean }) { return {}; }

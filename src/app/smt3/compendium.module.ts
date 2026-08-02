@@ -99,11 +99,7 @@ function createCompConfig(): CompendiumConfigSet {
     elementRace: 'Element'
   };
 
-  return {
-    appTitle: 'Shin Megami Tensei III: Nocturne',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'smt3': compConfig }
-  };
+  return { smt3: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

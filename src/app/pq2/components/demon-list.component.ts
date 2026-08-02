@@ -1,65 +1,39 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Title } from '@angular/platform-browser';
-
 import { SmtDemonListComponent } from '../../compendium/components/smt-demon-list.component';
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
-import { CompendiumConfig } from '../models';
 import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
 @Component({
-  selector: 'app-demon-list-container',
-  imports: [CommonModule, SmtDemonListComponent],
+  imports: [SmtDemonListComponent],
   template: `
     <app-smt-demon-list
       [lang]="compConfig.lang"
       [isPersona]="!showEnemies"
       [isEnemy]="showEnemies"
       [hasCurrLvl]="!showEnemies && compConfig.hasTripleFusion"
-      [raceOrder]="compConfig.raceOrder"
+      [raceOrder]="raceOrder"
       [statHeaders]="statHeaders"
       [resistHeaders]="resistHeaders"
-      [inheritOrder]="compConfig.inheritElems.length > 0 ? inheritOrder : null"
-      [rowData]="demons | async">
+      [inheritOrder]="inheritOrder"
+      [rowData]="demons$()">
     </app-smt-demon-list>
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName: string;
-  statHeaders: string[];
-  resistHeaders: string[];
-  inheritOrder: { [elem: string]: number };
-  compConfig: CompendiumConfig;
+  route = inject(ActivatedRoute);
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  raceOrder = this.compConfig.raceOrder;
+  showAllies = !this.route.snapshot.data.showShadows;
+  showEnemies = !this.showAllies;
 
-  constructor(
-    title: Title,
-    route: ActivatedRoute,
-    changeDetectorRef: ChangeDetectorRef,
-    fusionDataService: FusionDataService
-  ) {
-    super(title, changeDetectorRef, fusionDataService);
-    this.showAllies = !route.snapshot.data.showShadows;
-    this.showEnemies = !this.showAllies;
-
-    this.compConfig = fusionDataService.compConfig;
-    this.defaultSortFun = (d1, d2) => (
-      this.compConfig.raceOrder[d1.race] -
-      this.compConfig.raceOrder[d2.race]
-    ) * 200 + d2.lvl - d1.lvl;
-
-    this.appName = translateComp(Translations.DemonListComponent.AppPersonas, this.compConfig.lang) + fusionDataService.appName;
-    this.statHeaders = this.compConfig.baseStats;
-    this.resistHeaders = this.compConfig.hasDemonResists ? this.compConfig.resistElems : [];
-    this.inheritOrder = this.compConfig.elemOrder;
-
-    if (this.showEnemies) {
-      this.appName = translateComp(Translations.DemonListComponent.AppShadows, this.compConfig.lang) + fusionDataService.appName;
-      this.statHeaders = this.compConfig.enemyStats;
-      this.resistHeaders = this.compConfig.resistElems;
-      this.inheritOrder = null;
-    }
-  }
+  statHeaders = !this.showEnemies ? this.compConfig.baseStats : this.compConfig.enemyStats;
+  resistHeaders = this.showEnemies || this.compConfig.hasDemonResists ? this.compConfig.resistElems : [];
+  inheritOrder = !this.showEnemies && this.compConfig.inheritElems.length > 0 ? this.compConfig.elemOrder : null;
+  appName = translateComp(!this.showEnemies ?
+    Translations.DemonListComponent.AppPersonas : Translations.DemonListComponent.AppShadows,
+    this.compConfig.lang) + this.fusionDataService.appName;
 }

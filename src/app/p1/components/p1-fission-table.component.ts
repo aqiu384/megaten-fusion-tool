@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { SmtFissionTableComponent } from '../../compendium/components/smt-fission-table.component';
 import { NamePair, FusionPair } from '../../compendium/models';
 import { toFusionPair } from '../models/conversions';
-
 import { FusionEntryTableComponent } from '../../compendium/components/fusion-entry-table.component';
 import { FusionPairTableComponent } from '../../compendium/components/fusion-pair-table.component';
 import { TranslateCompPipe } from '../../compendium/pipes';
@@ -14,5 +13,7 @@ import { TranslateCompPipe } from '../../compendium/pipes';
 })
 export class P1FissionTableComponent extends SmtFissionTableComponent {
   hasFissionFromDemons = true;
-  toFusionPair = (currentDemon: string) => (names: NamePair): FusionPair => toFusionPair(names, this.compendium);
+  toFusionPair$ = computed(() => (_: string) =>
+    (names: NamePair): FusionPair => toFusionPair(names, this.compendium$()
+  ));
 }

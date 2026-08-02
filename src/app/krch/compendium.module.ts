@@ -97,12 +97,7 @@ function createCompConfig(): CompendiumConfigSet {
     elementRace: 'Element'
   };
 
-
-  return {
-    appTitle: 'Raidou Kuzunoha vs. The Soulless Army',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: { 'krch': compConfig }
-  };
+  return { krch: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

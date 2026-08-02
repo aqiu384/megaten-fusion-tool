@@ -122,11 +122,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.dso.skillData = skillData;
   compConfigs.dso.demonUnlocks = VAN_DEMON_UNLOCKS_JSON.concat(<[]>OVE_DEMON_UNLOCKS_JSON);
 
-  return {
-    appTitle: 'Devil Survivor',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

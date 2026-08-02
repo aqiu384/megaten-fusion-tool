@@ -1,10 +1,5 @@
-import { Observable } from 'rxjs';
+import { Signal } from '@angular/core';
 import { Toggles, FusionSettings } from './models/fusion-settings';
-
-export interface CompendiumConfig {
-  appTitle: string;
-  raceOrder: { [race: string]: number };
-}
 
 export interface FusionTableHeaders {
   left: string;
@@ -72,16 +67,16 @@ export interface FusionDataService {
   fissionCalculator: FusionCalculator;
   fusionCalculator: FusionCalculator;
   lang: string;
-  compendium: Observable<Compendium>;
-  fusionChart: Observable<FusionChart>;
-  fusionSettings: Observable<FusionSettings>;
+  compendium$: Signal<Compendium>;
+  fusionChart$: Signal<FusionChart>;
+  fusionSettings$: Signal<FusionSettings>;
   updateFusionSettings(settings: Toggles);
 }
 
 export interface FusionTrioService extends FusionDataService {
   triFissionCalculator: TripleCalculator;
   triFusionCalculator: TripleCalculator;
-  squareChart: Observable<SquareChart>;
+  squareChart$: Signal<SquareChart>;
 }
 
 export type FusionCalculation = (

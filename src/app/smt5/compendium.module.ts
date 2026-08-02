@@ -124,11 +124,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.smt5v.normalTable = VEN_FUSION_CHART_JSON;
   compConfigs.smt5v.specialRecipes = VEN_SPECIAL_RECIPES_JSON;
 
-  return {
-    appTitle: 'Shin Megami Tensei V',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

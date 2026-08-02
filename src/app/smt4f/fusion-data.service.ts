@@ -1,15 +1,17 @@
-import { Injectable, Inject } from '@angular/core';
+import { Injectable, InjectionToken, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Compendium } from './models/compendium';
 import { FusionChart } from './models/fusion-chart';
-import { COMPENDIUM_CONFIG, SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
+import { SMT_NORMAL_FISSION_CALCULATOR, SMT_NORMAL_FUSION_CALCULATOR } from '../compendium/constants';
 import { ConfigurableFusionDataService } from '../compendium/bases/configurable-fusion-data.service';
 import { CompendiumConfig, CompendiumConfigSet } from './models';
 import { FusionSettings } from '../compendium/models/fusion-settings';
 import { CompendiumTranslator } from '../compendium/models/compendium-translator';
 import { translateComp } from '../compendium/models/translator';
 import Translations from  '../compendium/data/translations.json';
+
+export const COMPENDIUM_CONFIG_SET = new InjectionToken<CompendiumConfigSet>('compendium.config.set');
 
 @Injectable()
 export class FusionDataService extends ConfigurableFusionDataService<Compendium, FusionChart> {
@@ -19,13 +21,13 @@ export class FusionDataService extends ConfigurableFusionDataService<Compendium,
   appName: string;
   lang: string;
 
-  constructor(@Inject(COMPENDIUM_CONFIG) compConfigSet: CompendiumConfigSet, translator: CompendiumTranslator, router: Router) {
+  constructor(@Inject(COMPENDIUM_CONFIG_SET) compConfigSet: CompendiumConfigSet, translator: CompendiumTranslator, router: Router) {
     const parts = router.url.split('/');
-    const defaultGame = Object.keys(compConfigSet.configs)[0];
+    const defaultGame = Object.keys(compConfigSet)[0];
     const compConfig =
-      compConfigSet.configs[parts[2] || parts[1]] ||
-      compConfigSet.configs[parts[1]] ||
-      compConfigSet.configs[defaultGame];
+      compConfigSet[parts[2] || parts[1]] ||
+      compConfigSet[parts[1]] ||
+      compConfigSet[defaultGame];
     const lang = translator.supportedLanguages.includes(parts[1]) ? parts[1] : 'en';
     const dummyRecipe = { '-': [compConfig.defaultRecipeDemon] };
     const races = translator.translateRaces(compConfig.races, lang);

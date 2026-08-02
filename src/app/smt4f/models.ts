@@ -1,5 +1,5 @@
 import {
-  Demon as BaseDemon, Skill as BaseSkill, CompendiumConfig as BaseComp,
+  Demon as BaseDemon, Skill as BaseSkill,
   FusionEntry, FusionTableData, ElementTableData
 } from '../compendium/models';
 import { DemonUnlock } from '../compendium/models/fusion-settings';
@@ -29,7 +29,11 @@ export interface DecodedDemon {
   maskByte: number;
 }
 
-export interface CompendiumConfig extends BaseComp {
+export interface CompendiumConfig {
+  appTitle: string;
+  raceOrder: { [race: string]: number };
+  elemOrder: { [elem: string]: number };
+
   appCssClasses: string[];
   lang: string;
   races: string[];
@@ -39,7 +43,6 @@ export interface CompendiumConfig extends BaseComp {
   ailmentElems: string[];
   affinityElems: string[];
   skillElems: string[];
-  elemOrder: { [elem: string]: number };
   resistCodes: { [code: string]: number };
   alignments: { [align: string]: string };
 
@@ -66,6 +69,6 @@ export interface CompendiumConfig extends BaseComp {
   elementRace: string;
 }
 
-export interface CompendiumConfigSet extends BaseComp {
-  configs: { [game: string]: CompendiumConfig };
+export interface CompendiumConfigSet {
+  [game: string]: CompendiumConfig
 }

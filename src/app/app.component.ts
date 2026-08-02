@@ -5,13 +5,12 @@ import { Title } from '@angular/platform-browser';
 
 import { TranslateCompPipe } from './compendium/pipes';
 import { CurrentDemonService } from './compendium/current-demon.service';
-import { CompendiumTranslator } from './compendium/models/compendium-translator';
 import Translations from './compendium/data/translations.json';
 
 @Component({
   selector: 'app-root',
   imports: [CommonModule, RouterModule, TranslateCompPipe],
-  providers: [Title, CompendiumTranslator, CurrentDemonService],
+  providers: [Title, CurrentDemonService],
   template: `
     <div [ngClass]="currentGame">
       <table style="margin-left: auto; margin-right: auto; width: 1080px;">

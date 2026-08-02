@@ -142,11 +142,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.ds2br.specialRecipes = REC_SPECIAL_RECIPES_JSON;
   compConfigs.ds2br.demonUnlocks = VAN_DEMON_UNLOCKS_JSON.concat(<[]>REC_DEMON_UNLOCKS_JSON);
 
-  return {
-    appTitle: 'Devil Survivor 2',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

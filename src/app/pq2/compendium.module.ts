@@ -111,11 +111,7 @@ function createCompConfig(): CompendiumConfigSet {
     settingsVersion: 2405151000
   };
 
-  return {
-    appTitle: 'Persona Q2: New Cinema Labyrinth',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: { 'pq2': compConfig }
-  };
+  return { pq2: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

@@ -1,23 +1,35 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CompendiumComponent as BaseCompendiumComponent } from '../../compendium/components/compendium.component';
-import { FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../../compendium/constants';
+import { CompendiumConfig } from '../models';
 import { FusionDataService } from '../fusion-data.service';
 import { translateComp } from '../../compendium/models/translator';
 import Translations from  '../../compendium/data/translations.json';
 
+function makeOtherLinks(compConfig: CompendiumConfig): { title: string, link: string }[] {
+  const compComponent = Translations.CompendiumComponent;
+  const otherLinks: { title: string, link: string }[] = [];
+
+  if (compConfig.hasEnemies) {
+    otherLinks.push({ title: translateComp(compComponent.ShadowList, compConfig.lang), link: 'shadows' });
+  }
+
+  if (!compConfig.hasQrcodes && compConfig.hasManualInheritance) {
+    otherLinks.push({ title: translateComp(compComponent.RecipGenerator, compConfig.lang), link: 'recipes' });
+  }
+
+  if (compConfig.hasQrcodes) {
+    otherLinks.push({ title: 'QR Code Generator', link: 'qrcodes', });
+  }
+
+  return otherLinks;
+}
+
 @Component({
-  selector: 'app-pq2-compendium',
   imports: [CommonModule, BaseCompendiumComponent],
-  providers: [
-    FusionDataService,
-    { provide: FUSION_DATA_SERVICE, useExisting: FusionDataService },
-    { provide: FUSION_TRIO_SERVICE, useExisting: FusionDataService }
-  ],
   template: `
     <app-demon-compendium
-      [ngClass]="appCssClasses"
+      [ngClass]="fusionDataService.compConfig.appCssClasses"
       [mainList]="'persona'"
       [otherLinks]="otherLinks">
     </app-demon-compendium>
@@ -26,25 +38,6 @@ import Translations from  '../../compendium/data/translations.json';
   encapsulation: ViewEncapsulation.None
 })
 export class CompendiumComponent {
-  appCssClasses: string[];
-  otherLinks: { title: string, link: string }[];
-
-  constructor(fusionDataService: FusionDataService) {
-    this.appCssClasses = fusionDataService.compConfig.appCssClasses;
-    const compConfig = fusionDataService.compConfig;
-    const compComponent = Translations.CompendiumComponent;
-    this.otherLinks = [];
-
-    if (compConfig.hasEnemies) {
-      this.otherLinks.push({ title: translateComp(compComponent.ShadowList, compConfig.lang), link: 'shadows' });
-    }
-
-    if (!compConfig.hasQrcodes && compConfig.hasManualInheritance) {
-      this.otherLinks.push({ title: translateComp(compComponent.RecipGenerator, compConfig.lang), link: 'recipes' });
-    }
-
-    if (compConfig.hasQrcodes) {
-      this.otherLinks.push({ title: 'QR Code Generator', link: 'qrcodes', });
-    }
-  }
+  fusionDataService = inject(FusionDataService);
+  otherLinks = makeOtherLinks(this.fusionDataService.compConfig);
 }

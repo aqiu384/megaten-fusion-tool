@@ -1,6 +1,6 @@
 import { FusionDataService as IFusionDataService, Compendium, FusionChart, FusionCalculator } from '../models';
 import { FusionSettings } from '../models/fusion-settings';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Signal, WritableSignal, signal } from '@angular/core';
 
 export abstract class ConfigurableFusionDataService<TCompendium extends Compendium, TFusionChart extends FusionChart> implements IFusionDataService {
   abstract fissionCalculator: FusionCalculator;
@@ -8,29 +8,29 @@ export abstract class ConfigurableFusionDataService<TCompendium extends Compendi
   abstract lang: string;
   
   private _compendium: TCompendium;
-  private _compendium$: BehaviorSubject<TCompendium>;
-  compendium: Observable<TCompendium>;
+  private _compendium$: WritableSignal<TCompendium>;
+  compendium$: Signal<TCompendium>;
 
   private _fusionChart: TFusionChart;
-  private _fusionChart$: BehaviorSubject<TFusionChart>;
-  fusionChart: Observable<TFusionChart>;
+  private _fusionChart$: WritableSignal<TFusionChart>;
+  fusionChart$: Signal<TFusionChart>;
 
   private _fusionSettings: FusionSettings;
-  private _fusionSettings$: BehaviorSubject<FusionSettings>;
-  fusionSettings: Observable<FusionSettings>;
+  private _fusionSettings$: WritableSignal<FusionSettings>;
+  fusionSettings$: Signal<FusionSettings>;
 
   constructor(comp: TCompendium, chart: TFusionChart, fusionSettings: FusionSettings, private settingsKey: string, private settingsVersion: number) {
     this._compendium = comp;
-    this._compendium$ = new BehaviorSubject(this._compendium);
-    this.compendium = this._compendium$.asObservable();
+    this._compendium$ = signal(this._compendium);
+    this.compendium$ = this._compendium$.asReadonly();
 
     this._fusionChart = chart;
-    this._fusionChart$ = new BehaviorSubject(this._fusionChart);
-    this.fusionChart = this._fusionChart$.asObservable();
+    this._fusionChart$ = signal(this._fusionChart);
+    this.fusionChart$ = this._fusionChart$.asReadonly();
 
     this._fusionSettings = fusionSettings;
-    this._fusionSettings$ = new BehaviorSubject(this._fusionSettings);
-    this.fusionSettings = this._fusionSettings$.asObservable();
+    this._fusionSettings$ = signal(this._fusionSettings);
+    this.fusionSettings$ = this._fusionSettings$.asReadonly();
 
     const settings = JSON.parse(localStorage.getItem(this.settingsKey));
 
@@ -44,8 +44,8 @@ export abstract class ConfigurableFusionDataService<TCompendium extends Compendi
   private updateToggledSettings(settings: { [setting: string]: boolean }) {
     this._fusionSettings.updateSaveFile(settings);
     this._compendium.updateFusionSettings(this._fusionSettings.demonToggles);
-    this._compendium$.next(this._compendium);
-    this._fusionSettings$.next(this._fusionSettings);
+    this._compendium$.set(this._compendium);
+    this._fusionSettings$.set(this._fusionSettings);
   }
 
   private onStorageUpdated(e: StorageEvent) {

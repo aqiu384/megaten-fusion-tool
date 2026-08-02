@@ -1,6 +1,7 @@
 import { Directive } from '@angular/core';
 import { Input, OnInit, AfterViewChecked } from '@angular/core';
 import { SortedTableComponent } from '../../shared/sorted-table.component';
+import { makeDefaultDemonSort } from '../constants';
 import { Demon } from '../models';
 
 @Directive()
@@ -25,8 +26,8 @@ export class DemonListComponent<TDemon extends Demon> extends SortedTableCompone
 
     if (this.raceOrder) {
       this.sortFuns.push(
-        (a, b) => (this.raceOrder[a.race] - this.raceOrder[b.race]) * 200 + b.lvl - a.lvl,
-        (a, b) => (this.raceOrder[a.race] - this.raceOrder[b.race]) * 200 + b.lvl - a.lvl,
+        makeDefaultDemonSort<TDemon>(this.raceOrder),
+        makeDefaultDemonSort<TDemon>(this.raceOrder),
         (a, b) => b.lvl - a.lvl,
         (a, b) => a.name.localeCompare(b.name)
       );

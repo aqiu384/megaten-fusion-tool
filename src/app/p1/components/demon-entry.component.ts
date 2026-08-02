@@ -1,12 +1,8 @@
-import { Component, ChangeDetectorRef, Input, OnChanges } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnChanges, computed, input, effect, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
-
-import { FusionChart, FusionEntry, MultiFusionPair } from '../../compendium/models';
+import { FusionEntry, MultiFusionPair } from '../../compendium/models';
 import { CurrentDemonService } from '../../compendium/current-demon.service';
 import { splitWithGem } from '../../compendium/fusions/per-nonelem-fissions';
-
 import { Demon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
@@ -158,9 +154,12 @@ export class DemonEntryComponent implements OnChanges {
 }
 
 @Component({
-  selector: 'app-demon-entry-container',
   imports: [DemonEntryComponent, EnemyEntryComponent],
   template: `
+    @let name = demonName$();
+    @let compendium = compendium$();
+    @let demon = demon$();
+    @let elemRecipes = elemRecipes$();
     @if (!demon || !demon.isEnemy) {
       <app-demon-entry
         [name]="name"
@@ -181,66 +180,21 @@ export class DemonEntryComponent implements OnChanges {
   `
 })
 export class DemonEntryContainerComponent {
-  protected subscriptions: Subscription[] = [];
-  name: string;
-  demon: Demon;
-  compendium: Compendium;
-  fusionChart: FusionChart;
-  compConfig: CompendiumConfig;
-  elemRecipes: MultiFusionPair[];
-  appName = 'Test App';
+  title = inject(Title);
+  fusionDataService = inject(FusionDataService);
+  currentDemonService = inject(CurrentDemonService);
+  compConfig = this.fusionDataService.compConfig;
 
-  constructor(
-    private route: ActivatedRoute,
-    private title: Title,
-    private changeDetectorRef: ChangeDetectorRef,
-    private currentDemonService: CurrentDemonService,
-    private fusionDataService: FusionDataService
-  ) {
-    this.appName = fusionDataService.appName;
-    this.compConfig = fusionDataService.compConfig;
-  }
+  demonName$ = input.required<string>({ alias: 'demonName' });
+  compendium$ = this.fusionDataService.compendium$;
+  fusionChart$ = this.fusionDataService.fusionChart$;
+  demon$ = computed(() => this.compendium$().getDemon(this.demonName$()) || null);
+  elemRecipes$ = computed(() => this.compConfig.hasFusion && this.demon$() ?
+    splitWithGem(this.demonName$(), this.compendium$(), this.fusionChart$()) : []
+  );
 
-  ngOnInit() {
-    this.subscribeAll();
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
-
-  subscribeAll() {
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(comp => {
-        this.compendium = comp;
-        this.getDemonEntry();
-      }));
-
-    this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(fusionChart => {
-        this.fusionChart = fusionChart;
-        this.getDemonEntry();
-      }));
-
-    this.subscriptions.push(
-      this.currentDemonService.currentDemon.subscribe(name => {
-        this.name = name;
-        this.getDemonEntry();
-      }));
-
-    this.route.params.subscribe(params => {
-      this.currentDemonService.nextCurrentDemon(params['demonName']);
-    });
-  }
-
-  getDemonEntry() {
-    if (this.compendium && this.name) {
-      this.title.setTitle(`${this.name} - ${this.appName}`);
-      this.demon = this.compendium.getDemon(this.name);
-      this.elemRecipes = this.compConfig.hasFusion && this.demon ? splitWithGem(this.name, this.compendium, this.fusionChart) : [];
-      this.changeDetectorRef.markForCheck();
-    }
+  constructor() {
+    effect(() => this.title.setTitle(`${this.demonName$()} - ${this.fusionDataService.appName}`));
+    effect(() => this.currentDemonService.nextCurrentDemon(this.demonName$()));
   }
 }

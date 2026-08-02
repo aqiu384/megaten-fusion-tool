@@ -114,11 +114,7 @@ function createCompConfig(): CompendiumConfigSet {
   compConfigs.p4g.hasSkillCards = true;
   compConfigs.p4g.hasManualInheritance = true;
 
-  return  {
-    appTitle: 'Persona 4',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

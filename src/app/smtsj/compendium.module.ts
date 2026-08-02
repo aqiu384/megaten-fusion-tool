@@ -127,11 +127,7 @@ function createCompConfig(): CompendiumConfigSet {
   delete compConfigs.smtdsj.specialRecipes['Alciel'];
   delete compConfigs.smtdsj.specialRecipes['Demonee-ho'];
 
-  return {
-    appTitle: 'Shin Megami Tensei: Strange Journey',
-    raceOrder: COMP_CONFIG_JSON.races.reduce((acc, t, i) => { acc[t] = i; return acc }, {}),
-    configs: compConfigs
-  };
+  return compConfigs;
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

@@ -1,59 +1,30 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Title } from '@angular/platform-browser';
-import { CompendiumConfig } from '../models';
-
 import { DemonListContainerComponent as DLCC } from '../../compendium/containers/demon-list.component';
 import { FusionDataService } from '../fusion-data.service';
 import { SmtDemonListComponent } from '../../compendium/components/smt-demon-list.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-demon-list-container',
-  imports: [CommonModule, SmtDemonListComponent],
+  imports: [SmtDemonListComponent],
   template: `
     <app-smt-demon-list
       [isEnemy]="showEnemies"
-      [raceOrder]="compConfig.raceOrder"
+      [raceOrder]="raceOrder"
       [statHeaders]="statHeaders"
-      [resistHeaders]="resistHeaders"
-      [inheritOrder]="inheritOrder"
+      [resistHeaders]="compConfig.resistElems"
+      [inheritOrder]="compConfig.elemOrder"
       [affinityHeaders]="showEnemies ? [] : compConfig.affinityUsers"
-      [rowData]="demons | async">
+      [rowData]="demons$()">
     </app-smt-demon-list>
   `
 })
 export class DemonListContainerComponent extends DLCC {
-  appName: string;
-  statHeaders: string[];
-  resistHeaders: string[];
-  inheritOrder: { [elem: string]: number };
-  compConfig: CompendiumConfig;
-
-  constructor(
-    title: Title,
-    route: ActivatedRoute,
-    changeDetectorRef: ChangeDetectorRef,
-    fusionDataService: FusionDataService
-  ) {
-    super(title, changeDetectorRef, fusionDataService);
-    this.showAllies = !route.snapshot.data.showEnemies;
-    this.showEnemies = !this.showAllies;
-
-    this.compConfig = fusionDataService.compConfig;
-    this.defaultSortFun = (d1, d2) => (
-      this.compConfig.raceOrder[d1.race] -
-      this.compConfig.raceOrder[d2.race]
-    ) * 200 + d2.lvl - d1.lvl;
-
-    this.appName = `List of Personas - ${fusionDataService.appName}`;
-    this.statHeaders = this.compConfig.baseStats;
-    this.resistHeaders = this.compConfig.resistElems;
-    this.inheritOrder = this.compConfig.elemOrder;
-
-    if (this.showEnemies) {
-      this.appName = `List of Demons - ${fusionDataService.appName}`;
-      this.statHeaders = this.compConfig.enemyStats;
-    }
-  }
+  route = inject(ActivatedRoute);
+  fusionDataService = inject(FusionDataService);
+  compConfig = this.fusionDataService.compConfig;
+  raceOrder = this.compConfig.raceOrder;
+  showAllies = !this.route.snapshot.data.showEnemies;
+  showEnemies = !this.showAllies;
+  appName = `List of ${!this.showEnemies ? 'Personas' : 'Demons'} - ${this.fusionDataService.appName}`;
+  statHeaders = !this.showEnemies ? this.compConfig.baseStats : this.compConfig.enemyStats;
 }

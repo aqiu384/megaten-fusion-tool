@@ -1,8 +1,6 @@
-import { Component, OnInit, OnDestroy, OnChanges, Inject, Input } from '@angular/core';
-import { Subscription } from 'rxjs';
-
+import { Component, OnChanges, Input, inject } from '@angular/core';
 import { FUSION_DATA_SERVICE, FUSION_TRIO_SERVICE } from '../constants';
-import { Compendium, FusionChart, SquareChart, FusionDataService, FusionTrioService, FusionCalculator, TripleCalculator } from '../models';
+import { Compendium, FusionChart, SquareChart, FusionCalculator, TripleCalculator } from '../models';
 import { toFusionPair, toDemonTrio } from '../models/conversions';
 
 @Component({
@@ -89,39 +87,14 @@ export class FissionPreviewTableComponent implements OnChanges {
   imports: [FissionPreviewTableComponent],
   template: `
     <app-fission-preview-table
-      [pairCalculator]="calculator"
-      [pairChart]="fusionChart"
-      [compendium]="compendium">
+      [pairCalculator]="fusionDataService.fissionCalculator"
+      [pairChart]="fusionDataService.fusionChart$()"
+      [compendium]="fusionDataService.compendium$()">
     <app-fission-preview-table>
   `
 })
-export class SmtFissionPreviewComponent implements OnInit, OnDestroy {
-  calculator: FusionCalculator;
-  compendium: Compendium;
-  fusionChart: FusionChart;
-  subscriptions: Subscription[] = [];
-
-  constructor(@Inject(FUSION_DATA_SERVICE) private fusionDataService: FusionDataService) { }
-
-  ngOnInit() {
-    this.calculator = this.fusionDataService.fissionCalculator;
-
-    this.subscriptions.push(
-      this.fusionDataService.compendium.subscribe(compendium => {
-        this.compendium = compendium;
-      }));
-
-    this.subscriptions.push(
-      this.fusionDataService.fusionChart.subscribe(fusionChart => {
-        this.fusionChart = fusionChart;
-      }));
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
+export class SmtFissionPreviewComponent {
+  fusionDataService = inject(FUSION_DATA_SERVICE)
 }
 
 @Component({
@@ -129,41 +102,14 @@ export class SmtFissionPreviewComponent implements OnInit, OnDestroy {
   imports: [FissionPreviewTableComponent],
   template: `
     <app-fission-preview-table
-      [pairCalculator]="pairCalculator"
-      [trioCalculator]="trioCalculator"
-      [pairChart]="fusionChart.normalChart"
-      [trioChart]="fusionChart"
-      [compendium]="compendium">
+      [pairCalculator]="fusionTrioService.fissionCalculator"
+      [trioCalculator]="fusionTrioService.triFissionCalculator"
+      [pairChart]="fusionTrioService.squareChart$().normalChart"
+      [trioChart]="fusionTrioService.squareChart$()"
+      [compendium]="fusionTrioService.compendium$()">
     <app-fission-preview-table>
   `
 })
-export class TrioFissionPreviewComponent implements OnInit, OnDestroy {
-  pairCalculator: FusionCalculator;
-  trioCalculator: TripleCalculator;
-  compendium: Compendium;
-  fusionChart: SquareChart;
-  subscriptions: Subscription[] = [];
-
-  constructor(@Inject(FUSION_TRIO_SERVICE) private fusionTrioService: FusionTrioService) { }
-
-  ngOnInit() {
-    this.pairCalculator = this.fusionTrioService.fissionCalculator;
-    this.trioCalculator = this.fusionTrioService.triFissionCalculator;
-
-    this.subscriptions.push(
-      this.fusionTrioService.compendium.subscribe(compendium => {
-        this.compendium = compendium;
-      }));
-
-    this.subscriptions.push(
-      this.fusionTrioService.squareChart.subscribe(chart => {
-        this.fusionChart = chart;
-      }));
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
-    }
-  }
+export class TrioFissionPreviewComponent {
+  fusionTrioService = inject(FUSION_TRIO_SERVICE);
 }

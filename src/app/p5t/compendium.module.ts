@@ -99,11 +99,7 @@ function createCompConfig(): CompendiumConfigSet {
     settingsVersion: 2401131500
   };
 
-  return {
-    appTitle: 'Persona 5 Tactica',
-    raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
-    configs: { 'p5t': compConfig }
-  };
+  return { p5t: compConfig };
 }
 
 export const CompendiumRoutes = createCompendiumRoutes(createCompConfig());

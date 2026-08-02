@@ -1,54 +1,37 @@
-import { ChangeDetectorRef, OnInit, OnDestroy, Directive } from '@angular/core';
+import { Directive, computed, effect, inject, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Observable } from 'rxjs';
-import { Subscription } from 'rxjs';
-
-import { Demon, Compendium, FusionDataService } from '../models';
+import { FUSION_DATA_SERVICE, makeDefaultDemonSort } from '../constants';
+import { Demon } from '../models';
 
 @Directive()
-export abstract class DemonListContainerComponent implements OnInit, OnDestroy {
-  private subscriptions: Subscription[] = [];
-  demons: Observable<Demon[]>;
-  appName = 'List of Demons - Megami Tensei Fusion Tools';
+export abstract class DemonListContainerComponent {
+  title = inject(Title);
+  fusionDataService = inject(FUSION_DATA_SERVICE);
+  abstract raceOrder: { [race: string]: number };
+  abstract appName: string;
   initListLen = 50;
   showAllies = true;
   showEnemies = false;
-  defaultSortFun = (a: Demon, b: Demon) => a.name.localeCompare(b.name);
 
-  constructor(
-    private title2: Title,
-    private changeDetectorRef: ChangeDetectorRef,
-    private fusionDataService2: FusionDataService
-  ) { }
+  demons$ = signal<Demon[]>([]);
+  allDemons$ = computed(() => {
+    let demons = this.fusionDataService.compendium$().allDemons;
 
-  ngOnInit() {
-    this.title2.setTitle(this.appName);
-
-    this.subscriptions.push(
-      this.fusionDataService2.compendium.subscribe(
-        this.onCompendiumUpdated.bind(this)));
-  }
-
-  ngOnDestroy() {
-    for (const subscription of this.subscriptions) {
-      subscription.unsubscribe();
+    if (!this.showAllies) {
+      demons = demons.filter(d => d.isEnemy);
+    } if (!this.showEnemies) {
+      demons = demons.filter(d => !d.isEnemy);
     }
-  }
 
-  onCompendiumUpdated(compendium: Compendium) {
-    this.changeDetectorRef.markForCheck();
-    this.demons = Observable.create(observer => {
-      let demons = compendium.allDemons;
+    demons.sort(makeDefaultDemonSort(this.raceOrder));
+    return demons;
+  });
 
-      if (!this.showAllies) {
-        demons = demons.filter(d => d.isEnemy);
-      } if (!this.showEnemies) {
-        demons = demons.filter(d => !d.isEnemy);
-      }
-
-      demons.sort(this.defaultSortFun);
-      observer.next(demons.slice(0, this.initListLen));
-      setTimeout(() => observer.next(demons));
+  constructor() {
+    effect(() => {
+      this.title.setTitle(this.appName);
+      this.demons$.set(this.allDemons$().slice(0, this.initListLen));
+      setTimeout(() => this.demons$.set(this.allDemons$()));
     });
   }
 }

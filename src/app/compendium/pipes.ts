@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { translateComp, translateElementLabel } from './models/translator';
-import { pipe } from 'rxjs';
 
 @Pipe({ name: 'translateComp' })
 export class TranslateCompPipe implements PipeTransform {
