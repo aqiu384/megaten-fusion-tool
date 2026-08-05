@@ -1,319 +1,32 @@
-import { Component, Input, OnChanges, inject, effect } from '@angular/core';
-import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { Component, inject, effect, linkedSignal, input, computed, ViewEncapsulation } from '@angular/core';
+import { form, FormField } from '@angular/forms/signals';
 import { Title } from '@angular/platform-browser';
-import { Demon, Skill, DecodedDemon } from '../models';
+import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { decodeDemon, encodeDemon } from '../models/password-generator';
 import { DemonPasswordComponent } from './demon-password-component';
-import { translateCompSet } from '../../compendium/models/translator';
 import { TranslateCompPipe } from '../../compendium/pipes';
 import Translations from '../../compendium/data/translations.json';
+import {
+  makeSkillPickList, SkillLookupMaker, RecipeSkillPickerComponent
+} from '../../compendium/components/recipe-skill-picker.component';
 
-@Component({
-  selector: 'app-password-generator',
-  imports: [ReactiveFormsModule, DemonPasswordComponent, TranslateCompPipe],
-  template: `
-    <form [formGroup]="form">
-      <app-demon-password
-        [encoding]="encoding"
-        [inverseEncoding]="inverseEncoding"
-        [encodeBytes]="encodeBytes"
-        (decodedBytes)="setPasswordValues($event)">
-      </app-demon-password>
-      <table class="entry-table">
-        <thead>
-          <tr><th colspan="4" class="title">{{ demonMsgs.Demon | translateComp:lang }}</th></tr>
-          <tr>
-            <th>Mask Byte</th>
-            <th>Lvl</th>
-            <th>{{ demonMsgs.Race | translateComp:lang }}</th>
-            <th>{{ demonMsgs.Name | translateComp:lang }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <select formControlName="maskByte">
-                @for (_ of range256; track $index; let i = $index) {
-                  <option [value]="i">{{ i }}</option>
-                }
-              </select>
-            </td>
-            <td>
-              <select formControlName="lvl">
-                @for (_ of range99; track $index; let i = $index) {
-                  <option [value]="i + 1">{{ i + 1 }}</option>
-                }
-              </select>
-            </td>
-            <td>
-              <select formControlName="race" (change)="changeRace(form.controls.race.value)">
-                @for (race of allRaces; track $index) {
-                  <option [value]="race">{{ race }}</option>
-                }
-              </select>
-            </td>
-            <td>
-              <select formControlName="demon" (change)="setDefaultValues(form.controls.demon.value)">
-                @for (demon of demons[form.controls.race.value]; track $index) {
-                  <option [value]="demon.name">{{ demon.name }}</option>
-                }
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="entry-table">
-        <thead>
-          <tr><th [attr.colspan]="stats.length" class="title">{{ demonMsgs.Stats | translateComp:lang }}</th></tr>
-          <tr>
-            @for (stat of stats; track $index) {
-              <th>{{ stat }}</th>
-            }
-          </tr>
-        </thead>
-        <tbody>
-          <tr formArrayName="stats">
-            @for (stat of form.controls.stats['controls']; track $index; let i = $index) {
-              <td>
-                <select [formControlName]="i">
-                  @for (_ of range99; track $index; let i = $index) {
-                    <option [value]="i + 1">{{ i + 1 }}</option>
-                  }
-                </select>
-              </td>
-            }
-          </tr>
-        </tbody>
-      </table>
-      <table class="entry-table">
-        <thead>
-          <tr><th colspan="2" class="title">{{ skillMsgs.LearnedSkills | translateComp:lang }}</th></tr>
-          <tr>
-            <th style="width: 25%">{{ skillMsgs.Elem | translateComp:lang }}</th>
-            <th style="width: 75%">{{ skillMsgs.Name | translateComp:lang }}</th>
-          </tr>
-        </thead>
-        <tbody formArrayName="skills">
-          @for (skill of form.controls.skills['controls']; track $index; let i = $index) {
-            <ng-container [formGroupName]="i">
-              <tr>
-                <td>
-                  <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                    @for (elem of allElems; track $index) {
-                      <option [value]="elem">{{ displayElems[elem] || elem }}</option>
-                    }
-                  </select>
-                </td>
-                <td>
-                  <select formControlName="name">
-                    @for (entry of skills[skill.controls.elem.value]; track $index) {
-                      <option [value]="entry.name">{{ entry.name }}</option>
-                    }
-                  </select>
-                </td>
-              </tr>
-            </ng-container>
-          }
-        </tbody>
-      </table>
-    </form>
-  `,
-  styles: [`
-    td select { width: 100%; }
-  `]
-})
-export class PasswordGeneratorComponent implements OnChanges {
-  @Input() lang: string;
-  @Input() defaultDemon: string;
-  @Input() encoding: string;
-  @Input() inverseEncoding: { [letter: string]: number };
-  @Input() compendium: Compendium;
-  @Input() races: string[]
-  @Input() elems: string[]
+const UNKNOWN_DEMON: Demon = {
+  name: '???', race: '-', align: '', code: 0,
+  lvl: 1, currLvl: 1, skills: {}, skillCards: {},
+  price: 0, stats: [1, 1, 1, 1, 1, 1, 1], growths:[1, 1], resists: [], ailments: [],
+  inherits: 0, affinities: [], fusion: 'normal', prereq: '', searchTags: '-'
+};
+const BLANK_SKILL: Skill = {
+  name: '-', code: 0, element: '-', rank: 0,
+  effect: '-', target: '-', cost: 0, learnedBy: [], transfer: [], level: 0
+};
 
-  stats = ['St', 'Ma', 'Vi', 'Ag', 'Lu'];
-  demons: { [race: string]: Demon[] };
-  skills: { [elem: string]: Skill[] };
-  dcodes: { [code: number]: Demon };
-  scodes: { [code: number]: Skill };
-  internalMaxSkills = 6;
-  allRaces: string[];
-  allElems: string[];
-  displayElems: { [elem: string]: string };
-  form: FormGroup;
-  encodeBytes: number[];
-  demonMsgs = Translations.DemonListComponent;
-  skillMsgs = Translations.SkillListComponent;
-
-  range99 = Array(99);
-  range256 = Array(256);
-  currHP = 0;
-  currMP = 0;
-  price = 0;
-
-  unknownDemon: Demon = {
-    name: '???', race: '-', align: '', code: 0,
-    lvl: 0, currLvl: 0, skills: {}, skillCards: {},
-    price: 0, stats: [0, 0, 0, 0, 0], growths:[], resists: [], ailments: [],
-    inherits: 0, affinities: [], fusion: 'normal', prereq: '', searchTags: '-'
-  };
-  blankSkill: Skill = {
-    name: '-', code: 0, element: '-', rank: 0,
-    effect: '-', target: '-', cost: 0, learnedBy: [], transfer: [], level: 0
-  };
-  unknownSkill: Skill = {
-    name: '???', code: 0, element: '-', rank: 0,
-    effect: '-', target: '-', cost: 0, learnedBy: [], transfer: [], level: 0
-  };
-
-  constructor(private fb: FormBuilder) {
-    this.createForm();
-  }
-
-  ngOnChanges() { this.initDropdowns(); }
-
-  createForm() {
-    const skills = [];
-
-    for (let i = 0; i < 6; i++) {
-      skills.push(this.fb.group({ elem: '-', name: '-' }));
-    }
-
-    this.form = this.fb.group({
-      maskByte: 0,
-      lvl: 1,
-      race: '-',
-      demon: '???',
-      stats: this.fb.array(Array(5).fill(1)),
-      skills: this.fb.array(skills)
-    });
-
-    this.form.valueChanges.subscribe(form => {
-      const demon = this.compendium.getDemon(form.demon) || this.unknownDemon;
-      const dskills = form.skills.map(s => this.compendium.getSkill(s.name) || this.blankSkill);
-
-      const decoded: DecodedDemon = {
-        demonCode: demon.code,
-        lvl: parseInt(form.lvl, 10),
-        exp: 0,
-        stats: form.stats.map(s => parseInt(s, 10)),
-        baseStats: form.stats.map(s => parseInt(s, 10)),
-        skillCodes: dskills.map(s => s.code),
-        maskByte: parseInt(form.maskByte, 10),
-      };
-
-      let maxRank = 0;
-      for (const skill of dskills) {
-        if (!demon.skills.hasOwnProperty(skill.name) && maxRank < skill.rank && skill.rank < 15) {
-          maxRank = skill.rank;
-        }
-      }
-
-      // const statsPrice = demon.pcoeff * Math.pow(decoded.stats.reduce((acc, s) => acc + s, 0), 3);
-      // const overflowPrice = this.isRedux ? statsPrice : statsPrice % Math.pow(2, 32);
-      // this.price = Math.floor((Math.floor(overflowPrice / 1000) + SkillCosts[maxRank] + 1300) * 0.75);
-
-      this.encodeBytes = encodeDemon(decoded);
-
-      // this.currHP = decoded.lvl * 6 + Math.floor(decoded.stats[2] * 3 * demon.hpmod) + (demon.name === 'Knocker' ? 30 : 25);
-      // this.currMP = decoded.lvl * 3 + Math.floor(decoded.stats[1] * 2 * demon.hpmod) + (demon.name === 'Knocker' ? 14 : 13);
-    });
-  }
-
-  initDropdowns() {
-    this.demons = { '-': [this.unknownDemon]};
-    this.skills = { '-': [this.blankSkill], '???': [this.unknownSkill] };
-    this.dcodes = {};
-    this.scodes = { 0: this.blankSkill };
-    this.displayElems = translateCompSet(Translations.ElementIcon, this.lang);
-
-    if (this.compendium) {
-      for (const demon of this.compendium.allDemons) {
-        if (!this.demons[demon.race]) {
-          this.demons[demon.race] = [];
-        }
-
-        this.demons[demon.race].push(demon);
-        this.dcodes[demon.code] = demon;
-      }
-
-      for (const skill of this.compendium.allSkills) {
-        if (!this.skills[skill.element]) {
-          this.skills[skill.element] = [];
-        }
-
-        if (skill.code > 0) {
-          this.skills[skill.rank < 90 ? skill.element : '???'].push(skill);
-          this.scodes[skill.code] = skill;
-        }
-      }
-
-      for (const demonList of Object.values(this.demons)) {
-        if (demonList.length === 0) { demonList.push() }
-        demonList.sort((a, b) => b.lvl - a.lvl);
-      }
-
-      for (const skillList of Object.values(this.skills)) {
-        skillList.sort((a, b) => a.rank - b.rank);
-      }
-
-      this.allRaces = ['-'].concat(this.races.filter(r => this.demons[r]));
-      this.allElems = ['-'].concat(this.elems.filter(e => this.skills[e]), ['???']);
-      this.setDefaultValues(this.defaultDemon);
-    }
-  }
-
-  changeRace(race: string) {
-    const demon = this.demons[race][0];
-    this.form.controls.demon.setValue(demon.name);
-    this.setDefaultValues(demon.name);
-  }
-
-  setPasswordValues(passwordBytes: number[]) {
-    const demon = decodeDemon(passwordBytes);
-    const sentries = demon.skillCodes.map(c => this.scodes[c] || this.unknownSkill);
-    const dentry = Object.assign({}, this.dcodes[demon.demonCode] || this.unknownDemon, {
-      lvl: demon.lvl,
-      stats: [0, 0].concat(demon.stats.map(s => Math.min(Math.max(s, 1), 99))),
-    });
-
-    this.form.setValue({
-      maskByte: demon.maskByte,
-      lvl: dentry.lvl,
-      race: dentry.race,
-      demon: dentry.name,
-      stats: dentry.stats.slice(2),
-      skills: sentries.map(s => ({ elem: s.element, name: s.name }))
-    });
-  }
-
-  setDefaultValues(name: string) {
-    if (name !== this.unknownDemon.name) {
-      const demon = this.compendium.getDemon(name);
-      const innateSkills = Object.entries(demon.skills)
-        .slice(0, this.internalMaxSkills)
-        .filter(s => s[1] < 2)
-        .map(s => this.compendium.getSkill(s[0]));
-      const learnedSkills = Object.entries(demon.skills)
-        .filter(s => s[1] < 100)
-        .map(s => this.compendium.getSkill(s[0]));
-
-      this.skills[this.blankSkill.element] = [this.blankSkill].concat(learnedSkills);
-      this.form.setValue({
-        maskByte: 0,
-        lvl: Math.floor(demon.lvl),
-        race: demon.race,
-        demon: demon.name,
-        stats: demon.stats.slice(2),
-        skills: innateSkills
-          .concat(Array(this.internalMaxSkills - innateSkills.length).fill(this.blankSkill))
-          .map(s => ({ elem: '-', name: s.name }))
-      });
-    }
-  }
-}
+const SKILL_RANK_COSTS = [
+  0, 112, 155, 222, 347, 564, 952, 1666, 3020, 5663,
+  10972, 21943, 43886, 87772, 175543
+]
 
 const PASSWORD_ENCODINGS = [
   "$234567890ABCDEFGH%JKLMNOPQRSTUVWXYZabcdefghijk#mnopqrstuvwxyz-+",
@@ -322,25 +35,230 @@ const PASSWORD_ENCODINGS = [
   "しんいくみＢやるＹけひＫＦとＨむＡちにＺきＷよＬをのたれＮえＳふわＪそりすＣめＰへＱＧＲＤこＭＴまつせかはＥＵてさなあもゆおうろ"
 ];
 
-function createInverseEncoding(encoding: string): { [letter: string]: number } {
-  const inverseEncoding: { [letter: string]: number; } = {};
-  for (const encode of PASSWORD_ENCODINGS.concat(encoding)) {
-    encode.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, inverseEncoding);
+@Component({
+  selector: 'app-password-generator',
+  imports: [FormField, RecipeSkillPickerComponent, DemonPasswordComponent, TranslateCompPipe],
+  template: `
+    @let lang = compConfig$().lang;
+    @let stats = compConfig$().baseStats;
+    <form>
+      <app-demon-password
+        [encoding]="encoding$()"
+        [inverseEncoding]="inverseEncoding$()"
+        [encodeBytes]="encodedDemon$()"
+        (decodedBytes)="initWithDecodedDemon(decodeDemon($event))">
+      </app-demon-password>
+      <table class="entry-table">
+        <tr>
+          <th [attr.colspan]="5 + stats.length" class="title">{{ demonMsgs.Demon | translateComp:lang }}</th>
+        <tr>
+        <tr>
+          <th style="width: 5em;">Price</th>
+          <th>Mask Byte</th>
+          <th style="width: 5em;">{{ demonMsgs.Race | translateComp:lang }}</th>
+          <th style="width: 2.5em;">Lvl</th>
+          <th>{{ demonMsgs.Demon | translateComp:lang }}</th>
+          @for (stat of stats; track $index) {
+            <th style="width: 2.5em;">{{ stat }}</th>
+          }
+        </tr>
+        <tr>
+          <td>{{ currPrice$() }}</td>
+          <td>
+            <select [formField]="form.maskByte">
+              @for (_ of count256; track $index) {
+                <option [value]="$index">{{ $index }}</option>
+              }
+            </select>
+          </td>
+          <td>{{ demon$().race }}</td>
+          <td>
+            <select [formField]="form.lvl">
+              @for (_ of count99; track $index) {
+                <option [value]="$index + 1">{{ $index + 1 }}</option>
+              }
+            </select>
+          </td>
+          <td>
+            <select [formField]="form.demon" (change)="initWithInnate()">
+              @for (demon of demons$(); track demon.name) {
+                <option [value]="demon.name">{{ demon.name }}</option>
+              }
+            </select>
+          </td>
+          <td>{{ currHP$() }}</td>
+          <td>{{ currMP$() }}</td>
+          @for (stat of form.stats; track $index){
+            <td>
+              <select [formField]="stat">
+                @for (_ of count99; track $index) {
+                  <option [value]="$index + 1">{{ $index + 1 }}</option>
+                }
+              </select>
+            </td>
+          }
+        <tr>
+      </table>
+      <table class="entry-table">
+        <tr>
+          <th colspan="5" class="title">Skills</th>
+        </tr>
+        <tr>
+          <th style="width: 5em;">{{ skillMsgs.Elem | translateComp:lang}}</th>
+          <th style="width: 7.5em;">{{ skillMsgs.Skill | translateComp:lang }}</th>
+          <th style="width: 5em;">{{ skillMsgs.Cost | translateComp:lang }}</th>
+          <th style="width: 30em;">{{ skillMsgs.Effect | translateComp:lang }}</th>
+          <th style="width: 5em;">{{ skillMsgs.Target | translateComp:lang }}</th>
+        </tr>
+        @for (skillPicker of form.skills; track $index) {
+          <tr>
+            <app-recipe-skill-picker
+              [skillPickForm]="skillPicker"
+              [skillLookupMaker]="skillLookupMaker$()"
+              [skillIs]="skillIs$()"
+              [showDemonPicker]="false">
+            </app-recipe-skill-picker>
+          </tr>
+        }
+      </table>
+    </form>
+  `,
+  styles: [`
+    td select { width: 100%; }
+  `],
+  encapsulation: ViewEncapsulation.None
+})
+export class PasswordGeneratorComponent {
+  compendium$ = input.required<Compendium>({ alias: 'compendium' });
+  compConfig$ = input.required<CompendiumConfig>({ alias: 'compConfig' });
+  demonMsgs = Translations.DemonListComponent;
+  skillMsgs = Translations.SkillListComponent;
+  count256 = Array(256);
+  count99 = Array(99);
+  decodeDemon = decodeDemon;
+
+  formModel$ = linkedSignal(() => ({
+    maskByte: '0',
+    demon: '-',
+    lvl: '1',
+    stats: Array<string>(5).fill('1'),
+    skills: makeSkillPickList(6),
+  }));
+
+  decodedDemon$ = computed<DecodedDemon>(() => {
+    const form = this.formModel$();
+    const comp = this.compendium$();
+    return {
+      demonCode: comp.getDemon(form.demon)?.code ?? 0,
+      lvl: parseInt(form.lvl),
+      exp: 0,
+      stats: form.stats.map(s => parseInt(s)),
+      baseStats: form.stats.map(s => parseInt(s)),
+      skillCodes: form.skills.map(s => comp.getSkill(s.skill)?.code ?? 0),
+      maskByte: parseInt(form.maskByte)
+    };
+  });
+
+  form = form(this.formModel$);
+
+  constructor() {
+    effect(() => this.form.demon().value.update(demon =>
+      this.demons$().find(d => d.name === demon) ? demon : this.demons$()[0].name
+    ));
+    setTimeout(() => this.initWithInnate());
   }
-  return inverseEncoding;
+
+  initWithInnate(){
+    const demon = this.demon$();
+    const innates = this.skillLookupMaker$().getInnateSkills(demon);
+    this.initWithDecodedDemon({
+      demonCode: demon.code,
+      lvl: Math.floor(demon.lvl),
+      exp: 0,
+      stats: demon.stats.slice(2),
+      baseStats: demon.stats.slice(2),
+      skillCodes: innates.slice(0, 6).map(s => this.compendium$().getSkill(s.name)?.code ?? 0),
+      maskByte: 0
+    });
+  }
+
+  initWithDecodedDemon(decoded: DecodedDemon) {
+    const demon = this.demonCodes$()[decoded.demonCode];
+    const innates = this.skillLookupMaker$().getInnateSkills(demon).map(s => s.name);
+    const skills = decoded.skillCodes.map(c => this.skillCodes$()[c]);
+    this.formModel$.update(() => ({
+      maskByte: decoded.maskByte.toString(),
+      demon: demon.name,
+      lvl: decoded.lvl.toString(),
+      stats: decoded.stats.map(s => s.toString()),
+      skills: skills.map(s => ({
+        disabled: false,
+        elem: innates.includes(s.name) ? '-' : s.element,
+        skill: s.name,
+        demon: innates.includes(s.name) ? demon.name : '-'
+      }))
+    }));
+  }
+
+  demons$ = computed(() => {
+    const demons = this.compendium$().allDemons.filter(d => d.code > 0);
+    demons.sort((a, b) => a.name.localeCompare(b.name));
+    return demons.concat([UNKNOWN_DEMON]);
+  });
+
+  skillLookupMaker$ = computed(() => new SkillLookupMaker(this.compendium$(), [], this.compConfig$().skillElems, false));
+  demon$ = computed(() => this.compendium$().getDemon(this.form.demon().value()) ?? UNKNOWN_DEMON);
+  skillIs$ = computed(() => this.skillLookupMaker$().getInheritSkills(this.demon$(), this.demon$()));
+  encodedDemon$ = computed(() => encodeDemon(this.decodedDemon$()));
+
+  encoding$ = computed(() => PASSWORD_ENCODINGS[
+    this.compConfig$().lang !== 'en' ? 3 :
+    this.compConfig$().appCssClasses.includes('smtdsj') ? 1 : 0
+  ]);
+  inverseEncoding$ = computed(() => {
+    const inverseEncoding: { [letter: string]: number; } = {};
+    for (const encode of PASSWORD_ENCODINGS.concat(this.encoding$())) {
+      encode.split('').reduce((acc, c, i) => { acc[c] = i; return acc; }, inverseEncoding);
+    }
+    return inverseEncoding;
+  });
+  demonCodes$ = computed(() => {
+    const codes = Array<Demon>(512).fill(UNKNOWN_DEMON);
+    this.demons$().reduce((acc, d) => { acc[d.code] = d; return acc; }, codes);
+    return codes;
+  });
+  skillCodes$ = computed(() => {
+    const codes = Array<Skill>(512).fill(BLANK_SKILL);
+    this.compendium$().allSkills.filter(s => s.code > 0).reduce((acc, s) => { acc[s.code] = s; return acc; }, codes);
+    return codes;
+  });
+  currHP$ = computed(() =>
+    6 * this.decodedDemon$().lvl +
+    Math.floor(3 * this.demon$().growths[1] * this.decodedDemon$().stats[2]) +
+    (this.demon$().name === 'Knocker' ? 30 : 25)
+  );
+  currMP$ = computed(() =>
+    3 * this.decodedDemon$().lvl +
+    Math.floor(2 * this.demon$().growths[1] * this.decodedDemon$().stats[1]) +
+    (this.demon$().name === 'Knocker' ? 14 : 13)
+  );
+  currPrice$ = computed(() => {
+    const demon = this.demon$();
+    const skills = this.decodedDemon$().skillCodes.map(c => this.skillCodes$()[c])
+      .filter(s => demon.skills.hasOwnProperty(s.name) && 0 < s.rank && s.rank < 15);
+    const maxRank = Math.max(...skills.map(s => s.rank), 0);
+    const statsPrice = demon.growths[0] * Math.pow(this.decodedDemon$().stats.reduce((acc, s) => acc + s, 0), 3);
+    const overflowPrice = statsPrice % Math.pow(2, 32);
+    return Math.floor(0.75 * (Math.floor(overflowPrice / 1000) + SKILL_RANK_COSTS[maxRank] + 1300));
+  });
 }
 
 @Component({
   imports: [PasswordGeneratorComponent],
   template: `
     <app-password-generator
-      [lang]="compConfig.lang"
-      [races]="compConfig.races"
-      [elems]="compConfig.skillElems"
-      [defaultDemon]="compConfig.defaultRecipeDemon"
-      [encoding]="encoding"
-      [inverseEncoding]="inverseEncoding"
-      [compendium]="compendium$()">
+      [compendium]="compendium$()"
+      [compConfig]="compConfig">
     </app-password-generator>
   `
 })
@@ -348,11 +266,6 @@ export class PasswordGeneratorContainerComponent {
   title = inject(Title);
   fusionDataService = inject(FusionDataService);
   compConfig = this.fusionDataService.compConfig;
-  encoding = PASSWORD_ENCODINGS[
-    this.compConfig.lang !== 'en' ? 3 :
-    this.compConfig.appCssClasses.includes('smtdsj') ? 1 : 0
-  ];
-  inverseEncoding = createInverseEncoding(this.encoding)
   compendium$ = this.fusionDataService.compendium$;
 
   constructor() {

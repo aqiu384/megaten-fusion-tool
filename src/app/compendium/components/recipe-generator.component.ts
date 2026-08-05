@@ -1,13 +1,10 @@
 import { Component, input, computed, effect, linkedSignal, ViewEncapsulation } from '@angular/core';
+import { applyEach, disabled, form, FormField } from '@angular/forms/signals';
 import { CommonModule } from '@angular/common';
-import { form, FormField } from '@angular/forms/signals';
-import { FormsModule } from '@angular/forms';
-
 import { SkillLevelToShortStringPipeLocale, TranslateCompPipe } from '../pipes';
 import { Compendium, SquareChart, RecipeGeneratorConfig } from '../../compendium/models';
 import { createLeftRightCombos, createLeftRightRecipe } from '../models/recipe-generator';
 import Translations from '../data/translations.json';
-
 import {
   DemonLookup, SkillLookup, SkillPickModel, BLANK_DEMON,
   makeSkillPickList, SkillLookupMaker, RecipeSkillPickerComponent
@@ -43,7 +40,7 @@ export class RecipeInheritElemsComponent {
 
 @Component({
   selector: 'app-recipe-generator',
-  imports: [CommonModule, FormsModule, FormField, TranslateCompPipe, RecipeSkillPickerComponent, RecipeInheritElemsComponent],
+  imports: [CommonModule, FormField, TranslateCompPipe, RecipeSkillPickerComponent, RecipeInheritElemsComponent],
   template: `
     @let lang = lang$();
     @let recipeConfig = recipeConfig$();
@@ -91,7 +88,7 @@ export class RecipeInheritElemsComponent {
           <td colspan="3">
             <select [formField]="form.demonR">
               @for (demon of demonRs$()[demonL$().name]; track demon.name) {
-                <option [ngValue]="demon">{{ demon.name }}</option>
+                <option [value]="demon.name">{{ demon.name }}</option>
               }
             </select>
           </td>
@@ -196,7 +193,29 @@ export class RecipeGeneratorComponent {
     ingredRs: makeSkillPickList(this.maxSkills$() / 2)
   }));
 
-  form = form(this.recipeInputModel$);
+  form = form(this.recipeInputModel$, schemaPath => {
+    applyEach(schemaPath.ingredLs, itemPath => {
+      disabled(itemPath, { when: ({ valueOf }) => valueOf(itemPath.disabled)})
+    });
+    applyEach(schemaPath.ingredRs, itemPath => {
+      disabled(itemPath, { when: ({ valueOf }) => valueOf(itemPath.disabled)})
+    });
+  });
+
+  constructor() {
+    effect(() => this.form.demonT().value.update(demonT =>
+      this.demonTs$().find(d => d.name === demonT) ? demonT : this.demonTs$()[0].name
+    ));
+    effect(() => this.form.demonL().value.update(demonL =>
+      this.demonLs$().find(d => d.name === demonL) ? demonL : this.demonLs$()[0].name
+    ));
+    effect(() => this.form.demonR().value.update(demonR =>
+      this.demonRs$()[this.demonL$().name]?.find(d => d.name === demonR) ?
+        demonR : this.demonRs$()[this.demonL$().name]?.[0].name ||
+          Object.values(this.demonRs$())[0][0].name
+    ));
+    setTimeout(() => this.initWithInnate());
+  }
 
   initWithInnate(){
     const ingredIs: SkillPickModel[][] = [[], []];
@@ -220,26 +239,11 @@ export class RecipeGeneratorComponent {
     }));
   }
 
-  constructor() {
-    effect(() => this.form.demonT().value.update(demonT =>
-      this.demonTs$().find(d => d.name === demonT) ? demonT : this.demonTs$()[0].name
-    ));
-    effect(() => this.form.demonL().value.update(demonL =>
-      this.demonLs$().find(d => d.name === demonL) ? demonL : this.demonLs$()[0].name
-    ));
-    effect(() => this.form.demonR().value.update(demonR =>
-      this.demonRs$()[this.demonL$().name]?.find(d => d.name === demonR) ?
-        demonR : this.demonRs$()[this.demonL$().name]?.[0].name ||
-          Object.values(this.demonRs$())[0][0].name
-    ));
-    setTimeout(() => this.initWithInnate());
-  }
-
   demonT$ = computed(() => this.compendium$().getDemon(this.form.demonT().value()) ?? BLANK_DEMON);
   demonL$ = computed(() => this.compendium$().getDemon(this.form.demonL().value()) ?? BLANK_DEMON);
   demonR$ = computed(() => this.compendium$().getDemon(this.form.demonR().value()) ?? BLANK_DEMON);
   skillLookupMaker$ = computed(() => new SkillLookupMaker(
-    this.compendium$(), this.recipeConfig$().inheritElems, this.recipeConfig$().skillElems
+    this.compendium$(), this.recipeConfig$().inheritElems, this.recipeConfig$().skillElems, false
   ));
 
   skillTs$ = computed(() => this.skillLookupMaker$().getInheritSkills(this.demonT$(), this.demonT$()));

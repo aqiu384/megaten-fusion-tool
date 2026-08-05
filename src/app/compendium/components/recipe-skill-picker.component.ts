@@ -1,6 +1,7 @@
 import { Component, input, effect, computed } from '@angular/core';
 import { FieldTree, FormField } from '@angular/forms/signals';
 import { Demon, Skill, Compendium } from '../../compendium/models';
+import { SkillCostToStringPipe } from '../../compendium/pipes';
 
 export interface DemonLookup { [key: string]: Demon[]; }
 export interface SkillLookup { [key: string]: Skill[]; }
@@ -35,7 +36,12 @@ export class SkillLookupMaker {
   learnedBy: DemonLookup;
   elemTyped: SkillLookup;
 
-  constructor(public compendium: Compendium, public inheritElems: string[], public skillElems: string[]) {
+  constructor(
+    public compendium: Compendium,
+    public inheritElems: string[],
+    public skillElems: string[],
+    public includeUnique: boolean
+  ) {
     this.learnedBy = { '-': [BLANK_DEMON] };
     this.elemTyped = { '-': [BLANK_SKILL] };
 
@@ -46,7 +52,9 @@ export class SkillLookupMaker {
       }
     }
 
-    for (const skill of this.compendium.allSkills.filter(s => s.rank < 50 && this.learnedBy[s.name])) {
+    for (const skill of this.compendium.allSkills.filter(s =>
+      (this.includeUnique || s.rank < 50) && this.learnedBy[s.name])
+    ) {
       if (!this.elemTyped[skill.inherit]) { this.elemTyped[skill.inherit] = []; }
       this.elemTyped[skill.inherit].push(skill);
     }
@@ -72,21 +80,23 @@ export class SkillLookupMaker {
     }
 
     const elems = this.skillElems.filter(e => !excludeElems.includes(e));
-    const learnedSkills = Object.keys(demonI.skills)
-      .filter(s => demonI.skills[s] < 99)
+    const skillTs = Object.keys(demonT.skills)
+      .filter(s => demonT.skills[s] < 100);
+    const skillIs = Object.keys(demonI.skills)
+      .filter(s => demonI.skills[s] < 100)
       .map(s => this.compendium.getSkill(s))
-      .filter(s => demonT.skills[s.name] > -1 || elems.includes(s.element) && s.rank < 50);
+      .filter(s => !skillTs.includes(s.name) && elems.includes(s.element) && s.rank < 50);
 
     return elems.reduce((acc, e) =>
       { acc[e] = this.elemTyped[e]; return acc; },
-      { '-': [BLANK_SKILL].concat(learnedSkills) }
+      { '-': [BLANK_SKILL].concat(skillTs.map(s => this.compendium.getSkill(s)), skillIs) }
     );
   }
 }
 
 @Component({
   selector: 'app-recipe-skill-picker',
-  imports: [FormField],
+  imports: [FormField, SkillCostToStringPipe],
   template: `
     <td>
       <select [formField]="form$().elem">
@@ -107,16 +117,16 @@ export class SkillLookupMaker {
     </td>
     @if (showDemonPicker$()) {
       <td>
-        @if (!form$().disabled().value()) {
-          <select [formField]="form$().demon">
-            @for (demon of learnedBy$()[skill$().name]; track demon.name) {
-              <option [value]="demon.name">{{ demon.name }}</option>
-            }
-          </select>
-        } @else {
-          <select disabled><option>-</option></select>
-        }
+        <select [formField]="form$().demon">
+          @for (demon of learnedBy$()[skill$().name]; track demon.name) {
+            <option [value]="demon.name">{{ demon.name }}</option>
+          }
+        </select>
       </td>
+    } @else {
+      <td [style.color]="skill$().cost ? null: 'transparent'">{{ skill$().cost | skillCostToString }}</td>
+      <td>{{ skill$().effect }}</td>
+      <td>{{ skill$().target }}</td>
     }
   `,
   host: {

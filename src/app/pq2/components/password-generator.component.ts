@@ -1,254 +1,172 @@
-import { Component, Input, OnChanges, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { Component, ViewEncapsulation, computed, effect, inject, input, linkedSignal } from '@angular/core';
+import { form, FormField } from '@angular/forms/signals';
 import { Title } from '@angular/platform-browser';
-import { Demon, Skill, DecodedDemon, CompendiumConfig } from '../models';
+
 import { Compendium } from '../models/compendium';
 import { FusionDataService } from '../fusion-data.service';
 import { encodeDemon } from '../models/password-generator';
-import { translateCompSet } from '../../compendium/models/translator';
 import { TranslateCompPipe } from '../../compendium/pipes';
+import { DecodedDemon, CompendiumConfig } from '../models';
 import { QrcodeComponent } from './qrcode-component';
 import Translations from '../../compendium/data/translations.json';
 
+import {
+  makeSkillPickList, SkillLookupMaker, RecipeSkillPickerComponent
+} from '../../compendium/components/recipe-skill-picker.component';
+
 @Component({
   selector: 'app-password-generator',
-  imports: [CommonModule, ReactiveFormsModule, QrcodeComponent, TranslateCompPipe],
+  imports: [FormField, RecipeSkillPickerComponent, QrcodeComponent, TranslateCompPipe],
   template: `
-    <form [formGroup]="form">
+    @let lang = compConfig$().lang;
+    <form>
       <h2>QR Code Generator</h2>
       <table class="entry-table">
         <tr><th colspan="2" class="title">QR Code</th></tr>
         <tr>
-          <td><app-qrcode [byteArray]="passBytes"></app-qrcode></td>
+          <td><app-qrcode [byteArray]="decodedBytes$()"></app-qrcode></td>
         </tr>
       </table>
       <table class="entry-table">
-        <tr><th colspan="6" class="title">{{ demonMsgs.Demon | translateComp:lang }}</th></tr>
         <tr>
-          <th>{{ demonMsgs.Price | translateComp:lang }}</th>
-          <th>Lvl</th>
+          <th colspan="6" class="title">{{ demonMsgs.Demon | translateComp:lang }}</th>
+        <tr>
+        <tr>
+          <th style="width: 5em;">Price</th>
+          <th style="width: 5em;">{{ demonMsgs.Race | translateComp:lang }}</th>
+          <th style="width: 2.5em;">Lvl</th>
+          <th>{{ demonMsgs.Demon | translateComp: lang }}</th>
           <th>HP</th>
           <th>MP</th>
-          <th>{{ demonMsgs.Race | translateComp:lang }}</th>
-          <th>{{ demonMsgs.Name | translateComp:lang }}</th>
         </tr>
         <tr>
-          <td>{{ compendium.inGameCurrencySymbol + (price | number:'1.0-0') }}</td>
+          <td>{{ currPrice$() }}</td>
+          <td>{{ demon$().race }}</td>
           <td>
-            <select formControlName="lvl">
-              @for (_ of range99; track $index; let i = $index) {
-                <option [value]="i + 1">{{ i + 1 }}</option>
+            <select [formField]="form.lvl">
+              @for (_ of count99; track $index) {
+                <option [value]="$index + 1">{{ $index + 1 }}</option>
               }
             </select>
           </td>
           <td>
-            <select formControlName="hp">
-              @for (_ of range299; track $index; let i = $index) {
-                <option [value]="i + 1">{{ i + 1 }}</option>
-              }
-            </select>
-          </td>
-          <td>
-            <select formControlName="mp">
-              @for (_ of range99; track $index; let i = $index) {
-                <option [value]="i + 1">{{ i + 1 }}</option>
-              }
-            </select>
-          </td>
-          <td>
-            <select formControlName="race" (change)="changeRace(form.controls.race.value)">
-              @for (race of races; track $index) {
-                <option [value]="race">{{ race }}</option>
-              }
-            </select>
-          </td>
-          <td>
-            <select formControlName="demon" (change)="setDefaultValues(form.controls.demon.value)">
-              @for (demon of demons[form.controls.race.value]; track $index) {
+            <select [formField]="form.demon" (change)="initWithInnate()">
+              @for (demon of demons$(); track demon.name) {
                 <option [value]="demon.name">{{ demon.name }}</option>
               }
             </select>
           </td>
-        </tr>
+          <td>
+            <select [formField]="form.hp">
+              @for (_ of count299; track $index) {
+                <option [value]="$index + 1">{{ $index + 1 }}</option>
+              }
+            </select>
+          </td>
+          <td>
+            <select [formField]="form.mp">
+              @for (_ of count99; track $index) {
+                <option [value]="$index + 1">{{ $index + 1 }}</option>
+              }
+            </select>
+          </td>
+        <tr>
       </table>
       <table class="entry-table">
-        <thead>
-          <tr><th colspan="2" class="title">{{ skillMsgs.LearnedSkills | translateComp:lang }}</th></tr>
+        <tr>
+          <th colspan="5" class="title">Skills</th>
+        </tr>
+        <tr>
+          <th style="width: 5em;">{{ skillMsgs.Elem | translateComp:lang}}</th>
+          <th style="width: 7.5em;">{{ skillMsgs.Skill | translateComp:lang }}</th>
+          <th style="width: 5em;">{{ skillMsgs.Cost | translateComp:lang }}</th>
+          <th style="width: 30em;">{{ skillMsgs.Effect | translateComp:lang }}</th>
+          <th style="width: 5em;">{{ skillMsgs.Target | translateComp:lang }}</th>
+        </tr>
+        @for (skillPicker of form.skills; track $index) {
           <tr>
-            <th style="width: 25%">{{ skillMsgs.Elem | translateComp:lang }}</th>
-            <th style="width: 75%">{{ skillMsgs.Name | translateComp:lang }}</th>
+            <app-recipe-skill-picker
+              [skillPickForm]="skillPicker"
+              [skillLookupMaker]="skillLookupMaker$()"
+              [skillIs]="skillIs$()"
+              [showDemonPicker]="false">
+            </app-recipe-skill-picker>
           </tr>
-        </thead>
-        <tbody formArrayName="skills">
-          @for (skill of form.controls.skills['controls']; track $index; let i = $index) {
-            <ng-container [formGroupName]="i">
-              <tr>
-                <td>
-                  <select formControlName="elem" (change)="skill.controls.name.setValue(skills[skill.controls.elem.value][0].name)">
-                    @for (elem of elems; track $index) {
-                      <option [value]="elem">{{ displayElems[elem] || elem }}</option>
-                    }
-                  </select>
-                </td>
-                <td>
-                  <select formControlName="name">
-                    @for (entry of skills[skill.controls.elem.value]; track $index) {
-                      <option [value]="entry.name">{{ entry.name }}</option>
-                    }
-                  </select>
-                </td>
-              </tr>
-            </ng-container>
-          }
-        </tbody>
+        }
       </table>
     </form>
   `,
   styles: [`
     td select { width: 100%; }
-    input { width: 95%; border-width: 3px; }
-    input.ng-valid { border-color: lime; }
-    input.ng-invalid { border-color: red; }
-  `]
+  `],
+  encapsulation: ViewEncapsulation.None
 })
-export class PasswordGeneratorComponent implements OnChanges {
-  @Input() compendium: Compendium;
-  @Input() compConfig: CompendiumConfig;
-
-  races: string[];
-  elems: string[];
-  demons: { [race: string]: Demon[] } = {};
-  skills: { [elem: string]: Skill[] } = {};
-  dcodes: { [code: number]: Demon } = {};
-  scodes: { [code: number]: Skill } = {};
-  displayElems: { [elem: string]: string };
-  form: FormGroup;
-  lang = 'en';
+export class PasswordGeneratorComponent {
+  compendium$ = input.required<Compendium>({ alias: 'compendium' });
+  compConfig$ = input.required<CompendiumConfig>({ alias: 'compConfig' });
   demonMsgs = Translations.DemonListComponent;
   skillMsgs = Translations.SkillListComponent;
+  count299 = Array(299);
+  count99 = Array(99);
 
-  range99 = Array(99);
-  range299 = Array(299);
-  passBytes: Array<number>;
-  price = 0;
+  formModel$ = linkedSignal(() => ({
+    demon: '-',
+    lvl: '1',
+    hp: '1',
+    mp: '1',
+    skills: makeSkillPickList(6)
+  }));
 
-  blankSkill: Skill = {
-    code: 0, cost: 0, level: 0, rank: 0, target: 'Self',
-    name: '-', element: '-', inherit: '-', effect: '-',
-    learnedBy: [], transfer: []
-  };
-
-  constructor(private fb: FormBuilder) {
-    this.createForm();
-  }
-
-  ngOnChanges() { this.initDropdowns(); }
-
-  createForm() {
-    const skills = [];
-
-    for (let i = 0; i < 6; i++) {
-      skills.push(this.fb.group({ elem: '-', name: '-' }));
+  decodedDemon$ = computed<DecodedDemon>(() => {
+    const form = this.formModel$();
+    return {
+      isEnglish: this.compConfig$().lang === 'en',
+      demonCode: this.demon$().code,
+      lvl: parseInt(form.lvl),
+      exp: -1,
+      hp: parseInt(form.hp),
+      mp: parseInt(form.mp),
+      skillCodes: form.skills.map(s => this.compendium$().getSkill(s.skill)?.code ?? 0),
     }
+  });
 
-    this.form = this.fb.group({
-      lvl: 1,
-      hp: 1,
-      mp: 1,
-      race: '-',
-      demon: '-',
-      skills: this.fb.array(skills)
-    });
+  form = form(this.formModel$);
 
-    this.form.valueChanges.subscribe(form => {
-      if (this.form.valid) {
-        const demon = this.compendium.getDemon(form.demon);
-        const dskills = form.skills.map(s => this.compendium.getSkill(s.name) || this.blankSkill);
-
-        const decoded: DecodedDemon = {
-          isEnglish: this.compConfig.lang === 'en',
-          demonCode: demon.code,
-          lvl: parseInt(form.lvl, 10),
-          exp: -1,
-          hp: parseInt(form.hp, 10),
-          mp: parseInt(form.mp, 10),
-          skillCodes: dskills.map(s => s.code),
-        };
-
-        this.price = this.compConfig.computePrice(demon, decoded);
-        this.passBytes = encodeDemon(decoded, this.compConfig.appCssClasses.includes('pq2'));
-      }
-    });
+  constructor() {
+    effect(() => this.form.demon().value.update(demon =>
+      this.demons$().find(d => d.name === demon) ? demon : this.demons$()[0].name
+    ));
+    setTimeout(() => this.initWithInnate());
   }
 
-  initDropdowns() {
-    this.demons = {};
-    this.skills = { '-': [this.blankSkill] };
-    this.dcodes = {};
-    this.scodes = { 0: this.blankSkill };
-    this.lang = this.compConfig.lang;
-    this.displayElems = translateCompSet(Translations.ElementIcon, this.lang);
-
-    if (this.compConfig && this.compendium) {
-      for (const demon of this.compendium.allDemons.filter(d => d.code)) {
-        if (!this.demons[demon.race]) {
-          this.demons[demon.race] = [];
-        }
-
-        this.demons[demon.race].push(demon);
-        this.dcodes[demon.code] = demon;
-      }
-
-      for (const skill of this.compendium.allSkills.filter(s => s.code)) {
-        if (!this.skills[skill.element]) {
-          this.skills[skill.element] = [];
-        }
-
-        this.skills[skill.element].push(skill);
-        this.scodes[skill.code] = skill;
-      }
-
-      for (const demonList of Object.values(this.demons)) {
-        demonList.sort((a, b) => b.lvl - a.lvl);
-      }
-
-      for (const skillList of Object.values(this.skills)) {
-        skillList.sort((a, b) => a.rank - b.rank);
-      }
-
-      this.races = this.compConfig.races.filter(r => this.demons[r]);
-      this.elems = ['-'].concat(this.compConfig.skillElems.filter(e => this.skills[e]));
-      this.setDefaultValues(this.compConfig.defaultDemon);
-    }
-  }
-
-  changeRace(race: string) {
-    const demon = this.demons[race][0];
-    this.form.controls.demon.setValue(demon.name);
-    this.setDefaultValues(demon.name);
-  }
-
-  setDefaultValues(name: string) {
-    const skills = Array(6).fill(this.blankSkill);
-    const demon = this.compendium.getDemon(name);
-    let i = 0;
-
-    for (const [sname, sentry] of Object.entries(demon.skills)) {
-      if (sentry < 2) {
-        skills[i++] = this.compendium.getSkill(sname);
-      }
-    }
-
-    this.form.patchValue({
-      lvl: Math.floor(demon.lvl),
-      hp: demon.stats[0],
-      mp: demon.stats[1],
-      race: demon.race,
+  initWithInnate(){
+    const demon = this.demon$();
+    const innates = this.skillLookupMaker$().getInnateSkills(demon);
+    this.formModel$.update(() => ({
       demon: demon.name,
-      skills: skills.map(s => ({ elem: s.element, name: s.name }))
-    });
+      lvl: Math.floor(demon.lvl).toString(),
+      hp: Math.floor(demon.stats[0]).toString(),
+      mp: Math.floor(demon.stats[1]).toString(),
+      skills: innates.slice(0, 6).map(s => ({
+        disabled: false,
+        elem: '-',
+        skill: s.name,
+        demon: demon.name
+      }))
+    }));
   }
+
+  demons$ = computed(() => {
+    const demons = this.compendium$().allDemons.filter(d => d.code > 0);
+    demons.sort((a, b) => a.name.localeCompare(b.name));
+    return demons;
+  });
+
+  skillLookupMaker$ = computed(() => new SkillLookupMaker(this.compendium$(), [], this.compConfig$().skillElems, true));
+  demon$ = computed(() => this.compendium$().getDemon(this.form.demon().value()));
+  skillIs$ = computed(() => this.skillLookupMaker$().getInheritSkills(this.demon$(), this.demon$()));
+  currPrice$ = computed(() => this.compConfig$().computePrice(this.demon$(), this.decodedDemon$()));
+  decodedBytes$ = computed(() => encodeDemon(this.decodedDemon$(), this.compConfig$().appCssClasses.includes('pq2')));
 }
 
 @Component({
