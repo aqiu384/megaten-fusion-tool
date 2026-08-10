@@ -28,6 +28,7 @@
     [rightHeader]="msgs.RightHeader | translateComp:lang"
     [leftBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
     [rightBaseUrl]="hasFissionFromDemons ? '../../demons' : '../..'"
+    [getNotes]="getNotes$()"
     [raceOrder]="fusionChart.raceOrder"
     [rowData]="fusionPairs"
     [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">

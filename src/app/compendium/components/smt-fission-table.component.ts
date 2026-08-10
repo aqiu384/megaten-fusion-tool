@@ -1,6 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { FUSION_DATA_SERVICE } from '../constants';
-import { NamePair } from '../models';
+import { NamePair, FusionPair } from '../models';
 import { toFusionEntry, toFusionPair } from '../models/conversions';
 import { CurrentDemonService } from '../current-demon.service';
 import { FusionEntryTableComponent } from './fusion-entry-table.component';
@@ -42,4 +42,7 @@ export class SmtFissionTableComponent {
     .getFusions(this.currentDemon$(), this.compendium$(), this.fusionChart$())
     .map(this.toFusionPair$()(this.currentDemon$()))
   );
+  getNotes$ = computed<(pair: FusionPair) => string>(() => {
+    const _ = this.currentDemon$(); return null;
+  });
 }

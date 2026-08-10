@@ -22,6 +22,7 @@ import Translations from '../data/translations.json';
     <td>{{ data.race2 }}</td>
     <td>{{ data.lvl2 | lvlToNumber }}</td>
     <td><a routerLink="{{ rightBaseUrl }}/{{ data.name2 }}">{{ data.name2 }}</a></td>
+    @if (getNotes) { <td>{{ getNotes(data) }}</td> }
   `
 })
 export class FusionPairTableRowComponent {
@@ -29,6 +30,7 @@ export class FusionPairTableRowComponent {
   @Input() leftBaseUrl: string;
   @Input() rightBaseUrl: string;
   @Input() inGameCurrencySymbol: string;
+  @Input() getNotes: (data: FusionPair) => string;
 }
 
 @Component({
@@ -36,12 +38,13 @@ export class FusionPairTableRowComponent {
   imports: [CommonModule, RouterModule, TranslateCompPipe],
   template: `
     <tr>
-      <th colspan="7" class="title">{{ title }}</th>
+      <th colspan="8" class="title">{{ title }}</th>
     </tr>
     <tr>
-      <th rowSpan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">{{ msgs.Price | translateComp:lang }}</th>
-      <th colspan="3" [style.width.%]="45">{{ leftHeader }}</th>
-      <th colspan="3" [style.width.%]="45">{{ rightHeader }}</th>
+      <th rowspan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">{{ msgs.Price | translateComp:lang }}</th>
+      <th colspan="3" [style.width.%]="35">{{ leftHeader }}</th>
+      <th colspan="3" [style.width.%]="35">{{ rightHeader }}</th>
+      @if (getNotes) { <th rowspan="2" [style.width.%]="20">Notes</th> }
     </tr>
     <tr>
       <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">{{ msgs.Race | translateComp:lang }}</th>
@@ -57,6 +60,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
   @Input() title: string;
   @Input() leftHeader: string;
   @Input() rightHeader: string;
+  @Input() getNotes: (data: FusionPair) => string;
   @Input() lang = 'en';
   msgs = Translations.FusionPairTableComponent;
 }
@@ -77,6 +81,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           class="app-fusion-pair-table-header"
           [lang]="lang"
           [title]="title"
+          [getNotes]="getNotes"
           [leftHeader]="leftHeader"
           [rightHeader]="rightHeader"
           [sortFunIndex]="sortFunIndex"
@@ -88,6 +93,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           class="app-fusion-pair-table-header"
           [lang]="lang"
           [title]="title"
+          [getNotes]="getNotes"
           [leftHeader]="leftHeader"
           [rightHeader]="rightHeader"
           [style.visibility]="'collapse'">
@@ -103,6 +109,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
               class="app-fusion-pair-table-row"
               [ngClass]="data.notes"
               [data]="data"
+              [getNotes]="getNotes"
               [leftBaseUrl]="leftBaseUrl"
               [rightBaseUrl]="rightBaseUrl"
               [inGameCurrencySymbol]="inGameCurrencySymbol">
@@ -132,6 +139,7 @@ export class FusionPairTableComponent extends SortedTableComponent<FusionPair> i
   @Input() rightBaseUrl = '../..';
   @Input() initRow = 500;
   @Input() incrRow = 500;
+  @Input() getNotes: (pair: FusionPair) => string = null;
   @Input() lang = 'en';
   @Input() inGameCurrencySymbol: string;
   msgs = Translations.FusionPairTableComponent;

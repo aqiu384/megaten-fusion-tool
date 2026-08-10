@@ -1,17 +1,19 @@
 {
   "baseAtks": [
-    "CP",
-    "NoA",
-    "P.Atk",
-    "P.Hit",
+    "NAtk",
+    "NMin",
+    "NMax",
+    "PAtk",
+    "PHit",
     "Def",
     "Eva",
-    "M.Atk",
-    "M.Hit"
+    "MAtk",
+    "MHit"
   ],
   "baseStats": [
     "HP",
     "MP",
+    "CP",
     "St",
     "In",
     "Ma",
@@ -21,7 +23,6 @@
   ],
   "resistCodes": {
     "d": 1100,
-    "D": 1050,
     "r": 2100,
     "R": 2050,
     "n": 3100,
@@ -34,9 +35,9 @@
     "7": 4087.5,
     "-": 5100,
     "w": 6150,
-    "8": 6200,
-    "9": 6250,
-    "0": 6300
+    "W": 6200,
+    "x": 6250,
+    "X": 6300
   },
   "resistElems": [
     "sword",

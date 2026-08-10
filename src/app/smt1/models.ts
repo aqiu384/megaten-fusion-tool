@@ -28,7 +28,9 @@ export interface CompendiumConfig {
   speciesLookup: { [race: string]: string };
   resistCodes: { [code: string]: number };
   useSpeciesFusion: boolean;
-  inheritSkills?: { [code: number]: { [skill: string]: number } };
+  inheritTypes: string[];
+  inheritSkills: { [skill: string]: number }[];
+  getInheritSkills(result: BaseDemon, ingreds: BaseDemon[], compConfig: CompendiumConfig): string[];
 
   normalLvlModifier: number;
   tripleLvlModifier: number;

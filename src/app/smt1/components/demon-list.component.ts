@@ -11,7 +11,7 @@ import { FusionDataService } from '../fusion-data.service';
       [raceOrder]="raceOrder"
       [statHeaders]="compConfig.baseStats"
       [resistHeaders]="compConfig.resistElems"
-      [inheritOrder]="compConfig.inheritSkills ? compConfig.elemOrder : null"
+      [inheritOrder]="compConfig.inheritTypes.length > 0 ? compConfig.elemOrder : null"
       [rowData]="demons$()">
     </app-smt-demon-list>
   `

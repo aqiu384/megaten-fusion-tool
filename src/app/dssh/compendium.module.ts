@@ -1,8 +1,7 @@
 import { createCompendiumRoutes } from '../smt1/compendium-routing.module';
-import { CompendiumConfig } from '../smt1/models';
+import { Demon, CompendiumConfig } from '../smt1/models';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
-import NEMECHI_DATA_JSON from './data/nemechi-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
 import COMP_CONFIG_JSON from './data/comp-config.json';
 import FUSION_CHART_JSON from './data/norm-chart.json';
@@ -13,7 +12,7 @@ import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
 import INHERIT_SKILLS_JSON from './data/inherit-skills.json';
 
 function dsshAttacks(stats: number[], lvl: number, matkUps: number[]) {
-    const [St, In, Ma, En, Ag, Lu] = stats.slice(2);
+    const [St, In, Ma, En, Ag, Lu] = stats.slice(4);
     return [
       2*lvl + 2*St,
       1.5*lvl + 1.2*Ag + 0.6*Lu,
@@ -24,6 +23,37 @@ function dsshAttacks(stats: number[], lvl: number, matkUps: number[]) {
     ].map(a => Math.floor(a));
 }
 
+function getInheritSkills(result: Demon, ingreds: Demon[], compConfig: CompendiumConfig): string[] {
+  const inherits: { [skill: string]: number } = Object.keys(result.skills)
+   .reduce((acc, s) => { acc[s] = -1; return acc; }, {});
+  const maxSkills = 6 - Object.keys(result.skills).length;
+  const normSkills = compConfig.inheritSkills[0];
+  const elemSkills = compConfig.inheritSkills[result.inherits];
+  const ingredOrder = ingreds.slice().sort((a, b) =>
+    100 * compConfig.raceOrder[a.race] + a.lvl - 100 * compConfig.raceOrder[b.race] + b.lvl
+  );
+
+  for (const [i, ingred] of ingredOrder.entries()) {
+    for (const skill of Object.keys(ingred.skills)) {
+      if (elemSkills[skill] > -1 && !(inherits[skill] > -2)) {
+        inherits[skill] = elemSkills[skill] + 100 * i;
+      }
+    }
+  }
+
+  for (const [i, ingred] of ingredOrder.entries()) {
+    for (const skill of Object.keys(ingred.skills)) {
+      if (normSkills[skill] > -1 && !(inherits[skill] > -2)) {
+        inherits[skill] = normSkills[skill] + 100 * i + 300;
+      }
+    }
+  }
+
+  return Object.entries(inherits)
+    .filter(s => s[1] > -1).sort((a, b) => a[1] - b[1])
+    .map(s => s[0]).slice(0, maxSkills);
+}
+
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON['resistElems'];
   const skillElems = resistElems.concat(COMP_CONFIG_JSON['skillElems']);
@@ -32,7 +62,6 @@ function createCompConfig(): CompendiumConfig {
   const raceAligns = {};
   const species = {};
   const speciesLookup = {};
-  const inheritSkills = {};
   const DEITIES = [];
   const BEASTS = [];
   const COST_HP = 2 << 10;
@@ -72,12 +101,8 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
-  for (const [name, demon] of Object.entries(NEMECHI_DATA_JSON)) {
-    DEMON_DATA_JSON[name] = demon;
-  }
-
   for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
-    demon.atks = demon.atks.slice(0, 2).concat(dsshAttacks(demon.stats, Math.floor(demon.lvl), matkUps));
+    demon.atks = dsshAttacks(demon.stats, Math.floor(demon.lvl), matkUps);
 
     switch (demon.race) {
       case 'Deity':
@@ -129,10 +154,8 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
-  for (let i = 0; i < skillElems.length; i++) {
-    const skills = INHERIT_SKILLS_JSON[skillElems[i]] || [];
-    inheritSkills[i] = skills.reduce((acc, skill, i) => { acc[skill] = i + 1; return acc; }, {});
-  }
+  const inheritSkills: { [skill: string]: number }[] = INHERIT_SKILLS_JSON
+    .map((slist, si) => slist.reduce((acc, x, i) => { acc[x] = i + (si > 0 ? 0 : 20); return acc; }, {}));
 
   return {
     appTitle: 'Devil Summoner: Soul Hackers',
@@ -149,7 +172,9 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: COMP_CONFIG_JSON['races'].reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: false,
+    inheritTypes: COMP_CONFIG_JSON['inheritTypes'],
     inheritSkills,
+    getInheritSkills,
 
     normalLvlModifier: 2.5,
     tripleLvlModifier: 3.25,

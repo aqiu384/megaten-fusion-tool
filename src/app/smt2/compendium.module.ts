@@ -1,4 +1,5 @@
 import { createCompendiumRoutes } from '../smt1/compendium-routing.module';
+import { Demon } from '../compendium/models';
 import { CompendiumConfig } from '../smt1/models';
 
 import COMP_CONFIG_JSON from './data/comp-config.json';
@@ -9,6 +10,48 @@ import FUSION_CHART_JSON from './data/fusion-chart.json';
 import TRIPLE_CHART_JSON from './data/triple-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+
+function getInheritSkills(result: Demon, ingreds: Demon[], compConfig: CompendiumConfig): string[] {
+  const inherits: { [skill: string]: number } = Object.keys(result.skills)
+   .reduce((acc, s) => { acc[s] = -1; return acc; }, {});
+  const maxSkills = 6 - Object.keys(result.skills).length;
+  const normSkills = compConfig.inheritSkills[0];
+  const elemSkills = compConfig.inheritSkills[result.inherits];
+  const ingredOrder = ingreds.slice().sort((a, b) =>
+    100 * compConfig.raceOrder[a.race] + a.lvl - 100 * compConfig.raceOrder[b.race] + b.lvl
+  );
+
+  for (const [i, ingred] of ingredOrder.entries()) {
+    if (ingred.inherits === result.inherits) {
+      for (const skill of Object.keys(ingred.skills)) {
+        if (elemSkills[skill] > -1 && !(inherits[skill] > -2)) {
+          inherits[skill] = elemSkills[skill] + 200 * i;
+        }
+      }
+
+      const ingredNorms = Object.entries(ingred.skills).sort((a, b) => a[1] - b[1]);
+      for (const skill of ingredNorms.map(s => s[0])) {
+        if (normSkills[skill] > -1 && !(inherits[skill] > -2)) {
+          inherits[skill] = normSkills[skill] + 200 * i + 100;
+        }
+      }
+    }
+  }
+
+  for (const [i, ingred] of ingredOrder.entries()) {
+    if (ingred.inherits !== result.inherits) {
+      for (const skill of Object.keys(ingred.skills)) {
+        if (normSkills[skill] > -1 && !(inherits[skill] > -2)) {
+          inherits[skill] = normSkills[skill] + 100 * i + 600;
+        }
+      }
+    }
+  }
+
+  return Object.entries(inherits)
+    .filter(s => s[1] > -1).sort((a, b) => a[1] - b[1])
+    .map(s => s[0]).slice(0, maxSkills);
+}
 
 function createCompConfig(): CompendiumConfig {
   const RECRUIT_RACES = [ 'Messian', 'Gaean' ];
@@ -49,6 +92,9 @@ function createCompConfig(): CompendiumConfig {
     entry['cost'] = cost ? cost + costType: COST_EXTRA;
   }
 
+  const inheritSkills: { [skill: string]: number }[] = COMP_CONFIG_JSON['inheritSkills']
+    .map((slist, si) => slist.reduce((acc, x, i) => { acc[x] = i + (si > 0 ? 0 : 20); return acc; }, {}));
+
   return {
     appTitle: 'Shin Megami Tensei II',
     appCssClasses: ['smtnes', 'smt2'],
@@ -64,6 +110,9 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: true,
+    inheritTypes: COMP_CONFIG_JSON['inheritTypes'],
+    inheritSkills,
+    getInheritSkills,
 
     normalLvlModifier: 2.4,
     tripleLvlModifier: -4.75,

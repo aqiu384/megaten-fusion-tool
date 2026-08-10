@@ -1,23 +1,60 @@
 {
   "baseAtks": [
-    "CP",
-    "NoA",
-    "P.Atk",
-    "P.Hit",
+    "NAtk",
+    "NMin",
+    "NMax",
+    "PAtk",
+    "PHit",
     "Def",
     "Eva",
-    "M.Atk",
-    "M.Hit"
+    "MAtk",
+    "MHit"
   ],
   "baseStats": [
     "HP",
     "MP",
+    "CP",
     "St",
     "In",
     "Ma",
     "Vi",
     "Ag",
     "Lu"
+  ],
+  "inheritSkills": [
+    [
+      "Recarmdra", "Samarecarm", "Recarm", "Petradi", "Paraladi", "Posumudi", "Penpatra", "Patra",
+      "Mediarahan", "Mediarama", "Media", "Diarahan", "Diarama", "Dia", "Tetrakarn", "Makarakarn",
+      "Tetraja", "Makakaja", "Sukukaja", "Rakukaja", "Tarukaja"
+    ],
+    ["Maragion", "Maragi", "Agilao", "Agi"],
+    ["Mabufula", "Mabufu", "Bufula", "Bufu"],
+    ["Mazionga", "Mazio", "Zionga", "Zio"],
+    ["Mazanma", "Mazan", "Zanma", "Zan"],
+    ["Dormina", "Tentarafoo"],
+    ["Mahama", "Hama"],
+    ["Mudoon", "Mudo"],
+    ["Makajam", "Marin Karin", "Hapirma", "Pulinpa"],
+    ["Shibaboo"],
+    [
+      "Necroma", "Sabatoma", "Estoma", "Trafuri", "Traport", "Traesto", "Mapper",
+      "Recarmdra", "Samarecarm", "Recarm", "Petradi", "Paraladi", "Posumudi", "Penpatra", "Patra",
+      "Mediarahan", "Mediarama", "Media", "Diarahan", "Diarama", "Dia", "Tetrakarn", "Makarakarn",
+      "Tetraja", "Makakaja", "Sukukaja", "Rakukaja", "Tarukaja",
+      "Tetra", "Rikaja", "Dekaja", "Sukunda", "Rakunda", "Tarunda", "Megidolaon", "Megido"
+    ]
+  ],
+  "inheritTypes": [
+    "fire",
+    "ice",
+    "elec",
+    "force",
+    "nerve",
+    "expel",
+    "death",
+    "curse",
+    "bind",
+    "almighty"
   ],
   "resistCodes": {
     "d": 1100,
@@ -34,9 +71,8 @@
     "7": 4087.5,
     "-": 5100,
     "w": 6150,
-    "8": 6200,
-    "9": 6250,
-    "0": 6300
+    "W": 6200,
+    "x": 6250
   },
   "resistElems": [
     "sword",
@@ -53,10 +89,10 @@
     "rush",
     "punch",
     "kick",
-    "flying"
+    "flying",
+    "almighty"
   ],
   "skillElems": [
-    "almighty",
     "energy",
     "recovery",
     "support",

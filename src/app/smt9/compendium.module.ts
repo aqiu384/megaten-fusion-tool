@@ -83,6 +83,9 @@ function createCompConfig(): CompendiumConfig {
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: false,
     specialRecipes: SPECIAL_RECIPES_JSON,
+    inheritTypes: COMP_CONFIG_JSON['inheritTypes'],
+    inheritSkills: [],
+    getInheritSkills: () => [],
 
     normalLvlModifier: 2.5,
     tripleLvlModifier: 2.25,

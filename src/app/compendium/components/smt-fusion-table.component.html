@@ -9,6 +9,7 @@
   [rightHeader]="msgs.RightHeader | translateComp:lang"
   [leftBaseUrl]="'../..'"
   [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
+  [getNotes]="getNotes$()"
   [raceOrder]="fusionChart.raceOrder"
   [rowData]="fusionPairs"
   [inGameCurrencySymbol]="compendium.inGameCurrencySymbol">

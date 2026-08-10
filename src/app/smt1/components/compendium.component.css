@@ -1,21 +1,15 @@
 /* SMT NES Series */
+.smtnes div.element-icon.i0 { background-image: var(--icon-elem-smt-pas); }
 .smtnes div.element-icon.sword { background-image: var(--icon-elem-swo); }
 .smtnes div.element-icon.gun { background-image: var(--icon-elem-gun); }
 .smtnes div.element-icon.fire { background-image: var(--icon-elem-fir); }
-.smtnes div.element-icon.i4 { background-image: var(--icon-elem-fir); }
 .smtnes div.element-icon.ice { background-image: var(--icon-elem-ice); }
-.smtnes div.element-icon.i5 { background-image: var(--icon-elem-ice); }
 .smtnes div.element-icon.elec { background-image: var(--icon-elem-ele); }
-.smtnes div.element-icon.i6 { background-image: var(--icon-elem-ele); }
 .smtnes div.element-icon.force { background-image: var(--icon-elem-win); }
-.smtnes div.element-icon.i7 { background-image: var(--icon-elem-win); }
 .smtnes div.element-icon.nerve { background-image: var(--icon-elem-per-dar); }
 .smtnes div.element-icon.almighty { background-image: var(--icon-elem-smt-alm); }
-.smtnes div.element-icon.i13 { background-image: var(--icon-elem-smt-alm); }
 .smtnes div.element-icon.expel { background-image: var(--icon-elem-lig); }
-.smtnes div.element-icon.i8 { background-image: var(--icon-elem-lig); }
 .smtnes div.element-icon.death { background-image: var(--icon-elem-smt-dar); }
-.smtnes div.element-icon.i9 { background-image: var(--icon-elem-smt-dar); }
 .smtnes div.element-icon.curse { background-image: var(--icon-elem-poison); }
 .smtnes div.element-icon.bind { background-image: var(--icon-elem-paralyze); }
 .smtnes div.element-icon.rush { background-image: var(--icon-elem-phy); }
@@ -70,23 +64,14 @@
 .smtnes div.element-icon.none { background-image: var(--icon-elem-smt-spe); }
 
 .smtnes div.element-icon.strike { background-image: var(--icon-elem-phy); }
-.smtnes div.element-icon.i0 { background-image: var(--icon-elem-phy); }
 .smtnes div.element-icon.skill { background-image: var(--icon-elem-gun); }
 .smtnes div.element-icon.temp { background-image: var(--icon-elem-nuk); }
-.smtnes div.element-icon.i17 { background-image: var(--icon-elem-nuk); }
 .smtnes div.element-icon.dark { background-image: var(--icon-elem-smt-dar); }
-.smtnes div.element-icon.i18 { background-image: var(--icon-elem-smt-dar); }
 .smtnes div.element-icon.witch { background-image: var(--icon-elem-per-dar); }
-.smtnes div.element-icon.i19 { background-image: var(--icon-elem-per-dar); }
 .smtnes div.element-icon.rea { background-image: var(--icon-elem-smt-rec); }
-.smtnes div.element-icon.i20 { background-image: var(--icon-elem-smt-rec); }
 .smtnes div.element-icon.reb { background-image: var(--icon-elem-smt-sup); }
-.smtnes div.element-icon.i21 { background-image: var(--icon-elem-smt-sup); }
 .smtnes div.element-icon.element { background-image: var(--icon-elem-smt-spe); }
 .smtnes div.element-icon.hero { background-image: var(--icon-elem-smt-spe); }
-.smtnes div.element-icon.i22 { background-image: var(--icon-elem-smt-spe); }
-.smtnes div.element-icon.i23 { background-image: var(--icon-elem-smt-spe); }
-.smtnes div.element-icon.i24 { background-image: var(--icon-elem-smt-spe); }
 
 /* Shin Megami Tensei NINE */
 .smtnes div.element-icon.starter { background-image: var(--icon-elem-smt-spe); }
@@ -109,15 +94,57 @@
 
 /* Shin Megami Tensei II */
 .smt2 th.title, .smt2 th.nav.active, .smt2 th.nav.active a { background-color: #2f4f4f; color: white; }
+.smt2 div.element-icon.i1 { background-image: var(--icon-elem-fir); }
+.smt2 div.element-icon.i2 { background-image: var(--icon-elem-ice); }
+.smt2 div.element-icon.i3 { background-image: var(--icon-elem-ele); }
+.smt2 div.element-icon.i4 { background-image: var(--icon-elem-for); }
+.smt2 div.element-icon.i5 { background-image: var(--icon-elem-per-dar); }
+.smt2 div.element-icon.i6 { background-image: var(--icon-elem-lig); }
+.smt2 div.element-icon.i7 { background-image: var(--icon-elem-smt-dar); }
+.smt2 div.element-icon.i8 { background-image: var(--icon-elem-poison); }
+.smt2 div.element-icon.i9 { background-image: var(--icon-elem-paralyze); }
+.smt2 div.element-icon.i10 { background-image: var(--icon-elem-smt-alm); }
 
 /* Shin Megami Tensei If... */
 .smtif th.title, .smtif th.nav.active, .smtif th.nav.active a { background-color: #8fbc8f; color: black; }
+.smtif div.element-icon.i1 { background-image: var(--icon-elem-fir); }
+.smtif div.element-icon.i2 { background-image: var(--icon-elem-ice); }
+.smtif div.element-icon.i3 { background-image: var(--icon-elem-ele); }
+.smtif div.element-icon.i4 { background-image: var(--icon-elem-for); }
+.smtif div.element-icon.i5 { background-image: var(--icon-elem-lig); }
+.smtif div.element-icon.i6 { background-image: var(--icon-elem-smt-dar); }
+.smtif div.element-icon.i7 { background-image: var(--icon-elem-smt-alm); }
 
 /* Shin Megami Tensei: Devil Summoner */
 .dsum th.title, .dsum th.nav.active, .dsum th.nav.active a { background-color: #4372aa; color: white; }
+.dsum div.element-icon.i1 { background-image: var(--icon-elem-smt-alm); }
+.dsum div.element-icon.i2 { background-image: var(--icon-elem-fir); }
+.dsum div.element-icon.i3 { background-image: var(--icon-elem-ice); }
+.dsum div.element-icon.i4 { background-image: var(--icon-elem-ele); }
+.dsum div.element-icon.i5 { background-image: var(--icon-elem-for); }
+.dsum div.element-icon.i6 { background-image: var(--icon-elem-psy); }
+.dsum div.element-icon.i7 { background-image: var(--icon-elem-lig); }
+.dsum div.element-icon.i8 { background-image: var(--icon-elem-smt-dar); }
+.dsum div.element-icon.i9 { background-image: var(--icon-elem-smt-rec); }
+.dsum div.element-icon.i10 { background-image: var(--icon-elem-smt-sup); }
+.dsum div.element-icon.i11 { background-image: var(--icon-elem-phy); }
+.dsum div.element-icon.i12 { background-image: var(--icon-elem-nuk); }
 
 /* Devil Summoner: Soul Hackers */
 .dssh th.title, .dssh th.nav.active, .dssh th.nav.active a { background-color: #302878; color: white; }
+.dssh div.element-icon.i1 { background-image: var(--icon-elem-smt-alm); }
+.dssh div.element-icon.i2 { background-image: var(--icon-elem-fir); }
+.dssh div.element-icon.i3 { background-image: var(--icon-elem-ice); }
+.dssh div.element-icon.i4 { background-image: var(--icon-elem-ele); }
+.dssh div.element-icon.i5 { background-image: var(--icon-elem-for); }
+.dssh div.element-icon.i6 { background-image: var(--icon-elem-lig); }
+.dssh div.element-icon.i7 { background-image: var(--icon-elem-smt-dar); }
+.dssh div.element-icon.i8 { background-image: var(--icon-elem-smt-rec); }
+.dssh div.element-icon.i9 { background-image: var(--icon-elem-smt-sup); }
+.dssh div.element-icon.i10 { background-image: var(--icon-elem-smt-spe); }
+.dssh div.element-icon.i11 { background-image: var(--icon-elem-phy); }
+.dssh div.element-icon.i12 { background-image: var(--icon-elem-nuk); }
+.dssh div.element-icon.i13 { background-image: var(--icon-elem-per-dar); }
 
 /* Majin Tensei */
 .mjn1 th.title, .mjn1 th.nav.active, .mjn1 th.nav.active a { color: white; background-color: #004381; }
@@ -127,6 +154,17 @@
 
 /* Shin Megami Tensei NINE */
 .smt9 th.title, .smt9 th.nav.active, .smt9 th.nav.active a { background-color: #693cbe; color: white; }
+.smt9 div.element-icon.i1 { background-image: var(--icon-elem-smt-alm); }
+.smt9 div.element-icon.i2 { background-image: var(--icon-elem-fir); }
+.smt9 div.element-icon.i3 { background-image: var(--icon-elem-ice); }
+.smt9 div.element-icon.i4 { background-image: var(--icon-elem-ele); }
+.smt9 div.element-icon.i5 { background-image: var(--icon-elem-for); }
+.smt9 div.element-icon.i6 { background-image: var(--icon-elem-lig); }
+.smt9 div.element-icon.i7 { background-image: var(--icon-elem-smt-dar); }
+.smt9 div.element-icon.i8 { background-image: var(--icon-elem-per-dar); }
+.smt9 div.element-icon.i9 { background-image: var(--icon-elem-paralyze); }
+.smt9 div.element-icon.i10 { background-image: var(--icon-elem-smt-rec); }
+.smt9 div.element-icon.i11 { background-image: var(--icon-elem-smt-sup); }
 
 /* Shin Megami Tensei IMAGINE */
 .smtim th.title, .smtim th.nav.active, .smtim th.nav.active a { background-color: #009d96; color: white; }

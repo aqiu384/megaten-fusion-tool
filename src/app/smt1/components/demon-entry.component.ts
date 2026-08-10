@@ -47,16 +47,6 @@ import { DemonMissingComponent } from '../../compendium/components/demon-missing
         [compendium]="compendium"
         [skillLevels]="demon.skills">
       </app-demon-skills>
-      @if (compConfig.inheritSkills) {
-        <app-demon-skills
-          [title]="'Inheritable Skills'"
-          [hasTarget]="true"
-          [hasLvl]="false"
-          [elemOrder]="compConfig.elemOrder"
-          [compendium]="compendium"
-          [skillLevels]="compConfig.inheritSkills[demon.inherits]">
-        </app-demon-skills>
-      }
       <app-smt-fusions
         [hasTripleFusion]="!compConfig.appCssClasses.includes('mjn1')">
       </app-smt-fusions>

@@ -31,8 +31,6 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
-    demon['resists'] = demon['resists'].slice(0, 7).concat(demon['resists'].slice(8));
-
     if (RECRUIT_RACES.indexOf(demon.race) !== -1) {
       SPECIAL_RECIPES_JSON[name] = { fusion: 'recruit', prereq: 'Recruitment only' };
     } else if (demon.race === 'Machine') {
@@ -64,6 +62,9 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: true,
+    inheritTypes: [],
+    inheritSkills: [],
+    getInheritSkills: () => [],
 
     normalLvlModifier: 1.5,
     tripleLvlModifier: 7.25,

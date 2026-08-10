@@ -23,7 +23,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
         <td>{{ trio.demon.race }}</td>
         <td>{{ trio.demon.currLvl }}</td>
         <td><a routerLink="{{ baseUrl }}/{{ trio.demon.name }}">{{ trio.demon.name }}</a></td>
-        <td colspan="6" [style.color]="'#666'">{{ trio.fusions.length }} recipes hidden</td>
+        <td colspan="7" [style.color]="'#666'">{{ trio.fusions.length }} recipes hidden</td>
       </tr>
     }
     @if (showing) {
@@ -48,6 +48,7 @@ import { PositionStickyDirective } from '../../shared/position-sticky.directive'
               <td><a routerLink="{{ baseUrl }}/{{ demon.name }}">{{ demon.name }}</a></td>
             }
           }
+          @if (getNotes) { <td>{{ getNotes(recipe.d1.name, recipe.d2.name, recipe.d3.name) }}</td> }
         </tr>
       }
     }
@@ -59,6 +60,7 @@ export class FusionTrioTableRowComponent {
   @Input() showIndex: number;
   @Input() baseUrl = '../../..';
   @Input() inGameCurrencySymbol: string;
+  @Input() getNotes: (demon1: string, demon2: string, demon3: string) => string;
   toggleShowing = output<number>();
 }
 
@@ -67,14 +69,15 @@ export class FusionTrioTableRowComponent {
   imports: [CommonModule],
   template: `
     <tr>
-      <th colspan="11" class="title">{{ title }}</th>
+      <th colspan="12" class="title">{{ title }}</th>
     </tr>
     <tr>
-      <th class="sortable" rowspan="2" [style.width.%]="8" (click)="toggleHideAll()">Hide All</th>
-      <th rowSpan="2" [style.width.%]="8" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Price</th>
-      <th colspan="3" [style.width.%]="28">{{ leftHeader }}</th>
-      <th colspan="3" [style.width.%]="28">Ingredient 2</th>
-      <th colspan="3" [style.width.%]="28">Ingredient 3</th>
+      <th class="sortable" rowspan="2" [style.width.%]="10" (click)="toggleHideAll()">Hide All</th>
+      <th rowSpan="2" [style.width.%]="10" [ngClass]="[ 'sortable', sortDirClass(1) ]" (click)="nextSortFunIndex(1)">Price</th>
+      <th colspan="3" [style.width.%]="20">{{ leftHeader }}</th>
+      <th colspan="3" [style.width.%]="20">Ingredient 2</th>
+      <th colspan="3" [style.width.%]="20">Ingredient 3</th>
+      @if (getNotes) { <th rowspan="2" [style.width.%]="20">Notes</th> }
     </tr>
     <tr>
       <th [ngClass]="[ 'sortable', sortDirClass(2) ]" (click)="nextSortFunIndex(2)">Race</th>
@@ -95,8 +98,9 @@ export class FusionTrioTableRowComponent {
   `]
 })
 export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
-  @Input() title;
-  @Input() leftHeader;
+  @Input() title: string;
+  @Input() leftHeader: string;
+  @Input() getNotes: (demon1: string, demon2: string, demon3: string) => string;
   hideAll = output<boolean>();
 
   toggleHideAll() {
@@ -118,6 +122,7 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
         <tfoot #stickyHeader appColumnWidths
           class="app-fusion-trio-table-header"
           [title]="title"
+          [getNotes]="getNotes"
           [leftHeader]="leftHeader"
           [sortFunIndex]="sortFunIndex"
           (hideAll)="toggleHideAll()"
@@ -128,18 +133,20 @@ export class FusionTrioTableHeaderComponent extends SortedTableHeaderComponent {
         <tfoot #hiddenHeader appColumnWidths
           class="app-fusion-trio-table-header"
           [title]="title"
+          [getNotes]="getNotes"
           [leftHeader]="leftHeader"
           [style.visibility]="'collapse'">
         </tfoot>
         @if (!rowData.length) {
           <tbody>
-            <tr><td colspan="11">No fusions found!</td></tr>
+            <tr><td colspan="12">No fusions found!</td></tr>
           </tbody>
         }
         @for (data of rowData; track data; let i = $index) {
           <tbody
             class="app-fusion-trio-table-row"
             [trio]="data"
+            [getNotes]="getNotes"
             [showing]="showing[i]"
             [showIndex]="i"
             [inGameCurrencySymbol]="inGameCurrencySymbol"
@@ -155,6 +162,7 @@ export class FusionTrioTableComponent extends SortedTableComponent<FusionTrio> i
   @Input() leftHeader = 'Ingredient 1';
   @Input() raceOrder: { [race: string]: number };
   @Input() inGameCurrencySymbol: string;
+  @Input() getNotes: (demon1: string, demon2: string, demon3: string) => string;
   showing: boolean[] = [];
 
   protected sortFuns: ((a: FusionTrio, b: FusionTrio) => number)[] = [];

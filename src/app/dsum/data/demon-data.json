@@ -1,4015 +1,3222 @@
 {
   "Abraxas": {
-    "atks": [10, 75, 166, 40, 117, 154, 54, 116],
+    "atks": [193, 1, 1, 166, 118, 40, 54, 154, 116],
     "drop": "Cakra Pot",
     "inherit": "psy",
     "lvl": 65,
-    "person": "Prideful",
+    "price": 22960,
     "race": "Fallen",
-    "resists": "-www--ww-----7sRRsss",
-    "skills": [
-      "Mabufula",
-      "Mapsi",
-      "Shikyou",
-      "Penta Wall"
-    ],
-    "stats": [515, 315, 18, 12, 17, 12, 14, 9],
-    "tone": "Nobleman"
+    "resists": "----7s22sss-www--ww",
+    "skills": ["Mabufula", "Mapsi", "Shikyou", "Penta Wall"],
+    "stats": [515, 335, 75, 650, 18, 12, 17, 12, 14, 9],
+    "talk": "Nobleman",
+    "tone": "Prideful"
   },
   "Aerophant": {
-    "atks": [1, 33, 90, 13, 71, 102, 33, 70],
-    "inherit": "phys",
+    "atks": [53, 0, 1.8, 90, 72, 13, 33, 102, 71],
+    "inherit": "strike",
     "lvl": 35,
-    "person": "Mild",
+    "price": 9440,
     "race": "UMA",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Bind Voice",
-      "Panic Voice",
-      "Ether Mace",
-      "Traesto"
-    ],
-    "stats": [254, 93, 10, 7, 5, 16, 16, 5],
-    "tone": "Old Beast"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Bind Voice", "Panic Voice", "Ether Mace", "Traesto"],
+    "stats": [254, 113, 33, 350, 10, 7, 5, 16, 16, 5],
+    "talk": "Old Beast",
+    "tone": "Mild"
   },
   "Afanc": {
-    "atks": [10, 8, 44, 10, 33, 46, 17, 33],
+    "atks": [17, 1, 1, 44, 33, 10, 17, 46, 33],
     "drop": "Aquamarine",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 16,
-    "person": "Wild",
+    "price": 2640,
     "race": "Wilder",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Feral Bite",
-      "Water Wall"
-    ],
-    "stats": [75, 38, 6, 5, 4, 7, 7, 4],
-    "tone": "Young Beast"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Feral Bite", "Water Wall"],
+    "stats": [75, 58, 8, 160, 6, 5, 4, 7, 7, 4],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Agathion": {
-    "atks": [10, 11, 28, 11, 23, 30, 11, 22],
+    "atks": [8, 1, 1, 28, 23, 11, 11, 30, 22],
     "drop": "Cakra Drop",
     "inherit": "elec",
     "lvl": 10,
-    "person": "Cowardly",
+    "price": 2160,
     "race": "Yoma",
-    "resists": "-----------ss1ssss77",
-    "skills": [
-      "Zio",
-      "Happy Dance",
-      "Escape*"
-    ],
-    "stats": [44, 24, 4, 3, 5, 5, 6, 4],
-    "tone": "Boy"
+    "resists": "--ss1ssss77--------",
+    "skills": ["Zio", "Happy Dance"],
+    "stats": [44, 44, 11, 100, 4, 3, 5, 5, 6, 4],
+    "talk": "Boy",
+    "tone": "Cowardly"
   },
   "Agony": {
-    "atks": [1, 19, 72, 17, 51, 70, 24, 50],
+    "atks": [35, 0, 1.8, 72, 52, 17, 25, 70, 51],
     "drop": "A-Chinsin",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 27,
-    "person": "Insightful",
+    "price": 5280,
     "race": "Undead",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Bind Voice",
-      "Paralyze Needle"
-    ],
-    "stats": [139, 77, 9, 6, 7, 8, 8, 6],
-    "tone": "Knight"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Bind Voice", "Paralyze Needle"],
+    "stats": [139, 97, 19, 270, 9, 6, 7, 8, 8, 6],
+    "talk": "Knight",
+    "tone": "Insightful"
   },
   "Airavata": {
-    "atks": [1, 58, 110, 21, 71, 104, 39, 70],
+    "atks": [77, 0, 1.8, 110, 72, 21, 39, 104, 71],
     "inherit": "elec",
     "lvl": 40,
-    "person": "Insightful",
+    "price": 12600,
     "race": "Holy",
-    "resists": "-----------ss1ssss77",
-    "skills": [
-      "Zionga",
-      "Diarama",
-      "Panic Voice",
-      "Patra"
-    ],
-    "stats": [290, 144, 15, 11, 8, 12, 6, 11],
-    "tone": "Old Beast"
+    "resists": "--ss1ssss77--------",
+    "skills": ["Zionga", "Diarama", "Panic Voice", "Patra"],
+    "stats": [290, 164, 58, 400, 15, 11, 8, 12, 6, 11],
+    "talk": "Old Beast",
+    "tone": "Insightful"
   },
   "Alraune": {
-    "atks": [10, 15, 66, 37, 51, 62, 29, 52],
+    "atks": [35, 1, 1, 66, 51, 37, 29, 62, 52],
     "drop": "Ruby",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 28,
-    "person": "Sly",
+    "price": 5400,
     "race": "Wood",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Marin Karin",
-      "Hapirma",
-      "Shipani"
-    ],
-    "stats": [78, 132, 5, 10, 16, 3, 7, 4],
-    "tone": "Lady"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Marin Karin", "Hapirma", "Shipani"],
+    "stats": [78, 152, 15, 280, 5, 10, 16, 3, 7, 4],
+    "talk": "Lady",
+    "tone": "Sly"
   },
   "Amazon": {
-    "atks": [12, 48, 112, 17, 86, 104, 33, 84],
+    "atks": [137, 1, 2, 112, 87, 17, 33, 104, 85],
     "drop": "A-Kingyo",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 43,
-    "person": "Impatient",
+    "price": 12000,
     "race": "Femme",
-    "resists": "-----------1--7ns7-s",
-    "skills": [
-      "Tetrakarn",
-      "Macha's Strike",
-      "Die Hard"
-    ],
-    "stats": [262, 119, 13, 6, 7, 9, 18, 7],
-    "tone": "Lady"
+    "resists": "--1--7ns7-s--------",
+    "skills": ["Tetrakarn", "Macha's Strike", "Die Hard"],
+    "stats": [262, 139, 48, 430, 13, 6, 7, 9, 18, 7],
+    "talk": "Lady",
+    "tone": "Impatient"
   },
   "Ammut": {
-    "atks": [1, 44, 126, 22, 81, 120, 41, 79],
+    "atks": [100, 0, 1.8, 126, 81, 22, 41, 120, 79],
     "drop": "Onyx",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 46,
-    "person": "Wild",
+    "price": 12600,
     "race": "Beast",
-    "resists": "-----7-----1--ssss11",
-    "skills": [
-      "Spiral Bite",
-      "Eat Whole*"
-    ],
-    "stats": [384, 158, 17, 9, 9, 14, 6, 8],
-    "tone": "Young Beast"
+    "resists": "--1--ssss11-----7--",
+    "skills": ["Spiral Bite"],
+    "stats": [384, 178, 44, 460, 17, 9, 9, 14, 6, 8],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Amon-Ra": {
-    "atks": [13, 104, 196, 44, 134, 184, 63, 131],
+    "atks": [529, 1, 3, 196, 135, 44, 63, 184, 132],
     "inherit": "almighty",
     "lvl": 73,
-    "person": "Calm",
+    "price": 34560,
     "race": "Deity",
-    "resists": "7777--77-rw777snssss",
-    "skills": [
-      "Megido",
-      "Hamaon",
-      "Samarecarm"
-    ],
-    "stats": [834, 381, 25, 13, 19, 19, 15, 17],
-    "tone": "Nobleman"
+    "resists": "Rw777snssss7777--77",
+    "skills": ["Megido", "Hamaon", "Samarecarm"],
+    "stats": [834, 401, 104, 730, 25, 13, 19, 19, 15, 17],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Ananta": {
-    "atks": [23, 104, 192, 40, 122, 176, 64, 119],
-    "inherit": "quad",
+    "atks": [636, 2, 3, 192, 122, 40, 64, 176, 119],
+    "inherit": "temp",
     "lvl": 68,
-    "person": "Impatient",
+    "price": 28560,
     "race": "Dragon",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Makarakarn",
-      "Water Wall",
-      "Magnetic Storm"
-    ],
-    "stats": [848, 356, 28, 16, 16, 20, 11, 11],
-    "tone": "Nobleman"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Makarakarn", "Water Wall", "Magnetic Storm"],
+    "stats": [848, 376, 104, 680, 28, 16, 16, 20, 11, 11],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Anat": {
-    "atks": [12, 95, 182, 61, 132, 168, 70, 133],
+    "atks": [344, 1, 2, 182, 132, 61, 70, 168, 133],
     "inherit": "fire",
     "lvl": 72,
-    "person": "Insightful",
+    "price": 34240,
     "race": "Megami",
-    "resists": "------------771n11ss",
-    "skills": [
-      "Maragion",
-      "Mediarahan",
-      "Samarecarm"
-    ],
-    "stats": [585, 518, 19, 22, 25, 12, 17, 12],
-    "tone": "Noblewoman"
+    "resists": "---771n11ss--------",
+    "skills": ["Maragion", "Mediarahan", "Samarecarm"],
+    "stats": [585, 538, 95, 720, 19, 22, 25, 12, 17, 12],
+    "talk": "Noblewoman",
+    "tone": "Insightful"
   },
   "Angel": {
-    "atks": [10, 15, 44, 10, 28, 38, 15, 27],
+    "atks": [17, 1, 1, 44, 28, 10, 15, 38, 27],
     "drop": "Rose Rod",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 14,
-    "person": "Cowardly",
+    "price": 2480,
     "race": "Divine",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Zan",
-      "Dia"
-    ],
-    "stats": [68, 34, 8, 5, 4, 5, 4, 5],
-    "tone": "Noblewoman"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Zan", "Dia"],
+    "stats": [68, 54, 15, 140, 8, 5, 4, 5, 4, 5],
+    "talk": "Noblewoman",
+    "tone": "Cowardly"
   },
   "Anubis": {
-    "atks": [12, 61, 106, 31, 76, 108, 41, 76],
+    "atks": [124, 1, 2, 106, 77, 31, 41, 108, 77],
     "inherit": "expel",
     "lvl": 42,
-    "person": "Vigorous",
+    "price": 13000,
     "race": "Avatar",
-    "resists": "77777777------sR7sss",
-    "skills": [
-      "Hama",
-      "Evil Eyes",
-      "Recarm"
-    ],
-    "stats": [267, 180, 11, 11, 13, 12, 9, 9],
-    "tone": "Old Beast"
+    "resists": "-----s27sss77777777",
+    "skills": ["Hanma", "Evil Eyes", "Recarm"],
+    "stats": [267, 200, 61, 420, 11, 11, 13, 12, 9, 9],
+    "talk": "Old Beast",
+    "tone": "Vigorous"
   },
   "Anzu": {
-    "atks": [20, 55, 132, 30, 100, 130, 43, 99],
+    "atks": [249, 2, 2, 132, 101, 30, 43, 130, 100],
     "drop": "Repulse Water",
     "inherit": "fire",
     "lvl": 53,
-    "person": "Wild",
+    "price": 16800,
     "race": "Raptor",
-    "resists": "17-wsss--R3--n7n71ss",
-    "skills": [
-      "Fire Breath",
-      "Bind Voice",
-      "Wing Flap"
-    ],
-    "stats": [357, 202, 13, 8, 13, 12, 17, 7],
-    "tone": "Old Beast"
+    "resists": "2X--n7n71ss17-wsss-",
+    "skills": ["Fire Breath", "Bind Voice", "Wing Flap"],
+    "stats": [357, 222, 55, 530, 13, 8, 13, 12, 17, 7],
+    "talk": "Old Beast",
+    "tone": "Wild"
   },
   "Apis": {
-    "atks": [10, 40, 68, 16, 46, 66, 22, 45],
+    "atks": [36, 1, 1, 68, 47, 16, 23, 66, 46],
     "inherit": "expel",
     "lvl": 25,
-    "person": "Mild",
+    "price": 5400,
     "race": "Holy",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Hama",
-      "Media",
-      "Tackle",
-      "Recarmdra"
-    ],
-    "stats": [130, 68, 9, 5, 7, 8, 5, 11],
-    "tone": "Young Beast"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Hama", "Media", "Tackle", "Recarmdra"],
+    "stats": [130, 88, 40, 250, 9, 5, 7, 8, 5, 11],
+    "talk": "Young Beast",
+    "tone": "Mild"
   },
   "Ara Mitama": {
-    "atks": [10, 37, 68, 15, 46, 68, 24, 45],
-    "inherit": "none",
+    "atks": [36, 1, 1, 68, 47, 15, 24, 68, 46],
+    "inherit": "mitama",
     "lvl": 25,
-    "person": "Wild",
+    "price": 5040,
     "race": "Mitama",
-    "resists": "wwwwwwww-ssssssRRsss",
-    "skills": [
-      "Shipani",
-      "Rakunda"
-    ],
-    "stats": [137, 68, 9, 6, 6, 9, 6, 6],
-    "tone": "Knight"
+    "resists": "ssssss22ssswwwwwwww",
+    "skills": ["Shipani", "Rakunda"],
+    "stats": [137, 88, 37, 250, 9, 6, 6, 9, 6, 6],
+    "talk": "Knight",
+    "tone": "Wild"
   },
   "Archangel": {
-    "atks": [10, 21, 66, 12, 39, 58, 20, 37],
+    "atks": [35, 1, 1, 66, 39, 12, 20, 58, 37],
     "drop": "Luban Chi",
     "inherit": "expel",
     "lvl": 21,
-    "person": "Vigorous",
+    "price": 4560,
     "race": "Divine",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Hama",
-      "Media",
-      "Skull Cracker"
-    ],
-    "stats": [130, 52, 12, 5, 5, 8, 4, 4],
-    "tone": "Nobleman"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Hama", "Media", "Skull Cracker"],
+    "stats": [130, 72, 21, 210, 12, 5, 5, 8, 4, 4],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Ashinaga": {
-    "atks": [10, 14, 62, 15, 40, 58, 21, 39],
+    "atks": [31, 1, 1, 62, 41, 15, 22, 58, 40],
     "drop": "Cossack Knife",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 22,
-    "person": "Impatient",
+    "price": 4680,
     "race": "Jaki",
-    "resists": "----------------n---",
-    "skills": [
-      "Tarukaja",
-      "Shibaboo",
-      "Guillotine Heel"
-    ],
-    "stats": [112, 61, 9, 6, 6, 7, 4, 7],
-    "tone": "Knight"
+    "resists": "------7n-----------",
+    "skills": ["Tarukaja", "Shibaboo", "Guillotine Heel"],
+    "stats": [112, 81, 14, 220, 9, 6, 6, 7, 4, 7],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Asp": {
-    "atks": [10, 19, 62, 18, 46, 58, 21, 45],
+    "atks": [31, 1, 1, 62, 46, 18, 21, 58, 45],
     "drop": "Garnet",
     "inherit": "psy",
     "lvl": 23,
-    "person": "Wild",
+    "price": 4800,
     "race": "Drake",
-    "resists": "---------33-77111171",
-    "skills": [
-      "Psio",
-      "Venom Bite"
-    ],
-    "stats": [104, 66, 8, 5, 8, 6, 9, 4],
-    "tone": "Old Beast"
+    "resists": "XX-77111171--------",
+    "skills": ["Psio", "Venom Bite"],
+    "stats": [104, 86, 19, 230, 8, 5, 8, 6, 9, 4],
+    "talk": "Old Beast",
+    "tone": "Wild"
   },
   "Azrael": {
-    "atks": [2, 78, 138, 46, 98, 132, 50, 97],
+    "atks": [152, 0, 2.2, 138, 98, 46, 50, 132, 97],
     "inherit": "death",
     "lvl": 53,
-    "person": "Prideful",
+    "price": 19920,
     "race": "Herald",
-    "resists": "-www--ww-----7sRRsss",
-    "skills": [
-      "Mudola",
-      "Mudo",
-      "Mapsio"
-    ],
-    "stats": [411, 281, 16, 12, 20, 13, 13, 9],
-    "tone": "Cynic"
+    "resists": "----7s22sss-www--ww",
+    "skills": ["Mudola", "Mudo", "Mapsi"],
+    "stats": [411, 301, 78, 530, 16, 12, 20, 13, 13, 9],
+    "talk": "Cynic",
+    "tone": "Prideful"
   },
   "Ba": {
-    "atks": [10, 10, 24, 7, 18, 20, 8, 17],
+    "atks": [6, 1, 1, 24, 19, 7, 8, 20, 19],
     "drop": "Garnet",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 7,
-    "person": "Calm",
+    "price": 960,
     "race": "Flight",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Peck",
-      "Nurse"
-    ],
-    "stats": [36, 15, 5, 3, 3, 3, 7, 3],
-    "tone": "Young Beast"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Peck", "Nurse"],
+    "stats": [36, 35, 10, 70, 5, 3, 3, 3, 7, 3],
+    "talk": "Young Beast",
+    "tone": "Calm"
   },
   "Balor": {
-    "atks": [12, 63, 128, 41, 88, 122, 49, 88],
+    "atks": [176, 1, 2, 128, 90, 41, 49, 122, 90],
     "drop": "PZ Faust",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 49,
-    "person": "Prideful",
+    "price": 16000,
     "race": "Tyrant",
-    "resists": "-----7--------snr1s7",
-    "skills": [
-      "Makarakarn",
-      "Lariat",
-      "Guillotine Heel",
-      "Petra Eyes*"
-    ],
-    "stats": [357, 261, 15, 15, 17, 12, 10, 11],
-    "tone": "Nobleman"
+    "resists": "-----snR1s7-----7--",
+    "skills": ["Makarakarn", "Lariat", "Guillotine Heel"],
+    "stats": [357, 281, 63, 490, 15, 15, 17, 12, 10, 11],
+    "talk": "Nobleman",
+    "tone": "Prideful"
   },
   "Barbatos": {
-    "atks": [12, 54, 138, 32, 89, 116, 40, 86],
+    "atks": [166, 1, 2, 124, 90, 29, 41, 112, 89],
     "drop": "Tank Gewehr",
     "inherit": "force",
     "lvl": 48,
-    "person": "Calm",
+    "price": 13000,
     "race": "Fallen",
-    "resists": "-----------ss1ssss77",
-    "skills": [
-      "Mazanma",
-      "Shuffle",
-      "Shipani",
-      "Demon's Kiss"
-    ],
-    "stats": [399, 191, 21, 8, 14, 10, 10, 10],
-    "tone": "Cynic"
+    "resists": "--ss1ssss77--------",
+    "skills": ["Mazanma", "Shuffle", "Shipani", "Demon's Kiss"],
+    "stats": [399, 211, 54, 480, 14, 10, 12, 8, 13, 8],
+    "talk": "Cynic",
+    "tone": "Calm"
   },
   "Barong": {
-    "atks": [20, 45, 170, 31, 116, 154, 51, 113],
+    "atks": [403, 2, 2, 170, 117, 31, 51, 154, 114],
     "inherit": "fire",
     "lvl": 62,
-    "person": "Calm",
+    "price": 24640,
     "race": "Avatar",
-    "resists": "-------------D7nns-s",
-    "skills": [
-      "Fire Breath",
-      "Bind Voice",
-      "Spiral Bite",
-      "Me Patra"
-    ],
-    "stats": [618, 246, 23, 10, 13, 15, 16, 11],
-    "tone": "Old Beast"
+    "resists": "----D7nns-s--------",
+    "skills": ["Fire Breath", "Bind Voice", "Spiral Bite", "Me Patra"],
+    "stats": [618, 266, 45, 620, 23, 10, 13, 15, 16, 11],
+    "talk": "Old Beast",
+    "tone": "Calm"
   },
   "Basilisk": {
-    "atks": [10, 42, 112, 24, 80, 104, 37, 79],
+    "atks": [91, 1, 1, 112, 81, 24, 37, 104, 80],
     "drop": "Dis-Stone",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 43,
-    "person": "Insightful",
+    "price": 12000,
     "race": "Drake",
-    "resists": "------77---3--ssr1ss",
-    "skills": [
-      "Venom Breath",
-      "Paralyze Needle",
-      "Petradi",
-      "Petra Eyes*"
-    ],
-    "stats": [262, 154, 13, 9, 10, 9, 12, 7],
-    "tone": "Young Beast"
+    "resists": "--X--ssR1ss------77",
+    "skills": ["Venom Breath", "Paralyze Needle", "Petradi"],
+    "stats": [262, 174, 42, 430, 13, 9, 10, 9, 12, 7],
+    "talk": "Young Beast",
+    "tone": "Insightful"
   },
   "Berserker": {
-    "atks": [12, 39, 128, 16, 87, 102, 31, 83],
+    "atks": [176, 1, 2, 128, 87, 16, 32, 102, 84],
     "drop": "S-High",
     "inherit": "ice",
     "lvl": 44,
-    "person": "Wild",
+    "price": 12200,
     "race": "Brute",
-    "resists": "7777--77-wR7771n-177",
-    "skills": [
-      "Tarukaja",
-      "Skull Cracker",
-      "Blizzard Breath"
-    ],
-    "stats": [323, 116, 20, 5, 7, 7, 15, 7],
-    "tone": "Nobleman"
+    "resists": "w27771n-1777777--77",
+    "skills": ["Tarukaja", "Skull Cracker", "Blizzard Breath"],
+    "stats": [323, 136, 39, 440, 20, 5, 7, 7, 15, 7],
+    "talk": "Nobleman",
+    "tone": "Wild"
   },
   "Bifrons": {
-    "atks": [10, 36, 82, 27, 60, 78, 31, 60],
+    "atks": [51, 1, 1, 82, 60, 27, 32, 78, 61],
     "drop": "Despair Shot",
     "inherit": "elec",
     "lvl": 33,
-    "person": "Sly",
+    "price": 8000,
     "race": "Fallen",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Mazio",
-      "Rakunda"
-    ],
-    "stats": [139, 130, 8, 10, 11, 6, 7, 8],
-    "tone": "Cynic"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Mazio", "Rakunda"],
+    "stats": [139, 150, 36, 330, 8, 10, 11, 6, 7, 8],
+    "talk": "Cynic",
+    "tone": "Sly"
   },
   "Bishamonten": {
-    "atks": [23, 83, 184, 42, 119, 164, 57, 116],
+    "atks": [586, 2, 3, 184, 120, 42, 57, 164, 116],
     "inherit": "expel",
     "lvl": 66,
-    "person": "Vigorous",
+    "price": 25760,
     "race": "Kishin",
-    "resists": "7777--77-rw777snssss",
-    "skills": [
-      "Hamaon",
-      "Schneiden Axe",
-      "Cauterizing Fist",
-      "Buddha's Laugh"
-    ],
-    "stats": [723, 328, 26, 12, 18, 16, 13, 7],
-    "tone": "Knight"
+    "resists": "Rw777snssss7777--77",
+    "skills": ["Hamaon", "Critical Slash", "Cauterizing Fist", "Buddha's Laugh"],
+    "stats": [723, 348, 83, 660, 26, 12, 18, 16, 13, 7],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Black Maria": {
-    "atks": [10, 71, 126, 48, 93, 122, 52, 95],
-    "inherit": "ailment",
+    "atks": [114, 1, 1, 126, 94, 48, 52, 122, 96],
+    "inherit": "recb",
     "lvl": 52,
-    "person": "Mild",
+    "price": 19680,
     "race": "Lady",
-    "resists": "---------ss---1n71s-",
-    "skills": [
-      "Lullaby",
-      "Samarecarm",
-      "Recarmdra"
-    ],
-    "stats": [285, 311, 11, 17, 20, 9, 10, 15],
-    "tone": "Lady"
+    "resists": "ss---1n71s---------",
+    "skills": ["Lullaby", "Samarecarm", "Recarmdra"],
+    "stats": [285, 331, 71, 520, 11, 17, 20, 9, 10, 15],
+    "talk": "Lady",
+    "tone": "Mild"
   },
   "Bogle": {
-    "atks": [1, 7, 30, 7, 18, 24, 9, 17],
+    "atks": [8, 0, 1.8, 30, 19, 7, 9, 24, 18],
     "drop": "Asemi Knife",
     "inherit": "elec",
     "lvl": 8,
-    "person": "Vigorous",
+    "price": 1000,
     "race": "Brute",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Zio",
-      "Patra"
-    ],
-    "stats": [44, 17, 7, 3, 3, 4, 5, 3],
-    "tone": "Young Man"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Zio", "Patra"],
+    "stats": [44, 37, 7, 80, 7, 3, 3, 4, 5, 3],
+    "talk": "Young Man",
+    "tone": "Vigorous"
   },
   "Botis": {
-    "atks": [10, 64, 154, 32, 101, 132, 44, 98],
+    "atks": [167, 1, 1, 154, 101, 32, 44, 132, 98],
     "drop": "Final Guard",
     "inherit": "elec",
     "lvl": 56,
-    "person": "Vigorous",
+    "price": 17520,
     "race": "Fallen",
-    "resists": "-----7-----d--71ns7s",
-    "skills": [
-      "Mazionga",
-      "Makakaja",
-      "Mince Needle"
-    ],
-    "stats": [461, 221, 21, 8, 14, 10, 10, 10],
-    "tone": "Knight"
+    "resists": "--d--71ns7s-----7--",
+    "skills": ["Mazionga", "Makakaja", "Mince Needle"],
+    "stats": [461, 241, 64, 560, 21, 8, 14, 10, 10, 10],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Brigid": {
-    "atks": [10, 65, 116, 36, 87, 118, 49, 89],
-    "inherit": "recovery",
+    "atks": [98, 1, 1, 116, 88, 36, 50, 118, 89],
+    "inherit": "reca",
     "lvl": 47,
-    "person": "Insightful",
+    "price": 15000,
     "race": "Megami",
-    "resists": "-----w--------nnsnss",
-    "skills": [
-      "Diarahan",
-      "Marin Karin",
-      "Shikyou"
-    ],
-    "stats": [296, 244, 11, 17, 14, 12, 13, 8],
-    "tone": "Noblewoman"
+    "resists": "-----nnsnss-----w--",
+    "skills": ["Diarahan", "Marin Karin", "Shikyou"],
+    "stats": [296, 264, 65, 470, 11, 17, 14, 12, 13, 8],
+    "talk": "Noblewoman",
+    "tone": "Insightful"
   },
   "Caladrius": {
-    "atks": [2, 28, 76, 22, 58, 72, 29, 58],
+    "atks": [50, 0, 2.2, 76, 58, 22, 29, 72, 58],
     "drop": "Kin-Tan",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 30,
-    "person": "Mild",
+    "price": 7520,
     "race": "Flight",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Mapsi",
-      "Media",
-      "Petradi"
-    ],
-    "stats": [128, 106, 8, 9, 9, 6, 10, 5],
-    "tone": "Young Beast"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Mapsi", "Media", "Petradi"],
+    "stats": [128, 106, 28, 300, 8, 9, 9, 6, 10, 5],
+    "talk": "Young Beast",
+    "tone": "Mild"
   },
   "Catoblepas": {
-    "atks": [1, 61, 134, 26, 89, 140, 45, 88],
+    "atks": [112, 0, 1.8, 134, 90, 26, 45, 140, 88],
     "drop": "Medusa Cart",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 52,
-    "person": "Calm",
+    "price": 16560,
     "race": "Wilder",
-    "resists": "7777ssss---w-7s71---",
-    "skills": [
-      "Tackle",
-      "Tarukaja",
-      "Petra Eyes*"
-    ],
-    "stats": [457, 185, 15, 8, 11, 18, 6, 11],
-    "tone": "Young Beast"
+    "resists": "--w-7s71---7777ssss",
+    "skills": ["Tackle", "Tarukaja"],
+    "stats": [457, 205, 61, 520, 15, 8, 11, 18, 6, 11],
+    "talk": "Young Beast",
+    "tone": "Calm"
   },
   "Cerberus": {
-    "atks": [12, 53, 148, 22, 103, 130, 43, 101],
+    "atks": [232, 1, 2, 148, 104, 22, 43, 130, 102],
     "drop": "Hangon-Ko",
     "inherit": "fire",
     "lvl": 55,
-    "person": "Vigorous",
+    "price": 17280,
     "race": "Beast",
-    "resists": "---------D----ss11ss",
-    "skills": [
-      "Fire Breath",
-      "Bind Voice",
-      "Feral Bite",
-      "Traesto"
-    ],
-    "stats": [426, 187, 19, 9, 9, 10, 15, 10],
-    "tone": "Old Beast"
+    "resists": "D----ss11ss--------",
+    "skills": ["Fire Breath", "Bind Voice", "Feral Bite", "Traesto"],
+    "stats": [426, 207, 53, 550, 19, 9, 9, 10, 15, 10],
+    "talk": "Old Beast",
+    "tone": "Vigorous"
   },
   "Chernobog": {
-    "atks": [23, 243, 140, 29, 88, 128, 45, 84],
+    "atks": [348, 2, 3, 140, 88, 29, 45, 128, 84],
     "drop": "Huo Jian Spear",
     "inherit": "death",
     "lvl": 46,
-    "person": "Impatient",
+    "price": 16200,
     "race": "Reaper",
-    "resists": "ssssssss------n22nnn",
-    "skills": [
-      "Mudoon",
-      "Venom Flash",
-      "Deathbound",
-      "Spin Slash"
-    ],
-    "stats": [513, 183, 24, 10, 12, 18, 12, 5],
-    "tone": "Knight"
+    "resists": "-----nrrnnnssssssss",
+    "skills": ["Mudoon", "Venom Flash", "Deathbound", "Spin Slash"],
+    "stats": [513, 203, 243, 460, 24, 10, 12, 18, 12, 5],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Cherub": {
-    "atks": [12, 56, 174, 27, 114, 156, 52, 111],
+    "atks": [316, 1, 2, 174, 115, 27, 52, 156, 112],
     "drop": "Dubthach Spear",
     "inherit": "almighty",
     "lvl": 64,
-    "person": "Insightful",
+    "price": 22680,
     "race": "Divine",
-    "resists": "wwwww3ww-RRRRRRRRRRR",
-    "skills": [
-      "Mapsio",
-      "Megido",
-      "Makakaja",
-      "Angel's Kiss"
-    ],
-    "stats": [621, 251, 23, 11, 11, 14, 11, 11],
-    "tone": "Nobleman"
+    "resists": "22222222222wwwwwXww",
+    "skills": ["Mapsio", "Megido", "Makakaja", "Angel's Kiss"],
+    "stats": [621, 271, 56, 640, 23, 11, 11, 14, 11, 11],
+    "talk": "Nobleman",
+    "tone": "Insightful"
   },
   "Chi You": {
-    "atks": [99, 101, 220, 61, 147, 214, 81, 146],
+    "atks": [331, 8, 8, 220, 148, 61, 81, 214, 147],
     "drop": "Zanbatou",
     "inherit": "psy",
     "lvl": 83,
-    "person": "Impatient",
+    "price": 44640,
     "race": "Tyrant",
-    "resists": "---------444--snns--",
-    "skills": [
-      "Mapsio",
-      "Hellfire",
-      "Mist Slash"
-    ],
-    "stats": [1091, 594, 27, 22, 25, 24, 14, 12],
-    "tone": "Knight"
+    "resists": "eee--snns----------",
+    "skills": ["Mapsio", "Hellfire", "Mist Slash"],
+    "stats": [1091, 614, 101, 830, 27, 22, 25, 24, 14, 12],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Chimera": {
-    "atks": [10, 67, 132, 17, 91, 118, 36, 87],
+    "atks": [125, 1, 1, 132, 91, 17, 37, 118, 87],
     "inherit": "fire",
     "lvl": 46,
-    "person": "Impatient",
+    "price": 13800,
     "race": "Avatar",
-    "resists": "7777--77-rw777snssss",
-    "skills": [
-      "Fire Breath",
-      "Fire Wall"
-    ],
-    "stats": [407, 127, 20, 6, 7, 13, 15, 8],
-    "tone": "Old Beast"
+    "resists": "Rw777snssss7777--77",
+    "skills": ["Fire Breath", "Fire Wall"],
+    "stats": [407, 147, 67, 460, 20, 6, 7, 13, 15, 8],
+    "talk": "Old Beast",
+    "tone": "Impatient"
   },
   "Cu Chulainn": {
-    "atks": [20, 61, 128, 18, 79, 112, 37, 76],
+    "atks": [235, 2, 2, 128, 80, 18, 37, 112, 77],
     "inherit": "expel",
     "lvl": 43,
-    "person": "Vigorous",
+    "price": 13000,
     "race": "Genma",
-    "resists": "-----sss----1-sn7s77",
-    "skills": [
-      "Hama",
-      "Tarukaja",
-      "Deathbound"
-    ],
-    "stats": [394, 131, 21, 8, 7, 13, 9, 7],
-    "tone": "Nobleman"
+    "resists": "---1-sn7s77-----sss",
+    "skills": ["Hanma", "Tarukaja", "Deathbound"],
+    "stats": [394, 151, 61, 430, 21, 8, 7, 13, 9, 7],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Culebre": {
-    "atks": [10, 53, 116, 21, 86, 104, 35, 84],
+    "atks": [98, 1, 1, 116, 86, 21, 35, 104, 84],
     "drop": "Emerald",
     "inherit": "ice",
     "lvl": 44,
-    "person": "Impatient",
+    "price": 12200,
     "race": "Snake",
-    "resists": "-----w---wR---7s-777",
-    "skills": [
-      "Bufula",
-      "Water Wall",
-      "Mince Needle",
-      "Meat Bullet"
-    ],
-    "stats": [267, 140, 14, 7, 9, 8, 15, 8],
-    "tone": "Young Beast"
+    "resists": "w2---7s-777-----w--",
+    "skills": ["Bufula", "Water Wall", "Mince Needle", "Meat Bullet"],
+    "stats": [267, 160, 53, 440, 14, 7, 9, 8, 15, 8],
+    "talk": "Young Beast",
+    "tone": "Impatient"
   },
   "Cybele": {
-    "atks": [20, 83, 172, 40, 113, 160, 57, 110],
-    "inherit": "recovery",
+    "atks": [412, 2, 2, 172, 113, 40, 57, 160, 110],
+    "inherit": "reca",
     "lvl": 62,
-    "person": "Prideful",
+    "price": 26320,
     "race": "Lady",
-    "resists": "-----------n777ns7ss",
-    "skills": [
-      "Mediarahan",
-      "Rakunda",
-      "Brain Burst",
-      "Arm Chopper"
-    ],
-    "stats": [681, 309, 24, 13, 17, 18, 12, 10],
-    "tone": "Noblewoman"
+    "resists": "--n777ns7ss--------",
+    "skills": ["Mediarahan", "Rakunda", "Brain Burst", "Arm Chopper"],
+    "stats": [681, 329, 83, 620, 24, 13, 17, 18, 12, 10],
+    "talk": "Noblewoman",
+    "tone": "Prideful"
   },
   "Da Peng": {
-    "atks": [12, 42, 122, 23, 91, 112, 37, 89],
+    "atks": [161, 1, 2, 122, 92, 23, 37, 112, 91],
     "drop": "Cakra Chip",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 47,
-    "person": "Impatient",
+    "price": 12800,
     "race": "Flight",
-    "resists": "17-wsss-----1-7n71ss",
-    "skills": [
-      "Wing Flap",
-      "Panic Voice",
-      "Media"
-    ],
-    "stats": [296, 155, 14, 7, 10, 9, 17, 7],
-    "tone": "Old Beast"
+    "resists": "---1-7n71ss17-wsss-",
+    "skills": ["Wing Flap", "Panic Voice", "Media"],
+    "stats": [296, 175, 42, 470, 14, 7, 10, 9, 17, 7],
+    "talk": "Old Beast",
+    "tone": "Impatient"
   },
   "Dakini": {
-    "atks": [12, 59, 134, 32, 93, 122, 42, 91],
+    "atks": [192, 1, 2, 134, 94, 32, 43, 122, 92],
     "drop": "Tenketusin",
     "inherit": "death",
     "lvl": 51,
-    "person": "Vigorous",
+    "price": 16320,
     "race": "Femme",
-    "resists": "----------n-7-7nssss",
-    "skills": [
-      "Mabufula",
-      "Maragi",
-      "Mudo",
-      "Lullaby",
-      "Demon's Allure (Male)*"
-    ],
-    "stats": [358, 209, 16, 9, 14, 10, 12, 7],
-    "tone": "Noblewoman"
+    "resists": "-n-7-7nssss--------",
+    "skills": ["Mabufula", "Maragi", "Mudo", "Lullaby"],
+    "stats": [358, 229, 59, 510, 16, 9, 14, 10, 12, 7],
+    "talk": "Noblewoman",
+    "tone": "Vigorous"
   },
   "Daphne": {
-    "atks": [1, 43, 84, 32, 62, 84, 32, 63],
-    "inherit": "ailment",
+    "atks": [47, 0, 1.8, 84, 64, 32, 32, 84, 64],
+    "inherit": "recb",
     "lvl": 35,
-    "person": "Mild",
+    "price": 9120,
     "race": "Tree",
-    "resists": "---------3----s11s11",
-    "skills": [
-      "Makarakarn",
-      "Rakukaja",
-      "Paraladi"
-    ],
-    "stats": [146, 142, 7, 8, 14, 7, 6, 15],
-    "tone": "Girl"
+    "resists": "X----s11s11--------",
+    "skills": ["Makarakarn", "Rakukaja", "Paraladi"],
+    "stats": [146, 162, 43, 350, 7, 8, 14, 7, 6, 15],
+    "talk": "Girl",
+    "tone": "Mild"
   },
   "Dominion": {
-    "atks": [2, 48, 144, 28, 95, 124, 43, 92],
+    "atks": [165, 0, 2.2, 144, 95, 28, 43, 124, 93],
     "drop": "Solothurn S18",
     "inherit": "fire",
     "lvl": 52,
-    "person": "Impatient",
+    "price": 16560,
     "race": "Divine",
-    "resists": "---wwwww-sssssssssss",
-    "skills": [
-      "Agilao",
-      "Mudola",
-      "Angel's Kiss"
-    ],
-    "stats": [417, 199, 20, 9, 12, 10, 11, 7],
-    "tone": "Nobleman"
+    "resists": "sssssssssss---wwwww",
+    "skills": ["Agilao", "Mudola", "Angel's Kiss"],
+    "stats": [417, 219, 48, 520, 20, 9, 12, 10, 11, 7],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Domovoi": {
-    "atks": [10, 19, 64, 16, 43, 56, 20, 42],
+    "atks": [33, 1, 1, 64, 44, 16, 20, 56, 43],
     "drop": "Potion",
     "inherit": "psy",
     "lvl": 23,
-    "person": "Vigorous",
+    "price": 4800,
     "race": "Fairy",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Psi",
-      "Tarunda"
-    ],
-    "stats": [104, 63, 9, 5, 7, 5, 5, 9],
-    "tone": "Elder"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Psi", "Tarunda"],
+    "stats": [104, 83, 19, 230, 9, 5, 7, 5, 5, 9],
+    "talk": "Elder",
+    "tone": "Vigorous"
   },
   "Doppelganger": {
-    "atks": [23, 72, 144, 23, 97, 148, 49, 95],
+    "atks": [367, 2, 3, 144, 98, 23, 49, 148, 96],
     "drop": "A-Kingyo",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 55,
-    "person": "Calm",
+    "price": 17280,
     "race": "Foul",
-    "resists": "RRRRRRRR-33333ssw---",
-    "skills": [
-      "Shuffler",
-      "Maragion",
-      "Blight"
-    ],
-    "stats": [527, 195, 17, 10, 9, 19, 10, 7],
-    "tone": "Lunatic"
+    "resists": "XXXXXssw---22222222",
+    "skills": ["Shuffler", "Maragion", "Blight"],
+    "stats": [524, 215, 72, 550, 17, 10, 9, 19, 10, 7],
+    "talk": "Lunatic",
+    "tone": "Calm"
   },
   "Dwarf": {
-    "atks": [10, 26, 74, 15, 46, 74, 26, 45],
+    "atks": [42, 1, 1, 74, 46, 15, 27, 74, 45],
     "drop": "Amethyst",
     "inherit": "force",
     "lvl": 26,
-    "person": "Calm",
+    "price": 5160,
     "race": "Jirae",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Zan",
-      "Hama",
-      "Rakukaja"
-    ],
-    "stats": [168, 74, 11, 7, 6, 11, 4, 4],
-    "tone": "Elder"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Zan", "Hama", "Rakukaja"],
+    "stats": [168, 94, 26, 260, 11, 7, 6, 11, 4, 4],
+    "talk": "Elder",
+    "tone": "Calm"
   },
   "Dzolob": {
-    "atks": [10, 51, 94, 17, 67, 84, 28, 65],
+    "atks": [66, 1, 1, 94, 67, 17, 28, 84, 65],
     "drop": "Onyx",
     "inherit": "psy",
     "lvl": 34,
-    "person": "Wild",
+    "price": 8160,
     "race": "Haunt",
-    "resists": "------------11-7s---",
-    "skills": [
-      "Mapsi",
-      "Guillotine Heel",
-      "Jumping Knee",
-      "Vulcan Kick"
-    ],
-    "stats": [203, 95, 13, 6, 7, 8, 12, 5],
-    "tone": "Young Man"
+    "resists": "---11-7s-----------",
+    "skills": ["Mapsi", "Guillotine Heel", "Jumping Knee", "Vulcan Kick"],
+    "stats": [203, 115, 51, 340, 13, 6, 7, 8, 12, 5],
+    "talk": "Young Man",
+    "tone": "Wild"
   },
   "Enku": {
-    "atks": [1, 40, 72, 20, 51, 70, 24, 50],
+    "atks": [35, 0, 1.8, 72, 52, 20, 24, 70, 51],
     "drop": "Randy Shot",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 27,
-    "person": "Impatient",
+    "price": 5280,
     "race": "Haunt",
-    "resists": "----------------n---",
-    "skills": [
-      "Fire Breath",
-      "Scatter"
-    ],
-    "stats": [139, 81, 9, 5, 9, 8, 8, 5],
-    "tone": "Knight"
+    "resists": "------7n-----------",
+    "skills": ["Fire Breath", "Scatter"],
+    "stats": [139, 101, 40, 270, 9, 5, 9, 8, 8, 5],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Eruzuli": {
-    "atks": [10, 63, 116, 38, 78, 110, 39, 77],
+    "atks": [85, 0, 1.8, 116, 79, 38, 39, 110, 77],
     "inherit": "death",
     "lvl": 43,
-    "person": "Prideful",
+    "price": 14000,
     "race": "Megami",
-    "resists": "---------77777sns1s1",
-    "skills": [
-      "Mudola",
-      "Diarama",
-      "Dormina",
-      "Intimidate"
-    ],
-    "stats": [317, 189, 15, 8, 17, 12, 9, 9],
-    "tone": "Lady"
+    "resists": "77777sns1s1--------",
+    "skills": ["Mudola", "Diarama", "Dormina", "Intimidate"],
+    "stats": [317, 209, 63, 430, 15, 8, 17, 12, 9, 9],
+    "talk": "Lady",
+    "tone": "Prideful"
   },
   "Es": {
-    "atks": [13, 26, 124, 44, 86, 118, 45, 86],
+    "atks": [221, 1, 3, 124, 86, 44, 46, 118, 86],
     "drop": "Soma",
     "inherit": "psy",
     "lvl": 50,
-    "person": "Calm",
+    "price": 16080,
     "race": "Wood",
-    "resists": "-777777--3-7--sRRsss",
-    "skills": [
-      "Mapsi",
-      "Makafuji",
-      "Mediarama",
-      "Arachno Wire*"
-    ],
-    "stats": [287, 259, 12, 12, 19, 9, 6, 9],
-    "tone": "Cynic"
+    "resists": "X-7--s22sss-777777-",
+    "skills": ["Mapsi", "Makafuji", "Mediarama"],
+    "stats": [287, 279, 26, 500, 12, 12, 19, 9, 6, 9],
+    "talk": "Cynic",
+    "tone": "Calm"
   },
   "Fariedone": {
-    "atks": [20, 0, 170, 35, 119, 162, 57, 117],
-    "inherit": "none",
+    "atks": [403, 2, 2, 170, 119, 35, 58, 162, 117],
+    "inherit": "hero",
     "lvl": 62,
-    "person": "None",
+    "price": 28000,
     "race": "Hero",
-    "resists": "-------------D7nns-s",
-    "skills": [
-      "Lightning Blade",
-      "Critical Slash",
-      "Die Hard",
-      "Intimidate"
-    ],
-    "stats": [681, 293, 23, 14, 14, 19, 18, 12],
-    "tone": "Zoma"
+    "resists": "----D7nns-s--------",
+    "skills": ["Lightning Blade", "Critical Slash", "Die Hard", "Intimidate"],
+    "stats": [681, 313, 0, 620, 23, 14, 14, 19, 18, 12],
+    "talk": "Zoma",
+    "tone": "None"
   },
   "Ganesha": {
-    "atks": [10, 54, 160, 27, 107, 146, 49, 104],
+    "atks": [180, 1, 1, 160, 107, 27, 50, 146, 105],
     "drop": "Long Sword of Onimaru",
     "inherit": "death",
     "lvl": 60,
-    "person": "Vigorous",
+    "price": 21560,
     "race": "Yoma",
-    "resists": "------77---3--ssr1ss",
-    "skills": [
-      "Mazanma",
-      "Mudoon",
-      "Rumble Rush"
-    ],
-    "stats": [523, 236, 20, 11, 11, 13, 9, 13],
-    "tone": "Knight"
+    "resists": "--X--ssR1ss------77",
+    "skills": ["Mazanma", "Mudoon", "Rumble Rush"],
+    "stats": [523, 256, 54, 600, 20, 11, 11, 13, 9, 13],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Garuda": {
-    "atks": [13, 71, 170, 29, 121, 152, 52, 118],
+    "atks": [403, 1, 3, 170, 122, 29, 52, 152, 120],
     "inherit": "force",
     "lvl": 63,
-    "person": "Insightful",
+    "price": 24920,
     "race": "Avian",
-    "resists": "-www--ww-----7sRRsss",
-    "skills": [
-      "Mazanma",
-      "Dekaja",
-      "Wing Flap"
-    ],
-    "stats": [580, 255, 22, 11, 12, 13, 20, 11],
-    "tone": "Old Beast"
+    "resists": "----7s22sss-www--ww",
+    "skills": ["Mazanma", "Dekaja", "Wing Flap"],
+    "stats": [580, 275, 71, 630, 22, 11, 12, 13, 20, 11],
+    "talk": "Old Beast",
+    "tone": "Insightful"
   },
   "Gashadokuro": {
-    "atks": [10, 37, 112, 27, 69, 98, 34, 66],
+    "atks": [91, 1, 1, 112, 69, 27, 34, 98, 67],
     "drop": "Demon Carving Knife",
     "inherit": "death",
     "lvl": 39,
-    "person": "Vigorous",
+    "price": 8960,
     "race": "Jaki",
-    "resists": "---wwwww-sssssssssss",
-    "skills": [
-      "Mudo",
-      "Magnetic Storm"
-    ],
-    "stats": [290, 141, 17, 7, 12, 10, 6, 4],
-    "tone": "Kansai"
+    "resists": "sssssssssss---wwwww",
+    "skills": ["Mudo", "Magnetic Storm"],
+    "stats": [290, 161, 37, 390, 17, 7, 12, 10, 6, 4],
+    "talk": "Kansai",
+    "tone": "Vigorous"
   },
   "Gdon": {
-    "atks": [10, 38, 112, 16, 76, 96, 29, 73],
+    "atks": [91, 1, 1, 112, 77, 16, 29, 96, 74],
     "drop": "Opal",
     "inherit": "expel",
     "lvl": 39,
-    "person": "Vigorous",
+    "price": 8960,
     "race": "Beast",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Hama",
-      "Feral Bite",
-      "Tackle"
-    ],
-    "stats": [280, 98, 17, 4, 7, 9, 13, 6],
-    "tone": "Old Beast"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Hama", "Feral Bite", "Tackle"],
+    "stats": [280, 118, 38, 390, 17, 4, 7, 9, 13, 6],
+    "talk": "Old Beast",
+    "tone": "Vigorous"
   },
   "Ghoul": {
-    "atks": [10, 29, 52, 16, 37, 50, 18, 37],
+    "atks": [23, 1, 1, 52, 38, 16, 19, 50, 37],
     "drop": "Dis-Poison",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 19,
-    "person": "Wild",
+    "price": 2880,
     "race": "Haunt",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Venom Claw",
-      "Venom Bite"
-    ],
-    "stats": [85, 53, 7, 5, 7, 6, 7, 4],
-    "tone": "Lunatic"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Venom Claw", "Venom Bite"],
+    "stats": [85, 73, 29, 190, 7, 5, 7, 6, 7, 4],
+    "talk": "Lunatic",
+    "tone": "Wild"
   },
   "Girimehkala": {
-    "atks": [10, 58, 154, 25, 98, 122, 42, 94],
+    "atks": [167, 1, 1, 154, 99, 25, 43, 122, 95],
     "drop": "Cakra Pot",
     "inherit": "elec",
     "lvl": 53,
-    "person": "Calm",
+    "price": 16800,
     "race": "Jaki",
-    "resists": "RRRRRRRR-33333ssw---",
-    "skills": [
-      "Mazio",
-      "Mazan",
-      "Meteor Fist",
-      "Demon's Allure (Female)*"
-    ],
-    "stats": [452, 195, 24, 10, 10, 8, 12, 6],
-    "tone": "Knight"
+    "resists": "XXXXXssw---22222222",
+    "skills": ["Mazio", "Mazan", "Meteor Fist"],
+    "stats": [452, 215, 58, 530, 24, 10, 10, 8, 12, 6],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Gnome": {
-    "atks": [10, 23, 58, 20, 37, 56, 24, 37],
+    "atks": [27, 1, 1, 58, 37, 20, 24, 56, 37],
     "inherit": "elem",
     "lvl": 20,
-    "person": "Cowardly",
+    "price": 5040,
     "race": "Element",
-    "resists": "-----------D-3sn-sss",
-    "skills": [
-      "Zionga",
-      "Mazio",
-      "Tetraja"
-    ],
-    "stats": [109, 68, 9, 8, 8, 8, 4, 5],
-    "tone": "Elder"
+    "resists": "--D-Xsn-sss--------",
+    "skills": ["Zionga", "Mazio", "Tetraja"],
+    "stats": [109, 88, 23, 200, 9, 8, 8, 8, 4, 5],
+    "talk": "Elder",
+    "tone": "Cowardly"
   },
   "Gogmagog": {
-    "atks": [20, 71, 180, 29, 116, 178, 57, 113],
+    "atks": [450, 2, 2, 180, 118, 29, 57, 178, 114],
     "drop": "Soma",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 67,
-    "person": "Wild",
+    "price": 23520,
     "race": "Jirae",
-    "resists": "-----7-----d--71ns7s",
-    "skills": [
-      "Hellfire",
-      "Hell Thrust",
-      "Wolf Claw",
-      "Rasen"
-    ],
-    "stats": [785, 262, 23, 10, 12, 22, 10, 7],
-    "tone": "Knight"
+    "resists": "--d--71ns7s-----7--",
+    "skills": ["Hellfire", "Hell Thrust", "Wolf Claw"],
+    "stats": [785, 282, 71, 670, 23, 10, 12, 22, 10, 7],
+    "talk": "Knight",
+    "tone": "Wild"
   },
   "Grendel": {
-    "atks": [12, 74, 156, 29, 104, 146, 52, 103],
+    "atks": [256, 1, 2, 156, 105, 29, 53, 146, 104],
     "drop": "Diamond",
     "inherit": "expel",
     "lvl": 59,
-    "person": "Prideful",
+    "price": 18240,
     "race": "Jaki",
-    "resists": "------s----7r7sns777",
-    "skills": [
-      "Hamaon",
-      "Tetrakarn",
-      "Innga"
-    ],
-    "stats": [515, 255, 19, 14, 11, 14, 10, 8],
-    "tone": "Nobleman"
+    "resists": "--7R7sns777------s-",
+    "skills": ["Hamaon", "Tetrakarn", "Innga"],
+    "stats": [515, 275, 74, 590, 19, 14, 11, 14, 10, 8],
+    "talk": "Nobleman",
+    "tone": "Prideful"
   },
   "Guedhe": {
-    "atks": [10, 250, 140, 58, 102, 138, 60, 104],
+    "atks": [139, 1, 1, 140, 103, 58, 60, 138, 104],
     "drop": "Soma",
     "inherit": "death",
     "lvl": 55,
-    "person": "Prideful",
+    "price": 22560,
     "race": "Reaper",
-    "resists": "-1117ssw------nddnns",
-    "skills": [
-      "Mudoon",
-      "Mapsio",
-      "Glacial Blast",
-      "Traesto"
-    ],
-    "stats": [426, 379, 15, 20, 24, 14, 16, 5],
-    "tone": "Elder"
+    "resists": "-----nddnns-1117ssw",
+    "skills": ["Mudoon", "Mapsio", "Glacial Blast", "Traesto"],
+    "stats": [426, 399, 250, 550, 15, 20, 24, 14, 16, 5],
+    "talk": "Elder",
+    "tone": "Prideful"
   },
   "Hachiman": {
-    "atks": [12, 87, 158, 34, 113, 142, 50, 111],
+    "atks": [263, 1, 2, 158, 113, 34, 51, 142, 111],
     "inherit": "elec",
     "lvl": 58,
-    "person": "Calm",
+    "price": 21360,
     "race": "Deity",
-    "resists": "7777s777------snss77",
-    "skills": [
-      "Mazionga",
-      "Mass Genocide",
-      "Untouched Zone"
-    ],
-    "stats": [521, 259, 21, 12, 14, 13, 19, 10],
-    "tone": "Knight"
+    "resists": "-----snss777777s777",
+    "skills": ["Mazionga", "Mass Genocide", "Untouched Zone"],
+    "stats": [521, 279, 87, 580, 21, 12, 14, 13, 19, 10],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Hairy Jack": {
-    "atks": [10, 11, 34, 12, 23, 30, 12, 23],
+    "atks": [11, 1, 1, 34, 24, 12, 12, 30, 24],
     "drop": "Potion",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 11,
-    "person": "Insightful",
+    "price": 2240,
     "race": "Beast",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Dormina",
-      "Scatter"
-    ],
-    "stats": [50, 27, 6, 4, 5, 4, 6, 3],
-    "tone": "Young Beast"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Dormina", "Scatter"],
+    "stats": [50, 47, 11, 110, 6, 4, 5, 4, 6, 3],
+    "talk": "Young Beast",
+    "tone": "Insightful"
   },
   "Hamsa": {
-    "atks": [12, 43, 74, 17, 58, 78, 26, 57],
+    "atks": [64, 1, 2, 74, 59, 17, 27, 78, 58],
     "inherit": "force",
     "lvl": 29,
-    "person": "Insightful",
+    "price": 6000,
     "race": "Avian",
-    "resists": "17-wsss-----1-7n71ss",
-    "skills": [
-      "Zanma",
-      "Dia",
-      "Sukunda",
-      "Mutudi"
-    ],
-    "stats": [155, 82, 8, 6, 7, 10, 12, 7],
-    "tone": "Young Beast"
+    "resists": "---1-7n71ss17-wsss-",
+    "skills": ["Zanma", "Dia", "Sukunda", "Mutudi"],
+    "stats": [155, 102, 43, 290, 8, 6, 7, 10, 12, 7],
+    "talk": "Young Beast",
+    "tone": "Insightful"
   },
   "Hanuman": {
-    "atks": [24, 82, 166, 26, 114, 136, 48, 111],
+    "atks": [577, 2, 4, 166, 115, 26, 48, 136, 112],
     "inherit": "force",
     "lvl": 59,
-    "person": "Vigorous",
+    "price": 20160,
     "race": "Genma",
-    "resists": "---------ss---1n71s-",
-    "skills": [
-      "Zanma",
-      "Mazanma",
-      "Quick Murder",
-      "Tetraja"
-    ],
-    "stats": [515, 232, 24, 12, 10, 9, 18, 11],
-    "tone": "Nobleman"
+    "resists": "ss---1n71s---------",
+    "skills": ["Zanma", "Mazanma", "Quick Murder", "Tetraja"],
+    "stats": [515, 252, 82, 590, 24, 12, 10, 9, 18, 11],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Haoma": {
-    "atks": [12, 63, 132, 43, 89, 122, 49, 89],
-    "inherit": "recovery",
+    "atks": [187, 1, 2, 132, 90, 43, 50, 122, 90],
+    "inherit": "reca",
     "lvl": 51,
-    "person": "Insightful",
+    "price": 18000,
     "race": "Tree",
-    "resists": "-777777--3-7--sRRsss",
-    "skills": [
-      "Hapirma",
-      "Mediarama",
-      "Tetraja"
-    ],
-    "stats": [345, 277, 15, 15, 18, 10, 8, 9],
-    "tone": "Cynic"
+    "resists": "X-7--s22sss-777777-",
+    "skills": ["Hapirma", "Mediarama", "Tetraja"],
+    "stats": [345, 297, 63, 510, 15, 15, 18, 10, 8, 9],
+    "talk": "Cynic",
+    "tone": "Insightful"
   },
   "Hare of Inaba": {
-    "atks": [10, 48, 112, 34, 101, 110, 42, 103],
-    "inherit": "ailment",
+    "atks": [91, 1, 1, 112, 101, 34, 43, 110, 103],
+    "inherit": "recb",
     "lvl": 50,
-    "person": "Sly",
+    "price": 18480,
     "race": "UMA",
-    "resists": "-www--ww-----7sRRsss",
-    "skills": [
-      "Lucky Step",
-      "Liftoma"
-    ],
-    "stats": [160, 225, 6, 12, 14, 5, 20, 20],
-    "tone": "Boy"
+    "resists": "----7s22sss-www--ww",
+    "skills": ["Lucky Step", "Liftoma"],
+    "stats": [160, 245, 48, 500, 6, 12, 14, 5, 20, 20],
+    "talk": "Boy",
+    "tone": "Sly"
   },
   "Hariti": {
-    "atks": [10, 58, 108, 30, 79, 98, 35, 78],
-    "inherit": "recovery",
+    "atks": [85, 1, 1, 108, 79, 30, 35, 98, 78],
+    "inherit": "reca",
     "lvl": 40,
-    "person": "Impatient",
+    "price": 13400,
     "race": "Lady",
-    "resists": "------------771n11ss",
-    "skills": [
-      "Diarahan",
-      "Lullaby",
-      "Chi Blast"
-    ],
-    "stats": [255, 155, 14, 8, 13, 9, 14, 9],
-    "tone": "Noblewoman"
+    "resists": "---771n11ss--------",
+    "skills": ["Diarahan", "Lullaby", "Chi Blast"],
+    "stats": [255, 175, 58, 400, 14, 8, 13, 9, 14, 9],
+    "talk": "Noblewoman",
+    "tone": "Impatient"
   },
   "Heimdall": {
-    "atks": [23, 87, 166, 36, 121, 150, 52, 119],
+    "atks": [481, 2, 3, 166, 122, 36, 53, 150, 120],
     "inherit": "ice",
     "lvl": 63,
-    "person": "Calm",
+    "price": 24920,
     "race": "Genma",
-    "resists": "------------771n11ss",
-    "skills": [
-      "Mabufula",
-      "Tetrakarn",
-      "Judgement"
-    ],
-    "stats": [532, 289, 20, 12, 15, 12, 20, 10],
-    "tone": "Nobleman"
+    "resists": "---771n11ss--------",
+    "skills": ["Mabufula", "Tetrakarn", "Judgement"],
+    "stats": [532, 309, 87, 630, 20, 12, 15, 12, 20, 10],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Hinoenma": {
-    "atks": [10, 21, 74, 23, 50, 64, 25, 49],
+    "atks": [42, 1, 1, 74, 51, 23, 25, 64, 50],
     "drop": "Opal",
     "inherit": "ice",
     "lvl": 27,
-    "person": "Impatient",
+    "price": 5280,
     "race": "Night",
-    "resists": "------77---3--ssr1ss",
-    "skills": [
-      "Bufu",
-      "Mudo",
-      "Insanity Eyes"
-    ],
-    "stats": [125, 92, 10, 7, 10, 5, 7, 5],
-    "tone": "Noblewoman"
+    "resists": "--X--ssR1ss------77",
+    "skills": ["Bufu", "Mudo", "Insanity Eyes"],
+    "stats": [125, 112, 21, 270, 10, 7, 10, 5, 7, 5],
+    "talk": "Noblewoman",
+    "tone": "Impatient"
   },
   "Hippou": {
-    "atks": [10, 2, 18, 11, 15, 18, 8, 15],
+    "atks": [4, 1, 1, 18, 16, 11, 8, 18, 16],
     "drop": "Tonkourapan",
     "inherit": "fire",
     "lvl": 6,
-    "person": "Impatient",
+    "price": 920,
     "race": "Raptor",
-    "resists": "17-wsss--R3--n7n71ss",
-    "skills": [
-      "Agi",
-      "Wing Flap"
-    ],
-    "stats": [30, 16, 3, 3, 5, 3, 6, 3],
-    "tone": "Young Beast"
+    "resists": "2X--n7n71ss17-wsss-",
+    "skills": ["Agi", "Wing Flap"],
+    "stats": [30, 36, 2, 60, 3, 3, 5, 3, 6, 3],
+    "talk": "Young Beast",
+    "tone": "Impatient"
   },
   "Holawaka": {
-    "atks": [10, 36, 100, 25, 76, 90, 30, 75],
+    "atks": [74, 1, 1, 100, 77, 25, 31, 90, 76],
     "drop": "Cakra Chip",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 39,
-    "person": "Cowardly",
+    "price": 8960,
     "race": "Flight",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Peck",
-      "Dekaja",
-      "Liftoma"
-    ],
-    "stats": [190, 130, 11, 6, 11, 6, 14, 8],
-    "tone": "Old Beast"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Peck", "Dekaja", "Liftoma"],
+    "stats": [190, 150, 36, 390, 11, 6, 11, 6, 14, 8],
+    "talk": "Old Beast",
+    "tone": "Cowardly"
   },
   "Hooligan": {
-    "atks": [10, 0, 22, 10, 19, 24, 11, 20],
+    "atks": [5, 1, 1, 22, 19, 10, 11, 24, 20],
     "drop": "Tokarev",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 8,
-    "person": "Wild",
+    "price": 1000,
     "race": "Foul",
-    "resists": "----------------n---",
-    "skills": [
-      "Jumping Knee",
-      "Lucky Trigger*"
-    ],
-    "stats": [35, 20, 3, 4, 4, 4, 6, 4],
-    "tone": "Kansai"
+    "resists": "------7n-----------",
+    "skills": ["Jumping Knee"],
+    "stats": [35, 40, 0, 80, 3, 4, 4, 4, 6, 4],
+    "talk": "Kansai",
+    "tone": "Wild"
   },
   "Hsing-Hsing": {
-    "atks": [10, 32, 86, 17, 61, 74, 30, 61],
+    "atks": [56, 1, 1, 86, 62, 17, 31, 74, 62],
     "drop": "Topaz",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 32,
-    "person": "Sly",
+    "price": 7840,
     "race": "Beast",
-    "resists": "7------7-w--11sn-sss",
-    "skills": [
-      "Magnetic Storm",
-      "Mutudi"
-    ],
-    "stats": [152, 108, 11, 11, 6, 5, 10, 6],
-    "tone": "Kansai"
+    "resists": "w--11sn-sss7------7",
+    "skills": ["Magnetic Storm", "Mutudi"],
+    "stats": [152, 128, 32, 320, 11, 11, 6, 5, 10, 6],
+    "talk": "Kansai",
+    "tone": "Sly"
   },
   "Huoniao": {
-    "atks": [12, 71, 156, 40, 122, 160, 57, 122],
+    "atks": [256, 1, 2, 156, 122, 40, 57, 160, 122],
     "drop": "Kin-Tan",
     "inherit": "fire",
     "lvl": 66,
-    "person": "Calm",
+    "price": 23240,
     "race": "Raptor",
-    "resists": "1s-wsss--d3---1s71ss",
-    "skills": [
-      "Hellfire",
-      "Shipani"
-    ],
-    "stats": [455, 328, 12, 13, 17, 14, 18, 9],
-    "tone": "Old Beast"
+    "resists": "dX---1s71ss1s-wsss-",
+    "skills": ["Hellfire", "Shipani"],
+    "stats": [455, 348, 71, 660, 12, 13, 17, 14, 18, 9],
+    "talk": "Old Beast",
+    "tone": "Calm"
   },
   "Hypnos": {
-    "atks": [10, 40, 118, 46, 89, 118, 49, 91],
+    "atks": [101, 1, 1, 118, 90, 46, 50, 118, 92],
     "drop": "Heat Whip",
     "inherit": "death",
     "lvl": 51,
-    "person": "Calm",
+    "price": 16320,
     "race": "Night",
-    "resists": "wwwwwwww-dDdDDnnnnnn",
-    "skills": [
-      "Mudola",
-      "Dormina",
-      "Makafuji"
-    ],
-    "stats": [228, 291, 8, 16, 19, 8, 10, 7],
-    "tone": "Nobleman"
+    "resists": "dDdDDnnnnnnwwwwwwww",
+    "skills": ["Mudola", "Dormina", "Makafuji"],
+    "stats": [228, 311, 40, 510, 8, 16, 19, 8, 10, 7],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Ictinike": {
-    "atks": [10, 38, 72, 18, 51, 64, 26, 51],
+    "atks": [40, 1, 1, 72, 51, 18, 26, 64, 51],
     "inherit": "elec",
     "lvl": 26,
-    "person": "Insightful",
+    "price": 5520,
     "race": "Genma",
-    "resists": "---------nw---7nss-s",
-    "skills": [
-      "Mazio",
-      "Sukunda",
-      "Charmdi"
-    ],
-    "stats": [128, 86, 10, 9, 7, 6, 9, 5],
-    "tone": "Nobleman"
+    "resists": "nw---7nss-s--------",
+    "skills": ["Mazio", "Sukunda", "Charmdi"],
+    "stats": [128, 106, 38, 260, 10, 9, 7, 6, 9, 5],
+    "talk": "Nobleman",
+    "tone": "Insightful"
   },
   "Illuyanka": {
-    "atks": [12, 91, 160, 42, 103, 138, 51, 101],
-    "inherit": "quad",
+    "atks": [269, 1, 2, 160, 105, 42, 52, 138, 102],
+    "inherit": "temp",
     "lvl": 57,
-    "person": "Wild",
+    "price": 21120,
     "race": "Dragon",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Tackle",
-      "Sonic Boom"
-    ],
-    "stats": [527, 293, 23, 13, 18, 12, 11, 11],
-    "tone": "Old Beast"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Tackle", "Sonic Boom"],
+    "stats": [527, 313, 91, 570, 23, 13, 18, 12, 11, 11],
+    "talk": "Old Beast",
+    "tone": "Wild"
   },
   "Incubus": {
-    "atks": [10, 27, 86, 28, 62, 86, 32, 62],
+    "atks": [56, 1, 1, 86, 62, 28, 32, 86, 62],
     "drop": "Emerald",
     "inherit": "ice",
     "lvl": 34,
-    "person": "Calm",
+    "price": 8160,
     "race": "Night",
-    "resists": "-771-111-wnn---7d7--",
-    "skills": [
-      "Bufula",
-      "Zanma",
-      "Shibaboo",
-      "Demon's Allure (Female)*"
-    ],
-    "stats": [177, 129, 9, 8, 12, 9, 8, 5],
-    "tone": "Cynic"
+    "resists": "wnn---7d7---771-111",
+    "skills": ["Bufula", "Zanma", "Shibaboo"],
+    "stats": [177, 149, 27, 340, 9, 8, 12, 9, 8, 5],
+    "talk": "Cynic",
+    "tone": "Calm"
   },
   "Inferno": {
-    "atks": [10, 16, 70, 26, 47, 64, 26, 47],
+    "atks": [38, 1, 1, 70, 48, 26, 26, 64, 47],
     "drop": "A-Kinju",
     "inherit": "fire",
     "lvl": 26,
-    "person": "Vigorous",
+    "price": 5160,
     "race": "Spirit",
-    "resists": "---------D----ss11ss",
-    "skills": [
-      "Makafuji",
-      "Flare Rush",
-      "Fire Wall",
-      "Paral Eyes*"
-    ],
-    "stats": [121, 142, 9, 8, 11, 6, 6, 3],
-    "tone": "Lunatic"
+    "resists": "D----ss11ss--------",
+    "skills": ["Makafuji", "Flare Rush", "Fire Wall"],
+    "stats": [121, 153, 16, 260, 9, 8, 11, 6, 6, 3],
+    "talk": "Lunatic",
+    "tone": "Vigorous"
   },
   "Inti": {
-    "atks": [10, 66, 114, 23, 80, 100, 41, 79],
+    "atks": [95, 1, 1, 114, 80, 23, 41, 100, 80],
     "inherit": "elec",
     "lvl": 41,
-    "person": "Impatient",
+    "price": 13600,
     "race": "Deity",
-    "resists": "7777s777------snss77",
-    "skills": [
-      "Mazio",
-      "Mazan",
-      "Diarama"
-    ],
-    "stats": [282, 164, 16, 14, 8, 9, 13, 8],
-    "tone": "Nobleman"
+    "resists": "-----snss777777s777",
+    "skills": ["Mazio", "Mazan", "Diarama"],
+    "stats": [282, 184, 66, 410, 16, 14, 8, 9, 13, 8],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Itsumade": {
-    "atks": [10, 20, 64, 19, 49, 58, 22, 48],
+    "atks": [33, 1, 1, 64, 49, 19, 22, 58, 48],
     "drop": "Garnet",
     "inherit": "psy",
     "lvl": 24,
-    "person": "Impatient",
+    "price": 4920,
     "race": "Raptor",
-    "resists": "17-wsss-----1-7n71ss",
-    "skills": [
-      "Zan",
-      "Psio",
-      "Paral Eyes*"
-    ],
-    "stats": [101, 73, 8, 6, 8, 5, 10, 4],
-    "tone": "Young Man"
+    "resists": "---1-7n71ss17-wsss-",
+    "skills": ["Zan", "Psio"],
+    "stats": [101, 93, 20, 240, 8, 6, 8, 5, 10, 4],
+    "talk": "Young Man",
+    "tone": "Impatient"
   },
   "Ixtab": {
-    "atks": [12, 213, 56, 29, 39, 54, 26, 40],
+    "atks": [39, 1, 2, 56, 40, 29, 26, 54, 41],
     "drop": "Kensaku",
     "inherit": "death",
     "lvl": 21,
-    "person": "Insightful",
+    "price": 5520,
     "race": "Reaper",
-    "resists": "-----7--------snr1s7",
-    "skills": [
-      "Mudola",
-      "Brain Burst",
-      "Lullaby",
-      "Liftoma"
-    ],
-    "stats": [91, 89, 7, 10, 12, 6, 6, 5],
-    "tone": "Noblewoman"
+    "resists": "-----snR1s7-----7--",
+    "skills": ["Mudola", "Brain Burst", "Lullaby", "Liftoma"],
+    "stats": [91, 109, 213, 210, 7, 10, 12, 6, 6, 5],
+    "talk": "Noblewoman",
+    "tone": "Insightful"
   },
   "Jack Frost": {
-    "atks": [10, 13, 40, 16, 29, 40, 15, 29],
+    "atks": [14, 1, 1, 40, 30, 16, 15, 40, 30],
     "drop": "Cakra Drop",
     "inherit": "ice",
     "lvl": 15,
-    "person": "Calm",
+    "price": 2560,
     "race": "Fairy",
-    "resists": "---------3D-77-s-7ss",
-    "skills": [
-      "Bufu",
-      "Mabufu",
-      "Dia"
-    ],
-    "stats": [60, 41, 5, 4, 7, 5, 5, 6],
-    "tone": "Boy"
+    "resists": "XD-77-s-7ss--------",
+    "skills": ["Bufu", "Mabufu", "Dia"],
+    "stats": [60, 61, 13, 150, 5, 4, 7, 5, 5, 6],
+    "talk": "Boy",
+    "tone": "Calm"
   },
   "Jambavan": {
-    "atks": [10, 45, 86, 21, 56, 88, 30, 54],
+    "atks": [56, 1, 1, 86, 57, 21, 30, 88, 55],
     "inherit": "fire",
     "lvl": 31,
-    "person": "Sly",
+    "price": 8320,
     "race": "Genma",
-    "resists": "------------s-7nw77n",
-    "skills": [
-      "Agi",
-      "Shuffler",
-      "Rakunda"
-    ],
-    "stats": [220, 96, 12, 6, 9, 13, 6, 6],
-    "tone": "Nobleman"
+    "resists": "---s-7nw77n--------",
+    "skills": ["Agi", "Shuffle", "Rakunda"],
+    "stats": [220, 116, 45, 310, 12, 6, 9, 13, 6, 6],
+    "talk": "Nobleman",
+    "tone": "Sly"
   },
   "Jarilo": {
-    "atks": [12, 62, 126, 45, 92, 114, 43, 91],
+    "atks": [171, 1, 2, 126, 92, 45, 43, 114, 91],
     "inherit": "psy",
     "lvl": 48,
-    "person": "Calm",
+    "price": 15400,
     "race": "Enigma",
-    "resists": "77777777------sR7sss",
-    "skills": [
-      "Psio",
-      "Mapsio",
-      "Hold in my Arms",
-      "Psycho Blast"
-    ],
-    "stats": [314, 243, 15, 10, 20, 9, 15, 8],
-    "tone": "Nobleman"
+    "resists": "-----s27sss77777777",
+    "skills": ["Psio", "Mapsi", "Hold in my Arms", "Psycho Blast"],
+    "stats": [314, 263, 62, 480, 15, 10, 20, 9, 15, 8],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Jeanne D'Arc": {
-    "atks": [20, 0, 134, 49, 100, 128, 55, 101],
-    "inherit": "none",
+    "atks": [256, 2, 2, 134, 101, 49, 55, 128, 102],
+    "inherit": "hero",
     "lvl": 54,
-    "person": "None",
+    "price": 21360,
     "race": "Hero",
-    "resists": "-----w--------nnsnss",
-    "skills": [
-      "Virgin's Prayer",
-      "Mist Slash",
-      "Penta Wall",
-      "Hold in my Arms"
-    ],
-    "stats": [336, 329, 13, 18, 20, 10, 13, 15],
-    "tone": "Zoma"
+    "resists": "-----nnsnss-----w--",
+    "skills": ["Virgin's Prayer", "Mist Slash", "Penta Wall", "Hold in my Arms"],
+    "stats": [336, 349, 0, 540, 13, 18, 20, 10, 13, 15],
+    "talk": "Zoma",
+    "tone": "None"
   },
   "Jubokko": {
-    "atks": [10, 6, 28, 15, 22, 28, 11, 21],
+    "atks": [8, 1, 1, 28, 22, 15, 11, 28, 21],
     "drop": "Dis-Poison",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 10,
-    "person": "Insightful",
+    "price": 2160,
     "race": "Wood",
-    "resists": "-777777--3-7--s1nsss",
-    "skills": [
-      "Magnetic Storm",
-      "Venom Claw"
-    ],
-    "stats": [42, 27, 4, 3, 7, 4, 5, 4],
-    "tone": "Knight"
+    "resists": "X-7--s1nsss-777777-",
+    "skills": ["Magnetic Storm", "Venom Claw"],
+    "stats": [42, 47, 6, 100, 4, 3, 7, 4, 5, 4],
+    "talk": "Knight",
+    "tone": "Insightful"
   },
   "Kabuso": {
-    "atks": [1, 7, 18, 7, 15, 18, 7, 15],
+    "atks": [3, 0, 1.8, 18, 16, 7, 8, 18, 16],
     "drop": "Potion",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 6,
-    "person": "Cowardly",
+    "price": 920,
     "race": "Beast",
-    "resists": "---------D----ss11ss",
-    "skills": [
-      "Dia",
-      "Escape*"
-    ],
-    "stats": [30, 13, 3, 3, 3, 5, 5, 6],
-    "tone": "Boy"
+    "resists": "D----ss11ss--------",
+    "skills": ["Dia"],
+    "stats": [30, 33, 7, 60, 3, 3, 3, 3, 5, 6],
+    "talk": "Boy",
+    "tone": "Cowardly"
   },
   "Kali": {
-    "atks": [24, 101, 212, 43, 148, 184, 61, 143],
+    "atks": [924, 2, 4, 212, 148, 43, 61, 184, 143],
     "inherit": "death",
     "lvl": 76,
-    "person": "Impatient",
+    "price": 35840,
     "race": "Lady",
-    "resists": "-----7--------snr1s7",
-    "skills": [
-      "Mudoon",
-      "Sexy Dance",
-      "Chi Blast",
-      "Mass Genocide"
-    ],
-    "stats": [905, 376, 30, 11, 19, 16, 24, 12],
-    "tone": "Noblewoman"
+    "resists": "-----snR1s7-----7--",
+    "skills": ["Mudoon", "Sexy Dance", "Chi Blast", "Mass Genocide"],
+    "stats": [905, 396, 101, 760, 30, 11, 19, 16, 24, 12],
+    "talk": "Noblewoman",
+    "tone": "Impatient"
   },
   "Kama": {
-    "atks": [20, 79, 152, 60, 109, 144, 55, 108],
+    "atks": [326, 2, 2, 152, 109, 60, 55, 144, 109],
     "inherit": "death",
     "lvl": 60,
-    "person": "Prideful",
+    "price": 25760,
     "race": "Enigma",
-    "resists": "----ww---ssssssn1sss",
-    "skills": [
-      "Mudoon",
-      "Judgement",
-      "Penta Wall"
-    ],
-    "stats": [447, 380, 16, 13, 27, 12, 13, 11],
-    "tone": "Nobleman"
+    "resists": "ssssssn1sss----ww--",
+    "skills": ["Mudoon", "Judgement", "Penta Wall"],
+    "stats": [447, 400, 79, 600, 16, 13, 27, 12, 13, 11],
+    "talk": "Nobleman",
+    "tone": "Prideful"
   },
   "Kamapua'a": {
-    "atks": [10, 51, 90, 19, 62, 92, 32, 61],
-    "inherit": "ailment",
+    "atks": [61, 1, 1, 90, 63, 19, 32, 92, 62],
+    "inherit": "recb",
     "lvl": 34,
-    "person": "Insightful",
+    "price": 8960,
     "race": "Avatar",
-    "resists": "-----------n777ns7ss",
-    "skills": [
-      "Shibaboo",
-      "Happy Dance",
-      "Makakaja",
-      "Metamodi"
-    ],
-    "stats": [221, 105, 11, 7, 8, 12, 7, 11],
-    "tone": "Boy"
+    "resists": "--n777ns7ss--------",
+    "skills": ["Shibaboo", "Happy Dance", "Makakaja", "Metamodi"],
+    "stats": [221, 125, 51, 340, 11, 7, 8, 12, 7, 11],
+    "talk": "Boy",
+    "tone": "Insightful"
   },
   "Kanaloa": {
-    "atks": [7, 76, 152, 39, 103, 148, 56, 102],
+    "atks": [568, 0, 7, 152, 104, 39, 56, 148, 103],
     "drop": "Beam Whip",
     "inherit": "ice",
     "lvl": 57,
-    "person": "Calm",
+    "price": 21120,
     "race": "Vile",
-    "resists": "-777777--3-7--sRRsss",
-    "skills": [
-      "Glacial Blast",
-      "Thunder Break",
-      "Chin Lock*"
-    ],
-    "stats": [542, 293, 19, 15, 16, 17, 12, 9],
-    "tone": "Knight"
+    "resists": "X-7--s22sss-777777-",
+    "skills": ["Glacial Blast", "Thunder Break"],
+    "stats": [542, 313, 76, 570, 19, 15, 16, 17, 12, 9],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Kanbari": {
-    "atks": [2, 34, 66, 26, 48, 60, 23, 47],
-    "inherit": "ailment",
+    "atks": [39, 0, 2.2, 66, 48, 26, 23, 60, 47],
+    "inherit": "recb",
     "lvl": 25,
-    "person": "Sly",
+    "price": 5760,
     "race": "Enigma",
-    "resists": "7777--77-wR7771n-177",
-    "skills": [
-      "Shuff",
-      "Rest",
-      "Me Patra"
-    ],
-    "stats": [104, 86, 8, 5, 12, 5, 6, 12],
-    "tone": "Elder"
+    "resists": "w27771n-1777777--77",
+    "skills": ["Shuff", "Rest", "Me Patra"],
+    "stats": [104, 106, 34, 250, 8, 5, 12, 5, 6, 12],
+    "talk": "Elder",
+    "tone": "Sly"
   },
   "Kanseiteikun": {
-    "atks": [36, 0, 178, 42, 119, 174, 70, 120],
-    "inherit": "none",
+    "atks": [990, 3, 6, 178, 120, 42, 71, 174, 120],
+    "inherit": "hero",
     "lvl": 66,
-    "person": "None",
+    "price": 29680,
     "race": "Hero",
-    "resists": "-------------rrnsrss",
-    "skills": [
-      "Empty Wave",
-      "Macha's Strike",
-      "Untouched Zone",
-      "Sonic Boom"
-    ],
-    "stats": [757, 407, 23, 24, 15, 21, 13, 10],
-    "tone": "Zoma"
+    "resists": "----RRnsRss--------",
+    "skills": ["Empty Wave", "Macha's Strike", "Untouched Zone", "Sonic Boom"],
+    "stats": [757, 427, 0, 660, 23, 24, 15, 21, 13, 10],
+    "talk": "Zoma",
+    "tone": "None"
   },
   "Kartikeya": {
-    "atks": [24, 103, 176, 33, 129, 146, 50, 125],
+    "atks": [646, 2, 4, 176, 130, 33, 51, 146, 127],
     "inherit": "fire",
     "lvl": 63,
-    "person": "Wild",
+    "price": 26600,
     "race": "Fury",
-    "resists": "-------s---r--snss77",
-    "skills": [
-      "Blight",
-      "Mass Genocide",
-      "Cauterizing Fist"
-    ],
-    "stats": [580, 272, 25, 11, 14, 10, 28, 7],
-    "tone": "Boy"
+    "resists": "--R--snss77-------s",
+    "skills": ["Blight", "Mass Genocide", "Cauterizing Fist"],
+    "stats": [580, 292, 103, 630, 25, 11, 14, 10, 28, 7],
+    "talk": "Boy",
+    "tone": "Wild"
   },
   "Katakirauwa": {
-    "atks": [10, 17, 44, 16, 34, 42, 15, 34],
+    "atks": [17, 1, 1, 44, 35, 16, 16, 42, 35],
     "drop": "Onyx",
     "inherit": "death",
     "lvl": 17,
-    "person": "Impatient",
+    "price": 2720,
     "race": "Beast",
-    "resists": "---------3----s11s11",
-    "skills": [
-      "Mudo",
-      "Horseshoe*"
-    ],
-    "stats": [60, 45, 5, 4, 7, 4, 7, 7],
-    "tone": "Old Beast"
+    "resists": "X----s11s11--------",
+    "skills": ["Mudo"],
+    "stats": [60, 65, 17, 170, 5, 4, 7, 4, 7, 7],
+    "talk": "Old Beast",
+    "tone": "Impatient"
   },
   "Khonsu": {
-    "atks": [10, 25, 48, 18, 32, 46, 18, 32],
+    "atks": [20, 1, 1, 48, 33, 18, 18, 46, 33],
     "inherit": "elec",
     "lvl": 17,
-    "person": "Vigorous",
+    "price": 2880,
     "race": "Genma",
-    "resists": "7------7-w--11sn-sss",
-    "skills": [
-      "Zio",
-      "Psi",
-      "Sukukaja"
-    ],
-    "stats": [78, 51, 7, 5, 8, 6, 5, 5],
-    "tone": "Nobleman"
+    "resists": "w--11sn-sss7------7",
+    "skills": ["Zio", "Psi", "Sukukaja"],
+    "stats": [78, 71, 25, 170, 7, 5, 8, 6, 5, 5],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Kijimuna": {
-    "atks": [10, 7, 24, 9, 20, 22, 9, 19],
+    "atks": [6, 1, 1, 24, 20, 9, 9, 22, 20],
     "drop": "Amethyst",
     "inherit": "psy",
     "lvl": 8,
-    "person": "Insightful",
+    "price": 1000,
     "race": "Fairy",
-    "resists": "---------3----s11s11",
-    "skills": [
-      "Psi",
-      "Shibaboo",
-      "Rest"
-    ],
-    "stats": [35, 18, 4, 3, 4, 3, 6, 5],
-    "tone": "Young Man"
+    "resists": "X----s11s11--------",
+    "skills": ["Psi", "Shibaboo", "Rest"],
+    "stats": [35, 38, 7, 80, 4, 3, 4, 3, 6, 5],
+    "talk": "Young Man",
+    "tone": "Insightful"
   },
   "Kikimora": {
-    "atks": [1, 10, 32, 17, 25, 34, 15, 26],
+    "atks": [9, 0, 1.8, 32, 26, 17, 16, 34, 27],
     "drop": "Cakra Drop",
     "inherit": "psy",
     "lvl": 13,
-    "person": "Cowardly",
+    "price": 2400,
     "race": "Night",
-    "resists": "7777ssss---w-7s71---",
-    "skills": [
-      "Psi",
-      "Hapirma",
-      "Lullaby"
-    ],
-    "stats": [44, 40, 3, 6, 7, 4, 5, 5],
-    "tone": "Lady"
+    "resists": "--w-7s71---7777ssss",
+    "skills": ["Psi", "Hapirma", "Lullaby"],
+    "stats": [44, 60, 10, 130, 3, 6, 7, 4, 5, 5],
+    "talk": "Lady",
+    "tone": "Cowardly"
   },
   "Kikuri-Hime": {
-    "atks": [10, 52, 78, 31, 57, 78, 33, 57],
-    "inherit": "recovery",
+    "atks": [47, 1, 1, 78, 57, 31, 33, 78, 58],
+    "inherit": "reca",
     "lvl": 31,
-    "person": "Mild",
+    "price": 8800,
     "race": "Lady",
-    "resists": "----ww---ssssssn1sss",
-    "skills": [
-      "Mabufu",
-      "Mediarama",
-      "Marin Karin",
-      "Recarm"
-    ],
-    "stats": [148, 136, 8, 11, 13, 8, 7, 8],
-    "tone": "Noblewoman"
+    "resists": "ssssssn1sss----ww--",
+    "skills": ["Mabufu", "Mediarama", "Marin Karin", "Recarm"],
+    "stats": [148, 156, 52, 310, 8, 11, 13, 8, 7, 8],
+    "talk": "Noblewoman",
+    "tone": "Mild"
   },
   "Killer Chopper": {
-    "atks": [10, 0, 50, 11, 36, 52, 21, 36],
+    "atks": [21, 1, 1, 50, 37, 11, 21, 52, 37],
     "drop": "S-High",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 19,
-    "person": "Wild",
+    "price": 2880,
     "race": "Foul",
-    "resists": "----------------n---",
-    "skills": [
-      "Happy Trigger*"
-    ],
-    "stats": [85, 50, 6, 7, 4, 7, 6, 6],
-    "tone": "Lunatic"
+    "resists": "------7n-----------",
+    "skills": [],
+    "stats": [85, 70, 0, 190, 6, 7, 4, 7, 6, 6],
+    "talk": "Lunatic",
+    "tone": "Wild"
   },
   "Knocker": {
-    "atks": [10, 1, 18, 7, 15, 18, 7, 15],
+    "atks": [3, 1, 1, 14, 12, 9, 7, 14, 12],
     "drop": "A-Chinsin",
     "inherit": "psy",
     "lvl": 4,
-    "person": "Impatient",
+    "price": 840,
     "race": "Jirae",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Psi",
-      "Sukukaja",
-      "Happy Dance",
-      "Escape*"
-    ],
-    "stats": [27, 11, 3, 3, 4, 3, 5, 3],
-    "tone": "Boy"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Psi", "Sukukaja", "Happy Dance"],
+    "stats": [27, 31, 1, 40, 3, 3, 4, 3, 5, 3],
+    "talk": "Boy",
+    "tone": "Impatient"
   },
   "Koropokkuru": {
-    "atks": [1, 7, 28, 10, 20, 24, 24, 20],
+    "atks": [7, 0, 1.8, 28, 21, 10, 11, 24, 20],
     "drop": "Potion",
     "inherit": "elec",
     "lvl": 9,
-    "person": "Insightful",
+    "price": 1040,
     "race": "Jirae",
-    "resists": "-----7-----1--ssss11",
-    "skills": [
-      "Zio",
-      "Dia",
-      "Escape*"
-    ],
-    "stats": [40, 22, 5, 4, 4, 3, 5, 5],
-    "tone": "Elder"
+    "resists": "--1--ssss11-----7--",
+    "skills": ["Zio", "Dia"],
+    "stats": [40, 42, 7, 90, 5, 4, 4, 3, 5, 5],
+    "talk": "Elder",
+    "tone": "Cowardly"
   },
   "Kresnik": {
-    "atks": [12, 71, 130, 34, 93, 118, 41, 92],
+    "atks": [181, 1, 2, 130, 94, 34, 42, 118, 92],
     "inherit": "fire",
     "lvl": 50,
-    "person": "Impatient",
+    "price": 17760,
     "race": "Genma",
-    "resists": "-----w--------nnsnss",
-    "skills": [
-      "Agilao",
-      "Maragion",
-      "Psycho Blast",
-      "Paraladi"
-    ],
-    "stats": [326, 212, 15, 9, 15, 9, 12, 14],
-    "tone": "Nobleman"
+    "resists": "-----nnsnss-----w--",
+    "skills": ["Agilao", "Maragion", "Psycho Blast", "Paraladi"],
+    "stats": [326, 232, 71, 500, 15, 9, 15, 9, 12, 14],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Kudlak": {
-    "atks": [12, 70, 118, 30, 87, 116, 41, 86],
+    "atks": [151, 1, 2, 118, 88, 30, 41, 116, 87],
     "drop": "Pearl",
     "inherit": "ice",
     "lvl": 47,
-    "person": "Wild",
+    "price": 12800,
     "race": "Haunt",
-    "resists": "-771-111-wnn---7d7--",
-    "skills": [
-      "Bufula",
-      "Life Drain*"
-    ],
-    "stats": [286, 187, 12, 9, 13, 11, 13, 6],
-    "tone": "Cynic"
+    "resists": "wnn---7d7---771-111",
+    "skills": ["Bufula"],
+    "stats": [296, 207, 70, 470, 12, 9, 13, 11, 13, 6],
+    "talk": "Cynic",
+    "tone": "Wild"
   },
   "Kukunochi": {
-    "atks": [2, 49, 108, 35, 77, 102, 39, 76],
+    "atks": [96, 0, 2.2, 108, 77, 35, 40, 102, 77],
     "inherit": "psy",
     "lvl": 42,
-    "person": "Cowardly",
+    "price": 13000,
     "race": "Tree",
-    "resists": "-777777--3-7--s1nsss",
-    "skills": [
-      "Psio",
-      "Tetrakarn",
-      "Rakunda",
-      "Metamodi"
-    ],
-    "stats": [245, 191, 12, 11, 15, 9, 9, 9],
-    "tone": "Knight"
+    "resists": "X-7--s1nsss-777777-",
+    "skills": ["Psio", "Tetrakarn", "Tarunda", "Metamodi"],
+    "stats": [245, 211, 49, 420, 12, 11, 15, 9, 9, 9],
+    "talk": "Knight",
+    "tone": "Cowardly"
   },
   "Kusi Mitama": {
-    "atks": [10, 45, 74, 27, 54, 74, 28, 54],
-    "inherit": "none",
+    "atks": [42, 1, 1, 74, 55, 27, 28, 74, 55],
+    "inherit": "mitama",
     "lvl": 30,
-    "person": "Prideful",
+    "price": 7520,
     "race": "Mitama",
-    "resists": "wwwwwwww-ssssssRRsss",
-    "skills": [
-      "Marin Karin",
-      "Makafuji"
-    ],
-    "stats": [128, 110, 7, 7, 12, 7, 7, 7],
-    "tone": "Knight"
+    "resists": "ssssss22ssswwwwwwww",
+    "skills": ["Marin Karin", "Makafuji"],
+    "stats": [128, 130, 45, 300, 7, 7, 12, 7, 7, 7],
+    "talk": "Knight",
+    "tone": "Prideful"
   },
   "Kwancha": {
-    "atks": [10, 35, 102, 18, 63, 94, 30, 60],
+    "atks": [77, 1, 1, 102, 63, 18, 30, 94, 61],
     "drop": "A-Kakusei",
     "inherit": "expel",
     "lvl": 35,
-    "person": "Vigorous",
+    "price": 8320,
     "race": "Jirae",
-    "resists": "------77---3--ssr1ss",
-    "skills": [
-      "Hama",
-      "Diarama",
-      "Flare Rush"
-    ],
-    "stats": [272, 98, 16, 5, 8, 12, 6, 5],
-    "tone": "Young Man"
+    "resists": "--X--ssR1ss------77",
+    "skills": ["Hanma", "Diarama", "Flare Rush"],
+    "stats": [272, 118, 35, 350, 16, 5, 8, 12, 6, 5],
+    "talk": "Young Man",
+    "tone": "Vigorous"
   },
   "Lailah": {
-    "atks": [1, 68, 116, 37, 81, 110, 45, 81],
+    "atks": [85, 0, 1.8, 116, 82, 37, 46, 110, 83],
     "inherit": "ice",
     "lvl": 45,
-    "person": "Mild",
+    "price": 14600,
     "race": "Herald",
-    "resists": "----ww---ssssssn1sss",
-    "skills": [
-      "Diarama",
-      "Dormina",
-      "Sukunda",
-      "Blizzard Breath"
-    ],
-    "stats": [284, 228, 13, 15, 15, 10, 9, 11],
-    "tone": "Lady"
+    "resists": "ssssssn1sss----ww--",
+    "skills": ["Diarama", "Dormina", "Sukunda", "Blizzard Breath"],
+    "stats": [284, 248, 68, 450, 13, 15, 15, 10, 9, 11],
+    "talk": "Lady",
+    "tone": "Mild"
   },
   "Lakshmi": {
-    "atks": [10, 85, 154, 44, 118, 152, 55, 118],
-    "inherit": "recovery",
+    "atks": [167, 1, 1, 154, 118, 44, 55, 152, 118],
+    "inherit": "reca",
     "lvl": 64,
-    "person": "Mild",
+    "price": 27160,
     "race": "Megami",
-    "resists": "77777777------sR7sss",
-    "skills": [
-      "Mediarahan",
-      "Rakukaja",
-      "Recarm"
-    ],
-    "stats": [426, 336, 13, 13, 19, 12, 12, 28],
-    "tone": "Noblewoman"
+    "resists": "-----s27sss77777777",
+    "skills": ["Mediarahan", "Rakukaja", "Recarm"],
+    "stats": [426, 356, 85, 640, 13, 13, 19, 12, 12, 28],
+    "talk": "Noblewoman",
+    "tone": "Mild"
   },
   "Leanan Sidhe": {
-    "atks": [10, 23, 58, 23, 45, 54, 21, 45],
+    "atks": [27, 1, 1, 58, 46, 23, 22, 54, 46],
     "drop": "Aquamarine",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 23,
-    "person": "Prideful",
+    "price": 4800,
     "race": "Femme",
-    "resists": "---77------7R--sw-7s",
-    "skills": [
-      "Lullaby",
-      "Shuff",
-      "Diarama",
-      "Provoke"
-    ],
-    "stats": [80, 77, 6, 6, 10, 4, 9, 5],
-    "tone": "Young Woman"
+    "resists": "--72--sw-7s---77---",
+    "skills": ["Lullaby", "Shuff", "Diarama", "Provoke"],
+    "stats": [80, 97, 23, 230, 6, 6, 10, 4, 9, 5],
+    "talk": "Young Woman",
+    "tone": "Prideful"
   },
   "Legion": {
-    "atks": [23, 27, 98, 26, 67, 94, 34, 66],
+    "atks": [178, 2, 3, 98, 67, 26, 35, 94, 66],
     "drop": "Stinger",
     "inherit": "elec",
     "lvl": 37,
-    "person": "Impatient",
+    "price": 8640,
     "race": "Spirit",
-    "resists": "-771-111-wnn---7d7--",
-    "skills": [
-      "Bufu",
-      "Mudo",
-      "Panic Voice"
-    ],
-    "stats": [229, 139, 12, 9, 11, 10, 8, 4],
-    "tone": "Cynic"
+    "resists": "wnn---7d7---771-111",
+    "skills": ["Bufu", "Mudo", "Panic Voice"],
+    "stats": [229, 159, 27, 370, 12, 9, 11, 10, 8, 4],
+    "talk": "Cynic",
+    "tone": "Impatient"
   },
   "Loki": {
-    "atks": [12, 76, 168, 36, 110, 148, 57, 108],
+    "atks": [295, 1, 2, 168, 111, 36, 57, 148, 109],
     "drop": "G-Horn",
     "inherit": "ice",
     "lvl": 59,
-    "person": "Prideful",
+    "price": 22320,
     "race": "Tyrant",
-    "resists": "-------------D7nns-s",
-    "skills": [
-      "Bufula",
-      "Mabufula",
-      "Marin Karin",
-      "Wolf Claw"
-    ],
-    "stats": [620, 303, 25, 17, 14, 15, 15, 7],
-    "tone": "Knight"
+    "resists": "----D7nns-s--------",
+    "skills": ["Bufula", "Mabufula", "Marin Karin", "Wolf Claw"],
+    "stats": [620, 323, 76, 590, 25, 17, 14, 15, 15, 7],
+    "talk": "Knight",
+    "tone": "Prideful"
   },
   "Lorelei": {
-    "atks": [10, 26, 76, 29, 57, 72, 28, 57],
+    "atks": [45, 1, 1, 76, 59, 29, 28, 72, 59],
     "drop": "Gleipnir",
     "inherit": "psy",
     "lvl": 31,
-    "person": "Insightful",
+    "price": 7680,
     "race": "Fairy",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Mapsi",
-      "Marin Karin",
-      "Dia",
-      "Insanity Eyes"
-    ],
-    "stats": [116, 118, 7, 7, 13, 5, 9, 7],
-    "tone": "Lady"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Mapsi", "Marin Karin", "Dia", "Insanity Eyes"],
+    "stats": [116, 138, 26, 310, 7, 7, 13, 5, 9, 7],
+    "talk": "Lady",
+    "tone": "Insightful"
   },
   "Macabre": {
-    "atks": [12, 34, 110, 36, 83, 104, 42, 84],
+    "atks": [132, 1, 2, 110, 84, 36, 42, 104, 85],
     "drop": "Heat Grave",
     "inherit": "death",
     "lvl": 45,
-    "person": "Calm",
+    "price": 12400,
     "race": "Spirit",
-    "resists": "-s1n-----7s-7-s3n--1",
-    "skills": [
-      "Mudola",
-      "Evil Eyes",
-      "Demon's Allure (Female)*"
-    ],
-    "stats": [215, 216, 10, 13, 15, 7, 14, 3],
-    "tone": "Knight"
+    "resists": "7s-7-sXn--1-s1n----",
+    "skills": ["Mudola", "Evil Eyes"],
+    "stats": [215, 236, 34, 450, 10, 13, 15, 7, 14, 3],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Mamedanuki": {
-    "atks": [10, 20, 48, 22, 42, 58, 20, 42],
-    "inherit": "ailment",
+    "atks": [20, 1, 1, 48, 42, 22, 21, 58, 42],
+    "inherit": "recb",
     "lvl": 20,
-    "person": "Insightful",
+    "price": 4920,
     "race": "UMA",
-    "resists": "----ww---ssssssn1sss",
-    "skills": [
-      "Frilly Wall",
-      "Dekaja"
-    ],
-    "stats": [88, 62, 4, 4, 10, 9, 10, 4],
-    "tone": "Knight"
+    "resists": "ssssssn1sss----ww--",
+    "skills": ["Frilly Wall", "Dekaja"],
+    "stats": [88, 82, 20, 200, 4, 4, 10, 9, 10, 4],
+    "talk": "Knight",
+    "tone": "Insightful"
   },
   "Mandrake": {
-    "atks": [10, 10, 42, 30, 30, 46, 22, 32],
+    "atks": [16, 1, 1, 42, 31, 30, 22, 46, 32],
     "drop": "Cakra Drop",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 18,
-    "person": "Insightful",
+    "price": 2800,
     "race": "Wood",
-    "resists": "---------33-77111171",
-    "skills": [
-      "Dormina",
-      "Tarunda",
-      "Rest"
-    ],
-    "stats": [58, 75, 3, 8, 13, 5, 3, 3],
-    "tone": "Girl"
+    "resists": "XX-77111171--------",
+    "skills": ["Dormina", "Tarunda", "Rest"],
+    "stats": [58, 95, 10, 180, 3, 8, 13, 5, 3, 3],
+    "talk": "Girl",
+    "tone": "Insightful"
   },
   "Marici": {
-    "atks": [23, 87, 198, 39, 129, 170, 61, 125],
-    "inherit": "phys",
+    "atks": [675, 2, 3, 198, 129, 39, 61, 170, 126],
+    "inherit": "strike",
     "lvl": 71,
-    "person": "Calm",
+    "price": 31360,
     "race": "Kishin",
-    "resists": "77777777------sR7sss",
-    "skills": [
-      "Tarukaja",
-      "Mist Slash",
-      "Schneiden Axe",
-      "Estoma"
-    ],
-    "stats": [776, 361, 28, 15, 16, 14, 13, 12],
-    "tone": "Knight"
+    "resists": "-----s27sss77777777",
+    "skills": ["Tarukaja", "Mist Slash", "Schneiden Axe", "Estoma"],
+    "stats": [776, 381, 87, 710, 28, 15, 16, 14, 13, 12],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Maruts": {
-    "atks": [2, 25, 68, 20, 50, 64, 23, 49],
+    "atks": [41, 0, 2.2, 68, 50, 20, 23, 64, 49],
     "drop": "Titan Shotel",
     "inherit": "elec",
     "lvl": 26,
-    "person": "Impatient",
+    "price": 5160,
     "race": "Yoma",
-    "resists": "-----------ss1ssss77",
-    "skills": [
-      "Zio",
-      "Psi",
-      "Meat Bullet"
-    ],
-    "stats": [114, 78, 8, 5, 9, 6, 7, 8],
-    "tone": "Young Man"
+    "resists": "--ss1ssss77--------",
+    "skills": ["Zio", "Psi", "Meat Bullet"],
+    "stats": [114, 98, 25, 260, 8, 5, 9, 6, 7, 8],
+    "talk": "Young Man",
+    "tone": "Impatient"
   },
   "Maui": {
-    "atks": [2, 53, 100, 21, 73, 86, 34, 72],
+    "atks": [83, 0, 2.2, 100, 73, 21, 34, 86, 73],
     "inherit": "force",
     "lvl": 37,
-    "person": "Mild",
+    "price": 9440,
     "race": "Genma",
-    "resists": "7777s777------snss77",
-    "skills": [
-      "Mazan",
-      "Meteor Fist",
-      "Active Song"
-    ],
-    "stats": [200, 134, 13, 11, 8, 6, 13, 8],
-    "tone": "Nobleman"
+    "resists": "-----snss777777s777",
+    "skills": ["Mazan", "Meteor Fist", "Active Song"],
+    "stats": [200, 154, 53, 370, 13, 11, 8, 6, 13, 8],
+    "talk": "Nobleman",
+    "tone": "Mild"
   },
   "Melchom": {
-    "atks": [10, 17, 48, 16, 32, 42, 19, 33],
+    "atks": [20, 1, 1, 48, 33, 16, 20, 42, 33],
     "drop": "Katar",
     "inherit": "fire",
     "lvl": 17,
-    "person": "Insightful",
+    "price": 2720,
     "race": "Fallen",
-    "resists": "------------11-7s---",
-    "skills": [
-      "Agi",
-      "Shuff"
-    ],
-    "stats": [69, 53, 7, 8, 6, 4, 5, 4],
-    "tone": "Kansai"
+    "resists": "---11-7s-----------",
+    "skills": ["Agi", "Shuff"],
+    "stats": [69, 73, 17, 170, 7, 8, 6, 4, 5, 4],
+    "talk": "Kansai",
+    "tone": "Insightful"
   },
   "Metatron": {
-    "atks": [24, 115, 216, 56, 145, 192, 74, 143],
+    "atks": [957, 2, 4, 216, 145, 56, 74, 192, 143],
     "inherit": "almighty",
     "lvl": 80,
-    "person": "Calm",
+    "price": 42120,
     "race": "Herald",
-    "resists": "77777777-77777sn11ss",
-    "skills": [
-      "Megidola",
-      "Hamaon",
-      "Deathbound",
-      "Holy Wrath"
-    ],
-    "stats": [911, 542, 28, 21, 23, 16, 15, 14],
-    "tone": "Nobleman"
+    "resists": "77777sn11ss77777777",
+    "skills": ["Megidola", "Hamaon", "Deathbound", "Holy Wrath"],
+    "stats": [911, 562, 115, 800, 28, 21, 23, 16, 15, 14],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Moh Shuvuu": {
-    "atks": [12, 11, 38, 15, 32, 38, 16, 32],
+    "atks": [20, 1, 2, 38, 33, 15, 17, 38, 33],
     "drop": "Turquoise",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 15,
-    "person": "Insightful",
+    "price": 2560,
     "race": "Raptor",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Dia",
-      "Insanity Eyes"
-    ],
-    "stats": [52, 43, 4, 6, 6, 4, 9, 3],
-    "tone": "Girl"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Dia", "Insanity Eyes"],
+    "stats": [52, 63, 11, 150, 4, 6, 6, 4, 9, 3],
+    "talk": "Girl",
+    "tone": "Insightful"
   },
   "Moloch": {
-    "atks": [20, 61, 138, 30, 89, 136, 46, 86],
+    "atks": [271, 2, 2, 138, 90, 30, 46, 136, 87],
     "drop": "Renki Sword",
     "inherit": "death",
     "lvl": 49,
-    "person": "Prideful",
+    "price": 15600,
     "race": "Vile",
-    "resists": "---------444--snns--",
-    "skills": [
-      "Maragion",
-      "Mudola",
-      "Shuffler"
-    ],
-    "stats": [507, 194, 20, 9, 13, 19, 10, 7],
-    "tone": "Nobleman"
+    "resists": "eee--snns----------",
+    "skills": ["Maragion", "Mudola", "Shuffler"],
+    "stats": [507, 214, 61, 490, 20, 9, 13, 19, 10, 7],
+    "talk": "Nobleman",
+    "tone": "Prideful"
   },
   "Mot": {
-    "atks": [20, 255, 198, 77, 136, 182, 75, 135],
+    "atks": [540, 2, 2, 198, 136, 77, 75, 182, 135],
     "drop": "Black Flame Sword",
     "inherit": "death",
     "lvl": 74,
-    "person": "Vigorous",
+    "price": 38400,
     "race": "Reaper",
-    "resists": "-1117ssw------nddnns",
-    "skills": [
-      "Mudoon",
-      "Foul Law",
-      "Stun Crash"
-    ],
-    "stats": [807, 610, 25, 22, 33, 17, 18, 5],
-    "tone": "Knight"
+    "resists": "-----nddnns-1117ssw",
+    "skills": ["Mudoon", "Foul Law", "Stun Crash"],
+    "stats": [807, 630, 255, 740, 25, 22, 33, 17, 18, 5],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Mothman": {
-    "atks": [10, 24, 114, 18, 86, 108, 37, 85],
+    "atks": [95, 1, 1, 114, 86, 18, 37, 108, 85],
     "drop": "Sapphire",
     "inherit": "fire",
     "lvl": 44,
-    "person": "Calm",
+    "price": 12200,
     "race": "Vermin",
-    "resists": "------77---3--ssr1ss",
-    "skills": [
-      "Maragi",
-      "Shuffle",
-      "Venom Breath",
-      "Life Drain*"
-    ],
-    "stats": [278, 140, 13, 9, 7, 10, 16, 6],
-    "tone": "Cynic"
+    "resists": "--X--ssR1ss------77",
+    "skills": ["Maragi", "Shuffle", "Venom Breath"],
+    "stats": [278, 160, 24, 440, 13, 9, 7, 10, 16, 6],
+    "talk": "Cynic",
+    "tone": "Calm"
   },
   "Mushussu": {
-    "atks": [12, 71, 154, 21, 107, 148, 46, 104],
+    "atks": [250, 1, 2, 154, 108, 21, 46, 148, 105],
     "drop": "Vajra Bullet",
     "inherit": "elec",
     "lvl": 58,
-    "person": "Impatient",
+    "price": 18000,
     "race": "Drake",
-    "resists": "-----7-----d--71ns7s",
-    "skills": [
-      "Mazionga",
-      "Makakaja",
-      "Stone Bite",
-      "Chin Lock*"
-    ],
-    "stats": [536, 182, 19, 7, 9, 16, 14, 10],
-    "tone": "Old Beast"
+    "resists": "--d--71ns7s-----7--",
+    "skills": ["Mazionga", "Makakaja", "Stone Bite"],
+    "stats": [536, 202, 71, 580, 19, 7, 9, 16, 14, 10],
+    "talk": "Old Beast",
+    "tone": "Impatient"
   },
   "Myrmecolion": {
-    "atks": [2, 15, 82, 16, 56, 74, 24, 55],
+    "atks": [58, 0, 2.2, 82, 57, 16, 25, 74, 55],
     "drop": "Emerald",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 30,
-    "person": "Wild",
+    "price": 7520,
     "race": "Vermin",
-    "resists": "---------33-77111171",
-    "skills": [
-      "Spiral Bite",
-      "Panic Voice",
-      "Sukukaja"
-    ],
-    "stats": [159, 81, 11, 5, 7, 7, 7, 10],
-    "tone": "Young Beast"
+    "resists": "XX-77111171--------",
+    "skills": ["Spiral Bite", "Panic Voice", "Sukukaja"],
+    "stats": [159, 101, 15, 300, 11, 5, 7, 7, 7, 10],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Nacht Kobold": {
-    "atks": [10, 5, 24, 11, 16, 20, 9, 15],
+    "atks": [6, 1, 1, 24, 17, 11, 9, 20, 17],
     "drop": "Cakra Drop",
     "inherit": "ice",
     "lvl": 7,
-    "person": "Insightful",
+    "price": 960,
     "race": "Night",
-    "resists": "7777ssss---w-7s71---",
-    "skills": [
-      "Bufu",
-      "Sukunda"
-    ],
-    "stats": [36, 18, 5, 3, 5, 3, 5, 3],
-    "tone": "Cynic"
+    "resists": "--w-7s71---7777ssss",
+    "skills": ["Bufu", "Sukunda"],
+    "stats": [36, 38, 5, 70, 5, 3, 5, 3, 5, 3],
+    "talk": "Cynic",
+    "tone": "Insightful"
   },
   "Naga": {
-    "atks": [10, 47, 106, 21, 68, 100, 34, 66],
+    "atks": [82, 1, 1, 106, 69, 21, 34, 100, 67],
     "drop": "Tri-Lance",
     "inherit": "elec",
     "lvl": 38,
-    "person": "Calm",
+    "price": 8800,
     "race": "Snake",
-    "resists": "-----7-----1--ssss11",
-    "skills": [
-      "Zionga",
-      "Skewer",
-      "Water Wall",
-      "Untouched Zone"
-    ],
-    "stats": [283, 122, 15, 7, 9, 12, 7, 5],
-    "tone": "Knight"
+    "resists": "--1--ssss11-----7--",
+    "skills": ["Zionga", "Skewer", "Water Wall", "Untouched Zone"],
+    "stats": [283, 142, 47, 380, 15, 7, 9, 12, 7, 5],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Nagasunehiko": {
-    "atks": [10, 47, 96, 17, 64, 86, 28, 62],
+    "atks": [69, 1, 1, 96, 65, 17, 29, 86, 63],
     "inherit": "elec",
     "lvl": 33,
-    "person": "Prideful",
+    "price": 8640,
     "race": "Kishin",
-    "resists": "-----------1--7ns7-s",
-    "skills": [
-      "Zionga",
-      "Bamboo Slice",
-      "Patra",
-      "Intimidate"
-    ],
-    "stats": [232, 93, 15, 6, 7, 10, 11, 5],
-    "tone": "Knight"
+    "resists": "--1--7ns7-s--------",
+    "skills": ["Zionga", "Bamboo Slice", "Patra", "Intimidate"],
+    "stats": [232, 113, 47, 330, 15, 6, 7, 10, 11, 5],
+    "talk": "Knight",
+    "tone": "Prideful"
   },
   "Nakisawame": {
-    "atks": [1, 49, 80, 30, 64, 80, 31, 65],
-    "inherit": "recovery",
+    "atks": [43, 0, 1.8, 80, 66, 30, 31, 80, 66],
+    "inherit": "reca",
     "lvl": 33,
-    "person": "Cowardly",
+    "price": 9280,
     "race": "Megami",
-    "resists": "-----------1--7ns7-s",
-    "skills": [
-      "Diarama",
-      "Media",
-      "Makafuji",
-      "Posumudi"
-    ],
-    "stats": [139, 130, 7, 8, 13, 7, 12, 11],
-    "tone": "Girl"
+    "resists": "--1--7ns7-s--------",
+    "skills": ["Diarama", "Media", "Makafuji", "Posumudi"],
+    "stats": [139, 150, 49, 330, 7, 8, 13, 7, 12, 11],
+    "talk": "Girl",
+    "tone": "Cowardly"
   },
   "Neko Shogun": {
-    "atks": [1, 47, 88, 28, 69, 88, 41, 71],
-    "inherit": "recovery",
+    "atks": [51, 0, 1.8, 88, 69, 28, 41, 88, 72],
+    "inherit": "reca",
     "lvl": 36,
-    "person": "Calm",
+    "price": 9920,
     "race": "Enigma",
-    "resists": "-----w--------nnsnss",
-    "skills": [
-      "Shock",
-      "Tarunda",
-      "Saint Song",
-      "Buddha's Laugh"
-    ],
-    "stats": [168, 171, 8, 17, 10, 8, 12, 7],
-    "tone": "Nobleman"
+    "resists": "-----nnsnss-----w--",
+    "skills": ["Shock", "Tarunda", "Saint Song", "Buddha's Laugh"],
+    "stats": [168, 191, 47, 360, 8, 17, 10, 8, 12, 7],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Nekomata": {
-    "atks": [10, 25, 64, 19, 49, 60, 23, 49],
+    "atks": [33, 1, 1, 64, 50, 19, 23, 60, 50],
     "drop": "Dis-Charm",
     "inherit": "force",
     "lvl": 25,
-    "person": "Insightful",
+    "price": 5040,
     "race": "Beast",
-    "resists": "---wwwww-sssssssssss",
-    "skills": [
-      "Mazan",
-      "Marin Karin",
-      "Charm Bite",
-      "Charmdi",
-      "Escape*"
-    ],
-    "stats": [98, 75, 7, 6, 8, 5, 10, 6],
-    "tone": "Young Woman"
+    "resists": "sssssssssss---wwwww",
+    "skills": ["Mazan", "Marin Karin", "Charm Bite", "Charmdi"],
+    "stats": [98, 95, 25, 250, 7, 6, 8, 5, 10, 6],
+    "talk": "Young Woman",
+    "tone": "Insightful"
   },
   "Nergal": {
-    "atks": [23, 90, 188, 51, 137, 180, 69, 136],
+    "atks": [611, 2, 3, 188, 138, 51, 69, 180, 137],
     "drop": "Burst Riser",
     "inherit": "ice",
     "lvl": 73,
-    "person": "Calm",
+    "price": 35520,
     "race": "Tyrant",
-    "resists": "ssssssss------n22nnn",
-    "skills": [
-      "Mudoon",
-      "Hamaon",
-      "Mabufula"
-    ],
-    "stats": [723, 458, 21, 19, 21, 17, 20, 13],
-    "tone": "Nobleman"
+    "resists": "-----nrrnnnssssssss",
+    "skills": ["Mudoon", "Hamaon", "Mabufula"],
+    "stats": [723, 478, 90, 730, 21, 19, 21, 17, 20, 13],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Nigi Mitama": {
-    "atks": [10, 30, 50, 14, 40, 50, 22, 41],
-    "inherit": "none",
+    "atks": [21, 1, 1, 50, 40, 14, 22, 50, 41],
+    "inherit": "mitama",
     "lvl": 20,
-    "person": "Mild",
+    "price": 4440,
     "race": "Mitama",
-    "resists": "wwwwwwww-ssssssRRsss",
-    "skills": [
-      "Dormina",
-      "Sukunda"
-    ],
-    "stats": [72, 62, 5, 9, 5, 5, 8, 5],
-    "tone": "Knight"
+    "resists": "ssssss22ssswwwwwwww",
+    "skills": ["Dormina", "Sukunda"],
+    "stats": [72, 82, 30, 200, 5, 9, 5, 5, 8, 5],
+    "talk": "Knight",
+    "tone": "Mild"
   },
   "Nisroc": {
-    "atks": [1, 27, 72, 19, 48, 68, 25, 47],
+    "atks": [35, 0, 1.8, 72, 48, 19, 25, 68, 47],
     "drop": "Cakra Chip",
     "inherit": "fire",
     "lvl": 26,
-    "person": "Mild",
+    "price": 5160,
     "race": "Fallen",
-    "resists": "---------n3---1s7ss1",
-    "skills": [
-      "Agilao",
-      "Atom Slicer"
-    ],
-    "stats": [141, 78, 10, 6, 8, 8, 6, 5],
-    "tone": "Cynic"
+    "resists": "nX---1s7ss1--------",
+    "skills": ["Agilao", "Atom Slicer"],
+    "stats": [141, 98, 27, 260, 10, 6, 8, 8, 6, 5],
+    "talk": "Cynic",
+    "tone": "Mild"
   },
   "Nue": {
-    "atks": [10, 24, 88, 19, 58, 78, 27, 56],
+    "atks": [58, 1, 1, 88, 59, 19, 27, 78, 57],
     "drop": "Yaksha Nunchucks",
     "inherit": "psy",
     "lvl": 31,
-    "person": "Wild",
+    "price": 7680,
     "race": "Wilder",
-    "resists": "------------11-7s---",
-    "skills": [
-      "Psio",
-      "Bind Voice",
-      "Stun Claw",
-      "Escape*"
-    ],
-    "stats": [188, 92, 13, 6, 8, 8, 8, 5],
-    "tone": "Knight"
+    "resists": "---11-7s-----------",
+    "skills": ["Psio", "Bind Voice", "Stun Claw"],
+    "stats": [188, 112, 24, 310, 13, 6, 8, 8, 8, 5],
+    "talk": "Knight",
+    "tone": "Wild"
   },
   "Obariyon": {
-    "atks": [10, 18, 32, 16, 25, 32, 14, 25],
+    "atks": [10, 1, 1, 32, 25, 16, 14, 32, 25],
     "drop": "Potion",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 12,
-    "person": "Sly",
+    "price": 2320,
     "race": "Haunt",
-    "resists": "----------------n---",
-    "skills": [
-      "Shibaboo",
-      "Magnetic Storm",
-      "Rest"
-    ],
-    "stats": [46, 36, 4, 5, 7, 4, 5, 4],
-    "tone": "Boy"
+    "resists": "------7n-----------",
+    "skills": ["Shibaboo", "Magnetic Storm", "Rest"],
+    "stats": [46, 56, 18, 120, 4, 5, 7, 4, 5, 4],
+    "talk": "Boy",
+    "tone": "Sly"
   },
   "Oberon": {
-    "atks": [12, 48, 144, 38, 99, 134, 50, 99],
+    "atks": [220, 1, 2, 144, 100, 38, 50, 134, 99],
     "drop": "Gae Bolg",
     "inherit": "psy",
     "lvl": 57,
-    "person": "Prideful",
+    "price": 17760,
     "race": "Fairy",
-    "resists": "-------------D7nns-s",
-    "skills": [
-      "Mapsio",
-      "Mazio",
-      "Shuffle",
-      "Hapirma"
-    ],
-    "stats": [382, 278, 15, 13, 16, 10, 8, 12],
-    "tone": "Elder"
+    "resists": "----D7nns-s--------",
+    "skills": ["Mapsio", "Mazio", "Shuffle", "Hapirma"],
+    "stats": [382, 298, 48, 570, 15, 13, 16, 10, 8, 12],
+    "talk": "Elder",
+    "tone": "Prideful"
   },
   "Ocelot": {
-    "atks": [10, 23, 80, 13, 60, 74, 25, 59],
+    "atks": [49, 1, 1, 80, 60, 13, 25, 74, 59],
     "drop": "Aquamarine",
     "inherit": "psy",
     "lvl": 30,
-    "person": "Wild",
+    "price": 7520,
     "race": "Jaki",
-    "resists": "------------11-7s---",
-    "skills": [
-      "Agilao",
-      "Psio",
-      "Psycho Barrier"
-    ],
-    "stats": [151, 76, 10, 6, 5, 7, 11, 8],
-    "tone": "Old Beast"
+    "resists": "---11-7s-----------",
+    "skills": ["Agilao", "Psio", "Psycho Barrier"],
+    "stats": [151, 96, 23, 300, 10, 6, 5, 7, 11, 8],
+    "talk": "Old Beast",
+    "tone": "Wild"
   },
   "Odin": {
-    "atks": [12, 95, 180, 46, 120, 160, 60, 118],
+    "atks": [337, 1, 2, 180, 121, 46, 60, 160, 119],
     "inherit": "ice",
     "lvl": 65,
-    "person": "Vigorous",
+    "price": 27440,
     "race": "Deity",
-    "resists": "---------77777sns1s1",
-    "skills": [
-      "Mudoon",
-      "Makarakarn",
-      "Glacial Blast",
-      "Mutudi"
-    ],
-    "stats": [680, 366, 25, 16, 19, 15, 16, 7],
-    "tone": "Nobleman"
+    "resists": "77777sns1s1--------",
+    "skills": ["Mudoon", "Makarakarn", "Glacial Blast", "Mutudi"],
+    "stats": [680, 386, 95, 650, 25, 16, 19, 15, 16, 7],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Ogre": {
-    "atks": [1, 7, 48, 9, 26, 44, 15, 24],
+    "atks": [17, 0, 1.8, 48, 27, 9, 15, 44, 25],
     "drop": "Lian Shuang Gui",
     "inherit": "force",
     "lvl": 14,
-    "person": "Insightful",
+    "price": 2480,
     "race": "Jaki",
-    "resists": "----------------n---",
-    "skills": [
-      "Bufu",
-      "Zan",
-      "Flying Knee"
-    ],
-    "stats": [87, 29, 10, 3, 4, 8, 3, 3],
-    "tone": "Young Man"
+    "resists": "------7n-----------",
+    "skills": ["Bufu", "Zan", "Flying Knee"],
+    "stats": [87, 49, 7, 140, 10, 3, 4, 8, 3, 3],
+    "talk": "Young Man",
+    "tone": "Insightful"
   },
   "Ogun": {
-    "atks": [10, 68, 116, 29, 68, 94, 33, 64],
+    "atks": [98, 1, 1, 116, 69, 29, 33, 94, 65],
     "inherit": "psy",
     "lvl": 37,
-    "person": "Calm",
+    "price": 10080,
     "race": "Fury",
-    "resists": "------------771n11ss",
-    "skills": [
-      "Mapsi",
-      "Mudo",
-      "Hakyou"
-    ],
-    "stats": [314, 139, 21, 7, 13, 10, 7, 5],
-    "tone": "Nobleman"
+    "resists": "---771n11ss--------",
+    "skills": ["Mapsi", "Mudo", "Hakyou"],
+    "stats": [314, 159, 68, 370, 21, 7, 13, 10, 7, 5],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Okiku-Mushi": {
-    "atks": [1, 11, 62, 24, 41, 56, 25, 41],
+    "atks": [12, 0, 0.8, 62, 42, 24, 25, 56, 42],
     "drop": "Dis-Palyze",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 23,
-    "person": "Calm",
+    "price": 4800,
     "race": "Vermin",
-    "resists": "-----7-----d--71ns7s",
-    "skills": [
-      "Kyou",
-      "Dia",
-      "Arachno Wire*"
-    ],
-    "stats": [98, 87, 8, 9, 10, 5, 5, 3],
-    "tone": "Noblewoman"
+    "resists": "--d--71ns7s-----7--",
+    "skills": ["Kyou", "Dia"],
+    "stats": [98, 107, 11, 230, 8, 9, 10, 5, 5, 3],
+    "talk": "Noblewoman",
+    "tone": "Calm"
   },
   "Oliver": {
-    "atks": [1, 7, 16, 7, 12, 16, 7, 12],
-    "inherit": "phys",
+    "atks": [3, 0, 1.8, 16, 13, 7, 7, 16, 13],
+    "inherit": "strike",
     "lvl": 5,
-    "person": "Sly",
+    "price": 920,
     "race": "UMA",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Rest"
-    ],
-    "stats": [29, 11, 3, 3, 3, 3, 3, 8],
-    "tone": "Boy"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Rest"],
+    "stats": [29, 31, 7, 50, 3, 3, 3, 3, 3, 8],
+    "talk": "Boy",
+    "tone": "Sly"
   },
   "Oshira-sama": {
-    "atks": [10, 34, 74, 26, 49, 66, 26, 49],
-    "inherit": "recovery",
+    "atks": [42, 1, 1, 74, 50, 26, 27, 66, 49],
+    "inherit": "reca",
     "lvl": 27,
-    "person": "Sly",
+    "price": 5760,
     "race": "Tree",
-    "resists": "-777777--3-7--s1nsss",
-    "skills": [
-      "Shipani",
-      "Makakaja",
-      "Saint Song"
-    ],
-    "stats": [132, 100, 10, 8, 11, 6, 5, 8],
-    "tone": "Knight"
+    "resists": "X-7--s1nsss-777777-",
+    "skills": ["Shipani", "Makakaja", "Saint Song"],
+    "stats": [132, 120, 34, 270, 10, 8, 11, 6, 5, 8],
+    "talk": "Knight",
+    "tone": "Sly"
   },
   "Otogo-Douji": {
-    "atks": [10, 36, 70, 17, 48, 58, 21, 47],
+    "atks": [38, 1, 1, 70, 49, 17, 22, 58, 48],
     "inherit": "psy",
     "lvl": 24,
-    "person": "Insightful",
+    "price": 5280,
     "race": "Kishin",
-    "resists": "-----sss----1-sn7s77",
-    "skills": [
-      "Zan",
-      "Psi",
-      "Dia",
-      "Phasedi"
-    ],
-    "stats": [120, 69, 11, 6, 7, 5, 9, 6],
-    "tone": "Boy"
+    "resists": "---1-sn7s77-----sss",
+    "skills": ["Zan", "Psi", "Dia", "Phasedi"],
+    "stats": [120, 89, 36, 240, 11, 6, 7, 5, 9, 6],
+    "talk": "Boy",
+    "tone": "Insightful"
   },
   "Oumitsunu": {
-    "atks": [1, 43, 120, 17, 77, 114, 36, 74],
+    "atks": [91, 0, 1.8, 120, 77, 17, 37, 114, 75],
     "drop": "A-Kinju",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 43,
-    "person": "Mild",
+    "price": 12000,
     "race": "Jirae",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Flying Knee",
-      "Hell Thrust",
-      "Earth Wall"
-    ],
-    "stats": [361, 125, 17, 7, 7, 14, 7, 8],
-    "tone": "Knight"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Flying Knee", "Hell Thrust", "Earth Wall"],
+    "stats": [361, 145, 43, 430, 17, 7, 7, 14, 7, 8],
+    "talk": "Knight",
+    "tone": "Mild"
   },
   "Ouroboros": {
-    "atks": [20, 75, 180, 42, 116, 162, 56, 114],
+    "atks": [450, 2, 2, 180, 118, 42, 57, 162, 115],
     "drop": "Mercury Bomb",
     "inherit": "almighty",
     "lvl": 67,
-    "person": "Prideful",
+    "price": 23520,
     "race": "Snake",
-    "resists": "-----7-----d--71ns7s",
-    "skills": [
-      "Megido",
-      "Thunder Break",
-      "Venom Flash",
-      "Makakaja"
-    ],
-    "stats": [649, 333, 23, 12, 18, 14, 10, 7],
-    "tone": "Old Beast"
+    "resists": "--d--71ns7s-----7--",
+    "skills": ["Megido", "Thunder Break", "Venom Flash", "Makakaja"],
+    "stats": [649, 353, 75, 670, 23, 12, 18, 14, 10, 7],
+    "talk": "Old Beast",
+    "tone": "Prideful"
   },
   "Pabilsag": {
-    "atks": [12, 68, 126, 31, 86, 122, 43, 85],
-    "inherit": "phys",
+    "atks": [171, 1, 2, 126, 87, 31, 43, 122, 85],
+    "inherit": "strike",
     "lvl": 48,
-    "person": "Wild",
+    "price": 14400,
     "race": "Holy",
-    "resists": "-www--ww-----7sRRsss",
-    "skills": [
-      "Tetrakarn",
-      "Venom Needle",
-      "Paralyze Needle"
-    ],
-    "stats": [363, 197, 15, 10, 13, 13, 8, 13],
-    "tone": "Nobleman"
+    "resists": "----7s22sss-www--ww",
+    "skills": ["Tetrakarn", "Venom Needle", "Paralyze Needle"],
+    "stats": [363, 217, 68, 480, 15, 10, 13, 13, 8, 13],
+    "talk": "Nobleman",
+    "tone": "Wild"
   },
   "Pachacamac": {
-    "atks": [12, 51, 116, 31, 78, 102, 38, 76],
+    "atks": [146, 1, 2, 116, 79, 31, 38, 102, 77],
     "drop": "Beam Wheel",
     "inherit": "force",
     "lvl": 41,
-    "person": "Sly",
+    "price": 13600,
     "race": "Vile",
-    "resists": "-www--ww-----7sRRsss",
-    "skills": [
-      "Mazanma",
-      "Makafuji",
-      "Psycho Barrier"
-    ],
-    "stats": [303, 170, 17, 10, 13, 10, 12, 6],
-    "tone": "Cynic"
+    "resists": "----7s22sss-www--ww",
+    "skills": ["Mazanma", "Makafuji", "Psycho Barrier"],
+    "stats": [303, 190, 51, 410, 17, 10, 13, 10, 12, 6],
+    "talk": "Cynic",
+    "tone": "Sly"
   },
   "Pales": {
-    "atks": [24, 105, 192, 50, 133, 186, 67, 132],
+    "atks": [763, 2, 4, 192, 134, 50, 67, 186, 132],
     "drop": "Excess Sword",
     "inherit": "almighty",
     "lvl": 73,
-    "person": "Prideful",
+    "price": 34560,
     "race": "Vile",
-    "resists": "ssssssss------n22nnn",
-    "skills": [
-      "Mapsio",
-      "Mudoon",
-      "Foul Law"
-    ],
-    "stats": [815, 429, 23, 16, 21, 20, 16, 12],
-    "tone": "Nobleman"
+    "resists": "-----nrrnnnssssssss",
+    "skills": ["Mapsio", "Mudoon", "Foul Law"],
+    "stats": [815, 449, 105, 730, 23, 16, 21, 20, 16, 12],
+    "talk": "Nobleman",
+    "tone": "Prideful"
   },
   "Pallas Athena": {
-    "atks": [23, 80, 150, 28, 104, 136, 48, 102],
-    "inherit": "recovery",
+    "atks": [397, 2, 3, 150, 105, 28, 48, 136, 103],
+    "inherit": "reca",
     "lvl": 55,
-    "person": "Vigorous",
+    "price": 20400,
     "race": "Megami",
-    "resists": "77777RRR-------n7---",
-    "skills": [
-      "Mediarama",
-      "Dekunda",
-      "Earth Wall"
-    ],
-    "stats": [482, 224, 20, 12, 11, 13, 14, 15],
-    "tone": "Noblewoman"
+    "resists": "------n7---77777222",
+    "skills": ["Mediarama", "Dekunda", "Earth Wall"],
+    "stats": [482, 244, 80, 550, 20, 12, 11, 13, 14, 15],
+    "talk": "Noblewoman",
+    "tone": "Vigorous"
   },
   "Patrimpas": {
-    "atks": [10, 81, 128, 30, 92, 124, 50, 93],
+    "atks": [118, 1, 1, 128, 93, 30, 50, 124, 93],
     "inherit": "force",
     "lvl": 49,
-    "person": "Insightful",
+    "price": 15600,
     "race": "Dragon",
-    "resists": "---77------7R--sw-7s",
-    "skills": [
-      "Zanma",
-      "Mazan",
-      "Magnetic Storm",
-      "Liftoma"
-    ],
-    "stats": [370, 274, 15, 17, 11, 13, 14, 8],
-    "tone": "Old Beast"
+    "resists": "--72--sw-7s---77---",
+    "skills": ["Zanma", "Mazan", "Magnetic Storm", "Liftoma"],
+    "stats": [370, 254, 81, 490, 15, 17, 11, 13, 14, 8],
+    "talk": "Old Beast",
+    "tone": "Insightful"
   },
   "Patriot": {
-    "atks": [12, 33, 108, 15, 75, 92, 30, 73],
+    "atks": [128, 1, 2, 108, 76, 15, 30, 92, 74],
     "drop": "Stun Grenade",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 39,
-    "person": "Prideful",
+    "price": 8960,
     "race": "Undead",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Panic Voice",
-      "Provoke",
-      "Happy Trigger*"
-    ],
-    "stats": [240, 103, 15, 6, 6, 7, 12, 10],
-    "tone": "Lunatic"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Panic Voice", "Provoke"],
+    "stats": [240, 123, 33, 390, 15, 6, 6, 7, 12, 10],
+    "talk": "Lunatic",
+    "tone": "Prideful"
   },
   "Peri": {
-    "atks": [12, 46, 132, 30, 94, 118, 45, 94],
+    "atks": [187, 1, 2, 132, 95, 30, 45, 118, 95],
     "drop": "Core Shield",
     "inherit": "elec",
     "lvl": 51,
-    "person": "Sly",
+    "price": 16320,
     "race": "Yoma",
-    "resists": "-----------ss1ssss77",
-    "skills": [
-      "Zionga",
-      "Shibaboo",
-      "Die Hard",
-      "Mutudi"
-    ],
-    "stats": [319, 222, 15, 13, 12, 8, 14, 6],
-    "tone": "Young Woman"
+    "resists": "--ss1ssss77--------",
+    "skills": ["Zionga", "Shibaboo", "Die Hard", "Mutudi"],
+    "stats": [319, 242, 46, 510, 15, 13, 12, 8, 14, 6],
+    "talk": "Young Woman",
+    "tone": "Sly"
   },
   "Phoenix": {
-    "atks": [20, 46, 86, 21, 74, 92, 31, 74],
+    "atks": [112, 2, 2, 86, 75, 21, 31, 92, 75],
     "inherit": "fire",
     "lvl": 37,
-    "person": "Impatient",
+    "price": 9440,
     "race": "Avian",
-    "resists": "1s-wsss--d3---1s71ss",
-    "skills": [
-      "Fire Breath",
-      "Cherry Blossoms",
-      "Recarm",
-      "Liftoma"
-    ],
-    "stats": [162, 113, 6, 6, 9, 9, 15, 14],
-    "tone": "Old Beast"
+    "resists": "dX---1s71ss1s-wsss-",
+    "skills": ["Fire Breath", "Cherry Blossoms", "Recarm", "Liftoma"],
+    "stats": [162, 133, 46, 370, 6, 6, 9, 9, 15, 14],
+    "talk": "Old Beast",
+    "tone": "Impatient"
   },
   "Pixie": {
-    "atks": [10, 2, 10, 7, 7, 10, 5, 7],
+    "atks": [2, 1, 1, 10, 7, 7, 6, 10, 7],
     "drop": "Aquamarine",
     "inherit": "elec",
     "lvl": 2,
-    "person": "Cowardly",
+    "price": 760,
     "race": "Fairy",
-    "resists": "---77------7R--sw-7s",
-    "skills": [
-      "Zio",
-      "Dia",
-      "Escape*"
-    ],
-    "stats": [24, 6, 3, 3, 3, 3, 3, 4],
-    "tone": "Girl"
+    "resists": "--72--sw-7s---77---",
+    "skills": ["Zio", "Dia"],
+    "stats": [24, 26, 2, 20, 3, 3, 3, 3, 3, 4],
+    "talk": "Girl",
+    "tone": "Cowardly"
   },
   "Poltergeist": {
-    "atks": [10, 1, 10, 7, 8, 10, 5, 8],
+    "atks": [2, 1, 1, 10, 9, 7, 6, 10, 9],
     "drop": "Normal Bullets",
     "inherit": "force",
     "lvl": 2,
-    "person": "Impatient",
+    "price": 800,
     "race": "Spirit",
-    "resists": "-s1n-----7s-7-s3n--1",
-    "skills": [
-      "Zan",
-      "Sukunda"
-    ],
-    "stats": [24, 6, 3, 3, 3, 3, 5, 3],
-    "tone": "Boy"
+    "resists": "7s-7-sXn--1-s1n----",
+    "skills": ["Zan", "Sukunda"],
+    "stats": [24, 26, 1, 20, 3, 3, 3, 3, 5, 3],
+    "talk": "Boy",
+    "tone": "Impatient"
   },
   "Porewit": {
-    "atks": [12, 43, 112, 18, 83, 100, 34, 82],
+    "atks": [137, 1, 2, 112, 84, 18, 34, 100, 83],
     "drop": "Cakra Drop",
     "inherit": "fire",
     "lvl": 43,
-    "person": "Impatient",
+    "price": 12000,
     "race": "Wilder",
-    "resists": "---------n3---1s7ss1",
-    "skills": [
-      "Fire Breath",
-      "Fire Wall"
-    ],
-    "stats": [240, 131, 13, 8, 7, 7, 14, 11],
-    "tone": "Young Man"
+    "resists": "nX---1s7ss1--------",
+    "skills": ["Fire Breath", "Fire Wall"],
+    "stats": [240, 151, 43, 430, 13, 8, 7, 7, 14, 11],
+    "talk": "Young Man",
+    "tone": "Impatient"
   },
   "Power": {
-    "atks": [2, 35, 102, 22, 64, 90, 32, 63],
+    "atks": [86, 0, 2.2, 102, 65, 22, 32, 90, 63],
     "drop": "Ruby",
     "inherit": "expel",
     "lvl": 36,
-    "person": "Prideful",
+    "price": 8480,
     "race": "Divine",
-    "resists": "---wwwww-sssssssssss",
-    "skills": [
-      "Hama",
-      "Wing Flap",
-      "Skewer",
-      "Provoke"
-    ],
-    "stats": [242, 121, 15, 8, 9, 9, 6, 6],
-    "tone": "Knight"
+    "resists": "sssssssssss---wwwww",
+    "skills": ["Hanma", "Wing Flap", "Skewer", "Provoke"],
+    "stats": [242, 141, 35, 360, 15, 8, 9, 9, 6, 6],
+    "talk": "Knight",
+    "tone": "Prideful"
   },
   "Preta": {
-    "atks": [10, 6, 14, 9, 10, 16, 8, 10],
+    "atks": [3, 1, 1, 14, 11, 9, 8, 16, 11],
     "drop": "Potion",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 4,
-    "person": "Impatient",
+    "price": 840,
     "race": "Haunt",
-    "resists": "----------------n---",
-    "skills": [
-      "Charm Bite"
-    ],
-    "stats": [28, 11, 3, 3, 4, 4, 4, 3],
-    "tone": "Young Man"
+    "resists": "------7n-----------",
+    "skills": ["Charm Bite"],
+    "stats": [28, 31, 6, 40, 3, 3, 4, 4, 4, 3],
+    "talk": "Young Man",
+    "tone": "Impatient"
   },
   "Principality": {
-    "atks": [10, 27, 86, 17, 53, 72, 25, 51],
+    "atks": [56, 1, 1, 86, 54, 17, 25, 72, 52],
     "drop": "Pilgrim Staff",
     "inherit": "expel",
     "lvl": 29,
-    "person": "Mild",
+    "price": 5520,
     "race": "Divine",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Mazio",
-      "Hama",
-      "Media",
-      "Macha's Strike"
-    ],
-    "stats": [177, 82, 14, 6, 7, 7, 6, 6],
-    "tone": "Nobleman"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Mazio", "Hama", "Media", "Macha's Strike"],
+    "stats": [177, 102, 27, 290, 14, 6, 7, 7, 6, 6],
+    "talk": "Nobleman",
+    "tone": "Mild"
   },
   "Prometheus": {
-    "atks": [20, 76, 132, 37, 91, 120, 51, 91],
+    "atks": [249, 2, 2, 132, 92, 37, 51, 120, 92],
     "inherit": "fire",
     "lvl": 49,
-    "person": "Vigorous",
+    "price": 15600,
     "race": "Deity",
-    "resists": "---------77777sns1s1",
-    "skills": [
-      "Maragion",
-      "Mapsio",
-      "Sonic Boom"
-    ],
-    "stats": [370, 261, 17, 18, 14, 11, 13, 5],
-    "tone": "Nobleman"
+    "resists": "77777sns1s1--------",
+    "skills": ["Maragion", "Mapsio", "Sonic Boom"],
+    "stats": [370, 281, 76, 490, 17, 18, 14, 11, 13, 5],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Purski": {
-    "atks": [10, 33, 102, 21, 68, 92, 32, 66],
+    "atks": [77, 1, 1, 102, 69, 21, 32, 92, 67],
     "drop": "Kin-Tan",
     "inherit": "force",
     "lvl": 37,
-    "person": "Insightful",
+    "price": 8640,
     "race": "Brute",
-    "resists": "------------771n11ss",
-    "skills": [
-      "Zanma",
-      "Bind Voice",
-      "Schneiden Axe"
-    ],
-    "stats": [238, 119, 14, 7, 9, 9, 9, 6],
-    "tone": "Nobleman"
+    "resists": "---771n11ss--------",
+    "skills": ["Zanma", "Bind Voice", "Schneiden Axe"],
+    "stats": [238, 139, 33, 370, 14, 7, 9, 9, 9, 6],
+    "talk": "Nobleman",
+    "tone": "Insightful"
   },
   "Purson": {
-    "atks": [10, 46, 108, 26, 72, 108, 37, 71],
+    "atks": [85, 1, 1, 108, 73, 26, 37, 108, 72],
     "drop": "Dragon ATM",
-    "inherit": "quad",
+    "inherit": "temp",
     "lvl": 41,
-    "person": "Vigorous",
+    "price": 11600,
     "race": "Fallen",
-    "resists": "7777ssss---w-7s71---",
-    "skills": [
-      "Maragi",
-      "Mabufu",
-      "Hakyou"
-    ],
-    "stats": [293, 147, 13, 8, 11, 13, 7, 6],
-    "tone": "Young Beast"
+    "resists": "--w-7s71---7777ssss",
+    "skills": ["Maragi", "Mabufu", "Hakyou"],
+    "stats": [293, 167, 46, 410, 13, 8, 11, 13, 7, 6],
+    "talk": "Young Beast",
+    "tone": "Vigorous"
   },
   "Pyro Jack": {
-    "atks": [10, 15, 50, 12, 36, 46, 17, 36],
+    "atks": [21, 1, 1, 50, 37, 12, 17, 46, 36],
     "drop": "Cakra Chip",
     "inherit": "fire",
     "lvl": 18,
-    "person": "Impatient",
+    "price": 2800,
     "race": "Fairy",
-    "resists": "---------D3-77-s-7ss",
-    "skills": [
-      "Agi",
-      "Maragi",
-      "Charmdi"
-    ],
-    "stats": [77, 45, 7, 5, 5, 5, 7, 6],
-    "tone": "Young Man"
+    "resists": "DX-77-s-7ss--------",
+    "skills": ["Agi", "Maragi", "Charmdi"],
+    "stats": [77, 65, 15, 180, 7, 5, 5, 5, 7, 6],
+    "talk": "Young Man",
+    "tone": "Impatient"
   },
   "Python": {
-    "atks": [12, 57, 132, 23, 94, 126, 44, 93],
+    "atks": [187, 1, 2, 132, 96, 23, 44, 126, 95],
     "drop": "Gleipnir",
-    "inherit": "quad",
+    "inherit": "temp",
     "lvl": 51,
-    "person": "Prideful",
+    "price": 16320,
     "race": "Drake",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Maragi",
-      "Mazio",
-      "Blizzard Breath",
-      "Arachno Wire*"
-    ],
-    "stats": [371, 188, 15, 11, 9, 12, 14, 7],
-    "tone": "Old Beast"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Maragi", "Mazio", "Blizzard Breath"],
+    "stats": [371, 208, 57, 510, 15, 11, 9, 12, 14, 7],
+    "talk": "Old Beast",
+    "tone": "Prideful"
   },
   "Quetzalcoatl": {
-    "atks": [10, 68, 114, 28, 76, 104, 41, 75],
-    "inherit": "quad",
+    "atks": [95, 1, 1, 114, 76, 28, 41, 104, 75],
+    "inherit": "temp",
     "lvl": 41,
-    "person": "Prideful",
+    "price": 13600,
     "race": "Dragon",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Zanma",
-      "Media",
-      "Shock",
-      "Paraladi"
-    ],
-    "stats": [303, 176, 16, 13, 11, 11, 9, 8],
-    "tone": "Old Beast"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Zanma", "Media", "Shock", "Paraladi"],
+    "stats": [303, 196, 68, 410, 16, 13, 11, 11, 9, 8],
+    "talk": "Old Beast",
+    "tone": "Prideful"
   },
   "Quicksilver": {
-    "atks": [10, 7, 28, 13, 24, 26, 10, 23],
+    "atks": [8, 1, 1, 28, 24, 13, 11, 26, 24],
     "drop": "Topaz",
     "inherit": "elec",
     "lvl": 10,
-    "person": "Impatient",
+    "price": 2160,
     "race": "Spirit",
-    "resists": "-s1n-----7s-7-s3n--1",
-    "skills": [
-      "Zio"
-    ],
-    "stats": [39, 25, 4, 3, 6, 3, 8, 3],
-    "tone": "Young Man"
+    "resists": "7s-7-sXn--1-s1n----",
+    "skills": ["Zio"],
+    "stats": [39, 45, 7, 100, 4, 3, 6, 3, 8, 3],
+    "talk": "Young Man",
+    "tone": "Impatient"
   },
   "Rahu": {
-    "atks": [13, 83, 178, 39, 126, 174, 61, 124],
+    "atks": [440, 1, 3, 178, 126, 39, 61, 174, 124],
     "drop": "Pearl",
     "inherit": "elec",
     "lvl": 66,
-    "person": "Sly",
+    "price": 28560,
     "race": "Tyrant",
-    "resists": "wwwww3ww-RRRRRRRRRRR",
-    "skills": [
-      "Mazionga",
-      "Mapsio",
-      "Shibaboo",
-      "Gouge*"
-    ],
-    "stats": [757, 328, 23, 14, 16, 21, 20, 8],
-    "tone": "Knight"
+    "resists": "22222222222wwwwwXww",
+    "skills": ["Mazionga", "Mapsio", "Shibaboo"],
+    "stats": [757, 348, 83, 660, 23, 14, 16, 21, 20, 8],
+    "talk": "Knight",
+    "tone": "Sly"
   },
   "Rama": {
-    "atks": [24, 0, 210, 55, 145, 188, 70, 142],
-    "inherit": "none",
+    "atks": [907, 2, 4, 210, 146, 55, 70, 188, 143],
+    "inherit": "hero",
     "lvl": 77,
-    "person": "None",
+    "price": 38400,
     "race": "Hero",
-    "resists": "77777777-77777sn11ss",
-    "skills": [
-      "Brahmastra",
-      "Schneiden Axe",
-      "Earth Wall",
-      "Active Song"
-    ],
-    "stats": [897, 492, 28, 18, 23, 17, 20, 14],
-    "tone": "Zoma"
+    "resists": "77777sn11ss77777777",
+    "skills": ["Brahmastra", "Schneiden Axe", "Earth Wall", "Active Song"],
+    "stats": [897, 512, 0, 770, 28, 18, 23, 17, 20, 14],
+    "talk": "Zoma",
+    "tone": "None"
   },
   "Rangda": {
-    "atks": [12, 68, 164, 36, 109, 136, 46, 106],
+    "atks": [282, 1, 2, 164, 110, 36, 46, 136, 106],
     "drop": "Hangon-Ko",
     "inherit": "force",
     "lvl": 59,
-    "person": "Prideful",
+    "price": 18240,
     "race": "Femme",
-    "resists": "---------33wwwnnnnnn",
-    "skills": [
-      "Zanma",
-      "Marin Karin",
-      "Happy Dance",
-      "Intimidate"
-    ],
-    "stats": [500, 248, 23, 8, 16, 9, 15, 5],
-    "tone": "Lady"
+    "resists": "XXwwwnnnnnn--------",
+    "skills": ["Zanma", "Marin Karin", "Happy Dance", "Intimidate"],
+    "stats": [500, 268, 68, 590, 23, 8, 16, 9, 15, 5],
+    "talk": "Lady",
+    "tone": "Prideful"
   },
   "Rastaman": {
-    "atks": [1, 10, 52, 13, 37, 50, 16, 35],
+    "atks": [20, 0, 1.8, 52, 37, 13, 17, 50, 35],
     "drop": "Randy Shot",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 18,
-    "person": "Insightful",
+    "price": 2800,
     "race": "Undead",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Rest",
-      "Venom Breath"
-    ],
-    "stats": [91, 42, 8, 3, 6, 7, 7, 4],
-    "tone": "Knight"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Rest", "Venom Breath"],
+    "stats": [91, 62, 10, 180, 8, 3, 6, 7, 7, 4],
+    "talk": "Knight",
+    "tone": "Insightful"
   },
   "Ribhu": {
-    "atks": [10, 16, 52, 12, 37, 48, 17, 36],
+    "atks": [23, 1, 1, 52, 37, 12, 17, 48, 36],
     "drop": "Seven Star Sword",
     "inherit": "force",
     "lvl": 18,
-    "person": "Mild",
+    "price": 2800,
     "race": "Jirae",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Zan",
-      "Panic Voice",
-      "Mutudi"
-    ],
-    "stats": [86, 42, 8, 4, 5, 6, 7, 5],
-    "tone": "Young Man"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Zan", "Panic Voice", "Mutudi"],
+    "stats": [86, 62, 16, 180, 8, 4, 5, 6, 7, 5],
+    "talk": "Young Man",
+    "tone": "Mild"
   },
   "Rukh": {
-    "atks": [12, 48, 144, 22, 106, 128, 42, 104],
+    "atks": [220, 1, 2, 144, 107, 22, 42, 128, 104],
     "drop": "Ruby",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 54,
-    "person": "Wild",
+    "price": 17040,
     "race": "Flight",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Bird Gimlet",
-      "Stun Claw"
-    ],
-    "stats": [405, 177, 18, 8, 9, 10, 20, 6],
-    "tone": "Young Beast"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Bird Gimlet", "Stun Claw"],
+    "stats": [405, 197, 48, 540, 18, 8, 9, 10, 20, 6],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Saki Mitama": {
-    "atks": [10, 54, 88, 20, 67, 88, 32, 67],
-    "inherit": "none",
+    "atks": [58, 1, 1, 88, 67, 20, 32, 88, 67],
+    "inherit": "mitama",
     "lvl": 36,
-    "person": "Calm",
+    "price": 8480,
     "race": "Mitama",
-    "resists": "wwwwwwww-ssssssRRsss",
-    "skills": [
-      "Hapirma",
-      "Dekaja"
-    ],
-    "stats": [168, 116, 8, 8, 8, 8, 8, 13],
-    "tone": "Knight"
+    "resists": "ssssss22ssswwwwwwww",
+    "skills": ["Hapirma", "Dekaja"],
+    "stats": [168, 136, 54, 360, 8, 8, 8, 8, 8, 13],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Salamander": {
-    "atks": [10, 34, 94, 19, 60, 80, 29, 58],
+    "atks": [66, 1, 1, 94, 60, 19, 29, 80, 58],
     "inherit": "elem",
     "lvl": 32,
-    "person": "Impatient",
+    "price": 8480,
     "race": "Element",
-    "resists": "---------D3-77-s-7ss",
-    "skills": [
-      "Agilao",
-      "Maragi",
-      "Estoma"
-    ],
-    "stats": [209, 99, 15, 7, 8, 8, 7, 8],
-    "tone": "Nobleman"
+    "resists": "DX-77-s-7ss--------",
+    "skills": ["Agilao", "Maragi", "Estoma"],
+    "stats": [209, 119, 34, 320, 15, 7, 8, 8, 7, 8],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Sandalphon": {
-    "atks": [13, 87, 162, 39, 110, 154, 57, 108],
+    "atks": [367, 1, 3, 162, 110, 39, 57, 154, 109],
     "inherit": "almighty",
     "lvl": 60,
-    "person": "Impatient",
+    "price": 25760,
     "race": "Herald",
-    "resists": "-------s---r--snss77",
-    "skills": [
-      "Megidola",
-      "Mazionga",
-      "Hama",
-      "Holy Wrath"
-    ],
-    "stats": [599, 308, 21, 15, 16, 17, 13, 10],
-    "tone": "Nobleman"
+    "resists": "--R--snss77-------s",
+    "skills": ["Megido", "Mazionga", "Hanma", "Holy Wrath"],
+    "stats": [599, 328, 87, 600, 21, 15, 16, 17, 13, 10],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Sandman": {
-    "atks": [10, 15, 50, 17, 37, 48, 20, 37],
+    "atks": [21, 1, 1, 50, 38, 17, 20, 48, 38],
     "drop": "Potion",
     "inherit": "force",
     "lvl": 19,
-    "person": "Sly",
+    "price": 2880,
     "race": "Night",
-    "resists": "7777ssss---w-7s71---",
-    "skills": [
-      "Zan",
-      "Shibaboo",
-      "Rakunda"
-    ],
-    "stats": [75, 59, 6, 7, 7, 5, 7, 4],
-    "tone": "Lunatic"
+    "resists": "--w-7s71---7777ssss",
+    "skills": ["Zan", "Shibaboo", "Rakunda"],
+    "stats": [75, 79, 15, 190, 6, 7, 7, 5, 7, 4],
+    "talk": "Lunatic",
+    "tone": "Sly"
   },
   "Scarecrow": {
-    "atks": [1, 1, 14, 7, 9, 12, 6, 8],
+    "atks": [1, 0, 0.8, 14, 10, 7, 6, 12, 10],
     "drop": "Potion",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 3,
-    "person": "Impatient",
+    "price": 800,
     "race": "Undead",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Rest"
-    ],
-    "stats": [27, 8, 4, 3, 3, 3, 4, 3],
-    "tone": "Lunatic"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Rest"],
+    "stats": [27, 28, 1, 30, 4, 3, 3, 3, 4, 3],
+    "talk": "Lunatic",
+    "tone": "Impatient"
   },
   "Scathach": {
-    "atks": [12, 53, 110, 18, 75, 100, 34, 73],
+    "atks": [132, 1, 2, 110, 76, 18, 34, 100, 73],
     "inherit": "force",
     "lvl": 38,
-    "person": "Vigorous",
+    "price": 10240,
     "race": "Megami",
-    "resists": "-----sss----1-sn7s77",
-    "skills": [
-      "Mazan",
-      "Rakunda",
-      "Mediarama"
-    ],
-    "stats": [302, 116, 17, 8, 7, 12, 13, 7],
-    "tone": "Noblewoman"
+    "resists": "---1-sn7s77-----sss",
+    "skills": ["Mazan", "Rakunda", "Mediarama"],
+    "stats": [302, 136, 53, 380, 17, 8, 7, 12, 13, 7],
+    "talk": "Noblewoman",
+    "tone": "Vigorous"
   },
   "Sedna": {
-    "atks": [12, 63, 134, 34, 84, 106, 37, 81],
+    "atks": [192, 1, 2, 134, 85, 34, 38, 106, 82],
     "inherit": "death",
     "lvl": 45,
-    "person": "Wild",
+    "price": 14600,
     "race": "Lady",
-    "resists": "-----7--------snr1s7",
-    "skills": [
-      "Blizzard Breath",
-      "Rumble Rush",
-      "Posumudi"
-    ],
-    "stats": [365, 185, 22, 8, 15, 8, 10, 10],
-    "tone": "Lady"
+    "resists": "-----snR1s7-----7--",
+    "skills": ["Blizzard Breath", "Rumble Rush", "Posumudi"],
+    "stats": [365, 205, 63, 450, 22, 8, 15, 8, 10, 10],
+    "talk": "Lady",
+    "tone": "Wild"
   },
   "Sekhmet": {
-    "atks": [10, 56, 100, 26, 73, 86, 31, 72],
+    "atks": [74, 1, 1, 100, 73, 26, 32, 86, 72],
     "inherit": "fire",
     "lvl": 36,
-    "person": "Calm",
+    "price": 9920,
     "race": "Lady",
-    "resists": "---------77777sns1s1",
-    "skills": [
-      "Maragi",
-      "Dormina",
-      "Makarakarn",
-      "Dekunda"
-    ],
-    "stats": [214, 131, 14, 8, 11, 7, 14, 8],
-    "tone": "Lady"
+    "resists": "77777sns1s1--------",
+    "skills": ["Maragi", "Dormina", "Makarakarn", "Dekunda"],
+    "stats": [214, 151, 56, 360, 14, 8, 11, 7, 14, 8],
+    "talk": "Lady",
+    "tone": "Calm"
   },
   "Shaytan": {
-    "atks": [10, 18, 52, 18, 37, 44, 17, 36],
+    "atks": [23, 1, 1, 52, 37, 18, 17, 44, 36],
     "drop": "S-High",
     "inherit": "fire",
     "lvl": 18,
-    "person": "Calm",
+    "price": 2800,
     "race": "Yoma",
-    "resists": "---------n3---1s7ss1",
-    "skills": [
-      "Agi",
-      "Shipani"
-    ],
-    "stats": [77, 51, 8, 4, 8, 4, 8, 3],
-    "tone": "Boy"
+    "resists": "nX---1s7ss1--------",
+    "skills": ["Agi", "Shipani"],
+    "stats": [77, 71, 18, 180, 8, 4, 8, 4, 8, 3],
+    "talk": "Boy",
+    "tone": "Calm"
   },
   "Shiisaa": {
-    "atks": [10, 22, 38, 10, 24, 38, 14, 24],
-    "inherit": "phys",
+    "atks": [13, 1, 1, 38, 24, 10, 14, 38, 24],
+    "inherit": "strike",
     "lvl": 12,
-    "person": "Vigorous",
+    "price": 2400,
     "race": "Holy",
-    "resists": "-----------ss1ssss77",
-    "skills": [
-      "Untouched Zone",
-      "Estoma"
-    ],
-    "stats": [65, 28, 7, 4, 4, 7, 4, 4],
-    "tone": "Young Beast"
+    "resists": "--ss1ssss77--------",
+    "skills": ["Untouched Zone", "Estoma"],
+    "stats": [65, 48, 22, 120, 7, 4, 4, 7, 4, 4],
+    "talk": "Young Beast",
+    "tone": "Vigorous"
   },
   "Shiva": {
-    "atks": [35, 132, 232, 50, 156, 198, 70, 152],
+    "atks": [1466, 3, 5, 232, 156, 50, 70, 198, 152],
     "inherit": "almighty",
     "lvl": 84,
-    "person": "Vigorous",
+    "price": 43920,
     "race": "Fury",
-    "resists": "77777777-77777sn11ss",
-    "skills": [
-      "Megidola",
-      "Mabufula",
-      "Mazionga",
-      "Holy Wrath"
-    ],
-    "stats": [1018, 491, 32, 16, 21, 15, 17, 21],
-    "tone": "Nobleman"
+    "resists": "77777sn11ss77777777",
+    "skills": ["Megidola", "Mabufula", "Mazionga", "Holy Wrath"],
+    "stats": [1018, 511, 132, 840, 32, 16, 21, 15, 17, 21],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Sleipnir": {
-    "atks": [13, 73, 142, 25, 108, 138, 47, 106],
-    "inherit": "phys",
+    "atks": [286, 1, 3, 142, 108, 25, 48, 138, 107],
+    "inherit": "strike",
     "lvl": 55,
-    "person": "Cowardly",
+    "price": 19200,
     "race": "Holy",
-    "resists": "------------s-7nw77n",
-    "skills": [
-      "Tackle",
-      "Rakukaja",
-      "Tarunda",
-      "Traesto"
-    ],
-    "stats": [440, 209, 16, 11, 10, 14, 20, 9],
-    "tone": "Old Beast"
+    "resists": "---s-7nw77n--------",
+    "skills": ["Tackle", "Rakukaja", "Tarunda", "Traesto"],
+    "stats": [440, 229, 73, 550, 16, 11, 10, 14, 20, 9],
+    "talk": "Old Beast",
+    "tone": "Cowardly"
   },
   "Slime": {
-    "atks": [10, 1, 8, 7, 4, 8, 5, 4],
+    "atks": [1, 1, 1, 8, 6, 7, 5, 8, 6],
     "drop": "None",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 1,
-    "person": "Cowardly",
+    "price": 720,
     "race": "Foul",
-    "resists": "----------------n---",
-    "skills": [
-      "Rest"
-    ],
-    "stats": [23, 4, 3, 3, 3, 3, 3, 3],
-    "tone": "Slime"
+    "resists": "------7n-----------",
+    "skills": ["Rest"],
+    "stats": [23, 24, 1, 10, 3, 3, 3, 3, 3, 3],
+    "talk": "Slime",
+    "tone": "Cowardly"
   },
   "Spriggan": {
-    "atks": [1, 34, 108, 19, 71, 112, 36, 69],
+    "atks": [75, 0, 1.8, 108, 72, 19, 36, 112, 70],
     "drop": "Diamond",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 40,
-    "person": "Wild",
+    "price": 11400,
     "race": "Fairy",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Hell Thrust",
-      "Lariat",
-      "Wolf Claw",
-      "Rasen*"
-    ],
-    "stats": [327, 117, 14, 6, 8, 16, 7, 6],
-    "tone": "Knight"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Hell Thrust", "Lariat", "Wolf Claw"],
+    "stats": [327, 137, 34, 400, 14, 6, 8, 16, 7, 6],
+    "talk": "Knight",
+    "tone": "Wild"
   },
   "Sraosha": {
-    "atks": [23, 94, 184, 32, 136, 164, 61, 135],
+    "atks": [586, 2, 3, 184, 137, 32, 61, 164, 136],
     "inherit": "psy",
     "lvl": 69,
-    "person": "Vigorous",
+    "price": 28840,
     "race": "Herald",
-    "resists": "-------------rrnsrss",
-    "skills": [
-      "Mapsio",
-      "Shuffler",
-      "Saint Song",
-      "Traesto"
-    ],
-    "stats": [650, 333, 23, 17, 12, 13, 25, 13],
-    "tone": "Knight"
+    "resists": "----RRnsRss--------",
+    "skills": ["Mapsio", "Shuffler", "Saint Song", "Traesto"],
+    "stats": [650, 353, 94, 690, 23, 17, 12, 13, 25, 13],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Stolas": {
-    "atks": [10, 8, 26, 13, 20, 26, 10, 19],
+    "atks": [7, 1, 1, 26, 21, 13, 11, 26, 21],
     "drop": "Tonkourapan",
     "inherit": "psy",
     "lvl": 9,
-    "person": "Sly",
+    "price": 1040,
     "race": "Fallen",
-    "resists": "------------11-7s---",
-    "skills": [
-      "Psi",
-      "Hapirma",
-      "Dia"
-    ],
-    "stats": [40, 23, 4, 3, 6, 4, 6, 3],
-    "tone": "Young Beast"
+    "resists": "---11-7s-----------",
+    "skills": ["Psi", "Hapirma", "Dia"],
+    "stats": [40, 43, 8, 90, 4, 3, 6, 4, 6, 3],
+    "talk": "Young Beast",
+    "tone": "Sly"
   },
   "Stymphalides": {
-    "atks": [2, 30, 84, 21, 64, 76, 28, 63],
+    "atks": [60, 0, 2.2, 84, 64, 21, 28, 76, 63],
     "drop": "Cakra Chip",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 32,
-    "person": "Wild",
+    "price": 7840,
     "race": "Raptor",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Hapirma",
-      "Peck"
-    ],
-    "stats": [152, 104, 10, 7, 9, 6, 13, 4],
-    "tone": "Young Beast"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Hapirma", "Peck"],
+    "stats": [152, 124, 30, 320, 10, 7, 9, 6, 13, 4],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Succubus": {
-    "atks": [10, 34, 104, 35, 75, 102, 38, 75],
+    "atks": [80, 1, 1, 104, 76, 35, 39, 102, 76],
     "drop": "Opal",
     "inherit": "ice",
     "lvl": 42,
-    "person": "Insightful",
+    "price": 11800,
     "race": "Night",
-    "resists": "-771-111-wnn---7d7--",
-    "skills": [
-      "Mabufu",
-      "Sexy Dance",
-      "Demon's Allure (Male)*"
-    ],
-    "stats": [224, 185, 10, 10, 15, 9, 9, 6],
-    "tone": "Lady"
+    "resists": "wnn---7d7---771-111",
+    "skills": ["Mabufu", "Sexy Dance"],
+    "stats": [224, 205, 34, 420, 10, 10, 15, 9, 9, 6],
+    "talk": "Lady",
+    "tone": "Insightful"
   },
   "Suiko": {
-    "atks": [10, 15, 64, 14, 40, 66, 21, 39],
+    "atks": [33, 1, 1, 64, 40, 14, 22, 66, 39],
     "drop": "Turquoise",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 22,
-    "person": "Calm",
+    "price": 4680,
     "race": "Wilder",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Shibaboo",
-      "Sukunda"
-    ],
-    "stats": [140, 54, 10, 4, 6, 11, 4, 4],
-    "tone": "Young Man"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Shibaboo", "Sukunda"],
+    "stats": [140, 74, 15, 220, 10, 4, 6, 11, 4, 4],
+    "talk": "Young Man",
+    "tone": "Calm"
   },
   "Susano-o": {
-    "atks": [20, 112, 198, 40, 131, 170, 59, 127],
+    "atks": [540, 2, 2, 198, 131, 40, 59, 170, 127],
     "inherit": "death",
     "lvl": 70,
-    "person": "Impatient",
+    "price": 33280,
     "race": "Fury",
-    "resists": "-----7--------snr1s7",
-    "skills": [
-      "Mazanma",
-      "Mudola",
-      "Ether Mace",
-      "Schneiden Axe"
-    ],
-    "stats": [801, 347, 29, 13, 17, 15, 16, 14],
-    "tone": "Knight"
+    "resists": "-----snR1s7-----7--",
+    "skills": ["Mazanma", "Mudola", "Ether Mace", "Schneiden Axe"],
+    "stats": [801, 367, 112, 700, 29, 13, 17, 15, 16, 14],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Sylph": {
-    "atks": [10, 27, 60, 19, 49, 58, 25, 50],
+    "atks": [29, 1, 1, 60, 49, 19, 26, 58, 50],
     "inherit": "elem",
     "lvl": 24,
-    "person": "Insightful",
+    "price": 5280,
     "race": "Element",
-    "resists": "---77------7R--sw-7s",
-    "skills": [
-      "Zanma",
-      "Mazan",
-      "Liftoma"
-    ],
-    "stats": [88, 83, 6, 10, 7, 5, 11, 5],
-    "tone": "Girl"
+    "resists": "--72--sw-7s---77---",
+    "skills": ["Zanma", "Mazan", "Liftoma"],
+    "stats": [88, 103, 27, 240, 6, 10, 7, 5, 11, 5],
+    "talk": "Girl",
+    "tone": "Insightful"
   },
   "Take-Mikazuchi": {
-    "atks": [20, 71, 150, 23, 99, 136, 43, 95],
+    "atks": [318, 2, 2, 150, 100, 23, 43, 136, 96],
     "inherit": "elec",
     "lvl": 53,
-    "person": "Wild",
+    "price": 18480,
     "race": "Kishin",
-    "resists": "-----------D-3sn-sss",
-    "skills": [
-      "Mazionga",
-      "Spin Slash",
-      "Innga"
-    ],
-    "stats": [519, 174, 22, 7, 10, 15, 13, 10],
-    "tone": "Knight"
+    "resists": "--D-Xsn-sss--------",
+    "skills": ["Mazionga", "Spin Slash", "Innga"],
+    "stats": [519, 194, 71, 530, 22, 7, 10, 15, 13, 10],
+    "talk": "Knight",
+    "tone": "Wild"
   },
   "Tao Tie": {
-    "atks": [23, 87, 178, 51, 112, 162, 63, 110],
+    "atks": [550, 2, 3, 178, 113, 51, 63, 162, 111],
     "drop": "A-Kakusei",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 64,
-    "person": "Wild",
+    "price": 27160,
     "race": "Vile",
-    "resists": "---------444--snns--",
-    "skills": [
-      "Shikyou",
-      "Wolf Claw",
-      "Gouge*"
-    ],
-    "stats": [702, 395, 25, 18, 21, 17, 9, 7],
-    "tone": "Knight"
+    "resists": "eee--snns----------",
+    "skills": ["Shikyou", "Wolf Claw"],
+    "stats": [702, 415, 87, 640, 25, 18, 21, 17, 9, 7],
+    "talk": "Knight",
+    "tone": "Wild"
   },
   "Taowu": {
-    "atks": [10, 91, 172, 32, 118, 150, 57, 117],
+    "atks": [206, 1, 1, 172, 119, 32, 57, 150, 118],
     "drop": "Plasma Cart",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 65,
-    "person": "Wild",
+    "price": 22960,
     "race": "Wilder",
-    "resists": "-------------rrnsrss",
-    "skills": [
-      "Diarahan",
-      "Brain Burst",
-      "Stun Crash",
-      "Eat Whole*"
-    ],
-    "stats": [531, 315, 21, 17, 12, 10, 15, 7],
-    "tone": "Young Beast"
+    "resists": "----RRnsRss--------",
+    "skills": ["Diarahan", "Brain Burst", "Stun Crash"],
+    "stats": [531, 335, 91, 650, 21, 17, 12, 10, 15, 7],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Tattooed Man": {
-    "atks": [10, 0, 112, 13, 78, 92, 31, 75],
+    "atks": [91, 1, 1, 112, 78, 13, 31, 92, 76],
     "drop": "Nihil Sword",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 40,
-    "person": "Impatient",
+    "price": 11400,
     "race": "Foul",
-    "resists": "----------------n---",
-    "skills": [
-      "Arm Chopper",
-      "Cherry Blossoms",
-      "Tatami Shield"
-    ],
-    "stats": [245, 106, 16, 7, 5, 6, 12, 11],
-    "tone": "Kansai"
+    "resists": "------7n-----------",
+    "skills": ["Arm Chopper", "Cherry Blossoms", "Tatami Shield"],
+    "stats": [245, 126, 0, 400, 16, 7, 5, 6, 12, 11],
+    "talk": "Kansai",
+    "tone": "Impatient"
   },
   "Tenaga": {
-    "atks": [10, 12, 52, 15, 41, 48, 19, 41],
+    "atks": [23, 1, 1, 52, 42, 15, 19, 48, 42],
     "drop": "Cossack Knife",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 20,
-    "person": "Calm",
+    "price": 4440,
     "race": "Jaki",
-    "resists": "----------------n---",
-    "skills": [
-      "Rakukaja",
-      "Media",
-      "Lariat"
-    ],
-    "stats": [72, 56, 6, 6, 6, 4, 9, 6],
-    "tone": "Knight"
+    "resists": "------7n-----------",
+    "skills": ["Rakukaja", "Media", "Lariat"],
+    "stats": [72, 76, 12, 200, 6, 6, 6, 4, 9, 6],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Tengu": {
-    "atks": [13, 33, 94, 20, 69, 82, 30, 68],
+    "atks": [132, 1, 3, 94, 69, 20, 30, 82, 68],
     "drop": "Repulse Water",
     "inherit": "force",
     "lvl": 35,
-    "person": "Prideful",
+    "price": 8320,
     "race": "Yoma",
-    "resists": "-----w---wR---7s-777",
-    "skills": [
-      "Mazan",
-      "Macha's Strike",
-      "Estoma",
-      "Provoke",
-      "Horseshoe*"
-    ],
-    "stats": [182, 113, 12, 8, 8, 6, 13, 5],
-    "tone": "Elder"
+    "resists": "w2---7s-777-----w--",
+    "skills": ["Mazan", "Macha's Strike", "Estoma", "Provoke"],
+    "stats": [182, 133, 33, 350, 12, 8, 8, 6, 13, 5],
+    "talk": "Elder",
+    "tone": "Prideful"
   },
   "Thanatos": {
-    "atks": [10, 237, 86, 42, 61, 80, 32, 61],
+    "atks": [56, 1, 1, 86, 62, 42, 32, 80, 61],
     "drop": "Ryukaku",
     "inherit": "death",
     "lvl": 32,
-    "person": "Prideful",
+    "price": 9760,
     "race": "Reaper",
-    "resists": "wwwwwwww-dDdDDnnnnnn",
-    "skills": [
-      "Mudola",
-      "Thunder Break",
-      "Shuffler"
-    ],
-    "stats": [176, 153, 11, 8, 19, 8, 10, 5],
-    "tone": "Cynic"
+    "resists": "dDdDDnnnnnnwwwwwwww",
+    "skills": ["Mudola", "Thunder Break", "Shuffler"],
+    "stats": [176, 173, 237, 320, 11, 8, 19, 8, 10, 5],
+    "talk": "Cynic",
+    "tone": "Prideful"
   },
   "Thor": {
-    "atks": [20, 75, 166, 28, 107, 148, 48, 103],
+    "atks": [385, 2, 2, 166, 107, 28, 48, 148, 103],
     "inherit": "elec",
     "lvl": 58,
-    "person": "Impatient",
+    "price": 19920,
     "race": "Kishin",
-    "resists": "-------s---r--snss77",
-    "skills": [
-      "Mazionga",
-      "Skull Cracker",
-      "Meteor Fist"
-    ],
-    "stats": [624, 213, 25, 8, 12, 16, 12, 10],
-    "tone": "Nobleman"
+    "resists": "--R--snss77-------s",
+    "skills": ["Mazionga", "Skull Cracker", "Meteor Fist"],
+    "stats": [624, 233, 75, 580, 25, 8, 12, 16, 12, 10],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Throne": {
-    "atks": [12, 51, 152, 25, 102, 134, 45, 100],
+    "atks": [244, 1, 2, 152, 104, 25, 46, 134, 101],
     "drop": "Dharmacakra Wheel",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 57,
-    "person": "Vigorous",
+    "price": 17760,
     "race": "Divine",
-    "resists": "wwwww3ww-RRRRRRRRRRR",
-    "skills": [
-      "Maragion",
-      "Spin Slash",
-      "Recarm"
-    ],
-    "stats": [440, 209, 19, 10, 10, 10, 10, 15],
-    "tone": "Knight"
+    "resists": "22222222222wwwwwXww",
+    "skills": ["Maragion", "Spin Slash", "Recarm"],
+    "stats": [440, 229, 51, 570, 19, 10, 10, 10, 10, 15],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Titan": {
-    "atks": [10, 55, 150, 22, 92, 134, 47, 90],
+    "atks": [159, 1, 1, 150, 93, 22, 47, 134, 91],
     "drop": "Kaiser Sword",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 53,
-    "person": "Vigorous",
+    "price": 16800,
     "race": "Jirae",
-    "resists": "-----------1--7ns7-s",
-    "skills": [
-      "Tackle",
-      "Quick Murder"
-    ],
-    "stats": [506, 195, 22, 12, 8, 14, 7, 7],
-    "tone": "Nobleman"
+    "resists": "--1--7ns7-s--------",
+    "skills": ["Tackle", "Quick Murder"],
+    "stats": [506, 215, 55, 530, 22, 12, 8, 14, 7, 7],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Titania": {
-    "atks": [20, 41, 120, 44, 86, 110, 44, 87],
+    "atks": [208, 2, 2, 120, 87, 44, 45, 110, 87],
     "drop": "A-Chinkai",
     "inherit": "ice",
     "lvl": 49,
-    "person": "Calm",
+    "price": 13200,
     "race": "Fairy",
-    "resists": "wwwww3ww-RRRRRRRRRRR",
-    "skills": [
-      "Mabufu",
-      "Sexy Dance",
-      "Hold in my Arms"
-    ],
-    "stats": [232, 261, 11, 13, 19, 6, 9, 8],
-    "tone": "Noblewoman"
+    "resists": "22222222222wwwwwXww",
+    "skills": ["Mabufu", "Sexy Dance", "Hold in my Arms"],
+    "stats": [232, 281, 41, 490, 11, 13, 19, 6, 9, 8],
+    "talk": "Noblewoman",
+    "tone": "Calm"
   },
   "Todomeki": {
-    "atks": [10, 31, 82, 16, 53, 76, 28, 52],
+    "atks": [51, 1, 1, 82, 53, 16, 28, 76, 52],
     "drop": "Dis-Palyze",
     "inherit": "psy",
     "lvl": 29,
-    "person": "Insightful",
+    "price": 5520,
     "race": "Femme",
-    "resists": "------------11-7s---",
-    "skills": [
-      "Psio",
-      "Rakunda",
-      "Stun Claw",
-      "Venom Claw"
-    ],
-    "stats": [177, 86, 12, 8, 6, 9, 6, 5],
-    "tone": "Lady"
+    "resists": "---11-7s-----------",
+    "skills": ["Psio", "Rakunda", "Stun Claw", "Venom Claw"],
+    "stats": [177, 106, 31, 290, 12, 8, 6, 9, 6, 5],
+    "talk": "Lady",
+    "tone": "Insightful"
   },
   "Tokebi": {
-    "atks": [10, 21, 66, 20, 49, 62, 22, 48],
+    "atks": [35, 1, 1, 66, 49, 20, 22, 62, 49],
     "drop": "M16A2",
     "inherit": "force",
     "lvl": 25,
-    "person": "Sly",
+    "price": 5040,
     "race": "Brute",
-    "resists": "77777-77----1--sss--",
-    "skills": [
-      "Zan",
-      "Kyou",
-      "Vulcan Kick"
-    ],
-    "stats": [111, 75, 8, 5, 9, 6, 9, 5],
-    "tone": "Young Man"
+    "resists": "---1--sss--77777-77",
+    "skills": ["Zan", "Kyou", "Vulcan Kick"],
+    "stats": [111, 95, 21, 250, 8, 5, 9, 6, 9, 5],
+    "talk": "Young Man",
+    "tone": "Sly"
   },
   "Torso": {
-    "atks": [10, 12, 46, 14, 33, 46, 17, 33],
+    "atks": [18, 1, 1, 46, 34, 14, 18, 46, 34],
     "drop": "Amethyst",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 17,
-    "person": "Sly",
+    "price": 2720,
     "race": "Spirit",
-    "resists": "-s1n-----7s-7-s3n--1",
-    "skills": [
-      "Venom Claw"
-    ],
-    "stats": [74, 45, 6, 5, 6, 6, 6, 5],
-    "tone": "Lady"
+    "resists": "7s-7-sXn--1-s1n----",
+    "skills": ["Venom Claw"],
+    "stats": [74, 65, 12, 170, 6, 5, 6, 6, 6, 5],
+    "talk": "Lady",
+    "tone": "Sly"
   },
   "Toubyou": {
-    "atks": [1, 12, 42, 16, 30, 36, 14, 30],
+    "atks": [14, 0, 1.8, 42, 31, 16, 14, 36, 31],
     "drop": "Dis-Charm",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 15,
-    "person": "Calm",
+    "price": 2560,
     "race": "Drake",
-    "resists": "-----7-----1--ssss11",
-    "skills": [
-      "Magnetic Storm",
-      "Charm Bite"
-    ],
-    "stats": [56, 41, 6, 4, 7, 3, 6, 6],
-    "tone": "Old Beast"
+    "resists": "--1--ssss11-----7--",
+    "skills": ["Magnetic Storm", "Charm Bite"],
+    "stats": [56, 61, 12, 150, 6, 4, 7, 3, 6, 6],
+    "talk": "Old Beast",
+    "tone": "Calm"
   },
   "Triglav": {
-    "atks": [12, 77, 134, 34, 82, 112, 40, 79],
+    "atks": [192, 1, 2, 134, 83, 34, 40, 112, 80],
     "inherit": "ice",
     "lvl": 45,
-    "person": "Vigorous",
+    "price": 14600,
     "race": "Fury",
-    "resists": "----------n-7-7nssss",
-    "skills": [
-      "Bufula",
-      "Mabufu",
-      "Hama",
-      "Phasedi"
-    ],
-    "stats": [399, 192, 22, 9, 15, 11, 9, 7],
-    "tone": "Cynic"
+    "resists": "-n-7-7nssss--------",
+    "skills": ["Bufula", "Mabufu", "Hanma", "Phasedi"],
+    "stats": [399, 212, 77, 450, 22, 9, 15, 11, 9, 7],
+    "talk": "Cynic",
+    "tone": "Vigorous"
   },
   "Tuofei": {
-    "atks": [2, 22, 56, 21, 45, 52, 21, 45],
+    "atks": [29, 0, 2.2, 56, 45, 21, 21, 52, 45],
     "drop": "Stun Shot",
     "inherit": "elec",
     "lvl": 22,
-    "person": "Calm",
+    "price": 4680,
     "race": "Flight",
-    "resists": "17-wsss----d--11w1ss",
-    "skills": [
-      "Zio",
-      "Peck",
-      "Meat Bullet"
-    ],
-    "stats": [77, 70, 6, 6, 9, 4, 10, 4],
-    "tone": "Young Beast"
+    "resists": "--d--11w1ss17-wsss-",
+    "skills": ["Zio", "Peck", "Meat Bullet"],
+    "stats": [77, 90, 22, 220, 6, 6, 9, 4, 10, 4],
+    "talk": "Young Beast",
+    "tone": "Calm"
   },
   "Tyr": {
-    "atks": [12, 54, 112, 19, 74, 104, 35, 71],
+    "atks": [137, 1, 2, 112, 75, 19, 35, 104, 72],
     "inherit": "force",
     "lvl": 39,
-    "person": "Impatient",
+    "price": 9760,
     "race": "Kishin",
-    "resists": "------------s-7nw77n",
-    "skills": [
-      "Zan",
-      "Mazan",
-      "Quick Murder",
-      "Cherry Blossoms"
-    ],
-    "stats": [320, 119, 17, 7, 8, 13, 11, 5],
-    "tone": "Nobleman"
+    "resists": "---s-7nw77n--------",
+    "skills": ["Zan", "Mazan", "Quick Murder", "Cherry Blossoms"],
+    "stats": [320, 139, 54, 390, 17, 7, 8, 13, 11, 5],
+    "talk": "Nobleman",
+    "tone": "Impatient"
   },
   "Ubu": {
-    "atks": [1, 2, 18, 11, 12, 16, 8, 11],
+    "atks": [3, 0, 1.8, 18, 13, 11, 8, 16, 13],
     "drop": "Cakra Drop",
     "inherit": "force",
     "lvl": 5,
-    "person": "Insightful",
+    "price": 880,
     "race": "Vermin",
-    "resists": "----------------n---",
-    "skills": [
-      "Agi",
-      "Zan"
-    ],
-    "stats": [30, 14, 4, 3, 5, 3, 4, 3],
-    "tone": "Girl"
+    "resists": "------7n-----------",
+    "skills": ["Agi", "Zan"],
+    "stats": [30, 34, 2, 50, 4, 3, 5, 3, 4, 3],
+    "talk": "Girl",
+    "tone": "Insightful"
   },
   "Ukano Mitama": {
-    "atks": [12, 76, 128, 29, 100, 124, 48, 101],
-    "inherit": "recovery",
+    "atks": [176, 1, 2, 128, 101, 29, 48, 124, 102],
+    "inherit": "reca",
     "lvl": 53,
-    "person": "Mild",
+    "price": 18480,
     "race": "Avatar",
-    "resists": "------s----7r7sns777",
-    "skills": [
-      "Diarahan",
-      "Active Song",
-      "Petradi"
-    ],
-    "stats": [290, 238, 11, 15, 11, 9, 15, 16],
-    "tone": "Knight"
+    "resists": "--7R7sns777------s-",
+    "skills": ["Diarahan", "Active Song", "Petradi"],
+    "stats": [290, 258, 76, 530, 11, 15, 11, 9, 15, 16],
+    "talk": "Knight",
+    "tone": "Mild"
   },
   "Undine": {
-    "atks": [10, 30, 66, 33, 51, 72, 28, 51],
+    "atks": [35, 1, 1, 66, 52, 33, 28, 72, 52],
     "inherit": "elem",
     "lvl": 28,
-    "person": "Calm",
+    "price": 5880,
     "race": "Element",
-    "resists": "-----w---wR---7s-777",
-    "skills": [
-      "Zionga",
-      "Mazio",
-      "Me Patra"
-    ],
-    "stats": [114, 116, 5, 7, 15, 8, 7, 7],
-    "tone": "Lady"
+    "resists": "w2---7s-777-----w--",
+    "skills": ["Zionga", "Mazio", "Me Patra"],
+    "stats": [114, 136, 30, 280, 5, 7, 15, 8, 7, 7],
+    "talk": "Lady",
+    "tone": "Calm"
   },
   "Uwabami": {
-    "atks": [10, 29, 92, 16, 60, 86, 27, 58],
+    "atks": [63, 1, 1, 92, 61, 16, 28, 86, 59],
     "drop": "Aquamarine",
-    "inherit": "quad",
+    "inherit": "temp",
     "lvl": 33,
-    "person": "Impatient",
+    "price": 8000,
     "race": "Drake",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Agilao",
-      "Dormina",
-      "Rest"
-    ],
-    "stats": [215, 89, 13, 5, 7, 10, 6, 9],
-    "tone": "Lunatic"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Agilao", "Dormina", "Rest"],
+    "stats": [215, 108, 29, 330, 13, 5, 7, 10, 6, 9],
+    "talk": "Lunatic",
+    "tone": "Impatient"
   },
   "Vasuki": {
-    "atks": [10, 91, 186, 35, 123, 176, 58, 120],
+    "atks": [240, 1, 1, 186, 124, 35, 58, 176, 121],
     "drop": "Ryukaku",
     "inherit": "ice",
     "lvl": 70,
-    "person": "Wild",
+    "price": 27840,
     "race": "Drake",
-    "resists": "----ww---ssssssn1sss",
-    "skills": [
-      "Glacial Blast",
-      "Venom Flash",
-      "Stun Crash"
-    ],
-    "stats": [747, 310, 23, 11, 15, 18, 11, 9],
-    "tone": "Nobleman"
+    "resists": "ssssssn1sss----ww--",
+    "skills": ["Glacial Blast", "Venom Flash", "Stun Crash"],
+    "stats": [747, 330, 91, 700, 23, 11, 15, 18, 11, 9],
+    "talk": "Nobleman",
+    "tone": "Wild"
   },
   "Vetala": {
-    "atks": [10, 81, 137, 40, 98, 126, 48, 126],
+    "atks": [128, 1, 1, 134, 98, 40, 48, 126, 98],
     "drop": "A-Kakusei",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 54,
-    "person": "Vigorous",
+    "price": 17040,
     "race": "Haunt",
-    "resists": "-771-111-wnn---7d7--",
-    "skills": [
-      "Tarunda",
-      "Shipani",
-      "Hell Thrust"
-    ],
-    "stats": [322, 275, 13, 13, 17, 9, 13, 6],
-    "tone": "Nobleman"
+    "resists": "wnn---7d7---771-111",
+    "skills": ["Tarunda", "Shipani", "Hell Thrust"],
+    "stats": [322, 295, 81, 540, 13, 13, 17, 9, 13, 6],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Victor": {
-    "atks": [10, 62, 110, 22, 76, 98, 39, 76],
+    "atks": [88, 1, 1, 110, 76, 22, 39, 98, 76],
     "inherit": "fire",
     "lvl": 40,
-    "person": "Insightful",
+    "price": 13400,
     "race": "Herald",
-    "resists": "------s----7r7sns777",
-    "skills": [
-      "Agilao",
-      "Psio",
-      "Sukukaja",
-      "Liftoma"
-    ],
-    "stats": [266, 155, 15, 13, 8, 9, 10, 12],
-    "tone": "Nobleman"
+    "resists": "--7R7sns777------s-",
+    "skills": ["Agilao", "Psio", "Sukukaja", "Liftoma"],
+    "stats": [266, 175, 62, 400, 15, 13, 8, 9, 10, 12],
+    "talk": "Nobleman",
+    "tone": "Insightful"
   },
   "Vidofnir": {
-    "atks": [12, 57, 120, 23, 88, 104, 39, 87],
+    "atks": [156, 1, 2, 120, 89, 23, 39, 104, 88],
     "inherit": "elec",
     "lvl": 45,
-    "person": "Sly",
+    "price": 13600,
     "race": "Avian",
-    "resists": "17-wsss----d--11w1ss",
-    "skills": [
-      "Zionga",
-      "Makafuji",
-      "Sukukaja"
-    ],
-    "stats": [273, 167, 15, 11, 9, 7, 16, 10],
-    "tone": "Old Beast"
+    "resists": "--d--11w1ss17-wsss-",
+    "skills": ["Zionga", "Makafuji", "Sukukaja"],
+    "stats": [273, 187, 57, 450, 15, 11, 9, 7, 16, 10],
+    "talk": "Old Beast",
+    "tone": "Sly"
   },
   "Virtue": {
-    "atks": [2, 41, 122, 22, 81, 104, 40, 80],
+    "atks": [120, 0, 2.2, 122, 81, 22, 40, 104, 80],
     "drop": "Final Guard",
     "inherit": "expel",
     "lvl": 44,
-    "person": "Calm",
+    "price": 12200,
     "race": "Divine",
-    "resists": "---wwwww-sssssssssss",
-    "skills": [
-      "Maragi",
-      "Hama",
-      "Diarahan",
-      "Meteor Fist"
-    ],
-    "stats": [301, 166, 17, 12, 8, 8, 10, 6],
-    "tone": "Nobleman"
+    "resists": "sssssssssss---wwwww",
+    "skills": ["Maragi", "Hanma", "Diarahan", "Meteor Fist"],
+    "stats": [301, 186, 41, 440, 17, 12, 8, 8, 10, 6],
+    "talk": "Nobleman",
+    "tone": "Calm"
   },
   "Vishnu": {
-    "atks": [24, 118, 228, 52, 151, 204, 72, 147],
+    "atks": [1063, 2, 4, 228, 151, 52, 72, 204, 147],
     "inherit": "almighty",
     "lvl": 82,
-    "person": "Vigorous",
+    "price": 42840,
     "race": "Deity",
-    "resists": "77777777-77777sn11ss",
-    "skills": [
-      "Megidola",
-      "Hamaon",
-      "Diarahan"
-    ],
-    "stats": [1099, 490, 32, 16, 22, 20, 17, 12],
-    "tone": "Nobleman"
+    "resists": "77777sn11ss77777777",
+    "skills": ["Megidola", "Hamaon", "Diarahan"],
+    "stats": [1099, 510, 118, 820, 32, 16, 22, 20, 17, 12],
+    "talk": "Nobleman",
+    "tone": "Vigorous"
   },
   "Vouivre": {
-    "atks": [10, 38, 78, 19, 58, 76, 27, 57],
+    "atks": [47, 1, 1, 78, 58, 19, 27, 76, 58],
     "drop": "Garnet",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 30,
-    "person": "Wild",
+    "price": 7520,
     "race": "Snake",
-    "resists": "-----7-----1--ssss11",
-    "skills": [
-      "Venom Needle",
-      "Posumudi",
-      "Traesto"
-    ],
-    "stats": [151, 89, 9, 6, 8, 8, 10, 6],
-    "tone": "Young Woman"
+    "resists": "--1--ssss11-----7--",
+    "skills": ["Venom Needle", "Posumudi", "Traesto"],
+    "stats": [151, 109, 38, 300, 9, 6, 8, 8, 10, 6],
+    "talk": "Young Woman",
+    "tone": "Wild"
   },
   "Waira": {
-    "atks": [10, 4, 30, 11, 19, 26, 10, 18],
+    "atks": [9, 1, 1, 30, 20, 11, 10, 26, 19],
     "drop": "Dis-Charm",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 9,
-    "person": "Insightful",
+    "price": 1040,
     "race": "Wilder",
-    "resists": "----------------n---",
-    "skills": [
-      "Tackle",
-      "Rest"
-    ],
-    "stats": [45, 22, 6, 3, 5, 4, 4, 4],
-    "tone": "Young Beast"
+    "resists": "------7n-----------",
+    "skills": ["Tackle", "Rest"],
+    "stats": [45, 42, 4, 90, 6, 3, 5, 4, 4, 4],
+    "talk": "Young Beast",
+    "tone": "Insightful"
   },
   "Waxwork": {
-    "atks": [1, 5, 34, 9, 21, 38, 13, 20],
+    "atks": [9, 0, 1.8, 34, 22, 9, 13, 38, 22],
     "drop": "Dis-Palyze",
-    "inherit": "ailment",
+    "inherit": "recb",
     "lvl": 11,
-    "person": "Sly",
+    "price": 2240,
     "race": "Undead",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Sexy Dance",
-      "Paral Eyes*"
-    ],
-    "stats": [62, 24, 6, 3, 4, 8, 4, 3],
-    "tone": "Young Woman"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Sexy Dance"],
+    "stats": [62, 44, 5, 110, 6, 3, 4, 8, 4, 3],
+    "talk": "Young Woman",
+    "tone": "Sly"
   },
   "Wu Kong": {
-    "atks": [20, 93, 160, 33, 109, 140, 48, 105],
+    "atks": [359, 2, 2, 160, 109, 33, 48, 140, 106],
     "inherit": "force",
     "lvl": 56,
-    "person": "Prideful",
+    "price": 20880,
     "race": "Fury",
-    "resists": "---------nw---7nss-s",
-    "skills": [
-      "Zanma",
-      "Mazanma",
-      "Makakaja",
-      "Provoke"
-    ],
-    "stats": [561, 236, 24, 10, 14, 14, 18, 7],
-    "tone": "Boy"
+    "resists": "nw---7nss-s--------",
+    "skills": ["Zanma", "Mazanma", "Makakaja", "Provoke"],
+    "stats": [561, 256, 93, 560, 24, 10, 14, 14, 18, 7],
+    "talk": "Boy",
+    "tone": "Prideful"
   },
   "Xiezhai": {
-    "atks": [10, 32, 50, 18, 36, 46, 18, 36],
-    "inherit": "recovery",
+    "atks": [21, 1, 1, 50, 37, 18, 18, 46, 36],
+    "inherit": "reca",
     "lvl": 18,
-    "person": "Calm",
+    "price": 2960,
     "race": "Holy",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Makafuji",
-      "Nurse",
-      "Phasedi"
-    ],
-    "stats": [77, 53, 7, 5, 8, 5, 7, 5],
-    "tone": "Young Beast"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Makafuji", "Nurse", "Phasedi"],
+    "stats": [77, 73, 32, 180, 7, 5, 8, 5, 7, 5],
+    "talk": "Young Beast",
+    "tone": "Calm"
   },
   "Xiuhtecuhtli": {
-    "atks": [10, 40, 112, 29, 77, 102, 35, 75],
+    "atks": [91, 1, 1, 112, 77, 29, 35, 102, 76],
     "drop": "Renki Sword",
     "inherit": "fire",
     "lvl": 43,
-    "person": "Impatient",
+    "price": 12000,
     "race": "Yoma",
-    "resists": "---------n3---1s7ss1",
-    "skills": [
-      "Agilao",
-      "Maragi",
-      "Fire Wall"
-    ],
-    "stats": [251, 160, 13, 7, 13, 8, 7, 12],
-    "tone": "Knight"
+    "resists": "nX---1s7ss1--------",
+    "skills": ["Agilao", "Maragi", "Fire Wall"],
+    "stats": [251, 180, 40, 430, 13, 7, 13, 8, 7, 12],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Yaksha": {
-    "atks": [10, 46, 146, 23, 98, 126, 40, 94],
+    "atks": [151, 1, 1, 146, 98, 23, 41, 126, 95],
     "drop": "Renki Sword",
     "inherit": "elec",
     "lvl": 52,
-    "person": "Vigorous",
+    "price": 16560,
     "race": "Brute",
-    "resists": "-------s---r--snss77",
-    "skills": [
-      "Zionga",
-      "Diarama",
-      "Schneiden Axe",
-      "Paraladi"
-    ],
-    "stats": [444, 171, 21, 7, 10, 11, 14, 6],
-    "tone": "Knight"
+    "resists": "--R--snss77-------s",
+    "skills": ["Zionga", "Diarama", "Schneiden Axe", "Paraladi"],
+    "stats": [444, 191, 46, 520, 21, 7, 10, 11, 14, 6],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Yamachichi": {
-    "atks": [2, 17, 46, 13, 33, 40, 17, 33],
+    "atks": [20, 0, 2.2, 46, 34, 13, 17, 40, 34],
     "drop": "Tonkourapan",
     "inherit": "psy",
     "lvl": 16,
-    "person": "Sly",
+    "price": 2640,
     "race": "Flight",
-    "resists": "17-wsss---w-w--s-1--",
-    "skills": [
-      "Psi",
-      "Dormina",
-      "Venom Claw"
-    ],
-    "stats": [66, 43, 7, 6, 5, 4, 8, 3],
-    "tone": "Cynic"
+    "resists": "-w-w--s-1--17-wsss-",
+    "skills": ["Psi", "Dormina", "Venom Claw"],
+    "stats": [66, 63, 17, 160, 7, 6, 5, 4, 8, 3],
+    "talk": "Cynic",
+    "tone": "Sly"
   },
   "Yamata-no-Orochi": {
-    "atks": [99, 68, 162, 27, 105, 152, 48, 101],
+    "atks": [184, 8, 8, 162, 106, 27, 48, 152, 102],
     "drop": "Renki Sword",
     "inherit": "fire",
     "lvl": 59,
-    "person": "Wild",
+    "price": 18240,
     "race": "Snake",
-    "resists": "-----7---sss--71ss7s",
-    "skills": [
-      "Fire Breath",
-      "Sonic Boom",
-      "Gouge*"
-    ],
-    "stats": [605, 208, 22, 7, 12, 17, 10, 8],
-    "tone": "Young Beast"
+    "resists": "sss--71ss7s-----7--",
+    "skills": ["Fire Breath", "Sonic Boom"],
+    "stats": [605, 228, 68, 590, 22, 7, 12, 17, 10, 8],
+    "talk": "Young Beast",
+    "tone": "Wild"
   },
   "Yamawaro": {
-    "atks": [10, 13, 46, 13, 30, 44, 19, 30],
+    "atks": [18, 1, 1, 46, 30, 13, 19, 44, 30],
     "drop": "Substitute Jutte",
     "inherit": "fire",
     "lvl": 16,
-    "person": "Impatient",
+    "price": 2640,
     "race": "Brute",
-    "resists": "7777ssss---w-7s71---",
-    "skills": [
-      "Agi",
-      "Shibaboo",
-      "Panic Voice"
-    ],
-    "stats": [75, 46, 7, 7, 5, 6, 4, 4],
-    "tone": "Knight"
+    "resists": "--w-7s71---7777ssss",
+    "skills": ["Agi", "Shibaboo", "Panic Voice"],
+    "stats": [75, 66, 13, 160, 7, 7, 5, 6, 4, 4],
+    "talk": "Knight",
+    "tone": "Impatient"
   },
   "Yatagarasu": {
-    "atks": [12, 65, 150, 29, 106, 126, 44, 103],
+    "atks": [238, 1, 2, 150, 106, 29, 44, 126, 103],
     "inherit": "fire",
     "lvl": 54,
-    "person": "Calm",
+    "price": 18960,
     "race": "Avian",
-    "resists": "1s-wsss--d3---1s71ss",
-    "skills": [
-      "Maragion",
-      "Agilao",
-      "Wing Flap",
-      "Charmdi"
-    ],
-    "stats": [432, 213, 21, 10, 12, 9, 18, 9],
-    "tone": "Old Beast"
+    "resists": "dX---1s71ss1s-wsss-",
+    "skills": ["Maragion", "Agilao", "Wing Flap", "Charmdi"],
+    "stats": [432, 233, 65, 540, 21, 10, 12, 9, 18, 9],
+    "talk": "Old Beast",
+    "tone": "Calm"
   },
   "Yato no Kami": {
-    "atks": [10, 30, 64, 12, 41, 60, 24, 41],
+    "atks": [33, 1, 1, 64, 41, 12, 24, 60, 41],
     "drop": "Topaz",
     "inherit": "psy",
     "lvl": 22,
-    "person": "Sly",
+    "price": 4680,
     "race": "Snake",
-    "resists": "------77---3--ssr1ss",
-    "skills": [
-      "Psio",
-      "Sukukaja",
-      "Paraladi",
-      "Paral Eyes*"
-    ],
-    "stats": [123, 61, 10, 8, 4, 8, 5, 4],
-    "tone": "Young Beast"
+    "resists": "--X--ssR1ss------77",
+    "skills": ["Psio", "Sukukaja", "Paraladi"],
+    "stats": [123, 81, 30, 220, 10, 8, 4, 8, 5, 4],
+    "talk": "Young Beast",
+    "tone": "Sly"
   },
   "Yatsufusa": {
-    "atks": [12, 47, 88, 20, 63, 76, 32, 63],
-    "inherit": "phys",
+    "atks": [87, 1, 2, 88, 63, 20, 32, 76, 63],
+    "inherit": "strike",
     "lvl": 32,
-    "person": "Vigorous",
+    "price": 8480,
     "race": "Holy",
-    "resists": "---------77777ssw-ss",
-    "skills": [
-      "Tarukaja",
-      "Feral Bite",
-      "Phasedi"
-    ],
-    "stats": [168, 117, 12, 12, 7, 6, 11, 5],
-    "tone": "Young Beast"
+    "resists": "77777ssw-ss--------",
+    "skills": ["Tarukaja", "Feral Bite", "Phasedi"],
+    "stats": [168, 137, 47, 320, 12, 12, 7, 6, 11, 5],
+    "talk": "Young Beast",
+    "tone": "Vigorous"
   },
   "Yomotsu-Ikusa": {
-    "atks": [10, 28, 90, 19, 63, 78, 27, 61],
+    "atks": [61, 1, 1, 90, 63, 19, 27, 78, 61],
     "drop": "Final Guard",
     "inherit": "ice",
     "lvl": 32,
-    "person": "Vigorous",
+    "price": 7840,
     "race": "Brute",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Bufu",
-      "Skewer",
-      "Tetraja"
-    ],
-    "stats": [185, 95, 13, 6, 8, 7, 11, 4],
-    "tone": "Knight"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Bufu", "Skewer", "Tetraja"],
+    "stats": [185, 115, 28, 320, 13, 6, 8, 7, 11, 4],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Yomotsu-Shikome": {
-    "atks": [1, 15, 52, 16, 31, 46, 17, 30],
+    "atks": [20, 0, 1.8, 52, 32, 16, 18, 46, 31],
     "drop": "Tenketusin",
     "inherit": "ice",
     "lvl": 17,
-    "person": "Insightful",
+    "price": 2720,
     "race": "Femme",
-    "resists": "----------n-7-7nssss",
-    "skills": [
-      "Bufu",
-      "Tarunda",
-      "Posumudi"
-    ],
-    "stats": [87, 48, 9, 5, 7, 6, 4, 3],
-    "tone": "Noblewoman"
+    "resists": "-n-7-7nssss--------",
+    "skills": ["Bufu", "Tarunda", "Posumudi"],
+    "stats": [87, 68, 15, 170, 9, 5, 7, 6, 4, 3],
+    "talk": "Noblewoman",
+    "tone": "Insightful"
   },
   "Yoshitsune": {
-    "atks": [35, 0, 156, 32, 115, 138, 52, 113],
-    "inherit": "none",
+    "atks": [684, 3, 5, 156, 116, 33, 52, 138, 114],
+    "inherit": "hero",
     "lvl": 57,
-    "person": "None",
+    "price": 22560,
     "race": "Hero",
-    "resists": "77777RRR-------n7---",
-    "skills": [
-      "Hassou Tobi",
-      "Buddha's Laugh",
-      "Tatami Shield",
-      "Provoke"
-    ],
-    "stats": [498, 270, 21, 15, 13, 12, 23, 10],
-    "tone": "Zoma"
+    "resists": "------n7---77777222",
+    "skills": ["Hassou Tobi", "Buddha's Laugh", "Tatami Shield", "Provoke"],
+    "stats": [498, 290, 0, 570, 21, 15, 13, 12, 23, 10],
+    "talk": "Zoma",
+    "tone": "None"
   },
   "Yowie": {
-    "atks": [10, 6, 40, 9, 29, 34, 12, 28],
+    "atks": [14, 1, 1, 40, 30, 9, 12, 34, 29],
     "drop": "Cakra Drop",
     "inherit": "elec",
     "lvl": 13,
-    "person": "Impatient",
+    "price": 2400,
     "race": "Vermin",
-    "resists": "---------33-77111171",
-    "skills": [
-      "Zio",
-      "Venom Bite"
-    ],
-    "stats": [58, 27, 7, 3, 4, 4, 8, 4],
-    "tone": "Young Beast"
+    "resists": "XX-77111171--------",
+    "skills": ["Zio", "Venom Bite"],
+    "stats": [58, 47, 6, 130, 7, 3, 4, 4, 8, 4],
+    "talk": "Young Beast",
+    "tone": "Impatient"
   },
   "Yuki Jyorou": {
-    "atks": [10, 37, 84, 32, 61, 82, 32, 61],
+    "atks": [54, 1, 1, 84, 61, 32, 33, 82, 61],
     "drop": "Sapphire",
     "inherit": "ice",
     "lvl": 34,
-    "person": "Calm",
+    "price": 8160,
     "race": "Femme",
-    "resists": "---------3D-77-s-7ss",
-    "skills": [
-      "Bufula",
-      "Mabufu",
-      "Insanity Eyes",
-      "Demon's Allure (Male)*"
-    ],
-    "stats": [151, 143, 8, 9, 14, 7, 7, 6],
-    "tone": "Noblewoman"
+    "resists": "XD-77-s-7ss--------",
+    "skills": ["Bufula", "Mabufu", "Insanity Eyes"],
+    "stats": [151, 163, 37, 340, 8, 9, 14, 7, 7, 6],
+    "talk": "Noblewoman",
+    "tone": "Calm"
   },
   "Yurlungur": {
-    "atks": [12, 59, 138, 19, 92, 128, 41, 89],
+    "atks": [203, 1, 2, 138, 93, 19, 41, 128, 90],
     "drop": "Sapphire",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 50,
-    "person": "Insightful",
+    "price": 16080,
     "race": "Snake",
-    "resists": "---------ssw--ss7sss",
-    "skills": [
-      "Venom Breath",
-      "Venom Bite",
-      "Chin Lock*"
-    ],
-    "stats": [440, 151, 19, 7, 8, 14, 12, 7],
-    "tone": "Old Beast"
+    "resists": "ssw--ss7sss--------",
+    "skills": ["Venom Breath", "Venom Bite"],
+    "stats": [440, 171, 59, 500, 19, 7, 8, 14, 12, 7],
+    "talk": "Old Beast",
+    "tone": "Insightful"
   },
   "Zaccoum": {
-    "atks": [12, 20, 100, 35, 68, 94, 34, 66],
+    "atks": [111, 1, 2, 100, 68, 35, 34, 94, 66],
     "drop": "Amethyst",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 38,
-    "person": "Sly",
+    "price": 8800,
     "race": "Wood",
-    "resists": "-777777--3-7--s1nsss",
-    "skills": [
-      "Venom Bite",
-      "Stone Bite",
-      "Dekunda"
-    ],
-    "stats": [224, 158, 12, 7, 16, 9, 7, 4],
-    "tone": "Lunatic"
+    "resists": "X-7--s1nsss-777777-",
+    "skills": ["Venom Bite", "Stone Bite", "Dekunda"],
+    "stats": [224, 178, 20, 380, 12, 7, 16, 9, 7, 4],
+    "talk": "Lunatic",
+    "tone": "Sly"
   },
   "Zhen": {
-    "atks": [12, 40, 94, 29, 77, 96, 34, 77],
+    "atks": [99, 1, 2, 94, 77, 29, 34, 96, 77],
     "drop": "A-Chinsin",
-    "inherit": "recovery",
+    "inherit": "reca",
     "lvl": 40,
-    "person": "Insightful",
+    "price": 11400,
     "race": "Raptor",
-    "resists": "17-wsss-----1-7n71ss",
-    "skills": [
-      "Bird Gimlet",
-      "Venom Breath",
-      "Diarama"
-    ],
-    "stats": [173, 150, 7, 7, 13, 8, 14, 8],
-    "tone": "Young Beast"
+    "resists": "---1-7n71ss17-wsss-",
+    "skills": ["Bird Gimlet", "Venom Breath", "Diarama"],
+    "stats": [173, 170, 40, 400, 7, 7, 13, 8, 14, 8],
+    "talk": "Young Beast",
+    "tone": "Insightful"
   },
   "Zhong Kui": {
-    "atks": [12, 65, 132, 36, 85, 108, 43, 84],
+    "atks": [187, 1, 2, 132, 86, 36, 43, 108, 84],
     "inherit": "expel",
     "lvl": 47,
-    "person": "Vigorous",
+    "price": 14200,
     "race": "Kishin",
-    "resists": "7777--77-wR7771n-177",
-    "skills": [
-      "Hama",
-      "Atom Slicer",
-      "Arm Chopper",
-      "Estoma"
-    ],
-    "stats": [332, 225, 19, 13, 15, 7, 9, 8],
-    "tone": "Knight"
+    "resists": "w27771n-1777777--77",
+    "skills": ["Hama", "Atom Slicer", "Arm Chopper", "Estoma"],
+    "stats": [332, 245, 65, 470, 19, 13, 15, 7, 9, 8],
+    "talk": "Knight",
+    "tone": "Vigorous"
   },
   "Zhu Yin": {
-    "atks": [24, 117, 216, 52, 139, 190, 76, 138],
+    "atks": [957, 2, 4, 216, 140, 52, 76, 190, 138],
     "inherit": "psy",
     "lvl": 78,
-    "person": "Calm",
+    "price": 36480,
     "race": "Dragon",
-    "resists": "-------------rrnsrss",
-    "skills": [
-      "Dekaja",
-      "Dekunda",
-      "Brain Burst",
-      "Samarecarm"
-    ],
-    "stats": [948, 529, 30, 24, 20, 17, 13, 10],
-    "tone": "Knight"
+    "resists": "----RRnsRss--------",
+    "skills": ["Dekaja", "Dekunda", "Brain Burst", "Samarecarm"],
+    "stats": [948, 549, 117, 780, 30, 24, 20, 17, 13, 10],
+    "talk": "Knight",
+    "tone": "Calm"
   },
   "Zombie Cop": {
-    "atks": [10, 24, 88, 16, 63, 76, 28, 62],
+    "atks": [58, 1, 1, 88, 63, 16, 28, 76, 62],
     "drop": "Nambu Type 100",
-    "inherit": "phys",
+    "inherit": "strike",
     "lvl": 32,
-    "person": "Impatient",
+    "price": 7840,
     "race": "Undead",
-    "resists": "-----w---w7---swn7sn",
-    "skills": [
-      "Stun Claw",
-      "Intimidate",
-      "Snipe*"
-    ],
-    "stats": [168, 95, 12, 8, 6, 6, 11, 6],
-    "tone": "Lunatic"
+    "resists": "w7---swn7sn-----w--",
+    "skills": ["Stun Claw", "Intimidate"],
+    "stats": [168, 115, 24, 320, 12, 8, 6, 6, 11, 6],
+    "talk": "Lunatic",
+    "tone": "Impatient"
   }
 }

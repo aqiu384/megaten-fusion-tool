@@ -1,5 +1,5 @@
 import { createCompendiumRoutes } from '../smt1/compendium-routing.module';
-import { CompendiumConfig } from '../smt1/models';
+import { Demon, CompendiumConfig } from '../smt1/models';
 
 import DEMON_DATA_JSON from './data/demon-data.json';
 import SKILL_DATA_JSON from './data/skill-data.json';
@@ -10,6 +10,32 @@ import TRIPLE_CHART_JSON from './data/norm-triple-chart.json';
 import DARK_TRIPLE_CHART_JSON from './data/dark-triple-chart.json';
 import ELEMENT_CHART_JSON from './data/element-chart.json';
 import SPECIAL_RECIPES_JSON from './data/special-recipes.json';
+import INHERIT_SKILLS_JSON from './data/inherit-skills.json';
+
+function getInheritSkills(result: Demon, ingreds: Demon[], compConfig: CompendiumConfig): string[] {
+  const inherits: { [skill: string]: number } = Object.keys(result.skills)
+   .reduce((acc, s) => { acc[s] = -1; return acc; }, {});
+  const maxSkills = 6 - Object.keys(result.skills).length;
+  const normSkills = compConfig.inheritSkills[result.inherits];
+  const elemSkills = compConfig.inheritSkills[compConfig.inheritSkills.length - 1];
+  const ingredOrder = ingreds.slice().sort((a, b) =>
+    1000 * compConfig.raceOrder[a.race] + (a.inherits === result.inherits ? 0 : 100) + a.lvl -
+    1000 * compConfig.raceOrder[b.race] + (b.inherits === result.inherits ? 0 : 100) + b.lvl
+  );
+
+  for (const [i, ingred] of ingredOrder.entries()) {
+    const skillSet = ingred.inherits === result.inherits ? elemSkills : normSkills;
+    for (const skill of Object.keys(ingred.skills)) {
+      if (skillSet[skill] > -1 && !(inherits[skill] > -2)) {
+        inherits[skill] = skillSet[skill] + 100 * i;
+      }
+    }
+  }
+
+  return Object.entries(inherits)
+    .filter(s => s[1] > -1).sort((a, b) => a[1] - b[1])
+    .map(s => s[0]).slice(0, maxSkills);
+}
 
 function createCompConfig(): CompendiumConfig {
   const resistElems = COMP_CONFIG_JSON['resistElems'];
@@ -64,7 +90,7 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const [name, demon] of Object.entries(DEMON_DATA_JSON)) {
-    demon['resists'] = demon['resists'].slice(4, 8).concat(demon['resists'].slice(9));
+    demon['resists'] = demon['resists'].slice(0, 15);
 
     switch (demon.race) {
       case 'Deity':
@@ -96,6 +122,12 @@ function createCompConfig(): CompendiumConfig {
     }
   }
 
+  const inheritOrder = INHERIT_SKILLS_JSON[INHERIT_SKILLS_JSON.length - 1]
+    .reduce((acc, x, i) => { acc[x] = i; return acc; }, {});
+  const inheritSkills: { [skill: string]: number }[] = INHERIT_SKILLS_JSON
+    .map(slist => slist.reduce((acc, x) => { acc[x] = inheritOrder[x]; return acc; }, {}));
+  inheritSkills.map(slist => Object.assign(slist, inheritSkills[0]));
+
   return {
     appTitle: 'Shin Megami Tensei: Devil Summoner',
     appCssClasses: ['smtnes', 'dsum'],
@@ -111,6 +143,9 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: COMP_CONFIG_JSON['races'].reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: false,
+    inheritTypes: COMP_CONFIG_JSON['inheritTypes'],
+    inheritSkills,
+    getInheritSkills,
 
     normalLvlModifier: 2.5,
     tripleLvlModifier: 3.25,

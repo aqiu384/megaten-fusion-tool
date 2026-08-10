@@ -69,7 +69,7 @@ export class Compendium implements ICompendium {
         lvl:      json['lvl'],
         currLvl:  json['lvl'],
         fusion:   'normal',
-        inherits: compConfig.inheritSkills ? compConfig.skillElems.indexOf(json['inherit']) : 24,
+        inherits: compConfig.inheritTypes.indexOf(json['inherit']) + 1,
         drop:     json['drop'] || '-',
         stats:    json['stats'].slice(0, statLen),
         atks:     json['atks'] || [],

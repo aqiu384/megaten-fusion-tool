@@ -1,3809 +1,1652 @@
 {
   "Abraxas": {
-    "cdrop": "Azoth Sword",
-    "inherit": "support",
-    "lvl": 65,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 20,
-      "effect": "Recover small MP of stock demons when Navi"
-    },
+    "affinities": [5, 5, 5, 5, 5, -8, -8, -8, -8, 1, -4, 5, -4, -8],
+    "atks": [174, 119, 176, 120, 133, 25, 115, 650, 650, 65],
+    "inherit": "recb",
+    "lvl": "65",
     "race": "Vile",
-    "rdrop": "Barrier Stone",
-    "resists": "fffffiiii--e5ei",
-    "skills": [
-      "Fountain of Mana",
-      "Exorcism Bow",
-      "Dark Breath",
-      "Untouched Zone",
-      "Makakaja",
-      "",
-      ""
-    ],
-    "stats": [616, 319, 22, 15, 21, 15, 17, 11]
+    "resists": "ddddd---------",
+    "skills": ["Exorcism Bow", "Dark Breath", "Untouched Zone", "Makakaja", "Makakaja"],
+    "stats": [616, 319, 234, 22, 15, 21, 15, 17, 11]
   },
   "Aello": {
-    "cdrop": "Pearl",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [78, 54, 84, 55, 54, 10, 48, 280, 280, 28],
     "inherit": "force",
-    "lvl": 28,
-    "person": "Gal",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Hawk Eye"
-    },
+    "lvl": "28",
     "race": "Flight",
-    "rdrop": "Pentagram",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Hawk Eye",
-      "Poison Claw",
-      "Wing Flap",
-      "Agilao",
-      "Samanda",
-      "",
-      ""
-    ],
-    "stats": [210, 84, 11, 6, 8, 6, 11, 5]
+    "resists": "--------------",
+    "skills": ["Poison Claw", "Wing Flap", "Agilao", "Samanda"],
+    "stats": [210, 84, 69, 11, 6, 8, 6, 11, 5]
   },
   "Aeros": {
-    "cdrop": "Thunder Amulet",
+    "affinities": [1, 1, 1, 2, 2, 1, 1, 5, 1, 1, 1, 7, 1, 7],
+    "atks": [46, 34, 62, 34, 37, 9, 36, 170, 85, 85],
     "inherit": "elec",
-    "lvl": 17,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Magnetite Destroyer"
-    },
+    "lvl": "17",
     "race": "Element",
-    "rdrop": "Prima Materia",
-    "resists": "---22--f----7-7",
-    "skills": [
-      "Magnetite Destroyer",
-      "Needle Rush",
-      "Steel Wall",
-      "Zio",
-      "Zionga",
-      "Dekunda",
-      ""
-    ],
-    "stats": [144, 65, 6, 6, 6, 6, 6, 6]
+    "resists": "-------d------",
+    "skills": ["Needle Rush", "Steel Wall", "Zio", "Zionga", "Dekunda"],
+    "stats": [144, 65, 35, 6, 6, 6, 6, 6, 6]
   },
   "Alice": {
-    "cdrop": "Maneki-neko",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [116, 100, 128, 100, 109, 23, 88, 500, 250, 250],
     "inherit": "nerve",
-    "lvl": 50,
-    "person": "Young Girl",
-    "plugin": {
-      "cost": 0,
-      "effect": "+100% Reaction speed of demons",
-      "self": true
-    },
+    "lvl": "50",
     "race": "Fiend",
-    "rdrop": "Playwright's Pen",
-    "resists": "-----------9999",
-    "skills": [
-      "Rabbit Hole",
-      "Dream Needle",
-      "Mad Tea Party",
-      "Dekunda",
-      "Dekaja",
-      "",
-      "White Rabbit Watch"
-    ],
-    "stats": [342, 328, 8, 14, 18, 6, 16, 18]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Dream Needle", "Mad Tea Party", "Dekunda", "Dekaja"],
+    "stats": [342, 328, 1, 8, 14, 18, 6, 16, 18]
   },
   "Alp": {
-    "cdrop": "Hiranya",
+    "affinities": [3, 2, 3, 3, 3, 1, 1, 1, 1, 1, 7, 1, 1, 5],
+    "atks": [32, 22, 44, 23, 36, 9, 26, 110, 11, 110],
     "inherit": "mind",
-    "lvl": 11,
-    "person": "Gal",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Honey Trap"
-    },
+    "lvl": "11",
     "race": "Night",
-    "rdrop": "Bead",
-    "resists": "32333------7--5",
-    "skills": [
-      "Honey Trap",
-      "Dream Needle",
-      "Dormina",
-      "Pulinpa",
-      "Marin Karin",
-      "Patra",
-      ""
-    ],
-    "stats": [90, 63, 5, 5, 8, 3, 5, 3]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Dormina", "Pulinpa", "Marin Karin", "Patra"],
+    "stats": [90, 63, 43, 5, 5, 8, 3, 5, 3]
   },
   "Amaterasu": {
-    "cdrop": "Balm of Life",
+    "affinities": [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 9, 9, 9, 9],
+    "atks": [204, 140, 202, 140, 142, 28, 134, 760, 760, 76],
     "inherit": "almighty",
-    "lvl": 76,
-    "person": "Archaic",
-    "plugin": {
-      "cost": 150,
-      "self": true
-    },
+    "lvl": "76",
     "race": "Amatsu",
-    "rdrop": "Tetragrammaton",
-    "resists": "333333333--9999",
-    "skills": [
-      "Amano Iwato",
-      "Exorcism Bow",
-      "Power Breath",
-      "Megidolaon",
-      "Diarahan",
-      "",
-      "Amano Iwakura"
-    ],
-    "stats": [704, 368, 26, 18, 20, 17, 17, 18]
+    "resists": "--------------",
+    "skills": ["Exorcism Bow", "Power Breath", "Power Breath", "Megidolaon", "Diarahan"],
+    "stats": [704, 368, 217, 26, 18, 20, 17, 17, 18]
   },
   "Ame-no-Uzume": {
-    "cdrop": "Chihaya",
-    "inherit": "recovery",
-    "lvl": 23,
-    "person": "Archaic",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "affinities": [-2, -2, -2, 1, 1, 3, 3, 3, 3, -2, 9, 9, 9, 9],
+    "atks": [68, 44, 78, 44, 55, 12, 47, 230, 230, 23],
+    "inherit": "reca",
+    "lvl": "23",
     "race": "Megami",
-    "rdrop": "Floral Fragrance",
-    "resists": "ccc--3333c-9999",
-    "skills": [
-      "Maiden Dance",
-      "Needle Rush",
-      "Sexy Dance",
-      "Heavenly Dance",
-      "Patra",
-      "",
-      "Priestess Dance"
-    ],
-    "stats": [212, 121, 11, 7, 10, 8, 7, 6]
+    "resists": "--------------",
+    "skills": ["Needle Rush", "Sexy Dance", "Heavenly Dance", "Patra"],
+    "stats": [212, 121, 91, 11, 7, 10, 8, 7, 6]
   },
   "Ananta": {
-    "cdrop": "Light Amulet",
+    "affinities": [2, 1, 2, 1, 1, 2, 2, 5, 3, 1, 3, 7, 1, 3],
+    "atks": [190, 121, 192, 121, 123, 24, 124, 690, 345, 345],
     "inherit": "nerve",
-    "lvl": 69,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Canceller"
-    },
+    "lvl": "69",
     "race": "Dragon",
-    "rdrop": "Barrier Stone",
-    "resists": "2-2--22F3--37-3",
-    "skills": [
-      "Scapegoat",
-      "Squash",
-      "Mow Down",
-      "Prominence",
-      "Steel Wall",
-      "",
-      ""
-    ],
-    "stats": [714, 197, 26, 16, 16, 19, 12, 12]
+    "resists": "-------r------",
+    "skills": ["Squash", "Mow Down", "Prominence", "Steel Wall"],
+    "stats": [714, 197, 126, 26, 16, 16, 19, 12, 12]
   },
   "Anat": {
-    "cdrop": "Balm of Life",
-    "inherit": "support",
-    "lvl": 69,
-    "person": "Lady",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Valkyrie Aid"
-    },
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [174, 127, 178, 128, 148, 33, 129, 690, 69, 690],
+    "inherit": "recb",
+    "lvl": "69",
     "race": "Lady",
-    "rdrop": "Heavenly Bow",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Valkyrie Aid",
-      "Mist Slash",
-      "Dark Breath",
-      "Bufudyne",
-      "Diarahan",
-      "",
-      "Avenging Goddess"
-    ],
-    "stats": [582, 459, 18, 21, 24, 12, 18, 13]
+    "resists": "----------rr--",
+    "skills": ["Mist Slash", "Dark Breath", "Bufudyne", "Diarahan"],
+    "stats": [582, 459, 198, 18, 21, 24, 12, 18, 13]
   },
   "Angel": {
-    "cdrop": "Light Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -4, 9, 3, 3],
+    "atks": [38, 28, 54, 28, 33, 8, 30, 140, 140, 14],
     "inherit": "expel",
-    "lvl": 14,
-    "person": "Angel",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Angel's Blessing"
-    },
+    "lvl": "14",
     "race": "Divine",
-    "rdrop": "Talisman",
-    "resists": "-----------eJ33",
-    "skills": [
-      "Angel's Blessing",
-      "Needle Rush",
-      "Zan",
-      "Hama",
-      "Dia",
-      "",
-      ""
-    ],
-    "stats": [120, 58, 5, 5, 6, 5, 5, 5]
+    "resists": "-----------r--",
+    "skills": ["Needle Rush", "Zan", "Hama", "Dia", "Patra"],
+    "stats": [120, 58, 48, 5, 5, 6, 5, 5, 5]
   },
   "Anubis": {
-    "cdrop": "Scales of Ra",
+    "affinities": [1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 5, 5, 5, 5],
+    "atks": [108, 78, 126, 78, 85, 18, 82, 420, 210, 210],
     "inherit": "death",
-    "lvl": 42,
-    "person": "Knight",
-    "plugin": {
-      "cost": 70,
-      "effect": "+100% MP of stock demons when Navi",
-      "self": true
-    },
+    "lvl": "42",
     "race": "Avatar",
-    "rdrop": "Balm of Life",
-    "resists": "-----2222--5555",
-    "skills": [
-      "Time of Requiem",
-      "Torrent Shot",
-      "Divine Judgement",
-      "Dark Judgement",
-      "Samarecarm",
-      "",
-      "Caduceus"
-    ],
-    "stats": [386, 142, 12, 12, 13, 13, 10, 10]
+    "resists": "--------------",
+    "skills": ["Torrent Shot", "Divine Judgement", "Dark Judgement", "Samarecarm"],
+    "stats": [386, 142, 86, 12, 12, 13, 13, 10, 10]
   },
   "Anzu": {
-    "cdrop": "Sapphire",
+    "affinities": [4, 4, 4, -4, -4, 5, -4, 1, 1, 1, 1, 5, 1, 5],
+    "atks": [84, 62, 96, 63, 55, 9, 53, 320, 320, 32],
     "inherit": "fire",
-    "lvl": 32,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 70,
-      "effect": "-50% CP for ally AVIANS when Navi",
-      "self": true
-    },
+    "lvl": "32",
     "race": "Raptor",
-    "rdrop": "Talisman",
-    "resists": "444eefe-----5-5",
-    "skills": [
-      "Gatekeeper",
-      "Feral Claw",
-      "Fire Breath",
-      "Panic Voice",
-      "Zionga",
-      "",
-      "Tupsimati"
-    ],
-    "stats": [246, 84, 10, 6, 7, 8, 12, 7]
+    "resists": "-----d--------",
+    "skills": ["Feral Claw", "Fire Breath", "Panic Voice", "Zionga"],
+    "stats": [246, 84, 112, 10, 6, 7, 8, 12, 7]
   },
   "Apsaras": {
-    "cdrop": "Chakra Drop",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "atks": [40, 31, 56, 31, 48, 11, 34, 160, 80, 80],
     "inherit": "ice",
-    "lvl": 16,
-    "person": "Archaic",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "lvl": "16",
     "race": "Yoma",
-    "rdrop": "Book of Partha",
-    "resists": "---------------",
-    "skills": [
-      "Hemachandra",
-      "Needle Rush",
-      "Sexy Dance",
-      "Heavenly Dance",
-      "Bufula",
-      "Diarama",
-      "Phantasm"
-    ],
-    "stats": [126, 80, 4, 6, 10, 4, 4, 6]
+    "resists": "--------------",
+    "skills": ["Needle Rush", "Sexy Dance", "Heavenly Dance", "Bufula", "Diarama"],
+    "stats": [126, 80, 34, 4, 6, 10, 4, 4, 6]
   },
   "Aquans": {
-    "cdrop": "Mist Amulet",
+    "affinities": [1, 1, 1, 2, 2, -4, 5, 1, 1, 1, 1, 7, 1, 7],
+    "atks": [48, 36, 64, 36, 38, 9, 37, 180, 90, 90],
     "inherit": "ice",
-    "lvl": 18,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Magnetite Destroyer"
-    },
+    "lvl": "18",
     "race": "Element",
-    "rdrop": "Prima Materia",
-    "resists": "---22ef-----7-7",
-    "skills": [
-      "Magnetite Destroyer",
-      "Needle Rush",
-      "Water Wall",
-      "Bufu",
-      "Bufula",
-      "Posumudi",
-      ""
-    ],
-    "stats": [150, 66, 6, 6, 6, 6, 6, 6]
+    "resists": "------d-------",
+    "skills": ["Needle Rush", "Water Wall", "Bufu", "Bufula", "Posumudi"],
+    "stats": [150, 66, 36, 6, 6, 6, 6, 6, 6]
   },
   "Arahabaki": {
-    "cdrop": "Amida Rosary",
+    "affinities": [-1, -1, -1, -1, -1, 2, 2, 2, 2, 1, 5, 5, 9, 5],
+    "atks": [164, 109, 176, 110, 114, 21, 110, 620, 62, 620],
     "inherit": "nerve",
-    "lvl": 62,
-    "person": "Revered",
-    "plugin": {
-      "cost": 10,
-      "effect": "Resist Death"
-    },
+    "lvl": "62",
     "race": "Kunitsu",
-    "rdrop": "Portable Shine",
-    "resists": "bbbbb2222--FF9F",
-    "skills": [
-      "Godly Gate",
-      "Torrent Shot",
-      "Untouched Zone",
-      "Megido",
-      "Tetrakarn",
-      "",
-      ""
-    ],
-    "stats": [566, 248, 20, 13, 16, 18, 13, 8]
+    "resists": "----------rr-r",
+    "skills": ["Torrent Shot", "Untouched Zone", "Megido", "Tetrakarn"],
+    "stats": [566, 248, 165, 20, 13, 16, 18, 13, 8]
   },
   "Archangel": {
-    "cdrop": "Rosario",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -4, 9, 3, 3],
+    "atks": [78, 49, 88, 49, 47, 9, 49, 270, 270, 27],
     "inherit": "expel",
-    "lvl": 27,
-    "person": "Angel",
-    "plugin": {
-      "cost": 10,
-      "effect": "Learn Angel's Blessing"
-    },
+    "lvl": "27",
     "race": "Divine",
-    "rdrop": "Talisman",
-    "resists": "-----------eJ33",
-    "skills": [
-      "Ascend",
-      "Double Thrust",
-      "Zio",
-      "Hama",
-      "Tarukaja",
-      "",
-      ""
-    ],
-    "stats": [222, 75, 12, 6, 6, 9, 6, 6]
+    "resists": "-----------r--",
+    "skills": ["Double Thrust", "Zio", "Hama", "Tarukaja"],
+    "stats": [222, 75, 67, 12, 6, 6, 9, 6, 6]
   },
   "Ares": {
-    "cdrop": "Hand of Light",
+    "affinities": [3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 4, 9, -4, 1],
+    "atks": [136, 75, 144, 76, 66, 9, 77, 430, 43, 430],
     "inherit": "force",
-    "lvl": 43,
-    "person": "Revered",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "lvl": "43",
     "race": "Fury",
-    "rdrop": "Physical Mirror",
-    "resists": "D3D-3---3--49e-",
-    "skills": [
-      "Time of Madness",
-      "Rampage",
-      "Deathbound",
-      "Tarukaja",
-      "Dekunda",
-      "",
-      "Ares Aid"
-    ],
-    "stats": [440, 125, 25, 6, 7, 21, 9, 5]
+    "resists": "r-r-----------",
+    "skills": ["Rampage", "Deathbound", "Tarukaja", "Tarukaja", "Dekunda"],
+    "stats": [440, 125, 136, 25, 6, 7, 21, 9, 5]
   },
   "Artemis": {
-    "cdrop": "Talisman",
-    "inherit": "recovery",
-    "lvl": 52,
-    "person": "Gal",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Valkyrie Aid"
-    },
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -4, 9, 3, 3],
+    "atks": [126, 100, 136, 101, 123, 26, 95, 520, 52, 520],
+    "inherit": "reca",
+    "lvl": "52",
     "race": "Lady",
-    "rdrop": "Silver Bow",
-    "resists": "-----------eJ33",
-    "skills": [
-      "Lunar Aid",
-      "Happy Trigger",
-      "Torrent Shot",
-      "Hama",
-      "Samakaja",
-      "",
-      "Avenging Goddess"
-    ],
-    "stats": [426, 320, 11, 15, 22, 8, 18, 10]
+    "resists": "-----------r--",
+    "skills": ["Happy Trigger", "Torrent Shot", "Hama", "Samakaja"],
+    "stats": [426, 320, 154, 11, 15, 22, 8, 18, 10]
   },
   "Astaroth": {
-    "cdrop": "Raven Feather",
+    "affinities": [1, 1, 1, 4, 4, 1, 3, 3, 1, 1, 9, 9, 5, 9],
+    "atks": [212, 139, 196, 141, 158, 31, 134, 760, 76, 760],
     "inherit": "ice",
-    "lvl": 76,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Darkside Aid"
-    },
+    "lvl": "76",
     "race": "Tyrant",
-    "rdrop": "Solomon's Ring",
-    "resists": "---44-33---9959",
-    "skills": [
-      "Pandemonium",
-      "Mow Down",
-      "Ice Breath",
-      "Poison Breath",
-      "Ziodyne",
-      "",
-      ""
-    ],
-    "stats": [676, 352, 30, 19, 25, 14, 21, 12]
+    "resists": "--------------",
+    "skills": ["Mow Down", "Ice Breath", "Poison Breath", "Ziodyne"],
+    "stats": [676, 352, 273, 30, 19, 25, 14, 21, 12]
   },
   "Azumi": {
-    "cdrop": "Life Stone",
-    "inherit": "support",
-    "lvl": 13,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 10,
-      "effect": "Resist Force"
-    },
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "atks": [42, 25, 52, 25, 29, 6, 27, 130, 13, 130],
+    "inherit": "recb",
+    "lvl": "13",
     "race": "Brute",
-    "rdrop": "Polished Sphere",
-    "resists": "---------------",
-    "skills": [
-      "Gatekeeper",
-      "Venomous Needle",
-      "Water Wall",
-      "Zio",
-      "Dia",
-      "Posumudi",
-      ""
-    ],
-    "stats": [114, 49, 8, 4, 5, 5, 4, 4]
+    "resists": "--------------",
+    "skills": ["Venomous Needle", "Water Wall", "Zio", "Dia", "Posumudi"],
+    "stats": [114, 49, 46, 8, 4, 5, 5, 4, 4]
   },
   "Baal": {
-    "cdrop": "Talisman",
-    "inherit": "recovery",
-    "lvl": 72,
-    "person": "Revered",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, -4, 9, -4, 5],
+    "atks": [194, 129, 192, 130, 166, 34, 135, 720, 360, 360],
+    "inherit": "reca",
+    "lvl": "72",
     "race": "Deity",
-    "rdrop": "Longevity Stone",
-    "resists": "---332222--e9e5",
-    "skills": [
-      "Earth's Blessing",
-      "Exorcism Bow",
-      "Violet Flash",
-      "Agidyne",
-      "Bufudyne",
-      "",
-      "Endure"
-    ],
-    "stats": [674, 408, 25, 20, 29, 16, 17, 10]
+    "resists": "--------------",
+    "skills": ["Exorcism Bow", "Violet Flash", "Violet Flash", "Agidyne", "Bufudyne"],
+    "stats": [674, 408, 146, 25, 20, 29, 16, 17, 10]
   },
   "Bai Ze": {
-    "cdrop": "Chakra Drop",
-    "inherit": "support",
-    "lvl": 22,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 20,
-      "effect": "Recover some HP of stock demons when Navi"
-    },
+    "affinities": [2, 1, 2, 1, 1, -4, 5, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [66, 45, 74, 45, 44, 7, 38, 220, 110, 110],
+    "inherit": "recb",
+    "lvl": "22",
     "race": "Avatar",
-    "rdrop": "Compendium",
-    "resists": "2-2--ef-3--57-3",
-    "skills": [
-      "Disarm",
-      "Tackle",
-      "Bufula",
-      "Makakaja",
-      "Trafuri",
-      "",
-      "Compendium"
-    ],
-    "stats": [210, 66, 11, 4, 7, 7, 8, 8]
+    "resists": "------d-------",
+    "skills": ["Tackle", "Bufula", "Makakaja", "Trafuri"],
+    "stats": [210, 66, 56, 11, 4, 7, 7, 8, 8]
   },
   "Baphomet": {
-    "cdrop": "Hand of Darkness",
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [100, 68, 118, 69, 97, 21, 79, 390, 390, 39],
     "inherit": "mind",
-    "lvl": 39,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "39",
     "race": "Vile",
-    "rdrop": "Maypole",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Time of Merriment",
-      "Happy Trigger",
-      "Virus",
-      "Pulinpa",
-      "Marin Karin",
-      "",
-      "Walpurgis Night"
-    ],
-    "stats": [362, 189, 11, 12, 18, 12, 8, 5]
+    "resists": "--------------",
+    "skills": ["Happy Trigger", "Virus", "Pulinpa", "Pulinpa", "Marin Karin", "Marin Karin"],
+    "stats": [362, 189, 148, 11, 12, 18, 12, 8, 5]
   },
   "Barong": {
-    "cdrop": "Pentagram",
+    "affinities": [1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 5, 5, 5, 5],
+    "atks": [172, 115, 172, 116, 107, 17, 101, 620, 310, 310],
     "inherit": "expel",
-    "lvl": 62,
-    "person": "Beast",
-    "plugin": {
-      "cost": 60,
-      "effect": "Learn Fountain of Recovery"
-    },
+    "lvl": "62",
     "race": "Avatar",
-    "rdrop": "Emerald",
-    "resists": "-----2222--5555",
-    "skills": [
-      "Fountain of Recovery",
-      "Feral Bite",
-      "Panic Voice",
-      "Valiant Dance",
-      "Me Patra",
-      "",
-      ""
-    ],
-    "stats": [544, 158, 24, 10, 14, 16, 17, 12]
+    "resists": "--------------",
+    "skills": ["Feral Bite", "Panic Voice", "Valiant Dance", "Me Patra"],
+    "stats": [544, 158, 116, 24, 10, 14, 16, 17, 12]
   },
   "Basilisk": {
-    "cdrop": "Dis-Stone",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, -4, 3, 9],
+    "atks": [154, 98, 160, 98, 83, 9, 84, 550, 55, 550],
     "inherit": "nerve",
-    "lvl": 55,
-    "person": "Beast",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Bind Trap"
-    },
+    "lvl": "55",
     "race": "Drake",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "-----------Je39",
-    "skills": [
-      "Bind Trap",
-      "Venomous Needle",
-      "Petra Eyes",
-      "Poison Breath",
-      "Samanda",
-      "",
-      ""
-    ],
-    "stats": [438, 111, 22, 5, 9, 17, 12, 8]
+    "resists": "----------r---",
+    "skills": ["Venomous Needle", "Petra Eyes", "Poison Breath", "Samanda"],
+    "stats": [438, 111, 178, 22, 5, 9, 17, 12, 8]
   },
   "Berith": {
-    "cdrop": "Dainsleif",
+    "affinities": [1, 1, 1, 1, 1, 3, 2, 2, 1, 1, 3, 7, 1, 1],
+    "atks": [134, 85, 138, 86, 82, 15, 83, 490, 49, 490],
     "inherit": "nerve",
-    "lvl": 49,
-    "person": "Youngster",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Darkside Aid"
-    },
+    "lvl": "49",
     "race": "Fallen",
-    "rdrop": "Chakra Pot",
-    "resists": "-----322---37--",
-    "skills": [
-      "Magnetite Convertor",
-      "Spin Slash",
-      "Agidyne",
-      "Petra",
-      "Poisma",
-      "",
-      ""
-    ],
-    "stats": [372, 129, 18, 10, 10, 12, 9, 7]
+    "resists": "--------------",
+    "skills": ["Spin Slash", "Agidyne", "Petra", "Poisma"],
+    "stats": [372, 129, 100, 18, 10, 10, 12, 9, 7]
   },
   "Bicorn": {
-    "cdrop": "Me Patra Stone",
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, 7, -2, 5, 9],
+    "atks": [50, 28, 54, 29, 34, 7, 28, 150, 75, 75],
     "inherit": "nerve",
-    "lvl": 15,
-    "person": "Punk",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Galeforce"
-    },
+    "lvl": "15",
     "race": "Wilder",
-    "rdrop": "Pentagram",
-    "resists": "---332222--7c59",
-    "skills": [
-      "Honey Trap",
-      "Tackle",
-      "Tarunda",
-      "Makanda",
-      "Petradi",
-      "",
-      ""
-    ],
-    "stats": [120, 55, 10, 4, 6, 4, 5, 3]
+    "resists": "--------------",
+    "skills": ["Tackle", "Tarunda", "Tarunda", "Makanda", "Makanda", "Petradi"],
+    "stats": [120, 55, 50, 10, 4, 6, 4, 5, 3]
   },
   "Byakko": {
-    "cdrop": "Tiger Claw",
+    "affinities": [2, 1, 2, 1, 1, -4, 5, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [136, 99, 138, 101, 76, 10, 75, 500, 250, 250],
     "inherit": "ice",
-    "lvl": 50,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Shijin Souou"
-    },
+    "lvl": "50",
     "race": "Holy",
-    "rdrop": "Guardian Knowledge",
-    "resists": "2-2--ef-3--57-3",
-    "skills": [
-      "Gatekeeper",
-      "Feral Claw",
-      "Ice Breath",
-      "Water Wall",
-      "Petradi",
-      "",
-      ""
-    ],
-    "stats": [412, 106, 18, 6, 8, 11, 23, 7]
+    "resists": "------d-------",
+    "skills": ["Feral Claw", "Ice Breath", "Water Wall", "Petradi"],
+    "stats": [412, 106, 92, 18, 6, 8, 11, 23, 7]
   },
   "Cait Sith": {
-    "cdrop": "Medicine",
-    "inherit": "recovery",
-    "lvl": 5,
-    "person": "Little Kid",
-    "plugin": {
-      "cost": 50,
-      "effect": "-50% CP for ally BEASTS when Navi",
-      "self": true
-    },
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "atks": [20, 13, 32, 14, 18, 5, 15, 50, 25, 25],
+    "inherit": "reca",
+    "lvl": "5",
     "race": "Beast",
-    "rdrop": "Maneki-neko",
-    "resists": "---------------",
-    "skills": [
-      "Growing Darkness",
-      "Jump Kick",
-      "Spin Slash",
-      "Dia",
-      "Tarukaja",
-      "Samakaja",
-      "Feline Crown"
-    ],
-    "stats": [54, 33, 5, 3, 4, 3, 5, 3]
+    "resists": "--------------",
+    "skills": ["Jump Kick", "Spin Slash", "Dia", "Tarukaja", "Samakaja"],
+    "stats": [54, 33, 23, 5, 3, 4, 3, 5, 3]
   },
   "Catoblepas": {
-    "cdrop": "Dis-Stone",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, -4, 3, 9],
+    "atks": [116, 78, 136, 78, 70, 10, 74, 440, 220, 220],
     "inherit": "nerve",
-    "lvl": 44,
-    "person": "Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Chaotic Darkness"
-    },
+    "lvl": "44",
     "race": "Wilder",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "-----------Je39",
-    "skills": [
-      "Bind Trap",
-      "Squash",
-      "Venomous Needle",
-      "Petra Eyes",
-      "Dark Wall",
-      "",
-      ""
-    ],
-    "stats": [366, 100, 14, 6, 8, 16, 7, 10]
+    "resists": "----------r---",
+    "skills": ["Squash", "Venomous Needle", "Petra Eyes", "Dark Wall"],
+    "stats": [366, 100, 93, 14, 6, 8, 16, 7, 10]
   },
   "Celaeno": {
-    "cdrop": "Falcon Eyes",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [56, 42, 66, 43, 49, 9, 37, 210, 210, 21],
     "inherit": "force",
-    "lvl": 21,
-    "person": "Gal",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Growing Darkness"
-    },
+    "lvl": "21",
     "race": "Flight",
-    "rdrop": "Chakra Pot",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Growing Darkness",
-      "Poison Claw",
-      "Wing Flap",
-      "Bufula",
-      "Makanda",
-      "",
-      ""
-    ],
-    "stats": [156, 77, 7, 5, 9, 4, 10, 4]
+    "resists": "--------------",
+    "skills": ["Poison Claw", "Wing Flap", "Bufula", "Makanda"],
+    "stats": [156, 77, 58, 7, 5, 9, 4, 10, 4]
   },
   "Cerberus": {
-    "cdrop": "Hell Fang",
+    "affinities": [2, 2, 2, 1, 2, 5, -4, 1, 1, 1, 1, 5, 1, 3],
+    "atks": [162, 112, 160, 113, 94, 15, 94, 610, 305, 305],
     "inherit": "fire",
-    "lvl": 61,
-    "person": "Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Hell's Gate"
-    },
+    "lvl": "61",
     "race": "Beast",
-    "rdrop": "Guardian Knowledge",
-    "resists": "222-2Fe-----5-3",
-    "skills": [
-      "Hell's Gate",
-      "Feral Bite",
-      "Fire Breath",
-      "Panic Voice",
-      "Samarecarm",
-      "",
-      ""
-    ],
-    "stats": [438, 141, 20, 10, 10, 11, 16, 11]
+    "resists": "-----r--------",
+    "skills": ["Feral Bite", "Fire Breath", "Panic Voice", "Samarecarm"],
+    "stats": [438, 141, 79, 20, 10, 10, 11, 16, 11]
   },
   "Chernobog": {
-    "cdrop": "Karma Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [148, 88, 154, 89, 98, 17, 92, 500, 500, 50],
     "inherit": "death",
-    "lvl": 50,
-    "person": "Knight",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Unknowable Darkness"
-    },
+    "lvl": "50",
     "race": "Reaper",
-    "rdrop": "Diamond",
-    "resists": "-----------9999",
-    "skills": [
-      "Unknowable Darkness",
-      "Deathbound",
-      "Fool's Voice",
-      "Ziodyne",
-      "Mudo",
-      "",
-      ""
-    ],
-    "stats": [520, 180, 24, 10, 15, 19, 12, 5]
+    "resists": "--------------",
+    "skills": ["Deathbound", "Fool's Voice", "Ziodyne", "Mudo", "Mudo"],
+    "stats": [520, 180, 193, 24, 10, 15, 19, 12, 5]
   },
   "Coatlicue": {
-    "cdrop": "Pulque",
-    "inherit": "recovery",
-    "lvl": 34,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "affinities": [2, 1, 2, 1, 1, -4, 5, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [96, 66, 98, 66, 66, 12, 57, 340, 170, 170],
+    "inherit": "reca",
+    "lvl": "34",
     "race": "Dragon",
-    "rdrop": "Polished Sphere",
-    "resists": "2-2--ef-3--57-3",
-    "skills": [
-      "Time of Madness",
-      "Feral Bite",
-      "Mow Down",
-      "Mudo",
-      "Samarecarm",
-      "",
-      "Earth's Blessing"
-    ],
-    "stats": [312, 102, 14, 7, 10, 7, 10, 10]
+    "resists": "------d-------",
+    "skills": ["Feral Bite", "Mow Down", "Mudo", "Samarecarm"],
+    "stats": [312, 102, 72, 14, 7, 10, 7, 10, 10]
   },
   "Cockatrice": {
-    "cdrop": "Dis-Stone",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [46, 28, 56, 28, 30, 5, 27, 140, 140, 14],
     "inherit": "nerve",
-    "lvl": 14,
-    "person": "Beast",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Bind Trap"
-    },
+    "lvl": "14",
     "race": "Raptor",
-    "rdrop": "Bead",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Bind Trap",
-      "Venomous Needle",
-      "Petra Eyes",
-      "Petra",
-      "Rakunda",
-      "Samanda",
-      ""
-    ],
-    "stats": [126, 46, 9, 3, 5, 6, 6, 3]
+    "resists": "--------------",
+    "skills": ["Venomous Needle", "Petra Eyes", "Petra", "Petra", "Rakunda", "Samanda"],
+    "stats": [126, 46, 72, 9, 3, 5, 6, 6, 3]
   },
   "Cu Chulainn": {
-    "cdrop": "Ruby",
-    "inherit": "support",
-    "lvl": 41,
-    "person": "Knight",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Ares Aid"
-    },
+    "affinities": [3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 4, 9, -4, 1],
+    "atks": [118, 72, 124, 73, 64, 10, 69, 410, 205, 205],
+    "inherit": "recb",
+    "lvl": "41",
     "race": "Fairy",
-    "rdrop": "Physical Mirror",
-    "resists": "D3D-3---3--49e-",
-    "skills": [
-      "Ares Aid",
-      "Jump Kick",
-      "Deathbound",
-      "Hama",
-      "Tarukaja",
-      "",
-      "Warrior Oath"
-    ],
-    "stats": [330, 97, 18, 7, 7, 13, 9, 5]
+    "resists": "r-r-----------",
+    "skills": ["Jump Kick", "Deathbound", "Hama", "Tarukaja"],
+    "stats": [330, 97, 59, 18, 7, 7, 13, 9, 5]
   },
   "Cu Sith": {
-    "cdrop": "Life Stone",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "atks": [48, 33, 56, 34, 32, 6, 29, 160, 80, 80],
     "inherit": "mind",
-    "lvl": 16,
-    "person": "Beast",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Guard Dog"
-    },
+    "lvl": "16",
     "race": "Beast",
-    "rdrop": "Bead",
-    "resists": "---------------",
-    "skills": [
-      "Guard Dog",
-      "Feral Bite",
-      "Panic Voice",
-      "Dormina",
-      "Tarunda",
-      "Trafuri",
-      ""
-    ],
-    "stats": [126, 52, 8, 4, 5, 4, 7, 6]
+    "resists": "--------------",
+    "skills": ["Feral Bite", "Panic Voice", "Dormina", "Tarunda", "Trafuri"],
+    "stats": [126, 52, 34, 8, 4, 5, 4, 7, 6]
   },
   "Cyclops": {
-    "cdrop": "Thunder Amulet",
+    "affinities": [3, 1, 3, 1, 1, -2, -4, 3, 1, 1, 3, 7, 3, 7],
+    "atks": [112, 62, 116, 63, 63, 11, 66, 370, 185, 185],
     "inherit": "elec",
-    "lvl": 37,
-    "person": "Beast",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Canceller"
-    },
+    "lvl": "37",
     "race": "Jaki",
-    "rdrop": "Talisman",
-    "resists": "3-3--ceD---3737",
-    "skills": [
-      "Time of Madness",
-      "Mow Down",
-      "Rampage",
-      "Thunderbolt",
-      "Zionga",
-      "",
-      ""
-    ],
-    "stats": [306, 97, 19, 7, 8, 13, 6, 3]
+    "resists": "-------r------",
+    "skills": ["Mow Down", "Rampage", "Thunderbolt", "Zionga", "Zionga"],
+    "stats": [306, 97, 83, 19, 7, 8, 13, 6, 3]
   },
   "Decarabia": {
-    "cdrop": "Ruby",
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 9, 9, 9, 9],
+    "atks": [96, 65, 110, 66, 87, 18, 72, 380, 38, 380],
     "inherit": "nerve",
-    "lvl": 38,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Bind Trap"
-    },
+    "lvl": "38",
     "race": "Fallen",
-    "rdrop": "Pentagram",
-    "resists": "eeeeeffff--9999",
-    "skills": [
-      "Phantasm",
-      "Venomous Needle",
-      "Petra Eyes",
-      "Tarunda",
-      "Tetrakarn",
-      "",
-      ""
-    ],
-    "stats": [288, 142, 10, 11, 15, 9, 7, 4]
+    "resists": "-----dddd-----",
+    "skills": ["Venomous Needle", "Petra Eyes", "Tarunda", "Tetrakarn"],
+    "stats": [288, 142, 84, 10, 11, 15, 9, 7, 4]
   },
   "Dominion": {
-    "cdrop": "Angel Halo",
+    "affinities": [1, 1, 1, -4, -4, 3, 3, 3, 3, 1, -8, 5, -8, 5],
+    "atks": [170, 113, 168, 114, 113, 19, 103, 640, 640, 64],
     "inherit": "expel",
-    "lvl": 64,
-    "person": "Angel",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Heaven's Gate"
-    },
+    "lvl": "64",
     "race": "Divine",
-    "rdrop": "Divine Baptism",
-    "resists": "---ee3333--iFi5",
-    "skills": [
-      "Ascend",
-      "Exorcism Bow",
-      "Holy Wrath",
-      "Divine Judgement",
-      "Rakukaja",
-      "",
-      ""
-    ],
-    "stats": [462, 172, 21, 12, 15, 12, 14, 9]
+    "resists": "-----------r--",
+    "skills": ["Exorcism Bow", "Holy Wrath", "Divine Judgement", "Divine Judgement", "Rakukaja"],
+    "stats": [462, 172, 123, 21, 12, 15, 12, 14, 9]
   },
   "Dwarf": {
-    "cdrop": "Onyx",
+    "affinities": [3, 3, 3, 3, 3, 1, 1, 1, 2, 1, 3, 5, -4, 5],
+    "atks": [72, 42, 88, 43, 46, 11, 53, 250, 125, 125],
     "inherit": "nerve",
-    "lvl": 25,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "lvl": "25",
     "race": "Jirae",
-    "rdrop": "Polished Sphere",
-    "resists": "33333---2--35e5",
-    "skills": [
-      "Windfall",
-      "Deathbound",
-      "Zanma",
-      "Hama",
-      "Rakukaja",
-      "",
-      "Jackpot"
-    ],
-    "stats": [222, 81, 11, 8, 6, 11, 4, 3]
+    "resists": "--------------",
+    "skills": ["Deathbound", "Zanma", "Hama", "Rakukaja"],
+    "stats": [222, 81, 43, 11, 8, 6, 11, 4, 3]
   },
   "Edimmu": {
-    "cdrop": "Dis-Poison",
+    "affinities": [1, 1, 1, 2, 2, -4, 5, 1, 1, 1, 1, 5, 1, 1],
+    "atks": [118, 78, 120, 79, 76, 13, 70, 430, 215, 215],
     "inherit": "ice",
-    "lvl": 43,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Virus Trap"
-    },
+    "lvl": "43",
     "race": "Jaki",
-    "rdrop": "Physical Mirror",
-    "resists": "---22eF-----5--",
-    "skills": [
-      "Virus Trap",
-      "Tekken Punch",
-      "Mudo",
-      "Poisma",
-      "Makakaja",
-      "",
-      ""
-    ],
-    "stats": [318, 115, 16, 8, 10, 9, 12, 5]
+    "resists": "------r-------",
+    "skills": ["Tekken Punch", "Mudo", "Poisma", "Makakaja"],
+    "stats": [318, 115, 92, 16, 8, 10, 9, 12, 5]
   },
   "Elf": {
-    "cdrop": "Chakra Drop",
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [76, 51, 80, 51, 64, 15, 54, 280, 140, 140],
     "inherit": "mind",
-    "lvl": 28,
-    "person": "Gal",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Fairy's Blessing"
-    },
+    "lvl": "28",
     "race": "Fairy",
-    "rdrop": "Chakra Pot",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Fairy's Blessing",
-      "Dream Needle",
-      "Zionga",
-      "Zanma",
-      "Dormina",
-      "Diarama",
-      ""
-    ],
-    "stats": [198, 112, 10, 10, 11, 4, 7, 5]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Zionga", "Zanma", "Dormina", "Diarama"],
+    "stats": [198, 112, 46, 10, 10, 11, 4, 7, 5]
   },
   "Eligor": {
-    "cdrop": "Youtou Nihil",
+    "affinities": [3, 3, 3, 3, 3, 1, 1, 1, 2, 1, 3, 5, -4, 5],
+    "atks": [50, 29, 62, 29, 32, 7, 34, 160, 16, 160],
     "inherit": "force",
-    "lvl": 16,
-    "person": "Knight",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Booby Trap"
-    },
+    "lvl": "16",
     "race": "Fallen",
-    "rdrop": "Bead",
-    "resists": "33333---2--35e5",
-    "skills": [
-      "Magnetite Convertor",
-      "Spin Slash",
-      "Zanma",
-      "Petra",
-      "Rakukaja",
-      "",
-      ""
-    ],
-    "stats": [144, 56, 9, 5, 5, 7, 4, 3]
+    "resists": "--------------",
+    "skills": ["Spin Slash", "Zanma", "Petra", "Rakukaja"],
+    "stats": [144, 56, 51, 9, 5, 5, 7, 4, 3]
   },
   "Empusa": {
-    "cdrop": "Pearl",
+    "affinities": [3, 2, 3, 3, 3, 1, 1, 1, 1, 1, 7, 1, 1, 5],
+    "atks": [46, 34, 60, 35, 50, 11, 36, 180, 18, 180],
     "inherit": "mind",
-    "lvl": 18,
-    "person": "Gal",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Honey Trap"
-    },
+    "lvl": "18",
     "race": "Night",
-    "rdrop": "Chakra Pot",
-    "resists": "32333------7--5",
-    "skills": [
-      "Honey Trap",
-      "Jump Kick",
-      "Poison Claw",
-      "Mana Drain",
-      "Lullaby",
-      "Marin Karin",
-      ""
-    ],
-    "stats": [138, 82, 5, 6, 10, 4, 6, 4]
+    "resists": "--------------",
+    "skills": ["Jump Kick", "Poison Claw", "Mana Drain", "Lullaby", "Lullaby", "Marin Karin"],
+    "stats": [138, 82, 54, 5, 6, 10, 4, 6, 4]
   },
   "Erthys": {
-    "cdrop": "Wind Amulet",
+    "affinities": [1, 1, 1, 2, 2, 1, 1, 1, 5, 1, 1, 7, 1, 7],
+    "atks": [42, 33, 60, 33, 36, 9, 35, 160, 80, 80],
     "inherit": "force",
-    "lvl": 16,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Magnetite Destroyer"
-    },
+    "lvl": "16",
     "race": "Element",
-    "rdrop": "Prima Materia",
-    "resists": "---22---f---7-7",
-    "skills": [
-      "Magnetite Destroyer",
-      "Needle Rush",
-      "Crystal Wall",
-      "Zan",
-      "Zanma",
-      "Dekaja",
-      ""
-    ],
-    "stats": [138, 64, 5, 6, 6, 6, 6, 6]
+    "resists": "--------d-----",
+    "skills": ["Needle Rush", "Crystal Wall", "Zan", "Zanma", "Dekaja"],
+    "stats": [138, 64, 34, 5, 6, 6, 6, 6, 6]
   },
   "Feng Huang": {
-    "cdrop": "Kogarasumaru",
+    "affinities": [5, 5, 5, -4, -4, 1, 1, 1, 1, 1, 5, 9, 1, 5],
+    "atks": [58, 48, 70, 49, 48, 10, 41, 220, 220, 22],
     "inherit": "fire",
-    "lvl": 22,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Fast Escape"
-    },
+    "lvl": "22",
     "race": "Avian",
-    "rdrop": "Polished Sphere",
-    "resists": "555ee------59-5",
-    "skills": [
-      "Eye of Heaven",
-      "Feral Claw",
-      "Fire Breath",
-      "Agilao",
-      "Recarm",
-      "",
-      ""
-    ],
-    "stats": [168, 78, 7, 6, 8, 5, 12, 8]
+    "resists": "--------------",
+    "skills": ["Feral Claw", "Fire Breath", "Agilao", "Recarm"],
+    "stats": [168, 78, 85, 7, 6, 8, 5, 12, 8]
   },
   "Fenrir": {
-    "cdrop": "Mist Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, -4, 3, 9],
+    "atks": [156, 112, 154, 114, 118, 19, 93, 610, 305, 305],
     "inherit": "ice",
-    "lvl": 61,
-    "person": "Beast",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "61",
     "race": "Wilder",
-    "rdrop": "Vanagandr",
-    "resists": "-----------Je39",
-    "skills": [
-      "Time of Madness",
-      "Rampage",
-      "Feral Bite",
-      "Ice Breath",
-      "Panic Voice",
-      "",
-      ""
-    ],
-    "stats": [420, 173, 17, 10, 18, 8, 20, 5]
+    "resists": "----------r---",
+    "skills": ["Rampage", "Feral Bite", "Ice Breath", "Panic Voice"],
+    "stats": [420, 173, 119, 17, 10, 18, 8, 20, 5]
   },
   "Flaemis": {
-    "cdrop": "Heat Amulet",
+    "affinities": [1, 1, 1, 2, 2, 5, -4, 1, 1, 1, 1, 7, 1, 7],
+    "atks": [50, 37, 68, 37, 39, 10, 41, 190, 95, 95],
     "inherit": "fire",
-    "lvl": 19,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Magnetite Destroyer"
-    },
+    "lvl": "19",
     "race": "Element",
-    "rdrop": "Prima Materia",
-    "resists": "---22fe-----7-7",
-    "skills": [
-      "Magnetite Destroyer",
-      "Needle Rush",
-      "Fire Wall",
-      "Agi",
-      "Agilao",
-      "Petradi",
-      ""
-    ],
-    "stats": [162, 71, 6, 7, 6, 7, 6, 6]
+    "resists": "-----d--------",
+    "skills": ["Needle Rush", "Fire Wall", "Agi", "Agilao", "Petradi"],
+    "stats": [162, 71, 37, 6, 7, 6, 7, 6, 6]
   },
   "Forneus": {
-    "cdrop": "Chakra Drop",
+    "affinities": [3, 1, 3, 1, 1, -2, -4, 3, 1, 1, 3, 7, 3, 7],
+    "atks": [76, 49, 84, 49, 56, 11, 50, 270, 27, 270],
     "inherit": "elec",
-    "lvl": 27,
-    "person": "Punk",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Descend"
-    },
+    "lvl": "27",
     "race": "Fallen",
-    "rdrop": "Chakra Pot",
-    "resists": "323--ceD---3737",
-    "skills": [
-      "Descend",
-      "Tackle",
-      "Water Wall",
-      "Zionga",
-      "Makakaja",
-      "",
-      ""
-    ],
-    "stats": [210, 91, 11, 7, 9, 7, 7, 4]
+    "resists": "-------r------",
+    "skills": ["Tackle", "Water Wall", "Zionga", "Makakaja"],
+    "stats": [210, 91, 67, 11, 7, 9, 7, 7, 4]
   },
   "Freya": {
-    "cdrop": "Centaur Goblet",
+    "affinities": [-2, -2, -2, 1, 1, 3, 3, 3, 3, -2, 9, 9, 9, 9],
+    "atks": [140, 98, 140, 98, 126, 23, 91, 530, 530, 53],
     "inherit": "mind",
-    "lvl": 53,
-    "person": "Gal",
-    "plugin": {
-      "cost": 0,
-      "self": true
-    },
+    "lvl": "53",
     "race": "Megami",
-    "rdrop": "Jotunn Wand",
-    "resists": "ccc--3333c-9999",
-    "skills": [
-      "Darkside Aid",
-      "Passionate Kiss",
-      "Dream Needle",
-      "Marin Karin",
-      "Diarama",
-      "",
-      "Seize"
-    ],
-    "stats": [438, 343, 17, 12, 23, 9, 12, 14]
+    "resists": "--------------",
+    "skills": ["Passionate Kiss", "Dream Needle", "Marin Karin", "Marin Karin", "Diarama"],
+    "stats": [438, 343, 162, 17, 12, 23, 9, 12, 14]
   },
   "Furiae": {
-    "cdrop": "Onyx",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [66, 48, 76, 49, 57, 11, 44, 250, 250, 25],
     "inherit": "force",
-    "lvl": 25,
-    "person": "Gal",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "25",
     "race": "Raptor",
-    "rdrop": "Blessed Mirror",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Hawk Eye",
-      "Feral Claw",
-      "Wing Flap",
-      "Mudo",
-      "Pulinpa",
-      "Makajam",
-      "Avenging Goddess"
-    ],
-    "stats": [186, 89, 8, 6, 10, 5, 9, 5]
+    "resists": "--------------",
+    "skills": ["Feral Claw", "Wing Flap", "Mudo", "Pulinpa", "Makajam"],
+    "stats": [186, 89, 97, 8, 6, 10, 5, 9, 5]
   },
   "Gandharva": {
-    "cdrop": "Hiranya",
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [62, 42, 72, 43, 45, 9, 41, 220, 110, 110],
     "inherit": "mind",
-    "lvl": 22,
-    "person": "Youngster",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Hemachandra"
-    },
+    "lvl": "22",
     "race": "Fairy",
-    "rdrop": "Soma",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Hemachandra",
-      "Torrent Shot",
-      "Lullaby",
-      "Soothing Melody",
-      "Pulinpa",
-      "Patra",
-      ""
-    ],
-    "stats": [174, 74, 9, 6, 7, 6, 8, 4]
+    "resists": "--------------",
+    "skills": ["Torrent Shot", "Lullaby", "Soothing Melody", "Pulinpa", "Patra"],
+    "stats": [174, 74, 40, 9, 6, 7, 6, 8, 4]
   },
   "Ganesha": {
-    "cdrop": "White Blanket",
-    "inherit": "support",
-    "lvl": 52,
-    "person": "Knight",
-    "plugin": {
-      "cost": 40,
-      "effect": "Recover some MP of stock demons when Navi"
-    },
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, -4, 3, 9],
+    "atks": [138, 91, 144, 91, 89, 16, 88, 520, 260, 260],
+    "inherit": "recb",
+    "lvl": "52",
     "race": "Yoma",
-    "rdrop": "Musica",
-    "resists": "-----------Je39",
-    "skills": [
-      "Gatekeeper",
-      "Mist Slash",
-      "Dark Wall",
-      "Bufudyne",
-      "Makakaja",
-      "",
-      "Jackpot"
-    ],
-    "stats": [390, 140, 17, 11, 11, 12, 8, 11]
+    "resists": "----------r---",
+    "skills": ["Mist Slash", "Dark Wall", "Bufudyne", "Makakaja"],
+    "stats": [390, 140, 70, 17, 11, 11, 12, 8, 11]
   },
   "Ganga": {
-    "cdrop": "Mist Amulet",
-    "inherit": "recovery",
-    "lvl": 62,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Samsara"
-    },
+    "affinities": [2, 1, 2, 1, 1, -4, 5, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [174, 114, 164, 115, 114, 20, 102, 620, 310, 310],
+    "inherit": "reca",
+    "lvl": "62",
     "race": "Dragon",
-    "rdrop": "Holy Card",
-    "resists": "2-2--ef-3--57-3",
-    "skills": [
-      "Samsara",
-      "Feral Bite",
-      "Mow Down",
-      "Bufudyne",
-      "Me Patra",
-      "",
-      ""
-    ],
-    "stats": [600, 174, 25, 12, 16, 12, 16, 12]
+    "resists": "------d-------",
+    "skills": ["Feral Bite", "Mow Down", "Bufudyne", "Me Patra"],
+    "stats": [600, 174, 115, 25, 12, 16, 12, 16, 12]
   },
   "Garm": {
-    "cdrop": "Better Arm",
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, 7, -2, 5, 9],
+    "atks": [40, 24, 50, 24, 28, 5, 24, 120, 60, 60],
     "inherit": "death",
-    "lvl": 12,
-    "person": "Beast",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Gatekeeper"
-    },
+    "lvl": "12",
     "race": "Wilder",
-    "rdrop": "Guardian Knowledge",
-    "resists": "---332222--7c59",
-    "skills": [
-      "Guard Dog",
-      "Feral Bite",
-      "Panic Voice",
-      "Rakunda",
-      "Rakukaja",
-      "",
-      ""
-    ],
-    "stats": [108, 44, 8, 3, 5, 5, 5, 3]
+    "resists": "--------------",
+    "skills": ["Feral Bite", "Panic Voice", "Rakunda", "Rakukaja"],
+    "stats": [108, 44, 45, 8, 3, 5, 5, 5, 3]
   },
   "Garuda": {
-    "cdrop": "Golden Feather",
+    "affinities": [-1, -1, -1, -1, -1, 2, 2, 2, 2, 1, 5, 5, 9, 5],
+    "atks": [168, 115, 164, 116, 100, 16, 97, 610, 610, 61],
     "inherit": "force",
-    "lvl": 61,
-    "person": "Knight",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "lvl": "61",
     "race": "Avian",
-    "rdrop": "Divine Feather",
-    "resists": "bbbbb2222--FF9F",
-    "skills": [
-      "Scapegoat",
-      "Jump Kick",
-      "Sonic Boom",
-      "Panic Voice",
-      "Dekunda",
-      "",
-      "Blitzkrieg"
-    ],
-    "stats": [450, 149, 23, 10, 12, 13, 19, 11]
+    "resists": "----------rr-r",
+    "skills": ["Jump Kick", "Sonic Boom", "Panic Voice", "Dekunda"],
+    "stats": [450, 149, 165, 23, 10, 12, 13, 19, 11]
   },
   "Gemori": {
-    "cdrop": "Mysterious Amulet",
-    "inherit": "support",
-    "lvl": 62,
-    "person": "Lady",
-    "plugin": {
-      "cost": 70,
-      "effect": "-50% CP for ally AERIALS when Navi",
-      "self": true
-    },
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [144, 105, 166, 106, 132, 30, 120, 620, 62, 620],
+    "inherit": "recb",
+    "lvl": "62",
     "race": "Fallen",
-    "rdrop": "Emerald",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Magnetite Convertor",
-      "Passionate Kiss",
-      "Venomous Needle",
-      "Marin Karin",
-      "Makajam",
-      "",
-      "Book of Enoch"
-    ],
-    "stats": [456, 226, 10, 20, 21, 13, 10, 6]
+    "resists": "--------------",
+    "skills": ["Passionate Kiss", "Venomous Needle", "Marin Karin", "Makajam"],
+    "stats": [456, 226, 120, 10, 20, 21, 13, 10, 6]
   },
   "Genbu": {
-    "cdrop": "Hrunting",
+    "affinities": [1, 1, 1, 1, 1, 2, 2, 5, 2, 1, 5, 7, 5, 5],
+    "atks": [146, 89, 158, 88, 84, 15, 93, 510, 255, 255],
     "inherit": "ice",
-    "lvl": 51,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Shijin Souou"
-    },
+    "lvl": "51",
     "race": "Avatar",
-    "rdrop": "Emerald",
-    "resists": "-----2252--5755",
-    "skills": [
-      "Canceller",
-      "Mow Down",
-      "Violet Flash",
-      "Steel Wall",
-      "Tarunda",
-      "",
-      ""
-    ],
-    "stats": [492, 131, 22, 10, 10, 20, 6, 12]
+    "resists": "--------------",
+    "skills": ["Mow Down", "Violet Flash", "Steel Wall", "Tarunda"],
+    "stats": [492, 131, 100, 22, 10, 10, 20, 6, 12]
   },
   "Ghede": {
-    "cdrop": "Hand of Darkness",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [154, 109, 164, 111, 147, 35, 124, 610, 610, 61],
     "inherit": "death",
-    "lvl": 61,
-    "person": "Punk",
-    "plugin": {
-      "cost": 20,
-      "effect": "Learn Booby Trap"
-    },
+    "lvl": "61",
     "race": "Reaper",
-    "rdrop": "Chakra Pot",
-    "resists": "-----------9999",
-    "skills": [
-      "Fountain of Mana",
-      "Venomous Needle",
-      "Megido",
-      "Mudo",
-      "Makakaja",
-      "",
-      ""
-    ],
-    "stats": [570, 293, 16, 22, 26, 13, 17, 5]
+    "resists": "--------------",
+    "skills": ["Venomous Needle", "Megido", "Mudo", "Mudo", "Makakaja"],
+    "stats": [570, 293, 225, 16, 22, 26, 13, 17, 5]
   },
   "Girimehkala": {
-    "cdrop": "Awakened Amulet",
+    "affinities": [5, 5, 5, 5, 5, -8, -8, -8, -8, 1, -4, 5, -4, -8],
+    "atks": [158, 96, 140, 97, 87, 15, 84, 540, 270, 270],
     "inherit": "nerve",
-    "lvl": 54,
-    "person": "Punk",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Bind Trap"
-    },
+    "lvl": "54",
     "race": "Jaki",
-    "rdrop": "Physical Mirror",
-    "resists": "FFFFFiiii--e5ei",
-    "skills": [
-      "Bind Trap",
-      "Mist Slash",
-      "Virus",
-      "Petra Eyes",
-      "Dark Wall",
-      "",
-      ""
-    ],
-    "stats": [378, 134, 25, 10, 10, 8, 13, 6]
+    "resists": "rrrrr---------",
+    "skills": ["Mist Slash", "Virus", "Petra Eyes", "Dark Wall"],
+    "stats": [378, 134, 108, 25, 10, 10, 8, 13, 6]
   },
   "Gryphon": {
-    "cdrop": "Sapphire",
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [124, 82, 122, 83, 70, 10, 67, 440, 220, 220],
     "inherit": "force",
-    "lvl": 44,
-    "person": "Beast",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Gatekeeper"
-    },
+    "lvl": "44",
     "race": "Beast",
-    "rdrop": "Emerald",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Gatekeeper",
-      "Feral Claw",
-      "Wing Flap",
-      "Agidyne",
-      "Zandyne",
-      "",
-      ""
-    ],
-    "stats": [324, 100, 18, 6, 8, 9, 13, 8]
+    "resists": "--------------",
+    "skills": ["Feral Claw", "Wing Flap", "Agidyne", "Zandyne"],
+    "stats": [324, 100, 62, 18, 6, 8, 9, 13, 8]
   },
   "Hanuman": {
-    "cdrop": "Awakened Amulet",
+    "affinities": [1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 5, 5, 5, 5],
+    "atks": [170, 116, 160, 117, 97, 17, 98, 630, 315, 315],
     "inherit": "force",
-    "lvl": 63,
-    "person": "Revered",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "63",
     "race": "Yoma",
-    "rdrop": "Soma",
-    "resists": "-----2222--5555",
-    "skills": [
-      "Phantasm",
-      "Jump Kick",
-      "Mist Slash",
-      "Zandyne",
-      "Samakaja",
-      "",
-      "Leap"
-    ],
-    "stats": [438, 151, 22, 12, 10, 9, 17, 11]
+    "resists": "--------------",
+    "skills": ["Jump Kick", "Mist Slash", "Zandyne", "Samakaja"],
+    "stats": [438, 151, 81, 22, 12, 10, 9, 17, 11]
   },
   "Harpy": {
-    "cdrop": "Life Stone",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [30, 23, 44, 24, 23, 5, 21, 100, 100, 10],
     "inherit": "elec",
-    "lvl": 10,
-    "person": "Gal",
-    "plugin": {
-      "cost": 20,
-      "effect": "Learn Eagle Eye"
-    },
+    "lvl": "10",
     "race": "Flight",
-    "rdrop": "Bead",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Eagle Eye",
-      "Feral Claw",
-      "Wing Flap",
-      "Zio",
-      "Dormina",
-      "Dia",
-      ""
-    ],
-    "stats": [90, 38, 5, 3, 4, 4, 8, 3]
+    "resists": "--------------",
+    "skills": ["Feral Claw", "Wing Flap", "Zio", "Dormina", "Dia"],
+    "stats": [90, 38, 42, 5, 3, 4, 4, 8, 3]
   },
   "Hathor": {
-    "cdrop": "Scales of Ra",
-    "inherit": "recovery",
-    "lvl": 39,
-    "person": "Gal",
-    "plugin": {
-      "cost": 80,
-      "effect": "Learn Earth's Blessing"
-    },
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [108, 70, 114, 70, 88, 20, 78, 390, 390, 39],
+    "inherit": "reca",
+    "lvl": "39",
     "race": "Megami",
-    "rdrop": "Menat",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Earth's Blessing",
-      "Torrent Shot",
-      "Diarama",
-      "Me Patra",
-      "Tetrakarn",
-      "",
-      "Menat"
-    ],
-    "stats": [340, 241, 15, 13, 15, 10, 8, 8]
+    "resists": "----------rr--",
+    "skills": ["Torrent Shot", "Diarama", "Me Patra", "Tetrakarn"],
+    "stats": [340, 241, 129, 15, 13, 15, 10, 8, 8]
   },
   "Hecate": {
-    "cdrop": "Karma Amulet",
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 5, 5, 5, 5],
+    "atks": [124, 76, 120, 77, 109, 24, 85, 440, 44, 440],
     "inherit": "death",
-    "lvl": 44,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Darkside Aid"
-    },
+    "lvl": "44",
     "race": "Tyrant",
-    "rdrop": "Magical Mirror",
-    "resists": "eeeeeFFFF--FFFF",
-    "skills": [
-      "Darkside Aid",
-      "Iron Tail",
-      "Dark Judgement",
-      "Samakaja",
-      "Samarecarm",
-      "",
-      ""
-    ],
-    "stats": [398, 230, 18, 14, 20, 8, 8, 6]
+    "resists": "-----rrrr-rrrr",
+    "skills": ["Iron Tail", "Dark Judgement", "Dark Judgement", "Samakaja", "Samarecarm"],
+    "stats": [398, 230, 166, 18, 14, 20, 8, 8, 6]
   },
   "Hekatoncheires": {
-    "cdrop": "Hand of Light",
+    "affinities": [2, 1, 2, 1, 1, 5, -4, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [184, 111, 180, 112, 83, 9, 95, 630, 315, 315],
     "inherit": "fire",
-    "lvl": 63,
-    "person": "Madman",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Hell's Gate"
-    },
+    "lvl": "63",
     "race": "Jaki",
-    "rdrop": "Talisman",
-    "resists": "2-2--fe-3--57-3",
-    "skills": [
-      "Hell's Gate",
-      "Rampage",
-      "Tackle",
-      "Fool's Voice",
-      "Rakukaja",
-      "",
-      ""
-    ],
-    "stats": [498, 111, 29, 6, 6, 19, 14, 7]
+    "resists": "-----d--------",
+    "skills": ["Rampage", "Tackle", "Fool's Voice", "Rakukaja", "Rakukaja"],
+    "stats": [498, 111, 122, 29, 6, 6, 19, 14, 7]
   },
   "Hel": {
-    "cdrop": "Ruby",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [82, 62, 100, 63, 91, 22, 72, 330, 330, 33],
     "inherit": "death",
-    "lvl": 33,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Hell's Gate"
-    },
+    "lvl": "33",
     "race": "Reaper",
-    "rdrop": "Balm of Life",
-    "resists": "-----------9999",
-    "skills": [
-      "Hell's Gate",
-      "Happy Trigger",
-      "Prominence",
-      "Makajam",
-      "Samanda",
-      "",
-      ""
-    ],
-    "stats": [318, 167, 8, 13, 18, 9, 11, 5]
+    "resists": "--------------",
+    "skills": ["Happy Trigger", "Prominence", "Makajam", "Samanda"],
+    "stats": [318, 167, 142, 8, 13, 18, 9, 11, 5]
   },
   "Hinokagutsuchi": {
-    "cdrop": "Heat Amulet",
+    "affinities": [2, 2, 2, 1, 2, 9, -8, 1, 2, 1, 5, 3, 3, 5],
+    "atks": [130, 83, 126, 84, 92, 17, 78, 440, 440, 44],
     "inherit": "fire",
-    "lvl": 44,
-    "person": "Madman",
-    "plugin": {
-      "cost": 0,
-      "effect": "Resist Fire, Weak to Ice"
-    },
+    "lvl": "44",
     "race": "Amatsu",
-    "rdrop": "Diamond",
-    "resists": "222-2ji-2--5335",
-    "skills": [
-      "Scapegoat",
-      "Tekken Punch",
-      "Fire Wall",
-      "Agilao",
-      "Agidyne",
-      "",
-      ""
-    ],
-    "stats": [416, 224, 21, 10, 15, 11, 15, 7]
+    "resists": "-----d--------",
+    "skills": ["Tekken Punch", "Fire Wall", "Agilao", "Agilao", "Agidyne", "Agidyne"],
+    "stats": [416, 224, 145, 21, 10, 15, 11, 15, 7]
   },
   "Horus": {
-    "cdrop": "Heat Amulet",
+    "affinities": [2, 2, 2, 1, 2, 5, -4, 1, 1, 1, 1, 5, 1, 3],
+    "atks": [180, 115, 172, 116, 119, 23, 112, 630, 315, 315],
     "inherit": "fire",
-    "lvl": 63,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 80,
-      "effect": "Learn Eye of Heaven"
-    },
+    "lvl": "63",
     "race": "Deity",
-    "rdrop": "Uraeus",
-    "resists": "222-2Fe-----5-3",
-    "skills": [
-      "Eye of Heaven",
-      "Torrent Shot",
-      "Fire Breath",
-      "Sonic Boom",
-      "Samakaja",
-      "",
-      "Eye of Void"
-    ],
-    "stats": [574, 291, 27, 15, 17, 15, 15, 13]
+    "resists": "-----r--------",
+    "skills": ["Torrent Shot", "Fire Breath", "Fire Breath", "Sonic Boom", "Samakaja"],
+    "stats": [574, 291, 127, 27, 15, 17, 15, 15, 13]
   },
   "Hresvelgr": {
-    "cdrop": "Me Patra Stone",
+    "affinities": [4, 4, 4, -4, -4, 1, 9, 1, 1, 1, 9, 1, 1, 9],
+    "atks": [132, 97, 138, 98, 92, 17, 86, 520, 520, 52],
     "inherit": "ice",
-    "lvl": 52,
-    "person": "Beast",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "lvl": "52",
     "race": "Raptor",
-    "rdrop": "Emerald",
-    "resists": "444ee-9----9--9",
-    "skills": [
-      "Eye of Heaven",
-      "Time of Merriment",
-      "Poison Claw",
-      "Wing Flap",
-      "Ice Breath",
-      "Recarm",
-      "Eye of Void"
-    ],
-    "stats": [372, 144, 14, 11, 12, 9, 16, 8]
+    "resists": "--------------",
+    "skills": ["Poison Claw", "Wing Flap", "Ice Breath", "Recarm"],
+    "stats": [372, 144, 157, 14, 11, 12, 9, 16, 8]
   },
   "Ifrit": {
-    "cdrop": "Heat Amulet",
+    "affinities": [1, 1, 1, 2, 2, 5, -4, 1, 1, 1, 1, 7, 1, 7],
+    "atks": [98, 64, 106, 64, 72, 14, 65, 360, 180, 180],
     "inherit": "fire",
-    "lvl": 36,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Darkside Aid"
-    },
+    "lvl": "36",
     "race": "Yoma",
-    "rdrop": "Pentagram",
-    "resists": "---22fe-----7-7",
-    "skills": [
-      "Pit Trap",
-      "Tekken Punch",
-      "Fire Wall",
-      "Agilao",
-      "Zanma",
-      "",
-      ""
-    ],
-    "stats": [276, 116, 13, 9, 11, 9, 8, 5]
+    "resists": "-----d--------",
+    "skills": ["Tekken Punch", "Fire Wall", "Agilao", "Agilao", "Zanma"],
+    "stats": [276, 116, 54, 13, 9, 11, 9, 8, 5]
   },
   "Incubus": {
-    "cdrop": "Sapphire",
+    "affinities": [4, 1, 4, 4, 4, 1, 5, 5, 1, 1, 9, 1, 3, 9],
+    "atks": [98, 69, 114, 69, 84, 16, 70, 390, 39, 390],
     "inherit": "mind",
-    "lvl": 39,
-    "person": "Youngster",
-    "plugin": {
-      "cost": 20,
-      "effect": "Learn Booby Trap"
-    },
+    "lvl": "39",
     "race": "Night",
-    "rdrop": "Magical Mirror",
-    "resists": "4-444-55---J-39",
-    "skills": [
-      "Time of Merriment",
-      "Poison Claw",
-      "Deathtouch",
-      "Virus",
-      "Dormina",
-      "",
-      ""
-    ],
-    "stats": [300, 131, 10, 9, 14, 10, 8, 6]
+    "resists": "----------r---",
+    "skills": ["Poison Claw", "Deathtouch", "Virus", "Dormina", "Dormina"],
+    "stats": [300, 131, 85, 10, 9, 14, 10, 8, 6]
   },
   "Indra": {
-    "cdrop": "Thunder Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 1, 7, 1, 1],
+    "atks": [134, 86, 130, 87, 70, 11, 73, 440, 220, 220],
     "inherit": "elec",
-    "lvl": 44,
-    "person": "Knight",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "44",
     "race": "Deity",
-    "rdrop": "Soma",
-    "resists": "-------f----7--",
-    "skills": [
-      "Duel",
-      "Rampage",
-      "Double Thrust",
-      "Thunderbolt",
-      "Dekaja",
-      "",
-      "Heavenly Mandate"
-    ],
-    "stats": [408, 164, 23, 7, 8, 13, 16, 10]
+    "resists": "-------d------",
+    "skills": ["Rampage", "Double Thrust", "Thunderbolt", "Thunderbolt", "Dekaja"],
+    "stats": [408, 164, 96, 23, 7, 8, 13, 16, 10]
   },
   "Indrajit": {
-    "cdrop": "White Gloves",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 1, 7, 1, 1],
+    "atks": [148, 87, 148, 88, 102, 19, 92, 500, 50, 500],
     "inherit": "elec",
-    "lvl": 50,
-    "person": "Revered",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "50",
     "race": "Fury",
-    "rdrop": "Soma",
-    "resists": "-------f----7--",
-    "skills": [
-      "Duel",
-      "Hades Blast",
-      "Happy Trigger",
-      "Thunderbolt",
-      "Makarakarn",
-      "",
-      "Heavenly Mandate"
-    ],
-    "stats": [472, 208, 24, 11, 16, 16, 11, 4]
+    "resists": "-------d------",
+    "skills": ["Hades Blast", "Happy Trigger", "Thunderbolt", "Thunderbolt", "Makarakarn"],
+    "stats": [472, 208, 154, 24, 11, 16, 16, 11, 4]
   },
   "Isis": {
-    "cdrop": "Book of Thoth",
-    "inherit": "recovery",
-    "lvl": 60,
-    "person": "Lady",
-    "plugin": {
-      "cost": 80,
-      "effect": "Learn Earth's Blessing"
-    },
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [166, 106, 164, 106, 133, 24, 105, 600, 60, 600],
+    "inherit": "reca",
+    "lvl": "60",
     "race": "Lady",
-    "rdrop": "Sisterhood",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Lunar Aid",
-      "Happy Trigger",
-      "Affectionate Prayer",
-      "Samarecarm",
-      "Dekaja",
-      "",
-      "Sisterhood"
-    ],
-    "stats": [530, 384, 23, 13, 23, 14, 11, 11]
+    "resists": "----------rr--",
+    "skills": ["Happy Trigger", "Affectionate Prayer", "Samarecarm", "Dekaja"],
+    "stats": [530, 384, 177, 23, 13, 23, 14, 11, 11]
   },
   "Isora": {
-    "cdrop": "Awakened Amulet",
+    "affinities": [1, 1, 1, 2, 2, 1, 1, 5, 1, 1, 1, 7, 1, 7],
+    "atks": [56, 39, 72, 39, 47, 11, 44, 210, 105, 105],
     "inherit": "elec",
-    "lvl": 21,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 70,
-      "effect": "-50% CP for ally NETHERS when Navi",
-      "self": true
-    },
+    "lvl": "21",
     "race": "Yoma",
-    "rdrop": "Polished Sphere",
-    "resists": "---22--f----7-7",
-    "skills": [
-      "Time of Requiem",
-      "Tackle",
-      "Bufula",
-      "Zionga",
-      "Diarama",
-      "",
-      "Flowing Time"
-    ],
-    "stats": [174, 81, 7, 7, 8, 7, 6, 4]
+    "resists": "-------d------",
+    "skills": ["Tackle", "Bufula", "Zionga", "Diarama"],
+    "stats": [174, 81, 39, 7, 7, 8, 7, 6, 4]
   },
   "Jack Frost": {
-    "cdrop": "Hiranya",
+    "affinities": [1, 1, 1, 2, 2, -4, 5, 1, 1, 1, 1, 7, 1, 7],
+    "atks": [32, 24, 48, 24, 30, 7, 25, 110, 55, 55],
     "inherit": "ice",
-    "lvl": 11,
-    "person": "Jack",
-    "plugin": {
-      "cost": 0,
-      "effect": "Resist Ice, Weak to Fire"
-    },
+    "lvl": "11",
     "race": "Fairy",
-    "rdrop": "Frost Boots",
-    "resists": "---22ef-----7-7",
-    "skills": [
-      "Booby Trap",
-      "Tekken Punch",
-      "Bufu",
-      "Bufula",
-      "Dia",
-      "Rakukaja",
-      "Galeforce"
-    ],
-    "stats": [102, 51, 5, 4, 6, 5, 5, 5]
+    "resists": "------d-------",
+    "skills": ["Tekken Punch", "Bufu", "Bufu", "Bufula", "Bufula", "Dia", "Rakukaja"],
+    "stats": [102, 51, 29, 5, 4, 6, 5, 5, 5]
   },
   "Jatayu": {
-    "cdrop": "Hawk Eye",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [94, 69, 102, 70, 63, 13, 63, 360, 360, 36],
     "inherit": "force",
-    "lvl": 36,
-    "person": "Beast",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Fast Escape"
-    },
+    "lvl": "36",
     "race": "Flight",
-    "rdrop": "Divine Feather",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Hawk Eye",
-      "Jump Kick",
-      "Wing Flap",
-      "Trafuri",
-      "Makarakarn",
-      "",
-      ""
-    ],
-    "stats": [264, 104, 11, 9, 8, 7, 14, 5]
+    "resists": "--------------",
+    "skills": ["Jump Kick", "Wing Flap", "Trafuri", "Makarakarn"],
+    "stats": [264, 104, 81, 11, 9, 8, 7, 14, 5]
   },
   "Jeanne D'Arc": {
-    "cdrop": "Holy Water",
-    "inherit": "recovery",
-    "lvl": 40,
-    "person": "Lady",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [100, 74, 112, 74, 93, 22, 80, 400, 200, 200],
+    "inherit": "reca",
+    "lvl": "40",
     "race": "Fiend",
-    "rdrop": "Blessed Mirror",
-    "resists": "-----------9999",
-    "skills": [
-      "Spirit's Blessing",
-      "Mist Slash",
-      "Orleans Prayer",
-      "Diarahan",
-      "Samarecarm",
-      "",
-      "Saintly Soul"
-    ],
-    "stats": [344, 210, 10, 14, 16, 8, 9, 11]
+    "resists": "--------------",
+    "skills": ["Mist Slash", "Orleans Prayer", "Diarahan", "Samarecarm"],
+    "stats": [344, 210, 1, 10, 14, 16, 8, 9, 11]
   },
   "Jinn": {
-    "cdrop": "Mysterious Amulet",
+    "affinities": [1, 1, 1, 2, 2, 5, -4, 1, 1, 1, 1, 7, 1, 7],
+    "atks": [74, 53, 86, 54, 60, 12, 51, 280, 140, 140],
     "inherit": "fire",
-    "lvl": 28,
-    "person": "Youngster",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Phantasm"
-    },
+    "lvl": "28",
     "race": "Yoma",
-    "rdrop": "Polished Sphere",
-    "resists": "---22fe-----7-7",
-    "skills": [
-      "Phantasm",
-      "Tekken Punch",
-      "Fire Wall",
-      "Agilao",
-      "Zanma",
-      "",
-      ""
-    ],
-    "stats": [216, 96, 9, 7, 10, 7, 10, 4]
+    "resists": "-----d--------",
+    "skills": ["Tekken Punch", "Fire Wall", "Agilao", "Zanma"],
+    "stats": [216, 96, 46, 9, 7, 10, 7, 10, 4]
   },
   "Kali": {
-    "cdrop": "Karma Wheel",
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [208, 138, 202, 139, 127, 22, 125, 740, 74, 740],
     "inherit": "death",
-    "lvl": 74,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Bharatanatyam"
-    },
+    "lvl": "74",
     "race": "Lady",
-    "rdrop": "Skull Necklace",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Time of Madness",
-      "Spin Slash",
-      "Sexy Dance",
-      "Valiant Dance",
-      "Mudo",
-      "",
-      "Avenging Goddess"
-    ],
-    "stats": [664, 434, 30, 14, 16, 19, 22, 13]
+    "resists": "----------rr--",
+    "skills": ["Spin Slash", "Sexy Dance", "Valiant Dance", "Mudo"],
+    "stats": [664, 434, 211, 30, 14, 16, 19, 22, 13]
   },
   "Kartikeya": {
-    "cdrop": "Bead",
+    "affinities": [3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 4, 9, -4, 1],
+    "atks": [160, 114, 152, 117, 102, 17, 91, 570, 57, 570],
     "inherit": "force",
-    "lvl": 57,
-    "person": "Little Kid",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "57",
     "race": "Fury",
-    "rdrop": "Diamond",
-    "resists": "D3D-3---3--49e-",
-    "skills": [
-      "Ares Aid",
-      "Mist Slash",
-      "Sonic Boom",
-      "Tarukaja",
-      "Posumudi",
-      "",
-      "Valhallan Mandate"
-    ],
-    "stats": [504, 223, 23, 10, 14, 11, 28, 7]
+    "resists": "r-r-----------",
+    "skills": ["Mist Slash", "Sonic Boom", "Tarukaja", "Tarukaja", "Posumudi"],
+    "stats": [504, 223, 174, 23, 10, 14, 11, 28, 7]
   },
   "Kikuri-Hime": {
-    "cdrop": "Revival Bead",
+    "affinities": [-2, -2, -2, 1, 1, 3, 3, 3, 3, -2, 9, 9, 9, 9],
+    "atks": [76, 57, 92, 57, 73, 17, 63, 300, 30, 300],
     "inherit": "mind",
-    "lvl": 30,
-    "person": "Archaic",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Maiden Dance"
-    },
+    "lvl": "30",
     "race": "Lady",
-    "rdrop": "Floral Fragrance",
-    "resists": "ccc--3333c-9999",
-    "skills": [
-      "Maiden Dance",
-      "Happy Trigger",
-      "Soothing Melody",
-      "Heavenly Dance",
-      "Recarm",
-      "",
-      ""
-    ],
-    "stats": [274, 186, 8, 11, 13, 8, 8, 9]
+    "resists": "--------------",
+    "skills": ["Happy Trigger", "Soothing Melody", "Heavenly Dance", "Recarm"],
+    "stats": [274, 186, 106, 8, 11, 13, 8, 8, 9]
   },
   "Kingu": {
-    "cdrop": "Oni-slayer Helmet",
-    "inherit": "support",
-    "lvl": 44,
-    "person": "Beast",
-    "plugin": {
-      "cost": 70,
-      "effect": "-50% CP for ally DRAGONS when Navi",
-      "self": true
-    },
+    "affinities": [1, 1, 2, 1, 2, 3, 3, 3, 1, 1, 9, 1, 1, 5],
+    "atks": [120, 77, 126, 78, 82, 13, 72, 440, 44, 440],
+    "inherit": "recb",
+    "lvl": "44",
     "race": "Drake",
-    "rdrop": "Emerald",
-    "resists": "--2-2333---9--5",
-    "skills": [
-      "Canceller",
-      "Feral Bite",
-      "Mow Down",
-      "Thunderbolt",
-      "Zandyne",
-      "",
-      "Tablet of Heaven"
-    ],
-    "stats": [336, 120, 16, 7, 12, 11, 9, 6]
+    "resists": "--------------",
+    "skills": ["Feral Bite", "Mow Down", "Thunderbolt", "Zandyne"],
+    "stats": [336, 120, 165, 16, 7, 12, 11, 9, 6]
   },
   "Kinnari": {
-    "cdrop": "Life Stone",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "atks": [34, 22, 48, 23, 31, 9, 29, 110, 55, 55],
     "inherit": "mind",
-    "lvl": 11,
-    "person": "Lady",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Hemachandra"
-    },
+    "lvl": "11",
     "race": "Yoma",
-    "rdrop": "Chakra Pot",
-    "resists": "---------------",
-    "skills": [
-      "Hemachandra",
-      "Needle Rush",
-      "Soothing Melody",
-      "Valiant Dance",
-      "Dormina",
-      "Pulinpa",
-      ""
-    ],
-    "stats": [102, 59, 6, 6, 6, 5, 5, 3]
+    "resists": "--------------",
+    "skills": ["Needle Rush", "Soothing Melody", "Valiant Dance", "Dormina", "Pulinpa"],
+    "stats": [102, 59, 29, 6, 6, 6, 5, 5, 3]
   },
   "Knocker": {
-    "cdrop": "Medicine",
-    "inherit": "recovery",
-    "lvl": 5,
-    "person": "Little Kid",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Windfall"
-    },
+    "affinities": [3, 1, 3, 3, 3, -8, 5, 2, 1, 1, 9, -8, 9, 9],
+    "atks": [16, 14, 34, 14, 21, 5, 16, 50, 25, 25],
+    "inherit": "reca",
+    "lvl": "5",
     "race": "Jirae",
-    "rdrop": "Bead",
-    "resists": "3-333i52---9i99",
-    "skills": [
-      "Windfall",
-      "Tackle",
-      "Agi",
-      "Zan",
-      "Dia",
-      "Tarukaja",
-      ""
-    ],
-    "stats": [60, 37, 3, 3, 5, 4, 5, 4]
+    "resists": "--------------",
+    "skills": ["Tackle", "Agi", "Zan", "Dia", "Tarukaja"],
+    "stats": [60, 37, 23, 3, 3, 5, 4, 5, 4]
   },
   "Kushinada-Hime": {
-    "cdrop": "White Arrow",
-    "inherit": "support",
-    "lvl": 20,
-    "person": "Archaic",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "affinities": [-2, -2, -2, 1, 1, 3, 3, 3, 3, -2, 9, 9, 9, 9],
+    "atks": [52, 40, 70, 40, 53, 13, 45, 200, 20, 200],
+    "inherit": "recb",
+    "lvl": "20",
     "race": "Lady",
-    "rdrop": "Floral Fragrance",
-    "resists": "ccc--3333c-9999",
-    "skills": [
-      "Maiden Dance",
-      "Dream Needle",
-      "Valiant Dance",
-      "Diarama",
-      "Patra",
-      "",
-      "Priestess Dance"
-    ],
-    "stats": [198, 122, 6, 8, 10, 7, 6, 8]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Valiant Dance", "Diarama", "Patra"],
+    "stats": [198, 122, 84, 6, 8, 10, 7, 6, 8]
   },
   "Lakshmi": {
-    "cdrop": "Rapid Shot",
-    "inherit": "recovery",
-    "lvl": 69,
-    "person": "Gal",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [168, 133, 180, 132, 137, 25, 117, 690, 690, 69],
+    "inherit": "reca",
+    "lvl": "69",
     "race": "Megami",
-    "rdrop": "Emerald",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Gambler",
-      "Happy Trigger",
-      "Sexy Dance",
-      "Affectionate Prayer",
-      "Heavenly Dance",
-      "Samarecarm",
-      "Jackpot"
-    ],
-    "stats": [578, 423, 15, 15, 21, 13, 14, 29]
+    "resists": "----------rr--",
+    "skills": ["Happy Trigger", "Sexy Dance", "Affectionate Prayer", "Heavenly Dance", "Samarecarm"],
+    "stats": [578, 423, 199, 15, 15, 21, 13, 14, 29]
   },
   "Legion": {
-    "cdrop": "Vaccine",
+    "affinities": [4, 1, 1, 9, 9, 1, 3, 4, 2, 1, 9, -8, 1, 9],
+    "atks": [82, 50, 88, 50, 51, 10, 51, 280, 28, 280],
     "inherit": "death",
-    "lvl": 28,
-    "person": "Madman",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Unknowable Darkness"
-    },
+    "lvl": "28",
     "race": "Spirit",
-    "rdrop": "Balm of Life",
-    "resists": "4--99-342--9i-9",
-    "skills": [
-      "Unknowable Darkness",
-      "Self-Destruct",
-      "Deathtouch",
-      "Panic Voice",
-      "Virus",
-      "",
-      ""
-    ],
-    "stats": [222, 84, 13, 7, 7, 8, 7, 3]
+    "resists": "--------------",
+    "skills": ["Self-Destruct", "Deathtouch", "Panic Voice", "Virus"],
+    "stats": [222, 84, 103, 13, 7, 7, 8, 7, 3]
   },
   "Lilim": {
-    "cdrop": "Hand of Darkness",
+    "affinities": [3, 2, 3, 3, 3, 1, 1, 1, 1, 1, 7, 1, 1, 5],
+    "atks": [70, 51, 84, 52, 74, 12, 47, 280, 28, 280],
     "inherit": "mind",
-    "lvl": 28,
-    "person": "Gal",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Honey Trap"
-    },
+    "lvl": "28",
     "race": "Night",
-    "rdrop": "Maypole",
-    "resists": "32333------7--5",
-    "skills": [
-      "Time of Merriment",
-      "Passionate Kiss",
-      "Mana Drain",
-      "Lullaby",
-      "Marin Karin",
-      "",
-      ""
-    ],
-    "stats": [210, 108, 7, 5, 15, 6, 9, 3]
+    "resists": "--------------",
+    "skills": ["Passionate Kiss", "Mana Drain", "Lullaby", "Lullaby", "Marin Karin", "Marin Karin"],
+    "stats": [210, 108, 69, 7, 5, 15, 6, 9, 3]
   },
   "Loki": {
-    "cdrop": "Kikoku Armor",
+    "affinities": [1, 1, 1, 4, 4, 1, 3, 3, 1, 1, 9, 9, 5, 9],
+    "atks": [160, 101, 158, 102, 104, 24, 108, 560, 56, 560],
     "inherit": "ice",
-    "lvl": 56,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Ragnarok"
-    },
+    "lvl": "56",
     "race": "Tyrant",
-    "rdrop": "Vanagandr",
-    "resists": "---4433----9959",
-    "skills": [
-      "Phantasm",
-      "Happy Trigger",
-      "Glacial Blast",
-      "Bufudyne",
-      "Marin Karin",
-      "",
-      ""
-    ],
-    "stats": [532, 250, 24, 17, 14, 15, 15, 7]
+    "resists": "--------------",
+    "skills": ["Happy Trigger", "Glacial Blast", "Glacial Blast", "Bufudyne", "Bufudyne", "Marin Karin"],
+    "stats": [532, 250, 207, 24, 17, 14, 15, 15, 7]
   },
   "Lucifuge": {
-    "cdrop": "Bead",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [168, 136, 178, 138, 132, 33, 133, 690, 69, 690],
     "inherit": "almighty",
-    "lvl": 69,
-    "person": "Revered",
-    "plugin": {
-      "cost": 150,
-      "self": true
-    },
+    "lvl": "69",
     "race": "Tyrant",
-    "rdrop": "Soma",
-    "resists": "-----------9999",
-    "skills": [
-      "Magnetite Convertor",
-      "Happy Trigger",
-      "Dark Breath",
-      "Steel Wall",
-      "Megidola",
-      "",
-      "Pandemonium"
-    ],
-    "stats": [612, 327, 15, 24, 18, 12, 28, 13]
+    "resists": "--------------",
+    "skills": ["Happy Trigger", "Dark Breath", "Steel Wall", "Megidola"],
+    "stats": [612, 327, 250, 15, 24, 18, 12, 28, 13]
   },
   "Mizuchi": {
-    "cdrop": "Mist Amulet",
+    "affinities": [2, 1, 2, 1, 1, -4, 5, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [112, 68, 110, 68, 67, 10, 61, 380, 190, 190],
     "inherit": "ice",
-    "lvl": 38,
-    "person": "Beast",
-    "plugin": {
-      "cost": 70,
-      "effect": "-50% CP for ally DRAGONS when Navi",
-      "self": true
-    },
+    "lvl": "38",
     "race": "Snake",
-    "rdrop": "Hand of Glory",
-    "resists": "2-2--ef-3--57-3",
-    "skills": [
-      "Vanish",
-      "Iron Tail",
-      "Water Wall",
-      "Posumudi",
-      "Dekunda",
-      "",
-      "Ryuku's Pearl"
-    ],
-    "stats": [288, 98, 18, 6, 9, 9, 9, 5]
+    "resists": "------d-------",
+    "skills": ["Iron Tail", "Water Wall", "Posumudi", "Dekunda"],
+    "stats": [288, 98, 56, 18, 6, 9, 9, 9, 5]
   },
   "Moloch": {
-    "cdrop": "Bead",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, -4, 3, 9],
+    "atks": [134, 84, 134, 85, 87, 21, 92, 460, 46, 460],
     "inherit": "death",
-    "lvl": 46,
-    "person": "Beast",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "46",
     "race": "Tyrant",
-    "rdrop": "Diamond",
-    "resists": "-----------Je39",
-    "skills": [
-      "Greed",
-      "Venomous Needle",
-      "Dark Wall",
-      "Tarunda",
-      "Makanda",
-      "",
-      "Sacrifice"
-    ],
-    "stats": [450, 214, 21, 15, 12, 13, 13, 6]
+    "resists": "----------r---",
+    "skills": ["Venomous Needle", "Dark Wall", "Tarunda", "Makanda"],
+    "stats": [450, 214, 178, 21, 15, 12, 13, 13, 6]
   },
   "Morrigan": {
-    "cdrop": "Claiomh Solais",
+    "affinities": [5, 5, 5, -4, -4, 1, 1, 1, 1, 1, 5, 9, 1, 5],
+    "atks": [122, 82, 122, 83, 81, 13, 71, 450, 450, 45],
     "inherit": "force",
-    "lvl": 45,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "45",
     "race": "Flight",
-    "rdrop": "Blessed Mirror",
-    "resists": "555ee------59-5",
-    "skills": [
-      "Trinity",
-      "Jump Kick",
-      "Deathbound",
-      "Mudo",
-      "Recarm",
-      "",
-      "Avenging Goddess"
-    ],
-    "stats": [324, 121, 16, 8, 11, 8, 12, 7]
+    "resists": "--------------",
+    "skills": ["Jump Kick", "Deathbound", "Mudo", "Recarm"],
+    "stats": [324, 121, 94, 16, 8, 11, 8, 12, 7]
   },
   "Mot": {
-    "cdrop": "Mysterious Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [192, 125, 194, 126, 172, 36, 138, 720, 720, 72],
     "inherit": "death",
-    "lvl": 72,
-    "person": "Knight",
-    "plugin": {
-      "cost": 100,
-      "effect": "-50% CP for ally ICONS when Navi",
-      "self": true
-    },
+    "lvl": "72",
     "race": "Reaper",
-    "rdrop": "Longevity Stone",
-    "resists": "-----------9999",
-    "skills": [
-      "Wasteland",
-      "Dream Needle",
-      "Dark Judgement",
-      "Petra Eyes",
-      "Megidola",
-      "",
-      "King of Grief"
-    ],
-    "stats": [680, 330, 24, 21, 31, 17, 16, 5]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Dark Judgement", "Dark Judgement", "Petra Eyes", "Megidola"],
+    "stats": [680, 330, 256, 24, 21, 31, 17, 16, 5]
   },
   "Naga": {
-    "cdrop": "Hole Snake",
+    "affinities": [1, 1, 1, 1, 1, 2, 2, 3, 2, 1, 1, 1, 1, 1],
+    "atks": [90, 54, 98, 54, 57, 10, 55, 310, 155, 155],
     "inherit": "elec",
-    "lvl": 31,
-    "person": "Punk",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Patroller"
-    },
+    "lvl": "31",
     "race": "Snake",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "-----22d2------",
-    "skills": [
-      "Pit Trap",
-      "Double Thrust",
-      "Mow Down",
-      "Zionga",
-      "Rakukaja",
-      "",
-      ""
-    ],
-    "stats": [252, 87, 14, 6, 8, 10, 6, 4]
+    "resists": "-------d------",
+    "skills": ["Double Thrust", "Mow Down", "Zionga", "Rakukaja"],
+    "stats": [252, 87, 49, 14, 6, 8, 10, 6, 4]
   },
   "Nandi": {
-    "cdrop": "Rapid Shot",
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, -4, 9, 5, 5],
+    "atks": [98, 61, 110, 61, 55, 8, 58, 330, 165, 165],
     "inherit": "expel",
-    "lvl": 33,
-    "person": "Beast",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Hemachandra"
-    },
+    "lvl": "33",
     "race": "Avatar",
-    "rdrop": "Book of Partha",
-    "resists": "---332222--e955",
-    "skills": [
-      "Scapegoat",
-      "Tackle",
-      "Light Wall",
-      "Soothing Melody",
-      "Recarmdra",
-      "",
-      ""
-    ],
-    "stats": [328, 81, 16, 5, 7, 14, 7, 9]
+    "resists": "--------------",
+    "skills": ["Tackle", "Light Wall", "Soothing Melody", "Recarmdra"],
+    "stats": [328, 81, 72, 16, 5, 7, 14, 7, 9]
   },
   "Nekomata": {
-    "cdrop": "Pearl",
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [64, 50, 76, 50, 51, 10, 44, 250, 125, 125],
     "inherit": "mind",
-    "lvl": 25,
-    "person": "Gal",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Jackpot"
-    },
+    "lvl": "25",
     "race": "Beast",
-    "rdrop": "Polished Sphere",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Windfall",
-      "Jump Kick",
-      "Feral Claw",
-      "Marin Karin",
-      "Patra",
-      "",
-      ""
-    ],
-    "stats": [186, 81, 7, 6, 8, 5, 10, 6]
+    "resists": "--------------",
+    "skills": ["Jump Kick", "Feral Claw", "Marin Karin", "Patra"],
+    "stats": [186, 81, 43, 7, 6, 8, 5, 10, 6]
   },
   "Nidhoggr": {
-    "cdrop": "Dis-Poison",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, -4, 3, 9],
+    "atks": [168, 111, 166, 112, 91, 12, 93, 610, 61, 610],
     "inherit": "nerve",
-    "lvl": 61,
-    "person": "Beast",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Virus Trap"
-    },
+    "lvl": "61",
     "race": "Drake",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "-----------Je39",
-    "skills": [
-      "Virus Trap",
-      "Acid Breath",
-      "Mow Down",
-      "Poison Breath",
-      "Poisma",
-      "",
-      ""
-    ],
-    "stats": [456, 129, 23, 8, 9, 14, 17, 8]
+    "resists": "----------r---",
+    "skills": ["Acid Breath", "Mow Down", "Poison Breath", "Poisma"],
+    "stats": [456, 129, 198, 23, 8, 9, 14, 17, 8]
   },
   "Nozuchi": {
-    "cdrop": "Hole Snake",
+    "affinities": [5, 5, 5, 5, 5, -8, -8, -8, -8, 1, -4, 5, -4, -8],
+    "atks": [68, 40, 78, 41, 35, 6, 40, 220, 110, 110],
     "inherit": "force",
-    "lvl": 22,
-    "person": "Beast",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Canceller"
-    },
+    "lvl": "22",
     "race": "Snake",
-    "rdrop": "Bead",
-    "resists": "fffffiiii--e5ei",
-    "skills": [
-      "Pit Trap",
-      "Iron Tail",
-      "Crystal Wall",
-      "Petradi",
-      "Makarakarn",
-      "",
-      ""
-    ],
-    "stats": [192, 54, 12, 4, 4, 9, 6, 4]
+    "resists": "ddddd---------",
+    "skills": ["Iron Tail", "Crystal Wall", "Petradi", "Makarakarn"],
+    "stats": [192, 54, 40, 12, 4, 4, 9, 6, 4]
   },
   "Nue": {
-    "cdrop": "Kogitsunemaru",
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, 7, -2, 5, 9],
+    "atks": [82, 51, 88, 52, 53, 9, 48, 280, 140, 140],
     "inherit": "nerve",
-    "lvl": 28,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Unknowable Darkness"
-    },
+    "lvl": "28",
     "race": "Wilder",
-    "rdrop": "Pentagram",
-    "resists": "---332222--7c59",
-    "skills": [
-      "Unknowable Darkness",
-      "Poison Claw",
-      "Feral Bite",
-      "Rakunda",
-      "Samanda",
-      "",
-      ""
-    ],
-    "stats": [222, 80, 13, 5, 8, 8, 8, 4]
+    "resists": "--------------",
+    "skills": ["Poison Claw", "Feral Bite", "Rakunda", "Rakunda", "Samanda", "Samanda"],
+    "stats": [222, 80, 69, 13, 5, 8, 8, 8, 4]
   },
   "Nyarlathotep": {
-    "cdrop": "Mysterious Amulet",
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 5, 5, 5, 5],
+    "atks": [150, 97, 162, 97, 97, 18, 100, 540, 540, 54],
     "inherit": "death",
-    "lvl": 54,
-    "person": "Punk",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "54",
     "race": "Vile",
-    "rdrop": "Dark Matter",
-    "resists": "eeeeeFFFF--FFFF",
-    "skills": [
-      "Chaotic Darkness",
-      "Poison Claw",
-      "Dark Judgement",
-      "Megidola",
-      "Tetrakarn",
-      "",
-      "Teleport"
-    ],
-    "stats": [534, 224, 21, 12, 13, 19, 12, 9]
+    "resists": "-----rrrr-rrrr",
+    "skills": ["Poison Claw", "Dark Judgement", "Megidola", "Tetrakarn"],
+    "stats": [534, 224, 196, 21, 12, 13, 19, 12, 9]
   },
   "Oberon": {
-    "cdrop": "Silky Coat",
+    "affinities": [1, 1, 1, 2, 2, 3, 3, 3, 3, 1, 9, 9, 5, 5],
+    "atks": [124, 89, 132, 90, 102, 21, 88, 500, 250, 250],
     "inherit": "mind",
-    "lvl": 50,
-    "person": "Knight",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Booby Trap"
-    },
+    "lvl": "50",
     "race": "Fairy",
-    "rdrop": "Playwright's Pen",
-    "resists": "---223333--9955",
-    "skills": [
-      "Chronostasis",
-      "Dream Needle",
-      "Ziodyne",
-      "Zandyne",
-      "Samakaja",
-      "",
-      ""
-    ],
-    "stats": [354, 166, 12, 13, 16, 8, 12, 7]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Ziodyne", "Zandyne", "Samakaja"],
+    "stats": [354, 166, 68, 12, 13, 16, 8, 12, 7]
   },
   "Ocypete": {
-    "cdrop": "Athame",
+    "affinities": [4, 4, 4, -8, -8, 1, 1, 1, -4, 1, 3, 3, 1, 5],
+    "atks": [44, 36, 56, 37, 32, 6, 29, 160, 160, 16],
     "inherit": "force",
-    "lvl": 16,
-    "person": "Gal",
-    "plugin": {
-      "cost": 20,
-      "effect": "Learn Eagle Eye"
-    },
+    "lvl": "16",
     "race": "Flight",
-    "rdrop": "Bead",
-    "resists": "444ii---e--33-5",
-    "skills": [
-      "Eagle Eye",
-      "Poison Claw",
-      "Wing Flap",
-      "Zionga",
-      "Rakunda",
-      "",
-      ""
-    ],
-    "stats": [126, 52, 6, 4, 5, 4, 11, 4]
+    "resists": "--------------",
+    "skills": ["Poison Claw", "Wing Flap", "Zionga", "Rakunda"],
+    "stats": [126, 52, 51, 6, 4, 5, 4, 11, 4]
   },
   "Odin": {
-    "cdrop": "Mirmir's Head",
-    "inherit": "support",
-    "lvl": 67,
-    "person": "Knight",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "affinities": [1, 1, 1, 2, 2, 3, 3, 3, 3, 1, 9, 9, 5, 5],
+    "atks": [182, 120, 184, 121, 124, 34, 140, 670, 335, 335],
+    "inherit": "recb",
+    "lvl": "67",
     "race": "Deity",
-    "rdrop": "Horse-drawn Carriage",
-    "resists": "---223333--9955",
-    "skills": [
-      "Fountain of Mana",
-      "Double Thrust",
-      "Glacial Blast",
-      "Thunderbolt",
-      "Makakaja",
-      "",
-      "Heavenly Mandate"
-    ],
-    "stats": [630, 355, 24, 26, 16, 17, 16, 10]
+    "resists": "--------------",
+    "skills": ["Double Thrust", "Glacial Blast", "Thunderbolt", "Makakaja"],
+    "stats": [630, 355, 136, 24, 26, 16, 17, 16, 10]
   },
   "Ogre": {
-    "cdrop": "Life Stone",
+    "affinities": [3, 3, 3, 3, 3, 1, 1, 1, 2, 1, 3, 5, -4, 5],
+    "atks": [78, 43, 88, 43, 44, 7, 45, 250, 125, 125],
     "inherit": "force",
-    "lvl": 25,
-    "person": "Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Phantasm"
-    },
+    "lvl": "25",
     "race": "Jaki",
-    "rdrop": "Bead",
-    "resists": "33333---2--35e5",
-    "skills": [
-      "Phantasm",
-      "Mow Down",
-      "Rampage",
-      "Bufu",
-      "Zan",
-      "",
-      ""
-    ],
-    "stats": [222, 65, 14, 4, 6, 11, 4, 4]
+    "resists": "--------------",
+    "skills": ["Mow Down", "Rampage", "Bufu", "Zan"],
+    "stats": [222, 65, 65, 14, 4, 6, 11, 4, 4]
   },
   "Okuninushi": {
-    "cdrop": "Kishin Gloves",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 1, 7, 1, 1],
+    "atks": [116, 76, 126, 76, 75, 15, 77, 420, 42, 420],
     "inherit": "elec",
-    "lvl": 42,
-    "person": "Revered",
-    "plugin": {
-      "cost": 50,
-      "effect": "Remove ailments from stock demons when Navi"
-    },
+    "lvl": "42",
     "race": "Kunitsu",
-    "rdrop": "Longsword",
-    "resists": "-------f----7--",
-    "skills": [
-      "Fountain of Recovery",
-      "Feral Bite",
-      "Mow Down",
-      "Diarama",
-      "Me Patra",
-      "",
-      "Severing Sword"
-    ],
-    "stats": [396, 172, 16, 10, 10, 13, 10, 7]
+    "resists": "-------d------",
+    "skills": ["Feral Bite", "Mow Down", "Diarama", "Me Patra"],
+    "stats": [396, 172, 123, 16, 10, 10, 13, 10, 7]
   },
   "Omoikane": {
-    "cdrop": "Fisherman Ring",
-    "inherit": "support",
-    "lvl": 34,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Priestess Dance"
-    },
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 9, 9, 9, 9],
+    "atks": [80, 69, 96, 70, 84, 22, 73, 340, 340, 34],
+    "inherit": "recb",
+    "lvl": "34",
     "race": "Amatsu",
-    "rdrop": "Barrier Stone",
-    "resists": "eeeeeffff--9999",
-    "skills": [
-      "Fountain of Mana",
-      "Happy Trigger",
-      "Makajam",
-      "Makakaja",
-      "Tetrakarn",
-      "",
-      ""
-    ],
-    "stats": [306, 214, 6, 15, 15, 6, 14, 10]
+    "resists": "-----dddd-----",
+    "skills": ["Happy Trigger", "Makajam", "Makakaja", "Makakaja", "Tetrakarn"],
+    "stats": [306, 214, 123, 6, 15, 15, 6, 14, 10]
   },
   "Orthrus": {
-    "cdrop": "Better Arm",
+    "affinities": [2, 1, 2, 1, 1, 5, -4, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [92, 64, 98, 65, 49, 7, 52, 330, 165, 165],
     "inherit": "fire",
-    "lvl": 33,
-    "person": "Beast",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Gatekeeper"
-    },
+    "lvl": "33",
     "race": "Beast",
-    "rdrop": "Guardian Knowledge",
-    "resists": "2-2--fe-3--57-3",
-    "skills": [
-      "Guard Dog",
-      "Feral Bite",
-      "Fire Breath",
-      "Panic Voice",
-      "Fire Wall",
-      "",
-      ""
-    ],
-    "stats": [252, 73, 13, 5, 5, 8, 12, 7]
+    "resists": "-----d--------",
+    "skills": ["Feral Bite", "Fire Breath", "Panic Voice", "Fire Wall"],
+    "stats": [252, 73, 51, 13, 5, 5, 8, 12, 7]
   },
   "Pallas Athena": {
-    "cdrop": "Hand of Light",
-    "inherit": "support",
-    "lvl": 62,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Valkyrie Aid"
-    },
+    "affinities": [2, 2, 2, 1, 2, 1, 1, 1, 2, -2, 5, 9, 1, -4],
+    "atks": [172, 116, 176, 117, 105, 18, 107, 620, 620, 62],
+    "inherit": "recb",
+    "lvl": "62",
     "race": "Megami",
-    "rdrop": "Aegis",
-    "resists": "C2C-2---2c-59-e",
-    "skills": [
-      "Valkyrie Aid",
-      "Double Thrust",
-      "Exorcism Bow",
-      "Untouched Zone",
-      "Rakukaja",
-      "",
-      "Parthenon"
-    ],
-    "stats": [556, 342, 24, 12, 13, 18, 17, 14]
+    "resists": "r-r-----------",
+    "skills": ["Double Thrust", "Exorcism Bow", "Untouched Zone", "Rakukaja", "Rakukaja"],
+    "stats": [556, 342, 183, 24, 12, 13, 18, 17, 14]
   },
   "Parvati": {
-    "cdrop": "Bead",
-    "inherit": "recovery",
-    "lvl": 40,
-    "person": "Lady",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Seize"
-    },
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [110, 73, 116, 73, 89, 18, 75, 400, 40, 400],
+    "inherit": "reca",
+    "lvl": "40",
     "race": "Lady",
-    "rdrop": "Soma",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Earth's Blessing",
-      "Dream Needle",
-      "Sexy Dance",
-      "Affectionate Prayer",
-      "Diarama",
-      "",
-      ""
-    ],
-    "stats": [356, 234, 15, 11, 15, 10, 9, 9]
+    "resists": "----------rr--",
+    "skills": ["Dream Needle", "Sexy Dance", "Affectionate Prayer", "Affectionate Prayer", "Diarama"],
+    "stats": [356, 234, 129, 15, 11, 15, 10, 9, 9]
   },
   "Persephone": {
-    "cdrop": "Awakened Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [98, 74, 116, 75, 108, 25, 85, 400, 400, 40],
     "inherit": "death",
-    "lvl": 40,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Hell's Gate"
-    },
+    "lvl": "40",
     "race": "Reaper",
-    "rdrop": "Pentagram",
-    "resists": "-----------9999",
-    "skills": [
-      "Hell's Gate",
-      "Dream Needle",
-      "Glacial Blast",
-      "Petra Eyes",
-      "Samakaja",
-      "",
-      ""
-    ],
-    "stats": [386, 204, 9, 15, 21, 10, 13, 5]
+    "resists": "--------------",
+    "skills": ["Dream Needle", "Glacial Blast", "Glacial Blast", "Petra Eyes", "Samakaja"],
+    "stats": [386, 204, 165, 9, 15, 21, 10, 13, 5]
   },
   "Phoenix": {
-    "cdrop": "Revival Bead",
+    "affinities": [4, 4, 4, -4, -4, 5, -4, 1, 1, 1, 1, 5, 1, 5],
+    "atks": [98, 80, 112, 80, 68, 10, 62, 390, 390, 39],
     "inherit": "fire",
-    "lvl": 39,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "39",
     "race": "Avian",
-    "rdrop": "Balm of Life",
-    "resists": "444eefe-----5-5",
-    "skills": [
-      "Eye of Heaven",
-      "Feral Claw",
-      "Fire Breath",
-      "Samarecarm",
-      "Dekunda",
-      "",
-      "Endure"
-    ],
-    "stats": [294, 99, 10, 6, 9, 9, 15, 14]
+    "resists": "-----d--------",
+    "skills": ["Feral Claw", "Fire Breath", "Samarecarm", "Dekunda"],
+    "stats": [294, 99, 120, 10, 6, 9, 9, 15, 14]
   },
   "Pixie": {
-    "cdrop": "Medicine",
-    "inherit": "support",
-    "lvl": 2,
-    "person": "Gal",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Fairy's Blessing"
-    },
+    "affinities": [3, 1, 3, 3, 3, -8, 5, 2, 1, 1, 9, -8, 9, 9],
+    "atks": [10, 8, 26, 8, 12, 4, 11, 20, 10, 10],
+    "inherit": "recb",
+    "lvl": "2",
     "race": "Fairy",
-    "rdrop": "Pixie Dust",
-    "resists": "3-333i52---9i99",
-    "skills": [
-      "Fairy's Blessing",
-      "Needle Rush",
-      "Zio",
-      "Zan",
-      "Pulinpa",
-      "Dia",
-      "Pixie Dust"
-    ],
-    "stats": [36, 26, 3, 3, 3, 3, 3, 4]
+    "resists": "--------------",
+    "skills": ["Needle Rush", "Zio", "Zan", "Pulinpa", "Dia"],
+    "stats": [36, 26, 20, 3, 3, 3, 3, 3, 4]
   },
   "Poltergeist": {
-    "cdrop": "Medicine",
-    "inherit": "support",
-    "lvl": 2,
-    "person": "Little Kid",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Growing Darkness"
-    },
+    "affinities": [4, 1, 1, 9, 9, 1, 3, 4, 2, 1, 9, -8, 1, 9],
+    "atks": [10, 8, 26, 8, 12, 4, 11, 20, 2, 20],
+    "inherit": "recb",
+    "lvl": "2",
     "race": "Spirit",
-    "rdrop": "Hand of Glory",
-    "resists": "4--99-342--9i-9",
-    "skills": [
-      "Vanish",
-      "Tackle",
-      "Self-Destruct",
-      "Bufu",
-      "Makajam",
-      "Makanda",
-      ""
-    ],
-    "stats": [36, 26, 3, 3, 3, 3, 3, 4]
+    "resists": "--------------",
+    "skills": ["Tackle", "Self-Destruct", "Bufu", "Makajam", "Makanda"],
+    "stats": [36, 26, 45, 3, 3, 3, 3, 3, 4]
   },
   "Power": {
-    "cdrop": "Longinus",
+    "affinities": [1, 1, 1, -4, -4, 3, 3, 3, 3, 1, -8, 5, -8, 5],
+    "atks": [120, 75, 122, 75, 76, 15, 75, 430, 430, 43],
     "inherit": "expel",
-    "lvl": 43,
-    "person": "Angel",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Ascend"
-    },
+    "lvl": "43",
     "race": "Divine",
-    "rdrop": "Divine Baptism",
-    "resists": "---ee3333--iFi5",
-    "skills": [
-      "Ascend",
-      "Double Thrust",
-      "Divine Judgement",
-      "Light Wall",
-      "Tarukaja",
-      "",
-      ""
-    ],
-    "stats": [324, 123, 17, 10, 10, 10, 7, 7]
+    "resists": "-----------r--",
+    "skills": ["Double Thrust", "Divine Judgement", "Light Wall", "Tarukaja"],
+    "stats": [324, 123, 91, 17, 10, 10, 10, 7, 7]
   },
   "Preta": {
-    "cdrop": "Life Stone",
+    "affinities": [1, 1, 1, 2, 2, -4, 2, 2, 1, 1, 9, -8, 1, 5],
+    "atks": [26, 18, 40, 18, 21, 6, 21, 80, 8, 80],
     "inherit": "death",
-    "lvl": 8,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Growing Darkness"
-    },
+    "lvl": "8",
     "race": "Spirit",
-    "rdrop": "Karmic Tower",
-    "resists": "---22e22---9i-5",
-    "skills": [
-      "Greed",
-      "Acid Breath",
-      "Deathtouch",
-      "Fool's Voice",
-      "Tarunda",
-      "Makanda",
-      ""
-    ],
-    "stats": [78, 40, 5, 4, 4, 4, 4, 5]
+    "resists": "--------------",
+    "skills": ["Acid Breath", "Deathtouch", "Fool's Voice", "Tarunda", "Makanda"],
+    "stats": [78, 40, 58, 5, 4, 4, 4, 4, 5]
   },
   "Principality": {
-    "cdrop": "Rosario",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -4, 9, 3, 3],
+    "atks": [96, 61, 100, 61, 60, 11, 58, 340, 340, 34],
     "inherit": "expel",
-    "lvl": 34,
-    "person": "Angel",
-    "plugin": {
-      "cost": 20,
-      "effect": "Recover small MP of stock demons when Navi"
-    },
+    "lvl": "34",
     "race": "Divine",
-    "rdrop": "Talisman",
-    "resists": "-----------eJ33",
-    "skills": [
-      "Ascend",
-      "Happy Trigger",
-      "Light Wall",
-      "Zanma",
-      "Hama",
-      "",
-      ""
-    ],
-    "stats": [258, 94, 17, 7, 8, 8, 7, 7]
+    "resists": "-----------r--",
+    "skills": ["Happy Trigger", "Light Wall", "Zanma", "Hama"],
+    "stats": [258, 94, 78, 14, 7, 8, 8, 7, 7]
   },
   "Pyro Jack": {
-    "cdrop": "Life Stone",
+    "affinities": [1, 1, 1, 2, 2, 5, -4, 1, 1, 1, 1, 7, 1, 7],
+    "atks": [46, 33, 60, 33, 32, 7, 33, 160, 80, 80],
     "inherit": "fire",
-    "lvl": 16,
-    "person": "Jack",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Mine Trap"
-    },
+    "lvl": "16",
     "race": "Fairy",
-    "rdrop": "Lantern Hat",
-    "resists": "---22fe-----7-7",
-    "skills": [
-      "Booby Trap",
-      "Tekken Punch",
-      "Fool's Voice",
-      "Agi",
-      "Agilao",
-      "Tarukaja",
-      "Vanish"
-    ],
-    "stats": [138, 56, 7, 5, 5, 6, 6, 6]
+    "resists": "-----d--------",
+    "skills": ["Tekken Punch", "Fool's Voice", "Agi", "Agi", "Agilao", "Agilao", "Tarukaja"],
+    "stats": [138, 56, 34, 7, 5, 5, 6, 6, 6]
   },
   "Qilin": {
-    "cdrop": "Pope Shoes",
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, -4, 9, 5, 5],
+    "atks": [108, 72, 110, 72, 67, 10, 61, 380, 190, 190],
     "inherit": "expel",
-    "lvl": 38,
-    "person": "Beast",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Galeforce"
-    },
+    "lvl": "38",
     "race": "Holy",
-    "rdrop": "Magical Mirror",
-    "resists": "---332222--e955",
-    "skills": [
-      "Time of Rest",
-      "Tackle",
-      "Light Wall",
-      "Bufula",
-      "Recarm",
-      "",
-      ""
-    ],
-    "stats": [318, 98, 16, 6, 9, 9, 10, 11]
+    "resists": "--------------",
+    "skills": ["Tackle", "Light Wall", "Bufula", "Recarm"],
+    "stats": [318, 98, 76, 16, 6, 9, 9, 10, 11]
   },
   "Quetzalcoatl": {
-    "cdrop": "Pulque",
-    "inherit": "support",
-    "lvl": 44,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Ares Aid"
-    },
+    "affinities": [2, 1, 2, 1, 1, -4, 5, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [122, 78, 126, 79, 81, 18, 83, 440, 220, 220],
+    "inherit": "recb",
+    "lvl": "44",
     "race": "Dragon",
-    "rdrop": "Balm of Life",
-    "resists": "2-2--ef-3--57-3",
-    "skills": [
-      "Earth's Blessing",
-      "Feral Bite",
-      "Wing Flap",
-      "Zanma",
-      "Petradi",
-      "",
-      ""
-    ],
-    "stats": [426, 140, 17, 13, 11, 11, 9, 8]
+    "resists": "------d-------",
+    "skills": ["Feral Bite", "Wing Flap", "Zanma", "Petradi"],
+    "stats": [426, 140, 87, 17, 13, 11, 11, 9, 8]
   },
   "Raja Naga": {
-    "cdrop": "Sansen Sword",
+    "affinities": [2, 1, 2, 1, 1, 2, 2, 5, 3, 1, 3, 7, 1, 3],
+    "atks": [130, 85, 138, 85, 78, 13, 81, 480, 240, 240],
     "inherit": "elec",
-    "lvl": 48,
-    "person": "Revered",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Patroller"
-    },
+    "lvl": "48",
     "race": "Snake",
-    "rdrop": "Soma",
-    "resists": "2-2--22F3--37-3",
-    "skills": [
-      "Canceller",
-      "Double Thrust",
-      "Mow Down",
-      "Ziodyne",
-      "Rakukaja",
-      "",
-      ""
-    ],
-    "stats": [372, 120, 17, 9, 9, 13, 9, 9]
+    "resists": "-------r------",
+    "skills": ["Double Thrust", "Mow Down", "Ziodyne", "Rakukaja"],
+    "stats": [372, 120, 66, 17, 9, 9, 13, 9, 9]
   },
   "Rakshasa": {
-    "cdrop": "Deathbringer",
+    "affinities": [3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 4, 9, -4, 1],
+    "atks": [90, 61, 96, 62, 54, 8, 51, 320, 160, 160],
     "inherit": "force",
-    "lvl": 32,
-    "person": "Revered",
-    "plugin": {
-      "cost": 70,
-      "effect": "-50% CP for ally BRUTES when Navi",
-      "self": true
-    },
+    "lvl": "32",
     "race": "Jaki",
-    "rdrop": "Polished Sphere",
-    "resists": "D3D-3---3--49e-",
-    "skills": [
-      "Unknowable Darkness",
-      "Spin Slash",
-      "Twin Slash",
-      "Crystal Wall",
-      "Rakukaja",
-      "",
-      "Pasupata"
-    ],
-    "stats": [246, 80, 13, 5, 7, 8, 11, 6]
+    "resists": "r-r-----------",
+    "skills": ["Spin Slash", "Twin Slash", "Crystal Wall", "Rakukaja"],
+    "stats": [246, 80, 75, 13, 5, 7, 8, 11, 6]
   },
   "Rangda": {
-    "cdrop": "Hand of Darkness",
+    "affinities": [5, 5, 5, 5, 5, -8, -8, -8, -8, 1, -4, 5, -4, -8],
+    "atks": [168, 110, 160, 111, 113, 17, 94, 620, 62, 620],
     "inherit": "mind",
-    "lvl": 62,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Phantasm"
-    },
+    "lvl": "62",
     "race": "Brute",
-    "rdrop": "Refilling Pot",
-    "resists": "FFFFFiiii--e5ei",
-    "skills": [
-      "Darkside Aid",
-      "Poison Claw",
-      "Sexy Dance",
-      "Power Breath",
-      "Megido",
-      "",
-      ""
-    ],
-    "stats": [438, 162, 22, 9, 16, 10, 15, 7]
+    "resists": "rrrrr---------",
+    "skills": ["Poison Claw", "Sexy Dance", "Power Breath", "Megido"],
+    "stats": [438, 162, 120, 22, 9, 16, 10, 15, 7]
   },
   "Sarasvati": {
-    "cdrop": "Me Patra Stone",
-    "inherit": "recovery",
-    "lvl": 31,
-    "person": "Lady",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "affinities": [-2, -2, -2, 1, 1, 1, 1, 1, 1, -8, 5, 5, 5, 5],
+    "atks": [78, 64, 94, 64, 61, 13, 59, 310, 310, 31],
+    "inherit": "reca",
+    "lvl": "31",
     "race": "Megami",
-    "rdrop": "River Water",
-    "resists": "ccc------i-FF55",
-    "skills": [
-      "Samsara",
-      "Needle Rush",
-      "Soothing Melody",
-      "Valiant Dance",
-      "Samakaja",
-      "",
-      "Hemachandra"
-    ],
-    "stats": [270, 163, 8, 9, 9, 8, 10, 15]
+    "resists": "----------rr--",
+    "skills": ["Needle Rush", "Soothing Melody", "Valiant Dance", "Samakaja"],
+    "stats": [270, 163, 109, 8, 9, 9, 8, 10, 15]
   },
   "Sarutahiko": {
-    "cdrop": "7-Branched Sword",
+    "affinities": [1, 1, 1, 1, 1, 3, 2, 2, 1, 1, 3, 7, 1, 1],
+    "atks": [102, 65, 108, 65, 63, 12, 64, 360, 36, 360],
     "inherit": "fire",
-    "lvl": 36,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 10,
-      "effect": "Resist Expel"
-    },
+    "lvl": "36",
     "race": "Kunitsu",
-    "rdrop": "Barrier Stone",
-    "resists": "-----322---37--",
-    "skills": [
-      "Divine Gate",
-      "Tekken Punch",
-      "Jump Kick",
-      "Agilao",
-      "Hama",
-      "",
-      ""
-    ],
-    "stats": [332, 140, 15, 8, 8, 10, 8, 7]
+    "resists": "--------------",
+    "skills": ["Tekken Punch", "Jump Kick", "Agilao", "Hama"],
+    "stats": [332, 140, 102, 15, 8, 8, 10, 8, 7]
   },
   "Scathach": {
-    "cdrop": "Polished Sphere",
-    "inherit": "support",
-    "lvl": 46,
-    "person": "Lady",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Leap"
-    },
+    "affinities": [2, 2, 2, 1, 2, 1, 1, 1, 2, -2, 5, 9, 1, -4],
+    "atks": [134, 84, 138, 84, 85, 16, 84, 460, 460, 46],
+    "inherit": "recb",
+    "lvl": "46",
     "race": "Megami",
-    "rdrop": "Gae Bolg",
-    "resists": "C2C-2---2c-59-e",
-    "skills": [
-      "Valkyrie Aid",
-      "Jump Kick",
-      "Torrent Shot",
-      "Samakaja",
-      "Posumudi",
-      "",
-      ""
-    ],
-    "stats": [422, 254, 21, 10, 12, 15, 11, 9]
+    "resists": "r-r-----------",
+    "skills": ["Jump Kick", "Torrent Shot", "Samakaja", "Posumudi"],
+    "stats": [422, 254, 145, 21, 10, 12, 15, 11, 9]
   },
   "Seiryu": {
-    "cdrop": "Dragon Fang",
+    "affinities": [2, 1, 2, 1, 1, 2, 2, 5, 3, 1, 3, 7, 1, 3],
+    "atks": [142, 98, 146, 99, 81, 18, 95, 520, 260, 260],
     "inherit": "elec",
-    "lvl": 52,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Shijin Souou"
-    },
+    "lvl": "52",
     "race": "Dragon",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "2-2--22F3--37-3",
-    "skills": [
-      "Samsara",
-      "Feral Bite",
-      "Ice Breath",
-      "Crystal Wall",
-      "Makakaja",
-      "",
-      ""
-    ],
-    "stats": [516, 140, 19, 14, 8, 13, 17, 9]
+    "resists": "-------r------",
+    "skills": ["Feral Bite", "Ice Breath", "Crystal Wall", "Crystal Wall", "Makakaja"],
+    "stats": [516, 140, 100, 19, 14, 8, 13, 17, 9]
   },
   "Seth": {
-    "cdrop": "Chakra Pot",
+    "affinities": [1, 1, 1, 4, 4, 1, 3, 3, 1, 1, 9, 9, 5, 9],
+    "atks": [200, 140, 210, 142, 146, 29, 140, 760, 760, 76],
     "inherit": "ice",
-    "lvl": 76,
-    "person": "Punk",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Chaotic Darkness"
-    },
+    "lvl": "76",
     "race": "Vile",
-    "rdrop": "Sun Ship",
-    "resists": "---44-33---9959",
-    "skills": [
-      "Blitzkrieg",
-      "Iron Tail",
-      "Ice Breath",
-      "Petra Eyes",
-      "Dark Breath",
-      "",
-      "Teleport"
-    ],
-    "stats": [738, 366, 24, 19, 21, 21, 24, 9]
+    "resists": "--------------",
+    "skills": ["Iron Tail", "Ice Breath", "Petra Eyes", "Dark Breath"],
+    "stats": [738, 366, 265, 24, 19, 21, 21, 24, 9]
   },
   "Shiva": {
-    "cdrop": "Soma",
+    "affinities": [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 9, 9, 9, 9],
+    "atks": [218, 145, 208, 146, 143, 25, 131, 780, 78, 780],
     "inherit": "almighty",
-    "lvl": 78,
-    "person": "Revered",
-    "plugin": {
-      "cost": 100,
-      "effect": "-50% CP for ally ICONS when Navi",
-      "self": true
-    },
+    "lvl": "78",
     "race": "Fury",
-    "rdrop": "Tetragrammaton",
-    "resists": "333333333--9999",
-    "skills": [
-      "Heavenly Mandate",
-      "Hades Blast",
-      "Holy Wrath",
-      "Megidolaon",
-      "Tarunda",
-      "",
-      "Pinaka"
-    ],
-    "stats": [712, 328, 31, 15, 20, 18, 22, 14]
+    "resists": "--------------",
+    "skills": ["Hades Blast", "Holy Wrath", "Megidolaon", "Tarunda"],
+    "stats": [712, 328, 225, 31, 15, 20, 18, 22, 14]
   },
   "Sleipnir": {
-    "cdrop": "Me Patra Stone",
+    "affinities": [1, 1, 1, 1, 1, 2, 2, 5, 2, 1, 5, 7, 5, 5],
+    "atks": [152, 113, 164, 115, 93, 16, 98, 590, 295, 295],
     "inherit": "force",
-    "lvl": 59,
-    "person": "Beast",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Galeforce"
-    },
+    "lvl": "59",
     "race": "Holy",
-    "rdrop": "Physical Mirror",
-    "resists": "-----2252--5755",
-    "skills": [
-      "Galeforce",
-      "Tackle",
-      "Sonic Boom",
-      "Posumudi",
-      "Trafuri",
-      "",
-      ""
-    ],
-    "stats": [500, 143, 17, 11, 10, 15, 22, 9]
+    "resists": "--------------",
+    "skills": ["Tackle", "Sonic Boom", "Posumudi", "Trafuri"],
+    "stats": [500, 143, 105, 17, 11, 10, 15, 22, 9]
   },
   "Slime": {
-    "cdrop": "Hiranya",
-    "inherit": "support",
-    "lvl": 7,
-    "person": "Madman",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Shrink"
-    },
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "atks": [22, 16, 38, 16, 20, 6, 20, 70, 7, 70],
+    "inherit": "recb",
+    "lvl": "7",
     "race": "Foul",
-    "rdrop": "Bead",
-    "resists": "---------------",
-    "skills": [
-      "Shrink",
-      "Acid Breath",
-      "Deathtouch",
-      "Fool's Voice",
-      "Makanda",
-      "",
-      ""
-    ],
-    "stats": [72, 39, 4, 4, 4, 4, 4, 4]
+    "resists": "--------------",
+    "skills": ["Acid Breath", "Deathtouch", "Fool's Voice", "Makanda"],
+    "stats": [72, 39, 57, 4, 4, 4, 4, 4, 4]
   },
   "Sphinx": {
-    "cdrop": "Centaur Goblet",
-    "inherit": "recovery",
-    "lvl": 28,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Disarm"
-    },
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, -4, 9, 5, 5],
+    "atks": [76, 50, 86, 51, 62, 16, 59, 280, 140, 140],
+    "inherit": "reca",
+    "lvl": "28",
     "race": "Holy",
-    "rdrop": "Chakra Pot",
-    "resists": "---332222--e955",
-    "skills": [
-      "Disarm",
-      "Torrent Shot",
-      "Agilao",
-      "Petradi",
-      "Samakaja",
-      "",
-      ""
-    ],
-    "stats": [236, 112, 10, 11, 10, 7, 7, 4]
+    "resists": "--------------",
+    "skills": ["Torrent Shot", "Agilao", "Petradi", "Samakaja"],
+    "stats": [236, 112, 62, 10, 11, 10, 7, 7, 4]
   },
   "Succubus": {
-    "cdrop": "Centaur Goblet",
+    "affinities": [4, 1, 4, 4, 4, 1, 5, 5, 1, 1, 9, 1, 3, 9],
+    "atks": [126, 89, 138, 90, 109, 21, 89, 510, 51, 510],
     "inherit": "mind",
-    "lvl": 51,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Seize"
-    },
+    "lvl": "51",
     "race": "Night",
-    "rdrop": "Magical Mirror",
-    "resists": "4-444-55---J-39",
-    "skills": [
-      "Time of Merriment",
-      "Passionate Kiss",
-      "Mana Drain",
-      "Virus",
-      "Dormina",
-      "",
-      ""
-    ],
-    "stats": [372, 171, 12, 12, 18, 10, 10, 7]
+    "resists": "----------r---",
+    "skills": ["Passionate Kiss", "Mana Drain", "Virus", "Dormina", "Dormina"],
+    "stats": [372, 171, 103, 12, 12, 18, 10, 10, 7]
   },
   "Sudama": {
-    "cdrop": "Chakra Drop",
-    "inherit": "recovery",
-    "lvl": 14,
-    "person": "Punk",
-    "plugin": {
-      "cost": 150,
-      "effect": "Learn Vanish"
-    },
+    "affinities": [1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 5, 5, 3, 3],
+    "atks": [38, 26, 62, 26, 33, 6, 30, 140, 70, 70],
+    "inherit": "reca",
+    "lvl": "14",
     "race": "Jirae",
-    "rdrop": "Chakra Pot",
-    "resists": "-----3333--5533",
-    "skills": [
-      "Vanish",
-      "Venomous Needle",
-      "Makajam",
-      "Samakaja",
-      "Dekaja",
-      "",
-      ""
-    ],
-    "stats": [144, 50, 5, 3, 6, 9, 3, 5]
+    "resists": "--------------",
+    "skills": ["Venomous Needle", "Makajam", "Samakaja", "Dekaja"],
+    "stats": [144, 50, 32, 5, 3, 6, 9, 3, 5]
   },
   "Sukuna-Hikona": {
-    "cdrop": "White Fan",
-    "inherit": "support",
-    "lvl": 27,
-    "person": "Revered",
-    "plugin": {
-      "cost": 30,
-      "effect": "Remove ailments from stock demons when Navi"
-    },
+    "affinities": [3, 1, 3, 3, 3, -8, 5, 2, 1, 1, 9, -8, 9, 9],
+    "atks": [62, 55, 76, 56, 61, 18, 58, 270, 27, 270],
+    "inherit": "recb",
+    "lvl": "27",
     "race": "Kunitsu",
-    "rdrop": "Tennoramasen",
-    "resists": "3-333i52---9i99",
-    "skills": [
-      "Fountain of Recovery",
-      "Happy Trigger",
-      "Steel Wall",
-      "Dia",
-      "Patra",
-      "",
-      "Teleport"
-    ],
-    "stats": [226, 149, 4, 13, 10, 3, 12, 7]
+    "resists": "--------------",
+    "skills": ["Happy Trigger", "Steel Wall", "Dia", "Patra"],
+    "stats": [226, 149, 91, 4, 13, 10, 3, 12, 7]
   },
   "Surt": {
-    "cdrop": "Karma Amulet",
+    "affinities": [2, 2, 2, 1, 2, 9, -8, 1, 2, 1, 5, 3, 3, 5],
+    "atks": [168, 116, 180, 117, 117, 19, 108, 620, 62, 620],
     "inherit": "fire",
-    "lvl": 62,
-    "person": "Punk",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "62",
     "race": "Tyrant",
-    "rdrop": "Gjallarhorn",
-    "resists": "222-2ji-2--5335",
-    "skills": [
-      "Chaotic Darkness",
-      "Mist Slash",
-      "Prominence",
-      "Power Breath",
-      "Agidyne",
-      "",
-      "Heavenly Mandate"
-    ],
-    "stats": [608, 254, 22, 11, 17, 20, 18, 13]
+    "resists": "-----d--------",
+    "skills": ["Mist Slash", "Prominence", "Prominence", "Power Breath", "Agidyne", "Agidyne"],
+    "stats": [608, 254, 228, 22, 11, 17, 20, 18, 13]
   },
   "Susano-o": {
-    "cdrop": "Polished Sphere",
+    "affinities": [1, 1, 1, 4, 4, 1, 3, 3, 1, 1, 9, 9, 5, 9],
+    "atks": [192, 123, 180, 124, 125, 22, 112, 670, 67, 670],
     "inherit": "death",
-    "lvl": 67,
-    "person": "Revered",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "67",
     "race": "Fury",
-    "rdrop": "Longevity Stone",
-    "resists": "---44-33---9959",
-    "skills": [
-      "Time of Madness",
-      "Hades Blast",
-      "Untouched Zone",
-      "Mudo",
-      "Rakukaja",
-      "",
-      "Heavenly Mandate"
-    ],
-    "stats": [608, 281, 29, 13, 18, 15, 16, 15]
+    "resists": "--------------",
+    "skills": ["Hades Blast", "Untouched Zone", "Mudo", "Rakukaja"],
+    "stats": [608, 281, 198, 29, 13, 18, 15, 16, 15]
   },
   "Suzaku": {
-    "cdrop": "Cloak of Law",
+    "affinities": [5, 5, 5, -4, -4, 1, 1, 1, 1, 1, 5, 9, 1, 5],
+    "atks": [136, 93, 140, 94, 89, 16, 85, 500, 500, 50],
     "inherit": "fire",
-    "lvl": 50,
-    "person": "Old Beast",
-    "plugin": {
-      "cost": 100,
-      "effect": "Learn Shijin Souou"
-    },
+    "lvl": "50",
     "race": "Avian",
-    "rdrop": "Diamond",
-    "resists": "555ee------59-5",
-    "skills": [
-      "Eye of Heaven",
-      "Feral Claw",
-      "Fire Breath",
-      "Diarahan",
-      "Dekaja",
-      "",
-      ""
-    ],
-    "stats": [378, 138, 18, 10, 12, 12, 15, 9]
+    "resists": "--------------",
+    "skills": ["Feral Claw", "Fire Breath", "Diarahan", "Dekaja"],
+    "stats": [378, 138, 142, 18, 10, 12, 12, 15, 9]
   },
   "Tajikarao": {
-    "cdrop": "Hand of Light",
+    "affinities": [3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 4, 9, -4, 1],
+    "atks": [92, 54, 98, 55, 44, 7, 52, 280, 280, 28],
     "inherit": "force",
-    "lvl": 28,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 40,
-      "effect": "Recover large HP of stock demons when Navi"
-    },
+    "lvl": "28",
     "race": "Amatsu",
-    "rdrop": "Physical Mirror",
-    "resists": "D3D-3---3--49e-",
-    "skills": [
-      "Canceller",
-      "Tekken Punch",
-      "Jump Kick",
-      "Tarukaja",
-      "",
-      "",
-      ""
-    ],
-    "stats": [292, 108, 18, 5, 5, 13, 9, 8]
+    "resists": "r-r-----------",
+    "skills": ["Tekken Punch", "Jump Kick", "Tarukaja"],
+    "stats": [292, 108, 108, 18, 5, 5, 13, 9, 8]
   },
   "Take-Mikazuchi": {
-    "cdrop": "Thunder Amulet",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 1, 7, 1, 1],
+    "atks": [160, 103, 164, 103, 94, 14, 93, 550, 550, 55],
     "inherit": "elec",
-    "lvl": 55,
-    "person": "Revered",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "55",
     "race": "Amatsu",
-    "rdrop": "Ameno Torifune",
-    "resists": "-------f----7--",
-    "skills": [
-      "Duel",
-      "Twin Slash",
-      "Steel Wall",
-      "Ziodyne",
-      "Dekaja",
-      "",
-      "Amano Iwakura"
-    ],
-    "stats": [550, 235, 25, 8, 12, 19, 15, 12]
+    "resists": "-------d------",
+    "skills": ["Twin Slash", "Steel Wall", "Ziodyne", "Ziodyne", "Dekaja"],
+    "stats": [550, 235, 169, 25, 8, 12, 19, 15, 12]
   },
   "Take-Minakata": {
-    "cdrop": "White Gloves",
+    "affinities": [2, 2, 2, 1, 2, 9, -8, 1, 2, 1, 5, 3, 3, 5],
+    "atks": [142, 91, 148, 91, 80, 13, 86, 500, 50, 500],
     "inherit": "fire",
-    "lvl": 50,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "lvl": "50",
     "race": "Kunitsu",
-    "rdrop": "Suwano Higire",
-    "resists": "222-2ji-2--5335",
-    "skills": [
-      "Duel",
-      "Twin Slash",
-      "Thunderbolt",
-      "Fire Wall",
-      "Agidyne",
-      "",
-      "Divine Gate"
-    ],
-    "stats": [472, 182, 21, 9, 9, 16, 12, 9]
+    "resists": "-----d--------",
+    "skills": ["Twin Slash", "Thunderbolt", "Fire Wall", "Agidyne", "Agidyne"],
+    "stats": [472, 182, 139, 21, 9, 9, 16, 12, 9]
   },
   "Tarasque": {
-    "cdrop": "Dis-Poison",
+    "affinities": [1, 1, 2, 1, 2, 3, 3, 3, 1, 1, 9, 1, 1, 5],
+    "atks": [78, 45, 98, 45, 39, 6, 50, 260, 26, 260],
     "inherit": "nerve",
-    "lvl": 26,
-    "person": "Beast",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Patroller"
-    },
+    "lvl": "26",
     "race": "Drake",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "--2-2333---9--5",
-    "skills": [
-      "Mine Trap",
-      "Feral Bite",
-      "Fool's Voice",
-      "Poison Breath",
-      "Makanda",
-      "",
-      ""
-    ],
-    "stats": [252, 58, 13, 4, 4, 15, 4, 4]
+    "resists": "--------------",
+    "skills": ["Feral Bite", "Fool's Voice", "Poison Breath", "Makanda"],
+    "stats": [252, 58, 120, 13, 4, 4, 15, 4, 4]
   },
   "Tezcatlipoca": {
-    "cdrop": "Pulque",
+    "affinities": [4, 1, 4, 4, 4, 1, 5, 5, 1, 1, 9, 1, 3, 9],
+    "atks": [138, 83, 132, 83, 85, 14, 77, 460, 460, 46],
     "inherit": "death",
-    "lvl": 46,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Ares Aid"
-    },
+    "lvl": "46",
     "race": "Vile",
-    "rdrop": "Obsidian Mirror",
-    "resists": "4-444-55---J-39",
-    "skills": [
-      "Ares Aid",
-      "Tekken Punch",
-      "Dark Judgement",
-      "Power Breath",
-      "Mudo",
-      "",
-      "Warrior Oath"
-    ],
-    "stats": [424, 176, 23, 8, 12, 12, 9, 10]
+    "resists": "----------r---",
+    "skills": ["Tekken Punch", "Dark Judgement", "Power Breath", "Mudo", "Mudo"],
+    "stats": [424, 176, 171, 23, 8, 12, 12, 9, 10]
   },
   "Thor": {
-    "cdrop": "Bead",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 1, 7, 1, 1],
+    "atks": [166, 102, 162, 103, 98, 16, 96, 560, 280, 280],
     "inherit": "elec",
-    "lvl": 56,
-    "person": "Revered",
-    "plugin": {
-      "cost": 50,
-      "self": true
-    },
+    "lvl": "56",
     "race": "Deity",
-    "rdrop": "Diamond",
-    "resists": "-------f----7--",
-    "skills": [
-      "Ares Aid",
-      "Rampage",
-      "Deathbound",
-      "Ziodyne",
-      "Tarukaja",
-      "",
-      "Warrior Oath"
-    ],
-    "stats": [524, 228, 27, 10, 13, 17, 13, 12]
+    "resists": "-------d------",
+    "skills": ["Rampage", "Deathbound", "Ziodyne", "Ziodyne", "Tarukaja"],
+    "stats": [524, 228, 115, 27, 10, 13, 17, 13, 12]
   },
   "Thoth": {
-    "cdrop": "Book of Thoth",
-    "inherit": "support",
-    "lvl": 35,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 70,
-      "self": true
-    },
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 5, 5, 5, 5],
+    "atks": [88, 68, 98, 69, 82, 22, 74, 350, 175, 175],
+    "inherit": "recb",
+    "lvl": "35",
     "race": "Deity",
-    "rdrop": "Wadjet's Eye",
-    "resists": "eeeeeFFFF--FFFF",
-    "skills": [
-      "Lunar Aid",
-      "Torrent Shot",
-      "Bufudyne",
-      "Posumudi",
-      "Samakaja",
-      "",
-      "Endure"
-    ],
-    "stats": [292, 191, 9, 15, 14, 6, 12, 9]
+    "resists": "-----rrrr-rrrr",
+    "skills": ["Torrent Shot", "Bufudyne", "Posumudi", "Samakaja", "Samakaja"],
+    "stats": [292, 191, 81, 9, 15, 14, 6, 12, 9]
   },
   "Titan": {
-    "cdrop": "Geyser Knuckles",
+    "affinities": [3, 3, 3, 1, 3, 1, 1, 1, 3, 1, 4, 9, -4, 1],
+    "atks": [126, 75, 130, 75, 68, 13, 78, 440, 220, 220],
     "inherit": "nerve",
-    "lvl": 44,
-    "person": "Revered",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Ares Aid"
-    },
+    "lvl": "44",
     "race": "Jirae",
-    "rdrop": "Physical Mirror",
-    "resists": "D3D-3---3--49e-",
-    "skills": [
-      "Ares Aid",
-      "Rampage",
-      "Deathbound",
-      "Tarukaja",
-      "Makarakarn",
-      "",
-      ""
-    ],
-    "stats": [348, 112, 19, 10, 7, 13, 6, 7]
+    "resists": "r-r-----------",
+    "skills": ["Rampage", "Deathbound", "Tarukaja", "Makarakarn"],
+    "stats": [348, 112, 62, 19, 10, 7, 13, 6, 7]
   },
   "Titania": {
-    "cdrop": "Silky Coat",
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 5, 5, 5, 5],
+    "atks": [138, 103, 148, 103, 126, 25, 101, 580, 290, 290],
     "inherit": "mind",
-    "lvl": 58,
-    "person": "Lady",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Honey Trap"
-    },
+    "lvl": "58",
     "race": "Fairy",
-    "rdrop": "Playwright's Pen",
-    "resists": "eeeeeFFFF--FFFF",
-    "skills": [
-      "Hastening",
-      "Passionate Kiss",
-      "Dream Needle",
-      "Lullaby",
-      "Marin Karin",
-      "",
-      ""
-    ],
-    "stats": [402, 202, 11, 15, 21, 8, 12, 9]
+    "resists": "-----rrrr-rrrr",
+    "skills": ["Passionate Kiss", "Dream Needle", "Lullaby", "Marin Karin"],
+    "stats": [402, 202, 76, 11, 15, 21, 8, 12, 9]
   },
   "Tsukuyomi": {
-    "cdrop": "Chakra Pot",
+    "affinities": [-4, -4, -4, -4, -4, 5, 5, 5, 5, 1, 5, 5, 5, 5],
+    "atks": [152, 121, 172, 122, 148, 35, 130, 650, 650, 65],
     "inherit": "force",
-    "lvl": 65,
-    "person": "Knight",
-    "plugin": {
-      "cost": 100,
-      "self": true
-    },
+    "lvl": "65",
     "race": "Amatsu",
-    "rdrop": "Magical Mirror",
-    "resists": "eeeeeFFFF--FFFF",
-    "skills": [
-      "Lunar Aid",
-      "Exorcism Bow",
-      "Crystal Wall",
-      "Zandyne",
-      "Mudo",
-      "",
-      "Eclipse"
-    ],
-    "stats": [594, 377, 11, 23, 25, 13, 18, 13]
+    "resists": "-----rrrr-rrrr",
+    "skills": ["Exorcism Bow", "Crystal Wall", "Zandyne", "Zandyne", "Mudo"],
+    "stats": [594, 377, 192, 11, 23, 25, 13, 18, 13]
   },
   "Turdak": {
-    "cdrop": "Onyx",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -4, 9, 3, 3],
+    "atks": [78, 49, 88, 49, 46, 8, 47, 270, 27, 270],
     "inherit": "expel",
-    "lvl": 27,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Virus Trap"
-    },
+    "lvl": "27",
     "race": "Brute",
-    "rdrop": "Balm of Life",
-    "resists": "-----------eJ33",
-    "skills": [
-      "Time of Requiem",
-      "Spin Slash",
-      "Twin Slash",
-      "Hama",
-      "Recarm",
-      "",
-      ""
-    ],
-    "stats": [222, 71, 12, 5, 6, 9, 5, 8]
+    "resists": "-----------r--",
+    "skills": ["Spin Slash", "Twin Slash", "Hama", "Recarm"],
+    "stats": [222, 71, 67, 12, 5, 6, 9, 5, 8]
   },
   "Typhon": {
-    "cdrop": "Wind Amulet",
+    "affinities": [1, 1, 2, 1, 2, 3, 3, 3, 1, 1, 9, 1, 1, 5],
+    "atks": [98, 62, 106, 63, 67, 11, 59, 350, 35, 350],
     "inherit": "fire",
-    "lvl": 35,
-    "person": "Beast",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Book of Amoghavajra"
-    },
+    "lvl": "35",
     "race": "Drake",
-    "rdrop": "Pentagram",
-    "resists": "--2-2333---9--5",
-    "skills": [
-      "Mine Trap",
-      "Rampage",
-      "Squash",
-      "Fire Breath",
-      "Poison Breath",
-      "",
-      ""
-    ],
-    "stats": [276, 99, 14, 6, 10, 10, 8, 5]
+    "resists": "--------------",
+    "skills": ["Rampage", "Squash", "Fire Breath", "Poison Breath"],
+    "stats": [276, 99, 139, 14, 6, 10, 10, 8, 5]
   },
   "Ubelluris": {
-    "cdrop": "White Arrow",
+    "affinities": [3, 3, 3, 3, 3, 1, 1, 1, 2, 1, 3, 5, -4, 5],
+    "atks": [102, 57, 118, 57, 47, 6, 60, 340, 170, 170],
     "inherit": "nerve",
-    "lvl": 36,
-    "person": "Old Man",
-    "plugin": {
-      "cost": 10,
-      "effect": "Resist Force"
-    },
+    "lvl": "34",
     "race": "Jirae",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "33333---2--35e5",
-    "skills": [
-      "Scapegoat",
-      "Tackle",
-      "Squash",
-      "Rakunda",
-      "Samanda",
-      "",
-      ""
-    ],
-    "stats": [312, 66, 17, 4, 4, 17, 4, 4]
+    "resists": "--------------",
+    "skills": ["Tackle", "Squash", "Rakunda", "Samanda"],
+    "stats": [312, 66, 52, 17, 4, 4, 17, 4, 4]
   },
   "Unicorn": {
-    "cdrop": "Dis-Poison",
-    "inherit": "recovery",
-    "lvl": 16,
-    "person": "Beast",
-    "plugin": {
-      "cost": 0,
-      "effect": "Learn Fountain of Recovery"
-    },
+    "affinities": [1, 1, 1, 3, 3, 2, 2, 2, 2, 1, -4, 9, 5, 5],
+    "atks": [48, 34, 56, 34, 35, 7, 29, 160, 80, 80],
+    "inherit": "reca",
+    "lvl": "16",
     "race": "Holy",
-    "rdrop": "Talisman",
-    "resists": "---332222--e955",
-    "skills": [
-      "Time of Rest",
-      "Tackle",
-      "Lullaby",
-      "Patra",
-      "Trafuri",
-      "",
-      ""
-    ],
-    "stats": [136, 56, 8, 4, 6, 4, 6, 9]
+    "resists": "--------------",
+    "skills": ["Tackle", "Lullaby", "Patra", "Trafuri"],
+    "stats": [136, 56, 46, 8, 4, 6, 4, 6, 9]
   },
   "Valkyrie": {
-    "cdrop": "Balmung",
+    "affinities": [2, 2, 2, 1, 2, 1, 1, 1, 2, -2, 5, 9, 1, -4],
+    "atks": [126, 79, 130, 79, 75, 12, 75, 450, 225, 225],
     "inherit": "force",
-    "lvl": 45,
-    "person": "Lady",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Valkyrie Aid"
-    },
+    "lvl": "45",
     "race": "Yoma",
-    "rdrop": "Golden Ring",
-    "resists": "C2C-2---2c-59-e",
-    "skills": [
-      "Valkyrie Aid",
-      "Twin Slash",
-      "Zionga",
-      "Tarukaja",
-      "Rakukaja",
-      "",
-      "Avenging Goddess"
-    ],
-    "stats": [348, 113, 18, 8, 9, 12, 7, 9]
+    "resists": "r-r-----------",
+    "skills": ["Twin Slash", "Zionga", "Tarukaja", "Tarukaja", "Rakukaja", "Rakukaja"],
+    "stats": [348, 113, 63, 18, 8, 9, 12, 7, 9]
   },
   "Vetala": {
-    "cdrop": "Vaccine",
+    "affinities": [4, 1, 4, 4, 4, 1, 5, 5, 1, 1, 9, 1, 3, 9],
+    "atks": [106, 76, 116, 77, 91, 18, 75, 420, 42, 420],
     "inherit": "nerve",
-    "lvl": 42,
-    "person": "Madman",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Virus Trap"
-    },
+    "lvl": "42",
     "race": "Spirit",
-    "rdrop": "Pentagram",
-    "resists": "4-444-55---J-39",
-    "skills": [
-      "Virus Trap",
-      "Acid Breath",
-      "Deathtouch",
-      "Virus",
-      "Rakunda",
-      "",
-      ""
-    ],
-    "stats": [306, 146, 11, 11, 15, 8, 12, 5]
+    "resists": "----------r---",
+    "skills": ["Acid Breath", "Deathtouch", "Virus", "Rakunda", "Rakunda"],
+    "stats": [306, 146, 135, 11, 11, 15, 8, 12, 5]
   },
   "Virtue": {
-    "cdrop": "Angel Halo",
+    "affinities": [1, 1, 1, -4, -4, 3, 3, 3, 3, 1, -8, 5, -8, 5],
+    "atks": [136, 93, 142, 94, 108, 20, 91, 530, 530, 53],
     "inherit": "expel",
-    "lvl": 53,
-    "person": "Angel",
-    "plugin": {
-      "cost": 50,
-      "effect": "Learn Ascend"
-    },
+    "lvl": "53",
     "race": "Divine",
-    "rdrop": "Emerald",
-    "resists": "---ee3333--iFi5",
-    "skills": [
-      "Angel's Blessing",
-      "Happy Trigger",
-      "Hama",
-      "Diarama",
-      "Recarmdra",
-      "",
-      ""
-    ],
-    "stats": [384, 169, 15, 12, 17, 10, 12, 6]
+    "resists": "-----------r--",
+    "skills": ["Happy Trigger", "Hama", "Hama", "Diarama", "Diarama", "Recarmdra"],
+    "stats": [384, 169, 106, 15, 12, 17, 10, 12, 6]
   },
   "Vishnu": {
-    "cdrop": "Soma",
+    "affinities": [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 9, 9, 9, 9],
+    "atks": [220, 142, 214, 143, 153, 28, 138, 780, 390, 390],
     "inherit": "almighty",
-    "lvl": 78,
-    "person": "Knight",
-    "plugin": {
-      "cost": 100,
-      "effect": "-50% CP for ally DEITIES when Navi",
-      "self": true
-    },
+    "lvl": "78",
     "race": "Deity",
-    "rdrop": "Longevity Stone",
-    "resists": "333333333--9999",
-    "skills": [
-      "Avatar",
-      "Enlightenment",
-      "Violet Flash",
-      "God's Breath",
-      "Megidolaon",
-      "",
-      "Sarunda"
-    ],
-    "stats": [760, 398, 32, 17, 23, 21, 19, 14]
+    "resists": "--------------",
+    "skills": ["Enlightenment", "Violet Flash", "God's Breath", "Megidolaon"],
+    "stats": [760, 398, 157, 32, 17, 23, 21, 19, 14]
   },
   "Yaka": {
-    "cdrop": "Revival Bead",
+    "affinities": [1, 1, 1, 2, 2, -4, 2, 2, 1, 1, 9, -8, 1, 5],
+    "atks": [44, 36, 56, 37, 48, 8, 28, 170, 17, 170],
     "inherit": "death",
-    "lvl": 17,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Unknowable Darkness"
-    },
+    "lvl": "17",
     "race": "Spirit",
-    "rdrop": "Bead",
-    "resists": "---22e22---9i-5",
-    "skills": [
-      "Wasteland",
-      "Acid Breath",
-      "Deathtouch",
-      "Fool's Voice",
-      "Rakunda",
-      "Samanda",
-      ""
-    ],
-    "stats": [126, 69, 5, 3, 10, 3, 10, 3]
+    "resists": "--------------",
+    "skills": ["Acid Breath", "Deathtouch", "Fool's Voice", "Rakunda", "Samanda"],
+    "stats": [126, 69, 79, 5, 3, 10, 3, 10, 3]
   },
   "Yaksha": {
-    "cdrop": "Touki Armor",
+    "affinities": [3, 1, 3, 1, 1, -2, -4, 3, 1, 1, 3, 7, 3, 7],
+    "atks": [140, 90, 138, 91, 82, 12, 77, 500, 50, 500],
     "inherit": "elec",
-    "lvl": 50,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 30,
-      "effect": "Learn Gatekeeper"
-    },
+    "lvl": "50",
     "race": "Brute",
-    "rdrop": "Diamond",
-    "resists": "3-3--ceD---3737",
-    "skills": [
-      "Gatekeeper",
-      "Spin Slash",
-      "Twin Slash",
-      "Violet Flash",
-      "Petradi",
-      "",
-      ""
-    ],
-    "stats": [372, 118, 20, 7, 10, 11, 13, 6]
+    "resists": "-------r------",
+    "skills": ["Spin Slash", "Twin Slash", "Violet Flash", "Petradi"],
+    "stats": [372, 118, 102, 20, 7, 10, 11, 13, 6]
   },
   "Yaksini": {
-    "cdrop": "Thick Rope",
-    "inherit": "recovery",
-    "lvl": 38,
-    "person": "Seductive",
-    "plugin": {
-      "cost": 70,
-      "effect": "Learn Disarm"
-    },
+    "affinities": [3, 1, 3, 1, 1, -2, -4, 3, 1, 1, 3, 7, 3, 7],
+    "atks": [108, 68, 112, 69, 67, 10, 62, 380, 38, 380],
+    "inherit": "reca",
+    "lvl": "38",
     "race": "Brute",
-    "rdrop": "Balm of Life",
-    "resists": "3-3--ceD---3737",
-    "skills": [
-      "Earth's Blessing",
-      "Spin Slash",
-      "Twin Slash",
-      "Diarama",
-      "Me Patra",
-      "",
-      ""
-    ],
-    "stats": [294, 98, 16, 6, 9, 10, 10, 5]
+    "resists": "-------r------",
+    "skills": ["Spin Slash", "Twin Slash", "Diarama", "Diarama", "Me Patra"],
+    "stats": [294, 98, 84, 16, 6, 9, 10, 10, 5]
   },
   "Yamata-no-Orochi": {
-    "cdrop": "Gold Whip",
+    "affinities": [2, 1, 2, 1, 1, 5, -4, 1, 3, 1, 5, 7, 1, 3],
+    "atks": [162, 107, 172, 108, 100, 14, 97, 610, 305, 305],
     "inherit": "fire",
-    "lvl": 61,
-    "person": "Beast",
-    "plugin": {
-      "cost": 10,
-      "effect": "Resist Expel"
-    },
+    "lvl": "61",
     "race": "Snake",
-    "rdrop": "Barrier Stone",
-    "resists": "2-2--fe-3--57-3",
-    "skills": [
-      "Book of Amoghavajra",
-      "Squash",
-      "Mow Down",
-      "Fire Breath",
-      "Dekaja",
-      "",
-      ""
-    ],
-    "stats": [474, 141, 20, 8, 12, 17, 12, 9]
+    "resists": "-----d--------",
+    "skills": ["Squash", "Mow Down", "Fire Breath", "Dekaja"],
+    "stats": [474, 141, 79, 20, 8, 12, 17, 12, 9]
   },
   "Yoshitsune": {
-    "cdrop": "Dr N Shoes",
+    "affinities": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 9, 9, 9],
+    "atks": [174, 126, 170, 128, 110, 23, 114, 650, 325, 325],
     "inherit": "almighty",
-    "lvl": 65,
-    "person": "Young Man",
-    "plugin": {
-      "cost": 0,
-      "self": true
-    },
+    "lvl": "65",
     "race": "Fiend",
-    "rdrop": "Ag Incense",
-    "resists": "-----------9999",
-    "skills": [
-      "Leap",
-      "Twin Slash",
-      "Hassou Tobi",
-      "Steel Wall",
-      "Megidola",
-      "",
-      "Valhallan Mandate"
-    ],
-    "stats": [668, 235, 22, 17, 13, 12, 26, 10]
+    "resists": "--------------",
+    "skills": ["Twin Slash", "Hassou Tobi", "Hassou Tobi", "Hassou Tobi", "Hassou Tobi", "Steel Wall", "Megidola"],
+    "stats": [668, 235, 1, 22, 17, 13, 12, 26, 10]
   },
   "Zhen": {
-    "cdrop": "Dis-Poison",
+    "affinities": [4, 4, 4, -4, -4, 1, 9, 1, 1, 1, 9, 1, 1, 9],
+    "atks": [100, 83, 120, 84, 87, 14, 69, 430, 430, 43],
     "inherit": "nerve",
-    "lvl": 43,
-    "person": "Beast",
-    "plugin": {
-      "cost": 40,
-      "effect": "Learn Virus Trap"
-    },
+    "lvl": "43",
     "race": "Raptor",
-    "rdrop": "Goshiki Ryuushi",
-    "resists": "444ee-9----9--9",
-    "skills": [
-      "Virus Trap",
-      "Venomous Needle",
-      "Wing Flap",
-      "Petra",
-      "Poisma",
-      "",
-      ""
-    ],
-    "stats": [318, 127, 7, 7, 14, 9, 15, 9]
+    "resists": "--------------",
+    "skills": ["Venomous Needle", "Wing Flap", "Petra", "Petra", "Poisma", "Poisma"],
+    "stats": [318, 127, 138, 7, 7, 14, 9, 15, 9]
   }
 }

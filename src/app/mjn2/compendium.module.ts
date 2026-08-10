@@ -101,6 +101,9 @@ function createCompConfig(): CompendiumConfig {
     elemOrder: getEnumOrder(skillElems),
     specialRecipes: SPECIAL_RECIPES_JSON,
     useSpeciesFusion: true,
+    inheritTypes: [],
+    inheritSkills: [],
+    getInheritSkills: () => [],
 
     normalLvlModifier: 1.5,
     tripleLvlModifier: 2.25,
