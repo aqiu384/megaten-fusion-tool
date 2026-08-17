@@ -1,98 +1,97 @@
 {
   "Phoenix": {
     "fusion": "normal",
-    "special": ["Aello", "Celaeno", "Ocypete"]
+    "trios": ["Aello x Celaeno x Ocypete"]
   },
   "Yatagarasu": {
     "fusion": "normal",
-    "special": ["Morrigan", "Macha", "Nemhain"]
+    "trios": ["Morrigan x Macha x Nemhain"]
   },
   "Bastet": {
     "fusion": "normal",
-    "special": ["Seiryuu", "Suzaku", "Genbu"]
+    "trios": ["Seiryuu x Suzaku x Genbu"]
   },
   "Ananta": {
     "fusion": "normal",
-    "special": ["Suzaku", "Genbu", "Byakko"]
+    "trios": ["Suzaku x Genbu x Byakko"]
   },
   "Narasimha": {
     "fusion": "normal",
-    "special": ["Seiryuu", "Suzaku", "Byakko"]
+    "trios": ["Seiryuu x Suzaku x Byakko"]
   },
   "Garuda": {
     "fusion": "normal",
-    "special": ["Seiryuu", "Genbu", "Byakko"]
+    "trios": ["Seiryuu x Genbu x Byakko"]
   },
   "Parvati": {
     "fusion": "normal",
-    "special": ["Durga", "Kali"]
+    "pairs": ["Durga x Kali"]
   },
   "Durga": {
     "fusion": "normal",
-    "special": ["Parvati", "Kali"]
+    "pairs": ["Parvati x Kali"]
   },
   "Kali": {
     "fusion": "normal",
-    "special": ["Parvati", "Durga"]
+    "pairs": ["Parvati x Durga"]
   },
   "Amaterasu": {
     "fusion": "normal",
-    "special": ["Susano-o", "Tsukuyomi"]
+    "pairs": ["Susano-o x Tsukuyomi"]
   },
   "Susano-o": {
     "fusion": "normal",
-    "special": ["Amaterasu", "Tsukuyomi"]
+    "pairs": ["Amaterasu x Tsukuyomi"]
   },
   "Tsukuyomi": {
     "fusion": "normal",
     "prereq":"Unlock fusion",
-    "special": ["Amaterasu", "Susano-o"]
+    "pairs": ["Amaterasu x Susano-o"]
   },
   "Shiva": {
     "fusion": "normal",
-    "prereq": "Barong x Rangda, Parvati x Kali x Durga",
-    "special": ["Barong", "Rangda", "Parvati", "Kali", "Durga"]
+    "pairs": ["Barong x Rangda"],
+    "trios": ["Parvati x Kali x Durga"]
   },
   "Angra Mainyu": {
     "fusion": "normal",
-    "special": ["Chernobog", "Belobog"]
+    "pairs": ["Chernobog x Belobog"]
   },
   "Ardha": {
     "fusion": "normal",
-    "prereq": "Shiva x Parvati, Shiva x Kali, Shiva x Durga",
-    "special": ["Shiva", "Parvati", "Kali", "Durga"]
+    "pairs": ["Shiva x Parvati", "Shiva x Kali", "Shiva x Durga"]
   },
   "Suzaku": {
     "fusion": "normal",
-    "special": ["Undine", "Sylph", "Gnome"]
+    "trios": ["Undine x Sylph x Gnome"]
   },
   "Seiryuu": {
     "fusion": "normal",
-    "special": ["Salamander", "Sylph", "Gnome"]
+    "trios": ["Salamander x Sylph x Gnome"]
   },
   "Byakko": {
     "fusion": "normal",
-    "special": ["Salamander", "Undine", "Gnome"]
+    "trios": ["Salamander x Undine x Gnome"]
   },
   "Genbu": {
     "fusion": "normal",
-    "special": ["Salamander", "Undine", "Sylph"]
+    "trios": ["Salamander x Undine x Sylph"]
   },
   "Salamander": {
     "fusion": "normal",
-    "special": ["Aquans", "Aeros", "Erthys"]
+    "trios": ["Aquans x Aeros x Erthys"]
   },
   "Undine": {
     "fusion": "normal",
-    "special": ["Flaemis", "Aeros", "Erthys"]
+    "trios": ["Flaemis x Aeros x Erthys"]
   },
   "Sylph": {
     "fusion": "normal",
-    "special": ["Flaemis", "Aquans", "Erthys"]
+    "trios": ["Flaemis x Aquans x Erthys"]
   },
   "Gnome": {
     "fusion": "normal",
-    "special": ["Flaemis", "Aquans", "Aeros"]
+    "trios": ["Flaemis x Aquans x Aeros"]
   },
   "Slime": {
     "fusion": "accident",

@@ -1,47 +1,34 @@
 {
   "Vishnu": {
-    "special": [
-      "Ananta",
-      "Garuda"
-    ]
+    "fusion": "normal",
+    "pairs": ["Ananta x Garuda"]
   },
   "Sraosha": {
-    "special": [
-      "Cherub",
-      "Haoma"
-    ]
+    "fusion": "normal",
+    "pairs": ["Cherub x Haoma"]
   },
   "Shiva": {
-    "special": [
-      "Barong",
-      "Rangda"
-    ]
+    "fusion": "normal",
+    "pairs": ["Barong x Rangda"]
   },
   "Kali": {
-    "special": [
-      "Kartikeya",
-      "Ganesha"
-    ]
+    "fusion": "normal",
+    "pairs": ["Kartikeya x Ganesha"]
   },
   "Cybele": {
-    "special": [
-      "Prometheus",
-      "Pallas Athena"
-    ]
+    "fusion": "normal",
+    "pairs": ["Prometheus x Pallas Athena"]
   },
   "Zhu Yin": {
-    "special": [
-      "Huoniao",
-      "Chi You"
-    ]
+    "fusion": "normal",
+    "pairs": ["Huoniao x Chi You"]
   },
   "Chi You": {
-    "special": [
-      "Tao Tie",
-      "Taowu"
-    ]
+    "fusion": "normal",
+    "pairs": ["Tao Tie x Taowu"]
   },
   "Ara Mitama": {
+    "fusion": "normal",
     "pairs": [
       "Salamander x Gnome",
       "Undine x Gnome",
@@ -49,6 +36,7 @@
     ]
   },
   "Nigi Mitama": {
+    "fusion": "normal",
     "pairs": [
       "Salamander x Undine",
       "Salamander x Sylph",
@@ -56,52 +44,32 @@
     ]
   },
   "Kusi Mitama": {
-    "pairs": [
-      "Sylph x Gnome"
-    ],
-    "special": [
-      "Salamander",
-      "Undine"
+    "fusion": "normal",
+    "trios": [
+      "Salamander x Sylph x Gnome",
+      "Undine x Sylph x Gnome"
     ]
   },
   "Saki Mitama": {
-    "pairs": [
-      "Salamander x Undine"
-    ],
-    "special": [
-      "Sylph",
-      "Gnome"
+    "fusion": "normal",
+    "trios": [
+      "Salamander x Undine x Sylph",
+      "Salamander x Undine x Gnome"
     ]
   },
   "Rama": {
-    "prereq": "Fuse with Lvl 70 Zoma",
-    "special": [
-      "Vishnu"
-    ]
+    "prereq": "Fuse Vishnu with Lvl 70 Zoma"
   },
   "Kanseiteikun": {
-    "prereq": "Fuse with Lvl 65 Zoma",
-    "special": [
-      "Zhu Yin"
-    ]
+    "prereq": "Fuse Zhu Yin with Lvl 65 Zoma"
   },
   "Fariedone": {
-    "prereq": "Fuse with Lvl 60 Zoma",
-    "special": [
-      "Sandalphon",
-      "Sraosha"
-    ]
+    "prereq": "Fuse Sandalphon or Sraosha with Lvl 60 Zoma"
   },
   "Yoshitsune": {
-    "prereq": "Fuse with Lvl 55 Zoma",
-    "special": [
-      "Hachiman"
-    ]
+    "prereq": "Fuse Hachiman with Lvl 55 Zoma"
   },
   "Jeanne D'Arc": {
-    "prereq": "Fuse with Lvl 50 Zoma",
-    "special": [
-      "Black Maria"
-    ]
+    "prereq": "Fuse Black Maria with Lvl 50 Zoma"
   }
 }

@@ -1,6 +1,9 @@
 import { NamePair, FusionPair, Compendium } from '../../compendium/models';
 import { Races } from '../constants';
+import { Demon } from '../models';
 import FUSION_CHART_JSON from '../data/fusion-chart.json';
+
+const INHERIT_ELEMS = ['fir', 'ice', 'win', 'ear', 'exp', 'mir', 'ble', 'dea', 'cur'];
 
 const COLOR_ABBRS = {
   'B': 0,
@@ -46,6 +49,37 @@ for (let r = 0; r < FusionRaces.length; r++) {
     FusionRankTable[race1][race2] = rankR;
     FusionRankTable[race2][race1] = rankR;
   }
+}
+
+function inheritSkill(demonI: Demon, demonR: Demon, compendium: Compendium): string {
+  const inheritSkills = Object.entries(demonI.skills)
+    .filter(s => s[1] < 2)
+    .sort((a, b) => a[1] - b[1])
+    .map(s => s[0]);
+
+  for (const sname of inheritSkills) {
+    const elemIndex = INHERIT_ELEMS.indexOf(compendium.getSkill(sname).element);
+    if (!demonR.skills[sname] && (elemIndex < 0 || demonR.elemAffins[elemIndex] > 0)) {
+      return sname;
+    }
+  }
+
+  return '-';
+}
+
+export function inheritSkills(demon1: Demon, demon2: Demon, demonR: Demon, compendium: Compendium): string {
+  const fusionType = (FusionRankTable[demon1.race][demon2.race] || 0) % 100000;
+  let skillLeft = inheritSkill(demon2, demonR, compendium);
+  let skillRight = inheritSkill(demon1, demonR, compendium);
+
+  if (fusionType == 60000) return '-';
+  if (fusionType == 40000) {
+    const temp = skillLeft;
+    skillLeft = skillRight;
+    skillRight = temp;
+  }
+
+  return `${skillLeft}/${skillRight}`;
 }
 
 export function toFusionPair(names: NamePair, compendium: Compendium): FusionPair {

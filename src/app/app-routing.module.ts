@@ -14,7 +14,6 @@ const appRoutes: Routes = [
   { path: 'smt2',   loadChildren: () => import('./smt2/compendium.module').then(m => m.CompendiumRoutes) },
   { path: 'smtif',  loadChildren: () => import('./smtif/compendium.module').then(m => m.CompendiumRoutes) },
   { path: 'smt9',   loadChildren: () => import('./smt9/compendium.module').then(m => m.CompendiumRoutes) },
-  { path: 'smtim',  loadChildren: () => import('./smtim/compendium.module').then(m => m.CompendiumRoutes) },
   { path: 'smt3',   loadChildren: () => import('./smt3/compendium.module').then(m => m.CompendiumRoutes) },
   { path: 'smtsj',  loadChildren: () => import('./smtsj/compendium.module').then(m => m.CompendiumRoutes) },
   { path: 'smtdsj', loadChildren: () => import('./smtsj/compendium.module').then(m => m.CompendiumRoutes) },

@@ -17,7 +17,12 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class NesTripleFissionTableComponent extends TripleFissionTableComponent {
   fusionTrioService = inject(FusionDataService);
+  compendium$ = this.fusionTrioService.compendium$;
 
+  nameTrios$ = computed(() => this.calculator
+    .getFusions(this.currentDemon$(), this.compendium$(), this.chart$())
+    .concat(this.compendium$().getExtraNameTrios(this.currentDemon$()))
+  );
   getNotes$ = computed(() => {
     const comp = this.compendium$();
     const compConfig = this.fusionTrioService.compConfig;

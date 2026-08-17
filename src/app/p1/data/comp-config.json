@@ -92,6 +92,21 @@
     "D": 1050,
     "d": 1100
   },
+  "inheritExcludes": {
+    "fir": ["ice", "15"],
+    "ice": ["fir", "14"],
+    "win": ["ear", "17"],
+    "ear": ["win", "16"],
+    "exp": ["Hanged", "Death", "Devil", "Tower", "Moon"],
+    "cur": ["Priestess", "Hierophant", "Judgement"],
+    "ble": ["Chariot", "Justice", "Hanged", "Death", "Devil", "Tower", "Moon"],
+    "mir": ["Chariot", "Justice", "Hanged", "Death", "Devil", "Tower", "Moon"],
+    "dea": ["Priestess", "Judgement"]
+  },
+  "inheritIncludes": {
+    "cur": ["Satan"],
+    "dea": ["Skuld", "Verdandi", "Urd", "Hathor", "Satan", "Azrael"]
+  },
   "inheritElems": [
     "fir",
     "ice",

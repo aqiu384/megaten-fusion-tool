@@ -1,5 +1,5 @@
 import { Demon, Skill, CompendiumConfig } from '../models';
-import { Compendium as ICompendium, NamePair } from '../../compendium/models';
+import { Compendium as ICompendium, NamePair, NameTrio } from '../../compendium/models';
 import { GameCurrency } from '../../compendium/constants';
 
 type NumDict = { [name: string]: number };
@@ -20,8 +20,8 @@ function dsshPrice(stats: number[], race: string) {
 export class Compendium implements ICompendium {
   private demons: { [name: string]: Demon };
   private skills: { [name: string]: Skill };
-  private specialRecipes: { [name: string]: string[] };
   private pairRecipes: { [name: string]: NamePair[] } = {};
+  private trioRecipes: { [name: string]: NameTrio[] } = {};
   private invertedDemons: { [race: string]: { [lvl: number]: string } };
   private elementDemons: string[];
 
@@ -42,6 +42,7 @@ export class Compendium implements ICompendium {
     const skills: { [name: string]: Skill } = {};
     const specialRecipes: { [name: string]: string[] } = {};
     const pairRecipes: { [name: string]: NamePair[] } = {};
+    const trioRecipes: { [name: string]: NameTrio[] } = {};
 
     const statLen = compConfig.baseStats.length;
     const resLen = compConfig.resistElems.length;
@@ -120,14 +121,21 @@ export class Compendium implements ICompendium {
             return { name1, name2 };
           });
         }
+
+        if (recipe['trios']) {
+          trioRecipes[name] = recipe['trios'].map((trio: string) => {
+            const [name1, name2, name3] = trio.split(' x ');
+            return { name1, name2, name3 };
+          });
+        }
       }
     }
 
     this.demons = demons;
     this.skills = skills;
     this.elementDemons = compConfig.elementTable.elems;
-    this.specialRecipes = specialRecipes;
     this.pairRecipes = pairRecipes;
+    this.trioRecipes = trioRecipes;
   }
 
   updateDerivedData(compConfig: CompendiumConfig) {
@@ -204,8 +212,9 @@ export class Compendium implements ICompendium {
   }
 
   get inGameCurrencySymbol() {return GameCurrency.MACCA; }
+
   get specialDemons(): Demon[] {
-    return Object.keys(this.specialRecipes).map(name => this.demons[name]);
+    return [];
   }
 
   getDemon(name: string): Demon {
@@ -234,11 +243,19 @@ export class Compendium implements ICompendium {
   }
 
   getSpecialNameEntries(name: string): string[] {
-    return this.specialRecipes[name] || [];
+    return [];
   }
 
   getSpecialNamePairs(name: string): NamePair[] {
+    return [];
+  }
+
+  getExtraNamePairs(name: string): NamePair[] {
     return this.pairRecipes[name] || [];
+  }
+
+  getExtraNameTrios(name: string): NameTrio[] {
+    return this.trioRecipes[name] || [];
   }
 
   reverseLookupDemon(race: string, lvl: number): string {

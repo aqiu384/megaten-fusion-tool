@@ -51,6 +51,20 @@ function createCompConfig(): CompendiumConfig {
   for (const [name, json] of Object.entries(DEMON_DATA_JSON)) {
     const presists = json.presists.split('').map(r => resistCodes[r]);
     const mresists = json.mresists.split('').map(r => resistCodes[r]);
+    const elemAffins = COMP_CONFIG_JSON.inheritElems.reduce((acc, e) => { acc[e] = true; return acc; }, {});
+
+    for (const [elem, conds] of Object.entries(COMP_CONFIG_JSON.inheritExcludes)) {
+      if (conds.includes(json.subtype) || conds.includes(json.race)) {
+        elemAffins[elem] = false;
+      }
+    }
+
+    for (const [elem, conds] of Object.entries(COMP_CONFIG_JSON.inheritIncludes)) {
+      if (conds.includes(name)) {
+        elemAffins[elem] = true;
+      }
+    }
+
     demons[name] = {
       race:       json.race,
       lvl:        json.lvl,
@@ -69,7 +83,7 @@ function createCompConfig(): CompendiumConfig {
       drop:       json.drop,
       isEnemy:    false,
       affinities: (json['party'] || PARTY_AFFINITY_JSON.table[json.race]).split('').map(p => affinityCodes[p]),
-      elemAffins: (json['inherits'] || 'ooooooooo').split('').map(i => i === 'o'),
+      elemAffins: COMP_CONFIG_JSON.inheritElems.map(e => elemAffins[e] ? 1 : 0),
       trait:      '-',
       transfers:  {},
       area:       '-',
@@ -81,6 +95,11 @@ function createCompConfig(): CompendiumConfig {
     const presists = json.presists.split('').map(r => resistCodes[r]);
     const mresists = json.mresists.split('').map(r => resistCodes[r]);
     const area = json.areas.length > 0 ? json.areas[0] : '-';
+    const skills = {};
+
+    (json['transfers'] || []).reduce((acc, s, i) => { acc[s] = (i + 1) / 10; return acc; }, skills);
+    json.skills.reduce((acc, s, i) => { acc[s] = i + 2; return acc; }, skills);
+
     enemies[name] = {
       race:       json.race,
       lvl:        json.lvl,
@@ -95,13 +114,13 @@ function createCompConfig(): CompendiumConfig {
       mresists,
       growth:     'pixie',
       fusion:     'normal',
-      skills:     (json['skills'] || []).reduce((acc, s, i) => { acc[s] = 0; return acc; }, {}),
+      skills,
       drop:       json.drop,
       isEnemy:    true,
       affinities: [],
       elemAffins: [],
       trait:      json.traits.join(', '),
-      transfers:  (json['transfers'] || []).reduce((acc, s, i) => { acc[s] = i + 1; return acc; }, {}),
+      transfers:  {},
       area,
       searchTags: [name, json.race, area, json.drop].join(',').toLocaleLowerCase()
     };

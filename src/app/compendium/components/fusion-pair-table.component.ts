@@ -101,7 +101,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
         <tbody>
           @if (!rowData.length) {
             <tr>
-              <td colspan="7">{{ msgs.NoFusionsFound | translateComp:lang }}</td>
+              <td colspan="8">{{ msgs.NoFusionsFound | translateComp:lang }}</td>
             </tr>
           }
           @for (data of rowData.slice(0, currRow); track data) {
@@ -117,7 +117,7 @@ export class FusionPairTableHeaderComponent extends SortedTableHeaderComponent {
           }
           @if (currRow < rowData.length) {
             <tr>
-              <th class="nav" colspan="7"
+              <th class="nav" colspan="8"
                 [style.height.em]="2"
                 (click)="currRow = currRow + incrRow">
                 Show next {{ incrRow }} out of {{ rowData.length - currRow }}

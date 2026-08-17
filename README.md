@@ -13,6 +13,7 @@ Fusion tool framework for Megami Tensei games.
 * Triple Reverse Fusion Calculator
 * Triple Forward Fusion Calculator
 * Enemy Table (Persona Series)
+* Fixed Skill Inheritance (II, If, P1)
 * Password Generator (Strange Journey and Redux)
 * QR Code Generator (Persona Q and Q2)
 * Recipe Generator (IV, Apocalypse, V, SH2, Persona)
@@ -24,7 +25,6 @@ Fusion tool framework for Megami Tensei games.
 * [Shin Megami Tensei II](https://aqiu384.github.io/megaten-fusion-tool/smt2/demons)
 * [Shin Megami Tensei If...](https://aqiu384.github.io/megaten-fusion-tool/smtif/demons)
 * [Shin Megami Tensei NINE](https://aqiu384.github.io/megaten-fusion-tool/smt9/demons)
-* [Shin Megami Tensei IMAGINE](https://aqiu384.github.io/megaten-fusion-tool/smtim/demons)
 * [Shin Megami Tensei III: Nocturne](https://aqiu384.github.io/megaten-fusion-tool/smt3/demons)
 * [Shin Megami Tensei: Strange Journey](https://aqiu384.github.io/megaten-fusion-tool/smtsj/demons)
 * [Shin Megami Tensei: Strange Journey Redux](https://aqiu384.github.io/megaten-fusion-tool/smtdsj/demons)

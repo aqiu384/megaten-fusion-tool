@@ -72,7 +72,7 @@ function createCompConfig(): CompendiumConfig {
       mresists:   resists,
       growth:     'pixie',
       fusion:     'normal',
-      skills:     json.skills.reduce((acc, s) => { acc[s] = 0; return acc; }, {}),
+      skills:     json.skills.reduce((acc, s, i) => { acc[s] = 2 + i; return acc; }, {}),
       drop:       json.drop,
       isEnemy:    true,
       affinities: [],

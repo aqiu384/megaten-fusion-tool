@@ -12,7 +12,13 @@ import { FusionDataService } from '../fusion-data.service';
 })
 export class NesFissionTableComponent extends SmtFissionTableComponent {
   fusionDataService = inject(FusionDataService);
+  compendium$ = this.fusionDataService.compendium$;
 
+  fusionPairs$ = computed(() => this.calculator
+    .getFusions(this.currentDemon$(), this.compendium$(), this.fusionChart$())
+    .concat(this.compendium$().getExtraNamePairs(this.currentDemon$()))
+    .map(this.toFusionPair$()(this.currentDemon$()))
+  );
   getNotes$ = computed(() => {
     const comp = this.compendium$();
     const compConfig = this.fusionDataService.compConfig;

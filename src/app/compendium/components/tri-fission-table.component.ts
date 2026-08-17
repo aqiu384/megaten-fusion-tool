@@ -32,9 +32,11 @@ export class TripleFissionTableComponent {
   toDemonTrio$ = computed(() => (names: NameTrio) =>
     toDemonTrio(names, this.compendium$())
   );
+  nameTrios$ = computed(() =>
+    this.calculator.getFusions(this.currentDemon$(), this.compendium$(), this.chart$())
+  );
   fissionTrios$ = computed(() => {
-    const names = this.calculator.getFusions(this.currentDemon$(), this.compendium$(), this.chart$());
-    const demons = names.map(this.toDemonTrio$());
+    const demons = this.nameTrios$().map(this.toDemonTrio$());
     const fissions: { [name: string]: DemonTrio[] } = {};
 
     for (const trio of demons) {

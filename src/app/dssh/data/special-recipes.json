@@ -1,5 +1,6 @@
 {
   "Ara Mitama": {
+    "fusion": "normal",
     "pairs": [
       "Salamander x Undine",
       "Salamander x Sylph N",
@@ -8,6 +9,7 @@
     ]
   },
   "Nigi Mitama": {
+    "fusion": "normal",
     "pairs": [
       "Undine x Sylph N",
       "Undine x Sylph",
@@ -18,166 +20,100 @@
     ]
   },
   "Kusi Mitama": {
-    "pairs": [
-      "Salamander x Gnome",
-      "Undine x Sylph N",
-      "Undine x Gnome",
-      "Sylph N x Gnome"
-    ],
-    "special": [
-      "Sylph N",
-      "Sylph"
+    "fusion": "normal",
+    "trios": [
+      "Salamander x Sylph N x Gnome",
+      "Salamander x Sylph x Gnome",
+      "Undine x Sylph N x Sylph",
+      "Undine x Sylph N x Gnome",
+      "Undine x Sylph x Gnome",
+      "Sylph N x Sylph x Gnome"
     ]
   },
   "Saki Mitama": {
-    "pairs": [
-      "Undine x Sylph N",
-      "Undine x Sylph",
-      "Undine x Gnome",
-      "Sylph N x Sylph"
-    ],
-    "special": [
-      "Salamander"
+    "fusion": "normal",
+    "trios": [
+      "Salamander x Undine x Sylph N",
+      "Salamander x Undine x Sylph",
+      "Salamander x Undine x Gnome",
+      "Salamander x Sylph N x Sylph"
     ]
   },
   "Huang Di": {
-    "prereq": "Fuse with Lvl 80 Zoma",
-    "special": [
-      "Xi Wangmu"
-    ]
+    "prereq": "Fuse Xi Wangmu with Lvl 80 Zoma"
   },
   "Rama": {
-    "prereq": "Fuse with Lvl 70 Zoma",
-    "special": [
-      "Vishnu"
-    ]
+    "prereq": "Fuse Vishnu with Lvl 70 Zoma"
   },
   "Saladin": {
-    "prereq": "Fuse with Lvl 60 Zoma",
-    "special": [
-      "Alilat"
-    ]
+    "prereq": "Fuse Alilat with Lvl 60 Zoma"
   },
   "Siegfried": {
-    "prereq": "Fuse with Lvl 50 Zoma",
-    "special": [
-      "Lugh"
-    ]
+    "prereq": "Fuse Lugh with Lvl 50 Zoma"
   },
   "Jeanne D'Arc": {
-    "prereq": "Fuse with Lvl 40 Zoma",
-    "special": [
-      "Black Maria"
-    ]
+    "prereq": "Fuse Black Maria with Lvl 40 Zoma"
   },
   "Masakado": {
-    "prereq": "Fuse with Lvl 80 Zoma during new moon",
-    "special": [
-      "Hachiman"
-    ]
+    "prereq": "Fuse Hachiman with Lvl 80 Zoma during new moon"
   },
   "Longinus": {
-    "prereq": "Fuse with Lvl 70 Zoma during new moon",
-    "special": [
-      "Metatron"
-    ]
+    "prereq": "Fuse Metatron with Lvl 70 Zoma during new moon"
   },
   "Yoshitsune": {
-    "prereq": "Fuse with Lvl 60 Zoma during new moon",
-    "special": [
-      "Hachiman"
-    ]
+    "prereq": "Fuse Hachiman with Lvl 60 Zoma during new moon"
   },
   "Hagen": {
-    "prereq": "Fuse with Lvl 50 Zoma during new moon",
-    "special": [
-      "Fafnir"
-    ]
+    "prereq": "Fuse Fafnir with Lvl 50 Zoma during new moon"
   },
   "Lanling Wang": {
-    "prereq": "Fuse with Lvl 40 Zoma during new moon",
-    "special": [
-      "Seiryu"
-    ]
+    "prereq": "Fuse Seiryu with Lvl 40 Zoma during new moon"
   },
   "Frost Five": {
     "prereq": "Special fusion event requires all other Rangers"
   },
   "Baal": {
     "fusion": "normal",
-    "special": [
-      "Anat",
-      "Mot"
-    ]
+    "pairs": ["Anat x Mot"]
   },
   "Cybele": {
     "fusion": "normal",
-    "special": [
-      "Pallas Athena",
-      "Diana"
-    ]
+    "pairs": ["Pallas Athena x Diana"]
   },
   "Kali": {
     "fusion": "normal",
-    "special": [
-      "Kangiten",
-      "Kartikeya"
-    ]
+    "pairs": ["Kangiten x Kartikeya"]
   },
   "Loki": {
     "fusion": "normal",
-    "special": [
-      "Sleipnir",
-      "Fenrir"
-    ]
+    "pairs": ["Sleipnir x Fenrir"]
   },
   "Mitra": {
     "fusion": "normal",
-    "special": [
-      "Sraosha",
-      "Haoma"
-    ]
+    "pairs": ["Sraosha x Haoma"]
   },
   "Mot": {
     "fusion": "normal",
-    "special": [
-      "Baal",
-      "Anat"
-    ]
+    "pairs": ["Baal x Anat"]
   },
   "Norn": {
     "fusion": "normal",
-    "special": [
-      "Odin",
-      "Loki"
-    ]
+    "pairs": ["Odin x Loki"]
   },
   "Persephone": {
     "fusion": "normal",
-    "special": [
-      "Diana",
-      "Volvo"
-    ]
+    "pairs": ["Diana x Volvo"]
   },
   "Saturnus": {
     "fusion": "normal",
-    "special": [
-      "Nyx",
-      "Volvo"
-    ]
+    "pairs": ["Nyx x Volvo"]
   },
   "Shiva": {
     "fusion": "normal",
-    "special": [
-      "Barong",
-      "Rangda"
-    ]
+    "pairs": ["Barong x Rangda"]
   },
   "Surt": {
     "fusion": "normal",
-    "special": [
-      "Loki",
-      "Muspell"
-    ]
+    "pairs": ["Loki x Muspell"]
   }
 }

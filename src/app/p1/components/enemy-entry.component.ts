@@ -35,18 +35,7 @@ import { P1FusionTableComponent } from './p1-fusion-table.component';
       [resistHeaders]="compConfig.mresistElems"
       [resists]="demon.mresists">
     </app-demon-resists>
-    @if (compConfig.hasFusion) {
-      <app-demon-skills
-        [title]="'Transferable Skills'"
-        [hasLvl]="false"
-        [hasTarget]="true"
-        [elemOrder]="compConfig.elemOrder"
-        [compendium]="compendium"
-        [skillLevels]="demon.transfers">
-      </app-demon-skills>
-    }
     <app-demon-skills
-      [title]="'Nontransferable Skills'"
       [hasLvl]="false"
       [hasTarget]="true"
       [elemOrder]="compConfig.elemOrder"

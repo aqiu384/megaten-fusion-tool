@@ -7,7 +7,7 @@
   [title]="currentDemon + (msgs.Title | translateComp:lang)"
   [leftHeader]="msgs.LeftHeader | translateComp:lang"
   [rightHeader]="msgs.RightHeader | translateComp:lang"
-  [leftBaseUrl]="'../..'"
+  [leftBaseUrl]="hasFusionToPersonas ? '../../demons' : '../..'"
   [rightBaseUrl]="hasFusionToPersonas ? '../../personas' : '../..'"
   [getNotes]="getNotes$()"
   [raceOrder]="fusionChart.raceOrder"
