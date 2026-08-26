@@ -17,6 +17,7 @@ function createCompConfig(): CompendiumConfig {
   const raceAligns = {};
   const species = {};
   const speciesLookup = {};
+  const specialRecipes = {};
 
   for (const rs of COMP_CONFIG_JSON['species']) {
     const spec = rs[0];
@@ -45,7 +46,9 @@ function createCompConfig(): CompendiumConfig {
   }
 
   for (const [name, recipe] of Object.entries(SPECIAL_RECIPES_JSON)) {
-    SPECIAL_RECIPES_JSON[name] = { special: recipe };
+    const recipeType = recipe.length === 2 ? 'pairs' : 'trios';
+    specialRecipes[name] = { fusion: 'special' };
+    specialRecipes[name][recipeType] = [recipe.join(' x ')];
   }
 
   return {
@@ -63,7 +66,7 @@ function createCompConfig(): CompendiumConfig {
     raceOrder: races.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     elemOrder: skillElems.reduce((acc, x, i) => { acc[x] = i; return acc }, {}),
     useSpeciesFusion: true,
-    specialRecipes: SPECIAL_RECIPES_JSON,
+    specialRecipes,
     inheritTypes: [],
     inheritSkills: [],
     getInheritSkills: () => [],
