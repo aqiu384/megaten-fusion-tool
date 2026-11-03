@@ -182,7 +182,7 @@
   },
   "Dark Wall": {
     "cost": 1004,
-    "effect": "Blocks any Expel attack for once to all allies.",
+    "effect": "Blocks any Expel attack once for all allies.",
     "elem": "support",
     "unique": false
   },
@@ -251,7 +251,7 @@
   },
   "Demon's Intimidation": {
     "cost": 1002,
-    "effect": "Rakukaja twice and Tarunda twice to all enemies. Used by Odin and Amazon.",
+    "effect": "Chance to Tarunda four times to all enemies. Used by Odin and Amazon.",
     "elem": "support",
     "unique": true
   },
@@ -384,7 +384,7 @@
   },
   "Fire Wall": {
     "cost": 1005,
-    "effect": "Blocks any Ice attack for once to all allies.",
+    "effect": "Blocks any Ice attack once for all allies.",
     "elem": "support",
     "unique": false
   },
@@ -553,7 +553,7 @@
   },
   "Infinite Taunt": {
     "cost": 1002,
-    "effect": "Tarukaja twice and Rakunda twice to all enemies. Used by Attis, Power, Bifrons, Oliver, and Oliver Zero.",
+    "effect": "Chance to Rakunda four times to all enemies. Used by Attis, Power, Bifrons, Oliver, and Oliver Zero.",
     "elem": "support",
     "unique": true
   },
@@ -590,7 +590,7 @@
   },
   "Light Wall": {
     "cost": 1004,
-    "effect": "Blocks any Death attack for once to all allies.",
+    "effect": "Blocks any Death attack once for all allies.",
     "elem": "support",
     "unique": false
   },
@@ -645,7 +645,7 @@
   },
   "Loyalty Gunshot": {
     "cost": 25,
-    "effect": "Gun damage to all enemies. Power scales with loyalty. Used by Sandman and Cherb.",
+    "effect": "Gun damage to all enemies. Power scales with loyalty. Used by Sandman and Cherub.",
     "elem": "gun",
     "power": 0,
     "unique": true
@@ -692,12 +692,12 @@
   },
   "Makakaja": {
     "cost": 1005,
-    "effect": "Increases magic power to all allies by 50%-150%-250%-350%.",
+    "effect": "Increases magic power for all allies by 50%-150%-250%-350%.",
     "elem": "support"
   },
   "Makarakarn": {
     "cost": 1006,
-    "effect": "Reflects any non-Almighty magic attack for one turn to all allies.",
+    "effect": "Reflects any non-Almighty magic attack for one turn for all allies.",
     "elem": "support"
   },
   "Mapper": {
@@ -877,7 +877,8 @@
   "Necroma": {
     "cost": 1024,
     "effect": "Summons the dead allied demon into battle in Undead status.",
-    "elem": "special"
+    "elem": "special",
+    "unique": true
   },
   "Nice Short": {
     "cost": 26,
@@ -968,7 +969,7 @@
   },
   "Psycho Barrier": {
     "cost": 1002,
-    "effect": "Blocks any Mind ailment attack for once to all allies.",
+    "effect": "Blocks any Mind ailment attack once for all allies.",
     "elem": "support",
     "unique": false
   },
@@ -995,12 +996,12 @@
   },
   "Rakukaja": {
     "cost": 1005,
-    "effect": "Increases defense to all allies by 25%-50%-75%-100%.",
+    "effect": "Increases defense for all allies by 25%-50%-75%-100%.",
     "elem": "support"
   },
   "Rakunda": {
     "cost": 1004,
-    "effect": "Decreases defense to all enemies by 10%-20%-30%-40%.",
+    "effect": "Decreases defense for all enemies by 10%-20%-30%-40%.",
     "elem": "support"
   },
   "Recarm": {
@@ -1048,7 +1049,8 @@
   "Sabatoma": {
     "cost": 1018,
     "effect": "Summons one demon from the COMP without Magnetite cost.",
-    "elem": "special"
+    "elem": "special",
+    "unique": true
   },
   "Samarecarm": {
     "cost": 1016,
@@ -1117,7 +1119,8 @@
   "Soma Gongen": {
     "cost": 1006,
     "effect": "Liberates Soma's power to recover all HP, MP and ailments to one human target.",
-    "elem": "recovery"
+    "elem": "recovery",
+    "unique": true
   },
   "Somersault": {
     "cost": 12,
@@ -1173,12 +1176,12 @@
   },
   "Sukukaja": {
     "cost": 1005,
-    "effect": "Increases accuracy to all allies.",
+    "effect": "Increases accuracy for all allies.",
     "elem": "support"
   },
   "Sukunda": {
     "cost": 1004,
-    "effect": "Decreases accuracy to all enemies.",
+    "effect": "Decreases accuracy for all enemies.",
     "elem": "support"
   },
   "Tackle": {
@@ -1189,28 +1192,29 @@
   },
   "Tarukaja": {
     "cost": 1005,
-    "effect": "Increases physical attack power to all allies by 50%-150%-250%-350%.",
+    "effect": "Increases physical attack power for all allies by 50%-150%-250%-350%.",
     "elem": "support"
   },
   "Tarunda": {
     "cost": 1004,
-    "effect": "Decreases physical attack power to all enemies by 20%-40%-60%-80%.",
+    "effect": "Decreases physical attack power for all enemies by 20%-40%-60%-80%.",
     "elem": "support"
   },
-  "Tatami Flip": {
+  "Tatami-Gaeshi": {
     "cost": 4,
-    "effect": "Reflects any non-Almighty physical attack for one turn to all allies.",
+    "effect": "Reflects any non-Almighty physical attack for one turn for all allies. Used by Yoshitsune.",
     "elem": "almighty",
-    "power": 0
+    "power": 0,
+    "unique": true
   },
   "Tetraja": {
     "cost": 1008,
-    "effect": "Blocks any Expel or Death attack for once to all allies.",
+    "effect": "Blocks any Expel or Death attack once for all allies.",
     "elem": "support"
   },
   "Tetrakarn": {
     "cost": 1006,
-    "effect": "Reflects any non-Almighty physical attack for one turn to all allies.",
+    "effect": "Reflects any non-Almighty physical attack for one turn for all allies.",
     "elem": "support"
   },
   "Thunder Kick": {
